@@ -390,19 +390,17 @@ stylesheet header, the README and this file.
 - Entries above that record what happened under the old name (the A31 API
   call) keep the old repo name, annotated as such.
 
-### A33 — The GitHub repo rename is a manual step
-`gh` is still not installed (see A1). The instruction for this task was "use
-gh if authenticated, otherwise give click-through steps", so the repo was
-**not** renamed from this session, and the Git Credential Manager route used
-in A31 was deliberately not reused for an admin action that wasn't authorised
-that way. Steps: *github.com/Shikomisen/Nihongo-Tabi → Settings → General →
-Repository name → `Wayword` → Rename.*
+### A33 — The GitHub repo was already renamed; only the remote changed
+`gh` is still not installed (see A1), and the instruction for this task was
+"use gh if authenticated, otherwise give click-through steps". The Git
+Credential Manager route used in A31 was deliberately not reused for an admin
+action that hadn't been authorised that way.
 
-The rename commit was pushed to the repo under its current name first, then
-`origin` was pointed at `https://github.com/Shikomisen/Wayword.git`. Until the
-repo is renamed on GitHub, pushes to that URL fail with "repository not
-found"; afterwards the remote is correct. (GitHub redirects the old git URL
-after a rename, but not the old Pages URL — see A37.)
+It turned out not to matter: pushing the rename commit to the old URL drew
+GitHub's "repository moved" notice, and the API reports
+`Shikomisen/Wayword`, so the repo had already been renamed by hand. `origin`
+now points at `https://github.com/Shikomisen/Wayword.git`. (GitHub keeps
+redirecting the old git URL, but not the old Pages URL — see A37.)
 
 ### A34 — Deploy path: everything was already relative, and stays that way
 There is no build step and no router base: routing is hash-based
@@ -443,13 +441,15 @@ of the old URL cannot move to a new install. There is no export feature, and
 adding one is beyond this rename.
 
 ### A37 — The old URL stops working after the repo rename
-GitHub does not redirect project Pages sites when a repo is renamed, so
-`/Nihongo-Tabi/` will 404 once the repo becomes `Wayword`. Between the push
-and the rename it serves the renamed build, because the files are
-path-independent. A device with the old app installed should remove that
-home-screen icon and install from `https://shikomisen.github.io/Wayword/`. The
-old cache is deleted the first time the new service worker activates in that
-browser.
+GitHub does not redirect project Pages sites when a repo is renamed:
+`https://shikomisen.github.io/Nihongo-Tabi/` now returns 404. A device with the
+old app installed should remove that home-screen icon and install from
+`https://shikomisen.github.io/Wayword/`. The old cache is deleted the first
+time the new service worker activates in that browser.
+
+A redirect stub could only be served by creating a new repo named
+`Nihongo-Tabi`, and that would break GitHub's git redirect from the old name.
+For a personal app with one user it isn't worth it, so none was created.
 
 ### A38 — Verification
 `npm test` (content self-test and 81 integration checks) and
@@ -476,3 +476,14 @@ returning user's browser is in):
   persisted, all five tabs and a category screen rendered, all 520 assets
   fetched with 200 (5.2 MB), and a cold navigation to `index.html#/review`
   booted.
+
+### A39 — Live verification at the new URL
+After the push, Pages served the new `sw.js` (`v4`) within about 20 s. The
+same headless-Chrome run against **https://shikomisen.github.io/Wayword/**,
+from a fresh profile, passed every check. The SW registered with scope
+`https://shikomisen.github.io/Wayword/`; the manifest is installable, with
+`start_url` `/Wayword/index.html` and scope `/Wayword/`; `wayword-v4` held all
+520 assets; and with every connection dropped and the HTTP cache cleared,
+reload, all five tabs, a category screen, all 520 assets (5.2 MB) and a cold
+navigation to `index.html#/review` worked offline.
+`https://shikomisen.github.io/Nihongo-Tabi/` returns 404, as A37 expects.
