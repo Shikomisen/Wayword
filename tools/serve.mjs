@@ -73,7 +73,7 @@ function lanAddresses() {
 }
 
 server.listen(PORT, '0.0.0.0', () => {
-  console.log(`\n  Nihongo Tabi — dev server\n`);
+  console.log(`\n  Wayword — dev server\n`);
   console.log(`  Local:    http://localhost:${PORT}/`);
   for (const ip of lanAddresses()) console.log(`  Network:  http://${ip}:${PORT}/   ← open this on your phone`);
   console.log(`\n  Ctrl+C to stop.\n`);

@@ -8,6 +8,10 @@
  * All state is client-side. Nothing here ever touches the network (README §8).
  */
 
+// Deliberately keeps the pre-rename name (the app was "Nihongo Tabi"), as
+// does the `nt:` localStorage prefix below. The github.io origin is the same
+// before and after the move, so renaming either would orphan existing SRS
+// progress rather than carry it over.
 const DB_NAME = 'nihongo-tabi';
 const DB_VERSION = 1;
 const STORES = ['srs', 'meta'];

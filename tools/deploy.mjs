@@ -41,7 +41,7 @@ try {
     'No git remote named "origin" is configured, so there is nowhere to deploy.',
     `Create an empty repo on GitHub, then:
 
-  git remote add origin https://github.com/<you>/nihongo-tabi.git
+  git remote add origin https://github.com/<you>/Wayword.git
   git push -u origin main
   npm run deploy
 

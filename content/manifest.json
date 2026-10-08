@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "language": "ja",
   "register": "polite",
-  "generatedFor": "Nihongo Tabi MVP",
+  "generatedFor": "Wayword MVP",
   "notes": "Adding a category = add a file to content/ + one entry here. No app code changes. Order is trip-relevance priority (README §6), not alphabetical.",
   "categories": [
     { "id": "greetings",      "order": 1,  "file": "content/greetings.json",      "title": "Greetings & Politeness", "icon": "🙏", "week": 1, "tier": "core" },

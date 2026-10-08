@@ -12,8 +12,15 @@
  *                         under a given cache version)
  */
 
-const CACHE_VERSION = 'v3';
-const CACHE = `nihongo-tabi-${CACHE_VERSION}`;
+const CACHE_VERSION = 'v4';
+const CACHE_PREFIX = 'wayword-';
+const CACHE = `${CACHE_PREFIX}${CACHE_VERSION}`;
+
+// Every prefix this app has cached under, including the pre-rename
+// `nihongo-tabi-`. Activation only deletes stale caches with these prefixes:
+// the github.io origin is shared with other projects, so nothing else on it
+// is ours to remove.
+const OWN_PREFIXES = [CACHE_PREFIX, 'nihongo-tabi-'];
 
 const SHELL = [
   './',
@@ -105,7 +112,9 @@ self.addEventListener('activate', (event) => {
   event.waitUntil(
     (async () => {
       const keys = await caches.keys();
-      await Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k)));
+      await Promise.all(keys
+        .filter((k) => k !== CACHE && OWN_PREFIXES.some((p) => k.startsWith(p)))
+        .map((k) => caches.delete(k)));
       await self.clients.claim();
     })()
   );

@@ -1,5 +1,5 @@
-# Nihongo Tabi — Dev README
-*(working title — rename freely)*
+# Wayword — Dev README
+*(formerly "Nihongo Tabi" — renamed so the name isn't tied to one language)*
 
 A study tool for **survival-level conversational Japanese**, built by a
 solo dev, for personal use, with a hard deadline: usable within 1-2 days,
@@ -333,7 +333,11 @@ skipping silently. This applies to Android and iOS alike.
 
 ### Deployed
 
-**Live: https://shikomisen.github.io/Nihongo-Tabi/**
+**Live: https://shikomisen.github.io/Wayword/**
+
+(Until the rename it was published at `/Nihongo-Tabi/`. GitHub does not
+redirect project Pages URLs after a repo rename, so that address no longer
+serves the app — see *Rename to Wayword* in `ASSUMPTIONS.md`.)
 
 Served by GitHub Pages straight from **`main` / `root`** — no build step, no
 `gh-pages` branch, because the build output (audio, content JSON, icons) is
@@ -351,7 +355,7 @@ offline-capable once loaded — unlike the `http://` LAN address that `npm start
 prints.
 
 The service worker registers correctly from the project subpath —
-`register('sw.js')` is document-relative and takes `/Nihongo-Tabi/` as its
+`register('sw.js')` is document-relative and takes `/Wayword/` as its
 scope, which is asserted in `npm run test:sw`. Don't make that path absolute.
 
 `npm run deploy` (the `gh-pages` branch route) is **not used** by this setup,

@@ -14,7 +14,7 @@ committed on `main`.
 
 **To connect a remote manually:**
 ```bash
-git remote add origin https://github.com/<you>/nihongo-tabi.git
+git remote add origin https://github.com/<you>/Wayword.git
 git push -u origin main
 npm run deploy        # publishes to the gh-pages branch
 ```
@@ -332,9 +332,11 @@ existing root `.nojekyll` is kept and tracked, because it is also what makes
 the simpler "serve from `main` / root" Pages option work.
 
 ### A31 — GitHub Pages is live (resolves A1 and A28)
-**Site: https://shikomisen.github.io/Nihongo-Tabi/** — served from `main` / `root`.
+**Site: https://shikomisen.github.io/Wayword/** — served from `main` / `root`.
+(Published at `/Nihongo-Tabi/` until the rename — see *Rename to Wayword*.)
 
-Enabled via `POST /repos/Shikomisen/Nihongo-Tabi/pages` (201), build completed,
+Enabled via `POST /repos/Shikomisen/Nihongo-Tabi/pages` (201; the repo's
+pre-rename name), build completed,
 and every path verified by actually fetching the live origin rather than
 trusting the API response: `index.html`, `sw.js`, `app.webmanifest`,
 `css/styles.css`, `js/app.js`, `js/characters.js`, all three character-set JSON
@@ -363,3 +365,114 @@ setup. That script still works (verified in A30) and remains available if the
 served site should ever be split from source, but serving `main` at root needs
 no build step and no second branch, which suits a project with committed
 build output.
+
+---
+
+## Rename to Wayword
+
+### A32 — "Nihongo Tabi" → "Wayword", and what that covered
+The app will grow beyond Japanese, so its name no longer names a language.
+Renamed everywhere the name is shown or identifies the project: the page
+`<title>`, `apple-mobile-web-app-title`, the `<noscript>` message, manifest
+`name` and `short_name`, `package.json` `name` (`wayword`), the dev-server
+banner, the console-log prefix (`[nihongo-tabi]` → `[wayword]`), the
+stylesheet header, the README and this file.
+
+- `short_name` is also `Wayword`: 7 characters, well inside the ~12 that iOS
+  and Android launchers show under an icon before truncating.
+- The description still says "survival-level conversational Japanese". That is
+  what the app teaches today; changing it would be a content change.
+- The only edit under `content/` is the `generatedFor` label in
+  `manifest.json` (`"Wayword MVP"`). Nothing reads it. No phrase, scenario,
+  kana, kanji or audio file changed.
+- The torii icon is unchanged. It is Japan-specific, but redesigning it is
+  beyond a rename; worth revisiting when a second language lands.
+- Entries above that record what happened under the old name (the A31 API
+  call) keep the old repo name, annotated as such.
+
+### A33 — The GitHub repo rename is a manual step
+`gh` is still not installed (see A1). The instruction for this task was "use
+gh if authenticated, otherwise give click-through steps", so the repo was
+**not** renamed from this session, and the Git Credential Manager route used
+in A31 was deliberately not reused for an admin action that wasn't authorised
+that way. Steps: *github.com/Shikomisen/Nihongo-Tabi → Settings → General →
+Repository name → `Wayword` → Rename.*
+
+The rename commit was pushed to the repo under its current name first, then
+`origin` was pointed at `https://github.com/Shikomisen/Wayword.git`. Until the
+repo is renamed on GitHub, pushes to that URL fail with "repository not
+found"; afterwards the remote is correct. (GitHub redirects the old git URL
+after a rename, but not the old Pages URL — see A37.)
+
+### A34 — Deploy path: everything was already relative, and stays that way
+There is no build step and no router base: routing is hash-based
+(`#/browse`), so the deploy path never reaches the router. Every
+path-dependent value is relative and resolves under `/Wayword/` unchanged:
+manifest `start_url` (`./index.html`), `scope` (`./`) and shortcut URLs;
+`register('sw.js')`, and therefore the SW scope; the SW precache list (`./…`)
+and its offline fallback (`./index.html`); every content and audio fetch.
+
+They were deliberately **not** hard-coded to `/Wayword/`. That would break
+`npm start`, which serves at `/`, and would need editing again on any future
+move. No absolute `/Nihongo-Tabi/` path existed outside the docs, one code
+comment and the `test:sw` fixture URL, all of which were updated.
+
+### A35 — Cache renamed to `wayword-v4`; cleanup scoped to this app
+`CACHE` went from `nihongo-tabi-v3` to `wayword-v4` (new prefix, version
+bumped), so every client re-installs the full precache and drops the old one
+on activation.
+
+The activate handler used to delete *every* cache on the origin except its
+own. `shikomisen.github.io` is a single origin shared by every project site on
+the account, so that also wiped other apps' offline caches. It now deletes
+only stale caches with this app's prefixes (`wayword-` and the legacy
+`nihongo-tabi-`). The outcome for this app is identical; it just no longer
+touches anything else.
+
+### A36 — Storage keys deliberately keep the old name
+The IndexedDB database stays `nihongo-tabi` and the localStorage fallback
+prefix stays `nt:`. `/Nihongo-Tabi/` and `/Wayword/` are the same origin, so
+in the same browser (desktop, Android Chrome) existing SRS progress carries
+straight over to the new URL. Renaming either key would silently reset
+everyone's progress. A comment in `store.js` records this so it isn't "fixed"
+later.
+
+The exception is iOS. A home-screen install there keeps its own storage,
+separate from Safari and from any other install, so progress in an iOS install
+of the old URL cannot move to a new install. There is no export feature, and
+adding one is beyond this rename.
+
+### A37 — The old URL stops working after the repo rename
+GitHub does not redirect project Pages sites when a repo is renamed, so
+`/Nihongo-Tabi/` will 404 once the repo becomes `Wayword`. Between the push
+and the rename it serves the renamed build, because the files are
+path-independent. A device with the old app installed should remove that
+home-screen icon and install from `https://shikomisen.github.io/Wayword/`. The
+old cache is deleted the first time the new service worker activates in that
+browser.
+
+### A38 — Verification
+`npm test` (content self-test and 81 integration checks) and
+`npm run test:render` (80 render checks and 15 service-worker checks) all
+pass. `jsdom` was installed temporarily (`--no-save`) so the render and SW
+suites actually ran instead of skipping.
+
+Then in real headless Chrome 154, with the **pre-rename build** served at
+`/Nihongo-Tabi/` and the new build at `/Wayword/` on one origin (the state a
+returning user's browser is in):
+
+- The old SW was installed and `nihongo-tabi-v3` filled, alongside a foreign
+  `other-app-v1` cache.
+- The new SW registered and took control, with scope exactly `/Wayword/`.
+  Title and `apple-mobile-web-app-title` are `Wayword`. The manifest parses
+  with no errors and reports no installability errors, and `start_url` and
+  `scope` resolve under `/Wayword/`.
+- `wayword-v4` held all 520 assets (482 audio clips) that the SW's own
+  manifest walk lists. `nihongo-tabi-v3` was deleted and `other-app-v1`
+  survived.
+- Offline, Chrome was routed through a proxy that drops every connection
+  (page and service worker), the HTTP cache was cleared, and a probe confirmed
+  the network was unreachable. Reload booted the app, the placement skip
+  persisted, all five tabs and a category screen rendered, all 520 assets
+  fetched with 200 (5.2 MB), and a cold navigation to `index.html#/review`
+  booted.

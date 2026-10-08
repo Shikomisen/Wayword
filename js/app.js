@@ -651,8 +651,8 @@ function secureContextState() {
  * Register the service worker (README §5 — offline-first).
  *
  * `register('sw.js')` is relative to the document, which is what makes the
- * GitHub Pages subpath work: from /nihongo-tabi/ it resolves to
- * /nihongo-tabi/sw.js and takes /nihongo-tabi/ as its scope. Do not make
+ * GitHub Pages subpath work: from /Wayword/ it resolves to
+ * /Wayword/sw.js and takes /Wayword/ as its scope. Do not make
  * this path absolute.
  */
 function registerServiceWorker() {
@@ -663,9 +663,9 @@ function registerServiceWorker() {
     // browser, and that looks identical from the app's side.
     console.warn(
       secureContextState()
-        ? '[nihongo-tabi] Service workers are not supported by this browser. ' +
+        ? '[wayword] Service workers are not supported by this browser. ' +
           'The app still works; offline mode and install do not.'
-        : `[nihongo-tabi] No service worker: ${location.origin} is not a secure context. ` +
+        : `[wayword] No service worker: ${location.origin} is not a secure context. ` +
           'Offline mode and install require https:// or http://localhost — a plain ' +
           'http:// LAN address will never register one. Deploy, or use localhost.'
     );
@@ -674,11 +674,11 @@ function registerServiceWorker() {
 
   return navigator.serviceWorker.register('sw.js')
     .then((reg) => {
-      console.info(`[nihongo-tabi] Service worker registered, scope: ${reg.scope}`);
+      console.info(`[wayword] Service worker registered, scope: ${reg.scope}`);
       return reg;
     })
     .catch((err) => {
-      console.warn('[nihongo-tabi] Service worker registration failed', err);
+      console.warn('[wayword] Service worker registration failed', err);
       return null;
     });
 }
@@ -719,7 +719,7 @@ function showBootError(err) {
 // before) still avoids competing with first paint for bandwidth.
 boot()
   .catch((err) => {
-    console.error('[nihongo-tabi] Boot failed', err);
+    console.error('[wayword] Boot failed', err);
     showBootError(err);
   })
   .finally(registerServiceWorker);

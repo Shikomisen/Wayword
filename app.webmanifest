@@ -1,6 +1,6 @@
 {
-  "name": "Nihongo Tabi",
-  "short_name": "Nihongo",
+  "name": "Wayword",
+  "short_name": "Wayword",
   "description": "Survival-level conversational Japanese — offline flashcards, SRS and scenario practice for a trip to Japan.",
   "start_url": "./index.html",
   "scope": "./",
