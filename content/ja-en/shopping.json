@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "shopping",
+  "title": "買い物・支払い",
+  "order": 8,
+  "description": "見ているだけの時のひとことから、サイズ、支払い方法まで。レジでの決まった質問に答えられれば安心です。",
+  "phrases": [
+    {
+      "id": "sho-01",
+      "english": "I'm just looking, thanks.",
+      "japanese": "見ているだけです。",
+      "registerNotes": "Can I help you? と声をかけられた時に。thanks を付けると感じよく聞こえます。",
+      "audio": "audio/en/sho-01.mp3",
+      "audioHint": "I'm just looking, thanks.",
+      "tags": ["店内", "必須"],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-02",
+      "english": "Do you have this in a medium?",
+      "japanese": "これのMサイズはありますか？",
+      "registerNotes": "in＋サイズ／色 で「〜の（サイズ・色）で」。in black、in a smaller size など。",
+      "audio": "audio/en/sho-02.mp3",
+      "audioHint": "Do you have this in a medium?",
+      "tags": ["サイズ"],
+      "difficulty": 3
+    },
+    {
+      "id": "sho-03",
+      "english": "Can I try this on?",
+      "japanese": "試着してもいいですか？",
+      "registerNotes": "試着室は fitting room（アメリカでは dressing room とも）。",
+      "audio": "audio/en/sho-03.mp3",
+      "audioHint": "Can I try this on?",
+      "tags": ["試着"],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-04",
+      "english": "I'll take it.",
+      "japanese": "これにします。（買います）",
+      "registerNotes": "買うと決めた時の定番フレーズです。",
+      "audio": "audio/en/sho-04.mp3",
+      "audioHint": "I'll take it.",
+      "tags": ["購入", "必須"],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-05",
+      "english": "Can I pay by card?",
+      "japanese": "カードで払えますか？",
+      "registerNotes": "Do you take credit cards? とも言います。",
+      "pitfallNote": "「クレジット」だけでは通じません。card か credit card と言いましょう。",
+      "audio": "audio/en/sho-05.mp3",
+      "audioHint": "Can I pay by card?",
+      "tags": ["支払い", "必須"],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-06",
+      "english": "Can I get a bag?",
+      "japanese": "袋をもらえますか？",
+      "registerNotes": "袋が有料の地域も多いです。Do you need a bag? と聞かれることもあります。",
+      "pitfallNote": "「ビニール袋」は plastic bag。vinyl bag とは言いません。",
+      "audio": "audio/en/sho-06.mp3",
+      "audioHint": "Can I get a bag?",
+      "tags": ["支払い", "レジ"],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-07",
+      "english": "Could I get a receipt?",
+      "japanese": "レシートをいただけますか？",
+      "registerNotes": "receipt の p は発音せず、「リシート」に近い音です。",
+      "pitfallNote": "「レシート」と日本語読みすると通じにくいことがあります。",
+      "audio": "audio/en/sho-07.mp3",
+      "audioHint": "Could I get a receipt?",
+      "tags": ["支払い", "レジ"],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-08",
+      "english": "Can I return this?",
+      "japanese": "これを返品できますか？",
+      "registerNotes": "レシートを一緒に見せましょう。別のものに交換したい時は exchange。",
+      "audio": "audio/en/sho-08.mp3",
+      "audioHint": "Can I return this?",
+      "tags": ["返品"],
+      "difficulty": 3
+    },
+    {
+      "id": "sho-09",
+      "english": "Do you have anything cheaper?",
+      "japanese": "もう少し安いものはありますか？",
+      "registerNotes": "予算を伝えたい時は I'm looking for something under fifty dollars.（50ドル以下で探しています）。",
+      "audio": "audio/en/sho-09.mp3",
+      "audioHint": "Do you have anything cheaper?",
+      "tags": ["値段"],
+      "difficulty": 3
+    },
+    {
+      "id": "sho-10",
+      "english": "Is this on sale?",
+      "japanese": "これはセール中ですか？",
+      "registerNotes": "on sale は「セール中・特価」です。",
+      "pitfallNote": "for sale は「売り物」という意味で、別物です。値引きを聞きたい時は on sale。",
+      "audio": "audio/en/sho-10.mp3",
+      "audioHint": "Is this on sale?",
+      "tags": ["値段"],
+      "difficulty": 2
+    }
+  ]
+}

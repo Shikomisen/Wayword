@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "immigration",
+  "title": "入国審査",
+  "category": "airport",
+  "setting": "アメリカの空港に到着。長い列がようやく進み、入国審査であなたの番が来ました。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "officer",
+      "english": "Next, please. Good afternoon.",
+      "japanese": "次の方どうぞ。こんにちは。",
+      "audio": "audio/en/scenario/immigration-n1.mp3",
+      "audioHint": "Next, please. Good afternoon.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Good afternoon. Here's my passport.",
+          "japanese": "こんにちは。パスポートです。",
+          "feedback": "あいさつと同時にパスポートを渡すのは、とてもスムーズです。",
+          "next": "n2"
+        },
+        {
+          "phraseId": "gre-01",
+          "quality": "good",
+          "feedback": "シンプルで十分。審査官へのあいさつは短くて大丈夫です。",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "Thank you.",
+          "japanese": "ありがとうございます。",
+          "feedback": "失礼ではありませんが、まだ何もしてもらっていない段階なので少しちぐはぐです。あいさつで返しましょう。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "officer",
+      "english": "What's the purpose of your visit?",
+      "japanese": "入国の目的は何ですか？",
+      "audio": "audio/en/scenario/immigration-n2.mp3",
+      "audioHint": "What's the purpose of your visit?",
+      "options": [
+        {
+          "phraseId": "air-02",
+          "quality": "good",
+          "feedback": "完璧な答え方です。文で答えると落ち着いた印象になります。",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "english": "Sightseeing.",
+          "japanese": "観光です。",
+          "feedback": "一語でも十分通じます。緊張していても、これだけは言えるようにしておきましょう。",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "english": "I'm a sightseeing.",
+          "japanese": "（わたしは観光という人です）",
+          "feedback": "I'm a ... は「わたしは〜という人です」の形。I'm here for sightseeing. か、Sightseeing. だけにしましょう。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "officer",
+      "english": "How long are you staying?",
+      "japanese": "どのくらい滞在しますか？",
+      "audio": "audio/en/scenario/immigration-n3.mp3",
+      "audioHint": "How long are you staying?",
+      "options": [
+        {
+          "phraseId": "air-03",
+          "quality": "good",
+          "feedback": "for＋期間 が正しい形です。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "One week.",
+          "japanese": "1週間です。",
+          "feedback": "短く答えるのも自然です。",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "english": "Since one week.",
+          "japanese": "（1週間前から）",
+          "feedback": "since は「〜以来」なので、もう1週間ここにいるような意味になってしまいます。期間は for で。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "officer",
+      "english": "Where are you staying?",
+      "japanese": "どこに滞在しますか？",
+      "audio": "audio/en/scenario/immigration-n4.mp3",
+      "audioHint": "Where are you staying?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "At the Grand Hotel, on Fifth Avenue.",
+          "japanese": "5番街のグランドホテルです。",
+          "feedback": "ホテル名と場所。これ以上ない答えです。予約確認をすぐ見せられるようにしておくとさらに安心です。",
+          "next": "n5"
+        },
+        {
+          "phraseId": "air-04",
+          "quality": "good",
+          "feedback": "十分な答えです。ホテル名まで言えればもっと確実です。",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "english": "I don't know yet.",
+          "japanese": "まだわかりません。",
+          "feedback": "滞在先が決まっていないと、別室で詳しく聞かれる原因になります。最初の1泊分の住所は必ず用意しておきましょう。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "officer",
+      "english": "Is this your first time in the United States?",
+      "japanese": "アメリカは初めてですか？",
+      "audio": "audio/en/scenario/immigration-n5.mp3",
+      "audioHint": "Is this your first time in the United States?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Yes, it is.",
+          "japanese": "はい、初めてです。",
+          "feedback": "Yes. だけより丁寧で自然です。",
+          "next": "n6"
+        },
+        {
+          "quality": "good",
+          "english": "No, I came here two years ago.",
+          "japanese": "いいえ、2年前に来ました。",
+          "feedback": "過去形の came で正しく言えています。",
+          "next": "n6"
+        },
+        {
+          "phraseId": "gre-09",
+          "quality": "awkward",
+          "feedback": "聞き取れなかったなら正直に言うのは正解です。ただ、Could you say that again? とお願いしたほうが、もう一度ゆっくり聞いてもらいやすくなります。",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "officer",
+      "english": "All right. Enjoy your stay.",
+      "japanese": "いいでしょう。よい滞在を。",
+      "audio": "audio/en/scenario/immigration-n6.mp3",
+      "audioHint": "All right. Enjoy your stay.",
+      "options": [
+        {
+          "phraseId": "gre-07",
+          "quality": "good",
+          "feedback": "笑顔でお礼を言って通過。おつかれさまでした。",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "english": "Thanks, you too.",
+          "japanese": "ありがとう、あなたも。",
+          "feedback": "Have a nice day! への返事なら完璧ですが、Enjoy your stay. は旅行者向けの言葉なので you too は少しちぐはぐです。Thank you! だけで。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "wrong",
+          "feedback": "「どういたしまして」は、お礼を言われた側の返事です。ここは Thank you. が正解です。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "japanese": "入国審査を通過しました。聞かれることはほぼ毎回同じ — 目的、期間、滞在先。この3つの答えを準備しておけば、もう怖くありません。",
+      "end": true,
+      "options": []
+    }
+  }
+}

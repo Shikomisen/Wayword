@@ -129,7 +129,8 @@ launch without code changes:
   format changes don't break old data.
 - This same structure is what would let a future language pack (beyond
   Japanese) or a native Flutter port reuse the content wholesale — the
-  content layer shouldn't need to know what's rendering it.
+  content layer shouldn't need to know what's rendering it. (Now in use:
+  English for Japanese speakers is the second course — see §13.)
 
 ---
 
@@ -238,6 +239,8 @@ Don't front-load all 10 categories into the SRS deck at once — introduce
 - AI-assisted onboarding calibration (see §6a).
 - Cloud sync/backup of progress.
 - Additional language packs, enabled by the content architecture in §3a.
+  *(Started — English for Japanese speakers is live and Indonesian is
+  stubbed; see §13.)*
 
 ---
 
@@ -313,10 +316,11 @@ Zero dependencies, no build step. Node 18+ only.
 
 ```bash
 npm start                 # dev server on :5173, also prints your LAN URL for phone testing
-npm test                  # content validation + SRS + end-to-end logic (8054 checks)
-npm run test:render       # renders every screen + service worker checks (needs: npm install --no-save jsdom)
+npm test                  # every course's content + UI-string coverage + SRS + end-to-end logic (11,000+ checks)
+npm run test:render       # renders every screen in both courses + service worker checks (needs: npm install --no-save jsdom)
 npm run test:sw           # service worker registration regression tests
-npm run audio             # generate any missing TTS clips
+npm run audio             # generate any missing TTS clips, every course, each in its own language
+npm run audio -- --course ja-en   # …or just one course
 npm run audio:check       # report audio coverage without generating
 npm run kana              # regenerate the hiragana/katakana content files
 npm run crossref          # relink kanji to the phrases they appear in
@@ -366,8 +370,76 @@ but still works if the served site should ever be split from source.
 and `tools/` excluded.
 
 Content lives in `content/` — adding a category is one JSON file plus one line
-in `content/manifest.json`, with no app-code changes (§3a). Run
-`npm run audio` afterwards to synthesise its clips.
+in its course's manifest (`content/manifest.json` for Japanese,
+`content/ja-en/manifest.json` for English), with no app-code changes (§3a).
+Run `npm run audio` afterwards to synthesise its clips.
 
 See `ASSUMPTIONS.md` for decisions made during the build that this spec
 didn't cover.
+
+---
+
+## 13. Multiple languages (added after the rename)
+
+The app now opens on a language picker instead of going straight into
+Japanese.
+
+**Home page (`#/`).** At the top, *I speak*: English or 日本語. Below it, the
+languages taught from that one, each card showing where you are — cards due
+today, not started yet, or coming soon. Choosing a speaker relabels the whole
+page in that language. Inside a course, a slim bar at the top
+("‹ Languages · English › Japanese") leads back to the picker.
+
+| Course | id | Status | Content |
+|---|---|---|---|
+| Japanese, for English speakers | `en-ja` | available | `content/manifest.json` — unchanged, 148 phrases + 302 characters, 6 scenarios |
+| English, for Japanese speakers | `ja-en` | available | `content/ja-en/` — 104 phrases, 10 categories, 6 scenarios |
+| Indonesian, for English speakers | `en-id` | planned | placeholder screen only |
+| Indonesian, for Japanese speakers | `ja-id` | planned | placeholder screen only |
+
+**Courses are content.** `content/courses.json` lists every course; each
+available one points at its own manifest. A manifest's `fields` says which
+field holds the text being learned (`target`) and which holds the gloss
+(`meaning`), plus `ruby` and `reading` where they exist; `noteFields` names the
+usage notes and how they're labelled; `copy` carries the course's own wording
+for the placement intro. Screens only ever see the generic fields content.js
+derives from those (`target`, `meaning`, `notes`…), so neither direction is
+special-cased, and each course's files keep field names that read naturally
+to their authors (`english` / `japanese`).
+
+**URLs carry the course** — `#/en-ja/browse`, `#/ja-en/scenario/checkin`.
+Links from before courses existed, including the installed app's own
+shortcuts, open in the course used last.
+
+**Progress is per course.** Each course has its own IndexedDB database:
+`nihongo-tabi` for Japanese (the name it always had, so existing progress
+carried straight over), `wayword-ja-en` for English, and so on. Placement,
+settings, streaks and the deck are all per course; resetting one course
+leaves the others alone. Text size is app-wide.
+
+**The interface speaks the learner's language.** `js/i18n.js` has English
+and Japanese strings; the interface follows the course's *speaker*, so
+Japanese speakers get a Japanese UI throughout. `npm test` fails if a string
+the Japanese interface can reach has no translation, or if code uses a key
+that doesn't exist. The Characters section only exists for courses with
+character sets (today, Japanese for English speakers), so its wording stays
+English. Controls a course can't use — furigana, romaji, the Characters tab —
+simply don't appear.
+
+**English for Japanese speakers** mirrors the Japanese course's ten trip
+categories, rewritten for a Japanese traveller abroad: American English by
+default, British variants mentioned in the notes. Every phrase has a Japanese
+gloss and a 使い方 (usage) note; many also have a よくある間違い note on
+katakana-English and direct-translation traps — wake-up call not モーニングコール,
+outlet not コンセント, front desk not フロント, *to go* not テイクアウト,
+plastic bag not ビニール袋, *on sale* vs *for sale*. Six scenarios (immigration,
+the subway, asking the way, hotel check-in, a restaurant, a shop checkout) give
+Japanese feedback on every reply, wrong ones included. Its 135 audio clips
+come from the same build-time pass as §3-audio, synthesised in English.
+
+**Adding a language** (Indonesian, say): write
+`content/<speaker>-<target>/manifest.json` and its category and scenario files
+in the same shape; in `courses.json`, set that course's `status` to
+`available` and add its `manifest` path; run `npm run audio -- --course <id>`;
+then `npm test`. A new *speaker* language additionally needs its strings in
+`js/i18n.js` and an entry in `courses.json → speakers`.

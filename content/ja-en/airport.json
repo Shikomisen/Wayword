@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "airport",
+  "title": "空港・入国審査",
+  "order": 3,
+  "description": "飛行機を降りて最初の関門。聞かれることはほぼ決まっているので、答え方を覚えておけば落ち着いて通過できます。",
+  "phrases": [
+    {
+      "id": "air-01",
+      "english": "Here's my passport.",
+      "japanese": "パスポートです。",
+      "registerNotes": "渡す時のひとこと。Here you go. でも同じ意味です。",
+      "audio": "audio/en/air-01.mp3",
+      "audioHint": "Here's my passport.",
+      "tags": ["入国審査", "必須"],
+      "difficulty": 1
+    },
+    {
+      "id": "air-02",
+      "english": "I'm here for sightseeing.",
+      "japanese": "観光で来ました。",
+      "registerNotes": "入国の目的を聞かれた時の答え。仕事なら I'm here on business.",
+      "pitfallNote": "Sightseeing. と一語で答えても通じますが、I'm a sightseeing. は「わたしは観光という人です」になってしまいます。",
+      "audio": "audio/en/air-02.mp3",
+      "audioHint": "I'm here for sightseeing.",
+      "tags": ["入国審査", "必須"],
+      "difficulty": 1
+    },
+    {
+      "id": "air-03",
+      "english": "I'm staying for one week.",
+      "japanese": "1週間滞在します。",
+      "registerNotes": "How long are you staying? への答え。期間には for を付けます。",
+      "pitfallNote": "since は「〜以来」。Since one week. だと意味が通りません。",
+      "audio": "audio/en/air-03.mp3",
+      "audioHint": "I'm staying for one week.",
+      "tags": ["入国審査"],
+      "difficulty": 2
+    },
+    {
+      "id": "air-04",
+      "english": "I'm staying at a hotel downtown.",
+      "japanese": "中心街のホテルに泊まります。",
+      "registerNotes": "Where are you staying? への答え。ホテル名を言えれば一番確実です。予約確認をすぐ見せられるようにしておきましょう。",
+      "audio": "audio/en/air-04.mp3",
+      "audioHint": "I'm staying at a hotel downtown.",
+      "tags": ["入国審査", "宿泊"],
+      "difficulty": 2
+    },
+    {
+      "id": "air-05",
+      "english": "Where is baggage claim?",
+      "japanese": "手荷物受取所はどこですか？",
+      "registerNotes": "空港の表示も Baggage Claim です。",
+      "pitfallNote": "日本語の「クレーム」は苦情の意味ですが、claim の基本は「（自分のものとして）受け取る・要求する」。苦情は complaint です。",
+      "audio": "audio/en/air-05.mp3",
+      "audioHint": "Where is baggage claim?",
+      "tags": ["空港", "荷物"],
+      "difficulty": 2
+    },
+    {
+      "id": "air-06",
+      "english": "My bag didn't arrive.",
+      "japanese": "荷物が出てきませんでした。",
+      "registerNotes": "受取所で見つからない時は、航空会社のカウンターでこう伝えます。荷物の引換証（claim tag）を見せましょう。",
+      "audio": "audio/en/air-06.mp3",
+      "audioHint": "My bag didn't arrive.",
+      "tags": ["空港", "荷物", "トラブル"],
+      "difficulty": 3
+    },
+    {
+      "id": "air-07",
+      "english": "I have nothing to declare.",
+      "japanese": "申告するものはありません。",
+      "registerNotes": "税関で。食べ物を持ち込む場合は正直に申告を。持ち込みのルールが厳しい国も多いです。",
+      "audio": "audio/en/air-07.mp3",
+      "audioHint": "I have nothing to declare.",
+      "tags": ["税関"],
+      "difficulty": 3
+    },
+    {
+      "id": "air-08",
+      "english": "Where can I get a taxi?",
+      "japanese": "タクシーはどこで乗れますか？",
+      "registerNotes": "get a taxi / catch a taxi はとてもよく使う言い方。乗り場は taxi stand や taxi rank です。",
+      "audio": "audio/en/air-08.mp3",
+      "audioHint": "Where can I get a taxi?",
+      "tags": ["空港", "交通"],
+      "difficulty": 2
+    },
+    {
+      "id": "air-09",
+      "english": "Is there free Wi-Fi here?",
+      "japanese": "ここに無料のWi-Fiはありますか？",
+      "registerNotes": "Wi-Fi は「ワイファイ」と読みます。パスワードは What's the password? で聞けます。",
+      "audio": "audio/en/air-09.mp3",
+      "audioHint": "Is there free Wi-Fi here?",
+      "tags": ["空港", "ネット"],
+      "difficulty": 1
+    },
+    {
+      "id": "air-10",
+      "english": "Where's gate twenty-two?",
+      "japanese": "22番ゲートはどこですか？",
+      "registerNotes": "乗り継ぎで急いでいる時に。搭乗券を見せながら聞くと確実です。",
+      "audio": "audio/en/air-10.mp3",
+      "audioHint": "Where's gate twenty-two?",
+      "tags": ["空港", "乗り継ぎ"],
+      "difficulty": 1
+    }
+  ]
+}

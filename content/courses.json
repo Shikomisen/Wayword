@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "notes": "Every course the home page offers. A course pairs the learner's own language (speaker) with the language being learned (target). Adding a course = a manifest under content/ + one entry here. Courses with status 'planned' show on the home page as 'coming soon' and have no manifest yet.",
+  "languages": {
+    "en": { "name": { "en": "English", "ja": "英語" }, "native": "English", "badge": "EN" },
+    "ja": { "name": { "en": "Japanese", "ja": "日本語" }, "native": "日本語", "badge": "JA" },
+    "id": { "name": { "en": "Indonesian", "ja": "インドネシア語" }, "native": "Bahasa Indonesia", "badge": "ID" }
+  },
+  "speakers": ["en", "ja"],
+  "courses": [
+    { "id": "en-ja", "speaker": "en", "target": "ja", "status": "available", "manifest": "content/manifest.json" },
+    { "id": "en-id", "speaker": "en", "target": "id", "status": "planned" },
+    { "id": "ja-en", "speaker": "ja", "target": "en", "status": "available", "manifest": "content/ja-en/manifest.json" },
+    { "id": "ja-id", "speaker": "ja", "target": "id", "status": "planned" }
+  ]
+}

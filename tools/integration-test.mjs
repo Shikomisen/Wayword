@@ -322,11 +322,94 @@ check('a second set queues independently',
   kanjiQueue.length > 0 && kanjiQueue.every((c) => c.categoryId === 'kanji-common'),
   `${kanjiQueue.length} kanji cards`);
 
+/* ---------- 9. a second course ---------- */
+
+console.log('\n9. Second course — English for Japanese speakers (ja-en)');
+
+const course = await import('../js/course.js');
+const store = await import('../js/store.js');
+const i18n = await import('../js/i18n.js');
+
+const enJaCards = (await deck.getDeck()).length;
+const enJaReviews = (await deck.todayStats()).reviews;
+
+await course.setCourse('ja-en');
+check('switching course switches storage', store.namespace() === 'ja-en');
+check('switching course switches the interface to the speaker\'s language', i18n.getLang() === 'ja');
+
+const en = await loadContent();
+check('ja-en loads its own manifest', en.manifest.language === 'en' && en.categories.length === 10,
+  `${en.categories.length} categories, ${en.phrases.size} phrases`);
+check('every ja-en category loaded with phrases', en.categories.every((c) => !c.missing && c.phrases.length > 0));
+
+const wake = en.phrases.get('hot-03');
+check('the text being learned is English', wake.target === 'Could I get a wake-up call at seven?' && wake.targetLang === 'en',
+  wake.target);
+check('the meaning is Japanese', wake.meaning.includes('モーニングコール') && wake.meaningLang === 'ja', wake.meaning);
+check('English carries no furigana or romaji', wake.ruby === null && wake.reading === null);
+check('notes use this course\'s own labels', wake.notes.map((n) => n.label).join(',') === '使い方,よくある間違い',
+  wake.notes.map((n) => n.label).join(', '));
+check('features: scenarios yes; characters, furigana, romaji no',
+  en.features.scenarios && !en.features.characters && !en.features.ruby && !en.features.reading);
+check('a course nobody has opened is not onboarded', !(await deck.isOnboarded()));
+check('…and starts with an empty deck', (await deck.getDeck()).length === 0);
+
+const enItems = await quiz.buildPlacementSet();
+check('placement samples every ja-en category', new Set(enItems.map((i) => i.categoryId)).size === 10,
+  `${enItems.length} items`);
+check('placement has no character items', enItems.every((i) => i.kind === 'phrase'));
+await quiz.applyPlacement(enItems, Object.fromEntries(enItems.map((i) => [i.id, quiz.ANSWERS.UNKNOWN])));
+check('ja-en is onboarded on its own', await deck.isOnboarded());
+check('week-1 categories activated in ja-en',
+  (await deck.getSettings()).activeCategories.join(',') === 'greetings,numbers,airport,transport',
+  (await deck.getSettings()).activeCategories.join(','));
+
+const enQueue = await deck.queue();
+check('ja-en has its own review queue', enQueue.length > 0 && enQueue.every((c) => en.phrases.has(c.id)),
+  `${enQueue.length} cards`);
+await deck.grade(enQueue[0].id, srs.GRADE.GOOD);
+check('grading in ja-en counts in ja-en', (await deck.todayStats()).reviews === 1);
+check('ja-en writes under its own storage prefix', [...mem.keys()].some((k) => k.startsWith('ww-ja-en:srs:')));
+
+const imm = await loadScenario('immigration');
+check('ja-en scenario NPC lines are English with Japanese meanings',
+  imm.nodes.n1.target === 'Next, please. Good afternoon.' && imm.nodes.n1.meaning.startsWith('次の方'),
+  imm.nodes.n1.target);
+const sub = await loadScenario('subway');
+check('scenario narration is in the learner\'s language', sub.nodes.n1.target === '' && /[ぁ-ん]/.test(sub.nodes.n1.meaning));
+check('every ja-en scenario option resolves to text or a deck phrase',
+  [imm, sub].every((s) => Object.values(s.nodes).every((n) =>
+    n.options.every((o) => (o.phraseId ? en.phrases.has(o.phraseId) : Boolean(o.target))))));
+
+await course.setCourse('en-ja');
+check('switching back restores storage and interface', store.namespace() === 'en-ja' && i18n.getLang() === 'en');
+check('the Japanese deck is untouched by English study', (await deck.getDeck()).length === enJaCards,
+  `${enJaCards} cards before and after`);
+check('the Japanese course\'s stats exclude the English review', (await deck.todayStats()).reviews === enJaReviews,
+  `${enJaReviews} before and after`);
+check('the Japanese course is still onboarded', await deck.isOnboarded());
+check('the Japanese course still uses the legacy nt: storage prefix', [...mem.keys()].some((k) => k.startsWith('nt:srs:')));
+
+const snap = await deck.courseSnapshot('ja-en');
+check('the home page can read a course without switching to it',
+  snap.onboarded && snap.total > 0 && store.namespace() === 'en-ja', JSON.stringify(snap));
+const keysBefore = mem.size;
+const empty = await deck.courseSnapshot('en-id');
+check('a snapshot of an unopened course is empty and writes nothing',
+  !empty.onboarded && empty.due === 0 && empty.total === 0 && mem.size === keysBefore);
+
+await course.setCourse('ja-en');
+await deck.resetEverything();
+check('resetting ja-en clears it', !(await deck.isOnboarded()) && (await deck.getDeck()).length === 0);
+await course.setCourse('en-ja');
+check('…and leaves the Japanese course alone',
+  (await deck.getDeck()).length === enJaCards && (await deck.isOnboarded()));
+
 /* ---------- result ---------- */
 
 console.log(
   failures
     ? `\n✗ ${failures} of ${checks} integration checks failed\n`
-    : `\n✓ all ${checks} integration checks passed — browse → quiz → study → review → scenarios → characters loop is intact\n`
+    : `\n✓ all ${checks} integration checks passed — browse → quiz → study → review → scenarios → characters loop is intact, in both courses\n`
 );
 process.exit(failures ? 1 : 0);

@@ -4,6 +4,11 @@
  * Owns settings, which categories are active in the deck, and the
  * introduce/grade operations. Screens talk to this, never to store.js
  * directly.
+ *
+ * Everything here acts on the current course: store.js is pointed at that
+ * course's own database when the course is activated, so settings, cards,
+ * placement and stats are all per course without any function here taking
+ * a course argument.
  */
 
 import * as store from './store.js';
@@ -13,7 +18,7 @@ import { loadContent, getCharacterSet } from './content.js';
 const DEFAULT_SETTINGS = {
   furigana: true,
   romaji: true,          // README §6: off by default after week 1 — see maybeRetireRomaji()
-  textScale: 1,
+  textScale: 1,          // superseded by the app-wide preference (course.js getTextScale)
   newPerDay: 10,
   newCharsPerDay: 15,    // characters are faster to review than phrases
   activeCategories: [],  // filled at placement time
@@ -23,24 +28,27 @@ const DEFAULT_SETTINGS = {
   romajiRetired: false,
 };
 
-let settingsCache = null;
+const settingsCache = new Map(); // namespace → settings
 
 export async function getSettings() {
-  if (settingsCache) return settingsCache;
-  const saved = (await store.get('meta', 'settings')) || {};
-  settingsCache = { ...DEFAULT_SETTINGS, ...saved };
-  if (!settingsCache.installedAt) {
-    settingsCache.installedAt = Date.now();
-    await store.set('meta', 'settings', settingsCache);
+  const ns = store.namespace();
+  if (settingsCache.has(ns)) return settingsCache.get(ns);
+  const saved = (await store.get('meta', 'settings', ns)) || {};
+  const settings = { ...DEFAULT_SETTINGS, ...saved };
+  settingsCache.set(ns, settings);
+  if (!settings.installedAt) {
+    settings.installedAt = Date.now();
+    await store.set('meta', 'settings', settings, ns);
   }
-  return settingsCache;
+  return settings;
 }
 
 export async function saveSettings(patch) {
-  const current = await getSettings();
-  settingsCache = { ...current, ...patch };
-  await store.set('meta', 'settings', settingsCache);
-  return settingsCache;
+  const ns = store.namespace();
+  const settings = { ...(await getSettings()), ...patch };
+  settingsCache.set(ns, settings);
+  await store.set('meta', 'settings', settings, ns);
+  return settings;
 }
 
 /**
@@ -312,7 +320,30 @@ export async function categoryProgress(categoryId) {
   return srs.summarise(deck);
 }
 
+/** Erases the current course only — other courses live in other databases. */
 export async function resetEverything() {
   await store.clearAll();
-  settingsCache = null;
+  settingsCache.delete(store.namespace());
+}
+
+/**
+ * Read-only look at any course's deck, for the home page's course list.
+ * Takes the namespace explicitly rather than switching the current course,
+ * so drawing the home page can never redirect a screen that is mid-render.
+ * Writes nothing: a course nobody has opened stays untouched.
+ */
+export async function courseSnapshot(ns) {
+  const [saved, placement, cards] = await Promise.all([
+    store.get('meta', 'settings', ns),
+    store.get('meta', 'placement', ns),
+    store.getAll('srs', ns),
+  ]);
+  const settings = { ...DEFAULT_SETTINGS, ...(saved || {}) };
+  const active = new Set(settings.activeCategories);
+  const phrases = srs.ofKind(cards.filter(Boolean), srs.KIND.PHRASE).filter((c) => active.has(c.categoryId));
+  return {
+    onboarded: Boolean(placement?.done),
+    due: srs.buildQueue(phrases, { newLimit: settings.newPerDay }).length,
+    total: phrases.length,
+  };
 }

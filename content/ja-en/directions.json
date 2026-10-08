@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "directions",
+  "title": "道をたずねる",
+  "order": 5,
+  "description": "地図アプリがあっても、人に聞いたほうが早い場面は必ずあります。聞き取れなかった時の言い方もセットで。",
+  "phrases": [
+    {
+      "id": "dir-01",
+      "english": "Excuse me, where is the station?",
+      "japanese": "すみません、駅はどこですか？",
+      "registerNotes": "Excuse me で声をかけてから聞くのが基本です。",
+      "audio": "audio/en/dir-01.mp3",
+      "audioHint": "Excuse me, where is the station?",
+      "tags": ["道案内", "必須"],
+      "difficulty": 1
+    },
+    {
+      "id": "dir-02",
+      "english": "How do I get to the museum?",
+      "japanese": "美術館へはどう行けばいいですか？",
+      "registerNotes": "行き方をたずねる定番。Where is ...? より、道順を詳しく教えてもらえます。museum は美術館にも博物館にも使います。",
+      "audio": "audio/en/dir-02.mp3",
+      "audioHint": "How do I get to the museum?",
+      "tags": ["道案内"],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-03",
+      "english": "Is it far from here?",
+      "japanese": "ここから遠いですか？",
+      "registerNotes": "歩けるか知りたいなら Can I walk there? も便利です。",
+      "audio": "audio/en/dir-03.mp3",
+      "audioHint": "Is it far from here?",
+      "tags": ["道案内", "距離"],
+      "difficulty": 1
+    },
+    {
+      "id": "dir-04",
+      "english": "I'm lost.",
+      "japanese": "道に迷いました。",
+      "registerNotes": "状況を先に伝えると、相手も事情がわかって丁寧に教えてくれます。",
+      "audio": "audio/en/dir-04.mp3",
+      "audioHint": "I'm lost.",
+      "tags": ["道案内", "必須"],
+      "difficulty": 1
+    },
+    {
+      "id": "dir-05",
+      "english": "Go straight and turn left at the corner.",
+      "japanese": "まっすぐ行って、角を左に曲がってください。",
+      "registerNotes": "道案内でいちばんよく聞く形。straight（まっすぐ）、left / right、corner（角）、block（区画）が聞き取れれば大丈夫です。",
+      "audio": "audio/en/dir-05.mp3",
+      "audioHint": "Go straight and turn left at the corner.",
+      "tags": ["道案内", "聞き取り"],
+      "difficulty": 3
+    },
+    {
+      "id": "dir-06",
+      "english": "It's on your right.",
+      "japanese": "右手にあります。",
+      "registerNotes": "on your right / left は「あなたから見て右／左側」。案内の最後によく出てきます。",
+      "audio": "audio/en/dir-06.mp3",
+      "audioHint": "It's on your right.",
+      "tags": ["道案内", "聞き取り"],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-07",
+      "english": "Could you show me on the map?",
+      "japanese": "地図で教えていただけますか？",
+      "registerNotes": "スマホの地図を見せながら。口頭の説明より確実です。",
+      "audio": "audio/en/dir-07.mp3",
+      "audioHint": "Could you show me on the map?",
+      "tags": ["道案内", "必須"],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-08",
+      "english": "Is there a restroom near here?",
+      "japanese": "この近くにトイレはありますか？",
+      "registerNotes": "アメリカでは restroom、イギリスでは toilet が一般的。bathroom も使えます。",
+      "pitfallNote": "アメリカで toilet と言うと「便器」そのものを指す感じがして、少し直接的に聞こえます。",
+      "audio": "audio/en/dir-08.mp3",
+      "audioHint": "Is there a restroom near here?",
+      "tags": ["トイレ", "必須"],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-09",
+      "english": "How long does it take on foot?",
+      "japanese": "歩いてどのくらいかかりますか？",
+      "registerNotes": "on foot は「歩いて」。It's a ten-minute walk. のように答えが返ってきます。",
+      "audio": "audio/en/dir-09.mp3",
+      "audioHint": "How long does it take on foot?",
+      "tags": ["道案内", "時間"],
+      "difficulty": 3
+    },
+    {
+      "id": "dir-10",
+      "english": "Is this the right way to the beach?",
+      "japanese": "ビーチへはこの道で合っていますか？",
+      "registerNotes": "途中で不安になった時の確認に。the right way は「正しい道」です。",
+      "audio": "audio/en/dir-10.mp3",
+      "audioHint": "Is this the right way to the beach?",
+      "tags": ["道案内", "確認"],
+      "difficulty": 3
+    }
+  ]
+}

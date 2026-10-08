@@ -1,17 +1,19 @@
 /**
  * selftest.mjs — content validation + SRS regression check.
  *
- * Runs without a browser. Catches the two failure modes that would
- * silently break the app: malformed/incomplete content JSON, and an SRS
- * scheduler that stops laddering.
+ * Runs without a browser. Catches the failure modes that would silently
+ * break the app: malformed/incomplete content JSON in any course, an
+ * interface string with no translation, and an SRS scheduler that stops
+ * laddering.
  *
  *   node tools/selftest.mjs
  */
 
-import { readFileSync, existsSync, statSync } from 'node:fs';
+import { readFileSync, existsSync, statSync, readdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as srs from '../js/srs.js';
+import { dictionaries as i18nDicts } from '../js/i18n.js';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -31,177 +33,262 @@ function readJSON(rel) {
   return JSON.parse(readFileSync(resolve(ROOT, rel), 'utf8'));
 }
 
-/* ---------- content ---------- */
+/* ---------- courses ---------- */
 
-console.log('\nContent');
+console.log('\nCourses');
 
-const manifest = readJSON('content/manifest.json');
-check('manifest has schemaVersion', typeof manifest.schemaVersion === 'number');
-check('manifest lists categories', Array.isArray(manifest.categories) && manifest.categories.length > 0);
+const registry = readJSON('content/courses.json');
+check('courses.json has schemaVersion', typeof registry.schemaVersion === 'number');
+check('courses.json lists courses', Array.isArray(registry.courses) && registry.courses.length > 0);
 
-const seenIds = new Set();
+const courseIds = new Set();
+for (const c of registry.courses) {
+  check(`${c.id}: unique course id`, !courseIds.has(c.id));
+  courseIds.add(c.id);
+  check(`${c.id}: id is <speaker>-<target>`, c.id === `${c.speaker}-${c.target}`);
+  check(`${c.id}: speaker is a declared speaker`, registry.speakers.includes(c.speaker), c.speaker);
+  check(`${c.id}: both languages are described`,
+    Boolean(registry.languages[c.speaker] && registry.languages[c.target]));
+  check(`${c.id}: status is available or planned`, ['available', 'planned'].includes(c.status), c.status);
+  if (c.status === 'available') {
+    check(`${c.id}: available course has a manifest`, Boolean(c.manifest) && existsSync(resolve(ROOT, c.manifest)), c.manifest);
+  } else {
+    check(`${c.id}: planned course has no manifest yet`, !c.manifest);
+  }
+}
+for (const [code, lang] of Object.entries(registry.languages)) {
+  for (const ui of registry.speakers) {
+    check(`language ${code} is named in ${ui}`, Boolean(lang.name?.[ui]));
+  }
+}
+
+/* ---------- content, per course ---------- */
+
+// Audio paths must be unique across every course, not just within one.
 const seenAudio = new Set();
-let phraseCount = 0;
-let audioPresent = 0;
 
-const REQUIRED = ['id', 'japanese', 'romaji', 'english', 'registerNotes', 'audio', 'tags', 'difficulty'];
-
-for (const entry of manifest.categories) {
-  if (!check(`category file exists: ${entry.file}`, existsSync(resolve(ROOT, entry.file)))) continue;
-
-  const cat = readJSON(entry.file);
-  check(`${entry.id}: schemaVersion present`, cat.schemaVersion === manifest.schemaVersion);
-  check(`${entry.id}: id matches manifest`, cat.id === entry.id, `${cat.id} vs ${entry.id}`);
-  check(`${entry.id}: has phrases`, Array.isArray(cat.phrases) && cat.phrases.length > 0);
-
-  for (const p of cat.phrases || []) {
-    phraseCount++;
-    for (const field of REQUIRED) {
-      check(`${p.id}: has ${field}`, p[field] !== undefined && p[field] !== '');
-    }
-    check(`${p.id}: unique id`, !seenIds.has(p.id));
-    seenIds.add(p.id);
-
-    check(`${p.id}: difficulty in 1-5`, p.difficulty >= 1 && p.difficulty <= 5, String(p.difficulty));
-    check(`${p.id}: tags is a non-empty array`, Array.isArray(p.tags) && p.tags.length > 0);
-
-    if (Array.isArray(p.furigana)) {
-      const rebuilt = p.furigana.map((s) => s.b).join('');
-      check(`${p.id}: furigana segments reconstruct japanese`, rebuilt === p.japanese, `${rebuilt} vs ${p.japanese}`);
-    }
-
-    check(`${p.id}: audio path is unique`, !seenAudio.has(p.audio));
-    seenAudio.add(p.audio);
-
-    const audioPath = resolve(ROOT, p.audio);
-    if (existsSync(audioPath)) {
-      audioPresent++;
-      check(`${p.id}: audio clip is non-trivial`, statSync(audioPath).size > 800);
-    }
-  }
+for (const course of registry.courses.filter((c) => c.manifest && existsSync(resolve(ROOT, c.manifest)))) {
+  validateCourse(course);
 }
 
-/* ---------- character sets ---------- */
+function validateCourse(course) {
+  console.log(`\nContent — ${course.id}`);
 
-const CHAR_REQUIRED = ['id', 'character', 'japanese', 'romaji', 'audio', 'tags', 'difficulty', 'group'];
-let charCount = 0;
-let charAudioPresent = 0;
+  const manifest = readJSON(course.manifest);
+  check(`${course.id}: manifest has schemaVersion`, typeof manifest.schemaVersion === 'number');
+  check(`${course.id}: manifest lists categories`, Array.isArray(manifest.categories) && manifest.categories.length > 0);
+  check(`${course.id}: manifest language matches the course target`, manifest.language === course.target, manifest.language);
+  check(`${course.id}: manifest speaker matches the course`, manifest.speaker === course.speaker, manifest.speaker);
+  check(`${course.id}: manifest declares its fields`, Boolean(manifest.fields?.target && manifest.fields?.meaning));
+  check(`${course.id}: placement copy present`, Boolean(manifest.copy?.placementLede));
 
-for (const entry of manifest.characterSets || []) {
-  if (!check(`character set file exists: ${entry.file}`, existsSync(resolve(ROOT, entry.file)))) continue;
+  const fields = manifest.fields || {};
+  const target = fields.target;
 
-  const set = readJSON(entry.file);
-  check(`${entry.id}: schemaVersion matches`, set.schemaVersion === manifest.schemaVersion);
-  check(`${entry.id}: id matches manifest`, set.id === entry.id, `${set.id} vs ${entry.id}`);
-  check(`${entry.id}: has characters`, Array.isArray(set.characters) && set.characters.length > 0);
-  check(`${entry.id}: declares groups`, Array.isArray(set.groups) && set.groups.length > 0);
+  // Card ids only need to be unique within a course: each course has its own storage.
+  const seenIds = new Set();
+  let phraseCount = 0;
+  let audioPresent = 0;
 
-  const groupIds = new Set((set.groups || []).map((g) => g.id));
+  const REQUIRED = ['id', fields.target, fields.meaning, fields.reading, 'registerNotes', 'audio', 'tags', 'difficulty']
+    .filter(Boolean);
 
-  for (const c of set.characters || []) {
-    charCount++;
-    for (const field of CHAR_REQUIRED) {
-      check(`${c.id}: has ${field}`, c[field] !== undefined && c[field] !== '');
-    }
-    check(`${c.id}: unique id across all content`, !seenIds.has(c.id));
-    seenIds.add(c.id);
+  for (const entry of manifest.categories) {
+    if (!check(`category file exists: ${entry.file}`, existsSync(resolve(ROOT, entry.file)))) continue;
 
-    check(`${c.id}: group is declared`, groupIds.has(c.group), c.group);
-    check(`${c.id}: difficulty in 1-5`, c.difficulty >= 1 && c.difficulty <= 5, String(c.difficulty));
-    check(`${c.id}: japanese mirrors character`, c.japanese === c.character);
-    check(`${c.id}: readings is a non-empty array`, Array.isArray(c.readings) && c.readings.length > 0);
+    const cat = readJSON(entry.file);
+    check(`${entry.id}: schemaVersion present`, cat.schemaVersion === manifest.schemaVersion);
+    check(`${entry.id}: id matches manifest`, cat.id === entry.id, `${cat.id} vs ${entry.id}`);
+    check(`${entry.id}: has phrases`, Array.isArray(cat.phrases) && cat.phrases.length > 0);
 
-    if (Array.isArray(c.furigana)) {
-      const rebuilt = c.furigana.map((s) => s.b).join('');
-      check(`${c.id}: furigana segments reconstruct the character`, rebuilt === c.character);
-    }
-
-    // Kanji carry a meaning; kana legitimately do not (README §12).
-    if (set.script === 'kanji') {
-      check(`${c.id}: kanji has an English meaning`, Boolean(c.english));
-      for (const ref of c.seenIn || []) {
-        check(`${c.id}: cross-ref ${ref} is a real phrase`, seenIds.has(ref));
+    for (const p of cat.phrases || []) {
+      phraseCount++;
+      for (const field of REQUIRED) {
+        check(`${p.id}: has ${field}`, p[field] !== undefined && p[field] !== '');
       }
-    } else {
-      check(`${c.id}: kana leaves english null`, c.english === null);
-    }
+      check(`${p.id}: unique id`, !seenIds.has(p.id));
+      seenIds.add(p.id);
 
-    check(`${c.id}: audio path is unique`, !seenAudio.has(c.audio));
-    seenAudio.add(c.audio);
+      check(`${p.id}: difficulty in 1-5`, p.difficulty >= 1 && p.difficulty <= 5, String(p.difficulty));
+      check(`${p.id}: tags is a non-empty array`, Array.isArray(p.tags) && p.tags.length > 0);
 
-    const audioPath = resolve(ROOT, c.audio);
-    if (existsSync(audioPath)) {
-      charAudioPresent++;
-      check(`${c.id}: audio clip is non-trivial`, statSync(audioPath).size > 800);
-    }
-  }
-}
-
-console.log(`  ${charCount} characters, ${charAudioPresent} with generated audio (${charCount - charAudioPresent} pending)`);
-
-for (const s of manifest.scenarios || []) {
-  if (!check(`scenario file exists: ${s.file}`, existsSync(resolve(ROOT, s.file)))) continue;
-  const sc = readJSON(s.file);
-  check(`${s.id}: has a start node`, Boolean(sc.start));
-  check(`${s.id}: has nodes`, sc.nodes && Object.keys(sc.nodes).length > 0);
-
-  check(`${s.id}: start node resolves`, Boolean(sc.nodes?.[sc.start]), sc.start);
-
-  const QUALITIES = ['good', 'awkward', 'wrong'];
-  const reachable = new Set([sc.start]);
-
-  for (const [nodeId, node] of Object.entries(sc.nodes || {})) {
-    const terminal = node.end === true;
-    check(`${s.id}/${nodeId}: has options or is terminal`,
-      terminal || (node.options || []).length > 0);
-
-    if (node.audio) {
-      const clip = resolve(ROOT, node.audio);
-      check(`${s.id}/${nodeId}: audio clip exists`, existsSync(clip), node.audio);
-      if (existsSync(clip)) check(`${s.id}/${nodeId}: audio clip is non-trivial`, statSync(clip).size > 800);
-      check(`${s.id}/${nodeId}: audio has a kana hint`, Boolean(node.audioHint || node.japanese));
-    }
-
-    for (const opt of node.options || []) {
-      const target = opt.next;
-      check(
-        `${s.id}/${nodeId}: option target "${target}" exists`,
-        target === null || target === undefined || target === 'END' || Boolean(sc.nodes[target])
-      );
-      if (sc.nodes[target]) reachable.add(target);
-
-      check(`${s.id}/${nodeId}: option quality is valid`,
-        !opt.quality || QUALITIES.includes(opt.quality), opt.quality);
-      check(`${s.id}/${nodeId}: option has feedback`, Boolean(opt.feedback));
-      check(`${s.id}/${nodeId}: option has text or a phraseId`,
-        Boolean(opt.phraseId || opt.japanese || opt.english));
-
-      if (opt.phraseId) {
-        check(`${s.id}/${nodeId}: phrase ${opt.phraseId} exists in content`, seenIds.has(opt.phraseId));
+      if (fields.ruby && Array.isArray(p[fields.ruby])) {
+        const rebuilt = p[fields.ruby].map((s) => s.b).join('');
+        check(`${p.id}: furigana segments reconstruct ${target}`, rebuilt === p[target], `${rebuilt} vs ${p[target]}`);
       }
-    }
-    if (node.phraseId) {
-      check(`${s.id}/${nodeId}: phrase ${node.phraseId} exists in content`, seenIds.has(node.phraseId));
-    }
-  }
+      for (const n of manifest.noteFields || []) {
+        if (p[n.field] !== undefined) check(`${p.id}: ${n.field} is non-empty text`, typeof p[n.field] === 'string' && p[n.field].length > 0);
+      }
 
-  // Walk from the start so an orphaned node can't hide a broken branch.
-  for (let grew = true; grew; ) {
-    grew = false;
-    for (const id of [...reachable]) {
-      for (const opt of sc.nodes[id]?.options || []) {
-        if (sc.nodes[opt.next] && !reachable.has(opt.next)) { reachable.add(opt.next); grew = true; }
+      check(`${p.id}: audio path is unique`, !seenAudio.has(p.audio));
+      seenAudio.add(p.audio);
+      check(`${p.id}: audio lives under audio/${course.target}/`, p.audio.startsWith(`audio/${course.target}/`), p.audio);
+
+      const audioPath = resolve(ROOT, p.audio);
+      if (existsSync(audioPath)) {
+        audioPresent++;
+        check(`${p.id}: audio clip is non-trivial`, statSync(audioPath).size > 800);
       }
     }
   }
-  for (const nodeId of Object.keys(sc.nodes || {})) {
-    check(`${s.id}/${nodeId}: reachable from start`, reachable.has(nodeId));
+
+  /* ---------- character sets ---------- */
+
+  const CHAR_REQUIRED = ['id', 'character', 'japanese', 'romaji', 'audio', 'tags', 'difficulty', 'group'];
+  let charCount = 0;
+  let charAudioPresent = 0;
+
+  for (const entry of manifest.characterSets || []) {
+    if (!check(`character set file exists: ${entry.file}`, existsSync(resolve(ROOT, entry.file)))) continue;
+
+    const set = readJSON(entry.file);
+    check(`${entry.id}: schemaVersion matches`, set.schemaVersion === manifest.schemaVersion);
+    check(`${entry.id}: id matches manifest`, set.id === entry.id, `${set.id} vs ${entry.id}`);
+    check(`${entry.id}: has characters`, Array.isArray(set.characters) && set.characters.length > 0);
+    check(`${entry.id}: declares groups`, Array.isArray(set.groups) && set.groups.length > 0);
+
+    const groupIds = new Set((set.groups || []).map((g) => g.id));
+
+    for (const c of set.characters || []) {
+      charCount++;
+      for (const field of CHAR_REQUIRED) {
+        check(`${c.id}: has ${field}`, c[field] !== undefined && c[field] !== '');
+      }
+      check(`${c.id}: unique id across all content`, !seenIds.has(c.id));
+      seenIds.add(c.id);
+
+      check(`${c.id}: group is declared`, groupIds.has(c.group), c.group);
+      check(`${c.id}: difficulty in 1-5`, c.difficulty >= 1 && c.difficulty <= 5, String(c.difficulty));
+      check(`${c.id}: japanese mirrors character`, c.japanese === c.character);
+      check(`${c.id}: readings is a non-empty array`, Array.isArray(c.readings) && c.readings.length > 0);
+
+      if (Array.isArray(c.furigana)) {
+        const rebuilt = c.furigana.map((s) => s.b).join('');
+        check(`${c.id}: furigana segments reconstruct the character`, rebuilt === c.character);
+      }
+
+      // Kanji carry a meaning; kana legitimately do not (README §12).
+      if (set.script === 'kanji') {
+        check(`${c.id}: kanji has an English meaning`, Boolean(c.english));
+        for (const ref of c.seenIn || []) {
+          check(`${c.id}: cross-ref ${ref} is a real phrase`, seenIds.has(ref));
+        }
+      } else {
+        check(`${c.id}: kana leaves english null`, c.english === null);
+      }
+
+      check(`${c.id}: audio path is unique`, !seenAudio.has(c.audio));
+      seenAudio.add(c.audio);
+
+      const audioPath = resolve(ROOT, c.audio);
+      if (existsSync(audioPath)) {
+        charAudioPresent++;
+        check(`${c.id}: audio clip is non-trivial`, statSync(audioPath).size > 800);
+      }
+    }
   }
-  check(`${s.id}: every path can terminate`,
-    [...reachable].some((id) => sc.nodes[id].end === true));
+
+  if (charCount) {
+    console.log(`  ${charCount} characters, ${charAudioPresent} with generated audio (${charCount - charAudioPresent} pending)`);
+  }
+
+  for (const s of manifest.scenarios || []) {
+    if (!check(`scenario file exists: ${s.file}`, existsSync(resolve(ROOT, s.file)))) continue;
+    const sc = readJSON(s.file);
+    check(`${s.id}: has a start node`, Boolean(sc.start));
+    check(`${s.id}: has nodes`, sc.nodes && Object.keys(sc.nodes).length > 0);
+    check(`${s.id}: category exists`, manifest.categories.some((c) => c.id === s.category), s.category);
+
+    check(`${s.id}: start node resolves`, Boolean(sc.nodes?.[sc.start]), sc.start);
+
+    const QUALITIES = ['good', 'awkward', 'wrong'];
+    const reachable = new Set([sc.start]);
+
+    for (const [nodeId, node] of Object.entries(sc.nodes || {})) {
+      const terminal = node.end === true;
+      check(`${s.id}/${nodeId}: has options or is terminal`,
+        terminal || (node.options || []).length > 0);
+      if (node.speaker === 'narration') {
+        check(`${s.id}/${nodeId}: narration is written in the learner's language`, Boolean(node[fields.meaning]));
+      }
+
+      if (node.audio) {
+        const clip = resolve(ROOT, node.audio);
+        check(`${s.id}/${nodeId}: audio clip exists`, existsSync(clip), node.audio);
+        if (existsSync(clip)) check(`${s.id}/${nodeId}: audio clip is non-trivial`, statSync(clip).size > 800);
+        check(`${s.id}/${nodeId}: audio has text to synthesise`, Boolean(node.audioHint || node[target]));
+        check(`${s.id}/${nodeId}: audio path is unique`, !seenAudio.has(node.audio));
+        seenAudio.add(node.audio);
+      }
+
+      for (const opt of node.options || []) {
+        const next = opt.next;
+        check(
+          `${s.id}/${nodeId}: option target "${next}" exists`,
+          next === null || next === undefined || next === 'END' || Boolean(sc.nodes[next])
+        );
+        if (sc.nodes[next]) reachable.add(next);
+
+        check(`${s.id}/${nodeId}: option quality is valid`,
+          !opt.quality || QUALITIES.includes(opt.quality), opt.quality);
+        check(`${s.id}/${nodeId}: option has feedback`, Boolean(opt.feedback));
+        check(`${s.id}/${nodeId}: option has text or a phraseId`,
+          Boolean(opt.phraseId || opt[target] || opt[fields.meaning]));
+
+        if (opt.phraseId) {
+          check(`${s.id}/${nodeId}: phrase ${opt.phraseId} exists in content`, seenIds.has(opt.phraseId));
+        }
+      }
+      if (node.phraseId) {
+        check(`${s.id}/${nodeId}: phrase ${node.phraseId} exists in content`, seenIds.has(node.phraseId));
+      }
+    }
+
+    // Walk from the start so an orphaned node can't hide a broken branch.
+    for (let grew = true; grew; ) {
+      grew = false;
+      for (const id of [...reachable]) {
+        for (const opt of sc.nodes[id]?.options || []) {
+          if (sc.nodes[opt.next] && !reachable.has(opt.next)) { reachable.add(opt.next); grew = true; }
+        }
+      }
+    }
+    for (const nodeId of Object.keys(sc.nodes || {})) {
+      check(`${s.id}/${nodeId}: reachable from start`, reachable.has(nodeId));
+    }
+    check(`${s.id}: every path can terminate`,
+      [...reachable].some((id) => sc.nodes[id].end === true));
+  }
+
+  console.log(`  ${phraseCount} phrases, ${audioPresent} with generated audio (${phraseCount - audioPresent} pending)`);
 }
 
-console.log(`  ${phraseCount} phrases, ${audioPresent} with generated audio (${phraseCount - audioPresent} pending)`);
+/* ---------- interface strings ---------- */
+
+console.log('\nInterface strings');
+
+// Keys the Japanese interface can never reach: they belong to features only
+// courses with furigana, romaji or character sets have, and every such course
+// today is taught from English.
+const EN_ONLY = /^(reading\.|settings\.(furigana|romaji|newChars|characters)|quiz\.(reading|loaded$)|toast\.romajiRetired)/;
+
+const enKeys = new Set(Object.keys(i18nDicts.en));
+const jaKeys = new Set(Object.keys(i18nDicts.ja));
+for (const key of jaKeys) check(`ja key ${key} exists in en`, enKeys.has(key));
+for (const key of enKeys) {
+  if (!EN_ONLY.test(key)) check(`en key ${key} has a Japanese translation`, jaKeys.has(key));
+}
+
+// Every literal t('…') in the app must name a real key, or the raw key would show.
+let literalKeys = 0;
+for (const file of readdirSync(resolve(ROOT, 'js')).filter((f) => f.endsWith('.js'))) {
+  const src = readFileSync(resolve(ROOT, 'js', file), 'utf8');
+  for (const [, key] of src.matchAll(/\bt\('([\w.]+)'/g)) {
+    literalKeys++;
+    check(`${file}: t('${key}') exists`, enKeys.has(key));
+  }
+}
+console.log(`  ${enKeys.size} keys, ${jaKeys.size} translated to Japanese, ${literalKeys} uses checked`);
 
 /* ---------- SRS ---------- */
 

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "emergency",
+  "title": "緊急時・体調不良",
+  "order": 9,
+  "description": "使わずに済むのが一番ですが、いざという時に最初のひとことが出るかどうかで大きく変わります。",
+  "phrases": [
+    {
+      "id": "eme-01",
+      "english": "Help!",
+      "japanese": "助けて！",
+      "registerNotes": "大きな声で。まず周りの人に気づいてもらうことが目的です。",
+      "audio": "audio/en/eme-01.mp3",
+      "audioHint": "Help!",
+      "tags": ["緊急", "必須"],
+      "difficulty": 1
+    },
+    {
+      "id": "eme-02",
+      "english": "Please call an ambulance.",
+      "japanese": "救急車を呼んでください。",
+      "registerNotes": "緊急番号はアメリカ・カナダが 911、イギリスが 999（112 も可）、オーストラリアが 000 です。",
+      "audio": "audio/en/eme-02.mp3",
+      "audioHint": "Please call an ambulance.",
+      "tags": ["緊急", "必須"],
+      "difficulty": 2
+    },
+    {
+      "id": "eme-03",
+      "english": "I don't feel well.",
+      "japanese": "気分が悪いです。",
+      "registerNotes": "体調不良を伝えるいちばんやわらかい言い方です。",
+      "audio": "audio/en/eme-03.mp3",
+      "audioHint": "I don't feel well.",
+      "tags": ["体調"],
+      "difficulty": 2
+    },
+    {
+      "id": "eme-04",
+      "english": "I have a headache.",
+      "japanese": "頭が痛いです。",
+      "registerNotes": "I have a＋症状 で伝えられます。stomachache（腹痛）、fever（熱）、cold（風邪）など。",
+      "audio": "audio/en/eme-04.mp3",
+      "audioHint": "I have a headache.",
+      "tags": ["体調"],
+      "difficulty": 2
+    },
+    {
+      "id": "eme-05",
+      "english": "Where is the nearest pharmacy?",
+      "japanese": "いちばん近い薬局はどこですか？",
+      "registerNotes": "アメリカでは drugstore も一般的。イギリスでは chemist とも言います。",
+      "audio": "audio/en/eme-05.mp3",
+      "audioHint": "Where is the nearest pharmacy?",
+      "tags": ["体調", "道案内"],
+      "difficulty": 3
+    },
+    {
+      "id": "eme-06",
+      "english": "I lost my wallet.",
+      "japanese": "財布をなくしました。",
+      "registerNotes": "lost は「なくした」。盗まれた場合は My wallet was stolen. です。",
+      "audio": "audio/en/eme-06.mp3",
+      "audioHint": "I lost my wallet.",
+      "tags": ["トラブル"],
+      "difficulty": 2
+    },
+    {
+      "id": "eme-07",
+      "english": "My passport was stolen.",
+      "japanese": "パスポートを盗まれました。",
+      "registerNotes": "警察で被害届（police report）を出し、日本の大使館・領事館に連絡します。",
+      "audio": "audio/en/eme-07.mp3",
+      "audioHint": "My passport was stolen.",
+      "tags": ["トラブル", "緊急"],
+      "difficulty": 3
+    },
+    {
+      "id": "eme-08",
+      "english": "Please call the police.",
+      "japanese": "警察を呼んでください。",
+      "registerNotes": "身の危険を感じたら、まず安全な場所へ移動してから。",
+      "audio": "audio/en/eme-08.mp3",
+      "audioHint": "Please call the police.",
+      "tags": ["緊急"],
+      "difficulty": 2
+    },
+    {
+      "id": "eme-09",
+      "english": "Is there anyone who speaks Japanese?",
+      "japanese": "日本語を話せる人はいますか？",
+      "registerNotes": "病院や警察では遠慮せずに聞いてみましょう。通訳（interpreter）を手配してくれることもあります。",
+      "audio": "audio/en/eme-09.mp3",
+      "audioHint": "Is there anyone who speaks Japanese?",
+      "tags": ["緊急", "言葉"],
+      "difficulty": 3
+    },
+    {
+      "id": "eme-10",
+      "english": "I need to see a doctor.",
+      "japanese": "医者に診てもらいたいです。",
+      "registerNotes": "see a doctor で「診察を受ける」。海外旅行保険の連絡先も確認しておきましょう。",
+      "audio": "audio/en/eme-10.mp3",
+      "audioHint": "I need to see a doctor.",
+      "tags": ["体調", "病院"],
+      "difficulty": 3
+    }
+  ]
+}

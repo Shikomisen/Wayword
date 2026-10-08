@@ -2,7 +2,7 @@
   "name": "wayword",
   "version": "1.0.0",
   "private": true,
-  "description": "Survival-level conversational Japanese — an offline PWA with SRS flashcards, scenario dialogues and bundled pre-generated audio.",
+  "description": "Survival-level conversational language practice — an offline PWA with SRS flashcards, scenario dialogues and bundled pre-generated audio, in multiple language pairs.",
   "type": "module",
   "scripts": {
     "start": "node tools/serve.mjs",

@@ -1,10 +1,11 @@
 /**
  * sw.js — offline-first service worker (README §5).
  *
- * Precaches the app shell on install, then walks content/manifest.json to
- * cache every category file, scenario file and audio clip. That means
- * adding a category needs no service-worker edit — bump CACHE_VERSION and
- * the new content is picked up on the next install.
+ * Precaches the app shell on install, then walks content/courses.json and
+ * every course manifest it lists to cache each category file, scenario file
+ * and audio clip. That means adding a category — or a whole course — needs
+ * no service-worker edit: bump CACHE_VERSION and the new content is picked
+ * up on the next install.
  *
  * Strategy:
  *   - navigations      -> network-first, falling back to the cached shell
@@ -12,7 +13,7 @@
  *                         under a given cache version)
  */
 
-const CACHE_VERSION = 'v4';
+const CACHE_VERSION = 'v5';
 const CACHE_PREFIX = 'wayword-';
 const CACHE = `${CACHE_PREFIX}${CACHE_VERSION}`;
 
@@ -30,7 +31,10 @@ const SHELL = [
   './js/app.js',
   './js/audio.js',
   './js/content.js',
+  './js/course.js',
   './js/deck.js',
+  './js/home.js',
+  './js/i18n.js',
   './js/quiz.js',
   './js/characters.js',
   './js/render.js',
@@ -43,47 +47,60 @@ const SHELL = [
   './icons/icon-180.png',
 ];
 
-/** Read the content manifest and expand it into a full asset list. */
-async function contentAssets() {
-  const assets = ['./content/manifest.json'];
-  try {
-    const res = await fetch('./content/manifest.json', { cache: 'no-cache' });
-    const manifest = await res.json();
+const fetchJSON = (f) =>
+  fetch(`./${f}`, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
 
-    const categoryFiles = (manifest.categories || []).map((c) => c.file);
-    const characterFiles = (manifest.characterSets || []).map((s) => s.file);
-    const scenarioFiles = (manifest.scenarios || []).map((s) => s.file);
-    assets.push(
-      ...categoryFiles.map((f) => `./${f}`),
-      ...characterFiles.map((f) => `./${f}`),
-      ...scenarioFiles.map((f) => `./${f}`)
-    );
+/** Expand one course manifest into every file and clip it references. */
+async function manifestAssets(manifestPath) {
+  const assets = [`./${manifestPath}`];
+  const manifest = await fetchJSON(manifestPath);
+  if (!manifest) throw new Error(`could not read ${manifestPath}`);
 
-    const fetchJSON = (f) =>
-      fetch(`./${f}`).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+  const categoryFiles = (manifest.categories || []).map((c) => c.file);
+  const characterFiles = (manifest.characterSets || []).map((s) => s.file);
+  const scenarioFiles = (manifest.scenarios || []).map((s) => s.file);
+  assets.push(
+    ...categoryFiles.map((f) => `./${f}`),
+    ...characterFiles.map((f) => `./${f}`),
+    ...scenarioFiles.map((f) => `./${f}`)
+  );
 
-    // Phrase clips live inside each category file...
-    for (const cat of await Promise.all(categoryFiles.map(fetchJSON))) {
-      for (const p of cat?.phrases || []) if (p.audio) assets.push(`./${p.audio}`);
+  // Phrase clips live inside each category file...
+  for (const cat of await Promise.all(categoryFiles.map(fetchJSON))) {
+    for (const p of cat?.phrases || []) if (p.audio) assets.push(`./${p.audio}`);
+  }
+
+  // ...character clips inside each character set...
+  for (const set of await Promise.all(characterFiles.map(fetchJSON))) {
+    for (const c of set?.characters || []) if (c.audio) assets.push(`./${c.audio}`);
+  }
+
+  // ...and NPC-line clips inside each scenario file.
+  for (const sc of await Promise.all(scenarioFiles.map(fetchJSON))) {
+    for (const node of Object.values(sc?.nodes || {})) {
+      if (node.audio) assets.push(`./${node.audio}`);
     }
-
-    // ...character clips inside each character set...
-    for (const set of await Promise.all(characterFiles.map(fetchJSON))) {
-      for (const c of set?.characters || []) if (c.audio) assets.push(`./${c.audio}`);
-    }
-
-    // ...and NPC-line clips inside each scenario file.
-    for (const sc of await Promise.all(scenarioFiles.map(fetchJSON))) {
-      for (const node of Object.values(sc?.nodes || {})) {
-        if (node.audio) assets.push(`./${node.audio}`);
-      }
-    }
-  } catch (err) {
-    // Offline on first install, or a malformed manifest. The shell still
-    // works; content fills in on a later visit.
-    console.warn('[sw] could not expand content manifest', err);
   }
   return assets;
+}
+
+/** Read the course list and expand every available course into a full asset list. */
+async function contentAssets() {
+  const assets = ['./content/courses.json'];
+  const courses = await fetchJSON('content/courses.json');
+  const manifests = (courses?.courses || []).map((c) => c.manifest).filter(Boolean);
+
+  for (const path of manifests) {
+    try {
+      assets.push(...(await manifestAssets(path)));
+    } catch (err) {
+      // Offline on first install, or a malformed manifest. The shell still
+      // works; content fills in on a later visit. One broken course must not
+      // stop the others from being cached.
+      console.warn('[sw] could not expand content manifest', path, err);
+    }
+  }
+  return [...new Set(assets)];
 }
 
 /** addAll() rejects the whole batch if any single request 404s. */

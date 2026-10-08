@@ -68,20 +68,29 @@ a { color: inherit; text-decoration: none; }
 .error { color: var(--accent); }
 .section-title { color: var(--fg-muted); text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.08em; }
 
-/* ---------- Japanese typography ---------- */
+/* ---------- target-language typography ---------- */
 
-.jp {
-  font-family: var(--font-jp);
+/* Fonts follow the lang attribute, which every target, meaning and note
+   node carries — so Japanese text gets the CJK stack (and the right glyph
+   forms) whether it's being learned or is the learner's own language. */
+:lang(ja) { font-family: var(--font-jp); }
+:lang(en) { font-family: var(--font); }
+
+.target {
   font-size: 2rem;
-  line-height: 2.1;
+  line-height: 2.1;   /* room for furigana above */
   display: block;
   word-break: keep-all;
 }
+.jp { font-family: var(--font-jp); }
+/* English needs no ruby headroom, and its sentences run longer. */
+.target:lang(en) { font-size: 1.6rem; line-height: 1.35; font-weight: 600; letter-spacing: -0.01em; }
+
 ruby { ruby-position: over; }
 rt { font-size: 0.45em; color: var(--fg-muted); font-weight: 400; }
 .romaji { color: var(--fg-muted); font-style: italic; margin-top: 2px; }
-.english { margin-top: 6px; }
-.english.big { font-size: 1.25rem; font-weight: 600; }
+.meaning { margin-top: 6px; }
+.meaning.big { font-size: 1.25rem; font-weight: 600; }
 
 /* ---------- buttons ---------- */
 
@@ -151,7 +160,8 @@ rt { font-size: 0.45em; color: var(--fg-muted); font-weight: 400; }
 }
 .phrase-main { display: flex; align-items: flex-start; gap: 10px; }
 .phrase-main .phrase-block { flex: 1; min-width: 0; }
-.phrase-card .jp { font-size: 1.5rem; line-height: 1.9; }
+.phrase-card .target { font-size: 1.5rem; line-height: 1.9; }
+.phrase-card .target:lang(en) { font-size: 1.25rem; line-height: 1.35; }
 
 .audio-btn {
   background: var(--bg-sunk); border: 1px solid var(--line); border-radius: 50%;
@@ -165,7 +175,7 @@ rt { font-size: 0.45em; color: var(--fg-muted); font-weight: 400; }
   font-size: 0.86rem; color: var(--fg-muted); background: var(--bg-sunk);
   border-radius: 10px; padding: 8px 10px; border-left: 3px solid var(--line);
 }
-.note-anime { border-left-color: var(--accent); }
+.note-anime, .note-pitfall { border-left-color: var(--accent); }
 .note-label { display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--fg-muted); margin-bottom: 2px; }
 
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
@@ -182,7 +192,8 @@ rt { font-size: 0.45em; color: var(--fg-muted); font-weight: 400; }
   min-height: 44vh; display: flex; flex-direction: column;
   align-items: center; justify-content: center; gap: 10px; cursor: pointer;
 }
-.study-card .jp { font-size: 2.3rem; }
+.study-card .target { font-size: 2.3rem; }
+.study-card .target:lang(en) { font-size: 1.8rem; line-height: 1.3; }
 .study-card .audio-btn { margin-top: 6px; }
 .study-back { margin-top: 16px; border-top: 1px solid var(--line); padding-top: 16px; width: 100%; text-align: left; }
 .tap-hint { margin-top: 18px; font-size: 0.85rem; }
@@ -199,7 +210,10 @@ rt { font-size: 0.45em; color: var(--fg-muted); font-weight: 400; }
 
 /* ---------- placement quiz ---------- */
 
-body.onboarding .tabbar { display: none; }
+body.onboarding .tabbar,
+body.no-tabs .tabbar,
+body.at-home .tabbar,
+body.at-home .coursebar { display: none; }
 
 .placement-intro { padding-top: 8vh; text-align: center; }
 .placement-intro .btn { width: 100%; margin-top: 12px; }
@@ -210,7 +224,8 @@ body.onboarding .tabbar { display: none; }
   padding: 32px 20px; text-align: center; min-height: 34vh;
   display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px;
 }
-.placement-card .jp { font-size: 2.2rem; }
+.placement-card .target { font-size: 2.2rem; }
+.placement-card .target:lang(en) { font-size: 1.75rem; line-height: 1.3; }
 .reveal { margin-top: 14px; color: var(--fg-muted); font-size: 0.9rem; }
 .reveal summary { cursor: pointer; }
 .audio-inline { margin-top: 4px; }
@@ -279,7 +294,8 @@ body.onboarding .tabbar { display: none; }
 .dialogue.past { opacity: 0.62; }
 .dialogue.npc { border-left: 3px solid var(--info); }
 .dialogue.you { border-left: 3px solid var(--ok); background: var(--bg-sunk); }
-.dialogue .jp { font-size: 1.35rem; line-height: 1.85; }
+.dialogue .target { font-size: 1.35rem; line-height: 1.85; }
+.dialogue .target:lang(en) { font-size: 1.15rem; line-height: 1.4; }
 .dialogue-who {
   font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em;
   color: var(--fg-muted); margin-bottom: 4px;
@@ -291,6 +307,8 @@ body.onboarding .tabbar { display: none; }
   color: var(--fg-muted); font-style: italic; text-align: center;
   padding: 14px 16px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
 }
+.narration .meaning { margin: 0; }
+.narration :lang(ja) { font-style: normal; } /* CJK has no true italic; synthetic slant reads badly */
 
 .feedback { margin-top: 10px; font-size: 0.84rem; color: var(--fg-muted); }
 .feedback-tag {
@@ -307,8 +325,9 @@ body.onboarding .tabbar { display: none; }
   flex-direction: column; align-items: flex-start; gap: 3px;
   text-align: left; padding: 14px 16px; width: 100%;
 }
-.btn-option .jp { font-size: 1.25rem; line-height: 1.8; }
-.btn-option .english { font-size: 0.88rem; color: var(--fg-muted); margin: 0; }
+.btn-option .target { font-size: 1.25rem; line-height: 1.8; }
+.btn-option .target:lang(en) { font-size: 1.05rem; line-height: 1.4; }
+.btn-option .meaning { font-size: 0.88rem; color: var(--fg-muted); margin: 0; }
 .btn-option .romaji { font-size: 0.8rem; }
 .from-deck { font-size: 0.66rem; color: var(--fg-muted); opacity: 0.7; margin-top: 2px; }
 
@@ -376,7 +395,7 @@ body.onboarding .tabbar { display: none; }
   background: var(--bg-sunk); border: 1px solid var(--line);
   border-radius: 99px; padding: 3px 10px; color: var(--fg-muted);
 }
-.ref-chip .jp { font-size: 0.85rem; line-height: 1.5; display: inline; }
+.ref-chip .target { font-size: 0.85rem; line-height: 1.5; display: inline; }
 .ref-chip:hover { border-color: var(--accent); color: var(--fg); }
 
 .footnote { margin-top: 28px; padding-top: 14px; border-top: 1px solid var(--line); }
@@ -386,6 +405,64 @@ body.onboarding .tabbar { display: none; }
   .kana-char { font-size: 1.3rem; }
   .kanji-glyph { font-size: 1.7rem; min-width: 54px; }
 }
+
+/* ---------- home: language picker ---------- */
+
+.home-hero { padding: 6vh 0 8px; }
+.brand { font-size: 2.2rem; letter-spacing: -0.03em; margin-bottom: 6px; }
+.brand::after { content: "."; color: var(--accent); }
+.picker-section { margin-top: 26px; }
+.picker-section .section-title { margin: 0 0 10px; }
+
+.segmented {
+  display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; gap: 4px;
+  background: var(--bg-sunk); border: 1px solid var(--line); border-radius: var(--radius); padding: 4px;
+}
+.segment {
+  font: inherit; color: var(--fg-muted); background: transparent; border: 0;
+  border-radius: 10px; min-height: 44px; cursor: pointer; font-weight: 600;
+}
+.segment.is-on { background: var(--bg-raised); color: var(--fg); box-shadow: 0 0 0 1px var(--line); }
+
+.course-list { display: flex; flex-direction: column; gap: 10px; }
+.course-card {
+  display: flex; align-items: center; gap: 14px;
+  background: var(--bg-raised); border: 1px solid var(--line);
+  border-radius: 18px; padding: 16px;
+  transition: border-color 0.15s ease, transform 0.06s ease;
+}
+.course-card:not(.is-planned):hover { border-color: var(--accent); }
+.course-card:active { transform: scale(0.99); }
+.course-card.is-planned { opacity: 0.6; }
+.course-badge {
+  flex: none; width: 52px; height: 52px; border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--accent-soft); color: var(--accent);
+  font-family: var(--font); font-weight: 700; letter-spacing: 0.04em;
+}
+.course-card.is-planned .course-badge { background: var(--bg-sunk); color: var(--fg-muted); }
+.course-badge-lg { width: 72px; height: 72px; font-size: 1.3rem; margin: 0 auto 16px; }
+.planned-course .btn { margin-top: 12px; }
+.course-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.course-name { font-weight: 700; font-size: 1.1rem; }
+.course-native { color: var(--fg-muted); font-size: 0.88rem; }
+.course-status { font-size: 0.8rem; color: var(--fg-muted); margin-top: 4px; }
+
+/* ---------- course bar ---------- */
+
+.coursebar {
+  max-width: 640px; margin: 0 auto;
+  padding: max(10px, env(safe-area-inset-top)) var(--pad) 0;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  font-size: 0.8rem; color: var(--fg-muted);
+}
+.coursebar-home { color: var(--fg-muted); padding: 6px 0; }
+.coursebar-home:hover { color: var(--fg); }
+.coursebar-pair {
+  background: var(--bg-raised); border: 1px solid var(--line);
+  border-radius: 99px; padding: 3px 10px; white-space: nowrap;
+}
+body:not(.at-home) #app { padding-top: 10px; }
 
 /* ---------- tab bar ---------- */
 

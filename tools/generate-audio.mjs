@@ -1,17 +1,22 @@
 /**
  * generate-audio.mjs — build-time TTS pass (README §3-audio).
  *
- * This is a ONE-TIME build step, not a runtime dependency. It walks the
- * content manifest, synthesises every phrase to an mp3, and writes it to
- * the path already declared in that phrase's `audio` field. The app then
- * just plays a file — no speechSynthesis call, no dependency on the end
- * user's device having a Japanese voice installed.
+ * This is a ONE-TIME build step, not a runtime dependency. It walks every
+ * course in content/courses.json, synthesises every phrase to an mp3 in that
+ * course's target language, and writes it to the path already declared in
+ * that phrase's `audio` field. The app then just plays a file — no
+ * speechSynthesis call, no dependency on the end user's device having a
+ * Japanese (or English) voice installed.
  *
  * Usage:
  *   node tools/generate-audio.mjs                 # only missing clips
  *   node tools/generate-audio.mjs --force         # re-synthesise everything
  *   node tools/generate-audio.mjs --only greetings,numbers
+ *   node tools/generate-audio.mjs --course ja-en  # one course only
  *   node tools/generate-audio.mjs --check         # report coverage, generate nothing
+ *
+ * Category ids repeat across courses (both have "greetings"), so pair
+ * --only with --course when forcing a re-synthesis.
  *
  * Source: Google Translate's public TTS endpoint (the same one gTTS
  * wraps), used here for a few hundred short public-domain phrases. Swap
@@ -33,6 +38,10 @@ const ONLY = (() => {
   const i = args.indexOf('--only');
   return i >= 0 && args[i + 1] ? new Set(args[i + 1].split(',')) : null;
 })();
+const COURSE = (() => {
+  const i = args.indexOf('--course');
+  return i >= 0 ? args[i + 1] : null;
+})();
 
 const THROTTLE_MS = 350;   // be a good citizen against a free endpoint
 const MAX_RETRIES = 3;
@@ -45,13 +54,13 @@ function readJSON(relPath) {
 }
 
 /**
- * Synthesise one line of Japanese to mp3 bytes.
+ * Synthesise one line to mp3 bytes, in `lang` (the course's target language).
  * The whole TTS-vendor decision is contained in this function.
  */
-async function synthesise(text) {
+async function synthesise(text, lang) {
   const url =
     'https://translate.google.com/translate_tts' +
-    `?ie=UTF-8&q=${encodeURIComponent(text)}&tl=ja&client=tw-ob&ttsspeed=1`;
+    `?ie=UTF-8&q=${encodeURIComponent(text)}&tl=${encodeURIComponent(lang)}&client=tw-ob&ttsspeed=1`;
 
   const res = await fetch(url, {
     headers: {
@@ -66,11 +75,11 @@ async function synthesise(text) {
   return buf;
 }
 
-async function synthesiseWithRetry(text) {
+async function synthesiseWithRetry(text, lang) {
   let lastErr;
   for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
     try {
-      return await synthesise(text);
+      return await synthesise(text, lang);
     } catch (err) {
       lastErr = err;
       if (attempt < MAX_RETRIES) await sleep(1200 * attempt); // back off
@@ -81,62 +90,74 @@ async function synthesiseWithRetry(text) {
 
 /* ---------- collect work ---------- */
 
-const manifest = readJSON('content/manifest.json');
 const jobs = [];
 const problems = [];
 
-for (const entry of manifest.categories) {
-  if (ONLY && !ONLY.has(entry.id)) continue;
-  const path = resolve(ROOT, entry.file);
-  if (!existsSync(path)) {
-    problems.push(`missing content file: ${entry.file}`);
-    continue;
-  }
-  const cat = JSON.parse(readFileSync(path, 'utf8'));
-  for (const p of cat.phrases || []) {
-    if (!p.audio) { problems.push(`${p.id}: no audio path declared`); continue; }
-    // audioHint carries the kana reading, which the synthesiser handles far
-    // more reliably than raw kanji.
-    const text = p.audioHint || p.japanese;
-    jobs.push({ id: p.id, category: entry.id, text, out: resolve(ROOT, p.audio) });
-  }
-}
+const courses = readJSON('content/courses.json').courses
+  .filter((c) => c.manifest && (!COURSE || c.id === COURSE));
+if (COURSE && !courses.length) problems.push(`no course "${COURSE}" with content in content/courses.json`);
 
-// Character sets (kana / kanji) use the same declared-path convention as
-// phrases, so they need no special handling beyond reading a different key.
-for (const entry of manifest.characterSets || []) {
-  if (ONLY && !ONLY.has(entry.id)) continue;
-  const path = resolve(ROOT, entry.file);
-  if (!existsSync(path)) {
-    problems.push(`missing character set file: ${entry.file}`);
-    continue;
-  }
-  const set = JSON.parse(readFileSync(path, 'utf8'));
-  for (const c of set.characters || []) {
-    if (!c.audio) { problems.push(`${c.id}: no audio path declared`); continue; }
-    // For kanji the hint is the kana reading — synthesising the bare kanji
-    // gives whichever reading the engine guesses, which is often the wrong one.
-    const text = c.audioHint || c.character;
-    jobs.push({ id: c.id, category: entry.id, text, out: resolve(ROOT, c.audio) });
-  }
-}
+for (const course of courses) collect(course);
 
-// Scenario NPC lines are content in their own right and aren't present in
-// the category files, so they get their own clips (ASSUMPTIONS A15).
-// Player options reuse the referenced phrase's existing clip.
-for (const entry of manifest.scenarios || []) {
-  if (ONLY && !ONLY.has(entry.id)) continue;
-  const path = resolve(ROOT, entry.file);
-  if (!existsSync(path)) {
-    problems.push(`missing scenario file: ${entry.file}`);
-    continue;
+function collect(course) {
+  const manifest = readJSON(course.manifest);
+  const lang = manifest.language || course.target;
+  // The text being learned: `japanese` for en-ja, `english` for ja-en.
+  const targetField = manifest.fields?.target || 'japanese';
+  const job = (id, category, text, out) =>
+    jobs.push({ id: `${course.id}/${id}`, category, text, lang, out: resolve(ROOT, out) });
+
+  for (const entry of manifest.categories) {
+    if (ONLY && !ONLY.has(entry.id)) continue;
+    const path = resolve(ROOT, entry.file);
+    if (!existsSync(path)) {
+      problems.push(`missing content file: ${entry.file}`);
+      continue;
+    }
+    const cat = JSON.parse(readFileSync(path, 'utf8'));
+    for (const p of cat.phrases || []) {
+      if (!p.audio) { problems.push(`${p.id}: no audio path declared`); continue; }
+      // For Japanese, audioHint carries the kana reading, which the
+      // synthesiser handles far more reliably than raw kanji.
+      job(p.id, entry.id, p.audioHint || p[targetField], p.audio);
+    }
   }
-  const scenario = JSON.parse(readFileSync(path, 'utf8'));
-  for (const [nodeId, node] of Object.entries(scenario.nodes || {})) {
-    if (!node.audio) continue; // narration and English-language nodes have none
-    const text = node.audioHint || node.japanese;
-    if (!text) { problems.push(`${entry.id}/${nodeId}: audio declared but no text`); continue; }
-    jobs.push({ id: `${entry.id}/${nodeId}`, category: entry.id, text, out: resolve(ROOT, node.audio) });
+
+  // Character sets (kana / kanji) use the same declared-path convention as
+  // phrases, so they need no special handling beyond reading a different key.
+  for (const entry of manifest.characterSets || []) {
+    if (ONLY && !ONLY.has(entry.id)) continue;
+    const path = resolve(ROOT, entry.file);
+    if (!existsSync(path)) {
+      problems.push(`missing character set file: ${entry.file}`);
+      continue;
+    }
+    const set = JSON.parse(readFileSync(path, 'utf8'));
+    for (const c of set.characters || []) {
+      if (!c.audio) { problems.push(`${c.id}: no audio path declared`); continue; }
+      // For kanji the hint is the kana reading — synthesising the bare kanji
+      // gives whichever reading the engine guesses, which is often the wrong one.
+      job(c.id, entry.id, c.audioHint || c.character, c.audio);
+    }
+  }
+
+  // Scenario NPC lines are content in their own right and aren't present in
+  // the category files, so they get their own clips (ASSUMPTIONS A15).
+  // Player options reuse the referenced phrase's existing clip.
+  for (const entry of manifest.scenarios || []) {
+    if (ONLY && !ONLY.has(entry.id)) continue;
+    const path = resolve(ROOT, entry.file);
+    if (!existsSync(path)) {
+      problems.push(`missing scenario file: ${entry.file}`);
+      continue;
+    }
+    const scenario = JSON.parse(readFileSync(path, 'utf8'));
+    for (const [nodeId, node] of Object.entries(scenario.nodes || {})) {
+      if (!node.audio) continue; // narration and learner-language nodes have none
+      const text = node.audioHint || node[targetField];
+      if (!text) { problems.push(`${entry.id}/${nodeId}: audio declared but no text`); continue; }
+      job(`${entry.id}/${nodeId}`, entry.id, text, node.audio);
+    }
   }
 }
 
@@ -175,7 +196,7 @@ for (const [i, job] of todo.entries()) {
   mkdirSync(dirname(job.out), { recursive: true });
   const label = `[${String(i + 1).padStart(3)}/${todo.length}] ${job.id}`;
   try {
-    const bytes = await synthesiseWithRetry(job.text);
+    const bytes = await synthesiseWithRetry(job.text, job.lang);
     writeFileSync(job.out, bytes);
     ok++;
     console.log(`${label}  ✓  ${job.text}  (${(bytes.length / 1024).toFixed(1)} KB)`);

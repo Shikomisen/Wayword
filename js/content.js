@@ -1,14 +1,57 @@
 /**
  * content.js — content loader (README §3a).
  *
- * The app never hardcodes a category. Everything comes from
- * content/manifest.json, so adding a category is: drop in a JSON file,
- * add one manifest line. No app code changes.
+ * The app never hardcodes a category. Everything comes from the current
+ * course's manifest (content/manifest.json for English → Japanese), so
+ * adding a category is: drop in a JSON file, add one manifest line. No app
+ * code changes.
+ *
+ * Each course's content keeps field names that read naturally for its
+ * authors — `japanese` / `english` and so on — and the manifest's `fields`
+ * map says which of them is the language being learned. Everything loaded
+ * here gains the same generic fields, so screens never need to know which
+ * way round a course goes:
+ *
+ *   target   the text being learned           (japanese | english | …)
+ *   ruby     furigana segments, if any
+ *   reading  a romanisation, if any
+ *   meaning  the gloss in the learner's own language
+ *   notes    [{ label, text, style }] from the manifest's `noteFields` list
  */
 
-let cache = null;
+import { currentCourse, currentCourseId } from './course.js';
+
+const caches = new Map();
 
 const SUPPORTED_SCHEMA = 1;
+
+// What en-ja's manifest declares; also the fallback for a manifest that
+// predates `fields`, since en-ja is the only course that ever lacked one.
+const DEFAULT_FIELDS = { target: 'japanese', ruby: 'furigana', reading: 'romaji', meaning: 'english' };
+const DEFAULT_NOTES = [
+  { field: 'registerNotes', label: 'Register' },
+  { field: 'animeNote', label: 'From anime?', style: 'anime' },
+];
+
+function makeNormaliser(manifest, course) {
+  const fields = manifest.fields || DEFAULT_FIELDS;
+  const notes = manifest.noteFields || DEFAULT_NOTES;
+  const targetLang = manifest.language || course?.target || 'ja';
+  const meaningLang = manifest.speaker || course?.speaker || 'en';
+
+  return (item) => ({
+    ...item,
+    target: item[fields.target] ?? '',
+    ruby: fields.ruby ? item[fields.ruby] ?? null : null,
+    reading: fields.reading ? item[fields.reading] ?? null : null,
+    meaning: item[fields.meaning] ?? '',
+    notes: notes
+      .filter((n) => item[n.field])
+      .map((n) => ({ label: n.label, text: item[n.field], style: n.style || null })),
+    targetLang,
+    meaningLang,
+  });
+}
 
 async function fetchJSON(path) {
   const res = await fetch(path, { cache: 'no-cache' });
@@ -19,12 +62,13 @@ async function fetchJSON(path) {
 /**
  * Character sets (hiragana / katakana / kanji) are stored in the same
  * phrase-shaped schema so every existing component — the flashcard
- * session, japaneseNode's ruby rendering, the furigana/romaji toggles,
+ * session, targetNode's ruby rendering, the furigana/romaji toggles,
  * the audio button — renders them with no special-casing.
  *
  * The only thing synthesised here is a display `english` for kana, which
  * genuinely has no meaning to show; the JSON keeps `english: null` and
- * `meaning` preserves whatever the file actually declared.
+ * `declaredMeaning` preserves whatever the file actually declared. (The
+ * generic `meaning` added afterwards is the display gloss, like phrases.)
  */
 function normaliseCharacter(c, set) {
   return {
@@ -33,7 +77,7 @@ function normaliseCharacter(c, set) {
     categoryId: set.id,
     categoryTitle: set.title,
     script: set.script,
-    meaning: c.english ?? null,
+    declaredMeaning: c.english ?? null,
     english: c.english ?? `reads “${c.romaji}”`,
   };
 }
@@ -48,14 +92,20 @@ function normaliseCharacter(c, set) {
  * without caring which deck it came from.
  */
 export async function loadContent() {
-  if (cache) return cache;
+  const courseId = currentCourseId();
+  if (caches.has(courseId)) return caches.get(courseId);
 
-  const manifest = await fetchJSON('content/manifest.json');
+  const course = await currentCourse();
+  if (!course?.manifest) throw new Error(`Course ${courseId} has no content yet`);
+
+  const manifest = await fetchJSON(course.manifest);
   if (manifest.schemaVersion > SUPPORTED_SCHEMA) {
     console.warn(
       `Content schemaVersion ${manifest.schemaVersion} is newer than this app supports (${SUPPORTED_SCHEMA}). Rendering anyway.`
     );
   }
+  const normalise = makeNormaliser(manifest, course);
+  const fields = manifest.fields || DEFAULT_FIELDS;
 
   const entries = [...manifest.categories].sort((a, b) => a.order - b.order);
 
@@ -63,7 +113,7 @@ export async function loadContent() {
     entries.map(async (entry) => {
       try {
         const data = await fetchJSON(entry.file);
-        return { ...entry, ...data, phrases: data.phrases || [], missing: false };
+        return { ...entry, ...data, phrases: (data.phrases || []).map(normalise), missing: false };
       } catch (err) {
         // A category file that fails to load must not take the app down.
         console.error(err);
@@ -99,7 +149,7 @@ export async function loadContent() {
   }
 
   for (const set of loadedSets) {
-    const normalised = set.characters.map((c) => normaliseCharacter(c, set));
+    const normalised = set.characters.map((c) => normalise(normaliseCharacter(c, set)));
     bySet.set(set.id, { ...set, characters: normalised });
     for (const c of normalised) {
       characters.set(c.id, c);
@@ -107,16 +157,28 @@ export async function loadContent() {
     }
   }
 
-  cache = {
+  const characterSets = [...bySet.values()];
+  const loadedContent = {
+    course,
     manifest,
+    normalise,
+    // What this course's content supports, so screens can drop controls
+    // that would do nothing (no furigana toggle for English, and so on).
+    features: {
+      ruby: Boolean(fields.ruby),
+      reading: Boolean(fields.reading),
+      characters: characterSets.length > 0,
+      scenarios: (manifest.scenarios || []).length > 0,
+    },
     categories: loaded,
-    characterSets: [...bySet.values()],
+    characterSets,
     phrases,
     characters,
     byCategory,
     bySet,
   };
-  return cache;
+  caches.set(courseId, loadedContent);
+  return loadedContent;
 }
 
 export async function getPhrase(id) {
@@ -179,13 +241,24 @@ export function gridFor(set, group = 'base') {
 const scenarioCache = new Map();
 
 export async function loadScenario(id) {
-  if (scenarioCache.has(id)) return scenarioCache.get(id);
-  const { manifest } = await loadContent();
+  const key = `${currentCourseId()}/${id}`;
+  if (scenarioCache.has(key)) return scenarioCache.get(key);
+  const { manifest, normalise } = await loadContent();
   const entry = manifest.scenarios?.find((s) => s.id === id);
   if (!entry) throw new Error(`Unknown scenario: ${id}`);
   const data = await fetchJSON(entry.file);
-  const merged = { ...entry, ...data };
-  scenarioCache.set(id, merged);
+
+  // NPC lines and inline replies carry text in the course's own field
+  // names, exactly like phrases, so they get the same generic fields.
+  const nodes = Object.fromEntries(
+    Object.entries(data.nodes || {}).map(([nodeId, node]) => [nodeId, {
+      ...normalise(node),
+      options: (node.options || []).map((o) => (o.phraseId ? o : normalise(o))),
+    }])
+  );
+
+  const merged = { ...entry, ...data, nodes };
+  scenarioCache.set(key, merged);
   return merged;
 }
 

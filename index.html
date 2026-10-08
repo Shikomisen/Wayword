@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Wayword</title>
-  <meta name="description" content="Survival-level conversational Japanese, offline, with SRS." />
+  <meta name="description" content="Survival-level conversational language practice — offline, with spaced repetition. Japanese for English speakers, English for Japanese speakers." />
 
   <link rel="manifest" href="app.webmanifest" />
   <meta name="theme-color" content="#1b1b1f" />
@@ -16,11 +16,18 @@
 
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body>
+<!-- at-home hides the course chrome until the router enters a course. -->
+<body class="at-home">
+  <header id="coursebar" class="coursebar" aria-label="Course"></header>
+
   <main id="app" aria-live="polite">
     <div class="screen"><p class="muted">Loading…</p></div>
   </main>
 
+  <!-- Rebuilt per course by app.js (tabs and labels depend on the course) and
+       hidden on the picker. The static links are for the one launch after an
+       update where the previous service worker still serves the previous
+       app.js from cache: that build expects these tabs to be here. -->
   <nav class="tabbar" aria-label="Primary">
     <a href="#/"><span>📅</span>Today</a>
     <a href="#/browse"><span>📚</span>Browse</a>
@@ -31,6 +38,7 @@
 
   <noscript>
     <p style="padding:2rem">Wayword needs JavaScript — it's an offline study app, all the logic runs on your device.</p>
+    <p style="padding:0 2rem 2rem" lang="ja">Wayword を使うには JavaScript が必要です。オフラインで動く学習アプリで、すべての処理はお使いの端末の中で行われます。</p>
   </noscript>
 
   <script type="module" src="js/app.js"></script>

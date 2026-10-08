@@ -10,10 +10,11 @@
  */
 
 import { loadContent } from './content.js';
-import { el, clear, japaneseNode, phraseBlock } from './render.js';
+import { el, clear, targetNode, meaningNode } from './render.js';
 import * as deck from './deck.js';
 import * as srs from './srs.js';
 import * as audio from './audio.js';
+import { t, fill } from './i18n.js';
 
 export const ANSWERS = {
   KNOWN: 'known',        // could say it unprompted
@@ -115,16 +116,20 @@ export async function applyPlacement(items, answers) {
 }
 
 export function levelLabel(overall) {
-  if (overall >= 0.75) return 'Strong start';
-  if (overall >= 0.45) return 'Partial — lopsided, as expected';
-  if (overall >= 0.2) return 'Early beginner';
-  return 'Starting fresh';
+  if (overall >= 0.75) return t('quiz.level.strong');
+  if (overall >= 0.45) return t('quiz.level.partial');
+  if (overall >= 0.2) return t('quiz.level.early');
+  return t('quiz.level.fresh');
 }
 
 /* ---------- screen ---------- */
 
 export async function renderPlacement(root, { onDone }) {
   const items = await buildPlacementSet();
+  const { manifest } = await loadContent();
+  // The intro is about *this* course's learners (anime-taught Japanese,
+  // school-taught English…), so its wording comes from the course manifest.
+  const copy = manifest.copy || {};
   const answers = {};
   let index = 0;
 
@@ -135,18 +140,11 @@ export async function renderPlacement(root, { onDone }) {
     clear(view);
     view.append(
       el('div', { class: 'placement-intro' },
-        el('h1', {}, 'Where are you starting from?'),
-        el('p', { class: 'lede' },
-          `${items.length} quick cards — all ten phrase categories, plus a few kana and kanji ` +
-          'to check what you can already read. For each one, say whether you already have it. ' +
-          'Nothing is typed and nothing is scored against you — it only decides where each card ' +
-          'enters your review deck.'),
-        el('p', { class: 'muted' },
-          'Anime-derived Japanese is usually real but lopsided: strong passive vocabulary, ' +
-          'casual register, gaps in the functional phrases nobody says on screen. ' +
-          'This is looking for those gaps, not testing you.'),
+        el('h1', {}, t('quiz.title')),
+        copy.placementLede ? el('p', { class: 'lede' }, fill(copy.placementLede, { n: items.length })) : null,
+        copy.placementAside ? el('p', { class: 'muted' }, copy.placementAside) : null,
         el('button', { class: 'btn btn-primary btn-lg', onclick: () => { index = 0; renderCard(); } },
-          'Start'),
+          t('quiz.start')),
         el('button', {
           class: 'btn btn-ghost',
           onclick: async () => {
@@ -154,7 +152,7 @@ export async function renderPlacement(root, { onDone }) {
             await applyPlacement(items, {});
             onDone();
           },
-        }, 'Skip — I\'m a complete beginner')
+        }, t('quiz.skip'))
       )
     );
   }
@@ -164,35 +162,37 @@ export async function renderPlacement(root, { onDone }) {
     const item = items[index];
     clear(view);
 
-    view.append(
+    // Native append() prints a null child as "null" — drop the absent Back button.
+    view.append(...[
       el('div', { class: 'placement-progress' },
         el('div', { class: 'bar' },
           el('div', { class: 'bar-fill', style: `width:${(index / items.length) * 100}%` })),
-        el('div', { class: 'muted small' }, `${index + 1} of ${items.length} · ${item.categoryTitle}`)
+        el('div', { class: 'muted small' },
+          t('quiz.progress', { i: index + 1, n: items.length, title: item.categoryTitle }))
       ),
       el('div', { class: 'placement-card' },
-        japaneseNode(item, { furigana: true }),
-        el('div', { class: 'romaji' }, item.romaji),
+        targetNode(item, { furigana: true }),
+        item.reading ? el('div', { class: 'romaji' }, item.reading) : null,
         el('button', {
           class: 'btn btn-ghost audio-inline',
           onclick: () => audio.play(item.audio),
-        }, '🔊 Listen'),
+        }, t('quiz.listen')),
         el('details', { class: 'reveal' },
-          el('summary', {}, 'Show meaning'),
-          el('div', { class: 'english' }, item.english))
+          el('summary', {}, t('quiz.showMeaning')),
+          meaningNode(item))
       ),
       el('div', { class: 'placement-actions' },
         el('button', { class: 'btn btn-answer known', onclick: () => answer(ANSWERS.KNOWN) },
-          el('strong', {}, 'I know this'), el('span', {}, 'could say it myself')),
+          el('strong', {}, t('quiz.known')), el('span', {}, t('quiz.knownSub'))),
         el('button', { class: 'btn btn-answer seen', onclick: () => answer(ANSWERS.RECOGNISED) },
-          el('strong', {}, 'I recognise it'), el('span', {}, "understand it, couldn't say it")),
+          el('strong', {}, t('quiz.seen')), el('span', {}, t('quiz.seenSub'))),
         el('button', { class: 'btn btn-answer unknown', onclick: () => answer(ANSWERS.UNKNOWN) },
-          el('strong', {}, 'New to me'), el('span', {}, 'start from the beginning'))
+          el('strong', {}, t('quiz.unknown')), el('span', {}, t('quiz.unknownSub')))
       ),
       index > 0
-        ? el('button', { class: 'btn btn-ghost back', onclick: () => { index--; renderCard(); } }, '← Back')
-        : null
-    );
+        ? el('button', { class: 'btn btn-ghost back', onclick: () => { index--; renderCard(); } }, t('quiz.back'))
+        : null,
+    ].filter(Boolean));
   }
 
   function answer(value) {
@@ -203,7 +203,7 @@ export async function renderPlacement(root, { onDone }) {
 
   async function renderResults() {
     clear(view);
-    view.append(el('div', { class: 'loading' }, 'Building your deck…'));
+    view.append(el('div', { class: 'loading' }, t('quiz.building')));
 
     const result = await applyPlacement(items, answers);
     const { categories, characterSets } = await loadContent();
@@ -225,35 +225,34 @@ export async function renderPlacement(root, { onDone }) {
     clear(view);
     view.append(
       el('div', { class: 'placement-results' },
-        el('h1', {}, 'Deck built'),
+        el('h1', {}, t('quiz.built')),
         el('p', { class: 'lede' },
-          `${levelLabel(result.overall)} — ${Math.round(result.overall * 100)}% of the sample already familiar.`),
+          t('quiz.summary', { label: levelLabel(result.overall), pct: Math.round(result.overall * 100) })),
 
-        el('h2', { class: 'section-title' }, 'Phrases'),
+        el('h2', { class: 'section-title' }, t('quiz.phrases')),
         el('div', { class: 'result-grid' }, categories.map(resultRow)),
 
         characterSets.length
           ? el('div', {},
-              el('h2', { class: 'section-title' }, 'Reading'),
+              el('h2', { class: 'section-title' }, t('quiz.reading')),
               el('div', { class: 'result-grid' }, characterSets.map(resultRow)),
               el('p', { class: 'muted small' },
-                readingScore >= 0.75
-                  ? 'You can already read — those sets will be seeded well forward if you add them, ' +
-                    'rather than starting you at あ.'
-                  : 'Reading is the highest-leverage thing you can add. Hiragana first: it unlocks ' +
-                    'the furigana readings used everywhere else in the app.'))
+                readingScore >= 0.75 ? t('quiz.readingStrong') : t('quiz.readingWeak')))
           : null,
 
         el('p', { class: 'muted' },
-          `Categories 1-4 are loaded and ready (${summary.total} cards, ${summary.review} seeded forward ` +
-          'because you already had them). The remaining categories, and the character sets, are added ' +
-          'from Browse and Characters when you want them — loading everything at once would bury you in reviews.'),
+          t(characterSets.length ? 'quiz.loaded' : 'quiz.loadedNoChars',
+            { total: summary.total, review: summary.review })),
         el('div', { class: 'action-row' },
-          el('button', { class: 'btn btn-primary btn-lg', onclick: onDone }, 'Start studying'),
-          el('button', {
-            class: 'btn btn-ghost',
-            onclick: () => { location.hash = '/characters'; onDone(); },
-          }, 'Set up reading first'))
+          el('button', { class: 'btn btn-primary btn-lg', onclick: () => onDone() }, t('quiz.startStudying')),
+          characterSets.length
+            ? el('button', {
+                class: 'btn btn-ghost',
+                // Hand the destination to onDone: setting the hash here first
+                // was immediately overwritten by onDone's own go('/').
+                onclick: () => onDone('/characters'),
+              }, t('quiz.readingFirst'))
+            : null)
       )
     );
   }

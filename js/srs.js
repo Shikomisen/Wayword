@@ -159,10 +159,13 @@ export function formatInterval(card) {
   return `${Math.round(days / 30)} mo`;
 }
 
-/** Preview of what each grade button would schedule, for the answer screen. */
-export function gradePreviews(card, now = Date.now()) {
+/**
+ * Preview of what each grade button would schedule, for the answer screen.
+ * `format` lets the UI word the interval in the learner's own language.
+ */
+export function gradePreviews(card, now = Date.now(), format = formatInterval) {
   return Object.fromEntries(
-    Object.entries(GRADE).map(([name, q]) => [name, formatInterval(review(card, q, now))])
+    Object.entries(GRADE).map(([name, q]) => [name, format(review(card, q, now))])
   );
 }
 

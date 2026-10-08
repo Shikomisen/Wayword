@@ -1,9 +1,19 @@
 {
   "schemaVersion": 1,
   "language": "ja",
+  "speaker": "en",
   "register": "polite",
   "generatedFor": "Wayword MVP",
   "notes": "Adding a category = add a file to content/ + one entry here. No app code changes. Order is trip-relevance priority (README §6), not alphabetical.",
+  "fields": { "target": "japanese", "ruby": "furigana", "reading": "romaji", "meaning": "english" },
+  "noteFields": [
+    { "field": "registerNotes", "label": "Register" },
+    { "field": "animeNote", "label": "From anime?", "style": "anime" }
+  ],
+  "copy": {
+    "placementLede": "{n} quick cards — all ten phrase categories, plus a few kana and kanji to check what you can already read. For each one, say whether you already have it. Nothing is typed and nothing is scored against you — it only decides where each card enters your review deck.",
+    "placementAside": "Anime-derived Japanese is usually real but lopsided: strong passive vocabulary, casual register, gaps in the functional phrases nobody says on screen. This is looking for those gaps, not testing you."
+  },
   "categories": [
     { "id": "greetings",      "order": 1,  "file": "content/greetings.json",      "title": "Greetings & Politeness", "icon": "🙏", "week": 1, "tier": "core" },
     { "id": "numbers",        "order": 2,  "file": "content/numbers.json",        "title": "Numbers, Time & Money",  "icon": "🔢", "week": 1, "tier": "core" },

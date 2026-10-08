@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "id": "restaurant",
+  "title": "レストラン・カフェ",
+  "order": 7,
+  "description": "席に着くまで、注文、会計まで。席で会計してチップを払うなど、日本と違う習慣も押さえておきましょう。",
+  "phrases": [
+    {
+      "id": "res-01",
+      "english": "A table for two, please.",
+      "japanese": "2人です。（席をお願いします）",
+      "registerNotes": "How many? と聞かれたら Two, please. だけでも大丈夫です。",
+      "pitfallNote": "We are two. は不自然です。人数は Two. か A table for two. で。",
+      "audio": "audio/en/res-01.mp3",
+      "audioHint": "A table for two, please.",
+      "tags": ["入店", "必須"],
+      "difficulty": 1
+    },
+    {
+      "id": "res-02",
+      "english": "Can I see the menu, please?",
+      "japanese": "メニューを見せてもらえますか？",
+      "registerNotes": "飲み物だけのメニューは drink menu、デザートは dessert menu。",
+      "audio": "audio/en/res-02.mp3",
+      "audioHint": "Can I see the menu, please?",
+      "tags": ["注文"],
+      "difficulty": 1
+    },
+    {
+      "id": "res-03",
+      "english": "What do you recommend?",
+      "japanese": "おすすめは何ですか？",
+      "registerNotes": "迷ったら店員さんに聞いてみましょう。会話のきっかけにもなります。",
+      "audio": "audio/en/res-03.mp3",
+      "audioHint": "What do you recommend?",
+      "tags": ["注文"],
+      "difficulty": 2
+    },
+    {
+      "id": "res-04",
+      "english": "I'll have the chicken salad.",
+      "japanese": "チキンサラダにします。",
+      "registerNotes": "注文の決まり文句は I'll have ...。Can I get ...? も自然です。",
+      "pitfallNote": "I want chicken salad. は失礼ではないものの、ぶっきらぼうに聞こえやすい言い方です。",
+      "audio": "audio/en/res-04.mp3",
+      "audioHint": "I'll have the chicken salad.",
+      "tags": ["注文", "必須"],
+      "difficulty": 2
+    },
+    {
+      "id": "res-05",
+      "english": "Could I get some water?",
+      "japanese": "お水をいただけますか？",
+      "registerNotes": "アメリカでは水は無料のことが多いですが、頼まないと出てこない店もあります。",
+      "audio": "audio/en/res-05.mp3",
+      "audioHint": "Could I get some water?",
+      "tags": ["注文", "飲み物"],
+      "difficulty": 1
+    },
+    {
+      "id": "res-06",
+      "english": "I'm allergic to peanuts.",
+      "japanese": "ピーナッツのアレルギーがあります。",
+      "registerNotes": "アレルギーは必ず注文の時に伝えましょう。allergic は「アラージック」に近い発音です。",
+      "pitfallNote": "「アレルギー」と日本語読みすると通じにくいです。allergy は「アラジー」と発音します。",
+      "audio": "audio/en/res-06.mp3",
+      "audioHint": "I'm allergic to peanuts.",
+      "tags": ["注文", "健康"],
+      "difficulty": 3
+    },
+    {
+      "id": "res-07",
+      "english": "For here or to go?",
+      "japanese": "店内でお召し上がりですか、お持ち帰りですか？",
+      "registerNotes": "カフェやファストフードで必ず聞かれる質問。For here. か To go. と答えるだけでOKです。",
+      "pitfallNote": "「テイクアウト」はアメリカでは少し不自然。To go, please. が自然です（イギリスでは takeaway）。",
+      "audio": "audio/en/res-07.mp3",
+      "audioHint": "For here or to go?",
+      "tags": ["カフェ", "聞き取り"],
+      "difficulty": 2
+    },
+    {
+      "id": "res-08",
+      "english": "Can we get the check, please?",
+      "japanese": "お会計をお願いします。",
+      "registerNotes": "アメリカでは席で会計するのが普通です。イギリスでは the bill と言います。",
+      "pitfallNote": "日本のようにレジへ行かず、テーブルで待ちましょう。チップは合計の15〜20%が目安です。",
+      "audio": "audio/en/res-08.mp3",
+      "audioHint": "Can we get the check, please?",
+      "tags": ["会計", "必須"],
+      "difficulty": 2
+    },
+    {
+      "id": "res-09",
+      "english": "Everything was delicious.",
+      "japanese": "全部おいしかったです。",
+      "registerNotes": "How was everything? と聞かれた時に。Great, thanks! だけでも十分です。",
+      "audio": "audio/en/res-09.mp3",
+      "audioHint": "Everything was delicious.",
+      "tags": ["会計", "感想"],
+      "difficulty": 2
+    },
+    {
+      "id": "res-10",
+      "english": "Can I get a refill?",
+      "japanese": "おかわりをもらえますか？",
+      "registerNotes": "アメリカでは、ソフトドリンクやコーヒーのおかわり（refill）が無料の店も多いです。",
+      "audio": "audio/en/res-10.mp3",
+      "audioHint": "Can I get a refill?",
+      "tags": ["飲み物"],
+      "difficulty": 3
+    }
+  ]
+}

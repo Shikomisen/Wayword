@@ -487,3 +487,211 @@ from a fresh profile, passed every check. The SW registered with scope
 reload, all five tabs, a category screen, all 520 assets (5.2 MB) and a cold
 navigation to `index.html#/review` worked offline.
 `https://shikomisen.github.io/Nihongo-Tabi/` returns 404, as A37 expects.
+
+---
+
+## Multiple languages
+
+Asked for: a small home page with a button per language; Indonesian as a
+placeholder; Japanese speakers able to learn English, picked as
+*speaker › language to learn* at the top of that page. Three calls were put
+to the user before building, and these are their answers:
+
+- **What Japanese speakers study:** a new travel-English set written for
+  them, rather than the Japanese course's phrases flipped round.
+- **Interface:** fully in Japanese for Japanese speakers.
+- **Scenarios:** English scenarios now, rather than phrases only.
+
+Everything below was decided without asking.
+
+### A40 — A course is a speaker–target pair, and the URL carries it
+`content/courses.json` lists four courses: `en-ja` (the existing app),
+`ja-en`, and the Indonesian placeholders `en-id` and `ja-id`. Indonesian
+appears for both speakers, as the second option after each speaker's
+available course.
+
+Routes are `#/<course>/<screen>`, and `#/` is the picker. Putting the course
+in the URL rather than in a preference means the back button, bookmarks and a
+reload all stay in the right language.
+
+Links from before courses existed — including the installed app's
+"Review due cards" / "Browse phrases" shortcuts, which can't be rewritten on
+devices that already have them — open in the course used last, or Japanese if
+there isn't one. Unknown paths go to the picker.
+
+### A41 — The picker opens on every launch, with due counts
+As asked, the app opens on the home page, not the last course. To keep the
+daily habit to one tap, each course card shows its state: *N cards due today*,
+*not started*, or *coming soon*. These counts are read without switching the
+active course and without writing anything (`deck.courseSnapshot`), so drawing
+the page can't create storage for a course nobody has opened.
+
+The *I speak* default is the device language if it's English or Japanese,
+otherwise English. It's remembered, and entering a course sets it to that
+course's speaker.
+
+### A42 — Each course has its own database
+Progress is per course: one IndexedDB database each, plus a matching
+localStorage fallback prefix. That covers the deck, settings, placement and
+stats. Resetting a course clears only that course's database.
+
+- **en-ja** keeps `nihongo-tabi` / `nt:` (see A36), so existing progress was
+  never moved. That was verified through a real upgrade in A50.
+- **New courses** get `wayword-<course>` / `ww-<course>:`.
+- **App-wide preferences** (speaker, last course, text size) live in their own
+  `wayword` database.
+
+The shared-database alternative — namespacing card ids inside `nihongo-tabi` —
+would have needed a migration of existing cards and made "reset this course"
+a filter instead of a clear.
+
+Text size moved from the Japanese course's settings to the app-wide
+preferences, since it's an accessibility setting. Its existing value is
+carried over the first time it's read.
+
+### A43 — Content keeps its own field names; a manifest map makes it generic
+Japanese content files are unchanged. Each manifest gains:
+
+- `fields` — which field is being learned (`target`) and which is the gloss
+  (`meaning`), plus `ruby` / `reading` where they exist.
+- `noteFields` — which notes exist and their labels: *Register* /
+  *From anime?* for Japanese, 使い方 / よくある間違い for English.
+- `copy` — the course's own placement-intro wording. The Japanese text moved
+  out of `quiz.js` verbatim.
+
+`content.js` adds generic `target`, `ruby`, `reading`, `meaning`, `notes`,
+`targetLang` and `meaningLang` to every phrase, character, scenario line and
+inline reply, and screens only use those. The alternative, renaming every
+field in 148 phrases, 302 characters and 6 scenarios to generic names, was
+rejected as churn on content that works.
+
+Japanese content stays at `content/` rather than moving to `content/en-ja/`,
+so its tools (`make-kana`, `crossref-kanji`) and all 482 audio paths are
+untouched.
+
+### A44 — The interface follows the speaker
+`js/i18n.js` holds the English and Japanese strings; the English ones are the
+previous UI text, verbatim. Course-specific wording lives in the manifest
+instead (A43).
+
+Some features appear only where the content supports them: furigana and
+romaji toggles, romaji retirement, the Characters tab, the "Reading" row and
+the character-card cap. The Characters screens can only be reached from a
+course taught in English, so they were left in English rather than
+translated. `npm test` enforces this split in both directions:
+
+- Every `t('…')` key used in the code must exist.
+- Every key the Japanese UI can reach must have a Japanese translation.
+
+Fonts follow `lang`, which every target, meaning and note node now carries.
+Japanese gets the CJK stack and correct glyph forms; English inside the
+Japanese UI gets the Latin stack.
+
+**The Japanese wording — the interface strings and all of the English
+course's glosses, notes and feedback — was written by Claude and has not been
+reviewed by a native speaker.** It's worth a native read before it's relied
+on.
+
+### A45 — What the English course teaches
+The English course mirrors the Japanese course's ten categories, week
+grouping and trip-relevance order, rewritten for a Japanese traveller abroad.
+
+- **Phrases:** 104 of them. Each has a Japanese gloss and a 使い方 (usage)
+  note. 29 also have a よくある間違い note, focused on katakana English (wake-up
+  call, outlet, front desk, plastic bag, to go, receipt, allergy, claim) and
+  direct-translation errors (*I'm reserving*, *since one week*,
+  *We are two*, *on sale* vs *for sale*).
+- **Variety of English:** American by default, because it's the most likely
+  destination and what the 'en' TTS voice speaks. British equivalents are
+  named in the notes (bill, platform, toilet, takeaway, lift).
+- **Scenarios:** six of them, in American and British settings. Every reply
+  gets Japanese feedback, and wrong replies are the classic mistakes above.
+  Inline wrong replies gloss what the English *actually* says, e.g.
+  「（わたしは観光という人です）」.
+- **Ids:** phrase ids follow the Japanese course's scheme (`gre-01`…). They
+  can't collide because each course has its own storage (A42). Audio lives
+  under `audio/en/`.
+- **No character sets:** English has no counterpart to kana drills worth
+  building, so the Characters section is simply absent.
+
+### A46 — English audio
+The English audio comes from the same build-time pass and vendor as A2,
+called with `tl=en`. That gives 135 clips: 104 phrases and 31 scenario NPC
+lines.
+
+`tools/generate-audio.mjs` now walks every course in `courses.json` and
+synthesises each one in its manifest's `language`. A `--course` flag
+restricts it to one course, since category ids repeat across courses.
+
+### A47 — Indonesian is a placeholder in the data, not just the UI
+`en-id` and `ja-id` are real course entries with `status: "planned"` and no
+manifest. Their cards on the home page are dimmed and say *Coming soon*.
+Opening one shows a coming-soon screen (course bar, no tabs, back to the
+picker) rather than doing nothing, so the route is already in place.
+Building Indonesian is then the content-only job described in README §13.
+
+### A48 — Updating from the deployed build
+The first launch after an update fetches the new `index.html` from the
+network while the previous service worker still serves the previous `app.js`
+from cache. Old JavaScript runs inside new HTML for that one launch.
+
+The tab bar moved from HTML into JS, so `index.html` keeps the old static tab
+links as a fallback for that launch. Without them, the previous build would
+have rendered with no tab bar. The new code replaces those links on entering
+a course, and hides them on the picker.
+
+The cache went to `wayword-v5`. Precaching now walks `courses.json` and every
+manifest in it, and one broken course no longer stops the others caching.
+
+### A49 — Bugs found and fixed along the way
+Most of these were pre-existing in the deployed app; one was introduced by
+this change and caught before shipping.
+
+- **"null" printed on screen (three places).** Three screens passed an absent
+  child straight to the DOM's native `append()`, which prints `null` as text:
+  - the first placement card (pre-existing)
+  - every scenario's end screen (pre-existing)
+  - the English study card, which has no toggle strip (introduced here,
+    caught by a screenshot pass before shipping)
+
+  All three now filter out absent children, and the render test checks for a
+  stray "null".
+- **Kana/kanji tap highlight never cleared (pre-existing).** The highlight
+  read `e.currentTarget` inside a 400 ms timer. Browsers null that property
+  once dispatch ends, so the timer threw and the highlight stuck. It now keeps
+  its own reference to the element.
+- **"Set up reading first" landed on Today (pre-existing).** The button set
+  the Characters hash, then `onDone()` immediately overwrote it with Today.
+  `onDone` now takes the destination.
+
+### A50 — Verification
+**Test suites.** All pass:
+
+| Suite | Checks | Covers |
+|---|---|---|
+| `npm test` | 11,002 self-test + 111 integration | every course's content and scenarios; UI-string coverage; SRS; both courses end to end, including isolation (English study never touches Japanese progress or stats; resetting one course leaves the other) |
+| `npm run test:render` | 136 render + 16 service-worker | the picker, the Indonesian placeholder, the whole English course in Japanese in a real DOM, old-link redirects, and an old deep link still booting |
+
+**Real browser.** In headless Firefox 157, following the user's standing
+preference, the deployed build (git HEAD, cache `v4`) was installed and used
+at `/Wayword/`: placement skipped, a card graded. Then the same URL started
+serving the new build:
+
+- **First launch after the update:** the previous app still worked, tab bar
+  included (A48).
+- **Service worker:** the new one installed, and `wayword-v4` was replaced by
+  `wayword-v5`.
+- **Next launch:** opened the picker. Japanese showed *10 cards due today* —
+  progress survived — and went straight to Today without re-placement.
+- **Precache:** `wayword-v5` held all 676 assets of both courses, including
+  135 English clips.
+- **English course:** switching to 日本語 relabelled the picker. The English
+  course ran its own Japanese-language placement and showed Japanese tabs
+  without Characters. English text rendered in the Latin font stack and
+  Japanese glosses in the CJK one.
+- **Offline:** every connection dropped and Firefox's HTTP cache disabled. A
+  cold launch opened the picker. Eight screens across both courses and an
+  English scenario rendered, and all 676 assets (8.0 MB) loaded.
+
+Phone-sized screenshots of the new screens were also reviewed by eye; that is
+how the study-card "null" in A49 was caught.

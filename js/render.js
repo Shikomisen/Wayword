@@ -5,6 +5,8 @@
  * furigana/romaji rendering that the toggles in §6 drive.
  */
 
+import { t } from './i18n.js';
+
 export function el(tag, attrs = {}, ...children) {
   const node = document.createElement(tag);
   for (const [k, v] of Object.entries(attrs)) {
@@ -28,21 +30,28 @@ export function clear(node) {
 }
 
 /**
- * Renders a phrase's Japanese with optional ruby furigana.
+ * Renders the text being learned, with optional ruby furigana.
+ *
+ * Works on the generic fields content.js adds (`target`, `ruby`,
+ * `targetLang`), so it serves Japanese and English targets alike. Japanese
+ * keeps its `.jp` class for the CJK font stack; `lang` is set either way so
+ * browsers and screen readers pronounce and shape it correctly.
  *
  * Furigana is stored as segments: [{ b: "電車", r: "でんしゃ" }, { b: "は" }]
  * so the reading attaches to the right kanji run rather than the whole
- * string. Falls back to the plain `japanese` field if segments are absent.
+ * string. Falls back to the plain target text if segments are absent.
  */
-export function japaneseNode(phrase, { furigana = true } = {}) {
-  const wrap = el('span', { class: 'jp' });
+export function targetNode(item, { furigana = true } = {}) {
+  const lang = item.targetLang || 'ja';
+  const wrap = el('span', { class: lang === 'ja' ? 'target jp' : 'target', lang });
+  const text = item.target ?? item.japanese ?? '';
 
-  if (!furigana || !Array.isArray(phrase.furigana) || phrase.furigana.length === 0) {
-    wrap.textContent = phrase.japanese;
+  if (!furigana || !Array.isArray(item.ruby) || item.ruby.length === 0) {
+    wrap.textContent = text;
     return wrap;
   }
 
-  for (const seg of phrase.furigana) {
+  for (const seg of item.ruby) {
     if (seg.r) {
       wrap.append(el('ruby', {}, seg.b, el('rp', {}, '('), el('rt', {}, seg.r), el('rp', {}, ')')));
     } else {
@@ -52,49 +61,50 @@ export function japaneseNode(phrase, { furigana = true } = {}) {
   return wrap;
 }
 
-/** The standard phrase block: Japanese, romaji, English — toggles applied. */
+/** The gloss, in the learner's own language. */
+export function meaningNode(item, { big = false, tag = 'div' } = {}) {
+  return el(tag, { class: big ? 'meaning big' : 'meaning', lang: item.meaningLang || null }, item.meaning);
+}
+
+/** The standard phrase block: target, reading, meaning — toggles applied. */
 export function phraseBlock(phrase, settings, { size = 'md' } = {}) {
   return el(
     'div',
     { class: `phrase-block phrase-${size}` },
-    japaneseNode(phrase, { furigana: settings.furigana }),
-    settings.romaji ? el('div', { class: 'romaji' }, phrase.romaji) : null,
-    el('div', { class: 'english' }, phrase.english)
+    targetNode(phrase, { furigana: settings.furigana }),
+    settings.romaji && phrase.reading ? el('div', { class: 'romaji' }, phrase.reading) : null,
+    meaningNode(phrase)
   );
 }
 
 export function tagRow(phrase) {
   const tags = phrase.tags || [];
   if (!tags.length) return null;
-  return el('div', { class: 'tags' }, tags.map((t) => el('span', { class: 'tag' }, t)));
+  return el('div', { class: 'tags' }, tags.map((tag) => el('span', { class: 'tag' }, tag)));
 }
 
-/** Register / anime-divergence notes (README §6). */
+/**
+ * Usage notes (README §6). Which notes exist and what they are called is
+ * the course manifest's call — register and anime-divergence notes for
+ * English speakers learning Japanese, usage and katakana-English pitfalls
+ * for Japanese speakers learning English. content.js resolves them into
+ * `phrase.notes`.
+ */
 export function notesBlock(phrase) {
-  const parts = [];
-  if (phrase.registerNotes) {
-    parts.push(
-      el('div', { class: 'note' }, el('span', { class: 'note-label' }, 'Register'), phrase.registerNotes)
-    );
-  }
-  if (phrase.animeNote) {
-    parts.push(
-      el(
-        'div',
-        { class: 'note note-anime' },
-        el('span', { class: 'note-label' }, 'From anime?'),
-        phrase.animeNote
-      )
-    );
-  }
-  return parts.length ? el('div', { class: 'notes' }, parts) : null;
+  const notes = phrase.notes || [];
+  if (!notes.length) return null;
+  return el('div', { class: 'notes', lang: phrase.meaningLang || null },
+    notes.map((n) =>
+      el('div', { class: n.style ? `note note-${n.style}` : 'note' },
+        el('span', { class: 'note-label' }, n.label),
+        n.text)));
 }
 
 export function audioButton(phrase, onPlay) {
   if (!phrase.audio) return null;
   const btn = el(
     'button',
-    { class: 'audio-btn', type: 'button', 'aria-label': `Play audio for ${phrase.romaji}` },
+    { class: 'audio-btn', type: 'button', 'aria-label': t('audio.play', { text: phrase.reading || phrase.target }) },
     '🔊'
   );
   btn.addEventListener('click', async (e) => {
@@ -104,7 +114,7 @@ export function audioButton(phrase, onPlay) {
     btn.classList.remove('playing');
     if (result === 'missing') {
       btn.classList.add('audio-missing');
-      btn.title = 'No audio clip generated for this phrase yet';
+      btn.title = t('audio.missingTitle');
     }
   });
   return btn;

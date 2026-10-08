@@ -1,7 +1,7 @@
 {
   "name": "Wayword",
   "short_name": "Wayword",
-  "description": "Survival-level conversational Japanese — offline flashcards, SRS and scenario practice for a trip to Japan.",
+  "description": "Survival-level conversational language practice — offline flashcards, SRS and scenario dialogues. Japanese for English speakers, English for Japanese speakers.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

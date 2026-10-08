@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "lost",
+  "title": "道に迷った時",
+  "category": "directions",
+  "setting": "ロンドンの街なか。スマホの電池が切れかけています。大英博物館に行きたいのに、方向がわかりません。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "narration",
+      "english": "",
+      "japanese": "通りかかった人に道を聞きたい。最初のひとことは？",
+      "options": [
+        {
+          "phraseId": "gre-05",
+          "quality": "good",
+          "feedback": "呼びかけの基本。相手が足を止めてくれます。",
+          "next": "n2"
+        },
+        {
+          "phraseId": "gre-01",
+          "quality": "awkward",
+          "feedback": "失礼ではありませんが、知らない人にいきなり Hi. だと、何かの勧誘かと警戒されることも。お願いごとには Excuse me. が無難です。",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "english": "Hey!",
+          "japanese": "（ねえ！）",
+          "feedback": "知らない人に Hey! はかなり失礼です。振り向いてもらえても、印象はよくありません。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "passerby",
+      "english": "Yes? Can I help you?",
+      "japanese": "はい？どうしました？",
+      "audio": "audio/en/scenario/lost-n2.mp3",
+      "audioHint": "Yes? Can I help you?",
+      "options": [
+        {
+          "phraseId": "dir-04",
+          "quality": "good",
+          "feedback": "状況を先に言うと、相手も事情をすぐに理解してくれます。",
+          "next": "n3"
+        },
+        {
+          "phraseId": "dir-02",
+          "quality": "good",
+          "feedback": "行き方を聞く定番。具体的な名前を出すとさらにいいです。",
+          "next": "n3"
+        },
+        {
+          "phraseId": "gre-11",
+          "quality": "awkward",
+          "feedback": "相手はまだほとんど何も話していません。先に用件を伝えましょう。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "passerby",
+      "english": "Where are you trying to go?",
+      "japanese": "どこに行きたいんですか？",
+      "audio": "audio/en/scenario/lost-n3.mp3",
+      "audioHint": "Where are you trying to go?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "The British Museum.",
+          "japanese": "大英博物館です。",
+          "feedback": "目的地だけで十分です。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "I'm trying to go to the British Museum.",
+          "japanese": "大英博物館に行こうとしています。",
+          "feedback": "相手の言い方をそのまま使って答えています。上手です。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "passerby",
+      "english": "Oh, that's easy. Go straight down this road, take the second left, and it's on your right. About five minutes.",
+      "japanese": "ああ、簡単ですよ。この道をまっすぐ行って、2つ目の角を左に曲がると右手にあります。5分くらいです。",
+      "audio": "audio/en/scenario/lost-n4.mp3",
+      "audioHint": "Oh, that's easy. Go straight down this road, take the second left, and it's on your right. About five minutes.",
+      "options": [
+        {
+          "phraseId": "gre-10",
+          "quality": "good",
+          "feedback": "長い道案内は聞き返して当然です。2回目はゆっくり言ってくれることが多いです。",
+          "next": "n5"
+        },
+        {
+          "phraseId": "dir-07",
+          "quality": "good",
+          "feedback": "最強の確認方法。地図なら聞き間違いもありません。",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "english": "Yes, yes, I understand.",
+          "japanese": "はい、はい、わかりました。",
+          "feedback": "半分しか聞き取れていないのに I understand. と言ってしまうのは、学習者がいちばんやりがちな失敗です。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "passerby",
+      "english": "Sure. Look, we're here, and the museum is just here.",
+      "japanese": "いいですよ。ほら、今ここで、博物館はここです。",
+      "audio": "audio/en/scenario/lost-n5.mp3",
+      "audioHint": "Sure. Look, we're here, and the museum is just here.",
+      "options": [
+        {
+          "phraseId": "gre-07",
+          "quality": "good",
+          "feedback": "しっかりお礼を。親切にしてもらったら so much を付けて。",
+          "next": "end"
+        },
+        {
+          "phraseId": "sma-10",
+          "quality": "awkward",
+          "feedback": "感じはいいのですが、道を教えてもらったお礼としては少しずれています。まずは Thank you so much! を。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "wrong",
+          "feedback": "「どういたしまして」は助けた側の言葉です。立場が逆になってしまいます。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "japanese": "無事に博物館に着きました。道案内でいちばん大事なのは「聞き取れなかった」と言えること。わかったふりは、迷子を長引かせるだけです。",
+      "end": true,
+      "options": []
+    }
+  }
+}

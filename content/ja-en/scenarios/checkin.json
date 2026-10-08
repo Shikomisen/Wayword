@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "checkin",
+  "title": "ホテルのチェックイン",
+  "category": "hotel",
+  "setting": "長いフライトのあと、予約していたホテルにやっと到着。フロントに向かいます。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "receptionist",
+      "english": "Hi there! Welcome. Are you checking in?",
+      "japanese": "こんにちは！ようこそ。チェックインですか？",
+      "audio": "audio/en/scenario/checkin-n1.mp3",
+      "audioHint": "Hi there! Welcome. Are you checking in?",
+      "options": [
+        {
+          "phraseId": "hot-01",
+          "quality": "good",
+          "feedback": "予約名まで一度に伝えられて、とてもスムーズです。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "Yes, please.",
+          "japanese": "はい、お願いします。",
+          "feedback": "これでも十分。次に名前を聞かれます。",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "english": "Yes, I'm reserving.",
+          "japanese": "（はい、今予約しているところです）",
+          "feedback": "reserving は「（今まさに）予約している」。すでに予約済みなら I have a reservation. です。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "receptionist",
+      "english": "Perfect. Can I see your ID and the card you booked with?",
+      "japanese": "承知しました。身分証と、予約に使ったカードを見せていただけますか？",
+      "audio": "audio/en/scenario/checkin-n2.mp3",
+      "audioHint": "Perfect. Can I see your ID and the card you booked with?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Sure, here you go.",
+          "japanese": "はい、どうぞ。",
+          "feedback": "物を渡す時の自然なひとことです。",
+          "next": "n3"
+        },
+        {
+          "phraseId": "air-01",
+          "quality": "good",
+          "feedback": "海外では身分証＝パスポート。ばっちりです。",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "english": "Here.",
+          "japanese": "ここ。",
+          "feedback": "通じますが、少し突き放した印象です。Here you go. と言えると感じがよくなります。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "receptionist",
+      "english": "Thank you. You're in room 512, on the fifth floor. Breakfast is from seven to ten.",
+      "japanese": "ありがとうございます。お部屋は5階の512号室です。朝食は7時から10時です。",
+      "audio": "audio/en/scenario/checkin-n3.mp3",
+      "audioHint": "Thank you. You're in room 512, on the fifth floor. Breakfast is from seven to ten.",
+      "options": [
+        {
+          "phraseId": "hot-08",
+          "quality": "good",
+          "feedback": "料金に含まれているかどうかは大事な確認です。",
+          "next": "n4"
+        },
+        {
+          "phraseId": "hot-02",
+          "quality": "good",
+          "feedback": "チェックアウトの時間も最初に確認しておくと安心です。",
+          "next": "n4"
+        },
+        {
+          "phraseId": "gre-10",
+          "quality": "good",
+          "feedback": "数字が多くて聞き取りにくい時は、遠慮なく聞き返しましょう。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "receptionist",
+      "english": "Breakfast is included, yes. Is there anything else I can help you with?",
+      "japanese": "はい、朝食は含まれています。ほかに何かお手伝いできることはありますか？",
+      "audio": "audio/en/scenario/checkin-n4.mp3",
+      "audioHint": "Breakfast is included, yes. Is there anything else I can help you with?",
+      "options": [
+        {
+          "phraseId": "hot-03",
+          "quality": "good",
+          "feedback": "完璧な頼み方。Could I get ...? は丁寧で自然です。",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "english": "Morning call, please.",
+          "japanese": "モーニングコールをお願いします。",
+          "feedback": "モーニングコールは和製英語です。たぶん通じますが、英語では wake-up call と言います。",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "english": "No, that's all. Thanks!",
+          "japanese": "いいえ、大丈夫です。ありがとう！",
+          "feedback": "用がなければこれで十分です。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "receptionist",
+      "english": "No problem. Here are your keys. Enjoy your stay!",
+      "japanese": "かしこまりました。こちらが鍵です。ごゆっくりどうぞ！",
+      "audio": "audio/en/scenario/checkin-n5.mp3",
+      "audioHint": "No problem. Here are your keys. Enjoy your stay!",
+      "options": [
+        {
+          "phraseId": "gre-07",
+          "quality": "good",
+          "feedback": "気持ちのいい締めくくりです。",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "english": "Thank you. Where is the elevator?",
+          "japanese": "ありがとう。エレベーターはどこですか？",
+          "feedback": "お礼のあとに質問を続けるのも自然です。イギリスでは lift とも言います。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "wrong",
+          "feedback": "お礼を言われたわけではありません。Thank you! と返しましょう。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "japanese": "チェックイン完了。「予約名」「身分証」「朝食とチェックアウトの時間」— どのホテルでも、この流れはほぼ同じです。",
+      "end": true,
+      "options": []
+    }
+  }
+}

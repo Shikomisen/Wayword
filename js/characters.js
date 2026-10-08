@@ -11,12 +11,17 @@
  * grouped by usage, each entry showing which phrases already contain it
  * so the two halves of the app reinforce each other rather than sitting
  * side by side (README §12).
+ *
+ * Only courses that ship character sets get this section (English speakers
+ * learning Japanese, today), so its wording stays English rather than going
+ * through i18n.js.
  */
 
 import { loadContent, getCharacterSet, gridFor } from './content.js';
 import * as deck from './deck.js';
 import * as audio from './audio.js';
-import { el, clear, japaneseNode, toast } from './render.js';
+import { link, go } from './course.js';
+import { el, clear, targetNode, toast } from './render.js';
 
 const ROW_LABEL = {
   a: 'あ', ka: 'か', sa: 'さ', ta: 'た', na: 'な',
@@ -47,7 +52,7 @@ export async function renderCharacterList(root) {
 
     return el('div', { class: `row-card ${active ? 'is-active' : ''}` },
       el('span', { class: 'row-icon char-icon' }, set.icon || '字'),
-      el('a', { class: 'row-body', href: `#/characters/${set.id}` },
+      el('a', { class: 'row-body', href: link(`/characters/${set.id}`) },
         el('span', { class: 'row-title' }, set.title),
         el('span', { class: 'row-sub' },
           set.missing
@@ -90,7 +95,7 @@ export async function renderCharacterList(root) {
             summary.due || summary.new
               ? el('button', {
                   class: 'btn btn-primary btn-lg full',
-                  onclick: () => { location.hash = '/characters/review'; },
+                  onclick: () => { go('/characters/review'); },
                 }, 'Review characters')
               : el('p', { class: 'muted queue-breakdown' }, 'Nothing due right now.'))
         : el('p', { class: 'muted' },
@@ -116,7 +121,7 @@ function stat(value, label) {
 
 export async function renderCharacterSet(root, setId) {
   const set = await getCharacterSet(setId);
-  if (!set) { location.hash = '/characters'; return; }
+  if (!set) { go('/characters'); return; }
 
   const s = await deck.getSettings();
   const active = s.activeCharacterSets.includes(setId);
@@ -127,7 +132,7 @@ export async function renderCharacterSet(root, setId) {
   root.append(view);
 
   view.append(
-    el('a', { class: 'back-link', href: '#/characters' }, '← Characters'),
+    el('a', { class: 'back-link', href: link('/characters') }, '← Characters'),
     el('header', { class: 'screen-header' },
       el('h1', {}, `${set.icon || ''} ${set.title}`),
       el('p', { class: 'lede' }, set.description)),
@@ -136,7 +141,7 @@ export async function renderCharacterSet(root, setId) {
       active
         ? el('button', {
             class: 'btn btn-primary',
-            onclick: () => { location.hash = `/characters/${setId}/study`; },
+            onclick: () => { go(`/characters/${setId}/study`); },
           }, 'Study this set')
         : el('button', {
             class: 'btn btn-primary',
@@ -187,8 +192,11 @@ function kanaCell(c, settings) {
     'aria-label': `${c.character}, ${c.romaji}`,
     onclick: (e) => {
       playCharacter(c);
-      e.currentTarget.classList.add('just-played');
-      setTimeout(() => e.currentTarget.classList.remove('just-played'), 400);
+      // currentTarget is nulled once the event finishes dispatching, so the
+      // timer must hold its own reference or the highlight never clears.
+      const cell = e.currentTarget;
+      cell.classList.add('just-played');
+      setTimeout(() => cell.classList.remove('just-played'), 400);
     },
   },
     el('span', { class: 'kana-char' }, c.character),
@@ -226,8 +234,9 @@ function kanjiRow(c, phrases, settings) {
       'aria-label': `${c.character}, ${c.romaji}`,
       onclick: (e) => {
         playCharacter(c);
-        e.currentTarget.classList.add('just-played');
-        setTimeout(() => e.currentTarget.classList.remove('just-played'), 400);
+        const glyph = e.currentTarget; // see kanaCell — must outlive the event
+        glyph.classList.add('just-played');
+        setTimeout(() => glyph.classList.remove('just-played'), 400);
       },
     }, c.character),
 
@@ -243,8 +252,8 @@ function kanjiRow(c, phrases, settings) {
             el('span', { class: 'note-label' }, 'Already in your phrases'),
             el('div', { class: 'ref-list' },
               refs.map((p) =>
-                el('a', { class: 'ref-chip', href: `#/category/${p.categoryId}`, title: p.english },
-                  japaneseNode(p, { furigana: false })))))
+                el('a', { class: 'ref-chip', href: link(`/category/${p.categoryId}`), title: p.meaning },
+                  targetNode(p, { furigana: false })))))
         : null));
 }
 

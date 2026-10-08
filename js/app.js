@@ -4,6 +4,11 @@
  * Vanilla ES modules, hash routing, no build step (README §3).
  * Screens render into #app; each render is a full teardown, which is fine
  * at this scale and removes a whole class of stale-state bugs.
+ *
+ * URLs carry the course: #/ is the language picker (home.js), and every
+ * study screen lives under its course, e.g. #/en-ja/browse or #/ja-en/review.
+ * Entering a course switches storage, interface language and content to it
+ * in one step (course.js), so the screens below never mention a language.
  */
 
 import { loadContent, getCategory, getCharacterSet, scenariosFor } from './content.js';
@@ -11,17 +16,22 @@ import * as deck from './deck.js';
 import * as srs from './srs.js';
 import * as audio from './audio.js';
 import * as store from './store.js';
-import { el, clear, phraseBlock, japaneseNode, notesBlock, tagRow, audioButton, toast } from './render.js';
+import * as course from './course.js';
+import { t, setLang, locale, formatInterval, UI_LANGS } from './i18n.js';
+import { el, clear, phraseBlock, targetNode, meaningNode, notesBlock, tagRow, audioButton, toast } from './render.js';
 import { renderPlacement } from './quiz.js';
 import { renderScenarioList, renderScenario } from './scenario.js';
 import { renderCharacterList, renderCharacterSet } from './characters.js';
+import { renderHome, renderPlannedCourse } from './home.js';
 
 const app = () => document.getElementById('app');
+const { link } = course;
 
 /* ---------- routing ---------- */
 
+// Paths inside a course, after the #/<course> prefix.
 const routes = [
-  [/^\/?$/, home],
+  [/^\/?$/, today],
   [/^\/browse$/, browse],
   [/^\/category\/([\w-]+)$/, category],
   [/^\/study\/([\w-]+)$/, studyCategory],
@@ -36,25 +46,50 @@ const routes = [
   [/^\/settings$/, settings],
 ];
 
+const COURSE_PATH = /^\/([a-z]{2}-[a-z]{2})(\/.*)?$/;
+
 function parseHash() {
   return decodeURIComponent(location.hash.replace(/^#/, '')) || '/';
 }
 
-export function go(path) {
-  location.hash = path;
-}
+/** Navigate within the current course: go('/browse') → #/<course>/browse. */
+export const go = course.go;
 
 async function router() {
   const path = parseHash();
 
-  // The placement quiz gates everything else on first launch (README §4.1).
+  if (path === '/') return showHome();
+
+  const m = path.match(COURSE_PATH);
+  const target = m ? await course.getCourse(m[1]) : null;
+
+  if (!target) {
+    // Links from before courses existed (#/review, #/browse — the installed
+    // app's own shortcuts among them) belong to a course: send them to the
+    // one used last, which for anyone who had those links is Japanese.
+    const legacy = routes.some(([pattern]) => pattern.test(path));
+    const id = legacy ? (await course.getPrefs()).lastCourse || 'en-ja' : null;
+    window.history.replaceState(null, '', legacy ? `#/${id}${path}` : '#/');
+    return router();
+  }
+
+  const sub = m[2] || '/';
+  const { features } = await enterCourse(target);
+
+  if (target.status !== 'available') {
+    const root = clear(app());
+    window.scrollTo(0, 0);
+    return renderPlannedCourse(root, target);
+  }
+
+  // The placement quiz gates each course on its first visit (README §4.1).
   if (!(await deck.isOnboarded())) {
     const root = clear(app());
     document.body.classList.add('onboarding');
     return renderPlacement(root, {
-      onDone: () => {
+      onDone: (next = '/') => {
         document.body.classList.remove('onboarding');
-        go('/');
+        go(next);
         router();
       },
     });
@@ -62,26 +97,95 @@ async function router() {
   document.body.classList.remove('onboarding');
 
   for (const [pattern, handler] of routes) {
-    const m = path.match(pattern);
-    if (m) {
-      const root = clear(app());
-      window.scrollTo(0, 0);
-      try {
-        await handler(root, ...m.slice(1));
-      } catch (err) {
-        console.error(err);
-        root.append(el('div', { class: 'screen' }, el('p', { class: 'error' }, String(err.message || err))));
-      }
-      highlightNav(path);
-      return;
+    const match = sub.match(pattern);
+    if (!match) continue;
+    // Sections a course doesn't have (Characters for English) are not routable.
+    if (/^\/characters/.test(sub) && !features.characters) break;
+    const root = clear(app());
+    window.scrollTo(0, 0);
+    try {
+      await handler(root, ...match.slice(1));
+    } catch (err) {
+      console.error(err);
+      root.append(el('div', { class: 'screen' }, el('p', { class: 'error' }, String(err.message || err))));
     }
+    highlightNav(sub);
+    return;
   }
   go('/');
 }
 
+async function showHome() {
+  document.body.classList.add('at-home');
+  document.body.classList.remove('onboarding');
+  const root = clear(app());
+  window.scrollTo(0, 0);
+  await renderHome(root);
+}
+
+let enteredCourse = null;
+
+/**
+ * Activate a course and dress the chrome for it. Everything that should
+ * happen once per visit to a course — remembering it as the last one,
+ * the week-one romaji switch-off — happens only when the course changes.
+ */
+async function enterCourse(target) {
+  await course.setCourse(target.id);
+  document.body.classList.remove('at-home');
+  renderCourseBar(target);
+
+  if (target.status !== 'available') {
+    document.body.classList.add('no-tabs');
+    enteredCourse = target.id;
+    return { features: {} };
+  }
+  document.body.classList.remove('no-tabs');
+
+  const { features } = await loadContent();
+  renderTabbar(features);
+
+  if (enteredCourse !== target.id) {
+    enteredCourse = target.id;
+    await course.savePrefs({ lastCourse: target.id, speaker: target.speaker });
+    if (features.reading && (await deck.maybeRetireRomaji())) {
+      toast(t('toast.romajiRetired'), 5000);
+    }
+  }
+  return { features };
+}
+
+/** "‹ Languages · English › Japanese" — the way back to the picker, and the pair in use. */
+function renderCourseBar(target) {
+  const bar = document.getElementById('coursebar');
+  if (!bar) return;
+  const ui = target.speaker;
+  clear(bar).append(
+    el('a', { class: 'coursebar-home', href: '#/' }, `‹ ${t('coursebar.home')}`),
+    el('span', { class: 'coursebar-pair' },
+      t('coursebar.pair', {
+        speaker: course.languageName(target.speaker, ui),
+        target: course.languageName(target.target, ui),
+      })));
+}
+
+function renderTabbar(features) {
+  const nav = document.querySelector('.tabbar');
+  if (!nav) return;
+  const tabs = [
+    ['/', '📅', t('tab.today')],
+    ['/browse', '📚', t('tab.browse')],
+    features.characters ? ['/characters', 'あ', t('tab.characters')] : null,
+    features.scenarios ? ['/scenarios', '🗣️', t('tab.scenarios')] : null,
+    ['/settings', '⚙️', t('tab.settings')],
+  ].filter(Boolean);
+  clear(nav).append(...tabs.map(([path, icon, label]) =>
+    el('a', { href: link(path), dataset: { path } }, el('span', {}, icon), label)));
+}
+
 function highlightNav(path) {
   document.querySelectorAll('.tabbar a').forEach((a) => {
-    const target = a.getAttribute('href').slice(1);
+    const target = a.dataset.path;
     // Sub-routes keep their section lit: /characters/hiragana is still
     // "Characters", /category/airport is still "Browse".
     const owns = target === '/'
@@ -101,7 +205,7 @@ function header(title, subtitle) {
 
 async function playPhrase(phrase) {
   const result = await audio.play(phrase.audio);
-  if (result === 'missing') toast('No audio clip for this phrase yet');
+  if (result === 'missing') toast(t('audio.missing'));
   return result;
 }
 
@@ -111,9 +215,15 @@ async function playPhrase(phrase) {
  * Deliberately duplicated next to the content rather than buried in
  * Settings: deciding whether you need the reading is a per-card judgement
  * made mid-study, and a trip to Settings to check yourself is a trip you
- * won't make.
+ * won't make. Only the aids a course's content actually has are offered.
  */
-function toggleStrip(onChange) {
+function toggleStrip(onChange, features) {
+  const wanted = [
+    features.ruby ? ['furigana', 'ふりがな'] : null,
+    features.reading ? ['romaji', 'romaji'] : null,
+  ].filter(Boolean);
+  if (!wanted.length) return null;
+
   const make = async (key, label) => {
     const s = await deck.getSettings();
     return el('button', {
@@ -129,15 +239,15 @@ function toggleStrip(onChange) {
   };
 
   const strip = el('div', { class: 'toggle-strip' });
-  Promise.all([make('furigana', 'ふりがな'), make('romaji', 'romaji')])
+  Promise.all(wanted.map(([key, label]) => make(key, label)))
     .then((chips) => chips.forEach((c) => strip.append(c)));
   return strip;
 }
 
-/* ---------- home / due today ---------- */
+/* ---------- today ---------- */
 
-async function home(root) {
-  const [summary, stats, streakDays, s, { categories }] = await Promise.all([
+async function today(root) {
+  const [summary, stats, streakDays, s, { categories, features }] = await Promise.all([
     deck.deckSummary(), deck.todayStats(), deck.streak(), deck.getSettings(), loadContent(),
   ]);
 
@@ -146,34 +256,34 @@ async function home(root) {
 
   root.append(
     el('div', { class: 'screen' },
-      header('Today', dueLine(q.length, summary)),
+      header(t('today.title'), dueLine(q.length, summary)),
 
       el('div', { class: 'stat-row' },
-        stat(summary.due, 'due'),
-        stat(Math.min(summary.new, s.newPerDay), 'new'),
-        stat(stats.reviews, 'done today'),
-        stat(streakDays, streakDays === 1 ? 'day streak' : 'day streak')),
+        stat(summary.due, t('stat.due')),
+        stat(Math.min(summary.new, s.newPerDay), t('stat.new')),
+        stat(stats.reviews, t('stat.doneToday')),
+        stat(streakDays, t('stat.streak'))),
 
       q.length
         ? el('div', {},
             el('button', { class: 'btn btn-primary btn-lg full', onclick: () => go('/review') },
-              `Start review · ${q.length} card${q.length === 1 ? '' : 's'}`),
+              t('today.startReview', { n: q.length })),
             queueBreakdown(q))
         : el('div', { class: 'empty-state' },
-            el('p', {}, '✅ Nothing due right now.'),
-            el('p', { class: 'muted' }, 'Add a category or study ahead from the browse screen.'),
-            el('button', { class: 'btn btn-primary', onclick: () => go('/browse') }, 'Browse phrases')),
+            el('p', {}, t('today.nothingDue')),
+            el('p', { class: 'muted' }, t('today.nothingDueHint')),
+            el('button', { class: 'btn btn-primary', onclick: () => go('/browse') }, t('today.browse'))),
 
-      el('h2', { class: 'section-title' }, 'In your deck'),
+      el('h2', { class: 'section-title' }, t('today.inDeck')),
       el('div', { class: 'card-list' },
         activeCats.length
           ? await Promise.all(activeCats.map(categoryRow))
-          : el('p', { class: 'muted' }, 'No categories active yet.')),
+          : el('p', { class: 'muted' }, t('today.noCategories'))),
 
-      await charactersBlock(),
+      features.characters ? await charactersBlock() : null,
       await forecastBlock(),
 
-      el('button', { class: 'btn btn-ghost full', onclick: () => go('/browse') }, 'Add more categories →')
+      el('button', { class: 'btn btn-ghost full', onclick: () => go('/browse') }, t('today.addMore'))
     )
   );
 }
@@ -187,26 +297,26 @@ async function charactersBlock() {
   const summary = await deck.characterSummary();
   if (!summary.total) {
     return el('section', {},
-      el('h2', { class: 'section-title' }, 'Reading'),
-      el('a', { class: 'row-card', href: '#/characters' },
+      el('h2', { class: 'section-title' }, t('reading.title')),
+      el('a', { class: 'row-card', href: link('/characters') },
         el('span', { class: 'row-icon char-icon' }, 'あ'),
         el('span', { class: 'row-body' },
-          el('span', { class: 'row-title' }, 'Characters'),
-          el('span', { class: 'row-sub' }, 'Hiragana, katakana and traveller kanji — not added yet')),
+          el('span', { class: 'row-title' }, t('reading.characters')),
+          el('span', { class: 'row-sub' }, t('reading.notAdded'))),
         el('span', { class: 'row-chev' }, '›')));
   }
 
   const pending = summary.due + Math.min(summary.new, 15);
   return el('section', {},
-    el('h2', { class: 'section-title' }, 'Reading'),
-    el('a', { class: 'row-card', href: pending ? '#/characters/review' : '#/characters' },
+    el('h2', { class: 'section-title' }, t('reading.title')),
+    el('a', { class: 'row-card', href: link(pending ? '/characters/review' : '/characters') },
       el('span', { class: 'row-icon char-icon' }, 'あ'),
       el('span', { class: 'row-body' },
-        el('span', { class: 'row-title' }, 'Characters'),
+        el('span', { class: 'row-title' }, t('reading.characters')),
         el('span', { class: 'row-sub' },
           pending
-            ? `${summary.due} due · ${summary.new} unseen · counted separately`
-            : `All caught up · ${summary.mature} mature`),
+            ? t('reading.pending', { due: summary.due, unseen: summary.new })
+            : t('reading.caughtUp', { mature: summary.mature })),
         el('span', { class: 'bar' },
           el('span', {
             class: 'bar-fill',
@@ -221,9 +331,9 @@ function queueBreakdown(queue) {
   const relearn = queue.filter((c) => c.state === 'learning').length;
   const due = queue.length - fresh - relearn;
   const parts = [
-    due && `${due} to review`,
-    relearn && `${relearn} relearning`,
-    fresh && `${fresh} new`,
+    due && t('queue.toReview', { n: due }),
+    relearn && t('queue.relearning', { n: relearn }),
+    fresh && t('queue.new', { n: fresh }),
   ].filter(Boolean);
   return el('p', { class: 'muted small queue-breakdown' }, parts.join(' · '));
 }
@@ -247,13 +357,13 @@ async function forecastBlock() {
     const count = cards.filter((c) =>
       i === 0 ? c.due < end.getTime() : c.due >= start.getTime() && c.due < end.getTime()
     ).length;
-    return { label: i === 0 ? 'today' : start.toLocaleDateString(undefined, { weekday: 'short' }), count };
+    return { label: i === 0 ? t('forecast.today') : start.toLocaleDateString(locale(), { weekday: 'short' }), count };
   });
 
   const peak = Math.max(1, ...days.map((d) => d.count));
 
   return el('section', {},
-    el('h2', { class: 'section-title' }, 'Next 7 days'),
+    el('h2', { class: 'section-title' }, t('forecast.title')),
     el('div', { class: 'forecast' },
       days.map((d) =>
         el('div', { class: 'forecast-day' },
@@ -264,9 +374,9 @@ async function forecastBlock() {
 }
 
 function dueLine(queueLength, summary) {
-  if (!summary.total) return 'Your deck is empty — add a category to get going.';
-  if (!queueLength) return 'All caught up. Come back later today.';
-  return `${queueLength} card${queueLength === 1 ? '' : 's'} waiting. ${summary.mature} are sticking.`;
+  if (!summary.total) return t('today.empty');
+  if (!queueLength) return t('today.caughtUp');
+  return t('today.waiting', { n: queueLength, mature: summary.mature });
 }
 
 function stat(value, label) {
@@ -277,12 +387,14 @@ async function categoryRow(cat) {
   const p = await deck.categoryProgress(cat.id);
   const studied = p.total - p.new;
   const pct = p.total ? Math.round((studied / p.total) * 100) : 0;
-  return el('a', { class: 'row-card', href: `#/category/${cat.id}` },
+  return el('a', { class: 'row-card', href: link(`/category/${cat.id}`) },
     el('span', { class: 'row-icon' }, cat.icon || '📄'),
     el('span', { class: 'row-body' },
       el('span', { class: 'row-title' }, cat.title),
       el('span', { class: 'row-sub' },
-        p.total ? `${studied}/${p.total} started · ${p.due} due` : `${cat.phrases.length} phrases`),
+        p.total
+          ? t('category.progress', { studied, total: p.total, due: p.due })
+          : t('category.count', { n: cat.phrases.length })),
       el('span', { class: 'bar' }, el('span', { class: 'bar-fill', style: `width:${pct}%` }))),
     el('span', { class: 'row-chev' }, '›'));
 }
@@ -293,16 +405,11 @@ async function browse(root) {
   const { categories } = await loadContent();
   const s = await deck.getSettings();
 
-  const groups = [
-    ['Week 1 — get off the plane', 1],
-    ['Week 2 — moving around', 2],
-    ['Week 3 — spending money', 3],
-    ['Week 4 — edge cases & chat', 4],
-  ];
+  const groups = [1, 2, 3, 4].map((week) => [t(`browse.week${week}`), week]);
 
   root.append(
     el('div', { class: 'screen' },
-      header('Browse', 'Ordered by trip relevance, not alphabetically. Add categories a couple at a time — the review load is cumulative.'),
+      header(t('browse.title'), t('browse.lede')),
       groups.map(([label, week]) => {
         const inWeek = categories.filter((c) => (c.week ?? 1) === week);
         if (!inWeek.length) return null;
@@ -318,21 +425,21 @@ function browseRow(cat, s) {
   const active = s.activeCategories.includes(cat.id);
   return el('div', { class: `row-card ${active ? 'is-active' : ''}` },
     el('span', { class: 'row-icon' }, cat.icon || '📄'),
-    el('a', { class: 'row-body', href: `#/category/${cat.id}` },
+    el('a', { class: 'row-body', href: link(`/category/${cat.id}`) },
       el('span', { class: 'row-title' }, cat.title),
       el('span', { class: 'row-sub' },
-        cat.missing ? '⚠️ content file missing' : `${cat.phrases.length} phrases`)),
+        cat.missing ? t('browse.missing') : t('category.count', { n: cat.phrases.length }))),
     active
-      ? el('span', { class: 'pill pill-on' }, 'in deck')
+      ? el('span', { class: 'pill pill-on' }, t('browse.inDeck'))
       : el('button', {
           class: 'btn btn-small',
           onclick: async (e) => {
             e.preventDefault();
             const { added, seeded } = await deck.activateCategory(cat.id);
-            toast(seeded ? `Added ${added} cards (${seeded} seeded forward)` : `Added ${added} cards`);
+            toast(seeded ? t('browse.addedSeeded', { added, seeded }) : t('browse.added', { added }));
             router();
           },
-        }, 'Add'));
+        }, t('browse.add')));
 }
 
 /* ---------- category detail ---------- */
@@ -340,6 +447,7 @@ function browseRow(cat, s) {
 async function category(root, id) {
   const cat = await getCategory(id);
   if (!cat) { go('/browse'); return; }
+  const { features } = await loadContent();
   const s = await deck.getSettings();
   const active = s.activeCategories.includes(id);
   const progress = await deck.categoryProgress(id);
@@ -347,34 +455,34 @@ async function category(root, id) {
 
   root.append(
     el('div', { class: 'screen' },
-      el('a', { class: 'back-link', href: '#/browse' }, '← Browse'),
+      el('a', { class: 'back-link', href: link('/browse') }, t('category.back')),
       header(`${cat.icon || ''} ${cat.title}`, cat.description),
 
       scenarios.length
         ? el('div', { class: 'card-list scenario-teaser' },
             scenarios.map((sc) =>
-              el('a', { class: 'row-card', href: `#/scenario/${sc.id}` },
+              el('a', { class: 'row-card', href: link(`/scenario/${sc.id}`) },
                 el('span', { class: 'row-icon' }, sc.icon || '🗣️'),
                 el('span', { class: 'row-body' },
                   el('span', { class: 'row-title' }, sc.title),
-                  el('span', { class: 'row-sub' }, 'Practise the full exchange')),
+                  el('span', { class: 'row-sub' }, t('category.practise'))),
                 el('span', { class: 'row-chev' }, '›'))))
         : null,
 
-      toggleStrip(router),
+      toggleStrip(router, features),
 
       el('div', { class: 'action-row' },
         active
-          ? el('button', { class: 'btn btn-primary', onclick: () => go(`/study/${id}`) }, 'Study this category')
+          ? el('button', { class: 'btn btn-primary', onclick: () => go(`/study/${id}`) }, t('category.study'))
           : el('button', {
               class: 'btn btn-primary',
               onclick: async () => {
                 const { added } = await deck.activateCategory(id);
-                toast(`Added ${added} cards to your deck`);
+                toast(t('category.addedToDeck', { added }));
                 router();
               },
-            }, 'Add to deck'),
-        active ? el('span', { class: 'muted small' }, `${progress.due} due · ${progress.new} new`) : null),
+            }, t('category.add')),
+        active ? el('span', { class: 'muted small' }, t('category.dueNew', { due: progress.due, fresh: progress.new })) : null),
 
       el('div', { class: 'phrase-list' },
         cat.phrases.map((p) => phraseCard(p, s)))
@@ -405,22 +513,17 @@ async function studyCategory(root, id) {
   const queue = srs.buildQueue(scoped, { newLimit: s.newPerDay });
 
   if (!queue.length) {
-    root.append(el('div', { class: 'screen' },
-      el('a', { class: 'back-link', href: `#/category/${id}` }, '← Back'),
-      el('div', { class: 'empty-state' },
-        el('p', {}, `Nothing due in ${cat.title}.`),
-        el('p', { class: 'muted' }, 'Everything here is scheduled further out. That is the system working.'),
-        el('button', { class: 'btn btn-primary', onclick: () => go('/') }, 'Back to today'))));
+    root.append(emptyStudy(t('study.nothingIn', { title: cat.title }), link(`/category/${id}`)));
     return;
   }
 
-  await runSession(root, queue, { title: cat.title, exitTo: `#/category/${id}` });
+  await runSession(root, queue, { title: cat.title, exitTo: link(`/category/${id}`) });
 }
 
 async function review(root) {
   const queue = await deck.queue();
   if (!queue.length) { go('/'); return; }
-  await runSession(root, queue, { title: 'Review', exitTo: '#/' });
+  await runSession(root, queue, { title: t('today.title'), exitTo: link('/') });
 }
 
 /**
@@ -431,10 +534,10 @@ async function review(root) {
 async function reviewCharacters(root) {
   const queue = await deck.characterQueue();
   if (!queue.length) {
-    root.append(emptyStudy('Nothing due in your character sets.', '#/characters'));
+    root.append(emptyStudy('Nothing due in your character sets.', link('/characters')));
     return;
   }
-  await runSession(root, queue, { title: 'Characters', exitTo: '#/characters' });
+  await runSession(root, queue, { title: 'Characters', exitTo: link('/characters') });
 }
 
 async function studyCharacterSet(root, setId) {
@@ -444,28 +547,28 @@ async function studyCharacterSet(root, setId) {
 
   const queue = await deck.characterQueue(setId);
   if (!queue.length) {
-    root.append(emptyStudy(`Nothing due in ${set.title}.`, `#/characters/${setId}`));
+    root.append(emptyStudy(t('study.nothingIn', { title: set.title }), link(`/characters/${setId}`)));
     return;
   }
-  await runSession(root, queue, { title: set.title, exitTo: `#/characters/${setId}` });
+  await runSession(root, queue, { title: set.title, exitTo: link(`/characters/${setId}`) });
 }
 
 function emptyStudy(message, backTo) {
   return el('div', { class: 'screen' },
-    el('a', { class: 'back-link', href: backTo }, '← Back'),
+    el('a', { class: 'back-link', href: backTo }, t('study.back')),
     el('div', { class: 'empty-state' },
       el('p', {}, message),
-      el('p', { class: 'muted' }, 'Everything here is scheduled further out. That is the system working.'),
-      el('button', { class: 'btn btn-primary', onclick: () => go('/') }, 'Back to today')));
+      el('p', { class: 'muted' }, t('study.scheduledOut')),
+      el('button', { class: 'btn btn-primary', onclick: () => go('/') }, t('study.backToToday'))));
 }
 
 /**
- * The core study loop. Front = Japanese; flip reveals meaning and notes;
- * grading feeds SM-2. Failed cards are pushed back into the same session
- * rather than disappearing for ten minutes.
+ * The core study loop. Front = the language being learned; flip reveals
+ * the meaning and notes; grading feeds SM-2. Failed cards are pushed back
+ * into the same session rather than disappearing for ten minutes.
  */
-async function runSession(root, queue, { title, exitTo }) {
-  const { phrases } = await loadContent();
+async function runSession(root, queue, { exitTo }) {
+  const { phrases, features } = await loadContent();
   const s = await deck.getSettings();
   const total = queue.length;
   let done = 0;
@@ -485,9 +588,11 @@ async function runSession(root, queue, { title, exitTo }) {
     // Re-read settings each draw so the inline toggles take effect immediately.
     Object.assign(s, await deck.getSettings());
 
-    const previews = srs.gradePreviews(card);
+    const previews = srs.gradePreviews(card, Date.now(), formatInterval);
 
-    view.append(
+    // Native append() would print a null child as the text "null" (a course
+    // with no reading aids has no toggle strip), so drop the gaps first.
+    view.append(...[
       el('div', { class: 'study-top' },
         el('a', { class: 'back-link', href: exitTo }, '✕'),
         el('div', { class: 'bar' }, el('div', { class: 'bar-fill', style: `width:${(done / total) * 100}%` })),
@@ -498,27 +603,27 @@ async function runSession(root, queue, { title, exitTo }) {
         onclick: () => { if (!flipped) { flipped = true; draw(); } },
       },
         el('div', { class: 'card-cat muted small' }, phrase.categoryTitle),
-        japaneseNode(phrase, { furigana: s.furigana }),
-        s.romaji ? el('div', { class: 'romaji' }, phrase.romaji) : null,
+        targetNode(phrase, { furigana: s.furigana }),
+        s.romaji && phrase.reading ? el('div', { class: 'romaji' }, phrase.reading) : null,
         audioButton(phrase, playPhrase),
 
         flipped
           ? el('div', { class: 'study-back' },
-              el('div', { class: 'english big' }, phrase.english),
+              meaningNode(phrase, { big: true }),
               notesBlock(phrase),
               tagRow(phrase))
-          : el('p', { class: 'muted tap-hint' }, 'Tap to reveal')),
+          : el('p', { class: 'muted tap-hint' }, t('study.tapToReveal'))),
 
-      toggleStrip(draw),
+      toggleStrip(draw, features),
 
       flipped
         ? el('div', { class: 'grade-row' },
-            gradeBtn('again', 'No idea', previews.AGAIN, srs.GRADE.AGAIN),
-            gradeBtn('hard', 'Shaky', previews.HARD, srs.GRADE.HARD),
-            gradeBtn('good', 'Got it', previews.GOOD, srs.GRADE.GOOD),
-            gradeBtn('easy', 'Too easy', previews.EASY, srs.GRADE.EASY))
-        : el('button', { class: 'btn btn-primary btn-lg full', onclick: () => { flipped = true; draw(); } }, 'Show answer')
-    );
+            gradeBtn('again', t('grade.again'), previews.AGAIN, srs.GRADE.AGAIN),
+            gradeBtn('hard', t('grade.hard'), previews.HARD, srs.GRADE.HARD),
+            gradeBtn('good', t('grade.good'), previews.GOOD, srs.GRADE.GOOD),
+            gradeBtn('easy', t('grade.easy'), previews.EASY, srs.GRADE.EASY))
+        : el('button', { class: 'btn btn-primary btn-lg full', onclick: () => { flipped = true; draw(); } }, t('study.showAnswer')),
+    ].filter(Boolean));
 
     if (s.autoPlayAudio && flipped) audio.play(phrase.audio);
   }
@@ -543,9 +648,9 @@ async function runSession(root, queue, { title, exitTo }) {
     clear(view);
     const stats = await deck.todayStats();
     view.append(el('div', { class: 'empty-state' },
-      el('h1', {}, 'Session done'),
-      el('p', { class: 'lede' }, `${done} cards graded · ${stats.reviews} total today`),
-      el('button', { class: 'btn btn-primary btn-lg', onclick: () => go('/') }, 'Back to today')));
+      el('h1', {}, t('study.done')),
+      el('p', { class: 'lede' }, t('study.doneSummary', { done, total: stats.reviews })),
+      el('button', { class: 'btn btn-primary btn-lg', onclick: () => go('/') }, t('study.backToToday'))));
   }
 
   // Keyboard shortcuts — desktop review is much faster with them.
@@ -565,63 +670,70 @@ async function runSession(root, queue, { title, exitTo }) {
 
 async function settings(root) {
   const s = await deck.getSettings();
+  const { features, course: current } = await loadContent();
   const summary = await deck.deckSummary();
-  const chars = await deck.characterSummary();
+  const chars = features.characters ? await deck.characterSummary() : null;
+  const textScale = await course.getTextScale();
 
   const toggle = (key, label, help) =>
     el('label', { class: 'setting' },
       el('span', {}, el('strong', {}, label), help ? el('span', { class: 'muted small' }, help) : null),
       el('input', {
         type: 'checkbox', checked: s[key],
-        onchange: async (e) => { await deck.saveSettings({ [key]: e.target.checked }); applyTextSettings(); },
+        onchange: async (e) => { await deck.saveSettings({ [key]: e.target.checked }); },
       }));
 
   root.append(
     el('div', { class: 'screen' },
-      header('Settings'),
+      header(t('settings.title')),
       el('div', { class: 'settings-list' },
-        toggle('furigana', 'Furigana', 'Kana readings above kanji'),
-        toggle('romaji', 'Romaji', 'Turn this off once the kana stick — README §6 suggests after week 1'),
-        toggle('autoPlayAudio', 'Auto-play audio', 'Play the clip when a card is revealed'),
+        features.ruby ? toggle('furigana', t('settings.furigana'), t('settings.furiganaHelp')) : null,
+        features.reading ? toggle('romaji', t('settings.romaji'), t('settings.romajiHelp')) : null,
+        toggle('autoPlayAudio', t('settings.autoplay'), t('settings.autoplayHelp')),
 
         el('label', { class: 'setting' },
-          el('span', {}, el('strong', {}, 'New cards per day'), el('span', { class: 'muted small' }, 'Caps how fast the deck grows')),
+          el('span', {}, el('strong', {}, t('settings.newPerDay')), el('span', { class: 'muted small' }, t('settings.newPerDayHelp'))),
           el('input', {
             type: 'number', min: '0', max: '50', value: String(s.newPerDay), class: 'num-input',
             onchange: (e) => deck.saveSettings({ newPerDay: Math.max(0, Number(e.target.value) || 0) }),
           })),
 
-        el('label', { class: 'setting' },
-          el('span', {},
-            el('strong', {}, 'New characters per day'),
-            el('span', { class: 'muted small' }, 'Kana and kanji, capped separately from phrases')),
-          el('input', {
-            type: 'number', min: '0', max: '60', value: String(s.newCharsPerDay), class: 'num-input',
-            onchange: (e) => deck.saveSettings({ newCharsPerDay: Math.max(0, Number(e.target.value) || 0) }),
-          })),
+        features.characters
+          ? el('label', { class: 'setting' },
+              el('span', {},
+                el('strong', {}, t('settings.newChars')),
+                el('span', { class: 'muted small' }, t('settings.newCharsHelp'))),
+              el('input', {
+                type: 'number', min: '0', max: '60', value: String(s.newCharsPerDay), class: 'num-input',
+                onchange: (e) => deck.saveSettings({ newCharsPerDay: Math.max(0, Number(e.target.value) || 0) }),
+              }))
+          : null,
 
         el('label', { class: 'setting' },
-          el('span', {}, el('strong', {}, 'Text size'), el('span', { class: 'muted small' }, 'Doubles as an accessibility control')),
+          el('span', {}, el('strong', {}, t('settings.textSize')), el('span', { class: 'muted small' }, t('settings.textSizeHelp'))),
           el('input', {
-            type: 'range', min: '0.85', max: '1.6', step: '0.05', value: String(s.textScale),
-            onchange: async (e) => { await deck.saveSettings({ textScale: Number(e.target.value) }); applyTextSettings(); },
+            type: 'range', min: '0.85', max: '1.6', step: '0.05', value: String(textScale),
+            onchange: async (e) => { await course.savePrefs({ textScale: Number(e.target.value) }); applyTextSettings(); },
           }))),
 
-      el('h2', { class: 'section-title' }, 'Deck'),
+      el('h2', { class: 'section-title' }, t('settings.deck')),
       el('p', { class: 'muted' },
-        `Phrases: ${summary.total} cards · ${summary.review} in review · ${summary.mature} mature`),
-      el('p', { class: 'muted' },
-        `Characters: ${chars.total} cards · ${chars.review} in review · ${chars.mature} mature`),
-      el('p', { class: 'muted small' }, `Storage: ${store.backend()}`),
+        t('settings.phrases', { total: summary.total, review: summary.review, mature: summary.mature })),
+      chars
+        ? el('p', { class: 'muted' },
+            t('settings.characters', { total: chars.total, review: chars.review, mature: chars.mature }))
+        : null,
+      el('p', { class: 'muted small' }, t('settings.storage', { backend: store.backend() })),
 
       el('button', {
         class: 'btn btn-danger',
         onclick: async () => {
-          if (!confirm('Erase all progress, SRS state and placement results? This cannot be undone.')) return;
+          const name = course.languageName(current.target, current.speaker);
+          if (!confirm(t('settings.resetConfirm', { course: name }))) return;
           await deck.resetEverything();
           location.reload();
         },
-      }, 'Reset all progress')
+      }, t('settings.reset'))
     )
   );
 }
@@ -629,8 +741,8 @@ async function settings(root) {
 /* ---------- boot ---------- */
 
 export async function applyTextSettings() {
-  const s = await deck.getSettings();
-  document.documentElement.style.setProperty('--text-scale', String(s.textScale));
+  const scale = await course.getTextScale();
+  document.documentElement.style.setProperty('--text-scale', String(scale));
 }
 
 /**
@@ -685,11 +797,11 @@ function registerServiceWorker() {
 
 async function boot() {
   audio.primeOnFirstGesture();
+  // Until a course is entered, speak the learner's language as best we know
+  // it — this is also what the boot-error screen below will be shown in.
+  const prefs = await course.getPrefs();
+  setLang(prefs.speaker || course.guessSpeaker(UI_LANGS));
   await applyTextSettings();
-
-  if (await deck.maybeRetireRomaji()) {
-    toast('Week 1 done — romaji is now off by default. Turn it back on in Settings.', 5000);
-  }
 
   window.addEventListener('hashchange', router);
   await router();
@@ -701,13 +813,11 @@ function showBootError(err) {
   if (!root) return;
   clear(root).append(
     el('div', { class: 'screen' },
-      el('h1', {}, 'Something went wrong'),
-      el('p', { class: 'lede' }, 'The app could not finish starting up.'),
+      el('h1', {}, t('error.title')),
+      el('p', { class: 'lede' }, t('error.lede')),
       el('p', { class: 'error' }, String((err && err.message) || err)),
-      el('p', { class: 'muted small' },
-        'If this was a connection problem, reloading once more usually fixes it — ' +
-        'the offline cache installs in the background.'),
-      el('button', { class: 'btn btn-primary', onclick: () => location.reload() }, 'Reload'))
+      el('p', { class: 'muted small' }, t('error.hint')),
+      el('button', { class: 'btn btn-primary', onclick: () => location.reload() }, t('error.reload')))
   );
 }
 

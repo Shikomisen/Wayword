@@ -100,8 +100,31 @@ const quiz = await import('../js/quiz.js');
 await import('../js/app.js');
 await tick(); await tick(); await tick();
 
-console.log('\n1. First launch');
+console.log('\n0. Home — language picker');
 
+check('launch opens the language picker', text().includes('Wayword') && $$('.course-card').length > 0,
+  `${$$('.course-card').length} courses offered`);
+check('course chrome is hidden on the picker', document.body.classList.contains('at-home'));
+check('speaker defaults to the device language (English here)',
+  $('.segment.is-on')?.dataset.speaker === 'en', $('.segment.is-on')?.textContent);
+check('English speakers are offered Japanese',
+  Boolean($('.course-card[data-course="en-ja"]:not(.is-planned)')), $('.course-card[data-course="en-ja"]')?.textContent);
+check('Indonesian is listed as a coming-soon placeholder',
+  Boolean($('.course-card[data-course="en-id"].is-planned')), $('.course-card[data-course="en-id"]')?.textContent);
+check('Japanese shows as not started yet', $('.course-card[data-course="en-ja"]')?.textContent.includes('Not started'));
+
+await goTo('#/en-id/');
+check('the Indonesian placeholder opens a coming-soon screen', text().includes('Indonesian is coming soon'));
+check('a placeholder course has no tab bar', document.body.classList.contains('no-tabs'));
+check('…but does have the way back to the picker',
+  document.querySelector('.coursebar-home')?.getAttribute('href') === '#/');
+
+await goTo('#/en-ja/');
+
+console.log('\n1. First launch of a course');
+
+check('course bar names the language pair', document.querySelector('.coursebar-pair')?.textContent === 'English › Japanese',
+  document.querySelector('.coursebar-pair')?.textContent);
 check('placement quiz gates the app on first launch',
   text().includes('Where are you starting from?'), 'intro screen shown');
 check('onboarding hides the tab bar', document.body.classList.contains('onboarding'));
@@ -114,6 +137,7 @@ const quizTotal = Number(text().match(/1 of (\d+)/)?.[1] ?? 0);
 check('quiz shows progress', quizTotal > 0, `${quizTotal} cards total`);
 check('quiz covers phrases and characters', quizTotal >= 24 && quizTotal <= 30, `${quizTotal} cards`);
 check('quiz offers three self-grade answers', $$('.btn-answer').length === 3);
+check('first card has no stray "null" where the Back button would be', !/\bnull\b/.test(text()));
 check('furigana renders as ruby', $$('.placement-card ruby, .placement-card').length > 0);
 
 // Answer every card, alternating so the result screen has a mix. Driven by
@@ -132,14 +156,16 @@ check('results break down all 10 categories and 3 character sets',
   $$('.result-row').length === 13, `${$$('.result-row').length} rows`);
 check('results separate phrases from reading', text().includes('Reading'));
 
-$$('button').find((b) => b.textContent === 'Start studying')?.click();
-await tick(); await tick(); await tick();
+$$('button').find((b) => b.textContent === 'Set up reading first')?.click();
+await tick(); await tick(); await tick(); await tick();
+check('"Set up reading first" lands on Characters, not Today',
+  location.hash === '#/en-ja/characters' && $('h1')?.textContent === 'Characters', `${location.hash} · ${$('h1')?.textContent}`);
 
 /* ---------- screens ---------- */
 
 console.log('\n2. Home / due today');
 
-await goTo('#/');
+await goTo('#/en-ja/');
 check('home screen renders', text().includes('Today'));
 check('stat tiles present', $$('.stat').length === 4, $$('.stat-value').map((s) => s.textContent).join('/'));
 check('7-day SRS forecast renders', $$('.forecast-day').length === 7);
@@ -148,7 +174,7 @@ check('tab bar highlights the current screen', Boolean(document.querySelector('.
 
 console.log('\n3. Browse');
 
-await goTo('#/browse');
+await goTo('#/en-ja/browse');
 check('browse renders', text().includes('Browse'));
 check('all 10 categories listed', $$('.row-card').length === 10);
 check('week groupings render', $$('.section-title').length === 4);
@@ -158,7 +184,7 @@ check('inactive categories offer an Add button',
 
 console.log('\n4. Category detail');
 
-await goTo('#/category/greetings');
+await goTo('#/en-ja/category/greetings');
 check('category renders', text().includes('Greetings & Politeness'));
 check('all phrases listed', $$('.phrase-card').length === 24, `${$$('.phrase-card').length} cards`);
 check('register notes render', text().includes('Register'));
@@ -184,7 +210,7 @@ await tick(); await tick(); await tick();
 
 console.log('\n5. Study session');
 
-await goTo('#/study/airport');
+await goTo('#/en-ja/study/airport');
 check('study screen renders a card', Boolean($('.study-card .jp')), $('.study-card .jp')?.textContent);
 check('answer is hidden before flipping', !$('.study-back'));
 check('progress indicator present', Boolean($('.study-top .bar')));
@@ -206,11 +232,11 @@ check('grading advances to the next card', $('.study-card .jp')?.textContent !==
 
 console.log('\n6. Scenarios');
 
-await goTo('#/scenarios');
+await goTo('#/en-ja/scenarios');
 check('scenario list renders', text().includes('Scenarios'));
 check('all 6 scenarios listed', $$('.row-card').length === 6);
 
-await goTo('#/scenario/conbini');
+await goTo('#/en-ja/scenario/conbini');
 check('scenario player renders', text().includes('Convenience store checkout'));
 check('NPC line renders', Boolean($('.dialogue.npc')));
 check('setting/context shown', text().includes('Lawson'));
@@ -227,11 +253,12 @@ for (let i = 0; i < 10 && $$('.btn-option').length; i++) {
   await tick(); await tick(); await tick();
 }
 check('scenario reaches its ending', text().includes('Run it again'));
+check('the ending has no stray "null" where the replies were', !/\bnull\b/.test(text()));
 check('full transcript retained', $$('.transcript .dialogue').length >= 8,
   `${$$('.transcript .dialogue').length} lines`);
 
 // A "wrong" option must still teach rather than dead-end.
-await goTo('#/scenario/ticket');
+await goTo('#/en-ja/scenario/ticket');
 $$('.btn-option')[0].click();
 await tick(); await tick(); await tick();
 const wrong = $$('.btn-option').at(-1);
@@ -243,7 +270,7 @@ check('a wrong answer continues the scenario with feedback',
 
 console.log('\n7. Characters');
 
-await goTo('#/characters');
+await goTo('#/en-ja/characters');
 check('characters screen renders', text().includes('Characters'));
 check('all three sets listed', $$('.row-card').length === 3,
   $$('.row-title').map((t) => t.textContent).join(', '));
@@ -256,7 +283,7 @@ await tick(); await tick(); await tick(); await tick();
 check('adding a set marks it in-deck', $$('.pill-on').length === 1);
 check('character review becomes available', text().includes('Review characters'));
 
-await goTo('#/characters/hiragana');
+await goTo('#/en-ja/characters/hiragana');
 check('hiragana chart renders', text().includes('Hiragana'));
 check('kana grid renders as rows', $$('.kana-row').length >= 11, `${$$('.kana-row').length} rows`);
 check('all 104 hiragana render as cells', $$('.kana-cell:not(.kana-empty)').length === 104,
@@ -272,7 +299,7 @@ $$('.kana-cell:not(.kana-empty)')[0].click();
 await tick(); await tick();
 check('tapping a character plays its audio', played.length > playedBefore, played.at(-1));
 
-await goTo('#/characters/kanji-common');
+await goTo('#/en-ja/characters/kanji-common');
 check('kanji screen renders', text().includes('Common Kanji'));
 check('kanji render as a list, not a grid', $$('.kanji-row').length === 82 && $$('.kana-row').length === 0,
   `${$$('.kanji-row').length} kanji rows`);
@@ -280,14 +307,14 @@ check('kanji show English meanings', $$('.kanji-meaning').length === 82);
 check('kanji cross-reference existing phrases', $$('.ref-chip').length > 20,
   `${$$('.ref-chip').length} phrase cross-references shown`);
 check('cross-reference chips link into the phrase content',
-  $$('.ref-chip').every((a) => a.getAttribute('href').startsWith('#/category/')));
+  $$('.ref-chip').every((a) => a.getAttribute('href').startsWith('#/en-ja/category/')));
 
 const kanjiPlayed = played.length;
 $$('.kanji-glyph')[0].click();
 await tick(); await tick();
 check('tapping a kanji plays its reading', played.length > kanjiPlayed, played.at(-1));
 
-await goTo('#/characters/hiragana/study');
+await goTo('#/en-ja/characters/hiragana/study');
 check('character study reuses the phrase flashcard UI', Boolean($('.study-card .jp')),
   $('.study-card .jp')?.textContent);
 check('study screen shows which set the card came from',
@@ -302,14 +329,14 @@ $$('.btn-grade').find((b) => b.textContent.startsWith('Got it'))?.click();
 await tick(); await tick(); await tick();
 check('grading a character advances the session', Boolean($('.study-card')));
 
-await goTo('#/');
+await goTo('#/en-ja/');
 check('home shows a separate reading row', text().includes('Reading'));
 check('character counts stay out of the phrase stats',
   !$$('.stat-label').some((l) => l.textContent === 'characters'));
 
 console.log('\n8. Settings');
 
-await goTo('#/settings');
+await goTo('#/en-ja/settings');
 check('settings renders', text().includes('Settings'));
 check('toggles present', $$('input[type="checkbox"]').length === 3);
 check('new-cards-per-day control present', Boolean($('input[type="number"]')));
@@ -320,7 +347,125 @@ check('phrase and character decks are reported separately',
   text().includes('Phrases:') && text().includes('Characters:'),
   text().match(/Characters: [^S]*/)?.[0]?.trim());
 
-console.log('\n9. Console health');
+console.log('\n9. Home again — switching the speaker');
+
+await goTo('#/');
+check('back on the picker, Japanese now shows its progress',
+  /due today|All caught up/.test($('.course-card[data-course="en-ja"]')?.textContent || ''),
+  $('.course-card[data-course="en-ja"] .course-status')?.textContent);
+
+$$('.segment').find((b) => b.dataset.speaker === 'ja')?.click();
+await tick(); await tick(); await tick(); await tick();
+check('choosing 日本語 relabels the picker in Japanese', text().includes('学びたい言語'), $('.section-title')?.textContent);
+check('…and sets the page language for fonts and screen readers', document.documentElement.lang === 'ja');
+check('Japanese speakers are offered English',
+  Boolean($('.course-card[data-course="ja-en"]:not(.is-planned)')), $('.course-card[data-course="ja-en"] .course-name')?.textContent);
+check('…with Indonesian as a coming-soon placeholder here too',
+  Boolean($('.course-card[data-course="ja-id"].is-planned')), $('.course-card[data-course="ja-id"] .pill')?.textContent);
+check('the English-speaker courses are not listed', !$('.course-card[data-course="en-ja"]'));
+
+console.log('\n10. English for Japanese speakers');
+
+await goTo('#/ja-en/');
+check('course bar shows the pair in Japanese', document.querySelector('.coursebar-pair')?.textContent === '日本語 › 英語',
+  document.querySelector('.coursebar-pair')?.textContent);
+check('the English course has its own placement quiz', text().includes('まずはレベルチェック'));
+check('placement intro comes from the course, in Japanese', text().includes('学校で習った英語'));
+$$('button').find((b) => b.textContent === 'はじめる')?.click();
+await tick(); await tick();
+check('placement cards show English to learn', $('.placement-card .target')?.getAttribute('lang') === 'en',
+  $('.placement-card .target')?.textContent);
+check('placement shows no romaji line for English', !$('.placement-card .romaji'));
+for (let i = 0; i < 40 && $$('.btn-answer').length; i++) {
+  $$('.btn-answer')[i % 3].click();
+  await tick(); await tick();
+}
+await tick(); await tick(); await tick();
+check('placement results are in Japanese', text().includes('デッキができました'));
+check('results list all 10 English categories and no reading section',
+  $$('.result-row').length === 10 && !text().includes('Reading'), `${$$('.result-row').length} rows`);
+check('no "set up reading" button for a course without characters', !$$('button').some((b) => b.textContent === 'Set up reading first'));
+$$('button').find((b) => b.textContent === '学習を始める')?.click();
+await tick(); await tick(); await tick();
+
+await goTo('#/ja-en/');
+check('today screen is in Japanese', $('h1')?.textContent === '今日', $('h1')?.textContent);
+const tabLabels = [...document.querySelectorAll('.tabbar a')].map((a) => a.textContent);
+check('tab bar is in Japanese, without a Characters tab',
+  tabLabels.join('|') === '📅今日|📚一覧|🗣️会話練習|⚙️設定', tabLabels.join(' | '));
+check('tabs link inside the English course',
+  [...document.querySelectorAll('.tabbar a')].every((a) => a.getAttribute('href').startsWith('#/ja-en/')));
+check('no Reading row on the English today screen', !text().includes('Reading'));
+
+await goTo('#/ja-en/category/hotel');
+check('category renders with its Japanese title', text().includes('ホテル'));
+check('phrases show English as the text to learn',
+  $$('.phrase-card .target').length === 10 && $$('.phrase-card .target').every((n) => n.getAttribute('lang') === 'en'),
+  $('.phrase-card .target')?.textContent);
+check('meanings are Japanese', $$('.phrase-card .meaning').every((n) => n.getAttribute('lang') === 'ja'),
+  $('.phrase-card .meaning')?.textContent);
+check('usage and katakana-English notes render with their labels',
+  text().includes('使い方') && $$('.note-pitfall').length > 0 && text().includes('wake-up call'),
+  `${$$('.note-pitfall').length} pitfall notes`);
+check('no furigana/romaji toggles for English', !$('.toggle-strip'));
+check('no ruby annotations on English', $$('.phrase-card ruby').length === 0);
+
+await goTo('#/ja-en/study/greetings');
+check('study card shows English to learn', $('.study-card .target')?.getAttribute('lang') === 'en',
+  $('.study-card .target')?.textContent);
+$$('button').find((b) => b.textContent === '答えを見る')?.click();
+await tick(); await tick();
+check('flipping reveals the Japanese meaning', $('.study-back .meaning')?.getAttribute('lang') === 'ja',
+  $('.study-back .meaning')?.textContent);
+check('no stray "null" where the (absent) toggle strip would be', !/\bnull\b/.test(text()));
+check('grade buttons are in Japanese with Japanese intervals',
+  $$('.btn-grade strong').map((s) => s.textContent).join('|') === 'わからない|あやしい|わかった|簡単すぎ' &&
+  $$('.grade-when').every((g) => /分|時間|日|か月|今/.test(g.textContent)),
+  $$('.grade-when').map((g) => g.textContent).join(' / '));
+const playedBeforeEn = played.length;
+$$('.btn-grade')[2].click();
+await tick(); await tick(); await tick();
+check('English audio is used', played.slice(playedBeforeEn - 1).some((p) => p.startsWith('audio/en/')) ||
+  played.some((p) => p.startsWith('audio/en/')), played.at(-1));
+
+await goTo('#/ja-en/scenarios');
+check('scenario list in Japanese with all 6 English scenarios',
+  text().includes('会話練習') && $$('.row-card').length === 6, `${$$('.row-card').length} scenarios`);
+await goTo('#/ja-en/scenario/immigration');
+check('NPC line is English with a Japanese meaning',
+  $('.dialogue.npc .target')?.getAttribute('lang') === 'en' && $('.dialogue.npc .meaning')?.getAttribute('lang') === 'ja',
+  $('.dialogue.npc .target')?.textContent);
+check('speaker label is translated', $('.dialogue-who')?.textContent === '審査官', $('.dialogue-who')?.textContent);
+check('three replies offered', $$('.btn-option').length === 3);
+for (let i = 0; i < 12 && $$('.btn-option').length; i++) {
+  $$('.btn-option').at(-1).click(); // walk the "wrong" branch: it must still teach and finish
+  await tick(); await tick(); await tick();
+}
+check('wrong answers get Japanese feedback and the scenario still finishes',
+  $$('.feedback-wrong').length > 0 && text().includes('もう一度'),
+  $('.feedback-wrong')?.textContent.slice(0, 40) + '…');
+
+await goTo('#/ja-en/characters');
+check('Characters is not routable in a course without character sets', !text().includes('Hiragana') && $('h1')?.textContent === '今日');
+
+await goTo('#/ja-en/settings');
+check('settings are in Japanese', $('h1')?.textContent === '設定');
+check('only the toggles English has (auto-play), no furigana/romaji', $$('input[type="checkbox"]').length === 1);
+check('no character-cards control', $$('input[type="number"]').length === 1);
+check('deck summary has no Characters line', !text().includes('Characters:'));
+
+console.log('\n11. Old links');
+
+await goTo('#/browse');
+check('a pre-courses link lands in the course used last', location.hash === '#/ja-en/browse', location.hash);
+await goTo('#/en-ja/');
+await goTo('#/review');
+check('…which follows whichever course that was', location.hash.startsWith('#/en-ja/'), location.hash);
+check('the Japanese course switched the interface back to English', document.documentElement.lang === 'en');
+await goTo('#/no-such-place');
+check('an unknown path goes to the picker', location.hash === '#/' && text().includes('Wayword'), location.hash);
+
+console.log('\n12. Console health');
 
 const realErrors = errors.filter((e) => !/Not implemented|Could not parse CSS/i.test(e));
 check('no unexpected console errors during the walkthrough',

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "checkout",
+  "title": "お店のレジで",
+  "category": "shopping",
+  "setting": "洋服屋さんでTシャツを1枚選び、レジに持ってきました。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "clerk",
+      "english": "Hi! Did you find everything okay?",
+      "japanese": "こんにちは！お探しのものは見つかりましたか？",
+      "audio": "audio/en/scenario/checkout-n1.mp3",
+      "audioHint": "Hi! Did you find everything okay?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Yes, thanks!",
+          "japanese": "はい、ありがとう！",
+          "feedback": "レジでのお決まりのあいさつです。これで十分です。",
+          "next": "n2"
+        },
+        {
+          "phraseId": "gre-03",
+          "quality": "awkward",
+          "feedback": "感じはいいのですが、質問に答えていません。Yes, thanks! How are you? のように、先に答えてから聞き返すと完璧です。",
+          "next": "n2"
+        },
+        {
+          "phraseId": "sho-01",
+          "quality": "wrong",
+          "feedback": "レジで買おうとしているのに「見ているだけ」では矛盾します。これは店内で声をかけられた時の返事です。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "clerk",
+      "english": "Awesome. That'll be twenty-one fifty.",
+      "japanese": "ありがとうございます。21ドル50セントです。",
+      "audio": "audio/en/scenario/checkout-n2.mp3",
+      "audioHint": "Awesome. That'll be twenty-one fifty.",
+      "options": [
+        {
+          "phraseId": "sho-05",
+          "quality": "good",
+          "feedback": "支払い方法の確認です。たいていのお店でカードが使えます。",
+          "next": "n3"
+        },
+        {
+          "phraseId": "gre-10",
+          "quality": "good",
+          "feedback": "金額が聞き取れなければ聞き返すのが正解。レジの画面も確認しましょう。",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "english": "Twenty-five fifty?",
+          "japanese": "25ドル50セント？",
+          "feedback": "確認するのはいいことですが、今回は twenty-one です。数字は画面の表示を見るのが確実です。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "clerk",
+      "english": "Sure. Go ahead and tap or insert your card whenever you're ready.",
+      "japanese": "どうぞ。準備ができたら、カードをタッチするか差し込んでください。",
+      "audio": "audio/en/scenario/checkout-n3.mp3",
+      "audioHint": "Sure. Go ahead and tap or insert your card whenever you're ready.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Okay, thanks.",
+          "japanese": "はい、どうも。",
+          "feedback": "タッチ決済（tap）がいちばん一般的です。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "Tap? Like this?",
+          "japanese": "タッチ？こうですか？",
+          "feedback": "わからない時は、やりながら確認してOK。店員さんが教えてくれます。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "clerk",
+      "english": "You're all set. Do you need a bag?",
+      "japanese": "完了です。袋はご入用ですか？",
+      "audio": "audio/en/scenario/checkout-n4.mp3",
+      "audioHint": "You're all set. Do you need a bag?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "No, I'm good. Thanks.",
+          "japanese": "いいえ、大丈夫です。どうも。",
+          "feedback": "I'm good. で「結構です」。とても自然な断り方です。",
+          "next": "n5"
+        },
+        {
+          "phraseId": "sho-06",
+          "quality": "good",
+          "feedback": "袋がほしい時はこれで。有料の場合もあります。",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "english": "No, vinyl bag.",
+          "japanese": "（いいえ、ビニール袋）",
+          "feedback": "「ビニール袋」は和製英語で、英語では plastic bag。しかも断っているのか頼んでいるのか伝わりません。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "clerk",
+      "english": "Here's your receipt. Have a great day!",
+      "japanese": "レシートです。よい一日を！",
+      "audio": "audio/en/scenario/checkout-n5.mp3",
+      "audioHint": "Here's your receipt. Have a great day!",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Thanks, you too!",
+          "japanese": "ありがとう、あなたも！",
+          "feedback": "Have a great day! への最高の返し方です。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-12",
+          "quality": "awkward",
+          "feedback": "同じ言葉を返しても失礼ではありませんが、Thanks, you too! のほうがずっと自然です。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "wrong",
+          "feedback": "お礼を言われたわけではないので、You're welcome. はちぐはぐです。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "japanese": "お買い物完了。レジでの会話は「見つかった？」「袋いる？」「よい一日を」でほぼ決まりです。Thanks, you too! が自然に出れば上級者です。",
+      "end": true,
+      "options": []
+    }
+  }
+}
