@@ -1,5 +1,5 @@
 /**
- * make-kana.mjs — generates content/hiragana.json and content/katakana.json.
+ * make-kana.mjs — generates the hiragana and katakana sets (content/ja/).
  *
  * Kana is a grid, not a vocabulary list: hand-writing 220 near-identical
  * JSON entries invites typos that no test would catch, because a wrong
@@ -12,7 +12,7 @@
  *   node tools/make-kana.mjs
  */
 
-import { writeFileSync } from 'node:fs';
+import { readFileSync, writeFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -186,6 +186,20 @@ function buildScript(script) {
   return out;
 }
 
+/**
+ * Where a script's set lives is declared once, in the course manifest that
+ * lists it (content/ja/manifest.json → characterSets), not repeated here.
+ */
+function declaredFile(script) {
+  const registry = JSON.parse(readFileSync(resolve(ROOT, 'content/courses.json'), 'utf8'));
+  for (const course of registry.courses.filter((c) => c.manifest)) {
+    const manifest = JSON.parse(readFileSync(resolve(ROOT, course.manifest), 'utf8'));
+    const set = (manifest.characterSets || []).find((s) => s.script === script);
+    if (set) return set.file;
+  }
+  throw new Error(`No course manifest declares a ${script} character set`);
+}
+
 const META = {
   hiragana: {
     title: 'Hiragana',
@@ -222,12 +236,12 @@ for (const script of ['hiragana', 'katakana']) {
     characters,
   };
 
-  const path = resolve(ROOT, `content/${script}.json`);
-  writeFileSync(path, JSON.stringify(file, null, 2) + '\n');
+  const rel = declaredFile(script);
+  writeFileSync(resolve(ROOT, rel), JSON.stringify(file, null, 2) + '\n');
 
   const counts = characters.reduce((acc, c) => ({ ...acc, [c.group]: (acc[c.group] || 0) + 1 }), {});
   console.log(
-    `  content/${script}.json  ${characters.length} characters  ` +
+    `  ${rel}  ${characters.length} characters  ` +
     Object.entries(counts).map(([g, n]) => `${g}:${n}`).join(' ')
   );
 }

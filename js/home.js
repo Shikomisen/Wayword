@@ -28,7 +28,7 @@ export async function renderHome(root) {
   root.append(view);
 
   async function draw() {
-    setLang(speaker);
+    await setLang(speaker);
     const cards = await Promise.all(
       registry.courses.filter((c) => c.speaker === speaker).map((c) => courseCard(c, speaker)));
 

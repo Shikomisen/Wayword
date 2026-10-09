@@ -201,7 +201,7 @@ const expectedAssets = () => async function () {
   const out = [...sw.match(/const SHELL = \[([\s\S]*?)\];/)[1].matchAll(/'([^']+)'/g)].map((m) => m[1]);
   out.push('./content/courses.json');
   const reg = await j('content/courses.json');
-  for (const f of reg.ui || []) out.push(`./${f}`);
+  for (const lang of new Set(['en', ...(reg.speakers || [])])) out.push(`./content/ui/${lang}.json`);
   const items = (list, key) => (list || []).flatMap((x) => x[key] || []);
   for (const c of reg.courses.filter((x) => x.manifest)) {
     const m = await j(c.manifest);

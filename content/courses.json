@@ -1,16 +1,18 @@
 {
   "schemaVersion": 1,
-  "notes": "Every course the home page offers. A course pairs the learner's own language (speaker) with the language being learned (target). Adding a course = a manifest under content/ + one entry here. Courses with status 'planned' show on the home page as 'coming soon' and have no manifest yet.",
+  "notes": "Every course the home page offers. A course pairs the learner's own language (speaker) with the language being learned (target). Its content lives in content/<target>/ with a manifest.json, its audio in audio/<target>/. To add a language to learn: that folder plus one entry below — no app code. A language people learn *from* (a speaker) also needs its interface strings, content/ui/<code>.json, and a place in `speakers`. `font` is the CSS font stack for text in that language, applied wherever it appears. Courses with status 'planned' show on the home page as 'coming soon' and have no manifest yet.",
   "languages": {
-    "en": { "name": { "en": "English", "ja": "英語" }, "native": "English", "badge": "EN" },
-    "ja": { "name": { "en": "Japanese", "ja": "日本語" }, "native": "日本語", "badge": "JA" },
+    "en": { "name": { "en": "English", "ja": "英語" }, "native": "English", "badge": "EN",
+            "font": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", sans-serif" },
+    "ja": { "name": { "en": "Japanese", "ja": "日本語" }, "native": "日本語", "badge": "JA",
+            "font": "\"Hiragino Kaku Gothic ProN\", \"Yu Gothic\", \"Meiryo\", \"Noto Sans JP\", sans-serif" },
     "id": { "name": { "en": "Indonesian", "ja": "インドネシア語" }, "native": "Bahasa Indonesia", "badge": "ID" }
   },
   "speakers": ["en", "ja"],
   "courses": [
-    { "id": "en-ja", "speaker": "en", "target": "ja", "status": "available", "manifest": "content/manifest.json" },
+    { "id": "en-ja", "speaker": "en", "target": "ja", "status": "available", "manifest": "content/ja/manifest.json" },
     { "id": "en-id", "speaker": "en", "target": "id", "status": "planned" },
-    { "id": "ja-en", "speaker": "ja", "target": "en", "status": "available", "manifest": "content/ja-en/manifest.json" },
+    { "id": "ja-en", "speaker": "ja", "target": "en", "status": "available", "manifest": "content/en/manifest.json" },
     { "id": "ja-id", "speaker": "ja", "target": "id", "status": "planned" }
   ]
 }

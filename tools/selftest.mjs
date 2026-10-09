@@ -13,7 +13,6 @@ import { readFileSync, existsSync, statSync, readdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as srs from '../js/srs.js';
-import { dictionaries as i18nDicts } from '../js/i18n.js';
 import { toSegments, rubyText } from '../js/ruby.js';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -310,13 +309,33 @@ console.log('\nInterface strings');
 // Keys the Japanese interface can never reach: they belong to features only
 // courses with furigana, romaji or character sets have, and every such course
 // today is taught from English.
-const EN_ONLY = /^(reading\.|settings\.(furigana|romaji|newChars|characters)|quiz\.(reading|loaded$)|toast\.romajiRetired)/;
+const EN_ONLY = /^(reading\.|settings\.(newChars|characters)|quiz\.(reading|loaded$)|toast\.romajiRetired)/;
 
-const enKeys = new Set(Object.keys(i18nDicts.en));
-const jaKeys = new Set(Object.keys(i18nDicts.ja));
-for (const key of jaKeys) check(`ja key ${key} exists in en`, enKeys.has(key));
-for (const key of enKeys) {
-  if (!EN_ONLY.test(key)) check(`en key ${key} has a Japanese translation`, jaKeys.has(key));
+// Strings are content: content/ui/<lang>.json, one per language people learn
+// from. Plural variants (key_one, key_other…) count as the key itself.
+const PLURAL = /_(zero|one|two|few|many|other)$/;
+const baseKeys = (dict) => new Set(Object.keys(dict).filter((k) => !k.startsWith('$')).map((k) => k.replace(PLURAL, '')));
+const uiDicts = {};
+for (const lang of new Set(['en', ...registry.speakers])) {
+  const file = `content/ui/${lang}.json`;
+  if (check(`interface strings exist for ${lang} (${file})`, existsSync(resolve(ROOT, file)))) {
+    uiDicts[lang] = readJSON(file);
+  }
+}
+
+const enKeys = baseKeys(uiDicts.en || {});
+for (const [lang, dict] of Object.entries(uiDicts)) {
+  if (lang === 'en') continue;
+  const keys = baseKeys(dict);
+  for (const key of keys) check(`${lang} key ${key} exists in en`, enKeys.has(key));
+  for (const key of enKeys) {
+    if (!EN_ONLY.test(key)) check(`en key ${key} has a ${lang} translation`, keys.has(key));
+  }
+}
+for (const [lang, dict] of Object.entries(uiDicts)) {
+  for (const [key, value] of Object.entries(dict)) {
+    check(`${lang}:${key} is a non-empty string`, typeof value === 'string' && value.length > 0);
+  }
 }
 
 // Every literal t('…') in the app must name a real key, or the raw key would show.
@@ -328,7 +347,7 @@ for (const file of readdirSync(resolve(ROOT, 'js')).filter((f) => f.endsWith('.j
     check(`${file}: t('${key}') exists`, enKeys.has(key));
   }
 }
-console.log(`  ${enKeys.size} keys, ${jaKeys.size} translated to Japanese, ${literalKeys} uses checked`);
+console.log(`  ${Object.keys(uiDicts).join(', ')}: ${enKeys.size} keys, ${literalKeys} uses checked`);
 
 /* ---------- SRS ---------- */
 

@@ -128,7 +128,7 @@ Japanese voice installed.
 Content must be fully decoupled from app logic so the app can grow after
 launch without code changes:
 
-- One JSON file per category (`content/airport.json`, etc.), a shared
+- One JSON file per category (`content/ja/airport.json`, etc.), a shared
   schema (id, Japanese, furigana, romaji, English, register notes,
   audio-hint, tags, difficulty).
 - A single `manifest.json` listing active category files — adding a
@@ -269,9 +269,9 @@ same versioned-schema rules as §3a):
 
 | Set | File | Count | Scope |
 |---|---|---|---|
-| Hiragana | `content/hiragana.json` | 104 | 46 base + 25 dakuten/handakuten + 33 yōon |
-| Katakana | `content/katakana.json` | 116 | same structure, plus 12 extended combos (ファ, ティ, ジェ…) for loanwords |
-| Common Kanji | `content/kanji-common.json` | 82 | curated for everyday reading, not exhaustive |
+| Hiragana | `content/ja/hiragana.json` | 104 | 46 base + 25 dakuten/handakuten + 33 yōon |
+| Katakana | `content/ja/katakana.json` | 116 | same structure, plus 12 extended combos (ファ, ティ, ジェ…) for loanwords |
+| Common Kanji | `content/ja/kanji-common.json` | 82 | curated for everyday reading, not exhaustive |
 
 Kanji covers numbers and money, the seven day kanji and time, wayfinding
 (出口, 入口, 男, 女, お手洗い, compass points), stations and tickets, shops and
@@ -378,8 +378,8 @@ The service worker registers correctly from the project subpath —
 scope, which is asserted in `npm run test:sw`. Don't make that path absolute.
 
 Content lives in `content/` — adding a category is one JSON file plus one line
-in its course's manifest (`content/manifest.json` for Japanese,
-`content/ja-en/manifest.json` for English), with no app-code changes (§3a).
+in its course's manifest (`content/ja/manifest.json` for Japanese,
+`content/en/manifest.json` for English), with no app-code changes (§3a).
 Run `npm run audio` afterwards to synthesise its clips.
 
 See `ASSUMPTIONS.md` for decisions made during the build that this spec
@@ -400,17 +400,20 @@ page in that language. Inside a course, a slim bar at the top
 
 | Course | id | Status | Content |
 |---|---|---|---|
-| Japanese, for English speakers | `en-ja` | available | `content/manifest.json` — unchanged, 148 phrases + 302 characters, 6 scenarios |
-| English, for Japanese speakers | `ja-en` | available | `content/ja-en/` — 104 phrases, 10 categories, 6 scenarios |
+| Japanese, for English speakers | `en-ja` | available | `content/ja/` — 187 phrases (incl. 39 casual) + 302 characters, 6 scenarios |
+| English, for Japanese speakers | `ja-en` | available | `content/en/` — 104 phrases, 10 categories, 6 scenarios |
 | Indonesian, for English speakers | `en-id` | planned | placeholder screen only |
 | Indonesian, for Japanese speakers | `ja-id` | planned | placeholder screen only |
 
 **Courses are content.** `content/courses.json` lists every course; each
-available one points at its own manifest. A manifest's `fields` says which
+available one points at its own manifest. Content is namespaced by the
+language being learned — `content/ja/`, `content/en/` — matching `audio/ja/`
+and `audio/en/`. A manifest's `fields` says which
 field holds the text being learned (`target`) and which holds the gloss
 (`meaning`), plus `ruby` and `reading` where they exist; `noteFields` names the
 usage notes and how they're labelled; `copy` carries the course's own wording
-for the placement intro. Screens only ever see the generic fields content.js
+for the placement intro; `groups` names the topic groups and `aids` names the
+reading aids (ふりがな, romaji) and their settings. Screens only ever see the generic fields content.js
 derives from those (`target`, `meaning`, `notes`…), so neither direction is
 special-cased, and each course's files keep field names that read naturally
 to their authors (`english` / `japanese`).
@@ -425,8 +428,10 @@ carried straight over), `wayword-ja-en` for English, and so on. Placement,
 settings, streaks and the deck are all per course; resetting one course
 leaves the others alone. Text size is app-wide.
 
-**The interface speaks the learner's language.** `js/i18n.js` has English
-and Japanese strings; the interface follows the course's *speaker*, so
+**The interface speaks the learner's language.** Interface strings are
+content too: `content/ui/en.json` and `content/ui/ja.json` (plurals as
+`key_one` / `key_other`, chosen by the browser's own plural rules). The
+interface follows the course's *speaker*, so
 Japanese speakers get a Japanese UI throughout. `npm test` fails if a string
 the Japanese interface can reach has no translation, or if code uses a key
 that doesn't exist. The Characters section only exists for courses with
@@ -445,9 +450,18 @@ the subway, asking the way, hotel check-in, a restaurant, a shop checkout) give
 Japanese feedback on every reply, wrong ones included. Its 135 audio clips
 come from the same build-time pass as §3-audio, synthesised in English.
 
-**Adding a language** (Indonesian, say): write
-`content/<speaker>-<target>/manifest.json` and its category and scenario files
-in the same shape; in `courses.json`, set that course's `status` to
-`available` and add its `manifest` path; run `npm run audio -- --course <id>`;
-then `npm test`. A new *speaker* language additionally needs its strings in
-`js/i18n.js` and an entry in `courses.json → speakers`.
+**Adding a language** (Indonesian, say) is content only — no app code:
+
+1. Write `content/id/manifest.json` and its category (and scenario) files in
+   the same shape. Put the field names you like in the files and map them in
+   `fields`; add `groups`, mark a few categories `starter`.
+2. In `courses.json`: set the course's `status` to `available` and add its
+   `manifest` path. If the language needs a particular font stack, give it a
+   `font` (applied to every `:lang(id)` element).
+3. `npm run audio -- --course en-id`, then `npm test`.
+
+A new *speaker* language (people learning *from* it) additionally needs
+`content/ui/<code>.json` and a place in `courses.json → speakers`.
+`tools/language-pack-test.mjs` (part of `npm test`) proves the claim: it adds
+a made-up Esperanto course purely as content and runs placement, the deck,
+review and grading over it.

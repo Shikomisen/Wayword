@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node tools/serve.mjs",
     "dev": "node tools/serve.mjs",
-    "test": "node tools/selftest.mjs && node tools/integration-test.mjs",
+    "test": "node tools/selftest.mjs && node tools/integration-test.mjs && node tools/language-pack-test.mjs",
     "test:content": "node tools/selftest.mjs",
     "test:integration": "node tools/integration-test.mjs",
     "test:render": "node tools/render-test.mjs && node tools/sw-test.mjs",

@@ -72,9 +72,9 @@ a { color: inherit; text-decoration: none; }
 
 /* Fonts follow the lang attribute, which every target, meaning and note
    node carries — so Japanese text gets the CJK stack (and the right glyph
-   forms) whether it's being learned or is the learner's own language. */
-:lang(ja) { font-family: var(--font-jp); }
-:lang(en) { font-family: var(--font); }
+   forms) whether it's being learned or is the learner's own language. The
+   :lang() rules themselves come from content/courses.json (each language's
+   `font`), injected by course.js — a new language needs no CSS edit. */
 
 .target {
   font-size: 2rem;

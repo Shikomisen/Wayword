@@ -2,7 +2,7 @@
  * content.js — content loader (README §3a).
  *
  * The app never hardcodes a category. Everything comes from the current
- * course's manifest (content/manifest.json for English → Japanese), so
+ * course's manifest (content/ja/manifest.json for English → Japanese), so
  * adding a category is: drop in a JSON file, add one manifest line. No app
  * code changes.
  *
@@ -185,6 +185,8 @@ export async function loadContent() {
     features: {
       ruby: Boolean(fields.ruby),
       reading: Boolean(fields.reading),
+      // What the course calls its reading aids (ふりがな, romaji…) — content, not UI strings.
+      aids: manifest.aids || {},
       characters: characterSets.length > 0,
       scenarios: (manifest.scenarios || []).length > 0,
     },
@@ -283,23 +285,4 @@ export async function loadScenario(id) {
 export async function scenariosFor(categoryId) {
   const { manifest } = await loadContent();
   return (manifest.scenarios || []).filter((s) => s.category === categoryId);
-}
-
-/** Every asset the service worker should precache for offline use. */
-export async function assetList() {
-  const { manifest, categories, characterSets } = await loadContent();
-  const files = [
-    'content/manifest.json',
-    ...manifest.categories.map((c) => c.file),
-    ...(manifest.characterSets || []).map((s) => s.file),
-    ...(manifest.scenarios || []).map((s) => s.file),
-  ];
-  const audio = [];
-  for (const cat of categories) {
-    for (const p of cat.phrases) if (p.audio) audio.push(p.audio);
-  }
-  for (const set of characterSets) {
-    for (const c of set.characters) if (c.audio) audio.push(c.audio);
-  }
-  return { files, audio };
 }

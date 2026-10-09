@@ -804,3 +804,39 @@ casual is what you *say* to a partner. So:
   notation spells out.
 - **Placement size (supersedes A5's ~15–20):** 11 categories × 2 = 22 phrase
   cards, plus 6 character cards.
+
+### A55 — Item 2: content namespaced by language; adding a language is content only
+- **Folders:** each course's content now lives in a folder named for the
+  language being learned. Japanese is `content/ja/`, the English course
+  `content/en/`, mirroring the existing `audio/ja/` and `audio/en/`. Every file
+  moved with `git mv`, so history follows it. Card ids are unchanged, so no
+  stored progress is affected.
+- **A second course for the same language:** a Japanese course for
+  Indonesian speakers would get its own folder (say `content/ja-id/`). The
+  folder is just what `courses.json` points at.
+- **What moved out of code into content:**
+  - interface strings → `content/ui/<lang>.json` (plurals as
+    `key_one`/`key_other` via `Intl.PluralRules`; the date locale as
+    `$locale`)
+  - per-language font stacks → `courses.json` `font`, injected as `:lang()`
+    rules (the stylesheet's own `:lang` rules were removed so there is one
+    source)
+  - the furigana/romaji labels → each manifest's `aids`
+- **Still built into the code:** four boot-error strings, which must work
+  when no content can load.
+- **Tools follow the manifests:** `make-kana` writes wherever the manifest
+  declares the kana sets. `crossref-kanji` runs for every course that has a
+  kanji set; re-running it now also links kanji to the casual phrases.
+- **The claim is tested:** `tools/language-pack-test.mjs` (in `npm test`)
+  adds an Esperanto course purely as content — a `courses.json` entry, a
+  manifest and one category, held in memory. It then runs placement, the
+  deck, the review queue, grading and the home-page snapshot over it.
+- **Language selector inside the course:** a Language row in Settings
+  joins the existing course-bar link back to the picker.
+- **"Only Japanese ships now" — interpreted, not obeyed literally.** The
+  English-for-Japanese-speakers course built on 8 October stays available.
+  It was explicitly requested, it's complete and tested, and it may well
+  suit the partner. I read the line as "add no other new language now":
+  Indonesian stays a placeholder, and all of items 3–5 is Japanese only.
+  Hiding it is one line — `"status": "planned"` on `ja-en` in
+  `content/courses.json`.

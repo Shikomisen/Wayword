@@ -67,7 +67,7 @@ const ahead = Number(git('rev-list', '--count', 'origin/main..HEAD'));
 
 /* ---------- 2. tests ---------- */
 
-const suites = ['tools/selftest.mjs', 'tools/integration-test.mjs', 'tools/render-test.mjs', 'tools/sw-test.mjs'];
+const suites = ['tools/selftest.mjs', 'tools/integration-test.mjs', 'tools/language-pack-test.mjs', 'tools/render-test.mjs', 'tools/sw-test.mjs'];
 for (const suite of suites) {
   process.stdout.write(`— ${suite} … `);
   try {

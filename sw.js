@@ -93,6 +93,10 @@ async function contentAssets() {
   const courses = await fetchJSON('content/courses.json');
   const manifests = (courses?.courses || []).map((c) => c.manifest).filter(Boolean);
 
+  // Interface strings, one file per language people learn *from* (English
+  // is always there: it is every other dictionary's fallback).
+  for (const lang of new Set(['en', ...(courses?.speakers || [])])) assets.push(`./content/ui/${lang}.json`);
+
   for (const path of manifests) {
     try {
       assets.push(...(await manifestAssets(path)));

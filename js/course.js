@@ -24,7 +24,31 @@ export async function loadCourses() {
   const res = await fetch('content/courses.json', { cache: 'no-cache' });
   if (!res.ok) throw new Error(`Failed to load content/courses.json (${res.status})`);
   registry = await res.json();
+  applyLanguageFonts(registry.languages);
   return registry;
+}
+
+/**
+ * A language can name the font stack its text needs (`font` in
+ * courses.json — Japanese wants a CJK face with the right glyph forms).
+ * Applied as :lang() rules, so any text tagged with that language picks it
+ * up wherever it appears — no stylesheet edit per language.
+ */
+function applyLanguageFonts(languages = {}) {
+  if (typeof document === 'undefined' || !document.head) return;
+  const rules = Object.entries(languages)
+    .filter(([, l]) => l.font)
+    .map(([code, l]) => `:lang(${code}) { font-family: ${l.font}; }`)
+    .join('\n');
+  if (!rules) return;
+  let style = document.getElementById('language-fonts');
+  if (!style) {
+    style = document.createElement('style');
+    style.id = 'language-fonts';
+    // Before the stylesheet, so a component rule like .kana-char still wins.
+    document.head.prepend(style);
+  }
+  style.textContent = rules;
 }
 
 export async function getCourse(id) {
@@ -45,7 +69,7 @@ export async function setCourse(id) {
   if (!course) throw new Error(`Unknown course: ${id}`);
   currentId = id;
   store.useNamespace(id);
-  setLang(course.speaker);
+  await setLang(course.speaker);
   return course;
 }
 
@@ -90,9 +114,10 @@ export async function savePrefs(patch) {
 }
 
 /** First-visit guess at the learner's language: the device language, if we teach from it. */
-export function guessSpeaker(speakers) {
+export function guessSpeaker(speakers = null) {
   const nav = (typeof navigator !== 'undefined' && navigator.language) || 'en';
   const code = nav.slice(0, 2).toLowerCase();
+  if (!speakers) return code; // setLang falls back to English if there's no dictionary for it
   return speakers.includes(code) ? code : 'en';
 }
 

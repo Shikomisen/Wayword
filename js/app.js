@@ -17,7 +17,7 @@ import * as srs from './srs.js';
 import * as audio from './audio.js';
 import * as store from './store.js';
 import * as course from './course.js';
-import { t, setLang, locale, formatInterval, UI_LANGS } from './i18n.js';
+import { t, setLang, locale, formatInterval } from './i18n.js';
 import {
   el, clear, phraseBlock, targetNode, meaningNode, notesBlock, tagRow, audioButton, toast, registerBadge, politeBlock,
 } from './render.js';
@@ -221,8 +221,8 @@ async function playPhrase(phrase) {
  */
 function toggleStrip(onChange, features) {
   const wanted = [
-    features.ruby ? ['furigana', 'ふりがな'] : null,
-    features.reading ? ['romaji', 'romaji'] : null,
+    features.ruby ? ['furigana', features.aids.ruby?.chip || 'ruby'] : null,
+    features.reading ? ['romaji', features.aids.reading?.chip || 'reading'] : null,
   ].filter(Boolean);
   if (!wanted.length) return null;
 
@@ -690,12 +690,21 @@ async function settings(root) {
         onchange: async (e) => { await deck.saveSettings({ [key]: e.target.checked }); },
       }));
 
+  const pair = t('coursebar.pair', {
+    speaker: course.languageName(current.speaker, current.speaker),
+    target: course.languageName(current.target, current.speaker),
+  });
+
   root.append(
     el('div', { class: 'screen' },
       header(t('settings.title')),
       el('div', { class: 'settings-list' },
-        features.ruby ? toggle('furigana', t('settings.furigana'), t('settings.furiganaHelp')) : null,
-        features.reading ? toggle('romaji', t('settings.romaji'), t('settings.romajiHelp')) : null,
+        // The language picker, reachable from inside a course too.
+        el('div', { class: 'setting' },
+          el('span', {}, el('strong', {}, t('settings.language')), el('span', { class: 'muted small' }, pair)),
+          el('a', { class: 'btn btn-small', href: '#/' }, t('settings.changeLanguage'))),
+        features.ruby ? toggle('furigana', features.aids.ruby?.label, features.aids.ruby?.help) : null,
+        features.reading ? toggle('romaji', features.aids.reading?.label, features.aids.reading?.help) : null,
         toggle('autoPlayAudio', t('settings.autoplay'), t('settings.autoplayHelp')),
 
         el('label', { class: 'setting' },
@@ -807,7 +816,7 @@ async function boot() {
   // Until a course is entered, speak the learner's language as best we know
   // it — this is also what the boot-error screen below will be shown in.
   const prefs = await course.getPrefs();
-  setLang(prefs.speaker || course.guessSpeaker(UI_LANGS));
+  await setLang(prefs.speaker || course.guessSpeaker());
   await applyTextSettings();
 
   window.addEventListener('hashchange', router);
