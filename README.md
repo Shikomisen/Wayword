@@ -799,12 +799,14 @@ the work is mostly content. The differences:
 
 **Built in the first part:**
 
-1. **Every phrase from the three situations**, as cards with audio. About half
-   were already in the restaurant and shopping categories; eight were added
-   (*I'd like a flat white, please*, *Is this spicy?*, *Can I have the fish
-   and chips, please?*, *Do you have any vegetarian options?*, *Do you have
-   this in a bigger size?*, *Where's the fitting room?*, *It's a bit too
-   small*, *Can I have this one, please?*).
+1. **Every phrase from the three situations**, as cards with audio, or as
+   examples in the pattern lessons (*Can I get the menu?* is the note on the
+   *Can I see the menu, please?* card). About half were already in the
+   restaurant and shopping categories; eight were added (*I'd like a flat
+   white, please*, *Is this spicy?*, *Can I have the fish and chips,
+   please?*, *Do you have any vegetarian options?*, *Do you have this in a
+   bigger size?*, *Where's the fitting room?*, *It's a bit too small*, *Can I
+   have this one, please?*).
 2. **Three word decks** (73 words): café and food (*flat white, takeaway, eat
    in, mild, gluten-free, bill*), clothes and sizes (*fitting room, try on,
    tight, loose, jumper, jandals*), shops and paying (*on special, EFTPOS,

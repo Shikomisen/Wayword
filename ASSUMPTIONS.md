@@ -1509,3 +1509,21 @@ casual is what you *say* to a partner. So:
   a lesson, the café words and the café scenario. They led to two fixes:
   - the duplicate 買い物・支払い name (A80);
   - English tags ("cafe") showing on Japanese screens.
+
+### A84 — Live verification of v8
+- **Deployed** `1045ceb..1cc7bcb` with `npm run deploy`. Every suite passed
+  again, it pushed as Shikomisen, and https://shikomisen.github.io/Wayword/
+  served v8 31 seconds later.
+- **`npm run test:browser -- --live https://shikomisen.github.io/Wayword/`,
+  Firefox: 33 of 33.**
+  - `wayword-v8` holds all 1,271 files (1,159 clips, 14.7 MB).
+  - Every tab of both courses renders online, including the English course's
+    フレーズの型 tab.
+  - A backup goes out and back through IndexedDB on the live origin (577
+    entries).
+  - With the network cut, the app starts cold and every tab renders. Every
+    file loads from the cache, and no errors are logged.
+- **One README claim corrected.** *Can I get the menu?* has no card of its
+  own. It appears in the note on the *Can I see the menu, please?* card, and
+  the *Could I get…?* lesson teaches *Can I get…?* as natural too. §18 now
+  says so.
