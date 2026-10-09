@@ -6,21 +6,28 @@
  *   fill     pick what fills the gap — the connector, or the form before it
  *   order    rebuild a sentence from its shuffled pieces, given its meaning
  *   combine  join two sentences into one, with trap pieces in the pile
+ *   say      see the meaning, say the sentence out loud, then check it —
+ *            the learner says whether they had it
  *
- * All three come from an example's own data (content.js normalises it):
+ * All four come from an example's own data (content.js normalises it):
  * `chunks` are the pieces, `gap` the fill-in, `combine` the two sentences
  * and their traps, `alsoOrders` any other order that is just as right.
+ * Which kinds a course uses is its manifest's `drills`; without one, the
+ * first three — saying it aloud is for a course whose learner asked to speak.
  */
 
-export const DRILL = { FILL: 'fill', ORDER: 'order', COMBINE: 'combine' };
+export const DRILL = { FILL: 'fill', ORDER: 'order', COMBINE: 'combine', SAY: 'say' };
+export const DEFAULT_DRILLS = [DRILL.FILL, DRILL.ORDER, DRILL.COMBINE];
 
 /** Every drill a lesson's examples support. Ordering needs three pieces to be worth doing. */
 export function drillsFor(lesson) {
+  const kinds = lesson.drills || DEFAULT_DRILLS;
   const out = [];
   for (const ex of lesson.items || []) {
-    if (ex.gap) out.push({ type: DRILL.FILL, ex, lesson });
-    if ((ex.chunks || []).length >= 3) out.push({ type: DRILL.ORDER, ex, lesson });
-    if (ex.combine && (ex.chunks || []).length) out.push({ type: DRILL.COMBINE, ex, lesson });
+    if (kinds.includes(DRILL.FILL) && ex.gap) out.push({ type: DRILL.FILL, ex, lesson });
+    if (kinds.includes(DRILL.ORDER) && (ex.chunks || []).length >= 3) out.push({ type: DRILL.ORDER, ex, lesson });
+    if (kinds.includes(DRILL.COMBINE) && ex.combine && (ex.chunks || []).length) out.push({ type: DRILL.COMBINE, ex, lesson });
+    if (kinds.includes(DRILL.SAY) && ex.meaning) out.push({ type: DRILL.SAY, ex, lesson });
   }
   return out;
 }

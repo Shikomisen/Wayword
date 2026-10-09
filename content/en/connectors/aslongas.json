@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "con-aslongas",
+  "connector": "as long as",
+  "gloss": "〜さえすれば、〜なら",
+  "title": "as long as — 〜さえすれば、〜なら",
+  "pattern": "文 as long as 条件",
+  "explanation": "as long as は「〜さえすれば」「〜なら（大丈夫）」。条件を満たせばOK、という時に使います。if より「その条件だけで十分」という気持ちが強くなります。",
+  "natural": "許可や約束の条件を言う時に：Any size is fine, as long as it fits.（合えば、どのサイズでもいいです）",
+  "stiff": "as soon as（〜したらすぐに）、as far as（〜の限りでは）と形が似ているので注意しましょう。",
+  "examples": [
+    {
+      "id": "cx-aslongas-1",
+      "english": "Any size is fine, as long as it fits.",
+      "japanese": "合えば、どのサイズでもいいです。",
+      "chunks": [
+        {
+          "t": "Any size is fine, ",
+          "w": "w-size"
+        },
+        {
+          "t": "as long as "
+        },
+        {
+          "t": "it fits.",
+          "w": "w-fit"
+        }
+      ],
+      "gap": {
+        "before": "Any size is fine, ",
+        "answer": "as long as",
+        "after": " it fits.",
+        "options": [
+          "as long as",
+          "as soon as",
+          "as far as"
+        ],
+        "why": "「〜さえすれば」は as long as。"
+      },
+      "audio": "audio/en/connectors/cx-aslongas-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "as long as"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-aslongas-2",
+      "english": "I'll buy it, as long as I can return it.",
+      "japanese": "返品できるなら、買います。",
+      "chunks": [
+        {
+          "t": "I'll buy it, ",
+          "w": "w-buy"
+        },
+        {
+          "t": "as long as "
+        },
+        {
+          "t": "I can return it.",
+          "w": "w-return"
+        }
+      ],
+      "gap": {
+        "before": "I'll buy it, as long as I can ",
+        "answer": "return",
+        "after": " it.",
+        "options": [
+          "return",
+          "return back",
+          "returning"
+        ],
+        "why": "can の後ろは動詞の原形。return back とは言いません。"
+      },
+      "audio": "audio/en/connectors/cx-aslongas-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "as long as"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-aslongas-3",
+      "english": "It's fine, as long as it's not too spicy.",
+      "japanese": "あまり辛くなければ大丈夫です。",
+      "chunks": [
+        {
+          "t": "It's fine, "
+        },
+        {
+          "t": "as long as "
+        },
+        {
+          "t": "it's not too spicy.",
+          "w": "w-spicy"
+        }
+      ],
+      "gap": {
+        "before": "It's fine, ",
+        "answer": "as long as",
+        "after": " it's not too spicy.",
+        "options": [
+          "as long as",
+          "even though",
+          "so"
+        ],
+        "why": "「辛くなければ（大丈夫）」という条件なので as long as。"
+      },
+      "audio": "audio/en/connectors/cx-aslongas-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "as long as"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-aslongas-4",
+      "english": "You can eat in as long as you order something.",
+      "japanese": "何か注文すれば、店内で食べられます。",
+      "chunks": [
+        {
+          "t": "You can eat in ",
+          "w": "w-eat-in"
+        },
+        {
+          "t": "as long as "
+        },
+        {
+          "t": "you order something.",
+          "w": "w-order"
+        }
+      ],
+      "gap": {
+        "before": "You can eat in ",
+        "answer": "as long as",
+        "after": " you order something.",
+        "options": [
+          "as long as",
+          "as soon as",
+          "unless"
+        ],
+        "why": "「注文すれば（OK）」という条件。unless だと「注文しなければ」と逆になります。"
+      },
+      "audio": "audio/en/connectors/cx-aslongas-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "as long as"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

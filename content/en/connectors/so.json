@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "con-so",
+  "connector": "so",
+  "gloss": "だから、それで",
+  "title": "so — だから、それで",
+  "pattern": "原因 , so 結果",
+  "explanation": "so は「だから」「それで」。前に原因、後ろに結果がきます。日本語の「〜から、〜」と同じ順番なので、いちばん使いやすいつなぎ言葉です。so の前にはふつうコンマ（,）を打ちます。",
+  "natural": "会話のあらゆる場面で使えます。So, what do you think?（で、どう思う？）のように、話を進める時の「で」「じゃあ」にもなります。",
+  "stiff": "therefore は書き言葉的で、会話ではかたく聞こえます。話す時は so で十分です。",
+  "examples": [
+    {
+      "id": "cx-so-1",
+      "english": "It was cold, so I bought a jumper.",
+      "japanese": "寒かったので、セーターを買いました。",
+      "chunks": [
+        {
+          "t": "It was cold, "
+        },
+        {
+          "t": "so "
+        },
+        {
+          "t": "I bought a jumper.",
+          "w": "w-jumper"
+        }
+      ],
+      "gap": {
+        "before": "It was cold, ",
+        "answer": "so",
+        "after": " I bought a jumper.",
+        "options": [
+          "so",
+          "because",
+          "but"
+        ],
+        "why": "寒かった（原因）→ セーターを買った（結果）。結果の前に置くのは so。"
+      },
+      "combine": {
+        "a": "It was cold.",
+        "b": "I bought a jumper.",
+        "distractors": [
+          "because "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-so-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "so"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-so-2",
+      "english": "The café was full, so we got takeaway.",
+      "japanese": "カフェが満席だったので、持ち帰りにしました。",
+      "chunks": [
+        {
+          "t": "The café was full, "
+        },
+        {
+          "t": "so "
+        },
+        {
+          "t": "we got takeaway.",
+          "w": "w-takeaway"
+        }
+      ],
+      "gap": {
+        "before": "The café was full, ",
+        "answer": "so",
+        "after": " we got takeaway.",
+        "options": [
+          "so",
+          "but",
+          "or"
+        ],
+        "why": "満席（原因）→ 持ち帰り（結果）なので so。"
+      },
+      "combine": {
+        "a": "The café was full.",
+        "b": "We got takeaway.",
+        "distractors": [
+          "but "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-so-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "so"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-so-3",
+      "english": "It's on special, so I got two.",
+      "japanese": "特価だったので、2つ買いました。",
+      "chunks": [
+        {
+          "t": "It's on special, ",
+          "w": "w-on-special"
+        },
+        {
+          "t": "so "
+        },
+        {
+          "t": "I got two."
+        }
+      ],
+      "gap": {
+        "before": "It's on special, ",
+        "answer": "so",
+        "after": " I got two.",
+        "options": [
+          "so",
+          "because",
+          "if"
+        ],
+        "why": "特価（原因）→ 2つ買った（結果）。"
+      },
+      "combine": {
+        "a": "It's on special.",
+        "b": "I got two.",
+        "distractors": [
+          "because "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-so-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "so"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-so-4",
+      "english": "I'm a bit tired, so I'll catch the bus.",
+      "japanese": "ちょっと疲れたので、バスに乗ります。",
+      "chunks": [
+        {
+          "t": "I'm a bit tired, "
+        },
+        {
+          "t": "so "
+        },
+        {
+          "t": "I'll catch the bus.",
+          "w": "w-catch"
+        }
+      ],
+      "gap": {
+        "before": "I'm ",
+        "answer": "a bit",
+        "after": " tired, so I'll catch the bus.",
+        "options": [
+          "a bit",
+          "a few",
+          "many"
+        ],
+        "why": "「ちょっと（疲れた）」は a bit。a few は数えられる物に使います。"
+      },
+      "combine": {
+        "a": "I'm a bit tired.",
+        "b": "I'll catch the bus.",
+        "distractors": [
+          "but "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-so-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "so"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "con-actually",
+  "connector": "actually",
+  "gloss": "実は、本当は",
+  "title": "actually — 実は、本当は",
+  "pattern": "Actually, ... ／ ... actually ...",
+  "explanation": "actually は「実は」「本当は」。相手が思っていることとちがうことを言う時や、言い直す時に使います。日本語の「実際に」より使う場面がずっと多く、会話のクッションとしても便利です。",
+  "natural": "注文を変える時（Actually, could I change my order?）や、ていねいに訂正する時に。",
+  "stiff": "actually を「本当に（really）」の意味で使うと、ちぐはぐに聞こえます。It's actually good. は「（思っていたのとちがって）実はおいしい」という意味です。",
+  "examples": [
+    {
+      "id": "cx-actually-1",
+      "english": "Actually, could I change my order?",
+      "japanese": "すみません、やっぱり注文を変えてもいいですか？",
+      "chunks": [
+        {
+          "t": "Actually, "
+        },
+        {
+          "t": "could I change ",
+          "w": "w-change-v"
+        },
+        {
+          "t": "my order?",
+          "w": "w-order"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Actually",
+        "after": ", could I change my order?",
+        "options": [
+          "Actually",
+          "Really",
+          "Finally"
+        ],
+        "why": "前に言ったことを変える時は Actually。"
+      },
+      "audio": "audio/en/connectors/cx-actually-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "actually"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-actually-2",
+      "english": "I thought it was small, but actually it fits.",
+      "japanese": "小さいと思ったけど、実はぴったりでした。",
+      "chunks": [
+        {
+          "t": "I thought it was small, "
+        },
+        {
+          "t": "but actually "
+        },
+        {
+          "t": "it fits.",
+          "w": "w-fit"
+        }
+      ],
+      "gap": {
+        "before": "I thought it was small, but ",
+        "answer": "actually",
+        "after": " it fits.",
+        "options": [
+          "actually",
+          "really",
+          "surely"
+        ],
+        "why": "思っていたのとちがった、という時は actually。"
+      },
+      "audio": "audio/en/connectors/cx-actually-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "actually"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-actually-3",
+      "english": "Actually, I'd like a long black instead.",
+      "japanese": "やっぱり、ロングブラックにします。",
+      "chunks": [
+        {
+          "t": "Actually, "
+        },
+        {
+          "t": "I'd like "
+        },
+        {
+          "t": "a long black instead.",
+          "w": "w-long-black"
+        }
+      ],
+      "gap": {
+        "before": "Actually, I'd like a long black ",
+        "answer": "instead",
+        "after": ".",
+        "options": [
+          "instead",
+          "also",
+          "again"
+        ],
+        "why": "「（さっきのではなく）代わりに」は instead。"
+      },
+      "audio": "audio/en/connectors/cx-actually-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "actually"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-actually-4",
+      "english": "It looks spicy, but it's actually quite mild.",
+      "japanese": "辛そうだけど、実はけっこうマイルドです。",
+      "chunks": [
+        {
+          "t": "It looks spicy, ",
+          "w": "w-spicy"
+        },
+        {
+          "t": "but "
+        },
+        {
+          "t": "it's actually quite mild.",
+          "w": "w-mild"
+        }
+      ],
+      "gap": {
+        "before": "It looks spicy, but it's ",
+        "answer": "actually",
+        "after": " quite mild.",
+        "options": [
+          "actually",
+          "really",
+          "probably"
+        ],
+        "why": "見た目とちがう、という時は actually。"
+      },
+      "audio": "audio/en/connectors/cx-actually-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "actually"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

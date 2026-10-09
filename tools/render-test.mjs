@@ -847,7 +847,7 @@ await goTo('#/ja-en/');
 check('today screen is in Japanese', $('h1')?.textContent === '今日', $('h1')?.textContent);
 const tabLabels = [...document.querySelectorAll('.tabbar a')].map((a) => a.textContent);
 check('tab bar is in Japanese, with the course\'s own name for its lessons and no Characters tab',
-  tabLabels.join('|') === '📅今日|📚学ぶ|🧩フレーズの型|🗣️会話練習|⚙️設定', tabLabels.join(' | '));
+  tabLabels.join('|') === '📅今日|📚学ぶ|🧩表現|🗣️会話練習|⚙️設定', tabLabels.join(' | '));
 check('tabs link inside the English course',
   [...document.querySelectorAll('.tabbar a')].every((a) => a.getAttribute('href').startsWith('#/ja-en/')));
 check('no Reading row on the English today screen', !text().includes('Reading'));
@@ -898,8 +898,8 @@ check('an English word deck lists its words, English to learn with Japanese mean
 check('…with Japanese part-of-speech labels', text().includes('名詞') && text().includes('動詞'));
 
 await goTo('#/ja-en/connectors');
-check('the phrase patterns are listed under the course\'s own name',
-  $('h1')?.textContent === 'フレーズの型' && $$('.lesson-row').length === EN.lessons.length &&
+check('the lessons are listed under the course\'s own name',
+  $('h1')?.textContent === '表現・つなぎ言葉' && $$('.lesson-row').length === EN.lessons.length &&
   $$('.connector-mark').every((m) => m.getAttribute('lang') === 'en'),
   `${$('h1')?.textContent}: ${$$('.lesson-row').length} lessons`);
 check('…grouped as the manifest says', $$('.section-title').map((h) => h.textContent).join('|') ===
@@ -912,22 +912,69 @@ check('a pattern lesson shows the English pattern, a Japanese explanation and it
   $('.connector-title')?.textContent === likeFile.connector && $('.connector-title')?.getAttribute('lang') === 'en' &&
   Boolean($('.lesson-explanation')) && $$('.item-sentence').length === likeFile.examples.length,
   $('.connector-title')?.textContent);
-check('…with a way back to the list by its name', text().includes('← フレーズの型'));
+check('…with a way back to the list by its name', text().includes('← 表現・つなぎ言葉'));
 check('…and no furigana in an English lesson', $$('ruby').length === 0);
 
 await goTo('#/ja-en/connectors/pat-like/practice');
 check('pattern practice opens on a drill in Japanese', Boolean($('.drill-card')) && document.documentElement.lang === 'ja',
   $('.drill-card')?.dataset.drill);
 const likeEx = Object.fromEntries(likeFile.examples.map((x) => [x.id, x]));
-const firstLike = likeEx[$('.drill-card')?.dataset.example];
-if ($('.drill-card')?.dataset.drill === 'fill') {
-  $$('.option').find((b) => b.dataset.value === firstLike.gap.answer)?.click();
-} else {
-  for (let i = 0; i < firstLike.chunks.length; i++) { $(`.tile-pool .tile[data-chunk="${i}"]`)?.click(); await tick(); }
-  $$('.drill-actions button').find((b) => b.textContent === '答え合わせ')?.click();
+
+/** Answer the drill on screen rightly — or, for a say-it drill, say "not yet" when asked to. */
+async function answerDrill(examples, { notYet = false } = {}) {
+  const kind = $('.drill-card')?.dataset.drill;
+  const ex = examples[$('.drill-card')?.dataset.example];
+  if (kind === 'fill') {
+    $$('.option').find((b) => b.dataset.value === ex.gap.answer)?.click();
+  } else if (kind === 'say') {
+    $('.say-reveal')?.click();
+    await tick();
+    $(`.say-grades [data-said="${notYet ? 'no' : 'yes'}"]`)?.click();
+  } else {
+    for (let i = 0; i < ex.chunks.length; i++) { $(`.tile-pool .tile[data-chunk="${i}"]`)?.click(); await tick(); }
+    $$('.drill-actions button').find((b) => b.textContent === '答え合わせ')?.click();
+  }
+  await tick(); await tick();
 }
-await tick(); await tick();
+await answerDrill(likeEx);
 check('…and the right answer is marked right', Boolean($('.verdict-right')), $('.verdict')?.textContent);
+
+// Saying it out loud: the Japanese first, the English when asked for — and "not yet" sends it to the reviews.
+await goTo('#/ja-en/connectors/con-so/practice');
+const soEx = Object.fromEntries(readJSON(EN.lessons.find((l) => l.id === 'con-so').file).examples.map((x) => [x.id, x]));
+let notYetOn = null;
+const soKinds = new Set();
+for (let guard = 0; guard < 40 && $('.drill-card'); guard++) {
+  const kind = $('.drill-card').dataset.drill;
+  soKinds.add(kind);
+  if (kind === 'say' && !notYetOn) {
+    notYetOn = $('.drill-card').dataset.example;
+    check('a say-it drill shows the Japanese, and keeps the English back until asked',
+      $('.drill-card .meaning')?.getAttribute('lang') === 'ja' && $('.say-answer')?.hidden === true &&
+        $('.drill-kind')?.textContent === '英語で言ってみましょう' && text().includes('まず声に出して'),
+      $('.drill-kind')?.textContent);
+    const playedBeforeSay = played.length;
+    $('.say-reveal')?.click();
+    await tick();
+    check('…then shows it, plays it, and asks whether you said it',
+      $('.say-answer')?.hidden === false && $('.say-answer .target')?.getAttribute('lang') === 'en' &&
+        Boolean($('.say-answer .audio-slow')) && played.length > playedBeforeSay &&
+        $$('.say-grades button').map((b) => b.textContent).join('|') === 'まだ言えない|言えた',
+      $('.say-answer .target')?.textContent);
+    $('.say-grades [data-said="no"]')?.click();
+    await tick(); await tick();
+    check('"Not yet" counts as a miss, and says the sentence is in the reviews now',
+      Boolean($('.verdict-wrong')) && text().includes('復習に入れました'), $('.verdict')?.textContent);
+  } else {
+    await answerDrill(soEx);
+  }
+  $('.drill-next')?.click();
+  for (let i = 0; i < 6; i++) await tick();
+}
+check('a linking-word session runs all four kinds of drill to the end',
+  ['fill', 'order', 'combine', 'say'].every((k) => soKinds.has(k)) && Boolean($('.practice-done')), [...soKinds].join(', '));
+check('…and the sentence not yet said is in the reviews, as a failed "say it" card',
+  (await deck.getCard(`${notYetOn}~p`))?.state === 'learning', notYetOn);
 
 await goTo('#/ja-en/scenarios');
 check('scenario list in Japanese with all 7 English scenarios',

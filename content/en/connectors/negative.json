@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "con-negative",
+  "connector": "Yes / No",
+  "gloss": "否定の質問への答え方",
+  "title": "Yes / No — 否定の質問への答え方",
+  "pattern": "Don't you ...? — No, I don't.（〜しません）／ Yes, I do.（〜します）",
+  "explanation": "英語では、質問の形に関係なく、答えの中身が肯定なら Yes、否定なら No を使います。Don't you want a bag?（袋はいらないんですか？）に「はい、いりません」と答える時は No, thanks. です。日本語の「はい」「いいえ」と逆になるので要注意です。",
+  "natural": "袋やレシート、確認の質問によく出てきます：You don't have a smaller size? — No, we don't.（小さいサイズはないんですか？ — はい、ありません）",
+  "stiff": "日本語につられて Yes, I don't. と言うと、相手は混乱してしまいます。答えの中身が「〜しない」なら No です。",
+  "examples": [
+    {
+      "id": "cx-negative-1",
+      "english": "Don't you want a bag? — No, thanks.",
+      "japanese": "袋はいらないんですか？ — はい、いりません。",
+      "chunks": [
+        {
+          "t": "Don't you want a bag? ",
+          "w": "w-bag"
+        },
+        {
+          "t": "— No, "
+        },
+        {
+          "t": "thanks."
+        }
+      ],
+      "gap": {
+        "before": "Don't you want a bag? — ",
+        "answer": "No",
+        "after": ", thanks.",
+        "options": [
+          "No",
+          "Yes"
+        ],
+        "why": "答えの中身が「いらない（否定）」なので No。"
+      },
+      "audio": "audio/en/connectors/cx-negative-1.mp3",
+      "tags": [
+        "語順",
+        "Yes / No"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-negative-2",
+      "english": "Isn't this on special? — Yes, it is.",
+      "japanese": "これは特価じゃないんですか？ — いいえ、特価ですよ。",
+      "chunks": [
+        {
+          "t": "Isn't this on special? ",
+          "w": "w-on-special"
+        },
+        {
+          "t": "— Yes, "
+        },
+        {
+          "t": "it is."
+        }
+      ],
+      "gap": {
+        "before": "Isn't this on special? — ",
+        "answer": "Yes",
+        "after": ", it is.",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "why": "答えの中身が「特価である（肯定）」なので Yes。"
+      },
+      "audio": "audio/en/connectors/cx-negative-2.mp3",
+      "tags": [
+        "語順",
+        "Yes / No"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-negative-3",
+      "english": "You don't have a smaller size? — No, we don't.",
+      "japanese": "小さいサイズはないんですか？ — はい、ありません。",
+      "chunks": [
+        {
+          "t": "You don't have "
+        },
+        {
+          "t": "a smaller size? ",
+          "w": "w-smaller"
+        },
+        {
+          "t": "— No, we don't."
+        }
+      ],
+      "gap": {
+        "before": "You don't have a smaller size? — ",
+        "answer": "No, we don't",
+        "after": ".",
+        "options": [
+          "No, we don't",
+          "Yes, we don't",
+          "Yes, we do"
+        ],
+        "why": "「ない」と答えるなら No, we don't."
+      },
+      "audio": "audio/en/connectors/cx-negative-3.mp3",
+      "tags": [
+        "語順",
+        "Yes / No"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-negative-4",
+      "english": "Aren't you open on Mondays? — No, we're closed.",
+      "japanese": "月曜日は開いていないんですか？ — はい、お休みです。",
+      "chunks": [
+        {
+          "t": "Aren't you open ",
+          "w": "w-open"
+        },
+        {
+          "t": "on Mondays? "
+        },
+        {
+          "t": "— No, we're closed.",
+          "w": "w-close"
+        }
+      ],
+      "gap": {
+        "before": "Aren't you open on Mondays? — ",
+        "answer": "No",
+        "after": ", we're closed.",
+        "options": [
+          "No",
+          "Yes"
+        ],
+        "why": "答えの中身が「開いていない（否定）」なので No。"
+      },
+      "audio": "audio/en/connectors/cx-negative-4.mp3",
+      "tags": [
+        "語順",
+        "Yes / No"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

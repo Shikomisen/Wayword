@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "con-imean",
+  "connector": "I mean",
+  "gloss": "つまり、いや、その",
+  "title": "I mean — つまり、いや、その",
+  "pattern": "I mean, ...",
+  "explanation": "I mean は「つまり」「いや、その」。言ったことを説明し直したり、言いまちがいを訂正したりする時に使います。言葉に詰まった時のつなぎにもなるので、会話の流れを止めずにすみます。",
+  "natural": "言い直し（The blue one — I mean, the navy one.）や、説明の付け足し（It's big. I mean, too big for me.）に。",
+  "stiff": "I mean を何度も使うと、自信がなさそうに聞こえることがあります。ここぞという時に使いましょう。",
+  "examples": [
+    {
+      "id": "cx-imean-1",
+      "english": "Can I have the blue one — I mean, the navy one?",
+      "japanese": "青いのを — いや、紺色のをもらえますか？",
+      "chunks": [
+        {
+          "t": "Can I have the blue one — "
+        },
+        {
+          "t": "I mean, "
+        },
+        {
+          "t": "the navy one?",
+          "w": "w-navy"
+        }
+      ],
+      "gap": {
+        "before": "Can I have the blue one — I ",
+        "answer": "mean",
+        "after": ", the navy one?",
+        "options": [
+          "mean",
+          "think",
+          "say"
+        ],
+        "why": "言い直しは I mean。"
+      },
+      "audio": "audio/en/connectors/cx-imean-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "I mean"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-imean-2",
+      "english": "It's big. I mean, too big for me.",
+      "japanese": "大きいです。つまり、私には大きすぎます。",
+      "chunks": [
+        {
+          "t": "It's big. "
+        },
+        {
+          "t": "I mean, "
+        },
+        {
+          "t": "too big for me.",
+          "w": "w-too"
+        }
+      ],
+      "gap": {
+        "before": "It's big. I mean, ",
+        "answer": "too",
+        "after": " big for me.",
+        "options": [
+          "too",
+          "very",
+          "so"
+        ],
+        "why": "「〜すぎる」は too。"
+      },
+      "audio": "audio/en/connectors/cx-imean-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "I mean"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-imean-3",
+      "english": "I mean, it's only five dollars.",
+      "japanese": "だって、たった5ドルですよ。",
+      "chunks": [
+        {
+          "t": "I mean, "
+        },
+        {
+          "t": "it's only "
+        },
+        {
+          "t": "five dollars.",
+          "w": "w-dollar"
+        }
+      ],
+      "gap": {
+        "before": "I mean, it's ",
+        "answer": "only",
+        "after": " five dollars.",
+        "options": [
+          "only",
+          "just only",
+          "alone"
+        ],
+        "why": "「たった〜」は only。"
+      },
+      "audio": "audio/en/connectors/cx-imean-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "I mean"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-imean-4",
+      "english": "I like it. I mean, it's not bad.",
+      "japanese": "気に入りました。まあ、悪くないです。",
+      "chunks": [
+        {
+          "t": "I like it. ",
+          "w": "w-like"
+        },
+        {
+          "t": "I mean, "
+        },
+        {
+          "t": "it's not bad."
+        }
+      ],
+      "gap": {
+        "before": "I like it. I mean, it's ",
+        "answer": "not bad",
+        "after": ".",
+        "options": [
+          "not bad",
+          "no bad",
+          "not badly"
+        ],
+        "why": "「悪くない」は not bad。"
+      },
+      "audio": "audio/en/connectors/cx-imean-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "I mean"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

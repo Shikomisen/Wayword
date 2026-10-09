@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "id": "con-but",
+  "connector": "but / though",
+  "gloss": "でも、〜けど",
+  "title": "but / though — でも、〜けど",
+  "pattern": "A, but B ／ 文 , though.",
+  "explanation": "but は「でも」「〜けど」。前と後ろで反対のことや意外なことを言う時に使います。文の最後に though を付けると「〜だけどね」と、少しやわらかく付け足す言い方になります（It's nice, though.）。",
+  "natural": "ほめてから希望を伝える時に便利です：I like it, but do you have it in navy?（いいですね、でも紺色はありますか？）",
+  "stiff": "however は書き言葉的で、会話ではかたく聞こえます。話す時は but を使いましょう。",
+  "examples": [
+    {
+      "id": "cx-but-1",
+      "english": "It's nice, but it's a bit expensive.",
+      "japanese": "いいけど、ちょっと高いですね。",
+      "chunks": [
+        {
+          "t": "It's nice, "
+        },
+        {
+          "t": "but "
+        },
+        {
+          "t": "it's a bit expensive.",
+          "w": "w-expensive"
+        }
+      ],
+      "gap": {
+        "before": "It's nice, ",
+        "answer": "but",
+        "after": " it's a bit expensive.",
+        "options": [
+          "but",
+          "so",
+          "because"
+        ],
+        "why": "いい ↔ 高い、反対のことなので but。"
+      },
+      "combine": {
+        "a": "It's nice.",
+        "b": "It's a bit expensive.",
+        "distractors": [
+          "so "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-but-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "but / though"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-but-2",
+      "english": "I like it, but do you have it in navy?",
+      "japanese": "気に入りましたが、紺色はありますか？",
+      "chunks": [
+        {
+          "t": "I like it, ",
+          "w": "w-like"
+        },
+        {
+          "t": "but "
+        },
+        {
+          "t": "do you have it in navy?",
+          "w": "w-navy"
+        }
+      ],
+      "gap": {
+        "before": "I like it, but do you have it ",
+        "answer": "in",
+        "after": " navy?",
+        "options": [
+          "in",
+          "on",
+          "with"
+        ],
+        "why": "色やサイズは in で表します（in navy, in a medium）。"
+      },
+      "combine": {
+        "a": "I like it.",
+        "b": "Do you have it in navy?",
+        "distractors": [
+          "so "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-but-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "but / though"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-but-3",
+      "english": "The café was busy, but the coffee was great.",
+      "japanese": "カフェは混んでいたけど、コーヒーは最高でした。",
+      "chunks": [
+        {
+          "t": "The café was busy, "
+        },
+        {
+          "t": "but "
+        },
+        {
+          "t": "the coffee was great.",
+          "w": "w-coffee"
+        }
+      ],
+      "gap": {
+        "before": "The café was busy, ",
+        "answer": "but",
+        "after": " the coffee was great.",
+        "options": [
+          "but",
+          "so",
+          "or"
+        ],
+        "why": "混んでいた（マイナス）→ でもコーヒーは最高（プラス）。"
+      },
+      "combine": {
+        "a": "The café was busy.",
+        "b": "The coffee was great.",
+        "distractors": [
+          "so "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-but-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "but / though"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-but-4",
+      "english": "It's a bit small. I love the colour, though.",
+      "japanese": "ちょっと小さいです。色は大好きなんですけどね。",
+      "chunks": [
+        {
+          "t": "It's a bit small. "
+        },
+        {
+          "t": "I love the colour, ",
+          "w": "w-colour"
+        },
+        {
+          "t": "though."
+        }
+      ],
+      "gap": {
+        "before": "It's a bit small. I love the colour, ",
+        "answer": "though",
+        "after": ".",
+        "options": [
+          "though",
+          "but",
+          "so"
+        ],
+        "why": "文の最後に付けて「〜だけどね」と言うのは though。but は文の最後には置けません。"
+      },
+      "audio": "audio/en/connectors/cx-but-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "but / though"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

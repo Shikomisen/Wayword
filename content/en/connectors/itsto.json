@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "con-itsto",
+  "connector": "It's … to …",
+  "gloss": "〜するのは…だ",
+  "title": "It's … to … — 〜するのは…だ",
+  "pattern": "It's ＋ 形容詞 ＋ to ＋ 動詞",
+  "explanation": "「〜するのは大変」「〜するのは簡単」のように、行動について感想を言う時は It's ＋ 形容詞 ＋ to ＋ 動詞 の形を使います。To find my size is hard. と言うより、It's hard to find my size. の方がずっと自然です。",
+  "natural": "気持ちや感想を伝える時に：It's nice to meet you.（お会いできてうれしいです）、It's easy to get here by bus.（ここはバスで来やすいです）",
+  "stiff": "It's ... for me to ... と for を入れると、「私にとっては」が強調されます。いつも入れる必要はありません。",
+  "examples": [
+    {
+      "id": "cx-itsto-1",
+      "english": "It's hard to find my size.",
+      "japanese": "自分のサイズを見つけるのが大変です。",
+      "chunks": [
+        {
+          "t": "It's hard "
+        },
+        {
+          "t": "to find ",
+          "w": "w-find"
+        },
+        {
+          "t": "my size.",
+          "w": "w-size"
+        }
+      ],
+      "gap": {
+        "before": "It's hard ",
+        "answer": "to",
+        "after": " find my size.",
+        "options": [
+          "to",
+          "for",
+          "that"
+        ],
+        "why": "It's ＋ 形容詞 ＋ to ＋ 動詞 の形です。"
+      },
+      "audio": "audio/en/connectors/cx-itsto-1.mp3",
+      "tags": [
+        "語順",
+        "It's … to …"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-itsto-2",
+      "english": "It's nice to meet you.",
+      "japanese": "お会いできてうれしいです。",
+      "chunks": [
+        {
+          "t": "It's nice "
+        },
+        {
+          "t": "to meet ",
+          "w": "w-meet"
+        },
+        {
+          "t": "you."
+        }
+      ],
+      "gap": {
+        "before": "It's nice to ",
+        "answer": "meet",
+        "after": " you.",
+        "options": [
+          "meet",
+          "meeting",
+          "met"
+        ],
+        "why": "to の後ろは動詞の原形。"
+      },
+      "audio": "audio/en/connectors/cx-itsto-2.mp3",
+      "tags": [
+        "語順",
+        "It's … to …"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-itsto-3",
+      "english": "It's easy to get here by bus.",
+      "japanese": "ここはバスで来やすいです。",
+      "chunks": [
+        {
+          "t": "It's easy "
+        },
+        {
+          "t": "to get here ",
+          "w": "w-get"
+        },
+        {
+          "t": "by bus."
+        }
+      ],
+      "gap": {
+        "before": "It's easy to get here ",
+        "answer": "by",
+        "after": " bus.",
+        "options": [
+          "by",
+          "with",
+          "on"
+        ],
+        "why": "「バスで」は by bus。"
+      },
+      "audio": "audio/en/connectors/cx-itsto-3.mp3",
+      "tags": [
+        "語順",
+        "It's … to …"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-itsto-4",
+      "english": "Is it OK to pay in cash?",
+      "japanese": "現金で払ってもいいですか？",
+      "chunks": [
+        {
+          "t": "Is it OK "
+        },
+        {
+          "t": "to pay ",
+          "w": "w-pay"
+        },
+        {
+          "t": "in cash?",
+          "w": "w-cash"
+        }
+      ],
+      "gap": {
+        "before": "Is it OK to pay ",
+        "answer": "in",
+        "after": " cash?",
+        "options": [
+          "in",
+          "by",
+          "with"
+        ],
+        "ok": [
+          "by"
+        ],
+        "note": "by cash と言う人もいますが、in cash の方がふつうです。",
+        "why": "「現金で」は in cash。"
+      },
+      "audio": "audio/en/connectors/cx-itsto-4.mp3",
+      "tags": [
+        "語順",
+        "It's … to …"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -501,8 +501,10 @@ check('…its options carry their verdicts: one right, ので also right, the re
 
 const karaDrills = drills.drillsFor(kara);
 check('a lesson makes all three kinds of drill',
-  Object.values(drills.DRILL).every((type) => karaDrills.some((d) => d.type === type)),
+  drills.DEFAULT_DRILLS.every((type) => karaDrills.some((d) => d.type === type)),
   Object.values(drills.DRILL).map((type) => `${type} ${karaDrills.filter((d) => d.type === type).length}`).join(', '));
+check('…and no say-it drills: this course\'s manifest doesn\'t ask for them',
+  !content.manifest.drills && !karaDrills.some((d) => d.type === drills.DRILL.SAY));
 const session = drills.buildSession([kara]);
 check('a lesson session uses every drill once', session.length === karaDrills.length);
 // Every lesson, many shuffles: the same sentence is never asked twice in a row.
@@ -674,14 +676,29 @@ check('ja-en word decks hold English words with Japanese meanings',
   flatWhite.meaning.startsWith('フラットホワイト') && flatWhite.pos === 'noun', flatWhite?.target);
 check('…with their notes under the course\'s own labels', flatWhite.notes[0]?.label === '使い方',
   flatWhite.notes.map((n) => n.label).join(', '));
-check('every ja-en word deck loads', en.decks.length === 3 && en.decks.every((d) => !d.missing && d.items.length > 0),
+check('every ja-en word and sentence deck loads',
+  en.decks.length === en.manifest.decks.length && en.decks.every((d) => !d.missing && d.items.length > 0) &&
+    en.decks.filter((d) => d.type === 'words').length === 8 && en.decks.some((d) => d.type === 'sentences'),
   en.decks.map((d) => `${d.id} ${d.items.length}`).join(', '));
+check('…the everyday words among them', ['w-get', 'w-pick-up', 'w-gst', 'w-power-point', 'w-kia-ora']
+  .every((id) => en.phrases.get(id)?.kind === 'word'));
+check('a word that means something else in katakana says so',
+  en.phrases.get('w-complaint')?.notes.some((n) => n.label === 'よくある間違い' && n.text.includes('クレーム')));
+const everyday = en.byCategory.get('sentences-everyday');
+check('everyday sentences are cut into pieces linked to the words they use',
+  everyday.items.every((s) => s.kind === 'sentence' && s.chunks.map((c) => c.target).join('') === s.target &&
+    s.chunks.some((c) => c.w && en.phrases.get(c.w)?.kind === 'word')),
+  `${everyday.items.length} sentences`);
 
 const patterns = en.lessons;
-check('the phrase-pattern lessons load, each with 3–5 examples with audio',
-  patterns.length === 7 && patterns.every((l) => !l.missing && l.items.length >= 3 && l.items.length <= 5 &&
-    l.items.every((x) => x.audio && x.targetLang === 'en')),
+check('the lessons load — patterns, polite phrasing, linking words, word order — each with 3–5 examples with audio',
+  patterns.length === en.manifest.lessons.length && patterns.length === 30 &&
+    patterns.every((l) => !l.missing && l.items.length >= 3 && l.items.length <= 5 &&
+      l.items.every((x) => x.audio && x.targetLang === 'en')),
   patterns.map((l) => l.connector).join(' '));
+check('…in the five groups the manifest names',
+  en.lessonGroups.map((g) => g.id).join(',') === 'ask,question,polite,link,order' &&
+    en.lessonGroups.every((g) => patterns.some((l) => l.group === g.id)));
 const like1 = en.byCategory.get('pat-like').items[0];
 check('a pattern gap is the English sentence around it',
   like1.gap.before.target + like1.gap.answer.target + like1.gap.after.target === like1.target,
@@ -691,12 +708,27 @@ check('…its options carry their verdicts', like1.gap.options.filter((o) => o.v
 check('pattern examples link the words they use', (en.usage.get('w-flat-white') || []).includes('px-like-1'),
   (en.usage.get('w-flat-white') || []).join(', '));
 const likeDrills = drills.drillsFor(en.byCategory.get('pat-like'));
-check('a pattern lesson makes fill-in and order drills',
-  [drills.DRILL.FILL, drills.DRILL.ORDER].every((type) => likeDrills.some((d) => d.type === type)),
+const like = en.byCategory.get('pat-like');
+check('a pattern lesson makes fill-in, order and say-it drills — one say-it per example',
+  [drills.DRILL.FILL, drills.DRILL.ORDER, drills.DRILL.SAY].every((type) => likeDrills.some((d) => d.type === type)) &&
+    likeDrills.filter((d) => d.type === drills.DRILL.SAY).length === like.items.length,
   Object.values(drills.DRILL).map((type) => `${type} ${likeDrills.filter((d) => d.type === type).length}`).join(', '));
 const likeOrder = likeDrills.find((d) => d.type === drills.DRILL.ORDER);
 check('English pieces put in order are right',
   drills.checkTiles(likeOrder, [...drills.tilesFor(likeOrder)].sort((a, b) => a.chunk - b.chunk)));
+const soDrills = drills.drillsFor(en.byCategory.get('con-so'));
+check('a linking-word lesson makes all four kinds of drill, joining sentences with "so" among them',
+  Object.values(drills.DRILL).every((type) => soDrills.some((d) => d.type === type)),
+  Object.values(drills.DRILL).map((type) => `${type} ${soDrills.filter((d) => d.type === type).length}`).join(', '));
+const soCombine = soDrills.find((d) => d.type === drills.DRILL.COMBINE);
+const soTiles = drills.tilesFor(soCombine);
+check('…where "because" is the trap',
+  soTiles.some((tile) => tile.trap !== undefined && tile.target.trim() === 'because') &&
+    drills.checkTiles(soCombine, soTiles.filter((tile) => tile.trap === undefined).sort((a, b) => a.chunk - b.chunk)));
+const nonegative = en.byCategory.get('con-negative').items[0];
+check('a yes/no answer to a negative question is a gap of its own, with the reason given',
+  nonegative.gap.answer.target === 'No' && nonegative.gap.options.find((o) => o.target === 'Yes')?.verdict === 'wrong' &&
+    nonegative.gap.why.includes('否定'));
 check('a course nobody has opened is not onboarded', !(await deck.isOnboarded()));
 check('…and starts with an empty deck', (await deck.getDeck()).length === 0);
 
@@ -707,7 +739,7 @@ check('placement has no character items', enItems.every((i) => i.kind === 'phras
 await quiz.applyPlacement(enItems, Object.fromEntries(enItems.map((i) => [i.id, quiz.ANSWERS.UNKNOWN])));
 check('ja-en is onboarded on its own', await deck.isOnboarded());
 check('week-1 categories activated in ja-en',
-  (await deck.getSettings()).activeCategories.join(',') === 'greetings,numbers,restaurant,shopping,words-cafe,words-shopping',
+  (await deck.getSettings()).activeCategories.join(',') === 'greetings,numbers,restaurant,shopping,words-cafe,words-shopping,words-verbs',
   (await deck.getSettings()).activeCategories.join(','));
 
 const enQueue = await deck.queue();

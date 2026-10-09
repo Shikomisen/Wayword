@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "con-bytheway",
+  "connector": "by the way",
+  "gloss": "ところで",
+  "title": "by the way — ところで",
+  "pattern": "By the way, ...",
+  "explanation": "by the way は「ところで」。話題を変える時や、ついでに何か聞く時に使います。メッセージでは BTW と略すこともあります。",
+  "natural": "会計の途中で別のことを聞く時などに：By the way, do you take cards?（ところで、カードは使えますか？）",
+  "stiff": "on the way は「途中で」（on the way home＝帰り道に）、in the way は「じゃまになって」。形は似ていますが、意味がまったくちがいます。",
+  "examples": [
+    {
+      "id": "cx-bytheway-1",
+      "english": "By the way, do you take cards?",
+      "japanese": "ところで、カードは使えますか？",
+      "chunks": [
+        {
+          "t": "By the way, "
+        },
+        {
+          "t": "do you take ",
+          "w": "w-take"
+        },
+        {
+          "t": "cards?",
+          "w": "w-card"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "By",
+        "after": " the way, do you take cards?",
+        "options": [
+          "By",
+          "On",
+          "In"
+        ],
+        "why": "「ところで」は by the way。on the way は「途中で」です。"
+      },
+      "audio": "audio/en/connectors/cx-bytheway-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "by the way"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-bytheway-2",
+      "english": "By the way, what time do you close?",
+      "japanese": "ところで、何時に閉まりますか？",
+      "chunks": [
+        {
+          "t": "By the way, "
+        },
+        {
+          "t": "what time "
+        },
+        {
+          "t": "do you close?",
+          "w": "w-close"
+        }
+      ],
+      "gap": {
+        "before": "By the way, ",
+        "answer": "what time",
+        "after": " do you close?",
+        "options": [
+          "what time",
+          "when time",
+          "what hour"
+        ],
+        "why": "「何時」は what time。"
+      },
+      "audio": "audio/en/connectors/cx-bytheway-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "by the way"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-bytheway-3",
+      "english": "Oh, by the way, I love your shop.",
+      "japanese": "あ、ところで、素敵なお店ですね。",
+      "chunks": [
+        {
+          "t": "Oh, "
+        },
+        {
+          "t": "by the way, "
+        },
+        {
+          "t": "I love your shop.",
+          "w": "w-love"
+        }
+      ],
+      "gap": {
+        "before": "Oh, ",
+        "answer": "by the way",
+        "after": ", I love your shop.",
+        "options": [
+          "by the way",
+          "on the way",
+          "in the way"
+        ],
+        "why": "話題を変える「ところで」は by the way。"
+      },
+      "audio": "audio/en/connectors/cx-bytheway-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "by the way"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-bytheway-4",
+      "english": "I'll get a coffee on the way home.",
+      "japanese": "帰りにコーヒーを買います。",
+      "chunks": [
+        {
+          "t": "I'll get a coffee ",
+          "w": "w-coffee"
+        },
+        {
+          "t": "on the way "
+        },
+        {
+          "t": "home."
+        }
+      ],
+      "gap": {
+        "before": "I'll get a coffee ",
+        "answer": "on",
+        "after": " the way home.",
+        "options": [
+          "on",
+          "by",
+          "in"
+        ],
+        "why": "「帰る途中で」は on the way home。by the way は「ところで」です。"
+      },
+      "audio": "audio/en/connectors/cx-bytheway-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "by the way"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

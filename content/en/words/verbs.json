@@ -1,0 +1,557 @@
+{
+  "schemaVersion": 1,
+  "id": "words-verbs",
+  "title": "毎日の動詞",
+  "description": "毎日使う基本の動詞。get や take のように、いろいろな意味で使える動詞が中心です。",
+  "items": [
+    {
+      "id": "w-get",
+      "english": "get",
+      "japanese": "手に入れる、もらう、着く",
+      "pos": "verb",
+      "registerNotes": "とても意味の広い動詞。Can I get a coffee?（コーヒーをください）、I got it at the market.（市場で買いました）、get home（家に着く）",
+      "audio": "audio/en/words/w-get.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-take",
+      "english": "take",
+      "japanese": "取る、持っていく、（時間が）かかる",
+      "pos": "verb",
+      "registerNotes": "I'll take this one.（これにします）は、買う物を決めた時の決まり文句。It takes ten minutes.（10分かかります）",
+      "audio": "audio/en/words/w-take.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-make",
+      "english": "make",
+      "japanese": "作る",
+      "pos": "verb",
+      "registerNotes": "make a booking（予約する）、make a mistake（間違える）",
+      "audio": "audio/en/words/w-make.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-go",
+      "english": "go",
+      "japanese": "行く",
+      "pos": "verb",
+      "registerNotes": "go shopping（買い物に行く）、go for a walk（散歩に行く）",
+      "audio": "audio/en/words/w-go.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-come",
+      "english": "come",
+      "japanese": "来る",
+      "pos": "verb",
+      "registerNotes": "Does it come with chips?（ポテトは付いてきますか？）のように「付いてくる」の意味にもなります。",
+      "pitfallNote": "呼ばれて「今行きます」は I'm coming!。相手のいる方へ向かう時は go ではなく come です。",
+      "audio": "audio/en/words/w-come.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bring",
+      "english": "bring",
+      "japanese": "持ってくる、連れてくる",
+      "pos": "verb",
+      "registerNotes": "Can you bring some water?（お水を持ってきてもらえますか？）",
+      "pitfallNote": "take は「持っていく」、bring は「持ってくる」。話している人のところへ向かう時が bring です。",
+      "audio": "audio/en/words/w-bring.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-buy",
+      "english": "buy",
+      "japanese": "買う",
+      "pos": "verb",
+      "registerNotes": "過去形は bought（ボート）。I bought it yesterday.（昨日買いました）",
+      "audio": "audio/en/words/w-buy.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pay",
+      "english": "pay",
+      "japanese": "払う",
+      "pos": "verb",
+      "registerNotes": "pay by card（カードで払う）、pay in cash（現金で払う）。過去形は paid。",
+      "audio": "audio/en/words/w-pay.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-need",
+      "english": "need",
+      "japanese": "必要だ",
+      "pos": "verb",
+      "registerNotes": "I need a bigger size.（大きいサイズが必要です）",
+      "audio": "audio/en/words/w-need.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-want",
+      "english": "want",
+      "japanese": "ほしい、〜したい",
+      "pos": "verb",
+      "registerNotes": "自分の気持ちを言う時に。お店で頼む時は I'd like の方がていねいです。",
+      "audio": "audio/en/words/w-want.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-use",
+      "english": "use",
+      "japanese": "使う",
+      "pos": "verb",
+      "registerNotes": "Can I use your bathroom?（お手洗いをお借りできますか？）",
+      "pitfallNote": "トイレや電話をその場で「借りる」のは use。borrow は持ち出して、後で返す物に使います。",
+      "audio": "audio/en/words/w-use.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-find",
+      "english": "find",
+      "japanese": "見つける",
+      "pos": "verb",
+      "registerNotes": "I can't find my size.（自分のサイズが見つかりません）。過去形は found。",
+      "audio": "audio/en/words/w-find.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-look-for",
+      "english": "look for",
+      "japanese": "探す",
+      "pos": "verb",
+      "registerNotes": "I'm looking for a jacket.（ジャケットを探しています）— お店で最初に言う定番のひとこと。",
+      "audio": "audio/en/words/w-look-for.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-keep",
+      "english": "keep",
+      "japanese": "取っておく、持ち続ける",
+      "pos": "verb",
+      "registerNotes": "Keep the change.（おつりは取っておいてください）",
+      "audio": "audio/en/words/w-keep.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-leave",
+      "english": "leave",
+      "japanese": "出発する、置いていく",
+      "pos": "verb",
+      "registerNotes": "What time does the bus leave?（バスは何時に出ますか？）、I left my phone at home.（スマホを家に置いてきました）",
+      "audio": "audio/en/words/w-leave.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-wait",
+      "english": "wait",
+      "japanese": "待つ",
+      "pos": "verb",
+      "registerNotes": "wait for the bus（バスを待つ）",
+      "pitfallNote": "wait the bus は間違い。「〜を待つ」は wait for 〜 です。",
+      "audio": "audio/en/words/w-wait.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-open",
+      "english": "open",
+      "japanese": "開ける、開いている",
+      "pos": "verb",
+      "registerNotes": "Are you open on Sundays?（日曜日は開いていますか？）",
+      "audio": "audio/en/words/w-open.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-close",
+      "english": "close",
+      "japanese": "閉める、閉まる",
+      "pos": "verb",
+      "registerNotes": "What time do you close?（何時に閉まりますか？）。「閉まっている」は closed。",
+      "audio": "audio/en/words/w-close.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-carry",
+      "english": "carry",
+      "japanese": "持ち運ぶ",
+      "pos": "verb",
+      "registerNotes": "It's too heavy to carry.（重すぎて持てません）",
+      "audio": "audio/en/words/w-carry.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-choose",
+      "english": "choose",
+      "japanese": "選ぶ",
+      "pos": "verb",
+      "registerNotes": "It's hard to choose.（選ぶのが難しい）",
+      "audio": "audio/en/words/w-choose.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-change-v",
+      "english": "change",
+      "japanese": "変える、着替える、乗り換える",
+      "pos": "verb",
+      "registerNotes": "change my order（注文を変える）、change trains（電車を乗り換える）",
+      "audio": "audio/en/words/w-change-v.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-check",
+      "english": "check",
+      "japanese": "確認する",
+      "pos": "verb",
+      "registerNotes": "Can you check if you have it?（在庫があるか確認してもらえますか？）",
+      "audio": "audio/en/words/w-check.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-show",
+      "english": "show",
+      "japanese": "見せる",
+      "pos": "verb",
+      "registerNotes": "Can you show me another one?（ほかのを見せてもらえますか？）",
+      "audio": "audio/en/words/w-show.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tell",
+      "english": "tell",
+      "japanese": "教える、伝える",
+      "pos": "verb",
+      "registerNotes": "Can you tell me the way to the station?（駅への道を教えてもらえますか？）",
+      "pitfallNote": "道や情報を「教える」は tell。teach は勉強や技術を教える時に使います。",
+      "audio": "audio/en/words/w-tell.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ask",
+      "english": "ask",
+      "japanese": "たずねる、頼む",
+      "pos": "verb",
+      "registerNotes": "Can I ask you something?（ちょっと聞いてもいいですか？）",
+      "audio": "audio/en/words/w-ask.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-help",
+      "english": "help",
+      "japanese": "手伝う、助ける",
+      "pos": "verb",
+      "registerNotes": "Can you help me?（手伝ってもらえますか？）。「手助け」という名詞にもなります（Thanks for your help.）。",
+      "audio": "audio/en/words/w-help.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-meet",
+      "english": "meet",
+      "japanese": "会う",
+      "pos": "verb",
+      "registerNotes": "Nice to meet you.（はじめまして）は初めて会う時。2回目からは Nice to see you. です。",
+      "audio": "audio/en/words/w-meet.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-start",
+      "english": "start",
+      "japanese": "始める、始まる",
+      "pos": "verb",
+      "registerNotes": "What time does it start?（何時に始まりますか？）",
+      "audio": "audio/en/words/w-start.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-finish",
+      "english": "finish",
+      "japanese": "終える、終わる",
+      "pos": "verb",
+      "registerNotes": "Have you finished?（お済みですか？）— 食事中に店員さんがよく聞きます。",
+      "audio": "audio/en/words/w-finish.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-book",
+      "english": "book",
+      "japanese": "予約する",
+      "pos": "verb",
+      "registerNotes": "book a table（席を予約する）。名詞の booking は「予約」。",
+      "pitfallNote": "「予約する」は reserve より book の方がふつうです。",
+      "audio": "audio/en/words/w-book.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cancel",
+      "english": "cancel",
+      "japanese": "キャンセルする、取り消す",
+      "pos": "verb",
+      "registerNotes": "I need to cancel my booking.（予約を取り消したいのですが）",
+      "audio": "audio/en/words/w-cancel.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-borrow",
+      "english": "borrow",
+      "japanese": "借りる",
+      "pos": "verb",
+      "registerNotes": "Can I borrow a pen?（ペンを借りてもいいですか？）",
+      "audio": "audio/en/words/w-borrow.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-lend",
+      "english": "lend",
+      "japanese": "貸す",
+      "pos": "verb",
+      "registerNotes": "Could you lend me a pen?（ペンを貸してもらえますか？）",
+      "pitfallNote": "borrow（借りる）と lend（貸す）は逆。Can I borrow...? か Could you lend me...? と言います。",
+      "audio": "audio/en/words/w-lend.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-forget",
+      "english": "forget",
+      "japanese": "忘れる",
+      "pos": "verb",
+      "registerNotes": "I forgot my wallet.（財布を忘れました）",
+      "audio": "audio/en/words/w-forget.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-remember",
+      "english": "remember",
+      "japanese": "覚えている、思い出す",
+      "pos": "verb",
+      "registerNotes": "I can't remember the name.（名前が思い出せません）",
+      "audio": "audio/en/words/w-remember.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-understand",
+      "english": "understand",
+      "japanese": "理解する、わかる",
+      "pos": "verb",
+      "registerNotes": "Sorry, I don't understand.（すみません、わかりません）",
+      "audio": "audio/en/words/w-understand.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-mean",
+      "english": "mean",
+      "japanese": "意味する",
+      "pos": "verb",
+      "registerNotes": "What does that mean?（それはどういう意味ですか？）",
+      "audio": "audio/en/words/w-mean.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-say",
+      "english": "say",
+      "japanese": "言う",
+      "pos": "verb",
+      "registerNotes": "Could you say that again?（もう一度言ってもらえますか？）",
+      "audio": "audio/en/words/w-say.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-speak",
+      "english": "speak",
+      "japanese": "話す",
+      "pos": "verb",
+      "registerNotes": "Could you speak more slowly?（もっとゆっくり話してもらえますか？）",
+      "audio": "audio/en/words/w-speak.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hear",
+      "english": "hear",
+      "japanese": "聞こえる",
+      "pos": "verb",
+      "registerNotes": "Sorry, I didn't hear you.（すみません、聞こえませんでした）",
+      "pitfallNote": "hear は「（自然に）聞こえる」、listen は「（意識して）聞く」です。",
+      "audio": "audio/en/words/w-hear.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-catch",
+      "english": "catch",
+      "japanese": "（乗り物に）乗る、聞き取る",
+      "pos": "verb",
+      "registerNotes": "catch the bus（バスに乗る）、I didn't catch your name.（お名前を聞き取れませんでした）",
+      "audio": "audio/en/words/w-catch.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-feel",
+      "english": "feel",
+      "japanese": "感じる、（気分が）〜だ",
+      "pos": "verb",
+      "registerNotes": "I don't feel well.（気分がよくないです）",
+      "audio": "audio/en/words/w-feel.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-like",
+      "english": "like",
+      "japanese": "好きだ、気に入る",
+      "pos": "verb",
+      "registerNotes": "I like it.（気に入りました）。注文する時は I'd like を使います。",
+      "pitfallNote": "I like coffee. は「コーヒーが好き」。注文なら I'd like a coffee. です。",
+      "audio": "audio/en/words/w-like.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-love",
+      "english": "love",
+      "japanese": "大好きだ",
+      "pos": "verb",
+      "registerNotes": "I love this café.（このカフェ、大好き）— 気軽に「すごく好き」と言う時にもよく使います。",
+      "audio": "audio/en/words/w-love.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hope",
+      "english": "hope",
+      "japanese": "〜だといいなと思う",
+      "pos": "verb",
+      "registerNotes": "I hope so.（そうだといいですね）",
+      "audio": "audio/en/words/w-hope.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

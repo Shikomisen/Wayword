@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "con-abit",
+  "connector": "a bit / kind of",
+  "gloss": "ちょっと、なんとなく",
+  "title": "a bit / kind of — ちょっと、なんとなく",
+  "pattern": "a bit ＋ 形容詞 ／ kind of ＋ 形容詞",
+  "explanation": "a bit と kind of は、言い方をやわらげる言葉です。a bit は「ちょっと」、kind of は「なんとなく」「わりと」。It's expensive.（高い）とはっきり言うより、It's a bit expensive. の方がやわらかく聞こえます。",
+  "natural": "不満や断りを伝える時のクッションに：It's a bit too small.（ちょっと小さすぎます）",
+  "stiff": "a little も「少し」ですが、会話では a bit の方がずっとよく使われます。a kind of（〜の一種）は別の意味です。",
+  "examples": [
+    {
+      "id": "cx-abit-1",
+      "english": "It's a bit too long.",
+      "japanese": "ちょっと長すぎます。",
+      "chunks": [
+        {
+          "t": "It's "
+        },
+        {
+          "t": "a bit "
+        },
+        {
+          "t": "too long.",
+          "w": "w-too"
+        }
+      ],
+      "gap": {
+        "before": "It's ",
+        "answer": "a bit",
+        "after": " too long.",
+        "options": [
+          "a bit",
+          "a few",
+          "a lot"
+        ],
+        "why": "「ちょっと（〜すぎる）」は a bit。a few は数に使います。"
+      },
+      "audio": "audio/en/connectors/cx-abit-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "a bit / kind of"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-abit-2",
+      "english": "It's kind of expensive.",
+      "japanese": "わりと高いですね。",
+      "chunks": [
+        {
+          "t": "It's "
+        },
+        {
+          "t": "kind of "
+        },
+        {
+          "t": "expensive.",
+          "w": "w-expensive"
+        }
+      ],
+      "gap": {
+        "before": "It's ",
+        "answer": "kind of",
+        "after": " expensive.",
+        "options": [
+          "kind of",
+          "a kind of",
+          "kinds of"
+        ],
+        "why": "「わりと」は kind of。a kind of は「〜の一種」です。"
+      },
+      "audio": "audio/en/connectors/cx-abit-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "a bit / kind of"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-abit-3",
+      "english": "I'm kind of keen.",
+      "japanese": "ちょっと行きたいかも。",
+      "chunks": [
+        {
+          "t": "I'm "
+        },
+        {
+          "t": "kind of "
+        },
+        {
+          "t": "keen.",
+          "w": "w-keen"
+        }
+      ],
+      "gap": {
+        "before": "I'm ",
+        "answer": "kind of",
+        "after": " keen.",
+        "options": [
+          "kind of",
+          "kindly",
+          "a kind"
+        ],
+        "why": "「なんとなく」「ちょっと」は kind of。"
+      },
+      "audio": "audio/en/connectors/cx-abit-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "a bit / kind of"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-abit-4",
+      "english": "The jumper is a bit loose.",
+      "japanese": "そのセーターは少しゆるいです。",
+      "chunks": [
+        {
+          "t": "The jumper is ",
+          "w": "w-jumper"
+        },
+        {
+          "t": "a bit "
+        },
+        {
+          "t": "loose.",
+          "w": "w-loose"
+        }
+      ],
+      "gap": {
+        "before": "The jumper is ",
+        "answer": "a bit",
+        "after": " loose.",
+        "options": [
+          "a bit",
+          "a bits",
+          "bit"
+        ],
+        "why": "「少し」は a bit。"
+      },
+      "audio": "audio/en/connectors/cx-abit-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "a bit / kind of"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

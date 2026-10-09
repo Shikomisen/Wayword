@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "con-tag",
+  "connector": "…, isn't it?",
+  "gloss": "〜ですよね（確かめる）",
+  "title": "…, isn't it? — 〜ですよね（確かめる）",
+  "pattern": "文 , isn't it? ／ 否定の文 , does it?",
+  "explanation": "文の最後に短い質問を付けると、「〜ですよね」と確かめたり同意を求めたりする言い方になります。前が肯定なら否定の形（It's on special, isn't it?）、前が否定なら肯定の形（It doesn't come in navy, does it?）を付けます。",
+  "natural": "天気の話や、確かめたい時に。会話のきっかけにもなります。ニュージーランドでは、文の最後に eh?（ね？）を付けることもよくあります。",
+  "stiff": "主語や動詞に合わせて形が変わるので、最初は短い文で練習しましょう。迷ったら right?（だよね？）でも通じます。",
+  "examples": [
+    {
+      "id": "cx-tag-1",
+      "english": "You're open on Sunday, aren't you?",
+      "japanese": "日曜日も開いていますよね？",
+      "chunks": [
+        {
+          "t": "You're open ",
+          "w": "w-open"
+        },
+        {
+          "t": "on Sunday, "
+        },
+        {
+          "t": "aren't you?"
+        }
+      ],
+      "gap": {
+        "before": "You're open on Sunday, ",
+        "answer": "aren't you",
+        "after": "?",
+        "options": [
+          "aren't you",
+          "isn't it",
+          "don't you"
+        ],
+        "why": "主語が you で、are の文なので aren't you?"
+      },
+      "audio": "audio/en/connectors/cx-tag-1.mp3",
+      "tags": [
+        "語順",
+        "…, isn't it?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-tag-2",
+      "english": "It doesn't come in navy, does it?",
+      "japanese": "紺色はないですよね？",
+      "chunks": [
+        {
+          "t": "It doesn't come ",
+          "w": "w-come"
+        },
+        {
+          "t": "in navy, ",
+          "w": "w-navy"
+        },
+        {
+          "t": "does it?"
+        }
+      ],
+      "gap": {
+        "before": "It doesn't come in navy, ",
+        "answer": "does it",
+        "after": "?",
+        "options": [
+          "does it",
+          "doesn't it",
+          "is it"
+        ],
+        "why": "前が否定（doesn't）なので、後ろは肯定の does it?"
+      },
+      "audio": "audio/en/connectors/cx-tag-2.mp3",
+      "tags": [
+        "語順",
+        "…, isn't it?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-tag-3",
+      "english": "This is on special, isn't it?",
+      "japanese": "これ、特価ですよね？",
+      "chunks": [
+        {
+          "t": "This is "
+        },
+        {
+          "t": "on special, ",
+          "w": "w-on-special"
+        },
+        {
+          "t": "isn't it?"
+        }
+      ],
+      "gap": {
+        "before": "This is on special, ",
+        "answer": "isn't it",
+        "after": "?",
+        "options": [
+          "isn't it",
+          "is it",
+          "doesn't it"
+        ],
+        "why": "前が肯定（is）なので、後ろは否定の isn't it?"
+      },
+      "audio": "audio/en/connectors/cx-tag-3.mp3",
+      "tags": [
+        "語順",
+        "…, isn't it?"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-tag-4",
+      "english": "Nice day, eh? — Sweet as!",
+      "japanese": "いい天気だね？ — ほんとだね！",
+      "chunks": [
+        {
+          "t": "Nice day, "
+        },
+        {
+          "t": "eh? "
+        },
+        {
+          "t": "— Sweet as!",
+          "w": "w-sweet-as"
+        }
+      ],
+      "gap": {
+        "before": "Nice day, ",
+        "answer": "eh",
+        "after": "? — Sweet as!",
+        "options": [
+          "eh",
+          "hey",
+          "ah"
+        ],
+        "why": "ニュージーランドでは、文の最後の eh? で「〜だね？」と同意を求めます。"
+      },
+      "audio": "audio/en/connectors/cx-tag-4.mp3",
+      "tags": [
+        "語順",
+        "…, isn't it?"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

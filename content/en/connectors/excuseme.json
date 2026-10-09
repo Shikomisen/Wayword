@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "con-excuseme",
+  "connector": "Excuse me / Sorry",
+  "gloss": "「すみません」の言い分け",
+  "title": "Excuse me / Sorry — 「すみません」の言い分け",
+  "pattern": "Excuse me（声をかける）／ Sorry（謝る・聞き返す）／ Thank you（お礼）",
+  "explanation": "日本語の「すみません」は、英語では場面によって3つに分かれます。人に声をかける時や前を通してもらう時は Excuse me。ぶつかった・間違えた時のおわびや、聞き返す時は Sorry。何かをしてもらった時は Thank you です。",
+  "natural": "Excuse me は店員さんを呼ぶ時や、人の前を通る時に。聞き取れなかった時の Sorry?（え、何ですか？）もとてもよく使います。",
+  "stiff": "何かをしてもらった時に Sorry と言うと、「迷惑をかけてごめんなさい」と謝っているように聞こえます。お礼は Thank you です。",
+  "examples": [
+    {
+      "id": "cx-excuseme-1",
+      "english": "Excuse me, do you have this in a bigger size?",
+      "japanese": "すみません、これの大きいサイズはありますか？",
+      "chunks": [
+        {
+          "t": "Excuse me, "
+        },
+        {
+          "t": "do you have this "
+        },
+        {
+          "t": "in a bigger size?",
+          "w": "w-bigger"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Excuse me",
+        "after": ", do you have this in a bigger size?",
+        "options": [
+          "Excuse me",
+          "Sorry",
+          "Thank you"
+        ],
+        "why": "店員さんに声をかけるのは Excuse me。"
+      },
+      "audio": "audio/en/connectors/cx-excuseme-1.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "Excuse me / Sorry"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-excuseme-2",
+      "english": "Sorry, I didn't catch your name.",
+      "japanese": "すみません、お名前を聞き取れませんでした。",
+      "chunks": [
+        {
+          "t": "Sorry, "
+        },
+        {
+          "t": "I didn't "
+        },
+        {
+          "t": "catch your name.",
+          "w": "w-catch"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Sorry",
+        "after": ", I didn't catch your name.",
+        "options": [
+          "Sorry",
+          "Excuse me",
+          "Thank you"
+        ],
+        "ok": [
+          "Excuse me"
+        ],
+        "note": "Excuse me でも聞き返せますが、Sorry の方がよく使われます。",
+        "why": "聞き返す時やおわびは Sorry。"
+      },
+      "audio": "audio/en/connectors/cx-excuseme-2.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "Excuse me / Sorry"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-excuseme-3",
+      "english": "Thank you so much for your help.",
+      "japanese": "本当にありがとうございました。",
+      "chunks": [
+        {
+          "t": "Thank you "
+        },
+        {
+          "t": "so much "
+        },
+        {
+          "t": "for your help.",
+          "w": "w-help"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Thank you",
+        "after": " so much for your help.",
+        "options": [
+          "Thank you",
+          "Sorry",
+          "Excuse me"
+        ],
+        "why": "手伝ってもらったお礼は Thank you。Sorry だと謝っているように聞こえます。"
+      },
+      "audio": "audio/en/connectors/cx-excuseme-3.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "Excuse me / Sorry"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-excuseme-4",
+      "english": "Sorry, I think I'm in the wrong queue.",
+      "japanese": "すみません、並ぶ列を間違えたみたいです。",
+      "chunks": [
+        {
+          "t": "Sorry, "
+        },
+        {
+          "t": "I think "
+        },
+        {
+          "t": "I'm in the wrong queue.",
+          "w": "w-queue"
+        }
+      ],
+      "gap": {
+        "before": "Sorry, I think I'm in the ",
+        "answer": "wrong",
+        "after": " queue.",
+        "options": [
+          "wrong",
+          "different",
+          "mistake"
+        ],
+        "why": "「間違った列」は the wrong queue。"
+      },
+      "audio": "audio/en/connectors/cx-excuseme-4.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "Excuse me / Sorry"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "con-isitok",
+  "connector": "Is it OK if I…?",
+  "gloss": "〜してもいいですか（許可をもらう）",
+  "title": "Is it OK if I…? — 〜してもいいですか（許可をもらう）",
+  "pattern": "Is it OK if I ＋ 動詞 ...? ／ Do you mind if I ＋ 動詞 ...?",
+  "explanation": "自分が何かをしてもいいか、許可をもらう言い方です。Is it OK if I ...? は気軽で、Do you mind if I ...? は少していねい。if の後ろは「I ＋ 動詞」のふつうの文の形になります。いちばん短いのは Can I ...? です。",
+  "natural": "カードで払う、試着する、物を置かせてもらうなど、お店や公共の場で「〜しても大丈夫？」と確かめる時に。",
+  "stiff": "May I ...? はとてもていねいで、日常の会話では少しかたく聞こえることがあります。お店では Can I ...? や Is it OK if I ...? で十分です。",
+  "examples": [
+    {
+      "id": "cx-isitok-1",
+      "english": "Is it OK if I pay by card?",
+      "japanese": "カードで払ってもいいですか？",
+      "chunks": [
+        {
+          "t": "Is it OK "
+        },
+        {
+          "t": "if I "
+        },
+        {
+          "t": "pay ",
+          "w": "w-pay"
+        },
+        {
+          "t": "by card?",
+          "w": "w-card"
+        }
+      ],
+      "gap": {
+        "before": "Is it OK ",
+        "answer": "if",
+        "after": " I pay by card?",
+        "options": [
+          "if",
+          "that",
+          "when"
+        ],
+        "why": "Is it OK if I ...? で「〜してもいいですか」。"
+      },
+      "audio": "audio/en/connectors/cx-isitok-1.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "Is it OK if I…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-isitok-2",
+      "english": "Is it OK if I try this on?",
+      "japanese": "これを試着してもいいですか？",
+      "chunks": [
+        {
+          "t": "Is it OK "
+        },
+        {
+          "t": "if I "
+        },
+        {
+          "t": "try this on?",
+          "w": "w-try-on"
+        }
+      ],
+      "gap": {
+        "before": "Is it OK if I try this ",
+        "answer": "on",
+        "after": "?",
+        "options": [
+          "on",
+          "in",
+          "up"
+        ],
+        "why": "try on で「試着する」。this は try と on の間に入ります。"
+      },
+      "audio": "audio/en/connectors/cx-isitok-2.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "Is it OK if I…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-isitok-3",
+      "english": "Do you mind if I use your bathroom?",
+      "japanese": "お手洗いをお借りしてもいいですか？",
+      "chunks": [
+        {
+          "t": "Do you mind "
+        },
+        {
+          "t": "if I "
+        },
+        {
+          "t": "use ",
+          "w": "w-use"
+        },
+        {
+          "t": "your bathroom?"
+        }
+      ],
+      "gap": {
+        "before": "Do you mind if I ",
+        "answer": "use",
+        "after": " your bathroom?",
+        "options": [
+          "use",
+          "borrow",
+          "rent"
+        ],
+        "why": "その場で使うだけなら use。borrow は持ち出して、後で返す物に使います。"
+      },
+      "audio": "audio/en/connectors/cx-isitok-3.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "Is it OK if I…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-isitok-4",
+      "english": "Is it OK if I leave my bag here?",
+      "japanese": "ここにかばんを置いていってもいいですか？",
+      "chunks": [
+        {
+          "t": "Is it OK "
+        },
+        {
+          "t": "if I "
+        },
+        {
+          "t": "leave ",
+          "w": "w-leave"
+        },
+        {
+          "t": "my bag here?",
+          "w": "w-bag"
+        }
+      ],
+      "gap": {
+        "before": "Is it ",
+        "answer": "OK",
+        "after": " if I leave my bag here?",
+        "options": [
+          "OK",
+          "good",
+          "sure"
+        ],
+        "why": "Is it OK if I ...? は決まった形です。"
+      },
+      "audio": "audio/en/connectors/cx-isitok-4.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "Is it OK if I…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

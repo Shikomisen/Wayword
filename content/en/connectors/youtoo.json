@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "con-youtoo",
+  "connector": "You too!",
+  "gloss": "あいさつやお礼への返し方",
+  "title": "You too! — あいさつやお礼への返し方",
+  "pattern": "Thanks, you too! ／ No worries. ／ You're welcome.",
+  "explanation": "あいさつやお礼を言われた時の返し方です。Have a good day!（よい一日を）と言われたら Thanks, you too!（あなたもね）。Thank you. と言われたら No worries.（どういたしまして）や You're welcome.。ニュージーランドでは No worries がとてもよく使われます。",
+  "natural": "レジでの別れ際、道を教えた時、お礼を言われた時に。短く、明るく返すのがコツです。",
+  "stiff": "Have a good day! に Me too! と返すのはよくある間違いで、「私も（よい一日を過ごします）」という意味になってしまいます。",
+  "examples": [
+    {
+      "id": "cx-youtoo-1",
+      "english": "Have a good day! — Cheers, you too!",
+      "japanese": "よい一日を！ — ありがとう、あなたもね！",
+      "chunks": [
+        {
+          "t": "Have a good day! "
+        },
+        {
+          "t": "— Cheers, ",
+          "w": "w-cheers"
+        },
+        {
+          "t": "you too!"
+        }
+      ],
+      "gap": {
+        "before": "Have a good day! — Cheers, ",
+        "answer": "you",
+        "after": " too!",
+        "options": [
+          "you",
+          "me",
+          "I"
+        ],
+        "why": "「あなたもね」は you too。Me too だと「私も」になってしまいます。"
+      },
+      "audio": "audio/en/connectors/cx-youtoo-1.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "You too!"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-youtoo-2",
+      "english": "Thanks for your help! — No worries, any time.",
+      "japanese": "手伝ってくれてありがとう！ — どういたしまして、いつでもどうぞ。",
+      "chunks": [
+        {
+          "t": "Thanks for your help! "
+        },
+        {
+          "t": "— No worries, ",
+          "w": "w-no-worries"
+        },
+        {
+          "t": "any time."
+        }
+      ],
+      "gap": {
+        "before": "Thanks for your help! — ",
+        "answer": "No worries",
+        "after": ", any time.",
+        "options": [
+          "No worries",
+          "Me too",
+          "Sorry"
+        ],
+        "why": "お礼を言われたら No worries（どういたしまして）。"
+      },
+      "audio": "audio/en/connectors/cx-youtoo-2.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "You too!"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-youtoo-3",
+      "english": "Thank you so much! — You're welcome. Enjoy your flat white!",
+      "japanese": "ありがとうございます！ — どういたしまして。フラットホワイトを楽しんでくださいね！",
+      "chunks": [
+        {
+          "t": "Thank you so much! "
+        },
+        {
+          "t": "— You're welcome. "
+        },
+        {
+          "t": "Enjoy your flat white!",
+          "w": "w-flat-white"
+        }
+      ],
+      "gap": {
+        "before": "Thank you so much! — ",
+        "answer": "You're welcome",
+        "after": ". Enjoy your flat white!",
+        "options": [
+          "You're welcome",
+          "Welcome",
+          "You're well"
+        ],
+        "why": "「どういたしまして」は You're welcome。Welcome! だけだと「ようこそ」になります。"
+      },
+      "audio": "audio/en/connectors/cx-youtoo-3.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "You too!"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-youtoo-4",
+      "english": "See you this arvo! — See you then!",
+      "japanese": "今日の午後にね！ — じゃあ、その時に！",
+      "chunks": [
+        {
+          "t": "See you "
+        },
+        {
+          "t": "this arvo! ",
+          "w": "w-arvo"
+        },
+        {
+          "t": "— See you then!"
+        }
+      ],
+      "gap": {
+        "before": "See you this arvo! — See you ",
+        "answer": "then",
+        "after": "!",
+        "options": [
+          "then",
+          "there",
+          "after"
+        ],
+        "why": "See you then. で「じゃあ、その時に」。"
+      },
+      "audio": "audio/en/connectors/cx-youtoo-4.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "You too!"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

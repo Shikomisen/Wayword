@@ -4,7 +4,7 @@
   "speaker": "ja",
   "register": "polite-neutral",
   "generatedFor": "Wayword — English for Japanese speakers",
-  "notes": "English for Japanese speakers, modelled on New Zealand English. Same shape as the English → Japanese course: one file per category, one per scenario; word decks under `decks`; phrase-pattern lessons (\"I'd like ○○\") under `lessons` — the counterpart of the Japanese course's connectors, named by `copy.lessonsTitle`. Text the learner studies is `english`; `japanese` is the gloss. Notes are written in Japanese. `voice` says which voice the clips are made with: Google's for now; `azure` names the New Zealand neural voices (the learner's lines, and the people they talk to) that `npm run voice:nz` switches the course to.",
+  "notes": "English for Japanese speakers, modelled on New Zealand English. Same shape as the English → Japanese course: one file per category, one per scenario; word and sentence decks under `decks`; lessons under `lessons` — phrase patterns (\"I'd like ○○\"), polite phrasing, linking words and word order, in the connectors' format, named by `copy.lessonsTitle`. `drills` adds saying each example aloud to the usual three drills. Text the learner studies is `english`; `japanese` is the gloss. Notes are written in Japanese. `voice` says which voice the clips are made with: Google's for now; `azure` names the New Zealand neural voices (the learner's lines, and the people they talk to) that `npm run voice:nz` switches the course to.",
   "fields": {
     "target": "english",
     "meaning": "japanese"
@@ -41,9 +41,9 @@
   "copy": {
     "placementLede": "{n}枚のカードで、10のカテゴリーをひととおりチェックします。それぞれ、すでに知っているかどうかを選ぶだけ。入力も採点もありません — 各カードをどこから復習に入れるかを決めるためのものです。",
     "placementAside": "学校で習った英語は、読めばわかるのに口から出てこない — ということがよくあります。実際の会話で必要なのは、とっさに言える短いひとこと。そのすき間を見つけるためのチェックで、テストではありません。",
-    "lessonsTitle": "フレーズの型",
-    "lessonsTab": "フレーズの型",
-    "lessonsLede": "「I'd like ○○, please.」のように、○○を入れかえて使える型。説明と例文、練習問題があります。",
+    "lessonsTitle": "表現・つなぎ言葉",
+    "lessonsTab": "表現",
+    "lessonsLede": "注文やお願いの型、ていねいな言い方、文と文をつなぐ言葉。説明を読んで、例文で練習しましょう。声に出して言う練習もあります。",
     "lessonsIcon": "🧩"
   },
   "groups": [
@@ -184,7 +184,62 @@
       "title": "お店・お会計",
       "icon": "🧾",
       "starter": true
+    },
+    {
+      "id": "words-verbs",
+      "kind": "words",
+      "order": 4,
+      "file": "content/en/words/verbs.json",
+      "title": "毎日の動詞",
+      "icon": "🏃",
+      "starter": true
+    },
+    {
+      "id": "words-phrasal",
+      "kind": "words",
+      "order": 5,
+      "file": "content/en/words/phrasal.json",
+      "title": "句動詞",
+      "icon": "🧷"
+    },
+    {
+      "id": "words-money",
+      "kind": "words",
+      "order": 6,
+      "file": "content/en/words/money.json",
+      "title": "お金のことば",
+      "icon": "💰"
+    },
+    {
+      "id": "words-katakana",
+      "kind": "words",
+      "order": 7,
+      "file": "content/en/words/katakana.json",
+      "title": "カタカナ英語",
+      "icon": "🔤"
+    },
+    {
+      "id": "words-nz",
+      "kind": "words",
+      "order": 8,
+      "file": "content/en/words/nz.json",
+      "title": "ニュージーランドの言葉",
+      "icon": "🥝"
+    },
+    {
+      "id": "sentences-everyday",
+      "kind": "sentences",
+      "order": 9,
+      "file": "content/en/sentences/everyday.json",
+      "title": "毎日の文",
+      "icon": "💬"
     }
+  ],
+  "drills": [
+    "fill",
+    "order",
+    "combine",
+    "say"
   ],
   "lessonGroups": [
     {
@@ -196,6 +251,21 @@
       "id": "question",
       "title": "たずねる",
       "description": "ある？ これは〜？ どこ？ いくら？ を聞く型。"
+    },
+    {
+      "id": "polite",
+      "title": "ていねいに頼む・断る",
+      "description": "相手に何かをしてもらう、許可をもらう、やわらかく断る。英語らしい「ていねいさ」の作り方。"
+    },
+    {
+      "id": "link",
+      "title": "つなぎ言葉",
+      "description": "so, but, because など、文と文をつなぐ言葉。理由や気持ちも一緒に伝えられるようになります。"
+    },
+    {
+      "id": "order",
+      "title": "語順・質問の形",
+      "description": "日本語と順番がちがうところ。英語らしい語順と、質問や答えの形を練習します。"
     }
   ],
   "lessons": [
@@ -247,6 +317,167 @@
       "file": "content/en/patterns/howmuch.json",
       "title": "How much…? — 〜はいくらですか",
       "group": "question"
+    },
+    {
+      "id": "con-couldyou",
+      "order": 8,
+      "file": "content/en/connectors/couldyou.json",
+      "title": "Could you…? — 〜していただけますか（相手にしてもらう）",
+      "group": "polite"
+    },
+    {
+      "id": "con-wouldyoumind",
+      "order": 9,
+      "file": "content/en/connectors/wouldyoumind.json",
+      "title": "Would you mind…? — 〜していただいてもいいですか（とてもていねい）",
+      "group": "polite"
+    },
+    {
+      "id": "con-isitok",
+      "order": 10,
+      "file": "content/en/connectors/isitok.json",
+      "title": "Is it OK if I…? — 〜してもいいですか（許可をもらう）",
+      "group": "polite"
+    },
+    {
+      "id": "con-nothanks",
+      "order": 11,
+      "file": "content/en/connectors/nothanks.json",
+      "title": "No thanks… — やわらかく断る",
+      "group": "polite"
+    },
+    {
+      "id": "con-excuseme",
+      "order": 12,
+      "file": "content/en/connectors/excuseme.json",
+      "title": "Excuse me / Sorry — 「すみません」の言い分け",
+      "group": "polite"
+    },
+    {
+      "id": "con-youtoo",
+      "order": 13,
+      "file": "content/en/connectors/youtoo.json",
+      "title": "You too! — あいさつやお礼への返し方",
+      "group": "polite"
+    },
+    {
+      "id": "con-so",
+      "order": 14,
+      "file": "content/en/connectors/so.json",
+      "title": "so — だから、それで",
+      "group": "link"
+    },
+    {
+      "id": "con-because",
+      "order": 15,
+      "file": "content/en/connectors/because.json",
+      "title": "because — 〜だから、なぜなら",
+      "group": "link"
+    },
+    {
+      "id": "con-but",
+      "order": 16,
+      "file": "content/en/connectors/but.json",
+      "title": "but / though — でも、〜けど",
+      "group": "link"
+    },
+    {
+      "id": "con-eventhough",
+      "order": 17,
+      "file": "content/en/connectors/eventhough.json",
+      "title": "even though — 〜なのに",
+      "group": "link"
+    },
+    {
+      "id": "con-actually",
+      "order": 18,
+      "file": "content/en/connectors/actually.json",
+      "title": "actually — 実は、本当は",
+      "group": "link"
+    },
+    {
+      "id": "con-anyway",
+      "order": 19,
+      "file": "content/en/connectors/anyway.json",
+      "title": "anyway — とにかく、まあ、それでも",
+      "group": "link"
+    },
+    {
+      "id": "con-bytheway",
+      "order": 20,
+      "file": "content/en/connectors/bytheway.json",
+      "title": "by the way — ところで",
+      "group": "link"
+    },
+    {
+      "id": "con-imean",
+      "order": 21,
+      "file": "content/en/connectors/imean.json",
+      "title": "I mean — つまり、いや、その",
+      "group": "link"
+    },
+    {
+      "id": "con-youknow",
+      "order": 22,
+      "file": "content/en/connectors/youknow.json",
+      "title": "you know — ほら、〜でしょ",
+      "group": "link"
+    },
+    {
+      "id": "con-abit",
+      "order": 23,
+      "file": "content/en/connectors/abit.json",
+      "title": "a bit / kind of — ちょっと、なんとなく",
+      "group": "link"
+    },
+    {
+      "id": "con-unless",
+      "order": 24,
+      "file": "content/en/connectors/unless.json",
+      "title": "unless — 〜でなければ、〜しない限り",
+      "group": "link"
+    },
+    {
+      "id": "con-aslongas",
+      "order": 25,
+      "file": "content/en/connectors/aslongas.json",
+      "title": "as long as — 〜さえすれば、〜なら",
+      "group": "link"
+    },
+    {
+      "id": "con-theone",
+      "order": 26,
+      "file": "content/en/connectors/theone.json",
+      "title": "the one I… — 後ろから説明する（〜した物）",
+      "group": "order"
+    },
+    {
+      "id": "con-do",
+      "order": 27,
+      "file": "content/en/connectors/do.json",
+      "title": "Do / Does / Did…? — 動詞の質問の形",
+      "group": "order"
+    },
+    {
+      "id": "con-tag",
+      "order": 28,
+      "file": "content/en/connectors/tag.json",
+      "title": "…, isn't it? — 〜ですよね（確かめる）",
+      "group": "order"
+    },
+    {
+      "id": "con-negative",
+      "order": 29,
+      "file": "content/en/connectors/negative.json",
+      "title": "Yes / No — 否定の質問への答え方",
+      "group": "order"
+    },
+    {
+      "id": "con-itsto",
+      "order": 30,
+      "file": "content/en/connectors/itsto.json",
+      "title": "It's … to … — 〜するのは…だ",
+      "group": "order"
     }
   ],
   "characterSets": [],

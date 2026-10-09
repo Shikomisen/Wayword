@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "con-couldyou",
+  "connector": "Could you…?",
+  "gloss": "〜していただけますか（相手にしてもらう）",
+  "title": "Could you…? — 〜していただけますか（相手にしてもらう）",
+  "pattern": "Could you ＋ 動詞 ...?",
+  "explanation": "相手に何かをしてもらう時の、ていねいな頼み方です。Can you ...? より少しやわらかく聞こえます。自分が何かをもらう時は Could I ...?、相手にしてもらう時は Could you ...?。主語がだれかで意味が変わるので注意しましょう。",
+  "natural": "道をたずねる、聞き返す、手伝ってもらうなど、知らない人へのお願い全般に使えます。please を付けると、さらにていねいです。",
+  "stiff": "Please ＋ 動詞（Please say it again.）は、言い方によっては命令に聞こえます。お願いは Could you ...? の形が安全です。",
+  "examples": [
+    {
+      "id": "cx-couldyou-1",
+      "english": "Could you say that one more time?",
+      "japanese": "もう一度言っていただけますか？",
+      "chunks": [
+        {
+          "t": "Could you "
+        },
+        {
+          "t": "say ",
+          "w": "w-say"
+        },
+        {
+          "t": "that one more time?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Could you",
+        "after": " say that one more time?",
+        "options": [
+          "Could you",
+          "Could I",
+          "Should you"
+        ],
+        "why": "相手に言ってもらうので Could you。Could I だと「私が言ってもいいですか」になります。"
+      },
+      "audio": "audio/en/connectors/cx-couldyou-1.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "Could you…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-couldyou-2",
+      "english": "Could you speak a bit more slowly?",
+      "japanese": "もう少しゆっくり話していただけますか？",
+      "chunks": [
+        {
+          "t": "Could you "
+        },
+        {
+          "t": "speak ",
+          "w": "w-speak"
+        },
+        {
+          "t": "a bit more slowly?"
+        }
+      ],
+      "gap": {
+        "before": "Could you speak a bit more ",
+        "answer": "slowly",
+        "after": "?",
+        "options": [
+          "slowly",
+          "slow",
+          "slower"
+        ],
+        "why": "speak（話す）を説明するので、-ly の付いた slowly です。"
+      },
+      "audio": "audio/en/connectors/cx-couldyou-2.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "Could you…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-couldyou-3",
+      "english": "Could you help me with this?",
+      "japanese": "これを手伝っていただけますか？",
+      "chunks": [
+        {
+          "t": "Could you "
+        },
+        {
+          "t": "help ",
+          "w": "w-help"
+        },
+        {
+          "t": "me with this?"
+        }
+      ],
+      "gap": {
+        "before": "Could you help me ",
+        "answer": "with",
+        "after": " this?",
+        "options": [
+          "with",
+          "for",
+          "to"
+        ],
+        "why": "help ＋ 人 ＋ with ＋ 物 で「人の〜を手伝う」。"
+      },
+      "audio": "audio/en/connectors/cx-couldyou-3.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "Could you…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-couldyou-4",
+      "english": "Could you tell me where the toilets are?",
+      "japanese": "お手洗いの場所を教えていただけますか？",
+      "chunks": [
+        {
+          "t": "Could you "
+        },
+        {
+          "t": "tell ",
+          "w": "w-tell"
+        },
+        {
+          "t": "me where the toilets are?"
+        }
+      ],
+      "gap": {
+        "before": "Could you tell me ",
+        "answer": "where the toilets are",
+        "after": "?",
+        "options": [
+          "where the toilets are",
+          "where are the toilets"
+        ],
+        "why": "Could you tell me の後ろでは、質問の語順ではなく、ふつうの文の語順（where ＋ 主語 ＋ 動詞）になります。"
+      },
+      "audio": "audio/en/connectors/cx-couldyou-4.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "Could you…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "con-anyway",
+  "connector": "anyway",
+  "gloss": "とにかく、まあ、それでも",
+  "title": "anyway — とにかく、まあ、それでも",
+  "pattern": "Anyway, ... ／ ... anyway.",
+  "explanation": "anyway には2つの使い方があります。文の最初の Anyway, は「とにかく」「まあ、それはさておき」と、話をまとめたり切り替えたりする言葉。文の最後の ... anyway は「それでも」「どっちにしても」という意味です。",
+  "natural": "話を終わらせる時（Anyway, thanks for your help.）や、気にせず決める時（It's a bit big, but I'll take it anyway.）に。",
+  "stiff": "any way（2語）は「何か方法」という意味（Is there any way to ...?）で、別の言葉です。",
+  "examples": [
+    {
+      "id": "cx-anyway-1",
+      "english": "Anyway, thanks for your help.",
+      "japanese": "とにかく、助けてくれてありがとう。",
+      "chunks": [
+        {
+          "t": "Anyway, "
+        },
+        {
+          "t": "thanks for "
+        },
+        {
+          "t": "your help.",
+          "w": "w-help"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Anyway",
+        "after": ", thanks for your help.",
+        "options": [
+          "Anyway",
+          "Any way",
+          "Away"
+        ],
+        "why": "話をまとめる「とにかく」は1語の Anyway。"
+      },
+      "audio": "audio/en/connectors/cx-anyway-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "anyway"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-anyway-2",
+      "english": "It's a bit big, but I'll take it anyway.",
+      "japanese": "ちょっと大きいけど、それでもこれにします。",
+      "chunks": [
+        {
+          "t": "It's a bit big, "
+        },
+        {
+          "t": "but I'll take it ",
+          "w": "w-take"
+        },
+        {
+          "t": "anyway."
+        }
+      ],
+      "gap": {
+        "before": "It's a bit big, but I'll take it ",
+        "answer": "anyway",
+        "after": ".",
+        "options": [
+          "anyway",
+          "already",
+          "always"
+        ],
+        "why": "「それでも」は文の最後の anyway。"
+      },
+      "audio": "audio/en/connectors/cx-anyway-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "anyway"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-anyway-3",
+      "english": "Anyway, I should get going.",
+      "japanese": "じゃあ、そろそろ行かなきゃ。",
+      "chunks": [
+        {
+          "t": "Anyway, "
+        },
+        {
+          "t": "I should "
+        },
+        {
+          "t": "get going.",
+          "w": "w-go"
+        }
+      ],
+      "gap": {
+        "before": "Anyway, I ",
+        "answer": "should",
+        "after": " get going.",
+        "options": [
+          "should",
+          "would",
+          "could"
+        ],
+        "why": "「〜しなきゃ」は I should。"
+      },
+      "audio": "audio/en/connectors/cx-anyway-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "anyway"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-anyway-4",
+      "english": "The bus was late, but we got there anyway.",
+      "japanese": "バスは遅れたけど、とにかく間に合いました。",
+      "chunks": [
+        {
+          "t": "The bus was late, "
+        },
+        {
+          "t": "but we got there ",
+          "w": "w-get"
+        },
+        {
+          "t": "anyway."
+        }
+      ],
+      "gap": {
+        "before": "The bus was late, but we got there ",
+        "answer": "anyway",
+        "after": ".",
+        "options": [
+          "anyway",
+          "instead",
+          "already"
+        ],
+        "why": "遅れた、でも結局は着いた、の「それでも」は anyway。"
+      },
+      "audio": "audio/en/connectors/cx-anyway-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "anyway"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

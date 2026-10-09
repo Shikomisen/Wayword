@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "con-eventhough",
+  "connector": "even though",
+  "gloss": "〜なのに",
+  "title": "even though — 〜なのに",
+  "pattern": "even though ＋ 事実 , 意外なこと",
+  "explanation": "even though は「〜なのに」。but より強く、「〜にもかかわらず」という意外さを表します。形の似た even if は「たとえ〜でも」で、まだ起きていない仮定の話に使います。",
+  "natural": "事実を言いながら、予想とちがう結果を伝える時に：Even though it's expensive, it's worth it.（高いけど、その価値はあります）",
+  "stiff": "although も同じ意味ですが、少し書き言葉的です。会話では even though がよく使われます。",
+  "examples": [
+    {
+      "id": "cx-eventhough-1",
+      "english": "Even though it's expensive, it's worth it.",
+      "japanese": "高いけど、その価値はあります。",
+      "chunks": [
+        {
+          "t": "Even though "
+        },
+        {
+          "t": "it's expensive, ",
+          "w": "w-expensive"
+        },
+        {
+          "t": "it's worth it.",
+          "w": "w-worth"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Even though",
+        "after": " it's expensive, it's worth it.",
+        "options": [
+          "Even though",
+          "Even if",
+          "So"
+        ],
+        "why": "「高い」のは事実なので even though。even if だと「たとえ高くても」という仮定の話になります。"
+      },
+      "audio": "audio/en/connectors/cx-eventhough-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "even though"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-eventhough-2",
+      "english": "I'm still hungry, even though I had a pie.",
+      "japanese": "パイを食べたのに、まだお腹がすいています。",
+      "chunks": [
+        {
+          "t": "I'm still hungry, "
+        },
+        {
+          "t": "even though "
+        },
+        {
+          "t": "I had a pie.",
+          "w": "w-pie"
+        }
+      ],
+      "gap": {
+        "before": "I'm still hungry, ",
+        "answer": "even though",
+        "after": " I had a pie.",
+        "options": [
+          "even though",
+          "even if",
+          "because"
+        ],
+        "why": "パイを食べた（事実）のに、という意外さは even though。"
+      },
+      "combine": {
+        "a": "I'm still hungry.",
+        "b": "I had a pie.",
+        "distractors": [
+          "because "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-eventhough-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "even though"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-eventhough-3",
+      "english": "We went tramping, even though it was raining.",
+      "japanese": "雨が降っていたのに、山歩きに行きました。",
+      "chunks": [
+        {
+          "t": "We went tramping, ",
+          "w": "w-tramping"
+        },
+        {
+          "t": "even though "
+        },
+        {
+          "t": "it was raining."
+        }
+      ],
+      "gap": {
+        "before": "We went tramping, ",
+        "answer": "even though",
+        "after": " it was raining.",
+        "options": [
+          "even though",
+          "so",
+          "unless"
+        ],
+        "why": "雨（事実）にもかかわらず、なので even though。"
+      },
+      "combine": {
+        "a": "We went tramping.",
+        "b": "It was raining.",
+        "distractors": [
+          "so "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-eventhough-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "even though"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-eventhough-4",
+      "english": "Even if it rains, we'll still go out.",
+      "japanese": "たとえ雨が降っても、出かけます。",
+      "chunks": [
+        {
+          "t": "Even if "
+        },
+        {
+          "t": "it rains, "
+        },
+        {
+          "t": "we'll still go out.",
+          "w": "w-go-out"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Even if",
+        "after": " it rains, we'll still go out.",
+        "options": [
+          "Even if",
+          "Even though",
+          "Because"
+        ],
+        "why": "まだ降っていない、仮定の話なので even if。"
+      },
+      "audio": "audio/en/connectors/cx-eventhough-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "even though"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -281,6 +281,10 @@ function validateCourse(course) {
   /* ---------- connector lessons ---------- */
 
   const lessonGroupIds = new Set((manifest.lessonGroups || []).map((g) => g.id));
+  if (manifest.drills !== undefined) {
+    check(`${course.id}: drills are kinds the app has`, Array.isArray(manifest.drills) && manifest.drills.length > 0 &&
+      manifest.drills.every((d) => ['fill', 'order', 'combine', 'say'].includes(d)), JSON.stringify(manifest.drills));
+  }
   let lessonExamples = 0;
   let combineDrills = 0;
   for (const entry of manifest.lessons || []) {

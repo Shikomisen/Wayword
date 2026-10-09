@@ -1,0 +1,394 @@
+{
+  "schemaVersion": 1,
+  "id": "words-phrasal",
+  "title": "句動詞",
+  "description": "pick up や hold on のように、動詞と短い語でできた表現。会話ではとてもよく使います。",
+  "items": [
+    {
+      "id": "w-pick-up",
+      "english": "pick up",
+      "japanese": "受け取る、拾う、迎えに行く",
+      "pos": "verb",
+      "registerNotes": "I'm here to pick up an order.（注文した物を受け取りに来ました）、I'll pick you up.（車で迎えに行くね）",
+      "audio": "audio/en/words/w-pick-up.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-put-back",
+      "english": "put back",
+      "japanese": "元に戻す",
+      "pos": "verb",
+      "registerNotes": "I'll put it back.（元の場所に戻しておきます）",
+      "audio": "audio/en/words/w-put-back.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hold-on",
+      "english": "hold on",
+      "japanese": "ちょっと待つ",
+      "pos": "verb",
+      "registerNotes": "Hold on a sec.（ちょっと待って）。電話でもよく使います。",
+      "audio": "audio/en/words/w-hold-on.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hang-on",
+      "english": "hang on",
+      "japanese": "ちょっと待つ",
+      "pos": "verb",
+      "registerNotes": "Hang on a minute.（ちょっと待ってね）— hold on とほぼ同じで、少しくだけた言い方。",
+      "audio": "audio/en/words/w-hang-on.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sort-out",
+      "english": "sort out",
+      "japanese": "解決する、整理する",
+      "pos": "verb",
+      "registerNotes": "Don't worry, we'll sort it out.（大丈夫、なんとかしますよ）",
+      "audio": "audio/en/words/w-sort-out.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-check-out",
+      "english": "check out",
+      "japanese": "チェックアウトする、見てみる",
+      "pos": "verb",
+      "registerNotes": "check out of the hotel（ホテルをチェックアウトする）、Check this out!（これ見て！）",
+      "audio": "audio/en/words/w-check-out.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-run-out-of",
+      "english": "run out of",
+      "japanese": "〜を切らす、〜がなくなる",
+      "pos": "verb",
+      "registerNotes": "We've run out of milk.（牛乳を切らしています）",
+      "audio": "audio/en/words/w-run-out-of.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-end-up",
+      "english": "end up",
+      "japanese": "結局〜になる",
+      "pos": "verb",
+      "registerNotes": "I ended up buying two.（結局2つ買いました）",
+      "audio": "audio/en/words/w-end-up.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-figure-out",
+      "english": "figure out",
+      "japanese": "わかる、解決する",
+      "pos": "verb",
+      "registerNotes": "I can't figure out how to use this.（これの使い方がわかりません）",
+      "audio": "audio/en/words/w-figure-out.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-find-out",
+      "english": "find out",
+      "japanese": "調べてわかる、知る",
+      "pos": "verb",
+      "registerNotes": "I'll find out for you.（お調べします）",
+      "audio": "audio/en/words/w-find-out.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-look-after",
+      "english": "look after",
+      "japanese": "世話をする、面倒を見る",
+      "pos": "verb",
+      "registerNotes": "Can you look after my bag for a minute?（ちょっとかばんを見ていてもらえますか？）",
+      "audio": "audio/en/words/w-look-after.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-turn-on",
+      "english": "turn on",
+      "japanese": "（電源を）つける",
+      "pos": "verb",
+      "registerNotes": "turn on the light（電気をつける）",
+      "audio": "audio/en/words/w-turn-on.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-turn-off",
+      "english": "turn off",
+      "japanese": "（電源を）消す",
+      "pos": "verb",
+      "registerNotes": "turn off your phone（スマホの電源を切る）",
+      "audio": "audio/en/words/w-turn-off.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-fill-in",
+      "english": "fill in",
+      "japanese": "（用紙に）記入する",
+      "pos": "verb",
+      "registerNotes": "Can you fill in this form?（この用紙に記入してもらえますか？）",
+      "audio": "audio/en/words/w-fill-in.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-give-back",
+      "english": "give back",
+      "japanese": "返す",
+      "pos": "verb",
+      "registerNotes": "I'll give it back tomorrow.（明日返します）",
+      "audio": "audio/en/words/w-give-back.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-come-back",
+      "english": "come back",
+      "japanese": "戻ってくる、また来る",
+      "pos": "verb",
+      "registerNotes": "I'll come back later.（また後で来ます）— 買わずにお店を出る時にも便利です。",
+      "audio": "audio/en/words/w-come-back.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-get-on",
+      "english": "get on",
+      "japanese": "（バスや電車に）乗る",
+      "pos": "verb",
+      "registerNotes": "get on the bus（バスに乗る）",
+      "pitfallNote": "バスや電車は get on、車やタクシーは get in です。",
+      "audio": "audio/en/words/w-get-on.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-get-off",
+      "english": "get off",
+      "japanese": "（バスや電車を）降りる",
+      "pos": "verb",
+      "registerNotes": "Where should I get off?（どこで降りればいいですか？）",
+      "audio": "audio/en/words/w-get-off.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-top-up",
+      "english": "top up",
+      "japanese": "（残高を）チャージする、つぎ足す",
+      "pos": "verb",
+      "registerNotes": "top up my bus card（バスのカードにチャージする）",
+      "pitfallNote": "「チャージ」は和製英語。英語では top up と言います。",
+      "audio": "audio/en/words/w-top-up.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-drop-off",
+      "english": "drop off",
+      "japanese": "（車から）降ろす、届ける",
+      "pos": "verb",
+      "registerNotes": "Can you drop me off here?（ここで降ろしてもらえますか？）",
+      "audio": "audio/en/words/w-drop-off.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-put-on",
+      "english": "put on",
+      "japanese": "着る、身につける",
+      "pos": "verb",
+      "registerNotes": "put on a jacket（ジャケットを着る）",
+      "audio": "audio/en/words/w-put-on.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-take-off",
+      "english": "take off",
+      "japanese": "脱ぐ",
+      "pos": "verb",
+      "registerNotes": "Please take off your shoes.（靴を脱いでください）",
+      "audio": "audio/en/words/w-take-off.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-set-up",
+      "english": "set up",
+      "japanese": "準備する、設定する",
+      "pos": "verb",
+      "registerNotes": "set up my phone（スマホの設定をする）",
+      "audio": "audio/en/words/w-set-up.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sign-up",
+      "english": "sign up",
+      "japanese": "登録する、申し込む",
+      "pos": "verb",
+      "registerNotes": "sign up for a class（クラスに申し込む）",
+      "audio": "audio/en/words/w-sign-up.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-log-in",
+      "english": "log in",
+      "japanese": "ログインする",
+      "pos": "verb",
+      "registerNotes": "I can't log in.（ログインできません）",
+      "audio": "audio/en/words/w-log-in.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-work-out",
+      "english": "work out",
+      "japanese": "うまくいく、解決する、運動する",
+      "pos": "verb",
+      "registerNotes": "It worked out in the end.（最後はうまくいきました）",
+      "audio": "audio/en/words/w-work-out.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-go-out",
+      "english": "go out",
+      "japanese": "出かける",
+      "pos": "verb",
+      "registerNotes": "go out for dinner（夕食に出かける）",
+      "audio": "audio/en/words/w-go-out.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-eat-out",
+      "english": "eat out",
+      "japanese": "外食する",
+      "pos": "verb",
+      "registerNotes": "Let's eat out tonight.（今夜は外食しよう）",
+      "audio": "audio/en/words/w-eat-out.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-look-around",
+      "english": "look around",
+      "japanese": "見て回る",
+      "pos": "verb",
+      "registerNotes": "I'm just looking around.（見て回っているだけです）",
+      "audio": "audio/en/words/w-look-around.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-calm-down",
+      "english": "calm down",
+      "japanese": "落ち着く",
+      "pos": "verb",
+      "registerNotes": "Calm down, it's OK.（落ち着いて、大丈夫）",
+      "audio": "audio/en/words/w-calm-down.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cheer-up",
+      "english": "cheer up",
+      "japanese": "元気を出す",
+      "pos": "verb",
+      "registerNotes": "Cheer up!（元気出して！）",
+      "audio": "audio/en/words/w-cheer-up.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hurry-up",
+      "english": "hurry up",
+      "japanese": "急ぐ",
+      "pos": "verb",
+      "registerNotes": "Hurry up, the bus is coming!（急いで、バスが来るよ！）",
+      "audio": "audio/en/words/w-hurry-up.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

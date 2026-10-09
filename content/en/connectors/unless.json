@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "con-unless",
+  "connector": "unless",
+  "gloss": "〜でなければ、〜しない限り",
+  "title": "unless — 〜でなければ、〜しない限り",
+  "pattern": "文 unless 条件",
+  "explanation": "unless は「〜でなければ」「〜しない限り」。if ... not と同じ意味です。We'll walk unless it rains.（雨が降らなければ歩きます）＝ We'll walk if it doesn't rain.",
+  "natural": "条件付きで決める時に：I'll take it, unless you have a cheaper one.（もっと安いのがなければ、これにします）",
+  "stiff": "unless の後ろに not を付けると意味が逆になってしまいます。unless it doesn't rain とは言いません。",
+  "examples": [
+    {
+      "id": "cx-unless-1",
+      "english": "I'll take it, unless you have a cheaper one.",
+      "japanese": "もっと安いのがなければ、これにします。",
+      "chunks": [
+        {
+          "t": "I'll take it, ",
+          "w": "w-take"
+        },
+        {
+          "t": "unless "
+        },
+        {
+          "t": "you have a cheaper one.",
+          "w": "w-cheap"
+        }
+      ],
+      "gap": {
+        "before": "I'll take it, ",
+        "answer": "unless",
+        "after": " you have a cheaper one.",
+        "options": [
+          "unless",
+          "if",
+          "until"
+        ],
+        "why": "「〜がなければ」は unless。"
+      },
+      "audio": "audio/en/connectors/cx-unless-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "unless"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-unless-2",
+      "english": "We'll catch the bus, unless it's sunny.",
+      "japanese": "晴れていなければ、バスに乗ります。",
+      "chunks": [
+        {
+          "t": "We'll catch the bus, ",
+          "w": "w-catch"
+        },
+        {
+          "t": "unless "
+        },
+        {
+          "t": "it's sunny."
+        }
+      ],
+      "gap": {
+        "before": "We'll catch the bus, ",
+        "answer": "unless",
+        "after": " it's sunny.",
+        "options": [
+          "unless",
+          "because",
+          "so"
+        ],
+        "why": "「晴れていなければ」は unless it's sunny。"
+      },
+      "audio": "audio/en/connectors/cx-unless-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "unless"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-unless-3",
+      "english": "Don't buy it unless it fits.",
+      "japanese": "サイズが合わないなら、買わない方がいいですよ。",
+      "chunks": [
+        {
+          "t": "Don't buy it ",
+          "w": "w-buy"
+        },
+        {
+          "t": "unless "
+        },
+        {
+          "t": "it fits.",
+          "w": "w-fit"
+        }
+      ],
+      "gap": {
+        "before": "Don't buy it unless it ",
+        "answer": "fits",
+        "after": ".",
+        "options": [
+          "fits",
+          "fit",
+          "doesn't fit"
+        ],
+        "why": "unless に not の意味が入っているので、doesn't は付けません。主語が it なので fits。"
+      },
+      "audio": "audio/en/connectors/cx-unless-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "unless"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-unless-4",
+      "english": "Pay at the till, unless you have a table number.",
+      "japanese": "番号札がなければ、レジでお支払いください。",
+      "chunks": [
+        {
+          "t": "Pay at the till, ",
+          "w": "w-till"
+        },
+        {
+          "t": "unless "
+        },
+        {
+          "t": "you have a table number.",
+          "w": "w-table-number"
+        }
+      ],
+      "gap": {
+        "before": "Pay at the till, ",
+        "answer": "unless",
+        "after": " you have a table number.",
+        "options": [
+          "unless",
+          "until",
+          "as"
+        ],
+        "why": "「〜がなければ」は unless。"
+      },
+      "audio": "audio/en/connectors/cx-unless-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "unless"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

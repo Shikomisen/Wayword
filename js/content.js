@@ -181,7 +181,8 @@ export async function loadContent() {
         const data = await fetchJSON(entry.file);
         const items = (data.examples || []).map((x) => normaliseDeckItem(
           { ...normalise(x), kind: 'sentence', categoryId: entry.id, categoryTitle: data.title || entry.title }));
-        return { ...entry, ...data, type: 'lesson', items, phrases: items, missing: false };
+        // The kinds of drill this course uses (drills.js); null means the usual three.
+        return { ...entry, ...data, type: 'lesson', drills: manifest.drills || null, items, phrases: items, missing: false };
       } catch (err) {
         console.error(err);
         return { ...entry, type: 'lesson', items: [], phrases: [], missing: true };

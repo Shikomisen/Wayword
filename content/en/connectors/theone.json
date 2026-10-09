@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "con-theone",
+  "connector": "the one I…",
+  "gloss": "後ろから説明する（〜した物）",
+  "title": "the one I… — 後ろから説明する（〜した物）",
+  "pattern": "the one ＋ 説明（I tried on ／ in the window）",
+  "explanation": "英語では、「どの物か」の説明を名詞の後ろに置きます。日本語の「私が試着したの」は、英語では the one I tried on（the one ＋ 私が試着した）。the jacket in the window（ショーウインドウのジャケット）も同じ考え方です。",
+  "natural": "お店で物を指す時に便利です：I'll take the one I tried on.（試着したのにします）。the one は、前に出てきた物をくり返さずに言う言葉です。",
+  "stiff": "日本語の順番のまま説明を前に置くと通じません。英語では、説明はいつも後ろです。",
+  "examples": [
+    {
+      "id": "cx-theone-1",
+      "english": "I'll take the one I tried on.",
+      "japanese": "試着したのにします。",
+      "chunks": [
+        {
+          "t": "I'll take "
+        },
+        {
+          "t": "the one "
+        },
+        {
+          "t": "I tried on.",
+          "w": "w-try-on"
+        }
+      ],
+      "gap": {
+        "before": "I'll take the ",
+        "answer": "one",
+        "after": " I tried on.",
+        "options": [
+          "one",
+          "it",
+          "that"
+        ],
+        "why": "前に出てきた物を指す「〜の」は the one。"
+      },
+      "audio": "audio/en/connectors/cx-theone-1.mp3",
+      "tags": [
+        "語順",
+        "the one I…"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-theone-2",
+      "english": "Can I see the jacket in the window?",
+      "japanese": "ショーウインドウのジャケットを見せてもらえますか？",
+      "chunks": [
+        {
+          "t": "Can I see "
+        },
+        {
+          "t": "the jacket ",
+          "w": "w-jacket"
+        },
+        {
+          "t": "in the window?"
+        }
+      ],
+      "gap": {
+        "before": "Can I see the jacket in the w",
+        "answer": "in",
+        "after": "dow?",
+        "options": [
+          "in",
+          "on",
+          "at"
+        ],
+        "why": "「ショーウインドウの（中の）」は in the window。"
+      },
+      "audio": "audio/en/connectors/cx-theone-2.mp3",
+      "tags": [
+        "語順",
+        "the one I…"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-theone-3",
+      "english": "This isn't the coffee I ordered.",
+      "japanese": "これは注文したコーヒーではありません。",
+      "chunks": [
+        {
+          "t": "This isn't "
+        },
+        {
+          "t": "the coffee ",
+          "w": "w-coffee"
+        },
+        {
+          "t": "I ordered.",
+          "w": "w-order"
+        }
+      ],
+      "gap": {
+        "before": "This isn't the coffee I ",
+        "answer": "ordered",
+        "after": ".",
+        "options": [
+          "ordered",
+          "order",
+          "ordering"
+        ],
+        "why": "「注文した」は過去形の ordered。"
+      },
+      "audio": "audio/en/connectors/cx-theone-3.mp3",
+      "tags": [
+        "語順",
+        "the one I…"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-theone-4",
+      "english": "Do you have the shoes from the ad?",
+      "japanese": "広告に出ていた靴はありますか？",
+      "chunks": [
+        {
+          "t": "Do you have "
+        },
+        {
+          "t": "the shoes ",
+          "w": "w-shoes"
+        },
+        {
+          "t": "from the ad?"
+        }
+      ],
+      "gap": {
+        "before": "Do you have the shoes ",
+        "answer": "from",
+        "after": " the ad?",
+        "options": [
+          "from",
+          "of",
+          "by"
+        ],
+        "why": "「広告の（に出ていた）」は from the ad。"
+      },
+      "audio": "audio/en/connectors/cx-theone-4.mp3",
+      "tags": [
+        "語順",
+        "the one I…"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

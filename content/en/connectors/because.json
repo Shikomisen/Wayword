@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "con-because",
+  "connector": "because",
+  "gloss": "〜だから、なぜなら",
+  "title": "because — 〜だから、なぜなら",
+  "pattern": "結果 because 原因",
+  "explanation": "because は「〜だから」。so とは逆で、because の後ろに原因がきます。英語では「結果 because 原因」の順番がふつうです。会話では 'cause（コーズ）と短く言うこともあります。",
+  "natural": "理由を言う時に。Why?（どうして？）と聞かれたら Because ...（だって〜だから）と答えられます。",
+  "stiff": "Because ... だけで文を終えるのは、会話の返事ならOK。書く時は結果の文と一緒に使います。",
+  "examples": [
+    {
+      "id": "cx-because-1",
+      "english": "I didn't buy it because it was too expensive.",
+      "japanese": "高すぎたので、買いませんでした。",
+      "chunks": [
+        {
+          "t": "I didn't buy it ",
+          "w": "w-buy"
+        },
+        {
+          "t": "because "
+        },
+        {
+          "t": "it was too expensive.",
+          "w": "w-expensive"
+        }
+      ],
+      "gap": {
+        "before": "I didn't buy it ",
+        "answer": "because",
+        "after": " it was too expensive.",
+        "options": [
+          "because",
+          "so",
+          "but"
+        ],
+        "why": "後ろが理由（高すぎた）なので because。"
+      },
+      "combine": {
+        "a": "I didn't buy it.",
+        "b": "It was too expensive.",
+        "distractors": [
+          "so "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-because-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "because"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-because-2",
+      "english": "We come here because we love the coffee.",
+      "japanese": "コーヒーが大好きなので、ここに来ます。",
+      "chunks": [
+        {
+          "t": "We come here "
+        },
+        {
+          "t": "because "
+        },
+        {
+          "t": "we love the coffee.",
+          "w": "w-coffee"
+        }
+      ],
+      "gap": {
+        "before": "We come here because we ",
+        "answer": "love",
+        "after": " the coffee.",
+        "options": [
+          "love",
+          "loves",
+          "loving"
+        ],
+        "why": "主語が we なので love。"
+      },
+      "combine": {
+        "a": "We come here.",
+        "b": "We love the coffee.",
+        "distractors": [
+          "so "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-because-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "because"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-because-3",
+      "english": "I'll take this one, because it's cheaper.",
+      "japanese": "安いので、こっちにします。",
+      "chunks": [
+        {
+          "t": "I'll take this one, ",
+          "w": "w-take"
+        },
+        {
+          "t": "because "
+        },
+        {
+          "t": "it's cheaper.",
+          "w": "w-cheap"
+        }
+      ],
+      "gap": {
+        "before": "I'll take this one, ",
+        "answer": "because",
+        "after": " it's cheaper.",
+        "options": [
+          "because",
+          "so",
+          "unless"
+        ],
+        "why": "安い（理由）の前は because。"
+      },
+      "audio": "audio/en/connectors/cx-because-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "because"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-because-4",
+      "english": "I can't come in today because I don't feel well.",
+      "japanese": "体調が悪いので、今日は行けません。",
+      "chunks": [
+        {
+          "t": "I can't come in today "
+        },
+        {
+          "t": "because "
+        },
+        {
+          "t": "I don't feel well.",
+          "w": "w-feel"
+        }
+      ],
+      "gap": {
+        "before": "I can't come in today because I ",
+        "answer": "don't feel",
+        "after": " well.",
+        "options": [
+          "don't feel",
+          "am not feel",
+          "not feel"
+        ],
+        "why": "「気分がよくない」は I don't feel well。"
+      },
+      "combine": {
+        "a": "I can't come in today.",
+        "b": "I don't feel well.",
+        "distractors": [
+          "so "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-because-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "because"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

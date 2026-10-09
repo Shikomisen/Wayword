@@ -1649,3 +1649,64 @@ casual is what you *say* to a partner. So:
   - Your own words follow the same speed: recordings by playback rate, and
     the device voice through its `rate`.
   - It's in both courses: slower is as useful for hearing Japanese.
+
+### A88 — Speaking first: words, everyday sentences, 23 lessons, and a say-it drill
+- **Vocabulary, general rather than job-specific: five new decks, 177
+  words.**
+  - Everyday verbs (45), a starter: *get, take, bring/take, borrow/lend,
+    tell/teach, hear/listen*.
+  - Phrasal verbs (32): *pick up, hold on, sort out, run out of, top up*.
+  - Money (27): *GST, insert, declined, split the bill, owe, afford*.
+  - Katakana English that means something else (44): *complaint* for
+    クレーム, *flat* for マンション, *power point* for コンセント, *buffet*
+    for バイキング. Also words said differently: *allergy*, *energy*,
+    *virus*.
+  - New Zealand words (29): *kia ora, heaps, keen, reckon, sweet as, togs*.
+    The corner-shop *dairy* is its own card, `w-dairy-shop`, distinct from
+    the café's *dairy* (乳製品).
+
+  Every word has a Japanese gloss; usage and pitfall notes come where they
+  help, and the katakana deck always has one.
+- **A sentence deck, 毎日の文 (42 sentences).** Short things to say, built
+  from the words and cut into linked pieces. With "say it" cards on by
+  default, each one is practised from the Japanese.
+- **23 lessons in the connectors' format**, joining the 7 phrase patterns
+  for 30 in five groups:
+  - **ていねいに頼む・断る (polite):** *Could you…?* vs *Could I…?*; *Would
+    you mind…?*, where "yes" means no; *Is it OK if I…?*; saying no with
+    thanks; *Excuse me / Sorry / Thank you* for すみません; *You too!*, not
+    *Me too!*.
+  - **つなぎ言葉 (linking words):** *so, because, but / though, even though*
+    (against *even if*), *actually, anyway, by the way* (against *on the
+    way*), *I mean, you know, a bit / kind of, unless, as long as*.
+  - **語順・質問の形 (word order):** *the one I…*, *Do / Does / Did…?*, tag
+    questions (with NZ *eh?*), yes/no to negative questions, *It's … to …*.
+  - Explanations, "natural" and "stiff" notes and every *why* are in
+    Japanese. Each example links the words it uses, and 12 can be joined
+    from two sentences with a trap piece.
+- **The tab.** The user chose one tab with a broader name: 表現・つなぎ言葉,
+  set by `copy.lessonsTitle`. The tab bar itself says 表現, because the full
+  name wrapped onto two lines at phone width.
+- **Say-it drill (the speaking answer).** A fourth drill kind in `drills.js`:
+  1. the Japanese is shown;
+  2. "say it out loud first";
+  3. reveal the English with 🔊🐢;
+  4. "I said it" or "Not yet".
+
+  "Not yet" is a miss, so the sentence goes into the reviews as a failed
+  "say it" card and comes back within the hour, like any missed drill. The
+  app can't hear the learner, so the learner judges.
+  - A course opts in through its manifest's `drills`. The English course
+    lists all four. The Japanese course has no `drills`, so it keeps its
+    three and is unchanged (its integration test now says so).
+- **Built from data.** A throwaway builder (`tmp/`) checks everything before
+  writing anything: ids are unique, word links exist, gaps rebuild their
+  sentences, "also right" options have notes, traps aren't real pieces, and
+  no sentence repeats one already in the course. It caught five repeats,
+  which were reworded.
+- **Verification:**
+  - 311 new clips (Google voice, 0 failed);
+  - `npm test`: 31,782 content checks and 233 integration checks;
+  - render: 257, including a whole "so" session with all four drill kinds,
+    "Not yet" landing in the reviews, and the 表現 tab;
+  - service worker 34, voice 18.

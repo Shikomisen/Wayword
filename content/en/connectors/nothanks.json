@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "con-nothanks",
+  "connector": "No thanks…",
+  "gloss": "やわらかく断る",
+  "title": "No thanks… — やわらかく断る",
+  "pattern": "No thanks, I'm ... ／ I'm fine, thanks.",
+  "explanation": "断る時は No だけで終わらせず、thanks を付けるのが英語の礼儀です。No thanks.（結構です）、I'm fine, thanks.（大丈夫です）、I'm just looking, thanks.（見ているだけです）。理由を短く添えると、さらにやわらかくなります。",
+  "natural": "店員さんに声をかけられた時、袋やレシートがいらない時、すすめられた物を断る時に。笑顔で言えば失礼にはなりません。",
+  "stiff": "No. だけ、I don't need it. だけでは、ぶっきらぼうに聞こえます。日本語の「大丈夫です」をそのまま It's OK. と言うと、Yes なのか No なのか伝わらないこともあります。",
+  "examples": [
+    {
+      "id": "cx-nothanks-1",
+      "english": "No thanks, I'm just looking.",
+      "japanese": "大丈夫です、見ているだけです。",
+      "chunks": [
+        {
+          "t": "No thanks, "
+        },
+        {
+          "t": "I'm "
+        },
+        {
+          "t": "just looking.",
+          "w": "w-just-looking"
+        }
+      ],
+      "gap": {
+        "before": "No ",
+        "answer": "thanks",
+        "after": ", I'm just looking.",
+        "options": [
+          "thanks",
+          "please",
+          "sorry"
+        ],
+        "why": "断る時は No thanks。No, please. だと「いいえ、お願いします」になって矛盾します。"
+      },
+      "audio": "audio/en/connectors/cx-nothanks-1.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "No thanks…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-nothanks-2",
+      "english": "I'm fine, thanks. I don't need a bag.",
+      "japanese": "大丈夫です。袋はいりません。",
+      "chunks": [
+        {
+          "t": "I'm fine, "
+        },
+        {
+          "t": "thanks. "
+        },
+        {
+          "t": "I don't need a bag.",
+          "w": "w-bag"
+        }
+      ],
+      "gap": {
+        "before": "I'm ",
+        "answer": "fine",
+        "after": ", thanks. I don't need a bag.",
+        "options": [
+          "fine",
+          "well",
+          "sure"
+        ],
+        "why": "I'm fine, thanks. で「結構です」。I'm well は「（体調が）元気です」という意味になります。"
+      },
+      "audio": "audio/en/connectors/cx-nothanks-2.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "No thanks…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-nothanks-3",
+      "english": "Not today, thanks. I'll come back later.",
+      "japanese": "今日は結構です。また来ます。",
+      "chunks": [
+        {
+          "t": "Not today, "
+        },
+        {
+          "t": "thanks. "
+        },
+        {
+          "t": "I'll come back ",
+          "w": "w-come-back"
+        },
+        {
+          "t": "later."
+        }
+      ],
+      "gap": {
+        "before": "Not today, thanks. I'll ",
+        "answer": "come back",
+        "after": " later.",
+        "options": [
+          "come back",
+          "go back",
+          "return back"
+        ],
+        "why": "お店に「また来る」は come back。return back は back が重なるので言いません。"
+      },
+      "audio": "audio/en/connectors/cx-nothanks-3.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "No thanks…"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-nothanks-4",
+      "english": "No thanks, I don't need a receipt.",
+      "japanese": "レシートは結構です。",
+      "chunks": [
+        {
+          "t": "No thanks, "
+        },
+        {
+          "t": "I don't need "
+        },
+        {
+          "t": "a receipt.",
+          "w": "w-receipt"
+        }
+      ],
+      "gap": {
+        "before": "No thanks, I ",
+        "answer": "don't need",
+        "after": " a receipt.",
+        "options": [
+          "don't need",
+          "not need",
+          "no need"
+        ],
+        "why": "「必要ない」は I don't need。I not need とは言いません。"
+      },
+      "audio": "audio/en/connectors/cx-nothanks-4.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "No thanks…"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

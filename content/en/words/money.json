@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "id": "words-money",
+  "title": "お金のことば",
+  "description": "値段、支払い、お金の管理。レジや銀行でよく聞く言葉です。",
+  "items": [
+    {
+      "id": "w-dollar",
+      "english": "dollar",
+      "japanese": "ドル",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドドル（NZ$）。twenty-five fifty は $25.50 のこと。",
+      "audio": "audio/en/words/w-dollar.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cents",
+      "english": "cents",
+      "japanese": "セント",
+      "pos": "noun",
+      "registerNotes": "1ドル＝100セント。ニュージーランドには1セントや5セントの硬貨はなく、10セントがいちばん小さい硬貨です。",
+      "audio": "audio/en/words/w-cents.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-coins",
+      "english": "coins",
+      "japanese": "硬貨",
+      "pos": "noun",
+      "registerNotes": "I don't have any coins.（小銭がありません）",
+      "audio": "audio/en/words/w-coins.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-notes",
+      "english": "notes",
+      "japanese": "紙幣、お札",
+      "pos": "noun",
+      "registerNotes": "a twenty-dollar note（20ドル札）",
+      "pitfallNote": "アメリカでは bill と言います。",
+      "audio": "audio/en/words/w-notes.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-total",
+      "english": "total",
+      "japanese": "合計",
+      "pos": "noun",
+      "registerNotes": "That's twenty dollars in total.（合計で20ドルです）",
+      "audio": "audio/en/words/w-total.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-gst",
+      "english": "GST",
+      "japanese": "消費税",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドの消費税（15%）。値札の金額にはふつう GST が含まれています。",
+      "audio": "audio/en/words/w-gst.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-insert",
+      "english": "insert",
+      "japanese": "（カードを）差し込む",
+      "pos": "verb",
+      "registerNotes": "Insert your card.（カードを差し込んでください）",
+      "audio": "audio/en/words/w-insert.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-swipe",
+      "english": "swipe",
+      "japanese": "（カードを）スライドさせる",
+      "pos": "verb",
+      "registerNotes": "swipe your card（カードを通す）",
+      "audio": "audio/en/words/w-swipe.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-declined",
+      "english": "declined",
+      "japanese": "（カードが）承認されない",
+      "pos": "adjective",
+      "registerNotes": "Sorry, your card's been declined.（申し訳ありません、カードが通りませんでした）",
+      "audio": "audio/en/words/w-declined.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-split-the-bill",
+      "english": "split the bill",
+      "japanese": "割り勘にする",
+      "pos": "phrase",
+      "registerNotes": "Can we split the bill?（別々に払えますか？／割り勘にできますか？）",
+      "audio": "audio/en/words/w-split-the-bill.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tip",
+      "english": "tip",
+      "japanese": "チップ",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドでは、チップはふつう必要ありません。",
+      "audio": "audio/en/words/w-tip.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cost",
+      "english": "cost",
+      "japanese": "（費用が）かかる",
+      "pos": "verb",
+      "registerNotes": "How much does it cost?（いくらかかりますか？）",
+      "audio": "audio/en/words/w-cost.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-afford",
+      "english": "afford",
+      "japanese": "（買う）余裕がある",
+      "pos": "verb",
+      "registerNotes": "I can't afford it.（高くて買えません）",
+      "audio": "audio/en/words/w-afford.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-save",
+      "english": "save",
+      "japanese": "貯める、節約する",
+      "pos": "verb",
+      "registerNotes": "save money（お金を貯める）",
+      "audio": "audio/en/words/w-save.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-spend",
+      "english": "spend",
+      "japanese": "（お金を）使う、（時間を）過ごす",
+      "pos": "verb",
+      "registerNotes": "spend money（お金を使う）。過去形は spent。",
+      "audio": "audio/en/words/w-spend.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-owe",
+      "english": "owe",
+      "japanese": "（お金を）払う必要がある",
+      "pos": "verb",
+      "registerNotes": "How much do I owe you?（いくらお支払いすればいいですか？）",
+      "audio": "audio/en/words/w-owe.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-worth",
+      "english": "worth",
+      "japanese": "〜の価値がある",
+      "pos": "adjective",
+      "registerNotes": "It's worth it.（その価値はあります）",
+      "audio": "audio/en/words/w-worth.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bargain",
+      "english": "bargain",
+      "japanese": "お買い得品",
+      "pos": "noun",
+      "registerNotes": "It's a bargain!（お買い得！）",
+      "audio": "audio/en/words/w-bargain.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-rip-off",
+      "english": "rip-off",
+      "japanese": "ぼったくり",
+      "pos": "noun",
+      "registerNotes": "That's a rip-off!（高すぎる！）",
+      "audio": "audio/en/words/w-rip-off.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-free",
+      "english": "free",
+      "japanese": "無料の",
+      "pos": "adjective",
+      "registerNotes": "It's free.（無料です）",
+      "pitfallNote": "free は「自由な」「空いている」の意味もあります。「タダで」は for free です。",
+      "audio": "audio/en/words/w-free.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-extra",
+      "english": "extra",
+      "japanese": "追加の、別料金の",
+      "pos": "adjective",
+      "registerNotes": "Is that extra?（それは別料金ですか？）",
+      "audio": "audio/en/words/w-extra.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-included",
+      "english": "included",
+      "japanese": "含まれている",
+      "pos": "adjective",
+      "registerNotes": "Is GST included?（消費税は含まれていますか？）",
+      "audio": "audio/en/words/w-included.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bank",
+      "english": "bank",
+      "japanese": "銀行",
+      "pos": "noun",
+      "audio": "audio/en/words/w-bank.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-atm",
+      "english": "ATM",
+      "japanese": "ATM（現金自動預け払い機）",
+      "pos": "noun",
+      "registerNotes": "cash machine とも言います。",
+      "audio": "audio/en/words/w-atm.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-account",
+      "english": "account",
+      "japanese": "口座、アカウント",
+      "pos": "noun",
+      "registerNotes": "bank account（銀行口座）",
+      "audio": "audio/en/words/w-account.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-fee",
+      "english": "fee",
+      "japanese": "手数料、料金",
+      "pos": "noun",
+      "registerNotes": "Is there a fee?（手数料はかかりますか？）",
+      "audio": "audio/en/words/w-fee.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-budget",
+      "english": "budget",
+      "japanese": "予算",
+      "pos": "noun",
+      "registerNotes": "What's your budget?（ご予算は？）",
+      "audio": "audio/en/words/w-budget.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "con-do",
+  "connector": "Do / Does / Did…?",
+  "gloss": "動詞の質問の形",
+  "title": "Do / Does / Did…? — 動詞の質問の形",
+  "pattern": "Do ／ Does ／ Did ＋ 主語 ＋ 動詞 ...?",
+  "explanation": "be動詞（is, are）以外の動詞で質問する時は、文の最初に Do（今のこと）、Does（主語が he, she, it の時）、Did（過去のこと）を置きます。後ろの動詞は原形のままです：Does it come with chips?（ポテトは付いてきますか？）",
+  "natural": "お店での質問の多くはこの形です：Do you take cards?（カードは使えますか？）、Does this bus go to the airport?（このバスは空港に行きますか？）",
+  "stiff": "Is it come with chips? のように be動詞を混ぜるのはよくあるまちがい。動詞の質問には Do / Does / Did を使います。",
+  "examples": [
+    {
+      "id": "cx-do-1",
+      "english": "Does it come with chips?",
+      "japanese": "ポテトは付いてきますか？",
+      "chunks": [
+        {
+          "t": "Does it "
+        },
+        {
+          "t": "come ",
+          "w": "w-come"
+        },
+        {
+          "t": "with chips?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Does",
+        "after": " it come with chips?",
+        "options": [
+          "Does",
+          "Is",
+          "Do"
+        ],
+        "why": "主語が it で、動詞（come）の質問なので Does。"
+      },
+      "audio": "audio/en/connectors/cx-do-1.mp3",
+      "tags": [
+        "語順",
+        "Do / Does / Did…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-do-2",
+      "english": "Do you take cards?",
+      "japanese": "カードは使えますか？",
+      "chunks": [
+        {
+          "t": "Do you "
+        },
+        {
+          "t": "take ",
+          "w": "w-take"
+        },
+        {
+          "t": "cards?",
+          "w": "w-card"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Do",
+        "after": " you take cards?",
+        "options": [
+          "Do",
+          "Are",
+          "Does"
+        ],
+        "why": "主語が you なので Do。"
+      },
+      "audio": "audio/en/connectors/cx-do-2.mp3",
+      "tags": [
+        "語順",
+        "Do / Does / Did…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-do-3",
+      "english": "Did you find everything OK?",
+      "japanese": "お探しの物は見つかりましたか？",
+      "chunks": [
+        {
+          "t": "Did you "
+        },
+        {
+          "t": "find ",
+          "w": "w-find"
+        },
+        {
+          "t": "everything OK?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Did",
+        "after": " you find everything OK?",
+        "options": [
+          "Did",
+          "Do",
+          "Were"
+        ],
+        "why": "過去のことなので Did。後ろの find は原形のままです。"
+      },
+      "audio": "audio/en/connectors/cx-do-3.mp3",
+      "tags": [
+        "語順",
+        "Do / Does / Did…?"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-do-4",
+      "english": "Does this bus go to the airport?",
+      "japanese": "このバスは空港に行きますか？",
+      "chunks": [
+        {
+          "t": "Does this bus "
+        },
+        {
+          "t": "go ",
+          "w": "w-go"
+        },
+        {
+          "t": "to the airport?"
+        }
+      ],
+      "gap": {
+        "before": "Does this bus ",
+        "answer": "go",
+        "after": " to the airport?",
+        "options": [
+          "go",
+          "goes",
+          "going"
+        ],
+        "why": "Does を使ったら、後ろの動詞は原形（go）に戻ります。"
+      },
+      "audio": "audio/en/connectors/cx-do-4.mp3",
+      "tags": [
+        "語順",
+        "Do / Does / Did…?"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,558 @@
+{
+  "schemaVersion": 1,
+  "id": "words-katakana",
+  "title": "カタカナ英語",
+  "description": "日本語のカタカナ語と、英語の言い方がちがう単語。そのまま言うと通じなかったり、意味が変わったりします。",
+  "items": [
+    {
+      "id": "w-complaint",
+      "english": "complaint",
+      "japanese": "苦情（クレーム）",
+      "pos": "noun",
+      "registerNotes": "I'd like to make a complaint.（苦情を言いたいのですが）",
+      "pitfallNote": "「クレーム」は和製英語。英語の claim は「主張する」という意味です。",
+      "audio": "audio/en/words/w-complaint.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-flat",
+      "english": "flat",
+      "japanese": "アパート、マンション",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドでは、アパートもマンションも flat。",
+      "pitfallNote": "英語の mansion は「豪邸」。日本のマンションは flat や apartment です。",
+      "audio": "audio/en/words/w-flat.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-power-point",
+      "english": "power point",
+      "japanese": "コンセント",
+      "pos": "noun",
+      "registerNotes": "Is there a power point I can use?（使えるコンセントはありますか？）。アメリカでは outlet。",
+      "pitfallNote": "「コンセント」は和製英語。英語の consent は「同意」です。",
+      "audio": "audio/en/words/w-power-point.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-signature",
+      "english": "signature",
+      "japanese": "（書類の）サイン、署名",
+      "pos": "noun",
+      "registerNotes": "Can I have your signature here?（こちらにサインをお願いします）",
+      "pitfallNote": "書類のサインは signature。有名人のサインは autograph。sign は「署名する」という動詞や「標識」です。",
+      "audio": "audio/en/words/w-signature.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-laptop",
+      "english": "laptop",
+      "japanese": "ノートパソコン",
+      "pos": "noun",
+      "pitfallNote": "「ノートパソコン」は和製英語。英語の notebook はノートのことです。",
+      "audio": "audio/en/words/w-laptop.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-phone",
+      "english": "phone",
+      "japanese": "スマホ、携帯電話",
+      "pos": "noun",
+      "registerNotes": "mobile とも言います。My phone's dead.（スマホの電池が切れました）",
+      "pitfallNote": "「スマホ」は通じません。phone か mobile と言いましょう。",
+      "audio": "audio/en/words/w-phone.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-petrol-station",
+      "english": "petrol station",
+      "japanese": "ガソリンスタンド",
+      "pos": "noun",
+      "registerNotes": "アメリカでは gas station。",
+      "pitfallNote": "「ガソリンスタンド」は和製英語。ニュージーランドではガソリンを petrol と言います。",
+      "audio": "audio/en/words/w-petrol-station.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-stapler",
+      "english": "stapler",
+      "japanese": "ホッチキス",
+      "pos": "noun",
+      "pitfallNote": "「ホッチキス」は人名から来た和製英語。英語では stapler です。",
+      "audio": "audio/en/words/w-stapler.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-plastic-bag",
+      "english": "plastic bag",
+      "japanese": "ビニール袋",
+      "pos": "noun",
+      "pitfallNote": "「ビニール」は vinyl から。ふつうの袋は plastic bag と言います。",
+      "audio": "audio/en/words/w-plastic-bag.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-part-time-job",
+      "english": "part-time job",
+      "japanese": "アルバイト",
+      "pos": "noun",
+      "registerNotes": "I have a part-time job at a café.（カフェでアルバイトをしています）",
+      "pitfallNote": "「アルバイト」はドイツ語から来た言葉で、英語では通じません。",
+      "audio": "audio/en/words/w-part-time-job.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-one-size",
+      "english": "one size",
+      "japanese": "フリーサイズ",
+      "pos": "noun",
+      "registerNotes": "one size fits all（フリーサイズ）",
+      "pitfallNote": "「フリーサイズ」は和製英語。free size とは言いません。",
+      "audio": "audio/en/words/w-one-size.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-on-the-house",
+      "english": "on the house",
+      "japanese": "（お店からの）サービス、無料",
+      "pos": "phrase",
+      "registerNotes": "This one's on the house.（これはサービスです）",
+      "pitfallNote": "無料の「サービス」を service とは言いません。free か on the house です。",
+      "audio": "audio/en/words/w-on-the-house.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-plastic-bottle",
+      "english": "plastic bottle",
+      "japanese": "ペットボトル",
+      "pos": "noun",
+      "pitfallNote": "「ペットボトル」は和製英語。英語では plastic bottle、または単に bottle です。",
+      "audio": "audio/en/words/w-plastic-bottle.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-reception",
+      "english": "reception",
+      "japanese": "（ホテルの）フロント、受付",
+      "pos": "noun",
+      "registerNotes": "アメリカでは front desk。",
+      "pitfallNote": "「フロント」だけでは通じません。reception か front desk です。",
+      "audio": "audio/en/words/w-reception.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pram",
+      "english": "pram",
+      "japanese": "ベビーカー",
+      "pos": "noun",
+      "registerNotes": "buggy や pushchair とも言います。アメリカでは stroller。",
+      "pitfallNote": "「ベビーカー」は和製英語。baby car とは言いません。",
+      "audio": "audio/en/words/w-pram.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-security-guard",
+      "english": "security guard",
+      "japanese": "ガードマン、警備員",
+      "pos": "noun",
+      "pitfallNote": "「ガードマン」は和製英語。英語では security guard です。",
+      "audio": "audio/en/words/w-security-guard.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-buffet",
+      "english": "buffet",
+      "japanese": "バイキング（食べ放題）",
+      "pos": "noun",
+      "registerNotes": "発音は「バフェイ」に近いです。",
+      "pitfallNote": "「バイキング」は和製英語。英語の Viking は北欧の海賊のことです。",
+      "audio": "audio/en/words/w-buffet.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cards",
+      "english": "cards",
+      "japanese": "トランプ",
+      "pos": "noun",
+      "registerNotes": "play cards（トランプをする）",
+      "pitfallNote": "「トランプ」は英語では cards。trump は「切り札」です。",
+      "audio": "audio/en/words/w-cards.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-dress",
+      "english": "dress",
+      "japanese": "ワンピース",
+      "pos": "noun",
+      "pitfallNote": "「ワンピース」は和製英語。女性のワンピースは dress です。",
+      "audio": "audio/en/words/w-dress.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-jeans",
+      "english": "jeans",
+      "japanese": "ジーンズ、ジーパン",
+      "pos": "noun",
+      "registerNotes": "a pair of jeans（ジーンズ1本）",
+      "pitfallNote": "「ジーパン」は和製英語。いつも複数形の jeans です。",
+      "audio": "audio/en/words/w-jeans.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-shirt",
+      "english": "shirt",
+      "japanese": "ワイシャツ、シャツ",
+      "pos": "noun",
+      "pitfallNote": "「ワイシャツ」は white shirt から。英語では shirt です。",
+      "audio": "audio/en/words/w-shirt.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-steering-wheel",
+      "english": "steering wheel",
+      "japanese": "（車の）ハンドル",
+      "pos": "noun",
+      "pitfallNote": "英語の handle は「取っ手」。車のハンドルは steering wheel です。",
+      "audio": "audio/en/words/w-steering-wheel.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-heat-pump",
+      "english": "heat pump",
+      "japanese": "エアコン（冷暖房）",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドの家では、エアコンを heat pump と呼ぶことが多いです。air con とも言います。",
+      "pitfallNote": "「エアコン」と言っても通じにくいことがあります。",
+      "audio": "audio/en/words/w-heat-pump.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-convenience-store",
+      "english": "convenience store",
+      "japanese": "コンビニ",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドでは、小さな商店を dairy と呼びます。",
+      "pitfallNote": "「コンビニ」は通じません。convenience store と言います。",
+      "audio": "audio/en/words/w-convenience-store.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-website",
+      "english": "website",
+      "japanese": "ホームページ",
+      "pos": "noun",
+      "pitfallNote": "英語の homepage はサイトのトップページのこと。サイト全体は website です。",
+      "audio": "audio/en/words/w-website.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-computer",
+      "english": "computer",
+      "japanese": "パソコン",
+      "pos": "noun",
+      "pitfallNote": "「パソコン」は personal computer から。英語では computer や laptop です。",
+      "audio": "audio/en/words/w-computer.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-excited",
+      "english": "excited",
+      "japanese": "わくわくしている、テンションが高い",
+      "pos": "adjective",
+      "registerNotes": "I'm so excited!（すごく楽しみ！）",
+      "pitfallNote": "「テンションが高い」を high tension とは言いません。英語の tension は「緊張」です。",
+      "audio": "audio/en/words/w-excited.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-own-pace",
+      "english": "at my own pace",
+      "japanese": "マイペースで",
+      "pos": "phrase",
+      "registerNotes": "I like to do things at my own pace.（自分のペースでやるのが好きです）",
+      "pitfallNote": "「マイペース」は和製英語。my pace とは言いません。",
+      "audio": "audio/en/words/w-own-pace.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-never-mind",
+      "english": "never mind",
+      "japanese": "気にしないで（ドンマイ）",
+      "pos": "phrase",
+      "registerNotes": "Never mind.（気にしないで）。Don't worry about it. とも言います。",
+      "pitfallNote": "「ドンマイ」は don't mind から来た和製英語で、英語の励ましには使いません。",
+      "audio": "audio/en/words/w-never-mind.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-allergy",
+      "english": "allergy",
+      "japanese": "アレルギー",
+      "pos": "noun",
+      "registerNotes": "I have a nut allergy.（ナッツアレルギーがあります）",
+      "pitfallNote": "発音は「アラジー」。「アレルギー」と言うと通じにくいです。",
+      "audio": "audio/en/words/w-allergy.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-energy",
+      "english": "energy",
+      "japanese": "エネルギー、元気",
+      "pos": "noun",
+      "pitfallNote": "発音は「エナジー」。「エネルギー」はドイツ語読みです。",
+      "audio": "audio/en/words/w-energy.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-virus",
+      "english": "virus",
+      "japanese": "ウイルス",
+      "pos": "noun",
+      "pitfallNote": "発音は「ヴァイラス」。「ウイルス」では通じません。",
+      "audio": "audio/en/words/w-virus.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-label",
+      "english": "label",
+      "japanese": "ラベル、表示",
+      "pos": "noun",
+      "registerNotes": "Check the label.（ラベルを確認してください）",
+      "pitfallNote": "発音は「レイブル」に近く、最初を強く読みます。",
+      "audio": "audio/en/words/w-label.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-vitamin",
+      "english": "vitamin",
+      "japanese": "ビタミン",
+      "pos": "noun",
+      "pitfallNote": "発音は「ヴィタミン」や「ヴァイタミン」。「ビ」ではなく「ヴィ」です。",
+      "audio": "audio/en/words/w-vitamin.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-theme",
+      "english": "theme",
+      "japanese": "テーマ",
+      "pos": "noun",
+      "pitfallNote": "発音は「スィーム」。「テーマ」はドイツ語読みです。",
+      "audio": "audio/en/words/w-theme.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-coffee",
+      "english": "coffee",
+      "japanese": "コーヒー",
+      "pos": "noun",
+      "pitfallNote": "発音は「カフィ」に近く、「コーヒー」と伸ばすと通じにくいことがあります。",
+      "audio": "audio/en/words/w-coffee.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-chocolate",
+      "english": "chocolate",
+      "japanese": "チョコレート",
+      "pos": "noun",
+      "pitfallNote": "発音は「チョクレット」。最初を強く読みます。",
+      "audio": "audio/en/words/w-chocolate.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-salad",
+      "english": "salad",
+      "japanese": "サラダ",
+      "pos": "noun",
+      "pitfallNote": "発音は「サラッド」。最初を強く読みます。",
+      "audio": "audio/en/words/w-salad.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yoghurt",
+      "english": "yoghurt",
+      "japanese": "ヨーグルト",
+      "pos": "noun",
+      "pitfallNote": "発音は「ヨガート」に近いです。ニュージーランドのつづりは yoghurt（アメリカでは yogurt）。",
+      "audio": "audio/en/words/w-yoghurt.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mug",
+      "english": "mug",
+      "japanese": "マグカップ",
+      "pos": "noun",
+      "pitfallNote": "英語では mug だけで「マグカップ」。mug cup とは言いません。",
+      "audio": "audio/en/words/w-mug.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sale",
+      "english": "sale",
+      "japanese": "セール",
+      "pos": "noun",
+      "registerNotes": "The sale ends on Sunday.（セールは日曜日までです）",
+      "pitfallNote": "on sale は「特価で」、for sale は「売り物」。意味がちがいます。",
+      "audio": "audio/en/words/w-sale.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cheating",
+      "english": "cheating",
+      "japanese": "カンニング、ずる",
+      "pos": "noun",
+      "pitfallNote": "「カンニング」は和製英語。英語の cunning は「ずる賢い」という意味です。",
+      "audio": "audio/en/words/w-cheating.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-slim",
+      "english": "slim",
+      "japanese": "（体型が）スマート、細い",
+      "pos": "adjective",
+      "pitfallNote": "体型が細いことを smart とは言いません。英語の smart は「頭がいい」「おしゃれな」です。",
+      "audio": "audio/en/words/w-slim.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-renovation",
+      "english": "renovation",
+      "japanese": "リフォーム",
+      "pos": "noun",
+      "pitfallNote": "英語の reform は「改革」。家の改装は renovation です。",
+      "audio": "audio/en/words/w-renovation.mp3",
+      "tags": [
+        "カタカナ英語"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

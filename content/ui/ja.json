@@ -286,5 +286,12 @@
   "offline.toPicker": "言語選択に戻る",
   "audio.playSlow": "「{text}」をゆっくり再生",
   "study.playSlow": "🐢 ゆっくり",
-  "scenario.listenSlow": "🐢 ゆっくり"
+  "scenario.listenSlow": "🐢 ゆっくり",
+  "drill.say": "{lang}で言ってみましょう",
+  "drill.sayHint": "まず声に出して言ってから、答えを見ましょう。",
+  "drill.reveal": "答えを見る",
+  "drill.saidIt": "言えた",
+  "drill.notYet": "まだ言えない",
+  "drill.saidRight": "✓ その調子！",
+  "drill.saidWrong": "復習に入れました。すぐにまた出てきます。"
 }

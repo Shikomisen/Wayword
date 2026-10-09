@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "con-wouldyoumind",
+  "connector": "Would you mind…?",
+  "gloss": "〜していただいてもいいですか（とてもていねい）",
+  "title": "Would you mind…? — 〜していただいてもいいですか（とてもていねい）",
+  "pattern": "Would you mind ＋ 動詞-ing ...?",
+  "explanation": "Would you mind ...ing? は「〜していただけませんか」という、とてもていねいな頼み方です。直訳は「〜するのは嫌ですか？」。後ろの動詞は -ing の形になります。引き受ける時は No, not at all.（全然かまいません）や Sure. と答えます。",
+  "natural": "相手に手間をかけさせる時や、少し大きなお願いをする時に。店員さんにも知らない人にも使えます。",
+  "stiff": "答え方に注意。Would you mind ...? と聞かれて Yes. と答えると「嫌です」という意味になってしまいます。OK なら Not at all. や No problem.",
+  "examples": [
+    {
+      "id": "cx-wouldyoumind-1",
+      "english": "Would you mind waiting a moment?",
+      "japanese": "少しお待ちいただけますか？",
+      "chunks": [
+        {
+          "t": "Would you mind "
+        },
+        {
+          "t": "waiting ",
+          "w": "w-wait"
+        },
+        {
+          "t": "a moment?"
+        }
+      ],
+      "gap": {
+        "before": "Would you mind ",
+        "answer": "waiting",
+        "after": " a moment?",
+        "options": [
+          "waiting",
+          "to wait",
+          "wait"
+        ],
+        "why": "Would you mind の後ろは -ing の形です。"
+      },
+      "audio": "audio/en/connectors/cx-wouldyoumind-1.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "Would you mind…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-wouldyoumind-2",
+      "english": "Would you mind checking the price for me?",
+      "japanese": "値段を確認していただけますか？",
+      "chunks": [
+        {
+          "t": "Would you mind "
+        },
+        {
+          "t": "checking ",
+          "w": "w-check"
+        },
+        {
+          "t": "the price for me?",
+          "w": "w-price"
+        }
+      ],
+      "gap": {
+        "before": "Would you ",
+        "answer": "mind",
+        "after": " checking the price for me?",
+        "options": [
+          "mind",
+          "like",
+          "want"
+        ],
+        "why": "Would you mind ...ing? で「〜していただけますか」。Would you like は「〜はいかがですか」とすすめる言い方です。"
+      },
+      "audio": "audio/en/connectors/cx-wouldyoumind-2.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "Would you mind…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-wouldyoumind-3",
+      "english": "Would you mind taking a photo of us?",
+      "japanese": "私たちの写真を撮っていただけますか？",
+      "chunks": [
+        {
+          "t": "Would you mind "
+        },
+        {
+          "t": "taking ",
+          "w": "w-take"
+        },
+        {
+          "t": "a photo of us?"
+        }
+      ],
+      "gap": {
+        "before": "Would you mind taking a photo ",
+        "answer": "of",
+        "after": " us?",
+        "options": [
+          "of",
+          "for",
+          "to"
+        ],
+        "why": "a photo of us で「私たちの写真」。"
+      },
+      "audio": "audio/en/connectors/cx-wouldyoumind-3.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "Would you mind…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-wouldyoumind-4",
+      "english": "Would you mind closing the door? — Not at all.",
+      "japanese": "ドアを閉めていただけますか？ — ええ、いいですよ。",
+      "chunks": [
+        {
+          "t": "Would you mind "
+        },
+        {
+          "t": "closing ",
+          "w": "w-close"
+        },
+        {
+          "t": "the door? "
+        },
+        {
+          "t": "— Not at all."
+        }
+      ],
+      "gap": {
+        "before": "Would you mind closing the door? — ",
+        "answer": "Not at all",
+        "after": ".",
+        "options": [
+          "Not at all",
+          "Yes, I do",
+          "Yes, I mind"
+        ],
+        "why": "mind は「嫌だと思う」。引き受ける時は Not at all（全然嫌じゃない）と答えます。"
+      },
+      "audio": "audio/en/connectors/cx-wouldyoumind-4.mp3",
+      "tags": [
+        "ていねいな言い方",
+        "Would you mind…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

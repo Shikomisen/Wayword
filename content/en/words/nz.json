@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "id": "words-nz",
+  "title": "ニュージーランドの言葉",
+  "description": "ニュージーランドでよく聞く言葉。マオリ語から来た言葉もあります。",
+  "items": [
+    {
+      "id": "w-kia-ora",
+      "english": "kia ora",
+      "japanese": "こんにちは（マオリ語）",
+      "pos": "phrase",
+      "registerNotes": "マオリ語のあいさつ。「ありがとう」の意味でも使います。お店や放送でもよく聞きます。",
+      "audio": "audio/en/words/w-kia-ora.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-heaps",
+      "english": "heaps",
+      "japanese": "たくさん、とても",
+      "pos": "adverb",
+      "registerNotes": "heaps of time（時間はたっぷり）、Thanks heaps!（本当にありがとう！）",
+      "audio": "audio/en/words/w-heaps.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-keen",
+      "english": "keen",
+      "japanese": "乗り気だ、〜したい",
+      "pos": "adjective",
+      "registerNotes": "Are you keen?（行く？／やる？）— 誘う時によく使います。I'm keen!（行きたい！）",
+      "audio": "audio/en/words/w-keen.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-reckon",
+      "english": "reckon",
+      "japanese": "〜だと思う",
+      "pos": "verb",
+      "registerNotes": "I reckon it'll rain.（雨が降ると思う）— think のくだけた言い方。",
+      "audio": "audio/en/words/w-reckon.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sweet-as",
+      "english": "sweet as",
+      "japanese": "いいね、問題ない",
+      "pos": "phrase",
+      "registerNotes": "「了解」「いいよ」のくだけた言い方。as の後ろには何も続きません。",
+      "audio": "audio/en/words/w-sweet-as.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-no-worries",
+      "english": "no worries",
+      "japanese": "大丈夫、どういたしまして",
+      "pos": "phrase",
+      "registerNotes": "Thank you! — No worries!（どういたしまして！）。謝られた時の「気にしないで」にも。",
+      "audio": "audio/en/words/w-no-worries.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-togs",
+      "english": "togs",
+      "japanese": "水着",
+      "pos": "noun",
+      "registerNotes": "海やプールに行く時の必需品。アメリカでは swimsuit。",
+      "audio": "audio/en/words/w-togs.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-dairy-shop",
+      "english": "dairy",
+      "japanese": "街角の小さな商店",
+      "pos": "noun",
+      "registerNotes": "牛乳やパン、お菓子などを売る小さなお店。the dairy on the corner（角の商店）",
+      "pitfallNote": "カフェで見る dairy（乳製品）とは別の意味です。",
+      "audio": "audio/en/words/w-dairy-shop.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-chilly-bin",
+      "english": "chilly bin",
+      "japanese": "クーラーボックス",
+      "pos": "noun",
+      "registerNotes": "ピクニックや海に持っていく保冷箱。アメリカでは cooler。",
+      "audio": "audio/en/words/w-chilly-bin.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bach",
+      "english": "bach",
+      "japanese": "別荘、週末用の小さな家",
+      "pos": "noun",
+      "registerNotes": "発音は「バッチ」。南島では crib とも言います。",
+      "audio": "audio/en/words/w-bach.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tramping",
+      "english": "tramping",
+      "japanese": "山歩き、ハイキング",
+      "pos": "noun",
+      "registerNotes": "go tramping（山歩きに行く）。アメリカでは hiking。",
+      "audio": "audio/en/words/w-tramping.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ute",
+      "english": "ute",
+      "japanese": "小型トラック（ピックアップ）",
+      "pos": "noun",
+      "registerNotes": "utility vehicle の略で、「ユート」と読みます。",
+      "audio": "audio/en/words/w-ute.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kai",
+      "english": "kai",
+      "japanese": "食べ物、ごはん",
+      "pos": "noun",
+      "registerNotes": "マオリ語で「食べ物」。Let's get some kai.（何か食べよう）",
+      "audio": "audio/en/words/w-kai.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-whanau",
+      "english": "whānau",
+      "japanese": "家族、身内",
+      "pos": "noun",
+      "registerNotes": "マオリ語で「（親戚も含めた）家族」。「ファーナウ」と読みます。",
+      "audio": "audio/en/words/w-whanau.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chur",
+      "english": "chur",
+      "japanese": "ありがとう、いいね",
+      "pos": "phrase",
+      "registerNotes": "とてもくだけた「ありがとう」。若い人がよく使います。",
+      "audio": "audio/en/words/w-chur.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-stoked",
+      "english": "stoked",
+      "japanese": "すごくうれしい",
+      "pos": "adjective",
+      "registerNotes": "I'm stoked!（めっちゃうれしい！）",
+      "audio": "audio/en/words/w-stoked.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gutted",
+      "english": "gutted",
+      "japanese": "がっかりした、残念な",
+      "pos": "adjective",
+      "registerNotes": "I'm gutted.（すごく残念）",
+      "audio": "audio/en/words/w-gutted.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-arvo",
+      "english": "arvo",
+      "japanese": "午後",
+      "pos": "noun",
+      "registerNotes": "afternoon のくだけた言い方。this arvo（今日の午後）",
+      "audio": "audio/en/words/w-arvo.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cuppa",
+      "english": "cuppa",
+      "japanese": "（紅茶などの）一杯",
+      "pos": "noun",
+      "registerNotes": "Do you want a cuppa?（お茶でもどう？）— a cup of tea のくだけた言い方。",
+      "audio": "audio/en/words/w-cuppa.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tea-dinner",
+      "english": "tea",
+      "japanese": "（家庭の）夕食",
+      "pos": "noun",
+      "registerNotes": "What's for tea?（夕飯なに？）— 家庭では夕食を tea と言うことがあります。",
+      "pitfallNote": "紅茶の tea と同じ言葉。「お茶」か「夕食」かは話の流れで判断します。",
+      "audio": "audio/en/words/w-tea-dinner.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-lollies",
+      "english": "lollies",
+      "japanese": "お菓子（あめ・グミなど）",
+      "pos": "noun",
+      "registerNotes": "アメリカでは candy。",
+      "audio": "audio/en/words/w-lollies.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sunnies",
+      "english": "sunnies",
+      "japanese": "サングラス",
+      "pos": "noun",
+      "registerNotes": "sunglasses のくだけた言い方。",
+      "audio": "audio/en/words/w-sunnies.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-op-shop",
+      "english": "op shop",
+      "japanese": "チャリティーショップ（古着や中古品の店）",
+      "pos": "noun",
+      "registerNotes": "opportunity shop の略。売り上げは慈善活動に使われます。",
+      "audio": "audio/en/words/w-op-shop.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-footpath",
+      "english": "footpath",
+      "japanese": "歩道",
+      "pos": "noun",
+      "registerNotes": "アメリカでは sidewalk。",
+      "audio": "audio/en/words/w-footpath.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-motorway",
+      "english": "motorway",
+      "japanese": "高速道路",
+      "pos": "noun",
+      "registerNotes": "アメリカでは highway や freeway。",
+      "audio": "audio/en/words/w-motorway.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-flatmate",
+      "english": "flatmate",
+      "japanese": "ルームメイト、同居人",
+      "pos": "noun",
+      "registerNotes": "flat（アパート）を一緒に借りて住む人。",
+      "audio": "audio/en/words/w-flatmate.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cheers",
+      "english": "cheers",
+      "japanese": "ありがとう、じゃあね、乾杯",
+      "pos": "phrase",
+      "registerNotes": "乾杯だけでなく、「ありがとう」や「じゃあね」の意味でも気軽に使います。",
+      "audio": "audio/en/words/w-cheers.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-good-as-gold",
+      "english": "good as gold",
+      "japanese": "問題ない、ばっちり",
+      "pos": "phrase",
+      "registerNotes": "How's everything? — Good as gold!（どう？ — ばっちり！）",
+      "audio": "audio/en/words/w-good-as-gold.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mate",
+      "english": "mate",
+      "japanese": "友だち、（呼びかけで）ねえ",
+      "pos": "noun",
+      "registerNotes": "Thanks, mate!（ありがとう！）— 知らない人への気さくな呼びかけにも使います。",
+      "audio": "audio/en/words/w-mate.mp3",
+      "tags": [
+        "ニュージーランド"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

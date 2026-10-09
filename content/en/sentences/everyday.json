@@ -1,0 +1,818 @@
+{
+  "schemaVersion": 1,
+  "id": "sentences-everyday",
+  "title": "毎日の文",
+  "description": "単語を組み合わせた、よく使う短い文。声に出して言えるようになるまで練習しましょう。",
+  "items": [
+    {
+      "id": "s-01",
+      "english": "I'm looking for a jacket.",
+      "japanese": "ジャケットを探しています。",
+      "chunks": [
+        {
+          "t": "I'm looking for ",
+          "w": "w-look-for"
+        },
+        {
+          "t": "a jacket.",
+          "w": "w-jacket"
+        }
+      ],
+      "audio": "audio/en/sentences/s-01.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-02",
+      "english": "Have you got any coins?",
+      "japanese": "小銭を持っていますか？",
+      "chunks": [
+        {
+          "t": "Have you got "
+        },
+        {
+          "t": "any coins?",
+          "w": "w-coins"
+        }
+      ],
+      "audio": "audio/en/sentences/s-02.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-03",
+      "english": "It's a bit too tight.",
+      "japanese": "ちょっときついです。",
+      "chunks": [
+        {
+          "t": "It's a bit "
+        },
+        {
+          "t": "too tight.",
+          "w": "w-tight"
+        }
+      ],
+      "audio": "audio/en/sentences/s-03.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-04",
+      "english": "I'll take this one.",
+      "japanese": "これにします。",
+      "chunks": [
+        {
+          "t": "I'll take ",
+          "w": "w-take"
+        },
+        {
+          "t": "this one."
+        }
+      ],
+      "audio": "audio/en/sentences/s-04.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-05",
+      "english": "I'll come back later.",
+      "japanese": "また後で来ます。",
+      "chunks": [
+        {
+          "t": "I'll come back ",
+          "w": "w-come-back"
+        },
+        {
+          "t": "later."
+        }
+      ],
+      "audio": "audio/en/sentences/s-05.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-06",
+      "english": "Can I borrow a pen?",
+      "japanese": "ペンを借りてもいいですか？",
+      "chunks": [
+        {
+          "t": "Can I borrow ",
+          "w": "w-borrow"
+        },
+        {
+          "t": "a pen?"
+        }
+      ],
+      "audio": "audio/en/sentences/s-06.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-07",
+      "english": "Sorry, I didn't catch that.",
+      "japanese": "すみません、聞き取れませんでした。",
+      "chunks": [
+        {
+          "t": "Sorry, I didn't "
+        },
+        {
+          "t": "catch that.",
+          "w": "w-catch"
+        }
+      ],
+      "audio": "audio/en/sentences/s-07.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-08",
+      "english": "Could you say that again?",
+      "japanese": "もう一度言ってもらえますか？",
+      "chunks": [
+        {
+          "t": "Could you say ",
+          "w": "w-say"
+        },
+        {
+          "t": "that again?"
+        }
+      ],
+      "audio": "audio/en/sentences/s-08.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-09",
+      "english": "What does this word mean?",
+      "japanese": "この単語はどういう意味ですか？",
+      "chunks": [
+        {
+          "t": "What does this word "
+        },
+        {
+          "t": "mean?",
+          "w": "w-mean"
+        }
+      ],
+      "audio": "audio/en/sentences/s-09.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-10",
+      "english": "I forgot my wallet.",
+      "japanese": "財布を忘れました。",
+      "chunks": [
+        {
+          "t": "I forgot ",
+          "w": "w-forget"
+        },
+        {
+          "t": "my wallet."
+        }
+      ],
+      "audio": "audio/en/sentences/s-10.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-11",
+      "english": "We've run out of milk.",
+      "japanese": "牛乳を切らしています。",
+      "chunks": [
+        {
+          "t": "We've run out of ",
+          "w": "w-run-out-of"
+        },
+        {
+          "t": "milk."
+        }
+      ],
+      "audio": "audio/en/sentences/s-11.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-12",
+      "english": "Where should I get off?",
+      "japanese": "どこで降りればいいですか？",
+      "chunks": [
+        {
+          "t": "Where should I "
+        },
+        {
+          "t": "get off?",
+          "w": "w-get-off"
+        }
+      ],
+      "audio": "audio/en/sentences/s-12.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-13",
+      "english": "I need to top up my bus card.",
+      "japanese": "バスのカードにチャージしないと。",
+      "chunks": [
+        {
+          "t": "I need to top up ",
+          "w": "w-top-up"
+        },
+        {
+          "t": "my bus card."
+        }
+      ],
+      "audio": "audio/en/sentences/s-13.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-14",
+      "english": "Could you drop me off at the station?",
+      "japanese": "駅で降ろしてもらえますか？",
+      "chunks": [
+        {
+          "t": "Could you drop me off ",
+          "w": "w-drop-off"
+        },
+        {
+          "t": "at the station?"
+        }
+      ],
+      "audio": "audio/en/sentences/s-14.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-15",
+      "english": "I'd like to book a table for two.",
+      "japanese": "2人で席を予約したいのですが。",
+      "chunks": [
+        {
+          "t": "I'd like to book ",
+          "w": "w-book"
+        },
+        {
+          "t": "a table for two."
+        }
+      ],
+      "audio": "audio/en/sentences/s-15.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-16",
+      "english": "Is there a power point I can use?",
+      "japanese": "使えるコンセントはありますか？",
+      "chunks": [
+        {
+          "t": "Is there a power point ",
+          "w": "w-power-point"
+        },
+        {
+          "t": "I can use?",
+          "w": "w-use"
+        }
+      ],
+      "audio": "audio/en/sentences/s-16.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-17",
+      "english": "My phone is about to die.",
+      "japanese": "スマホの電池が切れそうです。",
+      "chunks": [
+        {
+          "t": "My phone ",
+          "w": "w-phone"
+        },
+        {
+          "t": "is about to die."
+        }
+      ],
+      "audio": "audio/en/sentences/s-17.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-18",
+      "english": "I have a nut allergy.",
+      "japanese": "ナッツアレルギーがあります。",
+      "chunks": [
+        {
+          "t": "I have a nut "
+        },
+        {
+          "t": "allergy.",
+          "w": "w-allergy"
+        }
+      ],
+      "audio": "audio/en/sentences/s-18.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-19",
+      "english": "Is GST included?",
+      "japanese": "消費税は含まれていますか？",
+      "chunks": [
+        {
+          "t": "Is GST ",
+          "w": "w-gst"
+        },
+        {
+          "t": "included?",
+          "w": "w-included"
+        }
+      ],
+      "audio": "audio/en/sentences/s-19.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-20",
+      "english": "Can we split the bill?",
+      "japanese": "別々に払えますか？",
+      "chunks": [
+        {
+          "t": "Can we "
+        },
+        {
+          "t": "split the bill?",
+          "w": "w-split-the-bill"
+        }
+      ],
+      "audio": "audio/en/sentences/s-20.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-21",
+      "english": "How much do I owe you?",
+      "japanese": "いくらお支払いすればいいですか？",
+      "chunks": [
+        {
+          "t": "How much do I "
+        },
+        {
+          "t": "owe you?",
+          "w": "w-owe"
+        }
+      ],
+      "audio": "audio/en/sentences/s-21.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-22",
+      "english": "I can't afford it right now.",
+      "japanese": "今は高くて買えません。",
+      "chunks": [
+        {
+          "t": "I can't afford ",
+          "w": "w-afford"
+        },
+        {
+          "t": "it right now."
+        }
+      ],
+      "audio": "audio/en/sentences/s-22.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-23",
+      "english": "That's a real bargain.",
+      "japanese": "それは本当にお買い得ですね。",
+      "chunks": [
+        {
+          "t": "That's a real "
+        },
+        {
+          "t": "bargain.",
+          "w": "w-bargain"
+        }
+      ],
+      "audio": "audio/en/sentences/s-23.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-24",
+      "english": "Are you keen to go tramping?",
+      "japanese": "山歩きに行かない？",
+      "chunks": [
+        {
+          "t": "Are you keen ",
+          "w": "w-keen"
+        },
+        {
+          "t": "to go tramping?",
+          "w": "w-tramping"
+        }
+      ],
+      "audio": "audio/en/sentences/s-24.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-25",
+      "english": "I reckon it'll rain this arvo.",
+      "japanese": "今日の午後は雨が降ると思う。",
+      "chunks": [
+        {
+          "t": "I reckon it'll rain ",
+          "w": "w-reckon"
+        },
+        {
+          "t": "this arvo.",
+          "w": "w-arvo"
+        }
+      ],
+      "audio": "audio/en/sentences/s-25.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-26",
+      "english": "Do you want a cuppa?",
+      "japanese": "お茶でもどう？",
+      "chunks": [
+        {
+          "t": "Do you want ",
+          "w": "w-want"
+        },
+        {
+          "t": "a cuppa?",
+          "w": "w-cuppa"
+        }
+      ],
+      "audio": "audio/en/sentences/s-26.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-27",
+      "english": "Thanks heaps!",
+      "japanese": "本当にありがとう！",
+      "chunks": [
+        {
+          "t": "Thanks "
+        },
+        {
+          "t": "heaps!",
+          "w": "w-heaps"
+        }
+      ],
+      "audio": "audio/en/sentences/s-27.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-28",
+      "english": "I'm so excited about the trip.",
+      "japanese": "旅行がすごく楽しみです。",
+      "chunks": [
+        {
+          "t": "I'm so excited ",
+          "w": "w-excited"
+        },
+        {
+          "t": "about the trip."
+        }
+      ],
+      "audio": "audio/en/sentences/s-28.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-29",
+      "english": "I have a part-time job at a café.",
+      "japanese": "カフェでアルバイトをしています。",
+      "chunks": [
+        {
+          "t": "I have a part-time job ",
+          "w": "w-part-time-job"
+        },
+        {
+          "t": "at a café."
+        }
+      ],
+      "audio": "audio/en/sentences/s-29.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-30",
+      "english": "We live in a flat in town.",
+      "japanese": "街のアパートに住んでいます。",
+      "chunks": [
+        {
+          "t": "We live in a flat ",
+          "w": "w-flat"
+        },
+        {
+          "t": "in town."
+        }
+      ],
+      "audio": "audio/en/sentences/s-30.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-31",
+      "english": "I'd like to make a complaint.",
+      "japanese": "苦情を言いたいのですが。",
+      "chunks": [
+        {
+          "t": "I'd like to make "
+        },
+        {
+          "t": "a complaint.",
+          "w": "w-complaint"
+        }
+      ],
+      "audio": "audio/en/sentences/s-31.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-32",
+      "english": "I can't figure out how to use this.",
+      "japanese": "これの使い方がわかりません。",
+      "chunks": [
+        {
+          "t": "I can't figure out ",
+          "w": "w-figure-out"
+        },
+        {
+          "t": "how to use this.",
+          "w": "w-use"
+        }
+      ],
+      "audio": "audio/en/sentences/s-32.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-33",
+      "english": "Hold on, I'll check.",
+      "japanese": "ちょっと待ってください、確認します。",
+      "chunks": [
+        {
+          "t": "Hold on, ",
+          "w": "w-hold-on"
+        },
+        {
+          "t": "I'll check.",
+          "w": "w-check"
+        }
+      ],
+      "audio": "audio/en/sentences/s-33.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-34",
+      "english": "I'm just looking around, thanks.",
+      "japanese": "見て回っているだけです。ありがとう。",
+      "chunks": [
+        {
+          "t": "I'm just looking around, ",
+          "w": "w-look-around"
+        },
+        {
+          "t": "thanks."
+        }
+      ],
+      "audio": "audio/en/sentences/s-34.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-35",
+      "english": "Please take off your shoes.",
+      "japanese": "靴を脱いでください。",
+      "chunks": [
+        {
+          "t": "Please take off ",
+          "w": "w-take-off"
+        },
+        {
+          "t": "your shoes.",
+          "w": "w-shoes"
+        }
+      ],
+      "audio": "audio/en/sentences/s-35.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-36",
+      "english": "Can you help me fill in this form?",
+      "japanese": "この用紙の記入を手伝ってもらえますか？",
+      "chunks": [
+        {
+          "t": "Can you help me ",
+          "w": "w-help"
+        },
+        {
+          "t": "fill in this form?",
+          "w": "w-fill-in"
+        }
+      ],
+      "audio": "audio/en/sentences/s-36.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-37",
+      "english": "I ended up buying two.",
+      "japanese": "結局2つ買いました。",
+      "chunks": [
+        {
+          "t": "I ended up ",
+          "w": "w-end-up"
+        },
+        {
+          "t": "buying two.",
+          "w": "w-buy"
+        }
+      ],
+      "audio": "audio/en/sentences/s-37.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-38",
+      "english": "Let's eat out tonight.",
+      "japanese": "今夜は外食しよう。",
+      "chunks": [
+        {
+          "t": "Let's eat out ",
+          "w": "w-eat-out"
+        },
+        {
+          "t": "tonight."
+        }
+      ],
+      "audio": "audio/en/sentences/s-38.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-39",
+      "english": "Don't worry, we'll sort it out.",
+      "japanese": "心配しないで、なんとかします。",
+      "chunks": [
+        {
+          "t": "Don't worry, "
+        },
+        {
+          "t": "we'll sort it out.",
+          "w": "w-sort-out"
+        }
+      ],
+      "audio": "audio/en/sentences/s-39.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-40",
+      "english": "I'll pick you up at six.",
+      "japanese": "6時に迎えに行くね。",
+      "chunks": [
+        {
+          "t": "I'll pick you up ",
+          "w": "w-pick-up"
+        },
+        {
+          "t": "at six."
+        }
+      ],
+      "audio": "audio/en/sentences/s-40.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-41",
+      "english": "Could you look after my bag for a minute?",
+      "japanese": "ちょっとかばんを見ていてもらえますか？",
+      "chunks": [
+        {
+          "t": "Could you look after ",
+          "w": "w-look-after"
+        },
+        {
+          "t": "my bag for a minute?",
+          "w": "w-bag"
+        }
+      ],
+      "audio": "audio/en/sentences/s-41.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-42",
+      "english": "Can you check if you have it in stock?",
+      "japanese": "在庫があるか確認してもらえますか？",
+      "chunks": [
+        {
+          "t": "Can you check ",
+          "w": "w-check"
+        },
+        {
+          "t": "if you have it in stock?"
+        }
+      ],
+      "audio": "audio/en/sentences/s-42.mp3",
+      "tags": [
+        "毎日の文"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

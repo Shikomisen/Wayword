@@ -314,5 +314,12 @@
   "offline.toPicker": "Back to languages",
   "audio.playSlow": "Play slowly: {text}",
   "study.playSlow": "🐢 Slower",
-  "scenario.listenSlow": "🐢 Slower"
+  "scenario.listenSlow": "🐢 Slower",
+  "drill.say": "Say it in {lang}",
+  "drill.sayHint": "Say it out loud first, then check.",
+  "drill.reveal": "Show the answer",
+  "drill.saidIt": "I said it",
+  "drill.notYet": "Not yet",
+  "drill.saidRight": "✓ Nice — that’s how you say it",
+  "drill.saidWrong": "It’s in your reviews now, so it’ll come back soon."
 }

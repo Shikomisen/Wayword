@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "con-youknow",
+  "connector": "you know",
+  "gloss": "ほら、〜でしょ",
+  "title": "you know — ほら、〜でしょ",
+  "pattern": "..., you know, ...",
+  "explanation": "you know は「ほら」「〜でしょ」。相手も知っていることを確かめたり、言葉を探しながら話したりする時に使います。You know what?（ねえ、聞いて）は話を切り出す決まり文句です。",
+  "natural": "言葉が出てこない時のつなぎに：It's, you know, a bit too tight.（なんていうか、ちょっときつくて）",
+  "stiff": "you know を使いすぎると、子どもっぽく聞こえることがあります。目上の人との会話では控えめに。",
+  "examples": [
+    {
+      "id": "cx-youknow-1",
+      "english": "You know, the dairy on the corner.",
+      "japanese": "ほら、角にある小さなお店ですよ。",
+      "chunks": [
+        {
+          "t": "You know, "
+        },
+        {
+          "t": "the dairy ",
+          "w": "w-dairy-shop"
+        },
+        {
+          "t": "on the corner."
+        }
+      ],
+      "gap": {
+        "before": "You know, the dairy ",
+        "answer": "on",
+        "after": " the corner.",
+        "options": [
+          "on",
+          "in",
+          "at"
+        ],
+        "why": "「角に」は on the corner。"
+      },
+      "audio": "audio/en/connectors/cx-youknow-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "you know"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-youknow-2",
+      "english": "It's, you know, a bit too tight.",
+      "japanese": "なんていうか、ちょっときついです。",
+      "chunks": [
+        {
+          "t": "It's, "
+        },
+        {
+          "t": "you know, "
+        },
+        {
+          "t": "a bit too tight.",
+          "w": "w-tight"
+        }
+      ],
+      "gap": {
+        "before": "It's, you ",
+        "answer": "know",
+        "after": ", a bit too tight.",
+        "options": [
+          "know",
+          "see",
+          "mean"
+        ],
+        "why": "言葉を探す時のつなぎは you know。"
+      },
+      "audio": "audio/en/connectors/cx-youknow-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "you know"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-youknow-3",
+      "english": "You know what? I'll take both.",
+      "japanese": "ねえ、両方買います。",
+      "chunks": [
+        {
+          "t": "You know what? "
+        },
+        {
+          "t": "I'll take ",
+          "w": "w-take"
+        },
+        {
+          "t": "both."
+        }
+      ],
+      "gap": {
+        "before": "You know ",
+        "answer": "what",
+        "after": "? I'll take both.",
+        "options": [
+          "what",
+          "that",
+          "it"
+        ],
+        "why": "You know what? は「ねえ、聞いて」と話を切り出す決まり文句。"
+      },
+      "audio": "audio/en/connectors/cx-youknow-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "you know"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-youknow-4",
+      "english": "We should get some kai, you know?",
+      "japanese": "何か食べた方がいいよね？",
+      "chunks": [
+        {
+          "t": "We should get "
+        },
+        {
+          "t": "some kai, ",
+          "w": "w-kai"
+        },
+        {
+          "t": "you know?"
+        }
+      ],
+      "gap": {
+        "before": "We should get some kai, ",
+        "answer": "you know",
+        "after": "?",
+        "options": [
+          "you know",
+          "you see",
+          "you think"
+        ],
+        "why": "文の最後の you know? で「〜でしょ？」と同意を求めます。"
+      },
+      "audio": "audio/en/connectors/cx-youknow-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "you know"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

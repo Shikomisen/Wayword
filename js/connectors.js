@@ -15,7 +15,7 @@
 import { loadContent } from './content.js';
 import * as deck from './deck.js';
 import * as audio from './audio.js';
-import { go, link } from './course.js';
+import { go, link, languageName } from './course.js';
 import { t } from './i18n.js';
 import {
   el, clear, targetNode, meaningNode, audioButton, phraseBlock, furiganaMode, proseNode,
@@ -152,12 +152,56 @@ export async function renderPractice(root, lessonId = null) {
         el('a', { class: 'back-link', href: link(exitPath) }, '✕'),
         el('div', { class: 'bar' }, el('div', { class: 'bar-fill', style: `width:${(index / session.length) * 100}%` })),
         el('span', { class: 'muted small' }, `${index}/${session.length}`)),
-      drill.type === DRILL.FILL ? fillCard(drill) : tileCard(drill));
+      drill.type === DRILL.FILL ? fillCard(drill) : drill.type === DRILL.SAY ? sayCard(drill) : tileCard(drill));
   }
 
   function kindLabel(drill) {
     if (drill.type === DRILL.COMBINE) return t('drill.combine', { connector: drill.lesson.connector });
+    if (drill.type === DRILL.SAY) return t('drill.say', { lang: languageName(content.course.target, content.course.speaker) });
     return t(drill.type === DRILL.FILL ? 'drill.fill' : 'drill.order');
+  }
+
+  /* say it out loud */
+
+  // Nothing here can hear the learner, so they judge it themselves: the
+  // point is saying the sentence before seeing it, then hearing it said.
+  function sayCard(drill) {
+    const { ex } = drill;
+    const feedback = el('div', { class: 'drill-feedback' });
+    const answer = el('div', { class: 'drill-answer say-answer', hidden: true },
+      el('div', { class: 'phrase-main' }, phraseBlock(ex, s), audioButton(ex, playItem)));
+    const grade = (right) => {
+      if (card.answered) return;
+      card.answered = true;
+      grades.hidden = true;
+      settle(drill, right ? 'right' : 'wrong', feedback, null,
+        { answerShown: true, label: t(right ? 'drill.saidRight' : 'drill.saidWrong') });
+    };
+    const said = el('button', { type: 'button', class: 'btn btn-primary', dataset: { said: 'yes' }, onclick: () => grade(true) },
+      t('drill.saidIt'));
+    const notYet = el('button', { type: 'button', class: 'btn', dataset: { said: 'no' }, onclick: () => grade(false) },
+      t('drill.notYet'));
+    const grades = el('div', { class: 'action-row drill-actions say-grades', hidden: true }, notYet, said);
+    const reveal = el('button', {
+      type: 'button', class: 'btn btn-primary btn-lg full say-reveal',
+      onclick: () => {
+        reveal.hidden = true;
+        answer.hidden = false;
+        grades.hidden = false;
+        if (s.autoPlayAudio) audio.playItem(ex);
+        card.key = (k) => { if (k === '1') said.click(); else if (k === '2') notYet.click(); };
+      },
+    }, t('drill.reveal'));
+
+    card = { answered: false, key: (k) => { if (k === 'Enter') reveal.click(); } };
+    return el('div', { class: 'drill-card', dataset: { drill: drill.type, example: ex.id } },
+      el('div', { class: 'drill-kind' }, kindLabel(drill)),
+      meaningNode(ex, { big: true }),
+      el('p', { class: 'muted small say-hint' }, t('drill.sayHint')),
+      reveal,
+      answer,
+      grades,
+      feedback);
   }
 
   /* fill the gap */
@@ -274,7 +318,7 @@ export async function renderPractice(root, lessonId = null) {
 
   /* after an answer */
 
-  function settle(drill, verdict, feedback, why) {
+  function settle(drill, verdict, feedback, why, { answerShown = false, label = null } = {}) {
     const right = verdict !== 'wrong';
     results.push({ drill, right });
     if (!right && !missed.has(drill.ex.id)) {
@@ -287,14 +331,16 @@ export async function renderPractice(root, lessonId = null) {
       onclick: () => { index++; draw(); },
     }, t(last ? 'drill.finish' : 'drill.next'));
     feedback.append(...[
-      el('p', { class: `verdict verdict-${verdict}` }, t(`drill.${verdict}`)),
+      el('p', { class: `verdict verdict-${verdict}` }, label || t(`drill.${verdict}`)),
       why ? proseNode(why, { furigana: furiganaMode(s, drill.ex), className: 'prose muted small' }) : null,
-      el('div', { class: 'drill-answer' },
-        el('div', { class: 'phrase-main' }, phraseBlock(drill.ex, s), audioButton(drill.ex, playItem))),
+      answerShown
+        ? null
+        : el('div', { class: 'drill-answer' },
+            el('div', { class: 'phrase-main' }, phraseBlock(drill.ex, s), audioButton(drill.ex, playItem))),
       next,
     ].filter(Boolean));
     card.key = (k) => { if (k === 'Enter') next.click(); };
-    if (s.autoPlayAudio) audio.playItem(drill.ex);
+    if (s.autoPlayAudio && !answerShown) audio.playItem(drill.ex);
   }
 
   async function finish() {
