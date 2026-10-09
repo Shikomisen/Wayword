@@ -61,12 +61,21 @@ function check(label, condition, detail = '') {
 console.log('\n1. Content layer');
 
 const content = await loadContent();
-check('manifest + all categories load', content.categories.length === 10, `${content.categories.length} categories`);
+check('manifest + all categories load', content.categories.length === content.manifest.categories.length,
+  `${content.categories.length} categories`);
 check('no category failed to load', content.categories.every((c) => !c.missing));
 check('phrase index is populated', content.phrases.size > 100, `${content.phrases.size} phrases`);
-check('categories are in trip-relevance order',
-  content.categories.map((c) => c.order).join(',') === '1,2,3,4,5,6,7,8,9,10',
+check('categories are in manifest order',
+  content.categories.every((c, i, all) => i === 0 || all[i - 1].order < c.order),
   content.categories.map((c) => c.id).join(' → '));
+check('every phrase is labelled polite or casual',
+  content.categories.every((c) => c.phrases.every((p) => ['polite', 'casual'].includes(p.register))));
+const casual = content.categories.find((c) => c.id === 'casual');
+check('the casual set is casual, each with its polite version',
+  casual?.phrases.length > 30 && casual.phrases.every((p) => p.register === 'casual' && p.polite?.target && p.polite.audio),
+  `${casual?.phrases.length} phrases`);
+check('…while the other categories stay polite',
+  content.categories.filter((c) => c.id !== 'casual').every((c) => c.phrases.every((p) => p.register === 'polite')));
 
 /* ---------- 2. placement quiz ---------- */
 
@@ -76,13 +85,13 @@ const items = await quiz.buildPlacementSet();
 const phraseItems = items.filter((i) => i.kind !== 'character');
 const charItems = items.filter((i) => i.kind === 'character');
 
-check('quiz pulls ~15-20 phrase cards (§6a)',
-  phraseItems.length >= 15 && phraseItems.length <= 20, `${phraseItems.length} phrase cards`);
+check('quiz pulls two phrase cards per category (§6a, A5)',
+  phraseItems.length === 2 * content.categories.length, `${phraseItems.length} phrase cards`);
 check('quiz also samples a few characters',
   charItems.length >= 4 && charItems.length <= 8, `${charItems.length} character cards`);
 
 const covered = new Set(phraseItems.map((i) => i.categoryId));
-check('quiz spans all 10 phrase categories', covered.size === 10, `${covered.size} covered`);
+check('quiz spans every phrase category', covered.size === content.categories.length, `${covered.size} covered`);
 
 const charCovered = new Set(charItems.map((i) => i.categoryId));
 check('quiz spans all 3 character sets', charCovered.size === 3, [...charCovered].join(', '));
@@ -111,22 +120,27 @@ for (const item of items) {
 const result = await quiz.applyPlacement(items, answers);
 check('placement is recorded as done', result.done === true);
 check('scores computed for every category and character set',
-  Object.keys(result.perCategory).length === 13, `${Object.keys(result.perCategory).length} buckets`);
+  Object.keys(result.perCategory).length === content.categories.length + content.characterSets.length,
+  `${Object.keys(result.perCategory).length} buckets`);
 check('strong category scores high', result.perCategory.greetings.score === 1, String(result.perCategory.greetings.score));
 check('weak category scores low', result.perCategory.airport.score < 0.5, String(result.perCategory.airport.score));
 check('onboarding gate now passes', await deck.isOnboarded());
 
 /* ---------- 3. deck seeding ---------- */
 
-console.log('\n3. Deck seeding (§7 — week 1 only)');
+console.log('\n3. Deck seeding (§7 — starter categories only)');
 
 const settings = await deck.getSettings();
-check('only week-1 categories activated', settings.activeCategories.length === 4, settings.activeCategories.join(', '));
-check('week-1 categories are 1-4',
-  settings.activeCategories.sort().join(',') === 'airport,greetings,numbers,transport');
+const starters = content.categories.filter((c) => c.starter);
+check('only the starter categories are activated',
+  [...settings.activeCategories].sort().join(',') === starters.map((c) => c.id).sort().join(','),
+  settings.activeCategories.join(', '));
+check('starters are a handful, not everything', starters.length >= 2 && starters.length < content.categories.length,
+  starters.map((c) => c.id).join(', '));
 
 const allCards = await deck.getDeck();
-check('deck populated from week-1 categories', allCards.length >= 88, `${allCards.length} cards`);
+const starterPhrases = starters.reduce((n, c) => n + c.phrases.length, 0);
+check('deck populated from the starter categories', allCards.length >= starterPhrases, `${allCards.length} cards`);
 
 const knownGreeting = items.find((i) => i.categoryId === 'greetings');
 const seededCard = await deck.getCard(knownGreeting.id);

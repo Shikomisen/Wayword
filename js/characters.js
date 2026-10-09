@@ -105,8 +105,8 @@ export async function renderCharacterList(root) {
       el('div', { class: 'card-list' }, rows),
 
       el('p', { class: 'muted small footnote' },
-        'Handwriting and stroke-order practice are deliberately not here — this app is built for ' +
-        'reading signs and menus on a trip, not for learning to write. See ASSUMPTIONS.md (A24).')
+        'Handwriting and stroke-order practice are deliberately not here — this app teaches reading, ' +
+        'not writing. See ASSUMPTIONS.md (A24).')
     )
   );
 }

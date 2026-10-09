@@ -20,8 +20,13 @@
  */
 
 import { currentCourse, currentCourseId } from './course.js';
+import { toSegments } from './ruby.js';
 
 const caches = new Map();
+
+// Registers a phrase can be labelled with. A course whose manifest `register`
+// is one of these labels every phrase that doesn't declare its own.
+const REGISTERS = ['polite', 'casual'];
 
 const SUPPORTED_SCHEMA = 1;
 
@@ -39,18 +44,30 @@ function makeNormaliser(manifest, course) {
   const targetLang = manifest.language || course?.target || 'ja';
   const meaningLang = manifest.speaker || course?.speaker || 'en';
 
-  return (item) => ({
+  const normalise = (item) => ({
     ...item,
     target: item[fields.target] ?? '',
-    ruby: fields.ruby ? item[fields.ruby] ?? null : null,
+    // Segment arrays or the inline "{漢字|かんじ}" notation — see ruby.js.
+    ruby: fields.ruby ? toSegments(item[fields.ruby]) : null,
     reading: fields.reading ? item[fields.reading] ?? null : null,
     meaning: item[fields.meaning] ?? '',
     notes: notes
       .filter((n) => item[n.field])
       .map((n) => ({ label: n.label, text: item[n.field], style: n.style || null })),
+    // A casual phrase carries its polite counterpart, which shares its meaning.
+    polite: item.polite
+      ? normalise({ ...item.polite, [fields.meaning]: item[fields.meaning], register: 'polite' })
+      : null,
     targetLang,
     meaningLang,
   });
+  return normalise;
+}
+
+/** Phrases are labelled polite or casual: their own register, else the course default. */
+function withRegister(manifest) {
+  const fallback = REGISTERS.includes(manifest.register) ? manifest.register : null;
+  return (phrase) => ({ ...phrase, register: REGISTERS.includes(phrase.register) ? phrase.register : fallback });
 }
 
 async function fetchJSON(path) {
@@ -105,6 +122,7 @@ export async function loadContent() {
     );
   }
   const normalise = makeNormaliser(manifest, course);
+  const register = withRegister(manifest);
   const fields = manifest.fields || DEFAULT_FIELDS;
 
   const entries = [...manifest.categories].sort((a, b) => a.order - b.order);
@@ -113,7 +131,7 @@ export async function loadContent() {
     entries.map(async (entry) => {
       try {
         const data = await fetchJSON(entry.file);
-        return { ...entry, ...data, phrases: (data.phrases || []).map(normalise), missing: false };
+        return { ...entry, ...data, phrases: (data.phrases || []).map((p) => register(normalise(p))), missing: false };
       } catch (err) {
         // A category file that fails to load must not take the app down.
         console.error(err);

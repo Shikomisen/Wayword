@@ -13,7 +13,7 @@
  *                         under a given cache version)
  */
 
-const CACHE_VERSION = 'v5';
+const CACHE_VERSION = 'v6';
 const CACHE_PREFIX = 'wayword-';
 const CACHE = `${CACHE_PREFIX}${CACHE_VERSION}`;
 
@@ -67,7 +67,10 @@ async function manifestAssets(manifestPath) {
 
   // Phrase clips live inside each category file...
   for (const cat of await Promise.all(categoryFiles.map(fetchJSON))) {
-    for (const p of cat?.phrases || []) if (p.audio) assets.push(`./${p.audio}`);
+    for (const p of cat?.phrases || []) {
+      if (p.audio) assets.push(`./${p.audio}`);
+      if (p.polite?.audio) assets.push(`./${p.polite.audio}`); // a casual phrase's polite version
+    }
   }
 
   // ...character clips inside each character set...

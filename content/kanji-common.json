@@ -4,7 +4,7 @@
   "kind": "characters",
   "title": "Common Kanji",
   "script": "kanji",
-  "description": "A curated traveller's set, not a JLPT list. Everything here is something you will read off a sign, a menu, a ticket or a price tag — chosen for recognition, not production.",
+  "description": "Kanji you meet every day — on signs, menus, tickets, price tags and calendars. A practical set rather than a JLPT list, chosen for recognition, not writing.",
   "groups": [
     {
       "id": "numbers",

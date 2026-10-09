@@ -181,6 +181,26 @@ rt { font-size: 0.45em; color: var(--fg-muted); font-weight: 400; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
 .tag { font-size: 0.68rem; color: var(--fg-muted); background: var(--bg-sunk); padding: 3px 8px; border-radius: 99px; }
 
+/* Register: every phrase says whether it's polite or casual. */
+.register {
+  display: inline-block; vertical-align: middle;
+  font-family: var(--font); font-size: 0.62rem; font-weight: 700;
+  letter-spacing: 0.07em; text-transform: uppercase;
+  padding: 2px 8px; border-radius: 99px;
+}
+.register-polite { color: var(--info); background: color-mix(in srgb, var(--info) 14%, transparent); }
+.register-casual { color: var(--warn); background: color-mix(in srgb, var(--warn) 16%, transparent); }
+.phrase-block > .register { margin-bottom: 4px; }
+
+.polite-version {
+  margin-top: 10px; padding: 8px 10px; text-align: left;
+  background: var(--bg-sunk); border-radius: 10px; border-left: 3px solid var(--info);
+}
+.polite-row { display: flex; align-items: center; gap: 10px; }
+.polite-text { flex: 1; min-width: 0; }
+.polite-version .target { font-size: 1.15rem; line-height: 1.85; }
+.polite-version .audio-btn { width: 36px; height: 36px; font-size: 0.95rem; }
+
 /* ---------- study ---------- */
 
 .study-top { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }

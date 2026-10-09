@@ -106,9 +106,10 @@ export async function applyPlacement(items, answers) {
     await deck.putCard(card);
   }
 
-  // README §7: week 1 is categories 1-4 only. Don't front-load all ten.
+  // README §7: start with a few categories, not all of them — the review
+  // load adds up. The manifest marks which ones are `starter`s.
   const { categories } = await loadContent();
-  for (const cat of categories.filter((c) => (c.week ?? 1) === 1)) {
+  for (const cat of categories.filter((c) => c.starter)) {
     await deck.activateCategory(cat.id);
   }
 

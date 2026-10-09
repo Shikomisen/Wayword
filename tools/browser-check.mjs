@@ -214,7 +214,7 @@ const expectedAssets = () => async function () {
         ...items([data], 'examples')];
       for (const x of all) {
         if (x.audio) out.push(`./${x.audio}`);
-        if (x.politeAudio) out.push(`./${x.politeAudio}`);
+        if (x.polite?.audio) out.push(`./${x.polite.audio}`);
       }
     }
     for (const s of m.scenarios || []) {

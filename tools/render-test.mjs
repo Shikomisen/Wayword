@@ -17,6 +17,13 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
+// Expected counts come from the content itself, so adding a category or a
+// group doesn't mean editing this file.
+const readJSON = (rel) => JSON.parse(readFileSync(resolve(ROOT, rel), 'utf8'));
+const COURSES = readJSON('content/courses.json').courses;
+const manifestOf = (id) => readJSON(COURSES.find((c) => c.id === id).manifest);
+const JA = manifestOf('en-ja');
+
 let JSDOM;
 try {
   ({ JSDOM } = await import('jsdom'));
@@ -152,8 +159,8 @@ for (let i = 0; i < quizTotal + 5; i++) {
 await tick(); await tick(); await tick();
 
 check('quiz produces a results screen', text().includes('Deck built'), 'placement complete');
-check('results break down all 10 categories and 3 character sets',
-  $$('.result-row').length === 13, `${$$('.result-row').length} rows`);
+check('results break down every category and character set',
+  $$('.result-row').length === JA.categories.length + JA.characterSets.length, `${$$('.result-row').length} rows`);
 check('results separate phrases from reading', text().includes('Reading'));
 
 $$('button').find((b) => b.textContent === 'Set up reading first')?.click();
@@ -176,17 +183,23 @@ console.log('\n3. Browse');
 
 await goTo('#/en-ja/browse');
 check('browse renders', text().includes('Browse'));
-check('all 10 categories listed', $$('.row-card').length === 10);
-check('week groupings render', $$('.section-title').length === 4);
-check('active categories marked as in-deck', $$('.pill-on').length === 4);
-check('inactive categories offer an Add button',
-  $$('button').filter((b) => b.textContent === 'Add').length === 6);
+const jaStarters = JA.categories.filter((c) => c.starter);
+check('every category listed', $$('.row-card').length === JA.categories.length, `${$$('.row-card').length} rows`);
+check('categories grouped by topic, titled from the manifest',
+  $$('.section-title').map((h) => h.textContent).join('|') === JA.groups.map((g) => g.title).join('|'),
+  $$('.section-title').map((h) => h.textContent).join(' | '));
+check('no week-by-week or trip framing left', !/Week \d|trip/i.test(text()));
+check('starter categories marked as in-deck', $$('.pill-on').length === jaStarters.length);
+check('the rest offer an Add button',
+  $$('button').filter((b) => b.textContent === 'Add').length === JA.categories.length - jaStarters.length);
 
 console.log('\n4. Category detail');
 
 await goTo('#/en-ja/category/greetings');
 check('category renders', text().includes('Greetings & Politeness'));
 check('all phrases listed', $$('.phrase-card').length === 24, `${$$('.phrase-card').length} cards`);
+check('every polite phrase is labelled Polite',
+  $$('.phrase-card .register-polite').length === 24 && !$('.phrase-card .register-casual'));
 check('register notes render', text().includes('Register'));
 check('anime divergence notes render', $$('.note-anime').length > 0, `${$$('.note-anime').length} notes`);
 check('audio buttons render', $$('.audio-btn').length > 0);
@@ -207,6 +220,23 @@ await tick(); await tick(); await tick();
 check('furigana toggle removes ruby annotations', $$('ruby').length === 0, `was ${rubyBefore}`);
 $$('.chip').find((c) => c.textContent === 'ふりがな')?.click();
 await tick(); await tick(); await tick();
+
+await goTo('#/en-ja/category/casual');
+const casualCount = readJSON(JA.categories.find((c) => c.id === 'casual').file).phrases.length;
+check('casual set renders every phrase', $$('.phrase-card').length === casualCount, `${$$('.phrase-card').length} cards`);
+check('each casual phrase is labelled Casual',
+  $$('.phrase-card .phrase-block > .register-casual').length === casualCount);
+check('…and shows its polite version, labelled, with its own audio',
+  $$('.phrase-card .polite-version').length === casualCount &&
+  $$('.polite-version .register').length === 0 &&
+  $$('.polite-version .audio-btn').length === casualCount &&
+  text().includes('Polite version'));
+check('casual furigana written as {漢字|かんじ} renders as ruby',
+  $$('.phrase-card ruby').some((r) => r.textContent.startsWith('大丈夫')), $$('.phrase-card ruby')[0]?.textContent);
+const politeBefore = played.length;
+$('.polite-version .audio-btn')?.click();
+await tick(); await tick();
+check('the polite version plays its own clip', played.slice(politeBefore).some((p) => p.endsWith('-polite.mp3')), played.at(-1));
 
 console.log('\n5. Study session');
 

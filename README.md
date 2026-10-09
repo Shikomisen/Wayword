@@ -1,25 +1,33 @@
 # Wayword — Dev README
 *(formerly "Nihongo Tabi" — renamed so the name isn't tied to one language)*
 
-A study tool for **survival-level conversational Japanese**, built by a
-solo dev, for personal use, with a hard deadline: usable within 1-2 days,
-feature-complete enough to actually learn from within **28 days** before
-departure.
+A language-learning tool for **real conversation**, built by a solo dev for
+personal use. Japanese is the first course; more languages come later (§13).
 
-This drives every decision below. Anything that doesn't directly serve
-"learn to have simple, non-awkward conversations in Japan, fast" gets cut
-or deferred.
+It's shaped around one learner: an English speaker with a Japanese partner,
+who listens and speaks reasonably well but reads weakly — hiragana still
+needs solidifying, katakana isn't learned yet. So the priorities, in order:
+
+1. **Remember words and know what to say.**
+2. **Chain them into sentences** with connectors — て, から, けど, たら and the rest.
+3. **Read** — solid kana first, then kanji, with furigana that fades as reading improves.
+
+Anything that doesn't serve those gets cut or deferred.
+
+*(It began in August 2026 as a phrasebook for a trip to Japan; §2 is that
+original build plan, kept as history. The trip is over and nothing here is on
+a deadline.)*
 
 ---
 
-## 0. Reality Check
+## 0. Platform
 
 The full vision (native Flutter apps for Windows/Android/iOS/macOS,
-bundled native-speaker audio, live AI chat) is real but multi-week. The
-build below is deliberately scoped to what a solo dev can ship in 1-2
-days: a **PWA (installable web app)** — runs today in the browser on both
-Windows and Android, installs to the home screen, no store submission, no
-native build chain. Native ports are Phase 2 (§9), not a blocker.
+bundled native-speaker audio, live AI chat) is real but large. What exists is
+a **PWA (installable web app)** — it runs in the browser on Windows, Android
+and iOS, installs to the home screen and works offline, with no store
+submission and no native build chain. Native ports are Phase 2 (§9), not a
+blocker.
 
 ---
 
@@ -32,34 +40,37 @@ native build chain. Native ports are Phase 2 (§9), not a blocker.
   been made below. Where a genuinely new decision comes up during build,
   make the most reasonable call, keep moving, and log it in a running
   `ASSUMPTIONS.md` at the repo root so it can be revisited later.
-- Work through the Day 1 checklist to completion, then Day 2, in order.
-  Prioritize a working end-to-end loop (browse → study → review) over
-  polish at every step — a rough version of everything beats a perfect
-  version of one piece.
+- Extend the existing app rather than rebuilding it. Prioritize a working
+  end-to-end loop over polish at every step — a rough version of
+  everything beats a perfect version of one piece.
 
 ---
 
-## 2. MVP Build Plan
+## 2. Original MVP Build Plan (history)
+
+The first build, from August 2026. Everything here is done except where noted.
 
 **Day 1 — working skeleton + first content + placement quiz:**
-- [ ] Static web app shell: category browser → phrase list → flashcard view
-- [ ] IndexedDB for progress + SRS state (localStorage fallback if simpler)
-- [ ] SRS scheduler (SM-2 — don't over-engineer)
-- [ ] Audio pre-generation script (build-time, see §3-audio) run for
+- [x] Static web app shell: category browser → phrase list → flashcard view
+- [x] IndexedDB for progress + SRS state (localStorage fallback if simpler)
+- [x] SRS scheduler (SM-2 — don't over-engineer)
+- [x] Audio pre-generation script (build-time, see §3-audio) run for
       categories 1-4, bundled audio files wired to phrase playback
-- [ ] Content for categories 1-4 (see §6) — enough to start studying same day
-- [ ] **Onboarding placement quiz** (see §6a) — runs before first study session
-- [ ] PWA manifest + service worker (offline-capable, installable)
-- [ ] Runs via local dev server; add a one-command deploy script to a
+- [x] Content for categories 1-4 (see §6) — enough to start studying same day
+- [x] **Onboarding placement quiz** (see §6a) — runs before first study session
+- [x] PWA manifest + service worker (offline-capable, installable)
+- [x] Runs via local dev server; add a one-command deploy script to a
       free static host (GitHub Pages by default) so it's reachable on
-      the phone without manual file transfer
+      the phone without manual file transfer — `npm run deploy` (§12)
 
 **Day 2 — depth + remaining core:**
 - [ ] Scenario dialogue trees (branching, static JSON) for loaded categories
-- [ ] Furigana toggle, romaji toggle
-- [ ] Remaining categories 5-10 stubbed in (thin coverage of everything
+      — *six per course; emergencies and small talk still have none*
+- [x] Furigana toggle, romaji toggle
+- [x] Remaining categories 5-10 stubbed in (thin coverage of everything
       beats deep coverage of a few)
-- [ ] "Due today" home screen driven by the SRS scheduler
+- [x] "Due today" home screen driven by the SRS scheduler — *one tap in
+      from the language picker since §13*
 
 **Explicitly deferred (not blocking, add later if time allows):**
 - Live AI conversation practice / AI-assisted placement (needs backend proxy)
@@ -151,49 +162,49 @@ launch without code changes:
 - Audio plays from bundled files — no network call, no dependency on the
   device's own TTS voice being installed.
 - All progress/SRS/quiz-result state stored client-side.
-- Zero backend required for the full Day 1/2 MVP (the audio-generation
-  script is a one-time build step, not something the running app does).
+- Zero backend, for anything the app does (the audio-generation script is
+  a one-time build step, not something the running app does).
 
 ---
 
-## 6. Content Scope & Priority Order
+## 6. Content Scope
 
-Register: polite form (です/ます) throughout — consistent and safe.
-Casual forms (which anime-derived knowledge likely already covers) are
-introduced later as recognition-only, explicitly flagged as "you may
-already know this from media, here's when it's actually appropriate."
+**Register.** Every phrase is labelled **Polite** or **Casual** on screen.
+The phrase categories are polite (です/ます) throughout — consistent and
+safe with anyone. The **Casual Speech** set (39 phrases) is how you actually
+talk with a partner, friends and family; each casual phrase is shown next to
+its polite version, with its own audio, and a note on when each is right.
+It is fully studiable, not recognition-only — with a partner, casual is what
+you say (ASSUMPTIONS A54).
 
-Load order (trip-relevance, not alphabetical):
+**Phrase categories**, shown under topic groups (each manifest declares its
+`groups`; `starter` categories are loaded by placement):
 
-1. Greetings & politeness norms
-2. Numbers, time, money
-3. Airport & immigration
-4. Transportation (trains, taxis, buses)
-5. Directions & getting lost
-6. Hotel check-in/out
-7. Restaurants & ordering food (incl. allergies/dietary restrictions)
-8. Shopping & payments
-9. Emergencies & health
-10. Small talk (extended)
+| Group | Categories |
+|---|---|
+| Everyday basics | Greetings & politeness · Numbers, time & money · Small talk · Casual speech |
+| Out and about | Transportation · Directions · Restaurants & ordering (incl. allergies and dietary needs) · Shopping & payments |
+| Travelling | Airport & immigration · Hotel |
+| If something goes wrong | Emergencies & health |
 
-Per-phrase: furigana toggle, romaji toggle (off by default after week 1),
-register notes — specifically calling out where anime Japanese diverges
-from real polite usage (e.g. dramatic/masculine speech patterns common in
-anime that would sound odd or brusque from a polite tourist).
+Per-phrase: furigana toggle, romaji toggle (off by default after the first
+week), register notes — including where anime Japanese diverges from real
+polite usage (dramatic or masculine speech patterns that sound odd or
+brusque from a polite speaker).
 
 ### 6a. Onboarding & Level Calibration
 
-Anime-derived Japanese knowledge tends to be real but lopsided — strong
-passive vocabulary, register/politeness patterns often skewed casual or
-dramatic, gaps in practical/functional phrases nobody says in a show.
+Japanese picked up by ear — from a partner, friends or the screen — tends to
+be real but lopsided: you understand more than you can say, register skews
+casual, and reading lags behind listening.
 
-MVP calibration (offline, no AI call needed):
-- On first launch, a short placement quiz pulls ~15-20 sample cards
-  spread across all 10 categories.
+Calibration (offline, no AI call needed):
+- On first entering a course, a short placement quiz pulls two sample cards
+  from every phrase category (22 for Japanese), plus two per character set.
 - Self-graded ("did you know this?") rather than typed-answer, to keep
   it fast.
 - Known cards get inserted into the SRS deck at a later starting
-  interval instead of the beginning, so the app doesn't waste week 1 on
+  interval instead of the beginning, so the first weeks aren't spent on
   material already retained.
 - Unknown or "recognized but wouldn't produce" cards start at the normal
   first interval.
@@ -207,17 +218,13 @@ before.
 
 ---
 
-## 7. 28-Day Study & Content Rollout
+## 7. Pacing
 
-| Week | Build focus | Study focus |
-|---|---|---|
-| **1 (Days 1-7)** | Categories 1-4 loaded, placement quiz run Day 1 | Greetings, numbers/time/money, airport, transport |
-| **2 (Days 8-14)** | Categories 5-6 added, scenario trees fleshed out | Directions, hotel — keep reviewing week 1 via SRS |
-| **3 (Days 15-21)** | Categories 7-8 added | Restaurants, shopping — SRS load is cumulative now |
-| **4 (Days 22-28)** | Categories 9-10 added, polish only if time allows | Emergencies, small talk, **heavy review** — consolidation week, not new material |
-
-Don't front-load all 10 categories into the SRS deck at once — introduce
-2-3 categories a week to keep daily review time bounded.
+There's no calendar. Placement loads the course's starter categories; add
+more from Learn a couple at a time. Don't front-load everything into the SRS
+deck at once — the review load is cumulative, and a handful of new decks a
+week keeps daily review time bounded. The new-cards-per-day cap (Settings)
+does the rest.
 
 ---
 
@@ -229,7 +236,7 @@ Don't front-load all 10 categories into the SRS deck at once — introduce
 
 ---
 
-## 9. Phase 2+ — Long-Term Vision (Post-Trip, Not Blocking)
+## 9. Phase 2+ — Long-Term Vision (Not Blocking)
 
 - Native builds: Flutter recommended for Windows/Android/iOS/macOS —
   Skia rendering handles furigana/CJK layout well, one codebase across
@@ -244,10 +251,10 @@ Don't front-load all 10 categories into the SRS deck at once — introduce
 
 ---
 
-## 10. Remaining Open Question
+## 10. Open Questions
 
-- App name/branding — still a placeholder, purely cosmetic, doesn't
-  block building anything.
+None. *(Closed: the app name — it's **Wayword**, chosen in October 2026 so the
+name isn't tied to one language; see ASSUMPTIONS A32.)*
 
 ---
 
@@ -264,13 +271,13 @@ same versioned-schema rules as §3a):
 |---|---|---|---|
 | Hiragana | `content/hiragana.json` | 104 | 46 base + 25 dakuten/handakuten + 33 yōon |
 | Katakana | `content/katakana.json` | 116 | same structure, plus 12 extended combos (ファ, ティ, ジェ…) for loanwords |
-| Common Kanji | `content/kanji-common.json` | 82 | curated for travel, not exhaustive |
+| Common Kanji | `content/kanji-common.json` | 82 | curated for everyday reading, not exhaustive |
 
 Kanji covers numbers and money, the seven day kanji and time, wayfinding
 (出口, 入口, 男, 女, お手洗い, compass points), stations and tickets, shops and
 payment, warnings (危険, 禁止, 非常口), and everyday signage (押, 引, 空, 満).
-Multi-character compounds are included where that is how a traveller actually
-reads them off a sign.
+Multi-character compounds are included where that is how you actually read
+them off a sign.
 
 **Per-character schema:** `character`, `readings[]`, `romaji`, `english`
 (kanji only — kana carries `null`), `audio`, plus `group`, `row`/`column` for
@@ -296,7 +303,7 @@ their own queue, their own daily new-card cap, and their own review counter.
 Character reviews never appear in phrase review counts, in either direction.
 
 **Onboarding.** The placement quiz (§6a) samples two characters from each set
-alongside the phrase cards — 26 items total. Prior exposure to written Japanese
+alongside the phrase cards — 28 items total for Japanese. Prior exposure to written Japanese
 is credited exactly the way phrase knowledge is: known characters seed forward
 instead of starting from あ.
 
@@ -305,19 +312,20 @@ as a browsable list grouped by usage), tap any character to hear it; plus
 flashcard review per set or across all sets.
 
 **Deliberately out of scope:** handwriting practice, stroke-order diagrams and
-stroke-order animations. This app is for reading signs on a trip, not learning
-to write. See `ASSUMPTIONS.md` A24.
+stroke-order animations. This app teaches reading, not writing. See `ASSUMPTIONS.md` A24.
 
 ---
 
 ## 12. Running It (added during build)
 
-Zero dependencies, no build step. Node 18+ only.
+No runtime dependencies and no build step; Node 18+. `npm install` brings in two
+dev-only tools for the test suites: jsdom and puppeteer-core.
 
 ```bash
 npm start                 # dev server on :5173, also prints your LAN URL for phone testing
 npm test                  # every course's content + UI-string coverage + SRS + end-to-end logic (11,000+ checks)
-npm run test:render       # renders every screen in both courses + service worker checks (needs: npm install --no-save jsdom)
+npm run test:render       # renders every screen in both courses + service worker checks (jsdom)
+npm run test:browser      # the real app in Firefox: service worker, full precache, every tab, offline
 npm run test:sw           # service worker registration regression tests
 npm run audio             # generate any missing TTS clips, every course, each in its own language
 npm run audio -- --course ja-en   # …or just one course
@@ -325,7 +333,7 @@ npm run audio:check       # report audio coverage without generating
 npm run kana              # regenerate the hiragana/katakana content files
 npm run crossref          # relink kanji to the phrases they appear in
 npm run icons             # regenerate the PWA icons
-npm run deploy            # publish to the gh-pages branch
+npm run deploy            # tests, push main, wait until the live site serves the new build
 ```
 
 **On your phone:** run `npm start`, then open the `Network:` URL it prints
@@ -347,11 +355,18 @@ Served by GitHub Pages straight from **`main` / `root`** — no build step, no
 `gh-pages` branch, because the build output (audio, content JSON, icons) is
 committed. `.nojekyll` at the repo root keeps Jekyll's hands off it.
 
-**Deploying a change is just:**
+**Deploying a change:**
 
 ```bash
-git push origin main       # Pages rebuilds automatically, live in a minute
+npm run deploy                 # checks you are on a clean, up-to-date main; runs the
+                               # test suites; pushes main; waits until the live site
+                               # serves the new service worker, then prints the URL
+npm run deploy -- --dry-run    # everything except the push
 ```
+
+Pages rebuilds from `main` on every push, so a plain `git push origin main` also
+deploys — the script just refuses to do it with failing tests or uncommitted
+work, and tells you when it is actually live.
 
 Install it on a phone by opening that URL in Chrome or Safari → *Add to Home
 screen*. Because it's HTTPS, the service worker registers and the app is fully
@@ -361,13 +376,6 @@ prints.
 The service worker registers correctly from the project subpath —
 `register('sw.js')` is document-relative and takes `/Wayword/` as its
 scope, which is asserted in `npm run test:sw`. Don't make that path absolute.
-
-`npm run deploy` (the `gh-pages` branch route) is **not used** by this setup,
-but still works if the served site should ever be split from source.
-
-`npm run deploy` has been verified end to end against a local bare repository:
-523 files, all 482 audio clips, all three character sets, `.nojekyll` included
-and `tools/` excluded.
 
 Content lives in `content/` — adding a category is one JSON file plus one line
 in its course's manifest (`content/manifest.json` for Japanese,
@@ -426,8 +434,8 @@ character sets (today, Japanese for English speakers), so its wording stays
 English. Controls a course can't use — furigana, romaji, the Characters tab —
 simply don't appear.
 
-**English for Japanese speakers** mirrors the Japanese course's ten trip
-categories, rewritten for a Japanese traveller abroad: American English by
+**English for Japanese speakers** mirrors the Japanese course's ten phrase
+categories, written for a Japanese speaker using English abroad: American English by
 default, British variants mentioned in the notes. Every phrase has a Japanese
 gloss and a 使い方 (usage) note; many also have a よくある間違い note on
 katakana-English and direct-translation traps — wake-up call not モーニングコール,

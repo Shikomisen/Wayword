@@ -71,10 +71,33 @@ export function phraseBlock(phrase, settings, { size = 'md' } = {}) {
   return el(
     'div',
     { class: `phrase-block phrase-${size}` },
+    registerBadge(phrase),
     targetNode(phrase, { furigana: settings.furigana }),
     settings.romaji && phrase.reading ? el('div', { class: 'romaji' }, phrase.reading) : null,
     meaningNode(phrase)
   );
+}
+
+/** "Polite" / "Casual" pill — every phrase in a course that declares registers gets one. */
+export function registerBadge(item) {
+  if (!item.register) return null;
+  return el('span', { class: `register register-${item.register}` }, t(`register.${item.register}`));
+}
+
+/**
+ * A casual phrase shown with its polite counterpart underneath, so the
+ * choice of which to say is made side by side rather than remembered.
+ */
+export function politeBlock(item, settings, onPlay) {
+  const p = item.polite;
+  if (!p) return null;
+  return el('div', { class: 'polite-version' },
+    el('span', { class: 'note-label' }, t('register.politeVersion')),
+    el('div', { class: 'polite-row' },
+      el('div', { class: 'polite-text' },
+        targetNode(p, { furigana: settings.furigana }),
+        settings.romaji && p.reading ? el('div', { class: 'romaji' }, p.reading) : null),
+      audioButton(p, onPlay)));
 }
 
 export function tagRow(phrase) {

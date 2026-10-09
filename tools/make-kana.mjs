@@ -196,8 +196,8 @@ const META = {
   katakana: {
     title: 'Katakana',
     description:
-      'Loanwords, foreign names and menus. Often more immediately useful to a traveller than hiragana, ' +
-      'because so much of it is English you can already understand once you can read it.',
+      'Loanwords, foreign names, menus and brand names. Once you can read it, a lot of it turns out to be ' +
+      'English you already understand — learn it once hiragana is solid.',
   },
 };
 

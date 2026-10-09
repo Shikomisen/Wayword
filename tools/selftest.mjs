@@ -14,6 +14,7 @@ import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as srs from '../js/srs.js';
 import { dictionaries as i18nDicts } from '../js/i18n.js';
+import { toSegments, rubyText } from '../js/ruby.js';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -31,6 +32,22 @@ function check(label, condition, detail = '') {
 
 function readJSON(rel) {
   return JSON.parse(readFileSync(resolve(ROOT, rel), 'utf8'));
+}
+
+/**
+ * Furigana, in either form (segment array or "{漢字|かんじ}" notation), must
+ * spell out exactly the text it annotates, and every reading must be kana.
+ */
+function checkRuby(label, value, text) {
+  if (value === undefined || value === null) return;
+  const segs = toSegments(value);
+  if (!check(`${label}: furigana parses`, Array.isArray(segs) && segs.length > 0)) return;
+  const rebuilt = rubyText(value);
+  check(`${label}: furigana reconstructs the text`, rebuilt === text, `${rebuilt} vs ${text}`);
+  check(`${label}: furigana has no stray notation`, !/[{}|]/.test(rebuilt), rebuilt);
+  for (const s of segs) {
+    if (s.r !== undefined) check(`${label}: reading "${s.r}" is kana`, /^[぀-ヿー]+$/.test(s.r), s.r);
+  }
 }
 
 /* ---------- courses ---------- */
@@ -82,6 +99,14 @@ function validateCourse(course) {
   check(`${course.id}: manifest declares its fields`, Boolean(manifest.fields?.target && manifest.fields?.meaning));
   check(`${course.id}: placement copy present`, Boolean(manifest.copy?.placementLede));
 
+  // Categories are shown under named groups; `starter` ones are loaded by placement.
+  if (check(`${course.id}: manifest declares groups`, Array.isArray(manifest.groups) && manifest.groups.length > 0)) {
+    const groupIds = new Set(manifest.groups.map((g) => g.id));
+    for (const g of manifest.groups) check(`${course.id}: group ${g.id} has a title`, Boolean(g.title));
+    for (const c of manifest.categories) check(`${c.id}: group "${c.group}" is declared`, groupIds.has(c.group), c.group);
+    check(`${course.id}: at least one starter category`, manifest.categories.some((c) => c.starter));
+  }
+
   const fields = manifest.fields || {};
   const target = fields.target;
 
@@ -112,12 +137,27 @@ function validateCourse(course) {
       check(`${p.id}: difficulty in 1-5`, p.difficulty >= 1 && p.difficulty <= 5, String(p.difficulty));
       check(`${p.id}: tags is a non-empty array`, Array.isArray(p.tags) && p.tags.length > 0);
 
-      if (fields.ruby && Array.isArray(p[fields.ruby])) {
-        const rebuilt = p[fields.ruby].map((s) => s.b).join('');
-        check(`${p.id}: furigana segments reconstruct ${target}`, rebuilt === p[target], `${rebuilt} vs ${p[target]}`);
-      }
+      if (fields.ruby) checkRuby(p.id, p[fields.ruby], p[target]);
       for (const n of manifest.noteFields || []) {
         if (p[n.field] !== undefined) check(`${p.id}: ${n.field} is non-empty text`, typeof p[n.field] === 'string' && p[n.field].length > 0);
+      }
+      if (p.register !== undefined) {
+        check(`${p.id}: register is polite or casual`, ['polite', 'casual'].includes(p.register), p.register);
+      }
+
+      // A casual phrase carries its polite counterpart, with its own clip.
+      if (p.polite) {
+        const q = p.polite;
+        check(`${p.id}: polite version has ${target}`, Boolean(q[target]));
+        if (fields.reading) check(`${p.id}: polite version has ${fields.reading}`, Boolean(q[fields.reading]));
+        if (fields.ruby) checkRuby(`${p.id}/polite`, q[fields.ruby], q[target]);
+        if (check(`${p.id}: polite version has audio`, Boolean(q.audio))) {
+          check(`${p.id}: polite audio path is unique`, !seenAudio.has(q.audio));
+          seenAudio.add(q.audio);
+          const clip = resolve(ROOT, q.audio);
+          if (existsSync(clip)) { audioPresent++; check(`${p.id}: polite clip is non-trivial`, statSync(clip).size > 800); }
+          phraseCount++;
+        }
       }
 
       check(`${p.id}: audio path is unique`, !seenAudio.has(p.audio));

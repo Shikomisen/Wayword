@@ -18,7 +18,9 @@ import * as audio from './audio.js';
 import * as store from './store.js';
 import * as course from './course.js';
 import { t, setLang, locale, formatInterval, UI_LANGS } from './i18n.js';
-import { el, clear, phraseBlock, targetNode, meaningNode, notesBlock, tagRow, audioButton, toast } from './render.js';
+import {
+  el, clear, phraseBlock, targetNode, meaningNode, notesBlock, tagRow, audioButton, toast, registerBadge, politeBlock,
+} from './render.js';
 import { renderPlacement } from './quiz.js';
 import { renderScenarioList, renderScenario } from './scenario.js';
 import { renderCharacterList, renderCharacterSet } from './characters.js';
@@ -402,20 +404,22 @@ async function categoryRow(cat) {
 /* ---------- browse ---------- */
 
 async function browse(root) {
-  const { categories } = await loadContent();
+  const { categories, manifest } = await loadContent();
   const s = await deck.getSettings();
 
-  const groups = [1, 2, 3, 4].map((week) => [t(`browse.week${week}`), week]);
+  // Groups and their titles come from the course manifest, in its own
+  // language. A manifest without groups shows one untitled list.
+  const groups = manifest.groups?.length ? manifest.groups : [{ id: undefined, title: null }];
 
   root.append(
     el('div', { class: 'screen' },
       header(t('browse.title'), t('browse.lede')),
-      groups.map(([label, week]) => {
-        const inWeek = categories.filter((c) => (c.week ?? 1) === week);
-        if (!inWeek.length) return null;
+      groups.map((group) => {
+        const inGroup = categories.filter((c) => c.group === group.id);
+        if (!inGroup.length) return null;
         return el('section', {},
-          el('h2', { class: 'section-title' }, label),
-          el('div', { class: 'card-list' }, inWeek.map((cat) => browseRow(cat, s))));
+          group.title ? el('h2', { class: 'section-title' }, group.title) : null,
+          el('div', { class: 'card-list' }, inGroup.map((cat) => browseRow(cat, s))));
       })
     )
   );
@@ -495,6 +499,7 @@ function phraseCard(phrase, s) {
     el('div', { class: 'phrase-main' },
       phraseBlock(phrase, s),
       audioButton(phrase, playPhrase)),
+    politeBlock(phrase, s, playPhrase),
     notesBlock(phrase),
     tagRow(phrase));
   return node;
@@ -602,7 +607,8 @@ async function runSession(root, queue, { exitTo }) {
         class: `study-card ${flipped ? 'flipped' : ''}`,
         onclick: () => { if (!flipped) { flipped = true; draw(); } },
       },
-        el('div', { class: 'card-cat muted small' }, phrase.categoryTitle),
+        el('div', { class: 'card-cat muted small' },
+          phrase.categoryTitle, phrase.register ? ' ' : null, registerBadge(phrase)),
         targetNode(phrase, { furigana: s.furigana }),
         s.romaji && phrase.reading ? el('div', { class: 'romaji' }, phrase.reading) : null,
         audioButton(phrase, playPhrase),
@@ -610,6 +616,7 @@ async function runSession(root, queue, { exitTo }) {
         flipped
           ? el('div', { class: 'study-back' },
               meaningNode(phrase, { big: true }),
+              politeBlock(phrase, s, playPhrase),
               notesBlock(phrase),
               tagRow(phrase))
           : el('p', { class: 'muted tap-hint' }, t('study.tapToReveal'))),

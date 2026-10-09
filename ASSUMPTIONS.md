@@ -734,3 +734,73 @@ without asking.
   service worker, Cache Storage, every tab of every course, and offline with
   every connection dropped. Its temporary browser profile and its
   `--upgrade-from` checkout live in `tmp/`, which is gitignored.
+
+### A52 — Item 1: trip framing removed; weeks became topic groups
+- **Copy:** the trip and deadline wording is gone from the UI and README
+  (taglines, Browse intro, set descriptions, the Characters footnote, page
+  and manifest descriptions). The manifest category `travel` was dropped.
+- **Kept on purpose:**
+  - §2 survives as a dated history of the original build plan.
+  - The English course stays a travel-English course. That is its content,
+    not framing.
+  - Airport and Hotel stay as phrase categories, under a "Travelling" group.
+- **Weeks became groups:** categories used to be grouped by a `week` field
+  ("Week 1 — get off the plane"), which was the trip calendar built into the
+  data. Each manifest now declares named `groups`, written in that course's
+  own UI language, and each category names its group.
+- **Starters replace "week 1" (supersedes A9):** placement used to activate
+  the four week-1 categories. It now activates the categories marked
+  `starter`. For Japanese the starters are greetings, numbers, small talk and
+  the new casual set — what a partner conversation needs first. For English
+  they stay greetings, numbers, airport and transport.
+- **Checkboxes:** README §2 boxes are ticked. The exception is
+  "scenarios for loaded categories", which stays unticked with a note:
+  emergencies and small talk still have no scenario. §10 is closed; the name
+  is Wayword.
+
+### A53 — `npm run deploy` fixed rather than removed
+The old script force-pushed a `gh-pages` branch. Pages serves `main`, so it
+changed nothing users saw.
+
+The new script runs the checks first, then pushes:
+- It refuses if not on `main`, if anything is uncommitted, or if behind
+  `origin`.
+- It runs all four test suites.
+- It pushes `main`, then polls the live `sw.js` until it reports this
+  build's cache version.
+- `--dry-run` stops before the push.
+
+Removing the script was the alternative. A deploy that won't ship failing
+tests and says when the site is live is worth keeping, so it stayed.
+
+**Incident during the switch (no remote effect):** a write of the new script
+failed silently, and my follow-up `--dry-run` therefore ran the *old* script,
+which ignores that flag. I stopped it within seconds. `git ls-remote`
+confirmed it never pushed: origin still had only `main` at `c5b4b71`. It had
+created a local `.deploy-worktree` checkout and a local `gh-pages` branch;
+both were removed.
+
+### A54 — The casual set: studiable, labelled, paired with polite
+README §6 had casual forms arriving later, as recognition-only. For this
+learner that is backwards: the person he talks to most is his partner, and
+casual is what you *say* to a partner. So:
+
+- **Size and content:** the casual set has 39 phrases (`content/casual.json`),
+  all fully studiable. Each carries its polite counterpart and a note on when
+  each form is right: partner, friends and family get casual; staff,
+  strangers and — at first — the partner's parents get polite.
+- **Labels:** every phrase in the course now shows a **Polite** or **Casual**
+  badge. A phrase's `register`, or else the course manifest's `register`,
+  decides which. The English course declares no register, so it shows no
+  badges.
+- **Polite versions:** shown under each casual phrase, with furigana, romaji
+  and their own audio clip (78 new clips).
+- **Avoided:** gendered sentence-enders (わ, ぜ) and heavy forms. 愛してる is
+  only mentioned in a note, as rare and heavy.
+- **Furigana notation:** new content may write furigana inline, as
+  `{漢字|かんじ}` (`js/ruby.js`), instead of segment arrays. Both forms are
+  accepted everywhere. The self-test checks that the notation spells out the
+  text exactly and that every reading is kana. TTS reads the kana reading the
+  notation spells out.
+- **Placement size (supersedes A5's ~15–20):** 11 categories × 2 = 22 phrase
+  cards, plus 6 character cards.

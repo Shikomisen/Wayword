@@ -4,7 +4,7 @@
   "speaker": "ja",
   "register": "polite-neutral",
   "generatedFor": "Wayword — English for Japanese speakers",
-  "notes": "Travel English for Japanese speakers. Same shape as the English → Japanese course: one file per category, one per scenario, order is trip relevance. Text the learner studies is `english`; `japanese` is the gloss. Notes are written in Japanese.",
+  "notes": "English for Japanese speakers. Same shape as the English → Japanese course: one file per category, one per scenario. Text the learner studies is `english`; `japanese` is the gloss. Notes are written in Japanese. Categories appear under the group they name; `starter` categories go into the deck when placement finishes.",
   "fields": {
     "target": "english",
     "meaning": "japanese"
@@ -22,8 +22,26 @@
   ],
   "copy": {
     "placementLede": "{n}枚のカードで、10のカテゴリーをひととおりチェックします。それぞれ、すでに知っているかどうかを選ぶだけ。入力も採点もありません — 各カードをどこから復習に入れるかを決めるためのものです。",
-    "placementAside": "学校で習った英語は、読めばわかるのに口から出てこない — ということがよくあります。旅先で必要なのは、とっさに言える短いひとこと。そのすき間を見つけるためのチェックで、テストではありません。"
+    "placementAside": "学校で習った英語は、読めばわかるのに口から出てこない — ということがよくあります。実際の会話で必要なのは、とっさに言える短いひとこと。そのすき間を見つけるためのチェックで、テストではありません。"
   },
+  "groups": [
+    {
+      "id": "basics",
+      "title": "基本のひとこと"
+    },
+    {
+      "id": "travel",
+      "title": "空港・ホテル"
+    },
+    {
+      "id": "town",
+      "title": "街で"
+    },
+    {
+      "id": "help",
+      "title": "もしもの時"
+    }
+  ],
   "categories": [
     {
       "id": "greetings",
@@ -31,8 +49,8 @@
       "file": "content/ja-en/greetings.json",
       "title": "あいさつと基本のひとこと",
       "icon": "🙏",
-      "week": 1,
-      "tier": "core"
+      "group": "basics",
+      "starter": true
     },
     {
       "id": "numbers",
@@ -40,8 +58,8 @@
       "file": "content/ja-en/numbers.json",
       "title": "数字・時間・お金",
       "icon": "🔢",
-      "week": 1,
-      "tier": "core"
+      "group": "basics",
+      "starter": true
     },
     {
       "id": "airport",
@@ -49,8 +67,8 @@
       "file": "content/ja-en/airport.json",
       "title": "空港・入国審査",
       "icon": "✈️",
-      "week": 1,
-      "tier": "core"
+      "group": "travel",
+      "starter": true
     },
     {
       "id": "transport",
@@ -58,8 +76,8 @@
       "file": "content/ja-en/transport.json",
       "title": "電車・バス・タクシー",
       "icon": "🚆",
-      "week": 1,
-      "tier": "core"
+      "group": "town",
+      "starter": true
     },
     {
       "id": "directions",
@@ -67,8 +85,7 @@
       "file": "content/ja-en/directions.json",
       "title": "道をたずねる",
       "icon": "🧭",
-      "week": 2,
-      "tier": "core"
+      "group": "town"
     },
     {
       "id": "hotel",
@@ -76,8 +93,7 @@
       "file": "content/ja-en/hotel.json",
       "title": "ホテル",
       "icon": "🏨",
-      "week": 2,
-      "tier": "core"
+      "group": "travel"
     },
     {
       "id": "restaurant",
@@ -85,8 +101,7 @@
       "file": "content/ja-en/restaurant.json",
       "title": "レストラン・カフェ",
       "icon": "🍽️",
-      "week": 3,
-      "tier": "core"
+      "group": "town"
     },
     {
       "id": "shopping",
@@ -94,8 +109,7 @@
       "file": "content/ja-en/shopping.json",
       "title": "買い物・支払い",
       "icon": "🛍️",
-      "week": 3,
-      "tier": "core"
+      "group": "town"
     },
     {
       "id": "emergency",
@@ -103,8 +117,7 @@
       "file": "content/ja-en/emergency.json",
       "title": "緊急時・体調不良",
       "icon": "🏥",
-      "week": 4,
-      "tier": "core"
+      "group": "help"
     },
     {
       "id": "smalltalk",
@@ -112,8 +125,7 @@
       "file": "content/ja-en/smalltalk.json",
       "title": "雑談",
       "icon": "💬",
-      "week": 4,
-      "tier": "core"
+      "group": "basics"
     }
   ],
   "characterSets": [],

@@ -28,6 +28,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync, statSync } from 'node:fs';
 import { dirname, resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { rubyReading } from '../js/ruby.js';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -104,8 +105,15 @@ function collect(course) {
   const lang = manifest.language || course.target;
   // The text being learned: `japanese` for en-ja, `english` for ja-en.
   const targetField = manifest.fields?.target || 'japanese';
+  const rubyField = manifest.fields?.ruby;
   const job = (id, category, text, out) =>
     jobs.push({ id: `${course.id}/${id}`, category, text, lang, out: resolve(ROOT, out) });
+
+  // What to synthesise for an item. For Japanese the kana reading is far more
+  // reliable than raw kanji: an explicit audioHint wins, else the reading the
+  // furigana spells out, else the text itself.
+  const spoken = (item) =>
+    item.audioHint || (rubyField && item[rubyField] ? rubyReading(item[rubyField]) : '') || item[targetField];
 
   for (const entry of manifest.categories) {
     if (ONLY && !ONLY.has(entry.id)) continue;
@@ -117,9 +125,9 @@ function collect(course) {
     const cat = JSON.parse(readFileSync(path, 'utf8'));
     for (const p of cat.phrases || []) {
       if (!p.audio) { problems.push(`${p.id}: no audio path declared`); continue; }
-      // For Japanese, audioHint carries the kana reading, which the
-      // synthesiser handles far more reliably than raw kanji.
-      job(p.id, entry.id, p.audioHint || p[targetField], p.audio);
+      job(p.id, entry.id, spoken(p), p.audio);
+      // A casual phrase's polite counterpart has its own clip.
+      if (p.polite?.audio) job(`${p.id}/polite`, entry.id, spoken(p.polite), p.polite.audio);
     }
   }
 
