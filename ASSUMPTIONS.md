@@ -1342,3 +1342,22 @@ casual is what you *say* to a partner. So:
   - a truly missing file is given up on after three tries without failing
     the install.
   The old worker fails this test, and the new one passes it.
+
+### A77 — Item 7: live verification of v7
+- **Deployed** `35ecfac..3039eda` with `npm run deploy`: every suite passed,
+  pushed as Shikomisen, and https://shikomisen.github.io/Wayword/ served v7
+  31 seconds later.
+- **`npm run test:browser -- --live https://shikomisen.github.io/Wayword/`,
+  Firefox: 31 of 31.**
+  - The service worker takes control with the right scope.
+  - `wayword-v7` holds all 1,143 files (1,042 clips, 13.2 MB).
+  - Every tab of both courses renders online.
+  - A backup goes out and back through IndexedDB on the live origin (461
+    entries).
+  - With the network really cut, the app starts cold, every tab renders,
+    and every one of the 1,143 files loads from the cache. No errors are
+    logged.
+- **The learner's own update path, checked directly:** the v5 build that
+  was live this morning (`c5b4b71`), used, then this build at the same URL:
+  33 of 33. Progress survives, v7 replaces v5, nothing is missing, and
+  everything works offline.
