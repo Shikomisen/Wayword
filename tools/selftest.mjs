@@ -417,6 +417,49 @@ function validateCourse(course) {
     console.log(`  ${charCount} characters, ${charAudioPresent} with generated audio (${charCount - charAudioPresent} pending)`);
   }
 
+  /* ---------- listening ---------- */
+
+  // A line said back, or one word of a sound pair: text, meaning and its own clip.
+  let listenCount = 0;
+  const listenItem = (x) => {
+    listenCount++;
+    for (const field of ['id', target, fields.meaning, 'audio']) check(`${x.id}: has ${field}`, Boolean(x[field]));
+    check(`${x.id}: unique id across all content`, !seenIds.has(x.id));
+    seenIds.add(x.id);
+    check(`${x.id}: audio path is unique`, !seenAudio.has(x.audio));
+    seenAudio.add(x.audio);
+    check(`${x.id}: audio lives under audio/${course.target}/`, String(x.audio).startsWith(`audio/${course.target}/`), x.audio);
+    const clip = resolve(ROOT, x.audio);
+    if (existsSync(clip)) check(`${x.id}: audio clip is non-trivial`, statSync(clip).size > 800);
+  };
+  for (const entry of manifest.listening || []) {
+    check(`${entry.id}: listening kind is replies or contrasts`, ['replies', 'contrasts'].includes(entry.kind), entry.kind);
+    if (!check(`listening file exists: ${entry.file}`, existsSync(resolve(ROOT, entry.file)))) continue;
+    const data = readJSON(entry.file);
+    check(`${entry.id}: schemaVersion matches`, data.schemaVersion === manifest.schemaVersion);
+    check(`${entry.id}: id matches manifest`, data.id === entry.id, `${data.id} vs ${entry.id}`);
+    if (entry.kind === 'replies') {
+      // Each question offers three meanings: the line's own and two others.
+      check(`${entry.id}: enough lines to offer three meanings`, (data.items || []).length >= 3);
+      for (const x of data.items || []) {
+        listenItem(x);
+        check(`${x.id}: a reply comes with its meaning`, Boolean(x.reply) === Boolean(x.replyJapanese));
+        check(`${x.id}: says who's speaking`, typeof x.speaker === 'string' && x.speaker.length > 0);
+      }
+    } else {
+      check(`${entry.id}: has sets of pairs`, (data.sets || []).length > 0);
+      for (const set of data.sets || []) {
+        check(`${entry.id}/${set.id}: names its sound`, Boolean(set.sound));
+        for (const pair of set.pairs || []) {
+          check(`${entry.id}/${set.id}: a pair is two different words`,
+            pair.length === 2 && pair[0][target] !== pair[1][target], pair.map((w) => w[target]).join(' / '));
+          pair.forEach(listenItem);
+        }
+      }
+    }
+  }
+  if (listenCount) console.log(`  ${listenCount} listening items`);
+
   for (const s of manifest.scenarios || []) {
     if (!check(`scenario file exists: ${s.file}`, existsSync(resolve(ROOT, s.file)))) continue;
     const sc = readJSON(s.file);

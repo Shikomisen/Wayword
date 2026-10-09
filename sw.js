@@ -18,7 +18,7 @@
  *                         under a given cache version)
  */
 
-const CACHE_VERSION = 'v9';
+const CACHE_VERSION = 'v10';
 const CACHE_PREFIX = 'wayword-';
 const CACHE = `${CACHE_PREFIX}${CACHE_VERSION}`;
 
@@ -49,11 +49,15 @@ const SHELL = [
   './js/home.js',
   './js/i18n.js',
   './js/kana.js',
+  './js/listen-drill.js',
+  './js/listening.js',
+  './js/mastery.js',
   './js/mine.js',
   './js/offline.js',
   './js/quiz.js',
   './js/reading.js',
   './js/characters.js',
+  './js/choice.js',
   './js/render.js',
   './js/ruby.js',
   './js/scenario.js',
@@ -92,7 +96,7 @@ async function readJSON(f, cache = null, attempts = 3) {
 }
 
 // Every list a course manifest can declare; each entry names a content file.
-const MANIFEST_LISTS = ['categories', 'decks', 'lessons', 'characterSets', 'scenarios'];
+const MANIFEST_LISTS = ['categories', 'decks', 'lessons', 'listening', 'characterSets', 'scenarios'];
 
 /**
  * Every clip a content file declares, wherever it sits: phrases, a casual

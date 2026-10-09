@@ -36,6 +36,7 @@ import { renderMine, renderMineForm } from './mine.js';
 import { renderConnectors, renderLesson, renderPractice } from './connectors.js';
 import { renderKanaDrill, kanaState, refreshKanaAids, SCRIPT_NAMES } from './reading.js';
 import { keepOffline, offlineStatus } from './offline.js';
+import { renderListening, renderListeningDrill, listeningState } from './listen-drill.js';
 
 const app = () => document.getElementById('app');
 const { link } = course;
@@ -57,6 +58,8 @@ const routes = [
   [/^\/connectors\/mixed$/, (root) => renderPractice(root, null)],
   [/^\/connectors\/([\w-]+)\/practice$/, (root, id) => renderPractice(root, id)],
   [/^\/connectors\/([\w-]+)$/, (root, id) => renderLesson(root, id)],
+  [/^\/listening$/, (root) => renderListening(root)],
+  [/^\/listening\/drill$/, (root) => renderListeningDrill(root)],
   [/^\/scenarios$/, (root) => renderScenarioList(root)],
   [/^\/scenario\/([\w-]+)$/, (root, id) => renderScenario(root, id)],
   // Order matters: /characters/review and /characters/drill must match before /characters/:id.
@@ -133,6 +136,7 @@ async function router() {
     // Sections a course doesn't have (Characters for English) are not routable.
     if (/^\/characters/.test(sub) && !features.characters) break;
     if (/^\/connectors/.test(sub) && !features.lessons) break;
+    if (/^\/listening/.test(sub) && !features.listening) break;
     const root = clear(app());
     window.scrollTo(0, 0);
     try {
@@ -258,11 +262,11 @@ function renderTabbar(content) {
 function highlightNav(path) {
   const tabs = [...document.querySelectorAll('.tabbar a')];
   // Sub-routes keep their section lit: /characters/hiragana is still
-  // "Characters", /category/airport and /mine are part of Learn — and so are
-  // the scenarios, when they have no tab of their own.
+  // "Characters", /category/airport, /mine and /listening are part of Learn —
+  // and so are the scenarios, when they have no tab of their own.
   const learnOwns = tabs.some((a) => a.dataset.path === '/scenarios')
-    ? /^\/(category|mine)(\/|$)/
-    : /^\/(category|mine|scenarios?)(\/|$)/;
+    ? /^\/(category|mine|listening)(\/|$)/
+    : /^\/(category|mine|listening|scenarios?)(\/|$)/;
   tabs.forEach((a) => {
     const target = a.dataset.path;
     const owns = target === '/'
@@ -329,6 +333,7 @@ async function today(root) {
       // after the reviews, above the list of decks.
       features.characters ? await charactersBlock() : null,
       features.lessons ? await connectorsBlock(content) : null,
+      features.listening ? await listeningBlock() : null,
       await backupNudge(summary, content),
 
       el('h2', { class: 'section-title' }, t('today.inDeck')),
@@ -358,6 +363,22 @@ async function connectorsBlock(content) {
         el('span', { class: 'row-sub' }, t('connectors.practisedCount', { n: practised, total: content.lessons.length })),
         el('span', { class: 'bar' },
           el('span', { class: 'bar-fill', style: `width:${Math.round((practised / content.lessons.length) * 100)}%` }))),
+      el('span', { class: 'row-chev' }, '›')));
+}
+
+/** The daily listening drill: a couple of minutes, and how much is mastered so far. */
+async function listeningBlock() {
+  const { progress, doneToday } = await listeningState();
+  const { mastered, total } = progress;
+  return el('section', {},
+    el('h2', { class: 'section-title' }, t('listening.title')),
+    el('a', { class: `row-card listen-today ${doneToday ? 'is-done' : ''}`, href: link('/listening/drill') },
+      el('span', { class: 'row-icon' }, '👂'),
+      el('span', { class: 'row-body' },
+        el('span', { class: 'row-title' }, t(doneToday ? 'listening.doneToday' : 'listening.daily')),
+        el('span', { class: 'row-sub' }, t('listening.mastered', { n: mastered, total })),
+        el('span', { class: 'bar' },
+          el('span', { class: 'bar-fill', style: `width:${total ? Math.round((mastered / total) * 100) : 0}%` }))),
       el('span', { class: 'row-chev' }, '›')));
 }
 
@@ -508,11 +529,23 @@ async function learn(root) {
       words.length || sentences.length ? el('h2', { class: 'kind-title' }, t('learn.phrases')) : null,
       groups.map((group) => section(group.title, categories.filter((c) => c.group === group.id).map((c) => browseRow(c, s)))),
       section(t('learn.mine'), [mineRow(content)], 'kind-title'),
+      content.features.listening ? section(t('listening.title'), [listeningRow(content)], 'kind-title') : null,
       // When the tab bar is full, the scenarios live here instead.
       content.features.scenarios && !scenariosTabbed(content)
         ? section(t('learn.scenarios'), [scenariosRow(content)], 'kind-title')
         : null)
   );
+}
+
+function listeningRow(content) {
+  const replies = content.listening.find((x) => x.kind === 'replies')?.items.length || 0;
+  const words = content.listening.find((x) => x.kind === 'contrasts')?.items.length || 0;
+  return el('a', { class: 'row-card', href: link('/listening'), dataset: { section: 'listening' } },
+    el('span', { class: 'row-icon' }, '👂'),
+    el('span', { class: 'row-body' },
+      el('span', { class: 'row-title' }, t('listening.title')),
+      el('span', { class: 'row-sub' }, t('listening.count', { lines: replies, pairs: words / 2 }))),
+    el('span', { class: 'row-chev' }, '›'));
 }
 
 function scenariosRow(content) {

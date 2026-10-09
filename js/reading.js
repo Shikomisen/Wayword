@@ -21,6 +21,7 @@ import * as audio from './audio.js';
 import { link, go } from './course.js';
 import { el, clear, setKatakanaAids } from './render.js';
 import { MASTERY, SCRIPTS, kanaProgress, focusScript, buildKanaDrill } from './kana.js';
+import { choiceQuestion } from './choice.js';
 
 export const SCRIPT_NAMES = { hiragana: 'Hiragana', katakana: 'Katakana' };
 
@@ -121,52 +122,32 @@ export async function renderKanaDrill(root, script) {
     if (index >= questions.length) { finish(); return; }
     const q = questions[index];
     const listen = q.type === 'listen';
-    const feedback = el('div', { class: 'drill-feedback' });
-    let answered = false;
-
-    const next = () => {
-      if (questions[index] !== q || !view.isConnected) return; // already moved on
-      index++;
-      ask();
-    };
-    const buttons = q.options.map((c) => el('button', {
-      type: 'button', class: `btn option ${listen ? 'kana-option' : 'romaji-option'}`, dataset: { id: c.id },
-      onclick: () => choose(c),
-    }, listen ? el('span', { class: 'kana-char', lang: 'ja' }, c.character) : c.romaji));
-
-    async function choose(c) {
-      if (answered) return;
-      answered = true;
-      const ok = c.id === q.char.id;
-      if (ok) right++;
-      buttons.forEach((b) => {
-        b.disabled = true;
-        if (b.dataset.id === q.char.id) b.classList.add(ok ? 'is-right' : 'is-answer');
-        else if (b.dataset.id === c.id) b.classList.add('is-wrong');
-      });
-      audio.play(q.char.audio); // shape and sound together, right or wrong
-      await deck.recordKana(q.char.id, ok);
-      const nextButton = el('button', { type: 'button', class: 'btn btn-primary btn-lg full drill-next', onclick: next },
-        index + 1 < questions.length ? 'Next' : 'Finish');
-      feedback.append(
-        el('p', { class: `verdict verdict-${ok ? 'right' : 'wrong'}` }, ok ? '✓ Right' : '✕ Not quite'),
-        el('p', { class: 'kana-answer' }, el('span', { class: 'kana-char', lang: 'ja' }, q.char.character), ` is ${q.char.romaji}`),
-        nextButton);
-      onKey = (k) => { if (k === 'Enter') next(); };
-      // A right answer moves on by itself; a wrong one waits to be looked at.
-      if (ok) setTimeout(next, 900);
-    }
-
-    onKey = (k) => { const n = Number(k); if (n >= 1 && n <= buttons.length) buttons[n - 1].click(); };
-    clear(view).append(
-      top(),
-      el('div', { class: 'drill-card kana-question', dataset: { kana: q.type, char: q.char.id } },
-        el('div', { class: 'drill-kind' }, listen ? 'Which one did you hear?' : 'What does it say?'),
-        listen
-          ? el('button', { type: 'button', class: 'btn listen-btn', onclick: () => audio.play(q.char.audio) }, '🔊 Play again')
-          : el('div', { class: 'kana-prompt', lang: 'ja' }, q.char.character),
-        el('div', { class: 'drill-options kana-options' }, buttons),
-        feedback));
+    const question = choiceQuestion({
+      kind: listen ? 'Which one did you hear?' : 'What does it say?',
+      prompt: [listen
+        ? el('button', { type: 'button', class: 'btn listen-btn', onclick: () => audio.play(q.char.audio) }, '🔊 Play again')
+        : el('div', { class: 'kana-prompt', lang: 'ja' }, q.char.character)],
+      options: q.options.map((c) => ({
+        id: c.id,
+        className: listen ? 'kana-option' : 'romaji-option',
+        node: listen ? el('span', { class: 'kana-char', lang: 'ja' }, c.character) : c.romaji,
+      })),
+      rightId: q.char.id,
+      verdicts: { right: '✓ Right', wrong: '✕ Not quite' },
+      onAnswer: async (ok) => {
+        if (ok) right++;
+        audio.play(q.char.audio); // shape and sound together, right or wrong
+        await deck.recordKana(q.char.id, ok);
+        return [el('p', { class: 'kana-answer' }, el('span', { class: 'kana-char', lang: 'ja' }, q.char.character), ` is ${q.char.romaji}`)];
+      },
+      next: { label: index + 1 < questions.length ? 'Next' : 'Finish', go: () => { index++; ask(); } },
+      autoAdvance: true,
+      cardClass: 'kana-question',
+      optionsClass: 'kana-options',
+      dataset: { kana: q.type, char: q.char.id },
+    });
+    onKey = (k) => question.key(k);
+    clear(view).append(top(), question.node);
     if (listen) audio.play(q.char.audio);
   }
 

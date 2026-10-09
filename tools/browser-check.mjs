@@ -226,6 +226,12 @@ async function expectedAssets(ids) {
       out.push(`./${s.file}`);
       for (const n of Object.values((await j(s.file)).nodes || {})) if (n.audio) out.push(`./${n.audio}`);
     }
+    for (const l of m.listening || []) {
+      out.push(`./${l.file}`);
+      const data = await j(l.file);
+      for (const x of data.items || []) out.push(...clips(x).map((a) => `./${a}`));
+      for (const set of data.sets || []) for (const pair of set.pairs || []) for (const w of pair) out.push(...clips(w).map((a) => `./${a}`));
+    }
   }
   return [...new Set(out)];
 }
@@ -276,10 +282,15 @@ try {
     const first = await appText(page);
     check('first launch after the update still renders', first.length > 40 && !/Something went wrong/.test(first),
       first.slice(0, 50));
+    // The record of courses kept (wayword-kept) is meant to outlive every version.
     check(`new service worker installs ${newCache} and removes the old caches`,
       await waitFor(page, ([fresh, old]) => caches.keys().then((k) => k.includes(fresh) && old.every((o) => !k.includes(o))),
-        [newCache, oldCaches.filter((c) => c !== newCache)], 120000),
+        [newCache, oldCaches.filter((c) => c !== newCache && c !== 'wayword-kept')], 120000),
       (await page.evaluate(() => caches.keys())).join(', '));
+    if (oldCaches.includes('wayword-kept')) {
+      check('…keeping the record of which courses this device uses', Boolean(await keptCourses(page)),
+        JSON.stringify(await keptCourses(page)));
+    }
     await page.goto(base, { waitUntil: 'load' });
     await page.goto(`${base}#/en-ja/`, { waitUntil: 'load' });
     await waitFor(page, () => document.querySelector('.placement-intro, .stat-row'), null, 15000);
@@ -307,10 +318,16 @@ try {
   }
   const audio = expected.filter((u) => u.endsWith('.mp3')).length;
   if (oldTree) {
-    // The previous build cached every course; so does its first update, once.
-    const missing = await notCached(page, expected);
-    check(`${newCache} keeps every course a copy that had them all (${expected.length} files, ${audio} clips)`,
-      missing.length === 0, missing.slice(0, 5).join(', ') || 'none missing');
+    // The update keeps what the previous build kept: the courses it recorded
+    // as used here (v9 on) — or, from a build that cached every course and
+    // recorded none (v8 and before), every course, this once.
+    const kept = await keptCourses(page);
+    const want = kept ? await expectedAssets(kept) : expected;
+    const missing = await notCached(page, want);
+    check(kept
+      ? `${newCache} downloads the courses the device used (${kept.join(', ')}) before taking over (${want.length} files)`
+      : `${newCache} keeps every course a copy that had them all (${expected.length} files, ${audio} clips)`,
+    missing.length === 0, missing.slice(0, 5).join(', ') || 'none missing');
   } else {
     const missing = await notCached(page, appOnly);
     check(`${newCache} holds the app, the course list and the interface strings (${appOnly.length} files)`,
@@ -324,11 +341,11 @@ try {
   const tabsByCourse = {};
   for (const [i, c] of available.entries()) {
     check(`${c.id}: enters past placement`, await enterCourse(page, c.id));
+    // Opening a course downloads it, all of it, in the background (or finds it there already).
+    check(`opening ${c.id} downloads it for offline use (${courseFiles[c.id].length} files)`,
+      await cachedAll(page, courseFiles[c.id], LIVE ? 300000 : 120000),
+      `${courseFiles[c.id].length - (await notCached(page, courseFiles[c.id])).length} of ${courseFiles[c.id].length}`);
     if (!oldTree) {
-      // Opening a course downloads it, all of it, in the background.
-      check(`opening ${c.id} downloads it for offline use (${courseFiles[c.id].length} files)`,
-        await cachedAll(page, courseFiles[c.id], LIVE ? 300000 : 120000),
-        `${courseFiles[c.id].length - (await notCached(page, courseFiles[c.id])).length} of ${courseFiles[c.id].length}`);
       const later = available.slice(i + 1);
       if (later.length) {
         const early = [];

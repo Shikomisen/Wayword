@@ -20,7 +20,7 @@
 import * as store from './store.js';
 import * as srs from './srs.js';
 import { loadContent, getCharacterSet, refreshUserItems, USER_DECK } from './content.js';
-import { nextStat } from './kana.js';
+import { nextStat } from './mastery.js';
 
 const DEFAULT_DIRECTIONS = { recognition: true, production: true, listening: false };
 
@@ -548,6 +548,33 @@ export async function finishKanaDrill(answered, script) {
 export async function kanaDrillToday() {
   const log = await store.get('meta', 'kanaLog');
   return log?.lastDay === todayKey() ? { done: true, script: log.lastScript || null } : { done: false, script: null };
+}
+
+/* ---------- listening mastery (listening.js has the rules) ---------- */
+
+/** Per listening item id: { right, wrong, streak, days, last } from the daily listening drill. */
+export async function getListenStats() {
+  return (await store.get('meta', 'listenStats')) || {};
+}
+
+/** Record one listening answer. */
+export async function recordListen(itemId, right) {
+  const stats = await getListenStats();
+  stats[itemId] = nextStat(stats[itemId], right, todayKey());
+  await store.set('meta', 'listenStats', stats);
+  return stats[itemId];
+}
+
+/** A finished listening drill counts toward the day, and marks today's drill done. */
+export async function finishListenDrill(answered) {
+  await countDrills(answered);
+  const log = (await store.get('meta', 'listenLog')) || { sessions: 0 };
+  await store.set('meta', 'listenLog', { sessions: log.sessions + 1, lastDay: todayKey() });
+}
+
+/** Whether a listening drill was done today. */
+export async function listenDrillToday() {
+  return (await store.get('meta', 'listenLog'))?.lastDay === todayKey();
 }
 
 /** Every character card by id — a well-learned card counts toward kana mastery. */

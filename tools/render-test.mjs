@@ -980,6 +980,76 @@ await goTo('#/ja-en/scenarios');
 check('scenario list in Japanese with all 7 English scenarios',
   text().includes('会話練習') && $$('.row-card').length === EN.scenarios.length && EN.scenarios.length === 7,
   `${$$('.row-card').length} scenarios`);
+// Listening: a daily drill on Today, a section in Learn — not a tab, so the scenarios keep theirs.
+const replyFile = readJSON(EN.listening.find((l) => l.kind === 'replies').file);
+const pairCount = readJSON(EN.listening.find((l) => l.kind === 'contrasts').file).sets.reduce((n, x) => n + x.pairs.length, 0);
+await goTo('#/ja-en/');
+check('Today offers the daily listening drill, and how much is mastered',
+  $('.listen-today .row-title')?.textContent === '今日の聞き取り（2〜3分）' &&
+    $('.listen-today .row-sub')?.textContent === `66個中0個を習得`, $('.listen-today .row-sub')?.textContent);
+check('…while the tab bar keeps the scenarios', [...document.querySelectorAll('.tabbar a')].some((a) => a.dataset.path === '/scenarios') &&
+  ![...document.querySelectorAll('.tabbar a')].some((a) => a.dataset.path === '/listening'));
+await goTo('#/ja-en/browse');
+check('Learn lists the listening section',
+  $('.row-card[data-section="listening"] .row-sub')?.textContent === `${replyFile.items.length}文・音のペア${pairCount}組`,
+  $('.row-card[data-section="listening"] .row-sub')?.textContent);
+await goTo('#/ja-en/listening');
+check('the listening page lists every line said back, with what to answer, and every pair of sounds',
+  $('h1')?.textContent === '聞き取り' && $$('.listen-line').length === replyFile.items.length &&
+    $$('.listen-line .listen-reply').length === replyFile.items.filter((x) => x.reply).length &&
+    $$('.contrast-pair').length === pairCount,
+  `${$$('.listen-line').length} lines, ${$$('.contrast-pair').length} pairs`);
+check('…as part of Learn', document.querySelector('.tabbar a.active')?.dataset.path === '/browse');
+
+await goTo('#/ja-en/listening/drill');
+const listenAsked = [];
+const listenKindsChecked = new Set();
+let listenWrong = null;
+for (let guard = 0; guard < 20 && $('.listen-question'); guard++) {
+  const card = $('.listen-question');
+  const kind = card.dataset.listen;
+  listenAsked.push(card.dataset.item);
+  const playedBefore = played.length;
+  if (guard === 0) {
+    check('a listening question plays the line, with 🐢 to hear it slower',
+      $$('.listen-question .listen-btn').length === 2 && Boolean($('.listen-question .listen-slow')));
+  }
+  if (kind === 'reply' && !listenKindsChecked.has(kind)) {
+    listenKindsChecked.add(kind);
+    check('"What did they say?" offers three meanings, in Japanese',
+      $('.drill-kind')?.textContent === '何と言っていますか？' && $$('.listen-option').length === 3 &&
+        $$('.listen-option span').every((s) => s.getAttribute('lang') === 'ja'));
+  }
+  if (kind === 'contrast' && !listenKindsChecked.has(kind)) {
+    listenKindsChecked.add(kind);
+    check('"Which one did you hear?" offers the two words of a pair',
+      $('.drill-kind')?.textContent === 'どっちに聞こえましたか？' && $$('.contrast-option').length === 2 &&
+        $$('.contrast-option .contrast-word').every((w) => w.getAttribute('lang') === 'en'));
+  }
+  const pick = listenWrong ? card.dataset.item : $$('.option').find((b) => b.dataset.id !== card.dataset.item)?.dataset.id;
+  if (!listenWrong) listenWrong = card.dataset.item;
+  $$('.option').find((b) => b.dataset.id === pick)?.click();
+  for (let i = 0; i < 6; i++) await tick();
+  if (listenAsked.length === 1) {
+    check('a wrong answer is marked, the right one shown — and what was said, to read and hear again',
+      Boolean($('.option.is-wrong')) && Boolean($('.option.is-answer')) && Boolean($('.verdict-wrong')) &&
+        (kind === 'reply' ? Boolean($('.drill-answer .audio-btn')) : $$('.contrast-play').length === 2),
+      kind);
+  }
+  $('.drill-next')?.click();
+  for (let i = 0; i < 6; i++) await tick();
+}
+check('the drill ends with the score', Boolean($('.practice-done')) &&
+  text().includes(`${listenAsked.length}問中${listenAsked.length - 1}問正解`), $('.practice-done .lede')?.textContent);
+const listenRecord = await deck.getListenStats();
+check('every answer is recorded per item — the missed one starts over',
+  listenAsked.every((id) => listenRecord[id]) && listenRecord[listenWrong].streak === 0 &&
+    listenAsked.filter((id) => id !== listenWrong).every((id) => listenRecord[id].streak === 1),
+  `${listenAsked.length} asked`);
+await goTo('#/ja-en/');
+check('…and Today shows it done', $('.listen-today')?.classList.contains('is-done') &&
+  $('.listen-today .row-title')?.textContent === '今日の聞き取りは完了');
+
 await goTo('#/ja-en/scenario/cafe');
 check('the café scenario has the learner ordering, as the customer',
   $('.dialogue-who')?.textContent === 'バリスタ' && $$('.btn-option').some((b) => b.textContent.includes("I'd like")),

@@ -1710,3 +1710,89 @@ casual is what you *say* to a partner. So:
   - render: 257, including a whole "so" session with all four drill kinds,
     "Not yet" landing in the reviews, and the 表現 tab;
   - service worker 34, voice 18.
+
+### A89 — A small listening drill, on Today and in Learn rather than a tab
+- **Small, because the gap is speaking.** It's about ten questions a day,
+  two to three minutes, over 66 items:
+  - **What did they say? (30 lines).** Things said back at a counter, a café
+    or on a bus. They're in NZ English (*Are you right there?*,
+    *twenty-four fifty*, *Tag on when you get on*). Hear the line and pick its
+    meaning from three, in Japanese. Afterwards you see the line, its audio,
+    **what you could answer** (the speaking half: *Takeaway, please.*) and a
+    note where the wording is local.
+  - **Which one did you hear? (18 pairs).** Sounds Japanese doesn't tell
+    apart: L/R (light/right…), B/V, S/TH, and 13/30 as
+    *That's fifteen / fifty dollars*, the mix-up that matters at a till.
+    Vowel pairs were left out, because New Zealand vowels shift (*bed*, *bad*,
+    *fish*) and would be unfair to drill against.
+  - Every question has 🔊 and 🐢. A right sound pair moves on by itself; a
+    reply waits, since there's an answer to read.
+- **Mastery like kana:** right 3× in a row on 2 different days. The rule now
+  lives in `js/mastery.js`, shared by `kana.js` and `listening.js`, as the
+  plan asked. So does the "missed last time first" ordering.
+- **The question card.** `js/choice.js` is shared by the kana drill (now
+  rebuilt on it, with the same markup, and its tests pass unchanged) and the
+  listening drill.
+- **A drill's mix:**
+  - what's in progress, missed first;
+  - new items, taking replies and pairs in turn, up to six (a first drill
+    is six questions);
+  - two seats kept for something new even with a backlog;
+  - two mastered items so they stay mastered.
+- **Records.** Per item in `listenStats`, plus a `listenLog` for "done
+  today". Both are ordinary meta records, so backups carry them. A finished
+  drill counts toward the day like any drill.
+- **Not a tab — a decision, not one of the open questions.** The plan said
+  "a Listening tab". A sixth tab would push Scenarios into Learn, and
+  Scenarios are the speaking practice. With speaking the stated gap,
+  Scenarios keep the tab, and listening lives:
+  - on Today, as a daily row like the kana drill;
+  - in Learn, as a section.
+
+  `/listening` lights the Learn tab.
+- **Content rules.** Listening content sits under the manifest's
+  `listening`, as `replies` and `contrasts` files. It isn't flashcards and
+  never enters the review deck. Clips: the lines in the voice of the people
+  the learner talks to (Mitchell, once the NZ voice is on), the pair words
+  in the default voice. `npm test` checks:
+  - ids and audio are unique;
+  - each line has a speaker, and a reply comes with its meaning;
+  - each pair is two different words;
+  - there are enough lines for three-way choices.
+
+  The worker and the Firefox check's hand-written walk both cache and
+  expect the listening files.
+- **Placement:** listening is on Today below the lessons, as the speaking
+  work comes first.
+
+### A90 — Verifying v10 before deploying
+- **`npm test`:**
+  - 32,492 content checks;
+  - 245 integration checks — new: the 177 words and sentences, the 30
+    lessons in five groups, all four drill kinds in a linking-word lesson
+    with "because" as the trap, yes/no to negatives, and listening (loading,
+    a first drill of both kinds, decoys, records, mastery over two days,
+    refreshers, "done today");
+  - 13 language-pack checks;
+  - 18 voice checks (the other voice now covers what's said back).
+- **`npm run test:render`:**
+  - 269 render checks — new: the 表現 tab and title, a whole "so" session
+    with say-it and "Not yet", and listening on Today and in Learn, its page,
+    a full drill with a wrong first answer, and Today showing it done;
+  - 34 service-worker checks.
+- **Audio:** 1,536 clips present (629 English): 311 + 66 new ones, none
+  failed.
+- **`npm run test:browser`, Firefox: 41 of 41.** A first visit caches 38 app
+  files. Opening the Japanese course downloads its 958 files; the English
+  course, 688 (≈10 MB each).
+- **`--upgrade-from origin/main` (the live v9): 39 of 39.** The design
+  working across real versions:
+  - v9 had recorded that this device uses the Japanese course;
+  - v10 downloaded exactly that (996 files) before taking over, and kept the
+    record;
+  - the English course downloaded when first opened.
+
+  The check had wrongly counted `wayword-kept` among the old caches to
+  delete. It now expects the record to survive, and expects either "the
+  recorded courses" or "everything" depending on what the previous build
+  kept.

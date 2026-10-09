@@ -148,10 +148,12 @@ try {
     `${requests.length} of ${total}`);
   check('…every line well-formed, apostrophes and all (I&apos;d like…)',
     requests.map(parsed).every((p) => p?.clean) && requests.some((r) => r.body.includes('I&apos;d like')));
-  check('the course\'s other voice is only used for the people the learner talks to',
-    requests.map(parsed).filter((p) => p?.voice === OTHERS).length ===
-      manifest.scenarios.flatMap((s) => Object.values(JSON.parse(readFileSync(resolve(ROOT, s.file), 'utf8')).nodes))
-        .filter((n) => n.audio).length);
+  const theirLines = manifest.scenarios.flatMap((s) => Object.values(JSON.parse(readFileSync(resolve(ROOT, s.file), 'utf8')).nodes))
+    .filter((n) => n.audio).length +
+    (manifest.listening || []).filter((l) => l.kind === 'replies')
+      .reduce((n, l) => n + JSON.parse(readFileSync(resolve(ROOT, l.file), 'utf8')).items.length, 0);
+  check('the course\'s other voice is only used for the people the learner talks to — scenario lines and what\'s said back',
+    requests.map(parsed).filter((p) => p?.voice === OTHERS).length === theirLines, `${theirLines} lines`);
 } finally {
   writeFileSync(MANIFEST, manifestBefore);
   server.close();

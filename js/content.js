@@ -190,6 +190,33 @@ export async function loadContent() {
     })
   );
 
+  // The listening drill's content (listening.js): lines people say back, and
+  // pairs of words to tell apart. Not cards — they never enter the review deck.
+  const listening = await Promise.all(
+    (manifest.listening || []).map(async (entry) => {
+      try {
+        const data = await fetchJSON(entry.file);
+        const items = entry.kind === 'contrasts'
+          ? (data.sets || []).flatMap((set) => set.pairs.flatMap((raw) => {
+              // Both words are items; each knows its pair (the two items) and its partner.
+              const pair = raw.map((w) => ({ ...normalise(w), kind: 'contrast', setId: set.id, sound: set.sound, note: set.note || null }));
+              pair.forEach((w, i) => Object.assign(w, { pair, partner: pair[1 - i] }));
+              return pair;
+            }))
+          : (data.items || []).map((x) => ({
+              ...normalise(x),
+              kind: 'reply',
+              // What the learner could say back: English, with its Japanese.
+              reply: x.reply ? normalise({ [fields.target]: x.reply, [fields.meaning]: x.replyJapanese }) : null,
+            }));
+        return { ...entry, ...data, items, missing: false };
+      } catch (err) {
+        console.error(err);
+        return { ...entry, items: [], missing: true };
+      }
+    })
+  );
+
   const setEntries = [...(manifest.characterSets || [])].sort((a, b) => a.order - b.order);
 
   const loadedSets = await Promise.all(
@@ -251,11 +278,13 @@ export async function loadContent() {
       words: decks.some((d) => d.type === 'words'),
       sentences: decks.some((d) => d.type === 'sentences'),
       lessons: lessons.length > 0,
+      listening: listening.some((s) => s.items.length > 0),
     },
     categories: loaded,
     decks,
     lessons,
     lessonGroups: manifest.lessonGroups || [],
+    listening,
     characterSets,
     phrases,
     characters,

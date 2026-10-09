@@ -754,3 +754,20 @@ textarea.text-input { resize: vertical; min-height: 64px; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+/* ---------- listening ---------- */
+
+.listen-options { grid-template-columns: 1fr; }
+.listen-option { font-size: 1rem; text-align: left; justify-content: flex-start; padding: 12px 14px; line-height: 1.5; }
+.contrast-options { grid-template-columns: repeat(2, 1fr); }
+.contrast-option, .contrast-play { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 10px 8px; }
+.contrast-choice { display: flex; flex-direction: column; align-items: center; gap: 2px; }
+.contrast-word { font-size: 1.15rem; font-weight: 700; }
+.contrast-meaning { font-weight: 400; }
+.contrast-pair { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 10px 0; }
+.contrast-play.is-heard { border-color: var(--ok); }
+.contrast-set { margin-bottom: 16px; }
+.contrast-sound { font-size: 1rem; margin: 14px 0 4px; }
+.listen-reply { margin-top: 10px; padding: 8px 10px; background: var(--bg-sunk); border-radius: 10px; }
+.listen-line .dialogue-who, .drill-answer .dialogue-who { margin-bottom: 4px; }
+.listen-today.is-done .row-title { color: var(--ok); }

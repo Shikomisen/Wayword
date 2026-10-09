@@ -354,6 +354,26 @@ function collect(course) {
     }
   }
 
+  // The listening drill: lines people say back, in the voice of the people
+  // the learner talks to, and the words of each sound pair, in the default voice.
+  for (const entry of manifest.listening || []) {
+    if (ONLY && !ONLY.has(entry.id)) continue;
+    const path = resolve(ROOT, entry.file);
+    if (!existsSync(path)) {
+      problems.push(`missing listening file: ${entry.file}`);
+      continue;
+    }
+    const data = JSON.parse(readFileSync(path, 'utf8'));
+    for (const item of data.items || []) {
+      if (!item.audio) { problems.push(`${item.id}: no audio path declared`); continue; }
+      job(item.id, entry.id, spoken(item), item.audio, item.speaker || '*');
+    }
+    for (const word of (data.sets || []).flatMap((set) => (set.pairs || []).flat())) {
+      if (!word.audio) { problems.push(`${word.id}: no audio path declared`); continue; }
+      job(word.id, entry.id, spoken(word), word.audio);
+    }
+  }
+
   // Character sets (kana / kanji) use the same declared-path convention as
   // phrases, so they need no special handling beyond reading a different key.
   for (const entry of manifest.characterSets || []) {

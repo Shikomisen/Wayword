@@ -749,6 +749,51 @@ await deck.grade(enQueue[0].id, srs.GRADE.GOOD);
 check('grading in ja-en counts in ja-en', (await deck.todayStats()).reviews === 1);
 check('ja-en writes under its own storage prefix', [...mem.keys()].some((k) => k.startsWith('ww-ja-en:srs:')));
 
+// Listening: lines said back and sound pairs, drilled daily, mastered over days.
+const listening = await import('../js/listening.js');
+const listenItems = listening.listeningItems(en.listening);
+check('the listening content loads: lines said back, and pairs of sounds',
+  en.features.listening && listenItems.filter((i) => i.kind === 'reply').length === 30 &&
+    listenItems.filter((i) => i.kind === 'contrast').length === 36,
+  `${listenItems.length} items`);
+const takeaway = listenItems.find((i) => i.id === 'lr-01');
+check('a line said back is English, with its meaning and something to say in return',
+  takeaway.target === 'Eat in or takeaway?' && takeaway.meaningLang === 'ja' &&
+    takeaway.reply?.target === 'Takeaway, please.' && takeaway.reply.meaningLang === 'ja');
+const fifteen = listenItems.find((i) => i.id === 'lc-teen-fifteen-dollars');
+check('a word in a sound pair knows its partner', fifteen.partner.target === "That's fifty dollars." && fifteen.pair.includes(fifteen));
+check('listening items are not flashcards', !en.phrases.has('lr-01') && !en.phrases.has('lc-lr-light'));
+let listenSeed = 11;
+const listenRandom = () => ((listenSeed = (listenSeed * 1664525 + 1013904223) % 4294967296) / 4294967296);
+const firstListen = listening.buildListeningDrill(listenItems, {}, { random: listenRandom });
+check('a first listening drill is a handful of new items, of both kinds',
+  firstListen.length === 6 && firstListen.some((q) => q.type === 'reply') && firstListen.some((q) => q.type === 'contrast'),
+  firstListen.map((q) => q.item.id).join(' '));
+check('…a reply offering its own meaning among two others',
+  firstListen.filter((q) => q.type === 'reply').every((q) => q.options.length === 3 &&
+    q.options.filter((o) => o.id === q.item.id).length === 1 && new Set(q.options.map((o) => o.meaning)).size === 3));
+check('…a sound offering the two words of its pair',
+  firstListen.filter((q) => q.type === 'contrast').every((q) => q.options.length === 2 && q.options.includes(q.item)));
+await deck.recordListen('lr-01', true);
+await deck.recordListen('lr-02', false);
+const listenStats = await deck.getListenStats();
+check('listening answers are recorded per item — a miss starts over',
+  listenStats['lr-01'].streak === 1 && listenStats['lr-02'].streak === 0 && listenStats['lr-02'].wrong === 1);
+const nextListen = listening.buildListeningDrill(listenItems, listenStats, { random: listenRandom });
+check('…and the next drill brings them back, with new ones beside them',
+  ['lr-01', 'lr-02'].every((id) => nextListen.some((q) => q.item.id === id)) && nextListen.length === 8,
+  `${nextListen.length} questions`);
+const masteredListen = { 'lr-03': { right: 3, wrong: 0, streak: 3, days: ['2026-10-01', '2026-10-02'], last: Date.now() } };
+check('three right in a row, on two different days, masters an item',
+  listening.listeningProgress(listenItems, masteredListen).mastered === 1 &&
+    listening.listeningProgress(listenItems, { 'lr-03': { ...masteredListen['lr-03'], days: ['2026-10-02'] } }).mastered === 0);
+check('…and a mastered item still comes up now and then',
+  listening.buildListeningDrill(listenItems, masteredListen, { random: listenRandom }).some((q) => q.item.id === 'lr-03'));
+const listenDrillsBefore = (await deck.todayStats()).drills;
+await deck.finishListenDrill(8);
+check('a finished listening drill marks today done, and counts toward the day',
+  (await deck.listenDrillToday()) && (await deck.todayStats()).drills === listenDrillsBefore + 8);
+
 const imm = await loadScenario('immigration');
 check('ja-en scenario NPC lines are English with Japanese meanings',
   imm.nodes.n1.target === 'Next, please. Good afternoon.' && imm.nodes.n1.meaning.startsWith('次の方'),

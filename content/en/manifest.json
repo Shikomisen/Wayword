@@ -4,7 +4,7 @@
   "speaker": "ja",
   "register": "polite-neutral",
   "generatedFor": "Wayword — English for Japanese speakers",
-  "notes": "English for Japanese speakers, modelled on New Zealand English. Same shape as the English → Japanese course: one file per category, one per scenario; word and sentence decks under `decks`; lessons under `lessons` — phrase patterns (\"I'd like ○○\"), polite phrasing, linking words and word order, in the connectors' format, named by `copy.lessonsTitle`. `drills` adds saying each example aloud to the usual three drills. Text the learner studies is `english`; `japanese` is the gloss. Notes are written in Japanese. `voice` says which voice the clips are made with: Google's for now; `azure` names the New Zealand neural voices (the learner's lines, and the people they talk to) that `npm run voice:nz` switches the course to.",
+  "notes": "English for Japanese speakers, modelled on New Zealand English. Same shape as the English → Japanese course: one file per category, one per scenario; word and sentence decks under `decks`; lessons under `lessons` — phrase patterns (\"I'd like ○○\"), polite phrasing, linking words and word order, in the connectors' format, named by `copy.lessonsTitle`. `drills` adds saying each example aloud to the usual three drills. `listening` is the small listening drill: what people say back (`replies`) and sounds that are hard to tell apart (`contrasts`). Text the learner studies is `english`; `japanese` is the gloss. Notes are written in Japanese. `voice` says which voice the clips are made with: Google's for now; `azure` names the New Zealand neural voices (the learner's lines, and the people they talk to) that `npm run voice:nz` switches the course to.",
   "fields": {
     "target": "english",
     "meaning": "japanese"
@@ -478,6 +478,22 @@
       "file": "content/en/connectors/itsto.json",
       "title": "It's … to … — 〜するのは…だ",
       "group": "order"
+    }
+  ],
+  "listening": [
+    {
+      "id": "replies",
+      "kind": "replies",
+      "file": "content/en/listening/replies.json",
+      "title": "何て言った？",
+      "icon": "👂"
+    },
+    {
+      "id": "contrasts",
+      "kind": "contrasts",
+      "file": "content/en/listening/contrasts.json",
+      "title": "どっちに聞こえた？",
+      "icon": "🎧"
     }
   ],
   "characterSets": [],

@@ -321,5 +321,21 @@
   "drill.saidIt": "I said it",
   "drill.notYet": "Not yet",
   "drill.saidRight": "✓ Nice — that’s how you say it",
-  "drill.saidWrong": "It’s in your reviews now, so it’ll come back soon."
+  "drill.saidWrong": "It’s in your reviews now, so it’ll come back soon.",
+  "listening.title": "Listening",
+  "listening.lede": "Hearing what people say back — at the counter, on the bus — and telling apart sounds that are easy to mix up. A couple of minutes a day.",
+  "listening.today": "Today’s listening",
+  "listening.another": "Another round",
+  "listening.daily": "Today’s listening — a couple of minutes",
+  "listening.doneToday": "Today’s listening is done",
+  "listening.mastered": "{n} of {total} mastered",
+  "listening.rule": "An item is mastered once you get it right {streak} times in a row, on {days} different days.",
+  "listening.whatSaid": "What did they say?",
+  "listening.whichHeard": "Which one did you hear?",
+  "listening.replyWith": "You could answer",
+  "listening.drillDone": "Listening done",
+  "listening.newlyMastered_one": "1 newly mastered",
+  "listening.newlyMastered_other": "{n} newly mastered",
+  "listening.backToday": "Back to Today",
+  "listening.count": "{lines} lines · {pairs} sound pairs"
 }

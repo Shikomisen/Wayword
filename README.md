@@ -2,8 +2,8 @@
 *(formerly "Nihongo Tabi" — renamed so the name isn't tied to one language)*
 
 A language-learning tool for **real conversation**, built by a solo dev for
-personal use. Two courses today — Japanese for English speakers (built), and
-English for Japanese speakers (first part rebuilt, §18) — and more languages later
+personal use. Two courses today — Japanese for English speakers, and English
+for Japanese speakers (rebuilt in October 2026, §18) — and more languages later
 (§13).
 
 **Japanese, for English speakers** is shaped around one learner: an English
@@ -28,9 +28,9 @@ connectors, drilled and scheduled by the same SRS — pointed at that goal:
 3. **Chain it** — English connectors and polite phrasing.
 4. **Hear it** — real replies come quickly, with accents and reductions.
 
-It models **New Zealand English**. The first part is built (§18); where the
-gaps lie — hearing, speaking or reading — is left until the course has been
-used for a while.
+It models **New Zealand English**. The gap to close is **saying what they
+want** — so speaking comes first: phrase patterns, polite phrasing and a
+say-it-aloud drill, with listening kept to a small daily drill (§18).
 
 Anything that doesn't serve those gets cut or deferred.
 
@@ -211,8 +211,7 @@ launch without code changes:
 - **A course** — its content JSON and every bundled audio file — is cached
   the first time it's opened on the device, in the background. A toast says
   when it's done, and Settings → Your data shows whether this course is saved
-  offline. Nobody downloads a course they don't use: the English course is
-  about 4 MB and the Japanese one about 10 MB.
+  offline. Nobody downloads a course they don't use: each one is about 10 MB.
   - The worker remembers which courses the device keeps (a small unversioned
     cache, `wayword-kept`). Each new version downloads those courses before
     it takes over, so what worked offline keeps working.
@@ -320,7 +319,7 @@ does the rest.
 - Cloud sync/backup of progress.
 - Additional language packs, enabled by the content architecture in §3a.
   *(Started — English for Japanese speakers is live and Indonesian is
-  stubbed; see §13. English is being rebuilt, its first part done: §18.)*
+  stubbed; see §13. English was rebuilt in October 2026: §18.)*
 
 ---
 
@@ -483,7 +482,7 @@ page in that language. Inside a course, a slim bar at the top
 | Course | id | Status | Content |
 |---|---|---|---|
 | Japanese, for English speakers | `en-ja` | available | `content/ja/` — 197 words, 16 sentences, 16 connector lessons (64 examples), 187 phrases (incl. 39 casual), 372 characters, 6 scenarios |
-| English, for Japanese speakers | `ja-en` | available | `content/en/` — 73 words, 112 phrases in 10 categories, 7 phrase-pattern lessons (28 examples), 7 scenarios |
+| English, for Japanese speakers | `ja-en` | available | `content/en/` — 250 words in 8 decks, 42 sentences, 112 phrases in 10 categories, 30 lessons (120 examples), 30 lines and 18 sound pairs to listen to, 7 scenarios |
 | Indonesian, for English speakers | `en-id` | planned | placeholder screen only |
 | Indonesian, for Japanese speakers | `ja-id` | planned | placeholder screen only |
 
@@ -522,22 +521,38 @@ English. Controls a course can't use — furigana, romaji, the Characters tab �
 simply don't appear.
 
 **English for Japanese speakers** models New Zealand English for everyday
-life, starting with the learner as the customer in cafés and shops (who it's
-for, and what's next: §18). It has three word decks (café and food, clothes
-and sizes, shops and paying), ten phrase categories, seven phrase-pattern
-lessons — *I'd like…*, *Can I have…?*, *Could I get…?*, *Do you have…?*, *Is
-this…?*, *Where's…?*, *How much…?*, in the lesson format of §15 under the
-course's own name, フレーズの型 — and seven scenarios (a café, a clothes shop,
-a bakery, the bus, asking the way, immigration, hotel check-in). Everything
-has a Japanese gloss; every phrase (and a word, where it helps) has a 使い方
-(usage) note, which also gives the American word where New Zealand's differs
-(*takeaway* / *to go*, *bill* / *check*, *power point* / *outlet*); many add a
-よくある間違い note on katakana-English and direct-translation traps — wake-up
-call not モーニングコール, power point not コンセント, reception not フロント,
-*on special* vs *for sale*. Scenarios give Japanese feedback on every reply,
-wrong ones included. Its 252 audio clips come from the same build-time pass as
-§3-audio — for now the same Google text-to-speech as the Japanese course; a
-natural New Zealand voice is next (§18).
+life, starting with the learner as the customer in cafés and shops. Who it's
+for, and how it was built, is in §18. Its content:
+
+- **Words.** Eight decks: café and food, clothes and sizes, shops and paying,
+  everyday verbs, phrasal verbs, money, katakana English that means something
+  else, and New Zealand words.
+- **Sentences.** One deck of everyday sentences.
+- **Phrases.** Ten phrase categories.
+- **Lessons.** Thirty, in the lesson format of §15, under the course's own
+  name, 表現・つなぎ言葉 (the tab says 表現):
+  - phrase patterns (*I'd like…*, *Can I have…?*, *Do you have…?*…);
+  - polite phrasing (*Could you…?*, *Would you mind…?*, *Is it OK if I…?*,
+    saying no, すみません's three Englishes);
+  - linking words (*so, because, but, even though, actually, anyway*…);
+  - word order (*the one I…*, *Do/Does/Did…?*, tag questions, yes/no to
+    negative questions).
+- **Listening.** A small daily drill (§18).
+- **Scenarios.** Seven: a café, a clothes shop, a bakery, the bus, asking the
+  way, immigration, hotel check-in. They give Japanese feedback on every
+  reply, wrong ones included.
+
+Everything has a Japanese gloss. Every phrase (and a word, where it helps)
+has a 使い方 (usage) note, which also gives the American word where New
+Zealand's differs (*takeaway* / *to go*, *bill* / *check*, *power point* /
+*outlet*). Many add a よくある間違い note on katakana-English and
+direct-translation traps: wake-up call not モーニングコール, *complaint* not
+クレーム, *flat* not マンション, *on special* vs *for sale*.
+
+Its 629 audio clips (≈9 MB) come from the same build-time pass as §3-audio.
+For now that's the same Google text-to-speech as the Japanese course. The New
+Zealand voices are wired up and switch on with one command once there's an
+Azure key (§3-audio).
 
 **Adding a language** (Indonesian, say) is content only — no app code:
 
@@ -665,7 +680,12 @@ you've done). Three kinds, all built from the examples:
 | Fill the gap | the meaning, and the sentence with its connector (or the form before it) missing | pick from 3–4 options |
 | Put it in order | the meaning | tap the sentence's pieces in order |
 | Join them with … | two short sentences | build the joined sentence from the pieces — with a trap or two among them (the wrong form, the wrong connector) |
+| Say it (courses that ask for it) | the meaning: "say it out loud first" | reveal the sentence with 🔊🐢, then *I said it* / *Not yet* |
 
+- **Which drills a course uses** is its manifest's `drills`. Without it, a
+  course gets the first three. The English course adds *Say it*, because its
+  learner's gap is speaking. The app can't hear the learner, so they judge it
+  themselves: *Not yet* counts as a miss.
 - **Also right is accepted.** Where another answer is also right (ので for
   から, が for けど, ば or なら for たら), it counts as right, with a note on
   the difference.
@@ -682,11 +702,16 @@ you've done). Three kinds, all built from the examples:
 
 **Navigation.** With Connectors, the course has more sections than a phone's
 tab bar holds comfortably, so the tab bar keeps five and **Scenarios moves
-into Learn** (as *Conversations*). The English course has lessons (its
-phrase patterns) but no Characters tab, so it fits five and keeps its
-Scenarios tab. The lessons tab's name, icon and intro come from the
-manifest's `copy` (`lessonsTitle`, `lessonsIcon`, `lessonsLede`), so a course
-can call its lessons something other than Connectors.
+into Learn** (as *Conversations*). The English course has lessons but no
+Characters tab, so it fits five and keeps its Scenarios tab. Its listening
+drill lives in Learn and on Today, not in a tab of its own. The lessons tab's
+name, icon and intro come from the manifest's `copy`:
+- `lessonsTitle` — the screen's title;
+- `lessonsTab` — a shorter label for the tab bar;
+- `lessonsIcon`;
+- `lessonsLede` — the intro.
+
+So a course can call its lessons something other than Connectors.
 
 **Adding a lesson** is content only: a file shaped like
 `content/ja/connectors/kara.json` and one line under `lessons` in the
@@ -791,15 +816,12 @@ version.
 
 ---
 
-## 18. English for Japanese speakers — the rebuild (first part built)
+## 18. English for Japanese speakers — the rebuild (October 2026)
 
-**Status: first part built and live (October 2026, v8).** The three situations
-the partner named — with the words, phrases, patterns and scenarios for them —
-are in the app; §13 describes the course as it now stands. Still to come: the
-New Zealand voice, more vocabulary, English connectors and a listening tab
-(see *What's next*). The step-by-step plan for the rest is
-[`plans/english-course.md`](plans/english-course.md), written so a later
-session can pick it up cold.
+**Status: built and live (v10).** One thing waits on the dev: the New Zealand
+voice, which needs an Azure key (see *Still to do*). The plan it was built
+from is [`plans/english-course.md`](plans/english-course.md); the decisions
+are in ASSUMPTIONS A78–A90.
 
 **Who it's for.** The dev's Japanese partner — the mirror of the Japanese
 course, which is shaped around the dev. (An earlier draft aimed at "Japanese
@@ -816,94 +838,67 @@ sharper.) The goals:
   - *asking for things* — "Can I have ○○, please?", "Could I get a bag?",
     "How much is this?"
 
+**The answers that shaped it** (asked, not assumed):
+
+| Question | Answer | So |
+|---|---|---|
+| Staff side or customer side? | general — not staff-focused | customer-side scenarios; no customer-service vocabulary |
+| Where are the gaps? | **saying what they want** | speaking first: patterns, polite phrasing, a say-it drill; listening kept small |
+| Used on a phone, offline? | often | per-course offline caching came first |
+| Connectors: a tab of their own? | one tab, a broader name | 表現・つなぎ言葉 (tab: 表現) |
+| The NZ voice now? | later | Azure wired up; Google's voice until there's a key |
+
 **How it compares with the Japanese course.** The same learning loop —
 solidify and expand word knowledge, build it into sentences, chain with
 connectors, drill, schedule with SRS — so the machinery already existed and
-the work is mostly content. The differences:
+the work was mostly content:
 
 | | Japanese course (the dev) | English course (the dev's partner) |
 |---|---|---|
 | Aim | talk with a partner and family | everyday English, starting as the customer |
-| Biggest gap | reading (kana, then kanji) | not known yet — decided after some use |
-| Reading track | kana mastery, kanji gate | none, unless spelling turns out to be a gap |
-| Lessons | connectors (て, から, けど…) | phrase patterns (*I'd like…*, *Can I have…?*); connectors later |
+| Biggest gap | reading (kana, then kanji) | speaking: saying what they want |
+| Extra drill | the daily kana drill | say-it in every lesson; a small daily listening drill |
+| Lessons | connectors (て, から, けど…) | patterns, polite phrasing, linking words, word order |
 | Scenarios | the learner as traveller | the learner as customer (café, clothes shop, bakery, bus) |
 
-**Built in the first part:**
+**What was built, in order:**
 
-1. **Every phrase from the three situations**, as cards with audio, or as
-   examples in the pattern lessons (*Can I get the menu?* is the note on the
-   *Can I see the menu, please?* card). About half were already in the
-   restaurant and shopping categories; eight were added (*I'd like a flat
-   white, please*, *Is this spicy?*, *Can I have the fish and chips,
-   please?*, *Do you have any vegetarian options?*, *Do you have this in a
-   bigger size?*, *Where's the fitting room?*, *It's a bit too small*, *Can I
-   have this one, please?*).
-2. **Three word decks** (73 words): café and food (*flat white, takeaway, eat
-   in, mild, gluten-free, bill*), clothes and sizes (*fitting room, try on,
-   tight, loose, jumper, jandals*), shops and paying (*on special, EFTPOS,
-   tap, receipt, refund, out of stock, just looking*). Café and shops are in
-   the deck from day one; clothes is added from Learn.
-3. **Seven phrase-pattern lessons** for the ○○ phrases — *I'd like…*, *Can I
-   have…?*, *Could I get…?* (asking for things) and *Do you have…?*, *Is
-   this…?*, *Where's…?*, *How much…?* (asking about them). Each has the
-   frame, a Japanese explanation, when it sounds natural or blunt (*I want…*
-   is blunt), four examples built from the word decks, and the fill-in and
-   put-in-order drills of §15; a missed drill goes into the reviews. They
-   reuse the connectors' lesson format, and the manifest's `copy.lessonsTitle`
-   names the tab — here フレーズの型, with a 🧩.
-4. **Scenarios as the customer**: a café, a clothes shop and a bakery are new,
-   and so is catching a bus; asking the way and immigration were rewritten
-   for New Zealand, and hotel check-in kept. The subway, restaurant and shop
-   checkout scenarios were replaced.
-5. **New Zealand wording**: ten phrases reworded (*takeaway*, *the bill*,
-   *power point*, *reception*, *on special*, *city centre*, a ticket to
-   Wellington) and the notes rewritten around NZ usage, keeping the American
-   word in the note, since that's what school and films teach. Phrase ids are
-   unchanged, so progress carries over.
+1. **The three situations** — every phrase in them as cards or lesson
+   examples, three word decks, seven phrase patterns, customer-side scenarios,
+   New Zealand wording (*takeaway, the bill, power point, on special*), with
+   the American word in the notes.
+2. **Per-course offline caching (§5)** — a phone downloads only the courses
+   it opens. Each course is about 10 MB; everything together is about 20.
+3. **Voice support (§3-audio)** — per-course voices, Azure's New Zealand
+   voices ready to switch to, and 🐢 on every clip for a slower replay.
+4. **Speaking first** — 177 more words (everyday verbs, phrasal verbs, money,
+   katakana English, New Zealand words) and 42 everyday sentences. Also 23
+   lessons: polite phrasing, linking words and word order. The *say-it* drill
+   (§15) is in every lesson: see the Japanese, say it aloud, check it.
+5. **A small listening drill** — about ten questions a day, mastered like
+   kana (right 3× in a row on 2 days; the rule is shared, `js/mastery.js`):
+   - *What did they say?* — 30 things said back at a counter or on a bus
+     (*Eat in or takeaway?*, *Are you right there?*, *That'll be twenty-four
+     fifty*). Pick the meaning; then see what you could answer.
+   - *Which one did you hear?* — 18 pairs of sounds Japanese doesn't tell
+     apart: L/R, B/V, S/TH, and *fifteen / fifty dollars*.
 
-No new screen was needed. What changed in code: parts of speech and word
-forms now come from each course's manifest (they were Japanese-only), the
-polite/casual register label is optional, the lesson screens take the
-course's language and name, and the Japanese course's word *usage* notes —
-written but never shown — now appear.
+   It's on Today and in Learn. It has no tab of its own, so the scenarios —
+   speaking practice — keep theirs.
 
-**What's next** (step by step in
-[`plans/english-course.md`](plans/english-course.md)):
+**Still to do:**
 
-1. **A natural New Zealand voice.** Microsoft's neural NZ voices
-   (`en-NZ-MollyNeural`, with `en-NZ-MitchellNeural` as a second speaker in
-   scenarios), used only at build time — the app never calls it and the key
-   never goes in the repo — plus a *slower* playback button. Until then the
-   English clips come from the same Google text-to-speech as the Japanese
-   ones. Needs an Azure Speech key (free tier) set as `AZURE_SPEECH_KEY` /
-   `AZURE_SPEECH_REGION`, and ten minutes of listening to approve the voice.
-2. **More vocabulary**, general rather than job-specific: everyday verbs and
-   phrasal verbs (*sort out, hold on, pick up*), katakana English that means
-   something else (*till/checkout* for レジ, *complaint* for クレーム), New
-   Zealand words (*heaps, keen, sweet as*), and everyday sentences built from
-   them for the drills.
-3. **English connectors and polite phrasing** — *could you / would you mind*,
-   *so, but, even though, actually, anyway* — in the same lesson format.
-4. **Hearing the reply** — a listening tab built from what people say back
-   (*Eat in or takeaway? Would you like a bag?*) at natural speed with a slow
-   replay, plus the sound contrasts that trip Japanese speakers up (L/R, B/V,
-   *thirteen/thirty*). How big it gets depends on open question 2.
-5. **Per-course offline caching** — every learner currently downloads both
-   courses (≈15 MB); cache only the courses a learner has opened.
-
-**Open questions:**
-1. ~~Does the partner also serve customers in English at work?~~
-   **Answered:** keep it general — everyday English, not staff-side or
-   job-specific.
-2. **Where are the gaps?** Understanding the reply, saying what's wanted,
-   reading? **Not known yet** — revisit once the first part has been used for
-   a while. It sets the order of what's next and the size of the listening
-   tab.
-3. ~~Staff side or customer side first?~~ **Answered:** the customer's side,
-   from the three examples above.
-4. **Is it used on a phone, offline, when out?** If so, per-course offline
-   caching moves up.
+1. **The New Zealand voice.** Needs an Azure Speech key (free tier) saved as
+   `AZURE_SPEECH_KEY` / `AZURE_SPEECH_REGION` — §3-audio has the steps.
+   Then:
+   1. `npm run voice:samples`, and listen to the six clips;
+   2. `npm run voice:nz`, which remakes all 629 English clips;
+   3. bump `CACHE_VERSION`;
+   4. deploy.
+2. **Ask again where the gaps are** once the course has been used for a
+   while. If hearing turns out to matter more, the listening drill grows:
+   longer, faster replies; reductions like *gonna, dunno*.
+3. **Native recordings** remain the real fix for connected speech (§9).
 
 **Not in this build:** the dev's own recordings, and a neural voice for the
 Japanese course.

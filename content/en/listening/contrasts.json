@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "id": "contrasts",
+  "title": "どっちに聞こえた？",
+  "description": "日本語にない音の聞き分け。L と R、B と V、S と TH、13 と 30。",
+  "sets": [
+    {
+      "id": "lr",
+      "sound": "L と R",
+      "note": "日本語にはLとRの区別がないので、いちばん聞き分けにくい音です。Lは舌先を上の歯の裏に付け、Rは舌をどこにも付けずに出します。",
+      "pairs": [
+        [
+          {
+            "id": "lc-lr-light",
+            "english": "light",
+            "japanese": "光、明かり",
+            "audio": "audio/en/listening/lc-lr-light.mp3"
+          },
+          {
+            "id": "lc-lr-right",
+            "english": "right",
+            "japanese": "右、正しい",
+            "audio": "audio/en/listening/lc-lr-right.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-lr-glass",
+            "english": "glass",
+            "japanese": "ガラス、コップ",
+            "audio": "audio/en/listening/lc-lr-glass.mp3"
+          },
+          {
+            "id": "lc-lr-grass",
+            "english": "grass",
+            "japanese": "草、芝生",
+            "audio": "audio/en/listening/lc-lr-grass.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-lr-collect",
+            "english": "collect",
+            "japanese": "集める",
+            "audio": "audio/en/listening/lc-lr-collect.mp3"
+          },
+          {
+            "id": "lc-lr-correct",
+            "english": "correct",
+            "japanese": "正しい",
+            "audio": "audio/en/listening/lc-lr-correct.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-lr-play",
+            "english": "play",
+            "japanese": "遊ぶ",
+            "audio": "audio/en/listening/lc-lr-play.mp3"
+          },
+          {
+            "id": "lc-lr-pray",
+            "english": "pray",
+            "japanese": "祈る",
+            "audio": "audio/en/listening/lc-lr-pray.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-lr-fly",
+            "english": "fly",
+            "japanese": "飛ぶ",
+            "audio": "audio/en/listening/lc-lr-fly.mp3"
+          },
+          {
+            "id": "lc-lr-fry",
+            "english": "fry",
+            "japanese": "揚げる",
+            "audio": "audio/en/listening/lc-lr-fry.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-lr-long",
+            "english": "long",
+            "japanese": "長い",
+            "audio": "audio/en/listening/lc-lr-long.mp3"
+          },
+          {
+            "id": "lc-lr-wrong",
+            "english": "wrong",
+            "japanese": "間違った",
+            "audio": "audio/en/listening/lc-lr-wrong.mp3"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "bv",
+      "sound": "B と V",
+      "note": "V は上の歯を下くちびるに軽く当てて出す音。B はくちびるを閉じてから出します。",
+      "pairs": [
+        [
+          {
+            "id": "lc-bv-best",
+            "english": "best",
+            "japanese": "いちばん良い",
+            "audio": "audio/en/listening/lc-bv-best.mp3"
+          },
+          {
+            "id": "lc-bv-vest",
+            "english": "vest",
+            "japanese": "ベスト（服）",
+            "audio": "audio/en/listening/lc-bv-vest.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-bv-boat",
+            "english": "boat",
+            "japanese": "ボート",
+            "audio": "audio/en/listening/lc-bv-boat.mp3"
+          },
+          {
+            "id": "lc-bv-vote",
+            "english": "vote",
+            "japanese": "投票する",
+            "audio": "audio/en/listening/lc-bv-vote.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-bv-berry",
+            "english": "berry",
+            "japanese": "ベリー",
+            "audio": "audio/en/listening/lc-bv-berry.mp3"
+          },
+          {
+            "id": "lc-bv-very",
+            "english": "very",
+            "japanese": "とても",
+            "audio": "audio/en/listening/lc-bv-very.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-bv-ban",
+            "english": "ban",
+            "japanese": "禁止する",
+            "audio": "audio/en/listening/lc-bv-ban.mp3"
+          },
+          {
+            "id": "lc-bv-van",
+            "english": "van",
+            "japanese": "バン（車）",
+            "audio": "audio/en/listening/lc-bv-van.mp3"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "sth",
+      "sound": "S と TH",
+      "note": "TH は舌先を上の歯に軽く当てて、息を出す音。S は舌を歯に当てません。",
+      "pairs": [
+        [
+          {
+            "id": "lc-sth-sink",
+            "english": "sink",
+            "japanese": "流し台",
+            "audio": "audio/en/listening/lc-sth-sink.mp3"
+          },
+          {
+            "id": "lc-sth-think",
+            "english": "think",
+            "japanese": "考える",
+            "audio": "audio/en/listening/lc-sth-think.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-sth-sick",
+            "english": "sick",
+            "japanese": "病気の",
+            "audio": "audio/en/listening/lc-sth-sick.mp3"
+          },
+          {
+            "id": "lc-sth-thick",
+            "english": "thick",
+            "japanese": "厚い",
+            "audio": "audio/en/listening/lc-sth-thick.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-sth-mouse",
+            "english": "mouse",
+            "japanese": "ネズミ",
+            "audio": "audio/en/listening/lc-sth-mouse.mp3"
+          },
+          {
+            "id": "lc-sth-mouth",
+            "english": "mouth",
+            "japanese": "口",
+            "audio": "audio/en/listening/lc-sth-mouth.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-sth-sum",
+            "english": "sum",
+            "japanese": "合計",
+            "audio": "audio/en/listening/lc-sth-sum.mp3"
+          },
+          {
+            "id": "lc-sth-thumb",
+            "english": "thumb",
+            "japanese": "親指",
+            "audio": "audio/en/listening/lc-sth-thumb.mp3"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "teen",
+      "sound": "13 と 30",
+      "note": "13〜19 は後ろ（-teen）を強く長く、30・40… は前を強く読みます。レジで金額を聞き取る時に大事な違いです。",
+      "pairs": [
+        [
+          {
+            "id": "lc-teen-thirteen-dollars",
+            "english": "That's thirteen dollars.",
+            "japanese": "13ドルです。",
+            "audio": "audio/en/listening/lc-teen-thirteen-dollars.mp3"
+          },
+          {
+            "id": "lc-teen-thirty-dollars",
+            "english": "That's thirty dollars.",
+            "japanese": "30ドルです。",
+            "audio": "audio/en/listening/lc-teen-thirty-dollars.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-teen-fourteen-dollars",
+            "english": "That's fourteen dollars.",
+            "japanese": "14ドルです。",
+            "audio": "audio/en/listening/lc-teen-fourteen-dollars.mp3"
+          },
+          {
+            "id": "lc-teen-forty-dollars",
+            "english": "That's forty dollars.",
+            "japanese": "40ドルです。",
+            "audio": "audio/en/listening/lc-teen-forty-dollars.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-teen-fifteen-dollars",
+            "english": "That's fifteen dollars.",
+            "japanese": "15ドルです。",
+            "audio": "audio/en/listening/lc-teen-fifteen-dollars.mp3"
+          },
+          {
+            "id": "lc-teen-fifty-dollars",
+            "english": "That's fifty dollars.",
+            "japanese": "50ドルです。",
+            "audio": "audio/en/listening/lc-teen-fifty-dollars.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-teen-sixteen-dollars",
+            "english": "That's sixteen dollars.",
+            "japanese": "16ドルです。",
+            "audio": "audio/en/listening/lc-teen-sixteen-dollars.mp3"
+          },
+          {
+            "id": "lc-teen-sixty-dollars",
+            "english": "That's sixty dollars.",
+            "japanese": "60ドルです。",
+            "audio": "audio/en/listening/lc-teen-sixty-dollars.mp3"
+          }
+        ]
+      ]
+    }
+  ]
+}

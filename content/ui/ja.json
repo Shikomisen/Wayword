@@ -293,5 +293,20 @@
   "drill.saidIt": "言えた",
   "drill.notYet": "まだ言えない",
   "drill.saidRight": "✓ その調子！",
-  "drill.saidWrong": "復習に入れました。すぐにまた出てきます。"
+  "drill.saidWrong": "復習に入れました。すぐにまた出てきます。",
+  "listening.title": "聞き取り",
+  "listening.lede": "店員さんや運転手さんが言うことの聞き取りと、聞き分けにくい音の練習。1日2〜3分で。",
+  "listening.today": "今日の聞き取り",
+  "listening.another": "もう一回",
+  "listening.daily": "今日の聞き取り（2〜3分）",
+  "listening.doneToday": "今日の聞き取りは完了",
+  "listening.mastered": "{total}個中{n}個を習得",
+  "listening.rule": "{days}日以上にわたって{streak}回続けて正解すると「習得」です。",
+  "listening.whatSaid": "何と言っていますか？",
+  "listening.whichHeard": "どっちに聞こえましたか？",
+  "listening.replyWith": "こう答えられます",
+  "listening.drillDone": "聞き取り完了",
+  "listening.newlyMastered": "新しく{n}個を習得",
+  "listening.backToday": "今日に戻る",
+  "listening.count": "{lines}文・音のペア{pairs}組"
 }

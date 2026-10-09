@@ -2,23 +2,23 @@
  * kana.js — kana mastery and the daily kana drill (README §16). Pure logic,
  * no DOM: reading.js draws it, deck.js stores the per-character record.
  *
- * Mastery is per character: right three times in a row, on at least two
- * different days — knowledge that lasted overnight, not a lucky run. A
- * character whose flashcard has reached a week-long interval counts too, so
- * kana already learned through the character deck isn't drilled again.
+ * Mastery is per character, by the rule in mastery.js: right three times in
+ * a row, on at least two different days. A character whose flashcard has
+ * reached a week-long interval counts too, so kana already learned through
+ * the character deck isn't drilled again.
  *
  * A script is mastered when 90% of its core characters are: the 46 base kana
  * and the 25 with ゛ or ゜. Yōon (きゃ…) and extended katakana (ファ…) are
  * built from those, so they don't hold anything up.
  */
 
-export const MASTERY = { streak: 3, days: 2, threshold: 0.9, cardInterval: 7 };
+import { STREAK, DAYS, drillMastered, nextStat, byNeed, shuffle } from './mastery.js';
+
+export { drillMastered, nextStat, shuffle };
+
+export const MASTERY = { streak: STREAK, days: DAYS, threshold: 0.9, cardInterval: 7 };
 export const CORE_GROUPS = ['base', 'dakuten', 'handakuten'];
 export const SCRIPTS = ['hiragana', 'katakana'];
-
-/** Has the drill record shown this character mastered? */
-export const drillMastered = (stat) =>
-  Boolean(stat && stat.streak >= MASTERY.streak && (stat.days || []).length >= MASTERY.days);
 
 /** A flashcard that has reached a week-long interval is mastery too. */
 const cardMastered = (card) => Boolean(card && card.state === 'review' && card.interval >= MASTERY.cardInterval);
@@ -53,15 +53,6 @@ export function kanaProgress(sets, stats, cards = new Map()) {
 
 /** The script the daily drill works on: hiragana until it's mastered, then katakana; null once both are. */
 export const focusScript = (progress) => SCRIPTS.find((s) => progress[s] && !progress[s].done) || null;
-
-export function shuffle(list, random = Math.random) {
-  const a = [...list];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
 
 // を is read "o": in a listening question it must never sit next to お.
 const soundOf = (c) => (c.romaji === 'wo' ? 'o' : c.romaji);
@@ -99,13 +90,10 @@ export function buildKanaDrill(set, stats, {
 } = {}) {
   const mastered = masteryOf(stats, cards);
   const core = coreOf(set);
-  const inProgress = core.filter((c) => stats[c.id] && !mastered(c));
+  // Missed last time first, then the ones seen longest ago.
+  const inProgress = byNeed(core.filter((c) => stats[c.id] && !mastered(c)), stats);
   const unseen = core.filter((c) => !stats[c.id] && !mastered(c));
   const known = core.filter(mastered);
-
-  // Missed last time first, then the ones seen longest ago.
-  inProgress.sort((a, b) =>
-    Number(stats[b.id].streak === 0) - Number(stats[a.id].streak === 0) || (stats[a.id].last || 0) - (stats[b.id].last || 0));
 
   // New characters come in half as fast until the answers so far are mostly right.
   const answered = core.reduce((n, c) => n + (stats[c.id]?.right || 0) + (stats[c.id]?.wrong || 0), 0);
@@ -126,22 +114,6 @@ export function buildKanaDrill(set, stats, {
     return { type, char, options: shuffle([char, ...distractors(char, optionPool, random)], random) };
   });
   return { intros, questions };
-}
-
-/** The record after one answer: a right answer extends the streak (and its days), a wrong one starts over. */
-export function nextStat(stat, right, day, now = Date.now()) {
-  const s = { right: 0, wrong: 0, streak: 0, days: [], last: null, ...(stat || {}) };
-  if (right) {
-    s.right += 1;
-    s.streak += 1;
-    if (!s.days.includes(day)) s.days = [...s.days, day].slice(-MASTERY.days - 2);
-  } else {
-    s.wrong += 1;
-    s.streak = 0;
-    s.days = [];
-  }
-  s.last = now;
-  return s;
 }
 
 /** Is this segment a hiragana reading over katakana — an aid for someone still learning katakana? */

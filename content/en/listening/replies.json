@@ -1,0 +1,399 @@
+{
+  "schemaVersion": 1,
+  "id": "replies",
+  "title": "何て言った？",
+  "description": "店員さんや運転手さんが言うことを聞き取って、意味を選びます。答え方も一緒に覚えましょう。",
+  "items": [
+    {
+      "id": "lr-01",
+      "speaker": "staff",
+      "english": "Eat in or takeaway?",
+      "japanese": "店内でお召し上がりですか、お持ち帰りですか？",
+      "reply": "Takeaway, please.",
+      "replyJapanese": "持ち帰りでお願いします。",
+      "audio": "audio/en/listening/lr-01.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-02",
+      "speaker": "staff",
+      "english": "Would you like a bag?",
+      "japanese": "袋はご入用ですか？",
+      "reply": "No thanks, I'm fine.",
+      "replyJapanese": "いいえ、大丈夫です。",
+      "audio": "audio/en/listening/lr-02.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-03",
+      "speaker": "staff",
+      "english": "Are you right there?",
+      "japanese": "何かお手伝いしましょうか？",
+      "reply": "I'm just looking, thanks.",
+      "replyJapanese": "見ているだけです、ありがとう。",
+      "note": "ニュージーランドやオーストラリアの店員さんの決まり文句。「大丈夫ですか？」ではなく「何かご用ですか？」という意味です。",
+      "audio": "audio/en/listening/lr-03.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-04",
+      "speaker": "staff",
+      "english": "Can I help you find anything?",
+      "japanese": "何かお探しですか？",
+      "reply": "I'm looking for a jacket.",
+      "replyJapanese": "ジャケットを探しています。",
+      "audio": "audio/en/listening/lr-04.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-05",
+      "speaker": "staff",
+      "english": "What size are you?",
+      "japanese": "サイズはおいくつですか？",
+      "reply": "I'm a medium.",
+      "replyJapanese": "Mサイズです。",
+      "audio": "audio/en/listening/lr-05.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-06",
+      "speaker": "staff",
+      "english": "Sorry, we're out of that in a medium.",
+      "japanese": "すみません、それのMサイズは切らしています。",
+      "reply": "Do you have a large?",
+      "replyJapanese": "Lサイズはありますか？",
+      "note": "be out of 〜 で「〜を切らしている」。",
+      "audio": "audio/en/listening/lr-06.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-07",
+      "speaker": "staff",
+      "english": "The fitting rooms are just at the back.",
+      "japanese": "試着室は奥にあります。",
+      "reply": "Thanks!",
+      "replyJapanese": "ありがとう！",
+      "audio": "audio/en/listening/lr-07.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-08",
+      "speaker": "staff",
+      "english": "That'll be twenty-four fifty.",
+      "japanese": "24ドル50セントになります。",
+      "reply": "Can I pay by card?",
+      "replyJapanese": "カードで払えますか？",
+      "note": "twenty-four fifty は $24.50。値段を言う時は dollars や cents を省くことが多いです。",
+      "audio": "audio/en/listening/lr-08.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-09",
+      "speaker": "staff",
+      "english": "Just tap when you're ready.",
+      "japanese": "準備ができたら、カードをタッチしてください。",
+      "audio": "audio/en/listening/lr-09.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-10",
+      "speaker": "staff",
+      "english": "Do you want your receipt?",
+      "japanese": "レシートはいりますか？",
+      "reply": "No, I'm good, thanks.",
+      "replyJapanese": "いいえ、大丈夫です。",
+      "note": "I'm good, thanks. は「結構です」という意味でよく使われます。",
+      "audio": "audio/en/listening/lr-10.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-11",
+      "speaker": "staff",
+      "english": "Is that everything for today?",
+      "japanese": "今日はこれで全部ですか？",
+      "reply": "Yes, that's all, thanks.",
+      "replyJapanese": "はい、以上です。",
+      "audio": "audio/en/listening/lr-11.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-12",
+      "speaker": "staff",
+      "english": "Have you got one of our cards?",
+      "japanese": "当店のポイントカードはお持ちですか？",
+      "reply": "No, I haven't.",
+      "replyJapanese": "いいえ、持っていません。",
+      "audio": "audio/en/listening/lr-12.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-13",
+      "speaker": "barista",
+      "english": "What can I get for you?",
+      "japanese": "ご注文は何にしますか？",
+      "reply": "I'd like a flat white, please.",
+      "replyJapanese": "フラットホワイトをお願いします。",
+      "audio": "audio/en/listening/lr-13.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-14",
+      "speaker": "barista",
+      "english": "What milk would you like?",
+      "japanese": "ミルクの種類はどうしますか？",
+      "reply": "Oat milk, please.",
+      "replyJapanese": "オーツミルクでお願いします。",
+      "audio": "audio/en/listening/lr-14.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-15",
+      "speaker": "barista",
+      "english": "Did you want that toasted?",
+      "japanese": "それはトーストしますか？",
+      "reply": "Yes, please.",
+      "replyJapanese": "はい、お願いします。",
+      "note": "Did you want ...? は過去形ですが、今の希望をていねいに聞く言い方です。",
+      "audio": "audio/en/listening/lr-15.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-16",
+      "speaker": "barista",
+      "english": "Grab a number and take a seat.",
+      "japanese": "番号札を取って、お席でお待ちください。",
+      "note": "grab は「さっと取る」。気軽な言い方です。",
+      "audio": "audio/en/listening/lr-16.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-17",
+      "speaker": "staff",
+      "english": "It'll be about ten minutes.",
+      "japanese": "10分ほどかかります。",
+      "reply": "No worries.",
+      "replyJapanese": "大丈夫です。",
+      "audio": "audio/en/listening/lr-17.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-18",
+      "speaker": "server",
+      "english": "Can I get you anything else?",
+      "japanese": "ほかに何かお持ちしましょうか？",
+      "reply": "No, we're fine, thanks.",
+      "replyJapanese": "いいえ、大丈夫です。",
+      "audio": "audio/en/listening/lr-18.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-19",
+      "speaker": "barista",
+      "english": "Large or regular?",
+      "japanese": "ラージですか、レギュラーですか？",
+      "reply": "Regular, please.",
+      "replyJapanese": "レギュラーでお願いします。",
+      "audio": "audio/en/listening/lr-19.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-20",
+      "speaker": "server",
+      "english": "How was everything?",
+      "japanese": "お料理はいかがでしたか？",
+      "reply": "Lovely, thanks!",
+      "replyJapanese": "とてもおいしかったです！",
+      "audio": "audio/en/listening/lr-20.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-21",
+      "speaker": "driver",
+      "english": "Where are you headed?",
+      "japanese": "どちらまで行きますか？",
+      "reply": "To the city centre, please.",
+      "replyJapanese": "街の中心までお願いします。",
+      "audio": "audio/en/listening/lr-21.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-22",
+      "speaker": "driver",
+      "english": "Yours is the next stop.",
+      "japanese": "次の停留所で降りてください。",
+      "reply": "Thanks!",
+      "replyJapanese": "ありがとう！",
+      "audio": "audio/en/listening/lr-22.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-23",
+      "speaker": "driver",
+      "english": "Tag on when you get on.",
+      "japanese": "乗る時にカードをタッチしてください。",
+      "note": "バスのカードは、乗る時に tag on、降りる時に tag off します。",
+      "audio": "audio/en/listening/lr-23.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-24",
+      "speaker": "staff",
+      "english": "Can I see some ID, please?",
+      "japanese": "身分証明書を見せていただけますか？",
+      "reply": "Sure, here you go.",
+      "replyJapanese": "はい、どうぞ。",
+      "audio": "audio/en/listening/lr-24.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-25",
+      "speaker": "staff",
+      "english": "Cash or card?",
+      "japanese": "現金ですか、カードですか？",
+      "reply": "Card, please.",
+      "replyJapanese": "カードでお願いします。",
+      "audio": "audio/en/listening/lr-25.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-26",
+      "speaker": "staff",
+      "english": "We close at five today.",
+      "japanese": "今日は5時に閉まります。",
+      "audio": "audio/en/listening/lr-26.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-27",
+      "speaker": "staff",
+      "english": "Sorry, the EFTPOS machine's down.",
+      "japanese": "すみません、カードの機械が使えません。",
+      "reply": "Is there an ATM nearby?",
+      "replyJapanese": "近くにATMはありますか？",
+      "note": "down は「（機械が）止まっている、使えない」。",
+      "audio": "audio/en/listening/lr-27.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-28",
+      "speaker": "staff",
+      "english": "Would you like to try it on?",
+      "japanese": "試着してみますか？",
+      "reply": "Yes, please.",
+      "replyJapanese": "はい、お願いします。",
+      "audio": "audio/en/listening/lr-28.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-29",
+      "speaker": "staff",
+      "english": "Have a good one!",
+      "japanese": "よい一日を！",
+      "reply": "Thanks, you too!",
+      "replyJapanese": "ありがとう、あなたも！",
+      "note": "one は day のこと。Have a good day! のくだけた言い方です。",
+      "audio": "audio/en/listening/lr-29.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-30",
+      "speaker": "passerby",
+      "english": "Sweet as, see you later!",
+      "japanese": "了解、またね！",
+      "reply": "See you!",
+      "replyJapanese": "またね！",
+      "audio": "audio/en/listening/lr-30.mp3",
+      "tags": [
+        "聞き取り"
+      ],
+      "difficulty": 2
+    }
+  ]
+}
