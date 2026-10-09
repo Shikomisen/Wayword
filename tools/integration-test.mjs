@@ -505,8 +505,13 @@ check('a lesson makes all three kinds of drill',
   Object.values(drills.DRILL).map((type) => `${type} ${karaDrills.filter((d) => d.type === type).length}`).join(', '));
 const session = drills.buildSession([kara]);
 check('a lesson session uses every drill once', session.length === karaDrills.length);
-check('…without the same sentence twice in a row where avoidable',
-  session.every((d, i) => i === 0 || d.ex.id !== session[i - 1].ex.id));
+// Every lesson, many shuffles: the same sentence is never asked twice in a row.
+const spreadOk = lessons.every((l) => Array.from({ length: 25 }, (_, i) => {
+  let seed = i + 1;
+  const s = drills.buildSession([l], { random: () => ((seed = (seed * 1664525 + 1013904223) % 4294967296) / 4294967296) });
+  return s.every((d, j) => j === 0 || d.ex.id !== s[j - 1].ex.id);
+}).every(Boolean));
+check('…and never the same sentence twice in a row', spreadOk);
 check('a mixed session is capped', drills.buildSession(lessons, { size: 12 }).length === 12);
 
 const orderDrill = karaDrills.find((d) => d.type === drills.DRILL.ORDER);
@@ -553,9 +558,88 @@ check('practice is recorded per lesson, keeping the best session',
   JSON.stringify(lessonStats['con-kara']));
 check('drills count toward the day', (await deck.todayStats()).drills === drillsBefore + 24);
 
-/* ---------- 11. a second course ---------- */
+/* ---------- 11. reading progression ---------- */
 
-console.log('\n11. Second course — English for Japanese speakers (ja-en)');
+console.log('\n11. Reading progression — kana mastery and the daily drill');
+
+const kana = await import('../js/kana.js');
+const seeded = (seed) => () => ((seed = (seed * 1664525 + 1013904223) % 4294967296) / 4294967296);
+const hiraSet = content.bySet.get('hiragana');
+const kataSet = content.bySet.get('katakana');
+const hiraCore = kana.coreOf(hiraSet);
+
+const fresh = kana.kanaProgress(content.characterSets, {});
+check('each script has 71 core kana: the 46 base and 25 with ゛ or ゜',
+  fresh.hiragana.total === 71 && fresh.katakana.total === 71, `${fresh.hiragana.total}/${fresh.katakana.total}`);
+check('a new learner starts on hiragana', kana.focusScript(fresh) === 'hiragana' && fresh.hiragana.mastered === 0);
+
+const firstDrill = kana.buildKanaDrill(hiraSet, {}, { random: seeded(1) });
+check('the first drill meets one row of new kana, in teaching order',
+  firstDrill.intros.map((c) => c.character).join('') === 'あいうえお', firstDrill.intros.map((c) => c.character).join(''));
+check('…and asks each of them', firstDrill.questions.length === 5 &&
+  firstDrill.intros.every((c) => firstDrill.questions.some((q) => q.char.id === c.id)));
+const allQuestions = Array.from({ length: 40 }, (_, i) => kana.buildKanaDrill(hiraSet, {}, { random: seeded(i + 2) }).questions).flat();
+check('every question has four different options, one of them right',
+  allQuestions.every((q) => q.options.length === 4 && new Set(q.options.map((o) => o.id)).size === 4 &&
+    q.options.filter((o) => o.id === q.char.id).length === 1));
+check('both kinds of question come up: what it says, and which one you heard',
+  allQuestions.some((q) => q.type === 'read') && allQuestions.some((q) => q.type === 'listen'));
+const wo = hiraCore.find((c) => c.character === 'を');
+const woDrills = Array.from({ length: 60 }, (_, i) => kana.buildKanaDrill(hiraSet,
+  Object.fromEntries(hiraCore.map((c) => [c.id, { right: 1, wrong: 0, streak: 1, days: ['2026-10-01'], last: i }])),
+  { random: seeded(100 + i), size: 71 }).questions).flat();
+check('no question offers two kana that sound the same (お/を, じ/ぢ, ず/づ)',
+  woDrills.every((q) => new Set(q.options.map((o) => (o.romaji === 'wo' ? 'o' : o.romaji))).size === q.options.length),
+  `${woDrills.length} questions, を asked ${woDrills.filter((q) => q.char.id === wo.id).length} times`);
+
+let record = kana.nextStat(null, true, '2026-10-01');
+record = kana.nextStat(record, true, '2026-10-01');
+record = kana.nextStat(record, true, '2026-10-01');
+check('three right on the same day is not mastery yet', record.streak === 3 && !kana.drillMastered(record));
+record = kana.nextStat(record, true, '2026-10-02');
+check('…a fourth the next day is', kana.drillMastered(record), JSON.stringify(record.days));
+record = kana.nextStat(record, false, '2026-10-03');
+check('one miss starts it over', record.streak === 0 && record.days.length === 0 && !kana.drillMastered(record));
+const matureCard = { ...srs.newCard('hira-ka', 'hiragana', Date.now(), { kind: srs.KIND.CHARACTER }), state: 'review', interval: 9 };
+check('a character card at a week-long interval counts as mastered',
+  kana.masteryOf({}, new Map([['hira-ka', matureCard]]))(hiraCore.find((c) => c.id === 'hira-ka')));
+
+// Pacing: half speed until most answers are right, then a row or two at a time — never too many half-learned.
+const goodRun = Object.fromEntries(hiraCore.slice(0, 5).map((c) => [c.id, { right: 3, wrong: 0, streak: 1, days: ['2026-10-01'], last: 1 }]));
+check('once the answers are mostly right, new kana come in faster',
+  kana.buildKanaDrill(hiraSet, goodRun, { random: seeded(7) }).intros.length === 10);
+const halfLearned = Object.fromEntries(hiraCore.slice(0, 20).map((c) => [c.id, { right: 3, wrong: 0, streak: 1, days: ['2026-10-01'], last: 1 }]));
+check('with twenty half-learned, nothing new is added', kana.buildKanaDrill(hiraSet, halfLearned, { random: seeded(8) }).intros.length === 0);
+const mostlyKnown = Object.fromEntries(hiraCore.slice(0, 60).map((c) => [c.id, { right: 4, wrong: 0, streak: 4, days: ['2026-10-01', '2026-10-02'], last: 1 }]));
+const lateDrill = kana.buildKanaDrill(hiraSet, mostlyKnown, { random: seeded(9) });
+check('mastered kana still come up now and then, so they stay mastered',
+  lateDrill.questions.some((q) => mostlyKnown[q.char.id]) && lateDrill.intros.length > 0,
+  `${lateDrill.intros.length} new, ${lateDrill.questions.filter((q) => mostlyKnown[q.char.id]).length} refreshers`);
+
+const masteredAll = (chars) => Object.fromEntries(chars.map((c) => [c.id, { right: 4, wrong: 0, streak: 4, days: ['2026-10-01', '2026-10-02'], last: 1 }]));
+const hiraDone = kana.kanaProgress(content.characterSets, masteredAll(hiraCore.slice(0, 64)));
+check('90% of the core masters a script', hiraDone.hiragana.done && hiraDone.hiragana.mastered === 64);
+check('…and the drill moves on to katakana', kana.focusScript(hiraDone) === 'katakana');
+check('with both mastered there is no daily drill',
+  kana.focusScript(kana.kanaProgress(content.characterSets, masteredAll([...hiraCore, ...kana.coreOf(kataSet)]))) === null);
+check('a hiragana reading over katakana is recognised as a reading aid',
+  kana.isKatakanaAid({ b: 'コーヒー', r: 'こーひー' }) && !kana.isKatakanaAid({ b: '今日', r: 'きょう' }) &&
+  !kana.isKatakanaAid({ b: 'こーひー' }));
+
+// Stored per course, and counted toward the day.
+await deck.recordKana('hira-a', true);
+await deck.recordKana('hira-i', false);
+const storedKana = await deck.getKanaStats();
+check('kana answers are stored', storedKana['hira-a'].streak === 1 && storedKana['hira-i'].wrong === 1);
+const drillsBeforeKana = (await deck.todayStats()).drills;
+check('no kana drill done today yet', !(await deck.kanaDrillToday()).done);
+await deck.finishKanaDrill(15, 'hiragana');
+check('finishing one marks the day, and which script', (await deck.kanaDrillToday()).script === 'hiragana' &&
+  (await deck.todayStats()).drills === drillsBeforeKana + 15);
+
+/* ---------- 12. a second course ---------- */
+
+console.log('\n12. Second course — English for Japanese speakers (ja-en)');
 
 const course = await import('../js/course.js');
 const store = await import('../js/store.js');

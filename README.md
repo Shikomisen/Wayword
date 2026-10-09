@@ -152,7 +152,9 @@ launch without code changes:
    own words, each asked three ways — see it, say it, hear it (§14).
 3. **Connectors** — the words that chain sentences together (て, から, けど,
    たら…), each explained and drilled; missed drills feed the SRS (§15).
-4. **Scenario dialogue trees** — full exchanges, not isolated phrases.
+4. **Reading** — a short daily kana drill until hiragana and katakana are
+   mastered, then kanji (§16).
+5. **Scenario dialogue trees** — full exchanges, not isolated phrases.
 
 *(Live AI chat is a future pillar — see §9.)*
 
@@ -271,8 +273,8 @@ name isn't tied to one language; see ASSUMPTIONS A32.)*
 
 ## 11. Characters — Reading (added after the MVP)
 
-A top-level section alongside the category browser, covering the writing
-system itself. Reading unlocks the rest of the app: furigana, signage, and
+A top-level section — the **Reading** tab — covering the writing system
+itself. The daily kana drill and kana mastery that lead into it are §16. Reading unlocks the rest of the app: furigana, signage, and
 menus all stop being opaque.
 
 **Sets** (one JSON file each, listed in `manifest.json → characterSets`,
@@ -625,3 +627,52 @@ manifest. Each example needs:
 - the answer is among the options;
 - traps aren't real pieces;
 - every kanji, prose included, has its reading.
+
+---
+
+## 16. Reading progression (added with the repositioning)
+
+Reading is the weak skill: hiragana needs solidifying, katakana isn't
+learned yet. So the Reading tab (§11) now leads with kana, and kanji wait
+for them.
+
+**Kana mastery.** Each kana is tracked on its own. It counts as mastered
+once you've got it right **three times in a row, on at least two different
+days** — knowledge that lasted overnight, not a lucky run. A miss starts it
+over. A kana whose flashcard has reached a week-long interval counts too, so
+kana already learned through the character deck aren't drilled again.
+
+A script is mastered at **90% of its 71 core kana** — the 46 base kana and
+the 25 with ゛ or ゜. Yōon (きゃ) and extended katakana (ファ) are built from
+those, so they don't hold anything up. Both scripts' progress shows at the
+top of the Reading tab.
+
+**The daily kana drill** — about two minutes, on Today and in Reading, until
+both scripts are mastered:
+- **Order:** hiragana first, then katakana. Either can be practised at any
+  time.
+- **New kana, a row at a time** (あいうえお, かきくけこ…), met on an intro
+  screen first — tap to hear each — and then asked. Five a session to start,
+  ten once most answers are right. No new ones while twenty are still
+  half-learned.
+- **About fifteen questions** of two kinds: *What does it say?* (see the
+  kana, pick its sound) and *Which one did you hear?* (hear it, pick the
+  kana).
+- **The options** are the kana it's easiest to confuse it with — same row,
+  same vowel. Kana that sound the same (お/を, じ/ぢ, ず/づ) are never
+  offered together.
+- **Practised first:** the kana missed last time; a few mastered ones come
+  up too, so they stay mastered.
+- **Answers:** a right answer moves on by itself, a wrong one shows the
+  answer and waits. Every answer plays the sound.
+
+**Kanji wait for hiragana — softly.** Until hiragana is mastered, a kanji
+set says so ("Kanji come after hiragana. You've mastered 34 of 71…"). It
+offers today's hiragana drill, plus **Add anyway**. Kanji readings are
+written in hiragana, so kanji stick far better once it's solid — but nothing
+is locked.
+
+**Katakana aids retire themselves.** The hiragana written over katakana
+words (`{コーヒー|こーひー}`) is there because katakana isn't learned yet. Once
+katakana is mastered it disappears everywhere — words, sentences, connector
+examples, drill tiles — and kanji keep their furigana.

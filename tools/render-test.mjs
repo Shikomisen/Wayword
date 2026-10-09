@@ -166,8 +166,8 @@ check('results separate phrases from reading', text().includes('Reading'));
 
 $$('button').find((b) => b.textContent === 'Set up reading first')?.click();
 await tick(); await tick(); await tick(); await tick();
-check('"Set up reading first" lands on Characters, not Today',
-  location.hash === '#/en-ja/characters' && $('h1')?.textContent === 'Characters', `${location.hash} · ${$('h1')?.textContent}`);
+check('"Set up reading first" lands on Reading, not Today',
+  location.hash === '#/en-ja/characters' && $('h1')?.textContent === 'Reading', `${location.hash} · ${$('h1')?.textContent}`);
 
 /* ---------- screens ---------- */
 
@@ -537,10 +537,19 @@ check('a wrong answer continues the scenario with feedback',
 console.log('\n7. Characters');
 
 await goTo('#/en-ja/characters');
-check('characters screen renders', text().includes('Characters'));
+check('the Reading screen renders', $('h1')?.textContent === 'Reading' &&
+  document.querySelector('.tabbar a.active')?.textContent.includes('Reading'));
 check('every set listed', $$('.row-card').length === JA.characterSets.length,
   $$('.row-title').map((t) => t.textContent).join(', '));
-check('sets are addable', $$('button').filter((b) => b.textContent === 'Add').length === JA.characterSets.length);
+const kanaSets = JA.characterSets.filter((s) => s.script !== 'kanji').length;
+check('kana sets are addable', $$('button').filter((b) => b.textContent === 'Add').length === kanaSets);
+check('kanji sets wait for hiragana, but can be added anyway',
+  $$('.row-card.is-waiting').length === JA.characterSets.length - kanaSets &&
+  $$('.row-card.is-waiting button').every((b) => b.textContent === 'Add anyway') &&
+  $$('.row-card.is-waiting .row-sub').every((r) => r.textContent.startsWith('After hiragana')));
+check('kana mastery is shown, with today’s drill', $$('.kana-meter').length === 2 &&
+  $('.kana-meter[data-script="hiragana"] .kana-meter-count')?.textContent === '0/71' &&
+  $('.kana-panel .btn-primary')?.textContent === 'Today’s hiragana drill');
 check('stroke-order deferral is disclosed', text().includes('stroke-order'));
 
 // Add hiragana, then confirm it lands in the character deck only.
@@ -608,6 +617,79 @@ await goTo('#/en-ja/');
 check('home shows a separate reading row', text().includes('Reading'));
 check('character counts stay out of the phrase stats',
   !$$('.stat-label').some((l) => l.textContent === 'characters'));
+
+console.log('\n7b. Reading progression — kana mastery, the daily drill, the kanji gate');
+
+check('Today offers the daily kana drill while kana aren’t mastered',
+  $('.kana-today .row-title')?.textContent === 'Today’s kana drill — about two minutes' &&
+  $('.kana-today')?.getAttribute('href') === '#/en-ja/characters/drill/hiragana',
+  $('.kana-today .row-sub')?.textContent);
+
+await goTo('#/en-ja/characters/kanji-words');
+check('a kanji set explains that it comes after hiragana, and can still be added',
+  Boolean($('.kanji-gate')) && $$('.kanji-gate button').some((b) => b.textContent === 'Add anyway'));
+
+// A first drill: meet the new kana, then answer them — the first one wrong on purpose.
+await goTo('#/en-ja/characters/drill/hiragana');
+check('a first drill starts by meeting a few new kana, a row at a time',
+  $$('.kana-intro .kana-cell').length === 5 && $$('.kana-intro .kana-char').map((c) => c.textContent).join('') === 'あいうえお',
+  $$('.kana-intro .kana-char').map((c) => c.textContent).join(' '));
+$$('.kana-intro button').find((b) => b.textContent === 'Start')?.click();
+for (let i = 0; i < 4; i++) await tick();
+let kanaAsked = 0;
+let kanaWrong = null;
+for (let guard = 0; guard < 30 && $('.kana-question'); guard++) {
+  const q = $('.kana-question');
+  const pick = kanaWrong
+    ? $$('.option').find((b) => b.dataset.id === q.dataset.char)
+    : $$('.option').find((b) => b.dataset.id !== q.dataset.char);
+  if (!kanaWrong) kanaWrong = q.dataset.char;
+  check(`kana question ${kanaAsked + 1}: four options, one of them right`,
+    $$('.option').length === 4 && $$('.option').filter((b) => b.dataset.id === q.dataset.char).length === 1);
+  pick.click();
+  for (let i = 0; i < 8; i++) await tick();
+  if (kanaAsked === 0) {
+    check('a wrong answer is marked, and the right one shown',
+      Boolean($('.option.is-wrong')) && Boolean($('.option.is-answer')) && Boolean($('.verdict-wrong')));
+  }
+  kanaAsked++;
+  $('.drill-next')?.click();
+  for (let i = 0; i < 8; i++) await tick();
+}
+check('…and the drill ends with the score', Boolean($('.practice-done')) && text().includes(`${kanaAsked - 1} of ${kanaAsked} right`),
+  $('.practice-done .lede')?.textContent);
+const kanaRecord = await deck.getKanaStats();
+check('every answer is recorded per kana — the missed one starts over',
+  Object.keys(kanaRecord).length === 5 && kanaRecord[kanaWrong].streak === 0 &&
+  Object.entries(kanaRecord).every(([id, r]) => id === kanaWrong || r.streak === 1));
+await goTo('#/en-ja/characters');
+check('the panel then offers another round', $('.kana-panel .btn-primary')?.textContent === 'Another hiragana round');
+
+// Mastery takes days; write two days of right answers for every core hiragana.
+const store = await import('../js/store.js');
+const coreOf = (set) => readJSON(JA.characterSets.find((s) => s.id === set).file).characters
+  .filter((c) => ['base', 'dakuten', 'handakuten'].includes(c.group));
+const masteredRecord = (chars) => Object.fromEntries(chars.map((c) =>
+  [c.id, { right: 3, wrong: 0, streak: 3, days: ['2026-10-01', '2026-10-02'], last: Date.now() }]));
+await store.set('meta', 'kanaStats', masteredRecord(coreOf('hiragana')));
+await goTo('#/en-ja/characters');
+check('with hiragana mastered, the kanji sets open', !$('.row-card.is-waiting') &&
+  $('.kana-meter[data-script="hiragana"] .kana-meter-count')?.textContent === '✓ mastered' &&
+  $('.kana-panel .btn-primary')?.textContent === 'Today’s katakana drill');
+
+await goTo('#/en-ja/category/words-food');
+const coffee = () => $('.phrase-card[data-item="w-koohii"] .phrase-block > .target');
+check('katakana words carry a hiragana aid while katakana is being learned',
+  coffee()?.querySelector('rt')?.textContent === 'こーひー');
+await store.set('meta', 'kanaStats', { ...masteredRecord(coreOf('hiragana')), ...masteredRecord(coreOf('katakana')) });
+const { refreshKanaAids } = await import('../js/reading.js');
+await refreshKanaAids();
+await goTo('#/en-ja/category/words-food');
+check('once katakana is mastered, the aid goes', coffee() && !coffee().querySelector('ruby') && coffee().textContent === 'コーヒー',
+  coffee()?.textContent);
+check('…while kanji keep their furigana', Boolean($('.phrase-card[data-item="w-mizu"] .phrase-block > .target rt')));
+await goTo('#/en-ja/');
+check('with both kana mastered, Today goes back to the character cards', !$('.kana-today') && text().includes('Reading'));
 
 console.log('\n8. Settings');
 

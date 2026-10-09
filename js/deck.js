@@ -20,6 +20,7 @@
 import * as store from './store.js';
 import * as srs from './srs.js';
 import { loadContent, getCharacterSet, refreshUserItems, USER_DECK } from './content.js';
+import { nextStat } from './kana.js';
 
 const DEFAULT_DIRECTIONS = { recognition: true, production: true, listening: false };
 
@@ -503,12 +504,50 @@ export async function recordPractice(results) {
     drills += r.total;
   }
   await store.set('meta', 'lessonStats', stats);
+  await countDrills(drills);
+  return stats;
+}
 
+/** Drills done today, connector or kana: they keep the streak going like reviews do. */
+async function countDrills(n) {
+  if (!n) return;
   const key = todayKey();
   const days = (await store.get('meta', 'stats')) || {};
-  days[key] = { ...EMPTY_DAY, ...(days[key] || {}), drills: (days[key]?.drills || 0) + drills };
+  days[key] = { ...EMPTY_DAY, ...(days[key] || {}), drills: (days[key]?.drills || 0) + n };
   await store.set('meta', 'stats', days);
-  return stats;
+}
+
+/* ---------- kana mastery (kana.js has the rules) ---------- */
+
+/** Per character id: { right, wrong, streak, days, last } from the daily kana drill. */
+export async function getKanaStats() {
+  return (await store.get('meta', 'kanaStats')) || {};
+}
+
+/** Record one kana drill answer. */
+export async function recordKana(charId, right) {
+  const stats = await getKanaStats();
+  stats[charId] = nextStat(stats[charId], right, todayKey());
+  await store.set('meta', 'kanaStats', stats);
+  return stats[charId];
+}
+
+/** A finished kana drill counts toward the day, and marks today's drill done. */
+export async function finishKanaDrill(answered, script) {
+  await countDrills(answered);
+  const log = (await store.get('meta', 'kanaLog')) || { sessions: 0 };
+  await store.set('meta', 'kanaLog', { sessions: log.sessions + 1, lastDay: todayKey(), lastScript: script });
+}
+
+/** Whether a kana drill was done today, and in which script. */
+export async function kanaDrillToday() {
+  const log = await store.get('meta', 'kanaLog');
+  return log?.lastDay === todayKey() ? { done: true, script: log.lastScript || null } : { done: false, script: null };
+}
+
+/** Every character card by id — a well-learned card counts toward kana mastery. */
+export async function characterCards() {
+  return new Map(srs.ofKind(await getDeck(), srs.KIND.CHARACTER).map((c) => [c.id, c]));
 }
 
 /* ---------- "I can read this" ---------- */

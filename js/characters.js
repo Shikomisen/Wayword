@@ -23,6 +23,7 @@ import * as audio from './audio.js';
 import { link, go } from './course.js';
 import { el, clear, targetNode, toast } from './render.js';
 import { deckHref } from './shared.js';
+import { kanaState, kanjiGated, kanaPanel } from './reading.js';
 
 const ROW_LABEL = {
   a: 'あ', ka: 'か', sa: 'さ', ta: 'た', na: 'な',
@@ -44,14 +45,19 @@ async function playCharacter(c) {
 export async function renderCharacterList(root) {
   const { characterSets } = await loadContent();
   const s = await deck.getSettings();
+  const kana = await kanaState();
+  const gated = kanjiGated(kana);
+  const hira = kana.progress.hiragana;
 
   const rows = await Promise.all(characterSets.map(async (set) => {
     const progress = await deck.setProgress(set.id);
     const active = s.activeCharacterSets.includes(set.id);
     const studied = progress.total - progress.new;
     const pct = set.characters.length ? Math.round((studied / set.characters.length) * 100) : 0;
+    // Kanji wait for hiragana; until then they can be added, but only "anyway".
+    const waits = !active && gated && set.script === 'kanji';
 
-    return el('div', { class: `row-card ${active ? 'is-active' : ''}` },
+    return el('div', { class: `row-card ${active ? 'is-active' : ''} ${waits ? 'is-waiting' : ''}`, dataset: { set: set.id } },
       el('span', { class: 'row-icon char-icon' }, set.icon || '字'),
       el('a', { class: 'row-body', href: link(`/characters/${set.id}`) },
         el('span', { class: 'row-title' }, set.title),
@@ -60,32 +66,38 @@ export async function renderCharacterList(root) {
             ? '⚠️ content file missing'
             : active
               ? `${studied}/${set.characters.length} started · ${progress.due} due`
-              : `${set.characters.length} characters`),
+              : waits
+                ? `After hiragana — ${hira.mastered}/${hira.total} mastered so far`
+                : `${set.characters.length} characters`),
         active ? el('span', { class: 'bar' }, el('span', { class: 'bar-fill', style: `width:${pct}%` })) : null),
       active
         ? el('span', { class: 'pill pill-on' }, 'in deck')
         : el('button', {
-            class: 'btn btn-small',
+            class: waits ? 'btn btn-small btn-ghost' : 'btn btn-small',
             onclick: async (e) => {
               e.preventDefault();
               const { added, seeded } = await deck.activateCharacterSet(set.id);
               toast(seeded ? `Added ${added} characters (${seeded} seeded forward)` : `Added ${added} characters`);
               renderCharacterList(clear(root));
             },
-          }, 'Add'));
+          }, waits ? 'Add anyway' : 'Add'));
   }));
 
   const summary = await deck.characterSummary();
   const stats = await deck.todayStats();
+  const hasKana = Object.keys(kana.progress).length > 0;
 
   root.append(
     el('div', { class: 'screen' },
       el('header', { class: 'screen-header' },
-        el('h1', {}, 'Characters'),
+        el('h1', {}, 'Reading'),
         el('p', { class: 'lede' },
-          'Reading, kept separate from your phrase reviews so neither buries the other. ' +
+          'Kana first, then kanji. Reading is kept apart from your other reviews so neither buries the other. ' +
           'Tap any character in a chart to hear it.')),
 
+      hasKana ? kanaPanel(kana) : null,
+
+      el('h2', { class: 'section-title' }, 'Character cards'),
       summary.total
         ? el('div', {},
             el('div', { class: 'stat-row' },
@@ -128,31 +140,42 @@ export async function renderCharacterSet(root, setId) {
   const active = s.activeCharacterSets.includes(setId);
   const progress = await deck.setProgress(setId);
   const content = await loadContent();
+  const kana = await kanaState();
+  const waits = !active && set.script === 'kanji' && kanjiGated(kana);
 
   const view = el('div', { class: 'screen' });
   root.append(view);
 
+  const add = async () => {
+    const { added } = await deck.activateCharacterSet(setId);
+    toast(`Added ${added} characters to your deck`);
+    renderCharacterSet(clear(root), setId);
+  };
+
   view.append(
-    el('a', { class: 'back-link', href: link('/characters') }, '← Characters'),
+    el('a', { class: 'back-link', href: link('/characters') }, '← Reading'),
     el('header', { class: 'screen-header' },
       el('h1', {}, `${set.icon || ''} ${set.title}`),
       el('p', { class: 'lede' }, set.description)),
 
-    el('div', { class: 'action-row' },
-      active
-        ? el('button', {
-            class: 'btn btn-primary',
-            onclick: () => { go(`/characters/${setId}/study`); },
-          }, 'Study this set')
-        : el('button', {
-            class: 'btn btn-primary',
-            onclick: async () => {
-              const { added } = await deck.activateCharacterSet(setId);
-              toast(`Added ${added} characters to your deck`);
-              renderCharacterSet(clear(root), setId);
-            },
-          }, 'Add to deck'),
-      active ? el('span', { class: 'muted small' }, `${progress.due} due · ${progress.new} unseen`) : null),
+    // The soft gate: kanji readings are written in hiragana, so kanji stick
+    // far better once hiragana is solid. Adding them anyway is one tap.
+    waits
+      ? el('div', { class: 'kanji-gate' },
+          el('p', {}, el('strong', {}, 'Kanji come after hiragana. '),
+            `You’ve mastered ${kana.progress.hiragana.mastered} of ${kana.progress.hiragana.total} hiragana so far. ` +
+            'Every kanji reading is written in hiragana, so kanji stick far better once it’s solid.'),
+          el('div', { class: 'action-row' },
+            el('a', { class: 'btn btn-primary', href: link('/characters/drill/hiragana') }, 'Today’s hiragana drill'),
+            el('button', { class: 'btn btn-ghost', type: 'button', onclick: add }, 'Add anyway')))
+      : el('div', { class: 'action-row' },
+          active
+            ? el('button', {
+                class: 'btn btn-primary',
+                onclick: () => { go(`/characters/${setId}/study`); },
+              }, 'Study this set')
+            : el('button', { class: 'btn btn-primary', onclick: add }, 'Add to deck'),
+          active ? el('span', { class: 'muted small' }, `${progress.due} due · ${progress.new} unseen`) : null),
 
     el('p', { class: 'muted small tap-hint chart-hint' }, 'Tap any character to hear it.'),
 

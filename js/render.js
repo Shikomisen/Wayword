@@ -7,6 +7,15 @@
 
 import { t } from './i18n.js';
 import { toSegments } from './ruby.js';
+import { isKatakanaAid } from './kana.js';
+
+// Hiragana written over katakana words is an aid for someone still learning
+// katakana. Once katakana is mastered (reading.js decides), it goes.
+let katakanaAids = true;
+export function setKatakanaAids(on) { katakanaAids = Boolean(on); }
+
+/** The ruby segments that actually get a reading shown. */
+const shown = (seg) => Boolean(seg.r) && (katakanaAids || !isKatakanaAid(seg));
 
 export function el(tag, attrs = {}, ...children) {
   const node = document.createElement(tag);
@@ -50,7 +59,7 @@ export function targetNode(item, { furigana = 'always' } = {}) {
   const lang = item.targetLang || 'ja';
   const wrap = el('span', { class: lang === 'ja' ? 'target jp' : 'target', lang });
   const text = item.target ?? item.japanese ?? '';
-  const hasRuby = Array.isArray(item.ruby) && item.ruby.some((seg) => seg.r);
+  const hasRuby = Array.isArray(item.ruby) && item.ruby.some(shown);
 
   if (mode === 'hidden' || !hasRuby) {
     wrap.textContent = text;
@@ -58,7 +67,7 @@ export function targetNode(item, { furigana = 'always' } = {}) {
   }
 
   for (const seg of item.ruby) {
-    if (seg.r) {
+    if (shown(seg)) {
       wrap.append(el('ruby', {}, seg.b, el('rp', {}, '('), el('rt', {}, seg.r), el('rp', {}, ')')));
     } else {
       wrap.append(document.createTextNode(seg.b));
@@ -120,7 +129,7 @@ export function furiganaMode(settings, item) {
 
 /** "I can read this" — a per-item switch that fades its furigana (see furiganaMode). */
 export function readableToggle(item, settings, onChange) {
-  if (!Array.isArray(item.ruby) || !item.ruby.some((seg) => seg.r)) return null;
+  if (!Array.isArray(item.ruby) || !item.ruby.some(shown)) return null;
   const on = Boolean(settings.readable?.has(item.id));
   return el('button', {
     type: 'button',

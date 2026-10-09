@@ -33,6 +33,7 @@ import { renderHome, renderPlannedCourse } from './home.js';
 import { runSession } from './study.js';
 import { renderMine, renderMineForm } from './mine.js';
 import { renderConnectors, renderLesson, renderPractice } from './connectors.js';
+import { renderKanaDrill, kanaState, refreshKanaAids, SCRIPT_NAMES } from './reading.js';
 
 const app = () => document.getElementById('app');
 const { link } = course;
@@ -56,9 +57,10 @@ const routes = [
   [/^\/connectors\/([\w-]+)$/, (root, id) => renderLesson(root, id)],
   [/^\/scenarios$/, (root) => renderScenarioList(root)],
   [/^\/scenario\/([\w-]+)$/, (root, id) => renderScenario(root, id)],
-  // Order matters: /characters/review must match before /characters/:id.
+  // Order matters: /characters/review and /characters/drill must match before /characters/:id.
   [/^\/characters$/, (root) => renderCharacterList(root)],
   [/^\/characters\/review$/, reviewCharacters],
+  [/^\/characters\/drill\/(hiragana|katakana)$/, (root, script) => renderKanaDrill(root, script)],
   [/^\/characters\/([\w-]+)\/study$/, studyCharacterSet],
   [/^\/characters\/([\w-]+)$/, (root, id) => renderCharacterSet(root, id)],
   [/^\/settings$/, settings],
@@ -174,6 +176,8 @@ async function enterCourse(target) {
     // Decks activated before card directions existed only have recognition
     // cards; this adds the rest (new, so the daily cap paces them).
     if (await deck.isOnboarded()) await deck.syncDirections();
+    // Hiragana over katakana words stays only until katakana is mastered.
+    await refreshKanaAids();
   }
   return { features };
 }
@@ -288,14 +292,17 @@ async function today(root) {
             el('span', { class: 'row-chev' }, '›'))
         : null,
 
+      // The other daily things — the kana drill, a connector — come straight
+      // after the reviews, above the list of decks.
+      features.characters ? await charactersBlock() : null,
+      features.lessons ? await connectorsBlock(content) : null,
+
       el('h2', { class: 'section-title' }, t('today.inDeck')),
       el('div', { class: 'card-list' },
         active.length
           ? await Promise.all(active.map((d) => categoryRow(d, content)))
           : el('p', { class: 'muted' }, t('today.noCategories'))),
 
-      features.lessons ? await connectorsBlock(content) : null,
-      features.characters ? await charactersBlock() : null,
       await forecastBlock(),
 
       el('button', { class: 'btn btn-ghost full', onclick: () => go('/browse') }, t('today.addMore'))
@@ -325,6 +332,23 @@ async function connectorsBlock(content) {
  * don't disguise themselves as phrase progress.
  */
 async function charactersBlock() {
+  // Until both kana are mastered, the reading row is the daily kana drill.
+  const kana = await kanaState();
+  if (kana.focus) {
+    const p = kana.progress[kana.focus];
+    return el('section', {},
+      el('h2', { class: 'section-title' }, t('reading.title')),
+      el('a', { class: `row-card kana-today ${kana.doneToday ? 'is-done' : ''}`, href: link(`/characters/drill/${kana.focus}`) },
+        el('span', { class: 'row-icon char-icon' }, kana.focus === 'katakana' ? 'ア' : 'あ'),
+        el('span', { class: 'row-body' },
+          el('span', { class: 'row-title' }, t(kana.doneToday ? 'reading.kanaDone' : 'reading.kanaDaily')),
+          el('span', { class: 'row-sub' },
+            t('reading.kanaMastered', { script: SCRIPT_NAMES[kana.focus], n: p.mastered, total: p.total })),
+          el('span', { class: 'bar' },
+            el('span', { class: 'bar-fill', style: `width:${Math.round((p.mastered / p.total) * 100)}%` }))),
+        el('span', { class: 'row-chev' }, '›')));
+  }
+
   const summary = await deck.characterSummary();
   if (!summary.total) {
     return el('section', {},

@@ -1,7 +1,7 @@
 {
   "tab.today": "Today",
   "tab.browse": "Learn",
-  "tab.characters": "Characters",
+  "tab.characters": "Reading",
   "tab.scenarios": "Scenarios",
   "tab.settings": "Settings",
   "today.title": "Today",
@@ -279,5 +279,8 @@
   "drill.none": "No drills here yet.",
   "learn.scenarios": "Conversations",
   "learn.scenariosCount_one": "{n} branching conversation to practise",
-  "learn.scenariosCount_other": "{n} branching conversations to practise"
+  "learn.scenariosCount_other": "{n} branching conversations to practise",
+  "reading.kanaDaily": "Today’s kana drill — about two minutes",
+  "reading.kanaDone": "Kana drill done today ✓ — another round?",
+  "reading.kanaMastered": "{script}: {n} of {total} mastered"
 }

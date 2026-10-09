@@ -44,8 +44,16 @@ export function buildSession(lessons, { size = Infinity, random = Math.random } 
   const out = [];
   while (rest.length) {
     const last = out.at(-1)?.ex.id;
-    const next = rest.findIndex((d) => d.ex.id !== last);
-    out.push(rest.splice(next < 0 ? 0 : next, 1)[0]);
+    const left = new Map();
+    for (const d of rest) left.set(d.ex.id, (left.get(d.ex.id) || 0) + 1);
+    // Next: the sentence with the most drills still to come (other than the
+    // one just asked) — taking the biggest pile first is what guarantees the
+    // rest can still be spread out. Ties fall to the shuffle.
+    let pick = -1;
+    rest.forEach((d, i) => {
+      if (d.ex.id !== last && (pick < 0 || left.get(d.ex.id) > left.get(rest[pick].ex.id))) pick = i;
+    });
+    out.push(rest.splice(pick < 0 ? 0 : pick, 1)[0]);
   }
   return out;
 }

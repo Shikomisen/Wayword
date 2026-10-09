@@ -1124,3 +1124,94 @@ casual is what you *say* to a partner. So:
   order and combine drill before and after answering. Two layout bugs were
   fixed from them: a sentence broken onto three lines around its gap, and
   the connector column too narrow for それから.
+
+### A68 — Item 5: what "kana mastery" means
+- **Per character: right three times in a row, across at least two
+  different days.** Three rights in one sitting is short-term memory; the
+  second day is what shows it stuck. A miss resets both the streak and the
+  days.
+- **A character card at a week-long interval also counts.** Kana learned
+  through the character flashcards shouldn't have to be proven again.
+  Placement's "I know this" seeds cards at four to six days, so placement
+  alone doesn't count.
+- **A script is mastered at 90% of its 71 core kana** (46 base + 25 with ゛/゜).
+  - Yōon and extended katakana are combinations of the core, so they don't
+    gate anything.
+  - 90% rather than 100%: one stubborn ぬ shouldn't hold back everything else.
+- **The days are UTC days**, the same as the app's daily stats. For someone
+  in Japan the day turns over at 9 a.m. That doesn't matter for a two-day
+  rule, and keeps one definition of "a day" in the app.
+
+### A69 — The daily kana drill
+- **Hiragana first, then katakana.** Hiragana is half-known and needs
+  solidifying, and kanji readings depend on it. Katakana can be practised
+  any time from the Reading tab; the *daily* drill switches to it once
+  hiragana is mastered.
+- **Session:** about 15 questions — roughly two minutes.
+  - Up to five new kana to start (a row, in teaching order), ten once most
+    answers so far are right.
+  - No new ones while 20 are half-learned.
+  - Then the kana missed last time, then the least recently seen, plus two
+    or more mastered ones, so they stay mastered.
+- **Two kinds of question, about two to one:** see the kana and pick its
+  sound (romaji — the fastest way to answer "what does this say?" for an
+  English speaker), and hear it and pick the kana. The second matches this
+  learner: listening is the strong skill, so sound → shape is the bridge
+  into reading.
+- **New kana are met before they're asked**, on an intro screen with their
+  sound — katakana starts from nothing, and guessing isn't learning.
+- **The options are near-misses:** the same row or the same vowel first
+  (か き く, か さ た), from kana already met where there are enough of them.
+  Kana that sound identical (お/を, じ/ぢ, ず/づ) are never offered together.
+  Hearing them couldn't tell them apart, and the romaji would be the same.
+- **Right answers move on by themselves** after a moment; wrong ones wait,
+  showing the answer. Every answer plays the sound.
+- **"Until the user passes a mastery threshold":** once both scripts are
+  mastered, Today stops offering the drill and shows the character deck
+  again. The drill stays reachable from Reading.
+- **Its own record, not the SRS.** The kana drill keeps its own
+  per-character record (meta `kanaStats`) instead of grading the character
+  flashcards. The two measure different things — fast recognition in a
+  multiple-choice drill vs. recall on a card — and mixing them would let
+  easy drill answers push flashcards weeks out. A drill session counts
+  toward the streak.
+
+### A70 — Kanji wait for hiragana, softly; katakana aids retire themselves
+- **The gate is soft, as asked ("gate or soft-nudge"), not a lock.** Until
+  hiragana is mastered:
+  - a kanji set's row says "After hiragana — n/71 mastered so far" and its
+    button is a quieter **Add anyway**;
+  - the set's own page explains why — kanji readings are written in
+    hiragana — and offers today's hiragana drill first.
+  - A lock would be wrong for someone who already reads some kanji.
+- **Only hiragana gates kanji.** Furigana and kanji readings are written in
+  hiragana; katakana doesn't come into it.
+- **Katakana aids retire automatically.** The hiragana written over
+  katakana words exists only because katakana isn't learned yet. Once it's
+  mastered, those readings stop showing everywhere; kanji furigana is
+  unaffected. The check runs on entering the course and after every kana
+  drill.
+- **Reading is the tab's name now** (it was Characters): it's where reading
+  is learned, kana first. The route stays `#/…/characters`, so links keep
+  working.
+- **Today's order:** reviews, then the kana drill, then Connectors, then the
+  deck list. The deck list grows long, and the two daily drills were ending
+  up below it.
+
+### A71 — Item 5 verification
+- `npm test`: 23,000+ checks. 198 integration checks (21 new: the core
+  counts, first-drill contents, option rules over 4,000+ generated
+  questions, the mastery rule across days, card-based mastery, pacing, the
+  move to katakana, aid detection, storage and the daily log).
+- `npm run test:render`: 225 checks. The walkthrough covers:
+  - the panel, the gate and Today's kana row;
+  - a full first drill, with a deliberate miss;
+  - hiragana mastery opening the kanji sets;
+  - katakana mastery removing コーヒー's aid while kanji keep their furigana.
+- One flaky check found and fixed along the way: the connector session
+  builder could put two drills on the same sentence back to back. It now
+  always spreads them, which is checked over 25 shuffles of every lesson.
+- `npm run test:browser` in Firefox: 29 of 29. The cache holds all 1,142
+  files (the two new modules included), and Reading works online and offline.
+- Screenshots checked at phone width: the Reading tab, the intro screen, a
+  listening question, the kanji gate and Today.

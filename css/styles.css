@@ -673,6 +673,42 @@ textarea.text-input { resize: vertical; min-height: 64px; }
 .drill-answer .target { font-size: 1.3rem; line-height: 1.9; }
 .practice-done .action-row { justify-content: center; }
 
+/* ---------- reading: kana mastery and the daily drill ---------- */
+
+.kana-panel { margin-bottom: 8px; }
+.kana-panel .btn-lg { margin: 14px 0 6px; }
+.kana-meters { display: flex; flex-direction: column; gap: 10px; }
+.kana-meter { display: grid; grid-template-columns: 88px 1fr auto; align-items: center; gap: 12px; font-size: 0.92rem; }
+.kana-meter .bar { height: 8px; }
+.kana-meter-count { font-variant-numeric: tabular-nums; color: var(--fg-muted); min-width: 3.5em; text-align: right; }
+.kana-meter.is-done .bar-fill { background: var(--ok); }
+.kana-meter.is-done .kana-meter-count { color: var(--ok); }
+.kana-others { margin: 0; }
+.practice-done .kana-meters { width: 100%; max-width: 360px; margin: 6px auto 18px; text-align: left; }
+
+.kana-intro-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.kana-intro .kana-cell { min-height: 72px; }
+.kana-prompt { font-family: var(--font-jp); font-size: 4.5rem; line-height: 1.2; text-align: center; padding: 8px 0; }
+.kana-options { grid-template-columns: repeat(2, 1fr); }
+.romaji-option { font-size: 1.25rem; font-weight: 600; letter-spacing: 0.02em; }
+.kana-option .kana-char { font-size: 2rem; line-height: 1.2; }
+.kana-answer { margin: 0; font-size: 1.1rem; }
+.kana-answer .kana-char { font-size: 1.6rem; }
+.kana-milestone {
+  color: var(--ok); font-weight: 600; padding: 10px 14px; border-radius: 12px;
+  background: color-mix(in srgb, var(--ok) 12%, transparent);
+}
+.kana-today.is-done { opacity: 0.75; }
+
+/* Kanji wait for hiragana — gently. */
+.kanji-gate {
+  margin: 4px 0 16px; padding: 14px 16px; border-radius: var(--radius);
+  background: var(--bg-raised); border: 1px solid var(--line); border-left: 3px solid var(--warn);
+}
+.kanji-gate p { margin: 0 0 12px; line-height: 1.6; }
+.kanji-gate .action-row { margin: 0; }
+.row-card.is-waiting .row-icon { opacity: 0.5; }
+
 /* ---------- toast ---------- */
 
 #toast-host {
