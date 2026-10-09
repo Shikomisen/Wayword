@@ -12,6 +12,8 @@
  *
  *   npm run deploy                 # all of the above
  *   npm run deploy -- --dry-run    # preflight and tests only: no push, no wait
+ *   DEPLOY_GIT_USER=<account> npm run deploy   # push as this GitHub account
+ *                                              # (default: the repository's owner)
  *
  * It used to force-push a separate gh-pages branch, which GitHub Pages never
  * served once the site moved to main/root — "deploying" changed nothing.
@@ -91,8 +93,22 @@ if (DRY_RUN) {
 
 if (ahead) {
   console.log(`\nPushing ${ahead} commit(s) to origin/main…`);
-  // Inherit stdio: if Git Credential Manager needs a sign-in, its prompt must be visible.
-  execFileSync('git', ['push', 'origin', 'main'], { cwd: ROOT, stdio: 'inherit' });
+  // Git Credential Manager asks which account to use when it holds more than
+  // one GitHub account — and fails outright where it can't ask. So name the
+  // account up front: DEPLOY_GIT_USER, else git's own credential.username,
+  // else the repository's owner. `-c` applies it to this push only.
+  let configured = '';
+  try { configured = git('config', '--get', 'credential.username'); } catch { /* not set */ }
+  const account = process.env.DEPLOY_GIT_USER || configured || repo?.[1];
+  const args = [...(account ? ['-c', `credential.username=${account}`] : []), 'push', 'origin', 'main'];
+  try {
+    // Inherit stdio: if Git Credential Manager needs a sign-in, its prompt must be visible.
+    execFileSync('git', args, { cwd: ROOT, stdio: 'inherit' });
+  } catch {
+    fail(`git push failed${account ? ` as ${account}` : ''} — nothing was deployed.`,
+      'If Git Credential Manager signs in to several GitHub accounts, set DEPLOY_GIT_USER to the one\n' +
+      'that can push to this repository and deploy again — or push yourself: git push origin main');
+  }
 } else {
   console.log('\norigin/main already has this commit — checking the live site.');
 }

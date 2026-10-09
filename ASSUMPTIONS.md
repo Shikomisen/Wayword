@@ -1287,3 +1287,30 @@ casual is what you *say* to a partner. So:
   offline.
 - Also renamed: Settings' deck summary said "Phrases: … cards" while
   counting words and sentences too; it now says "Flashcards".
+
+### A75 — Item 7: the update a returning learner gets, checked before deploying
+- **The live site served cache `v5`** (the multi-language build of 8
+  October); everything in items 1–6 ships as `v6`. So every installed copy
+  picks up a fresh cache, and the old one is removed.
+- **`npm run test:browser -- --upgrade-from origin/main`, in Firefox: 33 of
+  33.** It installs the live build, does placement in it, then serves this
+  build at the same URL — what a returning learner's browser goes through:
+  - the first launch after the update still renders (the old shell, as
+    expected, while the new worker installs);
+  - `wayword-v6` replaces `wayword-v5` with all 1,143 files (1,042 clips);
+  - progress survives: Japanese opens on Today, not placement;
+  - every tab of both courses works online and offline;
+  - a backup round-trips through IndexedDB.
+- **What changes for someone with existing progress:**
+  - *Say it* cards are added for the decks they already have, as new cards
+    the daily cap paces (A58).
+  - Today suggests a word deck (they have none yet), the daily kana drill,
+    Connectors, and a backup, since there's progress and no backup yet.
+- **`npm run deploy` fixed again.**
+  - Every test passed, then `git push` failed: Git Credential Manager here
+    holds two GitHub accounts (Shikomisen, ShikoMDS), and with no window to
+    ask which to use, it gave up.
+  - The script now names the account for that one push (`-c
+    credential.username=…`): `DEPLOY_GIT_USER` if set, else git's own
+    setting, else the repository's owner. No config file is changed.
+  - A failed push now explains itself instead of printing a stack trace.

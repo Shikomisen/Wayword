@@ -387,6 +387,10 @@ Pages rebuilds from `main` on every push, so a plain `git push origin main` also
 deploys — the script just refuses to do it with failing tests or uncommitted
 work, and tells you when it is actually live.
 
+The script pushes as the repository's owner (`Shikomisen`). Git Credential
+Manager otherwise stops to ask which account to use when it holds more than
+one GitHub account. To push as someone else, set `DEPLOY_GIT_USER=<account>`.
+
 Install it on a phone by opening that URL in Chrome or Safari → *Add to Home
 screen*. Because it's HTTPS, the service worker registers and the app is fully
 offline-capable once loaded — unlike the `http://` LAN address that `npm start`
