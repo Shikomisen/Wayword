@@ -131,6 +131,9 @@ check('English speakers are offered Japanese',
 check('Indonesian is listed as a coming-soon placeholder',
   Boolean($('.course-card[data-course="en-id"].is-planned')), $('.course-card[data-course="en-id"]')?.textContent);
 check('Japanese shows as not started yet', $('.course-card[data-course="en-ja"]')?.textContent.includes('Not started'));
+const { VERSION } = await import('../js/version.js');
+check('the picker says which version this is', $('.home-footer')?.textContent === `Wayword ${VERSION}`,
+  $('.home-footer')?.textContent);
 
 await goTo('#/en-id/');
 check('the Indonesian placeholder opens a coming-soon screen', text().includes('Indonesian is coming soon'));
@@ -1134,6 +1137,44 @@ check('…which follows whichever course that was', location.hash.startsWith('#/
 check('the Japanese course switched the interface back to English', document.documentElement.lang === 'en');
 await goTo('#/no-such-place');
 check('an unknown path goes to the picker', location.hash === '#/' && text().includes('Wayword'), location.hash);
+
+console.log('\n11b. Version and updates');
+
+await goTo('#/en-ja/settings');
+check('Settings says which version this is', $('.about-version')?.textContent === `Version ${VERSION}`,
+  $('.about-version')?.textContent);
+$('[data-action="check-update"]')?.click();
+for (let i = 0; i < 4; i++) await tick();
+check('…and can check for a newer one (no service worker here: every reload is the latest)',
+  $('.update-status')?.textContent === 'This browser always loads the latest version.', $('.update-status')?.textContent);
+
+// The browser's update machinery, stood in for: what a check finds, and a new version taking over.
+const updates = await import('../js/updates.js');
+const registration = (r) => ({ getRegistration: async () => r, addEventListener() {} });
+check('a check reports the latest, an update downloading, or being offline',
+  (await updates.checkForUpdate(registration({ update: async () => {}, installing: null }))) === 'latest' &&
+    (await updates.checkForUpdate(registration({ update: async () => {}, installing: {} }))) === 'downloading' &&
+    (await updates.checkForUpdate(registration({ update: async () => { throw new TypeError('offline'); } }))) === 'offline');
+let checksAsked = 0;
+const firstInstall = Object.assign(new EventTarget(), { controller: null });
+updates.watchForUpdates(firstInstall, document);
+firstInstall.dispatchEvent(new Event('controllerchange'));
+await tick();
+check('a first install taking over is not an update', !document.querySelector('.update-banner') && !updates.updateReady());
+const installed = Object.assign(new EventTarget(), {
+  controller: {},
+  getRegistration: async () => { checksAsked++; return { update: async () => {}, installing: null }; },
+});
+updates.watchForUpdates(installed, document);
+document.dispatchEvent(new window.Event('visibilitychange'));
+for (let i = 0; i < 4; i++) await tick();
+check('coming back to the app checks for a new version', checksAsked > 0, `${checksAsked} checks`);
+installed.dispatchEvent(new Event('controllerchange'));
+await tick();
+check('a new version taking over puts "ready — update now" across the top',
+  document.querySelector('.update-banner')?.textContent === 'A new version of Wayword is ready.Update now');
+await goTo('#/en-ja/settings');
+check('…and Settings offers it too', $('[data-action="reload"]')?.hidden === false && text().includes('A new version of Wayword is ready.'));
 
 console.log('\n12. Console health');
 

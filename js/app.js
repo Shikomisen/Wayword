@@ -37,6 +37,8 @@ import { renderConnectors, renderLesson, renderPractice } from './connectors.js'
 import { renderKanaDrill, kanaState, refreshKanaAids, SCRIPT_NAMES } from './reading.js';
 import { keepOffline, offlineStatus } from './offline.js';
 import { renderListening, renderListeningDrill, listeningState } from './listen-drill.js';
+import { VERSION } from './version.js';
+import { watchForUpdates, onUpdateReady, updateReady, checkForUpdate } from './updates.js';
 
 const app = () => document.getElementById('app');
 const { link } = course;
@@ -792,6 +794,7 @@ async function settings(root, focus = null) {
         : null,
 
       await dataSection(),
+      aboutSection(),
 
       el('button', {
         class: 'btn btn-danger',
@@ -806,6 +809,44 @@ async function settings(root, focus = null) {
   );
   // Today's backup reminder links straight here.
   if (focus === 'data') document.getElementById('your-data')?.scrollIntoView?.({ block: 'start' });
+}
+
+/* ---------- about: the version, and getting the newest ---------- */
+
+/** Which version this is — so a phone that's behind can tell — and a way to fetch the latest. */
+function aboutSection() {
+  const status = el('p', { class: 'muted small update-status', role: 'status' });
+  const reload = el('button', {
+    type: 'button', class: 'btn btn-primary', hidden: !updateReady(), dataset: { action: 'reload' },
+    onclick: () => location.reload(),
+  }, t('update.reload'));
+  const check = el('button', {
+    type: 'button', class: 'btn', dataset: { action: 'check-update' },
+    onclick: async () => {
+      check.disabled = true;
+      status.textContent = t('update.checking');
+      const result = await checkForUpdate();
+      check.disabled = false;
+      status.textContent = t(`update.${result}`, { version: VERSION });
+      if (result === 'ready') reload.hidden = false;
+    },
+  }, t('update.check'));
+  return el('section', { class: 'about-section', id: 'about' },
+    el('h2', { class: 'section-title' }, t('about.title')),
+    el('p', { class: 'about-version' }, t('about.version', { version: VERSION })),
+    updateReady() ? el('p', { class: 'muted small' }, t('update.ready')) : null,
+    el('div', { class: 'action-row' }, check, reload),
+    status);
+}
+
+/** "A new version is ready" — across the top of every screen until it's taken up. */
+function showUpdateBanner() {
+  if (document.querySelector('.update-banner')) return;
+  document.body.prepend(
+    el('div', { class: 'update-banner', role: 'status' },
+      el('span', {}, t('update.ready')),
+      el('button', { type: 'button', class: 'btn btn-small btn-primary', onclick: () => location.reload() },
+        t('update.reload'))));
 }
 
 /* ---------- your data: backup and restore ---------- */
@@ -1063,6 +1104,9 @@ function registerServiceWorker() {
 
 async function boot() {
   audio.primeOnFirstGesture();
+  // A phone resuming the app never checks for a new version by itself.
+  onUpdateReady(showUpdateBanner);
+  watchForUpdates();
   // Until a course is entered, speak the learner's language as best we know
   // it — this is also what the boot-error screen below will be shown in.
   const prefs = await course.getPrefs();

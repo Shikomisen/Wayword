@@ -18,7 +18,7 @@
  *                         under a given cache version)
  */
 
-const CACHE_VERSION = 'v11';
+const CACHE_VERSION = 'v12';
 const CACHE_PREFIX = 'wayword-';
 const CACHE = `${CACHE_PREFIX}${CACHE_VERSION}`;
 
@@ -65,6 +65,8 @@ const SHELL = [
   './js/srs.js',
   './js/store.js',
   './js/study.js',
+  './js/updates.js',
+  './js/version.js',
   './icons/icon-192.png',
   './icons/icon-512.png',
   './icons/icon-maskable-512.png',

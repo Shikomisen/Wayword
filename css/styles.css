@@ -775,3 +775,13 @@ textarea.text-input { resize: vertical; min-height: 64px; }
 .listen-reply { margin-top: 10px; padding: 8px 10px; background: var(--bg-sunk); border-radius: 10px; }
 .listen-line .dialogue-who, .drill-answer .dialogue-who { margin-bottom: 4px; }
 .listen-today.is-done .row-title { color: var(--ok); }
+
+/* ---------- version and updates ---------- */
+
+.update-banner {
+  position: sticky; top: 0; z-index: 30; display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  padding: 10px 16px; background: var(--bg-raised); border-bottom: 1px solid var(--accent); font-size: 0.9rem;
+}
+.about-section { margin: 24px 0 16px; }
+.about-version { font-variant-numeric: tabular-nums; }
+.home-footer { margin: 28px 0 8px; text-align: center; font-size: 0.8rem; color: var(--fg-muted); font-variant-numeric: tabular-nums; }

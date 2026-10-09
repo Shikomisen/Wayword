@@ -312,5 +312,15 @@
   "browse.remove": "デッキから外す",
   "browse.removeConfirm": "「{title}」をデッキから外しますか？\n\n復習には出てこなくなりますが、学習の記録は残ります。もう一度追加すれば、続きから再開できます。",
   "browse.removed": "「{title}」をデッキから外しました（記録は残っています）",
-  "browse.readded": "「{title}」をデッキに戻しました。前回の続きから学習できます"
+  "browse.readded": "「{title}」をデッキに戻しました。前回の続きから学習できます",
+  "about.title": "このアプリについて",
+  "about.version": "バージョン {version}",
+  "update.ready": "新しいバージョンの準備ができました。",
+  "update.reload": "今すぐ更新",
+  "update.check": "更新を確認",
+  "update.checking": "確認中…",
+  "update.downloading": "新しいバージョンをダウンロード中です。まもなく更新できます。",
+  "update.latest": "最新のバージョン（{version}）です。",
+  "update.offline": "オフラインのため確認できませんでした。",
+  "update.unsupported": "このブラウザでは、いつも最新のバージョンが読み込まれます。"
 }

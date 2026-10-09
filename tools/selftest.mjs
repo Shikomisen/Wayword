@@ -602,6 +602,12 @@ for (const file of modules) check(`sw.js precaches js/${file}`, shell.has(`./js/
 for (const entry of shell) check(`sw.js shell entry ${entry} exists`, entry === './' || existsSync(resolve(ROOT, entry)));
 console.log(`  ${shell.size} shell files, ${modules.length} modules`);
 
+// The version the app shows is the version phones update to: one number, in two files.
+const cacheVersion = swSource.match(/const CACHE_VERSION = '([^']+)'/)?.[1];
+const appVersion = readFileSync(resolve(ROOT, 'js/version.js'), 'utf8').match(/export const VERSION = '([^']+)'/)?.[1];
+check('the version the app shows (js/version.js) is the cache version phones update to (sw.js)',
+  Boolean(cacheVersion) && appVersion === cacheVersion, `${appVersion} vs ${cacheVersion}`);
+
 /* ---------- SRS ---------- */
 
 console.log('\nSRS (SM-2)');

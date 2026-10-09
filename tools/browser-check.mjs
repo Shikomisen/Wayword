@@ -95,8 +95,13 @@ const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.
   '.css': 'text/css', '.json': 'application/json', '.webmanifest': 'application/manifest+json',
   '.png': 'image/png', '.mp3': 'audio/mpeg', '.svg': 'image/svg+xml' };
 let siteRoot = ROOT;
+let swNext = null; // a newer sw.js to serve, to see an update arrive while the app is open
 const server = http.createServer(async (req, res) => {
   const path = decodeURIComponent(new URL(req.url, 'http://x').pathname);
+  if (swNext && path === '/Wayword/sw.js') {
+    res.writeHead(200, { 'content-type': 'text/javascript', 'cache-control': 'no-store' });
+    return res.end(swNext);
+  }
   if (path.startsWith('/Wayword/')) {
     let file = join(siteRoot, path.slice('/Wayword/'.length));
     try {
@@ -408,6 +413,28 @@ try {
     `${roundTrip.courses.join(', ')} · ${roundTrip.before} entries`);
   check('restoring it writes every entry back, and keeps an undo', roundTrip.after === roundTrip.before && roundTrip.undo,
     `${roundTrip.after} entries after`);
+
+  // A phone that resumes the app instead of reopening it: the browser never
+  // looks for a new version by itself, so the app asks when it comes back.
+  // Served locally, a newer sw.js can be put in place mid-session.
+  if (!LIVE) {
+    console.log('\n[4c] A new version while the app is open');
+    await visit(page, `#/${available[0].id}/`);
+    swNext = (await readFile(join(siteRoot, 'sw.js'), 'utf8'))
+      .replace(/const CACHE_VERSION = '([^']+)'/, (m, v) => `const CACHE_VERSION = '${v}-next'`);
+    await page.evaluate(() => document.dispatchEvent(new Event('visibilitychange')));
+    check('coming back to the app finds the new version, and once it has downloaded, says so',
+      await waitFor(page, () => document.querySelector('.update-banner')?.textContent.includes('Update now'), null, 180000),
+      await page.$eval('.update-banner', (e) => e.textContent).catch(() => '(no banner)'));
+    await Promise.all([
+      page.waitForNavigation({ waitUntil: 'load', timeout: 30000 }).catch(() => null),
+      page.evaluate(() => document.querySelector('.update-banner button')?.click()),
+    ]);
+    check('"Update now" reloads into it',
+      (await waitFor(page, () => !document.querySelector('.update-banner') && Boolean(document.querySelector('#app h1')), null, 15000)) &&
+        (await page.evaluate(() => caches.keys())).some((k) => k.endsWith('-next')),
+      (await page.evaluate(() => caches.keys())).join(', '));
+  }
 
   console.log('\n[5] Offline');
   goOffline();

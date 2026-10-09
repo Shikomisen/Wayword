@@ -221,6 +221,21 @@ launch without code changes:
     record, keeps every course for that one update.
   - Opening a course offline that was never downloaded says so ("not on this
     device yet") instead of failing.
+- **Updates.** The browser only looks for a new version when the app is
+  opened afresh. A phone that resumes the app from the background never
+  does, and can sit on an old version for weeks. So the app (`js/updates.js`)
+  asks whenever it comes back to the foreground.
+  - The new version downloads in the background and takes over by itself.
+    The screen still runs the old code until it reloads, so a bar across the
+    top says **"A new version of Wayword is ready — Update now"**.
+  - **The version shows** at the foot of the language picker ("Wayword v12")
+    and in Settings → About. Settings also has **Check for updates**.
+  - The number is `js/version.js`, and it must equal `CACHE_VERSION` in
+    `sw.js`: changing sw.js is what makes phones update, and `npm test` fails
+    if the two disagree. Bump both together.
+  - A copy older than v12 has none of this. To get onto v12 it needs one
+    manual nudge: close the app fully (swipe it away), then open it twice.
+    The first open downloads the update; the second runs it.
 - Audio plays from bundled files — no network call, no dependency on the
   device's own TTS voice being installed.
 - All progress/SRS/quiz-result state stored client-side.

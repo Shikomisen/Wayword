@@ -1844,3 +1844,48 @@ casual is what you *say* to a partner. So:
     out and Add again with a toast, Today without it, back with its
     progress; the deck and lesson pages offer it; a character set too.
 - **Cache v11**, since the app code changed.
+
+### A92 — The version is shown, and an open app finds updates by itself
+- **What happened.** The user's phone was on a build from before v6, with
+  "Browse" and no Connectors tab, although v6–v11 had all gone live.
+  - The browser only checks for a new service worker on a fresh navigation.
+  - An installed app that's resumed from the background never navigates, so
+    it can sit on an old version indefinitely.
+  - Nothing showed which version was running.
+- **The version.** "Wayword v12" appears at the foot of the language picker,
+  and as "Version v12" in Settings → About.
+  - It comes from `js/version.js`, which must equal `CACHE_VERSION` in
+    `sw.js`. A changed sw.js is what makes phones update, so the two can't
+    drift: `npm test` fails if they differ.
+  - Two files, but one number, checked by a test. A single file can't serve
+    both: sw.js is a classic script, so it can't import the app's ES module,
+    and its own bytes have to change for an update to happen at all.
+- **Updates (`js/updates.js`):**
+  - The app asks for an update check whenever it comes back to the
+    foreground (`visibilitychange` → `registration.update()`).
+  - The worker already skips waiting and claims the page. So when a new one
+    takes over a page that already had a worker (`controllerchange`), a bar
+    across the top says **"A new version of Wayword is ready — Update now"**,
+    and tapping it reloads.
+  - The first install isn't announced: a worker taking over a page that had
+    none is not an update.
+  - There's no reload without asking: someone might be mid-review or typing
+    their own word.
+  - Settings → About has **Check for updates**, which reports the latest,
+    downloading, offline, or "this browser always loads the latest" (no
+    service worker, e.g. plain http), plus **Update now** once one is ready.
+- **The phone that's already behind** has none of this, so it needs one
+  manual nudge: close the app fully, then open it twice. The first open
+  downloads the update; with no record of courses kept, that's every course
+  once, ≈20 MB. The second open runs it.
+- **Tests:**
+  - render (286), using stand-ins for the browser's worker: the picker and
+    Settings show the version; a check reports latest, downloading or
+    offline; a first install isn't an update; coming back to the app
+    triggers a check; a new worker taking over shows the bar; Settings then
+    offers Update now.
+  - **Firefox (47, and 45 updating from the live v11):** with the app open,
+    a newer sw.js is put in place locally. Coming back to the app finds it,
+    downloads it, and shows the bar. *Update now* reloads into the new
+    version's cache. This is the real browser lifecycle, not a stand-in.
+- **Cache v12.**

@@ -16,6 +16,7 @@ import * as course from './course.js';
 import * as deck from './deck.js';
 import { t, setLang } from './i18n.js';
 import { el, clear } from './render.js';
+import { VERSION } from './version.js';
 
 export async function renderHome(root) {
   const registry = await course.loadCourses();
@@ -57,7 +58,10 @@ export async function renderHome(root) {
 
       el('section', { class: 'picker-section' },
         el('h2', { class: 'section-title' }, t('home.learn')),
-        el('div', { class: 'course-list' }, cards)));
+        el('div', { class: 'course-list' }, cards)),
+
+      // Which version this phone has — Settings shows it too, with a way to update.
+      el('footer', { class: 'home-footer' }, `Wayword ${VERSION}`));
   }
 
   await draw();

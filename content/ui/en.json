@@ -341,5 +341,15 @@
   "browse.remove": "Take out of deck",
   "browse.removeConfirm": "Take “{title}” out of your deck?\n\nIts cards stop coming up in your reviews, but your progress is kept — add it again any time to carry on where you left off.",
   "browse.removed": "Took “{title}” out of your deck — your progress is kept",
-  "browse.readded": "“{title}” is back in your deck, with your progress"
+  "browse.readded": "“{title}” is back in your deck, with your progress",
+  "about.title": "About Wayword",
+  "about.version": "Version {version}",
+  "update.ready": "A new version of Wayword is ready.",
+  "update.reload": "Update now",
+  "update.check": "Check for updates",
+  "update.checking": "Checking…",
+  "update.downloading": "A new version is downloading — it’ll be ready in a moment.",
+  "update.latest": "You’re on the latest version ({version}).",
+  "update.offline": "Couldn’t check — you seem to be offline.",
+  "update.unsupported": "This browser always loads the latest version."
 }
