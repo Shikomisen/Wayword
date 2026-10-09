@@ -188,8 +188,22 @@ launch without code changes:
 
 ## 5. Offline-First Architecture
 
-- App shell + all content JSON + all bundled audio files cached via
-  service worker on first load.
+- **The app itself** — the shell, the course list and the interface strings
+  — is cached by the service worker on first load.
+- **A course** — its content JSON and every bundled audio file — is cached
+  the first time it's opened on the device, in the background. A toast says
+  when it's done, and Settings → Your data shows whether this course is saved
+  offline. Nobody downloads a course they don't use: the English course is
+  about 4 MB and the Japanese one about 10 MB.
+  - The worker remembers which courses the device keeps (a small unversioned
+    cache, `wayword-kept`). Each new version downloads those courses before
+    it takes over, so what worked offline keeps working.
+  - At launch the app also asks for every course started on this device, so
+    a course the browser evicted comes back.
+  - A copy updating from v8 or earlier, which cached every course and kept no
+    record, keeps every course for that one update.
+  - Opening a course offline that was never downloaded says so ("not on this
+    device yet") instead of failing.
 - Audio plays from bundled files — no network call, no dependency on the
   device's own TTS voice being installed.
 - All progress/SRS/quiz-result state stored client-side.

@@ -130,6 +130,11 @@ export async function isOnboarded() {
   return Boolean(p && p.done);
 }
 
+/** Whether a course — not necessarily the current one — has been started on this device. */
+export async function onboardedIn(ns) {
+  return Boolean((await store.get('meta', 'placement', ns))?.done);
+}
+
 /* ---------- deck ---------- */
 
 export async function getDeck() {

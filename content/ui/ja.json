@@ -277,5 +277,11 @@
   "today.backupOld": "このブラウザの中にしかありません — 最後のバックアップ：{when}",
   "pos.adjective": "形容詞",
   "pos.phrase": "フレーズ",
-  "speaker.driver": "運転手"
+  "speaker.driver": "運転手",
+  "offline.saved": "オフラインでも使えるようになりました",
+  "offline.ready": "オフライン：このコースはこの端末に保存されているので、通信がなくても使えます。",
+  "offline.partial": "オフライン：このコースを端末に保存中です… {total}ファイル中{cached}ファイル完了。",
+  "offline.notSavedTitle": "まだこの端末にありません",
+  "offline.notSaved": "このコースは、まだこの端末にダウンロードされていません。インターネットにつないで一度開くと自動でダウンロードされ、その後はオフラインでも使えます。",
+  "offline.toPicker": "言語選択に戻る"
 }

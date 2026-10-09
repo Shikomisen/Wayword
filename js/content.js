@@ -72,9 +72,19 @@ function withRegister(manifest) {
   return (phrase) => ({ ...phrase, register: REGISTERS.includes(phrase.register) ? phrase.register : fallback });
 }
 
+/**
+ * A content file. An error says `offline` when the file simply couldn't be
+ * reached — no connection, and the service worker hasn't got it (it answers
+ * 504) — which for a course means it was never downloaded to this device.
+ */
 async function fetchJSON(path) {
-  const res = await fetch(path, { cache: 'no-cache' });
-  if (!res.ok) throw new Error(`Failed to load ${path} (${res.status})`);
+  let res;
+  try {
+    res = await fetch(path, { cache: 'no-cache' });
+  } catch {
+    throw Object.assign(new Error(`Failed to load ${path} (no connection)`), { offline: true });
+  }
+  if (!res.ok) throw Object.assign(new Error(`Failed to load ${path} (${res.status})`), { offline: res.status === 504 });
   return res.json();
 }
 

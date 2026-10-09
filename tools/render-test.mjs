@@ -73,7 +73,10 @@ globalThis.localStorage = window.localStorage ?? {
   clear: () => mem.clear(),
 };
 
+// Paths that answer as the service worker does offline for a file it never cached.
+let unreachable = null;
 globalThis.fetch = async (path) => {
+  if (unreachable && String(path).includes(unreachable)) return { ok: false, status: 504, json: async () => null };
   const file = resolve(ROOT, String(path).replace(/^\.\//, ''));
   if (!existsSync(file)) return { ok: false, status: 404, json: async () => null };
   return { ok: true, status: 200, json: async () => JSON.parse(readFileSync(file, 'utf8')) };
@@ -794,6 +797,15 @@ check('…with Indonesian as a coming-soon placeholder here too',
 check('the English-speaker courses are not listed', !$('.course-card[data-course="en-ja"]'));
 
 console.log('\n10. English for Japanese speakers');
+
+// Offline, before this device ever downloaded the course.
+unreachable = 'content/en/';
+await goTo('#/ja-en/');
+check('offline, a course never downloaded here says so, in the learner\'s language, instead of failing',
+  $('h1')?.textContent === 'まだこの端末にありません' && !text().includes('Something went wrong') &&
+    document.body.classList.contains('no-tabs') && Boolean($('a.btn[href="#/"]')),
+  $('h1')?.textContent);
+unreachable = null;
 
 await goTo('#/ja-en/');
 check('course bar shows the pair in Japanese', document.querySelector('.coursebar-pair')?.textContent === '日本語 › 英語',

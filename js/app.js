@@ -35,6 +35,7 @@ import { runSession } from './study.js';
 import { renderMine, renderMineForm } from './mine.js';
 import { renderConnectors, renderLesson, renderPractice } from './connectors.js';
 import { renderKanaDrill, kanaState, refreshKanaAids, SCRIPT_NAMES } from './reading.js';
+import { keepOffline, offlineStatus } from './offline.js';
 
 const app = () => document.getElementById('app');
 const { link } = course;
@@ -96,7 +97,15 @@ async function router() {
   }
 
   const sub = m[2] || '/';
-  const { features } = await enterCourse(target);
+  let entered;
+  try {
+    entered = await enterCourse(target);
+  } catch (err) {
+    // Offline, in a course this device never downloaded: say so, not "Something went wrong".
+    if (!err?.offline) throw err;
+    return notDownloaded();
+  }
+  const { features } = entered;
 
   if (target.status !== 'available') {
     const root = clear(app());
@@ -146,6 +155,17 @@ async function showHome() {
   await renderHome(root);
 }
 
+/** A course opened offline before it was ever downloaded here. */
+function notDownloaded() {
+  document.body.classList.add('no-tabs');
+  const root = clear(app());
+  window.scrollTo(0, 0);
+  root.append(
+    el('div', { class: 'screen' },
+      header(t('offline.notSavedTitle'), t('offline.notSaved')),
+      el('a', { class: 'btn btn-primary', href: '#/' }, t('offline.toPicker'))));
+}
+
 let enteredCourse = null;
 
 /**
@@ -172,6 +192,12 @@ async function enterCourse(target) {
 
   if (enteredCourse !== target.id) {
     enteredCourse = target.id;
+    // Keep this course on the device. The first time, that's a download in
+    // the background; say when it's done, since that's when offline works.
+    keepOffline([target.id]).then((answer) => {
+      const kept = answer?.courses?.[0];
+      if (kept?.added && !kept.missing) toast(t('offline.saved'));
+    });
     await course.savePrefs({ lastCourse: target.id, speaker: target.speaker });
     if (features.reading && (await deck.maybeRetireRomaji())) {
       toast(t('toast.romajiRetired'), 5000);
@@ -861,7 +887,20 @@ async function dataSection() {
           }, t('data.undo')))
       : null,
     status,
-    el('p', { class: 'muted small' }, t('settings.storage', { backend: store.backend() })));
+    el('p', { class: 'muted small' }, t('settings.storage', { backend: store.backend() })),
+    offlineLine());
+}
+
+/** Whether this course works offline here — filled in once the service worker answers. */
+function offlineLine() {
+  const line = el('p', { class: 'muted small offline-status', role: 'status' });
+  offlineStatus(course.currentCourseId()).then((s) => {
+    if (!s?.total) { line.remove(); return; }
+    line.textContent = s.cached >= s.total
+      ? t('offline.ready')
+      : t('offline.partial', { cached: s.cached, total: s.total });
+  });
+  return line;
 }
 
 /** On Today: progress worth keeping, and no backup for a while. */
@@ -988,6 +1027,25 @@ async function boot() {
 
   window.addEventListener('hashchange', router);
   await router();
+  keepStartedCourses();
+}
+
+/**
+ * Every course started on this device stays downloaded — asked for at each
+ * launch, not only when a course is opened, so one the browser evicted comes
+ * back, and the service worker's next version knows what to download before
+ * it takes over. An empty list is sent too: it tells the worker the device
+ * keeps no course yet.
+ */
+async function keepStartedCourses() {
+  try {
+    const { courses } = await course.loadCourses();
+    const available = courses.filter((c) => c.status === 'available');
+    const started = await Promise.all(available.map((c) => deck.onboardedIn(c.id)));
+    await keepOffline(available.filter((c, i) => started[i]).map((c) => c.id));
+  } catch (err) {
+    console.warn('[wayword] could not check which courses to keep offline', err);
+  }
 }
 
 /** Last-resort surface so a failed boot isn't an unexplained blank page. */

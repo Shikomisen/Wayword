@@ -194,10 +194,17 @@ async function enterCourse(page, id) {
   return Boolean(await page.$('.stat-row'));
 }
 
-/** Every file the service worker's own walk should precache, read from the served site. */
-const expectedAssets = () => async function () {
-  const j = (f) => fetch(`./${f}`, { cache: 'no-store' }).then((r) => r.json());
-  const sw = await (await fetch('./sw.js', { cache: 'no-store' })).text();
+/**
+ * Every file the service worker should have cached, read from the served
+ * site: the shell, the course list and interface strings, plus the given
+ * courses (ids, or null for every course). Fetched from Node, straight from
+ * the server — through the page, the service worker would cache each file
+ * read, and the check would be measuring its own footprints.
+ */
+async function expectedAssets(ids) {
+  const fetchFrom = (f) => fetch(new URL(f, base));
+  const j = (f) => fetchFrom(f).then((r) => r.json());
+  const sw = await (await fetchFrom('sw.js')).text();
   const out = [...sw.match(/const SHELL = \[([\s\S]*?)\];/)[1].matchAll(/'([^']+)'/g)].map((m) => m[1]);
   out.push('./content/courses.json');
   const reg = await j('content/courses.json');
@@ -205,7 +212,7 @@ const expectedAssets = () => async function () {
   // Written independently of sw.js's own walk on purpose: each content kind
   // is listed by hand, so a kind the worker forgets to cache shows up here.
   const clips = (x) => [x?.audio, x?.polite?.audio].filter(Boolean);
-  for (const c of reg.courses.filter((x) => x.manifest)) {
+  for (const c of reg.courses.filter((x) => x.manifest && (ids === null || ids.includes(x.id)))) {
     const m = await j(c.manifest);
     out.push(`./${c.manifest}`);
     for (const d of [...(m.categories || []), ...(m.decks || []), ...(m.lessons || []), ...(m.characterSets || [])]) {
@@ -221,7 +228,31 @@ const expectedAssets = () => async function () {
     }
   }
   return [...new Set(out)];
-};
+}
+
+/** Which of these files the new version's cache doesn't hold. */
+const notCached = (page, list) => page.evaluate(async (urls, cacheName) => {
+  const c = await caches.open(cacheName);
+  const miss = [];
+  for (const u of urls) if (!(await c.match(new URL(u, location.href).href))) miss.push(u);
+  return miss;
+}, list, newCache);
+
+/** Wait until the new version's cache holds all of these files. */
+const cachedAll = (page, list, timeout) => waitFor(page, async ([urls, cacheName]) => {
+  const c = await caches.open(cacheName);
+  for (const u of urls) if (!(await c.match(new URL(u, location.href).href))) return false;
+  return true;
+}, [list, newCache], timeout);
+
+/** The courses the service worker remembers keeping on this device. */
+const keptCourses = (page) => page.evaluate(async () => {
+  const hit = await (await caches.open('wayword-kept')).match('./__kept-courses.json');
+  return hit ? hit.json() : null;
+});
+
+/** An interface string, as the served site has it. */
+const uiString = (lang, key) => fetch(new URL(`content/ui/${lang}.json`, base)).then((r) => r.json()).then((d) => d[key]);
 
 const page = await browser.newPage();
 const logs = [];
@@ -266,29 +297,74 @@ try {
 
   console.log('\n[3] Precache');
   await page.goto(base, { waitUntil: 'load' });
-  const expected = await page.evaluate(expectedAssets());
-  const missing = await page.evaluate(async (list, cacheName) => {
-    const c = await caches.open(cacheName);
-    const miss = [];
-    for (const u of list) if (!(await c.match(new URL(u, location.href).href))) miss.push(u);
-    return miss;
-  }, expected, newCache);
-  const audio = expected.filter((u) => u.endsWith('.mp3')).length;
-  check(`${newCache} holds every asset (${expected.length}, ${audio} audio clips)`, missing.length === 0,
-    missing.slice(0, 5).join(', ') || 'none missing');
-
-  console.log('\n[4] Every course, every tab (online)');
   const courses = (await page.evaluate(() => fetch('./content/courses.json').then((r) => r.json()))).courses;
   const available = courses.filter((c) => c.status === 'available');
-  const tabsByCourse = {};
+  const expected = await expectedAssets(null);
+  const appOnly = await expectedAssets([]);
+  const courseFiles = {};
   for (const c of available) {
+    courseFiles[c.id] = (await expectedAssets([c.id])).filter((u) => !appOnly.includes(u));
+  }
+  const audio = expected.filter((u) => u.endsWith('.mp3')).length;
+  if (oldTree) {
+    // The previous build cached every course; so does its first update, once.
+    const missing = await notCached(page, expected);
+    check(`${newCache} keeps every course a copy that had them all (${expected.length} files, ${audio} clips)`,
+      missing.length === 0, missing.slice(0, 5).join(', ') || 'none missing');
+  } else {
+    const missing = await notCached(page, appOnly);
+    check(`${newCache} holds the app, the course list and the interface strings (${appOnly.length} files)`,
+      missing.length === 0, missing.slice(0, 5).join(', ') || 'none missing');
+    const early = [];
+    for (const c of available) if ((await notCached(page, courseFiles[c.id])).length < courseFiles[c.id].length) early.push(c.id);
+    check('…and no course yet: each downloads when it is opened', early.length === 0, early.join(', ') || 'none cached');
+  }
+
+  console.log('\n[4] Every course, every tab (online)');
+  const tabsByCourse = {};
+  for (const [i, c] of available.entries()) {
     check(`${c.id}: enters past placement`, await enterCourse(page, c.id));
+    if (!oldTree) {
+      // Opening a course downloads it, all of it, in the background.
+      check(`opening ${c.id} downloads it for offline use (${courseFiles[c.id].length} files)`,
+        await cachedAll(page, courseFiles[c.id], LIVE ? 300000 : 120000),
+        `${courseFiles[c.id].length - (await notCached(page, courseFiles[c.id])).length} of ${courseFiles[c.id].length}`);
+      const later = available.slice(i + 1);
+      if (later.length) {
+        const early = [];
+        for (const o of later) if ((await notCached(page, courseFiles[o.id])).length < courseFiles[o.id].length) early.push(o.id);
+        check('…and only that course', early.length === 0, early.join(', ') || `${later.map((o) => o.id).join(', ')} not yet`);
+      }
+      const ready = await uiString(c.speaker, 'offline.ready');
+      await visit(page, `#/${c.id}/settings`);
+      check('…and Settings says so',
+        await waitFor(page, (text) => document.querySelector('.offline-status')?.textContent === text, ready, 15000),
+        await page.$eval('.offline-status', (e) => e.textContent).catch(() => '(no status line)'));
+      if (i === 0 && later.length) {
+        // Offline, a course that was never opened here says so, instead of failing.
+        const other = later[0];
+        const title = await uiString(other.speaker, 'offline.notSavedTitle');
+        goOffline();
+        const v = await visit(page, `#/${other.id}/`);
+        offline = false;
+        check(`offline, ${other.id} — never opened here — says it isn't on this device yet`,
+          v.ok && v.heading === title && !/Something went wrong/.test(v.text), v.heading);
+        await visit(page, `#/${c.id}/`);
+      }
+    }
     tabsByCourse[c.id] = await page.$$eval('.tabbar a', (a) => a.map((x) => x.getAttribute('href')));
     for (const href of tabsByCourse[c.id]) {
       const v = await visit(page, href);
       check(`${href} renders`, v.ok && !/\bnull\b|undefined|Something went wrong/.test(v.text), v.heading);
     }
   }
+  check('the service worker remembers every course used here, for its next version to download',
+    await waitFor(page, async (ids) => {
+      const hit = await (await caches.open('wayword-kept')).match('./__kept-courses.json');
+      const kept = hit ? await hit.json() : [];
+      return ids.every((id) => kept.includes(id));
+    }, available.map((c) => c.id), 30000),
+    JSON.stringify(await keptCourses(page)));
 
   // jsdom and Node only exercise the localStorage fallback; this is the real IndexedDB path.
   console.log('\n[4b] Backup round trip (IndexedDB)');

@@ -1527,3 +1527,73 @@ casual is what you *say* to a partner. So:
   own. It appears in the note on the *Can I see the menu, please?* card, and
   the *Could I get…?* lesson teaches *Can I get…?* as natural too. §18 now
   says so.
+
+### A85 — Completing the English plan: the answers, and the order they set
+- **Asked before building (October 2026), as the plan requires:**
+  - **Where the gaps are:** *saying what they want.* So the build leans on
+    patterns, polite phrasing and "say it" practice, and the listening tab
+    stays small.
+  - **Offline use:** *often, on a phone.* So per-course offline caching comes
+    first.
+  - **The lessons tab:** *one tab with a broader name*, with patterns and
+    connectors as groups inside it.
+  - **The NZ voice:** *later.* Azure support and the slower button get built,
+    but the clips stay on Google's voice until there's a key.
+- **Order:**
+  1. per-course offline caching;
+  2. voice support and the slower button;
+  3. speaking-first content: polite phrasing and connectors, then
+     vocabulary and everyday sentences;
+  4. a small listening tab;
+  5. verify and deploy.
+
+### A86 — Each course is cached once it's opened, not everything for everyone
+- **What's cached when:**
+  - **First visit:** the worker caches the shell, the course list and the
+    interface strings — 34 files.
+  - **Opening a course:** the app sends `keep-courses` and the worker
+    downloads that course in the background: content files and every clip.
+    The English course is 280 files (≈4 MB); the Japanese one is 958
+    (≈10 MB).
+  - A toast says when the download is done, and Settings → Your data shows
+    whether this course is saved offline.
+- **Nothing that works offline stops working:**
+  - The worker records the courses it keeps in an unversioned cache,
+    `wayword-kept`, and every new version downloads them before it takes
+    over.
+  - At launch the app asks for every course started on the device, so a
+    course the browser evicted comes back. Since that list may be empty, a
+    device that has started nothing is known to keep nothing.
+  - **Updating from v8 or earlier** (every course cached, no record), the
+    worker keeps every course for that one update, rather than guessing which
+    ones are used. The record forms as the app is used, and the update after
+    that keeps only the used courses.
+- **Offline before a course was ever downloaded:** a content file the worker
+  doesn't have answers 504 offline. `content.js` marks that error `offline`,
+  and the router shows "Not on this device yet" in the learner's language,
+  with a way back to the picker, instead of "Something went wrong".
+- **Robustness:** JSON reads in the worker are tried three times, since a
+  dropped manifest request would leave a whole course out. Two asks for the
+  same course share one download, and writes to the record are serialised.
+- **Tests:**
+  - `tools/sw-test.mjs` runs the real worker over a flaky connection, one
+    version after another on shared Cache Storage. It checks:
+    - a first install caches the app only;
+    - a course download is complete, with every flaky file retried;
+    - only the opened course is downloaded;
+    - the record;
+    - offline asks are reported, not thrown;
+    - the next version downloads the kept courses;
+    - activation keeps the record;
+    - the v8 update keeps everything.
+  - `tools/browser-check.mjs` in Firefox checks:
+    - a first visit caches 34 files and no course;
+    - opening each course downloads all of it, and only it;
+    - Settings says it's saved;
+    - a never-opened course offline says it isn't on the device;
+    - the record lists both courses.
+
+    Its expected file lists are now fetched from Node, straight from the
+    server. Fetching them through the page let the worker cache every JSON
+    file the check read, so the check was measuring its own footprints.
+  - `tools/render-test.mjs` checks the "not on this device yet" screen.
