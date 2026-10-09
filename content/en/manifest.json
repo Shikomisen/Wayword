@@ -4,7 +4,7 @@
   "speaker": "ja",
   "register": "polite-neutral",
   "generatedFor": "Wayword — English for Japanese speakers",
-  "notes": "English for Japanese speakers. Same shape as the English → Japanese course: one file per category, one per scenario. Text the learner studies is `english`; `japanese` is the gloss. Notes are written in Japanese. Categories appear under the group they name; `starter` categories go into the deck when placement finishes.",
+  "notes": "English for Japanese speakers, modelled on New Zealand English. Same shape as the English → Japanese course: one file per category, one per scenario; word decks under `decks`; phrase-pattern lessons (\"I'd like ○○\") under `lessons` — the counterpart of the Japanese course's connectors, named by `copy.lessonsTitle`. Text the learner studies is `english`; `japanese` is the gloss. Notes are written in Japanese.",
   "fields": {
     "target": "english",
     "meaning": "japanese"
@@ -20,9 +20,24 @@
       "style": "pitfall"
     }
   ],
+  "words": {
+    "pos": [
+      "noun",
+      "verb",
+      "adjective",
+      "adverb",
+      "phrase"
+    ],
+    "forms": [],
+    "verbForms": []
+  },
   "copy": {
     "placementLede": "{n}枚のカードで、10のカテゴリーをひととおりチェックします。それぞれ、すでに知っているかどうかを選ぶだけ。入力も採点もありません — 各カードをどこから復習に入れるかを決めるためのものです。",
-    "placementAside": "学校で習った英語は、読めばわかるのに口から出てこない — ということがよくあります。実際の会話で必要なのは、とっさに言える短いひとこと。そのすき間を見つけるためのチェックで、テストではありません。"
+    "placementAside": "学校で習った英語は、読めばわかるのに口から出てこない — ということがよくあります。実際の会話で必要なのは、とっさに言える短いひとこと。そのすき間を見つけるためのチェックで、テストではありません。",
+    "lessonsTitle": "フレーズの型",
+    "lessonsTab": "フレーズの型",
+    "lessonsLede": "「I'd like ○○, please.」のように、○○を入れかえて使える型。説明と例文、練習問題があります。",
+    "lessonsIcon": "🧩"
   },
   "groups": [
     {
@@ -30,12 +45,20 @@
       "title": "基本のひとこと"
     },
     {
-      "id": "travel",
-      "title": "空港・ホテル"
+      "id": "food",
+      "title": "カフェ・レストラン"
+    },
+    {
+      "id": "shopping",
+      "title": "買い物"
     },
     {
       "id": "town",
       "title": "街で"
+    },
+    {
+      "id": "travel",
+      "title": "空港・ホテル"
     },
     {
       "id": "help",
@@ -67,8 +90,7 @@
       "file": "content/en/airport.json",
       "title": "空港・入国審査",
       "icon": "✈️",
-      "group": "travel",
-      "starter": true
+      "group": "travel"
     },
     {
       "id": "transport",
@@ -76,8 +98,7 @@
       "file": "content/en/transport.json",
       "title": "電車・バス・タクシー",
       "icon": "🚆",
-      "group": "town",
-      "starter": true
+      "group": "town"
     },
     {
       "id": "directions",
@@ -99,9 +120,10 @@
       "id": "restaurant",
       "order": 7,
       "file": "content/en/restaurant.json",
-      "title": "レストラン・カフェ",
+      "title": "カフェ・レストラン",
       "icon": "🍽️",
-      "group": "town"
+      "group": "food",
+      "starter": true
     },
     {
       "id": "shopping",
@@ -109,7 +131,8 @@
       "file": "content/en/shopping.json",
       "title": "買い物・支払い",
       "icon": "🛍️",
-      "group": "town"
+      "group": "shopping",
+      "starter": true
     },
     {
       "id": "emergency",
@@ -128,20 +151,125 @@
       "group": "basics"
     }
   ],
+  "decks": [
+    {
+      "id": "words-cafe",
+      "kind": "words",
+      "order": 1,
+      "file": "content/en/words/cafe.json",
+      "title": "カフェ・食べ物",
+      "icon": "☕",
+      "starter": true
+    },
+    {
+      "id": "words-clothes",
+      "kind": "words",
+      "order": 2,
+      "file": "content/en/words/clothes.json",
+      "title": "服・サイズ",
+      "icon": "👕"
+    },
+    {
+      "id": "words-shopping",
+      "kind": "words",
+      "order": 3,
+      "file": "content/en/words/shopping.json",
+      "title": "お店・お会計",
+      "icon": "🧾",
+      "starter": true
+    }
+  ],
+  "lessonGroups": [
+    {
+      "id": "ask",
+      "title": "お願いする",
+      "description": "注文や頼みごとの型。○○を入れかえれば、いろいろな場面で使えます。"
+    },
+    {
+      "id": "question",
+      "title": "たずねる",
+      "description": "ある？ これは〜？ どこ？ いくら？ を聞く型。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "pat-like",
+      "order": 1,
+      "file": "content/en/patterns/like.json",
+      "title": "I'd like… — 〜をお願いします（注文の基本）",
+      "group": "ask"
+    },
+    {
+      "id": "pat-have",
+      "order": 2,
+      "file": "content/en/patterns/have.json",
+      "title": "Can I have…? — 〜をもらえますか",
+      "group": "ask"
+    },
+    {
+      "id": "pat-get",
+      "order": 3,
+      "file": "content/en/patterns/get.json",
+      "title": "Could I get…? — 〜をいただけますか（ていねい）",
+      "group": "ask"
+    },
+    {
+      "id": "pat-doyouhave",
+      "order": 4,
+      "file": "content/en/patterns/doyouhave.json",
+      "title": "Do you have…? — 〜はありますか",
+      "group": "question"
+    },
+    {
+      "id": "pat-isthis",
+      "order": 5,
+      "file": "content/en/patterns/isthis.json",
+      "title": "Is this…? — これは〜ですか",
+      "group": "question"
+    },
+    {
+      "id": "pat-where",
+      "order": 6,
+      "file": "content/en/patterns/where.json",
+      "title": "Where's…? — 〜はどこですか",
+      "group": "question"
+    },
+    {
+      "id": "pat-howmuch",
+      "order": 7,
+      "file": "content/en/patterns/howmuch.json",
+      "title": "How much…? — 〜はいくらですか",
+      "group": "question"
+    }
+  ],
   "characterSets": [],
   "scenarios": [
     {
-      "id": "immigration",
-      "file": "content/en/scenarios/immigration.json",
-      "title": "入国審査",
-      "icon": "🛂",
-      "category": "airport"
+      "id": "cafe",
+      "file": "content/en/scenarios/cafe.json",
+      "title": "カフェで注文する",
+      "icon": "☕",
+      "category": "restaurant"
     },
     {
-      "id": "subway",
-      "file": "content/en/scenarios/subway.json",
-      "title": "地下鉄の乗り方をたずねる",
-      "icon": "🚇",
+      "id": "clothes",
+      "file": "content/en/scenarios/clothes.json",
+      "title": "服を試着する",
+      "icon": "👕",
+      "category": "shopping"
+    },
+    {
+      "id": "bakery",
+      "file": "content/en/scenarios/bakery.json",
+      "title": "パン屋さんで頼む",
+      "icon": "🥐",
+      "category": "shopping"
+    },
+    {
+      "id": "bus",
+      "file": "content/en/scenarios/bus.json",
+      "title": "バスの乗り方をたずねる",
+      "icon": "🚌",
       "category": "transport"
     },
     {
@@ -152,25 +280,18 @@
       "category": "directions"
     },
     {
+      "id": "immigration",
+      "file": "content/en/scenarios/immigration.json",
+      "title": "入国審査",
+      "icon": "🛂",
+      "category": "airport"
+    },
+    {
       "id": "checkin",
       "file": "content/en/scenarios/checkin.json",
       "title": "ホテルのチェックイン",
       "icon": "🏨",
       "category": "hotel"
-    },
-    {
-      "id": "restaurant",
-      "file": "content/en/scenarios/restaurant.json",
-      "title": "レストランで注文する",
-      "icon": "🍽️",
-      "category": "restaurant"
-    },
-    {
-      "id": "checkout",
-      "file": "content/en/scenarios/checkout.json",
-      "title": "お店のレジで",
-      "icon": "🛍️",
-      "category": "shopping"
     }
   ]
 }

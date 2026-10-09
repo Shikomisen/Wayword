@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "id": "cafe",
+  "title": "カフェで注文する",
+  "category": "restaurant",
+  "setting": "オークランドの人気のカフェ。ニュージーランドのカフェでは、カウンターで注文して先にお会計をします。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "barista",
+      "english": "Hi there! What can I get for you?",
+      "japanese": "こんにちは！ご注文は？",
+      "audio": "audio/en/scenario/cafe-n1.mp3",
+      "audioHint": "Hi there! What can I get for you?",
+      "options": [
+        {
+          "phraseId": "res-11",
+          "quality": "good",
+          "feedback": "注文の基本形。完璧です。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "Can I have a flat white, please?",
+          "japanese": "フラットホワイトをください。",
+          "feedback": "Can I have ...? も注文の定番です。",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "I want flat white.",
+          "japanese": "（フラットホワイトがほしい）",
+          "feedback": "通じますが、ぶっきらぼうに聞こえます。I'd like ... か Can I have ...? を使いましょう。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "barista",
+      "english": "Sure. Anything to eat?",
+      "japanese": "かしこまりました。お食事はいかがですか？",
+      "audio": "audio/en/scenario/cafe-n2.mp3",
+      "audioHint": "Sure. Anything to eat?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Is the curry pie spicy?",
+          "japanese": "カレーパイは辛いですか？",
+          "feedback": "気になる料理の味を聞くのは自然です。Is this spicy? の this を料理名に変えるだけ。",
+          "next": "n3"
+        },
+        {
+          "phraseId": "res-03",
+          "quality": "good",
+          "feedback": "迷った時は聞いてしまうのが一番。店員さんも喜んで教えてくれます。",
+          "next": "n3r"
+        },
+        {
+          "quality": "wrong",
+          "english": "No eat.",
+          "japanese": "（食べない）",
+          "feedback": "No, thanks. Just the coffee.（いいえ、コーヒーだけで）と言いましょう。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "barista",
+      "english": "It's a little bit spicy. The mince and cheese is mild, though.",
+      "japanese": "少し辛いです。でも、ひき肉とチーズのパイは辛くないですよ。",
+      "audio": "audio/en/scenario/cafe-n3.mp3",
+      "audioHint": "It's a little bit spicy. The mince and cheese is mild, though.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "I'll have the mince and cheese, then.",
+          "japanese": "じゃあ、ひき肉とチーズのにします。",
+          "feedback": "then（じゃあ）を付けると、相手の話を受けた自然な返事になります。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "Can I have the curry pie, please?",
+          "japanese": "カレーパイをください。",
+          "feedback": "辛いのが平気なら、そのまま注文してOK。",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "english": "Mild? What is mild?",
+          "japanese": "（マイルドって何？）",
+          "feedback": "聞き返すのはいいことですが、Sorry, what does \"mild\" mean? と聞くとていねいです。mild は「辛くない」という意味です。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n3r": {
+      "speaker": "barista",
+      "english": "The mince and cheese pie is really popular.",
+      "japanese": "ひき肉とチーズのパイが人気ですよ。",
+      "audio": "audio/en/scenario/cafe-n3r.mp3",
+      "audioHint": "The mince and cheese pie is really popular.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Great, I'll have that, please.",
+          "japanese": "いいですね、それにします。",
+          "feedback": "おすすめをそのまま注文する時の自然な言い方です。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "Sounds good. Can I have one, please?",
+          "japanese": "いいですね。1つください。",
+          "feedback": "Sounds good. は「いいですね」。気軽な返事にぴったりです。",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "english": "Popular is good.",
+          "japanese": "（人気はいい）",
+          "feedback": "言いたいことは伝わりますが、英語として不自然です。Great, I'll have that. のように答えましょう。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "barista",
+      "english": "Eat in or takeaway?",
+      "japanese": "店内でお召し上がりですか、お持ち帰りですか？",
+      "audio": "audio/en/scenario/cafe-n4.mp3",
+      "audioHint": "Eat in or takeaway?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Eat in, please.",
+          "japanese": "店内で。",
+          "feedback": "答えはこれだけでOKです。",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "english": "Takeaway, please.",
+          "japanese": "持ち帰りで。",
+          "feedback": "これだけで十分伝わります。",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "english": "Take out, please.",
+          "japanese": "（持ち帰りで）",
+          "feedback": "通じますが、アメリカ寄りの言い方です。ニュージーランドでは takeaway が自然です。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "barista",
+      "english": "Great. That's eleven fifty. Tap whenever you're ready.",
+      "japanese": "ありがとうございます。11ドル50セントです。準備ができたらタッチしてください。",
+      "audio": "audio/en/scenario/cafe-n5.mp3",
+      "audioHint": "Great. That's eleven fifty. Tap whenever you're ready.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Okay, thanks.",
+          "japanese": "はい、どうも。",
+          "feedback": "カードをタッチして支払い完了です。",
+          "next": "n6"
+        },
+        {
+          "phraseId": "gre-10",
+          "quality": "good",
+          "feedback": "金額が聞き取れなければ、聞き返すのが正解です。",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "english": "Eleven fifteen?",
+          "japanese": "（11ドル15セント？）",
+          "feedback": "確認するのはいいことですが、今回は eleven fifty（11.50）。fifteen（15）と fifty（50）は聞き間違えやすい組み合わせです。",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "barista",
+      "english": "Here's your number. We'll bring it out to you.",
+      "japanese": "こちらが番号札です。お席までお持ちしますね。",
+      "audio": "audio/en/scenario/cafe-n6.mp3",
+      "audioHint": "Here's your number. We'll bring it out to you.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Thank you!",
+          "japanese": "ありがとう！",
+          "feedback": "番号札をテーブルに置いて待ちましょう。",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "english": "Cheers!",
+          "japanese": "ありがとう！（くだけた言い方）",
+          "feedback": "Cheers! は、ニュージーランドでよく使う気軽な「ありがとう」です。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "wrong",
+          "feedback": "お礼を言われたわけではないので、ちぐはぐです。Thank you! と返しましょう。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "japanese": "注文完了。ニュージーランドのカフェでは、カウンターで注文して先に払い、番号札をテーブルに置いて待つのが一般的です。チップはいりません。注文は I'd like ... か Can I have ...? で。",
+      "end": true,
+      "options": []
+    }
+  }
+}

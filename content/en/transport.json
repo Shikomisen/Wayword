@@ -3,36 +3,44 @@
   "id": "transport",
   "title": "電車・バス・タクシー",
   "order": 4,
-  "description": "切符、乗り換え、行き先の確認。移動の不安が減ると、旅そのものがずっと楽しくなります。",
+  "description": "切符、乗り換え、行き先の確認。移動の不安が減ると、出かけるのがずっと楽しくなります。",
   "phrases": [
     {
       "id": "tra-01",
-      "english": "One ticket to Boston, please.",
-      "japanese": "ボストンまで1枚お願いします。",
-      "registerNotes": "行き先＋please で十分です。往復は a round-trip ticket（イギリスでは a return）。",
+      "english": "One ticket to Wellington, please.",
+      "japanese": "ウェリントンまで1枚お願いします。",
+      "registerNotes": "行き先＋please で十分です。往復はニュージーランドやイギリスでは a return、アメリカでは a round-trip ticket。",
       "audio": "audio/en/tra-01.mp3",
-      "audioHint": "One ticket to Boston, please.",
-      "tags": ["切符", "必須"],
+      "audioHint": "One ticket to Wellington, please.",
+      "tags": [
+        "切符",
+        "必須"
+      ],
       "difficulty": 1
     },
     {
       "id": "tra-02",
-      "english": "Does this train go to Central Station?",
-      "japanese": "この電車はセントラル駅に行きますか？",
-      "registerNotes": "乗る前の確認に。バスなら Does this bus go to ...?",
+      "english": "Does this bus go to the city centre?",
+      "japanese": "このバスは市の中心部に行きますか？",
+      "registerNotes": "乗る前の確認に。ニュージーランドの街では、バスが移動の中心です。centre はイギリス式のつづり（アメリカでは center）。電車なら Does this train go to ...?",
       "audio": "audio/en/tra-02.mp3",
-      "audioHint": "Does this train go to Central Station?",
-      "tags": ["電車", "確認"],
+      "audioHint": "Does this bus go to the city centre?",
+      "tags": [
+        "電車",
+        "確認"
+      ],
       "difficulty": 2
     },
     {
       "id": "tra-03",
       "english": "Which platform is it?",
       "japanese": "何番線ですか？",
-      "registerNotes": "イギリスでは platform、アメリカでは track をよく使います。どちらでも通じます。",
+      "registerNotes": "ニュージーランドやイギリスでは platform、アメリカでは track をよく使います。",
       "audio": "audio/en/tra-03.mp3",
       "audioHint": "Which platform is it?",
-      "tags": ["電車"],
+      "tags": [
+        "電車"
+      ],
       "difficulty": 2
     },
     {
@@ -42,17 +50,23 @@
       "registerNotes": "アメリカでは transfer もよく使います（Where do I transfer?）。",
       "audio": "audio/en/tra-04.mp3",
       "audioHint": "Where do I change trains?",
-      "tags": ["電車", "乗り換え"],
+      "tags": [
+        "電車",
+        "乗り換え"
+      ],
       "difficulty": 3
     },
     {
       "id": "tra-05",
-      "english": "Could you tell me when we get to Main Street?",
-      "japanese": "メイン通りに着いたら教えていただけますか？",
-      "registerNotes": "バスの運転手さんに頼むと、たいてい快く教えてくれます。運転席の近くに座っておきましょう。",
+      "english": "Could you tell me when we get to Queen Street?",
+      "japanese": "クイーン通りに着いたら教えていただけますか？",
+      "registerNotes": "バスの運転手さんに頼むと、たいてい快く教えてくれます。ニュージーランドでは、降りる時に運転手さんへ Thanks! と声をかけるのが習慣です。",
       "audio": "audio/en/tra-05.mp3",
-      "audioHint": "Could you tell me when we get to Main Street?",
-      "tags": ["バス", "お願い"],
+      "audioHint": "Could you tell me when we get to Queen Street?",
+      "tags": [
+        "バス",
+        "お願い"
+      ],
       "difficulty": 4
     },
     {
@@ -62,7 +76,10 @@
       "registerNotes": "タクシーで住所を見せながら。発音に自信がなくても、見せれば確実です。",
       "audio": "audio/en/tra-06.mp3",
       "audioHint": "Please take me to this address.",
-      "tags": ["タクシー", "必須"],
+      "tags": [
+        "タクシー",
+        "必須"
+      ],
       "difficulty": 1
     },
     {
@@ -72,7 +89,10 @@
       "registerNotes": "乗る前に目安を聞いておくと安心です。",
       "audio": "audio/en/tra-07.mp3",
       "audioHint": "How much is it to the airport?",
-      "tags": ["タクシー", "値段"],
+      "tags": [
+        "タクシー",
+        "値段"
+      ],
       "difficulty": 2
     },
     {
@@ -82,7 +102,9 @@
       "registerNotes": "drop off は「（車から）降ろす」。Right here is fine.（ここで大丈夫です）も便利です。",
       "audio": "audio/en/tra-08.mp3",
       "audioHint": "Can you drop me off here?",
-      "tags": ["タクシー"],
+      "tags": [
+        "タクシー"
+      ],
       "difficulty": 3
     },
     {
@@ -93,17 +115,22 @@
       "pitfallNote": "Yes / No が日本語と逆に感じやすい質問。No, go ahead. は「空いているのでどうぞ」という意味です。",
       "audio": "audio/en/tra-09.mp3",
       "audioHint": "Is this seat taken?",
-      "tags": ["電車", "バス"],
+      "tags": [
+        "電車",
+        "バス"
+      ],
       "difficulty": 2
     },
     {
       "id": "tra-10",
       "english": "Where can I buy a ticket?",
       "japanese": "切符はどこで買えますか？",
-      "registerNotes": "券売機は ticket machine。最近はカードやスマホのタッチだけで乗れる都市も多いです。",
+      "registerNotes": "券売機は ticket machine。オークランドの AT HOP カードのように、カードやスマホのタッチで乗れる街も多いです。",
       "audio": "audio/en/tra-10.mp3",
       "audioHint": "Where can I buy a ticket?",
-      "tags": ["切符"],
+      "tags": [
+        "切符"
+      ],
       "difficulty": 1
     }
   ]

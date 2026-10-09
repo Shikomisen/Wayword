@@ -3,7 +3,7 @@
   "id": "checkin",
   "title": "ホテルのチェックイン",
   "category": "hotel",
-  "setting": "長いフライトのあと、予約していたホテルにやっと到着。フロントに向かいます。",
+  "setting": "長いフライトのあと、予約していたホテルにやっと到着。フロント（reception）に向かいます。",
   "start": "n1",
   "nodes": {
     "n1": {
@@ -135,9 +135,9 @@
         },
         {
           "quality": "good",
-          "english": "Thank you. Where is the elevator?",
+          "english": "Thank you. Where's the lift?",
           "japanese": "ありがとう。エレベーターはどこですか？",
-          "feedback": "お礼のあとに質問を続けるのも自然です。イギリスでは lift とも言います。",
+          "feedback": "お礼のあとに質問を続けるのも自然です。ニュージーランドやイギリスでは、エレベーターを lift と言います（アメリカでは elevator）。",
           "next": "end"
         },
         {

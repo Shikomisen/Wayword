@@ -83,9 +83,11 @@ for (const [code, lang] of Object.entries(registry.languages)) {
 // Audio paths must be unique across every course, not just within one.
 const seenAudio = new Set();
 
-// Word decks: the parts of speech and verb forms the interface can name.
-const POS = ['noun', 'verb', 'i-adjective', 'na-adjective', 'adverb', 'pronoun', 'question'];
-const FORMS = ['masu', 'te'];
+// Word decks: every part of speech and word form any course declares (its
+// manifest's `words`), each of which needs an interface string.
+const POS = new Set();
+const FORMS = new Set();
+const REGISTERS = ['polite', 'casual'];
 
 for (const course of registry.courses.filter((c) => c.manifest && existsSync(resolve(ROOT, c.manifest)))) {
   validateCourse(course);
@@ -112,6 +114,18 @@ function validateCourse(course) {
 
   const fields = manifest.fields || {};
   const target = fields.target;
+
+  // What words in this course can be: parts of speech, word forms, and the
+  // forms every verb must show (Japanese: ます and て; English: none yet).
+  const words = manifest.words || { pos: [], forms: [], verbForms: [] };
+  if ((manifest.decks || []).some((d) => d.kind === 'words')) {
+    check(`${course.id}: manifest declares its parts of speech`, Array.isArray(manifest.words?.pos) && manifest.words.pos.length > 0);
+  }
+  for (const p of words.pos || []) POS.add(p);
+  for (const f of words.forms || []) FORMS.add(f);
+  for (const f of words.verbForms || []) check(`${course.id}: required verb form "${f}" is a declared form`, (words.forms || []).includes(f));
+  // A course whose default register is polite or casual labels every sentence.
+  const usesRegister = REGISTERS.includes(manifest.register);
 
   // Card ids only need to be unique within a course: each course has its own storage.
   const seenIds = new Set();
@@ -202,16 +216,20 @@ function validateCourse(course) {
 
     if (kind === 'word') {
       wordIds.add(item.id);
-      check(`${item.id}: part of speech is one the interface names`, POS.includes(item.pos), item.pos);
-      if (item.pos === 'verb') check(`${item.id}: verb has its ます and て forms`, FORMS.every((f) => item.forms?.[f]));
+      check(`${item.id}: part of speech is one the course declares`, (words.pos || []).includes(item.pos), item.pos);
+      if (item.pos === 'verb' && (words.verbForms || []).length) {
+        check(`${item.id}: verb has its ${words.verbForms.join(' and ')} forms`, words.verbForms.every((f) => item.forms?.[f]));
+      }
       for (const [key, value] of Object.entries(item.forms || {})) {
-        check(`${item.id}: form "${key}" is one the interface names`, FORMS.includes(key), key);
+        check(`${item.id}: form "${key}" is one the course declares`, (words.forms || []).includes(key), key);
         if (fields.ruby) checkRuby(`${item.id}/${key}`, value, rubyText(value));
         if (hasKanji(rubyText(value))) check(`${item.id}/${key}: kanji carry furigana`, /\{[^|]+\|/.test(value));
       }
       if (item.usage !== undefined) check(`${item.id}: usage is non-empty text`, typeof item.usage === 'string' && item.usage.length > 0);
     } else {
-      check(`${item.id}: register is polite or casual`, ['polite', 'casual'].includes(item.register), item.register);
+      if (usesRegister || item.register !== undefined) {
+        check(`${item.id}: register is polite or casual`, REGISTERS.includes(item.register), item.register);
+      }
       // The chunks are the sentence cut into pieces — together, exactly the sentence.
       if (check(`${item.id}: has chunks`, Array.isArray(item.chunks) && item.chunks.length > 1)) {
         const rebuilt = item.chunks.map((c) => rubyText(c.t)).join('');
@@ -260,11 +278,15 @@ function validateCourse(course) {
     for (const f of ['connector', 'gloss', 'title', 'pattern', 'explanation', 'natural', 'stiff']) {
       check(`${entry.id}: has ${f}`, typeof lesson[f] === 'string' && lesson[f].length > 0);
     }
-    // The prose is read by someone still learning to read: every kanji gets its reading.
-    for (const f of ['explanation', 'natural', 'stiff']) {
-      const bare = String(lesson[f] || '').replace(/\{[^|{}]+\|[^{}]+\}/g, '');
-      check(`${entry.id}: ${f} gives every kanji a reading`, !hasKanji(bare), bare.match(/[㐀-鿿豈-﫿々]/u)?.[0]);
-      checkRuby(`${entry.id}/${f}`, lesson[f], rubyText(lesson[f]));
+    // In a course whose target has furigana, the prose quotes it to someone
+    // still learning to read: every kanji gets its reading. (In the English
+    // course the prose is the learner's own Japanese, which needs none.)
+    if (fields.ruby) {
+      for (const f of ['explanation', 'natural', 'stiff']) {
+        const bare = String(lesson[f] || '').replace(/\{[^|{}]+\|[^{}]+\}/g, '');
+        check(`${entry.id}: ${f} gives every kanji a reading`, !hasKanji(bare), bare.match(/[㐀-鿿豈-﫿々]/u)?.[0]);
+        checkRuby(`${entry.id}/${f}`, lesson[f], rubyText(lesson[f]));
+      }
     }
     check(`${entry.id}: 3–5 examples`, lesson.examples?.length >= 3 && lesson.examples.length <= 5, String(lesson.examples?.length));
 

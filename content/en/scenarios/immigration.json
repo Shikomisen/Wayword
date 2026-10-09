@@ -3,7 +3,7 @@
   "id": "immigration",
   "title": "入国審査",
   "category": "airport",
-  "setting": "アメリカの空港に到着。長い列がようやく進み、入国審査であなたの番が来ました。",
+  "setting": "オークランド空港に到着。長い列がようやく進み、入国審査であなたの番が来ました。",
   "start": "n1",
   "nodes": {
     "n1": {
@@ -29,7 +29,7 @@
         {
           "quality": "awkward",
           "english": "Thank you.",
-          "japanese": "ありがとうございます。",
+          "japanese": "（ありがとう）",
           "feedback": "失礼ではありませんが、まだ何もしてもらっていない段階なので少しちぐはぐです。あいさつで返しましょう。",
           "next": "n2"
         }
@@ -59,7 +59,7 @@
           "quality": "wrong",
           "english": "I'm a sightseeing.",
           "japanese": "（わたしは観光という人です）",
-          "feedback": "I'm a ... は「わたしは〜という人です」の形。I'm here for sightseeing. か、Sightseeing. だけにしましょう。",
+          "feedback": "I'm a ... は「わたしは〜という人です」の形。I'm here for sightseeing. か、Sightseeing. だけで答えましょう。",
           "next": "n3"
         }
       ]
@@ -79,16 +79,16 @@
         },
         {
           "quality": "good",
-          "english": "One week.",
-          "japanese": "1週間です。",
+          "english": "Two weeks.",
+          "japanese": "2週間です。",
           "feedback": "短く答えるのも自然です。",
           "next": "n4"
         },
         {
           "quality": "wrong",
-          "english": "Since one week.",
-          "japanese": "（1週間前から）",
-          "feedback": "since は「〜以来」なので、もう1週間ここにいるような意味になってしまいます。期間は for で。",
+          "english": "Since two weeks.",
+          "japanese": "（2週間前から）",
+          "feedback": "since は「〜以来」なので、もう2週間ここにいるような意味になってしまいます。期間は for で。",
           "next": "n4"
         }
       ]
@@ -102,37 +102,66 @@
       "options": [
         {
           "quality": "good",
-          "english": "At the Grand Hotel, on Fifth Avenue.",
-          "japanese": "5番街のグランドホテルです。",
-          "feedback": "ホテル名と場所。これ以上ない答えです。予約確認をすぐ見せられるようにしておくとさらに安心です。",
-          "next": "n5"
+          "english": "At the Harbour View Hotel, on Queen Street.",
+          "japanese": "クイーン通りのハーバービュー・ホテルです。",
+          "feedback": "ホテル名と場所。これ以上ない答えです。予約確認をすぐ見せられるようにしておくと、さらに安心です。",
+          "next": "n5f"
         },
         {
           "phraseId": "air-04",
           "quality": "good",
-          "feedback": "十分な答えです。ホテル名まで言えればもっと確実です。",
-          "next": "n5"
+          "feedback": "十分な答えです。ホテル名まで言えれば、もっと確実です。",
+          "next": "n5f"
         },
         {
           "quality": "wrong",
           "english": "I don't know yet.",
-          "japanese": "まだわかりません。",
+          "japanese": "（まだ決めていません）",
           "feedback": "滞在先が決まっていないと、別室で詳しく聞かれる原因になります。最初の1泊分の住所は必ず用意しておきましょう。",
+          "next": "n5f"
+        }
+      ]
+    },
+    "n5f": {
+      "speaker": "officer",
+      "english": "Are you carrying any food?",
+      "japanese": "食べ物は持っていますか？",
+      "audio": "audio/en/scenario/immigration-n5f.mp3",
+      "audioHint": "Are you carrying any food?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Yes, some snacks. I declared them on my card.",
+          "japanese": "はい、お菓子を少し。入国カードで申告しました。",
+          "feedback": "ニュージーランドは食べ物の持ち込みにとても厳しい国。正直に申告すれば、ほとんどの場合問題ありません。",
+          "next": "n5"
+        },
+        {
+          "phraseId": "air-07",
+          "quality": "good",
+          "feedback": "何も持っていないなら、これで。うっかり忘れた食べ物がないか、カバンを確認しておきましょう。",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "english": "No food. Only rice crackers.",
+          "japanese": "（食べ物はありません。おせんべいだけです）",
+          "feedback": "おせんべいも食べ物です！持っているなら必ず申告を。申告漏れは高額の罰金になることがあります。",
           "next": "n5"
         }
       ]
     },
     "n5": {
       "speaker": "officer",
-      "english": "Is this your first time in the United States?",
-      "japanese": "アメリカは初めてですか？",
+      "english": "Is this your first time in New Zealand?",
+      "japanese": "ニュージーランドは初めてですか？",
       "audio": "audio/en/scenario/immigration-n5.mp3",
-      "audioHint": "Is this your first time in the United States?",
+      "audioHint": "Is this your first time in New Zealand?",
       "options": [
         {
           "quality": "good",
           "english": "Yes, it is.",
-          "japanese": "はい、初めてです。",
+          "japanese": "はい、そうです。",
           "feedback": "Yes. だけより丁寧で自然です。",
           "next": "n6"
         },
@@ -146,7 +175,7 @@
         {
           "phraseId": "gre-09",
           "quality": "awkward",
-          "feedback": "聞き取れなかったなら正直に言うのは正解です。ただ、Could you say that again? とお願いしたほうが、もう一度ゆっくり聞いてもらいやすくなります。",
+          "feedback": "聞き取れなかったなら正直に言うのは正解です。ただ、Could you say that again? とお願いしたほうが、会話が先に進みます。",
           "next": "n6"
         }
       ]
@@ -167,8 +196,8 @@
         {
           "quality": "awkward",
           "english": "Thanks, you too.",
-          "japanese": "ありがとう、あなたも。",
-          "feedback": "Have a nice day! への返事なら完璧ですが、Enjoy your stay. は旅行者向けの言葉なので you too は少しちぐはぐです。Thank you! だけで。",
+          "japanese": "（ありがとう、あなたも）",
+          "feedback": "Have a nice day! への返事なら完璧ですが、Enjoy your stay. は旅行者向けの言葉なので you too は合いません。",
           "next": "end"
         },
         {
@@ -182,7 +211,7 @@
     "end": {
       "speaker": "narration",
       "english": "",
-      "japanese": "入国審査を通過しました。聞かれることはほぼ毎回同じ — 目的、期間、滞在先。この3つの答えを準備しておけば、もう怖くありません。",
+      "japanese": "入国審査を通過しました。聞かれることはほぼ毎回同じ — 目的、期間、滞在先、そしてニュージーランドでは食べ物。この4つの答えを準備しておけば、落ち着いて通過できます。",
       "end": true,
       "options": []
     }

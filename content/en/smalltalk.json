@@ -3,7 +3,7 @@
   "id": "smalltalk",
   "title": "雑談",
   "order": 10,
-  "description": "ちょっとした会話ができると、旅の思い出がぐっと増えます。まずは聞かれやすい質問への答えから。",
+  "description": "ちょっとした会話ができると、毎日がぐっと楽しくなります。まずは聞かれやすい質問への答えから。",
   "phrases": [
     {
       "id": "sma-01",
@@ -12,7 +12,10 @@
       "registerNotes": "Where are you from? への答え。都市名を足すと話が広がります（I'm from Osaka, in Japan.）。",
       "audio": "audio/en/sma-01.mp3",
       "audioHint": "I'm from Japan.",
-      "tags": ["自己紹介", "必須"],
+      "tags": [
+        "自己紹介",
+        "必須"
+      ],
       "difficulty": 1
     },
     {
@@ -22,7 +25,9 @@
       "registerNotes": "英語ではファーストネーム（下の名前）で呼び合うのが普通です。Call me Ken. とも言えます。",
       "audio": "audio/en/sma-02.mp3",
       "audioHint": "My name is Ken.",
-      "tags": ["自己紹介"],
+      "tags": [
+        "自己紹介"
+      ],
       "difficulty": 1
     },
     {
@@ -32,7 +37,10 @@
       "registerNotes": "返事は Nice to meet you, too. 握手をすることも多いです。",
       "audio": "audio/en/sma-03.mp3",
       "audioHint": "Nice to meet you.",
-      "tags": ["自己紹介", "必須"],
+      "tags": [
+        "自己紹介",
+        "必須"
+      ],
       "difficulty": 1
     },
     {
@@ -42,7 +50,9 @@
       "registerNotes": "相手がおすすめを教えてくれるきっかけになります。",
       "audio": "audio/en/sma-04.mp3",
       "audioHint": "It's my first time here.",
-      "tags": ["会話"],
+      "tags": [
+        "会話"
+      ],
       "difficulty": 2
     },
     {
@@ -52,7 +62,10 @@
       "registerNotes": "地元の人に聞くと、ガイドブックにない情報がもらえます。",
       "audio": "audio/en/sma-05.mp3",
       "audioHint": "What do you recommend around here?",
-      "tags": ["会話", "観光"],
+      "tags": [
+        "会話",
+        "観光"
+      ],
       "difficulty": 3
     },
     {
@@ -62,7 +75,10 @@
       "registerNotes": "先に言っておくと、相手もゆっくりわかりやすく話してくれます。",
       "audio": "audio/en/sma-06.mp3",
       "audioHint": "I'm still learning English.",
-      "tags": ["会話", "言葉"],
+      "tags": [
+        "会話",
+        "言葉"
+      ],
       "difficulty": 2
     },
     {
@@ -73,17 +89,22 @@
       "pitfallNote": "Please photo. では通じにくいです。take a picture を使いましょう。",
       "audio": "audio/en/sma-07.mp3",
       "audioHint": "Could you take a picture of us?",
-      "tags": ["観光", "お願い"],
+      "tags": [
+        "観光",
+        "お願い"
+      ],
       "difficulty": 2
     },
     {
       "id": "sma-08",
       "english": "That sounds great!",
       "japanese": "いいですね！",
-      "registerNotes": "相手の提案や話に共感する時の万能フレーズです。",
+      "registerNotes": "相手の提案や話に共感する時の万能フレーズです。ニュージーランドでは、くだけて Sweet as!（いいね！）とも言います。",
       "audio": "audio/en/sma-08.mp3",
       "audioHint": "That sounds great!",
-      "tags": ["相づち"],
+      "tags": [
+        "相づち"
+      ],
       "difficulty": 2
     },
     {
@@ -94,7 +115,9 @@
       "pitfallNote": "What do you do? は「今何をしているの？」ではなく、職業の質問です。",
       "audio": "audio/en/sma-09.mp3",
       "audioHint": "What do you do?",
-      "tags": ["会話"],
+      "tags": [
+        "会話"
+      ],
       "difficulty": 3
     },
     {
@@ -104,7 +127,10 @@
       "registerNotes": "会話を終える時の感じのいい締めくくりです。",
       "audio": "audio/en/sma-10.mp3",
       "audioHint": "It was nice talking to you.",
-      "tags": ["会話", "別れ"],
+      "tags": [
+        "会話",
+        "別れ"
+      ],
       "difficulty": 3
     }
   ]

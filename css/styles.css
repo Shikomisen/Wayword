@@ -598,11 +598,15 @@ textarea.text-input { resize: vertical; min-height: 64px; }
 
 /* ---------- connectors ---------- */
 
+/* The font comes from the element's lang (the course's own :lang rule). */
 .connector-mark {
   flex: none; min-width: 4.2em; text-align: center;
-  font-family: var(--font-jp); font-size: 1.35rem; font-weight: 700; color: var(--accent);
+  font-size: 1.35rem; font-weight: 700; color: var(--accent);
 }
-.connector-title { font-family: var(--font-jp); font-size: 2.4rem; color: var(--accent); }
+/* An English pattern ("Do you have…?") is longer than a Japanese connector. */
+.connector-mark:lang(en) { min-width: 6.5em; font-size: 1rem; }
+.connector-title { font-size: 2.4rem; color: var(--accent); }
+.connector-title:lang(en) { font-size: 2rem; letter-spacing: -0.01em; }
 .lesson-pattern {
   display: flex; flex-direction: column; gap: 2px; margin: 4px 0 16px; padding: 10px 12px;
   background: var(--bg-sunk); border-radius: 10px; font-size: 1.05rem;

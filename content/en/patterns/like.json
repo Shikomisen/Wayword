@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "pat-like",
+  "connector": "I'd like…",
+  "gloss": "〜をお願いします（注文の基本）",
+  "title": "I'd like… — 〜をお願いします（注文の基本）",
+  "pattern": "I'd like ＋ ほしいもの ＋ , please.",
+  "explanation": "I'd like は I would like の短縮形で、「〜がほしいです」をていねいに言う形です。カフェやレストランの注文、お店でのお願いなど、いちばん使いやすい頼み方。後ろに名詞を置けば「〜をください」、I'd like to ＋ 動詞なら「〜したいのですが」になります（I'd like to try this on.）。",
+  "natural": "注文、予約、お願いごと全般。店員さんにも初対面の人にも、どんな相手にも失礼になりません。最後に please を付けると、さらに感じよく聞こえます。",
+  "stiff": "I want ... は文法的には正しくても、要求が強く子どもっぽく聞こえます。I like ... は「〜が好き」という意味で、注文にはなりません。",
+  "examples": [
+    {
+      "id": "px-like-1",
+      "english": "I'd like a flat white, please.",
+      "japanese": "フラットホワイトをお願いします。",
+      "chunks": [
+        {
+          "t": "I'd like "
+        },
+        {
+          "t": "a flat white, ",
+          "w": "w-flat-white"
+        },
+        {
+          "t": "please."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "I'd like",
+        "after": " a flat white, please.",
+        "options": [
+          "I'd like",
+          "I want",
+          "I like"
+        ],
+        "why": "注文やお願いには I'd like。I want は強く聞こえ、I like は「〜が好き」の意味になります。"
+      },
+      "audio": "audio/en/patterns/px-like-1.mp3",
+      "tags": [
+        "フレーズの型",
+        "I'd like…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-like-2",
+      "english": "I'd like the fish and chips, please.",
+      "japanese": "フィッシュ・アンド・チップスをお願いします。",
+      "chunks": [
+        {
+          "t": "I'd like "
+        },
+        {
+          "t": "the fish and chips, ",
+          "w": "w-fish-and-chips"
+        },
+        {
+          "t": "please."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "I'd",
+        "after": " like the fish and chips, please.",
+        "options": [
+          "I'd",
+          "I",
+          "I'm"
+        ],
+        "why": "I'd は I would の短縮形。I like だと「好きです」、I'm like は意味が通りません。"
+      },
+      "audio": "audio/en/patterns/px-like-2.mp3",
+      "tags": [
+        "フレーズの型",
+        "I'd like…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-like-3",
+      "english": "I'd like to try this on, please.",
+      "japanese": "これを試着したいのですが。",
+      "chunks": [
+        {
+          "t": "I'd like to "
+        },
+        {
+          "t": "try this on, ",
+          "w": "w-try-on"
+        },
+        {
+          "t": "please."
+        }
+      ],
+      "gap": {
+        "before": "I'd like ",
+        "answer": "to",
+        "after": " try this on, please.",
+        "options": [
+          "to",
+          "for",
+          "of"
+        ],
+        "why": "I'd like の後ろに動詞を続ける時は to を付けます（I'd like to ＋ 動詞）。"
+      },
+      "audio": "audio/en/patterns/px-like-3.mp3",
+      "tags": [
+        "フレーズの型",
+        "I'd like…"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "px-like-4",
+      "english": "We'd like two flat whites, please.",
+      "japanese": "フラットホワイトを2つお願いします。",
+      "chunks": [
+        {
+          "t": "We'd like "
+        },
+        {
+          "t": "two flat whites, ",
+          "w": "w-flat-white"
+        },
+        {
+          "t": "please."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "We'd",
+        "after": " like two flat whites, please.",
+        "options": [
+          "We'd",
+          "We",
+          "We're"
+        ],
+        "why": "We'd は We would の短縮形。2人以上で注文する時の形です。"
+      },
+      "audio": "audio/en/patterns/px-like-4.mp3",
+      "tags": [
+        "フレーズの型",
+        "I'd like…"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

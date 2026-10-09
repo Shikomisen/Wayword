@@ -3,7 +3,7 @@
   "id": "numbers",
   "title": "数字・時間・お金",
   "order": 2,
-  "description": "値段、時間、人数。旅先でいちばん聞き取れないと困るのは、実は数字です。",
+  "description": "値段、時間、人数。買い物でも移動でも、いちばん聞き取れないと困るのは、実は数字です。",
   "phrases": [
     {
       "id": "num-01",
@@ -12,18 +12,24 @@
       "registerNotes": "指さしながら言えば十分通じます。複数のものなら How much are these?",
       "audio": "audio/en/num-01.mp3",
       "audioHint": "How much is this?",
-      "tags": ["値段", "必須"],
+      "tags": [
+        "値段",
+        "必須"
+      ],
       "difficulty": 1
     },
     {
       "id": "num-02",
       "english": "It's twenty dollars.",
       "japanese": "20ドルです。",
-      "registerNotes": "値段は数字だけで言うことも多いです（Twenty.）。$19.99 は nineteen ninety-nine と読みます。",
+      "registerNotes": "ニュージーランドの通貨もドル（NZドル）。値段は数字だけで言うことも多いです（Twenty.）。$19.99 は nineteen ninety-nine と読みます。",
       "pitfallNote": "fifteen（15）と fifty（50）、thirteen（13）と thirty（30）は聞き間違えやすい組み合わせ。自信がなければ聞き返すか、書いてもらいましょう。",
       "audio": "audio/en/num-02.mp3",
       "audioHint": "It's twenty dollars.",
-      "tags": ["値段", "聞き取り"],
+      "tags": [
+        "値段",
+        "聞き取り"
+      ],
       "difficulty": 1
     },
     {
@@ -33,7 +39,9 @@
       "registerNotes": "知らない人に聞くなら Excuse me, do you know what time it is? のほうが丁寧です。",
       "audio": "audio/en/num-03.mp3",
       "audioHint": "What time is it?",
-      "tags": ["時間"],
+      "tags": [
+        "時間"
+      ],
       "difficulty": 1
     },
     {
@@ -43,7 +51,10 @@
       "registerNotes": "時刻は数字を並べて言うのが一般的です。half past two と言うこともあります。",
       "audio": "audio/en/num-04.mp3",
       "audioHint": "It's two thirty.",
-      "tags": ["時間", "聞き取り"],
+      "tags": [
+        "時間",
+        "聞き取り"
+      ],
       "difficulty": 2
     },
     {
@@ -53,7 +64,10 @@
       "registerNotes": "open を close に変えれば閉店時間。お店、美術館、レストランで使えます。",
       "audio": "audio/en/num-05.mp3",
       "audioHint": "What time does it open?",
-      "tags": ["時間", "お店"],
+      "tags": [
+        "時間",
+        "お店"
+      ],
       "difficulty": 2
     },
     {
@@ -63,7 +77,10 @@
       "registerNotes": "曜日の前には on を付けます。祝日は on holidays。",
       "audio": "audio/en/num-06.mp3",
       "audioHint": "Is it open on Sunday?",
-      "tags": ["時間", "曜日"],
+      "tags": [
+        "時間",
+        "曜日"
+      ],
       "difficulty": 2
     },
     {
@@ -73,7 +90,10 @@
       "registerNotes": "「数＋もの＋please」は最も簡単で確実な頼み方。どんな場面でも使えます。",
       "audio": "audio/en/num-07.mp3",
       "audioHint": "Two tickets, please.",
-      "tags": ["数", "必須"],
+      "tags": [
+        "数",
+        "必須"
+      ],
       "difficulty": 1
     },
     {
@@ -83,17 +103,23 @@
       "registerNotes": "数字や住所、名前が聞き取れない時の最終手段。とても役に立ちます。",
       "audio": "audio/en/num-08.mp3",
       "audioHint": "Could you write it down for me?",
-      "tags": ["聞き返し", "数"],
+      "tags": [
+        "聞き返し",
+        "数"
+      ],
       "difficulty": 2
     },
     {
       "id": "num-09",
       "english": "Is tax included?",
       "japanese": "税込みですか？",
-      "registerNotes": "アメリカでは表示価格に税金が含まれておらず、レジで加算されるのが普通です。思ったより高くなっても驚かないように。",
+      "registerNotes": "ニュージーランドでは、店頭の値段に消費税（GST 15%）が含まれているので、聞くことはあまりありません。アメリカやカナダでは、レジで税金が加算されるのが普通です。",
       "audio": "audio/en/num-09.mp3",
       "audioHint": "Is tax included?",
-      "tags": ["値段", "税金"],
+      "tags": [
+        "値段",
+        "税金"
+      ],
       "difficulty": 3
     },
     {
@@ -103,7 +129,9 @@
       "registerNotes": "移動時間にも待ち時間にも使えます。About ten minutes. のように答えが返ってきます。",
       "audio": "audio/en/num-10.mp3",
       "audioHint": "How long does it take?",
-      "tags": ["時間"],
+      "tags": [
+        "時間"
+      ],
       "difficulty": 2
     },
     {
@@ -113,18 +141,22 @@
       "registerNotes": "日付は the fifteenth のように序数で言います。March 15th / the 15th of March のどちらの順番でもOK。",
       "audio": "audio/en/num-11.mp3",
       "audioHint": "I'm leaving on the fifteenth.",
-      "tags": ["日付"],
+      "tags": [
+        "日付"
+      ],
       "difficulty": 3
     },
     {
       "id": "num-12",
       "english": "Can I get change for a twenty?",
       "japanese": "20ドル札をくずしてもらえますか？",
-      "registerNotes": "a twenty は「20ドル札」のこと。小銭が必要な時、チップ用に細かいお札がほしい時に。",
+      "registerNotes": "a twenty は「20ドル札」のこと。駐車場や自動販売機などで、小銭が必要な時に。",
       "pitfallNote": "change は「おつり」と「小銭・両替」の両方の意味。お金の話で change と言われたら、まず「交換」ではなく「小銭」です。",
       "audio": "audio/en/num-12.mp3",
       "audioHint": "Can I get change for a twenty?",
-      "tags": ["お金"],
+      "tags": [
+        "お金"
+      ],
       "difficulty": 4
     }
   ]

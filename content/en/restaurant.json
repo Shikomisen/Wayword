@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "id": "restaurant",
-  "title": "レストラン・カフェ",
+  "title": "カフェ・レストラン",
   "order": 7,
-  "description": "席に着くまで、注文、会計まで。席で会計してチップを払うなど、日本と違う習慣も押さえておきましょう。",
+  "description": "注文から会計まで。ニュージーランドのカフェは、カウンターで先に注文して払うのが普通で、チップもいりません。",
   "phrases": [
     {
       "id": "res-01",
@@ -13,17 +13,22 @@
       "pitfallNote": "We are two. は不自然です。人数は Two. か A table for two. で。",
       "audio": "audio/en/res-01.mp3",
       "audioHint": "A table for two, please.",
-      "tags": ["入店", "必須"],
+      "tags": [
+        "入店",
+        "必須"
+      ],
       "difficulty": 1
     },
     {
       "id": "res-02",
       "english": "Can I see the menu, please?",
       "japanese": "メニューを見せてもらえますか？",
-      "registerNotes": "飲み物だけのメニューは drink menu、デザートは dessert menu。",
+      "registerNotes": "Could we get a menu? や Can I get the menu? も自然です。飲み物だけのメニューは drinks menu。",
       "audio": "audio/en/res-02.mp3",
       "audioHint": "Can I see the menu, please?",
-      "tags": ["注文"],
+      "tags": [
+        "注文"
+      ],
       "difficulty": 1
     },
     {
@@ -33,28 +38,36 @@
       "registerNotes": "迷ったら店員さんに聞いてみましょう。会話のきっかけにもなります。",
       "audio": "audio/en/res-03.mp3",
       "audioHint": "What do you recommend?",
-      "tags": ["注文"],
+      "tags": [
+        "注文"
+      ],
       "difficulty": 2
     },
     {
       "id": "res-04",
       "english": "I'll have the chicken salad.",
       "japanese": "チキンサラダにします。",
-      "registerNotes": "注文の決まり文句は I'll have ...。Can I get ...? も自然です。",
+      "registerNotes": "注文の決まり文句は I'll have ...。I'd like ... や Can I have ...? も自然です（「フレーズの型」で練習できます）。",
       "pitfallNote": "I want chicken salad. は失礼ではないものの、ぶっきらぼうに聞こえやすい言い方です。",
       "audio": "audio/en/res-04.mp3",
       "audioHint": "I'll have the chicken salad.",
-      "tags": ["注文", "必須"],
+      "tags": [
+        "注文",
+        "必須"
+      ],
       "difficulty": 2
     },
     {
       "id": "res-05",
       "english": "Could I get some water?",
       "japanese": "お水をいただけますか？",
-      "registerNotes": "アメリカでは水は無料のことが多いですが、頼まないと出てこない店もあります。",
+      "registerNotes": "ニュージーランドのカフェでは、水はセルフサービスで置いてあることが多く、無料です。",
       "audio": "audio/en/res-05.mp3",
       "audioHint": "Could I get some water?",
-      "tags": ["注文", "飲み物"],
+      "tags": [
+        "注文",
+        "飲み物"
+      ],
       "difficulty": 1
     },
     {
@@ -65,29 +78,38 @@
       "pitfallNote": "「アレルギー」と日本語読みすると通じにくいです。allergy は「アラジー」と発音します。",
       "audio": "audio/en/res-06.mp3",
       "audioHint": "I'm allergic to peanuts.",
-      "tags": ["注文", "健康"],
+      "tags": [
+        "注文",
+        "健康"
+      ],
       "difficulty": 3
     },
     {
       "id": "res-07",
-      "english": "For here or to go?",
+      "english": "Eat in or takeaway?",
       "japanese": "店内でお召し上がりですか、お持ち帰りですか？",
-      "registerNotes": "カフェやファストフードで必ず聞かれる質問。For here. か To go. と答えるだけでOKです。",
-      "pitfallNote": "「テイクアウト」はアメリカでは少し不自然。To go, please. が自然です（イギリスでは takeaway）。",
+      "registerNotes": "カフェやファストフードで必ず聞かれる質問。Eat in, please. か Takeaway, please. と答えるだけでOKです。アメリカでは For here or to go? と聞かれます。",
+      "pitfallNote": "「テイクアウト」をそのまま言うより、ニュージーランドでは takeaway が自然です（アメリカでは to go）。",
       "audio": "audio/en/res-07.mp3",
-      "audioHint": "For here or to go?",
-      "tags": ["カフェ", "聞き取り"],
+      "audioHint": "Eat in or takeaway?",
+      "tags": [
+        "カフェ",
+        "聞き取り"
+      ],
       "difficulty": 2
     },
     {
       "id": "res-08",
-      "english": "Can we get the check, please?",
+      "english": "Can we get the bill, please?",
       "japanese": "お会計をお願いします。",
-      "registerNotes": "アメリカでは席で会計するのが普通です。イギリスでは the bill と言います。",
-      "pitfallNote": "日本のようにレジへ行かず、テーブルで待ちましょう。チップは合計の15〜20%が目安です。",
+      "registerNotes": "ニュージーランドでは、カフェは先にカウンターで注文して払うのが普通。レストランでも、帰りにレジで払うことが多いです。アメリカでは check と言います。",
+      "pitfallNote": "チップは基本的に不要です。アメリカの15〜20%の習慣とは違います。",
       "audio": "audio/en/res-08.mp3",
-      "audioHint": "Can we get the check, please?",
-      "tags": ["会計", "必須"],
+      "audioHint": "Can we get the bill, please?",
+      "tags": [
+        "会計",
+        "必須"
+      ],
       "difficulty": 2
     },
     {
@@ -97,18 +119,77 @@
       "registerNotes": "How was everything? と聞かれた時に。Great, thanks! だけでも十分です。",
       "audio": "audio/en/res-09.mp3",
       "audioHint": "Everything was delicious.",
-      "tags": ["会計", "感想"],
+      "tags": [
+        "会計",
+        "感想"
+      ],
       "difficulty": 2
     },
     {
       "id": "res-10",
       "english": "Can I get a refill?",
       "japanese": "おかわりをもらえますか？",
-      "registerNotes": "アメリカでは、ソフトドリンクやコーヒーのおかわり（refill）が無料の店も多いです。",
+      "registerNotes": "ニュージーランドでは、おかわりが無料の店はあまり多くありません。有料かどうか確認しましょう。",
       "audio": "audio/en/res-10.mp3",
       "audioHint": "Can I get a refill?",
-      "tags": ["飲み物"],
+      "tags": [
+        "飲み物"
+      ],
       "difficulty": 3
+    },
+    {
+      "id": "res-11",
+      "english": "I'd like a flat white, please.",
+      "japanese": "フラットホワイトをお願いします。",
+      "registerNotes": "I'd like ... は丁寧な注文の基本形。flat white はニュージーランド・オーストラリア生まれの、なめらかなミルク入りコーヒーです。",
+      "pitfallNote": "I want a flat white. は要求が強く聞こえがちです。注文には I'd like ... を。",
+      "tags": [
+        "注文",
+        "カフェ",
+        "必須"
+      ],
+      "difficulty": 1,
+      "audio": "audio/en/res-11.mp3",
+      "audioHint": "I'd like a flat white, please."
+    },
+    {
+      "id": "res-12",
+      "english": "Is this spicy?",
+      "japanese": "これは辛いですか？",
+      "registerNotes": "答えは It's a bit spicy.（少し辛い）や It's mild.（辛くない）。辛いのが苦手なら Not too spicy, please. と頼めます。",
+      "pitfallNote": "Does this spicy? は間違い。spicy は形容詞なので Is this spicy? です。",
+      "tags": [
+        "注文",
+        "必須"
+      ],
+      "difficulty": 1,
+      "audio": "audio/en/res-12.mp3",
+      "audioHint": "Is this spicy?"
+    },
+    {
+      "id": "res-13",
+      "english": "Can I have the fish and chips, please?",
+      "japanese": "フィッシュ・アンド・チップスをお願いします。",
+      "registerNotes": "Can I have ...? も注文の定番。名前がわからなければ、指さして Can I have this one, please? でも通じます。",
+      "tags": [
+        "注文"
+      ],
+      "difficulty": 1,
+      "audio": "audio/en/res-13.mp3",
+      "audioHint": "Can I have the fish and chips, please?"
+    },
+    {
+      "id": "res-14",
+      "english": "Do you have any vegetarian options?",
+      "japanese": "ベジタリアン向けのメニューはありますか？",
+      "registerNotes": "options は「選択肢」。vegan（完全菜食）、gluten-free（グルテンフリー）も、メニューの表示でよく見ます。",
+      "tags": [
+        "注文",
+        "アレルギー"
+      ],
+      "difficulty": 2,
+      "audio": "audio/en/res-14.mp3",
+      "audioHint": "Do you have any vegetarian options?"
     }
   ]
 }

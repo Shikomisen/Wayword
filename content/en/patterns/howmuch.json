@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "pat-howmuch",
+  "connector": "How much…?",
+  "gloss": "〜はいくらですか",
+  "title": "How much…? — 〜はいくらですか",
+  "pattern": "How much is ＋ 1つのもの ？／ How much are ＋ 複数のもの ？",
+  "explanation": "How much is ...? は値段を聞く基本の形。1つなら is、2つ以上なら are を使います：How much is this?（これはいくら？）／ How much are these?（これらはいくら？）。全部でいくらかを聞くなら How much is it altogether?",
+  "natural": "指さしながら How much is this? と言うのが、いちばん簡単で確実。答えは It's twenty dollars. や They're ten each.（1つ10ドル）などです。",
+  "stiff": "How much? だけでも通じますが、少しぶっきらぼうです。How much does this cost? も正しいですが、お店では How much is this? のほうが短くて自然です。",
+  "examples": [
+    {
+      "id": "px-howmuch-1",
+      "english": "How much is this jacket?",
+      "japanese": "このジャケットはいくらですか？",
+      "chunks": [
+        {
+          "t": "How much "
+        },
+        {
+          "t": "is "
+        },
+        {
+          "t": "this jacket?",
+          "w": "w-jacket"
+        }
+      ],
+      "gap": {
+        "before": "How much ",
+        "answer": "is",
+        "after": " this jacket?",
+        "options": [
+          "is",
+          "are",
+          "does"
+        ],
+        "why": "1つのものには is を使います。"
+      },
+      "audio": "audio/en/patterns/px-howmuch-1.mp3",
+      "tags": [
+        "フレーズの型",
+        "How much…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-howmuch-2",
+      "english": "How much are these shoes?",
+      "japanese": "この靴はいくらですか？",
+      "chunks": [
+        {
+          "t": "How much "
+        },
+        {
+          "t": "are "
+        },
+        {
+          "t": "these shoes?",
+          "w": "w-shoes"
+        }
+      ],
+      "gap": {
+        "before": "How much ",
+        "answer": "are",
+        "after": " these shoes?",
+        "options": [
+          "are",
+          "is",
+          "do"
+        ],
+        "why": "shoes は複数形なので are を使います。"
+      },
+      "audio": "audio/en/patterns/px-howmuch-2.mp3",
+      "tags": [
+        "フレーズの型",
+        "How much…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-howmuch-3",
+      "english": "How much is the flat white?",
+      "japanese": "フラットホワイトはいくらですか？",
+      "chunks": [
+        {
+          "t": "How much "
+        },
+        {
+          "t": "is "
+        },
+        {
+          "t": "the flat white?",
+          "w": "w-flat-white"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "How much",
+        "after": " is the flat white?",
+        "options": [
+          "How much",
+          "How many",
+          "What much"
+        ],
+        "why": "値段は How much。How many は「いくつ」（数）を聞く時の形です。"
+      },
+      "audio": "audio/en/patterns/px-howmuch-3.mp3",
+      "tags": [
+        "フレーズの型",
+        "How much…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "px-howmuch-4",
+      "english": "How much are the scones?",
+      "japanese": "スコーンはいくらですか？",
+      "chunks": [
+        {
+          "t": "How much "
+        },
+        {
+          "t": "are "
+        },
+        {
+          "t": "the scones?",
+          "w": "w-scone"
+        }
+      ],
+      "gap": {
+        "before": "How much are the ",
+        "answer": "scones",
+        "after": "?",
+        "options": [
+          "scones",
+          "scone",
+          "a scone"
+        ],
+        "why": "are のあとは複数形（scones）。1つの値段なら How much is a scone? です。"
+      },
+      "audio": "audio/en/patterns/px-howmuch-4.mp3",
+      "tags": [
+        "フレーズの型",
+        "How much…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

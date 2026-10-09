@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "id": "words-cafe",
+  "title": "カフェ・食べ物",
+  "description": "カフェやレストランで注文するのに必要な単語。メニューの表示でもよく見ます。",
+  "items": [
+    {
+      "id": "w-menu",
+      "english": "menu",
+      "japanese": "メニュー",
+      "pos": "noun",
+      "audio": "audio/en/words/w-menu.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-order",
+      "english": "order",
+      "japanese": "注文する、注文",
+      "pos": "verb",
+      "registerNotes": "Are you ready to order?（ご注文はお決まりですか？）とよく聞かれます。",
+      "audio": "audio/en/words/w-order.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-flat-white",
+      "english": "flat white",
+      "japanese": "フラットホワイト（ミルク入りコーヒー）",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドやオーストラリアの定番。エスプレッソに、きめ細かいミルクを注いだコーヒーです。",
+      "audio": "audio/en/words/w-flat-white.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-long-black",
+      "english": "long black",
+      "japanese": "ロングブラック（ブラックコーヒー）",
+      "pos": "noun",
+      "registerNotes": "お湯にエスプレッソを注いだブラックコーヒー。アメリカーノに近い飲み物です。",
+      "audio": "audio/en/words/w-long-black.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-latte",
+      "english": "latte",
+      "japanese": "ラテ",
+      "pos": "noun",
+      "pitfallNote": "発音は「ラーテイ」に近く、「ラテ」と短く言うと通じにくいことがあります。",
+      "audio": "audio/en/words/w-latte.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-takeaway",
+      "english": "takeaway",
+      "japanese": "持ち帰り（の料理）",
+      "pos": "noun",
+      "registerNotes": "Eat in or takeaway? と聞かれます。中華やタイ料理の持ち帰りも a takeaway。",
+      "pitfallNote": "アメリカでは to go や takeout と言います。",
+      "audio": "audio/en/words/w-takeaway.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-eat-in",
+      "english": "eat in",
+      "japanese": "店内で食べる",
+      "pos": "phrase",
+      "registerNotes": "Eat in, please.（店内で）だけで答えになります。",
+      "audio": "audio/en/words/w-eat-in.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-spicy",
+      "english": "spicy",
+      "japanese": "辛い",
+      "pos": "adjective",
+      "registerNotes": "It's a bit spicy.（少し辛い）、very spicy（とても辛い）",
+      "pitfallNote": "hot も「辛い」に使いますが、「熱い」と紛らわしいので spicy が確実です。",
+      "audio": "audio/en/words/w-spicy.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-mild",
+      "english": "mild",
+      "japanese": "辛くない、マイルドな",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-mild.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sweet",
+      "english": "sweet",
+      "japanese": "甘い",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-sweet.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-vegetarian",
+      "english": "vegetarian",
+      "japanese": "ベジタリアンの（肉や魚を使わない）",
+      "pos": "adjective",
+      "registerNotes": "vegetarian options（ベジタリアン向けのメニュー）",
+      "audio": "audio/en/words/w-vegetarian.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-vegan",
+      "english": "vegan",
+      "japanese": "ヴィーガンの（動物性の食品を使わない）",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-vegan.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-gluten-free",
+      "english": "gluten-free",
+      "japanese": "グルテンフリーの",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-gluten-free.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-allergic",
+      "english": "allergic",
+      "japanese": "アレルギーがある",
+      "pos": "adjective",
+      "registerNotes": "I'm allergic to peanuts.（ピーナッツのアレルギーがあります）",
+      "pitfallNote": "「アレルギー」は英語で allergy（アラジー）。allergic は「アラージック」に近い発音です。",
+      "audio": "audio/en/words/w-allergic.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-dairy",
+      "english": "dairy",
+      "japanese": "乳製品",
+      "pos": "noun",
+      "registerNotes": "dairy-free（乳製品不使用）。ニュージーランドでは the dairy が「街角の小さな商店」という意味にもなります。",
+      "audio": "audio/en/words/w-dairy.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-fish-and-chips",
+      "english": "fish and chips",
+      "japanese": "フィッシュ・アンド・チップス",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドの定番。紙に包んで持ち帰ることが多いです。",
+      "audio": "audio/en/words/w-fish-and-chips.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pie",
+      "english": "pie",
+      "japanese": "パイ（ミートパイなど）",
+      "pos": "noun",
+      "registerNotes": "定番の軽食は mince and cheese pie（ひき肉とチーズのパイ）。",
+      "audio": "audio/en/words/w-pie.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-scone",
+      "english": "scone",
+      "japanese": "スコーン",
+      "pos": "noun",
+      "registerNotes": "cheese scone（チーズスコーン）もカフェの定番です。",
+      "audio": "audio/en/words/w-scone.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-toastie",
+      "english": "toastie",
+      "japanese": "ホットサンド",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドやオーストラリアで、焼いたサンドイッチのこと。",
+      "audio": "audio/en/words/w-toastie.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-water",
+      "english": "water",
+      "japanese": "水",
+      "pos": "noun",
+      "registerNotes": "数えられない名詞なので some water。グラス1杯なら a glass of water。",
+      "audio": "audio/en/words/w-water.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bill",
+      "english": "bill",
+      "japanese": "お会計、伝票",
+      "pos": "noun",
+      "registerNotes": "Can we get the bill, please?（お会計をお願いします）",
+      "pitfallNote": "アメリカでは check と言います。",
+      "audio": "audio/en/words/w-bill.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-counter",
+      "english": "counter",
+      "japanese": "カウンター",
+      "pos": "noun",
+      "registerNotes": "Order at the counter.（カウンターで注文してください）",
+      "audio": "audio/en/words/w-counter.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-table-number",
+      "english": "table number",
+      "japanese": "（注文の）番号札",
+      "pos": "noun",
+      "registerNotes": "注文して払うと番号札を渡され、席まで料理を運んでもらえます。",
+      "audio": "audio/en/words/w-table-number.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-napkin",
+      "english": "napkin",
+      "japanese": "ナプキン",
+      "pos": "noun",
+      "registerNotes": "serviette とも言います。",
+      "audio": "audio/en/words/w-napkin.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tomato-sauce",
+      "english": "tomato sauce",
+      "japanese": "ケチャップ",
+      "pos": "noun",
+      "pitfallNote": "ニュージーランドやオーストラリアでは、ケチャップを tomato sauce と言います。",
+      "audio": "audio/en/words/w-tomato-sauce.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

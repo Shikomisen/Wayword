@@ -223,9 +223,9 @@
   "connectors.title": "つなぐ言葉",
   "connectors.lede": "文と文をつないで、会話にする言葉。「そして」「でも」「だから」「たら」など、一つずつ説明と、音声つきの例文と、練習問題があります。",
   "connectors.mixed": "まとめて練習",
-  "connectors.start": "つなぐ言葉を始める",
+  "connectors.start": "最初のレッスンを始める",
   "connectors.practisedCount": "{total}個中{n}個を練習済み",
-  "lesson.back": "← つなぐ言葉",
+  "lesson.back": "← {title}",
   "lesson.pattern": "形",
   "lesson.natural": "自然な場面",
   "lesson.stiff": "堅い・不自然になる場面",
@@ -274,5 +274,8 @@
   "data.undone": "元に戻しました",
   "today.backupTitle": "学習データをバックアップ",
   "today.backupNever": "このブラウザの中にしかありません — まだバックアップしていません",
-  "today.backupOld": "このブラウザの中にしかありません — 最後のバックアップ：{when}"
+  "today.backupOld": "このブラウザの中にしかありません — 最後のバックアップ：{when}",
+  "pos.adjective": "形容詞",
+  "pos.phrase": "フレーズ",
+  "speaker.driver": "運転手"
 }

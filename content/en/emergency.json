@@ -12,17 +12,23 @@
       "registerNotes": "大きな声で。まず周りの人に気づいてもらうことが目的です。",
       "audio": "audio/en/eme-01.mp3",
       "audioHint": "Help!",
-      "tags": ["緊急", "必須"],
+      "tags": [
+        "緊急",
+        "必須"
+      ],
       "difficulty": 1
     },
     {
       "id": "eme-02",
       "english": "Please call an ambulance.",
       "japanese": "救急車を呼んでください。",
-      "registerNotes": "緊急番号はアメリカ・カナダが 911、イギリスが 999（112 も可）、オーストラリアが 000 です。",
+      "registerNotes": "ニュージーランドの緊急番号は 111（警察・消防・救急共通）。アメリカ・カナダは 911、イギリスは 999、オーストラリアは 000 です。",
       "audio": "audio/en/eme-02.mp3",
       "audioHint": "Please call an ambulance.",
-      "tags": ["緊急", "必須"],
+      "tags": [
+        "緊急",
+        "必須"
+      ],
       "difficulty": 2
     },
     {
@@ -32,7 +38,9 @@
       "registerNotes": "体調不良を伝えるいちばんやわらかい言い方です。",
       "audio": "audio/en/eme-03.mp3",
       "audioHint": "I don't feel well.",
-      "tags": ["体調"],
+      "tags": [
+        "体調"
+      ],
       "difficulty": 2
     },
     {
@@ -42,17 +50,22 @@
       "registerNotes": "I have a＋症状 で伝えられます。stomachache（腹痛）、fever（熱）、cold（風邪）など。",
       "audio": "audio/en/eme-04.mp3",
       "audioHint": "I have a headache.",
-      "tags": ["体調"],
+      "tags": [
+        "体調"
+      ],
       "difficulty": 2
     },
     {
       "id": "eme-05",
       "english": "Where is the nearest pharmacy?",
       "japanese": "いちばん近い薬局はどこですか？",
-      "registerNotes": "アメリカでは drugstore も一般的。イギリスでは chemist とも言います。",
+      "registerNotes": "ニュージーランドでは pharmacy か chemist。アメリカでは drugstore も一般的です。",
       "audio": "audio/en/eme-05.mp3",
       "audioHint": "Where is the nearest pharmacy?",
-      "tags": ["体調", "道案内"],
+      "tags": [
+        "体調",
+        "道案内"
+      ],
       "difficulty": 3
     },
     {
@@ -62,7 +75,9 @@
       "registerNotes": "lost は「なくした」。盗まれた場合は My wallet was stolen. です。",
       "audio": "audio/en/eme-06.mp3",
       "audioHint": "I lost my wallet.",
-      "tags": ["トラブル"],
+      "tags": [
+        "トラブル"
+      ],
       "difficulty": 2
     },
     {
@@ -72,7 +87,10 @@
       "registerNotes": "警察で被害届（police report）を出し、日本の大使館・領事館に連絡します。",
       "audio": "audio/en/eme-07.mp3",
       "audioHint": "My passport was stolen.",
-      "tags": ["トラブル", "緊急"],
+      "tags": [
+        "トラブル",
+        "緊急"
+      ],
       "difficulty": 3
     },
     {
@@ -82,7 +100,9 @@
       "registerNotes": "身の危険を感じたら、まず安全な場所へ移動してから。",
       "audio": "audio/en/eme-08.mp3",
       "audioHint": "Please call the police.",
-      "tags": ["緊急"],
+      "tags": [
+        "緊急"
+      ],
       "difficulty": 2
     },
     {
@@ -92,7 +112,10 @@
       "registerNotes": "病院や警察では遠慮せずに聞いてみましょう。通訳（interpreter）を手配してくれることもあります。",
       "audio": "audio/en/eme-09.mp3",
       "audioHint": "Is there anyone who speaks Japanese?",
-      "tags": ["緊急", "言葉"],
+      "tags": [
+        "緊急",
+        "言葉"
+      ],
       "difficulty": 3
     },
     {
@@ -102,7 +125,10 @@
       "registerNotes": "see a doctor で「診察を受ける」。海外旅行保険の連絡先も確認しておきましょう。",
       "audio": "audio/en/eme-10.mp3",
       "audioHint": "I need to see a doctor.",
-      "tags": ["体調", "病院"],
+      "tags": [
+        "体調",
+        "病院"
+      ],
       "difficulty": 3
     }
   ]

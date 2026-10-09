@@ -3,7 +3,7 @@
   "id": "lost",
   "title": "道に迷った時",
   "category": "directions",
-  "setting": "ロンドンの街なか。スマホの電池が切れかけています。大英博物館に行きたいのに、方向がわかりません。",
+  "setting": "ウェリントンの街なか。スマホの電池が切れかけています。博物館のテ・パパに行きたいのに、方向がわかりません。",
   "start": "n1",
   "nodes": {
     "n1": {
@@ -20,13 +20,13 @@
         {
           "phraseId": "gre-01",
           "quality": "awkward",
-          "feedback": "失礼ではありませんが、知らない人にいきなり Hi. だと、何かの勧誘かと警戒されることも。お願いごとには Excuse me. が無難です。",
+          "feedback": "失礼ではありませんが、知らない人にいきなり Hi. だと、何かの勧誘かと警戒されることも。お願いごとには Excuse me. が確実です。",
           "next": "n2"
         },
         {
           "quality": "wrong",
           "english": "Hey!",
-          "japanese": "（ねえ！）",
+          "japanese": "（おい！）",
           "feedback": "知らない人に Hey! はかなり失礼です。振り向いてもらえても、印象はよくありません。",
           "next": "n2"
         }
@@ -68,26 +68,26 @@
       "options": [
         {
           "quality": "good",
-          "english": "The British Museum.",
-          "japanese": "大英博物館です。",
+          "english": "Te Papa, the museum.",
+          "japanese": "博物館のテ・パパです。",
           "feedback": "目的地だけで十分です。",
           "next": "n4"
         },
         {
           "quality": "good",
-          "english": "I'm trying to go to the British Museum.",
-          "japanese": "大英博物館に行こうとしています。",
-          "feedback": "相手の言い方をそのまま使って答えています。上手です。",
+          "english": "I'm trying to get to Te Papa.",
+          "japanese": "テ・パパに行こうとしています。",
+          "feedback": "相手の言い方を使って答えています。get to は「〜に着く・行く」。上手です。",
           "next": "n4"
         }
       ]
     },
     "n4": {
       "speaker": "passerby",
-      "english": "Oh, that's easy. Go straight down this road, take the second left, and it's on your right. About five minutes.",
-      "japanese": "ああ、簡単ですよ。この道をまっすぐ行って、2つ目の角を左に曲がると右手にあります。5分くらいです。",
+      "english": "Oh, that's easy. Head down this street to the waterfront, turn right, and it's on your left. About five minutes.",
+      "japanese": "ああ、簡単ですよ。この通りを海沿いまで行って右に曲がると、左手にあります。5分くらいです。",
       "audio": "audio/en/scenario/lost-n4.mp3",
-      "audioHint": "Oh, that's easy. Go straight down this road, take the second left, and it's on your right. About five minutes.",
+      "audioHint": "Oh, that's easy. Head down this street to the waterfront, turn right, and it's on your left. About five minutes.",
       "options": [
         {
           "phraseId": "gre-10",
@@ -104,7 +104,7 @@
         {
           "quality": "awkward",
           "english": "Yes, yes, I understand.",
-          "japanese": "はい、はい、わかりました。",
+          "japanese": "（はい、はい、わかりました）",
           "feedback": "半分しか聞き取れていないのに I understand. と言ってしまうのは、学習者がいちばんやりがちな失敗です。",
           "next": "n5"
         }
@@ -112,10 +112,10 @@
     },
     "n5": {
       "speaker": "passerby",
-      "english": "Sure. Look, we're here, and the museum is just here.",
-      "japanese": "いいですよ。ほら、今ここで、博物館はここです。",
+      "english": "Sure. Look, we're here, and Te Papa's just here.",
+      "japanese": "いいですよ。ほら、今ここで、テ・パパはここです。",
       "audio": "audio/en/scenario/lost-n5.mp3",
-      "audioHint": "Sure. Look, we're here, and the museum is just here.",
+      "audioHint": "Sure. Look, we're here, and Te Papa's just here.",
       "options": [
         {
           "phraseId": "gre-07",
@@ -140,7 +140,7 @@
     "end": {
       "speaker": "narration",
       "english": "",
-      "japanese": "無事に博物館に着きました。道案内でいちばん大事なのは「聞き取れなかった」と言えること。わかったふりは、迷子を長引かせるだけです。",
+      "japanese": "無事にテ・パパに着きました。道案内でいちばん大事なのは「聞き取れなかった」と言えること。わかったふりは、迷子への近道です。",
       "end": true,
       "options": []
     }

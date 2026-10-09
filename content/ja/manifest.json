@@ -12,8 +12,14 @@
   },
   "noteFields": [
     { "field": "registerNotes", "label": "Register" },
-    { "field": "animeNote", "label": "From anime?", "style": "anime" }
+    { "field": "animeNote", "label": "From anime?", "style": "anime" },
+    { "field": "usage", "label": "Usage" }
   ],
+  "words": {
+    "pos": ["noun", "verb", "i-adjective", "na-adjective", "adverb", "pronoun", "question"],
+    "forms": ["masu", "te"],
+    "verbForms": ["masu", "te"]
+  },
   "copy": {
     "placementLede": "{n} quick cards — every phrase category, plus a few kana and kanji to check what you can already read. For each one, say whether you already have it. Nothing is typed and nothing is scored against you — it only decides where each card enters your review deck.",
     "placementAside": "Japanese picked up by ear — from a partner, friends or the screen — is usually real but lopsided: you understand more than you can say, and reading lags behind listening. This is looking for those gaps, not testing you."

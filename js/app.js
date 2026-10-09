@@ -25,7 +25,7 @@ import { t, setLang, locale, getLang } from './i18n.js';
 import * as backup from './backup.js';
 import { el, clear, phraseBlock, notesBlock, tagRow, audioButton, toast, politeBlock } from './render.js';
 import {
-  header, stat, playItem, studySettings, toggleStrip, deckHref, wordLinks, sentenceLinks,
+  header, stat, playItem, studySettings, toggleStrip, deckHref, wordLinks, sentenceLinks, lessonsCopy,
 } from './shared.js';
 import { renderPlacement } from './quiz.js';
 import { renderScenarioList, renderScenario } from './scenario.js';
@@ -166,8 +166,9 @@ async function enterCourse(target) {
   }
   document.body.classList.remove('no-tabs');
 
-  const { features } = await loadContent();
-  renderTabbar(features);
+  const content = await loadContent();
+  const { features } = content;
+  renderTabbar(content);
 
   if (enteredCourse !== target.id) {
     enteredCourse = target.id;
@@ -202,11 +203,15 @@ function renderCourseBar(target) {
 // least central section once a course has Connectors — moves into Learn.
 const MAX_TABS = 5;
 
-function tabsFor(features) {
+function tabsFor(content) {
+  const { features } = content;
+  // The lessons tab is named by the course: Connectors for Japanese, phrase
+  // patterns for English.
+  const lessons = lessonsCopy(content);
   const tabs = [
     ['/', '📅', t('tab.today')],
     ['/browse', '📚', t('tab.browse')],
-    features.lessons ? ['/connectors', '🔗', t('tab.connectors')] : null,
+    features.lessons ? ['/connectors', lessons.icon, lessons.tab] : null,
     features.characters ? ['/characters', 'あ', t('tab.characters')] : null,
     features.scenarios ? ['/scenarios', '🗣️', t('tab.scenarios')] : null,
     ['/settings', '⚙️', t('tab.settings')],
@@ -215,12 +220,12 @@ function tabsFor(features) {
 }
 
 /** Whether Scenarios has its own tab; if not, Learn lists them. */
-const scenariosTabbed = (features) => tabsFor(features).some(([path]) => path === '/scenarios');
+const scenariosTabbed = (content) => tabsFor(content).some(([path]) => path === '/scenarios');
 
-function renderTabbar(features) {
+function renderTabbar(content) {
   const nav = document.querySelector('.tabbar');
   if (!nav) return;
-  clear(nav).append(...tabsFor(features).map(([path, icon, label]) =>
+  clear(nav).append(...tabsFor(content).map(([path, icon, label]) =>
     el('a', { href: link(path), dataset: { path } }, el('span', {}, icon), label)));
 }
 
@@ -313,14 +318,15 @@ async function today(root) {
   );
 }
 
-/** Connectors: how many lessons have been practised, and the way in. */
+/** The lessons (Connectors, phrase patterns…): how many have been practised, and the way in. */
 async function connectorsBlock(content) {
   const stats = await deck.getLessonStats();
   const practised = content.lessons.filter((l) => stats[l.id]).length;
+  const lessons = lessonsCopy(content);
   return el('section', {},
-    el('h2', { class: 'section-title' }, t('connectors.title')),
+    el('h2', { class: 'section-title' }, lessons.title),
     el('a', { class: 'row-card', href: link(practised ? '/connectors/mixed' : '/connectors') },
-      el('span', { class: 'row-icon' }, '🔗'),
+      el('span', { class: 'row-icon' }, lessons.icon),
       el('span', { class: 'row-body' },
         el('span', { class: 'row-title' }, practised ? t('connectors.mixed') : t('connectors.start')),
         el('span', { class: 'row-sub' }, t('connectors.practisedCount', { n: practised, total: content.lessons.length })),
@@ -477,7 +483,7 @@ async function learn(root) {
       groups.map((group) => section(group.title, categories.filter((c) => c.group === group.id).map((c) => browseRow(c, s)))),
       section(t('learn.mine'), [mineRow(content)], 'kind-title'),
       // When the tab bar is full, the scenarios live here instead.
-      content.features.scenarios && !scenariosTabbed(content.features)
+      content.features.scenarios && !scenariosTabbed(content)
         ? section(t('learn.scenarios'), [scenariosRow(content)], 'kind-title')
         : null)
   );

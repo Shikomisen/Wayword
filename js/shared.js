@@ -23,6 +23,24 @@ export function deckHref(content, deckId) {
   return link(`/category/${deckId}`);
 }
 
+/**
+ * What the course calls its lessons section. Japanese teaches connectors
+ * (つなぐ言葉), English teaches phrase patterns ("I'd like ○○") — same lesson
+ * format and drills, different name. A manifest sets `copy.lessonsTitle`,
+ * `lessonsTab` (short, for the tab bar), `lessonsLede` and `lessonsIcon`;
+ * anything it leaves out falls back to Connectors.
+ */
+export function lessonsCopy(content) {
+  const copy = content.manifest?.copy || {};
+  const title = copy.lessonsTitle || t('connectors.title');
+  return {
+    title,
+    tab: copy.lessonsTab || copy.lessonsTitle || t('tab.connectors'),
+    lede: copy.lessonsLede || t('connectors.lede'),
+    icon: copy.lessonsIcon || '🔗',
+  };
+}
+
 /** A sentence's words, each a link to its word deck — learned words, seen in context. */
 export function wordLinks(sentence, content) {
   const words = (sentence.chunks || []).map((c) => c.w && content.phrases.get(c.w)).filter(Boolean);

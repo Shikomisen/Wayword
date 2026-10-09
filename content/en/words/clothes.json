@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "id": "words-clothes",
+  "title": "服・サイズ",
+  "description": "服を選んで、試着して、サイズを合わせる。洋服屋さんで必要な単語です。",
+  "items": [
+    {
+      "id": "w-size",
+      "english": "size",
+      "japanese": "サイズ",
+      "pos": "noun",
+      "registerNotes": "What size are you?（サイズはいくつですか？）",
+      "audio": "audio/en/words/w-size.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-small",
+      "english": "small",
+      "japanese": "小さい、Sサイズ",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-small.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-medium",
+      "english": "medium",
+      "japanese": "Mサイズ、中くらいの",
+      "pos": "adjective",
+      "registerNotes": "in a medium（Mサイズで）",
+      "audio": "audio/en/words/w-medium.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-large",
+      "english": "large",
+      "japanese": "大きい、Lサイズ",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-large.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bigger",
+      "english": "bigger",
+      "japanese": "もっと大きい",
+      "pos": "adjective",
+      "registerNotes": "big の比較級。a bigger size（大きいサイズ）",
+      "pitfallNote": "more big とは言いません。",
+      "audio": "audio/en/words/w-bigger.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-smaller",
+      "english": "smaller",
+      "japanese": "もっと小さい",
+      "pos": "adjective",
+      "registerNotes": "small の比較級。a smaller size（小さいサイズ）",
+      "audio": "audio/en/words/w-smaller.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-try-on",
+      "english": "try on",
+      "japanese": "試着する",
+      "pos": "verb",
+      "registerNotes": "Can I try this on?（これを試着してもいいですか？）。this は try と on のあいだに入ります。",
+      "audio": "audio/en/words/w-try-on.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-fitting-room",
+      "english": "fitting room",
+      "japanese": "試着室",
+      "pos": "noun",
+      "registerNotes": "changing room とも言います。",
+      "audio": "audio/en/words/w-fitting-room.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-fit",
+      "english": "fit",
+      "japanese": "（サイズが）合う",
+      "pos": "verb",
+      "registerNotes": "It fits.（ぴったり）／ It doesn't fit.（サイズが合わない）",
+      "audio": "audio/en/words/w-fit.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tight",
+      "english": "tight",
+      "japanese": "きつい",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-tight.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-loose",
+      "english": "loose",
+      "japanese": "ゆるい",
+      "pos": "adjective",
+      "pitfallNote": "発音は「ルース」。lose（なくす）と混同しやすいので注意。",
+      "audio": "audio/en/words/w-loose.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-too",
+      "english": "too",
+      "japanese": "〜すぎる",
+      "pos": "adverb",
+      "registerNotes": "too small（小さすぎる）／ a bit too big（ちょっと大きすぎる）",
+      "audio": "audio/en/words/w-too.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-jumper",
+      "english": "jumper",
+      "japanese": "セーター",
+      "pos": "noun",
+      "pitfallNote": "ニュージーランドやイギリスでは、セーターを jumper と言います（アメリカでは sweater）。",
+      "audio": "audio/en/words/w-jumper.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hoodie",
+      "english": "hoodie",
+      "japanese": "パーカー",
+      "pos": "noun",
+      "pitfallNote": "「パーカー」は和製英語。英語の parka は防寒用のコートのことです。",
+      "audio": "audio/en/words/w-hoodie.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-jacket",
+      "english": "jacket",
+      "japanese": "ジャケット、上着",
+      "pos": "noun",
+      "audio": "audio/en/words/w-jacket.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-trousers",
+      "english": "trousers",
+      "japanese": "ズボン",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドでは pants とも言います。",
+      "audio": "audio/en/words/w-trousers.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-shorts",
+      "english": "shorts",
+      "japanese": "半ズボン",
+      "pos": "noun",
+      "audio": "audio/en/words/w-shorts.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-t-shirt",
+      "english": "T-shirt",
+      "japanese": "Tシャツ",
+      "pos": "noun",
+      "audio": "audio/en/words/w-t-shirt.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-jandals",
+      "english": "jandals",
+      "japanese": "ビーチサンダル",
+      "pos": "noun",
+      "registerNotes": "ニュージーランド英語。アメリカでは flip-flops と言います。",
+      "audio": "audio/en/words/w-jandals.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-shoes",
+      "english": "shoes",
+      "japanese": "靴",
+      "pos": "noun",
+      "registerNotes": "靴は2つで1組なので、ふつう複数形の shoes。",
+      "audio": "audio/en/words/w-shoes.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-colour",
+      "english": "colour",
+      "japanese": "色",
+      "pos": "noun",
+      "registerNotes": "Do you have this in another colour?（ほかの色はありますか？）",
+      "pitfallNote": "イギリスやニュージーランド式のつづり。アメリカでは color。",
+      "audio": "audio/en/words/w-colour.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-navy",
+      "english": "navy",
+      "japanese": "紺色",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-navy.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-look-good",
+      "english": "look good",
+      "japanese": "似合う、よく見える",
+      "pos": "phrase",
+      "registerNotes": "It looks good on you!（よく似合っていますよ！）",
+      "audio": "audio/en/words/w-look-good.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

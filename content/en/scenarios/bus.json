@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "bus",
+  "title": "バスの乗り方をたずねる",
+  "category": "transport",
+  "setting": "オークランドのバス停。市の中心部に行きたいけれど、どのバスに乗ればいいかわかりません。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "narration",
+      "english": "",
+      "japanese": "ちょうどバスが来ました。運転手さんに確認しましょう。最初のひとことは？",
+      "options": [
+        {
+          "phraseId": "tra-02",
+          "quality": "good",
+          "feedback": "乗る前の確認にぴったりです。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "Hi! Does this go to the city?",
+          "japanese": "こんにちは！これは市内に行きますか？",
+          "feedback": "Hi! から始めるのは、ニュージーランドではとても自然です。",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "english": "City?",
+          "japanese": "（シティ？）",
+          "feedback": "通じるかもしれませんが、ぶっきらぼうです。Does this bus go to ...? と文で聞きましょう。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "driver",
+      "english": "Yep, it does. Just tap your card on the reader there.",
+      "japanese": "ええ、行きますよ。そこの読み取り機にカードをタッチしてください。",
+      "audio": "audio/en/scenario/bus-n2.mp3",
+      "audioHint": "Yep, it does. Just tap your card on the reader there.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Can I use my bank card?",
+          "japanese": "銀行のカードは使えますか？",
+          "feedback": "タッチ決済のカードで乗れる街が増えています。確認するのはいい質問です。",
+          "next": "n3"
+        },
+        {
+          "phraseId": "gre-10",
+          "quality": "good",
+          "feedback": "聞き取れなければ、聞き返して当然です。",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "english": "Yes, yes.",
+          "japanese": "（はい、はい）",
+          "feedback": "わかっていないのに Yes と言うと、そこで会話が終わってしまいます。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "driver",
+      "english": "Yeah, contactless is fine. Where are you getting off?",
+      "japanese": "ええ、タッチ決済で大丈夫。どこで降りますか？",
+      "audio": "audio/en/scenario/bus-n3.mp3",
+      "audioHint": "Yeah, contactless is fine. Where are you getting off?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Queen Street, please.",
+          "japanese": "クイーン通りです。",
+          "feedback": "降りる場所だけで十分です。",
+          "next": "n4"
+        },
+        {
+          "phraseId": "tra-05",
+          "quality": "good",
+          "feedback": "降りる場所を教えてもらえるようにお願いするのは、とても賢いやり方です。",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "english": "I got off at Queen Street.",
+          "japanese": "（クイーン通りで降りました）",
+          "feedback": "got off は過去形で「もう降りた」の意味。これからなら I'm getting off at Queen Street. です。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "driver",
+      "english": "No worries. It's about fifteen minutes. I'll give you a shout.",
+      "japanese": "了解。15分くらいです。着いたら声をかけますね。",
+      "audio": "audio/en/scenario/bus-n4.mp3",
+      "audioHint": "No worries. It's about fifteen minutes. I'll give you a shout.",
+      "options": [
+        {
+          "phraseId": "gre-07",
+          "quality": "good",
+          "feedback": "親切にしてもらったら so much を付けて。",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "english": "Cheers!",
+          "japanese": "ありがとう！",
+          "feedback": "Cheers! は、ニュージーランドの気軽な「ありがとう」です。",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "english": "Shout?",
+          "japanese": "（叫ぶ？）",
+          "feedback": "I'll give you a shout. は「声をかけるね」というくだけた言い方で、叫ぶわけではありません。わからない時は Sorry, what does that mean? と聞きましょう。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "driver",
+      "english": "Here's Queen Street.",
+      "japanese": "クイーン通りですよ。",
+      "audio": "audio/en/scenario/bus-n5.mp3",
+      "audioHint": "Here's Queen Street.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Thanks, driver!",
+          "japanese": "ありがとうございました！",
+          "feedback": "ニュージーランドでは、降りる時に運転手さんへお礼を言うのが習慣です。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-07",
+          "quality": "good",
+          "feedback": "気持ちのいいお礼です。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "wrong",
+          "feedback": "「どういたしまして」は助けた側の言葉です。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "japanese": "無事にクイーン通りに着きました。降りる時の Thanks, driver! は、ニュージーランドの小さな習慣。わからない言い方（give you a shout など）は、聞き返せば教えてもらえます。",
+      "end": true,
+      "options": []
+    }
+  }
+}

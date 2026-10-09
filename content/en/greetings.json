@@ -12,7 +12,10 @@
       "registerNotes": "時間帯を問わず使える、いちばん万能なあいさつ。店員さんにも初対面の人にも使えます。Hello より少しくだけていますが、失礼にはなりません。",
       "audio": "audio/en/gre-01.mp3",
       "audioHint": "Hi.",
-      "tags": ["あいさつ", "必須"],
+      "tags": [
+        "あいさつ",
+        "必須"
+      ],
       "difficulty": 1
     },
     {
@@ -22,18 +25,24 @@
       "registerNotes": "お昼ごろまで使えます。ホテルの朝食会場などでよく聞きます。返事も Good morning. で大丈夫です。",
       "audio": "audio/en/gre-02.mp3",
       "audioHint": "Good morning.",
-      "tags": ["あいさつ", "朝"],
+      "tags": [
+        "あいさつ",
+        "朝"
+      ],
       "difficulty": 1
     },
     {
       "id": "gre-03",
       "english": "How are you?",
       "japanese": "お元気ですか？／調子はどうですか？",
-      "registerNotes": "あいさつの一部で、本当に体調を聞いているわけではありません。店員さんからもよく言われます。",
+      "registerNotes": "あいさつの一部で、本当に体調を聞いているわけではありません。店員さんからもよく言われます。ニュージーランドでは How's it going? もよく聞きます。",
       "pitfallNote": "I'm fine, thank you. And you? と教科書どおりに返すと、少し硬く聞こえます。Good, thanks! How are you? くらいが自然です。",
       "audio": "audio/en/gre-03.mp3",
       "audioHint": "How are you?",
-      "tags": ["あいさつ", "必須"],
+      "tags": [
+        "あいさつ",
+        "必須"
+      ],
       "difficulty": 1
     },
     {
@@ -43,7 +52,10 @@
       "registerNotes": "How are you? への定番の返し方。自分も聞き返すのがマナーです。",
       "audio": "audio/en/gre-04.mp3",
       "audioHint": "Good, thanks. How about you?",
-      "tags": ["あいさつ", "返事"],
+      "tags": [
+        "あいさつ",
+        "返事"
+      ],
       "difficulty": 2
     },
     {
@@ -54,7 +66,10 @@
       "pitfallNote": "謝る意味の「すみません」は Sorry. です。人にぶつかった時は Sorry! が自然です。",
       "audio": "audio/en/gre-05.mp3",
       "audioHint": "Excuse me.",
-      "tags": ["呼びかけ", "必須"],
+      "tags": [
+        "呼びかけ",
+        "必須"
+      ],
       "difficulty": 1
     },
     {
@@ -65,7 +80,10 @@
       "pitfallNote": "日本語の感覚で何度も Sorry と言うと、大きな失敗をしたように聞こえることがあります。手伝ってもらった時は Thank you. を。",
       "audio": "audio/en/gre-06.mp3",
       "audioHint": "Sorry!",
-      "tags": ["謝罪", "必須"],
+      "tags": [
+        "謝罪",
+        "必須"
+      ],
       "difficulty": 1
     },
     {
@@ -75,17 +93,23 @@
       "registerNotes": "Thank you. だけより気持ちがしっかり伝わります。手伝ってもらった時、親切にされた時に。",
       "audio": "audio/en/gre-07.mp3",
       "audioHint": "Thank you so much.",
-      "tags": ["お礼", "必須"],
+      "tags": [
+        "お礼",
+        "必須"
+      ],
       "difficulty": 1
     },
     {
       "id": "gre-08",
       "english": "You're welcome.",
       "japanese": "どういたしまして。",
-      "registerNotes": "お礼を言われた時の返事。No problem. や Sure! もよく使われ、そちらのほうがカジュアルです。",
+      "registerNotes": "お礼を言われた時の返事。ニュージーランドでは No worries.（気にしないで）がとてもよく使われます。No problem. もカジュアルな定番です。",
       "audio": "audio/en/gre-08.mp3",
       "audioHint": "You're welcome.",
-      "tags": ["お礼", "返事"],
+      "tags": [
+        "お礼",
+        "返事"
+      ],
       "difficulty": 1
     },
     {
@@ -95,7 +119,10 @@
       "registerNotes": "わからない時は黙ってうなずくより、はっきり言ったほうが相手も言い方を変えて助けてくれます。",
       "audio": "audio/en/gre-09.mp3",
       "audioHint": "Sorry, I don't understand.",
-      "tags": ["聞き返し", "必須"],
+      "tags": [
+        "聞き返し",
+        "必須"
+      ],
       "difficulty": 2
     },
     {
@@ -105,7 +132,10 @@
       "registerNotes": "聞き取れなかった時の基本フレーズ。短く Sorry? や Pardon? と言うこともできます。",
       "audio": "audio/en/gre-10.mp3",
       "audioHint": "Could you say that again, please?",
-      "tags": ["聞き返し", "必須"],
+      "tags": [
+        "聞き返し",
+        "必須"
+      ],
       "difficulty": 2
     },
     {
@@ -115,18 +145,23 @@
       "registerNotes": "ネイティブの速さについていけない時に。遠慮せずに使って大丈夫です。たいてい快くゆっくり言い直してくれます。",
       "audio": "audio/en/gre-11.mp3",
       "audioHint": "Could you speak a little more slowly?",
-      "tags": ["聞き返し"],
+      "tags": [
+        "聞き返し"
+      ],
       "difficulty": 3
     },
     {
       "id": "gre-12",
       "english": "Have a nice day!",
       "japanese": "よい一日を！",
-      "registerNotes": "お店を出る時などの別れぎわの定番。言われたら Thanks, you too! と返しましょう。",
+      "registerNotes": "お店を出る時などの別れぎわの定番。Have a good one! もよく聞きます。言われたら Thanks, you too! と返しましょう。",
       "pitfallNote": "You too!（あなたも）を返し忘れがちです。言われたら同じ気持ちを返すのがマナーです。",
       "audio": "audio/en/gre-12.mp3",
       "audioHint": "Have a nice day!",
-      "tags": ["あいさつ", "別れ"],
+      "tags": [
+        "あいさつ",
+        "別れ"
+      ],
       "difficulty": 2
     }
   ]

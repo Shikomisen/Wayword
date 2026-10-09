@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "id": "words-shopping",
+  "title": "お店・お会計",
+  "description": "値段を聞く、払う、返品する。レジでよく聞く単語も入っています。",
+  "items": [
+    {
+      "id": "w-price",
+      "english": "price",
+      "japanese": "値段",
+      "pos": "noun",
+      "audio": "audio/en/words/w-price.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-how-much",
+      "english": "how much",
+      "japanese": "いくら",
+      "pos": "phrase",
+      "registerNotes": "How much is this?（これはいくら？）／ How much are these?（これらはいくら？）",
+      "audio": "audio/en/words/w-how-much.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cheap",
+      "english": "cheap",
+      "japanese": "安い",
+      "pos": "adjective",
+      "registerNotes": "cheap は「安っぽい」に聞こえることも。お得な時は good value もよく使います。",
+      "audio": "audio/en/words/w-cheap.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-expensive",
+      "english": "expensive",
+      "japanese": "（値段が）高い",
+      "pos": "adjective",
+      "pitfallNote": "high は値段そのものに使います（The price is high.）。物が高い時は expensive です。",
+      "audio": "audio/en/words/w-expensive.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-on-special",
+      "english": "on special",
+      "japanese": "特価で",
+      "pos": "phrase",
+      "registerNotes": "on sale も同じ意味です。",
+      "pitfallNote": "for sale は「売り物」で、値引きとは関係ありません。",
+      "audio": "audio/en/words/w-on-special.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-discount",
+      "english": "discount",
+      "japanese": "割引",
+      "pos": "noun",
+      "audio": "audio/en/words/w-discount.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bag",
+      "english": "bag",
+      "japanese": "袋",
+      "pos": "noun",
+      "registerNotes": "Would you like a bag?（袋はご入用ですか？）",
+      "audio": "audio/en/words/w-bag.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-paper-bag",
+      "english": "paper bag",
+      "japanese": "紙袋",
+      "pos": "noun",
+      "pitfallNote": "「ビニール袋」は plastic bag。ニュージーランドでは使い捨てのレジ袋は禁止です。",
+      "audio": "audio/en/words/w-paper-bag.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-receipt",
+      "english": "receipt",
+      "japanese": "レシート",
+      "pos": "noun",
+      "pitfallNote": "p は発音しません。「リシート」に近い音です。",
+      "audio": "audio/en/words/w-receipt.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-refund",
+      "english": "refund",
+      "japanese": "返金",
+      "pos": "noun",
+      "registerNotes": "Can I get a refund?（返金してもらえますか？）",
+      "audio": "audio/en/words/w-refund.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-exchange",
+      "english": "exchange",
+      "japanese": "交換する",
+      "pos": "verb",
+      "registerNotes": "Can I exchange this for a smaller size?（小さいサイズと交換できますか？）",
+      "audio": "audio/en/words/w-exchange.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-return",
+      "english": "return",
+      "japanese": "返品する",
+      "pos": "verb",
+      "audio": "audio/en/words/w-return.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-checkout",
+      "english": "checkout",
+      "japanese": "レジ",
+      "pos": "noun",
+      "pitfallNote": "「レジ」は register から。ニュージーランドでは checkout や till と言います。",
+      "audio": "audio/en/words/w-checkout.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-till",
+      "english": "till",
+      "japanese": "レジ",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドやイギリスの言い方。Pay at the till.（レジでお支払いください）",
+      "audio": "audio/en/words/w-till.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-eftpos",
+      "english": "EFTPOS",
+      "japanese": "デビットカード払い",
+      "pos": "noun",
+      "registerNotes": "「エフトポス」と読みます。レジで EFTPOS or credit?（デビット？クレジット？）と聞かれます。",
+      "audio": "audio/en/words/w-eftpos.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-card",
+      "english": "card",
+      "japanese": "カード",
+      "pos": "noun",
+      "pitfallNote": "「クレジット」だけでは通じません。card か credit card と言いましょう。",
+      "audio": "audio/en/words/w-card.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cash",
+      "english": "cash",
+      "japanese": "現金",
+      "pos": "noun",
+      "audio": "audio/en/words/w-cash.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-change",
+      "english": "change",
+      "japanese": "おつり、小銭",
+      "pos": "noun",
+      "registerNotes": "Here's your change.（おつりです）",
+      "audio": "audio/en/words/w-change.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tap",
+      "english": "tap",
+      "japanese": "（カードを）タッチする",
+      "pos": "verb",
+      "registerNotes": "Tap when you're ready.（準備ができたらタッチしてください）",
+      "audio": "audio/en/words/w-tap.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pin",
+      "english": "PIN",
+      "japanese": "暗証番号",
+      "pos": "noun",
+      "registerNotes": "Enter your PIN.（暗証番号を入力してください）",
+      "audio": "audio/en/words/w-pin.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-queue",
+      "english": "queue",
+      "japanese": "（順番待ちの）列",
+      "pos": "noun",
+      "registerNotes": "アメリカでは line。Are you in the queue?（並んでいますか？）",
+      "audio": "audio/en/words/w-queue.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-aisle",
+      "english": "aisle",
+      "japanese": "（スーパーの）通路",
+      "pos": "noun",
+      "registerNotes": "It's in aisle five.（5番通路です）",
+      "pitfallNote": "s は発音しません。「アイル」です。",
+      "audio": "audio/en/words/w-aisle.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-out-of-stock",
+      "english": "out of stock",
+      "japanese": "在庫切れ",
+      "pos": "phrase",
+      "registerNotes": "Sorry, we're out of that.（すみません、それは切らしています）",
+      "audio": "audio/en/words/w-out-of-stock.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-just-looking",
+      "english": "just looking",
+      "japanese": "見ているだけ",
+      "pos": "phrase",
+      "registerNotes": "I'm just looking, thanks.（見ているだけです）",
+      "audio": "audio/en/words/w-just-looking.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-voucher",
+      "english": "voucher",
+      "japanese": "商品券、クーポン",
+      "pos": "noun",
+      "audio": "audio/en/words/w-voucher.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

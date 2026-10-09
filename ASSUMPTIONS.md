@@ -1361,3 +1361,151 @@ casual is what you *say* to a partner. So:
   was live this morning (`c5b4b71`), used, then this build at the same URL:
   33 of 33. Progress survives, v7 replaces v5, nothing is missing, and
   everything works offline.
+
+### A78 — The English course's first part: scope, and the answers it rests on
+- **Asked before building, and answered:**
+  - **Scope:** the three situations the partner named, end to end — the
+    missing phrases, the ○○ patterns as lessons, café / clothes / asking
+    scenarios as the customer, the words those need, and New Zealand
+    wording — plus the README and the saved plan. The listening tab,
+    per-course caching and the NZ voice come later.
+  - **Audio for now:** the current Google voice; the NZ neural voice later.
+  - **Where the gaps are:** not known yet. Build without assuming, and decide
+    once the course has been used.
+  - **Staff side:** none. The user asked for general English rather than
+    staff-focused, so there are no staff-side scenarios and no
+    customer-service vocabulary; the README and the plan drop them.
+- **Pronouns:** the docs say "the partner" and "they". Nobody's pronouns were
+  stated, and earlier drafts in this session had guessed.
+
+### A79 — Phrase patterns are lessons, named by the course
+- **Taught as frames.** The ○○ phrases are frames, so each is taught as the
+  frame plus what fits it, in the connectors' lesson format. Seven lessons in
+  `content/en/patterns/`, four examples each:
+  - お願いする: *I'd like…*, *Can I have…?*, *Could I get…?*
+  - たずねる: *Do you have…?*, *Is this…?*, *Where's…?*, *How much…?*
+- **What comes free.** Every example is cut into chunks linked to the word
+  decks, so these work with no new code:
+  - fill-in and put-in-order drills;
+  - word ↔ sentence links;
+  - a missed drill going into the reviews.
+
+  There are no combine drills: joining two sentences isn't what these frames
+  teach.
+- **The gaps.** The gap is usually the frame itself (*I'd like* / *I want* /
+  *I like*), sometimes the piece learners drop (the *to* in *I'd like to try
+  this on*). Every option has a Japanese *why*. *I want…* is marked wrong,
+  not "also right": it's grammatical but blunt, and that is the lesson.
+- **Naming comes from the manifest.** These all come from the manifest's
+  `copy` (`lessonsTitle`, `lessonsTab`, `lessonsIcon`, `lessonsLede`):
+  - the tab, its icon;
+  - the list's title and intro;
+  - the lesson's back link.
+
+  Without them it falls back to Connectors, so the English course says
+  フレーズの型 🧩 and the Japanese course is unchanged. The code is
+  `lessonsCopy()` in `js/shared.js`.
+- **Language tags.** Lesson marks and titles carry the course's target
+  language (`lang="en"`), so English gets the Latin font and a wider column.
+- **Tabs.** The English course has five: 今日, 学ぶ, フレーズの型, 会話練習
+  and 設定. That's `MAX_TABS`, so Scenarios keeps its tab.
+
+### A80 — Words and phrases: what was added, and New Zealand wording
+- **Three word decks, 73 words**, covering what the three situations need:
+  - café and food (25);
+  - clothes and sizes (23);
+  - shops and paying (25).
+- **Starters.** Café and shops start in the deck, alongside the greetings,
+  numbers, restaurant and shopping phrases. Clothes is added from Learn.
+- **The shopping deck's name.** It's called お店・お会計, with 🧾, so Today
+  doesn't show two decks both named 買い物・支払い 🛍️.
+- **Notes and tags:**
+  - Notes use the course's existing fields: `registerNotes` (使い方) and
+    `pitfallNote` (よくある間違い).
+  - Tags are in Japanese, like the phrases' tags, because they show as chips
+    on a Japanese screen: カフェ, 服, お店, and on pattern examples フレーズの型
+    plus the frame.
+- **Parts of speech:** noun, verb, adjective, adverb and phrase (*try on*,
+  *eat in*, *just looking* are phrases). English words have no forms to
+  declare.
+- **Eight phrases added**, for what the three situations were missing:
+  - `res-11` *I'd like a flat white, please*
+  - `res-12` *Is this spicy?*
+  - `res-13` *Can I have the fish and chips, please?*
+  - `res-14` *Do you have any vegetarian options?*
+  - `sho-11` *Do you have this in a bigger size?*
+  - `sho-12` *Where's the fitting room?*
+  - `sho-13` *It's a bit too small*
+  - `sho-14` *Can I have this one, please?*
+- **New Zealand wording:**
+  - Ten phrases reworded: `air-04`, `tra-01`, `tra-02`, `tra-05`, `dir-08`,
+    `hot-07`, `hot-09`, `res-07`, `res-08`, `sho-10`. That gives *takeaway*,
+    *the bill*, *power point*, *reception*, *on special*, *city centre*,
+    Wellington and Queen Street.
+  - Notes on 23 more were rewritten.
+  - The notes keep the American word.
+  - Ids are unchanged, so progress carries over. The reworded phrases' old
+    clips were deleted and regenerated (`audioHint` holds the new text).
+- **Groups and starters.** The groups are now 基本のひとこと, カフェ・レストラン,
+  買い物, 街で, 空港・ホテル and もしもの時. The starter phrase categories are
+  greetings, numbers, restaurant and shopping, where they were greetings,
+  numbers, airport and transport: the course now starts with everyday
+  situations rather than with arriving in a country.
+
+### A81 — Scenarios: the learner as the customer
+- **New:**
+  - a café: ordering, *Is this spicy?*, eat in or takeaway, paying;
+  - a clothes shop: sizes, the fitting room, *it's a bit too small*;
+  - a bakery: asking for things, a bag, the price;
+  - a bus: asking the driver.
+- **Rewritten for New Zealand:** asking the way, and immigration, which gained
+  a food-declaration step. Hotel check-in is kept, now with *lift*.
+- **Removed:** the subway, restaurant and shop-checkout scenarios, which the
+  café, bakery and clothes shop replace. Their clips went with them.
+- **Unchanged:** every reply still gets Japanese feedback, wrong ones
+  included. There's a new speaker label, 運転手 (driver).
+
+### A82 — Code: what had to stop being Japanese-only
+- **`tools/selftest.mjs`:**
+  - Parts of speech and word forms come from the manifest's `words` (`pos`,
+    `forms`, `verbForms`).
+  - The polite/casual register check only applies to courses that use those
+    registers.
+  - The check that kanji in lesson prose has furigana only applies to courses
+    with furigana.
+
+  The Japanese manifest declares its own lists, so its checks are unchanged.
+- **Interface strings:** new `pos.adjective`, `pos.phrase`, `speaker.driver`,
+  `connectors.start` and `drill.backToList`. `lesson.back` now takes the
+  lessons' name.
+- **A bug found on the way:** the Japanese word decks' `usage` notes were
+  written but never shown, because the en-ja manifest's `noteFields` didn't
+  list `usage`. Now it does.
+
+### A83 — Verifying v8 before deploying
+- **`npm test`:**
+  - 25,495 content checks.
+  - 225 integration checks. New ones cover the English word decks and their
+    notes, the pattern lessons with their gaps, verdicts, drills and word
+    links, every English scenario resolving, and the new starters.
+  - 13 language-pack checks.
+- **`npm run test:render`:** 247 checks, then 20 service-worker checks. New
+  ones cover:
+  - the five-tab bar with フレーズの型;
+  - the pattern list;
+  - a lesson in English, with no furigana;
+  - a pattern drill answered right;
+  - a word deck with Japanese part-of-speech labels;
+  - the café scenario.
+- **`npm run audio:check`:** all 1,159 clips are there. 252 are English: 112
+  phrases, 73 words, 28 pattern examples and 39 scenario lines. The 153 new
+  ones use the interim Google voice.
+- **`npm run test:browser`, Firefox: 33 of 33.** `wayword-v8` holds all 1,271
+  files, and every tab of both courses renders online and offline.
+- **`--upgrade-from origin/main` (the live v7, used, then this build at the
+  same URL): 35 of 35.** v8 replaces v7, progress survives, and everything
+  works offline.
+- **Screenshots at phone width, checked by eye:** Today, the pattern list and
+  a lesson, the café words and the café scenario. They led to two fixes:
+  - the duplicate 買い物・支払い name (A80);
+  - English tags ("cafe") showing on Japanese screens.

@@ -664,9 +664,39 @@ check('the meaning is Japanese', wake.meaning.includes('モーニングコール
 check('English carries no furigana or romaji', wake.ruby === null && wake.reading === null);
 check('notes use this course\'s own labels', wake.notes.map((n) => n.label).join(',') === '使い方,よくある間違い',
   wake.notes.map((n) => n.label).join(', '));
-check('features: scenarios yes; characters, furigana, romaji, word decks, connectors no',
-  en.features.scenarios && !en.features.characters && !en.features.ruby && !en.features.reading &&
-  !en.features.words && !en.features.lessons);
+check('features: scenarios, word decks and phrase patterns yes; characters, furigana, romaji no',
+  en.features.scenarios && en.features.words && en.features.lessons &&
+  !en.features.characters && !en.features.ruby && !en.features.reading);
+
+const flatWhite = en.phrases.get('w-flat-white');
+check('ja-en word decks hold English words with Japanese meanings',
+  flatWhite?.kind === 'word' && flatWhite.target === 'flat white' && flatWhite.targetLang === 'en' &&
+  flatWhite.meaning.startsWith('フラットホワイト') && flatWhite.pos === 'noun', flatWhite?.target);
+check('…with their notes under the course\'s own labels', flatWhite.notes[0]?.label === '使い方',
+  flatWhite.notes.map((n) => n.label).join(', '));
+check('every ja-en word deck loads', en.decks.length === 3 && en.decks.every((d) => !d.missing && d.items.length > 0),
+  en.decks.map((d) => `${d.id} ${d.items.length}`).join(', '));
+
+const patterns = en.lessons;
+check('the phrase-pattern lessons load, each with 3–5 examples with audio',
+  patterns.length === 7 && patterns.every((l) => !l.missing && l.items.length >= 3 && l.items.length <= 5 &&
+    l.items.every((x) => x.audio && x.targetLang === 'en')),
+  patterns.map((l) => l.connector).join(' '));
+const like1 = en.byCategory.get('pat-like').items[0];
+check('a pattern gap is the English sentence around it',
+  like1.gap.before.target + like1.gap.answer.target + like1.gap.after.target === like1.target,
+  `${like1.gap.before.target}［${like1.gap.answer.target}］${like1.gap.after.target}`);
+check('…its options carry their verdicts', like1.gap.options.filter((o) => o.verdict === 'right').length === 1 &&
+  like1.gap.options.find((o) => o.target === 'I like')?.verdict === 'wrong');
+check('pattern examples link the words they use', (en.usage.get('w-flat-white') || []).includes('px-like-1'),
+  (en.usage.get('w-flat-white') || []).join(', '));
+const likeDrills = drills.drillsFor(en.byCategory.get('pat-like'));
+check('a pattern lesson makes fill-in and order drills',
+  [drills.DRILL.FILL, drills.DRILL.ORDER].every((type) => likeDrills.some((d) => d.type === type)),
+  Object.values(drills.DRILL).map((type) => `${type} ${likeDrills.filter((d) => d.type === type).length}`).join(', '));
+const likeOrder = likeDrills.find((d) => d.type === drills.DRILL.ORDER);
+check('English pieces put in order are right',
+  drills.checkTiles(likeOrder, [...drills.tilesFor(likeOrder)].sort((a, b) => a.chunk - b.chunk)));
 check('a course nobody has opened is not onboarded', !(await deck.isOnboarded()));
 check('…and starts with an empty deck', (await deck.getDeck()).length === 0);
 
@@ -677,7 +707,7 @@ check('placement has no character items', enItems.every((i) => i.kind === 'phras
 await quiz.applyPlacement(enItems, Object.fromEntries(enItems.map((i) => [i.id, quiz.ANSWERS.UNKNOWN])));
 check('ja-en is onboarded on its own', await deck.isOnboarded());
 check('week-1 categories activated in ja-en',
-  (await deck.getSettings()).activeCategories.join(',') === 'greetings,numbers,airport,transport',
+  (await deck.getSettings()).activeCategories.join(',') === 'greetings,numbers,restaurant,shopping,words-cafe,words-shopping',
   (await deck.getSettings()).activeCategories.join(','));
 
 const enQueue = await deck.queue();
@@ -691,11 +721,14 @@ const imm = await loadScenario('immigration');
 check('ja-en scenario NPC lines are English with Japanese meanings',
   imm.nodes.n1.target === 'Next, please. Good afternoon.' && imm.nodes.n1.meaning.startsWith('次の方'),
   imm.nodes.n1.target);
-const sub = await loadScenario('subway');
-check('scenario narration is in the learner\'s language', sub.nodes.n1.target === '' && /[ぁ-ん]/.test(sub.nodes.n1.meaning));
+const bus = await loadScenario('bus');
+check('scenario narration is in the learner\'s language', bus.nodes.n1.target === '' && /[ぁ-ん]/.test(bus.nodes.n1.meaning));
+const enScenarios = await Promise.all(en.manifest.scenarios.map((s) => loadScenario(s.id)));
 check('every ja-en scenario option resolves to text or a deck phrase',
-  [imm, sub].every((s) => Object.values(s.nodes).every((n) =>
-    n.options.every((o) => (o.phraseId ? en.phrases.has(o.phraseId) : Boolean(o.target))))));
+  enScenarios.every((s) => Object.values(s.nodes).every((n) =>
+    n.options.every((o) => (o.phraseId ? en.phrases.has(o.phraseId) : Boolean(o.target))))),
+  enScenarios.map((s) => s.id).join(', '));
+check('the customer-side scenarios are there', ['cafe', 'clothes', 'bakery'].every((id) => enScenarios.some((s) => s.id === id)));
 
 await course.setCourse('en-ja');
 check('switching back restores storage and interface', store.namespace() === 'en-ja' && i18n.getLang() === 'en');

@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "pat-isthis",
+  "connector": "Is this…?",
+  "gloss": "これは〜ですか",
+  "title": "Is this…? — これは〜ですか",
+  "pattern": "Is this ＋ 様子（spicy、vegetarian など）?",
+  "explanation": "Is this ...? は「これは〜ですか」。料理が辛いか、ベジタリアン向けか、特価か ― 物の様子を確かめる時の形です。be動詞の文なので、疑問文は is を前に出すだけ。ほかと比べて「こっちのは？」と言う時は this one を使います。",
+  "natural": "料理、服、値段、なんでも。指さしながら言えば確実に伝わります。This is spicy? と語尾を上げても通じますが、Is this spicy? が基本です。",
+  "stiff": "Does this spicy? は間違いです。spicy は形容詞なので、do / does ではなく is を使います。",
+  "examples": [
+    {
+      "id": "px-isthis-1",
+      "english": "Is this spicy?",
+      "japanese": "これは辛いですか？",
+      "chunks": [
+        {
+          "t": "Is "
+        },
+        {
+          "t": "this "
+        },
+        {
+          "t": "spicy?",
+          "w": "w-spicy"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Is",
+        "after": " this spicy?",
+        "options": [
+          "Is",
+          "Does",
+          "Are"
+        ],
+        "why": "spicy は形容詞なので、疑問文は Is this ...? です。"
+      },
+      "audio": "audio/en/patterns/px-isthis-1.mp3",
+      "tags": [
+        "フレーズの型",
+        "Is this…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-isthis-2",
+      "english": "Is this vegetarian?",
+      "japanese": "これはベジタリアン向けですか？",
+      "chunks": [
+        {
+          "t": "Is "
+        },
+        {
+          "t": "this "
+        },
+        {
+          "t": "vegetarian?",
+          "w": "w-vegetarian"
+        }
+      ],
+      "gap": {
+        "before": "Is this ",
+        "answer": "vegetarian",
+        "after": "?",
+        "options": [
+          "vegetarian",
+          "vegetable",
+          "vegetables"
+        ],
+        "why": "vegetarian は「肉や魚を使っていない」。vegetable は「野菜」そのものです。"
+      },
+      "audio": "audio/en/patterns/px-isthis-2.mp3",
+      "tags": [
+        "フレーズの型",
+        "Is this…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-isthis-3",
+      "english": "Is this on special?",
+      "japanese": "これは特価ですか？",
+      "chunks": [
+        {
+          "t": "Is "
+        },
+        {
+          "t": "this "
+        },
+        {
+          "t": "on special?",
+          "w": "w-on-special"
+        }
+      ],
+      "gap": {
+        "before": "Is this ",
+        "answer": "on",
+        "after": " special?",
+        "options": [
+          "on",
+          "in",
+          "at"
+        ],
+        "why": "on special（特価で）は決まった言い方。on sale と同じ on です。"
+      },
+      "audio": "audio/en/patterns/px-isthis-3.mp3",
+      "tags": [
+        "フレーズの型",
+        "Is this…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "px-isthis-4",
+      "english": "Is this one gluten-free?",
+      "japanese": "こちらはグルテンフリーですか？",
+      "chunks": [
+        {
+          "t": "Is "
+        },
+        {
+          "t": "this one "
+        },
+        {
+          "t": "gluten-free?",
+          "w": "w-gluten-free"
+        }
+      ],
+      "gap": {
+        "before": "Is this ",
+        "answer": "one",
+        "after": " gluten-free?",
+        "options": [
+          "one",
+          "ones",
+          "it"
+        ],
+        "why": "ほかと比べて「こっちのは」と言う時は this one です。"
+      },
+      "audio": "audio/en/patterns/px-isthis-4.mp3",
+      "tags": [
+        "フレーズの型",
+        "Is this…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "pat-have",
+  "connector": "Can I have…?",
+  "gloss": "〜をもらえますか",
+  "title": "Can I have…? — 〜をもらえますか",
+  "pattern": "Can I have ＋ もの ＋ , please?",
+  "explanation": "Can I have ...? は「〜をもらえますか」。店員さんに何かを頼む、いちばん基本の言い方です。指さしながら Can I have this one? と言えば、名前がわからない物でも頼めます。よりていねいにしたい時は Could I have ...? に。",
+  "natural": "カフェ、パン屋さん、お店のレジ、どこでも使えます。please を付ければ十分ていねいです。",
+  "stiff": "Give me ... は命令に聞こえるので、店員さんには使わないようにしましょう。",
+  "examples": [
+    {
+      "id": "px-have-1",
+      "english": "Can I have a paper bag, please?",
+      "japanese": "紙袋をもらえますか？",
+      "chunks": [
+        {
+          "t": "Can I have "
+        },
+        {
+          "t": "a paper bag, ",
+          "w": "w-paper-bag"
+        },
+        {
+          "t": "please?"
+        }
+      ],
+      "gap": {
+        "before": "Can I ",
+        "answer": "have",
+        "after": " a paper bag, please?",
+        "options": [
+          "have",
+          "give",
+          "do"
+        ],
+        "why": "「もらう」は have。give は「あげる」、do は「する」です。"
+      },
+      "audio": "audio/en/patterns/px-have-1.mp3",
+      "tags": [
+        "フレーズの型",
+        "Can I have…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-have-2",
+      "english": "Can I have the bill, please?",
+      "japanese": "お会計をお願いします。",
+      "chunks": [
+        {
+          "t": "Can I have "
+        },
+        {
+          "t": "the bill, ",
+          "w": "w-bill"
+        },
+        {
+          "t": "please?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Can I",
+        "after": " have the bill, please?",
+        "options": [
+          "Can I",
+          "Can you",
+          "Do I"
+        ],
+        "why": "自分がもらう時は Can I ...?。Can you have ...? だと「あなたが持てますか」になってしまいます。"
+      },
+      "audio": "audio/en/patterns/px-have-2.mp3",
+      "tags": [
+        "フレーズの型",
+        "Can I have…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-have-3",
+      "english": "Can I have two scones, please?",
+      "japanese": "スコーンを2つください。",
+      "chunks": [
+        {
+          "t": "Can I have "
+        },
+        {
+          "t": "two scones, ",
+          "w": "w-scone"
+        },
+        {
+          "t": "please?"
+        }
+      ],
+      "gap": {
+        "before": "Can I have two ",
+        "answer": "scones",
+        "after": ", please?",
+        "options": [
+          "scones",
+          "scone",
+          "scone's"
+        ],
+        "why": "2つ以上なら、複数形の s を付けます。"
+      },
+      "audio": "audio/en/patterns/px-have-3.mp3",
+      "tags": [
+        "フレーズの型",
+        "Can I have…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "px-have-4",
+      "english": "Can I have some water, please?",
+      "japanese": "お水をいただけますか？",
+      "chunks": [
+        {
+          "t": "Can I have "
+        },
+        {
+          "t": "some water, ",
+          "w": "w-water"
+        },
+        {
+          "t": "please?"
+        }
+      ],
+      "gap": {
+        "before": "Can I have ",
+        "answer": "some",
+        "after": " water, please?",
+        "options": [
+          "some",
+          "many",
+          "few"
+        ],
+        "why": "water は数えられない名詞。「少しの水」は some water です。"
+      },
+      "audio": "audio/en/patterns/px-have-4.mp3",
+      "tags": [
+        "フレーズの型",
+        "Can I have…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

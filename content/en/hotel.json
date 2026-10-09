@@ -13,7 +13,10 @@
       "pitfallNote": "I'm reserving. は「今予約している最中です」の意味になってしまいます。予約済みなら I have a reservation.",
       "audio": "audio/en/hot-01.mp3",
       "audioHint": "I have a reservation under Tanaka.",
-      "tags": ["チェックイン", "必須"],
+      "tags": [
+        "チェックイン",
+        "必須"
+      ],
       "difficulty": 2
     },
     {
@@ -23,7 +26,9 @@
       "registerNotes": "チェックインの時に聞いておくと安心です。延長したい時は Can I get a late check-out?",
       "audio": "audio/en/hot-02.mp3",
       "audioHint": "What time is check-out?",
-      "tags": ["チェックアウト"],
+      "tags": [
+        "チェックアウト"
+      ],
       "difficulty": 1
     },
     {
@@ -34,7 +39,9 @@
       "pitfallNote": "「モーニングコール」は和製英語。英語では wake-up call です。",
       "audio": "audio/en/hot-03.mp3",
       "audioHint": "Could I get a wake-up call at seven?",
-      "tags": ["お願い"],
+      "tags": [
+        "お願い"
+      ],
       "difficulty": 3
     },
     {
@@ -44,18 +51,23 @@
       "registerNotes": "チェックイン前やチェックアウト後に。荷物を預かってもらう時の定番です。",
       "audio": "audio/en/hot-04.mp3",
       "audioHint": "Can I leave my bags here?",
-      "tags": ["荷物", "お願い"],
+      "tags": [
+        "荷物",
+        "お願い"
+      ],
       "difficulty": 2
     },
     {
       "id": "hot-05",
       "english": "The air conditioner isn't working.",
       "japanese": "エアコンが動きません。",
-      "registerNotes": "isn't working は「故障している・動かない」。shower、TV、Wi-Fi などに置きかえて使えます。",
+      "registerNotes": "isn't working は「故障している・動かない」。shower、TV、Wi-Fi などに置きかえて使えます。ニュージーランドでは冷暖房のエアコンを heat pump と呼ぶことが多いです。",
       "pitfallNote": "「クーラー」は通じにくいです。air conditioner、略して AC と言います。",
       "audio": "audio/en/hot-05.mp3",
       "audioHint": "The air conditioner isn't working.",
-      "tags": ["トラブル"],
+      "tags": [
+        "トラブル"
+      ],
       "difficulty": 3
     },
     {
@@ -65,18 +77,22 @@
       "registerNotes": "some more＋もの で追加のお願い。pillows（まくら）、toilet paper などにも。",
       "audio": "audio/en/hot-06.mp3",
       "audioHint": "Could I have some more towels?",
-      "tags": ["お願い"],
+      "tags": [
+        "お願い"
+      ],
       "difficulty": 2
     },
     {
       "id": "hot-07",
-      "english": "Where is the outlet?",
+      "english": "Where's the power point?",
       "japanese": "コンセントはどこですか？",
-      "registerNotes": "スマホを充電したい時に。",
-      "pitfallNote": "「コンセント」は和製英語。アメリカでは outlet、イギリスでは socket と言います。",
+      "registerNotes": "スマホを充電したい時に。ニュージーランドやオーストラリアでは power point、アメリカでは outlet、イギリスでは socket と言います。",
+      "pitfallNote": "「コンセント」は和製英語。英語の consent は「同意」という意味になってしまいます。",
       "audio": "audio/en/hot-07.mp3",
-      "audioHint": "Where is the outlet?",
-      "tags": ["部屋"],
+      "audioHint": "Where's the power point?",
+      "tags": [
+        "部屋"
+      ],
       "difficulty": 3
     },
     {
@@ -86,18 +102,23 @@
       "registerNotes": "included は「料金に含まれている」。ホテルではとてもよく使います。",
       "audio": "audio/en/hot-08.mp3",
       "audioHint": "Is breakfast included?",
-      "tags": ["料金", "朝食"],
+      "tags": [
+        "料金",
+        "朝食"
+      ],
       "difficulty": 2
     },
     {
       "id": "hot-09",
-      "english": "Where is the front desk?",
+      "english": "Where's reception?",
       "japanese": "フロントはどこですか？",
-      "registerNotes": "イギリスでは reception とも言います。",
-      "pitfallNote": "「フロント」だけでは通じません。front desk か reception と言いましょう。",
+      "registerNotes": "ニュージーランドやイギリスでは reception、アメリカでは front desk と言います。",
+      "pitfallNote": "「フロント」だけでは通じません。reception か front desk と言いましょう。",
       "audio": "audio/en/hot-09.mp3",
-      "audioHint": "Where is the front desk?",
-      "tags": ["館内"],
+      "audioHint": "Where's reception?",
+      "tags": [
+        "館内"
+      ],
       "difficulty": 2
     },
     {
@@ -108,7 +129,10 @@
       "pitfallNote": "I want ... は要求が強く、子どもっぽく聞こえることがあります。お願いには I'd like ... を。",
       "audio": "audio/en/hot-10.mp3",
       "audioHint": "I'd like to check out, please.",
-      "tags": ["チェックアウト", "お願い"],
+      "tags": [
+        "チェックアウト",
+        "お願い"
+      ],
       "difficulty": 1
     }
   ]

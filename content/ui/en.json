@@ -245,9 +245,9 @@
   "connectors.title": "Connectors",
   "connectors.lede": "The words that turn single sentences into conversation — and, but, so, if, when. Each lesson explains one, shows it in sentences you can hear, and drills it.",
   "connectors.mixed": "Mixed practice",
-  "connectors.start": "Start with a connector",
+  "connectors.start": "Start your first lesson",
   "connectors.practisedCount": "{n} of {total} practised",
-  "lesson.back": "← Connectors",
+  "lesson.back": "← {title}",
   "lesson.pattern": "Pattern",
   "lesson.natural": "Sounds natural",
   "lesson.stiff": "Sounds stiff or wrong",
@@ -275,7 +275,7 @@
   "drill.missed_other": "The {n} sentences you missed are now in your reviews.",
   "drill.again": "Practise again",
   "drill.backToLesson": "Back to the lesson",
-  "drill.backToList": "Back to Connectors",
+  "drill.backToList": "Back to the list",
   "drill.none": "No drills here yet.",
   "learn.scenarios": "Conversations",
   "learn.scenariosCount_one": "{n} branching conversation to practise",
@@ -302,5 +302,8 @@
   "data.undone": "Restore undone",
   "today.backupTitle": "Back up your progress",
   "today.backupNever": "It lives only in this browser — no backup yet",
-  "today.backupOld": "It lives only in this browser — last backup {when}"
+  "today.backupOld": "It lives only in this browser — last backup {when}",
+  "pos.adjective": "adjective",
+  "pos.phrase": "phrase",
+  "speaker.driver": "Driver"
 }

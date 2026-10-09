@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "pat-where",
+  "connector": "Where's…?",
+  "gloss": "〜はどこですか",
+  "title": "Where's…? — 〜はどこですか",
+  "pattern": "Where's ＋ the ＋ 場所?",
+  "explanation": "Where's は Where is の短縮形。「〜はどこですか」と場所を聞く基本の形です。お店の中の場所（試着室、レジ、トイレ）には the を付けます：Where's the fitting room? 複数のものなら Where are the ...? になります。",
+  "natural": "お店、駅、建物の中で。最初に Excuse me, を付けると、ていねいに聞こえます。",
+  "stiff": "Where toilet? のように単語だけだと、通じても乱暴に聞こえます。Where's the toilet? と the まで言いましょう。",
+  "examples": [
+    {
+      "id": "px-where-1",
+      "english": "Where's the fitting room?",
+      "japanese": "試着室はどこですか？",
+      "chunks": [
+        {
+          "t": "Where's "
+        },
+        {
+          "t": "the "
+        },
+        {
+          "t": "fitting room?",
+          "w": "w-fitting-room"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Where's",
+        "after": " the fitting room?",
+        "options": [
+          "Where's",
+          "Where",
+          "Where do"
+        ],
+        "why": "Where のあとには is（短縮形の 's）が必要です。"
+      },
+      "audio": "audio/en/patterns/px-where-1.mp3",
+      "tags": [
+        "フレーズの型",
+        "Where's…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-where-2",
+      "english": "Excuse me, where's the checkout?",
+      "japanese": "すみません、レジはどこですか？",
+      "chunks": [
+        {
+          "t": "Excuse me, "
+        },
+        {
+          "t": "where's "
+        },
+        {
+          "t": "the checkout?",
+          "w": "w-checkout"
+        }
+      ],
+      "gap": {
+        "before": "Excuse me, where's ",
+        "answer": "the",
+        "after": " checkout?",
+        "options": [
+          "the",
+          "a",
+          "an"
+        ],
+        "why": "お店のレジのように、どれのことかわかっている場所には the を付けます。"
+      },
+      "audio": "audio/en/patterns/px-where-2.mp3",
+      "tags": [
+        "フレーズの型",
+        "Where's…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-where-3",
+      "english": "Where are the jandals?",
+      "japanese": "ビーチサンダルはどこにありますか？",
+      "chunks": [
+        {
+          "t": "Where "
+        },
+        {
+          "t": "are "
+        },
+        {
+          "t": "the jandals?",
+          "w": "w-jandals"
+        }
+      ],
+      "gap": {
+        "before": "Where ",
+        "answer": "are",
+        "after": " the jandals?",
+        "options": [
+          "are",
+          "is",
+          "do"
+        ],
+        "why": "複数のもの（jandals）には are を使います。"
+      },
+      "audio": "audio/en/patterns/px-where-3.mp3",
+      "tags": [
+        "フレーズの型",
+        "Where's…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "px-where-4",
+      "english": "Where's the end of the queue?",
+      "japanese": "列の最後はどこですか？",
+      "chunks": [
+        {
+          "t": "Where's "
+        },
+        {
+          "t": "the end of "
+        },
+        {
+          "t": "the queue?",
+          "w": "w-queue"
+        }
+      ],
+      "gap": {
+        "before": "Where's the ",
+        "answer": "end",
+        "after": " of the queue?",
+        "options": [
+          "end",
+          "last",
+          "finish"
+        ],
+        "why": "列の最後尾は the end of the queue と言います。"
+      },
+      "audio": "audio/en/patterns/px-where-4.mp3",
+      "tags": [
+        "フレーズの型",
+        "Where's…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

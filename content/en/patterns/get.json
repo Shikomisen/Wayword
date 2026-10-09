@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "pat-get",
+  "connector": "Could I get…?",
+  "gloss": "〜をいただけますか（ていねい）",
+  "title": "Could I get…? — 〜をいただけますか（ていねい）",
+  "pattern": "Could I get ＋ もの ＋ ?",
+  "explanation": "Could I get ...? は「〜をいただけますか」。Can I get ...? を少しやわらかくした形で、カフェやお店での頼みごとにとても自然です。get はここでは「もらう」。Can を Could にするだけで、ぐっとていねいに聞こえます。",
+  "natural": "注文、追加のお願い、レシートや袋など。カジュアルな場面では Can I get ...? もよく使われ、どちらも自然です。",
+  "stiff": "Could you get me ...? も間違いではありませんが、「取ってきて」と相手に動いてもらう頼み方になります。自分がもらうだけなら Could I get ...? が自然です。",
+  "examples": [
+    {
+      "id": "px-get-1",
+      "english": "Could I get a receipt, please?",
+      "japanese": "レシートをいただけますか？",
+      "chunks": [
+        {
+          "t": "Could I get "
+        },
+        {
+          "t": "a receipt, ",
+          "w": "w-receipt"
+        },
+        {
+          "t": "please?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Could",
+        "after": " I get a receipt, please?",
+        "options": [
+          "Could",
+          "Should",
+          "Would"
+        ],
+        "why": "お願いは Could I ...?（Can I ...?）。Should I ...? は「〜したほうがいいですか」という意味です。"
+      },
+      "audio": "audio/en/patterns/px-get-1.mp3",
+      "tags": [
+        "フレーズの型",
+        "Could I get…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-get-2",
+      "english": "Could I get a bag, please?",
+      "japanese": "袋をいただけますか？",
+      "chunks": [
+        {
+          "t": "Could I "
+        },
+        {
+          "t": "get "
+        },
+        {
+          "t": "a bag, ",
+          "w": "w-bag"
+        },
+        {
+          "t": "please?"
+        }
+      ],
+      "gap": {
+        "before": "Could I ",
+        "answer": "get",
+        "after": " a bag, please?",
+        "options": [
+          "get",
+          "got",
+          "getting"
+        ],
+        "why": "Could I の後ろは、動詞の原形（get）です。"
+      },
+      "audio": "audio/en/patterns/px-get-2.mp3",
+      "tags": [
+        "フレーズの型",
+        "Could I get…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-get-3",
+      "english": "Could I get this in a medium?",
+      "japanese": "これのMサイズをいただけますか？",
+      "chunks": [
+        {
+          "t": "Could I get "
+        },
+        {
+          "t": "this "
+        },
+        {
+          "t": "in a medium?",
+          "w": "w-medium"
+        }
+      ],
+      "gap": {
+        "before": "Could I get this ",
+        "answer": "in",
+        "after": " a medium?",
+        "options": [
+          "in",
+          "on",
+          "at"
+        ],
+        "why": "サイズや色は in で表します（in a medium、in black）。"
+      },
+      "audio": "audio/en/patterns/px-get-3.mp3",
+      "tags": [
+        "フレーズの型",
+        "Could I get…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "px-get-4",
+      "english": "Could I get some more napkins?",
+      "japanese": "ナプキンをもう少しいただけますか？",
+      "chunks": [
+        {
+          "t": "Could I get "
+        },
+        {
+          "t": "some more "
+        },
+        {
+          "t": "napkins?",
+          "w": "w-napkin"
+        }
+      ],
+      "gap": {
+        "before": "Could I get some ",
+        "answer": "more",
+        "after": " napkins?",
+        "options": [
+          "more",
+          "much",
+          "most"
+        ],
+        "why": "追加でほしい時は some more ＋ もの。"
+      },
+      "audio": "audio/en/patterns/px-get-4.mp3",
+      "tags": [
+        "フレーズの型",
+        "Could I get…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

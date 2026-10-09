@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "id": "bakery",
+  "title": "パン屋さんで頼む",
+  "category": "shopping",
+  "setting": "近所のベーカリー。ショーケースにパイやスコーンが並んでいます。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "staff",
+      "english": "Hi, what can I get you?",
+      "japanese": "こんにちは、何にしましょう？",
+      "audio": "audio/en/scenario/bakery-n1.mp3",
+      "audioHint": "Hi, what can I get you?",
+      "options": [
+        {
+          "phraseId": "sho-14",
+          "quality": "good",
+          "feedback": "名前がわからなくても、指さしてこう言えば確実です。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "Can I have two cheese scones, please?",
+          "japanese": "チーズスコーンを2つください。",
+          "feedback": "数＋もの の頼み方。2つなので scones と複数形にできています。",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "Give me scone.",
+          "japanese": "（スコーンをくれ）",
+          "feedback": "命令に聞こえてしまいます。Can I have ...? を使いましょう。2つ以上なら scones です。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "staff",
+      "english": "Sure. Anything else?",
+      "japanese": "はい。ほかにはよろしいですか？",
+      "audio": "audio/en/scenario/bakery-n2.mp3",
+      "audioHint": "Sure. Anything else?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "That's all, thanks.",
+          "japanese": "以上です。",
+          "feedback": "注文を終える時の定番です。",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "english": "How much is the carrot cake?",
+          "japanese": "キャロットケーキはいくらですか？",
+          "feedback": "How much is ...? で値段を聞くのは自然です。",
+          "next": "n2b"
+        },
+        {
+          "quality": "awkward",
+          "english": "No more.",
+          "japanese": "（もうない）",
+          "feedback": "That's all, thanks. か No, that's it, thanks. が自然です。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n2b": {
+      "speaker": "staff",
+      "english": "It's six fifty a slice.",
+      "japanese": "1切れ6ドル50セントです。",
+      "audio": "audio/en/scenario/bakery-n2b.mp3",
+      "audioHint": "It's six fifty a slice.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "I'll have a slice too, then.",
+          "japanese": "じゃあ、1切れもらいます。",
+          "feedback": "then（じゃあ）で、相手の答えを受けた自然な返事になります。",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "english": "Oh, no thanks. That's all.",
+          "japanese": "あ、やめておきます。以上です。",
+          "feedback": "値段を聞いてから断るのも、もちろんOKです。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "staff",
+      "english": "Would you like a bag for that?",
+      "japanese": "袋にお入れしますか？",
+      "audio": "audio/en/scenario/bakery-n3.mp3",
+      "audioHint": "Would you like a bag for that?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Yes, please.",
+          "japanese": "はい、お願いします。",
+          "feedback": "これで十分です。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "No, I'm fine, thanks.",
+          "japanese": "いいえ、大丈夫です。",
+          "feedback": "I'm fine. や I'm good. で「結構です」。",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "english": "Yes, vinyl bag.",
+          "japanese": "（はい、ビニール袋）",
+          "feedback": "「ビニール袋」は和製英語で、英語では plastic bag。ニュージーランドでは使い捨てのレジ袋は禁止で、紙袋が一般的です。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "staff",
+      "english": "That's fourteen dollars altogether.",
+      "japanese": "全部で14ドルです。",
+      "audio": "audio/en/scenario/bakery-n4.mp3",
+      "audioHint": "That's fourteen dollars altogether.",
+      "options": [
+        {
+          "phraseId": "sho-05",
+          "quality": "good",
+          "feedback": "支払い方法を確認するいい質問です。",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "english": "Here you go.",
+          "japanese": "はい、どうぞ。",
+          "feedback": "お金を渡す時の自然なひとことです。",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "english": "Forty dollars?",
+          "japanese": "（40ドル？）",
+          "feedback": "fourteen（14）と forty（40）は聞き間違えやすい組み合わせ。自信がなければ Sorry, how much? と聞き返しましょう。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "staff",
+      "english": "Do you want the receipt?",
+      "japanese": "レシートはご入用ですか？",
+      "audio": "audio/en/scenario/bakery-n5.mp3",
+      "audioHint": "Do you want the receipt?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Yes, please.",
+          "japanese": "はい、お願いします。",
+          "feedback": "これで十分です。",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "english": "No, thanks.",
+          "japanese": "いいえ、結構です。",
+          "feedback": "いらない時はこれで。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "wrong",
+          "feedback": "お礼を言われたわけではないので、ちぐはぐです。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "japanese": "お買い物完了。頼む時は Can I have ...?、値段は How much is ...?、袋やレシートを聞かれたら Yes, please. / No, thanks. で十分です。",
+      "end": true,
+      "options": []
+    }
+  }
+}

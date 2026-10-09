@@ -23,6 +23,7 @@ const readJSON = (rel) => JSON.parse(readFileSync(resolve(ROOT, rel), 'utf8'));
 const COURSES = readJSON('content/courses.json').courses;
 const manifestOf = (id) => readJSON(COURSES.find((c) => c.id === id).manifest);
 const JA = manifestOf('en-ja');
+const EN = manifestOf('ja-en');
 
 let JSDOM;
 try {
@@ -819,8 +820,8 @@ await tick(); await tick(); await tick();
 await goTo('#/ja-en/');
 check('today screen is in Japanese', $('h1')?.textContent === '今日', $('h1')?.textContent);
 const tabLabels = [...document.querySelectorAll('.tabbar a')].map((a) => a.textContent);
-check('tab bar is in Japanese, without a Characters tab',
-  tabLabels.join('|') === '📅今日|📚学ぶ|🗣️会話練習|⚙️設定', tabLabels.join(' | '));
+check('tab bar is in Japanese, with the course\'s own name for its lessons and no Characters tab',
+  tabLabels.join('|') === '📅今日|📚学ぶ|🧩フレーズの型|🗣️会話練習|⚙️設定', tabLabels.join(' | '));
 check('tabs link inside the English course',
   [...document.querySelectorAll('.tabbar a')].every((a) => a.getAttribute('href').startsWith('#/ja-en/')));
 check('no Reading row on the English today screen', !text().includes('Reading'));
@@ -863,9 +864,53 @@ await tick(); await tick(); await tick();
 check('English audio is used', played.slice(playedBeforeEn - 1).some((p) => p.startsWith('audio/en/')) ||
   played.some((p) => p.startsWith('audio/en/')), played.at(-1));
 
+await goTo('#/ja-en/category/words-cafe');
+const cafeWords = readJSON(EN.decks.find((d) => d.id === 'words-cafe').file).items;
+check('an English word deck lists its words, English to learn with Japanese meanings',
+  $$('.target[lang="en"]').length === cafeWords.length && $$('.meaning[lang="ja"]').length >= cafeWords.length,
+  `${$$('.target[lang="en"]').length} of ${cafeWords.length}`);
+check('…with Japanese part-of-speech labels', text().includes('名詞') && text().includes('動詞'));
+
+await goTo('#/ja-en/connectors');
+check('the phrase patterns are listed under the course\'s own name',
+  $('h1')?.textContent === 'フレーズの型' && $$('.lesson-row').length === EN.lessons.length &&
+  $$('.connector-mark').every((m) => m.getAttribute('lang') === 'en'),
+  `${$('h1')?.textContent}: ${$$('.lesson-row').length} lessons`);
+check('…grouped as the manifest says', $$('.section-title').map((h) => h.textContent).join('|') ===
+  EN.lessonGroups.map((g) => g.title).join('|'));
+check('…and its tab is lit', document.querySelector('.tabbar a.active')?.dataset.path === '/connectors');
+
+await goTo('#/ja-en/connectors/pat-like');
+const likeFile = readJSON(EN.lessons.find((l) => l.id === 'pat-like').file);
+check('a pattern lesson shows the English pattern, a Japanese explanation and its examples',
+  $('.connector-title')?.textContent === likeFile.connector && $('.connector-title')?.getAttribute('lang') === 'en' &&
+  Boolean($('.lesson-explanation')) && $$('.item-sentence').length === likeFile.examples.length,
+  $('.connector-title')?.textContent);
+check('…with a way back to the list by its name', text().includes('← フレーズの型'));
+check('…and no furigana in an English lesson', $$('ruby').length === 0);
+
+await goTo('#/ja-en/connectors/pat-like/practice');
+check('pattern practice opens on a drill in Japanese', Boolean($('.drill-card')) && document.documentElement.lang === 'ja',
+  $('.drill-card')?.dataset.drill);
+const likeEx = Object.fromEntries(likeFile.examples.map((x) => [x.id, x]));
+const firstLike = likeEx[$('.drill-card')?.dataset.example];
+if ($('.drill-card')?.dataset.drill === 'fill') {
+  $$('.option').find((b) => b.dataset.value === firstLike.gap.answer)?.click();
+} else {
+  for (let i = 0; i < firstLike.chunks.length; i++) { $(`.tile-pool .tile[data-chunk="${i}"]`)?.click(); await tick(); }
+  $$('.drill-actions button').find((b) => b.textContent === '答え合わせ')?.click();
+}
+await tick(); await tick();
+check('…and the right answer is marked right', Boolean($('.verdict-right')), $('.verdict')?.textContent);
+
 await goTo('#/ja-en/scenarios');
-check('scenario list in Japanese with all 6 English scenarios',
-  text().includes('会話練習') && $$('.row-card').length === 6, `${$$('.row-card').length} scenarios`);
+check('scenario list in Japanese with all 7 English scenarios',
+  text().includes('会話練習') && $$('.row-card').length === EN.scenarios.length && EN.scenarios.length === 7,
+  `${$$('.row-card').length} scenarios`);
+await goTo('#/ja-en/scenario/cafe');
+check('the café scenario has the learner ordering, as the customer',
+  $('.dialogue-who')?.textContent === 'バリスタ' && $$('.btn-option').some((b) => b.textContent.includes("I'd like")),
+  `${$('.dialogue-who')?.textContent}: ${$$('.btn-option').map((b) => b.textContent.slice(0, 30)).join(' / ')}`);
 await goTo('#/ja-en/scenario/immigration');
 check('NPC line is English with a Japanese meaning',
   $('.dialogue.npc .target')?.getAttribute('lang') === 'en' && $('.dialogue.npc .meaning')?.getAttribute('lang') === 'ja',

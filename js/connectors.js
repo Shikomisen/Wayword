@@ -20,7 +20,7 @@ import { t } from './i18n.js';
 import {
   el, clear, targetNode, meaningNode, audioButton, phraseBlock, furiganaMode, proseNode,
 } from './render.js';
-import { header, playItem, studySettings, toggleStrip, wordLinks } from './shared.js';
+import { header, playItem, studySettings, toggleStrip, wordLinks, lessonsCopy } from './shared.js';
 import { DRILL, drillsFor, buildSession, tilesFor, checkTiles, shuffle } from './drills.js';
 
 // A mixed session is short: a few minutes, not a test.
@@ -33,10 +33,12 @@ export async function renderConnectors(root) {
   const stats = await deck.getLessonStats();
   const groups = content.lessonGroups.length ? content.lessonGroups : [{ id: undefined, title: null }];
   const practised = content.lessons.filter((l) => stats[l.id]).length;
+  const copy = lessonsCopy(content);
+  const lang = content.course.target;
 
   root.append(
     el('div', { class: 'screen' },
-      header(t('connectors.title'), t('connectors.lede')),
+      header(copy.title, copy.lede),
       el('div', { class: 'action-row' },
         el('a', { class: 'btn btn-primary', href: link('/connectors/mixed') }, t('connectors.mixed')),
         el('span', { class: 'muted small' },
@@ -46,15 +48,15 @@ export async function renderConnectors(root) {
         return lessons.length
           ? el('section', {},
               g.title ? el('h2', { class: 'section-title' }, g.title) : null,
-              el('div', { class: 'card-list' }, lessons.map((l) => lessonRow(l, stats[l.id]))))
+              el('div', { class: 'card-list' }, lessons.map((l) => lessonRow(l, stats[l.id], lang))))
           : null;
       }))
   );
 }
 
-function lessonRow(lesson, stat) {
+function lessonRow(lesson, stat, lang) {
   return el('a', { class: 'row-card lesson-row', href: link(`/connectors/${lesson.id}`), dataset: { lesson: lesson.id } },
-    el('span', { class: 'connector-mark', lang: 'ja' }, lesson.connector),
+    el('span', { class: 'connector-mark', lang }, lesson.connector),
     el('span', { class: 'row-body' },
       el('span', { class: 'row-title' }, lesson.gloss),
       el('span', { class: 'row-sub' }, stat?.best ? t('lesson.best', stat.best) : t('lesson.notPractised'))),
@@ -75,9 +77,9 @@ export async function renderLesson(root, id) {
 
   root.append(
     el('div', { class: 'screen lesson' },
-      el('a', { class: 'back-link', href: link('/connectors') }, t('lesson.back')),
+      el('a', { class: 'back-link', href: link('/connectors') }, t('lesson.back', { title: lessonsCopy(content).title })),
       el('header', { class: 'screen-header' },
-        el('h1', { class: 'connector-title', lang: 'ja' }, lesson.connector),
+        el('h1', { class: 'connector-title', lang: content.course.target }, lesson.connector),
         el('p', { class: 'lede' }, lesson.gloss)),
       el('div', { class: 'lesson-pattern' }, el('span', { class: 'note-label' }, t('lesson.pattern')), lesson.pattern),
 

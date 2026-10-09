@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "pat-doyouhave",
+  "connector": "Do you have…?",
+  "gloss": "〜はありますか",
+  "title": "Do you have…? — 〜はありますか",
+  "pattern": "Do you have ＋ もの ＋（in ＋ サイズ・色）?",
+  "explanation": "Do you have ...? は「〜はありますか」。お店に在庫があるか、別のサイズや色があるかを聞く基本の形です。サイズや色を指定する時は in を使います：in a bigger size（大きいサイズで）、in navy（紺色で）。",
+  "natural": "洋服屋さん、スーパー、カフェのメニューまで。答えは Yes, we do. / Sorry, we don't. / Let me check.（確認します）などです。",
+  "stiff": "This in big size? のように単語を並べるだけだと、伝わってもぶっきらぼうに聞こえます。Do you have this in a bigger size? と文で言いましょう。",
+  "examples": [
+    {
+      "id": "px-doyouhave-1",
+      "english": "Do you have this in a bigger size?",
+      "japanese": "これの大きいサイズはありますか？",
+      "chunks": [
+        {
+          "t": "Do you have "
+        },
+        {
+          "t": "this "
+        },
+        {
+          "t": "in a bigger size?",
+          "w": "w-bigger"
+        }
+      ],
+      "gap": {
+        "before": "Do you have this in a ",
+        "answer": "bigger",
+        "after": " size?",
+        "options": [
+          "bigger",
+          "more big",
+          "biger"
+        ],
+        "why": "big の比較級は bigger（g を重ねます）。more big とは言いません。"
+      },
+      "audio": "audio/en/patterns/px-doyouhave-1.mp3",
+      "tags": [
+        "フレーズの型",
+        "Do you have…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-doyouhave-2",
+      "english": "Do you have this in a smaller size?",
+      "japanese": "これの小さいサイズはありますか？",
+      "chunks": [
+        {
+          "t": "Do you have "
+        },
+        {
+          "t": "this "
+        },
+        {
+          "t": "in a smaller size?",
+          "w": "w-smaller"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Do",
+        "after": " you have this in a smaller size?",
+        "options": [
+          "Do",
+          "Are",
+          "Is"
+        ],
+        "why": "have を使った疑問文は Do you have ...? です。"
+      },
+      "audio": "audio/en/patterns/px-doyouhave-2.mp3",
+      "tags": [
+        "フレーズの型",
+        "Do you have…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-doyouhave-3",
+      "english": "Do you have this in navy?",
+      "japanese": "これの紺色はありますか？",
+      "chunks": [
+        {
+          "t": "Do you have "
+        },
+        {
+          "t": "this "
+        },
+        {
+          "t": "in navy?",
+          "w": "w-navy"
+        }
+      ],
+      "gap": {
+        "before": "Do you have this ",
+        "answer": "in",
+        "after": " navy?",
+        "options": [
+          "in",
+          "on",
+          "with"
+        ],
+        "why": "色やサイズは in で表します（in navy、in a medium）。"
+      },
+      "audio": "audio/en/patterns/px-doyouhave-3.mp3",
+      "tags": [
+        "フレーズの型",
+        "Do you have…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "px-doyouhave-4",
+      "english": "Do you have any vegetarian options?",
+      "japanese": "ベジタリアン向けのメニューはありますか？",
+      "chunks": [
+        {
+          "t": "Do you have "
+        },
+        {
+          "t": "any "
+        },
+        {
+          "t": "vegetarian options?",
+          "w": "w-vegetarian"
+        }
+      ],
+      "gap": {
+        "before": "Do you have ",
+        "answer": "any",
+        "after": " vegetarian options?",
+        "options": [
+          "any",
+          "a",
+          "much"
+        ],
+        "why": "疑問文で「何か〜はある？」と聞く時は、any ＋ 複数形がよく使われます。"
+      },
+      "audio": "audio/en/patterns/px-doyouhave-4.mp3",
+      "tags": [
+        "フレーズの型",
+        "Do you have…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

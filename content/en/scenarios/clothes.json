@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "clothes",
+  "title": "服を試着する",
+  "category": "shopping",
+  "setting": "ウェリントンの洋服屋さん。気になるジャケットを見つけました。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "staff",
+      "english": "Hi! Are you after anything in particular?",
+      "japanese": "こんにちは！何かお探しですか？",
+      "audio": "audio/en/scenario/clothes-n1.mp3",
+      "audioHint": "Hi! Are you after anything in particular?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Yes, can I try this jacket on?",
+          "japanese": "はい、このジャケットを試着してもいいですか？",
+          "feedback": "用件がはっきり伝わる、いい答え方です。",
+          "next": "n2"
+        },
+        {
+          "phraseId": "sho-03",
+          "quality": "good",
+          "feedback": "手に持っている服を見せながら言えば完璧です。",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "Fitting, please.",
+          "japanese": "（試着、お願い）",
+          "feedback": "単語だけだと伝わりにくいです。Can I try this on? と文で言いましょう。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "staff",
+      "english": "Of course! The fitting rooms are just down the back.",
+      "japanese": "もちろんです！試着室は奥にあります。",
+      "audio": "audio/en/scenario/clothes-n2.mp3",
+      "audioHint": "Of course! The fitting rooms are just down the back.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Great, thanks.",
+          "japanese": "わかりました、ありがとう。",
+          "feedback": "これで十分です。",
+          "next": "n3"
+        },
+        {
+          "phraseId": "sho-12",
+          "quality": "good",
+          "feedback": "聞き取れなかった時に、場所をもう一度確認するのは自然です。",
+          "next": "n3"
+        },
+        {
+          "phraseId": "gre-11",
+          "quality": "awkward",
+          "feedback": "悪くはありませんが、短い文なので、まずは Sorry? と聞き返せば十分です。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "staff",
+      "english": "How did you go with that?",
+      "japanese": "いかがでしたか？",
+      "audio": "audio/en/scenario/clothes-n3.mp3",
+      "audioHint": "How did you go with that?",
+      "options": [
+        {
+          "phraseId": "sho-13",
+          "quality": "good",
+          "feedback": "サイズが合わない時の自然な言い方です。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "It doesn't fit.",
+          "japanese": "サイズが合いません。",
+          "feedback": "fit は「サイズが合う」。短く伝わります。",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "english": "I went well.",
+          "japanese": "（わたしはうまく行った）",
+          "feedback": "How did you go? はニュージーランドやオーストラリアで「どうでしたか？」という意味。go を使って答える必要はありません。It's a bit too small. のように答えましょう。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "staff",
+      "english": "Oh no. Would you like to try the next size up?",
+      "japanese": "あら。ひとつ上のサイズを試してみますか？",
+      "audio": "audio/en/scenario/clothes-n4.mp3",
+      "audioHint": "Oh no. Would you like to try the next size up?",
+      "options": [
+        {
+          "phraseId": "sho-11",
+          "quality": "good",
+          "feedback": "大きいサイズを頼む定番の言い方です。",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "english": "Yes, please!",
+          "japanese": "はい、お願いします！",
+          "feedback": "提案にはこれで十分です。",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "english": "More big, please.",
+          "japanese": "（もっと大きいのを）",
+          "feedback": "気持ちは伝わりますが、a bigger size が正しい形です。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "staff",
+      "english": "Here you go — that's a medium. It's on special today, too.",
+      "japanese": "どうぞ、こちらがMサイズです。今日は特価にもなっていますよ。",
+      "audio": "audio/en/scenario/clothes-n5.mp3",
+      "audioHint": "Here you go — that's a medium. It's on special today, too.",
+      "options": [
+        {
+          "phraseId": "sho-04",
+          "quality": "good",
+          "feedback": "買うと決めたらこれ。",
+          "next": "n6"
+        },
+        {
+          "phraseId": "num-01",
+          "quality": "good",
+          "feedback": "値段を確認してから決めるのも自然です。",
+          "next": "n6"
+        },
+        {
+          "quality": "wrong",
+          "english": "It's for sale?",
+          "japanese": "（これは売り物ですか？）",
+          "feedback": "for sale は「売り物」。特価かどうかを聞くなら Is it on special? です。",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "staff",
+      "english": "That's eighty-nine dollars. EFTPOS or credit?",
+      "japanese": "89ドルです。デビット払いですか、クレジットですか？",
+      "audio": "audio/en/scenario/clothes-n6.mp3",
+      "audioHint": "That's eighty-nine dollars. EFTPOS or credit?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "EFTPOS, please.",
+          "japanese": "デビットで。",
+          "feedback": "ニュージーランドでは、デビット払いを EFTPOS と言います。",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "english": "Credit, please.",
+          "japanese": "クレジットで。",
+          "feedback": "これで十分です。",
+          "next": "end"
+        },
+        {
+          "phraseId": "sho-05",
+          "quality": "awkward",
+          "feedback": "通じますが、もうカード払いの前提で聞かれています。EFTPOS か credit で答えましょう。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "japanese": "お買い物完了！試着は Can I try this on?、サイズは Do you have this in a bigger size?。ニュージーランドのレジでは EFTPOS（デビット払い）をよく聞きます。",
+      "end": true,
+      "options": []
+    }
+  }
+}
