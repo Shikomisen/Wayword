@@ -212,6 +212,28 @@ check('deck summary is scoped to active categories only',
 check('cards for not-yet-rolled-out categories are parked, not queued',
   (await deck.queue()).every((c) => active.has(c.categoryId)));
 
+// Taking a deck out again: its cards stop coming up, and keep their progress.
+check('a first add is not mistaken for a return, even with placement cards already there', added.readded === false);
+const hotelCards = () => deck.getDeck().then((cards) => cards.filter((c) => c.categoryId === 'hotel'));
+const studiedHotel = (await hotelCards()).find((c) => c.state === 'new');
+await deck.grade(studiedHotel.id, srs.GRADE.GOOD);
+const hotelBefore = JSON.stringify(await hotelCards());
+const totalWithHotel = (await deck.deckSummary()).total;
+await deck.deactivateCategory('hotel');
+check('a deck can be taken out of study', !(await deck.isActive('hotel')));
+check('…its cards stop coming up — not in the queue, not in the counts',
+  (await deck.queue()).every((c) => c.categoryId !== 'hotel') &&
+    (await deck.deckSummary()).total === totalWithHotel - (await hotelCards()).length,
+  `${totalWithHotel} → ${(await deck.deckSummary()).total}`);
+check('…but every card is kept, progress and all', JSON.stringify(await hotelCards()) === hotelBefore,
+  `${(await hotelCards()).length} cards`);
+check('…and adding directions while it is out leaves it alone', (await deck.syncDirections()) === 0);
+const hotelBack = await deck.activateCategory('hotel');
+check('adding it again brings it back exactly as it was, and says so',
+  hotelBack.readded && hotelBack.added === 0 && (await deck.isActive('hotel')) &&
+    JSON.stringify(await hotelCards()) === hotelBefore);
+check('…once: adding it again later is just adding', (await deck.activateCategory('hotel')).readded === false);
+
 /* ---------- 7. scenario trees ---------- */
 
 console.log('\n7. Scenario dialogue trees');
@@ -310,6 +332,15 @@ check('character queue respects its own daily cap',
 check('new characters arrive easiest-first — base kana before yōon',
   charQueue.every((c) => (c.difficulty ?? 3) === 1),
   `difficulties: ${[...new Set(charQueue.map((c) => c.difficulty))].join(',')}`);
+
+// A set can come out of study and back, keeping its cards — like a deck.
+const hiraCount = (await deck.getDeck()).filter((c) => c.categoryId === 'hiragana').length;
+await deck.deactivateCharacterSet('hiragana');
+check('a character set can be taken out: nothing of it is queued, every card kept',
+  !(await deck.isSetActive('hiragana')) && (await deck.characterQueue()).length === 0 &&
+    (await deck.getDeck()).filter((c) => c.categoryId === 'hiragana').length === hiraCount);
+const hiraBack = await deck.activateCharacterSet('hiragana');
+check('…and comes back as it was', hiraBack.readded && hiraBack.added === 0 && (await deck.characterQueue()).length === charQueue.length);
 
 check('phrase queue is unchanged by adding characters',
   (await deck.queue()).length === phraseQueueBefore, `${phraseQueueBefore} before and after`);

@@ -577,6 +577,21 @@ review and grading over it.
 The tab that was *Browse* is now **Learn**: word decks, sentence decks, the
 phrase categories, and your own words, in that order.
 
+**Adding and taking out decks.** *Add* puts a deck into study. Its row then
+shows **✓ In deck**, which is a button too: tap it again to take the deck out.
+The deck's own page, a lesson in the reviews, and a character set all offer
+the same.
+- **It asks first**, and says what happens: the deck's cards stop coming up
+  in the reviews, the counts and the forecast, but every card keeps its
+  progress.
+- **Adding it again carries on where it left off**, and says so ("back in
+  your deck, with your progress"). The cards were never deleted; the deck
+  was only parked — like a card type switched off.
+- **A deck taken out is remembered** (`parkedDecks` and `parkedSets` in
+  settings, so backups carry it). That's how a return is told apart from a
+  first add. A first add can't be judged by "it already has cards", because
+  the placement quiz gives a couple of cards to decks not added yet.
+
 **Word decks** (`content/ja/words/*.json`, 12 decks, 197 words). Each word has
 its meaning, part of speech, a usage note where one helps (あなた is best
 avoided to someone's face; 彼女 is both "she" and "girlfriend"), and — for

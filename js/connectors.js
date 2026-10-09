@@ -20,7 +20,7 @@ import { t } from './i18n.js';
 import {
   el, clear, targetNode, meaningNode, audioButton, phraseBlock, furiganaMode, proseNode,
 } from './render.js';
-import { header, playItem, studySettings, toggleStrip, wordLinks, lessonsCopy } from './shared.js';
+import { header, playItem, studySettings, toggleStrip, wordLinks, lessonsCopy, removeDeck } from './shared.js';
 import { DRILL, drillsFor, buildSession, tilesFor, checkTiles, shuffle } from './drills.js';
 
 // A mixed session is short: a few minutes, not a test.
@@ -86,7 +86,14 @@ export async function renderLesson(root, id) {
       el('div', { class: 'action-row' },
         el('a', { class: 'btn btn-primary', href: link(`/connectors/${id}/practice`) }, t('lesson.practise')),
         el('a', { class: 'btn', href: link(`/study/${id}`) }, t('lesson.studyCards')),
-        el('span', { class: 'muted small' }, stat?.best ? t('lesson.best', stat.best) : t('lesson.drillCount', { n: drills }))),
+        el('span', { class: 'muted small' }, stat?.best ? t('lesson.best', stat.best) : t('lesson.drillCount', { n: drills })),
+        // Its sentences are in the reviews (studied as cards, or missed in a drill): they can come out again.
+        s.activeCategories.includes(id)
+          ? el('button', {
+              class: 'btn btn-small btn-ghost remove-deck', type: 'button',
+              onclick: async () => { if (await removeDeck(lesson)) redraw(); },
+            }, t('browse.remove'))
+          : null),
 
       proseNode(lesson.explanation, { furigana: mode, className: 'prose lesson-explanation' }),
       el('div', { class: 'notes' },

@@ -337,5 +337,9 @@
   "listening.newlyMastered_one": "1 newly mastered",
   "listening.newlyMastered_other": "{n} newly mastered",
   "listening.backToday": "Back to Today",
-  "listening.count": "{lines} lines · {pairs} sound pairs"
+  "listening.count": "{lines} lines · {pairs} sound pairs",
+  "browse.remove": "Take out of deck",
+  "browse.removeConfirm": "Take “{title}” out of your deck?\n\nIts cards stop coming up in your reviews, but your progress is kept — add it again any time to carry on where you left off.",
+  "browse.removed": "Took “{title}” out of your deck — your progress is kept",
+  "browse.readded": "“{title}” is back in your deck, with your progress"
 }

@@ -308,5 +308,9 @@
   "listening.drillDone": "聞き取り完了",
   "listening.newlyMastered": "新しく{n}個を習得",
   "listening.backToday": "今日に戻る",
-  "listening.count": "{lines}文・音のペア{pairs}組"
+  "listening.count": "{lines}文・音のペア{pairs}組",
+  "browse.remove": "デッキから外す",
+  "browse.removeConfirm": "「{title}」をデッキから外しますか？\n\n復習には出てこなくなりますが、学習の記録は残ります。もう一度追加すれば、続きから再開できます。",
+  "browse.removed": "「{title}」をデッキから外しました（記録は残っています）",
+  "browse.readded": "「{title}」をデッキに戻しました。前回の続きから学習できます"
 }

@@ -1809,3 +1809,38 @@ casual is what you *say* to a partner. So:
     the network cut; no errors are logged.
   - The check now visits sections without a tab (listening), and accepts a
     drill's question where a screen has no heading.
+
+### A91 — A deck can be taken out again: tap "In deck"
+- **Asked for:** "While there is an option to add to deck, there is no way
+  to click it again to remove."
+- **Where:**
+  - **On Learn:** the "In deck / 学習中" pill is now a button that looks the
+    same, with ✓ and `aria-pressed`. Tapping it takes the deck out.
+  - **On a deck's own page**, a quiet "Take out of deck / デッキから外す"
+    button while it's in study.
+  - **On a lesson's page**, the same button once the lesson is in the
+    reviews (studied as cards, or missed in a drill).
+  - **Character sets** work the same, on their list and on a set's page. The
+    wording is English, like the rest of that section.
+- **Taking out parks; it doesn't delete.** The deck leaves the active list,
+  so its cards stop coming up in the queue, the counts and the forecast, and
+  new card types aren't added to it. Every card keeps its state. Deleting
+  progress for a tap would be a poor trade, and this is how a card type
+  switched off already behaves.
+- **It asks first** (`confirm`, as resetting and restoring do), saying the
+  progress is kept. A toast confirms afterwards.
+- **Coming back is told apart from a first add.** Removed decks and sets are
+  recorded in settings (`parkedDecks`, `parkedSets`), so re-adding says
+  "back in your deck, with your progress" rather than "Added 0 cards".
+  - "It already has cards" couldn't be the test: the placement quiz gives a
+    couple of cards to decks that were never added.
+  - A missed drill that brings a removed lesson back also clears the record.
+- **Tests:**
+  - integration (254): a first add isn't a return; taking out empties the
+    queue and counts but keeps every card byte-for-byte; switching card
+    types leaves it alone; adding it back restores it exactly, once; a
+    character set does the same;
+  - render (278): "In deck" taps through a confirm that "no" cancels, then
+    out and Add again with a toast, Today without it, back with its
+    progress; the deck and lesson pages offer it; a character set too.
+- **Cache v11**, since the app code changed.

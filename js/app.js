@@ -25,7 +25,7 @@ import { t, setLang, locale, getLang } from './i18n.js';
 import * as backup from './backup.js';
 import { el, clear, phraseBlock, notesBlock, tagRow, audioButton, toast, politeBlock } from './render.js';
 import {
-  header, stat, playItem, studySettings, toggleStrip, deckHref, wordLinks, sentenceLinks, lessonsCopy,
+  header, stat, playItem, studySettings, toggleStrip, deckHref, wordLinks, sentenceLinks, lessonsCopy, addDeck, removeDeck,
 } from './shared.js';
 import { renderPlacement } from './quiz.js';
 import { renderScenarioList, renderScenario } from './scenario.js';
@@ -565,14 +565,20 @@ function browseRow(d, s) {
     el('a', { class: 'row-body', href: link(`/category/${d.id}`) },
       el('span', { class: 'row-title' }, d.title),
       el('span', { class: 'row-sub' }, d.missing ? t('browse.missing') : countLine(d))),
+    // In the deck: tap again to take it out (asked first; its progress is kept).
     active
-      ? el('span', { class: 'pill pill-on' }, t('browse.inDeck'))
-      : el('button', {
-          class: 'btn btn-small',
+      ? el('button', {
+          class: 'btn btn-small btn-in-deck', type: 'button', 'aria-pressed': 'true', title: t('browse.remove'),
           onclick: async (e) => {
             e.preventDefault();
-            const { added, seeded } = await deck.activateCategory(d.id);
-            toast(seeded ? t('browse.addedSeeded', { added, seeded }) : t('browse.added', { added }));
+            if (await removeDeck(d)) router();
+          },
+        }, `✓ ${t('browse.inDeck')}`)
+      : el('button', {
+          class: 'btn btn-small', type: 'button',
+          onclick: async (e) => {
+            e.preventDefault();
+            await addDeck(d);
             router();
           },
         }, t('browse.add')));
@@ -626,12 +632,17 @@ async function deckScreen(root, id) {
           : el('button', {
               class: 'btn btn-primary',
               onclick: async () => {
-                const { added } = await deck.activateCategory(id);
-                toast(t('category.addedToDeck', { added }));
+                await addDeck(d, ({ added }) => t('category.addedToDeck', { added }));
                 router();
               },
             }, t('category.add')),
-        active ? el('span', { class: 'muted small' }, t('category.dueNew', { due: progress.due, fresh: progress.new })) : null),
+        active ? el('span', { class: 'muted small' }, t('category.dueNew', { due: progress.due, fresh: progress.new })) : null,
+        active
+          ? el('button', {
+              class: 'btn btn-small btn-ghost remove-deck', type: 'button',
+              onclick: async () => { if (await removeDeck(d)) router(); },
+            }, t('browse.remove'))
+          : null),
 
       el('div', { class: 'phrase-list' },
         (d.items || d.phrases).map((item) => itemCard(item, s, content)))

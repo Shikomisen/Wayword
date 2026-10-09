@@ -212,14 +212,45 @@ check('word decks say how many words they hold',
   $('.row-card[data-deck="words-people"] .row-sub')?.textContent === `${readJSON(JA.decks[0].file).items.length} words`,
   $('.row-card[data-deck="words-people"] .row-sub')?.textContent);
 check('no week-by-week or trip framing left', !/Week \d|trip/i.test(text()));
-check('starter decks marked as in-deck', $$('.pill-on').length === jaStarters.length, `${$$('.pill-on').length} in deck`);
+check('starter decks marked as in-deck', $$('.btn-in-deck').length === jaStarters.length, `${$$('.btn-in-deck').length} in deck`);
 check('the rest offer an Add button',
   $$('button').filter((b) => b.textContent === 'Add').length === jaDecks.length - jaStarters.length);
+
+// "In deck" is a button too: tap it again to take the deck out — asked first, progress kept.
+const smalltalkRow = () => $('.row-card[data-deck="smalltalk"]');
+check('"In deck" can be tapped again, and says what it does',
+  smalltalkRow()?.querySelector('.btn-in-deck')?.getAttribute('aria-pressed') === 'true' &&
+    smalltalkRow()?.querySelector('.btn-in-deck')?.title === 'Take out of deck');
+const askedRemove = [];
+globalThis.confirm = (message) => { askedRemove.push(message); return false; };
+smalltalkRow().querySelector('.btn-in-deck').click();
+for (let i = 0; i < 6; i++) await tick();
+check('taking a deck out asks first, saying its progress is kept — and "no" changes nothing',
+  askedRemove.length === 1 && askedRemove[0].includes('Small Talk') && askedRemove[0].includes('progress is kept') &&
+    (await deck.getSettings()).activeCategories.includes('smalltalk'), askedRemove[0]?.split('\n')[0]);
+globalThis.confirm = () => true;
+const smalltalkCards = JSON.stringify((await deck.getDeck()).filter((c) => c.categoryId === 'smalltalk'));
+smalltalkRow().querySelector('.btn-in-deck').click();
+for (let i = 0; i < 6; i++) await tick();
+check('"yes" takes it out: the row offers Add again, and a toast says the progress is kept',
+  !(await deck.getSettings()).activeCategories.includes('smalltalk') &&
+    smalltalkRow()?.querySelector('button')?.textContent === 'Add' && !smalltalkRow()?.classList.contains('is-active') &&
+    [...document.querySelectorAll('.toast')].some((n) => n.textContent.includes('Small Talk') && n.textContent.includes('progress is kept')));
+await goTo('#/en-ja/');
+check('Today no longer lists it', !$$('.row-card').some((r) => r.textContent.includes('Small Talk')));
+await goTo('#/en-ja/browse');
+smalltalkRow().querySelector('button').click();
+for (let i = 0; i < 6; i++) await tick();
+check('adding it again brings it back with its progress, and says so',
+  Boolean(smalltalkRow()?.querySelector('.btn-in-deck')) &&
+    JSON.stringify((await deck.getDeck()).filter((c) => c.categoryId === 'smalltalk')) === smalltalkCards &&
+    [...document.querySelectorAll('.toast')].some((n) => n.textContent.includes('is back in your deck')));
 
 console.log('\n4. Category detail');
 
 await goTo('#/en-ja/category/greetings');
 check('category renders', text().includes('Greetings & Politeness'));
+check('a deck in study can be taken out from its own page too', document.querySelector('.remove-deck')?.textContent === 'Take out of deck');
 check('all phrases listed', $$('.phrase-card').length === 24, `${$$('.phrase-card').length} cards`);
 check('every polite phrase is labelled Polite',
   $$('.phrase-card .register-polite').length === 24 && !$('.phrase-card .register-casual'));
@@ -508,6 +539,8 @@ check('…and ends with the score', $('.practice-done') && text().includes(`${dr
 check('…saying the missed sentence went into the reviews', text().includes('The sentence you missed is now in your reviews.'));
 const missedCard = await deck.getCard(`${wrongOn}~p`);
 check('the missed sentence is in the deck as a failed "say it" card', missedCard?.state === 'learning', wrongOn);
+await goTo('#/en-ja/connectors/con-kara');
+check('…and the lesson, now in the reviews, can be taken out of them from its page', document.querySelector('.remove-deck')?.textContent === 'Take out of deck');
 await goTo('#/en-ja/connectors');
 check('the lesson list shows the best score', $('.lesson-row[data-lesson="con-kara"] .row-sub')?.textContent ===
   `Best: ${drillsDone - 1} of ${drillsDone}`, $('.lesson-row[data-lesson="con-kara"] .row-sub')?.textContent);
@@ -579,8 +612,17 @@ check('stroke-order deferral is disclosed', text().includes('stroke-order'));
 // Add hiragana, then confirm it lands in the character deck only.
 $$('button').find((b) => b.textContent === 'Add')?.click();
 await tick(); await tick(); await tick(); await tick();
-check('adding a set marks it in-deck', $$('.pill-on').length === 1);
+check('adding a set marks it in-deck', document.querySelectorAll('.btn-in-deck').length === 1);
 check('character review becomes available', text().includes('Review characters'));
+document.querySelector('.btn-in-deck')?.click();
+for (let i = 0; i < 6; i++) await tick();
+check('a set can be taken out the same way, its cards kept',
+  !document.querySelector('.btn-in-deck') && !(await deck.isSetActive('hiragana')) &&
+    (await deck.getDeck()).some((c) => c.categoryId === 'hiragana'));
+[...document.querySelectorAll('button')].find((b) => b.textContent === 'Add')?.click();
+for (let i = 0; i < 6; i++) await tick();
+check('…and added back, with its progress', (await deck.isSetActive('hiragana')) &&
+  [...document.querySelectorAll('.toast')].some((n) => n.textContent.includes('Hiragana is back in your deck')));
 
 await goTo('#/en-ja/characters/hiragana');
 check('hiragana chart renders', text().includes('Hiragana'));

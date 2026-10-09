@@ -12,6 +12,29 @@ import { t } from './i18n.js';
 import { el, toast } from './render.js';
 
 /**
+ * Add a deck to study, and say what happened: how many cards it added — or,
+ * for a deck taken out earlier, that it's back with its progress.
+ */
+export async function addDeck(d, firstTime = ({ added, seeded }) =>
+  (seeded ? t('browse.addedSeeded', { added, seeded }) : t('browse.added', { added }))) {
+  const result = await deck.activateCategory(d.id);
+  toast(result.readded ? t('browse.readded', { title: d.title }) : firstTime(result));
+  return result;
+}
+
+/**
+ * Take a deck out of study, once confirmed. Its cards keep their progress
+ * (deck.deactivateCategory), so the question says so. Resolves to whether it
+ * was taken out.
+ */
+export async function removeDeck(d) {
+  if (!confirm(t('browse.removeConfirm', { title: d.title }))) return false;
+  await deck.deactivateCategory(d.id);
+  toast(t('browse.removed', { title: d.title }));
+  return true;
+}
+
+/**
  * Where a deck lives in the app: a connector lesson opens in Connectors,
  * your own words in their own screen, a character set in Characters, and
  * everything else on the deck screen.

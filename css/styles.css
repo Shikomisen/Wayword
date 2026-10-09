@@ -147,6 +147,10 @@ rt { font-size: 0.45em; color: var(--fg-muted); font-weight: 400; }
 .bar-fill { display: block; background: var(--accent); height: 100%; border-radius: 99px; transition: width 0.3s ease; }
 
 .pill { font-size: 0.72rem; padding: 4px 10px; border-radius: 99px; background: var(--accent-soft); color: var(--accent); }
+/* A deck that's in: looks like the "in deck" pill, and is a button — tap again to take it out. */
+.btn-in-deck { border-radius: 99px; background: var(--accent-soft); border-color: transparent; color: var(--accent); font-size: 0.78rem; }
+.btn-in-deck:hover, .btn-in-deck:focus-visible { border-color: var(--accent); }
+.remove-deck { margin-left: auto; }
 
 .empty-state { text-align: center; padding: 32px 12px; }
 .action-row { display: flex; align-items: center; gap: 12px; margin-bottom: 18px; flex-wrap: wrap; }

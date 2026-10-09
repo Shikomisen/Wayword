@@ -40,6 +40,15 @@ async function playCharacter(c) {
   return result;
 }
 
+/** Take a character set out of study, once confirmed. Its cards keep their progress. */
+async function removeSet(set) {
+  if (!confirm(`Take ${set.title} out of your character deck?\n\nIts cards stop coming up in your reviews, ` +
+    'but your progress is kept — add it again any time to carry on where you left off.')) return false;
+  await deck.deactivateCharacterSet(set.id);
+  toast(`Took ${set.title} out of your deck — your progress is kept`);
+  return true;
+}
+
 /* ---------- set list ---------- */
 
 export async function renderCharacterList(root) {
@@ -70,14 +79,23 @@ export async function renderCharacterList(root) {
                 ? `After hiragana — ${hira.mastered}/${hira.total} mastered so far`
                 : `${set.characters.length} characters`),
         active ? el('span', { class: 'bar' }, el('span', { class: 'bar-fill', style: `width:${pct}%` })) : null),
+      // In the deck: tap again to take it out (asked first; its progress is kept).
       active
-        ? el('span', { class: 'pill pill-on' }, 'in deck')
+        ? el('button', {
+            class: 'btn btn-small btn-in-deck', type: 'button', 'aria-pressed': 'true', title: 'Take out of deck',
+            onclick: async (e) => {
+              e.preventDefault();
+              if (await removeSet(set)) renderCharacterList(clear(root));
+            },
+          }, '✓ in deck')
         : el('button', {
             class: waits ? 'btn btn-small btn-ghost' : 'btn btn-small',
             onclick: async (e) => {
               e.preventDefault();
-              const { added, seeded } = await deck.activateCharacterSet(set.id);
-              toast(seeded ? `Added ${added} characters (${seeded} seeded forward)` : `Added ${added} characters`);
+              const { added, seeded, readded } = await deck.activateCharacterSet(set.id);
+              toast(readded
+                ? `${set.title} is back in your deck, with your progress`
+                : seeded ? `Added ${added} characters (${seeded} seeded forward)` : `Added ${added} characters`);
               renderCharacterList(clear(root));
             },
           }, waits ? 'Add anyway' : 'Add'));
@@ -147,8 +165,8 @@ export async function renderCharacterSet(root, setId) {
   root.append(view);
 
   const add = async () => {
-    const { added } = await deck.activateCharacterSet(setId);
-    toast(`Added ${added} characters to your deck`);
+    const { added, readded } = await deck.activateCharacterSet(setId);
+    toast(readded ? `${set.title} is back in your deck, with your progress` : `Added ${added} characters to your deck`);
     renderCharacterSet(clear(root), setId);
   };
 
@@ -175,7 +193,13 @@ export async function renderCharacterSet(root, setId) {
                 onclick: () => { go(`/characters/${setId}/study`); },
               }, 'Study this set')
             : el('button', { class: 'btn btn-primary', onclick: add }, 'Add to deck'),
-          active ? el('span', { class: 'muted small' }, `${progress.due} due · ${progress.new} unseen`) : null),
+          active ? el('span', { class: 'muted small' }, `${progress.due} due · ${progress.new} unseen`) : null,
+          active
+            ? el('button', {
+                class: 'btn btn-small btn-ghost remove-deck', type: 'button',
+                onclick: async () => { if (await removeSet(set)) renderCharacterSet(clear(root), setId); },
+              }, 'Take out of deck')
+            : null),
 
     el('p', { class: 'muted small tap-hint chart-hint' }, 'Tap any character to hear it.'),
 

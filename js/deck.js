@@ -33,6 +33,10 @@ const DEFAULT_SETTINGS = {
   newCharsPerDay: 15,    // characters are faster to review than phrases
   activeCategories: [],  // every active deck: phrase categories, word/sentence decks, "mine"
   activeCharacterSets: [], // opt-in from the Characters screen
+  // Decks and character sets taken out of study: their cards are kept, so
+  // adding one again carries on where it left off.
+  parkedDecks: [],
+  parkedSets: [],
   directions: DEFAULT_DIRECTIONS,
   autoPlayAudio: true,
   installedAt: null,
@@ -197,11 +201,16 @@ export async function activateCategory(deckId) {
 
   await store.setMany('srs', entries);
 
-  if (!s.activeCategories.includes(deckId)) {
-    await saveSettings({ activeCategories: [...s.activeCategories, deckId] });
+  // A deck taken out earlier comes back with every card as it was left.
+  const readded = s.parkedDecks.includes(deckId);
+  if (!s.activeCategories.includes(deckId) || readded) {
+    await saveSettings({
+      activeCategories: s.activeCategories.includes(deckId) ? s.activeCategories : [...s.activeCategories, deckId],
+      parkedDecks: s.parkedDecks.filter((d) => d !== deckId),
+    });
   }
 
-  return { added: entries.length, seeded };
+  return { added: entries.length, seeded, readded };
 }
 
 /** Same thing, by its newer name. */
@@ -235,9 +244,18 @@ export async function syncDirections() {
   return entries.length;
 }
 
-export async function deactivateCategory(categoryId) {
+/**
+ * Take a deck out of study. Its cards stay exactly as they are — intervals,
+ * due dates, everything — so adding it again carries on where it left off.
+ * They just stop coming up: the queue, the counts and the forecast only look
+ * at active decks.
+ */
+export async function deactivateCategory(deckId) {
   const s = await getSettings();
-  await saveSettings({ activeCategories: s.activeCategories.filter((c) => c !== categoryId) });
+  await saveSettings({
+    activeCategories: s.activeCategories.filter((c) => c !== deckId),
+    parkedDecks: [...new Set([...s.parkedDecks, deckId])],
+  });
 }
 
 export async function isActive(categoryId) {
@@ -287,16 +305,24 @@ export async function activateCharacterSet(setId) {
   await store.setMany('srs', entries);
 
   const s = await getSettings();
-  if (!s.activeCharacterSets.includes(setId)) {
-    await saveSettings({ activeCharacterSets: [...s.activeCharacterSets, setId] });
+  const readded = s.parkedSets.includes(setId);
+  if (!s.activeCharacterSets.includes(setId) || readded) {
+    await saveSettings({
+      activeCharacterSets: s.activeCharacterSets.includes(setId) ? s.activeCharacterSets : [...s.activeCharacterSets, setId],
+      parkedSets: s.parkedSets.filter((x) => x !== setId),
+    });
   }
 
-  return { added: entries.length, seeded };
+  return { added: entries.length, seeded, readded };
 }
 
+/** Take a character set out of study, keeping its cards — like deactivateCategory. */
 export async function deactivateCharacterSet(setId) {
   const s = await getSettings();
-  await saveSettings({ activeCharacterSets: s.activeCharacterSets.filter((c) => c !== setId) });
+  await saveSettings({
+    activeCharacterSets: s.activeCharacterSets.filter((c) => c !== setId),
+    parkedSets: [...new Set([...s.parkedSets, setId])],
+  });
 }
 
 export async function isSetActive(setId) {
@@ -477,7 +503,12 @@ export async function recordMiss(itemId, deckId) {
     .map((dir) => srs.newCard(item.id, deckId, now, { kind: item.kind || srs.KIND.SENTENCE, difficulty: item.difficulty ?? 3, dir }))
     .map((card) => [card.id, card]);
   if (entries.length) await store.setMany('srs', entries);
-  if (!s.activeCategories.includes(deckId)) await saveSettings({ activeCategories: [...s.activeCategories, deckId] });
+  if (!s.activeCategories.includes(deckId)) {
+    await saveSettings({
+      activeCategories: [...s.activeCategories, deckId],
+      parkedDecks: s.parkedDecks.filter((d) => d !== deckId),
+    });
+  }
 
   const dir = dirs.includes(srs.DIR.PRODUCTION) ? srs.DIR.PRODUCTION : dirs[0];
   const card = await getCard(srs.cardId(item.id, dir));
