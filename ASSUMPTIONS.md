@@ -1215,3 +1215,75 @@ casual is what you *say* to a partner. So:
   files (the two new modules included), and Reading works online and offline.
 - Screenshots checked at phone width: the Reading tab, the intro screen, a
   listening question, the kanji gate and Today.
+
+### A72 — Item 6: what a backup holds, and how a restore behaves
+- **Everything the app stores, raw.** Every namespace store.js keeps —
+  each available course plus the app-wide one — with its `meta` and `srs`
+  stores exactly as stored, keyed as stored.
+  - Copying the stores, rather than picking out "progress", means nothing
+    is forgotten: recordings, connector scores, kana mastery, the romaji
+    switch-off, placement.
+  - Anything added later is in the backup without touching the backup code.
+  - Namespaces with nothing in them are left out.
+- **Plain JSON, one file**, with a format name and a version. A newer app
+  can restore an older backup; an older app refuses a newer one with its
+  own message rather than half-restoring it.
+- **A restore replaces, but only what the backup holds.**
+  - Each course in the backup is cleared and rewritten exactly. Merging
+    two histories of the same cards has no right answer.
+  - A course the backup doesn't hold is left alone. A backup made before
+    starting the English course shouldn't wipe English progress made since.
+- **Validated before anything is touched:** the format and version, sane
+  namespace names, and every card an object with an id. A wrong file
+  changes nothing and says so.
+- **It asks first,** saying when the backup was made and what each course
+  in it holds. The app's existing "reset" uses the same native confirm.
+- **One level of undo.** Before a restore, what it's about to replace is
+  saved in a separate store (`restore-undo`, never part of a backup), and
+  Settings offers *Undo the restore*. The most likely accident with a
+  restore feature is restoring the wrong file over good progress.
+- **After a restore the app reloads**, so every cache (settings, content,
+  your own words) starts from the restored data.
+
+### A73 — Getting the file out of the browser, and reminders
+- **Download is the main button; share is offered where it works.**
+  - A download works everywhere: desktop browsers, Android Chrome, iOS
+    Safari (into Files).
+  - Where the system share sheet takes files (`navigator.canShare`), a
+    second button sends the backup straight to Drive, mail or Files. If
+    sharing fails for any reason but the user closing the sheet, it falls
+    back to a download.
+- **No cloud sync.** README §8 keeps data on the device, and sync needs a
+  backend (README §9 lists it as a later phase). The backup file is the
+  learner's to keep wherever they like.
+- **A reminder, not a nag.** Today shows *Back up your progress* only once
+  there is progress worth keeping (a card studied, or a word of your own),
+  and only when there's no backup or it's over two weeks old. It's a row,
+  not a pop-up.
+  - Two weeks of reviews is real work to lose. Daily would be noise.
+  - "Last backup" is remembered when a file is handed over. The app can't
+    know whether the download was then kept.
+- **The restore runs through the same storage code** as everything else,
+  checked three ways:
+  - localStorage, in the Node integration test;
+  - jsdom, through the actual Settings buttons;
+  - IndexedDB, in Firefox (a full export → import round trip, added to
+    `npm run test:browser`).
+
+### A74 — Item 6 verification
+- `npm test`: 23,300+ checks. 215 integration checks (17 new):
+  - the backup's contents, recordings included;
+  - refusing non-backups and newer versions;
+  - a full restore after a reset — cards, placement, your own words and the
+    other course;
+  - undo;
+  - a one-course backup leaving the other course alone.
+- `npm run test:render`: 236 checks. Through the real UI: the Today
+  reminder, downloading a backup and reading the file back, the reminder
+  going away, a non-backup file refused, a confirmed restore (the prompt
+  checked), and undo.
+- `npm run test:browser` in Firefox: 31 of 31, including the IndexedDB
+  round trip (461 entries out and back, with an undo kept) and everything
+  offline.
+- Also renamed: Settings' deck summary said "Phrases: … cards" while
+  counting words and sentences too; it now says "Flashcards".

@@ -21,7 +21,8 @@ import * as srs from './srs.js';
 import * as audio from './audio.js';
 import * as store from './store.js';
 import * as course from './course.js';
-import { t, setLang, locale } from './i18n.js';
+import { t, setLang, locale, getLang } from './i18n.js';
+import * as backup from './backup.js';
 import { el, clear, phraseBlock, notesBlock, tagRow, audioButton, toast, politeBlock } from './render.js';
 import {
   header, stat, playItem, studySettings, toggleStrip, deckHref, wordLinks, sentenceLinks,
@@ -63,7 +64,8 @@ const routes = [
   [/^\/characters\/drill\/(hiragana|katakana)$/, (root, script) => renderKanaDrill(root, script)],
   [/^\/characters\/([\w-]+)\/study$/, studyCharacterSet],
   [/^\/characters\/([\w-]+)$/, (root, id) => renderCharacterSet(root, id)],
-  [/^\/settings$/, settings],
+  [/^\/settings$/, (root) => settings(root)],
+  [/^\/settings\/data$/, (root) => settings(root, 'data')],
 ];
 
 const COURSE_PATH = /^\/([a-z]{2}-[a-z]{2})(\/.*)?$/;
@@ -296,6 +298,7 @@ async function today(root) {
       // after the reviews, above the list of decks.
       features.characters ? await charactersBlock() : null,
       features.lessons ? await connectorsBlock(content) : null,
+      await backupNudge(summary, content),
 
       el('h2', { class: 'section-title' }, t('today.inDeck')),
       el('div', { class: 'card-list' },
@@ -646,7 +649,7 @@ function emptyStudy(message, backTo) {
 
 /* ---------- settings ---------- */
 
-async function settings(root) {
+async function settings(root, focus = null) {
   const s = await deck.getSettings();
   const { features, course: current } = await loadContent();
   const summary = await deck.deckSummary();
@@ -711,7 +714,8 @@ async function settings(root) {
         ? el('p', { class: 'muted' },
             t('settings.characters', { total: chars.total, review: chars.review, mature: chars.mature }))
         : null,
-      el('p', { class: 'muted small' }, t('settings.storage', { backend: store.backend() })),
+
+      await dataSection(),
 
       el('button', {
         class: 'btn btn-danger',
@@ -724,6 +728,148 @@ async function settings(root) {
       }, t('settings.reset'))
     )
   );
+  // Today's backup reminder links straight here.
+  if (focus === 'data') document.getElementById('your-data')?.scrollIntoView?.({ block: 'start' });
+}
+
+/* ---------- your data: backup and restore ---------- */
+
+// Today starts reminding once the last backup is this old (or there's none).
+const BACKUP_EVERY = 14 * 86400000;
+
+/** "today", "3 days ago" — in the interface language. */
+function relativeDay(at) {
+  const day = (ms) => { const d = new Date(ms); d.setHours(0, 0, 0, 0); return d.getTime(); };
+  const days = Math.round((day(Date.now()) - day(at)) / 86400000);
+  try {
+    return new Intl.RelativeTimeFormat(locale(), { numeric: 'auto' }).format(-days, 'day');
+  } catch {
+    return new Date(at).toLocaleDateString(locale());
+  }
+}
+
+const dateOf = (at) => new Date(at).toLocaleDateString(locale(), { dateStyle: 'medium' });
+
+/** Can this browser hand a file to the system share sheet (save to Files, Drive, mail…)? */
+function canShareFiles() {
+  try {
+    return typeof navigator.canShare === 'function' &&
+      navigator.canShare({ files: [new File(['{}'], 'backup.json', { type: 'application/json' })] });
+  } catch {
+    return false;
+  }
+}
+
+function downloadText(text, name) {
+  const url = URL.createObjectURL(new Blob([text], { type: 'application/json' }));
+  const a = el('a', { href: url, download: name, hidden: true });
+  document.body.append(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 60000);
+}
+
+/** Every course's progress and your own words, as one file — downloaded, or shared where the device can. */
+async function saveBackup(mode) {
+  const data = await backup.exportAll();
+  const text = JSON.stringify(data);
+  const name = backup.fileName(data);
+  if (mode === 'share') {
+    try {
+      await navigator.share({ files: [new File([text], name, { type: 'application/json' })], title: name });
+    } catch (err) {
+      if (err?.name === 'AbortError') return; // the share sheet was closed: nothing saved
+      downloadText(text, name);
+    }
+  } else {
+    downloadText(text, name);
+  }
+  await course.savePrefs({ lastBackupAt: Date.now() });
+  toast(t('data.saved'));
+  router();
+}
+
+/** Check a chosen file, say what's in it, and — once confirmed — restore it. */
+async function restoreFrom(file, status) {
+  if (!file) return;
+  let data = null;
+  try { data = JSON.parse(await backup.readFile(file)); } catch { /* not JSON: reported below */ }
+  const check = backup.validateBackup(data);
+  if (!check.ok) {
+    status.textContent = t(`data.${check.reason}`);
+    status.classList.add('error');
+    return;
+  }
+  const ui = getLang();
+  const lines = await Promise.all(backup.summarise(data).map(async (x) => {
+    const c = await course.getCourse(x.course);
+    const name = c
+      ? t('coursebar.pair', { speaker: course.languageName(c.speaker, ui), target: course.languageName(c.target, ui) })
+      : x.course;
+    return t('data.summaryLine', { course: name, cards: x.cards, mine: x.mine });
+  }));
+  const date = data.exportedAt ? dateOf(data.exportedAt) : '?';
+  if (!confirm(t('data.restoreConfirm', { date, summary: lines.join('\n') }))) return;
+  await backup.importBackup(data);
+  toast(t('data.restored'));
+  location.reload();
+}
+
+async function dataSection() {
+  const prefs = await course.getPrefs();
+  const undo = await backup.undoInfo();
+  const status = el('p', { class: 'muted small data-status', role: 'status' });
+  const fileInput = el('input', { type: 'file', accept: 'application/json,.json', class: 'file-input', tabindex: '-1' });
+  fileInput.addEventListener('change', async () => {
+    const file = fileInput.files?.[0];
+    fileInput.value = ''; // so choosing the same file again still counts
+    await restoreFrom(file, status);
+  });
+
+  return el('section', { class: 'data-section', id: 'your-data' },
+    el('h2', { class: 'section-title' }, t('data.title')),
+    el('p', { class: 'muted' }, t('data.lede')),
+    el('p', { class: 'data-last' },
+      t('data.lastBackup', { when: prefs.lastBackupAt ? relativeDay(prefs.lastBackupAt) : t('data.never') })),
+    el('div', { class: 'action-row' },
+      el('button', { class: 'btn btn-primary', type: 'button', dataset: { action: 'download' }, onclick: () => saveBackup('download') },
+        t('data.download')),
+      canShareFiles()
+        ? el('button', { class: 'btn', type: 'button', dataset: { action: 'share' }, onclick: () => saveBackup('share') }, t('data.share'))
+        : null),
+    el('div', { class: 'action-row' },
+      el('button', { class: 'btn btn-ghost', type: 'button', dataset: { action: 'restore' }, onclick: () => fileInput.click() },
+        t('data.restore')),
+      fileInput),
+    undo
+      ? el('div', { class: 'undo-restore' },
+          el('p', { class: 'muted small' }, t('data.undoHelp', { date: dateOf(undo.at) })),
+          el('button', {
+            class: 'btn btn-small', type: 'button', dataset: { action: 'undo' },
+            onclick: async () => {
+              if (!confirm(t('data.undoConfirm'))) return;
+              await backup.undoRestore();
+              toast(t('data.undone'));
+              location.reload();
+            },
+          }, t('data.undo')))
+      : null,
+    status,
+    el('p', { class: 'muted small' }, t('settings.storage', { backend: store.backend() })));
+}
+
+/** On Today: progress worth keeping, and no backup for a while. */
+async function backupNudge(summary, content) {
+  const { lastBackupAt } = await course.getPrefs();
+  const started = summary.total - summary.new > 0 || (content.userItems || []).length > 0;
+  if (!started || (lastBackupAt && Date.now() - lastBackupAt < BACKUP_EVERY)) return null;
+  return el('a', { class: 'row-card nudge backup-nudge', href: link('/settings/data') },
+    el('span', { class: 'row-icon' }, '💾'),
+    el('span', { class: 'row-body' },
+      el('span', { class: 'row-title' }, t('today.backupTitle')),
+      el('span', { class: 'row-sub' },
+        lastBackupAt ? t('today.backupOld', { when: relativeDay(lastBackupAt) }) : t('today.backupNever'))),
+    el('span', { class: 'row-chev' }, '›'));
 }
 
 /** Furigana: always / tap to show / hidden. Its name and help come from the course's `aids`. */

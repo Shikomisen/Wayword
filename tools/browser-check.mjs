@@ -290,6 +290,28 @@ try {
     }
   }
 
+  // jsdom and Node only exercise the localStorage fallback; this is the real IndexedDB path.
+  console.log('\n[4b] Backup round trip (IndexedDB)');
+  const roundTrip = await page.evaluate(async () => {
+    const backup = await import('./js/backup.js');
+    const count = (data) => Object.values(data.namespaces)
+      .reduce((n, ns) => n + Object.keys(ns.srs || {}).length + Object.keys(ns.meta || {}).length, 0);
+    const before = JSON.parse(JSON.stringify(await backup.exportAll()));
+    await backup.importBackup(before);
+    const after = await backup.exportAll();
+    return {
+      valid: backup.validateBackup(before).ok,
+      courses: Object.keys(before.namespaces),
+      before: count(before),
+      after: count(after),
+      undo: Boolean(await backup.undoInfo()),
+    };
+  });
+  check('a backup of every course reads back from IndexedDB', roundTrip.valid && roundTrip.before > 0,
+    `${roundTrip.courses.join(', ')} · ${roundTrip.before} entries`);
+  check('restoring it writes every entry back, and keeps an undo', roundTrip.after === roundTrip.before && roundTrip.undo,
+    `${roundTrip.after} entries after`);
+
   console.log('\n[5] Offline');
   goOffline();
   if (!LIVE) server.close();

@@ -721,6 +721,69 @@ await course.setCourse('en-ja');
 check('…and leaves the Japanese course alone',
   (await deck.getDeck()).length === enJaCards && (await deck.isOnboarded()));
 
+/* ---------- 13. data safety ---------- */
+
+console.log('\n13. Data safety — backup and restore');
+
+const backup = await import('../js/backup.js');
+// A little of everything worth keeping: one of your own words with a recording, progress in a second course.
+await deck.saveUserItem({ id: 'u-keep', kind: 'word', target: '猫', reading: 'ねこ', furigana: '{猫|ねこ}', meaning: 'cat', audioMode: 'recording' });
+await deck.setRecording('u-keep', 'data:audio/webm;base64,KEEP');
+await course.setCourse('ja-en');
+await deck.saveSettings({ newPerDay: 7 });
+await course.setCourse('en-ja');
+const cardsBeforeBackup = (await deck.getDeck()).length;
+
+const saved = JSON.parse(JSON.stringify(await backup.exportAll())); // as it would come back from a file
+const enJa = saved.namespaces['en-ja'];
+check('a backup is one object, marked as a Wayword backup', saved.format === 'wayword-backup' && saved.version === 1 &&
+  backup.validateBackup(saved).ok);
+check('it holds every course with progress', Boolean(enJa) && Boolean(saved.namespaces['ja-en']),
+  Object.keys(saved.namespaces).join(', '));
+check('…every card', Object.keys(enJa.srs).length === cardsBeforeBackup, `${Object.keys(enJa.srs).length} cards`);
+check('…settings, placement, stats, readings marked, connector and kana records',
+  ['settings', 'placement', 'stats', 'lessonStats', 'kanaStats'].every((k) => k in enJa.meta),
+  Object.keys(enJa.meta).filter((k) => !k.startsWith('rec:')).join(', '));
+check('…and your own words with their recordings',
+  enJa.meta.userItems.some((u) => u.id === 'u-keep') && enJa.meta['rec:u-keep'] === 'data:audio/webm;base64,KEEP');
+check('it is named for the day it was made', backup.fileName(saved) === `wayword-backup-${saved.exportedAt.slice(0, 10)}.json`);
+check('the restore prompt can say what is in it',
+  backup.summarise(saved).find((x) => x.course === 'en-ja')?.cards === cardsBeforeBackup &&
+  backup.summarise(saved).find((x) => x.course === 'en-ja')?.mine === 1);
+
+// Files that aren't backups are turned away before anything is touched.
+const verdict = (data) => backup.validateBackup(data).reason;
+check('a file that isn\'t a backup is refused', verdict(null) === 'notBackup' && verdict({ hello: 1 }) === 'notBackup' &&
+  verdict({ ...saved, namespaces: {} }) === 'notBackup' &&
+  verdict({ ...saved, namespaces: { '../x': { meta: {}, srs: {} } } }) === 'notBackup' &&
+  verdict({ ...saved, namespaces: { 'en-ja': { meta: {}, srs: { a: { noId: true } } } } }) === 'notBackup');
+check('a backup from a newer version is refused, with its own reason', verdict({ ...saved, version: 2 }) === 'newer');
+
+// Lose the course, then restore it.
+await deck.resetEverything();
+check('after a reset the Japanese course is empty', (await deck.getDeck()).length === 0 && !(await deck.isOnboarded()));
+await course.setCourse('ja-en');
+await deck.saveSettings({ newPerDay: 9 }); // changed since the backup — but the backup holds ja-en too
+await course.setCourse('en-ja');
+await backup.importBackup(saved);
+check('restoring brings every card back', (await deck.getDeck()).length === cardsBeforeBackup);
+check('…and placement, so there\'s no quiz again', await deck.isOnboarded());
+check('…and your own words and recordings',
+  (await deck.getUserItems()).some((u) => u.id === 'u-keep') && (await deck.getRecording('u-keep')) === 'data:audio/webm;base64,KEEP');
+check('…and the other course, as it was in the backup', (await store.get('meta', 'settings', 'ja-en')).newPerDay === 7);
+
+const undo = await backup.undoInfo();
+check('the restore can be undone', Boolean(undo?.at) && undo.restored === saved.exportedAt);
+await backup.undoRestore();
+check('undoing puts back what was there before it', (await deck.getDeck()).length === 0 &&
+  (await store.get('meta', 'settings', 'ja-en')).newPerDay === 9 && !(await backup.undoInfo()));
+
+// A backup that holds one course leaves the others alone.
+const onlyJapanese = { ...saved, namespaces: { 'en-ja': saved.namespaces['en-ja'] } };
+await backup.importBackup(onlyJapanese);
+check('a course the backup doesn\'t hold is left as it is',
+  (await deck.getDeck()).length === cardsBeforeBackup && (await store.get('meta', 'settings', 'ja-en')).newPerDay === 9);
+
 /* ---------- result ---------- */
 
 console.log(

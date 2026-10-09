@@ -30,6 +30,7 @@ const SHELL = [
   './css/styles.css',
   './js/app.js',
   './js/audio.js',
+  './js/backup.js',
   './js/connectors.js',
   './js/content.js',
   './js/course.js',

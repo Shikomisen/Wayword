@@ -93,11 +93,14 @@ const fallback = {
     localStorage.removeItem(lsKey(ns, store, key));
   },
   getAll(ns, store) {
+    return this.entries(ns, store).map(([, value]) => value);
+  },
+  entries(ns, store) {
     const prefix = lsKey(ns, store, '');
     const out = [];
     for (let i = 0; i < localStorage.length; i++) {
       const k = localStorage.key(i);
-      if (k && k.startsWith(prefix)) out.push(JSON.parse(localStorage.getItem(k)));
+      if (k && k.startsWith(prefix)) out.push([k.slice(prefix.length), JSON.parse(localStorage.getItem(k))]);
     }
     return out;
   },
@@ -154,6 +157,25 @@ export async function getAll(store, ns = current) {
   if (!db || fallbackFor.has(ns)) return fallback.getAll(ns, store);
   try { return await tx(db, store, 'readonly', (s) => s.getAll()); }
   catch { return fallback.getAll(ns, store); }
+}
+
+/** Every [key, value] in a store — what a backup needs (getAll drops the keys). */
+export async function entries(store, ns = current) {
+  const db = await openDB(ns);
+  if (!db || fallbackFor.has(ns)) return fallback.entries(ns, store);
+  try {
+    return await new Promise((resolve, reject) => {
+      const t = db.transaction(store, 'readonly');
+      const os = t.objectStore(store);
+      // Both come back in key order, so they pair up.
+      const keys = os.getAllKeys();
+      const values = os.getAll();
+      t.oncomplete = () => resolve(keys.result.map((key, i) => [key, values.result[i]]));
+      t.onerror = () => reject(t.error);
+    });
+  } catch {
+    return fallback.entries(ns, store);
+  }
 }
 
 export async function setMany(store, entries, ns = current) {

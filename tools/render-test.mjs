@@ -47,6 +47,12 @@ globalThis.Node = window.Node;
 globalThis.location = window.location;
 globalThis.confirm = () => true;
 globalThis.HTMLElement = window.HTMLElement;
+globalThis.FileReader = window.FileReader;
+
+// Downloads: keep whatever the app hands to createObjectURL, so a backup can be read back.
+const downloads = [];
+const realCreateObjectURL = URL.createObjectURL;
+URL.createObjectURL = (blob) => { downloads.push(blob); return realCreateObjectURL ? realCreateObjectURL(blob) : 'blob:test'; };
 
 // Audio is never actually played here; record calls instead.
 const played = [];
@@ -710,8 +716,64 @@ check('text size control present', Boolean($('input[type="range"]')));
 check('storage backend reported', /Storage: (IndexedDB|localStorage)/.test(text()),
   text().match(/Storage: \w+/)?.[0]);
 check('phrase and character decks are reported separately',
-  text().includes('Phrases:') && text().includes('Characters:'),
+  text().includes('Flashcards:') && text().includes('Characters:'),
   text().match(/Characters: [^S]*/)?.[0]?.trim());
+
+console.log('\n8b. Your data — backup and restore');
+
+const settle = async (n = 10) => { for (let i = 0; i < n; i++) await tick(); };
+await goTo('#/en-ja/');
+check('Today reminds you to back up, once there is progress worth keeping',
+  $('.backup-nudge .row-sub')?.textContent === 'It lives only in this browser — no backup yet' &&
+  $('.backup-nudge')?.getAttribute('href') === '#/en-ja/settings/data');
+await goTo('#/en-ja/settings/data');
+check('Settings has a "Your data" section, saying there is no backup yet',
+  Boolean($('#your-data')) && $('.data-last')?.textContent === 'Last backup: never');
+
+$('[data-action="download"]')?.click();
+await settle(30);
+const backupFile = downloads.at(-1);
+const backupJson = backupFile ? JSON.parse(await backupFile.text()) : null;
+check('"Download a backup" hands over one JSON file', backupJson?.format === 'wayword-backup',
+  backupFile ? `${Math.round(backupFile.size / 1024)} KB` : 'nothing downloaded');
+const deckNow = await deck.getDeck();
+check('…holding every card in the course, and your own words',
+  Object.keys(backupJson?.namespaces['en-ja']?.srs || {}).length === deckNow.length &&
+  backupJson.namespaces['en-ja'].meta.userItems?.some((u) => u.target === '今日は暑いね'),
+  `${Object.keys(backupJson?.namespaces['en-ja']?.srs || {}).length} cards`);
+check('…and the last-backup line updates', $('.data-last')?.textContent === 'Last backup: today', $('.data-last')?.textContent);
+await goTo('#/en-ja/');
+check('…and Today stops reminding', !$('.backup-nudge'));
+
+// Restore: a file that isn't a backup changes nothing.
+const choose = async (file) => {
+  const input = $('#your-data input[type="file"]');
+  Object.defineProperty(input, 'files', { value: [file], configurable: true });
+  input.dispatchEvent(new window.Event('change'));
+  await settle(30);
+};
+await goTo('#/en-ja/settings/data');
+await choose(new window.File(['not json at all'], 'notes.txt', { type: 'text/plain' }));
+check('a file that isn\'t a backup is turned away, and nothing changes',
+  $('.data-status')?.textContent === 'That file isn’t a Wayword backup — nothing was changed.' &&
+  (await deck.getDeck()).length === deckNow.length);
+
+// Restore a backup in which your own words are gone — then undo it.
+const edited = structuredClone(backupJson);
+edited.namespaces['en-ja'].meta.userItems = [];
+const asked = [];
+globalThis.confirm = (message) => { asked.push(message); return true; };
+await choose(new window.File([JSON.stringify(edited)], 'wayword-backup.json', { type: 'application/json' }));
+check('restoring asks first, saying what the backup holds',
+  /Restore the backup from .+\?/.test(asked.at(-1) || '') && asked.at(-1).includes('English › Japanese — cards: '),
+  (asked.at(-1) || '').split('\n')[2]);
+check('…then replaces the course with the backup', (await deck.getUserItems()).length === 0);
+await goTo('#/en-ja/settings/data');
+check('the restore can be undone from Settings', Boolean($('[data-action="undo"]')));
+$('[data-action="undo"]')?.click();
+await settle(30);
+check('…which puts your own words back', (await deck.getUserItems()).some((u) => u.target === '今日は暑いね'));
+globalThis.confirm = () => true;
 
 console.log('\n9. Home again — switching the speaker');
 

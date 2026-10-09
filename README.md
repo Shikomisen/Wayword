@@ -246,6 +246,7 @@ does the rest.
 - App launch + usable state in under 2 seconds, offline.
 - Adjustable text size, furigana/romaji toggles double as accessibility features.
 - No data leaves the device in the MVP — no backend, so this is automatic.
+  The one way out is a backup file the learner saves themselves (§17).
 
 ---
 
@@ -676,3 +677,41 @@ is locked.
 words (`{コーヒー|こーひー}`) is there because katakana isn't learned yet. Once
 katakana is mastered it disappears everywhere — words, sentences, connector
 examples, drill tiles — and kanji keep their furigana.
+
+---
+
+## 17. Your data — backup and restore (added with the repositioning)
+
+All progress lives in one browser on one device (IndexedDB). Clearing the
+browser's site data, losing the phone or switching browsers would lose it,
+so **Settings → Your data** can save and restore everything.
+
+**Download a backup** saves one JSON file, `wayword-backup-YYYY-MM-DD.json`,
+holding everything the app stores:
+- every course's cards, settings, placement, daily stats, streak,
+  readings marked "I can read this", connector scores and kana mastery;
+- your own words and their recordings;
+- the app-wide preferences.
+
+Where the device can hand files to the system share sheet (phones, mostly),
+**Save it elsewhere…** sends it straight to Files, Drive, mail and so on.
+
+**Restore from a backup…** reads a backup file:
+- **Checked first** — a file that isn't a Wayword backup, or that comes from
+  a newer version of the app, is turned away and nothing changes.
+- **Then it asks**, saying when the backup was made and what it holds per
+  course (cards, your own words).
+- **Then it replaces** the progress of the courses in the backup. Courses
+  the backup doesn't hold are left as they are.
+- **Undo** — what the restore replaced is kept, so **Undo the restore** in
+  Settings puts it back (one level).
+
+**Reminders.** Once there's progress worth keeping, Today shows a *Back up
+your progress* row whenever there's no backup, or the last one is more than
+two weeks old. It goes straight to the section. "Last backup: 3 days ago"
+shows there too.
+
+The file is plain JSON — `{ format, version, exportedAt, namespaces: { app,
+en-ja, ja-en… } }`, each namespace holding its `meta` and `srs` stores
+exactly as stored — so it stays readable and can be restored by any later
+version.

@@ -498,6 +498,9 @@ console.log(`  ${Object.keys(uiDicts).join(', ')}: ${enKeys.size} keys, ${litera
 // Keys built at runtime (t(`pos.${…}`)) can't be found by the scan above.
 for (const pos of POS) check(`pos.${pos} has an interface string`, enKeys.has(`pos.${pos}`));
 for (const form of FORMS) check(`forms.${form} has an interface string`, enKeys.has(`forms.${form}`));
+// A rejected backup says why: t(`data.${reason}`).
+for (const reason of ['notBackup', 'newer']) check(`data.${reason} has an interface string`, enKeys.has(`data.${reason}`));
+for (const verdict of ['right', 'ok', 'wrong']) check(`drill.${verdict} has an interface string`, enKeys.has(`drill.${verdict}`));
 for (const dir of Object.values(srs.DIR)) {
   check(`dir.${dir} has an interface string`, enKeys.has(`dir.${dir}`));
   check(`settings.dirHelp.${dir} has an interface string`, enKeys.has(`settings.dirHelp.${dir}`));

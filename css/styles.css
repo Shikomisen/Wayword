@@ -700,6 +700,21 @@ textarea.text-input { resize: vertical; min-height: 64px; }
 }
 .kana-today.is-done { opacity: 0.75; }
 
+/* ---------- your data ---------- */
+
+.data-section { margin: 8px 0 20px; }
+.data-section .action-row { margin-bottom: 10px; }
+.data-last { font-weight: 600; margin-bottom: 12px; }
+/* Opened by its button; hidden without display:none so every browser lets the click through. */
+.file-input { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
+.undo-restore {
+  margin: 4px 0 12px; padding: 10px 12px; border-radius: 10px;
+  background: var(--bg-sunk); border-left: 3px solid var(--info);
+}
+.undo-restore p { margin: 0 0 8px; }
+.data-status:empty { display: none; }
+.backup-nudge { border-color: color-mix(in srgb, var(--warn) 60%, var(--line)); }
+
 /* Kanji wait for hiragana — gently. */
 .kanji-gate {
   margin: 4px 0 16px; padding: 14px 16px; border-radius: var(--radius);
