@@ -840,3 +840,171 @@ casual is what you *say* to a partner. So:
   Indonesian stays a placeholder, and all of items 3–5 is Japanese only.
   Hiding it is one line — `"status": "planned"` on `ja-en` in
   `content/courses.json`.
+
+### A56 — Item 3: words and sentences are decks, like phrase categories
+- **Content I wrote:** 12 word decks (197 words) and one sentence deck (16
+  sentences). The words are the everyday core for talking with a partner:
+  people and family, time, everyday verbs, the little words, home, food,
+  describing things, feelings and health, places, weather, work and study,
+  free time.
+- **Same machinery as phrases.** They are listed under the manifest's new
+  `decks` key (`kind`: `words` | `sentences`) rather than added to
+  `categories`, so the phrase screens and the placement quiz don't change
+  meaning. Activation, the queue, progress and Today all treat a deck exactly
+  like a category.
+- **Learn replaces Browse.** It lists word decks, then sentences, then the
+  phrase groups, then your own words. The route stays `#/…/browse`, so old
+  links and the installed app's shortcuts still work.
+- **Word details.** Part of speech; for verbs, the ます and て forms, because
+  those are what the connectors chain. A usage note where one prevents a real
+  mistake.
+- **No romaji on the new content.** Furigana is the reading aid from here on.
+  The learner listens and speaks well and needs reading practice, and romaji
+  under every word would be read instead of the kana.
+- **Katakana words carry a hiragana reading aid** (`{コーヒー|こーひー}`),
+  since katakana isn't learned yet. Item 5 retires the aid once katakana is
+  mastered.
+- **Sentences are cut into chunks**, each optionally naming the word it uses
+  by id. That gives each word its sentences ("In sentences"), each sentence
+  its words, and item 4 its reorder drill. `npm test` checks the chunks
+  rebuild the sentence exactly and every link is a real word.
+- **Starters.** A new learner gets People & Family, Everyday Verbs, Little
+  Words and Everyday Sentences, alongside the four phrase starters. Words are
+  the stated top priority.
+- **Placement doesn't sample word decks.** They are new material, and 30
+  cards is already a long first screen.
+- **Audio.** 213 new clips from the same build-time Google TTS pass.
+  - The input is the kana reading, as for phrases. A katakana word is spoken
+    from its katakana, not from its hiragana aid.
+  - Six words whose kana form is a common homophone with a different pitch
+    (あめ rain/candy, かえる return/frog, しる, かさ, あき, はる) are spoken
+    from their kanji instead (`audioHint`). Each of those kanji has a single
+    reading when it stands alone.
+
+### A57 — Kanji flashcards: a set built from the words, not a bigger sign set
+- The existing Common Kanji set is travel signage: exits, platforms,
+  warnings. The word decks use about 180 kanji, and almost none of them were
+  taught anywhere.
+- **New set: Kanji in Your Words** (70 kanji, `content/ja/kanji-words.json`).
+  The most frequent and most basic kanji in the word decks, grouped like the
+  decks, each with readings, meaning, a note, audio, and links to the words
+  it appears in.
+- It goes through the same character deck and SM-2 queue as the other sets.
+- **Compounds where the parts mean little alone:** 仕事 and 勉強 are entries,
+  not 仕 and 強. The Common Kanji set does the same with 出口 and 病院.
+- **Readings shown** use the dictionary form (`食` → たべる) with the other
+  readings listed, the same convention as the existing set (`押` → おす).
+- **Stubbed:** about 110 kanji in the word decks still aren't in any set.
+  `npm run crossref` prints the list, most frequent first, so the set can
+  grow from it.
+- `crossref-kanji` now links kanji to words and sentences as well as
+  phrases, words first. The kanji screen's label became "Seen in your words
+  and phrases".
+
+### A58 — Card directions: one SM-2 card per direction
+- **Each direction is its own card.** Recognition keeps the item's own id;
+  production is `<id>~p` and listening `<id>~l`. Recognising a word and being
+  able to say it are different memories, so they are scheduled apart.
+  Existing progress is untouched: every stored card is a recognition card
+  under its old id.
+- **Defaults:** Recognise and Say it on, Listen off.
+  - Saying things is the stated goal.
+  - Listening is already the learner's strength, and doubling the daily load
+    on day one would hurt more than it helps.
+  - Listen is one checkbox away (Settings → Card types).
+- **Sibling rule.** A new Say it or Listen card waits until the same item's
+  Recognise card has been seen once, so an item never arrives three ways in
+  one day.
+  - If Recognise is switched off, nothing waits. Otherwise those cards would
+    never be introduced; the integration test covers this.
+- **Switching a direction on** adds its cards to every deck already added, as
+  new cards paced by the daily cap.
+- **Existing learners:** decks added before directions existed gain their
+  Say it cards the next time the course is opened. The "new" count on Today
+  goes up accordingly; nothing jumps the queue.
+- **Switching a direction off** parks its cards (they leave the queue and the
+  counts) rather than deleting them, so switching it back on resumes where it
+  was.
+- **Characters** are only ever recognition cards: "say this hiragana" isn't a
+  useful card.
+- **Placement** credits recognition only. A phrase marked "I know this" gets
+  its Recognise card seeded forward; its Say it card starts new, but can be
+  introduced straight away, since the phrase has already been met.
+- **Listening needs audio.** An item has a Listen card only if it can be
+  heard: a bundled clip, a recording, or the device voice.
+
+### A59 — Furigana modes, and "I can read this"
+- **Three modes:** Always, Tap to show, Hidden.
+  - Tap-to-show keeps the readings in place but invisible, so revealing one
+    doesn't make the line jump. A faint dotted underline marks which words
+    have one waiting.
+  - The old on/off setting migrates: off becomes Hidden.
+- **The ふりがな chip** cycles through the three modes wherever it appears.
+  Settings shows them side by side.
+- **"I can read this"** is a per-item switch on the back of a card. A marked
+  item's furigana drops from Always to Tap to show everywhere it appears: its
+  card, its deck, its sentences.
+  - It only ever reduces help: Hidden stays hidden.
+  - It is stored per course as a list of item ids.
+  - So furigana fades item by item, at the learner's own judgement, rather
+    than by a global switch the learner isn't ready to flip.
+
+### A60 — Your own words: audio from the device, never from a server
+- **Stored with the course's progress** (meta `userItems`), shown as one more
+  deck, "mine", and studied exactly like the built-in decks. Ids are
+  `u-<time>`.
+- **Furigana.** Readings can be typed inline (`{漢字|かんじ}`). Or give a kana
+  reading, which is spread over the kanji using the kana already in the word
+  as anchors (`食べ物` + たべもの → `{食|た}べ{物|もの}`). If it can't be
+  spread, the whole word gets the one reading.
+- **"Generating audio at add-time where possible."** The bundled clips come
+  from an online TTS service at build time. Calling one from the app would
+  send what the learner types to a server, and README §8 says no data leaves
+  the device. So at add-time the app uses what the device can do itself:
+  - **Device voice:** if the device has a Japanese voice that runs locally
+    (`speechSynthesis`, `localService` only — a network voice would send the
+    text away), the card uses it, and it can be heard on the form before
+    saving.
+  - **A recording** made on the spot (`MediaRecorder`) — of yourself, or of
+    whoever said it. Stored as a data URL under `rec:<id>`; a few seconds is
+    tens of kilobytes.
+  - **Neither:** the card says **No audio** in its list, on its card and on
+    the form, instead of showing a play button that does nothing. It gets no
+    Listen card.
+- **Word or sentence** is guessed from the text (punctuation, length, or a
+  particle mid-text: 今日は暑いね) and can be changed with one tap. It only
+  changes the label.
+- Export/import (item 6) carries all of this, recordings included.
+
+### A61 — Smaller calls in item 3
+- **Two bugs found with the screenshots.**
+  - The add form printed a literal "null" where the voice controls would be
+    (native `append()`); there is now a render check for it.
+  - The screenshot tool skipped placement before it had rendered: the
+    service worker now precaches over a thousand files at startup.
+- **The service worker walks content files for any `audio` field**, rather
+  than knowing each content kind. A new kind of content then needs no
+  worker change.
+  - `browser-check` keeps its own hand-written list of content kinds, so a
+    kind the worker missed would still show up there.
+  - `npm test` now fails if a module in `js/` isn't in the precached shell.
+    `ruby.js` had been missing since item 1; it only worked offline because
+    it had been cached at runtime.
+- **Copy.** The deck button says "Study this deck", since it isn't always a
+  category.
+
+### A62 — Item 3 verification
+- `npm test`: 19,282 content/UI/SRS checks, 150 integration checks (30 new:
+  word and sentence normalisation, the chunk ↔ word links, all three
+  directions, the sibling rule with recognition on and off, listening cards
+  following audio, "I can read this", your own words from add to delete), 13
+  language-pack checks.
+- `npm run test:render`: 187 checks. The jsdom walkthrough now drives Learn,
+  a word deck, a sentence deck, the furigana cycle, "I can read this", each
+  card direction through the Settings checkboxes, and adding, editing and
+  studying one of your own words. 16 service-worker checks.
+- `npm run test:browser` in Firefox: 29 of 29. The cache holds all 1,058
+  files (978 clips), every tab of both courses renders online and offline,
+  and no errors are logged.
+- Screenshots checked at phone width: Learn, a word deck, a sentence deck,
+  both sides of a card, the add form, Settings and the new kanji set.

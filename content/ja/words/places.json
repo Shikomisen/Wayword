@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": "words-places",
+  "title": "Places & Getting Around",
+  "description": "Where you go, how you get there, and left from right.",
+  "items": [
+    {
+      "id": "w-eki",
+      "japanese": "駅",
+      "furigana": "{駅|えき}",
+      "english": "station",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-eki.mp3",
+      "tags": ["places"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-mise",
+      "japanese": "店",
+      "furigana": "{店|みせ}",
+      "english": "shop; restaurant",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-mise.mp3",
+      "tags": ["places"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kaisha",
+      "japanese": "会社",
+      "furigana": "{会社|かいしゃ}",
+      "english": "company; the office",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kaisha.mp3",
+      "tags": ["places", "work"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-gakkou",
+      "japanese": "学校",
+      "furigana": "{学校|がっこう}",
+      "english": "school",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-gakkou.mp3",
+      "tags": ["places"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kouen",
+      "japanese": "公園",
+      "furigana": "{公園|こうえん}",
+      "english": "park",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kouen.mp3",
+      "tags": ["places"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-eigakan",
+      "japanese": "映画館",
+      "furigana": "{映画館|えいがかん}",
+      "english": "cinema",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-eigakan.mp3",
+      "tags": ["places", "free time"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-suupaa",
+      "japanese": "スーパー",
+      "furigana": "{スーパー|すーぱー}",
+      "english": "supermarket",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-suupaa.mp3",
+      "tags": ["places", "shopping"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-densha",
+      "japanese": "電車",
+      "furigana": "{電車|でんしゃ}",
+      "english": "train",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-densha.mp3",
+      "tags": ["transport"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kuruma",
+      "japanese": "車",
+      "furigana": "{車|くるま}",
+      "english": "car",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kuruma.mp3",
+      "tags": ["transport"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-michi",
+      "japanese": "道",
+      "furigana": "{道|みち}",
+      "english": "road; the way",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-michi.mp3",
+      "tags": ["places"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-chikaku",
+      "japanese": "近く",
+      "furigana": "{近|ちか}く",
+      "english": "nearby",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-chikaku.mp3",
+      "tags": ["places"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tooi",
+      "japanese": "遠い",
+      "furigana": "{遠|とお}い",
+      "english": "far",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-tooi.mp3",
+      "tags": ["places"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-migi",
+      "japanese": "右",
+      "furigana": "{右|みぎ}",
+      "english": "right",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-migi.mp3",
+      "tags": ["directions"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hidari",
+      "japanese": "左",
+      "furigana": "{左|ひだり}",
+      "english": "left",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hidari.mp3",
+      "tags": ["directions"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-aruku",
+      "japanese": "歩く",
+      "furigana": "{歩|ある}く",
+      "english": "to walk",
+      "pos": "verb",
+      "forms": {
+        "masu": "{歩|ある}きます",
+        "te": "{歩|ある}いて"
+      },
+      "audio": "audio/ja/words/w-aruku.mp3",
+      "tags": ["movement"],
+      "difficulty": 1
+    }
+  ]
+}

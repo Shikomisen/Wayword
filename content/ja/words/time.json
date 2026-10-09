@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "id": "words-time",
+  "title": "Time & Days",
+  "description": "Today, tomorrow, every day, not yet — the words that put a sentence in time.",
+  "items": [
+    {
+      "id": "w-kyou",
+      "japanese": "今日",
+      "furigana": "{今日|きょう}",
+      "english": "today",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kyou.mp3",
+      "tags": ["time"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ashita",
+      "japanese": "明日",
+      "furigana": "{明日|あした}",
+      "english": "tomorrow",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-ashita.mp3",
+      "tags": ["time"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kinou",
+      "japanese": "昨日",
+      "furigana": "{昨日|きのう}",
+      "english": "yesterday",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kinou.mp3",
+      "tags": ["time"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ima",
+      "japanese": "今",
+      "furigana": "{今|いま}",
+      "english": "now",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-ima.mp3",
+      "tags": ["time"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-asa",
+      "japanese": "朝",
+      "furigana": "{朝|あさ}",
+      "english": "morning",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-asa.mp3",
+      "tags": ["time"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hiru",
+      "japanese": "昼",
+      "furigana": "{昼|ひる}",
+      "english": "midday; lunchtime",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hiru.mp3",
+      "tags": ["time"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yoru",
+      "japanese": "夜",
+      "furigana": "{夜|よる}",
+      "english": "night; evening",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yoru.mp3",
+      "tags": ["time"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-konban",
+      "japanese": "今晩",
+      "furigana": "{今晩|こんばん}",
+      "english": "this evening, tonight",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-konban.mp3",
+      "tags": ["time"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mainichi",
+      "japanese": "毎日",
+      "furigana": "{毎日|まいにち}",
+      "english": "every day",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-mainichi.mp3",
+      "tags": ["time"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-shuumatsu",
+      "japanese": "週末",
+      "furigana": "{週末|しゅうまつ}",
+      "english": "weekend",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shuumatsu.mp3",
+      "tags": ["time"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-raishuu",
+      "japanese": "来週",
+      "furigana": "{来週|らいしゅう}",
+      "english": "next week",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-raishuu.mp3",
+      "tags": ["time"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-senshuu",
+      "japanese": "先週",
+      "furigana": "{先週|せんしゅう}",
+      "english": "last week",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-senshuu.mp3",
+      "tags": ["time"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-jikan",
+      "japanese": "時間",
+      "furigana": "{時間|じかん}",
+      "english": "time; hours",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-jikan.mp3",
+      "tags": ["time"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-atode",
+      "japanese": "後で",
+      "furigana": "{後|あと}で",
+      "english": "later",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-atode.mp3",
+      "tags": ["time"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-itsumo",
+      "japanese": "いつも",
+      "english": "always",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-itsumo.mp3",
+      "tags": ["time"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tokidoki",
+      "japanese": "時々",
+      "furigana": "{時々|ときどき}",
+      "english": "sometimes",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-tokidoki.mp3",
+      "tags": ["time"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mou",
+      "japanese": "もう",
+      "english": "already; (not) anymore",
+      "pos": "adverb",
+      "usage": "With a positive verb, \"already\"; with a negative, \"not anymore\".",
+      "audio": "audio/ja/words/w-mou.mp3",
+      "tags": ["time"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mada",
+      "japanese": "まだ",
+      "english": "still; not yet",
+      "pos": "adverb",
+      "usage": "まだです on its own means \"not yet\".",
+      "audio": "audio/ja/words/w-mada.mp3",
+      "tags": ["time"],
+      "difficulty": 2
+    }
+  ]
+}

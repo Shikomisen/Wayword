@@ -1,0 +1,2176 @@
+{
+  "schemaVersion": 1,
+  "id": "kanji-words",
+  "kind": "characters",
+  "title": "Kanji in Your Words",
+  "script": "kanji",
+  "description": "The kanji behind the word decks — learn the character here, then keep meeting it in 食べる, 来週, 電車. For recognising, not writing.",
+  "groups": [
+    {
+      "id": "people",
+      "title": "People & basics",
+      "description": "Who, and what — the kanji in the people words."
+    },
+    {
+      "id": "time",
+      "title": "Time",
+      "description": "Mornings, evenings, this week and next."
+    },
+    {
+      "id": "actions",
+      "title": "Everyday verbs",
+      "description": "One kanji, then hiragana: 食べる, 飲む, 見る. The kanji carries the meaning, the kana the grammar."
+    },
+    {
+      "id": "describe",
+      "title": "Describing & feeling",
+      "description": "Adjectives, and the 気 in 元気 and 天気."
+    },
+    {
+      "id": "places",
+      "title": "Places & things",
+      "description": "Shops, school, the office, getting around."
+    },
+    {
+      "id": "nature",
+      "title": "Weather & seasons",
+      "description": "Every season is one kanji."
+    },
+    {
+      "id": "work",
+      "title": "Work & study",
+      "description": "Including two words that only make sense as a pair."
+    }
+  ],
+  "characters": [
+    {
+      "id": "kw-hito",
+      "character": "人",
+      "japanese": "人",
+      "furigana": [
+        {
+          "b": "人",
+          "r": "ひと"
+        }
+      ],
+      "readings": [
+        "ひと",
+        "じん",
+        "にん"
+      ],
+      "romaji": "hito / jin",
+      "english": "person",
+      "audio": "audio/ja/chars/kw-hito.mp3",
+      "audioHint": "ひと",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 1,
+      "note": "日本人 (にほんじん) is a Japanese person; 一人 (ひとり) is one person, or alone.",
+      "seenIn": [
+        "w-hito",
+        "w-hitori",
+        "num-15",
+        "num-16",
+        "eme-09"
+      ]
+    },
+    {
+      "id": "kw-watashi",
+      "character": "私",
+      "japanese": "私",
+      "furigana": [
+        {
+          "b": "私",
+          "r": "わたし"
+        }
+      ],
+      "readings": [
+        "わたし",
+        "し"
+      ],
+      "romaji": "watashi",
+      "english": "I, me; private",
+      "audio": "audio/ja/chars/kw-watashi.mp3",
+      "audioHint": "わたし",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 1,
+      "seenIn": [
+        "w-watashi"
+      ]
+    },
+    {
+      "id": "kw-nani",
+      "character": "何",
+      "japanese": "何",
+      "furigana": [
+        {
+          "b": "何",
+          "r": "なに"
+        }
+      ],
+      "readings": [
+        "なに",
+        "なん"
+      ],
+      "romaji": "nani / nan",
+      "english": "what",
+      "audio": "audio/ja/chars/kw-nani.mp3",
+      "audioHint": "なに",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 1,
+      "note": "Read なん before d, t and n sounds: 何ですか, 何で.",
+      "seenIn": [
+        "w-nani",
+        "s-04",
+        "s-08",
+        "num-10",
+        "num-12",
+        "num-13"
+      ]
+    },
+    {
+      "id": "kw-tomo",
+      "character": "友",
+      "japanese": "友",
+      "furigana": [
+        {
+          "b": "友",
+          "r": "とも"
+        }
+      ],
+      "readings": [
+        "とも",
+        "ゆう"
+      ],
+      "romaji": "tomo / yū",
+      "english": "friend",
+      "audio": "audio/ja/chars/kw-tomo.mp3",
+      "audioHint": "とも",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 2,
+      "note": "友達 (ともだち) — the everyday word for a friend.",
+      "seenIn": [
+        "w-tomodachi",
+        "s-01"
+      ]
+    },
+    {
+      "id": "kw-ie",
+      "character": "家",
+      "japanese": "家",
+      "furigana": [
+        {
+          "b": "家",
+          "r": "いえ"
+        }
+      ],
+      "readings": [
+        "いえ",
+        "うち",
+        "か"
+      ],
+      "romaji": "ie / ka",
+      "english": "house, home",
+      "audio": "audio/ja/chars/kw-ie.mp3",
+      "audioHint": "いえ",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 1,
+      "note": "家族 (かぞく) is family. うち is the warmer \"home\": うちに帰る.",
+      "seenIn": [
+        "w-kazoku",
+        "w-ie",
+        "s-12"
+      ]
+    },
+    {
+      "id": "kw-chichi",
+      "character": "父",
+      "japanese": "父",
+      "furigana": [
+        {
+          "b": "父",
+          "r": "ちち"
+        }
+      ],
+      "readings": [
+        "ちち",
+        "ふ"
+      ],
+      "romaji": "chichi / fu",
+      "english": "father",
+      "audio": "audio/ja/chars/kw-chichi.mp3",
+      "audioHint": "ちち",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 2,
+      "note": "Your own father is 父; someone else's — or yours, to his face — is お父さん.",
+      "seenIn": [
+        "w-otousan"
+      ]
+    },
+    {
+      "id": "kw-haha",
+      "character": "母",
+      "japanese": "母",
+      "furigana": [
+        {
+          "b": "母",
+          "r": "はは"
+        }
+      ],
+      "readings": [
+        "はは",
+        "ぼ"
+      ],
+      "romaji": "haha / bo",
+      "english": "mother",
+      "audio": "audio/ja/chars/kw-haha.mp3",
+      "audioHint": "はは",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 2,
+      "note": "Your own mother is 母; someone else's — or yours, to her face — is お母さん.",
+      "seenIn": [
+        "w-okaasan"
+      ]
+    },
+    {
+      "id": "kw-ko",
+      "character": "子",
+      "japanese": "子",
+      "furigana": [
+        {
+          "b": "子",
+          "r": "こ"
+        }
+      ],
+      "readings": [
+        "こ",
+        "し"
+      ],
+      "romaji": "ko / shi",
+      "english": "child",
+      "audio": "audio/ja/chars/kw-ko.mp3",
+      "audioHint": "こ",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 1,
+      "note": "子供 (こども) is a child; 女の子 a girl, 男の子 a boy.",
+      "seenIn": [
+        "w-kodomo"
+      ]
+    },
+    {
+      "id": "kw-na",
+      "character": "名",
+      "japanese": "名",
+      "furigana": [
+        {
+          "b": "名",
+          "r": "な"
+        }
+      ],
+      "readings": [
+        "な",
+        "めい"
+      ],
+      "romaji": "na / mei",
+      "english": "name",
+      "audio": "audio/ja/chars/kw-na.mp3",
+      "audioHint": "な",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 2,
+      "note": "名前 (なまえ) — your name.",
+      "seenIn": [
+        "w-namae"
+      ]
+    },
+    {
+      "id": "kw-mae",
+      "character": "前",
+      "japanese": "前",
+      "furigana": [
+        {
+          "b": "前",
+          "r": "まえ"
+        }
+      ],
+      "readings": [
+        "まえ",
+        "ぜん"
+      ],
+      "romaji": "mae / zen",
+      "english": "before, in front",
+      "audio": "audio/ja/chars/kw-mae.mp3",
+      "audioHint": "まえ",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 2,
+      "note": "名前 (なまえ) name, 午前 (ごぜん) a.m., 駅の前 in front of the station.",
+      "seenIn": [
+        "w-namae",
+        "num-14"
+      ]
+    },
+    {
+      "id": "kw-kare",
+      "character": "彼",
+      "japanese": "彼",
+      "furigana": [
+        {
+          "b": "彼",
+          "r": "かれ"
+        }
+      ],
+      "readings": [
+        "かれ",
+        "かの"
+      ],
+      "romaji": "kare",
+      "english": "he; that one",
+      "audio": "audio/ja/chars/kw-kare.mp3",
+      "audioHint": "かれ",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 3,
+      "note": "彼女 (かのじょ) is she — or girlfriend. 彼氏 (かれし) is boyfriend.",
+      "seenIn": [
+        "w-kanojo",
+        "w-kare",
+        "w-kareshi"
+      ]
+    },
+    {
+      "id": "kw-ima",
+      "character": "今",
+      "japanese": "今",
+      "furigana": [
+        {
+          "b": "今",
+          "r": "いま"
+        }
+      ],
+      "readings": [
+        "いま",
+        "こん"
+      ],
+      "romaji": "ima / kon",
+      "english": "now",
+      "audio": "audio/ja/chars/kw-ima.mp3",
+      "audioHint": "いま",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 1,
+      "note": "今日 (きょう) today and 今晩 (こんばん) this evening both start with it.",
+      "seenIn": [
+        "w-kyou",
+        "w-ima",
+        "w-konban",
+        "s-03",
+        "num-10",
+        "num-19"
+      ]
+    },
+    {
+      "id": "kw-asa",
+      "character": "朝",
+      "japanese": "朝",
+      "furigana": [
+        {
+          "b": "朝",
+          "r": "あさ"
+        }
+      ],
+      "readings": [
+        "あさ",
+        "ちょう"
+      ],
+      "romaji": "asa / chō",
+      "english": "morning",
+      "audio": "audio/ja/chars/kw-asa.mp3",
+      "audioHint": "あさ",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 2,
+      "note": "朝ご飯 (あさごはん) — breakfast.",
+      "seenIn": [
+        "w-asa",
+        "w-asagohan",
+        "hot-06"
+      ]
+    },
+    {
+      "id": "kw-hiru",
+      "character": "昼",
+      "japanese": "昼",
+      "furigana": [
+        {
+          "b": "昼",
+          "r": "ひる"
+        }
+      ],
+      "readings": [
+        "ひる",
+        "ちゅう"
+      ],
+      "romaji": "hiru / chū",
+      "english": "noon, daytime",
+      "audio": "audio/ja/chars/kw-hiru.mp3",
+      "audioHint": "ひる",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 2,
+      "note": "昼ご飯 (ひるごはん) — lunch.",
+      "seenIn": [
+        "w-hiru"
+      ]
+    },
+    {
+      "id": "kw-yoru",
+      "character": "夜",
+      "japanese": "夜",
+      "furigana": [
+        {
+          "b": "夜",
+          "r": "よる"
+        }
+      ],
+      "readings": [
+        "よる",
+        "や"
+      ],
+      "romaji": "yoru / ya",
+      "english": "night",
+      "audio": "audio/ja/chars/kw-yoru.mp3",
+      "audioHint": "よる",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-yoru"
+      ]
+    },
+    {
+      "id": "kw-ban",
+      "character": "晩",
+      "japanese": "晩",
+      "furigana": [
+        {
+          "b": "晩",
+          "r": "ばん"
+        }
+      ],
+      "readings": [
+        "ばん"
+      ],
+      "romaji": "ban",
+      "english": "evening",
+      "audio": "audio/ja/chars/kw-ban.mp3",
+      "audioHint": "ばん",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 3,
+      "note": "晩ご飯 (ばんごはん) dinner, 今晩 (こんばん) this evening.",
+      "seenIn": [
+        "w-konban",
+        "w-bangohan",
+        "s-04"
+      ]
+    },
+    {
+      "id": "kw-mai",
+      "character": "毎",
+      "japanese": "毎",
+      "furigana": [
+        {
+          "b": "毎",
+          "r": "まい"
+        }
+      ],
+      "readings": [
+        "まい"
+      ],
+      "romaji": "mai",
+      "english": "every",
+      "audio": "audio/ja/chars/kw-mai.mp3",
+      "audioHint": "まい",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 2,
+      "note": "毎日 (まいにち) every day, 毎朝 (まいあさ) every morning.",
+      "seenIn": [
+        "w-mainichi",
+        "s-02"
+      ]
+    },
+    {
+      "id": "kw-shuu",
+      "character": "週",
+      "japanese": "週",
+      "furigana": [
+        {
+          "b": "週",
+          "r": "しゅう"
+        }
+      ],
+      "readings": [
+        "しゅう"
+      ],
+      "romaji": "shū",
+      "english": "week",
+      "audio": "audio/ja/chars/kw-shuu.mp3",
+      "audioHint": "しゅう",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 2,
+      "note": "週末 (しゅうまつ) the weekend, 来週 next week, 先週 last week.",
+      "seenIn": [
+        "w-shuumatsu",
+        "w-raishuu",
+        "w-senshuu",
+        "s-08"
+      ]
+    },
+    {
+      "id": "kw-kuru",
+      "character": "来",
+      "japanese": "来",
+      "furigana": [
+        {
+          "b": "来",
+          "r": "くる"
+        }
+      ],
+      "readings": [
+        "くる",
+        "き",
+        "こ",
+        "らい"
+      ],
+      "romaji": "kuru / rai",
+      "english": "come; next",
+      "audio": "audio/ja/chars/kw-kuru.mp3",
+      "audioHint": "くる",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 2,
+      "note": "来週 (らいしゅう) — next week: the week that's coming.",
+      "seenIn": [
+        "w-raishuu",
+        "w-kuru",
+        "gre-22",
+        "air-10",
+        "sma-05"
+      ]
+    },
+    {
+      "id": "kw-saki",
+      "character": "先",
+      "japanese": "先",
+      "furigana": [
+        {
+          "b": "先",
+          "r": "さき"
+        }
+      ],
+      "readings": [
+        "さき",
+        "せん"
+      ],
+      "romaji": "saki / sen",
+      "english": "ahead; previous",
+      "audio": "audio/ja/chars/kw-saki.mp3",
+      "audioHint": "さき",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 2,
+      "note": "先週 (せんしゅう) last week, 先生 (せんせい) teacher.",
+      "seenIn": [
+        "w-senshuu",
+        "cas-33"
+      ]
+    },
+    {
+      "id": "kw-ato",
+      "character": "後",
+      "japanese": "後",
+      "furigana": [
+        {
+          "b": "後",
+          "r": "あと"
+        }
+      ],
+      "readings": [
+        "あと",
+        "ご",
+        "うし"
+      ],
+      "romaji": "ato / go",
+      "english": "after, later; behind",
+      "audio": "audio/ja/chars/kw-ato.mp3",
+      "audioHint": "あと",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 2,
+      "note": "後で (あとで) — later. 午後 (ごご) is p.m.",
+      "seenIn": [
+        "w-atode",
+        "s-13",
+        "num-14"
+      ]
+    },
+    {
+      "id": "kw-aida",
+      "character": "間",
+      "japanese": "間",
+      "furigana": [
+        {
+          "b": "間",
+          "r": "あいだ"
+        }
+      ],
+      "readings": [
+        "あいだ",
+        "かん",
+        "ま"
+      ],
+      "romaji": "aida / kan",
+      "english": "interval, between",
+      "audio": "audio/ja/chars/kw-aida.mp3",
+      "audioHint": "あいだ",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 3,
+      "note": "時間 (じかん) is time; 間に合う (まにあう) is to make it in time.",
+      "seenIn": [
+        "w-jikan",
+        "w-maniau",
+        "num-20",
+        "air-03"
+      ]
+    },
+    {
+      "id": "kw-miru",
+      "character": "見",
+      "japanese": "見",
+      "furigana": [
+        {
+          "b": "見",
+          "r": "みる"
+        }
+      ],
+      "readings": [
+        "みる",
+        "けん"
+      ],
+      "romaji": "miru / ken",
+      "english": "see, look, watch",
+      "audio": "audio/ja/chars/kw-miru.mp3",
+      "audioHint": "みる",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 1,
+      "seenIn": [
+        "w-miru",
+        "s-09",
+        "dir-10",
+        "sho-05",
+        "eme-10"
+      ]
+    },
+    {
+      "id": "kw-kiku",
+      "character": "聞",
+      "japanese": "聞",
+      "furigana": [
+        {
+          "b": "聞",
+          "r": "きく"
+        }
+      ],
+      "readings": [
+        "きく",
+        "ぶん"
+      ],
+      "romaji": "kiku / bun",
+      "english": "hear, listen; ask",
+      "audio": "audio/ja/chars/kw-kiku.mp3",
+      "audioHint": "きく",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 2,
+      "note": "新聞 (しんぶん) — a newspaper: \"new things heard\".",
+      "seenIn": [
+        "w-kiku"
+      ]
+    },
+    {
+      "id": "kw-iu",
+      "character": "言",
+      "japanese": "言",
+      "furigana": [
+        {
+          "b": "言",
+          "r": "いう"
+        }
+      ],
+      "readings": [
+        "いう",
+        "こと",
+        "げん"
+      ],
+      "romaji": "iu / gen",
+      "english": "say",
+      "audio": "audio/ja/chars/kw-iu.mp3",
+      "audioHint": "いう",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 2,
+      "note": "言葉 (ことば) — a word.",
+      "seenIn": [
+        "w-iu"
+      ]
+    },
+    {
+      "id": "kw-hanasu",
+      "character": "話",
+      "japanese": "話",
+      "furigana": [
+        {
+          "b": "話",
+          "r": "はなす"
+        }
+      ],
+      "readings": [
+        "はなす",
+        "わ"
+      ],
+      "romaji": "hanasu / wa",
+      "english": "talk, speak",
+      "audio": "audio/ja/chars/kw-hanasu.mp3",
+      "audioHint": "はなす",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 2,
+      "note": "電話 (でんわ) — a phone: \"electric talk\".",
+      "seenIn": [
+        "w-hanasu",
+        "w-denwa",
+        "s-13",
+        "gre-18",
+        "eme-09"
+      ]
+    },
+    {
+      "id": "kw-yomu",
+      "character": "読",
+      "japanese": "読",
+      "furigana": [
+        {
+          "b": "読",
+          "r": "よむ"
+        }
+      ],
+      "readings": [
+        "よむ",
+        "どく"
+      ],
+      "romaji": "yomu / doku",
+      "english": "read",
+      "audio": "audio/ja/chars/kw-yomu.mp3",
+      "audioHint": "よむ",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-yomu"
+      ]
+    },
+    {
+      "id": "kw-kaku",
+      "character": "書",
+      "japanese": "書",
+      "furigana": [
+        {
+          "b": "書",
+          "r": "かく"
+        }
+      ],
+      "readings": [
+        "かく",
+        "しょ"
+      ],
+      "romaji": "kaku / sho",
+      "english": "write",
+      "audio": "audio/ja/chars/kw-kaku.mp3",
+      "audioHint": "かく",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-kaku",
+        "num-23"
+      ]
+    },
+    {
+      "id": "kw-taberu",
+      "character": "食",
+      "japanese": "食",
+      "furigana": [
+        {
+          "b": "食",
+          "r": "たべる"
+        }
+      ],
+      "readings": [
+        "たべる",
+        "しょく"
+      ],
+      "romaji": "taberu / shoku",
+      "english": "eat; food",
+      "audio": "audio/ja/chars/kw-taberu.mp3",
+      "audioHint": "たべる",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 1,
+      "note": "食事 (しょくじ) — a meal.",
+      "seenIn": [
+        "w-taberu",
+        "hot-06",
+        "res-04",
+        "res-08",
+        "sma-04",
+        "cas-21"
+      ]
+    },
+    {
+      "id": "kw-nomu",
+      "character": "飲",
+      "japanese": "飲",
+      "furigana": [
+        {
+          "b": "飲",
+          "r": "のむ"
+        }
+      ],
+      "readings": [
+        "のむ",
+        "いん"
+      ],
+      "romaji": "nomu / in",
+      "english": "drink",
+      "audio": "audio/ja/chars/kw-nomu.mp3",
+      "audioHint": "のむ",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 1,
+      "note": "飲み物 (のみもの) — a drink.",
+      "seenIn": [
+        "w-nomu",
+        "s-05"
+      ]
+    },
+    {
+      "id": "kw-kau",
+      "character": "買",
+      "japanese": "買",
+      "furigana": [
+        {
+          "b": "買",
+          "r": "かう"
+        }
+      ],
+      "readings": [
+        "かう",
+        "ばい"
+      ],
+      "romaji": "kau / bai",
+      "english": "buy",
+      "audio": "audio/ja/chars/kw-kau.mp3",
+      "audioHint": "かう",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 2,
+      "note": "買い物 (かいもの) — shopping.",
+      "seenIn": [
+        "w-kau",
+        "w-kaimono",
+        "tra-02"
+      ]
+    },
+    {
+      "id": "kw-matsu",
+      "character": "待",
+      "japanese": "待",
+      "furigana": [
+        {
+          "b": "待",
+          "r": "まつ"
+        }
+      ],
+      "readings": [
+        "まつ",
+        "たい"
+      ],
+      "romaji": "matsu / tai",
+      "english": "wait",
+      "audio": "audio/ja/chars/kw-matsu.mp3",
+      "audioHint": "まつ",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 2,
+      "note": "ちょっと待って — hang on a second.",
+      "seenIn": [
+        "w-matsu",
+        "cas-11"
+      ]
+    },
+    {
+      "id": "kw-au",
+      "character": "会",
+      "japanese": "会",
+      "furigana": [
+        {
+          "b": "会",
+          "r": "あう"
+        }
+      ],
+      "readings": [
+        "あう",
+        "かい"
+      ],
+      "romaji": "au / kai",
+      "english": "meet",
+      "audio": "audio/ja/chars/kw-au.mp3",
+      "audioHint": "あう",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 2,
+      "note": "会社 (かいしゃ) a company, 会議 (かいぎ) a meeting.",
+      "seenIn": [
+        "w-au",
+        "w-kaisha",
+        "w-kaigi",
+        "s-01",
+        "res-10",
+        "cas-30"
+      ]
+    },
+    {
+      "id": "kw-kaeru",
+      "character": "帰",
+      "japanese": "帰",
+      "furigana": [
+        {
+          "b": "帰",
+          "r": "かえる"
+        }
+      ],
+      "readings": [
+        "かえる",
+        "き"
+      ],
+      "romaji": "kaeru / ki",
+      "english": "go home, return",
+      "audio": "audio/ja/chars/kw-kaeru.mp3",
+      "audioHint": "かえる",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 2,
+      "note": "ただいま is what you say as you get back; 帰る is the going.",
+      "seenIn": [
+        "w-kaeru",
+        "air-06",
+        "cas-34"
+      ]
+    },
+    {
+      "id": "kw-yasumu",
+      "character": "休",
+      "japanese": "休",
+      "furigana": [
+        {
+          "b": "休",
+          "r": "やすむ"
+        }
+      ],
+      "readings": [
+        "やすむ",
+        "きゅう"
+      ],
+      "romaji": "yasumu / kyū",
+      "english": "rest, take time off",
+      "audio": "audio/ja/chars/kw-yasumu.mp3",
+      "audioHint": "やすむ",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 2,
+      "note": "休み (やすみ) — a day off, a holiday.",
+      "seenIn": [
+        "w-yasumu",
+        "w-yasumi"
+      ]
+    },
+    {
+      "id": "kw-shiru",
+      "character": "知",
+      "japanese": "知",
+      "furigana": [
+        {
+          "b": "知",
+          "r": "しる"
+        }
+      ],
+      "readings": [
+        "しる",
+        "ち"
+      ],
+      "romaji": "shiru / chi",
+      "english": "know",
+      "audio": "audio/ja/chars/kw-shiru.mp3",
+      "audioHint": "しる",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 3,
+      "note": "知っています — I know. 知りません — I don't know.",
+      "seenIn": [
+        "w-shiru",
+        "cas-09"
+      ]
+    },
+    {
+      "id": "kw-omou",
+      "character": "思",
+      "japanese": "思",
+      "furigana": [
+        {
+          "b": "思",
+          "r": "おもう"
+        }
+      ],
+      "readings": [
+        "おもう",
+        "し"
+      ],
+      "romaji": "omou / shi",
+      "english": "think",
+      "audio": "audio/ja/chars/kw-omou.mp3",
+      "audioHint": "おもう",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-omou"
+      ]
+    },
+    {
+      "id": "kw-tsukau",
+      "character": "使",
+      "japanese": "使",
+      "furigana": [
+        {
+          "b": "使",
+          "r": "つかう"
+        }
+      ],
+      "readings": [
+        "つかう",
+        "し"
+      ],
+      "romaji": "tsukau / shi",
+      "english": "use",
+      "audio": "audio/ja/chars/kw-tsukau.mp3",
+      "audioHint": "つかう",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-tsukau"
+      ]
+    },
+    {
+      "id": "kw-tsukuru",
+      "character": "作",
+      "japanese": "作",
+      "furigana": [
+        {
+          "b": "作",
+          "r": "つくる"
+        }
+      ],
+      "readings": [
+        "つくる",
+        "さく",
+        "さ"
+      ],
+      "romaji": "tsukuru / saku",
+      "english": "make",
+      "audio": "audio/ja/chars/kw-tsukuru.mp3",
+      "audioHint": "つくる",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-tsukuru"
+      ]
+    },
+    {
+      "id": "kw-aruku",
+      "character": "歩",
+      "japanese": "歩",
+      "furigana": [
+        {
+          "b": "歩",
+          "r": "あるく"
+        }
+      ],
+      "readings": [
+        "あるく",
+        "ほ",
+        "ぽ"
+      ],
+      "romaji": "aruku / ho",
+      "english": "walk",
+      "audio": "audio/ja/chars/kw-aruku.mp3",
+      "audioHint": "あるく",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 2,
+      "note": "散歩 (さんぽ) — a walk, a stroll.",
+      "seenIn": [
+        "w-aruku",
+        "w-sanpo",
+        "s-06",
+        "dir-08"
+      ]
+    },
+    {
+      "id": "kw-deru",
+      "character": "出",
+      "japanese": "出",
+      "furigana": [
+        {
+          "b": "出",
+          "r": "でる"
+        }
+      ],
+      "readings": [
+        "でる",
+        "だ",
+        "しゅつ"
+      ],
+      "romaji": "deru / shutsu",
+      "english": "go out, leave",
+      "audio": "audio/ja/chars/kw-deru.mp3",
+      "audioHint": "でる",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 2,
+      "note": "出かける (でかける) to go out; 出口 (でぐち) an exit.",
+      "seenIn": [
+        "w-dekakeru",
+        "air-15",
+        "sma-03"
+      ]
+    },
+    {
+      "id": "kw-neru",
+      "character": "寝",
+      "japanese": "寝",
+      "furigana": [
+        {
+          "b": "寝",
+          "r": "ねる"
+        }
+      ],
+      "readings": [
+        "ねる",
+        "しん"
+      ],
+      "romaji": "neru / shin",
+      "english": "sleep, go to bed",
+      "audio": "audio/ja/chars/kw-neru.mp3",
+      "audioHint": "ねる",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-neru",
+        "cas-33"
+      ]
+    },
+    {
+      "id": "kw-okiru",
+      "character": "起",
+      "japanese": "起",
+      "furigana": [
+        {
+          "b": "起",
+          "r": "おきる"
+        }
+      ],
+      "readings": [
+        "おきる",
+        "き"
+      ],
+      "romaji": "okiru / ki",
+      "english": "get up, wake up",
+      "audio": "audio/ja/chars/kw-okiru.mp3",
+      "audioHint": "おきる",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "actions"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-okiru"
+      ]
+    },
+    {
+      "id": "kw-suki",
+      "character": "好",
+      "japanese": "好",
+      "furigana": [
+        {
+          "b": "好",
+          "r": "すき"
+        }
+      ],
+      "readings": [
+        "すき",
+        "この",
+        "こう"
+      ],
+      "romaji": "suki / kō",
+      "english": "like, fond of",
+      "audio": "audio/ja/chars/kw-suki.mp3",
+      "audioHint": "すき",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 2,
+      "note": "好き is a な-adjective: 好きです, 好きな人.",
+      "seenIn": [
+        "w-suki",
+        "sma-04",
+        "cas-29"
+      ]
+    },
+    {
+      "id": "kw-tanoshii",
+      "character": "楽",
+      "japanese": "楽",
+      "furigana": [
+        {
+          "b": "楽",
+          "r": "たのしい"
+        }
+      ],
+      "readings": [
+        "たのしい",
+        "らく",
+        "がく"
+      ],
+      "romaji": "tanoshii / raku",
+      "english": "fun; ease",
+      "audio": "audio/ja/chars/kw-tanoshii.mp3",
+      "audioHint": "たのしい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 2,
+      "note": "楽しみ (たのしみ) looking forward to it; 音楽 (おんがく) music.",
+      "seenIn": [
+        "w-tanoshii",
+        "w-ongaku",
+        "w-tanoshimi",
+        "sma-10",
+        "cas-18"
+      ]
+    },
+    {
+      "id": "kw-atarashii",
+      "character": "新",
+      "japanese": "新",
+      "furigana": [
+        {
+          "b": "新",
+          "r": "あたらしい"
+        }
+      ],
+      "readings": [
+        "あたらしい",
+        "しん"
+      ],
+      "romaji": "atarashii / shin",
+      "english": "new",
+      "audio": "audio/ja/chars/kw-atarashii.mp3",
+      "audioHint": "あたらしい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 2,
+      "note": "新聞 (しんぶん) — a newspaper.",
+      "seenIn": [
+        "w-atarashii"
+      ]
+    },
+    {
+      "id": "kw-furui",
+      "character": "古",
+      "japanese": "古",
+      "furigana": [
+        {
+          "b": "古",
+          "r": "ふるい"
+        }
+      ],
+      "readings": [
+        "ふるい",
+        "こ"
+      ],
+      "romaji": "furui / ko",
+      "english": "old (of things)",
+      "audio": "audio/ja/chars/kw-furui.mp3",
+      "audioHint": "ふるい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 2,
+      "note": "For things only — an older person is 年上 (としうえ).",
+      "seenIn": [
+        "w-furui"
+      ]
+    },
+    {
+      "id": "kw-takai",
+      "character": "高",
+      "japanese": "高",
+      "furigana": [
+        {
+          "b": "高",
+          "r": "たかい"
+        }
+      ],
+      "readings": [
+        "たかい",
+        "こう"
+      ],
+      "romaji": "takai / kō",
+      "english": "high, tall; expensive",
+      "audio": "audio/ja/chars/kw-takai.mp3",
+      "audioHint": "たかい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 2,
+      "note": "Both tall and pricey. 高校 (こうこう) is high school.",
+      "seenIn": [
+        "w-takai"
+      ]
+    },
+    {
+      "id": "kw-yasui",
+      "character": "安",
+      "japanese": "安",
+      "furigana": [
+        {
+          "b": "安",
+          "r": "やすい"
+        }
+      ],
+      "readings": [
+        "やすい",
+        "あん"
+      ],
+      "romaji": "yasui / an",
+      "english": "cheap; calm",
+      "audio": "audio/ja/chars/kw-yasui.mp3",
+      "audioHint": "やすい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 2,
+      "note": "安心 (あんしん) — relief, peace of mind.",
+      "seenIn": [
+        "w-yasui",
+        "s-15",
+        "sho-07"
+      ]
+    },
+    {
+      "id": "kw-gen",
+      "character": "元",
+      "japanese": "元",
+      "furigana": [
+        {
+          "b": "元",
+          "r": "げん"
+        }
+      ],
+      "readings": [
+        "げん",
+        "もと"
+      ],
+      "romaji": "gen / moto",
+      "english": "origin",
+      "audio": "audio/ja/chars/kw-gen.mp3",
+      "audioHint": "げん",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 2,
+      "note": "元気 (げんき) — well, full of energy.",
+      "seenIn": [
+        "w-genki",
+        "s-12"
+      ]
+    },
+    {
+      "id": "kw-ki",
+      "character": "気",
+      "japanese": "気",
+      "furigana": [
+        {
+          "b": "気",
+          "r": "き"
+        }
+      ],
+      "readings": [
+        "き",
+        "け"
+      ],
+      "romaji": "ki",
+      "english": "spirit, energy, air",
+      "audio": "audio/ja/chars/kw-ki.mp3",
+      "audioHint": "き",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 2,
+      "note": "元気 (げんき) well, 天気 (てんき) weather, 電気 (でんき) electricity.",
+      "seenIn": [
+        "w-denki",
+        "w-genki",
+        "w-tenki",
+        "s-10",
+        "s-12",
+        "eme-03"
+      ]
+    },
+    {
+      "id": "kw-kokoro",
+      "character": "心",
+      "japanese": "心",
+      "furigana": [
+        {
+          "b": "心",
+          "r": "こころ"
+        }
+      ],
+      "readings": [
+        "こころ",
+        "しん"
+      ],
+      "romaji": "kokoro / shin",
+      "english": "heart, mind",
+      "audio": "audio/ja/chars/kw-kokoro.mp3",
+      "audioHint": "こころ",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 3,
+      "note": "心配 (しんぱい) — worry.",
+      "seenIn": [
+        "w-shinpai"
+      ]
+    },
+    {
+      "id": "kw-mise",
+      "character": "店",
+      "japanese": "店",
+      "furigana": [
+        {
+          "b": "店",
+          "r": "みせ"
+        }
+      ],
+      "readings": [
+        "みせ",
+        "てん"
+      ],
+      "romaji": "mise / ten",
+      "english": "shop",
+      "audio": "audio/ja/chars/kw-mise.mp3",
+      "audioHint": "みせ",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-mise",
+        "s-15"
+      ]
+    },
+    {
+      "id": "kw-kuruma",
+      "character": "車",
+      "japanese": "車",
+      "furigana": [
+        {
+          "b": "車",
+          "r": "くるま"
+        }
+      ],
+      "readings": [
+        "くるま",
+        "しゃ"
+      ],
+      "romaji": "kuruma / sha",
+      "english": "car",
+      "audio": "audio/ja/chars/kw-kuruma.mp3",
+      "audioHint": "くるま",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 1,
+      "note": "電車 (でんしゃ) — a train: \"electric car\".",
+      "seenIn": [
+        "w-densha",
+        "w-kuruma",
+        "tra-04",
+        "tra-19",
+        "tra-20",
+        "eme-04"
+      ]
+    },
+    {
+      "id": "kw-den",
+      "character": "電",
+      "japanese": "電",
+      "furigana": [
+        {
+          "b": "電",
+          "r": "でん"
+        }
+      ],
+      "readings": [
+        "でん"
+      ],
+      "romaji": "den",
+      "english": "electricity",
+      "audio": "audio/ja/chars/kw-den.mp3",
+      "audioHint": "でん",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 2,
+      "note": "Anything electric: 電車 train, 電話 phone, 電気 lights.",
+      "seenIn": [
+        "w-denki",
+        "w-densha",
+        "w-denwa",
+        "s-10",
+        "s-13",
+        "tra-04"
+      ]
+    },
+    {
+      "id": "kw-gaku",
+      "character": "学",
+      "japanese": "学",
+      "furigana": [
+        {
+          "b": "学",
+          "r": "がく"
+        }
+      ],
+      "readings": [
+        "がく",
+        "まな"
+      ],
+      "romaji": "gaku",
+      "english": "study, learning",
+      "audio": "audio/ja/chars/kw-gaku.mp3",
+      "audioHint": "がく",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 2,
+      "note": "学校 (がっこう) school, 大学 (だいがく) university.",
+      "seenIn": [
+        "w-gakkou"
+      ]
+    },
+    {
+      "id": "kw-kou",
+      "character": "校",
+      "japanese": "校",
+      "furigana": [
+        {
+          "b": "校",
+          "r": "こう"
+        }
+      ],
+      "readings": [
+        "こう"
+      ],
+      "romaji": "kō",
+      "english": "school",
+      "audio": "audio/ja/chars/kw-kou.mp3",
+      "audioHint": "こう",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 3,
+      "note": "学校 (がっこう) — school.",
+      "seenIn": [
+        "w-gakkou"
+      ]
+    },
+    {
+      "id": "kw-sha",
+      "character": "社",
+      "japanese": "社",
+      "furigana": [
+        {
+          "b": "社",
+          "r": "しゃ"
+        }
+      ],
+      "readings": [
+        "しゃ",
+        "やしろ"
+      ],
+      "romaji": "sha",
+      "english": "company; shrine",
+      "audio": "audio/ja/chars/kw-sha.mp3",
+      "audioHint": "しゃ",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 3,
+      "note": "会社 (かいしゃ) — a company, the office.",
+      "seenIn": [
+        "w-kaisha"
+      ]
+    },
+    {
+      "id": "kw-michi",
+      "character": "道",
+      "japanese": "道",
+      "furigana": [
+        {
+          "b": "道",
+          "r": "みち"
+        }
+      ],
+      "readings": [
+        "みち",
+        "どう"
+      ],
+      "romaji": "michi / dō",
+      "english": "road, way",
+      "audio": "audio/ja/chars/kw-michi.mp3",
+      "audioHint": "みち",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-michi",
+        "tra-11",
+        "dir-04"
+      ]
+    },
+    {
+      "id": "kw-ame",
+      "character": "雨",
+      "japanese": "雨",
+      "furigana": [
+        {
+          "b": "雨",
+          "r": "あめ"
+        }
+      ],
+      "readings": [
+        "あめ",
+        "う"
+      ],
+      "romaji": "ame / u",
+      "english": "rain",
+      "audio": "audio/ja/chars/kw-ame.mp3",
+      "audioHint": "あめ",
+      "group": "nature",
+      "tags": [
+        "kanji",
+        "nature"
+      ],
+      "difficulty": 1,
+      "seenIn": [
+        "w-ame",
+        "s-07"
+      ]
+    },
+    {
+      "id": "kw-ten",
+      "character": "天",
+      "japanese": "天",
+      "furigana": [
+        {
+          "b": "天",
+          "r": "てん"
+        }
+      ],
+      "readings": [
+        "てん",
+        "あま"
+      ],
+      "romaji": "ten",
+      "english": "heaven, sky",
+      "audio": "audio/ja/chars/kw-ten.mp3",
+      "audioHint": "てん",
+      "group": "nature",
+      "tags": [
+        "kanji",
+        "nature"
+      ],
+      "difficulty": 2,
+      "note": "天気 (てんき) — the weather.",
+      "seenIn": [
+        "w-tenki",
+        "sma-01"
+      ]
+    },
+    {
+      "id": "kw-yuki",
+      "character": "雪",
+      "japanese": "雪",
+      "furigana": [
+        {
+          "b": "雪",
+          "r": "ゆき"
+        }
+      ],
+      "readings": [
+        "ゆき",
+        "せつ"
+      ],
+      "romaji": "yuki / setsu",
+      "english": "snow",
+      "audio": "audio/ja/chars/kw-yuki.mp3",
+      "audioHint": "ゆき",
+      "group": "nature",
+      "tags": [
+        "kanji",
+        "nature"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-yuki"
+      ]
+    },
+    {
+      "id": "kw-haru",
+      "character": "春",
+      "japanese": "春",
+      "furigana": [
+        {
+          "b": "春",
+          "r": "はる"
+        }
+      ],
+      "readings": [
+        "はる",
+        "しゅん"
+      ],
+      "romaji": "haru / shun",
+      "english": "spring",
+      "audio": "audio/ja/chars/kw-haru.mp3",
+      "audioHint": "はる",
+      "group": "nature",
+      "tags": [
+        "kanji",
+        "nature"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-haru"
+      ]
+    },
+    {
+      "id": "kw-natsu",
+      "character": "夏",
+      "japanese": "夏",
+      "furigana": [
+        {
+          "b": "夏",
+          "r": "なつ"
+        }
+      ],
+      "readings": [
+        "なつ",
+        "か"
+      ],
+      "romaji": "natsu / ka",
+      "english": "summer",
+      "audio": "audio/ja/chars/kw-natsu.mp3",
+      "audioHint": "なつ",
+      "group": "nature",
+      "tags": [
+        "kanji",
+        "nature"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-natsu"
+      ]
+    },
+    {
+      "id": "kw-aki",
+      "character": "秋",
+      "japanese": "秋",
+      "furigana": [
+        {
+          "b": "秋",
+          "r": "あき"
+        }
+      ],
+      "readings": [
+        "あき",
+        "しゅう"
+      ],
+      "romaji": "aki / shū",
+      "english": "autumn",
+      "audio": "audio/ja/chars/kw-aki.mp3",
+      "audioHint": "あき",
+      "group": "nature",
+      "tags": [
+        "kanji",
+        "nature"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-aki"
+      ]
+    },
+    {
+      "id": "kw-fuyu",
+      "character": "冬",
+      "japanese": "冬",
+      "furigana": [
+        {
+          "b": "冬",
+          "r": "ふゆ"
+        }
+      ],
+      "readings": [
+        "ふゆ",
+        "とう"
+      ],
+      "romaji": "fuyu / tō",
+      "english": "winter",
+      "audio": "audio/ja/chars/kw-fuyu.mp3",
+      "audioHint": "ふゆ",
+      "group": "nature",
+      "tags": [
+        "kanji",
+        "nature"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-fuyu"
+      ]
+    },
+    {
+      "id": "kw-hon",
+      "character": "本",
+      "japanese": "本",
+      "furigana": [
+        {
+          "b": "本",
+          "r": "ほん"
+        }
+      ],
+      "readings": [
+        "ほん",
+        "もと"
+      ],
+      "romaji": "hon / moto",
+      "english": "book; origin",
+      "audio": "audio/ja/chars/kw-hon.mp3",
+      "audioHint": "ほん",
+      "group": "work",
+      "tags": [
+        "kanji",
+        "work"
+      ],
+      "difficulty": 1,
+      "note": "日本 (にほん) — Japan, \"origin of the sun\".",
+      "seenIn": [
+        "w-nihongo",
+        "s-02",
+        "gre-15",
+        "sma-02",
+        "sma-04",
+        "sma-06"
+      ]
+    },
+    {
+      "id": "kw-go",
+      "character": "語",
+      "japanese": "語",
+      "furigana": [
+        {
+          "b": "語",
+          "r": "ご"
+        }
+      ],
+      "readings": [
+        "ご",
+        "かた"
+      ],
+      "romaji": "go",
+      "english": "language, word",
+      "audio": "audio/ja/chars/kw-go.mp3",
+      "audioHint": "ご",
+      "group": "work",
+      "tags": [
+        "kanji",
+        "work"
+      ],
+      "difficulty": 2,
+      "note": "日本語 (にほんご) Japanese, 英語 (えいご) English.",
+      "seenIn": [
+        "w-nihongo",
+        "w-eigo",
+        "s-02",
+        "gre-15",
+        "gre-18",
+        "eme-09"
+      ]
+    },
+    {
+      "id": "kw-shigoto",
+      "character": "仕事",
+      "japanese": "仕事",
+      "furigana": [
+        {
+          "b": "仕事",
+          "r": "しごと"
+        }
+      ],
+      "readings": [
+        "しごと"
+      ],
+      "romaji": "shigoto",
+      "english": "work, job",
+      "audio": "audio/ja/chars/kw-shigoto.mp3",
+      "audioHint": "しごと",
+      "group": "work",
+      "tags": [
+        "kanji",
+        "work"
+      ],
+      "difficulty": 2,
+      "note": "Two kanji, one word — 仕 on its own is rarely met.",
+      "seenIn": [
+        "w-shigoto"
+      ]
+    },
+    {
+      "id": "kw-benkyou",
+      "character": "勉強",
+      "japanese": "勉強",
+      "furigana": [
+        {
+          "b": "勉強",
+          "r": "べんきょう"
+        }
+      ],
+      "readings": [
+        "べんきょう"
+      ],
+      "romaji": "benkyō",
+      "english": "study",
+      "audio": "audio/ja/chars/kw-benkyou.mp3",
+      "audioHint": "べんきょう",
+      "group": "work",
+      "tags": [
+        "kanji",
+        "work"
+      ],
+      "difficulty": 2,
+      "note": "勉強する — to study. Two kanji, one word.",
+      "seenIn": [
+        "w-benkyou",
+        "s-02",
+        "sma-06"
+      ]
+    }
+  ]
+}

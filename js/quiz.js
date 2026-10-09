@@ -108,9 +108,9 @@ export async function applyPlacement(items, answers) {
 
   // README §7: start with a few categories, not all of them — the review
   // load adds up. The manifest marks which ones are `starter`s.
-  const { categories } = await loadContent();
-  for (const cat of categories.filter((c) => c.starter)) {
-    await deck.activateCategory(cat.id);
+  const { categories, decks } = await loadContent();
+  for (const d of [...categories, ...(decks || [])].filter((c) => c.starter)) {
+    await deck.activateCategory(d.id);
   }
 
   return result;

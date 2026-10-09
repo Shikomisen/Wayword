@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "words-home",
+  "title": "Home & Daily Life",
+  "description": "Getting up, cleaning, laundry, taking out the rubbish — the vocabulary of living together.",
+  "items": [
+    {
+      "id": "w-ie",
+      "japanese": "家",
+      "furigana": "{家|いえ}",
+      "english": "house, home",
+      "pos": "noun",
+      "usage": "Also read うち, which means \"home\" more personally — and \"our family\".",
+      "audio": "audio/ja/words/w-ie.mp3",
+      "tags": ["home"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-heya",
+      "japanese": "部屋",
+      "furigana": "{部屋|へや}",
+      "english": "room",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-heya.mp3",
+      "tags": ["home"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-daidokoro",
+      "japanese": "台所",
+      "furigana": "{台所|だいどころ}",
+      "english": "kitchen",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-daidokoro.mp3",
+      "tags": ["home"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ofuro",
+      "japanese": "お風呂",
+      "furigana": "お{風呂|ふろ}",
+      "english": "bath",
+      "pos": "noun",
+      "usage": "お風呂に入る — \"to take a bath\".",
+      "audio": "audio/ja/words/w-ofuro.mp3",
+      "tags": ["home"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-toire",
+      "japanese": "トイレ",
+      "furigana": "{トイレ|といれ}",
+      "english": "toilet, bathroom",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-toire.mp3",
+      "tags": ["home"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-neru",
+      "japanese": "寝る",
+      "furigana": "{寝|ね}る",
+      "english": "to sleep; to go to bed",
+      "pos": "verb",
+      "forms": {
+        "masu": "{寝|ね}ます",
+        "te": "{寝|ね}て"
+      },
+      "audio": "audio/ja/words/w-neru.mp3",
+      "tags": ["home"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-okiru",
+      "japanese": "起きる",
+      "furigana": "{起|お}きる",
+      "english": "to get up, to wake up",
+      "pos": "verb",
+      "forms": {
+        "masu": "{起|お}きます",
+        "te": "{起|お}きて"
+      },
+      "audio": "audio/ja/words/w-okiru.mp3",
+      "tags": ["home"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-arau",
+      "japanese": "洗う",
+      "furigana": "{洗|あら}う",
+      "english": "to wash",
+      "pos": "verb",
+      "forms": {
+        "masu": "{洗|あら}います",
+        "te": "{洗|あら}って"
+      },
+      "audio": "audio/ja/words/w-arau.mp3",
+      "tags": ["home"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-souji",
+      "japanese": "掃除",
+      "furigana": "{掃除|そうじ}",
+      "english": "cleaning",
+      "pos": "noun",
+      "usage": "掃除する — \"to clean\".",
+      "audio": "audio/ja/words/w-souji.mp3",
+      "tags": ["home"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sentaku",
+      "japanese": "洗濯",
+      "furigana": "{洗濯|せんたく}",
+      "english": "laundry",
+      "pos": "noun",
+      "usage": "洗濯する — \"to do the laundry\".",
+      "audio": "audio/ja/words/w-sentaku.mp3",
+      "tags": ["home"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ryouri",
+      "japanese": "料理",
+      "furigana": "{料理|りょうり}",
+      "english": "cooking; a dish",
+      "pos": "noun",
+      "usage": "料理する — \"to cook\".",
+      "audio": "audio/ja/words/w-ryouri.mp3",
+      "tags": ["home", "food"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kaimono",
+      "japanese": "買い物",
+      "furigana": "{買|か}い{物|もの}",
+      "english": "shopping",
+      "pos": "noun",
+      "usage": "買い物に行く — \"to go shopping\".",
+      "audio": "audio/ja/words/w-kaimono.mp3",
+      "tags": ["home", "shopping"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-denki",
+      "japanese": "電気",
+      "furigana": "{電気|でんき}",
+      "english": "the light(s); electricity",
+      "pos": "noun",
+      "usage": "電気をつけて / 消して — \"turn the light on / off\".",
+      "audio": "audio/ja/words/w-denki.mp3",
+      "tags": ["home"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mado",
+      "japanese": "窓",
+      "furigana": "{窓|まど}",
+      "english": "window",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-mado.mp3",
+      "tags": ["home"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kagi",
+      "japanese": "鍵",
+      "furigana": "{鍵|かぎ}",
+      "english": "key; lock",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kagi.mp3",
+      "tags": ["home"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-gomi",
+      "japanese": "ゴミ",
+      "furigana": "{ゴミ|ごみ}",
+      "english": "rubbish, trash",
+      "pos": "noun",
+      "usage": "Usually written in katakana. ゴミを出す — \"to take out the rubbish\".",
+      "audio": "audio/ja/words/w-gomi.mp3",
+      "tags": ["home"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-katazukeru",
+      "japanese": "片付ける",
+      "furigana": "{片付|かたづ}ける",
+      "english": "to tidy up, to put away",
+      "pos": "verb",
+      "forms": {
+        "masu": "{片付|かたづ}けます",
+        "te": "{片付|かたづ}けて"
+      },
+      "audio": "audio/ja/words/w-katazukeru.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    }
+  ]
+}

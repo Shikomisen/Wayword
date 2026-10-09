@@ -47,3 +47,24 @@ export function rubyReading(value) {
 export function hasKanji(text) {
   return /[㐀-鿿豈-﫿々]/.test(String(text));
 }
+
+const KANJI_RUN = /([㐀-鿿豈-﫿々〆ヵヶ]+)|([^㐀-鿿豈-﫿々〆ヵヶ]+)/g;
+const toHiragana = (s) => String(s).replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0x60));
+const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+/**
+ * Spread a whole-word kana reading over the kanji in a text, using the kana
+ * the text already contains as anchors:
+ *   alignReading('食べ物', 'たべもの') → '{食|た}べ{物|もの}'
+ * Used for words the learner types in with a reading. Returns notation, or
+ * null if the reading doesn't fit the text (the caller then falls back to
+ * one reading over the whole thing).
+ */
+export function alignReading(text, reading) {
+  const runs = [...String(text).matchAll(KANJI_RUN)].map((m) => ({ kanji: Boolean(m[1]), s: m[0] }));
+  if (!runs.some((r) => r.kanji) || !reading) return null;
+  const pattern = `^${runs.map((r) => (r.kanji ? '(.+?)' : `(${escapeRe(toHiragana(r.s))})`)).join('')}$`;
+  const m = toHiragana(reading.replace(/\s+/g, '')).match(new RegExp(pattern, 'u'));
+  if (!m) return null;
+  return runs.map((r, i) => (r.kanji ? `{${r.s}|${m[i + 1]}}` : r.s)).join('');
+}

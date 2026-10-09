@@ -8,7 +8,10 @@
  * A card record looks like:
  *   {
  *     id, categoryId,
- *     kind,       // 'phrase' | 'character' — keeps the two decks separate
+ *     itemId,     // the content item this card tests (= id for older cards)
+ *     dir,        // 'recognition' | 'production' | 'listening' — see DIR
+ *     kind,       // 'phrase' | 'word' | 'sentence' | 'character' — characters
+ *                 // keep their own queue, the rest share the main one
  *     difficulty, // 1-5, copied from content so the queue can order new cards
  *     ease,       // SM-2 easiness factor, floor 1.3
  *     interval,   // days
@@ -21,8 +24,9 @@
  *     seededBy,   // 'placement' | 'study' | null — provenance, for debugging
  *   }
  *
- * `kind` defaults to 'phrase' so records written before the Characters
- * section existed keep working untouched.
+ * `kind` defaults to 'phrase', `dir` to 'recognition' and `itemId` to the
+ * card's own id, so records written before those existed keep working
+ * untouched — a recognition card's id *is* its item's id.
  */
 
 export const DAY = 86400000;
@@ -37,12 +41,30 @@ export const GRADE = {
 
 const LEARNING_STEP = 10 * MIN;
 
-export const KIND = { PHRASE: 'phrase', CHARACTER: 'character' };
+export const KIND = { PHRASE: 'phrase', WORD: 'word', SENTENCE: 'sentence', CHARACTER: 'character' };
+
+/**
+ * The three ways a card can be asked:
+ *   recognition — see the target language, recall the meaning
+ *   production  — see the meaning, say it in the target language
+ *   listening   — hear it, recall the meaning
+ */
+export const DIR = { RECOGNITION: 'recognition', PRODUCTION: 'production', LISTENING: 'listening' };
+
+/** Card id for an item asked in a direction. Recognition keeps the bare item id. */
+export function cardId(itemId, dir = DIR.RECOGNITION) {
+  return dir === DIR.RECOGNITION ? itemId : `${itemId}~${dir === DIR.PRODUCTION ? 'p' : 'l'}`;
+}
+
+export const itemIdOf = (card) => card.itemId ?? card.id;
+export const dirOf = (card) => card.dir ?? DIR.RECOGNITION;
 
 export function newCard(id, categoryId, now = Date.now(), opts = {}) {
-  const { kind = KIND.PHRASE, difficulty = 3 } = opts;
+  const { kind = KIND.PHRASE, difficulty = 3, dir = DIR.RECOGNITION } = opts;
   return {
-    id,
+    id: cardId(id, dir),
+    itemId: id,
+    dir,
     categoryId,
     kind,
     difficulty,
@@ -145,6 +167,26 @@ export function buildQueue(cards, { newLimit = 10, now = Date.now() } = {}) {
 /** Split a mixed deck by kind — phrases and characters never share a queue. */
 export function ofKind(cards, kind) {
   return cards.filter((c) => (c.kind ?? KIND.PHRASE) === kind);
+}
+
+/** Everything except characters: phrases, words and sentences share the main queue. */
+export function studyCards(cards) {
+  return cards.filter((c) => (c.kind ?? KIND.PHRASE) !== KIND.CHARACTER);
+}
+
+/**
+ * A new production or listening card waits until the same item's
+ * recognition card has been seen at least once — you meet a word before
+ * you're asked to say it, and one item never arrives three ways on the same
+ * day. Pass every card of the course (the recognition card may sit in the
+ * same list or not; an item without one isn't held back).
+ */
+export function introducible(cards, all = cards) {
+  const recognition = new Map();
+  for (const c of all) if (dirOf(c) === DIR.RECOGNITION) recognition.set(itemIdOf(c), c);
+  return cards.filter((c) =>
+    c.state !== 'new' || dirOf(c) === DIR.RECOGNITION ||
+    (recognition.get(itemIdOf(c))?.state ?? 'review') !== 'new');
 }
 
 /** Human-readable "next review in …" for the UI. */

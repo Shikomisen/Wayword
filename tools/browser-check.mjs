@@ -202,20 +202,18 @@ const expectedAssets = () => async function () {
   out.push('./content/courses.json');
   const reg = await j('content/courses.json');
   for (const lang of new Set(['en', ...(reg.speakers || [])])) out.push(`./content/ui/${lang}.json`);
-  const items = (list, key) => (list || []).flatMap((x) => x[key] || []);
+  // Written independently of sw.js's own walk on purpose: each content kind
+  // is listed by hand, so a kind the worker forgets to cache shows up here.
+  const clips = (x) => [x?.audio, x?.polite?.audio].filter(Boolean);
   for (const c of reg.courses.filter((x) => x.manifest)) {
     const m = await j(c.manifest);
     out.push(`./${c.manifest}`);
-    const decks = [...(m.categories || []), ...(m.vocab || []), ...(m.lessons || []), ...(m.characterSets || [])];
-    for (const d of decks) {
+    for (const d of [...(m.categories || []), ...(m.decks || []), ...(m.lessons || []), ...(m.characterSets || [])]) {
       out.push(`./${d.file}`);
       const data = await j(d.file);
-      const all = [...items([data], 'phrases'), ...items([data], 'words'), ...items([data], 'characters'),
-        ...items([data], 'examples')];
-      for (const x of all) {
-        if (x.audio) out.push(`./${x.audio}`);
-        if (x.polite?.audio) out.push(`./${x.polite.audio}`);
-      }
+      const all = [...(data.phrases || []), ...(data.items || []), ...(data.characters || []),
+        ...(data.examples || []), ...(data.drills || [])];
+      for (const x of all) out.push(...clips(x).map((a) => `./${a}`));
     }
     for (const s of m.scenarios || []) {
       out.push(`./${s.file}`);

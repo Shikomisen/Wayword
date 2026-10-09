@@ -243,13 +243,13 @@ function kanjiRow(c, phrases, settings) {
     el('div', { class: 'kanji-body' },
       el('div', { class: 'kanji-meaning' }, c.meaning || c.english),
       el('div', { class: 'kanji-reading' },
-        settings.furigana ? (c.readings || []).join('・') : '',
+        settings.furiganaMode !== 'hidden' ? (c.readings || []).join('・') : '',
         settings.romaji ? el('span', { class: 'romaji' }, ` ${c.romaji}`) : null),
       c.note ? el('div', { class: 'note' }, c.note) : null,
 
       refs.length
         ? el('div', { class: 'kanji-refs' },
-            el('span', { class: 'note-label' }, 'Already in your phrases'),
+            el('span', { class: 'note-label' }, 'Seen in your words and phrases'),
             el('div', { class: 'ref-list' },
               refs.map((p) =>
                 el('a', { class: 'ref-chip', href: link(`/category/${p.categoryId}`), title: p.meaning },

@@ -69,3 +69,93 @@ export async function exists(src) {
     return false;
   }
 }
+
+/* ---------- your own words: recordings and the device voice ---------- */
+
+/**
+ * Play whatever audio an item has: a bundled clip, a recording you made
+ * (fetched only when played), or the device's own voice.
+ * @returns {Promise<'played'|'missing'|'blocked'>}
+ */
+export async function playItem(item) {
+  if (!item) return 'missing';
+  if (item.audio) return play(item.audio);
+  if (item.audioMode === 'recording' && item.loadRecording) {
+    const url = await item.loadRecording();
+    return url ? play(url) : 'missing';
+  }
+  if (item.audioMode === 'tts') return speak(item.kana || item.target, item.targetLang);
+  return 'missing';
+}
+
+const synth = () => (typeof window !== 'undefined' && 'speechSynthesis' in window ? window.speechSynthesis : null);
+
+/** Voices load asynchronously in most browsers; give them a moment. */
+async function voices() {
+  const s = synth();
+  if (!s) return [];
+  let list = s.getVoices();
+  if (list.length) return list;
+  await new Promise((resolve) => {
+    const done = () => { s.removeEventListener?.('voiceschanged', done); resolve(); };
+    s.addEventListener?.('voiceschanged', done);
+    setTimeout(done, 1200);
+  });
+  return s.getVoices();
+}
+
+/**
+ * An on-device voice for a language, or null. Only voices that run locally
+ * are used: a network voice would send the sentence to a speech service,
+ * and nothing in this app leaves the device (README §8).
+ */
+export async function deviceVoice(lang) {
+  const all = (await voices()).filter((v) => v.lang?.toLowerCase().startsWith(lang));
+  return all.find((v) => v.localService) || null;
+}
+
+/** Say a line with the device voice. 'missing' if there's no local voice for it. */
+export async function speak(text, lang) {
+  const s = synth();
+  const voice = s ? await deviceVoice(lang) : null;
+  if (!s || !voice || !text) return 'missing';
+  stop();
+  s.cancel();
+  const u = new SpeechSynthesisUtterance(text);
+  u.voice = voice;
+  u.lang = voice.lang;
+  u.rate = 0.95;
+  return new Promise((resolve) => {
+    u.onend = () => resolve('played');
+    u.onerror = () => resolve('missing');
+    s.speak(u);
+  });
+}
+
+/** Record from the microphone until stop() is called; resolves to a data: URL. */
+export async function startRecording() {
+  if (typeof navigator === 'undefined' || !navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === 'undefined') {
+    throw new Error('Recording is not supported in this browser.');
+  }
+  const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+  const recorder = new MediaRecorder(stream);
+  const chunks = [];
+  recorder.addEventListener('dataavailable', (e) => { if (e.data.size) chunks.push(e.data); });
+  recorder.start();
+  return {
+    stop: () => new Promise((resolve) => {
+      recorder.addEventListener('stop', () => {
+        stream.getTracks().forEach((track) => track.stop());
+        const blob = new Blob(chunks, { type: recorder.mimeType || 'audio/webm' });
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.readAsDataURL(blob);
+      }, { once: true });
+      recorder.stop();
+    }),
+  };
+}
+
+export function canRecord() {
+  return typeof navigator !== 'undefined' && Boolean(navigator.mediaDevices?.getUserMedia) && typeof MediaRecorder !== 'undefined';
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "words-free",
+  "title": "Free Time",
+  "description": "Films, music, trips, birthdays — what you do together.",
+  "items": [
+    {
+      "id": "w-eiga",
+      "japanese": "映画",
+      "furigana": "{映画|えいが}",
+      "english": "film, movie",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-eiga.mp3",
+      "tags": ["free time"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ongaku",
+      "japanese": "音楽",
+      "furigana": "{音楽|おんがく}",
+      "english": "music",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-ongaku.mp3",
+      "tags": ["free time"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ryokou",
+      "japanese": "旅行",
+      "furigana": "{旅行|りょこう}",
+      "english": "trip, travel",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-ryokou.mp3",
+      "tags": ["free time"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-shashin",
+      "japanese": "写真",
+      "furigana": "{写真|しゃしん}",
+      "english": "photo",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shashin.mp3",
+      "tags": ["free time"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tanjoubi",
+      "japanese": "誕生日",
+      "furigana": "{誕生日|たんじょうび}",
+      "english": "birthday",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-tanjoubi.mp3",
+      "tags": ["people"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-purezento",
+      "japanese": "プレゼント",
+      "furigana": "{プレゼント|ぷれぜんと}",
+      "english": "present, gift",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-purezento.mp3",
+      "tags": ["people"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-shumi",
+      "japanese": "趣味",
+      "furigana": "{趣味|しゅみ}",
+      "english": "hobby",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shumi.mp3",
+      "tags": ["free time"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sanpo",
+      "japanese": "散歩",
+      "furigana": "{散歩|さんぽ}",
+      "english": "a walk",
+      "pos": "noun",
+      "usage": "散歩する — \"to go for a walk\".",
+      "audio": "audio/ja/words/w-sanpo.mp3",
+      "tags": ["free time"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-yotei",
+      "japanese": "予定",
+      "furigana": "{予定|よてい}",
+      "english": "plans",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yotei.mp3",
+      "tags": ["time"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tanoshimi",
+      "japanese": "楽しみ",
+      "furigana": "{楽|たの}しみ",
+      "english": "something to look forward to",
+      "pos": "noun",
+      "usage": "楽しみにしてる — \"I'm looking forward to it\".",
+      "audio": "audio/ja/words/w-tanoshimi.mp3",
+      "tags": ["feelings"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-dekakeru",
+      "japanese": "出かける",
+      "furigana": "{出|で}かける",
+      "english": "to go out",
+      "pos": "verb",
+      "forms": {
+        "masu": "{出|で}かけます",
+        "te": "{出|で}かけて"
+      },
+      "audio": "audio/ja/words/w-dekakeru.mp3",
+      "tags": ["movement"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-utau",
+      "japanese": "歌う",
+      "furigana": "{歌|うた}う",
+      "english": "to sing",
+      "pos": "verb",
+      "forms": {
+        "masu": "{歌|うた}います",
+        "te": "{歌|うた}って"
+      },
+      "audio": "audio/ja/words/w-utau.mp3",
+      "tags": ["free time"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-oyogu",
+      "japanese": "泳ぐ",
+      "furigana": "{泳|およ}ぐ",
+      "english": "to swim",
+      "pos": "verb",
+      "forms": {
+        "masu": "{泳|およ}ぎます",
+        "te": "{泳|およ}いで"
+      },
+      "audio": "audio/ja/words/w-oyogu.mp3",
+      "tags": ["free time"],
+      "difficulty": 2
+    }
+  ]
+}

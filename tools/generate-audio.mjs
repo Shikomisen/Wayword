@@ -28,7 +28,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync, statSync } from 'node:fs';
 import { dirname, resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { rubyReading } from '../js/ruby.js';
+import { toSegments } from '../js/ruby.js';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -110,10 +110,17 @@ function collect(course) {
     jobs.push({ id: `${course.id}/${id}`, category, text, lang, out: resolve(ROOT, out) });
 
   // What to synthesise for an item. For Japanese the kana reading is far more
-  // reliable than raw kanji: an explicit audioHint wins, else the reading the
-  // furigana spells out, else the text itself.
-  const spoken = (item) =>
-    item.audioHint || (rubyField && item[rubyField] ? rubyReading(item[rubyField]) : '') || item[targetField];
+  // reliable than raw kanji: an explicit audioHint wins, else the text with
+  // every annotated kanji run swapped for its reading. Kana stays as written,
+  // so a katakana loanword carrying a hiragana reading aid ({コーヒー|こーひー})
+  // is still spoken from its katakana.
+  const KANA_ONLY = /^[぀-ヿー]+$/;
+  const spoken = (item) => {
+    if (item.audioHint) return item.audioHint;
+    const segments = rubyField && toSegments(item[rubyField]);
+    if (!segments) return item[targetField];
+    return segments.map((seg) => (seg.r && !KANA_ONLY.test(seg.b) ? seg.r : seg.b)).join('');
+  };
 
   for (const entry of manifest.categories) {
     if (ONLY && !ONLY.has(entry.id)) continue;
@@ -128,6 +135,21 @@ function collect(course) {
       job(p.id, entry.id, spoken(p), p.audio);
       // A casual phrase's polite counterpart has its own clip.
       if (p.polite?.audio) job(`${p.id}/polite`, entry.id, spoken(p.polite), p.polite.audio);
+    }
+  }
+
+  // Word and sentence decks: one clip per item, at the item's declared path.
+  for (const entry of manifest.decks || []) {
+    if (ONLY && !ONLY.has(entry.id)) continue;
+    const path = resolve(ROOT, entry.file);
+    if (!existsSync(path)) {
+      problems.push(`missing deck file: ${entry.file}`);
+      continue;
+    }
+    const deck = JSON.parse(readFileSync(path, 'utf8'));
+    for (const item of deck.items || []) {
+      if (!item.audio) { problems.push(`${item.id}: no audio path declared`); continue; }
+      job(item.id, entry.id, spoken(item), item.audio);
     }
   }
 
@@ -172,7 +194,7 @@ function collect(course) {
 const existing = jobs.filter((j) => existsSync(j.out) && statSync(j.out).size >= MIN_VALID_BYTES);
 const todo = FORCE ? jobs : jobs.filter((j) => !existing.includes(j));
 
-console.log(`Phrases: ${jobs.length}  ·  already generated: ${existing.length}  ·  to generate: ${todo.length}`);
+console.log(`Clips: ${jobs.length}  ·  already generated: ${existing.length}  ·  to generate: ${todo.length}`);
 if (problems.length) {
   console.log('\nContent problems:');
   problems.forEach((p) => console.log(`  ! ${p}`));
@@ -185,7 +207,7 @@ if (CHECK) {
     missing.slice(0, 20).forEach((m) => console.log(`  - ${m.id} (${m.category})`));
     if (missing.length > 20) console.log(`  … and ${missing.length - 20} more`);
   } else {
-    console.log('\nAll phrases have audio. ✅');
+    console.log('\nEvery clip is there. ✅');
   }
   process.exit(missing.length ? 1 : 0);
 }

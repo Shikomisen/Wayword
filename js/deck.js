@@ -1,40 +1,61 @@
 /**
  * deck.js — the bridge between content, SRS state and storage.
  *
- * Owns settings, which categories are active in the deck, and the
- * introduce/grade operations. Screens talk to this, never to store.js
- * directly.
+ * Owns settings, which decks are active, and the introduce/grade operations.
+ * Screens talk to this, never to store.js directly.
  *
  * Everything here acts on the current course: store.js is pointed at that
  * course's own database when the course is activated, so settings, cards,
  * placement and stats are all per course without any function here taking
  * a course argument.
+ *
+ * A "deck" is anything whose items can be studied: a phrase category, a word
+ * or sentence deck, or your own words ("mine"). They all live in
+ * settings.activeCategories (the name predates words and sentences).
+ *
+ * Each item becomes one card per enabled direction — recognition,
+ * production, listening (srs.DIR). Characters are only ever recognition.
  */
 
 import * as store from './store.js';
 import * as srs from './srs.js';
-import { loadContent, getCharacterSet } from './content.js';
+import { loadContent, getCharacterSet, refreshUserItems, USER_DECK } from './content.js';
+
+const DEFAULT_DIRECTIONS = { recognition: true, production: true, listening: false };
 
 const DEFAULT_SETTINGS = {
-  furigana: true,
-  romaji: true,          // README §6: off by default after week 1 — see maybeRetireRomaji()
+  furigana: true,        // legacy on/off — superseded by furiganaMode, kept so old records read right
+  furiganaMode: null,    // 'always' | 'tap' | 'hidden'; null = derive from `furigana`
+  romaji: true,          // README §6: off by default after the first week — see maybeRetireRomaji()
   textScale: 1,          // superseded by the app-wide preference (course.js getTextScale)
   newPerDay: 10,
   newCharsPerDay: 15,    // characters are faster to review than phrases
-  activeCategories: [],  // filled at placement time
+  activeCategories: [],  // every active deck: phrase categories, word/sentence decks, "mine"
   activeCharacterSets: [], // opt-in from the Characters screen
+  directions: DEFAULT_DIRECTIONS,
   autoPlayAudio: true,
   installedAt: null,
   romajiRetired: false,
 };
 
+export const FURIGANA_MODES = ['always', 'tap', 'hidden'];
+
 const settingsCache = new Map(); // namespace → settings
+
+function withDefaults(saved = {}) {
+  const settings = { ...DEFAULT_SETTINGS, ...saved };
+  settings.directions = { ...DEFAULT_DIRECTIONS, ...(saved.directions || {}) };
+  if (!FURIGANA_MODES.includes(settings.furiganaMode)) {
+    settings.furiganaMode = saved.furigana === false ? 'hidden' : 'always';
+  }
+  return settings;
+}
 
 export async function getSettings() {
   const ns = store.namespace();
   if (settingsCache.has(ns)) return settingsCache.get(ns);
   const saved = (await store.get('meta', 'settings', ns)) || {};
-  const settings = { ...DEFAULT_SETTINGS, ...saved };
+  const settings = withDefaults(saved);
   settingsCache.set(ns, settings);
   if (!settings.installedAt) {
     settings.installedAt = Date.now();
@@ -52,9 +73,9 @@ export async function saveSettings(patch) {
 }
 
 /**
- * README §6: romaji off by default after week 1. Rather than silently
- * yanking it, this flips the default once and tells the caller so the UI
- * can mention it. The user can turn it straight back on in settings.
+ * README §6: romaji off by default after the first week. Rather than
+ * silently yanking it, this flips the default once and tells the caller so
+ * the UI can mention it. The user can turn it straight back on in settings.
  */
 export async function maybeRetireRomaji() {
   const s = await getSettings();
@@ -63,6 +84,33 @@ export async function maybeRetireRomaji() {
   if (Date.now() - s.installedAt < weekOne) return false;
   await saveSettings({ romaji: false, romajiRetired: true });
   return true;
+}
+
+/* ---------- directions ---------- */
+
+/** True if an item can actually be heard — bundled clip, your recording, or the device voice. */
+export function hasAudio(item) {
+  return Boolean(item.audio || item.audioMode === 'recording' || item.audioMode === 'tts');
+}
+
+/** The directions an item is studied in, given the course's settings. */
+export function directionsFor(item, settings) {
+  if (item.kind === srs.KIND.CHARACTER) return [srs.DIR.RECOGNITION];
+  const d = settings.directions || DEFAULT_DIRECTIONS;
+  const dirs = [];
+  if (d.recognition) dirs.push(srs.DIR.RECOGNITION);
+  if (d.production) dirs.push(srs.DIR.PRODUCTION);
+  if (d.listening && hasAudio(item)) dirs.push(srs.DIR.LISTENING);
+  return dirs.length ? dirs : [srs.DIR.RECOGNITION]; // never study nothing
+}
+
+/** Whether a card's direction is currently switched on. Characters always are. */
+export function dirEnabled(card, settings) {
+  if ((card.kind ?? srs.KIND.PHRASE) === srs.KIND.CHARACTER) return true;
+  const dir = srs.dirOf(card);
+  const d = settings.directions || DEFAULT_DIRECTIONS;
+  const anyOn = d.recognition || d.production || d.listening;
+  return anyOn ? Boolean(d[dir]) : dir === srs.DIR.RECOGNITION;
 }
 
 /* ---------- placement ---------- */
@@ -98,52 +146,87 @@ export async function putCard(card) {
 }
 
 /**
- * Introduce every phrase in a category into the deck.
+ * Introduce every item of a deck — phrase category, word or sentence deck,
+ * or your own words — into the deck, one card per enabled direction.
  *
- * Placement results shape the starting interval: a category the user
- * clearly already has gets its easy cards seeded forward instead of
- * starting from zero (README §6a). Cards already in the deck are left
- * untouched.
+ * Placement results shape the starting interval of recognition cards: a
+ * category the user clearly already has gets its easy cards seeded forward
+ * instead of starting from zero (README §6a). Production and listening start
+ * fresh — recognising a phrase isn't the same as being able to say it.
+ * Cards already in the deck are left untouched.
  */
-export async function activateCategory(categoryId) {
+export async function activateCategory(deckId) {
   const { byCategory } = await loadContent();
-  const cat = byCategory.get(categoryId);
-  if (!cat) return { added: 0, seeded: 0 };
+  const deck = byCategory.get(deckId);
+  if (!deck) return { added: 0, seeded: 0 };
 
+  const s = await getSettings();
   const placement = await getPlacement();
-  const score = placement?.perCategory?.[categoryId]?.score ?? 0;
+  const score = placement?.perCategory?.[deckId]?.score ?? 0;
   const existing = new Set((await getDeck()).map((c) => c.id));
 
   const now = Date.now();
   const entries = [];
   let seeded = 0;
 
-  for (const p of cat.phrases) {
-    if (existing.has(p.id)) continue;
-    const difficulty = p.difficulty ?? 3;
-    const opts = { kind: srs.KIND.PHRASE, difficulty };
+  for (const item of deck.items || deck.phrases || []) {
+    const difficulty = item.difficulty ?? 3;
+    for (const dir of directionsFor(item, s)) {
+      if (existing.has(srs.cardId(item.id, dir))) continue;
+      const opts = { kind: item.kind || srs.KIND.PHRASE, difficulty, dir };
 
-    let card;
-    if (score >= 0.75 && difficulty <= 2) {
-      card = srs.seedKnown(p.id, categoryId, 4, 2.6, now, opts);
-      seeded++;
-    } else if (score >= 0.5 && difficulty <= 1) {
-      card = srs.seedKnown(p.id, categoryId, 2, 2.5, now, opts);
-      seeded++;
-    } else {
-      card = srs.newCard(p.id, categoryId, now, opts);
+      let card;
+      if (dir === srs.DIR.RECOGNITION && score >= 0.75 && difficulty <= 2) {
+        card = srs.seedKnown(item.id, deckId, 4, 2.6, now, opts);
+        seeded++;
+      } else if (dir === srs.DIR.RECOGNITION && score >= 0.5 && difficulty <= 1) {
+        card = srs.seedKnown(item.id, deckId, 2, 2.5, now, opts);
+        seeded++;
+      } else {
+        card = srs.newCard(item.id, deckId, now, opts);
+      }
+      entries.push([card.id, card]);
     }
-    entries.push([card.id, card]);
   }
 
   await store.setMany('srs', entries);
 
-  const s = await getSettings();
-  if (!s.activeCategories.includes(categoryId)) {
-    await saveSettings({ activeCategories: [...s.activeCategories, categoryId] });
+  if (!s.activeCategories.includes(deckId)) {
+    await saveSettings({ activeCategories: [...s.activeCategories, deckId] });
   }
 
   return { added: entries.length, seeded };
+}
+
+/** Same thing, by its newer name. */
+export const activateDeck = activateCategory;
+
+/**
+ * Make sure every active deck has a card for every enabled direction — after
+ * a direction is switched on, and on entering a course (decks activated
+ * before directions existed have only recognition cards). Idempotent.
+ * Returns how many cards it added.
+ */
+export async function syncDirections() {
+  const { byCategory } = await loadContent();
+  const s = await getSettings();
+  const existing = new Set((await getDeck()).map((c) => c.id));
+  const now = Date.now();
+  const entries = [];
+
+  for (const deckId of s.activeCategories) {
+    for (const item of byCategory.get(deckId)?.items || []) {
+      for (const dir of directionsFor(item, s)) {
+        const id = srs.cardId(item.id, dir);
+        if (existing.has(id)) continue;
+        const card = srs.newCard(item.id, deckId, now, { kind: item.kind || srs.KIND.PHRASE, difficulty: item.difficulty ?? 3, dir });
+        entries.push([card.id, card]);
+        existing.add(id);
+      }
+    }
+  }
+  if (entries.length) await store.setMany('srs', entries);
+  return entries.length;
 }
 
 export async function deactivateCategory(categoryId) {
@@ -298,32 +381,49 @@ export async function streak() {
   return count;
 }
 
-/** Review queue for the "due today" screen. Phrases only. */
-export async function queue() {
+/** The main queue's cards for a set of decks, in enabled directions only. */
+function studyable(cards, settings, deckIds) {
+  const all = srs.studyCards(cards);
+  const scoped = all.filter((c) => deckIds.has(c.categoryId) && dirEnabled(c, settings));
+  return { all, scoped };
+}
+
+/**
+ * The sibling rule (srs.introducible) holds a new production or listening
+ * card back until its recognition card has been seen — which only makes
+ * sense while recognition cards are being studied at all. With recognition
+ * switched off, holding them back would mean never introducing them.
+ */
+function introducible(scoped, all, settings) {
+  const recognitionOn = dirEnabled({ dir: srs.DIR.RECOGNITION }, settings);
+  return recognitionOn ? srs.introducible(scoped, all) : scoped;
+}
+
+/**
+ * Review queue — every active deck, or just one. Phrases, words and
+ * sentences share it; characters have their own (characterQueue).
+ */
+export async function queue(deckId = null) {
   const s = await getSettings();
-  const phrases = srs.ofKind(await getDeck(), srs.KIND.PHRASE);
-  const active = new Set(s.activeCategories);
-  const scoped = phrases.filter((c) => active.has(c.categoryId));
-  return srs.buildQueue(scoped, { newLimit: s.newPerDay });
+  const { all, scoped } = studyable(await getDeck(), s, new Set(deckId ? [deckId] : s.activeCategories));
+  return srs.buildQueue(introducible(scoped, all, s), { newLimit: s.newPerDay });
 }
 
 export async function deckSummary() {
   const s = await getSettings();
-  const phrases = srs.ofKind(await getDeck(), srs.KIND.PHRASE);
-  const active = new Set(s.activeCategories);
-  return srs.summarise(phrases.filter((c) => active.has(c.categoryId)));
+  return srs.summarise(studyable(await getDeck(), s, new Set(s.activeCategories)).scoped);
 }
 
-export async function categoryProgress(categoryId) {
-  const deck = srs.ofKind(await getDeck(), srs.KIND.PHRASE)
-    .filter((c) => c.categoryId === categoryId);
-  return srs.summarise(deck);
+export async function categoryProgress(deckId) {
+  const s = await getSettings();
+  return srs.summarise(studyable(await getDeck(), s, new Set([deckId])).scoped);
 }
 
 /** Erases the current course only — other courses live in other databases. */
 export async function resetEverything() {
   await store.clearAll();
   settingsCache.delete(store.namespace());
+  await refreshUserItems();
 }
 
 /**
@@ -338,12 +438,73 @@ export async function courseSnapshot(ns) {
     store.get('meta', 'placement', ns),
     store.getAll('srs', ns),
   ]);
-  const settings = { ...DEFAULT_SETTINGS, ...(saved || {}) };
-  const active = new Set(settings.activeCategories);
-  const phrases = srs.ofKind(cards.filter(Boolean), srs.KIND.PHRASE).filter((c) => active.has(c.categoryId));
+  const settings = withDefaults(saved || {});
+  const { all, scoped } = studyable(cards.filter(Boolean), settings, new Set(settings.activeCategories));
   return {
     onboarded: Boolean(placement?.done),
-    due: srs.buildQueue(phrases, { newLimit: settings.newPerDay }).length,
-    total: phrases.length,
+    due: srs.buildQueue(introducible(scoped, all, settings), { newLimit: settings.newPerDay }).length,
+    total: scoped.length,
   };
+}
+
+/* ---------- "I can read this" ---------- */
+
+/**
+ * Items the learner has marked as readable. Their furigana stops showing by
+ * default (tap to see it), so furigana fades as reading improves — card by
+ * card, at the learner's own say-so.
+ */
+export async function getReadable() {
+  return new Set((await store.get('meta', 'readable')) || []);
+}
+
+export async function setReadable(itemId, readable) {
+  const set = await getReadable();
+  if (readable) set.add(itemId); else set.delete(itemId);
+  await store.set('meta', 'readable', [...set]);
+  return set;
+}
+
+/* ---------- your own words ---------- */
+
+export async function getUserItems() {
+  return (await store.get('meta', 'userItems')) || [];
+}
+
+/**
+ * Add or update one of your own words or sentences, then (re)create its
+ * cards. Its deck — "mine" — becomes active the first time you add to it.
+ */
+export async function saveUserItem(item) {
+  const items = await getUserItems();
+  const at = items.findIndex((x) => x.id === item.id);
+  if (at >= 0) items[at] = { ...items[at], ...item };
+  else items.push({ createdAt: Date.now(), ...item });
+  await store.set('meta', 'userItems', items);
+  await refreshUserItems();
+
+  // A direction may have become possible (listening needs audio) or the
+  // item may be new: activation creates exactly the missing cards.
+  await activateCategory(USER_DECK);
+  // Listening cards for an item that has lost its audio would be unplayable.
+  const saved = items[at >= 0 ? at : items.length - 1];
+  if (saved.audioMode === 'none') await store.del('srs', srs.cardId(saved.id, srs.DIR.LISTENING));
+  return saved;
+}
+
+export async function deleteUserItem(id) {
+  const items = (await getUserItems()).filter((x) => x.id !== id);
+  await store.set('meta', 'userItems', items);
+  for (const dir of Object.values(srs.DIR)) await store.del('srs', srs.cardId(id, dir));
+  await store.del('meta', `rec:${id}`);
+  await refreshUserItems();
+}
+
+export async function getRecording(id) {
+  return store.get('meta', `rec:${id}`);
+}
+
+export async function setRecording(id, dataUrl) {
+  if (dataUrl) await store.set('meta', `rec:${id}`, dataUrl);
+  else await store.del('meta', `rec:${id}`);
 }

@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "id": "words-work",
+  "title": "Work & Study",
+  "description": "Jobs, meetings, studying Japanese, and being late.",
+  "items": [
+    {
+      "id": "w-shigoto",
+      "japanese": "仕事",
+      "furigana": "{仕事|しごと}",
+      "english": "work, job",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shigoto.mp3",
+      "tags": ["work"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kaigi",
+      "japanese": "会議",
+      "furigana": "{会議|かいぎ}",
+      "english": "meeting",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kaigi.mp3",
+      "tags": ["work"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-benkyou",
+      "japanese": "勉強",
+      "furigana": "{勉強|べんきょう}",
+      "english": "study",
+      "pos": "noun",
+      "usage": "勉強する — \"to study\".",
+      "audio": "audio/ja/words/w-benkyou.mp3",
+      "tags": ["study"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-nihongo",
+      "japanese": "日本語",
+      "furigana": "{日本語|にほんご}",
+      "english": "Japanese (language)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-nihongo.mp3",
+      "tags": ["study"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-eigo",
+      "japanese": "英語",
+      "furigana": "{英語|えいご}",
+      "english": "English (language)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-eigo.mp3",
+      "tags": ["study"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yasumi",
+      "japanese": "休み",
+      "furigana": "{休|やす}み",
+      "english": "day off; holiday; break",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yasumi.mp3",
+      "tags": ["work"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-denwa",
+      "japanese": "電話",
+      "furigana": "{電話|でんわ}",
+      "english": "phone; phone call",
+      "pos": "noun",
+      "usage": "電話する — \"to call\".",
+      "audio": "audio/ja/words/w-denwa.mp3",
+      "tags": ["communication"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-meeru",
+      "japanese": "メール",
+      "furigana": "{メール|めーる}",
+      "english": "email; message",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-meeru.mp3",
+      "tags": ["communication"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yakusoku",
+      "japanese": "約束",
+      "furigana": "{約束|やくそく}",
+      "english": "promise; plans to meet",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yakusoku.mp3",
+      "tags": ["people"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-okureru",
+      "japanese": "遅れる",
+      "furigana": "{遅|おく}れる",
+      "english": "to be late",
+      "pos": "verb",
+      "forms": {
+        "masu": "{遅|おく}れます",
+        "te": "{遅|おく}れて"
+      },
+      "audio": "audio/ja/words/w-okureru.mp3",
+      "tags": ["time"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-maniau",
+      "japanese": "間に合う",
+      "furigana": "{間|ま}に{合|あ}う",
+      "english": "to make it in time",
+      "pos": "verb",
+      "forms": {
+        "masu": "{間|ま}に{合|あ}います",
+        "te": "{間|ま}に{合|あ}って"
+      },
+      "audio": "audio/ja/words/w-maniau.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-owaru",
+      "japanese": "終わる",
+      "furigana": "{終|お}わる",
+      "english": "to end, to finish",
+      "pos": "verb",
+      "forms": {
+        "masu": "{終|お}わります",
+        "te": "{終|お}わって"
+      },
+      "audio": "audio/ja/words/w-owaru.mp3",
+      "tags": ["time"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hajimaru",
+      "japanese": "始まる",
+      "furigana": "{始|はじ}まる",
+      "english": "to begin, to start",
+      "pos": "verb",
+      "forms": {
+        "masu": "{始|はじ}まります",
+        "te": "{始|はじ}まって"
+      },
+      "audio": "audio/ja/words/w-hajimaru.mp3",
+      "tags": ["time"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-isogu",
+      "japanese": "急ぐ",
+      "furigana": "{急|いそ}ぐ",
+      "english": "to hurry",
+      "pos": "verb",
+      "forms": {
+        "masu": "{急|いそ}ぎます",
+        "te": "{急|いそ}いで"
+      },
+      "audio": "audio/ja/words/w-isogu.mp3",
+      "tags": ["time"],
+      "difficulty": 2
+    }
+  ]
+}

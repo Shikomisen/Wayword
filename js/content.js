@@ -20,7 +20,9 @@
  */
 
 import { currentCourse, currentCourseId } from './course.js';
-import { toSegments } from './ruby.js';
+import { toSegments, rubyText } from './ruby.js';
+import * as store from './store.js';
+import { t } from './i18n.js';
 
 const caches = new Map();
 
@@ -131,11 +133,31 @@ export async function loadContent() {
     entries.map(async (entry) => {
       try {
         const data = await fetchJSON(entry.file);
-        return { ...entry, ...data, phrases: (data.phrases || []).map((p) => register(normalise(p))), missing: false };
+        const phrases = (data.phrases || []).map((p) =>
+          ({ ...register(normalise(p)), kind: 'phrase', categoryId: entry.id, categoryTitle: data.title || entry.title }));
+        return { ...entry, ...data, type: 'phrases', phrases, items: phrases, missing: false };
       } catch (err) {
         // A category file that fails to load must not take the app down.
         console.error(err);
-        return { ...entry, phrases: [], missing: true };
+        return { ...entry, type: 'phrases', phrases: [], items: [], missing: true };
+      }
+    })
+  );
+
+  // Word and sentence decks: the same item shape, plus a word's forms and a
+  // sentence's chunks (each optionally linked to a word by id).
+  const deckEntries = [...(manifest.decks || [])].sort((a, b) => a.order - b.order);
+  const decks = await Promise.all(
+    deckEntries.map(async (entry) => {
+      const kind = entry.kind === 'sentences' ? 'sentence' : 'word';
+      try {
+        const data = await fetchJSON(entry.file);
+        const items = (data.items || []).map((x) => normaliseDeckItem(
+          { ...normalise(x), kind, categoryId: entry.id, categoryTitle: data.title || entry.title }));
+        return { ...entry, ...data, type: entry.kind, items, phrases: items, missing: false };
+      } catch (err) {
+        console.error(err);
+        return { ...entry, type: entry.kind, items: [], phrases: [], missing: true };
       }
     })
   );
@@ -159,10 +181,18 @@ export async function loadContent() {
   const byCategory = new Map();
   const bySet = new Map();
 
-  for (const cat of loaded) {
-    byCategory.set(cat.id, cat);
-    for (const p of cat.phrases) {
-      phrases.set(p.id, { ...p, kind: 'phrase', categoryId: cat.id, categoryTitle: cat.title });
+  for (const deck of [...loaded, ...decks]) {
+    byCategory.set(deck.id, deck);
+    for (const item of deck.items) phrases.set(item.id, item);
+  }
+
+  // Which sentences use each word, so a word card can show it in context.
+  const usage = new Map();
+  for (const deck of decks.filter((d) => d.type === 'sentences')) {
+    for (const s of deck.items) {
+      for (const chunk of s.chunks || []) {
+        if (chunk.w) usage.set(chunk.w, [...new Set([...(usage.get(chunk.w) || []), s.id])]);
+      }
     }
   }
 
@@ -189,16 +219,89 @@ export async function loadContent() {
       aids: manifest.aids || {},
       characters: characterSets.length > 0,
       scenarios: (manifest.scenarios || []).length > 0,
+      words: decks.some((d) => d.type === 'words'),
+      sentences: decks.some((d) => d.type === 'sentences'),
     },
     categories: loaded,
+    decks,
     characterSets,
     phrases,
     characters,
     byCategory,
     bySet,
+    usage,
   };
+  await attachUserItems(loadedContent);
   caches.set(courseId, loadedContent);
   return loadedContent;
+}
+
+/** A word's ます/て forms and a sentence's chunks get the same generic fields as everything else. */
+function normaliseDeckItem(item) {
+  const lang = item.targetLang;
+  const piece = (notation) => ({ target: rubyText(notation), ruby: toSegments(notation), targetLang: lang });
+  return {
+    ...item,
+    forms: item.forms ? Object.entries(item.forms).map(([key, notation]) => ({ key, ...piece(notation) })) : null,
+    chunks: item.chunks ? item.chunks.map((c) => ({ ...piece(c.t), w: c.w || null })) : null,
+  };
+}
+
+/* ---------- your own words ---------- */
+
+export const USER_DECK = 'mine';
+
+/**
+ * Words and sentences the learner adds (things a partner says, say). They
+ * live in the course's own storage, not in content files, and are merged in
+ * here as one more deck — "mine" — so the deck, review and study code treat
+ * them exactly like built-in content.
+ *
+ * Stored shape: { id, kind, target, reading, furigana, meaning, note,
+ * audioMode: 'recording' | 'tts' | 'none', createdAt }. A recording is kept
+ * under its own key (rec:<id>) and only fetched to play it.
+ */
+export async function attachUserItems(content) {
+  const ns = store.namespace();
+  const stored = (await store.get('meta', 'userItems', ns)) || [];
+  // Drop the previous attachment before re-adding, so edits and deletes show.
+  for (const old of content.byCategory.get(USER_DECK)?.items || []) content.phrases.delete(old.id);
+
+  const items = stored.map((u) => ({
+    id: u.id,
+    kind: u.kind === 'sentence' ? 'sentence' : 'word',
+    source: 'user',
+    categoryId: USER_DECK,
+    categoryTitle: t('mine.title'),
+    target: u.target,
+    ruby: u.furigana ? toSegments(u.furigana) : null,
+    reading: null,
+    kana: u.reading || null,
+    meaning: u.meaning,
+    notes: u.note ? [{ label: t('mine.noteLabel'), text: u.note, style: null }] : [],
+    targetLang: content.course.target,
+    meaningLang: content.course.speaker,
+    audio: null,
+    audioMode: u.audioMode || 'none',
+    loadRecording: () => store.get('meta', `rec:${u.id}`, ns),
+    tags: [],
+    difficulty: 2,
+    register: null,
+    polite: null,
+    createdAt: u.createdAt,
+  }));
+
+  content.byCategory.set(USER_DECK, {
+    id: USER_DECK, type: 'mine', title: t('mine.title'), icon: '✍️', items, phrases: items, missing: false,
+  });
+  for (const item of items) content.phrases.set(item.id, item);
+  content.userItems = items;
+  return items;
+}
+
+/** Re-read your own words into the loaded content after one is added, edited or deleted. */
+export async function refreshUserItems() {
+  return attachUserItems(await loadContent());
 }
 
 export async function getPhrase(id) {

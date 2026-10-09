@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "id": "words-people",
+  "title": "People & Family",
+  "description": "The people in your life, and how to talk about them — including which family words are for your own family and which are for someone else's.",
+  "items": [
+    {
+      "id": "w-watashi",
+      "japanese": "私",
+      "furigana": "{私|わたし}",
+      "english": "I, me",
+      "pos": "pronoun",
+      "usage": "The safe, neutral \"I\" with anyone. 僕 (boku) is a softer male \"I\" for friends and a partner.",
+      "audio": "audio/ja/words/w-watashi.mp3",
+      "tags": ["people"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-anata",
+      "japanese": "あなた",
+      "english": "you",
+      "pos": "pronoun",
+      "usage": "Avoid it to someone's face — use their name instead. あなた can sound distant or even sharp.",
+      "audio": "audio/ja/words/w-anata.mp3",
+      "tags": ["people"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kanojo",
+      "japanese": "彼女",
+      "furigana": "{彼女|かのじょ}",
+      "english": "she; girlfriend",
+      "pos": "pronoun",
+      "usage": "Both \"she\" and \"girlfriend\" — context decides.",
+      "audio": "audio/ja/words/w-kanojo.mp3",
+      "tags": ["people"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kare",
+      "japanese": "彼",
+      "furigana": "{彼|かれ}",
+      "english": "he; boyfriend",
+      "pos": "pronoun",
+      "usage": "Can also mean \"boyfriend\"; 彼氏 is the unambiguous word.",
+      "audio": "audio/ja/words/w-kare.mp3",
+      "tags": ["people"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kareshi",
+      "japanese": "彼氏",
+      "furigana": "{彼氏|かれし}",
+      "english": "boyfriend",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kareshi.mp3",
+      "tags": ["people"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tomodachi",
+      "japanese": "友達",
+      "furigana": "{友達|ともだち}",
+      "english": "friend",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-tomodachi.mp3",
+      "tags": ["people"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kazoku",
+      "japanese": "家族",
+      "furigana": "{家族|かぞく}",
+      "english": "family",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kazoku.mp3",
+      "tags": ["people", "family"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ryoushin",
+      "japanese": "両親",
+      "furigana": "{両親|りょうしん}",
+      "english": "parents",
+      "pos": "noun",
+      "usage": "Your own parents, talking to others. Someone else's: ご両親.",
+      "audio": "audio/ja/words/w-ryoushin.mp3",
+      "tags": ["family"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-okaasan",
+      "japanese": "お母さん",
+      "furigana": "お{母|かあ}さん",
+      "english": "mother, mom",
+      "pos": "noun",
+      "usage": "Someone else's mother — and what most people call their own. Your own mother, to others: 母 (はは).",
+      "audio": "audio/ja/words/w-okaasan.mp3",
+      "tags": ["family"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-otousan",
+      "japanese": "お父さん",
+      "furigana": "お{父|とう}さん",
+      "english": "father, dad",
+      "pos": "noun",
+      "usage": "Same pattern: お父さん for theirs or to your own dad; 父 (ちち) for your own, to others.",
+      "audio": "audio/ja/words/w-otousan.mp3",
+      "tags": ["family"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kodomo",
+      "japanese": "子供",
+      "furigana": "{子供|こども}",
+      "english": "child; kids",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kodomo.mp3",
+      "tags": ["family"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ani",
+      "japanese": "兄",
+      "furigana": "{兄|あに}",
+      "english": "(my) older brother",
+      "pos": "noun",
+      "usage": "Someone else's older brother: お兄さん.",
+      "audio": "audio/ja/words/w-ani.mp3",
+      "tags": ["family"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ane",
+      "japanese": "姉",
+      "furigana": "{姉|あね}",
+      "english": "(my) older sister",
+      "pos": "noun",
+      "usage": "Someone else's older sister: お姉さん.",
+      "audio": "audio/ja/words/w-ane.mp3",
+      "tags": ["family"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-otouto",
+      "japanese": "弟",
+      "furigana": "{弟|おとうと}",
+      "english": "younger brother",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-otouto.mp3",
+      "tags": ["family"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-imouto",
+      "japanese": "妹",
+      "furigana": "{妹|いもうと}",
+      "english": "younger sister",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-imouto.mp3",
+      "tags": ["family"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-namae",
+      "japanese": "名前",
+      "furigana": "{名前|なまえ}",
+      "english": "name",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-namae.mp3",
+      "tags": ["people"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hito",
+      "japanese": "人",
+      "furigana": "{人|ひと}",
+      "english": "person",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hito.mp3",
+      "tags": ["people"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-minna",
+      "japanese": "みんな",
+      "english": "everyone",
+      "pos": "pronoun",
+      "audio": "audio/ja/words/w-minna.mp3",
+      "tags": ["people"],
+      "difficulty": 1
+    }
+  ]
+}

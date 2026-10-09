@@ -142,7 +142,8 @@ await tick(); await tick();
 check('quiz shows a card with Japanese', Boolean($('.placement-card .jp')), $('.placement-card .jp')?.textContent);
 const quizTotal = Number(text().match(/1 of (\d+)/)?.[1] ?? 0);
 check('quiz shows progress', quizTotal > 0, `${quizTotal} cards total`);
-check('quiz covers phrases and characters', quizTotal >= 24 && quizTotal <= 30, `${quizTotal} cards`);
+check('quiz covers phrases and characters, two of each',
+  quizTotal === 2 * (JA.categories.length + JA.characterSets.length), `${quizTotal} cards`);
 check('quiz offers three self-grade answers', $$('.btn-answer').length === 3);
 check('first card has no stray "null" where the Back button would be', !/\bnull\b/.test(text()));
 check('furigana renders as ruby', $$('.placement-card ruby, .placement-card').length > 0);
@@ -179,19 +180,26 @@ check('7-day SRS forecast renders', $$('.forecast-day').length === 7);
 check('deck categories listed', $$('.row-card').length >= 4, `${$$('.row-card').length} rows`);
 check('tab bar highlights the current screen', Boolean(document.querySelector('.tabbar a.active')));
 
-console.log('\n3. Browse');
+console.log('\n3. Learn');
 
 await goTo('#/en-ja/browse');
-check('browse renders', text().includes('Browse'));
-const jaStarters = JA.categories.filter((c) => c.starter);
-check('every category listed', $$('.row-card').length === JA.categories.length, `${$$('.row-card').length} rows`);
-check('categories grouped by topic, titled from the manifest',
+check('learn renders', $('h1')?.textContent === 'Learn' && document.querySelector('.tabbar a.active')?.textContent.includes('Learn'));
+const jaDecks = [...JA.categories, ...JA.decks];
+const jaStarters = jaDecks.filter((c) => c.starter);
+check('every deck listed, plus your own words', $$('.row-card').length === jaDecks.length + 1, `${$$('.row-card').length} rows`);
+check('words, sentences, phrases and your own words, in that order',
+  $$('.kind-title').map((h) => h.textContent).join('|') === 'Words|Sentences|Phrases|Your own words',
+  $$('.kind-title').map((h) => h.textContent).join(' | '));
+check('phrases grouped by topic, titled from the manifest',
   $$('.section-title').map((h) => h.textContent).join('|') === JA.groups.map((g) => g.title).join('|'),
   $$('.section-title').map((h) => h.textContent).join(' | '));
+check('word decks say how many words they hold',
+  $('.row-card[data-deck="words-people"] .row-sub')?.textContent === `${readJSON(JA.decks[0].file).items.length} words`,
+  $('.row-card[data-deck="words-people"] .row-sub')?.textContent);
 check('no week-by-week or trip framing left', !/Week \d|trip/i.test(text()));
-check('starter categories marked as in-deck', $$('.pill-on').length === jaStarters.length);
+check('starter decks marked as in-deck', $$('.pill-on').length === jaStarters.length, `${$$('.pill-on').length} in deck`);
 check('the rest offer an Add button',
-  $$('button').filter((b) => b.textContent === 'Add').length === JA.categories.length - jaStarters.length);
+  $$('button').filter((b) => b.textContent === 'Add').length === jaDecks.length - jaStarters.length);
 
 console.log('\n4. Category detail');
 
@@ -214,12 +222,25 @@ $$('.chip').find((c) => c.textContent === 'romaji')?.click();
 await tick(); await tick(); await tick();
 check('romaji toggle restores it', $$('.romaji').length > 0);
 
+// The furigana chip cycles: always → tap to show → hidden → always.
+const furiganaChip = () => $('.chip[data-aid="furigana"]');
 const rubyBefore = $$('ruby').length;
-$$('.chip').find((c) => c.textContent === 'ふりがな')?.click();
+check('furigana chip shows its mode', furiganaChip()?.textContent === 'ふりがな · Always', furiganaChip()?.textContent);
+furiganaChip()?.click();
 await tick(); await tick(); await tick();
-check('furigana toggle removes ruby annotations', $$('ruby').length === 0, `was ${rubyBefore}`);
-$$('.chip').find((c) => c.textContent === 'ふりがな')?.click();
+check('tap-to-show keeps the readings but hides them until tapped',
+  furiganaChip()?.dataset.mode === 'tap' && $$('ruby').length === rubyBefore && $$('.furi-tap').length > 0,
+  `${$$('.furi-tap').length} tappable`);
+const tappable = $('.furi-tap');
+tappable?.click();
+check('tapping reveals that one reading', tappable?.classList.contains('revealed') && $$('.furi-tap.revealed').length === 1);
+furiganaChip()?.click();
 await tick(); await tick(); await tick();
+check('hidden removes ruby annotations', furiganaChip()?.dataset.mode === 'hidden' && $$('ruby').length === 0, `was ${rubyBefore}`);
+furiganaChip()?.click();
+await tick(); await tick(); await tick();
+check('…and the cycle comes back round to always',
+  furiganaChip()?.dataset.mode === 'always' && $$('ruby').length === rubyBefore && !$('.furi-tap'));
 
 await goTo('#/en-ja/category/casual');
 const casualCount = readJSON(JA.categories.find((c) => c.id === 'casual').file).phrases.length;
@@ -259,6 +280,139 @@ const firstCard = $('.study-card .jp').textContent;
 $$('.btn-grade').find((b) => b.textContent.startsWith('Got it'))?.click();
 await tick(); await tick(); await tick();
 check('grading advances to the next card', $('.study-card .jp')?.textContent !== firstCard);
+
+console.log('\n5a. Words and sentences');
+
+const verbsFile = readJSON(JA.decks.find((d) => d.id === 'words-verbs').file);
+await goTo('#/en-ja/category/words-verbs');
+check('a word deck lists every word', $$('.phrase-card.item-word').length === verbsFile.items.length,
+  `${$$('.phrase-card.item-word').length} words`);
+check('every word shows its part of speech', $$('.item-word .word-details .pos').length === verbsFile.items.length,
+  $('.item-word .pos')?.textContent);
+check('verbs show their ます and て forms, with furigana',
+  $$('.word-form').length === verbsFile.items.reduce((n, w) => n + Object.keys(w.forms || {}).length, 0) &&
+  $$('.word-form ruby').length > 0,
+  $$('.word-form').slice(0, 2).map((f) => f.textContent).join(' · '));
+const auCard = $('.phrase-card[data-item="w-au"]');
+check('a word links to the sentences it appears in',
+  auCard?.querySelector('.links .ref-chip')?.getAttribute('href') === '#/en-ja/category/sentences-everyday',
+  auCard?.querySelector('.links')?.textContent);
+
+await goTo('#/en-ja/category/sentences-everyday');
+check('a sentence deck lists every sentence', $$('.phrase-card.item-sentence').length === 16);
+check('each sentence links the words it uses, into their word decks',
+  $$('.item-sentence').every((c) => c.querySelector('.links .ref-chip')) &&
+  $$('.item-sentence .ref-chip').every((a) => /^#\/en-ja\/category\/words-/.test(a.getAttribute('href'))),
+  $('.item-sentence .links')?.textContent);
+check('every sentence is labelled with its register', $$('.item-sentence .register').length === 16);
+
+// "I can read this" — on the back of a card.
+await goTo('#/en-ja/study/words-weather');
+check('a fresh word deck opens on a recognition card',
+  $('.study-card')?.classList.contains('dir-recognition') && Boolean($('.study-card .jp')),
+  $('.study-card .jp')?.textContent);
+$$('button').find((b) => b.textContent === 'Show answer')?.click();
+await tick(); await tick();
+const readToggle = $('.readable-toggle');
+check('the back offers "I can read this"', readToggle?.getAttribute('aria-pressed') === 'false', readToggle?.textContent);
+readToggle?.click();
+await tick(); await tick(); await tick();
+check('marking it fades that card\'s furigana to tap-to-show',
+  $('.readable-toggle')?.getAttribute('aria-pressed') === 'true' && Boolean($('.study-card .target.furi-tap')),
+  $('.readable-toggle')?.textContent);
+$('.readable-toggle')?.click();
+await tick(); await tick(); await tick();
+check('…and unmarking brings it back', !$('.study-card .target.furi-tap'));
+
+console.log('\n5b. Card directions');
+
+const dirBox = (dir) => $(`input[data-dir="${dir}"]`);
+const toggleDir = async (dir) => { dirBox(dir)?.click(); for (let i = 0; i < 8; i++) await tick(); };
+await goTo('#/en-ja/settings');
+check('settings offer the three card types',
+  ['recognition', 'production', 'listening'].every((d) => dirBox(d)) &&
+  dirBox('recognition').checked && dirBox('production').checked && !dirBox('listening').checked);
+
+// Production only: the meaning is the question, the Japanese the answer.
+await toggleDir('recognition');
+check('recognition can be switched off', dirBox('recognition') && !dirBox('recognition').checked);
+await goTo('#/en-ja/study/words-home');
+check('a production card asks for the Japanese from the meaning',
+  $('.study-card')?.classList.contains('dir-production') && text().includes('How do you say this in Japanese?') &&
+  !$('.study-card .jp') && Boolean($('.study-card .meaning.big')),
+  $('.study-card .meaning')?.textContent);
+check('…and says which way round it is asking', $('.dir-label')?.textContent === 'Say it');
+$$('button').find((b) => b.textContent === 'Show answer')?.click();
+await tick(); await tick();
+check('flipping shows the Japanese, with its audio', Boolean($('.study-back .jp')) && Boolean($('.study-back .audio-btn')),
+  $('.study-back .jp')?.textContent);
+
+// Listening only: the audio is the question.
+await goTo('#/en-ja/settings');
+await toggleDir('listening');
+await toggleDir('production');
+check('listening can be the only card type', dirBox('listening').checked && !dirBox('production').checked && !dirBox('recognition').checked);
+await toggleDir('listening');
+check('the last card type can\'t be switched off', dirBox('listening').checked);
+const listenPlayed = played.length;
+await goTo('#/en-ja/study/words-places');
+check('a listening card plays the audio and hides the text',
+  $('.study-card')?.classList.contains('dir-listening') && Boolean($('.listen-btn')) && !$('.study-card .jp') &&
+  played.length > listenPlayed,
+  played.at(-1));
+$$('button').find((b) => b.textContent === 'Show answer')?.click();
+await tick(); await tick();
+check('flipping shows what was said and what it means',
+  Boolean($('.study-back .jp')) && Boolean($('.study-back .meaning.big')));
+
+await goTo('#/en-ja/settings');
+await toggleDir('recognition');
+await toggleDir('production');
+await toggleDir('listening');
+check('back to the default card types', dirBox('recognition').checked && dirBox('production').checked && !dirBox('listening').checked);
+
+console.log('\n5c. Your own words');
+
+await goTo('#/en-ja/mine');
+check('your-own-words screen renders, empty', $('h1')?.textContent === 'Your own words' && Boolean($('.empty-mine')));
+await goTo('#/en-ja/mine/new');
+check('the add form asks for the text, its reading and its meaning',
+  Boolean($('#mine-target') && $('#mine-reading') && $('#mine-meaning') && $('#mine-note')));
+check('word or sentence is a choice', $$('.kind-choice .segment').length === 2);
+check('no device voice and no recorder here, and the form says so',
+  text().includes('No Japanese voice on this device') && text().includes('Recording isn\'t available'),
+  $('.audio-box')?.textContent.slice(0, 80));
+check('the card is marked as having no audio before it is saved', $('.audio-box .audio-state-none')?.textContent === '🔇 No audio');
+check('no stray "null" where the absent voice controls would be', !/\bnull\b/.test(text()));
+const fill = (sel, value) => {
+  const input = $(sel);
+  input.value = value;
+  input.dispatchEvent(new window.Event('input', { bubbles: true }));
+};
+fill('#mine-target', '{今日|きょう}は{暑|あつ}いね');
+fill('#mine-meaning', 'Hot today, isn\'t it');
+check('a sentence is recognised as one', $('.kind-choice .segment.is-on')?.dataset.kind === 'sentence');
+$('.entry-form').dispatchEvent(new window.Event('submit', { cancelable: true }));
+for (let i = 0; i < 10; i++) await tick();
+check('saving returns to the list with the new card', location.hash === '#/en-ja/mine' && $$('.mine-card').length === 1,
+  location.hash);
+check('the inline readings became furigana', $$('.mine-card ruby').length === 2, $('.mine-card .target')?.textContent);
+check('…with a clear "no audio" state instead of a dead play button',
+  Boolean($('.mine-card .audio-none')) && !$('.mine-card .audio-btn') && Boolean($('.mine-card .audio-state-none')));
+await goTo($('.mine-card .mine-meta a').getAttribute('href'));
+check('editing shows it the way it was typed', $('#mine-target')?.value === '{今日|きょう}は{暑|あつ}いね', $('#mine-target')?.value);
+await goTo('#/en-ja/study/mine');
+// The text under the furigana: textContent would include the readings too.
+const baseText = (node) => {
+  const copy = node?.cloneNode(true);
+  copy?.querySelectorAll('rt, rp').forEach((n) => n.remove());
+  return copy?.textContent;
+};
+check('your own words are studied like any other deck', baseText($('.study-card .target')) === '今日は暑いね',
+  baseText($('.study-card .target')));
+await goTo('#/en-ja/browse');
+check('Learn counts your own words', $$('.row-card').at(-1)?.textContent.includes('1 card of your own'),
+  $$('.row-card').at(-1)?.querySelector('.row-sub')?.textContent);
 
 console.log('\n6. Scenarios');
 
@@ -302,9 +456,9 @@ console.log('\n7. Characters');
 
 await goTo('#/en-ja/characters');
 check('characters screen renders', text().includes('Characters'));
-check('all three sets listed', $$('.row-card').length === 3,
+check('every set listed', $$('.row-card').length === JA.characterSets.length,
   $$('.row-title').map((t) => t.textContent).join(', '));
-check('sets are addable', $$('button').filter((b) => b.textContent === 'Add').length === 3);
+check('sets are addable', $$('button').filter((b) => b.textContent === 'Add').length === JA.characterSets.length);
 check('stroke-order deferral is disclosed', text().includes('stroke-order'));
 
 // Add hiragana, then confirm it lands in the character deck only.
@@ -344,6 +498,14 @@ $$('.kanji-glyph')[0].click();
 await tick(); await tick();
 check('tapping a kanji plays its reading', played.length > kanjiPlayed, played.at(-1));
 
+const kanjiWordsCount = readJSON(JA.characterSets.find((s) => s.id === 'kanji-words').file).characters.length;
+await goTo('#/en-ja/characters/kanji-words');
+check('the kanji behind the word decks have their own set', $$('.kanji-row').length === kanjiWordsCount,
+  `${$$('.kanji-row').length} kanji`);
+check('…each pointing to words it appears in',
+  $$('.kanji-row').every((row) => [...row.querySelectorAll('.ref-chip')].some((a) =>
+    /#\/en-ja\/category\/words-/.test(a.getAttribute('href')))));
+
 await goTo('#/en-ja/characters/hiragana/study');
 check('character study reuses the phrase flashcard UI', Boolean($('.study-card .jp')),
   $('.study-card .jp')?.textContent);
@@ -368,7 +530,16 @@ console.log('\n8. Settings');
 
 await goTo('#/en-ja/settings');
 check('settings renders', text().includes('Settings'));
-check('toggles present', $$('input[type="checkbox"]').length === 3);
+check('toggles present: romaji, auto-play and the three card types',
+  $$('input[type="checkbox"]').length === 5 && $$('input[data-dir]').length === 3);
+check('furigana is a three-way choice, set to always',
+  $$('.furigana-mode .segment').map((b) => b.dataset.mode).join(',') === 'always,tap,hidden' &&
+  $('.furigana-mode .segment.is-on')?.dataset.mode === 'always');
+$('.furigana-mode .segment[data-mode="tap"]')?.click();
+for (let i = 0; i < 6; i++) await tick();
+check('choosing tap-to-show sticks', $('.furigana-mode .segment.is-on')?.dataset.mode === 'tap');
+$('.furigana-mode .segment[data-mode="always"]')?.click();
+for (let i = 0; i < 6; i++) await tick();
 check('new-cards-per-day control present', Boolean($('input[type="number"]')));
 check('text size control present', Boolean($('input[type="range"]')));
 check('storage backend reported', /Storage: (IndexedDB|localStorage)/.test(text()),
@@ -422,7 +593,7 @@ await goTo('#/ja-en/');
 check('today screen is in Japanese', $('h1')?.textContent === '今日', $('h1')?.textContent);
 const tabLabels = [...document.querySelectorAll('.tabbar a')].map((a) => a.textContent);
 check('tab bar is in Japanese, without a Characters tab',
-  tabLabels.join('|') === '📅今日|📚一覧|🗣️会話練習|⚙️設定', tabLabels.join(' | '));
+  tabLabels.join('|') === '📅今日|📚学ぶ|🗣️会話練習|⚙️設定', tabLabels.join(' | '));
 check('tabs link inside the English course',
   [...document.querySelectorAll('.tabbar a')].every((a) => a.getAttribute('href').startsWith('#/ja-en/')));
 check('no Reading row on the English today screen', !text().includes('Reading'));
@@ -440,13 +611,20 @@ check('usage and katakana-English notes render with their labels',
 check('no furigana/romaji toggles for English', !$('.toggle-strip'));
 check('no ruby annotations on English', $$('.phrase-card ruby').length === 0);
 
+// Phrases placement marked as known go straight to "say it" cards, so the
+// first card may be asked either way round; English is what's learned in both.
 await goTo('#/ja-en/study/greetings');
-check('study card shows English to learn', $('.study-card .target')?.getAttribute('lang') === 'en',
-  $('.study-card .target')?.textContent);
+const enProduction = $('.study-card')?.classList.contains('dir-production');
+check('study card asks about English, in Japanese', enProduction
+  ? $('.study-card .meaning')?.getAttribute('lang') === 'ja' && text().includes('英語でどう言いますか')
+  : $('.study-card .target')?.getAttribute('lang') === 'en',
+  `${enProduction ? 'production' : 'recognition'}: ${$('.study-card .target, .study-card .meaning')?.textContent}`);
 $$('button').find((b) => b.textContent === '答えを見る')?.click();
 await tick(); await tick();
-check('flipping reveals the Japanese meaning', $('.study-back .meaning')?.getAttribute('lang') === 'ja',
-  $('.study-back .meaning')?.textContent);
+check('flipping reveals the other side', enProduction
+  ? $('.study-back .target')?.getAttribute('lang') === 'en'
+  : $('.study-back .meaning')?.getAttribute('lang') === 'ja',
+  $('.study-back .target, .study-back .meaning')?.textContent);
 check('no stray "null" where the (absent) toggle strip would be', !/\bnull\b/.test(text()));
 check('grade buttons are in Japanese with Japanese intervals',
   $$('.btn-grade strong').map((s) => s.textContent).join('|') === 'わからない|あやしい|わかった|簡単すぎ' &&
@@ -480,7 +658,8 @@ check('Characters is not routable in a course without character sets', !text().i
 
 await goTo('#/ja-en/settings');
 check('settings are in Japanese', $('h1')?.textContent === '設定');
-check('only the toggles English has (auto-play), no furigana/romaji', $$('input[type="checkbox"]').length === 1);
+check('only the toggles English has (auto-play, card types), no furigana/romaji',
+  $$('input[type="checkbox"]:not([data-dir])').length === 1 && $$('input[data-dir]').length === 3 && !$('.furigana-mode'));
 check('no character-cards control', $$('input[type="number"]').length === 1);
 check('deck summary has no Characters line', !text().includes('Characters:'));
 

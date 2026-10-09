@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "id": "words-describe",
+  "title": "Describing Things",
+  "description": "Good, bad, big, new, busy, easy — and the difference between い-adjectives and な-adjectives.",
+  "items": [
+    {
+      "id": "w-ii",
+      "japanese": "いい",
+      "english": "good",
+      "pos": "i-adjective",
+      "usage": "Irregular: the past is よかった, the negative よくない.",
+      "audio": "audio/ja/words/w-ii.mp3",
+      "tags": ["describing"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-warui",
+      "japanese": "悪い",
+      "furigana": "{悪|わる}い",
+      "english": "bad",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-warui.mp3",
+      "tags": ["describing"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ookii",
+      "japanese": "大きい",
+      "furigana": "{大|おお}きい",
+      "english": "big",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-ookii.mp3",
+      "tags": ["describing"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-chiisai",
+      "japanese": "小さい",
+      "furigana": "{小|ちい}さい",
+      "english": "small",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-chiisai.mp3",
+      "tags": ["describing"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-atarashii",
+      "japanese": "新しい",
+      "furigana": "{新|あたら}しい",
+      "english": "new",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-atarashii.mp3",
+      "tags": ["describing"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-furui",
+      "japanese": "古い",
+      "furigana": "{古|ふる}い",
+      "english": "old (things)",
+      "pos": "i-adjective",
+      "usage": "For things, not people's age.",
+      "audio": "audio/ja/words/w-furui.mp3",
+      "tags": ["describing"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-takai",
+      "japanese": "高い",
+      "furigana": "{高|たか}い",
+      "english": "expensive; tall, high",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-takai.mp3",
+      "tags": ["describing", "shopping"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yasui",
+      "japanese": "安い",
+      "furigana": "{安|やす}い",
+      "english": "cheap",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-yasui.mp3",
+      "tags": ["describing", "shopping"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tanoshii",
+      "japanese": "楽しい",
+      "furigana": "{楽|たの}しい",
+      "english": "fun, enjoyable",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-tanoshii.mp3",
+      "tags": ["describing", "feelings"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-isogashii",
+      "japanese": "忙しい",
+      "furigana": "{忙|いそが}しい",
+      "english": "busy",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-isogashii.mp3",
+      "tags": ["describing", "work"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hima",
+      "japanese": "暇",
+      "furigana": "{暇|ひま}",
+      "english": "free (not busy)",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-hima.mp3",
+      "tags": ["describing"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-shizuka",
+      "japanese": "静か",
+      "furigana": "{静|しず}か",
+      "english": "quiet",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-shizuka.mp3",
+      "tags": ["describing"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-benri",
+      "japanese": "便利",
+      "furigana": "{便利|べんり}",
+      "english": "convenient, handy",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-benri.mp3",
+      "tags": ["describing"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kantan",
+      "japanese": "簡単",
+      "furigana": "{簡単|かんたん}",
+      "english": "easy, simple",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-kantan.mp3",
+      "tags": ["describing"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-muzukashii",
+      "japanese": "難しい",
+      "furigana": "{難|むずか}しい",
+      "english": "difficult",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-muzukashii.mp3",
+      "tags": ["describing"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-suki",
+      "japanese": "好き",
+      "furigana": "{好|す}き",
+      "english": "liked — \"I like\"",
+      "pos": "na-adjective",
+      "usage": "Grammatically an adjective: 猫が好き, \"(I) like cats\".",
+      "audio": "audio/ja/words/w-suki.mp3",
+      "tags": ["feelings"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kirai",
+      "japanese": "嫌い",
+      "furigana": "{嫌|きら}い",
+      "english": "disliked — \"I hate\"",
+      "pos": "na-adjective",
+      "usage": "Looks like an い-adjective but isn't: 嫌いな食べ物.",
+      "audio": "audio/ja/words/w-kirai.mp3",
+      "tags": ["feelings"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kirei",
+      "japanese": "きれい",
+      "english": "pretty; clean",
+      "pos": "na-adjective",
+      "usage": "Often written 綺麗. A な-adjective despite ending in い.",
+      "audio": "audio/ja/words/w-kirei.mp3",
+      "tags": ["describing"],
+      "difficulty": 1
+    }
+  ]
+}

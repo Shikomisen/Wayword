@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "words-small",
+  "title": "Little Words",
+  "description": "Question words, this-and-that, very, together, again — the small words that hold every sentence together.",
+  "items": [
+    {
+      "id": "w-kore",
+      "japanese": "これ",
+      "english": "this (one)",
+      "pos": "pronoun",
+      "usage": "これ near me, それ near you, あれ over there.",
+      "audio": "audio/ja/words/w-kore.mp3",
+      "tags": ["pointing"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sore",
+      "japanese": "それ",
+      "english": "that (one, near you)",
+      "pos": "pronoun",
+      "audio": "audio/ja/words/w-sore.mp3",
+      "tags": ["pointing"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-are",
+      "japanese": "あれ",
+      "english": "that (one, over there)",
+      "pos": "pronoun",
+      "audio": "audio/ja/words/w-are.mp3",
+      "tags": ["pointing"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-koko",
+      "japanese": "ここ",
+      "english": "here",
+      "pos": "pronoun",
+      "audio": "audio/ja/words/w-koko.mp3",
+      "tags": ["pointing"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-doko",
+      "japanese": "どこ",
+      "english": "where",
+      "pos": "question",
+      "audio": "audio/ja/words/w-doko.mp3",
+      "tags": ["questions"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dare",
+      "japanese": "誰",
+      "furigana": "{誰|だれ}",
+      "english": "who",
+      "pos": "question",
+      "audio": "audio/ja/words/w-dare.mp3",
+      "tags": ["questions"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-nani",
+      "japanese": "何",
+      "furigana": "{何|なに}",
+      "english": "what",
+      "pos": "question",
+      "usage": "Read なん before です, の and counters: 何ですか, 何時.",
+      "audio": "audio/ja/words/w-nani.mp3",
+      "tags": ["questions"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-itsu",
+      "japanese": "いつ",
+      "english": "when",
+      "pos": "question",
+      "audio": "audio/ja/words/w-itsu.mp3",
+      "tags": ["questions"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dou",
+      "japanese": "どう",
+      "english": "how; how about",
+      "pos": "question",
+      "usage": "どう？ alone asks \"how was it?\" or \"how about it?\".",
+      "audio": "audio/ja/words/w-dou.mp3",
+      "tags": ["questions"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-doushite",
+      "japanese": "どうして",
+      "english": "why",
+      "pos": "question",
+      "usage": "なんで is the casual \"why\"; なぜ is written or formal.",
+      "audio": "audio/ja/words/w-doushite.mp3",
+      "tags": ["questions"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-totemo",
+      "japanese": "とても",
+      "english": "very",
+      "pos": "adverb",
+      "usage": "すごく is the casual spoken \"very\".",
+      "audio": "audio/ja/words/w-totemo.mp3",
+      "tags": ["degree"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-chotto",
+      "japanese": "ちょっと",
+      "english": "a little, a bit",
+      "pos": "adverb",
+      "usage": "Also the polite \"no\": ちょっと… trailing off means \"that's a bit difficult\".",
+      "audio": "audio/ja/words/w-chotto.mp3",
+      "tags": ["degree"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-zenbu",
+      "japanese": "全部",
+      "furigana": "{全部|ぜんぶ}",
+      "english": "all, everything",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-zenbu.mp3",
+      "tags": ["degree"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-issho",
+      "japanese": "一緒に",
+      "furigana": "{一緒|いっしょ}に",
+      "english": "together",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-issho.mp3",
+      "tags": ["people"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hitori",
+      "japanese": "一人で",
+      "furigana": "{一人|ひとり}で",
+      "english": "alone, on your own",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-hitori.mp3",
+      "tags": ["people"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mata",
+      "japanese": "また",
+      "english": "again",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-mata.mp3",
+      "tags": ["time"],
+      "difficulty": 1
+    }
+  ]
+}

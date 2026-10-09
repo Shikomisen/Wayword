@@ -4,7 +4,7 @@
   "speaker": "en",
   "register": "polite",
   "generatedFor": "Wayword",
-  "notes": "Adding a category = add a file to content/ + one entry here. No app code changes. `register` is the default for phrases that don't declare their own — every phrase is polite unless it says otherwise (the casual set does). Categories appear under the group they name; `starter` categories go into the deck when the placement quiz finishes, the rest are added from Learn.",
+  "notes": "Adding a category = add a file to content/ + one entry here. No app code changes. `register` is the default for phrases that don't declare their own — every phrase is polite unless it says otherwise (the casual set does). Categories appear under the group they name; `starter` categories go into the deck when the placement quiz finishes, the rest are added from Learn. `decks` are word and sentence decks (`kind`: words | sentences) and follow the same rules; a sentence's `chunks` name the words it uses by id, which is what links a word to the sentences it appears in.",
   "fields": { "target": "japanese", "ruby": "furigana", "reading": "romaji", "meaning": "english" },
   "aids": {
     "ruby": { "chip": "ふりがな", "label": "Furigana", "help": "Kana readings above kanji" },
@@ -37,10 +37,26 @@
     { "id": "smalltalk",  "order": 10, "file": "content/ja/smalltalk.json",  "title": "Small Talk",                "icon": "💬", "group": "basics", "starter": true },
     { "id": "casual",     "order": 11, "file": "content/ja/casual.json",     "title": "Casual Speech",             "icon": "🏠", "group": "basics", "starter": true }
   ],
+  "decks": [
+    { "id": "words-people",       "kind": "words",     "order": 1,  "file": "content/ja/words/people.json",       "title": "People & Family",         "icon": "👥", "starter": true },
+    { "id": "words-time",         "kind": "words",     "order": 2,  "file": "content/ja/words/time.json",         "title": "Time & Days",             "icon": "🕒" },
+    { "id": "words-verbs",        "kind": "words",     "order": 3,  "file": "content/ja/words/verbs.json",        "title": "Everyday Verbs",          "icon": "🏃", "starter": true },
+    { "id": "words-small",        "kind": "words",     "order": 4,  "file": "content/ja/words/small.json",        "title": "Little Words",            "icon": "🧩", "starter": true },
+    { "id": "words-home",         "kind": "words",     "order": 5,  "file": "content/ja/words/home.json",         "title": "Home & Daily Life",       "icon": "🏠" },
+    { "id": "words-food",         "kind": "words",     "order": 6,  "file": "content/ja/words/food.json",         "title": "Food & Drink",            "icon": "🍙" },
+    { "id": "words-describe",     "kind": "words",     "order": 7,  "file": "content/ja/words/describe.json",     "title": "Describing Things",       "icon": "🎨" },
+    { "id": "words-feelings",     "kind": "words",     "order": 8,  "file": "content/ja/words/feelings.json",     "title": "Feelings & Health",       "icon": "💗" },
+    { "id": "words-places",       "kind": "words",     "order": 9,  "file": "content/ja/words/places.json",       "title": "Places & Getting Around", "icon": "🗺️" },
+    { "id": "words-weather",      "kind": "words",     "order": 10, "file": "content/ja/words/weather.json",      "title": "Weather & Seasons",       "icon": "☀️" },
+    { "id": "words-work",         "kind": "words",     "order": 11, "file": "content/ja/words/work.json",         "title": "Work & Study",            "icon": "💼" },
+    { "id": "words-free",         "kind": "words",     "order": 12, "file": "content/ja/words/free.json",         "title": "Free Time",               "icon": "🎬" },
+    { "id": "sentences-everyday", "kind": "sentences", "order": 1,  "file": "content/ja/sentences/everyday.json", "title": "Everyday Sentences",      "icon": "💬", "starter": true }
+  ],
   "characterSets": [
-    { "id": "hiragana",     "order": 1, "file": "content/ja/hiragana.json",     "title": "Hiragana",     "icon": "あ", "script": "hiragana", "layout": "grid" },
-    { "id": "katakana",     "order": 2, "file": "content/ja/katakana.json",     "title": "Katakana",     "icon": "ア", "script": "katakana", "layout": "grid" },
-    { "id": "kanji-common", "order": 3, "file": "content/ja/kanji-common.json", "title": "Common Kanji", "icon": "漢", "script": "kanji",    "layout": "list" }
+    { "id": "hiragana",     "order": 1, "file": "content/ja/hiragana.json",     "title": "Hiragana",            "icon": "あ", "script": "hiragana", "layout": "grid" },
+    { "id": "katakana",     "order": 2, "file": "content/ja/katakana.json",     "title": "Katakana",            "icon": "ア", "script": "katakana", "layout": "grid" },
+    { "id": "kanji-words",  "order": 3, "file": "content/ja/kanji-words.json",  "title": "Kanji in Your Words", "icon": "字", "script": "kanji",    "layout": "list" },
+    { "id": "kanji-common", "order": 4, "file": "content/ja/kanji-common.json", "title": "Common Kanji",        "icon": "漢", "script": "kanji",    "layout": "list" }
   ],
   "scenarios": [
     { "id": "conbini",     "file": "content/ja/scenarios/conbini.json",     "title": "Convenience store checkout", "icon": "🏪", "category": "shopping"   },

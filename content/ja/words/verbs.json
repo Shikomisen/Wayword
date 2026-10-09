@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "id": "words-verbs",
+  "title": "Everyday Verbs",
+  "description": "Twenty verbs you will use every day, each with its polite ます form and its て form — the form every connector in the Connectors course builds on.",
+  "items": [
+    {
+      "id": "w-iku",
+      "japanese": "行く",
+      "furigana": "{行|い}く",
+      "english": "to go",
+      "pos": "verb",
+      "forms": {
+        "masu": "{行|い}きます",
+        "te": "{行|い}って"
+      },
+      "usage": "The one irregular て-form among regular verbs: 行って, never 行いて.",
+      "audio": "audio/ja/words/w-iku.mp3",
+      "tags": ["movement"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kuru",
+      "japanese": "来る",
+      "furigana": "{来|く}る",
+      "english": "to come",
+      "pos": "verb",
+      "forms": {
+        "masu": "{来|き}ます",
+        "te": "{来|き}て"
+      },
+      "usage": "Irregular: くる → きます → きて.",
+      "audio": "audio/ja/words/w-kuru.mp3",
+      "tags": ["movement"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kaeru",
+      "japanese": "帰る",
+      "furigana": "{帰|かえ}る",
+      "audioHint": "帰る",
+      "english": "to go home; to return",
+      "pos": "verb",
+      "forms": {
+        "masu": "{帰|かえ}ります",
+        "te": "{帰|かえ}って"
+      },
+      "audio": "audio/ja/words/w-kaeru.mp3",
+      "tags": ["movement", "home"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-suru",
+      "japanese": "する",
+      "english": "to do",
+      "pos": "verb",
+      "forms": {
+        "masu": "します",
+        "te": "して"
+      },
+      "usage": "Turns nouns into verbs: 勉強する, 掃除する, 電話する.",
+      "audio": "audio/ja/words/w-suru.mp3",
+      "tags": ["basic"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-miru",
+      "japanese": "見る",
+      "furigana": "{見|み}る",
+      "english": "to see; to watch; to look",
+      "pos": "verb",
+      "forms": {
+        "masu": "{見|み}ます",
+        "te": "{見|み}て"
+      },
+      "audio": "audio/ja/words/w-miru.mp3",
+      "tags": ["basic"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kiku",
+      "japanese": "聞く",
+      "furigana": "{聞|き}く",
+      "english": "to listen; to hear; to ask",
+      "pos": "verb",
+      "forms": {
+        "masu": "{聞|き}きます",
+        "te": "{聞|き}いて"
+      },
+      "audio": "audio/ja/words/w-kiku.mp3",
+      "tags": ["communication"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hanasu",
+      "japanese": "話す",
+      "furigana": "{話|はな}す",
+      "english": "to talk, to speak",
+      "pos": "verb",
+      "forms": {
+        "masu": "{話|はな}します",
+        "te": "{話|はな}して"
+      },
+      "audio": "audio/ja/words/w-hanasu.mp3",
+      "tags": ["communication"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-iu",
+      "japanese": "言う",
+      "furigana": "{言|い}う",
+      "english": "to say",
+      "pos": "verb",
+      "forms": {
+        "masu": "{言|い}います",
+        "te": "{言|い}って"
+      },
+      "audio": "audio/ja/words/w-iu.mp3",
+      "tags": ["communication"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yomu",
+      "japanese": "読む",
+      "furigana": "{読|よ}む",
+      "english": "to read",
+      "pos": "verb",
+      "forms": {
+        "masu": "{読|よ}みます",
+        "te": "{読|よ}んで"
+      },
+      "audio": "audio/ja/words/w-yomu.mp3",
+      "tags": ["basic"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kaku",
+      "japanese": "書く",
+      "furigana": "{書|か}く",
+      "english": "to write",
+      "pos": "verb",
+      "forms": {
+        "masu": "{書|か}きます",
+        "te": "{書|か}いて"
+      },
+      "audio": "audio/ja/words/w-kaku.mp3",
+      "tags": ["basic"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-matsu",
+      "japanese": "待つ",
+      "furigana": "{待|ま}つ",
+      "english": "to wait",
+      "pos": "verb",
+      "forms": {
+        "masu": "{待|ま}ちます",
+        "te": "{待|ま}って"
+      },
+      "audio": "audio/ja/words/w-matsu.mp3",
+      "tags": ["basic"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-au",
+      "japanese": "会う",
+      "furigana": "{会|あ}う",
+      "english": "to meet, to see (someone)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{会|あ}います",
+        "te": "{会|あ}って"
+      },
+      "usage": "Takes に: 友達に会う — \"meet a friend\".",
+      "audio": "audio/ja/words/w-au.mp3",
+      "tags": ["people"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kau",
+      "japanese": "買う",
+      "furigana": "{買|か}う",
+      "english": "to buy",
+      "pos": "verb",
+      "forms": {
+        "masu": "{買|か}います",
+        "te": "{買|か}って"
+      },
+      "audio": "audio/ja/words/w-kau.mp3",
+      "tags": ["shopping"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tsukau",
+      "japanese": "使う",
+      "furigana": "{使|つか}う",
+      "english": "to use",
+      "pos": "verb",
+      "forms": {
+        "masu": "{使|つか}います",
+        "te": "{使|つか}って"
+      },
+      "audio": "audio/ja/words/w-tsukau.mp3",
+      "tags": ["basic"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-wakaru",
+      "japanese": "分かる",
+      "furigana": "{分|わ}かる",
+      "english": "to understand",
+      "pos": "verb",
+      "forms": {
+        "masu": "{分|わ}かります",
+        "te": "{分|わ}かって"
+      },
+      "usage": "Takes が: 日本語が分かる.",
+      "audio": "audio/ja/words/w-wakaru.mp3",
+      "tags": ["communication"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-shiru",
+      "japanese": "知る",
+      "furigana": "{知|し}る",
+      "audioHint": "知る",
+      "english": "to get to know",
+      "pos": "verb",
+      "forms": {
+        "masu": "{知|し}ります",
+        "te": "{知|し}って"
+      },
+      "usage": "\"I know\" is 知っている; \"I don't know\" is 知らない.",
+      "audio": "audio/ja/words/w-shiru.mp3",
+      "tags": ["communication"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-omou",
+      "japanese": "思う",
+      "furigana": "{思|おも}う",
+      "english": "to think",
+      "pos": "verb",
+      "forms": {
+        "masu": "{思|おも}います",
+        "te": "{思|おも}って"
+      },
+      "usage": "〜と思う — \"I think (that)…\".",
+      "audio": "audio/ja/words/w-omou.mp3",
+      "tags": ["communication"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-yasumu",
+      "japanese": "休む",
+      "furigana": "{休|やす}む",
+      "english": "to rest; to take a day off",
+      "pos": "verb",
+      "forms": {
+        "masu": "{休|やす}みます",
+        "te": "{休|やす}んで"
+      },
+      "audio": "audio/ja/words/w-yasumu.mp3",
+      "tags": ["work"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hataraku",
+      "japanese": "働く",
+      "furigana": "{働|はたら}く",
+      "english": "to work",
+      "pos": "verb",
+      "forms": {
+        "masu": "{働|はたら}きます",
+        "te": "{働|はたら}いて"
+      },
+      "audio": "audio/ja/words/w-hataraku.mp3",
+      "tags": ["work"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-asobu",
+      "japanese": "遊ぶ",
+      "furigana": "{遊|あそ}ぶ",
+      "english": "to hang out, to have fun",
+      "pos": "verb",
+      "forms": {
+        "masu": "{遊|あそ}びます",
+        "te": "{遊|あそ}んで"
+      },
+      "usage": "Adults 遊ぶ too — it means having fun or hanging out, not just children playing.",
+      "audio": "audio/ja/words/w-asobu.mp3",
+      "tags": ["free time"],
+      "difficulty": 2
+    }
+  ]
+}

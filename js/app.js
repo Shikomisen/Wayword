@@ -9,22 +9,27 @@
  * study screen lives under its course, e.g. #/en-ja/browse or #/ja-en/review.
  * Entering a course switches storage, interface language and content to it
  * in one step (course.js), so the screens below never mention a language.
+ *
+ * The flashcard session is study.js, your own words are mine.js; this file
+ * keeps the router, the chrome, and the Today / Learn / deck / Settings
+ * screens.
  */
 
-import { loadContent, getCategory, getCharacterSet, scenariosFor } from './content.js';
+import { loadContent, getCategory, getCharacterSet, scenariosFor, USER_DECK } from './content.js';
 import * as deck from './deck.js';
 import * as srs from './srs.js';
 import * as audio from './audio.js';
 import * as store from './store.js';
 import * as course from './course.js';
-import { t, setLang, locale, formatInterval } from './i18n.js';
-import {
-  el, clear, phraseBlock, targetNode, meaningNode, notesBlock, tagRow, audioButton, toast, registerBadge, politeBlock,
-} from './render.js';
+import { t, setLang, locale } from './i18n.js';
+import { el, clear, phraseBlock, notesBlock, tagRow, audioButton, toast, politeBlock } from './render.js';
+import { header, stat, playItem, studySettings, toggleStrip } from './shared.js';
 import { renderPlacement } from './quiz.js';
 import { renderScenarioList, renderScenario } from './scenario.js';
 import { renderCharacterList, renderCharacterSet } from './characters.js';
 import { renderHome, renderPlannedCourse } from './home.js';
+import { runSession } from './study.js';
+import { renderMine, renderMineForm } from './mine.js';
 
 const app = () => document.getElementById('app');
 const { link } = course;
@@ -34,10 +39,13 @@ const { link } = course;
 // Paths inside a course, after the #/<course> prefix.
 const routes = [
   [/^\/?$/, today],
-  [/^\/browse$/, browse],
-  [/^\/category\/([\w-]+)$/, category],
-  [/^\/study\/([\w-]+)$/, studyCategory],
+  [/^\/browse$/, learn],
+  [/^\/category\/([\w-]+)$/, deckScreen],
+  [/^\/study\/([\w-]+)$/, studyDeck],
   [/^\/review$/, review],
+  [/^\/mine$/, (root) => renderMine(root)],
+  [/^\/mine\/new$/, (root) => renderMineForm(root, null)],
+  [/^\/mine\/([\w-]+)$/, (root, id) => renderMineForm(root, id)],
   [/^\/scenarios$/, (root) => renderScenarioList(root)],
   [/^\/scenario\/([\w-]+)$/, (root, id) => renderScenario(root, id)],
   // Order matters: /characters/review must match before /characters/:id.
@@ -129,8 +137,9 @@ let enteredCourse = null;
 
 /**
  * Activate a course and dress the chrome for it. Everything that should
- * happen once per visit to a course — remembering it as the last one,
- * the week-one romaji switch-off — happens only when the course changes.
+ * happen once per visit to a course — remembering it as the last one, the
+ * first-week romaji switch-off, cards for newly enabled directions — happens
+ * only when the course changes.
  */
 async function enterCourse(target) {
   await course.setCourse(target.id);
@@ -153,6 +162,9 @@ async function enterCourse(target) {
     if (features.reading && (await deck.maybeRetireRomaji())) {
       toast(t('toast.romajiRetired'), 5000);
     }
+    // Decks activated before card directions existed only have recognition
+    // cards; this adds the rest (new, so the daily cap paces them).
+    if (await deck.isOnboarded()) await deck.syncDirections();
   }
   return { features };
 }
@@ -189,72 +201,36 @@ function highlightNav(path) {
   document.querySelectorAll('.tabbar a').forEach((a) => {
     const target = a.dataset.path;
     // Sub-routes keep their section lit: /characters/hiragana is still
-    // "Characters", /category/airport is still "Browse".
+    // "Characters", /category/airport and /mine are part of Learn.
     const owns = target === '/'
       ? path === '/'
-      : path === target || path.startsWith(`${target}/`);
+      : path === target || path.startsWith(`${target}/`) ||
+        (target === '/browse' && /^\/(category|mine)(\/|$)/.test(path));
     a.classList.toggle('active', owns);
   });
 }
 
-/* ---------- shared bits ---------- */
-
-function header(title, subtitle) {
-  return el('header', { class: 'screen-header' },
-    el('h1', {}, title),
-    subtitle ? el('p', { class: 'lede' }, subtitle) : null);
-}
-
-async function playPhrase(phrase) {
-  const result = await audio.play(phrase.audio);
-  if (result === 'missing') toast(t('audio.missing'));
-  return result;
-}
-
-/**
- * Inline furigana/romaji toggles (README §6, Day 2).
- *
- * Deliberately duplicated next to the content rather than buried in
- * Settings: deciding whether you need the reading is a per-card judgement
- * made mid-study, and a trip to Settings to check yourself is a trip you
- * won't make. Only the aids a course's content actually has are offered.
- */
-function toggleStrip(onChange, features) {
-  const wanted = [
-    features.ruby ? ['furigana', features.aids.ruby?.chip || 'ruby'] : null,
-    features.reading ? ['romaji', features.aids.reading?.chip || 'reading'] : null,
-  ].filter(Boolean);
-  if (!wanted.length) return null;
-
-  const make = async (key, label) => {
-    const s = await deck.getSettings();
-    return el('button', {
-      class: `chip ${s[key] ? 'chip-on' : ''}`,
-      type: 'button',
-      'aria-pressed': s[key] ? 'true' : 'false',
-      onclick: async () => {
-        const cur = await deck.getSettings();
-        await deck.saveSettings({ [key]: !cur[key] });
-        onChange();
-      },
-    }, label);
-  };
-
-  const strip = el('div', { class: 'toggle-strip' });
-  Promise.all(wanted.map(([key, label]) => make(key, label)))
-    .then((chips) => chips.forEach((c) => strip.append(c)));
-  return strip;
+/** How many items a deck holds, in the right noun. */
+function countLine(d) {
+  const n = (d.items || d.phrases || []).length;
+  if (d.type === 'words') return t('category.countWords', { n });
+  if (d.type === 'sentences') return t('category.countSentences', { n });
+  if (d.type === 'mine') return t('learn.mineCount', { n });
+  return t('category.count', { n });
 }
 
 /* ---------- today ---------- */
 
 async function today(root) {
-  const [summary, stats, streakDays, s, { categories, features }] = await Promise.all([
+  const [summary, stats, streakDays, s, content] = await Promise.all([
     deck.deckSummary(), deck.todayStats(), deck.streak(), deck.getSettings(), loadContent(),
   ]);
+  const { categories, decks, features, byCategory } = content;
 
   const q = await deck.queue();
-  const activeCats = categories.filter((c) => s.activeCategories.includes(c.id));
+  const allDecks = [...decks, ...categories, byCategory.get(USER_DECK)].filter(Boolean);
+  const active = allDecks.filter((d) => s.activeCategories.includes(d.id));
+  const noWords = features.words && !decks.some((d) => d.type === 'words' && s.activeCategories.includes(d.id));
 
   root.append(
     el('div', { class: 'screen' },
@@ -276,10 +252,19 @@ async function today(root) {
             el('p', { class: 'muted' }, t('today.nothingDueHint')),
             el('button', { class: 'btn btn-primary', onclick: () => go('/browse') }, t('today.browse'))),
 
+      noWords
+        ? el('a', { class: 'row-card nudge', href: link('/browse') },
+            el('span', { class: 'row-icon' }, '🧩'),
+            el('span', { class: 'row-body' },
+              el('span', { class: 'row-title' }, t('today.wordsNudgeTitle')),
+              el('span', { class: 'row-sub' }, t('today.wordsNudge'))),
+            el('span', { class: 'row-chev' }, '›'))
+        : null,
+
       el('h2', { class: 'section-title' }, t('today.inDeck')),
       el('div', { class: 'card-list' },
-        activeCats.length
-          ? await Promise.all(activeCats.map(categoryRow))
+        active.length
+          ? await Promise.all(active.map(categoryRow))
           : el('p', { class: 'muted' }, t('today.noCategories'))),
 
       features.characters ? await charactersBlock() : null,
@@ -343,12 +328,13 @@ function queueBreakdown(queue) {
 /**
  * Seven-day forecast straight off the SRS due dates — the thing that makes
  * the scheduler legible rather than a black box, and shows why adding six
- * categories at once is a bad idea.
+ * decks at once is a bad idea.
  */
 async function forecastBlock() {
   const s = await deck.getSettings();
   const active = new Set(s.activeCategories);
-  const cards = (await deck.getDeck()).filter((c) => active.has(c.categoryId) && c.state !== 'new');
+  const cards = srs.studyCards(await deck.getDeck())
+    .filter((c) => active.has(c.categoryId) && c.state !== 'new' && deck.dirEnabled(c, s));
 
   const days = Array.from({ length: 7 }, (_, i) => {
     const start = new Date();
@@ -381,86 +367,94 @@ function dueLine(queueLength, summary) {
   return t('today.waiting', { n: queueLength, mature: summary.mature });
 }
 
-function stat(value, label) {
-  return el('div', { class: 'stat' }, el('div', { class: 'stat-value' }, String(value)), el('div', { class: 'stat-label' }, label));
-}
-
-async function categoryRow(cat) {
-  const p = await deck.categoryProgress(cat.id);
+async function categoryRow(d) {
+  const p = await deck.categoryProgress(d.id);
   const studied = p.total - p.new;
   const pct = p.total ? Math.round((studied / p.total) * 100) : 0;
-  return el('a', { class: 'row-card', href: link(`/category/${cat.id}`) },
-    el('span', { class: 'row-icon' }, cat.icon || '📄'),
+  return el('a', { class: 'row-card', href: link(d.id === USER_DECK ? '/mine' : `/category/${d.id}`) },
+    el('span', { class: 'row-icon' }, d.icon || '📄'),
     el('span', { class: 'row-body' },
-      el('span', { class: 'row-title' }, cat.title),
+      el('span', { class: 'row-title' }, d.title),
       el('span', { class: 'row-sub' },
-        p.total
-          ? t('category.progress', { studied, total: p.total, due: p.due })
-          : t('category.count', { n: cat.phrases.length })),
+        p.total ? t('category.progress', { studied, total: p.total, due: p.due }) : countLine(d)),
       el('span', { class: 'bar' }, el('span', { class: 'bar-fill', style: `width:${pct}%` }))),
     el('span', { class: 'row-chev' }, '›'));
 }
 
-/* ---------- browse ---------- */
+/* ---------- learn (was: browse) ---------- */
 
-async function browse(root) {
-  const { categories, manifest } = await loadContent();
+async function learn(root) {
+  const content = await loadContent();
+  const { categories, decks, manifest } = content;
   const s = await deck.getSettings();
 
-  // Groups and their titles come from the course manifest, in its own
+  const words = decks.filter((d) => d.type === 'words');
+  const sentences = decks.filter((d) => d.type === 'sentences');
+  // Phrase groups and their titles come from the course manifest, in its own
   // language. A manifest without groups shows one untitled list.
   const groups = manifest.groups?.length ? manifest.groups : [{ id: undefined, title: null }];
+  const section = (title, rows, cls = 'section-title') => (rows.length
+    ? el('section', {}, title ? el('h2', { class: cls }, title) : null, el('div', { class: 'card-list' }, rows))
+    : null);
 
   root.append(
     el('div', { class: 'screen' },
       header(t('browse.title'), t('browse.lede')),
-      groups.map((group) => {
-        const inGroup = categories.filter((c) => c.group === group.id);
-        if (!inGroup.length) return null;
-        return el('section', {},
-          group.title ? el('h2', { class: 'section-title' }, group.title) : null,
-          el('div', { class: 'card-list' }, inGroup.map((cat) => browseRow(cat, s))));
-      })
-    )
+      section(t('learn.words'), words.map((d) => browseRow(d, s)), 'kind-title'),
+      section(t('learn.sentences'), sentences.map((d) => browseRow(d, s)), 'kind-title'),
+      words.length || sentences.length ? el('h2', { class: 'kind-title' }, t('learn.phrases')) : null,
+      groups.map((group) => section(group.title, categories.filter((c) => c.group === group.id).map((c) => browseRow(c, s)))),
+      section(t('learn.mine'), [mineRow(content)], 'kind-title'))
   );
 }
 
-function browseRow(cat, s) {
-  const active = s.activeCategories.includes(cat.id);
-  return el('div', { class: `row-card ${active ? 'is-active' : ''}` },
-    el('span', { class: 'row-icon' }, cat.icon || '📄'),
-    el('a', { class: 'row-body', href: link(`/category/${cat.id}`) },
-      el('span', { class: 'row-title' }, cat.title),
-      el('span', { class: 'row-sub' },
-        cat.missing ? t('browse.missing') : t('category.count', { n: cat.phrases.length }))),
+function browseRow(d, s) {
+  const active = s.activeCategories.includes(d.id);
+  return el('div', { class: `row-card ${active ? 'is-active' : ''}`, dataset: { deck: d.id } },
+    el('span', { class: 'row-icon' }, d.icon || '📄'),
+    el('a', { class: 'row-body', href: link(`/category/${d.id}`) },
+      el('span', { class: 'row-title' }, d.title),
+      el('span', { class: 'row-sub' }, d.missing ? t('browse.missing') : countLine(d))),
     active
       ? el('span', { class: 'pill pill-on' }, t('browse.inDeck'))
       : el('button', {
           class: 'btn btn-small',
           onclick: async (e) => {
             e.preventDefault();
-            const { added, seeded } = await deck.activateCategory(cat.id);
+            const { added, seeded } = await deck.activateCategory(d.id);
             toast(seeded ? t('browse.addedSeeded', { added, seeded }) : t('browse.added', { added }));
             router();
           },
         }, t('browse.add')));
 }
 
-/* ---------- category detail ---------- */
+function mineRow(content) {
+  const mine = content.byCategory.get(USER_DECK);
+  const n = mine?.items.length || 0;
+  return el('a', { class: 'row-card', href: link('/mine') },
+    el('span', { class: 'row-icon' }, '✍️'),
+    el('span', { class: 'row-body' },
+      el('span', { class: 'row-title' }, t('learn.mine')),
+      el('span', { class: 'row-sub' }, n ? t('learn.mineCount', { n }) : t('learn.mineEmpty'))),
+    el('span', { class: 'row-chev' }, '›'));
+}
 
-async function category(root, id) {
-  const cat = await getCategory(id);
-  if (!cat) { go('/browse'); return; }
-  const { features } = await loadContent();
-  const s = await deck.getSettings();
+/* ---------- a deck: phrases, words or sentences ---------- */
+
+async function deckScreen(root, id) {
+  if (id === USER_DECK) { go('/mine'); return; }
+  const d = await getCategory(id);
+  if (!d) { go('/browse'); return; }
+  const content = await loadContent();
+  const s = await studySettings();
   const active = s.activeCategories.includes(id);
   const progress = await deck.categoryProgress(id);
-  const scenarios = await scenariosFor(id);
+  const scenarios = d.type === 'phrases' ? await scenariosFor(id) : [];
 
   root.append(
     el('div', { class: 'screen' },
       el('a', { class: 'back-link', href: link('/browse') }, t('category.back')),
-      header(`${cat.icon || ''} ${cat.title}`, cat.description),
+      header(`${d.icon || ''} ${d.title}`, d.description),
 
       scenarios.length
         ? el('div', { class: 'card-list scenario-teaser' },
@@ -473,7 +467,7 @@ async function category(root, id) {
                 el('span', { class: 'row-chev' }, '›'))))
         : null,
 
-      toggleStrip(router, features),
+      toggleStrip(router, content.features),
 
       el('div', { class: 'action-row' },
         active
@@ -489,52 +483,70 @@ async function category(root, id) {
         active ? el('span', { class: 'muted small' }, t('category.dueNew', { due: progress.due, fresh: progress.new })) : null),
 
       el('div', { class: 'phrase-list' },
-        cat.phrases.map((p) => phraseCard(p, s)))
+        (d.items || d.phrases).map((item) => itemCard(item, s, content)))
     )
   );
 }
 
-function phraseCard(phrase, s) {
-  const node = el('article', { class: 'phrase-card' },
+function itemCard(item, s, content) {
+  return el('article', { class: `phrase-card item-${item.kind}`, dataset: { item: item.id } },
     el('div', { class: 'phrase-main' },
-      phraseBlock(phrase, s),
-      audioButton(phrase, playPhrase)),
-    politeBlock(phrase, s, playPhrase),
-    notesBlock(phrase),
-    tagRow(phrase));
-  return node;
+      phraseBlock(item, s),
+      audioButton(item, playItem)),
+    politeBlock(item, s, playItem),
+    item.kind === 'sentence' ? wordLinks(item, content) : null,
+    item.kind === 'word' ? sentenceLinks(item, content) : null,
+    notesBlock(item),
+    tagRow(item));
+}
+
+/** A sentence's words, each a link to its word deck — learned words, seen in context. */
+function wordLinks(sentence, content) {
+  const words = (sentence.chunks || []).map((c) => c.w && content.phrases.get(c.w)).filter(Boolean);
+  if (!words.length) return null;
+  return el('div', { class: 'links' },
+    el('span', { class: 'note-label' }, t('sentence.words')),
+    el('div', { class: 'ref-list' }, words.map((w) =>
+      el('a', { class: 'ref-chip', href: link(`/category/${w.categoryId}`), title: w.meaning, lang: w.targetLang },
+        `${w.target} · ${w.meaning}`))));
+}
+
+/** The sentences a word appears in. */
+function sentenceLinks(word, content) {
+  const sentences = (content.usage.get(word.id) || []).map((id) => content.phrases.get(id)).filter(Boolean);
+  if (!sentences.length) return null;
+  return el('div', { class: 'links' },
+    el('span', { class: 'note-label' }, t('word.inSentences')),
+    el('div', { class: 'ref-list' }, sentences.map((x) =>
+      el('a', { class: 'ref-chip', href: link(`/category/${x.categoryId}`), title: x.meaning, lang: x.targetLang }, x.target))));
 }
 
 /* ---------- study & review ---------- */
 
-async function studyCategory(root, id) {
-  const cat = await getCategory(id);
-  if (!cat) { go('/browse'); return; }
+async function studyDeck(root, id) {
+  const d = await getCategory(id);
+  if (!d) { go('/browse'); return; }
   if (!(await deck.isActive(id))) await deck.activateCategory(id);
 
-  const all = await deck.getDeck();
-  const scoped = all.filter((c) => c.categoryId === id);
-  const s = await deck.getSettings();
-  const queue = srs.buildQueue(scoped, { newLimit: s.newPerDay });
-
+  const queue = await deck.queue(id);
+  const back = link(id === USER_DECK ? '/mine' : `/category/${id}`);
   if (!queue.length) {
-    root.append(emptyStudy(t('study.nothingIn', { title: cat.title }), link(`/category/${id}`)));
+    root.append(emptyStudy(t('study.nothingIn', { title: d.title }), back));
     return;
   }
-
-  await runSession(root, queue, { title: cat.title, exitTo: link(`/category/${id}`) });
+  await runSession(root, queue, { exitTo: back });
 }
 
 async function review(root) {
   const queue = await deck.queue();
   if (!queue.length) { go('/'); return; }
-  await runSession(root, queue, { title: t('today.title'), exitTo: link('/') });
+  await runSession(root, queue, { exitTo: link('/') });
 }
 
 /**
- * Character review. Same flashcard loop as phrases — character content is
- * phrase-shaped, so runSession needs no branching — but fed from the
- * separate character queue so the two decks never mix.
+ * Character review. Same flashcard loop as everything else — character
+ * content is phrase-shaped, so runSession needs no branching — but fed from
+ * the separate character queue so the two decks never mix.
  */
 async function reviewCharacters(root) {
   const queue = await deck.characterQueue();
@@ -542,7 +554,7 @@ async function reviewCharacters(root) {
     root.append(emptyStudy('Nothing due in your character sets.', link('/characters')));
     return;
   }
-  await runSession(root, queue, { title: 'Characters', exitTo: link('/characters') });
+  await runSession(root, queue, { exitTo: link('/characters') });
 }
 
 async function studyCharacterSet(root, setId) {
@@ -555,7 +567,7 @@ async function studyCharacterSet(root, setId) {
     root.append(emptyStudy(t('study.nothingIn', { title: set.title }), link(`/characters/${setId}`)));
     return;
   }
-  await runSession(root, queue, { title: set.title, exitTo: link(`/characters/${setId}`) });
+  await runSession(root, queue, { exitTo: link(`/characters/${setId}`) });
 }
 
 function emptyStudy(message, backTo) {
@@ -565,112 +577,6 @@ function emptyStudy(message, backTo) {
       el('p', {}, message),
       el('p', { class: 'muted' }, t('study.scheduledOut')),
       el('button', { class: 'btn btn-primary', onclick: () => go('/') }, t('study.backToToday'))));
-}
-
-/**
- * The core study loop. Front = the language being learned; flip reveals
- * the meaning and notes; grading feeds SM-2. Failed cards are pushed back
- * into the same session rather than disappearing for ten minutes.
- */
-async function runSession(root, queue, { exitTo }) {
-  const { phrases, features } = await loadContent();
-  const s = await deck.getSettings();
-  const total = queue.length;
-  let done = 0;
-  let flipped = false;
-  let cards = [...queue];
-
-  const view = el('div', { class: 'screen study' });
-  root.append(view);
-
-  async function draw() {
-    if (!cards.length) return finish();
-    const card = cards[0];
-    const phrase = phrases.get(card.id);
-    if (!phrase) { cards.shift(); return draw(); } // content removed under us
-    clear(view);
-
-    // Re-read settings each draw so the inline toggles take effect immediately.
-    Object.assign(s, await deck.getSettings());
-
-    const previews = srs.gradePreviews(card, Date.now(), formatInterval);
-
-    // Native append() would print a null child as the text "null" (a course
-    // with no reading aids has no toggle strip), so drop the gaps first.
-    view.append(...[
-      el('div', { class: 'study-top' },
-        el('a', { class: 'back-link', href: exitTo }, '✕'),
-        el('div', { class: 'bar' }, el('div', { class: 'bar-fill', style: `width:${(done / total) * 100}%` })),
-        el('span', { class: 'muted small' }, `${done}/${total}`)),
-
-      el('div', {
-        class: `study-card ${flipped ? 'flipped' : ''}`,
-        onclick: () => { if (!flipped) { flipped = true; draw(); } },
-      },
-        el('div', { class: 'card-cat muted small' },
-          phrase.categoryTitle, phrase.register ? ' ' : null, registerBadge(phrase)),
-        targetNode(phrase, { furigana: s.furigana }),
-        s.romaji && phrase.reading ? el('div', { class: 'romaji' }, phrase.reading) : null,
-        audioButton(phrase, playPhrase),
-
-        flipped
-          ? el('div', { class: 'study-back' },
-              meaningNode(phrase, { big: true }),
-              politeBlock(phrase, s, playPhrase),
-              notesBlock(phrase),
-              tagRow(phrase))
-          : el('p', { class: 'muted tap-hint' }, t('study.tapToReveal'))),
-
-      toggleStrip(draw, features),
-
-      flipped
-        ? el('div', { class: 'grade-row' },
-            gradeBtn('again', t('grade.again'), previews.AGAIN, srs.GRADE.AGAIN),
-            gradeBtn('hard', t('grade.hard'), previews.HARD, srs.GRADE.HARD),
-            gradeBtn('good', t('grade.good'), previews.GOOD, srs.GRADE.GOOD),
-            gradeBtn('easy', t('grade.easy'), previews.EASY, srs.GRADE.EASY))
-        : el('button', { class: 'btn btn-primary btn-lg full', onclick: () => { flipped = true; draw(); } }, t('study.showAnswer')),
-    ].filter(Boolean));
-
-    if (s.autoPlayAudio && flipped) audio.play(phrase.audio);
-  }
-
-  function gradeBtn(cls, label, preview, quality) {
-    return el('button', { class: `btn btn-grade grade-${cls}`, onclick: () => submit(quality) },
-      el('strong', {}, label), el('span', { class: 'grade-when' }, preview));
-  }
-
-  async function submit(quality) {
-    const card = cards.shift();
-    const updated = await deck.grade(card.id, quality);
-    done++;
-    flipped = false;
-    // A lapsed card comes back at the end of this session, not tomorrow.
-    if (updated && quality < 3) cards.push(updated);
-    draw();
-  }
-
-  async function finish() {
-    document.removeEventListener('keydown', onKey);
-    clear(view);
-    const stats = await deck.todayStats();
-    view.append(el('div', { class: 'empty-state' },
-      el('h1', {}, t('study.done')),
-      el('p', { class: 'lede' }, t('study.doneSummary', { done, total: stats.reviews })),
-      el('button', { class: 'btn btn-primary btn-lg', onclick: () => go('/') }, t('study.backToToday'))));
-  }
-
-  // Keyboard shortcuts — desktop review is much faster with them.
-  const onKey = (e) => {
-    if (!view.isConnected) { document.removeEventListener('keydown', onKey); return; }
-    if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); if (!flipped) { flipped = true; draw(); } }
-    else if (flipped && ['1', '2', '3', '4'].includes(e.key)) {
-      submit([srs.GRADE.AGAIN, srs.GRADE.HARD, srs.GRADE.GOOD, srs.GRADE.EASY][Number(e.key) - 1]);
-    }
-  };
-  document.addEventListener('keydown', onKey);
-
-  draw();
 }
 
 /* ---------- settings ---------- */
@@ -703,8 +609,9 @@ async function settings(root) {
         el('div', { class: 'setting' },
           el('span', {}, el('strong', {}, t('settings.language')), el('span', { class: 'muted small' }, pair)),
           el('a', { class: 'btn btn-small', href: '#/' }, t('settings.changeLanguage'))),
-        features.ruby ? toggle('furigana', features.aids.ruby?.label, features.aids.ruby?.help) : null,
+        features.ruby ? furiganaSetting(s, features) : null,
         features.reading ? toggle('romaji', features.aids.reading?.label, features.aids.reading?.help) : null,
+        directionsSetting(s),
         toggle('autoPlayAudio', t('settings.autoplay'), t('settings.autoplayHelp')),
 
         el('label', { class: 'setting' },
@@ -752,6 +659,49 @@ async function settings(root) {
       }, t('settings.reset'))
     )
   );
+}
+
+/** Furigana: always / tap to show / hidden. Its name and help come from the course's `aids`. */
+function furiganaSetting(s, features) {
+  return el('div', { class: 'setting setting-stack' },
+    el('span', {},
+      el('strong', {}, features.aids.ruby?.label || 'Furigana'),
+      el('span', { class: 'muted small' }, t('settings.furiganaModeHelp'))),
+    el('div', { class: 'segmented furigana-mode', role: 'group' },
+      deck.FURIGANA_MODES.map((mode) =>
+        el('button', {
+          type: 'button',
+          class: s.furiganaMode === mode ? 'segment is-on' : 'segment',
+          'aria-pressed': s.furiganaMode === mode ? 'true' : 'false',
+          dataset: { mode },
+          onclick: async () => { await deck.saveSettings({ furiganaMode: mode }); router(); },
+        }, t(`furigana.${mode}`)))));
+}
+
+/** Card types: recognition, production, listening — at least one stays on. */
+function directionsSetting(s) {
+  const dirs = Object.values(srs.DIR);
+  const row = (dir) => {
+    const input = el('input', { type: 'checkbox', checked: s.directions[dir], dataset: { dir } });
+    input.addEventListener('change', async () => {
+      const next = { ...s.directions, [dir]: input.checked };
+      if (!dirs.some((d) => next[d])) {
+        input.checked = true; // never study nothing
+        toast(t('settings.directionsAtLeastOne'));
+        return;
+      }
+      await deck.saveSettings({ directions: next });
+      const added = await deck.syncDirections();
+      if (added) toast(t('settings.cardsAdded', { n: added }));
+      router();
+    });
+    return el('label', { class: 'setting compact' },
+      el('span', {}, el('strong', {}, t(`dir.${dir}`)), el('span', { class: 'muted small' }, t(`settings.dirHelp.${dir}`))),
+      input);
+  };
+  return el('div', { class: 'setting setting-stack' },
+    el('span', {}, el('strong', {}, t('settings.directions')), el('span', { class: 'muted small' }, t('settings.directionsHelp'))),
+    el('div', { class: 'direction-list' }, dirs.map(row)));
 }
 
 /* ---------- boot ---------- */

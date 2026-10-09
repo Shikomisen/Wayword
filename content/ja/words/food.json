@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "words-food",
+  "title": "Food & Drink",
+  "description": "Meals, what's in them, and the three verbs that go with them: eat, drink, make.",
+  "items": [
+    {
+      "id": "w-gohan",
+      "japanese": "ご飯",
+      "furigana": "ご{飯|はん}",
+      "english": "rice; a meal",
+      "pos": "noun",
+      "usage": "Both cooked rice and \"a meal\" in general.",
+      "audio": "audio/ja/words/w-gohan.mp3",
+      "tags": ["food"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-asagohan",
+      "japanese": "朝ご飯",
+      "furigana": "{朝|あさ}ご{飯|はん}",
+      "english": "breakfast",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-asagohan.mp3",
+      "tags": ["food"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bangohan",
+      "japanese": "晩ご飯",
+      "furigana": "{晩|ばん}ご{飯|はん}",
+      "english": "dinner",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-bangohan.mp3",
+      "tags": ["food"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-mizu",
+      "japanese": "水",
+      "furigana": "{水|みず}",
+      "english": "water",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-mizu.mp3",
+      "tags": ["food"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ocha",
+      "japanese": "お茶",
+      "furigana": "お{茶|ちゃ}",
+      "english": "(green) tea",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-ocha.mp3",
+      "tags": ["food"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-koohii",
+      "japanese": "コーヒー",
+      "furigana": "{コーヒー|こーひー}",
+      "english": "coffee",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-koohii.mp3",
+      "tags": ["food"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-niku",
+      "japanese": "肉",
+      "furigana": "{肉|にく}",
+      "english": "meat",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-niku.mp3",
+      "tags": ["food"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sakana",
+      "japanese": "魚",
+      "furigana": "{魚|さかな}",
+      "english": "fish",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-sakana.mp3",
+      "tags": ["food"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yasai",
+      "japanese": "野菜",
+      "furigana": "{野菜|やさい}",
+      "english": "vegetables",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yasai.mp3",
+      "tags": ["food"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kudamono",
+      "japanese": "果物",
+      "furigana": "{果物|くだもの}",
+      "english": "fruit",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kudamono.mp3",
+      "tags": ["food"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tamago",
+      "japanese": "卵",
+      "furigana": "{卵|たまご}",
+      "english": "egg",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-tamago.mp3",
+      "tags": ["food"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pan",
+      "japanese": "パン",
+      "furigana": "{パン|ぱん}",
+      "english": "bread",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-pan.mp3",
+      "tags": ["food"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-osake",
+      "japanese": "お酒",
+      "furigana": "お{酒|さけ}",
+      "english": "alcohol; sake",
+      "pos": "noun",
+      "usage": "Any alcoholic drink. Japanese sake specifically is 日本酒 (にほんしゅ).",
+      "audio": "audio/ja/words/w-osake.mp3",
+      "tags": ["food"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-amai",
+      "japanese": "甘い",
+      "furigana": "{甘|あま}い",
+      "english": "sweet",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-amai.mp3",
+      "tags": ["food"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-karai",
+      "japanese": "辛い",
+      "furigana": "{辛|から}い",
+      "english": "spicy; salty",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-karai.mp3",
+      "tags": ["food"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-taberu",
+      "japanese": "食べる",
+      "furigana": "{食|た}べる",
+      "english": "to eat",
+      "pos": "verb",
+      "forms": {
+        "masu": "{食|た}べます",
+        "te": "{食|た}べて"
+      },
+      "audio": "audio/ja/words/w-taberu.mp3",
+      "tags": ["food"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-nomu",
+      "japanese": "飲む",
+      "furigana": "{飲|の}む",
+      "english": "to drink",
+      "pos": "verb",
+      "forms": {
+        "masu": "{飲|の}みます",
+        "te": "{飲|の}んで"
+      },
+      "audio": "audio/ja/words/w-nomu.mp3",
+      "tags": ["food"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tsukuru",
+      "japanese": "作る",
+      "furigana": "{作|つく}る",
+      "english": "to make",
+      "pos": "verb",
+      "forms": {
+        "masu": "{作|つく}ります",
+        "te": "{作|つく}って"
+      },
+      "audio": "audio/ja/words/w-tsukuru.mp3",
+      "tags": ["food", "home"],
+      "difficulty": 1
+    }
+  ]
+}

@@ -13,7 +13,7 @@ import { readFileSync, existsSync, statSync, readdirSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as srs from '../js/srs.js';
-import { toSegments, rubyText } from '../js/ruby.js';
+import { toSegments, rubyText, hasKanji } from '../js/ruby.js';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -82,6 +82,10 @@ for (const [code, lang] of Object.entries(registry.languages)) {
 
 // Audio paths must be unique across every course, not just within one.
 const seenAudio = new Set();
+
+// Word decks: the parts of speech and verb forms the interface can name.
+const POS = ['noun', 'verb', 'i-adjective', 'na-adjective', 'adverb', 'pronoun', 'question'];
+const FORMS = ['masu', 'te'];
 
 for (const course of registry.courses.filter((c) => c.manifest && existsSync(resolve(ROOT, c.manifest)))) {
   validateCourse(course);
@@ -169,6 +173,81 @@ function validateCourse(course) {
         check(`${p.id}: audio clip is non-trivial`, statSync(audioPath).size > 800);
       }
     }
+  }
+
+  /* ---------- word and sentence decks ---------- */
+
+  const wordIds = new Set();
+  const chunkRefs = []; // checked once every deck is read: a sentence may use a later deck's word
+  let deckItems = 0;
+  let deckAudio = 0;
+
+  for (const entry of manifest.decks || []) {
+    check(`${entry.id}: deck kind is words or sentences`, ['words', 'sentences'].includes(entry.kind), entry.kind);
+    check(`${entry.id}: deck has a title`, Boolean(entry.title));
+    if (!check(`deck file exists: ${entry.file}`, existsSync(resolve(ROOT, entry.file)))) continue;
+
+    const deck = readJSON(entry.file);
+    check(`${entry.id}: schemaVersion matches`, deck.schemaVersion === manifest.schemaVersion);
+    check(`${entry.id}: id matches manifest`, deck.id === entry.id, `${deck.id} vs ${entry.id}`);
+    check(`${entry.id}: has items`, Array.isArray(deck.items) && deck.items.length > 0);
+
+    for (const item of deck.items || []) {
+      deckItems++;
+      for (const field of ['id', target, fields.meaning, 'audio', 'tags', 'difficulty']) {
+        check(`${item.id}: has ${field}`, item[field] !== undefined && item[field] !== '');
+      }
+      check(`${item.id}: unique id across all content`, !seenIds.has(item.id));
+      seenIds.add(item.id);
+      check(`${item.id}: difficulty in 1-5`, item.difficulty >= 1 && item.difficulty <= 5, String(item.difficulty));
+      check(`${item.id}: tags is a non-empty array`, Array.isArray(item.tags) && item.tags.length > 0);
+      if (item.audioHint !== undefined) check(`${item.id}: audioHint is text`, typeof item.audioHint === 'string' && item.audioHint.length > 0);
+
+      if (fields.ruby) {
+        checkRuby(item.id, item[fields.ruby], item[target]);
+        // Reading is the weak skill this course is built around: no kanji without its reading.
+        if (hasKanji(item[target])) check(`${item.id}: kanji carry furigana`, Boolean(item[fields.ruby]));
+      }
+
+      if (entry.kind === 'words') {
+        wordIds.add(item.id);
+        check(`${item.id}: part of speech is one the interface names`, POS.includes(item.pos), item.pos);
+        if (item.pos === 'verb') check(`${item.id}: verb has its ます and て forms`, FORMS.every((f) => item.forms?.[f]));
+        for (const [key, value] of Object.entries(item.forms || {})) {
+          check(`${item.id}: form "${key}" is one the interface names`, FORMS.includes(key), key);
+          if (fields.ruby) checkRuby(`${item.id}/${key}`, value, rubyText(value));
+          if (hasKanji(rubyText(value))) check(`${item.id}/${key}: kanji carry furigana`, /\{[^|]+\|/.test(value));
+        }
+        if (item.usage !== undefined) check(`${item.id}: usage is non-empty text`, typeof item.usage === 'string' && item.usage.length > 0);
+      } else {
+        check(`${item.id}: register is polite or casual`, ['polite', 'casual'].includes(item.register), item.register);
+        // The chunks are the sentence cut into pieces — together, exactly the sentence.
+        if (check(`${item.id}: has chunks`, Array.isArray(item.chunks) && item.chunks.length > 1)) {
+          const rebuilt = item.chunks.map((c) => rubyText(c.t)).join('');
+          check(`${item.id}: chunks rebuild the sentence`, rebuilt === item[target], `${rebuilt} vs ${item[target]}`);
+          if (fields.ruby) {
+            check(`${item.id}: chunks rebuild the furigana`, item.chunks.map((c) => c.t).join('') === item[fields.ruby]);
+          }
+          for (const c of item.chunks) if (c.w) chunkRefs.push([item.id, c.w]);
+          check(`${item.id}: links at least one word`, item.chunks.some((c) => c.w));
+        }
+      }
+
+      check(`${item.id}: audio path is unique`, !seenAudio.has(item.audio));
+      seenAudio.add(item.audio);
+      check(`${item.id}: audio lives under audio/${course.target}/`, String(item.audio).startsWith(`audio/${course.target}/`), item.audio);
+      const clip = resolve(ROOT, item.audio);
+      if (existsSync(clip)) {
+        deckAudio++;
+        check(`${item.id}: audio clip is non-trivial`, statSync(clip).size > 800);
+      }
+    }
+  }
+  for (const [sentence, word] of chunkRefs) {
+    check(`${sentence}: word ${word} is in a word deck`, wordIds.has(word));
+  }
+  if (deckItems) {
+    console.log(`  ${deckItems} words and sentences, ${deckAudio} with generated audio (${deckItems - deckAudio} pending)`);
   }
 
   /* ---------- character sets ---------- */
@@ -348,6 +427,27 @@ for (const file of readdirSync(resolve(ROOT, 'js')).filter((f) => f.endsWith('.j
   }
 }
 console.log(`  ${Object.keys(uiDicts).join(', ')}: ${enKeys.size} keys, ${literalKeys} uses checked`);
+
+// Keys built at runtime (t(`pos.${…}`)) can't be found by the scan above.
+for (const pos of POS) check(`pos.${pos} has an interface string`, enKeys.has(`pos.${pos}`));
+for (const form of FORMS) check(`forms.${form} has an interface string`, enKeys.has(`forms.${form}`));
+for (const dir of Object.values(srs.DIR)) {
+  check(`dir.${dir} has an interface string`, enKeys.has(`dir.${dir}`));
+  check(`settings.dirHelp.${dir} has an interface string`, enKeys.has(`settings.dirHelp.${dir}`));
+}
+
+/* ---------- service worker ---------- */
+
+console.log('\nService worker');
+
+// Every module the app imports must be in the precached shell, or a cold
+// offline launch fails on the first screen that needs the missing one.
+const swSource = readFileSync(resolve(ROOT, 'sw.js'), 'utf8');
+const shell = new Set([...(swSource.match(/const SHELL = \[([\s\S]*?)\];/)?.[1] || '').matchAll(/'([^']+)'/g)].map((m) => m[1]));
+const modules = readdirSync(resolve(ROOT, 'js')).filter((f) => f.endsWith('.js'));
+for (const file of modules) check(`sw.js precaches js/${file}`, shell.has(`./js/${file}`));
+for (const entry of shell) check(`sw.js shell entry ${entry} exists`, entry === './' || existsSync(resolve(ROOT, entry)));
+console.log(`  ${shell.size} shell files, ${modules.length} modules`);
 
 /* ---------- SRS ---------- */
 

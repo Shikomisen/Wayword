@@ -35,12 +35,16 @@ const SHELL = [
   './js/deck.js',
   './js/home.js',
   './js/i18n.js',
+  './js/mine.js',
   './js/quiz.js',
   './js/characters.js',
   './js/render.js',
+  './js/ruby.js',
   './js/scenario.js',
+  './js/shared.js',
   './js/srs.js',
   './js/store.js',
+  './js/study.js',
   './icons/icon-192.png',
   './icons/icon-512.png',
   './icons/icon-maskable-512.png',
@@ -50,40 +54,35 @@ const SHELL = [
 const fetchJSON = (f) =>
   fetch(`./${f}`, { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
 
+// Every list a course manifest can declare; each entry names a content file.
+const MANIFEST_LISTS = ['categories', 'decks', 'lessons', 'characterSets', 'scenarios'];
+
+/**
+ * Every clip a content file declares, wherever it sits: phrases, a casual
+ * phrase's polite version, words, sentences, lesson examples, characters,
+ * scenario lines — anything with an `audio` path. Walking the whole file
+ * means a new kind of content needs no service-worker edit.
+ */
+function audioIn(node, out) {
+  if (Array.isArray(node)) node.forEach((n) => audioIn(n, out));
+  else if (node && typeof node === 'object') {
+    for (const [key, value] of Object.entries(node)) {
+      if (key === 'audio' && typeof value === 'string') out.push(`./${value}`);
+      else audioIn(value, out);
+    }
+  }
+  return out;
+}
+
 /** Expand one course manifest into every file and clip it references. */
 async function manifestAssets(manifestPath) {
   const assets = [`./${manifestPath}`];
   const manifest = await fetchJSON(manifestPath);
   if (!manifest) throw new Error(`could not read ${manifestPath}`);
 
-  const categoryFiles = (manifest.categories || []).map((c) => c.file);
-  const characterFiles = (manifest.characterSets || []).map((s) => s.file);
-  const scenarioFiles = (manifest.scenarios || []).map((s) => s.file);
-  assets.push(
-    ...categoryFiles.map((f) => `./${f}`),
-    ...characterFiles.map((f) => `./${f}`),
-    ...scenarioFiles.map((f) => `./${f}`)
-  );
-
-  // Phrase clips live inside each category file...
-  for (const cat of await Promise.all(categoryFiles.map(fetchJSON))) {
-    for (const p of cat?.phrases || []) {
-      if (p.audio) assets.push(`./${p.audio}`);
-      if (p.polite?.audio) assets.push(`./${p.polite.audio}`); // a casual phrase's polite version
-    }
-  }
-
-  // ...character clips inside each character set...
-  for (const set of await Promise.all(characterFiles.map(fetchJSON))) {
-    for (const c of set?.characters || []) if (c.audio) assets.push(`./${c.audio}`);
-  }
-
-  // ...and NPC-line clips inside each scenario file.
-  for (const sc of await Promise.all(scenarioFiles.map(fetchJSON))) {
-    for (const node of Object.values(sc?.nodes || {})) {
-      if (node.audio) assets.push(`./${node.audio}`);
-    }
-  }
+  const files = MANIFEST_LISTS.flatMap((list) => (manifest[list] || []).map((entry) => entry.file)).filter(Boolean);
+  assets.push(...files.map((f) => `./${f}`));
+  for (const data of await Promise.all(files.map(fetchJSON))) audioIn(data, assets);
   return assets;
 }
 

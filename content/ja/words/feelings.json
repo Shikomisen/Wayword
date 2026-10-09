@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "words-feelings",
+  "title": "Feelings & Health",
+  "description": "Happy, lonely, tired, worried, unwell — what you need to say how you are, and to ask after someone.",
+  "items": [
+    {
+      "id": "w-ureshii",
+      "japanese": "嬉しい",
+      "furigana": "{嬉|うれ}しい",
+      "english": "happy, glad",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-ureshii.mp3",
+      "tags": ["feelings"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kanashii",
+      "japanese": "悲しい",
+      "furigana": "{悲|かな}しい",
+      "english": "sad",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-kanashii.mp3",
+      "tags": ["feelings"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sabishii",
+      "japanese": "寂しい",
+      "furigana": "{寂|さび}しい",
+      "english": "lonely; to miss someone",
+      "pos": "i-adjective",
+      "usage": "Couples apart say 寂しい — \"I'm lonely without you\".",
+      "audio": "audio/ja/words/w-sabishii.mp3",
+      "tags": ["feelings"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tsukareru",
+      "japanese": "疲れる",
+      "furigana": "{疲|つか}れる",
+      "english": "to get tired",
+      "pos": "verb",
+      "forms": {
+        "masu": "{疲|つか}れます",
+        "te": "{疲|つか}れて"
+      },
+      "usage": "\"I'm tired\" is past tense: 疲れた.",
+      "audio": "audio/ja/words/w-tsukareru.mp3",
+      "tags": ["feelings"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-nemui",
+      "japanese": "眠い",
+      "furigana": "{眠|ねむ}い",
+      "english": "sleepy",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-nemui.mp3",
+      "tags": ["feelings"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-itai",
+      "japanese": "痛い",
+      "furigana": "{痛|いた}い",
+      "english": "painful — \"it hurts\"",
+      "pos": "i-adjective",
+      "usage": "頭が痛い — \"I have a headache\".",
+      "audio": "audio/ja/words/w-itai.mp3",
+      "tags": ["health"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-shinpai",
+      "japanese": "心配",
+      "furigana": "{心配|しんぱい}",
+      "english": "worry",
+      "pos": "noun",
+      "usage": "心配しないで — \"don't worry\".",
+      "audio": "audio/ja/words/w-shinpai.mp3",
+      "tags": ["feelings"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-genki",
+      "japanese": "元気",
+      "furigana": "{元気|げんき}",
+      "english": "well; full of energy",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-genki.mp3",
+      "tags": ["feelings", "health"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kowai",
+      "japanese": "怖い",
+      "furigana": "{怖|こわ}い",
+      "english": "scary; scared",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-kowai.mp3",
+      "tags": ["feelings"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-okoru",
+      "japanese": "怒る",
+      "furigana": "{怒|おこ}る",
+      "english": "to get angry",
+      "pos": "verb",
+      "forms": {
+        "masu": "{怒|おこ}ります",
+        "te": "{怒|おこ}って"
+      },
+      "audio": "audio/ja/words/w-okoru.mp3",
+      "tags": ["feelings"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-warau",
+      "japanese": "笑う",
+      "furigana": "{笑|わら}う",
+      "english": "to laugh; to smile",
+      "pos": "verb",
+      "forms": {
+        "masu": "{笑|わら}います",
+        "te": "{笑|わら}って"
+      },
+      "audio": "audio/ja/words/w-warau.mp3",
+      "tags": ["feelings"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-naku",
+      "japanese": "泣く",
+      "furigana": "{泣|な}く",
+      "english": "to cry",
+      "pos": "verb",
+      "forms": {
+        "masu": "{泣|な}きます",
+        "te": "{泣|な}いて"
+      },
+      "audio": "audio/ja/words/w-naku.mp3",
+      "tags": ["feelings"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kaze",
+      "japanese": "風邪",
+      "furigana": "{風邪|かぜ}",
+      "english": "a cold",
+      "pos": "noun",
+      "usage": "風邪をひく — \"to catch a cold\". Same sound as 風, \"wind\".",
+      "audio": "audio/ja/words/w-kaze.mp3",
+      "tags": ["health"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-netsu",
+      "japanese": "熱",
+      "furigana": "{熱|ねつ}",
+      "english": "fever",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-netsu.mp3",
+      "tags": ["health"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kusuri",
+      "japanese": "薬",
+      "furigana": "{薬|くすり}",
+      "english": "medicine",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kusuri.mp3",
+      "tags": ["health"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-byouin",
+      "japanese": "病院",
+      "furigana": "{病院|びょういん}",
+      "english": "hospital; doctor's",
+      "pos": "noun",
+      "usage": "Also a GP's clinic — 病院に行く is \"to see a doctor\".",
+      "audio": "audio/ja/words/w-byouin.mp3",
+      "tags": ["health"],
+      "difficulty": 1
+    }
+  ]
+}

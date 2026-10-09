@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "words-weather",
+  "title": "Weather & Seasons",
+  "description": "The safest small talk there is.",
+  "items": [
+    {
+      "id": "w-tenki",
+      "japanese": "天気",
+      "furigana": "{天気|てんき}",
+      "english": "weather",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-tenki.mp3",
+      "tags": ["weather"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ame",
+      "japanese": "雨",
+      "furigana": "{雨|あめ}",
+      "audioHint": "雨",
+      "english": "rain",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-ame.mp3",
+      "tags": ["weather"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yuki",
+      "japanese": "雪",
+      "furigana": "{雪|ゆき}",
+      "english": "snow",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yuki.mp3",
+      "tags": ["weather"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hare",
+      "japanese": "晴れ",
+      "furigana": "{晴|は}れ",
+      "english": "sunny, clear skies",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hare.mp3",
+      "tags": ["weather"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-atsui",
+      "japanese": "暑い",
+      "furigana": "{暑|あつ}い",
+      "english": "hot (weather)",
+      "pos": "i-adjective",
+      "usage": "Hot to the touch is 熱い — same sound, different kanji.",
+      "audio": "audio/ja/words/w-atsui.mp3",
+      "tags": ["weather"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-samui",
+      "japanese": "寒い",
+      "furigana": "{寒|さむ}い",
+      "english": "cold (weather)",
+      "pos": "i-adjective",
+      "usage": "Cold to the touch is 冷たい (つめたい).",
+      "audio": "audio/ja/words/w-samui.mp3",
+      "tags": ["weather"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-atatakai",
+      "japanese": "暖かい",
+      "furigana": "{暖|あたた}かい",
+      "english": "warm",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-atatakai.mp3",
+      "tags": ["weather"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-suzushii",
+      "japanese": "涼しい",
+      "furigana": "{涼|すず}しい",
+      "english": "cool, pleasantly cool",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-suzushii.mp3",
+      "tags": ["weather"],
+      "difficulty": 2
+    },
+    {
+      "id": "w-haru",
+      "japanese": "春",
+      "furigana": "{春|はる}",
+      "audioHint": "春",
+      "english": "spring",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-haru.mp3",
+      "tags": ["seasons"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-natsu",
+      "japanese": "夏",
+      "furigana": "{夏|なつ}",
+      "english": "summer",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-natsu.mp3",
+      "tags": ["seasons"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-aki",
+      "japanese": "秋",
+      "furigana": "{秋|あき}",
+      "audioHint": "秋",
+      "english": "autumn",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-aki.mp3",
+      "tags": ["seasons"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-fuyu",
+      "japanese": "冬",
+      "furigana": "{冬|ふゆ}",
+      "english": "winter",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-fuyu.mp3",
+      "tags": ["seasons"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kasa",
+      "japanese": "傘",
+      "furigana": "{傘|かさ}",
+      "audioHint": "傘",
+      "english": "umbrella",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kasa.mp3",
+      "tags": ["weather"],
+      "difficulty": 1
+    },
+    {
+      "id": "w-furu",
+      "japanese": "降る",
+      "furigana": "{降|ふ}る",
+      "english": "to fall (rain, snow)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{降|ふ}ります",
+        "te": "{降|ふ}って"
+      },
+      "usage": "雨が降る — \"it rains\".",
+      "audio": "audio/ja/words/w-furu.mp3",
+      "tags": ["weather"],
+      "difficulty": 2
+    }
+  ]
+}

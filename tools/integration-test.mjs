@@ -87,14 +87,14 @@ const charItems = items.filter((i) => i.kind === 'character');
 
 check('quiz pulls two phrase cards per category (§6a, A5)',
   phraseItems.length === 2 * content.categories.length, `${phraseItems.length} phrase cards`);
-check('quiz also samples a few characters',
-  charItems.length >= 4 && charItems.length <= 8, `${charItems.length} character cards`);
+check('quiz also samples two characters per set',
+  charItems.length === 2 * content.characterSets.length, `${charItems.length} character cards`);
 
 const covered = new Set(phraseItems.map((i) => i.categoryId));
 check('quiz spans every phrase category', covered.size === content.categories.length, `${covered.size} covered`);
 
 const charCovered = new Set(charItems.map((i) => i.categoryId));
-check('quiz spans all 3 character sets', charCovered.size === 3, [...charCovered].join(', '));
+check('quiz spans every character set', charCovered.size === content.characterSets.length, [...charCovered].join(', '));
 
 check('quiz samples both ends of each category',
   content.categories.every((cat) => {
@@ -131,16 +131,20 @@ check('onboarding gate now passes', await deck.isOnboarded());
 console.log('\n3. Deck seeding (§7 — starter categories only)');
 
 const settings = await deck.getSettings();
-const starters = content.categories.filter((c) => c.starter);
-check('only the starter categories are activated',
+// Starters are phrase categories and word/sentence decks alike.
+const everyDeck = [...content.categories, ...content.decks];
+const starters = everyDeck.filter((c) => c.starter);
+check('only the starter decks are activated',
   [...settings.activeCategories].sort().join(',') === starters.map((c) => c.id).sort().join(','),
   settings.activeCategories.join(', '));
-check('starters are a handful, not everything', starters.length >= 2 && starters.length < content.categories.length,
+check('starters are a handful, not everything', starters.length >= 2 && starters.length < everyDeck.length,
   starters.map((c) => c.id).join(', '));
+check('a new learner starts with words as well as phrases',
+  starters.some((d) => d.type === 'words') && starters.some((d) => d.type === 'phrases'));
 
 const allCards = await deck.getDeck();
-const starterPhrases = starters.reduce((n, c) => n + c.phrases.length, 0);
-check('deck populated from the starter categories', allCards.length >= starterPhrases, `${allCards.length} cards`);
+const starterItems = starters.reduce((n, c) => n + c.items.length, 0);
+check('deck populated from the starter decks', allCards.length >= starterItems, `${allCards.length} cards`);
 
 const knownGreeting = items.find((i) => i.categoryId === 'greetings');
 const seededCard = await deck.getCard(knownGreeting.id);
@@ -251,17 +255,23 @@ check('scenarios resolve by category', shoppingScenarios.length === 1 && shoppin
 
 console.log('\n8. Characters — separate deck');
 
-check('three character sets load', content.characterSets.length === 3,
+check('every character set loads',
+  content.characterSets.length === content.manifest.characterSets.length && content.characterSets.every((s) => !s.missing),
   content.characterSets.map((s) => `${s.id}:${s.characters.length}`).join(' '));
 
 const hira = content.bySet.get('hiragana');
 const kata = content.bySet.get('katakana');
 const kanji = content.bySet.get('kanji-common');
+const kanjiWords = content.bySet.get('kanji-words');
 
 check('hiragana has the full functional set', hira.characters.length === 104, `${hira.characters.length}`);
 check('katakana has the full functional set', kata.characters.length === 116, `${kata.characters.length}`);
 check('kanji set is curated, not exhaustive',
   kanji.characters.length >= 60 && kanji.characters.length <= 120, `${kanji.characters.length} kanji`);
+check('the word decks have a kanji set of their own', kanjiWords?.characters.length >= 50,
+  `${kanjiWords?.characters.length} kanji`);
+check('…every one of which appears in a word', kanjiWords.characters.every((c) =>
+  (c.seenIn || []).some((id) => content.phrases.get(id)?.kind === 'word')));
 
 check('hiragana covers the 46 base characters',
   hira.characters.filter((c) => c.group === 'base').length === 46);
@@ -282,7 +292,8 @@ check('kanji cross-reference existing phrase content', withRefs.length >= 25,
 check('every cross-reference resolves to a real phrase',
   withRefs.every((c) => c.seenIn.every((id) => content.phrases.has(id))));
 check('cross-references are accurate — the phrase really contains the character',
-  withRefs.every((c) => c.seenIn.every((id) => content.phrases.get(id).japanese.includes(c.character))));
+  [...withRefs, ...kanjiWords.characters].every((c) =>
+    c.seenIn.every((id) => content.phrases.get(id).japanese.includes(c.character))));
 
 // Deck separation.
 const phraseQueueBefore = (await deck.queue()).length;
@@ -336,9 +347,130 @@ check('a second set queues independently',
   kanjiQueue.length > 0 && kanjiQueue.every((c) => c.categoryId === 'kanji-common'),
   `${kanjiQueue.length} kanji cards`);
 
-/* ---------- 9. a second course ---------- */
+/* ---------- 9. words, sentences and card directions ---------- */
 
-console.log('\n9. Second course — English for Japanese speakers (ja-en)');
+console.log('\n9. Words, sentences, card directions, your own words');
+
+check('word and sentence decks load',
+  content.decks.length === content.manifest.decks.length && content.decks.every((d) => !d.missing && d.items.length > 0),
+  `${content.decks.length} decks, ${content.decks.reduce((n, d) => n + d.items.length, 0)} items`);
+check('the course knows it has words and sentences', content.features.words && content.features.sentences);
+
+const iku = content.phrases.get('w-iku');
+check('a word gets the same generic fields as a phrase',
+  iku?.kind === 'word' && iku.target === '行く' && Boolean(iku.meaning) && iku.ruby?.[0]?.r === 'い',
+  `${iku?.target} = ${iku?.meaning}`);
+check('a verb carries its ます and て forms, each with furigana',
+  iku.forms?.map((f) => f.key).join(',') === 'masu,te' && iku.forms.every((f) => f.target && f.ruby?.some((s) => s.r)),
+  iku.forms?.map((f) => f.target).join(' · '));
+check('katakana words carry a hiragana reading aid', content.phrases.get('w-koohii')?.ruby?.[0]?.r === 'こーひー');
+
+const s01 = content.phrases.get('s-01');
+check('a sentence is cut into chunks that rebuild it',
+  s01?.kind === 'sentence' && s01.chunks.map((c) => c.target).join('') === s01.target,
+  s01?.chunks.map((c) => c.target).join(' | '));
+check('…each linked chunk naming a real word', s01.chunks.every((c) => !c.w || content.phrases.get(c.w)?.kind === 'word'));
+check('each word knows the sentences it appears in', (content.usage.get('w-tomodachi') || []).includes('s-01'),
+  (content.usage.get('w-tomodachi') || []).join(', '));
+
+// Directions.
+const startSettings = await deck.getSettings();
+check('recognition and production are on by default, listening off',
+  startSettings.directions.recognition && startSettings.directions.production && !startSettings.directions.listening);
+
+const cardsNow = await deck.getDeck();
+const peopleDeck = content.byCategory.get('words-people');
+check('each word gets a recognition and a production card',
+  peopleDeck.items.every((w) => cardsNow.some((c) => c.id === w.id) &&
+    cardsNow.some((c) => c.id === `${w.id}~p` && c.dir === 'production' && c.itemId === w.id)),
+  `${cardsNow.filter((c) => c.categoryId === 'words-people').length} cards for ${peopleDeck.items.length} words`);
+check('…and no listening card while listening is off', !cardsNow.some((c) => srs.dirOf(c) === srs.DIR.LISTENING));
+
+// The sibling rule, end to end: with no daily cap in the way, a deck's queue
+// offers a new production card only once its recognition card has been seen.
+await deck.saveSettings({ newPerDay: 1000 });
+const recognitionState = (cards) =>
+  new Map(cards.filter((c) => srs.dirOf(c) === srs.DIR.RECOGNITION).map((c) => [srs.itemIdOf(c), c.state]));
+const verbsBefore = await deck.queue('words-verbs');
+const statesBefore = recognitionState(await deck.getDeck());
+check('a new production card waits for its recognition card',
+  verbsBefore.length > 0 && verbsBefore.every((c) =>
+    srs.dirOf(c) !== srs.DIR.PRODUCTION || c.state !== 'new' || statesBefore.get(srs.itemIdOf(c)) !== 'new'),
+  `${verbsBefore.length} cards offered`);
+const firstVerb = verbsBefore.find((c) => srs.dirOf(c) === srs.DIR.RECOGNITION && c.state === 'new');
+await deck.grade(firstVerb.id, srs.GRADE.GOOD);
+check('…and is offered once the word has been seen',
+  (await deck.queue('words-verbs')).some((c) => c.id === srs.cardId(firstVerb.itemId, srs.DIR.PRODUCTION)),
+  firstVerb.itemId);
+
+// With recognition switched off there is nothing to wait for.
+await deck.saveSettings({ directions: { recognition: false, production: true, listening: false } });
+const foodAdded = await deck.activateCategory('words-food');
+const productionOnly = await deck.queue('words-food');
+check('with recognition off, a deck is added as production cards only',
+  foodAdded.added === content.byCategory.get('words-food').items.length, `+${foodAdded.added}`);
+check('…and they are offered straight away rather than waiting forever',
+  productionOnly.length === foodAdded.added && productionOnly.every((c) => srs.dirOf(c) === srs.DIR.PRODUCTION),
+  `${productionOnly.length} offered`);
+await deck.saveSettings({ directions: { recognition: true, production: true, listening: false } });
+check('switching recognition back on adds the missing recognition cards',
+  (await deck.syncDirections()) === foodAdded.added);
+await deck.saveSettings({ newPerDay: startSettings.newPerDay });
+
+// Listening on: every active item with audio gains a listening card.
+await deck.saveSettings({ directions: { recognition: true, production: true, listening: true } });
+const addedListening = await deck.syncDirections();
+const activeItems = (await deck.getSettings()).activeCategories.flatMap((id) => content.byCategory.get(id)?.items || []);
+check('switching listening on adds a card for every active item with audio',
+  addedListening > 0 && addedListening === activeItems.filter((i) => deck.hasAudio(i)).length, `+${addedListening}`);
+check('…and syncing again adds nothing', (await deck.syncDirections()) === 0);
+
+// "I can read this".
+const { furiganaMode } = await import('../js/render.js');
+await deck.setReadable('w-iku', true);
+const withReadable = { ...(await deck.getSettings()), readable: await deck.getReadable() };
+check('"I can read this" drops one item\'s furigana to tap-to-show',
+  furiganaMode(withReadable, iku) === 'tap' && furiganaMode(withReadable, content.phrases.get('w-miru')) === 'always');
+check('…unless furigana is hidden altogether', furiganaMode({ ...withReadable, furiganaMode: 'hidden' }, iku) === 'hidden');
+await deck.setReadable('w-iku', false);
+check('…and unmarking it brings the furigana back', !(await deck.getReadable()).has('w-iku'));
+
+// Your own words.
+const { USER_DECK } = await import('../js/content.js');
+await deck.saveUserItem({
+  id: 'u-test', kind: 'sentence', target: '今日は暑いね', reading: 'きょうはあついね',
+  furigana: '{今日|きょう}は{暑|あつ}いね', meaning: 'Hot today, isn\'t it', note: 'Every summer morning', audioMode: 'none',
+});
+const withMine = await loadContent();
+check('your own sentence joins the content as the "mine" deck',
+  withMine.phrases.get('u-test')?.source === 'user' && withMine.byCategory.get(USER_DECK).items.length === 1);
+check('…its furigana is parsed like any other', withMine.phrases.get('u-test').ruby?.[0]?.r === 'きょう');
+check('…the deck is switched on by the first add', (await deck.getSettings()).activeCategories.includes(USER_DECK));
+check('…it gets recognition and production cards',
+  Boolean(await deck.getCard('u-test')) && Boolean(await deck.getCard('u-test~p')));
+check('…but no listening card: it has no audio', !(await deck.getCard('u-test~l')));
+await deck.setRecording('u-test', 'data:audio/webm;base64,AAAA');
+await deck.saveUserItem({ id: 'u-test', audioMode: 'recording' });
+check('recording it adds the listening card', Boolean(await deck.getCard('u-test~l')));
+check('the recording is kept with the course', (await deck.getRecording('u-test')) === 'data:audio/webm;base64,AAAA');
+await deck.setRecording('u-test', null);
+await deck.saveUserItem({ id: 'u-test', audioMode: 'none' });
+check('removing the audio removes the listening card again', !(await deck.getCard('u-test~l')));
+check('your own words are studied like any other deck', (await deck.queue(USER_DECK)).some((c) => c.id === 'u-test'));
+await deck.deleteUserItem('u-test');
+check('deleting one removes its cards and recording',
+  !(await deck.getCard('u-test')) && !(await deck.getCard('u-test~p')) && !(await deck.getRecording('u-test')));
+check('…and it leaves the content', !(await loadContent()).phrases.has('u-test'));
+
+// Listening off again: its cards are parked, not deleted.
+await deck.saveSettings({ directions: { recognition: true, production: true, listening: false } });
+check('switching listening off parks its cards rather than deleting them',
+  (await deck.queue()).every((c) => srs.dirOf(c) !== srs.DIR.LISTENING) &&
+  (await deck.getDeck()).some((c) => srs.dirOf(c) === srs.DIR.LISTENING));
+
+/* ---------- 10. a second course ---------- */
+
+console.log('\n10. Second course — English for Japanese speakers (ja-en)');
 
 const course = await import('../js/course.js');
 const store = await import('../js/store.js');
@@ -363,8 +495,8 @@ check('the meaning is Japanese', wake.meaning.includes('モーニングコール
 check('English carries no furigana or romaji', wake.ruby === null && wake.reading === null);
 check('notes use this course\'s own labels', wake.notes.map((n) => n.label).join(',') === '使い方,よくある間違い',
   wake.notes.map((n) => n.label).join(', '));
-check('features: scenarios yes; characters, furigana, romaji no',
-  en.features.scenarios && !en.features.characters && !en.features.ruby && !en.features.reading);
+check('features: scenarios yes; characters, furigana, romaji, word decks no',
+  en.features.scenarios && !en.features.characters && !en.features.ruby && !en.features.reading && !en.features.words);
 check('a course nobody has opened is not onboarded', !(await deck.isOnboarded()));
 check('…and starts with an empty deck', (await deck.getDeck()).length === 0);
 

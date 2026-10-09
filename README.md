@@ -148,7 +148,8 @@ launch without code changes:
 ## 4. Learning Experience
 
 1. **Onboarding placement quiz** — see §6a, runs once at first launch.
-2. **Flashcards + SRS** — core daily loop.
+2. **Flashcards + SRS** — core daily loop: words, sentences, phrases and your
+   own words, each asked three ways — see it, say it, hear it (§14).
 3. **Scenario dialogue trees** — full exchanges, not isolated phrases.
 
 *(Live AI chat is a future pillar — see §9.)*
@@ -168,6 +169,12 @@ launch without code changes:
 ---
 
 ## 6. Content Scope
+
+**Words first.** Twelve word decks (197 words: people, time, everyday verbs,
+the little words, home, food, describing things, feelings, places, weather,
+work and study, free time) and a deck of everyday sentences built from them —
+see §14. Placement starts a new learner on three word decks and the sentences
+as well as the phrase basics.
 
 **Register.** Every phrase is labelled **Polite** or **Casual** on screen.
 The phrase categories are polite (です/ます) throughout — consistent and
@@ -201,6 +208,8 @@ casual, and reading lags behind listening.
 Calibration (offline, no AI call needed):
 - On first entering a course, a short placement quiz pulls two sample cards
   from every phrase category (22 for Japanese), plus two per character set.
+  Word and sentence decks aren't sampled: they are new material, and the
+  starter ones simply begin from the first card.
 - Self-graded ("did you know this?") rather than typed-answer, to keep
   it fast.
 - Known cards get inserted into the SRS deck at a later starting
@@ -271,6 +280,7 @@ same versioned-schema rules as §3a):
 |---|---|---|---|
 | Hiragana | `content/ja/hiragana.json` | 104 | 46 base + 25 dakuten/handakuten + 33 yōon |
 | Katakana | `content/ja/katakana.json` | 116 | same structure, plus 12 extended combos (ファ, ティ, ジェ…) for loanwords |
+| Kanji in Your Words | `content/ja/kanji-words.json` | 70 | the kanji behind the word decks (人, 今, 食, 話, 電…), grouped like them |
 | Common Kanji | `content/ja/kanji-common.json` | 82 | curated for everyday reading, not exhaustive |
 
 Kanji covers numbers and money, the seven day kanji and time, wayfinding
@@ -284,14 +294,18 @@ them off a sign.
 grid placement, `difficulty` and `tags`. Kanji additionally carry `seenIn`,
 a generated list of phrase IDs containing that character.
 
-**Cross-reinforcement.** `tools/crossref-kanji.mjs` scans the phrase content
-and links each kanji to the phrases it appears in — 38 of 82 currently. The
-kanji list shows those phrases as tappable chips, so the Characters section
-reinforces the phrase deck rather than sitting beside it as a second
-disconnected vocabulary list.
+**Cross-reinforcement.** `tools/crossref-kanji.mjs` scans the words,
+sentences and phrases and links each kanji to the ones it appears in — words
+first, since 行く is the most direct place to meet 行. Every one of the 70
+kanji in *Kanji in Your Words* is linked, and 40 of the 82 common ones. The
+kanji list shows those as tappable chips, so the Characters section
+reinforces the decks rather than sitting beside them as a second
+disconnected vocabulary list. The same tool lists the kanji the word decks
+use that no set teaches yet (about 110 today) — the to-do list for growing
+the kanji sets.
 
 **Reuse, not a parallel system:**
-- Audio comes from the same build-time pass as §3-audio — 302 bundled clips,
+- Audio comes from the same build-time pass as §3-audio — 372 bundled clips,
   no live TTS. Kanji clips are synthesised from the kana reading, not the glyph.
 - Review is the same SM-2 scheduler and the same flashcard UI as phrases.
   Character content is stored phrase-shaped, so the review screen needed no
@@ -303,7 +317,7 @@ their own queue, their own daily new-card cap, and their own review counter.
 Character reviews never appear in phrase review counts, in either direction.
 
 **Onboarding.** The placement quiz (§6a) samples two characters from each set
-alongside the phrase cards — 28 items total for Japanese. Prior exposure to written Japanese
+alongside the phrase cards — 30 items total for Japanese. Prior exposure to written Japanese
 is credited exactly the way phrase knowledge is: known characters seed forward
 instead of starting from あ.
 
@@ -323,7 +337,7 @@ dev-only tools for the test suites: jsdom and puppeteer-core.
 
 ```bash
 npm start                 # dev server on :5173, also prints your LAN URL for phone testing
-npm test                  # every course's content + UI-string coverage + SRS + end-to-end logic (11,000+ checks)
+npm test                  # every course's content + UI-string coverage + SRS + end-to-end logic (19,000+ checks)
 npm run test:render       # renders every screen in both courses + service worker checks (jsdom)
 npm run test:browser      # the real app in Firefox: service worker, full precache, every tab, offline
 npm run test:sw           # service worker registration regression tests
@@ -400,7 +414,7 @@ page in that language. Inside a course, a slim bar at the top
 
 | Course | id | Status | Content |
 |---|---|---|---|
-| Japanese, for English speakers | `en-ja` | available | `content/ja/` — 187 phrases (incl. 39 casual) + 302 characters, 6 scenarios |
+| Japanese, for English speakers | `en-ja` | available | `content/ja/` — 197 words, 16 sentences, 187 phrases (incl. 39 casual), 372 characters, 6 scenarios |
 | English, for Japanese speakers | `ja-en` | available | `content/en/` — 104 phrases, 10 categories, 6 scenarios |
 | Indonesian, for English speakers | `en-id` | planned | placeholder screen only |
 | Indonesian, for Japanese speakers | `ja-id` | planned | placeholder screen only |
@@ -465,3 +479,73 @@ A new *speaker* language (people learning *from* it) additionally needs
 `tools/language-pack-test.mjs` (part of `npm test`) proves the claim: it adds
 a made-up Esperanto course purely as content and runs placement, the deck,
 review and grading over it.
+
+---
+
+## 14. Words, sentences and how cards are asked (added with the repositioning)
+
+The tab that was *Browse* is now **Learn**: word decks, sentence decks, the
+phrase categories, and your own words, in that order.
+
+**Word decks** (`content/ja/words/*.json`, 12 decks, 197 words). Each word has
+its meaning, part of speech, a usage note where one helps (あなた is best
+avoided to someone's face; 彼女 is both "she" and "girlfriend"), and — for
+verbs — its ます and て forms, because those are what get chained into
+sentences. Every kanji carries furigana, written inline as `{行|い}く`.
+Katakana words carry a hiragana reading aid (`{コーヒー|こーひー}`) while
+katakana is still being learned. New content has no romaji: furigana is the
+reading aid from here on.
+
+**Sentence decks** (`content/ja/sentences/everyday.json`, 16 sentences).
+Short, natural sentences built from the word decks, each cut into `chunks`
+that name the word they use by id. A sentence card lists its words (tap one
+to go to its deck); a word card lists the sentences it appears in. The chunks
+are also what the sentence-building drills reorder.
+
+**Kanji in Your Words** (`content/ja/kanji-words.json`, 70 kanji). The kanji
+behind the word decks, as flashcards in the Characters section — see §11.
+
+**Card types.** Every word, sentence, phrase and your-own card can be asked
+three ways (Settings → *Card types*):
+
+| Card type | Front | Back | Default |
+|---|---|---|---|
+| Recognise | the Japanese (with furigana per the setting) and its audio | meaning, notes, word details | on |
+| Say it | the meaning — *How do you say this in Japanese?* | the Japanese, played aloud | on |
+| Listen | the audio only, played as the card appears | what was said and what it means | off |
+
+Each type is its own SM-2 card (`w-iku`, `w-iku~p`, `w-iku~l`), so knowing a
+word when you see it and being able to say it are scheduled separately. A new
+*Say it* or *Listen* card waits until you've seen the word's *Recognise* card,
+so one word never arrives three ways on the same day (unless Recognise is
+switched off, in which case nothing waits). Switching a type on adds its
+cards for every deck you've added, as new cards paced by the daily cap;
+switching it off parks them without deleting them. Characters are only ever
+asked one way.
+
+**Furigana fades.** Furigana has three modes — *Always*, *Tap to show* (the
+reading is there but invisible until you tap the word) and *Hidden* — set in
+Settings or cycled from the ふりがな chip above any deck or card. On the back
+of a card, **I can read this** marks that one item as readable: its furigana
+then drops from *Always* to *Tap to show*, everywhere it appears, so the
+readings fade card by card as your reading improves.
+
+**Your own words** (Learn → *Your own words*). Add anything you want to learn
+— what your partner said at dinner, a word you looked up: the Japanese
+(readings can be typed inline as `{漢字|かんじ}`), an optional kana reading
+(turned into furigana), the meaning and a note. Audio, where possible:
+
+- **the device's own voice** for Japanese, if the device has one that runs on
+  the device itself — checked when you add the card, and used to say it;
+- **a recording** you make on the spot, of yourself or of whoever said it;
+- otherwise the card is marked **No audio**, plainly, and gets no *Listen* card.
+
+Nothing is sent to an online speech service (§8). Your own words are stored
+with the course's progress, recordings included.
+
+**Adding a word or sentence deck** is content only: a file shaped like
+`content/ja/words/people.json` and one entry under `decks` in the manifest
+(`kind`: `words` or `sentences`; `starter: true` to have placement add it).
+Then `npm run audio` and `npm run crossref`. `npm test` checks every word
+has a known part of speech, every verb its forms, every kanji its furigana,
+every sentence chunks that rebuild it exactly, and every chunk a real word.

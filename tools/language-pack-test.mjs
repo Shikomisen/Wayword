@@ -117,7 +117,10 @@ check('its cards are stored apart from every other course', [...mem.keys()].some
   ![...mem.keys()].some((k) => k.startsWith('nt:')));
 
 const snap = await deck.courseSnapshot('en-eo');
-check('the home page can read its progress', snap.onboarded && snap.total === 3, JSON.stringify(snap));
+// Three items, each studied both ways by default: recognise it, and say it.
+check('the home page can read its progress', snap.onboarded && snap.total === 3 * 2, JSON.stringify(snap));
+check('"say it" cards wait until their item has been met once',
+  (await deck.queue()).every((c) => c.state !== 'new' || c.dir !== 'production' || c.itemId === queue[0].itemId));
 
 console.log(failures ? `\n✗ ${failures} of ${checks} language-pack checks failed\n`
   : `\n✓ all ${checks} language-pack checks passed — a new language needed no code\n`);
