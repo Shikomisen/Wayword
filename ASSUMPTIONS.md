@@ -1314,3 +1314,31 @@ casual is what you *say* to a partner. So:
     credential.username=…`): `DEPLOY_GIT_USER` if set, else git's own
     setting, else the repository's owner. No config file is changed.
   - A failed push now explains itself instead of printing a stack trace.
+
+### A76 — The live check found a hole in the install: fixed, and shipped as v7
+- **Deployed as v6** (`c5b4b71..35ecfac`, live in 122 s). The browser check
+  against the live site then passed 29 of 31.
+  - One clip, `audio/en/res-04.mp3`, wasn't in the cache, so it failed
+    offline. The file itself was fine (served 200, 18,048 bytes).
+- **Cause:** the install sent all ~1,100 requests at once and skipped any
+  that failed, so a single dropped request meant a file missing offline
+  until it was next used online. Locally every request succeeds, which is
+  why only the live check could catch it.
+  - It's worse than one clip: a test run of the old worker on a flaky
+    connection left out `js/app.js`, so offline the app wouldn't start at
+    all.
+- **Fix:**
+  - The install now caches a dozen files at a time and retries failures
+    twice, after a pause.
+  - Whatever is still missing is reported, and the install still completes.
+  - The cache version moved to **v7**, so every copy — including any v6
+    copy with gaps — installs again.
+- **Tested where it can't be missed.** `tools/sw-test.mjs` (part of every
+  deploy) now runs the real sw.js in a sandbox over a connection where one
+  request in ten fails the first time. It checks:
+  - all 1,143 files end up cached;
+  - the failed ones are retried;
+  - nothing is reported missing;
+  - a truly missing file is given up on after three tries without failing
+    the install.
+  The old worker fails this test, and the new one passes it.

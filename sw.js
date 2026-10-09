@@ -13,7 +13,7 @@
  *                         under a given cache version)
  */
 
-const CACHE_VERSION = 'v6';
+const CACHE_VERSION = 'v7';
 const CACHE_PREFIX = 'wayword-';
 const CACHE = `${CACHE_PREFIX}${CACHE_VERSION}`;
 
@@ -114,15 +114,39 @@ async function contentAssets() {
   return [...new Set(assets)];
 }
 
-/** addAll() rejects the whole batch if any single request 404s. */
-async function cacheAllTolerant(cache, urls) {
-  await Promise.all(
-    urls.map((url) =>
-      cache.add(new Request(url, { cache: 'reload' })).catch(() => {
-        /* a missing clip must not fail the install */
-      })
-    )
-  );
+/**
+ * Cache every URL, a few at a time, retrying the ones that fail.
+ *
+ * addAll() rejects the whole batch if a single request fails — and over a
+ * thousand files on a phone's connection, the odd one failing is normal.
+ * (The first deploy of v6 installed with one clip missing for exactly that
+ * reason: every request went out at once, and one dropped.) So requests go
+ * out a dozen at a time, and failures get two more tries after a pause.
+ * Anything still missing is skipped rather than failing the install — the
+ * fetch handler caches it the first time it's used online — and reported.
+ * Returns what couldn't be cached.
+ */
+async function cacheAllTolerant(cache, urls, { concurrency = 12, attempts = 3, pause = 1500 } = {}) {
+  let pending = [...new Set(urls)];
+  for (let attempt = 1; attempt <= attempts && pending.length; attempt++) {
+    if (attempt > 1) await new Promise((resolve) => setTimeout(resolve, pause * (attempt - 1)));
+    const failed = [];
+    let next = 0;
+    const worker = async () => {
+      while (next < pending.length) {
+        const url = pending[next++];
+        try {
+          await cache.add(new Request(url, { cache: 'reload' }));
+        } catch {
+          failed.push(url);
+        }
+      }
+    };
+    await Promise.all(Array.from({ length: Math.min(concurrency, pending.length) }, worker));
+    pending = failed;
+  }
+  if (pending.length) console.warn(`[sw] ${pending.length} file(s) could not be cached`, pending.slice(0, 10));
+  return pending;
 }
 
 self.addEventListener('install', (event) => {
