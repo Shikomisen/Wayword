@@ -6,6 +6,7 @@
  */
 
 import { t } from './i18n.js';
+import { toSegments } from './ruby.js';
 
 export function el(tag, attrs = {}, ...children) {
   const node = document.createElement(tag);
@@ -64,21 +65,44 @@ export function targetNode(item, { furigana = 'always' } = {}) {
     }
   }
 
-  if (mode === 'tap') {
-    // The readings are there but invisible until asked for. The tap is
-    // swallowed so it doesn't also flip a flashcard.
-    wrap.classList.add('furi-tap');
-    wrap.setAttribute('role', 'button');
-    wrap.setAttribute('tabindex', '0');
-    wrap.setAttribute('aria-label', t('furigana.reveal'));
-    const reveal = (e) => {
-      e.stopPropagation();
-      wrap.classList.toggle('revealed');
-    };
-    wrap.addEventListener('click', reveal);
-    wrap.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); reveal(e); } });
-  }
+  if (mode === 'tap') tapToReveal(wrap);
   return wrap;
+}
+
+/**
+ * Tap-to-show furigana: the readings inside `node` are there but invisible
+ * until it is tapped. The tap is swallowed so it doesn't also flip a flashcard.
+ */
+export function tapToReveal(node) {
+  node.classList.add('furi-tap');
+  node.setAttribute('role', 'button');
+  node.setAttribute('tabindex', '0');
+  node.setAttribute('aria-label', t('furigana.reveal'));
+  const reveal = (e) => {
+    e.stopPropagation();
+    node.classList.toggle('revealed');
+  };
+  node.addEventListener('click', reveal);
+  node.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); reveal(e); } });
+  return node;
+}
+
+/**
+ * Prose with Japanese in it — a lesson's explanation — where kanji carry
+ * their reading as {漢字|かんじ}. The readings follow the furigana mode;
+ * tap-to-show reveals a whole paragraph at once.
+ */
+export function proseNode(text, { furigana = 'always', tag = 'p', className = 'prose' } = {}) {
+  const node = el(tag, { class: className });
+  for (const seg of toSegments(text) || []) {
+    if (seg.r && furigana !== 'hidden') {
+      node.append(el('ruby', { lang: 'ja' }, seg.b, el('rp', {}, '('), el('rt', {}, seg.r), el('rp', {}, ')')));
+    } else {
+      node.append(document.createTextNode(seg.b));
+    }
+  }
+  if (furigana === 'tap' && node.querySelector('ruby')) tapToReveal(node);
+  return node;
 }
 
 /**

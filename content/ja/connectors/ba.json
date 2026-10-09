@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "con-ba",
+  "connector": "ば",
+  "gloss": "if (what it takes)",
+  "title": "ば — if (what it takes)",
+  "pattern": "ば form、B",
+  "explanation": "The ば form puts the weight on the condition: if — and only if — A, then B. Verbs change their last sound to the え row and add ば: {行|い}く → {行|い}けば, {食|た}べる → {食|た}べれば, する → すれば, {来|く}る → {来|く}れば. い-adjectives: {安|やす}い → {安|やす}ければ. It’s at home in advice and in \"what it takes\": {早|はや}く{寝|ね}れば、{元気|げんき}になる.",
+  "natural": "Asking for and giving advice: どうすればいい？ (what should I do?), {聞|き}けばいいよ (just ask).",
+  "stiff": "When a request or invitation follows, たら sounds more natural in conversation: {着|つ}いたら{電話|でんわ}して, not {着|つ}けば{電話|でんわ}して.",
+  "examples": [
+    {
+      "id": "cx-ba-1",
+      "japanese": "どうすればいい？",
+      "furigana": "どうすればいい？",
+      "english": "What should I do?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "どう",
+          "w": "w-dou"
+        },
+        {
+          "t": "すれば",
+          "w": "w-suru"
+        },
+        {
+          "t": "いい？",
+          "w": "w-ii"
+        }
+      ],
+      "gap": {
+        "before": "どう",
+        "answer": "すれば",
+        "after": "いい？",
+        "options": [
+          "すれば",
+          "したら",
+          "して",
+          "するから"
+        ],
+        "ok": [
+          "したら"
+        ],
+        "note": "したら works too: どうしたらいい？ is just as common."
+      },
+      "audio": "audio/ja/connectors/cx-ba-1.mp3",
+      "tags": [
+        "connectors",
+        "ba"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-ba-2",
+      "japanese": "早く寝れば、明日は元気になるよ。",
+      "furigana": "{早|はや}く{寝|ね}れば、{明日|あした}は{元気|げんき}になるよ。",
+      "english": "If you go to bed early, you’ll feel better tomorrow.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{早|はや}く"
+        },
+        {
+          "t": "{寝|ね}れば、",
+          "w": "w-neru"
+        },
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{元気|げんき}になるよ。",
+          "w": "w-genki"
+        }
+      ],
+      "gap": {
+        "before": "{早|はや}く",
+        "answer": "{寝|ね}れば",
+        "after": "、{明日|あした}は{元気|げんき}になるよ。",
+        "options": [
+          "{寝|ね}れば",
+          "{寝|ね}るれば",
+          "{寝|ね}ながら"
+        ],
+        "why": "The last sound moves to the え row before ば: 寝る → 寝れば (not 寝るれば)."
+      },
+      "combine": {
+        "a": "{早|はや}く{寝|ね}る。",
+        "b": "{明日|あした}は{元気|げんき}になるよ。",
+        "distractors": [
+          "{寝|ね}るれば、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-ba-2.mp3",
+      "tags": [
+        "connectors",
+        "ba"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-ba-3",
+      "japanese": "もう少し安ければ、買います。",
+      "furigana": "もう{少|すこ}し{安|やす}ければ、{買|か}います。",
+      "english": "If it were a little cheaper, I’d buy it.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "もう{少|すこ}し"
+        },
+        {
+          "t": "{安|やす}ければ、",
+          "w": "w-yasui"
+        },
+        {
+          "t": "{買|か}います。",
+          "w": "w-kau"
+        }
+      ],
+      "gap": {
+        "before": "もう{少|すこ}し",
+        "answer": "{安|やす}ければ",
+        "after": "、{買|か}います。",
+        "options": [
+          "{安|やす}ければ",
+          "{安|やす}いれば",
+          "{安|やす}くて"
+        ],
+        "why": "い-adjectives drop the い and add ければ: 安い → 安ければ."
+      },
+      "audio": "audio/ja/connectors/cx-ba-3.mp3",
+      "tags": [
+        "connectors",
+        "ba"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-ba-4",
+      "japanese": "駅まで歩けば、十分ぐらいです。",
+      "furigana": "{駅|えき}まで{歩|ある}けば、{十分|じゅっぷん}ぐらいです。",
+      "english": "If you walk to the station, it’s about ten minutes.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{駅|えき}まで",
+          "w": "w-eki"
+        },
+        {
+          "t": "{歩|ある}けば、",
+          "w": "w-aruku"
+        },
+        {
+          "t": "{十分|じゅっぷん}ぐらいです。"
+        }
+      ],
+      "gap": {
+        "before": "{駅|えき}まで",
+        "answer": "{歩|ある}けば",
+        "after": "、{十分|じゅっぷん}ぐらいです。",
+        "options": [
+          "{歩|ある}けば",
+          "{歩|ある}くば",
+          "{歩|ある}きば"
+        ],
+        "why": "歩く ends in く, which moves to け: 歩けば."
+      },
+      "audio": "audio/ja/connectors/cx-ba-4.mp3",
+      "tags": [
+        "connectors",
+        "ba"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

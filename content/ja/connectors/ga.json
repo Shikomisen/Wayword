@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "con-ga",
+  "connector": "が",
+  "gloss": "but (polite)",
+  "title": "が — but (polite)",
+  "pattern": "A が、B",
+  "explanation": "After a whole clause, が means \"but\" — the same job as けど, in a more formal register: {少|すこ}し{高|たか}いですが、いいですよ. It also softens openings: すみませんが… (excuse me, but…), {申|もう}し{訳|わけ}ありませんが… (I’m very sorry, but…). Don’t confuse it with the particle が after a noun ({猫|ねこ}が{好|す}き).",
+  "natural": "Polite conversation, work, emails, meeting your partner’s parents. After です/ます it’s the polite standard.",
+  "stiff": "With your partner and friends が sounds formal — use けど. Plain form + が ({行|い}くが) is written style.",
+  "examples": [
+    {
+      "id": "cx-ga-1",
+      "japanese": "すみませんが、写真を撮ってもらえますか。",
+      "furigana": "すみませんが、{写真|しゃしん}を{撮|と}ってもらえますか。",
+      "english": "Excuse me, could you take a photo for us?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "すみませんが、"
+        },
+        {
+          "t": "{写真|しゃしん}を",
+          "w": "w-shashin"
+        },
+        {
+          "t": "{撮|と}ってもらえますか。"
+        }
+      ],
+      "gap": {
+        "before": "すみません",
+        "answer": "が",
+        "after": "、{写真|しゃしん}を{撮|と}ってもらえますか。",
+        "options": [
+          "が",
+          "けど",
+          "から"
+        ],
+        "ok": [
+          "けど"
+        ],
+        "note": "けど works too — a touch more casual."
+      },
+      "audio": "audio/ja/connectors/cx-ga-1.mp3",
+      "tags": [
+        "connectors",
+        "ga"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-ga-2",
+      "japanese": "少し高いですが、とてもいいです。",
+      "furigana": "{少|すこ}し{高|たか}いですが、とてもいいです。",
+      "english": "It’s a little expensive, but it’s very good.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{少|すこ}し"
+        },
+        {
+          "t": "{高|たか}いですが、",
+          "w": "w-takai"
+        },
+        {
+          "t": "とても",
+          "w": "w-totemo"
+        },
+        {
+          "t": "いいです。",
+          "w": "w-ii"
+        }
+      ],
+      "gap": {
+        "before": "{少|すこ}し{高|たか}いです",
+        "answer": "が",
+        "after": "、とてもいいです。",
+        "options": [
+          "が",
+          "から",
+          "ので"
+        ]
+      },
+      "combine": {
+        "a": "{少|すこ}し{高|たか}いです。",
+        "b": "とてもいいです。",
+        "distractors": [
+          "{高|たか}いですから、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-ga-2.mp3",
+      "tags": [
+        "connectors",
+        "ga"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-ga-3",
+      "japanese": "日本に住んでいますが、日本語はまだ下手です。",
+      "furigana": "{日本|にほん}に{住|す}んでいますが、{日本語|にほんご}はまだ{下手|へた}です。",
+      "english": "I live in Japan, but my Japanese is still poor.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本|にほん}に"
+        },
+        {
+          "t": "{住|す}んでいますが、"
+        },
+        {
+          "t": "{日本語|にほんご}はまだ",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{下手|へた}です。"
+        }
+      ],
+      "gap": {
+        "before": "{日本|にほん}に{住|す}んでいます",
+        "answer": "が",
+        "after": "、{日本語|にほんご}はまだ{下手|へた}です。",
+        "options": [
+          "が",
+          "ので",
+          "たら"
+        ]
+      },
+      "combine": {
+        "a": "{日本|にほん}に{住|す}んでいます。",
+        "b": "{日本語|にほんご}はまだ{下手|へた}です。",
+        "distractors": [
+          "{住|す}んでいるので、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-ga-3.mp3",
+      "tags": [
+        "connectors",
+        "ga"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-ga-4",
+      "japanese": "申し訳ありませんが、明日は行けません。",
+      "furigana": "{申|もう}し{訳|わけ}ありませんが、{明日|あした}は{行|い}けません。",
+      "english": "I’m very sorry, but I can’t come tomorrow.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{申|もう}し{訳|わけ}ありませんが、"
+        },
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{行|い}けません。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{申|もう}し{訳|わけ}ありません",
+        "answer": "が",
+        "after": "、{明日|あした}は{行|い}けません。",
+        "options": [
+          "が",
+          "から",
+          "し"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-ga-4.mp3",
+      "tags": [
+        "connectors",
+        "ga"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

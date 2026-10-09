@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "con-sorekara",
+  "connector": "それから",
+  "gloss": "and then, after that",
+  "title": "それから — and then, after that",
+  "pattern": "A。それから、B。 ／ A〜て、それから B",
+  "explanation": "それから puts things in order: this, and after that, that. It often follows a て-form: {買|か}い{物|もの}をして、それから{帰|かえ}る — do the shopping, then go home. It can also add one more item: コーヒー、それからケーキも — a coffee, and a cake as well.",
+  "natural": "Everyday and neutral — with your partner, at work, ordering food, telling someone what you did step by step.",
+  "stiff": "Not stiff, but それから between every step sounds like a recipe. Let て-forms carry most of the chain and save それから for the real \"and after that\".",
+  "examples": [
+    {
+      "id": "cx-sorekara-1",
+      "japanese": "仕事が終わりました。それから、ジムに行きました。",
+      "furigana": "{仕事|しごと}が{終|お}わりました。それから、{ジム|じむ}に{行|い}きました。",
+      "english": "Work finished. After that, I went to the gym.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{仕事|しごと}が",
+          "w": "w-shigoto"
+        },
+        {
+          "t": "{終|お}わりました。",
+          "w": "w-owaru"
+        },
+        {
+          "t": "それから、"
+        },
+        {
+          "t": "{ジム|じむ}に"
+        },
+        {
+          "t": "{行|い}きました。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{仕事|しごと}が{終|お}わりました。",
+        "answer": "それから",
+        "after": "、{ジム|じむ}に{行|い}きました。",
+        "options": [
+          "それから",
+          "でも",
+          "だから"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-sorekara-1.mp3",
+      "tags": [
+        "connectors",
+        "sorekara"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-sorekara-2",
+      "japanese": "晩ご飯を作って、それから映画を見よう。",
+      "furigana": "{晩|ばん}ご{飯|はん}を{作|つく}って、それから{映画|えいが}を{見|み}よう。",
+      "english": "Let’s make dinner, and then watch a movie.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{晩|ばん}ご{飯|はん}を",
+          "w": "w-bangohan"
+        },
+        {
+          "t": "{作|つく}って、",
+          "w": "w-tsukuru"
+        },
+        {
+          "t": "それから"
+        },
+        {
+          "t": "{映画|えいが}を",
+          "w": "w-eiga"
+        },
+        {
+          "t": "{見|み}よう。",
+          "w": "w-miru"
+        }
+      ],
+      "gap": {
+        "before": "{晩|ばん}ご{飯|はん}を{作|つく}って、",
+        "answer": "それから",
+        "after": "{映画|えいが}を{見|み}よう。",
+        "options": [
+          "それから",
+          "だから",
+          "でも"
+        ]
+      },
+      "combine": {
+        "a": "{晩|ばん}ご{飯|はん}を{作|つく}ろう。",
+        "b": "{映画|えいが}を{見|み}よう。",
+        "distractors": [
+          "{作|つく}ろう、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-sorekara-2.mp3",
+      "tags": [
+        "connectors",
+        "sorekara"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-sorekara-3",
+      "japanese": "コーヒーを一つ。それから、ケーキもお願いします。",
+      "furigana": "{コーヒー|こーひー}を{一|ひと}つ。それから、{ケーキ|けーき}もお{願|ねが}いします。",
+      "english": "One coffee. And a slice of cake too, please.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{コーヒー|こーひー}を{一|ひと}つ。",
+          "w": "w-koohii"
+        },
+        {
+          "t": "それから、"
+        },
+        {
+          "t": "{ケーキ|けーき}も"
+        },
+        {
+          "t": "お{願|ねが}いします。"
+        }
+      ],
+      "gap": {
+        "before": "{コーヒー|こーひー}を{一|ひと}つ。",
+        "answer": "それから",
+        "after": "、{ケーキ|けーき}もお{願|ねが}いします。",
+        "options": [
+          "それから",
+          "だから",
+          "でも"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-sorekara-3.mp3",
+      "tags": [
+        "connectors",
+        "sorekara"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-sorekara-4",
+      "japanese": "シャワーを浴びて、それから寝ます。",
+      "furigana": "{シャワー|しゃわー}を{浴|あ}びて、それから{寝|ね}ます。",
+      "english": "I’ll take a shower, and then go to bed.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{シャワー|しゃわー}を"
+        },
+        {
+          "t": "{浴|あ}びて、"
+        },
+        {
+          "t": "それから"
+        },
+        {
+          "t": "{寝|ね}ます。",
+          "w": "w-neru"
+        }
+      ],
+      "gap": {
+        "before": "{シャワー|しゃわー}を{浴|あ}びて、",
+        "answer": "それから",
+        "after": "{寝|ね}ます。",
+        "options": [
+          "それから",
+          "だから",
+          "けど"
+        ]
+      },
+      "combine": {
+        "a": "{シャワー|しゃわー}を{浴|あ}びます。",
+        "b": "{寝|ね}ます。",
+        "distractors": [
+          "{浴|あ}びます、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-sorekara-4.mp3",
+      "tags": [
+        "connectors",
+        "sorekara"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

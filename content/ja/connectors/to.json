@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "con-to",
+  "connector": "と",
+  "gloss": "whenever, if (always)",
+  "title": "と — whenever, if (always)",
+  "pattern": "plain present + と、B",
+  "explanation": "After a verb or adjective in the plain present, と means \"whenever\", or \"if… then (always)\": {春|はる}になると、{暖|あたた}かくなる — when spring comes, it gets warm. It’s for things that follow automatically: nature, machines, habits, directions. (A different と from the \"and\" between nouns.)",
+  "natural": "Directions and how things work: まっすぐ{行|い}くと、{駅|えき}があります — go straight and you’ll come to the station. Fine in any register.",
+  "stiff": "Not for your own plans, requests or invitations. \"If you have time, let’s meet\" needs たら: {時間|じかん}があったら{会|あ}おう. With と it sounds wrong.",
+  "examples": [
+    {
+      "id": "cx-to-1",
+      "japanese": "春になると、暖かくなります。",
+      "furigana": "{春|はる}になると、{暖|あたた}かくなります。",
+      "english": "When spring comes, it gets warm.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{春|はる}に",
+          "w": "w-haru"
+        },
+        {
+          "t": "なると、"
+        },
+        {
+          "t": "{暖|あたた}かく",
+          "w": "w-atatakai"
+        },
+        {
+          "t": "なります。"
+        }
+      ],
+      "gap": {
+        "before": "{春|はる}になる",
+        "answer": "と",
+        "after": "、{暖|あたた}かくなります。",
+        "options": [
+          "と",
+          "から",
+          "けど"
+        ]
+      },
+      "combine": {
+        "a": "{春|はる}になります。",
+        "b": "{暖|あたた}かくなります。",
+        "distractors": [
+          "なったと、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-to-1.mp3",
+      "tags": [
+        "connectors",
+        "to"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-to-2",
+      "japanese": "まっすぐ行くと、駅があります。",
+      "furigana": "まっすぐ{行|い}くと、{駅|えき}があります。",
+      "english": "Go straight on and you’ll come to the station.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "まっすぐ"
+        },
+        {
+          "t": "{行|い}くと、",
+          "w": "w-iku"
+        },
+        {
+          "t": "{駅|えき}が",
+          "w": "w-eki"
+        },
+        {
+          "t": "あります。"
+        }
+      ],
+      "gap": {
+        "before": "まっすぐ{行|い}く",
+        "answer": "と",
+        "after": "、{駅|えき}があります。",
+        "options": [
+          "と",
+          "けど",
+          "ので"
+        ]
+      },
+      "combine": {
+        "a": "まっすぐ{行|い}きます。",
+        "b": "{駅|えき}があります。",
+        "distractors": [
+          "{行|い}ったと、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-to-2.mp3",
+      "tags": [
+        "connectors",
+        "to"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-to-3",
+      "japanese": "このボタンを押すと、電気がつきます。",
+      "furigana": "この{ボタン|ぼたん}を{押|お}すと、{電気|でんき}がつきます。",
+      "english": "Press this button and the light comes on.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{ボタン|ぼたん}を"
+        },
+        {
+          "t": "{押|お}すと、"
+        },
+        {
+          "t": "{電気|でんき}が",
+          "w": "w-denki"
+        },
+        {
+          "t": "つきます。"
+        }
+      ],
+      "gap": {
+        "before": "この{ボタン|ぼたん}を{押|お}す",
+        "answer": "と",
+        "after": "、{電気|でんき}がつきます。",
+        "options": [
+          "と",
+          "けど",
+          "ので"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-to-3.mp3",
+      "tags": [
+        "connectors",
+        "to"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-to-4",
+      "japanese": "お酒を飲むと、すぐ眠くなる。",
+      "furigana": "お{酒|さけ}を{飲|の}むと、すぐ{眠|ねむ}くなる。",
+      "english": "Whenever I drink, I get sleepy right away.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "お{酒|さけ}を",
+          "w": "w-osake"
+        },
+        {
+          "t": "{飲|の}むと、",
+          "w": "w-nomu"
+        },
+        {
+          "t": "すぐ"
+        },
+        {
+          "t": "{眠|ねむ}くなる。",
+          "w": "w-nemui"
+        }
+      ],
+      "gap": {
+        "before": "お{酒|さけ}を{飲|の}む",
+        "answer": "と",
+        "after": "、すぐ{眠|ねむ}くなる。",
+        "options": [
+          "と",
+          "けど",
+          "ながら"
+        ]
+      },
+      "combine": {
+        "a": "お{酒|さけ}を{飲|の}む。",
+        "b": "すぐ{眠|ねむ}くなる。",
+        "distractors": [
+          "{飲|の}んだと、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-to-4.mp3",
+      "tags": [
+        "connectors",
+        "to"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

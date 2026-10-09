@@ -1008,3 +1008,119 @@ casual is what you *say* to a partner. So:
   and no errors are logged.
 - Screenshots checked at phone width: Learn, a word deck, a sentence deck,
   both sides of a card, the add form, Settings and the new kanji set.
+
+### A63 — Item 4: the Connectors course
+- **The sixteen connectors asked for, one lesson each**, in five groups
+  (and / because / but / if-and-when / while-and-the-rest).
+  - The order runs simple to subtle: て before そして, から before ので
+    before だから, たら before ば.
+  - と is the conditional と ("whenever"), not the "and" between nouns. The
+    list is about joining clauses, and the lesson says so.
+- **Each lesson** has a pattern, a plain-English explanation, *Sounds
+  natural* and *Sounds stiff or wrong* notes, and four examples.
+  - Four is the middle of the 3–5 asked for: enough for a short drill
+    session, few enough to read.
+  - About half the examples are casual; with a partner, that's most of what
+    gets said.
+- **Furigana everywhere, prose included.** The explanations quote Japanese,
+  and the learner reads weakly. So the prose writes kanji as `{漢字|かんじ}`
+  and renders it with readings, following the furigana setting. `npm test`
+  fails on any kanji in the prose without one. Katakana in examples carries
+  a hiragana aid, as in the word decks.
+- **Vocabulary reuse.** Every example links at least one word from the word
+  decks (most link three or four), and the words show those examples under
+  "In sentences".
+  - One example was rewritten for this: the button that dispenses hot water
+    became a button that turns the light on (電気).
+- **One source, checked.** The lessons were written as chunks in a generator
+  that derived the furigana, the plain text and the gap, and checked them
+  before writing any file. The JSON is now the source; the generator was
+  throwaway, in `tmp/`.
+
+### A64 — The drills
+- **Three kinds, all derived from each example's data**, so a new lesson
+  needs no code: fill the gap, put it in order, join two sentences.
+- **Fill the gap shows the English meaning.** Several connectors overlap
+  (から/ので, けど/が, たら/ば, し as a reason). Without the meaning, more
+  than one option would be defensible; with it, the distractors are clearly
+  wrong.
+- **"Also right" answers count as right.** Where a second option truly
+  works (ので for から, が for けど, あれば for あったら, なら for だったら,
+  したら for すれば), picking it is accepted, with a note on the difference.
+  Marking it wrong would teach something false.
+- **The gap is sometimes the form, not the connector** (歩いて vs 歩きて,
+  寝れば vs 寝るれば, 子供のとき vs 子供なとき). Getting the form in front
+  of the connector right is half the skill.
+- **Put it in order** needs at least three pieces.
+  - The pieces are cut so there's usually one natural order.
+  - Where Japanese allows another (a し list in any order, 毎日 before or
+    after 健康のために, 今日は at the front), it's listed in `alsoOrders` and
+    accepted.
+- **Join them** is on 25 of the 64 examples. It's left out where "joining"
+  would still mean two sentences (そして, だから, でも) and for し, whose
+  point is three or more parts.
+  - The traps are clearly wrong forms or connectors (降っているけど,
+    寝るれば, 来るながら).
+  - Grammatical-but-formal versions such as 遅れましたので are never used
+    as traps.
+- **Tiles always show readings** (or none, when furigana is hidden).
+  Tap-to-show can't work on something you tap to move.
+- **Session size.** A lesson's practice uses all of its drills (about ten).
+  Mixed practice draws 12 from the lessons already practised, or from all
+  of them before any has been. The same sentence isn't asked twice in a row
+  where that can be avoided.
+
+### A65 — Missed drills go into the review deck
+- **What a miss does:**
+  - The missed sentence gets its cards in every enabled direction.
+  - Its *Say it* card is failed (SM-2 "again") and comes back within about
+    ten minutes. *Say it* because building the sentence is what the drill
+    tested. If Say it is off, the first enabled direction is used.
+- **Only what was missed.** The lesson becomes one of your decks, holding
+  only the sentences you missed — "feed missed items into SRS", not "add
+  the lesson".
+  - *Study as cards* on the lesson adds the rest.
+  - Studying a deck now always fills in its missing cards, which costs
+    nothing for a deck that already has them all.
+- **Right answers leave the deck alone.** A drill is recall with a lot of
+  help — the pieces, the options — so counting it as a review would push
+  cards out further than the learner has earned.
+- **Practice is still counted.** Each session's score is kept per lesson
+  (sessions, totals, best), and the day's drills keep the streak alive, the
+  same as reviews.
+
+### A66 — Connectors gets a tab; Scenarios moves into Learn
+- Five tabs fit a phone comfortably. Japanese now has six sections (Today,
+  Learn, Connectors, Characters, Scenarios, Settings).
+  - Scenarios moves into Learn, under *Conversations*. It's the least
+    central section now: the scenarios are the travel ones (immigration,
+    tickets, a hotel), and the core of the course is words and connectors.
+  - The rule is generic — over five, Scenarios goes to Learn. The English
+    course, with no Connectors, keeps its Scenarios tab.
+- **Today** has a Connectors row (how many lessons practised; mixed practice
+  once one has been).
+- **Lesson links.** A lesson deck in Today's "In your deck", and a connector
+  example in a word's "In sentences", both link to the lesson, not to a deck
+  screen.
+- **Smaller fixes along the way:** the shared link helper now also handles
+  kanji cross-references, so a kanji's chips open a word's or a lesson's
+  page correctly.
+
+### A67 — Item 4 verification
+- `npm test`: 23,203 content/UI/SRS checks — every lesson's prose, gaps,
+  options, traps and orders included. 177 integration checks (27 new: all
+  sixteen connectors present, the drill builder and checks, alternative
+  orders, traps, a miss landing in the deck as a failed Say-it card due
+  within the hour, Study-as-cards adding the rest, practice stats). 13
+  language-pack checks.
+- `npm run test:render`: 206 checks. The walkthrough opens Connectors and a
+  lesson, then plays a whole practice session: every fill-in, order and
+  combine drill, the first fill-in deliberately wrong. It checks the marking,
+  the score, the missed sentence in the deck, the best score on the list and
+  Today's Connectors row.
+- `npm run test:browser` in Firefox: 29 of 29. The cache holds all 1,140 files
+  (1,042 clips, 13.2 MB), and Connectors works online and offline.
+- Screenshots checked at phone width: the lesson list, a lesson, and a fill,
+  order and combine drill before and after answering. Two layout bugs were
+  fixed from them: a sentence broken onto three lines around its gap, and
+  the connector column too narrow for それから.

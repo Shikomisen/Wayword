@@ -57,6 +57,12 @@ function gather(manifest, target) {
       }
     }
   }
+  // Connector examples are sentences too.
+  for (const entry of (manifest.lessons || []).filter(readable)) {
+    for (const ex of readJSON(entry.file).examples || []) {
+      phrases.push({ id: ex.id, text: ex[target], category: entry.title, kind: 'sentences' });
+    }
+  }
   for (const entry of manifest.categories.filter(readable)) {
     const cat = readJSON(entry.file);
     for (const p of cat.phrases || []) {

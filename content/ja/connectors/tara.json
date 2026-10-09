@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "id": "con-tara",
+  "connector": "たら",
+  "gloss": "if, when, once",
+  "title": "たら — if, when, once",
+  "pattern": "past form + ら、B",
+  "explanation": "Take the past form and add ら: {行|い}った → {行|い}ったら, {安|やす}かった → {安|やす}かったら, {雨|あめ}だった → {雨|あめ}だったら. It means \"if\", or \"once / when\" something happens. It’s the most flexible conditional, and the one that works before plans, suggestions and requests.",
+  "natural": "The everyday \"if\" and \"when\" in conversation: {着|つ}いたら{電話|でんわ}して (call me when you get there), {時間|じかん}があったら{会|あ}おう (let’s meet if you have time).",
+  "stiff": "Not stiff. Formal writing prefers ば or 〜{場合|ばあい}は, and for things that always happen と is more natural.",
+  "examples": [
+    {
+      "id": "cx-tara-1",
+      "japanese": "家に着いたら、電話してね。",
+      "furigana": "{家|いえ}に{着|つ}いたら、{電話|でんわ}してね。",
+      "english": "Call me when you get home.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{家|いえ}に",
+          "w": "w-ie"
+        },
+        {
+          "t": "{着|つ}いたら、"
+        },
+        {
+          "t": "{電話|でんわ}してね。",
+          "w": "w-denwa"
+        }
+      ],
+      "gap": {
+        "before": "{家|いえ}に",
+        "answer": "{着|つ}いたら",
+        "after": "、{電話|でんわ}してね。",
+        "options": [
+          "{着|つ}いたら",
+          "{着|つ}くと",
+          "{着|つ}くので"
+        ],
+        "why": "A request after it needs たら — と can’t be followed by a request."
+      },
+      "combine": {
+        "a": "{家|いえ}に{着|つ}く。",
+        "b": "{電話|でんわ}してね。",
+        "distractors": [
+          "{着|つ}くと、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-tara-1.mp3",
+      "tags": [
+        "connectors",
+        "tara"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-tara-2",
+      "japanese": "時間があったら、一緒にご飯を食べよう。",
+      "furigana": "{時間|じかん}があったら、{一緒|いっしょ}にご{飯|はん}を{食|た}べよう。",
+      "english": "If you have time, let’s eat together.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{時間|じかん}が",
+          "w": "w-jikan"
+        },
+        {
+          "t": "あったら、"
+        },
+        {
+          "t": "{一緒|いっしょ}にご{飯|はん}を",
+          "w": "w-issho"
+        },
+        {
+          "t": "{食|た}べよう。",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "{時間|じかん}が",
+        "answer": "あったら",
+        "after": "、{一緒|いっしょ}にご{飯|はん}を{食|た}べよう。",
+        "options": [
+          "あったら",
+          "あれば",
+          "あると",
+          "あるから"
+        ],
+        "ok": [
+          "あれば"
+        ],
+        "note": "あれば works too.",
+        "why": "An invitation after it needs たら (or ば) — not と."
+      },
+      "combine": {
+        "a": "{時間|じかん}がある。",
+        "b": "{一緒|いっしょ}にご{飯|はん}を{食|た}べよう。",
+        "distractors": [
+          "あると、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-tara-2.mp3",
+      "tags": [
+        "connectors",
+        "tara"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-tara-3",
+      "japanese": "雨だったら、家で映画を見ましょう。",
+      "furigana": "{雨|あめ}だったら、{家|いえ}で{映画|えいが}を{見|み}ましょう。",
+      "english": "If it rains, let’s watch a movie at home.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{雨|あめ}だったら、",
+          "w": "w-ame"
+        },
+        {
+          "t": "{家|いえ}で{映画|えいが}を",
+          "w": "w-eiga"
+        },
+        {
+          "t": "{見|み}ましょう。",
+          "w": "w-miru"
+        }
+      ],
+      "gap": {
+        "before": "{雨|あめ}",
+        "answer": "だったら",
+        "after": "、{家|いえ}で{映画|えいが}を{見|み}ましょう。",
+        "options": [
+          "だったら",
+          "なら",
+          "だと",
+          "だから"
+        ],
+        "ok": [
+          "なら"
+        ],
+        "note": "なら works too."
+      },
+      "audio": "audio/ja/connectors/cx-tara-3.mp3",
+      "tags": [
+        "connectors",
+        "tara"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-tara-4",
+      "japanese": "仕事が終わったら、すぐ帰ります。",
+      "furigana": "{仕事|しごと}が{終|お}わったら、すぐ{帰|かえ}ります。",
+      "english": "Once work is over, I’ll come straight home.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{仕事|しごと}が",
+          "w": "w-shigoto"
+        },
+        {
+          "t": "{終|お}わったら、",
+          "w": "w-owaru"
+        },
+        {
+          "t": "すぐ"
+        },
+        {
+          "t": "{帰|かえ}ります。",
+          "w": "w-kaeru"
+        }
+      ],
+      "gap": {
+        "before": "{仕事|しごと}が",
+        "answer": "{終|お}わったら",
+        "after": "、すぐ{帰|かえ}ります。",
+        "options": [
+          "{終|お}わったら",
+          "{終|お}わるけど",
+          "{終|お}わるので"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-tara-4.mp3",
+      "tags": [
+        "connectors",
+        "tara"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -186,10 +186,13 @@ await goTo('#/en-ja/browse');
 check('learn renders', $('h1')?.textContent === 'Learn' && document.querySelector('.tabbar a.active')?.textContent.includes('Learn'));
 const jaDecks = [...JA.categories, ...JA.decks];
 const jaStarters = jaDecks.filter((c) => c.starter);
-check('every deck listed, plus your own words', $$('.row-card').length === jaDecks.length + 1, `${$$('.row-card').length} rows`);
-check('words, sentences, phrases and your own words, in that order',
-  $$('.kind-title').map((h) => h.textContent).join('|') === 'Words|Sentences|Phrases|Your own words',
+check('every deck listed, plus your own words and the conversations', $$('.row-card').length === jaDecks.length + 2,
+  `${$$('.row-card').length} rows`);
+check('words, sentences, phrases, your own words, then conversations',
+  $$('.kind-title').map((h) => h.textContent).join('|') === 'Words|Sentences|Phrases|Your own words|Conversations',
   $$('.kind-title').map((h) => h.textContent).join(' | '));
+check('with Connectors taking a tab, the scenarios live in Learn',
+  !document.querySelector('.tabbar a[data-path="/scenarios"]') && Boolean($('.row-card[href="#/en-ja/scenarios"]')));
 check('phrases grouped by topic, titled from the manifest',
   $$('.section-title').map((h) => h.textContent).join('|') === JA.groups.map((g) => g.title).join('|'),
   $$('.section-title').map((h) => h.textContent).join(' | '));
@@ -411,8 +414,87 @@ const baseText = (node) => {
 check('your own words are studied like any other deck', baseText($('.study-card .target')) === '今日は暑いね',
   baseText($('.study-card .target')));
 await goTo('#/en-ja/browse');
-check('Learn counts your own words', $$('.row-card').at(-1)?.textContent.includes('1 card of your own'),
-  $$('.row-card').at(-1)?.querySelector('.row-sub')?.textContent);
+check('Learn counts your own words', $('.row-card[href="#/en-ja/mine"]')?.textContent.includes('1 card of your own'),
+  $('.row-card[href="#/en-ja/mine"] .row-sub')?.textContent);
+
+console.log('\n5d. Connectors');
+
+await goTo('#/en-ja/connectors');
+const lessonFiles = Object.fromEntries(JA.lessons.map((l) => [l.id, readJSON(l.file)]));
+check('the Connectors tab lists every lesson', $('h1')?.textContent === 'Connectors' &&
+  $$('.lesson-row').length === JA.lessons.length, `${$$('.lesson-row').length} lessons`);
+check('…grouped as the manifest says', $$('.section-title').map((h) => h.textContent).join('|') ===
+  JA.lessonGroups.map((g) => g.title).join('|'));
+check('…and its tab is lit', document.querySelector('.tabbar a.active')?.dataset.path === '/connectors');
+check('nothing is practised yet', $$('.lesson-row .row-sub').every((r) => r.textContent === 'Not practised yet'));
+
+await goTo('#/en-ja/connectors/con-kara');
+const karaFile = lessonFiles['con-kara'];
+check('a lesson shows its connector, explanation and pattern',
+  $('.connector-title')?.textContent === 'から' && Boolean($('.lesson-explanation')) && text().includes(karaFile.pattern));
+check('the explanation puts readings over its kanji', $$('.lesson-explanation ruby').length > 0);
+check('it says when the connector sounds natural, and when stiff',
+  Boolean($('.note-natural')) && Boolean($('.note-stiff')) && text().includes('Sounds natural') && text().includes('Sounds stiff'));
+check('every example is there, with audio and its words linked',
+  $$('.item-sentence').length === karaFile.examples.length &&
+  $$('.item-sentence .audio-btn').length === karaFile.examples.length &&
+  $$('.item-sentence .links .ref-chip').length > 0);
+
+// Practise the lesson: answer every drill, the first fill-in deliberately wrong.
+await goTo('#/en-ja/connectors/con-kara/practice');
+const examplesById = Object.fromEntries(karaFile.examples.map((x) => [x.id, x]));
+const seenKinds = new Set();
+let wrongOn = null;
+let drillsDone = 0;
+for (let guard = 0; guard < 30 && $('.drill-card'); guard++) {
+  const cardEl = $('.drill-card');
+  const kind = cardEl.dataset.drill;
+  const ex = examplesById[cardEl.dataset.example];
+  seenKinds.add(kind);
+  if (kind === 'fill') {
+    const pick = wrongOn ? ex.gap.answer : ex.gap.options.find((o) => o !== ex.gap.answer && !(ex.gap.ok || []).includes(o));
+    if (!wrongOn) wrongOn = ex.id;
+    $$('.option').find((b) => b.dataset.value === pick)?.click();
+  } else {
+    // Tap the real pieces in order; the traps stay in the pile.
+    for (let i = 0; i < ex.chunks.length; i++) {
+      $(`.tile-pool .tile[data-chunk="${i}"]`)?.click();
+      await tick();
+    }
+    $$('.drill-actions button').find((b) => b.textContent === 'Check')?.click();
+  }
+  await tick(); await tick();
+  if (wrongOn === ex.id && kind === 'fill') {
+    check('a wrong pick is marked, and the answer shown', Boolean($('.option.is-wrong')) && Boolean($('.option.is-answer')) &&
+      Boolean($('.verdict-wrong')) && $('.gap')?.textContent === ex.gap.answer.replace(/\{([^|]+)\|[^}]+\}/g, '$1'));
+  }
+  if (kind !== 'fill' && !seenKinds.has(`checked-${kind}`)) {
+    seenKinds.add(`checked-${kind}`);
+    check(`a right ${kind} answer is marked right, with the sentence and its audio`,
+      Boolean($('.tile-answer.is-right')) && Boolean($('.verdict-right')) && Boolean($('.drill-answer .audio-btn')));
+  }
+  drillsDone++;
+  $('.drill-next')?.click();
+  for (let i = 0; i < 6; i++) await tick();
+}
+check('the session ran through all three kinds of drill',
+  ['fill', 'order', 'combine'].every((k) => seenKinds.has(k)), [...seenKinds].join(', '));
+check('…and ends with the score', $('.practice-done') && text().includes(`${drillsDone - 1} of ${drillsDone} right`),
+  $('.practice-done .lede')?.textContent);
+check('…saying the missed sentence went into the reviews', text().includes('The sentence you missed is now in your reviews.'));
+const missedCard = await deck.getCard(`${wrongOn}~p`);
+check('the missed sentence is in the deck as a failed "say it" card', missedCard?.state === 'learning', wrongOn);
+await goTo('#/en-ja/connectors');
+check('the lesson list shows the best score', $('.lesson-row[data-lesson="con-kara"] .row-sub')?.textContent ===
+  `Best: ${drillsDone - 1} of ${drillsDone}`, $('.lesson-row[data-lesson="con-kara"] .row-sub')?.textContent);
+
+await goTo('#/en-ja/connectors/mixed');
+check('mixed practice draws drills from the lessons practised so far',
+  Boolean($('.drill-card')) && examplesById[$('.drill-card')?.dataset.example] !== undefined,
+  $('.drill-card')?.dataset.example);
+
+await goTo('#/en-ja/');
+check('Today offers the connectors', text().includes('1 of 16 practised'));
 
 console.log('\n6. Scenarios');
 
@@ -490,8 +572,9 @@ check('kanji render as a list, not a grid', $$('.kanji-row').length === 82 && $$
 check('kanji show English meanings', $$('.kanji-meaning').length === 82);
 check('kanji cross-reference existing phrases', $$('.ref-chip').length > 20,
   `${$$('.ref-chip').length} phrase cross-references shown`);
-check('cross-reference chips link into the phrase content',
-  $$('.ref-chip').every((a) => a.getAttribute('href').startsWith('#/en-ja/category/')));
+check('cross-reference chips link to the deck or connector lesson they came from',
+  $$('.ref-chip').every((a) => /^#\/en-ja\/(category|connectors)\//.test(a.getAttribute('href'))) &&
+  $$('.ref-chip').some((a) => a.getAttribute('href').startsWith('#/en-ja/connectors/')));
 
 const kanjiPlayed = played.length;
 $$('.kanji-glyph')[0].click();

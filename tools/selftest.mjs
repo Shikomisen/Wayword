@@ -182,6 +182,58 @@ function validateCourse(course) {
   let deckItems = 0;
   let deckAudio = 0;
 
+  // One word or sentence — from a word or sentence deck, or a connector lesson's examples.
+  function checkItem(item, kind) {
+    deckItems++;
+    for (const field of ['id', target, fields.meaning, 'audio', 'tags', 'difficulty']) {
+      check(`${item.id}: has ${field}`, item[field] !== undefined && item[field] !== '');
+    }
+    check(`${item.id}: unique id across all content`, !seenIds.has(item.id));
+    seenIds.add(item.id);
+    check(`${item.id}: difficulty in 1-5`, item.difficulty >= 1 && item.difficulty <= 5, String(item.difficulty));
+    check(`${item.id}: tags is a non-empty array`, Array.isArray(item.tags) && item.tags.length > 0);
+    if (item.audioHint !== undefined) check(`${item.id}: audioHint is text`, typeof item.audioHint === 'string' && item.audioHint.length > 0);
+
+    if (fields.ruby) {
+      checkRuby(item.id, item[fields.ruby], item[target]);
+      // Reading is the weak skill this course is built around: no kanji without its reading.
+      if (hasKanji(item[target])) check(`${item.id}: kanji carry furigana`, Boolean(item[fields.ruby]));
+    }
+
+    if (kind === 'word') {
+      wordIds.add(item.id);
+      check(`${item.id}: part of speech is one the interface names`, POS.includes(item.pos), item.pos);
+      if (item.pos === 'verb') check(`${item.id}: verb has its ます and て forms`, FORMS.every((f) => item.forms?.[f]));
+      for (const [key, value] of Object.entries(item.forms || {})) {
+        check(`${item.id}: form "${key}" is one the interface names`, FORMS.includes(key), key);
+        if (fields.ruby) checkRuby(`${item.id}/${key}`, value, rubyText(value));
+        if (hasKanji(rubyText(value))) check(`${item.id}/${key}: kanji carry furigana`, /\{[^|]+\|/.test(value));
+      }
+      if (item.usage !== undefined) check(`${item.id}: usage is non-empty text`, typeof item.usage === 'string' && item.usage.length > 0);
+    } else {
+      check(`${item.id}: register is polite or casual`, ['polite', 'casual'].includes(item.register), item.register);
+      // The chunks are the sentence cut into pieces — together, exactly the sentence.
+      if (check(`${item.id}: has chunks`, Array.isArray(item.chunks) && item.chunks.length > 1)) {
+        const rebuilt = item.chunks.map((c) => rubyText(c.t)).join('');
+        check(`${item.id}: chunks rebuild the sentence`, rebuilt === item[target], `${rebuilt} vs ${item[target]}`);
+        if (fields.ruby) {
+          check(`${item.id}: chunks rebuild the furigana`, item.chunks.map((c) => c.t).join('') === item[fields.ruby]);
+        }
+        for (const c of item.chunks) if (c.w) chunkRefs.push([item.id, c.w]);
+        check(`${item.id}: links at least one word`, item.chunks.some((c) => c.w));
+      }
+    }
+
+    check(`${item.id}: audio path is unique`, !seenAudio.has(item.audio));
+    seenAudio.add(item.audio);
+    check(`${item.id}: audio lives under audio/${course.target}/`, String(item.audio).startsWith(`audio/${course.target}/`), item.audio);
+    const clip = resolve(ROOT, item.audio);
+    if (existsSync(clip)) {
+      deckAudio++;
+      check(`${item.id}: audio clip is non-trivial`, statSync(clip).size > 800);
+    }
+  }
+
   for (const entry of manifest.decks || []) {
     check(`${entry.id}: deck kind is words or sentences`, ['words', 'sentences'].includes(entry.kind), entry.kind);
     check(`${entry.id}: deck has a title`, Boolean(entry.title));
@@ -191,63 +243,78 @@ function validateCourse(course) {
     check(`${entry.id}: schemaVersion matches`, deck.schemaVersion === manifest.schemaVersion);
     check(`${entry.id}: id matches manifest`, deck.id === entry.id, `${deck.id} vs ${entry.id}`);
     check(`${entry.id}: has items`, Array.isArray(deck.items) && deck.items.length > 0);
+    for (const item of deck.items || []) checkItem(item, entry.kind === 'words' ? 'word' : 'sentence');
+  }
 
-    for (const item of deck.items || []) {
-      deckItems++;
-      for (const field of ['id', target, fields.meaning, 'audio', 'tags', 'difficulty']) {
-        check(`${item.id}: has ${field}`, item[field] !== undefined && item[field] !== '');
-      }
-      check(`${item.id}: unique id across all content`, !seenIds.has(item.id));
-      seenIds.add(item.id);
-      check(`${item.id}: difficulty in 1-5`, item.difficulty >= 1 && item.difficulty <= 5, String(item.difficulty));
-      check(`${item.id}: tags is a non-empty array`, Array.isArray(item.tags) && item.tags.length > 0);
-      if (item.audioHint !== undefined) check(`${item.id}: audioHint is text`, typeof item.audioHint === 'string' && item.audioHint.length > 0);
+  /* ---------- connector lessons ---------- */
 
-      if (fields.ruby) {
-        checkRuby(item.id, item[fields.ruby], item[target]);
-        // Reading is the weak skill this course is built around: no kanji without its reading.
-        if (hasKanji(item[target])) check(`${item.id}: kanji carry furigana`, Boolean(item[fields.ruby]));
-      }
+  const lessonGroupIds = new Set((manifest.lessonGroups || []).map((g) => g.id));
+  let lessonExamples = 0;
+  let combineDrills = 0;
+  for (const entry of manifest.lessons || []) {
+    check(`${entry.id}: lesson group "${entry.group}" is declared`, lessonGroupIds.has(entry.group), entry.group);
+    if (!check(`lesson file exists: ${entry.file}`, existsSync(resolve(ROOT, entry.file)))) continue;
+    const lesson = readJSON(entry.file);
+    check(`${entry.id}: schemaVersion matches`, lesson.schemaVersion === manifest.schemaVersion);
+    check(`${entry.id}: id matches manifest`, lesson.id === entry.id, `${lesson.id} vs ${entry.id}`);
+    for (const f of ['connector', 'gloss', 'title', 'pattern', 'explanation', 'natural', 'stiff']) {
+      check(`${entry.id}: has ${f}`, typeof lesson[f] === 'string' && lesson[f].length > 0);
+    }
+    // The prose is read by someone still learning to read: every kanji gets its reading.
+    for (const f of ['explanation', 'natural', 'stiff']) {
+      const bare = String(lesson[f] || '').replace(/\{[^|{}]+\|[^{}]+\}/g, '');
+      check(`${entry.id}: ${f} gives every kanji a reading`, !hasKanji(bare), bare.match(/[㐀-鿿豈-﫿々]/u)?.[0]);
+      checkRuby(`${entry.id}/${f}`, lesson[f], rubyText(lesson[f]));
+    }
+    check(`${entry.id}: 3–5 examples`, lesson.examples?.length >= 3 && lesson.examples.length <= 5, String(lesson.examples?.length));
 
-      if (entry.kind === 'words') {
-        wordIds.add(item.id);
-        check(`${item.id}: part of speech is one the interface names`, POS.includes(item.pos), item.pos);
-        if (item.pos === 'verb') check(`${item.id}: verb has its ます and て forms`, FORMS.every((f) => item.forms?.[f]));
-        for (const [key, value] of Object.entries(item.forms || {})) {
-          check(`${item.id}: form "${key}" is one the interface names`, FORMS.includes(key), key);
-          if (fields.ruby) checkRuby(`${item.id}/${key}`, value, rubyText(value));
-          if (hasKanji(rubyText(value))) check(`${item.id}/${key}: kanji carry furigana`, /\{[^|]+\|/.test(value));
+    for (const ex of lesson.examples || []) {
+      lessonExamples++;
+      checkItem(ex, 'sentence');
+      const n = (ex.chunks || []).length;
+
+      // Fill-in: the gap and the text around it are the sentence, exactly.
+      if (check(`${ex.id}: has a fill-in gap`, Boolean(ex.gap?.answer))) {
+        const g = ex.gap;
+        check(`${ex.id}: the gap rebuilds the sentence`, g.before + g.answer + g.after === ex[fields.ruby || target]);
+        check(`${ex.id}: the answer is one of the options`, g.options?.includes(g.answer));
+        check(`${ex.id}: options are distinct`, new Set(g.options).size === g.options?.length);
+        check(`${ex.id}: two to four options`, g.options?.length >= 2 && g.options.length <= 4, String(g.options?.length));
+        for (const o of g.ok || []) check(`${ex.id}: "also right" option ${o} is offered`, g.options.includes(o) && o !== g.answer);
+        if ((g.ok || []).length) check(`${ex.id}: an "also right" option says why`, Boolean(g.note));
+        for (const o of g.options || []) {
+          checkRuby(`${ex.id}/option`, o, rubyText(o));
+          if (hasKanji(rubyText(o))) check(`${ex.id}/option ${o}: kanji carry furigana`, /\{[^|]+\|/.test(o));
         }
-        if (item.usage !== undefined) check(`${item.id}: usage is non-empty text`, typeof item.usage === 'string' && item.usage.length > 0);
-      } else {
-        check(`${item.id}: register is polite or casual`, ['polite', 'casual'].includes(item.register), item.register);
-        // The chunks are the sentence cut into pieces — together, exactly the sentence.
-        if (check(`${item.id}: has chunks`, Array.isArray(item.chunks) && item.chunks.length > 1)) {
-          const rebuilt = item.chunks.map((c) => rubyText(c.t)).join('');
-          check(`${item.id}: chunks rebuild the sentence`, rebuilt === item[target], `${rebuilt} vs ${item[target]}`);
-          if (fields.ruby) {
-            check(`${item.id}: chunks rebuild the furigana`, item.chunks.map((c) => c.t).join('') === item[fields.ruby]);
-          }
-          for (const c of item.chunks) if (c.w) chunkRefs.push([item.id, c.w]);
-          check(`${item.id}: links at least one word`, item.chunks.some((c) => c.w));
-        }
       }
-
-      check(`${item.id}: audio path is unique`, !seenAudio.has(item.audio));
-      seenAudio.add(item.audio);
-      check(`${item.id}: audio lives under audio/${course.target}/`, String(item.audio).startsWith(`audio/${course.target}/`), item.audio);
-      const clip = resolve(ROOT, item.audio);
-      if (existsSync(clip)) {
-        deckAudio++;
-        check(`${item.id}: audio clip is non-trivial`, statSync(clip).size > 800);
+      // Orders other than the written one that are just as right.
+      for (const o of ex.alsoOrders || []) {
+        check(`${ex.id}: alternative order is a reordering`, o.length === n && [...o].sort((a, b) => a - b).every((v, i) => v === i), o.join());
+      }
+      // Combine: two sentences to join, and trap pieces that aren't pieces of the answer.
+      if (ex.combine) {
+        combineDrills++;
+        const c = ex.combine;
+        check(`${ex.id}: combine has two sentences and a trap`, Boolean(c.a && c.b) && c.distractors?.length > 0);
+        for (const piece of [c.a, c.b, ...(c.distractors || [])]) {
+          checkRuby(`${ex.id}/combine`, piece, rubyText(piece));
+          if (hasKanji(rubyText(piece))) check(`${ex.id}/combine ${piece}: kanji carry furigana`, /\{[^|]+\|/.test(piece));
+        }
+        for (const d of c.distractors || []) {
+          check(`${ex.id}: trap "${d}" isn't a real piece`, !(ex.chunks || []).some((ch) => ch.t === d));
+        }
       }
     }
   }
+
   for (const [sentence, word] of chunkRefs) {
     check(`${sentence}: word ${word} is in a word deck`, wordIds.has(word));
   }
   if (deckItems) {
     console.log(`  ${deckItems} words and sentences, ${deckAudio} with generated audio (${deckItems - deckAudio} pending)`);
+  }
+  if (lessonExamples) {
+    console.log(`  ${(manifest.lessons || []).length} connector lessons: ${lessonExamples} examples, ${combineDrills} combine drills`);
   }
 
   /* ---------- character sets ---------- */

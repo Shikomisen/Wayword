@@ -23,13 +23,16 @@ import * as store from './store.js';
 import * as course from './course.js';
 import { t, setLang, locale } from './i18n.js';
 import { el, clear, phraseBlock, notesBlock, tagRow, audioButton, toast, politeBlock } from './render.js';
-import { header, stat, playItem, studySettings, toggleStrip } from './shared.js';
+import {
+  header, stat, playItem, studySettings, toggleStrip, deckHref, wordLinks, sentenceLinks,
+} from './shared.js';
 import { renderPlacement } from './quiz.js';
 import { renderScenarioList, renderScenario } from './scenario.js';
 import { renderCharacterList, renderCharacterSet } from './characters.js';
 import { renderHome, renderPlannedCourse } from './home.js';
 import { runSession } from './study.js';
 import { renderMine, renderMineForm } from './mine.js';
+import { renderConnectors, renderLesson, renderPractice } from './connectors.js';
 
 const app = () => document.getElementById('app');
 const { link } = course;
@@ -46,6 +49,11 @@ const routes = [
   [/^\/mine$/, (root) => renderMine(root)],
   [/^\/mine\/new$/, (root) => renderMineForm(root, null)],
   [/^\/mine\/([\w-]+)$/, (root, id) => renderMineForm(root, id)],
+  // Order matters: /connectors/mixed must match before /connectors/:id.
+  [/^\/connectors$/, (root) => renderConnectors(root)],
+  [/^\/connectors\/mixed$/, (root) => renderPractice(root, null)],
+  [/^\/connectors\/([\w-]+)\/practice$/, (root, id) => renderPractice(root, id)],
+  [/^\/connectors\/([\w-]+)$/, (root, id) => renderLesson(root, id)],
   [/^\/scenarios$/, (root) => renderScenarioList(root)],
   [/^\/scenario\/([\w-]+)$/, (root, id) => renderScenario(root, id)],
   // Order matters: /characters/review must match before /characters/:id.
@@ -111,6 +119,7 @@ async function router() {
     if (!match) continue;
     // Sections a course doesn't have (Characters for English) are not routable.
     if (/^\/characters/.test(sub) && !features.characters) break;
+    if (/^\/connectors/.test(sub) && !features.lessons) break;
     const root = clear(app());
     window.scrollTo(0, 0);
     try {
@@ -183,29 +192,47 @@ function renderCourseBar(target) {
       })));
 }
 
-function renderTabbar(features) {
-  const nav = document.querySelector('.tabbar');
-  if (!nav) return;
+// A phone's tab bar holds five tabs comfortably. Past that, Scenarios — the
+// least central section once a course has Connectors — moves into Learn.
+const MAX_TABS = 5;
+
+function tabsFor(features) {
   const tabs = [
     ['/', '📅', t('tab.today')],
     ['/browse', '📚', t('tab.browse')],
+    features.lessons ? ['/connectors', '🔗', t('tab.connectors')] : null,
     features.characters ? ['/characters', 'あ', t('tab.characters')] : null,
     features.scenarios ? ['/scenarios', '🗣️', t('tab.scenarios')] : null,
     ['/settings', '⚙️', t('tab.settings')],
   ].filter(Boolean);
-  clear(nav).append(...tabs.map(([path, icon, label]) =>
+  return tabs.length > MAX_TABS ? tabs.filter(([path]) => path !== '/scenarios') : tabs;
+}
+
+/** Whether Scenarios has its own tab; if not, Learn lists them. */
+const scenariosTabbed = (features) => tabsFor(features).some(([path]) => path === '/scenarios');
+
+function renderTabbar(features) {
+  const nav = document.querySelector('.tabbar');
+  if (!nav) return;
+  clear(nav).append(...tabsFor(features).map(([path, icon, label]) =>
     el('a', { href: link(path), dataset: { path } }, el('span', {}, icon), label)));
 }
 
 function highlightNav(path) {
-  document.querySelectorAll('.tabbar a').forEach((a) => {
+  const tabs = [...document.querySelectorAll('.tabbar a')];
+  // Sub-routes keep their section lit: /characters/hiragana is still
+  // "Characters", /category/airport and /mine are part of Learn — and so are
+  // the scenarios, when they have no tab of their own.
+  const learnOwns = tabs.some((a) => a.dataset.path === '/scenarios')
+    ? /^\/(category|mine)(\/|$)/
+    : /^\/(category|mine|scenarios?)(\/|$)/;
+  tabs.forEach((a) => {
     const target = a.dataset.path;
-    // Sub-routes keep their section lit: /characters/hiragana is still
-    // "Characters", /category/airport and /mine are part of Learn.
     const owns = target === '/'
       ? path === '/'
       : path === target || path.startsWith(`${target}/`) ||
-        (target === '/browse' && /^\/(category|mine)(\/|$)/.test(path));
+        (target === '/browse' && learnOwns.test(path)) ||
+        (target === '/scenarios' && /^\/scenario\//.test(path));
     a.classList.toggle('active', owns);
   });
 }
@@ -214,7 +241,7 @@ function highlightNav(path) {
 function countLine(d) {
   const n = (d.items || d.phrases || []).length;
   if (d.type === 'words') return t('category.countWords', { n });
-  if (d.type === 'sentences') return t('category.countSentences', { n });
+  if (d.type === 'sentences' || d.type === 'lesson') return t('category.countSentences', { n });
   if (d.type === 'mine') return t('learn.mineCount', { n });
   return t('category.count', { n });
 }
@@ -228,7 +255,7 @@ async function today(root) {
   const { categories, decks, features, byCategory } = content;
 
   const q = await deck.queue();
-  const allDecks = [...decks, ...categories, byCategory.get(USER_DECK)].filter(Boolean);
+  const allDecks = [...decks, ...categories, ...content.lessons, byCategory.get(USER_DECK)].filter(Boolean);
   const active = allDecks.filter((d) => s.activeCategories.includes(d.id));
   const noWords = features.words && !decks.some((d) => d.type === 'words' && s.activeCategories.includes(d.id));
 
@@ -264,15 +291,32 @@ async function today(root) {
       el('h2', { class: 'section-title' }, t('today.inDeck')),
       el('div', { class: 'card-list' },
         active.length
-          ? await Promise.all(active.map(categoryRow))
+          ? await Promise.all(active.map((d) => categoryRow(d, content)))
           : el('p', { class: 'muted' }, t('today.noCategories'))),
 
+      features.lessons ? await connectorsBlock(content) : null,
       features.characters ? await charactersBlock() : null,
       await forecastBlock(),
 
       el('button', { class: 'btn btn-ghost full', onclick: () => go('/browse') }, t('today.addMore'))
     )
   );
+}
+
+/** Connectors: how many lessons have been practised, and the way in. */
+async function connectorsBlock(content) {
+  const stats = await deck.getLessonStats();
+  const practised = content.lessons.filter((l) => stats[l.id]).length;
+  return el('section', {},
+    el('h2', { class: 'section-title' }, t('connectors.title')),
+    el('a', { class: 'row-card', href: link(practised ? '/connectors/mixed' : '/connectors') },
+      el('span', { class: 'row-icon' }, '🔗'),
+      el('span', { class: 'row-body' },
+        el('span', { class: 'row-title' }, practised ? t('connectors.mixed') : t('connectors.start')),
+        el('span', { class: 'row-sub' }, t('connectors.practisedCount', { n: practised, total: content.lessons.length })),
+        el('span', { class: 'bar' },
+          el('span', { class: 'bar-fill', style: `width:${Math.round((practised / content.lessons.length) * 100)}%` }))),
+      el('span', { class: 'row-chev' }, '›')));
 }
 
 /**
@@ -367,11 +411,11 @@ function dueLine(queueLength, summary) {
   return t('today.waiting', { n: queueLength, mature: summary.mature });
 }
 
-async function categoryRow(d) {
+async function categoryRow(d, content) {
   const p = await deck.categoryProgress(d.id);
   const studied = p.total - p.new;
   const pct = p.total ? Math.round((studied / p.total) * 100) : 0;
-  return el('a', { class: 'row-card', href: link(d.id === USER_DECK ? '/mine' : `/category/${d.id}`) },
+  return el('a', { class: 'row-card', href: deckHref(content, d.id) },
     el('span', { class: 'row-icon' }, d.icon || '📄'),
     el('span', { class: 'row-body' },
       el('span', { class: 'row-title' }, d.title),
@@ -404,8 +448,22 @@ async function learn(root) {
       section(t('learn.sentences'), sentences.map((d) => browseRow(d, s)), 'kind-title'),
       words.length || sentences.length ? el('h2', { class: 'kind-title' }, t('learn.phrases')) : null,
       groups.map((group) => section(group.title, categories.filter((c) => c.group === group.id).map((c) => browseRow(c, s)))),
-      section(t('learn.mine'), [mineRow(content)], 'kind-title'))
+      section(t('learn.mine'), [mineRow(content)], 'kind-title'),
+      // When the tab bar is full, the scenarios live here instead.
+      content.features.scenarios && !scenariosTabbed(content.features)
+        ? section(t('learn.scenarios'), [scenariosRow(content)], 'kind-title')
+        : null)
   );
+}
+
+function scenariosRow(content) {
+  const n = (content.manifest.scenarios || []).length;
+  return el('a', { class: 'row-card', href: link('/scenarios') },
+    el('span', { class: 'row-icon' }, '🗣️'),
+    el('span', { class: 'row-body' },
+      el('span', { class: 'row-title' }, t('scenarios.title')),
+      el('span', { class: 'row-sub' }, t('learn.scenariosCount', { n }))),
+    el('span', { class: 'row-chev' }, '›'));
 }
 
 function browseRow(d, s) {
@@ -445,6 +503,7 @@ async function deckScreen(root, id) {
   if (id === USER_DECK) { go('/mine'); return; }
   const d = await getCategory(id);
   if (!d) { go('/browse'); return; }
+  if (d.type === 'lesson') { go(`/connectors/${id}`); return; }
   const content = await loadContent();
   const s = await studySettings();
   const active = s.activeCategories.includes(id);
@@ -500,36 +559,18 @@ function itemCard(item, s, content) {
     tagRow(item));
 }
 
-/** A sentence's words, each a link to its word deck — learned words, seen in context. */
-function wordLinks(sentence, content) {
-  const words = (sentence.chunks || []).map((c) => c.w && content.phrases.get(c.w)).filter(Boolean);
-  if (!words.length) return null;
-  return el('div', { class: 'links' },
-    el('span', { class: 'note-label' }, t('sentence.words')),
-    el('div', { class: 'ref-list' }, words.map((w) =>
-      el('a', { class: 'ref-chip', href: link(`/category/${w.categoryId}`), title: w.meaning, lang: w.targetLang },
-        `${w.target} · ${w.meaning}`))));
-}
-
-/** The sentences a word appears in. */
-function sentenceLinks(word, content) {
-  const sentences = (content.usage.get(word.id) || []).map((id) => content.phrases.get(id)).filter(Boolean);
-  if (!sentences.length) return null;
-  return el('div', { class: 'links' },
-    el('span', { class: 'note-label' }, t('word.inSentences')),
-    el('div', { class: 'ref-list' }, sentences.map((x) =>
-      el('a', { class: 'ref-chip', href: link(`/category/${x.categoryId}`), title: x.meaning, lang: x.targetLang }, x.target))));
-}
-
 /* ---------- study & review ---------- */
 
 async function studyDeck(root, id) {
+  const content = await loadContent();
   const d = await getCategory(id);
   if (!d) { go('/browse'); return; }
-  if (!(await deck.isActive(id))) await deck.activateCategory(id);
+  // Activation only adds the cards that are missing, so this is also how a
+  // lesson whose missed drills put a sentence or two in the deck gets the rest.
+  await deck.activateCategory(id);
 
   const queue = await deck.queue(id);
-  const back = link(id === USER_DECK ? '/mine' : `/category/${id}`);
+  const back = deckHref(content, id);
   if (!queue.length) {
     root.append(emptyStudy(t('study.nothingIn', { title: d.title }), back));
     return;

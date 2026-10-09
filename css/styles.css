@@ -596,6 +596,83 @@ textarea.text-input { resize: vertical; min-height: 64px; }
 
 .nudge { margin-top: 12px; border-style: dashed; }
 
+/* ---------- connectors ---------- */
+
+.connector-mark {
+  flex: none; min-width: 4.2em; text-align: center;
+  font-family: var(--font-jp); font-size: 1.35rem; font-weight: 700; color: var(--accent);
+}
+.connector-title { font-family: var(--font-jp); font-size: 2.4rem; color: var(--accent); }
+.lesson-pattern {
+  display: flex; flex-direction: column; gap: 2px; margin: 4px 0 16px; padding: 10px 12px;
+  background: var(--bg-sunk); border-radius: 10px; font-size: 1.05rem;
+}
+.lesson-explanation { line-height: 1.85; }
+.prose ruby rt { font-size: 0.55em; }
+.note-natural { border-left-color: var(--ok); }
+.note-stiff { border-left-color: var(--warn); }
+.lesson .notes { margin: 4px 0 8px; }
+.lesson .note { font-size: 0.9rem; line-height: 1.75; }
+
+.drill-card {
+  background: var(--bg-raised); border: 1px solid var(--line); border-radius: 18px;
+  padding: 20px 18px; display: flex; flex-direction: column; gap: 14px;
+}
+.drill-kind { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.7rem; color: var(--fg-muted); }
+.drill-card > .meaning.big { margin: 0; font-size: 1.2rem; }
+.drill-sentence { font-size: 1.45rem; line-height: 2.1; }
+/* The text either side of the gap is one sentence, not three blocks. */
+.drill-sentence .target { display: inline; font-size: inherit; line-height: inherit; word-break: normal; }
+.gap {
+  display: inline-block; min-width: 3.2em; text-align: center; margin: 0 2px; padding: 0 6px;
+  border-bottom: 2px solid var(--accent); color: var(--fg-muted);
+}
+.gap.is-right { border-bottom-color: var(--ok); color: var(--fg); }
+.gap.is-wrong { border-bottom-color: var(--warn); color: var(--fg); }
+
+.drill-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; }
+.option { min-height: 54px; font-size: 1.2rem; }
+.option .target { font-size: inherit; line-height: 1.7; }
+.option.is-right, .option.is-answer { border-color: var(--ok); background: color-mix(in srgb, var(--ok) 14%, var(--bg-raised)); }
+.option.is-ok { border-color: var(--info); background: color-mix(in srgb, var(--info) 14%, var(--bg-raised)); }
+.option.is-wrong { border-color: var(--accent); background: var(--accent-soft); }
+.option:disabled { cursor: default; opacity: 1; }
+.option:disabled:not(.is-right):not(.is-ok):not(.is-wrong):not(.is-answer) { opacity: 0.45; }
+
+.tile-answer {
+  display: flex; flex-wrap: wrap; gap: 6px; align-items: center; min-height: 64px;
+  padding: 8px; border: 1px dashed var(--line); border-radius: 12px; background: var(--bg-sunk);
+}
+.tile-answer.is-right { border-style: solid; border-color: var(--ok); }
+.tile-answer.is-wrong { border-style: solid; border-color: var(--accent); }
+.tile-hint { color: var(--fg-muted); font-size: 0.85rem; padding: 0 6px; }
+.tile-pool { display: flex; flex-wrap: wrap; gap: 6px; min-height: 48px; }
+.tile {
+  font: inherit; color: var(--fg); cursor: pointer;
+  background: var(--bg-raised); border: 1px solid var(--line); border-radius: 10px;
+  padding: 4px 10px; min-height: 44px; font-size: 1.15rem;
+}
+.tile .target { font-size: inherit; line-height: 1.75; }
+.tile:active { transform: scale(0.97); }
+.tile:disabled { cursor: default; }
+.tile-answer .tile { border-color: color-mix(in srgb, var(--accent) 50%, var(--line)); }
+.drill-actions { margin: 0; justify-content: flex-end; }
+
+.combine-parts { display: flex; flex-direction: column; gap: 6px; }
+.combine-part { background: var(--bg-sunk); border-radius: 10px; padding: 6px 12px; }
+.combine-part .target { font-size: 1.2rem; line-height: 1.85; }
+.combine-plus { text-align: center; color: var(--fg-muted); line-height: 1; }
+.drill-card > p.meaning { margin: 0; color: var(--fg-muted); font-size: 0.9rem; }
+
+.drill-feedback:empty { display: none; }
+.drill-feedback { display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--line); padding-top: 14px; }
+.verdict { margin: 0; font-weight: 700; }
+.verdict-right { color: var(--ok); }
+.verdict-ok { color: var(--info); }
+.verdict-wrong { color: var(--accent); }
+.drill-answer .target { font-size: 1.3rem; line-height: 1.9; }
+.practice-done .action-row { justify-content: center; }
+
 /* ---------- toast ---------- */
 
 #toast-host {

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "id": "con-toki",
+  "connector": "とき",
+  "gloss": "when, at the time",
+  "title": "とき — when, at the time",
+  "pattern": "A とき、B",
+  "explanation": "とき means \"when\", or \"at the time that\". The verb before it sets the timing: {日本|にほん}に{行|い}くとき (when I’m going to Japan — before I’m there) and {日本|にほん}に{行|い}ったとき (when I went — once I was there). Nouns take の ({子供|こども}のとき), な-adjectives keep な ({暇|ひま}なとき), い-adjectives go straight in ({寂|さび}しいとき).",
+  "natural": "Talking about times, habits and memories: {子供|こども}のとき, {暇|ひま}なとき, {疲|つか}れたとき. Fine in any register.",
+  "stiff": "For a one-off \"if\" about the future — if it rains tomorrow, if you’re free tonight — people say たら: {明日|あした}{雨|あめ}だったら…",
+  "examples": [
+    {
+      "id": "cx-toki-1",
+      "japanese": "子供のとき、よく公園で遊んだ。",
+      "furigana": "{子供|こども}のとき、よく{公園|こうえん}で{遊|あそ}んだ。",
+      "english": "When I was a kid, I often played in the park.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{子供|こども}のとき、",
+          "w": "w-kodomo"
+        },
+        {
+          "t": "よく{公園|こうえん}で",
+          "w": "w-kouen"
+        },
+        {
+          "t": "{遊|あそ}んだ。",
+          "w": "w-asobu"
+        }
+      ],
+      "gap": {
+        "before": "{子供|こども}",
+        "answer": "のとき",
+        "after": "、よく{公園|こうえん}で{遊|あそ}んだ。",
+        "options": [
+          "のとき",
+          "なとき",
+          "とき"
+        ],
+        "why": "Nouns take の before とき: 子供のとき, 休みのとき."
+      },
+      "audio": "audio/ja/connectors/cx-toki-1.mp3",
+      "tags": [
+        "connectors",
+        "toki"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-toki-2",
+      "japanese": "暇なとき、何をしていますか。",
+      "furigana": "{暇|ひま}なとき、{何|なに}をしていますか。",
+      "english": "What do you do in your free time?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{暇|ひま}なとき、",
+          "w": "w-hima"
+        },
+        {
+          "t": "{何|なに}を",
+          "w": "w-nani"
+        },
+        {
+          "t": "していますか。",
+          "w": "w-suru"
+        }
+      ],
+      "gap": {
+        "before": "{暇|ひま}",
+        "answer": "なとき",
+        "after": "、{何|なに}をしていますか。",
+        "options": [
+          "なとき",
+          "のとき",
+          "いとき"
+        ],
+        "why": "な-adjectives keep their な: 暇なとき, 静かなとき."
+      },
+      "audio": "audio/ja/connectors/cx-toki-2.mp3",
+      "tags": [
+        "connectors",
+        "toki"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-toki-3",
+      "japanese": "寝るとき、電気を消してね。",
+      "furigana": "{寝|ね}るとき、{電気|でんき}を{消|け}してね。",
+      "english": "Turn off the light when you go to bed.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{寝|ね}るとき、",
+          "w": "w-neru"
+        },
+        {
+          "t": "{電気|でんき}を",
+          "w": "w-denki"
+        },
+        {
+          "t": "{消|け}してね。"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "{寝|ね}る",
+        "after": "とき、{電気|でんき}を{消|け}してね。",
+        "options": [
+          "{寝|ね}る",
+          "{寝|ね}た",
+          "{寝|ね}て"
+        ],
+        "why": "Before you’re asleep, so the dictionary form: 寝るとき. 寝たとき would mean once you’re already asleep."
+      },
+      "audio": "audio/ja/connectors/cx-toki-3.mp3",
+      "tags": [
+        "connectors",
+        "toki"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-toki-4",
+      "japanese": "寂しいとき、彼女に電話します。",
+      "furigana": "{寂|さび}しいとき、{彼女|かのじょ}に{電話|でんわ}します。",
+      "english": "When I’m lonely, I call my girlfriend.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{寂|さび}しいとき、",
+          "w": "w-sabishii"
+        },
+        {
+          "t": "{彼女|かのじょ}に",
+          "w": "w-kanojo"
+        },
+        {
+          "t": "{電話|でんわ}します。",
+          "w": "w-denwa"
+        }
+      ],
+      "gap": {
+        "before": "{寂|さび}しい",
+        "answer": "とき",
+        "after": "、{彼女|かのじょ}に{電話|でんわ}します。",
+        "options": [
+          "とき",
+          "なとき",
+          "のとき"
+        ],
+        "why": "い-adjectives go straight into とき: 寂しいとき, 忙しいとき."
+      },
+      "combine": {
+        "a": "{寂|さび}しいです。",
+        "b": "{彼女|かのじょ}に{電話|でんわ}します。",
+        "distractors": [
+          "{寂|さび}しいですとき、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-toki-4.mp3",
+      "tags": [
+        "connectors",
+        "toki"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

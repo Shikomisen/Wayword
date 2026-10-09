@@ -72,6 +72,7 @@
       "seenIn": [
         "w-hito",
         "w-hitori",
+        "cx-te-4",
         "num-15",
         "num-16",
         "eme-09"
@@ -134,9 +135,9 @@
         "w-nani",
         "s-04",
         "s-08",
+        "cx-toki-2",
         "num-10",
-        "num-12",
-        "num-13"
+        "num-12"
       ]
     },
     {
@@ -198,7 +199,10 @@
       "seenIn": [
         "w-kazoku",
         "w-ie",
-        "s-12"
+        "s-12",
+        "cx-kara-1",
+        "cx-tara-1",
+        "cx-tara-3"
       ]
     },
     {
@@ -285,7 +289,8 @@
       "difficulty": 1,
       "note": "子供 (こども) is a child; 女の子 a girl, 男の子 a boy.",
       "seenIn": [
-        "w-kodomo"
+        "w-kodomo",
+        "cx-toki-1"
       ]
     },
     {
@@ -375,7 +380,10 @@
       "seenIn": [
         "w-kanojo",
         "w-kare",
-        "w-kareshi"
+        "w-kareshi",
+        "cx-te-4",
+        "cx-soshite-3",
+        "cx-dakara-4"
       ]
     },
     {
@@ -408,8 +416,8 @@
         "w-ima",
         "w-konban",
         "s-03",
-        "num-10",
-        "num-19"
+        "cx-kara-3",
+        "cx-node-2"
       ]
     },
     {
@@ -440,6 +448,7 @@
       "seenIn": [
         "w-asa",
         "w-asagohan",
+        "cx-te-1",
         "hot-06"
       ]
     },
@@ -527,7 +536,8 @@
       "seenIn": [
         "w-konban",
         "w-bangohan",
-        "s-04"
+        "s-04",
+        "cx-sorekara-2"
       ]
     },
     {
@@ -556,7 +566,9 @@
       "note": "毎日 (まいにち) every day, 毎朝 (まいあさ) every morning.",
       "seenIn": [
         "w-mainichi",
-        "s-02"
+        "s-02",
+        "cx-demo-4",
+        "cx-tame-4"
       ]
     },
     {
@@ -620,6 +632,7 @@
       "seenIn": [
         "w-raishuu",
         "w-kuru",
+        "cx-shi-1",
         "gre-22",
         "air-10",
         "sma-05"
@@ -652,6 +665,7 @@
       "note": "先週 (せんしゅう) last week, 先生 (せんせい) teacher.",
       "seenIn": [
         "w-senshuu",
+        "cx-kara-2",
         "cas-33"
       ]
     },
@@ -716,8 +730,10 @@
       "seenIn": [
         "w-jikan",
         "w-maniau",
-        "num-20",
-        "air-03"
+        "cx-demo-2",
+        "cx-tara-2",
+        "cx-shi-4",
+        "num-20"
       ]
     },
     {
@@ -747,9 +763,10 @@
       "seenIn": [
         "w-miru",
         "s-09",
-        "dir-10",
-        "sho-05",
-        "eme-10"
+        "cx-soshite-1",
+        "cx-sorekara-2",
+        "cx-tara-3",
+        "cx-nagara-3"
       ]
     },
     {
@@ -778,7 +795,9 @@
       "difficulty": 2,
       "note": "新聞 (しんぶん) — a newspaper: \"new things heard\".",
       "seenIn": [
-        "w-kiku"
+        "w-kiku",
+        "cx-kedo-4",
+        "cx-nagara-1"
       ]
     },
     {
@@ -840,8 +859,9 @@
         "w-hanasu",
         "w-denwa",
         "s-13",
-        "gre-18",
-        "eme-09"
+        "cx-demo-4",
+        "cx-tara-1",
+        "cx-toki-4"
       ]
     },
     {
@@ -928,11 +948,11 @@
       "note": "食事 (しょくじ) — a meal.",
       "seenIn": [
         "w-taberu",
+        "cx-kara-4",
+        "cx-tara-2",
+        "cx-nagara-3",
         "hot-06",
-        "res-04",
-        "res-08",
-        "sma-04",
-        "cas-21"
+        "res-04"
       ]
     },
     {
@@ -962,7 +982,10 @@
       "note": "飲み物 (のみもの) — a drink.",
       "seenIn": [
         "w-nomu",
-        "s-05"
+        "s-05",
+        "cx-te-1",
+        "cx-to-4",
+        "cx-nagara-4"
       ]
     },
     {
@@ -993,6 +1016,7 @@
       "seenIn": [
         "w-kau",
         "w-kaimono",
+        "cx-ba-3",
         "tra-02"
       ]
     },
@@ -1087,6 +1111,8 @@
       "note": "ただいま is what you say as you get back; 帰る is the going.",
       "seenIn": [
         "w-kaeru",
+        "cx-kara-3",
+        "cx-tara-4",
         "air-06",
         "cas-34"
       ]
@@ -1118,7 +1144,10 @@
       "note": "休み (やすみ) — a day off, a holiday.",
       "seenIn": [
         "w-yasumu",
-        "w-yasumi"
+        "w-yasumi",
+        "cx-node-2",
+        "cx-dakara-1",
+        "cx-nagara-4"
       ]
     },
     {
@@ -1233,7 +1262,9 @@
       ],
       "difficulty": 3,
       "seenIn": [
-        "w-tsukuru"
+        "w-tsukuru",
+        "cx-sorekara-2",
+        "cx-tame-2"
       ]
     },
     {
@@ -1266,7 +1297,9 @@
         "w-aruku",
         "w-sanpo",
         "s-06",
-        "dir-08"
+        "cx-te-2",
+        "cx-ba-4",
+        "cx-nagara-2"
       ]
     },
     {
@@ -1297,6 +1330,7 @@
       "note": "出かける (でかける) to go out; 出口 (でぐち) an exit.",
       "seenIn": [
         "w-dekakeru",
+        "cx-dakara-1",
         "air-15",
         "sma-03"
       ]
@@ -1327,7 +1361,11 @@
       "difficulty": 3,
       "seenIn": [
         "w-neru",
-        "cas-33"
+        "cx-sorekara-4",
+        "cx-kara-2",
+        "cx-dakara-2",
+        "cx-ba-2",
+        "cx-toki-3"
       ]
     },
     {
@@ -1355,7 +1393,8 @@
       ],
       "difficulty": 3,
       "seenIn": [
-        "w-okiru"
+        "w-okiru",
+        "cx-te-1"
       ]
     },
     {
@@ -1386,6 +1425,8 @@
       "note": "好き is a な-adjective: 好きです, 好きな人.",
       "seenIn": [
         "w-suki",
+        "cx-dakara-4",
+        "cx-shi-3",
         "sma-04",
         "cas-29"
       ]
@@ -1420,8 +1461,9 @@
         "w-tanoshii",
         "w-ongaku",
         "w-tanoshimi",
-        "sma-10",
-        "cas-18"
+        "cx-kedo-2",
+        "cx-nagara-1",
+        "sma-10"
       ]
     },
     {
@@ -1508,7 +1550,9 @@
       "difficulty": 2,
       "note": "Both tall and pricey. 高校 (こうこう) is high school.",
       "seenIn": [
-        "w-takai"
+        "w-takai",
+        "cx-kedo-1",
+        "cx-ga-2"
       ]
     },
     {
@@ -1539,7 +1583,10 @@
       "seenIn": [
         "w-yasui",
         "s-15",
-        "sho-07"
+        "cx-te-3",
+        "cx-demo-3",
+        "cx-ba-3",
+        "cx-shi-1"
       ]
     },
     {
@@ -1569,7 +1616,8 @@
       "note": "元気 (げんき) — well, full of energy.",
       "seenIn": [
         "w-genki",
-        "s-12"
+        "s-12",
+        "cx-ba-2"
       ]
     },
     {
@@ -1603,7 +1651,7 @@
         "w-tenki",
         "s-10",
         "s-12",
-        "eme-03"
+        "cx-to-3"
       ]
     },
     {
@@ -1661,7 +1709,10 @@
       "difficulty": 2,
       "seenIn": [
         "w-mise",
-        "s-15"
+        "s-15",
+        "cx-te-3",
+        "cx-kedo-1",
+        "cx-shi-1"
       ]
     },
     {
@@ -1692,10 +1743,10 @@
       "seenIn": [
         "w-densha",
         "w-kuruma",
+        "cx-te-2",
+        "cx-node-1",
         "tra-04",
-        "tra-19",
-        "tra-20",
-        "eme-04"
+        "tra-19"
       ]
     },
     {
@@ -1728,7 +1779,7 @@
         "w-denwa",
         "s-10",
         "s-13",
-        "tra-04"
+        "cx-te-2"
       ]
     },
     {
@@ -1843,6 +1894,7 @@
       "difficulty": 2,
       "seenIn": [
         "w-michi",
+        "cx-dakara-3",
         "tra-11",
         "dir-04"
       ]
@@ -1873,7 +1925,11 @@
       "difficulty": 1,
       "seenIn": [
         "w-ame",
-        "s-07"
+        "s-07",
+        "cx-kara-1",
+        "cx-node-3",
+        "cx-tara-3",
+        "cx-shi-2"
       ]
     },
     {
@@ -1959,7 +2015,8 @@
       ],
       "difficulty": 2,
       "seenIn": [
-        "w-haru"
+        "w-haru",
+        "cx-to-1"
       ]
     },
     {
@@ -2074,10 +2131,10 @@
       "seenIn": [
         "w-nihongo",
         "s-02",
-        "gre-15",
-        "sma-02",
-        "sma-04",
-        "sma-06"
+        "cx-kedo-2",
+        "cx-ga-3",
+        "cx-tame-1",
+        "gre-15"
       ]
     },
     {
@@ -2109,9 +2166,9 @@
         "w-nihongo",
         "w-eigo",
         "s-02",
-        "gre-15",
-        "gre-18",
-        "eme-09"
+        "cx-kedo-2",
+        "cx-ga-3",
+        "cx-tame-1"
       ]
     },
     {
@@ -2139,7 +2196,9 @@
       "difficulty": 2,
       "note": "Two kanji, one word — 仕 on its own is rarely met.",
       "seenIn": [
-        "w-shigoto"
+        "w-shigoto",
+        "cx-sorekara-1",
+        "cx-tara-4"
       ]
     },
     {
@@ -2169,6 +2228,9 @@
       "seenIn": [
         "w-benkyou",
         "s-02",
+        "cx-demo-4",
+        "cx-nagara-1",
+        "cx-tame-1",
         "sma-06"
       ]
     }

@@ -6,8 +6,43 @@
 
 import * as deck from './deck.js';
 import * as audio from './audio.js';
+import { USER_DECK } from './content.js';
+import { link } from './course.js';
 import { t } from './i18n.js';
 import { el, toast } from './render.js';
+
+/**
+ * Where a deck lives in the app: a connector lesson opens in Connectors,
+ * your own words in their own screen, a character set in Characters, and
+ * everything else on the deck screen.
+ */
+export function deckHref(content, deckId) {
+  if (deckId === USER_DECK) return link('/mine');
+  if (content.byCategory.get(deckId)?.type === 'lesson') return link(`/connectors/${deckId}`);
+  if (content.bySet?.has(deckId)) return link(`/characters/${deckId}`);
+  return link(`/category/${deckId}`);
+}
+
+/** A sentence's words, each a link to its word deck — learned words, seen in context. */
+export function wordLinks(sentence, content) {
+  const words = (sentence.chunks || []).map((c) => c.w && content.phrases.get(c.w)).filter(Boolean);
+  if (!words.length) return null;
+  return el('div', { class: 'links' },
+    el('span', { class: 'note-label' }, t('sentence.words')),
+    el('div', { class: 'ref-list' }, words.map((w) =>
+      el('a', { class: 'ref-chip', href: deckHref(content, w.categoryId), title: w.meaning, lang: w.targetLang },
+        `${w.target} · ${w.meaning}`))));
+}
+
+/** The sentences a word appears in — sentence decks and connector lessons alike. */
+export function sentenceLinks(word, content) {
+  const sentences = (content.usage.get(word.id) || []).map((id) => content.phrases.get(id)).filter(Boolean);
+  if (!sentences.length) return null;
+  return el('div', { class: 'links' },
+    el('span', { class: 'note-label' }, t('word.inSentences')),
+    el('div', { class: 'ref-list' }, sentences.map((x) =>
+      el('a', { class: 'ref-chip', href: deckHref(content, x.categoryId), title: x.meaning, lang: x.targetLang }, x.target))));
+}
 
 export function header(title, subtitle) {
   return el('header', { class: 'screen-header' },

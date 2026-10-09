@@ -153,6 +153,21 @@ function collect(course) {
     }
   }
 
+  // Connector lessons: one clip per example sentence. The drills reuse them.
+  for (const entry of manifest.lessons || []) {
+    if (ONLY && !ONLY.has(entry.id)) continue;
+    const path = resolve(ROOT, entry.file);
+    if (!existsSync(path)) {
+      problems.push(`missing lesson file: ${entry.file}`);
+      continue;
+    }
+    const lesson = JSON.parse(readFileSync(path, 'utf8'));
+    for (const ex of lesson.examples || []) {
+      if (!ex.audio) { problems.push(`${ex.id}: no audio path declared`); continue; }
+      job(ex.id, entry.id, spoken(ex), ex.audio);
+    }
+  }
+
   // Character sets (kana / kanji) use the same declared-path convention as
   // phrases, so they need no special handling beyond reading a different key.
   for (const entry of manifest.characterSets || []) {

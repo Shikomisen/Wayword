@@ -468,9 +468,94 @@ check('switching listening off parks its cards rather than deleting them',
   (await deck.queue()).every((c) => srs.dirOf(c) !== srs.DIR.LISTENING) &&
   (await deck.getDeck()).some((c) => srs.dirOf(c) === srs.DIR.LISTENING));
 
-/* ---------- 10. a second course ---------- */
+/* ---------- 10. connectors ---------- */
 
-console.log('\n10. Second course — English for Japanese speakers (ja-en)');
+console.log('\n10. Connectors — lessons, drills, misses into the deck');
+
+const drills = await import('../js/drills.js');
+const lessons = content.lessons;
+check('every connector lesson loads', lessons.length === content.manifest.lessons.length && lessons.every((l) => !l.missing),
+  lessons.map((l) => l.connector).join(' '));
+check('the course knows it has connectors', content.features.lessons === true);
+check('the sixteen connectors asked for are all there',
+  ['〜て', 'から', 'ので', 'けど', 'が', 'でも', 'だから', 'それから', 'そして', 'と', 'たら', 'ば', 'し', 'ために', 'とき', 'ながら']
+    .every((c) => lessons.some((l) => l.connector === c)));
+check('each lesson explains itself and says when it sounds natural or stiff',
+  lessons.every((l) => l.explanation && l.natural && l.stiff && l.pattern));
+check('each lesson has 3–5 example sentences with audio, and furigana on every kanji',
+  lessons.every((l) => l.items.length >= 3 && l.items.length <= 5 &&
+    l.items.every((x) => x.kind === 'sentence' && x.audio &&
+      (x.ruby || [{ b: x.target }]).every((seg) => seg.r || !/[㐀-鿿豈-﫿々]/u.test(seg.b)))));
+check('examples reuse the word decks\' words', (content.usage.get('w-ame') || []).includes('cx-kara-1'),
+  (content.usage.get('w-ame') || []).join(', '));
+
+const kara = content.byCategory.get('con-kara');
+const kara1 = kara.items[0];
+check('a fill-in gap is the sentence around the connector',
+  kara1.gap.before.target + kara1.gap.answer.target + kara1.gap.after.target === kara1.target,
+  `${kara1.gap.before.target}［${kara1.gap.answer.target}］${kara1.gap.after.target}`);
+check('…its options carry their verdicts: one right, ので also right, the rest wrong',
+  kara1.gap.options.filter((o) => o.verdict === 'right').length === 1 &&
+  kara1.gap.options.find((o) => o.target === 'ので')?.verdict === 'ok' &&
+  kara1.gap.options.find((o) => o.target === 'けど')?.verdict === 'wrong');
+
+const karaDrills = drills.drillsFor(kara);
+check('a lesson makes all three kinds of drill',
+  Object.values(drills.DRILL).every((type) => karaDrills.some((d) => d.type === type)),
+  Object.values(drills.DRILL).map((type) => `${type} ${karaDrills.filter((d) => d.type === type).length}`).join(', '));
+const session = drills.buildSession([kara]);
+check('a lesson session uses every drill once', session.length === karaDrills.length);
+check('…without the same sentence twice in a row where avoidable',
+  session.every((d, i) => i === 0 || d.ex.id !== session[i - 1].ex.id));
+check('a mixed session is capped', drills.buildSession(lessons, { size: 12 }).length === 12);
+
+const orderDrill = karaDrills.find((d) => d.type === drills.DRILL.ORDER);
+const tiles = drills.tilesFor(orderDrill);
+const ordered = [...tiles].sort((a, b) => a.chunk - b.chunk);
+check('order tiles never start out already in order',
+  Array.from({ length: 30 }, () => drills.tilesFor(orderDrill)).every((ts) => !drills.checkTiles(orderDrill, ts)));
+check('putting the pieces in order is right', drills.checkTiles(orderDrill, ordered));
+check('…leaving one out is wrong', !drills.checkTiles(orderDrill, ordered.slice(1)));
+const shi = content.byCategory.get('con-shi').items[0];
+const shiDrill = { type: drills.DRILL.ORDER, ex: shi };
+check('a sentence that allows two orders accepts both',
+  drills.checkTiles(shiDrill, [0, 1, 2, 3].map((chunk) => ({ chunk }))) &&
+  drills.checkTiles(shiDrill, [0, 2, 1, 3].map((chunk) => ({ chunk }))) &&
+  !drills.checkTiles(shiDrill, [1, 0, 2, 3].map((chunk) => ({ chunk }))));
+const combineDrill = karaDrills.find((d) => d.type === drills.DRILL.COMBINE);
+const combineTiles = drills.tilesFor(combineDrill);
+check('combine tiles include the traps', combineTiles.some((tile) => tile.trap !== undefined));
+const realPieces = combineTiles.filter((tile) => tile.trap === undefined).sort((a, b) => a.chunk - b.chunk);
+check('combining with the real pieces is right', drills.checkTiles(combineDrill, realPieces));
+check('…and using a trap is wrong',
+  !drills.checkTiles(combineDrill, [combineTiles.find((tile) => tile.trap !== undefined), ...realPieces.slice(1)]));
+
+// A missed drill puts its sentence in the deck, due again within minutes.
+check('a sentence is not in the deck before it is missed', !(await deck.getCard('cx-kara-2')));
+const missed = await deck.recordMiss('cx-kara-2', 'con-kara');
+check('missing it adds its cards, the "say it" one failed',
+  missed?.id === 'cx-kara-2~p' && missed.state === 'learning' && Boolean(await deck.getCard('cx-kara-2')),
+  `${missed?.id} ${missed?.state}`);
+check('…so it comes back within the hour, not days later',
+  missed.due - Date.now() <= srs.DAY / 24 && srs.dueCards([missed], Date.now() + srs.DAY / 24).length === 1);
+check('…and the lesson counts as a deck you study', (await deck.getSettings()).activeCategories.includes('con-kara'));
+check('only the missed sentence was added, not the whole lesson', !(await deck.getCard('cx-kara-3')));
+const karaRest = await deck.activateCategory('con-kara');
+check('"Study as cards" then adds the rest of the lesson',
+  karaRest.added === (kara.items.length - 1) * 2 && Boolean(await deck.getCard('cx-kara-3')), `+${karaRest.added}`);
+
+const drillsBefore = (await deck.todayStats()).drills;
+await deck.recordPractice({ 'con-kara': { right: 7, total: 10 }, 'con-node': { right: 4, total: 4 } });
+await deck.recordPractice({ 'con-kara': { right: 9, total: 10 } });
+const lessonStats = await deck.getLessonStats();
+check('practice is recorded per lesson, keeping the best session',
+  lessonStats['con-kara'].sessions === 2 && lessonStats['con-kara'].best.right === 9 && lessonStats['con-node'].best.total === 4,
+  JSON.stringify(lessonStats['con-kara']));
+check('drills count toward the day', (await deck.todayStats()).drills === drillsBefore + 24);
+
+/* ---------- 11. a second course ---------- */
+
+console.log('\n11. Second course — English for Japanese speakers (ja-en)');
 
 const course = await import('../js/course.js');
 const store = await import('../js/store.js');
@@ -495,8 +580,9 @@ check('the meaning is Japanese', wake.meaning.includes('モーニングコール
 check('English carries no furigana or romaji', wake.ruby === null && wake.reading === null);
 check('notes use this course\'s own labels', wake.notes.map((n) => n.label).join(',') === '使い方,よくある間違い',
   wake.notes.map((n) => n.label).join(', '));
-check('features: scenarios yes; characters, furigana, romaji, word decks no',
-  en.features.scenarios && !en.features.characters && !en.features.ruby && !en.features.reading && !en.features.words);
+check('features: scenarios yes; characters, furigana, romaji, word decks, connectors no',
+  en.features.scenarios && !en.features.characters && !en.features.ruby && !en.features.reading &&
+  !en.features.words && !en.features.lessons);
 check('a course nobody has opened is not onboarded', !(await deck.isOnboarded()));
 check('…and starts with an empty deck', (await deck.getDeck()).length === 0);
 

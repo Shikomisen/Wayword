@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "con-dakara",
+  "connector": "だから",
+  "gloss": "so, that’s why",
+  "title": "だから — so, that’s why",
+  "pattern": "A。だから、B。",
+  "explanation": "だから opens a new sentence with the result of the one before — a から that stands on its own. In polite speech it’s ですから, and many people use なので the same way at the start of a sentence.",
+  "natural": "Drawing a conclusion in conversation: {明日|あした}は{休|やす}み。だから、{出|で}かけよう！ — Tomorrow’s a day off. So let’s go out!",
+  "stiff": "Said sharply on its own, だから！ means \"like I said!\" and sounds irritated. In polite talk ですから can come across as lecturing; なので is softer.",
+  "examples": [
+    {
+      "id": "cx-dakara-1",
+      "japanese": "明日は休みだ。だから、出かけよう！",
+      "furigana": "{明日|あした}は{休|やす}みだ。だから、{出|で}かけよう！",
+      "english": "Tomorrow’s a day off. So let’s go out!",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{休|やす}みだ。",
+          "w": "w-yasumi"
+        },
+        {
+          "t": "だから、"
+        },
+        {
+          "t": "{出|で}かけよう！",
+          "w": "w-dekakeru"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}は{休|やす}みだ。",
+        "answer": "だから",
+        "after": "、{出|で}かけよう！",
+        "options": [
+          "だから",
+          "でも",
+          "けど"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-dakara-1.mp3",
+      "tags": [
+        "connectors",
+        "dakara"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-dakara-2",
+      "japanese": "昨日はあまり寝ていません。だから、眠いです。",
+      "furigana": "{昨日|きのう}はあまり{寝|ね}ていません。だから、{眠|ねむ}いです。",
+      "english": "I didn’t sleep much last night. That’s why I’m sleepy.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{昨日|きのう}はあまり",
+          "w": "w-kinou"
+        },
+        {
+          "t": "{寝|ね}ていません。",
+          "w": "w-neru"
+        },
+        {
+          "t": "だから、"
+        },
+        {
+          "t": "{眠|ねむ}いです。",
+          "w": "w-nemui"
+        }
+      ],
+      "gap": {
+        "before": "{昨日|きのう}はあまり{寝|ね}ていません。",
+        "answer": "だから",
+        "after": "、{眠|ねむ}いです。",
+        "options": [
+          "だから",
+          "なので",
+          "でも",
+          "それから"
+        ],
+        "ok": [
+          "なので"
+        ],
+        "note": "なので works too, and is a little softer."
+      },
+      "audio": "audio/ja/connectors/cx-dakara-2.mp3",
+      "tags": [
+        "connectors",
+        "dakara"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-dakara-3",
+      "japanese": "道が混んでいます。ですから、少し遅れます。",
+      "furigana": "{道|みち}が{混|こ}んでいます。ですから、{少|すこ}し{遅|おく}れます。",
+      "english": "The roads are busy, so I’ll be a little late.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{道|みち}が",
+          "w": "w-michi"
+        },
+        {
+          "t": "{混|こ}んでいます。"
+        },
+        {
+          "t": "ですから、"
+        },
+        {
+          "t": "{少|すこ}し"
+        },
+        {
+          "t": "{遅|おく}れます。",
+          "w": "w-okureru"
+        }
+      ],
+      "gap": {
+        "before": "{道|みち}が{混|こ}んでいます。",
+        "answer": "ですから",
+        "after": "、{少|すこ}し{遅|おく}れます。",
+        "options": [
+          "ですから",
+          "ですけど",
+          "でしたら"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-dakara-3.mp3",
+      "tags": [
+        "connectors",
+        "dakara"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-dakara-4",
+      "japanese": "彼女は猫が好きだ。だから、猫カフェに行った。",
+      "furigana": "{彼女|かのじょ}は{猫|ねこ}が{好|す}きだ。だから、{猫|ねこ}{カフェ|かふぇ}に{行|い}った。",
+      "english": "She loves cats. So we went to a cat café.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{彼女|かのじょ}は",
+          "w": "w-kanojo"
+        },
+        {
+          "t": "{猫|ねこ}が"
+        },
+        {
+          "t": "{好|す}きだ。",
+          "w": "w-suki"
+        },
+        {
+          "t": "だから、"
+        },
+        {
+          "t": "{猫|ねこ}{カフェ|かふぇ}に"
+        },
+        {
+          "t": "{行|い}った。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{彼女|かのじょ}は{猫|ねこ}が{好|す}きだ。",
+        "answer": "だから",
+        "after": "、{猫|ねこ}{カフェ|かふぇ}に{行|い}った。",
+        "options": [
+          "だから",
+          "でも",
+          "けど"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-dakara-4.mp3",
+      "tags": [
+        "connectors",
+        "dakara"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

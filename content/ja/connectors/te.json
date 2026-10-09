@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "id": "con-te",
+  "connector": "〜て",
+  "gloss": "and, and then",
+  "title": "〜て — and, and then",
+  "pattern": "A〜て、B",
+  "explanation": "The て form strings actions together in the order they happen: {起|お}きて、{顔|かお}を{洗|あら}って、{朝|あさ}ご{飯|はん}を{食|た}べる — get up, wash, have breakfast. Only the last verb shows the tense and the politeness; every verb before it is just て. Adjectives join the same way: い-adjectives with くて ({安|やす}くておいしい — cheap and tasty), な-adjectives and nouns with で ({静|しず}かできれい — quiet and pretty).",
+  "natural": "The default way to join actions and descriptions, casual or polite. Two or three links in one sentence is normal.",
+  "stiff": "A long chain of て-forms sounds like a list being read out — break it up with それから, or start a new sentence. ます inside the chain ({食|た}べまして) belongs in formal speeches, not conversation.",
+  "examples": [
+    {
+      "id": "cx-te-1",
+      "japanese": "朝起きて、コーヒーを飲みます。",
+      "furigana": "{朝|あさ}{起|お}きて、{コーヒー|こーひー}を{飲|の}みます。",
+      "english": "I get up in the morning and have a coffee.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{朝|あさ}{起|お}きて、",
+          "w": "w-okiru"
+        },
+        {
+          "t": "{コーヒー|こーひー}を",
+          "w": "w-koohii"
+        },
+        {
+          "t": "{飲|の}みます。",
+          "w": "w-nomu"
+        }
+      ],
+      "gap": {
+        "before": "{朝|あさ}",
+        "answer": "{起|お}きて",
+        "after": "、{コーヒー|こーひー}を{飲|の}みます。",
+        "options": [
+          "{起|お}きて",
+          "{起|お}きる",
+          "{起|お}きた"
+        ],
+        "why": "Only the last verb carries the tense and the politeness; the ones before it take て."
+      },
+      "combine": {
+        "a": "{朝|あさ}{起|お}きます。",
+        "b": "{コーヒー|こーひー}を{飲|の}みます。",
+        "distractors": [
+          "{朝|あさ}{起|お}きます、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-te-1.mp3",
+      "tags": [
+        "connectors",
+        "te"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-te-2",
+      "japanese": "駅まで歩いて、電車に乗りました。",
+      "furigana": "{駅|えき}まで{歩|ある}いて、{電車|でんしゃ}に{乗|の}りました。",
+      "english": "I walked to the station and got on the train.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{駅|えき}まで",
+          "w": "w-eki"
+        },
+        {
+          "t": "{歩|ある}いて、",
+          "w": "w-aruku"
+        },
+        {
+          "t": "{電車|でんしゃ}に",
+          "w": "w-densha"
+        },
+        {
+          "t": "{乗|の}りました。"
+        }
+      ],
+      "gap": {
+        "before": "{駅|えき}まで",
+        "answer": "{歩|ある}いて",
+        "after": "、{電車|でんしゃ}に{乗|の}りました。",
+        "options": [
+          "{歩|ある}いて",
+          "{歩|ある}きて",
+          "{歩|ある}って"
+        ],
+        "why": "Verbs ending in く make their て form with いて: 歩く → 歩いて, 書く → 書いて. 行く is the one exception: 行って."
+      },
+      "combine": {
+        "a": "{駅|えき}まで{歩|ある}きました。",
+        "b": "{電車|でんしゃ}に{乗|の}りました。",
+        "distractors": [
+          "{歩|ある}きました、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-te-2.mp3",
+      "tags": [
+        "connectors",
+        "te"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-te-3",
+      "japanese": "この店は安くて、おいしい。",
+      "furigana": "この{店|みせ}は{安|やす}くて、おいしい。",
+      "english": "This place is cheap and tasty.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "この{店|みせ}は",
+          "w": "w-mise"
+        },
+        {
+          "t": "{安|やす}くて、",
+          "w": "w-yasui"
+        },
+        {
+          "t": "おいしい。"
+        }
+      ],
+      "gap": {
+        "before": "この{店|みせ}は",
+        "answer": "{安|やす}くて",
+        "after": "、おいしい。",
+        "options": [
+          "{安|やす}くて",
+          "{安|やす}いて",
+          "{安|やす}いで"
+        ],
+        "why": "い-adjectives drop the い and take くて: 安い → 安くて, おいしい → おいしくて."
+      },
+      "combine": {
+        "a": "この{店|みせ}は{安|やす}い。",
+        "b": "おいしい。",
+        "distractors": [
+          "{安|やす}いて、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-te-3.mp3",
+      "tags": [
+        "connectors",
+        "te"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-te-4",
+      "japanese": "彼女は静かで、優しい人です。",
+      "furigana": "{彼女|かのじょ}は{静|しず}かで、{優|やさ}しい{人|ひと}です。",
+      "english": "She’s a quiet, kind person.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{彼女|かのじょ}は",
+          "w": "w-kanojo"
+        },
+        {
+          "t": "{静|しず}かで、",
+          "w": "w-shizuka"
+        },
+        {
+          "t": "{優|やさ}しい{人|ひと}です。",
+          "w": "w-hito"
+        }
+      ],
+      "gap": {
+        "before": "{彼女|かのじょ}は",
+        "answer": "{静|しず}かで",
+        "after": "、{優|やさ}しい{人|ひと}です。",
+        "options": [
+          "{静|しず}かで",
+          "{静|しず}かくて",
+          "{静|しず}かて"
+        ],
+        "why": "な-adjectives and nouns join with で: 静か → 静かで, 学生 → 学生で."
+      },
+      "audio": "audio/ja/connectors/cx-te-4.mp3",
+      "tags": [
+        "connectors",
+        "te"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

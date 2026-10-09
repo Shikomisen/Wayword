@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "con-kara",
+  "connector": "から",
+  "gloss": "because, so",
+  "title": "から — because, so",
+  "pattern": "reason から、result",
+  "explanation": "から gives a reason. The reason comes first, then から, then what follows from it: {雨|あめ}だから、{行|い}かない — it’s raining, so I’m not going. Plain form before から in casual speech, です/ます in polite speech. The result is often left unsaid: だって、{寒|さむ}いから — well, because it’s cold.",
+  "natural": "The everyday \"because\" — the one you’ll hear most at home. Good for your own reasons, decisions, suggestions and requests: おいしいから{食|た}べてみて.",
+  "stiff": "Not stiff, but it can sound pushy, or like an excuse, when you’re apologising or explaining yourself to someone above you. There, ので (next lesson) is the safer choice.",
+  "examples": [
+    {
+      "id": "cx-kara-1",
+      "japanese": "雨が降っているから、家にいる。",
+      "furigana": "{雨|あめ}が{降|ふ}っているから、{家|いえ}にいる。",
+      "english": "It’s raining, so I’m staying in.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{雨|あめ}が",
+          "w": "w-ame"
+        },
+        {
+          "t": "{降|ふ}っているから、",
+          "w": "w-furu"
+        },
+        {
+          "t": "{家|いえ}に",
+          "w": "w-ie"
+        },
+        {
+          "t": "いる。"
+        }
+      ],
+      "gap": {
+        "before": "{雨|あめ}が{降|ふ}っている",
+        "answer": "から",
+        "after": "、{家|いえ}にいる。",
+        "options": [
+          "から",
+          "ので",
+          "けど",
+          "ながら"
+        ],
+        "ok": [
+          "ので"
+        ],
+        "note": "ので works too, and sounds a little softer.",
+        "why": "The reason comes first, then から."
+      },
+      "combine": {
+        "a": "{雨|あめ}が{降|ふ}っている。",
+        "b": "{家|いえ}にいる。",
+        "distractors": [
+          "{降|ふ}っているけど、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-kara-1.mp3",
+      "tags": [
+        "connectors",
+        "kara"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-kara-2",
+      "japanese": "疲れたから、先に寝るね。",
+      "furigana": "{疲|つか}れたから、{先|さき}に{寝|ね}るね。",
+      "english": "I’m tired, so I’ll go to bed first.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{疲|つか}れたから、",
+          "w": "w-tsukareru"
+        },
+        {
+          "t": "{先|さき}に"
+        },
+        {
+          "t": "{寝|ね}るね。",
+          "w": "w-neru"
+        }
+      ],
+      "gap": {
+        "before": "{疲|つか}れた",
+        "answer": "から",
+        "after": "、{先|さき}に{寝|ね}るね。",
+        "options": [
+          "から",
+          "けど",
+          "たら"
+        ]
+      },
+      "combine": {
+        "a": "{疲|つか}れた。",
+        "b": "{先|さき}に{寝|ね}るね。",
+        "distractors": [
+          "{疲|つか}れたけど、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-kara-2.mp3",
+      "tags": [
+        "connectors",
+        "kara"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-kara-3",
+      "japanese": "明日は早いですから、今日はもう帰ります。",
+      "furigana": "{明日|あした}は{早|はや}いですから、{今日|きょう}はもう{帰|かえ}ります。",
+      "english": "I have an early start tomorrow, so I’ll head home now.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{早|はや}いですから、"
+        },
+        {
+          "t": "{今日|きょう}はもう",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{帰|かえ}ります。",
+          "w": "w-kaeru"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}は{早|はや}いです",
+        "answer": "から",
+        "after": "、{今日|きょう}はもう{帰|かえ}ります。",
+        "options": [
+          "から",
+          "ので",
+          "けど",
+          "ながら"
+        ],
+        "ok": [
+          "ので"
+        ],
+        "note": "ので works too, and sounds a little softer."
+      },
+      "audio": "audio/ja/connectors/cx-kara-3.mp3",
+      "tags": [
+        "connectors",
+        "kara"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-kara-4",
+      "japanese": "おいしいから、食べてみて。",
+      "furigana": "おいしいから、{食|た}べてみて。",
+      "english": "It’s really good, so try some.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "おいしいから、"
+        },
+        {
+          "t": "{食|た}べて",
+          "w": "w-taberu"
+        },
+        {
+          "t": "みて。"
+        }
+      ],
+      "gap": {
+        "before": "おいしい",
+        "answer": "から",
+        "after": "、{食|た}べてみて。",
+        "options": [
+          "から",
+          "でも",
+          "ながら"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-kara-4.mp3",
+      "tags": [
+        "connectors",
+        "kara"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

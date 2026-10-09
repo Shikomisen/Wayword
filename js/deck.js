@@ -333,7 +333,7 @@ export async function grade(cardId, quality) {
 
 const todayKey = () => new Date().toISOString().slice(0, 10);
 
-const EMPTY_DAY = { reviews: 0, again: 0, charReviews: 0, charAgain: 0 };
+const EMPTY_DAY = { reviews: 0, again: 0, charReviews: 0, charAgain: 0, drills: 0 };
 
 /**
  * Phrase and character reviews are counted separately so the "done today"
@@ -366,7 +366,8 @@ export async function todayStats() {
 
 export async function streak() {
   const stats = (await store.get('meta', 'stats')) || {};
-  const studied = (day) => Boolean(day && ((day.reviews || 0) + (day.charReviews || 0)));
+  // A day of connector drills counts as much as a day of flashcards.
+  const studied = (day) => Boolean(day && ((day.reviews || 0) + (day.charReviews || 0) + (day.drills || 0)));
 
   let count = 0;
   const d = new Date();
@@ -445,6 +446,69 @@ export async function courseSnapshot(ns) {
     due: srs.buildQueue(introducible(scoped, all, settings), { newLimit: settings.newPerDay }).length,
     total: scoped.length,
   };
+}
+
+/* ---------- connectors: drills ---------- */
+
+/**
+ * A missed drill sends its sentence to the review deck. The sentence's
+ * cards are added (every enabled direction), and the one closest to what the
+ * drill asked — building the sentence, so *Say it* when that's on — is
+ * failed, so it comes back within minutes instead of waiting its turn as a
+ * new card. The lesson counts as an active deck from then on, but only the
+ * sentences actually missed are added: the rest wait for "Study as cards".
+ */
+export async function recordMiss(itemId, deckId) {
+  const { byCategory } = await loadContent();
+  const item = (byCategory.get(deckId)?.items || []).find((x) => x.id === itemId);
+  if (!item) return null;
+  const s = await getSettings();
+  const now = Date.now();
+  const existing = new Set((await getDeck()).map((c) => c.id));
+  const dirs = directionsFor(item, s);
+  const entries = dirs
+    .filter((dir) => !existing.has(srs.cardId(item.id, dir)))
+    .map((dir) => srs.newCard(item.id, deckId, now, { kind: item.kind || srs.KIND.SENTENCE, difficulty: item.difficulty ?? 3, dir }))
+    .map((card) => [card.id, card]);
+  if (entries.length) await store.setMany('srs', entries);
+  if (!s.activeCategories.includes(deckId)) await saveSettings({ activeCategories: [...s.activeCategories, deckId] });
+
+  const dir = dirs.includes(srs.DIR.PRODUCTION) ? srs.DIR.PRODUCTION : dirs[0];
+  const card = await getCard(srs.cardId(item.id, dir));
+  if (!card) return null;
+  const missed = srs.review(card, srs.GRADE.AGAIN, now);
+  await putCard(missed);
+  return missed;
+}
+
+/** Per lesson: sessions practised, drills right and done in total, the best session, and when. */
+export async function getLessonStats() {
+  return (await store.get('meta', 'lessonStats')) || {};
+}
+
+/** Record one practice session: `results` is { [lessonId]: { right, total } }. */
+export async function recordPractice(results) {
+  const stats = await getLessonStats();
+  const now = Date.now();
+  let drills = 0;
+  for (const [id, r] of Object.entries(results)) {
+    if (!r.total) continue;
+    const s = stats[id] || { sessions: 0, right: 0, total: 0, best: null, lastAt: null };
+    s.sessions += 1;
+    s.right += r.right;
+    s.total += r.total;
+    s.lastAt = now;
+    if (!s.best || r.right / r.total > s.best.right / s.best.total) s.best = { right: r.right, total: r.total };
+    stats[id] = s;
+    drills += r.total;
+  }
+  await store.set('meta', 'lessonStats', stats);
+
+  const key = todayKey();
+  const days = (await store.get('meta', 'stats')) || {};
+  days[key] = { ...EMPTY_DAY, ...(days[key] || {}), drills: (days[key]?.drills || 0) + drills };
+  await store.set('meta', 'stats', days);
+  return stats;
 }
 
 /* ---------- "I can read this" ---------- */

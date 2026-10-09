@@ -22,6 +22,7 @@ import * as deck from './deck.js';
 import * as audio from './audio.js';
 import { link, go } from './course.js';
 import { el, clear, targetNode, toast } from './render.js';
+import { deckHref } from './shared.js';
 
 const ROW_LABEL = {
   a: 'あ', ka: 'か', sa: 'さ', ta: 'た', na: 'な',
@@ -126,7 +127,7 @@ export async function renderCharacterSet(root, setId) {
   const s = await deck.getSettings();
   const active = s.activeCharacterSets.includes(setId);
   const progress = await deck.setProgress(setId);
-  const { phrases } = await loadContent();
+  const content = await loadContent();
 
   const view = el('div', { class: 'screen' });
   root.append(view);
@@ -156,7 +157,7 @@ export async function renderCharacterSet(root, setId) {
     el('p', { class: 'muted small tap-hint chart-hint' }, 'Tap any character to hear it.'),
 
     set.layout === 'list' || set.script === 'kanji'
-      ? kanjiList(set, phrases, s)
+      ? kanjiList(set, content, s)
       : kanaChart(set, s)
   );
 }
@@ -205,7 +206,7 @@ function kanaCell(c, settings) {
 
 /* ---------- kanji list ---------- */
 
-function kanjiList(set, phrases, settings) {
+function kanjiList(set, content, settings) {
   const wrap = el('div', { class: 'char-groups' });
 
   for (const group of set.groups || []) {
@@ -216,16 +217,16 @@ function kanjiList(set, phrases, settings) {
       el('section', { class: 'char-group' },
         el('h2', { class: 'section-title' }, `${group.title} · ${inGroup.length}`),
         group.description ? el('p', { class: 'muted small' }, group.description) : null,
-        el('div', { class: 'kanji-list' }, inGroup.map((c) => kanjiRow(c, phrases, settings)))));
+        el('div', { class: 'kanji-list' }, inGroup.map((c) => kanjiRow(c, content, settings)))));
   }
 
   return wrap;
 }
 
-function kanjiRow(c, phrases, settings) {
+function kanjiRow(c, content, settings) {
   // Cross-references written by tools/crossref-kanji.mjs — the whole point
-  // of the kanji set is that it overlaps the phrases already being studied.
-  const refs = (c.seenIn || []).map((id) => phrases.get(id)).filter(Boolean);
+  // of the kanji set is that it overlaps the words and phrases being studied.
+  const refs = (c.seenIn || []).map((id) => content.phrases.get(id)).filter(Boolean);
 
   return el('article', { class: 'kanji-row' },
     el('button', {
@@ -252,7 +253,7 @@ function kanjiRow(c, phrases, settings) {
             el('span', { class: 'note-label' }, 'Seen in your words and phrases'),
             el('div', { class: 'ref-list' },
               refs.map((p) =>
-                el('a', { class: 'ref-chip', href: link(`/category/${p.categoryId}`), title: p.meaning },
+                el('a', { class: 'ref-chip', href: deckHref(content, p.categoryId), title: p.meaning },
                   targetNode(p, { furigana: false })))))
         : null));
 }

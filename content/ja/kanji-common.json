@@ -71,9 +71,9 @@
         "w-issho",
         "w-hitori",
         "s-09",
-        "gre-16",
-        "num-15",
-        "num-17"
+        "cx-sorekara-3",
+        "cx-tara-2",
+        "gre-16"
       ]
     },
     {
@@ -324,6 +324,7 @@
       "difficulty": 1,
       "seenIn": [
         "s-06",
+        "cx-ba-4",
         "num-11",
         "air-03"
       ]
@@ -610,6 +611,7 @@
       "difficulty": 2,
       "note": "お金 (おかね) is money. 金曜日 is Friday. Same kanji.",
       "seenIn": [
+        "cx-tame-3",
         "num-09"
       ]
     },
@@ -692,10 +694,10 @@
       "seenIn": [
         "w-jikan",
         "w-tokidoki",
-        "num-10",
-        "num-11",
-        "num-12",
-        "num-13"
+        "cx-demo-2",
+        "cx-tara-2",
+        "cx-shi-4",
+        "num-10"
       ]
     },
     {
@@ -729,9 +731,9 @@
         "w-wakaru",
         "s-06",
         "s-14",
+        "cx-ba-4",
         "num-11",
-        "num-21",
-        "eme-03"
+        "num-21"
       ]
     },
     {
@@ -948,7 +950,11 @@
       "difficulty": 1,
       "note": "Learn 男/女 as a pair. Getting this wrong at an onsen is a memorable mistake.",
       "seenIn": [
-        "w-kanojo"
+        "w-kanojo",
+        "cx-te-4",
+        "cx-soshite-3",
+        "cx-dakara-4",
+        "cx-toki-4"
       ]
     },
     {
@@ -1194,7 +1200,10 @@
         "directions"
       ],
       "difficulty": 2,
-      "note": "下り (くだり) is the opposite of 上り — away from Tokyo."
+      "note": "下り (くだり) is the opposite of 上り — away from Tokyo.",
+      "seenIn": [
+        "cx-ga-3"
+      ]
     },
     {
       "id": "kan-migi",
@@ -1286,9 +1295,10 @@
       "seenIn": [
         "w-eki",
         "s-06",
-        "tra-01",
-        "tra-07",
-        "tra-16"
+        "cx-te-2",
+        "cx-to-2",
+        "cx-ba-4",
+        "cx-nagara-2"
       ]
     },
     {
@@ -1542,10 +1552,10 @@
       "seenIn": [
         "w-iku",
         "w-ryokou",
-        "air-19",
-        "tra-04",
-        "tra-16",
-        "cas-13"
+        "cx-soshite-1",
+        "cx-sorekara-1",
+        "cx-dakara-4",
+        "cx-kedo-3"
       ]
     },
     {
@@ -1656,7 +1666,10 @@
         "signage"
       ],
       "difficulty": 3,
-      "note": "無 is the negating character — it turns up everywhere meaning 'without'."
+      "note": "無 is the negating character — it turns up everywhere meaning 'without'.",
+      "seenIn": [
+        "cx-soshite-2"
+      ]
     },
     {
       "id": "kan-yuuryou",
@@ -2080,7 +2093,10 @@
         "essential"
       ],
       "difficulty": 2,
-      "note": "On doors, and on the button you are meant to press."
+      "note": "On doors, and on the button you are meant to press.",
+      "seenIn": [
+        "cx-to-3"
+      ]
     },
     {
       "id": "kan-hiku",
@@ -2335,7 +2351,8 @@
       "difficulty": 1,
       "note": "大/中/小 is the standard size trio on menus and vending machines.",
       "seenIn": [
-        "w-chiisai"
+        "w-chiisai",
+        "cx-demo-3"
       ]
     }
   ]

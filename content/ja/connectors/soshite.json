@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "id": "con-soshite",
+  "connector": "そして",
+  "gloss": "and (also)",
+  "title": "そして — and (also)",
+  "pattern": "A。そして、B。",
+  "explanation": "そして starts a new sentence that adds to the one before: and, and also. It joins sentences, not words — to say \"A and B\" between two nouns, use と ({猫|ねこ}と{犬|いぬ}).",
+  "natural": "Writing, speeches, careful polite speech, and adding a final point that matters: そして、{一番|いちばん}{大事|だいじ}なのは… (and most importantly…).",
+  "stiff": "In everyday conversation it sounds bookish. Between close people a て-form, それで, or just a pause does the job — そして after every sentence to your partner sounds like you’re reading them a story.",
+  "examples": [
+    {
+      "id": "cx-soshite-1",
+      "japanese": "京都に行きました。そして、お寺を見ました。",
+      "furigana": "{京都|きょうと}に{行|い}きました。そして、お{寺|てら}を{見|み}ました。",
+      "english": "I went to Kyoto. And I saw some temples.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{京都|きょうと}に"
+        },
+        {
+          "t": "{行|い}きました。",
+          "w": "w-iku"
+        },
+        {
+          "t": "そして、"
+        },
+        {
+          "t": "お{寺|てら}を"
+        },
+        {
+          "t": "{見|み}ました。",
+          "w": "w-miru"
+        }
+      ],
+      "gap": {
+        "before": "{京都|きょうと}に{行|い}きました。",
+        "answer": "そして",
+        "after": "、お{寺|てら}を{見|み}ました。",
+        "options": [
+          "そして",
+          "でも",
+          "だから"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-soshite-1.mp3",
+      "tags": [
+        "connectors",
+        "soshite"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-soshite-2",
+      "japanese": "このアプリは便利です。そして、無料です。",
+      "furigana": "この{アプリ|あぷり}は{便利|べんり}です。そして、{無料|むりょう}です。",
+      "english": "This app is handy. And it’s free.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{アプリ|あぷり}は"
+        },
+        {
+          "t": "{便利|べんり}です。",
+          "w": "w-benri"
+        },
+        {
+          "t": "そして、"
+        },
+        {
+          "t": "{無料|むりょう}です。"
+        }
+      ],
+      "gap": {
+        "before": "この{アプリ|あぷり}は{便利|べんり}です。",
+        "answer": "そして",
+        "after": "、{無料|むりょう}です。",
+        "options": [
+          "そして",
+          "でも",
+          "だから"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-soshite-2.mp3",
+      "tags": [
+        "connectors",
+        "soshite"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-soshite-3",
+      "japanese": "写真を撮りました。そして、彼女に送りました。",
+      "furigana": "{写真|しゃしん}を{撮|と}りました。そして、{彼女|かのじょ}に{送|おく}りました。",
+      "english": "I took a photo. And I sent it to my girlfriend.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{写真|しゃしん}を",
+          "w": "w-shashin"
+        },
+        {
+          "t": "{撮|と}りました。"
+        },
+        {
+          "t": "そして、"
+        },
+        {
+          "t": "{彼女|かのじょ}に",
+          "w": "w-kanojo"
+        },
+        {
+          "t": "{送|おく}りました。"
+        }
+      ],
+      "gap": {
+        "before": "{写真|しゃしん}を{撮|と}りました。",
+        "answer": "そして",
+        "after": "、{彼女|かのじょ}に{送|おく}りました。",
+        "options": [
+          "そして",
+          "でも",
+          "けど"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-soshite-3.mp3",
+      "tags": [
+        "connectors",
+        "soshite"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-soshite-4",
+      "japanese": "部屋を掃除しました。そして、洗濯もしました。",
+      "furigana": "{部屋|へや}を{掃除|そうじ}しました。そして、{洗濯|せんたく}もしました。",
+      "english": "I cleaned my room. And I did the laundry too.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{部屋|へや}を",
+          "w": "w-heya"
+        },
+        {
+          "t": "{掃除|そうじ}しました。",
+          "w": "w-souji"
+        },
+        {
+          "t": "そして、"
+        },
+        {
+          "t": "{洗濯|せんたく}も",
+          "w": "w-sentaku"
+        },
+        {
+          "t": "しました。",
+          "w": "w-suru"
+        }
+      ],
+      "gap": {
+        "before": "{部屋|へや}を{掃除|そうじ}しました。",
+        "answer": "そして",
+        "after": "、{洗濯|せんたく}もしました。",
+        "options": [
+          "そして",
+          "でも",
+          "だから"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-soshite-4.mp3",
+      "tags": [
+        "connectors",
+        "soshite"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

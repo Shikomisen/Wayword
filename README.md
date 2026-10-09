@@ -150,7 +150,9 @@ launch without code changes:
 1. **Onboarding placement quiz** — see §6a, runs once at first launch.
 2. **Flashcards + SRS** — core daily loop: words, sentences, phrases and your
    own words, each asked three ways — see it, say it, hear it (§14).
-3. **Scenario dialogue trees** — full exchanges, not isolated phrases.
+3. **Connectors** — the words that chain sentences together (て, から, けど,
+   たら…), each explained and drilled; missed drills feed the SRS (§15).
+4. **Scenario dialogue trees** — full exchanges, not isolated phrases.
 
 *(Live AI chat is a future pillar — see §9.)*
 
@@ -297,11 +299,11 @@ a generated list of phrase IDs containing that character.
 **Cross-reinforcement.** `tools/crossref-kanji.mjs` scans the words,
 sentences and phrases and links each kanji to the ones it appears in — words
 first, since 行く is the most direct place to meet 行. Every one of the 70
-kanji in *Kanji in Your Words* is linked, and 40 of the 82 common ones. The
+kanji in *Kanji in Your Words* is linked, and 43 of the 82 common ones. The
 kanji list shows those as tappable chips, so the Characters section
 reinforces the decks rather than sitting beside them as a second
 disconnected vocabulary list. The same tool lists the kanji the word decks
-use that no set teaches yet (about 110 today) — the to-do list for growing
+use that no set teaches yet (about 125 today) — the to-do list for growing
 the kanji sets.
 
 **Reuse, not a parallel system:**
@@ -337,7 +339,7 @@ dev-only tools for the test suites: jsdom and puppeteer-core.
 
 ```bash
 npm start                 # dev server on :5173, also prints your LAN URL for phone testing
-npm test                  # every course's content + UI-string coverage + SRS + end-to-end logic (19,000+ checks)
+npm test                  # every course's content + UI-string coverage + SRS + end-to-end logic (23,000+ checks)
 npm run test:render       # renders every screen in both courses + service worker checks (jsdom)
 npm run test:browser      # the real app in Firefox: service worker, full precache, every tab, offline
 npm run test:sw           # service worker registration regression tests
@@ -414,7 +416,7 @@ page in that language. Inside a course, a slim bar at the top
 
 | Course | id | Status | Content |
 |---|---|---|---|
-| Japanese, for English speakers | `en-ja` | available | `content/ja/` — 197 words, 16 sentences, 187 phrases (incl. 39 casual), 372 characters, 6 scenarios |
+| Japanese, for English speakers | `en-ja` | available | `content/ja/` — 197 words, 16 sentences, 16 connector lessons (64 examples), 187 phrases (incl. 39 casual), 372 characters, 6 scenarios |
 | English, for Japanese speakers | `ja-en` | available | `content/en/` — 104 phrases, 10 categories, 6 scenarios |
 | Indonesian, for English speakers | `en-id` | planned | placeholder screen only |
 | Indonesian, for Japanese speakers | `ja-id` | planned | placeholder screen only |
@@ -549,3 +551,77 @@ with the course's progress, recordings included.
 Then `npm run audio` and `npm run crossref`. `npm test` checks every word
 has a known part of speech, every verb its forms, every kanji its furigana,
 every sentence chunks that rebuild it exactly, and every chunk a real word.
+
+---
+
+## 15. Connectors and sentence building (added with the repositioning)
+
+The core of the course: the words that turn single sentences into
+conversation. A **Connectors** tab holds one lesson per connector, in five
+groups:
+
+| Group | Connectors |
+|---|---|
+| And, and then | 〜て · そして · それから |
+| Because and so | から · ので · だから |
+| But | けど · が · でも |
+| If and when | と · たら · ば · とき |
+| While, what's more, in order to | ながら · し · ために |
+
+**Each lesson** (`content/ja/connectors/<name>.json`) has:
+- the pattern;
+- a plain-English explanation;
+- **Sounds natural** and **Sounds stiff or wrong** notes — where it fits,
+  and what to say instead where it doesn't;
+- four example sentences, each with audio and furigana, labelled polite or
+  casual. About half are casual, the way you'd talk with a partner.
+
+The Japanese inside the explanations carries furigana too (written
+`{漢字|かんじ}` in the prose), following the furigana setting.
+
+The examples are built from the word decks' vocabulary, and each one links
+the words it uses by id. A word's card lists the connector examples it
+appears in, and an example lists its words — learned words reappear in
+context.
+
+**Drills** (*Practise* on a lesson, or *Mixed practice* across the lessons
+you've done). Three kinds, all built from the examples:
+
+| Drill | Prompt | Answer |
+|---|---|---|
+| Fill the gap | the meaning, and the sentence with its connector (or the form before it) missing | pick from 3–4 options |
+| Put it in order | the meaning | tap the sentence's pieces in order |
+| Join them with … | two short sentences | build the joined sentence from the pieces — with a trap or two among them (the wrong form, the wrong connector) |
+
+- **Also right is accepted.** Where another answer is also right (ので for
+  から, が for けど, ば or なら for たら), it counts as right, with a note on
+  the difference.
+- **Alternative orders.** A sentence that can be ordered more than one way
+  accepts each of them.
+- **After every answer** you get the full sentence, its audio and, when you
+  were wrong, why.
+- **Missed drills feed the SRS.** The missed sentence joins your review deck,
+  with its *Say it* card failed so it comes back within minutes. Its lesson
+  becomes one of your decks, holding just the sentences you missed.
+  *Study as cards* on the lesson adds the rest.
+- **Progress.** Each session's score is kept per lesson; the best shows on
+  the list. A day of drills keeps the streak going.
+
+**Navigation.** With Connectors, the course has more sections than a phone's
+tab bar holds comfortably, so the tab bar keeps five and **Scenarios moves
+into Learn** (as *Conversations*). The English course, which has no
+Connectors, keeps its Scenarios tab.
+
+**Adding a lesson** is content only: a file shaped like
+`content/ja/connectors/kara.json` and one line under `lessons` in the
+manifest. Each example needs:
+- `chunks` — the sentence in pieces, with word ids;
+- a `gap` — the text either side of the answer, the options, and optionally
+  `ok` (other right answers) with a `note`, and `why`;
+- optionally `combine` (two sentences and their traps) and `alsoOrders`.
+
+`npm test` checks:
+- the gap rebuilds the sentence exactly;
+- the answer is among the options;
+- traps aren't real pieces;
+- every kanji, prose included, has its reading.

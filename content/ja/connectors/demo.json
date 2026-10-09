@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "con-demo",
+  "connector": "でも",
+  "gloss": "but (new sentence)",
+  "title": "でも — but (new sentence)",
+  "pattern": "A。でも、B。",
+  "explanation": "でも starts a new sentence that goes against the last one: \"But…\". けど and が join two halves of one sentence; でも begins a fresh one. It’s also how you push back gently in conversation: でも、{高|たか}いよ — but it’s expensive.",
+  "natural": "Everyday speech, casual and polite. Very common when replying: でも… (yes, but…).",
+  "stiff": "Formal writing uses しかし instead. And starting every reply with でも makes you sound like you always disagree.",
+  "examples": [
+    {
+      "id": "cx-demo-1",
+      "japanese": "映画は長かった。でも、面白かった。",
+      "furigana": "{映画|えいが}は{長|なが}かった。でも、{面白|おもしろ}かった。",
+      "english": "The movie was long. But it was good.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{映画|えいが}は",
+          "w": "w-eiga"
+        },
+        {
+          "t": "{長|なが}かった。"
+        },
+        {
+          "t": "でも、"
+        },
+        {
+          "t": "{面白|おもしろ}かった。"
+        }
+      ],
+      "gap": {
+        "before": "{映画|えいが}は{長|なが}かった。",
+        "answer": "でも",
+        "after": "、{面白|おもしろ}かった。",
+        "options": [
+          "でも",
+          "だから",
+          "そして"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-demo-1.mp3",
+      "tags": [
+        "connectors",
+        "demo"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-demo-2",
+      "japanese": "行きたいです。でも、時間がありません。",
+      "furigana": "{行|い}きたいです。でも、{時間|じかん}がありません。",
+      "english": "I want to go. But I don’t have time.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{行|い}きたいです。",
+          "w": "w-iku"
+        },
+        {
+          "t": "でも、"
+        },
+        {
+          "t": "{時間|じかん}が",
+          "w": "w-jikan"
+        },
+        {
+          "t": "ありません。"
+        }
+      ],
+      "gap": {
+        "before": "{行|い}きたいです。",
+        "answer": "でも",
+        "after": "、{時間|じかん}がありません。",
+        "options": [
+          "でも",
+          "だから",
+          "それから"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-demo-2.mp3",
+      "tags": [
+        "connectors",
+        "demo"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-demo-3",
+      "japanese": "安いね。でも、ちょっと小さいかな。",
+      "furigana": "{安|やす}いね。でも、ちょっと{小|ちい}さいかな。",
+      "english": "It’s cheap. But it’s a bit small, maybe.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{安|やす}いね。",
+          "w": "w-yasui"
+        },
+        {
+          "t": "でも、"
+        },
+        {
+          "t": "ちょっと",
+          "w": "w-chotto"
+        },
+        {
+          "t": "{小|ちい}さいかな。",
+          "w": "w-chiisai"
+        }
+      ],
+      "gap": {
+        "before": "{安|やす}いね。",
+        "answer": "でも",
+        "after": "、ちょっと{小|ちい}さいかな。",
+        "options": [
+          "でも",
+          "だから",
+          "それから"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-demo-3.mp3",
+      "tags": [
+        "connectors",
+        "demo"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-demo-4",
+      "japanese": "毎日勉強しています。でも、まだ話せません。",
+      "furigana": "{毎日|まいにち}{勉強|べんきょう}しています。でも、まだ{話|はな}せません。",
+      "english": "I study every day. But I still can’t speak.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{毎日|まいにち}",
+          "w": "w-mainichi"
+        },
+        {
+          "t": "{勉強|べんきょう}しています。",
+          "w": "w-benkyou"
+        },
+        {
+          "t": "でも、"
+        },
+        {
+          "t": "まだ",
+          "w": "w-mada"
+        },
+        {
+          "t": "{話|はな}せません。",
+          "w": "w-hanasu"
+        }
+      ],
+      "gap": {
+        "before": "{毎日|まいにち}{勉強|べんきょう}しています。",
+        "answer": "でも",
+        "after": "、まだ{話|はな}せません。",
+        "options": [
+          "でも",
+          "だから",
+          "そして"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-demo-4.mp3",
+      "tags": [
+        "connectors",
+        "demo"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

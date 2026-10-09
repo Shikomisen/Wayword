@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "id": "con-kedo",
+  "connector": "けど",
+  "gloss": "but, though",
+  "title": "けど — but, though",
+  "pattern": "A けど、B",
+  "explanation": "けど joins two things that pull against each other: {高|たか}いけど、おいしい — it’s expensive, but good. It also softens: ending with けど leaves the sentence open, which makes a request or a \"no\" gentler: ちょっと{聞|き}きたいんですけど… (I’d like to ask something…), {行|い}きたいけど… (I’d like to go, but…).",
+  "natural": "The everyday \"but\" in conversation, casual or polite (ですけど). With your partner and friends it’s the default.",
+  "stiff": "けど is spoken language. In writing and formal speech use が (next lesson); けれども is the fuller, more careful version.",
+  "examples": [
+    {
+      "id": "cx-kedo-1",
+      "japanese": "この店は高いけど、すごくおいしい。",
+      "furigana": "この{店|みせ}は{高|たか}いけど、すごくおいしい。",
+      "english": "This place is expensive, but it’s really good.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "この{店|みせ}は",
+          "w": "w-mise"
+        },
+        {
+          "t": "{高|たか}いけど、",
+          "w": "w-takai"
+        },
+        {
+          "t": "すごく"
+        },
+        {
+          "t": "おいしい。"
+        }
+      ],
+      "gap": {
+        "before": "この{店|みせ}は{高|たか}い",
+        "answer": "けど",
+        "after": "、すごくおいしい。",
+        "options": [
+          "けど",
+          "から",
+          "ので"
+        ]
+      },
+      "combine": {
+        "a": "この{店|みせ}は{高|たか}い。",
+        "b": "すごくおいしい。",
+        "distractors": [
+          "{高|たか}いから、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-kedo-1.mp3",
+      "tags": [
+        "connectors",
+        "kedo"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-kedo-2",
+      "japanese": "日本語は難しいけど、楽しいです。",
+      "furigana": "{日本語|にほんご}は{難|むずか}しいけど、{楽|たの}しいです。",
+      "english": "Japanese is hard, but it’s fun.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本語|にほんご}は",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{難|むずか}しいけど、",
+          "w": "w-muzukashii"
+        },
+        {
+          "t": "{楽|たの}しいです。",
+          "w": "w-tanoshii"
+        }
+      ],
+      "gap": {
+        "before": "{日本語|にほんご}は{難|むずか}しい",
+        "answer": "けど",
+        "after": "、{楽|たの}しいです。",
+        "options": [
+          "けど",
+          "から",
+          "し"
+        ]
+      },
+      "combine": {
+        "a": "{日本語|にほんご}は{難|むずか}しいです。",
+        "b": "{楽|たの}しいです。",
+        "distractors": [
+          "{難|むずか}しいので、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-kedo-2.mp3",
+      "tags": [
+        "connectors",
+        "kedo"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-kedo-3",
+      "japanese": "行きたいけど、今日はちょっと…",
+      "furigana": "{行|い}きたいけど、{今日|きょう}はちょっと…",
+      "english": "I’d love to go, but today’s a bit…",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{行|い}きたいけど、",
+          "w": "w-iku"
+        },
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "ちょっと…",
+          "w": "w-chotto"
+        }
+      ],
+      "gap": {
+        "before": "{行|い}きたい",
+        "answer": "けど",
+        "after": "、{今日|きょう}はちょっと…",
+        "options": [
+          "けど",
+          "から",
+          "たら"
+        ],
+        "why": "けど softens a \"no\" — you don’t even have to finish the sentence."
+      },
+      "audio": "audio/ja/connectors/cx-kedo-3.mp3",
+      "tags": [
+        "connectors",
+        "kedo"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-kedo-4",
+      "japanese": "すみません、ちょっと聞きたいんですけど…",
+      "furigana": "すみません、ちょっと{聞|き}きたいんですけど…",
+      "english": "Excuse me, I have a quick question…",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "すみません、"
+        },
+        {
+          "t": "ちょっと",
+          "w": "w-chotto"
+        },
+        {
+          "t": "{聞|き}きたいんですけど…",
+          "w": "w-kiku"
+        }
+      ],
+      "gap": {
+        "before": "すみません、ちょっと{聞|き}きたいんです",
+        "answer": "けど",
+        "after": "…",
+        "options": [
+          "けど",
+          "が",
+          "から"
+        ],
+        "ok": [
+          "が"
+        ],
+        "note": "が works too — a little more formal."
+      },
+      "audio": "audio/ja/connectors/cx-kedo-4.mp3",
+      "tags": [
+        "connectors",
+        "kedo"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

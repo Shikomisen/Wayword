@@ -162,6 +162,23 @@ export async function loadContent() {
     })
   );
 
+  // Connector lessons: each lesson's examples are sentences, studied like a
+  // sentence deck; the lesson's prose and each example's drill data ride along.
+  const lessonEntries = [...(manifest.lessons || [])].sort((a, b) => a.order - b.order);
+  const lessons = await Promise.all(
+    lessonEntries.map(async (entry) => {
+      try {
+        const data = await fetchJSON(entry.file);
+        const items = (data.examples || []).map((x) => normaliseDeckItem(
+          { ...normalise(x), kind: 'sentence', categoryId: entry.id, categoryTitle: data.title || entry.title }));
+        return { ...entry, ...data, type: 'lesson', items, phrases: items, missing: false };
+      } catch (err) {
+        console.error(err);
+        return { ...entry, type: 'lesson', items: [], phrases: [], missing: true };
+      }
+    })
+  );
+
   const setEntries = [...(manifest.characterSets || [])].sort((a, b) => a.order - b.order);
 
   const loadedSets = await Promise.all(
@@ -181,14 +198,15 @@ export async function loadContent() {
   const byCategory = new Map();
   const bySet = new Map();
 
-  for (const deck of [...loaded, ...decks]) {
+  for (const deck of [...loaded, ...decks, ...lessons]) {
     byCategory.set(deck.id, deck);
     for (const item of deck.items) phrases.set(item.id, item);
   }
 
-  // Which sentences use each word, so a word card can show it in context.
+  // Which sentences use each word, so a word card can show it in context —
+  // the connector examples included, which is where learned words reappear.
   const usage = new Map();
-  for (const deck of decks.filter((d) => d.type === 'sentences')) {
+  for (const deck of [...decks.filter((d) => d.type === 'sentences'), ...lessons]) {
     for (const s of deck.items) {
       for (const chunk of s.chunks || []) {
         if (chunk.w) usage.set(chunk.w, [...new Set([...(usage.get(chunk.w) || []), s.id])]);
@@ -221,9 +239,12 @@ export async function loadContent() {
       scenarios: (manifest.scenarios || []).length > 0,
       words: decks.some((d) => d.type === 'words'),
       sentences: decks.some((d) => d.type === 'sentences'),
+      lessons: lessons.length > 0,
     },
     categories: loaded,
     decks,
+    lessons,
+    lessonGroups: manifest.lessonGroups || [],
     characterSets,
     phrases,
     characters,
@@ -236,14 +257,37 @@ export async function loadContent() {
   return loadedContent;
 }
 
-/** A word's ます/て forms and a sentence's chunks get the same generic fields as everything else. */
+/**
+ * A word's ます/て forms, a sentence's chunks and a connector example's drill
+ * pieces get the same generic fields as everything else, so targetNode can
+ * render any of them. Each piece keeps its `notation` as written.
+ */
 function normaliseDeckItem(item) {
   const lang = item.targetLang;
-  const piece = (notation) => ({ target: rubyText(notation), ruby: toSegments(notation), targetLang: lang });
+  const piece = (notation) => ({ target: rubyText(notation), ruby: toSegments(notation), targetLang: lang, notation });
+  const { gap, combine } = item;
   return {
     ...item,
     forms: item.forms ? Object.entries(item.forms).map(([key, notation]) => ({ key, ...piece(notation) })) : null,
     chunks: item.chunks ? item.chunks.map((c) => ({ ...piece(c.t), w: c.w || null })) : null,
+    // Fill-in: the sentence around the gap, and each option with its verdict —
+    // the answer, another answer that also works, or wrong.
+    gap: gap
+      ? {
+          ...gap,
+          before: piece(gap.before),
+          after: piece(gap.after),
+          answer: piece(gap.answer),
+          options: gap.options.map((o) => ({
+            ...piece(o),
+            verdict: o === gap.answer ? 'right' : (gap.ok || []).includes(o) ? 'ok' : 'wrong',
+          })),
+        }
+      : null,
+    // Combine: the two sentences to join, and the trap pieces among the real ones.
+    combine: combine
+      ? { a: piece(combine.a), b: piece(combine.b), distractors: combine.distractors.map(piece) }
+      : null,
   };
 }
 

@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "id": "con-nagara",
+  "connector": "ながら",
+  "gloss": "while (doing both)",
+  "title": "ながら — while (doing both)",
+  "pattern": "ます stem + ながら、B",
+  "explanation": "ながら joins two actions one person does at the same time: {音楽|おんがく}を{聞|き}きながら{勉強|べんきょう}する — study while listening to music. Take the ます form, drop ます and add ながら: {食|た}べます → {食|た}べながら. The main action comes last.",
+  "natural": "Everyday, any register: {歩|ある}きながら{話|はな}す, テレビを{見|み}ながら{食|た}べる.",
+  "stiff": "Only for one person doing both things. For \"while you were out, I…\" — two people — Japanese uses {間|あいだ}に: {出|で}かけている{間|あいだ}に.",
+  "examples": [
+    {
+      "id": "cx-nagara-1",
+      "japanese": "音楽を聞きながら、勉強します。",
+      "furigana": "{音楽|おんがく}を{聞|き}きながら、{勉強|べんきょう}します。",
+      "english": "I study while listening to music.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{音楽|おんがく}を",
+          "w": "w-ongaku"
+        },
+        {
+          "t": "{聞|き}きながら、",
+          "w": "w-kiku"
+        },
+        {
+          "t": "{勉強|べんきょう}します。",
+          "w": "w-benkyou"
+        }
+      ],
+      "gap": {
+        "before": "{音楽|おんがく}を",
+        "answer": "{聞|き}きながら",
+        "after": "、{勉強|べんきょう}します。",
+        "options": [
+          "{聞|き}きながら",
+          "{聞|き}くながら",
+          "{聞|き}いてながら"
+        ],
+        "why": "ながら takes the ます stem: 聞きます → 聞きながら."
+      },
+      "combine": {
+        "a": "{音楽|おんがく}を{聞|き}きます。",
+        "b": "{勉強|べんきょう}します。",
+        "distractors": [
+          "{聞|き}くながら、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-nagara-1.mp3",
+      "tags": [
+        "connectors",
+        "nagara"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-nagara-2",
+      "japanese": "駅まで歩きながら話そう。",
+      "furigana": "{駅|えき}まで{歩|ある}きながら{話|はな}そう。",
+      "english": "Let’s talk while we walk to the station.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{駅|えき}まで",
+          "w": "w-eki"
+        },
+        {
+          "t": "{歩|ある}きながら",
+          "w": "w-aruku"
+        },
+        {
+          "t": "{話|はな}そう。",
+          "w": "w-hanasu"
+        }
+      ],
+      "gap": {
+        "before": "{駅|えき}まで{歩|ある}き",
+        "answer": "ながら",
+        "after": "{話|はな}そう。",
+        "options": [
+          "ながら",
+          "たら",
+          "から"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-nagara-2.mp3",
+      "tags": [
+        "connectors",
+        "nagara"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-nagara-3",
+      "japanese": "テレビを見ながら、ご飯を食べないで。",
+      "furigana": "{テレビ|てれび}を{見|み}ながら、ご{飯|はん}を{食|た}べないで。",
+      "english": "Don’t eat while watching TV.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{テレビ|てれび}を"
+        },
+        {
+          "t": "{見|み}ながら、",
+          "w": "w-miru"
+        },
+        {
+          "t": "ご{飯|はん}を",
+          "w": "w-gohan"
+        },
+        {
+          "t": "{食|た}べないで。",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "{テレビ|てれび}を",
+        "answer": "{見|み}ながら",
+        "after": "、ご{飯|はん}を{食|た}べないで。",
+        "options": [
+          "{見|み}ながら",
+          "{見|み}るながら",
+          "{見|み}てながら"
+        ],
+        "why": "見ます → 見ながら: the ます stem, then ながら."
+      },
+      "audio": "audio/ja/connectors/cx-nagara-3.mp3",
+      "tags": [
+        "connectors",
+        "nagara"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-nagara-4",
+      "japanese": "コーヒーを飲みながら、少し休みましょう。",
+      "furigana": "{コーヒー|こーひー}を{飲|の}みながら、{少|すこ}し{休|やす}みましょう。",
+      "english": "Let’s take a break over a coffee.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{コーヒー|こーひー}を",
+          "w": "w-koohii"
+        },
+        {
+          "t": "{飲|の}みながら、",
+          "w": "w-nomu"
+        },
+        {
+          "t": "{少|すこ}し"
+        },
+        {
+          "t": "{休|やす}みましょう。",
+          "w": "w-yasumu"
+        }
+      ],
+      "gap": {
+        "before": "{コーヒー|こーひー}を{飲|の}み",
+        "answer": "ながら",
+        "after": "、{少|すこ}し{休|やす}みましょう。",
+        "options": [
+          "ながら",
+          "たら",
+          "ので"
+        ]
+      },
+      "combine": {
+        "a": "{コーヒー|こーひー}を{飲|の}みます。",
+        "b": "{少|すこ}し{休|やす}みましょう。",
+        "distractors": [
+          "{飲|の}むながら、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-nagara-4.mp3",
+      "tags": [
+        "connectors",
+        "nagara"
+      ],
+      "difficulty": 2
+    }
+  ]
+}
