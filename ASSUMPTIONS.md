@@ -1796,3 +1796,16 @@ casual is what you *say* to a partner. So:
   delete. It now expects the record to survive, and expects either "the
   recorded courses" or "everything" depending on what the previous build
   kept.
+- **Deployed** `1665f0f..adb38a6` with `npm run deploy` (every suite again,
+  the voice test included); https://shikomisen.github.io/Wayword/ served v10
+  31 seconds later.
+- **`--live`, Firefox: 45 of 45.**
+  - A first visit caches the app (38 files).
+  - Each course downloads when opened: 958 and 688 files.
+  - A never-opened course offline says it isn't on the device.
+  - The record of courses kept forms.
+  - Every tab of both courses, and the listening page and drill, render
+    online and offline; every one of the 1,684 files (20.2 MB) loads with
+    the network cut; no errors are logged.
+  - The check now visits sections without a tab (listening), and accepts a
+    drill's question where a screen has no heading.

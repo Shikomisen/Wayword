@@ -169,11 +169,12 @@ async function visit(page, href) {
     document.querySelector('#app')?.firstElementChild?.setAttribute('data-stale', '1');
     location.hash = h;
   }, href);
+  // A screen shows its heading — or, for a drill, which has none, what it's asking.
   const ok = await waitFor(page,
-    () => !document.querySelector('#app [data-stale]') && Boolean(document.querySelector('#app h1')), null, 10000);
+    () => !document.querySelector('#app [data-stale]') && Boolean(document.querySelector('#app h1, #app .drill-kind')), null, 10000);
   return {
     ok,
-    heading: await page.$eval('#app h1', (e) => e.textContent).catch(() => '(no heading)'),
+    heading: await page.$eval('#app h1, #app .drill-kind', (e) => e.textContent).catch(() => '(no heading)'),
     text: await appText(page),
   };
 }
@@ -370,6 +371,9 @@ try {
       }
     }
     tabsByCourse[c.id] = await page.$$eval('.tabbar a', (a) => a.map((x) => x.getAttribute('href')));
+    // Sections without a tab of their own: listening lives in Learn and on Today.
+    const manifest = await fetch(new URL(c.manifest, base)).then((r) => r.json());
+    if (manifest.listening?.length) tabsByCourse[c.id].push(`#/${c.id}/listening`, `#/${c.id}/listening/drill`);
     for (const href of tabsByCourse[c.id]) {
       const v = await visit(page, href);
       check(`${href} renders`, v.ok && !/\bnull\b|undefined|Something went wrong/.test(v.text), v.heading);
