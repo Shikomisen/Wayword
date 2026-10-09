@@ -8,6 +8,7 @@
 import { t } from './i18n.js';
 import { toSegments } from './ruby.js';
 import { isKatakanaAid } from './kana.js';
+import { SLOW } from './audio.js';
 
 // Hiragana written over katakana words is an aid for someone still learning
 // katakana. Once katakana is mastered (reading.js decides), it goes.
@@ -225,22 +226,25 @@ export function audioButton(phrase, onPlay) {
       ? el('span', { class: 'audio-none', title: t('audio.noneTitle') }, t('audio.none'))
       : null;
   }
-  const btn = el(
-    'button',
-    { class: 'audio-btn', type: 'button', 'aria-label': t('audio.play', { text: phrase.reading || phrase.target }) },
-    '🔊'
-  );
-  btn.addEventListener('click', async (e) => {
-    e.stopPropagation();
-    btn.classList.add('playing');
-    const result = await onPlay(phrase);
-    btn.classList.remove('playing');
-    if (result === 'missing') {
-      btn.classList.add('audio-missing');
-      btn.title = t('audio.missingTitle');
-    }
-  });
-  return btn;
+  const text = phrase.reading || phrase.target;
+  const button = (cls, label, icon, rate) => {
+    const btn = el('button', { class: cls, type: 'button', 'aria-label': label }, icon);
+    btn.addEventListener('click', async (e) => {
+      e.stopPropagation();
+      btn.classList.add('playing');
+      const result = await onPlay(phrase, { rate });
+      btn.classList.remove('playing');
+      if (result === 'missing') {
+        btn.classList.add('audio-missing');
+        btn.title = t('audio.missingTitle');
+      }
+    });
+    return btn;
+  };
+  // 🔊 at normal speed, and 🐢 below it for the same line, slower.
+  return el('span', { class: 'audio-pair' },
+    button('audio-btn', t('audio.play', { text }), '🔊', 1),
+    button('audio-slow', t('audio.playSlow', { text }), '🐢', SLOW));
 }
 
 export function toast(message, ms = 2400) {

@@ -7,20 +7,23 @@
   "scripts": {
     "start": "node tools/serve.mjs",
     "dev": "node tools/serve.mjs",
-    "test": "node tools/selftest.mjs && node tools/integration-test.mjs && node tools/language-pack-test.mjs",
+    "test": "node tools/selftest.mjs && node tools/integration-test.mjs && node tools/language-pack-test.mjs && node tools/voice-test.mjs",
     "test:content": "node tools/selftest.mjs",
     "test:integration": "node tools/integration-test.mjs",
     "test:render": "node tools/render-test.mjs && node tools/sw-test.mjs",
     "audio": "node tools/generate-audio.mjs",
     "audio:check": "node tools/generate-audio.mjs --check",
     "audio:force": "node tools/generate-audio.mjs --force",
+    "voice:samples": "node tools/generate-audio.mjs --course ja-en --samples",
+    "voice:nz": "node tools/generate-audio.mjs --course ja-en --set-engine azure",
     "icons": "node tools/make-icons.mjs",
     "kana": "node tools/make-kana.mjs",
     "crossref": "node tools/crossref-kanji.mjs",
     "crossref:check": "node tools/crossref-kanji.mjs --check",
     "deploy": "node tools/deploy.mjs",
     "test:sw": "node tools/sw-test.mjs",
-    "test:browser": "node tools/browser-check.mjs"
+    "test:browser": "node tools/browser-check.mjs",
+    "test:voice": "node tools/voice-test.mjs"
   },
   "engines": {
     "node": ">=18"

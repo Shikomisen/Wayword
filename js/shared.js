@@ -73,8 +73,8 @@ export function stat(value, label) {
 }
 
 /** Play an item's audio — clip, recording or device voice — and say so if there's none. */
-export async function playItem(item) {
-  const result = await audio.playItem(item);
+export async function playItem(item, options) {
+  const result = await audio.playItem(item, options);
   if (result === 'missing') toast(t('audio.missing'));
   return result;
 }

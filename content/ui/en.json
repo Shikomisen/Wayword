@@ -311,5 +311,8 @@
   "offline.partial": "Offline: saving this course to this device… {cached} of {total} files so far.",
   "offline.notSavedTitle": "Not on this device yet",
   "offline.notSaved": "This course hasn’t been downloaded to this device yet. Connect to the internet and open it once: it downloads by itself, and works offline from then on.",
-  "offline.toPicker": "Back to languages"
+  "offline.toPicker": "Back to languages",
+  "audio.playSlow": "Play slowly: {text}",
+  "study.playSlow": "🐢 Slower",
+  "scenario.listenSlow": "🐢 Slower"
 }

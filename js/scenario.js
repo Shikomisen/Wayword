@@ -97,10 +97,13 @@ export async function renderScenario(root, id) {
       settings.romaji && node.reading ? el('div', { class: 'romaji' }, node.reading) : null,
       meaningNode(node),
       node.audio
-        ? el('button', {
-            class: 'btn btn-ghost audio-inline', type: 'button',
-            onclick: () => audio.play(node.audio),
-          }, t('scenario.listen'))
+        ? el('div', { class: 'audio-inline' },
+            el('button', { class: 'btn btn-ghost', type: 'button', onclick: () => audio.play(node.audio) },
+              t('scenario.listen')),
+            el('button', {
+              class: 'btn btn-ghost audio-inline-slow', type: 'button',
+              onclick: () => audio.play(node.audio, { rate: audio.SLOW }),
+            }, t('scenario.listenSlow')))
         : null);
   }
 

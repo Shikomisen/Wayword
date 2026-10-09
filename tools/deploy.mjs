@@ -5,7 +5,7 @@
  * so deploying *is* pushing main. This makes that one safe command:
  *
  *   1. preflight — on main, nothing uncommitted, not behind origin
- *   2. the test suites — content, integration, render and service worker
+ *   2. the test suites — content, integration, render, service worker and voice
  *   3. git push origin main
  *   4. wait until the live site serves this build's service worker, then
  *      print the URL
@@ -69,7 +69,7 @@ const ahead = Number(git('rev-list', '--count', 'origin/main..HEAD'));
 
 /* ---------- 2. tests ---------- */
 
-const suites = ['tools/selftest.mjs', 'tools/integration-test.mjs', 'tools/language-pack-test.mjs', 'tools/render-test.mjs', 'tools/sw-test.mjs'];
+const suites = ['tools/selftest.mjs', 'tools/integration-test.mjs', 'tools/language-pack-test.mjs', 'tools/render-test.mjs', 'tools/sw-test.mjs', 'tools/voice-test.mjs'];
 for (const suite of suites) {
   process.stdout.write(`— ${suite} … `);
   try {

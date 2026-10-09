@@ -133,10 +133,28 @@ Japanese voice installed.
   your devices" prep step is no longer required for the app to work —
   that was only needed under the live-TTS approach. No harm in still
   having a Japanese voice installed, just not a dependency anymore.
-- **Which voice is per course.** Today every clip, in both courses, comes
-  from Google Translate's text-to-speech. The English course is moving to
-  Microsoft's neural New Zealand voices next (§18); each course's manifest
-  will name its voice, so the Japanese course keeps its own.
+- **Which voice is per course.** A course's manifest names it: `"voice":
+  { "engine": "google" | "azure", "azure": { "default": …, "speakers": … } }`.
+  Today every clip, in both courses, comes from Google Translate's
+  text-to-speech. The English course names Microsoft's neural New Zealand
+  voices for when it switches: `en-NZ-MollyNeural` for everything the learner
+  says, and `en-NZ-MitchellNeural` for the people they talk to (scenario
+  lines). The Japanese course has no `voice`, so it keeps Google's.
+  - `npm run voice:samples` makes six sample clips in tmp/voice-samples/, so
+    you can hear the voices first. `npm run voice:nz` switches the English
+    course for good — it sets `"engine": "azure"` and remakes every clip.
+  - Both need `AZURE_SPEECH_KEY` and `AZURE_SPEECH_REGION`; the free tier is
+    plenty. On Windows, a key saved with `setx` is found even in a terminal
+    opened before it was saved.
+  - The key is read at build time only, and never goes in the repo or the
+    app. With no key, an Azure run stops before doing anything and says how
+    to get one. It never falls back to Google's voice, which would mix two
+    voices in one course.
+  - `tools/voice-test.mjs` (part of `npm test`) runs the generator against a
+    stand-in for Azure, so the Azure path is tested before anyone has a key.
+- **🐢 Slower.** Every play button has a 🐢 beside it that plays the same clip
+  at three-quarter speed, at the same pitch. So do listening cards and
+  scenario lines. It's per play, not a setting.
 - Quality note: pre-rendered synthesized audio is good for pronunciation
   shape and pitch pattern, not a full substitute for real listening
   practice. For English that matters more than for Japanese: careful

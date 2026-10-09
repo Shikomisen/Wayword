@@ -127,6 +127,20 @@ function validateCourse(course) {
   // A course whose default register is polite or casual labels every sentence.
   const usesRegister = REGISTERS.includes(manifest.register);
 
+  // Which voice its clips are made with (tools/generate-audio.mjs). Optional: Google's by default.
+  if (manifest.voice) {
+    const { engine, azure } = manifest.voice;
+    check(`${course.id}: voice engine is one the generator knows`, ['google', 'azure'].includes(engine), engine);
+    const neural = (v) => typeof v === 'string' && /^[a-z]{2}-[A-Z]{2}-\w+Neural$/.test(v) && v.startsWith(`${manifest.language}-`);
+    if (engine === 'azure' || azure) {
+      check(`${course.id}: Azure voices are neural voices in the course's language`,
+        neural(azure?.default) && (typeof azure.speakers === 'string'
+          ? neural(azure.speakers)
+          : Object.values(azure?.speakers || {}).every(neural)),
+        JSON.stringify(azure));
+    }
+  }
+
   // Card ids only need to be unique within a course: each course has its own storage.
   const seenIds = new Set();
   let phraseCount = 0;

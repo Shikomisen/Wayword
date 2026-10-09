@@ -283,5 +283,8 @@
   "offline.partial": "オフライン：このコースを端末に保存中です… {total}ファイル中{cached}ファイル完了。",
   "offline.notSavedTitle": "まだこの端末にありません",
   "offline.notSaved": "このコースは、まだこの端末にダウンロードされていません。インターネットにつないで一度開くと自動でダウンロードされ、その後はオフラインでも使えます。",
-  "offline.toPicker": "言語選択に戻る"
+  "offline.toPicker": "言語選択に戻る",
+  "audio.playSlow": "「{text}」をゆっくり再生",
+  "study.playSlow": "🐢 ゆっくり",
+  "scenario.listenSlow": "🐢 ゆっくり"
 }

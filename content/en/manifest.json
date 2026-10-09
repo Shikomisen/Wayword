@@ -4,7 +4,7 @@
   "speaker": "ja",
   "register": "polite-neutral",
   "generatedFor": "Wayword — English for Japanese speakers",
-  "notes": "English for Japanese speakers, modelled on New Zealand English. Same shape as the English → Japanese course: one file per category, one per scenario; word decks under `decks`; phrase-pattern lessons (\"I'd like ○○\") under `lessons` — the counterpart of the Japanese course's connectors, named by `copy.lessonsTitle`. Text the learner studies is `english`; `japanese` is the gloss. Notes are written in Japanese.",
+  "notes": "English for Japanese speakers, modelled on New Zealand English. Same shape as the English → Japanese course: one file per category, one per scenario; word decks under `decks`; phrase-pattern lessons (\"I'd like ○○\") under `lessons` — the counterpart of the Japanese course's connectors, named by `copy.lessonsTitle`. Text the learner studies is `english`; `japanese` is the gloss. Notes are written in Japanese. `voice` says which voice the clips are made with: Google's for now; `azure` names the New Zealand neural voices (the learner's lines, and the people they talk to) that `npm run voice:nz` switches the course to.",
   "fields": {
     "target": "english",
     "meaning": "japanese"
@@ -20,6 +20,13 @@
       "style": "pitfall"
     }
   ],
+  "voice": {
+    "engine": "google",
+    "azure": {
+      "default": "en-NZ-MollyNeural",
+      "speakers": "en-NZ-MitchellNeural"
+    }
+  },
   "words": {
     "pos": [
       "noun",

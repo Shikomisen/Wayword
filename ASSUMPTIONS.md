@@ -1597,3 +1597,55 @@ casual is what you *say* to a partner. So:
     server. Fetching them through the page let the worker cache every JSON
     file the check read, so the check was measuring its own footprints.
   - `tools/render-test.mjs` checks the "not on this device yet" screen.
+
+### A87 — The NZ voice is wired up, waiting for a key; 🐢 plays any clip slower
+- **Voice per course.** A course's manifest can say which voice its clips are
+  made with: `voice.engine` (`google` or `azure`), and under `voice.azure` a
+  `default` voice for what the learner says and a `speakers` voice for the
+  people they talk to (scenario lines).
+  - The English course names `en-NZ-MollyNeural` and `en-NZ-MitchellNeural`,
+    as the plan decided, but stays on `google`, as the user asked: no key
+    yet.
+  - The Japanese course has no `voice` and is unchanged.
+- **Switching is one command:** `npm run voice:nz`. It writes
+  `"engine": "azure"` into the manifest with a targeted edit (the layout is
+  kept), then remakes every English clip. From then on new content is made
+  in Azure too, so voices never mix.
+  - A clip that fails mid-switch is deleted rather than left in the old
+    voice, and a plain `npm run audio -- --course ja-en` makes it.
+  - `npm run voice:samples` makes six clips first (a statement, a question
+    and a scenario line, in each voice) for the plan's listening checkpoint.
+- **No key, no run.** Without `AZURE_SPEECH_KEY` / `AZURE_SPEECH_REGION`, an
+  Azure run, the samples and the switch all stop before changing anything,
+  and say how to get a key. There's no silent fallback to Google.
+  - On Windows a key saved with `setx` is read from the user's saved
+    environment, so a terminal opened earlier still finds it.
+  - A variable set but empty counts as no key; the test uses that.
+- **Azure details:**
+  - the REST endpoint, with `audio-24khz-48kbitrate-mono-mp3`;
+  - SSML with the text XML-escaped;
+  - free-tier pacing of one request every 3.1 s, since the free tier allows
+    20 requests a minute;
+  - a 429 is waited out (`Retry-After`) and not counted as a failure;
+  - a 401 stops the run with a pointer to the key.
+- **Tested without a key.** `tools/voice-test.mjs`, in `npm test` and the
+  deploy, runs the real generator against a local stand-in for Azure. It
+  checks:
+  - the headers and well-formed, escaped SSML;
+  - the learner's words in the default voice, and scenario lines in the
+    other;
+  - a rate-limited request retried;
+  - clips written to `tmp/`, never over the real ones;
+  - the switch editing one word and remaking all 252 clips;
+  - every no-key path changing nothing.
+
+  It puts the manifest back afterwards and checks that it did.
+- **🐢 Slower.** Every 🔊 has a 🐢 beside it that plays the same clip at 0.75×
+  with the pitch kept (`playbackRate`, plus `preservesPitch` and its
+  prefixed forms). Listening cards and scenario lines get a 🐢 button too.
+  It's per play, not a setting.
+  - Safari resets `playbackRate` when a clip loads, so
+    `defaultPlaybackRate` is set as well.
+  - Your own words follow the same speed: recordings by playback rate, and
+    the device voice through its `rate`.
+  - It's in both courses: slower is as useful for hearing Japanese.

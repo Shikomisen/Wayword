@@ -26,11 +26,16 @@ export function primeOnFirstGesture() {
   document.addEventListener('keydown', prime, { once: true });
 }
 
+// The 🐢 button's speed: slow enough to catch each word, not so slow the
+// voice smears.
+export const SLOW = 0.75;
+
 /**
  * @param {string} src path to the bundled clip
+ * @param {{ rate?: number }} [options] playback speed — SLOW for the 🐢 button
  * @returns {Promise<'played'|'missing'|'blocked'>}
  */
-export async function play(src) {
+export async function play(src, { rate = 1 } = {}) {
   if (!src) return 'missing';
 
   if (current) {
@@ -40,6 +45,15 @@ export async function play(src) {
 
   const el = new Audio(src);
   el.preload = 'auto';
+  if (rate !== 1) {
+    // Safari resets playbackRate to the default when the clip loads, so set both.
+    el.defaultPlaybackRate = rate;
+    el.playbackRate = rate;
+    // Slower, not lower: the same voice, just taking its time.
+    el.preservesPitch = true;
+    el.mozPreservesPitch = true;
+    el.webkitPreservesPitch = true;
+  }
   current = el;
 
   try {
@@ -77,14 +91,14 @@ export async function exists(src) {
  * (fetched only when played), or the device's own voice.
  * @returns {Promise<'played'|'missing'|'blocked'>}
  */
-export async function playItem(item) {
+export async function playItem(item, { rate = 1 } = {}) {
   if (!item) return 'missing';
-  if (item.audio) return play(item.audio);
+  if (item.audio) return play(item.audio, { rate });
   if (item.audioMode === 'recording' && item.loadRecording) {
     const url = await item.loadRecording();
-    return url ? play(url) : 'missing';
+    return url ? play(url, { rate }) : 'missing';
   }
-  if (item.audioMode === 'tts') return speak(item.kana || item.target, item.targetLang);
+  if (item.audioMode === 'tts') return speak(item.kana || item.target, item.targetLang, { rate });
   return 'missing';
 }
 
@@ -115,7 +129,7 @@ export async function deviceVoice(lang) {
 }
 
 /** Say a line with the device voice. 'missing' if there's no local voice for it. */
-export async function speak(text, lang) {
+export async function speak(text, lang, { rate = 1 } = {}) {
   const s = synth();
   const voice = s ? await deviceVoice(lang) : null;
   if (!s || !voice || !text) return 'missing';
@@ -124,7 +138,7 @@ export async function speak(text, lang) {
   const u = new SpeechSynthesisUtterance(text);
   u.voice = voice;
   u.lang = voice.lang;
-  u.rate = 0.95;
+  u.rate = 0.95 * rate;
   return new Promise((resolve) => {
     u.onend = () => resolve('played');
     u.onerror = () => resolve('missing');

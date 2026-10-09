@@ -72,10 +72,15 @@ export async function runSession(root, queue, { exitTo }) {
     } else if (dir === srs.DIR.LISTENING) {
       front = [
         el('p', { class: 'prompt muted' }, t('study.listenPrompt')),
-        el('button', {
-          class: 'btn listen-btn', type: 'button',
-          onclick: (e) => { e.stopPropagation(); playItem(item); },
-        }, t('study.playAgain')),
+        el('div', { class: 'listen-row' },
+          el('button', {
+            class: 'btn listen-btn', type: 'button',
+            onclick: (e) => { e.stopPropagation(); playItem(item); },
+          }, t('study.playAgain')),
+          el('button', {
+            class: 'btn listen-btn listen-slow', type: 'button',
+            onclick: (e) => { e.stopPropagation(); playItem(item, { rate: audio.SLOW }); },
+          }, t('study.playSlow'))),
       ];
       back = [...target(), meaningNode(item, { big: true }), ...extras()];
     } else {

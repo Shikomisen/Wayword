@@ -57,9 +57,11 @@ URL.createObjectURL = (blob) => { downloads.push(blob); return realCreateObjectU
 
 // Audio is never actually played here; record calls instead.
 const played = [];
+// How fast, and whether at the same pitch, each clip was played.
+const speeds = [];
 globalThis.Audio = class {
   constructor(src) { this.src = src; }
-  play() { played.push(this.src); return Promise.resolve(); }
+  play() { played.push(this.src); speeds.push({ rate: this.playbackRate ?? 1, pitch: this.preservesPitch ?? true }); return Promise.resolve(); }
   pause() {}
 };
 
@@ -224,6 +226,15 @@ check('every polite phrase is labelled Polite',
 check('register notes render', text().includes('Register'));
 check('anime divergence notes render', $$('.note-anime').length > 0, `${$$('.note-anime').length} notes`);
 check('audio buttons render', $$('.audio-btn').length > 0);
+check('every clip has a slower 🐢 button beside it',
+  $$('.audio-slow').length === $$('.audio-btn').length, `${$$('.audio-slow').length} 🐢`);
+$('.phrase-card .audio-btn')?.click();
+await tick();
+$('.phrase-card .audio-slow')?.click();
+await tick();
+check('🐢 plays the same clip at three-quarter speed, at the same pitch',
+  played.at(-1) === played.at(-2) && speeds.at(-2).rate === 1 && speeds.at(-1).rate === 0.75 && speeds.at(-1).pitch === true,
+  `${played.at(-1)} ${JSON.stringify(speeds.at(-1))}`);
 check('romaji shown while enabled', $$('.romaji').length > 0);
 
 const before = $$('.romaji').length;
@@ -373,6 +384,9 @@ check('a listening card plays the audio and hides the text',
   $('.study-card')?.classList.contains('dir-listening') && Boolean($('.listen-btn')) && !$('.study-card .jp') &&
   played.length > listenPlayed,
   played.at(-1));
+$('.listen-slow')?.click();
+await tick();
+check('…and can play it again slower', speeds.at(-1).rate === 0.75 && played.at(-1) === played.at(-2), played.at(-1));
 $$('button').find((b) => b.textContent === 'Show answer')?.click();
 await tick(); await tick();
 check('flipping shows what was said and what it means',
@@ -928,6 +942,10 @@ check('NPC line is English with a Japanese meaning',
   $('.dialogue.npc .target')?.getAttribute('lang') === 'en' && $('.dialogue.npc .meaning')?.getAttribute('lang') === 'ja',
   $('.dialogue.npc .target')?.textContent);
 check('speaker label is translated', $('.dialogue-who')?.textContent === '審査官', $('.dialogue-who')?.textContent);
+$('.audio-inline-slow')?.click();
+await tick();
+check('the line can be heard slower', played.at(-1)?.startsWith('audio/en/scenario/') && speeds.at(-1).rate === 0.75 &&
+  $('.audio-inline-slow')?.textContent === '🐢 ゆっくり', played.at(-1));
 check('three replies offered', $$('.btn-option').length === 3);
 for (let i = 0; i < 12 && $$('.btn-option').length; i++) {
   $$('.btn-option').at(-1).click(); // walk the "wrong" branch: it must still teach and finish
