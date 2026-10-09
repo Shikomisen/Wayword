@@ -695,3 +695,42 @@ serving the new build:
 
 Phone-sized screenshots of the new screens were also reviewed by eye; that is
 how the study-card "null" in A49 was caught.
+
+---
+
+## Repositioning: from trip phrasebook to a general learning tool
+
+The trip is over. The app is now a general Japanese-learning tool for an
+English speaker with a Japanese partner. He listens and speaks reasonably
+well, but his hiragana is shaky and he hasn't learned katakana. The goals,
+in order:
+
+1. Remember words and know what to say.
+2. Chain them into sentences with connectors.
+
+The brief said not to stop for questions, so every call below was made
+without asking.
+
+### A51 — Setup check
+- **Repo:** confirmed as `Shikomisen/Wayword`, clean, and level with
+  `origin/main`. `git pull` was a no-op.
+- **The space in "Remote work":** every tool was run from this path —
+  `serve`, `make-icons`, `make-kana`, `crossref --check`,
+  `generate-audio --check` and every test suite. None broke. They all build
+  paths with `fileURLToPath` and pass arguments as arrays, never through a
+  shell. The deploy script wasn't run, because it force-pushes; item 1
+  replaces it.
+- **`make-kana` is deterministic:** it writes LF line endings while this
+  checkout uses CRLF. Git flags the files as modified, but there is no
+  content difference.
+- **Audio generation needs nothing installed:** it calls the A2 endpoint
+  with Node's built-in `fetch`. Internet is needed at build time only.
+- **`jsdom` and `puppeteer-core` are now dev dependencies (supersedes A18):**
+  with `jsdom` missing, `npm run test:render` printed "skipping" and exited 0,
+  so a green run proved nothing. The app itself still has no runtime
+  dependencies.
+- **Browser check committed:** the Firefox checks used in earlier sessions
+  are now `tools/browser-check.mjs` (`npm run test:browser`). It covers a real
+  service worker, Cache Storage, every tab of every course, and offline with
+  every connection dropped. Its temporary browser profile and its
+  `--upgrade-from` checkout live in `tmp/`, which is gitignored.

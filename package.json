@@ -19,10 +19,15 @@
     "crossref": "node tools/crossref-kanji.mjs",
     "crossref:check": "node tools/crossref-kanji.mjs --check",
     "deploy": "node tools/deploy.mjs",
-    "test:sw": "node tools/sw-test.mjs"
+    "test:sw": "node tools/sw-test.mjs",
+    "test:browser": "node tools/browser-check.mjs"
   },
   "engines": {
     "node": ">=18"
   },
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "jsdom": "^29.1.1",
+    "puppeteer-core": "^25.13.0"
+  }
 }
