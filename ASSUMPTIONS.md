@@ -1955,3 +1955,17 @@ casual is what you *say* to a partner. So:
   concurrency, and the re-run passed 45 of 45: both courses complete, all
   1,686 files (20.2 MB) load offline. A phone on a slow connection just takes
   longer, and the download resumes where it stopped if the app is put away.
+
+### A94 — The update bar on an iPhone, and in Japanese
+- **The safe area.** The app draws under the status bar (`viewport-fit=cover`
+  with a translucent status bar). So the bar, pinned to the top, now pads
+  itself by `env(safe-area-inset-top)` and sits below the clock and notch.
+  While it shows, the course bar and the picker drop their own safe-area
+  padding (`body:has(.update-banner)`), so there's no double gap.
+- **The button stays on one line.** 今すぐ更新 broke across two lines at phone
+  width; now the message wraps and the button doesn't.
+- **When it takes effect.** The bar is drawn by the version being *replaced*,
+  so these fixes show from the update after v14, not on the way to it.
+- Checked with screenshots of the real bar (the event a new version taking
+  over sends, fired in Firefox): at the top of Today, and pinned at the top
+  after scrolling in the Japanese interface. Cache v14.

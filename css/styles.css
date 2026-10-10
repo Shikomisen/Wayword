@@ -780,8 +780,14 @@ textarea.text-input { resize: vertical; min-height: 64px; }
 
 .update-banner {
   position: sticky; top: 0; z-index: 30; display: flex; align-items: center; justify-content: space-between; gap: 10px;
-  padding: 10px 16px; background: var(--bg-raised); border-bottom: 1px solid var(--accent); font-size: 0.9rem;
+  /* Below an iPhone's clock and notch: the app draws under the status bar (viewport-fit=cover). */
+  padding: max(10px, env(safe-area-inset-top)) 16px 10px;
+  background: var(--bg-raised); border-bottom: 1px solid var(--accent); font-size: 0.9rem;
 }
+.update-banner .btn { flex: none; white-space: nowrap; } /* the message wraps, the button doesn't */
+/* The bar has taken the space under the status bar: what follows needn't leave room for it again. */
+body:has(.update-banner) .coursebar { padding-top: 10px; }
+body.at-home:has(.update-banner) #app { padding-top: 12px; }
 .about-section { margin: 24px 0 16px; }
 .about-version { font-variant-numeric: tabular-nums; }
 .home-footer { margin: 28px 0 8px; text-align: center; font-size: 0.8rem; color: var(--fg-muted); font-variant-numeric: tabular-nums; }
