@@ -1948,3 +1948,10 @@ casual is what you *say* to a partner. So:
       ("Wayword v13" on the picker), the courses download, the old cache
       goes, and progress survives.
 - **Cache v13.**
+- **Live (v13, deployed `c9b4e67..cdcaba1`).** The first `--live` run, started 25 s
+  after the deploy, failed 3 of 45: the Japanese course got 378 of 958 files
+  in the 5-minute window. GitHub's CDN was still cold, so every file was a
+  miss at 1–2 s. Measured right after, 35 files took 2.9 s at the worker's
+  concurrency, and the re-run passed 45 of 45: both courses complete, all
+  1,686 files (20.2 MB) load offline. A phone on a slow connection just takes
+  longer, and the download resumes where it stopped if the app is put away.
