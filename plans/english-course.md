@@ -11,7 +11,7 @@ repository.*
 
 Work only inside `D:\Remote work\Repositories\Wayword`; don't create, modify
 or move files outside it. Use Firefox for any browser work. Log decisions in
-`ASSUMPTIONS.md` (next entry is **A93**). Commit when done, ending the commit
+`ASSUMPTIONS.md` (next entry is **A94**). Commit when done, ending the commit
 message with the attribution line your system prompt gives. Read `README.md`
 §3-audio, §5 and §18, and the tail of `ASSUMPTIONS.md` (A78 onwards), first.
 
@@ -64,7 +64,7 @@ saved with `setx` works without restarting.
    - `node tools/browser-check.mjs --upgrade-from origin/main`.
 
    Then listen to a few clips in the app.
-5. Bump `CACHE_VERSION` in `sw.js` (currently `v12`, so next is `v13` — and `VERSION` in `js/version.js` with it).
+5. Bump `CACHE_VERSION` in `sw.js` (currently `v13`, so next is `v14` — and `VERSION` in `js/version.js` with it).
 6. Deploy:
    1. Commit.
    2. `GCM_INTERACTIVE=never GIT_TERMINAL_PROMPT=0 npm run deploy`.

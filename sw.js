@@ -1,24 +1,31 @@
 /**
  * sw.js — offline-first service worker (README §5).
  *
- * Precaches the app shell for everyone, and each course — its content files
- * and every audio clip — once that course is opened on this device. The app
- * tells the worker which courses it uses (a 'keep-courses' message); the
- * worker remembers them and downloads whatever isn't cached yet, walking each
- * course's manifest to its category, deck, lesson and scenario files and the
- * clips they name. Every later version downloads the remembered courses
- * before it takes over, so whatever worked offline keeps working.
+ * Installing caches the app itself — the shell, the course list and the
+ * interface strings, about forty files — and takes over straight away. That
+ * has to be quick: a phone that closes the app mid-install throws the install
+ * away, so a long one may never finish.
+ *
+ * Courses come after. The app tells the worker which courses it uses (a
+ * 'keep-courses' message). The worker remembers them and downloads whatever
+ * of them this version hasn't cached yet, walking each course's manifest to
+ * its category, deck, lesson, listening and scenario files and the clips they
+ * name. Interrupted, it picks up where it stopped next time.
+ *
+ * Until a new version has every course this device keeps, the previous
+ * version's cache stays as the offline fallback, so an update never takes
+ * offline away. Once they're all in, it goes.
  *
  * Adding a category — or a whole course — needs no service-worker edit: bump
- * CACHE_VERSION and the new content is picked up on the next install.
+ * CACHE_VERSION (and VERSION in js/version.js) and it's picked up.
  *
  * Strategy:
  *   - navigations      -> network-first, falling back to the cached shell
- *   - everything else  -> cache-first (content and audio never change
- *                         under a given cache version)
+ *   - everything else  -> this version's cache, then the network (cached as it
+ *                         comes), then — offline — an older version's copy
  */
 
-const CACHE_VERSION = 'v12';
+const CACHE_VERSION = 'v13';
 const CACHE_PREFIX = 'wayword-';
 const CACHE = `${CACHE_PREFIX}${CACHE_VERSION}`;
 
@@ -28,10 +35,14 @@ const KEPT = `${CACHE_PREFIX}kept`;
 const KEPT_LIST = './__kept-courses.json';
 
 // Every prefix this app has cached under, including the pre-rename
-// `nihongo-tabi-`. Activation only deletes stale caches with these prefixes:
-// the github.io origin is shared with other projects, so nothing else on it
-// is ours to remove.
+// `nihongo-tabi-`. Only caches with these prefixes are ever deleted: the
+// github.io origin is shared with other projects, so nothing else on it is
+// ours to remove.
 const OWN_PREFIXES = [CACHE_PREFIX, 'nihongo-tabi-'];
+
+// Versions before v12 can't tell the learner an update is ready — they have
+// no update bar — so a page running one is reloaded into the new version.
+const FIRST_WITH_UPDATE_BAR = 12;
 
 const SHELL = [
   './',
@@ -137,30 +148,6 @@ function baseAssets(registry) {
   return assets;
 }
 
-/**
- * The base assets plus the content of the courses to keep — their ids, or
- * null for every course. Reads the network: this is what a new version caches.
- */
-async function contentAssets(keep) {
-  const registry = await readJSON('content/courses.json');
-  const assets = baseAssets(registry);
-  const manifests = (registry?.courses || [])
-    .filter((c) => c.manifest && (keep === null || keep.includes(c.id)))
-    .map((c) => c.manifest);
-
-  for (const path of manifests) {
-    try {
-      assets.push(...(await manifestAssets(path)));
-    } catch (err) {
-      // Offline on first install, or a malformed manifest. The shell still
-      // works; content fills in on a later visit. One broken course must not
-      // stop the others from being cached.
-      console.warn('[sw] could not expand content manifest', path, err);
-    }
-  }
-  return [...new Set(assets)];
-}
-
 /* ---------- which courses this device keeps ---------- */
 
 async function keptCourses() {
@@ -181,35 +168,31 @@ function rememberCourses(ids) {
   return keptWrites;
 }
 
-/**
- * The courses a new version downloads before taking over: the ones this
- * device keeps. With no record yet, a first install keeps none — the app
- * asks for each course as it's opened — but a copy updating from a version
- * that cached every course (v8 and before) keeps them all this once, so
- * nothing that worked offline stops working. Returns ids, or null for all.
- */
-async function coursesToKeep() {
-  const kept = await keptCourses();
-  if (Array.isArray(kept)) return kept;
-  const names = await caches.keys();
-  const updating = names.some((k) => k !== CACHE && k !== KEPT && OWN_PREFIXES.some((p) => k.startsWith(p)));
-  return updating ? null : [];
+/** Earlier versions' caches: the offline fallback while this version fills its own. */
+async function olderCaches() {
+  return (await caches.keys()).filter((k) => k !== CACHE && k !== KEPT && OWN_PREFIXES.some((p) => k.startsWith(p)));
 }
 
+/** A cache from a version without the update bar: pre-rename, or before v12. */
+const fromBeforeUpdateBar = (name) =>
+  name.startsWith('nihongo-tabi-') || Number(/^wayword-v(\d+)$/.exec(name)?.[1] ?? Infinity) < FIRST_WITH_UPDATE_BAR;
+
 /**
- * Cache every URL, a few at a time, retrying the ones that fail.
+ * Cache every URL not cached already, a few at a time, retrying the ones
+ * that fail.
  *
- * addAll() rejects the whole batch if a single request fails — and over a
- * thousand files on a phone's connection, the odd one failing is normal.
- * (The first deploy of v6 installed with one clip missing for exactly that
- * reason: every request went out at once, and one dropped.) So requests go
- * out a dozen at a time, and failures get two more tries after a pause.
- * Anything still missing is skipped rather than failing the install — the
- * fetch handler caches it the first time it's used online — and reported.
+ * Skipping what's there means an install or a download that was cut short
+ * picks up where it stopped. addAll() would reject the whole batch if a
+ * single request failed — and over hundreds of files on a phone's
+ * connection, the odd one failing is normal (the first deploy of v6 lost a
+ * clip exactly that way). So requests go out a dozen at a time, and failures
+ * get two more tries after a pause. Anything still missing is skipped and
+ * reported — the fetch handler caches it the first time it's used online.
  * Returns what couldn't be cached.
  */
 async function cacheAllTolerant(cache, urls, { concurrency = 12, attempts = 3, pause = 1500 } = {}) {
-  let pending = [...new Set(urls)];
+  let pending = [];
+  for (const url of new Set(urls)) if (!(await cache.match(url))) pending.push(url);
   for (let attempt = 1; attempt <= attempts && pending.length; attempt++) {
     if (attempt > 1) await new Promise((resolve) => setTimeout(resolve, pause * (attempt - 1)));
     const failed = [];
@@ -241,7 +224,7 @@ async function availableCourses(cache) {
 
 const keeping = new Map(); // course id → its download in progress, so two asks share one
 
-/** Remember a course and download whatever of it this version hasn't cached yet. */
+/** Download whatever of a course this version hasn't cached yet. */
 function keepCourse(id, manifestPath, cache) {
   if (keeping.has(id)) return keeping.get(id);
   const work = (async () => {
@@ -262,13 +245,23 @@ function keepCourse(id, manifestPath, cache) {
   return work;
 }
 
+/**
+ * Keep these courses, and every course already kept here: after an update,
+ * the first ask after taking over brings all of them into this version. Once
+ * they're all complete, older versions' caches have done their job as the
+ * offline fallback, and go.
+ */
 async function keepCourses(ids) {
   const cache = await caches.open(CACHE);
   const known = await availableCourses(cache);
-  const wanted = [...new Set(ids)].filter((id) => known.has(id));
-  await rememberCourses(wanted);
+  const asked = [...new Set(ids)].filter((id) => known.has(id));
+  await rememberCourses(asked);
+  const wanted = [...new Set([...asked, ...((await keptCourses()) || [])])].filter((id) => known.has(id));
   const courses = [];
   for (const id of wanted) courses.push(await keepCourse(id, known.get(id), cache));
+  if (courses.every((c) => !c.error && c.missing === 0)) {
+    await Promise.all((await olderCaches()).map((k) => caches.delete(k)));
+  }
   return { courses };
 }
 
@@ -294,9 +287,11 @@ async function courseStatus(id) {
 self.addEventListener('install', (event) => {
   event.waitUntil(
     (async () => {
+      // The app itself, and nothing else: quick enough to finish before a
+      // phone puts the app away. Courses follow once the app asks.
       const cache = await caches.open(CACHE);
-      await cacheAllTolerant(cache, SHELL);
-      await cacheAllTolerant(cache, await contentAssets(await coursesToKeep()));
+      const registry = await readJSON('content/courses.json');
+      await cacheAllTolerant(cache, [...SHELL, ...baseAssets(registry)]);
       await self.skipWaiting();
     })()
   );
@@ -305,11 +300,19 @@ self.addEventListener('install', (event) => {
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     (async () => {
-      const keys = await caches.keys();
-      await Promise.all(keys
-        .filter((k) => k !== CACHE && k !== KEPT && OWN_PREFIXES.some((p) => k.startsWith(p)))
-        .map((k) => caches.delete(k)));
+      const older = await olderCaches();
+      // Older caches stay as the offline fallback until this version has the
+      // courses this device keeps — unless it keeps none, so nothing to wait for.
+      const kept = await keptCourses();
+      if (Array.isArray(kept) && kept.length === 0) await Promise.all(older.map((k) => caches.delete(k)));
       await self.clients.claim();
+      // A page from before the update bar can't say a new version is ready:
+      // take it to the new version now. (Newer pages show the bar instead.)
+      if (older.some(fromBeforeUpdateBar)) {
+        for (const client of await self.clients.matchAll({ type: 'window' })) {
+          Promise.resolve(client.navigate?.(client.url)).catch(() => {});
+        }
+      }
     })()
   );
 });
@@ -339,17 +342,18 @@ self.addEventListener('fetch', (event) => {
 
   event.respondWith(
     (async () => {
-      const hit = await caches.match(request, { ignoreSearch: true });
+      const cache = await caches.open(CACHE);
+      const hit = await cache.match(request, { ignoreSearch: true });
       if (hit) return hit;
       try {
         const fresh = await fetch(request);
-        if (fresh.ok) {
-          const cache = await caches.open(CACHE);
-          cache.put(request, fresh.clone());
-        }
+        if (fresh.ok) cache.put(request, fresh.clone());
         return fresh;
       } catch {
-        return new Response('', { status: 504, statusText: 'Offline and not cached' });
+        // Offline, and this version hasn't got it yet: an older version's
+        // copy — kept until this one has its own — beats nothing.
+        return (await caches.match(request, { ignoreSearch: true })) ||
+          new Response('', { status: 504, statusText: 'Offline and not cached' });
       }
     })()
   );

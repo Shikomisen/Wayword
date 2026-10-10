@@ -1889,3 +1889,62 @@ casual is what you *say* to a partner. So:
     downloads it, and shows the bar. *Update now* reloads into the new
     version's cache. This is the real browser lifecycle, not a stand-in.
 - **Cache v12.**
+
+### A93 — Updates install the app first, so a phone can't get stuck (supersedes part of A86)
+- **What the user saw.** Even after v12 was live, the phone showed no
+  version anywhere: it was still on the 8 October build (c5b4b71, v5).
+- **Why.** An update is installed by the *new* version's worker. Up to v12,
+  that install fetched every course before taking over, because a pre-v9
+  device kept no record of its courses (A86). That was ≈20 MB and 1,700
+  requests:
+  - a phone that closes or backgrounds the app mid-install throws the
+    install away;
+  - every launch started over from nothing;
+  - the old build had no way to say anything was wrong.
+
+  So it may never finish.
+- **Now (v13):**
+  - **An install caches the app only** (the shell, the course list, the
+    interface strings: about 40 files) and takes over at once.
+  - **Downloads resume.** Files already in the new cache are skipped, so an
+    interrupted install or course download carries on where it stopped.
+  - **Courses come after.** The app's first `keep-courses` ask after an
+    update brings every course the device keeps — the record, plus anything
+    started here — into the new version.
+  - **The previous version's cache stays as the offline fallback** until that
+    has happened, then it's deleted. If the device keeps no courses, it's
+    deleted at once.
+  - **Fetches** come from this version's cache first, then the network (and
+    are kept). Only when the network fails do they come from an older cache:
+    stale is better than nothing offline, but online always gets this
+    version's files.
+  - **A page from before v12** (no update bar) is reloaded into the new
+    version by the worker as soon as it takes over (`client.navigate`). So a
+    phone on an old build needs the app opened once, while online. Pages
+    from v12 on show the bar instead, and aren't reloaded under someone
+    mid-review.
+- **Trade-off.** Right after an update, until the app has asked for its
+  courses (seconds, at launch), offline content comes from the old version.
+  That can mean new code with old content for a moment. The app copes with
+  older content, missing fields are optional, and it only happens offline.
+- **Tests:**
+  - **`tools/sw-test.mjs` (42 checks)**, version after version on shared Cache
+    Storage. It covers:
+    - an update installs only the app;
+    - the old cache is kept;
+    - online fetches come fresh and are kept; offline ones come from the old
+      copy; something cached nowhere gets a 504;
+    - the first ask brings every kept course into the new version, then the
+      old cache goes;
+    - from v8, the open page is navigated, and its cache waits for the
+      courses;
+    - an install cut short re-fetches nothing it already has.
+  - **Firefox:**
+    - fresh, 48 of 48;
+    - from the live v12, 48 of 48: the bar appears, then courses, then the
+      old cache goes;
+    - **from c5b4b71, the phone's own build, 48 of 48.** The new version
+      takes over within seconds, the old page reloads itself into v13
+      ("Wayword v13" on the picker), the courses download, the old cache
+      goes, and progress survives.
+- **Cache v13.**

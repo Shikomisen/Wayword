@@ -283,21 +283,36 @@ try {
 
     console.log('\n[2] This build deployed to the same URL');
     siteRoot = ROOT;
+    const oldVersion = Number(readFileSync(join(oldTree, 'sw.js'), 'utf8').match(/CACHE_VERSION = 'v(\d+)'/)?.[1]);
+    const newVersion = newCache.replace('wayword-', '');
     await page.goto(base, { waitUntil: 'load' });
     await rendered(page);
     const first = await appText(page);
     check('first launch after the update still renders', first.length > 40 && !/Something went wrong/.test(first),
       first.slice(0, 50));
-    // The record of courses kept (wayword-kept) is meant to outlive every version.
-    check(`new service worker installs ${newCache} and removes the old caches`,
-      await waitFor(page, ([fresh, old]) => caches.keys().then((k) => k.includes(fresh) && old.every((o) => !k.includes(o))),
-        [newCache, oldCaches.filter((c) => c !== newCache && c !== 'wayword-kept')], 120000),
+    // An update installs only the app, so it finishes even if the app is put
+    // away a few seconds later; the old version's cache stays as the offline
+    // fallback until the new one has the courses this device uses.
+    check(`the new service worker installs ${newCache} — the app itself, quickly — and takes over`,
+      await waitFor(page, (fresh) => navigator.serviceWorker.controller &&
+        caches.keys().then((k) => k.includes(fresh)), newCache, 60000),
       (await page.evaluate(() => caches.keys())).join(', '));
-    if (oldCaches.includes('wayword-kept')) {
-      check('…keeping the record of which courses this device uses', Boolean(await keptCourses(page)),
-        JSON.stringify(await keptCourses(page)));
+    if (oldVersion >= 12) {
+      check('the open app says a new version is ready',
+        await waitFor(page, () => document.querySelector('.update-banner')?.textContent.includes('Update now'), null, 30000));
+    } else {
+      // A build from before the update bar can't say so: it's taken to the new version.
+      check(`a build from before the update bar (v${oldVersion}) is reloaded into the new version by itself`,
+        await waitFor(page, (v) => document.querySelector('.home-footer')?.textContent === `Wayword ${v}`, newVersion, 30000),
+        await page.$eval('.home-footer', (e) => e.textContent).catch(() => '(no version shown: still the old build)'));
     }
     await page.goto(base, { waitUntil: 'load' });
+    check(`the app then downloads the courses this device uses, and the old version's cache goes`,
+      await waitFor(page, ([fresh, old]) => caches.keys().then((k) => k.includes(fresh) && old.every((o) => !k.includes(o))),
+        [newCache, oldCaches.filter((c) => c !== newCache && c !== 'wayword-kept')], 180000),
+      (await page.evaluate(() => caches.keys())).join(', '));
+    check('…and the record of which courses this device uses is there', Boolean(await keptCourses(page)),
+      JSON.stringify(await keptCourses(page)));
     await page.goto(`${base}#/en-ja/`, { waitUntil: 'load' });
     await waitFor(page, () => document.querySelector('.placement-intro, .stat-row'), null, 15000);
     check('progress survived: Japanese opens on Today, not placement',
@@ -324,16 +339,13 @@ try {
   }
   const audio = expected.filter((u) => u.endsWith('.mp3')).length;
   if (oldTree) {
-    // The update keeps what the previous build kept: the courses it recorded
-    // as used here (v9 on) — or, from a build that cached every course and
-    // recorded none (v8 and before), every course, this once.
-    const kept = await keptCourses(page);
-    const want = kept ? await expectedAssets(kept) : expected;
+    // After the update, the courses this device uses are in the new version's
+    // cache — the ones the previous build recorded, and any started here.
+    const kept = (await keptCourses(page)) || [];
+    const want = await expectedAssets(kept);
     const missing = await notCached(page, want);
-    check(kept
-      ? `${newCache} downloads the courses the device used (${kept.join(', ')}) before taking over (${want.length} files)`
-      : `${newCache} keeps every course a copy that had them all (${expected.length} files, ${audio} clips)`,
-    missing.length === 0, missing.slice(0, 5).join(', ') || 'none missing');
+    check(`${newCache} holds the app and the courses the device uses (${kept.join(', ')}): ${want.length} files, ${audio} clips in all courses`,
+      missing.length === 0, missing.slice(0, 5).join(', ') || 'none missing');
   } else {
     const missing = await notCached(page, appOnly);
     check(`${newCache} holds the app, the course list and the interface strings (${appOnly.length} files)`,
@@ -433,6 +445,9 @@ try {
     check('"Update now" reloads into it',
       (await waitFor(page, () => !document.querySelector('.update-banner') && Boolean(document.querySelector('#app h1')), null, 15000)) &&
         (await page.evaluate(() => caches.keys())).some((k) => k.endsWith('-next')),
+      (await page.evaluate(() => caches.keys())).join(', '));
+    check('…which downloads the courses this device uses, and then lets the old version\'s cache go',
+      await waitFor(page, (old) => caches.keys().then((k) => !k.includes(old) && k.some((x) => x.endsWith('-next'))), newCache, 180000),
       (await page.evaluate(() => caches.keys())).join(', '));
   }
 

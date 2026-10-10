@@ -206,36 +206,45 @@ launch without code changes:
 
 ## 5. Offline-First Architecture
 
-- **The app itself** — the shell, the course list and the interface strings
-  — is cached by the service worker on first load.
+- **The app itself** — the shell, the course list and the interface strings,
+  about forty files — is cached by the service worker on first load.
 - **A course** — its content JSON and every bundled audio file — is cached
   the first time it's opened on the device, in the background. A toast says
   when it's done, and Settings → Your data shows whether this course is saved
   offline. Nobody downloads a course they don't use: each one is about 10 MB.
   - The worker remembers which courses the device keeps (a small unversioned
-    cache, `wayword-kept`). Each new version downloads those courses before
-    it takes over, so what worked offline keeps working.
-  - At launch the app also asks for every course started on this device, so
-    a course the browser evicted comes back.
-  - A copy updating from v8 or earlier, which cached every course and kept no
-    record, keeps every course for that one update.
+    cache, `wayword-kept`).
+  - At launch the app asks for every course started on this device, so a
+    course the browser evicted comes back.
+  - A download that's cut short picks up where it stopped next time.
   - Opening a course offline that was never downloaded says so ("not on this
     device yet") instead of failing.
-- **Updates.** The browser only looks for a new version when the app is
-  opened afresh. A phone that resumes the app from the background never
-  does, and can sit on an old version for weeks. So the app (`js/updates.js`)
-  asks whenever it comes back to the foreground.
-  - The new version downloads in the background and takes over by itself.
-    The screen still runs the old code until it reloads, so a bar across the
-    top says **"A new version of Wayword is ready — Update now"**.
-  - **The version shows** at the foot of the language picker ("Wayword v12")
+- **Updates install the app first, then the courses.**
+  - A new version installs just the app — seconds, not minutes — and takes
+    over at once. That matters on a phone: putting the app away mid-install
+    throws the install away. Until v13 an update fetched every course before
+    taking over, about 20 MB, and an old build on a phone could fail that
+    install on every launch, never updating.
+  - The courses the device keeps follow as soon as the app asks.
+  - Until they're all in, the previous version's cache stays as the offline
+    fallback. Online, files come fresh from the network; offline, the old
+    copy beats nothing. Once the new version has every kept course, the old
+    cache goes.
+- **An open app finds updates.** The browser only looks for a new version
+  when the app is opened afresh, and a phone that resumes the app from the
+  background never does. So the app (`js/updates.js`) asks whenever it comes
+  back to the foreground.
+  - The new version takes over by itself, but the screen still runs the old
+    code until it reloads. So a bar across the top says **"A new version of
+    Wayword is ready — Update now"**.
+  - A page from before v12 has no such bar. The new version reloads it by
+    itself as soon as it takes over, so a phone on an old build only needs
+    the app opened once while online.
+  - **The version shows** at the foot of the language picker ("Wayword v13")
     and in Settings → About. Settings also has **Check for updates**.
   - The number is `js/version.js`, and it must equal `CACHE_VERSION` in
     `sw.js`: changing sw.js is what makes phones update, and `npm test` fails
     if the two disagree. Bump both together.
-  - A copy older than v12 has none of this. To get onto v12 it needs one
-    manual nudge: close the app fully (swipe it away), then open it twice.
-    The first open downloads the update; the second runs it.
 - Audio plays from bundled files — no network call, no dependency on the
   device's own TTS voice being installed.
 - All progress/SRS/quiz-result state stored client-side.
