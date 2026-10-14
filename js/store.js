@@ -11,7 +11,7 @@
  * ids without colliding and resetting one course can never touch another.
  * Every call works on the current namespace unless one is passed explicitly.
  *
- * All state is client-side. Nothing here ever touches the network (README §8).
+ * All state is client-side. Nothing here ever touches the network (README §1, §8).
  */
 
 const DB_VERSION = 1;

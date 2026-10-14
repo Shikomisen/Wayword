@@ -27,7 +27,7 @@ const DEFAULT_DIRECTIONS = { recognition: true, production: true, listening: fal
 const DEFAULT_SETTINGS = {
   furigana: true,        // legacy on/off — superseded by furiganaMode, kept so old records read right
   furiganaMode: null,    // 'always' | 'tap' | 'hidden'; null = derive from `furigana`
-  romaji: true,          // README §6: off by default after the first week — see maybeRetireRomaji()
+  romaji: true,          // README §7.8: off by default after the first week — see maybeRetireRomaji()
   textScale: 1,          // superseded by the app-wide preference (course.js getTextScale)
   newPerDay: 10,
   newCharsPerDay: 15,    // characters are faster to review than phrases
@@ -78,7 +78,7 @@ export async function saveSettings(patch) {
 }
 
 /**
- * README §6: romaji off by default after the first week. Rather than
+ * README §7.8: romaji off by default after the first week. Rather than
  * silently yanking it, this flips the default once and tells the caller so
  * the UI can mention it. The user can turn it straight back on in settings.
  */
@@ -161,7 +161,7 @@ export async function putCard(card) {
  *
  * Placement results shape the starting interval of recognition cards: a
  * category the user clearly already has gets its easy cards seeded forward
- * instead of starting from zero (README §6a). Production and listening start
+ * instead of starting from zero (README §7.4). Production and listening start
  * fresh — recognising a phrase isn't the same as being able to say it.
  * Cards already in the deck are left untouched.
  */

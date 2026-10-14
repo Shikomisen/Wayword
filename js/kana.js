@@ -1,5 +1,5 @@
 /**
- * kana.js — kana mastery and the daily kana drill (README §16). Pure logic,
+ * kana.js — kana mastery and the daily kana drill (README §7.7). Pure logic,
  * no DOM: reading.js draws it, deck.js stores the per-character record.
  *
  * Mastery is per character, by the rule in mastery.js: right three times in

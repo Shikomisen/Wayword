@@ -1,11 +1,12 @@
 /**
  * deploy.mjs — publish the site: `npm run deploy`.
  *
- * GitHub Pages serves this repository straight from `main` (ASSUMPTIONS A31),
+ * GitHub Pages serves this repository straight from `main` (README §11.5),
  * so deploying *is* pushing main. This makes that one safe command:
  *
  *   1. preflight — on main, nothing uncommitted, not behind origin
- *   2. the test suites — content, integration, render, service worker and voice
+ *   2. the test suites — content, integration, language pack, render,
+ *      service worker and voice
  *   3. git push origin main
  *   4. wait until the live site serves this build's service worker, then
  *      print the URL
@@ -19,7 +20,7 @@
  * served once the site moved to main/root — "deploying" changed nothing.
  *
  * Every git and node call passes its arguments as an array, never through a
- * shell, so paths with spaces (D:\Remote work\…) need no quoting.
+ * shell, so paths with spaces need no quoting.
  */
 
 import { execFileSync } from 'node:child_process';

@@ -10,7 +10,7 @@
  * Kana render as the traditional grid by row; kanji as a browsable list
  * grouped by usage, each entry showing which phrases already contain it
  * so the two halves of the app reinforce each other rather than sitting
- * side by side (README §12).
+ * side by side (README §2.7).
  *
  * Only courses that ship character sets get this section (English speakers
  * learning Japanese, today), so its wording stays English rather than going
@@ -137,7 +137,7 @@ export async function renderCharacterList(root) {
 
       el('p', { class: 'muted small footnote' },
         'Handwriting and stroke-order practice are deliberately not here — this app teaches reading, ' +
-        'not writing. See ASSUMPTIONS.md (A24).')
+        'not writing.')
     )
   );
 }

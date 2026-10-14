@@ -1,5 +1,5 @@
 /**
- * backup.js — export and import of everything this app stores (README §17).
+ * backup.js — export and import of everything this app stores (README §8.4).
  *
  * Progress lives in one browser on one device: clearing site data, losing
  * the phone or switching browsers would lose it. A backup is one JSON file

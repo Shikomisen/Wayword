@@ -1,5 +1,5 @@
 /**
- * listen-drill.js — the listening section (README §18).
+ * listen-drill.js — the listening section (README §2.8).
  *
  *   #/<course>/listening         progress, today's drill, and every line and
  *                                pair of sounds, to hear any time

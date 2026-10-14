@@ -1,6 +1,6 @@
 /**
  * offline.js — keeping the courses this device uses available offline
- * (README §5).
+ * (README §10.3).
  *
  * The service worker caches the app itself on install, and a course — its
  * content and every clip — once it's opened here. Entering a course asks the

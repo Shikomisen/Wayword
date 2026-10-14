@@ -1,7 +1,7 @@
 {
   "name": "Wayword",
   "short_name": "Wayword",
-  "description": "Learn to speak and read Japanese for real conversation — words, sentences and connectors, with spaced repetition that works offline.",
+  "description": "Learn a language for real conversation — words, sentences and connectors, with spaced repetition and audio that work offline. Japanese for English speakers; English for Japanese speakers.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
@@ -17,6 +17,6 @@
   ],
   "shortcuts": [
     { "name": "Review due cards", "url": "./index.html#/review" },
-    { "name": "Browse phrases", "url": "./index.html#/browse" }
+    { "name": "Learn", "url": "./index.html#/browse" }
   ]
 }

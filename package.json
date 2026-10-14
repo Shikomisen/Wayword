@@ -2,7 +2,7 @@
   "name": "wayword",
   "version": "1.0.0",
   "private": true,
-  "description": "A language-learning PWA for real conversation — vocabulary, sentences and connectors with SRS, reading practice and bundled audio. Japanese first, more languages to come.",
+  "description": "An offline-first language-learning web app for real conversation: words, sentences and connectors with spaced repetition, reading practice and bundled audio. Japanese for English speakers and English for Japanese speakers; more languages are content only.",
   "type": "module",
   "scripts": {
     "start": "node tools/serve.mjs",

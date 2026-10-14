@@ -2,13 +2,12 @@
  * render-test.mjs — renders every screen in a real DOM and asserts the
  * output, so template bugs surface without opening a browser.
  *
- * Requires jsdom, which is NOT a project dependency — the app itself has
- * zero dependencies. Install it just for this run:
+ * Needs jsdom, a dev dependency (the app itself has none at runtime):
  *
- *   npm install --no-save jsdom
+ *   npm ci
  *   node tools/render-test.mjs
  *
- * Skips cleanly with exit 0 if jsdom isn't present.
+ * Without jsdom it prints a note and exits 0, so run `npm ci` first.
  */
 
 import { readFileSync, existsSync } from 'node:fs';
@@ -30,7 +29,7 @@ try {
   ({ JSDOM } = await import('jsdom'));
 } catch {
   console.log('\njsdom not installed — skipping render tests.');
-  console.log('  npm install --no-save jsdom && node tools/render-test.mjs\n');
+  console.log('  npm ci && node tools/render-test.mjs\n');
   process.exit(0);
 }
 

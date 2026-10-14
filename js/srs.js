@@ -1,5 +1,5 @@
 /**
- * srs.js — SM-2 spaced repetition, implemented directly (README §3).
+ * srs.js — SM-2 spaced repetition, implemented directly (README §7.2).
  *
  * Deliberately not over-engineered: classic SM-2 intervals with a short
  * same-session learning step for lapses, so a card you just failed comes
@@ -82,7 +82,7 @@ export function newCard(id, categoryId, now = Date.now(), opts = {}) {
 
 /**
  * Seed a card as already-known, skipping the early intervals.
- * Used by the placement quiz (README §6a) so week 1 isn't spent on
+ * Used by the placement quiz (README §7.4) so the first weeks aren't spent on
  * material that's already retained.
  *
  * @param {number} intervalDays starting interval

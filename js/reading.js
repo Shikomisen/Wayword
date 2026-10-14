@@ -1,5 +1,5 @@
 /**
- * reading.js — reading progression (README §16).
+ * reading.js — reading progression (README §2.7).
  *
  *   - the daily kana drill (#/<course>/characters/drill/<script>): a couple
  *     of minutes of "what does this say?" and "which one did you hear?",

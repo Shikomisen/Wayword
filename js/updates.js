@@ -1,5 +1,5 @@
 /**
- * updates.js — getting an installed app onto the latest version (README §5).
+ * updates.js — getting an installed app onto the latest version (README §10.5).
  *
  * The browser only looks for a new version when the app is opened afresh. A
  * phone that resumes the app from the background never does, and can sit on

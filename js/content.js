@@ -1,5 +1,5 @@
 /**
- * content.js — content loader (README §3a).
+ * content.js — content loader (README §6).
  *
  * The app never hardcodes a category. Everything comes from the current
  * course's manifest (content/ja/manifest.json for English → Japanese), so

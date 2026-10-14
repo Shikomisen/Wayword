@@ -1,9 +1,9 @@
 /**
- * quiz.js — onboarding placement quiz (README §6a).
+ * quiz.js — onboarding placement quiz (README §7.4).
  *
- * Offline, no AI call. Pulls two sample cards from each of the 10
- * categories (one easy, one harder) for 20 self-graded items, then uses
- * the result to decide where each card enters the SRS deck.
+ * Offline, no AI call. Pulls two sample cards from each phrase category and
+ * each character set (the easiest and the hardest) for a short self-graded
+ * quiz, then uses the result to decide where each card enters the SRS deck.
  *
  * Self-graded on purpose: typing answers is slow, and the thing being
  * measured is "do you already have this", not production accuracy.
@@ -61,7 +61,7 @@ export async function buildPlacementSet() {
 /**
  * Turn raw answers into a per-category score and seed the SRS deck.
  *
- * Per README §6a: cards answered "known" enter at a later interval;
+ * Per README §7.4: cards answered "known" enter at a later interval;
  * "recognised" and "unknown" start at the normal first interval.
  */
 export async function applyPlacement(items, answers) {
@@ -106,7 +106,7 @@ export async function applyPlacement(items, answers) {
     await deck.putCard(card);
   }
 
-  // README §7: start with a few categories, not all of them — the review
+  // README §7.4: start with a few categories, not all of them — the review
   // load adds up. The manifest marks which ones are `starter`s.
   const { categories, decks } = await loadContent();
   for (const d of [...categories, ...(decks || [])].filter((c) => c.starter)) {

@@ -1,5 +1,5 @@
 /**
- * sw.js — offline-first service worker (README §5).
+ * sw.js — offline-first service worker (README §10).
  *
  * Installing caches the app itself — the shell, the course list and the
  * interface strings, about forty files — and takes over straight away. That
@@ -14,7 +14,9 @@
  *
  * Until a new version has every course this device keeps, the previous
  * version's cache stays as the offline fallback, so an update never takes
- * offline away. Once they're all in, it goes.
+ * offline away. Once they're all in, it goes. Each ask to keep courses also
+ * re-checks the app's own files, and a worker never deletes a later
+ * version's cache.
  *
  * Adding a category — or a whole course — needs no service-worker edit: bump
  * CACHE_VERSION (and VERSION in js/version.js) and it's picked up.
@@ -25,7 +27,7 @@
  *                         comes), then — offline — an older version's copy
  */
 
-const CACHE_VERSION = 'v14';
+const CACHE_VERSION = 'v15';
 const CACHE_PREFIX = 'wayword-';
 const CACHE = `${CACHE_PREFIX}${CACHE_VERSION}`;
 
@@ -168,9 +170,38 @@ function rememberCourses(ids) {
   return keptWrites;
 }
 
-/** Earlier versions' caches: the offline fallback while this version fills its own. */
+/** A cache name's version: wayword-v15 → { n: 15, suffix: '' }; null for any other name. */
+function versionOf(name) {
+  const m = /^wayword-v(\d+)(.*)$/.exec(name);
+  return m ? { n: Number(m[1]), suffix: m[2] } : null;
+}
+
+/**
+ * Whether a cache belongs to a later version than this one: a higher number,
+ * or the same number with a suffix after it (a test's "-next"). Only when
+ * both names can be read; a name that can't is treated as older, as before.
+ */
+function newerThanThis(name) {
+  const other = versionOf(name);
+  const mine = versionOf(CACHE);
+  if (!other || !mine) return false;
+  return other.n > mine.n || (other.n === mine.n && other.suffix > mine.suffix);
+}
+
+/**
+ * Earlier versions' caches: the offline fallback while this version fills its
+ * own. Never a later version's: up to v14 this took every other cache for an
+ * older one, so an old worker asked to keep its courses while a new version
+ * was installing deleted the new version's cache (see keepCourses).
+ */
 async function olderCaches() {
-  return (await caches.keys()).filter((k) => k !== CACHE && k !== KEPT && OWN_PREFIXES.some((p) => k.startsWith(p)));
+  return (await caches.keys()).filter((k) => k !== CACHE && k !== KEPT &&
+    OWN_PREFIXES.some((p) => k.startsWith(p)) && !newerThanThis(k));
+}
+
+/** The app itself: what an install caches. Reads the course list from `cache` if given, else the network. */
+async function appAssets(cache = null) {
+  return [...SHELL, ...baseAssets(await readJSON('content/courses.json', cache))];
 }
 
 /** A cache from a version without the update bar: pre-rename, or before v12. */
@@ -253,13 +284,18 @@ function keepCourse(id, manifestPath, cache) {
  */
 async function keepCourses(ids) {
   const cache = await caches.open(CACHE);
+  // The app itself first. Its files are normally all here, which costs a
+  // lookup each. But a v13 or v14 worker, asked to keep its courses while
+  // this version was installing, deleted this version's cache; whatever the
+  // app didn't happen to fetch since then is put back here.
+  const appMissing = await cacheAllTolerant(cache, await appAssets(cache));
   const known = await availableCourses(cache);
   const asked = [...new Set(ids)].filter((id) => known.has(id));
   await rememberCourses(asked);
   const wanted = [...new Set([...asked, ...((await keptCourses()) || [])])].filter((id) => known.has(id));
   const courses = [];
   for (const id of wanted) courses.push(await keepCourse(id, known.get(id), cache));
-  if (courses.every((c) => !c.error && c.missing === 0)) {
+  if (!appMissing.length && courses.every((c) => !c.error && c.missing === 0)) {
     await Promise.all((await olderCaches()).map((k) => caches.delete(k)));
   }
   return { courses };
@@ -290,8 +326,7 @@ self.addEventListener('install', (event) => {
       // The app itself, and nothing else: quick enough to finish before a
       // phone puts the app away. Courses follow once the app asks.
       const cache = await caches.open(CACHE);
-      const registry = await readJSON('content/courses.json');
-      await cacheAllTolerant(cache, [...SHELL, ...baseAssets(registry)]);
+      await cacheAllTolerant(cache, await appAssets());
       await self.skipWaiting();
     })()
   );

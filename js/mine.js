@@ -11,7 +11,7 @@
  *     the device (checked when you add the card — see audio.deviceVoice);
  *   - and/or a recording you make, of yourself or of whoever said it.
  * With neither, the card says so clearly ("No audio") and gets no listening
- * card. Nothing is sent to an online speech service: README §8.
+ * card. Nothing is sent to an online speech service: README §1.
  */
 
 import { loadContent, refreshUserItems, USER_DECK } from './content.js';

@@ -392,7 +392,7 @@ function validateCourse(course) {
         check(`${c.id}: furigana segments reconstruct the character`, rebuilt === c.character);
       }
 
-      // Kanji carry a meaning; kana legitimately do not (README §12).
+      // Kanji carry a meaning; kana legitimately do not (README §6.7).
       if (set.script === 'kanji') {
         check(`${c.id}: kanji has an English meaning`, Boolean(c.english));
         for (const ref of c.seenIn || []) {

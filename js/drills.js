@@ -1,5 +1,5 @@
 /**
- * drills.js — the sentence-building drills (README §15). Pure logic, no DOM:
+ * drills.js — the sentence-building drills (README §7.6). Pure logic, no DOM:
  * which drills a lesson's examples make, the order a session runs in, and
  * the checks. connectors.js draws them.
  *

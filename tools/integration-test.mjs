@@ -769,7 +769,7 @@ check('placement samples every ja-en category', new Set(enItems.map((i) => i.cat
 check('placement has no character items', enItems.every((i) => i.kind === 'phrase'));
 await quiz.applyPlacement(enItems, Object.fromEntries(enItems.map((i) => [i.id, quiz.ANSWERS.UNKNOWN])));
 check('ja-en is onboarded on its own', await deck.isOnboarded());
-check('week-1 categories activated in ja-en',
+check('starter categories activated in ja-en',
   (await deck.getSettings()).activeCategories.join(',') === 'greetings,numbers,restaurant,shopping,words-cafe,words-shopping,words-verbs',
   (await deck.getSettings()).activeCategories.join(','));
 

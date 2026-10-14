@@ -1,5 +1,6 @@
 /**
- * connectors.js — the Connectors course (README §15).
+ * connectors.js — a course's lessons: Connectors, or whatever its manifest
+ * calls them (README §2.6).
  *
  *   #/<course>/connectors              every lesson, grouped
  *   #/<course>/connectors/<id>         one connector: explanation, when it

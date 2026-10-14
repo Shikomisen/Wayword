@@ -53,7 +53,13 @@ tmp/
 coverage/
 
 # NOTE: audio/ is intentionally NOT ignored.
-# Per README §3-audio the generated clips are bundled build output that
+# Per README §9 the generated clips are bundled build output that
 # ships with the app, so they are committed to the repo.
 .deploy-worktree/
 .day2-assumptions.tmp
+
+# Private working files. This repo is public and GitHub Pages publishes
+# everything committed to it, so the project brain (wayword-brain/, an
+# Obsidian vault) and Claude Code's instructions (CLAUDE.md) stay local.
+wayword-brain/
+CLAUDE.md

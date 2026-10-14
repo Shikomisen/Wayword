@@ -1,5 +1,5 @@
 /**
- * mastery.js — when a drilled item counts as learned (README §16). Shared by
+ * mastery.js — when a drilled item counts as learned (README §7.7). Shared by
  * the kana drill (kana.js) and the listening drill (listening.js); deck.js
  * stores each item's record.
  *

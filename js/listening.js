@@ -1,5 +1,5 @@
 /**
- * listening.js — the listening drill (README §18). Pure logic, no DOM:
+ * listening.js — the listening drill (README §7.7). Pure logic, no DOM:
  * listen-drill.js draws it, deck.js stores the per-item record.
  *
  * Two kinds of question, from the course's `listening` content:

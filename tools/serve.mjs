@@ -3,7 +3,7 @@
  *
  * Binds 0.0.0.0 and prints the LAN URL so the app can be opened on a
  * phone on the same Wi-Fi without deploying or transferring files
- * (README §2, Day 1).
+ * (README §11.5).
  *
  *   node tools/serve.mjs [port]
  */

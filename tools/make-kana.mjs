@@ -73,7 +73,7 @@ const SMALL_KATA = ['ャ', 'ュ', 'ョ'];
 
 /**
  * Katakana-only combinations for foreign sounds. Not decorative — a
- * traveller reads these constantly (メニュー, チェックイン, ウィスキー),
+ * reader meets these constantly (メニュー, チェックイン, ウィスキー),
  * so "full functional set" for katakana has to include them.
  */
 const EXTENDED = [
@@ -113,7 +113,7 @@ function entry({ script, id, character, romaji, row, column, group, difficulty, 
     character,
     // `japanese` / `furigana` / `english` mirror the phrase schema so the
     // existing flashcard, furigana toggle and audio components render a
-    // character with no special-casing (see ASSUMPTIONS A20).
+    // character with no special-casing (README §6.7).
     japanese: character,
     furigana: [{ b: character }],
     readings: [character],

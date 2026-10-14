@@ -1,5 +1,5 @@
 /**
- * audio.js — playback of the pre-generated, bundled clips (README §3-audio).
+ * audio.js — playback of the pre-generated, bundled clips (README §9).
  *
  * This is deliberately dumb: it plays a file. There is no speechSynthesis
  * call anywhere in the app, so playback does not depend on the user's
@@ -121,7 +121,7 @@ async function voices() {
 /**
  * An on-device voice for a language, or null. Only voices that run locally
  * are used: a network voice would send the sentence to a speech service,
- * and nothing in this app leaves the device (README §8).
+ * and nothing in this app leaves the device (README §1).
  */
 export async function deviceVoice(lang) {
   const all = (await voices()).filter((v) => v.lang?.toLowerCase().startsWith(lang));

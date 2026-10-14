@@ -1,16 +1,16 @@
 /**
- * scenario.js — branching dialogue trees (README §2 Day 2, §4.3).
+ * scenario.js — branching dialogue trees (README §2.9, schema §6.9).
  *
  * Static JSON, no engine. A node holds an NPC line and 2-3 player
  * options; each option carries a `quality` (good / awkward / wrong), a
  * feedback line explaining *why*, and a `next` node id.
  *
  * Picking an awkward option doesn't dead-end the scenario — it explains
- * what landed oddly and continues. The register mismatch is the lesson
- * (README §6), so failing forward teaches more than blocking.
+ * what landed oddly and continues. The register mismatch is the lesson,
+ * so failing forward teaches more than blocking.
  *
  * Player options reference phrase IDs from the category content rather
- * than duplicating text (§3a), which also means they reuse that phrase's
+ * than duplicating text (README §6.9), which also means they reuse that phrase's
  * bundled audio clip.
  */
 

@@ -1,8 +1,8 @@
 /**
  * render.js — small DOM helpers shared by every screen.
  *
- * No framework, no build step (README §3). Just element creation and the
- * furigana/romaji rendering that the toggles in §6 drive.
+ * No framework, no build step (README §4). Just element creation and the
+ * furigana/romaji rendering that the reading aids drive (README §7.8).
  */
 
 import { t } from './i18n.js';
@@ -198,7 +198,7 @@ export function tagRow(phrase) {
 }
 
 /**
- * Usage notes (README §6). Which notes exist and what they are called is
+ * Usage notes (README §6.3). Which notes exist and what they are called is
  * the course manifest's call — register and anime-divergence notes for
  * English speakers learning Japanese, usage and katakana-English pitfalls
  * for Japanese speakers learning English. content.js resolves them into

@@ -1,5 +1,5 @@
 /**
- * generate-audio.mjs — build-time TTS pass (README §3-audio).
+ * generate-audio.mjs — build-time TTS pass (README §9).
  *
  * This is a ONE-TIME build step, not a runtime dependency. It walks every
  * course in content/courses.json, synthesises every phrase to an mp3 in that
@@ -393,7 +393,7 @@ function collect(course) {
   }
 
   // Scenario NPC lines are content in their own right and aren't present in
-  // the category files, so they get their own clips (ASSUMPTIONS A15), in
+  // the category files, so they get their own clips (README §9.1), in
   // the voice of the people the learner talks to. Player options reuse the
   // referenced phrase's existing clip.
   for (const entry of manifest.scenarios || []) {

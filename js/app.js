@@ -1,7 +1,7 @@
 /**
  * app.js — router + screens.
  *
- * Vanilla ES modules, hash routing, no build step (README §3).
+ * Vanilla ES modules, hash routing, no build step (README §4).
  * Screens render into #app; each render is a full teardown, which is fine
  * at this scale and removes a whole class of stale-state bugs.
  *
@@ -118,7 +118,7 @@ async function router() {
     return renderPlannedCourse(root, target);
   }
 
-  // The placement quiz gates each course on its first visit (README §4.1).
+  // The placement quiz gates each course on its first visit (README §7.4).
   if (!(await deck.isOnboarded())) {
     const root = clear(app());
     document.body.classList.add('onboarding');
@@ -1067,7 +1067,7 @@ function secureContextState() {
 }
 
 /**
- * Register the service worker (README §5 — offline-first).
+ * Register the service worker (README §10 — offline-first).
  *
  * `register('sw.js')` is relative to the document, which is what makes the
  * GitHub Pages subpath work: from /Wayword/ it resolves to

@@ -109,7 +109,7 @@ export async function studySettings() {
 }
 
 /**
- * Inline reading-aid toggles (README §6, Day 2).
+ * Inline reading-aid toggles (README §7.8).
  *
  * Deliberately duplicated next to the content rather than buried in
  * Settings: deciding whether you need the reading is a per-card judgement
