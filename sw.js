@@ -25,9 +25,16 @@
  *   - navigations      -> network-first, falling back to the cached shell
  *   - everything else  -> this version's cache, then the network (cached as it
  *                         comes), then — offline — an older version's copy
+ *
+ * The network gets NETWORK_TIMEOUT to answer (README §10.6). Wi-Fi with no
+ * internet behind it doesn't fail a request, it leaves it hanging — which
+ * used to leave the app on a blank screen. Past the limit the app goes
+ * offline for now: the copy on this device, and no more waiting on the
+ * network until the app is next opened. In offline mode, chosen in
+ * Settings, it never waits at all.
  */
 
-const CACHE_VERSION = 'v15';
+const CACHE_VERSION = 'v16';
 const CACHE_PREFIX = 'wayword-';
 const CACHE = `${CACHE_PREFIX}${CACHE_VERSION}`;
 
@@ -35,6 +42,12 @@ const CACHE = `${CACHE_PREFIX}${CACHE_VERSION}`;
 // outlives each version's cache, so the next version knows what to download.
 const KEPT = `${CACHE_PREFIX}kept`;
 const KEPT_LIST = './__kept-courses.json';
+// Online or offline mode, as the app last said (README §10.6). Kept here
+// too, because the worker serves the next launch before any of the app runs.
+const CONNECTION = './__connection.json';
+
+// How long a request waits for the network before the app goes offline for now.
+const NETWORK_TIMEOUT = 10 * 1000;
 
 // Every prefix this app has cached under, including the pre-rename
 // `nihongo-tabi-`. Only caches with these prefixes are ever deleted: the
@@ -97,6 +110,8 @@ async function readJSON(f, cache = null, attempts = 3) {
   const url = `./${f}`;
   const hit = cache ? await cache.match(url) : null;
   if (hit) return hit.json().catch(() => null);
+  // Keeping a course, offline: what this version has cached is all there is.
+  if (cache && (await offlineNow())) return null;
   for (let attempt = 1; attempt <= attempts; attempt++) {
     if (attempt > 1) await new Promise((resolve) => setTimeout(resolve, 500 * (attempt - 1)));
     try {
@@ -284,6 +299,14 @@ function keepCourse(id, manifestPath, cache) {
  */
 async function keepCourses(ids) {
   const cache = await caches.open(CACHE);
+  if (await offlineNow()) {
+    // Offline mode, or a connection that isn't getting through: download
+    // nothing now. The courses are remembered, and come down the next time
+    // the app asks online.
+    const known = await availableCourses(cache);
+    await rememberCourses([...new Set(ids)].filter((id) => known.has(id)));
+    return { courses: [], offline: true };
+  }
   // The app itself first. Its files are normally all here, which costs a
   // lookup each. But a v13 or v14 worker, asked to keep its courses while
   // this version was installing, deleted this version's cache; whatever the
@@ -316,6 +339,61 @@ async function courseStatus(id) {
   let cached = 0;
   for (const url of assets) if (await cache.match(url)) cached++;
   return { course: id, kept, cached, total: assets.length, downloading: keeping.has(id) };
+}
+
+/* ---------- online, offline, and offline for now (README §10.6) ---------- */
+
+let mode = null;          // 'online' or 'offline': read from KEPT the first time it's needed
+let offlineSince = null;  // when a request last got no answer in time; each page load clears it
+
+async function connectionMode() {
+  if (!mode) {
+    const hit = await (await caches.open(KEPT)).match(CONNECTION);
+    const saved = hit ? await hit.json().catch(() => null) : null;
+    mode ??= saved?.mode === 'offline' ? 'offline' : 'online';
+  }
+  return mode;
+}
+
+/** Remember the app's choice: here at once, so a message straight after sees it, and in KEPT for later. */
+async function setConnectionMode(next) {
+  mode = next === 'offline' ? 'offline' : 'online';
+  await (await caches.open(KEPT)).put(CONNECTION,
+    new Response(JSON.stringify({ mode }), { headers: { 'content-type': 'application/json' } }));
+}
+
+/** Whether to leave the network alone: offline mode, or no answer in time since the page loaded. */
+async function offlineNow() {
+  return offlineSince !== null || (await connectionMode()) === 'offline';
+}
+
+/**
+ * The network, with NETWORK_TIMEOUT to answer. Past it this rejects, and
+ * the app is offline for now: nothing else waits on the network until the
+ * next page load tries again.
+ */
+function fromNetwork(request) {
+  return new Promise((resolve, reject) => {
+    const timer = setTimeout(() => {
+      offlineSince ??= Date.now();
+      reject(new Error(`no answer in ${NETWORK_TIMEOUT / 1000} s`));
+    }, NETWORK_TIMEOUT);
+    fetch(request).then(
+      (res) => { clearTimeout(timer); resolve(res); },
+      (err) => { clearTimeout(timer); reject(err); });
+  });
+}
+
+/**
+ * The app saying which mode it's in — at every launch, and when Settings
+ * changes it. `retry` (a change in Settings) also ends offline for now.
+ * Answered with how things stand: { mode, offlineSince }.
+ */
+async function connection({ mode: next, retry = false }) {
+  // Both before anything waits, so a message sent straight after sees them.
+  if (retry) offlineSince = null;
+  if (next === 'online' || next === 'offline') await setConnectionMode(next);
+  return { mode: await connectionMode(), offlineSince };
 }
 
 /* ---------- lifecycle ---------- */
@@ -362,13 +440,23 @@ self.addEventListener('fetch', (event) => {
   if (request.mode === 'navigate') {
     event.respondWith(
       (async () => {
+        // A page load — the app opened, or reloaded — tries the network again.
+        offlineSince = null;
+        // This version's page, which matches its scripts; an older version's if it has none.
+        const onDevice = async () =>
+          (await (await caches.open(CACHE)).match('./index.html')) || caches.match('./index.html');
+        if ((await connectionMode()) === 'offline') {
+          // Offline mode: the copy on this device, without asking the
+          // network at all — unless there's no copy yet.
+          return (await onDevice()) || fromNetwork(request).catch(() => Response.error());
+        }
         try {
-          const fresh = await fetch(request);
-          const cache = await caches.open(CACHE);
-          cache.put(request, fresh.clone());
+          const fresh = await fromNetwork(request);
+          if (fresh.ok) (await caches.open(CACHE)).put(request, fresh.clone()).catch(() => {});
           return fresh;
         } catch {
-          return (await caches.match('./index.html')) || Response.error();
+          // No connection, or none that answered in time.
+          return (await onDevice()) || Response.error();
         }
       })()
     );
@@ -380,23 +468,26 @@ self.addEventListener('fetch', (event) => {
       const cache = await caches.open(CACHE);
       const hit = await cache.match(request, { ignoreSearch: true });
       if (hit) return hit;
-      try {
-        const fresh = await fetch(request);
-        if (fresh.ok) cache.put(request, fresh.clone());
-        return fresh;
-      } catch {
-        // Offline, and this version hasn't got it yet: an older version's
-        // copy — kept until this one has its own — beats nothing.
-        return (await caches.match(request, { ignoreSearch: true })) ||
-          new Response('', { status: 504, statusText: 'Offline and not cached' });
+      if (!(await offlineNow())) {
+        try {
+          const fresh = await fromNetwork(request);
+          if (fresh.ok) cache.put(request, fresh.clone());
+          return fresh;
+        } catch {
+          // No connection, or none that answered in time: as offline, below.
+        }
       }
+      // Offline, and this version hasn't got it yet: an older version's
+      // copy — kept until this one has its own — beats nothing.
+      return (await caches.match(request, { ignoreSearch: true })) ||
+        new Response('', { status: 504, statusText: 'Offline and not cached' });
     })()
   );
 });
 
 /**
- * Messages from the app. 'keep-courses' and 'course-status' answer on the
- * port the app sends along (see js/offline.js).
+ * Messages from the app. 'keep-courses', 'course-status' and 'connection'
+ * answer on the port the app sends along (see js/offline.js).
  */
 self.addEventListener('message', (event) => {
   const { data } = event;
@@ -408,4 +499,5 @@ self.addEventListener('message', (event) => {
   const answer = (work) => event.waitUntil(work.then(reply, (err) => reply({ error: String(err?.message || err) })));
   if (data?.type === 'keep-courses' && Array.isArray(data.courses)) answer(keepCourses(data.courses));
   else if (data?.type === 'course-status' && typeof data.course === 'string') answer(courseStatus(data.course));
+  else if (data?.type === 'connection') answer(connection(data));
 });

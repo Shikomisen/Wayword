@@ -1,6 +1,6 @@
 /**
  * offline.js — keeping the courses this device uses available offline
- * (README §10.3).
+ * (README §10.3), and online or offline mode (README §10.6).
  *
  * The service worker caches the app itself on install, and a course — its
  * content and every clip — once it's opened here. Entering a course asks the
@@ -8,7 +8,7 @@
  * this device, so one the browser evicted comes back, and the worker's next
  * version knows which courses to download before it takes over.
  *
- * Both calls resolve to null when there's no worker to ask (plain http, an
+ * The calls resolve to null when there's no worker to ask (plain http, an
  * old browser, the tests), and never reject: offline support is a bonus on
  * top of the app working, not something the app waits on.
  */
@@ -43,3 +43,32 @@ export const keepOffline = (courses) => ask({ type: 'keep-courses', courses }, K
 
 /** How much of a course is on this device: { cached, total, kept, downloading }. */
 export const offlineStatus = (course) => ask({ type: 'course-status', course }, STATUS_TIMEOUT);
+
+/* ---------- online or offline mode ---------- */
+
+// Online: the network when it answers within 10 seconds, this device when it
+// doesn't. Offline: this device only — no waiting, no checks, no downloads.
+export const CONNECTION_MODES = ['online', 'offline'];
+
+let mode = 'online';
+let offlineSince = null;
+
+/** 'online' (the default) or 'offline', as chosen in Settings. */
+export const connectionMode = () => mode;
+
+/** When this launch's page didn't arrive in time, so the app is offline for now; null if it did. */
+export const offlineForNowSince = () => offlineSince;
+
+/**
+ * Use this mode, and tell the service worker, which keeps its own record:
+ * it serves the next launch before any of the app runs. `retry` — a change
+ * made in Settings — also ends offline for now. Resolves to the worker's
+ * answer, { mode, offlineSince }, or null when there's no worker.
+ */
+export async function useConnection(next, { retry = false } = {}) {
+  mode = CONNECTION_MODES.includes(next) ? next : 'online';
+  if (retry) offlineSince = null;
+  const answer = await ask({ type: 'connection', mode, retry }, STATUS_TIMEOUT);
+  if (answer && !answer.error) offlineSince = answer.offlineSince ?? null;
+  return answer;
+}

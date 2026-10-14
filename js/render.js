@@ -80,14 +80,15 @@ export function targetNode(item, { furigana = 'always' } = {}) {
 }
 
 /**
- * Tap-to-show furigana: the readings inside `node` are there but invisible
- * until it is tapped. The tap is swallowed so it doesn't also flip a flashcard.
+ * Tap to show: the readings inside `node` (or, for romaji, its text) are
+ * there but invisible until it is tapped. The tap is swallowed so it doesn't
+ * also flip a flashcard. `kind` is the class that hides them.
  */
-export function tapToReveal(node) {
-  node.classList.add('furi-tap');
+export function tapToReveal(node, { kind = 'furi-tap', label = t('furigana.reveal') } = {}) {
+  node.classList.add(kind);
   node.setAttribute('role', 'button');
   node.setAttribute('tabindex', '0');
-  node.setAttribute('aria-label', t('furigana.reveal'));
+  node.setAttribute('aria-label', label);
   const reveal = (e) => {
     e.stopPropagation();
     node.classList.toggle('revealed');
@@ -128,6 +129,30 @@ export function furiganaMode(settings, item) {
   return mode;
 }
 
+/**
+ * The romaji mode for one item, chosen the same way: the course setting,
+ * except that an item marked "I can read this" drops to tap-to-show where
+ * the setting is "always".
+ */
+export function romajiMode(settings, item) {
+  const mode = settings.romajiMode || (settings.romaji === false ? 'hidden' : 'always');
+  const id = item?.itemId ?? item?.id;
+  if (mode === 'always' && id && settings.readable?.has(id)) return 'tap';
+  return mode;
+}
+
+/**
+ * An item's romaji in its mode: shown, waiting for a tap, or left out.
+ * `item` decides the mode; `reading` is the romaji itself, which for a
+ * casual phrase's polite version is that version's own.
+ */
+export function romajiNode(item, settings, { reading = item?.reading, tag = 'div', className = 'romaji' } = {}) {
+  const mode = romajiMode(settings, item);
+  if (mode === 'hidden' || !reading) return null;
+  const node = el(tag, { class: className }, reading);
+  return mode === 'tap' ? tapToReveal(node, { kind: 'romaji-tap', label: t('romaji.reveal') }) : node;
+}
+
 /** "I can read this" — a per-item switch that fades its furigana (see furiganaMode). */
 export function readableToggle(item, settings, onChange) {
   if (!Array.isArray(item.ruby) || !item.ruby.some(shown)) return null;
@@ -163,7 +188,7 @@ export function phraseBlock(phrase, settings, { size = 'md' } = {}) {
     { class: `phrase-block phrase-${size}` },
     registerBadge(phrase),
     targetNode(phrase, { furigana: furiganaMode(settings, phrase) }),
-    settings.romaji && phrase.reading ? el('div', { class: 'romaji' }, phrase.reading) : null,
+    romajiNode(phrase, settings),
     meaningNode(phrase),
     wordDetails(phrase, settings)
   );
@@ -187,7 +212,7 @@ export function politeBlock(item, settings, onPlay) {
     el('div', { class: 'polite-row' },
       el('div', { class: 'polite-text' },
         targetNode(p, { furigana: furiganaMode(settings, item) }),
-        settings.romaji && p.reading ? el('div', { class: 'romaji' }, p.reading) : null),
+        romajiNode(item, settings, { reading: p.reading })),
       audioButton(p, onPlay)));
 }
 

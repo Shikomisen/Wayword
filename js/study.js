@@ -21,7 +21,7 @@ import { go, languageName } from './course.js';
 import { t, formatInterval } from './i18n.js';
 import {
   el, clear, targetNode, meaningNode, notesBlock, tagRow, audioButton, registerBadge, politeBlock,
-  furiganaMode, readableToggle, wordDetails,
+  furiganaMode, romajiNode, readableToggle, wordDetails,
 } from './render.js';
 import { playItem, studySettings, toggleStrip } from './shared.js';
 
@@ -51,7 +51,7 @@ export async function runSession(root, queue, { exitTo }) {
     const furigana = furiganaMode(s, item);
     const target = () => [
       targetNode(item, { furigana }),
-      s.romaji && item.reading ? el('div', { class: 'romaji' }, item.reading) : null,
+      romajiNode(item, s),
     ];
     const extras = () => [
       politeBlock(item, s, playItem),

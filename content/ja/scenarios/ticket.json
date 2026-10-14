@@ -131,7 +131,7 @@
     "n4": {
       "speaker": "staff",
       "japanese": "一万三千八百二十円です。",
-      "furigana": [{ "b": "一万三千八百二十円", "r": "いちまんさんぜんはっぴゃくにじゅうえん" }, { "b": "です。" }],
+      "furigana": [{ "b": "一万", "r": "いちまん" }, { "b": "三千", "r": "さんぜん" }, { "b": "八百", "r": "はっぴゃく" }, { "b": "二十", "r": "にじゅう" }, { "b": "円", "r": "えん" }, { "b": "です。" }],
       "romaji": "Ichiman sanzen happyaku nijū en desu.",
       "english": "That's ¥13,820.",
       "audio": "audio/ja/scenario/ticket-n4.mp3",

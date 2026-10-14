@@ -35,7 +35,9 @@ import { runSession } from './study.js';
 import { renderMine, renderMineForm } from './mine.js';
 import { renderConnectors, renderLesson, renderPractice } from './connectors.js';
 import { renderKanaDrill, kanaState, refreshKanaAids, SCRIPT_NAMES } from './reading.js';
-import { keepOffline, offlineStatus } from './offline.js';
+import {
+  keepOffline, offlineStatus, useConnection, connectionMode, offlineForNowSince, CONNECTION_MODES,
+} from './offline.js';
 import { renderListening, renderListeningDrill, listeningState } from './listen-drill.js';
 import { VERSION } from './version.js';
 import { watchForUpdates, onUpdateReady, updateReady, checkForUpdate } from './updates.js';
@@ -161,15 +163,26 @@ async function showHome() {
   await renderHome(root);
 }
 
-/** A course opened offline before it was ever downloaded here. */
+/**
+ * A course opened offline before it was ever downloaded here. In offline
+ * mode, that's because nothing downloads: the way out is to go online.
+ */
 function notDownloaded() {
   document.body.classList.add('no-tabs');
   const root = clear(app());
   window.scrollTo(0, 0);
+  const offlineMode = connectionMode() === 'offline';
   root.append(
     el('div', { class: 'screen' },
-      header(t('offline.notSavedTitle'), t('offline.notSaved')),
-      el('a', { class: 'btn btn-primary', href: '#/' }, t('offline.toPicker'))));
+      header(t('offline.notSavedTitle'), t(offlineMode ? 'offline.notSavedOfflineMode' : 'offline.notSaved')),
+      el('div', { class: 'action-row' },
+        offlineMode
+          ? el('button', {
+              type: 'button', class: 'btn btn-primary', dataset: { action: 'go-online' },
+              onclick: async () => { await setConnection('online'); router(); },
+            }, t('offline.goOnline'))
+          : null,
+        el('a', { class: offlineMode ? 'btn' : 'btn btn-primary', href: '#/' }, t('offline.toPicker')))));
 }
 
 let enteredCourse = null;
@@ -755,8 +768,14 @@ async function settings(root, focus = null) {
         el('div', { class: 'setting' },
           el('span', {}, el('strong', {}, t('settings.language')), el('span', { class: 'muted small' }, pair)),
           el('a', { class: 'btn btn-small', href: '#/' }, t('settings.changeLanguage'))),
-        features.ruby ? furiganaSetting(s, features) : null,
-        features.reading ? toggle('romaji', features.aids.reading?.label, features.aids.reading?.help) : null,
+        features.ruby
+          ? aidModeSetting(s, 'furiganaMode', deck.FURIGANA_MODES,
+              features.aids.ruby?.label || 'Furigana', t('settings.furiganaModeHelp'), 'furigana-mode')
+          : null,
+        features.reading
+          ? aidModeSetting(s, 'romajiMode', deck.ROMAJI_MODES,
+              features.aids.reading?.label || 'Romaji', t('settings.romajiModeHelp'), 'romaji-mode')
+          : null,
         directionsSetting(s),
         toggle('autoPlayAudio', t('settings.autoplay'), t('settings.autoplayHelp')),
 
@@ -783,7 +802,9 @@ async function settings(root, focus = null) {
           el('input', {
             type: 'range', min: '0.85', max: '1.6', step: '0.05', value: String(textScale),
             onchange: async (e) => { await course.savePrefs({ textScale: Number(e.target.value) }); applyTextSettings(); },
-          }))),
+          })),
+
+        connectionSetting()),
 
       el('h2', { class: 'section-title' }, t('settings.deck')),
       el('p', { class: 'muted' },
@@ -813,13 +834,25 @@ async function settings(root, focus = null) {
 
 /* ---------- about: the version, and getting the newest ---------- */
 
-/** Which version this is — so a phone that's behind can tell — and a way to fetch the latest. */
+/**
+ * Which version this is — so a phone that's behind can tell — and a way to
+ * fetch the latest. "Update now" is only here once there's an update to
+ * take: found by Check for updates, or put off with "Not now" on the bar.
+ */
 function aboutSection() {
   const status = el('p', { class: 'muted small update-status', role: 'status' });
   const reload = el('button', {
     type: 'button', class: 'btn btn-primary', hidden: !updateReady(), dataset: { action: 'reload' },
     onclick: () => location.reload(),
   }, t('update.reload'));
+  // An update that finishes downloading while Settings is open is offered straight away.
+  if (!updateReady()) {
+    const stop = onUpdateReady(() => {
+      stop();
+      reload.hidden = false;
+      status.textContent = t('update.ready');
+    });
+  }
   const check = el('button', {
     type: 'button', class: 'btn', dataset: { action: 'check-update' },
     onclick: async () => {
@@ -828,7 +861,7 @@ function aboutSection() {
       const result = await checkForUpdate();
       check.disabled = false;
       status.textContent = t(`update.${result}`, { version: VERSION });
-      if (result === 'ready') reload.hidden = false;
+      reload.hidden = result !== 'ready';
     },
   }, t('update.check'));
   return el('section', { class: 'about-section', id: 'about' },
@@ -839,14 +872,25 @@ function aboutSection() {
     status);
 }
 
-/** "A new version is ready" — across the top of every screen until it's taken up. */
+/**
+ * "A new version is ready": across the top of every screen, with Update now
+ * and Not now. Not now puts it away for this visit. Settings → About still
+ * offers it, and the next time the app starts it's the new version anyway.
+ */
 function showUpdateBanner() {
   if (document.querySelector('.update-banner')) return;
-  document.body.prepend(
-    el('div', { class: 'update-banner', role: 'status' },
-      el('span', {}, t('update.ready')),
-      el('button', { type: 'button', class: 'btn btn-small btn-primary', onclick: () => location.reload() },
-        t('update.reload'))));
+  const banner = el('div', { class: 'update-banner', role: 'status' },
+    el('span', { class: 'update-message' }, t('update.ready')),
+    el('span', { class: 'update-actions' },
+      el('button', {
+        type: 'button', class: 'btn btn-small btn-ghost', dataset: { action: 'update-later' },
+        onclick: () => { banner.remove(); toast(t('update.deferred'), 5000); },
+      }, t('update.notNow')),
+      el('button', {
+        type: 'button', class: 'btn btn-small btn-primary', dataset: { action: 'update-now' },
+        onclick: () => location.reload(),
+      }, t('update.reload'))));
+  document.body.prepend(banner);
 }
 
 /* ---------- your data: backup and restore ---------- */
@@ -1002,21 +1046,61 @@ async function backupNudge(summary, content) {
     el('span', { class: 'row-chev' }, '›'));
 }
 
-/** Furigana: always / tap to show / hidden. Its name and help come from the course's `aids`. */
-function furiganaSetting(s, features) {
+/**
+ * A reading aid's mode — furigana or romaji: always / tap to show / hidden.
+ * Its name comes from the course's `aids`; the three modes read the same for
+ * every aid, so furigana's names serve both.
+ */
+function aidModeSetting(s, key, modes, label, help, className) {
   return el('div', { class: 'setting setting-stack' },
     el('span', {},
-      el('strong', {}, features.aids.ruby?.label || 'Furigana'),
-      el('span', { class: 'muted small' }, t('settings.furiganaModeHelp'))),
-    el('div', { class: 'segmented furigana-mode', role: 'group' },
-      deck.FURIGANA_MODES.map((mode) =>
+      el('strong', {}, label),
+      el('span', { class: 'muted small' }, help)),
+    el('div', { class: `segmented ${className}`, role: 'group' },
+      modes.map((mode) =>
         el('button', {
           type: 'button',
-          class: s.furiganaMode === mode ? 'segment is-on' : 'segment',
-          'aria-pressed': s.furiganaMode === mode ? 'true' : 'false',
+          class: s[key] === mode ? 'segment is-on' : 'segment',
+          'aria-pressed': s[key] === mode ? 'true' : 'false',
           dataset: { mode },
-          onclick: async () => { await deck.saveSettings({ furiganaMode: mode }); router(); },
+          onclick: async () => { await deck.saveSettings({ [key]: mode }); router(); },
         }, t(`furigana.${mode}`)))));
+}
+
+/**
+ * Online or offline (README §10.6). It's for this device, like the text
+ * size, so it applies to every course.
+ */
+function connectionSetting() {
+  const mode = connectionMode();
+  return el('div', { class: 'setting setting-stack' },
+    el('span', {},
+      el('strong', {}, t('settings.connection')),
+      el('span', { class: 'muted small' }, t(`settings.connectionHelp.${mode}`))),
+    el('div', { class: 'segmented connection-mode', role: 'group' },
+      CONNECTION_MODES.map((m) =>
+        el('button', {
+          type: 'button',
+          class: mode === m ? 'segment is-on' : 'segment',
+          'aria-pressed': mode === m ? 'true' : 'false',
+          dataset: { connection: m },
+          onclick: () => { if (m !== connectionMode()) { setConnection(m); router(); } },
+        }, t(`connection.${m}`)))),
+    mode === 'online' && offlineForNowSince()
+      ? el('p', { class: 'muted small connection-status', role: 'status' }, t('connection.offlineForNow'))
+      : null);
+}
+
+/**
+ * Switch online or offline: at once on this page, then saved, then told to
+ * the service worker. Going online also downloads whatever offline mode left
+ * waiting — a course opened meanwhile, or the courses after an update.
+ */
+async function setConnection(next) {
+  const told = useConnection(next, { retry: true });
+  await course.savePrefs({ connection: next });
+  await told;
+  if (next === 'online') keepStartedCourses();
 }
 
 /** Card types: recognition, production, listening — at least one stays on. */
@@ -1110,11 +1194,16 @@ async function boot() {
   // Until a course is entered, speak the learner's language as best we know
   // it — this is also what the boot-error screen below will be shown in.
   const prefs = await course.getPrefs();
+  // Online or offline: told to the service worker at every launch, so it has
+  // it for the next. Its answer says whether this launch's page came from the
+  // device because the connection didn't answer in time (README §10.6).
+  const connection = useConnection(prefs.connection);
   await setLang(prefs.speaker || course.guessSpeaker());
   await applyTextSettings();
 
   window.addEventListener('hashchange', router);
   await router();
+  connection.then((answer) => { if (answer?.offlineSince) toast(t('connection.wentOffline'), 6000); });
   keepStartedCourses();
 }
 

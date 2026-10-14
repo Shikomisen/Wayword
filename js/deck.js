@@ -27,7 +27,8 @@ const DEFAULT_DIRECTIONS = { recognition: true, production: true, listening: fal
 const DEFAULT_SETTINGS = {
   furigana: true,        // legacy on/off — superseded by furiganaMode, kept so old records read right
   furiganaMode: null,    // 'always' | 'tap' | 'hidden'; null = derive from `furigana`
-  romaji: true,          // README §7.8: off by default after the first week — see maybeRetireRomaji()
+  romaji: true,          // legacy on/off — superseded by romajiMode, kept so old records read right
+  romajiMode: null,      // the same three modes; null = derive from `romaji`. Tap after the first week: see maybeRetireRomaji()
   textScale: 1,          // superseded by the app-wide preference (course.js getTextScale)
   newPerDay: 10,
   newCharsPerDay: 15,    // characters are faster to review than phrases
@@ -44,6 +45,8 @@ const DEFAULT_SETTINGS = {
 };
 
 export const FURIGANA_MODES = ['always', 'tap', 'hidden'];
+/** Romaji has the same three modes as furigana (README §7.8). */
+export const ROMAJI_MODES = FURIGANA_MODES;
 
 const settingsCache = new Map(); // namespace → settings
 
@@ -52,6 +55,9 @@ function withDefaults(saved = {}) {
   settings.directions = { ...DEFAULT_DIRECTIONS, ...(saved.directions || {}) };
   if (!FURIGANA_MODES.includes(settings.furiganaMode)) {
     settings.furiganaMode = saved.furigana === false ? 'hidden' : 'always';
+  }
+  if (!ROMAJI_MODES.includes(settings.romajiMode)) {
+    settings.romajiMode = saved.romaji === false ? 'hidden' : 'always';
   }
   return settings;
 }
@@ -78,17 +84,21 @@ export async function saveSettings(patch) {
 }
 
 /**
- * README §7.8: romaji off by default after the first week. Rather than
- * silently yanking it, this flips the default once and tells the caller so
- * the UI can mention it. The user can turn it straight back on in settings.
+ * README §7.8: after the first week, romaji stops showing by default — it
+ * goes from always shown to tap to show, so it's there when needed but the
+ * kana gets read first. Rather than silently changing it, this does it once
+ * and says whether it did, so the UI can mention it. A learner who already
+ * chose tap or hidden is left alone, and anyone can change it straight back
+ * in Settings.
  */
 export async function maybeRetireRomaji() {
   const s = await getSettings();
   if (s.romajiRetired || !s.installedAt) return false;
   const weekOne = 7 * srs.DAY;
   if (Date.now() - s.installedAt < weekOne) return false;
-  await saveSettings({ romaji: false, romajiRetired: true });
-  return true;
+  const retire = s.romajiMode === 'always';
+  await saveSettings(retire ? { romajiMode: 'tap', romajiRetired: true } : { romajiRetired: true });
+  return retire;
 }
 
 /* ---------- directions ---------- */

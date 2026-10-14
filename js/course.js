@@ -101,7 +101,8 @@ export function goHome() {
 
 /* ---------- app-wide preferences ---------- */
 
-const DEFAULT_PREFS = { speaker: null, lastCourse: null, textScale: null };
+// `connection` is online or offline mode (README §10.6), for this device.
+const DEFAULT_PREFS = { speaker: null, lastCourse: null, textScale: null, connection: 'online' };
 
 export async function getPrefs() {
   return { ...DEFAULT_PREFS, ...((await store.get('meta', 'prefs', 'app')) || {}) };

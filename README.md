@@ -3,7 +3,7 @@
 An offline-first language-learning app for real conversation. It runs in the browser, installs to a phone's home screen, works without a connection, and keeps every bit of progress on the device.
 
 - **Live:** https://shikomisen.github.io/Wayword/
-- **Version:** v15
+- **Version:** v16
 - **Courses:** Japanese for English speakers, and English for Japanese speakers. Indonesian is planned.
 
 This README is the complete description of the project: what it does, how it's built, the content format, the learning rules, storage, audio, offline behaviour, and how to run, test, deploy or port it. It describes what is true now. The design rationale and project history are kept in the maintainer's private notes, outside this repository.
@@ -59,7 +59,7 @@ Controls a course can't use don't appear: the English course has no furigana and
 - Each course card shows where the learner is: cards due today, not started, or coming soon.
 - The speaker defaults to the device language if the app teaches from it, otherwise English, and it's remembered.
 - Inside a course, a slim bar ("‹ Languages · English › Japanese") leads back, and Settings has a Language row.
-- The version shows at the foot of the picker ("Wayword v15") and in Settings → About.
+- The version shows at the foot of the picker ("Wayword v16") and in Settings → About.
 
 ### 2.2 Placement
 
@@ -111,8 +111,10 @@ Learn lists word decks, sentence decks, phrase categories (under the course's to
 - **Grading:** after revealing, **No idea / Shaky / Got it / Too easy**, each showing when the card would come back. A failed card returns later in the same session.
 - **Reading aids (Japanese):**
   - Furigana has three modes: **Always**, **Tap to show** (the reading is in place but invisible until tapped) and **Hidden**. Set it in Settings, or cycle it from the ふりがな chip.
-  - **I can read this**, on the back of a card, drops that item to Tap to show everywhere it appears.
-  - Romaji can be shown under phrases. It switches itself off once, a week after the course was first opened, and says so.
+  - Romaji has the same three modes, set in Settings or cycled from the romaji chip.
+    - On Tap to show, each romaji line keeps its place, blank until tapped. In the kana chart, tapping a character plays it and shows its romaji.
+    - A week after the course was first opened, Always changes once to Tap to show, and the app says so.
+  - **I can read this**, on the back of a card, drops that item's furigana and romaji to Tap to show everywhere it appears.
   - The hiragana written over katakana words disappears once katakana is mastered (§7.8).
 - **Audio:** every 🔊 has a 🐢 beside it that replays the clip at 0.75× with the pitch kept. Settings can play audio automatically when a card is revealed.
 - **Keyboard (desktop):** Space or Enter reveals the answer; 1–4 grade it.
@@ -212,20 +214,35 @@ The file format is in §8.4.
 ### 2.11 Settings
 
 - Language
-- Furigana mode and romaji (Japanese)
+- Furigana and romaji: Always, Tap to show or Hidden (Japanese)
 - Card types
 - Auto-play audio
 - New cards (default 10)
 - New characters (default 15, Japanese)
 - Text size (0.85× to 1.6×, for every course)
+- Connection: Online or Offline, for every course (§2.13)
 - Deck counts
 - Your data
-- About: the version, **Check for updates** and **Update now**
+- About: the version and **Check for updates**. **Update now** appears only once an update is ready
 - **Reset this course**, which clears that course only
 
 ### 2.12 Updates
 
-An open app checks for a new version whenever it comes back to the foreground. Once one has installed, a bar says **"A new version of Wayword is ready — Update now"**. Nothing reloads in the middle of a session (§10.5).
+An open app checks for a new version whenever it comes back to the foreground. Once one has installed, a bar says **"A new version of Wayword is ready."**, with two buttons:
+- **Update now** reloads into it.
+- **Not now** puts the bar away for this visit. Settings → About then offers **Update now**, and the next time the app starts, it starts on the new version anyway.
+
+Nothing reloads in the middle of a session (§10.5).
+
+### 2.13 Online and offline
+
+Settings → Connection has two modes, and the choice applies to every course:
+- **Online** (the default): the app uses the internet when it answers within 10 seconds, and what's on the device when it doesn't.
+  - Wi-Fi with no internet behind it doesn't fail a request; it leaves it hanging. After 10 seconds the app opens from the device instead of showing a blank screen, and says it's working offline.
+  - It then stops waiting on the network until it's next opened.
+- **Offline:** only what's on the device. The app opens straight away, doesn't check for updates and doesn't download anything. A course that isn't on the device yet offers **Go online**.
+
+How it works is in §10.6.
 
 ---
 
@@ -248,7 +265,7 @@ An open app checks for a new version whenever it comes back to the foreground. O
 | Listening | — | 30 lines and 18 sound pairs |
 | Scenarios | 6 | 7 |
 
-These are the counts for v15. `npm test` prints them as it validates.
+These are the counts for v16. `npm test` prints them as it validates.
 
 **Japanese, for English speakers.** Decks marked \* are starters, added by placement.
 
@@ -323,7 +340,7 @@ All in `js/`. Screens talk to `deck.js`, never to `store.js` directly.
 | `srs.js` | SM-2: the card record, grades, card kinds and directions, queue building |
 | `store.js` | Persistence: an IndexedDB database per namespace, with a localStorage fallback |
 | `i18n.js` | Interface strings (`t()`), plurals, the date locale, and the built-in boot-error strings |
-| `render.js` | DOM helpers, `<ruby>` furigana rendering and the furigana modes, note blocks, the polite version, toasts |
+| `render.js` | DOM helpers, `<ruby>` furigana rendering, the furigana and romaji modes, note blocks, the polite version, toasts |
 | `ruby.js` | Furigana notation: inline `{漢字|かんじ}` to segments and back, readings, kanji detection, reading alignment |
 | `audio.js` | Clip playback, 🐢 at 0.75×, the device voice, microphone recording |
 | `shared.js` | Helpers shared by screens: the header, `playItem`, adding and taking out decks, the reading-aid chips, `lessonsCopy()` |
@@ -342,8 +359,8 @@ All in `js/`. Screens talk to `deck.js`, never to `store.js` directly.
 | `choice.js` | The multiple-choice question card shared by the kana and listening drills |
 | `scenario.js` | Branching scenario dialogues |
 | `backup.js` | Backup export, validation, restore and undo |
-| `offline.js` | Messages to the service worker: `keep-courses` and `course-status` |
-| `updates.js` | Update checks on returning to the foreground, and spotting a new version taking over |
+| `offline.js` | Messages to the service worker (`keep-courses`, `course-status`, `connection`), and the connection mode (§10.6) |
+| `updates.js` | Update checks on returning to the foreground (not in offline mode), and spotting a new version taking over |
 | `version.js` | `VERSION`, which must equal `CACHE_VERSION` in `sw.js` |
 
 ### 4.3 Routes
@@ -378,9 +395,11 @@ How unmatched routes are handled:
 2. `boot()` runs these steps:
    1. readies audio for iOS (the first tap unlocks playback);
    2. starts watching for updates;
-   3. sets the interface language from the saved speaker, or the device language;
-   4. applies the text size and routes;
-   5. asks the service worker to keep every course started on this device (§10.3).
+   3. tells the service worker the connection mode (§10.6);
+   4. sets the interface language from the saved speaker, or the device language;
+   5. applies the text size and routes;
+   6. if the worker answers that this launch's page came from the device because the connection didn't answer in time, shows a toast saying the app is working offline;
+   7. asks the service worker to keep every course started on this device (§10.3).
 3. After `boot()` settles, whether or not it failed, the service worker is registered with `register('sw.js')`, a document-relative path. A failed boot shows an error screen with Reload.
 4. Entering a course (`course.setCourse`) does these, in order:
    1. points storage at that course's database;
@@ -388,7 +407,7 @@ How unmatched routes are handled:
    3. loads the content and draws the tab bar;
    4. asks the worker to keep the course, with a toast when it's newly downloaded;
    5. remembers the last course and speaker;
-   6. retires romaji after the first week;
+   6. moves romaji from Always to Tap to show after the first week;
    7. adds cards for any newly enabled card type;
    8. updates the katakana aids.
 5. Studying: `deck.js` builds the queue from the active decks, `srs.js` schedules each grade, and the results go to the course's `srs` and `meta` stores.
@@ -510,7 +529,7 @@ Wayword/
 | `categories` | yes | `[{ id, order, file, title, icon, group, starter? }]` |
 | `register` | no | The default register. `polite` or `casual` gives every phrase without its own register a badge; any other value (the English course uses `polite-neutral`) shows none |
 | `noteFields` | no | `[{ field, label, style? }]`: which note fields exist and how they're labelled. Japanese: `registerNotes` (Register), `animeNote` (From anime?), `usage` (Usage). English: `registerNotes` (使い方), `pitfallNote` (よくある間違い) |
-| `aids` | no | The reading aids' names and help text: `{ ruby: { chip, label, help }, reading: { … } }` |
+| `aids` | no | The reading aids' names: `{ ruby: { chip, label, help }, reading: { … } }`. `label` names the aid in Settings, and `chip` on its inline chip. `help` describes it; Settings shows its own help for the three modes instead |
 | `words` | with word decks | `{ pos: [...], forms: [...], verbForms: [...] }`: the parts of speech allowed, the word forms allowed, and the forms every verb must have. Japanese: forms `masu` and `te` |
 | `decks` | no | `[{ id, kind: "words" or "sentences", order, file, title, icon, starter? }]` |
 | `lessonGroups`, `lessons` | no | `[{ id, title, description }]`; `[{ id, order, file, title, group }]` |
@@ -680,6 +699,7 @@ inline:    "{電車|でんしゃ}に"
 ```
 
 - The segments must spell the text exactly, and every reading must be kana.
+- Give each word its own segment. A segment can't wrap across lines, so a long one (a whole price, `{一万三千八百二十円|いちまんさんぜんはっぴゃくにじゅうえん}`) can run off a phone's screen; split it into words instead (`{一万|いちまん}{三千|さんぜん}…`).
 - A katakana word may carry a hiragana reading aid, such as `{コーヒー|こーひー}`. It's hidden once katakana is mastered, and audio is still made from the katakana.
 - `js/ruby.js` converts between the forms. `alignReading` spreads a whole-word reading over a word's kanji: `食べ物` with たべもの becomes `{食|た}べ{物|もの}`.
 
@@ -692,7 +712,7 @@ inline:    "{電車|でんしゃ}に"
 - `$locale` sets the date locale. Japanese uses `ja-JP`; with none, the device default applies.
 - A key missing from a dictionary falls back to English, then to the key itself.
 
-English has 353 keys and Japanese 324. The keys only English-taught courses can reach (Reading, the character limit, romaji) have no Japanese version. Four boot-error strings are built into `js/i18n.js`, because they have to work when no content loads.
+English has 367 keys and Japanese 338. The keys only English-taught courses can reach (Reading, the character limit, the romaji notice) have no Japanese version. Four boot-error strings are built into `js/i18n.js`, because they have to work when no content loads.
 
 ### 6.12 The content contract (`npm test`)
 
@@ -941,7 +961,10 @@ Only flashcard grading moves SM-2. Everything else either feeds the deck or keep
   - An item marked **I can read this** shows as `tap` where the mode is `always`. It never reduces `hidden`.
   - Drill tiles show readings unless the mode is `hidden`, because a tile you tap to move can't also be tapped to reveal.
 - **Katakana aids:** the hiragana over katakana segments is hidden once katakana is mastered. This is checked on entering the course and after every kana drill.
-- **Romaji** (Japanese) shows when `settings.romaji` is on. It's switched off once, 7 days after the course was first opened, with a message. The learner can turn it back on.
+- **Romaji** (Japanese): `settings.romajiMode` is `always`, `tap` or `hidden`, the same modes as furigana. An older `romaji: false` setting reads as hidden, and `true` as always.
+  - An item marked **I can read this** shows its romaji as `tap` where the mode is `always`, as for furigana.
+  - On `tap`, the romaji line keeps its space, its text invisible until tapped. In the kana chart, the tap that plays a character also shows its romaji.
+  - 7 days after the course was first opened, a mode still on `always` changes once to `tap`, with a message (`romajiRetired` records that it happened). A mode the learner chose themselves is left alone, and either way it can be changed back.
 - **The kanji gate:** while hiragana isn't mastered, kanji sets offer **Add anyway** instead of Add.
 
 ### 7.9 Stats and streak
@@ -975,8 +998,8 @@ The `srs` store holds one record per card, shaped as in §7.1.
 
 | Key | Namespace | Shape |
 |---|---|---|
-| `prefs` | `app` | `{ speaker, lastCourse, textScale, lastBackupAt }` |
-| `settings` | course | `{ furiganaMode, romaji, newPerDay, newCharsPerDay, activeCategories, activeCharacterSets, parkedDecks, parkedSets, directions: { recognition, production, listening }, autoPlayAudio, installedAt, romajiRetired }`, plus the legacy `furigana` and `textScale` |
+| `prefs` | `app` | `{ speaker, lastCourse, textScale, lastBackupAt, connection: "online" or "offline" }` |
+| `settings` | course | `{ furiganaMode, romajiMode, newPerDay, newCharsPerDay, activeCategories, activeCharacterSets, parkedDecks, parkedSets, directions: { recognition, production, listening }, autoPlayAudio, installedAt, romajiRetired }`, plus the legacy `furigana`, `romaji` and `textScale` |
 | `placement` | course | `{ done, at, answers, perCategory: { <id>: { known, seen, unknown, n, score } }, overall }` |
 | `stats` | course | `{ "<UTC date, YYYY-MM-DD>": { reviews, again, charReviews, charAgain, drills } }` |
 | `lessonStats` | course | `{ <lessonId>: { sessions, right, total, best: { right, total }, lastAt } }` |
@@ -987,7 +1010,7 @@ The `srs` store holds one record per card, shaped as in §7.1.
 | `rec:<id>` | course | A recording, as a `data:` URL |
 | `beforeRestore` | `restore-undo` | `{ at, restored, data: <a backup object> }` |
 
-Settings defaults: `newPerDay` 10, `newCharsPerDay` 15, directions recognition and production on with listening off, `autoPlayAudio` on, `romaji` on.
+Settings defaults: `newPerDay` 10, `newCharsPerDay` 15, directions recognition and production on with listening off, `autoPlayAudio` on, `furiganaMode` and `romajiMode` `always`. The `connection` preference defaults to `online`.
 
 ### 8.4 Backup file
 
@@ -1091,8 +1114,8 @@ Six Japanese words whose kana spelling is a common homophone (あめ, かえる,
 
 ### 10.1 Caches
 
-- **`wayword-<version>`** (`wayword-v15`): one cache per version, holding the app and the courses this device keeps.
-- **`wayword-kept`** isn't versioned. It holds `./__kept-courses.json`, the ids of the courses this device keeps.
+- **`wayword-<version>`** (`wayword-v16`): one cache per version, holding the app and the courses this device keeps.
+- **`wayword-kept`** isn't versioned. It holds `./__kept-courses.json`, the ids of the courses this device keeps, and `./__connection.json`, `{ mode: "online" or "offline" }` (§10.6).
 - **Cleanup:** only caches named `wayword-…`, or with the legacy prefix `nihongo-tabi-…`, are ever deleted, because the `github.io` origin is shared with other sites. A worker deletes only caches from older versions, never a later version's.
 
 ### 10.2 Install
@@ -1109,8 +1132,9 @@ Six Japanese words whose kana spelling is a common homophone (あめ, かえる,
 
 | Message | Answer |
 |---|---|
-| `{ type: "keep-courses", courses: [ids] }` | `{ courses: [{ course, total, added, missing, error? }] }` |
+| `{ type: "keep-courses", courses: [ids] }` | `{ courses: [{ course, total, added, missing, error? }] }`, or `{ courses: [], offline: true }` when it's offline (§10.6) |
 | `{ type: "course-status", course }` | `{ course, kept, cached, total, downloading }` |
+| `{ type: "connection", mode?, retry? }` | `{ mode, offlineSince }` (§10.6) |
 | `"skipWaiting"` | (none) |
 
 **When the app sends keep-courses:**
@@ -1119,7 +1143,7 @@ Six Japanese words whose kana spelling is a common homophone (あめ, かえる,
 
 The app waits up to 10 minutes for a keep and 15 seconds for a status.
 
-**What the worker does:**
+**What the worker does** (when it's offline, it only records the ids, step 2):
 1. Re-checks the app's own files (the install list, §10.2) and fetches any that are missing. Normally they're all there, and this costs one lookup each.
 2. Records the ids in `wayword-kept`.
 3. For each kept course, walks the manifest: the manifest itself, every file listed in `categories`, `decks`, `lessons`, `listening`, `characterSets` and `scenarios`, and every `audio` string anywhere in those files.
@@ -1131,13 +1155,14 @@ The app waits up to 10 minutes for a keep and 15 seconds for a status.
 
 ### 10.4 Fetch strategy
 
-- **Navigations:** the network first (and cached), falling back to the cached `index.html`.
+- **Navigations:** the network first (cached if OK), falling back to the cached `index.html`: this version's, or an older version's if it has none. In offline mode, the cached page straight away (§10.6).
 - **Other same-origin GETs**, in order:
   1. this version's cache, ignoring the query string;
-  2. the network, cached if OK;
+  2. the network, cached if OK. Skipped when offline (§10.6);
   3. any older version's cache;
   4. a `504 Offline and not cached`.
-- **Offline:** the content loader treats a 504, or a network error, as offline. A course opened offline before it was ever downloaded shows "Not on this device yet", with a way back.
+- **The time limit:** the network gets 10 seconds (`NETWORK_TIMEOUT` in `sw.js`) to answer, after which it's treated as offline (§10.6).
+- **Offline:** the content loader treats a 504, or a network error, as offline. A course opened offline before it was ever downloaded shows "Not on this device yet", with a way back. In offline mode, it says so and offers **Go online**.
 
 ### 10.5 Updates and versioning
 
@@ -1147,13 +1172,39 @@ The app waits up to 10 minutes for a keep and 15 seconds for a status.
   - deletes older caches straight away, but only if the device keeps no courses;
   - reloads pages from versions before v12, which have no update bar.
 - **Spotting a new version** (`js/updates.js`):
-  - When the page becomes visible again, it calls `registration.update()`.
+  - When the page becomes visible again, it calls `registration.update()`, unless offline mode is on.
   - A `controllerchange` on a page that already had a worker marks an update as ready and shows the bar. A first install isn't announced.
-  - Settings → About → Check for updates reports latest, downloading, ready, offline, or unsupported (no service worker).
-- **The update bar** sits below an iPhone's status bar (safe-area padding) and keeps its button on one line. The bar is drawn by the running version, so changes to the bar show from the update after the one that ships them.
+  - Settings → About → Check for updates reports latest, downloading, ready, offline (no answer, or none within 10 seconds), offline mode (it didn't ask), or unsupported (no service worker). **Update now** shows only while an update is ready, including one that finishes downloading while Settings is open.
+- **The update bar** sits below an iPhone's status bar (safe-area padding). Its message wraps, and its two buttons, **Not now** and **Update now**, stay on one line, under the message on a phone.
+  - **Update now** reloads into the new version.
+  - **Not now** removes the bar for this page, with a toast saying Settings has the update; Settings → About then shows **Update now**. Nothing is stored: the next launch runs the new version anyway, because the new worker has already taken over.
+  - The bar is drawn by the running version, so changes to the bar show from the update after the one that ships them. Updating to v16 still shows v15's one-button bar; **Not now** first appears for the update after v16.
+- **`[hidden]` wins:** the stylesheet's `[hidden] { display: none !important; }` stops a component's own `display` (`.btn`, `.action-row`) from showing an element the code has hidden. Before v16, Settings always showed **Update now** because of it.
 - **Right after an update,** until the app has asked for its courses, offline content may come from the previous version's cache. Content changes therefore stay backward compatible: new fields are optional.
 - **Updating from v13 or v14:** those workers took every other cache for an older one. Asked to keep their courses while a new version was installing, they could delete the new version's cache. Since v15, the new version's first ask to keep courses puts back any app files that went missing (§10.3), so such a device is repaired on its first launch online.
 - **First launch after an update:** `index.html` keeps static tab links, so that launch (new HTML, old cached JS) still has a tab bar.
+
+### 10.6 Online and offline mode
+
+Wi-Fi with no internet behind it (a dead router, a hotel login page) doesn't refuse a request; it leaves it hanging. Browsers still report the device as online, so the app can't ask the browser. Before v16, the page request waited with no limit, and an installed app opened to a blank screen.
+
+**The modes.** The learner chooses in Settings → Connection (§2.13). The page keeps the choice in `prefs.connection` and tells the worker at every launch and on every change (`{ type: "connection", mode }`). The worker keeps it in `wayword-kept` as `./__connection.json`, because it serves the next launch before any of the app runs; a new version's worker reads it from there too.
+
+| | Online (default) | Offline for now | Offline mode |
+|---|---|---|---|
+| When | Normally | A request got no answer in 10 seconds, since the page last loaded | Chosen in Settings |
+| Page loads | Network, up to 10 s; then the cached page | The network again, up to 10 s: every page load retries | The cached page, without asking the network (the network only if nothing is cached) |
+| Files not in this version's cache | Network, up to 10 s; then an older version's copy, or 504 | An older version's copy, or 504, at once | The same, at once |
+| keep-courses | Downloads | Records the ids only, and answers `offline: true` | The same |
+| course-status | Counts what's cached, reading the network for a missing manifest | Counts what's cached only | The same |
+| Update checks | On returning to the app, and from Settings | The same | None: Settings says offline mode is on |
+
+- **The time limit** is `NETWORK_TIMEOUT` in `sw.js`, 10 seconds. A request still pending is left to finish or fail in the background; nothing waits on it. A request refused outright (airplane mode) fails at once, falls back at once, and doesn't count as "offline for now".
+- **Offline for now** is the worker's `offlineSince`: when a request first ran out of time. Every page load clears it and tries the network again. It's held in the worker's memory, so it also ends when the browser stops an idle worker.
+- **Telling the learner.** At launch the page sends the mode and the worker answers `{ mode, offlineSince }`. If the launch fell back, a toast says the app is working offline, and Settings → Connection says why. A change in Settings sends `retry: true`, which ends offline for now.
+- **Going online** in Settings (or with **Go online** on "Not on this device yet") also asks the worker to keep every course started here, so what offline mode left undownloaded comes down.
+- **Installing a new version isn't affected.** The browser only installs one when it has fetched the new `sw.js`, so the network works at that moment, and the install caches the app as usual (§10.2). In offline mode, the new version's courses then come from the previous version's cache until the app goes online.
+- **Update checks** from Settings are given 10 seconds too, and report offline after that.
 
 ---
 
@@ -1188,15 +1239,15 @@ Setup: `npm ci` installs the two dev dependencies, `jsdom` and `puppeteer-core`.
 
 ### 11.3 Test suites
 
-| Suite | What it covers | Checks (13/10/2026) |
+| Suite | What it covers | Checks (14/10/2026) |
 |---|---|---|
-| `tools/selftest.mjs` | The content contract (§6.12), interface strings, the service-worker shell and version, SRS regressions | 32,567 |
-| `tools/integration-test.mjs` | The real modules, end to end in Node (with a filesystem `fetch` and a localStorage shim): placement, decks, queues, grading, directions, drills, mastery, listening, backups, course isolation | 254 |
+| `tools/selftest.mjs` | The content contract (§6.12), including furigana short enough to fit a line; interface strings; the service-worker shell and version; SRS regressions | 33,869 |
+| `tools/integration-test.mjs` | The real modules, end to end in Node (with a filesystem `fetch` and a localStorage shim): placement, decks, queues, grading, directions, drills, mastery, listening, backups, course isolation, the romaji modes | 260 |
 | `tools/language-pack-test.mjs` | An Esperanto course added purely as content, run through placement, the deck, the queue and grading | 13 |
 | `tools/voice-test.mjs` | The generator against a local stand-in for Azure: headers, SSML, voice choice, rate limits, the engine switch, every no-key path | 18 |
-| `tools/render-test.mjs` | Every screen of both courses rendered in jsdom, including whole drill sessions, backup and restore through the real buttons, and the update bar | 286 |
-| `tools/sw-test.mjs` | The real `sw.js` in a sandbox: registration in every boot path; installing, keeping courses, resuming and retrying over a flaky connection; one version replacing another on shared Cache Storage | 42 |
-| `tools/browser-check.mjs` | Headless Firefox through a proxy that can cut every connection: install, per-course downloads, every tab online and offline, an IndexedDB backup round trip, an update while the app is open. `--upgrade-from <ref>` installs that build first; `--live <url>` checks the deployed site | 48 local, 45 live |
+| `tools/render-test.mjs` | Every screen of both courses rendered in jsdom, including whole drill sessions, backup and restore through the real buttons, the reading-aid modes, the connection setting, and the update bar with Not now | 303 |
+| `tools/sw-test.mjs` | The real `sw.js` in a sandbox: registration in every boot path; installing, keeping courses, resuming and retrying over a flaky connection; one version replacing another on shared Cache Storage; a connection that never answers, and offline mode | 54 |
+| `tools/browser-check.mjs` | Headless Firefox through a proxy that can cut every connection, or stall them (take each request and never answer): install, per-course downloads, every tab online and offline, text fitting a 320px screen at the largest size, an IndexedDB backup round trip, an update while the app is open (Not now, then Update now from Settings), and opening on a connection that never answers, online and in offline mode. `--upgrade-from <ref>` installs that build first; `--live <url>` checks the deployed site | 58 local, 53 live |
 
 ### 11.4 Releasing
 
@@ -1239,6 +1290,11 @@ A change that touches no app file (this README, the tools) needs no version bump
   - **Private browsing** can stall IndexedDB, in which case storage falls back to localStorage after 2 seconds.
   - **Backups** can go through the share sheet, to Files, Drive or mail, where `navigator.canShare` accepts files.
 - **Desktop:** in a review, Space or Enter reveals the answer and 1–4 grade it.
+- **Small screens and big text:** everything is laid out to fit a 320px-wide phone at the largest text size (1.6×).
+  - Japanese has no spaces, so it wraps between characters, following Japanese line-breaking rules (`line-break: strict`). Browsers that support it (Chrome) wrap between phrases instead (`word-break: auto-phrase`).
+  - A furigana reading can't be split across lines, so long numbers and compounds carry their readings word by word: 一万・三千・八百・二十・円, not the whole price as one reading.
+  - A word too long for its box breaks rather than overflowing (`overflow-wrap: break-word`).
+  - The browser check fails if any text runs out of its box at that size (§11.3).
 - **Developing on Windows:**
   - **Line endings:** checkouts use `core.autocrlf=true`, so working files have CRLF line endings and scripted edits must handle them. `npm run kana` writes LF, which git may show as a change with no real difference.
   - **`tools/sw-test.mjs` contains NUL characters on purpose** (`'\0RESULT'`), so git treats it as binary. Edit it with a script that splices bytes, not with a text editor that might rewrite it.
@@ -1262,7 +1318,7 @@ A native app (for example in Flutter, or the current web app wrapped in a native
 
 | In the web app | What it does | What a native app needs |
 |---|---|---|
-| Service worker and Cache Storage (§10) | Offline use, and downloading each course | Bundled assets, or per-course downloads to app storage |
+| Service worker and Cache Storage (§10) | Offline use, downloading each course, the 10-second limit and offline mode | Bundled assets, or per-course downloads to app storage, and a timeout on network requests |
 | Version lockstep and the update bar | Getting phones onto the new version | Store updates; content updates could ship as data |
 | IndexedDB with a localStorage fallback (§8) | Namespaced key-value stores | Any local database: the same two stores per course |
 | Hash routes (§4.3) | Navigation, and links that carry the course | A router with the same route map |

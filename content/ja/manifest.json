@@ -8,7 +8,7 @@
   "fields": { "target": "japanese", "ruby": "furigana", "reading": "romaji", "meaning": "english" },
   "aids": {
     "ruby": { "chip": "ふりがな", "label": "Furigana", "help": "Kana readings above kanji" },
-    "reading": { "chip": "romaji", "label": "Romaji", "help": "Turn this off once the kana stick — it switches itself off after your first week" }
+    "reading": { "chip": "romaji", "label": "Romaji", "help": "Romanised readings under phrases" }
   },
   "noteFields": [
     { "field": "registerNotes", "label": "Register" },

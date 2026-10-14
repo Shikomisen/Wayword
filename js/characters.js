@@ -21,7 +21,7 @@ import { loadContent, getCharacterSet, gridFor } from './content.js';
 import * as deck from './deck.js';
 import * as audio from './audio.js';
 import { link, go } from './course.js';
-import { el, clear, targetNode, toast } from './render.js';
+import { el, clear, targetNode, toast, romajiMode, romajiNode } from './render.js';
 import { deckHref } from './shared.js';
 import { kanaState, kanjiGated, kanaPanel } from './reading.js';
 
@@ -233,6 +233,9 @@ function kanaChart(set, settings) {
 }
 
 function kanaCell(c, settings) {
+  // Romaji set to tap to show: the cell is already the thing you tap, to
+  // hear it, so that tap shows its romaji too.
+  const romaji = romajiMode(settings, c);
   return el('button', {
     class: 'kana-cell',
     type: 'button',
@@ -244,11 +247,12 @@ function kanaCell(c, settings) {
       // timer must hold its own reference or the highlight never clears.
       const cell = e.currentTarget;
       cell.classList.add('just-played');
+      cell.querySelector('.romaji-tap')?.classList.add('revealed');
       setTimeout(() => cell.classList.remove('just-played'), 400);
     },
   },
     el('span', { class: 'kana-char' }, c.character),
-    settings.romaji ? el('span', { class: 'kana-romaji' }, c.romaji) : null);
+    romaji === 'hidden' ? null : el('span', { class: romaji === 'tap' ? 'kana-romaji romaji-tap' : 'kana-romaji' }, c.romaji));
 }
 
 /* ---------- kanji list ---------- */
@@ -292,7 +296,8 @@ function kanjiRow(c, content, settings) {
       el('div', { class: 'kanji-meaning' }, c.meaning || c.english),
       el('div', { class: 'kanji-reading' },
         settings.furiganaMode !== 'hidden' ? (c.readings || []).join('・') : '',
-        settings.romaji ? el('span', { class: 'romaji' }, ` ${c.romaji}`) : null),
+        ' ',
+        romajiNode(c, settings, { reading: c.romaji, tag: 'span' })),
       c.note ? el('div', { class: 'note' }, c.note) : null,
 
       refs.length

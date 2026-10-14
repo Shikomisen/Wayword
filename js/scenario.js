@@ -19,7 +19,7 @@ import * as deck from './deck.js';
 import * as audio from './audio.js';
 import { link } from './course.js';
 import { t, has } from './i18n.js';
-import { el, clear, targetNode, meaningNode, furiganaMode } from './render.js';
+import { el, clear, targetNode, meaningNode, furiganaMode, romajiNode } from './render.js';
 
 const QUALITY_ICON = { good: '✓', awkward: '~', wrong: '✕' };
 
@@ -94,7 +94,7 @@ export async function renderScenario(root, id) {
     return el('div', { class: `dialogue npc ${muted ? 'past' : ''}` },
       el('div', { class: 'dialogue-who' }, speakerName(node.speaker)),
       targetNode(node, { furigana: furiganaMode(settings, node) }),
-      settings.romaji && node.reading ? el('div', { class: 'romaji' }, node.reading) : null,
+      romajiNode(node, settings),
       meaningNode(node),
       node.audio
         ? el('div', { class: 'audio-inline' },
@@ -112,7 +112,7 @@ export async function renderScenario(root, id) {
     return el('div', { class: `dialogue you past quality-${entry.quality}` },
       el('div', { class: 'dialogue-who' }, t('scenario.you')),
       entry.target ? targetNode(entry, { furigana: furiganaMode(settings, entry) }) : null,
-      settings.romaji && entry.reading ? el('div', { class: 'romaji' }, entry.reading) : null,
+      romajiNode(entry, settings),
       meaningNode(entry),
       el('div', { class: `feedback feedback-${entry.quality}`, lang: entry.meaningLang || null },
         el('span', { class: 'feedback-tag' }, `${QUALITY_ICON[quality]} ${t(`quality.${quality}`)}`),
@@ -168,7 +168,7 @@ export async function renderScenario(root, id) {
       onclick: () => choose(option, resolved, node),
     },
       resolved.target ? targetNode(resolved, { furigana: furiganaMode(settings, resolved) }) : null,
-      settings.romaji && resolved.reading ? el('span', { class: 'romaji' }, resolved.reading) : null,
+      romajiNode(resolved, settings, { tag: 'span' }),
       meaningNode(resolved, { tag: 'span' }),
       option.phraseId ? el('span', { class: 'from-deck' }, t('scenario.fromDeck', { id: option.phraseId })) : null);
   }

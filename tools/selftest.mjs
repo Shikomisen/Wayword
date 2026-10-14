@@ -36,7 +36,13 @@ function readJSON(rel) {
 /**
  * Furigana, in either form (segment array or "{漢字|かんじ}" notation), must
  * spell out exactly the text it annotates, and every reading must be kana.
+ *
+ * A segment with a reading can't wrap across lines, so each one must fit a
+ * line on its own: on a flashcard, on a 320px phone at the largest text
+ * size, that's 4 characters and 9 kana (README §6.10, §12).
  */
+const RUBY_MAX_BASE = 4;
+const RUBY_MAX_READING = 9;
 function checkRuby(label, value, text) {
   if (value === undefined || value === null) return;
   const segs = toSegments(value);
@@ -45,7 +51,10 @@ function checkRuby(label, value, text) {
   check(`${label}: furigana reconstructs the text`, rebuilt === text, `${rebuilt} vs ${text}`);
   check(`${label}: furigana has no stray notation`, !/[{}|]/.test(rebuilt), rebuilt);
   for (const s of segs) {
-    if (s.r !== undefined) check(`${label}: reading "${s.r}" is kana`, /^[぀-ヿー]+$/.test(s.r), s.r);
+    if (s.r === undefined) continue;
+    check(`${label}: reading "${s.r}" is kana`, /^[぀-ヿー]+$/.test(s.r), s.r);
+    check(`${label}: "${s.b}" is short enough to fit a line (a word per segment)`,
+      [...s.b].length <= RUBY_MAX_BASE && [...s.r].length <= RUBY_MAX_READING, `${s.b} ${s.r}`);
   }
 }
 
@@ -478,6 +487,10 @@ function validateCourse(course) {
         terminal || (node.options || []).length > 0);
       if (node.speaker === 'narration') {
         check(`${s.id}/${nodeId}: narration is written in the learner's language`, Boolean(node[fields.meaning]));
+      }
+      if (fields.ruby) checkRuby(`${s.id}/${nodeId}`, node[fields.ruby], node[target]);
+      for (const opt of node.options || []) {
+        if (fields.ruby && opt[fields.ruby]) checkRuby(`${s.id}/${nodeId}/option`, opt[fields.ruby], opt[target]);
       }
 
       if (node.audio) {

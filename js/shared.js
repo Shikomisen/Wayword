@@ -116,33 +116,35 @@ export async function studySettings() {
  * made mid-study, and a trip to Settings to check yourself is a trip you
  * won't make. Only the aids a course's content actually has are offered.
  *
- * Furigana cycles through its three modes — always, tap to show, hidden;
- * romaji is on/off.
+ * Furigana and romaji each cycle through the same three modes — always,
+ * tap to show, hidden.
  */
 export function toggleStrip(onChange, features) {
   if (!features.ruby && !features.reading) return null;
   const strip = el('div', { class: 'toggle-strip' });
 
+  // One chip per aid, showing its mode; a tap moves it to the next mode.
+  const chip = (aid, key, modes, mode, name, label) => {
+    const next = modes[(modes.indexOf(mode) + 1) % modes.length];
+    // The three modes read the same for every aid: furigana's names serve both.
+    const modeName = t(`furigana.${mode}`);
+    return el('button', {
+      class: mode === 'hidden' ? 'chip' : 'chip chip-on',
+      type: 'button',
+      dataset: { aid, mode },
+      'aria-label': `${name}: ${modeName}`,
+      onclick: async () => { await deck.saveSettings({ [key]: next }); onChange(); },
+    }, `${label} · ${modeName}`);
+  };
+
   deck.getSettings().then((s) => {
     if (features.ruby) {
-      const mode = s.furiganaMode;
-      const next = deck.FURIGANA_MODES[(deck.FURIGANA_MODES.indexOf(mode) + 1) % deck.FURIGANA_MODES.length];
-      strip.append(el('button', {
-        class: mode === 'hidden' ? 'chip' : 'chip chip-on',
-        type: 'button',
-        dataset: { aid: 'furigana', mode },
-        'aria-label': `${features.aids.ruby?.label || 'Furigana'}: ${t(`furigana.${mode}`)}`,
-        onclick: async () => { await deck.saveSettings({ furiganaMode: next }); onChange(); },
-      }, `${features.aids.ruby?.chip || 'ruby'} · ${t(`furigana.${mode}`)}`));
+      strip.append(chip('furigana', 'furiganaMode', deck.FURIGANA_MODES, s.furiganaMode,
+        features.aids.ruby?.label || 'Furigana', features.aids.ruby?.chip || 'ruby'));
     }
     if (features.reading) {
-      strip.append(el('button', {
-        class: s.romaji ? 'chip chip-on' : 'chip',
-        type: 'button',
-        dataset: { aid: 'romaji' },
-        'aria-pressed': s.romaji ? 'true' : 'false',
-        onclick: async () => { await deck.saveSettings({ romaji: !s.romaji }); onChange(); },
-      }, features.aids.reading?.chip || 'reading'));
+      strip.append(chip('romaji', 'romajiMode', deck.ROMAJI_MODES, s.romajiMode,
+        features.aids.reading?.label || 'Romaji', features.aids.reading?.chip || 'reading'));
     }
   });
   return strip;

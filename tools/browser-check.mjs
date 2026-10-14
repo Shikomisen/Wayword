@@ -12,7 +12,9 @@
  *
  * Offline is real: Firefox is routed through a local proxy that drops every
  * connection (page and service worker alike), and its HTTP cache is turned
- * off, so anything that loads must have come from the service worker.
+ * off, so anything that loads must have come from the service worker. The
+ * proxy can also stall — take every request and never answer, like Wi-Fi
+ * with no internet behind it (README §10.6).
  *
  * Needs Firefox and the puppeteer-core dev dependency. Temporary profiles and
  * the --upgrade-from checkout live in tmp/ (gitignored) and are removed after.
@@ -65,10 +67,12 @@ const check = (label, ok, detail = '') => {
 /* ---------- a proxy that can drop everything ---------- */
 
 let offline = false;
+let stalled = false; // requests are taken, and never answered
 const sockets = new Set();
 const track = (s) => { sockets.add(s); s.on('close', () => sockets.delete(s)); };
 const proxy = http.createServer((req, res) => {
   if (offline) return req.socket.destroy();
+  if (stalled) return undefined;
   const u = new URL(req.url);
   const up = http.request({ host: u.hostname, port: u.port || 80, path: u.pathname + u.search,
     method: req.method, headers: req.headers }, (r) => { res.writeHead(r.statusCode, r.headers); r.pipe(res); });
@@ -78,6 +82,7 @@ const proxy = http.createServer((req, res) => {
 proxy.on('connection', track);
 proxy.on('connect', (req, client, head) => {
   if (offline) return client.destroy();
+  if (stalled) { track(client); return undefined; }
   const [host, port] = req.url.split(':');
   const up = net.connect(Number(port) || 443, host, () => {
     client.write('HTTP/1.1 200 Connection Established\r\n\r\n');
@@ -88,6 +93,8 @@ proxy.on('connect', (req, client, head) => {
   client.on('error', () => up.destroy());
 });
 const goOffline = () => { offline = true; for (const s of sockets) s.destroy(); };
+// Connections already open would carry on working, so they're dropped either way.
+const setStalled = (on) => { stalled = on; for (const s of sockets) s.destroy(); };
 
 /* ---------- local server: the site under /Wayword/, like GitHub Pages ---------- */
 
@@ -266,6 +273,28 @@ const keptCourses = (page) => page.evaluate(async () => {
 /** An interface string, as the served site has it. */
 const uiString = (lang, key) => fetch(new URL(`content/ui/${lang}.json`, base)).then((r) => r.json()).then((d) => d[key]);
 
+/**
+ * Runs in the page: anything whose content is wider than its box, or that
+ * reaches past the right edge of the screen — text that doesn't fit.
+ */
+function textSpills() {
+  const out = [];
+  const width = document.documentElement.clientWidth;
+  const name = (e) => `${e.tagName.toLowerCase()}${typeof e.className === 'string' && e.className ? `.${e.className.trim().split(/\s+/).join('.')}` : ''}`;
+  for (const e of document.querySelectorAll('#app *, #coursebar *, .tabbar *, .update-banner *')) {
+    const style = getComputedStyle(e);
+    if (style.display === 'none' || style.display === 'inline' || style.position === 'fixed') continue;
+    const box = e.getBoundingClientRect();
+    if (!box.width) continue;
+    const text = (e.textContent || '').trim().slice(0, 30);
+    if (box.right > width + 1) out.push(`${name(e)} past the screen's edge by ${Math.round(box.right - width)}px: "${text}"`);
+    else if (style.overflowX === 'visible' && e.scrollWidth > e.clientWidth + 1) {
+      out.push(`${name(e)} ${e.scrollWidth - e.clientWidth}px too narrow: "${text}"`);
+    }
+  }
+  return out;
+}
+
 const page = await browser.newPage();
 const logs = [];
 page.on('console', (m) => logs.push(m.text()));
@@ -375,6 +404,11 @@ try {
       check('…and Settings says so',
         await waitFor(page, (text) => document.querySelector('.offline-status')?.textContent === text, ready, 15000),
         await page.$eval('.offline-status', (e) => e.textContent).catch(() => '(no status line)'));
+      if (i === 0) {
+        // Marked hidden in the markup since v12, but shown anyway until v16 made [hidden] win over .btn's display.
+        check('…and shows no Update now button while there is no update to take',
+          await page.$eval('[data-action="reload"]', (b) => getComputedStyle(b).display === 'none').catch(() => false));
+      }
       if (i === 0 && later.length) {
         // Offline, a course that was never opened here says so, instead of failing.
         const other = later[0];
@@ -403,6 +437,34 @@ try {
       return ids.every((id) => kept.includes(id));
     }, available.map((c) => c.id), 30000),
     JSON.stringify(await keptCourses(page)));
+
+  // The tightest case: a small phone at the largest text size. Japanese has
+  // no spaces, so it must wrap between characters, and long words must break
+  // (README §12). Every tab, plus the screens with the longest lines.
+  console.log('\n[4a] Text inside its boxes: a 320px phone, text at 1.6×');
+  await page.setViewport({ width: 320, height: 700 });
+  const spills = [];
+  let screensChecked = 0;
+  for (const c of available) {
+    const manifest = await fetch(new URL(c.manifest, base)).then((r) => r.json());
+    const sentences = (manifest.decks || []).find((d) => d.kind === 'sentences');
+    const longest = [
+      sentences ? `#/${c.id}/category/${sentences.id}` : null,
+      manifest.scenarios?.length ? `#/${c.id}/scenario/${manifest.scenarios[0].id}` : null,
+      manifest.lessons?.length ? `#/${c.id}/connectors/${manifest.lessons[0].id}` : null,
+      ...(manifest.characterSets || []).map((set) => `#/${c.id}/characters/${set.id}`),
+    ].filter(Boolean);
+    for (const href of [...tabsByCourse[c.id], ...longest]) {
+      const v = await visit(page, href);
+      await page.evaluate(() => document.documentElement.style.setProperty('--text-scale', '1.6'));
+      if (v.ok) screensChecked++;
+      spills.push(...(await page.evaluate(textSpills)).map((s) => `${href}: ${s}`));
+    }
+  }
+  check(`no text runs out of its box (${screensChecked} screens)`, spills.length === 0 && screensChecked > 10,
+    spills.slice(0, 3).join(' | ') || 'none');
+  await page.evaluate(() => document.documentElement.style.removeProperty('--text-scale'));
+  await page.setViewport({ width: 800, height: 600 });
 
   // jsdom and Node only exercise the localStorage fallback; this is the real IndexedDB path.
   console.log('\n[4b] Backup round trip (IndexedDB)');
@@ -435,14 +497,20 @@ try {
     swNext = (await readFile(join(siteRoot, 'sw.js'), 'utf8'))
       .replace(/const CACHE_VERSION = '([^']+)'/, (m, v) => `const CACHE_VERSION = '${v}-next'`);
     await page.evaluate(() => document.dispatchEvent(new Event('visibilitychange')));
-    check('coming back to the app finds the new version, and once it has downloaded, says so',
-      await waitFor(page, () => document.querySelector('.update-banner')?.textContent.includes('Update now'), null, 180000),
+    check('coming back to the app finds the new version, and once it has downloaded, offers Update now or Not now',
+      await waitFor(page, () => Boolean(document.querySelector('.update-banner [data-action="update-now"]') &&
+        document.querySelector('.update-banner [data-action="update-later"]')), null, 180000),
       await page.$eval('.update-banner', (e) => e.textContent).catch(() => '(no banner)'));
+    await page.evaluate(() => document.querySelector('.update-banner [data-action="update-later"]')?.click());
+    check('"Not now" puts the bar away', await waitFor(page, () => !document.querySelector('.update-banner'), null, 5000));
+    await visit(page, `#/${available[0].id}/settings`);
+    check('…and Settings offers the update instead',
+      await page.$eval('[data-action="reload"]', (b) => getComputedStyle(b).display !== 'none').catch(() => false));
     await Promise.all([
       page.waitForNavigation({ waitUntil: 'load', timeout: 30000 }).catch(() => null),
-      page.evaluate(() => document.querySelector('.update-banner button')?.click()),
+      page.evaluate(() => document.querySelector('[data-action="reload"]')?.click()),
     ]);
-    check('"Update now" reloads into it',
+    check('"Update now" in Settings reloads into it',
       (await waitFor(page, () => !document.querySelector('.update-banner') && Boolean(document.querySelector('#app h1')), null, 15000)) &&
         (await page.evaluate(() => caches.keys())).some((k) => k.endsWith('-next')),
       (await page.evaluate(() => caches.keys())).join(', '));
@@ -450,6 +518,39 @@ try {
       await waitFor(page, (old) => caches.keys().then((k) => !k.includes(old) && k.some((x) => x.endsWith('-next'))), newCache, 180000),
       (await page.evaluate(() => caches.keys())).join(', '));
   }
+
+  // Wi-Fi with no internet behind it: requests aren't refused, they hang.
+  // The app used to show a blank screen; now it gives the network 10
+  // seconds, then opens from the device and says so (README §10.6).
+  console.log('\n[4d] A connection that never answers');
+  await visit(page, `#/${available[0].id}/`);
+  setStalled(true);
+  const hangStart = Date.now();
+  await page.reload({ waitUntil: 'load', timeout: 60000 }).catch(() => {});
+  const cameUp = await rendered(page);
+  const hangMs = Date.now() - hangStart;
+  check('opened while the connection never answers, it comes up from the device after the 10-second limit, not a blank screen',
+    cameUp && hangMs >= 9000 && hangMs < 40000, `${(hangMs / 1000).toFixed(1)} s`);
+  check('…and says it is working offline',
+    await waitFor(page, () => [...document.querySelectorAll('.toast')].some((t) => /working offline/.test(t.textContent)), null, 10000));
+  await visit(page, `#/${available[0].id}/settings`);
+  check('…and Settings says why, under Connection', Boolean(await page.$('.connection-status')));
+  const keptMode = (want) => waitFor(page, async (m) => {
+    const hit = await (await caches.open('wayword-kept')).match('./__connection.json');
+    return Boolean(hit) && (await hit.json()).mode === m;
+  }, want, 10000);
+  await page.evaluate(() => document.querySelector('.connection-mode [data-connection="offline"]')?.click());
+  check('offline mode, chosen in Settings, is kept by the service worker for the next launch', await keptMode('offline'));
+  const quickStart = Date.now();
+  await page.reload({ waitUntil: 'load', timeout: 60000 }).catch(() => {});
+  const quick = await rendered(page);
+  const quickMs = Date.now() - quickStart;
+  check('in offline mode it opens straight away, though the connection still never answers',
+    quick && quickMs < 5000, `${(quickMs / 1000).toFixed(1)} s`);
+  setStalled(false);
+  await visit(page, `#/${available[0].id}/settings`);
+  await page.evaluate(() => document.querySelector('.connection-mode [data-connection="online"]')?.click());
+  check('switching back to online is kept too', await keptMode('online'));
 
   console.log('\n[5] Offline');
   goOffline();

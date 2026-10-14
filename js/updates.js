@@ -7,8 +7,16 @@
  * to the foreground. The new service worker downloads in the background and
  * takes over by itself (sw.js skips waiting), but the screen in front of the
  * learner is still the old code until it reloads. That's when this says so:
- * a new version is ready — tap to update.
+ * a new version is ready — update now, or not now.
+ *
+ * In offline mode (README §10.6) the app doesn't look by itself.
  */
+
+import { connectionMode } from './offline.js';
+
+// A check gets as long as any request (README §10.6): Wi-Fi with no internet
+// behind it leaves a request hanging rather than failing it.
+const CHECK_TIMEOUT = 10 * 1000;
 
 let ready = false;
 const listeners = new Set();
@@ -40,7 +48,7 @@ export function watchForUpdates(sw = typeof navigator !== 'undefined' ? navigato
     controlled = true;
   });
   doc?.addEventListener('visibilitychange', () => {
-    if (doc.visibilityState === 'visible') checkForUpdate(sw);
+    if (doc.visibilityState === 'visible' && connectionMode() !== 'offline') checkForUpdate(sw);
   });
 }
 
@@ -50,17 +58,25 @@ export function watchForUpdates(sw = typeof navigator !== 'undefined' ? navigato
  *   'downloading'  one was found, and is downloading in the background
  *   'latest'       this is the newest
  *   'offline'      couldn't reach the site to ask
+ *   'offlineMode'  offline mode is on, so it didn't ask
  *   'unsupported'  no service worker here (plain http, an old browser):
  *                  every reload is already the latest
  */
 export async function checkForUpdate(sw = typeof navigator !== 'undefined' ? navigator.serviceWorker : null) {
   if (ready) return 'ready';
+  if (connectionMode() === 'offline') return 'offlineMode';
   const reg = sw?.getRegistration ? await sw.getRegistration().catch(() => null) : null;
   if (!reg) return 'unsupported';
+  let timer;
   try {
-    await reg.update();
+    await Promise.race([
+      reg.update(),
+      new Promise((resolve, reject) => { timer = setTimeout(() => reject(new Error('no answer')), CHECK_TIMEOUT); }),
+    ]);
   } catch {
     return 'offline';
+  } finally {
+    clearTimeout(timer);
   }
   if (ready) return 'ready';
   return reg.installing || reg.waiting ? 'downloading' : 'latest';

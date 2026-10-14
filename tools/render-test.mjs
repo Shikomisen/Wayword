@@ -268,16 +268,28 @@ await tick();
 check('🐢 plays the same clip at three-quarter speed, at the same pitch',
   played.at(-1) === played.at(-2) && speeds.at(-2).rate === 1 && speeds.at(-1).rate === 0.75 && speeds.at(-1).pitch === true,
   `${played.at(-1)} ${JSON.stringify(speeds.at(-1))}`);
-check('romaji shown while enabled', $$('.romaji').length > 0);
-
-const before = $$('.romaji').length;
-$$('.chip').find((c) => c.textContent === 'romaji')?.click();
+// The romaji chip cycles the same three modes: always → tap to show → hidden → always.
+const romajiChip = () => $('.chip[data-aid="romaji"]');
+const romajiBefore = $$('.romaji').length;
+check('romaji shown while set to always, and its chip says so',
+  romajiBefore > 0 && !$('.romaji-tap') && romajiChip()?.textContent === 'romaji · Always', romajiChip()?.textContent);
+romajiChip()?.click();
 await tick(); await tick(); await tick();
-check('romaji toggle removes romaji from the page', $$('.romaji').length === 0, `was ${before}`);
-
-$$('.chip').find((c) => c.textContent === 'romaji')?.click();
+check('romaji tap-to-show keeps every line in its place, blank until tapped',
+  romajiChip()?.dataset.mode === 'tap' && $$('.romaji').length === romajiBefore &&
+    $$('.romaji.romaji-tap').length === romajiBefore && !$('.romaji-tap.revealed'),
+  `${$$('.romaji-tap').length} tappable`);
+const romajiLine = $('.romaji-tap');
+romajiLine?.click();
+check('tapping shows that one line', romajiLine?.classList.contains('revealed') && $$('.romaji-tap.revealed').length === 1);
+romajiChip()?.click();
 await tick(); await tick(); await tick();
-check('romaji toggle restores it', $$('.romaji').length > 0);
+check('hidden takes romaji off the page', romajiChip()?.dataset.mode === 'hidden' && $$('.romaji').length === 0,
+  `was ${romajiBefore}`);
+romajiChip()?.click();
+await tick(); await tick(); await tick();
+check('…and the romaji cycle comes back round to always',
+  romajiChip()?.dataset.mode === 'always' && $$('.romaji').length === romajiBefore && !$('.romaji-tap'));
 
 // The furigana chip cycles: always → tap to show → hidden → always.
 const furiganaChip = () => $('.chip[data-aid="furigana"]');
@@ -641,6 +653,22 @@ const playedBefore = played.length;
 $$('.kana-cell:not(.kana-empty)')[0].click();
 await tick(); await tick();
 check('tapping a character plays its audio', played.length > playedBefore, played.at(-1));
+check('each character shows its romaji', $$('.kana-cell .kana-romaji').length === 104 && !$('.kana-romaji.romaji-tap'));
+
+// Romaji on tap to show: in the chart, the tap that plays a character shows its romaji.
+await deck.saveSettings({ romajiMode: 'tap' });
+await goTo('#/en-ja/characters/hiragana');
+const firstKana = () => $$('.kana-cell:not(.kana-empty)')[0];
+check('romaji on tap to show: every character keeps its romaji, blank',
+  $$('.kana-romaji.romaji-tap').length === 104 && !$('.romaji-tap.revealed'));
+firstKana()?.click();
+await tick(); await tick();
+check('…and tapping a character plays it and shows its romaji',
+  firstKana()?.querySelector('.kana-romaji')?.classList.contains('revealed') && $$('.romaji-tap.revealed').length === 1);
+await deck.saveSettings({ romajiMode: 'hidden' });
+await goTo('#/en-ja/characters/hiragana');
+check('romaji hidden: the chart is kana only', !$('.kana-romaji') && $$('.kana-cell:not(.kana-empty)').length === 104);
+await deck.saveSettings({ romajiMode: 'always' });
 
 await goTo('#/en-ja/characters/kanji-common');
 check('kanji screen renders', text().includes('Common Kanji'));
@@ -763,8 +791,8 @@ console.log('\n8. Settings');
 
 await goTo('#/en-ja/settings');
 check('settings renders', text().includes('Settings'));
-check('toggles present: romaji, auto-play and the three card types',
-  $$('input[type="checkbox"]').length === 5 && $$('input[data-dir]').length === 3);
+check('toggles present: auto-play and the three card types',
+  $$('input[type="checkbox"]').length === 4 && $$('input[data-dir]').length === 3);
 check('furigana is a three-way choice, set to always',
   $$('.furigana-mode .segment').map((b) => b.dataset.mode).join(',') === 'always,tap,hidden' &&
   $('.furigana-mode .segment.is-on')?.dataset.mode === 'always');
@@ -773,6 +801,37 @@ for (let i = 0; i < 6; i++) await tick();
 check('choosing tap-to-show sticks', $('.furigana-mode .segment.is-on')?.dataset.mode === 'tap');
 $('.furigana-mode .segment[data-mode="always"]')?.click();
 for (let i = 0; i < 6; i++) await tick();
+check('romaji is the same three-way choice, set to always',
+  $$('.romaji-mode .segment').map((b) => b.dataset.mode).join(',') === 'always,tap,hidden' &&
+  $('.romaji-mode .segment.is-on')?.dataset.mode === 'always' &&
+  $('.romaji-mode')?.previousElementSibling?.textContent.startsWith('Romaji'));
+$('.romaji-mode .segment[data-mode="hidden"]')?.click();
+for (let i = 0; i < 6; i++) await tick();
+check('choosing hidden sticks, and is saved',
+  $('.romaji-mode .segment.is-on')?.dataset.mode === 'hidden' && (await deck.getSettings()).romajiMode === 'hidden');
+$('.romaji-mode .segment[data-mode="always"]')?.click();
+for (let i = 0; i < 6; i++) await tick();
+
+// Online or offline (README §10.6). jsdom has no service worker: this is the page's side.
+const offlineMod = await import('../js/offline.js');
+const courseMod = await import('../js/course.js');
+check('connection is online or offline, online to start with, and says what online does',
+  $$('.connection-mode .segment').map((b) => b.dataset.connection).join(',') === 'online,offline' &&
+    $('.connection-mode .segment.is-on')?.dataset.connection === 'online' && offlineMod.connectionMode() === 'online' &&
+    text().includes('when it answers within 10 seconds'));
+$('.connection-mode .segment[data-connection="offline"]')?.click();
+for (let i = 0; i < 8; i++) await tick();
+check('choosing offline switches at once, says what it means, and is kept for this device',
+  offlineMod.connectionMode() === 'offline' && $('.connection-mode .segment.is-on')?.dataset.connection === 'offline' &&
+    text().includes('Uses only what’s on this device') && (await courseMod.getPrefs()).connection === 'offline');
+$('[data-action="check-update"]')?.click();
+for (let i = 0; i < 4; i++) await tick();
+check('…and in offline mode, Check for updates doesn\'t go looking',
+  $('.update-status')?.textContent.startsWith('Offline mode is on'), $('.update-status')?.textContent);
+$('.connection-mode .segment[data-connection="online"]')?.click();
+for (let i = 0; i < 8; i++) await tick();
+check('choosing online switches back', offlineMod.connectionMode() === 'online' &&
+  (await courseMod.getPrefs()).connection === 'online' && !$('.connection-status'));
 check('new-cards-per-day control present', Boolean($('input[type="number"]')));
 check('text size control present', Boolean($('input[type="range"]')));
 check('storage backend reported', /Storage: (IndexedDB|localStorage)/.test(text()),
@@ -856,9 +915,18 @@ check('the English-speaker courses are not listed', !$('.course-card[data-course
 
 console.log('\n10. English for Japanese speakers');
 
-// Offline, before this device ever downloaded the course.
+// Offline, before this device ever downloaded the course — first in offline mode.
 unreachable = 'content/en/';
+await offlineMod.useConnection('offline');
 await goTo('#/ja-en/');
+check('in offline mode, a course never downloaded here says why, and offers to go online',
+  $('h1')?.textContent === 'まだこの端末にありません' && text().includes('オフラインモード') &&
+    $('[data-action="go-online"]')?.textContent === 'オンラインにする');
+$('[data-action="go-online"]')?.click();
+for (let i = 0; i < 12; i++) await tick();
+check('"Go online" switches to online, saves it, and tries the course again',
+  offlineMod.connectionMode() === 'online' && (await courseMod.getPrefs()).connection === 'online' &&
+    $('h1')?.textContent === 'まだこの端末にありません' && !$('[data-action="go-online"]'));
 check('offline, a course never downloaded here says so, in the learner\'s language, instead of failing',
   $('h1')?.textContent === 'まだこの端末にありません' && !text().includes('Something went wrong') &&
     document.body.classList.contains('no-tabs') && Boolean($('a.btn[href="#/"]')),
@@ -1142,10 +1210,12 @@ console.log('\n11b. Version and updates');
 await goTo('#/en-ja/settings');
 check('Settings says which version this is', $('.about-version')?.textContent === `Version ${VERSION}`,
   $('.about-version')?.textContent);
+check('…with no Update now button while there is no update', $('[data-action="reload"]')?.hidden === true);
 $('[data-action="check-update"]')?.click();
 for (let i = 0; i < 4; i++) await tick();
 check('…and can check for a newer one (no service worker here: every reload is the latest)',
-  $('.update-status')?.textContent === 'This browser always loads the latest version.', $('.update-status')?.textContent);
+  $('.update-status')?.textContent === 'This browser always loads the latest version.' &&
+    $('[data-action="reload"]')?.hidden === true, $('.update-status')?.textContent);
 
 // The browser's update machinery, stood in for: what a check finds, and a new version taking over.
 const updates = await import('../js/updates.js');
@@ -1170,10 +1240,19 @@ for (let i = 0; i < 4; i++) await tick();
 check('coming back to the app checks for a new version', checksAsked > 0, `${checksAsked} checks`);
 installed.dispatchEvent(new Event('controllerchange'));
 await tick();
-check('a new version taking over puts "ready — update now" across the top',
-  document.querySelector('.update-banner')?.textContent === 'A new version of Wayword is ready.Update now');
+const bar = () => document.querySelector('.update-banner');
+check('a new version taking over puts "ready" across the top, with Update now and Not now',
+  bar()?.querySelector('.update-message')?.textContent === 'A new version of Wayword is ready.' &&
+    bar()?.querySelector('[data-action="update-now"]')?.textContent === 'Update now' &&
+    bar()?.querySelector('[data-action="update-later"]')?.textContent === 'Not now');
+check('…and Settings, open at the time, offers it straight away',
+  $('[data-action="reload"]')?.hidden === false && $('.update-status')?.textContent === 'A new version of Wayword is ready.');
+bar()?.querySelector('[data-action="update-later"]')?.click();
+await tick();
+check('"Not now" puts the bar away, and says where the update is',
+  !bar() && [...document.querySelectorAll('.toast')].some((n) => n.textContent.startsWith('Update any time from Settings')));
 await goTo('#/en-ja/settings');
-check('…and Settings offers it too', $('[data-action="reload"]')?.hidden === false && text().includes('A new version of Wayword is ready.'));
+check('…and Settings offers it', $('[data-action="reload"]')?.hidden === false && text().includes('A new version of Wayword is ready.'));
 
 console.log('\n12. Console health');
 

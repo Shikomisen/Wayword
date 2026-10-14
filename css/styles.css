@@ -19,7 +19,8 @@
 
   --radius: 14px;
   --pad: 16px;
-  --tabbar-h: 62px;
+  /* Grows with the text size, so bigger labels still fit the bar. */
+  --tabbar-h: calc(42px + 20px * var(--text-scale));
 
   --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   --font-jp: "Hiragino Kaku Gothic ProN", "Yu Gothic", "Meiryo", "Noto Sans JP", sans-serif;
@@ -39,6 +40,10 @@
 
 * { box-sizing: border-box; }
 
+/* Hidden means hidden, even for elements that set their own display (.btn,
+   .action-row). Without this, a button the code hides stays on screen. */
+[hidden] { display: none !important; }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -49,12 +54,17 @@ html, body {
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
   overscroll-behavior-y: contain;
+  /* A word too long for its box — at a big text size, on a narrow phone —
+     breaks rather than run out of the box. */
+  overflow-wrap: break-word;
 }
 
 #app {
   max-width: 640px;
   margin: 0 auto;
   padding: max(12px, env(safe-area-inset-top)) var(--pad) calc(var(--tabbar-h) + 32px);
+  /* Screens can ask how wide they have, in ems: the room a row needs grows with the text size. */
+  container: app / inline-size;
 }
 
 h1 { font-size: 1.6rem; margin: 0 0 4px; letter-spacing: -0.01em; }
@@ -80,8 +90,15 @@ a { color: inherit; text-decoration: none; }
   font-size: 2rem;
   line-height: 2.1;   /* room for furigana above */
   display: block;
-  word-break: keep-all;
+  /* Japanese has no spaces, so a sentence wraps between characters, as
+     Japanese allows: strict keeps 。、 and small kana off the start of a
+     line. (It used to be keep-all, which allowed no break at all, so a long
+     sentence ran off the screen.) */
+  line-break: strict;
 }
+/* Where the browser can, Japanese wraps between phrases rather than inside
+   a word (Chrome). Elsewhere this is ignored, and it wraps as above. */
+.target:lang(ja) { word-break: auto-phrase; }
 .jp { font-family: var(--font-jp); }
 /* English needs no ruby headroom, and its sentences run longer. */
 .target:lang(en) { font-size: 1.6rem; line-height: 1.35; font-weight: 600; letter-spacing: -0.01em; }
@@ -121,7 +138,11 @@ rt { font-size: 0.45em; color: var(--fg-muted); font-weight: 400; }
 
 /* ---------- home ---------- */
 
-.stat-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 4px 0 18px; }
+.stat-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 4px 0 18px; }
+/* Four across need about 17em: at a big text size on a narrow phone, two rows of two. */
+@container app (max-width: 17em) {
+  .stat-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 .stat {
   background: var(--bg-raised); border: 1px solid var(--line);
   border-radius: var(--radius); padding: 10px 6px; text-align: center;
@@ -170,6 +191,8 @@ rt { font-size: 0.45em; color: var(--fg-muted); font-weight: 400; }
 .audio-btn {
   background: var(--bg-sunk); border: 1px solid var(--line); border-radius: 50%;
   width: 42px; height: 42px; font-size: 1.1rem; cursor: pointer; flex: none; color: inherit;
+  /* No padding, so the icon still fits the circle at the biggest text size. */
+  padding: 0; line-height: 1;
 }
 .audio-btn.playing { border-color: var(--accent); }
 .audio-btn.audio-missing { opacity: 0.35; }
@@ -177,7 +200,7 @@ rt { font-size: 0.45em; color: var(--fg-muted); font-weight: 400; }
 .audio-pair { display: inline-flex; flex-direction: column; align-items: center; gap: 4px; flex: none; }
 .audio-slow {
   background: none; border: 1px solid var(--line); border-radius: 50%;
-  width: 30px; height: 30px; padding: 0; font-size: 0.8rem; cursor: pointer; color: inherit;
+  width: 30px; height: 30px; padding: 0; font-size: 0.8rem; line-height: 1; cursor: pointer; color: inherit;
 }
 .audio-slow.playing { border-color: var(--accent); }
 .audio-slow.audio-missing { opacity: 0.35; }
@@ -217,6 +240,7 @@ rt { font-size: 0.45em; color: var(--fg-muted); font-weight: 400; }
 /* ---------- study ---------- */
 
 .study-top { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+.study-top > span { flex: none; white-space: nowrap; } /* "3/10" never splits */
 .study-top .back-link { margin: 0; font-size: 1.1rem; }
 
 .study-card {
@@ -232,7 +256,7 @@ rt { font-size: 0.45em; color: var(--fg-muted); font-weight: 400; }
 .tap-hint { margin-top: 18px; font-size: 0.85rem; }
 .card-cat { text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.7rem; }
 
-.grade-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 14px; }
+.grade-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; margin-top: 14px; }
 .btn-grade { flex-direction: column; gap: 2px; padding: 10px 4px; font-size: 0.85rem; min-height: 60px; }
 .btn-grade strong { font-weight: 600; }
 .grade-when { font-size: 0.68rem; color: var(--fg-muted); }
@@ -369,14 +393,17 @@ body.at-home .coursebar { display: none; }
 
 /* ---------- characters ---------- */
 
-.char-icon { font-family: var(--font-jp); font-size: 1.5rem; line-height: 1; }
+.char-icon { font-family: var(--font-jp); font-size: 1.5rem; line-height: 1.25; }
 .char-groups { display: flex; flex-direction: column; gap: 26px; margin-top: 8px; }
 .char-group > .section-title { margin-bottom: 4px; }
 .chart-hint { margin: 4px 0 14px; }
 
 .kana-grid { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
-.kana-row { display: grid; grid-template-columns: 22px repeat(5, 1fr); gap: 6px; align-items: stretch; }
-.kana-grid-wide .kana-row { grid-template-columns: 22px repeat(3, 1fr); }
+.kana-row { display: grid; grid-template-columns: 22px repeat(5, minmax(0, 1fr)); gap: 6px; align-items: stretch; }
+.kana-grid-wide .kana-row { grid-template-columns: 22px repeat(3, minmax(0, 1fr)); }
+/* A row longer than the grid (extended katakana: twelve in one row) carries
+   on under its first cell, not in the narrow column of row labels. */
+.kana-grid-wide .kana-row > .kana-cell:nth-child(3n + 2) { grid-column-start: 2; }
 
 .kana-row-label {
   font-family: var(--font-jp); font-size: 0.8rem;
@@ -394,7 +421,7 @@ body.at-home .coursebar { display: none; }
 .kana-cell.just-played { border-color: var(--accent); background: var(--accent-soft); }
 .kana-empty { background: transparent; border-color: transparent; pointer-events: none; }
 
-.kana-char { font-family: var(--font-jp); font-size: 1.5rem; line-height: 1.1; }
+.kana-char { font-family: var(--font-jp); font-size: 1.5rem; line-height: 1.25; }
 .kana-romaji { font-size: 0.62rem; color: var(--fg-muted); letter-spacing: 0.02em; }
 
 .kanji-list { display: flex; flex-direction: column; gap: 8px; margin-top: 10px; }
@@ -427,6 +454,7 @@ body.at-home .coursebar { display: none; }
   font-family: var(--font-jp); font-size: 0.85rem;
   background: var(--bg-sunk); border: 1px solid var(--line);
   border-radius: 99px; padding: 3px 10px; color: var(--fg-muted);
+  max-width: 100%; /* a long sentence wraps inside its chip */
 }
 .ref-chip .target { font-size: 0.85rem; line-height: 1.5; display: inline; }
 .ref-chip:hover { border-color: var(--accent); color: var(--fg); }
@@ -486,7 +514,7 @@ body.at-home .coursebar { display: none; }
 .coursebar {
   max-width: 640px; margin: 0 auto;
   padding: max(10px, env(safe-area-inset-top)) var(--pad) 0;
-  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 4px 12px;
   font-size: 0.8rem; color: var(--fg-muted);
 }
 .coursebar-home { color: var(--fg-muted); padding: 6px 0; }
@@ -494,6 +522,7 @@ body.at-home .coursebar { display: none; }
 .coursebar-pair {
   background: var(--bg-raised); border: 1px solid var(--line);
   border-radius: 99px; padding: 3px 10px; white-space: nowrap;
+  margin-left: auto; /* on a line of its own (big text, narrow phone), it stays on the right */
 }
 body:not(.at-home) #app { padding-top: 10px; }
 
@@ -509,13 +538,14 @@ body:not(.at-home) #app { padding-top: 10px; }
   display: flex; z-index: 20;
 }
 .tabbar a {
-  flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center;
-  gap: 2px; font-size: 0.68rem; color: var(--fg-muted);
+  flex: 1; min-width: 0; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 2px; color: var(--fg-muted); line-height: 1.15; text-align: center;
+  /* Five tabs need tight labels. They grow with the text size only as far
+     as a tab's width allows, so "Connectors" still fits on a small phone. */
+  font-size: min(0.64rem, 3.2vw); padding: 0 2px;
 }
-.tabbar a span { font-size: 1.25rem; }
+.tabbar a span { font-size: 1.25rem; line-height: 1.25; }
 .tabbar a.active { color: var(--accent); }
-/* Five tabs need slightly tighter labels than four did. */
-.tabbar a { font-size: 0.64rem; padding: 0 2px; }
 
 /* ---------- furigana modes ---------- */
 
@@ -532,6 +562,17 @@ body:not(.at-home) #app { padding-top: 10px; }
 .furi-tap:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .readable-toggle { margin-top: 12px; }
 
+/* Romaji, tap to show: the line keeps its place but stays blank until it's
+   tapped, with the same faint dotted underline marking it. In the kana
+   chart, tapping the character shows it. */
+.romaji-tap { cursor: pointer; border-radius: 6px; }
+.romaji-tap:not(.revealed) {
+  color: transparent;
+  text-decoration: underline dotted color-mix(in srgb, var(--fg-muted) 70%, transparent);
+  text-decoration-thickness: 1px; text-underline-offset: 0.3em;
+}
+.romaji-tap:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
 /* ---------- words and sentences ---------- */
 
 .kind-title { font-size: 1.15rem; margin: 30px 0 10px; }
@@ -542,7 +583,7 @@ body:not(.at-home) #app { padding-top: 10px; }
   font-size: 0.66rem; text-transform: uppercase; letter-spacing: 0.07em; color: var(--fg-muted);
   background: var(--bg-sunk); padding: 2px 8px; border-radius: 99px;
 }
-.word-form { display: inline-flex; align-items: baseline; gap: 6px; }
+.word-form { display: inline-flex; flex-wrap: wrap; align-items: baseline; gap: 0 6px; max-width: 100%; }
 .form-key { font-size: 0.72rem; color: var(--fg-muted); }
 .word-details .target { font-size: 1.05rem; line-height: 1.8; }
 .links { margin-top: 10px; }
@@ -607,18 +648,21 @@ textarea.text-input { resize: vertical; min-height: 64px; }
   background: var(--bg-raised); border: 1px solid var(--line); border-radius: var(--radius);
 }
 .direction-list .setting + .setting { border-top: 1px solid var(--line); }
+.connection-status { margin: 0; }
 
 .nudge { margin-top: 12px; border-style: dashed; }
 
 /* ---------- connectors ---------- */
 
-/* The font comes from the element's lang (the course's own :lang rule). */
+/* The font comes from the element's lang (the course's own :lang rule).
+   The marks line up down the list, but never take more than two fifths of
+   the row: on a narrow phone or at a big text size, a long one wraps. */
 .connector-mark {
-  flex: none; min-width: 4.2em; text-align: center;
+  flex: none; min-width: min(4.2em, 33%); max-width: 40%; text-align: center;
   font-size: 1.35rem; font-weight: 700; color: var(--accent);
 }
 /* An English pattern ("Do you have…?") is longer than a Japanese connector. */
-.connector-mark:lang(en) { min-width: 6.5em; font-size: 1rem; }
+.connector-mark:lang(en) { min-width: min(6.5em, 33%); font-size: 1rem; }
 .connector-title { font-size: 2.4rem; color: var(--accent); }
 .connector-title:lang(en) { font-size: 2rem; letter-spacing: -0.01em; }
 .lesson-pattern {
@@ -640,7 +684,7 @@ textarea.text-input { resize: vertical; min-height: 64px; }
 .drill-card > .meaning.big { margin: 0; font-size: 1.2rem; }
 .drill-sentence { font-size: 1.45rem; line-height: 2.1; }
 /* The text either side of the gap is one sentence, not three blocks. */
-.drill-sentence .target { display: inline; font-size: inherit; line-height: inherit; word-break: normal; }
+.drill-sentence .target { display: inline; font-size: inherit; line-height: inherit; }
 .gap {
   display: inline-block; min-width: 3.2em; text-align: center; margin: 0 2px; padding: 0 6px;
   border-bottom: 2px solid var(--accent); color: var(--fg-muted);
@@ -648,9 +692,12 @@ textarea.text-input { resize: vertical; min-height: 64px; }
 .gap.is-right { border-bottom-color: var(--ok); color: var(--fg); }
 .gap.is-wrong { border-bottom-color: var(--warn); color: var(--fg); }
 
-.drill-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; }
-.option { min-height: 54px; font-size: 1.2rem; }
+/* Two across where they fit; at a big text size, one under another. */
+.drill-options { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 7.5em), 1fr)); gap: 8px; }
+.option { min-height: 54px; font-size: 1.2rem; padding: 10px 12px; }
 .option .target { font-size: inherit; line-height: 1.7; }
+/* English options are words ("vegetarian"), longer than a Japanese connector. */
+.option .target:lang(en) { font-size: 0.9em; line-height: 1.35; }
 .option.is-right, .option.is-answer { border-color: var(--ok); background: color-mix(in srgb, var(--ok) 14%, var(--bg-raised)); }
 .option.is-ok { border-color: var(--info); background: color-mix(in srgb, var(--info) 14%, var(--bg-raised)); }
 .option.is-wrong { border-color: var(--accent); background: var(--accent-soft); }
@@ -668,7 +715,7 @@ textarea.text-input { resize: vertical; min-height: 64px; }
 .tile {
   font: inherit; color: var(--fg); cursor: pointer;
   background: var(--bg-raised); border: 1px solid var(--line); border-radius: 10px;
-  padding: 4px 10px; min-height: 44px; font-size: 1.15rem;
+  padding: 4px 10px; min-height: 44px; font-size: 1.15rem; max-width: 100%;
 }
 .tile .target { font-size: inherit; line-height: 1.75; }
 .tile:active { transform: scale(0.97); }
@@ -679,7 +726,7 @@ textarea.text-input { resize: vertical; min-height: 64px; }
 .combine-parts { display: flex; flex-direction: column; gap: 6px; }
 .combine-part { background: var(--bg-sunk); border-radius: 10px; padding: 6px 12px; }
 .combine-part .target { font-size: 1.2rem; line-height: 1.85; }
-.combine-plus { text-align: center; color: var(--fg-muted); line-height: 1; }
+.combine-plus { text-align: center; color: var(--fg-muted); line-height: 1.4; }
 .drill-card > p.meaning { margin: 0; color: var(--fg-muted); font-size: 0.9rem; }
 
 .drill-feedback:empty { display: none; }
@@ -696,7 +743,7 @@ textarea.text-input { resize: vertical; min-height: 64px; }
 .kana-panel { margin-bottom: 8px; }
 .kana-panel .btn-lg { margin: 14px 0 6px; }
 .kana-meters { display: flex; flex-direction: column; gap: 10px; }
-.kana-meter { display: grid; grid-template-columns: 88px 1fr auto; align-items: center; gap: 12px; font-size: 0.92rem; }
+.kana-meter { display: grid; grid-template-columns: 6em minmax(0, 1fr) auto; align-items: center; gap: 12px; font-size: 0.92rem; }
 .kana-meter .bar { height: 8px; }
 .kana-meter-count { font-variant-numeric: tabular-nums; color: var(--fg-muted); min-width: 3.5em; text-align: right; }
 .kana-meter.is-done .bar-fill { background: var(--ok); }
@@ -779,12 +826,16 @@ textarea.text-input { resize: vertical; min-height: 64px; }
 /* ---------- version and updates ---------- */
 
 .update-banner {
-  position: sticky; top: 0; z-index: 30; display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  position: sticky; top: 0; z-index: 30;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 10px;
   /* Below an iPhone's clock and notch: the app draws under the status bar (viewport-fit=cover). */
   padding: max(10px, env(safe-area-inset-top)) 16px 10px;
   background: var(--bg-raised); border-bottom: 1px solid var(--accent); font-size: 0.9rem;
 }
-.update-banner .btn { flex: none; white-space: nowrap; } /* the message wraps, the button doesn't */
+/* One line where there's room; on a phone, the message above and the two buttons under it, on the right. */
+.update-message { flex: 1 1 14em; }
+.update-actions { display: flex; gap: 8px; margin-left: auto; }
+.update-banner .btn { flex: none; white-space: nowrap; } /* the message wraps, the buttons don't */
 /* The bar has taken the space under the status bar: what follows needn't leave room for it again. */
 body:has(.update-banner) .coursebar { padding-top: 10px; }
 body.at-home:has(.update-banner) #app { padding-top: 12px; }

@@ -103,7 +103,7 @@
     "n4": {
       "speaker": "staff",
       "japanese": "五百八十円になります。",
-      "furigana": [{ "b": "五百八十円", "r": "ごひゃくはちじゅうえん" }, { "b": "になります。" }],
+      "furigana": [{ "b": "五百", "r": "ごひゃく" }, { "b": "八十", "r": "はちじゅう" }, { "b": "円", "r": "えん" }, { "b": "になります。" }],
       "romaji": "Gohyaku hachijū en ni narimasu.",
       "english": "That'll be ¥580.",
       "audio": "audio/ja/scenario/conbini-n4.mp3",

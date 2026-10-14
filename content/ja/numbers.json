@@ -80,7 +80,7 @@
     {
       "id": "num-07",
       "japanese": "三千五百円です",
-      "furigana": [{ "b": "三千五百円", "r": "さんぜんごひゃくえん" }, { "b": "です" }],
+      "furigana": [{ "b": "三千", "r": "さんぜん" }, { "b": "五百", "r": "ごひゃく" }, { "b": "円", "r": "えん" }, { "b": "です" }],
       "romaji": "sanzen gohyaku en desu",
       "english": "That's ¥3,500.",
       "registerNotes": "Listening target — this is the shape a price comes back in. Note 三千 is さんぜん, not さんせん.",

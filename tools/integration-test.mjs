@@ -463,6 +463,29 @@ const withReadable = { ...(await deck.getSettings()), readable: await deck.getRe
 check('"I can read this" drops one item\'s furigana to tap-to-show',
   furiganaMode(withReadable, iku) === 'tap' && furiganaMode(withReadable, content.phrases.get('w-miru')) === 'always');
 check('…unless furigana is hidden altogether', furiganaMode({ ...withReadable, furiganaMode: 'hidden' }, iku) === 'hidden');
+
+// Romaji: the same three modes, faded the same way.
+const { romajiMode } = await import('../js/render.js');
+check('romaji has furigana\'s three modes, and starts on always',
+  deck.ROMAJI_MODES.join() === 'always,tap,hidden' && withReadable.romajiMode === 'always');
+check('"I can read this" drops that item\'s romaji to tap-to-show too',
+  romajiMode(withReadable, iku) === 'tap' && romajiMode(withReadable, content.phrases.get('w-miru')) === 'always');
+check('…unless romaji is hidden altogether', romajiMode({ ...withReadable, romajiMode: 'hidden' }, iku) === 'hidden');
+check('an older record, from when romaji was on or off, reads as always or hidden',
+  romajiMode({ romaji: true }, iku) === 'always' && romajiMode({ romaji: false }, iku) === 'hidden');
+const beforeRetiring = await deck.getSettings();
+await deck.saveSettings({ romajiMode: 'always', romajiRetired: false, installedAt: Date.now() - 8 * 86400000 });
+check('after the first week, romaji set to always becomes tap to show — once, and says so',
+  (await deck.maybeRetireRomaji()) === true && (await deck.getSettings()).romajiMode === 'tap' &&
+    (await deck.maybeRetireRomaji()) === false);
+await deck.saveSettings({ romajiMode: 'hidden', romajiRetired: false });
+check('…while a mode the learner chose is left alone, with nothing to say',
+  (await deck.maybeRetireRomaji()) === false && (await deck.getSettings()).romajiMode === 'hidden' &&
+    (await deck.getSettings()).romajiRetired === true);
+await deck.saveSettings({
+  romajiMode: beforeRetiring.romajiMode, romajiRetired: beforeRetiring.romajiRetired, installedAt: beforeRetiring.installedAt,
+});
+
 await deck.setReadable('w-iku', false);
 check('…and unmarking it brings the furigana back', !(await deck.getReadable()).has('w-iku'));
 

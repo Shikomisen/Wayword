@@ -104,7 +104,7 @@
     {
       "id": "air-09",
       "japanese": "手荷物受取所はどこですか",
-      "furigana": [{ "b": "手荷物受取所", "r": "てにもつうけとりじょ" }, { "b": "はどこですか" }],
+      "furigana": [{ "b": "手荷物", "r": "てにもつ" }, { "b": "受取所", "r": "うけとりじょ" }, { "b": "はどこですか" }],
       "romaji": "tenimotsu uketorijo wa doko desu ka",
       "english": "Where is baggage claim?",
       "registerNotes": "Long, but the signage uses exactly these kanji — recognising them written matters more than saying it perfectly.",
