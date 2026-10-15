@@ -684,3 +684,37 @@ export async function setRecording(id, dataUrl) {
   if (dataUrl) await store.set('meta', `rec:${id}`, dataUrl);
   else await store.del('meta', `rec:${id}`);
 }
+
+/* ---------- saved messages ("Paste a message") ---------- */
+
+/** Messages pasted in this course, oldest first: { id, text, createdAt, added: [user item ids] }. */
+export async function getMessages() {
+  return (await store.get('meta', 'messages')) || [];
+}
+
+export async function getMessage(id) {
+  return (await getMessages()).find((m) => m.id === id) || null;
+}
+
+/** Keep a pasted message, so its words can be added now or later. */
+export async function saveMessage(text) {
+  const messages = await getMessages();
+  const message = { id: `m-${Date.now().toString(36)}`, text, createdAt: Date.now(), added: [] };
+  messages.push(message);
+  await store.set('meta', 'messages', messages);
+  return message;
+}
+
+/** Note that one of your own words came from this message. */
+export async function markAdded(messageId, itemId) {
+  const messages = await getMessages();
+  const message = messages.find((m) => m.id === messageId);
+  if (!message || message.added.includes(itemId)) return;
+  message.added.push(itemId);
+  await store.set('meta', 'messages', messages);
+}
+
+/** Forget a message. The words added from it stay. */
+export async function deleteMessage(id) {
+  await store.set('meta', 'messages', (await getMessages()).filter((m) => m.id !== id));
+}

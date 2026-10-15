@@ -639,6 +639,72 @@ textarea.text-input { resize: vertical; min-height: 64px; }
 .audio-box .setting { width: 100%; }
 .record-row { margin: 0; }
 
+/* ---------- paste a message ---------- */
+
+textarea.paste-input { min-height: 140px; }
+.saved-messages { margin-top: 4px; }
+/* A message's first sentence names it in the list: two lines at most. */
+.message-first {
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;
+  font-weight: 500;
+}
+.empty-messages { margin-top: 8px; }
+.paste-hint { margin: 0 0 6px; }
+.paste-missing {
+  color: var(--warn); border: 1px dashed color-mix(in srgb, var(--warn) 60%, transparent);
+  border-radius: var(--radius); padding: 10px 14px;
+}
+
+.message-text { margin: 4px 0 18px; }
+.message-sentence { padding: 8px 0 12px; border-bottom: 1px solid var(--line); }
+.message-sentence:last-of-type { border-bottom: 0; }
+/* The message, sized for reading, with room above each line for furigana. */
+.sentence-line { font-size: 1.3rem; line-height: 2.3; margin: 0 0 4px; line-break: strict; }
+/* A word in the message: tap it to look it up. It's text, underlined, so the
+   sentence still reads, and wraps, as one: Japanese line breaking keeps
+   。、？ off the start of a line, and a long word wraps like any other. */
+.word-chip {
+  cursor: pointer; border-radius: 4px; padding: 2px 1px; margin: 0 1px;
+  text-decoration-line: underline; text-decoration-color: var(--line);
+  text-decoration-thickness: 2px; text-underline-offset: 5px;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+.word-chip:hover { background: var(--bg-raised); }
+.word-chip:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.word-chip.is-minor { color: var(--fg-muted); text-decoration-color: transparent; }
+.word-chip.is-added { text-decoration-color: var(--ok); }
+.word-chip.is-picked { background: var(--accent-soft); text-decoration-color: var(--accent); }
+.add-sentence { font-size: 0.8rem; }
+
+/* The entry for a tapped word, under its sentence. */
+.word-sheet {
+  background: var(--bg-raised); border: 1px solid var(--accent); border-radius: var(--radius);
+  padding: 12px 14px; margin: 0 0 14px;
+}
+.sheet-head { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; }
+.sheet-word { font-size: 1.8rem; line-height: 2.1; }
+.sheet-close { margin-left: auto; min-width: 34px; }
+.sheet-form { margin: 0 0 8px; }
+.sheet-choose { margin: 0 0 6px; }
+.senses { list-style: none; margin: 0 0 10px; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.sense {
+  display: block; width: 100%; text-align: left; font: inherit; color: var(--fg);
+  background: var(--bg-sunk); border: 1px solid transparent; border-radius: 10px; padding: 8px 12px;
+}
+button.sense { cursor: pointer; }
+.sense.is-on { border-color: var(--accent); background: var(--accent-soft); }
+.sheet-status { font-size: 0.85rem; color: var(--fg-muted); margin: 0 0 10px; }
+.sheet-status.is-yours { color: var(--ok); }
+.sheet-status a { text-decoration: underline; }
+.sheet-actions { margin: 0; }
+.alternatives { margin-top: 12px; }
+.alt-chip { text-align: left; max-width: 100%; }
+
+/* The credit the dictionary's licence asks for (README §6.14). */
+.dict-credit p { margin: 0 0 6px; }
+.dict-credit a { text-decoration: underline; }
+.about-dictionary { margin-top: 18px; }
+
 /* ---------- settings: grouped choices ---------- */
 
 .setting-stack { flex-direction: column; align-items: stretch; gap: 10px; }

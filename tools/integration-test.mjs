@@ -948,6 +948,94 @@ await backup.importBackup(onlyJapanese);
 check('a course the backup doesn\'t hold is left as it is',
   (await deck.getDeck()).length === cardsBeforeBackup && (await store.get('meta', 'settings', 'ja-en')).newPerDay === 9);
 
+/* ---------- 14. paste a message: the offline dictionary ---------- */
+
+console.log('\n14. Paste a message — the offline dictionary (en-ja)');
+
+const dictionary = await import('../js/dictionary.js');
+const uiEn = JSON.parse(readFileSync(resolve(ROOT, 'content/ui/en.json'), 'utf8'));
+
+// Offline, before the course finished downloading: no dictionary yet, and the next try starts afresh.
+const realFetch = globalThis.fetch;
+globalThis.fetch = async (path) => (String(path).endsWith('dictionary.json') ? { ok: false, status: 504, json: async () => null } : realFetch(path));
+check('a dictionary not on the device yet loads as none, without an error', (await dictionary.loadDictionary()) === null);
+globalThis.fetch = realFetch;
+const dict = await dictionary.loadDictionary();
+check('…and loads once it is there: JMdict\'s common words', dict?.size > 20000, `${dict?.size} entries`);
+check('it carries the credit and licence its source asks for',
+  dict.licence === 'CC BY-SA 4.0' && /Electronic Dictionary Research and Development Group/.test(dict.credit) &&
+    dict.licenceUrl === 'https://www.edrdg.org/edrdg/licence.html');
+await course.setCourse('ja-en');
+check('a course without one has none', (await dictionary.loadDictionary()) === null);
+await course.setCourse('en-ja');
+
+// Inflected forms traced back to the word on the card.
+const lookup = (text) => dictionary.lookupAt(dict, text, 0);
+const cardWord = (text) => { const m = lookup(text); return m ? dictionary.wordOf(m.matches[0]).target : null; };
+const FORMS = {
+  食べなかった: '食べる', 会いたい: '会う', 遅れてる: '遅れる', 待ってて: '待つ', 勉強した: '勉強', 来た: '来る',
+  来ない: '来る', 行った: '行く', しました: 'する', 飲みません: '飲む', 寒かった: '寒い', 見られる: '見る',
+  書かせる: '書く', 読んでください: '読む', 泳げる: '泳ぐ', 話しながら: '話す', 忘れちゃった: '忘れる',
+  高くない: '高い', 帰りましょう: '帰る', 分かりました: '分かる', 降ってる: '降る', 美味しそう: '美味しい',
+};
+for (const [form, word] of Object.entries(FORMS)) check(`${form} → ${word}`, cardWord(form) === word, cardWord(form));
+check('…saying what made the form: 食べなかった is negative, past',
+  lookup('食べなかった').matches[0].reasons.join(', ') === 'negative, past', lookup('食べなかった').matches[0].reasons.join(', '));
+check('the longest word wins: 駅前 rather than 駅 + 前', lookup('駅前で')?.surface === '駅前', lookup('駅前で')?.surface);
+check('kana alone is read as the word usually written in kana: に is the particle, not 荷 ("load")',
+  dictionary.isMinor(lookup('に').matches[0].entry) && lookup('に').matches[0].entry.kanji.length === 0);
+check('a word usually written in kana goes on its card in kana', cardWord('ありがとう') === 'ありがとう');
+check('kana for a word written in kanji goes on its card in kanji, as it usually is: たべる → 食べる', cardWord('たべる') === '食べる');
+
+// How the text itself is read, for furigana.
+const reading = (text) => dictionary.readingOf(text, lookup(text).matches[0]);
+check('readings follow the text, not the dictionary form: 食べなかった is たべなかった', reading('食べなかった') === 'たべなかった',
+  reading('食べなかった'));
+check('…and 来る\'s changing stem: 来た きた, 来ない こない, 来れば くれば',
+  reading('来た') === 'きた' && reading('来ない') === 'こない' && reading('来れば') === 'くれば',
+  `${reading('来た')} ${reading('来ない')} ${reading('来れば')}`);
+
+// A message cut into words.
+const pieces = dictionary.segment(dict, '明日は7時に駅で会いたい。');
+check('a message is cut into its words and the rest',
+  pieces.map((p) => p.text).join('|') === '明日|は|7|時|に|駅|で|会いたい|。', pieces.map((p) => p.text).join('|'));
+check('…a counter straight after a number: 7時 is じ, not とき', reading('時') !== 'じ' &&
+  dictionary.readingOf('時', pieces[3].match.matches[0]) === 'じ', dictionary.readingOf('時', pieces[3].match.matches[0]));
+const hello = dictionary.segment(dict, '今日は暑いね');
+check('今日は in a message is 今日 + は, with "hello" still on offer',
+  hello.map((p) => p.text).join('|') === '今日|は|暑い|ね' && hello[0].match.longer?.surface === '今日は',
+  hello.map((p) => p.text).join('|'));
+check('a sentence\'s furigana is suggested word by word',
+  dictionary.sentenceFurigana(dict, '明日、駅で会いましょう。') === '{明日|あした}、{駅|えき}で{会|あ}いましょう。',
+  dictionary.sentenceFurigana(dict, '明日、駅で会いましょう。'));
+check('…and there is none for a sentence in kana', dictionary.sentenceFurigana(dict, 'ありがとう！') === null);
+
+// Every label the screens build from a key has an interface string.
+check(`every inflection the rules name has a label (${dictionary.REASONS.length})`,
+  dictionary.REASONS.every((r) => `inflect.${r}` in uiEn), dictionary.REASONS.filter((r) => !(`inflect.${r}` in uiEn)).join(', '));
+const kinds = new Set();
+for (let i = 0; i < dict.size; i++) kinds.add(dictionary.wordKind(dict.entry(i)));
+kinds.delete(null);
+check(`every kind of word in the dictionary has a label (${kinds.size})`, [...kinds].every((k) => `pos.${k}` in uiEn),
+  [...kinds].filter((k) => !(`pos.${k}` in uiEn)).join(', '));
+
+// Saved messages, and the words added from them.
+const pasted = await deck.saveMessage('明日、駅で会いましょう。');
+check('a pasted message is kept on the device', (await deck.getMessage(pasted.id))?.text === '明日、駅で会いましょう。' &&
+  (await deck.getMessages()).length === 1);
+await deck.saveUserItem({ id: 'u-paste', kind: 'word', target: '会う', reading: 'あう', furigana: '{会|あ}う', meaning: 'to meet',
+  note: 'From a message: 明日、駅で会いましょう。', audioMode: 'none' });
+await deck.markAdded(pasted.id, 'u-paste');
+await deck.markAdded(pasted.id, 'u-paste');
+check('a word added from it is counted once', (await deck.getMessage(pasted.id)).added.join() === 'u-paste');
+check('…and is one of your own words, with its cards', Boolean(await deck.getCard('u-paste')) &&
+  (await deck.getUserItems()).some((u) => u.id === 'u-paste'));
+check('messages are in a backup', (await backup.exportAll()).namespaces['en-ja'].meta.messages?.some((m) => m.id === pasted.id));
+await deck.deleteMessage(pasted.id);
+check('deleting a message forgets it, but not the words added from it',
+  !(await deck.getMessage(pasted.id)) && (await deck.getUserItems()).some((u) => u.id === 'u-paste'));
+await deck.deleteUserItem('u-paste');
+
 /* ---------- result ---------- */
 
 console.log(

@@ -34,7 +34,7 @@
  * Settings, it never waits at all.
  */
 
-const CACHE_VERSION = 'v16';
+const CACHE_VERSION = 'v17';
 const CACHE_PREFIX = 'wayword-';
 const CACHE = `${CACHE_PREFIX}${CACHE_VERSION}`;
 
@@ -71,6 +71,7 @@ const SHELL = [
   './js/content.js',
   './js/course.js',
   './js/deck.js',
+  './js/dictionary.js',
   './js/drills.js',
   './js/home.js',
   './js/i18n.js',
@@ -80,6 +81,7 @@ const SHELL = [
   './js/mastery.js',
   './js/mine.js',
   './js/offline.js',
+  './js/paste.js',
   './js/quiz.js',
   './js/reading.js',
   './js/characters.js',
@@ -154,6 +156,10 @@ async function manifestAssets(manifestPath, cache = null) {
   const files = MANIFEST_LISTS.flatMap((list) => (manifest[list] || []).map((entry) => entry.file)).filter(Boolean);
   assets.push(...files.map((f) => `./${f}`));
   for (const data of await Promise.all(files.map((f) => readJSON(f, cache)))) audioIn(data, assets);
+  // The course's dictionary (README §6.14): one file, kept with the course.
+  // It has no clips, so it isn't read here — at 2 MB, that would only slow
+  // every download and every status check.
+  if (manifest.dictionary?.file) assets.push(`./${manifest.dictionary.file}`);
   return [...new Set(assets)];
 }
 

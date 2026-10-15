@@ -245,6 +245,8 @@ async function expectedAssets(ids) {
       for (const x of data.items || []) out.push(...clips(x).map((a) => `./${a}`));
       for (const set of data.sets || []) for (const pair of set.pairs || []) for (const w of pair) out.push(...clips(w).map((a) => `./${a}`));
     }
+    // The course's dictionary, for Paste a message (README §6.14).
+    if (m.dictionary?.file) out.push(`./${m.dictionary.file}`);
   }
   return [...new Set(out)];
 }
@@ -293,6 +295,36 @@ function textSpills() {
     }
   }
   return out;
+}
+
+// Paste a message (README §2.4): a message like one from a friend, by the
+// language it's in, with a word in it to look up — an inflected verb.
+const SAMPLE_MESSAGES = {
+  ja: {
+    text: '明日の夜、駅前のレストランで晩ご飯を食べない？\n7時に迎えに行くね。昨日は忙しくて、電話できなかった。ごめんね！',
+    word: '食べる',
+    meaning: 'to eat',
+  },
+};
+
+/**
+ * Paste a course's sample message, wait for its words, and open the word
+ * sheet for its sample word. What the sheet says, and how many words were
+ * found.
+ */
+async function pasteSample(page, courseId, sample) {
+  await visit(page, `#/${courseId}/mine/paste`);
+  await page.evaluate((text) => {
+    document.querySelector('.paste-input').value = text;
+    document.querySelector('[data-action="find-words"]')?.click();
+  }, sample.text);
+  await waitFor(page, () => document.querySelectorAll('.word-chip').length > 0, null, 15000);
+  await page.evaluate((w) => [...document.querySelectorAll('.word-chip')].find((c) => c.dataset.word === w)?.click(), sample.word);
+  await waitFor(page, () => Boolean(document.querySelector('.word-sheet')), null, 5000);
+  return page.evaluate(() => ({
+    words: document.querySelectorAll('.word-chip').length,
+    sheet: document.querySelector('.word-sheet')?.textContent || '',
+  }));
 }
 
 const page = await browser.newPage();
@@ -422,9 +454,11 @@ try {
       }
     }
     tabsByCourse[c.id] = await page.$$eval('.tabbar a', (a) => a.map((x) => x.getAttribute('href')));
-    // Sections without a tab of their own: listening lives in Learn and on Today.
+    // Sections without a tab of their own: listening lives in Learn and on
+    // Today, and Paste a message in Your own words.
     const manifest = await fetch(new URL(c.manifest, base)).then((r) => r.json());
     if (manifest.listening?.length) tabsByCourse[c.id].push(`#/${c.id}/listening`, `#/${c.id}/listening/drill`);
+    if (manifest.dictionary?.file) tabsByCourse[c.id].push(`#/${c.id}/mine/paste`);
     for (const href of tabsByCourse[c.id]) {
       const v = await visit(page, href);
       check(`${href} renders`, v.ok && !/\bnull\b|undefined|Something went wrong/.test(v.text), v.heading);
@@ -459,6 +493,14 @@ try {
       await page.evaluate(() => document.documentElement.style.setProperty('--text-scale', '1.6'));
       if (v.ok) screensChecked++;
       spills.push(...(await page.evaluate(textSpills)).map((s) => `${href}: ${s}`));
+    }
+    // A pasted message's words, with a word sheet open.
+    const sample = manifest.dictionary?.file && SAMPLE_MESSAGES[c.target];
+    if (sample) {
+      const found = await pasteSample(page, c.id, sample);
+      await page.evaluate(() => document.documentElement.style.setProperty('--text-scale', '1.6'));
+      if (found.sheet) screensChecked++;
+      spills.push(...(await page.evaluate(textSpills)).map((s) => `#/${c.id}/mine/paste/…: ${s}`));
     }
   }
   check(`no text runs out of its box (${screensChecked} screens)`, spills.length === 0 && screensChecked > 10,
@@ -564,6 +606,29 @@ try {
       const v = await visit(page, href);
       check(`offline ${href}`, v.ok && !/\bnull\b|undefined|Something went wrong/.test(v.text), v.heading);
     }
+  }
+  // Paste a message, offline: the dictionary came down with the course (README §2.4, §6.14).
+  for (const c of available) {
+    const manifest = await page.evaluate((path) => fetch(path).then((r) => r.json()), c.manifest);
+    const sample = manifest.dictionary?.file && SAMPLE_MESSAGES[c.target];
+    if (!sample) continue;
+    const found = await pasteSample(page, c.id, sample);
+    check(`offline, ${c.id}: a pasted message's words are looked up on the device`, found.words >= 10, `${found.words} words`);
+    check(`…and tapping one shows its dictionary form and meaning (${sample.word}, "${sample.meaning}")`,
+      found.sheet.includes(sample.meaning), found.sheet.slice(0, 60));
+    await page.evaluate(() => document.querySelector('.word-sheet [data-action="add-word"]')?.click());
+    check('…and one more tap adds it to your own words',
+      await waitFor(page, (w) => [...document.querySelectorAll('.word-chip.is-added')].some((e) => e.dataset.word === w),
+        sample.word, 10000));
+    await visit(page, `#/${c.id}/mine`);
+    // The text under the furigana: textContent would have the readings in it too (食(た)べる).
+    const mine = await page.$eval('#app', (e) => {
+      const copy = e.cloneNode(true);
+      copy.querySelectorAll('rt, rp').forEach((n) => n.remove());
+      return copy.textContent;
+    }).catch(() => '');
+    check('…as a card, with its meaning filled in', mine.includes(sample.word) && mine.includes(sample.meaning),
+      mine.slice(0, 80));
   }
   const results = await page.evaluate(async (list) => {
     const bad = [];

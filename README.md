@@ -3,7 +3,7 @@
 An offline-first language-learning app for real conversation. It runs in the browser, installs to a phone's home screen, works without a connection, and keeps every bit of progress on the device.
 
 - **Live:** https://shikomisen.github.io/Wayword/
-- **Version:** v16
+- **Version:** v17
 - **Courses:** Japanese for English speakers, and English for Japanese speakers. Indonesian is planned.
 
 This README is the complete description of the project: what it does, how it's built, the content format, the learning rules, storage, audio, offline behaviour, and how to run, test, deploy or port it. It describes what is true now. The design rationale and project history are kept in the maintainer's private notes, outside this repository.
@@ -59,7 +59,7 @@ Controls a course can't use don't appear: the English course has no furigana and
 - Each course card shows where the learner is: cards due today, not started, or coming soon.
 - The speaker defaults to the device language if the app teaches from it, otherwise English, and it's remembered.
 - Inside a course, a slim bar ("‹ Languages · English › Japanese") leads back, and Settings has a Language row.
-- The version shows at the foot of the picker ("Wayword v16") and in Settings → About.
+- The version shows at the foot of the picker ("Wayword v17") and in Settings → About.
 
 ### 2.2 Placement
 
@@ -96,6 +96,18 @@ Learn lists word decks, sentence decks, phrase categories (under the course's to
   - Japanese readings can be typed inline as `{漢字|かんじ}`, or given as a kana reading that the app spreads over the kanji.
   - Audio comes from the device's own on-device voice, or from a recording made on the spot. With neither, the card says **No audio** and gets no Listen card.
   - Nothing is sent to an online service.
+- **Paste a message** (in a course with a dictionary: Japanese). **📋 Paste a message**, on Your own words, takes a whole message, such as a text from a friend.
+  - **Find the words** keeps the message and shows it sentence by sentence, with every word the course's dictionary knows underlined. Particles are quieter, and words already yours are marked.
+  - Tapping a word opens its entry under its sentence:
+    - the dictionary form, with its reading (食べなかった → 食べる, "negative, past");
+    - what kind of word it is, and its meanings to choose from;
+    - whether it's already yours, or also in the course;
+    - other ways to read the same spot (今日 + は, or 今日は, "hello").
+  - **＋ Add to my words** adds it in one tap, with its reading, furigana and chosen meaning filled in, and the sentence it came from as its note. **Edit first** opens the add form, filled in.
+  - **＋ Add this sentence** opens the add form with the sentence and its suggested furigana. The meaning is the learner's to write.
+  - **Your messages** keeps each message on the device, with how many words and sentences were added from it, until it's deleted. Deleting a message keeps the words added from it.
+  - It all works offline: the dictionary downloads with the course (§6.14). A message pasted before that is kept, shown as plain text with a note, and gets its words once the dictionary arrives.
+  - The dictionary's credit is at the foot of these screens and in Settings → About.
 - **Adding and taking out decks:** **Add** puts a deck into study, and its row then shows **✓ In deck**.
   - Tapping it again takes the deck out, after a confirmation. Taking a deck out parks it: its cards keep their progress but stop coming up.
   - Adding it again carries on where it left off.
@@ -197,7 +209,7 @@ Picking a reply doesn't move any card's schedule (§7.6).
 Settings → Your data:
 - **Download a backup** saves one JSON file holding everything the app stores:
   - every course's cards, settings, placement, stats, lesson scores and mastery records;
-  - your own words and their recordings;
+  - your own words and their recordings, and the messages kept by Paste a message;
   - the app-wide preferences.
 
   **Save it elsewhere…** sends the file to the system share sheet, where the device supports it.
@@ -223,7 +235,7 @@ The file format is in §8.4.
 - Connection: Online or Offline, for every course (§2.13)
 - Deck counts
 - Your data
-- About: the version and **Check for updates**. **Update now** appears only once an update is ready
+- About: the version and **Check for updates**. **Update now** appears only once an update is ready. A course with a dictionary also credits it here (§6.14)
 - **Reset this course**, which clears that course only
 
 ### 2.12 Updates
@@ -264,8 +276,9 @@ How it works is in §10.6.
 | Characters | 372: hiragana 104, katakana 116, kanji 70 + 82 | — |
 | Listening | — | 30 lines and 18 sound pairs |
 | Scenarios | 6 | 7 |
+| Dictionary, for Paste a message | 22,645 common words (JMdict, §6.14) | — |
 
-These are the counts for v16. `npm test` prints them as it validates.
+These are the counts for v17. `npm test` prints them as it validates.
 
 **Japanese, for English speakers.** Decks marked \* are starters, added by placement.
 
@@ -336,7 +349,7 @@ All in `js/`. Screens talk to `deck.js`, never to `store.js` directly.
 | `app.js` | Boot, the router, the chrome (course bar, tab bar, update bar), and the Today, Learn, deck, study and Settings screens |
 | `course.js` | The course registry (`content/courses.json`), the active course and app-wide preferences. Entering a course switches storage, interface language and content together, and applies each language's font stack |
 | `content.js` | Loads a course's manifest and files, and gives every item the generic fields (§6.1). Also attaches your own words, and loads scenarios on demand |
-| `deck.js` | The bridge between content, SRS and storage: settings, active and parked decks, adding cards, grading, stats, streak, drill records |
+| `deck.js` | The bridge between content, SRS and storage: settings, active and parked decks, adding cards, grading, stats, streak, drill records, saved messages |
 | `srs.js` | SM-2: the card record, grades, card kinds and directions, queue building |
 | `store.js` | Persistence: an IndexedDB database per namespace, with a localStorage fallback |
 | `i18n.js` | Interface strings (`t()`), plurals, the date locale, and the built-in boot-error strings |
@@ -347,7 +360,9 @@ All in `js/`. Screens talk to `deck.js`, never to `store.js` directly.
 | `home.js` | The language picker (`#/`), the placeholder screen for a planned course, the version footer |
 | `quiz.js` | The placement quiz and its seeding |
 | `study.js` | The flashcard session, in all three directions |
-| `mine.js` | Your own words: the list, the form, the device voice, recordings |
+| `mine.js` | Your own words: the list, the form (which can open filled in, from a pasted message), the device voice, recordings |
+| `paste.js` | Paste a message: the paste screen, saved messages, a message's words and the word sheet, and the dictionary's credit |
+| `dictionary.js` | A course's offline dictionary (§6.14): loading and indexing it, the inflection rules, longest-match lookup, cutting a message into words, readings and suggested furigana. Pure logic, apart from loading the file |
 | `connectors.js` | The lessons list, a lesson, and practice sessions |
 | `drills.js` | Drill construction, session ordering and answer checks. Pure logic |
 | `characters.js` | Character sets: charts, lists, adding and taking out sets |
@@ -375,6 +390,7 @@ Every screen except the picker lives under its course, e.g. `#/en-ja/browse`.
 | `/study/<id>` | Study one deck. It adds the deck, and any of its missing cards, first |
 | `/review` | Review everything due |
 | `/mine`, `/mine/new`, `/mine/<id>` | Your own words: the list, adding one, editing one |
+| `/mine/paste`, `/mine/paste/<id>` | Paste a message, with the saved messages; one message and its words (a course with a dictionary) |
 | `/connectors`, `/connectors/<id>` | The lessons list; a lesson |
 | `/connectors/<id>/practice`, `/connectors/mixed` | Practising one lesson; mixed practice |
 | `/listening`, `/listening/drill` | The listening section; today's drill |
@@ -384,7 +400,7 @@ Every screen except the picker lives under its course, e.g. `#/en-ja/browse`.
 | `/settings`, `/settings/data` | Settings; Settings scrolled to Your data |
 
 How unmatched routes are handled:
-- A section a course doesn't have (characters, connectors, listening) isn't routable, and falls back to Today.
+- A section a course doesn't have (characters, connectors, listening, Paste a message) isn't routable, and falls back to Today.
 - A path with no course (`#/review`, `#/browse`, such as an older home-screen shortcut) opens in the course used last, or Japanese if there isn't one. An unknown path goes to the picker.
 - A planned course shows a placeholder screen.
 - The first visit to a course goes to placement.
@@ -436,13 +452,13 @@ Wayword/
 ├── .nojekyll           tells GitHub Pages to serve the files as they are
 ├── css/styles.css      one stylesheet: dark by default, light under prefers-color-scheme,
 │                       sizes driven by --text-scale
-├── js/                 29 ES modules (§4.2)
+├── js/                 31 ES modules (§4.2)
 ├── content/
 │   ├── courses.json    languages, speakers, courses (§6.2)
 │   ├── ui/             interface strings: en.json, ja.json (§6.11)
 │   ├── ja/             Japanese, for English speakers: manifest.json, 11 phrase categories,
 │   │                   4 character sets, words/ (12), sentences/ (1), connectors/ (16),
-│   │                   scenarios/ (6)
+│   │                   scenarios/ (6), and dictionary.json (JMdict, CC BY-SA 4.0, §6.14)
 │   └── en/             English, for Japanese speakers: manifest.json, 10 phrase categories,
 │                       words/ (8), sentences/ (1), patterns/ (7), connectors/ (23),
 │                       listening/ (2), scenarios/ (7)
@@ -537,6 +553,7 @@ Wayword/
 | `characterSets` | no | `[{ id, order, file, title, icon, script: "hiragana", "katakana" or "kanji", layout: "grid" or "list" }]` |
 | `listening` | no | `[{ id, kind: "replies" or "contrasts", file, title, icon }]` |
 | `scenarios` | no | `[{ id, file, title, icon, category }]`, where `category` is a phrase category id |
+| `dictionary` | no | `{ file, name, owner, ownerUrl, url, licence, licenceUrl, credit }`: the course's offline dictionary, for Paste a message, and the credit its licence asks for (§6.14) |
 | `voice` | no | `{ engine: "google" or "azure", azure: { default, speakers } }` (§9.2) |
 | `generatedFor`, `notes` | no | Free text. The app doesn't use them |
 
@@ -712,7 +729,7 @@ inline:    "{電車|でんしゃ}に"
 - `$locale` sets the date locale. Japanese uses `ja-JP`; with none, the device default applies.
 - A key missing from a dictionary falls back to English, then to the key itself.
 
-English has 367 keys and Japanese 338. The keys only English-taught courses can reach (Reading, the character limit, the romaji notice) have no Japanese version. Four boot-error strings are built into `js/i18n.js`, because they have to work when no content loads.
+English has 438 keys and Japanese 409. The keys only English-taught courses can reach (Reading, the character limit, the romaji notice) have no Japanese version. Paste a message has its strings in both, though only the Japanese course has a dictionary so far. Four boot-error strings are built into `js/i18n.js`, because they have to work when no content loads.
 
 ### 6.12 The content contract (`npm test`)
 
@@ -775,6 +792,15 @@ English has 367 keys and Japanese 338. The keys only English-taught courses can 
   - an unreachable node, or no path that ends;
   - narration not in the learner's language;
   - a missing clip.
+- **Dictionaries** (§6.14):
+  - a manifest `dictionary` whose file is missing;
+  - a file that isn't `schemaVersion` 1, or isn't from the course's language into the speaker's;
+  - fewer than 1,000 entries, or an entry that isn't four strings with a reading and a meaning;
+  - a file of 3 MB or more;
+  - credit fields that differ between the manifest and the file;
+  - no named source release (a file built from a local copy).
+
+  A file more than 35 days old gets a reminder to refresh it, not a failure.
 - **Interface strings:**
   - a key in any dictionary that English lacks;
   - a reachable English key with no translation;
@@ -805,6 +831,30 @@ All of these are content only: no app code.
 `tools/language-pack-test.mjs` proves this works: it adds an Esperanto course in memory and runs placement, the deck, the review queue and grading over it.
 
 **A language to learn from** (a new speaker) also needs `content/ui/<code>.json` and an entry in `speakers`.
+
+### 6.14 Course dictionary
+
+A course can have an offline dictionary, for Paste a message (§2.4). The Japanese course has one; the English course doesn't, yet.
+
+- **The manifest key:** `"dictionary": { file, name, owner, ownerUrl, url, licence, licenceUrl, credit }`. `file` is the dictionary; the rest is the credit its licence asks for, which the screens show without loading the file.
+- **The file:** `content/ja/dictionary.json`, 2.1 MB (0.8 MB gzipped). It downloads with the course and is cached with it (§10.3).
+  - **Its header** repeats the manifest's credit fields, and adds `schemaVersion`, `kind`, `language`, `meaningLanguage`, `source`, `sourceVersion` (the release it was built from), `dictDate`, `fields` and `note`.
+  - **`entries`** has one entry per line, so a refresh shows as a readable diff. Each is `[kanji, kana, pos, senses]`:
+    - `kanji` and `kana`: the spellings and the readings, `|`-separated, common ones first and search-only spellings last;
+    - `pos`: JMdict's word-class codes, space-separated (only those the app uses), plus `uk` for a word usually written in kana;
+    - `senses`: up to 4 meanings, `|`-separated, each up to 4 English glosses joined with `; `.
+- **The source:** JMdict's common words with English glosses, 22,645 entries in the edition of 12/10/2026, as the jmdict-simplified project's `jmdict-eng-common` release. `npm run dictionary` (`tools/make-dictionary.mjs`) downloads the latest release and rebuilds the file. `-- --from <file.json>` builds from a copy already downloaded, but the file then names no release, which `npm test` refuses.
+- **The licence:** the JMdict files are the property of the Electronic Dictionary Research and Development Group (EDRDG), and are used under its licence, Creative Commons Attribution-ShareAlike 4.0. `content/ja/dictionary.json` is built from them and is under the same licence. The licence asks for:
+  - **an acknowledgement on every screen that shows entries,** with links to the source and the licence. The paste screens carry it at the foot, and Settings → About has it too;
+  - **regular updates from the latest release.** Rebuild about once a month with `npm run dictionary`, then release (§11.4). `npm test` prints a reminder once the file is more than 35 days old.
+- **How a message is read** (`js/dictionary.js`, no external library):
+  - **Longest match:** from each position, the longest text (up to 14 characters) that is a dictionary word, as written or inflected. Anything else stays plain text.
+  - **Inflections:** the app's own rules undo an ending a step at a time: ます forms, ない, た, て, たい, たら, たり, ば, the potential, passive and causative, the volitional, the commands 食べろ, しろ and 来い (not a godan verb's, like 書け), ないで, なきゃ, ながら, なさい, ている, ておく, てしまう and ちゃう, すぎる, and the い-adjective forms, for ichidan and godan verbs, する and 来る. A candidate counts only if the dictionary has that word, of the class the rule makes. 食べなかった is 食べる (negative, past); 勉強した is 勉強, a noun that takes する.
+  - **When one spelling is several words:** text in kana prefers a word usually written in kana (に is the particle, not 荷), text in kanji prefers a word's main spelling, and straight after a number, a counter (7時 is read じ, not とき).
+  - **Set phrases:** a phrase ending in a particle (今日は, "hello") gives way to the word before it (今日 + は). The word sheet still offers the phrase.
+  - **Readings** are the text's own (食べなかった is たべなかった; 来ない is こない), spread over the kanji as furigana (§6.10).
+  - **The card's word:** the spelling the message used, if it used kanji; otherwise how the word is usually written.
+- **What it can't do:** find a word that isn't among the common words, or give a whole sentence's meaning. A sentence's meaning is the learner's to write.
 
 ---
 
@@ -1007,6 +1057,7 @@ The `srs` store holds one record per card, shaped as in §7.1.
 | `kanaLog`, `listenLog` | course | `{ sessions, lastDay, lastScript? }`: whether today's drill is done |
 | `readable` | course | `[itemId]`, the items marked "I can read this" |
 | `userItems` | course | `[{ id, kind: "word" or "sentence", target, reading, furigana, meaning, note, audioMode: "recording", "tts" or "none", createdAt }]` |
+| `messages` | course | `[{ id: "m-<time>", text, createdAt, added: [userItem ids] }]`: messages kept by Paste a message, oldest first, and the words added from each |
 | `rec:<id>` | course | A recording, as a `data:` URL |
 | `beforeRestore` | `restore-undo` | `{ at, restored, data: <a backup object> }` |
 
@@ -1107,6 +1158,7 @@ Six Japanese words whose kana spelling is a common homophone (あめ, かえる,
 - **The device voice:** `speechSynthesis`, with a voice in the right language and `localService` true. Only on-device voices are used, and the rate is 0.95 × the chosen speed.
 - **A recording:** `MediaRecorder` captures the microphone, stored as `meta.rec:<id>`, a `data:` URL.
 - **Neither:** the card says "No audio" and gets no listening card.
+- **A word added from a pasted message** (§2.4) gets the device voice if there is one, and otherwise "No audio". A recording can be added by editing the card.
 
 ---
 
@@ -1114,13 +1166,13 @@ Six Japanese words whose kana spelling is a common homophone (あめ, かえる,
 
 ### 10.1 Caches
 
-- **`wayword-<version>`** (`wayword-v16`): one cache per version, holding the app and the courses this device keeps.
+- **`wayword-<version>`** (`wayword-v17`): one cache per version, holding the app and the courses this device keeps.
 - **`wayword-kept`** isn't versioned. It holds `./__kept-courses.json`, the ids of the courses this device keeps, and `./__connection.json`, `{ mode: "online" or "offline" }` (§10.6).
 - **Cleanup:** only caches named `wayword-…`, or with the legacy prefix `nihongo-tabi-…`, are ever deleted, because the `github.io` origin is shared with other sites. A worker deletes only caches from older versions, never a later version's.
 
 ### 10.2 Install
 
-- **What's cached:** `./`, `index.html`, `app.webmanifest`, `css/styles.css`, every module in `js/` and the four icons (the `SHELL` list), plus `content/courses.json` and `content/ui/<lang>.json` for English and every speaker. That's 40 URLs, after which the worker takes over at once (`skipWaiting`).
+- **What's cached:** `./`, `index.html`, `app.webmanifest`, `css/styles.css`, every module in `js/` and the four icons (the `SHELL` list), plus `content/courses.json` and `content/ui/<lang>.json` for English and every speaker. That's 42 URLs, after which the worker takes over at once (`skipWaiting`).
 - **Tolerant loading:** downloads go through `cacheAllTolerant`.
   - It skips files already cached, so an interrupted install resumes.
   - It fetches 12 at a time, with up to 3 attempts and pauses of 1.5 s and then 3 s.
@@ -1146,12 +1198,12 @@ The app waits up to 10 minutes for a keep and 15 seconds for a status.
 **What the worker does** (when it's offline, it only records the ids, step 2):
 1. Re-checks the app's own files (the install list, §10.2) and fetches any that are missing. Normally they're all there, and this costs one lookup each.
 2. Records the ids in `wayword-kept`.
-3. For each kept course, walks the manifest: the manifest itself, every file listed in `categories`, `decks`, `lessons`, `listening`, `characterSets` and `scenarios`, and every `audio` string anywhere in those files.
+3. For each kept course, walks the manifest: the manifest itself, every file listed in `categories`, `decks`, `lessons`, `listening`, `characterSets` and `scenarios`, and every `audio` string anywhere in those files. A course's `dictionary` file is kept too, without being read: it has no clips.
 4. Caches whatever this version lacks, through the same tolerant loader. JSON reads are tried 3 times.
 5. Two asks for the same course share one download, and writes to the record are serialised.
 6. Once the app's files and every kept course are complete, the older versions' caches are deleted.
 
-**Sizes:** the app is 40 URLs, the Japanese course 958 files and the English course 688. That's 1,686 in all, about 20 MB.
+**Sizes:** the app is 42 URLs, the Japanese course 959 files (its dictionary among them) and the English course 688. That's 1,689 in all, about 22 MB.
 
 ### 10.4 Fetch strategy
 
@@ -1235,19 +1287,20 @@ Setup: `npm ci` installs the two dev dependencies, `jsdom` and `puppeteer-core`.
 | `npm run kana` | make-kana | Regenerate the hiragana and katakana files (they're written with LF line endings) |
 | `npm run crossref`, `crossref:check` | crossref-kanji | Link each kanji to where it appears, and list the kanji no set teaches; `:check` writes nothing |
 | `npm run icons` | make-icons | Regenerate the PNG icons (a torii, drawn from rectangles, with no image library) |
+| `npm run dictionary` | make-dictionary | Rebuild the Japanese course's dictionary from the latest JMdict release (§6.14). Run it about monthly, then release |
 | `npm run deploy` | deploy | Release to GitHub Pages (§11.4). `-- --dry-run` stops before the push |
 
 ### 11.3 Test suites
 
 | Suite | What it covers | Checks (14/10/2026) |
 |---|---|---|
-| `tools/selftest.mjs` | The content contract (§6.12), including furigana short enough to fit a line; interface strings; the service-worker shell and version; SRS regressions | 33,869 |
-| `tools/integration-test.mjs` | The real modules, end to end in Node (with a filesystem `fetch` and a localStorage shim): placement, decks, queues, grading, directions, drills, mastery, listening, backups, course isolation, the romaji modes | 260 |
+| `tools/selftest.mjs` | The content contract (§6.12), including furigana short enough to fit a line and the course dictionary; interface strings; the service-worker shell and version; SRS regressions | 34,206 |
+| `tools/integration-test.mjs` | The real modules, end to end in Node (with a filesystem `fetch` and a localStorage shim): placement, decks, queues, grading, directions, drills, mastery, listening, backups, course isolation, the romaji modes, and the dictionary: inflections, lookups, readings, suggested furigana and saved messages | 305 |
 | `tools/language-pack-test.mjs` | An Esperanto course added purely as content, run through placement, the deck, the queue and grading | 13 |
 | `tools/voice-test.mjs` | The generator against a local stand-in for Azure: headers, SSML, voice choice, rate limits, the engine switch, every no-key path | 18 |
-| `tools/render-test.mjs` | Every screen of both courses rendered in jsdom, including whole drill sessions, backup and restore through the real buttons, the reading-aid modes, the connection setting, and the update bar with Not now | 303 |
+| `tools/render-test.mjs` | Every screen of both courses rendered in jsdom, including whole drill sessions, backup and restore through the real buttons, the reading-aid modes, the connection setting, the update bar with Not now, and Paste a message from a message with no dictionary yet to a word added | 336 |
 | `tools/sw-test.mjs` | The real `sw.js` in a sandbox: registration in every boot path; installing, keeping courses, resuming and retrying over a flaky connection; one version replacing another on shared Cache Storage; a connection that never answers, and offline mode | 54 |
-| `tools/browser-check.mjs` | Headless Firefox through a proxy that can cut every connection, or stall them (take each request and never answer): install, per-course downloads, every tab online and offline, text fitting a 320px screen at the largest size, an IndexedDB backup round trip, an update while the app is open (Not now, then Update now from Settings), and opening on a connection that never answers, online and in offline mode. `--upgrade-from <ref>` installs that build first; `--live <url>` checks the deployed site | 58 local, 53 live |
+| `tools/browser-check.mjs` | Headless Firefox through a proxy that can cut every connection, or stall them (take each request and never answer): install, per-course downloads, every tab online and offline, text fitting a 320px screen at the largest size, an IndexedDB backup round trip, an update while the app is open (Not now, then Update now from Settings), opening on a connection that never answers, online and in offline mode, and pasting a message offline, with a word looked up and added. `--upgrade-from <ref>` installs that build first; `--live <url>` checks the deployed site | 64 local, 59 live |
 
 ### 11.4 Releasing
 
@@ -1313,6 +1366,7 @@ A native app (for example in Flutter, or the current web app wrapped in a native
 - **The learning rules:** §7, exactly as written. `npm test`'s SRS checks and the integration suite are a ready-made specification to test a port against.
 - **The backup format:** §8.4. It's the way to carry progress over: a port that imports a Wayword backup keeps every card and record.
 - **The interface strings:** `content/ui/`.
+- **The dictionary and how it's read:** `content/ja/dictionary.json`, under its own licence and credit, and §6.14. `js/dictionary.js` is plain logic apart from one `fetch`, so its rules port line by line, and the integration suite's cases test them.
 
 **Web-specific parts to replace**
 
@@ -1350,6 +1404,11 @@ Native platforms also allow what the web app can't do without a server: schedule
 - **More listening practice, if the English learner's gaps turn out to be hearing:** longer and faster replies, reductions (*gonna, dunno, lemme*) and linking (*pick it up*). This waits until the course has had real use.
 
 **Later (not scheduled)**
+- **Paste a message, next steps:**
+  - a dictionary for the English course: English words with Japanese meanings;
+  - an optional online helper, to pick out useful phrases and give whole sentences their meanings. It would send a message to an AI service when asked, so it waits on a decision about that;
+  - sharing a message straight into the app (Android only: iPhones don't let web apps receive shares);
+  - picking words out of a photo.
 - Native-speaker recordings to replace or supplement the synthesised clips. Playback works the same way, and no app code changes.
 - A native app (§13).
 - Live AI conversation practice, and AI-assisted placement. Both need a backend proxy to hold an API key.

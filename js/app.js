@@ -33,6 +33,7 @@ import { renderCharacterList, renderCharacterSet } from './characters.js';
 import { renderHome, renderPlannedCourse } from './home.js';
 import { runSession } from './study.js';
 import { renderMine, renderMineForm } from './mine.js';
+import { renderPaste, renderMessage, dictionaryCredit } from './paste.js';
 import { renderConnectors, renderLesson, renderPractice } from './connectors.js';
 import { renderKanaDrill, kanaState, refreshKanaAids, SCRIPT_NAMES } from './reading.js';
 import {
@@ -56,6 +57,9 @@ const routes = [
   [/^\/review$/, review],
   [/^\/mine$/, (root) => renderMine(root)],
   [/^\/mine\/new$/, (root) => renderMineForm(root, null)],
+  // Order matters: /mine/paste must match before /mine/:id.
+  [/^\/mine\/paste$/, (root) => renderPaste(root)],
+  [/^\/mine\/paste\/([\w-]+)$/, (root, id) => renderMessage(root, id)],
   [/^\/mine\/([\w-]+)$/, (root, id) => renderMineForm(root, id)],
   // Order matters: /connectors/mixed must match before /connectors/:id.
   [/^\/connectors$/, (root) => renderConnectors(root)],
@@ -141,6 +145,7 @@ async function router() {
     if (/^\/characters/.test(sub) && !features.characters) break;
     if (/^\/connectors/.test(sub) && !features.lessons) break;
     if (/^\/listening/.test(sub) && !features.listening) break;
+    if (/^\/mine\/paste/.test(sub) && !features.dictionary) break;
     const root = clear(app());
     window.scrollTo(0, 0);
     try {
@@ -742,7 +747,7 @@ function emptyStudy(message, backTo) {
 
 async function settings(root, focus = null) {
   const s = await deck.getSettings();
-  const { features, course: current } = await loadContent();
+  const { features, course: current, manifest } = await loadContent();
   const summary = await deck.deckSummary();
   const chars = features.characters ? await deck.characterSummary() : null;
   const textScale = await course.getTextScale();
@@ -815,7 +820,7 @@ async function settings(root, focus = null) {
         : null,
 
       await dataSection(),
-      aboutSection(),
+      aboutSection(manifest.dictionary),
 
       el('button', {
         class: 'btn btn-danger',
@@ -838,8 +843,10 @@ async function settings(root, focus = null) {
  * Which version this is — so a phone that's behind can tell — and a way to
  * fetch the latest. "Update now" is only here once there's an update to
  * take: found by Check for updates, or put off with "Not now" on the bar.
+ * A course with a dictionary also credits it here, as its licence asks
+ * (README §6.14).
  */
-function aboutSection() {
+function aboutSection(dictionary = null) {
   const status = el('p', { class: 'muted small update-status', role: 'status' });
   const reload = el('button', {
     type: 'button', class: 'btn btn-primary', hidden: !updateReady(), dataset: { action: 'reload' },
@@ -869,7 +876,8 @@ function aboutSection() {
     el('p', { class: 'about-version' }, t('about.version', { version: VERSION })),
     updateReady() ? el('p', { class: 'muted small' }, t('update.ready')) : null,
     el('div', { class: 'action-row' }, check, reload),
-    status);
+    status,
+    dictionaryCredit(dictionary, 'about-dictionary'));
 }
 
 /**

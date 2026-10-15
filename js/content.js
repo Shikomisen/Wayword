@@ -279,6 +279,8 @@ export async function loadContent() {
       sentences: decks.some((d) => d.type === 'sentences'),
       lessons: lessons.length > 0,
       listening: listening.some((s) => s.items.length > 0),
+      // An offline dictionary for "Paste a message" (dictionary.js).
+      dictionary: Boolean(manifest.dictionary?.file),
     },
     categories: loaded,
     decks,

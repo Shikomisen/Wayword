@@ -10,6 +10,16 @@
     "ruby": { "chip": "ふりがな", "label": "Furigana", "help": "Kana readings above kanji" },
     "reading": { "chip": "romaji", "label": "Romaji", "help": "Romanised readings under phrases" }
   },
+  "dictionary": {
+    "file": "content/ja/dictionary.json",
+    "name": "JMdict",
+    "owner": "EDRDG",
+    "ownerUrl": "https://www.edrdg.org/",
+    "url": "https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project",
+    "licence": "CC BY-SA 4.0",
+    "licenceUrl": "https://www.edrdg.org/edrdg/licence.html",
+    "credit": "This app uses the JMdict dictionary files. These files are the property of the Electronic Dictionary Research and Development Group, and are used in conformance with the Group's licence."
+  },
   "noteFields": [
     { "field": "registerNotes", "label": "Register" },
     { "field": "animeNote", "label": "From anime?", "style": "anime" },

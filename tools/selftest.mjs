@@ -469,6 +469,37 @@ function validateCourse(course) {
   }
   if (listenCount) console.log(`  ${listenCount} listening items`);
 
+  // The course's dictionary, for Paste a message (README §6.14): it parses,
+  // its entries have the shape dictionary.js reads, and the credit its
+  // licence asks for is the same in the manifest (which the screens show)
+  // as in the file (which carries it with the data).
+  const dict = manifest.dictionary;
+  if (dict && check(`${course.id}: dictionary file exists: ${dict.file}`, Boolean(dict.file) && existsSync(resolve(ROOT, dict.file)))) {
+    const data = readJSON(dict.file);
+    check(`${course.id}: dictionary has schemaVersion 1`, data.schemaVersion === 1);
+    check(`${course.id}: dictionary is from the course's language into the learner's`,
+      data.language === manifest.language && data.meaningLanguage === manifest.speaker, `${data.language} → ${data.meaningLanguage}`);
+    const entries = data.entries || [];
+    check(`${course.id}: dictionary has entries`, entries.length > 1000, `${entries.length} entries`);
+    const bad = entries.filter((e) => !Array.isArray(e) || e.length !== 4 || e.some((x) => typeof x !== 'string') || !e[1] || !e[3]);
+    check(`${course.id}: every dictionary entry is [spellings, readings, word classes, meanings], with a reading and a meaning`,
+      bad.length === 0, JSON.stringify(bad[0]));
+    // It downloads with the course, so it stays small.
+    const mb = statSync(resolve(ROOT, dict.file)).size / 1048576;
+    check(`${course.id}: dictionary is under 3 MB`, mb < 3, `${mb.toFixed(2)} MB`);
+    for (const key of ['name', 'owner', 'ownerUrl', 'url', 'licence', 'licenceUrl', 'credit']) {
+      check(`${course.id}: dictionary ${key} is in the manifest, as in the file`, Boolean(dict[key]) && dict[key] === data[key],
+        `${dict[key]} vs ${data[key]}`);
+    }
+    check(`${course.id}: dictionary names the release it was built from`,
+      Boolean(data.sourceVersion) && !data.sourceVersion.startsWith('local file') && /^\d{4}-\d{2}-\d{2}$/.test(data.dictDate || ''),
+      `${data.sourceVersion} · ${data.dictDate}`);
+    console.log(`  dictionary: ${entries.length} entries, ${mb.toFixed(2)} MB, ${data.name} of ${data.dictDate}`);
+    // The licence asks for the data to be kept up to date: a reminder, not a failure.
+    const days = Math.floor((Date.now() - Date.parse(data.dictDate)) / 86400000);
+    if (days > 35) console.log(`  ! the dictionary is ${days} days old: refresh it with npm run dictionary, then release (README §6.14)`);
+  }
+
   for (const s of manifest.scenarios || []) {
     if (!check(`scenario file exists: ${s.file}`, existsSync(resolve(ROOT, s.file)))) continue;
     const sc = readJSON(s.file);

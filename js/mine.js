@@ -37,6 +37,8 @@ export async function renderMine(root) {
       header(t('mine.title'), t('mine.lede')),
       el('div', { class: 'action-row' },
         el('a', { class: 'btn btn-primary', href: link('/mine/new') }, t('mine.add')),
+        // A message's words, looked up in the course's dictionary (paste.js).
+        content.features.dictionary ? el('a', { class: 'btn', href: link('/mine/paste') }, t('mine.paste')) : null,
         items.length
           ? el('a', { class: 'btn', href: link(`/study/${USER_DECK}`) }, t('category.study'))
           : null,
@@ -62,10 +64,23 @@ function mineCard(item, s) {
 
 /* ---------- add / edit ---------- */
 
+// A new card's fields, filled in elsewhere (a word or sentence from a pasted
+// message) and picked up by the next "add" form: { target, reading, meaning,
+// note, kind, messageId, returnTo }.
+let draft = null;
+
+/** Open the add form with these fields already filled in. */
+export function startNewWith(fields) {
+  draft = fields;
+  go('/mine/new');
+}
+
 export async function renderMineForm(root, id) {
   const content = await loadContent();
   const existing = id ? (await deck.getUserItems()).find((x) => x.id === id) : null;
   if (id && !existing) { go('/mine'); return; }
+  const filled = id ? null : draft;
+  draft = null;
 
   const lang = content.course.target;
   const langName = languageName(lang, content.course.speaker);
@@ -88,17 +103,21 @@ export async function renderMineForm(root, id) {
 
   // Show it the way it was typed: plain text plus a reading, or — if the
   // readings were written inline — the {漢字|かんじ} form.
-  const targetValue = !existing ? ''
+  const targetValue = !existing ? filled?.target || ''
     : existing.reading || !existing.furigana ? existing.target : existing.furigana;
   const fTarget = field('target', langName, t('mine.fieldTargetHelp'), { value: targetValue, lang });
   const fReading = lang === 'ja'
-    ? field('reading', t('mine.fieldReading'), t('mine.fieldReadingHelp'), { value: existing?.reading || '', lang })
+    ? field('reading', t('mine.fieldReading'), t('mine.fieldReadingHelp'), { value: existing?.reading || filled?.reading || '', lang })
     : null;
-  const fMeaning = field('meaning', t('mine.fieldMeaning'), null, { value: existing?.meaning || '', lang: content.course.speaker });
-  const fNote = field('note', t('mine.fieldNote'), t('mine.fieldNoteHelp'), { value: existing?.note || '', multiline: true });
+  const fMeaning = field('meaning', t('mine.fieldMeaning'), null,
+    { value: existing?.meaning || filled?.meaning || '', lang: content.course.speaker });
+  const fNote = field('note', t('mine.fieldNote'), t('mine.fieldNoteHelp'),
+    { value: existing?.note || filled?.note || '', multiline: true });
   const value = (f) => f?.querySelector('input, textarea')?.value.trim() || '';
+  // Back to where the fields came from (a pasted message), or to the list.
+  const back = filled?.returnTo || '/mine';
 
-  let kind = existing?.kind || null; // decided from the text unless chosen
+  let kind = existing?.kind || filled?.kind || null; // decided from the text unless chosen
   const kindRow = el('div', { class: 'segmented kind-choice', role: 'group' });
   const drawKind = () => {
     const current = kind || guessKind(value(fTarget));
@@ -189,8 +208,9 @@ export async function renderMineForm(root, id) {
     };
     await deck.setRecording(item.id, recording);
     await deck.saveUserItem(item);
+    if (filled?.messageId) await deck.markAdded(filled.messageId, item.id);
     toast(t('mine.saved'));
-    go('/mine');
+    go(back);
   }
 
   async function remove() {
@@ -202,7 +222,7 @@ export async function renderMineForm(root, id) {
 
   root.append(
     el('div', { class: 'screen mine-form' },
-      el('a', { class: 'back-link', href: link('/mine') }, t('study.back')),
+      el('a', { class: 'back-link', href: link(back) }, t('study.back')),
       header(existing ? t('mine.editTitle') : t('mine.newTitle')),
       el('form', {
         class: 'entry-form', onsubmit: (e) => { e.preventDefault(); save(); },

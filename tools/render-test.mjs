@@ -567,6 +567,133 @@ check('mixed practice draws drills from the lessons practised so far',
 await goTo('#/en-ja/');
 check('Today offers the connectors', text().includes('1 of 16 practised'));
 
+console.log('\n5e. Paste a message');
+
+// A screen that reads the dictionary (2 MB) takes more turns than goTo allows for.
+const until = async (fn, n = 400) => { for (let i = 0; i < n && !fn(); i++) await tick(); return Boolean(fn()); };
+const wordChip = (word) => $$('.word-chip').find((c) => c.dataset.word === word);
+const PASTED = '今日は忙しかった！\n明日、駅で会いたいな。「行く？」と聞いたら、うん。';
+
+await goTo('#/en-ja/mine');
+check('Your own words offers Paste a message, in a course with a dictionary',
+  $('a.btn[href="#/en-ja/mine/paste"]')?.textContent === '📋 Paste a message');
+
+// First as on a phone that hasn't got the dictionary yet: offline, before the course finished downloading.
+unreachable = 'dictionary.json';
+await goTo('#/en-ja/mine/paste');
+check('the paste screen asks for a message, with none saved yet',
+  $('h1')?.textContent === 'Paste a message' && Boolean($('.paste-input')) && Boolean($('.empty-messages')));
+check('…and credits the dictionary, with links to it, its owner and its licence',
+  $('.dict-credit')?.textContent.includes('Electronic Dictionary Research and Development Group') &&
+    $$('.dict-credit a').map((a) => a.textContent).join('|') === 'JMdict|EDRDG|Licence: CC BY-SA 4.0',
+  $$('.dict-credit a').map((a) => a.textContent).join('|'));
+$('.entry-form').dispatchEvent(new window.Event('submit', { cancelable: true }));
+await until(() => $('.error')?.textContent);
+check('an empty paste is turned away', $('.error')?.textContent === 'Paste a message first.' &&
+  location.hash === '#/en-ja/mine/paste', $('.error')?.textContent);
+$('.paste-input').value = PASTED;
+$('.entry-form').dispatchEvent(new window.Event('submit', { cancelable: true }));
+await until(() => /\/mine\/paste\/m-/.test(location.hash) && $('.message-text'));
+const messageHash = location.hash;
+check('Find the words keeps the message and opens it', /^#\/en-ja\/mine\/paste\/m-[a-z0-9]+$/.test(messageHash), messageHash);
+check('…and with no dictionary on the device yet, says so, and shows the message as it is',
+  Boolean($('.paste-missing')) && $$('.word-chip').length === 0 && !$('.dict-credit') &&
+    $('.message-text')?.textContent.includes('今日は忙しかった！'), $('.paste-missing')?.textContent);
+check('a message is split into its sentences: a question in quotes stays inside the one quoting it',
+  $$('.sentence-line').map((s) => s.textContent).join(' / ') === '今日は忙しかった！ / 明日、駅で会いたいな。 / 「行く？」と聞いたら、うん。',
+  $$('.sentence-line').map((s) => s.textContent).join(' / '));
+unreachable = null;
+await goTo(messageHash);
+await until(() => $$('.word-chip').length > 0);
+check('once the dictionary is there, the same message shows its words', $$('.word-chip').length >= 10 && !$('.paste-missing'),
+  `${$$('.word-chip').length} words`);
+check('particles are quieter than the words around them',
+  wordChip('は')?.classList.contains('is-minor') && !wordChip('忙しい')?.classList.contains('is-minor'));
+check('words carry furigana, as the course setting says', wordChip('今日')?.querySelector('rt')?.textContent === 'きょう',
+  wordChip('今日')?.textContent);
+check('a word in an inflected form is labelled with its dictionary form',
+  wordChip('忙しい')?.getAttribute('aria-label') === '忙しかった, 忙しい', wordChip('忙しい')?.getAttribute('aria-label'));
+
+wordChip('忙しい').click();
+await until(() => $('.word-sheet'));
+check('tapping a word opens its dictionary entry, under its sentence',
+  $('.word-sheet')?.previousElementSibling === wordChip('忙しい')?.closest('.message-sentence') &&
+    wordChip('忙しい').getAttribute('aria-expanded') === 'true');
+check('…in its dictionary form, with its reading, its kind and its meanings',
+  baseText($('.sheet-word')) === '忙しい' && $('.sheet-word rt')?.textContent === 'いそが' &&
+    $('.word-sheet .pos')?.textContent === 'い-adjective' && $$('.sense')[0]?.textContent.startsWith('busy'),
+  $('.word-sheet')?.textContent.slice(0, 80));
+check('…and the form the message used, and what made it', $('.sheet-form')?.textContent === '忙しかった → 忙しい · past',
+  $('.sheet-form')?.textContent);
+$$('.sense')[1]?.click();
+await tick();
+check('a meaning can be chosen', $$('.sense')[1]?.classList.contains('is-on') && !$$('.sense')[0]?.classList.contains('is-on'));
+$$('.sense')[0]?.click();
+await tick();
+$('.word-sheet [data-action="add-word"]').click();
+await until(() => wordChip('忙しい')?.classList.contains('is-added'));
+const fromPaste = (await deck.getUserItems()).find((u) => u.target === '忙しい');
+check('Add puts it in your own words, filled in: reading, furigana, meaning, and the sentence it came from',
+  fromPaste?.kind === 'word' && fromPaste.reading === 'いそがしい' && fromPaste.furigana === '{忙|いそが}しい' &&
+    fromPaste.meaning.startsWith('busy') && fromPaste.note === 'From a message: 今日は忙しかった！' && fromPaste.audioMode === 'none',
+  JSON.stringify(fromPaste));
+check('…as a card to study', Boolean(fromPaste && (await deck.getCard(fromPaste.id))));
+check('…marks the word as yours, in the message and in its entry',
+  wordChip('忙しい')?.classList.contains('is-added') && $('.word-sheet .sheet-status')?.textContent === '✓ In your own words' &&
+    $('.word-sheet [data-action="add-word"]')?.disabled === true);
+check('…and counts it on the message', $('.lede')?.textContent.endsWith('1 added to your own words'), $('.lede')?.textContent);
+
+wordChip('今日').click();
+await until(() => baseText($('.sheet-word')) === '今日');
+check('a word that could be read another way offers that too (今日は, "hello")',
+  $$('.alt-chip').some((c) => c.textContent.includes('hello')), $$('.alt-chip').map((c) => c.textContent).join(' | '));
+$$('.alt-chip').find((c) => c.textContent.includes('hello'))?.click();
+await tick();
+check('…and choosing it shows that entry instead', /hello/.test($$('.sense')[0]?.textContent || ''), baseText($('.sheet-word')));
+wordChip('今日').click();
+await tick();
+check('tapping the word again closes its entry', !$('.word-sheet') && !wordChip('今日')?.classList.contains('is-picked'));
+
+wordChip('駅').click();
+await until(() => $('.word-sheet'));
+$('.word-sheet [data-action="edit-word"]').click();
+await until(() => location.hash === '#/en-ja/mine/new' && $('#mine-target'));
+check('Edit first opens the add form, filled in from the dictionary',
+  $('#mine-target')?.value === '駅' && $('#mine-reading')?.value === 'えき' && $('#mine-meaning')?.value === 'railway station; train station' &&
+    $('#mine-note')?.value === 'From a message: 明日、駅で会いたいな。' && $('.kind-choice .segment.is-on')?.dataset.kind === 'word',
+  `${$('#mine-target')?.value} · ${$('#mine-reading')?.value} · ${$('#mine-meaning')?.value}`);
+check('…with its way back to the message', $('.back-link')?.getAttribute('href') === messageHash, $('.back-link')?.getAttribute('href'));
+fill('#mine-meaning', 'station');
+$('.entry-form').dispatchEvent(new window.Event('submit', { cancelable: true }));
+await until(() => location.hash === messageHash && $$('.word-chip').length > 0);
+check('saving goes back to the message, with that word marked as yours too',
+  location.hash === messageHash && wordChip('駅')?.classList.contains('is-added') && $('.lede')?.textContent.endsWith('2 added to your own words'),
+  `${location.hash} · ${$('.lede')?.textContent}`);
+
+$$('.add-sentence')[1]?.click();
+await until(() => location.hash === '#/en-ja/mine/new' && $('#mine-target'));
+check('Add this sentence opens the form with the sentence and its readings, leaving the meaning to you',
+  $('#mine-target')?.value === '{明日|あした}、{駅|えき}で{会|あ}いたいな。' && $('#mine-meaning')?.value === '' &&
+    $('.kind-choice .segment.is-on')?.dataset.kind === 'sentence', $('#mine-target')?.value);
+
+await goTo('#/en-ja/mine/paste');
+check('the message is listed under Your messages, with how many were added from it',
+  $$('.saved-messages .row-card').length === 1 && $('.saved-messages .row-title')?.textContent === '今日は忙しかった！' &&
+    $('.saved-messages .row-sub')?.textContent.endsWith('2 added to your own words'), $('.saved-messages .row-card')?.textContent);
+await goTo(messageHash);
+await until(() => $('[data-action="delete-message"]'));
+$('[data-action="delete-message"]').click();
+await until(() => location.hash === '#/en-ja/mine/paste' && $('.empty-messages'));
+check('deleting the message forgets it', location.hash === '#/en-ja/mine/paste' && Boolean($('.empty-messages')));
+const keptWords = (await deck.getUserItems()).filter((u) => ['忙しい', '駅'].includes(u.target));
+check('…but keeps the words added from it', keptWords.length === 2);
+
+await goTo('#/en-ja/settings');
+check('Settings → About credits the dictionary too', $('.about-dictionary')?.textContent.includes('JMdict') &&
+  $$('.about-dictionary a').length === 3);
+// As before this section: the later ones count what's in the deck.
+for (const u of keptWords) await deck.deleteUserItem(u.id);
+
 console.log('\n6. Scenarios');
 
 await goTo('#/en-ja/scenarios');
@@ -1193,6 +1320,11 @@ check('only the toggles English has (auto-play, card types), no furigana/romaji'
   $$('input[type="checkbox"]:not([data-dir])').length === 1 && $$('input[data-dir]').length === 3 && !$('.furigana-mode'));
 check('no character-cards control', $$('input[type="number"]').length === 1);
 check('deck summary has no Characters line', !text().includes('Characters:'));
+check('no dictionary credit: this course has no dictionary', !$('.about-dictionary'));
+await goTo('#/ja-en/mine');
+check('…so Your own words has no Paste a message', $('h1')?.textContent === '自分の単語' && !$('a[href="#/ja-en/mine/paste"]'));
+await goTo('#/ja-en/mine/paste');
+check('…and its address goes to Today', location.hash === '#/ja-en/' && $('h1')?.textContent === '今日', location.hash);
 
 console.log('\n11. Old links');
 
