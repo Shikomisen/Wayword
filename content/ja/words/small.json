@@ -7,6 +7,7 @@
     {
       "id": "w-kore",
       "japanese": "これ",
+      "romaji": "kore",
       "english": "this (one)",
       "pos": "pronoun",
       "usage": "これ near me, それ near you, あれ over there.",
@@ -17,6 +18,7 @@
     {
       "id": "w-sore",
       "japanese": "それ",
+      "romaji": "sore",
       "english": "that (one, near you)",
       "pos": "pronoun",
       "audio": "audio/ja/words/w-sore.mp3",
@@ -26,6 +28,7 @@
     {
       "id": "w-are",
       "japanese": "あれ",
+      "romaji": "are",
       "english": "that (one, over there)",
       "pos": "pronoun",
       "audio": "audio/ja/words/w-are.mp3",
@@ -35,6 +38,7 @@
     {
       "id": "w-koko",
       "japanese": "ここ",
+      "romaji": "koko",
       "english": "here",
       "pos": "pronoun",
       "audio": "audio/ja/words/w-koko.mp3",
@@ -44,6 +48,7 @@
     {
       "id": "w-doko",
       "japanese": "どこ",
+      "romaji": "doko",
       "english": "where",
       "pos": "question",
       "audio": "audio/ja/words/w-doko.mp3",
@@ -54,6 +59,7 @@
       "id": "w-dare",
       "japanese": "誰",
       "furigana": "{誰|だれ}",
+      "romaji": "dare",
       "english": "who",
       "pos": "question",
       "audio": "audio/ja/words/w-dare.mp3",
@@ -64,6 +70,7 @@
       "id": "w-nani",
       "japanese": "何",
       "furigana": "{何|なに}",
+      "romaji": "nani",
       "english": "what",
       "pos": "question",
       "usage": "Read なん before です, の and counters: 何ですか, 何時.",
@@ -74,6 +81,7 @@
     {
       "id": "w-itsu",
       "japanese": "いつ",
+      "romaji": "itsu",
       "english": "when",
       "pos": "question",
       "audio": "audio/ja/words/w-itsu.mp3",
@@ -83,6 +91,7 @@
     {
       "id": "w-dou",
       "japanese": "どう",
+      "romaji": "dō",
       "english": "how; how about",
       "pos": "question",
       "usage": "どう？ alone asks \"how was it?\" or \"how about it?\".",
@@ -93,6 +102,7 @@
     {
       "id": "w-doushite",
       "japanese": "どうして",
+      "romaji": "dōshite",
       "english": "why",
       "pos": "question",
       "usage": "なんで is the casual \"why\"; なぜ is written or formal.",
@@ -103,6 +113,7 @@
     {
       "id": "w-totemo",
       "japanese": "とても",
+      "romaji": "totemo",
       "english": "very",
       "pos": "adverb",
       "usage": "すごく is the casual spoken \"very\".",
@@ -113,6 +124,7 @@
     {
       "id": "w-chotto",
       "japanese": "ちょっと",
+      "romaji": "chotto",
       "english": "a little, a bit",
       "pos": "adverb",
       "usage": "Also the polite \"no\": ちょっと… trailing off means \"that's a bit difficult\".",
@@ -124,6 +136,7 @@
       "id": "w-zenbu",
       "japanese": "全部",
       "furigana": "{全部|ぜんぶ}",
+      "romaji": "zenbu",
       "english": "all, everything",
       "pos": "noun",
       "audio": "audio/ja/words/w-zenbu.mp3",
@@ -134,6 +147,7 @@
       "id": "w-issho",
       "japanese": "一緒に",
       "furigana": "{一緒|いっしょ}に",
+      "romaji": "issho ni",
       "english": "together",
       "pos": "adverb",
       "audio": "audio/ja/words/w-issho.mp3",
@@ -144,6 +158,7 @@
       "id": "w-hitori",
       "japanese": "一人で",
       "furigana": "{一人|ひとり}で",
+      "romaji": "hitori de",
       "english": "alone, on your own",
       "pos": "adverb",
       "audio": "audio/ja/words/w-hitori.mp3",
@@ -153,6 +168,7 @@
     {
       "id": "w-mata",
       "japanese": "また",
+      "romaji": "mata",
       "english": "again",
       "pos": "adverb",
       "audio": "audio/ja/words/w-mata.mp3",

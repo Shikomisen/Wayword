@@ -15,6 +15,8 @@ import * as deck from './deck.js';
 import * as srs from './srs.js';
 import * as audio from './audio.js';
 import { t, fill } from './i18n.js';
+import * as levels from './levels.js';
+import { levelChooser } from './shared.js';
 
 export const ANSWERS = {
   KNOWN: 'known',        // could say it unprompted
@@ -35,7 +37,10 @@ const WEIGHT = { known: 1, seen: 0.5, unknown: 0 };
  * spend week one on it.
  */
 export async function buildPlacementSet() {
-  const { categories, characterSets } = await loadContent();
+  const content = await loadContent();
+  // A level marked `placement: false` (Intermediate) isn't sampled, so the quiz stays short.
+  const categories = content.categories.filter((c) => levels.sampled(content, c.level));
+  const characterSets = content.characterSets.filter((s) => levels.sampled(content, s.level));
   const picked = [];
 
   const twoEnds = (pool, meta) => {
@@ -64,7 +69,7 @@ export async function buildPlacementSet() {
  * Per README §7.4: cards answered "known" enter at a later interval;
  * "recognised" and "unknown" start at the normal first interval.
  */
-export async function applyPlacement(items, answers) {
+export async function applyPlacement(items, answers, { level = null } = {}) {
   const perCategory = {};
 
   for (const item of items) {
@@ -107,10 +112,18 @@ export async function applyPlacement(items, answers) {
   }
 
   // README §7.4: start with a few categories, not all of them — the review
-  // load adds up. The manifest marks which ones are `starter`s.
-  const { categories, decks } = await loadContent();
-  for (const d of [...categories, ...(decks || [])].filter((c) => c.starter)) {
-    await deck.activateCategory(d.id);
+  // load adds up. The manifest marks which ones are `starter`s. A course with
+  // levels starts the learner at one (README §7.10), and adds that level's.
+  const content = await loadContent();
+  if (levels.levelsOf(content).length) {
+    result.suggested = levels.suggestedLevel(content, overall);
+    result.level = level || result.suggested;
+    await deck.savePlacement(result);
+    await deck.moveToLevel(result.level);
+  } else {
+    for (const d of [...content.categories, ...(content.decks || [])].filter((c) => c.starter)) {
+      await deck.activateCategory(d.id);
+    }
   }
 
   return result;
@@ -205,10 +218,31 @@ export async function renderPlacement(root, { onDone }) {
   async function renderResults() {
     clear(view);
     view.append(el('div', { class: 'loading' }, t('quiz.building')));
+    drawResults(await applyPlacement(items, answers));
+  }
 
-    const result = await applyPlacement(items, answers);
-    const { categories, characterSets } = await loadContent();
+  /**
+   * The results, and — in a course with levels — where to start: the level
+   * the answers suggest, and the others to pick instead (README §7.10).
+   */
+  async function drawResults(result) {
+    const content = await loadContent();
+    const categories = content.categories.filter((c) => levels.sampled(content, c.level));
+    const characterSets = content.characterSets.filter((s) => levels.sampled(content, s.level));
     const summary = await deck.deckSummary();
+    const level = levels.levelById(content, result.level);
+    const startAt = level
+      ? el('section', { class: 'placement-level' },
+          el('h2', { class: 'section-title' }, t('quiz.levelTitle')),
+          el('p', {}, t('quiz.levelSuggested', { level: levels.levelById(content, result.suggested)?.title || level.title })),
+          levelChooser(content, level.id, async (id) => {
+            await deck.changeStartLevel(result.level, id);
+            result.level = id;
+            await deck.savePlacement(result);
+            drawResults(result);
+          }),
+          el('p', { class: 'muted small level-description' }, level.description))
+      : null;
 
     const resultRow = (entry) => {
       const b = result.perCategory[entry.id];
@@ -229,6 +263,7 @@ export async function renderPlacement(root, { onDone }) {
         el('h1', {}, t('quiz.built')),
         el('p', { class: 'lede' },
           t('quiz.summary', { label: levelLabel(result.overall), pct: Math.round(result.overall * 100) })),
+        startAt,
 
         el('h2', { class: 'section-title' }, t('quiz.phrases')),
         el('div', { class: 'result-grid' }, categories.map(resultRow)),

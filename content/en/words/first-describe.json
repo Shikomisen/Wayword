@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "id": "words-first-describe",
+  "title": "形容詞・色",
+  "description": "大きい・新しい・うれしいなど、ものや気持ちを表す言葉と、色の名前。",
+  "items": [
+    {
+      "id": "w-big",
+      "english": "big",
+      "japanese": "大きい",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-big.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-good",
+      "english": "good",
+      "japanese": "いい、おいしい、上手な",
+      "pos": "adjective",
+      "registerNotes": "This is good!（これおいしい！）",
+      "audio": "audio/en/words/w-good.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bad",
+      "english": "bad",
+      "japanese": "悪い",
+      "pos": "adjective",
+      "registerNotes": "Not bad.（悪くないね、まあまあ）",
+      "audio": "audio/en/words/w-bad.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-new",
+      "english": "new",
+      "japanese": "新しい",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-new.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-old",
+      "english": "old",
+      "japanese": "古い、年をとった",
+      "pos": "adjective",
+      "registerNotes": "How old are you?（何歳ですか）",
+      "audio": "audio/en/words/w-old.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-young",
+      "english": "young",
+      "japanese": "若い",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-young.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-long",
+      "english": "long",
+      "japanese": "長い",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-long.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-short",
+      "english": "short",
+      "japanese": "短い、背が低い",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-short.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-happy",
+      "english": "happy",
+      "japanese": "うれしい、幸せな",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-happy.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sad",
+      "english": "sad",
+      "japanese": "悲しい",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-sad.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tired",
+      "english": "tired",
+      "japanese": "疲れた、眠い",
+      "pos": "adjective",
+      "registerNotes": "I’m tired.（疲れました）",
+      "audio": "audio/en/words/w-tired.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hungry",
+      "english": "hungry",
+      "japanese": "お腹がすいた",
+      "pos": "adjective",
+      "registerNotes": "I’m hungry.（お腹すいた）",
+      "audio": "audio/en/words/w-hungry.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-thirsty",
+      "english": "thirsty",
+      "japanese": "のどがかわいた",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-thirsty.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-busy",
+      "english": "busy",
+      "japanese": "忙しい、混んでいる",
+      "pos": "adjective",
+      "registerNotes": "The café is busy.（カフェが混んでいる）",
+      "audio": "audio/en/words/w-busy.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-easy",
+      "english": "easy",
+      "japanese": "簡単な",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-easy.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-difficult",
+      "english": "difficult",
+      "japanese": "難しい",
+      "pos": "adjective",
+      "registerNotes": "会話では hard もよく使います：It’s hard.",
+      "audio": "audio/en/words/w-difficult.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-beautiful",
+      "english": "beautiful",
+      "japanese": "美しい、きれいな",
+      "pos": "adjective",
+      "pitfallNote": "「清潔」の意味の「きれい」は clean。",
+      "audio": "audio/en/words/w-beautiful.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-fast",
+      "english": "fast",
+      "japanese": "速い",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-fast.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-slow",
+      "english": "slow",
+      "japanese": "遅い、ゆっくりの",
+      "pos": "adjective",
+      "registerNotes": "Slowly, please.（ゆっくりお願いします）",
+      "audio": "audio/en/words/w-slow.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-red",
+      "english": "red",
+      "japanese": "赤い、赤",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-red.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-blue",
+      "english": "blue",
+      "japanese": "青い、青",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-blue.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-green",
+      "english": "green",
+      "japanese": "緑の、緑",
+      "pos": "adjective",
+      "pitfallNote": "信号の「青」は英語では green。",
+      "audio": "audio/en/words/w-green.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-white",
+      "english": "white",
+      "japanese": "白い、白",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-white.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-black",
+      "english": "black",
+      "japanese": "黒い、黒",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-black.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yellow",
+      "english": "yellow",
+      "japanese": "黄色い、黄色",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-yellow.mp3",
+      "tags": [
+        "形容詞"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

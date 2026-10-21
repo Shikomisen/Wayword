@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-past-irregular",
+  "connector": "went, ate…",
+  "gloss": "形が変わる過去形",
+  "title": "went, ate, saw — 形が変わる過去形",
+  "pattern": "go → went / eat → ate / see → saw / have → had / come → came / buy → bought",
+  "explanation": "よく使う動詞ほど、過去形が -ed ではなく形ごと変わります：go → went、eat → ate、see → saw、have → had、come → came、buy → bought。数は多くないので、よく使うものから1つずつ覚えましょう。",
+  "natural": "What did you do yesterday? ―― I went to the beach.（昨日は何したの？ ―― ビーチに行ったよ）",
+  "stiff": "goed、eated のように -ed を付けるのは×。did の後では元の形に戻ります：Did you go?（Did you went? は×）。",
+  "examples": [
+    {
+      "id": "gx-past-irregular-1",
+      "english": "I went to the beach yesterday.",
+      "japanese": "昨日ビーチに行きました。",
+      "chunks": [
+        {
+          "t": "I ",
+          "w": "w-i"
+        },
+        {
+          "t": "went to the beach ",
+          "w": "w-go"
+        },
+        {
+          "t": "yesterday.",
+          "w": "w-yesterday"
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "went",
+        "after": " to the beach yesterday.",
+        "options": [
+          "went",
+          "goed",
+          "go"
+        ],
+        "why": "go の過去形は went。"
+      },
+      "audio": "audio/en/grammar/gx-past-irregular-1.mp3",
+      "tags": [
+        "文法",
+        "went, ate…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-past-irregular-2",
+      "english": "We ate sushi for lunch.",
+      "japanese": "お昼にお寿司を食べました。",
+      "chunks": [
+        {
+          "t": "We ",
+          "w": "w-we"
+        },
+        {
+          "t": "ate sushi ",
+          "w": "w-eat"
+        },
+        {
+          "t": "for lunch."
+        }
+      ],
+      "gap": {
+        "before": "We ",
+        "answer": "ate",
+        "after": " sushi for lunch.",
+        "options": [
+          "ate",
+          "eated",
+          "eat"
+        ],
+        "why": "eat の過去形は ate。"
+      },
+      "audio": "audio/en/grammar/gx-past-irregular-2.mp3",
+      "tags": [
+        "文法",
+        "went, ate…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-past-irregular-3",
+      "english": "I saw your sister at the shop.",
+      "japanese": "お店であなたのお姉さんを見かけました。",
+      "chunks": [
+        {
+          "t": "I saw ",
+          "w": "w-see"
+        },
+        {
+          "t": "your sister ",
+          "w": "w-sister"
+        },
+        {
+          "t": "at the shop."
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "saw",
+        "after": " your sister at the shop.",
+        "options": [
+          "saw",
+          "seed",
+          "see"
+        ],
+        "why": "see の過去形は saw。"
+      },
+      "audio": "audio/en/grammar/gx-past-irregular-3.mp3",
+      "tags": [
+        "文法",
+        "went, ate…"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-past-irregular-4",
+      "english": "She bought a new phone.",
+      "japanese": "彼女は新しいスマホを買いました。",
+      "chunks": [
+        {
+          "t": "She ",
+          "w": "w-she"
+        },
+        {
+          "t": "bought a new ",
+          "w": "w-buy"
+        },
+        {
+          "t": "phone.",
+          "w": "w-phone"
+        }
+      ],
+      "gap": {
+        "before": "She ",
+        "answer": "bought",
+        "after": " a new phone.",
+        "options": [
+          "bought",
+          "buyed",
+          "buys"
+        ],
+        "why": "buy の過去形は bought。"
+      },
+      "audio": "audio/en/grammar/gx-past-irregular-4.mp3",
+      "tags": [
+        "文法",
+        "went, ate…"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

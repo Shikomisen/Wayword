@@ -10,6 +10,7 @@ import { USER_DECK } from './content.js';
 import { link } from './course.js';
 import { t } from './i18n.js';
 import { el, toast } from './render.js';
+import { levelById } from './levels.js';
 
 /**
  * Add a deck to study, and say what happened: how many cards it added — or,
@@ -62,6 +63,62 @@ export function lessonsCopy(content) {
     lede: copy.lessonsLede || t('connectors.lede'),
     icon: copy.lessonsIcon || '🔗',
   };
+}
+
+/**
+ * The level buttons (README §7.10): one per level, the chosen one marked.
+ * `mine` also marks the learner's own level, when another is being shown.
+ */
+export function levelChooser(content, selected, onPick, { mine = null } = {}) {
+  return el('div', { class: 'segmented level-choice', role: 'group', 'aria-label': t('learn.levels') },
+    (content.levels || []).map((l) => el('button', {
+      type: 'button',
+      class: `segment${l.id === selected ? ' is-on' : ''}${l.id === mine ? ' is-mine' : ''}`,
+      'aria-pressed': String(l.id === selected),
+      dataset: { level: l.id },
+      onclick: () => { if (l.id !== selected) onPick(l.id); },
+    },
+    el('span', { class: 'level-icon', 'aria-hidden': 'true' }, l.icon || ''),
+    el('span', { class: 'level-name' }, l.title))));
+}
+
+// The level that Learn and the lessons list are showing, per course: the
+// learner's own until another is picked there (README §7.10).
+const levelView = { course: null, level: null };
+
+/** The level a screen shows: the one picked this visit, else the learner's own, else the first. */
+export function shownLevel(content, mine) {
+  if (levelView.course === content.course.id && levelById(content, levelView.level)) return levelView.level;
+  return mine || content.levels[0]?.id || null;
+}
+
+/**
+ * The level buttons above Learn and the lessons list, the shown level's
+ * description and, when it isn't the learner's own, a way to make it theirs.
+ * `redraw` re-renders the screen after a change.
+ */
+export function levelHead(content, shown, mine, redraw) {
+  const level = levelById(content, shown);
+  if (!level) return null;
+  return el('section', { class: 'level-head' },
+    levelChooser(content, shown, (id) => {
+      levelView.course = content.course.id;
+      levelView.level = id;
+      redraw();
+    }, { mine }),
+    el('p', { class: 'muted small level-description' }, level.description),
+    mine && shown !== mine
+      ? el('div', { class: 'action-row level-switch' },
+          el('span', { class: 'muted small' }, t('learn.notYourLevel', { level: levelById(content, mine)?.title || mine })),
+          el('button', {
+            class: 'btn btn-small', type: 'button',
+            onclick: async () => {
+              await deck.setLevel(shown);
+              toast(t('learn.levelSet', { level: level.title }));
+              redraw();
+            },
+          }, t('learn.makeMyLevel')))
+      : null);
 }
 
 /** A sentence's words, each a link to its word deck — learned words, seen in context. */

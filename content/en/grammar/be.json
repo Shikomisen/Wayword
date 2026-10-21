@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-be",
+  "connector": "am / is / are",
+  "gloss": "〜です（be動詞）",
+  "title": "am, is, are — 〜です（be動詞）",
+  "pattern": "I am … / You are … / He・She・It is …",
+  "explanation": "「〜です」にあたるのが be動詞。主語によって形が変わります：I am（私は〜です）、you・we・they は are、he・she・it は is。会話ではふつう短くして、I’m、you’re、he’s、it’s と言います。日本語とちがって、主語（I や it）は省略できません。",
+  "natural": "自己紹介、気持ち、場所を言う時にいつも使います：I’m Yuki.（ユキです）、I’m tired.（疲れました）、It’s here.（ここにあります）。",
+  "stiff": "会話で毎回 I am とフルで言うと、かたく、強調しているように聞こえます。ふだんは I’m。また「私は学生です」を I student. と言うのはまちがいで、be動詞が必要です：I’m a student.",
+  "examples": [
+    {
+      "id": "gx-be-1",
+      "english": "I’m a student in Auckland.",
+      "japanese": "オークランドで学生をしています。",
+      "chunks": [
+        {
+          "t": "I’m ",
+          "w": "w-i"
+        },
+        {
+          "t": "a student ",
+          "w": "w-student"
+        },
+        {
+          "t": "in Auckland."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "I’m",
+        "after": " a student in Auckland.",
+        "options": [
+          "I’m",
+          "I",
+          "I is"
+        ],
+        "why": "主語の後には be動詞が必要。I ＋ am で I’m。"
+      },
+      "audio": "audio/en/grammar/gx-be-1.mp3",
+      "tags": [
+        "文法",
+        "am / is / are"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-be-2",
+      "english": "She’s my sister.",
+      "japanese": "（彼女は）私の姉です。",
+      "chunks": [
+        {
+          "t": "She’s ",
+          "w": "w-she"
+        },
+        {
+          "t": "my "
+        },
+        {
+          "t": "sister.",
+          "w": "w-sister"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "She’s",
+        "after": " my sister.",
+        "options": [
+          "She’s",
+          "She are",
+          "She"
+        ],
+        "why": "he・she・it には is（She is → She’s）。"
+      },
+      "audio": "audio/en/grammar/gx-be-2.mp3",
+      "tags": [
+        "文法",
+        "am / is / are"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-be-3",
+      "english": "We’re from Japan.",
+      "japanese": "私たちは日本から来ました。",
+      "chunks": [
+        {
+          "t": "We’re ",
+          "w": "w-we"
+        },
+        {
+          "t": "from "
+        },
+        {
+          "t": "Japan."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "We’re",
+        "after": " from Japan.",
+        "options": [
+          "We’re",
+          "We is",
+          "We"
+        ],
+        "why": "we・you・they には are（We are → We’re）。"
+      },
+      "audio": "audio/en/grammar/gx-be-3.mp3",
+      "tags": [
+        "文法",
+        "am / is / are"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-be-4",
+      "english": "It’s really hot today.",
+      "japanese": "今日は本当に暑いです。",
+      "chunks": [
+        {
+          "t": "It’s ",
+          "w": "w-it"
+        },
+        {
+          "t": "really "
+        },
+        {
+          "t": "hot ",
+          "w": "w-hot"
+        },
+        {
+          "t": "today.",
+          "w": "w-today"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "It’s",
+        "after": " really hot today.",
+        "options": [
+          "It’s",
+          "It",
+          "Is"
+        ],
+        "why": "天気や気温の文は It’s で始めます。日本語のように主語を省略できません。"
+      },
+      "audio": "audio/en/grammar/gx-be-4.mp3",
+      "tags": [
+        "文法",
+        "am / is / are"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

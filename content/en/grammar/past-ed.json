@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-past-ed",
+  "connector": "-ed",
+  "gloss": "〜した（過去形）",
+  "title": "-ed — 〜した（過去形）",
+  "pattern": "動詞 ＋ -ed（work → worked、live → lived、stop → stopped）",
+  "explanation": "過去のことは過去形で言います。多くの動詞は -ed を付けるだけ：work → worked、watch → watched。e で終わる語は -d だけ（live → lived）。主語が he・she でも形は同じです。発音は3通り：worked（ト）、lived（ド）、wanted（イド）。",
+  "natural": "週末や昨日のことを話す時に：I watched a movie last night.（昨夜、映画を見ました）。",
+  "stiff": "yesterday や last week があるのに現在形のままにしがちです：Yesterday I work. は×、Yesterday I worked.。",
+  "examples": [
+    {
+      "id": "gx-past-ed-1",
+      "english": "I watched a movie last night.",
+      "japanese": "昨夜、映画を見ました。",
+      "chunks": [
+        {
+          "t": "I ",
+          "w": "w-i"
+        },
+        {
+          "t": "watched a movie ",
+          "w": "w-watch"
+        },
+        {
+          "t": "last night.",
+          "w": "w-night"
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "watched",
+        "after": " a movie last night.",
+        "options": [
+          "watched",
+          "watch",
+          "watching"
+        ],
+        "why": "last night は過去：watch → watched。"
+      },
+      "audio": "audio/en/grammar/gx-past-ed-1.mp3",
+      "tags": [
+        "文法",
+        "-ed"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-past-ed-2",
+      "english": "We stayed at home yesterday.",
+      "japanese": "昨日は家にいました。",
+      "chunks": [
+        {
+          "t": "We ",
+          "w": "w-we"
+        },
+        {
+          "t": "stayed at home "
+        },
+        {
+          "t": "yesterday.",
+          "w": "w-yesterday"
+        }
+      ],
+      "gap": {
+        "before": "We ",
+        "answer": "stayed",
+        "after": " at home yesterday.",
+        "options": [
+          "stayed",
+          "stay",
+          "stays"
+        ],
+        "why": "yesterday は過去：stay → stayed。"
+      },
+      "audio": "audio/en/grammar/gx-past-ed-2.mp3",
+      "tags": [
+        "文法",
+        "-ed"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-past-ed-3",
+      "english": "She cooked dinner for us.",
+      "japanese": "彼女が夕食を作ってくれました。",
+      "chunks": [
+        {
+          "t": "She ",
+          "w": "w-she"
+        },
+        {
+          "t": "cooked dinner ",
+          "w": "w-cook"
+        },
+        {
+          "t": "for us."
+        }
+      ],
+      "gap": {
+        "before": "She ",
+        "answer": "cooked",
+        "after": " dinner for us.",
+        "options": [
+          "cooked",
+          "cooks",
+          "cook"
+        ],
+        "why": "もうしたことなので過去形 cooked。"
+      },
+      "audio": "audio/en/grammar/gx-past-ed-3.mp3",
+      "tags": [
+        "文法",
+        "-ed"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-past-ed-4",
+      "english": "I called my mum on Sunday.",
+      "japanese": "日曜日に母に電話しました。",
+      "chunks": [
+        {
+          "t": "I called ",
+          "w": "w-call"
+        },
+        {
+          "t": "my mum ",
+          "w": "w-mother"
+        },
+        {
+          "t": "on Sunday.",
+          "w": "w-sunday"
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "called",
+        "after": " my mum on Sunday.",
+        "options": [
+          "called",
+          "call",
+          "calling"
+        ],
+        "why": "日曜日（過去）にしたこと：called。"
+      },
+      "audio": "audio/en/grammar/gx-past-ed-4.mp3",
+      "tags": [
+        "文法",
+        "-ed"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

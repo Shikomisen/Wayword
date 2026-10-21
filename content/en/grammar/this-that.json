@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-this-that",
+  "connector": "this / that",
+  "gloss": "これ・それ・あれ",
+  "title": "this, that, these, those — これ・それ・あれ",
+  "pattern": "this（近く・1つ）/ that（離れた所・1つ）/ these（近く・複数）/ those（離れた所・複数）",
+  "explanation": "近くのものは this（複数なら these）、離れたものは that（複数なら those）。名詞の前にも置けます：this one（これ）、that shop（あの店）、these shoes（この靴）。日本語の「それ」と「あれ」は、どちらも that です。",
+  "natural": "お店で指さしながら：Can I have this one?（これをください）、How much are these?（これはいくらですか）。",
+  "stiff": "these・those の後の名詞は複数形にします：these shoe ではなく these shoes。be動詞も are です（These are…）。",
+  "examples": [
+    {
+      "id": "gx-this-that-1",
+      "english": "This is my friend, Ken.",
+      "japanese": "こちらは友だちのケンです。",
+      "chunks": [
+        {
+          "t": "This ",
+          "w": "w-this"
+        },
+        {
+          "t": "is my friend, ",
+          "w": "w-friend"
+        },
+        {
+          "t": "Ken."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "This",
+        "after": " is my friend, Ken.",
+        "options": [
+          "This",
+          "These",
+          "Those"
+        ],
+        "why": "人を紹介する時は This is…（こちらは〜）。1人なので this。"
+      },
+      "audio": "audio/en/grammar/gx-this-that-1.mp3",
+      "tags": [
+        "文法",
+        "this / that"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-this-that-2",
+      "english": "How much are these?",
+      "japanese": "これ（ら）はいくらですか。",
+      "chunks": [
+        {
+          "t": "How much ",
+          "w": "w-how-much"
+        },
+        {
+          "t": "are "
+        },
+        {
+          "t": "these?"
+        }
+      ],
+      "gap": {
+        "before": "How much are ",
+        "answer": "these",
+        "after": "?",
+        "options": [
+          "these",
+          "this",
+          "that"
+        ],
+        "why": "are なので複数：these。"
+      },
+      "audio": "audio/en/grammar/gx-this-that-2.mp3",
+      "tags": [
+        "文法",
+        "this / that"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-this-that-3",
+      "english": "That shop is new.",
+      "japanese": "あの店は新しいです。",
+      "chunks": [
+        {
+          "t": "That shop "
+        },
+        {
+          "t": "is "
+        },
+        {
+          "t": "new.",
+          "w": "w-new"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "That",
+        "after": " shop is new.",
+        "options": [
+          "That",
+          "Those",
+          "These"
+        ],
+        "why": "離れた所にある1つの店：that。"
+      },
+      "audio": "audio/en/grammar/gx-this-that-3.mp3",
+      "tags": [
+        "文法",
+        "this / that"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-this-that-4",
+      "english": "Are those your shoes?",
+      "japanese": "あれはあなたの靴ですか。",
+      "chunks": [
+        {
+          "t": "Are "
+        },
+        {
+          "t": "those "
+        },
+        {
+          "t": "your shoes?",
+          "w": "w-shoes"
+        }
+      ],
+      "gap": {
+        "before": "Are ",
+        "answer": "those",
+        "after": " your shoes?",
+        "options": [
+          "those",
+          "that",
+          "this"
+        ],
+        "why": "離れた所にある複数のもの（shoes）：those。"
+      },
+      "audio": "audio/en/grammar/gx-this-that-4.mp3",
+      "tags": [
+        "文法",
+        "this / that"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

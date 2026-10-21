@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "id": "words-first-little",
+  "title": "小さな言葉",
+  "description": "I, you, this, what など、文を作るのに欠かせない短い言葉。",
+  "items": [
+    {
+      "id": "w-i",
+      "english": "I",
+      "japanese": "私",
+      "pos": "pronoun",
+      "registerNotes": "いつも大文字の I。文のどこにあっても I。",
+      "audio": "audio/en/words/w-i.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-you",
+      "english": "you",
+      "japanese": "あなた、あなたたち",
+      "pos": "pronoun",
+      "registerNotes": "1人にも複数にも使います。",
+      "audio": "audio/en/words/w-you.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-he",
+      "english": "he",
+      "japanese": "彼、その男性",
+      "pos": "pronoun",
+      "pitfallNote": "「彼氏」の意味はありません。彼氏は boyfriend。",
+      "audio": "audio/en/words/w-he.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-she",
+      "english": "she",
+      "japanese": "彼女、その女性",
+      "pos": "pronoun",
+      "pitfallNote": "「恋人の彼女」の意味はありません。恋人は girlfriend。",
+      "audio": "audio/en/words/w-she.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-it",
+      "english": "it",
+      "japanese": "それ",
+      "pos": "pronoun",
+      "registerNotes": "天気・時間・距離の文の主語にもなります：It’s hot.（暑い）、It’s ten o’clock.",
+      "audio": "audio/en/words/w-it.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-we",
+      "english": "we",
+      "japanese": "私たち",
+      "pos": "pronoun",
+      "audio": "audio/en/words/w-we.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-they",
+      "english": "they",
+      "japanese": "彼ら、それら",
+      "pos": "pronoun",
+      "registerNotes": "男性か女性かわからない1人を指す時にも they を使います。",
+      "audio": "audio/en/words/w-they.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-this",
+      "english": "this",
+      "japanese": "これ、この",
+      "pos": "pronoun",
+      "audio": "audio/en/words/w-this.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-that",
+      "english": "that",
+      "japanese": "それ、あれ、その、あの",
+      "pos": "pronoun",
+      "registerNotes": "日本語の「それ」と「あれ」の両方にあたります。",
+      "audio": "audio/en/words/w-that.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-here",
+      "english": "here",
+      "japanese": "ここ、ここに",
+      "pos": "adverb",
+      "registerNotes": "Here you go.（はい、どうぞ）",
+      "audio": "audio/en/words/w-here.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-there",
+      "english": "there",
+      "japanese": "そこ、あそこ",
+      "pos": "adverb",
+      "audio": "audio/en/words/w-there.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-what",
+      "english": "what",
+      "japanese": "何",
+      "pos": "question",
+      "audio": "audio/en/words/w-what.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-where",
+      "english": "where",
+      "japanese": "どこ",
+      "pos": "question",
+      "audio": "audio/en/words/w-where.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-when",
+      "english": "when",
+      "japanese": "いつ",
+      "pos": "question",
+      "audio": "audio/en/words/w-when.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-who",
+      "english": "who",
+      "japanese": "誰",
+      "pos": "question",
+      "audio": "audio/en/words/w-who.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-why",
+      "english": "why",
+      "japanese": "なぜ、どうして",
+      "pos": "question",
+      "audio": "audio/en/words/w-why.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-how",
+      "english": "how",
+      "japanese": "どう、どうやって",
+      "pos": "question",
+      "registerNotes": "How are you?（元気？）、How do I get there?（どうやって行けばいいですか）",
+      "audio": "audio/en/words/w-how.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yes",
+      "english": "yes",
+      "japanese": "はい",
+      "pos": "interjection",
+      "registerNotes": "友だちとの会話では yeah、yep もよく使います。",
+      "audio": "audio/en/words/w-yes.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-no",
+      "english": "no",
+      "japanese": "いいえ",
+      "pos": "interjection",
+      "registerNotes": "断る時は No, thank you.（いいえ、けっこうです）とやわらかく。",
+      "audio": "audio/en/words/w-no.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-very",
+      "english": "very",
+      "japanese": "とても",
+      "pos": "adverb",
+      "registerNotes": "very good（とてもいい）。ニュージーランドでは really や heaps もよく使います。",
+      "audio": "audio/en/words/w-very.mp3",
+      "tags": [
+        "小さな言葉"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

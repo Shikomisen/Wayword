@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "id": "words-first-verbs",
+  "title": "はじめての動詞",
+  "description": "毎日のことを話すための、いちばん基本の動詞。",
+  "items": [
+    {
+      "id": "w-eat",
+      "english": "eat",
+      "japanese": "食べる",
+      "pos": "verb",
+      "registerNotes": "過去形は ate。",
+      "audio": "audio/en/words/w-eat.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-drink",
+      "english": "drink",
+      "japanese": "飲む",
+      "pos": "verb",
+      "registerNotes": "過去形は drank。a drink は「飲み物、（お酒の）一杯」。",
+      "audio": "audio/en/words/w-drink.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sleep",
+      "english": "sleep",
+      "japanese": "眠る、寝る",
+      "pos": "verb",
+      "registerNotes": "過去形は slept。「寝る（ベッドに入る）」は go to bed。",
+      "audio": "audio/en/words/w-sleep.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-wake-up",
+      "english": "wake up",
+      "japanese": "目が覚める、起きる",
+      "pos": "phrase",
+      "registerNotes": "過去形は woke up。ベッドから出るのは get up。",
+      "audio": "audio/en/words/w-wake-up.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-live",
+      "english": "live",
+      "japanese": "住む、暮らす",
+      "pos": "verb",
+      "registerNotes": "I live in Auckland.（オークランドに住んでいます）",
+      "audio": "audio/en/words/w-live.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-work",
+      "english": "work",
+      "japanese": "働く、仕事",
+      "pos": "verb",
+      "registerNotes": "「仕事」の意味では数えません：I have work today.（今日は仕事です）",
+      "audio": "audio/en/words/w-work.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-study",
+      "english": "study",
+      "japanese": "勉強する",
+      "pos": "verb",
+      "audio": "audio/en/words/w-study.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-read",
+      "english": "read",
+      "japanese": "読む",
+      "pos": "verb",
+      "registerNotes": "過去形も read ですが、発音は「レッド」。",
+      "audio": "audio/en/words/w-read.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-write",
+      "english": "write",
+      "japanese": "書く",
+      "pos": "verb",
+      "registerNotes": "過去形は wrote。",
+      "audio": "audio/en/words/w-write.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-watch",
+      "english": "watch",
+      "japanese": "（テレビや試合を）見る",
+      "pos": "verb",
+      "registerNotes": "動いているものをじっと見る時は watch：watch TV, watch a movie。",
+      "audio": "audio/en/words/w-watch.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-listen",
+      "english": "listen",
+      "japanese": "聞く",
+      "pos": "verb",
+      "registerNotes": "何かを聞く時は listen to：listen to music。",
+      "audio": "audio/en/words/w-listen.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-see",
+      "english": "see",
+      "japanese": "見える、見る、会う",
+      "pos": "verb",
+      "registerNotes": "過去形は saw。See you!（またね）",
+      "audio": "audio/en/words/w-see.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-have",
+      "english": "have",
+      "japanese": "持っている、ある、食べる",
+      "pos": "verb",
+      "registerNotes": "he, she の時は has。have lunch（お昼を食べる）。",
+      "audio": "audio/en/words/w-have.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-do",
+      "english": "do",
+      "japanese": "する",
+      "pos": "verb",
+      "registerNotes": "he, she の時は does、過去形は did。",
+      "audio": "audio/en/words/w-do.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-play",
+      "english": "play",
+      "japanese": "遊ぶ、（スポーツを）する、演奏する",
+      "pos": "verb",
+      "registerNotes": "play tennis（テニスをする）、play the piano（ピアノをひく）。",
+      "audio": "audio/en/words/w-play.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cook",
+      "english": "cook",
+      "japanese": "料理する",
+      "pos": "verb",
+      "pitfallNote": "a cook は「料理人」。「料理する器具」は a cooker。",
+      "audio": "audio/en/words/w-cook.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-walk",
+      "english": "walk",
+      "japanese": "歩く",
+      "pos": "verb",
+      "registerNotes": "go for a walk（散歩に行く）。",
+      "audio": "audio/en/words/w-walk.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-run",
+      "english": "run",
+      "japanese": "走る",
+      "pos": "verb",
+      "registerNotes": "過去形は ran。go running（ランニングに行く）。",
+      "audio": "audio/en/words/w-run.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sit",
+      "english": "sit",
+      "japanese": "座る",
+      "pos": "verb",
+      "registerNotes": "sit down（座る）。過去形は sat。",
+      "audio": "audio/en/words/w-sit.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-stand",
+      "english": "stand",
+      "japanese": "立つ",
+      "pos": "verb",
+      "registerNotes": "stand up（立ち上がる）。",
+      "audio": "audio/en/words/w-stand.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-give",
+      "english": "give",
+      "japanese": "あげる、渡す",
+      "pos": "verb",
+      "registerNotes": "過去形は gave。",
+      "audio": "audio/en/words/w-give.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-send",
+      "english": "send",
+      "japanese": "送る",
+      "pos": "verb",
+      "registerNotes": "過去形は sent。send a message（メッセージを送る）。",
+      "audio": "audio/en/words/w-send.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-call",
+      "english": "call",
+      "japanese": "電話する、呼ぶ",
+      "pos": "verb",
+      "registerNotes": "I’ll call you later.（後で電話するね）",
+      "audio": "audio/en/words/w-call.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-learn",
+      "english": "learn",
+      "japanese": "学ぶ、覚える",
+      "pos": "verb",
+      "registerNotes": "study は「勉強する」、learn は「身につける」。",
+      "audio": "audio/en/words/w-learn.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-know",
+      "english": "know",
+      "japanese": "知っている、わかる",
+      "pos": "verb",
+      "registerNotes": "I don’t know.（わかりません、知りません）。k は発音しません。",
+      "audio": "audio/en/words/w-know.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

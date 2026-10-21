@@ -8,6 +8,7 @@
       "id": "s-01",
       "japanese": "明日、友達に会います。",
       "furigana": "{明日|あした}、{友達|ともだち}に{会|あ}います。",
+      "romaji": "ashita, tomodachi ni aimasu",
       "english": "I'm meeting a friend tomorrow.",
       "register": "polite",
       "chunks": [
@@ -32,6 +33,7 @@
       "id": "s-02",
       "japanese": "毎日、日本語を勉強しています。",
       "furigana": "{毎日|まいにち}、{日本語|にほんご}を{勉強|べんきょう}しています。",
+      "romaji": "mainichi, nihongo o benkyō shite imasu",
       "english": "I study Japanese every day.",
       "register": "polite",
       "chunks": [
@@ -56,6 +58,7 @@
       "id": "s-03",
       "japanese": "今日はちょっと忙しいです。",
       "furigana": "{今日|きょう}はちょっと{忙|いそが}しいです。",
+      "romaji": "kyō wa chotto isogashii desu",
       "english": "I'm a bit busy today.",
       "register": "polite",
       "chunks": [
@@ -80,6 +83,7 @@
       "id": "s-04",
       "japanese": "晩ご飯、何がいい？",
       "furigana": "{晩|ばん}ご{飯|はん}、{何|なに}がいい？",
+      "romaji": "bangohan, nani ga ii?",
       "english": "What do you feel like for dinner?",
       "register": "casual",
       "chunks": [
@@ -104,6 +108,7 @@
       "id": "s-05",
       "japanese": "コーヒーを飲みませんか。",
       "furigana": "{コーヒー|こーひー}を{飲|の}みませんか。",
+      "romaji": "kōhī o nomimasen ka",
       "english": "Would you like some coffee?",
       "register": "polite",
       "chunks": [
@@ -125,6 +130,7 @@
       "id": "s-06",
       "japanese": "駅まで歩いて十分です。",
       "furigana": "{駅|えき}まで{歩|ある}いて{十分|じゅっぷん}です。",
+      "romaji": "eki made aruite juppun desu",
       "english": "It's ten minutes' walk to the station.",
       "register": "polite",
       "chunks": [
@@ -148,6 +154,7 @@
       "id": "s-07",
       "japanese": "雨が降っていますね。",
       "furigana": "{雨|あめ}が{降|ふ}っていますね。",
+      "romaji": "ame ga futte imasu ne",
       "english": "It's raining, isn't it.",
       "register": "polite",
       "chunks": [
@@ -168,6 +175,7 @@
       "id": "s-08",
       "japanese": "週末は何をしますか。",
       "furigana": "{週末|しゅうまつ}は{何|なに}をしますか。",
+      "romaji": "shūmatsu wa nani o shimasu ka",
       "english": "What are you doing at the weekend?",
       "register": "polite",
       "chunks": [
@@ -192,6 +200,7 @@
       "id": "s-09",
       "japanese": "一緒に映画を見よう。",
       "furigana": "{一緒|いっしょ}に{映画|えいが}を{見|み}よう。",
+      "romaji": "issho ni eiga o miyō",
       "english": "Let's watch a film together.",
       "register": "casual",
       "chunks": [
@@ -216,6 +225,7 @@
       "id": "s-10",
       "japanese": "電気を消してください。",
       "furigana": "{電気|でんき}を{消|け}してください。",
+      "romaji": "denki o keshite kudasai",
       "english": "Please turn off the light.",
       "register": "polite",
       "chunks": [
@@ -235,6 +245,7 @@
       "id": "s-11",
       "japanese": "頭が痛いです。",
       "furigana": "{頭|あたま}が{痛|いた}いです。",
+      "romaji": "atama ga itai desu",
       "english": "I have a headache.",
       "register": "polite",
       "chunks": [
@@ -254,6 +265,7 @@
       "id": "s-12",
       "japanese": "家族はみんな元気です。",
       "furigana": "{家族|かぞく}はみんな{元気|げんき}です。",
+      "romaji": "kazoku wa minna genki desu",
       "english": "My family are all well.",
       "register": "polite",
       "chunks": [
@@ -278,6 +290,7 @@
       "id": "s-13",
       "japanese": "後で電話するね。",
       "furigana": "{後|あと}で{電話|でんわ}するね。",
+      "romaji": "ato de denwa suru ne",
       "english": "I'll call you later.",
       "register": "casual",
       "chunks": [
@@ -298,6 +311,7 @@
       "id": "s-14",
       "japanese": "まだ分かりません。",
       "furigana": "まだ{分|わ}かりません。",
+      "romaji": "mada wakarimasen",
       "english": "I still don't understand.",
       "register": "polite",
       "chunks": [
@@ -318,6 +332,7 @@
       "id": "s-15",
       "japanese": "この店は安いです。",
       "furigana": "この{店|みせ}は{安|やす}いです。",
+      "romaji": "kono mise wa yasui desu",
       "english": "This shop is cheap.",
       "register": "polite",
       "chunks": [
@@ -341,6 +356,7 @@
       "id": "s-16",
       "japanese": "誕生日はいつですか。",
       "furigana": "{誕生日|たんじょうび}はいつですか。",
+      "romaji": "tanjōbi wa itsu desu ka",
       "english": "When is your birthday?",
       "register": "polite",
       "chunks": [

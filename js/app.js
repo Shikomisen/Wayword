@@ -26,7 +26,9 @@ import * as backup from './backup.js';
 import { el, clear, phraseBlock, notesBlock, tagRow, audioButton, toast, politeBlock } from './render.js';
 import {
   header, stat, playItem, studySettings, toggleStrip, deckHref, wordLinks, sentenceLinks, lessonsCopy, addDeck, removeDeck,
+  shownLevel, levelHead,
 } from './shared.js';
+import { levelsUpTo } from './levels.js';
 import { renderPlacement } from './quiz.js';
 import { renderScenarioList, renderScenario } from './scenario.js';
 import { renderCharacterList, renderCharacterSet } from './characters.js';
@@ -318,7 +320,9 @@ async function today(root) {
   const q = await deck.queue();
   const allDecks = [...decks, ...categories, ...content.lessons, byCategory.get(USER_DECK)].filter(Boolean);
   const active = allDecks.filter((d) => s.activeCategories.includes(d.id));
-  const noWords = features.words && !decks.some((d) => d.type === 'words' && s.activeCategories.includes(d.id));
+  // With levels, the level row's next step does what the word-deck nudge did.
+  const level = features.levels ? await deck.levelState() : null;
+  const noWords = !level && features.words && !decks.some((d) => d.type === 'words' && s.activeCategories.includes(d.id));
 
   root.append(
     el('div', { class: 'screen' },
@@ -340,6 +344,8 @@ async function today(root) {
             el('p', { class: 'muted' }, t('today.nothingDueHint')),
             el('button', { class: 'btn btn-primary', onclick: () => go('/browse') }, t('today.browse'))),
 
+      level ? levelBlock(level, summary, s) : null,
+
       noWords
         ? el('a', { class: 'row-card nudge', href: link('/browse') },
             el('span', { class: 'row-icon' }, '🧩'),
@@ -352,7 +358,7 @@ async function today(root) {
       // The other daily things — the kana drill, a connector — come straight
       // after the reviews, above the list of decks.
       features.characters ? await charactersBlock() : null,
-      features.lessons ? await connectorsBlock(content) : null,
+      features.lessons ? await connectorsBlock(content, level) : null,
       features.listening ? await listeningBlock() : null,
       await backupNudge(summary, content),
 
@@ -369,20 +375,91 @@ async function today(root) {
   );
 }
 
-/** The lessons (Connectors, phrase patterns…): how many have been practised, and the way in. */
-async function connectorsBlock(content) {
+/**
+ * Your level (README §7.10): how far through it you are, and what to do next.
+ * When the new cards run low (fewer than a day's limit wait), the next deck
+ * of the level is offered; once the level is learned, the next level is.
+ */
+function levelBlock(info, summary, s) {
+  const { level, progress, next, after } = info;
+  const pct = progress.total ? Math.round((progress.learned / progress.total) * 100) : 0;
+  const lowOnNew = summary.new < s.newPerDay;
+
+  const moveUp = progress.ready && after
+    ? el('div', { class: 'row-card nudge level-up', dataset: { level: after.id } },
+        el('span', { class: 'row-icon' }, after.icon || '⬆️'),
+        el('span', { class: 'row-body' },
+          el('span', { class: 'row-title' }, t('level.readyTitle', { level: after.title })),
+          el('span', { class: 'row-sub' }, t('level.readySub', { pct, level: level.title }))),
+        el('button', {
+          class: 'btn btn-small', type: 'button',
+          onclick: async () => {
+            await deck.moveToLevel(after.id);
+            toast(t('level.movedUp', { level: after.title }));
+            router();
+          },
+        }, t('level.moveUp')))
+    : null;
+
+  const nextStep = !moveUp && next && lowOnNew
+    ? el('div', { class: 'row-card nudge next-step', dataset: { deck: next.id } },
+        el('span', { class: 'row-icon' }, next.icon || '📄'),
+        el('a', { class: 'row-body', href: link(`/category/${next.id}`) },
+          el('span', { class: 'row-title' }, t('level.next', { title: next.title })),
+          el('span', { class: 'row-sub' }, countLine(next))),
+        el('button', {
+          class: 'btn btn-small', type: 'button',
+          onclick: async (e) => {
+            e.preventDefault();
+            await addDeck(next);
+            router();
+          },
+        }, t('browse.add')))
+    : null;
+
+  return el('section', { class: 'level-today' },
+    el('h2', { class: 'section-title' }, t('level.title')),
+    el('a', { class: 'row-card level-row', href: link('/browse'), dataset: { level: level.id } },
+      el('span', { class: 'row-icon' }, level.icon || '🧭'),
+      el('span', { class: 'row-body' },
+        el('span', { class: 'row-title' }, level.title),
+        el('span', { class: 'row-sub' }, [
+          t('level.learned', { n: progress.learned, total: progress.total }),
+          progress.lessons ? t('level.lessons', { n: progress.practised, total: progress.lessons }) : null,
+        ].filter(Boolean).join(' · ')),
+        el('span', { class: 'bar' }, el('span', { class: 'bar-fill', style: `width:${pct}%` }))),
+      el('span', { class: 'row-chev' }, '›')),
+    moveUp,
+    nextStep);
+}
+
+/**
+ * The lessons (Connectors, phrase patterns…): how many have been practised,
+ * and the way in. With levels, the way in is the level's next lesson, until
+ * every one has been practised.
+ */
+async function connectorsBlock(content, level = null) {
   const stats = await deck.getLessonStats();
-  const practised = content.lessons.filter((l) => stats[l.id]).length;
   const lessons = lessonsCopy(content);
+  const upNext = level?.nextLesson || null;
+  const practised = level ? level.progress.practised : content.lessons.filter((l) => stats[l.id]).length;
+  const total = level ? level.progress.lessons : content.lessons.length;
+  const anyPractised = content.lessons.some((l) => stats[l.id]);
+  const href = upNext ? `/connectors/${upNext.id}` : anyPractised ? '/connectors/mixed' : '/connectors';
   return el('section', {},
     el('h2', { class: 'section-title' }, lessons.title),
-    el('a', { class: 'row-card', href: link(practised ? '/connectors/mixed' : '/connectors') },
-      el('span', { class: 'row-icon' }, lessons.icon),
+    el('a', { class: 'row-card', href: link(href) },
+      upNext
+        ? el('span', { class: 'connector-mark', lang: content.course.target }, upNext.connector)
+        : el('span', { class: 'row-icon' }, lessons.icon),
       el('span', { class: 'row-body' },
-        el('span', { class: 'row-title' }, practised ? t('connectors.mixed') : t('connectors.start')),
-        el('span', { class: 'row-sub' }, t('connectors.practisedCount', { n: practised, total: content.lessons.length })),
+        el('span', { class: 'row-title' },
+          upNext ? t('level.nextLesson', { title: upNext.gloss }) : anyPractised ? t('connectors.mixed') : t('connectors.start')),
+        el('span', { class: 'row-sub' }, level
+          ? t('level.lessons', { n: practised, total })
+          : t('connectors.practisedCount', { n: practised, total })),
         el('span', { class: 'bar' },
-          el('span', { class: 'bar-fill', style: `width:${Math.round((practised / content.lessons.length) * 100)}%` }))),
+          el('span', { class: 'bar-fill', style: `width:${total ? Math.round((practised / total) * 100) : 0}%` }))),
       el('span', { class: 'row-chev' }, '›')));
 }
 
@@ -529,8 +606,15 @@ async function categoryRow(d, content) {
 
 async function learn(root) {
   const content = await loadContent();
-  const { categories, decks, manifest } = content;
+  const { manifest } = content;
   const s = await deck.getSettings();
+
+  // With levels, Learn shows one level at a time.
+  const mine = content.features.levels ? await deck.getLevel() : null;
+  const shown = content.features.levels ? shownLevel(content, mine) : null;
+  const inView = (d) => !shown || d.level === shown;
+  const decks = content.decks.filter(inView);
+  const categories = content.categories.filter(inView);
 
   const words = decks.filter((d) => d.type === 'words');
   const sentences = decks.filter((d) => d.type === 'sentences');
@@ -544,12 +628,13 @@ async function learn(root) {
   root.append(
     el('div', { class: 'screen' },
       header(t('browse.title'), t('browse.lede')),
+      shown ? levelHead(content, shown, mine, () => router()) : null,
       section(t('learn.words'), words.map((d) => browseRow(d, s)), 'kind-title'),
       section(t('learn.sentences'), sentences.map((d) => browseRow(d, s)), 'kind-title'),
-      words.length || sentences.length ? el('h2', { class: 'kind-title' }, t('learn.phrases')) : null,
+      (words.length || sentences.length) && categories.length ? el('h2', { class: 'kind-title' }, t('learn.phrases')) : null,
       groups.map((group) => section(group.title, categories.filter((c) => c.group === group.id).map((c) => browseRow(c, s)))),
       section(t('learn.mine'), [mineRow(content)], 'kind-title'),
-      content.features.listening ? section(t('listening.title'), [listeningRow(content)], 'kind-title') : null,
+      content.features.listening ? section(t('listening.title'), [listeningRow(content, mine)], 'kind-title') : null,
       // When the tab bar is full, the scenarios live here instead.
       content.features.scenarios && !scenariosTabbed(content)
         ? section(t('learn.scenarios'), [scenariosRow(content)], 'kind-title')
@@ -557,9 +642,13 @@ async function learn(root) {
   );
 }
 
-function listeningRow(content) {
-  const replies = content.listening.find((x) => x.kind === 'replies')?.items.length || 0;
-  const words = content.listening.find((x) => x.kind === 'contrasts')?.items.length || 0;
+/** The listening section: what the drill draws on, which with levels is the learner's level and below (§7.10). */
+function listeningRow(content, mine = null) {
+  const allowed = mine ? levelsUpTo(content, mine) : null;
+  const sets = content.listening.filter((x) => !allowed || !x.level || allowed.has(x.level));
+  const count = (kind) => sets.filter((x) => x.kind === kind).reduce((n, x) => n + x.items.length, 0);
+  const replies = count('replies');
+  const words = count('contrasts');
   return el('a', { class: 'row-card', href: link('/listening'), dataset: { section: 'listening' } },
     el('span', { class: 'row-icon' }, '👂'),
     el('span', { class: 'row-body' },

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-want-to",
+  "connector": "want to",
+  "gloss": "ほしい・〜したい",
+  "title": "want, want to — ほしい、〜したい",
+  "pattern": "want ＋ もの / want to ＋ 動詞 / don’t want to ＋ 動詞",
+  "explanation": "ほしいものは want ＋ 名詞：I want a new bag.。したいことは want to ＋ 動詞：I want to go to Japan.（日本に行きたい）。he・she の時は wants。お店でのお願いには、もっとていねいな I’d like（I’d like to…）が便利です（基礎レベルのレッスン）。",
+  "natural": "友だちや家族と話す時に：Do you want to come?（一緒に来る？）、I want to try this.（これ、試してみたい）。",
+  "stiff": "店員さんに I want coffee. と言うと強く聞こえます。注文は I’d like a coffee, please.。want の後の to を落とすのも×：I want go. は×。",
+  "examples": [
+    {
+      "id": "gx-want-to-1",
+      "english": "I want to go to Japan.",
+      "japanese": "日本に行きたいです。",
+      "chunks": [
+        {
+          "t": "I want ",
+          "w": "w-want"
+        },
+        {
+          "t": "to go ",
+          "w": "w-go"
+        },
+        {
+          "t": "to Japan."
+        }
+      ],
+      "gap": {
+        "before": "I want ",
+        "answer": "to go",
+        "after": " to Japan.",
+        "options": [
+          "to go",
+          "go",
+          "going"
+        ],
+        "why": "したいこと：want to ＋ 動詞。"
+      },
+      "audio": "audio/en/grammar/gx-want-to-1.mp3",
+      "tags": [
+        "文法",
+        "want to"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-want-to-2",
+      "english": "Do you want to come with us?",
+      "japanese": "一緒に来る？",
+      "chunks": [
+        {
+          "t": "Do you want ",
+          "w": "w-want"
+        },
+        {
+          "t": "to come ",
+          "w": "w-come"
+        },
+        {
+          "t": "with us?"
+        }
+      ],
+      "gap": {
+        "before": "Do you want ",
+        "answer": "to come",
+        "after": " with us?",
+        "options": [
+          "to come",
+          "come",
+          "coming"
+        ],
+        "why": "誘う時の Do you want to…?（〜する？）。"
+      },
+      "audio": "audio/en/grammar/gx-want-to-2.mp3",
+      "tags": [
+        "文法",
+        "want to"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-want-to-3",
+      "english": "She wants a new bike.",
+      "japanese": "彼女は新しい自転車をほしがっています。",
+      "chunks": [
+        {
+          "t": "She ",
+          "w": "w-she"
+        },
+        {
+          "t": "wants a new ",
+          "w": "w-want"
+        },
+        {
+          "t": "bike.",
+          "w": "w-bike"
+        }
+      ],
+      "gap": {
+        "before": "She ",
+        "answer": "wants",
+        "after": " a new bike.",
+        "options": [
+          "wants",
+          "want",
+          "wanting"
+        ],
+        "why": "she の時は wants。"
+      },
+      "audio": "audio/en/grammar/gx-want-to-3.mp3",
+      "tags": [
+        "文法",
+        "want to"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-want-to-4",
+      "english": "I don’t want to wait.",
+      "japanese": "待ちたくないです。",
+      "chunks": [
+        {
+          "t": "I don’t want ",
+          "w": "w-want"
+        },
+        {
+          "t": "to wait.",
+          "w": "w-wait"
+        }
+      ],
+      "gap": {
+        "before": "I don’t want ",
+        "answer": "to wait",
+        "after": ".",
+        "options": [
+          "to wait",
+          "wait",
+          "waiting"
+        ],
+        "why": "したくない：don’t want to ＋ 動詞。"
+      },
+      "audio": "audio/en/grammar/gx-want-to-4.mp3",
+      "tags": [
+        "文法",
+        "want to"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

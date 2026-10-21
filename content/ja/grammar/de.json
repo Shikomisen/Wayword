@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-de",
+  "connector": "で",
+  "gloss": "where it happens; by, with",
+  "title": "で — where it happens, and how",
+  "pattern": "place で verb / means で verb",
+  "explanation": "で marks where an action happens: {家|いえ}で{晩|ばん}ご{飯|はん}を{食|た}べます — I have dinner at home. It also marks how, or with what: {電車|でんしゃ}で{行|い}きます — I go by train; {日本語|にほんご}で{話|はな}しましょう — let’s talk in Japanese.",
+  "natural": "The everyday way to say by train, by car, in English, with chopsticks: お{箸|はし}で{食|た}べる.",
+  "stiff": "Where someone simply is takes に: {家|いえ}にいます. Where something is done takes で: {家|いえ}で{働|はたら}きます. Mixing the two up is the most common particle slip.",
+  "examples": [
+    {
+      "id": "gx-de-1",
+      "japanese": "家で晩ご飯を食べます。",
+      "furigana": "{家|いえ}で{晩|ばん}ご{飯|はん}を{食|た}べます。",
+      "romaji": "ie de bangohan o tabemasu",
+      "english": "I have dinner at home.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{家|いえ}で",
+          "w": "w-ie"
+        },
+        {
+          "t": "{晩|ばん}ご{飯|はん}を",
+          "w": "w-bangohan"
+        },
+        {
+          "t": "{食|た}べます。",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "{家|いえ}",
+        "answer": "で",
+        "after": "{晩|ばん}ご{飯|はん}を{食|た}べます。",
+        "options": [
+          "で",
+          "に",
+          "を"
+        ],
+        "why": "Eating is something you do there: で."
+      },
+      "audio": "audio/ja/grammar/gx-de-1.mp3",
+      "tags": [
+        "grammar",
+        "de"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-de-2",
+      "japanese": "電車で会社に行きます。",
+      "furigana": "{電車|でんしゃ}で{会社|かいしゃ}に{行|い}きます。",
+      "romaji": "densha de kaisha ni ikimasu",
+      "english": "I go to work by train.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{電車|でんしゃ}で",
+          "w": "w-densha"
+        },
+        {
+          "t": "{会社|かいしゃ}に",
+          "w": "w-kaisha"
+        },
+        {
+          "t": "{行|い}きます。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{電車|でんしゃ}",
+        "answer": "で",
+        "after": "{会社|かいしゃ}に{行|い}きます。",
+        "options": [
+          "で",
+          "に",
+          "を"
+        ],
+        "why": "How you go: by train, 電車で."
+      },
+      "audio": "audio/ja/grammar/gx-de-2.mp3",
+      "tags": [
+        "grammar",
+        "de"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-de-3",
+      "japanese": "今日は日本語で話そう。",
+      "furigana": "{今日|きょう}は{日本語|にほんご}で{話|はな}そう。",
+      "romaji": "kyō wa nihongo de hanasō",
+      "english": "Let’s talk in Japanese today.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{日本語|にほんご}で",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{話|はな}そう。",
+          "w": "w-hanasu"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}は{日本語|にほんご}",
+        "answer": "で",
+        "after": "{話|はな}そう。",
+        "options": [
+          "で",
+          "を",
+          "に"
+        ],
+        "why": "In a language: 日本語で."
+      },
+      "audio": "audio/ja/grammar/gx-de-3.mp3",
+      "tags": [
+        "grammar",
+        "de"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-de-4",
+      "japanese": "駅の前で待っています。",
+      "furigana": "{駅|えき}の{前|まえ}で{待|ま}っています。",
+      "romaji": "eki no mae de matte imasu",
+      "english": "I’ll be waiting in front of the station.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{駅|えき}の",
+          "w": "w-eki"
+        },
+        {
+          "t": "{前|まえ}で"
+        },
+        {
+          "t": "{待|ま}っています。",
+          "w": "w-matsu"
+        }
+      ],
+      "gap": {
+        "before": "{駅|えき}の{前|まえ}",
+        "answer": "で",
+        "after": "{待|ま}っています。",
+        "options": [
+          "で",
+          "に",
+          "を"
+        ],
+        "why": "Waiting is something you do there, so where takes で."
+      },
+      "audio": "audio/ja/grammar/gx-de-4.mp3",
+      "tags": [
+        "grammar",
+        "de"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

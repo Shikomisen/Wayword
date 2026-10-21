@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "id": "words-first-things",
+  "title": "身の回りのもの",
+  "description": "家の中や身の回りにあるものの名前。",
+  "items": [
+    {
+      "id": "w-house",
+      "english": "house",
+      "japanese": "家（一軒家）",
+      "pos": "noun",
+      "registerNotes": "「家に（いる・帰る）」は at home / go home。",
+      "audio": "audio/en/words/w-house.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-room",
+      "english": "room",
+      "japanese": "部屋",
+      "pos": "noun",
+      "audio": "audio/en/words/w-room.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kitchen",
+      "english": "kitchen",
+      "japanese": "台所、キッチン",
+      "pos": "noun",
+      "audio": "audio/en/words/w-kitchen.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bathroom",
+      "english": "bathroom",
+      "japanese": "浴室、お手洗い",
+      "pos": "noun",
+      "registerNotes": "家の中のお手洗いは bathroom とも言います。お店では toilet や restroom。",
+      "audio": "audio/en/words/w-bathroom.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bedroom",
+      "english": "bedroom",
+      "japanese": "寝室",
+      "pos": "noun",
+      "audio": "audio/en/words/w-bedroom.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bed",
+      "english": "bed",
+      "japanese": "ベッド",
+      "pos": "noun",
+      "registerNotes": "go to bed（寝る）。",
+      "audio": "audio/en/words/w-bed.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-table",
+      "english": "table",
+      "japanese": "テーブル",
+      "pos": "noun",
+      "audio": "audio/en/words/w-table.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-chair",
+      "english": "chair",
+      "japanese": "椅子",
+      "pos": "noun",
+      "audio": "audio/en/words/w-chair.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-door",
+      "english": "door",
+      "japanese": "ドア、戸",
+      "pos": "noun",
+      "audio": "audio/en/words/w-door.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-window",
+      "english": "window",
+      "japanese": "窓",
+      "pos": "noun",
+      "audio": "audio/en/words/w-window.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-key",
+      "english": "key",
+      "japanese": "鍵",
+      "pos": "noun",
+      "audio": "audio/en/words/w-key.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-towel",
+      "english": "towel",
+      "japanese": "タオル",
+      "pos": "noun",
+      "registerNotes": "a bath towel（バスタオル）、a tea towel（ふきん）。",
+      "audio": "audio/en/words/w-towel.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pen",
+      "english": "pen",
+      "japanese": "ペン",
+      "pos": "noun",
+      "audio": "audio/en/words/w-pen.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cup",
+      "english": "cup",
+      "japanese": "カップ、茶わん",
+      "pos": "noun",
+      "registerNotes": "a cup of tea（紅茶1杯）。",
+      "audio": "audio/en/words/w-cup.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-glass",
+      "english": "glass",
+      "japanese": "グラス、ガラス",
+      "pos": "noun",
+      "pitfallNote": "glasses（複数形）は「眼鏡」。a glass of water（水1杯）。",
+      "audio": "audio/en/words/w-glass.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-plate",
+      "english": "plate",
+      "japanese": "皿",
+      "pos": "noun",
+      "audio": "audio/en/words/w-plate.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tv",
+      "english": "TV",
+      "japanese": "テレビ",
+      "pos": "noun",
+      "registerNotes": "watch TV（テレビを見る）。",
+      "audio": "audio/en/words/w-tv.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-light",
+      "english": "light",
+      "japanese": "電気、明かり",
+      "pos": "noun",
+      "pitfallNote": "「電気をつける」は turn on the light。electricity は電力そのもの。",
+      "audio": "audio/en/words/w-light.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-car",
+      "english": "car",
+      "japanese": "車",
+      "pos": "noun",
+      "audio": "audio/en/words/w-car.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bike",
+      "english": "bike",
+      "japanese": "自転車",
+      "pos": "noun",
+      "registerNotes": "bicycle を短くした言い方。バイクは motorbike。",
+      "pitfallNote": "日本語の「バイク」は英語では motorbike。bike は自転車のことが多いです。",
+      "audio": "audio/en/words/w-bike.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-umbrella",
+      "english": "umbrella",
+      "japanese": "傘",
+      "pos": "noun",
+      "audio": "audio/en/words/w-umbrella.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-clock",
+      "english": "clock",
+      "japanese": "時計（置き時計・掛け時計）",
+      "pos": "noun",
+      "registerNotes": "腕時計は watch。",
+      "audio": "audio/en/words/w-clock.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-picture",
+      "english": "picture",
+      "japanese": "写真、絵",
+      "pos": "noun",
+      "registerNotes": "take a picture（写真を撮る）。",
+      "audio": "audio/en/words/w-picture.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-wallet",
+      "english": "wallet",
+      "japanese": "財布",
+      "pos": "noun",
+      "audio": "audio/en/words/w-wallet.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-money",
+      "english": "money",
+      "japanese": "お金",
+      "pos": "noun",
+      "registerNotes": "数えない名詞：a money は×、some money。",
+      "audio": "audio/en/words/w-money.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

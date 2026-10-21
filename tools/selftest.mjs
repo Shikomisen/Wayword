@@ -121,6 +121,32 @@ function validateCourse(course) {
     check(`${course.id}: at least one starter category`, manifest.categories.some((c) => c.starter));
   }
 
+  // Levels (README §7.10) are optional. When a course declares them, every
+  // entry names one, every level has decks or lessons, and the first level
+  // has a starter, so placement always has something to add.
+  if (manifest.levels !== undefined) {
+    const levelList = Array.isArray(manifest.levels) ? manifest.levels : [];
+    check(`${course.id}: levels is a non-empty list`, levelList.length > 0);
+    const levelIds = new Set(levelList.map((l) => l.id));
+    check(`${course.id}: level ids are unique`, levelIds.size === levelList.length);
+    for (const l of levelList) {
+      check(`${course.id}: level ${l.id} has a title and a description`, Boolean(l.id && l.title && l.description));
+    }
+    const entries = ['categories', 'decks', 'lessons', 'characterSets', 'scenarios', 'listening']
+      .flatMap((list) => (manifest[list] || []).map((entry) => ({ list, entry })));
+    for (const { list, entry } of entries) {
+      check(`${entry.id}: level "${entry.level}" is declared (${list})`, levelIds.has(entry.level), entry.level);
+      if (entry.step !== undefined) check(`${entry.id}: step is a number`, Number.isFinite(entry.step), entry.step);
+    }
+    for (const l of levelList) {
+      check(`${course.id}: level ${l.id} has decks or lessons`,
+        entries.some(({ list, entry }) => entry.level === l.id && ['categories', 'decks', 'lessons'].includes(list)));
+    }
+    check(`${course.id}: the first level has a starter deck`,
+      [...manifest.categories, ...(manifest.decks || [])].some((d) => d.starter && d.level === levelList[0]?.id));
+    check(`${course.id}: placement samples at least one level`, levelList.some((l) => l.placement !== false));
+  }
+
   const fields = manifest.fields || {};
   const target = fields.target;
 

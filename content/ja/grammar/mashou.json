@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-mashou",
+  "connector": "〜ましょう",
+  "gloss": "let’s; would you like to?",
+  "title": "〜ましょう・〜ませんか — let’s, shall we",
+  "pattern": "〜ましょう (let’s) / 〜ませんか (would you like to…?) / 〜ましょうか (shall I…?)",
+  "explanation": "All three come from the ます form. {行|い}きましょう — let’s go. {行|い}きませんか — would you like to go? (literally “won’t you go?”) is the polite way to invite someone. {手伝|てつだ}いましょうか — shall I help? — offers to do something.",
+  "natural": "Invite with ませんか, then agree with ましょう: {映画|えいが}を{見|み}ませんか。 — いいですね、{見|み}ましょう。 With friends, the casual “let’s” is the よう form: {行|い}こう！",
+  "stiff": "Inviting with ましょう straight away can sound pushy, as if it’s already decided. Ask with ませんか first.",
+  "examples": [
+    {
+      "id": "gx-mashou-1",
+      "japanese": "一緒に昼ご飯を食べませんか。",
+      "furigana": "{一緒|いっしょ}に{昼|ひる}ご{飯|はん}を{食|た}べませんか。",
+      "romaji": "issho ni hirugohan o tabemasen ka",
+      "english": "Would you like to have lunch together?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{一緒|いっしょ}に",
+          "w": "w-issho"
+        },
+        {
+          "t": "{昼|ひる}ご{飯|はん}を",
+          "w": "w-hiru"
+        },
+        {
+          "t": "{食|た}べませんか。",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "{一緒|いっしょ}に{昼|ひる}ご{飯|はん}を{食|た}べ",
+        "answer": "ませんか",
+        "after": "。",
+        "options": [
+          "ませんか",
+          "ました",
+          "ません"
+        ],
+        "why": "Inviting someone politely: ませんか."
+      },
+      "audio": "audio/ja/grammar/gx-mashou-1.mp3",
+      "tags": [
+        "grammar",
+        "mashou"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-mashou-2",
+      "japanese": "そろそろ帰りましょう。",
+      "furigana": "そろそろ{帰|かえ}りましょう。",
+      "romaji": "sorosoro kaerimashō",
+      "english": "Let’s head home soon.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "そろそろ"
+        },
+        {
+          "t": "{帰|かえ}りましょう。",
+          "w": "w-kaeru"
+        }
+      ],
+      "gap": {
+        "before": "そろそろ{帰|かえ}り",
+        "answer": "ましょう",
+        "after": "。",
+        "options": [
+          "ましょう",
+          "ませんか",
+          "ません"
+        ],
+        "why": "Let’s: ましょう."
+      },
+      "audio": "audio/ja/grammar/gx-mashou-2.mp3",
+      "tags": [
+        "grammar",
+        "mashou"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-mashou-3",
+      "japanese": "写真を撮りましょうか。",
+      "furigana": "{写真|しゃしん}を{撮|と}りましょうか。",
+      "romaji": "shashin o torimashō ka",
+      "english": "Shall I take a photo for you?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{写真|しゃしん}を",
+          "w": "w-shashin"
+        },
+        {
+          "t": "{撮|と}りましょうか。"
+        }
+      ],
+      "gap": {
+        "before": "{写真|しゃしん}を{撮|と}り",
+        "answer": "ましょうか",
+        "after": "。",
+        "options": [
+          "ましょうか",
+          "ませんか",
+          "ました"
+        ],
+        "why": "Offering to do something: ましょうか."
+      },
+      "audio": "audio/ja/grammar/gx-mashou-3.mp3",
+      "tags": [
+        "grammar",
+        "mashou"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-mashou-4",
+      "japanese": "週末、公園に行こう。",
+      "furigana": "{週末|しゅうまつ}、{公園|こうえん}に{行|い}こう。",
+      "romaji": "shūmatsu, kōen ni ikō",
+      "english": "Let’s go to the park at the weekend.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{週末|しゅうまつ}、",
+          "w": "w-shuumatsu"
+        },
+        {
+          "t": "{公園|こうえん}に",
+          "w": "w-kouen"
+        },
+        {
+          "t": "{行|い}こう。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{週末|しゅうまつ}、{公園|こうえん}に{行|い}",
+        "answer": "こう",
+        "after": "。",
+        "options": [
+          "こう",
+          "きましょう",
+          "きたい"
+        ],
+        "ok": [
+          "きましょう"
+        ],
+        "note": "行きましょう is the same “let’s”, just polite.",
+        "why": "Casual “let’s”: 行こう."
+      },
+      "audio": "audio/ja/grammar/gx-mashou-4.mp3",
+      "tags": [
+        "grammar",
+        "mashou"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

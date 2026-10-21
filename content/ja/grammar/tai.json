@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-tai",
+  "connector": "〜たい",
+  "gloss": "want to",
+  "title": "〜たい — I want to…",
+  "pattern": "verb (ます form without ます) + たい",
+  "explanation": "To say you want to do something, take the ます form, drop ます and add たい: {行|い}きます → {行|い}きたい — I want to go. たい then works like an い-adjective: {行|い}きたいです (polite), {行|い}きたくない (don’t want to), {行|い}きたかった (wanted to).",
+  "natural": "Talking about your own wishes: いつか{日本|にほん}に{住|す}みたい — I’d like to live in Japan one day. With food and drink, を often becomes が: お{寿司|すし}が{食|た}べたい.",
+  "stiff": "Asking someone above you {何|なに}が{食|た}べたいですか can sound too direct. An offer is softer: {何|なに}か{飲|の}みませんか (the next lesson). And for wanting a thing rather than an action, it’s ほしい: {水|みず}がほしい.",
+  "examples": [
+    {
+      "id": "gx-tai-1",
+      "japanese": "いつか日本に行きたいです。",
+      "furigana": "いつか{日本|にほん}に{行|い}きたいです。",
+      "romaji": "itsuka Nihon ni ikitai desu",
+      "english": "I want to go to Japan one day.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "いつか"
+        },
+        {
+          "t": "{日本|にほん}に",
+          "w": "w-nihon"
+        },
+        {
+          "t": "{行|い}きたいです。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "いつか{日本|にほん}に{行|い}き",
+        "answer": "たい",
+        "after": "です。",
+        "options": [
+          "たい",
+          "ます",
+          "ない"
+        ],
+        "why": "Want to: drop ます, add たい."
+      },
+      "audio": "audio/ja/grammar/gx-tai-1.mp3",
+      "tags": [
+        "grammar",
+        "tai"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-tai-2",
+      "japanese": "今日は家で休みたい。",
+      "furigana": "{今日|きょう}は{家|いえ}で{休|やす}みたい。",
+      "romaji": "kyō wa ie de yasumitai",
+      "english": "Today I want to rest at home.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{家|いえ}で",
+          "w": "w-ie"
+        },
+        {
+          "t": "{休|やす}みたい。",
+          "w": "w-yasumu"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}は{家|いえ}で{休|やす}み",
+        "answer": "たい",
+        "after": "。",
+        "options": [
+          "たい",
+          "ます",
+          "たくない"
+        ],
+        "why": "Want to rest: 休みたい."
+      },
+      "audio": "audio/ja/grammar/gx-tai-2.mp3",
+      "tags": [
+        "grammar",
+        "tai"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-tai-3",
+      "japanese": "寒いから、出かけたくない。",
+      "furigana": "{寒|さむ}いから、{出|で}かけたくない。",
+      "romaji": "samui kara, dekaketakunai",
+      "english": "It’s cold, so I don’t want to go out.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{寒|さむ}いから、",
+          "w": "w-samui"
+        },
+        {
+          "t": "{出|で}かけたくない。",
+          "w": "w-dekakeru"
+        }
+      ],
+      "gap": {
+        "before": "{寒|さむ}いから、{出|で}かけ",
+        "answer": "たくない",
+        "after": "。",
+        "options": [
+          "たくない",
+          "たい",
+          "たかった"
+        ],
+        "why": "Don’t want to: たい → たくない, like an い-adjective."
+      },
+      "audio": "audio/ja/grammar/gx-tai-3.mp3",
+      "tags": [
+        "grammar",
+        "tai"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-tai-4",
+      "japanese": "晩ご飯は何が食べたい？",
+      "furigana": "{晩|ばん}ご{飯|はん}は{何|なに}が{食|た}べたい？",
+      "romaji": "bangohan wa nani ga tabetai?",
+      "english": "What do you want for dinner?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{晩|ばん}ご{飯|はん}は",
+          "w": "w-bangohan"
+        },
+        {
+          "t": "{何|なに}が",
+          "w": "w-nani"
+        },
+        {
+          "t": "{食|た}べたい？",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "{晩|ばん}ご{飯|はん}は{何|なに}が{食|た}べ",
+        "answer": "たい",
+        "after": "？",
+        "options": [
+          "たい",
+          "ます",
+          "たくない"
+        ],
+        "why": "Want to eat: 食べたい."
+      },
+      "audio": "audio/ja/grammar/gx-tai-4.mp3",
+      "tags": [
+        "grammar",
+        "tai"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

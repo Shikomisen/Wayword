@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-wh",
+  "connector": "what, where…",
+  "gloss": "何・どこ・いつ・誰",
+  "title": "what, where, when, who, why, how — 何・どこ・いつ…",
+  "pattern": "疑問詞 ＋ be動詞 … ? / 疑問詞 ＋ do ＋ 主語 ＋ 動詞 … ?",
+  "explanation": "疑問詞は文の最初に置きます：what（何）、where（どこ）、when（いつ）、who（誰）、why（なぜ）、how（どう、どうやって）。be動詞の文なら Where is the station?、ふつうの動詞なら do を入れて Where do you live?（どこに住んでいますか）。",
+  "natural": "旅行中の質問はほとんどこの形です：Where’s the bus stop? / What time is it? / How do I get to the airport?",
+  "stiff": "疑問詞を文の最後に置くのは×：You live where? は（驚いた時以外は）不自然。do を入れ忘れて Where you live? と言いがちです。",
+  "examples": [
+    {
+      "id": "gx-wh-1",
+      "english": "Where do you live?",
+      "japanese": "どこに住んでいますか。",
+      "chunks": [
+        {
+          "t": "Where ",
+          "w": "w-where"
+        },
+        {
+          "t": "do you "
+        },
+        {
+          "t": "live?",
+          "w": "w-live"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Where",
+        "after": " do you live?",
+        "options": [
+          "Where",
+          "What",
+          "Who"
+        ],
+        "why": "場所をたずねる：where。"
+      },
+      "audio": "audio/en/grammar/gx-wh-1.mp3",
+      "tags": [
+        "文法",
+        "what, where…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-wh-2",
+      "english": "What time is it?",
+      "japanese": "何時ですか。",
+      "chunks": [
+        {
+          "t": "What ",
+          "w": "w-what"
+        },
+        {
+          "t": "time "
+        },
+        {
+          "t": "is it?",
+          "w": "w-it"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "What",
+        "after": " time is it?",
+        "options": [
+          "What",
+          "When",
+          "How"
+        ],
+        "why": "時刻：What time…?"
+      },
+      "audio": "audio/en/grammar/gx-wh-2.mp3",
+      "tags": [
+        "文法",
+        "what, where…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-wh-3",
+      "english": "Who is that man?",
+      "japanese": "あの男の人は誰ですか。",
+      "chunks": [
+        {
+          "t": "Who ",
+          "w": "w-who"
+        },
+        {
+          "t": "is that "
+        },
+        {
+          "t": "man?",
+          "w": "w-man"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Who",
+        "after": " is that man?",
+        "options": [
+          "Who",
+          "What",
+          "Where"
+        ],
+        "why": "人をたずねる：who。"
+      },
+      "audio": "audio/en/grammar/gx-wh-3.mp3",
+      "tags": [
+        "文法",
+        "what, where…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-wh-4",
+      "english": "Why are you tired?",
+      "japanese": "どうして疲れているの？",
+      "chunks": [
+        {
+          "t": "Why ",
+          "w": "w-why"
+        },
+        {
+          "t": "are you "
+        },
+        {
+          "t": "tired?",
+          "w": "w-tired"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Why",
+        "after": " are you tired?",
+        "options": [
+          "Why",
+          "How",
+          "When"
+        ],
+        "why": "理由をたずねる：why。"
+      },
+      "audio": "audio/en/grammar/gx-wh-4.mp3",
+      "tags": [
+        "文法",
+        "what, where…"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

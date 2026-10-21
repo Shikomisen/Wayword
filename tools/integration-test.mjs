@@ -131,10 +131,13 @@ check('onboarding gate now passes', await deck.isOnboarded());
 console.log('\n3. Deck seeding (§7 — starter categories only)');
 
 const settings = await deck.getSettings();
-// Starters are phrase categories and word/sentence decks alike.
+// Starters are phrase categories and word/sentence decks alike. With levels
+// (§7.10), placement adds the starters of the level it starts the learner at.
+const levelsMod = await import('../js/levels.js');
 const everyDeck = [...content.categories, ...content.decks];
-const starters = everyDeck.filter((c) => c.starter);
-check('only the starter decks are activated',
+const starters = levelsMod.startersIn(content, result.level);
+check('placement starts the learner at a level', Boolean(result.level), result.level);
+check('only that level\'s starter decks are activated',
   [...settings.activeCategories].sort().join(',') === starters.map((c) => c.id).sort().join(','),
   settings.activeCategories.join(', '));
 check('starters are a handful, not everything', starters.length >= 2 && starters.length < everyDeck.length,
@@ -693,6 +696,72 @@ await deck.finishKanaDrill(15, 'hiragana');
 check('finishing one marks the day, and which script', (await deck.kanaDrillToday()).script === 'hiragana' &&
   (await deck.todayStats()).drills === drillsBeforeKana + 15);
 
+/* ---------- 11b. levels ---------- */
+
+console.log('\n11b. Levels (§7.10)');
+
+check('the course declares its levels, and every entry names one of them',
+  content.levels.length >= 2 && [...content.categories, ...content.decks, ...content.lessons, ...content.characterSets]
+    .every((d) => content.levels.some((l) => l.id === d.level)),
+  content.levels.map((l) => l.id).join(' → '));
+check('placement suggested the level from its overall score',
+  result.level === levelsMod.suggestedLevel(content, result.overall) && result.level === 'first-steps',
+  `${Math.round(result.overall * 100)}% → ${result.level}`);
+check('…and it is the learner\'s level now', (await deck.getLevel()) === 'first-steps');
+check('the suggestion follows the score: low → the first level, partial → the second, strong → the third, capped at the top',
+  levelsMod.suggestedLevel(content, 0.1) === content.levels[0].id &&
+    levelsMod.suggestedLevel(content, 0.5) === content.levels[1].id &&
+    levelsMod.suggestedLevel(content, 0.9) === content.levels[Math.min(2, content.levels.length - 1)].id);
+
+let lvl = await deck.levelState();
+const firstStepsItems = levelsMod.addableIn(content, 'first-steps').flatMap((d) => d.items);
+check('a level\'s progress counts its phrases, words and sentences',
+  lvl.progress.total === firstStepsItems.length && lvl.progress.total > 100, `${lvl.progress.total} items`);
+check('…none of them learned on day one, not even what placement seeded forward', lvl.progress.learned === 0);
+check('…and its lessons, none practised yet',
+  lvl.progress.lessons === levelsMod.lessonsIn(content, 'first-steps').length && lvl.progress.lessons >= 10 && lvl.progress.practised === 0,
+  `${lvl.progress.lessons} lessons`);
+check('the next step is the first deck on the level\'s path that isn\'t in study',
+  lvl.next?.id === 'sentences-everyday', lvl.next?.id);
+check('the next lesson is the level\'s first', lvl.nextLesson?.id === 'gr-desu', lvl.nextLesson?.id);
+await deck.deactivateCategory('sentences-everyday');
+check('a deck taken out is skipped by the next step', (await deck.levelState()).next?.id === 'words-things',
+  (await deck.levelState()).next?.id);
+await deck.saveSettings({ parkedDecks: (await deck.getSettings()).parkedDecks.filter((id) => id !== 'sentences-everyday') });
+
+// Learn the whole level: every item's recognition card at a fortnight.
+const learnedAt = Date.now();
+for (const d of levelsMod.addableIn(content, 'first-steps')) {
+  for (const item of d.items) {
+    await deck.putCard(srs.seedKnown(item.id, d.id, 14, 2.6, learnedAt, { kind: item.kind || srs.KIND.PHRASE, difficulty: item.difficulty ?? 1 }));
+  }
+}
+lvl = await deck.levelState();
+check('a recognition card at a week or more counts as learned', lvl.progress.learned === lvl.progress.total,
+  `${lvl.progress.learned} of ${lvl.progress.total}`);
+check('…but the level isn\'t ready while its lessons are unpractised', !lvl.progress.ready);
+const fsLessons = levelsMod.lessonsIn(content, 'first-steps');
+await deck.recordPractice(Object.fromEntries(fsLessons.slice(0, Math.ceil(fsLessons.length * 0.8)).map((l) => [l.id, { right: 3, total: 4 }])));
+lvl = await deck.levelState();
+check('with 80% of the lessons practised too, the level is ready, and the next one is offered',
+  lvl.progress.ready && lvl.after?.id === 'basic', `${lvl.progress.practised} of ${lvl.progress.lessons} lessons`);
+check('…and the next lesson is the first one not yet practised',
+  lvl.nextLesson?.id === fsLessons[Math.ceil(fsLessons.length * 0.8)]?.id, lvl.nextLesson?.id);
+const movedStarters = await deck.moveToLevel('basic');
+const activeAfterMove = (await deck.getSettings()).activeCategories;
+check('moving up makes it the learner\'s level, and puts its starter decks in study',
+  (await deck.getLevel()) === 'basic' && movedStarters.length > 0 &&
+    movedStarters.every((d) => d.level === 'basic' && activeAfterMove.includes(d.id)),
+  movedStarters.map((d) => d.id).join(', '));
+check('a learner from before levels gets the highest level among the decks they study, saved once',
+  await (async () => {
+    await deck.saveSettings({ level: null });
+    const inferred = await deck.getLevel();
+    return inferred === 'basic' && (await deck.getSettings()).level === 'basic';
+  })());
+const upTo = levelsMod.levelsUpTo(content, 'first-steps');
+check('levels up to one are that level and the ones below it', upTo.has('first-steps') && !upTo.has('basic'));
+
 /* ---------- 12. a second course ---------- */
 
 console.log('\n12. Second course — English for Japanese speakers (ja-en)');
@@ -732,7 +801,8 @@ check('…with their notes under the course\'s own labels', flatWhite.notes[0]?.
   flatWhite.notes.map((n) => n.label).join(', '));
 check('every ja-en word and sentence deck loads',
   en.decks.length === en.manifest.decks.length && en.decks.every((d) => !d.missing && d.items.length > 0) &&
-    en.decks.filter((d) => d.type === 'words').length === 8 && en.decks.some((d) => d.type === 'sentences'),
+    en.decks.filter((d) => d.type === 'words').length === 14 && en.decks.some((d) => d.type === 'sentences') &&
+    en.decks.filter((d) => d.level === 'first-steps').length === 6,
   en.decks.map((d) => `${d.id} ${d.items.length}`).join(', '));
 check('…the everyday words among them', ['w-get', 'w-pick-up', 'w-gst', 'w-power-point', 'w-kia-ora']
   .every((id) => en.phrases.get(id)?.kind === 'word'));
@@ -745,13 +815,14 @@ check('everyday sentences are cut into pieces linked to the words they use',
   `${everyday.items.length} sentences`);
 
 const patterns = en.lessons;
-check('the lessons load — patterns, polite phrasing, linking words, word order — each with 3–5 examples with audio',
-  patterns.length === en.manifest.lessons.length && patterns.length === 30 &&
+check('the lessons load — first-steps grammar, patterns, polite phrasing, linking words, word order — each with 3–5 examples with audio',
+  patterns.length === en.manifest.lessons.length && patterns.length === 48 &&
+    patterns.filter((l) => l.level === 'first-steps').length === 18 &&
     patterns.every((l) => !l.missing && l.items.length >= 3 && l.items.length <= 5 &&
       l.items.every((x) => x.audio && x.targetLang === 'en')),
   patterns.map((l) => l.connector).join(' '));
-check('…in the five groups the manifest names',
-  en.lessonGroups.map((g) => g.id).join(',') === 'ask,question,polite,link,order' &&
+check('…in the seven groups the manifest names, the two First-steps ones first',
+  en.lessonGroups.map((g) => g.id).join(',') === 'first-sentence,first-verbs,ask,question,polite,link,order' &&
     en.lessonGroups.every((g) => patterns.some((l) => l.group === g.id)));
 const like1 = en.byCategory.get('pat-like').items[0];
 check('a pattern gap is the English sentence around it',
@@ -792,8 +863,15 @@ check('placement samples every ja-en category', new Set(enItems.map((i) => i.cat
 check('placement has no character items', enItems.every((i) => i.kind === 'phrase'));
 await quiz.applyPlacement(enItems, Object.fromEntries(enItems.map((i) => [i.id, quiz.ANSWERS.UNKNOWN])));
 check('ja-en is onboarded on its own', await deck.isOnboarded());
-check('starter categories activated in ja-en',
-  (await deck.getSettings()).activeCategories.join(',') === 'greetings,numbers,restaurant,shopping,words-cafe,words-shopping,words-verbs',
+check('knowing nothing starts ja-en at First steps, with its starter decks',
+  (await deck.getLevel()) === 'first-steps' &&
+    (await deck.getSettings()).activeCategories.join(',') === 'greetings,numbers,words-first-people,words-first-verbs',
+  (await deck.getSettings()).activeCategories.join(','));
+await deck.changeStartLevel('first-steps', 'basic');
+check('picking Basic instead on the results screen swaps the untouched starters for Basic\'s',
+  (await deck.getLevel()) === 'basic' &&
+    (await deck.getSettings()).activeCategories.slice().sort().join(',') ===
+      levelsMod.startersIn(en, 'basic').map((d) => d.id).sort().join(','),
   (await deck.getSettings()).activeCategories.join(','));
 
 const enQueue = await deck.queue();

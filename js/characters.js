@@ -52,7 +52,7 @@ async function removeSet(set) {
 /* ---------- set list ---------- */
 
 export async function renderCharacterList(root) {
-  const { characterSets } = await loadContent();
+  const { characterSets, levels = [] } = await loadContent();
   const s = await deck.getSettings();
   const kana = await kanaState();
   const gated = kanjiGated(kana);
@@ -133,7 +133,17 @@ export async function renderCharacterList(root) {
             'No character sets in your deck yet. Add one below — hiragana is the place to start.'),
 
       el('h2', { class: 'section-title' }, 'Sets'),
-      el('div', { class: 'card-list' }, rows),
+      // With levels, each set sits under its level (README §7.10).
+      levels.length
+        ? levels.map((l) => {
+            const own = characterSets.map((set, i) => [set, rows[i]]).filter(([set]) => set.level === l.id).map(([, r]) => r);
+            return own.length
+              ? el('section', { class: 'level-group' },
+                  el('h3', { class: 'level-subtitle' }, `${l.icon ? `${l.icon} ` : ''}${l.title}`),
+                  el('div', { class: 'card-list' }, own))
+              : null;
+          })
+        : el('div', { class: 'card-list' }, rows),
 
       el('p', { class: 'muted small footnote' },
         'Handwriting and stroke-order practice are deliberately not here — this app teaches reading, ' +

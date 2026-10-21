@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ka",
+  "connector": "か",
+  "gloss": "making a question",
+  "title": "か — asking a question",
+  "pattern": "… ですか / question word … か",
+  "explanation": "Add か to the end of a polite sentence to make it a question: {学生|がくせい}です → {学生|がくせい}ですか. The word order stays the same. A question word sits where the answer would go: {駅|えき}はどこですか — where’s the station? ({駅|えき}はあそこです — it’s over there.)",
+  "natural": "In casual speech, drop か and let your voice go up: {行|い}く？ — are you going? A casual か can sound blunt.",
+  "stiff": "Don’t move the question word to the front, as English does: どこですか、{駅|えき}は sounds odd. Keep the order: {駅|えき}はどこですか.",
+  "examples": [
+    {
+      "id": "gx-ka-1",
+      "japanese": "トイレはどこですか。",
+      "furigana": "{トイレ|といれ}はどこですか。",
+      "romaji": "toire wa doko desu ka",
+      "english": "Where’s the toilet?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{トイレ|といれ}は",
+          "w": "w-toire"
+        },
+        {
+          "t": "どこ",
+          "w": "w-doko"
+        },
+        {
+          "t": "ですか。"
+        }
+      ],
+      "gap": {
+        "before": "{トイレ|といれ}はどこです",
+        "answer": "か",
+        "after": "。",
+        "options": [
+          "か",
+          "よ",
+          "ね"
+        ],
+        "why": "A polite question ends in か."
+      },
+      "audio": "audio/ja/grammar/gx-ka-1.mp3",
+      "tags": [
+        "grammar",
+        "ka"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ka-2",
+      "japanese": "仕事は何時に終わりますか。",
+      "furigana": "{仕事|しごと}は{何時|なんじ}に{終|お}わりますか。",
+      "romaji": "shigoto wa nanji ni owarimasu ka",
+      "english": "What time does work finish?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{仕事|しごと}は",
+          "w": "w-shigoto"
+        },
+        {
+          "t": "{何時|なんじ}に"
+        },
+        {
+          "t": "{終|お}わりますか。",
+          "w": "w-owaru"
+        }
+      ],
+      "gap": {
+        "before": "{仕事|しごと}は{何時|なんじ}に{終|お}わります",
+        "answer": "か",
+        "after": "。",
+        "options": [
+          "か",
+          "ね",
+          "よ"
+        ],
+        "why": "A question: add か."
+      },
+      "audio": "audio/ja/grammar/gx-ka-2.mp3",
+      "tags": [
+        "grammar",
+        "ka"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-ka-3",
+      "japanese": "これは何ですか。",
+      "furigana": "これは{何|なん}ですか。",
+      "romaji": "kore wa nan desu ka",
+      "english": "What’s this?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "これは",
+          "w": "w-kore"
+        },
+        {
+          "t": "{何|なん}",
+          "w": "w-nani"
+        },
+        {
+          "t": "ですか。"
+        }
+      ],
+      "gap": {
+        "before": "これは",
+        "answer": "{何|なん}",
+        "after": "ですか。",
+        "options": [
+          "{何|なん}",
+          "{誰|だれ}",
+          "どこ"
+        ],
+        "why": "What a thing is: 何 (said なん before です)."
+      },
+      "audio": "audio/ja/grammar/gx-ka-3.mp3",
+      "tags": [
+        "grammar",
+        "ka"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ka-4",
+      "japanese": "これ、誰が作ったの？",
+      "furigana": "これ、{誰|だれ}が{作|つく}ったの？",
+      "romaji": "kore, dare ga tsukutta no?",
+      "english": "Who made this?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "これ、",
+          "w": "w-kore"
+        },
+        {
+          "t": "{誰|だれ}が",
+          "w": "w-dare"
+        },
+        {
+          "t": "{作|つく}ったの？",
+          "w": "w-tsukuru"
+        }
+      ],
+      "gap": {
+        "before": "これ、",
+        "answer": "{誰|だれ}",
+        "after": "が{作|つく}ったの？",
+        "options": [
+          "{誰|だれ}",
+          "{何|なに}",
+          "いつ"
+        ],
+        "why": "Asking which person: 誰."
+      },
+      "audio": "audio/ja/grammar/gx-ka-4.mp3",
+      "tags": [
+        "grammar",
+        "ka"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

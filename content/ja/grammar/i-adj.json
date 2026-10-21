@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-i-adj",
+  "connector": "〜い",
+  "gloss": "い-adjectives: big, cheap, fun",
+  "title": "〜い — い-adjectives",
+  "pattern": "〜いです / 〜くないです / 〜かったです",
+  "explanation": "Most describing words end in い: {高|たか}い, {安|やす}い, {楽|たの}しい. They go before a noun ({高|たか}い{店|みせ}, an expensive shop) or at the end with です ({高|たか}いです, it’s expensive). They change their own ending: not, {高|たか}くないです; was, {高|たか}かったです; wasn’t, {高|たか}くなかったです. いい is the odd one out: よくないです, よかったです.",
+  "natural": "In casual speech, drop です: この{店|みせ}、{高|たか}い！ — this place is pricey!",
+  "stiff": "Don’t add じゃない or でした to an い-adjective: {高|たか}いじゃないです and {高|たか}いでした are wrong. The adjective changes itself: {高|たか}くないです, {高|たか}かったです.",
+  "examples": [
+    {
+      "id": "gx-i-adj-1",
+      "japanese": "先週の旅行は楽しかったです。",
+      "furigana": "{先週|せんしゅう}の{旅行|りょこう}は{楽|たの}しかったです。",
+      "romaji": "senshū no ryokō wa tanoshikatta desu",
+      "english": "Last week’s trip was fun.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{先週|せんしゅう}の",
+          "w": "w-senshuu"
+        },
+        {
+          "t": "{旅行|りょこう}は",
+          "w": "w-ryokou"
+        },
+        {
+          "t": "{楽|たの}しかったです。",
+          "w": "w-tanoshii"
+        }
+      ],
+      "gap": {
+        "before": "{先週|せんしゅう}の{旅行|りょこう}は{楽|たの}し",
+        "answer": "かった",
+        "after": "です。",
+        "options": [
+          "かった",
+          "い",
+          "くない"
+        ],
+        "why": "Was fun: 楽しい → 楽しかった."
+      },
+      "audio": "audio/ja/grammar/gx-i-adj-1.mp3",
+      "tags": [
+        "grammar",
+        "i-adj"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-i-adj-2",
+      "japanese": "この部屋はあまり大きくないです。",
+      "furigana": "この{部屋|へや}はあまり{大|おお}きくないです。",
+      "romaji": "kono heya wa amari ōkikunai desu",
+      "english": "This room isn’t very big.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{部屋|へや}は",
+          "w": "w-heya"
+        },
+        {
+          "t": "あまり"
+        },
+        {
+          "t": "{大|おお}きくないです。",
+          "w": "w-ookii"
+        }
+      ],
+      "gap": {
+        "before": "この{部屋|へや}はあまり{大|おお}き",
+        "answer": "くない",
+        "after": "です。",
+        "options": [
+          "くない",
+          "い",
+          "かった"
+        ],
+        "why": "Not big: 大きい → 大きくない. あまり … ない is “not very”."
+      },
+      "audio": "audio/ja/grammar/gx-i-adj-2.mp3",
+      "tags": [
+        "grammar",
+        "i-adj"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-i-adj-3",
+      "japanese": "今日は暑いね。",
+      "furigana": "{今日|きょう}は{暑|あつ}いね。",
+      "romaji": "kyō wa atsui ne",
+      "english": "It’s hot today, isn’t it.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{暑|あつ}いね。",
+          "w": "w-atsui"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}は{暑|あつ}",
+        "answer": "い",
+        "after": "ね。",
+        "options": [
+          "い",
+          "かった",
+          "くない"
+        ],
+        "why": "Today, right now: plain 暑い."
+      },
+      "audio": "audio/ja/grammar/gx-i-adj-3.mp3",
+      "tags": [
+        "grammar",
+        "i-adj"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-i-adj-4",
+      "japanese": "新しい車を買いました。",
+      "furigana": "{新|あたら}しい{車|くるま}を{買|か}いました。",
+      "romaji": "atarashii kuruma o kaimashita",
+      "english": "I bought a new car.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{新|あたら}しい",
+          "w": "w-atarashii"
+        },
+        {
+          "t": "{車|くるま}を",
+          "w": "w-kuruma"
+        },
+        {
+          "t": "{買|か}いました。",
+          "w": "w-kau"
+        }
+      ],
+      "gap": {
+        "before": "{新|あたら}し",
+        "answer": "い",
+        "after": "{車|くるま}を{買|か}いました。",
+        "options": [
+          "い",
+          "くない",
+          "な"
+        ],
+        "why": "Before a noun, an い-adjective stays as it is: 新しい車."
+      },
+      "audio": "audio/ja/grammar/gx-i-adj-4.mp3",
+      "tags": [
+        "grammar",
+        "i-adj"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

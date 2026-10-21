@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-no",
+  "connector": "の",
+  "gloss": "’s, of",
+  "title": "の — my, ’s, of",
+  "pattern": "A の B (A’s B; a B about A)",
+  "explanation": "の joins two nouns, and the first says whose the second is, or what kind: {私|わたし}の{本|ほん} — my book; {日本語|にほんご}の{先生|せんせい} — a Japanese teacher; {友達|ともだち}の{車|くるま} — a friend’s car. The order is the same as English ’s: the owner first.",
+  "natural": "The second noun can go when it’s clear: これは{私|わたし}のです — this one’s mine.",
+  "stiff": "い-adjectives don’t take の: {新|あたら}しい{本|ほん}, not {新|あたら}しいの{本|ほん}.",
+  "examples": [
+    {
+      "id": "gx-no-1",
+      "japanese": "これは私の傘です。",
+      "furigana": "これは{私|わたし}の{傘|かさ}です。",
+      "romaji": "kore wa watashi no kasa desu",
+      "english": "This is my umbrella.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "これは",
+          "w": "w-kore"
+        },
+        {
+          "t": "{私|わたし}の",
+          "w": "w-watashi"
+        },
+        {
+          "t": "{傘|かさ}です。",
+          "w": "w-kasa"
+        }
+      ],
+      "gap": {
+        "before": "これは{私|わたし}",
+        "answer": "の",
+        "after": "{傘|かさ}です。",
+        "options": [
+          "の",
+          "は",
+          "を"
+        ],
+        "why": "Whose umbrella: 私の."
+      },
+      "audio": "audio/ja/grammar/gx-no-1.mp3",
+      "tags": [
+        "grammar",
+        "no"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-no-2",
+      "japanese": "日本語の先生はとても優しいです。",
+      "furigana": "{日本語|にほんご}の{先生|せんせい}はとても{優|やさ}しいです。",
+      "romaji": "nihongo no sensei wa totemo yasashii desu",
+      "english": "My Japanese teacher is really kind.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本語|にほんご}の",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{先生|せんせい}は",
+          "w": "w-sensei"
+        },
+        {
+          "t": "とても",
+          "w": "w-totemo"
+        },
+        {
+          "t": "{優|やさ}しいです。"
+        }
+      ],
+      "gap": {
+        "before": "{日本語|にほんご}",
+        "answer": "の",
+        "after": "{先生|せんせい}はとても{優|やさ}しいです。",
+        "options": [
+          "の",
+          "は",
+          "が"
+        ],
+        "why": "What kind of teacher: 日本語の先生."
+      },
+      "audio": "audio/ja/grammar/gx-no-2.mp3",
+      "tags": [
+        "grammar",
+        "no"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-no-3",
+      "japanese": "友達の車で来た。",
+      "furigana": "{友達|ともだち}の{車|くるま}で{来|き}た。",
+      "romaji": "tomodachi no kuruma de kita",
+      "english": "I came in a friend’s car.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{友達|ともだち}の",
+          "w": "w-tomodachi"
+        },
+        {
+          "t": "{車|くるま}で",
+          "w": "w-kuruma"
+        },
+        {
+          "t": "{来|き}た。",
+          "w": "w-kuru"
+        }
+      ],
+      "gap": {
+        "before": "{友達|ともだち}",
+        "answer": "の",
+        "after": "{車|くるま}で{来|き}た。",
+        "options": [
+          "の",
+          "と",
+          "に"
+        ],
+        "why": "Whose car: 友達の."
+      },
+      "audio": "audio/ja/grammar/gx-no-3.mp3",
+      "tags": [
+        "grammar",
+        "no"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-no-4",
+      "japanese": "それ、誰の？",
+      "furigana": "それ、{誰|だれ}の？",
+      "romaji": "sore, dare no?",
+      "english": "Whose is that?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "それ、",
+          "w": "w-sore"
+        },
+        {
+          "t": "{誰|だれ}の？",
+          "w": "w-dare"
+        }
+      ],
+      "gap": {
+        "before": "それ、{誰|だれ}",
+        "answer": "の",
+        "after": "？",
+        "options": [
+          "の",
+          "が",
+          "を"
+        ],
+        "why": "Whose: 誰の, with the thing itself left out."
+      },
+      "audio": "audio/ja/grammar/gx-no-4.mp3",
+      "tags": [
+        "grammar",
+        "no"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

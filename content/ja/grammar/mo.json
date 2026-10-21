@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-mo",
+  "connector": "も",
+  "gloss": "too, also",
+  "title": "も — too, also",
+  "pattern": "A も … (in place of は, が or を)",
+  "explanation": "も means “too” or “also”, and it takes the place of は, が or を: {私|わたし}も{行|い}きます — I’m going too; コーヒーも{飲|の}みます — I’ll have coffee too. With a negative, it’s “not… either”: {私|わたし}も{分|わ}かりません — I don’t know either.",
+  "natural": "The everyday way to agree: {私|わたし}も！ — me too! It stacks on top of に and で: {東京|とうきょう}にも{行|い}きたい — I want to go to Tokyo too.",
+  "stiff": "Don’t keep the particle it replaces: {私|わたし}はも and コーヒーをも are wrong. (に, で and から stay: にも, でも, からも.)",
+  "examples": [
+    {
+      "id": "gx-mo-1",
+      "japanese": "明日、私も行きます。",
+      "furigana": "{明日|あした}、{私|わたし}も{行|い}きます。",
+      "romaji": "ashita, watashi mo ikimasu",
+      "english": "I’m going tomorrow too.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}、",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{私|わたし}も",
+          "w": "w-watashi"
+        },
+        {
+          "t": "{行|い}きます。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}、{私|わたし}",
+        "answer": "も",
+        "after": "{行|い}きます。",
+        "options": [
+          "も",
+          "は",
+          "を"
+        ],
+        "why": "Me too: 私も."
+      },
+      "audio": "audio/ja/grammar/gx-mo-1.mp3",
+      "tags": [
+        "grammar",
+        "mo"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-mo-2",
+      "japanese": "妹も日本語を勉強しています。",
+      "furigana": "{妹|いもうと}も{日本語|にほんご}を{勉強|べんきょう}しています。",
+      "romaji": "imōto mo nihongo o benkyō shite imasu",
+      "english": "My younger sister is studying Japanese too.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{妹|いもうと}も",
+          "w": "w-imouto"
+        },
+        {
+          "t": "{日本語|にほんご}を",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{勉強|べんきょう}しています。",
+          "w": "w-benkyou"
+        }
+      ],
+      "gap": {
+        "before": "{妹|いもうと}",
+        "answer": "も",
+        "after": "{日本語|にほんご}を{勉強|べんきょう}しています。",
+        "options": [
+          "も",
+          "は",
+          "の"
+        ],
+        "why": "She’s studying it as well: も, in place of は."
+      },
+      "audio": "audio/ja/grammar/gx-mo-2.mp3",
+      "tags": [
+        "grammar",
+        "mo"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-mo-3",
+      "japanese": "うーん、私も分からない。",
+      "furigana": "うーん、{私|わたし}も{分|わ}からない。",
+      "romaji": "ūn, watashi mo wakaranai",
+      "english": "Hmm, I don’t know either.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "うーん、"
+        },
+        {
+          "t": "{私|わたし}も",
+          "w": "w-watashi"
+        },
+        {
+          "t": "{分|わ}からない。",
+          "w": "w-wakaru"
+        }
+      ],
+      "gap": {
+        "before": "うーん、{私|わたし}",
+        "answer": "も",
+        "after": "{分|わ}からない。",
+        "options": [
+          "も",
+          "が",
+          "を"
+        ],
+        "why": "Not… either: も with a negative."
+      },
+      "audio": "audio/ja/grammar/gx-mo-3.mp3",
+      "tags": [
+        "grammar",
+        "mo"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-mo-4",
+      "japanese": "肉も魚も好きです。",
+      "furigana": "{肉|にく}も{魚|さかな}も{好|す}きです。",
+      "romaji": "niku mo sakana mo suki desu",
+      "english": "I like both meat and fish.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{肉|にく}も",
+          "w": "w-niku"
+        },
+        {
+          "t": "{魚|さかな}も",
+          "w": "w-sakana"
+        },
+        {
+          "t": "{好|す}きです。",
+          "w": "w-suki"
+        }
+      ],
+      "gap": {
+        "before": "{肉|にく}も{魚|さかな}",
+        "answer": "も",
+        "after": "{好|す}きです。",
+        "options": [
+          "も",
+          "が",
+          "を"
+        ],
+        "why": "A も B も: both A and B."
+      },
+      "audio": "audio/ja/grammar/gx-mo-4.mp3",
+      "tags": [
+        "grammar",
+        "mo"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

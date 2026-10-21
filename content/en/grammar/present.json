@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-present",
+  "connector": "I work / she works",
+  "gloss": "いつもすること（現在形）",
+  "title": "I work, she works — 現在形",
+  "pattern": "I・you・we・they ＋ 動詞 / he・she・it ＋ 動詞-s",
+  "explanation": "習慣や、いつもそうであることは現在形で言います：I work in a café.（カフェで働いています）、I live in Auckland.。主語が he・she・it（1人・1つ）の時だけ、動詞に -s が付きます：She works、He lives。have は has、go は goes、do は does になります。",
+  "natural": "自己紹介でいつも使います：I work at a hotel. / I live with my family. / I like cooking.",
+  "stiff": "he・she の時の -s を落としがちです：She work. は×、She works.。日本語の「働いています」につられて I’m working at a hotel. と言うと、「今だけ一時的に」という意味に聞こえることがあります。",
+  "examples": [
+    {
+      "id": "gx-present-1",
+      "english": "I live in Auckland.",
+      "japanese": "オークランドに住んでいます。",
+      "chunks": [
+        {
+          "t": "I ",
+          "w": "w-i"
+        },
+        {
+          "t": "live ",
+          "w": "w-live"
+        },
+        {
+          "t": "in Auckland."
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "live",
+        "after": " in Auckland.",
+        "options": [
+          "live",
+          "lives",
+          "living"
+        ],
+        "why": "I の時は動詞はそのまま：I live。"
+      },
+      "audio": "audio/en/grammar/gx-present-1.mp3",
+      "tags": [
+        "文法",
+        "I work / she works"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-present-2",
+      "english": "She works at a hospital.",
+      "japanese": "彼女は病院で働いています。",
+      "chunks": [
+        {
+          "t": "She ",
+          "w": "w-she"
+        },
+        {
+          "t": "works ",
+          "w": "w-work"
+        },
+        {
+          "t": "at a hospital."
+        }
+      ],
+      "gap": {
+        "before": "She ",
+        "answer": "works",
+        "after": " at a hospital.",
+        "options": [
+          "works",
+          "work",
+          "working"
+        ],
+        "why": "she の時は -s：she works。"
+      },
+      "audio": "audio/en/grammar/gx-present-2.mp3",
+      "tags": [
+        "文法",
+        "I work / she works"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-present-3",
+      "english": "My dad cooks dinner every day.",
+      "japanese": "父は毎日夕食を作ります。",
+      "chunks": [
+        {
+          "t": "My dad ",
+          "w": "w-father"
+        },
+        {
+          "t": "cooks ",
+          "w": "w-cook"
+        },
+        {
+          "t": "dinner every day."
+        }
+      ],
+      "gap": {
+        "before": "My dad ",
+        "answer": "cooks",
+        "after": " dinner every day.",
+        "options": [
+          "cooks",
+          "cook",
+          "cooking"
+        ],
+        "why": "my dad は he（1人）なので -s。"
+      },
+      "audio": "audio/en/grammar/gx-present-3.mp3",
+      "tags": [
+        "文法",
+        "I work / she works"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-present-4",
+      "english": "We have a dog.",
+      "japanese": "犬を飼っています。",
+      "chunks": [
+        {
+          "t": "We ",
+          "w": "w-we"
+        },
+        {
+          "t": "have ",
+          "w": "w-have"
+        },
+        {
+          "t": "a dog."
+        }
+      ],
+      "gap": {
+        "before": "We ",
+        "answer": "have",
+        "after": " a dog.",
+        "options": [
+          "have",
+          "has",
+          "haves"
+        ],
+        "why": "we の時は have。he・she なら has。"
+      },
+      "audio": "audio/en/grammar/gx-present-4.mp3",
+      "tags": [
+        "文法",
+        "I work / she works"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

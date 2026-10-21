@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "id": "words-first-time",
+  "title": "時間・曜日・天気",
+  "description": "今日・明日、曜日、朝昼晩、天気の言葉。",
+  "items": [
+    {
+      "id": "w-today",
+      "english": "today",
+      "japanese": "今日",
+      "pos": "noun",
+      "audio": "audio/en/words/w-today.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tomorrow",
+      "english": "tomorrow",
+      "japanese": "明日",
+      "pos": "noun",
+      "registerNotes": "on tomorrow とは言いません：See you tomorrow.",
+      "audio": "audio/en/words/w-tomorrow.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yesterday",
+      "english": "yesterday",
+      "japanese": "昨日",
+      "pos": "noun",
+      "audio": "audio/en/words/w-yesterday.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-now",
+      "english": "now",
+      "japanese": "今",
+      "pos": "adverb",
+      "registerNotes": "right now（今すぐ、ちょうど今）。",
+      "audio": "audio/en/words/w-now.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-morning",
+      "english": "morning",
+      "japanese": "朝、午前",
+      "pos": "noun",
+      "registerNotes": "in the morning（朝に）。Good morning!（おはよう）",
+      "audio": "audio/en/words/w-morning.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-afternoon",
+      "english": "afternoon",
+      "japanese": "午後",
+      "pos": "noun",
+      "registerNotes": "in the afternoon。ニュージーランドの会話では arvo とも。",
+      "audio": "audio/en/words/w-afternoon.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-evening",
+      "english": "evening",
+      "japanese": "夕方、晩",
+      "pos": "noun",
+      "registerNotes": "in the evening。",
+      "audio": "audio/en/words/w-evening.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-night",
+      "english": "night",
+      "japanese": "夜",
+      "pos": "noun",
+      "registerNotes": "at night（夜に）。Good night.（おやすみ）",
+      "audio": "audio/en/words/w-night.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-week",
+      "english": "week",
+      "japanese": "週",
+      "pos": "noun",
+      "registerNotes": "next week（来週）、last week（先週）。",
+      "audio": "audio/en/words/w-week.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-month",
+      "english": "month",
+      "japanese": "月（ひと月）",
+      "pos": "noun",
+      "audio": "audio/en/words/w-month.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-year",
+      "english": "year",
+      "japanese": "年",
+      "pos": "noun",
+      "audio": "audio/en/words/w-year.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-weekend",
+      "english": "weekend",
+      "japanese": "週末",
+      "pos": "noun",
+      "registerNotes": "at the weekend（イギリス・ニュージーランド）、on the weekend（アメリカ）。",
+      "audio": "audio/en/words/w-weekend.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-monday",
+      "english": "Monday",
+      "japanese": "月曜日",
+      "pos": "noun",
+      "registerNotes": "曜日はいつも大文字で始めます。on Monday（月曜日に）。",
+      "audio": "audio/en/words/w-monday.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tuesday",
+      "english": "Tuesday",
+      "japanese": "火曜日",
+      "pos": "noun",
+      "audio": "audio/en/words/w-tuesday.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-wednesday",
+      "english": "Wednesday",
+      "japanese": "水曜日",
+      "pos": "noun",
+      "registerNotes": "発音は「ウェンズデイ」。d は読みません。",
+      "audio": "audio/en/words/w-wednesday.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-thursday",
+      "english": "Thursday",
+      "japanese": "木曜日",
+      "pos": "noun",
+      "audio": "audio/en/words/w-thursday.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-friday",
+      "english": "Friday",
+      "japanese": "金曜日",
+      "pos": "noun",
+      "audio": "audio/en/words/w-friday.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-saturday",
+      "english": "Saturday",
+      "japanese": "土曜日",
+      "pos": "noun",
+      "audio": "audio/en/words/w-saturday.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sunday",
+      "english": "Sunday",
+      "japanese": "日曜日",
+      "pos": "noun",
+      "audio": "audio/en/words/w-sunday.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-weather",
+      "english": "weather",
+      "japanese": "天気",
+      "pos": "noun",
+      "registerNotes": "How’s the weather?（天気はどう？）",
+      "audio": "audio/en/words/w-weather.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hot",
+      "english": "hot",
+      "japanese": "暑い、熱い",
+      "pos": "adjective",
+      "registerNotes": "spicy の意味の「辛い」にも使います：This is hot!",
+      "audio": "audio/en/words/w-hot.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cold",
+      "english": "cold",
+      "japanese": "寒い、冷たい",
+      "pos": "adjective",
+      "registerNotes": "a cold は「風邪」。",
+      "audio": "audio/en/words/w-cold.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-rain",
+      "english": "rain",
+      "japanese": "雨、雨が降る",
+      "pos": "noun",
+      "registerNotes": "It’s raining.（雨が降っています）",
+      "audio": "audio/en/words/w-rain.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sunny",
+      "english": "sunny",
+      "japanese": "晴れた",
+      "pos": "adjective",
+      "registerNotes": "It’s sunny today.（今日は晴れ）",
+      "audio": "audio/en/words/w-sunny.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-windy",
+      "english": "windy",
+      "japanese": "風の強い",
+      "pos": "adjective",
+      "registerNotes": "ウェリントンは windy なことで有名です。",
+      "audio": "audio/en/words/w-windy.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

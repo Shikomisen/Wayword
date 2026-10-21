@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-can",
+  "connector": "can",
+  "gloss": "〜できる",
+  "title": "can — 〜できる、〜してもいい",
+  "pattern": "主語 ＋ can ＋ 動詞 / can’t ＋ 動詞 / Can you …?",
+  "explanation": "can は「〜できる」。後ろの動詞はいつもそのままの形で、he・she でも -s は付きません：She can swim.。否定は can’t、質問は Can を前に出します：Can you speak Japanese?（日本語を話せますか）。Can I…? は「〜してもいいですか」にもなります。",
+  "natural": "Can you help me?（手伝ってもらえますか）、Can I sit here?（ここに座ってもいいですか）は、旅行中にとても役立ちます。",
+  "stiff": "can の後に to は付けません：I can to swim. は×。She cans も×です。",
+  "examples": [
+    {
+      "id": "gx-can-1",
+      "english": "I can speak a little English.",
+      "japanese": "英語を少し話せます。",
+      "chunks": [
+        {
+          "t": "I ",
+          "w": "w-i"
+        },
+        {
+          "t": "can speak ",
+          "w": "w-speak"
+        },
+        {
+          "t": "a little English."
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "can",
+        "after": " speak a little English.",
+        "options": [
+          "can",
+          "can to",
+          "am"
+        ],
+        "why": "できる：can ＋ 動詞。to は付けません。"
+      },
+      "audio": "audio/en/grammar/gx-can-1.mp3",
+      "tags": [
+        "文法",
+        "can"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-can-2",
+      "english": "Can you help me?",
+      "japanese": "手伝ってもらえますか。",
+      "chunks": [
+        {
+          "t": "Can "
+        },
+        {
+          "t": "you ",
+          "w": "w-you"
+        },
+        {
+          "t": "help me?",
+          "w": "w-help"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Can",
+        "after": " you help me?",
+        "options": [
+          "Can",
+          "Are",
+          "Do"
+        ],
+        "why": "頼む時は Can you…?。"
+      },
+      "audio": "audio/en/grammar/gx-can-2.mp3",
+      "tags": [
+        "文法",
+        "can"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-can-3",
+      "english": "Can I sit here?",
+      "japanese": "ここに座ってもいいですか。",
+      "chunks": [
+        {
+          "t": "Can I ",
+          "w": "w-i"
+        },
+        {
+          "t": "sit ",
+          "w": "w-sit"
+        },
+        {
+          "t": "here?",
+          "w": "w-here"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Can",
+        "after": " I sit here?",
+        "options": [
+          "Can",
+          "Am",
+          "Do"
+        ],
+        "why": "許可を求める時は Can I…?。"
+      },
+      "audio": "audio/en/grammar/gx-can-3.mp3",
+      "tags": [
+        "文法",
+        "can"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-can-4",
+      "english": "She can’t come tomorrow.",
+      "japanese": "彼女は明日来られません。",
+      "chunks": [
+        {
+          "t": "She ",
+          "w": "w-she"
+        },
+        {
+          "t": "can’t come ",
+          "w": "w-come"
+        },
+        {
+          "t": "tomorrow.",
+          "w": "w-tomorrow"
+        }
+      ],
+      "gap": {
+        "before": "She ",
+        "answer": "can’t",
+        "after": " come tomorrow.",
+        "options": [
+          "can’t",
+          "doesn’t can",
+          "not can"
+        ],
+        "why": "できない：can’t ＋ 動詞。"
+      },
+      "audio": "audio/en/grammar/gx-can-4.mp3",
+      "tags": [
+        "文法",
+        "can"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

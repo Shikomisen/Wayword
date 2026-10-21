@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-wa",
+  "connector": "は",
+  "gloss": "as for… (the topic)",
+  "title": "は — the topic: as for…",
+  "pattern": "topic は comment",
+  "explanation": "は (said “wa”) marks what you’re talking about, and the rest of the sentence says something about it: {今日|きょう}は{休|やす}みです — today, I’m off. Think “as for…”. It’s written は but always said wa as a particle. Once the topic is clear, Japanese leaves it out: there’s no need to keep saying {私|わたし}は.",
+  "natural": "Good for introducing yourself, for contrasts (コーヒーは{好|す}きです — coffee, I do like), and for short questions: お{名前|なまえ}は？ — and your name?",
+  "stiff": "Starting every sentence with {私|わたし}は sounds stiff and foreign. Say it once; after that, leave it out.",
+  "examples": [
+    {
+      "id": "gx-wa-1",
+      "japanese": "今日は休みです。",
+      "furigana": "{今日|きょう}は{休|やす}みです。",
+      "romaji": "kyō wa yasumi desu",
+      "english": "Today is my day off.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{休|やす}み",
+          "w": "w-yasumi"
+        },
+        {
+          "t": "です。"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}",
+        "answer": "は",
+        "after": "{休|やす}みです。",
+        "options": [
+          "は",
+          "を",
+          "に"
+        ],
+        "why": "Today is the topic: as for today, it’s a day off."
+      },
+      "audio": "audio/ja/grammar/gx-wa-1.mp3",
+      "tags": [
+        "grammar",
+        "wa"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-wa-2",
+      "japanese": "お名前は何ですか。",
+      "furigana": "お{名前|なまえ}は{何|なん}ですか。",
+      "romaji": "o-namae wa nan desu ka",
+      "english": "What’s your name?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "お{名前|なまえ}は",
+          "w": "w-namae"
+        },
+        {
+          "t": "{何|なん}",
+          "w": "w-nani"
+        },
+        {
+          "t": "ですか。"
+        }
+      ],
+      "gap": {
+        "before": "お{名前|なまえ}",
+        "answer": "は",
+        "after": "{何|なん}ですか。",
+        "options": [
+          "は",
+          "が",
+          "を"
+        ],
+        "why": "The topic is the name; the question is what it is."
+      },
+      "audio": "audio/ja/grammar/gx-wa-2.mp3",
+      "tags": [
+        "grammar",
+        "wa"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-wa-3",
+      "japanese": "兄は会社員です。",
+      "furigana": "{兄|あに}は{会社員|かいしゃいん}です。",
+      "romaji": "ani wa kaishain desu",
+      "english": "My older brother is an office worker.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{兄|あに}は",
+          "w": "w-ani"
+        },
+        {
+          "t": "{会社員|かいしゃいん}",
+          "w": "w-kaishain"
+        },
+        {
+          "t": "です。"
+        }
+      ],
+      "gap": {
+        "before": "{兄|あに}",
+        "answer": "は",
+        "after": "{会社員|かいしゃいん}です。",
+        "options": [
+          "は",
+          "の",
+          "を"
+        ],
+        "why": "Talking about your brother: 兄は…"
+      },
+      "audio": "audio/ja/grammar/gx-wa-3.mp3",
+      "tags": [
+        "grammar",
+        "wa"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-wa-4",
+      "japanese": "日曜日は家にいます。",
+      "furigana": "{日曜日|にちようび}は{家|いえ}にいます。",
+      "romaji": "nichiyōbi wa ie ni imasu",
+      "english": "On Sundays I’m at home.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日曜日|にちようび}は"
+        },
+        {
+          "t": "{家|いえ}に",
+          "w": "w-ie"
+        },
+        {
+          "t": "います。"
+        }
+      ],
+      "gap": {
+        "before": "{日曜日|にちようび}",
+        "answer": "は",
+        "after": "{家|いえ}にいます。",
+        "options": [
+          "は",
+          "を",
+          "で"
+        ],
+        "why": "Sundays are the topic: as for Sundays, I’m at home."
+      },
+      "audio": "audio/ja/grammar/gx-wa-4.mp3",
+      "tags": [
+        "grammar",
+        "wa"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -908,3 +908,24 @@ body.at-home:has(.update-banner) #app { padding-top: 12px; }
 .about-section { margin: 24px 0 16px; }
 .about-version { font-variant-numeric: tabular-nums; }
 .home-footer { margin: 28px 0 8px; text-align: center; font-size: 0.8rem; color: var(--fg-muted); font-variant-numeric: tabular-nums; }
+
+/* ---------- levels (README §7.10) ---------- */
+
+.level-head { margin: 0 0 8px; }
+/* Three equal buttons; a long name ("Intermediate", at the largest text size) wraps inside its own. */
+.level-choice .segment {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px;
+  padding: 6px 4px; line-height: 1.2; white-space: normal; overflow-wrap: anywhere; min-width: 0;
+}
+.level-icon { font-size: 1.1rem; line-height: 1; }
+.level-name { font-size: 0.85rem; }
+/* The learner's own level, when another is being shown. */
+.segment.is-mine:not(.is-on) .level-name { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
+.level-description { margin: 8px 2px 0; }
+.level-switch { margin: 8px 0 0; }
+.level-today .level-row .row-title { font-size: 1.05rem; }
+.next-step .btn, .level-up .btn { flex: none; white-space: nowrap; }
+.level-group { margin-top: 10px; }
+.level-subtitle { font-size: 0.95rem; margin: 14px 0 8px; color: var(--fg-muted); }
+.placement-level { margin: 18px 0 8px; }
+.placement-level p { margin: 8px 0; }

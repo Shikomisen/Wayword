@@ -71,9 +71,9 @@
         "w-issho",
         "w-hitori",
         "s-09",
-        "cx-sorekara-3",
-        "cx-tara-2",
-        "gre-16"
+        "gx-kara-made-3",
+        "gx-to-and-4",
+        "gx-mashou-1"
       ]
     },
     {
@@ -101,6 +101,8 @@
       ],
       "difficulty": 1,
       "seenIn": [
+        "gx-aru-iru-2",
+        "gx-aru-iru-4",
         "num-16",
         "num-17",
         "num-18"
@@ -189,6 +191,7 @@
       ],
       "difficulty": 1,
       "seenIn": [
+        "gx-kara-made-2",
         "num-07",
         "num-21"
       ]
@@ -244,6 +247,7 @@
       "difficulty": 2,
       "note": "なな when spoken alone — しち is too easily confused with いち over background noise.",
       "seenIn": [
+        "gx-ni-1",
         "num-11"
       ]
     },
@@ -296,7 +300,10 @@
         "numbers"
       ],
       "difficulty": 2,
-      "note": "きゅう alone, but く in 九時 (くじ, nine o'clock)."
+      "note": "きゅう alone, but く in 九時 (くじ, nine o'clock).",
+      "seenIn": [
+        "gx-kara-made-2"
+      ]
     },
     {
       "id": "kan-juu",
@@ -501,7 +508,10 @@
         "kanji",
         "time"
       ],
-      "difficulty": 2
+      "difficulty": 2,
+      "seenIn": [
+        "gx-nai-4"
+      ]
     },
     {
       "id": "kan-ka",
@@ -611,6 +621,8 @@
       "difficulty": 2,
       "note": "お金 (おかね) is money. 金曜日 is Friday. Same kanji.",
       "seenIn": [
+        "w-okane",
+        "gx-nai-4",
         "cx-tame-3",
         "num-09"
       ]
@@ -664,7 +676,10 @@
         "time"
       ],
       "difficulty": 3,
-      "note": "Attaches to the element kanji: 月曜日 Monday, 火曜日 Tuesday, and so on."
+      "note": "Attaches to the element kanji: 月曜日 Monday, 火曜日 Tuesday, and so on.",
+      "seenIn": [
+        "gx-wa-4"
+      ]
     },
     {
       "id": "kan-ji",
@@ -694,10 +709,10 @@
       "seenIn": [
         "w-jikan",
         "w-tokidoki",
-        "cx-demo-2",
-        "cx-tara-2",
-        "cx-shi-4",
-        "num-10"
+        "w-tokei",
+        "gx-ni-1",
+        "gx-kara-made-2",
+        "gx-kara-made-4"
       ]
     },
     {
@@ -731,9 +746,9 @@
         "w-wakaru",
         "s-06",
         "s-14",
-        "cx-ba-4",
-        "num-11",
-        "num-21"
+        "gx-ga-subject-4",
+        "gx-mo-3",
+        "cx-ba-4"
       ]
     },
     {
@@ -1114,6 +1129,8 @@
       "difficulty": 2,
       "note": "The 東 in 東京 (Tokyo) — 'eastern capital'.",
       "seenIn": [
+        "gx-ni-2",
+        "gx-teiru-3",
         "tra-01"
       ]
     },
@@ -1295,10 +1312,10 @@
       "seenIn": [
         "w-eki",
         "s-06",
-        "cx-te-2",
-        "cx-to-2",
-        "cx-ba-4",
-        "cx-nagara-2"
+        "gx-de-4",
+        "gx-kara-made-1",
+        "gx-aru-iru-1",
+        "cx-te-2"
       ]
     },
     {
@@ -1552,10 +1569,10 @@
       "seenIn": [
         "w-iku",
         "w-ryokou",
-        "cx-soshite-1",
-        "cx-sorekara-1",
-        "cx-dakara-4",
-        "cx-kedo-3"
+        "gx-ni-2",
+        "gx-de-2",
+        "gx-mo-1",
+        "gx-to-and-3"
       ]
     },
     {
@@ -2290,11 +2307,11 @@
       "note": "大盛り (おおもり) on a menu is a large portion, usually for very little extra.",
       "seenIn": [
         "w-ookii",
+        "gx-i-adj-2",
         "gre-09",
         "gre-10",
         "tra-03",
-        "sma-04",
-        "cas-07"
+        "sma-04"
       ]
     },
     {

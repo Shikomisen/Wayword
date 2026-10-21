@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-kara-made",
+  "connector": "から・まで",
+  "gloss": "from… to, until",
+  "title": "から〜まで — from… to, until",
+  "pattern": "A から B まで",
+  "explanation": "から is “from” and まで is “to” or “until”, for places and for times: {駅|えき}から{家|いえ}まで — from the station to home; 9{時|じ}から5{時|じ}まで — from nine to five. Either one works alone: {明日|あした}から — from tomorrow.",
+  "natural": "Opening hours, journeys and plans: {何時|なんじ}までですか — until what time (are you open)?",
+  "stiff": "This から is “from”, not the から that means “because” (a Basic lesson). What comes before it tells them apart: a place or a time, or a whole reason.",
+  "examples": [
+    {
+      "id": "gx-kara-made-1",
+      "japanese": "駅から家まで歩きます。",
+      "furigana": "{駅|えき}から{家|いえ}まで{歩|ある}きます。",
+      "romaji": "eki kara ie made arukimasu",
+      "english": "I walk from the station to home.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{駅|えき}から",
+          "w": "w-eki"
+        },
+        {
+          "t": "{家|いえ}まで",
+          "w": "w-ie"
+        },
+        {
+          "t": "{歩|ある}きます。",
+          "w": "w-aruku"
+        }
+      ],
+      "gap": {
+        "before": "{駅|えき}から{家|いえ}",
+        "answer": "まで",
+        "after": "{歩|ある}きます。",
+        "options": [
+          "まで",
+          "から",
+          "に"
+        ],
+        "why": "As far as home: まで."
+      },
+      "audio": "audio/ja/grammar/gx-kara-made-1.mp3",
+      "tags": [
+        "grammar",
+        "kara-made"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-kara-made-2",
+      "japanese": "仕事は九時から五時までです。",
+      "furigana": "{仕事|しごと}は{九時|くじ}から{五時|ごじ}までです。",
+      "romaji": "shigoto wa kuji kara goji made desu",
+      "english": "Work is from nine to five.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{仕事|しごと}は",
+          "w": "w-shigoto"
+        },
+        {
+          "t": "{九時|くじ}から"
+        },
+        {
+          "t": "{五時|ごじ}までです。"
+        }
+      ],
+      "gap": {
+        "before": "{仕事|しごと}は{九時|くじ}",
+        "answer": "から",
+        "after": "{五時|ごじ}までです。",
+        "options": [
+          "から",
+          "まで",
+          "に"
+        ],
+        "why": "Starting at nine: から."
+      },
+      "audio": "audio/ja/grammar/gx-kara-made-2.mp3",
+      "tags": [
+        "grammar",
+        "kara-made"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-kara-made-3",
+      "japanese": "明日から一週間、休みだよ。",
+      "furigana": "{明日|あした}から{一週間|いっしゅうかん}、{休|やす}みだよ。",
+      "romaji": "ashita kara isshūkan, yasumi da yo",
+      "english": "I’m off for a week from tomorrow.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{明日|あした}から",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{一週間|いっしゅうかん}、"
+        },
+        {
+          "t": "{休|やす}みだよ。",
+          "w": "w-yasumi"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}",
+        "answer": "から",
+        "after": "{一週間|いっしゅうかん}、{休|やす}みだよ。",
+        "options": [
+          "から",
+          "まで",
+          "で"
+        ],
+        "why": "Starting tomorrow: 明日から."
+      },
+      "audio": "audio/ja/grammar/gx-kara-made-3.mp3",
+      "tags": [
+        "grammar",
+        "kara-made"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-kara-made-4",
+      "japanese": "お店は何時までですか。",
+      "furigana": "お{店|みせ}は{何時|なんじ}までですか。",
+      "romaji": "o-mise wa nanji made desu ka",
+      "english": "Until what time is the shop open?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "お{店|みせ}は",
+          "w": "w-mise"
+        },
+        {
+          "t": "{何時|なんじ}"
+        },
+        {
+          "t": "までですか。"
+        }
+      ],
+      "gap": {
+        "before": "お{店|みせ}は{何時|なんじ}",
+        "answer": "まで",
+        "after": "ですか。",
+        "options": [
+          "まで",
+          "から",
+          "に"
+        ],
+        "why": "Until when: まで."
+      },
+      "audio": "audio/ja/grammar/gx-kara-made-4.mp3",
+      "tags": [
+        "grammar",
+        "kara-made"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

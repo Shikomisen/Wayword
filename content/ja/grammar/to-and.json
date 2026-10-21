@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-to-and",
+  "connector": "と",
+  "gloss": "and; with",
+  "title": "と — and, with",
+  "pattern": "A と B / person と verb",
+  "explanation": "と joins nouns into a list: パンと{卵|たまご} — bread and eggs. It also means “with” someone: {友達|ともだち}と{映画|えいが}を{見|み}ます — I’m watching a film with a friend. It only joins nouns, never whole sentences.",
+  "natural": "For a list that goes on (“…and so on”), use や: パンや{卵|たまご} — bread, eggs and the like.",
+  "stiff": "To join actions, と is wrong: use the て form (a Basic lesson). {食|た}べて{寝|ね}る is “eat and sleep”; {食|た}べると{寝|ね}る means “whenever I eat, I sleep”.",
+  "examples": [
+    {
+      "id": "gx-to-and-1",
+      "japanese": "パンと卵を買いました。",
+      "furigana": "{パン|ぱん}と{卵|たまご}を{買|か}いました。",
+      "romaji": "pan to tamago o kaimashita",
+      "english": "I bought bread and eggs.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{パン|ぱん}と",
+          "w": "w-pan"
+        },
+        {
+          "t": "{卵|たまご}を",
+          "w": "w-tamago"
+        },
+        {
+          "t": "{買|か}いました。",
+          "w": "w-kau"
+        }
+      ],
+      "gap": {
+        "before": "{パン|ぱん}",
+        "answer": "と",
+        "after": "{卵|たまご}を{買|か}いました。",
+        "options": [
+          "と",
+          "も",
+          "の"
+        ],
+        "why": "A list of things: と."
+      },
+      "audio": "audio/ja/grammar/gx-to-and-1.mp3",
+      "tags": [
+        "grammar",
+        "to-and"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-to-and-2",
+      "japanese": "週末、家族と出かけます。",
+      "furigana": "{週末|しゅうまつ}、{家族|かぞく}と{出|で}かけます。",
+      "romaji": "shūmatsu, kazoku to dekakemasu",
+      "english": "I’m going out with my family at the weekend.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{週末|しゅうまつ}、",
+          "w": "w-shuumatsu"
+        },
+        {
+          "t": "{家族|かぞく}と",
+          "w": "w-kazoku"
+        },
+        {
+          "t": "{出|で}かけます。",
+          "w": "w-dekakeru"
+        }
+      ],
+      "gap": {
+        "before": "{週末|しゅうまつ}、{家族|かぞく}",
+        "answer": "と",
+        "after": "{出|で}かけます。",
+        "options": [
+          "と",
+          "に",
+          "を"
+        ],
+        "why": "With your family: 家族と."
+      },
+      "audio": "audio/ja/grammar/gx-to-and-2.mp3",
+      "tags": [
+        "grammar",
+        "to-and"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-to-and-3",
+      "japanese": "誰と行くの？",
+      "furigana": "{誰|だれ}と{行|い}くの？",
+      "romaji": "dare to iku no?",
+      "english": "Who are you going with?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{誰|だれ}と",
+          "w": "w-dare"
+        },
+        {
+          "t": "{行|い}くの？",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{誰|だれ}",
+        "answer": "と",
+        "after": "{行|い}くの？",
+        "options": [
+          "と",
+          "が",
+          "を"
+        ],
+        "why": "With whom: 誰と."
+      },
+      "audio": "audio/ja/grammar/gx-to-and-3.mp3",
+      "tags": [
+        "grammar",
+        "to-and"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-to-and-4",
+      "japanese": "友達と一緒に料理を作ります。",
+      "furigana": "{友達|ともだち}と{一緒|いっしょ}に{料理|りょうり}を{作|つく}ります。",
+      "romaji": "tomodachi to issho ni ryōri o tsukurimasu",
+      "english": "I cook with a friend.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{友達|ともだち}と",
+          "w": "w-tomodachi"
+        },
+        {
+          "t": "{一緒|いっしょ}に",
+          "w": "w-issho"
+        },
+        {
+          "t": "{料理|りょうり}を",
+          "w": "w-ryouri"
+        },
+        {
+          "t": "{作|つく}ります。",
+          "w": "w-tsukuru"
+        }
+      ],
+      "gap": {
+        "before": "{友達|ともだち}",
+        "answer": "と",
+        "after": "{一緒|いっしょ}に{料理|りょうり}を{作|つく}ります。",
+        "options": [
+          "と",
+          "に",
+          "の"
+        ],
+        "why": "With someone: と, often with 一緒に (together)."
+      },
+      "audio": "audio/ja/grammar/gx-to-and-4.mp3",
+      "tags": [
+        "grammar",
+        "to-and"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-nai",
+  "connector": "〜ない",
+  "gloss": "casual verbs: do and don’t",
+  "title": "〜る・〜ない — casual “do” and “don’t”",
+  "pattern": "dictionary form ({行|い}く) / ない form ({行|い}かない)",
+  "explanation": "With friends, family and a partner, verbs drop ます. “Do” is the dictionary form, the one on every word card: {行|い}く, {食|た}べる. “Don’t” is the ない form: {行|い}かない, {食|た}べない. For る-verbs like {食|た}べる, swap る for ない. For the others, the last sound moves to the あ row: {行|い}く → {行|い}かない, {飲|の}む → {飲|の}まない. する → しない, {来|く}る → {来|こ}ない, and ある → ない.",
+  "natural": "This is how you’ll talk with a partner and friends: {今日|きょう}、{行|い}く？ — ううん、{行|い}かない。",
+  "stiff": "Plain forms sound rude to staff, strangers and a partner’s parents: keep ます there. And “there isn’t” is just ない, never あらない.",
+  "examples": [
+    {
+      "id": "gx-nai-1",
+      "japanese": "明日、一緒に行く？",
+      "furigana": "{明日|あした}、{一緒|いっしょ}に{行|い}く？",
+      "romaji": "ashita, issho ni iku?",
+      "english": "Are you coming with me tomorrow?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{明日|あした}、",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{一緒|いっしょ}に",
+          "w": "w-issho"
+        },
+        {
+          "t": "{行|い}く？",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}、{一緒|いっしょ}に",
+        "answer": "{行|い}く",
+        "after": "？",
+        "options": [
+          "{行|い}く",
+          "{行|い}かない",
+          "{行|い}った"
+        ],
+        "why": "With a friend: the plain 行く."
+      },
+      "audio": "audio/ja/grammar/gx-nai-1.mp3",
+      "tags": [
+        "grammar",
+        "nai"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-nai-2",
+      "japanese": "肉は食べない。",
+      "furigana": "{肉|にく}は{食|た}べない。",
+      "romaji": "niku wa tabenai",
+      "english": "I don’t eat meat.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{肉|にく}は",
+          "w": "w-niku"
+        },
+        {
+          "t": "{食|た}べない。",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "{肉|にく}は{食|た}べ",
+        "answer": "ない",
+        "after": "。",
+        "options": [
+          "ない",
+          "る",
+          "た"
+        ],
+        "why": "る-verb: 食べる → 食べない."
+      },
+      "audio": "audio/ja/grammar/gx-nai-2.mp3",
+      "tags": [
+        "grammar",
+        "nai"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-nai-3",
+      "japanese": "今日はお酒を飲まない。",
+      "furigana": "{今日|きょう}はお{酒|さけ}を{飲|の}まない。",
+      "romaji": "kyō wa o-sake o nomanai",
+      "english": "I’m not drinking today.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "お{酒|さけ}を",
+          "w": "w-osake"
+        },
+        {
+          "t": "{飲|の}まない。",
+          "w": "w-nomu"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}はお{酒|さけ}を{飲|の}",
+        "answer": "まない",
+        "after": "。",
+        "options": [
+          "まない",
+          "みない",
+          "むない"
+        ],
+        "why": "The last sound moves to the あ row: 飲む → 飲まない."
+      },
+      "audio": "audio/ja/grammar/gx-nai-3.mp3",
+      "tags": [
+        "grammar",
+        "nai"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-nai-4",
+      "japanese": "今月はお金がない。",
+      "furigana": "{今月|こんげつ}はお{金|かね}がない。",
+      "romaji": "kongetsu wa o-kane ga nai",
+      "english": "I’m broke this month.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今月|こんげつ}は"
+        },
+        {
+          "t": "お{金|かね}が",
+          "w": "w-okane"
+        },
+        {
+          "t": "ない。"
+        }
+      ],
+      "gap": {
+        "before": "{今月|こんげつ}はお{金|かね}が",
+        "answer": "ない",
+        "after": "。",
+        "options": [
+          "ない",
+          "あらない",
+          "いない"
+        ],
+        "why": "ある’s opposite is just ない."
+      },
+      "audio": "audio/ja/grammar/gx-nai-4.mp3",
+      "tags": [
+        "grammar",
+        "nai"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

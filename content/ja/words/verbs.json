@@ -8,6 +8,7 @@
       "id": "w-iku",
       "japanese": "行く",
       "furigana": "{行|い}く",
+      "romaji": "iku",
       "english": "to go",
       "pos": "verb",
       "forms": {
@@ -23,6 +24,7 @@
       "id": "w-kuru",
       "japanese": "来る",
       "furigana": "{来|く}る",
+      "romaji": "kuru",
       "english": "to come",
       "pos": "verb",
       "forms": {
@@ -38,6 +40,7 @@
       "id": "w-kaeru",
       "japanese": "帰る",
       "furigana": "{帰|かえ}る",
+      "romaji": "kaeru",
       "audioHint": "帰る",
       "english": "to go home; to return",
       "pos": "verb",
@@ -52,6 +55,7 @@
     {
       "id": "w-suru",
       "japanese": "する",
+      "romaji": "suru",
       "english": "to do",
       "pos": "verb",
       "forms": {
@@ -67,6 +71,7 @@
       "id": "w-miru",
       "japanese": "見る",
       "furigana": "{見|み}る",
+      "romaji": "miru",
       "english": "to see; to watch; to look",
       "pos": "verb",
       "forms": {
@@ -81,6 +86,7 @@
       "id": "w-kiku",
       "japanese": "聞く",
       "furigana": "{聞|き}く",
+      "romaji": "kiku",
       "english": "to listen; to hear; to ask",
       "pos": "verb",
       "forms": {
@@ -95,6 +101,7 @@
       "id": "w-hanasu",
       "japanese": "話す",
       "furigana": "{話|はな}す",
+      "romaji": "hanasu",
       "english": "to talk, to speak",
       "pos": "verb",
       "forms": {
@@ -109,6 +116,7 @@
       "id": "w-iu",
       "japanese": "言う",
       "furigana": "{言|い}う",
+      "romaji": "iu",
       "english": "to say",
       "pos": "verb",
       "forms": {
@@ -123,6 +131,7 @@
       "id": "w-yomu",
       "japanese": "読む",
       "furigana": "{読|よ}む",
+      "romaji": "yomu",
       "english": "to read",
       "pos": "verb",
       "forms": {
@@ -137,6 +146,7 @@
       "id": "w-kaku",
       "japanese": "書く",
       "furigana": "{書|か}く",
+      "romaji": "kaku",
       "english": "to write",
       "pos": "verb",
       "forms": {
@@ -151,6 +161,7 @@
       "id": "w-matsu",
       "japanese": "待つ",
       "furigana": "{待|ま}つ",
+      "romaji": "matsu",
       "english": "to wait",
       "pos": "verb",
       "forms": {
@@ -165,6 +176,7 @@
       "id": "w-au",
       "japanese": "会う",
       "furigana": "{会|あ}う",
+      "romaji": "au",
       "english": "to meet, to see (someone)",
       "pos": "verb",
       "forms": {
@@ -180,6 +192,7 @@
       "id": "w-kau",
       "japanese": "買う",
       "furigana": "{買|か}う",
+      "romaji": "kau",
       "english": "to buy",
       "pos": "verb",
       "forms": {
@@ -194,6 +207,7 @@
       "id": "w-tsukau",
       "japanese": "使う",
       "furigana": "{使|つか}う",
+      "romaji": "tsukau",
       "english": "to use",
       "pos": "verb",
       "forms": {
@@ -208,6 +222,7 @@
       "id": "w-wakaru",
       "japanese": "分かる",
       "furigana": "{分|わ}かる",
+      "romaji": "wakaru",
       "english": "to understand",
       "pos": "verb",
       "forms": {
@@ -223,6 +238,7 @@
       "id": "w-shiru",
       "japanese": "知る",
       "furigana": "{知|し}る",
+      "romaji": "shiru",
       "audioHint": "知る",
       "english": "to get to know",
       "pos": "verb",
@@ -239,6 +255,7 @@
       "id": "w-omou",
       "japanese": "思う",
       "furigana": "{思|おも}う",
+      "romaji": "omou",
       "english": "to think",
       "pos": "verb",
       "forms": {
@@ -254,6 +271,7 @@
       "id": "w-yasumu",
       "japanese": "休む",
       "furigana": "{休|やす}む",
+      "romaji": "yasumu",
       "english": "to rest; to take a day off",
       "pos": "verb",
       "forms": {
@@ -268,6 +286,7 @@
       "id": "w-hataraku",
       "japanese": "働く",
       "furigana": "{働|はたら}く",
+      "romaji": "hataraku",
       "english": "to work",
       "pos": "verb",
       "forms": {
@@ -282,6 +301,7 @@
       "id": "w-asobu",
       "japanese": "遊ぶ",
       "furigana": "{遊|あそ}ぶ",
+      "romaji": "asobu",
       "english": "to hang out, to have fun",
       "pos": "verb",
       "forms": {

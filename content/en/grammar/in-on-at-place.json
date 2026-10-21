@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-in-on-at-place",
+  "connector": "in / on / at",
+  "gloss": "場所の前置詞",
+  "title": "in, on, at（場所）— 〜の中に、〜の上に、〜で",
+  "pattern": "in（中）/ on（表面の上）/ at（その地点）/ under（下）/ next to（隣）",
+  "explanation": "in は「〜の中に」：in the bag、in Auckland（町や国も in）。on は「〜の上に（くっついて）」：on the table、on the wall。at は「〜で（その地点で）」：at the station、at home、at work。under（〜の下）、next to（〜の隣）も便利です。",
+  "natural": "待ち合わせや、物の場所を言う時に：I’m at the station.（駅にいます）、Your phone’s on the table.（スマホはテーブルの上だよ）。",
+  "stiff": "日本語の「に」「で」は1つでも、英語では in・on・at を使い分けます。I’m in the station. は「駅の建物の中」。待ち合わせなら I’m at the station.。",
+  "examples": [
+    {
+      "id": "gx-in-on-at-place-1",
+      "english": "Your phone is on the table.",
+      "japanese": "スマホはテーブルの上にありますよ。",
+      "chunks": [
+        {
+          "t": "Your phone ",
+          "w": "w-phone"
+        },
+        {
+          "t": "is on "
+        },
+        {
+          "t": "the table.",
+          "w": "w-table"
+        }
+      ],
+      "gap": {
+        "before": "Your phone is ",
+        "answer": "on",
+        "after": " the table.",
+        "options": [
+          "on",
+          "in",
+          "at"
+        ],
+        "why": "テーブルの表面の上：on。"
+      },
+      "audio": "audio/en/grammar/gx-in-on-at-place-1.mp3",
+      "tags": [
+        "文法",
+        "in / on / at"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-in-on-at-place-2",
+      "english": "I’m at the station now.",
+      "japanese": "今、駅にいます。",
+      "chunks": [
+        {
+          "t": "I’m ",
+          "w": "w-i"
+        },
+        {
+          "t": "at the station "
+        },
+        {
+          "t": "now.",
+          "w": "w-now"
+        }
+      ],
+      "gap": {
+        "before": "I’m ",
+        "answer": "at",
+        "after": " the station now.",
+        "options": [
+          "at",
+          "in",
+          "on"
+        ],
+        "why": "待ち合わせの地点：at。"
+      },
+      "audio": "audio/en/grammar/gx-in-on-at-place-2.mp3",
+      "tags": [
+        "文法",
+        "in / on / at"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-in-on-at-place-3",
+      "english": "The keys are in my bag.",
+      "japanese": "鍵はかばんの中です。",
+      "chunks": [
+        {
+          "t": "The keys ",
+          "w": "w-key"
+        },
+        {
+          "t": "are in "
+        },
+        {
+          "t": "my bag."
+        }
+      ],
+      "gap": {
+        "before": "The keys are ",
+        "answer": "in",
+        "after": " my bag.",
+        "options": [
+          "in",
+          "on",
+          "at"
+        ],
+        "why": "かばんの中：in。"
+      },
+      "audio": "audio/en/grammar/gx-in-on-at-place-3.mp3",
+      "tags": [
+        "文法",
+        "in / on / at"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-in-on-at-place-4",
+      "english": "The bathroom is next to the kitchen.",
+      "japanese": "お手洗いはキッチンの隣です。",
+      "chunks": [
+        {
+          "t": "The bathroom ",
+          "w": "w-bathroom"
+        },
+        {
+          "t": "is next to "
+        },
+        {
+          "t": "the kitchen.",
+          "w": "w-kitchen"
+        }
+      ],
+      "gap": {
+        "before": "The bathroom is ",
+        "answer": "next to",
+        "after": " the kitchen.",
+        "options": [
+          "next to",
+          "in",
+          "under"
+        ],
+        "why": "隣：next to。"
+      },
+      "audio": "audio/en/grammar/gx-in-on-at-place-4.mp3",
+      "tags": [
+        "文法",
+        "in / on / at"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

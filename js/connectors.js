@@ -21,7 +21,9 @@ import { t } from './i18n.js';
 import {
   el, clear, targetNode, meaningNode, audioButton, phraseBlock, furiganaMode, proseNode,
 } from './render.js';
-import { header, playItem, studySettings, toggleStrip, wordLinks, lessonsCopy, removeDeck } from './shared.js';
+import {
+  header, playItem, studySettings, toggleStrip, wordLinks, lessonsCopy, removeDeck, shownLevel, levelHead,
+} from './shared.js';
 import { DRILL, drillsFor, buildSession, tilesFor, checkTiles, shuffle } from './drills.js';
 
 // A mixed session is short: a few minutes, not a test.
@@ -33,19 +35,24 @@ export async function renderConnectors(root) {
   const content = await loadContent();
   const stats = await deck.getLessonStats();
   const groups = content.lessonGroups.length ? content.lessonGroups : [{ id: undefined, title: null }];
-  const practised = content.lessons.filter((l) => stats[l.id]).length;
   const copy = lessonsCopy(content);
   const lang = content.course.target;
+  // With levels, one level's lessons at a time (README §7.10).
+  const mine = content.features.levels ? await deck.getLevel() : null;
+  const shown = content.features.levels ? shownLevel(content, mine) : null;
+  const inView = content.lessons.filter((l) => !shown || l.level === shown);
+  const practised = inView.filter((l) => stats[l.id]).length;
 
   root.append(
     el('div', { class: 'screen' },
       header(copy.title, copy.lede),
+      shown ? levelHead(content, shown, mine, () => renderConnectors(clear(root))) : null,
       el('div', { class: 'action-row' },
         el('a', { class: 'btn btn-primary', href: link('/connectors/mixed') }, t('connectors.mixed')),
         el('span', { class: 'muted small' },
-          t('connectors.practisedCount', { n: practised, total: content.lessons.length }))),
+          t('connectors.practisedCount', { n: practised, total: inView.length }))),
       groups.map((g) => {
-        const lessons = content.lessons.filter((l) => l.group === g.id);
+        const lessons = inView.filter((l) => l.group === g.id);
         return lessons.length
           ? el('section', {},
               g.title ? el('h2', { class: 'section-title' }, g.title) : null,

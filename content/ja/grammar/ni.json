@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ni",
+  "connector": "に",
+  "gloss": "at a time; to a place; in",
+  "title": "に — at, to, in",
+  "pattern": "time に / place に {行|い}く・{来|く}る・いる",
+  "explanation": "に points at a spot: a time ({七時|しちじ}に{起|お}きます — I get up at seven), a place you go to ({駅|えき}に{行|い}きます — I’m going to the station), or where someone or something is ({家|いえ}にいます — I’m at home). It’s also who you meet or give something to: {友達|ともだち}に{会|あ}います.",
+  "natural": "Words like {今日|きょう}, {明日|あした} and {毎日|まいにち} don’t take に: {明日|あした}{行|い}きます. Clock times, days of the week and dates do.",
+  "stiff": "{明日|あした}に and {今|いま}に sound wrong. And for where an action happens (eating, working), use で, not に: that’s the next lesson.",
+  "examples": [
+    {
+      "id": "gx-ni-1",
+      "japanese": "毎日、七時に起きます。",
+      "furigana": "{毎日|まいにち}、{七時|しちじ}に{起|お}きます。",
+      "romaji": "mainichi, shichiji ni okimasu",
+      "english": "I get up at seven every day.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{毎日|まいにち}、",
+          "w": "w-mainichi"
+        },
+        {
+          "t": "{七時|しちじ}に"
+        },
+        {
+          "t": "{起|お}きます。",
+          "w": "w-okiru"
+        }
+      ],
+      "gap": {
+        "before": "{毎日|まいにち}、{七時|しちじ}",
+        "answer": "に",
+        "after": "{起|お}きます。",
+        "options": [
+          "に",
+          "で",
+          "を"
+        ],
+        "why": "A clock time takes に."
+      },
+      "audio": "audio/ja/grammar/gx-ni-1.mp3",
+      "tags": [
+        "grammar",
+        "ni"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ni-2",
+      "japanese": "明日、東京に行きます。",
+      "furigana": "{明日|あした}、{東京|とうきょう}に{行|い}きます。",
+      "romaji": "ashita, Tōkyō ni ikimasu",
+      "english": "I’m going to Tokyo tomorrow.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}、",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{東京|とうきょう}に"
+        },
+        {
+          "t": "{行|い}きます。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}、{東京|とうきょう}",
+        "answer": "に",
+        "after": "{行|い}きます。",
+        "options": [
+          "に",
+          "へ",
+          "を"
+        ],
+        "ok": [
+          "へ"
+        ],
+        "note": "へ works too: it points the way, a little like “towards”.",
+        "why": "Where you go: に."
+      },
+      "audio": "audio/ja/grammar/gx-ni-2.mp3",
+      "tags": [
+        "grammar",
+        "ni"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ni-3",
+      "japanese": "今、家にいる。",
+      "furigana": "{今|いま}、{家|いえ}にいる。",
+      "romaji": "ima, ie ni iru",
+      "english": "I’m at home now.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今|いま}、",
+          "w": "w-ima"
+        },
+        {
+          "t": "{家|いえ}に",
+          "w": "w-ie"
+        },
+        {
+          "t": "いる。"
+        }
+      ],
+      "gap": {
+        "before": "{今|いま}、{家|いえ}",
+        "answer": "に",
+        "after": "いる。",
+        "options": [
+          "に",
+          "で",
+          "を"
+        ],
+        "why": "Where someone is: に with いる."
+      },
+      "audio": "audio/ja/grammar/gx-ni-3.mp3",
+      "tags": [
+        "grammar",
+        "ni"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ni-4",
+      "japanese": "週末、友達に会います。",
+      "furigana": "{週末|しゅうまつ}、{友達|ともだち}に{会|あ}います。",
+      "romaji": "shūmatsu, tomodachi ni aimasu",
+      "english": "I’m meeting a friend at the weekend.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{週末|しゅうまつ}、",
+          "w": "w-shuumatsu"
+        },
+        {
+          "t": "{友達|ともだち}に",
+          "w": "w-tomodachi"
+        },
+        {
+          "t": "{会|あ}います。",
+          "w": "w-au"
+        }
+      ],
+      "gap": {
+        "before": "{週末|しゅうまつ}、{友達|ともだち}",
+        "answer": "に",
+        "after": "{会|あ}います。",
+        "options": [
+          "に",
+          "を",
+          "と"
+        ],
+        "ok": [
+          "と"
+        ],
+        "note": "と works too: meeting with a friend, as equals.",
+        "why": "You meet に someone: 友達に会う."
+      },
+      "audio": "audio/ja/grammar/gx-ni-4.mp3",
+      "tags": [
+        "grammar",
+        "ni"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

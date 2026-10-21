@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-in-on-at-time",
+  "connector": "at / on / in",
+  "gloss": "時の前置詞",
+  "title": "at, on, in（時）— 〜時に、〜曜日に、〜月に",
+  "pattern": "at ＋ 時刻 / on ＋ 曜日・日付 / in ＋ 月・季節・年・朝や夕方",
+  "explanation": "時刻には at：at 7 o’clock、at noon。曜日や日付には on：on Monday、on 5 May。月・季節・年には in：in July、in summer、in 2026。in the morning（朝に）、in the evening（夕方に）、でも夜だけは at night。",
+  "natural": "予定を伝える時にいつも使います：See you on Saturday!（土曜日にね）、The shop opens at nine.（お店は9時に開きます）。",
+  "stiff": "today、tomorrow、next week、every day には前置詞を付けません：on tomorrow は×、tomorrow だけ。",
+  "examples": [
+    {
+      "id": "gx-in-on-at-time-1",
+      "english": "The shop opens at nine.",
+      "japanese": "お店は9時に開きます。",
+      "chunks": [
+        {
+          "t": "The shop "
+        },
+        {
+          "t": "opens at ",
+          "w": "w-open"
+        },
+        {
+          "t": "nine."
+        }
+      ],
+      "gap": {
+        "before": "The shop opens ",
+        "answer": "at",
+        "after": " nine.",
+        "options": [
+          "at",
+          "on",
+          "in"
+        ],
+        "why": "時刻には at。"
+      },
+      "audio": "audio/en/grammar/gx-in-on-at-time-1.mp3",
+      "tags": [
+        "文法",
+        "at / on / in"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-in-on-at-time-2",
+      "english": "See you on Saturday!",
+      "japanese": "土曜日にね！",
+      "chunks": [
+        {
+          "t": "See you ",
+          "w": "w-see"
+        },
+        {
+          "t": "on "
+        },
+        {
+          "t": "Saturday!",
+          "w": "w-saturday"
+        }
+      ],
+      "gap": {
+        "before": "See you ",
+        "answer": "on",
+        "after": " Saturday!",
+        "options": [
+          "on",
+          "at",
+          "in"
+        ],
+        "why": "曜日には on。"
+      },
+      "audio": "audio/en/grammar/gx-in-on-at-time-2.mp3",
+      "tags": [
+        "文法",
+        "at / on / in"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-in-on-at-time-3",
+      "english": "I usually go running in the morning.",
+      "japanese": "たいてい朝にランニングに行きます。",
+      "chunks": [
+        {
+          "t": "I usually ",
+          "w": "w-i"
+        },
+        {
+          "t": "go running ",
+          "w": "w-run"
+        },
+        {
+          "t": "in the morning.",
+          "w": "w-morning"
+        }
+      ],
+      "gap": {
+        "before": "I usually go running ",
+        "answer": "in",
+        "after": " the morning.",
+        "options": [
+          "in",
+          "at",
+          "on"
+        ],
+        "why": "the morning（朝）には in。"
+      },
+      "audio": "audio/en/grammar/gx-in-on-at-time-3.mp3",
+      "tags": [
+        "文法",
+        "at / on / in"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-in-on-at-time-4",
+      "english": "I’m busy at night.",
+      "japanese": "夜は忙しいです。",
+      "chunks": [
+        {
+          "t": "I’m busy ",
+          "w": "w-busy"
+        },
+        {
+          "t": "at "
+        },
+        {
+          "t": "night.",
+          "w": "w-night"
+        }
+      ],
+      "gap": {
+        "before": "I’m busy ",
+        "answer": "at",
+        "after": " night.",
+        "options": [
+          "at",
+          "in",
+          "on"
+        ],
+        "why": "night だけは at：at night。in the morning とは形がちがいます。"
+      },
+      "audio": "audio/en/grammar/gx-in-on-at-time-4.mp3",
+      "tags": [
+        "文法",
+        "at / on / in"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

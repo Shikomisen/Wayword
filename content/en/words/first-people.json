@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "id": "words-first-people",
+  "title": "人・家族",
+  "description": "家族や周りの人を表す、いちばん基本の言葉。",
+  "items": [
+    {
+      "id": "w-mother",
+      "english": "mother",
+      "japanese": "母、お母さん",
+      "pos": "noun",
+      "registerNotes": "家族の間では mum（ニュージーランド・イギリス）、mom（アメリカ）。",
+      "audio": "audio/en/words/w-mother.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-father",
+      "english": "father",
+      "japanese": "父、お父さん",
+      "pos": "noun",
+      "registerNotes": "家族の間では dad。",
+      "audio": "audio/en/words/w-father.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-parents",
+      "english": "parents",
+      "japanese": "両親",
+      "pos": "noun",
+      "registerNotes": "my parents（私の両親）。1人なら a parent。",
+      "audio": "audio/en/words/w-parents.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-brother",
+      "english": "brother",
+      "japanese": "兄、弟、兄弟",
+      "pos": "noun",
+      "registerNotes": "英語では兄と弟を区別しません。必要なら older brother（兄）、younger brother（弟）。",
+      "audio": "audio/en/words/w-brother.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sister",
+      "english": "sister",
+      "japanese": "姉、妹、姉妹",
+      "pos": "noun",
+      "registerNotes": "姉は older sister、妹は younger sister。ふだんはただ my sister。",
+      "audio": "audio/en/words/w-sister.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-son",
+      "english": "son",
+      "japanese": "息子",
+      "pos": "noun",
+      "audio": "audio/en/words/w-son.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-daughter",
+      "english": "daughter",
+      "japanese": "娘",
+      "pos": "noun",
+      "audio": "audio/en/words/w-daughter.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-husband",
+      "english": "husband",
+      "japanese": "夫",
+      "pos": "noun",
+      "audio": "audio/en/words/w-husband.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-wife",
+      "english": "wife",
+      "japanese": "妻",
+      "pos": "noun",
+      "audio": "audio/en/words/w-wife.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-partner",
+      "english": "partner",
+      "japanese": "パートナー、恋人",
+      "pos": "noun",
+      "registerNotes": "結婚していてもいなくても使える、男女どちらにも使える言い方。",
+      "audio": "audio/en/words/w-partner.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-child",
+      "english": "child",
+      "japanese": "子ども",
+      "pos": "noun",
+      "registerNotes": "複数形は children（childs ではありません）。会話では kid（kids）もよく使います。",
+      "audio": "audio/en/words/w-child.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-baby",
+      "english": "baby",
+      "japanese": "赤ちゃん",
+      "pos": "noun",
+      "audio": "audio/en/words/w-baby.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-family",
+      "english": "family",
+      "japanese": "家族",
+      "pos": "noun",
+      "registerNotes": "my family（私の家族）。",
+      "audio": "audio/en/words/w-family.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-friend",
+      "english": "friend",
+      "japanese": "友だち",
+      "pos": "noun",
+      "registerNotes": "a friend of mine（友だちの1人）。",
+      "audio": "audio/en/words/w-friend.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-boyfriend",
+      "english": "boyfriend",
+      "japanese": "彼氏",
+      "pos": "noun",
+      "audio": "audio/en/words/w-boyfriend.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-girlfriend",
+      "english": "girlfriend",
+      "japanese": "彼女（恋人）",
+      "pos": "noun",
+      "pitfallNote": "「彼女」の意味で she を使うことはありません。she は「その女性」という意味だけ。",
+      "audio": "audio/en/words/w-girlfriend.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-man",
+      "english": "man",
+      "japanese": "男の人",
+      "pos": "noun",
+      "registerNotes": "複数形は men。",
+      "audio": "audio/en/words/w-man.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-woman",
+      "english": "woman",
+      "japanese": "女の人",
+      "pos": "noun",
+      "registerNotes": "複数形は women（ウィミン と発音）。",
+      "audio": "audio/en/words/w-woman.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-people",
+      "english": "people",
+      "japanese": "人々、〜人",
+      "pos": "noun",
+      "registerNotes": "person の複数形。three people（3人）。",
+      "audio": "audio/en/words/w-people.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-name",
+      "english": "name",
+      "japanese": "名前",
+      "pos": "noun",
+      "registerNotes": "What’s your name?（お名前は？）、My name is …（私の名前は〜）。",
+      "audio": "audio/en/words/w-name.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-teacher",
+      "english": "teacher",
+      "japanese": "先生",
+      "pos": "noun",
+      "pitfallNote": "英語では呼びかけに Teacher! とは言いません。Mr Smith、Ms Lee のように名前で呼びます。",
+      "audio": "audio/en/words/w-teacher.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-student",
+      "english": "student",
+      "japanese": "学生、生徒",
+      "pos": "noun",
+      "audio": "audio/en/words/w-student.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-neighbour",
+      "english": "neighbour",
+      "japanese": "近所の人、お隣さん",
+      "pos": "noun",
+      "registerNotes": "アメリカのつづりは neighbor。",
+      "audio": "audio/en/words/w-neighbour.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-grandmother",
+      "english": "grandmother",
+      "japanese": "祖母、おばあさん",
+      "pos": "noun",
+      "registerNotes": "家族の間では grandma、nana。",
+      "audio": "audio/en/words/w-grandmother.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-grandfather",
+      "english": "grandfather",
+      "japanese": "祖父、おじいさん",
+      "pos": "noun",
+      "registerNotes": "家族の間では grandpa、grandad。",
+      "audio": "audio/en/words/w-grandfather.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

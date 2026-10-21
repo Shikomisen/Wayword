@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-there-is",
+  "connector": "there is / are",
+  "gloss": "〜がある・〜がいる",
+  "title": "there is, there are — 〜がある、〜がいる",
+  "pattern": "There is ＋ 1つのもの / There are ＋ 複数のもの / Is there …?",
+  "explanation": "「〜がある（いる）」は There is（1つ）、There are（複数）。会話では There’s と短くします：There’s a café near the station.（駅の近くにカフェがあります）。質問は Is there…? / Are there…?、否定は There isn’t… / There aren’t…。",
+  "natural": "場所をたずねる時にとても便利です：Is there a supermarket near here?（この近くにスーパーはありますか）。",
+  "stiff": "「〜がある」を have で言ってしまいがちです：Near here have a café. は×。There’s a café near here.。",
+  "examples": [
+    {
+      "id": "gx-there-is-1",
+      "english": "There’s a supermarket near my house.",
+      "japanese": "家の近くにスーパーがあります。",
+      "chunks": [
+        {
+          "t": "There’s "
+        },
+        {
+          "t": "a supermarket "
+        },
+        {
+          "t": "near my house.",
+          "w": "w-house"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "There’s",
+        "after": " a supermarket near my house.",
+        "options": [
+          "There’s",
+          "It’s",
+          "Have"
+        ],
+        "why": "「〜がある」は There’s（There is）。"
+      },
+      "audio": "audio/en/grammar/gx-there-is-1.mp3",
+      "tags": [
+        "文法",
+        "there is / are"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-there-is-2",
+      "english": "Is there a bank near here?",
+      "japanese": "この近くに銀行はありますか。",
+      "chunks": [
+        {
+          "t": "Is there "
+        },
+        {
+          "t": "a bank ",
+          "w": "w-bank"
+        },
+        {
+          "t": "near here?",
+          "w": "w-here"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Is there",
+        "after": " a bank near here?",
+        "options": [
+          "Is there",
+          "Are there",
+          "Has"
+        ],
+        "why": "1つの銀行があるかたずねる：Is there…?"
+      },
+      "audio": "audio/en/grammar/gx-there-is-2.mp3",
+      "tags": [
+        "文法",
+        "there is / are"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-there-is-3",
+      "english": "There are two beds in the room.",
+      "japanese": "部屋にベッドが2つあります。",
+      "chunks": [
+        {
+          "t": "There are "
+        },
+        {
+          "t": "two beds ",
+          "w": "w-bed"
+        },
+        {
+          "t": "in the room.",
+          "w": "w-room"
+        }
+      ],
+      "gap": {
+        "before": "There ",
+        "answer": "are",
+        "after": " two beds in the room.",
+        "options": [
+          "are",
+          "is",
+          "have"
+        ],
+        "why": "ベッドが2つ（複数）なので are。"
+      },
+      "audio": "audio/en/grammar/gx-there-is-3.mp3",
+      "tags": [
+        "文法",
+        "there is / are"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-there-is-4",
+      "english": "There isn’t any water.",
+      "japanese": "水がありません。",
+      "chunks": [
+        {
+          "t": "There isn’t "
+        },
+        {
+          "t": "any "
+        },
+        {
+          "t": "water.",
+          "w": "w-water"
+        }
+      ],
+      "gap": {
+        "before": "There ",
+        "answer": "isn’t",
+        "after": " any water.",
+        "options": [
+          "isn’t",
+          "aren’t",
+          "don’t"
+        ],
+        "why": "water は数えないので isn’t。"
+      },
+      "audio": "audio/en/grammar/gx-there-is-4.mp3",
+      "tags": [
+        "文法",
+        "there is / are"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ta",
+  "connector": "〜た",
+  "gloss": "casual past: did",
+  "title": "〜た — casual “did”",
+  "pattern": "the て form, with た for て: {行|い}った, {食|た}べた, した",
+  "explanation": "The casual past is the て form with た instead of て: {行|い}って → {行|い}った, {食|た}べて → {食|た}べた, して → した. So if you know a verb’s て form, which every verb card shows, you know its past. “Didn’t” turns ない into なかった: {行|い}かなかった.",
+  "natural": "Telling a friend about your day: {昨日|きのう}、{友達|ともだち}に{会|あ}った. い-adjectives have their own past: {楽|たの}しかった.",
+  "stiff": "With staff, strangers and a partner’s parents, use ました instead: {行|い}きました.",
+  "examples": [
+    {
+      "id": "gx-ta-1",
+      "japanese": "昨日、友達に会った。",
+      "furigana": "{昨日|きのう}、{友達|ともだち}に{会|あ}った。",
+      "romaji": "kinō, tomodachi ni atta",
+      "english": "I met a friend yesterday.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{昨日|きのう}、",
+          "w": "w-kinou"
+        },
+        {
+          "t": "{友達|ともだち}に",
+          "w": "w-tomodachi"
+        },
+        {
+          "t": "{会|あ}った。",
+          "w": "w-au"
+        }
+      ],
+      "gap": {
+        "before": "{昨日|きのう}、{友達|ともだち}に{会|あ}",
+        "answer": "った",
+        "after": "。",
+        "options": [
+          "った",
+          "う",
+          "わない"
+        ],
+        "why": "Met: 会って → 会った."
+      },
+      "audio": "audio/ja/grammar/gx-ta-1.mp3",
+      "tags": [
+        "grammar",
+        "ta"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ta-2",
+      "japanese": "もう晩ご飯食べた？",
+      "furigana": "もう{晩|ばん}ご{飯|はん}{食|た}べた？",
+      "romaji": "mō bangohan tabeta?",
+      "english": "Have you had dinner yet?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "もう",
+          "w": "w-mou"
+        },
+        {
+          "t": "{晩|ばん}ご{飯|はん}",
+          "w": "w-bangohan"
+        },
+        {
+          "t": "{食|た}べた？",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "もう{晩|ばん}ご{飯|はん}{食|た}べ",
+        "answer": "た",
+        "after": "？",
+        "options": [
+          "た",
+          "る",
+          "ない"
+        ],
+        "why": "Had it yet: 食べた, with を dropped as it often is."
+      },
+      "audio": "audio/ja/grammar/gx-ta-2.mp3",
+      "tags": [
+        "grammar",
+        "ta"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ta-3",
+      "japanese": "週末は何した？",
+      "furigana": "{週末|しゅうまつ}は{何|なに}した？",
+      "romaji": "shūmatsu wa nani shita?",
+      "english": "What did you do at the weekend?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{週末|しゅうまつ}は",
+          "w": "w-shuumatsu"
+        },
+        {
+          "t": "{何|なに}",
+          "w": "w-nani"
+        },
+        {
+          "t": "した？",
+          "w": "w-suru"
+        }
+      ],
+      "gap": {
+        "before": "{週末|しゅうまつ}は{何|なに}",
+        "answer": "した",
+        "after": "？",
+        "options": [
+          "した",
+          "する",
+          "しない"
+        ],
+        "why": "Did: する → した."
+      },
+      "audio": "audio/ja/grammar/gx-ta-3.mp3",
+      "tags": [
+        "grammar",
+        "ta"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ta-4",
+      "japanese": "雨だったから、どこにも行かなかった。",
+      "furigana": "{雨|あめ}だったから、どこにも{行|い}かなかった。",
+      "romaji": "ame datta kara, doko ni mo ikanakatta",
+      "english": "It was raining, so I didn’t go anywhere.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{雨|あめ}だったから、",
+          "w": "w-ame"
+        },
+        {
+          "t": "どこにも",
+          "w": "w-doko"
+        },
+        {
+          "t": "{行|い}かなかった。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{雨|あめ}だったから、どこにも{行|い}か",
+        "answer": "なかった",
+        "after": "。",
+        "options": [
+          "なかった",
+          "ない",
+          "った"
+        ],
+        "why": "Didn’t: ない → なかった."
+      },
+      "audio": "audio/ja/grammar/gx-ta-4.mp3",
+      "tags": [
+        "grammar",
+        "ta"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

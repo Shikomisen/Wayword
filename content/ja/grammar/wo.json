@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-wo",
+  "connector": "を",
+  "gloss": "what you do it to (the object)",
+  "title": "を — what you eat, see, buy…",
+  "pattern": "object を verb",
+  "explanation": "を (said “o”) marks the thing an action is done to: パンを{食|た}べます — I eat bread. Japanese puts the verb last, so the order is the reverse of English: first what, then the verb.",
+  "natural": "In casual speech を is often dropped: コーヒー{飲|の}む？ — want a coffee? With anyone you’re polite to, keep it.",
+  "stiff": "{好|す}き, {分|わ}かる and ある don’t take を: コーヒーが{好|す}き, not コーヒーを{好|す}き.",
+  "examples": [
+    {
+      "id": "gx-wo-1",
+      "japanese": "毎朝、パンを食べます。",
+      "furigana": "{毎朝|まいあさ}、{パン|ぱん}を{食|た}べます。",
+      "romaji": "maiasa, pan o tabemasu",
+      "english": "I have bread every morning.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{毎朝|まいあさ}、"
+        },
+        {
+          "t": "{パン|ぱん}を",
+          "w": "w-pan"
+        },
+        {
+          "t": "{食|た}べます。",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "{毎朝|まいあさ}、{パン|ぱん}",
+        "answer": "を",
+        "after": "{食|た}べます。",
+        "options": [
+          "を",
+          "が",
+          "に"
+        ],
+        "why": "The bread is what you eat: を."
+      },
+      "audio": "audio/ja/grammar/gx-wo-1.mp3",
+      "tags": [
+        "grammar",
+        "wo"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-wo-2",
+      "japanese": "昨日、映画を見ました。",
+      "furigana": "{昨日|きのう}、{映画|えいが}を{見|み}ました。",
+      "romaji": "kinō, eiga o mimashita",
+      "english": "I watched a film yesterday.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{昨日|きのう}、",
+          "w": "w-kinou"
+        },
+        {
+          "t": "{映画|えいが}を",
+          "w": "w-eiga"
+        },
+        {
+          "t": "{見|み}ました。",
+          "w": "w-miru"
+        }
+      ],
+      "gap": {
+        "before": "{昨日|きのう}、{映画|えいが}",
+        "answer": "を",
+        "after": "{見|み}ました。",
+        "options": [
+          "を",
+          "に",
+          "で"
+        ],
+        "why": "The film is what you watched: を."
+      },
+      "audio": "audio/ja/grammar/gx-wo-2.mp3",
+      "tags": [
+        "grammar",
+        "wo"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-wo-3",
+      "japanese": "冷たいお茶を飲む？",
+      "furigana": "{冷|つめ}たいお{茶|ちゃ}を{飲|の}む？",
+      "romaji": "tsumetai ocha o nomu?",
+      "english": "Want some cold tea?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{冷|つめ}たい"
+        },
+        {
+          "t": "お{茶|ちゃ}を",
+          "w": "w-ocha"
+        },
+        {
+          "t": "{飲|の}む？",
+          "w": "w-nomu"
+        }
+      ],
+      "gap": {
+        "before": "{冷|つめ}たいお{茶|ちゃ}",
+        "answer": "を",
+        "after": "{飲|の}む？",
+        "options": [
+          "を",
+          "が",
+          "で"
+        ],
+        "why": "The tea is what’s drunk: を."
+      },
+      "audio": "audio/ja/grammar/gx-wo-3.mp3",
+      "tags": [
+        "grammar",
+        "wo"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-wo-4",
+      "japanese": "日本語の本を買いました。",
+      "furigana": "{日本語|にほんご}の{本|ほん}を{買|か}いました。",
+      "romaji": "nihongo no hon o kaimashita",
+      "english": "I bought a Japanese book.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本語|にほんご}の",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{本|ほん}を",
+          "w": "w-hon"
+        },
+        {
+          "t": "{買|か}いました。",
+          "w": "w-kau"
+        }
+      ],
+      "gap": {
+        "before": "{日本語|にほんご}の{本|ほん}",
+        "answer": "を",
+        "after": "{買|か}いました。",
+        "options": [
+          "を",
+          "の",
+          "は"
+        ],
+        "why": "The book is what you bought: を."
+      },
+      "audio": "audio/ja/grammar/gx-wo-4.mp3",
+      "tags": [
+        "grammar",
+        "wo"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

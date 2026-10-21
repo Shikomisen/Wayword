@@ -19,14 +19,19 @@ import { el, clear, phraseBlock, audioButton } from './render.js';
 import { header, playItem, studySettings } from './shared.js';
 import { STREAK, DAYS } from './mastery.js';
 import { listeningItems, listeningProgress, buildListeningDrill } from './listening.js';
+import { levelsUpTo } from './levels.js';
 import { choiceQuestion } from './choice.js';
 
 /** Listening progress for the current course, and whether today's drill is done. */
 export async function listeningState() {
-  const { listening = [] } = await loadContent();
-  const items = listeningItems(listening);
+  const content = await loadContent();
+  // With levels, the drill draws on the learner's level and the ones below (README §7.10).
+  const level = content.features.levels ? await deck.getLevel() : null;
+  const allowed = level ? levelsUpTo(content, level) : null;
+  const sets = (content.listening || []).filter((s) => !allowed || !s.level || allowed.has(s.level));
+  const items = listeningItems(sets);
   const [stats, doneToday] = await Promise.all([deck.getListenStats(), deck.listenDrillToday()]);
-  return { sets: listening, items, stats, doneToday, progress: listeningProgress(items, stats) };
+  return { sets, items, stats, doneToday, progress: listeningProgress(items, stats) };
 }
 
 /** One bar: items mastered, out of all of them. */

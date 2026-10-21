@@ -281,7 +281,12 @@ export async function loadContent() {
       listening: listening.some((s) => s.items.length > 0),
       // An offline dictionary for "Paste a message" (dictionary.js).
       dictionary: Boolean(manifest.dictionary?.file),
+      // Levels (levels.js): every entry names its level, and the learner has one.
+      levels: (manifest.levels || []).length > 0,
     },
+    // The course's levels, in order (README §7.10); each entry above carries
+    // its `level` and optional `step` from the manifest.
+    levels: manifest.levels || [],
     categories: loaded,
     decks,
     lessons,

@@ -21,6 +21,7 @@ import * as store from './store.js';
 import * as srs from './srs.js';
 import { loadContent, getCharacterSet, refreshUserItems, USER_DECK } from './content.js';
 import { nextStat } from './mastery.js';
+import * as levels from './levels.js';
 
 const DEFAULT_DIRECTIONS = { recognition: true, production: true, listening: false };
 
@@ -147,6 +148,80 @@ export async function isOnboarded() {
 /** Whether a course — not necessarily the current one — has been started on this device. */
 export async function onboardedIn(ns) {
   return Boolean((await store.get('meta', 'placement', ns))?.done);
+}
+
+/* ---------- levels (levels.js has the rules) ---------- */
+
+/**
+ * The learner's level in this course (README §7.10). Placement sets it. A
+ * learner from before levels existed gets the highest level among the decks
+ * they study, saved once so it doesn't drift as decks come and go. Null in a
+ * course without levels, or before placement.
+ */
+export async function getLevel() {
+  const content = await loadContent();
+  if (!levels.levelsOf(content).length) return null;
+  const s = await getSettings();
+  if (levels.levelById(content, s.level)) return s.level;
+  if (!(await isOnboarded())) return null;
+  const inferred = levels.inferLevel(content, s);
+  await saveSettings({ level: inferred });
+  return inferred;
+}
+
+export async function setLevel(levelId) {
+  await saveSettings({ level: levelId });
+  return levelId;
+}
+
+/** Add a level's starter decks. Returns the decks. */
+export async function addStarters(levelId) {
+  const starters = levels.startersIn(await loadContent(), levelId);
+  for (const d of starters) await activateCategory(d.id);
+  return starters;
+}
+
+/** Make a level the learner's, and add its starter decks — moving up from Today, or a choice at placement. */
+export async function moveToLevel(levelId) {
+  await setLevel(levelId);
+  return addStarters(levelId);
+}
+
+/**
+ * Placement's results screen: start at another level instead. The first
+ * choice's starter decks come out again if nothing in them has been reviewed,
+ * and the new choice's go in. Their cards stay, untouched, for later.
+ */
+export async function changeStartLevel(from, to) {
+  const content = await loadContent();
+  const cards = await getDeck();
+  const s = await getSettings();
+  const keep = new Set(levels.startersIn(content, to).map((d) => d.id));
+  const touched = (deckId) => cards.some((c) => c.categoryId === deckId && c.state !== 'new');
+  const out = new Set(levels.startersIn(content, from)
+    .filter((d) => !keep.has(d.id) && !touched(d.id)).map((d) => d.id));
+  await saveSettings({ activeCategories: s.activeCategories.filter((id) => !out.has(id)) });
+  return moveToLevel(to);
+}
+
+/**
+ * Everything Today and Learn show about a level — the learner's own unless
+ * another is asked for: its progress, the next deck to add, the next lesson
+ * to practise, and the level after it. Null in a course without levels.
+ */
+export async function levelState(levelId = null) {
+  const content = await loadContent();
+  const level = levelId || await getLevel();
+  if (!level || !levels.levelById(content, level)) return null;
+  const [s, cards, lessonStats] = await Promise.all([getSettings(), getDeck(), getLessonStats()]);
+  const byId = new Map(cards.map((c) => [c.id, c]));
+  return {
+    level: levels.levelById(content, level),
+    progress: levels.levelProgress(content, level, byId, lessonStats),
+    next: levels.nextStep(content, level, s),
+    nextLesson: levels.nextLesson(content, level, lessonStats),
+    after: levels.levelAfter(content, level),
+  };
 }
 
 /* ---------- deck ---------- */

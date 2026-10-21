@@ -37,31 +37,40 @@ function resolveOption(option, phrases) {
 /* ---------- list screen ---------- */
 
 export async function renderScenarioList(root) {
-  const { manifest, byCategory } = await loadContent();
+  const { manifest, byCategory, levels = [] } = await loadContent();
   const settings = await deck.getSettings();
   const scenarios = manifest.scenarios || [];
+
+  const row = (s) => {
+    const cat = byCategory.get(s.category);
+    const active = settings.activeCategories.includes(s.category);
+    return el('a', { class: 'row-card', href: link(`/scenario/${s.id}`) },
+      el('span', { class: 'row-icon' }, s.icon || '🗣️'),
+      el('span', { class: 'row-body' },
+        el('span', { class: 'row-title' }, s.title),
+        el('span', { class: 'row-sub' },
+          `${cat ? cat.title : s.category}${active ? '' : t('scenarios.notInDeck')}`)),
+      el('span', { class: 'row-chev' }, '›'));
+  };
+
+  // With levels, the scenarios come under their level's heading (README §7.10).
+  const lists = levels.length
+    ? levels.map((l) => {
+        const own = scenarios.filter((s) => s.level === l.id);
+        return own.length
+          ? el('section', {},
+              el('h2', { class: 'section-title' }, `${l.icon ? `${l.icon} ` : ''}${l.title}`),
+              el('div', { class: 'card-list' }, own.map(row)))
+          : null;
+      })
+    : [el('div', { class: 'card-list' }, scenarios.map(row))];
 
   root.append(
     el('div', { class: 'screen' },
       el('header', { class: 'screen-header' },
         el('h1', {}, t('scenarios.title')),
         el('p', { class: 'lede' }, t('scenarios.lede'))),
-
-      el('div', { class: 'card-list' },
-        scenarios.length
-          ? scenarios.map((s) => {
-              const cat = byCategory.get(s.category);
-              const active = settings.activeCategories.includes(s.category);
-              return el('a', { class: 'row-card', href: link(`/scenario/${s.id}`) },
-                el('span', { class: 'row-icon' }, s.icon || '🗣️'),
-                el('span', { class: 'row-body' },
-                  el('span', { class: 'row-title' }, s.title),
-                  el('span', { class: 'row-sub' },
-                    `${cat ? cat.title : s.category}${active ? '' : t('scenarios.notInDeck')}`)),
-                el('span', { class: 'row-chev' }, '›'));
-            })
-          : el('p', { class: 'muted' }, t('scenarios.none')))
-    )
+      scenarios.length ? lists : el('p', { class: 'muted' }, t('scenarios.none')))
   );
 }
 

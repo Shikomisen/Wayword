@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-imperatives",
+  "connector": "Please… / Don’t…",
+  "gloss": "〜してください・〜しないで",
+  "title": "Please…, Don’t… — 〜して、〜しないで",
+  "pattern": "（Please）＋ 動詞 … / Don’t ＋ 動詞 … / Let’s ＋ 動詞 …",
+  "explanation": "「〜して」は動詞から始めます：Sit down.（座って）、Wait here.（ここで待って）。please を付けると「〜してください」：Please sit down.。「〜しないで」は Don’t から：Don’t worry.（心配しないで）。「〜しよう」は Let’s：Let’s go!",
+  "natural": "道案内や注意でよく聞きます：Turn left at the lights.（信号を左に曲がって）、Don’t forget your bag!（かばんを忘れないで）。",
+  "stiff": "命令の形は強く聞こえることがあります。お店の人や知らない人には Could you…?（基礎レベルの「ていねいに頼む」）の方が感じがいい。please を付けても、強い口調では命令に聞こえます。",
+  "examples": [
+    {
+      "id": "gx-imperatives-1",
+      "english": "Please sit down.",
+      "japanese": "どうぞおかけください。",
+      "chunks": [
+        {
+          "t": "Please "
+        },
+        {
+          "t": "sit ",
+          "w": "w-sit"
+        },
+        {
+          "t": "down."
+        }
+      ],
+      "gap": {
+        "before": "Please ",
+        "answer": "sit",
+        "after": " down.",
+        "options": [
+          "sit",
+          "sitting",
+          "to sit"
+        ],
+        "why": "「〜してください」は Please ＋ 動詞の元の形。"
+      },
+      "audio": "audio/en/grammar/gx-imperatives-1.mp3",
+      "tags": [
+        "文法",
+        "Please… / Don’t…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-imperatives-2",
+      "english": "Don’t worry about it.",
+      "japanese": "気にしないで。",
+      "chunks": [
+        {
+          "t": "Don’t "
+        },
+        {
+          "t": "worry "
+        },
+        {
+          "t": "about it.",
+          "w": "w-it"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Don’t",
+        "after": " worry about it.",
+        "options": [
+          "Don’t",
+          "Not",
+          "No"
+        ],
+        "why": "「〜しないで」は Don’t ＋ 動詞。"
+      },
+      "audio": "audio/en/grammar/gx-imperatives-2.mp3",
+      "tags": [
+        "文法",
+        "Please… / Don’t…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-imperatives-3",
+      "english": "Let’s eat!",
+      "japanese": "食べよう！",
+      "chunks": [
+        {
+          "t": "Let’s "
+        },
+        {
+          "t": "eat!",
+          "w": "w-eat"
+        }
+      ],
+      "gap": {
+        "before": "Let’s ",
+        "answer": "eat",
+        "after": "!",
+        "options": [
+          "eat",
+          "eating",
+          "to eat"
+        ],
+        "why": "Let’s の後は動詞の元の形。"
+      },
+      "audio": "audio/en/grammar/gx-imperatives-3.mp3",
+      "tags": [
+        "文法",
+        "Please… / Don’t…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-imperatives-4",
+      "english": "Wait here, please.",
+      "japanese": "ここで待っていてください。",
+      "chunks": [
+        {
+          "t": "Wait ",
+          "w": "w-wait"
+        },
+        {
+          "t": "here, ",
+          "w": "w-here"
+        },
+        {
+          "t": "please."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Wait",
+        "after": " here, please.",
+        "options": [
+          "Wait",
+          "Waiting",
+          "To wait"
+        ],
+        "why": "頼む文は動詞から：Wait here.。please は最後でも大丈夫。"
+      },
+      "audio": "audio/en/grammar/gx-imperatives-4.mp3",
+      "tags": [
+        "文法",
+        "Please… / Don’t…"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

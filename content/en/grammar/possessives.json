@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-possessives",
+  "connector": "my / your",
+  "gloss": "私の・あなたの",
+  "title": "my, your, his, her — 〜の（持ち主）",
+  "pattern": "my / your / his / her / its / our / their ＋ 名詞 ・ 名前 ＋ ’s",
+  "explanation": "「私の」は my、「あなたの」は your、「彼の」は his、「彼女の」は her、「私たちの」は our、「彼らの」は their。人の名前には ’s を付けます：Ken’s car（ケンの車）、my mother’s house（母の家）。",
+  "natural": "家族や持ち物の話でいつも使います：This is my husband.（夫です）、What’s your name?（お名前は？）",
+  "stiff": "英語では自分の家族や持ち物にも my をきちんと付けます：I love mother. ではなく I love my mother.。he と she で his と her を取りちがえないように。",
+  "examples": [
+    {
+      "id": "gx-possessives-1",
+      "english": "What’s your name?",
+      "japanese": "お名前は何ですか。",
+      "chunks": [
+        {
+          "t": "What’s ",
+          "w": "w-what"
+        },
+        {
+          "t": "your "
+        },
+        {
+          "t": "name?",
+          "w": "w-name"
+        }
+      ],
+      "gap": {
+        "before": "What’s ",
+        "answer": "your",
+        "after": " name?",
+        "options": [
+          "your",
+          "you",
+          "my"
+        ],
+        "why": "あなたの名前：your name。"
+      },
+      "audio": "audio/en/grammar/gx-possessives-1.mp3",
+      "tags": [
+        "文法",
+        "my / your"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-possessives-2",
+      "english": "This is my husband.",
+      "japanese": "こちらは夫です。",
+      "chunks": [
+        {
+          "t": "This is ",
+          "w": "w-this"
+        },
+        {
+          "t": "my "
+        },
+        {
+          "t": "husband.",
+          "w": "w-husband"
+        }
+      ],
+      "gap": {
+        "before": "This is ",
+        "answer": "my",
+        "after": " husband.",
+        "options": [
+          "my",
+          "me",
+          "I"
+        ],
+        "why": "自分の家族を紹介する時も my を付けます。"
+      },
+      "audio": "audio/en/grammar/gx-possessives-2.mp3",
+      "tags": [
+        "文法",
+        "my / your"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-possessives-3",
+      "english": "Her brother lives in Wellington.",
+      "japanese": "彼女のお兄さんはウェリントンに住んでいます。",
+      "chunks": [
+        {
+          "t": "Her brother ",
+          "w": "w-brother"
+        },
+        {
+          "t": "lives ",
+          "w": "w-live"
+        },
+        {
+          "t": "in Wellington."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Her",
+        "after": " brother lives in Wellington.",
+        "options": [
+          "Her",
+          "She",
+          "His"
+        ],
+        "why": "持ち主が女性なので her。"
+      },
+      "audio": "audio/en/grammar/gx-possessives-3.mp3",
+      "tags": [
+        "文法",
+        "my / your"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-possessives-4",
+      "english": "We’re at Ken’s house.",
+      "japanese": "ケンの家にいます。",
+      "chunks": [
+        {
+          "t": "We’re ",
+          "w": "w-we"
+        },
+        {
+          "t": "at "
+        },
+        {
+          "t": "Ken’s house.",
+          "w": "w-house"
+        }
+      ],
+      "gap": {
+        "before": "We’re at ",
+        "answer": "Ken’s",
+        "after": " house.",
+        "options": [
+          "Ken’s",
+          "Ken",
+          "Kens"
+        ],
+        "why": "人の名前には ’s：Ken’s house。"
+      },
+      "audio": "audio/en/grammar/gx-possessives-4.mp3",
+      "tags": [
+        "文法",
+        "my / your"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

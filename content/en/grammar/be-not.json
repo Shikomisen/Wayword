@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-be-not",
+  "connector": "not / Are…?",
+  "gloss": "〜ではない・〜ですか",
+  "title": "not, Are you…? — be動詞の否定と質問",
+  "pattern": "I’m not … / It isn’t … / Are you …? — Yes, I am. / No, I’m not.",
+  "explanation": "否定は be動詞の後に not：I’m not、it isn’t（is not）、they aren’t（are not）。質問は be動詞を前に出します：You are tired. → Are you tired?（疲れてる？）。答えは Yes, I am. / No, I’m not. のように be動詞で答えます。",
+  "natural": "Are you OK?（大丈夫？）、Is this yours?（これ、あなたの？）は毎日のように使う質問です。",
+  "stiff": "Do you tired? はまちがい。be動詞の文の質問には Do を使わず、be動詞を前に出します：Are you tired? また答えの Yes, I’m. も×で、Yes, I am. と短くしません。",
+  "examples": [
+    {
+      "id": "gx-be-not-1",
+      "english": "I’m not hungry.",
+      "japanese": "お腹はすいていません。",
+      "chunks": [
+        {
+          "t": "I’m ",
+          "w": "w-i"
+        },
+        {
+          "t": "not "
+        },
+        {
+          "t": "hungry.",
+          "w": "w-hungry"
+        }
+      ],
+      "gap": {
+        "before": "I’m ",
+        "answer": "not",
+        "after": " hungry.",
+        "options": [
+          "not",
+          "no",
+          "don’t"
+        ],
+        "why": "be動詞の否定は not：I’m not。"
+      },
+      "audio": "audio/en/grammar/gx-be-not-1.mp3",
+      "tags": [
+        "文法",
+        "not / Are…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-be-not-2",
+      "english": "Are you OK?",
+      "japanese": "大丈夫？",
+      "chunks": [
+        {
+          "t": "Are "
+        },
+        {
+          "t": "you ",
+          "w": "w-you"
+        },
+        {
+          "t": "OK?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Are",
+        "after": " you OK?",
+        "options": [
+          "Are",
+          "Do",
+          "Is"
+        ],
+        "why": "be動詞の質問は be動詞を前に：Are you…?"
+      },
+      "audio": "audio/en/grammar/gx-be-not-2.mp3",
+      "tags": [
+        "文法",
+        "not / Are…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-be-not-3",
+      "english": "It isn’t far.",
+      "japanese": "遠くないですよ。",
+      "chunks": [
+        {
+          "t": "It ",
+          "w": "w-it"
+        },
+        {
+          "t": "isn’t "
+        },
+        {
+          "t": "far."
+        }
+      ],
+      "gap": {
+        "before": "It ",
+        "answer": "isn’t",
+        "after": " far.",
+        "options": [
+          "isn’t",
+          "aren’t",
+          "don’t"
+        ],
+        "why": "it の否定は isn’t（is not）。"
+      },
+      "audio": "audio/en/grammar/gx-be-not-3.mp3",
+      "tags": [
+        "文法",
+        "not / Are…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-be-not-4",
+      "english": "Is this your key?",
+      "japanese": "これはあなたの鍵ですか。",
+      "chunks": [
+        {
+          "t": "Is "
+        },
+        {
+          "t": "this ",
+          "w": "w-this"
+        },
+        {
+          "t": "your key?",
+          "w": "w-key"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Is",
+        "after": " this your key?",
+        "options": [
+          "Is",
+          "Are",
+          "Do"
+        ],
+        "why": "this には is。質問なので Is を前に出します。"
+      },
+      "audio": "audio/en/grammar/gx-be-not-4.mp3",
+      "tags": [
+        "文法",
+        "not / Are…?"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

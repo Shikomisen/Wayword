@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-articles",
+  "connector": "a / the",
+  "gloss": "名詞の前の a と the",
+  "title": "a, an, the — 名詞の前の小さな言葉",
+  "pattern": "a ＋ 子音の音で始まる名詞 / an ＋ 母音の音で始まる名詞 / the ＋ どれのことか分かっているもの",
+  "explanation": "数えられる名詞が1つの時は、前に a を付けます（母音の音で始まるなら an）：a cup、an apple。話している2人とも「どれのことか」分かっているものには the：the station（いつもの、あの駅）。日本語にはない考え方なので、最初はまちがえて当たり前です。",
+  "natural": "Can I have a coffee?（コーヒーを1つください）、Where’s the toilet?（お手洗いはどこ？ ＝ このお店のお手洗い）。",
+  "stiff": "数えられる名詞を1つだけ言う時に a を落とすと、とても不自然です：I have dog. ではなく I have a dog.。お店の中の決まった場所には the：the fitting room、the bathroom。",
+  "examples": [
+    {
+      "id": "gx-articles-1",
+      "english": "I’d like a cup of tea, please.",
+      "japanese": "紅茶を1杯お願いします。",
+      "chunks": [
+        {
+          "t": "I’d like "
+        },
+        {
+          "t": "a cup ",
+          "w": "w-cup"
+        },
+        {
+          "t": "of tea, please."
+        }
+      ],
+      "gap": {
+        "before": "I’d like ",
+        "answer": "a",
+        "after": " cup of tea, please.",
+        "options": [
+          "a",
+          "an",
+          "the"
+        ],
+        "why": "cup は子音の音で始まるので a。"
+      },
+      "audio": "audio/en/grammar/gx-articles-1.mp3",
+      "tags": [
+        "文法",
+        "a / the"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-articles-2",
+      "english": "She has an old car.",
+      "japanese": "彼女は古い車を持っています。",
+      "chunks": [
+        {
+          "t": "She has ",
+          "w": "w-she"
+        },
+        {
+          "t": "an old ",
+          "w": "w-old"
+        },
+        {
+          "t": "car.",
+          "w": "w-car"
+        }
+      ],
+      "gap": {
+        "before": "She has ",
+        "answer": "an",
+        "after": " old car.",
+        "options": [
+          "an",
+          "a",
+          "the"
+        ],
+        "why": "old は母音の音で始まるので an。"
+      },
+      "audio": "audio/en/grammar/gx-articles-2.mp3",
+      "tags": [
+        "文法",
+        "a / the"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-articles-3",
+      "english": "Where’s the bathroom?",
+      "japanese": "お手洗いはどこですか。",
+      "chunks": [
+        {
+          "t": "Where’s ",
+          "w": "w-where"
+        },
+        {
+          "t": "the bathroom?",
+          "w": "w-bathroom"
+        }
+      ],
+      "gap": {
+        "before": "Where’s ",
+        "answer": "the",
+        "after": " bathroom?",
+        "options": [
+          "the",
+          "a",
+          "an"
+        ],
+        "why": "このお店（家）のお手洗いと決まっているので the。"
+      },
+      "audio": "audio/en/grammar/gx-articles-3.mp3",
+      "tags": [
+        "文法",
+        "a / the"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-articles-4",
+      "english": "There’s a key on the table.",
+      "japanese": "テーブルの上に鍵があります。",
+      "chunks": [
+        {
+          "t": "There’s "
+        },
+        {
+          "t": "a key ",
+          "w": "w-key"
+        },
+        {
+          "t": "on the table.",
+          "w": "w-table"
+        }
+      ],
+      "gap": {
+        "before": "There’s a key on ",
+        "answer": "the",
+        "after": " table.",
+        "options": [
+          "the",
+          "a",
+          "an"
+        ],
+        "why": "この部屋にある、あのテーブル。どれのことか分かっているので the。"
+      },
+      "audio": "audio/en/grammar/gx-articles-4.mp3",
+      "tags": [
+        "文法",
+        "a / the"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

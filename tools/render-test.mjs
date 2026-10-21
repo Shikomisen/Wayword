@@ -177,6 +177,17 @@ check('quiz produces a results screen', text().includes('Deck built'), 'placemen
 check('results break down every category and character set',
   $$('.result-row').length === JA.categories.length + JA.characterSets.length, `${$$('.result-row').length} rows`);
 check('results separate phrases from reading', text().includes('Reading'));
+check('results suggest where to start, with every level to pick from',
+  $$('.placement-level .segment').length === JA.levels.length && $('.placement-level .segment.is-on')?.dataset.level === 'basic' &&
+    text().includes('From your answers, Basic is the place to start'),
+  $('.placement-level .segment.is-on')?.textContent);
+$('.placement-level .segment[data-level="first-steps"]').click();
+for (let i = 0; i < 6; i++) await tick();
+check('picking another level there starts the learner at it instead',
+  $('.placement-level .segment.is-on')?.dataset.level === 'first-steps' && (await deck.getLevel()) === 'first-steps');
+$('.placement-level .segment[data-level="basic"]').click();
+for (let i = 0; i < 6; i++) await tick();
+check('…and picking the suggestion again goes back to it', (await deck.getLevel()) === 'basic');
 
 $$('button').find((b) => b.textContent === 'Set up reading first')?.click();
 await tick(); await tick(); await tick(); await tick();
@@ -193,60 +204,104 @@ check('stat tiles present', $$('.stat').length === 4, $$('.stat-value').map((s) 
 check('7-day SRS forecast renders', $$('.forecast-day').length === 7);
 check('deck categories listed', $$('.row-card').length >= 4, `${$$('.row-card').length} rows`);
 check('tab bar highlights the current screen', Boolean(document.querySelector('.tabbar a.active')));
+check('Today shows the learner’s level and how far through it they are',
+  $('.level-row')?.dataset.level === 'basic' && $('.level-row .row-title')?.textContent === 'Basic' &&
+    /0 of \d+ learned · 0 of 16 lessons practised/.test($('.level-row .row-sub')?.textContent || ''),
+  $('.level-row .row-sub')?.textContent);
+check('…with no next step while there are plenty of new cards', !$('.next-step'));
+const newPerDayWas = (await deck.getSettings()).newPerDay;
+await deck.saveSettings({ newPerDay: 9999 });
+await goTo('#/en-ja/');
+check('when new cards run low, the next deck on the level’s path is offered',
+  $('.next-step')?.dataset.deck === 'words-home' && $('.next-step .row-title')?.textContent === 'Next step: Home & Daily Life',
+  $('.next-step .row-title')?.textContent);
+$('.next-step button').click();
+for (let i = 0; i < 8; i++) await tick();
+// Next on Basic's path: describe, restaurant and shopping are starters, already in study.
+check('…and one tap adds it, and offers the one after', (await deck.getSettings()).activeCategories.includes('words-home') &&
+  $('.next-step')?.dataset.deck === 'words-places', $('.next-step')?.dataset.deck);
+// Put things back as placement left them, for the checks that follow.
+await deck.saveSettings({
+  newPerDay: newPerDayWas,
+  activeCategories: (await deck.getSettings()).activeCategories.filter((id) => id !== 'words-home'),
+});
+await goTo('#/en-ja/');
 
 console.log('\n3. Learn');
 
 await goTo('#/en-ja/browse');
 check('learn renders', $('h1')?.textContent === 'Learn' && document.querySelector('.tabbar a.active')?.textContent.includes('Learn'));
-const jaDecks = [...JA.categories, ...JA.decks];
+// With levels (§7.10), Learn shows the learner's level: Basic, from the placement above.
+const jaLevel = await deck.getLevel();
+const jaDecks = [...JA.categories, ...JA.decks].filter((c) => c.level === jaLevel);
 const jaStarters = jaDecks.filter((c) => c.starter);
-check('every deck listed, plus your own words and the conversations', $$('.row-card').length === jaDecks.length + 2,
+check('Learn opens on the learner’s level, with a button for each level',
+  jaLevel === 'basic' && $$('.level-choice .segment').length === JA.levels.length &&
+    $('.level-choice .segment.is-on')?.dataset.level === jaLevel, $('.level-choice .segment.is-on')?.textContent);
+check('every deck of the level listed, plus your own words and the conversations', $$('.row-card').length === jaDecks.length + 2,
   `${$$('.row-card').length} rows`);
-check('words, sentences, phrases, your own words, then conversations',
-  $$('.kind-title').map((h) => h.textContent).join('|') === 'Words|Sentences|Phrases|Your own words|Conversations',
+check('words, phrases, your own words, then conversations (Basic has no sentence deck)',
+  $$('.kind-title').map((h) => h.textContent).join('|') === 'Words|Phrases|Your own words|Conversations',
   $$('.kind-title').map((h) => h.textContent).join(' | '));
 check('with Connectors taking a tab, the scenarios live in Learn',
   !document.querySelector('.tabbar a[data-path="/scenarios"]') && Boolean($('.row-card[href="#/en-ja/scenarios"]')));
 check('phrases grouped by topic, titled from the manifest',
   $$('.section-title').map((h) => h.textContent).join('|') === JA.groups.map((g) => g.title).join('|'),
   $$('.section-title').map((h) => h.textContent).join(' | '));
+const homeDeck = JA.decks.find((d) => d.id === 'words-home');
 check('word decks say how many words they hold',
-  $('.row-card[data-deck="words-people"] .row-sub')?.textContent === `${readJSON(JA.decks[0].file).items.length} words`,
-  $('.row-card[data-deck="words-people"] .row-sub')?.textContent);
+  $('.row-card[data-deck="words-home"] .row-sub')?.textContent === `${readJSON(homeDeck.file).items.length} words`,
+  $('.row-card[data-deck="words-home"] .row-sub')?.textContent);
 check('no week-by-week or trip framing left', !/Week \d|trip/i.test(text()));
 check('starter decks marked as in-deck', $$('.btn-in-deck').length === jaStarters.length, `${$$('.btn-in-deck').length} in deck`);
 check('the rest offer an Add button',
   $$('button').filter((b) => b.textContent === 'Add').length === jaDecks.length - jaStarters.length);
 
 // "In deck" is a button too: tap it again to take the deck out — asked first, progress kept.
-const smalltalkRow = () => $('.row-card[data-deck="smalltalk"]');
+// (Casual Speech: a Basic starter, so it's in study and on this level's page.)
+const casualRow = () => $('.row-card[data-deck="casual"]');
 check('"In deck" can be tapped again, and says what it does',
-  smalltalkRow()?.querySelector('.btn-in-deck')?.getAttribute('aria-pressed') === 'true' &&
-    smalltalkRow()?.querySelector('.btn-in-deck')?.title === 'Take out of deck');
+  casualRow()?.querySelector('.btn-in-deck')?.getAttribute('aria-pressed') === 'true' &&
+    casualRow()?.querySelector('.btn-in-deck')?.title === 'Take out of deck');
 const askedRemove = [];
 globalThis.confirm = (message) => { askedRemove.push(message); return false; };
-smalltalkRow().querySelector('.btn-in-deck').click();
+casualRow().querySelector('.btn-in-deck').click();
 for (let i = 0; i < 6; i++) await tick();
 check('taking a deck out asks first, saying its progress is kept — and "no" changes nothing',
-  askedRemove.length === 1 && askedRemove[0].includes('Small Talk') && askedRemove[0].includes('progress is kept') &&
-    (await deck.getSettings()).activeCategories.includes('smalltalk'), askedRemove[0]?.split('\n')[0]);
+  askedRemove.length === 1 && askedRemove[0].includes('Casual Speech') && askedRemove[0].includes('progress is kept') &&
+    (await deck.getSettings()).activeCategories.includes('casual'), askedRemove[0]?.split('\n')[0]);
 globalThis.confirm = () => true;
-const smalltalkCards = JSON.stringify((await deck.getDeck()).filter((c) => c.categoryId === 'smalltalk'));
-smalltalkRow().querySelector('.btn-in-deck').click();
+const casualCards = JSON.stringify((await deck.getDeck()).filter((c) => c.categoryId === 'casual'));
+casualRow().querySelector('.btn-in-deck').click();
 for (let i = 0; i < 6; i++) await tick();
 check('"yes" takes it out: the row offers Add again, and a toast says the progress is kept',
-  !(await deck.getSettings()).activeCategories.includes('smalltalk') &&
-    smalltalkRow()?.querySelector('button')?.textContent === 'Add' && !smalltalkRow()?.classList.contains('is-active') &&
-    [...document.querySelectorAll('.toast')].some((n) => n.textContent.includes('Small Talk') && n.textContent.includes('progress is kept')));
+  !(await deck.getSettings()).activeCategories.includes('casual') &&
+    casualRow()?.querySelector('button')?.textContent === 'Add' && !casualRow()?.classList.contains('is-active') &&
+    [...document.querySelectorAll('.toast')].some((n) => n.textContent.includes('Casual Speech') && n.textContent.includes('progress is kept')));
 await goTo('#/en-ja/');
-check('Today no longer lists it', !$$('.row-card').some((r) => r.textContent.includes('Small Talk')));
+check('Today no longer lists it', !$$('.row-card').some((r) => r.textContent.includes('Casual Speech')));
 await goTo('#/en-ja/browse');
-smalltalkRow().querySelector('button').click();
+casualRow().querySelector('button').click();
 for (let i = 0; i < 6; i++) await tick();
 check('adding it again brings it back with its progress, and says so',
-  Boolean(smalltalkRow()?.querySelector('.btn-in-deck')) &&
-    JSON.stringify((await deck.getDeck()).filter((c) => c.categoryId === 'smalltalk')) === smalltalkCards &&
+  Boolean(casualRow()?.querySelector('.btn-in-deck')) &&
+    JSON.stringify((await deck.getDeck()).filter((c) => c.categoryId === 'casual')) === casualCards &&
     [...document.querySelectorAll('.toast')].some((n) => n.textContent.includes('is back in your deck')));
+
+// Another level: its decks, and a way to make it the learner's.
+$('.level-choice .segment[data-level="first-steps"]').click();
+for (let i = 0; i < 6; i++) await tick();
+const fsDecks = [...JA.categories, ...JA.decks].filter((c) => c.level === 'first-steps');
+check('tapping another level shows its decks instead', $$('.row-card[data-deck]').length === fsDecks.length &&
+  Boolean($('.row-card[data-deck="words-people"]')) && !$('.row-card[data-deck="casual"]'), `${$$('.row-card[data-deck]').length} decks`);
+check('…says it isn’t your level, and offers to make it so',
+  $('.level-switch')?.textContent.includes('Your level is Basic') && $('.level-choice .segment.is-mine')?.dataset.level === 'basic');
+$$('.level-switch button')[0].click();
+for (let i = 0; i < 6; i++) await tick();
+check('"Make this my level" does', (await deck.getLevel()) === 'first-steps' && !$('.level-switch'));
+await deck.setLevel('basic');
+$('.level-choice .segment[data-level="basic"]').click(); // Learn and the lessons list show the same level
+for (let i = 0; i < 6; i++) await tick();
 
 console.log('\n4. Category detail');
 
@@ -490,10 +545,13 @@ console.log('\n5d. Connectors');
 
 await goTo('#/en-ja/connectors');
 const lessonFiles = Object.fromEntries(JA.lessons.map((l) => [l.id, readJSON(l.file)]));
-check('the Connectors tab lists every lesson', $('h1')?.textContent === 'Connectors' &&
-  $$('.lesson-row').length === JA.lessons.length, `${$$('.lesson-row').length} lessons`);
+// With levels, the list shows the learner's level: Basic's connectors.
+const jaLevelLessons = JA.lessons.filter((l) => l.level === 'basic');
+check('the Grammar tab lists the lessons of the learner’s level', $('h1')?.textContent === 'Grammar and connectors' &&
+  $$('.lesson-row').length === jaLevelLessons.length && $('.level-choice .segment.is-on')?.dataset.level === 'basic',
+  `${$('h1')?.textContent}: ${$$('.lesson-row').length} lessons`);
 check('…grouped as the manifest says', $$('.section-title').map((h) => h.textContent).join('|') ===
-  JA.lessonGroups.map((g) => g.title).join('|'));
+  JA.lessonGroups.filter((g) => jaLevelLessons.some((l) => l.group === g.id)).map((g) => g.title).join('|'));
 check('…and its tab is lit', document.querySelector('.tabbar a.active')?.dataset.path === '/connectors');
 check('nothing is practised yet', $$('.lesson-row .row-sub').every((r) => r.textContent === 'Not practised yet'));
 
@@ -565,7 +623,9 @@ check('mixed practice draws drills from the lessons practised so far',
   $('.drill-card')?.dataset.example);
 
 await goTo('#/en-ja/');
-check('Today offers the connectors', text().includes('1 of 16 practised'));
+check('Today offers the level’s next lesson, and counts the level’s lessons',
+  text().includes('1 of 16 lessons practised') && text().includes(`Next lesson: ${JA.lessons.length && readJSON(jaLevelLessons[0].file).gloss}`),
+  [...document.querySelectorAll('.row-card')].map((r) => r.textContent).find((t) => t.includes('lessons practised')));
 
 console.log('\n5e. Paste a message');
 
@@ -1137,12 +1197,14 @@ check('an English word deck lists its words, English to learn with Japanese mean
 check('…with Japanese part-of-speech labels', text().includes('名詞') && text().includes('動詞'));
 
 await goTo('#/ja-en/connectors');
-check('the lessons are listed under the course\'s own name',
-  $('h1')?.textContent === '表現・つなぎ言葉' && $$('.lesson-row').length === EN.lessons.length &&
+const enLevel = await deck.getLevel();
+const enLevelLessons = EN.lessons.filter((l) => l.level === enLevel);
+check('the lessons are listed under the course\'s own name, for the learner\'s level',
+  $('h1')?.textContent === '表現・文法' && $$('.lesson-row').length === enLevelLessons.length &&
   $$('.connector-mark').every((m) => m.getAttribute('lang') === 'en'),
-  `${$('h1')?.textContent}: ${$$('.lesson-row').length} lessons`);
+  `${$('h1')?.textContent}: ${$$('.lesson-row').length} lessons (${enLevel})`);
 check('…grouped as the manifest says', $$('.section-title').map((h) => h.textContent).join('|') ===
-  EN.lessonGroups.map((g) => g.title).join('|'));
+  EN.lessonGroups.filter((g) => enLevelLessons.some((l) => l.group === g.id)).map((g) => g.title).join('|'));
 check('…and its tab is lit', document.querySelector('.tabbar a.active')?.dataset.path === '/connectors');
 
 await goTo('#/ja-en/connectors/pat-like');
@@ -1151,7 +1213,7 @@ check('a pattern lesson shows the English pattern, a Japanese explanation and it
   $('.connector-title')?.textContent === likeFile.connector && $('.connector-title')?.getAttribute('lang') === 'en' &&
   Boolean($('.lesson-explanation')) && $$('.item-sentence').length === likeFile.examples.length,
   $('.connector-title')?.textContent);
-check('…with a way back to the list by its name', text().includes('← 表現・つなぎ言葉'));
+check('…with a way back to the list by its name', text().includes('← 表現・文法'));
 check('…and no furigana in an English lesson', $$('ruby').length === 0);
 
 await goTo('#/ja-en/connectors/pat-like/practice');

@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-continuous",
+  "connector": "-ing",
+  "gloss": "今〜している",
+  "title": "be ＋ -ing — 今〜しています",
+  "pattern": "am・is・are ＋ 動詞-ing",
+  "explanation": "今まさにしていることは、be動詞 ＋ 動詞の -ing 形：I’m cooking.（今、料理しています）、It’s raining.（雨が降っています）。e で終わる語は e を取って -ing（make → making）。短い語は最後の文字を重ねることがあります（run → running、sit → sitting）。",
+  "natural": "電話やメッセージでよく使います：What are you doing?（何してる？）―― I’m watching TV.（テレビ見てる）。",
+  "stiff": "be動詞を落とすのは×：I cooking. ではなく I’m cooking.。know、like、want のような「状態」の動詞は -ing にしません：I’m knowing. は×。",
+  "examples": [
+    {
+      "id": "gx-continuous-1",
+      "english": "I’m cooking dinner.",
+      "japanese": "夕食を作っています。",
+      "chunks": [
+        {
+          "t": "I’m ",
+          "w": "w-i"
+        },
+        {
+          "t": "cooking ",
+          "w": "w-cook"
+        },
+        {
+          "t": "dinner."
+        }
+      ],
+      "gap": {
+        "before": "I’m ",
+        "answer": "cooking",
+        "after": " dinner.",
+        "options": [
+          "cooking",
+          "cook",
+          "cooked"
+        ],
+        "why": "今していること：be ＋ -ing。"
+      },
+      "audio": "audio/en/grammar/gx-continuous-1.mp3",
+      "tags": [
+        "文法",
+        "-ing"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-continuous-2",
+      "english": "What are you doing?",
+      "japanese": "何してるの？",
+      "chunks": [
+        {
+          "t": "What ",
+          "w": "w-what"
+        },
+        {
+          "t": "are you "
+        },
+        {
+          "t": "doing?",
+          "w": "w-do"
+        }
+      ],
+      "gap": {
+        "before": "What ",
+        "answer": "are",
+        "after": " you doing?",
+        "options": [
+          "are",
+          "do",
+          "is"
+        ],
+        "why": "-ing の質問は be動詞を前に：What are you doing?"
+      },
+      "audio": "audio/en/grammar/gx-continuous-2.mp3",
+      "tags": [
+        "文法",
+        "-ing"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-continuous-3",
+      "english": "It’s raining again.",
+      "japanese": "また雨が降っています。",
+      "chunks": [
+        {
+          "t": "It’s ",
+          "w": "w-it"
+        },
+        {
+          "t": "raining ",
+          "w": "w-rain"
+        },
+        {
+          "t": "again."
+        }
+      ],
+      "gap": {
+        "before": "It’s ",
+        "answer": "raining",
+        "after": " again.",
+        "options": [
+          "raining",
+          "rain",
+          "rains"
+        ],
+        "why": "今降っている：It’s raining。"
+      },
+      "audio": "audio/en/grammar/gx-continuous-3.mp3",
+      "tags": [
+        "文法",
+        "-ing"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-continuous-4",
+      "english": "She’s sitting next to the window.",
+      "japanese": "彼女は窓の隣に座っています。",
+      "chunks": [
+        {
+          "t": "She’s ",
+          "w": "w-she"
+        },
+        {
+          "t": "sitting next to ",
+          "w": "w-sit"
+        },
+        {
+          "t": "the window.",
+          "w": "w-window"
+        }
+      ],
+      "gap": {
+        "before": "She’s ",
+        "answer": "sitting",
+        "after": " next to the window.",
+        "options": [
+          "sitting",
+          "siting",
+          "sits"
+        ],
+        "why": "sit は t を重ねて sitting。"
+      },
+      "audio": "audio/en/grammar/gx-continuous-4.mp3",
+      "tags": [
+        "文法",
+        "-ing"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

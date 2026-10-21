@@ -34,7 +34,7 @@
  * Settings, it never waits at all.
  */
 
-const CACHE_VERSION = 'v17';
+const CACHE_VERSION = 'v18';
 const CACHE_PREFIX = 'wayword-';
 const CACHE = `${CACHE_PREFIX}${CACHE_VERSION}`;
 
@@ -76,6 +76,7 @@ const SHELL = [
   './js/home.js',
   './js/i18n.js',
   './js/kana.js',
+  './js/levels.js',
   './js/listen-drill.js',
   './js/listening.js',
   './js/mastery.js',

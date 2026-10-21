@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-teiru",
+  "connector": "〜ている",
+  "gloss": "is doing; a state",
+  "title": "〜ている — doing now, and states",
+  "pattern": "verb て form + いる / います",
+  "explanation": "Add いる (polite: います) to a verb’s て form. It says something is going on right now — {今|いま}、{料理|りょうり}をしています (I’m cooking) — or that you do it these days: {毎日|まいにち}{日本語|にほんご}を{勉強|べんきょう}しています. With some verbs it’s a state: {結婚|けっこん}しています (I’m married), {知|し}っています (I know).",
+  "natural": "In casual speech the い drops out: {何|なに}してる？ — what are you up to?",
+  "stiff": "“I know” is {知|し}っています, never {知|し}ります. But “I don’t know” is {知|し}りません, not {知|し}っていません.",
+  "examples": [
+    {
+      "id": "gx-teiru-1",
+      "japanese": "今、料理をしています。",
+      "furigana": "{今|いま}、{料理|りょうり}をしています。",
+      "romaji": "ima, ryōri o shite imasu",
+      "english": "I’m cooking right now.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{今|いま}、",
+          "w": "w-ima"
+        },
+        {
+          "t": "{料理|りょうり}を",
+          "w": "w-ryouri"
+        },
+        {
+          "t": "しています。",
+          "w": "w-suru"
+        }
+      ],
+      "gap": {
+        "before": "{今|いま}、{料理|りょうり}をして",
+        "answer": "います",
+        "after": "。",
+        "options": [
+          "います",
+          "あります",
+          "ます"
+        ],
+        "why": "Doing it right now: て + いる."
+      },
+      "audio": "audio/ja/grammar/gx-teiru-1.mp3",
+      "tags": [
+        "grammar",
+        "teiru"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-teiru-2",
+      "japanese": "今、何してる？",
+      "furigana": "{今|いま}、{何|なに}してる？",
+      "romaji": "ima, nani shiteru?",
+      "english": "What are you up to right now?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今|いま}、",
+          "w": "w-ima"
+        },
+        {
+          "t": "{何|なに}",
+          "w": "w-nani"
+        },
+        {
+          "t": "してる？",
+          "w": "w-suru"
+        }
+      ],
+      "gap": {
+        "before": "{今|いま}、{何|なに}",
+        "answer": "してる",
+        "after": "？",
+        "options": [
+          "してる",
+          "した",
+          "する"
+        ],
+        "why": "Doing, right now: してる, casual for している."
+      },
+      "audio": "audio/ja/grammar/gx-teiru-2.mp3",
+      "tags": [
+        "grammar",
+        "teiru"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-teiru-3",
+      "japanese": "兄は東京で働いています。",
+      "furigana": "{兄|あに}は{東京|とうきょう}で{働|はたら}いています。",
+      "romaji": "ani wa Tōkyō de hataraite imasu",
+      "english": "My older brother works in Tokyo.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{兄|あに}は",
+          "w": "w-ani"
+        },
+        {
+          "t": "{東京|とうきょう}で"
+        },
+        {
+          "t": "{働|はたら}いています。",
+          "w": "w-hataraku"
+        }
+      ],
+      "gap": {
+        "before": "{兄|あに}は{東京|とうきょう}で{働|はたら}いて",
+        "answer": "います",
+        "after": "。",
+        "options": [
+          "います",
+          "あります",
+          "ました"
+        ],
+        "why": "What he does these days: ています."
+      },
+      "audio": "audio/ja/grammar/gx-teiru-3.mp3",
+      "tags": [
+        "grammar",
+        "teiru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-teiru-4",
+      "japanese": "その人を知っていますか。",
+      "furigana": "その{人|ひと}を{知|し}っていますか。",
+      "romaji": "sono hito o shitte imasu ka",
+      "english": "Do you know that person?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "その{人|ひと}を",
+          "w": "w-hito"
+        },
+        {
+          "t": "{知|し}っていますか。",
+          "w": "w-shiru"
+        }
+      ],
+      "gap": {
+        "before": "その{人|ひと}を{知|し}って",
+        "answer": "いますか",
+        "after": "。",
+        "options": [
+          "いますか",
+          "ますか",
+          "ありますか"
+        ],
+        "why": "Knowing is a state: 知っています."
+      },
+      "audio": "audio/ja/grammar/gx-teiru-4.mp3",
+      "tags": [
+        "grammar",
+        "teiru"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

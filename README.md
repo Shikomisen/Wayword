@@ -3,7 +3,7 @@
 An offline-first language-learning app for real conversation. It runs in the browser, installs to a phone's home screen, works without a connection, and keeps every bit of progress on the device.
 
 - **Live:** https://shikomisen.github.io/Wayword/
-- **Version:** v17
+- **Version:** v18
 - **Courses:** Japanese for English speakers, and English for Japanese speakers. Indonesian is planned.
 
 This README is the complete description of the project: what it does, how it's built, the content format, the learning rules, storage, audio, offline behaviour, and how to run, test, deploy or port it. It describes what is true now. The design rationale and project history are kept in the maintainer's private notes, outside this repository.
@@ -49,6 +49,19 @@ Wayword teaches the language you need to talk with people. Words come first, the
 
 Controls a course can't use don't appear: the English course has no furigana and no Reading tab, and the Japanese course has no listening drill.
 
+**Levels.** Each course is divided into levels, and the learner is always at one of them (§7.10):
+
+| Level | For | Roughly |
+|---|---|---|
+| **First steps** | Someone brand new to the language: the first words and phrases, and how a sentence is built (particles, です and ます; or be-verbs, a and the, the present and past) | CEFR A1; before JLPT N5 |
+| **Basic** | Getting by: everyday words, set phrases for shops, stations and hotels, connectors, polite phrasing, and (in Japanese) the first kanji | A2; JLPT N5 |
+
+The equivalences are approximate: the levels are built around what a learner can do, not around an exam. An Intermediate level is planned for both courses (§14).
+
+- **Placement** suggests where to start, and the learner can pick another level.
+- **Learn** shows one level at a time.
+- **Today** shows how far through their level the learner is, and offers the next deck when new cards run low.
+
 ---
 
 ## 2. Features
@@ -59,25 +72,30 @@ Controls a course can't use don't appear: the English course has no furigana and
 - Each course card shows where the learner is: cards due today, not started, or coming soon.
 - The speaker defaults to the device language if the app teaches from it, otherwise English, and it's remembered.
 - Inside a course, a slim bar ("‹ Languages · English › Japanese") leads back, and Settings has a Language row.
-- The version shows at the foot of the picker ("Wayword v17") and in Settings → About.
+- The version shows at the foot of the picker ("Wayword v18") and in Settings → About.
 
 ### 2.2 Placement
 
 The first visit to a course runs a short placement quiz.
 
-- It takes two cards from each phrase category (its easiest and its hardest), plus two from each character set: 30 items for Japanese, 20 for English.
+- It takes two cards from each phrase category (its easiest and its hardest), plus two from each character set: 30 items for Japanese, 20 for English. A level marked `placement: false` isn't sampled, which keeps the quiz short.
 - Each is self-graded as **I know this**, **I'd recognise it** or **New to me**. Nothing is typed, and nothing is scored against the learner. The answers decide where cards enter the review deck (§7.4).
-- Afterwards, the course's `starter` decks are added to study.
+- **Where to start:** the results suggest a level from the overall score (§7.10), and show every level to pick from instead, each with its description.
+- Afterwards, the chosen level's `starter` decks are added to study.
 
 ### 2.3 Today
 
 Top to bottom:
 
 1. What's due, four stats (due, new, done today, day streak) and **Start review**, with a breakdown: to review · relearning · new.
-2. A nudge to add a word deck, if the course has word decks and none is in study.
+2. **Your level** (§7.10): its name, how many of its items are learned and how many of its lessons practised, with a bar. Under it, one of these:
+   - **Ready for the next level**, once the level is learned, with **Move up**. Moving up makes it the learner's level and adds its starter decks.
+   - **Next step:** the next deck on the level's path, with **Add**, whenever fewer new cards are waiting than one day's limit.
+
+   A course without levels shows a nudge to add a word deck instead, if it has word decks and none is in study.
 3. The daily extras:
    - **Reading:** the kana drill until both scripts are mastered, then the character deck.
-   - **The course's lessons:** how many have been practised, with mixed practice once one has.
+   - **The course's lessons:** the level's next lesson to practise, and how many of the level's lessons have been practised. Once they all have, mixed practice.
    - **Listening.**
 4. **Back up your progress**, once there's progress and no backup in the last 14 days.
 5. **In your deck:** every deck in study, with its progress.
@@ -86,6 +104,9 @@ Top to bottom:
 ### 2.4 Learn: decks
 
 Learn lists word decks, sentence decks, phrase categories (under the course's topic groups), Your own words, Listening (where the course has it), and Scenarios when they have no tab (§4.5).
+
+- **One level at a time.** A row of level buttons sits at the top, with the shown level's description. Learn opens on the learner's level; the decks, sentences and phrase categories listed are that level's.
+- **Another level** can be shown with its button. The learner's own level stays underlined, and **Make this my level** switches to the one shown. The lessons list (§2.6) shows the same level.
 
 - **Word decks:** each word has its meaning, its part of speech and a usage note where one helps. A Japanese verb also shows its ます and て forms. A word card lists the sentences it appears in.
 - **Sentence decks:** short sentences built from the word decks. Each is cut into pieces linked to the words they use, and a sentence card lists its words.
@@ -123,7 +144,7 @@ Learn lists word decks, sentence decks, phrase categories (under the course's to
 - **Grading:** after revealing, **No idea / Shaky / Got it / Too easy**, each showing when the card would come back. A failed card returns later in the same session.
 - **Reading aids (Japanese):**
   - Furigana has three modes: **Always**, **Tap to show** (the reading is in place but invisible until tapped) and **Hidden**. Set it in Settings, or cycle it from the ふりがな chip.
-  - Romaji has the same three modes, set in Settings or cycled from the romaji chip.
+  - Romaji has the same three modes, set in Settings or cycled from the romaji chip. Phrases, characters and everything at First steps (its words, sentences and grammar examples) carry romaji, so a brand-new learner can follow before reading kana. From Basic on, words and sentences have furigana only.
     - On Tap to show, each romaji line keeps its place, blank until tapped. In the kana chart, tapping a character plays it and shows its romaji.
     - A week after the course was first opened, Always changes once to Tap to show, and the app says so.
   - **I can read this**, on the back of a card, drops that item's furigana and romaji to Tap to show everywhere it appears.
@@ -133,9 +154,17 @@ Learn lists word decks, sentence decks, phrase categories (under the course's to
 
 ### 2.6 Lessons and drills
 
-Each course has a lessons tab, named by its manifest:
-- **Connectors** in the Japanese course: 16 lessons, one per connector (〜て, そして, それから, から, ので, だから, けど, が, でも, と, たら, ば, とき, ながら, し, ために).
-- **表現・つなぎ言葉** in the English course (the tab says 表現): 30 lessons covering phrase patterns, polite phrasing, linking words and word order.
+Each course has a lessons tab, named by its manifest. Like Learn, it shows one level at a time (§2.4):
+- **Grammar and connectors** in the Japanese course (the tab says Grammar): 36 lessons.
+  - **First steps, 20 lessons:**
+    - *Particles: building a sentence:* です, は, が, を, に, で, から〜まで, の, も, と ("and, with"), か.
+    - *Verbs and adjectives:* the ます forms, い- and な-adjectives, ある・いる, 〜たい, 〜ましょう・〜ませんか, 〜ている, the plain and ない forms, the plain past (〜た).
+  - **Basic, 16 lessons,** one per connector: 〜て, そして, それから, から, ので, だから, けど, が, でも, と, たら, ば, とき, ながら, し, ために.
+- **表現・文法** in the English course (the tab says 表現): 48 lessons.
+  - **First steps, 18 lessons** (はじめての英語), explained in Japanese:
+    - *文の基本:* am / is / are, not and questions, this and that, a and the, plurals, my and your, there is, in / on / at for places and for times.
+    - *動詞の基本:* the present simple, don't and doesn't, can, the present continuous, the past with -ed and the irregular past, question words, want to, please and don't.
+  - **Basic, 30 lessons:** phrase patterns, polite phrasing, linking words and word order.
 
 **A lesson** has:
 - the pattern;
@@ -171,6 +200,7 @@ The **Reading** tab covers the writing system. It has four sets:
 - **Common Kanji:** 82 kanji from everyday signs, such as exits, platforms, prices and warnings.
 
 What the tab does:
+- **Levels:** the sets are listed under their level. The kana are First steps; both kanji sets are Basic.
 - **Browsing:** kana show as the traditional grid and kanji as lists grouped by use. Tapping any character plays it. Each kanji links to the words, sentences and phrases it appears in.
 - **Kana mastery** is tracked per character and per script, and shown at the top of the tab (§7.7).
 - **The daily kana drill** takes about two minutes and appears on Today and in Reading until both scripts are mastered.
@@ -190,6 +220,8 @@ About ten questions a day, on Today and in Learn. It has no tab of its own.
 
 Items are mastered by the same rule as kana (§7.7). Listening content never enters the review deck.
 
+The drill draws on the learner's level and the levels below it. The sound pairs are First steps, and the lines said back are Basic.
+
 ### 2.9 Scenarios
 
 Scenarios are branching conversations.
@@ -202,7 +234,7 @@ Scenarios are branching conversations.
 | Japanese (6) | A convenience-store checkout, buying a train ticket, an immigration desk, hotel check-in, ordering at a restaurant, asking the way |
 | English (7) | All as the customer: a café, a clothes shop, a bakery, the bus, asking the way, immigration, hotel check-in. Every reply gets Japanese feedback |
 
-Picking a reply doesn't move any card's schedule (§7.6).
+Picking a reply doesn't move any card's schedule (§7.6). The scenario list puts each scenario under its level; today all of them are Basic.
 
 ### 2.10 Your data
 
@@ -262,54 +294,78 @@ How it works is in §10.6.
 
 | Course | id | Status | Content | Audio |
 |---|---|---|---|---|
-| Japanese, for English speakers | `en-ja` | available | `content/ja/` | `audio/ja/`: 907 clips, 9.7 MB |
-| English, for Japanese speakers | `ja-en` | available | `content/en/` | `audio/en/`: 629 clips, 9.3 MB |
+| Japanese, for English speakers | `en-ja` | available | `content/ja/` | `audio/ja/`: 1,007 clips, 12.0 MB |
+| English, for Japanese speakers | `ja-en` | available | `content/en/` | `audio/en/`: 846 clips, 11.7 MB |
 | Indonesian, for English speakers | `en-id` | planned (placeholder screen) | — | — |
 | Indonesian, for Japanese speakers | `ja-id` | planned (placeholder screen) | — | — |
 
 | | Japanese (`en-ja`) | English (`ja-en`) |
 |---|---|---|
-| Words | 197 in 12 decks | 250 in 8 decks |
+| Words | 217 in 13 decks | 395 in 14 decks |
 | Sentences | 16 | 42 |
 | Phrases | 187 in 11 categories, 39 of them casual, each with its polite version | 112 in 10 categories |
-| Lessons | 16 connectors, 64 examples (25 can be joined) | 30 lessons, 120 examples (12 can be joined) |
+| Lessons | 36: 20 grammar lessons and 16 connectors; 144 examples (25 can be joined) | 48: 18 grammar lessons and 30 others; 192 examples (12 can be joined) |
 | Characters | 372: hiragana 104, katakana 116, kanji 70 + 82 | — |
 | Listening | — | 30 lines and 18 sound pairs |
 | Scenarios | 6 | 7 |
 | Dictionary, for Paste a message | 22,645 common words (JMdict, §6.14) | — |
 
-These are the counts for v17. `npm test` prints them as it validates.
+**By level** (§7.10):
 
-**Japanese, for English speakers.** Decks marked \* are starters, added by placement.
+| Level | Japanese | English |
+|---|---|---|
+| First steps | 92 words in 5 decks; 16 sentences; 58 phrases in 3 categories; 20 grammar lessons; hiragana and katakana | 145 words in 6 decks; 24 phrases in 2 categories; 18 grammar lessons; the sound pairs |
+| Basic | 125 words in 8 decks; 129 phrases in 8 categories; 16 connector lessons; both kanji sets; 6 scenarios | 250 words in 8 decks; 42 sentences; 88 phrases in 8 categories; 30 lessons; the lines said back; 7 scenarios |
 
-- **Word decks:**
-  - People & Family 18\*, Time & Days 18, Everyday Verbs 20\*, Little Words 16\*;
-  - Home & Daily Life 17, Food & Drink 18, Describing Things 18, Feelings & Health 16;
-  - Places & Getting Around 15, Weather & Seasons 14, Work & Study 14, Free Time 13.
-- **Sentences:** Everyday Sentences, 16\*.
-- **Phrase categories, by group:**
-  - *Everyday basics:* Greetings & Politeness 24\*, Numbers, Time & Money 24\*, Small Talk 10\*, Casual Speech 39\*.
-  - *Out and about:* Transportation 20, Directions & Getting Lost 10, Restaurants & Ordering 10, Shopping & Payments 10.
-  - *Travelling:* Airport & Immigration 20, Hotel Check-in / out 10.
-  - *If something goes wrong:* Emergencies & Health 10.
-- **Connector groups:**
-  - And, and then (〜て, そして, それから);
-  - Because and so (から, ので, だから);
-  - But (けど, が, でも);
-  - If and when (と, たら, ば, とき);
-  - While, what's more, in order to (ながら, し, ために).
-- **Kanji not taught yet:** 127 kanji used in the words, sentences and lesson examples aren't taught by any set. `npm run crossref` lists them, most frequent first.
+These are the counts for v18. `npm test` prints them as it validates.
 
-**English, for Japanese speakers.** Decks marked \* are starters. Titles are given in English here; the app shows them in Japanese.
+**Japanese, for English speakers.** Each level is listed in next-step order (`step`). Decks marked \* are its starters, added by placement or by moving up.
 
-- **Word decks:**
-  - café and food 25\*, clothes and sizes 23, shops and paying 25\*, everyday verbs 45\*;
-  - phrasal verbs 32, money 27, katakana English that means something else 44, New Zealand words 29.
-- **Sentences:** everyday sentences, 42.
-- **Phrase categories:**
-  - greetings 12\*, numbers, time and money 12\*, café and restaurant 14\*, shopping and paying 14\*;
-  - airport and immigration 10, trains, buses and taxis 10, asking the way 10, hotel 10, emergencies and health 10, small talk 10.
-- **Lesson groups:**
+- **First steps:**
+  - *Phrases:* Greetings & Politeness 24\*, Numbers, Time & Money 24\*.
+  - *Words:* People & Family 18\*, Everyday Verbs 20\*, Little Words 16\*.
+  - *Sentences:* Everyday Sentences 16.
+  - *Words:* Things Around You 20, Time & Days 18.
+  - *Phrases:* Small Talk 10.
+  - Hiragana and katakana, and the 20 grammar lessons (§2.6).
+  - Everything at this level carries romaji (§2.5).
+- **Basic:**
+  - *Phrases:* Casual Speech 39\*.
+  - *Words:* Food & Drink 18\*, Home & Daily Life 17, Describing Things 18\*.
+  - *Phrases:* Restaurants & Ordering 10\*, Shopping & Payments 10\*.
+  - *Words:* Places & Getting Around 15.
+  - *Phrases:* Transportation 20, Directions & Getting Lost 10.
+  - *Words:* Feelings & Health 16, Weather & Seasons 14, Work & Study 14, Free Time 13.
+  - *Phrases:* Emergencies & Health 10, Airport & Immigration 20, Hotel Check-in / out 10.
+  - The connector lessons, in five groups:
+    - And, and then (〜て, そして, それから);
+    - Because and so (から, ので, だから);
+    - But (けど, が, でも);
+    - If and when (と, たら, ば, とき);
+    - While, what's more, in order to (ながら, し, ために).
+  - Both kanji sets, and the six scenarios.
+- **Phrase groups:** Everyday basics, Out and about, Travelling, If something goes wrong.
+- **Kanji not taught yet:** 139 kanji used in the words, sentences and lesson examples aren't taught by any set. `npm run crossref` lists them, most frequent first.
+
+**English, for Japanese speakers.** In next-step order; \* marks a level's starters. Titles are given in English here; the app shows them in Japanese.
+
+- **First steps:**
+  - *Phrases:* greetings 12\*, numbers, time and money 12\*.
+  - *Words:*
+    - people and family 25\*, first verbs 25\*;
+    - little words (I, you, this, what…) 20, things around you 25;
+    - time, days and weather 25, describing words and colours 25.
+  - The 18 はじめての英語 lessons (§2.6), and the listening sound pairs.
+- **Basic:**
+  - *Phrases:* café and restaurant 14\*, shopping and paying 14\*.
+  - *Words:* café and food 25\*, shops and paying 25\*, everyday verbs 45\*, clothes and sizes 23.
+  - *Sentences:* everyday sentences 42.
+  - *Phrases:* small talk 10, trains, buses and taxis 10, asking the way 10.
+  - *Words:* money 27, phrasal verbs 32.
+  - *Phrases:* hotel 10, airport and immigration 10, emergencies and health 10.
+  - *Words:* katakana English that means something else 44, New Zealand words 29.
+  - The 30 lessons below, the listening lines, and the seven scenarios.
+- **Basic lesson groups:**
   - お願いする: *I'd like…*, *Can I have…?*, *Could I get…?*
   - たずねる: *Do you have…?*, *Is this…?*, *Where's…?*, *How much…?*
   - ていねいに頼む・断る (6 lessons): *Could you…?*, *Would you mind…?*, *Is it OK if I…?*, saying no, *Excuse me / Sorry*, *You too!*
@@ -349,7 +405,8 @@ All in `js/`. Screens talk to `deck.js`, never to `store.js` directly.
 | `app.js` | Boot, the router, the chrome (course bar, tab bar, update bar), and the Today, Learn, deck, study and Settings screens |
 | `course.js` | The course registry (`content/courses.json`), the active course and app-wide preferences. Entering a course switches storage, interface language and content together, and applies each language's font stack |
 | `content.js` | Loads a course's manifest and files, and gives every item the generic fields (§6.1). Also attaches your own words, and loads scenarios on demand |
-| `deck.js` | The bridge between content, SRS and storage: settings, active and parked decks, adding cards, grading, stats, streak, drill records, saved messages |
+| `deck.js` | The bridge between content, SRS and storage: settings, active and parked decks, adding cards, grading, stats, streak, drill records, saved messages, and the learner's level |
+| `levels.js` | A course's levels (§7.10): which level each deck is in, a level's progress, the next step, the suggested starting level. Pure logic |
 | `srs.js` | SM-2: the card record, grades, card kinds and directions, queue building |
 | `store.js` | Persistence: an IndexedDB database per namespace, with a localStorage fallback |
 | `i18n.js` | Interface strings (`t()`), plurals, the date locale, and the built-in boot-error strings |
@@ -434,7 +491,7 @@ Each course has a tab bar of at most five tabs: Today, Learn, the lessons tab (i
 
 | Course | Tabs | Elsewhere |
 |---|---|---|
-| Japanese | Today · Learn · Connectors · Reading · Settings | Scenarios are in Learn |
+| Japanese | Today · Learn · Grammar · Reading · Settings | Scenarios are in Learn |
 | English | 今日 · 学ぶ · 表現 · 会話練習 · 設定 | Listening is in Learn and on Today |
 
 The lessons tab's title, label, icon and intro come from the manifest's `copy`. The interface language follows the course's speaker.
@@ -452,21 +509,22 @@ Wayword/
 ├── .nojekyll           tells GitHub Pages to serve the files as they are
 ├── css/styles.css      one stylesheet: dark by default, light under prefers-color-scheme,
 │                       sizes driven by --text-scale
-├── js/                 31 ES modules (§4.2)
+├── js/                 32 ES modules (§4.2)
 ├── content/
 │   ├── courses.json    languages, speakers, courses (§6.2)
 │   ├── ui/             interface strings: en.json, ja.json (§6.11)
 │   ├── ja/             Japanese, for English speakers: manifest.json, 11 phrase categories,
-│   │                   4 character sets, words/ (12), sentences/ (1), connectors/ (16),
-│   │                   scenarios/ (6), and dictionary.json (JMdict, CC BY-SA 4.0, §6.14)
+│   │                   4 character sets, words/ (13), sentences/ (1), grammar/ (20),
+│   │                   connectors/ (16), scenarios/ (6), and dictionary.json
+│   │                   (JMdict, CC BY-SA 4.0, §6.14)
 │   └── en/             English, for Japanese speakers: manifest.json, 10 phrase categories,
-│                       words/ (8), sentences/ (1), patterns/ (7), connectors/ (23),
-│                       listening/ (2), scenarios/ (7)
+│                       words/ (14), sentences/ (1), grammar/ (18), patterns/ (7),
+│                       connectors/ (23), listening/ (2), scenarios/ (7)
 ├── audio/
-│   ├── ja/             907 clips: phrases at the top level; casual/ chars/ connectors/
-│   │                   scenario/ sentences/ words/
-│   └── en/             629 clips: phrases at the top level; connectors/ listening/ patterns/
-│                       scenario/ sentences/ words/
+│   ├── ja/             1,007 clips: phrases at the top level; casual/ chars/ connectors/
+│   │                   grammar/ scenario/ sentences/ words/
+│   └── en/             846 clips: phrases at the top level; connectors/ grammar/ listening/
+│                       patterns/ scenario/ sentences/ words/
 ├── icons/              192, 512, maskable 512 and 180 (apple-touch) PNGs, from tools/make-icons.mjs
 ├── tools/              Node scripts: dev server, generators, test suites, deploy (§11.2)
 ├── package.json        npm scripts; dev dependencies jsdom and puppeteer-core
@@ -500,6 +558,7 @@ Wayword/
   | Words | `w-…` |
   | Sentences | `s-NN` |
   | Connector and pattern examples | `cx-<lesson>-N`, `px-<lesson>-N` |
+  | Grammar lessons, and their examples | `gr-<name>`; `gx-<name>-N` |
   | Kana | `hira-…`, `kata-…`, `kata-ext-…` |
   | Kanji | `kw-…` (Kanji in Your Words), `kan-…` (Common Kanji) |
   | Listening | `lr-NN` (lines said back), `lc-<set>-<word>` (sound pairs) |
@@ -542,22 +601,23 @@ Wayword/
 | `fields` | yes | `{ target, meaning, ruby?, reading? }`: which item fields hold the text being learned, the gloss, furigana and romanisation. Japanese: `japanese`, `english`, `furigana`, `romaji`. English: `english`, `japanese` |
 | `copy` | yes (`placementLede`) | The course's own wording: `placementLede` (`{n}` = number of items), `placementAside`, and `lessonsTitle`, `lessonsTab`, `lessonsIcon`, `lessonsLede` for the lessons tab. Without the lessons keys, the tab is called Connectors |
 | `groups` | yes | `[{ id, title }]`, the topic groups for phrase categories |
-| `categories` | yes | `[{ id, order, file, title, icon, group, starter? }]` |
+| `levels` | no | `[{ id, icon, title, description, placement? }]`, in order (§7.10). With it, every entry below names its `level`, and `categories` and `decks` entries may give a `step` (a number) for the order of the next-step path. `placement: false` keeps a level out of the placement quiz |
+| `categories` | yes | `[{ id, order, file, title, icon, group, level?, step?, starter? }]` |
 | `register` | no | The default register. `polite` or `casual` gives every phrase without its own register a badge; any other value (the English course uses `polite-neutral`) shows none |
 | `noteFields` | no | `[{ field, label, style? }]`: which note fields exist and how they're labelled. Japanese: `registerNotes` (Register), `animeNote` (From anime?), `usage` (Usage). English: `registerNotes` (使い方), `pitfallNote` (よくある間違い) |
 | `aids` | no | The reading aids' names: `{ ruby: { chip, label, help }, reading: { … } }`. `label` names the aid in Settings, and `chip` on its inline chip. `help` describes it; Settings shows its own help for the three modes instead |
 | `words` | with word decks | `{ pos: [...], forms: [...], verbForms: [...] }`: the parts of speech allowed, the word forms allowed, and the forms every verb must have. Japanese: forms `masu` and `te` |
-| `decks` | no | `[{ id, kind: "words" or "sentences", order, file, title, icon, starter? }]` |
-| `lessonGroups`, `lessons` | no | `[{ id, title, description }]`; `[{ id, order, file, title, group }]` |
+| `decks` | no | `[{ id, kind: "words" or "sentences", order, file, title, icon, level?, step?, starter? }]` |
+| `lessonGroups`, `lessons` | no | `[{ id, title, description }]`; `[{ id, order, file, title, group, level? }]` |
 | `drills` | no | The drill kinds lessons use: `fill`, `order`, `combine`, `say`. Without it, the first three |
-| `characterSets` | no | `[{ id, order, file, title, icon, script: "hiragana", "katakana" or "kanji", layout: "grid" or "list" }]` |
-| `listening` | no | `[{ id, kind: "replies" or "contrasts", file, title, icon }]` |
-| `scenarios` | no | `[{ id, file, title, icon, category }]`, where `category` is a phrase category id |
+| `characterSets` | no | `[{ id, order, file, title, icon, script: "hiragana", "katakana" or "kanji", layout: "grid" or "list", level? }]` |
+| `listening` | no | `[{ id, kind: "replies" or "contrasts", file, title, icon, level? }]` |
+| `scenarios` | no | `[{ id, file, title, icon, category, level? }]`, where `category` is a phrase category id |
 | `dictionary` | no | `{ file, name, owner, ownerUrl, url, licence, licenceUrl, credit }`: the course's offline dictionary, for Paste a message, and the credit its licence asks for (§6.14) |
 | `voice` | no | `{ engine: "google" or "azure", azure: { default, speakers } }` (§9.2) |
 | `generatedFor`, `notes` | no | Free text. The app doesn't use them |
 
-`starter: true` on a category or deck means placement adds it.
+`starter: true` on a category or deck means placement adds it. In a course with levels, placement adds the chosen level's starters, and moving up adds the next level's (§7.10).
 
 ### 6.4 Phrase categories
 
@@ -595,6 +655,7 @@ A deck file is `{ schemaVersion, id, title, description, items: [...] }`.
 
 It may also have:
 - furigana (required wherever the text has kanji);
+- romaji, where the course declares it. The Japanese First-steps decks have it, and so do the grammar lessons' examples;
 - `forms` (a Japanese verb needs both `masu` and `te`, written in inline notation);
 - note fields (`usage`, `registerNotes`, `pitfallNote`);
 - `audioHint`.
@@ -729,7 +790,7 @@ inline:    "{電車|でんしゃ}に"
 - `$locale` sets the date locale. Japanese uses `ja-JP`; with none, the device default applies.
 - A key missing from a dictionary falls back to English, then to the key itself.
 
-English has 438 keys and Japanese 409. The keys only English-taught courses can reach (Reading, the character limit, the romaji notice) have no Japanese version. Paste a message has its strings in both, though only the Japanese course has a dictionary so far. Four boot-error strings are built into `js/i18n.js`, because they have to work when no content loads.
+English has 453 keys and Japanese 424. The keys only English-taught courses can reach (Reading, the character limit, the romaji notice) have no Japanese version. Paste a message has its strings in both, though only the Japanese course has a dictionary so far. Four boot-error strings are built into `js/i18n.js`, because they have to work when no content loads.
 
 ### 6.12 The content contract (`npm test`)
 
@@ -745,6 +806,7 @@ English has 438 keys and Japanese 409. The keys only English-taught courses can 
   - no `fields.target` or `fields.meaning`;
   - no `copy.placementLede`;
   - undeclared groups, or no starter category;
+  - with `levels`: an empty list, a repeated level id, a level without a title or description, an entry naming an undeclared level, a `step` that isn't a number, a level with no decks or lessons, no starter in the first level, or no level that placement samples;
   - no `words.pos` in a course with word decks, or verb forms that aren't declared forms;
   - an unknown voice engine, or an Azure voice that isn't an `xx-XX-…Neural` voice in the course's language;
   - unknown drill kinds, or undeclared lesson groups.
@@ -816,8 +878,8 @@ English has 438 keys and Japanese 409. The keys only English-taught courses can 
 All of these are content only: no app code.
 
 **A phrase category, word or sentence deck, lesson or scenario:**
-1. Write the file, using an existing one as the model: `content/ja/greetings.json`, `content/ja/words/people.json`, `content/ja/connectors/kara.json` or `content/ja/scenarios/conbini.json`.
-2. Add an entry to the manifest's `categories`, `decks`, `lessons` or `scenarios`.
+1. Write the file, using an existing one as the model: `content/ja/greetings.json`, `content/ja/words/people.json`, `content/ja/connectors/kara.json`, `content/ja/grammar/wa.json` or `content/ja/scenarios/conbini.json`.
+2. Add an entry to the manifest's `categories`, `decks`, `lessons` or `scenarios`, with its `level` (and, for a deck or category, its `step` on the level's path).
 3. Run `npm run audio -- --course <id>`.
 4. For Japanese, also run `npm run crossref`.
 5. Run `npm test`.
@@ -923,7 +985,7 @@ A course can have an offline dictionary, for Paste a message (§2.4). The Japane
 
 ### 7.4 Placement and seeding
 
-- **Sampling:** for each phrase category and character set, the easiest and the hardest item by `difficulty` (one, if they're the same).
+- **Sampling:** for each phrase category and character set, the easiest and the hardest item by `difficulty` (one, if they're the same). Categories and sets in a level marked `placement: false` aren't sampled.
 - **Scoring:** answers count as known 1, seen 0.5 and unknown 0. Each category's score is the average.
 
   | Overall average | Label |
@@ -933,7 +995,7 @@ A course can have an offline dictionary, for Paste a message (§2.4). The Japane
   | ≥ 0.2 | early |
   | below that | just starting |
 - **Sampled items:** a "known" item's recognition card is seeded at 6 days (ease 2.6, reps 2, state `review`). The rest start new.
-- **Starters:** every `starter` category and deck is then added.
+- **Starters:** in a course with levels, the starting level is set (§7.10), and that level's `starter` categories and decks are added. Picking another level on the results screen takes out the first level's starters, if none of their cards has been reviewed, and adds the new level's. In a course without levels, every `starter` is added.
 - **Adding a deck or set**, at placement or later:
   - recognition cards with difficulty ≤ 2 start at 4 days (ease 2.6) when the category scored ≥ 0.75;
   - recognition cards with difficulty 1 start at 2 days (ease 2.5) when it scored ≥ 0.5;
@@ -1024,6 +1086,29 @@ Only flashcard grading moves SM-2. Everything else either feeds the deck or keep
 - **The streak:** consecutive days with any review, character review or drill. Today counts once something has been done; otherwise counting starts from yesterday.
 - **The forecast:** reviews due on each of the next 7 local days.
 
+### 7.10 Levels
+
+`js/levels.js` holds the rules; `deck.js` reads the data for it.
+
+- **A course's levels** are its manifest's `levels`, in order. Every category, deck, lesson, character set, scenario and listening set names one. A course without `levels` has none: everything is shown together, as before.
+- **The learner's level** is `settings.level`, kept per course.
+  - Placement sets it from the overall score: below 0.45 ("just starting" or "early") the first level, from 0.45 ("partial") the second, from 0.75 ("strong") the third. A course with fewer levels caps it at its last.
+  - The results screen offers the other levels too.
+  - **Make this my level,** in Learn or the lessons list, sets it.
+  - **Move up,** on Today, sets it to the next level and adds that level's starters.
+  - A learner from before levels existed gets the highest level among the decks they study, saved the first time it's needed.
+- **A level's items** are the phrases, words and sentences in its categories and decks. Lesson examples aren't counted: they only become cards once practised.
+- **Learned** means the item's recognition card is in `review` with an interval of 7 days or more. That's the same bar as for a kana card (§7.7).
+- **Ready for the next level** means 80% of the level's items are learned and 80% of its lessons have been practised at least once.
+- **The path:** a level's categories and decks, ordered by `step`, then words before sentences before phrases, then each list's own `order`.
+  - **The next step** is the first entry on the path that isn't in study and hasn't been taken out.
+  - Today offers it whenever fewer new cards are waiting in study than `newPerDay`.
+- **The next lesson** is the level's first lesson, in order, not yet practised.
+- **Listening** draws on the sets at the learner's level and the levels below it.
+- **Screens:**
+  - Learn and the lessons list show one level at a time, the learner's own by default; the level picked there is kept while the app is open.
+  - The Reading tab and the scenario list put each set and scenario under its level's heading.
+
 ---
 
 ## 8. Storage and backups
@@ -1100,7 +1185,7 @@ Settings defaults: `newPerDay` 10, `newCharsPerDay` 15, directions recognition a
 ### 9.1 Bundled clips
 
 - **One MP3 per item,** committed under `audio/<target language>/`, at the path in the item's `audio` field.
-- **The folders:** phrases sit at the top level (`audio/ja/gre-01.mp3`), and everything else in `words/`, `sentences/`, `connectors/`, `patterns/`, `listening/`, `scenario/`, `casual/` (casual phrases and their polite versions) and `chars/`.
+- **The folders:** phrases sit at the top level (`audio/ja/gre-01.mp3`), and everything else in `words/`, `sentences/`, `grammar/`, `connectors/`, `patterns/`, `listening/`, `scenario/`, `casual/` (casual phrases and their polite versions) and `chars/`.
 - **What gets a clip:**
   - every phrase, and every casual phrase's polite version;
   - every word, sentence and lesson example;
@@ -1110,7 +1195,7 @@ Settings defaults: `newPerDay` 10, `newCharsPerDay` 15, directions recognition a
 
   A scenario reply that references a phrase plays that phrase's clip; an inline reply has none.
 - **No speech at runtime:** the app never synthesises speech for bundled content.
-- **The totals:** Japanese 907 clips (9.7 MB), English 629 (9.3 MB).
+- **The totals:** Japanese 1,007 clips (12.0 MB), English 846 (11.7 MB).
 
 ### 9.2 Generating clips
 
@@ -1166,7 +1251,7 @@ Six Japanese words whose kana spelling is a common homophone (あめ, かえる,
 
 ### 10.1 Caches
 
-- **`wayword-<version>`** (`wayword-v17`): one cache per version, holding the app and the courses this device keeps.
+- **`wayword-<version>`** (`wayword-v18`): one cache per version, holding the app and the courses this device keeps.
 - **`wayword-kept`** isn't versioned. It holds `./__kept-courses.json`, the ids of the courses this device keeps, and `./__connection.json`, `{ mode: "online" or "offline" }` (§10.6).
 - **Cleanup:** only caches named `wayword-…`, or with the legacy prefix `nihongo-tabi-…`, are ever deleted, because the `github.io` origin is shared with other sites. A worker deletes only caches from older versions, never a later version's.
 
@@ -1292,13 +1377,13 @@ Setup: `npm ci` installs the two dev dependencies, `jsdom` and `puppeteer-core`.
 
 ### 11.3 Test suites
 
-| Suite | What it covers | Checks (14/10/2026) |
+| Suite | What it covers | Checks (21/10/2026) |
 |---|---|---|
-| `tools/selftest.mjs` | The content contract (§6.12), including furigana short enough to fit a line and the course dictionary; interface strings; the service-worker shell and version; SRS regressions | 34,206 |
-| `tools/integration-test.mjs` | The real modules, end to end in Node (with a filesystem `fetch` and a localStorage shim): placement, decks, queues, grading, directions, drills, mastery, listening, backups, course isolation, the romaji modes, and the dictionary: inflections, lookups, readings, suggested furigana and saved messages | 305 |
+| `tools/selftest.mjs` | The content contract (§6.12), including furigana short enough to fit a line, the levels and the course dictionary; interface strings; the service-worker shell and version; SRS regressions | 43,566 |
+| `tools/integration-test.mjs` | The real modules, end to end in Node (with a filesystem `fetch` and a localStorage shim): placement and the starting level, levels (progress, the next step, moving up, older learners), decks, queues, grading, directions, drills, mastery, listening, backups, course isolation, the romaji modes, and the dictionary: inflections, lookups, readings, suggested furigana and saved messages | 324 |
 | `tools/language-pack-test.mjs` | An Esperanto course added purely as content, run through placement, the deck, the queue and grading | 13 |
 | `tools/voice-test.mjs` | The generator against a local stand-in for Azure: headers, SSML, voice choice, rate limits, the engine switch, every no-key path | 18 |
-| `tools/render-test.mjs` | Every screen of both courses rendered in jsdom, including whole drill sessions, backup and restore through the real buttons, the reading-aid modes, the connection setting, the update bar with Not now, and Paste a message from a message with no dictionary yet to a word added | 336 |
+| `tools/render-test.mjs` | Every screen of both courses rendered in jsdom, including the starting level at placement, Today's level and next step, Learn and the lessons list by level, whole drill sessions, backup and restore through the real buttons, the reading-aid modes, the connection setting, the update bar with Not now, and Paste a message from a message with no dictionary yet to a word added | 347 |
 | `tools/sw-test.mjs` | The real `sw.js` in a sandbox: registration in every boot path; installing, keeping courses, resuming and retrying over a flaky connection; one version replacing another on shared Cache Storage; a connection that never answers, and offline mode | 54 |
 | `tools/browser-check.mjs` | Headless Firefox through a proxy that can cut every connection, or stall them (take each request and never answer): install, per-course downloads, every tab online and offline, text fitting a 320px screen at the largest size, an IndexedDB backup round trip, an update while the app is open (Not now, then Update now from Settings), opening on a connection that never answers, online and in offline mode, and pasting a message offline, with a word looked up and added. `--upgrade-from <ref>` installs that build first; `--live <url>` checks the deployed site | 64 local, 59 live |
 
@@ -1393,8 +1478,12 @@ Native platforms also allow what the web app can't do without a server: schedule
 ## 14. Roadmap
 
 **Next**
-- Japanese scenarios for emergencies and small talk. Both categories have phrases but no scenario yet.
-- Grow the kanji sets. 127 kanji in the Japanese words, sentences and examples aren't taught yet (`npm run crossref`).
+- **An Intermediate level for the Japanese course** (roughly JLPT N4, into N3), for conversation without problems: making plans, saying what you think and feel, telling what happened, sorting out problems, polite Japanese for a partner's family. It brings:
+  - word and sentence decks, phrase categories and grammar lessons;
+  - scenarios, including the two Basic categories that have none yet (emergencies and small talk);
+  - a listening drill;
+  - a third kanji set, from the 139 kanji the content uses that no set teaches yet (`npm run crossref`).
+- **An Intermediate level for the English course** (roughly CEFR B1): travel and health in more depth, social conversation, opinions, plans and problems, with word and sentence decks, phrase categories, grammar lessons, scenarios and more listening.
 
 **Waiting on something**
 - **The New Zealand voice for the English course.** It needs an Azure Speech key (§9.2):

@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-plurals",
+  "connector": "-s",
+  "gloss": "2つ以上は -s",
+  "title": "-s — 2つ以上の名詞（複数形）",
+  "pattern": "one book → two books / a child → children",
+  "explanation": "数えられる名詞が2つ以上なら、最後に -s（-es）を付けます：one book、two books。s・sh・ch で終わる語は -es（glasses、watches）。形が大きく変わる語もあります：child → children、person → people、man → men、woman → women。",
+  "natural": "数を言う時は必ず複数形：three people（3人）、two coffees（コーヒー2つ）。",
+  "stiff": "日本語には複数形がないので -s を落としがちです：two book は×、two books。people はもともと複数なので peoples とは言いません。",
+  "examples": [
+    {
+      "id": "gx-plurals-1",
+      "english": "I have two brothers.",
+      "japanese": "兄弟が2人います。",
+      "chunks": [
+        {
+          "t": "I have ",
+          "w": "w-have"
+        },
+        {
+          "t": "two "
+        },
+        {
+          "t": "brothers.",
+          "w": "w-brother"
+        }
+      ],
+      "gap": {
+        "before": "I have two ",
+        "answer": "brothers",
+        "after": ".",
+        "options": [
+          "brothers",
+          "brother",
+          "brotheres"
+        ],
+        "why": "2人なので複数形 brothers。"
+      },
+      "audio": "audio/en/grammar/gx-plurals-1.mp3",
+      "tags": [
+        "文法",
+        "-s"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-plurals-2",
+      "english": "Two coffees, please.",
+      "japanese": "コーヒーを2つお願いします。",
+      "chunks": [
+        {
+          "t": "Two "
+        },
+        {
+          "t": "coffees, ",
+          "w": "w-coffee"
+        },
+        {
+          "t": "please."
+        }
+      ],
+      "gap": {
+        "before": "Two ",
+        "answer": "coffees",
+        "after": ", please.",
+        "options": [
+          "coffees",
+          "coffee"
+        ],
+        "why": "注文で数を言う時は、コーヒーも複数形にします：two coffees。"
+      },
+      "audio": "audio/en/grammar/gx-plurals-2.mp3",
+      "tags": [
+        "文法",
+        "-s"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-plurals-3",
+      "english": "There are three people in my family.",
+      "japanese": "私は3人家族です。",
+      "chunks": [
+        {
+          "t": "There are "
+        },
+        {
+          "t": "three people ",
+          "w": "w-people"
+        },
+        {
+          "t": "in my family.",
+          "w": "w-family"
+        }
+      ],
+      "gap": {
+        "before": "There are three ",
+        "answer": "people",
+        "after": " in my family.",
+        "options": [
+          "people",
+          "persons",
+          "peoples"
+        ],
+        "why": "person の複数形は people。"
+      },
+      "audio": "audio/en/grammar/gx-plurals-3.mp3",
+      "tags": [
+        "文法",
+        "-s"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-plurals-4",
+      "english": "My children love cats.",
+      "japanese": "うちの子どもたちは猫が大好きです。",
+      "chunks": [
+        {
+          "t": "My children ",
+          "w": "w-child"
+        },
+        {
+          "t": "love ",
+          "w": "w-love"
+        },
+        {
+          "t": "cats."
+        }
+      ],
+      "gap": {
+        "before": "My ",
+        "answer": "children",
+        "after": " love cats.",
+        "options": [
+          "children",
+          "childs",
+          "child"
+        ],
+        "why": "child の複数形は children。"
+      },
+      "audio": "audio/en/grammar/gx-plurals-4.mp3",
+      "tags": [
+        "文法",
+        "-s"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

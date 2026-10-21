@@ -33,7 +33,10 @@
       "verb",
       "adjective",
       "adverb",
-      "phrase"
+      "phrase",
+      "pronoun",
+      "question",
+      "interjection"
     ],
     "forms": [],
     "verbForms": []
@@ -41,11 +44,25 @@
   "copy": {
     "placementLede": "{n}枚のカードで、10のカテゴリーをひととおりチェックします。それぞれ、すでに知っているかどうかを選ぶだけ。入力も採点もありません — 各カードをどこから復習に入れるかを決めるためのものです。",
     "placementAside": "学校で習った英語は、読めばわかるのに口から出てこない — ということがよくあります。実際の会話で必要なのは、とっさに言える短いひとこと。そのすき間を見つけるためのチェックで、テストではありません。",
-    "lessonsTitle": "表現・つなぎ言葉",
+    "lessonsTitle": "表現・文法",
     "lessonsTab": "表現",
-    "lessonsLede": "注文やお願いの型、ていねいな言い方、文と文をつなぐ言葉。説明を読んで、例文で練習しましょう。声に出して言う練習もあります。",
+    "lessonsLede": "英語の文の基本（be動詞・現在形・過去形など）、注文やお願いの型、ていねいな言い方、文と文をつなぐ言葉。説明を読んで、例文で練習しましょう。声に出して言う練習もあります。",
     "lessonsIcon": "🧩"
   },
+  "levels": [
+    {
+      "id": "first-steps",
+      "icon": "🌱",
+      "title": "はじめの一歩",
+      "description": "英語をこれから始める人へ。人・もの・時間・天気の言葉、あいさつと数字、それに英語の文の基本：be動詞、a と the、現在形と過去形、can、in・on・at など。"
+    },
+    {
+      "id": "basic",
+      "icon": "🌿",
+      "title": "基礎",
+      "description": "お客さんとして困らない英語。カフェ・お店・交通・ホテルの言葉と表現、ていねいな頼み方と断り方、文と文をつなぐ言葉、それに聞き取りの練習。"
+    }
+  ],
   "groups": [
     {
       "id": "basics",
@@ -80,6 +97,8 @@
       "title": "あいさつと基本のひとこと",
       "icon": "🙏",
       "group": "basics",
+      "level": "first-steps",
+      "step": 1,
       "starter": true
     },
     {
@@ -89,6 +108,8 @@
       "title": "数字・時間・お金",
       "icon": "🔢",
       "group": "basics",
+      "level": "first-steps",
+      "step": 2,
       "starter": true
     },
     {
@@ -97,7 +118,9 @@
       "file": "content/en/airport.json",
       "title": "空港・入国審査",
       "icon": "✈️",
-      "group": "travel"
+      "group": "travel",
+      "level": "basic",
+      "step": 14
     },
     {
       "id": "transport",
@@ -105,7 +128,9 @@
       "file": "content/en/transport.json",
       "title": "電車・バス・タクシー",
       "icon": "🚆",
-      "group": "town"
+      "group": "town",
+      "level": "basic",
+      "step": 9
     },
     {
       "id": "directions",
@@ -113,7 +138,9 @@
       "file": "content/en/directions.json",
       "title": "道をたずねる",
       "icon": "🧭",
-      "group": "town"
+      "group": "town",
+      "level": "basic",
+      "step": 10
     },
     {
       "id": "hotel",
@@ -121,7 +148,9 @@
       "file": "content/en/hotel.json",
       "title": "ホテル",
       "icon": "🏨",
-      "group": "travel"
+      "group": "travel",
+      "level": "basic",
+      "step": 13
     },
     {
       "id": "restaurant",
@@ -130,6 +159,8 @@
       "title": "カフェ・レストラン",
       "icon": "🍽️",
       "group": "food",
+      "level": "basic",
+      "step": 1,
       "starter": true
     },
     {
@@ -139,6 +170,8 @@
       "title": "買い物・支払い",
       "icon": "🛍️",
       "group": "shopping",
+      "level": "basic",
+      "step": 2,
       "starter": true
     },
     {
@@ -147,7 +180,9 @@
       "file": "content/en/emergency.json",
       "title": "緊急時・体調不良",
       "icon": "🏥",
-      "group": "help"
+      "group": "help",
+      "level": "basic",
+      "step": 15
     },
     {
       "id": "smalltalk",
@@ -155,7 +190,9 @@
       "file": "content/en/smalltalk.json",
       "title": "雑談",
       "icon": "💬",
-      "group": "basics"
+      "group": "basics",
+      "level": "basic",
+      "step": 8
     }
   ],
   "decks": [
@@ -166,6 +203,8 @@
       "file": "content/en/words/cafe.json",
       "title": "カフェ・食べ物",
       "icon": "☕",
+      "level": "basic",
+      "step": 3,
       "starter": true
     },
     {
@@ -174,7 +213,9 @@
       "order": 2,
       "file": "content/en/words/clothes.json",
       "title": "服・サイズ",
-      "icon": "👕"
+      "icon": "👕",
+      "level": "basic",
+      "step": 6
     },
     {
       "id": "words-shopping",
@@ -183,6 +224,8 @@
       "file": "content/en/words/shopping.json",
       "title": "お店・お会計",
       "icon": "🧾",
+      "level": "basic",
+      "step": 4,
       "starter": true
     },
     {
@@ -192,6 +235,8 @@
       "file": "content/en/words/verbs.json",
       "title": "毎日の動詞",
       "icon": "🏃",
+      "level": "basic",
+      "step": 5,
       "starter": true
     },
     {
@@ -200,7 +245,9 @@
       "order": 5,
       "file": "content/en/words/phrasal.json",
       "title": "句動詞",
-      "icon": "🧷"
+      "icon": "🧷",
+      "level": "basic",
+      "step": 12
     },
     {
       "id": "words-money",
@@ -208,7 +255,9 @@
       "order": 6,
       "file": "content/en/words/money.json",
       "title": "お金のことば",
-      "icon": "💰"
+      "icon": "💰",
+      "level": "basic",
+      "step": 11
     },
     {
       "id": "words-katakana",
@@ -216,7 +265,9 @@
       "order": 7,
       "file": "content/en/words/katakana.json",
       "title": "カタカナ英語",
-      "icon": "🔤"
+      "icon": "🔤",
+      "level": "basic",
+      "step": 16
     },
     {
       "id": "words-nz",
@@ -224,7 +275,71 @@
       "order": 8,
       "file": "content/en/words/nz.json",
       "title": "ニュージーランドの言葉",
-      "icon": "🥝"
+      "icon": "🥝",
+      "level": "basic",
+      "step": 17
+    },
+    {
+      "id": "words-first-people",
+      "kind": "words",
+      "order": 9,
+      "file": "content/en/words/first-people.json",
+      "title": "人・家族",
+      "icon": "👪",
+      "level": "first-steps",
+      "step": 3,
+      "starter": true
+    },
+    {
+      "id": "words-first-verbs",
+      "kind": "words",
+      "order": 10,
+      "file": "content/en/words/first-verbs.json",
+      "title": "はじめての動詞",
+      "icon": "🏃",
+      "level": "first-steps",
+      "step": 4,
+      "starter": true
+    },
+    {
+      "id": "words-first-little",
+      "kind": "words",
+      "order": 11,
+      "file": "content/en/words/first-little.json",
+      "title": "小さな言葉",
+      "icon": "🧩",
+      "level": "first-steps",
+      "step": 5
+    },
+    {
+      "id": "words-first-things",
+      "kind": "words",
+      "order": 12,
+      "file": "content/en/words/first-things.json",
+      "title": "身の回りのもの",
+      "icon": "🎒",
+      "level": "first-steps",
+      "step": 6
+    },
+    {
+      "id": "words-first-time",
+      "kind": "words",
+      "order": 13,
+      "file": "content/en/words/first-time.json",
+      "title": "時間・曜日・天気",
+      "icon": "📅",
+      "level": "first-steps",
+      "step": 7
+    },
+    {
+      "id": "words-first-describe",
+      "kind": "words",
+      "order": 14,
+      "file": "content/en/words/first-describe.json",
+      "title": "形容詞・色",
+      "icon": "🎨",
+      "level": "first-steps",
+      "step": 8
     },
     {
       "id": "sentences-everyday",
@@ -232,7 +347,9 @@
       "order": 9,
       "file": "content/en/sentences/everyday.json",
       "title": "毎日の文",
-      "icon": "💬"
+      "icon": "💬",
+      "level": "basic",
+      "step": 7
     }
   ],
   "drills": [
@@ -242,6 +359,16 @@
     "say"
   ],
   "lessonGroups": [
+    {
+      "id": "first-sentence",
+      "title": "文の基本",
+      "description": "be動詞、this と that、a と the、複数形、my と your、there is、場所と時の前置詞。英語の文の骨組みです。"
+    },
+    {
+      "id": "first-verbs",
+      "title": "動詞の基本",
+      "description": "現在形・否定・can・-ing・過去形・質問の形。毎日のことを話すための動詞の使い方。"
+    },
     {
       "id": "ask",
       "title": "お願いする",
@@ -270,214 +397,388 @@
   ],
   "lessons": [
     {
-      "id": "pat-like",
+      "id": "gr-be",
       "order": 1,
+      "file": "content/en/grammar/be.json",
+      "title": "am, is, are — 〜です（be動詞）",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-be-not",
+      "order": 2,
+      "file": "content/en/grammar/be-not.json",
+      "title": "not, Are you…? — be動詞の否定と質問",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-this-that",
+      "order": 3,
+      "file": "content/en/grammar/this-that.json",
+      "title": "this, that, these, those — これ・それ・あれ",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-articles",
+      "order": 4,
+      "file": "content/en/grammar/articles.json",
+      "title": "a, an, the — 名詞の前の小さな言葉",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-plurals",
+      "order": 5,
+      "file": "content/en/grammar/plurals.json",
+      "title": "-s — 2つ以上の名詞（複数形）",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-possessives",
+      "order": 6,
+      "file": "content/en/grammar/possessives.json",
+      "title": "my, your, his, her — 〜の（持ち主）",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-there-is",
+      "order": 7,
+      "file": "content/en/grammar/there-is.json",
+      "title": "there is, there are — 〜がある、〜がいる",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-in-on-at-place",
+      "order": 8,
+      "file": "content/en/grammar/in-on-at-place.json",
+      "title": "in, on, at（場所）— 〜の中に、〜の上に、〜で",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-in-on-at-time",
+      "order": 9,
+      "file": "content/en/grammar/in-on-at-time.json",
+      "title": "at, on, in（時）— 〜時に、〜曜日に、〜月に",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-present",
+      "order": 10,
+      "file": "content/en/grammar/present.json",
+      "title": "I work, she works — 現在形",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-dont",
+      "order": 11,
+      "file": "content/en/grammar/dont.json",
+      "title": "don’t, doesn’t — 〜しない",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-can",
+      "order": 12,
+      "file": "content/en/grammar/can.json",
+      "title": "can — 〜できる、〜してもいい",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-continuous",
+      "order": 13,
+      "file": "content/en/grammar/continuous.json",
+      "title": "be ＋ -ing — 今〜しています",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-past-ed",
+      "order": 14,
+      "file": "content/en/grammar/past-ed.json",
+      "title": "-ed — 〜した（過去形）",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-past-irregular",
+      "order": 15,
+      "file": "content/en/grammar/past-irregular.json",
+      "title": "went, ate, saw — 形が変わる過去形",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-wh",
+      "order": 16,
+      "file": "content/en/grammar/wh.json",
+      "title": "what, where, when, who, why, how — 何・どこ・いつ…",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-want-to",
+      "order": 17,
+      "file": "content/en/grammar/want-to.json",
+      "title": "want, want to — ほしい、〜したい",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-imperatives",
+      "order": 18,
+      "file": "content/en/grammar/imperatives.json",
+      "title": "Please…, Don’t… — 〜して、〜しないで",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "pat-like",
+      "order": 19,
       "file": "content/en/patterns/like.json",
       "title": "I'd like… — 〜をお願いします（注文の基本）",
-      "group": "ask"
+      "group": "ask",
+      "level": "basic"
     },
     {
       "id": "pat-have",
-      "order": 2,
+      "order": 20,
       "file": "content/en/patterns/have.json",
       "title": "Can I have…? — 〜をもらえますか",
-      "group": "ask"
+      "group": "ask",
+      "level": "basic"
     },
     {
       "id": "pat-get",
-      "order": 3,
+      "order": 21,
       "file": "content/en/patterns/get.json",
       "title": "Could I get…? — 〜をいただけますか（ていねい）",
-      "group": "ask"
+      "group": "ask",
+      "level": "basic"
     },
     {
       "id": "pat-doyouhave",
-      "order": 4,
+      "order": 22,
       "file": "content/en/patterns/doyouhave.json",
       "title": "Do you have…? — 〜はありますか",
-      "group": "question"
+      "group": "question",
+      "level": "basic"
     },
     {
       "id": "pat-isthis",
-      "order": 5,
+      "order": 23,
       "file": "content/en/patterns/isthis.json",
       "title": "Is this…? — これは〜ですか",
-      "group": "question"
+      "group": "question",
+      "level": "basic"
     },
     {
       "id": "pat-where",
-      "order": 6,
+      "order": 24,
       "file": "content/en/patterns/where.json",
       "title": "Where's…? — 〜はどこですか",
-      "group": "question"
+      "group": "question",
+      "level": "basic"
     },
     {
       "id": "pat-howmuch",
-      "order": 7,
+      "order": 25,
       "file": "content/en/patterns/howmuch.json",
       "title": "How much…? — 〜はいくらですか",
-      "group": "question"
+      "group": "question",
+      "level": "basic"
     },
     {
       "id": "con-couldyou",
-      "order": 8,
+      "order": 26,
       "file": "content/en/connectors/couldyou.json",
       "title": "Could you…? — 〜していただけますか（相手にしてもらう）",
-      "group": "polite"
+      "group": "polite",
+      "level": "basic"
     },
     {
       "id": "con-wouldyoumind",
-      "order": 9,
+      "order": 27,
       "file": "content/en/connectors/wouldyoumind.json",
       "title": "Would you mind…? — 〜していただいてもいいですか（とてもていねい）",
-      "group": "polite"
+      "group": "polite",
+      "level": "basic"
     },
     {
       "id": "con-isitok",
-      "order": 10,
+      "order": 28,
       "file": "content/en/connectors/isitok.json",
       "title": "Is it OK if I…? — 〜してもいいですか（許可をもらう）",
-      "group": "polite"
+      "group": "polite",
+      "level": "basic"
     },
     {
       "id": "con-nothanks",
-      "order": 11,
+      "order": 29,
       "file": "content/en/connectors/nothanks.json",
       "title": "No thanks… — やわらかく断る",
-      "group": "polite"
+      "group": "polite",
+      "level": "basic"
     },
     {
       "id": "con-excuseme",
-      "order": 12,
+      "order": 30,
       "file": "content/en/connectors/excuseme.json",
       "title": "Excuse me / Sorry — 「すみません」の言い分け",
-      "group": "polite"
+      "group": "polite",
+      "level": "basic"
     },
     {
       "id": "con-youtoo",
-      "order": 13,
+      "order": 31,
       "file": "content/en/connectors/youtoo.json",
       "title": "You too! — あいさつやお礼への返し方",
-      "group": "polite"
+      "group": "polite",
+      "level": "basic"
     },
     {
       "id": "con-so",
-      "order": 14,
+      "order": 32,
       "file": "content/en/connectors/so.json",
       "title": "so — だから、それで",
-      "group": "link"
+      "group": "link",
+      "level": "basic"
     },
     {
       "id": "con-because",
-      "order": 15,
+      "order": 33,
       "file": "content/en/connectors/because.json",
       "title": "because — 〜だから、なぜなら",
-      "group": "link"
+      "group": "link",
+      "level": "basic"
     },
     {
       "id": "con-but",
-      "order": 16,
+      "order": 34,
       "file": "content/en/connectors/but.json",
       "title": "but / though — でも、〜けど",
-      "group": "link"
+      "group": "link",
+      "level": "basic"
     },
     {
       "id": "con-eventhough",
-      "order": 17,
+      "order": 35,
       "file": "content/en/connectors/eventhough.json",
       "title": "even though — 〜なのに",
-      "group": "link"
+      "group": "link",
+      "level": "basic"
     },
     {
       "id": "con-actually",
-      "order": 18,
+      "order": 36,
       "file": "content/en/connectors/actually.json",
       "title": "actually — 実は、本当は",
-      "group": "link"
+      "group": "link",
+      "level": "basic"
     },
     {
       "id": "con-anyway",
-      "order": 19,
+      "order": 37,
       "file": "content/en/connectors/anyway.json",
       "title": "anyway — とにかく、まあ、それでも",
-      "group": "link"
+      "group": "link",
+      "level": "basic"
     },
     {
       "id": "con-bytheway",
-      "order": 20,
+      "order": 38,
       "file": "content/en/connectors/bytheway.json",
       "title": "by the way — ところで",
-      "group": "link"
+      "group": "link",
+      "level": "basic"
     },
     {
       "id": "con-imean",
-      "order": 21,
+      "order": 39,
       "file": "content/en/connectors/imean.json",
       "title": "I mean — つまり、いや、その",
-      "group": "link"
+      "group": "link",
+      "level": "basic"
     },
     {
       "id": "con-youknow",
-      "order": 22,
+      "order": 40,
       "file": "content/en/connectors/youknow.json",
       "title": "you know — ほら、〜でしょ",
-      "group": "link"
+      "group": "link",
+      "level": "basic"
     },
     {
       "id": "con-abit",
-      "order": 23,
+      "order": 41,
       "file": "content/en/connectors/abit.json",
       "title": "a bit / kind of — ちょっと、なんとなく",
-      "group": "link"
+      "group": "link",
+      "level": "basic"
     },
     {
       "id": "con-unless",
-      "order": 24,
+      "order": 42,
       "file": "content/en/connectors/unless.json",
       "title": "unless — 〜でなければ、〜しない限り",
-      "group": "link"
+      "group": "link",
+      "level": "basic"
     },
     {
       "id": "con-aslongas",
-      "order": 25,
+      "order": 43,
       "file": "content/en/connectors/aslongas.json",
       "title": "as long as — 〜さえすれば、〜なら",
-      "group": "link"
+      "group": "link",
+      "level": "basic"
     },
     {
       "id": "con-theone",
-      "order": 26,
+      "order": 44,
       "file": "content/en/connectors/theone.json",
       "title": "the one I… — 後ろから説明する（〜した物）",
-      "group": "order"
+      "group": "order",
+      "level": "basic"
     },
     {
       "id": "con-do",
-      "order": 27,
+      "order": 45,
       "file": "content/en/connectors/do.json",
       "title": "Do / Does / Did…? — 動詞の質問の形",
-      "group": "order"
+      "group": "order",
+      "level": "basic"
     },
     {
       "id": "con-tag",
-      "order": 28,
+      "order": 46,
       "file": "content/en/connectors/tag.json",
       "title": "…, isn't it? — 〜ですよね（確かめる）",
-      "group": "order"
+      "group": "order",
+      "level": "basic"
     },
     {
       "id": "con-negative",
-      "order": 29,
+      "order": 47,
       "file": "content/en/connectors/negative.json",
       "title": "Yes / No — 否定の質問への答え方",
-      "group": "order"
+      "group": "order",
+      "level": "basic"
     },
     {
       "id": "con-itsto",
-      "order": 30,
+      "order": 48,
       "file": "content/en/connectors/itsto.json",
       "title": "It's … to … — 〜するのは…だ",
-      "group": "order"
+      "group": "order",
+      "level": "basic"
     }
   ],
   "listening": [
@@ -486,14 +787,16 @@
       "kind": "replies",
       "file": "content/en/listening/replies.json",
       "title": "何て言った？",
-      "icon": "👂"
+      "icon": "👂",
+      "level": "basic"
     },
     {
       "id": "contrasts",
       "kind": "contrasts",
       "file": "content/en/listening/contrasts.json",
       "title": "どっちに聞こえた？",
-      "icon": "🎧"
+      "icon": "🎧",
+      "level": "first-steps"
     }
   ],
   "characterSets": [],
@@ -503,49 +806,56 @@
       "file": "content/en/scenarios/cafe.json",
       "title": "カフェで注文する",
       "icon": "☕",
-      "category": "restaurant"
+      "category": "restaurant",
+      "level": "basic"
     },
     {
       "id": "clothes",
       "file": "content/en/scenarios/clothes.json",
       "title": "服を試着する",
       "icon": "👕",
-      "category": "shopping"
+      "category": "shopping",
+      "level": "basic"
     },
     {
       "id": "bakery",
       "file": "content/en/scenarios/bakery.json",
       "title": "パン屋さんで頼む",
       "icon": "🥐",
-      "category": "shopping"
+      "category": "shopping",
+      "level": "basic"
     },
     {
       "id": "bus",
       "file": "content/en/scenarios/bus.json",
       "title": "バスの乗り方をたずねる",
       "icon": "🚌",
-      "category": "transport"
+      "category": "transport",
+      "level": "basic"
     },
     {
       "id": "lost",
       "file": "content/en/scenarios/lost.json",
       "title": "道に迷った時",
       "icon": "🧭",
-      "category": "directions"
+      "category": "directions",
+      "level": "basic"
     },
     {
       "id": "immigration",
       "file": "content/en/scenarios/immigration.json",
       "title": "入国審査",
       "icon": "🛂",
-      "category": "airport"
+      "category": "airport",
+      "level": "basic"
     },
     {
       "id": "checkin",
       "file": "content/en/scenarios/checkin.json",
       "title": "ホテルのチェックイン",
       "icon": "🏨",
-      "category": "hotel"
+      "category": "hotel",
+      "level": "basic"
     }
   ]
 }

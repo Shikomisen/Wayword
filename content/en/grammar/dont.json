@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-dont",
+  "connector": "don’t / doesn’t",
+  "gloss": "〜しない（現在形の否定）",
+  "title": "don’t, doesn’t — 〜しない",
+  "pattern": "I・you・we・they ＋ don’t ＋ 動詞 / he・she・it ＋ doesn’t ＋ 動詞",
+  "explanation": "現在形の否定は、動詞の前に don’t（do not）。he・she・it の時は doesn’t（does not）を使い、その後の動詞には -s を付けません：She doesn’t eat meat.（彼女は肉を食べません）。",
+  "natural": "好みや習慣を伝える時に：I don’t drink coffee.（コーヒーは飲みません）、I don’t know.（わかりません）。",
+  "stiff": "be動詞の文には don’t を使いません：I don’t hungry. は×、I’m not hungry.。doesn’t の後で She doesn’t eats. と -s を残すのも×。",
+  "examples": [
+    {
+      "id": "gx-dont-1",
+      "english": "I don’t eat meat.",
+      "japanese": "肉は食べません。",
+      "chunks": [
+        {
+          "t": "I ",
+          "w": "w-i"
+        },
+        {
+          "t": "don’t "
+        },
+        {
+          "t": "eat meat.",
+          "w": "w-eat"
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "don’t",
+        "after": " eat meat.",
+        "options": [
+          "don’t",
+          "doesn’t",
+          "not"
+        ],
+        "why": "I の否定は don’t ＋ 動詞。"
+      },
+      "audio": "audio/en/grammar/gx-dont-1.mp3",
+      "tags": [
+        "文法",
+        "don’t / doesn’t"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-dont-2",
+      "english": "He doesn’t drink coffee.",
+      "japanese": "彼はコーヒーを飲みません。",
+      "chunks": [
+        {
+          "t": "He ",
+          "w": "w-he"
+        },
+        {
+          "t": "doesn’t "
+        },
+        {
+          "t": "drink coffee.",
+          "w": "w-drink"
+        }
+      ],
+      "gap": {
+        "before": "He ",
+        "answer": "doesn’t",
+        "after": " drink coffee.",
+        "options": [
+          "doesn’t",
+          "don’t",
+          "isn’t"
+        ],
+        "why": "he の否定は doesn’t。"
+      },
+      "audio": "audio/en/grammar/gx-dont-2.mp3",
+      "tags": [
+        "文法",
+        "don’t / doesn’t"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-dont-3",
+      "english": "I don’t know.",
+      "japanese": "わかりません。",
+      "chunks": [
+        {
+          "t": "I ",
+          "w": "w-i"
+        },
+        {
+          "t": "don’t "
+        },
+        {
+          "t": "know.",
+          "w": "w-know"
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "don’t",
+        "after": " know.",
+        "options": [
+          "don’t",
+          "not",
+          "am not"
+        ],
+        "why": "know は動詞なので don’t。I’m not know. は×。"
+      },
+      "audio": "audio/en/grammar/gx-dont-3.mp3",
+      "tags": [
+        "文法",
+        "don’t / doesn’t"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-dont-4",
+      "english": "My sister doesn’t live here.",
+      "japanese": "姉はここに住んでいません。",
+      "chunks": [
+        {
+          "t": "My sister ",
+          "w": "w-sister"
+        },
+        {
+          "t": "doesn’t live ",
+          "w": "w-live"
+        },
+        {
+          "t": "here.",
+          "w": "w-here"
+        }
+      ],
+      "gap": {
+        "before": "My sister doesn’t ",
+        "answer": "live",
+        "after": " here.",
+        "options": [
+          "live",
+          "lives",
+          "living"
+        ],
+        "why": "doesn’t の後の動詞は -s なし：doesn’t live。"
+      },
+      "audio": "audio/en/grammar/gx-dont-4.mp3",
+      "tags": [
+        "文法",
+        "don’t / doesn’t"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

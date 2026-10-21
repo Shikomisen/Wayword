@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-masu",
+  "connector": "〜ます",
+  "gloss": "polite verbs: do, don’t, did, didn’t",
+  "title": "〜ます — do, don’t, did, didn’t",
+  "pattern": "〜ます / 〜ません / 〜ました / 〜ませんでした",
+  "explanation": "Polite verbs end in ます, and four forms cover most of what you’ll say: {行|い}きます (I go, I’ll go), {行|い}きません (I don’t, I won’t), {行|い}きました (I went), {行|い}きませんでした (I didn’t go). There’s no separate future: ます covers “will” too. Every verb card shows its ます form.",
+  "natural": "The ます form is right with anyone outside close friends and family, and it’s never rude.",
+  "stiff": "ません is “don’t” for now and later only. For the past it’s ませんでした: {昨日|きのう}は{行|い}きませんでした, not {行|い}きませんだった.",
+  "examples": [
+    {
+      "id": "gx-masu-1",
+      "japanese": "明日、会社に行きます。",
+      "furigana": "{明日|あした}、{会社|かいしゃ}に{行|い}きます。",
+      "romaji": "ashita, kaisha ni ikimasu",
+      "english": "I’m going to the office tomorrow.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}、",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{会社|かいしゃ}に",
+          "w": "w-kaisha"
+        },
+        {
+          "t": "{行|い}きます。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}、{会社|かいしゃ}に{行|い}き",
+        "answer": "ます",
+        "after": "。",
+        "options": [
+          "ます",
+          "ました",
+          "ません"
+        ],
+        "why": "Tomorrow: plain ます covers “will”."
+      },
+      "audio": "audio/ja/grammar/gx-masu-1.mp3",
+      "tags": [
+        "grammar",
+        "masu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-masu-2",
+      "japanese": "昨日は早く寝ました。",
+      "furigana": "{昨日|きのう}は{早|はや}く{寝|ね}ました。",
+      "romaji": "kinō wa hayaku nemashita",
+      "english": "I went to bed early yesterday.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{昨日|きのう}は",
+          "w": "w-kinou"
+        },
+        {
+          "t": "{早|はや}く"
+        },
+        {
+          "t": "{寝|ね}ました。",
+          "w": "w-neru"
+        }
+      ],
+      "gap": {
+        "before": "{昨日|きのう}は{早|はや}く{寝|ね}",
+        "answer": "ました",
+        "after": "。",
+        "options": [
+          "ました",
+          "ます",
+          "ません"
+        ],
+        "why": "Yesterday, done: ました."
+      },
+      "audio": "audio/ja/grammar/gx-masu-2.mp3",
+      "tags": [
+        "grammar",
+        "masu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-masu-3",
+      "japanese": "お酒は飲みません。",
+      "furigana": "お{酒|さけ}は{飲|の}みません。",
+      "romaji": "o-sake wa nomimasen",
+      "english": "I don’t drink alcohol.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "お{酒|さけ}は",
+          "w": "w-osake"
+        },
+        {
+          "t": "{飲|の}みません。",
+          "w": "w-nomu"
+        }
+      ],
+      "gap": {
+        "before": "お{酒|さけ}は{飲|の}み",
+        "answer": "ません",
+        "after": "。",
+        "options": [
+          "ません",
+          "ます",
+          "ませんでした"
+        ],
+        "why": "Not, as a rule: ません."
+      },
+      "audio": "audio/ja/grammar/gx-masu-3.mp3",
+      "tags": [
+        "grammar",
+        "masu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-masu-4",
+      "japanese": "先週は仕事を休みませんでした。",
+      "furigana": "{先週|せんしゅう}は{仕事|しごと}を{休|やす}みませんでした。",
+      "romaji": "senshū wa shigoto o yasumimasen deshita",
+      "english": "I didn’t take a day off work last week.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{先週|せんしゅう}は",
+          "w": "w-senshuu"
+        },
+        {
+          "t": "{仕事|しごと}を",
+          "w": "w-shigoto"
+        },
+        {
+          "t": "{休|やす}みませんでした。",
+          "w": "w-yasumu"
+        }
+      ],
+      "gap": {
+        "before": "{先週|せんしゅう}は{仕事|しごと}を{休|やす}み",
+        "answer": "ませんでした",
+        "after": "。",
+        "options": [
+          "ませんでした",
+          "ません",
+          "ました"
+        ],
+        "why": "Didn’t, in the past: ませんでした."
+      },
+      "audio": "audio/ja/grammar/gx-masu-4.mp3",
+      "tags": [
+        "grammar",
+        "masu"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

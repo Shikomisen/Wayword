@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-aru-iru",
+  "connector": "ある・いる",
+  "gloss": "there is; to have",
+  "title": "ある・いる — there is, to have",
+  "pattern": "place に thing が あります / person が います",
+  "explanation": "Both mean “there is”, or “to be” somewhere. あります is for things and plants: {駅|えき}の{近|ちか}くにコンビニがあります — there’s a convenience store near the station. います is for people and animals: {公園|こうえん}に{犬|いぬ}がいます. あります is also “have”: {時間|じかん}がありますか — do you have time? And {兄|あに}がいます — I have an older brother.",
+  "natural": "Not: ありません and いません. Casual: ある, ない, いる, いない. ない is the everyday “there isn’t”: {時間|じかん}がない！ — no time!",
+  "stiff": "あります for people or pets sounds wrong: {猫|ねこ}がいます, not {猫|ねこ}があります.",
+  "examples": [
+    {
+      "id": "gx-aru-iru-1",
+      "japanese": "駅の近くに店があります。",
+      "furigana": "{駅|えき}の{近|ちか}くに{店|みせ}があります。",
+      "romaji": "eki no chikaku ni mise ga arimasu",
+      "english": "There’s a shop near the station.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{駅|えき}の",
+          "w": "w-eki"
+        },
+        {
+          "t": "{近|ちか}くに",
+          "w": "w-chikaku"
+        },
+        {
+          "t": "{店|みせ}が",
+          "w": "w-mise"
+        },
+        {
+          "t": "あります。"
+        }
+      ],
+      "gap": {
+        "before": "{駅|えき}の{近|ちか}くに{店|みせ}が",
+        "answer": "あります",
+        "after": "。",
+        "options": [
+          "あります",
+          "います",
+          "です"
+        ],
+        "why": "A shop is a thing: あります."
+      },
+      "audio": "audio/ja/grammar/gx-aru-iru-1.mp3",
+      "tags": [
+        "grammar",
+        "aru-iru"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-aru-iru-2",
+      "japanese": "家に猫が二匹います。",
+      "furigana": "{家|いえ}に{猫|ねこ}が{二匹|にひき}います。",
+      "romaji": "ie ni neko ga nihiki imasu",
+      "english": "We have two cats at home.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{家|いえ}に",
+          "w": "w-ie"
+        },
+        {
+          "t": "{猫|ねこ}が",
+          "w": "w-neko"
+        },
+        {
+          "t": "{二匹|にひき}"
+        },
+        {
+          "t": "います。"
+        }
+      ],
+      "gap": {
+        "before": "{家|いえ}に{猫|ねこ}が{二匹|にひき}",
+        "answer": "います",
+        "after": "。",
+        "options": [
+          "います",
+          "あります",
+          "です"
+        ],
+        "why": "Cats are alive: います."
+      },
+      "audio": "audio/ja/grammar/gx-aru-iru-2.mp3",
+      "tags": [
+        "grammar",
+        "aru-iru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-aru-iru-3",
+      "japanese": "今日、時間ある？",
+      "furigana": "{今日|きょう}、{時間|じかん}ある？",
+      "romaji": "kyō, jikan aru?",
+      "english": "Have you got time today?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今日|きょう}、",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{時間|じかん}",
+          "w": "w-jikan"
+        },
+        {
+          "t": "ある？"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}、{時間|じかん}",
+        "answer": "ある",
+        "after": "？",
+        "options": [
+          "ある",
+          "いる",
+          "する"
+        ],
+        "why": "Having time: ある."
+      },
+      "audio": "audio/ja/grammar/gx-aru-iru-3.mp3",
+      "tags": [
+        "grammar",
+        "aru-iru"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-aru-iru-4",
+      "japanese": "兄が二人います。",
+      "furigana": "{兄|あに}が{二人|ふたり}います。",
+      "romaji": "ani ga futari imasu",
+      "english": "I have two older brothers.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{兄|あに}が",
+          "w": "w-ani"
+        },
+        {
+          "t": "{二人|ふたり}"
+        },
+        {
+          "t": "います。"
+        }
+      ],
+      "gap": {
+        "before": "{兄|あに}が{二人|ふたり}",
+        "answer": "います",
+        "after": "。",
+        "options": [
+          "います",
+          "あります",
+          "です"
+        ],
+        "why": "Having family, people: います."
+      },
+      "audio": "audio/ja/grammar/gx-aru-iru-4.mp3",
+      "tags": [
+        "grammar",
+        "aru-iru"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

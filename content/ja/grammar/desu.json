@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-desu",
+  "connector": "です",
+  "gloss": "is, am, are (polite)",
+  "title": "です — X is Y",
+  "pattern": "A は B です。 / A は B じゃないです。",
+  "explanation": "です ends a polite sentence that says what something is: {私|わたし}は{学生|がくせい}です — I’m a student. It’s the same for I, you, he or they, and Japanese has no word for “a” or “the”. To say something isn’t so, use じゃないです (or the more formal ではありません). A question just adds か: {学生|がくせい}ですか — are you a student?",
+  "natural": "です is the safe ending with anyone you don’t know well: staff, colleagues, a partner’s family. With friends and a partner, drop it, or use だ: {学生|がくせい}だよ.",
+  "stiff": "Don’t put です after a verb: {行|い}きます, not {行|い}くです. And ending every sentence with だ sounds blunt to strangers.",
+  "examples": [
+    {
+      "id": "gx-desu-1",
+      "japanese": "私は学生です。",
+      "furigana": "{私|わたし}は{学生|がくせい}です。",
+      "romaji": "watashi wa gakusei desu",
+      "english": "I’m a student.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{私|わたし}は",
+          "w": "w-watashi"
+        },
+        {
+          "t": "{学生|がくせい}",
+          "w": "w-gakusei"
+        },
+        {
+          "t": "です。"
+        }
+      ],
+      "gap": {
+        "before": "{私|わたし}は{学生|がくせい}",
+        "answer": "です",
+        "after": "。",
+        "options": [
+          "です",
+          "ます",
+          "じゃないです"
+        ],
+        "why": "Saying what someone is: the noun, then です."
+      },
+      "audio": "audio/ja/grammar/gx-desu-1.mp3",
+      "tags": [
+        "grammar",
+        "desu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-desu-2",
+      "japanese": "これは私の本です。",
+      "furigana": "これは{私|わたし}の{本|ほん}です。",
+      "romaji": "kore wa watashi no hon desu",
+      "english": "This is my book.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "これは",
+          "w": "w-kore"
+        },
+        {
+          "t": "{私|わたし}の",
+          "w": "w-watashi"
+        },
+        {
+          "t": "{本|ほん}です。",
+          "w": "w-hon"
+        }
+      ],
+      "gap": {
+        "before": "これは{私|わたし}の{本|ほん}",
+        "answer": "です",
+        "after": "。",
+        "options": [
+          "です",
+          "ます",
+          "か"
+        ],
+        "why": "What this is: a noun, then です."
+      },
+      "audio": "audio/ja/grammar/gx-desu-2.mp3",
+      "tags": [
+        "grammar",
+        "desu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-desu-3",
+      "japanese": "あの人は先生じゃないです。",
+      "furigana": "あの{人|ひと}は{先生|せんせい}じゃないです。",
+      "romaji": "ano hito wa sensei ja nai desu",
+      "english": "That person isn’t a teacher.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "あの{人|ひと}は",
+          "w": "w-hito"
+        },
+        {
+          "t": "{先生|せんせい}",
+          "w": "w-sensei"
+        },
+        {
+          "t": "じゃないです。"
+        }
+      ],
+      "gap": {
+        "before": "あの{人|ひと}は{先生|せんせい}",
+        "answer": "じゃないです",
+        "after": "。",
+        "options": [
+          "じゃないです",
+          "です",
+          "ですか"
+        ],
+        "why": "“Isn’t” is じゃないです."
+      },
+      "audio": "audio/ja/grammar/gx-desu-3.mp3",
+      "tags": [
+        "grammar",
+        "desu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-desu-4",
+      "japanese": "友達は日本人ですか。",
+      "furigana": "{友達|ともだち}は{日本人|にほんじん}ですか。",
+      "romaji": "tomodachi wa nihonjin desu ka",
+      "english": "Is your friend Japanese?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{友達|ともだち}は",
+          "w": "w-tomodachi"
+        },
+        {
+          "t": "{日本人|にほんじん}",
+          "w": "w-nihonjin"
+        },
+        {
+          "t": "ですか。"
+        }
+      ],
+      "gap": {
+        "before": "{友達|ともだち}は{日本人|にほんじん}",
+        "answer": "ですか",
+        "after": "。",
+        "options": [
+          "ですか",
+          "です",
+          "じゃないです"
+        ],
+        "why": "A question: です, then か."
+      },
+      "audio": "audio/ja/grammar/gx-desu-4.mp3",
+      "tags": [
+        "grammar",
+        "desu"
+      ],
+      "difficulty": 1
+    }
+  ]
+}
