@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-have-to",
+  "connector": "have to",
+  "gloss": "〜しなければならない",
+  "title": "have to, must, don’t have to — しなければ、しなくていい",
+  "pattern": "I have to … ／ You must … ／ You don’t have to … ／ You mustn’t …",
+  "explanation": "「〜しなければならない」は have to ＋ 原形がふつう：I have to work tomorrow.（明日は仕事です）。must は規則や強い気持ちに：You must wear a seatbelt.否定に注意：don’t have to は「しなくていい」、mustn’t は「してはいけない」で、意味がまったくちがいます。",
+  "natural": "用事を理由に抜ける時に：Sorry, I have to go.（ごめん、もう行かなきゃ）。会話では I’ve got to go. もよく聞きます。",
+  "stiff": "「来なくていいよ」のつもりで You mustn’t come. と言うと「来てはいけない」になってしまいます。You don’t have to come.",
+  "examples": [
+    {
+      "id": "gx-have-to-1",
+      "english": "I have to work on Saturday.",
+      "japanese": "土曜日は仕事をしなければなりません。",
+      "chunks": [
+        {
+          "t": "I have to work ",
+          "w": "w-work"
+        },
+        {
+          "t": "on Saturday.",
+          "w": "w-saturday"
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "have to",
+        "after": " work on Saturday.",
+        "options": [
+          "have to",
+          "must to",
+          "have"
+        ],
+        "why": "「〜しなければならない」は have to ＋ 原形。"
+      },
+      "audio": "audio/en/grammar/gx-have-to-1.mp3",
+      "tags": [
+        "文法",
+        "have to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-have-to-2",
+      "english": "You don’t have to pay for the water.",
+      "japanese": "お水にはお金を払わなくていいですよ。",
+      "chunks": [
+        {
+          "t": "You don’t have to pay ",
+          "w": "w-pay"
+        },
+        {
+          "t": "for the water.",
+          "w": "w-water"
+        }
+      ],
+      "gap": {
+        "before": "You ",
+        "answer": "don’t have to",
+        "after": " pay for the water.",
+        "options": [
+          "don’t have to",
+          "mustn’t",
+          "haven’t to"
+        ],
+        "why": "「しなくていい」は don’t have to。mustn’t は「してはいけない」。"
+      },
+      "audio": "audio/en/grammar/gx-have-to-2.mp3",
+      "tags": [
+        "文法",
+        "have to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-have-to-3",
+      "english": "You mustn’t smoke inside.",
+      "japanese": "室内でタバコを吸ってはいけません。",
+      "chunks": [
+        {
+          "t": "You ",
+          "w": "w-you"
+        },
+        {
+          "t": "mustn’t smoke "
+        },
+        {
+          "t": "inside."
+        }
+      ],
+      "gap": {
+        "before": "You ",
+        "answer": "mustn’t",
+        "after": " smoke inside.",
+        "options": [
+          "mustn’t",
+          "don’t have to",
+          "must"
+        ],
+        "why": "「してはいけない」は mustn’t。"
+      },
+      "audio": "audio/en/grammar/gx-have-to-3.mp3",
+      "tags": [
+        "文法",
+        "have to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-have-to-4",
+      "english": "Do I have to book in advance?",
+      "japanese": "前もって予約しなければなりませんか？",
+      "chunks": [
+        {
+          "t": "Do I have to book ",
+          "w": "w-book"
+        },
+        {
+          "t": "in advance?"
+        }
+      ],
+      "gap": {
+        "before": "Do I ",
+        "answer": "have to",
+        "after": " book in advance?",
+        "options": [
+          "have to",
+          "must to",
+          "should to"
+        ],
+        "why": "疑問文は Do I have to …?"
+      },
+      "audio": "audio/en/grammar/gx-have-to-4.mp3",
+      "tags": [
+        "文法",
+        "have to"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

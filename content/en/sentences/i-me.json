@@ -1,0 +1,586 @@
+{
+  "schemaVersion": 1,
+  "id": "sentences-i-me",
+  "title": "自分のことを話す",
+  "description": "経験、これからの予定、好きなこと、最近の気持ち。自分のことを伝えて、相手と仲よくなるための文。",
+  "items": [
+    {
+      "id": "s-43",
+      "english": "I’ve been living in Auckland for two years.",
+      "japanese": "オークランドに住んで2年になります。",
+      "chunks": [
+        {
+          "t": "I’ve been living ",
+          "w": "w-live"
+        },
+        {
+          "t": "in Auckland "
+        },
+        {
+          "t": "for two years.",
+          "w": "w-year"
+        }
+      ],
+      "audio": "audio/en/sentences/s-43.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-44",
+      "english": "I used to be really shy.",
+      "japanese": "前はすごく人見知りでした。",
+      "chunks": [
+        {
+          "t": "I used to be "
+        },
+        {
+          "t": "really "
+        },
+        {
+          "t": "shy.",
+          "w": "w-shy"
+        }
+      ],
+      "audio": "audio/en/sentences/s-44.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-45",
+      "english": "I’m looking forward to the weekend.",
+      "japanese": "週末が楽しみです。",
+      "chunks": [
+        {
+          "t": "I’m looking forward to ",
+          "w": "w-look-forward-to"
+        },
+        {
+          "t": "the weekend.",
+          "w": "w-weekend"
+        }
+      ],
+      "audio": "audio/en/sentences/s-45.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-46",
+      "english": "I’ve never been to a wedding in New Zealand.",
+      "japanese": "ニュージーランドの結婚式には出たことがありません。",
+      "chunks": [
+        {
+          "t": "I’ve never been "
+        },
+        {
+          "t": "to a wedding ",
+          "w": "w-wedding"
+        },
+        {
+          "t": "in New Zealand."
+        }
+      ],
+      "audio": "audio/en/sentences/s-46.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-47",
+      "english": "I’m going to apply for a part-time job.",
+      "japanese": "アルバイトに応募するつもりです。",
+      "chunks": [
+        {
+          "t": "I’m going to "
+        },
+        {
+          "t": "apply for ",
+          "w": "w-apply"
+        },
+        {
+          "t": "a part-time job.",
+          "w": "w-part-time-job"
+        }
+      ],
+      "audio": "audio/en/sentences/s-47.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-48",
+      "english": "I’m a bit nervous about my interview.",
+      "japanese": "面接がちょっと不安です。",
+      "chunks": [
+        {
+          "t": "I’m a bit "
+        },
+        {
+          "t": "nervous ",
+          "w": "w-nervous"
+        },
+        {
+          "t": "about my interview.",
+          "w": "w-interview"
+        }
+      ],
+      "audio": "audio/en/sentences/s-48.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-49",
+      "english": "I prefer the beach to the mountains.",
+      "japanese": "山より海のほうが好きです。",
+      "chunks": [
+        {
+          "t": "I prefer ",
+          "w": "w-prefer"
+        },
+        {
+          "t": "the beach ",
+          "w": "w-beach"
+        },
+        {
+          "t": "to the mountains.",
+          "w": "w-mountain"
+        }
+      ],
+      "audio": "audio/en/sentences/s-49.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-50",
+      "english": "I miss my family sometimes.",
+      "japanese": "時々、家族に会いたくなります。",
+      "chunks": [
+        {
+          "t": "I miss ",
+          "w": "w-miss"
+        },
+        {
+          "t": "my family ",
+          "w": "w-family"
+        },
+        {
+          "t": "sometimes."
+        }
+      ],
+      "audio": "audio/en/sentences/s-50.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-51",
+      "english": "I’ve just started a new job.",
+      "japanese": "新しい仕事を始めたばかりです。",
+      "chunks": [
+        {
+          "t": "I’ve just started ",
+          "w": "w-start"
+        },
+        {
+          "t": "a new job.",
+          "w": "w-job"
+        }
+      ],
+      "audio": "audio/en/sentences/s-51.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-52",
+      "english": "My flatmate is really easy-going.",
+      "japanese": "フラットメイトはすごくおおらかな人です。",
+      "chunks": [
+        {
+          "t": "My flatmate ",
+          "w": "w-flatmate"
+        },
+        {
+          "t": "is really "
+        },
+        {
+          "t": "easy-going.",
+          "w": "w-easy-going"
+        }
+      ],
+      "audio": "audio/en/sentences/s-52.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-53",
+      "english": "I’m saving up for a trip to Japan.",
+      "japanese": "日本に行くためにお金を貯めています。",
+      "chunks": [
+        {
+          "t": "I’m saving up ",
+          "w": "w-save"
+        },
+        {
+          "t": "for a trip "
+        },
+        {
+          "t": "to Japan."
+        }
+      ],
+      "audio": "audio/en/sentences/s-53.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-54",
+      "english": "I usually sleep in on Sundays.",
+      "japanese": "日曜日はたいてい朝ゆっくり寝ます。",
+      "chunks": [
+        {
+          "t": "I usually "
+        },
+        {
+          "t": "sleep in ",
+          "w": "w-sleep-in"
+        },
+        {
+          "t": "on Sundays.",
+          "w": "w-sunday"
+        }
+      ],
+      "audio": "audio/en/sentences/s-54.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-55",
+      "english": "I was so relieved when I found my passport.",
+      "japanese": "パスポートが見つかって、本当にほっとしました。",
+      "chunks": [
+        {
+          "t": "I was so "
+        },
+        {
+          "t": "relieved ",
+          "w": "w-relieved"
+        },
+        {
+          "t": "when I found ",
+          "w": "w-find"
+        },
+        {
+          "t": "my passport.",
+          "w": "w-passport"
+        }
+      ],
+      "audio": "audio/en/sentences/s-55.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "s-56",
+      "english": "I’ve got a few days off next week.",
+      "japanese": "来週は何日か休みがあります。",
+      "chunks": [
+        {
+          "t": "I’ve got a few "
+        },
+        {
+          "t": "days off ",
+          "w": "w-day-off"
+        },
+        {
+          "t": "next week.",
+          "w": "w-week"
+        }
+      ],
+      "audio": "audio/en/sentences/s-56.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-57",
+      "english": "I get homesick when I’m sick.",
+      "japanese": "具合が悪い時は、ホームシックになります。",
+      "chunks": [
+        {
+          "t": "I get "
+        },
+        {
+          "t": "homesick ",
+          "w": "w-homesick"
+        },
+        {
+          "t": "when I’m sick.",
+          "w": "w-sick"
+        }
+      ],
+      "audio": "audio/en/sentences/s-57.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-58",
+      "english": "Honestly, I’m not a morning person.",
+      "japanese": "正直に言うと、朝は苦手なんです。",
+      "chunks": [
+        {
+          "t": "Honestly, ",
+          "w": "w-honestly"
+        },
+        {
+          "t": "I’m not a "
+        },
+        {
+          "t": "morning person.",
+          "w": "w-morning"
+        }
+      ],
+      "audio": "audio/en/sentences/s-58.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-59",
+      "english": "I’d like to work in tourism one day.",
+      "japanese": "いつか観光の仕事がしたいです。",
+      "chunks": [
+        {
+          "t": "I’d like to "
+        },
+        {
+          "t": "work ",
+          "w": "w-work"
+        },
+        {
+          "t": "in tourism "
+        },
+        {
+          "t": "one day."
+        }
+      ],
+      "audio": "audio/en/sentences/s-59.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-60",
+      "english": "My parents were quite strict.",
+      "japanese": "両親はけっこう厳しかったです。",
+      "chunks": [
+        {
+          "t": "My parents ",
+          "w": "w-parents"
+        },
+        {
+          "t": "were quite "
+        },
+        {
+          "t": "strict.",
+          "w": "w-strict"
+        }
+      ],
+      "audio": "audio/en/sentences/s-60.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-61",
+      "english": "I’m proud of how much I’ve learnt.",
+      "japanese": "ここまで上達した自分を誇りに思います。",
+      "chunks": [
+        {
+          "t": "I’m proud of ",
+          "w": "w-proud"
+        },
+        {
+          "t": "how much "
+        },
+        {
+          "t": "I’ve learnt.",
+          "w": "w-learn"
+        }
+      ],
+      "audio": "audio/en/sentences/s-61.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "s-62",
+      "english": "I’ve been feeling a bit lonely lately.",
+      "japanese": "最近、ちょっとさびしいんです。",
+      "chunks": [
+        {
+          "t": "I’ve been feeling ",
+          "w": "w-feel"
+        },
+        {
+          "t": "a bit "
+        },
+        {
+          "t": "lonely ",
+          "w": "w-lonely"
+        },
+        {
+          "t": "lately."
+        }
+      ],
+      "audio": "audio/en/sentences/s-62.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "s-63",
+      "english": "I chill out at the beach at the weekend.",
+      "japanese": "週末はビーチでのんびりします。",
+      "chunks": [
+        {
+          "t": "I chill out ",
+          "w": "w-chill-out"
+        },
+        {
+          "t": "at the beach ",
+          "w": "w-beach"
+        },
+        {
+          "t": "at the weekend.",
+          "w": "w-weekend"
+        }
+      ],
+      "audio": "audio/en/sentences/s-63.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-64",
+      "english": "I gave up coffee last month.",
+      "japanese": "先月、コーヒーをやめました。",
+      "chunks": [
+        {
+          "t": "I gave up ",
+          "w": "w-give-up"
+        },
+        {
+          "t": "coffee ",
+          "w": "w-coffee"
+        },
+        {
+          "t": "last month.",
+          "w": "w-month"
+        }
+      ],
+      "audio": "audio/en/sentences/s-64.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-65",
+      "english": "I’d love to explore the South Island.",
+      "japanese": "南島をあちこち回ってみたいです。",
+      "chunks": [
+        {
+          "t": "I’d love to "
+        },
+        {
+          "t": "explore ",
+          "w": "w-explore"
+        },
+        {
+          "t": "the South Island."
+        }
+      ],
+      "audio": "audio/en/sentences/s-65.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-66",
+      "english": "I get along really well with my colleagues.",
+      "japanese": "同僚ととても仲がいいです。",
+      "chunks": [
+        {
+          "t": "I get along ",
+          "w": "w-get-along"
+        },
+        {
+          "t": "really well "
+        },
+        {
+          "t": "with my colleagues.",
+          "w": "w-colleague"
+        }
+      ],
+      "audio": "audio/en/sentences/s-66.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-67",
+      "english": "I’m not sure yet, but I’ll probably stay another year.",
+      "japanese": "まだわからないけど、たぶんもう1年いると思います。",
+      "chunks": [
+        {
+          "t": "I’m not sure yet, ",
+          "w": "w-sure"
+        },
+        {
+          "t": "but I’ll probably ",
+          "w": "w-probably"
+        },
+        {
+          "t": "stay another year.",
+          "w": "w-year"
+        }
+      ],
+      "audio": "audio/en/sentences/s-67.mp3",
+      "tags": [
+        "自分のこと"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

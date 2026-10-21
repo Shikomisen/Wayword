@@ -7,7 +7,7 @@
   "pattern": "動詞 ＋ -ed（work → worked、live → lived、stop → stopped）",
   "explanation": "過去のことは過去形で言います。多くの動詞は -ed を付けるだけ：work → worked、watch → watched。e で終わる語は -d だけ（live → lived）。主語が he・she でも形は同じです。発音は3通り：worked（ト）、lived（ド）、wanted（イド）。",
   "natural": "週末や昨日のことを話す時に：I watched a movie last night.（昨夜、映画を見ました）。",
-  "stiff": "yesterday や last week があるのに現在形のままにしがちです：Yesterday I work. は×、Yesterday I worked.。",
+  "stiff": "yesterday や last week があるのに現在形のままにしがちです：Yesterday I work. は×、Yesterday I worked.",
   "examples": [
     {
       "id": "gx-past-ed-1",

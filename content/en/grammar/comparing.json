@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-comparing",
+  "connector": "-er / -est",
+  "gloss": "比べる",
+  "title": "bigger, the biggest — 比べる（比較級・最上級）",
+  "pattern": "-er than … ／ more … than … ／ the -est ／ the most …",
+  "explanation": "2つを比べる時は、短い形容詞に -er をつけて than を続けます：Wellington is windier than Auckland.長い形容詞は more：more expensive than。「いちばん」は the -est か the most：the biggest、the most beautiful。good → better → best、bad → worse → worst は形が変わります。",
+  "natural": "選ぶ時に：Which one is cheaper?（どっちが安い？）、This is the best pie I’ve ever had!（今まで食べた中でいちばんおいしいパイ！）",
+  "stiff": "more と -er を両方つけないこと：more cheaper はまちがいで、cheaper。",
+  "examples": [
+    {
+      "id": "gx-comparing-1",
+      "english": "Wellington is windier than Auckland.",
+      "japanese": "ウェリントンはオークランドより風が強いです。",
+      "chunks": [
+        {
+          "t": "Wellington is "
+        },
+        {
+          "t": "windier ",
+          "w": "w-windy"
+        },
+        {
+          "t": "than Auckland."
+        }
+      ],
+      "gap": {
+        "before": "Wellington is windier ",
+        "answer": "than",
+        "after": " Auckland.",
+        "options": [
+          "than",
+          "that",
+          "then"
+        ],
+        "why": "比べる相手の前は than。"
+      },
+      "audio": "audio/en/grammar/gx-comparing-1.mp3",
+      "tags": [
+        "文法",
+        "-er / -est"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-comparing-2",
+      "english": "Which one is cheaper?",
+      "japanese": "どっちが安いですか？",
+      "chunks": [
+        {
+          "t": "Which one "
+        },
+        {
+          "t": "is cheaper?",
+          "w": "w-cheap"
+        }
+      ],
+      "gap": {
+        "before": "Which one is ",
+        "answer": "cheaper",
+        "after": "?",
+        "options": [
+          "cheaper",
+          "more cheap",
+          "cheapest"
+        ],
+        "why": "短い形容詞は -er（cheap → cheaper）。"
+      },
+      "audio": "audio/en/grammar/gx-comparing-2.mp3",
+      "tags": [
+        "文法",
+        "-er / -est"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-comparing-3",
+      "english": "This is the best pie I’ve ever had!",
+      "japanese": "今まで食べた中でいちばんおいしいパイです！",
+      "chunks": [
+        {
+          "t": "This is "
+        },
+        {
+          "t": "the best ",
+          "w": "w-good"
+        },
+        {
+          "t": "pie ",
+          "w": "w-pie"
+        },
+        {
+          "t": "I’ve ever had!",
+          "w": "w-have"
+        }
+      ],
+      "gap": {
+        "before": "This is the ",
+        "answer": "best",
+        "after": " pie I’ve ever had!",
+        "options": [
+          "best",
+          "better",
+          "goodest"
+        ],
+        "why": "good の最上級は best。"
+      },
+      "audio": "audio/en/grammar/gx-comparing-3.mp3",
+      "tags": [
+        "文法",
+        "-er / -est"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-comparing-4",
+      "english": "It’s more expensive than I thought.",
+      "japanese": "思ったより高いです。",
+      "chunks": [
+        {
+          "t": "It’s "
+        },
+        {
+          "t": "more expensive ",
+          "w": "w-expensive"
+        },
+        {
+          "t": "than I thought."
+        }
+      ],
+      "gap": {
+        "before": "It’s ",
+        "answer": "more",
+        "after": " expensive than I thought.",
+        "options": [
+          "more",
+          "most",
+          "much"
+        ],
+        "why": "長い形容詞は more ＋ 形容詞。"
+      },
+      "audio": "audio/en/grammar/gx-comparing-4.mp3",
+      "tags": [
+        "文法",
+        "-er / -est"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

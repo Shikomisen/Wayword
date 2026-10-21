@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-past-continuous",
+  "connector": "was -ing",
+  "gloss": "〜しているところだった",
+  "title": "was / were ＋ -ing — 〜していた（過去進行形）",
+  "pattern": "I was …ing when … ／ What were you doing?",
+  "explanation": "過去のある時に「〜している途中だった」ことは、was・were ＋ -ing で言います。よく when と一緒に使い、続いていたこと（was -ing）の途中で、短い出来事（過去形）が起きた、という話し方をします：I was cooking when you called.（電話をくれた時、料理していた）。",
+  "natural": "出来事を話す時の背景に：I was walking home when it started to rain.（歩いて帰る途中で雨が降り出した）",
+  "stiff": "know、like、want のような状態を表す動詞は -ing にしません：I was knowing him. ではなく I knew him.",
+  "examples": [
+    {
+      "id": "gx-past-continuous-1",
+      "english": "I was cooking when you called.",
+      "japanese": "電話をくれた時、料理していました。",
+      "chunks": [
+        {
+          "t": "I was cooking ",
+          "w": "w-cook"
+        },
+        {
+          "t": "when you called.",
+          "w": "w-call"
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "was cooking",
+        "after": " when you called.",
+        "options": [
+          "was cooking",
+          "cooked",
+          "am cooking"
+        ],
+        "why": "電話が来た時に「している途中だった」ことは was ＋ -ing。"
+      },
+      "audio": "audio/en/grammar/gx-past-continuous-1.mp3",
+      "tags": [
+        "文法",
+        "was -ing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-past-continuous-2",
+      "english": "It was raining when we arrived.",
+      "japanese": "着いた時は雨が降っていました。",
+      "chunks": [
+        {
+          "t": "It was raining ",
+          "w": "w-rain"
+        },
+        {
+          "t": "when we arrived."
+        }
+      ],
+      "gap": {
+        "before": "It was ",
+        "answer": "raining",
+        "after": " when we arrived.",
+        "options": [
+          "raining",
+          "rain",
+          "rained"
+        ],
+        "why": "was の後は -ing。"
+      },
+      "audio": "audio/en/grammar/gx-past-continuous-2.mp3",
+      "tags": [
+        "文法",
+        "was -ing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-past-continuous-3",
+      "english": "What were you doing at ten last night?",
+      "japanese": "昨日の夜10時、何をしていましたか？",
+      "chunks": [
+        {
+          "t": "What were you doing ",
+          "w": "w-do"
+        },
+        {
+          "t": "at ten "
+        },
+        {
+          "t": "last night?",
+          "w": "w-night"
+        }
+      ],
+      "gap": {
+        "before": "What ",
+        "answer": "were",
+        "after": " you doing at ten last night?",
+        "options": [
+          "were",
+          "was",
+          "did"
+        ],
+        "why": "you の過去は were。"
+      },
+      "audio": "audio/en/grammar/gx-past-continuous-3.mp3",
+      "tags": [
+        "文法",
+        "was -ing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-past-continuous-4",
+      "english": "She was waiting at the bus stop.",
+      "japanese": "彼女はバス停で待っていました。",
+      "chunks": [
+        {
+          "t": "She was waiting ",
+          "w": "w-wait"
+        },
+        {
+          "t": "at the bus stop."
+        }
+      ],
+      "gap": {
+        "before": "She ",
+        "answer": "was",
+        "after": " waiting at the bus stop.",
+        "options": [
+          "was",
+          "were",
+          "is"
+        ],
+        "why": "she の過去は was。"
+      },
+      "audio": "audio/en/grammar/gx-past-continuous-4.mp3",
+      "tags": [
+        "文法",
+        "was -ing"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

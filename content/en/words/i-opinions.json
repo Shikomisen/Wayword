@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-opinions",
+  "title": "意見・考え",
+  "description": "賛成、反対、たぶん、場合による。自分の考えを伝えるための言葉。",
+  "items": [
+    {
+      "id": "w-opinion",
+      "english": "opinion",
+      "japanese": "意見",
+      "pos": "noun",
+      "registerNotes": "In my opinion, …（私の意見では〜）",
+      "audio": "audio/en/words/w-opinion.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-agree",
+      "english": "agree",
+      "japanese": "賛成する、同意する",
+      "pos": "verb",
+      "registerNotes": "I agree.（賛成です）",
+      "pitfallNote": "I’m agree. はまちがい。agree は動詞なので be動詞は不要：I agree.",
+      "audio": "audio/en/words/w-agree.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-disagree",
+      "english": "disagree",
+      "japanese": "反対する、意見がちがう",
+      "pos": "verb",
+      "registerNotes": "I disagree. はやや強め。I’m not sure I agree. のほうがやわらかい。",
+      "audio": "audio/en/words/w-disagree.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-suppose",
+      "english": "suppose",
+      "japanese": "〜だと思う",
+      "pos": "verb",
+      "registerNotes": "I suppose so.（まあ、そうでしょうね）",
+      "audio": "audio/en/words/w-suppose.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-guess",
+      "english": "guess",
+      "japanese": "〜だと思う、推測する",
+      "pos": "verb",
+      "registerNotes": "I guess so.（たぶんね）、Guess what!（ねえ、聞いて！）",
+      "audio": "audio/en/words/w-guess.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-probably",
+      "english": "probably",
+      "japanese": "たぶん",
+      "pos": "adverb",
+      "registerNotes": "maybe より確信が強い「たぶん」。",
+      "audio": "audio/en/words/w-probably.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-definitely",
+      "english": "definitely",
+      "japanese": "絶対に、もちろん",
+      "pos": "adverb",
+      "registerNotes": "Definitely!（もちろん！）",
+      "audio": "audio/en/words/w-definitely.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-maybe",
+      "english": "maybe",
+      "japanese": "もしかしたら、たぶん",
+      "pos": "adverb",
+      "audio": "audio/en/words/w-maybe.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-idea",
+      "english": "idea",
+      "japanese": "考え、アイデア",
+      "pos": "noun",
+      "registerNotes": "Good idea!（いい考えだね）、I have no idea.（全然わかりません）",
+      "audio": "audio/en/words/w-idea.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-point",
+      "english": "point",
+      "japanese": "要点、言いたいこと",
+      "pos": "noun",
+      "registerNotes": "Good point.（確かにね）、What’s the point?（何の意味があるの？）",
+      "audio": "audio/en/words/w-point.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-reason",
+      "english": "reason",
+      "japanese": "理由",
+      "pos": "noun",
+      "audio": "audio/en/words/w-reason.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-example",
+      "english": "example",
+      "japanese": "例",
+      "pos": "noun",
+      "registerNotes": "for example（たとえば）",
+      "audio": "audio/en/words/w-example.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-prefer",
+      "english": "prefer",
+      "japanese": "〜のほうが好き",
+      "pos": "verb",
+      "registerNotes": "I prefer tea to coffee.（コーヒーより紅茶が好き）",
+      "audio": "audio/en/words/w-prefer.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-depend",
+      "english": "depend",
+      "japanese": "〜による",
+      "pos": "verb",
+      "registerNotes": "It depends.（場合によります）、It depends on the weather.（天気次第です）",
+      "audio": "audio/en/words/w-depend.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sure",
+      "english": "sure",
+      "japanese": "確かな、もちろん",
+      "pos": "adjective",
+      "registerNotes": "Sure!（いいよ）、I’m not sure.（よくわかりません）",
+      "audio": "audio/en/words/w-sure.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-true",
+      "english": "true",
+      "japanese": "本当の",
+      "pos": "adjective",
+      "registerNotes": "That’s true.（確かに）",
+      "audio": "audio/en/words/w-true.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-obvious",
+      "english": "obvious",
+      "japanese": "明らかな、当たり前の",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-obvious.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-fair",
+      "english": "fair",
+      "japanese": "公平な、もっともな",
+      "pos": "adjective",
+      "registerNotes": "That’s fair.（それはもっともだね）、That’s not fair!（ずるい！）",
+      "audio": "audio/en/words/w-fair.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-important",
+      "english": "important",
+      "japanese": "大切な",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-important.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-worth-it",
+      "english": "worth it",
+      "japanese": "やる価値がある",
+      "pos": "phrase",
+      "registerNotes": "It’s expensive, but it’s worth it.（高いけど、その価値はある）",
+      "audio": "audio/en/words/w-worth-it.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-overrated",
+      "english": "overrated",
+      "japanese": "過大評価されている、思ったほどでもない",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-overrated.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-honestly",
+      "english": "honestly",
+      "japanese": "正直に言うと",
+      "pos": "adverb",
+      "registerNotes": "Honestly, I didn’t like it.（正直、好きじゃなかった）",
+      "audio": "audio/en/words/w-honestly.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-personally",
+      "english": "personally",
+      "japanese": "個人的には",
+      "pos": "adverb",
+      "audio": "audio/en/words/w-personally.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-advice",
+      "english": "advice",
+      "japanese": "アドバイス、助言",
+      "pos": "noun",
+      "pitfallNote": "advices とは言いません。数える時は a piece of advice。",
+      "audio": "audio/en/words/w-advice.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-suggest",
+      "english": "suggest",
+      "japanese": "提案する",
+      "pos": "verb",
+      "registerNotes": "I suggest we leave early.（早めに出ようよ）",
+      "pitfallNote": "suggest me … とは言いません。",
+      "audio": "audio/en/words/w-suggest.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-decide",
+      "english": "decide",
+      "japanese": "決める",
+      "pos": "verb",
+      "registerNotes": "I can’t decide.（決められない）",
+      "audio": "audio/en/words/w-decide.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

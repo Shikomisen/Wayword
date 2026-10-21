@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-feelings",
+  "title": "気持ち・反応",
+  "description": "驚いた、ほっとした、がっかりした。自分の気持ちを言い、相手の話に反応するための言葉。",
+  "items": [
+    {
+      "id": "w-surprised",
+      "english": "surprised",
+      "japanese": "驚いた",
+      "pos": "adjective",
+      "registerNotes": "I was surprised.（驚きました）",
+      "pitfallNote": "自分の気持ちは -ed。I was surprising. は「私は（人を）驚かせる存在だった」になります。",
+      "audio": "audio/en/words/w-surprised.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-embarrassed",
+      "english": "embarrassed",
+      "japanese": "恥ずかしい、きまりが悪い",
+      "pos": "adjective",
+      "pitfallNote": "ashamed は「（悪いことをして）恥じている」という重い言葉。ちょっとした恥ずかしさは embarrassed。",
+      "audio": "audio/en/words/w-embarrassed.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nervous",
+      "english": "nervous",
+      "japanese": "緊張している、不安な",
+      "pos": "adjective",
+      "registerNotes": "I’m a bit nervous.（ちょっと緊張しています）",
+      "audio": "audio/en/words/w-nervous.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-worried",
+      "english": "worried",
+      "japanese": "心配している",
+      "pos": "adjective",
+      "registerNotes": "I’m worried about my exam.（試験が心配です）",
+      "audio": "audio/en/words/w-worried.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-relieved",
+      "english": "relieved",
+      "japanese": "ほっとした",
+      "pos": "adjective",
+      "registerNotes": "I’m so relieved!（ほんとうにほっとした！）",
+      "audio": "audio/en/words/w-relieved.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-disappointed",
+      "english": "disappointed",
+      "japanese": "がっかりした",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-disappointed.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-annoyed",
+      "english": "annoyed",
+      "japanese": "イライラした、むっとした",
+      "pos": "adjective",
+      "registerNotes": "angry ほど強くない、ちょっとした怒り。",
+      "audio": "audio/en/words/w-annoyed.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bored",
+      "english": "bored",
+      "japanese": "退屈している",
+      "pos": "adjective",
+      "pitfallNote": "I’m boring. は「私はつまらない人間です」。退屈なら I’m bored.",
+      "audio": "audio/en/words/w-bored.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-confused",
+      "english": "confused",
+      "japanese": "混乱している、よくわからない",
+      "pos": "adjective",
+      "registerNotes": "Sorry, I’m a bit confused.（すみません、ちょっとよくわかりません）",
+      "audio": "audio/en/words/w-confused.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-scared",
+      "english": "scared",
+      "japanese": "怖い、怖がっている",
+      "pos": "adjective",
+      "registerNotes": "I’m scared of spiders.（クモが怖い）",
+      "audio": "audio/en/words/w-scared.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-proud",
+      "english": "proud",
+      "japanese": "誇らしい、自慢に思う",
+      "pos": "adjective",
+      "registerNotes": "I’m proud of you.（よく頑張ったね、誇りに思うよ）",
+      "audio": "audio/en/words/w-proud.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-lonely",
+      "english": "lonely",
+      "japanese": "さびしい",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-lonely.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-homesick",
+      "english": "homesick",
+      "japanese": "ホームシックの",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-homesick.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-grateful",
+      "english": "grateful",
+      "japanese": "感謝している",
+      "pos": "adjective",
+      "registerNotes": "thank you より改まった言い方：I’m really grateful.",
+      "audio": "audio/en/words/w-grateful.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-upset",
+      "english": "upset",
+      "japanese": "動揺している、気を悪くしている",
+      "pos": "adjective",
+      "registerNotes": "She’s upset.（彼女は気を悪くしています）。泣きそうな悲しさにも、怒りにも使います。",
+      "audio": "audio/en/words/w-upset.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-jealous",
+      "english": "jealous",
+      "japanese": "うらやましい、嫉妬している",
+      "pos": "adjective",
+      "registerNotes": "I’m so jealous!（いいなあ！）は軽い「うらやましい」。",
+      "audio": "audio/en/words/w-jealous.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-amazing",
+      "english": "amazing",
+      "japanese": "すごい、すばらしい",
+      "pos": "adjective",
+      "registerNotes": "That’s amazing!（すごいね！）",
+      "audio": "audio/en/words/w-amazing.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-awesome",
+      "english": "awesome",
+      "japanese": "最高の、すごくいい",
+      "pos": "adjective",
+      "registerNotes": "くだけた言い方。Awesome! だけで「いいね！」。",
+      "audio": "audio/en/words/w-awesome.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-terrible",
+      "english": "terrible",
+      "japanese": "ひどい",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-terrible.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-awkward",
+      "english": "awkward",
+      "japanese": "気まずい、ぎこちない",
+      "pos": "adjective",
+      "registerNotes": "That was awkward.（気まずかったね）",
+      "audio": "audio/en/words/w-awkward.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-fun",
+      "english": "fun",
+      "japanese": "楽しい（こと）",
+      "pos": "adjective",
+      "registerNotes": "It was fun.（楽しかった）",
+      "pitfallNote": "「楽しかった」を I was fun. と言うと「私は面白い人だった」になります。",
+      "audio": "audio/en/words/w-fun.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-glad",
+      "english": "glad",
+      "japanese": "うれしい、よかった",
+      "pos": "adjective",
+      "registerNotes": "I’m glad to hear that.（それはよかったです）",
+      "audio": "audio/en/words/w-glad.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-calm",
+      "english": "calm",
+      "japanese": "落ち着いた",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-calm.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mood",
+      "english": "mood",
+      "japanese": "気分、機嫌",
+      "pos": "noun",
+      "registerNotes": "in a good mood（機嫌がいい）、I’m not in the mood.（そういう気分じゃない）",
+      "audio": "audio/en/words/w-mood.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-miss",
+      "english": "miss",
+      "japanese": "〜がいなくてさびしい、乗り遅れる",
+      "pos": "verb",
+      "registerNotes": "I miss you.（会いたいな）、I missed the bus.（バスに乗り遅れた）",
+      "audio": "audio/en/words/w-miss.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

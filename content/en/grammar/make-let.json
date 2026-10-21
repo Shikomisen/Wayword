@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-make-let",
+  "connector": "make / let",
+  "gloss": "〜させる",
+  "title": "make, let, get — 〜させる、〜させてくれる",
+  "pattern": "make ＋ 人 ＋ 原形 ／ let ＋ 人 ＋ 原形 ／ get ＋ 人 ＋ to …",
+  "explanation": "「人に〜させる」は3つ。make は無理にさせる：My boss made me work late.（上司に残業させられた）。let は許してさせる：Let me help.（手伝わせて）。get は頼んでしてもらう：I’ll get Sam to call you.（サムに電話させます）。make と let の後は to なしの原形です。",
+  "natural": "Let me … は申し出の決まり文句：Let me check.（確認しますね）、Let me know.（知らせてね）",
+  "stiff": "make me to go、let me to help のように to を入れるのはまちがい。Let me help.",
+  "examples": [
+    {
+      "id": "gx-make-let-1",
+      "english": "Let me know if you need anything.",
+      "japanese": "何か必要だったら知らせてね。",
+      "chunks": [
+        {
+          "t": "Let me know ",
+          "w": "w-know"
+        },
+        {
+          "t": "if you need ",
+          "w": "w-need"
+        },
+        {
+          "t": "anything."
+        }
+      ],
+      "gap": {
+        "before": "Let me ",
+        "answer": "know",
+        "after": " if you need anything.",
+        "options": [
+          "know",
+          "to know",
+          "knowing"
+        ],
+        "why": "let の後は to なしの原形。"
+      },
+      "audio": "audio/en/grammar/gx-make-let-1.mp3",
+      "tags": [
+        "文法",
+        "make / let"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-make-let-2",
+      "english": "My boss made me work late.",
+      "japanese": "上司に遅くまで働かされました。",
+      "chunks": [
+        {
+          "t": "My boss ",
+          "w": "w-boss"
+        },
+        {
+          "t": "made me work ",
+          "w": "w-work"
+        },
+        {
+          "t": "late.",
+          "w": "w-late"
+        }
+      ],
+      "gap": {
+        "before": "My boss ",
+        "answer": "made",
+        "after": " me work late.",
+        "options": [
+          "made",
+          "let",
+          "got"
+        ],
+        "why": "無理にさせるのは make。"
+      },
+      "audio": "audio/en/grammar/gx-make-let-2.mp3",
+      "tags": [
+        "文法",
+        "make / let"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-make-let-3",
+      "english": "I’ll get Sam to call you back.",
+      "japanese": "サムから折り返し電話させます。",
+      "chunks": [
+        {
+          "t": "I’ll get Sam "
+        },
+        {
+          "t": "to call you back.",
+          "w": "w-call"
+        }
+      ],
+      "gap": {
+        "before": "I’ll get Sam ",
+        "answer": "to call",
+        "after": " you back.",
+        "options": [
+          "to call",
+          "call",
+          "calling"
+        ],
+        "why": "get ＋ 人の後は to ＋ 原形。"
+      },
+      "audio": "audio/en/grammar/gx-make-let-3.mp3",
+      "tags": [
+        "文法",
+        "make / let"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-make-let-4",
+      "english": "Let me help you with your bags.",
+      "japanese": "荷物、手伝いますよ。",
+      "chunks": [
+        {
+          "t": "Let me help you ",
+          "w": "w-help"
+        },
+        {
+          "t": "with your bags.",
+          "w": "w-bag"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Let",
+        "after": " me help you with your bags.",
+        "options": [
+          "Let",
+          "Make",
+          "Get"
+        ],
+        "why": "申し出は Let me …。"
+      },
+      "audio": "audio/en/grammar/gx-make-let-4.mp3",
+      "tags": [
+        "文法",
+        "make / let"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "gloss": "〜してください・〜しないで",
   "title": "Please…, Don’t… — 〜して、〜しないで",
   "pattern": "（Please）＋ 動詞 … / Don’t ＋ 動詞 … / Let’s ＋ 動詞 …",
-  "explanation": "「〜して」は動詞から始めます：Sit down.（座って）、Wait here.（ここで待って）。please を付けると「〜してください」：Please sit down.。「〜しないで」は Don’t から：Don’t worry.（心配しないで）。「〜しよう」は Let’s：Let’s go!",
+  "explanation": "「〜して」は動詞から始めます：Sit down.（座って）、Wait here.（ここで待って）。please を付けると「〜してください」：Please sit down.「〜しないで」は Don’t から：Don’t worry.（心配しないで）。「〜しよう」は Let’s：Let’s go!",
   "natural": "道案内や注意でよく聞きます：Turn left at the lights.（信号を左に曲がって）、Don’t forget your bag!（かばんを忘れないで）。",
   "stiff": "命令の形は強く聞こえることがあります。お店の人や知らない人には Could you…?（基礎レベルの「ていねいに頼む」）の方が感じがいい。please を付けても、強い口調では命令に聞こえます。",
   "examples": [
@@ -134,7 +134,7 @@
           "Waiting",
           "To wait"
         ],
-        "why": "頼む文は動詞から：Wait here.。please は最後でも大丈夫。"
+        "why": "頼む文は動詞から：Wait here.please は最後でも大丈夫。"
       },
       "audio": "audio/en/grammar/gx-imperatives-4.mp3",
       "tags": [

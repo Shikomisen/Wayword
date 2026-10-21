@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "problems",
+  "title": "トラブル・苦情",
+  "order": 16,
+  "description": "壊れている、まちがっている、閉め出された。ていねいに、でもはっきり問題を伝えるひとこと。",
+  "phrases": [
+    {
+      "id": "pro-01",
+      "english": "Excuse me, there’s a problem with my room.",
+      "japanese": "すみません、部屋に問題があるのですが。",
+      "registerNotes": "ホテルのフロントで。まず問題があることを伝えて、それから詳しく。",
+      "audio": "audio/en/pro-01.mp3",
+      "audioHint": "Excuse me, there’s a problem with my room.",
+      "tags": [
+        "ホテル",
+        "必須"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-02",
+      "english": "The shower’s not working.",
+      "japanese": "シャワーが使えません。",
+      "registerNotes": "〜’s not working で「〜が動かない、使えない」。何にでも使えます。",
+      "audio": "audio/en/pro-02.mp3",
+      "audioHint": "The shower’s not working.",
+      "tags": [
+        "ホテル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pro-03",
+      "english": "I think there’s been a mistake.",
+      "japanese": "何かのまちがいだと思うのですが。",
+      "registerNotes": "相手を責めずに問題を伝えるていねいな言い方。請求や注文のまちがいに。",
+      "audio": "audio/en/pro-03.mp3",
+      "audioHint": "I think there’s been a mistake.",
+      "tags": [
+        "苦情"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-04",
+      "english": "This isn’t what I ordered.",
+      "japanese": "これは注文したものとちがいます。",
+      "registerNotes": "レストランで。Sorry, … から始めるとやわらかい。",
+      "audio": "audio/en/pro-04.mp3",
+      "audioHint": "This isn’t what I ordered.",
+      "tags": [
+        "レストラン"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-05",
+      "english": "I’d like a refund, please.",
+      "japanese": "返金をお願いしたいのですが。",
+      "registerNotes": "レシートを用意しておきましょう。交換なら I’d like to swap it.",
+      "audio": "audio/en/pro-05.mp3",
+      "audioHint": "I’d like a refund, please.",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-06",
+      "english": "It stopped working after a day.",
+      "japanese": "1日で動かなくなりました。",
+      "registerNotes": "不良品を返品する時、いつから問題があるかを伝えます。",
+      "audio": "audio/en/pro-06.mp3",
+      "audioHint": "It stopped working after a day.",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-07",
+      "english": "Could I speak to the manager?",
+      "japanese": "責任者の方とお話しできますか？",
+      "registerNotes": "最初の店員さんで解決しない時だけ使いましょう。",
+      "audio": "audio/en/pro-07.mp3",
+      "audioHint": "Could I speak to the manager?",
+      "tags": [
+        "苦情"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-08",
+      "english": "I’ve locked myself out.",
+      "japanese": "鍵を中に置いたまま、閉め出されてしまいました。",
+      "registerNotes": "ホテルや家で。lock oneself out で「自分を締め出す」。",
+      "audio": "audio/en/pro-08.mp3",
+      "audioHint": "I’ve locked myself out.",
+      "tags": [
+        "ホテル"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "pro-09",
+      "english": "I was charged twice.",
+      "japanese": "2回請求されています。",
+      "registerNotes": "カードの明細やレシートを見せながら。",
+      "audio": "audio/en/pro-09.mp3",
+      "audioHint": "I was charged twice.",
+      "tags": [
+        "苦情"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-10",
+      "english": "Could you have a look at it?",
+      "japanese": "見てもらえますか？",
+      "registerNotes": "have a look は「ちょっと見る」。修理や確認を頼む時に。",
+      "audio": "audio/en/pro-10.mp3",
+      "audioHint": "Could you have a look at it?",
+      "tags": [
+        "お願い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-11",
+      "english": "How long will it take to fix?",
+      "japanese": "直すのにどのくらいかかりますか？",
+      "registerNotes": "How long will it take to …? で「〜するのにどのくらいかかる？」",
+      "audio": "audio/en/pro-11.mp3",
+      "audioHint": "How long will it take to fix?",
+      "tags": [
+        "お願い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-12",
+      "english": "It’s not a big deal.",
+      "japanese": "大したことじゃないですよ。",
+      "registerNotes": "相手が謝った時、気にしないでと伝える言い方。",
+      "pitfallNote": "No problem. や No worries. でも同じ意味になります。",
+      "audio": "audio/en/pro-12.mp3",
+      "audioHint": "It’s not a big deal.",
+      "tags": [
+        "返事"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

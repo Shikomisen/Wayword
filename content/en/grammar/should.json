@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-should",
+  "connector": "should",
+  "gloss": "〜したほうがいい",
+  "title": "should, had better — 〜したほうがいい",
+  "pattern": "You should … ／ You shouldn’t … ／ You’d better …",
+  "explanation": "should ＋ 原形は「〜したほうがいい」というアドバイス：You should try the fish and chips.（フィッシュアンドチップスを食べてみるといいよ）。had better（’d better）はもっと強く、「〜しないと困ったことになる」：You’d better hurry.（急がないとまずいよ）。",
+  "natural": "おすすめや軽いアドバイスには should：You should go to Waiheke.（ワイヘケ島に行くといいよ）",
+  "stiff": "目上の人に You had better … と言うと、命令や警告に聞こえます。ていねいに勧めるなら Maybe you could …。",
+  "examples": [
+    {
+      "id": "gx-should-1",
+      "english": "You should try the fish and chips.",
+      "japanese": "フィッシュアンドチップスを食べてみるといいよ。",
+      "chunks": [
+        {
+          "t": "You should try "
+        },
+        {
+          "t": "the fish and chips.",
+          "w": "w-fish-and-chips"
+        }
+      ],
+      "gap": {
+        "before": "You ",
+        "answer": "should",
+        "after": " try the fish and chips.",
+        "options": [
+          "should",
+          "must",
+          "had"
+        ],
+        "why": "おすすめは should。"
+      },
+      "audio": "audio/en/grammar/gx-should-1.mp3",
+      "tags": [
+        "文法",
+        "should"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-should-2",
+      "english": "You shouldn’t swim there.",
+      "japanese": "そこでは泳がないほうがいいよ。",
+      "chunks": [
+        {
+          "t": "You shouldn’t swim "
+        },
+        {
+          "t": "there.",
+          "w": "w-there"
+        }
+      ],
+      "gap": {
+        "before": "You ",
+        "answer": "shouldn’t",
+        "after": " swim there.",
+        "options": [
+          "shouldn’t",
+          "don’t should",
+          "not should"
+        ],
+        "why": "should の否定は shouldn’t（should not）。"
+      },
+      "audio": "audio/en/grammar/gx-should-2.mp3",
+      "tags": [
+        "文法",
+        "should"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-should-3",
+      "english": "We’d better leave now, or we’ll miss the bus.",
+      "japanese": "今出ないと、バスに乗り遅れちゃうよ。",
+      "chunks": [
+        {
+          "t": "We’d better leave ",
+          "w": "w-leave"
+        },
+        {
+          "t": "now, ",
+          "w": "w-now"
+        },
+        {
+          "t": "or we’ll miss the bus.",
+          "w": "w-miss"
+        }
+      ],
+      "gap": {
+        "before": "We’d ",
+        "answer": "better",
+        "after": " leave now, or we’ll miss the bus.",
+        "options": [
+          "better",
+          "best",
+          "should"
+        ],
+        "why": "had better（’d better）は「〜しないとまずい」。"
+      },
+      "audio": "audio/en/grammar/gx-should-3.mp3",
+      "tags": [
+        "文法",
+        "should"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-should-4",
+      "english": "Should I bring anything?",
+      "japanese": "何か持っていったほうがいい？",
+      "chunks": [
+        {
+          "t": "Should I bring ",
+          "w": "w-bring"
+        },
+        {
+          "t": "anything?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Should",
+        "after": " I bring anything?",
+        "options": [
+          "Should",
+          "Must",
+          "Have"
+        ],
+        "why": "アドバイスを求める時は Should I …?"
+      },
+      "audio": "audio/en/grammar/gx-should-4.mp3",
+      "tags": [
+        "文法",
+        "should"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

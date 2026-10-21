@@ -7,7 +7,7 @@
   "pattern": "a ＋ 子音の音で始まる名詞 / an ＋ 母音の音で始まる名詞 / the ＋ どれのことか分かっているもの",
   "explanation": "数えられる名詞が1つの時は、前に a を付けます（母音の音で始まるなら an）：a cup、an apple。話している2人とも「どれのことか」分かっているものには the：the station（いつもの、あの駅）。日本語にはない考え方なので、最初はまちがえて当たり前です。",
   "natural": "Can I have a coffee?（コーヒーを1つください）、Where’s the toilet?（お手洗いはどこ？ ＝ このお店のお手洗い）。",
-  "stiff": "数えられる名詞を1つだけ言う時に a を落とすと、とても不自然です：I have dog. ではなく I have a dog.。お店の中の決まった場所には the：the fitting room、the bathroom。",
+  "stiff": "数えられる名詞を1つだけ言う時に a を落とすと、とても不自然です：I have dog. ではなく I have a dog.お店の中の決まった場所には the：the fitting room、the bathroom。",
   "examples": [
     {
       "id": "gx-articles-1",

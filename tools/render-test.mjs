@@ -1302,9 +1302,10 @@ check('…and the sentence not yet said is in the reviews, as a failed "say it" 
   (await deck.getCard(`${notYetOn}~p`))?.state === 'learning', notYetOn);
 
 await goTo('#/ja-en/scenarios');
-check('scenario list in Japanese with all 7 English scenarios',
-  text().includes('会話練習') && $$('.row-card').length === EN.scenarios.length && EN.scenarios.length === 7,
-  `${$$('.row-card').length} scenarios`);
+check(`scenario list in Japanese with all ${EN.scenarios.length} English scenarios, under 基礎 and 中級`,
+  text().includes('会話練習') && $$('.row-card').length === EN.scenarios.length && EN.scenarios.length === 13 &&
+    $$('.section-title').map((h) => h.textContent).join('|') === '🌿 基礎|🌳 中級',
+  `${$$('.row-card').length} scenarios; ${$$('.section-title').map((h) => h.textContent).join('|')}`);
 // Listening: a daily drill on Today, a section in Learn — not a tab, so the scenarios keep theirs.
 const replyFile = readJSON(EN.listening.find((l) => l.kind === 'replies').file);
 const pairCount = readJSON(EN.listening.find((l) => l.kind === 'contrasts').file).sets.reduce((n, x) => n + x.pairs.length, 0);
@@ -1325,6 +1326,16 @@ check('the listening page lists every line said back, with what to answer, and e
     $$('.contrast-pair').length === pairCount,
   `${$$('.listen-line').length} lines, ${$$('.contrast-pair').length} pairs`);
 check('…as part of Learn', document.querySelector('.tabbar a.active')?.dataset.path === '/browse');
+const moreFile = readJSON(EN.listening.find((l) => l.id === 'replies-more').file);
+const enLevelWas = (await deck.getSettings()).level;
+await deck.saveSettings({ level: 'intermediate' });
+await goTo('#/ja-en/listening');
+check('at Intermediate, the listening page has both sets of lines said back, each in its own section',
+  $$('section[data-set]').map((x) => x.dataset.set).join() === 'replies,replies-more,contrasts' &&
+    $$('.listen-line').length === replyFile.items.length + moreFile.items.length,
+  `${$$('section[data-set]').map((x) => x.dataset.set).join()}; ${$$('.listen-line').length} lines`);
+await deck.saveSettings({ level: enLevelWas });
+await goTo('#/ja-en/listening');
 
 await goTo('#/ja-en/listening/drill');
 const listenAsked = [];

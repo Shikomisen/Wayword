@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-present-perfect",
+  "connector": "have been",
+  "gloss": "〜したことがある（経験）",
+  "title": "Have you ever…? — 〜したことがある（現在完了）",
+  "pattern": "have / has ＋ 過去分詞（been, seen, tried…） ／ Have you ever …?",
+  "explanation": "「〜したことがある」という経験は、have ＋ 過去分詞で言います：I’ve been to Rotorua.（ロトルアに行ったことがあります）。聞く時は Have you ever …?、「一度もない」は never：I’ve never tried it.過去分詞は -ed の形がふつうですが、be → been、see → seen、eat → eaten のように形が変わる動詞もあります。",
+  "natural": "経験を聞くのは会話のいいきっかけ：Have you ever been to Japan?（日本に行ったことある？）",
+  "stiff": "「いつ」をはっきり言う時は現在完了を使いません。I’ve been there last year. はまちがいで、I went there last year.",
+  "examples": [
+    {
+      "id": "gx-present-perfect-1",
+      "english": "Have you ever been to Rotorua?",
+      "japanese": "ロトルアに行ったことはありますか？",
+      "chunks": [
+        {
+          "t": "Have you ",
+          "w": "w-you"
+        },
+        {
+          "t": "ever been "
+        },
+        {
+          "t": "to Rotorua?"
+        }
+      ],
+      "gap": {
+        "before": "Have you ever ",
+        "answer": "been",
+        "after": " to Rotorua?",
+        "options": [
+          "been",
+          "went",
+          "go"
+        ],
+        "why": "経験は Have you ever ＋ 過去分詞。「行ったことがある」は been。"
+      },
+      "audio": "audio/en/grammar/gx-present-perfect-1.mp3",
+      "tags": [
+        "文法",
+        "have been"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-present-perfect-2",
+      "english": "I’ve never tried bungy jumping.",
+      "japanese": "バンジージャンプはやったことがありません。",
+      "chunks": [
+        {
+          "t": "I’ve ",
+          "w": "w-i"
+        },
+        {
+          "t": "never tried "
+        },
+        {
+          "t": "bungy jumping."
+        }
+      ],
+      "gap": {
+        "before": "I’ve ",
+        "answer": "never",
+        "after": " tried bungy jumping.",
+        "options": [
+          "never",
+          "ever",
+          "no"
+        ],
+        "why": "「一度もない」は never。have と過去分詞の間に入れます。"
+      },
+      "audio": "audio/en/grammar/gx-present-perfect-2.mp3",
+      "tags": [
+        "文法",
+        "have been"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-present-perfect-3",
+      "english": "She’s seen that film three times.",
+      "japanese": "彼女はその映画を3回見たことがあります。",
+      "chunks": [
+        {
+          "t": "She’s ",
+          "w": "w-she"
+        },
+        {
+          "t": "seen ",
+          "w": "w-see"
+        },
+        {
+          "t": "that film "
+        },
+        {
+          "t": "three times."
+        }
+      ],
+      "gap": {
+        "before": "She’s ",
+        "answer": "seen",
+        "after": " that film three times.",
+        "options": [
+          "seen",
+          "saw",
+          "see"
+        ],
+        "why": "has の後は過去分詞。see → saw → seen。"
+      },
+      "audio": "audio/en/grammar/gx-present-perfect-3.mp3",
+      "tags": [
+        "文法",
+        "have been"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-present-perfect-4",
+      "english": "I went there last year.",
+      "japanese": "去年そこに行きました。",
+      "chunks": [
+        {
+          "t": "I went ",
+          "w": "w-go"
+        },
+        {
+          "t": "there ",
+          "w": "w-there"
+        },
+        {
+          "t": "last year.",
+          "w": "w-year"
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "went",
+        "after": " there last year.",
+        "options": [
+          "went",
+          "have been",
+          "have gone"
+        ],
+        "why": "last year のように「いつ」を言う時は、ふつうの過去形。"
+      },
+      "audio": "audio/en/grammar/gx-present-perfect-4.mp3",
+      "tags": [
+        "文法",
+        "have been"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

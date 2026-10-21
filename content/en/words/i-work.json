@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-work",
+  "title": "仕事",
+  "description": "同僚、シフト、締め切り、面接。仕事やアルバイトの話をする時の言葉。",
+  "items": [
+    {
+      "id": "w-job",
+      "english": "job",
+      "japanese": "仕事、職",
+      "pos": "noun",
+      "registerNotes": "What do you do?（お仕事は何ですか）と聞かれたら I work at …。",
+      "pitfallNote": "work は数えられず、job は数えます：a job、two jobs。",
+      "audio": "audio/en/words/w-job.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-colleague",
+      "english": "colleague",
+      "japanese": "同僚",
+      "pos": "noun",
+      "registerNotes": "くだけて workmate とも。",
+      "audio": "audio/en/words/w-colleague.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-boss",
+      "english": "boss",
+      "japanese": "上司",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドでは manager と言うことのほうが多い。",
+      "audio": "audio/en/words/w-boss.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-meeting",
+      "english": "meeting",
+      "japanese": "会議、打ち合わせ",
+      "pos": "noun",
+      "audio": "audio/en/words/w-meeting.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-deadline",
+      "english": "deadline",
+      "japanese": "締め切り",
+      "pos": "noun",
+      "audio": "audio/en/words/w-deadline.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-salary",
+      "english": "salary",
+      "japanese": "給料（年俸・月給）",
+      "pos": "noun",
+      "audio": "audio/en/words/w-salary.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-wage",
+      "english": "wage",
+      "japanese": "賃金、時給",
+      "pos": "noun",
+      "registerNotes": "the minimum wage（最低賃金）",
+      "audio": "audio/en/words/w-wage.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shift",
+      "english": "shift",
+      "japanese": "シフト、勤務",
+      "pos": "noun",
+      "registerNotes": "I’m on the early shift.（早番です）",
+      "audio": "audio/en/words/w-shift.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-day-off",
+      "english": "day off",
+      "japanese": "休みの日",
+      "pos": "noun",
+      "registerNotes": "Tomorrow’s my day off.（明日は休みです）",
+      "audio": "audio/en/words/w-day-off.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-overtime",
+      "english": "overtime",
+      "japanese": "残業",
+      "pos": "noun",
+      "registerNotes": "work overtime（残業する）",
+      "audio": "audio/en/words/w-overtime.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-interview",
+      "english": "interview",
+      "japanese": "面接",
+      "pos": "noun",
+      "registerNotes": "a job interview（就職の面接）",
+      "audio": "audio/en/words/w-interview.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-apply",
+      "english": "apply",
+      "japanese": "応募する、申し込む",
+      "pos": "verb",
+      "registerNotes": "apply for a job（仕事に応募する）",
+      "audio": "audio/en/words/w-apply.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hire",
+      "english": "hire",
+      "japanese": "雇う",
+      "pos": "verb",
+      "audio": "audio/en/words/w-hire.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-quit",
+      "english": "quit",
+      "japanese": "辞める",
+      "pos": "verb",
+      "registerNotes": "I quit my job.（仕事を辞めました）。過去形も quit。",
+      "audio": "audio/en/words/w-quit.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-experience",
+      "english": "experience",
+      "japanese": "経験",
+      "pos": "noun",
+      "registerNotes": "work experience（職歴）",
+      "audio": "audio/en/words/w-experience.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-skill",
+      "english": "skill",
+      "japanese": "技術、スキル",
+      "pos": "noun",
+      "audio": "audio/en/words/w-skill.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-customer",
+      "english": "customer",
+      "japanese": "客",
+      "pos": "noun",
+      "audio": "audio/en/words/w-customer.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-office",
+      "english": "office",
+      "japanese": "オフィス、職場",
+      "pos": "noun",
+      "audio": "audio/en/words/w-office.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-project",
+      "english": "project",
+      "japanese": "プロジェクト、計画",
+      "pos": "noun",
+      "audio": "audio/en/words/w-project.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-email",
+      "english": "email",
+      "japanese": "メール（Eメール）",
+      "pos": "noun",
+      "pitfallNote": "日本語の「メール」は英語では email。携帯のメッセージは a text。",
+      "audio": "audio/en/words/w-email.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-text",
+      "english": "text",
+      "japanese": "（携帯で）メッセージを送る",
+      "pos": "verb",
+      "registerNotes": "I’ll text you.（メッセージ送るね）",
+      "audio": "audio/en/words/w-text.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-retire",
+      "english": "retire",
+      "japanese": "退職する、引退する",
+      "pos": "verb",
+      "audio": "audio/en/words/w-retire.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-promotion",
+      "english": "promotion",
+      "japanese": "昇進",
+      "pos": "noun",
+      "audio": "audio/en/words/w-promotion.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-training",
+      "english": "training",
+      "japanese": "研修、トレーニング",
+      "pos": "noun",
+      "audio": "audio/en/words/w-training.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-uniform",
+      "english": "uniform",
+      "japanese": "制服",
+      "pos": "noun",
+      "audio": "audio/en/words/w-uniform.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-break",
+      "english": "break",
+      "japanese": "休憩",
+      "pos": "noun",
+      "registerNotes": "a lunch break（昼休み）、take a break（休憩する）",
+      "audio": "audio/en/words/w-break.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "id": "dinner-at-friends",
+  "title": "友だちの家で夕食",
+  "category": "friends",
+  "setting": "同僚のサラの家に夕食に招かれました。玄関でサラが迎えてくれます。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "friend",
+      "english": "Hi! Come in, come in. Make yourself at home.",
+      "japanese": "いらっしゃい！どうぞ入って。くつろいでね。",
+      "audio": "audio/en/scenario/dinner-at-friends-n1.mp3",
+      "audioHint": "Hi! Come in, come in. Make yourself at home.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Thanks for inviting me. I brought some wine.",
+          "japanese": "誘ってくれてありがとう。ワインを持ってきたよ。",
+          "feedback": "ニュージーランドでは、招かれたら飲み物やデザートを持っていくのが一般的です。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "Thanks! Your place is lovely.",
+          "japanese": "ありがとう！すてきなお家だね。",
+          "feedback": "家をほめるのは、いい会話のきっかけになります。",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "Excuse me for disturbing you.",
+          "japanese": "お邪魔します（お邪魔してすみません）。",
+          "feedback": "「お邪魔します」を直訳すると、本当に迷惑をかけているように聞こえます。Thanks for having me. が自然です。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "friend",
+      "english": "Can I get you a drink? There’s juice, beer or wine.",
+      "japanese": "何か飲む？ジュースとビールとワインがあるよ。",
+      "audio": "audio/en/scenario/dinner-at-friends-n2.mp3",
+      "audioHint": "Can I get you a drink? There’s juice, beer or wine.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "A glass of wine would be lovely, thanks.",
+          "japanese": "ワインを一杯もらえるとうれしいな。",
+          "feedback": "… would be lovely は、ていねいで感じのいい頼み方です。",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "english": "Just water for me, thanks. I’m driving.",
+          "japanese": "水だけでいいよ、ありがとう。車なんだ。",
+          "feedback": "ニュージーランドは飲酒運転にとても厳しいので、よくある返事です。",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "english": "Anything.",
+          "japanese": "何でも。",
+          "feedback": "遠慮のつもりでも、決める手間を相手にかけてしまいます。好きなものを一つ選びましょう。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "friend",
+      "english": "Dinner’s ready. Help yourself to salad and bread.",
+      "japanese": "夕食できたよ。サラダとパンは自由に取ってね。",
+      "audio": "audio/en/scenario/dinner-at-friends-n3.mp3",
+      "audioHint": "Dinner’s ready. Help yourself to salad and bread.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "This looks amazing!",
+          "japanese": "すごくおいしそう！",
+          "feedback": "料理をほめるのは、作った人へのいちばんのお礼です。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "Thanks. Is there anything I can do to help?",
+          "japanese": "ありがとう。何か手伝えることある？",
+          "feedback": "手伝いを申し出るのは、いいマナーです。",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "english": "OK, I will help you.",
+          "japanese": "わかった、手伝うね。",
+          "feedback": "Help yourself. は「ご自由に取ってね」という意味で、手伝いを頼まれたわけではありません。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "friend",
+      "english": "So, how are you finding life in New Zealand?",
+      "japanese": "それで、ニュージーランドの暮らしはどう？",
+      "audio": "audio/en/scenario/dinner-at-friends-n4.mp3",
+      "audioHint": "So, how are you finding life in New Zealand?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "I love it. Everyone’s so friendly.",
+          "japanese": "大好き。みんなすごく気さくだし。",
+          "feedback": "気持ちと理由を伝えています。",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "english": "It’s great, but I miss Japanese food sometimes.",
+          "japanese": "すごくいいよ。でも時々、日本食が恋しくなる。",
+          "feedback": "miss は「〜が恋しい」。正直な気持ちは会話を深めます。",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "english": "Good.",
+          "japanese": "いいです。",
+          "feedback": "一言だけだと話が続きません。理由や例を一つ足しましょう。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "friend",
+      "english": "Would you like some more? There’s plenty.",
+      "japanese": "おかわりする？たくさんあるよ。",
+      "audio": "audio/en/scenario/dinner-at-friends-n5.mp3",
+      "audioHint": "Would you like some more? There’s plenty.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "I’m full, thanks. It was delicious.",
+          "japanese": "おなかいっぱい、ありがとう。おいしかった。",
+          "feedback": "断る時も、料理をほめるとやわらかくなります。",
+          "next": "n6"
+        },
+        {
+          "quality": "good",
+          "english": "Just a little, thanks. It’s really good.",
+          "japanese": "少しだけ、ありがとう。本当においしい。",
+          "feedback": "Just a little で控えめに。",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "english": "No.",
+          "japanese": "いいえ。",
+          "feedback": "No, thanks. の thanks だけでも、ずいぶん感じがよくなります。",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "friend",
+      "english": "It’s getting late. Thanks so much for coming!",
+      "japanese": "もう遅くなっちゃったね。来てくれてありがとう！",
+      "audio": "audio/en/scenario/dinner-at-friends-n6.mp3",
+      "audioHint": "It’s getting late. Thanks so much for coming!",
+      "options": [
+        {
+          "phraseId": "fri-06",
+          "quality": "good",
+          "feedback": "帰る時のお礼の決まり文句です。",
+          "next": "end"
+        },
+        {
+          "phraseId": "fri-10",
+          "quality": "good",
+          "feedback": "楽しかった気持ちが伝わります。",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "english": "OK, goodbye.",
+          "japanese": "では、さようなら。",
+          "feedback": "goodbye はやや改まって聞こえます。See you!、Thanks again! などがふつうです。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "japanese": "楽しい夕食でした。Thanks for having me.、料理をほめること、Help yourself. の意味。ニュージーランドの家庭に招かれた時は、この3つを覚えておけば安心です。",
+      "end": true,
+      "options": []
+    }
+  }
+}

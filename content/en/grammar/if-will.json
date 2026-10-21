@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-if-will",
+  "connector": "If …, I’ll …",
+  "gloss": "もし〜なら（ありえること）",
+  "title": "If it rains, … — もし〜なら（起こりそうなこと）",
+  "pattern": "If ＋ 現在形, will ＋ 原形",
+  "explanation": "本当に起こりそうなことの「もし〜なら」は、if の後を現在形にして、結果を will で言います：If it rains, we’ll stay home.（雨が降ったら家にいよう）。日本語では「降ったら」と言いますが、英語では if の後は、未来のことでも現在形です。",
+  "natural": "予定を立てる時に：If you’re free, let’s have lunch.（あいていたら、お昼食べよう）",
+  "stiff": "if の後に will を入れるのはまちがい：If it will rain … ではなく If it rains …。",
+  "examples": [
+    {
+      "id": "gx-if-will-1",
+      "english": "If it rains, we’ll stay home.",
+      "japanese": "雨が降ったら、家にいよう。",
+      "chunks": [
+        {
+          "t": "If it rains, ",
+          "w": "w-rain"
+        },
+        {
+          "t": "we’ll stay home."
+        }
+      ],
+      "gap": {
+        "before": "If it ",
+        "answer": "rains",
+        "after": ", we’ll stay home.",
+        "options": [
+          "rains",
+          "will rain",
+          "rained"
+        ],
+        "why": "if の後は、未来のことでも現在形。"
+      },
+      "audio": "audio/en/grammar/gx-if-will-1.mp3",
+      "tags": [
+        "文法",
+        "If …, I’ll …"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-if-will-2",
+      "english": "If you’re free, let’s have lunch.",
+      "japanese": "あいていたら、お昼を食べよう。",
+      "chunks": [
+        {
+          "t": "If you’re free, "
+        },
+        {
+          "t": "let’s have lunch.",
+          "w": "w-have"
+        }
+      ],
+      "gap": {
+        "before": "If you’re free, ",
+        "answer": "let’s",
+        "after": " have lunch.",
+        "options": [
+          "let’s",
+          "let",
+          "will"
+        ],
+        "why": "提案は let’s ＋ 原形。"
+      },
+      "audio": "audio/en/grammar/gx-if-will-2.mp3",
+      "tags": [
+        "文法",
+        "If …, I’ll …"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-if-will-3",
+      "english": "I’ll call you if I get lost.",
+      "japanese": "道に迷ったら電話するね。",
+      "chunks": [
+        {
+          "t": "I’ll call you ",
+          "w": "w-call"
+        },
+        {
+          "t": "if I get lost.",
+          "w": "w-lost"
+        }
+      ],
+      "gap": {
+        "before": "I’ll call you if I ",
+        "answer": "get",
+        "after": " lost.",
+        "options": [
+          "get",
+          "will get",
+          "got"
+        ],
+        "why": "if の後は現在形。"
+      },
+      "audio": "audio/en/grammar/gx-if-will-3.mp3",
+      "tags": [
+        "文法",
+        "If …, I’ll …"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-if-will-4",
+      "english": "If you don’t hurry, you’ll miss the train.",
+      "japanese": "急がないと、電車に乗り遅れるよ。",
+      "chunks": [
+        {
+          "t": "If you don’t hurry, "
+        },
+        {
+          "t": "you’ll miss ",
+          "w": "w-miss"
+        },
+        {
+          "t": "the train."
+        }
+      ],
+      "gap": {
+        "before": "If you don’t hurry, ",
+        "answer": "you’ll",
+        "after": " miss the train.",
+        "options": [
+          "you’ll",
+          "you",
+          "you would"
+        ],
+        "why": "結果のほうは will（you’ll）。"
+      },
+      "audio": "audio/en/grammar/gx-if-will-4.mp3",
+      "tags": [
+        "文法",
+        "If …, I’ll …"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

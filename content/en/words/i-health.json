@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-health",
+  "title": "体と健康",
+  "description": "頭痛、のどの痛み、処方箋、予約。病院や薬局で症状を伝えるための言葉。",
+  "items": [
+    {
+      "id": "w-headache",
+      "english": "headache",
+      "japanese": "頭痛",
+      "pos": "noun",
+      "registerNotes": "I’ve got a headache.（頭が痛いです）",
+      "audio": "audio/en/words/w-headache.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-stomach-ache",
+      "english": "stomach ache",
+      "japanese": "腹痛",
+      "pos": "noun",
+      "registerNotes": "stomach は「ストマック」と発音。",
+      "audio": "audio/en/words/w-stomach-ache.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sore-throat",
+      "english": "sore throat",
+      "japanese": "のどの痛み",
+      "pos": "noun",
+      "registerNotes": "I’ve got a sore throat.（のどが痛いです）",
+      "audio": "audio/en/words/w-sore-throat.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-cough",
+      "english": "cough",
+      "japanese": "咳、咳をする",
+      "pos": "noun",
+      "registerNotes": "発音は「コフ」。",
+      "audio": "audio/en/words/w-cough.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-fever",
+      "english": "fever",
+      "japanese": "熱",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドでは I’ve got a temperature. ともよく言います。",
+      "audio": "audio/en/words/w-fever.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-a-cold",
+      "english": "a cold",
+      "japanese": "風邪",
+      "pos": "noun",
+      "registerNotes": "I’ve got a cold.（風邪をひいています）",
+      "pitfallNote": "a を忘れると cold（寒い）の意味に聞こえます。",
+      "audio": "audio/en/words/w-a-cold.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-flu",
+      "english": "flu",
+      "japanese": "インフルエンザ",
+      "pos": "noun",
+      "registerNotes": "the flu（インフルエンザ）",
+      "audio": "audio/en/words/w-flu.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sick",
+      "english": "sick",
+      "japanese": "具合が悪い、病気の",
+      "pos": "adjective",
+      "registerNotes": "feel sick は「吐き気がする」の意味になることも多い。",
+      "audio": "audio/en/words/w-sick.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hurt",
+      "english": "hurt",
+      "japanese": "痛む、けがをする",
+      "pos": "verb",
+      "registerNotes": "My back hurts.（腰が痛い）、I hurt my knee.（ひざをけがした）",
+      "pitfallNote": "日本語の「痛い」は形容詞ですが、英語では hurt（動詞）か sore（形容詞）を使います。",
+      "audio": "audio/en/words/w-hurt.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-injury",
+      "english": "injury",
+      "japanese": "けが",
+      "pos": "noun",
+      "audio": "audio/en/words/w-injury.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pain",
+      "english": "pain",
+      "japanese": "痛み",
+      "pos": "noun",
+      "registerNotes": "a sharp pain（鋭い痛み）",
+      "audio": "audio/en/words/w-pain.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-medicine",
+      "english": "medicine",
+      "japanese": "薬",
+      "pos": "noun",
+      "registerNotes": "take medicine（薬を飲む）",
+      "pitfallNote": "「薬を飲む」は drink ではなく take。",
+      "audio": "audio/en/words/w-medicine.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-prescription",
+      "english": "prescription",
+      "japanese": "処方箋、処方薬",
+      "pos": "noun",
+      "audio": "audio/en/words/w-prescription.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pharmacy",
+      "english": "pharmacy",
+      "japanese": "薬局",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドでは chemist とも言います。",
+      "audio": "audio/en/words/w-pharmacy.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-doctor",
+      "english": "doctor",
+      "japanese": "医者",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドでは、かかりつけの医者を GP と言います。",
+      "audio": "audio/en/words/w-doctor.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-appointment",
+      "english": "appointment",
+      "japanese": "（病院などの）予約",
+      "pos": "noun",
+      "registerNotes": "I’d like to make an appointment.（予約をしたいのですが）",
+      "pitfallNote": "レストランやホテルは booking。病院、美容院、役所は appointment。",
+      "audio": "audio/en/words/w-appointment.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-symptom",
+      "english": "symptom",
+      "japanese": "症状",
+      "pos": "noun",
+      "audio": "audio/en/words/w-symptom.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-dizzy",
+      "english": "dizzy",
+      "japanese": "めまいがする",
+      "pos": "adjective",
+      "registerNotes": "I feel dizzy.（めまいがします）",
+      "audio": "audio/en/words/w-dizzy.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-rash",
+      "english": "rash",
+      "japanese": "発疹、かぶれ",
+      "pos": "noun",
+      "audio": "audio/en/words/w-rash.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-swollen",
+      "english": "swollen",
+      "japanese": "腫れている",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-swollen.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-blood",
+      "english": "blood",
+      "japanese": "血",
+      "pos": "noun",
+      "registerNotes": "発音は「ブラッド」。",
+      "audio": "audio/en/words/w-blood.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tablet",
+      "english": "tablet",
+      "japanese": "錠剤",
+      "pos": "noun",
+      "registerNotes": "Take two tablets.（2錠飲んでください）",
+      "pitfallNote": "「タブレット端末」の意味もありますが、薬局では錠剤のこと。",
+      "audio": "audio/en/words/w-tablet.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-get-better",
+      "english": "get better",
+      "japanese": "よくなる、回復する",
+      "pos": "phrase",
+      "registerNotes": "Get better soon!（早くよくなってね）",
+      "audio": "audio/en/words/w-get-better.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-rest",
+      "english": "rest",
+      "japanese": "休む、休息",
+      "pos": "verb",
+      "registerNotes": "Get some rest.（ゆっくり休んでね）",
+      "audio": "audio/en/words/w-rest.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-back",
+      "english": "back",
+      "japanese": "背中、腰",
+      "pos": "noun",
+      "registerNotes": "back pain（腰痛、背中の痛み）",
+      "audio": "audio/en/words/w-back.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-ambulance",
+      "english": "ambulance",
+      "japanese": "救急車",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドの緊急番号は 111。",
+      "audio": "audio/en/words/w-ambulance.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-might",
+  "connector": "might",
+  "gloss": "〜かもしれない",
+  "title": "might, may, could — 〜かもしれない",
+  "pattern": "It might … ／ I may … ／ It could …",
+  "explanation": "「〜かもしれない」は might ＋ 原形。may も同じ意味で、少しかたい言い方。could は「〜という可能性もある」。どれも確信は半分くらいです：It might rain later.（後で雨が降るかも）、I might be late.（遅れるかもしれない）。",
+  "natural": "予定がはっきりしない時の返事に：I might come.（行けるかも）。Maybe I’ll come. とも言えます。",
+  "stiff": "might の後に to はつきません：I might to go. はまちがいで、I might go.",
+  "examples": [
+    {
+      "id": "gx-might-1",
+      "english": "It might rain later.",
+      "japanese": "後で雨が降るかもしれません。",
+      "chunks": [
+        {
+          "t": "It might rain ",
+          "w": "w-rain"
+        },
+        {
+          "t": "later."
+        }
+      ],
+      "gap": {
+        "before": "It ",
+        "answer": "might",
+        "after": " rain later.",
+        "options": [
+          "might",
+          "must",
+          "should"
+        ],
+        "why": "「〜かもしれない」は might。"
+      },
+      "audio": "audio/en/grammar/gx-might-1.mp3",
+      "tags": [
+        "文法",
+        "might"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-might-2",
+      "english": "I might be a bit late.",
+      "japanese": "ちょっと遅れるかもしれません。",
+      "chunks": [
+        {
+          "t": "I might be "
+        },
+        {
+          "t": "a bit "
+        },
+        {
+          "t": "late.",
+          "w": "w-late"
+        }
+      ],
+      "gap": {
+        "before": "I might ",
+        "answer": "be",
+        "after": " a bit late.",
+        "options": [
+          "be",
+          "to be",
+          "am"
+        ],
+        "why": "might の後は動詞の原形（am ではなく be）。"
+      },
+      "audio": "audio/en/grammar/gx-might-2.mp3",
+      "tags": [
+        "文法",
+        "might"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-might-3",
+      "english": "That could be our bus.",
+      "japanese": "あれが私たちのバスかもね。",
+      "chunks": [
+        {
+          "t": "That could be ",
+          "w": "w-that"
+        },
+        {
+          "t": "our bus."
+        }
+      ],
+      "gap": {
+        "before": "That ",
+        "answer": "could",
+        "after": " be our bus.",
+        "options": [
+          "could",
+          "can",
+          "did"
+        ],
+        "why": "可能性の「〜かもしれない」には could も使えます。"
+      },
+      "audio": "audio/en/grammar/gx-might-3.mp3",
+      "tags": [
+        "文法",
+        "might"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-might-4",
+      "english": "You may need a jacket tonight.",
+      "japanese": "今夜は上着が要るかもしれません。",
+      "chunks": [
+        {
+          "t": "You may need ",
+          "w": "w-need"
+        },
+        {
+          "t": "a jacket ",
+          "w": "w-jacket"
+        },
+        {
+          "t": "tonight."
+        }
+      ],
+      "gap": {
+        "before": "You ",
+        "answer": "may",
+        "after": " need a jacket tonight.",
+        "options": [
+          "may",
+          "might",
+          "must"
+        ],
+        "ok": [
+          "might"
+        ],
+        "note": "might でも同じ意味。会話では might のほうがよく使います。",
+        "why": "may も「〜かもしれない」。might より少しかたい言い方です。"
+      },
+      "audio": "audio/en/grammar/gx-might-4.mp3",
+      "tags": [
+        "文法",
+        "might"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

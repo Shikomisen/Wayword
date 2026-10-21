@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "making-plans",
+  "title": "友だちと予定を立てる",
+  "category": "plans",
+  "setting": "語学交換で知り合ったニュージーランド人の友だち、ジェスから電話がかかってきました。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "friend",
+      "english": "Hey! Are you free this weekend?",
+      "japanese": "ねえ！今週末あいてる？",
+      "audio": "audio/en/scenario/making-plans-n1.mp3",
+      "audioHint": "Hey! Are you free this weekend?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "I’m free on Saturday. Why?",
+          "japanese": "土曜日ならあいてるよ。どうして？",
+          "feedback": "あいている日を伝えて、理由を聞き返しています。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "I think so. What’s up?",
+          "japanese": "たぶんね。どうしたの？",
+          "feedback": "What’s up? は「どうしたの？」のくだけた言い方です。",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "Yes, I am free.",
+          "japanese": "はい、私はあいています。",
+          "feedback": "正しいですが、友だち同士にはかたい言い方です。I’m free! で十分。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "friend",
+      "english": "A few of us are going tramping on Saturday. Do you want to come?",
+      "japanese": "土曜日に何人かでトランピングに行くんだ。一緒に来ない？",
+      "audio": "audio/en/scenario/making-plans-n2.mp3",
+      "audioHint": "A few of us are going tramping on Saturday. Do you want to come?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "I’d love to! Where are you going?",
+          "japanese": "行きたい！どこに行くの？",
+          "feedback": "気持ちを伝えて、質問で会話を広げています。",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "english": "What’s tramping?",
+          "japanese": "トランピングって何？",
+          "feedback": "わからない言葉は聞いていいんです。tramping はニュージーランド英語でハイキングのこと。",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "english": "I don’t like walking.",
+          "japanese": "歩くのは好きじゃない。",
+          "feedback": "本音でも、それだけだと会話が終わってしまいます。断るなら I’d love to, but … と気持ちを見せてから。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "friend",
+      "english": "We’re going to leave at seven, if that’s OK.",
+      "japanese": "7時に出発するつもりなんだけど、大丈夫？",
+      "audio": "audio/en/scenario/making-plans-n3.mp3",
+      "audioHint": "We’re going to leave at seven, if that’s OK.",
+      "options": [
+        {
+          "phraseId": "pla-05",
+          "quality": "good",
+          "feedback": "提案に賛成する、自然な返事です。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "Seven’s a bit early for me. How about eight?",
+          "japanese": "7時はちょっと早いな。8時はどう？",
+          "feedback": "How about …? で別の時間を提案しています。",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "english": "Seven? You’re crazy.",
+          "japanese": "7時？正気？",
+          "feedback": "冗談のつもりでも、きつく聞こえることがあります。That’s early! くらいがちょうどいいです。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "friend",
+      "english": "Cool. Can you bring some snacks? We’ll sort out lunch.",
+      "japanese": "よかった。おやつを持ってきてくれる？お昼はこっちで用意するから。",
+      "audio": "audio/en/scenario/making-plans-n4.mp3",
+      "audioHint": "Cool. Can you bring some snacks? We’ll sort out lunch.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Sure! Do I need to bring anything else?",
+          "japanese": "もちろん！ほかに持っていくものはある？",
+          "feedback": "持ち物を確認するのは、いい心づかいです。",
+          "next": "n5"
+        },
+        {
+          "phraseId": "pla-09",
+          "quality": "good",
+          "feedback": "待ち合わせ場所を決めるのも大事です。",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "english": "Snacks? I don’t have snacks.",
+          "japanese": "おやつ？持ってないよ。",
+          "feedback": "bring は「持ってくる」。今持っているかではなく、当日持ってきてほしいという意味です。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "friend",
+      "english": "Awesome. I’ll text you the details tonight. See you Saturday!",
+      "japanese": "最高。今夜詳しいことをメッセージするね。じゃあ土曜日に！",
+      "audio": "audio/en/scenario/making-plans-n5.mp3",
+      "audioHint": "Awesome. I’ll text you the details tonight. See you Saturday!",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Thanks for inviting me. I’m really looking forward to it!",
+          "japanese": "誘ってくれてありがとう。すごく楽しみ！",
+          "feedback": "お礼と楽しみな気持ちが伝わる、すてきな返事です。",
+          "next": "end"
+        },
+        {
+          "phraseId": "pla-10",
+          "quality": "good",
+          "feedback": "待ち合わせが決まった時のひとこと。",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "english": "OK. Bye.",
+          "japanese": "OK。バイ。",
+          "feedback": "まちがいではありませんが、そっけなく聞こえます。誘ってもらったお礼を一言。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "japanese": "予定が決まりました。誘う、時間を決める、持ち物を確認する、お礼を言う。予定決めはこの流れで進みます。",
+      "end": true,
+      "options": []
+    }
+  }
+}

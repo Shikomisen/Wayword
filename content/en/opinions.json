@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "opinions",
+  "title": "意見を言う・賛成と反対",
+  "order": 13,
+  "description": "自分の考えを言う、やわらかく反対する、選ぶ。会話で意見を交わすためのひとこと。",
+  "phrases": [
+    {
+      "id": "opi-01",
+      "english": "I think so too.",
+      "japanese": "私もそう思う。",
+      "registerNotes": "賛成のいちばん簡単な言い方。くだけて Me too! とも。",
+      "audio": "audio/en/opi-01.mp3",
+      "audioHint": "I think so too.",
+      "tags": [
+        "賛成",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-02",
+      "english": "I’m not so sure about that.",
+      "japanese": "それはどうかなあ。",
+      "registerNotes": "やわらかい反対の言い方。I disagree. より角が立ちません。",
+      "audio": "audio/en/opi-02.mp3",
+      "audioHint": "I’m not so sure about that.",
+      "tags": [
+        "反対"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-03",
+      "english": "What do you reckon?",
+      "japanese": "どう思う？",
+      "registerNotes": "reckon は think のくだけた言い方で、ニュージーランドでとてもよく使います。",
+      "audio": "audio/en/opi-03.mp3",
+      "audioHint": "What do you reckon?",
+      "tags": [
+        "意見を聞く"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-04",
+      "english": "To be honest, I’m not a big fan.",
+      "japanese": "正直、あまり好きじゃないんだ。",
+      "registerNotes": "not a big fan で「好きじゃない」をやわらかく言えます。",
+      "audio": "audio/en/opi-04.mp3",
+      "audioHint": "To be honest, I’m not a big fan.",
+      "tags": [
+        "好み"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-05",
+      "english": "It’s not my cup of tea.",
+      "japanese": "私の好みじゃないかな。",
+      "registerNotes": "「好みではない」の遠回しな言い方。紅茶の話ではありません。",
+      "audio": "audio/en/opi-05.mp3",
+      "audioHint": "It’s not my cup of tea.",
+      "tags": [
+        "好み"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "opi-06",
+      "english": "You’ve got a point.",
+      "japanese": "確かに一理あるね。",
+      "registerNotes": "相手の意見の一部を認める時。",
+      "audio": "audio/en/opi-06.mp3",
+      "audioHint": "You’ve got a point.",
+      "tags": [
+        "賛成"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-07",
+      "english": "I see what you mean, but…",
+      "japanese": "言いたいことはわかるけど…",
+      "registerNotes": "まず相手を認めてから反対する、いちばんていねいな形。",
+      "audio": "audio/en/opi-07.mp3",
+      "audioHint": "I see what you mean, but…",
+      "tags": [
+        "反対"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-08",
+      "english": "I totally agree.",
+      "japanese": "完全に賛成。",
+      "registerNotes": "totally で「完全に」と強めます。",
+      "pitfallNote": "I’m totally agree. はまちがい。agree は動詞です。",
+      "audio": "audio/en/opi-08.mp3",
+      "audioHint": "I totally agree.",
+      "tags": [
+        "賛成"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-09",
+      "english": "It depends on the price.",
+      "japanese": "値段によるね。",
+      "registerNotes": "It depends on … で「〜次第」。It depends. だけでも使えます。",
+      "audio": "audio/en/opi-09.mp3",
+      "audioHint": "It depends on the price.",
+      "tags": [
+        "考える"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-10",
+      "english": "Either is fine with me.",
+      "japanese": "どっちでもいいよ。",
+      "registerNotes": "2つのうちどちらでもいい時。3つ以上なら Any of them is fine.",
+      "audio": "audio/en/opi-10.mp3",
+      "audioHint": "Either is fine with me.",
+      "tags": [
+        "選ぶ"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-11",
+      "english": "I’d go for the cheaper one.",
+      "japanese": "私なら安いほうにするかな。",
+      "registerNotes": "I’d go for … は「私なら〜を選ぶ」。おすすめする時にも。",
+      "audio": "audio/en/opi-11.mp3",
+      "audioHint": "I’d go for the cheaper one.",
+      "tags": [
+        "選ぶ"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-12",
+      "english": "That’s a good idea.",
+      "japanese": "いい考えだね。",
+      "registerNotes": "提案をほめる時。Good idea! だけでも。",
+      "audio": "audio/en/opi-12.mp3",
+      "audioHint": "That’s a good idea.",
+      "tags": [
+        "賛成"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

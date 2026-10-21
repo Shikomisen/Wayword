@@ -68,14 +68,13 @@ function pairButtons(pair, heardId = null) {
 export async function renderListening(root) {
   const state = await listeningState();
   const s = await studySettings();
-  const replies = state.sets.find((x) => x.kind === 'replies');
-  const contrasts = state.sets.find((x) => x.kind === 'contrasts');
-  const sounds = contrasts
-    ? [...new Map(contrasts.items.map((w) => [w.setId, w])).values()].map((first) => ({
-        sound: first.sound, note: first.note,
-        pairs: [...new Set(contrasts.items.filter((w) => w.setId === first.setId).map((w) => w.pair))],
-      }))
-    : [];
+  // A course can have several sets of each kind, one per level (README §6.8): each gets its section.
+  const repliesSets = state.sets.filter((x) => x.kind === 'replies');
+  const contrastSets = state.sets.filter((x) => x.kind === 'contrasts');
+  const soundsOf = (contrasts) => [...new Map(contrasts.items.map((w) => [w.setId, w])).values()].map((first) => ({
+    sound: first.sound, note: first.note,
+    pairs: [...new Set(contrasts.items.filter((w) => w.setId === first.setId).map((w) => w.pair))],
+  }));
 
   root.append(
     el('div', { class: 'screen listening' },
@@ -86,27 +85,25 @@ export async function renderListening(root) {
           t(state.doneToday ? 'listening.another' : 'listening.today')),
         el('p', { class: 'muted small' }, t('listening.rule', { streak: STREAK, days: DAYS }))),
 
-      replies
-        ? el('section', {},
-            el('h2', { class: 'section-title' }, `${replies.icon || ''} ${replies.title}`),
-            el('p', { class: 'muted small' }, replies.description),
-            el('div', { class: 'phrase-list' }, replies.items.map((item) =>
-              el('article', { class: 'phrase-card listen-line', dataset: { item: item.id } },
-                who(item.speaker) ? el('div', { class: 'dialogue-who' }, who(item.speaker)) : null,
-                el('div', { class: 'phrase-main' }, phraseBlock(item, s), audioButton(item, playItem)),
-                item.reply ? replyBlock(item.reply, s) : null,
-                item.note ? el('div', { class: 'notes' }, el('div', { class: 'note' }, item.note)) : null))))
-        : null,
+      repliesSets.map((replies) =>
+        el('section', { dataset: { set: replies.id } },
+          el('h2', { class: 'section-title' }, `${replies.icon || ''} ${replies.title}`),
+          el('p', { class: 'muted small' }, replies.description),
+          el('div', { class: 'phrase-list' }, replies.items.map((item) =>
+            el('article', { class: 'phrase-card listen-line', dataset: { item: item.id } },
+              who(item.speaker) ? el('div', { class: 'dialogue-who' }, who(item.speaker)) : null,
+              el('div', { class: 'phrase-main' }, phraseBlock(item, s), audioButton(item, playItem)),
+              item.reply ? replyBlock(item.reply, s) : null,
+              item.note ? el('div', { class: 'notes' }, el('div', { class: 'note' }, item.note)) : null))))),
 
-      contrasts
-        ? el('section', {},
-            el('h2', { class: 'section-title' }, `${contrasts.icon || ''} ${contrasts.title}`),
-            el('p', { class: 'muted small' }, contrasts.description),
-            sounds.map((x) => el('div', { class: 'contrast-set' },
-              el('h3', { class: 'contrast-sound' }, x.sound),
-              x.note ? el('p', { class: 'muted small' }, x.note) : null,
-              x.pairs.map((pair) => pairButtons(pair)))))
-        : null)
+      contrastSets.map((contrasts) =>
+        el('section', { dataset: { set: contrasts.id } },
+          el('h2', { class: 'section-title' }, `${contrasts.icon || ''} ${contrasts.title}`),
+          el('p', { class: 'muted small' }, contrasts.description),
+          soundsOf(contrasts).map((x) => el('div', { class: 'contrast-set' },
+            el('h3', { class: 'contrast-sound' }, x.sound),
+            x.note ? el('p', { class: 'muted small' }, x.note) : null,
+            x.pairs.map((pair) => pairButtons(pair)))))))
   );
 }
 

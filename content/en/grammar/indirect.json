@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-indirect",
+  "connector": "Do you know where…?",
+  "gloss": "ていねいな聞き方",
+  "title": "Do you know where…? — 遠回しに聞く",
+  "pattern": "Do you know / Could you tell me ＋ 疑問詞 ＋ 主語 ＋ 動詞",
+  "explanation": "Where is the station? を Do you know …? や Could you tell me …? の後に入れると、ぐっとていねいになります。その時、語順はふつうの文の順（主語 ＋ 動詞）に戻ります：Do you know where the station is?do・does・did も消えます：Could you tell me what time it starts?",
+  "natural": "知らない人に道や情報を聞く時に：Excuse me, do you know where the toilets are?",
+  "stiff": "Do you know where is the station? のように、疑問文の順のまま入れるのはよくあるまちがいです。",
+  "examples": [
+    {
+      "id": "gx-indirect-1",
+      "english": "Do you know where the toilets are?",
+      "japanese": "トイレがどこかわかりますか？",
+      "chunks": [
+        {
+          "t": "Do you know ",
+          "w": "w-know"
+        },
+        {
+          "t": "where the toilets are?",
+          "w": "w-where"
+        }
+      ],
+      "gap": {
+        "before": "Do you know where the toilets ",
+        "answer": "are",
+        "after": "?",
+        "options": [
+          "are",
+          "is",
+          "do"
+        ],
+        "why": "主語（the toilets）の後に動詞。toilets は複数なので are。"
+      },
+      "audio": "audio/en/grammar/gx-indirect-1.mp3",
+      "tags": [
+        "文法",
+        "Do you know where…?"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-indirect-2",
+      "english": "Could you tell me what time it starts?",
+      "japanese": "何時に始まるか教えてもらえますか？",
+      "chunks": [
+        {
+          "t": "Could you tell me ",
+          "w": "w-tell"
+        },
+        {
+          "t": "what time "
+        },
+        {
+          "t": "it starts?",
+          "w": "w-start"
+        }
+      ],
+      "gap": {
+        "before": "Could you tell me what time ",
+        "answer": "it starts",
+        "after": "?",
+        "options": [
+          "it starts",
+          "does it start",
+          "starts it"
+        ],
+        "why": "Could you tell me の後は、ふつうの文の順（it starts）。"
+      },
+      "audio": "audio/en/grammar/gx-indirect-2.mp3",
+      "tags": [
+        "文法",
+        "Do you know where…?"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-indirect-3",
+      "english": "I’m not sure how much it costs.",
+      "japanese": "いくらかかるのか、よくわかりません。",
+      "chunks": [
+        {
+          "t": "I’m not sure ",
+          "w": "w-sure"
+        },
+        {
+          "t": "how much "
+        },
+        {
+          "t": "it costs.",
+          "w": "w-cost"
+        }
+      ],
+      "gap": {
+        "before": "I’m not sure how much ",
+        "answer": "it costs",
+        "after": ".",
+        "options": [
+          "it costs",
+          "does it cost",
+          "costs it"
+        ],
+        "why": "「いくらか」も文の順で：how much it costs。"
+      },
+      "audio": "audio/en/grammar/gx-indirect-3.mp3",
+      "tags": [
+        "文法",
+        "Do you know where…?"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-indirect-4",
+      "english": "Do you know if this bus goes to the airport?",
+      "japanese": "このバスが空港に行くかどうか、わかりますか？",
+      "chunks": [
+        {
+          "t": "Do you know ",
+          "w": "w-know"
+        },
+        {
+          "t": "if this bus goes ",
+          "w": "w-go"
+        },
+        {
+          "t": "to the airport?"
+        }
+      ],
+      "gap": {
+        "before": "Do you know ",
+        "answer": "if",
+        "after": " this bus goes to the airport?",
+        "options": [
+          "if",
+          "that",
+          "what"
+        ],
+        "why": "yes・no で答える質問は if（〜かどうか）で入れます。"
+      },
+      "audio": "audio/en/grammar/gx-indirect-4.mp3",
+      "tags": [
+        "文法",
+        "Do you know where…?"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

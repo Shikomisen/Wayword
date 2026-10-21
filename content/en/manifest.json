@@ -61,6 +61,13 @@
       "icon": "🌿",
       "title": "基礎",
       "description": "お客さんとして困らない英語。カフェ・お店・交通・ホテルの言葉と表現、ていねいな頼み方と断り方、文と文をつなぐ言葉、それに聞き取りの練習。"
+    },
+    {
+      "id": "intermediate",
+      "icon": "🌳",
+      "title": "中級",
+      "description": "会話をもっと深く。自分の経験や予定、意見を話す、あいづちを打つ、友だちの家に招かれる、病院やホテルでトラブルを伝える。現在完了、will と going to、if、受け身などの文法と、ふだんのスピードの聞き取り。",
+      "placement": false
     }
   ],
   "groups": [
@@ -87,6 +94,14 @@
     {
       "id": "help",
       "title": "もしもの時"
+    },
+    {
+      "id": "talk",
+      "title": "会話を広げる"
+    },
+    {
+      "id": "life",
+      "title": "暮らし・もしもの時"
     }
   ],
   "categories": [
@@ -193,6 +208,67 @@
       "group": "basics",
       "level": "basic",
       "step": 8
+    },
+    {
+      "id": "reactions",
+      "order": 11,
+      "file": "content/en/reactions.json",
+      "title": "あいづち・反応",
+      "icon": "👂",
+      "group": "talk",
+      "level": "intermediate",
+      "step": 2,
+      "starter": true
+    },
+    {
+      "id": "plans",
+      "order": 12,
+      "file": "content/en/plans.json",
+      "title": "予定を立てる・誘う",
+      "icon": "📅",
+      "group": "talk",
+      "level": "intermediate",
+      "step": 6
+    },
+    {
+      "id": "opinions",
+      "order": 13,
+      "file": "content/en/opinions.json",
+      "title": "意見を言う・賛成と反対",
+      "icon": "💬",
+      "group": "talk",
+      "level": "intermediate",
+      "step": 8
+    },
+    {
+      "id": "friends",
+      "order": 14,
+      "file": "content/en/friends.json",
+      "title": "友だち・付き合い",
+      "icon": "🍻",
+      "group": "life",
+      "level": "intermediate",
+      "step": 10
+    },
+    {
+      "id": "doctor",
+      "order": 15,
+      "file": "content/en/doctor.json",
+      "title": "病院・薬局",
+      "icon": "🩺",
+      "group": "life",
+      "level": "intermediate",
+      "step": 12
+    },
+    {
+      "id": "problems",
+      "order": 16,
+      "file": "content/en/problems.json",
+      "title": "トラブル・苦情",
+      "icon": "🛠️",
+      "group": "life",
+      "level": "intermediate",
+      "step": 16
     }
   ],
   "decks": [
@@ -342,6 +418,108 @@
       "step": 8
     },
     {
+      "id": "words-i-feelings",
+      "kind": "words",
+      "order": 15,
+      "file": "content/en/words/i-feelings.json",
+      "title": "気持ち・反応",
+      "icon": "😮",
+      "level": "intermediate",
+      "step": 1,
+      "starter": true
+    },
+    {
+      "id": "words-i-people",
+      "kind": "words",
+      "order": 16,
+      "file": "content/en/words/i-people.json",
+      "title": "人の性格",
+      "icon": "🙂",
+      "level": "intermediate",
+      "step": 5
+    },
+    {
+      "id": "words-i-social",
+      "kind": "words",
+      "order": 17,
+      "file": "content/en/words/i-social.json",
+      "title": "付き合い・人間関係",
+      "icon": "🥂",
+      "level": "intermediate",
+      "step": 3,
+      "starter": true
+    },
+    {
+      "id": "words-i-opinions",
+      "kind": "words",
+      "order": 18,
+      "file": "content/en/words/i-opinions.json",
+      "title": "意見・考え",
+      "icon": "💭",
+      "level": "intermediate",
+      "step": 7
+    },
+    {
+      "id": "words-i-travel",
+      "kind": "words",
+      "order": 19,
+      "file": "content/en/words/i-travel.json",
+      "title": "旅行・観光",
+      "icon": "🧳",
+      "level": "intermediate",
+      "step": 9
+    },
+    {
+      "id": "words-i-health",
+      "kind": "words",
+      "order": 20,
+      "file": "content/en/words/i-health.json",
+      "title": "体と健康",
+      "icon": "🩺",
+      "level": "intermediate",
+      "step": 11
+    },
+    {
+      "id": "words-i-work",
+      "kind": "words",
+      "order": 21,
+      "file": "content/en/words/i-work.json",
+      "title": "仕事",
+      "icon": "💼",
+      "level": "intermediate",
+      "step": 13
+    },
+    {
+      "id": "words-i-home",
+      "kind": "words",
+      "order": 22,
+      "file": "content/en/words/i-home.json",
+      "title": "家・暮らし",
+      "icon": "🏡",
+      "level": "intermediate",
+      "step": 15
+    },
+    {
+      "id": "words-i-problems",
+      "kind": "words",
+      "order": 23,
+      "file": "content/en/words/i-problems.json",
+      "title": "トラブル・困ったこと",
+      "icon": "🛠️",
+      "level": "intermediate",
+      "step": 17
+    },
+    {
+      "id": "words-i-phrasal",
+      "kind": "words",
+      "order": 24,
+      "file": "content/en/words/i-phrasal.json",
+      "title": "句動詞（中級）",
+      "icon": "🔗",
+      "level": "intermediate",
+      "step": 18
+    },
+    {
       "id": "sentences-everyday",
       "kind": "sentences",
       "order": 9,
@@ -350,6 +528,26 @@
       "icon": "💬",
       "level": "basic",
       "step": 7
+    },
+    {
+      "id": "sentences-i-me",
+      "kind": "sentences",
+      "order": 10,
+      "file": "content/en/sentences/i-me.json",
+      "title": "自分のことを話す",
+      "icon": "🙋",
+      "level": "intermediate",
+      "step": 4
+    },
+    {
+      "id": "sentences-i-out",
+      "kind": "sentences",
+      "order": 11,
+      "file": "content/en/sentences/i-out.json",
+      "title": "外で頼む・困った時",
+      "icon": "🚶",
+      "level": "intermediate",
+      "step": 14
     }
   ],
   "drills": [
@@ -393,6 +591,31 @@
       "id": "order",
       "title": "語順・質問の形",
       "description": "日本語と順番がちがうところ。英語らしい語順と、質問や答えの形を練習します。"
+    },
+    {
+      "id": "tenses",
+      "title": "時制：経験・予定・昔のこと",
+      "description": "have been、will と going to、used to。いつのことかを正しく伝える形。"
+    },
+    {
+      "id": "modals",
+      "title": "助動詞：アドバイス・義務・可能性",
+      "description": "should、have to、might。「〜したほうがいい」「〜しなければ」「〜かも」。"
+    },
+    {
+      "id": "conditionals",
+      "title": "もしも",
+      "description": "if と wish。起こりそうな「もし」と、現実とちがう「もし」。"
+    },
+    {
+      "id": "structures",
+      "title": "文の組み立て",
+      "description": "比べる、〜すぎる、-ing と to、名詞の説明、受け身、〜させる。"
+    },
+    {
+      "id": "conversation",
+      "title": "会話の形",
+      "description": "ていねいに聞く、人の話を伝える、提案する、「私も」と言う。"
     }
   ],
   "lessons": [
@@ -779,6 +1002,182 @@
       "title": "It's … to … — 〜するのは…だ",
       "group": "order",
       "level": "basic"
+    },
+    {
+      "id": "gr-present-perfect",
+      "order": 49,
+      "file": "content/en/grammar/present-perfect.json",
+      "title": "Have you ever…? — 〜したことがある（現在完了）",
+      "group": "tenses",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-just-yet",
+      "order": 50,
+      "file": "content/en/grammar/just-yet.json",
+      "title": "just, already, yet — ちょうど〜した、もう、まだ",
+      "group": "tenses",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-past-continuous",
+      "order": 51,
+      "file": "content/en/grammar/past-continuous.json",
+      "title": "was / were ＋ -ing — 〜していた（過去進行形）",
+      "group": "tenses",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-future",
+      "order": 52,
+      "file": "content/en/grammar/future.json",
+      "title": "will, going to — 〜します、〜するつもり",
+      "group": "tenses",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-used-to",
+      "order": 53,
+      "file": "content/en/grammar/used-to.json",
+      "title": "used to — 前はよく〜した、前は〜だった",
+      "group": "tenses",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-should",
+      "order": 54,
+      "file": "content/en/grammar/should.json",
+      "title": "should, had better — 〜したほうがいい",
+      "group": "modals",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-have-to",
+      "order": 55,
+      "file": "content/en/grammar/have-to.json",
+      "title": "have to, must, don’t have to — しなければ、しなくていい",
+      "group": "modals",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-might",
+      "order": 56,
+      "file": "content/en/grammar/might.json",
+      "title": "might, may, could — 〜かもしれない",
+      "group": "modals",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-if-will",
+      "order": 57,
+      "file": "content/en/grammar/if-will.json",
+      "title": "If it rains, … — もし〜なら（起こりそうなこと）",
+      "group": "conditionals",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-if-would",
+      "order": 58,
+      "file": "content/en/grammar/if-would.json",
+      "title": "If I had…, I’d… — もし〜だったら（現実とちがうこと）",
+      "group": "conditionals",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-wish",
+      "order": 59,
+      "file": "content/en/grammar/wish.json",
+      "title": "I wish… — 〜だったらいいのに",
+      "group": "conditionals",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-comparing",
+      "order": 60,
+      "file": "content/en/grammar/comparing.json",
+      "title": "bigger, the biggest — 比べる（比較級・最上級）",
+      "group": "structures",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-too-enough",
+      "order": 61,
+      "file": "content/en/grammar/too-enough.json",
+      "title": "too, enough — 〜すぎる、十分〜",
+      "group": "structures",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-ing-to",
+      "order": 62,
+      "file": "content/en/grammar/ing-to.json",
+      "title": "enjoy -ing, decide to — -ing と to の使い分け",
+      "group": "structures",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-relative",
+      "order": 63,
+      "file": "content/en/grammar/relative.json",
+      "title": "the man who…, the café where… — 名詞を後ろから説明する",
+      "group": "structures",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-so-such",
+      "order": 64,
+      "file": "content/en/grammar/so-such.json",
+      "title": "so, such — とても〜、〜すぎて…",
+      "group": "structures",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-passive",
+      "order": 65,
+      "file": "content/en/grammar/passive.json",
+      "title": "It’s made in… — 〜される、〜された（受け身）",
+      "group": "structures",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-make-let",
+      "order": 66,
+      "file": "content/en/grammar/make-let.json",
+      "title": "make, let, get — 〜させる、〜させてくれる",
+      "group": "structures",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-indirect",
+      "order": 67,
+      "file": "content/en/grammar/indirect.json",
+      "title": "Do you know where…? — 遠回しに聞く",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-reported",
+      "order": 68,
+      "file": "content/en/grammar/reported.json",
+      "title": "She said…, He told me… — 人の話を伝える",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-suggestions",
+      "order": 69,
+      "file": "content/en/grammar/suggestions.json",
+      "title": "Why don’t we…?, How about…? — 提案する",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-so-do-i",
+      "order": 70,
+      "file": "content/en/grammar/so-do-i.json",
+      "title": "So do I, Neither do I — 私も、私も〜ない",
+      "group": "conversation",
+      "level": "intermediate"
     }
   ],
   "listening": [
@@ -797,6 +1196,14 @@
       "title": "どっちに聞こえた？",
       "icon": "🎧",
       "level": "first-steps"
+    },
+    {
+      "id": "replies-more",
+      "kind": "replies",
+      "file": "content/en/listening/replies-more.json",
+      "title": "もっと聞き取る",
+      "icon": "🎧",
+      "level": "intermediate"
     }
   ],
   "characterSets": [],
@@ -856,6 +1263,54 @@
       "icon": "🏨",
       "category": "hotel",
       "level": "basic"
+    },
+    {
+      "id": "gp",
+      "file": "content/en/scenarios/gp.json",
+      "title": "クリニック（GP）にかかる",
+      "icon": "🩺",
+      "category": "doctor",
+      "level": "intermediate"
+    },
+    {
+      "id": "return-faulty",
+      "file": "content/en/scenarios/return-faulty.json",
+      "title": "不良品を返品する",
+      "icon": "🧾",
+      "category": "problems",
+      "level": "intermediate"
+    },
+    {
+      "id": "hotel-problem",
+      "file": "content/en/scenarios/hotel-problem.json",
+      "title": "ホテルの部屋のトラブル",
+      "icon": "🏨",
+      "category": "problems",
+      "level": "intermediate"
+    },
+    {
+      "id": "making-plans",
+      "file": "content/en/scenarios/making-plans.json",
+      "title": "友だちと予定を立てる",
+      "icon": "📅",
+      "category": "plans",
+      "level": "intermediate"
+    },
+    {
+      "id": "dinner-at-friends",
+      "file": "content/en/scenarios/dinner-at-friends.json",
+      "title": "友だちの家で夕食",
+      "icon": "🍽️",
+      "category": "friends",
+      "level": "intermediate"
+    },
+    {
+      "id": "bus-stop-chat",
+      "file": "content/en/scenarios/bus-stop-chat.json",
+      "title": "バス停での世間話",
+      "icon": "🚏",
+      "category": "reactions",
+      "level": "intermediate"
     }
   ]
 }

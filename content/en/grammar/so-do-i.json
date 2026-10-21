@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-so-do-i",
+  "connector": "So do I",
+  "gloss": "私も（同じだと言う）",
+  "title": "So do I, Neither do I — 私も、私も〜ない",
+  "pattern": "So do / am / have I. ／ Neither do / am I. ／ Me too. ／ Me neither.",
+  "explanation": "「私も」は、相手の文の動詞に合わせて So ＋ 動詞 ＋ I：I love it. → So do I.、I’m tired. → So am I.否定の「私も〜ない」は Neither ＋ 動詞 ＋ I：I don’t like it. → Neither do I.くだけて Me too.、Me neither. でも大丈夫です。",
+  "natural": "共感して会話を広げる時に：I’m from Osaka. — Oh, so am I!（大阪出身なんだ — えっ、私も！）",
+  "stiff": "否定文に Me too. と答えるのはまちがい。I don’t eat meat. — Me neither.（私も食べない）",
+  "examples": [
+    {
+      "id": "gx-so-do-i-1",
+      "english": "I love this song. — So do I!",
+      "japanese": "この曲大好き。— 私も！",
+      "chunks": [
+        {
+          "t": "I love ",
+          "w": "w-love"
+        },
+        {
+          "t": "this song. "
+        },
+        {
+          "t": "— So do I!"
+        }
+      ],
+      "gap": {
+        "before": "I love this song. — So ",
+        "answer": "do",
+        "after": " I!",
+        "options": [
+          "do",
+          "am",
+          "love"
+        ],
+        "why": "love（一般動詞）には So do I。"
+      },
+      "audio": "audio/en/grammar/gx-so-do-i-1.mp3",
+      "tags": [
+        "文法",
+        "So do I"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-so-do-i-2",
+      "english": "I’m so tired. — So am I.",
+      "japanese": "すごく疲れた。— 私も。",
+      "chunks": [
+        {
+          "t": "I’m so "
+        },
+        {
+          "t": "tired. ",
+          "w": "w-tired"
+        },
+        {
+          "t": "— So am I."
+        }
+      ],
+      "gap": {
+        "before": "I’m so tired. — So ",
+        "answer": "am",
+        "after": " I.",
+        "options": [
+          "am",
+          "do",
+          "have"
+        ],
+        "why": "be動詞（I’m）には So am I。"
+      },
+      "audio": "audio/en/grammar/gx-so-do-i-2.mp3",
+      "tags": [
+        "文法",
+        "So do I"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-so-do-i-3",
+      "english": "I don’t eat meat. — Neither do I.",
+      "japanese": "肉は食べないんです。— 私もです。",
+      "chunks": [
+        {
+          "t": "I don’t eat ",
+          "w": "w-eat"
+        },
+        {
+          "t": "meat. "
+        },
+        {
+          "t": "— Neither do I."
+        }
+      ],
+      "gap": {
+        "before": "I don’t eat meat. — ",
+        "answer": "Neither",
+        "after": " do I.",
+        "options": [
+          "Neither",
+          "So",
+          "Too"
+        ],
+        "why": "否定の「私も〜ない」は Neither。"
+      },
+      "audio": "audio/en/grammar/gx-so-do-i-3.mp3",
+      "tags": [
+        "文法",
+        "So do I"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-so-do-i-4",
+      "english": "I’ve never been there. — Me neither.",
+      "japanese": "そこには行ったことがない。— 私も。",
+      "chunks": [
+        {
+          "t": "I’ve never been "
+        },
+        {
+          "t": "there. ",
+          "w": "w-there"
+        },
+        {
+          "t": "— Me neither."
+        }
+      ],
+      "gap": {
+        "before": "I’ve never been there. — Me ",
+        "answer": "neither",
+        "after": ".",
+        "options": [
+          "neither",
+          "too",
+          "either"
+        ],
+        "ok": [
+          "either"
+        ],
+        "note": "Me either. もアメリカなどで聞きますが、Me neither. がふつうです。",
+        "why": "否定への「私も」は、くだけて Me neither。"
+      },
+      "audio": "audio/en/grammar/gx-so-do-i-4.mp3",
+      "tags": [
+        "文法",
+        "So do I"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

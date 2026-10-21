@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-people",
+  "title": "人の性格",
+  "description": "優しい、まじめ、おおらか。人を紹介したり、どんな人か話したりする時の言葉。",
+  "items": [
+    {
+      "id": "w-friendly",
+      "english": "friendly",
+      "japanese": "親しみやすい、気さくな",
+      "pos": "adjective",
+      "registerNotes": "Kiwis are really friendly.（ニュージーランド人はとても気さくです）",
+      "audio": "audio/en/words/w-friendly.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kind",
+      "english": "kind",
+      "japanese": "親切な、優しい",
+      "pos": "adjective",
+      "registerNotes": "That’s very kind of you.（ご親切にありがとうございます）",
+      "audio": "audio/en/words/w-kind.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-polite",
+      "english": "polite",
+      "japanese": "礼儀正しい",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-polite.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-rude",
+      "english": "rude",
+      "japanese": "失礼な",
+      "pos": "adjective",
+      "registerNotes": "It’s rude to …（〜するのは失礼です）",
+      "audio": "audio/en/words/w-rude.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shy",
+      "english": "shy",
+      "japanese": "恥ずかしがりの、人見知りの",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-shy.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-funny",
+      "english": "funny",
+      "japanese": "面白い、おかしい",
+      "pos": "adjective",
+      "pitfallNote": "funny は「笑える」面白さ。「興味深い」なら interesting。",
+      "audio": "audio/en/words/w-funny.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-serious",
+      "english": "serious",
+      "japanese": "まじめな、深刻な",
+      "pos": "adjective",
+      "registerNotes": "Are you serious?（本気？）",
+      "audio": "audio/en/words/w-serious.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-honest",
+      "english": "honest",
+      "japanese": "正直な",
+      "pos": "adjective",
+      "registerNotes": "h は発音しません（オネスト）。",
+      "audio": "audio/en/words/w-honest.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-generous",
+      "english": "generous",
+      "japanese": "気前がいい",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-generous.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-lazy",
+      "english": "lazy",
+      "japanese": "怠けている、ぐうたらな",
+      "pos": "adjective",
+      "registerNotes": "a lazy Sunday（のんびりした日曜日）のように、悪くない意味でも使います。",
+      "audio": "audio/en/words/w-lazy.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hard-working",
+      "english": "hard-working",
+      "japanese": "働き者の、よく頑張る",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-hard-working.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-patient",
+      "english": "patient",
+      "japanese": "我慢強い、気長な",
+      "pos": "adjective",
+      "registerNotes": "名詞では「患者」。",
+      "audio": "audio/en/words/w-patient.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-clever",
+      "english": "clever",
+      "japanese": "頭がいい、賢い",
+      "pos": "adjective",
+      "registerNotes": "ニュージーランドやイギリスでよく使います。アメリカでは smart が多い。",
+      "audio": "audio/en/words/w-clever.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-confident",
+      "english": "confident",
+      "japanese": "自信がある",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-confident.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-outgoing",
+      "english": "outgoing",
+      "japanese": "社交的な",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-outgoing.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-quiet",
+      "english": "quiet",
+      "japanese": "静かな、おとなしい",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-quiet.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-easy-going",
+      "english": "easy-going",
+      "japanese": "おおらかな、のんびりした",
+      "pos": "adjective",
+      "registerNotes": "ほめ言葉。",
+      "audio": "audio/en/words/w-easy-going.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-reliable",
+      "english": "reliable",
+      "japanese": "頼りになる、信頼できる",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-reliable.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-selfish",
+      "english": "selfish",
+      "japanese": "わがままな、自分勝手な",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-selfish.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-caring",
+      "english": "caring",
+      "japanese": "思いやりのある",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-caring.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-down-to-earth",
+      "english": "down-to-earth",
+      "japanese": "気取らない、地に足のついた",
+      "pos": "adjective",
+      "registerNotes": "ニュージーランドで人をほめる時によく使います。",
+      "audio": "audio/en/words/w-down-to-earth.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-personality",
+      "english": "personality",
+      "japanese": "性格、人柄",
+      "pos": "noun",
+      "registerNotes": "She’s got a great personality.（彼女は人柄がとてもいい）",
+      "audio": "audio/en/words/w-personality.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-strict",
+      "english": "strict",
+      "japanese": "厳しい",
+      "pos": "adjective",
+      "registerNotes": "My parents were strict.（親が厳しかった）",
+      "audio": "audio/en/words/w-strict.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chatty",
+      "english": "chatty",
+      "japanese": "おしゃべりな",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-chatty.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-cheeky",
+      "english": "cheeky",
+      "japanese": "生意気な、ちゃっかりした",
+      "pos": "adjective",
+      "registerNotes": "ニュージーランドやイギリスの軽い言い方で、笑いながら言うことも多い言葉。",
+      "audio": "audio/en/words/w-cheeky.mp3",
+      "tags": [
+        "性格"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

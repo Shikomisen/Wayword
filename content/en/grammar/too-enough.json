@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-too-enough",
+  "connector": "too / enough",
+  "gloss": "〜すぎる・十分",
+  "title": "too, enough — 〜すぎる、十分〜",
+  "pattern": "too ＋ 形容詞 ／ 形容詞 ＋ enough ／ enough ＋ 名詞",
+  "explanation": "too ＋ 形容詞は「〜すぎる（だから困る）」：It’s too expensive.（高すぎる）。enough は「十分」で、形容詞の後、名詞の前に置きます：It’s big enough.（大きさは十分）、We’ve got enough time.（時間は十分ある）。",
+  "natural": "買い物や注文の時に：It’s a bit too big.（ちょっと大きすぎます）、Is that enough?（それで足りる？）",
+  "stiff": "too は困った意味の「〜すぎる」。「とても」のつもりで It’s too beautiful. と言うと「美しすぎて困る」になります。ほめる時は It’s so beautiful.",
+  "examples": [
+    {
+      "id": "gx-too-enough-1",
+      "english": "This jacket is a bit too big.",
+      "japanese": "このジャケット、ちょっと大きすぎます。",
+      "chunks": [
+        {
+          "t": "This jacket ",
+          "w": "w-jacket"
+        },
+        {
+          "t": "is a bit "
+        },
+        {
+          "t": "too big.",
+          "w": "w-too"
+        }
+      ],
+      "gap": {
+        "before": "This jacket is a bit ",
+        "answer": "too",
+        "after": " big.",
+        "options": [
+          "too",
+          "enough",
+          "very"
+        ],
+        "why": "「〜すぎる」は too ＋ 形容詞。"
+      },
+      "audio": "audio/en/grammar/gx-too-enough-1.mp3",
+      "tags": [
+        "文法",
+        "too / enough"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-too-enough-2",
+      "english": "Is it hot enough to swim?",
+      "japanese": "泳げるくらい暑いですか？",
+      "chunks": [
+        {
+          "t": "Is it "
+        },
+        {
+          "t": "hot enough ",
+          "w": "w-hot"
+        },
+        {
+          "t": "to swim?"
+        }
+      ],
+      "gap": {
+        "before": "Is it hot ",
+        "answer": "enough",
+        "after": " to swim?",
+        "options": [
+          "enough",
+          "too",
+          "so"
+        ],
+        "why": "形容詞の後に enough で「十分〜」。"
+      },
+      "audio": "audio/en/grammar/gx-too-enough-2.mp3",
+      "tags": [
+        "文法",
+        "too / enough"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-too-enough-3",
+      "english": "We don’t have enough time.",
+      "japanese": "時間が足りません。",
+      "chunks": [
+        {
+          "t": "We don’t have ",
+          "w": "w-have"
+        },
+        {
+          "t": "enough time."
+        }
+      ],
+      "gap": {
+        "before": "We don’t have ",
+        "answer": "enough",
+        "after": " time.",
+        "options": [
+          "enough",
+          "too",
+          "too much"
+        ],
+        "why": "名詞の前に enough で「十分な〜」。"
+      },
+      "audio": "audio/en/grammar/gx-too-enough-3.mp3",
+      "tags": [
+        "文法",
+        "too / enough"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-too-enough-4",
+      "english": "It’s too late to call now.",
+      "japanese": "今から電話するには遅すぎます。",
+      "chunks": [
+        {
+          "t": "It’s too late ",
+          "w": "w-late"
+        },
+        {
+          "t": "to call now.",
+          "w": "w-call"
+        }
+      ],
+      "gap": {
+        "before": "It’s ",
+        "answer": "too",
+        "after": " late to call now.",
+        "options": [
+          "too",
+          "enough",
+          "so"
+        ],
+        "why": "too … to 〜 で「〜するには…すぎる」。"
+      },
+      "audio": "audio/en/grammar/gx-too-enough-4.mp3",
+      "tags": [
+        "文法",
+        "too / enough"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

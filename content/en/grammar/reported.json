@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-reported",
+  "connector": "She said…",
+  "gloss": "〜と言っていた",
+  "title": "She said…, He told me… — 人の話を伝える",
+  "pattern": "say (that) … ／ tell ＋ 人 ＋ (that) … ／ ask if …",
+  "explanation": "人の言ったことを伝える時は said や told を使い、話の中身の時制を一つ過去にずらすのがふつうです：“I’m tired.” → She said she was tired.tell の後には必ず「だれに」が来ます：He told me he was busy.",
+  "natural": "伝言を伝える時に：Sam said he’d be late.（サムが遅れるって言ってたよ）",
+  "stiff": "He said me … はまちがい。「だれに」を言うなら told：He told me …。",
+  "examples": [
+    {
+      "id": "gx-reported-1",
+      "english": "Sam said he’d be late.",
+      "japanese": "サムが遅れるって言っていました。",
+      "chunks": [
+        {
+          "t": "Sam said ",
+          "w": "w-say"
+        },
+        {
+          "t": "he’d be "
+        },
+        {
+          "t": "late.",
+          "w": "w-late"
+        }
+      ],
+      "gap": {
+        "before": "Sam ",
+        "answer": "said",
+        "after": " he’d be late.",
+        "options": [
+          "said",
+          "told",
+          "talked"
+        ],
+        "why": "「だれに」を言わない時は said。"
+      },
+      "audio": "audio/en/grammar/gx-reported-1.mp3",
+      "tags": [
+        "文法",
+        "She said…"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-reported-2",
+      "english": "She told me the shop was closed.",
+      "japanese": "お店は閉まっていると彼女が教えてくれました。",
+      "chunks": [
+        {
+          "t": "She told me ",
+          "w": "w-tell"
+        },
+        {
+          "t": "the shop "
+        },
+        {
+          "t": "was closed.",
+          "w": "w-close"
+        }
+      ],
+      "gap": {
+        "before": "She ",
+        "answer": "told",
+        "after": " me the shop was closed.",
+        "options": [
+          "told",
+          "said",
+          "spoke"
+        ],
+        "why": "「だれに（me）」が続く時は told。"
+      },
+      "audio": "audio/en/grammar/gx-reported-2.mp3",
+      "tags": [
+        "文法",
+        "She said…"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-reported-3",
+      "english": "He asked if we needed help.",
+      "japanese": "手伝いが要るかどうか、彼が聞いてくれました。",
+      "chunks": [
+        {
+          "t": "He asked ",
+          "w": "w-ask"
+        },
+        {
+          "t": "if we needed ",
+          "w": "w-need"
+        },
+        {
+          "t": "help.",
+          "w": "w-help"
+        }
+      ],
+      "gap": {
+        "before": "He asked ",
+        "answer": "if",
+        "after": " we needed help.",
+        "options": [
+          "if",
+          "that",
+          "what"
+        ],
+        "why": "yes・no の質問を伝える時は ask if …。"
+      },
+      "audio": "audio/en/grammar/gx-reported-3.mp3",
+      "tags": [
+        "文法",
+        "She said…"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-reported-4",
+      "english": "They said it was going to rain.",
+      "japanese": "雨になるって言っていましたよ。",
+      "chunks": [
+        {
+          "t": "They said ",
+          "w": "w-say"
+        },
+        {
+          "t": "it was going to "
+        },
+        {
+          "t": "rain.",
+          "w": "w-rain"
+        }
+      ],
+      "gap": {
+        "before": "They said it ",
+        "answer": "was",
+        "after": " going to rain.",
+        "options": [
+          "was",
+          "is",
+          "were"
+        ],
+        "ok": [
+          "is"
+        ],
+        "note": "「今もそうだ」という時は is のままでも構いません。",
+        "why": "伝える時は時制を一つ過去に（is → was）。"
+      },
+      "audio": "audio/en/grammar/gx-reported-4.mp3",
+      "tags": [
+        "文法",
+        "She said…"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

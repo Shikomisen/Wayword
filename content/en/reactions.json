@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "reactions",
+  "title": "あいづち・反応",
+  "order": 11,
+  "description": "話を聞いていることを伝えて、相手の話に反応するひとこと。英語の会話は、あいづちで続きます。",
+  "phrases": [
+    {
+      "id": "rea-01",
+      "english": "Oh, really?",
+      "japanese": "へえ、そうなんだ。",
+      "registerNotes": "話を聞いていることを示す、いちばん便利なあいづち。語尾を上げて言います。",
+      "audio": "audio/en/rea-01.mp3",
+      "audioHint": "Oh, really?",
+      "tags": [
+        "あいづち",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-02",
+      "english": "No way!",
+      "japanese": "うそでしょ！まさか！",
+      "registerNotes": "驚いた時の言い方で、拒否ではありません。うれしい驚きにも使います。",
+      "audio": "audio/en/rea-02.mp3",
+      "audioHint": "No way!",
+      "tags": [
+        "驚き"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-03",
+      "english": "That’s awesome!",
+      "japanese": "すごいね！",
+      "registerNotes": "相手のいい知らせに。ニュージーランドでは Sweet as! もよく聞きます。",
+      "audio": "audio/en/rea-03.mp3",
+      "audioHint": "That’s awesome!",
+      "tags": [
+        "よろこび"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-04",
+      "english": "That makes sense.",
+      "japanese": "なるほど、納得。",
+      "registerNotes": "説明を聞いて「わかった、筋が通っている」という時。",
+      "audio": "audio/en/rea-04.mp3",
+      "audioHint": "That makes sense.",
+      "tags": [
+        "あいづち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "rea-05",
+      "english": "Fair enough.",
+      "japanese": "確かにね、それならしょうがないね。",
+      "registerNotes": "相手の言い分を受け入れる時。ニュージーランドでとてもよく使います。",
+      "audio": "audio/en/rea-05.mp3",
+      "audioHint": "Fair enough.",
+      "tags": [
+        "あいづち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "rea-06",
+      "english": "I know, right?",
+      "japanese": "だよね！",
+      "registerNotes": "相手の言ったことに強く共感する時のくだけた言い方。",
+      "audio": "audio/en/rea-06.mp3",
+      "audioHint": "I know, right?",
+      "tags": [
+        "共感"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-07",
+      "english": "Good on you!",
+      "japanese": "えらいね！よくやったね！",
+      "registerNotes": "ニュージーランドやオーストラリアでよく使うほめ言葉。",
+      "audio": "audio/en/rea-07.mp3",
+      "audioHint": "Good on you!",
+      "tags": [
+        "ほめる"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "rea-08",
+      "english": "Oh no, that’s a shame.",
+      "japanese": "ああ、それは残念だね。",
+      "registerNotes": "ちょっとした残念な話に。shame は「恥」ではなく「残念なこと」。",
+      "audio": "audio/en/rea-08.mp3",
+      "audioHint": "Oh no, that’s a shame.",
+      "tags": [
+        "同情"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "rea-09",
+      "english": "I’m sorry to hear that.",
+      "japanese": "それは大変でしたね。",
+      "registerNotes": "悪い知らせを聞いた時の同情の言葉。",
+      "pitfallNote": "I’m sorry は謝罪だけでなく同情にも使います。自分のせいだと言っているわけではありません。",
+      "audio": "audio/en/rea-09.mp3",
+      "audioHint": "I’m sorry to hear that.",
+      "tags": [
+        "同情",
+        "必須"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "rea-10",
+      "english": "That sounds fun!",
+      "japanese": "楽しそう！",
+      "registerNotes": "聞いた話について「〜そう」と言う時は sound ＋ 形容詞。",
+      "audio": "audio/en/rea-10.mp3",
+      "audioHint": "That sounds fun!",
+      "tags": [
+        "共感"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-11",
+      "english": "Seriously?",
+      "japanese": "本気で？マジで？",
+      "registerNotes": "くだけた驚き。目上の人には Really? のほうが無難です。",
+      "audio": "audio/en/rea-11.mp3",
+      "audioHint": "Seriously?",
+      "tags": [
+        "驚き"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "rea-12",
+      "english": "What happened then?",
+      "japanese": "それでどうなったの？",
+      "registerNotes": "話の続きを促すひとこと。興味があることが伝わります。",
+      "audio": "audio/en/rea-12.mp3",
+      "audioHint": "What happened then?",
+      "tags": [
+        "あいづち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "rea-13",
+      "english": "Hmm, let me think.",
+      "japanese": "うーん、ちょっと考えさせて。",
+      "registerNotes": "答えに詰まった時、黙りこむよりずっと自然です。",
+      "audio": "audio/en/rea-13.mp3",
+      "audioHint": "Hmm, let me think.",
+      "tags": [
+        "考える"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-social",
+  "title": "付き合い・人間関係",
+  "description": "誘う、集まる、祝う。友だちや知り合いとの付き合いの言葉。",
+  "items": [
+    {
+      "id": "w-invite",
+      "english": "invite",
+      "japanese": "誘う、招待する",
+      "pos": "verb",
+      "registerNotes": "Thanks for inviting me.（誘ってくれてありがとう）",
+      "audio": "audio/en/words/w-invite.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-invitation",
+      "english": "invitation",
+      "japanese": "招待、招待状",
+      "pos": "noun",
+      "audio": "audio/en/words/w-invitation.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-party",
+      "english": "party",
+      "japanese": "パーティー",
+      "pos": "noun",
+      "audio": "audio/en/words/w-party.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-guest",
+      "english": "guest",
+      "japanese": "（招かれた）客",
+      "pos": "noun",
+      "audio": "audio/en/words/w-guest.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-host",
+      "english": "host",
+      "japanese": "主催者、もてなす人",
+      "pos": "noun",
+      "audio": "audio/en/words/w-host.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hang-out",
+      "english": "hang out",
+      "japanese": "一緒に過ごす、遊ぶ",
+      "pos": "phrase",
+      "registerNotes": "Do you want to hang out this weekend?（週末遊ばない？）",
+      "audio": "audio/en/words/w-hang-out.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-catch-up",
+      "english": "catch up",
+      "japanese": "近況を話す、久しぶりに会う",
+      "pos": "phrase",
+      "registerNotes": "Let’s catch up soon!（近いうちに会おうね）。名詞は a catch-up。",
+      "audio": "audio/en/words/w-catch-up.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-get-together",
+      "english": "get-together",
+      "japanese": "集まり",
+      "pos": "noun",
+      "audio": "audio/en/words/w-get-together.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-barbecue",
+      "english": "barbecue",
+      "japanese": "バーベキュー",
+      "pos": "noun",
+      "registerNotes": "BBQ と書くことも。ニュージーランドではくだけて barbie とも言います。",
+      "audio": "audio/en/words/w-barbecue.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bring-a-plate",
+      "english": "bring a plate",
+      "japanese": "料理を一品持ち寄る",
+      "pos": "phrase",
+      "registerNotes": "ニュージーランド独特の言い方。集まりに何か一品（サラダ、お菓子など）を持ってきて、という意味。",
+      "pitfallNote": "お皿を持っていくのではありません。空のお皿を持っていくと笑われます。",
+      "audio": "audio/en/words/w-bring-a-plate.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-date",
+      "english": "date",
+      "japanese": "デート、日付",
+      "pos": "noun",
+      "registerNotes": "go on a date（デートに行く）、What’s the date today?（今日は何日？）",
+      "audio": "audio/en/words/w-date.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-relationship",
+      "english": "relationship",
+      "japanese": "関係、交際",
+      "pos": "noun",
+      "registerNotes": "I’m in a relationship.（付き合っている人がいます）",
+      "audio": "audio/en/words/w-relationship.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-get-along",
+      "english": "get along",
+      "japanese": "仲よくやる",
+      "pos": "phrase",
+      "registerNotes": "We get along well.（私たちは仲がいい）",
+      "audio": "audio/en/words/w-get-along.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-introduce",
+      "english": "introduce",
+      "japanese": "紹介する",
+      "pos": "verb",
+      "registerNotes": "Let me introduce you to Sam.（サムを紹介するね）",
+      "audio": "audio/en/words/w-introduce.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chat",
+      "english": "chat",
+      "japanese": "おしゃべり（する）",
+      "pos": "verb",
+      "registerNotes": "a quick chat（ちょっとした話）",
+      "audio": "audio/en/words/w-chat.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gossip",
+      "english": "gossip",
+      "japanese": "うわさ話",
+      "pos": "noun",
+      "audio": "audio/en/words/w-gossip.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-joke",
+      "english": "joke",
+      "japanese": "冗談",
+      "pos": "noun",
+      "registerNotes": "I’m joking.（冗談だよ）、Just kidding.（うそうそ）",
+      "audio": "audio/en/words/w-joke.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-celebrate",
+      "english": "celebrate",
+      "japanese": "祝う",
+      "pos": "verb",
+      "audio": "audio/en/words/w-celebrate.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-birthday",
+      "english": "birthday",
+      "japanese": "誕生日",
+      "pos": "noun",
+      "registerNotes": "Happy birthday!",
+      "audio": "audio/en/words/w-birthday.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-wedding",
+      "english": "wedding",
+      "japanese": "結婚式",
+      "pos": "noun",
+      "audio": "audio/en/words/w-wedding.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-congratulations",
+      "english": "congratulations",
+      "japanese": "おめでとう",
+      "pos": "interjection",
+      "registerNotes": "くだけて Congrats!誕生日には使わず Happy birthday!",
+      "audio": "audio/en/words/w-congratulations.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-anniversary",
+      "english": "anniversary",
+      "japanese": "記念日",
+      "pos": "noun",
+      "registerNotes": "our wedding anniversary（結婚記念日）",
+      "audio": "audio/en/words/w-anniversary.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gift",
+      "english": "gift",
+      "japanese": "贈り物、プレゼント",
+      "pos": "noun",
+      "registerNotes": "ふだんの会話では present もよく使います。",
+      "audio": "audio/en/words/w-gift.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-visit",
+      "english": "visit",
+      "japanese": "訪ねる、遊びに行く",
+      "pos": "verb",
+      "registerNotes": "Come and visit us!（遊びに来てね）",
+      "audio": "audio/en/words/w-visit.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-social-media",
+      "english": "social media",
+      "japanese": "SNS",
+      "pos": "noun",
+      "pitfallNote": "英語で SNS とはあまり言いません。social media と言います。",
+      "audio": "audio/en/words/w-social-media.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-keep-in-touch",
+      "english": "keep in touch",
+      "japanese": "連絡を取り合う",
+      "pos": "phrase",
+      "registerNotes": "Let’s keep in touch!（これからも連絡を取り合おうね）",
+      "audio": "audio/en/words/w-keep-in-touch.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

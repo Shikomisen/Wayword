@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-relative",
+  "connector": "who / where",
+  "gloss": "〜する人・〜する所",
+  "title": "the man who…, the café where… — 名詞を後ろから説明する",
+  "pattern": "人 ＋ who … ／ もの ＋ that … ／ 場所 ＋ where …",
+  "explanation": "名詞の後に who・that・where を続けると、「〜する人」「〜するもの」「〜する場所」と名詞をくわしく説明できます。日本語とは順番が逆で、説明が名詞の後に来ます：the man who lives next door（隣に住んでいる男の人）、the café where we met（私たちが出会ったカフェ）。",
+  "natural": "名前がわからない物を説明する時に便利：the thing that opens bottles（瓶を開けるもの）",
+  "stiff": "人に which を使うのはまちがい：the man which … ではなく the man who …。",
+  "examples": [
+    {
+      "id": "gx-relative-1",
+      "english": "That’s the man who lives next door.",
+      "japanese": "あの人が隣に住んでいる男の人です。",
+      "chunks": [
+        {
+          "t": "That’s "
+        },
+        {
+          "t": "the man ",
+          "w": "w-man"
+        },
+        {
+          "t": "who lives ",
+          "w": "w-live"
+        },
+        {
+          "t": "next door."
+        }
+      ],
+      "gap": {
+        "before": "That’s the man ",
+        "answer": "who",
+        "after": " lives next door.",
+        "options": [
+          "who",
+          "which",
+          "where"
+        ],
+        "why": "人の説明は who。"
+      },
+      "audio": "audio/en/grammar/gx-relative-1.mp3",
+      "tags": [
+        "文法",
+        "who / where"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-relative-2",
+      "english": "This is the café where we met.",
+      "japanese": "ここが私たちが出会ったカフェです。",
+      "chunks": [
+        {
+          "t": "This is ",
+          "w": "w-this"
+        },
+        {
+          "t": "the café "
+        },
+        {
+          "t": "where we met.",
+          "w": "w-meet"
+        }
+      ],
+      "gap": {
+        "before": "This is the café ",
+        "answer": "where",
+        "after": " we met.",
+        "options": [
+          "where",
+          "who",
+          "what"
+        ],
+        "why": "場所の説明は where。"
+      },
+      "audio": "audio/en/grammar/gx-relative-2.mp3",
+      "tags": [
+        "文法",
+        "who / where"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-relative-3",
+      "english": "Is this the bus that goes to the city?",
+      "japanese": "これは市内に行くバスですか？",
+      "chunks": [
+        {
+          "t": "Is this ",
+          "w": "w-this"
+        },
+        {
+          "t": "the bus "
+        },
+        {
+          "t": "that goes ",
+          "w": "w-go"
+        },
+        {
+          "t": "to the city?"
+        }
+      ],
+      "gap": {
+        "before": "Is this the bus ",
+        "answer": "that",
+        "after": " goes to the city?",
+        "options": [
+          "that",
+          "who",
+          "where"
+        ],
+        "why": "ものの説明は that（which も使えます）。"
+      },
+      "audio": "audio/en/grammar/gx-relative-3.mp3",
+      "tags": [
+        "文法",
+        "who / where"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-relative-4",
+      "english": "I’ve got a friend who speaks Māori.",
+      "japanese": "マオリ語を話す友だちがいます。",
+      "chunks": [
+        {
+          "t": "I’ve got "
+        },
+        {
+          "t": "a friend ",
+          "w": "w-friend"
+        },
+        {
+          "t": "who speaks ",
+          "w": "w-speak"
+        },
+        {
+          "t": "Māori."
+        }
+      ],
+      "gap": {
+        "before": "I’ve got a friend ",
+        "answer": "who",
+        "after": " speaks Māori.",
+        "options": [
+          "who",
+          "which",
+          "what"
+        ],
+        "why": "人の説明は who。"
+      },
+      "audio": "audio/en/grammar/gx-relative-4.mp3",
+      "tags": [
+        "文法",
+        "who / where"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

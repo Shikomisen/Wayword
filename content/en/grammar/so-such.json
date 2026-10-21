@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-so-such",
+  "connector": "so / such",
+  "gloss": "とても・そんなに",
+  "title": "so, such — とても〜、〜すぎて…",
+  "pattern": "so ＋ 形容詞 ／ such ＋ a ＋ 形容詞 ＋ 名詞 ／ so … that …",
+  "explanation": "どちらも「とても、そんなに」。形容詞だけなら so：It’s so hot.名詞がつくなら such：It’s such a hot day.that を続けると「とても〜なので…」：It was so good that I had two.（おいしすぎて2つ食べた）。",
+  "natural": "気持ちをこめて話す時に：You’re so kind!（本当に優しいね）、It was such a great day.（最高の一日だった）",
+  "stiff": "so a nice day はまちがいで、such a nice day。名詞のない such kind もまちがいで、so kind。",
+  "examples": [
+    {
+      "id": "gx-so-such-1",
+      "english": "It’s so hot today.",
+      "japanese": "今日はとても暑いですね。",
+      "chunks": [
+        {
+          "t": "It’s so hot ",
+          "w": "w-hot"
+        },
+        {
+          "t": "today.",
+          "w": "w-today"
+        }
+      ],
+      "gap": {
+        "before": "It’s ",
+        "answer": "so",
+        "after": " hot today.",
+        "options": [
+          "so",
+          "such",
+          "such a"
+        ],
+        "why": "形容詞だけなら so。"
+      },
+      "audio": "audio/en/grammar/gx-so-such-1.mp3",
+      "tags": [
+        "文法",
+        "so / such"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-so-such-2",
+      "english": "It was such a beautiful day.",
+      "japanese": "本当にすばらしい一日でした。",
+      "chunks": [
+        {
+          "t": "It was "
+        },
+        {
+          "t": "such a beautiful day.",
+          "w": "w-beautiful"
+        }
+      ],
+      "gap": {
+        "before": "It was ",
+        "answer": "such",
+        "after": " a beautiful day.",
+        "options": [
+          "such",
+          "so",
+          "very"
+        ],
+        "why": "a ＋ 形容詞 ＋ 名詞の前は such。"
+      },
+      "audio": "audio/en/grammar/gx-so-such-2.mp3",
+      "tags": [
+        "文法",
+        "so / such"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-so-such-3",
+      "english": "You’re so kind!",
+      "japanese": "本当に優しいね！",
+      "chunks": [
+        {
+          "t": "You’re so "
+        },
+        {
+          "t": "kind!",
+          "w": "w-kind"
+        }
+      ],
+      "gap": {
+        "before": "You’re ",
+        "answer": "so",
+        "after": " kind!",
+        "options": [
+          "so",
+          "such",
+          "such a"
+        ],
+        "why": "形容詞だけなら so。"
+      },
+      "audio": "audio/en/grammar/gx-so-such-3.mp3",
+      "tags": [
+        "文法",
+        "so / such"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-so-such-4",
+      "english": "The pie was so good that I had two.",
+      "japanese": "パイがおいしすぎて、2つ食べちゃいました。",
+      "chunks": [
+        {
+          "t": "The pie ",
+          "w": "w-pie"
+        },
+        {
+          "t": "was so good ",
+          "w": "w-good"
+        },
+        {
+          "t": "that I had two.",
+          "w": "w-have"
+        }
+      ],
+      "gap": {
+        "before": "The pie was so good ",
+        "answer": "that",
+        "after": " I had two.",
+        "options": [
+          "that",
+          "than",
+          "what"
+        ],
+        "why": "so … that 〜 で「とても…なので〜」。"
+      },
+      "audio": "audio/en/grammar/gx-so-such-4.mp3",
+      "tags": [
+        "文法",
+        "so / such"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

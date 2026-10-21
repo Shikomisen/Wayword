@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "doctor",
+  "title": "病院・薬局",
+  "order": 15,
+  "description": "症状を伝える、薬について聞く、診断書をもらう。ニュージーランドの GP（かかりつけ医）や薬局で使うひとこと。",
+  "phrases": [
+    {
+      "id": "doc-01",
+      "english": "I’d like to see a doctor.",
+      "japanese": "診察を受けたいのですが。",
+      "registerNotes": "受付で。ニュージーランドでは、まず GP（かかりつけ医）に予約をします。",
+      "audio": "audio/en/doc-01.mp3",
+      "audioHint": "I’d like to see a doctor.",
+      "tags": [
+        "病院",
+        "必須"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-02",
+      "english": "I’ve had a fever since yesterday.",
+      "japanese": "昨日から熱があります。",
+      "registerNotes": "I’ve had … since … で「〜からずっと」。症状がいつからかを伝えます。",
+      "audio": "audio/en/doc-02.mp3",
+      "audioHint": "I’ve had a fever since yesterday.",
+      "tags": [
+        "症状"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-03",
+      "english": "It hurts here.",
+      "japanese": "ここが痛いです。",
+      "registerNotes": "体を指さしながら。痛む場所がわからない時の頼れるひとこと。",
+      "audio": "audio/en/doc-03.mp3",
+      "audioHint": "It hurts here.",
+      "tags": [
+        "症状",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "doc-04",
+      "english": "I feel sick.",
+      "japanese": "吐き気がします。",
+      "registerNotes": "吐き気や、ひどく具合が悪い時に。",
+      "pitfallNote": "feel sick は「具合が悪い」より「吐き気がする」の意味で使うことが多い。",
+      "audio": "audio/en/doc-04.mp3",
+      "audioHint": "I feel sick.",
+      "tags": [
+        "症状"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "doc-05",
+      "english": "I’m allergic to penicillin.",
+      "japanese": "ペニシリンのアレルギーがあります。",
+      "registerNotes": "I’m allergic to … でアレルギーを伝えます。必ず伝えましょう。",
+      "audio": "audio/en/doc-05.mp3",
+      "audioHint": "I’m allergic to penicillin.",
+      "tags": [
+        "症状"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-06",
+      "english": "I take medicine for high blood pressure.",
+      "japanese": "高血圧の薬を飲んでいます。",
+      "registerNotes": "「薬を飲む」は take medicine。いつも飲んでいる薬は必ず伝えます。",
+      "audio": "audio/en/doc-06.mp3",
+      "audioHint": "I take medicine for high blood pressure.",
+      "tags": [
+        "病院"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "doc-07",
+      "english": "How often should I take it?",
+      "japanese": "どのくらいの間隔で飲めばいいですか？",
+      "registerNotes": "薬局で。答えは Twice a day.（1日2回）など。",
+      "audio": "audio/en/doc-07.mp3",
+      "audioHint": "How often should I take it?",
+      "tags": [
+        "薬局"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-08",
+      "english": "Do I need a prescription?",
+      "japanese": "処方箋は必要ですか？",
+      "registerNotes": "処方箋なしで買える薬も、薬剤師に聞いてから渡されることがあります。",
+      "audio": "audio/en/doc-08.mp3",
+      "audioHint": "Do I need a prescription?",
+      "tags": [
+        "薬局"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-09",
+      "english": "Can I get something for a cold?",
+      "japanese": "風邪薬はありますか？",
+      "registerNotes": "Can I get something for …? で、症状に合う薬を出してもらえます。",
+      "audio": "audio/en/doc-09.mp3",
+      "audioHint": "Can I get something for a cold?",
+      "tags": [
+        "薬局",
+        "必須"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-10",
+      "english": "Is it serious?",
+      "japanese": "重い病気ですか？",
+      "registerNotes": "医者の説明が心配な時に。答えが Nothing to worry about. なら「心配いりません」。",
+      "audio": "audio/en/doc-10.mp3",
+      "audioHint": "Is it serious?",
+      "tags": [
+        "病院"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-11",
+      "english": "How long will it take to get better?",
+      "japanese": "治るまでどのくらいかかりますか？",
+      "registerNotes": "get better は「よくなる」。",
+      "audio": "audio/en/doc-11.mp3",
+      "audioHint": "How long will it take to get better?",
+      "tags": [
+        "病院"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-12",
+      "english": "Could I get a medical certificate?",
+      "japanese": "診断書をもらえますか？",
+      "registerNotes": "仕事を休む時に必要なことが多い書類。",
+      "audio": "audio/en/doc-12.mp3",
+      "audioHint": "Could I get a medical certificate?",
+      "tags": [
+        "病院"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

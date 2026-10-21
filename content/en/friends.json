@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "friends",
+  "title": "友だち・付き合い",
+  "order": 14,
+  "description": "久しぶりに会う、家に招く、帰る時のあいさつ。友だちや知り合いとの付き合いのひとこと。",
+  "phrases": [
+    {
+      "id": "fri-01",
+      "english": "How’ve you been?",
+      "japanese": "元気にしてた？",
+      "registerNotes": "久しぶりに会った時の決まり文句。答えは Good, thanks. You?",
+      "audio": "audio/en/fri-01.mp3",
+      "audioHint": "How’ve you been?",
+      "tags": [
+        "あいさつ",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fri-02",
+      "english": "Long time no see!",
+      "japanese": "久しぶり！",
+      "registerNotes": "くだけた言い方。",
+      "audio": "audio/en/fri-02.mp3",
+      "audioHint": "Long time no see!",
+      "tags": [
+        "あいさつ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fri-03",
+      "english": "What have you been up to?",
+      "japanese": "最近どうしてた？",
+      "registerNotes": "up to は「〜している」。近況を聞く時。",
+      "audio": "audio/en/fri-03.mp3",
+      "audioHint": "What have you been up to?",
+      "tags": [
+        "近況"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fri-04",
+      "english": "Not much, just working.",
+      "japanese": "特に何も、仕事ばっかり。",
+      "registerNotes": "近況を聞かれた時の気軽な答え。",
+      "audio": "audio/en/fri-04.mp3",
+      "audioHint": "Not much, just working.",
+      "tags": [
+        "近況"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fri-05",
+      "english": "Congrats on the new job!",
+      "japanese": "新しい仕事、おめでとう！",
+      "registerNotes": "Congrats は Congratulations のくだけた形。on の後に祝う内容を。",
+      "audio": "audio/en/fri-05.mp3",
+      "audioHint": "Congrats on the new job!",
+      "tags": [
+        "お祝い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fri-06",
+      "english": "Thanks for having me.",
+      "japanese": "呼んでくれてありがとう。",
+      "registerNotes": "人の家や集まりから帰る時のお礼。",
+      "audio": "audio/en/fri-06.mp3",
+      "audioHint": "Thanks for having me.",
+      "tags": [
+        "招待",
+        "必須"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fri-07",
+      "english": "Make yourself at home.",
+      "japanese": "くつろいでね。",
+      "registerNotes": "自分の家に人を招いた時。",
+      "audio": "audio/en/fri-07.mp3",
+      "audioHint": "Make yourself at home.",
+      "tags": [
+        "招待"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fri-08",
+      "english": "Help yourself.",
+      "japanese": "ご自由にどうぞ。",
+      "registerNotes": "食べ物や飲み物を勧める時。「手伝って」ではありません。",
+      "pitfallNote": "Help yourself. は「自分で取ってね」。手伝ってほしい時は Can you help me?",
+      "audio": "audio/en/fri-08.mp3",
+      "audioHint": "Help yourself.",
+      "tags": [
+        "招待"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fri-09",
+      "english": "It was great to see you.",
+      "japanese": "会えてよかった。",
+      "registerNotes": "別れ際に。",
+      "audio": "audio/en/fri-09.mp3",
+      "audioHint": "It was great to see you.",
+      "tags": [
+        "別れ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fri-10",
+      "english": "Let’s do this again soon.",
+      "japanese": "またやろうね。",
+      "registerNotes": "楽しかった集まりの終わりに。",
+      "audio": "audio/en/fri-10.mp3",
+      "audioHint": "Let’s do this again soon.",
+      "tags": [
+        "別れ"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fri-11",
+      "english": "I’d better head off.",
+      "japanese": "そろそろ帰らなきゃ。",
+      "registerNotes": "head off は「出発する、帰る」。帰りを切り出すくだけた言い方。",
+      "audio": "audio/en/fri-11.mp3",
+      "audioHint": "I’d better head off.",
+      "tags": [
+        "別れ"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "fri-12",
+      "english": "Say hi to your family for me.",
+      "japanese": "ご家族によろしくね。",
+      "registerNotes": "「よろしく伝えて」の英語版。",
+      "audio": "audio/en/fri-12.mp3",
+      "audioHint": "Say hi to your family for me.",
+      "tags": [
+        "別れ"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

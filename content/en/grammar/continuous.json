@@ -7,7 +7,7 @@
   "pattern": "am・is・are ＋ 動詞-ing",
   "explanation": "今まさにしていることは、be動詞 ＋ 動詞の -ing 形：I’m cooking.（今、料理しています）、It’s raining.（雨が降っています）。e で終わる語は e を取って -ing（make → making）。短い語は最後の文字を重ねることがあります（run → running、sit → sitting）。",
   "natural": "電話やメッセージでよく使います：What are you doing?（何してる？）―― I’m watching TV.（テレビ見てる）。",
-  "stiff": "be動詞を落とすのは×：I cooking. ではなく I’m cooking.。know、like、want のような「状態」の動詞は -ing にしません：I’m knowing. は×。",
+  "stiff": "be動詞を落とすのは×：I cooking. ではなく I’m cooking.know、like、want のような「状態」の動詞は -ing にしません：I’m knowing. は×。",
   "examples": [
     {
       "id": "gx-continuous-1",

@@ -3,7 +3,7 @@
 An offline-first language-learning app for real conversation. It runs in the browser, installs to a phone's home screen, works without a connection, and keeps every bit of progress on the device.
 
 - **Live:** https://shikomisen.github.io/Wayword/
-- **Version:** v19
+- **Version:** v20
 - **Courses:** Japanese for English speakers, and English for Japanese speakers. Indonesian is planned.
 
 This README is the complete description of the project: what it does, how it's built, the content format, the learning rules, storage, audio, offline behaviour, and how to run, test, deploy or port it. It describes what is true now. The design rationale and project history are kept in the maintainer's private notes, outside this repository.
@@ -55,9 +55,9 @@ Controls a course can't use don't appear: the English course has no furigana and
 |---|---|---|
 | **First steps** | Someone brand new to the language: the first words and phrases, and how a sentence is built (particles, です and ます; or be-verbs, a and the, the present and past) | CEFR A1; before JLPT N5 |
 | **Basic** | Getting by: everyday words, set phrases for shops, stations and hotels, connectors, polite phrasing, and (in Japanese) the first kanji | A2; JLPT N5 |
-| **Intermediate** | Real conversation: talking about yourself, your plans and opinions, reacting as you listen, polite Japanese (keigo) for a partner's family, and sorting out problems at the doctor, a hotel or a shop | B1; JLPT N4 into N3 |
+| **Intermediate** | Real conversation: talking about yourself, your plans and opinions, reacting as you listen, being a guest, and sorting out problems at the doctor, a hotel or a shop. In Japanese, also polite keigo for a partner's family | CEFR B1; JLPT N4 into N3 |
 
-The equivalences are approximate: the levels are built around what a learner can do, not around an exam. The Japanese course has all three levels; the English course has First steps and Basic, and its Intermediate level is planned (§14).
+The equivalences are approximate: the levels are built around what a learner can do, not around an exam. Both courses have all three levels.
 
 - **Placement** suggests where to start, and the learner can pick another level.
 - **Learn** shows one level at a time.
@@ -73,7 +73,7 @@ The equivalences are approximate: the levels are built around what a learner can
 - Each course card shows where the learner is: cards due today, not started, or coming soon.
 - The speaker defaults to the device language if the app teaches from it, otherwise English, and it's remembered.
 - Inside a course, a slim bar ("‹ Languages · English › Japanese") leads back, and Settings has a Language row.
-- The version shows at the foot of the picker ("Wayword v19") and in Settings → About.
+- The version shows at the foot of the picker ("Wayword v20") and in Settings → About.
 
 ### 2.2 Placement
 
@@ -168,11 +168,17 @@ Each course has a lessons tab, named by its manifest. Like Learn, it shows one l
     - *Saying what you think and hear:* 〜と思う, quoting with 〜って, かもしれない and でしょう, 〜そう (looks like), 〜みたい and らしい.
     - *Nuance in conversation:* 〜んです, よ and ね, のに, 〜ても, 〜すぎる・〜やすい・〜にくい, comparing with より, ほう and 一番.
     - *Polite Japanese (keigo):* respectful verbs (いらっしゃる, 召し上がる…) and humble ones (いたします, 申します…).
-- **表現・文法** in the English course (the tab says 表現): 48 lessons.
+- **表現・文法** in the English course (the tab says 表現): 70 lessons.
   - **First steps, 18 lessons** (はじめての英語), explained in Japanese:
     - *文の基本:* am / is / are, not and questions, this and that, a and the, plurals, my and your, there is, in / on / at for places and for times.
     - *動詞の基本:* the present simple, don't and doesn't, can, the present continuous, the past with -ed and the irregular past, question words, want to, please and don't.
   - **Basic, 30 lessons:** phrase patterns, polite phrasing, linking words and word order.
+  - **Intermediate, 22 lessons,** explained in Japanese:
+    - *時制:* the present perfect for experience, just / already / yet, the past continuous, will and going to, used to.
+    - *助動詞:* should and had better, have to / must / don't have to, might / may / could.
+    - *もしも:* if … will, if … would, I wish.
+    - *文の組み立て:* comparing, too and enough, -ing or to, who / that / where, so and such, the passive, make / let / get.
+    - *会話の形:* indirect questions (*Do you know where…?*), reported speech, suggestions, *So do I* and *Neither do I*.
 
 **A lesson** has:
 - the pattern;
@@ -228,7 +234,7 @@ About ten questions a day, on Today and in Learn, in both courses. It has no tab
 
 | Course | Lines said back | Sound pairs |
 |---|---|---|
-| English | 30, at a counter, a café or on a bus, in New Zealand English (*Eat in or takeaway?*, *Are you right there?*). Basic | 18 that Japanese doesn't tell apart: L/R, B/V, S/TH, and *fifteen / fifty*. First steps |
+| English | 30 at Basic, at a counter, a café or on a bus, in New Zealand English (*Eat in or takeaway?*, *Are you right there?*). 30 more at Intermediate, faster and more casual (*Are you guys right for drinks?*, *What are you up to this arvo?*) | 18 that Japanese doesn't tell apart: L/R, B/V, S/TH, and *fifteen / fifty*. First steps |
 | Japanese | 32 that staff and friends say, at natural speed and in polite Japanese (ポイントカードはお持ちですか, 割り勘でいい？). Intermediate | 15 that English speakers miss: long vowels (おばさん / おばあさん), the small っ (きて / きって), and つ against す. Basic |
 
 Items are mastered by the same rule as kana (§7.7). Listening content never enters the review deck.
@@ -245,7 +251,7 @@ Scenarios are branching conversations.
 | Course | Scenarios |
 |---|---|
 | Japanese (13) | **Basic:** a convenience-store checkout, buying a train ticket, an immigration desk, hotel check-in, ordering at a restaurant, asking the way, at the pharmacy, chatting with a neighbour. **Intermediate**, with furigana and no romaji: dinner with a partner's family, making weekend plans, at a clinic, staying at a ryokan, when the order is wrong |
-| English (7) | All as the customer: a café, a clothes shop, a bakery, the bus, asking the way, immigration, hotel check-in. Every reply gets Japanese feedback |
+| English (13) | **Basic,** all as the customer: a café, a clothes shop, a bakery, the bus, asking the way, immigration, hotel check-in. **Intermediate:** seeing a GP, returning something faulty, a problem with a hotel room, making plans with a friend, dinner at a friend's place, a chat at the bus stop. Every reply gets Japanese feedback |
 
 Picking a reply doesn't move any card's schedule (§7.6). The scenario list puts each scenario under its level.
 
@@ -308,19 +314,19 @@ How it works is in §10.6.
 | Course | id | Status | Content | Audio |
 |---|---|---|---|---|
 | Japanese, for English speakers | `en-ja` | available | `content/ja/` | `audio/ja/`: 1,725 clips, 22.6 MB |
-| English, for Japanese speakers | `ja-en` | available | `content/en/` | `audio/en/`: 846 clips, 11.7 MB |
+| English, for Japanese speakers | `ja-en` | available | `content/en/` | `audio/en/`: 1,374 clips, 19.0 MB |
 | Indonesian, for English speakers | `en-id` | planned (placeholder screen) | — | — |
 | Indonesian, for Japanese speakers | `ja-id` | planned (placeholder screen) | — | — |
 
 | | Japanese (`en-ja`) | English (`ja-en`) |
 |---|---|---|
-| Words | 471 in 23 decks | 395 in 14 decks |
-| Sentences | 66 in 3 decks | 42 |
-| Phrases | 262 in 17 categories, 51 of them casual, each with its polite version | 112 in 10 categories |
-| Lessons | 62: 46 grammar lessons and 16 connectors; 248 examples (25 can be joined) | 48: 18 grammar lessons and 30 others; 192 examples (12 can be joined) |
+| Words | 471 in 23 decks | 653 in 24 decks |
+| Sentences | 66 in 3 decks | 92 in 3 decks |
+| Phrases | 262 in 17 categories, 51 of them casual, each with its polite version | 185 in 16 categories |
+| Lessons | 62: 46 grammar lessons and 16 connectors; 248 examples (25 can be joined) | 70: 40 grammar lessons and 30 others; 280 examples (12 can be joined) |
 | Characters | 496: hiragana 104, katakana 116, kanji 70 + 82 + 124 | — |
-| Listening | 32 lines and 15 sound pairs | 30 lines and 18 sound pairs |
-| Scenarios | 13 | 7 |
+| Listening | 32 lines and 15 sound pairs | 60 lines and 18 sound pairs |
+| Scenarios | 13 | 13 |
 | Dictionary, for Paste a message | 22,645 common words (JMdict, §6.14) | — |
 
 **By level** (§7.10):
@@ -329,9 +335,9 @@ How it works is in §10.6.
 |---|---|---|
 | First steps | 92 words in 5 decks; 16 sentences; 58 phrases in 3 categories; 20 grammar lessons; hiragana and katakana | 145 words in 6 decks; 24 phrases in 2 categories; 18 grammar lessons; the sound pairs |
 | Basic | 125 words in 8 decks; 129 phrases in 8 categories; 16 connector lessons; two kanji sets; the sound pairs; 8 scenarios | 250 words in 8 decks; 42 sentences; 88 phrases in 8 categories; 30 lessons; the lines said back; 7 scenarios |
-| Intermediate | 254 words in 10 decks; 50 sentences in 2 decks; 75 phrases in 6 categories; 26 grammar lessons; More Kanji; the lines said back; 5 scenarios | planned (§14) |
+| Intermediate | 254 words in 10 decks; 50 sentences in 2 decks; 75 phrases in 6 categories; 26 grammar lessons; More Kanji; the lines said back; 5 scenarios | 258 words in 10 decks; 50 sentences in 2 decks; 73 phrases in 6 categories; 22 grammar lessons; 30 more lines said back; 6 scenarios |
 
-These are the counts for v19. `npm test` prints them as it validates.
+These are the counts for v20. `npm test` prints them as it validates.
 
 **Japanese, for English speakers.** Each level is listed in next-step order (`step`). Decks marked \* are its starters, added by placement or by moving up.
 
@@ -396,6 +402,25 @@ These are the counts for v19. `npm test` prints them as it validates.
   - *Phrases:* hotel 10, airport and immigration 10, emergencies and health 10.
   - *Words:* katakana English that means something else 44, New Zealand words 29.
   - The 30 lessons below, the listening lines, and the seven scenarios.
+- **Intermediate:**
+  - *Words:* feelings and reactions 25\*.
+  - *Phrases:* reactions 13\*.
+  - *Words:* people and social life 26\*.
+  - *Sentences:* talking about yourself 25.
+  - *Words:* personality 25.
+  - *Phrases:* making plans 12.
+  - *Words:* opinions and ideas 26.
+  - *Phrases:* opinions, agreeing and disagreeing 12.
+  - *Words:* travel 26.
+  - *Phrases:* friends 12.
+  - *Words:* health 26.
+  - *Phrases:* the doctor and the pharmacy 12.
+  - *Words:* work 26.
+  - *Sentences:* out and about 25.
+  - *Words:* home 26.
+  - *Phrases:* problems and complaints 12.
+  - *Words:* problems 26, more phrasal verbs 26.
+  - The 22 Intermediate lessons (§2.6), the second set of lines said back, and six scenarios.
 - **Basic lesson groups:**
   - お願いする: *I'd like…*, *Can I have…?*, *Could I get…?*
   - たずねる: *Do you have…?*, *Is this…?*, *Where's…?*, *How much…?*
@@ -548,13 +573,13 @@ Wayword/
 │   │                   5 character sets, words/ (23), sentences/ (3), grammar/ (46),
 │   │                   connectors/ (16), listening/ (2), scenarios/ (13), and dictionary.json
 │   │                   (JMdict, CC BY-SA 4.0, §6.14)
-│   └── en/             English, for Japanese speakers: manifest.json, 10 phrase categories,
-│                       words/ (14), sentences/ (1), grammar/ (18), patterns/ (7),
-│                       connectors/ (23), listening/ (2), scenarios/ (7)
+│   └── en/             English, for Japanese speakers: manifest.json, 16 phrase categories,
+│                       words/ (24), sentences/ (3), grammar/ (40), patterns/ (7),
+│                       connectors/ (23), listening/ (3), scenarios/ (13)
 ├── audio/
 │   ├── ja/             1,725 clips: phrases at the top level; casual/ chars/ connectors/
 │   │                   grammar/ listening/ scenario/ sentences/ words/
-│   └── en/             846 clips: phrases at the top level; connectors/ grammar/ listening/
+│   └── en/             1,374 clips: phrases at the top level; connectors/ grammar/ listening/
 │                       patterns/ scenario/ sentences/ words/
 ├── icons/              192, 512, maskable 512 and 180 (apple-touch) PNGs, from tools/make-icons.mjs
 ├── tools/              Node scripts: dev server, generators, test suites, deploy (§11.2)
@@ -771,6 +796,7 @@ The kana files are generated by `npm run kana`; the kanji files are written by h
   - The file needs at least 3 items, since each question offers three meanings.
 - **`contrasts`:** `{ schemaVersion, id, title, description, sets: [{ id, sound, note, pairs: [[word, word], …] }] }`.
   - A word is `{ id, english, japanese, audio }`. Japanese words are written in kana: the pair is about sound.
+- **More than one set of a kind:** a course can have several sets of each kind, each at its own level (the English course has `replies` at Basic and `replies-more` at Intermediate). The listening page gives each set its own section, and the drill draws on all of them up to the learner's level.
   - A pair is two different words.
 
 ### 6.9 Scenarios
@@ -1227,7 +1253,7 @@ Settings defaults: `newPerDay` 10, `newCharsPerDay` 15, directions recognition a
 
   A scenario reply that references a phrase plays that phrase's clip; an inline reply has none.
 - **No speech at runtime:** the app never synthesises speech for bundled content.
-- **The totals:** Japanese 1,725 clips (22.6 MB), English 846 (11.7 MB).
+- **The totals:** Japanese 1,725 clips (22.6 MB), English 1,374 (19.0 MB).
 
 ### 9.2 Generating clips
 
@@ -1283,7 +1309,7 @@ Six Japanese words whose kana spelling is a common homophone (あめ, かえる,
 
 ### 10.1 Caches
 
-- **`wayword-<version>`** (`wayword-v19`): one cache per version, holding the app and the courses this device keeps.
+- **`wayword-<version>`** (`wayword-v20`): one cache per version, holding the app and the courses this device keeps.
 - **`wayword-kept`** isn't versioned. It holds `./__kept-courses.json`, the ids of the courses this device keeps, and `./__connection.json`, `{ mode: "online" or "offline" }` (§10.6).
 - **Cleanup:** only caches named `wayword-…`, or with the legacy prefix `nihongo-tabi-…`, are ever deleted, because the `github.io` origin is shared with other sites. A worker deletes only caches from older versions, never a later version's.
 
@@ -1411,11 +1437,11 @@ Setup: `npm ci` installs the two dev dependencies, `jsdom` and `puppeteer-core`.
 
 | Suite | What it covers | Checks (21/10/2026) |
 |---|---|---|
-| `tools/selftest.mjs` | The content contract (§6.12), including furigana short enough to fit a line, the levels and the course dictionary; interface strings; the service-worker shell and version; SRS regressions | 63,755 |
-| `tools/integration-test.mjs` | The real modules, end to end in Node (with a filesystem `fetch` and a localStorage shim): placement and the starting level (sampling only the levels that ask for it), levels (progress, the next step, moving up, older learners, listening by level), decks, queues, grading, directions, drills, mastery, listening, backups, course isolation, the romaji modes, and the dictionary: inflections, lookups, readings, suggested furigana and saved messages | 351 |
+| `tools/selftest.mjs` | The content contract (§6.12), including furigana short enough to fit a line, the levels and the course dictionary; interface strings; the service-worker shell and version; SRS regressions | 73,015 |
+| `tools/integration-test.mjs` | The real modules, end to end in Node (with a filesystem `fetch` and a localStorage shim): placement and the starting level (sampling only the levels that ask for it), levels (progress, the next step, moving up, older learners, listening by level), decks, queues, grading, directions, drills, mastery, listening, backups, course isolation, the romaji modes, and the dictionary: inflections, lookups, readings, suggested furigana and saved messages | 353 |
 | `tools/language-pack-test.mjs` | An Esperanto course added purely as content, run through placement, the deck, the queue and grading | 13 |
 | `tools/voice-test.mjs` | The generator against a local stand-in for Azure: headers, SSML, voice choice, rate limits, the engine switch, every no-key path | 18 |
-| `tools/render-test.mjs` | Every screen of both courses rendered in jsdom, including the starting level at placement, Today's level and next step, listening only where the level has some, Learn and the lessons list by level, furigana in a lesson's pattern, whole drill sessions, backup and restore through the real buttons, the reading-aid modes, the connection setting, the update bar with Not now, and Paste a message from a message with no dictionary yet to a word added | 352 |
+| `tools/render-test.mjs` | Every screen of both courses rendered in jsdom, including the starting level at placement, Today's level and next step, listening only where the level has some, Learn and the lessons list by level, furigana in a lesson's pattern, whole drill sessions, backup and restore through the real buttons, the reading-aid modes, the connection setting, the update bar with Not now, and Paste a message from a message with no dictionary yet to a word added | 353 |
 | `tools/sw-test.mjs` | The real `sw.js` in a sandbox: registration in every boot path; installing, keeping courses, resuming and retrying over a flaky connection; one version replacing another on shared Cache Storage; a connection that never answers, and offline mode | 54 |
 | `tools/browser-check.mjs` | Headless Firefox through a proxy that can cut every connection, or stall them (take each request and never answer): install, per-course downloads, every tab online and offline, text fitting a 320px screen at the largest size, an IndexedDB backup round trip, an update while the app is open (Not now, then Update now from Settings), opening on a connection that never answers, online and in offline mode, and pasting a message offline, with a word looked up and added. `--upgrade-from <ref>` installs that build first; `--live <url>` checks the deployed site | 68 local, 63 live |
 
@@ -1510,7 +1536,7 @@ Native platforms also allow what the web app can't do without a server: schedule
 ## 14. Roadmap
 
 **Next**
-- **An Intermediate level for the English course** (roughly CEFR B1): travel and health in more depth, social conversation, opinions, plans and problems, with word and sentence decks, phrase categories, grammar lessons, scenarios and more listening.
+- **Tuning the levels after real use:** whether 80% learned is the right bar for moving up, and whether a strong placement should start at Intermediate (§7.10).
 
 **Waiting on something**
 - **The New Zealand voice for the English course.** It needs an Azure Speech key (§9.2):

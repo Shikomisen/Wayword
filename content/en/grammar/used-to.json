@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-used-to",
+  "connector": "used to",
+  "gloss": "前は〜だった",
+  "title": "used to — 前はよく〜した、前は〜だった",
+  "pattern": "I used to … ／ I didn’t use to … ／ Did you use to …?",
+  "explanation": "used to ＋ 動詞の原形で、「（今はちがうけれど）前はよく〜した、前は〜だった」。I used to live in Osaka.（前は大阪に住んでいました）。否定と疑問では use to（d なし）：I didn’t use to like coffee.",
+  "natural": "昔の習慣や変化を話す時に：I used to play rugby.（昔ラグビーをしていました）",
+  "stiff": "「〜に慣れている」は be used to ＋ -ing という別の表現です：I’m used to driving on the left.（左側通行には慣れています）。混ぜないように。",
+  "examples": [
+    {
+      "id": "gx-used-to-1",
+      "english": "I used to live in Osaka.",
+      "japanese": "前は大阪に住んでいました。",
+      "chunks": [
+        {
+          "t": "I used to live ",
+          "w": "w-live"
+        },
+        {
+          "t": "in Osaka."
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "used to",
+        "after": " live in Osaka.",
+        "options": [
+          "used to",
+          "use to",
+          "was used to"
+        ],
+        "why": "「前は〜した」は used to ＋ 原形。"
+      },
+      "audio": "audio/en/grammar/gx-used-to-1.mp3",
+      "tags": [
+        "文法",
+        "used to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-used-to-2",
+      "english": "She used to work in a café.",
+      "japanese": "彼女は前、カフェで働いていました。",
+      "chunks": [
+        {
+          "t": "She used to work ",
+          "w": "w-work"
+        },
+        {
+          "t": "in a café."
+        }
+      ],
+      "gap": {
+        "before": "She used to ",
+        "answer": "work",
+        "after": " in a café.",
+        "options": [
+          "work",
+          "working",
+          "worked"
+        ],
+        "why": "used to の後は動詞の原形。"
+      },
+      "audio": "audio/en/grammar/gx-used-to-2.mp3",
+      "tags": [
+        "文法",
+        "used to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-used-to-3",
+      "english": "I didn’t use to like coffee.",
+      "japanese": "前はコーヒーが好きじゃありませんでした。",
+      "chunks": [
+        {
+          "t": "I didn’t use to like ",
+          "w": "w-like"
+        },
+        {
+          "t": "coffee.",
+          "w": "w-coffee"
+        }
+      ],
+      "gap": {
+        "before": "I didn’t ",
+        "answer": "use to",
+        "after": " like coffee.",
+        "options": [
+          "use to",
+          "used to",
+          "using"
+        ],
+        "why": "didn’t の後は use to（d をつけません）。発音は同じです。"
+      },
+      "audio": "audio/en/grammar/gx-used-to-3.mp3",
+      "tags": [
+        "文法",
+        "used to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-used-to-4",
+      "english": "Did you use to play any sports?",
+      "japanese": "昔、何かスポーツをしていましたか？",
+      "chunks": [
+        {
+          "t": "Did you use to play ",
+          "w": "w-play"
+        },
+        {
+          "t": "any sports?"
+        }
+      ],
+      "gap": {
+        "before": "Did you ",
+        "answer": "use to",
+        "after": " play any sports?",
+        "options": [
+          "use to",
+          "used to",
+          "using to"
+        ],
+        "why": "疑問文でも did の後は use to。"
+      },
+      "audio": "audio/en/grammar/gx-used-to-4.mp3",
+      "tags": [
+        "文法",
+        "used to"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -7,7 +7,7 @@
   "pattern": "There is ＋ 1つのもの / There are ＋ 複数のもの / Is there …?",
   "explanation": "「〜がある（いる）」は There is（1つ）、There are（複数）。会話では There’s と短くします：There’s a café near the station.（駅の近くにカフェがあります）。質問は Is there…? / Are there…?、否定は There isn’t… / There aren’t…。",
   "natural": "場所をたずねる時にとても便利です：Is there a supermarket near here?（この近くにスーパーはありますか）。",
-  "stiff": "「〜がある」を have で言ってしまいがちです：Near here have a café. は×。There’s a café near here.。",
+  "stiff": "「〜がある」を have で言ってしまいがちです：Near here have a café. は×。There’s a café near here.",
   "examples": [
     {
       "id": "gx-there-is-1",

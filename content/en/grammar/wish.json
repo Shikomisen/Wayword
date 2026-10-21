@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-wish",
+  "connector": "I wish…",
+  "gloss": "〜だったらいいのに",
+  "title": "I wish… — 〜だったらいいのに",
+  "pattern": "I wish ＋ 過去形 ／ I wish I could …",
+  "explanation": "I wish の後に過去形を続けると、「（実際はちがうけれど）〜だったらいいのに」という願いになります：I wish I had a car.（車があればいいのに）。できないことには I wish I could …：I wish I could stay longer.（もっといられたらいいのに）。",
+  "natural": "残念な気持ちをやわらかく伝える時に：I wish I could come, but I’m working.（行けたらいいんだけど、仕事なんだ）",
+  "stiff": "これからのことを願う「〜しますように」は hope：I hope it’s sunny tomorrow.I wish it’s sunny. はまちがい。",
+  "examples": [
+    {
+      "id": "gx-wish-1",
+      "english": "I wish I could stay longer.",
+      "japanese": "もっと長くいられたらいいのに。",
+      "chunks": [
+        {
+          "t": "I wish "
+        },
+        {
+          "t": "I could stay "
+        },
+        {
+          "t": "longer.",
+          "w": "w-long"
+        }
+      ],
+      "gap": {
+        "before": "I wish I ",
+        "answer": "could",
+        "after": " stay longer.",
+        "options": [
+          "could",
+          "can",
+          "will"
+        ],
+        "why": "できないことを願う時は I wish I could …。"
+      },
+      "audio": "audio/en/grammar/gx-wish-1.mp3",
+      "tags": [
+        "文法",
+        "I wish…"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-wish-2",
+      "english": "I wish I had more holidays.",
+      "japanese": "もっと休みがあればいいのに。",
+      "chunks": [
+        {
+          "t": "I wish "
+        },
+        {
+          "t": "I had ",
+          "w": "w-have"
+        },
+        {
+          "t": "more holidays."
+        }
+      ],
+      "gap": {
+        "before": "I wish I ",
+        "answer": "had",
+        "after": " more holidays.",
+        "options": [
+          "had",
+          "have",
+          "will have"
+        ],
+        "why": "I wish の後は過去形。"
+      },
+      "audio": "audio/en/grammar/gx-wish-2.mp3",
+      "tags": [
+        "文法",
+        "I wish…"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-wish-3",
+      "english": "I wish it wasn’t so cold.",
+      "japanese": "こんなに寒くなければいいのに。",
+      "chunks": [
+        {
+          "t": "I wish "
+        },
+        {
+          "t": "it wasn’t "
+        },
+        {
+          "t": "so cold.",
+          "w": "w-cold"
+        }
+      ],
+      "gap": {
+        "before": "I wish it ",
+        "answer": "wasn’t",
+        "after": " so cold.",
+        "options": [
+          "wasn’t",
+          "isn’t",
+          "won’t be"
+        ],
+        "why": "I wish の後は過去形（isn’t → wasn’t）。"
+      },
+      "audio": "audio/en/grammar/gx-wish-3.mp3",
+      "tags": [
+        "文法",
+        "I wish…"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-wish-4",
+      "english": "I hope you have a great trip.",
+      "japanese": "すてきな旅行になりますように。",
+      "chunks": [
+        {
+          "t": "I hope ",
+          "w": "w-hope"
+        },
+        {
+          "t": "you have "
+        },
+        {
+          "t": "a great trip."
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "hope",
+        "after": " you have a great trip.",
+        "options": [
+          "hope",
+          "wish",
+          "want"
+        ],
+        "why": "これからのことを願うのは hope。wish は「〜だったらいいのに」。"
+      },
+      "audio": "audio/en/grammar/gx-wish-4.mp3",
+      "tags": [
+        "文法",
+        "I wish…"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

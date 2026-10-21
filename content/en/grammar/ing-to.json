@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ing-to",
+  "connector": "-ing / to",
+  "gloss": "〜すること",
+  "title": "enjoy -ing, decide to — -ing と to の使い分け",
+  "pattern": "enjoy / finish / mind ＋ -ing ／ want / decide / need ＋ to …",
+  "explanation": "動詞の後に別の動詞を続ける時、-ing を使う動詞と、to ＋ 原形を使う動詞があります。enjoy、finish、mind、keep は -ing：I enjoy cooking.want、decide、hope、plan、need は to：I decided to stay.like、love、start は両方使えます。",
+  "natural": "好きなことを話す時に：I really enjoy hiking.（ハイキングが大好きです）。Do you mind waiting?（待ってもらってもいいですか）",
+  "stiff": "I enjoy to cook. はまちがいで、I enjoy cooking.stop smoking（禁煙する）と stop to smoke（タバコを吸うために立ち止まる）は意味がちがいます。",
+  "examples": [
+    {
+      "id": "gx-ing-to-1",
+      "english": "I really enjoy cooking.",
+      "japanese": "料理するのが大好きです。",
+      "chunks": [
+        {
+          "t": "I really enjoy "
+        },
+        {
+          "t": "cooking.",
+          "w": "w-cook"
+        }
+      ],
+      "gap": {
+        "before": "I really enjoy ",
+        "answer": "cooking",
+        "after": ".",
+        "options": [
+          "cooking",
+          "to cook",
+          "cook"
+        ],
+        "why": "enjoy の後は -ing。"
+      },
+      "audio": "audio/en/grammar/gx-ing-to-1.mp3",
+      "tags": [
+        "文法",
+        "-ing / to"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-ing-to-2",
+      "english": "We decided to stay another night.",
+      "japanese": "もう一泊することにしました。",
+      "chunks": [
+        {
+          "t": "We decided ",
+          "w": "w-decide"
+        },
+        {
+          "t": "to stay "
+        },
+        {
+          "t": "another night.",
+          "w": "w-night"
+        }
+      ],
+      "gap": {
+        "before": "We decided ",
+        "answer": "to stay",
+        "after": " another night.",
+        "options": [
+          "to stay",
+          "staying",
+          "stay"
+        ],
+        "why": "decide の後は to ＋ 原形。"
+      },
+      "audio": "audio/en/grammar/gx-ing-to-2.mp3",
+      "tags": [
+        "文法",
+        "-ing / to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ing-to-3",
+      "english": "Do you mind waiting a few minutes?",
+      "japanese": "何分か待っていただいてもいいですか？",
+      "chunks": [
+        {
+          "t": "Do you mind "
+        },
+        {
+          "t": "waiting ",
+          "w": "w-wait"
+        },
+        {
+          "t": "a few minutes?"
+        }
+      ],
+      "gap": {
+        "before": "Do you mind ",
+        "answer": "waiting",
+        "after": " a few minutes?",
+        "options": [
+          "waiting",
+          "to wait",
+          "wait"
+        ],
+        "why": "mind の後は -ing。Do you mind …ing? はていねいなお願いです。"
+      },
+      "audio": "audio/en/grammar/gx-ing-to-3.mp3",
+      "tags": [
+        "文法",
+        "-ing / to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ing-to-4",
+      "english": "I need to finish this by Friday.",
+      "japanese": "金曜日までにこれを終わらせないといけません。",
+      "chunks": [
+        {
+          "t": "I need to finish ",
+          "w": "w-finish"
+        },
+        {
+          "t": "this ",
+          "w": "w-this"
+        },
+        {
+          "t": "by Friday.",
+          "w": "w-friday"
+        }
+      ],
+      "gap": {
+        "before": "I need ",
+        "answer": "to finish",
+        "after": " this by Friday.",
+        "options": [
+          "to finish",
+          "finishing",
+          "finish"
+        ],
+        "why": "need の後は to ＋ 原形。"
+      },
+      "audio": "audio/en/grammar/gx-ing-to-4.mp3",
+      "tags": [
+        "文法",
+        "-ing / to"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

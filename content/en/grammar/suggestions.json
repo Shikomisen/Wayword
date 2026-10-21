@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-suggestions",
+  "connector": "Why don’t we…?",
+  "gloss": "〜しない？（提案）",
+  "title": "Why don’t we…?, How about…? — 提案する",
+  "pattern": "Why don’t we …? ／ Shall we …? ／ How about …ing? ／ Let’s …",
+  "explanation": "提案の言い方はいくつもあります。Let’s … はいちばんストレート。Why don’t we …? と Shall we …? は「〜しない？」とやわらかく誘う形。How about の後は -ing か名詞です：How about going to the beach?",
+  "natural": "友だちと予定を決める時に：Why don’t we get takeaways tonight?（今夜はテイクアウトにしない？）",
+  "stiff": "Why don’t we …? は「なぜ〜しないの？」と責めているのではなく、提案です。How about go … はまちがいで、How about going …。",
+  "examples": [
+    {
+      "id": "gx-suggestions-1",
+      "english": "Why don’t we get takeaways tonight?",
+      "japanese": "今夜はテイクアウトにしない？",
+      "chunks": [
+        {
+          "t": "Why don’t we get ",
+          "w": "w-get"
+        },
+        {
+          "t": "takeaways ",
+          "w": "w-takeaway"
+        },
+        {
+          "t": "tonight?"
+        }
+      ],
+      "gap": {
+        "before": "Why ",
+        "answer": "don’t",
+        "after": " we get takeaways tonight?",
+        "options": [
+          "don’t",
+          "not",
+          "do"
+        ],
+        "why": "Why don’t we …? で「〜しない？」。"
+      },
+      "audio": "audio/en/grammar/gx-suggestions-1.mp3",
+      "tags": [
+        "文法",
+        "Why don’t we…?"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-suggestions-2",
+      "english": "How about going to the beach?",
+      "japanese": "ビーチに行くのはどう？",
+      "chunks": [
+        {
+          "t": "How about "
+        },
+        {
+          "t": "going ",
+          "w": "w-go"
+        },
+        {
+          "t": "to the beach?",
+          "w": "w-beach"
+        }
+      ],
+      "gap": {
+        "before": "How about ",
+        "answer": "going",
+        "after": " to the beach?",
+        "options": [
+          "going",
+          "go",
+          "to go"
+        ],
+        "why": "How about の後は -ing。"
+      },
+      "audio": "audio/en/grammar/gx-suggestions-2.mp3",
+      "tags": [
+        "文法",
+        "Why don’t we…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-suggestions-3",
+      "english": "Shall we meet at the station?",
+      "japanese": "駅で待ち合わせしようか？",
+      "chunks": [
+        {
+          "t": "Shall we meet ",
+          "w": "w-meet"
+        },
+        {
+          "t": "at the station?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Shall",
+        "after": " we meet at the station?",
+        "options": [
+          "Shall",
+          "Will",
+          "Do"
+        ],
+        "why": "「〜しようか」は Shall we …?"
+      },
+      "audio": "audio/en/grammar/gx-suggestions-3.mp3",
+      "tags": [
+        "文法",
+        "Why don’t we…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-suggestions-4",
+      "english": "Let’s ask someone for directions.",
+      "japanese": "誰かに道を聞こうよ。",
+      "chunks": [
+        {
+          "t": "Let’s ask ",
+          "w": "w-ask"
+        },
+        {
+          "t": "someone "
+        },
+        {
+          "t": "for directions."
+        }
+      ],
+      "gap": {
+        "before": "Let’s ",
+        "answer": "ask",
+        "after": " someone for directions.",
+        "options": [
+          "ask",
+          "asking",
+          "to ask"
+        ],
+        "why": "Let’s の後は原形。"
+      },
+      "audio": "audio/en/grammar/gx-suggestions-4.mp3",
+      "tags": [
+        "文法",
+        "Why don’t we…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

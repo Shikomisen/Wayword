@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-phrasal",
+  "title": "句動詞（中級）",
+  "description": "会話でよく使う句動詞の続き。予定の変更、人との付き合い、気持ちの切り替え。",
+  "items": [
+    {
+      "id": "w-get-up",
+      "english": "get up",
+      "japanese": "起きる（ベッドから出る）",
+      "pos": "verb",
+      "audio": "audio/en/words/w-get-up.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-give-up",
+      "english": "give up",
+      "japanese": "あきらめる、やめる",
+      "pos": "verb",
+      "registerNotes": "Don’t give up!（あきらめないで）",
+      "audio": "audio/en/words/w-give-up.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-look-forward-to",
+      "english": "look forward to",
+      "japanese": "楽しみにする",
+      "pos": "verb",
+      "registerNotes": "I’m looking forward to it.（楽しみにしています）",
+      "pitfallNote": "to の後は名詞か -ing：looking forward to seeing you（会えるのを楽しみに）。",
+      "audio": "audio/en/words/w-look-forward-to.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-put-off",
+      "english": "put off",
+      "japanese": "延期する、後回しにする",
+      "pos": "verb",
+      "audio": "audio/en/words/w-put-off.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-call-off",
+      "english": "call off",
+      "japanese": "中止する",
+      "pos": "verb",
+      "registerNotes": "The game was called off.（試合は中止になった）",
+      "audio": "audio/en/words/w-call-off.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-come-up",
+      "english": "come up",
+      "japanese": "（用事・話題が）出てくる",
+      "pos": "verb",
+      "registerNotes": "Something’s come up.（急な用事ができて）",
+      "audio": "audio/en/words/w-come-up.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-get-back",
+      "english": "get back",
+      "japanese": "戻る、帰る",
+      "pos": "verb",
+      "registerNotes": "I’ll get back to you.（また連絡します）",
+      "audio": "audio/en/words/w-get-back.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-go-on",
+      "english": "go on",
+      "japanese": "続く、起こる",
+      "pos": "verb",
+      "registerNotes": "What’s going on?（どうしたの？何があったの？）",
+      "audio": "audio/en/words/w-go-on.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-run-into",
+      "english": "run into",
+      "japanese": "ばったり会う",
+      "pos": "verb",
+      "registerNotes": "I ran into Sam at the supermarket.（スーパーでサムにばったり会った）",
+      "audio": "audio/en/words/w-run-into.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-look-up",
+      "english": "look up",
+      "japanese": "調べる",
+      "pos": "verb",
+      "registerNotes": "I’ll look it up.（調べてみます）",
+      "audio": "audio/en/words/w-look-up.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-turn-up",
+      "english": "turn up",
+      "japanese": "現れる、（音量を）上げる",
+      "pos": "verb",
+      "audio": "audio/en/words/w-turn-up.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-turn-down",
+      "english": "turn down",
+      "japanese": "断る、（音量を）下げる",
+      "pos": "verb",
+      "audio": "audio/en/words/w-turn-down.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bring-up",
+      "english": "bring up",
+      "japanese": "（話題を）持ち出す、育てる",
+      "pos": "verb",
+      "audio": "audio/en/words/w-bring-up.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-carry-on",
+      "english": "carry on",
+      "japanese": "続ける",
+      "pos": "verb",
+      "registerNotes": "Carry on!（どうぞ続けて）",
+      "audio": "audio/en/words/w-carry-on.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-come-over",
+      "english": "come over",
+      "japanese": "（家に）来る、遊びに来る",
+      "pos": "verb",
+      "registerNotes": "Do you want to come over?（うちに来ない？）",
+      "audio": "audio/en/words/w-come-over.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-get-over",
+      "english": "get over",
+      "japanese": "立ち直る、（病気が）治る",
+      "pos": "verb",
+      "audio": "audio/en/words/w-get-over.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-head-off",
+      "english": "head off",
+      "japanese": "出発する、帰る",
+      "pos": "verb",
+      "registerNotes": "I’d better head off.（そろそろ帰らなきゃ）。くだけた言い方。",
+      "audio": "audio/en/words/w-head-off.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-pop-in",
+      "english": "pop in",
+      "japanese": "ちょっと立ち寄る",
+      "pos": "verb",
+      "registerNotes": "ニュージーランドやイギリスのくだけた言い方。",
+      "audio": "audio/en/words/w-pop-in.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-show-up",
+      "english": "show up",
+      "japanese": "来る、現れる",
+      "pos": "verb",
+      "registerNotes": "He didn’t show up.（彼は来なかった）",
+      "audio": "audio/en/words/w-show-up.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-make-up",
+      "english": "make up",
+      "japanese": "仲直りする、作り上げる",
+      "pos": "verb",
+      "audio": "audio/en/words/w-make-up.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-try-out",
+      "english": "try out",
+      "japanese": "試してみる",
+      "pos": "verb",
+      "audio": "audio/en/words/w-try-out.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-go-ahead",
+      "english": "go ahead",
+      "japanese": "どうぞ、先に進める",
+      "pos": "verb",
+      "registerNotes": "Go ahead.（どうぞ）",
+      "audio": "audio/en/words/w-go-ahead.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hold-up",
+      "english": "hold up",
+      "japanese": "遅らせる、引き止める",
+      "pos": "verb",
+      "registerNotes": "Sorry, I got held up.（遅くなってごめん、つかまっちゃって）",
+      "audio": "audio/en/words/w-hold-up.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sleep-in",
+      "english": "sleep in",
+      "japanese": "朝ゆっくり寝る",
+      "pos": "verb",
+      "registerNotes": "I slept in.（寝坊した）",
+      "audio": "audio/en/words/w-sleep-in.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chill-out",
+      "english": "chill out",
+      "japanese": "のんびりする、落ち着く",
+      "pos": "verb",
+      "registerNotes": "くだけた言い方。",
+      "audio": "audio/en/words/w-chill-out.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-come-across",
+      "english": "come across",
+      "japanese": "偶然見つける、（〜という）印象を与える",
+      "pos": "verb",
+      "audio": "audio/en/words/w-come-across.mp3",
+      "tags": [
+        "句動詞"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

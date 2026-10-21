@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-travel",
+  "title": "旅行・観光",
+  "description": "便、搭乗券、宿、お土産。旅先で困らないための言葉。",
+  "items": [
+    {
+      "id": "w-sightseeing",
+      "english": "sightseeing",
+      "japanese": "観光",
+      "pos": "noun",
+      "registerNotes": "go sightseeing（観光する）",
+      "audio": "audio/en/words/w-sightseeing.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tourist",
+      "english": "tourist",
+      "japanese": "観光客",
+      "pos": "noun",
+      "audio": "audio/en/words/w-tourist.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-luggage",
+      "english": "luggage",
+      "japanese": "荷物、スーツケース",
+      "pos": "noun",
+      "pitfallNote": "luggage は数えません。luggages ではなく two bags、a piece of luggage。",
+      "audio": "audio/en/words/w-luggage.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-backpack",
+      "english": "backpack",
+      "japanese": "リュック",
+      "pos": "noun",
+      "audio": "audio/en/words/w-backpack.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-passport",
+      "english": "passport",
+      "japanese": "パスポート",
+      "pos": "noun",
+      "audio": "audio/en/words/w-passport.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-flight",
+      "english": "flight",
+      "japanese": "便、フライト",
+      "pos": "noun",
+      "registerNotes": "My flight is at six.（6時の便です）",
+      "audio": "audio/en/words/w-flight.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-delayed",
+      "english": "delayed",
+      "japanese": "遅れている",
+      "pos": "adjective",
+      "registerNotes": "The flight is delayed.（便が遅れています）",
+      "audio": "audio/en/words/w-delayed.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-departure",
+      "english": "departure",
+      "japanese": "出発",
+      "pos": "noun",
+      "registerNotes": "空港の Departures は「出発ロビー、出発便」。",
+      "audio": "audio/en/words/w-departure.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-arrival",
+      "english": "arrival",
+      "japanese": "到着",
+      "pos": "noun",
+      "registerNotes": "空港の Arrivals は「到着ロビー、到着便」。",
+      "audio": "audio/en/words/w-arrival.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-boarding-pass",
+      "english": "boarding pass",
+      "japanese": "搭乗券",
+      "pos": "noun",
+      "audio": "audio/en/words/w-boarding-pass.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-return-ticket",
+      "english": "return ticket",
+      "japanese": "往復切符",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドやイギリスでは return、アメリカでは round-trip。",
+      "audio": "audio/en/words/w-return-ticket.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-one-way",
+      "english": "one-way",
+      "japanese": "片道の",
+      "pos": "adjective",
+      "registerNotes": "a one-way ticket（片道切符）",
+      "audio": "audio/en/words/w-one-way.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-accommodation",
+      "english": "accommodation",
+      "japanese": "宿、宿泊先",
+      "pos": "noun",
+      "registerNotes": "Have you booked accommodation?（宿は予約した？）",
+      "audio": "audio/en/words/w-accommodation.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hostel",
+      "english": "hostel",
+      "japanese": "ホステル（相部屋の安い宿）",
+      "pos": "noun",
+      "audio": "audio/en/words/w-hostel.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-check-in",
+      "english": "check in",
+      "japanese": "チェックインする",
+      "pos": "verb",
+      "registerNotes": "Can I check in early?（早めにチェックインできますか）",
+      "audio": "audio/en/words/w-check-in.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-view",
+      "english": "view",
+      "japanese": "景色、眺め",
+      "pos": "noun",
+      "registerNotes": "a room with a view（眺めのいい部屋）",
+      "audio": "audio/en/words/w-view.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-beach",
+      "english": "beach",
+      "japanese": "ビーチ、浜辺",
+      "pos": "noun",
+      "audio": "audio/en/words/w-beach.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-lake",
+      "english": "lake",
+      "japanese": "湖",
+      "pos": "noun",
+      "audio": "audio/en/words/w-lake.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mountain",
+      "english": "mountain",
+      "japanese": "山",
+      "pos": "noun",
+      "audio": "audio/en/words/w-mountain.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-souvenir",
+      "english": "souvenir",
+      "japanese": "記念品、お土産",
+      "pos": "noun",
+      "pitfallNote": "souvenir は自分用の記念品にも使います。人に渡すお土産は a gift、a little something とも。",
+      "audio": "audio/en/words/w-souvenir.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tour",
+      "english": "tour",
+      "japanese": "ツアー",
+      "pos": "noun",
+      "registerNotes": "a day tour（日帰りツアー）",
+      "audio": "audio/en/words/w-tour.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-rental-car",
+      "english": "rental car",
+      "japanese": "レンタカー",
+      "pos": "noun",
+      "registerNotes": "イギリスでは hire car とも。ニュージーランドは左側通行です。",
+      "audio": "audio/en/words/w-rental-car.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-insurance",
+      "english": "insurance",
+      "japanese": "保険",
+      "pos": "noun",
+      "registerNotes": "travel insurance（旅行保険）",
+      "audio": "audio/en/words/w-insurance.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-local",
+      "english": "local",
+      "japanese": "地元の、地元の人",
+      "pos": "adjective",
+      "registerNotes": "Ask a local.（地元の人に聞いてみて）",
+      "audio": "audio/en/words/w-local.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-recommend",
+      "english": "recommend",
+      "japanese": "すすめる",
+      "pos": "verb",
+      "registerNotes": "What do you recommend?（おすすめは何ですか）",
+      "pitfallNote": "recommend me … とは言いません。Can you recommend a good place?",
+      "audio": "audio/en/words/w-recommend.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-explore",
+      "english": "explore",
+      "japanese": "歩き回る、探検する",
+      "pos": "verb",
+      "audio": "audio/en/words/w-explore.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

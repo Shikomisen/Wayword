@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-if-would",
+  "connector": "If I were…",
+  "gloss": "もし〜だったら（現実とちがう）",
+  "title": "If I had…, I’d… — もし〜だったら（現実とちがうこと）",
+  "pattern": "If ＋ 過去形, would ＋ 原形 ／ If I were you, …",
+  "explanation": "現実とはちがうこと、ありえなさそうなことの「もし〜だったら」は、if の後を過去形にして、結果を would で言います：If I had more time, I’d travel more.（もっと時間があったら、もっと旅行するのに）。形は過去でも、話しているのは今のことです。be動詞は were がよく使われます：If I were you, …（私があなただったら）。",
+  "natural": "アドバイスの決まり文句：If I were you, I’d see a doctor.（私だったら医者に行くな）",
+  "stiff": "if の後に would を入れるのはまちがい：If I would have … ではなく If I had …。",
+  "examples": [
+    {
+      "id": "gx-if-would-1",
+      "english": "If I had more time, I’d travel more.",
+      "japanese": "もっと時間があったら、もっと旅行するのに。",
+      "chunks": [
+        {
+          "t": "If I had more time, ",
+          "w": "w-have"
+        },
+        {
+          "t": "I’d travel more."
+        }
+      ],
+      "gap": {
+        "before": "If I ",
+        "answer": "had",
+        "after": " more time, I’d travel more.",
+        "options": [
+          "had",
+          "have",
+          "would have"
+        ],
+        "why": "現実とちがう「もし」は if ＋ 過去形。"
+      },
+      "audio": "audio/en/grammar/gx-if-would-1.mp3",
+      "tags": [
+        "文法",
+        "If I were…"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-if-would-2",
+      "english": "If I were you, I’d see a doctor.",
+      "japanese": "私だったら、医者に診てもらうな。",
+      "chunks": [
+        {
+          "t": "If I were you, ",
+          "w": "w-you"
+        },
+        {
+          "t": "I’d see ",
+          "w": "w-see"
+        },
+        {
+          "t": "a doctor.",
+          "w": "w-doctor"
+        }
+      ],
+      "gap": {
+        "before": "If I ",
+        "answer": "were",
+        "after": " you, I’d see a doctor.",
+        "options": [
+          "were",
+          "was",
+          "am"
+        ],
+        "ok": [
+          "was"
+        ],
+        "note": "If I was you も会話ではよく聞きます。were のほうが正式な形です。",
+        "why": "If I were you（私があなたなら）は決まり文句。"
+      },
+      "audio": "audio/en/grammar/gx-if-would-2.mp3",
+      "tags": [
+        "文法",
+        "If I were…"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-if-would-3",
+      "english": "What would you do if you won the lottery?",
+      "japanese": "宝くじが当たったらどうする？",
+      "chunks": [
+        {
+          "t": "What would you do ",
+          "w": "w-do"
+        },
+        {
+          "t": "if you won "
+        },
+        {
+          "t": "the lottery?"
+        }
+      ],
+      "gap": {
+        "before": "What ",
+        "answer": "would",
+        "after": " you do if you won the lottery?",
+        "options": [
+          "would",
+          "will",
+          "do"
+        ],
+        "why": "現実とちがう「もし」の結果は would。"
+      },
+      "audio": "audio/en/grammar/gx-if-would-3.mp3",
+      "tags": [
+        "文法",
+        "If I were…"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-if-would-4",
+      "english": "It would be great if you could come.",
+      "japanese": "来てもらえたらうれしいです。",
+      "chunks": [
+        {
+          "t": "It would be great "
+        },
+        {
+          "t": "if you could come.",
+          "w": "w-come"
+        }
+      ],
+      "gap": {
+        "before": "It ",
+        "answer": "would",
+        "after": " be great if you could come.",
+        "options": [
+          "would",
+          "will",
+          "is"
+        ],
+        "why": "控えめなお願いや気持ちにも would を使います。"
+      },
+      "audio": "audio/en/grammar/gx-if-would-4.mp3",
+      "tags": [
+        "文法",
+        "If I were…"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

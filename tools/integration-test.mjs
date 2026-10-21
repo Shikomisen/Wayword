@@ -814,7 +814,7 @@ check('switching course switches storage', store.namespace() === 'ja-en');
 check('switching course switches the interface to the speaker\'s language', i18n.getLang() === 'ja');
 
 const en = await loadContent();
-check('ja-en loads its own manifest', en.manifest.language === 'en' && en.categories.length === 10,
+check('ja-en loads its own manifest', en.manifest.language === 'en' && en.categories.length === 16,
   `${en.categories.length} categories, ${en.phrases.size} phrases`);
 check('every ja-en category loaded with phrases', en.categories.every((c) => !c.missing && c.phrases.length > 0));
 
@@ -837,8 +837,8 @@ check('…with their notes under the course\'s own labels', flatWhite.notes[0]?.
   flatWhite.notes.map((n) => n.label).join(', '));
 check('every ja-en word and sentence deck loads',
   en.decks.length === en.manifest.decks.length && en.decks.every((d) => !d.missing && d.items.length > 0) &&
-    en.decks.filter((d) => d.type === 'words').length === 14 && en.decks.some((d) => d.type === 'sentences') &&
-    en.decks.filter((d) => d.level === 'first-steps').length === 6,
+    en.decks.filter((d) => d.type === 'words').length === 24 && en.decks.filter((d) => d.type === 'sentences').length === 3 &&
+    en.decks.filter((d) => d.level === 'first-steps').length === 6 && en.decks.filter((d) => d.level === 'intermediate').length === 12,
   en.decks.map((d) => `${d.id} ${d.items.length}`).join(', '));
 check('…the everyday words among them', ['w-get', 'w-pick-up', 'w-gst', 'w-power-point', 'w-kia-ora']
   .every((id) => en.phrases.get(id)?.kind === 'word'));
@@ -851,14 +851,14 @@ check('everyday sentences are cut into pieces linked to the words they use',
   `${everyday.items.length} sentences`);
 
 const patterns = en.lessons;
-check('the lessons load — first-steps grammar, patterns, polite phrasing, linking words, word order — each with 3–5 examples with audio',
-  patterns.length === en.manifest.lessons.length && patterns.length === 48 &&
-    patterns.filter((l) => l.level === 'first-steps').length === 18 &&
+check('the lessons load — first-steps grammar, patterns, polite phrasing, linking words, word order, Intermediate grammar — each with 3–5 examples with audio',
+  patterns.length === en.manifest.lessons.length && patterns.length === 70 &&
+    patterns.filter((l) => l.level === 'first-steps').length === 18 && patterns.filter((l) => l.level === 'intermediate').length === 22 &&
     patterns.every((l) => !l.missing && l.items.length >= 3 && l.items.length <= 5 &&
       l.items.every((x) => x.audio && x.targetLang === 'en')),
   patterns.map((l) => l.connector).join(' '));
-check('…in the seven groups the manifest names, the two First-steps ones first',
-  en.lessonGroups.map((g) => g.id).join(',') === 'first-sentence,first-verbs,ask,question,polite,link,order' &&
+check('…in the twelve groups the manifest names, the two First-steps ones first and the five Intermediate ones last',
+  en.lessonGroups.map((g) => g.id).join(',') === 'first-sentence,first-verbs,ask,question,polite,link,order,tenses,modals,conditionals,structures,conversation' &&
     en.lessonGroups.every((g) => patterns.some((l) => l.group === g.id)));
 const like1 = en.byCategory.get('pat-like').items[0];
 check('a pattern gap is the English sentence around it',
@@ -920,10 +920,19 @@ check('ja-en writes under its own storage prefix', [...mem.keys()].some((k) => k
 // Listening: lines said back and sound pairs, drilled daily, mastered over days.
 const listening = await import('../js/listening.js');
 const listenItems = listening.listeningItems(en.listening);
-check('the listening content loads: lines said back, and pairs of sounds',
-  en.features.listening && listenItems.filter((i) => i.kind === 'reply').length === 30 &&
-    listenItems.filter((i) => i.kind === 'contrast').length === 36,
+check('the listening content loads: lines said back (Basic and Intermediate), and pairs of sounds',
+  en.features.listening && listenItems.filter((i) => i.kind === 'reply').length === 60 &&
+    listenItems.filter((i) => i.kind === 'contrast').length === 36 &&
+    en.listening.filter((x) => x.kind === 'replies').map((x) => x.level).join() === 'basic,intermediate',
   `${listenItems.length} items`);
+check('English has a third level, Intermediate, which placement doesn\'t sample, with its path, lessons and three starters',
+  en.levels.map((l) => l.id).join() === 'first-steps,basic,intermediate' && !levelsMod.sampled(en, 'intermediate') &&
+    levelsMod.addableIn(en, 'intermediate').length === 18 && levelsMod.lessonsIn(en, 'intermediate').length === 22 &&
+    levelsMod.startersIn(en, 'intermediate').map((d) => d.id).join() === 'words-i-feelings,reactions,words-i-social',
+  levelsMod.startersIn(en, 'intermediate').map((d) => d.id).join());
+check('…and a Basic learner hears only the Basic lines said back; Intermediate adds the second set',
+  listening.listeningItems(en.listening.filter((x) => levelsMod.levelsUpTo(en, 'basic').has(x.level))).filter((i) => i.kind === 'reply').length === 30 &&
+    listening.listeningItems(en.listening.filter((x) => levelsMod.levelsUpTo(en, 'intermediate').has(x.level))).filter((i) => i.kind === 'reply').length === 60);
 const takeaway = listenItems.find((i) => i.id === 'lr-01');
 check('a line said back is English, with its meaning and something to say in return',
   takeaway.target === 'Eat in or takeaway?' && takeaway.meaningLang === 'ja' &&

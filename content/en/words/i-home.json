@@ -1,0 +1,316 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-home",
+  "title": "家・暮らし",
+  "description": "家賃、大家さん、洗濯、ごみ。部屋を借りて暮らす時の言葉。",
+  "items": [
+    {
+      "id": "w-rent",
+      "english": "rent",
+      "japanese": "家賃、借りる",
+      "pos": "noun",
+      "registerNotes": "pay the rent（家賃を払う）",
+      "audio": "audio/en/words/w-rent.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-landlord",
+      "english": "landlord",
+      "japanese": "大家",
+      "pos": "noun",
+      "registerNotes": "女性の大家は landlady とも言いますが、landlord で通じます。",
+      "audio": "audio/en/words/w-landlord.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bond",
+      "english": "bond",
+      "japanese": "（賃貸の）敷金",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドで部屋を借りる時に払う保証金。",
+      "audio": "audio/en/words/w-bond.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-move",
+      "english": "move",
+      "japanese": "引っ越す、動かす",
+      "pos": "verb",
+      "registerNotes": "move house（引っ越す）、move in（入居する）",
+      "audio": "audio/en/words/w-move.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-furniture",
+      "english": "furniture",
+      "japanese": "家具",
+      "pos": "noun",
+      "pitfallNote": "furnitures とは言いません。数える時は a piece of furniture。",
+      "audio": "audio/en/words/w-furniture.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-washing-machine",
+      "english": "washing machine",
+      "japanese": "洗濯機",
+      "pos": "noun",
+      "audio": "audio/en/words/w-washing-machine.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-laundry",
+      "english": "laundry",
+      "japanese": "洗濯物",
+      "pos": "noun",
+      "registerNotes": "do the laundry（洗濯する）。ニュージーランドでは do the washing とも。",
+      "audio": "audio/en/words/w-laundry.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-dishes",
+      "english": "dishes",
+      "japanese": "食器、皿洗い",
+      "pos": "noun",
+      "registerNotes": "do the dishes（皿洗いをする）",
+      "audio": "audio/en/words/w-dishes.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-rubbish",
+      "english": "rubbish",
+      "japanese": "ごみ",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドやイギリスでは rubbish、アメリカでは trash。",
+      "audio": "audio/en/words/w-rubbish.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-recycling",
+      "english": "recycling",
+      "japanese": "資源ごみ、リサイクル",
+      "pos": "noun",
+      "audio": "audio/en/words/w-recycling.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-vacuum",
+      "english": "vacuum",
+      "japanese": "掃除機（をかける）",
+      "pos": "verb",
+      "registerNotes": "I need to vacuum.（掃除機をかけなきゃ）",
+      "audio": "audio/en/words/w-vacuum.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tidy",
+      "english": "tidy",
+      "japanese": "片付いた、きちんとした",
+      "pos": "adjective",
+      "registerNotes": "tidy up（片付ける）",
+      "audio": "audio/en/words/w-tidy.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-messy",
+      "english": "messy",
+      "japanese": "散らかった",
+      "pos": "adjective",
+      "registerNotes": "Sorry, it’s a bit messy.（散らかっていてすみません）",
+      "audio": "audio/en/words/w-messy.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-fridge",
+      "english": "fridge",
+      "japanese": "冷蔵庫",
+      "pos": "noun",
+      "registerNotes": "refrigerator の短い言い方。会話ではいつも fridge。",
+      "audio": "audio/en/words/w-fridge.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-oven",
+      "english": "oven",
+      "japanese": "オーブン",
+      "pos": "noun",
+      "registerNotes": "発音は「アヴン」。",
+      "audio": "audio/en/words/w-oven.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-microwave",
+      "english": "microwave",
+      "japanese": "電子レンジ",
+      "pos": "noun",
+      "pitfallNote": "「レンジ」だけでは通じません。",
+      "audio": "audio/en/words/w-microwave.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-heater",
+      "english": "heater",
+      "japanese": "ヒーター、暖房",
+      "pos": "noun",
+      "audio": "audio/en/words/w-heater.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mould",
+      "english": "mould",
+      "japanese": "カビ",
+      "pos": "noun",
+      "registerNotes": "アメリカのつづりは mold。ニュージーランドの冬の家でよくある悩み。",
+      "audio": "audio/en/words/w-mould.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-neighbourhood",
+      "english": "neighbourhood",
+      "japanese": "近所、地域",
+      "pos": "noun",
+      "registerNotes": "アメリカのつづりは neighborhood。",
+      "audio": "audio/en/words/w-neighbourhood.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-garden",
+      "english": "garden",
+      "japanese": "庭",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドでは庭は garden、アメリカでは yard。",
+      "audio": "audio/en/words/w-garden.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-lawn",
+      "english": "lawn",
+      "japanese": "芝生",
+      "pos": "noun",
+      "registerNotes": "mow the lawn（芝を刈る）",
+      "audio": "audio/en/words/w-lawn.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-power",
+      "english": "power",
+      "japanese": "電気",
+      "pos": "noun",
+      "registerNotes": "ニュージーランドでは電気料金を the power bill と言います。",
+      "audio": "audio/en/words/w-power.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-wifi",
+      "english": "wifi",
+      "japanese": "ワイファイ",
+      "pos": "noun",
+      "registerNotes": "Wi-Fi とも書きます。What’s the wifi password?（ワイファイのパスワードは？）",
+      "audio": "audio/en/words/w-wifi.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-groceries",
+      "english": "groceries",
+      "japanese": "食料品",
+      "pos": "noun",
+      "registerNotes": "do the groceries（食料品の買い物をする）",
+      "audio": "audio/en/words/w-groceries.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chores",
+      "english": "chores",
+      "japanese": "家事",
+      "pos": "noun",
+      "registerNotes": "household chores（家の用事）",
+      "audio": "audio/en/words/w-chores.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-spare-room",
+      "english": "spare room",
+      "japanese": "空き部屋、客間",
+      "pos": "noun",
+      "audio": "audio/en/words/w-spare-room.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

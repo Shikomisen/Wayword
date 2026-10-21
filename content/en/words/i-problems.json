@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-problems",
+  "title": "トラブル・困ったこと",
+  "description": "壊れた、動かない、まちがい、盗まれた。困った時に状況を伝えるための言葉。",
+  "items": [
+    {
+      "id": "w-broken",
+      "english": "broken",
+      "japanese": "壊れた",
+      "pos": "adjective",
+      "registerNotes": "It’s broken.（壊れています）",
+      "audio": "audio/en/words/w-broken.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-not-working",
+      "english": "not working",
+      "japanese": "動かない、使えない",
+      "pos": "phrase",
+      "registerNotes": "The wifi’s not working.（ワイファイがつながりません）",
+      "audio": "audio/en/words/w-not-working.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-leak",
+      "english": "leak",
+      "japanese": "水漏れ、漏れる",
+      "pos": "noun",
+      "registerNotes": "There’s a leak in the bathroom.（浴室で水漏れしています）",
+      "audio": "audio/en/words/w-leak.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-stuck",
+      "english": "stuck",
+      "japanese": "動けない、困っている",
+      "pos": "adjective",
+      "registerNotes": "I’m stuck.（どうにもならなくて困っています）",
+      "audio": "audio/en/words/w-stuck.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-lost",
+      "english": "lost",
+      "japanese": "迷った、なくした",
+      "pos": "adjective",
+      "registerNotes": "I’m lost.（道に迷いました）、I’ve lost my phone.（携帯をなくしました）",
+      "audio": "audio/en/words/w-lost.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-stolen",
+      "english": "stolen",
+      "japanese": "盗まれた",
+      "pos": "adjective",
+      "registerNotes": "My bag was stolen.（かばんを盗まれました）",
+      "audio": "audio/en/words/w-stolen.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-damaged",
+      "english": "damaged",
+      "japanese": "傷んだ、破損した",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-damaged.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-faulty",
+      "english": "faulty",
+      "japanese": "欠陥のある、不良品の",
+      "pos": "adjective",
+      "registerNotes": "It’s faulty.（不良品です）。返品の時の決まり言葉。",
+      "audio": "audio/en/words/w-faulty.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mistake",
+      "english": "mistake",
+      "japanese": "まちがい",
+      "pos": "noun",
+      "registerNotes": "make a mistake（まちがえる）",
+      "audio": "audio/en/words/w-mistake.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-wrong",
+      "english": "wrong",
+      "japanese": "まちがった、ちがう",
+      "pos": "adjective",
+      "registerNotes": "the wrong order（ちがう注文）、What’s wrong?（どうしたの？）",
+      "audio": "audio/en/words/w-wrong.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-missing",
+      "english": "missing",
+      "japanese": "見つからない、足りない",
+      "pos": "adjective",
+      "registerNotes": "Something’s missing.（何か足りません）",
+      "audio": "audio/en/words/w-missing.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-late",
+      "english": "late",
+      "japanese": "遅れた、遅い",
+      "pos": "adjective",
+      "registerNotes": "I’m running late.（遅れそうです）",
+      "audio": "audio/en/words/w-late.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-overcharged",
+      "english": "overcharged",
+      "japanese": "多く請求された",
+      "pos": "adjective",
+      "registerNotes": "I think I’ve been overcharged.（多く請求されているようです）",
+      "audio": "audio/en/words/w-overcharged.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-noisy",
+      "english": "noisy",
+      "japanese": "うるさい",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-noisy.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-dirty",
+      "english": "dirty",
+      "japanese": "汚い",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-dirty.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cancelled",
+      "english": "cancelled",
+      "japanese": "中止になった、欠航の",
+      "pos": "adjective",
+      "registerNotes": "The flight’s been cancelled.（便が欠航になりました）。アメリカのつづりは canceled。",
+      "audio": "audio/en/words/w-cancelled.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-problem",
+      "english": "problem",
+      "japanese": "問題",
+      "pos": "noun",
+      "registerNotes": "No problem.（いいですよ、どういたしまして）",
+      "audio": "audio/en/words/w-problem.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-issue",
+      "english": "issue",
+      "japanese": "問題、不具合",
+      "pos": "noun",
+      "registerNotes": "problem よりやわらかく、仕事でよく使います。",
+      "audio": "audio/en/words/w-issue.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-fix",
+      "english": "fix",
+      "japanese": "直す、修理する",
+      "pos": "verb",
+      "registerNotes": "Can you fix it?（直せますか）",
+      "audio": "audio/en/words/w-fix.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-replace",
+      "english": "replace",
+      "japanese": "取り替える",
+      "pos": "verb",
+      "audio": "audio/en/words/w-replace.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-manager",
+      "english": "manager",
+      "japanese": "店長、責任者",
+      "pos": "noun",
+      "registerNotes": "Could I speak to the manager?（責任者の方とお話しできますか）",
+      "audio": "audio/en/words/w-manager.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-apologise",
+      "english": "apologise",
+      "japanese": "謝る",
+      "pos": "verb",
+      "registerNotes": "アメリカのつづりは apologize。",
+      "audio": "audio/en/words/w-apologise.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-emergency",
+      "english": "emergency",
+      "japanese": "緊急事態",
+      "pos": "noun",
+      "registerNotes": "It’s an emergency.（緊急です）",
+      "audio": "audio/en/words/w-emergency.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-police",
+      "english": "police",
+      "japanese": "警察",
+      "pos": "noun",
+      "audio": "audio/en/words/w-police.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-report",
+      "english": "report",
+      "japanese": "届け出る、報告する",
+      "pos": "verb",
+      "registerNotes": "I’d like to report a theft.（盗難の届けを出したいのですが）",
+      "audio": "audio/en/words/w-report.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-deal-with",
+      "english": "deal with",
+      "japanese": "対処する、対応する",
+      "pos": "phrase",
+      "registerNotes": "I’ll deal with it.（私が対応します）",
+      "audio": "audio/en/words/w-deal-with.mp3",
+      "tags": [
+        "トラブル"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": "gp",
+  "title": "クリニック（GP）にかかる",
+  "category": "doctor",
+  "setting": "昨日から熱があって、のども痛みます。近所のクリニック（GP）に電話で予約をして、受付に来ました。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "receptionist",
+      "english": "Kia ora, how can I help?",
+      "japanese": "こんにちは、どうされましたか？",
+      "audio": "audio/en/scenario/gp-n1.mp3",
+      "audioHint": "Kia ora, how can I help?",
+      "options": [
+        {
+          "phraseId": "doc-01",
+          "quality": "good",
+          "feedback": "受付での最初のひとことにぴったりです。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "Hi, I’ve got an appointment at ten.",
+          "japanese": "こんにちは、10時に予約しています。",
+          "feedback": "予約がある時は、時間と名前を伝えます。",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "Doctor, please.",
+          "japanese": "医者、お願いします。",
+          "feedback": "通じますが、ぶっきらぼうです。I’d like to see a doctor. と文で言いましょう。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "receptionist",
+      "english": "Have you been here before?",
+      "japanese": "以前こちらに来たことはありますか？",
+      "audio": "audio/en/scenario/gp-n2.mp3",
+      "audioHint": "Have you been here before?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "No, it’s my first time. I’m visiting from Japan.",
+          "japanese": "いいえ、初めてです。日本から来ています。",
+          "feedback": "旅行者だと伝えると、料金や手続きを説明してもらえます。",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "english": "No, I haven’t.",
+          "japanese": "いいえ、ありません。",
+          "feedback": "Have you …? には I have か I haven’t で答えます。",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "english": "No, I didn’t.",
+          "japanese": "いいえ、しませんでした。",
+          "feedback": "通じますが、Have you been …? と聞かれたら No, I haven’t. と形を合わせるのが自然です。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "doctor",
+      "english": "So, what seems to be the problem?",
+      "japanese": "それで、どうされましたか？",
+      "audio": "audio/en/scenario/gp-n3.mp3",
+      "audioHint": "So, what seems to be the problem?",
+      "options": [
+        {
+          "phraseId": "doc-02",
+          "quality": "good",
+          "feedback": "症状といつからかを、一度に伝えています。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "I’ve got a sore throat and a bad cough.",
+          "japanese": "のどが痛くて、咳もひどいんです。",
+          "feedback": "I’ve got … で症状を伝えます。",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "english": "I’m sick.",
+          "japanese": "病気です。",
+          "feedback": "具体的な症状（熱、のど、咳）と、いつからかを伝えましょう。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "doctor",
+      "english": "Are you taking any medication at the moment?",
+      "japanese": "今、何か薬を飲んでいますか？",
+      "audio": "audio/en/scenario/gp-n4.mp3",
+      "audioHint": "Are you taking any medication at the moment?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "No, I’m not.",
+          "japanese": "いいえ、飲んでいません。",
+          "feedback": "Are you …? には I am か I’m not で答えます。",
+          "next": "n5"
+        },
+        {
+          "phraseId": "doc-05",
+          "quality": "good",
+          "feedback": "アレルギーは、聞かれなくても伝えておきましょう。",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "english": "I don’t drink medicine.",
+          "japanese": "薬は飲みません。",
+          "feedback": "「薬を飲む」は take medicine。drink medicine とは言いません。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "doctor",
+      "english": "It looks like a virus. Get plenty of rest, and come back if it gets worse.",
+      "japanese": "ウイルス性のようですね。よく休んで、悪くなったらまた来てください。",
+      "audio": "audio/en/scenario/gp-n5.mp3",
+      "audioHint": "It looks like a virus. Get plenty of rest, and come back if it gets worse.",
+      "options": [
+        {
+          "phraseId": "doc-11",
+          "quality": "good",
+          "feedback": "これからの見通しを聞くのは、いい質問です。",
+          "next": "end"
+        },
+        {
+          "phraseId": "doc-12",
+          "quality": "good",
+          "feedback": "仕事や保険の手続きに必要なら、帰る前に頼みましょう。",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "english": "OK. Medicine?",
+          "japanese": "わかりました。薬は？",
+          "feedback": "気持ちはわかりますが、Do I need any medicine? と文で聞きましょう。ウイルスには抗生物質が出ないことが多いです。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "japanese": "お疲れさまでした。症状といつからか、飲んでいる薬、アレルギー。この3つを伝えられれば、病院での会話はだいたい大丈夫です。",
+      "end": true,
+      "options": []
+    }
+  }
+}

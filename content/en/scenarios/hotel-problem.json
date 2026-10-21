@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "hotel-problem",
+  "title": "ホテルの部屋のトラブル",
+  "category": "problems",
+  "setting": "ホテルの部屋に入ってシャワーを使おうとしたら、お湯が出ません。フロントに電話しました。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "receptionist",
+      "english": "Good evening, front desk. How can I help?",
+      "japanese": "こんばんは、フロントです。どうなさいましたか？",
+      "audio": "audio/en/scenario/hotel-problem-n1.mp3",
+      "audioHint": "Good evening, front desk. How can I help?",
+      "options": [
+        {
+          "phraseId": "pro-01",
+          "quality": "good",
+          "feedback": "まず問題があることを伝える、ていねいな切り出し方です。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "Hi, this is room 304. There’s no hot water.",
+          "japanese": "もしもし、304号室です。お湯が出ないんです。",
+          "feedback": "部屋番号を最初に言うと、話が早く進みます。",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "Your shower is bad.",
+          "japanese": "おたくのシャワー、悪いです。",
+          "feedback": "責めているように聞こえます。The shower’s not working. のように、事実だけを伝えましょう。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "receptionist",
+      "english": "I’m so sorry about that. What seems to be the problem?",
+      "japanese": "大変申し訳ございません。どのような状態でしょうか？",
+      "audio": "audio/en/scenario/hotel-problem-n2.mp3",
+      "audioHint": "I’m so sorry about that. What seems to be the problem?",
+      "options": [
+        {
+          "phraseId": "pro-02",
+          "quality": "good",
+          "feedback": "何が使えないかを、はっきり伝えています。",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "english": "The water’s been cold for ten minutes.",
+          "japanese": "10分出しっぱなしでも、水のままなんです。",
+          "feedback": "どのくらい試したかを伝えると、状況がよく伝わります。",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "english": "It’s… cold. Water. Cold.",
+          "japanese": "その…冷たい。水。冷たい。",
+          "feedback": "単語だけでも伝わりますが、The water’s cold. と文にすると落ち着いて聞こえます。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "receptionist",
+      "english": "I’ll send someone up to have a look at it straight away.",
+      "japanese": "すぐに係の者を確認に向かわせます。",
+      "audio": "audio/en/scenario/hotel-problem-n3.mp3",
+      "audioHint": "I’ll send someone up to have a look at it straight away.",
+      "options": [
+        {
+          "phraseId": "pro-11",
+          "quality": "good",
+          "feedback": "どのくらい待つかを聞くのは、いい質問です。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "Thank you. I’ll wait in the room.",
+          "japanese": "ありがとうございます。部屋で待っています。",
+          "feedback": "お礼と、どこで待つかを伝えています。",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "english": "No, I’ll look.",
+          "japanese": "いいえ、私が見ます。",
+          "feedback": "have a look at it は「（係の人が）見てみる」という意味。自分で見る必要はありません。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "receptionist",
+      "english": "If it can’t be fixed tonight, we can move you to another room.",
+      "japanese": "今夜直らない場合は、別のお部屋にご案内できます。",
+      "audio": "audio/en/scenario/hotel-problem-n4.mp3",
+      "audioHint": "If it can’t be fixed tonight, we can move you to another room.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "That would be great, thanks.",
+          "japanese": "そうしていただけると助かります。",
+          "feedback": "That would be great. は、申し出への感じのいい返事です。",
+          "next": "end"
+        },
+        {
+          "phraseId": "pro-12",
+          "quality": "good",
+          "feedback": "気にしていないと伝える、優しい返事です。",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "english": "You must give me a discount.",
+          "japanese": "割引してください（しなければなりません）。",
+          "feedback": "must を使うと命令に聞こえます。頼むなら Would it be possible to get a discount?",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "japanese": "解決しました。部屋番号、何が問題か、申し出へのお礼。ホテルのトラブルは、落ち着いて事実を伝えるのがいちばんの近道です。",
+      "end": true,
+      "options": []
+    }
+  }
+}

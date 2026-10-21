@@ -7,7 +7,7 @@
   "pattern": "I・you・we・they ＋ don’t ＋ 動詞 / he・she・it ＋ doesn’t ＋ 動詞",
   "explanation": "現在形の否定は、動詞の前に don’t（do not）。he・she・it の時は doesn’t（does not）を使い、その後の動詞には -s を付けません：She doesn’t eat meat.（彼女は肉を食べません）。",
   "natural": "好みや習慣を伝える時に：I don’t drink coffee.（コーヒーは飲みません）、I don’t know.（わかりません）。",
-  "stiff": "be動詞の文には don’t を使いません：I don’t hungry. は×、I’m not hungry.。doesn’t の後で She doesn’t eats. と -s を残すのも×。",
+  "stiff": "be動詞の文には don’t を使いません：I don’t hungry. は×、I’m not hungry.doesn’t の後で She doesn’t eats. と -s を残すのも×。",
   "examples": [
     {
       "id": "gx-dont-1",

@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "plans",
+  "title": "予定を立てる・誘う",
+  "order": 12,
+  "description": "誘う、日時を決める、上手に断る。友だちや同僚と予定を立てる時のひとこと。",
+  "phrases": [
+    {
+      "id": "pla-01",
+      "english": "Are you free on Saturday?",
+      "japanese": "土曜日あいてる？",
+      "registerNotes": "誘う前に予定を聞く、いちばん自然な言い方。",
+      "audio": "audio/en/pla-01.mp3",
+      "audioHint": "Are you free on Saturday?",
+      "tags": [
+        "誘う",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-02",
+      "english": "Do you want to grab a coffee?",
+      "japanese": "コーヒーでも飲みに行かない？",
+      "registerNotes": "grab は「さっと〜する」。気軽な誘い方です。",
+      "audio": "audio/en/pla-02.mp3",
+      "audioHint": "Do you want to grab a coffee?",
+      "tags": [
+        "誘う"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-03",
+      "english": "How about Sunday instead?",
+      "japanese": "代わりに日曜日はどう？",
+      "registerNotes": "How about …? で別の案を出します。",
+      "audio": "audio/en/pla-03.mp3",
+      "audioHint": "How about Sunday instead?",
+      "tags": [
+        "日時を決める"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-04",
+      "english": "What time suits you?",
+      "japanese": "何時が都合いい？",
+      "registerNotes": "suit は「（都合が）合う」。相手に決めてもらうていねいな聞き方。",
+      "audio": "audio/en/pla-04.mp3",
+      "audioHint": "What time suits you?",
+      "tags": [
+        "日時を決める"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-05",
+      "english": "Sounds good to me.",
+      "japanese": "いいね、それでいいよ。",
+      "registerNotes": "提案に賛成する時。Sounds good! だけでも。",
+      "audio": "audio/en/pla-05.mp3",
+      "audioHint": "Sounds good to me.",
+      "tags": [
+        "返事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-06",
+      "english": "I’d love to, but I can’t.",
+      "japanese": "行きたいんだけど、行けないんだ。",
+      "registerNotes": "まず I’d love to で行きたい気持ちを伝えると、断ってもやわらかくなります。",
+      "pitfallNote": "No, I can’t. だけだと冷たく聞こえます。",
+      "audio": "audio/en/pla-06.mp3",
+      "audioHint": "I’d love to, but I can’t.",
+      "tags": [
+        "断る",
+        "必須"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-07",
+      "english": "Maybe another time?",
+      "japanese": "また今度にしない？",
+      "registerNotes": "断った後に添えると、また誘ってほしい気持ちが伝わります。",
+      "audio": "audio/en/pla-07.mp3",
+      "audioHint": "Maybe another time?",
+      "tags": [
+        "断る"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-08",
+      "english": "Let me check and get back to you.",
+      "japanese": "確認して連絡するね。",
+      "registerNotes": "返事を保留する時の決まり文句。get back to は「後で連絡する」。",
+      "audio": "audio/en/pla-08.mp3",
+      "audioHint": "Let me check and get back to you.",
+      "tags": [
+        "返事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-09",
+      "english": "Where shall we meet?",
+      "japanese": "どこで待ち合わせる？",
+      "registerNotes": "Shall we …? は「〜しようか」と相手に提案する形。",
+      "audio": "audio/en/pla-09.mp3",
+      "audioHint": "Where shall we meet?",
+      "tags": [
+        "日時を決める"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-10",
+      "english": "See you there!",
+      "japanese": "じゃあ、そこでね！",
+      "registerNotes": "待ち合わせが決まった時。",
+      "audio": "audio/en/pla-10.mp3",
+      "audioHint": "See you there!",
+      "tags": [
+        "返事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-11",
+      "english": "Can I bring anything?",
+      "japanese": "何か持っていこうか？",
+      "registerNotes": "家に招かれた時の決まり文句。Bring a plate. と言われたら、一品持っていきます。",
+      "audio": "audio/en/pla-11.mp3",
+      "audioHint": "Can I bring anything?",
+      "tags": [
+        "招待"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-12",
+      "english": "Text me when you get there.",
+      "japanese": "着いたらメッセージしてね。",
+      "registerNotes": "text は「携帯でメッセージを送る」。",
+      "audio": "audio/en/pla-12.mp3",
+      "audioHint": "Text me when you get there.",
+      "tags": [
+        "連絡"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

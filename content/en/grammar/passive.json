@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-passive",
+  "connector": "is made",
+  "gloss": "〜される（受け身）",
+  "title": "It’s made in… — 〜される、〜された（受け身）",
+  "pattern": "be ＋ 過去分詞（by …）",
+  "explanation": "「〜される」は be動詞 ＋ 過去分詞。だれがしたかより、何が起きたかが大事な時に使います：This bridge was built in 1932.（この橋は1932年に造られた）、My bag was stolen.（かばんを盗まれた）。だれがしたかを言う時は by …。",
+  "natural": "お店や旅行で：Is breakfast included?（朝食は含まれていますか）、It’s made in New Zealand.（ニュージーランド製です）",
+  "stiff": "日本語の「〜られた」をそのまま訳さないこと。「雨に降られた」は I got caught in the rain. のように言います。",
+  "examples": [
+    {
+      "id": "gx-passive-1",
+      "english": "This wine is made in New Zealand.",
+      "japanese": "このワインはニュージーランド産です。",
+      "chunks": [
+        {
+          "t": "This wine "
+        },
+        {
+          "t": "is made ",
+          "w": "w-make"
+        },
+        {
+          "t": "in New Zealand."
+        }
+      ],
+      "gap": {
+        "before": "This wine is ",
+        "answer": "made",
+        "after": " in New Zealand.",
+        "options": [
+          "made",
+          "make",
+          "making"
+        ],
+        "why": "「〜で作られた」は be ＋ 過去分詞（made）。"
+      },
+      "audio": "audio/en/grammar/gx-passive-1.mp3",
+      "tags": [
+        "文法",
+        "is made"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-passive-2",
+      "english": "My bag was stolen yesterday.",
+      "japanese": "昨日、かばんを盗まれました。",
+      "chunks": [
+        {
+          "t": "My bag ",
+          "w": "w-bag"
+        },
+        {
+          "t": "was stolen ",
+          "w": "w-stolen"
+        },
+        {
+          "t": "yesterday.",
+          "w": "w-yesterday"
+        }
+      ],
+      "gap": {
+        "before": "My bag ",
+        "answer": "was",
+        "after": " stolen yesterday.",
+        "options": [
+          "was",
+          "is",
+          "did"
+        ],
+        "why": "過去の受け身は was ＋ 過去分詞。"
+      },
+      "audio": "audio/en/grammar/gx-passive-2.mp3",
+      "tags": [
+        "文法",
+        "is made"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-passive-3",
+      "english": "Is breakfast included?",
+      "japanese": "朝食は含まれていますか？",
+      "chunks": [
+        {
+          "t": "Is breakfast "
+        },
+        {
+          "t": "included?",
+          "w": "w-included"
+        }
+      ],
+      "gap": {
+        "before": "Is breakfast ",
+        "answer": "included",
+        "after": "?",
+        "options": [
+          "included",
+          "include",
+          "including"
+        ],
+        "why": "「含まれている」は be ＋ included。"
+      },
+      "audio": "audio/en/grammar/gx-passive-3.mp3",
+      "tags": [
+        "文法",
+        "is made"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-passive-4",
+      "english": "The game was called off because of the rain.",
+      "japanese": "雨で試合は中止になりました。",
+      "chunks": [
+        {
+          "t": "The game "
+        },
+        {
+          "t": "was called off ",
+          "w": "w-call-off"
+        },
+        {
+          "t": "because of the rain.",
+          "w": "w-rain"
+        }
+      ],
+      "gap": {
+        "before": "The game was ",
+        "answer": "called off",
+        "after": " because of the rain.",
+        "options": [
+          "called off",
+          "call off",
+          "calling off"
+        ],
+        "why": "受け身は be ＋ 過去分詞。句動詞も同じです（called off）。"
+      },
+      "audio": "audio/en/grammar/gx-passive-4.mp3",
+      "tags": [
+        "文法",
+        "is made"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

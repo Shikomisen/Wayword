@@ -1,0 +1,572 @@
+{
+  "schemaVersion": 1,
+  "id": "sentences-i-out",
+  "title": "外で頼む・困った時",
+  "description": "お願いする、予定を変える、トラブルを伝える。旅行先や毎日の暮らしで、ていねいに用を済ませるための文。",
+  "items": [
+    {
+      "id": "s-68",
+      "english": "Could you recommend a good place to eat?",
+      "japanese": "おいしいお店を教えてもらえますか？",
+      "chunks": [
+        {
+          "t": "Could you "
+        },
+        {
+          "t": "recommend ",
+          "w": "w-recommend"
+        },
+        {
+          "t": "a good place "
+        },
+        {
+          "t": "to eat?",
+          "w": "w-eat"
+        }
+      ],
+      "audio": "audio/en/sentences/s-68.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-69",
+      "english": "I’d like to make an appointment, please.",
+      "japanese": "予約をお願いしたいのですが。",
+      "chunks": [
+        {
+          "t": "I’d like to make "
+        },
+        {
+          "t": "an appointment, ",
+          "w": "w-appointment"
+        },
+        {
+          "t": "please."
+        }
+      ],
+      "audio": "audio/en/sentences/s-69.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-70",
+      "english": "My flight’s been delayed by two hours.",
+      "japanese": "便が2時間遅れています。",
+      "chunks": [
+        {
+          "t": "My flight’s been ",
+          "w": "w-flight"
+        },
+        {
+          "t": "delayed ",
+          "w": "w-delayed"
+        },
+        {
+          "t": "by two hours."
+        }
+      ],
+      "audio": "audio/en/sentences/s-70.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-71",
+      "english": "Sorry, I’m running a bit late.",
+      "japanese": "すみません、ちょっと遅れそうです。",
+      "chunks": [
+        {
+          "t": "Sorry, "
+        },
+        {
+          "t": "I’m running "
+        },
+        {
+          "t": "a bit "
+        },
+        {
+          "t": "late.",
+          "w": "w-late"
+        }
+      ],
+      "audio": "audio/en/sentences/s-71.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-72",
+      "english": "The heater in my room isn’t working.",
+      "japanese": "部屋のヒーターが動きません。",
+      "chunks": [
+        {
+          "t": "The heater ",
+          "w": "w-heater"
+        },
+        {
+          "t": "in my room ",
+          "w": "w-room"
+        },
+        {
+          "t": "isn’t working.",
+          "w": "w-not-working"
+        }
+      ],
+      "audio": "audio/en/sentences/s-72.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-73",
+      "english": "I think I’ve been overcharged.",
+      "japanese": "多く請求されているようなのですが。",
+      "chunks": [
+        {
+          "t": "I think "
+        },
+        {
+          "t": "I’ve been "
+        },
+        {
+          "t": "overcharged.",
+          "w": "w-overcharged"
+        }
+      ],
+      "audio": "audio/en/sentences/s-73.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "s-74",
+      "english": "Is it OK if I bring a friend?",
+      "japanese": "友だちを連れて行ってもいいですか？",
+      "chunks": [
+        {
+          "t": "Is it OK "
+        },
+        {
+          "t": "if I bring ",
+          "w": "w-bring"
+        },
+        {
+          "t": "a friend?",
+          "w": "w-friend"
+        }
+      ],
+      "audio": "audio/en/sentences/s-74.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-75",
+      "english": "Something’s come up, so I can’t make it tonight.",
+      "japanese": "急用ができて、今夜は行けなくなりました。",
+      "chunks": [
+        {
+          "t": "Something’s come up, ",
+          "w": "w-come-up"
+        },
+        {
+          "t": "so I can’t make it "
+        },
+        {
+          "t": "tonight."
+        }
+      ],
+      "audio": "audio/en/sentences/s-75.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "s-76",
+      "english": "Can we put it off until next week?",
+      "japanese": "来週に延ばしてもいいですか？",
+      "chunks": [
+        {
+          "t": "Can we "
+        },
+        {
+          "t": "put it off ",
+          "w": "w-put-off"
+        },
+        {
+          "t": "until next week?",
+          "w": "w-week"
+        }
+      ],
+      "audio": "audio/en/sentences/s-76.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-77",
+      "english": "Do you want to come over for dinner?",
+      "japanese": "うちに夕飯を食べに来ない？",
+      "chunks": [
+        {
+          "t": "Do you want to "
+        },
+        {
+          "t": "come over ",
+          "w": "w-come-over"
+        },
+        {
+          "t": "for dinner?"
+        }
+      ],
+      "audio": "audio/en/sentences/s-77.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-78",
+      "english": "Shall we split the bill?",
+      "japanese": "割り勘にしませんか？",
+      "chunks": [
+        {
+          "t": "Shall we "
+        },
+        {
+          "t": "split the bill?",
+          "w": "w-split-the-bill"
+        }
+      ],
+      "audio": "audio/en/sentences/s-78.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-79",
+      "english": "I’ve lost my wallet. Has anyone handed it in?",
+      "japanese": "財布をなくしました。誰か届けてくれていませんか？",
+      "chunks": [
+        {
+          "t": "I’ve lost ",
+          "w": "w-lost"
+        },
+        {
+          "t": "my wallet. ",
+          "w": "w-wallet"
+        },
+        {
+          "t": "Has anyone handed it in?"
+        }
+      ],
+      "audio": "audio/en/sentences/s-79.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "s-80",
+      "english": "I’d like to report a stolen bag.",
+      "japanese": "かばんの盗難を届けたいのですが。",
+      "chunks": [
+        {
+          "t": "I’d like to "
+        },
+        {
+          "t": "report ",
+          "w": "w-report"
+        },
+        {
+          "t": "a stolen bag.",
+          "w": "w-stolen"
+        }
+      ],
+      "audio": "audio/en/sentences/s-80.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-81",
+      "english": "This one’s faulty. Can I swap it?",
+      "japanese": "これ、不良品なんです。交換できますか？",
+      "chunks": [
+        {
+          "t": "This one’s "
+        },
+        {
+          "t": "faulty. ",
+          "w": "w-faulty"
+        },
+        {
+          "t": "Can I swap it?"
+        }
+      ],
+      "audio": "audio/en/sentences/s-81.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-82",
+      "english": "Could you send me the details by email?",
+      "japanese": "詳しいことをメールで送ってもらえますか？",
+      "chunks": [
+        {
+          "t": "Could you send me ",
+          "w": "w-send"
+        },
+        {
+          "t": "the details "
+        },
+        {
+          "t": "by email?",
+          "w": "w-email"
+        }
+      ],
+      "audio": "audio/en/sentences/s-82.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-83",
+      "english": "Sorry, I got held up at work.",
+      "japanese": "すみません、仕事で遅くなりました。",
+      "chunks": [
+        {
+          "t": "Sorry, "
+        },
+        {
+          "t": "I got held up ",
+          "w": "w-hold-up"
+        },
+        {
+          "t": "at work.",
+          "w": "w-work"
+        }
+      ],
+      "audio": "audio/en/sentences/s-83.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-84",
+      "english": "Is there a pharmacy near here?",
+      "japanese": "この近くに薬局はありますか？",
+      "chunks": [
+        {
+          "t": "Is there "
+        },
+        {
+          "t": "a pharmacy ",
+          "w": "w-pharmacy"
+        },
+        {
+          "t": "near here?",
+          "w": "w-here"
+        }
+      ],
+      "audio": "audio/en/sentences/s-84.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-85",
+      "english": "I need something for a sore throat.",
+      "japanese": "のどの痛みに効く薬がほしいのですが。",
+      "chunks": [
+        {
+          "t": "I need something ",
+          "w": "w-need"
+        },
+        {
+          "t": "for a sore throat.",
+          "w": "w-sore-throat"
+        }
+      ],
+      "audio": "audio/en/sentences/s-85.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-86",
+      "english": "What time can we check in?",
+      "japanese": "何時からチェックインできますか？",
+      "chunks": [
+        {
+          "t": "What time "
+        },
+        {
+          "t": "can we "
+        },
+        {
+          "t": "check in?",
+          "w": "w-check-in"
+        }
+      ],
+      "audio": "audio/en/sentences/s-86.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-87",
+      "english": "Could we get a room with a view?",
+      "japanese": "眺めのいい部屋にしてもらえますか？",
+      "chunks": [
+        {
+          "t": "Could we get "
+        },
+        {
+          "t": "a room ",
+          "w": "w-room"
+        },
+        {
+          "t": "with a view?",
+          "w": "w-view"
+        }
+      ],
+      "audio": "audio/en/sentences/s-87.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-88",
+      "english": "Let’s catch up next week.",
+      "japanese": "来週会って話そうよ。",
+      "chunks": [
+        {
+          "t": "Let’s "
+        },
+        {
+          "t": "catch up ",
+          "w": "w-catch-up"
+        },
+        {
+          "t": "next week.",
+          "w": "w-week"
+        }
+      ],
+      "audio": "audio/en/sentences/s-88.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-89",
+      "english": "I ran into an old friend at the airport.",
+      "japanese": "空港で昔の友だちにばったり会いました。",
+      "chunks": [
+        {
+          "t": "I ran into ",
+          "w": "w-run-into"
+        },
+        {
+          "t": "an old friend ",
+          "w": "w-friend"
+        },
+        {
+          "t": "at the airport."
+        }
+      ],
+      "audio": "audio/en/sentences/s-89.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-90",
+      "english": "Could you tell me how to get to the beach?",
+      "japanese": "ビーチへの行き方を教えてもらえますか？",
+      "chunks": [
+        {
+          "t": "Could you tell me ",
+          "w": "w-tell"
+        },
+        {
+          "t": "how to get "
+        },
+        {
+          "t": "to the beach?",
+          "w": "w-beach"
+        }
+      ],
+      "audio": "audio/en/sentences/s-90.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-91",
+      "english": "The washing machine is leaking.",
+      "japanese": "洗濯機から水が漏れています。",
+      "chunks": [
+        {
+          "t": "The washing machine ",
+          "w": "w-washing-machine"
+        },
+        {
+          "t": "is leaking.",
+          "w": "w-leak"
+        }
+      ],
+      "audio": "audio/en/sentences/s-91.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-92",
+      "english": "Thanks for inviting me. I had a great time.",
+      "japanese": "誘ってくれてありがとう。とても楽しかったです。",
+      "chunks": [
+        {
+          "t": "Thanks for "
+        },
+        {
+          "t": "inviting me. ",
+          "w": "w-invite"
+        },
+        {
+          "t": "I had a great time."
+        }
+      ],
+      "audio": "audio/en/sentences/s-92.mp3",
+      "tags": [
+        "外で"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

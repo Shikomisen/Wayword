@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-just-yet",
+  "connector": "just / yet",
+  "gloss": "ちょうど・もう・まだ",
+  "title": "just, already, yet — ちょうど〜した、もう、まだ",
+  "pattern": "I’ve just … ／ I’ve already … ／ Have you … yet? ／ I haven’t … yet.",
+  "explanation": "have ＋ 過去分詞は、今につながる「（もう）〜した」にも使います。just は「ちょうど今」、already は「もう、すでに」。yet は疑問文で「もう？」、否定文で「まだ（〜していない）」の意味になり、文の最後に置きます。",
+  "natural": "用事が済んだか確かめる時に：Have you eaten yet?（もう食べた？）、I’ve just arrived.（今着いたところ）",
+  "stiff": "日本語の「まだ」につられて I still didn’t eat. と言うのは不自然。I haven’t eaten yet.",
+  "examples": [
+    {
+      "id": "gx-just-yet-1",
+      "english": "I’ve just arrived at the airport.",
+      "japanese": "たった今、空港に着いたところです。",
+      "chunks": [
+        {
+          "t": "I’ve ",
+          "w": "w-i"
+        },
+        {
+          "t": "just arrived "
+        },
+        {
+          "t": "at the airport."
+        }
+      ],
+      "gap": {
+        "before": "I’ve ",
+        "answer": "just",
+        "after": " arrived at the airport.",
+        "options": [
+          "just",
+          "yet",
+          "still"
+        ],
+        "why": "ちょうど今したことは just。have と過去分詞の間に置きます。"
+      },
+      "audio": "audio/en/grammar/gx-just-yet-1.mp3",
+      "tags": [
+        "文法",
+        "just / yet"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-just-yet-2",
+      "english": "Have you had lunch yet?",
+      "japanese": "もうお昼は食べた？",
+      "chunks": [
+        {
+          "t": "Have you ",
+          "w": "w-you"
+        },
+        {
+          "t": "had lunch ",
+          "w": "w-have"
+        },
+        {
+          "t": "yet?"
+        }
+      ],
+      "gap": {
+        "before": "Have you had lunch ",
+        "answer": "yet",
+        "after": "?",
+        "options": [
+          "yet",
+          "already",
+          "just"
+        ],
+        "ok": [
+          "already"
+        ],
+        "note": "already も使えます。Have you had lunch already? は「もう食べちゃったの？」と少し驚いた感じ。",
+        "why": "疑問文の「もう？」は yet。文の最後に置きます。"
+      },
+      "audio": "audio/en/grammar/gx-just-yet-2.mp3",
+      "tags": [
+        "文法",
+        "just / yet"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-just-yet-3",
+      "english": "I haven’t booked a hotel yet.",
+      "japanese": "まだホテルを予約していません。",
+      "chunks": [
+        {
+          "t": "I haven’t booked ",
+          "w": "w-book"
+        },
+        {
+          "t": "a hotel "
+        },
+        {
+          "t": "yet."
+        }
+      ],
+      "gap": {
+        "before": "I haven’t booked a hotel ",
+        "answer": "yet",
+        "after": ".",
+        "options": [
+          "yet",
+          "still",
+          "already"
+        ],
+        "why": "否定文の「まだ〜していない」は yet。"
+      },
+      "audio": "audio/en/grammar/gx-just-yet-3.mp3",
+      "tags": [
+        "文法",
+        "just / yet"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-just-yet-4",
+      "english": "We’ve already paid.",
+      "japanese": "もう払いました。",
+      "chunks": [
+        {
+          "t": "We’ve ",
+          "w": "w-we"
+        },
+        {
+          "t": "already paid.",
+          "w": "w-pay"
+        }
+      ],
+      "gap": {
+        "before": "We’ve ",
+        "answer": "already",
+        "after": " paid.",
+        "options": [
+          "already",
+          "yet",
+          "still"
+        ],
+        "why": "「もう、すでに」は already。"
+      },
+      "audio": "audio/en/grammar/gx-just-yet-4.mp3",
+      "tags": [
+        "文法",
+        "just / yet"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

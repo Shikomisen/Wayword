@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "bus-stop-chat",
+  "title": "バス停での世間話",
+  "category": "reactions",
+  "setting": "ウェリントンのバス停でバスを待っていると、隣の年配の女性が話しかけてきました。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "passerby",
+      "english": "Bit windy today, isn’t it?",
+      "japanese": "今日はちょっと風が強いわね。",
+      "audio": "audio/en/scenario/bus-stop-chat-n1.mp3",
+      "audioHint": "Bit windy today, isn’t it?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Yes, it’s really windy!",
+          "japanese": "ええ、本当に風が強いですね！",
+          "feedback": "天気の話は世間話の定番。同意して返すのがいちばん自然です。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "It is! Is it always like this in Wellington?",
+          "japanese": "本当に！ウェリントンはいつもこうなんですか？",
+          "feedback": "質問を返すと会話が続きます。",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "Yes.",
+          "japanese": "はい。",
+          "feedback": "それだけだと、話したくないように聞こえます。It is! と一言足すだけで印象が変わります。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "passerby",
+      "english": "Oh, you get used to it. Are you on holiday?",
+      "japanese": "慣れるわよ。旅行中？",
+      "audio": "audio/en/scenario/bus-stop-chat-n2.mp3",
+      "audioHint": "Oh, you get used to it. Are you on holiday?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Yes, I’m visiting from Japan for two weeks.",
+          "japanese": "はい、日本から2週間の旅行で来ています。",
+          "feedback": "どこから、どのくらいかを伝えると、話が広がります。",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "english": "No, I’m studying English here.",
+          "japanese": "いいえ、ここで英語を勉強しています。",
+          "feedback": "自分のことを一言で伝えています。",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "english": "No, I’m on the bus.",
+          "japanese": "いいえ、バスに乗っています。",
+          "feedback": "on holiday は「休暇中、旅行中」という意味です。バスの話ではありません。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "passerby",
+      "english": "Japan! My daughter went there last year. She loved it.",
+      "japanese": "日本！娘が去年行ったのよ。とても気に入ってたわ。",
+      "audio": "audio/en/scenario/bus-stop-chat-n3.mp3",
+      "audioHint": "Japan! My daughter went there last year. She loved it.",
+      "options": [
+        {
+          "phraseId": "rea-01",
+          "quality": "good",
+          "feedback": "話を聞いていることが伝わる、いちばん便利なあいづちです。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "Oh, that’s great! Where did she go?",
+          "japanese": "わあ、いいですね！どこに行かれたんですか？",
+          "feedback": "反応して質問すると、会話がどんどん続きます。",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "english": "I know.",
+          "japanese": "知っています。",
+          "feedback": "I know. は「（そんなこと）知ってるよ」と聞こえることがあります。Oh, really? や That’s great! で反応しましょう。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "passerby",
+      "english": "Kyoto and Tokyo, I think. Have you been to Wellington before?",
+      "japanese": "京都と東京だったかしら。ウェリントンは前に来たことある？",
+      "audio": "audio/en/scenario/bus-stop-chat-n4.mp3",
+      "audioHint": "Kyoto and Tokyo, I think. Have you been to Wellington before?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "No, this is my first time.",
+          "japanese": "いいえ、今回が初めてです。",
+          "feedback": "初めてだと伝えると、おすすめを教えてもらえるかもしれません。",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "english": "No, I haven’t. Do you have any recommendations?",
+          "japanese": "いいえ、ありません。何かおすすめはありますか？",
+          "feedback": "地元の人のおすすめは、旅のいちばんの情報源です。",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "english": "No, I didn’t go.",
+          "japanese": "いいえ、行かなかったです。",
+          "feedback": "Have you been …? には No, I haven’t. が自然です。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "passerby",
+      "english": "Oh, here’s my bus. Enjoy your stay!",
+      "japanese": "あら、私のバスが来たわ。楽しんでね！",
+      "audio": "audio/en/scenario/bus-stop-chat-n5.mp3",
+      "audioHint": "Oh, here’s my bus. Enjoy your stay!",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Thanks! Have a good day!",
+          "japanese": "ありがとうございます！よい一日を！",
+          "feedback": "明るく、感じよく終われました。",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "english": "Thank you. Nice talking to you!",
+          "japanese": "ありがとうございます。お話しできてよかったです！",
+          "feedback": "Nice talking to you. は、話し終えた時の決まり文句です。",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "english": "Bye.",
+          "japanese": "バイ。",
+          "feedback": "Thanks! を足すだけで、ずっと感じがよくなります。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "japanese": "ニュージーランドでは、バス停やお店で知らない人と世間話をするのはふつうのこと。天気の話、Oh, really? のあいづち、質問を返す。これだけで会話は続きます。",
+      "end": true,
+      "options": []
+    }
+  }
+}
