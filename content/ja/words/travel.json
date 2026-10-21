@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "id": "words-travel",
+  "title": "Travel & Sightseeing",
+  "description": "Getting around Japan and enjoying it: inns, hot springs, luggage, tickets, transfers and the sights.",
+  "items": [
+    {
+      "id": "w-kankou",
+      "japanese": "観光",
+      "furigana": "{観光|かんこう}",
+      "english": "sightseeing, tourism",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kankou.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-ryokan",
+      "japanese": "旅館",
+      "furigana": "{旅館|りょかん}",
+      "english": "ryokan (a traditional Japanese inn)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-ryokan.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-onsen",
+      "japanese": "温泉",
+      "furigana": "{温泉|おんせん}",
+      "english": "hot spring, onsen",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-onsen.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nimotsu",
+      "japanese": "荷物",
+      "furigana": "{荷物|にもつ}",
+      "english": "luggage, bags; a parcel",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-nimotsu.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chizu",
+      "japanese": "地図",
+      "furigana": "{地図|ちず}",
+      "english": "map",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-chizu.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-keshiki",
+      "japanese": "景色",
+      "furigana": "{景色|けしき}",
+      "english": "scenery, view",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-keshiki.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-omiyage",
+      "japanese": "お土産",
+      "furigana": "お{土産|みやげ}",
+      "english": "souvenir; a gift you bring back",
+      "pos": "noun",
+      "usage": "Bringing back something small for colleagues and family after a trip is expected.",
+      "audio": "audio/ja/words/w-omiyage.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kippu",
+      "japanese": "切符",
+      "furigana": "{切符|きっぷ}",
+      "english": "ticket (train, bus)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kippu.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-norikae",
+      "japanese": "乗り換え",
+      "furigana": "{乗|の}り{換|か}え",
+      "english": "changing trains, a transfer",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-norikae.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shuppatsu",
+      "japanese": "出発",
+      "furigana": "{出発|しゅっぱつ}",
+      "english": "departure",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shuppatsu.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-touchaku",
+      "japanese": "到着",
+      "furigana": "{到着|とうちゃく}",
+      "english": "arrival",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-touchaku.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-madoguchi",
+      "japanese": "窓口",
+      "furigana": "{窓口|まどぐち}",
+      "english": "ticket window, service counter",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-madoguchi.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kuukou",
+      "japanese": "空港",
+      "furigana": "{空港|くうこう}",
+      "english": "airport",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kuukou.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hikouki",
+      "japanese": "飛行機",
+      "furigana": "{飛行機|ひこうき}",
+      "english": "plane",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hikouki.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shinkansen",
+      "japanese": "新幹線",
+      "furigana": "{新幹線|しんかんせん}",
+      "english": "bullet train, shinkansen",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shinkansen.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-basu",
+      "japanese": "バス",
+      "furigana": "{バス|ばす}",
+      "english": "bus",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-basu.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-takushii",
+      "japanese": "タクシー",
+      "furigana": "{タクシー|たくしー}",
+      "english": "taxi",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-takushii.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-umi",
+      "japanese": "海",
+      "furigana": "{海|うみ}",
+      "english": "sea, the beach",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-umi.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yama",
+      "japanese": "山",
+      "furigana": "{山|やま}",
+      "english": "mountain",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yama.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kawa",
+      "japanese": "川",
+      "furigana": "{川|かわ}",
+      "english": "river",
+      "pos": "noun",
+      "audioHint": "川",
+      "audio": "audio/ja/words/w-kawa.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-jinja",
+      "japanese": "神社",
+      "furigana": "{神社|じんじゃ}",
+      "english": "Shinto shrine",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-jinja.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-otera",
+      "japanese": "お寺",
+      "furigana": "お{寺|てら}",
+      "english": "Buddhist temple",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-otera.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tomaru",
+      "japanese": "泊まる",
+      "furigana": "{泊|と}まる",
+      "english": "to stay (the night)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{泊|と}まります",
+        "te": "{泊|と}まって"
+      },
+      "usage": "Where you stay takes に: 旅館に泊まる.",
+      "audio": "audio/ja/words/w-tomaru.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tsuku",
+      "japanese": "着く",
+      "furigana": "{着|つ}く",
+      "english": "to arrive",
+      "pos": "verb",
+      "forms": {
+        "masu": "{着|つ}きます",
+        "te": "{着|つ}いて"
+      },
+      "usage": "Where you arrive takes に: 駅に着いた.",
+      "audio": "audio/ja/words/w-tsuku.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mayou",
+      "japanese": "迷う",
+      "furigana": "{迷|まよ}う",
+      "english": "to get lost; to be unable to decide",
+      "pos": "verb",
+      "forms": {
+        "masu": "{迷|まよ}います",
+        "te": "{迷|まよ}って"
+      },
+      "usage": "道に迷った — I got lost. どれにするか迷う — I can’t decide which.",
+      "audio": "audio/ja/words/w-mayou.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tanoshimu",
+      "japanese": "楽しむ",
+      "furigana": "{楽|たの}しむ",
+      "english": "to enjoy",
+      "pos": "verb",
+      "forms": {
+        "masu": "{楽|たの}しみます",
+        "te": "{楽|たの}しんで"
+      },
+      "usage": "楽しんでね — have fun!",
+      "audio": "audio/ja/words/w-tanoshimu.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    }
+  ]
+}

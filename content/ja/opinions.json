@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "id": "opinions",
+  "title": "Opinions & Agreeing",
+  "order": 14,
+  "description": "Saying what you think, agreeing, and disagreeing gently: the Japanese way, which softens almost everything.",
+  "phrases": [
+    {
+      "id": "opi-01",
+      "japanese": "私もそう思います",
+      "furigana": [
+        {
+          "b": "私",
+          "r": "わたし"
+        },
+        {
+          "b": "もそう"
+        },
+        {
+          "b": "思",
+          "r": "おも"
+        },
+        {
+          "b": "います"
+        }
+      ],
+      "romaji": "watashi mo sō omoimasu",
+      "english": "I think so too.",
+      "registerNotes": "The easy way to agree. With friends: 私もそう思う, or just だよね.",
+      "audio": "audio/ja/opi-01.mp3",
+      "tags": [
+        "agreeing",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-02",
+      "japanese": "どう思いますか",
+      "furigana": [
+        {
+          "b": "どう"
+        },
+        {
+          "b": "思",
+          "r": "おも"
+        },
+        {
+          "b": "いますか"
+        }
+      ],
+      "romaji": "dō omoimasu ka",
+      "english": "What do you think?",
+      "registerNotes": "Asking for an opinion. Japanese speakers often wait to be asked, so asking keeps a conversation balanced.",
+      "audio": "audio/ja/opi-02.mp3",
+      "tags": [
+        "asking",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-03",
+      "japanese": "私はちょっと違うと思います",
+      "furigana": [
+        {
+          "b": "私",
+          "r": "わたし"
+        },
+        {
+          "b": "はちょっと"
+        },
+        {
+          "b": "違",
+          "r": "ちが"
+        },
+        {
+          "b": "うと"
+        },
+        {
+          "b": "思",
+          "r": "おも"
+        },
+        {
+          "b": "います"
+        }
+      ],
+      "romaji": "watashi wa chotto chigau to omoimasu",
+      "english": "I see it a little differently.",
+      "registerNotes": "Disagreeing, softly: ちょっと and と思います both soften it. A flat 違います can sound like “you’re wrong”.",
+      "audio": "audio/ja/opi-03.mp3",
+      "tags": [
+        "disagreeing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-04",
+      "japanese": "確かにそうですね。でも…",
+      "furigana": [
+        {
+          "b": "確",
+          "r": "たし"
+        },
+        {
+          "b": "かにそうですね。でも…"
+        }
+      ],
+      "romaji": "tashika ni sō desu ne, demo",
+      "english": "That’s true. But…",
+      "registerNotes": "Agree first, then add your view: the gentlest way to disagree in Japanese.",
+      "audio": "audio/ja/opi-04.mp3",
+      "tags": [
+        "disagreeing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-05",
+      "japanese": "それはいい考えですね",
+      "furigana": [
+        {
+          "b": "それはいい"
+        },
+        {
+          "b": "考",
+          "r": "かんが"
+        },
+        {
+          "b": "えですね"
+        }
+      ],
+      "romaji": "sore wa ii kangae desu ne",
+      "english": "That’s a good idea.",
+      "registerNotes": "Praising a suggestion. 考え is an idea or a way of thinking.",
+      "audio": "audio/ja/opi-05.mp3",
+      "tags": [
+        "agreeing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-06",
+      "register": "casual",
+      "japanese": "どっちでもいいよ",
+      "furigana": [
+        {
+          "b": "どっちでもいいよ"
+        }
+      ],
+      "romaji": "dotchi demo ii yo",
+      "english": "Either’s fine with me.",
+      "polite": {
+        "japanese": "どちらでもいいです",
+        "furigana": [
+          {
+            "b": "どちらでもいいです"
+          }
+        ],
+        "romaji": "dochira demo ii desu",
+        "audio": "audio/ja/opi-06-polite.mp3"
+      },
+      "registerNotes": "Easy-going, but used too often it can sound like you don’t care. Add a preference if you have one.",
+      "audio": "audio/ja/opi-06.mp3",
+      "tags": [
+        "choosing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-07",
+      "japanese": "個人的には、こっちのほうが好きです",
+      "furigana": [
+        {
+          "b": "個人的",
+          "r": "こじんてき"
+        },
+        {
+          "b": "には、こっちのほうが"
+        },
+        {
+          "b": "好",
+          "r": "す"
+        },
+        {
+          "b": "きです"
+        }
+      ],
+      "romaji": "kojinteki ni wa, kotchi no hō ga suki desu",
+      "english": "Personally, I prefer this one.",
+      "registerNotes": "個人的には (personally) frames it as just your taste, which makes it easy to hear.",
+      "audio": "audio/ja/opi-07.mp3",
+      "tags": [
+        "choosing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-08",
+      "register": "casual",
+      "japanese": "どうかな",
+      "furigana": [
+        {
+          "b": "どうかな"
+        }
+      ],
+      "romaji": "dō ka na",
+      "english": "I’m not so sure.",
+      "polite": {
+        "japanese": "どうでしょうね",
+        "furigana": [
+          {
+            "b": "どうでしょうね"
+          }
+        ],
+        "romaji": "dō deshō ne",
+        "audio": "audio/ja/opi-08-polite.mp3"
+      },
+      "registerNotes": "Doubt, said softly. The polite どうでしょうね is often how Japanese says “I don’t agree”.",
+      "audio": "audio/ja/opi-08.mp3",
+      "tags": [
+        "disagreeing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-09",
+      "japanese": "賛成です",
+      "furigana": [
+        {
+          "b": "賛成",
+          "r": "さんせい"
+        },
+        {
+          "b": "です"
+        }
+      ],
+      "romaji": "sansei desu",
+      "english": "I’m for it. / I agree.",
+      "registerNotes": "Agreeing with a plan or a proposal. The opposite is 反対です, which is strong: soften it with ちょっと.",
+      "audio": "audio/ja/opi-09.mp3",
+      "tags": [
+        "agreeing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-10",
+      "japanese": "場合によりますね",
+      "furigana": [
+        {
+          "b": "場合",
+          "r": "ばあい"
+        },
+        {
+          "b": "によりますね"
+        }
+      ],
+      "romaji": "baai ni yorimasu ne",
+      "english": "It depends.",
+      "registerNotes": "A handy, honest non-answer. With friends: 場合によるね, or 時による.",
+      "audio": "audio/ja/opi-10.mp3",
+      "tags": [
+        "choosing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-11",
+      "japanese": "気持ちはわかります",
+      "furigana": [
+        {
+          "b": "気持",
+          "r": "きも"
+        },
+        {
+          "b": "ちはわかります"
+        }
+      ],
+      "romaji": "kimochi wa wakarimasu",
+      "english": "I understand how you feel.",
+      "registerNotes": "Sympathy first, and often a “but” to follow: it shows you’ve heard them before you disagree.",
+      "audio": "audio/ja/opi-11.mp3",
+      "tags": [
+        "disagreeing",
+        "sympathy"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-12",
+      "japanese": "本当におすすめです",
+      "furigana": [
+        {
+          "b": "本当",
+          "r": "ほんとう"
+        },
+        {
+          "b": "におすすめです"
+        }
+      ],
+      "romaji": "hontō ni osusume desu",
+      "english": "I really recommend it.",
+      "registerNotes": "Recommending a place, a dish or a film. With friends: 絶対おすすめ！",
+      "audio": "audio/ja/opi-12.mp3",
+      "tags": [
+        "recommending"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

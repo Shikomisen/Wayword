@@ -119,7 +119,9 @@ export async function renderListeningDrill(root) {
   const view = el('div', { class: 'screen kana-drill listen-drill' });
   root.append(view);
   if (!questions.length) {
+    // Nothing at the learner's level yet (README §7.10), or nothing left today.
     view.append(el('a', { class: 'back-link', href: link('/listening') }, t('study.back')),
+      header(t('listening.title')),
       el('p', { class: 'muted' }, t('drill.none')));
     return;
   }

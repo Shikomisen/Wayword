@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "id": "words-health",
+  "title": "Health & the Doctor",
+  "description": "The body, how you feel, and what you’ll need at a clinic, a pharmacy or the dentist.",
+  "items": [
+    {
+      "id": "w-isha",
+      "japanese": "医者",
+      "furigana": "{医者|いしゃ}",
+      "english": "doctor",
+      "pos": "noun",
+      "usage": "Speaking to or about your doctor: 先生. お医者さん is the polite way to say “a doctor”.",
+      "audio": "audio/ja/words/w-isha.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-haisha",
+      "japanese": "歯医者",
+      "furigana": "{歯医者|はいしゃ}",
+      "english": "dentist",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-haisha.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yakkyoku",
+      "japanese": "薬局",
+      "furigana": "{薬局|やっきょく}",
+      "english": "pharmacy, chemist",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yakkyoku.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-atama",
+      "japanese": "頭",
+      "furigana": "{頭|あたま}",
+      "english": "head",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-atama.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-onaka",
+      "japanese": "お腹",
+      "furigana": "お{腹|なか}",
+      "english": "stomach, tummy",
+      "pos": "noun",
+      "usage": "お腹が痛い — I have a stomach ache. お腹すいた — I’m hungry.",
+      "audio": "audio/ja/words/w-onaka.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nodo",
+      "japanese": "喉",
+      "furigana": "{喉|のど}",
+      "english": "throat",
+      "pos": "noun",
+      "usage": "喉が渇いた — I’m thirsty.",
+      "audio": "audio/ja/words/w-nodo.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-ha",
+      "japanese": "歯",
+      "furigana": "{歯|は}",
+      "english": "tooth",
+      "pos": "noun",
+      "audioHint": "歯",
+      "audio": "audio/ja/words/w-ha.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-me",
+      "japanese": "目",
+      "furigana": "{目|め}",
+      "english": "eye",
+      "pos": "noun",
+      "audioHint": "目",
+      "audio": "audio/ja/words/w-me.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-ashi",
+      "japanese": "足",
+      "furigana": "{足|あし}",
+      "english": "leg; foot",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-ashi.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-te",
+      "japanese": "手",
+      "furigana": "{手|て}",
+      "english": "hand",
+      "pos": "noun",
+      "audioHint": "手",
+      "audio": "audio/ja/words/w-te.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-karada",
+      "japanese": "体",
+      "furigana": "{体|からだ}",
+      "english": "body",
+      "pos": "noun",
+      "usage": "体に気をつけて — look after yourself.",
+      "audio": "audio/ja/words/w-karada.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-seki",
+      "japanese": "咳",
+      "furigana": "{咳|せき}",
+      "english": "cough",
+      "pos": "noun",
+      "usage": "咳が出る — I have a cough.",
+      "audioHint": "咳",
+      "audio": "audio/ja/words/w-seki.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-zutsuu",
+      "japanese": "頭痛",
+      "furigana": "{頭痛|ずつう}",
+      "english": "headache",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-zutsuu.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kega",
+      "japanese": "怪我",
+      "furigana": "{怪我|けが}",
+      "english": "injury",
+      "pos": "noun",
+      "usage": "怪我をした — I hurt myself.",
+      "audio": "audio/ja/words/w-kega.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-guai",
+      "japanese": "具合",
+      "furigana": "{具合|ぐあい}",
+      "english": "condition, how one feels",
+      "pos": "noun",
+      "usage": "具合が悪い — I don’t feel well. 具合はどうですか — how are you feeling?",
+      "audio": "audio/ja/words/w-guai.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-taichou",
+      "japanese": "体調",
+      "furigana": "{体調|たいちょう}",
+      "english": "physical condition, health",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-taichou.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hokenshou",
+      "japanese": "保険証",
+      "furigana": "{保険証|ほけんしょう}",
+      "english": "health insurance card",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hokenshou.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shinsatsu",
+      "japanese": "診察",
+      "furigana": "{診察|しんさつ}",
+      "english": "a doctor’s examination, a consultation",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shinsatsu.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-naoru",
+      "japanese": "治る",
+      "furigana": "{治|なお}る",
+      "english": "to get better, to heal",
+      "pos": "verb",
+      "forms": {
+        "masu": "{治|なお}ります",
+        "te": "{治|なお}って"
+      },
+      "usage": "早く治るといいね — hope you get better soon.",
+      "audio": "audio/ja/words/w-naoru.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hakike",
+      "japanese": "吐き気",
+      "furigana": "{吐|は}き{気|け}",
+      "english": "nausea",
+      "pos": "noun",
+      "usage": "吐き気がする — I feel sick.",
+      "audio": "audio/ja/words/w-hakike.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chi",
+      "japanese": "血",
+      "furigana": "{血|ち}",
+      "english": "blood",
+      "pos": "noun",
+      "audioHint": "血",
+      "audio": "audio/ja/words/w-chi.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hone",
+      "japanese": "骨",
+      "furigana": "{骨|ほね}",
+      "english": "bone",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hone.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-uketsuke",
+      "japanese": "受付",
+      "furigana": "{受付|うけつけ}",
+      "english": "reception (desk)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-uketsuke.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shoujou",
+      "japanese": "症状",
+      "furigana": "{症状|しょうじょう}",
+      "english": "symptom",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shoujou.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chuusha",
+      "japanese": "注射",
+      "furigana": "{注射|ちゅうしゃ}",
+      "english": "injection",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-chuusha.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    }
+  ]
+}

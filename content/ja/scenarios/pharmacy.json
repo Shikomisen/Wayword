@@ -1,0 +1,440 @@
+{
+  "schemaVersion": 1,
+  "id": "pharmacy",
+  "title": "At the pharmacy",
+  "category": "emergency",
+  "setting": "You’ve had a cold for two days. You walk into a drugstore near your hotel and go to the pharmacy counter.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "pharmacist",
+      "japanese": "いらっしゃいませ。どうされましたか。",
+      "furigana": [
+        {
+          "b": "いらっしゃいませ。どうされましたか。"
+        }
+      ],
+      "romaji": "Irasshaimase. Dō saremashita ka.",
+      "english": "Hello. How can I help?",
+      "audio": "audio/ja/scenario/pharmacy-n1.mp3",
+      "audioHint": "いらっしゃいませ。どうされましたか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "風邪を引いたみたいです。",
+          "furigana": [
+            {
+              "b": "風邪",
+              "r": "かぜ"
+            },
+            {
+              "b": "を"
+            },
+            {
+              "b": "引",
+              "r": "ひ"
+            },
+            {
+              "b": "いたみたいです。"
+            }
+          ],
+          "romaji": "Kaze o hiita mitai desu.",
+          "english": "I think I’ve caught a cold.",
+          "feedback": "Clear and natural. みたいです softens it: you think so, but you’re not the doctor.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "eme-03",
+          "quality": "good",
+          "feedback": "Fine as a start: they’ll ask what’s wrong. 風邪を引いたみたいです tells them straight away.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "風邪をください。",
+          "furigana": [
+            {
+              "b": "風邪",
+              "r": "かぜ"
+            },
+            {
+              "b": "をください。"
+            }
+          ],
+          "romaji": "Kaze o kudasai.",
+          "english": "A cold, please.",
+          "feedback": "That asks for a cold! Cold medicine is 風邪薬: 風邪薬はありますか.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "pharmacist",
+      "japanese": "熱はありますか。",
+      "furigana": [
+        {
+          "b": "熱",
+          "r": "ねつ"
+        },
+        {
+          "b": "はありますか。"
+        }
+      ],
+      "romaji": "Netsu wa arimasu ka.",
+      "english": "Do you have a temperature?",
+      "audio": "audio/ja/scenario/pharmacy-n2.mp3",
+      "audioHint": "ねつはありますか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "少しあります。三十八度ぐらいです。",
+          "furigana": [
+            {
+              "b": "少",
+              "r": "すこ"
+            },
+            {
+              "b": "しあります。"
+            },
+            {
+              "b": "三十八度",
+              "r": "さんじゅうはちど"
+            },
+            {
+              "b": "ぐらいです。"
+            }
+          ],
+          "romaji": "Sukoshi arimasu. Sanjūhachi-do gurai desu.",
+          "english": "A little. About 38 degrees.",
+          "feedback": "Ideal: yes, and how high. Japan measures temperature in Celsius.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "japanese": "いいえ、ありません。",
+          "furigana": [
+            {
+              "b": "いいえ、ありません。"
+            }
+          ],
+          "romaji": "Iie, arimasen.",
+          "english": "No, I don’t.",
+          "feedback": "A clear answer to a yes-or-no question.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "熱です。",
+          "furigana": [
+            {
+              "b": "熱",
+              "r": "ねつ"
+            },
+            {
+              "b": "です。"
+            }
+          ],
+          "romaji": "Netsu desu.",
+          "english": "It’s a fever.",
+          "feedback": "Understood, but it sounds like you’re naming the illness. 熱があります (I have a temperature) is the natural way.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "pharmacist",
+      "japanese": "ほかに症状はありますか。",
+      "furigana": [
+        {
+          "b": "ほかに"
+        },
+        {
+          "b": "症状",
+          "r": "しょうじょう"
+        },
+        {
+          "b": "はありますか。"
+        }
+      ],
+      "romaji": "Hoka ni shōjō wa arimasu ka.",
+      "english": "Any other symptoms?",
+      "audio": "audio/ja/scenario/pharmacy-n3.mp3",
+      "audioHint": "ほかにしょうじょうはありますか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "喉が痛くて、咳も出ます。",
+          "furigana": [
+            {
+              "b": "喉",
+              "r": "のど"
+            },
+            {
+              "b": "が"
+            },
+            {
+              "b": "痛",
+              "r": "いた"
+            },
+            {
+              "b": "くて、"
+            },
+            {
+              "b": "咳",
+              "r": "せき"
+            },
+            {
+              "b": "も"
+            },
+            {
+              "b": "出",
+              "r": "で"
+            },
+            {
+              "b": "ます。"
+            }
+          ],
+          "romaji": "Nodo ga itakute, seki mo demasu.",
+          "english": "My throat hurts, and I’ve got a cough.",
+          "feedback": "Two symptoms in one sentence: the て form joins them.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "japanese": "頭が少し痛いです。",
+          "furigana": [
+            {
+              "b": "頭",
+              "r": "あたま"
+            },
+            {
+              "b": "が"
+            },
+            {
+              "b": "少",
+              "r": "すこ"
+            },
+            {
+              "b": "し"
+            },
+            {
+              "b": "痛",
+              "r": "いた"
+            },
+            {
+              "b": "いです。"
+            }
+          ],
+          "romaji": "Atama ga sukoshi itai desu.",
+          "english": "I have a bit of a headache.",
+          "feedback": "Clear. Where it hurts + が痛いです works for any part of the body.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "全部痛いです。",
+          "furigana": [
+            {
+              "b": "全部",
+              "r": "ぜんぶ"
+            },
+            {
+              "b": "痛",
+              "r": "いた"
+            },
+            {
+              "b": "いです。"
+            }
+          ],
+          "romaji": "Zenbu itai desu.",
+          "english": "Everything hurts.",
+          "feedback": "Honest! But the pharmacist needs to know where: 喉 (throat), 頭 (head), お腹 (stomach).",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "pharmacist",
+      "japanese": "こちらの薬はいかがですか。一日三回、食後に飲んでください。",
+      "furigana": [
+        {
+          "b": "こちらの"
+        },
+        {
+          "b": "薬",
+          "r": "くすり"
+        },
+        {
+          "b": "はいかがですか。"
+        },
+        {
+          "b": "一日",
+          "r": "いちにち"
+        },
+        {
+          "b": "三回",
+          "r": "さんかい"
+        },
+        {
+          "b": "、"
+        },
+        {
+          "b": "食後",
+          "r": "しょくご"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "飲",
+          "r": "の"
+        },
+        {
+          "b": "んでください。"
+        }
+      ],
+      "romaji": "Kochira no kusuri wa ikaga desu ka. Ichinichi sankai, shokugo ni nonde kudasai.",
+      "english": "How about this medicine? Take it three times a day, after meals.",
+      "audio": "audio/ja/scenario/pharmacy-n4.mp3",
+      "audioHint": "こちらのくすりはいかがですか。いちにちさんかい、しょくごにのんでください",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "眠くなりますか。",
+          "furigana": [
+            {
+              "b": "眠",
+              "r": "ねむ"
+            },
+            {
+              "b": "くなりますか。"
+            }
+          ],
+          "romaji": "Nemuku narimasu ka.",
+          "english": "Will it make me drowsy?",
+          "feedback": "A good question to ask, especially if you’ll be driving.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "japanese": "分かりました。それをください。",
+          "furigana": [
+            {
+              "b": "分",
+              "r": "わ"
+            },
+            {
+              "b": "かりました。それをください。"
+            }
+          ],
+          "romaji": "Wakarimashita. Sore o kudasai.",
+          "english": "All right. I’ll take that, please.",
+          "feedback": "Simple and polite.",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "一日三回、食べます。",
+          "furigana": [
+            {
+              "b": "一日",
+              "r": "いちにち"
+            },
+            {
+              "b": "三回",
+              "r": "さんかい"
+            },
+            {
+              "b": "、"
+            },
+            {
+              "b": "食",
+              "r": "た"
+            },
+            {
+              "b": "べます。"
+            }
+          ],
+          "romaji": "Ichinichi sankai, tabemasu.",
+          "english": "I eat three times a day.",
+          "feedback": "Medicine is “drunk” in Japanese (薬を飲む), and 食後 means after meals: take it after you eat, three times a day.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "pharmacist",
+      "japanese": "少し眠くなるので、運転はしないでください。お大事に。",
+      "furigana": [
+        {
+          "b": "少",
+          "r": "すこ"
+        },
+        {
+          "b": "し"
+        },
+        {
+          "b": "眠",
+          "r": "ねむ"
+        },
+        {
+          "b": "くなるので、"
+        },
+        {
+          "b": "運転",
+          "r": "うんてん"
+        },
+        {
+          "b": "はしないでください。お"
+        },
+        {
+          "b": "大事",
+          "r": "だいじ"
+        },
+        {
+          "b": "に。"
+        }
+      ],
+      "romaji": "Sukoshi nemuku naru node, unten wa shinaide kudasai. O-daiji ni.",
+      "english": "It can make you a little drowsy, so please don’t drive. Take care.",
+      "audio": "audio/ja/scenario/pharmacy-n5.mp3",
+      "audioHint": "すこしねむくなるので、うんてんはしないでください。おだいじに",
+      "options": [
+        {
+          "phraseId": "gre-05",
+          "quality": "good",
+          "feedback": "The right reply. お大事に is “look after yourself”, said to someone who’s unwell.",
+          "next": "end"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "お大事に。",
+          "furigana": [
+            {
+              "b": "お"
+            },
+            {
+              "b": "大事",
+              "r": "だいじ"
+            },
+            {
+              "b": "に。"
+            }
+          ],
+          "romaji": "O-daiji ni.",
+          "english": "Take care.",
+          "feedback": "お大事に is said to someone who’s ill, so saying it back wishes the pharmacist better. Thank them instead.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "romaji": "",
+      "english": "Done. 風邪薬 (cold medicine), 熱 (temperature), 喉 (throat) and 食後 (after meals) cover most pharmacy visits for a cold. If you’re getting worse, the pharmacist can point you to a clinic.",
+      "end": true,
+      "options": []
+    }
+  }
+}

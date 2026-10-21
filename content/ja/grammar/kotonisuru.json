@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-kotonisuru",
+  "connector": "〜ことにする",
+  "gloss": "decide to; it’s been decided",
+  "title": "〜ことにする・〜ことになる — decided",
+  "pattern": "dictionary / ない form + ことにする (I decide) / ことになる (it’s been decided)",
+  "explanation": "ことにする is a decision you make: {来月|らいげつ}から{日本語|にほんご}を{習|なら}うことにした — I’ve decided to take Japanese lessons from next month. ことになる is a decision made for you, or by circumstances: {東京|とうきょう}に{転勤|てんきん}することになった — I’m being transferred to Tokyo.",
+  "natural": "Sharing news: {結婚|けっこん}することになりました — we’re getting married (it’s been settled).",
+  "stiff": "ことになる about your own free choice can sound evasive, as if it weren’t up to you. For your own decisions, ことにする.",
+  "examples": [
+    {
+      "id": "gx-kotonisuru-1",
+      "japanese": "今日は家で休むことにした。",
+      "furigana": "{今日|きょう}は{家|いえ}で{休|やす}むことにした。",
+      "english": "I’ve decided to rest at home today.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{家|いえ}で",
+          "w": "w-ie"
+        },
+        {
+          "t": "{休|やす}むことにした。",
+          "w": "w-yasumu"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}は{家|いえ}で{休|やす}む",
+        "answer": "ことにした",
+        "after": "。",
+        "options": [
+          "ことにした",
+          "ことになった",
+          "ようになった"
+        ],
+        "why": "Your own decision: ことにする."
+      },
+      "audio": "audio/ja/grammar/gx-kotonisuru-1.mp3",
+      "tags": [
+        "grammar",
+        "kotonisuru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kotonisuru-2",
+      "japanese": "来月から大阪で働くことになりました。",
+      "furigana": "{来月|らいげつ}から{大阪|おおさか}で{働|はたら}くことになりました。",
+      "english": "I’m going to be working in Osaka from next month.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{来月|らいげつ}から",
+          "w": "w-raigetsu"
+        },
+        {
+          "t": "{大阪|おおさか}で"
+        },
+        {
+          "t": "{働|はたら}くことになりました。",
+          "w": "w-hataraku"
+        }
+      ],
+      "gap": {
+        "before": "{来月|らいげつ}から{大阪|おおさか}で{働|はたら}く",
+        "answer": "ことになりました",
+        "after": "。",
+        "options": [
+          "ことになりました",
+          "ことにしました",
+          "ようになりました"
+        ],
+        "ok": [
+          "ことにしました"
+        ],
+        "note": "ことにしました works if it was your own choice. ことになりました sounds settled for you, and more modest.",
+        "why": "Settled, perhaps by your company: ことになる."
+      },
+      "audio": "audio/ja/grammar/gx-kotonisuru-2.mp3",
+      "tags": [
+        "grammar",
+        "kotonisuru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kotonisuru-3",
+      "japanese": "甘いものはやめることにします。",
+      "furigana": "{甘|あま}いものはやめることにします。",
+      "english": "I’m going to give up sweet things.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{甘|あま}いものは",
+          "w": "w-amai"
+        },
+        {
+          "t": "やめることに",
+          "w": "w-yameru"
+        },
+        {
+          "t": "します。"
+        }
+      ],
+      "gap": {
+        "before": "{甘|あま}いものはやめる",
+        "answer": "ことに",
+        "after": "します。",
+        "options": [
+          "ことに",
+          "ように",
+          "つもりに"
+        ],
+        "why": "Deciding: ことにする."
+      },
+      "audio": "audio/ja/grammar/gx-kotonisuru-3.mp3",
+      "tags": [
+        "grammar",
+        "kotonisuru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kotonisuru-4",
+      "japanese": "雨だから、今日は行かないことにしよう。",
+      "furigana": "{雨|あめ}だから、{今日|きょう}は{行|い}かないことにしよう。",
+      "english": "It’s raining, so let’s not go today.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{雨|あめ}だから、",
+          "w": "w-ame"
+        },
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{行|い}かないことにしよう。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{雨|あめ}だから、{今日|きょう}は",
+        "answer": "{行|い}かない",
+        "after": "ことにしよう。",
+        "options": [
+          "{行|い}かない",
+          "{行|い}った",
+          "{行|い}こう"
+        ],
+        "why": "Deciding not to: ない form + ことにする."
+      },
+      "audio": "audio/ja/grammar/gx-kotonisuru-4.mp3",
+      "tags": [
+        "grammar",
+        "kotonisuru"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

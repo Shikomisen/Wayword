@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-kenjou",
+  "connector": "いたします",
+  "gloss": "humble verbs (for yourself)",
+  "title": "いたします・もうします — humble verbs",
+  "pattern": "いたす (する) / {申|もう}す ({言|い}う) / {参|まい}る ({行|い}く・{来|く}る) / おる (いる) / いただく ({食|た}べる・もらう)",
+  "explanation": "Humble verbs ({謙譲語|けんじょうご}) lower yourself and your side, which honours the listener. {申|もう}します: {山田|やまだ}と{申|もう}します — my name is Yamada. いたします: ご{案内|あんない}いたします — I’ll show you the way. {参|まい}ります: すぐ{参|まい}ります — I’ll be right there. いただきます: お{土産|みやげ}をいただきました — I received a gift. Many verbs work as お + ます stem + する: お{持|も}ちします — let me carry it.",
+  "natural": "Introducing yourself to a partner’s family, and on the phone: はじめまして、ケンと{申|もう}します.",
+  "stiff": "Never use them for the other person’s actions: {先生|せんせい}が{申|もう}しました is a slip. For them, the respectful verbs.",
+  "examples": [
+    {
+      "id": "gx-kenjou-1",
+      "japanese": "私は山田と申します。",
+      "furigana": "{私|わたし}は{山田|やまだ}と{申|もう}します。",
+      "english": "My name is Yamada.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{私|わたし}は",
+          "w": "w-watashi"
+        },
+        {
+          "t": "{山田|やまだ}と"
+        },
+        {
+          "t": "{申|もう}します。"
+        }
+      ],
+      "gap": {
+        "before": "{私|わたし}は{山田|やまだ}と",
+        "answer": "{申|もう}します",
+        "after": "。",
+        "options": [
+          "{申|もう}します",
+          "おっしゃいます",
+          "{言|い}います"
+        ],
+        "why": "Your own name, humbly: と申します."
+      },
+      "audio": "audio/ja/grammar/gx-kenjou-1.mp3",
+      "tags": [
+        "grammar",
+        "kenjou"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-kenjou-2",
+      "japanese": "お荷物、お持ちします。",
+      "furigana": "お{荷物|にもつ}、お{持|も}ちします。",
+      "english": "Let me carry your bags.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "お{荷物|にもつ}、",
+          "w": "w-nimotsu"
+        },
+        {
+          "t": "お{持|も}ちします。"
+        }
+      ],
+      "gap": {
+        "before": "お{荷物|にもつ}、",
+        "answer": "お{持|も}ちします",
+        "after": "。",
+        "options": [
+          "お{持|も}ちします",
+          "お{持|も}ちになります",
+          "{持|も}ってください"
+        ],
+        "why": "Doing it for them, humbly: お + ます stem + する."
+      },
+      "audio": "audio/ja/grammar/gx-kenjou-2.mp3",
+      "tags": [
+        "grammar",
+        "kenjou"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-kenjou-3",
+      "japanese": "すぐ参ります。",
+      "furigana": "すぐ{参|まい}ります。",
+      "english": "I’ll be right there.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "すぐ",
+          "w": "w-sugu"
+        },
+        {
+          "t": "{参|まい}ります。"
+        }
+      ],
+      "gap": {
+        "before": "すぐ",
+        "answer": "{参|まい}ります",
+        "after": "。",
+        "options": [
+          "{参|まい}ります",
+          "いらっしゃいます",
+          "おいでになります"
+        ],
+        "why": "Your own coming and going: 参る. いらっしゃる and おいでになる are for the other person."
+      },
+      "audio": "audio/ja/grammar/gx-kenjou-3.mp3",
+      "tags": [
+        "grammar",
+        "kenjou"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-kenjou-4",
+      "japanese": "先生にお土産をいただきました。",
+      "furigana": "{先生|せんせい}にお{土産|みやげ}をいただきました。",
+      "english": "I received a souvenir from my teacher.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{先生|せんせい}に",
+          "w": "w-sensei"
+        },
+        {
+          "t": "お{土産|みやげ}を",
+          "w": "w-omiyage"
+        },
+        {
+          "t": "いただきました。"
+        }
+      ],
+      "gap": {
+        "before": "{先生|せんせい}にお{土産|みやげ}を",
+        "answer": "いただきました",
+        "after": "。",
+        "options": [
+          "いただきました",
+          "くださいました",
+          "{召|め}し{上|あ}がりました"
+        ],
+        "why": "Receiving from someone above you: いただく."
+      },
+      "audio": "audio/ja/grammar/gx-kenjou-4.mp3",
+      "tags": [
+        "grammar",
+        "kenjou"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

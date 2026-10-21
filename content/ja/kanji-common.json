@@ -71,9 +71,9 @@
         "w-issho",
         "w-hitori",
         "s-09",
+        "s-28",
         "gx-kara-made-3",
-        "gx-to-and-4",
-        "gx-mashou-1"
+        "gx-to-and-4"
       ]
     },
     {
@@ -101,11 +101,12 @@
       ],
       "difficulty": 1,
       "seenIn": [
+        "s-32",
+        "s-64",
         "gx-aru-iru-2",
         "gx-aru-iru-4",
         "num-16",
-        "num-17",
-        "num-18"
+        "num-17"
       ]
     },
     {
@@ -133,10 +134,12 @@
       ],
       "difficulty": 1,
       "seenIn": [
+        "gx-tsumori-4",
         "num-07",
         "num-11",
         "num-17",
-        "num-20"
+        "num-20",
+        "doc-02"
       ]
     },
     {
@@ -219,7 +222,10 @@
         "kanji",
         "numbers"
       ],
-      "difficulty": 1
+      "difficulty": 1,
+      "seenIn": [
+        "s-45"
+      ]
     },
     {
       "id": "kan-nana",
@@ -331,9 +337,11 @@
       "difficulty": 1,
       "seenIn": [
         "s-06",
+        "s-57",
         "cx-ba-4",
         "num-11",
-        "air-03"
+        "air-03",
+        "fam-09"
       ]
     },
     {
@@ -510,7 +518,11 @@
       ],
       "difficulty": 2,
       "seenIn": [
-        "gx-nai-4"
+        "w-raigetsu",
+        "w-sengetsu",
+        "s-25",
+        "gx-nai-4",
+        "gx-kotonisuru-2"
       ]
     },
     {
@@ -566,6 +578,7 @@
       "note": "お水 (おみず) on a menu is free tap water.",
       "seenIn": [
         "w-mizu",
+        "w-suidou",
         "res-07"
       ]
     },
@@ -622,9 +635,11 @@
       "note": "お金 (おかね) is money. 金曜日 is Friday. Same kanji.",
       "seenIn": [
         "w-okane",
+        "w-genkin",
+        "w-chokin",
+        "s-50",
         "gx-nai-4",
-        "cx-tame-3",
-        "num-09"
+        "cx-tame-3"
       ]
     },
     {
@@ -651,7 +666,13 @@
         "time"
       ],
       "difficulty": 2,
-      "note": "土日 (どにち) means 'weekend' — you will see it on opening-hours signs."
+      "note": "土日 (どにち) means 'weekend' — you will see it on opening-hours signs.",
+      "seenIn": [
+        "w-omiyage",
+        "s-60",
+        "gx-ageru-1",
+        "gx-kenjou-4"
+      ]
     },
     {
       "id": "kan-youbi",
@@ -678,7 +699,9 @@
       "difficulty": 3,
       "note": "Attaches to the element kanji: 月曜日 Monday, 火曜日 Tuesday, and so on.",
       "seenIn": [
-        "gx-wa-4"
+        "s-60",
+        "gx-wa-4",
+        "gx-noni-1"
       ]
     },
     {
@@ -710,9 +733,9 @@
         "w-jikan",
         "w-tokidoki",
         "w-tokei",
-        "gx-ni-1",
-        "gx-kara-made-2",
-        "gx-kara-made-4"
+        "s-20",
+        "s-41",
+        "s-45"
       ]
     },
     {
@@ -744,11 +767,11 @@
       "note": "Alternates ふん/ぷん depending on the number before it: 五分 ごふん, 十分 じゅっぷん.",
       "seenIn": [
         "w-wakaru",
+        "w-kibun",
+        "w-tabun",
         "s-06",
         "s-14",
-        "gx-ga-subject-4",
-        "gx-mo-3",
-        "cx-ba-4"
+        "s-34"
       ]
     },
     {
@@ -827,6 +850,7 @@
       ],
       "difficulty": 3,
       "seenIn": [
+        "gx-kamoshirenai-1",
         "num-14"
       ]
     },
@@ -966,6 +990,7 @@
       "note": "Learn 男/女 as a pair. Getting this wrong at an onsen is a memorable mistake.",
       "seenIn": [
         "w-kanojo",
+        "s-21",
         "cx-te-4",
         "cx-soshite-3",
         "cx-dakara-4",
@@ -1021,7 +1046,10 @@
         "signage"
       ],
       "difficulty": 3,
-      "note": "案内所 is an information desk — where to go when everything else has failed."
+      "note": "案内所 is an information desk — where to go when everything else has failed.",
+      "seenIn": [
+        "w-annai"
+      ]
     },
     {
       "id": "kan-kaisatsu",
@@ -1047,7 +1075,10 @@
         "transport"
       ],
       "difficulty": 3,
-      "note": "改札口 is the gate itself. Large stations have several — note which one you came in by."
+      "note": "改札口 is the gate itself. Large stations have several — note which one you came in by.",
+      "seenIn": [
+        "pla-06"
+      ]
     },
     {
       "id": "kan-kita",
@@ -1074,7 +1105,10 @@
         "directions"
       ],
       "difficulty": 2,
-      "note": "Station exits are named by compass point: 北口 = north exit."
+      "note": "Station exits are named by compass point: 北口 = north exit.",
+      "seenIn": [
+        "s-22"
+      ]
     },
     {
       "id": "kan-minami",
@@ -1129,6 +1163,7 @@
       "difficulty": 2,
       "note": "The 東 in 東京 (Tokyo) — 'eastern capital'.",
       "seenIn": [
+        "s-41",
         "gx-ni-2",
         "gx-teiru-3",
         "tra-01"
@@ -1188,7 +1223,11 @@
       "difficulty": 2,
       "note": "上り (のぼり) on a timetable means trains heading toward Tokyo.",
       "seenIn": [
-        "sma-08"
+        "w-jouzu",
+        "w-joushi",
+        "gx-sonkei-1",
+        "sma-08",
+        "fam-08"
       ]
     },
     {
@@ -1219,6 +1258,7 @@
       "difficulty": 2,
       "note": "下り (くだり) is the opposite of 上り — away from Tokyo.",
       "seenIn": [
+        "w-heta",
         "cx-ga-3"
       ]
     },
@@ -1312,10 +1352,10 @@
       "seenIn": [
         "w-eki",
         "s-06",
+        "s-56",
+        "s-59",
         "gx-de-4",
-        "gx-kara-made-1",
-        "gx-aru-iru-1",
-        "cx-te-2"
+        "gx-kara-made-1"
       ]
     },
     {
@@ -1343,6 +1383,8 @@
       "difficulty": 2,
       "note": "山手線 = the Yamanote Line. Not the same 千 as 'thousand'.",
       "seenIn": [
+        "w-shinkansen",
+        "gx-takotogaaru-4",
         "tra-05"
       ]
     },
@@ -1452,6 +1494,8 @@
       "difficulty": 3,
       "note": "On every transfer sign and in every onboard announcement.",
       "seenIn": [
+        "w-norikae",
+        "s-63",
         "tra-06"
       ]
     },
@@ -1480,6 +1524,7 @@
       "difficulty": 3,
       "note": "券 (けん) also means ticket and shows up in 券売機 — the ticket machine.",
       "seenIn": [
+        "w-kippu",
         "tra-02"
       ]
     },
@@ -1569,10 +1614,10 @@
       "seenIn": [
         "w-iku",
         "w-ryokou",
-        "gx-ni-2",
-        "gx-de-2",
-        "gx-mo-1",
-        "gx-to-and-3"
+        "w-hikouki",
+        "s-22",
+        "s-23",
+        "s-28"
       ]
     },
     {
@@ -1656,6 +1701,8 @@
       "difficulty": 3,
       "note": "現金のみ = cash only. Still common in small restaurants and at shrines.",
       "seenIn": [
+        "w-genkin",
+        "s-50",
         "num-09"
       ]
     },
@@ -1685,6 +1732,7 @@
       "difficulty": 3,
       "note": "無 is the negating character — it turns up everywhere meaning 'without'.",
       "seenIn": [
+        "w-muryou",
         "cx-soshite-2"
       ]
     },
@@ -1712,7 +1760,10 @@
         "signage"
       ],
       "difficulty": 3,
-      "note": "The opposite of 無料. Worth checking before you use that locker."
+      "note": "The opposite of 無料. Worth checking before you use that locker.",
+      "seenIn": [
+        "w-yuuryou"
+      ]
     },
     {
       "id": "kan-zeikomi",
@@ -1738,7 +1789,10 @@
         "signage"
       ],
       "difficulty": 4,
-      "note": "税抜 (ぜいぬき) means tax NOT included — check which one the big number is."
+      "note": "税抜 (ぜいぬき) means tax NOT included — check which one the big number is.",
+      "seenIn": [
+        "w-zeikomi"
+      ]
     },
     {
       "id": "kan-eigyouchuu",
@@ -2083,7 +2137,11 @@
         "health"
       ],
       "difficulty": 4,
-      "note": "薬 on its own is medicine. ドラッグストア is the larger chain equivalent."
+      "note": "薬 on its own is medicine. ドラッグストア is the larger chain equivalent.",
+      "seenIn": [
+        "w-yakkyoku",
+        "s-65"
+      ]
     },
     {
       "id": "kan-osu",
@@ -2140,7 +2198,12 @@
         "essential"
       ],
       "difficulty": 2,
-      "note": "押/引 is the door pair. Also 割引 (わりびき) = discount."
+      "note": "押/引 is the door pair. Also 割引 (わりびき) = discount.",
+      "seenIn": [
+        "w-hikkoshi",
+        "w-waribiki",
+        "gx-tekureru-1"
+      ]
     },
     {
       "id": "kan-aku",
@@ -2167,7 +2230,11 @@
         "signage"
       ],
       "difficulty": 2,
-      "note": "The 開 button in a lift holds the doors open."
+      "note": "The 開 button in a lift holds the doors open.",
+      "seenIn": [
+        "gx-teoku-2",
+        "gx-temoii-3"
+      ]
     },
     {
       "id": "kan-shimaru",
@@ -2222,7 +2289,10 @@
       "difficulty": 2,
       "note": "The same 止 that ends 禁止 (prohibited) — 'stopped by rule'.",
       "seenIn": [
-        "tra-14"
+        "gx-mitai-3",
+        "tra-14",
+        "doc-05",
+        "doc-13"
       ]
     },
     {
@@ -2251,7 +2321,11 @@
         "signage"
       ],
       "difficulty": 3,
-      "note": "空車 on a taxi means it's free to hail. 空 also means sky, and 空港 is an airport."
+      "note": "空車 on a taxi means it's free to hail. 空 also means sky, and 空港 is an airport.",
+      "seenIn": [
+        "w-kuukou",
+        "pla-02"
+      ]
     },
     {
       "id": "kan-man-full",
@@ -2307,11 +2381,11 @@
       "note": "大盛り (おおもり) on a menu is a large portion, usually for very little extra.",
       "seenIn": [
         "w-ookii",
-        "gx-i-adj-2",
-        "gre-09",
-        "gre-10",
-        "tra-03",
-        "sma-04"
+        "w-daijoubu",
+        "w-taisetsu",
+        "w-taihen",
+        "s-21",
+        "gx-i-adj-2"
       ]
     },
     {
@@ -2338,7 +2412,14 @@
         "signage"
       ],
       "difficulty": 1,
-      "note": "Doubles as 'currently in progress' — 使用中 = in use, 工事中 = under construction."
+      "note": "Doubles as 'currently in progress' — 使用中 = in use, 工事中 = under construction.",
+      "seenIn": [
+        "w-tochuu",
+        "s-55",
+        "gx-tewaikenai-4",
+        "gx-hikaku-4",
+        "fam-10"
+      ]
     },
     {
       "id": "kan-shou",
@@ -2369,6 +2450,7 @@
       "note": "大/中/小 is the standard size trio on menus and vending machines.",
       "seenIn": [
         "w-chiisai",
+        "s-49",
         "cx-demo-3"
       ]
     }

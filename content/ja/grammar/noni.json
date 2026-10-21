@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-noni",
+  "connector": "〜のに",
+  "gloss": "even though (and that’s annoying)",
+  "title": "〜のに — even though, and yet",
+  "pattern": "plain form + のに (noun / な-adjective + なのに)",
+  "explanation": "のに joins two things that clash, usually with surprise, regret or complaint: {頑張|がんば}ったのに、だめだった — I tried so hard, and still it didn’t work. {日曜日|にちようび}なのに、{仕事|しごと}だ — it’s Sunday, and I’m working. On its own at the end, it’s a sigh: {言|い}ったのに… — but I told you…",
+  "natural": "For complaints and regrets in conversation. けど is the neutral “but”; のに adds the feeling.",
+  "stiff": "のに can’t be followed by a request or a suggestion: {雨|あめ}なのに、{行|い}こう is wrong. Use けど: {雨|あめ}だけど、{行|い}こう.",
+  "examples": [
+    {
+      "id": "gx-noni-1",
+      "japanese": "日曜日なのに、仕事に行かなきゃ。",
+      "furigana": "{日曜日|にちようび}なのに、{仕事|しごと}に{行|い}かなきゃ。",
+      "english": "It’s Sunday, and I still have to go to work.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{日曜日|にちようび}なのに、"
+        },
+        {
+          "t": "{仕事|しごと}に",
+          "w": "w-shigoto"
+        },
+        {
+          "t": "{行|い}かなきゃ。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{日曜日|にちようび}",
+        "answer": "なのに",
+        "after": "、{仕事|しごと}に{行|い}かなきゃ。",
+        "options": [
+          "なのに",
+          "だから",
+          "なので"
+        ],
+        "why": "Two things that clash, with a sigh: なのに."
+      },
+      "audio": "audio/ja/grammar/gx-noni-1.mp3",
+      "tags": [
+        "grammar",
+        "noni"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-noni-2",
+      "japanese": "約束したのに、彼は来なかった。",
+      "furigana": "{約束|やくそく}したのに、{彼|かれ}は{来|こ}なかった。",
+      "english": "He promised, and yet he didn’t come.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{約束|やくそく}したのに、",
+          "w": "w-yakusoku"
+        },
+        {
+          "t": "{彼|かれ}は",
+          "w": "w-kare"
+        },
+        {
+          "t": "{来|こ}なかった。",
+          "w": "w-kuru"
+        }
+      ],
+      "gap": {
+        "before": "{約束|やくそく}した",
+        "answer": "のに",
+        "after": "、{彼|かれ}は{来|こ}なかった。",
+        "options": [
+          "のに",
+          "から",
+          "ので"
+        ],
+        "why": "Promised, and yet: のに."
+      },
+      "audio": "audio/ja/grammar/gx-noni-2.mp3",
+      "tags": [
+        "grammar",
+        "noni"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-noni-3",
+      "japanese": "薬を飲んだのに、まだ熱がある。",
+      "furigana": "{薬|くすり}を{飲|の}んだのに、まだ{熱|ねつ}がある。",
+      "english": "I took medicine, but I’ve still got a fever.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{薬|くすり}を",
+          "w": "w-kusuri"
+        },
+        {
+          "t": "{飲|の}んだのに、",
+          "w": "w-nomu"
+        },
+        {
+          "t": "まだ{熱|ねつ}がある。",
+          "w": "w-netsu"
+        }
+      ],
+      "gap": {
+        "before": "{薬|くすり}を{飲|の}んだ",
+        "answer": "のに",
+        "after": "、まだ{熱|ねつ}がある。",
+        "options": [
+          "のに",
+          "から",
+          "たら"
+        ],
+        "why": "It should have worked, but: のに."
+      },
+      "audio": "audio/ja/grammar/gx-noni-3.mp3",
+      "tags": [
+        "grammar",
+        "noni"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-noni-4",
+      "japanese": "言ったのに…",
+      "furigana": "{言|い}ったのに…",
+      "english": "But I told you…",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{言|い}った",
+          "w": "w-iu"
+        },
+        {
+          "t": "のに…"
+        }
+      ],
+      "gap": {
+        "before": "{言|い}った",
+        "answer": "のに",
+        "after": "…",
+        "options": [
+          "のに",
+          "から",
+          "けど"
+        ],
+        "ok": [
+          "けど"
+        ],
+        "note": "けど… works too, and sounds less reproachful.",
+        "why": "A sigh: 言ったのに…"
+      },
+      "audio": "audio/ja/grammar/gx-noni-4.mp3",
+      "tags": [
+        "grammar",
+        "noni"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-sugiru",
+  "connector": "〜すぎる",
+  "gloss": "too much; easy to; hard to",
+  "title": "〜すぎる・〜やすい・〜にくい — too, easy, hard",
+  "pattern": "ます form without ます / adjective without い + すぎる; ます form without ます + やすい / にくい",
+  "explanation": "すぎる means “too (much)”: {食|た}べすぎた — I ate too much; {高|たか}すぎる — too expensive (drop the い). やすい and にくい go on a verb stem: {読|よ}みやすい — easy to read; {分|わ}かりにくい — hard to understand. All three then work like ordinary verbs and adjectives.",
+  "natural": "Shopping and eating: ちょっと{大|おお}きすぎます — it’s a bit too big; この{靴|くつ}は{歩|ある}きやすい — these shoes are easy to walk in.",
+  "stiff": "いい becomes よすぎる (too good), never いすぎる. And this やすい isn’t {安|やす}い (cheap): it means “easy to”.",
+  "examples": [
+    {
+      "id": "gx-sugiru-1",
+      "japanese": "昨日は飲みすぎた。",
+      "furigana": "{昨日|きのう}は{飲|の}みすぎた。",
+      "english": "I drank too much yesterday.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{昨日|きのう}は",
+          "w": "w-kinou"
+        },
+        {
+          "t": "{飲|の}みすぎた。",
+          "w": "w-nomu"
+        }
+      ],
+      "gap": {
+        "before": "{昨日|きのう}は{飲|の}み",
+        "answer": "すぎた",
+        "after": "。",
+        "options": [
+          "すぎた",
+          "やすかった",
+          "にくかった"
+        ],
+        "why": "Too much: ます stem + すぎる."
+      },
+      "audio": "audio/ja/grammar/gx-sugiru-1.mp3",
+      "tags": [
+        "grammar",
+        "sugiru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-sugiru-2",
+      "japanese": "このシャツはちょっと大きすぎます。",
+      "furigana": "この{シャツ|しゃつ}はちょっと{大|おお}きすぎます。",
+      "english": "This shirt is a little too big.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{シャツ|しゃつ}は"
+        },
+        {
+          "t": "ちょっと",
+          "w": "w-chotto"
+        },
+        {
+          "t": "{大|おお}きすぎます。",
+          "w": "w-ookii"
+        }
+      ],
+      "gap": {
+        "before": "この{シャツ|しゃつ}はちょっと{大|おお}き",
+        "answer": "すぎます",
+        "after": "。",
+        "options": [
+          "すぎます",
+          "やすいです",
+          "にくいです"
+        ],
+        "why": "Too big: drop the い, add すぎる."
+      },
+      "audio": "audio/ja/grammar/gx-sugiru-2.mp3",
+      "tags": [
+        "grammar",
+        "sugiru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-sugiru-3",
+      "japanese": "この地図は分かりやすいですね。",
+      "furigana": "この{地図|ちず}は{分|わ}かりやすいですね。",
+      "english": "This map is easy to follow.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{地図|ちず}は",
+          "w": "w-chizu"
+        },
+        {
+          "t": "{分|わ}かりやすいですね。",
+          "w": "w-wakaru"
+        }
+      ],
+      "gap": {
+        "before": "この{地図|ちず}は{分|わ}かり",
+        "answer": "やすい",
+        "after": "ですね。",
+        "options": [
+          "やすい",
+          "にくい",
+          "すぎる"
+        ],
+        "why": "Easy to: やすい."
+      },
+      "audio": "audio/ja/grammar/gx-sugiru-3.mp3",
+      "tags": [
+        "grammar",
+        "sugiru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-sugiru-4",
+      "japanese": "この靴は歩きにくい。",
+      "furigana": "この{靴|くつ}は{歩|ある}きにくい。",
+      "english": "These shoes are hard to walk in.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "この{靴|くつ}は",
+          "w": "w-kutsu"
+        },
+        {
+          "t": "{歩|ある}きにくい。",
+          "w": "w-aruku"
+        }
+      ],
+      "gap": {
+        "before": "この{靴|くつ}は{歩|ある}き",
+        "answer": "にくい",
+        "after": "。",
+        "options": [
+          "にくい",
+          "やすい",
+          "すぎる"
+        ],
+        "why": "Hard to: にくい."
+      },
+      "audio": "audio/ja/grammar/gx-sugiru-4.mp3",
+      "tags": [
+        "grammar",
+        "sugiru"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -89,7 +89,8 @@ export async function renderLesson(root, id) {
       el('header', { class: 'screen-header' },
         el('h1', { class: 'connector-title', lang: content.course.target }, lesson.connector),
         el('p', { class: 'lede' }, lesson.gloss)),
-      el('div', { class: 'lesson-pattern' }, el('span', { class: 'note-label' }, t('lesson.pattern')), lesson.pattern),
+      el('div', { class: 'lesson-pattern' }, el('span', { class: 'note-label' }, t('lesson.pattern')),
+        proseNode(lesson.pattern, { furigana: mode, tag: 'span', className: 'pattern-text' })),
 
       el('div', { class: 'action-row' },
         el('a', { class: 'btn btn-primary', href: link(`/connectors/${id}/practice`) }, t('lesson.practise')),

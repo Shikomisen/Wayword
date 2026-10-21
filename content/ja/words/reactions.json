@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "id": "words-reactions",
+  "title": "Feelings & Reactions",
+  "description": "How you feel and how you react: surprised, relieved, nervous, disappointed, and the words for keeping going.",
+  "items": [
+    {
+      "id": "w-odoroku",
+      "japanese": "驚く",
+      "furigana": "{驚|おどろ}く",
+      "english": "to be surprised",
+      "pos": "verb",
+      "forms": {
+        "masu": "{驚|おどろ}きます",
+        "te": "{驚|おどろ}いて"
+      },
+      "usage": "びっくりする is the everyday, spoken version.",
+      "audio": "audio/ja/words/w-odoroku.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yorokobu",
+      "japanese": "喜ぶ",
+      "furigana": "{喜|よろこ}ぶ",
+      "english": "to be glad, to be delighted",
+      "pos": "verb",
+      "forms": {
+        "masu": "{喜|よろこ}びます",
+        "te": "{喜|よろこ}んで"
+      },
+      "usage": "喜んで！ — “gladly!” — as a reply to an invitation.",
+      "audio": "audio/ja/words/w-yorokobu.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-komaru",
+      "japanese": "困る",
+      "furigana": "{困|こま}る",
+      "english": "to be stuck, to be at a loss",
+      "pos": "verb",
+      "forms": {
+        "masu": "{困|こま}ります",
+        "te": "{困|こま}って"
+      },
+      "usage": "困っています — I’m in a bit of trouble — is a good way to ask for help.",
+      "audio": "audio/ja/words/w-komaru.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kinchou",
+      "japanese": "緊張する",
+      "furigana": "{緊張|きんちょう}する",
+      "english": "to get nervous",
+      "pos": "verb",
+      "forms": {
+        "masu": "{緊張|きんちょう}します",
+        "te": "{緊張|きんちょう}して"
+      },
+      "audio": "audio/ja/words/w-kinchou.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-anshin",
+      "japanese": "安心する",
+      "furigana": "{安心|あんしん}する",
+      "english": "to be relieved, to feel at ease",
+      "pos": "verb",
+      "forms": {
+        "masu": "{安心|あんしん}します",
+        "te": "{安心|あんしん}して"
+      },
+      "audio": "audio/ja/words/w-anshin.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kandou",
+      "japanese": "感動する",
+      "furigana": "{感動|かんどう}する",
+      "english": "to be moved, to be touched",
+      "pos": "verb",
+      "forms": {
+        "masu": "{感動|かんどう}します",
+        "te": "{感動|かんどう}して"
+      },
+      "audio": "audio/ja/words/w-kandou.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gakkari",
+      "japanese": "がっかりする",
+      "english": "to be disappointed",
+      "pos": "verb",
+      "forms": {
+        "masu": "がっかりします",
+        "te": "がっかりして"
+      },
+      "audio": "audio/ja/words/w-gakkari.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hotto",
+      "japanese": "ほっとする",
+      "english": "to feel relieved",
+      "pos": "verb",
+      "forms": {
+        "masu": "ほっとします",
+        "te": "ほっとして"
+      },
+      "usage": "The sigh of relief: ああ、ほっとした.",
+      "audio": "audio/ja/words/w-hotto.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-wakuwaku",
+      "japanese": "わくわくする",
+      "english": "to be excited (looking forward)",
+      "pos": "verb",
+      "forms": {
+        "masu": "わくわくします",
+        "te": "わくわくして"
+      },
+      "audio": "audio/ja/words/w-wakuwaku.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-iraira",
+      "japanese": "いらいらする",
+      "english": "to be irritated, to be on edge",
+      "pos": "verb",
+      "forms": {
+        "masu": "いらいらします",
+        "te": "いらいらして"
+      },
+      "audio": "audio/ja/words/w-iraira.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bikkuri",
+      "japanese": "びっくりする",
+      "english": "to be startled, to be surprised",
+      "pos": "verb",
+      "forms": {
+        "masu": "びっくりします",
+        "te": "びっくりして"
+      },
+      "usage": "びっくりした！ — that made me jump!",
+      "audio": "audio/ja/words/w-bikkuri.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kimochi",
+      "japanese": "気持ち",
+      "furigana": "{気持|きも}ち",
+      "english": "feeling",
+      "pos": "noun",
+      "usage": "気持ちいい — it feels good (a bath, a breeze).",
+      "audio": "audio/ja/words/w-kimochi.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kibun",
+      "japanese": "気分",
+      "furigana": "{気分|きぶん}",
+      "english": "mood; how you feel",
+      "pos": "noun",
+      "usage": "気分が悪い — I feel sick. 気分転換 — a change of scene.",
+      "audio": "audio/ja/words/w-kibun.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-fuan",
+      "japanese": "不安",
+      "furigana": "{不安|ふあん}",
+      "english": "anxious, uneasy",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-fuan.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-jishin",
+      "japanese": "自信",
+      "furigana": "{自信|じしん}",
+      "english": "confidence",
+      "pos": "noun",
+      "usage": "自信がない — I’m not confident. (The same sound, 地震, is an earthquake.)",
+      "audio": "audio/ja/words/w-jishin.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-zannen",
+      "japanese": "残念",
+      "furigana": "{残念|ざんねん}",
+      "english": "a pity, a shame",
+      "pos": "na-adjective",
+      "usage": "残念ですね — what a shame — when plans fall through.",
+      "audio": "audio/ja/words/w-zannen.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-daijoubu",
+      "japanese": "大丈夫",
+      "furigana": "{大丈夫|だいじょうぶ}",
+      "english": "all right, OK",
+      "pos": "na-adjective",
+      "usage": "Also a polite “no thanks”: 大丈夫です can mean “I’m fine without it”.",
+      "audio": "audio/ja/words/w-daijoubu.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kininaru",
+      "japanese": "気になる",
+      "furigana": "{気|き}になる",
+      "english": "to be on one’s mind; to be curious about",
+      "pos": "verb",
+      "forms": {
+        "masu": "{気|き}になります",
+        "te": "{気|き}になって"
+      },
+      "audio": "audio/ja/words/w-kininaru.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kiwotsukeru",
+      "japanese": "気をつける",
+      "furigana": "{気|き}をつける",
+      "english": "to be careful, to take care",
+      "pos": "verb",
+      "forms": {
+        "masu": "{気|き}をつけます",
+        "te": "{気|き}をつけて"
+      },
+      "usage": "気をつけて！ — take care! — when someone leaves or travels.",
+      "audio": "audio/ja/words/w-kiwotsukeru.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gaman",
+      "japanese": "我慢する",
+      "furigana": "{我慢|がまん}する",
+      "english": "to put up with, to hold out",
+      "pos": "verb",
+      "forms": {
+        "masu": "{我慢|がまん}します",
+        "te": "{我慢|がまん}して"
+      },
+      "audio": "audio/ja/words/w-gaman.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-koishii",
+      "japanese": "恋しい",
+      "furigana": "{恋|こい}しい",
+      "english": "to miss (someone, a place)",
+      "pos": "i-adjective",
+      "usage": "A strong, warm missing: 日本の食べ物が恋しい.",
+      "audio": "audio/ja/words/w-koishii.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-urayamashii",
+      "japanese": "羨ましい",
+      "furigana": "{羨|うらや}ましい",
+      "english": "envious, “lucky you”",
+      "pos": "i-adjective",
+      "usage": "いいなあ、羨ましい！ — oh, lucky you!",
+      "audio": "audio/ja/words/w-urayamashii.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shiawase",
+      "japanese": "幸せ",
+      "furigana": "{幸|しあわ}せ",
+      "english": "happy (deeply), fortunate",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-shiawase.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-saikou",
+      "japanese": "最高",
+      "furigana": "{最高|さいこう}",
+      "english": "the best, amazing",
+      "pos": "na-adjective",
+      "usage": "最高！ — brilliant!",
+      "audio": "audio/ja/words/w-saikou.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-saiaku",
+      "japanese": "最悪",
+      "furigana": "{最悪|さいあく}",
+      "english": "the worst, awful",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-saiaku.mp3",
+      "tags": ["feelings"],
+      "difficulty": 3
+    }
+  ]
+}

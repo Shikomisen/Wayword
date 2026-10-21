@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 1,
+  "id": "words-more-verbs",
+  "title": "More Verbs",
+  "description": "The verbs everyday conversation runs on beyond the basics: deciding, finding, lending, contacting, explaining.",
+  "items": [
+    {
+      "id": "w-kimeru",
+      "japanese": "決める",
+      "furigana": "{決|き}める",
+      "english": "to decide",
+      "pos": "verb",
+      "forms": {
+        "masu": "{決|き}めます",
+        "te": "{決|き}めて"
+      },
+      "usage": "何にする？ — もう決めた？ “Have you decided?” is the question at a menu.",
+      "audio": "audio/ja/words/w-kimeru.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shiraberu",
+      "japanese": "調べる",
+      "furigana": "{調|しら}べる",
+      "english": "to look up, to check",
+      "pos": "verb",
+      "forms": {
+        "masu": "{調|しら}べます",
+        "te": "{調|しら}べて"
+      },
+      "usage": "Looking something up online, or checking a fact: ネットで調べる.",
+      "audio": "audio/ja/words/w-shiraberu.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nareru",
+      "japanese": "慣れる",
+      "furigana": "{慣|な}れる",
+      "english": "to get used to",
+      "pos": "verb",
+      "forms": {
+        "masu": "{慣|な}れます",
+        "te": "{慣|な}れて"
+      },
+      "usage": "What you get used to takes に: 日本の生活に慣れた.",
+      "audio": "audio/ja/words/w-nareru.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-todoku",
+      "japanese": "届く",
+      "furigana": "{届|とど}く",
+      "english": "to arrive (a parcel, a message); to reach",
+      "pos": "verb",
+      "forms": {
+        "masu": "{届|とど}きます",
+        "te": "{届|とど}いて"
+      },
+      "usage": "For things that are sent: 荷物が届いた. People arrive with 着く.",
+      "audio": "audio/ja/words/w-todoku.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tanomu",
+      "japanese": "頼む",
+      "furigana": "{頼|たの}む",
+      "english": "to ask for, to order",
+      "pos": "verb",
+      "forms": {
+        "masu": "{頼|たの}みます",
+        "te": "{頼|たの}んで"
+      },
+      "usage": "Asking someone to do something, or ordering food casually: ピザ、頼もうか.",
+      "audio": "audio/ja/words/w-tanomu.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-erabu",
+      "japanese": "選ぶ",
+      "furigana": "{選|えら}ぶ",
+      "english": "to choose",
+      "pos": "verb",
+      "forms": {
+        "masu": "{選|えら}びます",
+        "te": "{選|えら}んで"
+      },
+      "audio": "audio/ja/words/w-erabu.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-noru",
+      "japanese": "乗る",
+      "furigana": "{乗|の}る",
+      "english": "to ride, to get on",
+      "pos": "verb",
+      "forms": {
+        "masu": "{乗|の}ります",
+        "te": "{乗|の}って"
+      },
+      "usage": "The vehicle takes に: 電車に乗る. Not 電車を乗る.",
+      "audio": "audio/ja/words/w-noru.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-oriru",
+      "japanese": "降りる",
+      "furigana": "{降|お}りる",
+      "english": "to get off",
+      "pos": "verb",
+      "forms": {
+        "masu": "{降|お}ります",
+        "te": "{降|お}りて"
+      },
+      "usage": "What you get off takes を: バスを降りる. Same kanji as rain falling (降る), different word.",
+      "audio": "audio/ja/words/w-oriru.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sumu",
+      "japanese": "住む",
+      "furigana": "{住|す}む",
+      "english": "to live (somewhere)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{住|す}みます",
+        "te": "{住|す}んで"
+      },
+      "usage": "Where you live is usually said with ている: 東京に住んでいます.",
+      "audio": "audio/ja/words/w-sumu.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tsuzukeru",
+      "japanese": "続ける",
+      "furigana": "{続|つづ}ける",
+      "english": "to keep doing, to continue",
+      "pos": "verb",
+      "forms": {
+        "masu": "{続|つづ}けます",
+        "te": "{続|つづ}けて"
+      },
+      "usage": "After a verb stem: 勉強し続ける, to keep studying.",
+      "audio": "audio/ja/words/w-tsuzukeru.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yameru",
+      "japanese": "やめる",
+      "english": "to stop, to quit",
+      "pos": "verb",
+      "forms": {
+        "masu": "やめます",
+        "te": "やめて"
+      },
+      "usage": "Giving up a habit or a job: たばこをやめた. やめて！ is “stop it!”",
+      "audio": "audio/ja/words/w-yameru.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kaeru-change",
+      "japanese": "変える",
+      "furigana": "{変|か}える",
+      "english": "to change (something)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{変|か}えます",
+        "te": "{変|か}えて"
+      },
+      "usage": "You change something with 変える; something changes by itself with 変わる (かわる).",
+      "audio": "audio/ja/words/w-kaeru-change.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sagasu",
+      "japanese": "探す",
+      "furigana": "{探|さが}す",
+      "english": "to look for",
+      "pos": "verb",
+      "forms": {
+        "masu": "{探|さが}します",
+        "te": "{探|さが}して"
+      },
+      "audio": "audio/ja/words/w-sagasu.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mitsukeru",
+      "japanese": "見つける",
+      "furigana": "{見|み}つける",
+      "english": "to find",
+      "pos": "verb",
+      "forms": {
+        "masu": "{見|み}つけます",
+        "te": "{見|み}つけて"
+      },
+      "usage": "探す is looking; 見つける is finding it. 見つかる: it turns up.",
+      "audio": "audio/ja/words/w-mitsukeru.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-wasureru",
+      "japanese": "忘れる",
+      "furigana": "{忘|わす}れる",
+      "english": "to forget; to leave (something) behind",
+      "pos": "verb",
+      "forms": {
+        "masu": "{忘|わす}れます",
+        "te": "{忘|わす}れて"
+      },
+      "usage": "Also for leaving something somewhere: 傘を電車に忘れた.",
+      "audio": "audio/ja/words/w-wasureru.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-oboeru",
+      "japanese": "覚える",
+      "furigana": "{覚|おぼ}える",
+      "english": "to remember; to learn by heart",
+      "pos": "verb",
+      "forms": {
+        "masu": "{覚|おぼ}えます",
+        "te": "{覚|おぼ}えて"
+      },
+      "usage": "覚えている is “I remember”: 覚えてる？ — do you remember?",
+      "audio": "audio/ja/words/w-oboeru.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-okuru",
+      "japanese": "送る",
+      "furigana": "{送|おく}る",
+      "english": "to send; to see someone off, to drop someone home",
+      "pos": "verb",
+      "forms": {
+        "masu": "{送|おく}ります",
+        "te": "{送|おく}って"
+      },
+      "usage": "駅まで送るよ — I’ll drop you at the station.",
+      "audio": "audio/ja/words/w-okuru.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kaesu",
+      "japanese": "返す",
+      "furigana": "{返|かえ}す",
+      "english": "to give back, to return",
+      "pos": "verb",
+      "forms": {
+        "masu": "{返|かえ}します",
+        "te": "{返|かえ}して"
+      },
+      "audio": "audio/ja/words/w-kaesu.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kasu",
+      "japanese": "貸す",
+      "furigana": "{貸|か}す",
+      "english": "to lend",
+      "pos": "verb",
+      "forms": {
+        "masu": "{貸|か}します",
+        "te": "{貸|か}して"
+      },
+      "usage": "貸して！ is how you ask to borrow: “lend it to me”.",
+      "audio": "audio/ja/words/w-kasu.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kariru",
+      "japanese": "借りる",
+      "furigana": "{借|か}りる",
+      "english": "to borrow",
+      "pos": "verb",
+      "forms": {
+        "masu": "{借|か}ります",
+        "te": "{借|か}りて"
+      },
+      "usage": "The person you borrow from takes に: 友達にお金を借りた.",
+      "audio": "audio/ja/words/w-kariru.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tetsudau",
+      "japanese": "手伝う",
+      "furigana": "{手伝|てつだ}う",
+      "english": "to help (with a task)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{手伝|てつだ}います",
+        "te": "{手伝|てつだ}って"
+      },
+      "usage": "Help with doing something. 何か手伝おうか？ — anything I can help with?",
+      "audio": "audio/ja/words/w-tetsudau.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-junbi",
+      "japanese": "準備する",
+      "furigana": "{準備|じゅんび}する",
+      "english": "to get ready, to prepare",
+      "pos": "verb",
+      "forms": {
+        "masu": "{準備|じゅんび}します",
+        "te": "{準備|じゅんび}して"
+      },
+      "audio": "audio/ja/words/w-junbi.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yoyaku",
+      "japanese": "予約する",
+      "furigana": "{予約|よやく}する",
+      "english": "to book, to reserve",
+      "pos": "verb",
+      "forms": {
+        "masu": "{予約|よやく}します",
+        "te": "{予約|よやく}して"
+      },
+      "usage": "予約してあります — I have a booking.",
+      "audio": "audio/ja/words/w-yoyaku.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-renraku",
+      "japanese": "連絡する",
+      "furigana": "{連絡|れんらく}する",
+      "english": "to get in touch, to let someone know",
+      "pos": "verb",
+      "forms": {
+        "masu": "{連絡|れんらく}します",
+        "te": "{連絡|れんらく}して"
+      },
+      "usage": "By any means: message, call, email. 着いたら連絡してね — let me know when you get there.",
+      "audio": "audio/ja/words/w-renraku.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-setsumei",
+      "japanese": "説明する",
+      "furigana": "{説明|せつめい}する",
+      "english": "to explain",
+      "pos": "verb",
+      "forms": {
+        "masu": "{説明|せつめい}します",
+        "te": "{説明|せつめい}して"
+      },
+      "audio": "audio/ja/words/w-setsumei.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-annai",
+      "japanese": "案内する",
+      "furigana": "{案内|あんない}する",
+      "english": "to show around, to guide",
+      "pos": "verb",
+      "forms": {
+        "masu": "{案内|あんない}します",
+        "te": "{案内|あんない}して"
+      },
+      "audio": "audio/ja/words/w-annai.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-renshuu",
+      "japanese": "練習する",
+      "furigana": "{練習|れんしゅう}する",
+      "english": "to practise",
+      "pos": "verb",
+      "forms": {
+        "masu": "{練習|れんしゅう}します",
+        "te": "{練習|れんしゅう}して"
+      },
+      "audio": "audio/ja/words/w-renshuu.mp3",
+      "tags": ["verbs"],
+      "difficulty": 3
+    }
+  ]
+}

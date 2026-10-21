@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-kamoshirenai",
+  "connector": "〜かもしれない",
+  "gloss": "might; probably",
+  "title": "〜かもしれない・〜でしょう — maybe, probably",
+  "pattern": "plain form (noun / な-adjective without だ) + かもしれない / でしょう (casual: だろう)",
+  "explanation": "かもしれない means “might”: {雨|あめ}が{降|ふ}るかもしれない — it might rain. でしょう is “probably”, a little more sure: {明日|あした}は{晴|は}れるでしょう — it’ll probably be fine. Nouns and な-adjectives go straight before them: {雨|あめ}かもしれない, {静|しず}かでしょう. In casual speech, かも alone and だろう are common.",
+  "natural": "Hedging softens everything: ちょっと{遅|おく}れるかも — I might be a bit late.",
+  "stiff": "Weather-report でしょう sounds formal in chat. With friends, たぶん…と{思|おも}う is more natural.",
+  "examples": [
+    {
+      "id": "gx-kamoshirenai-1",
+      "japanese": "午後から雨が降るかもしれません。",
+      "furigana": "{午後|ごご}から{雨|あめ}が{降|ふ}るかもしれません。",
+      "english": "It might rain from the afternoon.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{午後|ごご}から"
+        },
+        {
+          "t": "{雨|あめ}が",
+          "w": "w-ame"
+        },
+        {
+          "t": "{降|ふ}るかもしれません。",
+          "w": "w-furu"
+        }
+      ],
+      "gap": {
+        "before": "{午後|ごご}から{雨|あめ}が{降|ふ}る",
+        "answer": "かもしれません",
+        "after": "。",
+        "options": [
+          "かもしれません",
+          "つもりです",
+          "ことにします"
+        ],
+        "why": "Might: かもしれない."
+      },
+      "audio": "audio/ja/grammar/gx-kamoshirenai-1.mp3",
+      "tags": [
+        "grammar",
+        "kamoshirenai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kamoshirenai-2",
+      "japanese": "ちょっと遅れるかも。",
+      "furigana": "ちょっと{遅|おく}れるかも。",
+      "english": "I might be a bit late.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "ちょっと",
+          "w": "w-chotto"
+        },
+        {
+          "t": "{遅|おく}れるかも。",
+          "w": "w-okureru"
+        }
+      ],
+      "gap": {
+        "before": "ちょっと{遅|おく}れる",
+        "answer": "かも",
+        "after": "。",
+        "options": [
+          "かも",
+          "ので",
+          "けど"
+        ],
+        "why": "Casual “might”: かも."
+      },
+      "audio": "audio/ja/grammar/gx-kamoshirenai-2.mp3",
+      "tags": [
+        "grammar",
+        "kamoshirenai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kamoshirenai-3",
+      "japanese": "明日は晴れるでしょう。",
+      "furigana": "{明日|あした}は{晴|は}れるでしょう。",
+      "english": "It’ll probably be fine tomorrow.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{晴|は}れるでしょう。",
+          "w": "w-hare"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}は{晴|は}れる",
+        "answer": "でしょう",
+        "after": "。",
+        "options": [
+          "でしょう",
+          "ですか",
+          "でした"
+        ],
+        "why": "Probably: でしょう."
+      },
+      "audio": "audio/ja/grammar/gx-kamoshirenai-3.mp3",
+      "tags": [
+        "grammar",
+        "kamoshirenai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kamoshirenai-4",
+      "japanese": "彼はもう家に着いたでしょう。",
+      "furigana": "{彼|かれ}はもう{家|いえ}に{着|つ}いたでしょう。",
+      "english": "He’s probably home by now.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{彼|かれ}は",
+          "w": "w-kare"
+        },
+        {
+          "t": "もう{家|いえ}に",
+          "w": "w-ie"
+        },
+        {
+          "t": "{着|つ}いたでしょう。",
+          "w": "w-tsuku"
+        }
+      ],
+      "gap": {
+        "before": "{彼|かれ}はもう{家|いえ}に{着|つ}いた",
+        "answer": "でしょう",
+        "after": "。",
+        "options": [
+          "でしょう",
+          "かもしれない",
+          "つもり"
+        ],
+        "ok": [
+          "かもしれない"
+        ],
+        "note": "かもしれない works too, and is less sure.",
+        "why": "Probably, by now: でしょう."
+      },
+      "audio": "audio/ja/grammar/gx-kamoshirenai-4.mp3",
+      "tags": [
+        "grammar",
+        "kamoshirenai"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

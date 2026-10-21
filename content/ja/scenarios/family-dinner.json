@@ -1,0 +1,433 @@
+{
+  "schemaVersion": 1,
+  "id": "family-dinner",
+  "title": "Dinner with a partner’s family",
+  "category": "family",
+  "setting": "Your partner has brought you to meet their parents for the first time. Their mum opens the door.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "mother",
+      "japanese": "いらっしゃい。どうぞ、上がってください。",
+      "furigana": [
+        {
+          "b": "いらっしゃい。どうぞ、"
+        },
+        {
+          "b": "上",
+          "r": "あ"
+        },
+        {
+          "b": "がってください。"
+        }
+      ],
+      "english": "Welcome. Please, come in.",
+      "audio": "audio/ja/scenario/family-dinner-n1.mp3",
+      "audioHint": "いらっしゃい。どうぞ、あがってください",
+      "options": [
+        {
+          "phraseId": "fam-05",
+          "quality": "good",
+          "feedback": "Exactly right as you step inside, once your shoes are off.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "fam-01",
+          "quality": "good",
+          "feedback": "Warm and polite. Say お邪魔します as you step in, too.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "ただいま。",
+          "furigana": [
+            {
+              "b": "ただいま。"
+            }
+          ],
+          "english": "I’m home.",
+          "feedback": "ただいま is for coming home to your own house: a funny slip. In someone else’s home, it’s お邪魔します.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "father",
+      "japanese": "遠いところ、よく来てくれましたね。",
+      "furigana": [
+        {
+          "b": "遠",
+          "r": "とお"
+        },
+        {
+          "b": "いところ、よく"
+        },
+        {
+          "b": "来",
+          "r": "き"
+        },
+        {
+          "b": "てくれましたね。"
+        }
+      ],
+      "english": "Thank you for coming all this way.",
+      "audio": "audio/ja/scenario/family-dinner-n2.mp3",
+      "audioHint": "とおいところ、よくきてくれましたね",
+      "options": [
+        {
+          "phraseId": "fam-03",
+          "quality": "good",
+          "feedback": "Thanks for the invitation, in polite Japanese: just right.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "japanese": "こちらこそ、お会いできてうれしいです。",
+          "furigana": [
+            {
+              "b": "こちらこそ、お"
+            },
+            {
+              "b": "会",
+              "r": "あ"
+            },
+            {
+              "b": "いできてうれしいです。"
+            }
+          ],
+          "english": "The pleasure’s mine. I’m so glad to meet you.",
+          "feedback": "こちらこそ (likewise) turns the thanks back to them. Warm and polite.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "はい、遠かったです。疲れました。",
+          "furigana": [
+            {
+              "b": "はい、"
+            },
+            {
+              "b": "遠",
+              "r": "とお"
+            },
+            {
+              "b": "かったです。"
+            },
+            {
+              "b": "疲",
+              "r": "つか"
+            },
+            {
+              "b": "れました。"
+            }
+          ],
+          "english": "Yes, it was a long way. I’m tired.",
+          "feedback": "Honest, but it sounds like a complaint. Thank them for the welcome instead.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "mother",
+      "japanese": "まあ、日本語がお上手ですね。",
+      "furigana": [
+        {
+          "b": "まあ、"
+        },
+        {
+          "b": "日本語",
+          "r": "にほんご"
+        },
+        {
+          "b": "がお"
+        },
+        {
+          "b": "上手",
+          "r": "じょうず"
+        },
+        {
+          "b": "ですね。"
+        }
+      ],
+      "english": "Oh, your Japanese is very good!",
+      "audio": "audio/ja/scenario/family-dinner-n3.mp3",
+      "audioHint": "まあ、にほんごがおじょうずですね",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "いえいえ、まだまだです。",
+          "furigana": [
+            {
+              "b": "いえいえ、まだまだです。"
+            }
+          ],
+          "english": "Oh no, I’ve a long way to go.",
+          "feedback": "The modest reply Japanese expects. Accepting it with a smile and ありがとうございます is fine too.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "fam-10",
+          "quality": "good",
+          "feedback": "Modest, and it gently asks them to be patient with you.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "はい、上手です。",
+          "furigana": [
+            {
+              "b": "はい、"
+            },
+            {
+              "b": "上手",
+              "r": "じょうず"
+            },
+            {
+              "b": "です。"
+            }
+          ],
+          "english": "Yes, I am good.",
+          "feedback": "Agreeing with a compliment about yourself sounds boastful in Japanese. Play it down: いえいえ、まだまだです.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "mother",
+      "japanese": "お口に合いますか。",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "口",
+          "r": "くち"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "合",
+          "r": "あ"
+        },
+        {
+          "b": "いますか。"
+        }
+      ],
+      "english": "Is the food to your liking?",
+      "audio": "audio/ja/scenario/family-dinner-n4.mp3",
+      "audioHint": "おくちにあいますか",
+      "options": [
+        {
+          "phraseId": "fam-08",
+          "quality": "good",
+          "feedback": "Praise for the cook is always welcome.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "japanese": "はい、すごくおいしいです。これは何という料理ですか。",
+          "furigana": [
+            {
+              "b": "はい、すごくおいしいです。これは"
+            },
+            {
+              "b": "何",
+              "r": "なん"
+            },
+            {
+              "b": "という"
+            },
+            {
+              "b": "料理",
+              "r": "りょうり"
+            },
+            {
+              "b": "ですか。"
+            }
+          ],
+          "english": "Yes, it’s really good. What’s this dish called?",
+          "feedback": "Asking about the food shows interest, and gets the conversation going.",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "はい、お口に合います。",
+          "furigana": [
+            {
+              "b": "はい、お"
+            },
+            {
+              "b": "口",
+              "r": "くち"
+            },
+            {
+              "b": "に"
+            },
+            {
+              "b": "合",
+              "r": "あ"
+            },
+            {
+              "b": "います。"
+            }
+          ],
+          "english": "Yes, it suits my honourable mouth.",
+          "feedback": "お口に合う is how a host asks, humbly, and the お honours you: it can’t be said about yourself. Just say it’s delicious: とてもおいしいです.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "mother",
+      "japanese": "もう少しいかがですか。",
+      "furigana": [
+        {
+          "b": "もう"
+        },
+        {
+          "b": "少",
+          "r": "すこ"
+        },
+        {
+          "b": "しいかがですか。"
+        }
+      ],
+      "english": "Would you like a little more?",
+      "audio": "audio/ja/scenario/family-dinner-n5.mp3",
+      "audioHint": "もうすこしいかがですか",
+      "options": [
+        {
+          "phraseId": "fam-09",
+          "quality": "good",
+          "feedback": "A polite no, with thanks.",
+          "next": "n6"
+        },
+        {
+          "quality": "good",
+          "japanese": "じゃあ、少しだけお願いします。",
+          "furigana": [
+            {
+              "b": "じゃあ、"
+            },
+            {
+              "b": "少",
+              "r": "すこ"
+            },
+            {
+              "b": "しだけお"
+            },
+            {
+              "b": "願",
+              "r": "ねが"
+            },
+            {
+              "b": "いします。"
+            }
+          ],
+          "english": "Then just a little, please.",
+          "feedback": "A gracious yes. 少しだけ (just a little) keeps it modest.",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "いりません。",
+          "furigana": [
+            {
+              "b": "いりません。"
+            }
+          ],
+          "english": "I don’t need it.",
+          "feedback": "Far too blunt: it sounds like you’re refusing her food. もう十分いただきました says no while thanking her.",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "father",
+      "japanese": "また、いつでも遊びに来てください。",
+      "furigana": [
+        {
+          "b": "また、いつでも"
+        },
+        {
+          "b": "遊",
+          "r": "あそ"
+        },
+        {
+          "b": "びに"
+        },
+        {
+          "b": "来",
+          "r": "き"
+        },
+        {
+          "b": "てください。"
+        }
+      ],
+      "english": "Come and visit any time.",
+      "audio": "audio/ja/scenario/family-dinner-n6.mp3",
+      "audioHint": "また、いつでもあそびにきてください",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "ありがとうございます。今日は本当に楽しかったです。",
+          "furigana": [
+            {
+              "b": "ありがとうございます。"
+            },
+            {
+              "b": "今日",
+              "r": "きょう"
+            },
+            {
+              "b": "は"
+            },
+            {
+              "b": "本当",
+              "r": "ほんとう"
+            },
+            {
+              "b": "に"
+            },
+            {
+              "b": "楽",
+              "r": "たの"
+            },
+            {
+              "b": "しかったです。"
+            }
+          ],
+          "english": "Thank you. I really enjoyed today.",
+          "feedback": "Thanks for the day, said at the door. Add お邪魔しました as you leave.",
+          "next": "end"
+        },
+        {
+          "phraseId": "fam-13",
+          "quality": "good",
+          "feedback": "The set phrase for leaving someone’s home: exactly right.",
+          "next": "end"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "じゃあね。",
+          "furigana": [
+            {
+              "b": "じゃあね。"
+            }
+          ],
+          "english": "See ya.",
+          "feedback": "Casual goodbyes are for friends. With a partner’s parents: お邪魔しました, and thanks for the day.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "english": "Done. お邪魔します on the way in, praise for the food, a modest reply to compliments, and お邪魔しました on the way out: you’ve made a good first impression.",
+      "end": true,
+      "options": []
+    }
+  }
+}

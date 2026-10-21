@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-takotogaaru",
+  "connector": "〜たことがある",
+  "gloss": "have done (ever)",
+  "title": "〜たことがある — have you ever…?",
+  "pattern": "verb た form + ことがある / ことがない",
+  "explanation": "To talk about experience — have you ever, I’ve never — use the た form + ことがある: {日本|にほん}に{行|い}ったことがあります — I’ve been to Japan. Never is ことがない. Asking: {食|た}べたことがありますか — have you ever eaten it?",
+  "natural": "A great conversation starter: {北海道|ほっかいどう}に{行|い}ったことある？ — have you ever been to Hokkaido?",
+  "stiff": "Not for one recent event (“I went yesterday”): that’s just {行|い}きました. ことがある is about having the experience at all.",
+  "examples": [
+    {
+      "id": "gx-takotogaaru-1",
+      "japanese": "日本に行ったことがありますか。",
+      "furigana": "{日本|にほん}に{行|い}ったことがありますか。",
+      "english": "Have you ever been to Japan?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本|にほん}に",
+          "w": "w-nihon"
+        },
+        {
+          "t": "{行|い}ったことが",
+          "w": "w-iku"
+        },
+        {
+          "t": "ありますか。"
+        }
+      ],
+      "gap": {
+        "before": "{日本|にほん}に{行|い}った",
+        "answer": "ことが",
+        "after": "ありますか。",
+        "options": [
+          "ことが",
+          "ものが",
+          "ところが"
+        ],
+        "why": "Experience: た + ことがある."
+      },
+      "audio": "audio/ja/grammar/gx-takotogaaru-1.mp3",
+      "tags": [
+        "grammar",
+        "takotogaaru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-takotogaaru-2",
+      "japanese": "温泉には入ったことがないです。",
+      "furigana": "{温泉|おんせん}には{入|はい}ったことがないです。",
+      "english": "I’ve never been in a hot spring.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{温泉|おんせん}には",
+          "w": "w-onsen"
+        },
+        {
+          "t": "{入|はい}ったことが"
+        },
+        {
+          "t": "ないです。"
+        }
+      ],
+      "gap": {
+        "before": "{温泉|おんせん}には{入|はい}ったことが",
+        "answer": "ない",
+        "after": "です。",
+        "options": [
+          "ない",
+          "ある",
+          "いない"
+        ],
+        "why": "Never: ことがない."
+      },
+      "audio": "audio/ja/grammar/gx-takotogaaru-2.mp3",
+      "tags": [
+        "grammar",
+        "takotogaaru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-takotogaaru-3",
+      "japanese": "納豆、食べたことある？",
+      "furigana": "{納豆|なっとう}、{食|た}べたことある？",
+      "english": "Have you ever had natto?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{納豆|なっとう}、"
+        },
+        {
+          "t": "{食|た}べたこと",
+          "w": "w-taberu"
+        },
+        {
+          "t": "ある？"
+        }
+      ],
+      "gap": {
+        "before": "{納豆|なっとう}、",
+        "answer": "{食|た}べた",
+        "after": "ことある？",
+        "options": [
+          "{食|た}べた",
+          "{食|た}べる",
+          "{食|た}べて"
+        ],
+        "why": "ことがある takes the た form: 食べた."
+      },
+      "audio": "audio/ja/grammar/gx-takotogaaru-3.mp3",
+      "tags": [
+        "grammar",
+        "takotogaaru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-takotogaaru-4",
+      "japanese": "一度だけ、新幹線に乗ったことがあります。",
+      "furigana": "{一度|いちど}だけ、{新幹線|しんかんせん}に{乗|の}ったことがあります。",
+      "english": "I’ve ridden the shinkansen just once.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{一度|いちど}だけ、"
+        },
+        {
+          "t": "{新幹線|しんかんせん}に",
+          "w": "w-shinkansen"
+        },
+        {
+          "t": "{乗|の}ったことがあります。",
+          "w": "w-noru"
+        }
+      ],
+      "gap": {
+        "before": "{一度|いちど}だけ、{新幹線|しんかんせん}に{乗|の}った",
+        "answer": "ことがあります",
+        "after": "。",
+        "options": [
+          "ことがあります",
+          "ことにします",
+          "ようになります"
+        ],
+        "why": "An experience you’ve had: ことがあります."
+      },
+      "audio": "audio/ja/grammar/gx-takotogaaru-4.mp3",
+      "tags": [
+        "grammar",
+        "takotogaaru"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

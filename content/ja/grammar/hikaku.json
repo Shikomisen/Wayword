@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-hikaku",
+  "connector": "より・ほう",
+  "gloss": "comparing",
+  "title": "より・ほうが・いちばん — comparing things",
+  "pattern": "A は B より … / A のほうが … / … の{中|なか}で A が{一番|いちばん} …",
+  "explanation": "より is “than”: {東京|とうきょう}は{大阪|おおさか}より{大|おお}きい — Tokyo is bigger than Osaka. のほうが picks one of two: コーヒーのほうが{好|す}き — I prefer coffee. Asking: どっちのほうが{好|す}き？ — which do you like better? {一番|いちばん} is “the most”: {日本|にほん}の{料理|りょうり}の{中|なか}で{何|なに}が{一番|いちばん}{好|す}き？",
+  "natural": "Making choices together: {電車|でんしゃ}とバスと、どっちが{早|はや}い？",
+  "stiff": "Don’t translate “more” word for word: もっと{大|おお}きい means “even bigger”. Comparing two things needs より or ほうが.",
+  "examples": [
+    {
+      "id": "gx-hikaku-1",
+      "japanese": "今日は昨日より寒いですね。",
+      "furigana": "{今日|きょう}は{昨日|きのう}より{寒|さむ}いですね。",
+      "english": "Today’s colder than yesterday, isn’t it?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{昨日|きのう}より",
+          "w": "w-kinou"
+        },
+        {
+          "t": "{寒|さむ}いですね。",
+          "w": "w-samui"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}は{昨日|きのう}",
+        "answer": "より",
+        "after": "{寒|さむ}いですね。",
+        "options": [
+          "より",
+          "ほう",
+          "から"
+        ],
+        "why": "Than: より."
+      },
+      "audio": "audio/ja/grammar/gx-hikaku-1.mp3",
+      "tags": [
+        "grammar",
+        "hikaku"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-hikaku-2",
+      "japanese": "私はお茶のほうが好きです。",
+      "furigana": "{私|わたし}はお{茶|ちゃ}のほうが{好|す}きです。",
+      "english": "I prefer tea.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{私|わたし}は",
+          "w": "w-watashi"
+        },
+        {
+          "t": "お{茶|ちゃ}のほうが",
+          "w": "w-ocha"
+        },
+        {
+          "t": "{好|す}きです。",
+          "w": "w-suki"
+        }
+      ],
+      "gap": {
+        "before": "{私|わたし}はお{茶|ちゃ}の",
+        "answer": "ほうが",
+        "after": "{好|す}きです。",
+        "options": [
+          "ほうが",
+          "より",
+          "{一番|いちばん}"
+        ],
+        "why": "Picking one of two: のほうが."
+      },
+      "audio": "audio/ja/grammar/gx-hikaku-2.mp3",
+      "tags": [
+        "grammar",
+        "hikaku"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-hikaku-3",
+      "japanese": "電車とバスと、どっちが早い？",
+      "furigana": "{電車|でんしゃ}と{バス|ばす}と、どっちが{早|はや}い？",
+      "english": "Which is quicker, the train or the bus?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{電車|でんしゃ}と",
+          "w": "w-densha"
+        },
+        {
+          "t": "{バス|ばす}と、",
+          "w": "w-basu"
+        },
+        {
+          "t": "どっちが"
+        },
+        {
+          "t": "{早|はや}い？",
+          "w": "w-hayai"
+        }
+      ],
+      "gap": {
+        "before": "{電車|でんしゃ}と{バス|ばす}と、",
+        "answer": "どっち",
+        "after": "が{早|はや}い？",
+        "options": [
+          "どっち",
+          "どれ",
+          "どこ"
+        ],
+        "why": "Choosing between two: どっち (どちら, politely)."
+      },
+      "audio": "audio/ja/grammar/gx-hikaku-3.mp3",
+      "tags": [
+        "grammar",
+        "hikaku"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-hikaku-4",
+      "japanese": "日本の食べ物の中で、何が一番好きですか。",
+      "furigana": "{日本|にほん}の{食|た}べ{物|もの}の{中|なか}で、{何|なに}が{一番|いちばん}{好|す}きですか。",
+      "english": "Of all Japanese food, what do you like best?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本|にほん}の",
+          "w": "w-nihon"
+        },
+        {
+          "t": "{食|た}べ{物|もの}の{中|なか}で、"
+        },
+        {
+          "t": "{何|なに}が",
+          "w": "w-nani"
+        },
+        {
+          "t": "{一番|いちばん}{好|す}きですか。",
+          "w": "w-suki"
+        }
+      ],
+      "gap": {
+        "before": "{日本|にほん}の{食|た}べ{物|もの}の{中|なか}で、{何|なに}が",
+        "answer": "{一番|いちばん}",
+        "after": "{好|す}きですか。",
+        "options": [
+          "{一番|いちばん}",
+          "より",
+          "ほうが"
+        ],
+        "why": "The most, of several: 一番."
+      },
+      "audio": "audio/ja/grammar/gx-hikaku-4.mp3",
+      "tags": [
+        "grammar",
+        "hikaku"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

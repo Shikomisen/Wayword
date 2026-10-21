@@ -1,0 +1,280 @@
+{
+  "schemaVersion": 1,
+  "id": "words-more-describe",
+  "title": "More Describing Words",
+  "description": "Words for describing people, places and how things are: important, famous, kind, strict, interesting, boring.",
+  "items": [
+    {
+      "id": "w-taisetsu",
+      "japanese": "大切",
+      "furigana": "{大切|たいせつ}",
+      "english": "important, precious",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-taisetsu.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-taihen",
+      "japanese": "大変",
+      "furigana": "{大変|たいへん}",
+      "english": "hard, tough; terribly",
+      "pos": "na-adjective",
+      "usage": "大変ですね — that must be tough — is the classic sympathetic reply.",
+      "audio": "audio/ja/words/w-taihen.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yuumei",
+      "japanese": "有名",
+      "furigana": "{有名|ゆうめい}",
+      "english": "famous",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-yuumei.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hitsuyou",
+      "japanese": "必要",
+      "furigana": "{必要|ひつよう}",
+      "english": "necessary, needed",
+      "pos": "na-adjective",
+      "usage": "パスポートが必要です — you need a passport.",
+      "audio": "audio/ja/words/w-hitsuyou.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tokubetsu",
+      "japanese": "特別",
+      "furigana": "{特別|とくべつ}",
+      "english": "special",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-tokubetsu.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-futsuu",
+      "japanese": "普通",
+      "furigana": "{普通|ふつう}",
+      "english": "normal, ordinary; usually",
+      "pos": "na-adjective",
+      "usage": "Also “usually”: 普通は七時に起きる. In casual speech, 普通においしい means “honestly good”.",
+      "audio": "audio/ja/words/w-futsuu.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shinsetsu",
+      "japanese": "親切",
+      "furigana": "{親切|しんせつ}",
+      "english": "kind, helpful (to others)",
+      "pos": "na-adjective",
+      "usage": "What someone does for you: ご親切にありがとうございます.",
+      "audio": "audio/ja/words/w-shinsetsu.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-teinei",
+      "japanese": "丁寧",
+      "furigana": "{丁寧|ていねい}",
+      "english": "polite; careful, thorough",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-teinei.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-jouzu",
+      "japanese": "上手",
+      "furigana": "{上手|じょうず}",
+      "english": "good at, skilful",
+      "pos": "na-adjective",
+      "usage": "Praise for someone else. About yourself it sounds boastful: say 得意, or 好き.",
+      "audio": "audio/ja/words/w-jouzu.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-heta",
+      "japanese": "下手",
+      "furigana": "{下手|へた}",
+      "english": "bad at, unskilled",
+      "pos": "na-adjective",
+      "usage": "Fine about yourself (日本語が下手で…), rude about someone else.",
+      "audio": "audio/ja/words/w-heta.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tokui",
+      "japanese": "得意",
+      "furigana": "{得意|とくい}",
+      "english": "good at (one’s strong point)",
+      "pos": "na-adjective",
+      "usage": "The modest way to say you’re good at something: 料理が得意です.",
+      "audio": "audio/ja/words/w-tokui.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nigate",
+      "japanese": "苦手",
+      "furigana": "{苦手|にがて}",
+      "english": "not good with, not keen on",
+      "pos": "na-adjective",
+      "usage": "The polite way to say you don’t like something: 納豆はちょっと苦手です.",
+      "audio": "audio/ja/words/w-nigate.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-abunai",
+      "japanese": "危ない",
+      "furigana": "{危|あぶ}ない",
+      "english": "dangerous; look out!",
+      "pos": "i-adjective",
+      "usage": "Shouted, 危ない！ means “watch out!”",
+      "audio": "audio/ja/words/w-abunai.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-anzen",
+      "japanese": "安全",
+      "furigana": "{安全|あんぜん}",
+      "english": "safe",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-anzen.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mezurashii",
+      "japanese": "珍しい",
+      "furigana": "{珍|めずら}しい",
+      "english": "rare, unusual",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-mezurashii.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-natsukashii",
+      "japanese": "懐かしい",
+      "furigana": "{懐|なつ}かしい",
+      "english": "nostalgic, bringing back memories",
+      "pos": "i-adjective",
+      "usage": "No one-word English equivalent: said when something reminds you warmly of the past.",
+      "audio": "audio/ja/words/w-natsukashii.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hazukashii",
+      "japanese": "恥ずかしい",
+      "furigana": "{恥|は}ずかしい",
+      "english": "embarrassed, embarrassing; shy",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-hazukashii.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yasashii",
+      "japanese": "優しい",
+      "furigana": "{優|やさ}しい",
+      "english": "kind, gentle",
+      "pos": "i-adjective",
+      "usage": "A person’s nature. (The same sound, 易しい, means “easy”.)",
+      "audio": "audio/ja/words/w-yasashii.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kibishii",
+      "japanese": "厳しい",
+      "furigana": "{厳|きび}しい",
+      "english": "strict; harsh",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-kibishii.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-omoshiroi",
+      "japanese": "面白い",
+      "furigana": "{面白|おもしろ}い",
+      "english": "interesting; funny",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-omoshiroi.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tsumaranai",
+      "japanese": "つまらない",
+      "english": "boring",
+      "pos": "i-adjective",
+      "usage": "つまらないものですが — “it’s only something small” — when giving a gift.",
+      "audio": "audio/ja/words/w-tsumaranai.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-urusai",
+      "japanese": "うるさい",
+      "english": "noisy; annoying",
+      "pos": "i-adjective",
+      "usage": "Said to someone, うるさい！ is “shut up!”: rude.",
+      "audio": "audio/ja/words/w-urusai.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hayai",
+      "japanese": "早い",
+      "furigana": "{早|はや}い",
+      "english": "early; quick",
+      "pos": "i-adjective",
+      "usage": "Fast in speed is written 速い (also はやい).",
+      "audio": "audio/ja/words/w-hayai.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-osoi",
+      "japanese": "遅い",
+      "furigana": "{遅|おそ}い",
+      "english": "late; slow",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-osoi.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-akarui",
+      "japanese": "明るい",
+      "furigana": "{明|あか}るい",
+      "english": "bright; cheerful (person)",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-akarui.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kurai",
+      "japanese": "暗い",
+      "furigana": "{暗|くら}い",
+      "english": "dark; gloomy",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-kurai.mp3",
+      "tags": ["describing"],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "id": "aizuchi",
+  "title": "Reactions & Listening",
+  "order": 12,
+  "description": "The small words that show you’re listening and react to what you hear. They keep a Japanese conversation going.",
+  "phrases": [
+    {
+      "id": "aiz-01",
+      "register": "casual",
+      "japanese": "そうなんだ",
+      "furigana": [
+        {
+          "b": "そうなんだ"
+        }
+      ],
+      "romaji": "sō nanda",
+      "english": "Oh, really? / I see.",
+      "polite": {
+        "japanese": "そうなんですか",
+        "furigana": [
+          {
+            "b": "そうなんですか"
+          }
+        ],
+        "romaji": "sō nan desu ka",
+        "audio": "audio/ja/aiz-01-polite.mp3"
+      },
+      "registerNotes": "The all-purpose “oh, is that so”: it shows you’ve taken in something new. Let it rise a little; said flat, it sounds bored.",
+      "audio": "audio/ja/aiz-01.mp3",
+      "tags": [
+        "reaction",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "aiz-02",
+      "japanese": "なるほど",
+      "furigana": [
+        {
+          "b": "なるほど"
+        }
+      ],
+      "romaji": "naruhodo",
+      "english": "I see. / That makes sense.",
+      "registerNotes": "For when something’s been explained. To someone above you, なるほど alone can sound like you’re grading their answer; そうなんですね is safer.",
+      "audio": "audio/ja/aiz-02.mp3",
+      "tags": [
+        "reaction",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "aiz-03",
+      "register": "casual",
+      "japanese": "へえ、すごい",
+      "furigana": [
+        {
+          "b": "へえ、すごい"
+        }
+      ],
+      "romaji": "hē, sugoi",
+      "english": "Wow, that’s amazing.",
+      "polite": {
+        "japanese": "へえ、すごいですね",
+        "furigana": [
+          {
+            "b": "へえ、すごいですね"
+          }
+        ],
+        "romaji": "hē, sugoi desu ne",
+        "audio": "audio/ja/aiz-03-polite.mp3"
+      },
+      "registerNotes": "Real interest, out loud. The long へえ does half the work: Japanese listeners expect to hear you react.",
+      "audio": "audio/ja/aiz-03.mp3",
+      "tags": [
+        "reaction"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "aiz-04",
+      "register": "casual",
+      "japanese": "それで？",
+      "furigana": [
+        {
+          "b": "それで？"
+        }
+      ],
+      "romaji": "sorede?",
+      "english": "And then?",
+      "polite": {
+        "japanese": "それで、どうなったんですか",
+        "furigana": [
+          {
+            "b": "それで、どうなったんですか"
+          }
+        ],
+        "romaji": "sorede, dō natta n desu ka?",
+        "audio": "audio/ja/aiz-04-polite.mp3"
+      },
+      "registerNotes": "Asks them to carry on with the story, and shows you want to hear it.",
+      "audio": "audio/ja/aiz-04.mp3",
+      "tags": [
+        "listening"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "aiz-05",
+      "register": "casual",
+      "japanese": "わかる",
+      "furigana": [
+        {
+          "b": "わかる"
+        }
+      ],
+      "romaji": "wakaru",
+      "english": "I know what you mean.",
+      "polite": {
+        "japanese": "わかります",
+        "furigana": [
+          {
+            "b": "わかります"
+          }
+        ],
+        "romaji": "wakarimasu",
+        "audio": "audio/ja/aiz-05-polite.mp3"
+      },
+      "registerNotes": "Sympathy, not just understanding: わかる！ is “I know, right?”. The polite わかります works the same way.",
+      "audio": "audio/ja/aiz-05.mp3",
+      "tags": [
+        "reaction",
+        "agreeing"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "aiz-06",
+      "japanese": "確かに",
+      "furigana": [
+        {
+          "b": "確",
+          "r": "たし"
+        },
+        {
+          "b": "かに"
+        }
+      ],
+      "romaji": "tashika ni",
+      "english": "That’s true. / Fair point.",
+      "registerNotes": "Agrees with a point someone has made. It works in polite and casual speech alike.",
+      "audio": "audio/ja/aiz-06.mp3",
+      "tags": [
+        "agreeing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "aiz-07",
+      "japanese": "ですよね",
+      "furigana": [
+        {
+          "b": "ですよね"
+        }
+      ],
+      "romaji": "desu yo ne",
+      "english": "Exactly. / I know, right?",
+      "registerNotes": "Strong, friendly agreement that stays polite: you’re both thinking the same thing.",
+      "audio": "audio/ja/aiz-07.mp3",
+      "tags": [
+        "agreeing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "aiz-08",
+      "japanese": "大変でしたね",
+      "furigana": [
+        {
+          "b": "大変",
+          "r": "たいへん"
+        },
+        {
+          "b": "でしたね"
+        }
+      ],
+      "romaji": "taihen deshita ne",
+      "english": "That must have been hard.",
+      "registerNotes": "Sympathy after hearing about a problem. ね shares the feeling; it isn’t a question.",
+      "audio": "audio/ja/aiz-08.mp3",
+      "tags": [
+        "sympathy",
+        "essential"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "aiz-09",
+      "japanese": "それはひどいですね",
+      "furigana": [
+        {
+          "b": "それはひどいですね"
+        }
+      ],
+      "romaji": "sore wa hidoi desu ne",
+      "english": "That’s awful.",
+      "registerNotes": "For when someone was treated badly or something went wrong. ひどい is strong, so keep it for real complaints.",
+      "audio": "audio/ja/aiz-09.mp3",
+      "tags": [
+        "sympathy"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "aiz-10",
+      "japanese": "よかったですね",
+      "furigana": [
+        {
+          "b": "よかったですね"
+        }
+      ],
+      "romaji": "yokatta desu ne",
+      "english": "That’s great. / I’m glad for you.",
+      "registerNotes": "Pleased about someone else’s good news. For your own relief, it’s よかった on its own.",
+      "audio": "audio/ja/aiz-10.mp3",
+      "tags": [
+        "reaction",
+        "sympathy"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "aiz-11",
+      "japanese": "まさか",
+      "furigana": [
+        {
+          "b": "まさか"
+        }
+      ],
+      "romaji": "masaka",
+      "english": "No way! / You’re kidding.",
+      "registerNotes": "Disbelief. Friendly with friends; with someone above you, まさか、本当ですか is gentler.",
+      "audio": "audio/ja/aiz-11.mp3",
+      "tags": [
+        "reaction"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "aiz-12",
+      "japanese": "えっと…",
+      "furigana": [
+        {
+          "b": "えっと…"
+        }
+      ],
+      "romaji": "etto",
+      "english": "Um… / Let me think.",
+      "registerNotes": "The natural pause while you find a word. It sounds far better than silence, or an English “um”.",
+      "audio": "audio/ja/aiz-12.mp3",
+      "tags": [
+        "listening",
+        "essential"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "id": "words-life",
+  "title": "Home & Everyday Life",
+  "description": "Running a home: housework, rent, appliances, things breaking and getting fixed, and the habits of a day.",
+  "items": [
+    {
+      "id": "w-kaji",
+      "japanese": "家事",
+      "furigana": "{家事|かじ}",
+      "english": "housework",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kaji.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hikkoshi",
+      "japanese": "引っ越し",
+      "furigana": "{引|ひ}っ{越|こ}し",
+      "english": "moving house",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hikkoshi.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yachin",
+      "japanese": "家賃",
+      "furigana": "{家賃|やちん}",
+      "english": "rent",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yachin.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tonari",
+      "japanese": "隣",
+      "furigana": "{隣|となり}",
+      "english": "next to; next door",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-tonari.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-reizouko",
+      "japanese": "冷蔵庫",
+      "furigana": "{冷蔵庫|れいぞうこ}",
+      "english": "fridge",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-reizouko.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sentakuki",
+      "japanese": "洗濯機",
+      "furigana": "{洗濯機|せんたくき}",
+      "english": "washing machine",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-sentakuki.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-eakon",
+      "japanese": "エアコン",
+      "furigana": "{エアコン|えあこん}",
+      "english": "air conditioner; heat pump",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-eakon.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kowareru",
+      "japanese": "壊れる",
+      "furigana": "{壊|こわ}れる",
+      "english": "to break, to stop working",
+      "pos": "verb",
+      "forms": {
+        "masu": "{壊|こわ}れます",
+        "te": "{壊|こわ}れて"
+      },
+      "usage": "Something breaks by itself with 壊れる; you break it with 壊す.",
+      "audio": "audio/ja/words/w-kowareru.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-naosu",
+      "japanese": "直す",
+      "furigana": "{直|なお}す",
+      "english": "to fix, to repair; to correct",
+      "pos": "verb",
+      "forms": {
+        "masu": "{直|なお}します",
+        "te": "{直|なお}して"
+      },
+      "audio": "audio/ja/words/w-naosu.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-rusu",
+      "japanese": "留守",
+      "furigana": "{留守|るす}",
+      "english": "being out, away from home",
+      "pos": "noun",
+      "usage": "留守電 — voicemail.",
+      "audio": "audio/ja/words/w-rusu.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-takuhaibin",
+      "japanese": "宅配便",
+      "furigana": "{宅配便|たくはいびん}",
+      "english": "parcel delivery",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-takuhaibin.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-seikatsu",
+      "japanese": "生活",
+      "furigana": "{生活|せいかつ}",
+      "english": "life, daily living",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-seikatsu.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shuukan",
+      "japanese": "習慣",
+      "furigana": "{習慣|しゅうかん}",
+      "english": "habit; custom",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shuukan.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hayaoki",
+      "japanese": "早起き",
+      "furigana": "{早起|はやお}き",
+      "english": "getting up early",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hayaoki.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nebou",
+      "japanese": "寝坊",
+      "furigana": "{寝坊|ねぼう}",
+      "english": "oversleeping",
+      "pos": "noun",
+      "usage": "寝坊した！ — I overslept!",
+      "audio": "audio/ja/words/w-nebou.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-futon",
+      "japanese": "布団",
+      "furigana": "{布団|ふとん}",
+      "english": "futon, bedding",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-futon.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sara",
+      "japanese": "皿",
+      "furigana": "{皿|さら}",
+      "english": "plate, dish",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-sara.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hashi",
+      "japanese": "箸",
+      "furigana": "{箸|はし}",
+      "english": "chopsticks",
+      "pos": "noun",
+      "usage": "Usually said お箸. (The same sound, 橋, is a bridge, with a different pitch.)",
+      "audioHint": "箸",
+      "audio": "audio/ja/words/w-hashi.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-suidou",
+      "japanese": "水道",
+      "furigana": "{水道|すいどう}",
+      "english": "water supply; the tap",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-suidou.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kaidan",
+      "japanese": "階段",
+      "furigana": "{階段|かいだん}",
+      "english": "stairs",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kaidan.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-genkan",
+      "japanese": "玄関",
+      "furigana": "{玄関|げんかん}",
+      "english": "the entrance (where shoes come off)",
+      "pos": "noun",
+      "usage": "Shoes come off in the 玄関, before you step up into the house.",
+      "audio": "audio/ja/words/w-genkan.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kutsu",
+      "japanese": "靴",
+      "furigana": "{靴|くつ}",
+      "english": "shoes",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kutsu.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-fuku",
+      "japanese": "服",
+      "furigana": "{服|ふく}",
+      "english": "clothes",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-fuku.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kiru",
+      "japanese": "着る",
+      "furigana": "{着|き}る",
+      "english": "to wear, to put on (clothes on the body)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{着|き}ます",
+        "te": "{着|き}て"
+      },
+      "usage": "Shirts and jackets: 着る. Trousers and shoes: はく. Hats: かぶる.",
+      "audio": "audio/ja/words/w-kiru.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nugu",
+      "japanese": "脱ぐ",
+      "furigana": "{脱|ぬ}ぐ",
+      "english": "to take off (clothes, shoes)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{脱|ぬ}ぎます",
+        "te": "{脱|ぬ}いで"
+      },
+      "audio": "audio/ja/words/w-nugu.mp3",
+      "tags": ["home"],
+      "difficulty": 3
+    }
+  ]
+}

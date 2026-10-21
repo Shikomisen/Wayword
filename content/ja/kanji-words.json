@@ -73,9 +73,9 @@
         "w-hito",
         "w-hitori",
         "w-nihonjin",
-        "gx-desu-3",
-        "gx-desu-4",
-        "gx-aru-iru-4"
+        "w-koibito",
+        "s-28",
+        "s-64"
       ]
     },
     {
@@ -140,9 +140,9 @@
         "w-nani",
         "s-04",
         "s-08",
+        "s-61",
         "gx-wa-2",
-        "gx-kara-made-4",
-        "gx-ka-2"
+        "gx-kara-made-4"
       ]
     },
     {
@@ -173,10 +173,10 @@
       "seenIn": [
         "w-tomodachi",
         "s-01",
+        "s-23",
         "gx-desu-4",
         "gx-ni-4",
-        "gx-no-3",
-        "gx-to-and-4"
+        "gx-no-3"
       ]
     },
     {
@@ -208,10 +208,10 @@
       "seenIn": [
         "w-kazoku",
         "w-ie",
+        "w-kaji",
+        "w-yachin",
         "s-12",
-        "gx-wa-4",
-        "gx-ni-3",
-        "gx-de-1"
+        "s-31"
       ]
     },
     {
@@ -240,7 +240,8 @@
       "difficulty": 2,
       "note": "Your own father is 父; someone else's — or yours, to his face — is お父さん.",
       "seenIn": [
-        "w-otousan"
+        "w-otousan",
+        "gx-ageru-2"
       ]
     },
     {
@@ -300,6 +301,7 @@
       "seenIn": [
         "w-kodomo",
         "w-isu",
+        "s-18",
         "cx-toki-1"
       ]
     },
@@ -330,7 +332,9 @@
       "note": "名前 (なまえ) — your name.",
       "seenIn": [
         "w-namae",
-        "gx-wa-2"
+        "w-yuumei",
+        "gx-wa-2",
+        "gx-mitai-2"
       ]
     },
     {
@@ -360,9 +364,11 @@
       "note": "名前 (なまえ) name, 午前 (ごぜん) a.m., 駅の前 in front of the station.",
       "seenIn": [
         "w-namae",
+        "w-mae",
+        "s-35",
         "gx-wa-2",
         "gx-de-4",
-        "num-14"
+        "gx-teoku-4"
       ]
     },
     {
@@ -394,9 +400,9 @@
         "w-kanojo",
         "w-kare",
         "w-kareshi",
+        "s-21",
         "cx-te-4",
-        "cx-soshite-3",
-        "cx-dakara-4"
+        "cx-soshite-3"
       ]
     },
     {
@@ -428,9 +434,9 @@
         "w-kyou",
         "w-ima",
         "w-konban",
+        "w-kondo",
         "s-03",
-        "gx-wa-1",
-        "gx-ni-3"
+        "s-35"
       ]
     },
     {
@@ -461,9 +467,10 @@
       "seenIn": [
         "w-asa",
         "w-asagohan",
-        "gx-wo-1",
-        "cx-te-1",
-        "hot-06"
+        "s-35",
+        "s-36",
+        "s-45",
+        "gx-wo-1"
       ]
     },
     {
@@ -521,7 +528,8 @@
       ],
       "difficulty": 2,
       "seenIn": [
-        "w-yoru"
+        "w-yoru",
+        "s-64"
       ]
     },
     {
@@ -583,11 +591,11 @@
       "note": "毎日 (まいにち) every day, 毎朝 (まいあさ) every morning.",
       "seenIn": [
         "w-mainichi",
+        "w-maishuu",
         "s-02",
+        "s-36",
         "gx-wo-1",
-        "gx-ni-1",
-        "cx-demo-4",
-        "cx-tame-4"
+        "gx-ni-1"
       ]
     },
     {
@@ -618,9 +626,9 @@
         "w-shuumatsu",
         "w-raishuu",
         "w-senshuu",
+        "w-maishuu",
         "s-08",
-        "gx-ni-4",
-        "gx-kara-made-3"
+        "s-23"
       ]
     },
     {
@@ -653,10 +661,10 @@
       "seenIn": [
         "w-raishuu",
         "w-kuru",
-        "gx-ga-subject-3",
-        "gx-no-3",
-        "cx-shi-1",
-        "gre-22"
+        "w-shourai",
+        "w-raigetsu",
+        "w-rainen",
+        "s-17"
       ]
     },
     {
@@ -687,10 +695,10 @@
       "seenIn": [
         "w-senshuu",
         "w-sensei",
-        "gx-desu-3",
-        "gx-no-2",
-        "gx-masu-4",
-        "gx-i-adj-1"
+        "w-senpai",
+        "w-sengetsu",
+        "s-62",
+        "gx-desu-3"
       ]
     },
     {
@@ -721,7 +729,10 @@
       "note": "後で (あとで) — later. 午後 (ごご) is p.m.",
       "seenIn": [
         "w-atode",
+        "w-kouhai",
+        "w-saigo",
         "s-13",
+        "gx-kamoshirenai-1",
         "num-14"
       ]
     },
@@ -754,10 +765,10 @@
       "seenIn": [
         "w-jikan",
         "w-maniau",
+        "w-konoaida",
         "gx-kara-made-3",
         "gx-aru-iru-3",
-        "cx-demo-2",
-        "cx-tara-2"
+        "cx-demo-2"
       ]
     },
     {
@@ -786,11 +797,11 @@
       "difficulty": 1,
       "seenIn": [
         "w-miru",
+        "w-mitsukeru",
+        "w-iken",
         "s-09",
-        "gx-wo-2",
-        "cx-soshite-1",
-        "cx-sorekara-2",
-        "cx-tara-3"
+        "s-34",
+        "s-37"
       ]
     },
     {
@@ -821,7 +832,9 @@
       "seenIn": [
         "w-kiku",
         "cx-kedo-4",
-        "cx-nagara-1"
+        "cx-nagara-1",
+        "gx-temiru-4",
+        "gx-temo-4"
       ]
     },
     {
@@ -852,7 +865,11 @@
       "note": "言葉 (ことば) — a word.",
       "seenIn": [
         "w-iu",
-        "w-kotoba"
+        "w-kotoba",
+        "s-34",
+        "gx-tte-1",
+        "gx-tte-4",
+        "gx-noni-4"
       ]
     },
     {
@@ -883,10 +900,10 @@
       "seenIn": [
         "w-hanasu",
         "w-denwa",
+        "w-kaiwa",
+        "w-wadai",
         "s-13",
-        "gx-de-3",
-        "cx-demo-4",
-        "cx-tara-1"
+        "gx-de-3"
       ]
     },
     {
@@ -914,7 +931,9 @@
       ],
       "difficulty": 2,
       "seenIn": [
-        "w-yomu"
+        "w-yomu",
+        "s-26",
+        "gx-youninaru-1"
       ]
     },
     {
@@ -943,7 +962,8 @@
       "difficulty": 2,
       "seenIn": [
         "w-kaku",
-        "num-23"
+        "num-23",
+        "doc-09"
       ]
     },
     {
@@ -973,11 +993,11 @@
       "note": "食事 (しょくじ) — a meal.",
       "seenIn": [
         "w-taberu",
+        "s-27",
+        "s-38",
         "gx-wo-1",
         "gx-de-1",
-        "gx-na-adj-2",
-        "gx-tai-4",
-        "gx-mashou-1"
+        "gx-na-adj-2"
       ]
     },
     {
@@ -1007,11 +1027,11 @@
       "note": "飲み物 (のみもの) — a drink.",
       "seenIn": [
         "w-nomu",
+        "w-nomikai",
         "s-05",
         "gx-wo-3",
         "gx-masu-3",
-        "gx-nai-3",
-        "cx-te-1"
+        "gx-nai-3"
       ]
     },
     {
@@ -1075,8 +1095,10 @@
       "note": "ちょっと待って — hang on a second.",
       "seenIn": [
         "w-matsu",
+        "w-shoutai",
         "gx-de-4",
-        "cas-11"
+        "cas-11",
+        "pla-05"
       ]
     },
     {
@@ -1109,8 +1131,8 @@
         "w-kaisha",
         "w-kaigi",
         "w-kaishain",
-        "s-01",
-        "gx-wa-3"
+        "w-kaiwa",
+        "w-nomikai"
       ]
     },
     {
@@ -1143,8 +1165,8 @@
         "gx-mashou-2",
         "cx-kara-3",
         "cx-tara-4",
-        "air-06",
-        "cas-34"
+        "gx-nakereba-2",
+        "air-06"
       ]
     },
     {
@@ -1175,10 +1197,10 @@
       "seenIn": [
         "w-yasumu",
         "w-yasumi",
+        "s-31",
         "gx-wa-1",
         "gx-kara-made-3",
-        "gx-masu-4",
-        "gx-tai-2"
+        "gx-masu-4"
       ]
     },
     {
@@ -1208,6 +1230,8 @@
       "note": "知っています — I know. 知りません — I don't know.",
       "seenIn": [
         "w-shiru",
+        "w-shiriai",
+        "s-21",
         "gx-teiru-4",
         "cas-09"
       ]
@@ -1237,7 +1261,12 @@
       ],
       "difficulty": 3,
       "seenIn": [
-        "w-omou"
+        "w-omou",
+        "s-24",
+        "gx-toomou-1",
+        "gx-toomou-2",
+        "gx-toomou-3",
+        "gx-toomou-4"
       ]
     },
     {
@@ -1265,7 +1294,9 @@
       ],
       "difficulty": 3,
       "seenIn": [
-        "w-tsukau"
+        "w-tsukau",
+        "s-39",
+        "s-50"
       ]
     },
     {
@@ -1364,11 +1395,11 @@
       "note": "出かける (でかける) to go out; 出口 (でぐち) an exit.",
       "seenIn": [
         "w-dekakeru",
+        "w-shuppatsu",
         "gx-to-and-2",
         "gx-tai-3",
         "cx-dakara-1",
-        "air-15",
-        "sma-03"
+        "gx-teoku-4"
       ]
     },
     {
@@ -1397,11 +1428,11 @@
       "difficulty": 3,
       "seenIn": [
         "w-neru",
+        "w-nebou",
         "gx-masu-2",
         "cx-sorekara-4",
         "cx-kara-2",
-        "cx-dakara-2",
-        "cx-ba-2"
+        "cx-dakara-2"
       ]
     },
     {
@@ -1430,6 +1461,9 @@
       "difficulty": 3,
       "seenIn": [
         "w-okiru",
+        "w-hayaoki",
+        "s-35",
+        "s-45",
         "gx-ni-1",
         "cx-te-1"
       ]
@@ -1462,11 +1496,11 @@
       "note": "好き is a な-adjective: 好きです, 好きな人.",
       "seenIn": [
         "w-suki",
-        "gx-ga-subject-1",
-        "gx-mo-4",
-        "gx-na-adj-1",
-        "gx-na-adj-2",
-        "cx-dakara-4"
+        "s-27",
+        "s-28",
+        "s-30",
+        "s-35",
+        "gx-ga-subject-1"
       ]
     },
     {
@@ -1499,9 +1533,9 @@
         "w-tanoshii",
         "w-ongaku",
         "w-tanoshimi",
+        "w-tanoshimu",
         "gx-i-adj-1",
-        "cx-kedo-2",
-        "cx-nagara-1"
+        "cx-kedo-2"
       ]
     },
     {
@@ -1531,7 +1565,9 @@
       "note": "新聞 (しんぶん) — a newspaper.",
       "seenIn": [
         "w-atarashii",
-        "gx-i-adj-4"
+        "w-shinkansen",
+        "gx-i-adj-4",
+        "gx-takotogaaru-4"
       ]
     },
     {
@@ -1590,8 +1626,11 @@
       "note": "Both tall and pricey. 高校 (こうこう) is high school.",
       "seenIn": [
         "w-takai",
+        "w-saikou",
+        "s-20",
         "cx-kedo-1",
-        "cx-ga-2"
+        "cx-ga-2",
+        "gx-toomou-2"
       ]
     },
     {
@@ -1621,11 +1660,11 @@
       "note": "安心 (あんしん) — relief, peace of mind.",
       "seenIn": [
         "w-yasui",
+        "w-anshin",
+        "w-fuan",
+        "w-anzen",
         "s-15",
-        "cx-te-3",
-        "cx-demo-3",
-        "cx-ba-3",
-        "cx-shi-1"
+        "cx-te-3"
       ]
     },
     {
@@ -1688,9 +1727,9 @@
         "w-denki",
         "w-genki",
         "w-tenki",
-        "s-10",
-        "s-12",
-        "cx-to-3"
+        "w-kimochi",
+        "w-kibun",
+        "w-kininaru"
       ]
     },
     {
@@ -1719,7 +1758,8 @@
       "difficulty": 3,
       "note": "心配 (しんぱい) — worry.",
       "seenIn": [
-        "w-shinpai"
+        "w-shinpai",
+        "w-anshin"
       ]
     },
     {
@@ -1783,10 +1823,10 @@
       "seenIn": [
         "w-densha",
         "w-kuruma",
+        "s-57",
         "gx-de-2",
         "gx-no-3",
-        "gx-i-adj-4",
-        "cx-te-2"
+        "gx-i-adj-4"
       ]
     },
     {
@@ -1819,7 +1859,7 @@
         "w-denwa",
         "s-10",
         "s-13",
-        "gx-de-2"
+        "s-57"
       ]
     },
     {
@@ -1850,6 +1890,7 @@
       "seenIn": [
         "w-gakkou",
         "w-gakusei",
+        "s-21",
         "gx-desu-1"
       ]
     },
@@ -1878,7 +1919,8 @@
       "difficulty": 3,
       "note": "学校 (がっこう) — school.",
       "seenIn": [
-        "w-gakkou"
+        "w-gakkou",
+        "s-20"
       ]
     },
     {
@@ -1909,6 +1951,7 @@
       "seenIn": [
         "w-kaisha",
         "w-kaishain",
+        "w-jinja",
         "gx-wa-3",
         "gx-de-2",
         "gx-masu-1"
@@ -1940,9 +1983,11 @@
       "difficulty": 2,
       "seenIn": [
         "w-michi",
+        "w-suidou",
+        "s-22",
+        "s-56",
         "cx-dakara-3",
-        "tra-11",
-        "dir-04"
+        "tra-11"
       ]
     },
     {
@@ -2005,6 +2050,7 @@
       "note": "天気 (てんき) — the weather.",
       "seenIn": [
         "w-tenki",
+        "gx-teoku-4",
         "sma-01"
       ]
     },
@@ -2179,8 +2225,8 @@
         "w-hon",
         "w-nihon",
         "w-nihonjin",
-        "s-02",
-        "gx-desu-2"
+        "w-hontou",
+        "s-02"
       ]
     },
     {
@@ -2212,9 +2258,9 @@
         "w-nihongo",
         "w-eigo",
         "s-02",
-        "gx-ga-subject-4",
-        "gx-wo-4",
-        "gx-de-3"
+        "s-20",
+        "s-32",
+        "s-34"
       ]
     },
     {
@@ -2243,11 +2289,11 @@
       "note": "Two kanji, one word — 仕 on its own is rarely met.",
       "seenIn": [
         "w-shigoto",
+        "s-39",
         "gx-kara-made-2",
         "gx-ka-2",
         "gx-masu-4",
-        "cx-sorekara-1",
-        "cx-tara-4"
+        "cx-sorekara-1"
       ]
     },
     {
@@ -2277,10 +2323,10 @@
       "seenIn": [
         "w-benkyou",
         "s-02",
+        "s-32",
         "gx-mo-2",
         "cx-demo-4",
-        "cx-nagara-1",
-        "cx-tame-1"
+        "cx-nagara-1"
       ]
     }
   ]

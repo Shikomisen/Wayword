@@ -1,0 +1,4011 @@
+{
+  "schemaVersion": 1,
+  "id": "kanji-more",
+  "kind": "characters",
+  "title": "More Kanji",
+  "script": "kanji",
+  "description": "The kanji you meet most in Intermediate Japanese that the other two sets don’t teach: health, travel, plans and the polite phrases. Chosen from the course’s own words and sentences, for recognition, not writing.",
+  "groups": [
+    {
+      "id": "people",
+      "title": "People",
+      "description": "Family words, and the very polite 様."
+    },
+    {
+      "id": "body",
+      "title": "Body & health",
+      "description": "For the doctor, the pharmacy, and saying how you feel."
+    },
+    {
+      "id": "time",
+      "title": "Time & order",
+      "description": "Early, late, next, first and most."
+    },
+    {
+      "id": "travel",
+      "title": "Travel",
+      "description": "Arriving, staying, luggage and photos."
+    },
+    {
+      "id": "places",
+      "title": "Places",
+      "description": "Cities, temples, maps and floors."
+    },
+    {
+      "id": "home",
+      "title": "Food & home",
+      "description": "What’s on the table, and what’s by the door."
+    },
+    {
+      "id": "verbs",
+      "title": "More verbs",
+      "description": "Each one a kanji plus kana, like 持つ and 忘れる: the kanji carries the meaning."
+    },
+    {
+      "id": "describe",
+      "title": "Describing",
+      "description": "How things are: near, far, quiet, busy, difficult."
+    },
+    {
+      "id": "ideas",
+      "title": "Ideas & conversation",
+      "description": "The kanji inside お願いします, 本当 and 連絡."
+    }
+  ],
+  "characters": [
+    {
+      "id": "km-otto",
+      "character": "夫",
+      "japanese": "夫",
+      "furigana": [
+        {
+          "b": "夫",
+          "r": "おっと"
+        }
+      ],
+      "readings": [
+        "おっと",
+        "ふう",
+        "ぶ"
+      ],
+      "romaji": "otto / fū / bu",
+      "english": "husband",
+      "audio": "audio/ja/chars/km-otto.mp3",
+      "audioHint": "おっと",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 2,
+      "note": "大丈夫 (だいじょうぶ) — all right, OK.",
+      "seenIn": [
+        "w-daijoubu",
+        "w-otto",
+        "gx-temo-2",
+        "gre-09",
+        "gre-10",
+        "cas-07"
+      ]
+    },
+    {
+      "id": "km-ani",
+      "character": "兄",
+      "japanese": "兄",
+      "furigana": [
+        {
+          "b": "兄",
+          "r": "あに"
+        }
+      ],
+      "readings": [
+        "あに",
+        "きょう"
+      ],
+      "romaji": "ani / kyō",
+      "english": "older brother",
+      "audio": "audio/ja/chars/km-ani.mp3",
+      "audioHint": "あに",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 2,
+      "note": "兄弟 (きょうだい) — brothers and sisters.",
+      "seenIn": [
+        "w-ani",
+        "s-41",
+        "gx-wa-3",
+        "gx-aru-iru-4",
+        "gx-teiru-3",
+        "gx-tte-1"
+      ]
+    },
+    {
+      "id": "km-otouto",
+      "character": "弟",
+      "japanese": "弟",
+      "furigana": [
+        {
+          "b": "弟",
+          "r": "おとうと"
+        }
+      ],
+      "readings": [
+        "おとうと",
+        "だい"
+      ],
+      "romaji": "otōto / dai",
+      "english": "younger brother",
+      "audio": "audio/ja/chars/km-otouto.mp3",
+      "audioHint": "おとうと",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-otouto",
+        "gx-tekureru-4"
+      ]
+    },
+    {
+      "id": "km-imouto",
+      "character": "妹",
+      "japanese": "妹",
+      "furigana": [
+        {
+          "b": "妹",
+          "r": "いもうと"
+        }
+      ],
+      "readings": [
+        "いもうと",
+        "まい"
+      ],
+      "romaji": "imōto / mai",
+      "english": "younger sister",
+      "audio": "audio/ja/chars/km-imouto.mp3",
+      "audioHint": "いもうと",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-imouto",
+        "gx-mo-2"
+      ]
+    },
+    {
+      "id": "km-oya",
+      "character": "親",
+      "japanese": "親",
+      "furigana": [
+        {
+          "b": "親",
+          "r": "おや"
+        }
+      ],
+      "readings": [
+        "おや",
+        "しん"
+      ],
+      "romaji": "oya / shin",
+      "english": "parent; close, kind",
+      "audio": "audio/ja/chars/km-oya.mp3",
+      "audioHint": "おや",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 3,
+      "note": "親切 (しんせつ) — kind.",
+      "seenIn": [
+        "w-ryoushin",
+        "w-shinsetsu",
+        "w-shinseki"
+      ]
+    },
+    {
+      "id": "km-zoku",
+      "character": "族",
+      "japanese": "族",
+      "furigana": [
+        {
+          "b": "族",
+          "r": "ぞく"
+        }
+      ],
+      "readings": [
+        "ぞく"
+      ],
+      "romaji": "zoku",
+      "english": "family, group",
+      "audio": "audio/ja/chars/km-zoku.mp3",
+      "audioHint": "ぞく",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 3,
+      "note": "家族 (かぞく) — family.",
+      "seenIn": [
+        "w-kazoku",
+        "s-12",
+        "s-40",
+        "gx-to-and-2",
+        "cx-tame-2"
+      ]
+    },
+    {
+      "id": "km-tachi",
+      "character": "達",
+      "japanese": "達",
+      "furigana": [
+        {
+          "b": "達",
+          "r": "たち"
+        }
+      ],
+      "readings": [
+        "たち",
+        "たつ"
+      ],
+      "romaji": "tachi / tatsu",
+      "english": "more than one (person)",
+      "audio": "audio/ja/chars/km-tachi.mp3",
+      "audioHint": "たち",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 2,
+      "note": "友達 (ともだち) — a friend.",
+      "seenIn": [
+        "w-tomodachi",
+        "s-01",
+        "s-23",
+        "gx-desu-4",
+        "gx-ni-4",
+        "gx-no-3"
+      ]
+    },
+    {
+      "id": "km-sama",
+      "character": "様",
+      "japanese": "様",
+      "furigana": [
+        {
+          "b": "様",
+          "r": "さま"
+        }
+      ],
+      "readings": [
+        "さま",
+        "よう"
+      ],
+      "romaji": "sama / yō",
+      "english": "Mr, Ms (very polite); manner",
+      "audio": "audio/ja/chars/km-sama.mp3",
+      "audioHint": "さま",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 3,
+      "note": "お客様 (おきゃくさま) — the customer.",
+      "seenIn": [
+        "gre-21"
+      ]
+    },
+    {
+      "id": "km-dare",
+      "character": "誰",
+      "japanese": "誰",
+      "furigana": [
+        {
+          "b": "誰",
+          "r": "だれ"
+        }
+      ],
+      "readings": [
+        "だれ"
+      ],
+      "romaji": "dare",
+      "english": "who",
+      "audio": "audio/ja/chars/km-dare.mp3",
+      "audioHint": "だれ",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 2,
+      "note": "誰か (だれか) — someone.",
+      "seenIn": [
+        "w-dare",
+        "gx-ga-subject-3",
+        "gx-no-4",
+        "gx-to-and-3",
+        "gx-ka-4"
+      ]
+    },
+    {
+      "id": "km-sha",
+      "character": "者",
+      "japanese": "者",
+      "furigana": [
+        {
+          "b": "者",
+          "r": "しゃ"
+        }
+      ],
+      "readings": [
+        "しゃ",
+        "もの"
+      ],
+      "romaji": "sha / mono",
+      "english": "person (in compounds)",
+      "audio": "audio/ja/chars/km-sha.mp3",
+      "audioHint": "しゃ",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 3,
+      "note": "医者 (いしゃ) — a doctor.",
+      "seenIn": [
+        "w-isha",
+        "w-haisha",
+        "pro-09"
+      ]
+    },
+    {
+      "id": "km-umareru",
+      "character": "生",
+      "japanese": "生",
+      "furigana": [
+        {
+          "b": "生",
+          "r": "うまれる"
+        }
+      ],
+      "readings": [
+        "うまれる",
+        "せい",
+        "なま"
+      ],
+      "romaji": "umareru / sei / nama",
+      "english": "be born; life; raw",
+      "audio": "audio/ja/chars/km-umareru.mp3",
+      "audioHint": "うまれる",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "people"
+      ],
+      "difficulty": 2,
+      "note": "先生 (せんせい) — a teacher; 生ビール (なまビール) — draught beer.",
+      "seenIn": [
+        "w-tanjoubi",
+        "w-sensei",
+        "w-gakusei",
+        "w-seikatsu",
+        "s-16",
+        "s-33"
+      ]
+    },
+    {
+      "id": "km-atama",
+      "character": "頭",
+      "japanese": "頭",
+      "furigana": [
+        {
+          "b": "頭",
+          "r": "あたま"
+        }
+      ],
+      "readings": [
+        "あたま",
+        "ず",
+        "とう"
+      ],
+      "romaji": "atama / zu / tō",
+      "english": "head",
+      "audio": "audio/ja/chars/km-atama.mp3",
+      "audioHint": "あたま",
+      "group": "body",
+      "tags": [
+        "kanji",
+        "body"
+      ],
+      "difficulty": 2,
+      "note": "頭痛 (ずつう) — a headache.",
+      "seenIn": [
+        "w-atama",
+        "w-zutsuu",
+        "s-11",
+        "gx-ndesu-1",
+        "doc-03"
+      ]
+    },
+    {
+      "id": "km-itai",
+      "character": "痛",
+      "japanese": "痛",
+      "furigana": [
+        {
+          "b": "痛",
+          "r": "いたい"
+        }
+      ],
+      "readings": [
+        "いたい",
+        "つう"
+      ],
+      "romaji": "itai / tsū",
+      "english": "painful, sore",
+      "audio": "audio/ja/chars/km-itai.mp3",
+      "audioHint": "いたい",
+      "group": "body",
+      "tags": [
+        "kanji",
+        "body"
+      ],
+      "difficulty": 2,
+      "note": "痛み止め (いたみどめ) — a painkiller.",
+      "seenIn": [
+        "w-itai",
+        "w-zutsuu",
+        "s-11",
+        "s-66",
+        "gx-ndesu-1",
+        "eme-06"
+      ]
+    },
+    {
+      "id": "km-netsu",
+      "character": "熱",
+      "japanese": "熱",
+      "furigana": [
+        {
+          "b": "熱",
+          "r": "ねつ"
+        }
+      ],
+      "readings": [
+        "ねつ",
+        "あつい"
+      ],
+      "romaji": "netsu / atsui",
+      "english": "fever; heat; hot to the touch",
+      "audio": "audio/ja/chars/km-netsu.mp3",
+      "audioHint": "ねつ",
+      "group": "body",
+      "tags": [
+        "kanji",
+        "body"
+      ],
+      "difficulty": 2,
+      "note": "Hot to the touch is 熱い; hot weather is 暑い.",
+      "seenIn": [
+        "w-netsu",
+        "s-66",
+        "cx-node-2",
+        "gx-noni-3",
+        "doc-02"
+      ]
+    },
+    {
+      "id": "km-nemui",
+      "character": "眠",
+      "japanese": "眠",
+      "furigana": [
+        {
+          "b": "眠",
+          "r": "ねむい"
+        }
+      ],
+      "readings": [
+        "ねむい",
+        "みん"
+      ],
+      "romaji": "nemui / min",
+      "english": "sleepy; sleep",
+      "audio": "audio/ja/chars/km-nemui.mp3",
+      "audioHint": "ねむい",
+      "group": "body",
+      "tags": [
+        "kanji",
+        "body"
+      ],
+      "difficulty": 3,
+      "note": "眠る (ねむる) — to sleep.",
+      "seenIn": [
+        "w-nemui",
+        "cx-node-4",
+        "cx-dakara-2",
+        "cx-to-4",
+        "cas-16",
+        "doc-12"
+      ]
+    },
+    {
+      "id": "km-tsukareru",
+      "character": "疲",
+      "japanese": "疲",
+      "furigana": [
+        {
+          "b": "疲",
+          "r": "つかれる"
+        }
+      ],
+      "readings": [
+        "つかれる",
+        "ひ"
+      ],
+      "romaji": "tsukareru / hi",
+      "english": "get tired",
+      "audio": "audio/ja/chars/km-tsukareru.mp3",
+      "audioHint": "つかれる",
+      "group": "body",
+      "tags": [
+        "kanji",
+        "body"
+      ],
+      "difficulty": 3,
+      "note": "お疲れ様です (おつかれさまです) — thanks for your hard work.",
+      "seenIn": [
+        "w-tsukareru",
+        "cx-kara-2",
+        "cx-shi-2",
+        "gx-mitai-1",
+        "gre-21",
+        "cas-15"
+      ]
+    },
+    {
+      "id": "km-shin",
+      "character": "診",
+      "japanese": "診",
+      "furigana": [
+        {
+          "b": "診",
+          "r": "しん"
+        }
+      ],
+      "readings": [
+        "しん",
+        "みる"
+      ],
+      "romaji": "shin / miru",
+      "english": "examine (a patient)",
+      "audio": "audio/ja/chars/km-shin.mp3",
+      "audioHint": "しん",
+      "group": "body",
+      "tags": [
+        "kanji",
+        "body"
+      ],
+      "difficulty": 4,
+      "note": "診察 (しんさつ) — a medical examination.",
+      "seenIn": [
+        "w-shinsatsu",
+        "doc-09"
+      ]
+    },
+    {
+      "id": "km-seki",
+      "character": "咳",
+      "japanese": "咳",
+      "furigana": [
+        {
+          "b": "咳",
+          "r": "せき"
+        }
+      ],
+      "readings": [
+        "せき"
+      ],
+      "romaji": "seki",
+      "english": "cough",
+      "audio": "audio/ja/chars/km-seki.mp3",
+      "audioHint": "せき",
+      "group": "body",
+      "tags": [
+        "kanji",
+        "body"
+      ],
+      "difficulty": 4,
+      "seenIn": [
+        "w-seki",
+        "doc-05"
+      ]
+    },
+    {
+      "id": "km-nodo",
+      "character": "喉",
+      "japanese": "喉",
+      "furigana": [
+        {
+          "b": "喉",
+          "r": "のど"
+        }
+      ],
+      "readings": [
+        "のど"
+      ],
+      "romaji": "nodo",
+      "english": "throat",
+      "audio": "audio/ja/chars/km-nodo.mp3",
+      "audioHint": "のど",
+      "group": "body",
+      "tags": [
+        "kanji",
+        "body"
+      ],
+      "difficulty": 4,
+      "note": "喉が渇いた (のどがかわいた) — I’m thirsty.",
+      "seenIn": [
+        "w-nodo",
+        "s-66"
+      ]
+    },
+    {
+      "id": "km-hara",
+      "character": "腹",
+      "japanese": "腹",
+      "furigana": [
+        {
+          "b": "腹",
+          "r": "はら"
+        }
+      ],
+      "readings": [
+        "はら",
+        "ふく"
+      ],
+      "romaji": "hara / fuku",
+      "english": "belly, stomach",
+      "audio": "audio/ja/chars/km-hara.mp3",
+      "audioHint": "はら",
+      "group": "body",
+      "tags": [
+        "kanji",
+        "body"
+      ],
+      "difficulty": 3,
+      "note": "In お腹 (おなか) it reads なか.",
+      "seenIn": [
+        "w-onaka",
+        "cas-14"
+      ]
+    },
+    {
+      "id": "km-karada",
+      "character": "体",
+      "japanese": "体",
+      "furigana": [
+        {
+          "b": "体",
+          "r": "からだ"
+        }
+      ],
+      "readings": [
+        "からだ",
+        "たい"
+      ],
+      "romaji": "karada / tai",
+      "english": "body",
+      "audio": "audio/ja/chars/km-karada.mp3",
+      "audioHint": "からだ",
+      "group": "body",
+      "tags": [
+        "kanji",
+        "body"
+      ],
+      "difficulty": 2,
+      "note": "体調 (たいちょう) — how you feel physically.",
+      "seenIn": [
+        "w-karada",
+        "w-taichou"
+      ]
+    },
+    {
+      "id": "km-me",
+      "character": "目",
+      "japanese": "目",
+      "furigana": [
+        {
+          "b": "目",
+          "r": "め"
+        }
+      ],
+      "readings": [
+        "め",
+        "もく"
+      ],
+      "romaji": "me / moku",
+      "english": "eye",
+      "audio": "audio/ja/chars/km-me.mp3",
+      "audioHint": "め",
+      "group": "body",
+      "tags": [
+        "kanji",
+        "body"
+      ],
+      "difficulty": 1,
+      "note": "一つ目 (ひとつめ) — the first one.",
+      "seenIn": [
+        "w-me"
+      ]
+    },
+    {
+      "id": "km-ashi",
+      "character": "足",
+      "japanese": "足",
+      "furigana": [
+        {
+          "b": "足",
+          "r": "あし"
+        }
+      ],
+      "readings": [
+        "あし",
+        "そく",
+        "たりる"
+      ],
+      "romaji": "ashi / soku / tariru",
+      "english": "foot, leg; be enough",
+      "audio": "audio/ja/chars/km-ashi.mp3",
+      "audioHint": "あし",
+      "group": "body",
+      "tags": [
+        "kanji",
+        "body"
+      ],
+      "difficulty": 2,
+      "note": "足りる (たりる) — to be enough.",
+      "seenIn": [
+        "w-ashi",
+        "w-tariru"
+      ]
+    },
+    {
+      "id": "km-ha",
+      "character": "歯",
+      "japanese": "歯",
+      "furigana": [
+        {
+          "b": "歯",
+          "r": "は"
+        }
+      ],
+      "readings": [
+        "は",
+        "し"
+      ],
+      "romaji": "ha / shi",
+      "english": "tooth",
+      "audio": "audio/ja/chars/km-ha.mp3",
+      "audioHint": "は",
+      "group": "body",
+      "tags": [
+        "kanji",
+        "body"
+      ],
+      "difficulty": 2,
+      "note": "歯医者 (はいしゃ) — a dentist.",
+      "seenIn": [
+        "w-haisha",
+        "w-ha"
+      ]
+    },
+    {
+      "id": "km-akarui",
+      "character": "明",
+      "japanese": "明",
+      "furigana": [
+        {
+          "b": "明",
+          "r": "あかるい"
+        }
+      ],
+      "readings": [
+        "あかるい",
+        "めい"
+      ],
+      "romaji": "akarui / mei",
+      "english": "bright; clear",
+      "audio": "audio/ja/chars/km-akarui.mp3",
+      "audioHint": "あかるい",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 2,
+      "note": "明日 is read あした (or あす) as a whole word.",
+      "seenIn": [
+        "w-ashita",
+        "w-setsumei",
+        "w-akarui",
+        "s-01",
+        "s-45",
+        "s-46"
+      ]
+    },
+    {
+      "id": "km-hayai",
+      "character": "早",
+      "japanese": "早",
+      "furigana": [
+        {
+          "b": "早",
+          "r": "はやい"
+        }
+      ],
+      "readings": [
+        "はやい",
+        "そう"
+      ],
+      "romaji": "hayai / sō",
+      "english": "early, fast",
+      "audio": "audio/ja/chars/km-hayai.mp3",
+      "audioHint": "はやい",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 2,
+      "note": "早起き (はやおき) — getting up early.",
+      "seenIn": [
+        "w-hayai",
+        "w-hayameni",
+        "w-hayaoki",
+        "s-35",
+        "gx-masu-2",
+        "cx-kara-3"
+      ]
+    },
+    {
+      "id": "km-osoi",
+      "character": "遅",
+      "japanese": "遅",
+      "furigana": [
+        {
+          "b": "遅",
+          "r": "おそい"
+        }
+      ],
+      "readings": [
+        "おそい",
+        "おくれる",
+        "ち"
+      ],
+      "romaji": "osoi / okureru / chi",
+      "english": "late, slow",
+      "audio": "audio/ja/chars/km-osoi.mp3",
+      "audioHint": "おそい",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 2,
+      "note": "遅れる (おくれる) — to be late.",
+      "seenIn": [
+        "w-okureru",
+        "w-osoi",
+        "s-57",
+        "cx-node-1",
+        "cx-dakara-3",
+        "gx-tte-4"
+      ]
+    },
+    {
+      "id": "km-sue",
+      "character": "末",
+      "japanese": "末",
+      "furigana": [
+        {
+          "b": "末",
+          "r": "すえ"
+        }
+      ],
+      "readings": [
+        "すえ",
+        "まつ"
+      ],
+      "romaji": "sue / matsu",
+      "english": "end",
+      "audio": "audio/ja/chars/km-sue.mp3",
+      "audioHint": "すえ",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 3,
+      "note": "週末 (しゅうまつ) — the weekend.",
+      "seenIn": [
+        "w-shuumatsu",
+        "s-08",
+        "s-23",
+        "gx-ni-4",
+        "gx-to-and-2",
+        "gx-mashou-4"
+      ]
+    },
+    {
+      "id": "km-saku",
+      "character": "昨",
+      "japanese": "昨",
+      "furigana": [
+        {
+          "b": "昨",
+          "r": "さく"
+        }
+      ],
+      "readings": [
+        "さく"
+      ],
+      "romaji": "saku",
+      "english": "previous, last",
+      "audio": "audio/ja/chars/km-saku.mp3",
+      "audioHint": "さく",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 3,
+      "note": "昨日 is read きのう as a whole word.",
+      "seenIn": [
+        "w-kinou",
+        "s-66",
+        "gx-wo-2",
+        "gx-masu-2",
+        "gx-na-adj-3",
+        "gx-ta-1"
+      ]
+    },
+    {
+      "id": "km-do",
+      "character": "度",
+      "japanese": "度",
+      "furigana": [
+        {
+          "b": "度",
+          "r": "ど"
+        }
+      ],
+      "readings": [
+        "ど",
+        "たび"
+      ],
+      "romaji": "do / tabi",
+      "english": "times; degrees",
+      "audio": "audio/ja/chars/km-do.mp3",
+      "audioHint": "ど",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 2,
+      "note": "今度 (こんど) — next time; 三十八度 (さんじゅうはちど) — 38 degrees.",
+      "seenIn": [
+        "w-kondo",
+        "cx-shi-4",
+        "gx-temiru-3",
+        "gx-takotogaaru-4",
+        "gx-temo-4",
+        "gre-16"
+      ]
+    },
+    {
+      "id": "km-hajimete",
+      "character": "初",
+      "japanese": "初",
+      "furigana": [
+        {
+          "b": "初",
+          "r": "はじめて"
+        }
+      ],
+      "readings": [
+        "はじめて",
+        "しょ"
+      ],
+      "romaji": "hajimete / sho",
+      "english": "first (time)",
+      "audio": "audio/ja/chars/km-hajimete.mp3",
+      "audioHint": "はじめて",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 2,
+      "note": "最初 (さいしょ) — the first, the beginning.",
+      "seenIn": [
+        "w-hajimete",
+        "w-saisho",
+        "s-17",
+        "s-19",
+        "air-07",
+        "sma-02"
+      ]
+    },
+    {
+      "id": "km-sai",
+      "character": "最",
+      "japanese": "最",
+      "furigana": [
+        {
+          "b": "最",
+          "r": "さい"
+        }
+      ],
+      "readings": [
+        "さい",
+        "もっとも"
+      ],
+      "romaji": "sai / mottomo",
+      "english": "most",
+      "audio": "audio/ja/chars/km-sai.mp3",
+      "audioHint": "さい",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 3,
+      "note": "最近 (さいきん) — lately.",
+      "seenIn": [
+        "w-saikou",
+        "w-saiaku",
+        "w-saikin",
+        "w-saisho",
+        "w-saigo",
+        "s-36"
+      ]
+    },
+    {
+      "id": "km-toshi",
+      "character": "年",
+      "japanese": "年",
+      "furigana": [
+        {
+          "b": "年",
+          "r": "とし"
+        }
+      ],
+      "readings": [
+        "とし",
+        "ねん"
+      ],
+      "romaji": "toshi / nen",
+      "english": "year; age",
+      "audio": "audio/ja/chars/km-toshi.mp3",
+      "audioHint": "とし",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 1,
+      "note": "来年 (らいねん) — next year.",
+      "seenIn": [
+        "w-kyonen",
+        "w-rainen",
+        "s-19",
+        "s-22",
+        "s-32",
+        "gx-tsumori-1"
+      ]
+    },
+    {
+      "id": "km-owaru",
+      "character": "終",
+      "japanese": "終",
+      "furigana": [
+        {
+          "b": "終",
+          "r": "おわる"
+        }
+      ],
+      "readings": [
+        "おわる",
+        "しゅう"
+      ],
+      "romaji": "owaru / shū",
+      "english": "end, finish",
+      "audio": "audio/ja/chars/km-owaru.mp3",
+      "audioHint": "おわる",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 2,
+      "note": "終電 (しゅうでん) — the last train.",
+      "seenIn": [
+        "w-owaru",
+        "gx-ka-2",
+        "cx-sorekara-1",
+        "cx-tara-4",
+        "tra-12"
+      ]
+    },
+    {
+      "id": "km-tsugi",
+      "character": "次",
+      "japanese": "次",
+      "furigana": [
+        {
+          "b": "次",
+          "r": "つぎ"
+        }
+      ],
+      "readings": [
+        "つぎ",
+        "じ"
+      ],
+      "romaji": "tsugi / ji",
+      "english": "next",
+      "audio": "audio/ja/chars/km-tsugi.mp3",
+      "audioHint": "つぎ",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 2,
+      "note": "次の駅 (つぎのえき) — the next station.",
+      "seenIn": [
+        "tra-07",
+        "dir-09"
+      ]
+    },
+    {
+      "id": "km-isogu",
+      "character": "急",
+      "japanese": "急",
+      "furigana": [
+        {
+          "b": "急",
+          "r": "いそぐ"
+        }
+      ],
+      "readings": [
+        "いそぐ",
+        "きゅう"
+      ],
+      "romaji": "isogu / kyū",
+      "english": "hurry; sudden",
+      "audio": "audio/ja/chars/km-isogu.mp3",
+      "audioHint": "いそぐ",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 3,
+      "note": "急に (きゅうに) — suddenly; 急行 (きゅうこう) — an express train.",
+      "seenIn": [
+        "w-isogu",
+        "w-kyuuni",
+        "s-58",
+        "eme-04"
+      ]
+    },
+    {
+      "id": "km-yo",
+      "character": "予",
+      "japanese": "予",
+      "furigana": [
+        {
+          "b": "予",
+          "r": "よ"
+        }
+      ],
+      "readings": [
+        "よ"
+      ],
+      "romaji": "yo",
+      "english": "beforehand",
+      "audio": "audio/ja/chars/km-yo.mp3",
+      "audioHint": "よ",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 3,
+      "note": "予約 (よやく) — a booking; 予定 (よてい) — a plan.",
+      "seenIn": [
+        "w-yotei",
+        "w-yoyaku",
+        "s-46",
+        "gx-teoku-1",
+        "gx-tsumori-4",
+        "gx-nakereba-3"
+      ]
+    },
+    {
+      "id": "km-yaku",
+      "character": "約",
+      "japanese": "約",
+      "furigana": [
+        {
+          "b": "約",
+          "r": "やく"
+        }
+      ],
+      "readings": [
+        "やく"
+      ],
+      "romaji": "yaku",
+      "english": "promise; about",
+      "audio": "audio/ja/chars/km-yaku.mp3",
+      "audioHint": "やく",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "time"
+      ],
+      "difficulty": 3,
+      "note": "約束 (やくそく) — a promise.",
+      "seenIn": [
+        "w-yakusoku",
+        "w-yoyaku",
+        "s-46",
+        "gx-teoku-1",
+        "gx-nakereba-3",
+        "gx-noni-2"
+      ]
+    },
+    {
+      "id": "km-tsuku",
+      "character": "着",
+      "japanese": "着",
+      "furigana": [
+        {
+          "b": "着",
+          "r": "つく"
+        }
+      ],
+      "readings": [
+        "つく",
+        "きる",
+        "ちゃく"
+      ],
+      "romaji": "tsuku / kiru / chaku",
+      "english": "arrive; wear",
+      "audio": "audio/ja/chars/km-tsuku.mp3",
+      "audioHint": "つく",
+      "group": "travel",
+      "tags": [
+        "kanji",
+        "travel"
+      ],
+      "difficulty": 2,
+      "note": "着く is to arrive, 着る to wear: one kanji for both.",
+      "seenIn": [
+        "w-touchaku",
+        "w-tsuku",
+        "w-kiru",
+        "w-shichaku",
+        "s-59",
+        "cx-tara-1"
+      ]
+    },
+    {
+      "id": "km-ni",
+      "character": "荷",
+      "japanese": "荷",
+      "furigana": [
+        {
+          "b": "荷",
+          "r": "に"
+        }
+      ],
+      "readings": [
+        "に"
+      ],
+      "romaji": "ni",
+      "english": "load, luggage",
+      "audio": "audio/ja/chars/km-ni.mp3",
+      "audioHint": "に",
+      "group": "travel",
+      "tags": [
+        "kanji",
+        "travel"
+      ],
+      "difficulty": 3,
+      "note": "荷物 (にもつ) — luggage, a parcel.",
+      "seenIn": [
+        "w-nimotsu",
+        "s-43",
+        "gx-kenjou-2",
+        "air-08",
+        "air-09",
+        "air-10"
+      ]
+    },
+    {
+      "id": "km-tomaru",
+      "character": "泊",
+      "japanese": "泊",
+      "furigana": [
+        {
+          "b": "泊",
+          "r": "とまる"
+        }
+      ],
+      "readings": [
+        "とまる",
+        "はく"
+      ],
+      "romaji": "tomaru / haku",
+      "english": "stay the night",
+      "audio": "audio/ja/chars/km-tomaru.mp3",
+      "audioHint": "とまる",
+      "group": "travel",
+      "tags": [
+        "kanji",
+        "travel"
+      ],
+      "difficulty": 3,
+      "note": "一泊 (いっぱく) — one night’s stay.",
+      "seenIn": [
+        "w-tomaru",
+        "s-64",
+        "num-20",
+        "air-04",
+        "hot-09"
+      ]
+    },
+    {
+      "id": "km-tabi",
+      "character": "旅",
+      "japanese": "旅",
+      "furigana": [
+        {
+          "b": "旅",
+          "r": "たび"
+        }
+      ],
+      "readings": [
+        "たび",
+        "りょ"
+      ],
+      "romaji": "tabi / ryo",
+      "english": "journey, travel",
+      "audio": "audio/ja/chars/km-tabi.mp3",
+      "audioHint": "たび",
+      "group": "travel",
+      "tags": [
+        "kanji",
+        "travel"
+      ],
+      "difficulty": 3,
+      "note": "旅行 (りょこう) — a trip; 旅館 (りょかん) — a Japanese inn.",
+      "seenIn": [
+        "w-ryokou",
+        "w-ryokan",
+        "s-28",
+        "gx-i-adj-1",
+        "cx-tame-3"
+      ]
+    },
+    {
+      "id": "km-atatakai",
+      "character": "温",
+      "japanese": "温",
+      "furigana": [
+        {
+          "b": "温",
+          "r": "あたたかい"
+        }
+      ],
+      "readings": [
+        "あたたかい",
+        "おん"
+      ],
+      "romaji": "atatakai / on",
+      "english": "warm",
+      "audio": "audio/ja/chars/km-atatakai.mp3",
+      "audioHint": "あたたかい",
+      "group": "travel",
+      "tags": [
+        "kanji",
+        "travel"
+      ],
+      "difficulty": 3,
+      "note": "温泉 (おんせん) — a hot spring.",
+      "seenIn": [
+        "w-onsen",
+        "s-23",
+        "gx-temiru-3",
+        "gx-takotogaaru-2",
+        "gx-tewaikenai-2",
+        "sho-10"
+      ]
+    },
+    {
+      "id": "km-izumi",
+      "character": "泉",
+      "japanese": "泉",
+      "furigana": [
+        {
+          "b": "泉",
+          "r": "いずみ"
+        }
+      ],
+      "readings": [
+        "いずみ",
+        "せん"
+      ],
+      "romaji": "izumi / sen",
+      "english": "spring (of water)",
+      "audio": "audio/ja/chars/km-izumi.mp3",
+      "audioHint": "いずみ",
+      "group": "travel",
+      "tags": [
+        "kanji",
+        "travel"
+      ],
+      "difficulty": 4,
+      "note": "Rare on its own; you’ll see it in 温泉 (おんせん).",
+      "seenIn": [
+        "w-onsen",
+        "s-23",
+        "gx-temiru-3",
+        "gx-takotogaaru-2",
+        "gx-tewaikenai-2"
+      ]
+    },
+    {
+      "id": "km-utsusu",
+      "character": "写",
+      "japanese": "写",
+      "furigana": [
+        {
+          "b": "写",
+          "r": "うつす"
+        }
+      ],
+      "readings": [
+        "うつす",
+        "しゃ"
+      ],
+      "romaji": "utsusu / sha",
+      "english": "copy; photograph",
+      "audio": "audio/ja/chars/km-utsusu.mp3",
+      "audioHint": "うつす",
+      "group": "travel",
+      "tags": [
+        "kanji",
+        "travel"
+      ],
+      "difficulty": 3,
+      "note": "写真 (しゃしん) — a photo.",
+      "seenIn": [
+        "w-shashin",
+        "s-42",
+        "gx-mashou-3",
+        "cx-soshite-3",
+        "cx-ga-1",
+        "gx-temoii-2"
+      ]
+    },
+    {
+      "id": "km-ma",
+      "character": "真",
+      "japanese": "真",
+      "furigana": [
+        {
+          "b": "真",
+          "r": "ま"
+        }
+      ],
+      "readings": [
+        "ま",
+        "しん"
+      ],
+      "romaji": "ma / shin",
+      "english": "true; exactly",
+      "audio": "audio/ja/chars/km-ma.mp3",
+      "audioHint": "ま",
+      "group": "travel",
+      "tags": [
+        "kanji",
+        "travel"
+      ],
+      "difficulty": 3,
+      "note": "真ん中 (まんなか) — the very middle.",
+      "seenIn": [
+        "w-shashin",
+        "s-42",
+        "gx-mashou-3",
+        "cx-soshite-3",
+        "cx-ga-1",
+        "gx-temoii-2"
+      ]
+    },
+    {
+      "id": "km-toru",
+      "character": "撮",
+      "japanese": "撮",
+      "furigana": [
+        {
+          "b": "撮",
+          "r": "とる"
+        }
+      ],
+      "readings": [
+        "とる",
+        "さつ"
+      ],
+      "romaji": "toru / satsu",
+      "english": "take (a photo)",
+      "audio": "audio/ja/chars/km-toru.mp3",
+      "audioHint": "とる",
+      "group": "travel",
+      "tags": [
+        "kanji",
+        "travel"
+      ],
+      "difficulty": 3,
+      "note": "写真を撮る (しゃしんをとる) — to take a photo.",
+      "seenIn": [
+        "s-42",
+        "gx-mashou-3",
+        "cx-soshite-3",
+        "cx-ga-1",
+        "gx-temoii-2",
+        "gx-tewaikenai-1"
+      ]
+    },
+    {
+      "id": "km-utsuru",
+      "character": "映",
+      "japanese": "映",
+      "furigana": [
+        {
+          "b": "映",
+          "r": "うつる"
+        }
+      ],
+      "readings": [
+        "うつる",
+        "えい"
+      ],
+      "romaji": "utsuru / ei",
+      "english": "be reflected; be shown (on screen)",
+      "audio": "audio/ja/chars/km-utsuru.mp3",
+      "audioHint": "うつる",
+      "group": "travel",
+      "tags": [
+        "kanji",
+        "travel"
+      ],
+      "difficulty": 3,
+      "note": "映画 (えいが) — a film.",
+      "seenIn": [
+        "w-eigakan",
+        "w-eiga",
+        "s-09",
+        "s-37",
+        "gx-wo-2",
+        "cx-sorekara-2"
+      ]
+    },
+    {
+      "id": "km-ga",
+      "character": "画",
+      "japanese": "画",
+      "furigana": [
+        {
+          "b": "画",
+          "r": "が"
+        }
+      ],
+      "readings": [
+        "が",
+        "かく"
+      ],
+      "romaji": "ga / kaku",
+      "english": "picture, drawing",
+      "audio": "audio/ja/chars/km-ga.mp3",
+      "audioHint": "が",
+      "group": "travel",
+      "tags": [
+        "kanji",
+        "travel"
+      ],
+      "difficulty": 3,
+      "note": "漫画 (まんが) — manga, comics.",
+      "seenIn": [
+        "w-eigakan",
+        "w-eiga",
+        "s-09",
+        "s-26",
+        "s-37",
+        "gx-wo-2"
+      ]
+    },
+    {
+      "id": "km-oriru",
+      "character": "降",
+      "japanese": "降",
+      "furigana": [
+        {
+          "b": "降",
+          "r": "おりる"
+        }
+      ],
+      "readings": [
+        "おりる",
+        "ふる",
+        "こう"
+      ],
+      "romaji": "oriru / furu / kō",
+      "english": "get off; fall (rain, snow)",
+      "audio": "audio/ja/chars/km-oriru.mp3",
+      "audioHint": "おりる",
+      "group": "travel",
+      "tags": [
+        "kanji",
+        "travel"
+      ],
+      "difficulty": 3,
+      "note": "降りる is getting off a train; 雨が降る is rain falling.",
+      "seenIn": [
+        "w-furu",
+        "w-oriru",
+        "s-07",
+        "gx-ga-subject-2",
+        "cx-kara-1",
+        "gx-kamoshirenai-1"
+      ]
+    },
+    {
+      "id": "km-kan",
+      "character": "館",
+      "japanese": "館",
+      "furigana": [
+        {
+          "b": "館",
+          "r": "かん"
+        }
+      ],
+      "readings": [
+        "かん"
+      ],
+      "romaji": "kan",
+      "english": "building, hall",
+      "audio": "audio/ja/chars/km-kan.mp3",
+      "audioHint": "かん",
+      "group": "travel",
+      "tags": [
+        "kanji",
+        "travel"
+      ],
+      "difficulty": 3,
+      "note": "美術館 (びじゅつかん) — an art gallery.",
+      "seenIn": [
+        "w-eigakan",
+        "w-ryokan",
+        "gx-tewaikenai-4"
+      ]
+    },
+    {
+      "id": "km-mado",
+      "character": "窓",
+      "japanese": "窓",
+      "furigana": [
+        {
+          "b": "窓",
+          "r": "まど"
+        }
+      ],
+      "readings": [
+        "まど",
+        "そう"
+      ],
+      "romaji": "mado / sō",
+      "english": "window",
+      "audio": "audio/ja/chars/km-mado.mp3",
+      "audioHint": "まど",
+      "group": "travel",
+      "tags": [
+        "kanji",
+        "travel"
+      ],
+      "difficulty": 3,
+      "note": "窓口 (まどぐち) — a service counter.",
+      "seenIn": [
+        "w-mado",
+        "w-madoguchi",
+        "s-44",
+        "gx-teoku-2",
+        "gx-temoii-3"
+      ]
+    },
+    {
+      "id": "km-kyou",
+      "character": "京",
+      "japanese": "京",
+      "furigana": [
+        {
+          "b": "京",
+          "r": "きょう"
+        }
+      ],
+      "readings": [
+        "きょう",
+        "けい"
+      ],
+      "romaji": "kyō / kei",
+      "english": "capital",
+      "audio": "audio/ja/chars/km-kyou.mp3",
+      "audioHint": "きょう",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 2,
+      "note": "東京 (とうきょう) and 京都 (きょうと).",
+      "seenIn": [
+        "s-41",
+        "gx-ni-2",
+        "gx-teiru-3",
+        "cx-soshite-1",
+        "tra-01",
+        "tra-04"
+      ]
+    },
+    {
+      "id": "km-to",
+      "character": "都",
+      "japanese": "都",
+      "furigana": [
+        {
+          "b": "都",
+          "r": "と"
+        }
+      ],
+      "readings": [
+        "と",
+        "つ",
+        "みやこ"
+      ],
+      "romaji": "to / tsu / miyako",
+      "english": "capital, city",
+      "audio": "audio/ja/chars/km-to.mp3",
+      "audioHint": "と",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 3,
+      "note": "都合 (つごう) — convenience: 都合が悪い, it doesn’t suit me.",
+      "seenIn": [
+        "s-60",
+        "cx-soshite-1",
+        "tra-04"
+      ]
+    },
+    {
+      "id": "km-tera",
+      "character": "寺",
+      "japanese": "寺",
+      "furigana": [
+        {
+          "b": "寺",
+          "r": "てら"
+        }
+      ],
+      "readings": [
+        "てら",
+        "じ"
+      ],
+      "romaji": "tera / ji",
+      "english": "temple",
+      "audio": "audio/ja/chars/km-tera.mp3",
+      "audioHint": "てら",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 2,
+      "note": "お寺 (おてら) — a Buddhist temple. Shrines are 神社 (じんじゃ).",
+      "seenIn": [
+        "w-otera",
+        "cx-soshite-1"
+      ]
+    },
+    {
+      "id": "km-umi",
+      "character": "海",
+      "japanese": "海",
+      "furigana": [
+        {
+          "b": "海",
+          "r": "うみ"
+        }
+      ],
+      "readings": [
+        "うみ",
+        "かい"
+      ],
+      "romaji": "umi / kai",
+      "english": "sea",
+      "audio": "audio/ja/chars/km-umi.mp3",
+      "audioHint": "うみ",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 2,
+      "note": "海外 (かいがい) — overseas.",
+      "seenIn": [
+        "w-umi",
+        "s-22"
+      ]
+    },
+    {
+      "id": "km-yama",
+      "character": "山",
+      "japanese": "山",
+      "furigana": [
+        {
+          "b": "山",
+          "r": "やま"
+        }
+      ],
+      "readings": [
+        "やま",
+        "さん"
+      ],
+      "romaji": "yama / san",
+      "english": "mountain",
+      "audio": "audio/ja/chars/km-yama.mp3",
+      "audioHint": "やま",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 1,
+      "note": "富士山 (ふじさん) — Mount Fuji.",
+      "seenIn": [
+        "w-yama",
+        "s-19",
+        "gx-kenjou-1"
+      ]
+    },
+    {
+      "id": "km-chi",
+      "character": "地",
+      "japanese": "地",
+      "furigana": [
+        {
+          "b": "地",
+          "r": "ち"
+        }
+      ],
+      "readings": [
+        "ち",
+        "じ"
+      ],
+      "romaji": "chi / ji",
+      "english": "ground, land",
+      "audio": "audio/ja/chars/km-chi.mp3",
+      "audioHint": "ち",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 2,
+      "note": "地下鉄 (ちかてつ) — the subway.",
+      "seenIn": [
+        "w-chizu",
+        "gx-sugiru-3",
+        "dir-10"
+      ]
+    },
+    {
+      "id": "km-zu",
+      "character": "図",
+      "japanese": "図",
+      "furigana": [
+        {
+          "b": "図",
+          "r": "ず"
+        }
+      ],
+      "readings": [
+        "ず",
+        "と"
+      ],
+      "romaji": "zu / to",
+      "english": "drawing, plan",
+      "audio": "audio/ja/chars/km-zu.mp3",
+      "audioHint": "ず",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 3,
+      "note": "地図 (ちず) — a map; 図書館 (としょかん) — a library.",
+      "seenIn": [
+        "w-chizu",
+        "gx-sugiru-3",
+        "dir-10"
+      ]
+    },
+    {
+      "id": "km-tokoro",
+      "character": "所",
+      "japanese": "所",
+      "furigana": [
+        {
+          "b": "所",
+          "r": "ところ"
+        }
+      ],
+      "readings": [
+        "ところ",
+        "しょ"
+      ],
+      "romaji": "tokoro / sho",
+      "english": "place",
+      "audio": "audio/ja/chars/km-tokoro.mp3",
+      "audioHint": "ところ",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 3,
+      "note": "近所 (きんじょ) — the neighbourhood; 台所 (だいどころ) — the kitchen.",
+      "seenIn": [
+        "w-daidokoro",
+        "w-kinjo",
+        "air-05",
+        "air-09",
+        "air-17",
+        "tra-15"
+      ]
+    },
+    {
+      "id": "km-ya",
+      "character": "屋",
+      "japanese": "屋",
+      "furigana": [
+        {
+          "b": "屋",
+          "r": "や"
+        }
+      ],
+      "readings": [
+        "や",
+        "おく"
+      ],
+      "romaji": "ya / oku",
+      "english": "shop; house",
+      "audio": "audio/ja/chars/km-ya.mp3",
+      "audioHint": "や",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 2,
+      "note": "本屋 (ほんや) — a bookshop; 屋上 (おくじょう) — the rooftop.",
+      "seenIn": [
+        "w-heya",
+        "s-51",
+        "s-55",
+        "s-64",
+        "gx-i-adj-2",
+        "cx-soshite-4"
+      ]
+    },
+    {
+      "id": "km-bu",
+      "character": "部",
+      "japanese": "部",
+      "furigana": [
+        {
+          "b": "部",
+          "r": "ぶ"
+        }
+      ],
+      "readings": [
+        "ぶ"
+      ],
+      "romaji": "bu",
+      "english": "part, section",
+      "audio": "audio/ja/chars/km-bu.mp3",
+      "audioHint": "ぶ",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 2,
+      "note": "部屋 is read へや as a whole word; 全部 (ぜんぶ) — all of it.",
+      "seenIn": [
+        "w-zenbu",
+        "w-heya",
+        "s-51",
+        "s-55",
+        "s-64",
+        "gx-i-adj-2"
+      ]
+    },
+    {
+      "id": "km-kai",
+      "character": "階",
+      "japanese": "階",
+      "furigana": [
+        {
+          "b": "階",
+          "r": "かい"
+        }
+      ],
+      "readings": [
+        "かい"
+      ],
+      "romaji": "kai",
+      "english": "floor, storey",
+      "audio": "audio/ja/chars/km-kai.mp3",
+      "audioHint": "かい",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "places"
+      ],
+      "difficulty": 2,
+      "note": "三階 (さんがい) — the third floor.",
+      "seenIn": [
+        "w-kaidan"
+      ]
+    },
+    {
+      "id": "km-mono",
+      "character": "物",
+      "japanese": "物",
+      "furigana": [
+        {
+          "b": "物",
+          "r": "もの"
+        }
+      ],
+      "readings": [
+        "もの",
+        "ぶつ",
+        "もつ"
+      ],
+      "romaji": "mono / butsu / motsu",
+      "english": "thing",
+      "audio": "audio/ja/chars/km-mono.mp3",
+      "audioHint": "もの",
+      "group": "home",
+      "tags": [
+        "kanji",
+        "home"
+      ],
+      "difficulty": 1,
+      "note": "食べ物 (たべもの) — food; 荷物 (にもつ) — luggage.",
+      "seenIn": [
+        "w-kaimono",
+        "w-kudamono",
+        "w-nimotsu",
+        "s-43",
+        "gx-na-adj-2",
+        "gx-hikaku-4"
+      ]
+    },
+    {
+      "id": "km-han",
+      "character": "飯",
+      "japanese": "飯",
+      "furigana": [
+        {
+          "b": "飯",
+          "r": "はん"
+        }
+      ],
+      "readings": [
+        "はん",
+        "めし"
+      ],
+      "romaji": "han / meshi",
+      "english": "cooked rice; a meal",
+      "audio": "audio/ja/chars/km-han.mp3",
+      "audioHint": "はん",
+      "group": "home",
+      "tags": [
+        "kanji",
+        "home"
+      ],
+      "difficulty": 2,
+      "note": "ご飯 (ごはん) — rice, or a meal; 朝ご飯 (あさごはん) — breakfast.",
+      "seenIn": [
+        "w-gohan",
+        "w-asagohan",
+        "w-bangohan",
+        "s-04",
+        "gx-de-1",
+        "gx-tai-4"
+      ]
+    },
+    {
+      "id": "km-ri",
+      "character": "理",
+      "japanese": "理",
+      "furigana": [
+        {
+          "b": "理",
+          "r": "り"
+        }
+      ],
+      "readings": [
+        "り"
+      ],
+      "romaji": "ri",
+      "english": "reason, logic",
+      "audio": "audio/ja/chars/km-ri.mp3",
+      "audioHint": "り",
+      "group": "home",
+      "tags": [
+        "kanji",
+        "home"
+      ],
+      "difficulty": 3,
+      "note": "料理 (りょうり) — cooking; 無理 (むり) — impossible.",
+      "seenIn": [
+        "w-ryouri",
+        "w-riyuu",
+        "s-53",
+        "gx-to-and-4",
+        "gx-teiru-1",
+        "cx-tame-2"
+      ]
+    },
+    {
+      "id": "km-sake",
+      "character": "酒",
+      "japanese": "酒",
+      "furigana": [
+        {
+          "b": "酒",
+          "r": "さけ"
+        }
+      ],
+      "readings": [
+        "さけ",
+        "しゅ"
+      ],
+      "romaji": "sake / shu",
+      "english": "alcohol, sake",
+      "audio": "audio/ja/chars/km-sake.mp3",
+      "audioHint": "さけ",
+      "group": "home",
+      "tags": [
+        "kanji",
+        "home"
+      ],
+      "difficulty": 2,
+      "note": "お酒 (おさけ) — alcohol in general; 日本酒 (にほんしゅ) — sake.",
+      "seenIn": [
+        "w-osake",
+        "s-29",
+        "gx-masu-3",
+        "gx-nai-3",
+        "cx-to-4",
+        "gx-tsumori-2"
+      ]
+    },
+    {
+      "id": "km-amai",
+      "character": "甘",
+      "japanese": "甘",
+      "furigana": [
+        {
+          "b": "甘",
+          "r": "あまい"
+        }
+      ],
+      "readings": [
+        "あまい"
+      ],
+      "romaji": "amai",
+      "english": "sweet",
+      "audio": "audio/ja/chars/km-amai.mp3",
+      "audioHint": "あまい",
+      "group": "home",
+      "tags": [
+        "kanji",
+        "home"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-amai",
+        "s-38",
+        "gx-kotonisuru-3",
+        "gx-sou-1"
+      ]
+    },
+    {
+      "id": "km-aji",
+      "character": "味",
+      "japanese": "味",
+      "furigana": [
+        {
+          "b": "味",
+          "r": "あじ"
+        }
+      ],
+      "readings": [
+        "あじ",
+        "み"
+      ],
+      "romaji": "aji / mi",
+      "english": "taste, flavour",
+      "audio": "audio/ja/chars/km-aji.mp3",
+      "audioHint": "あじ",
+      "group": "home",
+      "tags": [
+        "kanji",
+        "home"
+      ],
+      "difficulty": 2,
+      "note": "意味 (いみ) — meaning.",
+      "seenIn": [
+        "w-shumi",
+        "w-imi",
+        "cas-17"
+      ]
+    },
+    {
+      "id": "km-niku",
+      "character": "肉",
+      "japanese": "肉",
+      "furigana": [
+        {
+          "b": "肉",
+          "r": "にく"
+        }
+      ],
+      "readings": [
+        "にく"
+      ],
+      "romaji": "niku",
+      "english": "meat",
+      "audio": "audio/ja/chars/km-niku.mp3",
+      "audioHint": "にく",
+      "group": "home",
+      "tags": [
+        "kanji",
+        "home"
+      ],
+      "difficulty": 2,
+      "note": "豚肉 (ぶたにく) — pork; 牛肉 (ぎゅうにく) — beef.",
+      "seenIn": [
+        "w-niku",
+        "gx-mo-4",
+        "gx-nai-2",
+        "res-08"
+      ]
+    },
+    {
+      "id": "km-tamago",
+      "character": "卵",
+      "japanese": "卵",
+      "furigana": [
+        {
+          "b": "卵",
+          "r": "たまご"
+        }
+      ],
+      "readings": [
+        "たまご"
+      ],
+      "romaji": "tamago",
+      "english": "egg",
+      "audio": "audio/ja/chars/km-tamago.mp3",
+      "audioHint": "たまご",
+      "group": "home",
+      "tags": [
+        "kanji",
+        "home"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-tamago",
+        "gx-to-and-1",
+        "res-04"
+      ]
+    },
+    {
+      "id": "km-sakana",
+      "character": "魚",
+      "japanese": "魚",
+      "furigana": [
+        {
+          "b": "魚",
+          "r": "さかな"
+        }
+      ],
+      "readings": [
+        "さかな",
+        "ぎょ"
+      ],
+      "romaji": "sakana / gyo",
+      "english": "fish",
+      "audio": "audio/ja/chars/km-sakana.mp3",
+      "audioHint": "さかな",
+      "group": "home",
+      "tags": [
+        "kanji",
+        "home"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-sakana",
+        "s-30",
+        "gx-mo-4"
+      ]
+    },
+    {
+      "id": "km-sumu",
+      "character": "住",
+      "japanese": "住",
+      "furigana": [
+        {
+          "b": "住",
+          "r": "すむ"
+        }
+      ],
+      "readings": [
+        "すむ",
+        "じゅう"
+      ],
+      "romaji": "sumu / jū",
+      "english": "live (somewhere)",
+      "audio": "audio/ja/chars/km-sumu.mp3",
+      "audioHint": "すむ",
+      "group": "home",
+      "tags": [
+        "kanji",
+        "home"
+      ],
+      "difficulty": 3,
+      "note": "住所 (じゅうしょ) — an address.",
+      "seenIn": [
+        "w-sumu",
+        "s-18",
+        "cx-ga-3",
+        "gx-tsumori-1",
+        "air-05",
+        "tra-15"
+      ]
+    },
+    {
+      "id": "km-kagi",
+      "character": "鍵",
+      "japanese": "鍵",
+      "furigana": [
+        {
+          "b": "鍵",
+          "r": "かぎ"
+        }
+      ],
+      "readings": [
+        "かぎ"
+      ],
+      "romaji": "kagi",
+      "english": "key; lock",
+      "audio": "audio/ja/chars/km-kagi.mp3",
+      "audioHint": "かぎ",
+      "group": "home",
+      "tags": [
+        "kanji",
+        "home"
+      ],
+      "difficulty": 4,
+      "seenIn": [
+        "w-kagi",
+        "s-55",
+        "hot-08"
+      ]
+    },
+    {
+      "id": "km-kasa",
+      "character": "傘",
+      "japanese": "傘",
+      "furigana": [
+        {
+          "b": "傘",
+          "r": "かさ"
+        }
+      ],
+      "readings": [
+        "かさ"
+      ],
+      "romaji": "kasa",
+      "english": "umbrella",
+      "audio": "audio/ja/chars/km-kasa.mp3",
+      "audioHint": "かさ",
+      "group": "home",
+      "tags": [
+        "kanji",
+        "home"
+      ],
+      "difficulty": 4,
+      "seenIn": [
+        "w-kasa",
+        "gx-no-1",
+        "cx-node-3",
+        "gx-teshimau-1"
+      ]
+    },
+    {
+      "id": "km-kutsu",
+      "character": "靴",
+      "japanese": "靴",
+      "furigana": [
+        {
+          "b": "靴",
+          "r": "くつ"
+        }
+      ],
+      "readings": [
+        "くつ"
+      ],
+      "romaji": "kutsu",
+      "english": "shoe",
+      "audio": "audio/ja/chars/km-kutsu.mp3",
+      "audioHint": "くつ",
+      "group": "home",
+      "tags": [
+        "kanji",
+        "home"
+      ],
+      "difficulty": 4,
+      "note": "靴下 (くつした) — socks.",
+      "seenIn": [
+        "w-kutsu",
+        "gx-temo-3",
+        "gx-sugiru-4"
+      ]
+    },
+    {
+      "id": "km-motsu",
+      "character": "持",
+      "japanese": "持",
+      "furigana": [
+        {
+          "b": "持",
+          "r": "もつ"
+        }
+      ],
+      "readings": [
+        "もつ",
+        "じ"
+      ],
+      "romaji": "motsu / ji",
+      "english": "hold, have, carry",
+      "audio": "audio/ja/chars/km-motsu.mp3",
+      "audioHint": "もつ",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 2,
+      "note": "お持ち帰り (おもちかえり) — takeaway.",
+      "seenIn": [
+        "w-kimochi",
+        "cx-node-3",
+        "gx-kenjou-2",
+        "sho-09",
+        "opi-11",
+        "doc-08"
+      ]
+    },
+    {
+      "id": "km-tsutaeru",
+      "character": "伝",
+      "japanese": "伝",
+      "furigana": [
+        {
+          "b": "伝",
+          "r": "つたえる"
+        }
+      ],
+      "readings": [
+        "つたえる",
+        "でん"
+      ],
+      "romaji": "tsutaeru / den",
+      "english": "pass on (a message)",
+      "audio": "audio/ja/chars/km-tsutaeru.mp3",
+      "audioHint": "つたえる",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 3,
+      "note": "手伝う (てつだう) — to help.",
+      "seenIn": [
+        "w-tetsudau",
+        "gx-tekureru-1",
+        "gx-tekureru-3",
+        "cas-23",
+        "cas-35",
+        "fam-07"
+      ]
+    },
+    {
+      "id": "km-hataraku",
+      "character": "働",
+      "japanese": "働",
+      "furigana": [
+        {
+          "b": "働",
+          "r": "はたらく"
+        }
+      ],
+      "readings": [
+        "はたらく",
+        "どう"
+      ],
+      "romaji": "hataraku / dō",
+      "english": "work",
+      "audio": "audio/ja/chars/km-hataraku.mp3",
+      "audioHint": "はたらく",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-hataraku",
+        "s-24",
+        "s-41",
+        "gx-teiru-3",
+        "cx-tame-1",
+        "gx-kotonisuru-2"
+      ]
+    },
+    {
+      "id": "km-kawaru",
+      "character": "変",
+      "japanese": "変",
+      "furigana": [
+        {
+          "b": "変",
+          "r": "かわる"
+        }
+      ],
+      "readings": [
+        "かわる",
+        "へん"
+      ],
+      "romaji": "kawaru / hen",
+      "english": "change; strange",
+      "audio": "audio/ja/chars/km-kawaru.mp3",
+      "audioHint": "かわる",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 3,
+      "note": "変 (へん) — strange; 大変 (たいへん) — tough, hard.",
+      "seenIn": [
+        "w-kaeru-change",
+        "w-taihen",
+        "s-46",
+        "gx-sou-3",
+        "aiz-08"
+      ]
+    },
+    {
+      "id": "km-okuru",
+      "character": "送",
+      "japanese": "送",
+      "furigana": [
+        {
+          "b": "送",
+          "r": "おくる"
+        }
+      ],
+      "readings": [
+        "おくる",
+        "そう"
+      ],
+      "romaji": "okuru / sō",
+      "english": "send; see someone off",
+      "audio": "audio/ja/chars/km-okuru.mp3",
+      "audioHint": "おくる",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 3,
+      "note": "送料 (そうりょう) — postage.",
+      "seenIn": [
+        "w-okuru",
+        "w-souryou",
+        "cx-soshite-3",
+        "gx-tekureru-2"
+      ]
+    },
+    {
+      "id": "km-wasureru",
+      "character": "忘",
+      "japanese": "忘",
+      "furigana": [
+        {
+          "b": "忘",
+          "r": "わすれる"
+        }
+      ],
+      "readings": [
+        "わすれる",
+        "ぼう"
+      ],
+      "romaji": "wasureru / bō",
+      "english": "forget",
+      "audio": "audio/ja/chars/km-wasureru.mp3",
+      "audioHint": "わすれる",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 3,
+      "note": "忘れ物 (わすれもの) — something left behind.",
+      "seenIn": [
+        "w-wasureru",
+        "s-55",
+        "gx-teshimau-1",
+        "pro-11"
+      ]
+    },
+    {
+      "id": "km-narau",
+      "character": "習",
+      "japanese": "習",
+      "furigana": [
+        {
+          "b": "習",
+          "r": "ならう"
+        }
+      ],
+      "readings": [
+        "ならう",
+        "しゅう"
+      ],
+      "romaji": "narau / shū",
+      "english": "learn (from someone)",
+      "audio": "audio/ja/chars/km-narau.mp3",
+      "audioHint": "ならう",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 3,
+      "note": "練習 (れんしゅう) — practice.",
+      "seenIn": [
+        "w-renshuu",
+        "w-shuukan",
+        "s-20"
+      ]
+    },
+    {
+      "id": "km-kaesu",
+      "character": "返",
+      "japanese": "返",
+      "furigana": [
+        {
+          "b": "返",
+          "r": "かえす"
+        }
+      ],
+      "readings": [
+        "かえす",
+        "へん"
+      ],
+      "romaji": "kaesu / hen",
+      "english": "give back",
+      "audio": "audio/ja/chars/km-kaesu.mp3",
+      "audioHint": "かえす",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 3,
+      "note": "返品 (へんぴん) — returning goods.",
+      "seenIn": [
+        "w-kaesu",
+        "w-henpin",
+        "s-48",
+        "pro-08"
+      ]
+    },
+    {
+      "id": "km-tanomu",
+      "character": "頼",
+      "japanese": "頼",
+      "furigana": [
+        {
+          "b": "頼",
+          "r": "たのむ"
+        }
+      ],
+      "readings": [
+        "たのむ",
+        "らい"
+      ],
+      "romaji": "tanomu / rai",
+      "english": "ask for; rely on",
+      "audio": "audio/ja/chars/km-tanomu.mp3",
+      "audioHint": "たのむ",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-tanomu",
+        "s-53",
+        "pro-04"
+      ]
+    },
+    {
+      "id": "km-sasou",
+      "character": "誘",
+      "japanese": "誘",
+      "furigana": [
+        {
+          "b": "誘",
+          "r": "さそう"
+        }
+      ],
+      "readings": [
+        "さそう",
+        "ゆう"
+      ],
+      "romaji": "sasou / yū",
+      "english": "invite",
+      "audio": "audio/ja/chars/km-sasou.mp3",
+      "audioHint": "さそう",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 4,
+      "seenIn": [
+        "w-sasou",
+        "pla-12"
+      ]
+    },
+    {
+      "id": "km-chigau",
+      "character": "違",
+      "japanese": "違",
+      "furigana": [
+        {
+          "b": "違",
+          "r": "ちがう"
+        }
+      ],
+      "readings": [
+        "ちがう",
+        "い"
+      ],
+      "romaji": "chigau / i",
+      "english": "be different; be wrong",
+      "audio": "audio/ja/chars/km-chigau.mp3",
+      "audioHint": "ちがう",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 3,
+      "note": "間違い (まちがい) — a mistake.",
+      "seenIn": [
+        "w-chigau",
+        "s-52",
+        "opi-03"
+      ]
+    },
+    {
+      "id": "km-harau",
+      "character": "払",
+      "japanese": "払",
+      "furigana": [
+        {
+          "b": "払",
+          "r": "はらう"
+        }
+      ],
+      "readings": [
+        "はらう"
+      ],
+      "romaji": "harau",
+      "english": "pay",
+      "audio": "audio/ja/chars/km-harau.mp3",
+      "audioHint": "はらう",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 3,
+      "note": "支払い (しはらい) — payment.",
+      "seenIn": [
+        "w-shiharai",
+        "w-harau",
+        "s-47",
+        "num-08"
+      ]
+    },
+    {
+      "id": "km-kimeru",
+      "character": "決",
+      "japanese": "決",
+      "furigana": [
+        {
+          "b": "決",
+          "r": "きめる"
+        }
+      ],
+      "readings": [
+        "きめる",
+        "けつ"
+      ],
+      "romaji": "kimeru / ketsu",
+      "english": "decide",
+      "audio": "audio/ja/chars/km-kimeru.mp3",
+      "audioHint": "きめる",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 3,
+      "note": "お決まりですか (おきまりですか) — are you ready to order?",
+      "seenIn": [
+        "w-kimeru"
+      ]
+    },
+    {
+      "id": "km-kangaeru",
+      "character": "考",
+      "japanese": "考",
+      "furigana": [
+        {
+          "b": "考",
+          "r": "かんがえる"
+        }
+      ],
+      "readings": [
+        "かんがえる",
+        "こう"
+      ],
+      "romaji": "kangaeru / kō",
+      "english": "think, consider",
+      "audio": "audio/ja/chars/km-kangaeru.mp3",
+      "audioHint": "かんがえる",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-kangae",
+        "w-kangaeru",
+        "opi-05"
+      ]
+    },
+    {
+      "id": "km-shiraberu",
+      "character": "調",
+      "japanese": "調",
+      "furigana": [
+        {
+          "b": "調",
+          "r": "しらべる"
+        }
+      ],
+      "readings": [
+        "しらべる",
+        "ちょう"
+      ],
+      "romaji": "shiraberu / chō",
+      "english": "look into; condition",
+      "audio": "audio/ja/chars/km-shiraberu.mp3",
+      "audioHint": "しらべる",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 4,
+      "note": "調子 (ちょうし) — condition, how things are going.",
+      "seenIn": [
+        "w-shiraberu",
+        "w-taichou",
+        "gx-teoku-3"
+      ]
+    },
+    {
+      "id": "km-todoku",
+      "character": "届",
+      "japanese": "届",
+      "furigana": [
+        {
+          "b": "届",
+          "r": "とどく"
+        }
+      ],
+      "readings": [
+        "とどく"
+      ],
+      "romaji": "todoku",
+      "english": "reach, be delivered",
+      "audio": "audio/ja/chars/km-todoku.mp3",
+      "audioHint": "とどく",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 4,
+      "seenIn": [
+        "w-todoku",
+        "s-54",
+        "pro-06"
+      ]
+    },
+    {
+      "id": "km-komaru",
+      "character": "困",
+      "japanese": "困",
+      "furigana": [
+        {
+          "b": "困",
+          "r": "こまる"
+        }
+      ],
+      "readings": [
+        "こまる",
+        "こん"
+      ],
+      "romaji": "komaru / kon",
+      "english": "be stuck, be in trouble",
+      "audio": "audio/ja/chars/km-komaru.mp3",
+      "audioHint": "こまる",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-komaru",
+        "gx-teshimau-4",
+        "pro-13"
+      ]
+    },
+    {
+      "id": "km-tasukeru",
+      "character": "助",
+      "japanese": "助",
+      "furigana": [
+        {
+          "b": "助",
+          "r": "たすける"
+        }
+      ],
+      "readings": [
+        "たすける",
+        "じょ"
+      ],
+      "romaji": "tasukeru / jo",
+      "english": "help, save",
+      "audio": "audio/ja/chars/km-tasukeru.mp3",
+      "audioHint": "たすける",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 3,
+      "note": "助けて (たすけて) — help!",
+      "seenIn": [
+        "eme-01",
+        "pro-13"
+      ]
+    },
+    {
+      "id": "km-nareru",
+      "character": "慣",
+      "japanese": "慣",
+      "furigana": [
+        {
+          "b": "慣",
+          "r": "なれる"
+        }
+      ],
+      "readings": [
+        "なれる",
+        "かん"
+      ],
+      "romaji": "nareru / kan",
+      "english": "get used to",
+      "audio": "audio/ja/chars/km-nareru.mp3",
+      "audioHint": "なれる",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 4,
+      "note": "習慣 (しゅうかん) — a habit.",
+      "seenIn": [
+        "w-nareru",
+        "w-shuukan",
+        "s-33"
+      ]
+    },
+    {
+      "id": "km-mousu",
+      "character": "申",
+      "japanese": "申",
+      "furigana": [
+        {
+          "b": "申",
+          "r": "もうす"
+        }
+      ],
+      "readings": [
+        "もうす",
+        "しん"
+      ],
+      "romaji": "mōsu / shin",
+      "english": "say (humbly)",
+      "audio": "audio/ja/chars/km-mousu.mp3",
+      "audioHint": "もうす",
+      "group": "verbs",
+      "tags": [
+        "kanji",
+        "verbs"
+      ],
+      "difficulty": 3,
+      "note": "申し訳ありません (もうしわけありません) — I’m very sorry.",
+      "seenIn": [
+        "cx-ga-4",
+        "gx-kenjou-1",
+        "air-13"
+      ]
+    },
+    {
+      "id": "km-sukoshi",
+      "character": "少",
+      "japanese": "少",
+      "furigana": [
+        {
+          "b": "少",
+          "r": "すこし"
+        }
+      ],
+      "readings": [
+        "すこし",
+        "すくない",
+        "しょう"
+      ],
+      "romaji": "sukoshi / sukunai / shō",
+      "english": "a little; few",
+      "audio": "audio/ja/chars/km-sukoshi.mp3",
+      "audioHint": "すこし",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 1,
+      "note": "少々 (しょうしょう) — a moment (very polite).",
+      "seenIn": [
+        "s-20",
+        "s-49",
+        "gx-ga-subject-4",
+        "cx-dakara-3",
+        "cx-ga-2",
+        "cx-ba-3"
+      ]
+    },
+    {
+      "id": "km-chikai",
+      "character": "近",
+      "japanese": "近",
+      "furigana": [
+        {
+          "b": "近",
+          "r": "ちかい"
+        }
+      ],
+      "readings": [
+        "ちかい",
+        "きん"
+      ],
+      "romaji": "chikai / kin",
+      "english": "near",
+      "audio": "audio/ja/chars/km-chikai.mp3",
+      "audioHint": "ちかい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 2,
+      "note": "近く (ちかく) — nearby.",
+      "seenIn": [
+        "w-chikaku",
+        "w-kinjo",
+        "w-saikin",
+        "s-36",
+        "s-37",
+        "s-65"
+      ]
+    },
+    {
+      "id": "km-samui",
+      "character": "寒",
+      "japanese": "寒",
+      "furigana": [
+        {
+          "b": "寒",
+          "r": "さむい"
+        }
+      ],
+      "readings": [
+        "さむい",
+        "かん"
+      ],
+      "romaji": "samui / kan",
+      "english": "cold (weather)",
+      "audio": "audio/ja/chars/km-samui.mp3",
+      "audioHint": "さむい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-samui",
+        "gx-tai-3",
+        "gx-yone-2",
+        "gx-hikaku-1",
+        "cas-32"
+      ]
+    },
+    {
+      "id": "km-atsui",
+      "character": "暑",
+      "japanese": "暑",
+      "furigana": [
+        {
+          "b": "暑",
+          "r": "あつい"
+        }
+      ],
+      "readings": [
+        "あつい",
+        "しょ"
+      ],
+      "romaji": "atsui / sho",
+      "english": "hot (weather)",
+      "audio": "audio/ja/chars/km-atsui.mp3",
+      "audioHint": "あつい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 2,
+      "note": "Hot weather is 暑い; hot to the touch is 熱い.",
+      "seenIn": [
+        "w-atsui",
+        "gx-i-adj-3"
+      ]
+    },
+    {
+      "id": "km-zen",
+      "character": "全",
+      "japanese": "全",
+      "furigana": [
+        {
+          "b": "全",
+          "r": "ぜん"
+        }
+      ],
+      "readings": [
+        "ぜん",
+        "まったく"
+      ],
+      "romaji": "zen / mattaku",
+      "english": "all, whole",
+      "audio": "audio/ja/chars/km-zen.mp3",
+      "audioHint": "ぜん",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 2,
+      "note": "全部 (ぜんぶ) — all of it; 全然 (ぜんぜん) — not at all.",
+      "seenIn": [
+        "w-zenbu",
+        "w-anzen",
+        "s-37",
+        "gx-teshimau-3",
+        "num-06"
+      ]
+    },
+    {
+      "id": "km-muzukashii",
+      "character": "難",
+      "japanese": "難",
+      "furigana": [
+        {
+          "b": "難",
+          "r": "むずかしい"
+        }
+      ],
+      "readings": [
+        "むずかしい",
+        "なん"
+      ],
+      "romaji": "muzukashii / nan",
+      "english": "difficult",
+      "audio": "audio/ja/chars/km-muzukashii.mp3",
+      "audioHint": "むずかしい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-muzukashii",
+        "s-34",
+        "cx-kedo-2"
+      ]
+    },
+    {
+      "id": "km-shizuka",
+      "character": "静",
+      "japanese": "静",
+      "furigana": [
+        {
+          "b": "静",
+          "r": "しずか"
+        }
+      ],
+      "readings": [
+        "しずか",
+        "せい"
+      ],
+      "romaji": "shizuka / sei",
+      "english": "quiet",
+      "audio": "audio/ja/chars/km-shizuka.mp3",
+      "audioHint": "しずか",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-shizuka",
+        "gx-na-adj-1",
+        "cx-te-4",
+        "cx-node-4"
+      ]
+    },
+    {
+      "id": "km-yasashii",
+      "character": "優",
+      "japanese": "優",
+      "furigana": [
+        {
+          "b": "優",
+          "r": "やさしい"
+        }
+      ],
+      "readings": [
+        "やさしい",
+        "ゆう"
+      ],
+      "romaji": "yasashii / yū",
+      "english": "kind, gentle",
+      "audio": "audio/ja/chars/km-yasashii.mp3",
+      "audioHint": "やさしい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-yasashii",
+        "gx-no-2",
+        "cx-te-4",
+        "cx-shi-3"
+      ]
+    },
+    {
+      "id": "km-warui",
+      "character": "悪",
+      "japanese": "悪",
+      "furigana": [
+        {
+          "b": "悪",
+          "r": "わるい"
+        }
+      ],
+      "readings": [
+        "わるい",
+        "あく"
+      ],
+      "romaji": "warui / aku",
+      "english": "bad",
+      "audio": "audio/ja/chars/km-warui.mp3",
+      "audioHint": "わるい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 2,
+      "note": "気分が悪い (きぶんがわるい) — I feel unwell.",
+      "seenIn": [
+        "w-warui",
+        "w-saiaku",
+        "s-60",
+        "eme-03"
+      ]
+    },
+    {
+      "id": "km-utsukushii",
+      "character": "美",
+      "japanese": "美",
+      "furigana": [
+        {
+          "b": "美",
+          "r": "うつくしい"
+        }
+      ],
+      "readings": [
+        "うつくしい",
+        "び"
+      ],
+      "romaji": "utsukushii / bi",
+      "english": "beautiful",
+      "audio": "audio/ja/chars/km-utsukushii.mp3",
+      "audioHint": "うつくしい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 3,
+      "note": "美術館 (びじゅつかん) — an art gallery.",
+      "seenIn": [
+        "gx-tewaikenai-4",
+        "cas-17"
+      ]
+    },
+    {
+      "id": "km-tooi",
+      "character": "遠",
+      "japanese": "遠",
+      "furigana": [
+        {
+          "b": "遠",
+          "r": "とおい"
+        }
+      ],
+      "readings": [
+        "とおい",
+        "えん"
+      ],
+      "romaji": "tōi / en",
+      "english": "far",
+      "audio": "audio/ja/chars/km-tooi.mp3",
+      "audioHint": "とおい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 2,
+      "note": "遠慮 (えんりょ) — holding back, out of politeness.",
+      "seenIn": [
+        "w-tooi"
+      ]
+    },
+    {
+      "id": "km-ben",
+      "character": "便",
+      "japanese": "便",
+      "furigana": [
+        {
+          "b": "便",
+          "r": "べん"
+        }
+      ],
+      "readings": [
+        "べん",
+        "びん"
+      ],
+      "romaji": "ben / bin",
+      "english": "convenience; post, flight",
+      "audio": "audio/ja/chars/km-ben.mp3",
+      "audioHint": "べん",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 3,
+      "note": "便利 (べんり) — convenient; 郵便 (ゆうびん) — the post.",
+      "seenIn": [
+        "w-benri",
+        "w-takuhaibin",
+        "gx-na-adj-4",
+        "cx-soshite-2",
+        "gx-toomou-4"
+      ]
+    },
+    {
+      "id": "km-ri-use",
+      "character": "利",
+      "japanese": "利",
+      "furigana": [
+        {
+          "b": "利",
+          "r": "り"
+        }
+      ],
+      "readings": [
+        "り"
+      ],
+      "romaji": "ri",
+      "english": "use; benefit",
+      "audio": "audio/ja/chars/km-ri-use.mp3",
+      "audioHint": "り",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 3,
+      "note": "利用 (りよう) — using (a service).",
+      "seenIn": [
+        "w-benri",
+        "gx-na-adj-4",
+        "cx-soshite-2",
+        "gx-toomou-4"
+      ]
+    },
+    {
+      "id": "km-betsu",
+      "character": "別",
+      "japanese": "別",
+      "furigana": [
+        {
+          "b": "別",
+          "r": "べつ"
+        }
+      ],
+      "readings": [
+        "べつ",
+        "わかれる"
+      ],
+      "romaji": "betsu / wakareru",
+      "english": "separate, another",
+      "audio": "audio/ja/chars/km-betsu.mp3",
+      "audioHint": "べつ",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 3,
+      "note": "別々に (べつべつに) — separately.",
+      "seenIn": [
+        "w-tokubetsu",
+        "s-47"
+      ]
+    },
+    {
+      "id": "km-isogashii",
+      "character": "忙",
+      "japanese": "忙",
+      "furigana": [
+        {
+          "b": "忙",
+          "r": "いそがしい"
+        }
+      ],
+      "readings": [
+        "いそがしい",
+        "ぼう"
+      ],
+      "romaji": "isogashii / bō",
+      "english": "busy",
+      "audio": "audio/ja/chars/km-isogashii.mp3",
+      "audioHint": "いそがしい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-isogashii",
+        "s-03",
+        "gx-youninaru-4"
+      ]
+    },
+    {
+      "id": "km-nokoru",
+      "character": "残",
+      "japanese": "残",
+      "furigana": [
+        {
+          "b": "残",
+          "r": "のこる"
+        }
+      ],
+      "readings": [
+        "のこる",
+        "ざん"
+      ],
+      "romaji": "nokoru / zan",
+      "english": "remain, be left over",
+      "audio": "audio/ja/chars/km-nokoru.mp3",
+      "audioHint": "のこる",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "describe"
+      ],
+      "difficulty": 3,
+      "note": "残念 (ざんねん) — a shame.",
+      "seenIn": [
+        "w-zannen",
+        "pla-08"
+      ]
+    },
+    {
+      "id": "km-negau",
+      "character": "願",
+      "japanese": "願",
+      "furigana": [
+        {
+          "b": "願",
+          "r": "ねがう"
+        }
+      ],
+      "readings": [
+        "ねがう",
+        "がん"
+      ],
+      "romaji": "negau / gan",
+      "english": "wish, ask",
+      "audio": "audio/ja/chars/km-negau.mp3",
+      "audioHint": "ねがう",
+      "group": "ideas",
+      "tags": [
+        "kanji",
+        "ideas"
+      ],
+      "difficulty": 2,
+      "note": "お願いします (おねがいします) — please.",
+      "seenIn": [
+        "cx-sorekara-3",
+        "gre-07",
+        "gre-12",
+        "gre-16",
+        "gre-17",
+        "num-18"
+      ]
+    },
+    {
+      "id": "km-au",
+      "character": "合",
+      "japanese": "合",
+      "furigana": [
+        {
+          "b": "合",
+          "r": "あう"
+        }
+      ],
+      "readings": [
+        "あう",
+        "ごう"
+      ],
+      "romaji": "au / gō",
+      "english": "fit, suit, match",
+      "audio": "audio/ja/chars/km-au.mp3",
+      "audioHint": "あう",
+      "group": "ideas",
+      "tags": [
+        "kanji",
+        "ideas"
+      ],
+      "difficulty": 3,
+      "note": "間に合う (まにあう) — to make it in time.",
+      "seenIn": [
+        "w-maniau",
+        "w-shiriai",
+        "w-tsukiau",
+        "w-baai",
+        "w-guai",
+        "s-21"
+      ]
+    },
+    {
+      "id": "km-tou",
+      "character": "当",
+      "japanese": "当",
+      "furigana": [
+        {
+          "b": "当",
+          "r": "とう"
+        }
+      ],
+      "readings": [
+        "とう",
+        "あたる"
+      ],
+      "romaji": "tō / ataru",
+      "english": "hit; right, proper",
+      "audio": "audio/ja/chars/km-tou.mp3",
+      "audioHint": "とう",
+      "group": "ideas",
+      "tags": [
+        "kanji",
+        "ideas"
+      ],
+      "difficulty": 3,
+      "note": "本当 (ほんとう) — true, really.",
+      "seenIn": [
+        "w-hontou",
+        "gx-mitai-4",
+        "opi-12"
+      ]
+    },
+    {
+      "id": "km-tashika",
+      "character": "確",
+      "japanese": "確",
+      "furigana": [
+        {
+          "b": "確",
+          "r": "たしか"
+        }
+      ],
+      "readings": [
+        "たしか",
+        "かく"
+      ],
+      "romaji": "tashika / kaku",
+      "english": "certain, sure",
+      "audio": "audio/ja/chars/km-tashika.mp3",
+      "audioHint": "たしか",
+      "group": "ideas",
+      "tags": [
+        "kanji",
+        "ideas"
+      ],
+      "difficulty": 3,
+      "note": "確認 (かくにん) — checking, confirming.",
+      "seenIn": [
+        "w-tashika",
+        "aiz-06",
+        "opi-04",
+        "pro-10"
+      ]
+    },
+    {
+      "id": "km-ketsu",
+      "character": "結",
+      "japanese": "結",
+      "furigana": [
+        {
+          "b": "結",
+          "r": "けつ"
+        }
+      ],
+      "readings": [
+        "けつ",
+        "むすぶ"
+      ],
+      "romaji": "ketsu / musubu",
+      "english": "tie, join",
+      "audio": "audio/ja/chars/km-ketsu.mp3",
+      "audioHint": "けつ",
+      "group": "ideas",
+      "tags": [
+        "kanji",
+        "ideas"
+      ],
+      "difficulty": 3,
+      "note": "結婚 (けっこん) — marriage; 結構 (けっこう) — quite; no, thank you.",
+      "seenIn": [
+        "w-kekkon",
+        "w-kekkou",
+        "w-kekka",
+        "s-25",
+        "gx-toomou-2"
+      ]
+    },
+    {
+      "id": "km-ren",
+      "character": "連",
+      "japanese": "連",
+      "furigana": [
+        {
+          "b": "連",
+          "r": "れん"
+        }
+      ],
+      "readings": [
+        "れん",
+        "つれる"
+      ],
+      "romaji": "ren / tsureru",
+      "english": "link; take along",
+      "audio": "audio/ja/chars/km-ren.mp3",
+      "audioHint": "れん",
+      "group": "ideas",
+      "tags": [
+        "kanji",
+        "ideas"
+      ],
+      "difficulty": 3,
+      "note": "連絡 (れんらく) — getting in touch.",
+      "seenIn": [
+        "w-renraku",
+        "s-59",
+        "pla-10"
+      ]
+    },
+    {
+      "id": "km-raku",
+      "character": "絡",
+      "japanese": "絡",
+      "furigana": [
+        {
+          "b": "絡",
+          "r": "らく"
+        }
+      ],
+      "readings": [
+        "らく"
+      ],
+      "romaji": "raku",
+      "english": "connect",
+      "audio": "audio/ja/chars/km-raku.mp3",
+      "audioHint": "らく",
+      "group": "ideas",
+      "tags": [
+        "kanji",
+        "ideas"
+      ],
+      "difficulty": 4,
+      "note": "You’ll nearly always meet it in 連絡 (れんらく).",
+      "seenIn": [
+        "w-renraku",
+        "s-59",
+        "pla-10"
+      ]
+    },
+    {
+      "id": "km-dai",
+      "character": "題",
+      "japanese": "題",
+      "furigana": [
+        {
+          "b": "題",
+          "r": "だい"
+        }
+      ],
+      "readings": [
+        "だい"
+      ],
+      "romaji": "dai",
+      "english": "topic, title",
+      "audio": "audio/ja/chars/km-dai.mp3",
+      "audioHint": "だい",
+      "group": "ideas",
+      "tags": [
+        "kanji",
+        "ideas"
+      ],
+      "difficulty": 3,
+      "note": "問題 (もんだい) — a problem; 話題 (わだい) — a topic.",
+      "seenIn": [
+        "w-wadai",
+        "w-mondai",
+        "gx-tekureru-4",
+        "pro-01"
+      ]
+    },
+    {
+      "id": "km-mon",
+      "character": "問",
+      "japanese": "問",
+      "furigana": [
+        {
+          "b": "問",
+          "r": "もん"
+        }
+      ],
+      "readings": [
+        "もん",
+        "とう"
+      ],
+      "romaji": "mon / tō",
+      "english": "question, ask",
+      "audio": "audio/ja/chars/km-mon.mp3",
+      "audioHint": "もん",
+      "group": "ideas",
+      "tags": [
+        "kanji",
+        "ideas"
+      ],
+      "difficulty": 3,
+      "note": "質問 (しつもん) — a question.",
+      "seenIn": [
+        "w-mondai",
+        "pro-01"
+      ]
+    },
+    {
+      "id": "km-bun",
+      "character": "文",
+      "japanese": "文",
+      "furigana": [
+        {
+          "b": "文",
+          "r": "ぶん"
+        }
+      ],
+      "readings": [
+        "ぶん",
+        "もん"
+      ],
+      "romaji": "bun / mon",
+      "english": "writing, sentence",
+      "audio": "audio/ja/chars/km-bun.mp3",
+      "audioHint": "ぶん",
+      "group": "ideas",
+      "tags": [
+        "kanji",
+        "ideas"
+      ],
+      "difficulty": 2,
+      "note": "注文 (ちゅうもん) — an order (in a restaurant).",
+      "seenIn": [
+        "w-chuumon",
+        "s-52"
+      ]
+    },
+    {
+      "id": "km-ei",
+      "character": "英",
+      "japanese": "英",
+      "furigana": [
+        {
+          "b": "英",
+          "r": "えい"
+        }
+      ],
+      "readings": [
+        "えい"
+      ],
+      "romaji": "ei",
+      "english": "English; Britain",
+      "audio": "audio/ja/chars/km-ei.mp3",
+      "audioHint": "えい",
+      "group": "ideas",
+      "tags": [
+        "kanji",
+        "ideas"
+      ],
+      "difficulty": 2,
+      "note": "英語 (えいご) — English.",
+      "seenIn": [
+        "w-eigo",
+        "s-39",
+        "gre-18",
+        "eme-09"
+      ]
+    },
+    {
+      "id": "km-kata",
+      "character": "方",
+      "japanese": "方",
+      "furigana": [
+        {
+          "b": "方",
+          "r": "かた"
+        }
+      ],
+      "readings": [
+        "かた",
+        "ほう"
+      ],
+      "romaji": "kata / hō",
+      "english": "way; person (polite); side",
+      "audio": "audio/ja/chars/km-kata.mp3",
+      "audioHint": "かた",
+      "group": "ideas",
+      "tags": [
+        "kanji",
+        "ideas"
+      ],
+      "difficulty": 2,
+      "note": "行き方 (いきかた) — how to get there; この方 (このかた) — this person.",
+      "seenIn": [
+        "w-houhou",
+        "s-43",
+        "tra-18",
+        "pro-09"
+      ]
+    }
+  ]
+}

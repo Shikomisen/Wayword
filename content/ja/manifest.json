@@ -4,7 +4,7 @@
   "speaker": "en",
   "register": "polite",
   "generatedFor": "Wayword",
-  "notes": "Adding a category = add a file to content/ + one entry here. No app code changes. `register` is the default for phrases that don't declare their own — every phrase is polite unless it says otherwise (the casual set does). Categories appear under the group they name; `starter` categories go into the deck when the placement quiz finishes, the rest are added from Learn. `decks` are word and sentence decks (`kind`: words | sentences) and follow the same rules; a sentence's `chunks` name the words it uses by id, which is what links a word to the sentences it appears in. `levels` order everything (README §7.10): each entry names its `level`, and `step` orders the next-step path within it. `lessons` are the Grammar tab: one file per grammar point or connector, with its explanation and example sentences; the drills are built from each example's `chunks`, `gap` and `combine`.",
+  "notes": "Adding a category = add a file to content/ + one entry here. No app code changes. `register` is the default for phrases that don't declare their own — every phrase is polite unless it says otherwise (the casual set does). Categories appear under the group they name; `starter` categories go into the deck when the placement quiz finishes, the rest are added from Learn. `decks` are word and sentence decks (`kind`: words | sentences) and follow the same rules; a sentence's `chunks` name the words it uses by id, which is what links a word to the sentences it appears in. `listening` is the listening drill (README §6.8). `levels` order everything (README §7.10): each entry names its `level`, and `step` orders the next-step path within it. `lessons` are the Grammar tab: one file per grammar point or connector, with its explanation and example sentences; the drills are built from each example's `chunks`, `gap` and `combine`.",
   "fields": { "target": "japanese", "ruby": "furigana", "reading": "romaji", "meaning": "english" },
   "aids": {
     "ruby": { "chip": "ふりがな", "label": "Furigana", "help": "Kana readings above kanji" },
@@ -31,7 +31,7 @@
     "verbForms": ["masu", "te"]
   },
   "copy": {
-    "placementLede": "{n} quick cards — every phrase category, plus a few kana and kanji to check what you can already read. For each one, say whether you already have it. Nothing is typed and nothing is scored against you — it only decides where each card enters your review deck.",
+    "placementLede": "{n} quick cards — every First-steps and Basic phrase category, plus a few kana and kanji to check what you can already read. For each one, say whether you already have it. Nothing is typed and nothing is scored against you — it only decides where each card enters your review deck.",
     "placementAside": "Japanese picked up by ear — from a partner, friends or the screen — is usually real but lopsided: you understand more than you can say, and reading lags behind listening. This is looking for those gaps, not testing you.",
     "lessonsTitle": "Grammar and connectors",
     "lessonsTab": "Grammar",
@@ -40,13 +40,16 @@
   },
   "levels": [
     { "id": "first-steps", "icon": "🌱", "title": "First steps", "description": "Brand new to Japanese. Hiragana and katakana, your first words and phrases, and how a sentence is built: particles like は, を and に, です, and the ます forms. Romaji is there until you can read kana." },
-    { "id": "basic",       "icon": "🌿", "title": "Basic",       "description": "Everyday Japanese: words for home, food and getting around, set phrases for shops, stations and hotels, casual speech for friends and a partner, the connectors that chain sentences together, and your first kanji." }
+    { "id": "basic",       "icon": "🌿", "title": "Basic",       "description": "Everyday Japanese: words for home, food and getting around, set phrases for shops, stations and hotels, casual speech for friends and a partner, the connectors that chain sentences together, and your first kanji." },
+    { "id": "intermediate", "icon": "🌳", "title": "Intermediate", "description": "Conversation beyond set phrases: talking about yourself, your plans and what you think, reacting as you listen, polite Japanese for a partner’s family, and sorting out problems at the doctor, the hotel or a shop. Grammar like 〜てみる, 〜たことがある, と思う and keigo, listening at natural speed, and 124 more kanji.", "placement": false }
   ],
   "groups": [
     { "id": "basics", "title": "Everyday basics" },
     { "id": "out", "title": "Out and about" },
     { "id": "travel", "title": "Travelling" },
-    { "id": "help", "title": "If something goes wrong" }
+    { "id": "help", "title": "If something goes wrong" },
+    { "id": "talk", "title": "Real conversations" },
+    { "id": "life", "title": "Life in Japan" }
   ],
   "categories": [
     { "id": "greetings",  "order": 1,  "file": "content/ja/greetings.json",  "title": "Greetings & Politeness",    "icon": "🙏", "group": "basics", "level": "first-steps", "step": 1, "starter": true },
@@ -59,7 +62,13 @@
     { "id": "shopping",   "order": 8,  "file": "content/ja/shopping.json",   "title": "Shopping & Payments",       "icon": "🛍️", "group": "out", "level": "basic", "step": 6, "starter": true },
     { "id": "emergency",  "order": 9,  "file": "content/ja/emergency.json",  "title": "Emergencies & Health",      "icon": "🏥", "group": "help", "level": "basic", "step": 14 },
     { "id": "smalltalk",  "order": 10, "file": "content/ja/smalltalk.json",  "title": "Small Talk",                "icon": "💬", "group": "basics", "level": "first-steps", "step": 9 },
-    { "id": "casual",     "order": 11, "file": "content/ja/casual.json",     "title": "Casual Speech",             "icon": "🏠", "group": "basics", "level": "basic", "step": 1, "starter": true }
+    { "id": "casual",     "order": 11, "file": "content/ja/casual.json",     "title": "Casual Speech",             "icon": "🏠", "group": "basics", "level": "basic", "step": 1, "starter": true },
+    { "id": "aizuchi",    "order": 12, "file": "content/ja/aizuchi.json",   "title": "Reactions & Listening",     "icon": "👂", "group": "talk", "level": "intermediate", "step": 2, "starter": true },
+    { "id": "plans",      "order": 13, "file": "content/ja/plans.json",     "title": "Plans & Invitations",       "icon": "📅", "group": "talk", "level": "intermediate", "step": 6 },
+    { "id": "opinions",   "order": 14, "file": "content/ja/opinions.json",  "title": "Opinions & Agreeing",       "icon": "💬", "group": "talk", "level": "intermediate", "step": 9 },
+    { "id": "family",     "order": 15, "file": "content/ja/family.json",    "title": "Meeting the Family",        "icon": "👪", "group": "life", "level": "intermediate", "step": 13 },
+    { "id": "doctor",     "order": 16, "file": "content/ja/doctor.json",    "title": "The Doctor & Pharmacy",     "icon": "💊", "group": "life", "level": "intermediate", "step": 15 },
+    { "id": "problems",   "order": 17, "file": "content/ja/problems.json",  "title": "Problems & Complaints",     "icon": "🛠️", "group": "life", "level": "intermediate", "step": 18 }
   ],
   "decks": [
     { "id": "words-people",       "kind": "words",     "order": 1,  "file": "content/ja/words/people.json",       "title": "People & Family",         "icon": "👥", "level": "first-steps", "step": 3, "starter": true },
@@ -75,7 +84,19 @@
     { "id": "words-work",         "kind": "words",     "order": 11, "file": "content/ja/words/work.json",         "title": "Work & Study",            "icon": "💼", "level": "basic", "step": 12 },
     { "id": "words-free",         "kind": "words",     "order": 12, "file": "content/ja/words/free.json",         "title": "Free Time",               "icon": "🎬", "level": "basic", "step": 13 },
     { "id": "words-things",       "kind": "words",     "order": 13, "file": "content/ja/words/things.json",       "title": "Things Around You",       "icon": "🎒", "level": "first-steps", "step": 7 },
-    { "id": "sentences-everyday", "kind": "sentences", "order": 1,  "file": "content/ja/sentences/everyday.json", "title": "Everyday Sentences",      "icon": "💬", "level": "first-steps", "step": 6 }
+    { "id": "words-more-verbs",   "kind": "words",     "order": 14, "file": "content/ja/words/more-verbs.json",   "title": "More Verbs",              "icon": "🔧", "level": "intermediate", "step": 1, "starter": true },
+    { "id": "words-reactions",    "kind": "words",     "order": 15, "file": "content/ja/words/reactions.json",    "title": "Feelings & Reactions",    "icon": "😮", "level": "intermediate", "step": 3, "starter": true },
+    { "id": "words-more-describe", "kind": "words",     "order": 16, "file": "content/ja/words/more-describe.json", "title": "More Describing Words",   "icon": "🎭", "level": "intermediate", "step": 8 },
+    { "id": "words-social",       "kind": "words",     "order": 17, "file": "content/ja/words/social.json",       "title": "People & Social Life",    "icon": "🥂", "level": "intermediate", "step": 5 },
+    { "id": "words-travel",       "kind": "words",     "order": 18, "file": "content/ja/words/travel.json",       "title": "Travel & Sightseeing",    "icon": "🧳", "level": "intermediate", "step": 11 },
+    { "id": "words-timing",       "kind": "words",     "order": 19, "file": "content/ja/words/timing.json",       "title": "Time & How Often",        "icon": "⏳", "level": "intermediate", "step": 7 },
+    { "id": "words-thinking",     "kind": "words",     "order": 20, "file": "content/ja/words/thinking.json",     "title": "Opinions & Ideas",        "icon": "💭", "level": "intermediate", "step": 10 },
+    { "id": "words-health",       "kind": "words",     "order": 21, "file": "content/ja/words/health.json",       "title": "Health & the Doctor",     "icon": "🩺", "level": "intermediate", "step": 14 },
+    { "id": "words-life",         "kind": "words",     "order": 22, "file": "content/ja/words/life.json",         "title": "Home & Everyday Life",    "icon": "🏡", "level": "intermediate", "step": 16 },
+    { "id": "words-shopping2",    "kind": "words",     "order": 23, "file": "content/ja/words/shopping2.json",    "title": "Shopping & Money",        "icon": "💴", "level": "intermediate", "step": 17 },
+    { "id": "sentences-everyday", "kind": "sentences", "order": 1,  "file": "content/ja/sentences/everyday.json", "title": "Everyday Sentences",      "icon": "💬", "level": "first-steps", "step": 6 },
+    { "id": "sentences-yourself", "kind": "sentences", "order": 2,  "file": "content/ja/sentences/yourself.json", "title": "Talking About Yourself",  "icon": "🙋", "level": "intermediate", "step": 4 },
+    { "id": "sentences-out",      "kind": "sentences", "order": 3,  "file": "content/ja/sentences/out.json",      "title": "Out and About",           "icon": "🚶", "level": "intermediate", "step": 12 }
   ],
   "lessonGroups": [
     { "id": "particles", "title": "Particles: building a sentence",   "description": "The little words after nouns that say who did what, where, when and with whom." },
@@ -84,7 +105,13 @@
     { "id": "reason",    "title": "Because and so",                   "description": "Giving reasons and drawing conclusions." },
     { "id": "contrast",  "title": "But",                              "description": "Two things that pull against each other." },
     { "id": "condition", "title": "If and when",                      "description": "Conditions, and the time something happens." },
-    { "id": "more",      "title": "While, what’s more, in order to",  "description": "Doing two things at once, piling up reasons, and purposes." }
+    { "id": "more",      "title": "While, what’s more, in order to",  "description": "Doing two things at once, piling up reasons, and purposes." },
+    { "id": "forms",     "title": "Verb forms that say more",         "description": "Trying, finishing, preparing, experience, plans, ability, change and decisions: the verb endings that carry most of a conversation." },
+    { "id": "rules",     "title": "Allowed, must and needn’t",        "description": "Asking permission, saying what isn’t allowed, and what you have to do or don’t need to." },
+    { "id": "giving",    "title": "Giving and receiving",             "description": "Who gives to whom, and doing favours for each other: the verbs Japanese uses to show thanks." },
+    { "id": "thinking",  "title": "Saying what you think and hear",   "description": "Opinions, passing on what someone said, maybes, how things look, and what you’ve heard." },
+    { "id": "nuance",    "title": "Nuance in conversation",           "description": "The endings and patterns that make Japanese sound like a conversation: explaining, sharing, complaining, conceding, comparing." },
+    { "id": "keigo",     "title": "Polite Japanese (keigo)",          "description": "Respectful verbs for the other person and humble ones for yourself: for a partner’s family, customers and anyone above you." }
   ],
   "lessons": [
     { "id": "gr-desu", "order": 1, "file": "content/ja/grammar/desu.json", "title": "です — X is Y", "group": "particles", "level": "first-steps" },
@@ -122,13 +149,40 @@
     { "id": "con-toki",     "order": 33, "file": "content/ja/connectors/toki.json",     "title": "とき — when, at the time",         "group": "condition", "level": "basic" },
     { "id": "con-nagara",   "order": 34, "file": "content/ja/connectors/nagara.json",   "title": "ながら — while (doing both)",      "group": "more", "level": "basic" },
     { "id": "con-shi",      "order": 35, "file": "content/ja/connectors/shi.json",      "title": "し — and what’s more",             "group": "more", "level": "basic" },
-    { "id": "con-tame",     "order": 36, "file": "content/ja/connectors/tame.json",     "title": "ために — in order to, for",         "group": "more", "level": "basic" }
+    { "id": "con-tame",     "order": 36, "file": "content/ja/connectors/tame.json",     "title": "ために — in order to, for",         "group": "more", "level": "basic" },
+    { "id": "gr-temiru", "order": 37, "file": "content/ja/grammar/temiru.json", "title": "〜てみる — try it and see", "group": "forms", "level": "intermediate" },
+    { "id": "gr-teshimau", "order": 38, "file": "content/ja/grammar/teshimau.json", "title": "〜てしまう・〜ちゃう — done, oops", "group": "forms", "level": "intermediate" },
+    { "id": "gr-teoku", "order": 39, "file": "content/ja/grammar/teoku.json", "title": "〜ておく — do it now, ready for later", "group": "forms", "level": "intermediate" },
+    { "id": "gr-takotogaaru", "order": 40, "file": "content/ja/grammar/takotogaaru.json", "title": "〜たことがある — have you ever…?", "group": "forms", "level": "intermediate" },
+    { "id": "gr-tsumori", "order": 41, "file": "content/ja/grammar/tsumori.json", "title": "〜つもり — I’m planning to…", "group": "forms", "level": "intermediate" },
+    { "id": "gr-potential", "order": 42, "file": "content/ja/grammar/potential.json", "title": "〜られる・〜える — can do", "group": "forms", "level": "intermediate" },
+    { "id": "gr-youninaru", "order": 43, "file": "content/ja/grammar/youninaru.json", "title": "〜ようになる — now I can, now I do", "group": "forms", "level": "intermediate" },
+    { "id": "gr-kotonisuru", "order": 44, "file": "content/ja/grammar/kotonisuru.json", "title": "〜ことにする・〜ことになる — decided", "group": "forms", "level": "intermediate" },
+    { "id": "gr-temoii", "order": 45, "file": "content/ja/grammar/temoii.json", "title": "〜てもいい — is it OK if…?", "group": "rules", "level": "intermediate" },
+    { "id": "gr-tewaikenai", "order": 46, "file": "content/ja/grammar/tewaikenai.json", "title": "〜てはいけない・〜ちゃだめ — you mustn’t", "group": "rules", "level": "intermediate" },
+    { "id": "gr-nakereba", "order": 47, "file": "content/ja/grammar/nakereba.json", "title": "〜なければならない・〜なくてもいい — must, needn’t", "group": "rules", "level": "intermediate" },
+    { "id": "gr-ageru", "order": 48, "file": "content/ja/grammar/ageru.json", "title": "あげる・くれる・もらう — giving and getting", "group": "giving", "level": "intermediate" },
+    { "id": "gr-tekureru", "order": 49, "file": "content/ja/grammar/tekureru.json", "title": "〜てくれる・〜てもらう・〜てあげる — favours", "group": "giving", "level": "intermediate" },
+    { "id": "gr-toomou", "order": 50, "file": "content/ja/grammar/toomou.json", "title": "〜とおもう — I think…", "group": "thinking", "level": "intermediate" },
+    { "id": "gr-tte", "order": 51, "file": "content/ja/grammar/tte.json", "title": "〜って・〜といっていた — quoting", "group": "thinking", "level": "intermediate" },
+    { "id": "gr-kamoshirenai", "order": 52, "file": "content/ja/grammar/kamoshirenai.json", "title": "〜かもしれない・〜でしょう — maybe, probably", "group": "thinking", "level": "intermediate" },
+    { "id": "gr-sou", "order": 53, "file": "content/ja/grammar/sou.json", "title": "〜そう — looks tasty, looks like rain", "group": "thinking", "level": "intermediate" },
+    { "id": "gr-mitai", "order": 54, "file": "content/ja/grammar/mitai.json", "title": "〜みたい・〜らしい — it seems, apparently", "group": "thinking", "level": "intermediate" },
+    { "id": "gr-ndesu", "order": 55, "file": "content/ja/grammar/ndesu.json", "title": "〜んです — explaining, and asking why", "group": "nuance", "level": "intermediate" },
+    { "id": "gr-yone", "order": 56, "file": "content/ja/grammar/yone.json", "title": "よ・ね・よね — telling, sharing, checking", "group": "nuance", "level": "intermediate" },
+    { "id": "gr-noni", "order": 57, "file": "content/ja/grammar/noni.json", "title": "〜のに — even though, and yet", "group": "nuance", "level": "intermediate" },
+    { "id": "gr-temo", "order": 58, "file": "content/ja/grammar/temo.json", "title": "〜ても — even if, no matter", "group": "nuance", "level": "intermediate" },
+    { "id": "gr-sugiru", "order": 59, "file": "content/ja/grammar/sugiru.json", "title": "〜すぎる・〜やすい・〜にくい — too, easy, hard", "group": "nuance", "level": "intermediate" },
+    { "id": "gr-hikaku", "order": 60, "file": "content/ja/grammar/hikaku.json", "title": "より・ほうが・いちばん — comparing things", "group": "nuance", "level": "intermediate" },
+    { "id": "gr-sonkei", "order": 61, "file": "content/ja/grammar/sonkei.json", "title": "いらっしゃる — respectful verbs", "group": "keigo", "level": "intermediate" },
+    { "id": "gr-kenjou", "order": 62, "file": "content/ja/grammar/kenjou.json", "title": "いたします・もうします — humble verbs", "group": "keigo", "level": "intermediate" }
   ],
   "characterSets": [
     { "id": "hiragana",     "order": 1, "file": "content/ja/hiragana.json",     "title": "Hiragana",            "icon": "あ", "script": "hiragana", "layout": "grid", "level": "first-steps" },
     { "id": "katakana",     "order": 2, "file": "content/ja/katakana.json",     "title": "Katakana",            "icon": "ア", "script": "katakana", "layout": "grid", "level": "first-steps" },
     { "id": "kanji-words",  "order": 3, "file": "content/ja/kanji-words.json",  "title": "Kanji in Your Words", "icon": "字", "script": "kanji",    "layout": "list", "level": "basic" },
-    { "id": "kanji-common", "order": 4, "file": "content/ja/kanji-common.json", "title": "Common Kanji",        "icon": "漢", "script": "kanji",    "layout": "list", "level": "basic" }
+    { "id": "kanji-common", "order": 4, "file": "content/ja/kanji-common.json", "title": "Common Kanji",        "icon": "漢", "script": "kanji",    "layout": "list", "level": "basic" },
+    { "id": "kanji-more",   "order": 5, "file": "content/ja/kanji-more.json",   "title": "More Kanji",          "icon": "文", "script": "kanji",    "layout": "list", "level": "intermediate" }
   ],
   "scenarios": [
     { "id": "conbini",     "file": "content/ja/scenarios/conbini.json",     "title": "Convenience store checkout", "icon": "🏪", "category": "shopping", "level": "basic" },
@@ -136,6 +190,17 @@
     { "id": "immigration", "file": "content/ja/scenarios/immigration.json", "title": "Immigration desk",           "icon": "🛂", "category": "airport", "level": "basic" },
     { "id": "checkin",     "file": "content/ja/scenarios/checkin.json",     "title": "Hotel check-in",             "icon": "🏨", "category": "hotel", "level": "basic" },
     { "id": "izakaya",     "file": "content/ja/scenarios/izakaya.json",     "title": "Ordering at a restaurant",   "icon": "🍜", "category": "restaurant", "level": "basic" },
-    { "id": "lost",        "file": "content/ja/scenarios/lost.json",        "title": "Asking the way when lost",   "icon": "🧭", "category": "directions", "level": "basic" }
+    { "id": "lost",        "file": "content/ja/scenarios/lost.json",        "title": "Asking the way when lost",   "icon": "🧭", "category": "directions", "level": "basic" },
+    { "id": "pharmacy",    "file": "content/ja/scenarios/pharmacy.json",    "title": "At the pharmacy",            "icon": "💊", "category": "emergency", "level": "basic" },
+    { "id": "neighbour",   "file": "content/ja/scenarios/neighbour.json",   "title": "Chatting with a neighbour",  "icon": "🏘️", "category": "smalltalk", "level": "basic" },
+    { "id": "family-dinner", "file": "content/ja/scenarios/family-dinner.json", "title": "Dinner with a partner’s family", "icon": "👪", "category": "family", "level": "intermediate" },
+    { "id": "weekend-plans", "file": "content/ja/scenarios/weekend-plans.json", "title": "Making weekend plans",       "icon": "📅", "category": "plans", "level": "intermediate" },
+    { "id": "clinic",      "file": "content/ja/scenarios/clinic.json",      "title": "At a clinic",                "icon": "🩺", "category": "doctor", "level": "intermediate" },
+    { "id": "ryokan",      "file": "content/ja/scenarios/ryokan.json",      "title": "Staying at a ryokan",        "icon": "♨️", "category": "hotel", "level": "intermediate" },
+    { "id": "wrong-order", "file": "content/ja/scenarios/wrong-order.json", "title": "When the order is wrong",    "icon": "🍛", "category": "problems", "level": "intermediate" }
+  ],
+  "listening": [
+    { "id": "contrasts", "kind": "contrasts", "file": "content/ja/listening/contrasts.json", "title": "Which did you hear?", "icon": "🎧", "level": "basic" },
+    { "id": "replies",   "kind": "replies",   "file": "content/ja/listening/replies.json",   "title": "What did they say?",  "icon": "👂", "level": "intermediate" }
   ]
 }

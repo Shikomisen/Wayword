@@ -1,0 +1,618 @@
+{
+  "schemaVersion": 1,
+  "id": "sentences-out",
+  "title": "Out and About",
+  "description": "Asking for things, sorting out problems and making arrangements, politely: the sentences a trip or a day out calls for.",
+  "items": [
+    {
+      "id": "s-42",
+      "japanese": "すみません、写真を撮ってもらえませんか。",
+      "furigana": "すみません、{写真|しゃしん}を{撮|と}ってもらえませんか。",
+      "english": "Excuse me, could you take a photo for us?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "すみません、"
+        },
+        {
+          "t": "{写真|しゃしん}を",
+          "w": "w-shashin"
+        },
+        {
+          "t": "{撮|と}って"
+        },
+        {
+          "t": "もらえませんか。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-42.mp3",
+      "tags": ["request"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-43",
+      "japanese": "この荷物を夕方まで預かってもらえますか。",
+      "furigana": "この{荷物|にもつ}を{夕方|ゆうがた}まで{預|あず}かってもらえますか。",
+      "english": "Could you look after this luggage until the evening?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{荷物|にもつ}を",
+          "w": "w-nimotsu"
+        },
+        {
+          "t": "{夕方|ゆうがた}まで"
+        },
+        {
+          "t": "{預|あず}かって"
+        },
+        {
+          "t": "もらえますか。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-43.mp3",
+      "tags": ["request"],
+      "difficulty": 4
+    },
+    {
+      "id": "s-44",
+      "japanese": "窓側の席にしてもらえますか。",
+      "furigana": "{窓側|まどがわ}の{席|せき}にしてもらえますか。",
+      "english": "Could I have a window seat?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{窓側|まどがわ}の",
+          "w": "w-mado"
+        },
+        {
+          "t": "{席|せき}に"
+        },
+        {
+          "t": "してもらえますか。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-44.mp3",
+      "tags": ["request"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-45",
+      "japanese": "明日の朝、六時に起こしてもらえますか。",
+      "furigana": "{明日|あした}の{朝|あさ}、{六時|ろくじ}に{起|お}こしてもらえますか。",
+      "english": "Could I have a wake-up call at six tomorrow morning?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}の",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{朝|あさ}、",
+          "w": "w-asa"
+        },
+        {
+          "t": "{六時|ろくじ}に"
+        },
+        {
+          "t": "{起|お}こして"
+        },
+        {
+          "t": "もらえますか。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-45.mp3",
+      "tags": ["request"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-46",
+      "japanese": "予約を明日に変えたいんですが。",
+      "furigana": "{予約|よやく}を{明日|あした}に{変|か}えたいんですが。",
+      "english": "I’d like to change my booking to tomorrow.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{予約|よやく}を",
+          "w": "w-yoyaku"
+        },
+        {
+          "t": "{明日|あした}に",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{変|か}えたいんですが。",
+          "w": "w-kaeru-change"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-46.mp3",
+      "tags": ["request"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-47",
+      "japanese": "支払いは別々にできますか。",
+      "furigana": "{支払|しはら}いは{別々|べつべつ}にできますか。",
+      "english": "Can we pay separately?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{支払|しはら}いは",
+          "w": "w-shiharai"
+        },
+        {
+          "t": "{別々|べつべつ}に"
+        },
+        {
+          "t": "できますか。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-47.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-48",
+      "japanese": "返品できますか。レシートはあります。",
+      "furigana": "{返品|へんぴん}できますか。{レシート|れしーと}はあります。",
+      "english": "Can I return this? I have the receipt.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{返品|へんぴん}できますか。",
+          "w": "w-henpin"
+        },
+        {
+          "t": "{レシート|れしーと}は",
+          "w": "w-reshiito"
+        },
+        {
+          "t": "あります。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-48.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-49",
+      "japanese": "もう少し小さいサイズはありますか。",
+      "furigana": "もう{少|すこ}し{小|ちい}さい{サイズ|さいず}はありますか。",
+      "english": "Do you have it in a slightly smaller size?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "もう{少|すこ}し"
+        },
+        {
+          "t": "{小|ちい}さい"
+        },
+        {
+          "t": "{サイズ|さいず}は",
+          "w": "w-saizu"
+        },
+        {
+          "t": "ありますか。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-49.mp3",
+      "tags": ["shopping"],
+      "difficulty": 2
+    },
+    {
+      "id": "s-50",
+      "japanese": "現金しか使えませんか。",
+      "furigana": "{現金|げんきん}しか{使|つか}えませんか。",
+      "english": "Is it cash only?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{現金|げんきん}しか",
+          "w": "w-genkin"
+        },
+        {
+          "t": "{使|つか}えませんか。",
+          "w": "w-tsukau"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-50.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-51",
+      "japanese": "部屋のエアコンが壊れているみたいです。",
+      "furigana": "{部屋|へや}の{エアコン|えあこん}が{壊|こわ}れているみたいです。",
+      "english": "The air conditioner in my room seems to be broken.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{部屋|へや}の",
+          "w": "w-heya"
+        },
+        {
+          "t": "{エアコン|えあこん}が",
+          "w": "w-eakon"
+        },
+        {
+          "t": "{壊|こわ}れているみたいです。",
+          "w": "w-kowareru"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-51.mp3",
+      "tags": ["problem"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-52",
+      "japanese": "注文したものと違うんですが…。",
+      "furigana": "{注文|ちゅうもん}したものと{違|ちが}うんですが…。",
+      "english": "This isn’t what I ordered…",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{注文|ちゅうもん}したものと",
+          "w": "w-chuumon"
+        },
+        {
+          "t": "{違|ちが}うんですが…。",
+          "w": "w-chigau"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-52.mp3",
+      "tags": ["problem"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-53",
+      "japanese": "頼んだ料理がまだ来ていないんですが。",
+      "furigana": "{頼|たの}んだ{料理|りょうり}がまだ{来|き}ていないんですが。",
+      "english": "The food we ordered still hasn’t come.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{頼|たの}んだ",
+          "w": "w-tanomu"
+        },
+        {
+          "t": "{料理|りょうり}が"
+        },
+        {
+          "t": "まだ",
+          "w": "w-mada"
+        },
+        {
+          "t": "{来|き}ていないんですが。",
+          "w": "w-kuru"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-53.mp3",
+      "tags": ["problem"],
+      "difficulty": 4
+    },
+    {
+      "id": "s-54",
+      "japanese": "財布を落としてしまったんですが、届いていませんか。",
+      "furigana": "{財布|さいふ}を{落|お}としてしまったんですが、{届|とど}いていませんか。",
+      "english": "I’ve dropped my wallet. Has anyone handed it in?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{財布|さいふ}を",
+          "w": "w-saifu"
+        },
+        {
+          "t": "{落|お}としてしまったんですが、"
+        },
+        {
+          "t": "{届|とど}いていませんか。",
+          "w": "w-todoku"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-54.mp3",
+      "tags": ["problem"],
+      "difficulty": 4
+    },
+    {
+      "id": "s-55",
+      "japanese": "鍵を部屋の中に忘れてしまいました。",
+      "furigana": "{鍵|かぎ}を{部屋|へや}の{中|なか}に{忘|わす}れてしまいました。",
+      "english": "I’ve left my key inside the room.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{鍵|かぎ}を",
+          "w": "w-kagi"
+        },
+        {
+          "t": "{部屋|へや}の",
+          "w": "w-heya"
+        },
+        {
+          "t": "{中|なか}に"
+        },
+        {
+          "t": "{忘|わす}れてしまいました。",
+          "w": "w-wasureru"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-55.mp3",
+      "tags": ["problem"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-56",
+      "japanese": "道に迷ってしまったんですが、駅はどちらですか。",
+      "furigana": "{道|みち}に{迷|まよ}ってしまったんですが、{駅|えき}はどちらですか。",
+      "english": "I’ve got lost. Which way is the station?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{道|みち}に",
+          "w": "w-michi"
+        },
+        {
+          "t": "{迷|まよ}ってしまったんですが、",
+          "w": "w-mayou"
+        },
+        {
+          "t": "{駅|えき}は",
+          "w": "w-eki"
+        },
+        {
+          "t": "どちらですか。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-56.mp3",
+      "tags": ["problem"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-57",
+      "japanese": "電車が遅れていて、十分ぐらい遅れそうです。",
+      "furigana": "{電車|でんしゃ}が{遅|おく}れていて、{十分|じゅっぷん}ぐらい{遅|おく}れそうです。",
+      "english": "The train’s delayed, so I’ll probably be about ten minutes late.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{電車|でんしゃ}が",
+          "w": "w-densha"
+        },
+        {
+          "t": "{遅|おく}れていて、",
+          "w": "w-okureru"
+        },
+        {
+          "t": "{十分|じゅっぷん}ぐらい"
+        },
+        {
+          "t": "{遅|おく}れそうです。",
+          "w": "w-okureru"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-57.mp3",
+      "tags": ["problem"],
+      "difficulty": 4
+    },
+    {
+      "id": "s-58",
+      "japanese": "急に行けなくなってしまって、すみません。",
+      "furigana": "{急|きゅう}に{行|い}けなくなってしまって、すみません。",
+      "english": "Sorry, something’s come up and I can’t make it.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{急|きゅう}に",
+          "w": "w-kyuuni"
+        },
+        {
+          "t": "{行|い}けなくなってしまって、",
+          "w": "w-iku"
+        },
+        {
+          "t": "すみません。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-58.mp3",
+      "tags": ["plans"],
+      "difficulty": 4
+    },
+    {
+      "id": "s-59",
+      "japanese": "駅に着いたら、連絡してください。",
+      "furigana": "{駅|えき}に{着|つ}いたら、{連絡|れんらく}してください。",
+      "english": "Get in touch when you get to the station.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{駅|えき}に",
+          "w": "w-eki"
+        },
+        {
+          "t": "{着|つ}いたら、",
+          "w": "w-tsuku"
+        },
+        {
+          "t": "{連絡|れんらく}してください。",
+          "w": "w-renraku"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-59.mp3",
+      "tags": ["plans"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-60",
+      "japanese": "土曜日は都合が悪いので、日曜日はどうですか。",
+      "furigana": "{土曜日|どようび}は{都合|つごう}が{悪|わる}いので、{日曜日|にちようび}はどうですか。",
+      "english": "Saturday’s no good for me, so how about Sunday?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{土曜日|どようび}は"
+        },
+        {
+          "t": "{都合|つごう}が{悪|わる}いので、"
+        },
+        {
+          "t": "{日曜日|にちようび}は"
+        },
+        {
+          "t": "どうですか。",
+          "w": "w-dou"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-60.mp3",
+      "tags": ["plans"],
+      "difficulty": 4
+    },
+    {
+      "id": "s-61",
+      "japanese": "何時ごろ会えそうですか。",
+      "furigana": "{何時|なんじ}ごろ{会|あ}えそうですか。",
+      "english": "Around what time do you think we can meet?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{何時|なんじ}ごろ"
+        },
+        {
+          "t": "{会|あ}えそうですか。",
+          "w": "w-au"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-61.mp3",
+      "tags": ["plans"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-62",
+      "japanese": "先に行っててください。すぐ追いかけます。",
+      "furigana": "{先|さき}に{行|い}っててください。すぐ{追|お}いかけます。",
+      "english": "Go on ahead. I’ll catch you up.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{先|さき}に"
+        },
+        {
+          "t": "{行|い}っててください。",
+          "w": "w-iku"
+        },
+        {
+          "t": "すぐ",
+          "w": "w-sugu"
+        },
+        {
+          "t": "{追|お}いかけます。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-62.mp3",
+      "tags": ["plans"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-63",
+      "japanese": "乗り換えはどこでしたらいいですか。",
+      "furigana": "{乗|の}り{換|か}えはどこでしたらいいですか。",
+      "english": "Where should I change trains?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{乗|の}り{換|か}えは",
+          "w": "w-norikae"
+        },
+        {
+          "t": "どこで",
+          "w": "w-doko"
+        },
+        {
+          "t": "したらいいですか。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-63.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-64",
+      "japanese": "今夜、二人で泊まれる部屋はありますか。",
+      "furigana": "{今夜|こんや}、{二人|ふたり}で{泊|と}まれる{部屋|へや}はありますか。",
+      "english": "Do you have a room for two tonight?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{今夜|こんや}、"
+        },
+        {
+          "t": "{二人|ふたり}で"
+        },
+        {
+          "t": "{泊|と}まれる",
+          "w": "w-tomaru"
+        },
+        {
+          "t": "{部屋|へや}は",
+          "w": "w-heya"
+        },
+        {
+          "t": "ありますか。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-64.mp3",
+      "tags": ["travel"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-65",
+      "japanese": "近くに薬局はありますか。",
+      "furigana": "{近|ちか}くに{薬局|やっきょく}はありますか。",
+      "english": "Is there a pharmacy nearby?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{近|ちか}くに",
+          "w": "w-chikaku"
+        },
+        {
+          "t": "{薬局|やっきょく}は",
+          "w": "w-yakkyoku"
+        },
+        {
+          "t": "ありますか。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-65.mp3",
+      "tags": ["health"],
+      "difficulty": 2
+    },
+    {
+      "id": "s-66",
+      "japanese": "昨日から熱があって、喉も痛いんです。",
+      "furigana": "{昨日|きのう}から{熱|ねつ}があって、{喉|のど}も{痛|いた}いんです。",
+      "english": "I’ve had a fever since yesterday, and a sore throat too.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{昨日|きのう}から",
+          "w": "w-kinou"
+        },
+        {
+          "t": "{熱|ねつ}があって、",
+          "w": "w-netsu"
+        },
+        {
+          "t": "{喉|のど}も",
+          "w": "w-nodo"
+        },
+        {
+          "t": "{痛|いた}いんです。",
+          "w": "w-itai"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-66.mp3",
+      "tags": ["health"],
+      "difficulty": 3
+    }
+  ]
+}

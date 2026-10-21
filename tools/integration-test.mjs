@@ -74,35 +74,45 @@ const casual = content.categories.find((c) => c.id === 'casual');
 check('the casual set is casual, each with its polite version',
   casual?.phrases.length > 30 && casual.phrases.every((p) => p.register === 'casual' && p.polite?.target && p.polite.audio),
   `${casual?.phrases.length} phrases`);
-check('…while the other categories stay polite',
-  content.categories.filter((c) => c.id !== 'casual').every((c) => c.phrases.every((p) => p.register === 'polite')));
+check('…while elsewhere a phrase is polite, or casual with its polite version beside it',
+  content.categories.filter((c) => c.id !== 'casual').every((c) => c.phrases.every((p) =>
+    p.register === 'polite' || (p.register === 'casual' && p.polite?.target && p.polite.audio))));
 
 /* ---------- 2. placement quiz ---------- */
 
 console.log('\n2. Placement quiz (§6a)');
 
 const items = await quiz.buildPlacementSet();
+// Placement samples the levels that say so: First steps and Basic, not Intermediate (README §7.10).
+const { sampled } = await import('../js/levels.js');
+const sampledCats = content.categories.filter((c) => sampled(content, c.level));
+const sampledSets = content.characterSets.filter((x) => sampled(content, x.level));
 const phraseItems = items.filter((i) => i.kind !== 'character');
 const charItems = items.filter((i) => i.kind === 'character');
 
 check('quiz pulls two phrase cards per category (§6a, A5)',
-  phraseItems.length === 2 * content.categories.length, `${phraseItems.length} phrase cards`);
+  phraseItems.length === 2 * sampledCats.length, `${phraseItems.length} phrase cards`);
 check('quiz also samples two characters per set',
-  charItems.length === 2 * content.characterSets.length, `${charItems.length} character cards`);
+  charItems.length === 2 * sampledSets.length, `${charItems.length} character cards`);
+check('…from First steps and Basic only, though Intermediate has categories and a kanji set',
+  sampledCats.length < content.categories.length && sampledSets.length < content.characterSets.length &&
+    items.every((i) => content.byCategory.get(i.categoryId)?.level !== 'intermediate' &&
+      content.characterSets.find((x) => x.id === i.categoryId)?.level !== 'intermediate'),
+  `${sampledCats.length} of ${content.categories.length} categories, ${sampledSets.length} of ${content.characterSets.length} sets`);
 
 const covered = new Set(phraseItems.map((i) => i.categoryId));
-check('quiz spans every phrase category', covered.size === content.categories.length, `${covered.size} covered`);
+check('quiz spans every phrase category it samples', covered.size === sampledCats.length, `${covered.size} covered`);
 
 const charCovered = new Set(charItems.map((i) => i.categoryId));
-check('quiz spans every character set', charCovered.size === content.characterSets.length, [...charCovered].join(', '));
+check('quiz spans every character set it samples', charCovered.size === sampledSets.length, [...charCovered].join(', '));
 
 check('quiz samples both ends of each category',
-  content.categories.every((cat) => {
+  sampledCats.every((cat) => {
     const picks = items.filter((i) => i.categoryId === cat.id);
     return picks.length === 2 && picks[0].difficulty <= picks[1].difficulty;
   }));
 check('quiz samples both ends of each character set',
-  content.characterSets.every((set) => {
+  sampledSets.every((set) => {
     const picks = items.filter((i) => i.categoryId === set.id);
     return picks.length === 2 && picks[0].difficulty <= picks[1].difficulty;
   }));
@@ -120,7 +130,7 @@ for (const item of items) {
 const result = await quiz.applyPlacement(items, answers);
 check('placement is recorded as done', result.done === true);
 check('scores computed for every category and character set',
-  Object.keys(result.perCategory).length === content.categories.length + content.characterSets.length,
+  Object.keys(result.perCategory).length === sampledCats.length + sampledSets.length,
   `${Object.keys(result.perCategory).length} buckets`);
 check('strong category scores high', result.perCategory.greetings.score === 1, String(result.perCategory.greetings.score));
 check('weak category scores low', result.perCategory.airport.score < 0.5, String(result.perCategory.airport.score));
@@ -243,7 +253,7 @@ console.log('\n7. Scenario dialogue trees');
 
 const { loadScenario, scenariosFor } = await import('../js/content.js');
 
-check('scenarios are listed in the manifest', (content.manifest.scenarios || []).length === 6,
+check('scenarios are listed in the manifest', (content.manifest.scenarios || []).length === 13,
   `${(content.manifest.scenarios || []).length} scenarios`);
 
 for (const entry of content.manifest.scenarios || []) {
@@ -761,6 +771,32 @@ check('a learner from before levels gets the highest level among the decks they 
   })());
 const upTo = levelsMod.levelsUpTo(content, 'first-steps');
 check('levels up to one are that level and the ones below it', upTo.has('first-steps') && !upTo.has('basic'));
+
+// Intermediate (v19): the third level, which placement doesn't sample.
+check('Japanese has a third level, Intermediate, after Basic, and placement doesn\'t sample it',
+  content.levels.map((l) => l.id).join() === 'first-steps,basic,intermediate' &&
+    levelsMod.levelAfter(content, 'basic')?.id === 'intermediate' && !levelsMod.sampled(content, 'intermediate') &&
+    levelsMod.sampled(content, 'basic'));
+check('…with decks, phrases and lessons of its own, and three starters',
+  levelsMod.addableIn(content, 'intermediate').length === 18 && levelsMod.lessonsIn(content, 'intermediate').length === 26 &&
+    levelsMod.startersIn(content, 'intermediate').map((d) => d.id).join() === 'words-more-verbs,aizuchi,words-reactions',
+  levelsMod.startersIn(content, 'intermediate').map((d) => d.id).join());
+const jaListening = (await import('../js/listening.js')).listeningItems;
+const heardAt = (level) => jaListening(content.listening.filter((x) => levelsMod.levelsUpTo(content, level).has(x.level)));
+check('Japanese listening: nothing at First steps, the sound pairs at Basic, and the lines said back from Intermediate',
+  heardAt('first-steps').length === 0 &&
+    heardAt('basic').length === 30 && heardAt('basic').every((i) => i.kind === 'contrast') &&
+    heardAt('intermediate').filter((i) => i.kind === 'reply').length === 32,
+  `${heardAt('basic').length} at Basic, ${heardAt('intermediate').length} at Intermediate`);
+const jaReply = heardAt('intermediate').find((i) => i.id === 'lr-01');
+check('a Japanese line said back has furigana, and its reply is in the course\'s own fields',
+  jaReply?.ruby?.some((seg) => seg.r) && jaReply.meaning === 'Do you have a points card?' &&
+    jaReply.reply?.target === 'いいえ、持っていません。' && jaReply.reply.ruby?.some((seg) => seg.r === 'も') && jaReply.reply.meaning === 'No, I don’t.',
+  JSON.stringify(jaReply?.reply?.ruby));
+const interStarters = await deck.moveToLevel('intermediate');
+check('moving up to Intermediate puts its starters in study',
+  (await deck.getLevel()) === 'intermediate' && interStarters.length === 3, interStarters.map((d) => d.id).join(', '));
+await deck.saveSettings({ level: 'basic' });
 
 /* ---------- 12. a second course ---------- */
 

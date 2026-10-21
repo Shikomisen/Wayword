@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-sou",
+  "connector": "〜そう",
+  "gloss": "looks (like it will)",
+  "title": "〜そう — looks tasty, looks like rain",
+  "pattern": "い-adjective without い / な-adjective / ます form without ます + そう(だ)",
+  "explanation": "そう after an adjective or a verb says how something looks: おいしそう — looks delicious; {高|たか}そう — looks expensive; {雨|あめ}が{降|ふ}りそう — looks like it’s going to rain. Drop the い of an い-adjective (おいし + そう), or the ます of a verb ({降|ふ}ります → {降|ふ}りそう). いい is irregular: よさそう.",
+  "natural": "Reacting to what you see: わあ、{楽|たの}しそう！ — oh, that looks fun!",
+  "stiff": "Watch out for かわいそう: it means “poor thing”, not “looks cute”. For what you plainly see, like a colour, just say it: {赤|あか}いね.",
+  "examples": [
+    {
+      "id": "gx-sou-1",
+      "japanese": "このケーキ、甘そう。",
+      "furigana": "この{ケーキ|けーき}、{甘|あま}そう。",
+      "english": "This cake looks sweet.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "この{ケーキ|けーき}、"
+        },
+        {
+          "t": "{甘|あま}そう。",
+          "w": "w-amai"
+        }
+      ],
+      "gap": {
+        "before": "この{ケーキ|けーき}、{甘|あま}",
+        "answer": "そう",
+        "after": "。",
+        "options": [
+          "そう",
+          "よう",
+          "らしい"
+        ],
+        "why": "How it looks: drop the い, add そう."
+      },
+      "audio": "audio/ja/grammar/gx-sou-1.mp3",
+      "tags": [
+        "grammar",
+        "sou"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-sou-2",
+      "japanese": "雨が降りそうだね。",
+      "furigana": "{雨|あめ}が{降|ふ}りそうだね。",
+      "english": "Looks like it’s going to rain.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{雨|あめ}が",
+          "w": "w-ame"
+        },
+        {
+          "t": "{降|ふ}りそうだね。",
+          "w": "w-furu"
+        }
+      ],
+      "gap": {
+        "before": "{雨|あめ}が{降|ふ}り",
+        "answer": "そう",
+        "after": "だね。",
+        "options": [
+          "そう",
+          "よう",
+          "たい"
+        ],
+        "why": "About to happen, by the look of it: 降りそう."
+      },
+      "audio": "audio/ja/grammar/gx-sou-2.mp3",
+      "tags": [
+        "grammar",
+        "sou"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-sou-3",
+      "japanese": "その仕事、大変そうですね。",
+      "furigana": "その{仕事|しごと}、{大変|たいへん}そうですね。",
+      "english": "That job sounds tough.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "その{仕事|しごと}、",
+          "w": "w-shigoto"
+        },
+        {
+          "t": "{大変|たいへん}そうですね。",
+          "w": "w-taihen"
+        }
+      ],
+      "gap": {
+        "before": "その{仕事|しごと}、{大変|たいへん}",
+        "answer": "そう",
+        "after": "ですね。",
+        "options": [
+          "そう",
+          "な",
+          "らしい"
+        ],
+        "why": "A な-adjective takes そう straight on: 大変そう."
+      },
+      "audio": "audio/ja/grammar/gx-sou-3.mp3",
+      "tags": [
+        "grammar",
+        "sou"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-sou-4",
+      "japanese": "この店、よさそうだね。",
+      "furigana": "この{店|みせ}、よさそうだね。",
+      "english": "This place looks good.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "この{店|みせ}、",
+          "w": "w-mise"
+        },
+        {
+          "t": "よさそうだね。",
+          "w": "w-ii"
+        }
+      ],
+      "gap": {
+        "before": "この{店|みせ}、",
+        "answer": "よさそう",
+        "after": "だね。",
+        "options": [
+          "よさそう",
+          "いいそう",
+          "よそう"
+        ],
+        "why": "いい is irregular: よさそう."
+      },
+      "audio": "audio/ja/grammar/gx-sou-4.mp3",
+      "tags": [
+        "grammar",
+        "sou"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

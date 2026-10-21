@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-nakereba",
+  "connector": "〜なければ",
+  "gloss": "must; don’t have to",
+  "title": "〜なければならない・〜なくてもいい — must, needn’t",
+  "pattern": "ない form: 〜なければならない (must) / 〜なくてもいい (don’t have to)",
+  "explanation": "Take the ない form and swap ない for なければならない: {行|い}かなければならない — I have to go. In conversation it shrinks to なきゃ or なくちゃ: もう{帰|かえ}らなきゃ — I’ve got to go home. “Don’t have to” is なくてもいい: {来|こ}なくてもいいよ — you don’t need to come.",
+  "natural": "なきゃ is everywhere in casual speech: {明日|あした}{早|はや}いから、もう{寝|ね}なきゃ.",
+  "stiff": "なければなりません is formal and heavy for chat. なきゃ, なくちゃ or ないといけない sound natural.",
+  "examples": [
+    {
+      "id": "gx-nakereba-1",
+      "japanese": "明日は早く起きなければなりません。",
+      "furigana": "{明日|あした}は{早|はや}く{起|お}きなければなりません。",
+      "english": "I have to get up early tomorrow.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{早|はや}く",
+          "w": "w-hayai"
+        },
+        {
+          "t": "{起|お}きなければなりません。",
+          "w": "w-okiru"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}は{早|はや}く{起|お}き",
+        "answer": "なければなりません",
+        "after": "。",
+        "options": [
+          "なければなりません",
+          "なくてもいいです",
+          "てはいけません"
+        ],
+        "why": "Must: なければならない."
+      },
+      "audio": "audio/ja/grammar/gx-nakereba-1.mp3",
+      "tags": [
+        "grammar",
+        "nakereba"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-nakereba-2",
+      "japanese": "もう帰らなきゃ。",
+      "furigana": "もう{帰|かえ}らなきゃ。",
+      "english": "I’ve got to go home now.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "もう",
+          "w": "w-mou"
+        },
+        {
+          "t": "{帰|かえ}らなきゃ。",
+          "w": "w-kaeru"
+        }
+      ],
+      "gap": {
+        "before": "もう{帰|かえ}ら",
+        "answer": "なきゃ",
+        "after": "。",
+        "options": [
+          "なきゃ",
+          "なくてもいい",
+          "ないで"
+        ],
+        "why": "Casual “must”: なきゃ."
+      },
+      "audio": "audio/ja/grammar/gx-nakereba-2.mp3",
+      "tags": [
+        "grammar",
+        "nakereba"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-nakereba-3",
+      "japanese": "予約しなくてもいいですよ。",
+      "furigana": "{予約|よやく}しなくてもいいですよ。",
+      "english": "You don’t need to book.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{予約|よやく}しなくても",
+          "w": "w-yoyaku"
+        },
+        {
+          "t": "いいですよ。"
+        }
+      ],
+      "gap": {
+        "before": "{予約|よやく}し",
+        "answer": "なくても",
+        "after": "いいですよ。",
+        "options": [
+          "なくても",
+          "なければ",
+          "ないで"
+        ],
+        "why": "Needn’t: なくてもいい."
+      },
+      "audio": "audio/ja/grammar/gx-nakereba-3.mp3",
+      "tags": [
+        "grammar",
+        "nakereba"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-nakereba-4",
+      "japanese": "薬を毎日飲まないといけない。",
+      "furigana": "{薬|くすり}を{毎日|まいにち}{飲|の}まないといけない。",
+      "english": "I have to take medicine every day.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{薬|くすり}を",
+          "w": "w-kusuri"
+        },
+        {
+          "t": "{毎日|まいにち}",
+          "w": "w-mainichi"
+        },
+        {
+          "t": "{飲|の}まないといけない。",
+          "w": "w-nomu"
+        }
+      ],
+      "gap": {
+        "before": "{薬|くすり}を{毎日|まいにち}{飲|の}まないと",
+        "answer": "いけない",
+        "after": "。",
+        "options": [
+          "いけない",
+          "いい",
+          "できない"
+        ],
+        "why": "ないといけない: “must”, in everyday speech."
+      },
+      "audio": "audio/ja/grammar/gx-nakereba-4.mp3",
+      "tags": [
+        "grammar",
+        "nakereba"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

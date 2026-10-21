@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "id": "plans",
+  "title": "Plans & Invitations",
+  "order": 13,
+  "description": "Suggesting, inviting, saying yes, and saying no without saying no: making plans with friends and colleagues.",
+  "phrases": [
+    {
+      "id": "pla-01",
+      "japanese": "今度、一緒に飲みに行きませんか",
+      "furigana": [
+        {
+          "b": "今度",
+          "r": "こんど"
+        },
+        {
+          "b": "、"
+        },
+        {
+          "b": "一緒",
+          "r": "いっしょ"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "飲",
+          "r": "の"
+        },
+        {
+          "b": "みに"
+        },
+        {
+          "b": "行",
+          "r": "い"
+        },
+        {
+          "b": "きませんか"
+        }
+      ],
+      "romaji": "kondo, issho ni nomi ni ikimasen ka",
+      "english": "Shall we go for a drink together some time?",
+      "registerNotes": "The classic invitation. ませんか (won’t you?) leaves them room to say no, which is what makes it polite.",
+      "audio": "audio/ja/pla-01.mp3",
+      "tags": [
+        "inviting",
+        "essential"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-02",
+      "register": "casual",
+      "japanese": "週末、空いてる？",
+      "furigana": [
+        {
+          "b": "週末",
+          "r": "しゅうまつ"
+        },
+        {
+          "b": "、"
+        },
+        {
+          "b": "空",
+          "r": "あ"
+        },
+        {
+          "b": "いてる？"
+        }
+      ],
+      "romaji": "shūmatsu, aiteru?",
+      "english": "Are you free at the weekend?",
+      "polite": {
+        "japanese": "週末は空いていますか",
+        "furigana": [
+          {
+            "b": "週末",
+            "r": "しゅうまつ"
+          },
+          {
+            "b": "は"
+          },
+          {
+            "b": "空",
+            "r": "あ"
+          },
+          {
+            "b": "いていますか"
+          }
+        ],
+        "romaji": "shūmatsu wa aite imasu ka?",
+        "audio": "audio/ja/pla-02-polite.mp3"
+      },
+      "registerNotes": "Checking before you invite. 空いてる is literally “is it empty?”: is your schedule open?",
+      "audio": "audio/ja/pla-02.mp3",
+      "tags": [
+        "inviting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-03",
+      "register": "casual",
+      "japanese": "いいね、行こう",
+      "furigana": [
+        {
+          "b": "いいね、"
+        },
+        {
+          "b": "行",
+          "r": "い"
+        },
+        {
+          "b": "こう"
+        }
+      ],
+      "romaji": "ii ne, ikō",
+      "english": "Sounds good, let’s go.",
+      "polite": {
+        "japanese": "いいですね、行きましょう",
+        "furigana": [
+          {
+            "b": "いいですね、"
+          },
+          {
+            "b": "行",
+            "r": "い"
+          },
+          {
+            "b": "きましょう"
+          }
+        ],
+        "romaji": "ii desu ne, ikimashō",
+        "audio": "audio/ja/pla-03-polite.mp3"
+      },
+      "registerNotes": "Saying yes, warmly. The polite form is いいですね、行きましょう.",
+      "audio": "audio/ja/pla-03.mp3",
+      "tags": [
+        "saying yes"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-04",
+      "register": "casual",
+      "japanese": "何時にする？",
+      "furigana": [
+        {
+          "b": "何時",
+          "r": "なんじ"
+        },
+        {
+          "b": "にする？"
+        }
+      ],
+      "romaji": "nanji ni suru?",
+      "english": "What time shall we make it?",
+      "polite": {
+        "japanese": "何時にしましょうか",
+        "furigana": [
+          {
+            "b": "何時",
+            "r": "なんじ"
+          },
+          {
+            "b": "にしましょうか"
+          }
+        ],
+        "romaji": "nanji ni shimashō ka?",
+        "audio": "audio/ja/pla-04-polite.mp3"
+      },
+      "registerNotes": "Settling the time. にする means “decide on”: 何にする？ is “what are you having?”.",
+      "audio": "audio/ja/pla-04.mp3",
+      "tags": [
+        "arranging"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-05",
+      "japanese": "どこで待ち合わせしますか",
+      "furigana": [
+        {
+          "b": "どこで"
+        },
+        {
+          "b": "待",
+          "r": "ま"
+        },
+        {
+          "b": "ち"
+        },
+        {
+          "b": "合",
+          "r": "あ"
+        },
+        {
+          "b": "わせしますか"
+        }
+      ],
+      "romaji": "doko de machiawase shimasu ka",
+      "english": "Where shall we meet?",
+      "registerNotes": "待ち合わせ is meeting up at an agreed place. Japanese friends usually fix an exact spot, like a station exit.",
+      "audio": "audio/ja/pla-05.mp3",
+      "tags": [
+        "arranging"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-06",
+      "japanese": "駅の改札で会いましょう",
+      "furigana": [
+        {
+          "b": "駅",
+          "r": "えき"
+        },
+        {
+          "b": "の"
+        },
+        {
+          "b": "改札",
+          "r": "かいさつ"
+        },
+        {
+          "b": "で"
+        },
+        {
+          "b": "会",
+          "r": "あ"
+        },
+        {
+          "b": "いましょう"
+        }
+      ],
+      "romaji": "eki no kaisatsu de aimashō",
+      "english": "Let’s meet at the station ticket gates.",
+      "registerNotes": "The most common meeting place in Japan. Big stations have several gates, so name one.",
+      "audio": "audio/ja/pla-06.mp3",
+      "tags": [
+        "arranging"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-07",
+      "japanese": "その日はちょっと…",
+      "furigana": [
+        {
+          "b": "その"
+        },
+        {
+          "b": "日",
+          "r": "ひ"
+        },
+        {
+          "b": "はちょっと…"
+        }
+      ],
+      "romaji": "sono hi wa chotto",
+      "english": "That day’s a bit…",
+      "registerNotes": "The polite no. Trail off and let ちょっと do the work; giving a reason is optional, and a flat no sounds harsh.",
+      "audio": "audio/ja/pla-07.mp3",
+      "tags": [
+        "saying no",
+        "essential"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-08",
+      "register": "casual",
+      "japanese": "残念だけど、また今度",
+      "furigana": [
+        {
+          "b": "残念",
+          "r": "ざんねん"
+        },
+        {
+          "b": "だけど、また"
+        },
+        {
+          "b": "今度",
+          "r": "こんど"
+        }
+      ],
+      "romaji": "zannen dakedo, mata kondo",
+      "english": "Shame, but maybe next time.",
+      "polite": {
+        "japanese": "残念ですが、また今度お願いします",
+        "furigana": [
+          {
+            "b": "残念",
+            "r": "ざんねん"
+          },
+          {
+            "b": "ですが、また"
+          },
+          {
+            "b": "今度",
+            "r": "こんど"
+          },
+          {
+            "b": "お"
+          },
+          {
+            "b": "願",
+            "r": "ねが"
+          },
+          {
+            "b": "いします"
+          }
+        ],
+        "romaji": "zannen desu ga, mata kondo onegai shimasu",
+        "audio": "audio/ja/pla-08-polite.mp3"
+      },
+      "registerNotes": "Turning down an invitation while keeping the door open.",
+      "audio": "audio/ja/pla-08.mp3",
+      "tags": [
+        "saying no"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-09",
+      "japanese": "少し遅れるかもしれません",
+      "furigana": [
+        {
+          "b": "少",
+          "r": "すこ"
+        },
+        {
+          "b": "し"
+        },
+        {
+          "b": "遅",
+          "r": "おく"
+        },
+        {
+          "b": "れるかもしれません"
+        }
+      ],
+      "romaji": "sukoshi okureru kamo shiremasen",
+      "english": "I might be a little late.",
+      "registerNotes": "Japanese friends expect a message even for five minutes late. With friends: ちょっと遅れるかも.",
+      "audio": "audio/ja/pla-09.mp3",
+      "tags": [
+        "arranging"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-10",
+      "register": "casual",
+      "japanese": "着いたら連絡するね",
+      "furigana": [
+        {
+          "b": "着",
+          "r": "つ"
+        },
+        {
+          "b": "いたら"
+        },
+        {
+          "b": "連絡",
+          "r": "れんらく"
+        },
+        {
+          "b": "するね"
+        }
+      ],
+      "romaji": "tsuitara renraku suru ne",
+      "english": "I’ll message you when I get there.",
+      "polite": {
+        "japanese": "着いたら連絡します",
+        "furigana": [
+          {
+            "b": "着",
+            "r": "つ"
+          },
+          {
+            "b": "いたら"
+          },
+          {
+            "b": "連絡",
+            "r": "れんらく"
+          },
+          {
+            "b": "します"
+          }
+        ],
+        "romaji": "tsuitara renraku shimasu",
+        "audio": "audio/ja/pla-10-polite.mp3"
+      },
+      "registerNotes": "Very common when meeting up. 連絡 covers a call, a text or a LINE message.",
+      "audio": "audio/ja/pla-10.mp3",
+      "tags": [
+        "arranging"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-11",
+      "japanese": "楽しみにしています",
+      "furigana": [
+        {
+          "b": "楽",
+          "r": "たの"
+        },
+        {
+          "b": "しみにしています"
+        }
+      ],
+      "romaji": "tanoshimi ni shite imasu",
+      "english": "I’m looking forward to it.",
+      "registerNotes": "Said once a plan is made, and again the day before. With friends: 楽しみ！",
+      "audio": "audio/ja/pla-11.mp3",
+      "tags": [
+        "saying yes",
+        "essential"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-12",
+      "register": "casual",
+      "japanese": "誘ってくれてありがとう",
+      "furigana": [
+        {
+          "b": "誘",
+          "r": "さそ"
+        },
+        {
+          "b": "ってくれてありがとう"
+        }
+      ],
+      "romaji": "sasotte kurete arigatō",
+      "english": "Thanks for inviting me.",
+      "polite": {
+        "japanese": "誘ってくださってありがとうございます",
+        "furigana": [
+          {
+            "b": "誘",
+            "r": "さそ"
+          },
+          {
+            "b": "ってくださってありがとうございます"
+          }
+        ],
+        "romaji": "sasotte kudasatte arigatō gozaimasu",
+        "audio": "audio/ja/pla-12-polite.mp3"
+      },
+      "registerNotes": "Thanks for the invitation itself, whether you can come or not. The polite form uses くださって.",
+      "audio": "audio/ja/pla-12.mp3",
+      "tags": [
+        "saying yes",
+        "saying no"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

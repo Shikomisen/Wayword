@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-tewaikenai",
+  "connector": "〜てはいけない",
+  "gloss": "must not",
+  "title": "〜てはいけない・〜ちゃだめ — you mustn’t",
+  "pattern": "verb て form + はいけない (casual: 〜ちゃだめ, 〜じゃだめ)",
+  "explanation": "てはいけない says something isn’t allowed: ここでたばこを{吸|す}ってはいけません — you mustn’t smoke here. Signs and rules use it. In conversation it’s softer as ちゃだめ: {触|さわ}っちゃだめ — don’t touch.",
+  "natural": "Rules and warnings, and parents to children: {走|はし}っちゃだめだよ — no running!",
+  "stiff": "To an adult, てはいけません sounds like a teacher. Asking is gentler: 〜ないでください, or ここではご{遠慮|えんりょ}ください.",
+  "examples": [
+    {
+      "id": "gx-tewaikenai-1",
+      "japanese": "ここで写真を撮ってはいけません。",
+      "furigana": "ここで{写真|しゃしん}を{撮|と}ってはいけません。",
+      "english": "You mustn’t take photos here.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "ここで",
+          "w": "w-koko"
+        },
+        {
+          "t": "{写真|しゃしん}を",
+          "w": "w-shashin"
+        },
+        {
+          "t": "{撮|と}ってはいけません。"
+        }
+      ],
+      "gap": {
+        "before": "ここで{写真|しゃしん}を{撮|と}って",
+        "answer": "はいけません",
+        "after": "。",
+        "options": [
+          "はいけません",
+          "もいいです",
+          "ください"
+        ],
+        "why": "Not allowed: てはいけない."
+      },
+      "audio": "audio/ja/grammar/gx-tewaikenai-1.mp3",
+      "tags": [
+        "grammar",
+        "tewaikenai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tewaikenai-2",
+      "japanese": "温泉にタオルを入れてはいけません。",
+      "furigana": "{温泉|おんせん}に{タオル|たおる}を{入|い}れてはいけません。",
+      "english": "You mustn’t put your towel in the hot spring water.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{温泉|おんせん}に",
+          "w": "w-onsen"
+        },
+        {
+          "t": "{タオル|たおる}を"
+        },
+        {
+          "t": "{入|い}れてはいけません。"
+        }
+      ],
+      "gap": {
+        "before": "{温泉|おんせん}に{タオル|たおる}を{入|い}れて",
+        "answer": "は",
+        "after": "いけません。",
+        "options": [
+          "は",
+          "も",
+          "を"
+        ],
+        "why": "て + は + いけない."
+      },
+      "audio": "audio/ja/grammar/gx-tewaikenai-2.mp3",
+      "tags": [
+        "grammar",
+        "tewaikenai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tewaikenai-3",
+      "japanese": "危ないから、触っちゃだめ。",
+      "furigana": "{危|あぶ}ないから、{触|さわ}っちゃだめ。",
+      "english": "It’s dangerous, so don’t touch.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{危|あぶ}ないから、",
+          "w": "w-abunai"
+        },
+        {
+          "t": "{触|さわ}っちゃ"
+        },
+        {
+          "t": "だめ。"
+        }
+      ],
+      "gap": {
+        "before": "{危|あぶ}ないから、{触|さわ}っちゃ",
+        "answer": "だめ",
+        "after": "。",
+        "options": [
+          "だめ",
+          "いい",
+          "ください"
+        ],
+        "why": "Casual “don’t”: ちゃだめ."
+      },
+      "audio": "audio/ja/grammar/gx-tewaikenai-3.mp3",
+      "tags": [
+        "grammar",
+        "tewaikenai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tewaikenai-4",
+      "japanese": "美術館の中で食べてはいけません。",
+      "furigana": "{美術館|びじゅつかん}の{中|なか}で{食|た}べてはいけません。",
+      "english": "You mustn’t eat inside the museum.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{美術館|びじゅつかん}の"
+        },
+        {
+          "t": "{中|なか}で"
+        },
+        {
+          "t": "{食|た}べてはいけません。",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "{美術館|びじゅつかん}の{中|なか}で{食|た}べて",
+        "answer": "はいけません",
+        "after": "。",
+        "options": [
+          "はいけません",
+          "はいいです",
+          "もいけません"
+        ],
+        "why": "Not allowed: てはいけません."
+      },
+      "audio": "audio/ja/grammar/gx-tewaikenai-4.mp3",
+      "tags": [
+        "grammar",
+        "tewaikenai"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

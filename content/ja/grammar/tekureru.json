@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-tekureru",
+  "connector": "〜てくれる",
+  "gloss": "do for someone (favours)",
+  "title": "〜てくれる・〜てもらう・〜てあげる — favours",
+  "pattern": "verb て form + くれる / もらう / あげる",
+  "explanation": "Add the giving verbs to a て form and the action becomes a favour. {友達|ともだち}が{手伝|てつだ}ってくれた — a friend (kindly) helped me. {友達|ともだち}に{手伝|てつだ}ってもらった — I got a friend to help. {妹|いもうと}に{教|おし}えてあげた — I taught my sister. Asking: 〜てくれる？ (casual), 〜てもらえますか (polite).",
+  "natural": "てくれる is how Japanese builds thanks into the sentence: {駅|えき}まで{送|おく}ってくれて、ありがとう.",
+  "stiff": "〜てあげる to the person you’re helping can sound like you want credit. Offer instead: {手伝|てつだ}いましょうか.",
+  "examples": [
+    {
+      "id": "gx-tekureru-1",
+      "japanese": "友達が引っ越しを手伝ってくれました。",
+      "furigana": "{友達|ともだち}が{引|ひ}っ{越|こ}しを{手伝|てつだ}ってくれました。",
+      "english": "A friend helped me move.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{友達|ともだち}が",
+          "w": "w-tomodachi"
+        },
+        {
+          "t": "{引|ひ}っ{越|こ}しを",
+          "w": "w-hikkoshi"
+        },
+        {
+          "t": "{手伝|てつだ}ってくれました。",
+          "w": "w-tetsudau"
+        }
+      ],
+      "gap": {
+        "before": "{友達|ともだち}が{引|ひ}っ{越|こ}しを{手伝|てつだ}って",
+        "answer": "くれました",
+        "after": "。",
+        "options": [
+          "くれました",
+          "あげました",
+          "もらいました"
+        ],
+        "why": "Someone did it for me: てくれる."
+      },
+      "audio": "audio/ja/grammar/gx-tekureru-1.mp3",
+      "tags": [
+        "grammar",
+        "tekureru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tekureru-2",
+      "japanese": "駅まで送ってくれて、ありがとう。",
+      "furigana": "{駅|えき}まで{送|おく}ってくれて、ありがとう。",
+      "english": "Thanks for dropping me at the station.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{駅|えき}まで",
+          "w": "w-eki"
+        },
+        {
+          "t": "{送|おく}ってくれて、",
+          "w": "w-okuru"
+        },
+        {
+          "t": "ありがとう。"
+        }
+      ],
+      "gap": {
+        "before": "{駅|えき}まで{送|おく}って",
+        "answer": "くれて",
+        "after": "、ありがとう。",
+        "options": [
+          "くれて",
+          "あげて",
+          "もらって"
+        ],
+        "why": "Thanks for a favour: てくれて、ありがとう."
+      },
+      "audio": "audio/ja/grammar/gx-tekureru-2.mp3",
+      "tags": [
+        "grammar",
+        "tekureru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tekureru-3",
+      "japanese": "ちょっと手伝ってもらえますか。",
+      "furigana": "ちょっと{手伝|てつだ}ってもらえますか。",
+      "english": "Could you help me for a moment?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "ちょっと",
+          "w": "w-chotto"
+        },
+        {
+          "t": "{手伝|てつだ}って",
+          "w": "w-tetsudau"
+        },
+        {
+          "t": "もらえますか。"
+        }
+      ],
+      "gap": {
+        "before": "ちょっと{手伝|てつだ}って",
+        "answer": "もらえますか",
+        "after": "。",
+        "options": [
+          "もらえますか",
+          "くれますか",
+          "あげますか"
+        ],
+        "ok": [
+          "くれますか"
+        ],
+        "note": "くれますか works too, and is a little less formal.",
+        "why": "Asking a favour politely: てもらえますか."
+      },
+      "audio": "audio/ja/grammar/gx-tekureru-3.mp3",
+      "tags": [
+        "grammar",
+        "tekureru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tekureru-4",
+      "japanese": "弟に宿題を教えてあげた。",
+      "furigana": "{弟|おとうと}に{宿題|しゅくだい}を{教|おし}えてあげた。",
+      "english": "I helped my little brother with his homework.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{弟|おとうと}に",
+          "w": "w-otouto"
+        },
+        {
+          "t": "{宿題|しゅくだい}を"
+        },
+        {
+          "t": "{教|おし}えてあげた。"
+        }
+      ],
+      "gap": {
+        "before": "{弟|おとうと}に{宿題|しゅくだい}を{教|おし}えて",
+        "answer": "あげた",
+        "after": "。",
+        "options": [
+          "あげた",
+          "くれた",
+          "もらった"
+        ],
+        "why": "I did it for him: てあげる."
+      },
+      "audio": "audio/ja/grammar/gx-tekureru-4.mp3",
+      "tags": [
+        "grammar",
+        "tekureru"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -206,8 +206,11 @@ export async function loadContent() {
           : (data.items || []).map((x) => ({
               ...normalise(x),
               kind: 'reply',
-              // What the learner could say back: English, with its Japanese.
-              reply: x.reply ? normalise({ [fields.target]: x.reply, [fields.meaning]: x.replyJapanese }) : null,
+              // What the learner could say back: the course's own fields ({ japanese, furigana, english }),
+              // or the English course's flat reply and replyJapanese (README §6.8).
+              reply: x.reply
+                ? normalise(typeof x.reply === 'object' ? x.reply : { [fields.target]: x.reply, [fields.meaning]: x.replyJapanese })
+                : null,
             }));
         return { ...entry, ...data, items, missing: false };
       } catch (err) {

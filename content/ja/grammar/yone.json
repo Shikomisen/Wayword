@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-yone",
+  "connector": "よ・ね",
+  "gloss": "endings: you know, isn’t it, right?",
+  "title": "よ・ね・よね — telling, sharing, checking",
+  "pattern": "sentence + よ (I’m telling you) / ね (we share this) / よね (right?)",
+  "explanation": "These little endings carry the feeling of a conversation. よ tells someone something they may not know: これ、おいしいよ — this is good, you know. ね shares a feeling, or checks you agree: いい{天気|てんき}ですね — lovely day, isn’t it. よね checks something you’re fairly sure of: {明日|あした}、{休|やす}みだよね？ — tomorrow’s a day off, right?",
+  "natural": "ね is the glue of small talk; そうですね (“that’s true”) is the classic reply.",
+  "stiff": "A strong よ to someone above you can sound like a correction. And ね on something only you know, like your own name, sounds odd.",
+  "examples": [
+    {
+      "id": "gx-yone-1",
+      "japanese": "これ、すごくおいしいよ。",
+      "furigana": "これ、すごくおいしいよ。",
+      "english": "This is really good, you know.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "これ、",
+          "w": "w-kore"
+        },
+        {
+          "t": "すごくおいしい"
+        },
+        {
+          "t": "よ。"
+        }
+      ],
+      "gap": {
+        "before": "これ、すごくおいしい",
+        "answer": "よ",
+        "after": "。",
+        "options": [
+          "よ",
+          "ね",
+          "か"
+        ],
+        "why": "Telling them something new: よ."
+      },
+      "audio": "audio/ja/grammar/gx-yone-1.mp3",
+      "tags": [
+        "grammar",
+        "yone"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-yone-2",
+      "japanese": "今日は寒いですね。",
+      "furigana": "{今日|きょう}は{寒|さむ}いですね。",
+      "english": "It’s cold today, isn’t it?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{寒|さむ}いです",
+          "w": "w-samui"
+        },
+        {
+          "t": "ね。"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}は{寒|さむ}いです",
+        "answer": "ね",
+        "after": "。",
+        "options": [
+          "ね",
+          "よ",
+          "か"
+        ],
+        "why": "Sharing what you both feel: ね."
+      },
+      "audio": "audio/ja/grammar/gx-yone-2.mp3",
+      "tags": [
+        "grammar",
+        "yone"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-yone-3",
+      "japanese": "明日、休みだよね？",
+      "furigana": "{明日|あした}、{休|やす}みだよね？",
+      "english": "Tomorrow’s a day off, right?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{明日|あした}、",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{休|やす}みだ",
+          "w": "w-yasumi"
+        },
+        {
+          "t": "よね？"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}、{休|やす}みだ",
+        "answer": "よね",
+        "after": "？",
+        "options": [
+          "よね",
+          "ね",
+          "よ"
+        ],
+        "ok": [
+          "ね"
+        ],
+        "note": "ね works too; よね sounds a little more like you think you’re right.",
+        "why": "Checking what you think you know: よね."
+      },
+      "audio": "audio/ja/grammar/gx-yone-3.mp3",
+      "tags": [
+        "grammar",
+        "yone"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-yone-4",
+      "japanese": "駅はあっちですよ。",
+      "furigana": "{駅|えき}はあっちですよ。",
+      "english": "The station’s that way.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{駅|えき}は",
+          "w": "w-eki"
+        },
+        {
+          "t": "あっちです"
+        },
+        {
+          "t": "よ。"
+        }
+      ],
+      "gap": {
+        "before": "{駅|えき}はあっちです",
+        "answer": "よ",
+        "after": "。",
+        "options": [
+          "よ",
+          "ね",
+          "か"
+        ],
+        "why": "Telling someone what they don’t know: よ."
+      },
+      "audio": "audio/ja/grammar/gx-yone-4.mp3",
+      "tags": [
+        "grammar",
+        "yone"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

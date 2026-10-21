@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ageru",
+  "connector": "あげる・くれる",
+  "gloss": "give and receive",
+  "title": "あげる・くれる・もらう — giving and getting",
+  "pattern": "A は B に あげる (give away) / B が {私|わたし}に くれる (give me) / {私|わたし}は B に もらう (receive)",
+  "explanation": "Japanese picks the verb by direction. あげる is giving outward: {友達|ともだち}にお{土産|みやげ}をあげた. くれる is someone giving to you, or to your side: {母|はは}がくれた — my mum gave it to me. もらう is receiving, seen from the receiver: {友達|ともだち}にもらった — I got it from a friend. The same gift can be told with くれた or もらった.",
+  "natural": "Talking about presents: これ、{彼女|かのじょ}がくれたんだ — my girlfriend gave me this.",
+  "stiff": "あげる to someone above you can sound condescending. With them, use さしあげる, or simply say ありがとうございます when you receive.",
+  "examples": [
+    {
+      "id": "gx-ageru-1",
+      "japanese": "友達にお土産をあげました。",
+      "furigana": "{友達|ともだち}にお{土産|みやげ}をあげました。",
+      "english": "I gave my friend a souvenir.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{友達|ともだち}に",
+          "w": "w-tomodachi"
+        },
+        {
+          "t": "お{土産|みやげ}を",
+          "w": "w-omiyage"
+        },
+        {
+          "t": "あげました。"
+        }
+      ],
+      "gap": {
+        "before": "{友達|ともだち}にお{土産|みやげ}を",
+        "answer": "あげました",
+        "after": "。",
+        "options": [
+          "あげました",
+          "くれました",
+          "もらいました"
+        ],
+        "why": "From me to someone else: あげる."
+      },
+      "audio": "audio/ja/grammar/gx-ageru-1.mp3",
+      "tags": [
+        "grammar",
+        "ageru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ageru-2",
+      "japanese": "この時計は父がくれました。",
+      "furigana": "この{時計|とけい}は{父|ちち}がくれました。",
+      "english": "My father gave me this watch.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{時計|とけい}は",
+          "w": "w-tokei"
+        },
+        {
+          "t": "{父|ちち}が"
+        },
+        {
+          "t": "くれました。"
+        }
+      ],
+      "gap": {
+        "before": "この{時計|とけい}は{父|ちち}が",
+        "answer": "くれました",
+        "after": "。",
+        "options": [
+          "くれました",
+          "あげました",
+          "もらいました"
+        ],
+        "why": "Someone gives to me: くれる."
+      },
+      "audio": "audio/ja/grammar/gx-ageru-2.mp3",
+      "tags": [
+        "grammar",
+        "ageru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ageru-3",
+      "japanese": "誕生日に花をもらった。",
+      "furigana": "{誕生日|たんじょうび}に{花|はな}をもらった。",
+      "english": "I got flowers for my birthday.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{誕生日|たんじょうび}に",
+          "w": "w-tanjoubi"
+        },
+        {
+          "t": "{花|はな}を"
+        },
+        {
+          "t": "もらった。"
+        }
+      ],
+      "gap": {
+        "before": "{誕生日|たんじょうび}に{花|はな}を",
+        "answer": "もらった",
+        "after": "。",
+        "options": [
+          "もらった",
+          "あげた",
+          "くれた"
+        ],
+        "ok": [
+          "くれた"
+        ],
+        "note": "くれた works too: “someone gave me flowers”. もらった tells it from my side.",
+        "why": "Receiving, from my side: もらう."
+      },
+      "audio": "audio/ja/grammar/gx-ageru-3.mp3",
+      "tags": [
+        "grammar",
+        "ageru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ageru-4",
+      "japanese": "先輩に本をもらいました。",
+      "furigana": "{先輩|せんぱい}に{本|ほん}をもらいました。",
+      "english": "I got a book from my senior.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{先輩|せんぱい}に",
+          "w": "w-senpai"
+        },
+        {
+          "t": "{本|ほん}を",
+          "w": "w-hon"
+        },
+        {
+          "t": "もらいました。"
+        }
+      ],
+      "gap": {
+        "before": "{先輩|せんぱい}",
+        "answer": "に",
+        "after": "{本|ほん}をもらいました。",
+        "options": [
+          "に",
+          "が",
+          "を"
+        ],
+        "why": "With もらう, the giver takes に (or から)."
+      },
+      "audio": "audio/ja/grammar/gx-ageru-4.mp3",
+      "tags": [
+        "grammar",
+        "ageru"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

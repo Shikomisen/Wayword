@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ndesu",
+  "connector": "〜んです",
+  "gloss": "explaining: it’s that…",
+  "title": "〜んです — explaining, and asking why",
+  "pattern": "plain form + んです (casual: 〜んだ, 〜の); noun / な-adjective + なんです",
+  "explanation": "んです adds a sense of explanation: there’s a reason or a story behind it. {頭|あたま}が{痛|いた}いんです — (the thing is) I have a headache. Asking with it shows interest: どうしたんですか — what’s wrong? In casual speech it becomes んだ, or の in questions: どうしたの？",
+  "natural": "Explaining why you’re late, why you can’t come, what’s wrong: {電車|でんしゃ}が{遅|おく}れたんです.",
+  "stiff": "Used too much, んです can sound pushy or emotional. For a plain fact with no story, like {学生|がくせい}です, leave it out.",
+  "examples": [
+    {
+      "id": "gx-ndesu-1",
+      "japanese": "すみません、頭が痛いんです。",
+      "furigana": "すみません、{頭|あたま}が{痛|いた}いんです。",
+      "english": "Sorry, I’ve got a headache.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "すみません、"
+        },
+        {
+          "t": "{頭|あたま}が",
+          "w": "w-atama"
+        },
+        {
+          "t": "{痛|いた}いんです。",
+          "w": "w-itai"
+        }
+      ],
+      "gap": {
+        "before": "すみません、{頭|あたま}が{痛|いた}い",
+        "answer": "んです",
+        "after": "。",
+        "options": [
+          "んです",
+          "です",
+          "でした"
+        ],
+        "ok": [
+          "です"
+        ],
+        "note": "痛いです is fine too. んです adds the “that’s why”: the reason you’re saying it.",
+        "why": "Explaining: んです."
+      },
+      "audio": "audio/ja/grammar/gx-ndesu-1.mp3",
+      "tags": [
+        "grammar",
+        "ndesu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ndesu-2",
+      "japanese": "どうしたんですか。",
+      "furigana": "どうしたんですか。",
+      "english": "What’s wrong?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "どう",
+          "w": "w-dou"
+        },
+        {
+          "t": "したんですか。",
+          "w": "w-suru"
+        }
+      ],
+      "gap": {
+        "before": "どうした",
+        "answer": "んですか",
+        "after": "。",
+        "options": [
+          "んですか",
+          "ですか",
+          "ますか"
+        ],
+        "why": "Asking what’s behind it: んですか."
+      },
+      "audio": "audio/ja/grammar/gx-ndesu-2.mp3",
+      "tags": [
+        "grammar",
+        "ndesu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ndesu-3",
+      "japanese": "電車が遅れたんです。",
+      "furigana": "{電車|でんしゃ}が{遅|おく}れたんです。",
+      "english": "The train was late, you see.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{電車|でんしゃ}が",
+          "w": "w-densha"
+        },
+        {
+          "t": "{遅|おく}れたんです。",
+          "w": "w-okureru"
+        }
+      ],
+      "gap": {
+        "before": "{電車|でんしゃ}が{遅|おく}れた",
+        "answer": "んです",
+        "after": "。",
+        "options": [
+          "んです",
+          "です",
+          "ます"
+        ],
+        "why": "Giving the reason: んです."
+      },
+      "audio": "audio/ja/grammar/gx-ndesu-3.mp3",
+      "tags": [
+        "grammar",
+        "ndesu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ndesu-4",
+      "japanese": "明日、休みなんだ。",
+      "furigana": "{明日|あした}、{休|やす}みなんだ。",
+      "english": "I’m off tomorrow, actually.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{明日|あした}、",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{休|やす}みなんだ。",
+          "w": "w-yasumi"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}、{休|やす}み",
+        "answer": "なんだ",
+        "after": "。",
+        "options": [
+          "なんだ",
+          "んだ",
+          "だ"
+        ],
+        "why": "A noun takes な before んだ: 休みなんだ."
+      },
+      "audio": "audio/ja/grammar/gx-ndesu-4.mp3",
+      "tags": [
+        "grammar",
+        "ndesu"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

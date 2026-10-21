@@ -467,6 +467,8 @@ async function connectorsBlock(content, level = null) {
 async function listeningBlock() {
   const { progress, doneToday } = await listeningState();
   const { mastered, total } = progress;
+  // Nothing to hear at the learner's level yet (§7.10): no block.
+  if (!total) return null;
   return el('section', {},
     el('h2', { class: 'section-title' }, t('listening.title')),
     el('a', { class: `row-card listen-today ${doneToday ? 'is-done' : ''}`, href: link('/listening/drill') },
@@ -634,7 +636,7 @@ async function learn(root) {
       (words.length || sentences.length) && categories.length ? el('h2', { class: 'kind-title' }, t('learn.phrases')) : null,
       groups.map((group) => section(group.title, categories.filter((c) => c.group === group.id).map((c) => browseRow(c, s)))),
       section(t('learn.mine'), [mineRow(content)], 'kind-title'),
-      content.features.listening ? section(t('listening.title'), [listeningRow(content, mine)], 'kind-title') : null,
+      content.features.listening ? section(t('listening.title'), [listeningRow(content, mine)].filter(Boolean), 'kind-title') : null,
       // When the tab bar is full, the scenarios live here instead.
       content.features.scenarios && !scenariosTabbed(content)
         ? section(t('learn.scenarios'), [scenariosRow(content)], 'kind-title')
@@ -649,6 +651,7 @@ function listeningRow(content, mine = null) {
   const count = (kind) => sets.filter((x) => x.kind === kind).reduce((n, x) => n + x.items.length, 0);
   const replies = count('replies');
   const words = count('contrasts');
+  if (!replies && !words) return null;
   return el('a', { class: 'row-card', href: link('/listening'), dataset: { section: 'listening' } },
     el('span', { class: 'row-icon' }, '👂'),
     el('span', { class: 'row-body' },

@@ -1,0 +1,688 @@
+{
+  "schemaVersion": 1,
+  "id": "sentences-yourself",
+  "title": "Talking About Yourself",
+  "description": "Experiences, plans, likes and how you’re getting on: the sentences for getting to know someone, and letting them know you.",
+  "items": [
+    {
+      "id": "s-17",
+      "japanese": "日本に来たのは初めてです。",
+      "furigana": "{日本|にほん}に{来|き}たのは{初|はじ}めてです。",
+      "english": "This is my first time in Japan.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本|にほん}に",
+          "w": "w-nihon"
+        },
+        {
+          "t": "{来|き}たのは",
+          "w": "w-kuru"
+        },
+        {
+          "t": "{初|はじ}めてです。",
+          "w": "w-hajimete"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-17.mp3",
+      "tags": ["experience"],
+      "difficulty": 2
+    },
+    {
+      "id": "s-18",
+      "japanese": "子供の頃、日本に住んでいたことがあります。",
+      "furigana": "{子供|こども}の{頃|ころ}、{日本|にほん}に{住|す}んでいたことがあります。",
+      "english": "I lived in Japan for a while as a child.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{子供|こども}の{頃|ころ}、",
+          "w": "w-kodomo"
+        },
+        {
+          "t": "{日本|にほん}に",
+          "w": "w-nihon"
+        },
+        {
+          "t": "{住|す}んでいたことが",
+          "w": "w-sumu"
+        },
+        {
+          "t": "あります。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-18.mp3",
+      "tags": ["experience"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-19",
+      "japanese": "去年、初めて富士山に登りました。",
+      "furigana": "{去年|きょねん}、{初|はじ}めて{富士山|ふじさん}に{登|のぼ}りました。",
+      "english": "Last year I climbed Mount Fuji for the first time.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{去年|きょねん}、",
+          "w": "w-kyonen"
+        },
+        {
+          "t": "{初|はじ}めて",
+          "w": "w-hajimete"
+        },
+        {
+          "t": "{富士山|ふじさん}に"
+        },
+        {
+          "t": "{登|のぼ}りました。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-19.mp3",
+      "tags": ["experience"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-20",
+      "japanese": "高校の時、少し日本語を習ったことがあります。",
+      "furigana": "{高校|こうこう}の{時|とき}、{少|すこ}し{日本語|にほんご}を{習|なら}ったことがあります。",
+      "english": "I learnt a bit of Japanese at high school.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{高校|こうこう}の{時|とき}、"
+        },
+        {
+          "t": "{少|すこ}し"
+        },
+        {
+          "t": "{日本語|にほんご}を",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{習|なら}ったことがあります。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-20.mp3",
+      "tags": ["experience"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-21",
+      "japanese": "彼女とは大学で知り合いました。",
+      "furigana": "{彼女|かのじょ}とは{大学|だいがく}で{知|し}り{合|あ}いました。",
+      "english": "I met my girlfriend at university.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{彼女|かのじょ}とは",
+          "w": "w-kanojo"
+        },
+        {
+          "t": "{大学|だいがく}で"
+        },
+        {
+          "t": "{知|し}り{合|あ}いました。",
+          "w": "w-shiriai"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-21.mp3",
+      "tags": ["experience"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-22",
+      "japanese": "来年は北海道に行ってみたいです。",
+      "furigana": "{来年|らいねん}は{北海道|ほっかいどう}に{行|い}ってみたいです。",
+      "english": "Next year I’d like to try going to Hokkaido.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{来年|らいねん}は",
+          "w": "w-rainen"
+        },
+        {
+          "t": "{北海道|ほっかいどう}に"
+        },
+        {
+          "t": "{行|い}ってみたいです。",
+          "w": "w-iku"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-22.mp3",
+      "tags": ["plans"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-23",
+      "japanese": "週末は友達と温泉に行くつもりです。",
+      "furigana": "{週末|しゅうまつ}は{友達|ともだち}と{温泉|おんせん}に{行|い}くつもりです。",
+      "english": "I’m planning to go to a hot spring with friends at the weekend.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{週末|しゅうまつ}は",
+          "w": "w-shuumatsu"
+        },
+        {
+          "t": "{友達|ともだち}と",
+          "w": "w-tomodachi"
+        },
+        {
+          "t": "{温泉|おんせん}に",
+          "w": "w-onsen"
+        },
+        {
+          "t": "{行|い}くつもりです。",
+          "w": "w-iku"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-23.mp3",
+      "tags": ["plans"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-24",
+      "japanese": "将来は日本で働きたいと思っています。",
+      "furigana": "{将来|しょうらい}は{日本|にほん}で{働|はたら}きたいと{思|おも}っています。",
+      "english": "In the future, I’m thinking I’d like to work in Japan.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{将来|しょうらい}は",
+          "w": "w-shourai"
+        },
+        {
+          "t": "{日本|にほん}で",
+          "w": "w-nihon"
+        },
+        {
+          "t": "{働|はたら}きたいと",
+          "w": "w-hataraku"
+        },
+        {
+          "t": "{思|おも}っています。",
+          "w": "w-omou"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-24.mp3",
+      "tags": ["plans"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-25",
+      "japanese": "実は、来月結婚するんです。",
+      "furigana": "{実|じつ}は、{来月|らいげつ}{結婚|けっこん}するんです。",
+      "english": "Actually, I’m getting married next month.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{実|じつ}は、",
+          "w": "w-jitsuwa"
+        },
+        {
+          "t": "{来月|らいげつ}",
+          "w": "w-raigetsu"
+        },
+        {
+          "t": "{結婚|けっこん}するんです。",
+          "w": "w-kekkon"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-25.mp3",
+      "tags": ["plans"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-26",
+      "japanese": "日本の漫画が読めるようになりたいです。",
+      "furigana": "{日本|にほん}の{漫画|まんが}が{読|よ}めるようになりたいです。",
+      "english": "I want to be able to read Japanese manga.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本|にほん}の",
+          "w": "w-nihon"
+        },
+        {
+          "t": "{漫画|まんが}が"
+        },
+        {
+          "t": "{読|よ}めるように",
+          "w": "w-yomu"
+        },
+        {
+          "t": "なりたいです。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-26.mp3",
+      "tags": ["plans"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-27",
+      "japanese": "寿司は好きですが、納豆はまだ食べられません。",
+      "furigana": "{寿司|すし}は{好|す}きですが、{納豆|なっとう}はまだ{食|た}べられません。",
+      "english": "I like sushi, but I still can’t eat natto.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{寿司|すし}は"
+        },
+        {
+          "t": "{好|す}きですが、",
+          "w": "w-suki"
+        },
+        {
+          "t": "{納豆|なっとう}は"
+        },
+        {
+          "t": "まだ",
+          "w": "w-mada"
+        },
+        {
+          "t": "{食|た}べられません。",
+          "w": "w-taberu"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-27.mp3",
+      "tags": ["likes"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-28",
+      "japanese": "一人で旅行するのが好きです。",
+      "furigana": "{一人|ひとり}で{旅行|りょこう}するのが{好|す}きです。",
+      "english": "I like travelling on my own.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{一人|ひとり}で",
+          "w": "w-hitori"
+        },
+        {
+          "t": "{旅行|りょこう}するのが",
+          "w": "w-ryokou"
+        },
+        {
+          "t": "{好|す}きです。",
+          "w": "w-suki"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-28.mp3",
+      "tags": ["likes"],
+      "difficulty": 2
+    },
+    {
+      "id": "s-29",
+      "japanese": "お酒はあまり強くないんです。",
+      "furigana": "お{酒|さけ}はあまり{強|つよ}くないんです。",
+      "english": "I can’t really hold my drink.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "お{酒|さけ}は",
+          "w": "w-osake"
+        },
+        {
+          "t": "あまり"
+        },
+        {
+          "t": "{強|つよ}くないんです。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-29.mp3",
+      "tags": ["likes"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-30",
+      "japanese": "日本に来てから、魚が好きになりました。",
+      "furigana": "{日本|にほん}に{来|き}てから、{魚|さかな}が{好|す}きになりました。",
+      "english": "Since coming to Japan, I’ve come to like fish.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本|にほん}に",
+          "w": "w-nihon"
+        },
+        {
+          "t": "{来|き}てから、",
+          "w": "w-kuru"
+        },
+        {
+          "t": "{魚|さかな}が",
+          "w": "w-sakana"
+        },
+        {
+          "t": "{好|す}きになりました。",
+          "w": "w-suki"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-30.mp3",
+      "tags": ["likes"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-31",
+      "japanese": "休みの日は、たいてい家でゆっくりしています。",
+      "furigana": "{休|やす}みの{日|ひ}は、たいてい{家|いえ}でゆっくりしています。",
+      "english": "On my days off, I usually take it easy at home.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{休|やす}みの{日|ひ}は、",
+          "w": "w-yasumi"
+        },
+        {
+          "t": "たいてい"
+        },
+        {
+          "t": "{家|いえ}で",
+          "w": "w-ie"
+        },
+        {
+          "t": "ゆっくりしています。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-31.mp3",
+      "tags": ["likes"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-32",
+      "japanese": "日本語を勉強して、二年になります。",
+      "furigana": "{日本語|にほんご}を{勉強|べんきょう}して、{二年|にねん}になります。",
+      "english": "I’ve been studying Japanese for two years.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本語|にほんご}を",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{勉強|べんきょう}して、",
+          "w": "w-benkyou"
+        },
+        {
+          "t": "{二年|にねん}に"
+        },
+        {
+          "t": "なります。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-32.mp3",
+      "tags": ["progress"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-33",
+      "japanese": "日本の生活にもう慣れました。",
+      "furigana": "{日本|にほん}の{生活|せいかつ}にもう{慣|な}れました。",
+      "english": "I’ve got used to life in Japan now.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本|にほん}の",
+          "w": "w-nihon"
+        },
+        {
+          "t": "{生活|せいかつ}に",
+          "w": "w-seikatsu"
+        },
+        {
+          "t": "もう",
+          "w": "w-mou"
+        },
+        {
+          "t": "{慣|な}れました。",
+          "w": "w-nareru"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-33.mp3",
+      "tags": ["progress"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-34",
+      "japanese": "自分の意見を日本語で言うのは、まだ難しいです。",
+      "furigana": "{自分|じぶん}の{意見|いけん}を{日本語|にほんご}で{言|い}うのは、まだ{難|むずか}しいです。",
+      "english": "Saying what I think in Japanese is still hard.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{自分|じぶん}の"
+        },
+        {
+          "t": "{意見|いけん}を",
+          "w": "w-iken"
+        },
+        {
+          "t": "{日本語|にほんご}で",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{言|い}うのは、",
+          "w": "w-iu"
+        },
+        {
+          "t": "まだ",
+          "w": "w-mada"
+        },
+        {
+          "t": "{難|むずか}しいです。",
+          "w": "w-muzukashii"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-34.mp3",
+      "tags": ["progress"],
+      "difficulty": 4
+    },
+    {
+      "id": "s-35",
+      "japanese": "前は朝が苦手でしたが、今は早起きが好きです。",
+      "furigana": "{前|まえ}は{朝|あさ}が{苦手|にがて}でしたが、{今|いま}は{早起|はやお}きが{好|す}きです。",
+      "english": "I used to hate mornings, but now I like getting up early.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{前|まえ}は",
+          "w": "w-mae"
+        },
+        {
+          "t": "{朝|あさ}が",
+          "w": "w-asa"
+        },
+        {
+          "t": "{苦手|にがて}でしたが、",
+          "w": "w-nigate"
+        },
+        {
+          "t": "{今|いま}は",
+          "w": "w-ima"
+        },
+        {
+          "t": "{早起|はやお}きが",
+          "w": "w-hayaoki"
+        },
+        {
+          "t": "{好|す}きです。",
+          "w": "w-suki"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-35.mp3",
+      "tags": ["progress"],
+      "difficulty": 4
+    },
+    {
+      "id": "s-36",
+      "japanese": "最近、毎朝走るようになりました。",
+      "furigana": "{最近|さいきん}、{毎朝|まいあさ}{走|はし}るようになりました。",
+      "english": "Lately I’ve started running every morning.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{最近|さいきん}、",
+          "w": "w-saikin"
+        },
+        {
+          "t": "{毎朝|まいあさ}"
+        },
+        {
+          "t": "{走|はし}るように"
+        },
+        {
+          "t": "なりました。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-36.mp3",
+      "tags": ["progress"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-37",
+      "japanese": "昔はよく映画を見ましたが、最近は全然見ません。",
+      "furigana": "{昔|むかし}はよく{映画|えいが}を{見|み}ましたが、{最近|さいきん}は{全然|ぜんぜん}{見|み}ません。",
+      "english": "I used to watch films a lot, but lately I don’t at all.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{昔|むかし}は",
+          "w": "w-mukashi"
+        },
+        {
+          "t": "よく",
+          "w": "w-yoku"
+        },
+        {
+          "t": "{映画|えいが}を",
+          "w": "w-eiga"
+        },
+        {
+          "t": "{見|み}ましたが、",
+          "w": "w-miru"
+        },
+        {
+          "t": "{最近|さいきん}は",
+          "w": "w-saikin"
+        },
+        {
+          "t": "{全然|ぜんぜん}"
+        },
+        {
+          "t": "{見|み}ません。",
+          "w": "w-miru"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-37.mp3",
+      "tags": ["progress"],
+      "difficulty": 4
+    },
+    {
+      "id": "s-38",
+      "japanese": "甘いものを食べすぎないようにしています。",
+      "furigana": "{甘|あま}いものを{食|た}べすぎないようにしています。",
+      "english": "I try not to eat too many sweet things.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{甘|あま}いものを",
+          "w": "w-amai"
+        },
+        {
+          "t": "{食|た}べすぎないように",
+          "w": "w-taberu"
+        },
+        {
+          "t": "しています。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-38.mp3",
+      "tags": ["progress"],
+      "difficulty": 4
+    },
+    {
+      "id": "s-39",
+      "japanese": "仕事で英語を使うことが多いです。",
+      "furigana": "{仕事|しごと}で{英語|えいご}を{使|つか}うことが{多|おお}いです。",
+      "english": "I often use English at work.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{仕事|しごと}で",
+          "w": "w-shigoto"
+        },
+        {
+          "t": "{英語|えいご}を",
+          "w": "w-eigo"
+        },
+        {
+          "t": "{使|つか}うことが",
+          "w": "w-tsukau"
+        },
+        {
+          "t": "{多|おお}いです。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-39.mp3",
+      "tags": ["work"],
+      "difficulty": 3
+    },
+    {
+      "id": "s-40",
+      "japanese": "家族はみんな国にいます。",
+      "furigana": "{家族|かぞく}はみんな{国|くに}にいます。",
+      "english": "My family are all back home.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{家族|かぞく}は",
+          "w": "w-kazoku"
+        },
+        {
+          "t": "みんな",
+          "w": "w-minna"
+        },
+        {
+          "t": "{国|くに}に"
+        },
+        {
+          "t": "います。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-40.mp3",
+      "tags": ["family"],
+      "difficulty": 2
+    },
+    {
+      "id": "s-41",
+      "japanese": "兄は東京で働いていて、時々会います。",
+      "furigana": "{兄|あに}は{東京|とうきょう}で{働|はたら}いていて、{時々|ときどき}{会|あ}います。",
+      "english": "My older brother works in Tokyo, and I see him now and then.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{兄|あに}は",
+          "w": "w-ani"
+        },
+        {
+          "t": "{東京|とうきょう}で"
+        },
+        {
+          "t": "{働|はたら}いていて、",
+          "w": "w-hataraku"
+        },
+        {
+          "t": "{時々|ときどき}",
+          "w": "w-tokidoki"
+        },
+        {
+          "t": "{会|あ}います。",
+          "w": "w-au"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-41.mp3",
+      "tags": ["family"],
+      "difficulty": 3
+    }
+  ]
+}

@@ -156,8 +156,12 @@ await tick(); await tick();
 check('quiz shows a card with Japanese', Boolean($('.placement-card .jp')), $('.placement-card .jp')?.textContent);
 const quizTotal = Number(text().match(/1 of (\d+)/)?.[1] ?? 0);
 check('quiz shows progress', quizTotal > 0, `${quizTotal} cards total`);
-check('quiz covers phrases and characters, two of each',
-  quizTotal === 2 * (JA.categories.length + JA.characterSets.length), `${quizTotal} cards`);
+// Placement samples First steps and Basic; Intermediate says placement: false (README §7.10).
+const unsampled = new Set(JA.levels.filter((l) => l.placement === false).map((l) => l.id));
+const sampledCats = JA.categories.filter((c) => !unsampled.has(c.level));
+const sampledSets = JA.characterSets.filter((x) => !unsampled.has(x.level));
+check('quiz covers phrases and characters, two of each, from the levels it samples',
+  unsampled.size > 0 && quizTotal === 2 * (sampledCats.length + sampledSets.length), `${quizTotal} cards`);
 check('quiz offers three self-grade answers', $$('.btn-answer').length === 3);
 check('first card has no stray "null" where the Back button would be', !/\bnull\b/.test(text()));
 check('furigana renders as ruby', $$('.placement-card ruby, .placement-card').length > 0);
@@ -175,7 +179,7 @@ await tick(); await tick(); await tick();
 
 check('quiz produces a results screen', text().includes('Deck built'), 'placement complete');
 check('results break down every category and character set',
-  $$('.result-row').length === JA.categories.length + JA.characterSets.length, `${$$('.result-row').length} rows`);
+  $$('.result-row').length === sampledCats.length + sampledSets.length, `${$$('.result-row').length} rows`);
 check('results separate phrases from reading', text().includes('Reading'));
 check('results suggest where to start, with every level to pick from',
   $$('.placement-level .segment').length === JA.levels.length && $('.placement-level .segment.is-on')?.dataset.level === 'basic' &&
@@ -227,10 +231,25 @@ await deck.saveSettings({
 });
 await goTo('#/en-ja/');
 
+// Listening (§2.8): at Basic, the Japanese sound pairs; the lines said back wait for Intermediate.
+const jaPairs = readJSON(JA.listening.find((l) => l.kind === 'contrasts').file).sets.reduce((n, x) => n + x.pairs.length, 0);
+check('Today offers the Japanese listening drill at Basic: the sound pairs',
+  $('.listen-today .row-sub')?.textContent === `0 of ${jaPairs * 2} mastered`, $('.listen-today .row-sub')?.textContent);
+await goTo('#/en-ja/listening');
+check('the Japanese listening page has the sound pairs, and no lines said back until Intermediate',
+  $$('.contrast-pair').length === jaPairs && !$('.listen-line') && text().includes('The small っ'), `${$$('.contrast-pair').length} pairs`);
+await deck.saveSettings({ level: 'first-steps' });
+await goTo('#/en-ja/');
+check('…and Today has no listening at First steps, which has nothing to hear yet', !$('.listen-today') && Boolean($('.level-row')));
+await deck.saveSettings({ level: 'basic' });
+await goTo('#/en-ja/');
+
 console.log('\n3. Learn');
 
 await goTo('#/en-ja/browse');
 check('learn renders', $('h1')?.textContent === 'Learn' && document.querySelector('.tabbar a.active')?.textContent.includes('Learn'));
+check('Learn lists the listening at the learner’s level', $('.row-card[data-section="listening"] .row-sub')?.textContent === `0 lines · ${jaPairs} sound pairs`,
+  $('.row-card[data-section="listening"] .row-sub')?.textContent);
 // With levels (§7.10), Learn shows the learner's level: Basic, from the placement above.
 const jaLevel = await deck.getLevel();
 const jaDecks = [...JA.categories, ...JA.decks].filter((c) => c.level === jaLevel);
@@ -238,15 +257,16 @@ const jaStarters = jaDecks.filter((c) => c.starter);
 check('Learn opens on the learner’s level, with a button for each level',
   jaLevel === 'basic' && $$('.level-choice .segment').length === JA.levels.length &&
     $('.level-choice .segment.is-on')?.dataset.level === jaLevel, $('.level-choice .segment.is-on')?.textContent);
-check('every deck of the level listed, plus your own words and the conversations', $$('.row-card').length === jaDecks.length + 2,
+check('every deck of the level listed, plus your own words, listening and the conversations', $$('.row-card').length === jaDecks.length + 3,
   `${$$('.row-card').length} rows`);
-check('words, phrases, your own words, then conversations (Basic has no sentence deck)',
-  $$('.kind-title').map((h) => h.textContent).join('|') === 'Words|Phrases|Your own words|Conversations',
+check('words, phrases, your own words, listening, then conversations (Basic has no sentence deck)',
+  $$('.kind-title').map((h) => h.textContent).join('|') === 'Words|Phrases|Your own words|Listening|Conversations',
   $$('.kind-title').map((h) => h.textContent).join(' | '));
 check('with Connectors taking a tab, the scenarios live in Learn',
   !document.querySelector('.tabbar a[data-path="/scenarios"]') && Boolean($('.row-card[href="#/en-ja/scenarios"]')));
-check('phrases grouped by topic, titled from the manifest',
-  $$('.section-title').map((h) => h.textContent).join('|') === JA.groups.map((g) => g.title).join('|'),
+check('phrases grouped by topic, titled from the manifest: the groups this level has phrases in',
+  $$('.section-title').map((h) => h.textContent).join('|') ===
+    JA.groups.filter((g) => JA.categories.some((c) => c.group === g.id && c.level === jaLevel)).map((g) => g.title).join('|'),
   $$('.section-title').map((h) => h.textContent).join(' | '));
 const homeDeck = JA.decks.find((d) => d.id === 'words-home');
 check('word decks say how many words they hold',
@@ -566,6 +586,9 @@ check('every example is there, with audio and its words linked',
   $$('.item-sentence').length === karaFile.examples.length &&
   $$('.item-sentence .audio-btn').length === karaFile.examples.length &&
   $$('.item-sentence .links .ref-chip').length > 0);
+await goTo('#/en-ja/connectors/gr-ni');
+check('a pattern’s Japanese has readings too, not raw notation',
+  $$('.lesson-pattern ruby').length > 0 && !$('.lesson-pattern')?.textContent.includes('{'), $('.lesson-pattern')?.textContent);
 
 // Practise the lesson: answer every drill, the first fill-in deliberately wrong.
 await goTo('#/en-ja/connectors/con-kara/practice');
@@ -758,7 +781,8 @@ console.log('\n6. Scenarios');
 
 await goTo('#/en-ja/scenarios');
 check('scenario list renders', text().includes('Scenarios'));
-check('all 6 scenarios listed', $$('.row-card').length === 6);
+check(`all ${JA.scenarios.length} scenarios listed, under their levels`, $$('.row-card').length === JA.scenarios.length &&
+  $$('.section-title').map((h) => h.textContent).join('|') === '🌿 Basic|🌳 Intermediate', $$('.section-title').map((h) => h.textContent).join('|'));
 
 await goTo('#/en-ja/scenario/conbini');
 check('scenario player renders', text().includes('Convenience store checkout'));

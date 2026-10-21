@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "id": "doctor",
+  "title": "The Doctor & Pharmacy",
+  "order": 16,
+  "description": "Describing symptoms at the clinic and the pharmacy, and understanding the questions you’ll be asked.",
+  "phrases": [
+    {
+      "id": "doc-01",
+      "japanese": "今日はどうされましたか",
+      "furigana": [
+        {
+          "b": "今日",
+          "r": "きょう"
+        },
+        {
+          "b": "はどうされましたか"
+        }
+      ],
+      "romaji": "kyō wa dō saremashita ka",
+      "english": "What seems to be the problem today?",
+      "registerNotes": "What the doctor or receptionist will ask first. Answer with your symptom, and how long you’ve had it.",
+      "audio": "audio/ja/doc-01.mp3",
+      "tags": [
+        "clinic",
+        "listening"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-02",
+      "japanese": "三日前から熱があります",
+      "furigana": [
+        {
+          "b": "三日前",
+          "r": "みっかまえ"
+        },
+        {
+          "b": "から"
+        },
+        {
+          "b": "熱",
+          "r": "ねつ"
+        },
+        {
+          "b": "があります"
+        }
+      ],
+      "romaji": "mikka mae kara netsu ga arimasu",
+      "english": "I’ve had a temperature for three days.",
+      "registerNotes": "Symptom + から: how long it’s been going on. The doctor will want to know.",
+      "audio": "audio/ja/doc-02.mp3",
+      "tags": [
+        "symptoms",
+        "essential"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-03",
+      "japanese": "頭がずきずき痛みます",
+      "furigana": [
+        {
+          "b": "頭",
+          "r": "あたま"
+        },
+        {
+          "b": "がずきずき"
+        },
+        {
+          "b": "痛",
+          "r": "いた"
+        },
+        {
+          "b": "みます"
+        }
+      ],
+      "romaji": "atama ga zukizuki itamimasu",
+      "english": "I have a throbbing headache.",
+      "registerNotes": "ずきずき is a throbbing pain. Japanese doctors often ask what kind: ずきずき (throbbing), ちくちく (prickling), しくしく (dull).",
+      "audio": "audio/ja/doc-03.mp3",
+      "tags": [
+        "symptoms"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "doc-04",
+      "japanese": "吐き気がします",
+      "furigana": [
+        {
+          "b": "吐",
+          "r": "は"
+        },
+        {
+          "b": "き"
+        },
+        {
+          "b": "気",
+          "r": "け"
+        },
+        {
+          "b": "がします"
+        }
+      ],
+      "romaji": "hakike ga shimasu",
+      "english": "I feel sick.",
+      "registerNotes": "Nausea, not just feeling unwell. Feeling generally unwell is 具合が悪いです.",
+      "audio": "audio/ja/doc-04.mp3",
+      "tags": [
+        "symptoms"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-05",
+      "japanese": "咳が止まりません",
+      "furigana": [
+        {
+          "b": "咳",
+          "r": "せき"
+        },
+        {
+          "b": "が"
+        },
+        {
+          "b": "止",
+          "r": "と"
+        },
+        {
+          "b": "まりません"
+        }
+      ],
+      "romaji": "seki ga tomarimasen",
+      "english": "I can’t stop coughing.",
+      "registerNotes": "Literally “the cough won’t stop”. Masks are expected in a waiting room if you’re coughing.",
+      "audio": "audio/ja/doc-05.mp3",
+      "tags": [
+        "symptoms"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-06",
+      "japanese": "食べ物のアレルギーがあります",
+      "furigana": [
+        {
+          "b": "食",
+          "r": "た"
+        },
+        {
+          "b": "べ"
+        },
+        {
+          "b": "物",
+          "r": "もの"
+        },
+        {
+          "b": "のアレルギーがあります"
+        }
+      ],
+      "romaji": "tabemono no arerugī ga arimasu",
+      "english": "I have a food allergy.",
+      "registerNotes": "Name it after: えびのアレルギー (prawns), ナッツ (nuts), 小麦 (wheat).",
+      "audio": "audio/ja/doc-06.mp3",
+      "tags": [
+        "symptoms",
+        "essential"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-07",
+      "japanese": "いつも飲んでいる薬があります",
+      "furigana": [
+        {
+          "b": "いつも"
+        },
+        {
+          "b": "飲",
+          "r": "の"
+        },
+        {
+          "b": "んでいる"
+        },
+        {
+          "b": "薬",
+          "r": "くすり"
+        },
+        {
+          "b": "があります"
+        }
+      ],
+      "romaji": "itsumo nonde iru kusuri ga arimasu",
+      "english": "I’m on regular medication.",
+      "registerNotes": "Tell the doctor and the pharmacist. Medicine is “drunk” in Japanese, even tablets: 薬を飲む.",
+      "audio": "audio/ja/doc-07.mp3",
+      "tags": [
+        "clinic"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-08",
+      "japanese": "保険証を持っていません",
+      "furigana": [
+        {
+          "b": "保険証",
+          "r": "ほけんしょう"
+        },
+        {
+          "b": "を"
+        },
+        {
+          "b": "持",
+          "r": "も"
+        },
+        {
+          "b": "っていません"
+        }
+      ],
+      "romaji": "hokenshō o motte imasen",
+      "english": "I don’t have a health insurance card.",
+      "registerNotes": "Visitors usually pay the full fee and claim on their travel insurance. Ask for a receipt and a 診断書.",
+      "audio": "audio/ja/doc-08.mp3",
+      "tags": [
+        "clinic"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "doc-09",
+      "japanese": "診断書をもらえますか",
+      "furigana": [
+        {
+          "b": "診断書",
+          "r": "しんだんしょ"
+        },
+        {
+          "b": "をもらえますか"
+        }
+      ],
+      "romaji": "shindansho o moraemasu ka",
+      "english": "Could I have a medical certificate?",
+      "registerNotes": "For travel insurance or work. There is usually a fee.",
+      "audio": "audio/ja/doc-09.mp3",
+      "tags": [
+        "clinic"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "doc-10",
+      "japanese": "一日に何回飲みますか",
+      "furigana": [
+        {
+          "b": "一日",
+          "r": "いちにち"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "何回",
+          "r": "なんかい"
+        },
+        {
+          "b": "飲",
+          "r": "の"
+        },
+        {
+          "b": "みますか"
+        }
+      ],
+      "romaji": "ichinichi ni nankai nomimasu ka",
+      "english": "How many times a day do I take it?",
+      "registerNotes": "Checking the dose at the pharmacy. The answer is often 一日三回 (three times a day).",
+      "audio": "audio/ja/doc-10.mp3",
+      "tags": [
+        "pharmacy"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-11",
+      "japanese": "食後に飲んでください",
+      "furigana": [
+        {
+          "b": "食後",
+          "r": "しょくご"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "飲",
+          "r": "の"
+        },
+        {
+          "b": "んでください"
+        }
+      ],
+      "romaji": "shokugo ni nonde kudasai",
+      "english": "Take it after meals.",
+      "registerNotes": "What the pharmacist will tell you. 食前 is before meals; 寝る前 is before bed.",
+      "audio": "audio/ja/doc-11.mp3",
+      "tags": [
+        "pharmacy",
+        "listening"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-12",
+      "japanese": "眠くなりますか",
+      "furigana": [
+        {
+          "b": "眠",
+          "r": "ねむ"
+        },
+        {
+          "b": "くなりますか"
+        }
+      ],
+      "romaji": "nemuku narimasu ka",
+      "english": "Will it make me drowsy?",
+      "registerNotes": "Worth asking before you drive. くなる is “become”: 眠い → 眠くなる.",
+      "audio": "audio/ja/doc-12.mp3",
+      "tags": [
+        "pharmacy"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-13",
+      "japanese": "痛み止めはありますか",
+      "furigana": [
+        {
+          "b": "痛",
+          "r": "いた"
+        },
+        {
+          "b": "み"
+        },
+        {
+          "b": "止",
+          "r": "ど"
+        },
+        {
+          "b": "めはありますか"
+        }
+      ],
+      "romaji": "itamidome wa arimasu ka",
+      "english": "Do you have painkillers?",
+      "registerNotes": "At a pharmacy or a drugstore. Some medicines are kept behind the counter and need a word with the pharmacist.",
+      "audio": "audio/ja/doc-13.mp3",
+      "tags": [
+        "pharmacy",
+        "essential"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

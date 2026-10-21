@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-mitai",
+  "connector": "〜みたい",
+  "gloss": "seems; apparently",
+  "title": "〜みたい・〜らしい — it seems, apparently",
+  "pattern": "plain form (noun / な-adjective without だ) + みたい(だ) / らしい",
+  "explanation": "みたい says something seems to be so, from what you see or hear: {彼|かれ}、{疲|つか}れてるみたい — he seems tired. らしい leans on what you’ve heard: あの{店|みせ}、{有名|ゆうめい}らしいよ — apparently that place is famous. みたい also means “like”: {夢|ゆめ}みたい — like a dream.",
+  "natural": "みたい is the everyday, casual one; ようです is its polite, written twin.",
+  "stiff": "Not about your own feelings, which you know: {私|わたし}は{疲|つか}れたみたい sounds odd. Just {疲|つか}れた.",
+  "examples": [
+    {
+      "id": "gx-mitai-1",
+      "japanese": "彼、ちょっと疲れてるみたい。",
+      "furigana": "{彼|かれ}、ちょっと{疲|つか}れてるみたい。",
+      "english": "He seems a bit tired.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{彼|かれ}、",
+          "w": "w-kare"
+        },
+        {
+          "t": "ちょっと",
+          "w": "w-chotto"
+        },
+        {
+          "t": "{疲|つか}れてるみたい。",
+          "w": "w-tsukareru"
+        }
+      ],
+      "gap": {
+        "before": "{彼|かれ}、ちょっと{疲|つか}れてる",
+        "answer": "みたい",
+        "after": "。",
+        "options": [
+          "みたい",
+          "そう",
+          "つもり"
+        ],
+        "why": "From how he looks: みたい."
+      },
+      "audio": "audio/ja/grammar/gx-mitai-1.mp3",
+      "tags": [
+        "grammar",
+        "mitai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-mitai-2",
+      "japanese": "あの店、有名らしいよ。",
+      "furigana": "あの{店|みせ}、{有名|ゆうめい}らしいよ。",
+      "english": "Apparently that place is famous.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "あの{店|みせ}、",
+          "w": "w-mise"
+        },
+        {
+          "t": "{有名|ゆうめい}らしいよ。",
+          "w": "w-yuumei"
+        }
+      ],
+      "gap": {
+        "before": "あの{店|みせ}、{有名|ゆうめい}",
+        "answer": "らしい",
+        "after": "よ。",
+        "options": [
+          "らしい",
+          "そう",
+          "つもり"
+        ],
+        "why": "What you’ve heard: らしい."
+      },
+      "audio": "audio/ja/grammar/gx-mitai-2.mp3",
+      "tags": [
+        "grammar",
+        "mitai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-mitai-3",
+      "japanese": "電車が止まっているみたいです。",
+      "furigana": "{電車|でんしゃ}が{止|と}まっているみたいです。",
+      "english": "It looks like the trains have stopped.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{電車|でんしゃ}が",
+          "w": "w-densha"
+        },
+        {
+          "t": "{止|と}まっている"
+        },
+        {
+          "t": "みたいです。"
+        }
+      ],
+      "gap": {
+        "before": "{電車|でんしゃ}が{止|と}まっている",
+        "answer": "みたい",
+        "after": "です。",
+        "options": [
+          "みたい",
+          "らしい",
+          "つもり"
+        ],
+        "ok": [
+          "らしい"
+        ],
+        "note": "らしい works if you heard it from someone, rather than seeing it.",
+        "why": "From what you can see: みたい."
+      },
+      "audio": "audio/ja/grammar/gx-mitai-3.mp3",
+      "tags": [
+        "grammar",
+        "mitai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-mitai-4",
+      "japanese": "本当に夢みたい！",
+      "furigana": "{本当|ほんとう}に{夢|ゆめ}みたい！",
+      "english": "It’s like a dream!",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{本当|ほんとう}に",
+          "w": "w-hontou"
+        },
+        {
+          "t": "{夢|ゆめ}みたい！"
+        }
+      ],
+      "gap": {
+        "before": "{本当|ほんとう}に{夢|ゆめ}",
+        "answer": "みたい",
+        "after": "！",
+        "options": [
+          "みたい",
+          "らしい",
+          "そう"
+        ],
+        "why": "みたい also means “like”: 夢みたい."
+      },
+      "audio": "audio/ja/grammar/gx-mitai-4.mp3",
+      "tags": [
+        "grammar",
+        "mitai"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

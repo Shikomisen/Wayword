@@ -1,0 +1,528 @@
+{
+  "schemaVersion": 1,
+  "id": "replies",
+  "title": "What did they say?",
+  "description": "Lines staff and friends say to you, at natural speed and in polite Japanese. Hear one, pick what it means, and learn a way to answer.",
+  "items": [
+    {
+      "id": "lr-01",
+      "speaker": "staff",
+      "japanese": "ポイントカードはお持ちですか。",
+      "furigana": "ポイントカードはお{持|も}ちですか。",
+      "english": "Do you have a points card?",
+      "reply": {
+        "japanese": "いいえ、持っていません。",
+        "furigana": "いいえ、{持|も}っていません。",
+        "english": "No, I don’t."
+      },
+      "note": "Asked at almost every till. お持ちですか is the respectful “do you have?”.",
+      "audio": "audio/ja/listening/lr-01.mp3",
+      "tags": [
+        "shop"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-02",
+      "speaker": "staff",
+      "japanese": "お箸はおつけしますか。",
+      "furigana": "お{箸|はし}はおつけしますか。",
+      "english": "Would you like chopsticks?",
+      "reply": {
+        "japanese": "はい、お願いします。",
+        "furigana": "はい、お{願|ねが}いします。",
+        "english": "Yes, please."
+      },
+      "audio": "audio/ja/listening/lr-02.mp3",
+      "tags": [
+        "shop"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-03",
+      "speaker": "staff",
+      "japanese": "店内でお召し上がりですか。",
+      "furigana": "{店内|てんない}でお{召|め}し{上|あ}がりですか。",
+      "english": "Are you eating in?",
+      "reply": {
+        "japanese": "いいえ、持ち帰りで。",
+        "furigana": "いいえ、{持|も}ち{帰|かえ}りで。",
+        "english": "No, takeaway."
+      },
+      "note": "召し上がる is the respectful “eat”. The alternative you’ll hear is お持ち帰りですか (takeaway?).",
+      "audio": "audio/ja/listening/lr-03.mp3",
+      "tags": [
+        "shop"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-04",
+      "speaker": "staff",
+      "japanese": "一括でよろしいですか。",
+      "furigana": "{一括|いっかつ}でよろしいですか。",
+      "english": "In a single payment?",
+      "reply": {
+        "japanese": "はい、一括で。",
+        "furigana": "はい、{一括|いっかつ}で。",
+        "english": "Yes, in one go."
+      },
+      "note": "Japanese credit cards can split a payment into instalments. Visitors always answer 一括 (one payment).",
+      "audio": "audio/ja/listening/lr-04.mp3",
+      "tags": [
+        "shop"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lr-05",
+      "speaker": "staff",
+      "japanese": "申し訳ございません、品切れでございます。",
+      "furigana": "{申|もう}し{訳|わけ}ございません、{品切|しなぎ}れでございます。",
+      "english": "I’m sorry, it’s sold out.",
+      "reply": {
+        "japanese": "そうですか。じゃあ、これをください。",
+        "furigana": "そうですか。じゃあ、これをください。",
+        "english": "I see. Then this one, please."
+      },
+      "note": "でございます is the very polite です that shop staff use.",
+      "audio": "audio/ja/listening/lr-05.mp3",
+      "tags": [
+        "shop"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lr-06",
+      "speaker": "staff",
+      "japanese": "こちらにタッチしてください。",
+      "furigana": "こちらにタッチしてください。",
+      "english": "Please tap here.",
+      "note": "For a card or a phone on the reader. タッチ is a tap, not a touch screen.",
+      "audio": "audio/ja/listening/lr-06.mp3",
+      "tags": [
+        "shop"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-07",
+      "speaker": "server",
+      "japanese": "ご注文はお決まりですか。",
+      "furigana": "ご{注文|ちゅうもん}はお{決|き}まりですか。",
+      "english": "Are you ready to order?",
+      "reply": {
+        "japanese": "もう少し待ってください。",
+        "furigana": "もう{少|すこ}し{待|ま}ってください。",
+        "english": "Could we have a little longer?"
+      },
+      "audio": "audio/ja/listening/lr-07.mp3",
+      "tags": [
+        "restaurant"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-08",
+      "speaker": "server",
+      "japanese": "お飲み物はいかがなさいますか。",
+      "furigana": "お{飲|の}み{物|もの}はいかがなさいますか。",
+      "english": "What would you like to drink?",
+      "reply": {
+        "japanese": "生ビールをお願いします。",
+        "furigana": "{生|なま}ビールをお{願|ねが}いします。",
+        "english": "A draught beer, please."
+      },
+      "note": "なさる is the respectful する: what will you do about drinks?",
+      "audio": "audio/ja/listening/lr-08.mp3",
+      "tags": [
+        "restaurant"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lr-09",
+      "speaker": "server",
+      "japanese": "ただいま満席でございます。",
+      "furigana": "ただいま{満席|まんせき}でございます。",
+      "english": "We’re full at the moment.",
+      "reply": {
+        "japanese": "どのくらい待ちますか。",
+        "furigana": "どのくらい{待|ま}ちますか。",
+        "english": "How long is the wait?"
+      },
+      "audio": "audio/ja/listening/lr-09.mp3",
+      "tags": [
+        "restaurant"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lr-10",
+      "speaker": "server",
+      "japanese": "以上でよろしいですか。",
+      "furigana": "{以上|いじょう}でよろしいですか。",
+      "english": "Will that be everything?",
+      "reply": {
+        "japanese": "はい、以上です。",
+        "furigana": "はい、{以上|いじょう}です。",
+        "english": "Yes, that’s all."
+      },
+      "note": "Checked at the end of an order, and again at the till.",
+      "audio": "audio/ja/listening/lr-10.mp3",
+      "tags": [
+        "restaurant"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-11",
+      "speaker": "server",
+      "japanese": "ラストオーダーになりますが、よろしいですか。",
+      "furigana": "ラストオーダーになりますが、よろしいですか。",
+      "english": "It’s last orders. Anything else?",
+      "reply": {
+        "japanese": "大丈夫です。",
+        "furigana": "{大丈夫|だいじょうぶ}です。",
+        "english": "We’re fine, thanks."
+      },
+      "audio": "audio/ja/listening/lr-11.mp3",
+      "tags": [
+        "restaurant"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-12",
+      "speaker": "server",
+      "japanese": "お支払いはどうなさいますか。",
+      "furigana": "お{支払|しはら}いはどうなさいますか。",
+      "english": "How would you like to pay?",
+      "reply": {
+        "japanese": "カードでお願いします。",
+        "furigana": "カードでお{願|ねが}いします。",
+        "english": "By card, please."
+      },
+      "audio": "audio/ja/listening/lr-12.mp3",
+      "tags": [
+        "restaurant"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-13",
+      "speaker": "receptionist",
+      "japanese": "こちらにご記入をお願いします。",
+      "furigana": "こちらにご{記入|きにゅう}をお{願|ねが}いします。",
+      "english": "Please fill this in.",
+      "reply": {
+        "japanese": "ペンをお借りしてもいいですか。",
+        "furigana": "ペンをお{借|か}りしてもいいですか。",
+        "english": "Could I borrow a pen?"
+      },
+      "audio": "audio/ja/listening/lr-13.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-14",
+      "speaker": "receptionist",
+      "japanese": "お部屋は八階でございます。",
+      "furigana": "お{部屋|へや}は{八階|はっかい}でございます。",
+      "english": "Your room is on the eighth floor.",
+      "reply": {
+        "japanese": "エレベーターはどこですか。",
+        "furigana": "エレベーターはどこですか。",
+        "english": "Where’s the lift?"
+      },
+      "audio": "audio/ja/listening/lr-14.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-15",
+      "speaker": "receptionist",
+      "japanese": "朝食は七時から九時半までです。",
+      "furigana": "{朝食|ちょうしょく}は{七時|しちじ}から{九時半|くじはん}までです。",
+      "english": "Breakfast is from seven to half past nine.",
+      "audio": "audio/ja/listening/lr-15.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-16",
+      "speaker": "receptionist",
+      "japanese": "少々お待ちください。",
+      "furigana": "{少々|しょうしょう}お{待|ま}ちください。",
+      "english": "Just a moment, please.",
+      "note": "The polite “one moment”. 少々 is the formal ちょっと.",
+      "audio": "audio/ja/listening/lr-16.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-17",
+      "speaker": "staff",
+      "japanese": "次の電車は二十分後です。",
+      "furigana": "{次|つぎ}の{電車|でんしゃ}は{二十分後|にじゅっぷんご}です。",
+      "english": "The next train is in twenty minutes.",
+      "audio": "audio/ja/listening/lr-17.mp3",
+      "tags": [
+        "travel"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-18",
+      "speaker": "staff",
+      "japanese": "人身事故のため、運転を見合わせております。",
+      "furigana": "{人身事故|じんしんじこ}のため、{運転|うんてん}を{見合|みあ}わせております。",
+      "english": "Trains are suspended because of an accident on the line.",
+      "reply": {
+        "japanese": "別の行き方はありますか。",
+        "furigana": "{別|べつ}の{行|い}き{方|かた}はありますか。",
+        "english": "Is there another way to get there?"
+      },
+      "note": "人身事故 usually means someone was hit by a train. Delays can be long, so look for another line.",
+      "audio": "audio/ja/listening/lr-18.mp3",
+      "tags": [
+        "travel"
+      ],
+      "difficulty": 5
+    },
+    {
+      "id": "lr-19",
+      "speaker": "driver",
+      "japanese": "どちらまで？",
+      "furigana": "どちらまで？",
+      "english": "Where to?",
+      "reply": {
+        "japanese": "東京駅までお願いします。",
+        "furigana": "{東京駅|とうきょうえき}までお{願|ねが}いします。",
+        "english": "Tokyo Station, please."
+      },
+      "audio": "audio/ja/listening/lr-19.mp3",
+      "tags": [
+        "travel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-20",
+      "speaker": "pharmacist",
+      "japanese": "一日二回、朝と夜に飲んでください。",
+      "furigana": "{一日|いちにち}{二回|にかい}、{朝|あさ}と{夜|よる}に{飲|の}んでください。",
+      "english": "Take it twice a day, morning and night.",
+      "audio": "audio/ja/listening/lr-20.mp3",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-21",
+      "speaker": "doctor",
+      "japanese": "口を開けてください。",
+      "furigana": "{口|くち}を{開|あ}けてください。",
+      "english": "Open your mouth, please.",
+      "audio": "audio/ja/listening/lr-21.mp3",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-22",
+      "speaker": "doctor",
+      "japanese": "大きく息を吸ってください。",
+      "furigana": "{大|おお}きく{息|いき}を{吸|す}ってください。",
+      "english": "Take a deep breath, please.",
+      "audio": "audio/ja/listening/lr-22.mp3",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-23",
+      "speaker": "friend",
+      "japanese": "久しぶり！元気だった？",
+      "furigana": "{久|ひさ}しぶり！{元気|げんき}だった？",
+      "english": "Long time no see! How have you been?",
+      "reply": {
+        "japanese": "うん、元気だよ。そっちは？",
+        "furigana": "うん、{元気|げんき}だよ。そっちは？",
+        "english": "Yeah, good. You?"
+      },
+      "audio": "audio/ja/listening/lr-23.mp3",
+      "tags": [
+        "friends"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-24",
+      "speaker": "friend",
+      "japanese": "今どこ？",
+      "furigana": "{今|いま}どこ？",
+      "english": "Where are you now?",
+      "reply": {
+        "japanese": "もうすぐ着くよ。",
+        "furigana": "もうすぐ{着|つ}くよ。",
+        "english": "Nearly there."
+      },
+      "audio": "audio/ja/listening/lr-24.mp3",
+      "tags": [
+        "friends"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-25",
+      "speaker": "friend",
+      "japanese": "ごめん、ちょっと遅れる。",
+      "furigana": "ごめん、ちょっと{遅|おく}れる。",
+      "english": "Sorry, I’ll be a bit late.",
+      "reply": {
+        "japanese": "大丈夫、ゆっくりでいいよ。",
+        "furigana": "{大丈夫|だいじょうぶ}、ゆっくりでいいよ。",
+        "english": "No worries, take your time."
+      },
+      "audio": "audio/ja/listening/lr-25.mp3",
+      "tags": [
+        "friends"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-26",
+      "speaker": "friend",
+      "japanese": "何食べたい？",
+      "furigana": "{何|なに}{食|た}べたい？",
+      "english": "What do you feel like eating?",
+      "reply": {
+        "japanese": "ラーメンがいいな。",
+        "furigana": "ラーメンがいいな。",
+        "english": "I’d like ramen."
+      },
+      "audio": "audio/ja/listening/lr-26.mp3",
+      "tags": [
+        "friends"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-27",
+      "speaker": "friend",
+      "japanese": "割り勘でいい？",
+      "furigana": "{割|わ}り{勘|かん}でいい？",
+      "english": "Shall we split the bill?",
+      "reply": {
+        "japanese": "うん、いいよ。",
+        "furigana": "うん、いいよ。",
+        "english": "Yeah, sure."
+      },
+      "note": "割り勘 is splitting the bill evenly: very common among friends.",
+      "audio": "audio/ja/listening/lr-27.mp3",
+      "tags": [
+        "friends"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-28",
+      "speaker": "friend",
+      "japanese": "明日、空いてる？",
+      "furigana": "{明日|あした}、{空|あ}いてる？",
+      "english": "Are you free tomorrow?",
+      "reply": {
+        "japanese": "午後なら空いてるよ。",
+        "furigana": "{午後|ごご}なら{空|あ}いてるよ。",
+        "english": "I’m free in the afternoon."
+      },
+      "audio": "audio/ja/listening/lr-28.mp3",
+      "tags": [
+        "friends"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-29",
+      "speaker": "friend",
+      "japanese": "それ、どこで買ったの？",
+      "furigana": "それ、どこで{買|か}ったの？",
+      "english": "Where did you buy that?",
+      "reply": {
+        "japanese": "駅前の店だよ。",
+        "furigana": "{駅前|えきまえ}の{店|みせ}だよ。",
+        "english": "At a shop by the station."
+      },
+      "audio": "audio/ja/listening/lr-29.mp3",
+      "tags": [
+        "friends"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-30",
+      "speaker": "friend",
+      "japanese": "日本語、うまくなったね！",
+      "furigana": "{日本語|にほんご}、うまくなったね！",
+      "english": "Your Japanese has got really good!",
+      "reply": {
+        "japanese": "ありがとう。毎日練習してるんだ。",
+        "furigana": "ありがとう。{毎日|まいにち}{練習|れんしゅう}してるんだ。",
+        "english": "Thanks. I practise every day."
+      },
+      "audio": "audio/ja/listening/lr-30.mp3",
+      "tags": [
+        "friends"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-31",
+      "speaker": "friend",
+      "japanese": "気をつけて帰ってね。",
+      "furigana": "{気|き}をつけて{帰|かえ}ってね。",
+      "english": "Get home safe.",
+      "reply": {
+        "japanese": "ありがとう、またね。",
+        "furigana": "ありがとう、またね。",
+        "english": "Thanks, see you."
+      },
+      "audio": "audio/ja/listening/lr-31.mp3",
+      "tags": [
+        "friends"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-32",
+      "speaker": "neighbour",
+      "japanese": "いってらっしゃい。",
+      "furigana": "いってらっしゃい。",
+      "english": "Have a good day. (to someone going out)",
+      "reply": {
+        "japanese": "いってきます。",
+        "furigana": "いってきます。",
+        "english": "I’m off. (said as you leave)"
+      },
+      "note": "Said by the people staying behind. The one leaving answers いってきます.",
+      "audio": "audio/ja/listening/lr-32.mp3",
+      "tags": [
+        "friends"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

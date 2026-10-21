@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-tte",
+  "connector": "〜って",
+  "gloss": "says; I heard",
+  "title": "〜って・〜といっていた — quoting",
+  "pattern": "plain form + と{言|い}っていた / って({言|い}ってた)",
+  "explanation": "To pass on what someone said, use と{言|い}っていた: {兄|あに}は{来|こ}ないと{言|い}っていました — my brother said he isn’t coming. Casual speech uses って for と, and often drops the verb: {明日|あした}は{雨|あめ}だって — they say it’ll rain tomorrow. って also brings up a topic: {納豆|なっとう}って{何|なに}？ — what’s natto?",
+  "natural": "Passing on news and messages: {先生|せんせい}が{遅|おく}れるって — the teacher says they’ll be late.",
+  "stiff": "In polite speech to someone above you, keep と: …と{言|い}っていました, or とおっしゃっていました for what a superior said.",
+  "examples": [
+    {
+      "id": "gx-tte-1",
+      "japanese": "兄は明日来ないと言っていました。",
+      "furigana": "{兄|あに}は{明日|あした}{来|こ}ないと{言|い}っていました。",
+      "english": "My brother said he isn’t coming tomorrow.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{兄|あに}は",
+          "w": "w-ani"
+        },
+        {
+          "t": "{明日|あした}{来|こ}ないと",
+          "w": "w-kuru"
+        },
+        {
+          "t": "{言|い}っていました。",
+          "w": "w-iu"
+        }
+      ],
+      "gap": {
+        "before": "{兄|あに}は{明日|あした}{来|こ}ない",
+        "answer": "と",
+        "after": "{言|い}っていました。",
+        "options": [
+          "と",
+          "を",
+          "が"
+        ],
+        "why": "Quoting: と言っていた."
+      },
+      "audio": "audio/ja/grammar/gx-tte-1.mp3",
+      "tags": [
+        "grammar",
+        "tte"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tte-2",
+      "japanese": "明日は雨だって。",
+      "furigana": "{明日|あした}は{雨|あめ}だって。",
+      "english": "They say it’ll rain tomorrow.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{雨|あめ}だって。",
+          "w": "w-ame"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}は{雨|あめ}だ",
+        "answer": "って",
+        "after": "。",
+        "options": [
+          "って",
+          "から",
+          "けど"
+        ],
+        "why": "Passing on what you heard: って."
+      },
+      "audio": "audio/ja/grammar/gx-tte-2.mp3",
+      "tags": [
+        "grammar",
+        "tte"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tte-3",
+      "japanese": "納豆って何？",
+      "furigana": "{納豆|なっとう}って{何|なに}？",
+      "english": "What’s natto?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{納豆|なっとう}って"
+        },
+        {
+          "t": "{何|なに}？",
+          "w": "w-nani"
+        }
+      ],
+      "gap": {
+        "before": "{納豆|なっとう}",
+        "answer": "って",
+        "after": "{何|なに}？",
+        "options": [
+          "って",
+          "を",
+          "に"
+        ],
+        "why": "って as a topic: “this natto thing…”"
+      },
+      "audio": "audio/ja/grammar/gx-tte-3.mp3",
+      "tags": [
+        "grammar",
+        "tte"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tte-4",
+      "japanese": "先生が少し遅れるって言ってたよ。",
+      "furigana": "{先生|せんせい}が{少|すこ}し{遅|おく}れるって{言|い}ってたよ。",
+      "english": "The teacher said they’d be a little late.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{先生|せんせい}が",
+          "w": "w-sensei"
+        },
+        {
+          "t": "{少|すこ}し{遅|おく}れるって",
+          "w": "w-okureru"
+        },
+        {
+          "t": "{言|い}ってたよ。",
+          "w": "w-iu"
+        }
+      ],
+      "gap": {
+        "before": "{先生|せんせい}が{少|すこ}し{遅|おく}れる",
+        "answer": "って",
+        "after": "{言|い}ってたよ。",
+        "options": [
+          "って",
+          "から",
+          "ので"
+        ],
+        "why": "Casual quoting: って言ってた."
+      },
+      "audio": "audio/ja/grammar/gx-tte-4.mp3",
+      "tags": [
+        "grammar",
+        "tte"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

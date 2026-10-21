@@ -1,0 +1,412 @@
+{
+  "schemaVersion": 1,
+  "id": "clinic",
+  "title": "At a clinic",
+  "category": "doctor",
+  "setting": "You’ve had a fever and a cough for three days, so you’ve gone to a local clinic. You’re at reception.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "receptionist",
+      "japanese": "こんにちは。初診ですか。",
+      "furigana": [
+        {
+          "b": "こんにちは。"
+        },
+        {
+          "b": "初診",
+          "r": "しょしん"
+        },
+        {
+          "b": "ですか。"
+        }
+      ],
+      "english": "Hello. Is this your first visit?",
+      "audio": "audio/ja/scenario/clinic-n1.mp3",
+      "audioHint": "こんにちは。しょしんですか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "はい、初めてです。保険証がないんですが、大丈夫ですか。",
+          "furigana": [
+            {
+              "b": "はい、"
+            },
+            {
+              "b": "初",
+              "r": "はじ"
+            },
+            {
+              "b": "めてです。"
+            },
+            {
+              "b": "保険証",
+              "r": "ほけんしょう"
+            },
+            {
+              "b": "がないんですが、"
+            },
+            {
+              "b": "大丈夫",
+              "r": "だいじょうぶ"
+            },
+            {
+              "b": "ですか。"
+            }
+          ],
+          "english": "Yes, it’s my first time. I don’t have a health insurance card. Is that OK?",
+          "feedback": "Good to mention up front: visitors usually pay in full and claim on travel insurance.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "japanese": "初診って何ですか。",
+          "furigana": [
+            {
+              "b": "初診",
+              "r": "しょしん"
+            },
+            {
+              "b": "って"
+            },
+            {
+              "b": "何",
+              "r": "なん"
+            },
+            {
+              "b": "ですか。"
+            }
+          ],
+          "english": "What does 初診 mean?",
+          "feedback": "Asking is always fine. 初診 is a first visit to this clinic.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "いいえ。",
+          "furigana": [
+            {
+              "b": "いいえ。"
+            }
+          ],
+          "english": "No.",
+          "feedback": "初診 means a first visit, so here the answer is はい. A “no” means they’ll look for your records.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "receptionist",
+      "japanese": "では、こちらの問診票に記入してください。",
+      "furigana": [
+        {
+          "b": "では、こちらの"
+        },
+        {
+          "b": "問診票",
+          "r": "もんしんひょう"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "記入",
+          "r": "きにゅう"
+        },
+        {
+          "b": "してください。"
+        }
+      ],
+      "english": "Then please fill in this questionnaire.",
+      "audio": "audio/ja/scenario/clinic-n2.mp3",
+      "audioHint": "では、こちらのもんしんひょうにきにゅうしてください",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "すみません、英語のものはありますか。",
+          "furigana": [
+            {
+              "b": "すみません、"
+            },
+            {
+              "b": "英語",
+              "r": "えいご"
+            },
+            {
+              "b": "のものはありますか。"
+            }
+          ],
+          "english": "Sorry, do you have one in English?",
+          "feedback": "Many clinics do, especially in cities. Asking beats guessing.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "japanese": "分かりました。",
+          "furigana": [
+            {
+              "b": "分",
+              "r": "わ"
+            },
+            {
+              "b": "かりました。"
+            }
+          ],
+          "english": "Sure.",
+          "feedback": "Fine: take your time with it.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "書けません。",
+          "furigana": [
+            {
+              "b": "書",
+              "r": "か"
+            },
+            {
+              "b": "けません。"
+            }
+          ],
+          "english": "I can’t write.",
+          "feedback": "Understood, but alarming! Say what you need: 英語のものはありますか, or 手伝ってもらえますか.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "doctor",
+      "japanese": "今日はどうされましたか。",
+      "furigana": [
+        {
+          "b": "今日",
+          "r": "きょう"
+        },
+        {
+          "b": "はどうされましたか。"
+        }
+      ],
+      "english": "What seems to be the problem today?",
+      "audio": "audio/ja/scenario/clinic-n3.mp3",
+      "audioHint": "きょうはどうされましたか",
+      "options": [
+        {
+          "phraseId": "doc-02",
+          "quality": "good",
+          "feedback": "Clear: the symptom and how long. Mention the cough too.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "japanese": "三日前から熱と咳があって、喉も痛いんです。",
+          "furigana": [
+            {
+              "b": "三日前",
+              "r": "みっかまえ"
+            },
+            {
+              "b": "から"
+            },
+            {
+              "b": "熱",
+              "r": "ねつ"
+            },
+            {
+              "b": "と"
+            },
+            {
+              "b": "咳",
+              "r": "せき"
+            },
+            {
+              "b": "があって、"
+            },
+            {
+              "b": "喉",
+              "r": "のど"
+            },
+            {
+              "b": "も"
+            },
+            {
+              "b": "痛",
+              "r": "いた"
+            },
+            {
+              "b": "いんです。"
+            }
+          ],
+          "english": "I’ve had a fever and a cough for three days, and my throat hurts too.",
+          "feedback": "Everything the doctor needs: what, and since when. んです explains.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "病気です。",
+          "furigana": [
+            {
+              "b": "病気",
+              "r": "びょうき"
+            },
+            {
+              "b": "です。"
+            }
+          ],
+          "english": "I’m ill.",
+          "feedback": "The doctor needs specifics: what, and since when. 三日前から熱があります.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "doctor",
+      "japanese": "何かアレルギーはありますか。",
+      "furigana": [
+        {
+          "b": "何",
+          "r": "なに"
+        },
+        {
+          "b": "かアレルギーはありますか。"
+        }
+      ],
+      "english": "Do you have any allergies?",
+      "audio": "audio/ja/scenario/clinic-n4.mp3",
+      "audioHint": "なにかアレルギーはありますか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "いいえ、ありません。",
+          "furigana": [
+            {
+              "b": "いいえ、ありません。"
+            }
+          ],
+          "english": "No, I don’t.",
+          "feedback": "A clear answer.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "doc-06",
+          "quality": "good",
+          "feedback": "Then name it: えび (prawns), ナッツ (nuts), 卵 (eggs)…",
+          "next": "n5"
+        },
+        {
+          "phraseId": "doc-07",
+          "quality": "good",
+          "feedback": "Not quite what was asked, but worth saying now: the doctor needs to know.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "doctor",
+      "japanese": "風邪ですね。お薬を出しておきます。三日たっても熱が下がらなかったら、また来てください。",
+      "furigana": [
+        {
+          "b": "風邪",
+          "r": "かぜ"
+        },
+        {
+          "b": "ですね。お"
+        },
+        {
+          "b": "薬",
+          "r": "くすり"
+        },
+        {
+          "b": "を"
+        },
+        {
+          "b": "出",
+          "r": "だ"
+        },
+        {
+          "b": "しておきます。"
+        },
+        {
+          "b": "三日",
+          "r": "みっか"
+        },
+        {
+          "b": "たっても"
+        },
+        {
+          "b": "熱",
+          "r": "ねつ"
+        },
+        {
+          "b": "が"
+        },
+        {
+          "b": "下",
+          "r": "さ"
+        },
+        {
+          "b": "がらなかったら、また"
+        },
+        {
+          "b": "来",
+          "r": "き"
+        },
+        {
+          "b": "てください。"
+        }
+      ],
+      "english": "It’s a cold. I’ll prescribe you something. If your fever hasn’t come down in three days, come back.",
+      "audio": "audio/ja/scenario/clinic-n5.mp3",
+      "audioHint": "かぜですね。おくすりをだしておきます。みっかたってもねつがさがらなかったら、またきてください",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "分かりました。ありがとうございました。",
+          "furigana": [
+            {
+              "b": "分",
+              "r": "わ"
+            },
+            {
+              "b": "かりました。ありがとうございました。"
+            }
+          ],
+          "english": "I understand. Thank you.",
+          "feedback": "The right reply to instructions, with thanks.",
+          "next": "end"
+        },
+        {
+          "phraseId": "doc-09",
+          "quality": "good",
+          "feedback": "Good thinking if you have travel insurance: ask now, before you pay.",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "また来ます。",
+          "furigana": [
+            {
+              "b": "また"
+            },
+            {
+              "b": "来",
+              "r": "き"
+            },
+            {
+              "b": "ます。"
+            }
+          ],
+          "english": "I’ll come again.",
+          "feedback": "It sounds like you’re planning to come back anyway! 分かりました (understood) is the reply to instructions.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "english": "Done. Say what’s wrong and since when (三日前から…), mention allergies and medicines, and ask for a 診断書 if you’re insured: that covers most clinic visits.",
+      "end": true,
+      "options": []
+    }
+  }
+}

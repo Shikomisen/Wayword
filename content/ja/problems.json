@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "id": "problems",
+  "title": "Problems & Complaints",
+  "order": 17,
+  "description": "Sorting out problems politely: things broken, lost, wrong or late, in shops, hotels and at home.",
+  "phrases": [
+    {
+      "id": "pro-01",
+      "japanese": "すみません、ちょっと問題があるんですが",
+      "furigana": [
+        {
+          "b": "すみません、ちょっと"
+        },
+        {
+          "b": "問題",
+          "r": "もんだい"
+        },
+        {
+          "b": "があるんですが"
+        }
+      ],
+      "romaji": "sumimasen, chotto mondai ga aru n desu ga",
+      "english": "Excuse me, there’s a bit of a problem.",
+      "registerNotes": "The polite way in. んですが explains, and leaves the sentence open for them to help.",
+      "audio": "audio/ja/pro-01.mp3",
+      "tags": [
+        "complaints",
+        "essential"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-02",
+      "japanese": "お湯が出ないんですが",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "湯",
+          "r": "ゆ"
+        },
+        {
+          "b": "が"
+        },
+        {
+          "b": "出",
+          "r": "で"
+        },
+        {
+          "b": "ないんですが"
+        }
+      ],
+      "romaji": "oyu ga denai n desu ga",
+      "english": "There’s no hot water.",
+      "registerNotes": "A hotel or home problem. ないんですが states it gently; it isn’t an accusation.",
+      "audio": "audio/ja/pro-02.mp3",
+      "tags": [
+        "hotel",
+        "home"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-03",
+      "japanese": "隣の部屋がうるさいんですが",
+      "furigana": [
+        {
+          "b": "隣",
+          "r": "となり"
+        },
+        {
+          "b": "の"
+        },
+        {
+          "b": "部屋",
+          "r": "へや"
+        },
+        {
+          "b": "がうるさいんですが"
+        }
+      ],
+      "romaji": "tonari no heya ga urusai n desu ga",
+      "english": "The room next door is noisy.",
+      "registerNotes": "Complaining softly at reception. They’ll usually offer to call the room, or to move you.",
+      "audio": "audio/ja/pro-03.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-04",
+      "japanese": "これ、頼んでいないんですが",
+      "furigana": [
+        {
+          "b": "これ、"
+        },
+        {
+          "b": "頼",
+          "r": "たの"
+        },
+        {
+          "b": "んでいないんですが"
+        }
+      ],
+      "romaji": "kore, tanonde inai n desu ga",
+      "english": "I didn’t order this.",
+      "registerNotes": "In a restaurant. Said gently, it’s an easy fix; staff will apologise and take it away.",
+      "audio": "audio/ja/pro-04.mp3",
+      "tags": [
+        "restaurant"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-05",
+      "japanese": "ネットがつながらないんですが",
+      "furigana": [
+        {
+          "b": "ネットがつながらないんですが"
+        }
+      ],
+      "romaji": "netto ga tsunagaranai n desu ga",
+      "english": "The internet isn’t working.",
+      "registerNotes": "つながる is “connect”: phones, the internet, calls. 電話がつながらない — the call won’t go through.",
+      "audio": "audio/ja/pro-05.mp3",
+      "tags": [
+        "hotel",
+        "home"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-06",
+      "japanese": "荷物がまだ届いていないんです",
+      "furigana": [
+        {
+          "b": "荷物",
+          "r": "にもつ"
+        },
+        {
+          "b": "がまだ"
+        },
+        {
+          "b": "届",
+          "r": "とど"
+        },
+        {
+          "b": "いていないんです"
+        }
+      ],
+      "romaji": "nimotsu ga mada todoite inai n desu",
+      "english": "My parcel still hasn’t arrived.",
+      "registerNotes": "For deliveries, or luggage sent ahead. Have the tracking number (お問い合わせ番号) ready.",
+      "audio": "audio/ja/pro-06.mp3",
+      "tags": [
+        "home",
+        "shopping"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-07",
+      "japanese": "傷がついていたので、交換してもらえますか",
+      "furigana": [
+        {
+          "b": "傷",
+          "r": "きず"
+        },
+        {
+          "b": "がついていたので、"
+        },
+        {
+          "b": "交換",
+          "r": "こうかん"
+        },
+        {
+          "b": "してもらえますか"
+        }
+      ],
+      "romaji": "kizu ga tsuite ita node, kōkan shite moraemasu ka",
+      "english": "It was scratched, so could I swap it?",
+      "registerNotes": "Returning something faulty: say what’s wrong, then ask. You’ll need the receipt.",
+      "audio": "audio/ja/pro-07.mp3",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "pro-08",
+      "japanese": "返金してもらえますか",
+      "furigana": [
+        {
+          "b": "返金",
+          "r": "へんきん"
+        },
+        {
+          "b": "してもらえますか"
+        }
+      ],
+      "romaji": "henkin shite moraemasu ka",
+      "english": "Could I get a refund?",
+      "registerNotes": "Japanese shops prefer to swap things (交換); a refund may take a little asking.",
+      "audio": "audio/ja/pro-08.mp3",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-09",
+      "japanese": "責任者の方をお願いできますか",
+      "furigana": [
+        {
+          "b": "責任者",
+          "r": "せきにんしゃ"
+        },
+        {
+          "b": "の"
+        },
+        {
+          "b": "方",
+          "r": "かた"
+        },
+        {
+          "b": "をお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いできますか"
+        }
+      ],
+      "romaji": "sekininsha no kata o onegai dekimasu ka",
+      "english": "Could I speak to the person in charge?",
+      "registerNotes": "The polite way to escalate. Staff will usually take it seriously; use it only if the first answer doesn’t help.",
+      "audio": "audio/ja/pro-09.mp3",
+      "tags": [
+        "complaints"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "pro-10",
+      "japanese": "確認していただけますか",
+      "furigana": [
+        {
+          "b": "確認",
+          "r": "かくにん"
+        },
+        {
+          "b": "していただけますか"
+        }
+      ],
+      "romaji": "kakunin shite itadakemasu ka",
+      "english": "Could you check, please?",
+      "registerNotes": "Asks them to look into it, very politely. Useful for bookings, bills and lost items.",
+      "audio": "audio/ja/pro-10.mp3",
+      "tags": [
+        "complaints",
+        "essential"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-11",
+      "japanese": "電車に忘れ物をしてしまいました",
+      "furigana": [
+        {
+          "b": "電車",
+          "r": "でんしゃ"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "忘",
+          "r": "わす"
+        },
+        {
+          "b": "れ"
+        },
+        {
+          "b": "物",
+          "r": "もの"
+        },
+        {
+          "b": "をしてしまいました"
+        }
+      ],
+      "romaji": "densha ni wasuremono o shite shimaimashita",
+      "english": "I left something on the train.",
+      "registerNotes": "Tell station staff the line, the time and which carriage. Lost property in Japan very often comes back.",
+      "audio": "audio/ja/pro-11.mp3",
+      "tags": [
+        "lost"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-12",
+      "japanese": "いつ直りますか",
+      "furigana": [
+        {
+          "b": "いつ"
+        },
+        {
+          "b": "直",
+          "r": "なお"
+        },
+        {
+          "b": "りますか"
+        }
+      ],
+      "romaji": "itsu naorimasu ka",
+      "english": "When will it be fixed?",
+      "registerNotes": "直る is “get fixed”; 直す is “fix (it)”. An illness getting better is 治る.",
+      "audio": "audio/ja/pro-12.mp3",
+      "tags": [
+        "home",
+        "hotel"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-13",
+      "japanese": "困っているんですが、助けてもらえませんか",
+      "furigana": [
+        {
+          "b": "困",
+          "r": "こま"
+        },
+        {
+          "b": "っているんですが、"
+        },
+        {
+          "b": "助",
+          "r": "たす"
+        },
+        {
+          "b": "けてもらえませんか"
+        }
+      ],
+      "romaji": "komatte iru n desu ga, tasukete moraemasen ka",
+      "english": "I’m in a bit of trouble. Could you help me?",
+      "registerNotes": "Asking a stranger for help, politely. 困っている (I’m stuck) is less dramatic than 助けて on its own.",
+      "audio": "audio/ja/pro-13.mp3",
+      "tags": [
+        "complaints",
+        "essential"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

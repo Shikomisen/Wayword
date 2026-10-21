@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-temoii",
+  "connector": "〜てもいい",
+  "gloss": "may; it’s OK to",
+  "title": "〜てもいい — is it OK if…?",
+  "pattern": "verb て form + もいい(ですか)",
+  "explanation": "てもいい gives or asks permission: {座|すわ}ってもいいですか — may I sit down? Say yes with どうぞ, or いいですよ. With a negative, なくてもいい means “you don’t have to” (two lessons on).",
+  "natural": "Asking politely in shops, homes and offices: {写真|しゃしん}を{撮|と}ってもいいですか; {窓|まど}を{開|あ}けてもいい？",
+  "stiff": "Answering with だめです is very blunt. ちょっと…, or すみません、ここはちょっと…, is the usual soft no.",
+  "examples": [
+    {
+      "id": "gx-temoii-1",
+      "japanese": "ここに座ってもいいですか。",
+      "furigana": "ここに{座|すわ}ってもいいですか。",
+      "english": "May I sit here?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "ここに",
+          "w": "w-koko"
+        },
+        {
+          "t": "{座|すわ}っても"
+        },
+        {
+          "t": "いいですか。"
+        }
+      ],
+      "gap": {
+        "before": "ここに{座|すわ}っても",
+        "answer": "いいですか",
+        "after": "。",
+        "options": [
+          "いいですか",
+          "いけませんか",
+          "だめですか"
+        ],
+        "why": "Asking permission: てもいいですか."
+      },
+      "audio": "audio/ja/grammar/gx-temoii-1.mp3",
+      "tags": [
+        "grammar",
+        "temoii"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-temoii-2",
+      "japanese": "写真を撮ってもいいですか。",
+      "furigana": "{写真|しゃしん}を{撮|と}ってもいいですか。",
+      "english": "May I take a photo?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{写真|しゃしん}を",
+          "w": "w-shashin"
+        },
+        {
+          "t": "{撮|と}っても"
+        },
+        {
+          "t": "いいですか。"
+        }
+      ],
+      "gap": {
+        "before": "{写真|しゃしん}を{撮|と}って",
+        "answer": "も",
+        "after": "いいですか。",
+        "options": [
+          "も",
+          "は",
+          "が"
+        ],
+        "why": "て + も + いい: “even if I take one, is that fine?”"
+      },
+      "audio": "audio/ja/grammar/gx-temoii-2.mp3",
+      "tags": [
+        "grammar",
+        "temoii"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-temoii-3",
+      "japanese": "窓、開けてもいい？",
+      "furigana": "{窓|まど}、{開|あ}けてもいい？",
+      "english": "Mind if I open the window?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{窓|まど}、",
+          "w": "w-mado"
+        },
+        {
+          "t": "{開|あ}けても"
+        },
+        {
+          "t": "いい？"
+        }
+      ],
+      "gap": {
+        "before": "{窓|まど}、",
+        "answer": "{開|あ}けても",
+        "after": "いい？",
+        "options": [
+          "{開|あ}けても",
+          "{開|あ}けて",
+          "{開|あ}けたら"
+        ],
+        "ok": [
+          "{開|あ}けて"
+        ],
+        "note": "開けていい？ works too: casual speech often drops the も.",
+        "why": "Permission takes て + も."
+      },
+      "audio": "audio/ja/grammar/gx-temoii-3.mp3",
+      "tags": [
+        "grammar",
+        "temoii"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-temoii-4",
+      "japanese": "試着してもいいですか。",
+      "furigana": "{試着|しちゃく}してもいいですか。",
+      "english": "May I try it on?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{試着|しちゃく}しても",
+          "w": "w-shichaku"
+        },
+        {
+          "t": "いいですか。"
+        }
+      ],
+      "gap": {
+        "before": "{試着|しちゃく}して",
+        "answer": "も",
+        "after": "いいですか。",
+        "options": [
+          "も",
+          "は",
+          "を"
+        ],
+        "why": "Trying on clothes: 試着してもいいですか."
+      },
+      "audio": "audio/ja/grammar/gx-temoii-4.mp3",
+      "tags": [
+        "grammar",
+        "temoii"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

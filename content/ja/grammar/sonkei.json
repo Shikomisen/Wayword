@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-sonkei",
+  "connector": "いらっしゃる",
+  "gloss": "respectful verbs (for others)",
+  "title": "いらっしゃる — respectful verbs",
+  "pattern": "いらっしゃる (いる・{行|い}く・{来|く}る) / {召|め}し{上|あ}がる ({食|た}べる・{飲|の}む) / おっしゃる ({言|い}う) / ご{覧|らん}になる ({見|み}る)",
+  "explanation": "Respectful verbs ({尊敬語|そんけいご}) raise the person you’re talking about: a customer, a partner’s parents, your boss. A few common verbs have their own: いらっしゃる (to be, go, come), {召|め}し{上|あ}がる (to eat, drink), おっしゃる (to say), ご{覧|らん}になる (to see). Many others take お + ます stem + になる: お{帰|かえ}りになる. You never use them about yourself.",
+  "natural": "Shop staff use them all the time, and they’re what to use with a partner’s parents: お{父|とう}さんは{何|なに}を{召|め}し{上|あ}がりますか.",
+  "stiff": "Never use them for your own actions: {私|わたし}がいらっしゃいます is a real slip. For yourself, use the humble verbs in the next lesson.",
+  "examples": [
+    {
+      "id": "gx-sonkei-1",
+      "japanese": "何を召し上がりますか。",
+      "furigana": "{何|なに}を{召|め}し{上|あ}がりますか。",
+      "english": "What would you like to eat?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{何|なに}を",
+          "w": "w-nani"
+        },
+        {
+          "t": "{召|め}し{上|あ}がりますか。"
+        }
+      ],
+      "gap": {
+        "before": "{何|なに}を",
+        "answer": "{召|め}し{上|あ}がりますか",
+        "after": "。",
+        "options": [
+          "{召|め}し{上|あ}がりますか",
+          "いただきますか",
+          "{食|た}べますか"
+        ],
+        "ok": [
+          "{食|た}べますか"
+        ],
+        "note": "食べますか is polite; 召し上がりますか also shows respect.",
+        "why": "For a guest or someone above you: 召し上がる. いただく is humble, for yourself."
+      },
+      "audio": "audio/ja/grammar/gx-sonkei-1.mp3",
+      "tags": [
+        "grammar",
+        "sonkei"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-sonkei-2",
+      "japanese": "明日はお宅にいらっしゃいますか。",
+      "furigana": "{明日|あした}はお{宅|たく}にいらっしゃいますか。",
+      "english": "Will you be at home tomorrow?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "お{宅|たく}に"
+        },
+        {
+          "t": "いらっしゃいますか。"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}はお{宅|たく}に",
+        "answer": "いらっしゃいますか",
+        "after": "。",
+        "options": [
+          "いらっしゃいますか",
+          "おりますか",
+          "{参|まい}りますか"
+        ],
+        "why": "The other person “is”: いらっしゃる. おる and 参る are humble, for yourself."
+      },
+      "audio": "audio/ja/grammar/gx-sonkei-2.mp3",
+      "tags": [
+        "grammar",
+        "sonkei"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-sonkei-3",
+      "japanese": "先生がそうおっしゃっていました。",
+      "furigana": "{先生|せんせい}がそうおっしゃっていました。",
+      "english": "The teacher said so.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{先生|せんせい}が",
+          "w": "w-sensei"
+        },
+        {
+          "t": "そう"
+        },
+        {
+          "t": "おっしゃっていました。"
+        }
+      ],
+      "gap": {
+        "before": "{先生|せんせい}がそう",
+        "answer": "おっしゃって",
+        "after": "いました。",
+        "options": [
+          "おっしゃって",
+          "{申|もう}して"
+        ],
+        "why": "What the teacher said: おっしゃる. 申す is humble, for yourself."
+      },
+      "audio": "audio/ja/grammar/gx-sonkei-3.mp3",
+      "tags": [
+        "grammar",
+        "sonkei"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-sonkei-4",
+      "japanese": "この写真、ご覧になりましたか。",
+      "furigana": "この{写真|しゃしん}、ご{覧|らん}になりましたか。",
+      "english": "Have you seen this photo?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{写真|しゃしん}、",
+          "w": "w-shashin"
+        },
+        {
+          "t": "ご{覧|らん}になりましたか。"
+        }
+      ],
+      "gap": {
+        "before": "この{写真|しゃしん}、",
+        "answer": "ご{覧|らん}になりましたか",
+        "after": "。",
+        "options": [
+          "ご{覧|らん}になりましたか",
+          "{拝見|はいけん}しましたか"
+        ],
+        "why": "The other person seeing: ご覧になる. 拝見する is humble, for yourself."
+      },
+      "audio": "audio/ja/grammar/gx-sonkei-4.mp3",
+      "tags": [
+        "grammar",
+        "sonkei"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

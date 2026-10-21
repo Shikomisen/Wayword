@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "id": "words-thinking",
+  "title": "Opinions & Ideas",
+  "description": "Saying what you think and why: opinions, reasons, experience, probably, definitely, after all, for example.",
+  "items": [
+    {
+      "id": "w-iken",
+      "japanese": "意見",
+      "furigana": "{意見|いけん}",
+      "english": "opinion",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-iken.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kangae",
+      "japanese": "考え",
+      "furigana": "{考|かんが}え",
+      "english": "idea, thought",
+      "pos": "noun",
+      "usage": "いい考えだね — good idea!",
+      "audio": "audio/ja/words/w-kangae.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-riyuu",
+      "japanese": "理由",
+      "furigana": "{理由|りゆう}",
+      "english": "reason",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-riyuu.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-keiken",
+      "japanese": "経験",
+      "furigana": "{経験|けいけん}",
+      "english": "experience",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-keiken.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hontou",
+      "japanese": "本当",
+      "furigana": "{本当|ほんとう}",
+      "english": "truth; real",
+      "pos": "noun",
+      "usage": "本当に — really. 本当？ / ほんと？ — really?",
+      "audio": "audio/ja/words/w-hontou.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tashika",
+      "japanese": "確か",
+      "furigana": "{確|たし}か",
+      "english": "certain; if I remember right",
+      "pos": "na-adjective",
+      "usage": "As an adverb, 確か… is “if I remember rightly…”.",
+      "audio": "audio/ja/words/w-tashika.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tabun",
+      "japanese": "多分",
+      "furigana": "{多分|たぶん}",
+      "english": "probably, maybe",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-tabun.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kitto",
+      "japanese": "きっと",
+      "english": "surely, I bet",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-kitto.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-zettai",
+      "japanese": "絶対",
+      "furigana": "{絶対|ぜったい}",
+      "english": "definitely, absolutely",
+      "pos": "adverb",
+      "usage": "絶対おいしいよ — you’ll love it, I promise.",
+      "audio": "audio/ja/words/w-zettai.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yappari",
+      "japanese": "やっぱり",
+      "english": "after all; as expected",
+      "pos": "adverb",
+      "usage": "Changing your mind: やっぱりこっちにする — actually, I’ll have this one.",
+      "audio": "audio/ja/words/w-yappari.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-jitsuwa",
+      "japanese": "実は",
+      "furigana": "{実|じつ}は",
+      "english": "actually, to tell the truth",
+      "pos": "adverb",
+      "usage": "Starts a confession or news: 実は、来月引っ越すんだ.",
+      "audio": "audio/ja/words/w-jitsuwa.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tatoeba",
+      "japanese": "例えば",
+      "furigana": "{例|たと}えば",
+      "english": "for example",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-tatoeba.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tokuni",
+      "japanese": "特に",
+      "furigana": "{特|とく}に",
+      "english": "especially; (not) particularly",
+      "pos": "adverb",
+      "usage": "特にない — nothing in particular.",
+      "audio": "audio/ja/words/w-tokuni.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kekkou",
+      "japanese": "結構",
+      "furigana": "{結構|けっこう}",
+      "english": "quite, rather",
+      "pos": "adverb",
+      "usage": "結構です alone means “no thank you”.",
+      "audio": "audio/ja/words/w-kekkou.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-igaito",
+      "japanese": "意外と",
+      "furigana": "{意外|いがい}と",
+      "english": "surprisingly, unexpectedly",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-igaito.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sansei",
+      "japanese": "賛成",
+      "furigana": "{賛成|さんせい}",
+      "english": "agreement, being for (an idea)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-sansei.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hantai",
+      "japanese": "反対",
+      "furigana": "{反対|はんたい}",
+      "english": "opposition; the opposite",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hantai.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mondai",
+      "japanese": "問題",
+      "furigana": "{問題|もんだい}",
+      "english": "problem; question (on a test)",
+      "pos": "noun",
+      "usage": "問題ない — no problem.",
+      "audio": "audio/ja/words/w-mondai.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-houhou",
+      "japanese": "方法",
+      "furigana": "{方法|ほうほう}",
+      "english": "way, method",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-houhou.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-baai",
+      "japanese": "場合",
+      "furigana": "{場合|ばあい}",
+      "english": "case, occasion",
+      "pos": "noun",
+      "usage": "雨の場合は — if it rains (in the case of rain).",
+      "audio": "audio/ja/words/w-baai.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kekka",
+      "japanese": "結果",
+      "furigana": "{結果|けっか}",
+      "english": "result",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kekka.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-imi",
+      "japanese": "意味",
+      "furigana": "{意味|いみ}",
+      "english": "meaning",
+      "pos": "noun",
+      "usage": "どういう意味？ — what do you mean?",
+      "audio": "audio/ja/words/w-imi.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kangaeru",
+      "japanese": "考える",
+      "furigana": "{考|かんが}える",
+      "english": "to think about, to consider",
+      "pos": "verb",
+      "forms": {
+        "masu": "{考|かんが}えます",
+        "te": "{考|かんが}えて"
+      },
+      "usage": "思う is an opinion or feeling; 考える is thinking something through.",
+      "audio": "audio/ja/words/w-kangaeru.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kigasuru",
+      "japanese": "気がする",
+      "furigana": "{気|き}がする",
+      "english": "to have a feeling (that)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{気|き}がします",
+        "te": "{気|き}がして"
+      },
+      "usage": "雨が降る気がする — I have a feeling it’ll rain.",
+      "audio": "audio/ja/words/w-kigasuru.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chigau",
+      "japanese": "違う",
+      "furigana": "{違|ちが}う",
+      "english": "to be different; to be wrong",
+      "pos": "verb",
+      "forms": {
+        "masu": "{違|ちが}います",
+        "te": "{違|ちが}って"
+      },
+      "usage": "違います — that’s not right — is a polite way to correct someone.",
+      "audio": "audio/ja/words/w-chigau.mp3",
+      "tags": ["thinking"],
+      "difficulty": 3
+    }
+  ]
+}

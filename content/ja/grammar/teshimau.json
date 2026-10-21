@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-teshimau",
+  "connector": "〜てしまう",
+  "gloss": "done (completely, or by mistake)",
+  "title": "〜てしまう・〜ちゃう — done, oops",
+  "pattern": "verb て form + しまう (casual: 〜ちゃう, 〜じゃう)",
+  "explanation": "てしまう says something is done and finished, often with regret or by accident: {傘|かさ}を{忘|わす}れてしまった — I (went and) forgot my umbrella. Casual speech shrinks it: {忘|わす}れちゃった, {飲|の}んじゃった. It can also mean “all the way”: {全部|ぜんぶ}{食|た}べちゃった — I ate the whole lot.",
+  "natural": "Owning up to small mistakes: ごめん、{寝坊|ねぼう}しちゃった — sorry, I overslept.",
+  "stiff": "For something you meant to do and are pleased about, it can sound like an accident. Leave it off unless you mean “all done” or “oops”.",
+  "examples": [
+    {
+      "id": "gx-teshimau-1",
+      "japanese": "電車に傘を忘れてしまいました。",
+      "furigana": "{電車|でんしゃ}に{傘|かさ}を{忘|わす}れてしまいました。",
+      "english": "I left my umbrella on the train.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{電車|でんしゃ}に",
+          "w": "w-densha"
+        },
+        {
+          "t": "{傘|かさ}を",
+          "w": "w-kasa"
+        },
+        {
+          "t": "{忘|わす}れてしまいました。",
+          "w": "w-wasureru"
+        }
+      ],
+      "gap": {
+        "before": "{電車|でんしゃ}に{傘|かさ}を{忘|わす}れて",
+        "answer": "しまいました",
+        "after": "。",
+        "options": [
+          "しまいました",
+          "みました",
+          "おきました"
+        ],
+        "why": "By accident, with regret: てしまいました."
+      },
+      "audio": "audio/ja/grammar/gx-teshimau-1.mp3",
+      "tags": [
+        "grammar",
+        "teshimau"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-teshimau-2",
+      "japanese": "ごめん、寝坊しちゃった。",
+      "furigana": "ごめん、{寝坊|ねぼう}しちゃった。",
+      "english": "Sorry, I overslept.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "ごめん、"
+        },
+        {
+          "t": "{寝坊|ねぼう}",
+          "w": "w-nebou"
+        },
+        {
+          "t": "しちゃった。",
+          "w": "w-suru"
+        }
+      ],
+      "gap": {
+        "before": "ごめん、{寝坊|ねぼう}し",
+        "answer": "ちゃった",
+        "after": "。",
+        "options": [
+          "ちゃった",
+          "てみた",
+          "ておいた"
+        ],
+        "why": "Casual てしまった: ちゃった."
+      },
+      "audio": "audio/ja/grammar/gx-teshimau-2.mp3",
+      "tags": [
+        "grammar",
+        "teshimau"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-teshimau-3",
+      "japanese": "ケーキ、全部食べちゃった。",
+      "furigana": "{ケーキ|けーき}、{全部|ぜんぶ}{食|た}べちゃった。",
+      "english": "I ate the whole cake.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{ケーキ|けーき}、"
+        },
+        {
+          "t": "{全部|ぜんぶ}",
+          "w": "w-zenbu"
+        },
+        {
+          "t": "{食|た}べちゃった。",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "{ケーキ|けーき}、{全部|ぜんぶ}{食|た}べ",
+        "answer": "ちゃった",
+        "after": "。",
+        "options": [
+          "ちゃった",
+          "てみた",
+          "ておいた"
+        ],
+        "why": "All of it, and oops: 食べちゃった."
+      },
+      "audio": "audio/ja/grammar/gx-teshimau-3.mp3",
+      "tags": [
+        "grammar",
+        "teshimau"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-teshimau-4",
+      "japanese": "財布をなくしてしまって、困っています。",
+      "furigana": "{財布|さいふ}をなくしてしまって、{困|こま}っています。",
+      "english": "I’ve lost my wallet, and I’m in trouble.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{財布|さいふ}を",
+          "w": "w-saifu"
+        },
+        {
+          "t": "なくしてしまって、"
+        },
+        {
+          "t": "{困|こま}っています。",
+          "w": "w-komaru"
+        }
+      ],
+      "gap": {
+        "before": "{財布|さいふ}をなくして",
+        "answer": "しまって",
+        "after": "、{困|こま}っています。",
+        "options": [
+          "しまって",
+          "みて",
+          "おいて"
+        ],
+        "why": "Lost, and it’s a problem: てしまって."
+      },
+      "audio": "audio/ja/grammar/gx-teshimau-4.mp3",
+      "tags": [
+        "grammar",
+        "teshimau"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

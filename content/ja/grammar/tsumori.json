@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-tsumori",
+  "connector": "〜つもり",
+  "gloss": "intend to, plan to",
+  "title": "〜つもり — I’m planning to…",
+  "pattern": "dictionary form / ない form + つもり(です)",
+  "explanation": "つもり says what you intend to do: {来年|らいねん}、{日本|にほん}に{行|い}くつもりです — I’m planning to go to Japan next year. Not intending: {行|い}かないつもり. For fixed plans with times, {予定|よてい}です is usual: {三時|さんじ}に{着|つ}く{予定|よてい}です.",
+  "natural": "Talking about your plans: {週末|しゅうまつ}は{家|いえ}でゆっくりするつもり — I’m planning to take it easy at home.",
+  "stiff": "Asking someone above you {行|い}くつもりですか can sound like a challenge: “do you really intend to…?”. ご{予定|よてい}は？ is softer.",
+  "examples": [
+    {
+      "id": "gx-tsumori-1",
+      "japanese": "来年、日本に住むつもりです。",
+      "furigana": "{来年|らいねん}、{日本|にほん}に{住|す}むつもりです。",
+      "english": "I’m planning to live in Japan next year.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{来年|らいねん}、",
+          "w": "w-rainen"
+        },
+        {
+          "t": "{日本|にほん}に",
+          "w": "w-nihon"
+        },
+        {
+          "t": "{住|す}むつもりです。",
+          "w": "w-sumu"
+        }
+      ],
+      "gap": {
+        "before": "{来年|らいねん}、{日本|にほん}に{住|す}む",
+        "answer": "つもり",
+        "after": "です。",
+        "options": [
+          "つもり",
+          "ところ",
+          "ばかり"
+        ],
+        "why": "Intending: dictionary form + つもり."
+      },
+      "audio": "audio/ja/grammar/gx-tsumori-1.mp3",
+      "tags": [
+        "grammar",
+        "tsumori"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tsumori-2",
+      "japanese": "今日はお酒を飲まないつもり。",
+      "furigana": "{今日|きょう}はお{酒|さけ}を{飲|の}まないつもり。",
+      "english": "I’m not planning to drink today.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "お{酒|さけ}を",
+          "w": "w-osake"
+        },
+        {
+          "t": "{飲|の}まないつもり。",
+          "w": "w-nomu"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}はお{酒|さけ}を",
+        "answer": "{飲|の}まない",
+        "after": "つもり。",
+        "options": [
+          "{飲|の}まない",
+          "{飲|の}んだ",
+          "{飲|の}みたい"
+        ],
+        "why": "Intending not to: ない form + つもり."
+      },
+      "audio": "audio/ja/grammar/gx-tsumori-2.mp3",
+      "tags": [
+        "grammar",
+        "tsumori"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tsumori-3",
+      "japanese": "週末は何をするつもり？",
+      "furigana": "{週末|しゅうまつ}は{何|なに}をするつもり？",
+      "english": "What are you planning to do at the weekend?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{週末|しゅうまつ}は",
+          "w": "w-shuumatsu"
+        },
+        {
+          "t": "{何|なに}を",
+          "w": "w-nani"
+        },
+        {
+          "t": "するつもり？",
+          "w": "w-suru"
+        }
+      ],
+      "gap": {
+        "before": "{週末|しゅうまつ}は{何|なに}をする",
+        "answer": "つもり",
+        "after": "？",
+        "options": [
+          "つもり",
+          "ところ",
+          "こと"
+        ],
+        "why": "Asking about someone’s plans: するつもり？"
+      },
+      "audio": "audio/ja/grammar/gx-tsumori-3.mp3",
+      "tags": [
+        "grammar",
+        "tsumori"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tsumori-4",
+      "japanese": "飛行機は三時に着く予定です。",
+      "furigana": "{飛行機|ひこうき}は{三時|さんじ}に{着|つ}く{予定|よてい}です。",
+      "english": "The plane is due to arrive at three.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{飛行機|ひこうき}は",
+          "w": "w-hikouki"
+        },
+        {
+          "t": "{三時|さんじ}に"
+        },
+        {
+          "t": "{着|つ}く{予定|よてい}です。",
+          "w": "w-tsuku"
+        }
+      ],
+      "gap": {
+        "before": "{飛行機|ひこうき}は{三時|さんじ}に{着|つ}く",
+        "answer": "{予定|よてい}",
+        "after": "です。",
+        "options": [
+          "{予定|よてい}",
+          "つもり",
+          "ため"
+        ],
+        "why": "Timetables and fixed plans: 予定. A plane has no intentions, so not つもり."
+      },
+      "audio": "audio/ja/grammar/gx-tsumori-4.mp3",
+      "tags": [
+        "grammar",
+        "tsumori"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

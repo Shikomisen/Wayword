@@ -1,0 +1,473 @@
+{
+  "schemaVersion": 1,
+  "id": "neighbour",
+  "title": "Chatting with a neighbour",
+  "category": "smalltalk",
+  "setting": "You’ve been staying in an apartment for a week. Taking the rubbish out one morning, you meet the older woman from next door.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "neighbour",
+      "japanese": "おはようございます。今日は暑いですね。",
+      "furigana": [
+        {
+          "b": "おはようございます。"
+        },
+        {
+          "b": "今日",
+          "r": "きょう"
+        },
+        {
+          "b": "は"
+        },
+        {
+          "b": "暑",
+          "r": "あつ"
+        },
+        {
+          "b": "いですね。"
+        }
+      ],
+      "romaji": "Ohayō gozaimasu. Kyō wa atsui desu ne.",
+      "english": "Good morning. It’s hot today, isn’t it?",
+      "audio": "audio/ja/scenario/neighbour-n1.mp3",
+      "audioHint": "おはようございます。きょうはあついですね",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "おはようございます。本当に暑いですね。",
+          "furigana": [
+            {
+              "b": "おはようございます。"
+            },
+            {
+              "b": "本当",
+              "r": "ほんとう"
+            },
+            {
+              "b": "に"
+            },
+            {
+              "b": "暑",
+              "r": "あつ"
+            },
+            {
+              "b": "いですね。"
+            }
+          ],
+          "romaji": "Ohayō gozaimasu. Hontō ni atsui desu ne.",
+          "english": "Good morning. It really is hot.",
+          "feedback": "Greet her back, then agree: the weather is small talk’s safest topic.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "gre-01",
+          "quality": "good",
+          "feedback": "A good start. Agreeing about the heat as well (暑いですね) would keep the chat going.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "暑いです。",
+          "furigana": [
+            {
+              "b": "暑",
+              "r": "あつ"
+            },
+            {
+              "b": "いです。"
+            }
+          ],
+          "romaji": "Atsui desu.",
+          "english": "It’s hot.",
+          "feedback": "True, but flat. ね (isn’t it?) is what turns a fact into a shared moment: 暑いですね.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "neighbour",
+      "japanese": "最近、引っ越してきたんですか。",
+      "furigana": [
+        {
+          "b": "最近",
+          "r": "さいきん"
+        },
+        {
+          "b": "、"
+        },
+        {
+          "b": "引",
+          "r": "ひ"
+        },
+        {
+          "b": "っ"
+        },
+        {
+          "b": "越",
+          "r": "こ"
+        },
+        {
+          "b": "してきたんですか。"
+        }
+      ],
+      "romaji": "Saikin, hikkoshite kita n desu ka.",
+      "english": "Did you just move in?",
+      "audio": "audio/ja/scenario/neighbour-n2.mp3",
+      "audioHint": "さいきん、ひっこしてきたんですか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "はい、先週引っ越してきました。よろしくお願いします。",
+          "furigana": [
+            {
+              "b": "はい、"
+            },
+            {
+              "b": "先週",
+              "r": "せんしゅう"
+            },
+            {
+              "b": "引",
+              "r": "ひ"
+            },
+            {
+              "b": "っ"
+            },
+            {
+              "b": "越",
+              "r": "こ"
+            },
+            {
+              "b": "してきました。よろしくお"
+            },
+            {
+              "b": "願",
+              "r": "ねが"
+            },
+            {
+              "b": "いします。"
+            }
+          ],
+          "romaji": "Hai, senshū hikkoshite kimashita. Yoroshiku onegai shimasu.",
+          "english": "Yes, I moved in last week. Nice to meet you.",
+          "feedback": "Perfect. よろしくお願いします is exactly right for a new neighbour.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "japanese": "はい、一か月だけ住んでいます。",
+          "furigana": [
+            {
+              "b": "はい、"
+            },
+            {
+              "b": "一",
+              "r": "いっ"
+            },
+            {
+              "b": "か"
+            },
+            {
+              "b": "月",
+              "r": "げつ"
+            },
+            {
+              "b": "だけ"
+            },
+            {
+              "b": "住",
+              "r": "す"
+            },
+            {
+              "b": "んでいます。"
+            }
+          ],
+          "romaji": "Hai, ikkagetsu dake sunde imasu.",
+          "english": "Yes, I’m living here for just a month.",
+          "feedback": "Clear, and it tells her how long you’ll be around.",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "いいえ、引っ越しです。",
+          "furigana": [
+            {
+              "b": "いいえ、"
+            },
+            {
+              "b": "引",
+              "r": "ひ"
+            },
+            {
+              "b": "っ"
+            },
+            {
+              "b": "越",
+              "r": "こ"
+            },
+            {
+              "b": "しです。"
+            }
+          ],
+          "romaji": "Iie, hikkoshi desu.",
+          "english": "No, it’s a move.",
+          "feedback": "Confusing: 引っ越し is the noun “a move”, and いいえ says you didn’t. Answer はい, then say what you did: 先週引っ越してきました.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "neighbour",
+      "japanese": "どちらから来たんですか。",
+      "furigana": [
+        {
+          "b": "どちらから"
+        },
+        {
+          "b": "来",
+          "r": "き"
+        },
+        {
+          "b": "たんですか。"
+        }
+      ],
+      "romaji": "Dochira kara kita n desu ka.",
+      "english": "Where are you from?",
+      "audio": "audio/ja/scenario/neighbour-n3.mp3",
+      "audioHint": "どちらからきたんですか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "ニュージーランドから来ました。",
+          "furigana": [
+            {
+              "b": "ニュージーランドから"
+            },
+            {
+              "b": "来",
+              "r": "き"
+            },
+            {
+              "b": "ました。"
+            }
+          ],
+          "romaji": "Nyūjīrando kara kimashita.",
+          "english": "I’m from New Zealand.",
+          "feedback": "The standard answer: country + から来ました.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "sma-05",
+          "quality": "good",
+          "feedback": "The same pattern, for another country: から来ました.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "ニュージーランドです。あなたは？",
+          "furigana": [
+            {
+              "b": "ニュージーランドです。あなたは？"
+            }
+          ],
+          "romaji": "Nyūjīrando desu. Anata wa?",
+          "english": "New Zealand. And you?",
+          "feedback": "Asking back is good, but あなた sounds distant between neighbours. Ask about her instead: こちらには長いんですか (have you lived here long?).",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "neighbour",
+      "japanese": "そうなんですか。日本の生活はどうですか。",
+      "furigana": [
+        {
+          "b": "そうなんですか。"
+        },
+        {
+          "b": "日本",
+          "r": "にほん"
+        },
+        {
+          "b": "の"
+        },
+        {
+          "b": "生活",
+          "r": "せいかつ"
+        },
+        {
+          "b": "はどうですか。"
+        }
+      ],
+      "romaji": "Sō nan desu ka. Nihon no seikatsu wa dō desu ka.",
+      "english": "Oh, really? How are you finding life in Japan?",
+      "audio": "audio/ja/scenario/neighbour-n4.mp3",
+      "audioHint": "そうなんですか。にほんのせいかつはどうですか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "楽しいです。でも、ごみの分け方が難しいです。",
+          "furigana": [
+            {
+              "b": "楽",
+              "r": "たの"
+            },
+            {
+              "b": "しいです。でも、ごみの"
+            },
+            {
+              "b": "分",
+              "r": "わ"
+            },
+            {
+              "b": "け"
+            },
+            {
+              "b": "方",
+              "r": "かた"
+            },
+            {
+              "b": "が"
+            },
+            {
+              "b": "難",
+              "r": "むずか"
+            },
+            {
+              "b": "しいです。"
+            }
+          ],
+          "romaji": "Tanoshii desu. Demo, gomi no wakekata ga muzukashii desu.",
+          "english": "It’s fun. But sorting the rubbish is hard.",
+          "feedback": "An honest answer that invites help: sorting rubbish is the classic newcomer puzzle.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "japanese": "とても楽しいです。みんな親切です。",
+          "furigana": [
+            {
+              "b": "とても"
+            },
+            {
+              "b": "楽",
+              "r": "たの"
+            },
+            {
+              "b": "しいです。みんな"
+            },
+            {
+              "b": "親切",
+              "r": "しんせつ"
+            },
+            {
+              "b": "です。"
+            }
+          ],
+          "romaji": "Totemo tanoshii desu. Minna shinsetsu desu.",
+          "english": "I’m loving it. Everyone’s so kind.",
+          "feedback": "Warm and positive: she’ll be pleased.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "生活はどうですか。",
+          "furigana": [
+            {
+              "b": "生活",
+              "r": "せいかつ"
+            },
+            {
+              "b": "はどうですか。"
+            }
+          ],
+          "romaji": "Seikatsu wa dō desu ka.",
+          "english": "How is life?",
+          "feedback": "That repeats her question. Answer first; then you can ask her something back.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "neighbour",
+      "japanese": "分からないことがあったら、いつでも聞いてくださいね。",
+      "furigana": [
+        {
+          "b": "分",
+          "r": "わ"
+        },
+        {
+          "b": "からないことがあったら、いつでも"
+        },
+        {
+          "b": "聞",
+          "r": "き"
+        },
+        {
+          "b": "いてくださいね。"
+        }
+      ],
+      "romaji": "Wakaranai koto ga attara, itsu demo kiite kudasai ne.",
+      "english": "If there’s anything you’re not sure about, just ask any time.",
+      "audio": "audio/ja/scenario/neighbour-n5.mp3",
+      "audioHint": "わからないことがあったら、いつでもきいてくださいね",
+      "options": [
+        {
+          "phraseId": "gre-05",
+          "quality": "good",
+          "feedback": "A good, simple thanks.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "japanese": "ありがとうございます。助かります。",
+          "furigana": [
+            {
+              "b": "ありがとうございます。"
+            },
+            {
+              "b": "助",
+              "r": "たす"
+            },
+            {
+              "b": "かります。"
+            }
+          ],
+          "romaji": "Arigatō gozaimasu. Tasukarimasu.",
+          "english": "Thank you. That’s a big help.",
+          "feedback": "助かります (that helps me) is a warm, natural thanks for an offer.",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "はい、聞きます。",
+          "furigana": [
+            {
+              "b": "はい、"
+            },
+            {
+              "b": "聞",
+              "r": "き"
+            },
+            {
+              "b": "きます。"
+            }
+          ],
+          "romaji": "Hai, kikimasu.",
+          "english": "Yes, I will ask.",
+          "feedback": "Grammatical, but it sounds like you’re following an instruction. Thank her for the offer instead.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "romaji": "",
+      "english": "Done. Greet, agree about the weather, say where you’re from, and thank people for their offers: most chats with neighbours run on exactly that.",
+      "end": true,
+      "options": []
+    }
+  }
+}

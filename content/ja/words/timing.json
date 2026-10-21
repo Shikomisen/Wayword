@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "id": "words-timing",
+  "title": "Time & How Often",
+  "description": "When and how often: recently, one of these days, for the first time, the other day, next month, suddenly.",
+  "items": [
+    {
+      "id": "w-saikin",
+      "japanese": "最近",
+      "furigana": "{最近|さいきん}",
+      "english": "recently, lately",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-saikin.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mukashi",
+      "japanese": "昔",
+      "furigana": "{昔|むかし}",
+      "english": "long ago, the old days",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-mukashi.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shourai",
+      "japanese": "将来",
+      "furigana": "{将来|しょうらい}",
+      "english": "the future (one’s own)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shourai.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sonouchi",
+      "japanese": "そのうち",
+      "english": "one of these days, before long",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-sonouchi.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tamani",
+      "japanese": "たまに",
+      "english": "once in a while",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-tamani.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yoku",
+      "japanese": "よく",
+      "english": "often; well",
+      "pos": "adverb",
+      "usage": "よく来ます — I come often. よくできました — well done.",
+      "audio": "audio/ja/words/w-yoku.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-zutto",
+      "japanese": "ずっと",
+      "english": "all along, the whole time; by far",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-zutto.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hajimete",
+      "japanese": "初めて",
+      "furigana": "{初|はじ}めて",
+      "english": "for the first time",
+      "pos": "adverb",
+      "usage": "初めて日本に来ました — this is my first time in Japan.",
+      "audio": "audio/ja/words/w-hajimete.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hisashiburi",
+      "japanese": "久しぶり",
+      "furigana": "{久|ひさ}しぶり",
+      "english": "a long time (since last time)",
+      "pos": "noun",
+      "usage": "久しぶり！ — long time no see!",
+      "audio": "audio/ja/words/w-hisashiburi.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-saisho",
+      "japanese": "最初",
+      "furigana": "{最初|さいしょ}",
+      "english": "the first, the beginning",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-saisho.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-saigo",
+      "japanese": "最後",
+      "furigana": "{最後|さいご}",
+      "english": "the last, the end",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-saigo.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tochuu",
+      "japanese": "途中",
+      "furigana": "{途中|とちゅう}",
+      "english": "on the way; halfway through",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-tochuu.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mae",
+      "japanese": "前",
+      "furigana": "{前|まえ}",
+      "english": "before; in front of",
+      "pos": "noun",
+      "usage": "Time or place: 三年前 (three years ago), 駅の前 (in front of the station).",
+      "audio": "audio/ja/words/w-mae.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kondo",
+      "japanese": "今度",
+      "furigana": "{今度|こんど}",
+      "english": "next time; some time soon",
+      "pos": "noun",
+      "usage": "今度、ご飯行こう — let’s get dinner some time.",
+      "audio": "audio/ja/words/w-kondo.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-konoaida",
+      "japanese": "この間",
+      "furigana": "この{間|あいだ}",
+      "english": "the other day",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-konoaida.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-maishuu",
+      "japanese": "毎週",
+      "furigana": "{毎週|まいしゅう}",
+      "english": "every week",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-maishuu.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-raigetsu",
+      "japanese": "来月",
+      "furigana": "{来月|らいげつ}",
+      "english": "next month",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-raigetsu.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sengetsu",
+      "japanese": "先月",
+      "furigana": "{先月|せんげつ}",
+      "english": "last month",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-sengetsu.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kyonen",
+      "japanese": "去年",
+      "furigana": "{去年|きょねん}",
+      "english": "last year",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kyonen.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-rainen",
+      "japanese": "来年",
+      "furigana": "{来年|らいねん}",
+      "english": "next year",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-rainen.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kyuuni",
+      "japanese": "急に",
+      "furigana": "{急|きゅう}に",
+      "english": "suddenly",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-kyuuni.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sugu",
+      "japanese": "すぐ",
+      "english": "right away, soon; close by",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-sugu.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mousugu",
+      "japanese": "もうすぐ",
+      "english": "soon, nearly",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-mousugu.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-choudo",
+      "japanese": "ちょうど",
+      "english": "exactly, just",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-choudo.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hayameni",
+      "japanese": "早めに",
+      "furigana": "{早|はや}めに",
+      "english": "a little early, in good time",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-hayameni.mp3",
+      "tags": ["time"],
+      "difficulty": 3
+    }
+  ]
+}

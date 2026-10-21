@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-temo",
+  "connector": "〜ても",
+  "gloss": "even if",
+  "title": "〜ても — even if, no matter",
+  "pattern": "verb / い-adjective て form + も; noun / な-adjective + でも",
+  "explanation": "ても means “even if”: {雨|あめ}が{降|ふ}っても{行|い}きます — I’ll go even if it rains. い-adjectives: {高|たか}くても{買|か}う — I’ll buy it even if it’s expensive. Nouns and な-adjectives take でも: {雨|あめ}でも{行|い}く. With a question word it’s “no matter…”: いくら{食|た}べても{太|ふと}らない — no matter how much I eat, I don’t put on weight.",
+  "natural": "Reassuring someone: {遅|おく}れても{大丈夫|だいじょうぶ}だよ — it’s fine even if you’re late.",
+  "stiff": "Don’t mix up ても (even if) and たら (if): {雨|あめ}が{降|ふ}ったら{行|い}かない is “if it rains, I won’t go”.",
+  "examples": [
+    {
+      "id": "gx-temo-1",
+      "japanese": "雨が降っても行きます。",
+      "furigana": "{雨|あめ}が{降|ふ}っても{行|い}きます。",
+      "english": "I’ll go even if it rains.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{雨|あめ}が",
+          "w": "w-ame"
+        },
+        {
+          "t": "{降|ふ}っても",
+          "w": "w-furu"
+        },
+        {
+          "t": "{行|い}きます。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{雨|あめ}が{降|ふ}って",
+        "answer": "も",
+        "after": "{行|い}きます。",
+        "options": [
+          "も",
+          "は",
+          "から"
+        ],
+        "why": "Even if: て + も."
+      },
+      "audio": "audio/ja/grammar/gx-temo-1.mp3",
+      "tags": [
+        "grammar",
+        "temo"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-temo-2",
+      "japanese": "遅れても大丈夫だよ。",
+      "furigana": "{遅|おく}れても{大丈夫|だいじょうぶ}だよ。",
+      "english": "It’s fine even if you’re late.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{遅|おく}れても",
+          "w": "w-okureru"
+        },
+        {
+          "t": "{大丈夫|だいじょうぶ}だよ。",
+          "w": "w-daijoubu"
+        }
+      ],
+      "gap": {
+        "before": "{遅|おく}れて",
+        "answer": "も",
+        "after": "{大丈夫|だいじょうぶ}だよ。",
+        "options": [
+          "も",
+          "から",
+          "は"
+        ],
+        "why": "Even if you’re late: 遅れても."
+      },
+      "audio": "audio/ja/grammar/gx-temo-2.mp3",
+      "tags": [
+        "grammar",
+        "temo"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-temo-3",
+      "japanese": "高くても、この靴がほしい。",
+      "furigana": "{高|たか}くても、この{靴|くつ}がほしい。",
+      "english": "I want these shoes, even if they’re expensive.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{高|たか}くても、",
+          "w": "w-takai"
+        },
+        {
+          "t": "この{靴|くつ}が",
+          "w": "w-kutsu"
+        },
+        {
+          "t": "ほしい。"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "{高|たか}くても",
+        "after": "、この{靴|くつ}がほしい。",
+        "options": [
+          "{高|たか}くても",
+          "{高|たか}いから",
+          "{高|たか}かったら"
+        ],
+        "why": "い-adjective: 高い → 高くても."
+      },
+      "audio": "audio/ja/grammar/gx-temo-3.mp3",
+      "tags": [
+        "grammar",
+        "temo"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-temo-4",
+      "japanese": "何度聞いても、分からない。",
+      "furigana": "{何度|なんど}{聞|き}いても、{分|わ}からない。",
+      "english": "No matter how many times I hear it, I don’t understand.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{何度|なんど}"
+        },
+        {
+          "t": "{聞|き}いても、",
+          "w": "w-kiku"
+        },
+        {
+          "t": "{分|わ}からない。",
+          "w": "w-wakaru"
+        }
+      ],
+      "gap": {
+        "before": "{何度|なんど}{聞|き}いて",
+        "answer": "も",
+        "after": "、{分|わ}からない。",
+        "options": [
+          "も",
+          "から",
+          "は"
+        ],
+        "why": "No matter how often: 何度…ても."
+      },
+      "audio": "audio/ja/grammar/gx-temo-4.mp3",
+      "tags": [
+        "grammar",
+        "temo"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

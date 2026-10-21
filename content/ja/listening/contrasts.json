@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "id": "contrasts",
+  "title": "Which did you hear?",
+  "description": "Sounds English speakers often miss in Japanese: long vowels, the small っ pause, and つ against す. Each pair changes the word.",
+  "sets": [
+    {
+      "id": "long",
+      "sound": "Long vowels",
+      "note": "A long vowel lasts a whole extra beat, and changes the word: おばさん is an aunt, おばあさん a grandmother. Count the beats: o-ba-a-sa-n has five.",
+      "pairs": [
+        [
+          {
+            "id": "lc-long-obasan",
+            "japanese": "おばさん",
+            "english": "aunt; middle-aged woman",
+            "audio": "audio/ja/listening/lc-long-obasan.mp3"
+          },
+          {
+            "id": "lc-long-obaasan",
+            "japanese": "おばあさん",
+            "english": "grandmother; elderly woman",
+            "audio": "audio/ja/listening/lc-long-obaasan.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-long-ojisan",
+            "japanese": "おじさん",
+            "english": "uncle; middle-aged man",
+            "audio": "audio/ja/listening/lc-long-ojisan.mp3"
+          },
+          {
+            "id": "lc-long-ojiisan",
+            "japanese": "おじいさん",
+            "english": "grandfather; elderly man",
+            "audio": "audio/ja/listening/lc-long-ojiisan.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-long-biru",
+            "japanese": "ビル",
+            "english": "building",
+            "audio": "audio/ja/listening/lc-long-biru.mp3"
+          },
+          {
+            "id": "lc-long-biiru",
+            "japanese": "ビール",
+            "english": "beer",
+            "audio": "audio/ja/listening/lc-long-biiru.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-long-tori",
+            "japanese": "とり",
+            "english": "bird",
+            "audio": "audio/ja/listening/lc-long-tori.mp3"
+          },
+          {
+            "id": "lc-long-toori",
+            "japanese": "とおり",
+            "english": "street",
+            "audio": "audio/ja/listening/lc-long-toori.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-long-yuki",
+            "japanese": "ゆき",
+            "english": "snow",
+            "audio": "audio/ja/listening/lc-long-yuki.mp3"
+          },
+          {
+            "id": "lc-long-yuuki",
+            "japanese": "ゆうき",
+            "english": "courage",
+            "audio": "audio/ja/listening/lc-long-yuuki.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-long-ie",
+            "japanese": "いえ",
+            "english": "house",
+            "audio": "audio/ja/listening/lc-long-ie.mp3"
+          },
+          {
+            "id": "lc-long-iie",
+            "japanese": "いいえ",
+            "english": "no",
+            "audio": "audio/ja/listening/lc-long-iie.mp3"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "small-tsu",
+      "sound": "The small っ",
+      "note": "っ is a beat of silence before the next sound: きって (stamp) has a tiny stop that きて (come) doesn’t. Count the beats: ki-t-te has three.",
+      "pairs": [
+        [
+          {
+            "id": "lc-small-tsu-kite",
+            "japanese": "きて",
+            "english": "come (please)",
+            "audio": "audio/ja/listening/lc-small-tsu-kite.mp3"
+          },
+          {
+            "id": "lc-small-tsu-kitte",
+            "japanese": "きって",
+            "english": "postage stamp",
+            "audio": "audio/ja/listening/lc-small-tsu-kitte.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-small-tsu-ita",
+            "japanese": "いた",
+            "english": "was there",
+            "audio": "audio/ja/listening/lc-small-tsu-ita.mp3"
+          },
+          {
+            "id": "lc-small-tsu-itta",
+            "japanese": "いった",
+            "english": "went",
+            "audio": "audio/ja/listening/lc-small-tsu-itta.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-small-tsu-oto",
+            "japanese": "おと",
+            "english": "sound",
+            "audio": "audio/ja/listening/lc-small-tsu-oto.mp3"
+          },
+          {
+            "id": "lc-small-tsu-otto",
+            "japanese": "おっと",
+            "english": "husband",
+            "audio": "audio/ja/listening/lc-small-tsu-otto.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-small-tsu-saka",
+            "japanese": "さか",
+            "english": "slope, hill",
+            "audio": "audio/ja/listening/lc-small-tsu-saka.mp3"
+          },
+          {
+            "id": "lc-small-tsu-sakka",
+            "japanese": "さっか",
+            "english": "writer",
+            "audio": "audio/ja/listening/lc-small-tsu-sakka.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-small-tsu-kako",
+            "japanese": "かこ",
+            "english": "the past",
+            "audio": "audio/ja/listening/lc-small-tsu-kako.mp3"
+          },
+          {
+            "id": "lc-small-tsu-kakko",
+            "japanese": "かっこ",
+            "english": "brackets",
+            "audio": "audio/ja/listening/lc-small-tsu-kakko.mp3"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "tsu-su",
+      "sound": "つ or す",
+      "note": "English never starts a word with つ. For つ the tongue touches just behind the teeth, like the end of “cats”; for す it doesn’t touch at all.",
+      "pairs": [
+        [
+          {
+            "id": "lc-tsu-su-itsu",
+            "japanese": "いつ",
+            "english": "when",
+            "audio": "audio/ja/listening/lc-tsu-su-itsu.mp3"
+          },
+          {
+            "id": "lc-tsu-su-isu",
+            "japanese": "いす",
+            "english": "chair",
+            "audio": "audio/ja/listening/lc-tsu-su-isu.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-tsu-su-natsu",
+            "japanese": "なつ",
+            "english": "summer",
+            "audio": "audio/ja/listening/lc-tsu-su-natsu.mp3"
+          },
+          {
+            "id": "lc-tsu-su-nasu",
+            "japanese": "なす",
+            "english": "eggplant",
+            "audio": "audio/ja/listening/lc-tsu-su-nasu.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-tsu-su-tsuki",
+            "japanese": "つき",
+            "english": "moon",
+            "audio": "audio/ja/listening/lc-tsu-su-tsuki.mp3"
+          },
+          {
+            "id": "lc-tsu-su-suki",
+            "japanese": "すき",
+            "english": "like",
+            "audio": "audio/ja/listening/lc-tsu-su-suki.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-tsu-su-tsugi",
+            "japanese": "つぎ",
+            "english": "next",
+            "audio": "audio/ja/listening/lc-tsu-su-tsugi.mp3"
+          },
+          {
+            "id": "lc-tsu-su-sugi",
+            "japanese": "すぎ",
+            "english": "past (the hour)",
+            "audio": "audio/ja/listening/lc-tsu-su-sugi.mp3"
+          }
+        ]
+      ]
+    }
+  ]
+}

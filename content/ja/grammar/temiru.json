@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-temiru",
+  "connector": "〜てみる",
+  "gloss": "try doing (and see)",
+  "title": "〜てみる — try it and see",
+  "pattern": "verb て form + みる",
+  "explanation": "〜てみる is “do it and see”: trying something out. {食|た}べてみる — try eating it (and see what it’s like). It changes like みる: {食|た}べてみたい (I’d like to try it), {着|き}てみてもいいですか (may I try it on?), やってみて (give it a go).",
+  "natural": "Perfect for food, clothes and new experiences: {一度|いちど}{温泉|おんせん}に{行|い}ってみたい — I’d like to try a hot spring once.",
+  "stiff": "Trying hard to do something, and maybe failing, isn’t てみる but ようとする: {開|あ}けようとした — I tried to open it.",
+  "examples": [
+    {
+      "id": "gx-temiru-1",
+      "japanese": "これ、食べてみて。",
+      "furigana": "これ、{食|た}べてみて。",
+      "english": "Try this.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "これ、",
+          "w": "w-kore"
+        },
+        {
+          "t": "{食|た}べて",
+          "w": "w-taberu"
+        },
+        {
+          "t": "みて。"
+        }
+      ],
+      "gap": {
+        "before": "これ、{食|た}べて",
+        "answer": "みて",
+        "after": "。",
+        "options": [
+          "みて",
+          "いて",
+          "おいて"
+        ],
+        "why": "Try it and see: て + みる."
+      },
+      "audio": "audio/ja/grammar/gx-temiru-1.mp3",
+      "tags": [
+        "grammar",
+        "temiru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-temiru-2",
+      "japanese": "この服、着てみてもいいですか。",
+      "furigana": "この{服|ふく}、{着|き}てみてもいいですか。",
+      "english": "May I try this on?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{服|ふく}、",
+          "w": "w-fuku"
+        },
+        {
+          "t": "{着|き}てみても",
+          "w": "w-kiru"
+        },
+        {
+          "t": "いいですか。"
+        }
+      ],
+      "gap": {
+        "before": "この{服|ふく}、{着|き}て",
+        "answer": "みても",
+        "after": "いいですか。",
+        "options": [
+          "みても",
+          "おいても",
+          "しまっても"
+        ],
+        "why": "Trying something on: 着てみる, asked with てもいいですか."
+      },
+      "audio": "audio/ja/grammar/gx-temiru-2.mp3",
+      "tags": [
+        "grammar",
+        "temiru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-temiru-3",
+      "japanese": "一度、温泉に行ってみたいです。",
+      "furigana": "{一度|いちど}、{温泉|おんせん}に{行|い}ってみたいです。",
+      "english": "I’d like to try going to a hot spring some time.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{一度|いちど}、"
+        },
+        {
+          "t": "{温泉|おんせん}に",
+          "w": "w-onsen"
+        },
+        {
+          "t": "{行|い}ってみたいです。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{一度|いちど}、{温泉|おんせん}に{行|い}って",
+        "answer": "みたい",
+        "after": "です。",
+        "options": [
+          "みたい",
+          "おきたい",
+          "しまいたい"
+        ],
+        "why": "Wanting to try: てみたい."
+      },
+      "audio": "audio/ja/grammar/gx-temiru-3.mp3",
+      "tags": [
+        "grammar",
+        "temiru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-temiru-4",
+      "japanese": "分からなかったら、先生に聞いてみたら？",
+      "furigana": "{分|わ}からなかったら、{先生|せんせい}に{聞|き}いてみたら？",
+      "english": "If you don’t know, why not try asking the teacher?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{分|わ}からなかったら、",
+          "w": "w-wakaru"
+        },
+        {
+          "t": "{先生|せんせい}に",
+          "w": "w-sensei"
+        },
+        {
+          "t": "{聞|き}いてみたら？",
+          "w": "w-kiku"
+        }
+      ],
+      "gap": {
+        "before": "{分|わ}からなかったら、{先生|せんせい}に{聞|き}いて",
+        "answer": "みたら",
+        "after": "？",
+        "options": [
+          "みたら",
+          "おいたら",
+          "いたら"
+        ],
+        "why": "A suggestion: てみたら？ — why not try…?"
+      },
+      "audio": "audio/ja/grammar/gx-temiru-4.mp3",
+      "tags": [
+        "grammar",
+        "temiru"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

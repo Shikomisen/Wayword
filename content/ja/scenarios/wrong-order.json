@@ -1,0 +1,478 @@
+{
+  "schemaVersion": 1,
+  "id": "wrong-order",
+  "title": "When the order is wrong",
+  "category": "problems",
+  "setting": "You’re at a busy restaurant. You ordered a curry, but the server has just brought you ramen.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "server",
+      "japanese": "お待たせしました。ラーメンです。",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "待",
+          "r": "ま"
+        },
+        {
+          "b": "たせしました。ラーメンです。"
+        }
+      ],
+      "english": "Sorry for the wait. Here’s your ramen.",
+      "audio": "audio/ja/scenario/wrong-order-n1.mp3",
+      "audioHint": "おまたせしました。ラーメンです",
+      "options": [
+        {
+          "phraseId": "pro-04",
+          "quality": "good",
+          "feedback": "Polite and clear: んですが softens it.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "japanese": "すみません、頼んだのはカレーなんですが…。",
+          "furigana": [
+            {
+              "b": "すみません、"
+            },
+            {
+              "b": "頼",
+              "r": "たの"
+            },
+            {
+              "b": "んだのはカレーなんですが…。"
+            }
+          ],
+          "english": "Sorry, it was curry I ordered…",
+          "feedback": "すみません first, then the facts, trailing off with んですが: the gentle way to raise a problem.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "違います！",
+          "furigana": [
+            {
+              "b": "違",
+              "r": "ちが"
+            },
+            {
+              "b": "います！"
+            }
+          ],
+          "english": "Wrong!",
+          "feedback": "Too sharp: it sounds like a telling-off. すみません first, then explain with んですが.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "server",
+      "japanese": "大変申し訳ございません。すぐにお取り替えします。",
+      "furigana": [
+        {
+          "b": "大変",
+          "r": "たいへん"
+        },
+        {
+          "b": "申",
+          "r": "もう"
+        },
+        {
+          "b": "し"
+        },
+        {
+          "b": "訳",
+          "r": "わけ"
+        },
+        {
+          "b": "ございません。すぐにお"
+        },
+        {
+          "b": "取",
+          "r": "と"
+        },
+        {
+          "b": "り"
+        },
+        {
+          "b": "替",
+          "r": "か"
+        },
+        {
+          "b": "えします。"
+        }
+      ],
+      "english": "I’m terribly sorry. I’ll change it straight away.",
+      "audio": "audio/ja/scenario/wrong-order-n2.mp3",
+      "audioHint": "たいへんもうしわけございません。すぐにおとりかえします",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "お願いします。",
+          "furigana": [
+            {
+              "b": "お"
+            },
+            {
+              "b": "願",
+              "r": "ねが"
+            },
+            {
+              "b": "いします。"
+            }
+          ],
+          "english": "Thank you.",
+          "feedback": "Simple and polite.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "japanese": "いえいえ、大丈夫です。",
+          "furigana": [
+            {
+              "b": "いえいえ、"
+            },
+            {
+              "b": "大丈夫",
+              "r": "だいじょうぶ"
+            },
+            {
+              "b": "です。"
+            }
+          ],
+          "english": "Not at all, it’s fine.",
+          "feedback": "Gracious: it lets them off the hook.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "じゃあ、ラーメンでいいです。",
+          "furigana": [
+            {
+              "b": "じゃあ、ラーメンでいいです。"
+            }
+          ],
+          "english": "Fine, I’ll have the ramen then.",
+          "feedback": "Kind, but only if you really don’t mind, and check you’re charged for the right dish.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "server",
+      "japanese": "十分ほどかかりますが、よろしいでしょうか。",
+      "furigana": [
+        {
+          "b": "十分",
+          "r": "じゅっぷん"
+        },
+        {
+          "b": "ほどかかりますが、よろしいでしょうか。"
+        }
+      ],
+      "english": "It’ll take about ten minutes. Would that be all right?",
+      "audio": "audio/ja/scenario/wrong-order-n3.mp3",
+      "audioHint": "じゅっぷんほどかかりますが、よろしいでしょうか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "はい、待ちます。",
+          "furigana": [
+            {
+              "b": "はい、"
+            },
+            {
+              "b": "待",
+              "r": "ま"
+            },
+            {
+              "b": "ちます。"
+            }
+          ],
+          "english": "Yes, I’ll wait.",
+          "feedback": "Clear and friendly.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "japanese": "ちょっと急いでいるので、早めにお願いできますか。",
+          "furigana": [
+            {
+              "b": "ちょっと"
+            },
+            {
+              "b": "急",
+              "r": "いそ"
+            },
+            {
+              "b": "いでいるので、"
+            },
+            {
+              "b": "早",
+              "r": "はや"
+            },
+            {
+              "b": "めにお"
+            },
+            {
+              "b": "願",
+              "r": "ねが"
+            },
+            {
+              "b": "いできますか。"
+            }
+          ],
+          "english": "I’m in a bit of a hurry. Could you make it quick?",
+          "feedback": "A polite request with a reason: ので explains.",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "十分です。",
+          "furigana": [
+            {
+              "b": "十分",
+              "r": "じゅうぶん"
+            },
+            {
+              "b": "です。"
+            }
+          ],
+          "english": "That’s enough.",
+          "feedback": "十分 read じゅうぶん means “enough”; read じゅっぷん, it’s ten minutes. Answer the question: はい、待ちます.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "server",
+      "japanese": "お待たせいたしました。カレーです。本当に申し訳ございませんでした。",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "待",
+          "r": "ま"
+        },
+        {
+          "b": "たせいたしました。カレーです。"
+        },
+        {
+          "b": "本当",
+          "r": "ほんとう"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "申",
+          "r": "もう"
+        },
+        {
+          "b": "し"
+        },
+        {
+          "b": "訳",
+          "r": "わけ"
+        },
+        {
+          "b": "ございませんでした。"
+        }
+      ],
+      "english": "Sorry to keep you waiting. Here’s your curry. I’m so sorry again.",
+      "audio": "audio/ja/scenario/wrong-order-n4.mp3",
+      "audioHint": "おまたせいたしました。カレーです。ほんとうにもうしわけございませんでした",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "いえいえ、ありがとうございます。",
+          "furigana": [
+            {
+              "b": "いえいえ、ありがとうございます。"
+            }
+          ],
+          "english": "Not at all. Thank you.",
+          "feedback": "Gracious: the problem’s solved.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "gre-05",
+          "quality": "good",
+          "feedback": "Simple and right.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "本当に遅かったです。",
+          "furigana": [
+            {
+              "b": "本当",
+              "r": "ほんとう"
+            },
+            {
+              "b": "に"
+            },
+            {
+              "b": "遅",
+              "r": "おそ"
+            },
+            {
+              "b": "かったです。"
+            }
+          ],
+          "english": "That was really slow.",
+          "feedback": "It’s sorted now; rubbing it in sounds rude. Thank them.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "server",
+      "japanese": "お会計、二千四百円になります。",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "会計",
+          "r": "かいけい"
+        },
+        {
+          "b": "、"
+        },
+        {
+          "b": "二千",
+          "r": "にせん"
+        },
+        {
+          "b": "四百円",
+          "r": "よんひゃくえん"
+        },
+        {
+          "b": "になります。"
+        }
+      ],
+      "english": "That comes to ¥2,400.",
+      "audio": "audio/ja/scenario/wrong-order-n5.mp3",
+      "audioHint": "おかいけい、にせんよんひゃくえんになります",
+      "options": [
+        {
+          "phraseId": "pro-10",
+          "quality": "good",
+          "feedback": "Polite: it asks them to check without accusing anyone.",
+          "next": "n6"
+        },
+        {
+          "quality": "good",
+          "japanese": "すみません、ラーメンの分も入っていませんか。",
+          "furigana": [
+            {
+              "b": "すみません、ラーメンの"
+            },
+            {
+              "b": "分",
+              "r": "ぶん"
+            },
+            {
+              "b": "も"
+            },
+            {
+              "b": "入",
+              "r": "はい"
+            },
+            {
+              "b": "っていませんか。"
+            }
+          ],
+          "english": "Sorry, is the ramen on there too?",
+          "feedback": "Specific and polite: ていませんか (isn’t it…?) softens it.",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "高いです！",
+          "furigana": [
+            {
+              "b": "高",
+              "r": "たか"
+            },
+            {
+              "b": "いです！"
+            }
+          ],
+          "english": "That’s expensive!",
+          "feedback": "It sounds like you’re complaining about the prices. Ask them to check: 確認していただけますか.",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "server",
+      "japanese": "あっ、失礼いたしました。千二百円です。",
+      "furigana": [
+        {
+          "b": "あっ、"
+        },
+        {
+          "b": "失礼",
+          "r": "しつれい"
+        },
+        {
+          "b": "いたしました。"
+        },
+        {
+          "b": "千",
+          "r": "せん"
+        },
+        {
+          "b": "二百円",
+          "r": "にひゃくえん"
+        },
+        {
+          "b": "です。"
+        }
+      ],
+      "english": "Oh, I do apologise. It’s ¥1,200.",
+      "audio": "audio/ja/scenario/wrong-order-n6.mp3",
+      "audioHint": "あっ、しつれいいたしました。せんにひゃくえんです",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "カードでお願いします。",
+          "furigana": [
+            {
+              "b": "カードでお"
+            },
+            {
+              "b": "願",
+              "r": "ねが"
+            },
+            {
+              "b": "いします。"
+            }
+          ],
+          "english": "By card, please.",
+          "feedback": "Paying, politely.",
+          "next": "end"
+        },
+        {
+          "phraseId": "res-05",
+          "quality": "good",
+          "feedback": "Said to the staff as you leave: thanks for the meal, ending things warmly.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "english": "Done. すみません and んですが raise a problem politely, 確認していただけますか gets things checked, and 十分 (ten minutes or enough?) is worth a second look. Staff fix mistakes fast when asked gently.",
+      "end": true,
+      "options": []
+    }
+  }
+}

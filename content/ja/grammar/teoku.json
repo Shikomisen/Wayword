@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-teoku",
+  "connector": "〜ておく",
+  "gloss": "do in advance; leave as it is",
+  "title": "〜ておく — do it now, ready for later",
+  "pattern": "verb て form + おく (casual: 〜とく)",
+  "explanation": "ておく means doing something ahead of time, ready for later: {予約|よやく}しておく — book in advance. It also means leaving something as it is: {窓|まど}を{開|あ}けておいて — leave the window open. Casual speech shortens it to とく: {買|か}っとく — I’ll get it in.",
+  "natural": "Planning and helping out: {飲|の}み{物|もの}、{買|か}っておきますね — I’ll get the drinks in.",
+  "stiff": "{予約|よやく}しておきます and {予約|よやく}します both work, but without ておく there’s no sense of “ready for later”.",
+  "examples": [
+    {
+      "id": "gx-teoku-1",
+      "japanese": "お店を予約しておきました。",
+      "furigana": "お{店|みせ}を{予約|よやく}しておきました。",
+      "english": "I’ve booked the restaurant.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "お{店|みせ}を",
+          "w": "w-mise"
+        },
+        {
+          "t": "{予約|よやく}して",
+          "w": "w-yoyaku"
+        },
+        {
+          "t": "おきました。"
+        }
+      ],
+      "gap": {
+        "before": "お{店|みせ}を{予約|よやく}して",
+        "answer": "おきました",
+        "after": "。",
+        "options": [
+          "おきました",
+          "しまいました",
+          "みました"
+        ],
+        "why": "Done ahead, ready for later: ておく."
+      },
+      "audio": "audio/ja/grammar/gx-teoku-1.mp3",
+      "tags": [
+        "grammar",
+        "teoku"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-teoku-2",
+      "japanese": "窓を開けておいてください。",
+      "furigana": "{窓|まど}を{開|あ}けておいてください。",
+      "english": "Please leave the window open.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{窓|まど}を",
+          "w": "w-mado"
+        },
+        {
+          "t": "{開|あ}けて"
+        },
+        {
+          "t": "おいてください。"
+        }
+      ],
+      "gap": {
+        "before": "{窓|まど}を{開|あ}けて",
+        "answer": "おいて",
+        "after": "ください。",
+        "options": [
+          "おいて",
+          "みて",
+          "しまって"
+        ],
+        "why": "Leave it like that: ておく."
+      },
+      "audio": "audio/ja/grammar/gx-teoku-2.mp3",
+      "tags": [
+        "grammar",
+        "teoku"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-teoku-3",
+      "japanese": "明日までに調べとくね。",
+      "furigana": "{明日|あした}までに{調|しら}べとくね。",
+      "english": "I’ll look it up by tomorrow.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{明日|あした}までに",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{調|しら}べとくね。",
+          "w": "w-shiraberu"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}までに{調|しら}べ",
+        "answer": "とく",
+        "after": "ね。",
+        "options": [
+          "とく",
+          "ちゃう",
+          "てみる"
+        ],
+        "why": "Casual ておく: とく."
+      },
+      "audio": "audio/ja/grammar/gx-teoku-3.mp3",
+      "tags": [
+        "grammar",
+        "teoku"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-teoku-4",
+      "japanese": "出かける前に、天気を見ておこう。",
+      "furigana": "{出|で}かける{前|まえ}に、{天気|てんき}を{見|み}ておこう。",
+      "english": "Let’s check the weather before we go out.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{出|で}かける{前|まえ}に、",
+          "w": "w-dekakeru"
+        },
+        {
+          "t": "{天気|てんき}を",
+          "w": "w-tenki"
+        },
+        {
+          "t": "{見|み}ておこう。",
+          "w": "w-miru"
+        }
+      ],
+      "gap": {
+        "before": "{出|で}かける{前|まえ}に、{天気|てんき}を{見|み}て",
+        "answer": "おこう",
+        "after": "。",
+        "options": [
+          "おこう",
+          "しまおう",
+          "いよう"
+        ],
+        "why": "Checking ahead of time: ておこう."
+      },
+      "audio": "audio/ja/grammar/gx-teoku-4.mp3",
+      "tags": [
+        "grammar",
+        "teoku"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

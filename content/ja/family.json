@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 1,
+  "id": "family",
+  "title": "Meeting the Family",
+  "order": 15,
+  "description": "Polite Japanese for a partner’s parents and relatives, and anyone you want to make a good first impression on.",
+  "phrases": [
+    {
+      "id": "fam-01",
+      "japanese": "はじめまして。お会いできてうれしいです",
+      "furigana": [
+        {
+          "b": "はじめまして。お"
+        },
+        {
+          "b": "会",
+          "r": "あ"
+        },
+        {
+          "b": "いできてうれしいです"
+        }
+      ],
+      "romaji": "hajimemashite, o-ai dekite ureshii desu",
+      "english": "Nice to meet you. I’m so glad to meet you.",
+      "registerNotes": "お会いできて is the humble “getting to meet you”: warm and respectful at once.",
+      "audio": "audio/ja/fam-01.mp3",
+      "tags": [
+        "meeting",
+        "essential"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-02",
+      "japanese": "いつもお世話になっています",
+      "furigana": [
+        {
+          "b": "いつもお"
+        },
+        {
+          "b": "世話",
+          "r": "せわ"
+        },
+        {
+          "b": "になっています"
+        }
+      ],
+      "romaji": "itsumo osewa ni natte imasu",
+      "english": "Thank you for all you do for us.",
+      "registerNotes": "The standard greeting to people who look after you or your partner. It’s said even on a first meeting, for what they do for your partner.",
+      "audio": "audio/ja/fam-02.mp3",
+      "tags": [
+        "meeting",
+        "essential"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-03",
+      "japanese": "今日はお招きいただき、ありがとうございます",
+      "furigana": [
+        {
+          "b": "今日",
+          "r": "きょう"
+        },
+        {
+          "b": "はお"
+        },
+        {
+          "b": "招",
+          "r": "まね"
+        },
+        {
+          "b": "きいただき、ありがとうございます"
+        }
+      ],
+      "romaji": "kyō wa o-maneki itadaki, arigatō gozaimasu",
+      "english": "Thank you for inviting me today.",
+      "registerNotes": "Thanks for the invitation, in polite Japanese. Say it on arrival, after the greeting.",
+      "audio": "audio/ja/fam-03.mp3",
+      "tags": [
+        "visiting"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "fam-04",
+      "japanese": "つまらないものですが、どうぞ",
+      "furigana": [
+        {
+          "b": "つまらないものですが、どうぞ"
+        }
+      ],
+      "romaji": "tsumaranai mono desu ga, dōzo",
+      "english": "It’s just a little something, but please.",
+      "registerNotes": "Handing over a gift (literally “it’s a boring thing”). Many people now say ほんの気持ちですが (“just a token”), which sounds warmer.",
+      "audio": "audio/ja/fam-04.mp3",
+      "tags": [
+        "visiting",
+        "gifts"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-05",
+      "japanese": "お邪魔します",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "邪魔",
+          "r": "じゃま"
+        },
+        {
+          "b": "します"
+        }
+      ],
+      "romaji": "ojama shimasu",
+      "english": "Sorry to intrude.",
+      "registerNotes": "Said as you step inside someone’s home, just after taking your shoes off at the door.",
+      "audio": "audio/ja/fam-05.mp3",
+      "tags": [
+        "visiting",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fam-06",
+      "japanese": "どうぞお構いなく",
+      "furigana": [
+        {
+          "b": "どうぞお"
+        },
+        {
+          "b": "構",
+          "r": "かま"
+        },
+        {
+          "b": "いなく"
+        }
+      ],
+      "romaji": "dōzo okamai naku",
+      "english": "Please don’t go to any trouble.",
+      "registerNotes": "When your hosts start fussing over drinks and food. They will anyway; it’s part of the dance.",
+      "audio": "audio/ja/fam-06.mp3",
+      "tags": [
+        "visiting"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "fam-07",
+      "japanese": "何かお手伝いしましょうか",
+      "furigana": [
+        {
+          "b": "何",
+          "r": "なに"
+        },
+        {
+          "b": "かお"
+        },
+        {
+          "b": "手伝",
+          "r": "てつだ"
+        },
+        {
+          "b": "いしましょうか"
+        }
+      ],
+      "romaji": "nanika o-tetsudai shimashō ka",
+      "english": "Can I help with anything?",
+      "registerNotes": "Offering to help in the kitchen or with clearing up. The humble お〜する is right for a partner’s family.",
+      "audio": "audio/ja/fam-07.mp3",
+      "tags": [
+        "visiting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-08",
+      "japanese": "とてもおいしいです。お料理がお上手ですね",
+      "furigana": [
+        {
+          "b": "とてもおいしいです。お"
+        },
+        {
+          "b": "料理",
+          "r": "りょうり"
+        },
+        {
+          "b": "がお"
+        },
+        {
+          "b": "上手",
+          "r": "じょうず"
+        },
+        {
+          "b": "ですね"
+        }
+      ],
+      "romaji": "totemo oishii desu, o-ryōri ga o-jōzu desu ne",
+      "english": "It’s delicious. You’re a wonderful cook.",
+      "registerNotes": "Praising the cooking is always welcome. Expect them to say that it’s nothing special.",
+      "audio": "audio/ja/fam-08.mp3",
+      "tags": [
+        "meals"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-09",
+      "japanese": "もう十分いただきました",
+      "furigana": [
+        {
+          "b": "もう"
+        },
+        {
+          "b": "十分",
+          "r": "じゅうぶん"
+        },
+        {
+          "b": "いただきました"
+        }
+      ],
+      "romaji": "mō jūbun itadakimashita",
+      "english": "I’ve had plenty, thank you.",
+      "registerNotes": "Turning down seconds politely. If you clear your plate, they may keep refilling it; leave a little to show you’re full.",
+      "audio": "audio/ja/fam-09.mp3",
+      "tags": [
+        "meals"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "fam-10",
+      "japanese": "日本語はまだ勉強中です",
+      "furigana": [
+        {
+          "b": "日本語",
+          "r": "にほんご"
+        },
+        {
+          "b": "はまだ"
+        },
+        {
+          "b": "勉強中",
+          "r": "べんきょうちゅう"
+        },
+        {
+          "b": "です"
+        }
+      ],
+      "romaji": "nihongo wa mada benkyōchū desu",
+      "english": "I’m still learning Japanese.",
+      "registerNotes": "Sets expectations kindly, and usually earns encouragement. They’ll likely say 上手ですね anyway.",
+      "audio": "audio/ja/fam-10.mp3",
+      "tags": [
+        "meeting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-11",
+      "japanese": "ゆっくり話していただけますか",
+      "furigana": [
+        {
+          "b": "ゆっくり"
+        },
+        {
+          "b": "話",
+          "r": "はな"
+        },
+        {
+          "b": "していただけますか"
+        }
+      ],
+      "romaji": "yukkuri hanashite itadakemasu ka",
+      "english": "Could you speak slowly, please?",
+      "registerNotes": "More respectful than ゆっくり話してください: right for older relatives.",
+      "audio": "audio/ja/fam-11.mp3",
+      "tags": [
+        "meeting",
+        "essential"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-12",
+      "japanese": "これからよろしくお願いいたします",
+      "furigana": [
+        {
+          "b": "これからよろしくお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いいたします"
+        }
+      ],
+      "romaji": "korekara yoroshiku onegai itashimasu",
+      "english": "I look forward to getting to know you all.",
+      "registerNotes": "The formal close to a first meeting with a family. いたします is the humble します.",
+      "audio": "audio/ja/fam-12.mp3",
+      "tags": [
+        "meeting"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "fam-13",
+      "japanese": "お邪魔しました",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "邪魔",
+          "r": "じゃま"
+        },
+        {
+          "b": "しました"
+        }
+      ],
+      "romaji": "ojama shimashita",
+      "english": "Thank you for having me.",
+      "registerNotes": "Said at the door as you leave (literally “I intruded”). Add 今日はありがとうございました.",
+      "audio": "audio/ja/fam-13.mp3",
+      "tags": [
+        "visiting"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

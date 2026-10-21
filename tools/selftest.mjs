@@ -335,7 +335,7 @@ function validateCourse(course) {
     // still learning to read: every kanji gets its reading. (In the English
     // course the prose is the learner's own Japanese, which needs none.)
     if (fields.ruby) {
-      for (const f of ['explanation', 'natural', 'stiff']) {
+      for (const f of ['pattern', 'explanation', 'natural', 'stiff']) {
         const bare = String(lesson[f] || '').replace(/\{[^|{}]+\|[^{}]+\}/g, '');
         check(`${entry.id}: ${f} gives every kanji a reading`, !hasKanji(bare), bare.match(/[㐀-鿿豈-﫿々]/u)?.[0]);
         checkRuby(`${entry.id}/${f}`, lesson[f], rubyText(lesson[f]));
@@ -466,6 +466,7 @@ function validateCourse(course) {
     check(`${x.id}: audio lives under audio/${course.target}/`, String(x.audio).startsWith(`audio/${course.target}/`), x.audio);
     const clip = resolve(ROOT, x.audio);
     if (existsSync(clip)) check(`${x.id}: audio clip is non-trivial`, statSync(clip).size > 800);
+    if (fields.ruby && x[fields.ruby]) checkRuby(x.id, x[fields.ruby], x[target]);
   };
   for (const entry of manifest.listening || []) {
     check(`${entry.id}: listening kind is replies or contrasts`, ['replies', 'contrasts'].includes(entry.kind), entry.kind);
@@ -478,7 +479,13 @@ function validateCourse(course) {
       check(`${entry.id}: enough lines to offer three meanings`, (data.items || []).length >= 3);
       for (const x of data.items || []) {
         listenItem(x);
-        check(`${x.id}: a reply comes with its meaning`, Boolean(x.reply) === Boolean(x.replyJapanese));
+        if (x.reply && typeof x.reply === 'object') {
+          // The course's own fields: its text, its meaning, and furigana where the course has it.
+          check(`${x.id}: a reply has its text and meaning`, Boolean(x.reply[target] && x.reply[fields.meaning]));
+          if (fields.ruby) checkRuby(`${x.id}/reply`, x.reply[fields.ruby], x.reply[target]);
+        } else {
+          check(`${x.id}: a reply comes with its meaning`, Boolean(x.reply) === Boolean(x.replyJapanese));
+        }
         check(`${x.id}: says who's speaking`, typeof x.speaker === 'string' && x.speaker.length > 0);
       }
     } else {

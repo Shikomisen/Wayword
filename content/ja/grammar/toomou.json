@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-toomou",
+  "connector": "〜とおもう",
+  "gloss": "I think",
+  "title": "〜とおもう — I think…",
+  "pattern": "plain form + と{思|おも}う; noun / な-adjective + だと{思|おも}う",
+  "explanation": "と{思|おも}う turns a statement into your opinion: {明日|あした}は{雨|あめ}だと{思|おも}う — I think it’ll rain tomorrow. What comes before と is in the plain form, even in polite speech: {高|たか}いと{思|おも}います. Nouns and な-adjectives need だ: {便利|べんり}だと{思|おも}います.",
+  "natural": "It softens what you say, which Japanese likes: いいと{思|おも}いますよ — I think it’s fine.",
+  "stiff": "Don’t put です before と{思|おも}う: {雨|あめ}ですと{思|おも}います is wrong; it’s {雨|あめ}だと{思|おも}います. For what someone else thinks, use と{思|おも}っている.",
+  "examples": [
+    {
+      "id": "gx-toomou-1",
+      "japanese": "明日は雨だと思います。",
+      "furigana": "{明日|あした}は{雨|あめ}だと{思|おも}います。",
+      "english": "I think it’ll rain tomorrow.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{雨|あめ}だと",
+          "w": "w-ame"
+        },
+        {
+          "t": "{思|おも}います。",
+          "w": "w-omou"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}は{雨|あめ}",
+        "answer": "だと",
+        "after": "{思|おも}います。",
+        "options": [
+          "だと",
+          "ですと",
+          "と"
+        ],
+        "why": "A noun needs だ before と思う."
+      },
+      "audio": "audio/ja/grammar/gx-toomou-1.mp3",
+      "tags": [
+        "grammar",
+        "toomou"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-toomou-2",
+      "japanese": "この店、結構高いと思う。",
+      "furigana": "この{店|みせ}、{結構|けっこう}{高|たか}いと{思|おも}う。",
+      "english": "I think this place is quite pricey.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "この{店|みせ}、",
+          "w": "w-mise"
+        },
+        {
+          "t": "{結構|けっこう}",
+          "w": "w-kekkou"
+        },
+        {
+          "t": "{高|たか}いと{思|おも}う。",
+          "w": "w-takai"
+        }
+      ],
+      "gap": {
+        "before": "この{店|みせ}、{結構|けっこう}{高|たか}い",
+        "answer": "と",
+        "after": "{思|おも}う。",
+        "options": [
+          "と",
+          "だと",
+          "を"
+        ],
+        "why": "An い-adjective goes straight before と: 高いと思う."
+      },
+      "audio": "audio/ja/grammar/gx-toomou-2.mp3",
+      "tags": [
+        "grammar",
+        "toomou"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-toomou-3",
+      "japanese": "彼は来ないと思います。",
+      "furigana": "{彼|かれ}は{来|こ}ないと{思|おも}います。",
+      "english": "I don’t think he’ll come.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{彼|かれ}は",
+          "w": "w-kare"
+        },
+        {
+          "t": "{来|こ}ないと",
+          "w": "w-kuru"
+        },
+        {
+          "t": "{思|おも}います。",
+          "w": "w-omou"
+        }
+      ],
+      "gap": {
+        "before": "{彼|かれ}は",
+        "answer": "{来|こ}ない",
+        "after": "と{思|おも}います。",
+        "options": [
+          "{来|こ}ない",
+          "{来|き}ます",
+          "{来|こ}られる"
+        ],
+        "why": "“I don’t think he’ll come”: Japanese puts the “not” in what you think: 来ないと思う."
+      },
+      "audio": "audio/ja/grammar/gx-toomou-3.mp3",
+      "tags": [
+        "grammar",
+        "toomou"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-toomou-4",
+      "japanese": "日本の電車は便利だと思いませんか。",
+      "furigana": "{日本|にほん}の{電車|でんしゃ}は{便利|べんり}だと{思|おも}いませんか。",
+      "english": "Don’t you think Japanese trains are convenient?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本|にほん}の",
+          "w": "w-nihon"
+        },
+        {
+          "t": "{電車|でんしゃ}は",
+          "w": "w-densha"
+        },
+        {
+          "t": "{便利|べんり}だと",
+          "w": "w-benri"
+        },
+        {
+          "t": "{思|おも}いませんか。",
+          "w": "w-omou"
+        }
+      ],
+      "gap": {
+        "before": "{日本|にほん}の{電車|でんしゃ}は{便利|べんり}だと{思|おも}い",
+        "answer": "ませんか",
+        "after": "。",
+        "options": [
+          "ませんか",
+          "ますか",
+          "ました"
+        ],
+        "why": "Inviting agreement: と思いませんか — don’t you think?"
+      },
+      "audio": "audio/ja/grammar/gx-toomou-4.mp3",
+      "tags": [
+        "grammar",
+        "toomou"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

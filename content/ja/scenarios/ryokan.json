@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "id": "ryokan",
+  "title": "Staying at a ryokan",
+  "category": "hotel",
+  "setting": "You’ve arrived at a traditional inn in the mountains. An attendant in a kimono greets you at the entrance.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "staff",
+      "japanese": "ようこそいらっしゃいました。お名前を伺ってもよろしいでしょうか。",
+      "furigana": [
+        {
+          "b": "ようこそいらっしゃいました。お"
+        },
+        {
+          "b": "名前",
+          "r": "なまえ"
+        },
+        {
+          "b": "を"
+        },
+        {
+          "b": "伺",
+          "r": "うかが"
+        },
+        {
+          "b": "ってもよろしいでしょうか。"
+        }
+      ],
+      "english": "Welcome. May I ask your name?",
+      "audio": "audio/ja/scenario/ryokan-n1.mp3",
+      "audioHint": "ようこそいらっしゃいました。おなまえをうかがってもよろしいでしょうか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "予約しているスミスです。よろしくお願いします。",
+          "furigana": [
+            {
+              "b": "予約",
+              "r": "よやく"
+            },
+            {
+              "b": "しているスミスです。よろしくお"
+            },
+            {
+              "b": "願",
+              "r": "ねが"
+            },
+            {
+              "b": "いします。"
+            }
+          ],
+          "english": "I have a booking: Smith. Thank you.",
+          "feedback": "Booking, name, and a polite よろしくお願いします.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "japanese": "スミスです。今日から二泊です。",
+          "furigana": [
+            {
+              "b": "スミスです。"
+            },
+            {
+              "b": "今日",
+              "r": "きょう"
+            },
+            {
+              "b": "から"
+            },
+            {
+              "b": "二泊",
+              "r": "にはく"
+            },
+            {
+              "b": "です。"
+            }
+          ],
+          "english": "It’s Smith. Two nights from today.",
+          "feedback": "Clear: your name and how long you’re staying.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "スミス様です。",
+          "furigana": [
+            {
+              "b": "スミス"
+            },
+            {
+              "b": "様",
+              "r": "さま"
+            },
+            {
+              "b": "です。"
+            }
+          ],
+          "english": "I’m the honourable Smith.",
+          "feedback": "様 (like さん) honours someone else, never yourself. Just スミスです.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "staff",
+      "japanese": "お待ちしておりました。お荷物、お持ちします。",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "待",
+          "r": "ま"
+        },
+        {
+          "b": "ちしておりました。お"
+        },
+        {
+          "b": "荷物",
+          "r": "にもつ"
+        },
+        {
+          "b": "、お"
+        },
+        {
+          "b": "持",
+          "r": "も"
+        },
+        {
+          "b": "ちします。"
+        }
+      ],
+      "english": "We’ve been expecting you. Let me take your bags.",
+      "audio": "audio/ja/scenario/ryokan-n2.mp3",
+      "audioHint": "おまちしておりました。おにもつ、おもちします",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "ありがとうございます。お願いします。",
+          "furigana": [
+            {
+              "b": "ありがとうございます。お"
+            },
+            {
+              "b": "願",
+              "r": "ねが"
+            },
+            {
+              "b": "いします。"
+            }
+          ],
+          "english": "Thank you. Please do.",
+          "feedback": "Accepting the offer graciously.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "japanese": "大丈夫です。自分で持てます。",
+          "furigana": [
+            {
+              "b": "大丈夫",
+              "r": "だいじょうぶ"
+            },
+            {
+              "b": "です。"
+            },
+            {
+              "b": "自分",
+              "r": "じぶん"
+            },
+            {
+              "b": "で"
+            },
+            {
+              "b": "持",
+              "r": "も"
+            },
+            {
+              "b": "てます。"
+            }
+          ],
+          "english": "It’s fine, I can carry them myself.",
+          "feedback": "A polite no. Staff may still insist: it’s part of the welcome.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "持ってください。",
+          "furigana": [
+            {
+              "b": "持",
+              "r": "も"
+            },
+            {
+              "b": "ってください。"
+            }
+          ],
+          "english": "Carry them.",
+          "feedback": "It reads as an order, after she’s just offered. Accept the offer instead: お願いします.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "staff",
+      "japanese": "夕食は六時と七時、どちらがよろしいですか。",
+      "furigana": [
+        {
+          "b": "夕食",
+          "r": "ゆうしょく"
+        },
+        {
+          "b": "は"
+        },
+        {
+          "b": "六時",
+          "r": "ろくじ"
+        },
+        {
+          "b": "と"
+        },
+        {
+          "b": "七時",
+          "r": "しちじ"
+        },
+        {
+          "b": "、どちらがよろしいですか。"
+        }
+      ],
+      "english": "Would you prefer dinner at six or at seven?",
+      "audio": "audio/ja/scenario/ryokan-n3.mp3",
+      "audioHint": "ゆうしょくはろくじとしちじ、どちらがよろしいですか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "七時でお願いします。",
+          "furigana": [
+            {
+              "b": "七時",
+              "r": "しちじ"
+            },
+            {
+              "b": "でお"
+            },
+            {
+              "b": "願",
+              "r": "ねが"
+            },
+            {
+              "b": "いします。"
+            }
+          ],
+          "english": "Seven, please.",
+          "feedback": "Clear and polite: で marks your choice.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "japanese": "じゃあ、六時にします。",
+          "furigana": [
+            {
+              "b": "じゃあ、"
+            },
+            {
+              "b": "六時",
+              "r": "ろくじ"
+            },
+            {
+              "b": "にします。"
+            }
+          ],
+          "english": "Six, then.",
+          "feedback": "にする: deciding on something. Fine and polite.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "opi-06",
+          "quality": "awkward",
+          "feedback": "Easy-going, but casual with inn staff, and the kitchen needs a time. Choose one: 七時でお願いします.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "staff",
+      "japanese": "温泉は夜十二時まで入れます。タオルはお部屋にございます。",
+      "furigana": [
+        {
+          "b": "温泉",
+          "r": "おんせん"
+        },
+        {
+          "b": "は"
+        },
+        {
+          "b": "夜",
+          "r": "よる"
+        },
+        {
+          "b": "十二時",
+          "r": "じゅうにじ"
+        },
+        {
+          "b": "まで"
+        },
+        {
+          "b": "入",
+          "r": "はい"
+        },
+        {
+          "b": "れます。タオルはお"
+        },
+        {
+          "b": "部屋",
+          "r": "へや"
+        },
+        {
+          "b": "にございます。"
+        }
+      ],
+      "english": "The baths are open until midnight. There are towels in your room.",
+      "audio": "audio/ja/scenario/ryokan-n4.mp3",
+      "audioHint": "おんせんはよるじゅうにじまではいれます。タオルはおへやにございます",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "タトゥーがあるんですが、入ってもいいですか。",
+          "furigana": [
+            {
+              "b": "タトゥーがあるんですが、"
+            },
+            {
+              "b": "入",
+              "r": "はい"
+            },
+            {
+              "b": "ってもいいですか。"
+            }
+          ],
+          "english": "I have a tattoo. Is it OK for me to go in?",
+          "feedback": "Worth asking: many baths still refuse tattoos, though some offer a private bath (貸切風呂) instead.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "japanese": "朝も入れますか。",
+          "furigana": [
+            {
+              "b": "朝",
+              "r": "あさ"
+            },
+            {
+              "b": "も"
+            },
+            {
+              "b": "入",
+              "r": "はい"
+            },
+            {
+              "b": "れますか。"
+            }
+          ],
+          "english": "Can I go in the morning too?",
+          "feedback": "A good question: morning baths are one of the pleasures of a ryokan.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "水着を着てもいいですか。",
+          "furigana": [
+            {
+              "b": "水着",
+              "r": "みずぎ"
+            },
+            {
+              "b": "を"
+            },
+            {
+              "b": "着",
+              "r": "き"
+            },
+            {
+              "b": "てもいいですか。"
+            }
+          ],
+          "english": "May I wear a swimsuit?",
+          "feedback": "A fair question, but the answer is almost always no: you bathe naked, after washing at the taps first.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "staff",
+      "japanese": "何かございましたら、いつでもお声がけください。ごゆっくりどうぞ。",
+      "furigana": [
+        {
+          "b": "何",
+          "r": "なに"
+        },
+        {
+          "b": "かございましたら、いつでもお"
+        },
+        {
+          "b": "声",
+          "r": "こえ"
+        },
+        {
+          "b": "がけください。ごゆっくりどうぞ。"
+        }
+      ],
+      "english": "If you need anything, just let us know. Please, make yourself at home.",
+      "audio": "audio/ja/scenario/ryokan-n5.mp3",
+      "audioHint": "なにかございましたら、いつでもおこえがけください。ごゆっくりどうぞ",
+      "options": [
+        {
+          "phraseId": "gre-05",
+          "quality": "good",
+          "feedback": "Simple and right.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "japanese": "ありがとうございます。楽しみにしていました。",
+          "furigana": [
+            {
+              "b": "ありがとうございます。"
+            },
+            {
+              "b": "楽",
+              "r": "たの"
+            },
+            {
+              "b": "しみにしていました。"
+            }
+          ],
+          "english": "Thank you. I’ve been looking forward to this.",
+          "feedback": "A lovely thing to say to your hosts.",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "ごゆっくりどうぞ。",
+          "furigana": [
+            {
+              "b": "ごゆっくりどうぞ。"
+            }
+          ],
+          "english": "Take your time.",
+          "feedback": "That’s what staff say to guests. Just thank her.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "english": "Done. Recognising keigo like 伺う, おります and ございます is half of a ryokan stay; your own polite Japanese does the rest.",
+      "end": true,
+      "options": []
+    }
+  }
+}

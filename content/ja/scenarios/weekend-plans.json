@@ -1,0 +1,418 @@
+{
+  "schemaVersion": 1,
+  "id": "weekend-plans",
+  "title": "Making weekend plans",
+  "category": "plans",
+  "setting": "At the end of a language exchange, your Japanese friend Yuki turns to you.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "friend",
+      "japanese": "ねえ、週末、何か予定ある？",
+      "furigana": [
+        {
+          "b": "ねえ、"
+        },
+        {
+          "b": "週末",
+          "r": "しゅうまつ"
+        },
+        {
+          "b": "、"
+        },
+        {
+          "b": "何",
+          "r": "なに"
+        },
+        {
+          "b": "か"
+        },
+        {
+          "b": "予定",
+          "r": "よてい"
+        },
+        {
+          "b": "ある？"
+        }
+      ],
+      "english": "Hey, have you got any plans for the weekend?",
+      "audio": "audio/ja/scenario/weekend-plans-n1.mp3",
+      "audioHint": "ねえ、しゅうまつ、なにかよていある？",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "土曜日は空いてるよ。どうして？",
+          "furigana": [
+            {
+              "b": "土曜日",
+              "r": "どようび"
+            },
+            {
+              "b": "は"
+            },
+            {
+              "b": "空",
+              "r": "あ"
+            },
+            {
+              "b": "いてるよ。どうして？"
+            }
+          ],
+          "english": "Saturday’s free. Why?",
+          "feedback": "Natural and friendly, in the casual Japanese friends use.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "japanese": "特にないよ。",
+          "furigana": [
+            {
+              "b": "特",
+              "r": "とく"
+            },
+            {
+              "b": "にないよ。"
+            }
+          ],
+          "english": "Nothing much.",
+          "feedback": "The easy answer: you’re free.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "はい、ありません。",
+          "furigana": [
+            {
+              "b": "はい、ありません。"
+            }
+          ],
+          "english": "Yes, I have none.",
+          "feedback": "はい with a negative muddles it, and はい is stiff with a friend. 特にないよ (nothing much) is natural.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "friend",
+      "japanese": "鎌倉に行ってみない？海もお寺もあって、いいところだよ。",
+      "furigana": [
+        {
+          "b": "鎌倉",
+          "r": "かまくら"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "行",
+          "r": "い"
+        },
+        {
+          "b": "ってみない？"
+        },
+        {
+          "b": "海",
+          "r": "うみ"
+        },
+        {
+          "b": "もお"
+        },
+        {
+          "b": "寺",
+          "r": "てら"
+        },
+        {
+          "b": "もあって、いいところだよ。"
+        }
+      ],
+      "english": "Want to try going to Kamakura? It’s got the sea and temples. It’s a lovely place.",
+      "audio": "audio/ja/scenario/weekend-plans-n2.mp3",
+      "audioHint": "かまくらにいってみない？うみもおてらもあって、いいところだよ",
+      "options": [
+        {
+          "phraseId": "pla-03",
+          "quality": "good",
+          "feedback": "A warm yes, in casual Japanese.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "japanese": "鎌倉？行ったことない！行ってみたい。",
+          "furigana": [
+            {
+              "b": "鎌倉",
+              "r": "かまくら"
+            },
+            {
+              "b": "？"
+            },
+            {
+              "b": "行",
+              "r": "い"
+            },
+            {
+              "b": "ったことない！"
+            },
+            {
+              "b": "行",
+              "r": "い"
+            },
+            {
+              "b": "ってみたい。"
+            }
+          ],
+          "english": "Kamakura? I’ve never been! I’d love to.",
+          "feedback": "Two Intermediate patterns in one: たことない (never have) and てみたい (want to try).",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "お寺はあまり好きじゃない。",
+          "furigana": [
+            {
+              "b": "お"
+            },
+            {
+              "b": "寺",
+              "r": "てら"
+            },
+            {
+              "b": "はあまり"
+            },
+            {
+              "b": "好",
+              "r": "す"
+            },
+            {
+              "b": "きじゃない。"
+            }
+          ],
+          "english": "I don’t really like temples.",
+          "feedback": "Honest, but flat. Soften it and suggest something: お寺もいいけど、海に行きたいな.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "friend",
+      "japanese": "じゃあ、何時にする？",
+      "furigana": [
+        {
+          "b": "じゃあ、"
+        },
+        {
+          "b": "何時",
+          "r": "なんじ"
+        },
+        {
+          "b": "にする？"
+        }
+      ],
+      "english": "So what time shall we make it?",
+      "audio": "audio/ja/scenario/weekend-plans-n3.mp3",
+      "audioHint": "じゃあ、なんじにする？",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "十時ごろはどう？",
+          "furigana": [
+            {
+              "b": "十時",
+              "r": "じゅうじ"
+            },
+            {
+              "b": "ごろはどう？"
+            }
+          ],
+          "english": "How about around ten?",
+          "feedback": "Suggesting a time with どう？ (how about?) leaves room to adjust.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "japanese": "混むから、早めに出たほうがいいよね。九時は？",
+          "furigana": [
+            {
+              "b": "混",
+              "r": "こ"
+            },
+            {
+              "b": "むから、"
+            },
+            {
+              "b": "早",
+              "r": "はや"
+            },
+            {
+              "b": "めに"
+            },
+            {
+              "b": "出",
+              "r": "で"
+            },
+            {
+              "b": "たほうがいいよね。"
+            },
+            {
+              "b": "九時",
+              "r": "くじ"
+            },
+            {
+              "b": "は？"
+            }
+          ],
+          "english": "It gets busy, so we’d better leave early. Nine?",
+          "feedback": "Giving a reason for the time: ほうがいい is “had better”.",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "何時にする。",
+          "furigana": [
+            {
+              "b": "何時",
+              "r": "なんじ"
+            },
+            {
+              "b": "にする。"
+            }
+          ],
+          "english": "We’ll make it what time.",
+          "feedback": "That just repeats her question as a statement. Suggest a time: 十時ごろはどう？",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "friend",
+      "japanese": "いいよ。どこで待ち合わせする？",
+      "furigana": [
+        {
+          "b": "いいよ。どこで"
+        },
+        {
+          "b": "待",
+          "r": "ま"
+        },
+        {
+          "b": "ち"
+        },
+        {
+          "b": "合",
+          "r": "あ"
+        },
+        {
+          "b": "わせする？"
+        }
+      ],
+      "english": "OK. Where shall we meet?",
+      "audio": "audio/ja/scenario/weekend-plans-n4.mp3",
+      "audioHint": "いいよ。どこでまちあわせする？",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "新宿駅の南口でいい？",
+          "furigana": [
+            {
+              "b": "新宿駅",
+              "r": "しんじゅくえき"
+            },
+            {
+              "b": "の"
+            },
+            {
+              "b": "南口",
+              "r": "みなみぐち"
+            },
+            {
+              "b": "でいい？"
+            }
+          ],
+          "english": "Is the south exit of Shinjuku Station OK?",
+          "feedback": "A precise spot: big stations have many exits, and Japanese friends always name one.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "pla-06",
+          "quality": "awkward",
+          "feedback": "Clear, but ましょう is polite for a friend, and a big station has many gates. Name one: 新宿駅の南口でいい？",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "friend",
+      "japanese": "了解！じゃ、土曜日ね。楽しみ！",
+      "furigana": [
+        {
+          "b": "了解",
+          "r": "りょうかい"
+        },
+        {
+          "b": "！じゃ、"
+        },
+        {
+          "b": "土曜日",
+          "r": "どようび"
+        },
+        {
+          "b": "ね。"
+        },
+        {
+          "b": "楽",
+          "r": "たの"
+        },
+        {
+          "b": "しみ！"
+        }
+      ],
+      "english": "Got it! Saturday, then. Can’t wait!",
+      "audio": "audio/ja/scenario/weekend-plans-n5.mp3",
+      "audioHint": "りょうかい！じゃ、どようびね。たのしみ！",
+      "options": [
+        {
+          "phraseId": "pla-10",
+          "quality": "good",
+          "feedback": "Exactly what friends say when they’re meeting up.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "japanese": "私も！誘ってくれてありがとう。",
+          "furigana": [
+            {
+              "b": "私",
+              "r": "わたし"
+            },
+            {
+              "b": "も！"
+            },
+            {
+              "b": "誘",
+              "r": "さそ"
+            },
+            {
+              "b": "ってくれてありがとう。"
+            }
+          ],
+          "english": "Me too! Thanks for asking me.",
+          "feedback": "てくれて thanks her for the favour of inviting you.",
+          "next": "end"
+        },
+        {
+          "phraseId": "pla-11",
+          "quality": "awkward",
+          "feedback": "A lovely thing to say, but polite for a chat with a friend. 楽しみにしてる！ or 私も楽しみ！ is natural.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "english": "Done. Inviting with 〜てみない？, choosing a time with にする, and fixing an exact meeting spot: that’s how Japanese friends make plans.",
+      "end": true,
+      "options": []
+    }
+  }
+}

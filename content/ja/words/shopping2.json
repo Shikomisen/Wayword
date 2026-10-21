@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "id": "words-shopping2",
+  "title": "Shopping & Money",
+  "description": "Prices, discounts, paying, returns and exchanges: what you need when shopping goes beyond pointing and paying.",
+  "items": [
+    {
+      "id": "w-nedan",
+      "japanese": "値段",
+      "furigana": "{値段|ねだん}",
+      "english": "price",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-nedan.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-waribiki",
+      "japanese": "割引",
+      "furigana": "{割引|わりびき}",
+      "english": "discount",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-waribiki.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-seeru",
+      "japanese": "セール",
+      "furigana": "{セール|せーる}",
+      "english": "a sale",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-seeru.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-genkin",
+      "japanese": "現金",
+      "furigana": "{現金|げんきん}",
+      "english": "cash",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-genkin.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kaado",
+      "japanese": "カード",
+      "furigana": "{カード|かーど}",
+      "english": "card (credit, points)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kaado.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-reshiito",
+      "japanese": "レシート",
+      "furigana": "{レシート|れしーと}",
+      "english": "receipt",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-reshiito.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-zeikomi",
+      "japanese": "税込",
+      "furigana": "{税込|ぜいこみ}",
+      "english": "tax included",
+      "pos": "noun",
+      "usage": "Prices are often shown 税込 or 税抜 (before tax).",
+      "audio": "audio/ja/words/w-zeikomi.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-souryou",
+      "japanese": "送料",
+      "furigana": "{送料|そうりょう}",
+      "english": "shipping, postage",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-souryou.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-henpin",
+      "japanese": "返品",
+      "furigana": "{返品|へんぴん}",
+      "english": "a return (of goods)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-henpin.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-koukan",
+      "japanese": "交換",
+      "furigana": "{交換|こうかん}",
+      "english": "exchange, swap",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-koukan.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shichaku",
+      "japanese": "試着",
+      "furigana": "{試着|しちゃく}",
+      "english": "trying on (clothes)",
+      "pos": "noun",
+      "usage": "試着してもいいですか — may I try it on?",
+      "audio": "audio/ja/words/w-shichaku.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-saizu",
+      "japanese": "サイズ",
+      "furigana": "{サイズ|さいず}",
+      "english": "size",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-saizu.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shinagire",
+      "japanese": "品切れ",
+      "furigana": "{品切|しなぎ}れ",
+      "english": "sold out, out of stock",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shinagire.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chuumon",
+      "japanese": "注文",
+      "furigana": "{注文|ちゅうもん}",
+      "english": "an order",
+      "pos": "noun",
+      "usage": "ご注文は？ — what would you like? — is what staff ask.",
+      "audio": "audio/ja/words/w-chuumon.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shiharai",
+      "japanese": "支払い",
+      "furigana": "{支払|しはら}い",
+      "english": "payment",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shiharai.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-harau",
+      "japanese": "払う",
+      "furigana": "{払|はら}う",
+      "english": "to pay",
+      "pos": "verb",
+      "forms": {
+        "masu": "{払|はら}います",
+        "te": "{払|はら}って"
+      },
+      "usage": "カードで払えますか — can I pay by card?",
+      "audio": "audio/ja/words/w-harau.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tariru",
+      "japanese": "足りる",
+      "furigana": "{足|た}りる",
+      "english": "to be enough",
+      "pos": "verb",
+      "forms": {
+        "masu": "{足|た}ります",
+        "te": "{足|た}りて"
+      },
+      "usage": "足りない — not enough. お金が足りない — I’m short.",
+      "audio": "audio/ja/words/w-tariru.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-amaru",
+      "japanese": "余る",
+      "furigana": "{余|あま}る",
+      "english": "to be left over",
+      "pos": "verb",
+      "forms": {
+        "masu": "{余|あま}ります",
+        "te": "{余|あま}って"
+      },
+      "audio": "audio/ja/words/w-amaru.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chokin",
+      "japanese": "貯金",
+      "furigana": "{貯金|ちょきん}",
+      "english": "savings",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-chokin.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-muryou",
+      "japanese": "無料",
+      "furigana": "{無料|むりょう}",
+      "english": "free (of charge)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-muryou.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yuuryou",
+      "japanese": "有料",
+      "furigana": "{有料|ゆうりょう}",
+      "english": "charged for, not free",
+      "pos": "noun",
+      "usage": "Plastic bags are 有料 in Japan now.",
+      "audio": "audio/ja/words/w-yuuryou.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-otoku",
+      "japanese": "お得",
+      "furigana": "お{得|とく}",
+      "english": "a good deal, good value",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-otoku.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-son",
+      "japanese": "損",
+      "furigana": "{損|そん}",
+      "english": "a loss, a bad deal",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-son.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-otsuri",
+      "japanese": "お釣り",
+      "furigana": "お{釣|つ}り",
+      "english": "change (money back)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-otsuri.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    },
+    {
+      "id": "w-fukuro",
+      "japanese": "袋",
+      "furigana": "{袋|ふくろ}",
+      "english": "bag (plastic or paper)",
+      "pos": "noun",
+      "usage": "袋はご利用ですか — would you like a bag? — at every checkout.",
+      "audio": "audio/ja/words/w-fukuro.mp3",
+      "tags": ["shopping"],
+      "difficulty": 3
+    }
+  ]
+}

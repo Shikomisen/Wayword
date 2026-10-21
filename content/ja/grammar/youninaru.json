@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-youninaru",
+  "connector": "〜ようになる",
+  "gloss": "come to (do, be able to)",
+  "title": "〜ようになる — now I can, now I do",
+  "pattern": "dictionary / potential form + ようになる; ない form + なくなる",
+  "explanation": "ようになる describes a change: something you couldn’t do before and now can, or a new habit. {漢字|かんじ}が{読|よ}めるようになった — I’ve got to the point where I can read kanji. {毎朝|まいあさ}{走|はし}るようになった — I’ve started running every morning. The opposite is なくなる: {行|い}かなくなった — I stopped going.",
+  "natural": "Talking about progress: {少|すこ}し{話|はな}せるようになりました — I can speak a little now.",
+  "stiff": "For a thing that simply changed (it got cold), use the adjective + なる: {寒|さむ}くなった. ようになる is for abilities and habits.",
+  "examples": [
+    {
+      "id": "gx-youninaru-1",
+      "japanese": "ひらがなが読めるようになりました。",
+      "furigana": "ひらがなが{読|よ}めるようになりました。",
+      "english": "I can read hiragana now.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "ひらがなが"
+        },
+        {
+          "t": "{読|よ}めるように",
+          "w": "w-yomu"
+        },
+        {
+          "t": "なりました。"
+        }
+      ],
+      "gap": {
+        "before": "ひらがなが{読|よ}める",
+        "answer": "ように",
+        "after": "なりました。",
+        "options": [
+          "ように",
+          "ことに",
+          "ために"
+        ],
+        "why": "A new ability: potential + ようになる."
+      },
+      "audio": "audio/ja/grammar/gx-youninaru-1.mp3",
+      "tags": [
+        "grammar",
+        "youninaru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-youninaru-2",
+      "japanese": "一人で電車に乗れるようになった。",
+      "furigana": "{一人|ひとり}で{電車|でんしゃ}に{乗|の}れるようになった。",
+      "english": "I can ride trains on my own now.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{一人|ひとり}で",
+          "w": "w-hitori"
+        },
+        {
+          "t": "{電車|でんしゃ}に",
+          "w": "w-densha"
+        },
+        {
+          "t": "{乗|の}れるようになった。",
+          "w": "w-noru"
+        }
+      ],
+      "gap": {
+        "before": "{一人|ひとり}で{電車|でんしゃ}に{乗|の}れる",
+        "answer": "ように",
+        "after": "なった。",
+        "options": [
+          "ように",
+          "ことに",
+          "つもりに"
+        ],
+        "why": "Now able to: ようになった."
+      },
+      "audio": "audio/ja/grammar/gx-youninaru-2.mp3",
+      "tags": [
+        "grammar",
+        "youninaru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-youninaru-3",
+      "japanese": "最近、早く起きるようになった。",
+      "furigana": "{最近|さいきん}、{早|はや}く{起|お}きるようになった。",
+      "english": "Lately I’ve started getting up early.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{最近|さいきん}、",
+          "w": "w-saikin"
+        },
+        {
+          "t": "{早|はや}く",
+          "w": "w-hayai"
+        },
+        {
+          "t": "{起|お}きるようになった。",
+          "w": "w-okiru"
+        }
+      ],
+      "gap": {
+        "before": "{最近|さいきん}、{早|はや}く{起|お}きる",
+        "answer": "ように",
+        "after": "なった。",
+        "options": [
+          "ように",
+          "ことに",
+          "ために"
+        ],
+        "why": "A new habit: ようになる."
+      },
+      "audio": "audio/ja/grammar/gx-youninaru-3.mp3",
+      "tags": [
+        "grammar",
+        "youninaru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-youninaru-4",
+      "japanese": "忙しくて、ジムに行かなくなりました。",
+      "furigana": "{忙|いそが}しくて、{ジム|じむ}に{行|い}かなくなりました。",
+      "english": "I got busy and stopped going to the gym.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{忙|いそが}しくて、",
+          "w": "w-isogashii"
+        },
+        {
+          "t": "{ジム|じむ}に"
+        },
+        {
+          "t": "{行|い}かなくなりました。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{忙|いそが}しくて、{ジム|じむ}に{行|い}か",
+        "answer": "なくなりました",
+        "after": "。",
+        "options": [
+          "なくなりました",
+          "ないようにしました",
+          "なかったです"
+        ],
+        "why": "Stopped doing something: ない → なくなる. (ないようにした is “made sure not to”.)"
+      },
+      "audio": "audio/ja/grammar/gx-youninaru-4.mp3",
+      "tags": [
+        "grammar",
+        "youninaru"
+      ],
+      "difficulty": 4
+    }
+  ]
+}
