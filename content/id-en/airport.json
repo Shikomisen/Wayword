@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "airport",
+  "title": "Bandara & imigrasi",
+  "order": 3,
+  "description": "Gerbang pertama setelah turun dari pesawat. Pertanyaannya hampir selalu sama, jadi kalau sudah hafal jawabannya, kamu bisa melewatinya dengan tenang.",
+  "phrases": [
+    {
+      "id": "air-01",
+      "english": "Here's my passport.",
+      "indonesian": "Ini paspor saya.",
+      "registerNotes": "Diucapkan sambil menyerahkan paspor. Here you go. juga artinya sama.",
+      "audio": "audio/en/air-01.mp3",
+      "audioHint": "Here's my passport.",
+      "tags": [
+        "imigrasi",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "air-02",
+      "english": "I'm here for sightseeing.",
+      "indonesian": "Saya datang untuk berwisata.",
+      "registerNotes": "Jawaban saat ditanya tujuan kedatangan. Kalau untuk urusan kerja: I'm here on business.",
+      "pitfallNote": "Menjawab Sightseeing. saja sudah dimengerti. Tapi 'saya liburan' jangan diterjemahkan jadi I'm holiday: yang benar I'm on holiday.",
+      "audio": "audio/en/air-02.mp3",
+      "audioHint": "I'm here for sightseeing.",
+      "tags": [
+        "imigrasi",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "air-03",
+      "english": "I'm staying for one week.",
+      "indonesian": "Saya tinggal selama satu minggu.",
+      "registerNotes": "Jawaban untuk How long are you staying?. Untuk lama waktu, pakai for.",
+      "pitfallNote": "'Selama satu minggu' bukan during one week. during dipakai dengan peristiwa (during the holiday); untuk lama waktu, pakai for.",
+      "audio": "audio/en/air-03.mp3",
+      "audioHint": "I'm staying for one week.",
+      "tags": [
+        "imigrasi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-04",
+      "english": "I'm staying at a hotel in the city.",
+      "indonesian": "Saya menginap di hotel di pusat kota.",
+      "registerNotes": "Jawaban untuk Where are you staying?. Di Selandia Baru, pusat kota disebut the city, in town, atau the CBD (di Amerika: downtown). Paling pasti kalau kamu menyebut nama hotelnya.",
+      "audio": "audio/en/air-04.mp3",
+      "audioHint": "I'm staying at a hotel in the city.",
+      "tags": [
+        "imigrasi",
+        "menginap"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-05",
+      "english": "Where is baggage claim?",
+      "indonesian": "Tempat pengambilan bagasi di mana?",
+      "registerNotes": "Papan petunjuk di bandara juga bertuliskan Baggage Claim. claim di sini artinya 'mengambil (barang milik sendiri)'.",
+      "audio": "audio/en/air-05.mp3",
+      "audioHint": "Where is baggage claim?",
+      "tags": [
+        "bandara",
+        "barang bawaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-06",
+      "english": "My bag didn't arrive.",
+      "indonesian": "Bagasi saya tidak keluar.",
+      "registerNotes": "Kalau tidak ketemu di tempat pengambilan bagasi, sampaikan ini di konter maskapai. Tunjukkan label bagasimu (claim tag).",
+      "audio": "audio/en/air-06.mp3",
+      "audioHint": "My bag didn't arrive.",
+      "tags": [
+        "bandara",
+        "barang bawaan",
+        "masalah"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Kejadiannya sudah lewat, jadi pakai didn't arrive, bukan doesn't arrive atau not arrive."
+    },
+    {
+      "id": "air-07",
+      "english": "I have nothing to declare.",
+      "indonesian": "Tidak ada yang perlu saya laporkan.",
+      "registerNotes": "Di bea cukai dan karantina. Selandia Baru sangat ketat soal makanan yang dibawa masuk (biosecurity). Kalau membawa makanan, walaupun hanya camilan, abon, atau sambal dari rumah, wajib dilaporkan. Kalau tidak, bisa kena denda yang besar.",
+      "audio": "audio/en/air-07.mp3",
+      "audioHint": "I have nothing to declare.",
+      "tags": [
+        "bea cukai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "air-08",
+      "english": "Where can I get a taxi?",
+      "indonesian": "Di mana saya bisa naik taksi?",
+      "registerNotes": "get a taxi adalah ungkapan yang sangat umum. Tempat antre taksi di Selandia Baru dan Inggris disebut taxi rank, di Amerika taxi stand.",
+      "audio": "audio/en/air-08.mp3",
+      "audioHint": "Where can I get a taxi?",
+      "tags": [
+        "bandara",
+        "transportasi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-09",
+      "english": "Is there free Wi-Fi here?",
+      "indonesian": "Di sini ada Wi-Fi gratis?",
+      "registerNotes": "Wi-Fi dibaca 'wai-fai'. Kata sandinya bisa ditanyakan dengan What's the password?",
+      "audio": "audio/en/air-09.mp3",
+      "audioHint": "Is there free Wi-Fi here?",
+      "tags": [
+        "bandara",
+        "internet"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "air-10",
+      "english": "Where's gate twenty-two?",
+      "indonesian": "Pintu (gate) 22 di mana?",
+      "registerNotes": "Saat terburu-buru mengejar penerbangan lanjutan. Paling pasti kalau bertanya sambil menunjukkan boarding pass.",
+      "audio": "audio/en/air-10.mp3",
+      "audioHint": "Where's gate twenty-two?",
+      "tags": [
+        "bandara",
+        "transit"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

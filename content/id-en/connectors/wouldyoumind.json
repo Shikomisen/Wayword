@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "con-wouldyoumind",
+  "connector": "Would you mind…?",
+  "gloss": "Kalau tidak keberatan, bisa…? (sangat sopan)",
+  "title": "Would you mind…? — Kalau tidak keberatan, bisa…? (sangat sopan)",
+  "pattern": "Would you mind ＋ kata kerja-ing ...?",
+  "explanation": "Would you mind …ing? adalah cara meminta yang sangat sopan, seperti “kalau tidak keberatan, bisa…?”. Arti harfiahnya “apakah kamu keberatan …?”: mind sama dengan “keberatan”. Kata kerja sesudahnya memakai bentuk -ing. Untuk menyanggupi, jawab No, not at all. (Sama sekali tidak keberatan) atau Sure.",
+  "natural": "Saat permintaanmu merepotkan orang lain, atau saat permintaannya agak besar. Bisa dipakai kepada pelayan maupun orang yang tidak kamu kenal.",
+  "stiff": "Hati-hati dengan jawabannya. Kalau ditanya Would you mind …? lalu kamu jawab Yes., artinya “ya, saya keberatan”. Logikanya sama dengan “Keberatan?” — “Tidak, kok.” Kalau mau membantu, jawab Not at all. atau No problem.",
+  "examples": [
+    {
+      "id": "cx-wouldyoumind-1",
+      "english": "Would you mind waiting a moment?",
+      "indonesian": "Maaf, bisa tunggu sebentar?",
+      "chunks": [
+        {
+          "t": "Would you mind "
+        },
+        {
+          "t": "waiting ",
+          "w": "w-wait"
+        },
+        {
+          "t": "a moment?"
+        }
+      ],
+      "gap": {
+        "before": "Would you mind ",
+        "answer": "waiting",
+        "after": " a moment?",
+        "options": [
+          "waiting",
+          "to wait",
+          "wait"
+        ],
+        "why": "Setelah Would you mind, pakai bentuk -ing."
+      },
+      "audio": "audio/en/connectors/cx-wouldyoumind-1.mp3",
+      "tags": [
+        "bahasa sopan",
+        "Would you mind…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-wouldyoumind-2",
+      "english": "Would you mind checking the price for me?",
+      "indonesian": "Bisa tolong cek harganya?",
+      "chunks": [
+        {
+          "t": "Would you mind "
+        },
+        {
+          "t": "checking ",
+          "w": "w-check"
+        },
+        {
+          "t": "the price for me?",
+          "w": "w-price"
+        }
+      ],
+      "gap": {
+        "before": "Would you ",
+        "answer": "mind",
+        "after": " checking the price for me?",
+        "options": [
+          "mind",
+          "like",
+          "want"
+        ],
+        "why": "Would you mind …ing? artinya “bisa tolong…?”. Would you like … dipakai untuk menawarkan (“mau…?”)."
+      },
+      "audio": "audio/en/connectors/cx-wouldyoumind-2.mp3",
+      "tags": [
+        "bahasa sopan",
+        "Would you mind…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-wouldyoumind-3",
+      "english": "Would you mind taking a photo of us?",
+      "indonesian": "Bisa tolong fotokan kami?",
+      "chunks": [
+        {
+          "t": "Would you mind "
+        },
+        {
+          "t": "taking ",
+          "w": "w-take"
+        },
+        {
+          "t": "a photo of us?"
+        }
+      ],
+      "gap": {
+        "before": "Would you mind taking a photo ",
+        "answer": "of",
+        "after": " us?",
+        "options": [
+          "of",
+          "for",
+          "to"
+        ],
+        "why": "A photo of us artinya “foto kami”."
+      },
+      "audio": "audio/en/connectors/cx-wouldyoumind-3.mp3",
+      "tags": [
+        "bahasa sopan",
+        "Would you mind…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-wouldyoumind-4",
+      "english": "Would you mind closing the door? — Not at all.",
+      "indonesian": "Bisa tolong tutup pintunya? — Tentu, tidak keberatan.",
+      "chunks": [
+        {
+          "t": "Would you mind "
+        },
+        {
+          "t": "closing ",
+          "w": "w-close"
+        },
+        {
+          "t": "the door? "
+        },
+        {
+          "t": "— Not at all."
+        }
+      ],
+      "gap": {
+        "before": "Would you mind closing the door? — ",
+        "answer": "Not at all",
+        "after": ".",
+        "options": [
+          "Not at all",
+          "Yes, I do",
+          "Yes, I mind"
+        ],
+        "why": "Mind artinya “keberatan”. Untuk menyanggupi, jawab Not at all (sama sekali tidak keberatan). Yes, I do berarti kamu keberatan."
+      },
+      "audio": "audio/en/connectors/cx-wouldyoumind-4.mp3",
+      "tags": [
+        "bahasa sopan",
+        "Would you mind…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

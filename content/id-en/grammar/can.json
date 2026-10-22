@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-can",
+  "connector": "can",
+  "gloss": "bisa, boleh",
+  "title": "can — bisa, boleh",
+  "pattern": "subjek ＋ can ＋ kata kerja / can’t ＋ kata kerja / Can you …?",
+  "explanation": "can artinya “bisa”. Kata kerja sesudahnya selalu bentuk dasar, dan untuk he atau she pun tidak diberi -s: She can swim. Negatifnya can’t; untuk bertanya, Can pindah ke depan: Can you speak Japanese? (Kamu bisa bahasa Jepang?) Seperti “bisa” dalam bahasa Indonesia, Can I…? juga dipakai untuk minta izin: “Boleh saya…?”",
+  "natural": "Can you help me? (Bisa bantu saya?) dan Can I sit here? (Boleh saya duduk di sini?) sangat berguna saat bepergian.",
+  "stiff": "Setelah can tidak ada to: I can to swim. salah. She cans juga salah. Jangan juga menambahkan to be: I am can swim. salah, cukup I can swim.",
+  "examples": [
+    {
+      "id": "gx-can-1",
+      "english": "I can speak a little English.",
+      "indonesian": "Saya bisa sedikit bahasa Inggris.",
+      "chunks": [
+        {
+          "t": "I ",
+          "w": "w-i"
+        },
+        {
+          "t": "can speak ",
+          "w": "w-speak"
+        },
+        {
+          "t": "a little English."
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "can",
+        "after": " speak a little English.",
+        "options": [
+          "can",
+          "can to",
+          "am"
+        ],
+        "why": "Bisa: can + kata kerja, tanpa to."
+      },
+      "audio": "audio/en/grammar/gx-can-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "can"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-can-2",
+      "english": "Can you help me?",
+      "indonesian": "Bisa bantu saya?",
+      "chunks": [
+        {
+          "t": "Can "
+        },
+        {
+          "t": "you ",
+          "w": "w-you"
+        },
+        {
+          "t": "help me?",
+          "w": "w-help"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Can",
+        "after": " you help me?",
+        "options": [
+          "Can",
+          "Are",
+          "Do"
+        ],
+        "why": "Untuk minta tolong: Can you…?"
+      },
+      "audio": "audio/en/grammar/gx-can-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "can"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-can-3",
+      "english": "Can I sit here?",
+      "indonesian": "Boleh saya duduk di sini?",
+      "chunks": [
+        {
+          "t": "Can I ",
+          "w": "w-i"
+        },
+        {
+          "t": "sit ",
+          "w": "w-sit"
+        },
+        {
+          "t": "here?",
+          "w": "w-here"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Can",
+        "after": " I sit here?",
+        "options": [
+          "Can",
+          "Am",
+          "Do"
+        ],
+        "why": "Untuk minta izin (“boleh”): Can I…?"
+      },
+      "audio": "audio/en/grammar/gx-can-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "can"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-can-4",
+      "english": "She can’t come tomorrow.",
+      "indonesian": "Dia tidak bisa datang besok.",
+      "chunks": [
+        {
+          "t": "She ",
+          "w": "w-she"
+        },
+        {
+          "t": "can’t come ",
+          "w": "w-come"
+        },
+        {
+          "t": "tomorrow.",
+          "w": "w-tomorrow"
+        }
+      ],
+      "gap": {
+        "before": "She ",
+        "answer": "can’t",
+        "after": " come tomorrow.",
+        "options": [
+          "can’t",
+          "doesn’t can",
+          "not can"
+        ],
+        "why": "Tidak bisa: can’t + kata kerja. Bukan doesn’t can atau not can."
+      },
+      "audio": "audio/en/grammar/gx-can-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "can"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

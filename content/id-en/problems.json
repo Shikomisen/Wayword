@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "problems",
+  "title": "Masalah & keluhan",
+  "order": 16,
+  "description": "Rusak, salah, terkunci di luar. Ungkapan untuk menyampaikan masalah dengan sopan tapi jelas.",
+  "phrases": [
+    {
+      "id": "pro-01",
+      "english": "Excuse me, there’s a problem with my room.",
+      "indonesian": "Permisi, ada masalah dengan kamar saya.",
+      "registerNotes": "Di resepsionis hotel. Sampaikan dulu bahwa ada masalah, baru jelaskan rinciannya.",
+      "audio": "audio/en/pro-01.mp3",
+      "audioHint": "Excuse me, there’s a problem with my room.",
+      "tags": [
+        "hotel",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-02",
+      "english": "The shower’s not working.",
+      "indonesian": "Shower-nya tidak berfungsi.",
+      "registerNotes": "…’s not working artinya '… tidak jalan, tidak bisa dipakai'. Bisa dipakai untuk apa saja.",
+      "audio": "audio/en/pro-02.mp3",
+      "audioHint": "The shower’s not working.",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pro-03",
+      "english": "I think there’s been a mistake.",
+      "indonesian": "Sepertinya ada kesalahan.",
+      "registerNotes": "Cara sopan menyampaikan masalah tanpa menyalahkan orang. Untuk kesalahan tagihan atau pesanan.",
+      "audio": "audio/en/pro-03.mp3",
+      "audioHint": "I think there’s been a mistake.",
+      "tags": [
+        "keluhan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-04",
+      "english": "This isn’t what I ordered.",
+      "indonesian": "Ini bukan yang saya pesan.",
+      "registerNotes": "Di restoran. Lebih halus kalau dimulai dengan Sorry, ….",
+      "audio": "audio/en/pro-04.mp3",
+      "audioHint": "This isn’t what I ordered.",
+      "tags": [
+        "restoran"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-05",
+      "english": "I’d like a refund, please.",
+      "indonesian": "Saya minta uang saya dikembalikan.",
+      "registerNotes": "Siapkan struknya. Kalau ingin ditukar: I’d like to swap it.",
+      "audio": "audio/en/pro-05.mp3",
+      "audioHint": "I’d like a refund, please.",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-06",
+      "english": "It stopped working after a day.",
+      "indonesian": "Baru sehari sudah rusak.",
+      "registerNotes": "Saat mengembalikan barang rusak, sampaikan sejak kapan masalahnya muncul.",
+      "audio": "audio/en/pro-06.mp3",
+      "audioHint": "It stopped working after a day.",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Jangan lupa -ed: stopped. Tanpa -ed, kalimatnya terdengar seperti terjadi sekarang."
+    },
+    {
+      "id": "pro-07",
+      "english": "Could I speak to the manager?",
+      "indonesian": "Bisa saya bicara dengan manajernya?",
+      "registerNotes": "Pakai hanya kalau masalahnya tidak selesai dengan pelayan pertama.",
+      "audio": "audio/en/pro-07.mp3",
+      "audioHint": "Could I speak to the manager?",
+      "tags": [
+        "keluhan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-08",
+      "english": "I’ve locked myself out.",
+      "indonesian": "Saya terkunci di luar.",
+      "registerNotes": "Di hotel atau rumah. lock oneself out artinya 'mengunci diri sendiri di luar' karena kuncinya tertinggal di dalam.",
+      "audio": "audio/en/pro-08.mp3",
+      "audioHint": "I’ve locked myself out.",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "pro-09",
+      "english": "I was charged twice.",
+      "indonesian": "Saya ditagih dua kali.",
+      "registerNotes": "Sambil menunjukkan rincian transaksi kartu atau struk. Bentuk was charged mirip 'ditagih' dalam bahasa Indonesia.",
+      "audio": "audio/en/pro-09.mp3",
+      "audioHint": "I was charged twice.",
+      "tags": [
+        "keluhan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-10",
+      "english": "Could you have a look at it?",
+      "indonesian": "Bisa tolong dicek?",
+      "registerNotes": "have a look artinya 'melihat sebentar'. Untuk minta diperbaiki atau dicek.",
+      "audio": "audio/en/pro-10.mp3",
+      "audioHint": "Could you have a look at it?",
+      "tags": [
+        "permintaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-11",
+      "english": "How long will it take to fix?",
+      "indonesian": "Perlu berapa lama untuk diperbaiki?",
+      "registerNotes": "How long will it take to …? artinya 'butuh berapa lama untuk …?'.",
+      "audio": "audio/en/pro-11.mp3",
+      "audioHint": "How long will it take to fix?",
+      "tags": [
+        "permintaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-12",
+      "english": "It’s not a big deal.",
+      "indonesian": "Tidak apa-apa, bukan masalah besar.",
+      "registerNotes": "Saat orang minta maaf, untuk bilang 'tidak usah dipikirkan'.",
+      "pitfallNote": "No problem. atau No worries. juga bisa dipakai dengan arti yang sama.",
+      "audio": "audio/en/pro-12.mp3",
+      "audioHint": "It’s not a big deal.",
+      "tags": [
+        "jawaban"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

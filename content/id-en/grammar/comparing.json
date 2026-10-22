@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-comparing",
+  "connector": "-er / -est",
+  "gloss": "membandingkan",
+  "title": "bigger, the biggest — lebih …, paling …",
+  "pattern": "-er than … ／ more … than … ／ the -est ／ the most …",
+  "explanation": "Untuk membandingkan dua hal, kata sifat yang pendek diberi -er lalu than (“daripada”): Wellington is windier than Auckland. Kata sifat yang panjang memakai more: more expensive than. Untuk “paling …”, pakai the -est atau the most: the biggest, the most beautiful. Jadi more mirip “lebih” dan most mirip “paling”, tapi kata yang pendek cukup diberi akhiran. good → better → best dan bad → worse → worst berubah bentuk.",
+  "natural": "Saat memilih: Which one is cheaper? (Yang mana yang lebih murah?), This is the best pie I’ve ever had! (Ini pai paling enak yang pernah aku makan!)",
+  "stiff": "Jangan pakai more dan -er sekaligus, walaupun “lebih murah” terdiri dari dua kata: more cheaper salah, yang benar cheaper.",
+  "examples": [
+    {
+      "id": "gx-comparing-1",
+      "english": "Wellington is windier than Auckland.",
+      "indonesian": "Wellington lebih berangin daripada Auckland.",
+      "chunks": [
+        {
+          "t": "Wellington is "
+        },
+        {
+          "t": "windier ",
+          "w": "w-windy"
+        },
+        {
+          "t": "than Auckland."
+        }
+      ],
+      "gap": {
+        "before": "Wellington is windier ",
+        "answer": "than",
+        "after": " Auckland.",
+        "options": [
+          "than",
+          "that",
+          "then"
+        ],
+        "why": "Sebelum yang dibandingkan pakai than (“daripada”)."
+      },
+      "audio": "audio/en/grammar/gx-comparing-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "-er / -est"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-comparing-2",
+      "english": "Which one is cheaper?",
+      "indonesian": "Yang mana yang lebih murah?",
+      "chunks": [
+        {
+          "t": "Which one "
+        },
+        {
+          "t": "is cheaper?",
+          "w": "w-cheap"
+        }
+      ],
+      "gap": {
+        "before": "Which one is ",
+        "answer": "cheaper",
+        "after": "?",
+        "options": [
+          "cheaper",
+          "more cheap",
+          "cheapest"
+        ],
+        "why": "Kata sifat pendek diberi -er (cheap → cheaper), tanpa more."
+      },
+      "audio": "audio/en/grammar/gx-comparing-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "-er / -est"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-comparing-3",
+      "english": "This is the best pie I’ve ever had!",
+      "indonesian": "Ini pai paling enak yang pernah saya makan!",
+      "chunks": [
+        {
+          "t": "This is "
+        },
+        {
+          "t": "the best ",
+          "w": "w-good"
+        },
+        {
+          "t": "pie ",
+          "w": "w-pie"
+        },
+        {
+          "t": "I’ve ever had!",
+          "w": "w-have"
+        }
+      ],
+      "gap": {
+        "before": "This is the ",
+        "answer": "best",
+        "after": " pie I’ve ever had!",
+        "options": [
+          "best",
+          "better",
+          "goodest"
+        ],
+        "why": "Bentuk “paling” dari good adalah best."
+      },
+      "audio": "audio/en/grammar/gx-comparing-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "-er / -est"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-comparing-4",
+      "english": "It’s more expensive than I thought.",
+      "indonesian": "Ternyata lebih mahal dari yang saya kira.",
+      "chunks": [
+        {
+          "t": "It’s "
+        },
+        {
+          "t": "more expensive ",
+          "w": "w-expensive"
+        },
+        {
+          "t": "than I thought."
+        }
+      ],
+      "gap": {
+        "before": "It’s ",
+        "answer": "more",
+        "after": " expensive than I thought.",
+        "options": [
+          "more",
+          "most",
+          "much"
+        ],
+        "why": "Kata sifat panjang memakai more + kata sifat."
+      },
+      "audio": "audio/en/grammar/gx-comparing-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "-er / -est"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

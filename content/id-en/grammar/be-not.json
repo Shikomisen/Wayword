@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-be-not",
+  "connector": "not / Are…?",
+  "gloss": "tidak, bukan, dan bertanya dengan to be",
+  "title": "not, Are you…? — negatif dan pertanyaan dengan to be",
+  "pattern": "I’m not … / It isn’t … / Are you …? — Yes, I am. / No, I’m not.",
+  "explanation": "Untuk negatif, taruh not setelah to be: I’m not, it isn’t (is not), they aren’t (are not). Bahasa Inggris memakai not untuk “tidak” dan “bukan”. Untuk bertanya, bahasa Indonesia cukup menaikkan nada, tapi bahasa Inggris memindahkan to be ke depan: You are tired. → Are you tired? (Kamu capek?) Jawab juga dengan to be: Yes, I am. / No, I’m not.",
+  "natural": "Are you OK? (Kamu baik-baik saja?) dan Is this yours? (Ini punyamu?) adalah pertanyaan yang hampir setiap hari dipakai.",
+  "stiff": "Do you tired? itu salah. Kalimat dengan to be tidak memakai do untuk bertanya; to be-nya yang pindah ke depan: Are you tired? Jawaban Yes, I’m. juga salah: bilang Yes, I am. tanpa disingkat.",
+  "examples": [
+    {
+      "id": "gx-be-not-1",
+      "english": "I’m not hungry.",
+      "indonesian": "Saya tidak lapar.",
+      "chunks": [
+        {
+          "t": "I’m ",
+          "w": "w-i"
+        },
+        {
+          "t": "not "
+        },
+        {
+          "t": "hungry.",
+          "w": "w-hungry"
+        }
+      ],
+      "gap": {
+        "before": "I’m ",
+        "answer": "not",
+        "after": " hungry.",
+        "options": [
+          "not",
+          "no",
+          "don’t"
+        ],
+        "why": "Negatif to be pakai not: I’m not. “Tidak” di sini bukan no."
+      },
+      "audio": "audio/en/grammar/gx-be-not-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "not / Are…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-be-not-2",
+      "english": "Are you OK?",
+      "indonesian": "Kamu baik-baik saja?",
+      "chunks": [
+        {
+          "t": "Are "
+        },
+        {
+          "t": "you ",
+          "w": "w-you"
+        },
+        {
+          "t": "OK?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Are",
+        "after": " you OK?",
+        "options": [
+          "Are",
+          "Do",
+          "Is"
+        ],
+        "why": "Bertanya dengan to be: to be pindah ke depan, Are you…? Tidak pakai Do."
+      },
+      "audio": "audio/en/grammar/gx-be-not-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "not / Are…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-be-not-3",
+      "english": "It isn’t far.",
+      "indonesian": "Tempatnya tidak jauh.",
+      "chunks": [
+        {
+          "t": "It ",
+          "w": "w-it"
+        },
+        {
+          "t": "isn’t "
+        },
+        {
+          "t": "far."
+        }
+      ],
+      "gap": {
+        "before": "It ",
+        "answer": "isn’t",
+        "after": " far.",
+        "options": [
+          "isn’t",
+          "aren’t",
+          "don’t"
+        ],
+        "why": "Negatif untuk it adalah isn’t (is not)."
+      },
+      "audio": "audio/en/grammar/gx-be-not-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "not / Are…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-be-not-4",
+      "english": "Is this your key?",
+      "indonesian": "Apakah ini kuncimu?",
+      "chunks": [
+        {
+          "t": "Is "
+        },
+        {
+          "t": "this ",
+          "w": "w-this"
+        },
+        {
+          "t": "your key?",
+          "w": "w-key"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Is",
+        "after": " this your key?",
+        "options": [
+          "Is",
+          "Are",
+          "Do"
+        ],
+        "why": "Untuk this pakai is. Karena ini pertanyaan, Is pindah ke depan."
+      },
+      "audio": "audio/en/grammar/gx-be-not-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "not / Are…?"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

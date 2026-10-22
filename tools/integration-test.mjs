@@ -1170,7 +1170,7 @@ const jaContent = await loadContent();
 const jaItems = [...jaContent.phrases.values()];
 
 check('the course has a translator both ways, from mt/translator.json',
-  jaContent.features.translator && translatorMod.directionsFor(jaContent).say === 'en-ja' && translatorMod.directionsFor(jaContent).read === 'ja-en');
+  jaContent.features.translator && translatorMod.directionsFor(jaContent).say?.join() === 'en-ja' && translatorMod.directionsFor(jaContent).read?.join() === 'ja-en');
 const mtFiles = translatorMod.filesFor(jaContent.translator, ['en-ja', 'ja-en']);
 check('…its files: the engine, its loader, and both models, each once',
   mtFiles.length === 9 && new Set(mtFiles.map((f) => f.path)).size === 9 && translatorMod.bytesOf(mtFiles) > 50e6,
@@ -1203,6 +1203,20 @@ check('…and an empty text is an empty translation, not an error', (await nodeM
 let mtNoModel = null;
 try { await nodeMt.translate('en-xx', 'Hello'); } catch (err) { mtNoModel = err; }
 check('a direction it has no model for fails cleanly', /no model/.test(mtNoModel?.message || ''), mtNoModel?.message);
+
+// Indonesian: English ↔ Indonesian directly; Japanese ↔ Indonesian through English, since Mozilla has no model for it.
+const mtPairs = jaContent.translator.pairs;
+check('English ↔ Indonesian is one model each way',
+  translatorMod.routeFor(mtPairs, 'en', 'id')?.join() === 'en-id' && translatorMod.routeFor(mtPairs, 'id', 'en')?.join() === 'id-en');
+check('…and Japanese ↔ Indonesian goes through English',
+  translatorMod.routeFor(mtPairs, 'ja', 'id')?.join() === 'ja-en,en-id' && translatorMod.routeFor(mtPairs, 'id', 'ja')?.join() === 'id-en,en-ja');
+check('…with no route where there are no models', translatorMod.routeFor(mtPairs, 'ja', 'xx') === null && translatorMod.routeFor(mtPairs, 'en', 'xx') === null);
+const mtJaId = await nodeMt.translate(['ja-en', 'en-id'], 'すみません、駅はどこですか。');
+check('the worker translates Japanese into Indonesian through English', /stasiun/i.test(mtJaId.text), mtJaId.text);
+const mtIdJa = await nodeMt.translate(['id-en', 'en-ja'], 'Di mana apotek terdekat?');
+check('…and Indonesian into Japanese', /薬局/.test(mtIdJa.text), mtIdJa.text);
+check('Indonesian output spells di mana, ke mana and dari mana apart',
+  translatorMod.tidy('Dimana toiletnya? Kamu mau kemana? Darimana?', 'id') === 'Di mana toiletnya? Kamu mau ke mana? Dari mana?');
 
 /* ---------- result ---------- */
 

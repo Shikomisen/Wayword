@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "hotel-problem",
+  "title": "Masalah di kamar hotel",
+  "category": "problems",
+  "setting": "Kamu masuk ke kamar hotel dan mau mandi, tapi air panasnya tidak keluar. Kamu menelepon resepsionis.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "receptionist",
+      "english": "Good evening, front desk. How can I help?",
+      "indonesian": "Selamat malam, resepsionis. Ada yang bisa saya bantu?",
+      "audio": "audio/en/scenario/hotel-problem-n1.mp3",
+      "audioHint": "Good evening, front desk. How can I help?",
+      "options": [
+        {
+          "phraseId": "pro-01",
+          "quality": "good",
+          "feedback": "Cara membuka yang sopan: sampaikan dulu bahwa ada masalah.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "Hi, this is room 304. There’s no hot water.",
+          "indonesian": "Halo, ini kamar 304. Air panasnya tidak keluar.",
+          "feedback": "Kalau nomor kamar disebut di awal, urusannya lebih cepat.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "Your shower is bad.",
+          "indonesian": "Shower kalian jelek.",
+          "feedback": "Terdengar seperti menyalahkan. Sampaikan faktanya saja, seperti The shower’s not working.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "receptionist",
+      "english": "I’m so sorry about that. What seems to be the problem?",
+      "indonesian": "Mohon maaf sekali. Apa masalahnya?",
+      "audio": "audio/en/scenario/hotel-problem-n2.mp3",
+      "audioHint": "I’m so sorry about that. What seems to be the problem?",
+      "options": [
+        {
+          "phraseId": "pro-02",
+          "quality": "good",
+          "feedback": "Jelas menyebut apa yang tidak berfungsi.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "english": "The water’s been cold for ten minutes.",
+          "indonesian": "Sudah sepuluh menit airnya tetap dingin.",
+          "feedback": "Kalau kamu bilang sudah berapa lama mencoba, keadaannya lebih jelas.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "english": "It’s… cold. Water. Cold.",
+          "indonesian": "Itu… dingin. Air. Dingin.",
+          "feedback": "Kata-kata saja pun bisa dimengerti, tapi kalimat The water’s cold. terdengar lebih tenang. Ingat ’s (is): “airnya dingin” tetap butuh is dalam bahasa Inggris.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "receptionist",
+      "english": "I’ll send someone up to have a look at it straight away.",
+      "indonesian": "Saya akan segera mengirim petugas untuk memeriksanya.",
+      "audio": "audio/en/scenario/hotel-problem-n3.mp3",
+      "audioHint": "I’ll send someone up to have a look at it straight away.",
+      "options": [
+        {
+          "phraseId": "pro-11",
+          "quality": "good",
+          "feedback": "Pertanyaan bagus untuk tahu berapa lama harus menunggu.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "Thank you. I’ll wait in the room.",
+          "indonesian": "Terima kasih. Saya tunggu di kamar.",
+          "feedback": "Kamu berterima kasih dan memberi tahu di mana kamu menunggu.",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "english": "No, I’ll look.",
+          "indonesian": "Tidak, saya yang lihat.",
+          "feedback": "have a look at it artinya “(petugas) akan memeriksanya”. Kamu tidak perlu memeriksanya sendiri.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "receptionist",
+      "english": "If it can’t be fixed tonight, we can move you to another room.",
+      "indonesian": "Kalau tidak bisa diperbaiki malam ini, kami bisa memindahkan Anda ke kamar lain.",
+      "audio": "audio/en/scenario/hotel-problem-n4.mp3",
+      "audioHint": "If it can’t be fixed tonight, we can move you to another room.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "That would be great, thanks.",
+          "indonesian": "Wah, itu sangat membantu, terima kasih.",
+          "feedback": "That would be great. adalah jawaban ramah untuk sebuah tawaran.",
+          "next": "end"
+        },
+        {
+          "phraseId": "pro-12",
+          "quality": "good",
+          "feedback": "Jawaban yang baik hati untuk bilang kamu tidak keberatan.",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "english": "You must give me a discount.",
+          "indonesian": "Kalian harus memberi saya diskon.",
+          "feedback": "“Harus” sering dipakai dalam bahasa Indonesia, tapi must terdengar seperti perintah. Kalau mau meminta: Would it be possible to get a discount?",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "indonesian": "Masalahnya beres. Nomor kamar, apa masalahnya, dan terima kasih atas tawarannya. Untuk masalah di hotel, cara tercepat adalah menyampaikan faktanya dengan tenang.",
+      "end": true,
+      "options": []
+    }
+  }
+}

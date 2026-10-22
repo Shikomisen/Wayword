@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-be",
+  "connector": "am / is / are",
+  "gloss": "kata kerja to be",
+  "title": "am, is, are — kata kerja to be",
+  "pattern": "I am … / You are … / He・She・It is …",
+  "explanation": "Dalam bahasa Indonesia, “Saya guru” sudah lengkap tanpa kata kerja. Bahasa Inggris selalu butuh to be di situ: I’m a teacher. Bentuknya ikut subjek: I am, untuk you, we, they pakai are, untuk he, she, it pakai is. Dalam percakapan biasanya disingkat: I’m, you’re, he’s, it’s. Kabar baiknya, urutannya sama dengan bahasa Indonesia: kamu cukup menyisipkan am, is, atau are setelah subjek.",
+  "natural": "Selalu dipakai saat memperkenalkan diri, menyebut perasaan, atau menyebut tempat: I’m Yuki. (Saya Yuki.), I’m tired. (Saya capek.), It’s here. (Ada di sini.)",
+  "stiff": "Kalau dalam percakapan kamu selalu bilang I am lengkap, kedengarannya kaku atau seperti menekankan. Biasanya cukup I’m. Kesalahan yang sering terjadi: menerjemahkan “Saya mahasiswa” kata per kata menjadi I student. Itu salah, to be harus ada: I’m a student.",
+  "examples": [
+    {
+      "id": "gx-be-1",
+      "english": "I’m a student in Auckland.",
+      "indonesian": "Saya pelajar di Auckland.",
+      "chunks": [
+        {
+          "t": "I’m ",
+          "w": "w-i"
+        },
+        {
+          "t": "a student ",
+          "w": "w-student"
+        },
+        {
+          "t": "in Auckland."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "I’m",
+        "after": " a student in Auckland.",
+        "options": [
+          "I’m",
+          "I",
+          "I is"
+        ],
+        "why": "Setelah subjek harus ada to be, walaupun “Saya pelajar” tidak memakainya. I + am jadi I’m."
+      },
+      "audio": "audio/en/grammar/gx-be-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "am / is / are"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-be-2",
+      "english": "She’s my sister.",
+      "indonesian": "Dia kakak perempuan saya.",
+      "chunks": [
+        {
+          "t": "She’s ",
+          "w": "w-she"
+        },
+        {
+          "t": "my "
+        },
+        {
+          "t": "sister.",
+          "w": "w-sister"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "She’s",
+        "after": " my sister.",
+        "options": [
+          "She’s",
+          "She are",
+          "She"
+        ],
+        "why": "Untuk he, she, it pakai is (She is → She’s). “Dia” perempuan = she."
+      },
+      "audio": "audio/en/grammar/gx-be-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "am / is / are"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-be-3",
+      "english": "We’re from Japan.",
+      "indonesian": "Kami dari Jepang.",
+      "chunks": [
+        {
+          "t": "We’re ",
+          "w": "w-we"
+        },
+        {
+          "t": "from "
+        },
+        {
+          "t": "Japan."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "We’re",
+        "after": " from Japan.",
+        "options": [
+          "We’re",
+          "We is",
+          "We"
+        ],
+        "why": "Untuk we, you, they pakai are (We are → We’re)."
+      },
+      "audio": "audio/en/grammar/gx-be-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "am / is / are"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-be-4",
+      "english": "It’s really hot today.",
+      "indonesian": "Hari ini panas sekali.",
+      "chunks": [
+        {
+          "t": "It’s ",
+          "w": "w-it"
+        },
+        {
+          "t": "really "
+        },
+        {
+          "t": "hot ",
+          "w": "w-hot"
+        },
+        {
+          "t": "today.",
+          "w": "w-today"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "It’s",
+        "after": " really hot today.",
+        "options": [
+          "It’s",
+          "It",
+          "Is"
+        ],
+        "why": "Kalimat tentang cuaca dimulai dengan It’s. Bahasa Indonesia cukup bilang “Panas sekali”, tapi bahasa Inggris butuh subjek dan to be."
+      },
+      "audio": "audio/en/grammar/gx-be-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "am / is / are"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

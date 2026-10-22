@@ -15,6 +15,7 @@ import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as srs from '../js/srs.js';
 import { toSegments, rubyText, hasKanji } from '../js/ruby.js';
+import { routeFor } from '../js/translator.js';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -90,8 +91,26 @@ for (const [code, lang] of Object.entries(registry.languages)) {
 
 /* ---------- content, per course ---------- */
 
-// Audio paths must be unique across every course, not just within one.
-const seenAudio = new Set();
+// A clip path is unique within a course. A course built from another one keeps
+// its clips, so across courses a path may be shared, as long as every item
+// using it says the same thing (README §6.12).
+const clipOwners = new Map(); // path → { course, spoken }
+let seenAudio; // the current course's paths: see clipRegister
+
+function clipRegister(courseId) {
+  const mine = new Set();
+  return {
+    has: (path) => mine.has(path),
+    add(path, spoken) {
+      mine.add(path);
+      const other = clipOwners.get(path);
+      if (!other) clipOwners.set(path, { course: courseId, spoken });
+      else if (other.course !== courseId) {
+        check(`${path}: shared with ${other.course}, and says the same there`, other.spoken === spoken, `${spoken} vs ${other.spoken}`);
+      }
+    },
+  };
+}
 
 // Word decks: every part of speech and word form any course declares (its
 // manifest's `words`), each of which needs an interface string.
@@ -105,6 +124,7 @@ for (const course of registry.courses.filter((c) => c.manifest && existsSync(res
 
 function validateCourse(course) {
   console.log(`\nContent — ${course.id}`);
+  seenAudio = clipRegister(course.id);
 
   const manifest = readJSON(course.manifest);
   check(`${course.id}: manifest has schemaVersion`, typeof manifest.schemaVersion === 'number');
@@ -220,7 +240,7 @@ function validateCourse(course) {
         if (fields.ruby) checkRuby(`${p.id}/polite`, q[fields.ruby], q[target]);
         if (check(`${p.id}: polite version has audio`, Boolean(q.audio))) {
           check(`${p.id}: polite audio path is unique`, !seenAudio.has(q.audio));
-          seenAudio.add(q.audio);
+          seenAudio.add(q.audio, q.audioHint ?? q[target]);
           const clip = resolve(ROOT, q.audio);
           if (existsSync(clip)) { audioPresent++; check(`${p.id}: polite clip is non-trivial`, statSync(clip).size > 800); }
           phraseCount++;
@@ -228,7 +248,7 @@ function validateCourse(course) {
       }
 
       check(`${p.id}: audio path is unique`, !seenAudio.has(p.audio));
-      seenAudio.add(p.audio);
+      seenAudio.add(p.audio, p.audioHint ?? p[target]);
       check(`${p.id}: audio lives under audio/${course.target}/`, p.audio.startsWith(`audio/${course.target}/`), p.audio);
 
       const audioPath = resolve(ROOT, p.audio);
@@ -293,7 +313,7 @@ function validateCourse(course) {
     }
 
     check(`${item.id}: audio path is unique`, !seenAudio.has(item.audio));
-    seenAudio.add(item.audio);
+    seenAudio.add(item.audio, item.audioHint ?? item[target]);
     check(`${item.id}: audio lives under audio/${course.target}/`, String(item.audio).startsWith(`audio/${course.target}/`), item.audio);
     const clip = resolve(ROOT, item.audio);
     if (existsSync(clip)) {
@@ -430,16 +450,16 @@ function validateCourse(course) {
 
       // Kanji carry a meaning; kana legitimately do not (README §6.7).
       if (set.script === 'kanji') {
-        check(`${c.id}: kanji has an English meaning`, Boolean(c.english));
+        check(`${c.id}: kanji has a meaning (${fields.meaning})`, Boolean(c[fields.meaning]));
         for (const ref of c.seenIn || []) {
           check(`${c.id}: cross-ref ${ref} is a real phrase`, seenIds.has(ref));
         }
       } else {
-        check(`${c.id}: kana leaves english null`, c.english === null);
+        check(`${c.id}: kana leaves ${fields.meaning} null`, c[fields.meaning] === null);
       }
 
       check(`${c.id}: audio path is unique`, !seenAudio.has(c.audio));
-      seenAudio.add(c.audio);
+      seenAudio.add(c.audio, c.audioHint ?? c.character);
 
       const audioPath = resolve(ROOT, c.audio);
       if (existsSync(audioPath)) {
@@ -463,7 +483,7 @@ function validateCourse(course) {
     check(`${x.id}: unique id across all content`, !seenIds.has(x.id));
     seenIds.add(x.id);
     check(`${x.id}: audio path is unique`, !seenAudio.has(x.audio));
-    seenAudio.add(x.audio);
+    seenAudio.add(x.audio, x.audioHint ?? x[target]);
     check(`${x.id}: audio lives under audio/${course.target}/`, String(x.audio).startsWith(`audio/${course.target}/`), x.audio);
     const clip = resolve(ROOT, x.audio);
     if (existsSync(clip)) check(`${x.id}: audio clip is non-trivial`, statSync(clip).size > 800);
@@ -564,7 +584,7 @@ function validateCourse(course) {
         if (existsSync(clip)) check(`${s.id}/${nodeId}: audio clip is non-trivial`, statSync(clip).size > 800);
         check(`${s.id}/${nodeId}: audio has text to synthesise`, Boolean(node.audioHint || node[target]));
         check(`${s.id}/${nodeId}: audio path is unique`, !seenAudio.has(node.audio));
-        seenAudio.add(node.audio);
+        seenAudio.add(node.audio, node.audioHint ?? node[target]);
       }
 
       for (const opt of node.options || []) {
@@ -613,10 +633,14 @@ function validateCourse(course) {
 
 console.log('\nInterface strings');
 
-// Keys the Japanese interface can never reach: they belong to features only
-// courses with furigana, romaji or character sets have, and every such course
-// today is taught from English.
-const EN_ONLY = /^(reading\.|settings\.(newChars|characters)|quiz\.(reading|loaded$)|toast\.romajiRetired)/;
+// Keys only courses with furigana, romaji or character sets reach (Japanese,
+// today). A speaker language needs them once one of its courses has those:
+// Indonesian does (id-ja); Japanese doesn't.
+const READING_ONLY = /^(reading\.|settings\.(newChars|characters)|quiz\.(reading|loaded$)|toast\.romajiRetired)/;
+const readsIn = new Set(registry.courses.filter((c) => c.manifest && existsSync(resolve(ROOT, c.manifest))).filter((c) => {
+  const m = readJSON(c.manifest);
+  return Boolean(m.fields?.ruby || m.fields?.reading || (m.characterSets || []).length);
+}).map((c) => c.speaker));
 
 // Strings are content: content/ui/<lang>.json, one per language people learn
 // from. Plural variants (key_one, key_other…) count as the key itself.
@@ -636,7 +660,7 @@ for (const [lang, dict] of Object.entries(uiDicts)) {
   const keys = baseKeys(dict);
   for (const key of keys) check(`${lang} key ${key} exists in en`, enKeys.has(key));
   for (const key of enKeys) {
-    if (!EN_ONLY.test(key)) check(`en key ${key} has a ${lang} translation`, keys.has(key));
+    if (!READING_ONLY.test(key) || readsIn.has(lang)) check(`en key ${key} has a ${lang} translation`, keys.has(key));
   }
 }
 for (const [lang, dict] of Object.entries(uiDicts)) {
@@ -696,8 +720,10 @@ if (check('mt/translator.json exists', existsSync(resolve(ROOT, 'mt/translator.j
     check(`translator ${pair}: a model, a shortlist and its vocabulary`, Boolean(f.model && f.lex && (f.vocab || (f.srcvocab && f.trgvocab))));
   }
   // Each available course can translate both ways: what to say, and what was said.
+  // A direction Mozilla has no model for goes through English (ja → en → id).
   for (const c of registry.courses.filter((x) => x.status === 'available')) {
-    check(`${c.id}: the translator has both directions`, Boolean(mt.pairs?.[`${c.speaker}-${c.target}`] && mt.pairs?.[`${c.target}-${c.speaker}`]));
+    check(`${c.id}: the translator has both directions, directly or through English`,
+      Boolean(routeFor(mt.pairs, c.speaker, c.target) && routeFor(mt.pairs, c.target, c.speaker)));
   }
   console.log(`  ${Object.keys(mt.pairs || {}).length} directions, ${(bytes / 1e6).toFixed(1)} MB`);
 }

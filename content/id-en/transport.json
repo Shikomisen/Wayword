@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "transport",
+  "title": "Kereta, bus & taksi",
+  "order": 4,
+  "description": "Tiket, ganti kendaraan, memastikan tujuan. Kalau tidak cemas soal perjalanan, keluar rumah jadi jauh lebih menyenangkan.",
+  "phrases": [
+    {
+      "id": "tra-01",
+      "english": "One ticket to Wellington, please.",
+      "indonesian": "Satu tiket ke Wellington, ya.",
+      "registerNotes": "Tujuan + please sudah cukup. Tiket pulang-pergi di Selandia Baru dan Inggris disebut a return, di Amerika a round-trip ticket.",
+      "audio": "audio/en/tra-01.mp3",
+      "audioHint": "One ticket to Wellington, please.",
+      "tags": [
+        "tiket",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "tra-02",
+      "english": "Does this bus go to the city centre?",
+      "indonesian": "Bus ini ke pusat kota?",
+      "registerNotes": "Untuk memastikan sebelum naik. Di kota-kota Selandia Baru, bus adalah transportasi utama. centre adalah ejaan Inggris (di Amerika center). Untuk kereta: Does this train go to ...?",
+      "audio": "audio/en/tra-02.mp3",
+      "audioHint": "Does this bus go to the city centre?",
+      "tags": [
+        "kereta",
+        "memastikan"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "'Apakah bus ini…' sering diterjemahkan jadi Is this bus go…?. Kalau ada kata kerja (go), pertanyaannya pakai Does: Does this bus go…?"
+    },
+    {
+      "id": "tra-03",
+      "english": "Which platform is it?",
+      "indonesian": "Jalur berapa?",
+      "registerNotes": "Di Selandia Baru dan Inggris dipakai platform, di Amerika lebih sering track.",
+      "audio": "audio/en/tra-03.mp3",
+      "audioHint": "Which platform is it?",
+      "tags": [
+        "kereta"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-04",
+      "english": "Where do I change trains?",
+      "indonesian": "Saya harus ganti kereta di mana?",
+      "registerNotes": "Di Amerika juga sering dipakai transfer (Where do I transfer?).",
+      "audio": "audio/en/tra-04.mp3",
+      "audioHint": "Where do I change trains?",
+      "tags": [
+        "kereta",
+        "ganti kendaraan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "tra-05",
+      "english": "Could you tell me when we get to Queen Street?",
+      "indonesian": "Bisa tolong kasih tahu kalau sudah sampai di Queen Street?",
+      "registerNotes": "Kalau minta ke sopir bus, biasanya dia dengan senang hati memberi tahu. Di Selandia Baru, penumpang biasa bilang Thanks! ke sopir saat turun.",
+      "audio": "audio/en/tra-05.mp3",
+      "audioHint": "Could you tell me when we get to Queen Street?",
+      "tags": [
+        "bus",
+        "permintaan"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "tra-06",
+      "english": "Please take me to this address.",
+      "indonesian": "Tolong antar ke alamat ini.",
+      "registerNotes": "Di taksi, sambil menunjukkan alamatnya. Walaupun tidak yakin dengan pelafalanmu, menunjukkan alamat pasti berhasil.",
+      "audio": "audio/en/tra-06.mp3",
+      "audioHint": "Please take me to this address.",
+      "tags": [
+        "taksi",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "tra-07",
+      "english": "How much is it to the airport?",
+      "indonesian": "Ke bandara berapa?",
+      "registerNotes": "Lebih tenang kalau kamu tanya kisaran harganya sebelum naik.",
+      "audio": "audio/en/tra-07.mp3",
+      "audioHint": "How much is it to the airport?",
+      "tags": [
+        "taksi",
+        "harga"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-08",
+      "english": "Can you drop me off here?",
+      "indonesian": "Bisa turunkan saya di sini?",
+      "registerNotes": "drop off artinya 'menurunkan (dari mobil)'. Right here is fine. (di sini saja) juga berguna.",
+      "audio": "audio/en/tra-08.mp3",
+      "audioHint": "Can you drop me off here?",
+      "tags": [
+        "taksi"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "tra-09",
+      "english": "Is this seat taken?",
+      "indonesian": "Kursi ini kosong?",
+      "registerNotes": "Arti harfiahnya 'Kursi ini sudah ada yang pakai?'. Kalau jawabannya No, kamu boleh duduk.",
+      "pitfallNote": "Kita biasa bertanya 'kosong?', jadi jawaban No terasa seperti 'tidak kosong'. Padahal No, go ahead. artinya 'tidak ada yang pakai, silakan'.",
+      "audio": "audio/en/tra-09.mp3",
+      "audioHint": "Is this seat taken?",
+      "tags": [
+        "kereta",
+        "bus"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-10",
+      "english": "Where can I buy a ticket?",
+      "indonesian": "Tiketnya beli di mana?",
+      "registerNotes": "Mesin tiket disebut ticket machine. Di banyak kota, seperti Auckland dengan kartu AT HOP, kamu bisa naik cukup dengan menempelkan kartu atau ponsel, mirip kartu uang elektronik di KRL.",
+      "audio": "audio/en/tra-10.mp3",
+      "audioHint": "Where can I buy a ticket?",
+      "tags": [
+        "tiket"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "id": "words-nz",
+  "title": "Kata khas Selandia Baru",
+  "description": "Kata yang sering kamu dengar di Selandia Baru, termasuk beberapa dari bahasa Māori.",
+  "items": [
+    {
+      "id": "w-kia-ora",
+      "english": "kia ora",
+      "indonesian": "halo (bahasa Māori)",
+      "pos": "phrase",
+      "registerNotes": "Salam dalam bahasa Māori. Bisa juga berarti “terima kasih”. Sering terdengar di toko dan di TV atau radio.",
+      "audio": "audio/en/words/w-kia-ora.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-heaps",
+      "english": "heaps",
+      "indonesian": "banyak, sangat",
+      "pos": "adverb",
+      "registerNotes": "heaps of time (waktunya masih banyak), Thanks heaps! (Makasih banyak!)",
+      "audio": "audio/en/words/w-heaps.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-keen",
+      "english": "keen",
+      "indonesian": "mau, semangat (ikut)",
+      "pos": "adjective",
+      "registerNotes": "Are you keen? (Mau ikut?) — sering dipakai untuk mengajak. I'm keen! (Mau!)",
+      "audio": "audio/en/words/w-keen.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-reckon",
+      "english": "reckon",
+      "indonesian": "kira, rasa (pikir)",
+      "pos": "verb",
+      "registerNotes": "I reckon it'll rain. (Kayaknya bakal hujan.) — cara santai untuk bilang think.",
+      "audio": "audio/en/words/w-reckon.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sweet-as",
+      "english": "sweet as",
+      "indonesian": "oke, sip, beres",
+      "pos": "phrase",
+      "registerNotes": "Cara santai untuk bilang “oke” atau “sip”. Tidak ada kata lain setelah as.",
+      "audio": "audio/en/words/w-sweet-as.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-no-worries",
+      "english": "no worries",
+      "indonesian": "tidak apa-apa, sama-sama",
+      "pos": "phrase",
+      "registerNotes": "Thank you! — No worries! (Sama-sama!) Juga dipakai untuk “santai saja” saat orang minta maaf.",
+      "audio": "audio/en/words/w-no-worries.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-togs",
+      "english": "togs",
+      "indonesian": "baju renang",
+      "pos": "noun",
+      "registerNotes": "Wajib dibawa ke pantai atau kolam renang. Di Amerika: swimsuit.",
+      "audio": "audio/en/words/w-togs.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-dairy-shop",
+      "english": "dairy",
+      "indonesian": "toko kelontong kecil, warung",
+      "pos": "noun",
+      "registerNotes": "Toko kecil yang menjual susu, roti, camilan, dan lain-lain, mirip warung atau minimarket kecil. the dairy on the corner (warung di sudut jalan)",
+      "pitfallNote": "Berbeda dengan dairy (produk susu) yang kamu lihat di menu kafe.",
+      "audio": "audio/en/words/w-dairy-shop.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-chilly-bin",
+      "english": "chilly bin",
+      "indonesian": "kotak pendingin (cool box)",
+      "pos": "noun",
+      "registerNotes": "Kotak pendingin yang dibawa piknik atau ke pantai. Di Amerika: cooler.",
+      "audio": "audio/en/words/w-chilly-bin.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bach",
+      "english": "bach",
+      "indonesian": "rumah liburan sederhana",
+      "pos": "noun",
+      "registerNotes": "Rumah kecil untuk liburan akhir pekan, sering di dekat pantai atau danau. Dibaca “bec”, seperti batch. Di Pulau Selatan juga disebut crib.",
+      "audio": "audio/en/words/w-bach.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tramping",
+      "english": "tramping",
+      "indonesian": "mendaki, hiking",
+      "pos": "noun",
+      "registerNotes": "go tramping (pergi mendaki). Di Amerika: hiking.",
+      "audio": "audio/en/words/w-tramping.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ute",
+      "english": "ute",
+      "indonesian": "mobil bak terbuka (pikap)",
+      "pos": "noun",
+      "registerNotes": "Kependekan dari utility vehicle, dibaca “yut”.",
+      "audio": "audio/en/words/w-ute.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kai",
+      "english": "kai",
+      "indonesian": "makanan",
+      "pos": "noun",
+      "registerNotes": "Bahasa Māori untuk “makanan”. Let's get some kai. (Yuk, cari makan.)",
+      "audio": "audio/en/words/w-kai.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-whanau",
+      "english": "whānau",
+      "indonesian": "keluarga (besar)",
+      "pos": "noun",
+      "registerNotes": "Bahasa Māori untuk keluarga, termasuk sanak saudara, seperti keluarga besar. Dibaca kira-kira “faa-nau”.",
+      "audio": "audio/en/words/w-whanau.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chur",
+      "english": "chur",
+      "indonesian": "makasih; mantap",
+      "pos": "phrase",
+      "registerNotes": "“Terima kasih” yang sangat santai. Sering dipakai anak muda.",
+      "audio": "audio/en/words/w-chur.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-stoked",
+      "english": "stoked",
+      "indonesian": "senang sekali",
+      "pos": "adjective",
+      "registerNotes": "I'm stoked! (Senang banget!)",
+      "audio": "audio/en/words/w-stoked.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gutted",
+      "english": "gutted",
+      "indonesian": "kecewa berat, sedih",
+      "pos": "adjective",
+      "registerNotes": "I'm gutted. (Kecewa banget.)",
+      "audio": "audio/en/words/w-gutted.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-arvo",
+      "english": "arvo",
+      "indonesian": "siang, sore",
+      "pos": "noun",
+      "registerNotes": "Cara santai untuk bilang afternoon. this arvo (siang atau sore ini)",
+      "audio": "audio/en/words/w-arvo.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cuppa",
+      "english": "cuppa",
+      "indonesian": "secangkir teh",
+      "pos": "noun",
+      "registerNotes": "Do you want a cuppa? (Mau minum teh?) — cara santai untuk bilang a cup of tea.",
+      "audio": "audio/en/words/w-cuppa.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tea-dinner",
+      "english": "tea",
+      "indonesian": "makan malam (di rumah)",
+      "pos": "noun",
+      "registerNotes": "What's for tea? (Makan malamnya apa?) — di rumah, makan malam kadang disebut tea.",
+      "pitfallNote": "Kata yang sama dengan tea (teh). Teh atau makan malam, lihat dari konteksnya.",
+      "audio": "audio/en/words/w-tea-dinner.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-lollies",
+      "english": "lollies",
+      "indonesian": "permen (termasuk permen jeli)",
+      "pos": "noun",
+      "registerNotes": "Di Amerika: candy.",
+      "audio": "audio/en/words/w-lollies.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sunnies",
+      "english": "sunnies",
+      "indonesian": "kacamata hitam",
+      "pos": "noun",
+      "registerNotes": "Cara santai untuk bilang sunglasses.",
+      "audio": "audio/en/words/w-sunnies.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-op-shop",
+      "english": "op shop",
+      "indonesian": "toko barang bekas amal",
+      "pos": "noun",
+      "registerNotes": "Kependekan dari opportunity shop. Menjual baju dan barang bekas (seperti thrift shop), dan hasilnya dipakai untuk kegiatan amal.",
+      "audio": "audio/en/words/w-op-shop.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-footpath",
+      "english": "footpath",
+      "indonesian": "trotoar",
+      "pos": "noun",
+      "registerNotes": "Di Amerika: sidewalk.",
+      "audio": "audio/en/words/w-footpath.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-motorway",
+      "english": "motorway",
+      "indonesian": "jalan bebas hambatan (seperti jalan tol)",
+      "pos": "noun",
+      "registerNotes": "Di Amerika: highway atau freeway.",
+      "audio": "audio/en/words/w-motorway.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-flatmate",
+      "english": "flatmate",
+      "indonesian": "teman serumah",
+      "pos": "noun",
+      "registerNotes": "Orang yang menyewa flat (rumah atau apartemen) bersama-sama, mirip teman satu kontrakan.",
+      "audio": "audio/en/words/w-flatmate.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cheers",
+      "english": "cheers",
+      "indonesian": "makasih; dah; bersulang",
+      "pos": "phrase",
+      "registerNotes": "Bukan hanya untuk bersulang: juga dipakai dengan santai untuk “makasih” dan “dah, sampai nanti”.",
+      "audio": "audio/en/words/w-cheers.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-good-as-gold",
+      "english": "good as gold",
+      "indonesian": "beres, aman, oke banget",
+      "pos": "phrase",
+      "registerNotes": "How's everything? — Good as gold! (Gimana? — Aman, beres!)",
+      "audio": "audio/en/words/w-good-as-gold.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mate",
+      "english": "mate",
+      "indonesian": "teman; (sapaan) bro",
+      "pos": "noun",
+      "registerNotes": "Thanks, mate! (Makasih, ya!) — juga sapaan akrab untuk orang yang tidak dikenal, seperti “Mas” atau “Bang”.",
+      "audio": "audio/en/words/w-mate.mp3",
+      "tags": [
+        "Selandia Baru"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

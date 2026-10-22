@@ -450,7 +450,12 @@ try {
       const later = available.slice(i + 1);
       if (later.length) {
         const early = [];
-        for (const o of later) if ((await notCached(page, courseFiles[o.id])).length < courseFiles[o.id].length) early.push(o.id);
+        // A course built from another shares its clips: only the files no course opened so far has count.
+        const opened = new Set(available.slice(0, i + 1).flatMap((x) => courseFiles[x.id]));
+        for (const o of later) {
+          const own = courseFiles[o.id].filter((file) => !opened.has(file));
+          if (own.length && (await notCached(page, own)).length < own.length) early.push(o.id);
+        }
         check('…and only that course', early.length === 0, early.join(', ') || `${later.map((o) => o.id).join(', ')} not yet`);
       }
       const ready = await uiString(c.speaker, 'offline.ready');
@@ -489,8 +494,10 @@ try {
     }
   }
   {
+    // In the language of the speaker last used: the picker follows the last course entered.
+    const titles = await Promise.all([...new Set(['en', ...available.map((c) => c.speaker)])].map((l) => uiString(l, 'settings.title')));
     const v = await visit(page, '#/settings');
-    check('#/settings, from the picker\'s ⚙️, renders', v.ok && /Settings|設定/.test(v.heading), v.heading);
+    check('#/settings, from the picker\'s ⚙️, renders', v.ok && titles.includes(v.heading), v.heading);
   }
   check('the service worker remembers every course used here, for its next version to download',
     await waitFor(page, async (ids) => {

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "con-unless",
+  "connector": "unless",
+  "gloss": "kecuali kalau, kalau tidak",
+  "title": "unless — kecuali kalau, kalau tidak",
+  "pattern": "kalimat unless syarat",
+  "explanation": "unless artinya “kecuali kalau” atau “kalau tidak”. Maknanya sama dengan if … not. We'll walk unless it rains. (Kami jalan kaki, kecuali kalau hujan) = We'll walk if it doesn't rain. Padanan yang paling pas dalam bahasa Indonesia adalah “kecuali kalau”.",
+  "natural": "Untuk memutuskan sesuatu dengan syarat: I'll take it, unless you have a cheaper one. (Saya ambil ini, kecuali kalau ada yang lebih murah.)",
+  "stiff": "Kalau sesudah unless ditambah not, maknanya jadi terbalik. Unless it doesn't rain tidak dipakai: “tidak”-nya sudah ada di dalam unless.",
+  "examples": [
+    {
+      "id": "cx-unless-1",
+      "english": "I'll take it, unless you have a cheaper one.",
+      "indonesian": "Saya ambil ini, kecuali kalau ada yang lebih murah.",
+      "chunks": [
+        {
+          "t": "I'll take it, ",
+          "w": "w-take"
+        },
+        {
+          "t": "unless "
+        },
+        {
+          "t": "you have a cheaper one.",
+          "w": "w-cheap"
+        }
+      ],
+      "gap": {
+        "before": "I'll take it, ",
+        "answer": "unless",
+        "after": " you have a cheaper one.",
+        "options": [
+          "unless",
+          "if",
+          "until"
+        ],
+        "why": "“Kecuali kalau ada…” adalah unless."
+      },
+      "audio": "audio/en/connectors/cx-unless-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "unless"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-unless-2",
+      "english": "We'll catch the bus, unless it's sunny.",
+      "indonesian": "Kami naik bus, kecuali kalau cerah.",
+      "chunks": [
+        {
+          "t": "We'll catch the bus, ",
+          "w": "w-catch"
+        },
+        {
+          "t": "unless "
+        },
+        {
+          "t": "it's sunny."
+        }
+      ],
+      "gap": {
+        "before": "We'll catch the bus, ",
+        "answer": "unless",
+        "after": " it's sunny.",
+        "options": [
+          "unless",
+          "because",
+          "so"
+        ],
+        "why": "“Kecuali kalau cerah” adalah unless it's sunny."
+      },
+      "audio": "audio/en/connectors/cx-unless-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "unless"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-unless-3",
+      "english": "Don't buy it unless it fits.",
+      "indonesian": "Jangan beli kalau tidak pas.",
+      "chunks": [
+        {
+          "t": "Don't buy it ",
+          "w": "w-buy"
+        },
+        {
+          "t": "unless "
+        },
+        {
+          "t": "it fits.",
+          "w": "w-fit"
+        }
+      ],
+      "gap": {
+        "before": "Don't buy it unless it ",
+        "answer": "fits",
+        "after": ".",
+        "options": [
+          "fits",
+          "fit",
+          "doesn't fit"
+        ],
+        "why": "Unless sudah mengandung makna “tidak”, jadi jangan tambah doesn't. Subjeknya it, jadi fits (dengan -s)."
+      },
+      "audio": "audio/en/connectors/cx-unless-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "unless"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-unless-4",
+      "english": "Pay at the till, unless you have a table number.",
+      "indonesian": "Kalau tidak punya nomor meja, bayar di kasir.",
+      "chunks": [
+        {
+          "t": "Pay at the till, ",
+          "w": "w-till"
+        },
+        {
+          "t": "unless "
+        },
+        {
+          "t": "you have a table number.",
+          "w": "w-table-number"
+        }
+      ],
+      "gap": {
+        "before": "Pay at the till, ",
+        "answer": "unless",
+        "after": " you have a table number.",
+        "options": [
+          "unless",
+          "until",
+          "as"
+        ],
+        "why": "“Kalau tidak punya…” adalah unless."
+      },
+      "audio": "audio/en/connectors/cx-unless-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "unless"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "plans",
+  "title": "Membuat rencana & mengajak",
+  "order": 12,
+  "description": "Mengajak, menentukan hari dan jam, menolak dengan baik. Ungkapan untuk membuat rencana dengan teman atau rekan kerja.",
+  "phrases": [
+    {
+      "id": "pla-01",
+      "english": "Are you free on Saturday?",
+      "indonesian": "Hari Sabtu kamu kosong?",
+      "registerNotes": "Cara paling alami untuk menanyakan jadwal sebelum mengajak.",
+      "audio": "audio/en/pla-01.mp3",
+      "audioHint": "Are you free on Saturday?",
+      "tags": [
+        "mengajak",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-02",
+      "english": "Do you want to grab a coffee?",
+      "indonesian": "Ngopi, yuk?",
+      "registerNotes": "grab artinya 'melakukan sesuatu dengan cepat dan santai'. Cara mengajak yang santai.",
+      "audio": "audio/en/pla-02.mp3",
+      "audioHint": "Do you want to grab a coffee?",
+      "tags": [
+        "mengajak"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-03",
+      "english": "How about Sunday instead?",
+      "indonesian": "Kalau hari Minggu saja, bagaimana?",
+      "registerNotes": "Dengan How about …?, kamu menawarkan pilihan lain.",
+      "audio": "audio/en/pla-03.mp3",
+      "audioHint": "How about Sunday instead?",
+      "tags": [
+        "atur waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-04",
+      "english": "What time suits you?",
+      "indonesian": "Kamu bisanya jam berapa?",
+      "registerNotes": "suit artinya 'cocok (dengan jadwal)'. Cara bertanya yang sopan, karena lawan bicara yang menentukan.",
+      "audio": "audio/en/pla-04.mp3",
+      "audioHint": "What time suits you?",
+      "tags": [
+        "atur waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-05",
+      "english": "Sounds good to me.",
+      "indonesian": "Boleh, aku oke.",
+      "registerNotes": "Untuk menyetujui usul. Sounds good! saja juga bisa.",
+      "audio": "audio/en/pla-05.mp3",
+      "audioHint": "Sounds good to me.",
+      "tags": [
+        "jawaban"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-06",
+      "english": "I’d love to, but I can’t.",
+      "indonesian": "Aku mau sekali, tapi tidak bisa.",
+      "registerNotes": "Kalau kamu sampaikan dulu keinginanmu dengan I’d love to, penolakanmu jadi terdengar lebih halus.",
+      "pitfallNote": "'Nggak bisa' kalau langsung jadi No, I can’t. saja, terdengar dingin.",
+      "audio": "audio/en/pla-06.mp3",
+      "audioHint": "I’d love to, but I can’t.",
+      "tags": [
+        "menolak",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-07",
+      "english": "Maybe another time?",
+      "indonesian": "Lain kali, ya?",
+      "registerNotes": "Kalau ditambahkan setelah menolak, kamu menunjukkan masih ingin diajak lagi.",
+      "audio": "audio/en/pla-07.mp3",
+      "audioHint": "Maybe another time?",
+      "tags": [
+        "menolak"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-08",
+      "english": "Let me check and get back to you.",
+      "indonesian": "Aku cek dulu, nanti kukabari.",
+      "registerNotes": "Ungkapan standar untuk menunda jawaban. get back to artinya 'menghubungi lagi nanti'.",
+      "audio": "audio/en/pla-08.mp3",
+      "audioHint": "Let me check and get back to you.",
+      "tags": [
+        "jawaban"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-09",
+      "english": "Where shall we meet?",
+      "indonesian": "Kita ketemu di mana?",
+      "registerNotes": "Shall we …? adalah bentuk untuk mengusulkan sesuatu kepada lawan bicara, seperti '…, yuk?'.",
+      "audio": "audio/en/pla-09.mp3",
+      "audioHint": "Where shall we meet?",
+      "tags": [
+        "atur waktu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-10",
+      "english": "See you there!",
+      "indonesian": "Sampai ketemu di sana!",
+      "registerNotes": "Saat tempat bertemu sudah disepakati.",
+      "audio": "audio/en/pla-10.mp3",
+      "audioHint": "See you there!",
+      "tags": [
+        "jawaban"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-11",
+      "english": "Can I bring anything?",
+      "indonesian": "Perlu aku bawa sesuatu?",
+      "registerNotes": "Ungkapan standar saat diundang ke rumah orang.",
+      "audio": "audio/en/pla-11.mp3",
+      "audioHint": "Can I bring anything?",
+      "tags": [
+        "undangan"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Kalau dijawab Bring a plate., artinya bawa sepiring makanan untuk dinikmati bersama, bukan piring kosong."
+    },
+    {
+      "id": "pla-12",
+      "english": "Text me when you get there.",
+      "indonesian": "Kabari aku kalau sudah sampai, ya.",
+      "registerNotes": "text artinya 'mengirim pesan lewat ponsel', mirip 'WA aku'.",
+      "audio": "audio/en/pla-12.mp3",
+      "audioHint": "Text me when you get there.",
+      "tags": [
+        "menghubungi"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

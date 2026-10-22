@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "lost",
+  "title": "Saat tersesat",
+  "category": "directions",
+  "setting": "Di tengah kota Wellington. Baterai ponselmu hampir habis. Kamu mau ke museum Te Papa, tapi tidak tahu arahnya.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "narration",
+      "english": "",
+      "indonesian": "Kamu ingin bertanya jalan kepada orang yang lewat. Apa yang kamu ucapkan pertama kali?",
+      "options": [
+        {
+          "phraseId": "gre-05",
+          "quality": "good",
+          "feedback": "Cara dasar untuk memanggil orang. Orangnya akan berhenti untuk mendengarkan.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "gre-01",
+          "quality": "awkward",
+          "feedback": "Tidak kasar, tapi kalau orang asing tiba-tiba bilang Hi., orang bisa mengira kamu mau menawarkan sesuatu. Untuk minta tolong, Excuse me. lebih aman.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "english": "Hey!",
+          "indonesian": "(Hei!)",
+          "feedback": "Hey! kepada orang asing cukup kasar. Mungkin dia menoleh, tapi kesannya tidak baik. Bahasa Inggris tidak punya panggilan seperti “Mas” atau “Mbak”; cukup Excuse me.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "passerby",
+      "english": "Yes? Can I help you?",
+      "indonesian": "Ya? Ada yang bisa saya bantu?",
+      "audio": "audio/en/scenario/lost-n2.mp3",
+      "audioHint": "Yes? Can I help you?",
+      "options": [
+        {
+          "phraseId": "dir-04",
+          "quality": "good",
+          "feedback": "Kalau kamu jelaskan keadaanmu dulu, orangnya langsung paham.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "dir-02",
+          "quality": "good",
+          "feedback": "Cara umum untuk menanyakan jalan. Lebih baik lagi kalau kamu sebut nama tempatnya.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "gre-11",
+          "quality": "awkward",
+          "feedback": "Orangnya hampir belum bicara apa-apa. Sampaikan dulu keperluanmu.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "passerby",
+      "english": "Where are you trying to go?",
+      "indonesian": "Kamu mau ke mana?",
+      "audio": "audio/en/scenario/lost-n3.mp3",
+      "audioHint": "Where are you trying to go?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Te Papa, the museum.",
+          "indonesian": "Te Papa, museumnya.",
+          "feedback": "Cukup sebut tujuanmu.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "I'm trying to get to Te Papa.",
+          "indonesian": "Saya mau ke Te Papa.",
+          "feedback": "Kamu menjawab dengan pola yang sama seperti pertanyaannya. get to artinya “sampai ke” atau “pergi ke”. Bagus.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "passerby",
+      "english": "Oh, that's easy. Head down this street to the waterfront, turn right, and it's on your left. About five minutes.",
+      "indonesian": "Oh, gampang. Ikuti jalan ini sampai ke tepi laut, belok kanan, dan museumnya ada di sebelah kirimu. Sekitar lima menit.",
+      "audio": "audio/en/scenario/lost-n4.mp3",
+      "audioHint": "Oh, that's easy. Head down this street to the waterfront, turn right, and it's on your left. About five minutes.",
+      "options": [
+        {
+          "phraseId": "gre-10",
+          "quality": "good",
+          "feedback": "Wajar minta diulang kalau petunjuknya panjang. Biasanya orang akan mengulanginya lebih pelan.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "dir-07",
+          "quality": "good",
+          "feedback": "Cara memastikan yang paling ampuh. Dengan peta, tidak ada salah dengar.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "english": "Yes, yes, I understand.",
+          "indonesian": "(iya, iya, saya mengerti)",
+          "feedback": "Bilang I understand. padahal baru menangkap setengahnya adalah kesalahan yang paling sering dibuat pelajar. Tidak apa-apa minta diulang.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "passerby",
+      "english": "Sure. Look, we're here, and Te Papa's just here.",
+      "indonesian": "Boleh. Lihat, kita di sini, dan Te Papa ada di sini.",
+      "audio": "audio/en/scenario/lost-n5.mp3",
+      "audioHint": "Sure. Look, we're here, and Te Papa's just here.",
+      "options": [
+        {
+          "phraseId": "gre-07",
+          "quality": "good",
+          "feedback": "Ucapkan terima kasih dengan sungguh-sungguh. Kalau dibantu, tambahkan so much.",
+          "next": "end"
+        },
+        {
+          "phraseId": "sma-10",
+          "quality": "awkward",
+          "feedback": "Terdengar ramah, tapi kurang pas sebagai terima kasih karena sudah ditunjukkan jalan. Ucapkan dulu Thank you so much!",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "wrong",
+          "feedback": "“Sama-sama” diucapkan oleh orang yang membantu. Posisinya jadi terbalik.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "indonesian": "Kamu sampai di Te Papa dengan selamat. Hal terpenting saat ditunjukkan jalan adalah berani bilang bahwa kamu tidak menangkapnya. Pura-pura paham adalah jalan pintas untuk tersesat.",
+      "end": true,
+      "options": []
+    }
+  }
+}

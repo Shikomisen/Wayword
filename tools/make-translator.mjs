@@ -37,11 +37,19 @@ const LOADER = {
 
 const readJSON = (rel) => JSON.parse(readFileSync(resolve(ROOT, rel), 'utf8'));
 const sha256 = (buf) => createHash('sha256').update(buf).digest('hex');
-const versionKey = (v) => String(v).split(/[.a-z]+/i).map(Number);
+// "2.1", or an alpha before it: "2.1a1". The alpha's number isn't part of the version.
+const versionKey = (v) => {
+  const [, release = '0', alpha] = /^([\d.]+)(?:a(\d*))?/.exec(String(v)) || [];
+  return { release: release.split('.').map(Number), alpha: alpha === undefined ? null : Number(alpha || 0) };
+};
 const newer = (a, b) => {
   const [x, y] = [versionKey(a), versionKey(b)];
-  for (let i = 0; i < Math.max(x.length, y.length); i++) if ((x[i] || 0) !== (y[i] || 0)) return (x[i] || 0) > (y[i] || 0);
-  return !/a\d*$/.test(a) && /a\d*$/.test(b); // a release beats its alpha
+  for (let i = 0; i < Math.max(x.release.length, y.release.length); i++) {
+    if ((x.release[i] || 0) !== (y.release[i] || 0)) return (x.release[i] || 0) > (y.release[i] || 0);
+  }
+  if (x.alpha === y.alpha) return false;
+  if (x.alpha === null || y.alpha === null) return x.alpha === null; // a release beats its alphas
+  return x.alpha > y.alpha;
 };
 
 async function getJSON(url) {
@@ -55,12 +63,20 @@ async function getBytes(url) {
   return Buffer.from(await res.arrayBuffer());
 }
 
-// The pairs: each available course's speaker → target, and back.
-const courses = readJSON('content/courses.json').courses.filter((c) => c.manifest);
-const wanted = [...new Set(courses.flatMap((c) => [`${c.speaker}-${c.target}`, `${c.target}-${c.speaker}`]))].sort();
-
 const models = (await getJSON(`${SETTINGS}/translations-models/records`)).data;
 const wasms = (await getJSON(`${SETTINGS}/translations-wasm/records`)).data;
+
+// The pairs: each available course's speaker → target, and back. Where Mozilla
+// has no direct model (Japanese ↔ Indonesian), the two that go through English;
+// the app chains them (js/translator.js, routeFor).
+const courses = readJSON('content/courses.json').courses.filter((c) => c.manifest);
+const hasModel = (pair) => models.some((r) => `${r.fromLang}-${r.toLang}` === pair);
+const wanted = [...new Set(courses.flatMap((c) => [`${c.speaker}-${c.target}`, `${c.target}-${c.speaker}`]).flatMap((pair) => {
+  const [from, to] = pair.split('-');
+  if (hasModel(pair) || from === 'en' || to === 'en' || !hasModel(`${from}-en`) || !hasModel(`en-${to}`)) return [pair];
+  console.log(`  ${pair}: no direct model — through English (${from}-en, en-${to})`);
+  return [`${from}-en`, `en-${to}`];
+}))].sort();
 
 const previous = existsSync(resolve(ROOT, 'mt/translator.json')) ? readJSON('mt/translator.json') : null;
 const plan = []; // { path, url, sha256, size }

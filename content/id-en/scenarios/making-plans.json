@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "making-plans",
+  "title": "Membuat rencana dengan teman",
+  "category": "plans",
+  "setting": "Jess, teman dari Selandia Baru yang kamu kenal lewat pertukaran bahasa, meneleponmu.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "friend",
+      "english": "Hey! Are you free this weekend?",
+      "indonesian": "Hai! Akhir pekan ini kamu senggang?",
+      "audio": "audio/en/scenario/making-plans-n1.mp3",
+      "audioHint": "Hey! Are you free this weekend?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "I’m free on Saturday. Why?",
+          "indonesian": "Hari Sabtu aku kosong. Kenapa?",
+          "feedback": "Kamu menyebut hari yang kosong, lalu balik bertanya alasannya.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "I think so. What’s up?",
+          "indonesian": "Sepertinya iya. Ada apa?",
+          "feedback": "What’s up? adalah cara santai untuk bilang “ada apa?”.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "Yes, I am free.",
+          "indonesian": "Ya, saya senggang.",
+          "feedback": "Benar, tapi terlalu kaku untuk teman, seperti memakai “saya” kepada teman dekat. Cukup I’m free!",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "friend",
+      "english": "A few of us are going tramping on Saturday. Do you want to come?",
+      "indonesian": "Sabtu ini beberapa dari kami mau tramping. Mau ikut?",
+      "audio": "audio/en/scenario/making-plans-n2.mp3",
+      "audioHint": "A few of us are going tramping on Saturday. Do you want to come?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "I’d love to! Where are you going?",
+          "indonesian": "Mau banget! Kalian mau ke mana?",
+          "feedback": "Kamu menunjukkan semangatmu, lalu bertanya supaya obrolan berlanjut.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "english": "What’s tramping?",
+          "indonesian": "Tramping itu apa?",
+          "feedback": "Tidak apa-apa menanyakan kata yang belum kamu tahu. tramping adalah kata khas Selandia Baru untuk hiking atau mendaki.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "english": "I don’t like walking.",
+          "indonesian": "Aku tidak suka jalan kaki.",
+          "feedback": "Walaupun jujur, kalau hanya itu, obrolannya berhenti. Kalau mau menolak, tunjukkan dulu niat baikmu: I’d love to, but …",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "friend",
+      "english": "We’re going to leave at seven, if that’s OK.",
+      "indonesian": "Kami mau berangkat jam tujuh, kalau tidak apa-apa.",
+      "audio": "audio/en/scenario/making-plans-n3.mp3",
+      "audioHint": "We’re going to leave at seven, if that’s OK.",
+      "options": [
+        {
+          "phraseId": "pla-05",
+          "quality": "good",
+          "feedback": "Jawaban alami untuk menyetujui usulan.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "Seven’s a bit early for me. How about eight?",
+          "indonesian": "Jam tujuh agak terlalu pagi buatku. Bagaimana kalau jam delapan?",
+          "feedback": "Kamu mengusulkan jam lain dengan How about …?",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "english": "Seven? You’re crazy.",
+          "indonesian": "Jam tujuh? Kamu gila.",
+          "feedback": "Meski maksudnya bercanda, bisa terdengar kasar. That’s early! sudah pas.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "friend",
+      "english": "Cool. Can you bring some snacks? We’ll sort out lunch.",
+      "indonesian": "Sip. Bisa bawa camilan? Makan siangnya biar kami yang urus.",
+      "audio": "audio/en/scenario/making-plans-n4.mp3",
+      "audioHint": "Cool. Can you bring some snacks? We’ll sort out lunch.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Sure! Do I need to bring anything else?",
+          "indonesian": "Tentu! Ada lagi yang perlu kubawa?",
+          "feedback": "Menanyakan apa lagi yang perlu dibawa menunjukkan perhatianmu.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "pla-09",
+          "quality": "good",
+          "feedback": "Menentukan tempat bertemu juga penting.",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "english": "Snacks? I don’t have snacks.",
+          "indonesian": "Camilan? Aku tidak punya camilan.",
+          "feedback": "bring artinya “membawa (ke sana)”. Maksudnya bukan apakah kamu punya camilan sekarang, tapi tolong bawa camilan pada hari itu.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "friend",
+      "english": "Awesome. I’ll text you the details tonight. See you Saturday!",
+      "indonesian": "Keren. Nanti malam kukirim detailnya lewat pesan. Sampai ketemu hari Sabtu!",
+      "audio": "audio/en/scenario/making-plans-n5.mp3",
+      "audioHint": "Awesome. I’ll text you the details tonight. See you Saturday!",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Thanks for inviting me. I’m really looking forward to it!",
+          "indonesian": "Terima kasih sudah mengajakku. Aku tidak sabar!",
+          "feedback": "Jawaban manis yang menunjukkan terima kasih dan rasa tidak sabarmu.",
+          "next": "end"
+        },
+        {
+          "phraseId": "pla-10",
+          "quality": "good",
+          "feedback": "Ucapan saat tempat bertemu sudah ditentukan.",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "english": "OK. Bye.",
+          "indonesian": "Oke. Dah.",
+          "feedback": "Tidak salah, tapi terdengar cuek. Tambahkan terima kasih karena sudah diajak.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "indonesian": "Rencananya sudah beres. Mengajak, menentukan waktu, memastikan barang bawaan, dan berterima kasih: membuat rencana biasanya mengikuti alur ini.",
+      "end": true,
+      "options": []
+    }
+  }
+}

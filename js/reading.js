@@ -11,8 +11,8 @@
  *   - the hiragana written over katakana words, retired once katakana is
  *     mastered.
  *
- * The rules are in kana.js. Like characters.js, only courses with character
- * sets reach this, so its wording is English rather than going through i18n.js.
+ * The rules are in kana.js. Only courses with character sets reach this; its
+ * wording is in the reading.* interface strings, in the learner's language.
  */
 
 import { loadContent } from './content.js';
@@ -22,6 +22,7 @@ import { link, go } from './course.js';
 import { el, clear, setKatakanaAids } from './render.js';
 import { MASTERY, SCRIPTS, kanaProgress, focusScript, buildKanaDrill } from './kana.js';
 import { choiceQuestion } from './choice.js';
+import { t } from './i18n.js';
 
 export const SCRIPT_NAMES = { hiragana: 'Hiragana', katakana: 'Katakana' };
 
@@ -59,7 +60,7 @@ export function kanaMeters(state) {
       return el('div', { class: `kana-meter ${p.done ? 'is-done' : ''}`, dataset: { script: s } },
         el('span', { class: 'kana-meter-name' }, SCRIPT_NAMES[s]),
         el('span', { class: 'bar' }, el('span', { class: 'bar-fill', style: `width:${Math.round((p.mastered / p.total) * 100)}%` })),
-        el('span', { class: 'kana-meter-count' }, p.done ? '✓ mastered' : `${p.mastered}/${p.total}`));
+        el('span', { class: 'kana-meter-count' }, p.done ? t('reading.meterDone') : `${p.mastered}/${p.total}`));
     }));
 }
 
@@ -68,20 +69,19 @@ export function kanaPanel(state) {
   const { focus } = state;
   const others = SCRIPTS.filter((s) => state.progress[s] && s !== focus);
   return el('section', { class: 'kana-panel' },
-    el('h2', { class: 'section-title' }, 'Kana mastery'),
+    el('h2', { class: 'section-title' }, t('reading.kanaMastery')),
     kanaMeters(state),
     focus
       ? el('a', { class: 'btn btn-primary btn-lg full', href: link(`/characters/drill/${focus}`) },
-          state.anotherRound ? `Another ${SCRIPT_NAMES[focus].toLowerCase()} round` : `Today’s ${SCRIPT_NAMES[focus].toLowerCase()} drill`)
-      : el('p', { class: 'muted' }, 'Both kana are mastered — kanji are next.'),
+          t(state.anotherRound ? `reading.drillAgain.${focus}` : `reading.drillToday.${focus}`))
+      : el('p', { class: 'muted' }, t('reading.bothMastered')),
     others.length
       ? el('div', { class: 'action-row kana-others' }, others.map((s) =>
-          el('a', { class: 'btn btn-small btn-ghost', href: link(`/characters/drill/${s}`) }, `Practise ${SCRIPT_NAMES[s].toLowerCase()}`)))
+          el('a', { class: 'btn btn-small btn-ghost', href: link(`/characters/drill/${s}`) }, t(`reading.practise.${s}`))))
       : null,
-    el('p', { class: 'muted small' },
-      `A kana is mastered once you get it right ${MASTERY.streak} times in a row, on ${MASTERY.days} different days. ` +
-      `${Math.round(MASTERY.threshold * 100)}% of a script’s ${state.progress.hiragana?.total ?? 71} core kana masters the script. ` +
-      'Hiragana comes first; kanji wait for it.'));
+    el('p', { class: 'muted small' }, t('reading.masteryRule', {
+      streak: MASTERY.streak, days: MASTERY.days, percent: Math.round(MASTERY.threshold * 100), total: state.progress.hiragana?.total ?? 71,
+    })));
 }
 
 /* ---------- the drill ---------- */
@@ -109,13 +109,13 @@ export async function renderKanaDrill(root, script) {
     clear(view).append(
       top(),
       el('div', { class: 'drill-card kana-intro' },
-        el('div', { class: 'drill-kind' }, intros.length === 1 ? 'A new kana' : `${intros.length} new kana`),
-        el('p', { class: 'muted' }, 'Tap each one to hear it. They come up in the drill straight after.'),
+        el('div', { class: 'drill-kind' }, t('reading.newKana', { n: intros.length })),
+        el('p', { class: 'muted' }, t('reading.introHelp')),
         el('div', { class: 'kana-intro-grid' }, intros.map((c) =>
           el('button', { type: 'button', class: 'kana-cell', onclick: () => audio.play(c.audio) },
             el('span', { class: 'kana-char', lang: 'ja' }, c.character),
             el('span', { class: 'kana-romaji' }, c.romaji)))),
-        el('button', { type: 'button', class: 'btn btn-primary btn-lg full', onclick: () => ask() }, 'Start')));
+        el('button', { type: 'button', class: 'btn btn-primary btn-lg full', onclick: () => ask() }, t('quiz.start'))));
   }
 
   function ask() {
@@ -123,9 +123,9 @@ export async function renderKanaDrill(root, script) {
     const q = questions[index];
     const listen = q.type === 'listen';
     const question = choiceQuestion({
-      kind: listen ? 'Which one did you hear?' : 'What does it say?',
+      kind: t(listen ? 'reading.askListen' : 'reading.askRead'),
       prompt: [listen
-        ? el('button', { type: 'button', class: 'btn listen-btn', onclick: () => audio.play(q.char.audio) }, '🔊 Play again')
+        ? el('button', { type: 'button', class: 'btn listen-btn', onclick: () => audio.play(q.char.audio) }, t('reading.playAgain'))
         : el('div', { class: 'kana-prompt', lang: 'ja' }, q.char.character)],
       options: q.options.map((c) => ({
         id: c.id,
@@ -133,14 +133,14 @@ export async function renderKanaDrill(root, script) {
         node: listen ? el('span', { class: 'kana-char', lang: 'ja' }, c.character) : c.romaji,
       })),
       rightId: q.char.id,
-      verdicts: { right: '✓ Right', wrong: '✕ Not quite' },
+      verdicts: { right: t('drill.right'), wrong: t('drill.wrong') },
       onAnswer: async (ok) => {
         if (ok) right++;
         audio.play(q.char.audio); // shape and sound together, right or wrong
         await deck.recordKana(q.char.id, ok);
-        return [el('p', { class: 'kana-answer' }, el('span', { class: 'kana-char', lang: 'ja' }, q.char.character), ` is ${q.char.romaji}`)];
+        return [el('p', { class: 'kana-answer' }, el('span', { class: 'kana-char', lang: 'ja' }, q.char.character), t('reading.answerIs', { romaji: q.char.romaji }))];
       },
-      next: { label: index + 1 < questions.length ? 'Next' : 'Finish', go: () => { index++; ask(); } },
+      next: { label: t(index + 1 < questions.length ? 'drill.next' : 'drill.finish'), go: () => { index++; ask(); } },
       autoAdvance: true,
       cardClass: 'kana-question',
       optionsClass: 'kana-options',
@@ -158,22 +158,18 @@ export async function renderKanaDrill(root, script) {
     await refreshKanaAids();
     const end = after.progress[script];
     const gained = end.mastered - start.mastered;
-    const milestone = end.done && !start.done
-      ? (script === 'hiragana'
-          ? 'Hiragana mastered! The kanji sets are open now, and katakana is next.'
-          : 'Katakana mastered! The hiragana written over katakana words is gone now — you can read them as they are.')
-      : null;
+    const milestone = end.done && !start.done ? t(`reading.milestone.${script}`) : null;
     clear(view).append(
       el('div', { class: 'empty-state practice-done' },
-        el('h1', {}, 'Kana drill done'),
-        el('p', { class: 'lede' }, `${right} of ${questions.length} right`),
-        gained > 0 ? el('p', {}, gained === 1 ? '1 newly mastered' : `${gained} newly mastered`) : null,
+        el('h1', {}, t('reading.drillDone')),
+        el('p', { class: 'lede' }, t('reading.score', { right, total: questions.length })),
+        gained > 0 ? el('p', {}, t('reading.newlyMastered', { n: gained })) : null,
         milestone ? el('p', { class: 'kana-milestone' }, milestone) : null,
         kanaMeters(after),
         el('div', { class: 'action-row' },
           el('button', { type: 'button', class: 'btn btn-primary', onclick: () => renderKanaDrill(clear(root), after.focus || script) },
-            'Another round'),
-          el('a', { class: 'btn', href: link('/') }, 'Back to Today'))));
+            t('reading.anotherRound')),
+          el('a', { class: 'btn', href: link('/') }, t('listening.backToday')))));
   }
 
   const keydown = (e) => {
@@ -183,7 +179,7 @@ export async function renderKanaDrill(root, script) {
   document.addEventListener('keydown', keydown);
 
   if (!questions.length) {
-    view.append(el('p', { class: 'muted' }, 'Nothing to drill in this script.'));
+    view.append(el('p', { class: 'muted' }, t('reading.nothingToDrill')));
     return;
   }
   if (intros.length) showIntros(); else ask();

@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-relative",
+  "connector": "who / where",
+  "gloss": "orang yang …, tempat …",
+  "title": "the man who…, the café where… — menjelaskan kata benda dengan “yang”",
+  "pattern": "orang ＋ who … ／ benda ＋ that … ／ tempat ＋ where …",
+  "explanation": "Setelah kata benda, kamu bisa menambahkan who, that, atau where untuk menjelaskannya: “orang yang …”, “benda yang …”, “tempat …”. Urutannya sama dengan bahasa Indonesia: penjelasannya datang setelah kata benda. Bedanya, bahasa Indonesia cukup memakai “yang”, sedangkan bahasa Inggris memilih katanya: the man who lives next door (laki-laki yang tinggal di sebelah), the café where we met (kafe tempat kita bertemu).",
+  "natural": "Berguna untuk menjelaskan benda yang tidak kamu tahu namanya: the thing that opens bottles (benda yang dipakai untuk membuka botol)",
+  "stiff": "Untuk orang, jangan pakai which: bukan the man which …, tapi the man who …",
+  "examples": [
+    {
+      "id": "gx-relative-1",
+      "english": "That’s the man who lives next door.",
+      "indonesian": "Itu laki-laki yang tinggal di sebelah.",
+      "chunks": [
+        {
+          "t": "That’s "
+        },
+        {
+          "t": "the man ",
+          "w": "w-man"
+        },
+        {
+          "t": "who lives ",
+          "w": "w-live"
+        },
+        {
+          "t": "next door."
+        }
+      ],
+      "gap": {
+        "before": "That’s the man ",
+        "answer": "who",
+        "after": " lives next door.",
+        "options": [
+          "who",
+          "which",
+          "where"
+        ],
+        "why": "“Yang” untuk orang adalah who."
+      },
+      "audio": "audio/en/grammar/gx-relative-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "who / where"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-relative-2",
+      "english": "This is the café where we met.",
+      "indonesian": "Ini kafe tempat kita bertemu.",
+      "chunks": [
+        {
+          "t": "This is ",
+          "w": "w-this"
+        },
+        {
+          "t": "the café "
+        },
+        {
+          "t": "where we met.",
+          "w": "w-meet"
+        }
+      ],
+      "gap": {
+        "before": "This is the café ",
+        "answer": "where",
+        "after": " we met.",
+        "options": [
+          "where",
+          "who",
+          "what"
+        ],
+        "why": "Untuk tempat (“tempat …”), pakai where."
+      },
+      "audio": "audio/en/grammar/gx-relative-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "who / where"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-relative-3",
+      "english": "Is this the bus that goes to the city?",
+      "indonesian": "Apakah ini bus yang ke pusat kota?",
+      "chunks": [
+        {
+          "t": "Is this ",
+          "w": "w-this"
+        },
+        {
+          "t": "the bus "
+        },
+        {
+          "t": "that goes ",
+          "w": "w-go"
+        },
+        {
+          "t": "to the city?"
+        }
+      ],
+      "gap": {
+        "before": "Is this the bus ",
+        "answer": "that",
+        "after": " goes to the city?",
+        "options": [
+          "that",
+          "who",
+          "where"
+        ],
+        "why": "“Yang” untuk benda adalah that (which juga bisa)."
+      },
+      "audio": "audio/en/grammar/gx-relative-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "who / where"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-relative-4",
+      "english": "I’ve got a friend who speaks Māori.",
+      "indonesian": "Aku punya teman yang bisa berbahasa Māori.",
+      "chunks": [
+        {
+          "t": "I’ve got "
+        },
+        {
+          "t": "a friend ",
+          "w": "w-friend"
+        },
+        {
+          "t": "who speaks ",
+          "w": "w-speak"
+        },
+        {
+          "t": "Māori."
+        }
+      ],
+      "gap": {
+        "before": "I’ve got a friend ",
+        "answer": "who",
+        "after": " speaks Māori.",
+        "options": [
+          "who",
+          "which",
+          "what"
+        ],
+        "why": "“Yang” untuk orang adalah who."
+      },
+      "audio": "audio/en/grammar/gx-relative-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "who / where"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

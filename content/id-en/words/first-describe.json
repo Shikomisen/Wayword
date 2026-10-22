@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "id": "words-first-describe",
+  "title": "Kata sifat & warna",
+  "description": "Kata untuk menggambarkan benda dan perasaan, seperti besar, baru, dan senang, serta nama-nama warna.",
+  "items": [
+    {
+      "id": "w-big",
+      "english": "big",
+      "indonesian": "besar",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-big.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1,
+      "registerNotes": "Kata sifat ada di depan bendanya: a big house (rumah besar), kebalikan dari bahasa Indonesia."
+    },
+    {
+      "id": "w-good",
+      "english": "good",
+      "indonesian": "baik, bagus, enak, pandai",
+      "pos": "adjective",
+      "registerNotes": "This is good! (Ini enak!)",
+      "audio": "audio/en/words/w-good.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bad",
+      "english": "bad",
+      "indonesian": "buruk, jelek",
+      "pos": "adjective",
+      "registerNotes": "Not bad. (Lumayan, tidak buruk.)",
+      "audio": "audio/en/words/w-bad.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-new",
+      "english": "new",
+      "indonesian": "baru",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-new.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-old",
+      "english": "old",
+      "indonesian": "lama, tua",
+      "pos": "adjective",
+      "registerNotes": "How old are you? (Umurmu berapa?)",
+      "audio": "audio/en/words/w-old.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-young",
+      "english": "young",
+      "indonesian": "muda",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-young.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-long",
+      "english": "long",
+      "indonesian": "panjang",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-long.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-short",
+      "english": "short",
+      "indonesian": "pendek",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-short.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-happy",
+      "english": "happy",
+      "indonesian": "senang, bahagia",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-happy.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sad",
+      "english": "sad",
+      "indonesian": "sedih",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-sad.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tired",
+      "english": "tired",
+      "indonesian": "capek, lelah",
+      "pos": "adjective",
+      "registerNotes": "I’m tired. (Aku capek.) Jangan lupa am: bukan I tired.",
+      "audio": "audio/en/words/w-tired.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hungry",
+      "english": "hungry",
+      "indonesian": "lapar",
+      "pos": "adjective",
+      "registerNotes": "I’m hungry. (Aku lapar.)",
+      "audio": "audio/en/words/w-hungry.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-thirsty",
+      "english": "thirsty",
+      "indonesian": "haus",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-thirsty.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-busy",
+      "english": "busy",
+      "indonesian": "sibuk; ramai",
+      "pos": "adjective",
+      "registerNotes": "The café is busy. (Kafenya ramai.)",
+      "audio": "audio/en/words/w-busy.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-easy",
+      "english": "easy",
+      "indonesian": "mudah, gampang",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-easy.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-difficult",
+      "english": "difficult",
+      "indonesian": "sulit, susah",
+      "pos": "adjective",
+      "registerNotes": "Dalam percakapan, hard juga sering dipakai: It’s hard.",
+      "audio": "audio/en/words/w-difficult.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-beautiful",
+      "english": "beautiful",
+      "indonesian": "indah, cantik",
+      "pos": "adjective",
+      "pitfallNote": "Untuk laki-laki, biasanya handsome (ganteng), bukan beautiful.",
+      "audio": "audio/en/words/w-beautiful.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-fast",
+      "english": "fast",
+      "indonesian": "cepat",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-fast.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-slow",
+      "english": "slow",
+      "indonesian": "lambat, pelan",
+      "pos": "adjective",
+      "registerNotes": "Slowly, please. (Pelan-pelan, ya.)",
+      "audio": "audio/en/words/w-slow.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-red",
+      "english": "red",
+      "indonesian": "merah",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-red.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-blue",
+      "english": "blue",
+      "indonesian": "biru",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-blue.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-green",
+      "english": "green",
+      "indonesian": "hijau",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-green.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-white",
+      "english": "white",
+      "indonesian": "putih",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-white.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-black",
+      "english": "black",
+      "indonesian": "hitam",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-black.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yellow",
+      "english": "yellow",
+      "indonesian": "kuning",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-yellow.mp3",
+      "tags": [
+        "kata sifat"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

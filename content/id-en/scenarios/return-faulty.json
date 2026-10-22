@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "return-faulty",
+  "title": "Mengembalikan barang rusak",
+  "category": "problems",
+  "setting": "Headphone yang kamu beli minggu lalu sekarang hanya berbunyi di satu sisi. Kamu datang ke konter toko membawa struknya.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "staff",
+      "english": "Hi there, how can I help you today?",
+      "indonesian": "Halo, ada yang bisa saya bantu hari ini?",
+      "audio": "audio/en/scenario/return-faulty-n1.mp3",
+      "audioHint": "Hi there, how can I help you today?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Hi, I bought these headphones last week, but they’re faulty.",
+          "indonesian": "Halo, saya beli headphone ini minggu lalu, tapi rusak.",
+          "feedback": "Kapan membeli dan apa masalahnya, sekaligus. faulty adalah kata yang biasa dipakai saat mengembalikan barang.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "pro-06",
+          "quality": "good",
+          "feedback": "Penting untuk bilang sejak kapan ada masalah.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "These are broken. I want my money.",
+          "indonesian": "Ini rusak. Saya mau uang saya.",
+          "feedback": "Maksudnya sampai, tapi terdengar ketus. “Saya mau…” yang diterjemahkan langsung menjadi I want … terdengar menuntut. I’d like a refund, please. jauh lebih sopan.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "staff",
+      "english": "Oh, I’m sorry about that. Have you got the receipt?",
+      "indonesian": "Oh, maaf soal itu. Apakah Anda membawa struknya?",
+      "audio": "audio/en/scenario/return-faulty-n2.mp3",
+      "audioHint": "Oh, I’m sorry about that. Have you got the receipt?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Yes, here you go.",
+          "indonesian": "Ya, ini dia.",
+          "feedback": "Here you go. adalah ungkapan baku saat menyerahkan sesuatu.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "english": "Yes, it’s on my phone. Is that OK?",
+          "indonesian": "Ya, ada di ponsel saya. Tidak apa-apa?",
+          "feedback": "Struk yang dikirim lewat email biasanya juga bisa.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "english": "Receipt is here.",
+          "indonesian": "Struknya di sini.",
+          "feedback": "Dimengerti, tapi saat menyerahkan sesuatu, orang biasanya bilang Here you go.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "staff",
+      "english": "Thanks. Would you like a refund, or would you rather swap them for a new pair?",
+      "indonesian": "Terima kasih. Mau uangnya dikembalikan, atau ditukar dengan yang baru?",
+      "audio": "audio/en/scenario/return-faulty-n3.mp3",
+      "audioHint": "Thanks. Would you like a refund, or would you rather swap them for a new pair?",
+      "options": [
+        {
+          "phraseId": "pro-05",
+          "quality": "good",
+          "feedback": "Keinginanmu disampaikan dengan jelas dan sopan.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "I’d like to swap them, please.",
+          "indonesian": "Saya mau tukar saja.",
+          "feedback": "swap adalah kata santai untuk “menukar”, dan biasa dipakai di toko.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "english": "Whatever.",
+          "indonesian": "Terserah.",
+          "feedback": "“Terserah” terdengar biasa dalam bahasa Indonesia, tapi Whatever. terdengar seperti “masa bodoh”. Bilang Either is fine. supaya terdengar ramah.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "staff",
+      "english": "No worries, that’s all sorted. Is there anything else I can help you with?",
+      "indonesian": "Baik, semuanya sudah beres. Ada lagi yang bisa saya bantu?",
+      "audio": "audio/en/scenario/return-faulty-n4.mp3",
+      "audioHint": "No worries, that’s all sorted. Is there anything else I can help you with?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "No, that’s all. Thanks for your help.",
+          "indonesian": "Tidak, itu saja. Terima kasih atas bantuannya.",
+          "feedback": "Ditutup dengan terima kasih. Menyenangkan.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "english": "No, thanks. Have a good day!",
+          "indonesian": "Tidak, terima kasih. Semoga harimu menyenangkan!",
+          "feedback": "Di Selandia Baru, orang juga sering bilang Have a good day! kepada pegawai toko.",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "english": "No.",
+          "indonesian": "Tidak.",
+          "feedback": "Hanya No. terdengar dingin. Tambahkan sedikit: No, that’s all, thanks.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "indonesian": "Pengembalian selesai. Kapan membeli, apa masalahnya, dan mau uang kembali atau tukar. Di Selandia Baru, undang-undang (Consumer Guarantees Act) memberimu hak untuk mengembalikan barang yang rusak atau meminta perbaikan.",
+      "end": true,
+      "options": []
+    }
+  }
+}

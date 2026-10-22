@@ -1,0 +1,313 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-phrasal",
+  "title": "Phrasal verb (menengah)",
+  "description": "Lanjutan phrasal verb yang sering dipakai dalam percakapan: mengubah rencana, bergaul, dan mengatur perasaan.",
+  "items": [
+    {
+      "id": "w-get-up",
+      "english": "get up",
+      "indonesian": "bangun (dari tempat tidur)",
+      "pos": "verb",
+      "audio": "audio/en/words/w-get-up.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2,
+      "registerNotes": "wake up: terbangun, membuka mata. get up: bangkit dari tempat tidur. Bahasa Indonesia memakai bangun untuk keduanya."
+    },
+    {
+      "id": "w-give-up",
+      "english": "give up",
+      "indonesian": "menyerah, berhenti",
+      "pos": "verb",
+      "registerNotes": "Don’t give up! (Jangan menyerah!)",
+      "audio": "audio/en/words/w-give-up.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-look-forward-to",
+      "english": "look forward to",
+      "indonesian": "menantikan, tidak sabar menunggu",
+      "pos": "verb",
+      "registerNotes": "I’m looking forward to it. (Aku tidak sabar menunggunya.)",
+      "pitfallNote": "Setelah to pakai kata benda atau -ing: looking forward to seeing you (tidak sabar bertemu denganmu). Bukan to see you.",
+      "audio": "audio/en/words/w-look-forward-to.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-put-off",
+      "english": "put off",
+      "indonesian": "menunda",
+      "pos": "verb",
+      "audio": "audio/en/words/w-put-off.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-call-off",
+      "english": "call off",
+      "indonesian": "membatalkan",
+      "pos": "verb",
+      "registerNotes": "The game was called off. (Pertandingannya dibatalkan.)",
+      "audio": "audio/en/words/w-call-off.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-come-up",
+      "english": "come up",
+      "indonesian": "muncul (urusan, topik)",
+      "pos": "verb",
+      "registerNotes": "Something’s come up. (Ada urusan mendadak.)",
+      "audio": "audio/en/words/w-come-up.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-get-back",
+      "english": "get back",
+      "indonesian": "kembali, pulang",
+      "pos": "verb",
+      "registerNotes": "I’ll get back to you. (Nanti saya kabari lagi.)",
+      "audio": "audio/en/words/w-get-back.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-go-on",
+      "english": "go on",
+      "indonesian": "berlangsung, terjadi",
+      "pos": "verb",
+      "registerNotes": "What’s going on? (Ada apa? Apa yang terjadi?)",
+      "audio": "audio/en/words/w-go-on.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-run-into",
+      "english": "run into",
+      "indonesian": "kebetulan bertemu",
+      "pos": "verb",
+      "registerNotes": "I ran into Sam at the supermarket. (Aku kebetulan ketemu Sam di supermarket.)",
+      "audio": "audio/en/words/w-run-into.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-look-up",
+      "english": "look up",
+      "indonesian": "mencari (informasi)",
+      "pos": "verb",
+      "registerNotes": "I’ll look it up. (Nanti saya cari.)",
+      "audio": "audio/en/words/w-look-up.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-turn-up",
+      "english": "turn up",
+      "indonesian": "muncul, datang; mengeraskan (suara)",
+      "pos": "verb",
+      "audio": "audio/en/words/w-turn-up.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-turn-down",
+      "english": "turn down",
+      "indonesian": "menolak; mengecilkan (suara)",
+      "pos": "verb",
+      "audio": "audio/en/words/w-turn-down.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bring-up",
+      "english": "bring up",
+      "indonesian": "mengangkat (topik); membesarkan (anak)",
+      "pos": "verb",
+      "audio": "audio/en/words/w-bring-up.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-carry-on",
+      "english": "carry on",
+      "indonesian": "melanjutkan",
+      "pos": "verb",
+      "registerNotes": "Carry on! (Silakan lanjutkan.)",
+      "audio": "audio/en/words/w-carry-on.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-come-over",
+      "english": "come over",
+      "indonesian": "datang (ke rumah), main ke rumah",
+      "pos": "verb",
+      "registerNotes": "Do you want to come over? (Mau main ke rumahku?)",
+      "audio": "audio/en/words/w-come-over.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-get-over",
+      "english": "get over",
+      "indonesian": "bangkit dari (kesedihan); sembuh dari",
+      "pos": "verb",
+      "audio": "audio/en/words/w-get-over.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-head-off",
+      "english": "head off",
+      "indonesian": "berangkat, pamit pulang",
+      "pos": "verb",
+      "registerNotes": "I’d better head off. (Aku pamit dulu, ya.) Bahasa santai.",
+      "audio": "audio/en/words/w-head-off.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-pop-in",
+      "english": "pop in",
+      "indonesian": "mampir sebentar",
+      "pos": "verb",
+      "registerNotes": "Ungkapan santai di Selandia Baru dan Inggris.",
+      "audio": "audio/en/words/w-pop-in.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-show-up",
+      "english": "show up",
+      "indonesian": "datang, muncul",
+      "pos": "verb",
+      "registerNotes": "He didn’t show up. (Dia tidak datang.)",
+      "audio": "audio/en/words/w-show-up.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-make-up",
+      "english": "make up",
+      "indonesian": "berbaikan; mengarang",
+      "pos": "verb",
+      "audio": "audio/en/words/w-make-up.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-try-out",
+      "english": "try out",
+      "indonesian": "mencoba",
+      "pos": "verb",
+      "audio": "audio/en/words/w-try-out.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-go-ahead",
+      "english": "go ahead",
+      "indonesian": "silakan; terus lanjut",
+      "pos": "verb",
+      "registerNotes": "Go ahead. (Silakan.)",
+      "audio": "audio/en/words/w-go-ahead.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hold-up",
+      "english": "hold up",
+      "indonesian": "menahan, menghambat",
+      "pos": "verb",
+      "registerNotes": "Sorry, I got held up. (Maaf terlambat, tadi tertahan.)",
+      "audio": "audio/en/words/w-hold-up.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sleep-in",
+      "english": "sleep in",
+      "indonesian": "bangun siang (sengaja tidur lebih lama)",
+      "pos": "verb",
+      "registerNotes": "I slept in. (Aku kesiangan.)",
+      "audio": "audio/en/words/w-sleep-in.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chill-out",
+      "english": "chill out",
+      "indonesian": "bersantai, tenang",
+      "pos": "verb",
+      "registerNotes": "Bahasa santai.",
+      "audio": "audio/en/words/w-chill-out.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-come-across",
+      "english": "come across",
+      "indonesian": "menemukan secara kebetulan; terkesan (sebagai)",
+      "pos": "verb",
+      "audio": "audio/en/words/w-come-across.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

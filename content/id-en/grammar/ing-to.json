@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ing-to",
+  "connector": "-ing / to",
+  "gloss": "kata kerja + kata kerja",
+  "title": "enjoy -ing, decide to — kapan -ing, kapan to",
+  "pattern": "enjoy / finish / mind ＋ -ing ／ want / decide / need ＋ to …",
+  "explanation": "Kalau setelah kata kerja ada kata kerja lain, sebagian memakai -ing dan sebagian memakai to + kata kerja dasar. enjoy, finish, mind, keep diikuti -ing: I enjoy cooking. want, decide, hope, plan, need diikuti to: I decided to stay. like, love, start bisa keduanya. Bahasa Indonesia cukup bilang “suka memasak” atau “memutuskan menginap”; dalam bahasa Inggris, pasangan ini perlu dihafal.",
+  "natural": "Saat bercerita tentang kesukaan: I really enjoy hiking. (Aku suka sekali hiking.) Do you mind waiting? (Tidak keberatan menunggu?)",
+  "stiff": "I enjoy to cook. itu salah, yang benar I enjoy cooking. Dan stop smoking (berhenti merokok) berbeda arti dengan stop to smoke (berhenti sebentar untuk merokok).",
+  "examples": [
+    {
+      "id": "gx-ing-to-1",
+      "english": "I really enjoy cooking.",
+      "indonesian": "Saya suka sekali memasak.",
+      "chunks": [
+        {
+          "t": "I really enjoy "
+        },
+        {
+          "t": "cooking.",
+          "w": "w-cook"
+        }
+      ],
+      "gap": {
+        "before": "I really enjoy ",
+        "answer": "cooking",
+        "after": ".",
+        "options": [
+          "cooking",
+          "to cook",
+          "cook"
+        ],
+        "why": "Setelah enjoy pakai -ing."
+      },
+      "audio": "audio/en/grammar/gx-ing-to-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "-ing / to"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-ing-to-2",
+      "english": "We decided to stay another night.",
+      "indonesian": "Kami memutuskan menginap satu malam lagi.",
+      "chunks": [
+        {
+          "t": "We decided ",
+          "w": "w-decide"
+        },
+        {
+          "t": "to stay "
+        },
+        {
+          "t": "another night.",
+          "w": "w-night"
+        }
+      ],
+      "gap": {
+        "before": "We decided ",
+        "answer": "to stay",
+        "after": " another night.",
+        "options": [
+          "to stay",
+          "staying",
+          "stay"
+        ],
+        "why": "Setelah decide pakai to + kata kerja dasar."
+      },
+      "audio": "audio/en/grammar/gx-ing-to-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "-ing / to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ing-to-3",
+      "english": "Do you mind waiting a few minutes?",
+      "indonesian": "Tidak keberatan menunggu beberapa menit?",
+      "chunks": [
+        {
+          "t": "Do you mind "
+        },
+        {
+          "t": "waiting ",
+          "w": "w-wait"
+        },
+        {
+          "t": "a few minutes?"
+        }
+      ],
+      "gap": {
+        "before": "Do you mind ",
+        "answer": "waiting",
+        "after": " a few minutes?",
+        "options": [
+          "waiting",
+          "to wait",
+          "wait"
+        ],
+        "why": "Setelah mind pakai -ing. Do you mind …ing? adalah permintaan yang sopan."
+      },
+      "audio": "audio/en/grammar/gx-ing-to-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "-ing / to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ing-to-4",
+      "english": "I need to finish this by Friday.",
+      "indonesian": "Saya harus menyelesaikan ini paling lambat hari Jumat.",
+      "chunks": [
+        {
+          "t": "I need to finish ",
+          "w": "w-finish"
+        },
+        {
+          "t": "this ",
+          "w": "w-this"
+        },
+        {
+          "t": "by Friday.",
+          "w": "w-friday"
+        }
+      ],
+      "gap": {
+        "before": "I need ",
+        "answer": "to finish",
+        "after": " this by Friday.",
+        "options": [
+          "to finish",
+          "finishing",
+          "finish"
+        ],
+        "why": "Setelah need pakai to + kata kerja dasar."
+      },
+      "audio": "audio/en/grammar/gx-ing-to-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "-ing / to"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

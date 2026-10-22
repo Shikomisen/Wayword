@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "con-negative",
+  "connector": "Yes / No",
+  "gloss": "Menjawab pertanyaan negatif",
+  "title": "Yes / No — Menjawab pertanyaan negatif",
+  "pattern": "Don't you ...? — No, I don't.（aku tidak …）／ Yes, I do.（aku …）",
+  "explanation": "Dalam bahasa Inggris, apa pun bentuk pertanyaannya, pakai Yes kalau isi jawabanmu positif, dan No kalau isi jawabanmu negatif. Untuk menjawab Don't you want a bag? (Tidak mau kantong?) dengan “iya, tidak mau”, bilang No, thanks. Dalam bahasa Indonesia, “iya” menyetujui pernyataan si penanya, jadi logikanya terbalik. Hati-hati!",
+  "natural": "Sering muncul saat ditanya soal kantong atau struk, atau saat orang memastikan sesuatu: You don't have a smaller size? — No, we don't. (Tidak ada ukuran yang lebih kecil? — Iya, tidak ada.)",
+  "stiff": "Kalau terbawa bahasa Indonesia lalu bilang Yes, I don't., lawan bicaramu akan bingung. Kalau isi jawabanmu “tidak…”, pakai No.",
+  "examples": [
+    {
+      "id": "cx-negative-1",
+      "english": "Don't you want a bag? — No, thanks.",
+      "indonesian": "Tidak mau kantong? — Iya, tidak usah.",
+      "chunks": [
+        {
+          "t": "Don't you want a bag? ",
+          "w": "w-bag"
+        },
+        {
+          "t": "— No, "
+        },
+        {
+          "t": "thanks."
+        }
+      ],
+      "gap": {
+        "before": "Don't you want a bag? — ",
+        "answer": "No",
+        "after": ", thanks.",
+        "options": [
+          "No",
+          "Yes"
+        ],
+        "why": "Isi jawabannya “tidak mau” (negatif), jadi No."
+      },
+      "audio": "audio/en/connectors/cx-negative-1.mp3",
+      "tags": [
+        "urutan kata",
+        "Yes / No"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-negative-2",
+      "english": "Isn't this on special? — Yes, it is.",
+      "indonesian": "Ini bukan promo? — Promo, kok.",
+      "chunks": [
+        {
+          "t": "Isn't this on special? ",
+          "w": "w-on-special"
+        },
+        {
+          "t": "— Yes, "
+        },
+        {
+          "t": "it is."
+        }
+      ],
+      "gap": {
+        "before": "Isn't this on special? — ",
+        "answer": "Yes",
+        "after": ", it is.",
+        "options": [
+          "Yes",
+          "No"
+        ],
+        "why": "Isi jawabannya “ini promo” (positif), jadi Yes."
+      },
+      "audio": "audio/en/connectors/cx-negative-2.mp3",
+      "tags": [
+        "urutan kata",
+        "Yes / No"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-negative-3",
+      "english": "You don't have a smaller size? — No, we don't.",
+      "indonesian": "Tidak ada ukuran yang lebih kecil? — Iya, tidak ada.",
+      "chunks": [
+        {
+          "t": "You don't have "
+        },
+        {
+          "t": "a smaller size? ",
+          "w": "w-smaller"
+        },
+        {
+          "t": "— No, we don't."
+        }
+      ],
+      "gap": {
+        "before": "You don't have a smaller size? — ",
+        "answer": "No, we don't",
+        "after": ".",
+        "options": [
+          "No, we don't",
+          "Yes, we don't",
+          "Yes, we do"
+        ],
+        "why": "Kalau jawabanmu “tidak ada”, pakai No, we don't."
+      },
+      "audio": "audio/en/connectors/cx-negative-3.mp3",
+      "tags": [
+        "urutan kata",
+        "Yes / No"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-negative-4",
+      "english": "Aren't you open on Mondays? — No, we're closed.",
+      "indonesian": "Hari Senin tidak buka? — Iya, kami tutup.",
+      "chunks": [
+        {
+          "t": "Aren't you open ",
+          "w": "w-open"
+        },
+        {
+          "t": "on Mondays? "
+        },
+        {
+          "t": "— No, we're closed.",
+          "w": "w-close"
+        }
+      ],
+      "gap": {
+        "before": "Aren't you open on Mondays? — ",
+        "answer": "No",
+        "after": ", we're closed.",
+        "options": [
+          "No",
+          "Yes"
+        ],
+        "why": "Isi jawabannya “tidak buka” (negatif), jadi No."
+      },
+      "audio": "audio/en/connectors/cx-negative-4.mp3",
+      "tags": [
+        "urutan kata",
+        "Yes / No"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

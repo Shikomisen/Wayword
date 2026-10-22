@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "id": "words-shopping",
+  "title": "Toko & kasir",
+  "description": "Menanyakan harga, membayar, mengembalikan barang. Termasuk kata yang sering terdengar di kasir.",
+  "items": [
+    {
+      "id": "w-price",
+      "english": "price",
+      "indonesian": "harga",
+      "pos": "noun",
+      "audio": "audio/en/words/w-price.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-how-much",
+      "english": "how much",
+      "indonesian": "berapa (harganya)",
+      "pos": "phrase",
+      "registerNotes": "How much is this? (Ini berapa?) / How much are these? (Yang ini berapa?, untuk lebih dari satu barang)",
+      "audio": "audio/en/words/w-how-much.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cheap",
+      "english": "cheap",
+      "indonesian": "murah",
+      "pos": "adjective",
+      "registerNotes": "cheap bisa terdengar “murahan”. Kalau maksudnya harganya bagus, sering dipakai good value.",
+      "audio": "audio/en/words/w-cheap.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-expensive",
+      "english": "expensive",
+      "indonesian": "mahal",
+      "pos": "adjective",
+      "pitfallNote": "“Harganya mahal” adalah The price is high, bukan The price is expensive. Barangnya yang expensive: It’s expensive.",
+      "audio": "audio/en/words/w-expensive.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-on-special",
+      "english": "on special",
+      "indonesian": "sedang promo, harga khusus",
+      "pos": "phrase",
+      "registerNotes": "on sale juga sama artinya.",
+      "pitfallNote": "for sale berarti “dijual”, tidak ada hubungannya dengan diskon. Yang berarti diskon: on sale atau on special.",
+      "audio": "audio/en/words/w-on-special.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-discount",
+      "english": "discount",
+      "indonesian": "diskon, potongan harga",
+      "pos": "noun",
+      "audio": "audio/en/words/w-discount.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bag",
+      "english": "bag",
+      "indonesian": "tas, kantong",
+      "pos": "noun",
+      "registerNotes": "Would you like a bag? (Mau pakai kantong?)",
+      "audio": "audio/en/words/w-bag.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-paper-bag",
+      "english": "paper bag",
+      "indonesian": "kantong kertas",
+      "pos": "noun",
+      "pitfallNote": "Kantong plastik: plastic bag (plastic saja berarti bahan plastik). Di Selandia Baru, kantong plastik sekali pakai dilarang.",
+      "audio": "audio/en/words/w-paper-bag.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-receipt",
+      "english": "receipt",
+      "indonesian": "struk, nota",
+      "pos": "noun",
+      "pitfallNote": "Huruf p tidak dibaca: kira-kira “ri-sit”.",
+      "audio": "audio/en/words/w-receipt.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-refund",
+      "english": "refund",
+      "indonesian": "pengembalian uang",
+      "pos": "noun",
+      "registerNotes": "Can I get a refund? (Bisa minta uangnya dikembalikan?)",
+      "audio": "audio/en/words/w-refund.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-exchange",
+      "english": "exchange",
+      "indonesian": "menukar",
+      "pos": "verb",
+      "registerNotes": "Can I exchange this for a smaller size? (Bisa ditukar dengan ukuran yang lebih kecil?)",
+      "audio": "audio/en/words/w-exchange.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-return",
+      "english": "return",
+      "indonesian": "mengembalikan (barang)",
+      "pos": "verb",
+      "audio": "audio/en/words/w-return.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-checkout",
+      "english": "checkout",
+      "indonesian": "kasir (tempat bayar)",
+      "pos": "noun",
+      "pitfallNote": "Tempat bayar disebut checkout atau till. cashier adalah orangnya, petugas kasir.",
+      "audio": "audio/en/words/w-checkout.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-till",
+      "english": "till",
+      "indonesian": "kasir (tempat bayar)",
+      "pos": "noun",
+      "registerNotes": "Sebutan di Selandia Baru dan Inggris. Pay at the till. (Silakan bayar di kasir.)",
+      "audio": "audio/en/words/w-till.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-eftpos",
+      "english": "EFTPOS",
+      "indonesian": "bayar dengan kartu debit",
+      "pos": "noun",
+      "registerNotes": "Dibaca “eftpos”. Di kasir kamu akan ditanya EFTPOS or credit? (Debit atau kredit?)",
+      "audio": "audio/en/words/w-eftpos.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-card",
+      "english": "card",
+      "indonesian": "kartu",
+      "pos": "noun",
+      "pitfallNote": "Bilang card atau credit card: I’ll pay by card. Kartu debit di Selandia Baru disebut EFTPOS.",
+      "audio": "audio/en/words/w-card.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cash",
+      "english": "cash",
+      "indonesian": "uang tunai",
+      "pos": "noun",
+      "audio": "audio/en/words/w-cash.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-change",
+      "english": "change",
+      "indonesian": "uang kembalian; uang receh",
+      "pos": "noun",
+      "registerNotes": "Here's your change. (Ini kembaliannya.)",
+      "audio": "audio/en/words/w-change.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tap",
+      "english": "tap",
+      "indonesian": "menempelkan (kartu)",
+      "pos": "verb",
+      "registerNotes": "Tap when you're ready. (Silakan tempelkan kartunya.)",
+      "audio": "audio/en/words/w-tap.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pin",
+      "english": "PIN",
+      "indonesian": "PIN",
+      "pos": "noun",
+      "registerNotes": "Enter your PIN. (Silakan masukkan PIN.)",
+      "audio": "audio/en/words/w-pin.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-queue",
+      "english": "queue",
+      "indonesian": "antrean",
+      "pos": "noun",
+      "registerNotes": "Di Amerika: line. Are you in the queue? (Kamu sedang antre?)",
+      "audio": "audio/en/words/w-queue.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-aisle",
+      "english": "aisle",
+      "indonesian": "lorong (di supermarket)",
+      "pos": "noun",
+      "registerNotes": "It's in aisle five. (Ada di lorong lima.)",
+      "pitfallNote": "Huruf s tidak dibaca: “ail”, sama seperti I’ll.",
+      "audio": "audio/en/words/w-aisle.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-out-of-stock",
+      "english": "out of stock",
+      "indonesian": "stok habis",
+      "pos": "phrase",
+      "registerNotes": "Sorry, we're out of that. (Maaf, itu sedang habis.)",
+      "audio": "audio/en/words/w-out-of-stock.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-just-looking",
+      "english": "just looking",
+      "indonesian": "cuma lihat-lihat",
+      "pos": "phrase",
+      "registerNotes": "I'm just looking, thanks. (Cuma lihat-lihat, terima kasih.)",
+      "audio": "audio/en/words/w-just-looking.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-voucher",
+      "english": "voucher",
+      "indonesian": "voucer, kupon",
+      "pos": "noun",
+      "audio": "audio/en/words/w-voucher.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "directions",
+  "title": "Bertanya arah",
+  "order": 5,
+  "description": "Meskipun ada aplikasi peta, pasti ada saatnya bertanya ke orang lebih cepat. Sekalian dengan cara minta diulang kalau jawabannya tidak tertangkap.",
+  "phrases": [
+    {
+      "id": "dir-01",
+      "english": "Excuse me, where is the station?",
+      "indonesian": "Permisi, stasiun di mana?",
+      "registerNotes": "Dasarnya: sapa dulu dengan Excuse me, baru bertanya.",
+      "audio": "audio/en/dir-01.mp3",
+      "audioHint": "Excuse me, where is the station?",
+      "tags": [
+        "petunjuk jalan",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "dir-02",
+      "english": "How do I get to the museum?",
+      "indonesian": "Ke museum lewat mana, ya?",
+      "registerNotes": "Cara standar menanyakan rute. Dibanding Where is ...?, kamu akan diberi petunjuk jalan yang lebih rinci.",
+      "audio": "audio/en/dir-02.mp3",
+      "audioHint": "How do I get to the museum?",
+      "tags": [
+        "petunjuk jalan"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "'Bagaimana cara ke museum?' sering diterjemahkan jadi How to go to the museum?. Itu bukan kalimat tanya yang lengkap. Pakai How do I get to…?"
+    },
+    {
+      "id": "dir-03",
+      "english": "Is it far from here?",
+      "indonesian": "Jauh dari sini?",
+      "registerNotes": "Kalau ingin tahu apakah bisa jalan kaki, Can I walk there? juga berguna.",
+      "audio": "audio/en/dir-03.mp3",
+      "audioHint": "Is it far from here?",
+      "tags": [
+        "petunjuk jalan",
+        "jarak"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "dir-04",
+      "english": "I'm lost.",
+      "indonesian": "Saya tersesat.",
+      "registerNotes": "Kalau kamu sampaikan keadaanmu dulu, orang akan paham situasinya dan menjelaskan dengan lebih telaten.",
+      "audio": "audio/en/dir-04.mp3",
+      "audioHint": "I'm lost.",
+      "tags": [
+        "petunjuk jalan",
+        "penting"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "Tanpa am, I lost. artinya 'saya kalah' atau 'saya kehilangan…'. Untuk 'saya tersesat', pakai I'm lost."
+    },
+    {
+      "id": "dir-05",
+      "english": "Go straight and turn left at the corner.",
+      "indonesian": "Jalan lurus, lalu belok kiri di sudut jalan.",
+      "registerNotes": "Bentuk yang paling sering terdengar saat diberi petunjuk jalan. Cukup kalau kamu menangkap straight (lurus), left / right, corner (sudut jalan), the lights (lampu lalu lintas), dan roundabout (bundaran).",
+      "audio": "audio/en/dir-05.mp3",
+      "audioHint": "Go straight and turn left at the corner.",
+      "tags": [
+        "petunjuk jalan",
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "dir-06",
+      "english": "It's on your right.",
+      "indonesian": "Ada di sebelah kananmu.",
+      "registerNotes": "on your right / left artinya 'di sebelah kanan/kiri, dilihat dari posisimu'. Sering muncul di akhir petunjuk jalan.",
+      "audio": "audio/en/dir-06.mp3",
+      "audioHint": "It's on your right.",
+      "tags": [
+        "petunjuk jalan",
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-07",
+      "english": "Could you show me on the map?",
+      "indonesian": "Bisa tolong tunjukkan di peta?",
+      "registerNotes": "Sambil memperlihatkan peta di ponselmu. Lebih pasti daripada penjelasan lisan.",
+      "audio": "audio/en/dir-07.mp3",
+      "audioHint": "Could you show me on the map?",
+      "tags": [
+        "petunjuk jalan",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-08",
+      "english": "Is there a toilet near here?",
+      "indonesian": "Ada toilet di dekat sini?",
+      "registerNotes": "Di Selandia Baru dan Inggris, toilet adalah kata yang biasa dan tidak kasar. Dalam bahasa santai juga disebut loo. Di Amerika: restroom atau bathroom. Singkatan WC jarang dipakai di sana.",
+      "pitfallNote": "Bahasa Indonesia tidak punya a / the, jadi Where is toilet? sering terucap. Katakan Where's the toilet? atau Is there a toilet near here?",
+      "audio": "audio/en/dir-08.mp3",
+      "audioHint": "Is there a toilet near here?",
+      "tags": [
+        "toilet",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-09",
+      "english": "How long does it take on foot?",
+      "indonesian": "Kalau jalan kaki, berapa lama?",
+      "registerNotes": "on foot artinya 'dengan jalan kaki'. Jawabannya misalnya It's a ten-minute walk.",
+      "audio": "audio/en/dir-09.mp3",
+      "audioHint": "How long does it take on foot?",
+      "tags": [
+        "petunjuk jalan",
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "dir-10",
+      "english": "Is this the right way to the beach?",
+      "indonesian": "Ini jalan yang benar ke pantai?",
+      "registerNotes": "Untuk memastikan saat ragu di tengah jalan. the right way artinya 'jalan yang benar': right di sini bukan 'kanan'.",
+      "audio": "audio/en/dir-10.mp3",
+      "audioHint": "Is this the right way to the beach?",
+      "tags": [
+        "petunjuk jalan",
+        "memastikan"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

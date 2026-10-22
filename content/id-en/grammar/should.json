@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-should",
+  "connector": "should",
+  "gloss": "sebaiknya …",
+  "title": "should, had better — sebaiknya …",
+  "pattern": "You should … ／ You shouldn’t … ／ You’d better …",
+  "explanation": "should + kata kerja dasar adalah saran, seperti “sebaiknya” atau “coba …”: You should try the fish and chips. (Coba fish and chips-nya, deh.) had better (’d better) lebih keras: “sebaiknya …, kalau tidak nanti repot”: You’d better hurry. (Cepat, nanti terlambat.)",
+  "natural": "Untuk rekomendasi atau saran ringan, pakai should: You should go to Waiheke. (Coba ke Pulau Waiheke, deh.)",
+  "stiff": "“Lebih baik” dalam bahasa Indonesia terdengar halus, tapi You had better … kepada atasan atau orang yang lebih tua terdengar seperti perintah atau peringatan. Untuk menyarankan dengan sopan, pakai Maybe you could …",
+  "examples": [
+    {
+      "id": "gx-should-1",
+      "english": "You should try the fish and chips.",
+      "indonesian": "Coba fish and chips-nya, deh.",
+      "chunks": [
+        {
+          "t": "You should try "
+        },
+        {
+          "t": "the fish and chips.",
+          "w": "w-fish-and-chips"
+        }
+      ],
+      "gap": {
+        "before": "You ",
+        "answer": "should",
+        "after": " try the fish and chips.",
+        "options": [
+          "should",
+          "must",
+          "had"
+        ],
+        "why": "Rekomendasi memakai should."
+      },
+      "audio": "audio/en/grammar/gx-should-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "should"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-should-2",
+      "english": "You shouldn’t swim there.",
+      "indonesian": "Sebaiknya jangan berenang di sana.",
+      "chunks": [
+        {
+          "t": "You shouldn’t swim "
+        },
+        {
+          "t": "there.",
+          "w": "w-there"
+        }
+      ],
+      "gap": {
+        "before": "You ",
+        "answer": "shouldn’t",
+        "after": " swim there.",
+        "options": [
+          "shouldn’t",
+          "don’t should",
+          "not should"
+        ],
+        "why": "Bentuk negatif should adalah shouldn’t (should not), bukan don’t should."
+      },
+      "audio": "audio/en/grammar/gx-should-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "should"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-should-3",
+      "english": "We’d better leave now, or we’ll miss the bus.",
+      "indonesian": "Kita harus berangkat sekarang, kalau tidak nanti ketinggalan bus.",
+      "chunks": [
+        {
+          "t": "We’d better leave ",
+          "w": "w-leave"
+        },
+        {
+          "t": "now, ",
+          "w": "w-now"
+        },
+        {
+          "t": "or we’ll miss the bus.",
+          "w": "w-miss"
+        }
+      ],
+      "gap": {
+        "before": "We’d ",
+        "answer": "better",
+        "after": " leave now, or we’ll miss the bus.",
+        "options": [
+          "better",
+          "best",
+          "should"
+        ],
+        "why": "had better (’d better) berarti “sebaiknya …, kalau tidak gawat”."
+      },
+      "audio": "audio/en/grammar/gx-should-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "should"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-should-4",
+      "english": "Should I bring anything?",
+      "indonesian": "Sebaiknya aku bawa sesuatu?",
+      "chunks": [
+        {
+          "t": "Should I bring ",
+          "w": "w-bring"
+        },
+        {
+          "t": "anything?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Should",
+        "after": " I bring anything?",
+        "options": [
+          "Should",
+          "Must",
+          "Have"
+        ],
+        "why": "Untuk minta saran, pakai Should I …?"
+      },
+      "audio": "audio/en/grammar/gx-should-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "should"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

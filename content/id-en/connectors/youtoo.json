@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "con-youtoo",
+  "connector": "You too!",
+  "gloss": "Membalas salam dan ucapan terima kasih",
+  "title": "You too! — Membalas salam dan ucapan terima kasih",
+  "pattern": "Thanks, you too! ／ No worries. ／ You're welcome.",
+  "explanation": "Cara membalas saat seseorang memberi salam atau berterima kasih. Kalau ada yang bilang Have a good day! (Semoga harimu menyenangkan), balas Thanks, you too! (Kamu juga, ya). Kalau ada yang bilang Thank you., balas No worries. atau You're welcome. (Sama-sama). “Sama-sama” punya dua tugas, tapi bahasa Inggris memisahkannya. Di Selandia Baru, No worries sangat sering dipakai.",
+  "natural": "Saat berpisah di kasir, setelah memberi petunjuk jalan, atau saat seseorang berterima kasih. Kuncinya: balas dengan singkat dan ceria.",
+  "stiff": "Membalas Have a good day! dengan Me too! adalah kesalahan umum: artinya jadi “saya juga (akan menikmati hari saya)”.",
+  "examples": [
+    {
+      "id": "cx-youtoo-1",
+      "english": "Have a good day! — Cheers, you too!",
+      "indonesian": "Semoga harimu menyenangkan! — Makasih, kamu juga, ya!",
+      "chunks": [
+        {
+          "t": "Have a good day! "
+        },
+        {
+          "t": "— Cheers, ",
+          "w": "w-cheers"
+        },
+        {
+          "t": "you too!"
+        }
+      ],
+      "gap": {
+        "before": "Have a good day! — Cheers, ",
+        "answer": "you",
+        "after": " too!",
+        "options": [
+          "you",
+          "me",
+          "I"
+        ],
+        "why": "“Kamu juga” adalah you too. Me too artinya “saya juga”."
+      },
+      "audio": "audio/en/connectors/cx-youtoo-1.mp3",
+      "tags": [
+        "bahasa sopan",
+        "You too!"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-youtoo-2",
+      "english": "Thanks for your help! — No worries, any time.",
+      "indonesian": "Makasih sudah dibantu! — Sama-sama, kapan saja.",
+      "chunks": [
+        {
+          "t": "Thanks for your help! "
+        },
+        {
+          "t": "— No worries, ",
+          "w": "w-no-worries"
+        },
+        {
+          "t": "any time."
+        }
+      ],
+      "gap": {
+        "before": "Thanks for your help! — ",
+        "answer": "No worries",
+        "after": ", any time.",
+        "options": [
+          "No worries",
+          "Me too",
+          "Sorry"
+        ],
+        "why": "Kalau ada yang berterima kasih, jawab No worries (sama-sama)."
+      },
+      "audio": "audio/en/connectors/cx-youtoo-2.mp3",
+      "tags": [
+        "bahasa sopan",
+        "You too!"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-youtoo-3",
+      "english": "Thank you so much! — You're welcome. Enjoy your flat white!",
+      "indonesian": "Terima kasih banyak! — Sama-sama. Selamat menikmati flat white-nya!",
+      "chunks": [
+        {
+          "t": "Thank you so much! "
+        },
+        {
+          "t": "— You're welcome. "
+        },
+        {
+          "t": "Enjoy your flat white!",
+          "w": "w-flat-white"
+        }
+      ],
+      "gap": {
+        "before": "Thank you so much! — ",
+        "answer": "You're welcome",
+        "after": ". Enjoy your flat white!",
+        "options": [
+          "You're welcome",
+          "Welcome",
+          "You're well"
+        ],
+        "why": "“Sama-sama” adalah You're welcome. Welcome! saja artinya “selamat datang”."
+      },
+      "audio": "audio/en/connectors/cx-youtoo-3.mp3",
+      "tags": [
+        "bahasa sopan",
+        "You too!"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-youtoo-4",
+      "english": "See you this arvo! — See you then!",
+      "indonesian": "Sampai nanti sore! — Oke, sampai nanti!",
+      "chunks": [
+        {
+          "t": "See you "
+        },
+        {
+          "t": "this arvo! ",
+          "w": "w-arvo"
+        },
+        {
+          "t": "— See you then!"
+        }
+      ],
+      "gap": {
+        "before": "See you this arvo! — See you ",
+        "answer": "then",
+        "after": "!",
+        "options": [
+          "then",
+          "there",
+          "after"
+        ],
+        "why": "See you then. artinya “sampai ketemu (pada waktu itu)”. There menunjuk tempat, bukan waktu."
+      },
+      "audio": "audio/en/connectors/cx-youtoo-4.mp3",
+      "tags": [
+        "bahasa sopan",
+        "You too!"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

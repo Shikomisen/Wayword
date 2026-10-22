@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-make-let",
+  "connector": "make / let",
+  "gloss": "menyuruh · membiarkan",
+  "title": "make, let, get — menyuruh, membiarkan, meminta",
+  "pattern": "make ＋ orang ＋ kata kerja dasar ／ let ＋ orang ＋ kata kerja dasar ／ get ＋ orang ＋ to …",
+  "explanation": "Ada tiga cara untuk “membuat orang melakukan sesuatu”. make berarti memaksa atau menyuruh: My boss made me work late. (Bosku menyuruhku lembur.) let berarti membiarkan atau mengizinkan: Let me help. (Biar aku bantu.) get berarti meminta orang melakukannya: I’ll get Sam to call you. (Nanti saya minta Sam meneleponmu.) Jadi “suruh” bisa make (kalau dipaksa) atau get (kalau diminta). Setelah make dan let, pakai kata kerja dasar tanpa to.",
+  "natural": "Let me … adalah ungkapan baku untuk menawarkan diri: Let me check. (Saya cek dulu, ya.), Let me know. (Kabari aku, ya.)",
+  "stiff": "Memasukkan to, seperti make me to go atau let me to help, itu salah. Yang benar Let me help.",
+  "examples": [
+    {
+      "id": "gx-make-let-1",
+      "english": "Let me know if you need anything.",
+      "indonesian": "Kabari aku kalau butuh apa-apa, ya.",
+      "chunks": [
+        {
+          "t": "Let me know ",
+          "w": "w-know"
+        },
+        {
+          "t": "if you need ",
+          "w": "w-need"
+        },
+        {
+          "t": "anything."
+        }
+      ],
+      "gap": {
+        "before": "Let me ",
+        "answer": "know",
+        "after": " if you need anything.",
+        "options": [
+          "know",
+          "to know",
+          "knowing"
+        ],
+        "why": "Setelah let pakai kata kerja dasar tanpa to."
+      },
+      "audio": "audio/en/grammar/gx-make-let-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "make / let"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-make-let-2",
+      "english": "My boss made me work late.",
+      "indonesian": "Bos menyuruh saya kerja sampai larut.",
+      "chunks": [
+        {
+          "t": "My boss ",
+          "w": "w-boss"
+        },
+        {
+          "t": "made me work ",
+          "w": "w-work"
+        },
+        {
+          "t": "late.",
+          "w": "w-late"
+        }
+      ],
+      "gap": {
+        "before": "My boss ",
+        "answer": "made",
+        "after": " me work late.",
+        "options": [
+          "made",
+          "let",
+          "got"
+        ],
+        "why": "Menyuruh dengan paksa memakai make."
+      },
+      "audio": "audio/en/grammar/gx-make-let-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "make / let"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-make-let-3",
+      "english": "I’ll get Sam to call you back.",
+      "indonesian": "Nanti saya minta Sam menelepon balik.",
+      "chunks": [
+        {
+          "t": "I’ll get Sam "
+        },
+        {
+          "t": "to call you back.",
+          "w": "w-call"
+        }
+      ],
+      "gap": {
+        "before": "I’ll get Sam ",
+        "answer": "to call",
+        "after": " you back.",
+        "options": [
+          "to call",
+          "call",
+          "calling"
+        ],
+        "why": "Setelah get + orang, pakai to + kata kerja dasar."
+      },
+      "audio": "audio/en/grammar/gx-make-let-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "make / let"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-make-let-4",
+      "english": "Let me help you with your bags.",
+      "indonesian": "Sini, saya bantu bawa tasnya.",
+      "chunks": [
+        {
+          "t": "Let me help you ",
+          "w": "w-help"
+        },
+        {
+          "t": "with your bags.",
+          "w": "w-bag"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Let",
+        "after": " me help you with your bags.",
+        "options": [
+          "Let",
+          "Make",
+          "Get"
+        ],
+        "why": "Untuk menawarkan bantuan (“biar saya …”), pakai Let me …"
+      },
+      "audio": "audio/en/grammar/gx-make-let-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "make / let"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

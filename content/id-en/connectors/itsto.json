@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "con-itsto",
+  "connector": "It's … to …",
+  "gloss": "Susah untuk…, senang bisa… (menilai kegiatan)",
+  "title": "It's … to … — Susah untuk…, senang bisa… (menilai kegiatan)",
+  "pattern": "It's ＋ kata sifat ＋ to ＋ kata kerja",
+  "explanation": "Untuk menyampaikan kesan tentang sebuah kegiatan, seperti “susah untuk…” atau “gampang untuk…”, pakai It's + kata sifat + to + kata kerja. Daripada To find my size is hard., It's hard to find my size. jauh lebih wajar. Bahasa Indonesia cukup “Susah cari ukuran saya”, tapi bahasa Inggris butuh It's di depan: Hard to … atau Is hard to … saja kurang lengkap.",
+  "natural": "Untuk menyampaikan perasaan atau kesan: It's nice to meet you. (Senang bertemu denganmu), It's easy to get here by bus. (Ke sini gampang naik bus.)",
+  "stiff": "Kalau kamu menyisipkan for, seperti It's … for me to …, maknanya jadi menekankan “bagi saya”. Tidak perlu selalu dipakai.",
+  "examples": [
+    {
+      "id": "cx-itsto-1",
+      "english": "It's hard to find my size.",
+      "indonesian": "Susah mencari ukuran saya.",
+      "chunks": [
+        {
+          "t": "It's hard "
+        },
+        {
+          "t": "to find ",
+          "w": "w-find"
+        },
+        {
+          "t": "my size.",
+          "w": "w-size"
+        }
+      ],
+      "gap": {
+        "before": "It's hard ",
+        "answer": "to",
+        "after": " find my size.",
+        "options": [
+          "to",
+          "for",
+          "that"
+        ],
+        "why": "Bentuknya It's + kata sifat + to + kata kerja."
+      },
+      "audio": "audio/en/connectors/cx-itsto-1.mp3",
+      "tags": [
+        "urutan kata",
+        "It's … to …"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-itsto-2",
+      "english": "It's nice to meet you.",
+      "indonesian": "Senang bertemu denganmu.",
+      "chunks": [
+        {
+          "t": "It's nice "
+        },
+        {
+          "t": "to meet ",
+          "w": "w-meet"
+        },
+        {
+          "t": "you."
+        }
+      ],
+      "gap": {
+        "before": "It's nice to ",
+        "answer": "meet",
+        "after": " you.",
+        "options": [
+          "meet",
+          "meeting",
+          "met"
+        ],
+        "why": "Setelah to, pakai bentuk dasar kata kerja (meet)."
+      },
+      "audio": "audio/en/connectors/cx-itsto-2.mp3",
+      "tags": [
+        "urutan kata",
+        "It's … to …"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-itsto-3",
+      "english": "It's easy to get here by bus.",
+      "indonesian": "Ke sini gampang naik bus.",
+      "chunks": [
+        {
+          "t": "It's easy "
+        },
+        {
+          "t": "to get here ",
+          "w": "w-get"
+        },
+        {
+          "t": "by bus."
+        }
+      ],
+      "gap": {
+        "before": "It's easy to get here ",
+        "answer": "by",
+        "after": " bus.",
+        "options": [
+          "by",
+          "with",
+          "on"
+        ],
+        "why": "“Naik bus” atau “dengan bus” adalah by bus, bukan with bus."
+      },
+      "audio": "audio/en/connectors/cx-itsto-3.mp3",
+      "tags": [
+        "urutan kata",
+        "It's … to …"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-itsto-4",
+      "english": "Is it OK to pay in cash?",
+      "indonesian": "Boleh bayar tunai?",
+      "chunks": [
+        {
+          "t": "Is it OK "
+        },
+        {
+          "t": "to pay ",
+          "w": "w-pay"
+        },
+        {
+          "t": "in cash?",
+          "w": "w-cash"
+        }
+      ],
+      "gap": {
+        "before": "Is it OK to pay ",
+        "answer": "in",
+        "after": " cash?",
+        "options": [
+          "in",
+          "by",
+          "with"
+        ],
+        "ok": [
+          "by"
+        ],
+        "note": "Ada juga yang bilang by cash, tapi in cash lebih umum.",
+        "why": "“Bayar tunai” adalah pay in cash."
+      },
+      "audio": "audio/en/connectors/cx-itsto-4.mp3",
+      "tags": [
+        "urutan kata",
+        "It's … to …"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

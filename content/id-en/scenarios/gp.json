@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": "gp",
+  "title": "Berobat ke dokter umum (GP)",
+  "category": "doctor",
+  "setting": "Sejak kemarin kamu demam dan tenggorokanmu sakit. Kamu sudah membuat janji lewat telepon di klinik dokter umum (GP) dekat tempatmu, dan sekarang kamu tiba di meja pendaftaran.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "receptionist",
+      "english": "Kia ora, how can I help?",
+      "indonesian": "Halo, ada yang bisa saya bantu?",
+      "audio": "audio/en/scenario/gp-n1.mp3",
+      "audioHint": "Kia ora, how can I help?",
+      "options": [
+        {
+          "phraseId": "doc-01",
+          "quality": "good",
+          "feedback": "Pas sebagai kalimat pertama di meja pendaftaran.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "Hi, I’ve got an appointment at ten.",
+          "indonesian": "Halo, saya ada janji jam sepuluh.",
+          "feedback": "Kalau sudah ada janji, sebutkan jam dan namamu.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "Doctor, please.",
+          "indonesian": "Dokter, tolong.",
+          "feedback": "Dimengerti, tapi terdengar ketus. Ucapkan dalam kalimat: I’d like to see a doctor.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "receptionist",
+      "english": "Have you been here before?",
+      "indonesian": "Apakah Anda pernah ke sini sebelumnya?",
+      "audio": "audio/en/scenario/gp-n2.mp3",
+      "audioHint": "Have you been here before?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "No, it’s my first time. I’m visiting from Japan.",
+          "indonesian": "Belum, ini pertama kalinya. Saya sedang berkunjung dari Jepang.",
+          "feedback": "Kalau kamu bilang kamu wisatawan, mereka akan menjelaskan biaya dan prosedurnya.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "english": "No, I haven’t.",
+          "indonesian": "Belum, belum pernah.",
+          "feedback": "Pertanyaan Have you …? dijawab dengan I have atau I haven’t.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "english": "No, I didn’t.",
+          "indonesian": "Tidak, saya tidak.",
+          "feedback": "Dimengerti, tapi kalau ditanya Have you been …?, jawaban yang wajar mengikuti bentuknya: No, I haven’t. Bahasa Indonesia cukup “belum”, tapi bahasa Inggris mengikuti kata kerja bantu di pertanyaan.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "doctor",
+      "english": "So, what seems to be the problem?",
+      "indonesian": "Jadi, apa keluhannya?",
+      "audio": "audio/en/scenario/gp-n3.mp3",
+      "audioHint": "So, what seems to be the problem?",
+      "options": [
+        {
+          "phraseId": "doc-02",
+          "quality": "good",
+          "feedback": "Gejala dan sejak kapan, sekaligus dalam satu kalimat.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "I’ve got a sore throat and a bad cough.",
+          "indonesian": "Tenggorokan saya sakit, dan batuk saya parah.",
+          "feedback": "Pakai I’ve got … untuk menyebut gejala.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "english": "I’m sick.",
+          "indonesian": "Saya sakit.",
+          "feedback": "Sebutkan gejalanya dengan jelas (demam, tenggorokan, batuk) dan sejak kapan.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "doctor",
+      "english": "Are you taking any medication at the moment?",
+      "indonesian": "Apakah Anda sedang minum obat saat ini?",
+      "audio": "audio/en/scenario/gp-n4.mp3",
+      "audioHint": "Are you taking any medication at the moment?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "No, I’m not.",
+          "indonesian": "Tidak.",
+          "feedback": "Pertanyaan Are you …? dijawab dengan I am atau I’m not.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "doc-05",
+          "quality": "good",
+          "feedback": "Sebutkan alergimu meskipun tidak ditanya.",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "english": "I don’t drink medicine.",
+          "indonesian": "Saya tidak minum obat.",
+          "feedback": "“Minum obat” dalam bahasa Inggris adalah take medicine, bukan drink medicine.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "doctor",
+      "english": "It looks like a virus. Get plenty of rest, and come back if it gets worse.",
+      "indonesian": "Sepertinya karena virus. Banyak istirahat, dan datang lagi kalau makin parah.",
+      "audio": "audio/en/scenario/gp-n5.mp3",
+      "audioHint": "It looks like a virus. Get plenty of rest, and come back if it gets worse.",
+      "options": [
+        {
+          "phraseId": "doc-11",
+          "quality": "good",
+          "feedback": "Pertanyaan bagus untuk tahu perkiraan ke depannya.",
+          "next": "end"
+        },
+        {
+          "phraseId": "doc-12",
+          "quality": "good",
+          "feedback": "Kalau perlu untuk kantor atau asuransi, mintalah sebelum pulang.",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "english": "OK. Medicine?",
+          "indonesian": "Oke. Obatnya?",
+          "feedback": "Maksudnya bisa dipahami, tapi tanyakan dalam kalimat: Do I need any medicine? Untuk virus, dokter biasanya tidak memberi antibiotik.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "indonesian": "Kerja bagus. Gejala dan sejak kapan, obat yang sedang diminum, dan alergi. Kalau kamu bisa menyampaikan ketiganya, percakapan di klinik biasanya lancar.",
+      "end": true,
+      "options": []
+    }
+  }
+}

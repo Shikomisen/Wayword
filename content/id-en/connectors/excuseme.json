@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "con-excuseme",
+  "connector": "Excuse me / Sorry",
+  "gloss": "Permisi, maaf, atau terima kasih?",
+  "title": "Excuse me / Sorry — Permisi, maaf, atau terima kasih?",
+  "pattern": "Excuse me（menyapa）／ Sorry（minta maaf・minta diulang）／ Thank you（berterima kasih）",
+  "explanation": "Bahasa Inggris membedakan tiga ungkapan ini menurut situasi. Untuk menyapa orang atau minta jalan, pakai Excuse me (permisi). Untuk minta maaf karena menabrak atau salah, dan untuk minta orang mengulang, pakai Sorry (maaf). Kalau seseorang melakukan sesuatu untukmu, pakai Thank you. Dalam bahasa Indonesia, “Maaf, mau tanya…” biasa dipakai untuk menyapa; dalam bahasa Inggris, untuk itu pakai Excuse me.",
+  "natural": "Excuse me untuk memanggil pelayan atau lewat di depan orang. Sorry? (Maaf, apa tadi?) saat kamu tidak menangkap ucapan orang juga sangat sering dipakai.",
+  "stiff": "Kalau kamu bilang Sorry setelah dibantu, kedengarannya seperti minta maaf karena merepotkan. Untuk berterima kasih, pakai Thank you.",
+  "examples": [
+    {
+      "id": "cx-excuseme-1",
+      "english": "Excuse me, do you have this in a bigger size?",
+      "indonesian": "Permisi, yang ini ada ukuran lebih besar?",
+      "chunks": [
+        {
+          "t": "Excuse me, "
+        },
+        {
+          "t": "do you have this "
+        },
+        {
+          "t": "in a bigger size?",
+          "w": "w-bigger"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Excuse me",
+        "after": ", do you have this in a bigger size?",
+        "options": [
+          "Excuse me",
+          "Sorry",
+          "Thank you"
+        ],
+        "why": "Untuk menyapa pelayan, pakai Excuse me (permisi)."
+      },
+      "audio": "audio/en/connectors/cx-excuseme-1.mp3",
+      "tags": [
+        "bahasa sopan",
+        "Excuse me / Sorry"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-excuseme-2",
+      "english": "Sorry, I didn't catch your name.",
+      "indonesian": "Maaf, saya tadi tidak menangkap namamu.",
+      "chunks": [
+        {
+          "t": "Sorry, "
+        },
+        {
+          "t": "I didn't "
+        },
+        {
+          "t": "catch your name.",
+          "w": "w-catch"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Sorry",
+        "after": ", I didn't catch your name.",
+        "options": [
+          "Sorry",
+          "Excuse me",
+          "Thank you"
+        ],
+        "ok": [
+          "Excuse me"
+        ],
+        "note": "Excuse me juga bisa dipakai untuk minta diulang, tapi Sorry lebih sering.",
+        "why": "Untuk minta diulang atau minta maaf, pakai Sorry."
+      },
+      "audio": "audio/en/connectors/cx-excuseme-2.mp3",
+      "tags": [
+        "bahasa sopan",
+        "Excuse me / Sorry"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-excuseme-3",
+      "english": "Thank you so much for your help.",
+      "indonesian": "Terima kasih banyak atas bantuannya.",
+      "chunks": [
+        {
+          "t": "Thank you "
+        },
+        {
+          "t": "so much "
+        },
+        {
+          "t": "for your help.",
+          "w": "w-help"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Thank you",
+        "after": " so much for your help.",
+        "options": [
+          "Thank you",
+          "Sorry",
+          "Excuse me"
+        ],
+        "why": "Untuk berterima kasih atas bantuan, pakai Thank you. Sorry terdengar seperti minta maaf."
+      },
+      "audio": "audio/en/connectors/cx-excuseme-3.mp3",
+      "tags": [
+        "bahasa sopan",
+        "Excuse me / Sorry"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-excuseme-4",
+      "english": "Sorry, I think I'm in the wrong queue.",
+      "indonesian": "Maaf, sepertinya saya salah antrean.",
+      "chunks": [
+        {
+          "t": "Sorry, "
+        },
+        {
+          "t": "I think "
+        },
+        {
+          "t": "I'm in the wrong queue.",
+          "w": "w-queue"
+        }
+      ],
+      "gap": {
+        "before": "Sorry, I think I'm in the ",
+        "answer": "wrong",
+        "after": " queue.",
+        "options": [
+          "wrong",
+          "different",
+          "mistake"
+        ],
+        "why": "“Antrean yang salah” adalah the wrong queue. Mistake adalah kata benda (“kesalahan”), jadi tidak cocok di sini."
+      },
+      "audio": "audio/en/connectors/cx-excuseme-4.mp3",
+      "tags": [
+        "bahasa sopan",
+        "Excuse me / Sorry"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

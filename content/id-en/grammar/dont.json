@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-dont",
+  "connector": "don’t / doesn’t",
+  "gloss": "tidak … (negatif simple present)",
+  "title": "don’t, doesn’t — tidak …",
+  "pattern": "I・you・we・they ＋ don’t ＋ kata kerja / he・she・it ＋ doesn’t ＋ kata kerja",
+  "explanation": "Untuk negatif simple present, taruh don’t (do not) sebelum kata kerja. Kalau subjeknya he, she, atau it, pakai doesn’t (does not), dan kata kerja sesudahnya tidak diberi -s: She doesn’t eat meat. (Dia tidak makan daging.) Bahasa Indonesia cukup menambahkan “tidak”; bahasa Inggris butuh don’t atau doesn’t.",
+  "natural": "Saat menyebut selera atau kebiasaan: I don’t drink coffee. (Saya tidak minum kopi.), I don’t know. (Saya tidak tahu.)",
+  "stiff": "“Tidak” sering langsung jadi not: I not eat meat. salah, yang benar I don’t eat meat. Kalimat dengan to be tidak memakai don’t: I don’t hungry. salah, yang benar I’m not hungry. She doesn’t eats. juga salah: -s cukup di doesn’t.",
+  "examples": [
+    {
+      "id": "gx-dont-1",
+      "english": "I don’t eat meat.",
+      "indonesian": "Saya tidak makan daging.",
+      "chunks": [
+        {
+          "t": "I ",
+          "w": "w-i"
+        },
+        {
+          "t": "don’t "
+        },
+        {
+          "t": "eat meat.",
+          "w": "w-eat"
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "don’t",
+        "after": " eat meat.",
+        "options": [
+          "don’t",
+          "doesn’t",
+          "not"
+        ],
+        "why": "Negatif untuk I: don’t + kata kerja. Bukan not saja."
+      },
+      "audio": "audio/en/grammar/gx-dont-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "don’t / doesn’t"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-dont-2",
+      "english": "He doesn’t drink coffee.",
+      "indonesian": "Dia tidak minum kopi.",
+      "chunks": [
+        {
+          "t": "He ",
+          "w": "w-he"
+        },
+        {
+          "t": "doesn’t "
+        },
+        {
+          "t": "drink coffee.",
+          "w": "w-drink"
+        }
+      ],
+      "gap": {
+        "before": "He ",
+        "answer": "doesn’t",
+        "after": " drink coffee.",
+        "options": [
+          "doesn’t",
+          "don’t",
+          "isn’t"
+        ],
+        "why": "Negatif untuk he: doesn’t."
+      },
+      "audio": "audio/en/grammar/gx-dont-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "don’t / doesn’t"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-dont-3",
+      "english": "I don’t know.",
+      "indonesian": "Saya tidak tahu.",
+      "chunks": [
+        {
+          "t": "I ",
+          "w": "w-i"
+        },
+        {
+          "t": "don’t "
+        },
+        {
+          "t": "know.",
+          "w": "w-know"
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "don’t",
+        "after": " know.",
+        "options": [
+          "don’t",
+          "not",
+          "am not"
+        ],
+        "why": "know adalah kata kerja, jadi don’t. I not know. dan I’m not know. salah."
+      },
+      "audio": "audio/en/grammar/gx-dont-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "don’t / doesn’t"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-dont-4",
+      "english": "My sister doesn’t live here.",
+      "indonesian": "Kakak perempuan saya tidak tinggal di sini.",
+      "chunks": [
+        {
+          "t": "My sister ",
+          "w": "w-sister"
+        },
+        {
+          "t": "doesn’t live ",
+          "w": "w-live"
+        },
+        {
+          "t": "here.",
+          "w": "w-here"
+        }
+      ],
+      "gap": {
+        "before": "My sister doesn’t ",
+        "answer": "live",
+        "after": " here.",
+        "options": [
+          "live",
+          "lives",
+          "living"
+        ],
+        "why": "Setelah doesn’t, kata kerjanya tanpa -s: doesn’t live."
+      },
+      "audio": "audio/en/grammar/gx-dont-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "don’t / doesn’t"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

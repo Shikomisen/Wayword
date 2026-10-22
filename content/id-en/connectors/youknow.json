@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "con-youknow",
+  "connector": "you know",
+  "gloss": "itu lho, …kan",
+  "title": "you know — itu lho, …kan",
+  "pattern": "..., you know, ...",
+  "explanation": "you know mirip “itu lho” atau “…kan”. Dipakai untuk memastikan hal yang juga diketahui lawan bicara, atau sebagai pengisi saat kamu mencari kata. You know what? (Eh, tahu enggak?) adalah ungkapan tetap untuk membuka topik.",
+  "natural": "Sebagai pengisi saat kata tidak keluar: It's, you know, a bit too tight. (Apa ya, agak kesempitan.)",
+  "stiff": "Kalau terlalu sering memakai you know, kamu bisa terdengar kekanak-kanakan. Kurangi saat berbicara dengan orang yang lebih tua atau atasan.",
+  "examples": [
+    {
+      "id": "cx-youknow-1",
+      "english": "You know, the dairy on the corner.",
+      "indonesian": "Itu lho, toko kecil di pojok.",
+      "chunks": [
+        {
+          "t": "You know, "
+        },
+        {
+          "t": "the dairy ",
+          "w": "w-dairy-shop"
+        },
+        {
+          "t": "on the corner."
+        }
+      ],
+      "gap": {
+        "before": "You know, the dairy ",
+        "answer": "on",
+        "after": " the corner.",
+        "options": [
+          "on",
+          "in",
+          "at"
+        ],
+        "why": "“Di pojok (jalan)” adalah on the corner."
+      },
+      "audio": "audio/en/connectors/cx-youknow-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "you know"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-youknow-2",
+      "english": "It's, you know, a bit too tight.",
+      "indonesian": "Apa ya, agak kesempitan.",
+      "chunks": [
+        {
+          "t": "It's, "
+        },
+        {
+          "t": "you know, "
+        },
+        {
+          "t": "a bit too tight.",
+          "w": "w-tight"
+        }
+      ],
+      "gap": {
+        "before": "It's, you ",
+        "answer": "know",
+        "after": ", a bit too tight.",
+        "options": [
+          "know",
+          "see",
+          "mean"
+        ],
+        "why": "Untuk mengisi saat mencari kata, pakai you know."
+      },
+      "audio": "audio/en/connectors/cx-youknow-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "you know"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-youknow-3",
+      "english": "You know what? I'll take both.",
+      "indonesian": "Eh, saya ambil dua-duanya saja, deh.",
+      "chunks": [
+        {
+          "t": "You know what? "
+        },
+        {
+          "t": "I'll take ",
+          "w": "w-take"
+        },
+        {
+          "t": "both."
+        }
+      ],
+      "gap": {
+        "before": "You know ",
+        "answer": "what",
+        "after": "? I'll take both.",
+        "options": [
+          "what",
+          "that",
+          "it"
+        ],
+        "why": "You know what? adalah ungkapan tetap untuk membuka topik, seperti “Eh, tahu enggak?”."
+      },
+      "audio": "audio/en/connectors/cx-youknow-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "you know"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-youknow-4",
+      "english": "We should get some kai, you know?",
+      "indonesian": "Kita sebaiknya makan dulu, kan?",
+      "chunks": [
+        {
+          "t": "We should get "
+        },
+        {
+          "t": "some kai, ",
+          "w": "w-kai"
+        },
+        {
+          "t": "you know?"
+        }
+      ],
+      "gap": {
+        "before": "We should get some kai, ",
+        "answer": "you know",
+        "after": "?",
+        "options": [
+          "you know",
+          "you see",
+          "you think"
+        ],
+        "why": "You know? di akhir kalimat meminta persetujuan, seperti “…, kan?”."
+      },
+      "audio": "audio/en/connectors/cx-youknow-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "you know"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-travel",
+  "title": "Perjalanan & wisata",
+  "description": "Penerbangan, boarding pass, penginapan, oleh-oleh. Kata-kata supaya perjalananmu lancar.",
+  "items": [
+    {
+      "id": "w-sightseeing",
+      "english": "sightseeing",
+      "indonesian": "jalan-jalan, wisata",
+      "pos": "noun",
+      "registerNotes": "go sightseeing (jalan-jalan ke tempat wisata)",
+      "audio": "audio/en/words/w-sightseeing.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tourist",
+      "english": "tourist",
+      "indonesian": "turis, wisatawan",
+      "pos": "noun",
+      "audio": "audio/en/words/w-tourist.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-luggage",
+      "english": "luggage",
+      "indonesian": "koper, barang bawaan",
+      "pos": "noun",
+      "pitfallNote": "luggage tidak bisa dihitung. Bukan luggages: bilang two bags atau a piece of luggage.",
+      "audio": "audio/en/words/w-luggage.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-backpack",
+      "english": "backpack",
+      "indonesian": "ransel",
+      "pos": "noun",
+      "audio": "audio/en/words/w-backpack.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-passport",
+      "english": "passport",
+      "indonesian": "paspor",
+      "pos": "noun",
+      "audio": "audio/en/words/w-passport.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-flight",
+      "english": "flight",
+      "indonesian": "penerbangan",
+      "pos": "noun",
+      "registerNotes": "My flight is at six. (Pesawatku jam enam.)",
+      "audio": "audio/en/words/w-flight.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-delayed",
+      "english": "delayed",
+      "indonesian": "tertunda, delay",
+      "pos": "adjective",
+      "registerNotes": "The flight is delayed. (Penerbangannya ditunda.)",
+      "audio": "audio/en/words/w-delayed.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Bukan The flight is delay. Pakai -ed: delayed. Tanpa -ed, delay adalah kata benda: a two-hour delay."
+    },
+    {
+      "id": "w-departure",
+      "english": "departure",
+      "indonesian": "keberangkatan",
+      "pos": "noun",
+      "registerNotes": "Di bandara, Departures artinya area dan papan keberangkatan.",
+      "audio": "audio/en/words/w-departure.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-arrival",
+      "english": "arrival",
+      "indonesian": "kedatangan",
+      "pos": "noun",
+      "registerNotes": "Di bandara, Arrivals artinya area dan papan kedatangan.",
+      "audio": "audio/en/words/w-arrival.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-boarding-pass",
+      "english": "boarding pass",
+      "indonesian": "boarding pass, kartu naik pesawat",
+      "pos": "noun",
+      "audio": "audio/en/words/w-boarding-pass.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-return-ticket",
+      "english": "return ticket",
+      "indonesian": "tiket pulang-pergi",
+      "pos": "noun",
+      "registerNotes": "Artinya pulang-pergi, bukan tiket pulang saja. Di Selandia Baru dan Inggris return, di Amerika round-trip.",
+      "audio": "audio/en/words/w-return-ticket.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-one-way",
+      "english": "one-way",
+      "indonesian": "sekali jalan",
+      "pos": "adjective",
+      "registerNotes": "a one-way ticket (tiket sekali jalan)",
+      "audio": "audio/en/words/w-one-way.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-accommodation",
+      "english": "accommodation",
+      "indonesian": "penginapan, akomodasi",
+      "pos": "noun",
+      "registerNotes": "Have you booked accommodation? (Sudah pesan penginapan?)",
+      "audio": "audio/en/words/w-accommodation.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hostel",
+      "english": "hostel",
+      "indonesian": "hostel (penginapan murah, kamar bersama)",
+      "pos": "noun",
+      "audio": "audio/en/words/w-hostel.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-check-in",
+      "english": "check in",
+      "indonesian": "check-in",
+      "pos": "verb",
+      "registerNotes": "Can I check in early? (Boleh check-in lebih awal?)",
+      "audio": "audio/en/words/w-check-in.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-view",
+      "english": "view",
+      "indonesian": "pemandangan",
+      "pos": "noun",
+      "registerNotes": "a room with a view (kamar dengan pemandangan bagus)",
+      "audio": "audio/en/words/w-view.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-beach",
+      "english": "beach",
+      "indonesian": "pantai",
+      "pos": "noun",
+      "audio": "audio/en/words/w-beach.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "Panjangkan bunyi ea: biiich. Kalau terlalu pendek, terdengar seperti kata makian."
+    },
+    {
+      "id": "w-lake",
+      "english": "lake",
+      "indonesian": "danau",
+      "pos": "noun",
+      "audio": "audio/en/words/w-lake.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mountain",
+      "english": "mountain",
+      "indonesian": "gunung",
+      "pos": "noun",
+      "audio": "audio/en/words/w-mountain.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-souvenir",
+      "english": "souvenir",
+      "indonesian": "suvenir, kenang-kenangan",
+      "pos": "noun",
+      "pitfallNote": "souvenir juga dipakai untuk kenang-kenangan bagi dirimu sendiri. Oleh-oleh untuk orang lain bisa disebut a gift atau a little something.",
+      "audio": "audio/en/words/w-souvenir.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tour",
+      "english": "tour",
+      "indonesian": "tur",
+      "pos": "noun",
+      "registerNotes": "a day tour (tur sehari)",
+      "audio": "audio/en/words/w-tour.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-rental-car",
+      "english": "rental car",
+      "indonesian": "mobil sewaan",
+      "pos": "noun",
+      "registerNotes": "Di Inggris juga disebut hire car. Di Selandia Baru, mobil berjalan di jalur kiri, sama seperti di Indonesia.",
+      "audio": "audio/en/words/w-rental-car.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-insurance",
+      "english": "insurance",
+      "indonesian": "asuransi",
+      "pos": "noun",
+      "registerNotes": "travel insurance (asuransi perjalanan)",
+      "audio": "audio/en/words/w-insurance.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-local",
+      "english": "local",
+      "indonesian": "lokal; penduduk setempat",
+      "pos": "adjective",
+      "registerNotes": "Ask a local. (Coba tanya orang setempat.)",
+      "audio": "audio/en/words/w-local.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-recommend",
+      "english": "recommend",
+      "indonesian": "merekomendasikan, menyarankan",
+      "pos": "verb",
+      "registerNotes": "What do you recommend? (Apa rekomendasi Anda?)",
+      "pitfallNote": "Bukan recommend me …. Bilang Can you recommend a good place?",
+      "audio": "audio/en/words/w-recommend.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-explore",
+      "english": "explore",
+      "indonesian": "menjelajah, berkeliling",
+      "pos": "verb",
+      "audio": "audio/en/words/w-explore.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

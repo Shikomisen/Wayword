@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-if-will",
+  "connector": "If …, I’ll …",
+  "gloss": "kalau … (yang mungkin terjadi)",
+  "title": "If it rains, … — kalau … (hal yang mungkin terjadi)",
+  "pattern": "If ＋ present tense, will ＋ kata kerja dasar",
+  "explanation": "Untuk “kalau …” tentang hal yang benar-benar mungkin terjadi, bagian setelah if memakai present tense, dan akibatnya memakai will: If it rains, we’ll stay home. (Kalau hujan, kita di rumah saja.) Walaupun yang dibicarakan masa depan, setelah if tetap present tense, termasuk -s untuk he, she, it: If it rains.",
+  "natural": "Saat membuat rencana: If you’re free, let’s have lunch. (Kalau kamu senggang, yuk makan siang.)",
+  "stiff": "Memasukkan will setelah if itu salah: bukan If it will rain …, tapi If it rains …",
+  "examples": [
+    {
+      "id": "gx-if-will-1",
+      "english": "If it rains, we’ll stay home.",
+      "indonesian": "Kalau hujan, kita di rumah saja.",
+      "chunks": [
+        {
+          "t": "If it rains, ",
+          "w": "w-rain"
+        },
+        {
+          "t": "we’ll stay home."
+        }
+      ],
+      "gap": {
+        "before": "If it ",
+        "answer": "rains",
+        "after": ", we’ll stay home.",
+        "options": [
+          "rains",
+          "will rain",
+          "rained"
+        ],
+        "why": "Setelah if pakai present tense, walaupun membicarakan masa depan (rains, dengan -s)."
+      },
+      "audio": "audio/en/grammar/gx-if-will-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "If …, I’ll …"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-if-will-2",
+      "english": "If you’re free, let’s have lunch.",
+      "indonesian": "Kalau kamu senggang, yuk makan siang.",
+      "chunks": [
+        {
+          "t": "If you’re free, "
+        },
+        {
+          "t": "let’s have lunch.",
+          "w": "w-have"
+        }
+      ],
+      "gap": {
+        "before": "If you’re free, ",
+        "answer": "let’s",
+        "after": " have lunch.",
+        "options": [
+          "let’s",
+          "let",
+          "will"
+        ],
+        "why": "Ajakan memakai let’s + kata kerja dasar."
+      },
+      "audio": "audio/en/grammar/gx-if-will-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "If …, I’ll …"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-if-will-3",
+      "english": "I’ll call you if I get lost.",
+      "indonesian": "Nanti aku telepon kalau aku tersesat.",
+      "chunks": [
+        {
+          "t": "I’ll call you ",
+          "w": "w-call"
+        },
+        {
+          "t": "if I get lost.",
+          "w": "w-lost"
+        }
+      ],
+      "gap": {
+        "before": "I’ll call you if I ",
+        "answer": "get",
+        "after": " lost.",
+        "options": [
+          "get",
+          "will get",
+          "got"
+        ],
+        "why": "Setelah if pakai present tense (get, bukan will get)."
+      },
+      "audio": "audio/en/grammar/gx-if-will-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "If …, I’ll …"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-if-will-4",
+      "english": "If you don’t hurry, you’ll miss the train.",
+      "indonesian": "Kalau tidak cepat-cepat, nanti kamu ketinggalan kereta.",
+      "chunks": [
+        {
+          "t": "If you don’t hurry, "
+        },
+        {
+          "t": "you’ll miss ",
+          "w": "w-miss"
+        },
+        {
+          "t": "the train."
+        }
+      ],
+      "gap": {
+        "before": "If you don’t hurry, ",
+        "answer": "you’ll",
+        "after": " miss the train.",
+        "options": [
+          "you’ll",
+          "you",
+          "you would"
+        ],
+        "why": "Bagian akibatnya memakai will (you’ll)."
+      },
+      "audio": "audio/en/grammar/gx-if-will-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "If …, I’ll …"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

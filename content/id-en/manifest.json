@@ -1,0 +1,1316 @@
+{
+  "schemaVersion": 1,
+  "language": "en",
+  "speaker": "id",
+  "register": "polite-neutral",
+  "generatedFor": "Wayword — English for Indonesian speakers",
+  "notes": "English for Indonesian speakers, derived from the English course for Japanese speakers (content/en/): the same New Zealand English items, ids, exercises and clips, with every meaning, note, explanation and piece of feedback rewritten in Indonesian for an Indonesian learner. The katakana-English deck is replaced by words-tricky (English words Indonesian speakers often get wrong), and the sound pairs by ones that are hard for Indonesian speakers. Text the learner studies is `english`; `indonesian` is the gloss.",
+  "fields": {
+    "target": "english",
+    "meaning": "indonesian"
+  },
+  "noteFields": [
+    {
+      "field": "registerNotes",
+      "label": "Cara pakai"
+    },
+    {
+      "field": "pitfallNote",
+      "label": "Kesalahan umum",
+      "style": "pitfall"
+    }
+  ],
+  "voice": {
+    "engine": "google",
+    "azure": {
+      "default": "en-NZ-MollyNeural",
+      "speakers": "en-NZ-MitchellNeural"
+    }
+  },
+  "words": {
+    "pos": [
+      "noun",
+      "verb",
+      "adjective",
+      "adverb",
+      "phrase",
+      "pronoun",
+      "question",
+      "interjection"
+    ],
+    "forms": [],
+    "verbForms": []
+  },
+  "copy": {
+    "placementLede": "Dengan {n} kartu, kita cek 10 kategori sekilas. Untuk setiap kartu, cukup pilih apakah kamu sudah tahu atau belum. Tidak perlu mengetik dan tidak ada nilai — ini hanya untuk menentukan dari mana setiap kartu mulai diulang.",
+    "placementAside": "Banyak dari kita belajar bahasa Inggris bertahun-tahun di sekolah: bisa membaca dan paham, tapi saat harus bicara langsung, kata-katanya tidak keluar. Dalam percakapan nyata, yang dibutuhkan adalah kalimat pendek yang bisa langsung diucapkan. Pemeriksaan ini untuk menemukan celah itu, bukan ujian.",
+    "lessonsTitle": "Pola & tata bahasa",
+    "lessonsTab": "Pola",
+    "lessonsLede": "Dasar kalimat bahasa Inggris (to be, present tense, past tense, dan lainnya), pola untuk memesan dan meminta, cara bicara yang sopan, dan kata yang menghubungkan kalimat. Baca penjelasannya, lalu berlatih dengan contoh kalimat. Ada juga latihan mengucapkannya dengan suara.",
+    "lessonsIcon": "🧩"
+  },
+  "levels": [
+    {
+      "id": "first-steps",
+      "icon": "🌱",
+      "title": "Langkah pertama",
+      "description": "Untuk yang baru mulai belajar bahasa Inggris. Kata untuk orang, benda, waktu, dan cuaca, salam dan angka, serta dasar kalimat bahasa Inggris: to be, a dan the, present tense dan past tense, can, in/on/at, dan lainnya."
+    },
+    {
+      "id": "basic",
+      "icon": "🌿",
+      "title": "Dasar",
+      "description": "Bahasa Inggris supaya lancar sebagai pelanggan. Kata dan ungkapan di kafe, toko, transportasi, dan hotel, cara meminta dan menolak dengan sopan, kata penghubung antarkalimat, serta latihan mendengar."
+    },
+    {
+      "id": "intermediate",
+      "icon": "🌳",
+      "title": "Menengah",
+      "description": "Percakapan yang lebih dalam. Bercerita tentang pengalaman, rencana, dan pendapatmu, memberi tanggapan, diundang ke rumah teman, menjelaskan masalah di dokter atau hotel. Tata bahasa seperti present perfect, will dan going to, if, dan kalimat pasif, serta latihan mendengar dengan kecepatan bicara sehari-hari.",
+      "placement": false
+    }
+  ],
+  "groups": [
+    {
+      "id": "basics",
+      "title": "Ungkapan dasar"
+    },
+    {
+      "id": "food",
+      "title": "Kafe & restoran"
+    },
+    {
+      "id": "shopping",
+      "title": "Belanja"
+    },
+    {
+      "id": "town",
+      "title": "Di kota"
+    },
+    {
+      "id": "travel",
+      "title": "Bandara & hotel"
+    },
+    {
+      "id": "help",
+      "title": "Saat darurat"
+    },
+    {
+      "id": "talk",
+      "title": "Mengembangkan obrolan"
+    },
+    {
+      "id": "life",
+      "title": "Kehidupan & saat darurat"
+    }
+  ],
+  "categories": [
+    {
+      "id": "greetings",
+      "order": 1,
+      "file": "content/id-en/greetings.json",
+      "title": "Salam & ungkapan dasar",
+      "icon": "🙏",
+      "group": "basics",
+      "level": "first-steps",
+      "step": 1,
+      "starter": true
+    },
+    {
+      "id": "numbers",
+      "order": 2,
+      "file": "content/id-en/numbers.json",
+      "title": "Angka, waktu & uang",
+      "icon": "🔢",
+      "group": "basics",
+      "level": "first-steps",
+      "step": 2,
+      "starter": true
+    },
+    {
+      "id": "airport",
+      "order": 3,
+      "file": "content/id-en/airport.json",
+      "title": "Bandara & imigrasi",
+      "icon": "✈️",
+      "group": "travel",
+      "level": "basic",
+      "step": 14
+    },
+    {
+      "id": "transport",
+      "order": 4,
+      "file": "content/id-en/transport.json",
+      "title": "Kereta, bus & taksi",
+      "icon": "🚆",
+      "group": "town",
+      "level": "basic",
+      "step": 9
+    },
+    {
+      "id": "directions",
+      "order": 5,
+      "file": "content/id-en/directions.json",
+      "title": "Bertanya arah",
+      "icon": "🧭",
+      "group": "town",
+      "level": "basic",
+      "step": 10
+    },
+    {
+      "id": "hotel",
+      "order": 6,
+      "file": "content/id-en/hotel.json",
+      "title": "Hotel",
+      "icon": "🏨",
+      "group": "travel",
+      "level": "basic",
+      "step": 13
+    },
+    {
+      "id": "restaurant",
+      "order": 7,
+      "file": "content/id-en/restaurant.json",
+      "title": "Kafe & restoran",
+      "icon": "🍽️",
+      "group": "food",
+      "level": "basic",
+      "step": 1,
+      "starter": true
+    },
+    {
+      "id": "shopping",
+      "order": 8,
+      "file": "content/id-en/shopping.json",
+      "title": "Belanja & pembayaran",
+      "icon": "🛍️",
+      "group": "shopping",
+      "level": "basic",
+      "step": 2,
+      "starter": true
+    },
+    {
+      "id": "emergency",
+      "order": 9,
+      "file": "content/id-en/emergency.json",
+      "title": "Darurat & sakit",
+      "icon": "🏥",
+      "group": "help",
+      "level": "basic",
+      "step": 15
+    },
+    {
+      "id": "smalltalk",
+      "order": 10,
+      "file": "content/id-en/smalltalk.json",
+      "title": "Obrolan ringan",
+      "icon": "💬",
+      "group": "basics",
+      "level": "basic",
+      "step": 8
+    },
+    {
+      "id": "reactions",
+      "order": 11,
+      "file": "content/id-en/reactions.json",
+      "title": "Tanggapan & reaksi",
+      "icon": "👂",
+      "group": "talk",
+      "level": "intermediate",
+      "step": 2,
+      "starter": true
+    },
+    {
+      "id": "plans",
+      "order": 12,
+      "file": "content/id-en/plans.json",
+      "title": "Membuat rencana & mengajak",
+      "icon": "📅",
+      "group": "talk",
+      "level": "intermediate",
+      "step": 6
+    },
+    {
+      "id": "opinions",
+      "order": 13,
+      "file": "content/id-en/opinions.json",
+      "title": "Berpendapat, setuju & tidak setuju",
+      "icon": "💬",
+      "group": "talk",
+      "level": "intermediate",
+      "step": 8
+    },
+    {
+      "id": "friends",
+      "order": 14,
+      "file": "content/id-en/friends.json",
+      "title": "Teman & pergaulan",
+      "icon": "🍻",
+      "group": "life",
+      "level": "intermediate",
+      "step": 10
+    },
+    {
+      "id": "doctor",
+      "order": 15,
+      "file": "content/id-en/doctor.json",
+      "title": "Dokter & apotek",
+      "icon": "🩺",
+      "group": "life",
+      "level": "intermediate",
+      "step": 12
+    },
+    {
+      "id": "problems",
+      "order": 16,
+      "file": "content/id-en/problems.json",
+      "title": "Masalah & keluhan",
+      "icon": "🛠️",
+      "group": "life",
+      "level": "intermediate",
+      "step": 16
+    }
+  ],
+  "decks": [
+    {
+      "id": "words-cafe",
+      "kind": "words",
+      "order": 1,
+      "file": "content/id-en/words/cafe.json",
+      "title": "Kafe & makanan",
+      "icon": "☕",
+      "level": "basic",
+      "step": 3,
+      "starter": true
+    },
+    {
+      "id": "words-clothes",
+      "kind": "words",
+      "order": 2,
+      "file": "content/id-en/words/clothes.json",
+      "title": "Pakaian & ukuran",
+      "icon": "👕",
+      "level": "basic",
+      "step": 6
+    },
+    {
+      "id": "words-shopping",
+      "kind": "words",
+      "order": 3,
+      "file": "content/id-en/words/shopping.json",
+      "title": "Toko & kasir",
+      "icon": "🧾",
+      "level": "basic",
+      "step": 4,
+      "starter": true
+    },
+    {
+      "id": "words-verbs",
+      "kind": "words",
+      "order": 4,
+      "file": "content/id-en/words/verbs.json",
+      "title": "Kata kerja sehari-hari",
+      "icon": "🏃",
+      "level": "basic",
+      "step": 5,
+      "starter": true
+    },
+    {
+      "id": "words-phrasal",
+      "kind": "words",
+      "order": 5,
+      "file": "content/id-en/words/phrasal.json",
+      "title": "Phrasal verb",
+      "icon": "🧷",
+      "level": "basic",
+      "step": 12
+    },
+    {
+      "id": "words-money",
+      "kind": "words",
+      "order": 6,
+      "file": "content/id-en/words/money.json",
+      "title": "Kata tentang uang",
+      "icon": "💰",
+      "level": "basic",
+      "step": 11
+    },
+    {
+      "id": "words-nz",
+      "kind": "words",
+      "order": 8,
+      "file": "content/id-en/words/nz.json",
+      "title": "Kata khas Selandia Baru",
+      "icon": "🥝",
+      "level": "basic",
+      "step": 17
+    },
+    {
+      "id": "words-first-people",
+      "kind": "words",
+      "order": 9,
+      "file": "content/id-en/words/first-people.json",
+      "title": "Orang & keluarga",
+      "icon": "👪",
+      "level": "first-steps",
+      "step": 3,
+      "starter": true
+    },
+    {
+      "id": "words-first-verbs",
+      "kind": "words",
+      "order": 10,
+      "file": "content/id-en/words/first-verbs.json",
+      "title": "Kata kerja pertama",
+      "icon": "🏃",
+      "level": "first-steps",
+      "step": 4,
+      "starter": true
+    },
+    {
+      "id": "words-first-little",
+      "kind": "words",
+      "order": 11,
+      "file": "content/id-en/words/first-little.json",
+      "title": "Kata kecil",
+      "icon": "🧩",
+      "level": "first-steps",
+      "step": 5
+    },
+    {
+      "id": "words-first-things",
+      "kind": "words",
+      "order": 12,
+      "file": "content/id-en/words/first-things.json",
+      "title": "Benda sehari-hari",
+      "icon": "🎒",
+      "level": "first-steps",
+      "step": 6
+    },
+    {
+      "id": "words-first-time",
+      "kind": "words",
+      "order": 13,
+      "file": "content/id-en/words/first-time.json",
+      "title": "Waktu, hari, dan cuaca",
+      "icon": "📅",
+      "level": "first-steps",
+      "step": 7
+    },
+    {
+      "id": "words-first-describe",
+      "kind": "words",
+      "order": 14,
+      "file": "content/id-en/words/first-describe.json",
+      "title": "Kata sifat & warna",
+      "icon": "🎨",
+      "level": "first-steps",
+      "step": 8
+    },
+    {
+      "id": "words-i-feelings",
+      "kind": "words",
+      "order": 15,
+      "file": "content/id-en/words/i-feelings.json",
+      "title": "Perasaan & reaksi",
+      "icon": "😮",
+      "level": "intermediate",
+      "step": 1,
+      "starter": true
+    },
+    {
+      "id": "words-i-people",
+      "kind": "words",
+      "order": 16,
+      "file": "content/id-en/words/i-people.json",
+      "title": "Sifat orang",
+      "icon": "🙂",
+      "level": "intermediate",
+      "step": 5
+    },
+    {
+      "id": "words-i-social",
+      "kind": "words",
+      "order": 17,
+      "file": "content/id-en/words/i-social.json",
+      "title": "Pergaulan & hubungan",
+      "icon": "🥂",
+      "level": "intermediate",
+      "step": 3,
+      "starter": true
+    },
+    {
+      "id": "words-i-opinions",
+      "kind": "words",
+      "order": 18,
+      "file": "content/id-en/words/i-opinions.json",
+      "title": "Pendapat & pikiran",
+      "icon": "💭",
+      "level": "intermediate",
+      "step": 7
+    },
+    {
+      "id": "words-i-travel",
+      "kind": "words",
+      "order": 19,
+      "file": "content/id-en/words/i-travel.json",
+      "title": "Perjalanan & wisata",
+      "icon": "🧳",
+      "level": "intermediate",
+      "step": 9
+    },
+    {
+      "id": "words-i-health",
+      "kind": "words",
+      "order": 20,
+      "file": "content/id-en/words/i-health.json",
+      "title": "Tubuh & kesehatan",
+      "icon": "🩺",
+      "level": "intermediate",
+      "step": 11
+    },
+    {
+      "id": "words-i-work",
+      "kind": "words",
+      "order": 21,
+      "file": "content/id-en/words/i-work.json",
+      "title": "Pekerjaan",
+      "icon": "💼",
+      "level": "intermediate",
+      "step": 13
+    },
+    {
+      "id": "words-i-home",
+      "kind": "words",
+      "order": 22,
+      "file": "content/id-en/words/i-home.json",
+      "title": "Rumah & kehidupan sehari-hari",
+      "icon": "🏡",
+      "level": "intermediate",
+      "step": 15
+    },
+    {
+      "id": "words-i-problems",
+      "kind": "words",
+      "order": 23,
+      "file": "content/id-en/words/i-problems.json",
+      "title": "Masalah & kesulitan",
+      "icon": "🛠️",
+      "level": "intermediate",
+      "step": 17
+    },
+    {
+      "id": "words-i-phrasal",
+      "kind": "words",
+      "order": 24,
+      "file": "content/id-en/words/i-phrasal.json",
+      "title": "Phrasal verb (menengah)",
+      "icon": "🔗",
+      "level": "intermediate",
+      "step": 18
+    },
+    {
+      "id": "sentences-everyday",
+      "kind": "sentences",
+      "order": 9,
+      "file": "content/id-en/sentences/everyday.json",
+      "title": "Kalimat sehari-hari",
+      "icon": "💬",
+      "level": "basic",
+      "step": 7
+    },
+    {
+      "id": "sentences-i-me",
+      "kind": "sentences",
+      "order": 10,
+      "file": "content/id-en/sentences/i-me.json",
+      "title": "Bercerita tentang diri sendiri",
+      "icon": "🙋",
+      "level": "intermediate",
+      "step": 4
+    },
+    {
+      "id": "sentences-i-out",
+      "kind": "sentences",
+      "order": 11,
+      "file": "content/id-en/sentences/i-out.json",
+      "title": "Urusan di luar & saat ada masalah",
+      "icon": "🚶",
+      "level": "intermediate",
+      "step": 14
+    },
+    {
+      "id": "words-tricky",
+      "kind": "words",
+      "order": 7,
+      "file": "content/id-en/words/tricky.json",
+      "title": "Kata yang sering keliru",
+      "icon": "🔤",
+      "level": "basic",
+      "step": 16
+    }
+  ],
+  "drills": [
+    "fill",
+    "order",
+    "combine",
+    "say"
+  ],
+  "lessonGroups": [
+    {
+      "id": "first-sentence",
+      "title": "Dasar kalimat",
+      "description": "to be, this dan that, a dan the, bentuk jamak, my dan your, there is, kata depan untuk tempat dan waktu. Kerangka kalimat bahasa Inggris."
+    },
+    {
+      "id": "first-verbs",
+      "title": "Dasar kata kerja",
+      "description": "Present tense, bentuk negatif, can, -ing, past tense, bentuk pertanyaan. Cara memakai kata kerja untuk bercerita tentang hal sehari-hari."
+    },
+    {
+      "id": "ask",
+      "title": "Meminta",
+      "description": "Pola untuk memesan dan meminta sesuatu. Ganti bagian ○○, dan kamu bisa memakainya di banyak situasi."
+    },
+    {
+      "id": "question",
+      "title": "Bertanya",
+      "description": "Pola untuk bertanya: ada? apakah ini…? di mana? berapa harganya?"
+    },
+    {
+      "id": "polite",
+      "title": "Meminta & menolak dengan sopan",
+      "description": "Meminta orang melakukan sesuatu, minta izin, menolak dengan halus. Cara membuat kalimat yang sopan ala bahasa Inggris."
+    },
+    {
+      "id": "link",
+      "title": "Kata penghubung",
+      "description": "Kata seperti so, but, dan because yang menghubungkan kalimat. Dengan kata-kata ini, kamu juga bisa menyampaikan alasan dan perasaan."
+    },
+    {
+      "id": "order",
+      "title": "Urutan kata & bentuk tanya",
+      "description": "Bagian yang berbeda dari bahasa Indonesia. Urutan kata ala bahasa Inggris, serta bentuk pertanyaan dan jawabannya."
+    },
+    {
+      "id": "tenses",
+      "title": "Tenses: pengalaman, rencana, masa lalu",
+      "description": "have been, will dan going to, used to. Bahasa Indonesia cukup memakai sudah, akan, atau dulu; bahasa Inggris mengubah bentuk kata kerjanya."
+    },
+    {
+      "id": "modals",
+      "title": "Modal: saran, kewajiban, kemungkinan",
+      "description": "should, have to, might. 'Sebaiknya…', 'harus…', 'mungkin…'."
+    },
+    {
+      "id": "conditionals",
+      "title": "Kalau & seandainya",
+      "description": "if dan wish. 'Kalau' untuk hal yang mungkin terjadi, dan 'seandainya' untuk hal yang berbeda dari kenyataan."
+    },
+    {
+      "id": "structures",
+      "title": "Menyusun kalimat",
+      "description": "Membandingkan, terlalu…, -ing dan to, menjelaskan kata benda, kalimat pasif, menyuruh dan membolehkan."
+    },
+    {
+      "id": "conversation",
+      "title": "Pola percakapan",
+      "description": "Bertanya dengan sopan, menyampaikan perkataan orang, memberi usul, bilang 'aku juga'."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "gr-be",
+      "order": 1,
+      "file": "content/id-en/grammar/be.json",
+      "title": "am, is, are — kata kerja to be",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-be-not",
+      "order": 2,
+      "file": "content/id-en/grammar/be-not.json",
+      "title": "not, Are you…? — negatif dan pertanyaan dengan to be",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-this-that",
+      "order": 3,
+      "file": "content/id-en/grammar/this-that.json",
+      "title": "this, that, these, those — ini, itu",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-articles",
+      "order": 4,
+      "file": "content/id-en/grammar/articles.json",
+      "title": "a, an, the — kata kecil sebelum kata benda",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-plurals",
+      "order": 5,
+      "file": "content/id-en/grammar/plurals.json",
+      "title": "-s — kata benda jamak",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-possessives",
+      "order": 6,
+      "file": "content/id-en/grammar/possessives.json",
+      "title": "my, your, his, her — kata ganti milik",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-there-is",
+      "order": 7,
+      "file": "content/id-en/grammar/there-is.json",
+      "title": "there is, there are — ada",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-in-on-at-place",
+      "order": 8,
+      "file": "content/id-en/grammar/in-on-at-place.json",
+      "title": "in, on, at (tempat) — di dalam, di atas, di",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-in-on-at-time",
+      "order": 9,
+      "file": "content/id-en/grammar/in-on-at-time.json",
+      "title": "at, on, in (waktu) — pada jam, hari, bulan",
+      "group": "first-sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-present",
+      "order": 10,
+      "file": "content/id-en/grammar/present.json",
+      "title": "I work, she works — simple present",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-dont",
+      "order": 11,
+      "file": "content/id-en/grammar/dont.json",
+      "title": "don’t, doesn’t — tidak …",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-can",
+      "order": 12,
+      "file": "content/id-en/grammar/can.json",
+      "title": "can — bisa, boleh",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-continuous",
+      "order": 13,
+      "file": "content/id-en/grammar/continuous.json",
+      "title": "be ＋ -ing — sedang …",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-past-ed",
+      "order": 14,
+      "file": "content/id-en/grammar/past-ed.json",
+      "title": "-ed — past tense",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-past-irregular",
+      "order": 15,
+      "file": "content/id-en/grammar/past-irregular.json",
+      "title": "went, ate, saw — past tense yang berubah bentuk",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-wh",
+      "order": 16,
+      "file": "content/id-en/grammar/wh.json",
+      "title": "what, where, when, who, why, how — apa, di mana, kapan…",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-want-to",
+      "order": 17,
+      "file": "content/id-en/grammar/want-to.json",
+      "title": "want, want to — mau, ingin",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-imperatives",
+      "order": 18,
+      "file": "content/id-en/grammar/imperatives.json",
+      "title": "Please…, Don’t… — silakan, tolong, jangan",
+      "group": "first-verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "pat-like",
+      "order": 19,
+      "file": "content/id-en/patterns/like.json",
+      "title": "I'd like… — Minta… / Saya mau… (dasar memesan)",
+      "group": "ask",
+      "level": "basic"
+    },
+    {
+      "id": "pat-have",
+      "order": 20,
+      "file": "content/id-en/patterns/have.json",
+      "title": "Can I have…? — Boleh minta…?",
+      "group": "ask",
+      "level": "basic"
+    },
+    {
+      "id": "pat-get",
+      "order": 21,
+      "file": "content/id-en/patterns/get.json",
+      "title": "Could I get…? — Boleh saya minta…? (sopan)",
+      "group": "ask",
+      "level": "basic"
+    },
+    {
+      "id": "pat-doyouhave",
+      "order": 22,
+      "file": "content/id-en/patterns/doyouhave.json",
+      "title": "Do you have…? — Ada…?",
+      "group": "question",
+      "level": "basic"
+    },
+    {
+      "id": "pat-isthis",
+      "order": 23,
+      "file": "content/id-en/patterns/isthis.json",
+      "title": "Is this…? — Apakah ini…?",
+      "group": "question",
+      "level": "basic"
+    },
+    {
+      "id": "pat-where",
+      "order": 24,
+      "file": "content/id-en/patterns/where.json",
+      "title": "Where's…? — … di mana?",
+      "group": "question",
+      "level": "basic"
+    },
+    {
+      "id": "pat-howmuch",
+      "order": 25,
+      "file": "content/id-en/patterns/howmuch.json",
+      "title": "How much…? — Berapa harga…?",
+      "group": "question",
+      "level": "basic"
+    },
+    {
+      "id": "con-couldyou",
+      "order": 26,
+      "file": "content/id-en/connectors/couldyou.json",
+      "title": "Could you…? — Bisa tolong…? (minta orang lain melakukan sesuatu)",
+      "group": "polite",
+      "level": "basic"
+    },
+    {
+      "id": "con-wouldyoumind",
+      "order": 27,
+      "file": "content/id-en/connectors/wouldyoumind.json",
+      "title": "Would you mind…? — Kalau tidak keberatan, bisa…? (sangat sopan)",
+      "group": "polite",
+      "level": "basic"
+    },
+    {
+      "id": "con-isitok",
+      "order": 28,
+      "file": "content/id-en/connectors/isitok.json",
+      "title": "Is it OK if I…? — Boleh saya…? (minta izin)",
+      "group": "polite",
+      "level": "basic"
+    },
+    {
+      "id": "con-nothanks",
+      "order": 29,
+      "file": "content/id-en/connectors/nothanks.json",
+      "title": "No thanks… — Menolak dengan halus",
+      "group": "polite",
+      "level": "basic"
+    },
+    {
+      "id": "con-excuseme",
+      "order": 30,
+      "file": "content/id-en/connectors/excuseme.json",
+      "title": "Excuse me / Sorry — Permisi, maaf, atau terima kasih?",
+      "group": "polite",
+      "level": "basic"
+    },
+    {
+      "id": "con-youtoo",
+      "order": 31,
+      "file": "content/id-en/connectors/youtoo.json",
+      "title": "You too! — Membalas salam dan ucapan terima kasih",
+      "group": "polite",
+      "level": "basic"
+    },
+    {
+      "id": "con-so",
+      "order": 32,
+      "file": "content/id-en/connectors/so.json",
+      "title": "so — jadi, makanya",
+      "group": "link",
+      "level": "basic"
+    },
+    {
+      "id": "con-because",
+      "order": 33,
+      "file": "content/id-en/connectors/because.json",
+      "title": "because — karena, soalnya",
+      "group": "link",
+      "level": "basic"
+    },
+    {
+      "id": "con-but",
+      "order": 34,
+      "file": "content/id-en/connectors/but.json",
+      "title": "but / though — tapi, …sih",
+      "group": "link",
+      "level": "basic"
+    },
+    {
+      "id": "con-eventhough",
+      "order": 35,
+      "file": "content/id-en/connectors/eventhough.json",
+      "title": "even though — walaupun, padahal",
+      "group": "link",
+      "level": "basic"
+    },
+    {
+      "id": "con-actually",
+      "order": 36,
+      "file": "content/id-en/connectors/actually.json",
+      "title": "actually — sebenarnya, ternyata",
+      "group": "link",
+      "level": "basic"
+    },
+    {
+      "id": "con-anyway",
+      "order": 37,
+      "file": "content/id-en/connectors/anyway.json",
+      "title": "anyway — pokoknya, ya sudah, tetap saja",
+      "group": "link",
+      "level": "basic"
+    },
+    {
+      "id": "con-bytheway",
+      "order": 38,
+      "file": "content/id-en/connectors/bytheway.json",
+      "title": "by the way — ngomong-ngomong",
+      "group": "link",
+      "level": "basic"
+    },
+    {
+      "id": "con-imean",
+      "order": 39,
+      "file": "content/id-en/connectors/imean.json",
+      "title": "I mean — maksud saya, eh",
+      "group": "link",
+      "level": "basic"
+    },
+    {
+      "id": "con-youknow",
+      "order": 40,
+      "file": "content/id-en/connectors/youknow.json",
+      "title": "you know — itu lho, …kan",
+      "group": "link",
+      "level": "basic"
+    },
+    {
+      "id": "con-abit",
+      "order": 41,
+      "file": "content/id-en/connectors/abit.json",
+      "title": "a bit / kind of — agak, lumayan",
+      "group": "link",
+      "level": "basic"
+    },
+    {
+      "id": "con-unless",
+      "order": 42,
+      "file": "content/id-en/connectors/unless.json",
+      "title": "unless — kecuali kalau, kalau tidak",
+      "group": "link",
+      "level": "basic"
+    },
+    {
+      "id": "con-aslongas",
+      "order": 43,
+      "file": "content/id-en/connectors/aslongas.json",
+      "title": "as long as — asalkan, yang penting",
+      "group": "link",
+      "level": "basic"
+    },
+    {
+      "id": "con-theone",
+      "order": 44,
+      "file": "content/id-en/connectors/theone.json",
+      "title": "the one I… — yang … (keterangan di belakang benda)",
+      "group": "order",
+      "level": "basic"
+    },
+    {
+      "id": "con-do",
+      "order": 45,
+      "file": "content/id-en/connectors/do.json",
+      "title": "Do / Does / Did…? — Bertanya dengan kata kerja",
+      "group": "order",
+      "level": "basic"
+    },
+    {
+      "id": "con-tag",
+      "order": 46,
+      "file": "content/id-en/connectors/tag.json",
+      "title": "…, isn't it? — …, kan? (memastikan)",
+      "group": "order",
+      "level": "basic"
+    },
+    {
+      "id": "con-negative",
+      "order": 47,
+      "file": "content/id-en/connectors/negative.json",
+      "title": "Yes / No — Menjawab pertanyaan negatif",
+      "group": "order",
+      "level": "basic"
+    },
+    {
+      "id": "con-itsto",
+      "order": 48,
+      "file": "content/id-en/connectors/itsto.json",
+      "title": "It's … to … — Susah untuk…, senang bisa… (menilai kegiatan)",
+      "group": "order",
+      "level": "basic"
+    },
+    {
+      "id": "gr-present-perfect",
+      "order": 49,
+      "file": "content/id-en/grammar/present-perfect.json",
+      "title": "Have you ever…? — pernah … (present perfect)",
+      "group": "tenses",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-just-yet",
+      "order": 50,
+      "file": "content/id-en/grammar/just-yet.json",
+      "title": "just, already, yet — baru saja, sudah, belum",
+      "group": "tenses",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-past-continuous",
+      "order": 51,
+      "file": "content/id-en/grammar/past-continuous.json",
+      "title": "was / were + -ing — sedang … waktu itu (past continuous)",
+      "group": "tenses",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-future",
+      "order": 52,
+      "file": "content/id-en/grammar/future.json",
+      "title": "will, going to — akan, mau, berencana",
+      "group": "tenses",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-used-to",
+      "order": 53,
+      "file": "content/id-en/grammar/used-to.json",
+      "title": "used to — dulu sering …, dulu …",
+      "group": "tenses",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-should",
+      "order": 54,
+      "file": "content/id-en/grammar/should.json",
+      "title": "should, had better — sebaiknya …",
+      "group": "modals",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-have-to",
+      "order": 55,
+      "file": "content/id-en/grammar/have-to.json",
+      "title": "have to, must, don’t have to — harus, tidak perlu",
+      "group": "modals",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-might",
+      "order": 56,
+      "file": "content/id-en/grammar/might.json",
+      "title": "might, may, could — mungkin …",
+      "group": "modals",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-if-will",
+      "order": 57,
+      "file": "content/id-en/grammar/if-will.json",
+      "title": "If it rains, … — kalau … (hal yang mungkin terjadi)",
+      "group": "conditionals",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-if-would",
+      "order": 58,
+      "file": "content/id-en/grammar/if-would.json",
+      "title": "If I had…, I’d… — seandainya … (hal yang tidak nyata)",
+      "group": "conditionals",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-wish",
+      "order": 59,
+      "file": "content/id-en/grammar/wish.json",
+      "title": "I wish… — seandainya saja …",
+      "group": "conditionals",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-comparing",
+      "order": 60,
+      "file": "content/id-en/grammar/comparing.json",
+      "title": "bigger, the biggest — lebih …, paling …",
+      "group": "structures",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-too-enough",
+      "order": 61,
+      "file": "content/id-en/grammar/too-enough.json",
+      "title": "too, enough — terlalu …, cukup …",
+      "group": "structures",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-ing-to",
+      "order": 62,
+      "file": "content/id-en/grammar/ing-to.json",
+      "title": "enjoy -ing, decide to — kapan -ing, kapan to",
+      "group": "structures",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-relative",
+      "order": 63,
+      "file": "content/id-en/grammar/relative.json",
+      "title": "the man who…, the café where… — menjelaskan kata benda dengan “yang”",
+      "group": "structures",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-so-such",
+      "order": 64,
+      "file": "content/id-en/grammar/so-such.json",
+      "title": "so, such — sangat …, begitu … sampai …",
+      "group": "structures",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-passive",
+      "order": 65,
+      "file": "content/id-en/grammar/passive.json",
+      "title": "It’s made in… — di-… (kalimat pasif)",
+      "group": "structures",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-make-let",
+      "order": 66,
+      "file": "content/id-en/grammar/make-let.json",
+      "title": "make, let, get — menyuruh, membiarkan, meminta",
+      "group": "structures",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-indirect",
+      "order": 67,
+      "file": "content/id-en/grammar/indirect.json",
+      "title": "Do you know where…? — bertanya secara tidak langsung",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-reported",
+      "order": 68,
+      "file": "content/id-en/grammar/reported.json",
+      "title": "She said…, He told me… — menyampaikan kata orang lain",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-suggestions",
+      "order": 69,
+      "file": "content/id-en/grammar/suggestions.json",
+      "title": "Why don’t we…?, How about…? — mengusulkan",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-so-do-i",
+      "order": 70,
+      "file": "content/id-en/grammar/so-do-i.json",
+      "title": "So do I, Neither do I — aku juga, aku juga tidak",
+      "group": "conversation",
+      "level": "intermediate"
+    }
+  ],
+  "listening": [
+    {
+      "id": "replies",
+      "kind": "replies",
+      "file": "content/id-en/listening/replies.json",
+      "title": "Tadi dia bilang apa?",
+      "icon": "👂",
+      "level": "basic"
+    },
+    {
+      "id": "contrasts",
+      "kind": "contrasts",
+      "file": "content/id-en/listening/contrasts.json",
+      "title": "Mana yang kamu dengar?",
+      "icon": "🎧",
+      "level": "first-steps"
+    },
+    {
+      "id": "replies-more",
+      "kind": "replies",
+      "file": "content/id-en/listening/replies-more.json",
+      "title": "Mendengar lebih banyak",
+      "icon": "🎧",
+      "level": "intermediate"
+    }
+  ],
+  "characterSets": [],
+  "scenarios": [
+    {
+      "id": "cafe",
+      "file": "content/id-en/scenarios/cafe.json",
+      "title": "Memesan di kafe",
+      "icon": "☕",
+      "category": "restaurant",
+      "level": "basic"
+    },
+    {
+      "id": "clothes",
+      "file": "content/id-en/scenarios/clothes.json",
+      "title": "Mencoba baju",
+      "icon": "👕",
+      "category": "shopping",
+      "level": "basic"
+    },
+    {
+      "id": "bakery",
+      "file": "content/id-en/scenarios/bakery.json",
+      "title": "Membeli di toko roti",
+      "icon": "🥐",
+      "category": "shopping",
+      "level": "basic"
+    },
+    {
+      "id": "bus",
+      "file": "content/id-en/scenarios/bus.json",
+      "title": "Bertanya sebelum naik bus",
+      "icon": "🚌",
+      "category": "transport",
+      "level": "basic"
+    },
+    {
+      "id": "lost",
+      "file": "content/id-en/scenarios/lost.json",
+      "title": "Saat tersesat",
+      "icon": "🧭",
+      "category": "directions",
+      "level": "basic"
+    },
+    {
+      "id": "immigration",
+      "file": "content/id-en/scenarios/immigration.json",
+      "title": "Pemeriksaan imigrasi",
+      "icon": "🛂",
+      "category": "airport",
+      "level": "basic"
+    },
+    {
+      "id": "checkin",
+      "file": "content/id-en/scenarios/checkin.json",
+      "title": "Check-in di hotel",
+      "icon": "🏨",
+      "category": "hotel",
+      "level": "basic"
+    },
+    {
+      "id": "gp",
+      "file": "content/id-en/scenarios/gp.json",
+      "title": "Berobat ke dokter umum (GP)",
+      "icon": "🩺",
+      "category": "doctor",
+      "level": "intermediate"
+    },
+    {
+      "id": "return-faulty",
+      "file": "content/id-en/scenarios/return-faulty.json",
+      "title": "Mengembalikan barang rusak",
+      "icon": "🧾",
+      "category": "problems",
+      "level": "intermediate"
+    },
+    {
+      "id": "hotel-problem",
+      "file": "content/id-en/scenarios/hotel-problem.json",
+      "title": "Masalah di kamar hotel",
+      "icon": "🏨",
+      "category": "problems",
+      "level": "intermediate"
+    },
+    {
+      "id": "making-plans",
+      "file": "content/id-en/scenarios/making-plans.json",
+      "title": "Membuat rencana dengan teman",
+      "icon": "📅",
+      "category": "plans",
+      "level": "intermediate"
+    },
+    {
+      "id": "dinner-at-friends",
+      "file": "content/id-en/scenarios/dinner-at-friends.json",
+      "title": "Makan malam di rumah teman",
+      "icon": "🍽️",
+      "category": "friends",
+      "level": "intermediate"
+    },
+    {
+      "id": "bus-stop-chat",
+      "file": "content/id-en/scenarios/bus-stop-chat.json",
+      "title": "Mengobrol di halte bus",
+      "icon": "🚏",
+      "category": "reactions",
+      "level": "intermediate"
+    }
+  ]
+}

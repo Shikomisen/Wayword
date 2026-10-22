@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "id": "con-but",
+  "connector": "but / though",
+  "gloss": "tapi, …sih",
+  "title": "but / though — tapi, …sih",
+  "pattern": "A, but B ／ kalimat , though.",
+  "explanation": "but artinya “tapi”. Dipakai untuk menyampaikan hal yang berlawanan atau tidak terduga. Kalau though diletakkan di akhir kalimat, artinya seperti “…sih” atau “tapi ya…”: tambahan yang terdengar lebih lembut (It's nice, though.).",
+  "natural": "Berguna untuk memuji dulu, lalu menyampaikan keinginan: I like it, but do you have it in navy? (Bagus, tapi ada warna biru dongker?)",
+  "stiff": "However terasa seperti bahasa tulisan, mirip “namun”, dan terdengar kaku dalam percakapan. Saat berbicara, pakai but.",
+  "examples": [
+    {
+      "id": "cx-but-1",
+      "english": "It's nice, but it's a bit expensive.",
+      "indonesian": "Bagus, tapi agak mahal.",
+      "chunks": [
+        {
+          "t": "It's nice, "
+        },
+        {
+          "t": "but "
+        },
+        {
+          "t": "it's a bit expensive.",
+          "w": "w-expensive"
+        }
+      ],
+      "gap": {
+        "before": "It's nice, ",
+        "answer": "but",
+        "after": " it's a bit expensive.",
+        "options": [
+          "but",
+          "so",
+          "because"
+        ],
+        "why": "Bagus ↔ mahal: dua hal yang berlawanan, jadi pakai but."
+      },
+      "combine": {
+        "a": "It's nice.",
+        "b": "It's a bit expensive.",
+        "distractors": [
+          "so "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-but-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "but / though"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-but-2",
+      "english": "I like it, but do you have it in navy?",
+      "indonesian": "Saya suka, tapi ada warna biru dongker?",
+      "chunks": [
+        {
+          "t": "I like it, ",
+          "w": "w-like"
+        },
+        {
+          "t": "but "
+        },
+        {
+          "t": "do you have it in navy?",
+          "w": "w-navy"
+        }
+      ],
+      "gap": {
+        "before": "I like it, but do you have it ",
+        "answer": "in",
+        "after": " navy?",
+        "options": [
+          "in",
+          "on",
+          "with"
+        ],
+        "why": "Warna dan ukuran memakai in (in navy, in a medium)."
+      },
+      "combine": {
+        "a": "I like it.",
+        "b": "Do you have it in navy?",
+        "distractors": [
+          "so "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-but-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "but / though"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-but-3",
+      "english": "The café was busy, but the coffee was great.",
+      "indonesian": "Kafenya ramai, tapi kopinya enak sekali.",
+      "chunks": [
+        {
+          "t": "The café was busy, "
+        },
+        {
+          "t": "but "
+        },
+        {
+          "t": "the coffee was great.",
+          "w": "w-coffee"
+        }
+      ],
+      "gap": {
+        "before": "The café was busy, ",
+        "answer": "but",
+        "after": " the coffee was great.",
+        "options": [
+          "but",
+          "so",
+          "or"
+        ],
+        "why": "Ramai (minus) → tapi kopinya enak (plus)."
+      },
+      "combine": {
+        "a": "The café was busy.",
+        "b": "The coffee was great.",
+        "distractors": [
+          "so "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-but-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "but / though"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-but-4",
+      "english": "It's a bit small. I love the colour, though.",
+      "indonesian": "Agak kecil. Warnanya saya suka sekali, sih.",
+      "chunks": [
+        {
+          "t": "It's a bit small. "
+        },
+        {
+          "t": "I love the colour, ",
+          "w": "w-colour"
+        },
+        {
+          "t": "though."
+        }
+      ],
+      "gap": {
+        "before": "It's a bit small. I love the colour, ",
+        "answer": "though",
+        "after": ".",
+        "options": [
+          "though",
+          "but",
+          "so"
+        ],
+        "why": "Untuk tambahan “…sih” di akhir kalimat, pakai though. But tidak bisa diletakkan di akhir kalimat."
+      },
+      "audio": "audio/en/connectors/cx-but-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "but / though"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

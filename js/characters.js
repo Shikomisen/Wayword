@@ -12,9 +12,9 @@
  * so the two halves of the app reinforce each other rather than sitting
  * side by side (README §2.7).
  *
- * Only courses that ship character sets get this section (English speakers
- * learning Japanese, today), so its wording stays English rather than going
- * through i18n.js.
+ * Only courses that ship character sets get this section (Japanese, for
+ * English or Indonesian speakers); its wording is in the reading.* interface
+ * strings, in the learner's language.
  */
 
 import { loadContent, getCharacterSet, gridFor } from './content.js';
@@ -24,6 +24,7 @@ import { link, go } from './course.js';
 import { el, clear, targetNode, toast, romajiMode, romajiNode } from './render.js';
 import { deckHref } from './shared.js';
 import { kanaState, kanjiGated, kanaPanel } from './reading.js';
+import { t } from './i18n.js';
 
 const ROW_LABEL = {
   a: 'あ', ka: 'か', sa: 'さ', ta: 'た', na: 'な',
@@ -36,16 +37,15 @@ const ROW_LABEL = {
 
 async function playCharacter(c) {
   const result = await audio.play(c.audio);
-  if (result === 'missing') toast(`No audio clip for ${c.character} yet`);
+  if (result === 'missing') toast(t('reading.noClip', { char: c.character }));
   return result;
 }
 
 /** Take a character set out of study, once confirmed. Its cards keep their progress. */
 async function removeSet(set) {
-  if (!confirm(`Take ${set.title} out of your character deck?\n\nIts cards stop coming up in your reviews, ` +
-    'but your progress is kept — add it again any time to carry on where you left off.')) return false;
+  if (!confirm(t('reading.removeConfirm', { set: set.title }))) return false;
   await deck.deactivateCharacterSet(set.id);
-  toast(`Took ${set.title} out of your deck — your progress is kept`);
+  toast(t('reading.removed', { set: set.title }));
   return true;
 }
 
@@ -72,33 +72,33 @@ export async function renderCharacterList(root) {
         el('span', { class: 'row-title' }, set.title),
         el('span', { class: 'row-sub' },
           set.missing
-            ? '⚠️ content file missing'
+            ? t('browse.missing')
             : active
-              ? `${studied}/${set.characters.length} started · ${progress.due} due`
+              ? t('reading.setStarted', { studied, total: set.characters.length, due: progress.due })
               : waits
-                ? `After hiragana — ${hira.mastered}/${hira.total} mastered so far`
-                : `${set.characters.length} characters`),
+                ? t('reading.afterHiragana', { n: hira.mastered, total: hira.total })
+                : t('reading.setCount', { n: set.characters.length })),
         active ? el('span', { class: 'bar' }, el('span', { class: 'bar-fill', style: `width:${pct}%` })) : null),
       // In the deck: tap again to take it out (asked first; its progress is kept).
       active
         ? el('button', {
-            class: 'btn btn-small btn-in-deck', type: 'button', 'aria-pressed': 'true', title: 'Take out of deck',
+            class: 'btn btn-small btn-in-deck', type: 'button', 'aria-pressed': 'true', title: t('browse.remove'),
             onclick: async (e) => {
               e.preventDefault();
               if (await removeSet(set)) renderCharacterList(clear(root));
             },
-          }, '✓ in deck')
+          }, `✓ ${t('browse.inDeck')}`)
         : el('button', {
             class: waits ? 'btn btn-small btn-ghost' : 'btn btn-small',
             onclick: async (e) => {
               e.preventDefault();
               const { added, seeded, readded } = await deck.activateCharacterSet(set.id);
               toast(readded
-                ? `${set.title} is back in your deck, with your progress`
-                : seeded ? `Added ${added} characters (${seeded} seeded forward)` : `Added ${added} characters`);
+                ? t('reading.readded', { set: set.title })
+                : t(seeded ? 'reading.addedSeeded' : 'reading.added', { added, seeded }));
               renderCharacterList(clear(root));
             },
-          }, waits ? 'Add anyway' : 'Add'));
+          }, t(waits ? 'reading.addAnyway' : 'browse.add')));
   }));
 
   const summary = await deck.characterSummary();
@@ -108,31 +108,28 @@ export async function renderCharacterList(root) {
   root.append(
     el('div', { class: 'screen' },
       el('header', { class: 'screen-header' },
-        el('h1', {}, 'Reading'),
-        el('p', { class: 'lede' },
-          'Kana first, then kanji. Reading is kept apart from your other reviews so neither buries the other. ' +
-          'Tap any character in a chart to hear it.')),
+        el('h1', {}, t('reading.title')),
+        el('p', { class: 'lede' }, t('reading.lede'))),
 
       hasKana ? kanaPanel(kana) : null,
 
-      el('h2', { class: 'section-title' }, 'Character cards'),
+      el('h2', { class: 'section-title' }, t('reading.cards')),
       summary.total
         ? el('div', {},
             el('div', { class: 'stat-row' },
-              stat(summary.due, 'due'),
-              stat(summary.new, 'unseen'),
-              stat(stats.charReviews, 'done today'),
-              stat(summary.mature, 'mature')),
+              stat(summary.due, t('stat.due')),
+              stat(summary.new, t('reading.unseen')),
+              stat(stats.charReviews, t('stat.doneToday')),
+              stat(summary.mature, t('reading.mature'))),
             summary.due || summary.new
               ? el('button', {
                   class: 'btn btn-primary btn-lg full',
                   onclick: () => { go('/characters/review'); },
-                }, 'Review characters')
-              : el('p', { class: 'muted queue-breakdown' }, 'Nothing due right now.'))
-        : el('p', { class: 'muted' },
-            'No character sets in your deck yet. Add one below — hiragana is the place to start.'),
+                }, t('reading.review'))
+              : el('p', { class: 'muted queue-breakdown' }, t('reading.nothingDue')))
+        : el('p', { class: 'muted' }, t('reading.noSets')),
 
-      el('h2', { class: 'section-title' }, 'Sets'),
+      el('h2', { class: 'section-title' }, t('reading.sets')),
       // With levels, each set sits under its level (README §7.10).
       levels.length
         ? levels.map((l) => {
@@ -145,9 +142,7 @@ export async function renderCharacterList(root) {
           })
         : el('div', { class: 'card-list' }, rows),
 
-      el('p', { class: 'muted small footnote' },
-        'Handwriting and stroke-order practice are deliberately not here — this app teaches reading, ' +
-        'not writing.')
+      el('p', { class: 'muted small footnote' }, t('reading.noWriting'))
     )
   );
 }
@@ -176,12 +171,12 @@ export async function renderCharacterSet(root, setId) {
 
   const add = async () => {
     const { added, readded } = await deck.activateCharacterSet(setId);
-    toast(readded ? `${set.title} is back in your deck, with your progress` : `Added ${added} characters to your deck`);
+    toast(readded ? t('reading.readded', { set: set.title }) : t('reading.addedToDeck', { added }));
     renderCharacterSet(clear(root), setId);
   };
 
   view.append(
-    el('a', { class: 'back-link', href: link('/characters') }, '← Reading'),
+    el('a', { class: 'back-link', href: link('/characters') }, `← ${t('reading.title')}`),
     el('header', { class: 'screen-header' },
       el('h1', {}, `${set.icon || ''} ${set.title}`),
       el('p', { class: 'lede' }, set.description)),
@@ -190,28 +185,27 @@ export async function renderCharacterSet(root, setId) {
     // far better once hiragana is solid. Adding them anyway is one tap.
     waits
       ? el('div', { class: 'kanji-gate' },
-          el('p', {}, el('strong', {}, 'Kanji come after hiragana. '),
-            `You’ve mastered ${kana.progress.hiragana.mastered} of ${kana.progress.hiragana.total} hiragana so far. ` +
-            'Every kanji reading is written in hiragana, so kanji stick far better once it’s solid.'),
+          el('p', {}, el('strong', {}, t('reading.gateTitle')), ' ',
+            t('reading.gateBody', { n: kana.progress.hiragana.mastered, total: kana.progress.hiragana.total })),
           el('div', { class: 'action-row' },
-            el('a', { class: 'btn btn-primary', href: link('/characters/drill/hiragana') }, 'Today’s hiragana drill'),
-            el('button', { class: 'btn btn-ghost', type: 'button', onclick: add }, 'Add anyway')))
+            el('a', { class: 'btn btn-primary', href: link('/characters/drill/hiragana') }, t('reading.drillToday.hiragana')),
+            el('button', { class: 'btn btn-ghost', type: 'button', onclick: add }, t('reading.addAnyway'))))
       : el('div', { class: 'action-row' },
           active
             ? el('button', {
                 class: 'btn btn-primary',
                 onclick: () => { go(`/characters/${setId}/study`); },
-              }, 'Study this set')
-            : el('button', { class: 'btn btn-primary', onclick: add }, 'Add to deck'),
-          active ? el('span', { class: 'muted small' }, `${progress.due} due · ${progress.new} unseen`) : null,
+              }, t('reading.studySet'))
+            : el('button', { class: 'btn btn-primary', onclick: add }, t('category.add')),
+          active ? el('span', { class: 'muted small' }, t('reading.setPending', { due: progress.due, unseen: progress.new })) : null,
           active
             ? el('button', {
                 class: 'btn btn-small btn-ghost remove-deck', type: 'button',
                 onclick: async () => { if (await removeSet(set)) renderCharacterSet(clear(root), setId); },
-              }, 'Take out of deck')
+              }, t('browse.remove'))
             : null),
 
-    el('p', { class: 'muted small tap-hint chart-hint' }, 'Tap any character to hear it.'),
+    el('p', { class: 'muted small tap-hint chart-hint' }, t('reading.tapHint')),
 
     set.layout === 'list' || set.script === 'kanji'
       ? kanjiList(set, content, s)
@@ -303,7 +297,7 @@ function kanjiRow(c, content, settings) {
     }, c.character),
 
     el('div', { class: 'kanji-body' },
-      el('div', { class: 'kanji-meaning' }, c.meaning || c.english),
+      el('div', { class: 'kanji-meaning' }, c.meaning),
       el('div', { class: 'kanji-reading' },
         settings.furiganaMode !== 'hidden' ? (c.readings || []).join('・') : '',
         ' ',
@@ -312,7 +306,7 @@ function kanjiRow(c, content, settings) {
 
       refs.length
         ? el('div', { class: 'kanji-refs' },
-            el('span', { class: 'note-label' }, 'Seen in your words and phrases'),
+            el('span', { class: 'note-label' }, t('reading.seenIn')),
             el('div', { class: 'ref-list' },
               refs.map((p) =>
                 el('a', { class: 'ref-chip', href: deckHref(content, p.categoryId), title: p.meaning },

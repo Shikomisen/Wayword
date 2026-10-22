@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "con-aslongas",
+  "connector": "as long as",
+  "gloss": "asalkan, yang penting",
+  "title": "as long as — asalkan, yang penting",
+  "pattern": "kalimat as long as syarat",
+  "explanation": "as long as artinya “asalkan” atau “yang penting…”. Dipakai saat semuanya beres asal syaratnya terpenuhi. Dibandingkan if, as long as lebih menekankan bahwa syarat itu saja sudah cukup, persis seperti “asal(kan)” dalam bahasa Indonesia.",
+  "natural": "Untuk menyebut syarat sebuah izin atau janji: Any size is fine, as long as it fits. (Ukuran apa saja boleh, asalkan pas.)",
+  "stiff": "Hati-hati dengan bentuk yang mirip: as soon as (begitu…, segera setelah…) dan as far as (sejauh…).",
+  "examples": [
+    {
+      "id": "cx-aslongas-1",
+      "english": "Any size is fine, as long as it fits.",
+      "indonesian": "Ukuran apa saja boleh, asalkan pas.",
+      "chunks": [
+        {
+          "t": "Any size is fine, ",
+          "w": "w-size"
+        },
+        {
+          "t": "as long as "
+        },
+        {
+          "t": "it fits.",
+          "w": "w-fit"
+        }
+      ],
+      "gap": {
+        "before": "Any size is fine, ",
+        "answer": "as long as",
+        "after": " it fits.",
+        "options": [
+          "as long as",
+          "as soon as",
+          "as far as"
+        ],
+        "why": "“Asalkan” adalah as long as."
+      },
+      "audio": "audio/en/connectors/cx-aslongas-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "as long as"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-aslongas-2",
+      "english": "I'll buy it, as long as I can return it.",
+      "indonesian": "Saya beli, asalkan bisa dikembalikan.",
+      "chunks": [
+        {
+          "t": "I'll buy it, ",
+          "w": "w-buy"
+        },
+        {
+          "t": "as long as "
+        },
+        {
+          "t": "I can return it.",
+          "w": "w-return"
+        }
+      ],
+      "gap": {
+        "before": "I'll buy it, as long as I can ",
+        "answer": "return",
+        "after": " it.",
+        "options": [
+          "return",
+          "return back",
+          "returning"
+        ],
+        "why": "Setelah can, pakai bentuk dasar kata kerja. Return back tidak dipakai."
+      },
+      "audio": "audio/en/connectors/cx-aslongas-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "as long as"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-aslongas-3",
+      "english": "It's fine, as long as it's not too spicy.",
+      "indonesian": "Tidak apa-apa, asal tidak terlalu pedas.",
+      "chunks": [
+        {
+          "t": "It's fine, "
+        },
+        {
+          "t": "as long as "
+        },
+        {
+          "t": "it's not too spicy.",
+          "w": "w-spicy"
+        }
+      ],
+      "gap": {
+        "before": "It's fine, ",
+        "answer": "as long as",
+        "after": " it's not too spicy.",
+        "options": [
+          "as long as",
+          "even though",
+          "so"
+        ],
+        "why": "Syaratnya “asal tidak terlalu pedas”, jadi pakai as long as."
+      },
+      "audio": "audio/en/connectors/cx-aslongas-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "as long as"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-aslongas-4",
+      "english": "You can eat in as long as you order something.",
+      "indonesian": "Kamu boleh makan di sini, asalkan pesan sesuatu.",
+      "chunks": [
+        {
+          "t": "You can eat in ",
+          "w": "w-eat-in"
+        },
+        {
+          "t": "as long as "
+        },
+        {
+          "t": "you order something.",
+          "w": "w-order"
+        }
+      ],
+      "gap": {
+        "before": "You can eat in ",
+        "answer": "as long as",
+        "after": " you order something.",
+        "options": [
+          "as long as",
+          "as soon as",
+          "unless"
+        ],
+        "why": "Syaratnya “asal pesan sesuatu”. Unless artinya “kecuali kalau”, jadi maknanya terbalik."
+      },
+      "audio": "audio/en/connectors/cx-aslongas-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "as long as"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

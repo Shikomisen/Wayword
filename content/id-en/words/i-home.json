@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-home",
+  "title": "Rumah & kehidupan sehari-hari",
+  "description": "Sewa, pemilik rumah, cucian, sampah. Kata-kata untuk menyewa tempat tinggal dan menjalani hidup sehari-hari.",
+  "items": [
+    {
+      "id": "w-rent",
+      "english": "rent",
+      "indonesian": "uang sewa; menyewa",
+      "pos": "noun",
+      "registerNotes": "pay the rent (bayar sewa)",
+      "audio": "audio/en/words/w-rent.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-landlord",
+      "english": "landlord",
+      "indonesian": "pemilik rumah sewaan",
+      "pos": "noun",
+      "registerNotes": "Pemilik perempuan kadang disebut landlady, tapi landlord juga dipahami.",
+      "audio": "audio/en/words/w-landlord.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bond",
+      "english": "bond",
+      "indonesian": "uang jaminan sewa",
+      "pos": "noun",
+      "registerNotes": "Uang jaminan yang dibayar saat menyewa tempat tinggal di Selandia Baru.",
+      "audio": "audio/en/words/w-bond.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-move",
+      "english": "move",
+      "indonesian": "pindah; memindahkan",
+      "pos": "verb",
+      "registerNotes": "move house (pindah rumah), move in (mulai menempati)",
+      "audio": "audio/en/words/w-move.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-furniture",
+      "english": "furniture",
+      "indonesian": "perabot, mebel",
+      "pos": "noun",
+      "pitfallNote": "Bukan furnitures. Untuk menghitung: a piece of furniture.",
+      "audio": "audio/en/words/w-furniture.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-washing-machine",
+      "english": "washing machine",
+      "indonesian": "mesin cuci",
+      "pos": "noun",
+      "audio": "audio/en/words/w-washing-machine.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-laundry",
+      "english": "laundry",
+      "indonesian": "cucian",
+      "pos": "noun",
+      "registerNotes": "do the laundry (mencuci pakaian). Di Selandia Baru juga do the washing.",
+      "audio": "audio/en/words/w-laundry.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Di Indonesia laundry sering berarti jasa cuci. Dalam bahasa Inggris laundry adalah cucianmu sendiri; tempat cuci umum: a laundromat."
+    },
+    {
+      "id": "w-dishes",
+      "english": "dishes",
+      "indonesian": "piring kotor, cuci piring",
+      "pos": "noun",
+      "registerNotes": "do the dishes (mencuci piring)",
+      "audio": "audio/en/words/w-dishes.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-rubbish",
+      "english": "rubbish",
+      "indonesian": "sampah",
+      "pos": "noun",
+      "registerNotes": "Di Selandia Baru dan Inggris rubbish, di Amerika trash.",
+      "audio": "audio/en/words/w-rubbish.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-recycling",
+      "english": "recycling",
+      "indonesian": "sampah daur ulang",
+      "pos": "noun",
+      "audio": "audio/en/words/w-recycling.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-vacuum",
+      "english": "vacuum",
+      "indonesian": "menyedot debu; penyedot debu",
+      "pos": "verb",
+      "registerNotes": "I need to vacuum. (Aku harus menyedot debu dulu.)",
+      "audio": "audio/en/words/w-vacuum.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tidy",
+      "english": "tidy",
+      "indonesian": "rapi",
+      "pos": "adjective",
+      "registerNotes": "tidy up (merapikan)",
+      "audio": "audio/en/words/w-tidy.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-messy",
+      "english": "messy",
+      "indonesian": "berantakan",
+      "pos": "adjective",
+      "registerNotes": "Sorry, it’s a bit messy. (Maaf, agak berantakan.)",
+      "audio": "audio/en/words/w-messy.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-fridge",
+      "english": "fridge",
+      "indonesian": "kulkas",
+      "pos": "noun",
+      "registerNotes": "Kependekan dari refrigerator. Dalam percakapan selalu fridge.",
+      "audio": "audio/en/words/w-fridge.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-oven",
+      "english": "oven",
+      "indonesian": "oven",
+      "pos": "noun",
+      "registerNotes": "Dibaca kira-kira 'avn': o dibaca a, dan v tetap v, bukan f.",
+      "audio": "audio/en/words/w-oven.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-microwave",
+      "english": "microwave",
+      "indonesian": "microwave",
+      "pos": "noun",
+      "pitfallNote": "Dibaca 'MAI-kro-weiv', bukan 'mikro-wef': akhirnya bunyi v.",
+      "audio": "audio/en/words/w-microwave.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-heater",
+      "english": "heater",
+      "indonesian": "pemanas ruangan",
+      "pos": "noun",
+      "audio": "audio/en/words/w-heater.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mould",
+      "english": "mould",
+      "indonesian": "jamur (di dinding)",
+      "pos": "noun",
+      "registerNotes": "Ejaan Amerika: mold. Masalah yang sering muncul di rumah Selandia Baru saat musim dingin.",
+      "audio": "audio/en/words/w-mould.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-neighbourhood",
+      "english": "neighbourhood",
+      "indonesian": "lingkungan sekitar rumah",
+      "pos": "noun",
+      "registerNotes": "Ejaan Amerika: neighborhood.",
+      "audio": "audio/en/words/w-neighbourhood.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-garden",
+      "english": "garden",
+      "indonesian": "kebun, halaman",
+      "pos": "noun",
+      "registerNotes": "Di Selandia Baru halaman rumah disebut garden, di Amerika yard.",
+      "audio": "audio/en/words/w-garden.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-lawn",
+      "english": "lawn",
+      "indonesian": "halaman berumput",
+      "pos": "noun",
+      "registerNotes": "mow the lawn (memotong rumput)",
+      "audio": "audio/en/words/w-lawn.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-power",
+      "english": "power",
+      "indonesian": "listrik",
+      "pos": "noun",
+      "registerNotes": "Di Selandia Baru, tagihan listrik disebut the power bill.",
+      "audio": "audio/en/words/w-power.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-wifi",
+      "english": "wifi",
+      "indonesian": "wifi",
+      "pos": "noun",
+      "registerNotes": "Juga ditulis Wi-Fi. What’s the wifi password? (Kata sandi wifinya apa?)",
+      "audio": "audio/en/words/w-wifi.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-groceries",
+      "english": "groceries",
+      "indonesian": "bahan makanan (belanjaan)",
+      "pos": "noun",
+      "registerNotes": "do the groceries (belanja bahan makanan)",
+      "audio": "audio/en/words/w-groceries.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chores",
+      "english": "chores",
+      "indonesian": "tugas rumah tangga",
+      "pos": "noun",
+      "registerNotes": "household chores (urusan rumah tangga)",
+      "audio": "audio/en/words/w-chores.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "PR dari sekolah adalah homework. Mencuci, menyapu, dan beres-beres rumah: chores."
+    },
+    {
+      "id": "w-spare-room",
+      "english": "spare room",
+      "indonesian": "kamar kosong, kamar tamu",
+      "pos": "noun",
+      "audio": "audio/en/words/w-spare-room.mp3",
+      "tags": [
+        "kehidupan sehari-hari"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

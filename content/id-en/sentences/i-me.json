@@ -1,0 +1,586 @@
+{
+  "schemaVersion": 1,
+  "id": "sentences-i-me",
+  "title": "Bercerita tentang diri sendiri",
+  "description": "Pengalaman, rencana, hal yang kamu suka, perasaanmu akhir-akhir ini. Kalimat untuk bercerita tentang dirimu dan menjadi akrab dengan orang lain.",
+  "items": [
+    {
+      "id": "s-43",
+      "english": "I’ve been living in Auckland for two years.",
+      "indonesian": "Sudah dua tahun saya tinggal di Auckland.",
+      "chunks": [
+        {
+          "t": "I’ve been living ",
+          "w": "w-live"
+        },
+        {
+          "t": "in Auckland "
+        },
+        {
+          "t": "for two years.",
+          "w": "w-year"
+        }
+      ],
+      "audio": "audio/en/sentences/s-43.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-44",
+      "english": "I used to be really shy.",
+      "indonesian": "Dulu saya pemalu sekali.",
+      "chunks": [
+        {
+          "t": "I used to be "
+        },
+        {
+          "t": "really "
+        },
+        {
+          "t": "shy.",
+          "w": "w-shy"
+        }
+      ],
+      "audio": "audio/en/sentences/s-44.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-45",
+      "english": "I’m looking forward to the weekend.",
+      "indonesian": "Saya tidak sabar menunggu akhir pekan.",
+      "chunks": [
+        {
+          "t": "I’m looking forward to ",
+          "w": "w-look-forward-to"
+        },
+        {
+          "t": "the weekend.",
+          "w": "w-weekend"
+        }
+      ],
+      "audio": "audio/en/sentences/s-45.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-46",
+      "english": "I’ve never been to a wedding in New Zealand.",
+      "indonesian": "Saya belum pernah datang ke pesta pernikahan di Selandia Baru.",
+      "chunks": [
+        {
+          "t": "I’ve never been "
+        },
+        {
+          "t": "to a wedding ",
+          "w": "w-wedding"
+        },
+        {
+          "t": "in New Zealand."
+        }
+      ],
+      "audio": "audio/en/sentences/s-46.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-47",
+      "english": "I’m going to apply for a part-time job.",
+      "indonesian": "Saya mau melamar kerja paruh waktu.",
+      "chunks": [
+        {
+          "t": "I’m going to "
+        },
+        {
+          "t": "apply for ",
+          "w": "w-apply"
+        },
+        {
+          "t": "a part-time job.",
+          "w": "w-part-time-job"
+        }
+      ],
+      "audio": "audio/en/sentences/s-47.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-48",
+      "english": "I’m a bit nervous about my interview.",
+      "indonesian": "Saya agak gugup soal wawancara saya.",
+      "chunks": [
+        {
+          "t": "I’m a bit "
+        },
+        {
+          "t": "nervous ",
+          "w": "w-nervous"
+        },
+        {
+          "t": "about my interview.",
+          "w": "w-interview"
+        }
+      ],
+      "audio": "audio/en/sentences/s-48.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-49",
+      "english": "I prefer the beach to the mountains.",
+      "indonesian": "Saya lebih suka pantai daripada gunung.",
+      "chunks": [
+        {
+          "t": "I prefer ",
+          "w": "w-prefer"
+        },
+        {
+          "t": "the beach ",
+          "w": "w-beach"
+        },
+        {
+          "t": "to the mountains.",
+          "w": "w-mountain"
+        }
+      ],
+      "audio": "audio/en/sentences/s-49.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-50",
+      "english": "I miss my family sometimes.",
+      "indonesian": "Kadang saya kangen keluarga.",
+      "chunks": [
+        {
+          "t": "I miss ",
+          "w": "w-miss"
+        },
+        {
+          "t": "my family ",
+          "w": "w-family"
+        },
+        {
+          "t": "sometimes."
+        }
+      ],
+      "audio": "audio/en/sentences/s-50.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-51",
+      "english": "I’ve just started a new job.",
+      "indonesian": "Saya baru saja mulai kerja di tempat baru.",
+      "chunks": [
+        {
+          "t": "I’ve just started ",
+          "w": "w-start"
+        },
+        {
+          "t": "a new job.",
+          "w": "w-job"
+        }
+      ],
+      "audio": "audio/en/sentences/s-51.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-52",
+      "english": "My flatmate is really easy-going.",
+      "indonesian": "Teman serumah saya orangnya santai sekali.",
+      "chunks": [
+        {
+          "t": "My flatmate ",
+          "w": "w-flatmate"
+        },
+        {
+          "t": "is really "
+        },
+        {
+          "t": "easy-going.",
+          "w": "w-easy-going"
+        }
+      ],
+      "audio": "audio/en/sentences/s-52.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-53",
+      "english": "I’m saving up for a trip to Japan.",
+      "indonesian": "Saya sedang menabung untuk jalan-jalan ke Jepang.",
+      "chunks": [
+        {
+          "t": "I’m saving up ",
+          "w": "w-save"
+        },
+        {
+          "t": "for a trip "
+        },
+        {
+          "t": "to Japan."
+        }
+      ],
+      "audio": "audio/en/sentences/s-53.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-54",
+      "english": "I usually sleep in on Sundays.",
+      "indonesian": "Hari Minggu saya biasanya bangun siang.",
+      "chunks": [
+        {
+          "t": "I usually "
+        },
+        {
+          "t": "sleep in ",
+          "w": "w-sleep-in"
+        },
+        {
+          "t": "on Sundays.",
+          "w": "w-sunday"
+        }
+      ],
+      "audio": "audio/en/sentences/s-54.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-55",
+      "english": "I was so relieved when I found my passport.",
+      "indonesian": "Saya lega sekali waktu paspor saya ketemu.",
+      "chunks": [
+        {
+          "t": "I was so "
+        },
+        {
+          "t": "relieved ",
+          "w": "w-relieved"
+        },
+        {
+          "t": "when I found ",
+          "w": "w-find"
+        },
+        {
+          "t": "my passport.",
+          "w": "w-passport"
+        }
+      ],
+      "audio": "audio/en/sentences/s-55.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "s-56",
+      "english": "I’ve got a few days off next week.",
+      "indonesian": "Minggu depan saya libur beberapa hari.",
+      "chunks": [
+        {
+          "t": "I’ve got a few "
+        },
+        {
+          "t": "days off ",
+          "w": "w-day-off"
+        },
+        {
+          "t": "next week.",
+          "w": "w-week"
+        }
+      ],
+      "audio": "audio/en/sentences/s-56.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-57",
+      "english": "I get homesick when I’m sick.",
+      "indonesian": "Kalau sedang sakit, saya jadi rindu rumah.",
+      "chunks": [
+        {
+          "t": "I get "
+        },
+        {
+          "t": "homesick ",
+          "w": "w-homesick"
+        },
+        {
+          "t": "when I’m sick.",
+          "w": "w-sick"
+        }
+      ],
+      "audio": "audio/en/sentences/s-57.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-58",
+      "english": "Honestly, I’m not a morning person.",
+      "indonesian": "Jujur saja, saya tidak kuat bangun pagi.",
+      "chunks": [
+        {
+          "t": "Honestly, ",
+          "w": "w-honestly"
+        },
+        {
+          "t": "I’m not a "
+        },
+        {
+          "t": "morning person.",
+          "w": "w-morning"
+        }
+      ],
+      "audio": "audio/en/sentences/s-58.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-59",
+      "english": "I’d like to work in tourism one day.",
+      "indonesian": "Suatu hari nanti saya ingin bekerja di bidang pariwisata.",
+      "chunks": [
+        {
+          "t": "I’d like to "
+        },
+        {
+          "t": "work ",
+          "w": "w-work"
+        },
+        {
+          "t": "in tourism "
+        },
+        {
+          "t": "one day."
+        }
+      ],
+      "audio": "audio/en/sentences/s-59.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-60",
+      "english": "My parents were quite strict.",
+      "indonesian": "Orang tua saya dulu cukup ketat.",
+      "chunks": [
+        {
+          "t": "My parents ",
+          "w": "w-parents"
+        },
+        {
+          "t": "were quite "
+        },
+        {
+          "t": "strict.",
+          "w": "w-strict"
+        }
+      ],
+      "audio": "audio/en/sentences/s-60.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-61",
+      "english": "I’m proud of how much I’ve learnt.",
+      "indonesian": "Saya bangga sudah belajar sebanyak ini.",
+      "chunks": [
+        {
+          "t": "I’m proud of ",
+          "w": "w-proud"
+        },
+        {
+          "t": "how much "
+        },
+        {
+          "t": "I’ve learnt.",
+          "w": "w-learn"
+        }
+      ],
+      "audio": "audio/en/sentences/s-61.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "s-62",
+      "english": "I’ve been feeling a bit lonely lately.",
+      "indonesian": "Akhir-akhir ini saya agak kesepian.",
+      "chunks": [
+        {
+          "t": "I’ve been feeling ",
+          "w": "w-feel"
+        },
+        {
+          "t": "a bit "
+        },
+        {
+          "t": "lonely ",
+          "w": "w-lonely"
+        },
+        {
+          "t": "lately."
+        }
+      ],
+      "audio": "audio/en/sentences/s-62.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "s-63",
+      "english": "I chill out at the beach at the weekend.",
+      "indonesian": "Akhir pekan saya bersantai di pantai.",
+      "chunks": [
+        {
+          "t": "I chill out ",
+          "w": "w-chill-out"
+        },
+        {
+          "t": "at the beach ",
+          "w": "w-beach"
+        },
+        {
+          "t": "at the weekend.",
+          "w": "w-weekend"
+        }
+      ],
+      "audio": "audio/en/sentences/s-63.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-64",
+      "english": "I gave up coffee last month.",
+      "indonesian": "Bulan lalu saya berhenti minum kopi.",
+      "chunks": [
+        {
+          "t": "I gave up ",
+          "w": "w-give-up"
+        },
+        {
+          "t": "coffee ",
+          "w": "w-coffee"
+        },
+        {
+          "t": "last month.",
+          "w": "w-month"
+        }
+      ],
+      "audio": "audio/en/sentences/s-64.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-65",
+      "english": "I’d love to explore the South Island.",
+      "indonesian": "Saya ingin sekali menjelajahi Pulau Selatan.",
+      "chunks": [
+        {
+          "t": "I’d love to "
+        },
+        {
+          "t": "explore ",
+          "w": "w-explore"
+        },
+        {
+          "t": "the South Island."
+        }
+      ],
+      "audio": "audio/en/sentences/s-65.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-66",
+      "english": "I get along really well with my colleagues.",
+      "indonesian": "Saya akrab sekali dengan rekan-rekan kerja saya.",
+      "chunks": [
+        {
+          "t": "I get along ",
+          "w": "w-get-along"
+        },
+        {
+          "t": "really well "
+        },
+        {
+          "t": "with my colleagues.",
+          "w": "w-colleague"
+        }
+      ],
+      "audio": "audio/en/sentences/s-66.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-67",
+      "english": "I’m not sure yet, but I’ll probably stay another year.",
+      "indonesian": "Saya belum yakin, tapi mungkin saya akan tinggal setahun lagi.",
+      "chunks": [
+        {
+          "t": "I’m not sure yet, ",
+          "w": "w-sure"
+        },
+        {
+          "t": "but I’ll probably ",
+          "w": "w-probably"
+        },
+        {
+          "t": "stay another year.",
+          "w": "w-year"
+        }
+      ],
+      "audio": "audio/en/sentences/s-67.mp3",
+      "tags": [
+        "tentang diri sendiri"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "emergency",
+  "title": "Darurat & sakit",
+  "order": 9,
+  "description": "Paling baik kalau tidak perlu dipakai, tapi saat darurat, bisa atau tidaknya kamu mengucapkan kalimat pertama sangat menentukan.",
+  "phrases": [
+    {
+      "id": "eme-01",
+      "english": "Help!",
+      "indonesian": "Tolong!",
+      "registerNotes": "Teriakkan dengan keras. Tujuannya agar orang di sekitar menyadarinya.",
+      "audio": "audio/en/eme-01.mp3",
+      "audioHint": "Help!",
+      "tags": [
+        "darurat",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "eme-02",
+      "english": "Please call an ambulance.",
+      "indonesian": "Tolong panggil ambulans.",
+      "registerNotes": "Nomor darurat Selandia Baru adalah 111 (polisi, pemadam kebakaran, dan ambulans). Amerika dan Kanada 911, Inggris 999, Australia 000.",
+      "audio": "audio/en/eme-02.mp3",
+      "audioHint": "Please call an ambulance.",
+      "tags": [
+        "darurat",
+        "penting"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "'Tolong panggilkan…' jangan jadi Help call…. Help dipakai untuk 'tolong!' saat butuh bantuan; untuk 'tolong' yang berarti meminta sesuatu, pakai Please."
+    },
+    {
+      "id": "eme-03",
+      "english": "I don't feel well.",
+      "indonesian": "Saya tidak enak badan.",
+      "registerNotes": "Cara paling halus untuk bilang kamu sedang tidak sehat.",
+      "audio": "audio/en/eme-03.mp3",
+      "audioHint": "I don't feel well.",
+      "tags": [
+        "kondisi badan"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "Bukan I'm not feel well. Kata feel adalah kata kerja, jadi bentuk negatifnya pakai don't."
+    },
+    {
+      "id": "eme-04",
+      "english": "I have a headache.",
+      "indonesian": "Saya sakit kepala.",
+      "registerNotes": "Polanya I have a + gejala. Misalnya stomachache (sakit perut), fever (demam), cold (pilek).",
+      "audio": "audio/en/eme-04.mp3",
+      "audioHint": "I have a headache.",
+      "tags": [
+        "kondisi badan"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "'Saya sakit kepala' jangan jadi I'm headache. Untuk gejala, pakai have: I have a headache."
+    },
+    {
+      "id": "eme-05",
+      "english": "Where is the nearest pharmacy?",
+      "indonesian": "Apotek terdekat di mana?",
+      "registerNotes": "Di Selandia Baru disebut pharmacy atau chemist. Di Amerika drugstore juga umum.",
+      "audio": "audio/en/eme-05.mp3",
+      "audioHint": "Where is the nearest pharmacy?",
+      "tags": [
+        "kondisi badan",
+        "petunjuk jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "eme-06",
+      "english": "I lost my wallet.",
+      "indonesian": "Dompet saya hilang.",
+      "registerNotes": "lost artinya 'kehilangan'. Kalau dicuri: My wallet was stolen.",
+      "audio": "audio/en/eme-06.mp3",
+      "audioHint": "I lost my wallet.",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "'Dompet saya hilang' sering jadi My wallet lost. Dalam bahasa Inggris, kamu yang menghilangkan: I lost my wallet."
+    },
+    {
+      "id": "eme-07",
+      "english": "My passport was stolen.",
+      "indonesian": "Paspor saya dicuri.",
+      "registerNotes": "Buat laporan ke polisi (police report), lalu hubungi KBRI (Kedutaan Besar Republik Indonesia).",
+      "audio": "audio/en/eme-07.mp3",
+      "audioHint": "My passport was stolen.",
+      "tags": [
+        "masalah",
+        "darurat"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Jangan lupa was: 'dicuri' adalah was stolen, bukan stolen saja."
+    },
+    {
+      "id": "eme-08",
+      "english": "Please call the police.",
+      "indonesian": "Tolong panggil polisi.",
+      "registerNotes": "Kalau merasa terancam, pindah dulu ke tempat yang aman.",
+      "audio": "audio/en/eme-08.mp3",
+      "audioHint": "Please call the police.",
+      "tags": [
+        "darurat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "eme-09",
+      "english": "Is there anyone who speaks Japanese?",
+      "indonesian": "Ada yang bisa berbahasa Jepang?",
+      "registerNotes": "Di rumah sakit atau kantor polisi, jangan sungkan bertanya. Kadang mereka bisa menyediakan penerjemah (interpreter). Untuk bahasamu, ganti Japanese dengan Indonesian.",
+      "audio": "audio/en/eme-09.mp3",
+      "audioHint": "Is there anyone who speaks Japanese?",
+      "tags": [
+        "darurat",
+        "kata"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "eme-10",
+      "english": "I need to see a doctor.",
+      "indonesian": "Saya perlu ke dokter.",
+      "registerNotes": "see a doctor artinya 'diperiksa dokter'. Pastikan juga kamu menyimpan nomor kontak asuransi perjalananmu.",
+      "audio": "audio/en/eme-10.mp3",
+      "audioHint": "I need to see a doctor.",
+      "tags": [
+        "kondisi badan",
+        "rumah sakit"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

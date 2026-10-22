@@ -1,0 +1,472 @@
+{
+  "schemaVersion": 1,
+  "id": "replies-more",
+  "title": "Mendengar lebih banyak",
+  "description": "Ucapan pegawai toko dan teman di Selandia Baru dengan kecepatan sehari-hari, termasuk ungkapan santai dan khas Selandia Baru. Setelah memilih artinya, pelajari juga cara menjawabnya.",
+  "items": [
+    {
+      "id": "lr-31",
+      "speaker": "receptionist",
+      "english": "Can I grab a name for that?",
+      "indonesian": "Boleh tahu namanya untuk pesanan ini?",
+      "reply": {
+        "english": "It’s Yuki, Y-U-K-I.",
+        "indonesian": "Yuki, Y-U-K-I."
+      },
+      "note": "grab a name adalah cara santai untuk menanyakan nama. Kalau kamu mengeja namamu, pasti tidak salah tulis.",
+      "audio": "audio/en/listening/lr-31.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-32",
+      "speaker": "server",
+      "english": "Are you guys right for drinks?",
+      "indonesian": "Minuman kalian masih cukup?",
+      "reply": {
+        "english": "Could we get some more water, please?",
+        "indonesian": "Boleh minta air putih lagi?"
+      },
+      "note": "Are you right for …? adalah cara khas Selandia Baru untuk menanyakan “… masih cukup?”.",
+      "audio": "audio/en/listening/lr-32.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-33",
+      "speaker": "staff",
+      "english": "We’re just about to close, sorry.",
+      "indonesian": "Maaf, kami sudah mau tutup.",
+      "reply": {
+        "english": "No worries. What time do you open tomorrow?",
+        "indonesian": "Tidak apa-apa. Besok buka jam berapa?"
+      },
+      "audio": "audio/en/listening/lr-33.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-34",
+      "speaker": "driver",
+      "english": "Sorry, mate, this one doesn’t go past the hospital.",
+      "indonesian": "Maaf ya, bus ini tidak lewat rumah sakit.",
+      "reply": {
+        "english": "Oh, which bus should I take?",
+        "indonesian": "Oh, saya harus naik bus yang mana?"
+      },
+      "note": "mate adalah panggilan akrab, kira-kira seperti “kawan” atau “bro”.",
+      "audio": "audio/en/listening/lr-34.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-35",
+      "speaker": "receptionist",
+      "english": "Your room won’t be ready till two, but you’re welcome to leave your bags with us.",
+      "indonesian": "Kamar Anda baru siap jam dua, tapi Anda boleh menitipkan tas di sini.",
+      "reply": {
+        "english": "That’d be great, thanks.",
+        "indonesian": "Wah, sangat membantu, terima kasih."
+      },
+      "audio": "audio/en/listening/lr-35.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lr-36",
+      "speaker": "pharmacist",
+      "english": "Have you taken anything for it yet?",
+      "indonesian": "Sudah minum obat untuk itu?",
+      "reply": {
+        "english": "No, not yet.",
+        "indonesian": "Belum."
+      },
+      "audio": "audio/en/listening/lr-36.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-37",
+      "speaker": "doctor",
+      "english": "Any allergies I should know about?",
+      "indonesian": "Ada alergi yang perlu saya ketahui?",
+      "reply": {
+        "english": "Not that I know of.",
+        "indonesian": "Setahu saya tidak ada."
+      },
+      "note": "Not that I know of. artinya “setahu saya tidak”, jawaban yang praktis.",
+      "audio": "audio/en/listening/lr-37.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-38",
+      "speaker": "doctor",
+      "english": "I’ll write you a prescription. You can take it to any pharmacy.",
+      "indonesian": "Saya tuliskan resep, ya. Bisa ditebus di apotek mana saja.",
+      "reply": {
+        "english": "Thank you. How often should I take it?",
+        "indonesian": "Terima kasih. Seberapa sering saya harus meminumnya?"
+      },
+      "audio": "audio/en/listening/lr-38.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lr-39",
+      "speaker": "friend",
+      "english": "Do you fancy a coffee after this?",
+      "indonesian": "Habis ini mau minum kopi?",
+      "reply": {
+        "english": "Yeah, why not!",
+        "indonesian": "Ayo, kenapa tidak!"
+      },
+      "note": "fancy artinya “sedang ingin …”. Sering dipakai di Selandia Baru dan Inggris.",
+      "audio": "audio/en/listening/lr-39.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-40",
+      "speaker": "friend",
+      "english": "I’m running about ten minutes late, sorry!",
+      "indonesian": "Aku telat sekitar sepuluh menit, maaf!",
+      "reply": {
+        "english": "No worries, see you soon.",
+        "indonesian": "Tidak apa-apa, sampai ketemu nanti."
+      },
+      "audio": "audio/en/listening/lr-40.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-41",
+      "speaker": "friend",
+      "english": "What are you up to this arvo?",
+      "indonesian": "Sore ini kamu ada acara apa?",
+      "reply": {
+        "english": "Not much. Why?",
+        "indonesian": "Tidak ada apa-apa. Kenapa?"
+      },
+      "note": "arvo adalah bentuk santai dari afternoon.",
+      "audio": "audio/en/listening/lr-41.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-42",
+      "speaker": "friend",
+      "english": "We should catch up sometime.",
+      "indonesian": "Kapan-kapan kita ketemuan, yuk.",
+      "reply": {
+        "english": "Definitely! I’ll message you.",
+        "indonesian": "Pasti! Nanti aku kirim pesan."
+      },
+      "note": "Seperti “kapan-kapan” dalam bahasa Indonesia, kadang ini hanya basa-basi. Kalau kamu benar-benar ingin bertemu, usulkan tanggalnya.",
+      "audio": "audio/en/listening/lr-42.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-43",
+      "speaker": "neighbour",
+      "english": "If you ever need anything, just knock.",
+      "indonesian": "Kalau butuh apa-apa, ketuk saja pintunya.",
+      "reply": {
+        "english": "Thanks, that’s really kind of you.",
+        "indonesian": "Terima kasih, baik sekali."
+      },
+      "audio": "audio/en/listening/lr-43.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-44",
+      "speaker": "staff",
+      "english": "Do you want to pop that on your card?",
+      "indonesian": "Mau bayar pakai kartu?",
+      "reply": {
+        "english": "Yes, please.",
+        "indonesian": "Ya, boleh."
+      },
+      "note": "pop artinya “melakukan sesuatu dengan cepat”. Sering dipakai pegawai toko di Selandia Baru.",
+      "audio": "audio/en/listening/lr-44.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-45",
+      "speaker": "server",
+      "english": "Sorry, we’ve run out of the chicken today.",
+      "indonesian": "Maaf, hari ini ayamnya sudah habis.",
+      "reply": {
+        "english": "That’s OK. What would you recommend instead?",
+        "indonesian": "Tidak apa-apa. Sebagai gantinya, apa yang direkomendasikan?"
+      },
+      "audio": "audio/en/listening/lr-45.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-46",
+      "speaker": "server",
+      "english": "Would you like to see the dessert menu?",
+      "indonesian": "Mau lihat menu hidangan penutup?",
+      "reply": {
+        "english": "Yes, please. That’d be lovely.",
+        "indonesian": "Ya, boleh. Senang sekali."
+      },
+      "note": "lovely adalah kata serbaguna untuk “bagus” atau “menyenangkan”.",
+      "audio": "audio/en/listening/lr-46.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-47",
+      "speaker": "staff",
+      "english": "Do you want the receipt in the bag?",
+      "indonesian": "Struknya dimasukkan ke kantong?",
+      "reply": {
+        "english": "Yes, thanks.",
+        "indonesian": "Ya, terima kasih."
+      },
+      "audio": "audio/en/listening/lr-47.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-48",
+      "speaker": "receptionist",
+      "english": "Would you like a wake-up call?",
+      "indonesian": "Mau dibangunkan lewat telepon?",
+      "reply": {
+        "english": "Yes, at six thirty, please.",
+        "indonesian": "Ya, jam setengah tujuh, ya."
+      },
+      "audio": "audio/en/listening/lr-48.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-49",
+      "speaker": "staff",
+      "english": "Did you pack your bags yourself?",
+      "indonesian": "Apakah Anda mengemas tas sendiri?",
+      "reply": {
+        "english": "Yes, I did.",
+        "indonesian": "Ya, saya sendiri."
+      },
+      "note": "Pertanyaan yang sering muncul saat check-in di bandara.",
+      "audio": "audio/en/listening/lr-49.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-50",
+      "speaker": "staff",
+      "english": "Your flight’s been delayed by about an hour.",
+      "indonesian": "Penerbangan Anda tertunda sekitar satu jam.",
+      "reply": {
+        "english": "Is there somewhere I can charge my phone?",
+        "indonesian": "Ada tempat untuk mengecas ponsel?"
+      },
+      "audio": "audio/en/listening/lr-50.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-51",
+      "speaker": "passerby",
+      "english": "You look a bit lost. Can I help?",
+      "indonesian": "Kamu kelihatan agak bingung. Perlu bantuan?",
+      "reply": {
+        "english": "Yes, please! I’m looking for the museum.",
+        "indonesian": "Ya, tolong! Saya sedang mencari museum."
+      },
+      "audio": "audio/en/listening/lr-51.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-52",
+      "speaker": "passerby",
+      "english": "It’s just around the corner. You can’t miss it.",
+      "indonesian": "Tepat di balik tikungan. Pasti kelihatan.",
+      "reply": {
+        "english": "Great, thanks heaps!",
+        "indonesian": "Bagus, terima kasih banyak!"
+      },
+      "note": "You can’t miss it. artinya “tidak mungkin terlewat” (pasti kelihatan). thanks heaps adalah “terima kasih banyak” khas Selandia Baru.",
+      "audio": "audio/en/listening/lr-52.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-53",
+      "speaker": "driver",
+      "english": "Hop on, I’ll let you know when we get there.",
+      "indonesian": "Naik saja, nanti kuberi tahu kalau sudah sampai.",
+      "reply": {
+        "english": "Thanks, that’s really helpful.",
+        "indonesian": "Terima kasih, sangat membantu."
+      },
+      "note": "hop on adalah cara santai untuk bilang “naik (kendaraan)”.",
+      "audio": "audio/en/listening/lr-53.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-54",
+      "speaker": "friend",
+      "english": "Help yourself to whatever’s in the fridge.",
+      "indonesian": "Ambil saja apa pun yang ada di kulkas.",
+      "reply": {
+        "english": "Cheers, thanks!",
+        "indonesian": "Sip, makasih!"
+      },
+      "audio": "audio/en/listening/lr-54.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-55",
+      "speaker": "barista",
+      "english": "Sorry for the wait. What can I get for you?",
+      "indonesian": "Maaf menunggu. Mau pesan apa?",
+      "reply": {
+        "english": "Could I get a flat white, please?",
+        "indonesian": "Minta satu flat white, ya."
+      },
+      "audio": "audio/en/listening/lr-55.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-56",
+      "speaker": "server",
+      "english": "Are you paying together or separately?",
+      "indonesian": "Bayarnya digabung atau terpisah?",
+      "reply": {
+        "english": "Separately, please.",
+        "indonesian": "Terpisah, ya."
+      },
+      "audio": "audio/en/listening/lr-56.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-57",
+      "speaker": "friend",
+      "english": "Shall we just split a pizza?",
+      "indonesian": "Bagaimana kalau kita pesan satu piza untuk berdua?",
+      "reply": {
+        "english": "Sounds good to me.",
+        "indonesian": "Boleh, aku setuju."
+      },
+      "audio": "audio/en/listening/lr-57.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-58",
+      "speaker": "neighbour",
+      "english": "Rubbish day’s Tuesday, by the way.",
+      "indonesian": "Omong-omong, hari buang sampah itu hari Selasa.",
+      "reply": {
+        "english": "Oh, thanks for letting me know!",
+        "indonesian": "Oh, terima kasih sudah memberi tahu!"
+      },
+      "note": "Di Selandia Baru, hari pengangkutan sampah (rubbish) ditentukan per wilayah.",
+      "audio": "audio/en/listening/lr-58.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-59",
+      "speaker": "doctor",
+      "english": "Come back and see me if it’s not better in a week.",
+      "indonesian": "Kalau dalam seminggu belum membaik, datang lagi, ya.",
+      "reply": {
+        "english": "OK, I will. Thanks.",
+        "indonesian": "Baik, nanti saya datang lagi. Terima kasih."
+      },
+      "audio": "audio/en/listening/lr-59.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-60",
+      "speaker": "staff",
+      "english": "Are you after anything in particular?",
+      "indonesian": "Ada yang dicari secara khusus?",
+      "reply": {
+        "english": "Yes, I’m looking for a gift for my mum.",
+        "indonesian": "Ya, saya sedang mencari hadiah untuk ibu saya."
+      },
+      "note": "be after adalah cara santai untuk bilang “sedang mencari …”.",
+      "audio": "audio/en/listening/lr-60.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

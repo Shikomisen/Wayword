@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-articles",
+  "connector": "a / the",
+  "gloss": "a dan the sebelum kata benda",
+  "title": "a, an, the — kata kecil sebelum kata benda",
+  "pattern": "a ＋ kata benda yang diawali bunyi konsonan / an ＋ kata benda yang diawali bunyi vokal / the ＋ benda yang sudah jelas",
+  "explanation": "Kalau kata benda yang bisa dihitung jumlahnya satu, tambahkan a di depannya (an kalau bunyi awalnya vokal): a cup, an apple. Untuk sesuatu yang sudah jelas bagi kedua pihak, pakai the: the station (stasiun yang itu, yang sudah sama-sama diketahui), mirip “-nya” dalam “stasiunnya”. Bahasa Indonesia tidak punya kata seperti ini, jadi wajar kalau awalnya sering salah.",
+  "natural": "Can I have a coffee? (Saya pesan satu kopi.), Where’s the toilet? (Toiletnya di mana? = toilet di tempat ini)",
+  "stiff": "Kata benda tunggal yang bisa dihitung, kalau disebut tanpa a, kedengarannya sangat aneh: bukan I have dog., tapi I have a dog. Untuk tempat tertentu di dalam toko atau rumah, pakai the: the fitting room, the bathroom.",
+  "examples": [
+    {
+      "id": "gx-articles-1",
+      "english": "I’d like a cup of tea, please.",
+      "indonesian": "Saya mau secangkir teh.",
+      "chunks": [
+        {
+          "t": "I’d like "
+        },
+        {
+          "t": "a cup ",
+          "w": "w-cup"
+        },
+        {
+          "t": "of tea, please."
+        }
+      ],
+      "gap": {
+        "before": "I’d like ",
+        "answer": "a",
+        "after": " cup of tea, please.",
+        "options": [
+          "a",
+          "an",
+          "the"
+        ],
+        "why": "cup diawali bunyi konsonan, jadi a."
+      },
+      "audio": "audio/en/grammar/gx-articles-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "a / the"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-articles-2",
+      "english": "She has an old car.",
+      "indonesian": "Dia punya mobil tua.",
+      "chunks": [
+        {
+          "t": "She has ",
+          "w": "w-she"
+        },
+        {
+          "t": "an old ",
+          "w": "w-old"
+        },
+        {
+          "t": "car.",
+          "w": "w-car"
+        }
+      ],
+      "gap": {
+        "before": "She has ",
+        "answer": "an",
+        "after": " old car.",
+        "options": [
+          "an",
+          "a",
+          "the"
+        ],
+        "why": "old diawali bunyi vokal, jadi an."
+      },
+      "audio": "audio/en/grammar/gx-articles-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "a / the"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-articles-3",
+      "english": "Where’s the bathroom?",
+      "indonesian": "Toiletnya di mana?",
+      "chunks": [
+        {
+          "t": "Where’s ",
+          "w": "w-where"
+        },
+        {
+          "t": "the bathroom?",
+          "w": "w-bathroom"
+        }
+      ],
+      "gap": {
+        "before": "Where’s ",
+        "answer": "the",
+        "after": " bathroom?",
+        "options": [
+          "the",
+          "a",
+          "an"
+        ],
+        "why": "Sudah jelas toilet di toko (atau rumah) ini, jadi the, seperti “-nya” dalam “toiletnya”."
+      },
+      "audio": "audio/en/grammar/gx-articles-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "a / the"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-articles-4",
+      "english": "There’s a key on the table.",
+      "indonesian": "Ada kunci di atas meja.",
+      "chunks": [
+        {
+          "t": "There’s "
+        },
+        {
+          "t": "a key ",
+          "w": "w-key"
+        },
+        {
+          "t": "on the table.",
+          "w": "w-table"
+        }
+      ],
+      "gap": {
+        "before": "There’s a key on ",
+        "answer": "the",
+        "after": " table.",
+        "options": [
+          "the",
+          "a",
+          "an"
+        ],
+        "why": "Meja yang ada di ruangan ini; sudah jelas meja yang mana, jadi the."
+      },
+      "audio": "audio/en/grammar/gx-articles-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "a / the"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-in-on-at-time",
+  "connector": "at / on / in",
+  "gloss": "kata depan untuk waktu",
+  "title": "at, on, in (waktu) — pada jam, hari, bulan",
+  "pattern": "at ＋ jam / on ＋ hari・tanggal / in ＋ bulan・musim・tahun・pagi atau petang",
+  "explanation": "Untuk jam pakai at: at 7 o’clock, at noon. Untuk hari dan tanggal pakai on: on Monday, on 5 May. Untuk bulan, musim, dan tahun pakai in: in July, in summer, in 2026. in the morning (pagi hari), in the evening (petang), tapi khusus malam: at night. Bahasa Indonesia cukup “pada” atau tanpa kata depan, jadi pilihan ini hal baru.",
+  "natural": "Selalu dipakai saat memberi tahu rencana: See you on Saturday! (Sampai ketemu hari Sabtu!), The shop opens at nine. (Tokonya buka jam sembilan.)",
+  "stiff": "today, tomorrow, next week, every day tidak memakai kata depan: on tomorrow salah, cukup tomorrow.",
+  "examples": [
+    {
+      "id": "gx-in-on-at-time-1",
+      "english": "The shop opens at nine.",
+      "indonesian": "Tokonya buka jam sembilan.",
+      "chunks": [
+        {
+          "t": "The shop "
+        },
+        {
+          "t": "opens at ",
+          "w": "w-open"
+        },
+        {
+          "t": "nine."
+        }
+      ],
+      "gap": {
+        "before": "The shop opens ",
+        "answer": "at",
+        "after": " nine.",
+        "options": [
+          "at",
+          "on",
+          "in"
+        ],
+        "why": "Untuk jam pakai at."
+      },
+      "audio": "audio/en/grammar/gx-in-on-at-time-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "at / on / in"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-in-on-at-time-2",
+      "english": "See you on Saturday!",
+      "indonesian": "Sampai ketemu hari Sabtu!",
+      "chunks": [
+        {
+          "t": "See you ",
+          "w": "w-see"
+        },
+        {
+          "t": "on "
+        },
+        {
+          "t": "Saturday!",
+          "w": "w-saturday"
+        }
+      ],
+      "gap": {
+        "before": "See you ",
+        "answer": "on",
+        "after": " Saturday!",
+        "options": [
+          "on",
+          "at",
+          "in"
+        ],
+        "why": "Untuk hari pakai on."
+      },
+      "audio": "audio/en/grammar/gx-in-on-at-time-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "at / on / in"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-in-on-at-time-3",
+      "english": "I usually go running in the morning.",
+      "indonesian": "Biasanya saya lari di pagi hari.",
+      "chunks": [
+        {
+          "t": "I usually ",
+          "w": "w-i"
+        },
+        {
+          "t": "go running ",
+          "w": "w-run"
+        },
+        {
+          "t": "in the morning.",
+          "w": "w-morning"
+        }
+      ],
+      "gap": {
+        "before": "I usually go running ",
+        "answer": "in",
+        "after": " the morning.",
+        "options": [
+          "in",
+          "at",
+          "on"
+        ],
+        "why": "the morning (pagi) pakai in."
+      },
+      "audio": "audio/en/grammar/gx-in-on-at-time-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "at / on / in"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-in-on-at-time-4",
+      "english": "I’m busy at night.",
+      "indonesian": "Kalau malam saya sibuk.",
+      "chunks": [
+        {
+          "t": "I’m busy ",
+          "w": "w-busy"
+        },
+        {
+          "t": "at "
+        },
+        {
+          "t": "night.",
+          "w": "w-night"
+        }
+      ],
+      "gap": {
+        "before": "I’m busy ",
+        "answer": "at",
+        "after": " night.",
+        "options": [
+          "at",
+          "in",
+          "on"
+        ],
+        "why": "Khusus night pakai at: at night. Beda dengan in the morning."
+      },
+      "audio": "audio/en/grammar/gx-in-on-at-time-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "at / on / in"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

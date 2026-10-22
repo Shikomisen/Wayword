@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-reported",
+  "connector": "She said…",
+  "gloss": "katanya …",
+  "title": "She said…, He told me… — menyampaikan kata orang lain",
+  "pattern": "say (that) … ／ tell ＋ orang ＋ (that) … ／ ask if …",
+  "explanation": "Untuk menyampaikan perkataan orang lain, pakai said atau told, dan biasanya tense isinya digeser satu langkah ke masa lalu: “I’m tired.” → She said she was tired. Bahasa Indonesia cukup bilang “katanya dia capek” tanpa mengubah apa pun; bahasa Inggris perlu said dan pergeseran tense ini. Setelah tell harus ada “kepada siapa”: He told me he was busy.",
+  "natural": "Saat menyampaikan pesan: Sam said he’d be late. (Katanya Sam akan terlambat.)",
+  "stiff": "He said me … itu salah. Kalau menyebut “kepada siapa”, pakai told: He told me …",
+  "examples": [
+    {
+      "id": "gx-reported-1",
+      "english": "Sam said he’d be late.",
+      "indonesian": "Katanya Sam akan terlambat.",
+      "chunks": [
+        {
+          "t": "Sam said ",
+          "w": "w-say"
+        },
+        {
+          "t": "he’d be "
+        },
+        {
+          "t": "late.",
+          "w": "w-late"
+        }
+      ],
+      "gap": {
+        "before": "Sam ",
+        "answer": "said",
+        "after": " he’d be late.",
+        "options": [
+          "said",
+          "told",
+          "talked"
+        ],
+        "why": "Kalau tidak menyebut “kepada siapa”, pakai said."
+      },
+      "audio": "audio/en/grammar/gx-reported-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "She said…"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-reported-2",
+      "english": "She told me the shop was closed.",
+      "indonesian": "Dia bilang ke saya tokonya tutup.",
+      "chunks": [
+        {
+          "t": "She told me ",
+          "w": "w-tell"
+        },
+        {
+          "t": "the shop "
+        },
+        {
+          "t": "was closed.",
+          "w": "w-close"
+        }
+      ],
+      "gap": {
+        "before": "She ",
+        "answer": "told",
+        "after": " me the shop was closed.",
+        "options": [
+          "told",
+          "said",
+          "spoke"
+        ],
+        "why": "Kalau diikuti “kepada siapa” (me), pakai told."
+      },
+      "audio": "audio/en/grammar/gx-reported-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "She said…"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-reported-3",
+      "english": "He asked if we needed help.",
+      "indonesian": "Dia bertanya apakah kami butuh bantuan.",
+      "chunks": [
+        {
+          "t": "He asked ",
+          "w": "w-ask"
+        },
+        {
+          "t": "if we needed ",
+          "w": "w-need"
+        },
+        {
+          "t": "help.",
+          "w": "w-help"
+        }
+      ],
+      "gap": {
+        "before": "He asked ",
+        "answer": "if",
+        "after": " we needed help.",
+        "options": [
+          "if",
+          "that",
+          "what"
+        ],
+        "why": "Untuk menyampaikan pertanyaan ya/tidak, pakai ask if … (if = “apakah”)."
+      },
+      "audio": "audio/en/grammar/gx-reported-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "She said…"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-reported-4",
+      "english": "They said it was going to rain.",
+      "indonesian": "Katanya mau hujan.",
+      "chunks": [
+        {
+          "t": "They said ",
+          "w": "w-say"
+        },
+        {
+          "t": "it was going to "
+        },
+        {
+          "t": "rain.",
+          "w": "w-rain"
+        }
+      ],
+      "gap": {
+        "before": "They said it ",
+        "answer": "was",
+        "after": " going to rain.",
+        "options": [
+          "was",
+          "is",
+          "were"
+        ],
+        "ok": [
+          "is"
+        ],
+        "note": "Kalau sekarang pun masih benar, is juga boleh.",
+        "why": "Saat menyampaikan, tense digeser satu langkah ke masa lalu (is → was)."
+      },
+      "audio": "audio/en/grammar/gx-reported-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "She said…"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

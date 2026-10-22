@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "id": "restaurant",
+  "title": "Kafe & restoran",
+  "order": 7,
+  "description": "Dari memesan sampai membayar. Di kafe Selandia Baru, biasanya kamu memesan dan membayar dulu di kasir, dan tidak perlu memberi tip.",
+  "phrases": [
+    {
+      "id": "res-01",
+      "english": "A table for two, please.",
+      "indonesian": "Untuk dua orang. (minta meja)",
+      "registerNotes": "Kalau ditanya How many?, jawab Two, please. saja sudah cukup.",
+      "pitfallNote": "'Kami berdua' jangan jadi We are two., karena terdengar janggal. Untuk jumlah orang, cukup Two. atau A table for two. Kalau pakai people, jangan lupa jamaknya: two people, bukan two person.",
+      "audio": "audio/en/res-01.mp3",
+      "audioHint": "A table for two, please.",
+      "tags": [
+        "masuk",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-02",
+      "english": "Can I see the menu, please?",
+      "indonesian": "Boleh lihat menunya?",
+      "registerNotes": "Could we get a menu? atau Can I get the menu? juga alami. Menu khusus minuman disebut drinks menu.",
+      "audio": "audio/en/res-02.mp3",
+      "audioHint": "Can I see the menu, please?",
+      "tags": [
+        "memesan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-03",
+      "english": "What do you recommend?",
+      "indonesian": "Rekomendasinya apa?",
+      "registerNotes": "Kalau bingung, tanyakan ke pelayan. Ini juga bisa jadi awal obrolan.",
+      "audio": "audio/en/res-03.mp3",
+      "audioHint": "What do you recommend?",
+      "tags": [
+        "memesan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "res-04",
+      "english": "I'll have the chicken salad.",
+      "indonesian": "Saya pesan salad ayam.",
+      "registerNotes": "Ungkapan standar untuk memesan adalah I'll have .... I'd like ... dan Can I have ...? juga alami (bisa dilatih di bagian Pola).",
+      "pitfallNote": "'Saya mau salad ayam' kalau diterjemahkan langsung jadi I want chicken salad.: tidak kasar, tapi mudah terdengar ketus.",
+      "audio": "audio/en/res-04.mp3",
+      "audioHint": "I'll have the chicken salad.",
+      "tags": [
+        "memesan",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "res-05",
+      "english": "Could I get some water?",
+      "indonesian": "Boleh minta air putih?",
+      "registerNotes": "Di kafe Selandia Baru, air putih sering disediakan untuk diambil sendiri, dan gratis.",
+      "audio": "audio/en/res-05.mp3",
+      "audioHint": "Could I get some water?",
+      "tags": [
+        "memesan",
+        "minuman"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-06",
+      "english": "I'm allergic to peanuts.",
+      "indonesian": "Saya alergi kacang tanah.",
+      "registerNotes": "Selalu sampaikan alergimu saat memesan. Polanya I'm allergic to …, bukan I'm allergy ….",
+      "pitfallNote": "Jangan ucapkan seperti kata 'alergi' dengan g keras. Huruf g di sini dibaca seperti j: allergy kira-kira 'E-le-ji' (tekanan di depan), allergic kira-kira 'e-LE-jik'.",
+      "audio": "audio/en/res-06.mp3",
+      "audioHint": "I'm allergic to peanuts.",
+      "tags": [
+        "memesan",
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "res-07",
+      "english": "Eat in or takeaway?",
+      "indonesian": "Makan di sini atau dibawa pulang?",
+      "registerNotes": "Pertanyaan yang pasti muncul di kafe atau restoran cepat saji. Cukup jawab Eat in, please. atau Takeaway, please. Di Amerika ditanya For here or to go? Kata takeaway sama seperti di kafe Indonesia.",
+      "audio": "audio/en/res-07.mp3",
+      "audioHint": "Eat in or takeaway?",
+      "tags": [
+        "kafe",
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "res-08",
+      "english": "Can we get the bill, please?",
+      "indonesian": "Minta tagihannya, ya.",
+      "registerNotes": "Di Selandia Baru, di kafe kamu biasanya memesan dan membayar dulu di kasir. Di restoran pun, sering kali kamu membayar di kasir saat pulang. Di Amerika, tagihan disebut check.",
+      "pitfallNote": "Tip pada dasarnya tidak perlu, berbeda dengan kebiasaan 15–20% di Amerika.",
+      "audio": "audio/en/res-08.mp3",
+      "audioHint": "Can we get the bill, please?",
+      "tags": [
+        "bayar",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "res-09",
+      "english": "Everything was delicious.",
+      "indonesian": "Semuanya enak.",
+      "registerNotes": "Saat ditanya How was everything?. Great, thanks! saja juga sudah cukup.",
+      "audio": "audio/en/res-09.mp3",
+      "audioHint": "Everything was delicious.",
+      "tags": [
+        "bayar",
+        "kesan"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "Setelah selesai makan, pakai was. Bahasa Indonesia tidak membedakannya, jadi is mudah terucap."
+    },
+    {
+      "id": "res-10",
+      "english": "Can I get a refill?",
+      "indonesian": "Boleh minta isi ulang?",
+      "registerNotes": "Di Selandia Baru, tidak banyak tempat yang memberi isi ulang gratis. Pastikan dulu apakah berbayar.",
+      "audio": "audio/en/res-10.mp3",
+      "audioHint": "Can I get a refill?",
+      "tags": [
+        "minuman"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "res-11",
+      "english": "I'd like a flat white, please.",
+      "indonesian": "Saya pesan flat white.",
+      "registerNotes": "I'd like ... adalah bentuk dasar memesan dengan sopan. flat white adalah kopi susu yang lembut, asal Selandia Baru dan Australia.",
+      "pitfallNote": "I want a flat white. mudah terdengar seperti menuntut. Untuk memesan, pakai I'd like ....",
+      "tags": [
+        "memesan",
+        "kafe",
+        "penting"
+      ],
+      "difficulty": 1,
+      "audio": "audio/en/res-11.mp3",
+      "audioHint": "I'd like a flat white, please."
+    },
+    {
+      "id": "res-12",
+      "english": "Is this spicy?",
+      "indonesian": "Ini pedas?",
+      "registerNotes": "Jawabannya misalnya It's a bit spicy. (agak pedas) atau It's mild. (tidak pedas). Untuk lidah Indonesia, 'pedas' di Selandia Baru biasanya terasa ringan.",
+      "pitfallNote": "Kita cukup bilang 'ini pedas?', jadi This spicy? sering terucap. spicy adalah kata sifat, jadi perlu is: Is this spicy?",
+      "tags": [
+        "memesan",
+        "penting"
+      ],
+      "difficulty": 1,
+      "audio": "audio/en/res-12.mp3",
+      "audioHint": "Is this spicy?"
+    },
+    {
+      "id": "res-13",
+      "english": "Can I have the fish and chips, please?",
+      "indonesian": "Boleh minta fish and chips?",
+      "registerNotes": "Can I have ...? juga cara memesan yang standar. Kalau tidak tahu nama menunya, tunjuk saja: Can I have this one, please?",
+      "tags": [
+        "memesan"
+      ],
+      "difficulty": 1,
+      "audio": "audio/en/res-13.mp3",
+      "audioHint": "Can I have the fish and chips, please?"
+    },
+    {
+      "id": "res-14",
+      "english": "Do you have any vegetarian options?",
+      "indonesian": "Ada pilihan menu vegetarian?",
+      "registerNotes": "options artinya 'pilihan'. vegan (tanpa produk hewani sama sekali) dan gluten-free (bebas gluten) juga sering tertulis di menu. Untuk makanan halal, tanyakan Is this halal?",
+      "tags": [
+        "memesan",
+        "alergi"
+      ],
+      "difficulty": 2,
+      "audio": "audio/en/res-14.mp3",
+      "audioHint": "Do you have any vegetarian options?"
+    }
+  ]
+}

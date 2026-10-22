@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "id": "shopping",
+  "title": "Belanja & pembayaran",
+  "order": 8,
+  "description": "Dari bilang 'cuma lihat-lihat', mencoba baju, ukuran, sampai cara bayar. Kalau bisa menjawab pertanyaan rutin di kasir, belanja jadi tenang.",
+  "phrases": [
+    {
+      "id": "sho-01",
+      "english": "I'm just looking, thanks.",
+      "indonesian": "Cuma lihat-lihat, terima kasih.",
+      "registerNotes": "Saat pelayan menyapa dengan Can I help you?. Dengan tambahan thanks, terdengar ramah.",
+      "audio": "audio/en/sho-01.mp3",
+      "audioHint": "I'm just looking, thanks.",
+      "tags": [
+        "makan di tempat",
+        "penting"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "'Lihat-lihat' jangan diterjemahkan jadi see-see. Bahasa Inggris tidak mengulang kata untuk arti ini: I'm just looking."
+    },
+    {
+      "id": "sho-02",
+      "english": "Do you have this in a medium?",
+      "indonesian": "Yang ini ada ukuran M?",
+      "registerNotes": "in + ukuran/warna artinya 'dalam ukuran/warna …'. Misalnya in black, in a smaller size.",
+      "audio": "audio/en/sho-02.mp3",
+      "audioHint": "Do you have this in a medium?",
+      "tags": [
+        "ukuran"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "sho-03",
+      "english": "Can I try this on?",
+      "indonesian": "Boleh saya coba?",
+      "registerNotes": "Kamar pas di Selandia Baru disebut fitting room atau changing room (di Amerika dressing room).",
+      "audio": "audio/en/sho-03.mp3",
+      "audioHint": "Can I try this on?",
+      "tags": [
+        "mencoba baju"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-04",
+      "english": "I'll take it.",
+      "indonesian": "Saya ambil yang ini.",
+      "registerNotes": "Ungkapan standar saat kamu memutuskan untuk membeli.",
+      "audio": "audio/en/sho-04.mp3",
+      "audioHint": "I'll take it.",
+      "tags": [
+        "membeli",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-05",
+      "english": "Can I pay by card?",
+      "indonesian": "Bisa bayar pakai kartu?",
+      "registerNotes": "Di Selandia Baru, pembayaran dengan kartu debit disebut EFTPOS. Di kasir sering terdengar Tap when you're ready. (silakan tempelkan kartu kalau sudah siap).",
+      "audio": "audio/en/sho-05.mp3",
+      "audioHint": "Can I pay by card?",
+      "tags": [
+        "pembayaran",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-06",
+      "english": "Can I get a bag?",
+      "indonesian": "Boleh minta kantong belanja?",
+      "registerNotes": "Di Selandia Baru, kantong plastik sekali pakai dilarang, dan kantong kertas atau tas belanja kadang harus dibayar, mirip aturan di Jakarta atau Bali.",
+      "pitfallNote": "Kita bilang 'minta plastik', tapi plastic saja bukan kantong. Katakan a plastic bag atau a bag.",
+      "audio": "audio/en/sho-06.mp3",
+      "audioHint": "Can I get a bag?",
+      "tags": [
+        "pembayaran",
+        "kasir"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-07",
+      "english": "Could I get a receipt?",
+      "indonesian": "Boleh minta struknya?",
+      "registerNotes": "Huruf p dalam receipt tidak dibaca: kira-kira 'ri-SIIT'.",
+      "pitfallNote": "Jangan baca huruf p-nya, dan jangan tertukar dengan recipe (resep masakan).",
+      "audio": "audio/en/sho-07.mp3",
+      "audioHint": "Could I get a receipt?",
+      "tags": [
+        "pembayaran",
+        "kasir"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-08",
+      "english": "Can I return this?",
+      "indonesian": "Barang ini bisa dikembalikan?",
+      "registerNotes": "Tunjukkan struknya juga. Uang kembali disebut refund, tukar dengan barang lain disebut exchange.",
+      "audio": "audio/en/sho-08.mp3",
+      "audioHint": "Can I return this?",
+      "tags": [
+        "pengembalian barang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "sho-09",
+      "english": "Do you have anything cheaper?",
+      "indonesian": "Ada yang lebih murah?",
+      "registerNotes": "Kalau ingin menyebut anggaran: I'm looking for something under fifty dollars. (saya cari yang di bawah 50 dolar). Di toko Selandia Baru, harga biasanya pas dan tidak ditawar.",
+      "audio": "audio/en/sho-09.mp3",
+      "audioHint": "Do you have anything cheaper?",
+      "tags": [
+        "harga"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "sho-10",
+      "english": "Is this on special?",
+      "indonesian": "Ini sedang diskon?",
+      "registerNotes": "Di Selandia Baru dan Australia, on special (harga promo) sering dipakai. on sale juga dimengerti.",
+      "pitfallNote": "Di Indonesia 'sale' berarti diskon, tapi for sale artinya 'dijual', tidak ada hubungannya dengan potongan harga.",
+      "audio": "audio/en/sho-10.mp3",
+      "audioHint": "Is this on special?",
+      "tags": [
+        "harga"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-11",
+      "english": "Do you have this in a bigger size?",
+      "indonesian": "Yang ini ada ukuran lebih besar?",
+      "registerNotes": "Untuk ukuran lebih kecil: a smaller size. Untuk warna: in + warna, seperti in black.",
+      "pitfallNote": "'Lebih besar' bukan more big. Pakai bigger / smaller: a bigger size.",
+      "tags": [
+        "pakaian",
+        "ukuran",
+        "penting"
+      ],
+      "difficulty": 1,
+      "audio": "audio/en/sho-11.mp3",
+      "audioHint": "Do you have this in a bigger size?"
+    },
+    {
+      "id": "sho-12",
+      "english": "Where's the fitting room?",
+      "indonesian": "Kamar pasnya di mana?",
+      "registerNotes": "Bisa juga disebut changing room. Saat kamu membawa baju ke sana, pelayan kadang menghitung jumlahnya (Just the two?).",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 1,
+      "audio": "audio/en/sho-12.mp3",
+      "audioHint": "Where's the fitting room?"
+    },
+    {
+      "id": "sho-13",
+      "english": "It's a bit too small.",
+      "indonesian": "Agak kekecilan.",
+      "registerNotes": "Setelah mencoba baju. a bit too big (kebesaran), too long (kepanjangan), too tight (kesempitan) juga pakai bentuk yang sama.",
+      "tags": [
+        "pakaian",
+        "ukuran"
+      ],
+      "difficulty": 2,
+      "audio": "audio/en/sho-13.mp3",
+      "audioHint": "It's a bit too small.",
+      "pitfallNote": "too artinya 'terlalu' (ada yang tidak pas). Untuk memuji, pakai very: It's very nice, bukan It's too nice."
+    },
+    {
+      "id": "sho-14",
+      "english": "Can I have this one, please?",
+      "indonesian": "Saya mau yang ini.",
+      "registerNotes": "Sambil menunjuk, ini pasti dimengerti walaupun kamu tidak tahu nama barangnya. Kalau dua: Can I have two of these, please?",
+      "tags": [
+        "memesan",
+        "penting"
+      ],
+      "difficulty": 1,
+      "audio": "audio/en/sho-14.mp3",
+      "audioHint": "Can I have this one, please?"
+    }
+  ]
+}

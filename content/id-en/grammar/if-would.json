@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-if-would",
+  "connector": "If I were…",
+  "gloss": "seandainya … (tidak sesuai kenyataan)",
+  "title": "If I had…, I’d… — seandainya … (hal yang tidak nyata)",
+  "pattern": "If ＋ past tense, would ＋ kata kerja dasar ／ If I were you, …",
+  "explanation": "Untuk “seandainya …” tentang hal yang berbeda dari kenyataan atau kecil kemungkinannya, bagian setelah if memakai past tense, dan akibatnya memakai would: If I had more time, I’d travel more. (Seandainya punya lebih banyak waktu, aku akan lebih sering jalan-jalan.) Bentuknya lampau, tapi yang dibicarakan adalah sekarang. Untuk be, biasanya dipakai were: If I were you, … (Kalau aku jadi kamu, …). Bahasa Indonesia membedakan “kalau” dan “seandainya” dengan kata; bahasa Inggris dengan bentuk kata kerja.",
+  "natural": "Ungkapan baku untuk memberi saran: If I were you, I’d see a doctor. (Kalau aku jadi kamu, aku periksa ke dokter.)",
+  "stiff": "Memasukkan would setelah if itu salah: bukan If I would have …, tapi If I had …",
+  "examples": [
+    {
+      "id": "gx-if-would-1",
+      "english": "If I had more time, I’d travel more.",
+      "indonesian": "Seandainya punya lebih banyak waktu, aku akan lebih sering jalan-jalan.",
+      "chunks": [
+        {
+          "t": "If I had more time, ",
+          "w": "w-have"
+        },
+        {
+          "t": "I’d travel more."
+        }
+      ],
+      "gap": {
+        "before": "If I ",
+        "answer": "had",
+        "after": " more time, I’d travel more.",
+        "options": [
+          "had",
+          "have",
+          "would have"
+        ],
+        "why": "“Seandainya” yang tidak sesuai kenyataan memakai if + past tense."
+      },
+      "audio": "audio/en/grammar/gx-if-would-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "If I were…"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-if-would-2",
+      "english": "If I were you, I’d see a doctor.",
+      "indonesian": "Kalau aku jadi kamu, aku akan periksa ke dokter.",
+      "chunks": [
+        {
+          "t": "If I were you, ",
+          "w": "w-you"
+        },
+        {
+          "t": "I’d see ",
+          "w": "w-see"
+        },
+        {
+          "t": "a doctor.",
+          "w": "w-doctor"
+        }
+      ],
+      "gap": {
+        "before": "If I ",
+        "answer": "were",
+        "after": " you, I’d see a doctor.",
+        "options": [
+          "were",
+          "was",
+          "am"
+        ],
+        "ok": [
+          "was"
+        ],
+        "note": "If I was you juga sering terdengar dalam percakapan. were adalah bentuk yang lebih baku.",
+        "why": "If I were you (kalau aku jadi kamu) adalah ungkapan baku."
+      },
+      "audio": "audio/en/grammar/gx-if-would-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "If I were…"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-if-would-3",
+      "english": "What would you do if you won the lottery?",
+      "indonesian": "Seandainya kamu menang lotre, apa yang akan kamu lakukan?",
+      "chunks": [
+        {
+          "t": "What would you do ",
+          "w": "w-do"
+        },
+        {
+          "t": "if you won "
+        },
+        {
+          "t": "the lottery?"
+        }
+      ],
+      "gap": {
+        "before": "What ",
+        "answer": "would",
+        "after": " you do if you won the lottery?",
+        "options": [
+          "would",
+          "will",
+          "do"
+        ],
+        "why": "Akibat dari “seandainya” memakai would."
+      },
+      "audio": "audio/en/grammar/gx-if-would-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "If I were…"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-if-would-4",
+      "english": "It would be great if you could come.",
+      "indonesian": "Senang sekali kalau kamu bisa datang.",
+      "chunks": [
+        {
+          "t": "It would be great "
+        },
+        {
+          "t": "if you could come.",
+          "w": "w-come"
+        }
+      ],
+      "gap": {
+        "before": "It ",
+        "answer": "would",
+        "after": " be great if you could come.",
+        "options": [
+          "would",
+          "will",
+          "is"
+        ],
+        "why": "would juga dipakai untuk menyampaikan permintaan atau perasaan dengan halus."
+      },
+      "audio": "audio/en/grammar/gx-if-would-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "If I were…"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

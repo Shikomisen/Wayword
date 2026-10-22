@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "id": "cafe",
+  "title": "Memesan di kafe",
+  "category": "restaurant",
+  "setting": "Kafe yang ramai di Auckland. Di kafe Selandia Baru, kamu memesan di konter dan membayar di awal.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "barista",
+      "english": "Hi there! What can I get for you?",
+      "indonesian": "Halo! Mau pesan apa?",
+      "audio": "audio/en/scenario/cafe-n1.mp3",
+      "audioHint": "Hi there! What can I get for you?",
+      "options": [
+        {
+          "phraseId": "res-11",
+          "quality": "good",
+          "feedback": "Bentuk dasar untuk memesan. Sempurna.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "Can I have a flat white, please?",
+          "indonesian": "Boleh minta satu flat white?",
+          "feedback": "Can I have ...? juga cara memesan yang umum.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "I want flat white.",
+          "indonesian": "(Saya mau flat white)",
+          "feedback": "Dimengerti, tapi terdengar ketus. “Saya mau” yang diterjemahkan langsung menjadi I want terdengar menuntut. Pakai I'd like ... atau Can I have ...?, dan jangan lupa a: a flat white.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "barista",
+      "english": "Sure. Anything to eat?",
+      "indonesian": "Baik. Ada yang mau dimakan?",
+      "audio": "audio/en/scenario/cafe-n2.mp3",
+      "audioHint": "Sure. Anything to eat?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Is the curry pie spicy?",
+          "indonesian": "Pai karinya pedas?",
+          "feedback": "Wajar menanyakan rasa makanan yang membuatmu penasaran. Cukup ganti this di Is this spicy? dengan nama makanannya.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "res-03",
+          "quality": "good",
+          "feedback": "Kalau bingung, tanya saja. Pegawainya pasti senang memberi saran.",
+          "next": "n3r"
+        },
+        {
+          "quality": "wrong",
+          "english": "No eat.",
+          "indonesian": "(nggak makan)",
+          "feedback": "“Nggak makan” tidak bisa diterjemahkan kata per kata. Bilang No, thanks. Just the coffee. (Tidak, terima kasih. Kopinya saja.)",
+          "next": "n4"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "barista",
+      "english": "It's a little bit spicy. The mince and cheese is mild, though.",
+      "indonesian": "Agak pedas. Tapi pai daging cincang dan kejunya tidak pedas.",
+      "audio": "audio/en/scenario/cafe-n3.mp3",
+      "audioHint": "It's a little bit spicy. The mince and cheese is mild, though.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "I'll have the mince and cheese, then.",
+          "indonesian": "Kalau begitu, saya pesan yang daging cincang dan keju.",
+          "feedback": "Dengan then (kalau begitu), jawabanmu terdengar alami karena menanggapi ucapan lawan bicara.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "Can I have the curry pie, please?",
+          "indonesian": "Boleh minta pai karinya?",
+          "feedback": "Kalau kamu tahan pedas, langsung pesan saja.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "english": "Mild? What is mild?",
+          "indonesian": "(Mild itu apa?)",
+          "feedback": "Bertanya itu bagus, tapi Sorry, what does \"mild\" mean? lebih sopan. mild artinya “tidak pedas”.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n3r": {
+      "speaker": "barista",
+      "english": "The mince and cheese pie is really popular.",
+      "indonesian": "Pai daging cincang dan keju laris sekali.",
+      "audio": "audio/en/scenario/cafe-n3r.mp3",
+      "audioHint": "The mince and cheese pie is really popular.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Great, I'll have that, please.",
+          "indonesian": "Oke, saya pesan itu.",
+          "feedback": "Cara alami untuk langsung memesan yang direkomendasikan.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "Sounds good. Can I have one, please?",
+          "indonesian": "Kedengarannya enak. Minta satu, ya.",
+          "feedback": "Sounds good. artinya “kedengarannya enak” atau “boleh juga”. Pas untuk jawaban santai.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "english": "Popular is good.",
+          "indonesian": "(yang populer bagus)",
+          "feedback": "Maksudnya sampai, tapi kalimat ini tidak wajar dalam bahasa Inggris. Jawab saja Great, I'll have that.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "barista",
+      "english": "Eat in or takeaway?",
+      "indonesian": "Makan di sini atau dibawa pulang?",
+      "audio": "audio/en/scenario/cafe-n4.mp3",
+      "audioHint": "Eat in or takeaway?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Eat in, please.",
+          "indonesian": "Makan di sini.",
+          "feedback": "Cukup jawab begini.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "english": "Takeaway, please.",
+          "indonesian": "Dibawa pulang.",
+          "feedback": "Ini saja sudah jelas.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "english": "Take out, please.",
+          "indonesian": "(dibawa pulang)",
+          "feedback": "Dimengerti, tapi ini gaya Amerika. Di Selandia Baru yang biasa dipakai adalah takeaway, mirip “take away” di kafe Indonesia.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "barista",
+      "english": "Great. That's eleven fifty. Tap whenever you're ready.",
+      "indonesian": "Baik. Jadi sebelas dolar lima puluh. Silakan tap kartunya kalau sudah siap.",
+      "audio": "audio/en/scenario/cafe-n5.mp3",
+      "audioHint": "Great. That's eleven fifty. Tap whenever you're ready.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Okay, thanks.",
+          "indonesian": "Oke, terima kasih.",
+          "feedback": "Tap kartumu, dan pembayaran selesai.",
+          "next": "n6"
+        },
+        {
+          "phraseId": "gre-10",
+          "quality": "good",
+          "feedback": "Kalau jumlahnya tidak tertangkap, minta diulang adalah langkah yang tepat.",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "english": "Eleven fifteen?",
+          "indonesian": "(11 dolar 15 sen?)",
+          "feedback": "Memastikan itu bagus, tapi kali ini eleven fifty (11,50). fifteen (15) dan fifty (50) mudah tertukar: dengarkan tekanannya, fif-TEEN dan FIF-ty.",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "barista",
+      "english": "Here's your number. We'll bring it out to you.",
+      "indonesian": "Ini nomornya. Nanti pesananmu kami antar ke meja.",
+      "audio": "audio/en/scenario/cafe-n6.mp3",
+      "audioHint": "Here's your number. We'll bring it out to you.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Thank you!",
+          "indonesian": "Terima kasih!",
+          "feedback": "Taruh nomornya di meja, lalu tunggu.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "english": "Cheers!",
+          "indonesian": "Makasih! (santai)",
+          "feedback": "Cheers! adalah “makasih” santai yang sering dipakai di Selandia Baru.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "wrong",
+          "feedback": "Tidak ada yang berterima kasih kepadamu, jadi jawaban ini tidak cocok. Balas dengan Thank you!",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "indonesian": "Pesanan selesai. Di kafe Selandia Baru, biasanya kamu memesan di konter, membayar dulu, lalu menaruh nomor di meja dan menunggu. Tidak perlu tip. Untuk memesan, pakai I'd like ... atau Can I have ...?",
+      "end": true,
+      "options": []
+    }
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-passive",
+  "connector": "is made",
+  "gloss": "di-… (kalimat pasif)",
+  "title": "It’s made in… — di-… (kalimat pasif)",
+  "pattern": "be ＋ past participle（by …）",
+  "explanation": "Bentuk “di-…” dalam bahasa Inggris adalah be + past participle (V3). Dipakai kalau yang penting adalah apa yang terjadi, bukan siapa pelakunya: This bridge was built in 1932. (Jembatan ini dibangun tahun 1932.), My bag was stolen. (Tasku dicuri.) Untuk menyebut pelakunya, pakai by … (“oleh …”). Orang Indonesia memakai pasif jauh lebih sering daripada penutur bahasa Inggris, jadi tidak semua “di-” perlu jadi pasif.",
+  "natural": "Di toko atau saat jalan-jalan: Is breakfast included? (Sudah termasuk sarapan?), It’s made in New Zealand. (Ini buatan Selandia Baru.)",
+  "stiff": "Dalam bahasa Indonesia, “Bukunya sudah saya baca” terdengar wajar, tapi dalam bahasa Inggris kalimat aktif biasanya lebih alami: I’ve read the book., bukan The book has been read by me. Jangan lupa be juga: My bag stolen. salah, yang benar My bag was stolen.",
+  "examples": [
+    {
+      "id": "gx-passive-1",
+      "english": "This wine is made in New Zealand.",
+      "indonesian": "Wine ini dibuat di Selandia Baru.",
+      "chunks": [
+        {
+          "t": "This wine "
+        },
+        {
+          "t": "is made ",
+          "w": "w-make"
+        },
+        {
+          "t": "in New Zealand."
+        }
+      ],
+      "gap": {
+        "before": "This wine is ",
+        "answer": "made",
+        "after": " in New Zealand.",
+        "options": [
+          "made",
+          "make",
+          "making"
+        ],
+        "why": "“Dibuat di …” adalah be + past participle (made)."
+      },
+      "audio": "audio/en/grammar/gx-passive-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "is made"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-passive-2",
+      "english": "My bag was stolen yesterday.",
+      "indonesian": "Kemarin tas saya dicuri.",
+      "chunks": [
+        {
+          "t": "My bag ",
+          "w": "w-bag"
+        },
+        {
+          "t": "was stolen ",
+          "w": "w-stolen"
+        },
+        {
+          "t": "yesterday.",
+          "w": "w-yesterday"
+        }
+      ],
+      "gap": {
+        "before": "My bag ",
+        "answer": "was",
+        "after": " stolen yesterday.",
+        "options": [
+          "was",
+          "is",
+          "did"
+        ],
+        "why": "Pasif di masa lalu memakai was + past participle."
+      },
+      "audio": "audio/en/grammar/gx-passive-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "is made"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-passive-3",
+      "english": "Is breakfast included?",
+      "indonesian": "Apakah sudah termasuk sarapan?",
+      "chunks": [
+        {
+          "t": "Is breakfast "
+        },
+        {
+          "t": "included?",
+          "w": "w-included"
+        }
+      ],
+      "gap": {
+        "before": "Is breakfast ",
+        "answer": "included",
+        "after": "?",
+        "options": [
+          "included",
+          "include",
+          "including"
+        ],
+        "why": "“Termasuk” adalah be + included."
+      },
+      "audio": "audio/en/grammar/gx-passive-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "is made"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-passive-4",
+      "english": "The game was called off because of the rain.",
+      "indonesian": "Pertandingannya dibatalkan karena hujan.",
+      "chunks": [
+        {
+          "t": "The game "
+        },
+        {
+          "t": "was called off ",
+          "w": "w-call-off"
+        },
+        {
+          "t": "because of the rain.",
+          "w": "w-rain"
+        }
+      ],
+      "gap": {
+        "before": "The game was ",
+        "answer": "called off",
+        "after": " because of the rain.",
+        "options": [
+          "called off",
+          "call off",
+          "calling off"
+        ],
+        "why": "Pasif memakai be + past participle. Phrasal verb juga sama (called off)."
+      },
+      "audio": "audio/en/grammar/gx-passive-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "is made"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "id": "words-money",
+  "title": "Kata tentang uang",
+  "description": "Harga, pembayaran, dan mengatur uang. Kata yang sering terdengar di kasir dan di bank.",
+  "items": [
+    {
+      "id": "w-dollar",
+      "english": "dollar",
+      "indonesian": "dolar",
+      "pos": "noun",
+      "registerNotes": "Dolar Selandia Baru (NZ$). twenty-five fifty artinya $25.50.",
+      "audio": "audio/en/words/w-dollar.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "Bahasa Inggris memakai titik untuk desimal dan koma untuk ribuan: $1,250.50 (dalam bahasa Indonesia: 1.250,50)."
+    },
+    {
+      "id": "w-cents",
+      "english": "cents",
+      "indonesian": "sen",
+      "pos": "noun",
+      "registerNotes": "1 dolar = 100 sen. Di Selandia Baru tidak ada koin 1 atau 5 sen; koin terkecil adalah 10 sen.",
+      "audio": "audio/en/words/w-cents.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-coins",
+      "english": "coins",
+      "indonesian": "koin, uang logam",
+      "pos": "noun",
+      "registerNotes": "I don't have any coins. (Aku tidak punya uang receh.)",
+      "audio": "audio/en/words/w-coins.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-notes",
+      "english": "notes",
+      "indonesian": "uang kertas",
+      "pos": "noun",
+      "registerNotes": "a twenty-dollar note (uang kertas 20 dolar). dollar di sini tanpa -s.",
+      "pitfallNote": "Di Amerika disebut bill.",
+      "audio": "audio/en/words/w-notes.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-total",
+      "english": "total",
+      "indonesian": "total, jumlah",
+      "pos": "noun",
+      "registerNotes": "That's twenty dollars in total. (Totalnya 20 dolar.)",
+      "audio": "audio/en/words/w-total.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-gst",
+      "english": "GST",
+      "indonesian": "pajak (seperti PPN)",
+      "pos": "noun",
+      "registerNotes": "Pajak konsumsi Selandia Baru (15%), seperti PPN. Harga di label biasanya sudah termasuk GST.",
+      "audio": "audio/en/words/w-gst.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-insert",
+      "english": "insert",
+      "indonesian": "memasukkan (kartu)",
+      "pos": "verb",
+      "registerNotes": "Insert your card. (Masukkan kartu Anda.)",
+      "audio": "audio/en/words/w-insert.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-swipe",
+      "english": "swipe",
+      "indonesian": "menggesek (kartu)",
+      "pos": "verb",
+      "registerNotes": "swipe your card (gesek kartumu)",
+      "audio": "audio/en/words/w-swipe.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-declined",
+      "english": "declined",
+      "indonesian": "ditolak (kartu)",
+      "pos": "adjective",
+      "registerNotes": "Sorry, your card's been declined. (Maaf, kartunya ditolak.)",
+      "audio": "audio/en/words/w-declined.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-split-the-bill",
+      "english": "split the bill",
+      "indonesian": "bayar masing-masing, patungan",
+      "pos": "phrase",
+      "registerNotes": "Can we split the bill? (Bisa bayar sendiri-sendiri? / Bisa dibagi?)",
+      "audio": "audio/en/words/w-split-the-bill.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tip",
+      "english": "tip",
+      "indonesian": "tip",
+      "pos": "noun",
+      "registerNotes": "Di Selandia Baru biasanya tidak perlu memberi tip.",
+      "audio": "audio/en/words/w-tip.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cost",
+      "english": "cost",
+      "indonesian": "berharga, memakan biaya",
+      "pos": "verb",
+      "registerNotes": "How much does it cost? (Biayanya berapa?)",
+      "audio": "audio/en/words/w-cost.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-afford",
+      "english": "afford",
+      "indonesian": "mampu (membeli)",
+      "pos": "verb",
+      "registerNotes": "I can't afford it. (Aku tidak mampu beli, terlalu mahal.)",
+      "audio": "audio/en/words/w-afford.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-save",
+      "english": "save",
+      "indonesian": "menabung, menghemat",
+      "pos": "verb",
+      "registerNotes": "save money (menabung, menghemat uang)",
+      "audio": "audio/en/words/w-save.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-spend",
+      "english": "spend",
+      "indonesian": "menghabiskan (uang, waktu)",
+      "pos": "verb",
+      "registerNotes": "spend money (mengeluarkan uang). Bentuk lampau: spent.",
+      "audio": "audio/en/words/w-spend.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-owe",
+      "english": "owe",
+      "indonesian": "berutang",
+      "pos": "verb",
+      "registerNotes": "How much do I owe you? (Jadi saya harus bayar berapa?)",
+      "audio": "audio/en/words/w-owe.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-worth",
+      "english": "worth",
+      "indonesian": "sepadan, bernilai",
+      "pos": "adjective",
+      "registerNotes": "It's worth it. (Sepadan, kok.)",
+      "audio": "audio/en/words/w-worth.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bargain",
+      "english": "bargain",
+      "indonesian": "barang murah, harga miring",
+      "pos": "noun",
+      "registerNotes": "It's a bargain! (Murah banget!)",
+      "audio": "audio/en/words/w-bargain.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "Sebagai kata kerja, bargain berarti “menawar”. Tapi di toko-toko Selandia Baru harganya pas, biasanya tidak bisa ditawar."
+    },
+    {
+      "id": "w-rip-off",
+      "english": "rip-off",
+      "indonesian": "kemahalan, harga tidak wajar",
+      "pos": "noun",
+      "registerNotes": "That's a rip-off! (Mahalnya keterlaluan!)",
+      "audio": "audio/en/words/w-rip-off.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-free",
+      "english": "free",
+      "indonesian": "gratis",
+      "pos": "adjective",
+      "registerNotes": "It's free. (Gratis.)",
+      "pitfallNote": "free juga berarti “bebas” dan “senggang” (Are you free tomorrow?). Mendapat sesuatu dengan gratis: I got it for free.",
+      "audio": "audio/en/words/w-free.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-extra",
+      "english": "extra",
+      "indonesian": "tambahan, bayar lagi",
+      "pos": "adjective",
+      "registerNotes": "Is that extra? (Itu bayar lagi?)",
+      "audio": "audio/en/words/w-extra.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-included",
+      "english": "included",
+      "indonesian": "termasuk",
+      "pos": "adjective",
+      "registerNotes": "Is GST included? (Sudah termasuk pajak?)",
+      "audio": "audio/en/words/w-included.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bank",
+      "english": "bank",
+      "indonesian": "bank",
+      "pos": "noun",
+      "audio": "audio/en/words/w-bank.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-atm",
+      "english": "ATM",
+      "indonesian": "ATM (anjungan tunai mandiri)",
+      "pos": "noun",
+      "registerNotes": "Dibaca “ei-ti-em”. Disebut juga cash machine.",
+      "audio": "audio/en/words/w-atm.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-account",
+      "english": "account",
+      "indonesian": "rekening, akun",
+      "pos": "noun",
+      "registerNotes": "bank account (rekening bank)",
+      "audio": "audio/en/words/w-account.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-fee",
+      "english": "fee",
+      "indonesian": "biaya, ongkos",
+      "pos": "noun",
+      "registerNotes": "Is there a fee? (Ada biayanya?)",
+      "audio": "audio/en/words/w-fee.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-budget",
+      "english": "budget",
+      "indonesian": "anggaran",
+      "pos": "noun",
+      "registerNotes": "What's your budget? (Anggarannya berapa?)",
+      "audio": "audio/en/words/w-budget.mp3",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

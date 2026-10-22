@@ -1,0 +1,396 @@
+{
+  "schemaVersion": 1,
+  "id": "words-phrasal",
+  "title": "Phrasal verb",
+  "description": "Ungkapan dari kata kerja dan kata pendek, seperti pick up dan hold on. Sangat sering dipakai dalam percakapan.",
+  "items": [
+    {
+      "id": "w-pick-up",
+      "english": "pick up",
+      "indonesian": "mengambil, memungut, menjemput",
+      "pos": "verb",
+      "registerNotes": "I'm here to pick up an order. (Saya mau ambil pesanan.), I'll pick you up. (Nanti aku jemput, ya.)",
+      "audio": "audio/en/words/w-pick-up.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-put-back",
+      "english": "put back",
+      "indonesian": "mengembalikan ke tempatnya",
+      "pos": "verb",
+      "registerNotes": "I'll put it back. (Nanti saya taruh lagi di tempatnya.)",
+      "audio": "audio/en/words/w-put-back.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hold-on",
+      "english": "hold on",
+      "indonesian": "tunggu sebentar",
+      "pos": "verb",
+      "registerNotes": "Hold on a sec. (Tunggu sebentar.) Sering juga dipakai di telepon.",
+      "audio": "audio/en/words/w-hold-on.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hang-on",
+      "english": "hang on",
+      "indonesian": "tunggu sebentar",
+      "pos": "verb",
+      "registerNotes": "Hang on a minute. (Tunggu sebentar, ya.) — hampir sama dengan hold on, sedikit lebih santai.",
+      "audio": "audio/en/words/w-hang-on.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sort-out",
+      "english": "sort out",
+      "indonesian": "membereskan, menyelesaikan",
+      "pos": "verb",
+      "registerNotes": "Don't worry, we'll sort it out. (Tenang, nanti kami bereskan.)",
+      "audio": "audio/en/words/w-sort-out.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-check-out",
+      "english": "check out",
+      "indonesian": "check-out; melihat-lihat",
+      "pos": "verb",
+      "registerNotes": "check out of the hotel (check-out dari hotel), Check this out! (Lihat ini!)",
+      "audio": "audio/en/words/w-check-out.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-run-out-of",
+      "english": "run out of",
+      "indonesian": "kehabisan",
+      "pos": "verb",
+      "registerNotes": "We've run out of milk. (Susunya habis.)",
+      "audio": "audio/en/words/w-run-out-of.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-end-up",
+      "english": "end up",
+      "indonesian": "akhirnya (jadi)",
+      "pos": "verb",
+      "registerNotes": "I ended up buying two. (Akhirnya aku beli dua.)",
+      "audio": "audio/en/words/w-end-up.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-figure-out",
+      "english": "figure out",
+      "indonesian": "memahami, menemukan caranya",
+      "pos": "verb",
+      "registerNotes": "I can't figure out how to use this. (Aku tidak tahu cara memakai ini.)",
+      "audio": "audio/en/words/w-figure-out.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-find-out",
+      "english": "find out",
+      "indonesian": "mencari tahu, mengetahui",
+      "pos": "verb",
+      "registerNotes": "I'll find out for you. (Saya carikan informasinya.)",
+      "audio": "audio/en/words/w-find-out.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-look-after",
+      "english": "look after",
+      "indonesian": "menjaga, merawat",
+      "pos": "verb",
+      "registerNotes": "Can you look after my bag for a minute? (Boleh titip tas sebentar?)",
+      "audio": "audio/en/words/w-look-after.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-turn-on",
+      "english": "turn on",
+      "indonesian": "menyalakan",
+      "pos": "verb",
+      "registerNotes": "turn on the light (menyalakan lampu)",
+      "audio": "audio/en/words/w-turn-on.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "Bukan open the light (dari buka lampu): turn on the light."
+    },
+    {
+      "id": "w-turn-off",
+      "english": "turn off",
+      "indonesian": "mematikan",
+      "pos": "verb",
+      "registerNotes": "turn off your phone (matikan HP-mu)",
+      "audio": "audio/en/words/w-turn-off.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "Bukan close the light (dari tutup lampu): turn off the light."
+    },
+    {
+      "id": "w-fill-in",
+      "english": "fill in",
+      "indonesian": "mengisi (formulir)",
+      "pos": "verb",
+      "registerNotes": "Can you fill in this form? (Bisa isi formulir ini?)",
+      "audio": "audio/en/words/w-fill-in.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-give-back",
+      "english": "give back",
+      "indonesian": "mengembalikan",
+      "pos": "verb",
+      "registerNotes": "I'll give it back tomorrow. (Besok aku kembalikan.)",
+      "audio": "audio/en/words/w-give-back.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-come-back",
+      "english": "come back",
+      "indonesian": "kembali, datang lagi",
+      "pos": "verb",
+      "registerNotes": "I'll come back later. (Nanti saya kembali lagi.) — berguna juga saat keluar dari toko tanpa membeli.",
+      "audio": "audio/en/words/w-come-back.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-get-on",
+      "english": "get on",
+      "indonesian": "naik (bus, kereta)",
+      "pos": "verb",
+      "registerNotes": "get on the bus (naik bus)",
+      "pitfallNote": "Bahasa Indonesia memakai naik untuk semuanya. Bus dan kereta: get on; mobil dan taksi: get in.",
+      "audio": "audio/en/words/w-get-on.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-get-off",
+      "english": "get off",
+      "indonesian": "turun (dari bus, kereta)",
+      "pos": "verb",
+      "registerNotes": "Where should I get off? (Saya harus turun di mana?)",
+      "audio": "audio/en/words/w-get-off.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-top-up",
+      "english": "top up",
+      "indonesian": "isi ulang (saldo)",
+      "pos": "verb",
+      "registerNotes": "top up my bus card (isi saldo kartu bus). Isi pulsa juga top up.",
+      "audio": "audio/en/words/w-top-up.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-drop-off",
+      "english": "drop off",
+      "indonesian": "menurunkan (penumpang), mengantar",
+      "pos": "verb",
+      "registerNotes": "Can you drop me off here? (Bisa turunkan saya di sini?)",
+      "audio": "audio/en/words/w-drop-off.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-put-on",
+      "english": "put on",
+      "indonesian": "memakai, mengenakan",
+      "pos": "verb",
+      "registerNotes": "put on a jacket (memakai jaket)",
+      "audio": "audio/en/words/w-put-on.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "put on = gerakan memakai. Kalau sedang memakai, pakai wear: She’s wearing a jacket."
+    },
+    {
+      "id": "w-take-off",
+      "english": "take off",
+      "indonesian": "melepas (baju, sepatu)",
+      "pos": "verb",
+      "registerNotes": "Please take off your shoes. (Tolong lepas sepatunya.)",
+      "audio": "audio/en/words/w-take-off.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-set-up",
+      "english": "set up",
+      "indonesian": "menyiapkan, mengatur",
+      "pos": "verb",
+      "registerNotes": "set up my phone (mengatur HP)",
+      "audio": "audio/en/words/w-set-up.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sign-up",
+      "english": "sign up",
+      "indonesian": "mendaftar",
+      "pos": "verb",
+      "registerNotes": "sign up for a class (mendaftar kelas)",
+      "audio": "audio/en/words/w-sign-up.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-log-in",
+      "english": "log in",
+      "indonesian": "masuk (ke akun), login",
+      "pos": "verb",
+      "registerNotes": "I can't log in. (Aku tidak bisa login.)",
+      "audio": "audio/en/words/w-log-in.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-work-out",
+      "english": "work out",
+      "indonesian": "berhasil, beres; berolahraga",
+      "pos": "verb",
+      "registerNotes": "It worked out in the end. (Akhirnya beres juga.)",
+      "audio": "audio/en/words/w-work-out.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-go-out",
+      "english": "go out",
+      "indonesian": "keluar, pergi (main)",
+      "pos": "verb",
+      "registerNotes": "go out for dinner (pergi makan malam di luar)",
+      "audio": "audio/en/words/w-go-out.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-eat-out",
+      "english": "eat out",
+      "indonesian": "makan di luar",
+      "pos": "verb",
+      "registerNotes": "Let's eat out tonight. (Malam ini makan di luar, yuk.)",
+      "audio": "audio/en/words/w-eat-out.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-look-around",
+      "english": "look around",
+      "indonesian": "melihat-lihat",
+      "pos": "verb",
+      "registerNotes": "I'm just looking around. (Cuma lihat-lihat.)",
+      "audio": "audio/en/words/w-look-around.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-calm-down",
+      "english": "calm down",
+      "indonesian": "tenang",
+      "pos": "verb",
+      "registerNotes": "Calm down, it's OK. (Tenang, tidak apa-apa.)",
+      "audio": "audio/en/words/w-calm-down.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cheer-up",
+      "english": "cheer up",
+      "indonesian": "bersemangat lagi, jangan sedih",
+      "pos": "verb",
+      "registerNotes": "Cheer up! (Semangat, dong!)",
+      "audio": "audio/en/words/w-cheer-up.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hurry-up",
+      "english": "hurry up",
+      "indonesian": "bergegas, cepat",
+      "pos": "verb",
+      "registerNotes": "Hurry up, the bus is coming! (Cepat, busnya datang!)",
+      "audio": "audio/en/words/w-hurry-up.mp3",
+      "tags": [
+        "phrasal verb"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

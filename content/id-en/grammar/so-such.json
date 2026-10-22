@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-so-such",
+  "connector": "so / such",
+  "gloss": "sangat · begitu",
+  "title": "so, such — sangat …, begitu … sampai …",
+  "pattern": "so ＋ kata sifat ／ such ＋ a ＋ kata sifat ＋ kata benda ／ so … that …",
+  "explanation": "Keduanya berarti “sangat, begitu”. Kalau hanya ada kata sifat, pakai so: It’s so hot. Kalau ada kata benda, pakai such: It’s such a hot day. Kalau diikuti that, artinya “begitu … sampai …”: It was so good that I had two. (Enak sekali, sampai aku makan dua.)",
+  "natural": "Saat bicara dengan penuh perasaan: You’re so kind! (Kamu baik sekali!), It was such a great day. (Hari yang luar biasa.)",
+  "stiff": "so a nice day salah, yang benar such a nice day. Tanpa kata benda, such kind juga salah, yang benar so kind.",
+  "examples": [
+    {
+      "id": "gx-so-such-1",
+      "english": "It’s so hot today.",
+      "indonesian": "Hari ini panas sekali, ya.",
+      "chunks": [
+        {
+          "t": "It’s so hot ",
+          "w": "w-hot"
+        },
+        {
+          "t": "today.",
+          "w": "w-today"
+        }
+      ],
+      "gap": {
+        "before": "It’s ",
+        "answer": "so",
+        "after": " hot today.",
+        "options": [
+          "so",
+          "such",
+          "such a"
+        ],
+        "why": "Kalau hanya ada kata sifat, pakai so."
+      },
+      "audio": "audio/en/grammar/gx-so-such-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "so / such"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-so-such-2",
+      "english": "It was such a beautiful day.",
+      "indonesian": "Hari itu sungguh indah.",
+      "chunks": [
+        {
+          "t": "It was "
+        },
+        {
+          "t": "such a beautiful day.",
+          "w": "w-beautiful"
+        }
+      ],
+      "gap": {
+        "before": "It was ",
+        "answer": "such",
+        "after": " a beautiful day.",
+        "options": [
+          "such",
+          "so",
+          "very"
+        ],
+        "why": "Sebelum a + kata sifat + kata benda, pakai such."
+      },
+      "audio": "audio/en/grammar/gx-so-such-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "so / such"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-so-such-3",
+      "english": "You’re so kind!",
+      "indonesian": "Kamu baik sekali!",
+      "chunks": [
+        {
+          "t": "You’re so "
+        },
+        {
+          "t": "kind!",
+          "w": "w-kind"
+        }
+      ],
+      "gap": {
+        "before": "You’re ",
+        "answer": "so",
+        "after": " kind!",
+        "options": [
+          "so",
+          "such",
+          "such a"
+        ],
+        "why": "Kalau hanya ada kata sifat, pakai so."
+      },
+      "audio": "audio/en/grammar/gx-so-such-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "so / such"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-so-such-4",
+      "english": "The pie was so good that I had two.",
+      "indonesian": "Painya enak sekali, sampai aku makan dua.",
+      "chunks": [
+        {
+          "t": "The pie ",
+          "w": "w-pie"
+        },
+        {
+          "t": "was so good ",
+          "w": "w-good"
+        },
+        {
+          "t": "that I had two.",
+          "w": "w-have"
+        }
+      ],
+      "gap": {
+        "before": "The pie was so good ",
+        "answer": "that",
+        "after": " I had two.",
+        "options": [
+          "that",
+          "than",
+          "what"
+        ],
+        "why": "so … that … berarti “begitu … sampai …”."
+      },
+      "audio": "audio/en/grammar/gx-so-such-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "so / such"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

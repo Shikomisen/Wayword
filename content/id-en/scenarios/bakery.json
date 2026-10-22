@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "id": "bakery",
+  "title": "Membeli di toko roti",
+  "category": "shopping",
+  "setting": "Toko roti dekat rumah. Di etalase ada deretan pai dan scone.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "staff",
+      "english": "Hi, what can I get you?",
+      "indonesian": "Halo, mau pesan apa?",
+      "audio": "audio/en/scenario/bakery-n1.mp3",
+      "audioHint": "Hi, what can I get you?",
+      "options": [
+        {
+          "phraseId": "sho-14",
+          "quality": "good",
+          "feedback": "Kalau tidak tahu namanya, tunjuk saja sambil mengucapkan ini. Pasti dimengerti.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "Can I have two cheese scones, please?",
+          "indonesian": "Minta dua scone keju, ya.",
+          "feedback": "Pola angka + benda. Karena dua, scone menjadi scones. Bahasa Indonesia tidak memakai -s untuk jamak, tapi bahasa Inggris perlu.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "Give me scone.",
+          "indonesian": "(kasih saya scone)",
+          "feedback": "Terdengar seperti perintah. “Minta…” terdengar biasa dalam bahasa Indonesia, tapi Give me ... terdengar kasar. Pakai Can I have ...?, dan kalau dua atau lebih: scones.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "staff",
+      "english": "Sure. Anything else?",
+      "indonesian": "Baik. Ada lagi?",
+      "audio": "audio/en/scenario/bakery-n2.mp3",
+      "audioHint": "Sure. Anything else?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "That's all, thanks.",
+          "indonesian": "Itu saja, terima kasih.",
+          "feedback": "Cara umum untuk menutup pesanan.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "english": "How much is the carrot cake?",
+          "indonesian": "Kue wortelnya berapa?",
+          "feedback": "Menanyakan harga dengan How much is ...? itu wajar.",
+          "next": "n2b"
+        },
+        {
+          "quality": "awkward",
+          "english": "No more.",
+          "indonesian": "(tidak lagi)",
+          "feedback": "Kita biasa bilang “Sudah, itu saja”, tapi jangan diterjemahkan menjadi No more atau Already. Yang wajar: That's all, thanks. atau No, that's it, thanks.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n2b": {
+      "speaker": "staff",
+      "english": "It's six fifty a slice.",
+      "indonesian": "Enam dolar lima puluh per potong.",
+      "audio": "audio/en/scenario/bakery-n2b.mp3",
+      "audioHint": "It's six fifty a slice.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "I'll have a slice too, then.",
+          "indonesian": "Kalau begitu, saya ambil satu potong juga.",
+          "feedback": "Dengan then (kalau begitu), jawabanmu terdengar alami karena menanggapi jawaban lawan bicara.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "english": "Oh, no thanks. That's all.",
+          "indonesian": "Oh, tidak usah. Itu saja.",
+          "feedback": "Menolak setelah tahu harganya tentu saja boleh.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "staff",
+      "english": "Would you like a bag for that?",
+      "indonesian": "Mau pakai kantong?",
+      "audio": "audio/en/scenario/bakery-n3.mp3",
+      "audioHint": "Would you like a bag for that?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Yes, please.",
+          "indonesian": "Ya, boleh.",
+          "feedback": "Ini sudah cukup.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "No, I'm fine, thanks.",
+          "indonesian": "Tidak usah, terima kasih.",
+          "feedback": "I'm fine. atau I'm good. artinya “tidak usah”.",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "english": "Yes, vinyl bag.",
+          "indonesian": "(ya, kantong vinil)",
+          "feedback": "Kantong belanja disebut plastic bag atau paper bag, bukan vinyl bag. Lagi pula, kantong plastik sekali pakai sudah dilarang di Selandia Baru; yang biasa adalah kantong kertas. Cukup jawab Yes, please.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "staff",
+      "english": "That's fourteen dollars altogether.",
+      "indonesian": "Semuanya jadi empat belas dolar.",
+      "audio": "audio/en/scenario/bakery-n4.mp3",
+      "audioHint": "That's fourteen dollars altogether.",
+      "options": [
+        {
+          "phraseId": "sho-05",
+          "quality": "good",
+          "feedback": "Pertanyaan bagus untuk memastikan cara bayar.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "english": "Here you go.",
+          "indonesian": "Ini, silakan.",
+          "feedback": "Ucapan alami saat menyerahkan uang.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "english": "Forty dollars?",
+          "indonesian": "(40 dolar?)",
+          "feedback": "fourteen (14) dan forty (40) mudah tertukar. Kalau tidak yakin, minta diulang: Sorry, how much?",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "staff",
+      "english": "Do you want the receipt?",
+      "indonesian": "Mau struknya?",
+      "audio": "audio/en/scenario/bakery-n5.mp3",
+      "audioHint": "Do you want the receipt?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Yes, please.",
+          "indonesian": "Ya, boleh.",
+          "feedback": "Ini sudah cukup.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "english": "No, thanks.",
+          "indonesian": "Tidak, terima kasih.",
+          "feedback": "Pakai ini kalau tidak perlu.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "wrong",
+          "feedback": "Tidak ada yang berterima kasih kepadamu, jadi jawaban ini tidak cocok.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "indonesian": "Belanja selesai. Untuk meminta: Can I have ...?; untuk harga: How much is ...?. Kalau ditawari kantong atau struk, cukup jawab Yes, please. / No, thanks.",
+      "end": true,
+      "options": []
+    }
+  }
+}

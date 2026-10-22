@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "pat-doyouhave",
+  "connector": "Do you have…?",
+  "gloss": "Ada…?",
+  "title": "Do you have…? — Ada…?",
+  "pattern": "Do you have ＋ barang ＋（in ＋ ukuran・warna）?",
+  "explanation": "Do you have …? artinya “ada…?”. Ini bentuk dasar untuk menanyakan apakah toko punya barang tertentu, atau ukuran dan warna lain. Untuk ukuran atau warna, pakai in: in a bigger size (ukuran yang lebih besar), in navy (warna biru dongker). Dalam bahasa Indonesia cukup “Ada…?”, tapi bahasa Inggris butuh Do you have di depan.",
+  "natural": "Di toko baju, supermarket, sampai menu kafe. Jawabannya misalnya Yes, we do. / Sorry, we don't. / Let me check. (Saya cek dulu).",
+  "stiff": "Kalau hanya menderet kata seperti This in big size?, maksudmu mungkin sampai, tapi terdengar ketus. Ucapkan kalimat lengkap: Do you have this in a bigger size?",
+  "examples": [
+    {
+      "id": "px-doyouhave-1",
+      "english": "Do you have this in a bigger size?",
+      "indonesian": "Yang ini ada ukuran lebih besar?",
+      "chunks": [
+        {
+          "t": "Do you have "
+        },
+        {
+          "t": "this "
+        },
+        {
+          "t": "in a bigger size?",
+          "w": "w-bigger"
+        }
+      ],
+      "gap": {
+        "before": "Do you have this in a ",
+        "answer": "bigger",
+        "after": " size?",
+        "options": [
+          "bigger",
+          "more big",
+          "biger"
+        ],
+        "why": "Bentuk perbandingan big adalah bigger (huruf g digandakan). Jangan more big, terjemahan kata per kata dari “lebih besar”."
+      },
+      "audio": "audio/en/patterns/px-doyouhave-1.mp3",
+      "tags": [
+        "pola kalimat",
+        "Do you have…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-doyouhave-2",
+      "english": "Do you have this in a smaller size?",
+      "indonesian": "Yang ini ada ukuran lebih kecil?",
+      "chunks": [
+        {
+          "t": "Do you have "
+        },
+        {
+          "t": "this "
+        },
+        {
+          "t": "in a smaller size?",
+          "w": "w-smaller"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Do",
+        "after": " you have this in a smaller size?",
+        "options": [
+          "Do",
+          "Are",
+          "Is"
+        ],
+        "why": "Pertanyaan dengan have dimulai dengan Do: Do you have …?."
+      },
+      "audio": "audio/en/patterns/px-doyouhave-2.mp3",
+      "tags": [
+        "pola kalimat",
+        "Do you have…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-doyouhave-3",
+      "english": "Do you have this in navy?",
+      "indonesian": "Yang ini ada warna biru dongker?",
+      "chunks": [
+        {
+          "t": "Do you have "
+        },
+        {
+          "t": "this "
+        },
+        {
+          "t": "in navy?",
+          "w": "w-navy"
+        }
+      ],
+      "gap": {
+        "before": "Do you have this ",
+        "answer": "in",
+        "after": " navy?",
+        "options": [
+          "in",
+          "on",
+          "with"
+        ],
+        "why": "Warna dan ukuran memakai in (in navy, in a medium)."
+      },
+      "audio": "audio/en/patterns/px-doyouhave-3.mp3",
+      "tags": [
+        "pola kalimat",
+        "Do you have…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "px-doyouhave-4",
+      "english": "Do you have any vegetarian options?",
+      "indonesian": "Ada menu vegetarian?",
+      "chunks": [
+        {
+          "t": "Do you have "
+        },
+        {
+          "t": "any "
+        },
+        {
+          "t": "vegetarian options?",
+          "w": "w-vegetarian"
+        }
+      ],
+      "gap": {
+        "before": "Do you have ",
+        "answer": "any",
+        "after": " vegetarian options?",
+        "options": [
+          "any",
+          "a",
+          "much"
+        ],
+        "why": "Untuk bertanya “ada … (apa saja)?”, biasanya pakai any + bentuk jamak (options)."
+      },
+      "audio": "audio/en/patterns/px-doyouhave-4.mp3",
+      "tags": [
+        "pola kalimat",
+        "Do you have…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

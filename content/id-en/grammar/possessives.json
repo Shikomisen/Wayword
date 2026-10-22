@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-possessives",
+  "connector": "my / your",
+  "gloss": "milik saya, milik kamu",
+  "title": "my, your, his, her — kata ganti milik",
+  "pattern": "my / your / his / her / its / our / their ＋ kata benda ・ nama ＋ ’s",
+  "explanation": "my = saya (-ku), your = kamu (-mu), his = dia laki-laki (-nya), her = dia perempuan (-nya), our = kami/kita, their = mereka. Untuk nama orang, tambahkan ’s: Ken’s car (mobil Ken), my mother’s house (rumah ibu saya). Urutannya terbalik dari bahasa Indonesia: pemiliknya di depan (my car = mobil saya).",
+  "natural": "Selalu dipakai saat bicara tentang keluarga dan barang: This is my husband. (Ini suami saya.), What’s your name? (Siapa namamu?)",
+  "stiff": "Dalam bahasa Inggris, keluarga dan barang sendiri pun diberi my: bukan I love mother., tapi I love my mother. Karena “dia” dan “-nya” bisa laki-laki atau perempuan, hati-hati memilih his (laki-laki) atau her (perempuan).",
+  "examples": [
+    {
+      "id": "gx-possessives-1",
+      "english": "What’s your name?",
+      "indonesian": "Siapa namamu?",
+      "chunks": [
+        {
+          "t": "What’s ",
+          "w": "w-what"
+        },
+        {
+          "t": "your "
+        },
+        {
+          "t": "name?",
+          "w": "w-name"
+        }
+      ],
+      "gap": {
+        "before": "What’s ",
+        "answer": "your",
+        "after": " name?",
+        "options": [
+          "your",
+          "you",
+          "my"
+        ],
+        "why": "Nama milik kamu: your name. Bukan you."
+      },
+      "audio": "audio/en/grammar/gx-possessives-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "my / your"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-possessives-2",
+      "english": "This is my husband.",
+      "indonesian": "Ini suami saya.",
+      "chunks": [
+        {
+          "t": "This is ",
+          "w": "w-this"
+        },
+        {
+          "t": "my "
+        },
+        {
+          "t": "husband.",
+          "w": "w-husband"
+        }
+      ],
+      "gap": {
+        "before": "This is ",
+        "answer": "my",
+        "after": " husband.",
+        "options": [
+          "my",
+          "me",
+          "I"
+        ],
+        "why": "Saat memperkenalkan keluarga sendiri pun, pakai my."
+      },
+      "audio": "audio/en/grammar/gx-possessives-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "my / your"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-possessives-3",
+      "english": "Her brother lives in Wellington.",
+      "indonesian": "Kakak laki-lakinya tinggal di Wellington.",
+      "chunks": [
+        {
+          "t": "Her brother ",
+          "w": "w-brother"
+        },
+        {
+          "t": "lives ",
+          "w": "w-live"
+        },
+        {
+          "t": "in Wellington."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Her",
+        "after": " brother lives in Wellington.",
+        "options": [
+          "Her",
+          "She",
+          "His"
+        ],
+        "why": "Pemiliknya perempuan, jadi her. “-nya” untuk perempuan = her, untuk laki-laki = his."
+      },
+      "audio": "audio/en/grammar/gx-possessives-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "my / your"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-possessives-4",
+      "english": "We’re at Ken’s house.",
+      "indonesian": "Kami sedang di rumah Ken.",
+      "chunks": [
+        {
+          "t": "We’re ",
+          "w": "w-we"
+        },
+        {
+          "t": "at "
+        },
+        {
+          "t": "Ken’s house.",
+          "w": "w-house"
+        }
+      ],
+      "gap": {
+        "before": "We’re at ",
+        "answer": "Ken’s",
+        "after": " house.",
+        "options": [
+          "Ken’s",
+          "Ken",
+          "Kens"
+        ],
+        "why": "Untuk nama orang, tambah ’s: Ken’s house (rumah Ken)."
+      },
+      "audio": "audio/en/grammar/gx-possessives-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "my / your"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

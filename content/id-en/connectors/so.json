@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "con-so",
+  "connector": "so",
+  "gloss": "jadi, makanya",
+  "title": "so — jadi, makanya",
+  "pattern": "sebab , so akibat",
+  "explanation": "so artinya “jadi” atau “makanya”. Sebelum so ada sebab, sesudahnya ada akibat. Urutannya sama dengan “…, jadi …” dalam bahasa Indonesia, jadi ini kata penghubung yang paling mudah dipakai. Biasanya ada koma (,) sebelum so.",
+  "natural": "Bisa dipakai di semua situasi percakapan. Seperti “jadi” dalam bahasa Indonesia, so juga dipakai untuk melanjutkan obrolan: So, what do you think? (Jadi, menurutmu bagaimana?).",
+  "stiff": "Therefore terasa seperti bahasa tulisan, mirip “oleh karena itu”, dan terdengar kaku dalam percakapan. Saat berbicara, so sudah cukup.",
+  "examples": [
+    {
+      "id": "cx-so-1",
+      "english": "It was cold, so I bought a jumper.",
+      "indonesian": "Cuacanya dingin, jadi saya beli sweter.",
+      "chunks": [
+        {
+          "t": "It was cold, "
+        },
+        {
+          "t": "so "
+        },
+        {
+          "t": "I bought a jumper.",
+          "w": "w-jumper"
+        }
+      ],
+      "gap": {
+        "before": "It was cold, ",
+        "answer": "so",
+        "after": " I bought a jumper.",
+        "options": [
+          "so",
+          "because",
+          "but"
+        ],
+        "why": "Dingin (sebab) → beli sweter (akibat). Sebelum akibat, pakai so."
+      },
+      "combine": {
+        "a": "It was cold.",
+        "b": "I bought a jumper.",
+        "distractors": [
+          "because "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-so-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "so"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-so-2",
+      "english": "The café was full, so we got takeaway.",
+      "indonesian": "Kafenya penuh, jadi kami pesan untuk dibawa pulang.",
+      "chunks": [
+        {
+          "t": "The café was full, "
+        },
+        {
+          "t": "so "
+        },
+        {
+          "t": "we got takeaway.",
+          "w": "w-takeaway"
+        }
+      ],
+      "gap": {
+        "before": "The café was full, ",
+        "answer": "so",
+        "after": " we got takeaway.",
+        "options": [
+          "so",
+          "but",
+          "or"
+        ],
+        "why": "Penuh (sebab) → dibawa pulang (akibat), jadi pakai so."
+      },
+      "combine": {
+        "a": "The café was full.",
+        "b": "We got takeaway.",
+        "distractors": [
+          "but "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-so-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "so"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-so-3",
+      "english": "It's on special, so I got two.",
+      "indonesian": "Lagi promo, jadi saya beli dua.",
+      "chunks": [
+        {
+          "t": "It's on special, ",
+          "w": "w-on-special"
+        },
+        {
+          "t": "so "
+        },
+        {
+          "t": "I got two."
+        }
+      ],
+      "gap": {
+        "before": "It's on special, ",
+        "answer": "so",
+        "after": " I got two.",
+        "options": [
+          "so",
+          "because",
+          "if"
+        ],
+        "why": "Promo (sebab) → beli dua (akibat)."
+      },
+      "combine": {
+        "a": "It's on special.",
+        "b": "I got two.",
+        "distractors": [
+          "because "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-so-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "so"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-so-4",
+      "english": "I'm a bit tired, so I'll catch the bus.",
+      "indonesian": "Saya agak capek, jadi saya naik bus saja.",
+      "chunks": [
+        {
+          "t": "I'm a bit tired, "
+        },
+        {
+          "t": "so "
+        },
+        {
+          "t": "I'll catch the bus.",
+          "w": "w-catch"
+        }
+      ],
+      "gap": {
+        "before": "I'm ",
+        "answer": "a bit",
+        "after": " tired, so I'll catch the bus.",
+        "options": [
+          "a bit",
+          "a few",
+          "many"
+        ],
+        "why": "“Agak (capek)” adalah a bit. A few artinya “beberapa”, untuk benda yang bisa dihitung."
+      },
+      "combine": {
+        "a": "I'm a bit tired.",
+        "b": "I'll catch the bus.",
+        "distractors": [
+          "but "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-so-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "so"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

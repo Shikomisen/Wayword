@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-continuous",
+  "connector": "-ing",
+  "gloss": "sedang …",
+  "title": "be ＋ -ing — sedang …",
+  "pattern": "am・is・are ＋ kata kerja-ing",
+  "explanation": "Untuk yang sedang terjadi sekarang: to be + kata kerja bentuk -ing: I’m cooking. (Saya sedang masak.), It’s raining. (Sedang hujan.) Mirip “sedang” dalam bahasa Indonesia, tapi to be-nya wajib ada. Kata yang berakhir e: buang e lalu tambah -ing (make → making). Kata pendek kadang menggandakan huruf terakhir (run → running, sit → sitting).",
+  "natural": "Sering dipakai di telepon dan chat: What are you doing? (Kamu sedang apa?) — I’m watching TV. (Sedang menonton TV.)",
+  "stiff": "Membuang to be itu salah: bukan I cooking., tapi I’m cooking. “Saya sedang masak” tidak punya to be, tapi bahasa Inggris butuh. Kata kerja “keadaan” seperti know, like, want tidak diberi -ing: I’m knowing. salah.",
+  "examples": [
+    {
+      "id": "gx-continuous-1",
+      "english": "I’m cooking dinner.",
+      "indonesian": "Saya sedang masak makan malam.",
+      "chunks": [
+        {
+          "t": "I’m ",
+          "w": "w-i"
+        },
+        {
+          "t": "cooking ",
+          "w": "w-cook"
+        },
+        {
+          "t": "dinner."
+        }
+      ],
+      "gap": {
+        "before": "I’m ",
+        "answer": "cooking",
+        "after": " dinner.",
+        "options": [
+          "cooking",
+          "cook",
+          "cooked"
+        ],
+        "why": "Yang sedang dilakukan sekarang: to be + -ing."
+      },
+      "audio": "audio/en/grammar/gx-continuous-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "-ing"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-continuous-2",
+      "english": "What are you doing?",
+      "indonesian": "Kamu sedang apa?",
+      "chunks": [
+        {
+          "t": "What ",
+          "w": "w-what"
+        },
+        {
+          "t": "are you "
+        },
+        {
+          "t": "doing?",
+          "w": "w-do"
+        }
+      ],
+      "gap": {
+        "before": "What ",
+        "answer": "are",
+        "after": " you doing?",
+        "options": [
+          "are",
+          "do",
+          "is"
+        ],
+        "why": "Pertanyaan bentuk -ing: to be pindah ke depan, What are you doing? Bukan do."
+      },
+      "audio": "audio/en/grammar/gx-continuous-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "-ing"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-continuous-3",
+      "english": "It’s raining again.",
+      "indonesian": "Hujan lagi.",
+      "chunks": [
+        {
+          "t": "It’s ",
+          "w": "w-it"
+        },
+        {
+          "t": "raining ",
+          "w": "w-rain"
+        },
+        {
+          "t": "again."
+        }
+      ],
+      "gap": {
+        "before": "It’s ",
+        "answer": "raining",
+        "after": " again.",
+        "options": [
+          "raining",
+          "rain",
+          "rains"
+        ],
+        "why": "Sekarang sedang hujan: It’s raining. Butuh it, walaupun “hujan” saja sudah cukup dalam bahasa Indonesia."
+      },
+      "audio": "audio/en/grammar/gx-continuous-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "-ing"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-continuous-4",
+      "english": "She’s sitting next to the window.",
+      "indonesian": "Dia sedang duduk di sebelah jendela.",
+      "chunks": [
+        {
+          "t": "She’s ",
+          "w": "w-she"
+        },
+        {
+          "t": "sitting next to ",
+          "w": "w-sit"
+        },
+        {
+          "t": "the window.",
+          "w": "w-window"
+        }
+      ],
+      "gap": {
+        "before": "She’s ",
+        "answer": "sitting",
+        "after": " next to the window.",
+        "options": [
+          "sitting",
+          "siting",
+          "sits"
+        ],
+        "why": "sit menggandakan t: sitting."
+      },
+      "audio": "audio/en/grammar/gx-continuous-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "-ing"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

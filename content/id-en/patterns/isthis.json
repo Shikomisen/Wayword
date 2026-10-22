@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "pat-isthis",
+  "connector": "Is this…?",
+  "gloss": "Apakah ini…?",
+  "title": "Is this…? — Apakah ini…?",
+  "pattern": "Is this ＋ keadaan（spicy, vegetarian, dsb.）?",
+  "explanation": "Is this …? artinya “apakah ini…?”. Bentuk ini dipakai untuk memastikan keadaan sesuatu: apakah makanannya pedas, vegetarian, atau sedang promo. Kalimatnya memakai to be (is), jadi untuk bertanya cukup pindahkan is ke depan. Bahasa Indonesia tidak butuh kata kerja di sini (“Ini pedas?”), tapi bahasa Inggris harus memakai is. Untuk “yang ini” (dibandingkan yang lain), pakai this one.",
+  "natural": "Untuk makanan, pakaian, harga, apa saja. Sambil menunjuk, pasti dimengerti. This is spicy? dengan nada naik juga dimengerti, seperti “Ini pedas?”, tapi bentuk dasarnya Is this spicy?.",
+  "stiff": "Does this spicy? salah. Spicy adalah kata sifat, jadi pakai is, bukan do / does.",
+  "examples": [
+    {
+      "id": "px-isthis-1",
+      "english": "Is this spicy?",
+      "indonesian": "Ini pedas?",
+      "chunks": [
+        {
+          "t": "Is "
+        },
+        {
+          "t": "this "
+        },
+        {
+          "t": "spicy?",
+          "w": "w-spicy"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Is",
+        "after": " this spicy?",
+        "options": [
+          "Is",
+          "Does",
+          "Are"
+        ],
+        "why": "Spicy adalah kata sifat, jadi pertanyaannya Is this …?."
+      },
+      "audio": "audio/en/patterns/px-isthis-1.mp3",
+      "tags": [
+        "pola kalimat",
+        "Is this…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-isthis-2",
+      "english": "Is this vegetarian?",
+      "indonesian": "Ini vegetarian?",
+      "chunks": [
+        {
+          "t": "Is "
+        },
+        {
+          "t": "this "
+        },
+        {
+          "t": "vegetarian?",
+          "w": "w-vegetarian"
+        }
+      ],
+      "gap": {
+        "before": "Is this ",
+        "answer": "vegetarian",
+        "after": "?",
+        "options": [
+          "vegetarian",
+          "vegetable",
+          "vegetables"
+        ],
+        "why": "Vegetarian artinya “tanpa daging dan ikan”. Vegetable artinya “sayuran” itu sendiri."
+      },
+      "audio": "audio/en/patterns/px-isthis-2.mp3",
+      "tags": [
+        "pola kalimat",
+        "Is this…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-isthis-3",
+      "english": "Is this on special?",
+      "indonesian": "Ini sedang promo?",
+      "chunks": [
+        {
+          "t": "Is "
+        },
+        {
+          "t": "this "
+        },
+        {
+          "t": "on special?",
+          "w": "w-on-special"
+        }
+      ],
+      "gap": {
+        "before": "Is this ",
+        "answer": "on",
+        "after": " special?",
+        "options": [
+          "on",
+          "in",
+          "at"
+        ],
+        "why": "On special (harga promo) adalah ungkapan tetap, dengan on yang sama seperti on sale."
+      },
+      "audio": "audio/en/patterns/px-isthis-3.mp3",
+      "tags": [
+        "pola kalimat",
+        "Is this…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "px-isthis-4",
+      "english": "Is this one gluten-free?",
+      "indonesian": "Yang ini bebas gluten?",
+      "chunks": [
+        {
+          "t": "Is "
+        },
+        {
+          "t": "this one "
+        },
+        {
+          "t": "gluten-free?",
+          "w": "w-gluten-free"
+        }
+      ],
+      "gap": {
+        "before": "Is this ",
+        "answer": "one",
+        "after": " gluten-free?",
+        "options": [
+          "one",
+          "ones",
+          "it"
+        ],
+        "why": "Untuk “yang ini” (dibandingkan yang lain), pakai this one."
+      },
+      "audio": "audio/en/patterns/px-isthis-4.mp3",
+      "tags": [
+        "pola kalimat",
+        "Is this…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

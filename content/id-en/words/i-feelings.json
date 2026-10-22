@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-feelings",
+  "title": "Perasaan & reaksi",
+  "description": "Terkejut, lega, kecewa. Kata-kata untuk menyatakan perasaanmu dan menanggapi cerita orang lain.",
+  "items": [
+    {
+      "id": "w-surprised",
+      "english": "surprised",
+      "indonesian": "terkejut, kaget",
+      "pos": "adjective",
+      "registerNotes": "I was surprised. (Aku terkejut.)",
+      "pitfallNote": "Untuk perasaanmu sendiri pakai -ed, dan jangan lupa was/am: I was surprised. I was surprising. artinya 'aku orang yang mengejutkan'.",
+      "audio": "audio/en/words/w-surprised.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-embarrassed",
+      "english": "embarrassed",
+      "indonesian": "malu, salah tingkah",
+      "pos": "adjective",
+      "pitfallNote": "Kata malu ada beberapa dalam bahasa Inggris. Malu karena kejadian kecil: embarrassed. Malu karena berbuat salah: ashamed (kata yang berat). Sifat pemalu: shy.",
+      "audio": "audio/en/words/w-embarrassed.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nervous",
+      "english": "nervous",
+      "indonesian": "gugup, cemas",
+      "pos": "adjective",
+      "registerNotes": "I’m a bit nervous. (Aku agak gugup.)",
+      "audio": "audio/en/words/w-nervous.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-worried",
+      "english": "worried",
+      "indonesian": "khawatir",
+      "pos": "adjective",
+      "registerNotes": "I’m worried about my exam. (Aku khawatir soal ujianku.)",
+      "audio": "audio/en/words/w-worried.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "Bukan I’m worry. Setelah I’m pakai worried; worry adalah kata kerja: Don’t worry."
+    },
+    {
+      "id": "w-relieved",
+      "english": "relieved",
+      "indonesian": "lega",
+      "pos": "adjective",
+      "registerNotes": "I’m so relieved! (Lega sekali!)",
+      "audio": "audio/en/words/w-relieved.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-disappointed",
+      "english": "disappointed",
+      "indonesian": "kecewa",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-disappointed.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-annoyed",
+      "english": "annoyed",
+      "indonesian": "kesal, jengkel",
+      "pos": "adjective",
+      "registerNotes": "Marah yang ringan, tidak sekuat angry.",
+      "audio": "audio/en/words/w-annoyed.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bored",
+      "english": "bored",
+      "indonesian": "bosan",
+      "pos": "adjective",
+      "pitfallNote": "I’m boring. artinya 'aku orang yang membosankan'. Kalau kamu yang bosan: I’m bored.",
+      "audio": "audio/en/words/w-bored.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-confused",
+      "english": "confused",
+      "indonesian": "bingung",
+      "pos": "adjective",
+      "registerNotes": "Sorry, I’m a bit confused. (Maaf, aku agak bingung.)",
+      "audio": "audio/en/words/w-confused.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-scared",
+      "english": "scared",
+      "indonesian": "takut",
+      "pos": "adjective",
+      "registerNotes": "I’m scared of spiders. (Aku takut laba-laba.)",
+      "audio": "audio/en/words/w-scared.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-proud",
+      "english": "proud",
+      "indonesian": "bangga",
+      "pos": "adjective",
+      "registerNotes": "I’m proud of you. (Aku bangga padamu.)",
+      "audio": "audio/en/words/w-proud.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-lonely",
+      "english": "lonely",
+      "indonesian": "kesepian",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-lonely.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-homesick",
+      "english": "homesick",
+      "indonesian": "rindu rumah, rindu kampung halaman",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-homesick.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-grateful",
+      "english": "grateful",
+      "indonesian": "bersyukur, berterima kasih",
+      "pos": "adjective",
+      "registerNotes": "Lebih formal daripada thank you: I’m really grateful.",
+      "audio": "audio/en/words/w-grateful.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-upset",
+      "english": "upset",
+      "indonesian": "sedih, kesal, tersinggung",
+      "pos": "adjective",
+      "registerNotes": "She’s upset. (Dia sedang sedih.) Dipakai untuk sedih sampai hampir menangis, juga untuk marah.",
+      "audio": "audio/en/words/w-upset.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-jealous",
+      "english": "jealous",
+      "indonesian": "iri, cemburu",
+      "pos": "adjective",
+      "registerNotes": "I’m so jealous! (Enaknya!) adalah iri yang ringan, sambil bercanda.",
+      "audio": "audio/en/words/w-jealous.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-amazing",
+      "english": "amazing",
+      "indonesian": "luar biasa, hebat",
+      "pos": "adjective",
+      "registerNotes": "That’s amazing! (Hebat sekali!)",
+      "audio": "audio/en/words/w-amazing.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-awesome",
+      "english": "awesome",
+      "indonesian": "keren, mantap",
+      "pos": "adjective",
+      "registerNotes": "Bahasa santai. Awesome! saja sudah berarti 'Mantap!'.",
+      "audio": "audio/en/words/w-awesome.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-terrible",
+      "english": "terrible",
+      "indonesian": "parah, buruk sekali",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-terrible.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-awkward",
+      "english": "awkward",
+      "indonesian": "canggung",
+      "pos": "adjective",
+      "registerNotes": "That was awkward. (Tadi canggung, ya.)",
+      "audio": "audio/en/words/w-awkward.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-fun",
+      "english": "fun",
+      "indonesian": "seru, menyenangkan",
+      "pos": "adjective",
+      "registerNotes": "It was fun. (Seru sekali.)",
+      "pitfallNote": "'Tadi seru' bukan I was fun. (itu artinya 'aku orang yang asyik'). Bilang It was fun. Dan fun bukan funny: funny artinya lucu.",
+      "audio": "audio/en/words/w-fun.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-glad",
+      "english": "glad",
+      "indonesian": "senang, syukurlah",
+      "pos": "adjective",
+      "registerNotes": "I’m glad to hear that. (Syukurlah, senang mendengarnya.)",
+      "audio": "audio/en/words/w-glad.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-calm",
+      "english": "calm",
+      "indonesian": "tenang",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-calm.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mood",
+      "english": "mood",
+      "indonesian": "suasana hati, mood",
+      "pos": "noun",
+      "registerNotes": "in a good mood (sedang senang), I’m not in the mood. (Aku sedang tidak mood.)",
+      "audio": "audio/en/words/w-mood.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-miss",
+      "english": "miss",
+      "indonesian": "rindu, kangen; ketinggalan",
+      "pos": "verb",
+      "registerNotes": "I miss you. (Aku kangen kamu.), I missed the bus. (Aku ketinggalan bus.)",
+      "audio": "audio/en/words/w-miss.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

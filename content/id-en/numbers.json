@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "numbers",
+  "title": "Angka, waktu & uang",
+  "order": 2,
+  "description": "Harga, jam, jumlah orang. Saat belanja maupun bepergian, yang paling merepotkan kalau tidak tertangkap justru angka.",
+  "phrases": [
+    {
+      "id": "num-01",
+      "english": "How much is this?",
+      "indonesian": "Ini berapa harganya?",
+      "registerNotes": "Sambil menunjuk barangnya, ini sudah cukup. Kalau barangnya lebih dari satu: How much are these?",
+      "audio": "audio/en/num-01.mp3",
+      "audioHint": "How much is this?",
+      "tags": [
+        "harga",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-02",
+      "english": "It's twenty dollars.",
+      "indonesian": "Dua puluh dolar.",
+      "registerNotes": "Mata uang Selandia Baru juga dolar (dolar NZ). Harga sering disebut angkanya saja (Twenty.). $19.99 dibaca nineteen ninety-nine. Perhatikan: bahasa Inggris memakai titik untuk desimal dan koma untuk ribuan ($1,500.50), kebalikan dari kebiasaan kita.",
+      "pitfallNote": "fifteen (15) dan fifty (50), thirteen (13) dan thirty (30) mudah tertukar saat didengar. Kalau ragu, minta diulang atau minta dituliskan.",
+      "audio": "audio/en/num-02.mp3",
+      "audioHint": "It's twenty dollars.",
+      "tags": [
+        "harga",
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-03",
+      "english": "What time is it?",
+      "indonesian": "Jam berapa sekarang?",
+      "registerNotes": "Kalau bertanya ke orang yang tidak dikenal, Excuse me, do you know what time it is? lebih sopan.",
+      "audio": "audio/en/num-03.mp3",
+      "audioHint": "What time is it?",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-04",
+      "english": "It's two thirty.",
+      "indonesian": "Jam setengah tiga. (2.30)",
+      "registerNotes": "Jam biasanya disebut dengan angka berurutan saja. Bisa juga half past two.",
+      "audio": "audio/en/num-04.mp3",
+      "audioHint": "It's two thirty.",
+      "tags": [
+        "waktu",
+        "mendengar"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "Hati-hati: half past two artinya jam 2.30, yaitu 'setengah tiga'. Bahasa Indonesia menghitung setengah menuju jam berikutnya, sedangkan bahasa Inggris menghitung 'lewat setengah' dari jam sebelumnya."
+    },
+    {
+      "id": "num-05",
+      "english": "What time does it open?",
+      "indonesian": "Buka jam berapa?",
+      "registerNotes": "Ganti open dengan close untuk menanyakan jam tutup. Berguna di toko, museum, dan restoran.",
+      "audio": "audio/en/num-05.mp3",
+      "audioHint": "What time does it open?",
+      "tags": [
+        "waktu",
+        "toko"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-06",
+      "english": "Is it open on Sunday?",
+      "indonesian": "Hari Minggu buka?",
+      "registerNotes": "Sebelum nama hari, pakai on. Untuk hari libur: on holidays.",
+      "audio": "audio/en/num-06.mp3",
+      "audioHint": "Is it open on Sunday?",
+      "tags": [
+        "waktu",
+        "hari"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-07",
+      "english": "Two tickets, please.",
+      "indonesian": "Dua tiket, ya.",
+      "registerNotes": "'Jumlah + barang + please' adalah cara meminta yang paling mudah dan pasti berhasil. Bisa dipakai di mana saja.",
+      "audio": "audio/en/num-07.mp3",
+      "audioHint": "Two tickets, please.",
+      "tags": [
+        "angka",
+        "penting"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "Bahasa Indonesia tidak menandai jamak, jadi two ticket sering terucap. Kalau lebih dari satu, tambahkan -s: two tickets."
+    },
+    {
+      "id": "num-08",
+      "english": "Could you write it down for me?",
+      "indonesian": "Bisa tolong dituliskan?",
+      "registerNotes": "Jurus terakhir saat angka, alamat, atau nama tidak tertangkap. Sangat berguna.",
+      "audio": "audio/en/num-08.mp3",
+      "audioHint": "Could you write it down for me?",
+      "tags": [
+        "minta ulang",
+        "angka"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-09",
+      "english": "Is tax included?",
+      "indonesian": "Sudah termasuk pajak?",
+      "registerNotes": "Di Selandia Baru, harga di toko sudah termasuk pajak (GST 15%), jadi jarang perlu ditanyakan. Di Amerika dan Kanada, pajak biasanya ditambahkan di kasir.",
+      "audio": "audio/en/num-09.mp3",
+      "audioHint": "Is tax included?",
+      "tags": [
+        "harga",
+        "pajak"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "num-10",
+      "english": "How long does it take?",
+      "indonesian": "Berapa lama?",
+      "registerNotes": "Bisa untuk lama perjalanan maupun waktu tunggu. Jawabannya misalnya About ten minutes.",
+      "audio": "audio/en/num-10.mp3",
+      "audioHint": "How long does it take?",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-11",
+      "english": "I'm leaving on the fifteenth.",
+      "indonesian": "Saya berangkat tanggal 15.",
+      "registerNotes": "Tanggal disebut dengan bilangan urutan, seperti the fifteenth. March 15th maupun the 15th of March sama-sama boleh.",
+      "audio": "audio/en/num-11.mp3",
+      "audioHint": "I'm leaving on the fifteenth.",
+      "tags": [
+        "tanggal"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Kita cukup bilang 'tanggal lima belas', jadi on fifteen sering terucap. Dalam bahasa Inggris, tanggal memakai bentuk urutan: on the fifteenth."
+    },
+    {
+      "id": "num-12",
+      "english": "Can I get change for a twenty?",
+      "indonesian": "Bisa tolong pecahkan uang dua puluh dolar?",
+      "registerNotes": "a twenty artinya uang kertas dua puluh dolar. Berguna saat kamu butuh uang receh, misalnya untuk parkir atau mesin penjual otomatis.",
+      "pitfallNote": "change bisa berarti 'uang kembalian' dan 'uang kecil, receh'. Kalau kata change muncul dalam urusan uang, biasanya artinya itu, bukan 'mengganti'.",
+      "audio": "audio/en/num-12.mp3",
+      "audioHint": "Can I get change for a twenty?",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

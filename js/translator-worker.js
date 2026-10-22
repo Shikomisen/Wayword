@@ -7,8 +7,10 @@
  * from the same cache and evaluates, so nothing here needs the network.
  * tools/translator-node.mjs runs this same file in Node, for the tools and tests.
  *
- *   in:  { id, type: 'translate', registry, pair, text }   registry: mt/translator.json
- *        { id, type: 'warm', registry, pair }                load a direction ahead of use
+ *   in:  { id, type: 'translate', registry, route, text }  registry: mt/translator.json;
+ *                                                          route: ['en-ja'], or ['ja-en', 'en-id']
+ *        { id, type: 'warm', registry, route }               load a route's models ahead of use
+ *        (`pair: 'en-ja'` in place of `route` is a one-model route)
  *   out: { id, ok: true, text, ms } | { id, ok: false, error }
  */
 
@@ -100,13 +102,17 @@ function translate(translationModel, text) {
 let queue = Promise.resolve();
 
 self.addEventListener('message', ({ data }) => {
-  const { id, type, registry, pair, text } = data || {};
+  const { id, type, registry, pair, route, text } = data || {};
   queue = queue.then(async () => {
     try {
-      const translationModel = await model(registry, pair);
+      // A route is one model, or two through English (ja → en → id): each step translates the last one's output.
+      const steps = [];
+      for (const step of route || [pair]) steps.push(await model(registry, step));
       if (type === 'warm') { self.postMessage({ id, ok: true, text: '', ms: 0 }); return; }
       const start = performance.now();
-      const out = String(text || '').trim() ? translate(translationModel, String(text)) : '';
+      let out = String(text || '');
+      if (out.trim()) for (const translationModel of steps) out = translate(translationModel, out);
+      else out = '';
       self.postMessage({ id, ok: true, text: out, ms: Math.round(performance.now() - start) });
     } catch (err) {
       self.postMessage({ id, ok: false, error: String(err?.message || err) });

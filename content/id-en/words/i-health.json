@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-health",
+  "title": "Tubuh & kesehatan",
+  "description": "Sakit kepala, sakit tenggorokan, resep, janji temu. Kata-kata untuk menjelaskan gejala di klinik dan apotek.",
+  "items": [
+    {
+      "id": "w-headache",
+      "english": "headache",
+      "indonesian": "sakit kepala",
+      "pos": "noun",
+      "registerNotes": "I’ve got a headache. (Kepala saya sakit.)",
+      "audio": "audio/en/words/w-headache.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "Jangan lupa a: I’ve got a headache. Bukan My head is sick."
+    },
+    {
+      "id": "w-stomach-ache",
+      "english": "stomach ache",
+      "indonesian": "sakit perut",
+      "pos": "noun",
+      "registerNotes": "stomach dibaca kira-kira 'stamak': ch dibaca k.",
+      "audio": "audio/en/words/w-stomach-ache.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sore-throat",
+      "english": "sore throat",
+      "indonesian": "sakit tenggorokan",
+      "pos": "noun",
+      "registerNotes": "I’ve got a sore throat. (Tenggorokan saya sakit.)",
+      "audio": "audio/en/words/w-sore-throat.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-cough",
+      "english": "cough",
+      "indonesian": "batuk",
+      "pos": "noun",
+      "registerNotes": "Dibaca 'kof'.",
+      "audio": "audio/en/words/w-cough.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-fever",
+      "english": "fever",
+      "indonesian": "demam",
+      "pos": "noun",
+      "registerNotes": "Di Selandia Baru orang juga sering berkata I’ve got a temperature.",
+      "audio": "audio/en/words/w-fever.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-a-cold",
+      "english": "a cold",
+      "indonesian": "pilek",
+      "pos": "noun",
+      "registerNotes": "I’ve got a cold. (Saya sedang pilek.)",
+      "pitfallNote": "Tanpa a, terdengar seperti cold (dingin). Bahasa Indonesia tidak punya a, jadi kata ini mudah terlupa.",
+      "audio": "audio/en/words/w-a-cold.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-flu",
+      "english": "flu",
+      "indonesian": "flu berat, influenza",
+      "pos": "noun",
+      "registerNotes": "Biasanya pakai the: I’ve got the flu.",
+      "audio": "audio/en/words/w-flu.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Di Indonesia flu sering berarti pilek biasa. Dalam bahasa Inggris the flu adalah influenza (demam, badan pegal, harus istirahat). Pilek biasa: a cold."
+    },
+    {
+      "id": "w-sick",
+      "english": "sick",
+      "indonesian": "sakit, tidak enak badan",
+      "pos": "adjective",
+      "registerNotes": "feel sick sering berarti 'mual'.",
+      "audio": "audio/en/words/w-sick.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hurt",
+      "english": "hurt",
+      "indonesian": "sakit (bagian tubuh); melukai",
+      "pos": "verb",
+      "registerNotes": "My back hurts. (Punggung saya sakit.), I hurt my knee. (Lutut saya cedera.)",
+      "pitfallNote": "Sakit punya dua arti. Bagian tubuh yang sakit: hurt (kata kerja) atau sore. Badan yang sakit: sick atau ill. Jadi bukan My back is sick.",
+      "audio": "audio/en/words/w-hurt.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-injury",
+      "english": "injury",
+      "indonesian": "cedera, luka",
+      "pos": "noun",
+      "audio": "audio/en/words/w-injury.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pain",
+      "english": "pain",
+      "indonesian": "rasa sakit, nyeri",
+      "pos": "noun",
+      "registerNotes": "a sharp pain (nyeri yang menusuk)",
+      "audio": "audio/en/words/w-pain.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-medicine",
+      "english": "medicine",
+      "indonesian": "obat",
+      "pos": "noun",
+      "registerNotes": "take medicine (minum obat)",
+      "pitfallNote": "Minum obat bukan drink medicine, tapi take medicine.",
+      "audio": "audio/en/words/w-medicine.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-prescription",
+      "english": "prescription",
+      "indonesian": "resep dokter, obat resep",
+      "pos": "noun",
+      "audio": "audio/en/words/w-prescription.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Resep dokter: prescription. Resep masakan: recipe. Bahasa Indonesia memakai kata resep untuk keduanya."
+    },
+    {
+      "id": "w-pharmacy",
+      "english": "pharmacy",
+      "indonesian": "apotek",
+      "pos": "noun",
+      "registerNotes": "Di Selandia Baru juga disebut chemist.",
+      "audio": "audio/en/words/w-pharmacy.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-doctor",
+      "english": "doctor",
+      "indonesian": "dokter",
+      "pos": "noun",
+      "registerNotes": "Di Selandia Baru, dokter umum langgananmu disebut GP.",
+      "audio": "audio/en/words/w-doctor.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-appointment",
+      "english": "appointment",
+      "indonesian": "janji temu (dengan dokter, dll.)",
+      "pos": "noun",
+      "registerNotes": "I’d like to make an appointment. (Saya ingin membuat janji.)",
+      "pitfallNote": "Restoran dan hotel: booking. Dokter, salon, kantor pemerintah: appointment.",
+      "audio": "audio/en/words/w-appointment.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-symptom",
+      "english": "symptom",
+      "indonesian": "gejala",
+      "pos": "noun",
+      "audio": "audio/en/words/w-symptom.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-dizzy",
+      "english": "dizzy",
+      "indonesian": "pusing (kepala berputar)",
+      "pos": "adjective",
+      "registerNotes": "I feel dizzy. (Saya merasa pusing.)",
+      "audio": "audio/en/words/w-dizzy.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "dizzy adalah pusing yang berputar, seperti mau jatuh. Kalau kepalamu yang sakit: I’ve got a headache."
+    },
+    {
+      "id": "w-rash",
+      "english": "rash",
+      "indonesian": "ruam (kulit)",
+      "pos": "noun",
+      "audio": "audio/en/words/w-rash.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-swollen",
+      "english": "swollen",
+      "indonesian": "bengkak",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-swollen.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-blood",
+      "english": "blood",
+      "indonesian": "darah",
+      "pos": "noun",
+      "registerNotes": "Dibaca 'blad', bukan 'blud'.",
+      "audio": "audio/en/words/w-blood.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tablet",
+      "english": "tablet",
+      "indonesian": "tablet (obat)",
+      "pos": "noun",
+      "registerNotes": "Take two tablets. (Minum dua tablet.)",
+      "audio": "audio/en/words/w-tablet.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-get-better",
+      "english": "get better",
+      "indonesian": "sembuh, membaik",
+      "pos": "phrase",
+      "registerNotes": "Get better soon! (Cepat sembuh, ya!)",
+      "audio": "audio/en/words/w-get-better.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-rest",
+      "english": "rest",
+      "indonesian": "istirahat",
+      "pos": "verb",
+      "registerNotes": "Get some rest. (Istirahat yang cukup, ya.)",
+      "audio": "audio/en/words/w-rest.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-back",
+      "english": "back",
+      "indonesian": "punggung, pinggang",
+      "pos": "noun",
+      "registerNotes": "back pain (sakit punggung, sakit pinggang)",
+      "audio": "audio/en/words/w-back.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-ambulance",
+      "english": "ambulance",
+      "indonesian": "ambulans",
+      "pos": "noun",
+      "registerNotes": "Nomor darurat di Selandia Baru adalah 111.",
+      "audio": "audio/en/words/w-ambulance.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

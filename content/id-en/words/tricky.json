@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "id": "words-tricky",
+  "title": "Kata yang sering keliru",
+  "description": "Kata bahasa Inggris yang sering salah dipakai penutur bahasa Indonesia: kata serapan yang artinya sudah bergeser, singkatan dan merek yang dipakai sebagai nama barang, dan kata yang mirip tapi berbeda arti.",
+  "items": [
+    {
+      "id": "w-phone",
+      "english": "phone",
+      "indonesian": "HP, ponsel",
+      "pos": "noun",
+      "registerNotes": "Bisa juga mobile. My phone's dead. (Baterai HP-ku habis.) What's your mobile number? (Nomor HP-mu berapa?)",
+      "pitfallNote": "Handphone dan HP tidak dipakai di Selandia Baru, dan HP tidak akan dimengerti. Katakan phone atau mobile.",
+      "audio": "audio/en/words/w-phone.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-complaint",
+      "english": "complaint",
+      "indonesian": "keluhan, komplain",
+      "pos": "noun",
+      "registerNotes": "I'd like to make a complaint. (Saya ingin menyampaikan keluhan.)",
+      "pitfallNote": "Dalam bahasa Inggris, complain hanya kata kerja: I want to complain. Kata bendanya complaint: make a complaint, bukan make a complain.",
+      "audio": "audio/en/words/w-complaint.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-petrol-station",
+      "english": "petrol station",
+      "indonesian": "pom bensin, SPBU",
+      "pos": "noun",
+      "registerNotes": "I need to get petrol. (Aku perlu isi bensin.) Di Amerika: gas station.",
+      "pitfallNote": "Di Selandia Baru, bensin disebut petrol, bukan gas atau gasoline seperti di Amerika.",
+      "audio": "audio/en/words/w-petrol-station.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-plastic-bag",
+      "english": "plastic bag",
+      "indonesian": "kantong plastik, kresek",
+      "pos": "noun",
+      "registerNotes": "Kantong plastik sekali pakai sudah dilarang di toko-toko Selandia Baru, jadi bawalah tas belanja sendiri. Do you need a bag? (Perlu tas?)",
+      "pitfallNote": "Dalam bahasa Indonesia, plastik bisa berarti kantongnya (Mau pakai plastik?). Dalam bahasa Inggris, plastic hanya bahannya; kantongnya plastic bag atau bag saja.",
+      "audio": "audio/en/words/w-plastic-bag.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-one-size",
+      "english": "one size",
+      "indonesian": "all size, satu ukuran untuk semua",
+      "pos": "noun",
+      "registerNotes": "One size fits all. (Satu ukuran cocok untuk semua.) Sering tertulis di label topi, kaus kaki, dan pakaian.",
+      "pitfallNote": "All size adalah istilah toko di Indonesia. Dalam bahasa Inggris yang benar one size.",
+      "audio": "audio/en/words/w-one-size.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-heat-pump",
+      "english": "heat pump",
+      "indonesian": "AC (pendingin dan pemanas ruangan)",
+      "pos": "noun",
+      "registerNotes": "Di rumah-rumah Selandia Baru, heat pump terutama dipakai untuk menghangatkan ruangan saat musim dingin. Bisa juga disebut air con.",
+      "pitfallNote": "AC yang dibaca a-se tidak dimengerti. Kalau mau menyebut AC, bacalah ei-si, tapi di rumah orang lebih sering bilang heat pump.",
+      "audio": "audio/en/words/w-heat-pump.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-power-point",
+      "english": "power point",
+      "indonesian": "stop kontak",
+      "pos": "noun",
+      "registerNotes": "Is there a power point I can use? (Ada stop kontak yang bisa kupakai?) Colokan dari Indonesia tidak cocok di Selandia Baru, jadi bawalah travel adaptor.",
+      "pitfallNote": "Stop kontak bukan bahasa Inggris. Lubang di dinding disebut power point atau socket; colokan di ujung kabel disebut plug.",
+      "audio": "audio/en/words/w-power-point.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-flat",
+      "english": "flat",
+      "indonesian": "rumah atau apartemen sewaan",
+      "pos": "noun",
+      "registerNotes": "I'm flatting with two friends. (Aku menyewa rumah bersama dua teman.) Di Selandia Baru, flat bisa berupa apartemen atau rumah biasa.",
+      "pitfallNote": "Kos sering diterjemahkan boarding house, tapi orang Selandia Baru jarang memakainya. Biasanya mereka bilang I rent a room in a flat atau I'm flatting.",
+      "audio": "audio/en/words/w-flat.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-actual",
+      "english": "actual",
+      "indonesian": "sebenarnya, yang sesungguhnya",
+      "pos": "adjective",
+      "registerNotes": "The actual price is higher. (Harga sebenarnya lebih mahal.) Actually juga berarti sebenarnya.",
+      "pitfallNote": "Aktual dalam bahasa Indonesia berarti terkini, tapi actual berarti nyata atau sebenarnya. Untuk berita aktual, katakan the latest news.",
+      "audio": "audio/en/words/w-actual.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sensible",
+      "english": "sensible",
+      "indonesian": "masuk akal, bijak",
+      "pos": "adjective",
+      "registerNotes": "That's a sensible idea. (Itu ide yang masuk akal.) Wear sensible shoes. (Pakai sepatu yang nyaman dan praktis.)",
+      "pitfallNote": "Sensible tidak sama dengan sensitif. Orang yang peka atau mudah tersinggung adalah sensitive.",
+      "audio": "audio/en/words/w-sensible.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-photocopy",
+      "english": "photocopy",
+      "indonesian": "fotokopi",
+      "pos": "noun",
+      "registerNotes": "Can I make a photocopy? (Boleh aku fotokopi?) Di Selandia Baru, mesin fotokopi biasanya ada di perpustakaan atau toko alat tulis.",
+      "pitfallNote": "Ejaannya photocopy, dengan ph. Untuk salinan dokumen sering cukup a copy: a copy of your passport (fotokopi paspormu).",
+      "audio": "audio/en/words/w-photocopy.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-recent-graduate",
+      "english": "recent graduate",
+      "indonesian": "lulusan baru, fresh graduate",
+      "pos": "noun",
+      "registerNotes": "I'm a recent nursing graduate. (Aku baru lulus dari jurusan keperawatan.)",
+      "pitfallNote": "Fresh graduate umum di lowongan kerja Indonesia, tapi di Selandia Baru lebih sering recent graduate atau graduate saja: graduate jobs (lowongan untuk lulusan baru).",
+      "audio": "audio/en/words/w-recent-graduate.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-motorbike",
+      "english": "motorbike",
+      "indonesian": "sepeda motor, motor",
+      "pos": "noun",
+      "registerNotes": "I ride a motorbike to work. (Aku naik motor ke tempat kerja.) Motor kecil seperti skuter disebut scooter.",
+      "pitfallNote": "Dalam bahasa Inggris, motor berarti mesin, bukan kendaraannya. Katakan motorbike atau scooter.",
+      "audio": "audio/en/words/w-motorbike.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-flat-tyre",
+      "english": "flat tyre",
+      "indonesian": "ban kempis, ban bocor",
+      "pos": "noun",
+      "registerNotes": "I've got a flat tyre. (Ban mobilku kempis.) Ejaan Selandia Baru tyre; di Amerika tire.",
+      "pitfallNote": "Ban dalam bahasa Inggris berarti larangan. Ban kendaraan disebut tyre.",
+      "audio": "audio/en/words/w-flat-tyre.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-debit-card",
+      "english": "debit card",
+      "indonesian": "kartu debit, kartu ATM",
+      "pos": "noun",
+      "registerNotes": "Di Selandia Baru, kartu debit sering disebut EFTPOS card. Can I pay by card? (Boleh bayar pakai kartu?)",
+      "pitfallNote": "ATM hanya mesinnya. Kartu ATM disebut debit card atau card saja, jadi jangan bilang pay by ATM.",
+      "audio": "audio/en/words/w-debit-card.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-data",
+      "english": "data",
+      "indonesian": "kuota internet",
+      "pos": "noun",
+      "registerNotes": "I've run out of data. (Kuotaku habis.) Paket internet disebut data plan.",
+      "pitfallNote": "Quota tidak dipakai untuk internet HP. Katakan data: Do you have enough data? (Kuotamu cukup?)",
+      "audio": "audio/en/words/w-data.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-iced-coffee",
+      "english": "iced coffee",
+      "indonesian": "es kopi",
+      "pos": "noun",
+      "registerNotes": "Di kafe Selandia Baru, iced coffee biasanya kopi dingin dengan es krim dan krim kocok. Kalau mau kopi dingin biasa, minta iced latte atau iced long black.",
+      "pitfallNote": "Bilang iced, dengan -d di akhir: iced coffee, iced tea. Bukan ice coffee.",
+      "audio": "audio/en/words/w-iced-coffee.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-shuttle",
+      "english": "shuttle",
+      "indonesian": "travel, mobil antar-jemput",
+      "pos": "noun",
+      "registerNotes": "I took the airport shuttle. (Aku naik shuttle bandara.) Bus jarak jauh antarkota disebut coach.",
+      "pitfallNote": "Travel dalam bahasa Inggris berarti bepergian, bukan kendaraan. I went by travel tidak dimengerti; katakan I took a shuttle.",
+      "audio": "audio/en/words/w-shuttle.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-plaster",
+      "english": "plaster",
+      "indonesian": "plester luka, Hansaplast",
+      "pos": "noun",
+      "registerNotes": "Can I have a plaster? (Boleh minta plester?) Disebut juga Band-Aid.",
+      "pitfallNote": "Hansaplast adalah merek dan jarang dikenal di Selandia Baru. Katakan plaster.",
+      "audio": "audio/en/words/w-plaster.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-follow-up",
+      "english": "follow-up",
+      "indonesian": "kontrol (ke dokter)",
+      "pos": "noun",
+      "registerNotes": "I need a follow-up appointment. (Aku perlu jadwal kontrol.)",
+      "pitfallNote": "Control berarti mengendalikan atau mengawasi. Kontrol ke dokter setelah berobat disebut a follow-up (appointment).",
+      "audio": "audio/en/words/w-follow-up.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-runny-nose",
+      "english": "runny nose",
+      "indonesian": "pilek, hidung meler",
+      "pos": "noun",
+      "registerNotes": "I've got a cold and a runny nose. (Aku pilek, hidungku meler.)",
+      "pitfallNote": "Untuk pilek biasa, jangan bilang I have flu. Flu dalam bahasa Inggris (influenza) jauh lebih berat. Katakan I've got a cold.",
+      "audio": "audio/en/words/w-runny-nose.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-gym",
+      "english": "gym",
+      "indonesian": "tempat fitness, gym",
+      "pos": "noun",
+      "registerNotes": "I'm going to the gym. (Aku mau ke tempat fitness.)",
+      "pitfallNote": "Fitness dalam bahasa Inggris berarti kebugaran, bukan tempatnya. Jangan bilang I go to fitness; katakan I go to the gym.",
+      "audio": "audio/en/words/w-gym.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-uni",
+      "english": "uni",
+      "indonesian": "universitas, kampus",
+      "pos": "noun",
+      "registerNotes": "I'm at uni. (Aku masih kuliah.) Bentuk lengkapnya university.",
+      "pitfallNote": "Di Selandia Baru, college sering berarti SMA, dan banyak SMA bernama College. Untuk kuliah, katakan uni atau university.",
+      "audio": "audio/en/words/w-uni.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-parcel",
+      "english": "parcel",
+      "indonesian": "paket (kiriman)",
+      "pos": "noun",
+      "registerNotes": "I'm waiting for a parcel. (Aku sedang menunggu paket.) Jasa ekspedisi disebut courier.",
+      "pitfallNote": "Packet adalah bungkus kecil, misalnya a packet of chips. Paket kiriman disebut parcel.",
+      "audio": "audio/en/words/w-parcel.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-staff-member",
+      "english": "staff member",
+      "indonesian": "staf, petugas",
+      "pos": "noun",
+      "registerNotes": "Please ask a staff member. (Silakan tanya petugas.)",
+      "pitfallNote": "Staff berarti semua karyawan sebagai satu kelompok. Untuk satu orang, jangan bilang a staff; katakan a staff member.",
+      "audio": "audio/en/words/w-staff-member.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-interested",
+      "english": "interested",
+      "indonesian": "tertarik",
+      "pos": "adjective",
+      "registerNotes": "I'm interested in art. (Aku tertarik pada seni.) Selalu diikuti in.",
+      "pitfallNote": "I'm interesting berarti aku orang yang menarik. Untuk perasaanmu, pakai bentuk -ed: interested, bored, excited.",
+      "audio": "audio/en/words/w-interested.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-have-a-shower",
+      "english": "have a shower",
+      "indonesian": "mandi",
+      "pos": "phrase",
+      "registerNotes": "I'm going to have a shower. (Aku mau mandi.) Di Amerika: take a shower. Kamar mandi di Selandia Baru biasanya hanya punya pancuran, tanpa bak dan gayung.",
+      "pitfallNote": "Take a bath berarti berendam di bak mandi (bathtub). Untuk mandi biasa, katakan have a shower.",
+      "audio": "audio/en/words/w-have-a-shower.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pork",
+      "english": "pork",
+      "indonesian": "daging babi",
+      "pos": "noun",
+      "registerNotes": "Does this have pork in it? (Apa ini mengandung babi?) Bacon dan ham juga dari babi.",
+      "pitfallNote": "Untuk dagingnya, jangan bilang pig (itu hewannya). Daging babi adalah pork, dan daging sapi adalah beef, bukan cow.",
+      "audio": "audio/en/words/w-pork.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-traffic-lights",
+      "english": "traffic lights",
+      "indonesian": "lampu merah, lampu lalu lintas",
+      "pos": "noun",
+      "registerNotes": "Turn left at the traffic lights. (Belok kiri di lampu merah.) Sering disingkat the lights.",
+      "pitfallNote": "Red light hanya berarti lampu yang berwarna merah. Untuk tempatnya, katakan the traffic lights.",
+      "audio": "audio/en/words/w-traffic-lights.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pedestrian-crossing",
+      "english": "pedestrian crossing",
+      "indonesian": "zebra cross, penyeberangan",
+      "pos": "noun",
+      "registerNotes": "Disebut juga zebra crossing. Di Selandia Baru, pengemudi wajib memberi jalan kepada pejalan kaki di penyeberangan ini.",
+      "pitfallNote": "Zebra cross adalah singkatan Indonesia. Dalam bahasa Inggris: zebra crossing atau pedestrian crossing, dengan -ing.",
+      "audio": "audio/en/words/w-pedestrian-crossing.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-first-name",
+      "english": "first name",
+      "indonesian": "nama depan, nama panggilan",
+      "pos": "noun",
+      "registerNotes": "What's your first name? (Nama depanmu siapa?) Nama keluarga disebut surname atau last name.",
+      "pitfallNote": "Jangan memanggil orang dengan Mister, Sir, atau Miss saja seperti Pak, Bu, atau Mbak. Di Selandia Baru, orang saling memanggil dengan nama depan, termasuk bos dan dosen. Untuk memanggil pelayan, cukup Excuse me.",
+      "audio": "audio/en/words/w-first-name.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-allergy",
+      "english": "allergy",
+      "indonesian": "alergi",
+      "pos": "noun",
+      "registerNotes": "I have a nut allergy. (Saya alergi kacang.) Kata sifatnya allergic: I'm allergic to prawns.",
+      "pitfallNote": "Pengucapannya \"E-le-ji\", dengan g dibaca seperti j, bukan \"a-ler-gi\". Jangan bilang I'm allergy: pakai I have an allergy atau I'm allergic.",
+      "audio": "audio/en/words/w-allergy.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-excited",
+      "english": "excited",
+      "indonesian": "bersemangat, tidak sabar (menunggu sesuatu yang menyenangkan)",
+      "pos": "adjective",
+      "registerNotes": "I'm so excited! (Aku senang banget, nggak sabar!) Untuk acara yang akan datang: I'm excited about the trip.",
+      "pitfallNote": "Bedakan excited (orangnya yang merasa) dan exciting (hal yang membuat bersemangat): The trip is exciting, I'm excited. Bukan I'm exciting.",
+      "audio": "audio/en/words/w-excited.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-part-time-job",
+      "english": "part-time job",
+      "indonesian": "kerja paruh waktu, kerja sampingan",
+      "pos": "noun",
+      "registerNotes": "I have a part-time job at a café. (Saya kerja paruh waktu di kafe.) Kerja penuh waktu disebut full-time job.",
+      "pitfallNote": "Jangan bilang side job atau freelance untuk kerja paruh waktu biasa: freelance berarti bekerja lepas untuk beberapa klien.",
+      "audio": "audio/en/words/w-part-time-job.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-coffee",
+      "english": "coffee",
+      "indonesian": "kopi",
+      "pos": "noun",
+      "registerNotes": "Di kafe Selandia Baru, kopi biasanya pakai susu: flat white, latte, cappuccino. Kopi hitam disebut long black.",
+      "pitfallNote": "Pengucapannya \"KO-fi\", dengan f yang jelas, bukan \"ko-pi\".",
+      "audio": "audio/en/words/w-coffee.mp3",
+      "tags": [
+        "kata yang sering keliru"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

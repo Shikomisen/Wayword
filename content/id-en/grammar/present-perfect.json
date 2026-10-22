@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-present-perfect",
+  "connector": "have been",
+  "gloss": "pernah … (pengalaman)",
+  "title": "Have you ever…? — pernah … (present perfect)",
+  "pattern": "have / has ＋ past participle（been, seen, tried…） ／ Have you ever …?",
+  "explanation": "Pengalaman (“pernah …”) diucapkan dengan have + past participle (V3): I’ve been to Rotorua. (Saya pernah ke Rotorua.) Untuk bertanya, pakai Have you ever …? “Tidak pernah” atau “belum pernah” adalah never: I’ve never tried it. Bahasa Indonesia cukup menambah “pernah”, tapi bahasa Inggris mengubah kata kerjanya. Past participle biasanya berakhiran -ed, tapi ada yang berubah bentuk, seperti be → been, see → seen, eat → eaten.",
+  "natural": "Bertanya soal pengalaman adalah cara yang bagus untuk memulai obrolan: Have you ever been to Japan? (Kamu pernah ke Jepang?)",
+  "stiff": "Kalau kamu menyebut kapan persisnya, jangan pakai present perfect, walaupun dalam bahasa Indonesia kamu bilang “sudah pernah”. I’ve been there last year. itu salah; yang benar I went there last year.",
+  "examples": [
+    {
+      "id": "gx-present-perfect-1",
+      "english": "Have you ever been to Rotorua?",
+      "indonesian": "Apakah kamu pernah ke Rotorua?",
+      "chunks": [
+        {
+          "t": "Have you ",
+          "w": "w-you"
+        },
+        {
+          "t": "ever been "
+        },
+        {
+          "t": "to Rotorua?"
+        }
+      ],
+      "gap": {
+        "before": "Have you ever ",
+        "answer": "been",
+        "after": " to Rotorua?",
+        "options": [
+          "been",
+          "went",
+          "go"
+        ],
+        "why": "Pengalaman (“pernah”) memakai Have you ever + past participle. “Pernah ke …” adalah been to."
+      },
+      "audio": "audio/en/grammar/gx-present-perfect-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "have been"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-present-perfect-2",
+      "english": "I’ve never tried bungy jumping.",
+      "indonesian": "Saya belum pernah mencoba bungee jumping.",
+      "chunks": [
+        {
+          "t": "I’ve ",
+          "w": "w-i"
+        },
+        {
+          "t": "never tried "
+        },
+        {
+          "t": "bungy jumping."
+        }
+      ],
+      "gap": {
+        "before": "I’ve ",
+        "answer": "never",
+        "after": " tried bungy jumping.",
+        "options": [
+          "never",
+          "ever",
+          "no"
+        ],
+        "why": "“Belum pernah / tidak pernah” adalah never, diletakkan di antara have dan past participle."
+      },
+      "audio": "audio/en/grammar/gx-present-perfect-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "have been"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-present-perfect-3",
+      "english": "She’s seen that film three times.",
+      "indonesian": "Dia sudah tiga kali menonton film itu.",
+      "chunks": [
+        {
+          "t": "She’s ",
+          "w": "w-she"
+        },
+        {
+          "t": "seen ",
+          "w": "w-see"
+        },
+        {
+          "t": "that film "
+        },
+        {
+          "t": "three times."
+        }
+      ],
+      "gap": {
+        "before": "She’s ",
+        "answer": "seen",
+        "after": " that film three times.",
+        "options": [
+          "seen",
+          "saw",
+          "see"
+        ],
+        "why": "Setelah has pakai past participle: see → saw → seen."
+      },
+      "audio": "audio/en/grammar/gx-present-perfect-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "have been"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-present-perfect-4",
+      "english": "I went there last year.",
+      "indonesian": "Saya ke sana tahun lalu.",
+      "chunks": [
+        {
+          "t": "I went ",
+          "w": "w-go"
+        },
+        {
+          "t": "there ",
+          "w": "w-there"
+        },
+        {
+          "t": "last year.",
+          "w": "w-year"
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "went",
+        "after": " there last year.",
+        "options": [
+          "went",
+          "have been",
+          "have gone"
+        ],
+        "why": "Kalau waktunya disebut, seperti last year, pakai past tense biasa."
+      },
+      "audio": "audio/en/grammar/gx-present-perfect-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "have been"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

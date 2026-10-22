@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "pat-have",
+  "connector": "Can I have…?",
+  "gloss": "Boleh minta…?",
+  "title": "Can I have…? — Boleh minta…?",
+  "pattern": "Can I have ＋ barang ＋ , please?",
+  "explanation": "Can I have …? artinya “boleh minta…?”. Ini cara paling dasar untuk meminta sesuatu kepada pelayan atau kasir. Sambil menunjuk, bilang Can I have this one? dan kamu bisa meminta barang yang namanya tidak kamu tahu. Kalau ingin lebih sopan, pakai Could I have …?.",
+  "natural": "Di kafe, toko roti, kasir toko, di mana saja. Dengan please, sudah cukup sopan.",
+  "stiff": "Give me … terdengar seperti perintah (“kasih saya…!”), jadi jangan dipakai kepada pelayan. Jangan juga menerjemahkan “tolong” menjadi Please help me …: untuk meminta barang, cukup Can I have …, please?.",
+  "examples": [
+    {
+      "id": "px-have-1",
+      "english": "Can I have a paper bag, please?",
+      "indonesian": "Boleh minta kantong kertas?",
+      "chunks": [
+        {
+          "t": "Can I have "
+        },
+        {
+          "t": "a paper bag, ",
+          "w": "w-paper-bag"
+        },
+        {
+          "t": "please?"
+        }
+      ],
+      "gap": {
+        "before": "Can I ",
+        "answer": "have",
+        "after": " a paper bag, please?",
+        "options": [
+          "have",
+          "give",
+          "do"
+        ],
+        "why": "“Minta” (menerima) di sini adalah have. Give artinya “memberi”, dan do artinya “melakukan”."
+      },
+      "audio": "audio/en/patterns/px-have-1.mp3",
+      "tags": [
+        "pola kalimat",
+        "Can I have…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-have-2",
+      "english": "Can I have the bill, please?",
+      "indonesian": "Boleh minta tagihannya?",
+      "chunks": [
+        {
+          "t": "Can I have "
+        },
+        {
+          "t": "the bill, ",
+          "w": "w-bill"
+        },
+        {
+          "t": "please?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Can I",
+        "after": " have the bill, please?",
+        "options": [
+          "Can I",
+          "Can you",
+          "Do I"
+        ],
+        "why": "Kalau kamu yang menerima, pakai Can I …?. Can you have …? artinya “apakah kamu bisa punya…?”, jadi maknanya berubah."
+      },
+      "audio": "audio/en/patterns/px-have-2.mp3",
+      "tags": [
+        "pola kalimat",
+        "Can I have…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-have-3",
+      "english": "Can I have two scones, please?",
+      "indonesian": "Minta dua scone, ya.",
+      "chunks": [
+        {
+          "t": "Can I have "
+        },
+        {
+          "t": "two scones, ",
+          "w": "w-scone"
+        },
+        {
+          "t": "please?"
+        }
+      ],
+      "gap": {
+        "before": "Can I have two ",
+        "answer": "scones",
+        "after": ", please?",
+        "options": [
+          "scones",
+          "scone",
+          "scone's"
+        ],
+        "why": "Untuk dua atau lebih, tambahkan -s. Dalam bahasa Indonesia cukup “dua scone”, tapi bahasa Inggris tetap butuh -s."
+      },
+      "audio": "audio/en/patterns/px-have-3.mp3",
+      "tags": [
+        "pola kalimat",
+        "Can I have…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "px-have-4",
+      "english": "Can I have some water, please?",
+      "indonesian": "Boleh minta air putih?",
+      "chunks": [
+        {
+          "t": "Can I have "
+        },
+        {
+          "t": "some water, ",
+          "w": "w-water"
+        },
+        {
+          "t": "please?"
+        }
+      ],
+      "gap": {
+        "before": "Can I have ",
+        "answer": "some",
+        "after": " water, please?",
+        "options": [
+          "some",
+          "many",
+          "few"
+        ],
+        "why": "Water tidak bisa dihitung. Untuk meminta “sedikit air”, pakai some water, bukan many atau few."
+      },
+      "audio": "audio/en/patterns/px-have-4.mp3",
+      "tags": [
+        "pola kalimat",
+        "Can I have…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

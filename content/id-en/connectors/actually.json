@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "con-actually",
+  "connector": "actually",
+  "gloss": "sebenarnya, ternyata",
+  "title": "actually — sebenarnya, ternyata",
+  "pattern": "Actually, ... ／ ... actually ...",
+  "explanation": "actually artinya “sebenarnya” atau “ternyata”. Dipakai untuk menyampaikan sesuatu yang berbeda dari dugaan orang, atau untuk meralat ucapanmu. Pemakaiannya mirip “sebenarnya” dalam bahasa Indonesia, dan berguna untuk memperhalus ucapan dalam percakapan.",
+  "natural": "Saat mengganti pesanan (Actually, could I change my order?) atau meralat dengan sopan.",
+  "stiff": "Jangan memakai actually dengan arti “sungguh” (really). It's actually good. artinya “(berbeda dari dugaan) ternyata enak”. Actually juga bukan “aktual” atau “saat ini”.",
+  "examples": [
+    {
+      "id": "cx-actually-1",
+      "english": "Actually, could I change my order?",
+      "indonesian": "Eh, boleh saya ganti pesanan?",
+      "chunks": [
+        {
+          "t": "Actually, "
+        },
+        {
+          "t": "could I change ",
+          "w": "w-change-v"
+        },
+        {
+          "t": "my order?",
+          "w": "w-order"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Actually",
+        "after": ", could I change my order?",
+        "options": [
+          "Actually",
+          "Really",
+          "Finally"
+        ],
+        "why": "Untuk mengubah ucapanmu sebelumnya, pakai Actually."
+      },
+      "audio": "audio/en/connectors/cx-actually-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "actually"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-actually-2",
+      "english": "I thought it was small, but actually it fits.",
+      "indonesian": "Saya kira kekecilan, ternyata pas.",
+      "chunks": [
+        {
+          "t": "I thought it was small, "
+        },
+        {
+          "t": "but actually "
+        },
+        {
+          "t": "it fits.",
+          "w": "w-fit"
+        }
+      ],
+      "gap": {
+        "before": "I thought it was small, but ",
+        "answer": "actually",
+        "after": " it fits.",
+        "options": [
+          "actually",
+          "really",
+          "surely"
+        ],
+        "why": "Kalau ternyata berbeda dari dugaan, pakai actually (“ternyata”)."
+      },
+      "audio": "audio/en/connectors/cx-actually-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "actually"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-actually-3",
+      "english": "Actually, I'd like a long black instead.",
+      "indonesian": "Eh, saya pesan long black saja.",
+      "chunks": [
+        {
+          "t": "Actually, "
+        },
+        {
+          "t": "I'd like "
+        },
+        {
+          "t": "a long black instead.",
+          "w": "w-long-black"
+        }
+      ],
+      "gap": {
+        "before": "Actually, I'd like a long black ",
+        "answer": "instead",
+        "after": ".",
+        "options": [
+          "instead",
+          "also",
+          "again"
+        ],
+        "why": "“Sebagai gantinya” (bukan yang tadi) adalah instead, mirip “… saja” di sini."
+      },
+      "audio": "audio/en/connectors/cx-actually-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "actually"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-actually-4",
+      "english": "It looks spicy, but it's actually quite mild.",
+      "indonesian": "Kelihatannya pedas, tapi sebenarnya lumayan ringan.",
+      "chunks": [
+        {
+          "t": "It looks spicy, ",
+          "w": "w-spicy"
+        },
+        {
+          "t": "but "
+        },
+        {
+          "t": "it's actually quite mild.",
+          "w": "w-mild"
+        }
+      ],
+      "gap": {
+        "before": "It looks spicy, but it's ",
+        "answer": "actually",
+        "after": " quite mild.",
+        "options": [
+          "actually",
+          "really",
+          "probably"
+        ],
+        "why": "Kalau berbeda dari kelihatannya, pakai actually."
+      },
+      "audio": "audio/en/connectors/cx-actually-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "actually"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-social",
+  "title": "Pergaulan & hubungan",
+  "description": "Mengajak, berkumpul, merayakan. Kata-kata untuk bergaul dengan teman dan kenalan.",
+  "items": [
+    {
+      "id": "w-invite",
+      "english": "invite",
+      "indonesian": "mengajak, mengundang",
+      "pos": "verb",
+      "registerNotes": "Thanks for inviting me. (Terima kasih sudah mengajakku.)",
+      "audio": "audio/en/words/w-invite.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-invitation",
+      "english": "invitation",
+      "indonesian": "undangan",
+      "pos": "noun",
+      "audio": "audio/en/words/w-invitation.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-party",
+      "english": "party",
+      "indonesian": "pesta",
+      "pos": "noun",
+      "audio": "audio/en/words/w-party.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-guest",
+      "english": "guest",
+      "indonesian": "tamu (undangan)",
+      "pos": "noun",
+      "audio": "audio/en/words/w-guest.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-host",
+      "english": "host",
+      "indonesian": "tuan rumah",
+      "pos": "noun",
+      "audio": "audio/en/words/w-host.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hang-out",
+      "english": "hang out",
+      "indonesian": "main bareng, nongkrong",
+      "pos": "phrase",
+      "registerNotes": "Do you want to hang out this weekend? (Mau main bareng akhir pekan ini?)",
+      "audio": "audio/en/words/w-hang-out.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-catch-up",
+      "english": "catch up",
+      "indonesian": "bertemu dan bertukar kabar",
+      "pos": "phrase",
+      "registerNotes": "Let’s catch up soon! (Kapan-kapan ketemuan, yuk!) Kata bendanya: a catch-up.",
+      "audio": "audio/en/words/w-catch-up.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-get-together",
+      "english": "get-together",
+      "indonesian": "acara kumpul-kumpul",
+      "pos": "noun",
+      "audio": "audio/en/words/w-get-together.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-barbecue",
+      "english": "barbecue",
+      "indonesian": "barbeku, acara bakar-bakar",
+      "pos": "noun",
+      "registerNotes": "Sering ditulis BBQ. Di Selandia Baru, dalam bahasa santai juga disebut barbie.",
+      "audio": "audio/en/words/w-barbecue.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bring-a-plate",
+      "english": "bring a plate",
+      "indonesian": "bawa satu hidangan",
+      "pos": "phrase",
+      "registerNotes": "Ungkapan khas Selandia Baru: bawalah satu makanan (salad, kue, dan sebagainya) untuk dimakan bersama di acara kumpul.",
+      "pitfallNote": "Bukan membawa piring. Kalau kamu datang membawa piring kosong, orang akan tertawa.",
+      "audio": "audio/en/words/w-bring-a-plate.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-date",
+      "english": "date",
+      "indonesian": "kencan; tanggal",
+      "pos": "noun",
+      "registerNotes": "go on a date (pergi kencan), What’s the date today? (Hari ini tanggal berapa?)",
+      "audio": "audio/en/words/w-date.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-relationship",
+      "english": "relationship",
+      "indonesian": "hubungan, pacaran",
+      "pos": "noun",
+      "registerNotes": "I’m in a relationship. (Aku sudah punya pacar.)",
+      "audio": "audio/en/words/w-relationship.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-get-along",
+      "english": "get along",
+      "indonesian": "akur, cocok",
+      "pos": "phrase",
+      "registerNotes": "We get along well. (Kami akur.)",
+      "audio": "audio/en/words/w-get-along.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-introduce",
+      "english": "introduce",
+      "indonesian": "memperkenalkan",
+      "pos": "verb",
+      "registerNotes": "Let me introduce you to Sam. (Aku kenalkan kamu ke Sam, ya.)",
+      "audio": "audio/en/words/w-introduce.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chat",
+      "english": "chat",
+      "indonesian": "mengobrol, obrolan",
+      "pos": "verb",
+      "registerNotes": "a quick chat (ngobrol sebentar)",
+      "audio": "audio/en/words/w-chat.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gossip",
+      "english": "gossip",
+      "indonesian": "gosip",
+      "pos": "noun",
+      "audio": "audio/en/words/w-gossip.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-joke",
+      "english": "joke",
+      "indonesian": "lelucon, candaan",
+      "pos": "noun",
+      "registerNotes": "I’m joking. (Bercanda.), Just kidding. (Cuma bercanda, kok.)",
+      "audio": "audio/en/words/w-joke.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-celebrate",
+      "english": "celebrate",
+      "indonesian": "merayakan",
+      "pos": "verb",
+      "audio": "audio/en/words/w-celebrate.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-birthday",
+      "english": "birthday",
+      "indonesian": "ulang tahun",
+      "pos": "noun",
+      "registerNotes": "Happy birthday! (Selamat ulang tahun!)",
+      "audio": "audio/en/words/w-birthday.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-wedding",
+      "english": "wedding",
+      "indonesian": "pernikahan, pesta pernikahan",
+      "pos": "noun",
+      "audio": "audio/en/words/w-wedding.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-congratulations",
+      "english": "congratulations",
+      "indonesian": "selamat (atas keberhasilan)",
+      "pos": "interjection",
+      "registerNotes": "Santainya: Congrats! Untuk ulang tahun tidak dipakai; bilang Happy birthday!",
+      "audio": "audio/en/words/w-congratulations.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Congratulations hanya untuk keberhasilan atau kabar gembira (lulus, menikah, dapat kerja). Selamat pagi: Good morning. Selamat jalan: Have a safe trip. Selamat makan: Enjoy your meal."
+    },
+    {
+      "id": "w-anniversary",
+      "english": "anniversary",
+      "indonesian": "hari jadi, ulang tahun pernikahan",
+      "pos": "noun",
+      "registerNotes": "our wedding anniversary (ulang tahun pernikahan kami)",
+      "audio": "audio/en/words/w-anniversary.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gift",
+      "english": "gift",
+      "indonesian": "hadiah, kado",
+      "pos": "noun",
+      "registerNotes": "Dalam percakapan sehari-hari, present juga sering dipakai.",
+      "audio": "audio/en/words/w-gift.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-visit",
+      "english": "visit",
+      "indonesian": "berkunjung, main ke rumah",
+      "pos": "verb",
+      "registerNotes": "Come and visit us! (Main ke rumah kami, ya!)",
+      "audio": "audio/en/words/w-visit.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-social-media",
+      "english": "social media",
+      "indonesian": "media sosial",
+      "pos": "noun",
+      "pitfallNote": "Sosmed dan SNS tidak dipakai penutur bahasa Inggris. Bilang social media: I saw it on social media.",
+      "audio": "audio/en/words/w-social-media.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-keep-in-touch",
+      "english": "keep in touch",
+      "indonesian": "tetap berhubungan, saling kabar",
+      "pos": "phrase",
+      "registerNotes": "Let’s keep in touch! (Tetap saling kabar, ya!)",
+      "audio": "audio/en/words/w-keep-in-touch.mp3",
+      "tags": [
+        "pergaulan"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

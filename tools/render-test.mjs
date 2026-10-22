@@ -78,9 +78,22 @@ globalThis.localStorage = window.localStorage ?? {
 let unreachable = null;
 // How long each file takes to arrive, in ms: a slow connection.
 let slowness = 0;
+// Every real course is available, so the coming-soon screens get a planned one
+// of their own: Korean, for English and Japanese speakers.
+const withPlannedCourse = (registry) => ({
+  ...registry,
+  languages: { ...registry.languages, ko: { name: { en: 'Korean', ja: '韓国語', id: 'Korea' }, native: '한국어', badge: 'KO' } },
+  courses: [...registry.courses,
+    { id: 'en-ko', speaker: 'en', target: 'ko', status: 'planned' },
+    { id: 'ja-ko', speaker: 'ja', target: 'ko', status: 'planned' }],
+});
 globalThis.fetch = async (path) => {
   if (slowness) await new Promise((r) => setTimeout(r, slowness));
   if (unreachable && String(path).includes(unreachable)) return { ok: false, status: 504, json: async () => null };
+  if (String(path).endsWith('content/courses.json')) {
+    const registry = withPlannedCourse(JSON.parse(readFileSync(resolve(ROOT, 'content/courses.json'), 'utf8')));
+    return { ok: true, status: 200, json: async () => registry };
+  }
   const file = resolve(ROOT, String(path).replace(/^\.\//, ''));
   if (!existsSync(file)) return { ok: false, status: 404, json: async () => null };
   return { ok: true, status: 200, json: async () => JSON.parse(readFileSync(file, 'utf8')) };
@@ -130,15 +143,15 @@ check('speaker defaults to the device language (English here)',
   $('.segment.is-on')?.dataset.speaker === 'en', $('.segment.is-on')?.textContent);
 check('English speakers are offered Japanese',
   Boolean($('.course-card[data-course="en-ja"]:not(.is-planned)')), $('.course-card[data-course="en-ja"]')?.textContent);
-check('Indonesian is listed as a coming-soon placeholder',
-  Boolean($('.course-card[data-course="en-id"].is-planned')), $('.course-card[data-course="en-id"]')?.textContent);
+check('a planned course is listed as a coming-soon placeholder',
+  Boolean($('.course-card[data-course="en-ko"].is-planned')), $('.course-card[data-course="en-ko"]')?.textContent);
 check('Japanese shows as not started yet', $('.course-card[data-course="en-ja"]')?.textContent.includes('Not started'));
 const { VERSION } = await import('../js/version.js');
 check('the picker says which version this is', $('.home-footer')?.textContent === `Wayword ${VERSION}`,
   $('.home-footer')?.textContent);
 
-await goTo('#/en-id/');
-check('the Indonesian placeholder opens a coming-soon screen', text().includes('Indonesian is coming soon'));
+await goTo('#/en-ko/');
+check('the placeholder opens a coming-soon screen', text().includes('Korean is coming soon'));
 check('a placeholder course has no tab bar', document.body.classList.contains('no-tabs'));
 check('…but does have the way back to the picker',
   document.querySelector('.coursebar-home')?.getAttribute('href') === '#/');
@@ -1134,8 +1147,8 @@ check('choosing 日本語 relabels the picker in Japanese', text().includes('学
 check('…and sets the page language for fonts and screen readers', document.documentElement.lang === 'ja');
 check('Japanese speakers are offered English',
   Boolean($('.course-card[data-course="ja-en"]:not(.is-planned)')), $('.course-card[data-course="ja-en"] .course-name')?.textContent);
-check('…with Indonesian as a coming-soon placeholder here too',
-  Boolean($('.course-card[data-course="ja-id"].is-planned')), $('.course-card[data-course="ja-id"] .pill')?.textContent);
+check('…with a planned course as a coming-soon placeholder here too',
+  Boolean($('.course-card[data-course="ja-ko"].is-planned')), $('.course-card[data-course="ja-ko"] .pill')?.textContent);
 check('the English-speaker courses are not listed', !$('.course-card[data-course="en-ja"]'));
 
 console.log('\n10. English for Japanese speakers');
@@ -1630,6 +1643,59 @@ await overtake('#/', '#/en-ja/browse');
 check('the picker overtaken by a course screen shows that screen alone',
   screens().length === 1 && $('h1')?.textContent === 'Learn' && !document.body.classList.contains('at-home'),
   screens().join(' + '));
+
+console.log('\n11e. Indonesian speakers: the interface, and English for Indonesian speakers');
+
+const ID = JSON.parse(readFileSync(resolve(ROOT, 'content/ui/id.json'), 'utf8'));
+// The English course for Indonesian speakers keeps the original's English, and nothing of its Japanese:
+// no kana or kanji. (The middle dot ・ is allowed: the English course's own patterns use it, He・She・It.)
+const JAPANESE = /[぀-ヺー-ヿ一-鿿]+/;
+const hasJapanese = (s) => JAPANESE.test(s);
+const firstJapanese = () => (text().match(JAPANESE) || [''])[0];
+await goTo('#/');
+$$('.segment').find((b) => b.dataset.speaker === 'id')?.click();
+for (let i = 0; i < 6; i++) await tick();
+check('the picker offers Bahasa Indonesia to learn from, and switches to it',
+  $('.segment.is-on')?.dataset.speaker === 'id' && text().includes(ID['home.learn']) && text().includes(ID['home.speaker']),
+  $('.segment.is-on')?.textContent);
+check('…and sets the page language', document.documentElement.lang === 'id');
+check('Indonesian speakers are offered English',
+  Boolean($('.course-card[data-course="id-en"]:not(.is-planned)')) && $('.course-card[data-course="id-en"] .course-name')?.textContent === 'Inggris',
+  $('.course-card[data-course="id-en"] .course-name')?.textContent);
+check('…with Japanese coming soon', Boolean($('.course-card[data-course="id-ja"].is-planned')));
+check('…and not the other speakers\' courses', !$('.course-card[data-course="en-ja"]') && !$('.course-card[data-course="ja-en"]'));
+
+await goTo('#/id-en/');
+check('the course bar names the pair in Indonesian', document.querySelector('.coursebar-pair')?.textContent === 'Indonesia › Inggris',
+  document.querySelector('.coursebar-pair')?.textContent);
+check('placement asks in Indonesian, with the course\'s own intro', text().includes(ID['quiz.title']) && text().includes('bahasa Inggris'),
+  $('h1')?.textContent);
+$('.placement-intro .btn-ghost')?.click();
+for (let i = 0; i < 12; i++) await tick();
+const idTabs = [...document.querySelectorAll('.tabbar a')].map((a) => a.textContent);
+check('Today, with the tabs in Indonesian and the lessons tab named by the course',
+  $('h1')?.textContent === ID['today.title'] && idTabs.some((x) => x.includes(ID['tab.today'])) && idTabs.some((x) => x.includes('Pola')),
+  idTabs.join(' | '));
+check('…and no Japanese anywhere on it', !hasJapanese(text()), firstJapanese());
+await goTo('#/id-en/browse');
+check('Learn lists the decks in Indonesian, with no Japanese', $('h1')?.textContent === ID['browse.title'] && !hasJapanese(text()),
+  firstJapanese());
+const beLesson = JSON.parse(readFileSync(resolve(ROOT, 'content/id-en/grammar/be.json'), 'utf8'));
+await goTo('#/id-en/connectors/gr-be');
+check('a lesson explains English to an Indonesian speaker', text().includes(beLesson.explanation.slice(0, 40)) && !hasJapanese(text()),
+  beLesson.explanation.slice(0, 60));
+await goTo('#/id-en/category/words-tricky');
+check('the words Indonesian speakers get wrong replace the katakana-English deck',
+  $('h1')?.textContent.includes('Kata yang sering keliru') && text().includes('turn') === false && text().includes('HP'),
+  $('h1')?.textContent);
+await goTo('#/id-en/listening');
+check('the sound pairs are the ones hard for Indonesian speakers (F and V, TH…), not L and R',
+  text().includes('F dan V') && !text().includes('L と R') && !hasJapanese(text()), $('h1')?.textContent);
+await goTo('#/id-en/scenario/cafe');
+check('a scenario sets the scene in Indonesian', !hasJapanese(text()) && text().includes('Selandia Baru'), $('h1')?.textContent);
+await goTo('#/');
+$$('.segment').find((b) => b.dataset.speaker === 'en')?.click();
+for (let i = 0; i < 6; i++) await tick();
 
 console.log('\n12. Console health');
 

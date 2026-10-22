@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-people",
+  "title": "Sifat orang",
+  "description": "Baik hati, serius, santai. Kata-kata untuk memperkenalkan orang dan menceritakan seperti apa seseorang.",
+  "items": [
+    {
+      "id": "w-friendly",
+      "english": "friendly",
+      "indonesian": "ramah",
+      "pos": "adjective",
+      "registerNotes": "Kiwis are really friendly. (Orang Selandia Baru ramah sekali.)",
+      "audio": "audio/en/words/w-friendly.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kind",
+      "english": "kind",
+      "indonesian": "baik hati",
+      "pos": "adjective",
+      "registerNotes": "That’s very kind of you. (Anda baik sekali, terima kasih.)",
+      "audio": "audio/en/words/w-kind.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-polite",
+      "english": "polite",
+      "indonesian": "sopan",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-polite.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-rude",
+      "english": "rude",
+      "indonesian": "tidak sopan, kasar",
+      "pos": "adjective",
+      "registerNotes": "It’s rude to … (Tidak sopan kalau …)",
+      "audio": "audio/en/words/w-rude.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shy",
+      "english": "shy",
+      "indonesian": "pemalu",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-shy.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 2,
+      "registerNotes": "Untuk sifat pemalu. Malu karena suatu kejadian: embarrassed."
+    },
+    {
+      "id": "w-funny",
+      "english": "funny",
+      "indonesian": "lucu",
+      "pos": "adjective",
+      "pitfallNote": "funny artinya lucu, membuat tertawa. Menarik: interesting. Seru: fun, bukan funny.",
+      "audio": "audio/en/words/w-funny.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-serious",
+      "english": "serious",
+      "indonesian": "serius",
+      "pos": "adjective",
+      "registerNotes": "Are you serious? (Serius?)",
+      "audio": "audio/en/words/w-serious.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-honest",
+      "english": "honest",
+      "indonesian": "jujur",
+      "pos": "adjective",
+      "registerNotes": "Huruf h tidak dibaca: bunyinya seperti 'onest'.",
+      "audio": "audio/en/words/w-honest.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-generous",
+      "english": "generous",
+      "indonesian": "murah hati, dermawan",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-generous.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-lazy",
+      "english": "lazy",
+      "indonesian": "malas",
+      "pos": "adjective",
+      "registerNotes": "Bisa juga bermakna baik, seperti a lazy Sunday (hari Minggu yang santai).",
+      "audio": "audio/en/words/w-lazy.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hard-working",
+      "english": "hard-working",
+      "indonesian": "rajin, pekerja keras",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-hard-working.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-patient",
+      "english": "patient",
+      "indonesian": "sabar",
+      "pos": "adjective",
+      "registerNotes": "Sebagai kata benda artinya 'pasien'.",
+      "audio": "audio/en/words/w-patient.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-clever",
+      "english": "clever",
+      "indonesian": "pintar, cerdas",
+      "pos": "adjective",
+      "registerNotes": "Sering dipakai di Selandia Baru dan Inggris. Di Amerika lebih sering smart.",
+      "audio": "audio/en/words/w-clever.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-confident",
+      "english": "confident",
+      "indonesian": "percaya diri",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-confident.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-outgoing",
+      "english": "outgoing",
+      "indonesian": "supel, mudah bergaul",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-outgoing.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-quiet",
+      "english": "quiet",
+      "indonesian": "pendiam, tenang",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-quiet.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-easy-going",
+      "english": "easy-going",
+      "indonesian": "santai, tidak gampang marah",
+      "pos": "adjective",
+      "registerNotes": "Kata pujian.",
+      "audio": "audio/en/words/w-easy-going.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-reliable",
+      "english": "reliable",
+      "indonesian": "bisa diandalkan",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-reliable.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-selfish",
+      "english": "selfish",
+      "indonesian": "egois",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-selfish.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-caring",
+      "english": "caring",
+      "indonesian": "penuh perhatian, peduli",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-caring.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-down-to-earth",
+      "english": "down-to-earth",
+      "indonesian": "rendah hati, apa adanya",
+      "pos": "adjective",
+      "registerNotes": "Pujian yang sering dipakai di Selandia Baru.",
+      "audio": "audio/en/words/w-down-to-earth.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-personality",
+      "english": "personality",
+      "indonesian": "kepribadian",
+      "pos": "noun",
+      "registerNotes": "She’s got a great personality. (Kepribadiannya bagus sekali.)",
+      "audio": "audio/en/words/w-personality.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-strict",
+      "english": "strict",
+      "indonesian": "ketat, tegas",
+      "pos": "adjective",
+      "registerNotes": "My parents were strict. (Orang tuaku dulu ketat.)",
+      "audio": "audio/en/words/w-strict.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chatty",
+      "english": "chatty",
+      "indonesian": "suka mengobrol",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-chatty.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-cheeky",
+      "english": "cheeky",
+      "indonesian": "jahil, kurang ajar (sambil bercanda)",
+      "pos": "adjective",
+      "registerNotes": "Ungkapan ringan di Selandia Baru dan Inggris, sering diucapkan sambil tertawa.",
+      "audio": "audio/en/words/w-cheeky.mp3",
+      "tags": [
+        "sifat"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "pat-like",
+  "connector": "I'd like…",
+  "gloss": "Minta… / Saya mau… (dasar memesan)",
+  "title": "I'd like… — Minta… / Saya mau… (dasar memesan)",
+  "pattern": "I'd like ＋ yang kamu mau ＋ , please.",
+  "explanation": "I'd like adalah singkatan dari I would like: cara sopan untuk bilang “saya mau…”. Ini cara meminta yang paling mudah dipakai, untuk memesan di kafe atau restoran dan meminta sesuatu di toko. Kalau diikuti kata benda, artinya “minta…”; kalau I'd like to + kata kerja, artinya “saya ingin…” (I'd like to try this on.).",
+  "natural": "Untuk memesan, reservasi, dan segala macam permintaan. Sopan kepada siapa saja, dari pelayan sampai orang yang baru kamu kenal. Tambahkan please di akhir supaya terdengar lebih ramah.",
+  "stiff": "Orang Indonesia sering menerjemahkan “saya mau” langsung menjadi I want …. Tata bahasanya benar, tapi dalam bahasa Inggris terdengar menuntut dan kekanak-kanakan. I like … artinya “saya suka…”, jadi bukan pesanan.",
+  "examples": [
+    {
+      "id": "px-like-1",
+      "english": "I'd like a flat white, please.",
+      "indonesian": "Minta satu flat white, ya.",
+      "chunks": [
+        {
+          "t": "I'd like "
+        },
+        {
+          "t": "a flat white, ",
+          "w": "w-flat-white"
+        },
+        {
+          "t": "please."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "I'd like",
+        "after": " a flat white, please.",
+        "options": [
+          "I'd like",
+          "I want",
+          "I like"
+        ],
+        "why": "Untuk memesan dan meminta, pakai I'd like. I want terdengar terlalu langsung, dan I like artinya “saya suka”."
+      },
+      "audio": "audio/en/patterns/px-like-1.mp3",
+      "tags": [
+        "pola kalimat",
+        "I'd like…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-like-2",
+      "english": "I'd like the fish and chips, please.",
+      "indonesian": "Saya pesan fish and chips, ya.",
+      "chunks": [
+        {
+          "t": "I'd like "
+        },
+        {
+          "t": "the fish and chips, ",
+          "w": "w-fish-and-chips"
+        },
+        {
+          "t": "please."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "I'd",
+        "after": " like the fish and chips, please.",
+        "options": [
+          "I'd",
+          "I",
+          "I'm"
+        ],
+        "why": "I'd adalah singkatan I would. I like artinya “saya suka”, dan I'm like tidak bermakna di sini."
+      },
+      "audio": "audio/en/patterns/px-like-2.mp3",
+      "tags": [
+        "pola kalimat",
+        "I'd like…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-like-3",
+      "english": "I'd like to try this on, please.",
+      "indonesian": "Saya mau coba pakai yang ini.",
+      "chunks": [
+        {
+          "t": "I'd like to "
+        },
+        {
+          "t": "try this on, ",
+          "w": "w-try-on"
+        },
+        {
+          "t": "please."
+        }
+      ],
+      "gap": {
+        "before": "I'd like ",
+        "answer": "to",
+        "after": " try this on, please.",
+        "options": [
+          "to",
+          "for",
+          "of"
+        ],
+        "why": "Kalau setelah I'd like ada kata kerja, tambahkan to (I'd like to + kata kerja), seperti “ingin” + kata kerja."
+      },
+      "audio": "audio/en/patterns/px-like-3.mp3",
+      "tags": [
+        "pola kalimat",
+        "I'd like…"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "px-like-4",
+      "english": "We'd like two flat whites, please.",
+      "indonesian": "Minta dua flat white, ya.",
+      "chunks": [
+        {
+          "t": "We'd like "
+        },
+        {
+          "t": "two flat whites, ",
+          "w": "w-flat-white"
+        },
+        {
+          "t": "please."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "We'd",
+        "after": " like two flat whites, please.",
+        "options": [
+          "We'd",
+          "We",
+          "We're"
+        ],
+        "why": "We'd adalah singkatan We would: bentuk untuk memesan atas nama dua orang atau lebih. Ingat juga -s pada flat whites."
+      },
+      "audio": "audio/en/patterns/px-like-4.mp3",
+      "tags": [
+        "pola kalimat",
+        "I'd like…"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

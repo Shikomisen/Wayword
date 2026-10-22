@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "id": "words-first-little",
+  "title": "Kata kecil",
+  "description": "Kata pendek seperti I, you, this, dan what yang wajib ada untuk membuat kalimat.",
+  "items": [
+    {
+      "id": "w-i",
+      "english": "I",
+      "indonesian": "saya, aku",
+      "pos": "pronoun",
+      "registerNotes": "Satu kata untuk saya dan aku. Selalu ditulis dengan huruf besar I, di mana pun letaknya dalam kalimat.",
+      "audio": "audio/en/words/w-i.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-you",
+      "english": "you",
+      "indonesian": "kamu, Anda, kalian",
+      "pos": "pronoun",
+      "registerNotes": "Satu kata untuk kamu, Anda, dan kalian: sopan atau akrab, satu orang atau banyak.",
+      "audio": "audio/en/words/w-you.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-he",
+      "english": "he",
+      "indonesian": "dia (laki-laki)",
+      "pos": "pronoun",
+      "pitfallNote": "Bahasa Indonesia hanya punya dia, jadi he dan she sering tertukar. Laki-laki: he (dan his). Perempuan: she (dan her).",
+      "audio": "audio/en/words/w-he.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-she",
+      "english": "she",
+      "indonesian": "dia (perempuan)",
+      "pos": "pronoun",
+      "pitfallNote": "Jangan tertukar dengan he: dia yang perempuan selalu she, dan miliknya her, bukan his: She lost her bag.",
+      "audio": "audio/en/words/w-she.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-it",
+      "english": "it",
+      "indonesian": "itu, ia (benda, hewan)",
+      "pos": "pronoun",
+      "registerNotes": "Juga jadi subjek kalimat tentang cuaca, waktu, dan jarak: It’s hot. (Panas.), It’s ten o’clock. (Jam sepuluh.) Subjeknya tidak boleh hilang: bukan Is hot.",
+      "audio": "audio/en/words/w-it.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-we",
+      "english": "we",
+      "indonesian": "kami, kita",
+      "pos": "pronoun",
+      "audio": "audio/en/words/w-we.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1,
+      "registerNotes": "Satu kata untuk kami dan kita."
+    },
+    {
+      "id": "w-they",
+      "english": "they",
+      "indonesian": "mereka",
+      "pos": "pronoun",
+      "registerNotes": "Mirip dia: they juga dipakai untuk satu orang yang tidak diketahui laki-laki atau perempuan.",
+      "audio": "audio/en/words/w-they.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-this",
+      "english": "this",
+      "indonesian": "ini",
+      "pos": "pronoun",
+      "audio": "audio/en/words/w-this.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-that",
+      "english": "that",
+      "indonesian": "itu",
+      "pos": "pronoun",
+      "registerNotes": "Kalau bendanya banyak, berubah bentuk: this → these, that → those.",
+      "audio": "audio/en/words/w-that.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-here",
+      "english": "here",
+      "indonesian": "sini, di sini",
+      "pos": "adverb",
+      "registerNotes": "Here you go. (Ini, silakan.)",
+      "audio": "audio/en/words/w-here.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-there",
+      "english": "there",
+      "indonesian": "sana, situ, di sana",
+      "pos": "adverb",
+      "audio": "audio/en/words/w-there.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-what",
+      "english": "what",
+      "indonesian": "apa",
+      "pos": "question",
+      "audio": "audio/en/words/w-what.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-where",
+      "english": "where",
+      "indonesian": "di mana, ke mana",
+      "pos": "question",
+      "audio": "audio/en/words/w-where.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-when",
+      "english": "when",
+      "indonesian": "kapan",
+      "pos": "question",
+      "audio": "audio/en/words/w-when.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-who",
+      "english": "who",
+      "indonesian": "siapa",
+      "pos": "question",
+      "audio": "audio/en/words/w-who.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-why",
+      "english": "why",
+      "indonesian": "kenapa, mengapa",
+      "pos": "question",
+      "audio": "audio/en/words/w-why.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-how",
+      "english": "how",
+      "indonesian": "bagaimana",
+      "pos": "question",
+      "registerNotes": "How are you? (Apa kabar?), How do I get there? (Bagaimana cara ke sana?)",
+      "audio": "audio/en/words/w-how.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "Untuk menanyakan sebuah kata, bilang How do you say … in English?, bukan How to say …?"
+    },
+    {
+      "id": "w-yes",
+      "english": "yes",
+      "indonesian": "ya",
+      "pos": "interjection",
+      "registerNotes": "Dengan teman, yeah dan yep juga sering dipakai.",
+      "audio": "audio/en/words/w-yes.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-no",
+      "english": "no",
+      "indonesian": "tidak, bukan",
+      "pos": "interjection",
+      "registerNotes": "Untuk menolak, lebih halus dengan No, thank you. (Tidak, terima kasih.)",
+      "audio": "audio/en/words/w-no.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-very",
+      "english": "very",
+      "indonesian": "sangat, sekali",
+      "pos": "adverb",
+      "registerNotes": "very good (bagus sekali). Di Selandia Baru, really dan heaps juga sering dipakai.",
+      "audio": "audio/en/words/w-very.mp3",
+      "tags": [
+        "kata kecil"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "Jangan bilang I very like it (dari sangat suka). Bilang I really like it atau I like it very much."
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "con-anyway",
+  "connector": "anyway",
+  "gloss": "pokoknya, ya sudah, tetap saja",
+  "title": "anyway — pokoknya, ya sudah, tetap saja",
+  "pattern": "Anyway, ... ／ ... anyway.",
+  "explanation": "anyway punya dua pemakaian. Anyway, di awal kalimat artinya “pokoknya” atau “ya sudah”: untuk merangkum atau mengganti arah obrolan. … anyway di akhir kalimat artinya “tetap saja” atau “bagaimanapun juga”.",
+  "natural": "Untuk menutup obrolan (Anyway, thanks for your help.) atau memutuskan tanpa ambil pusing (It's a bit big, but I'll take it anyway.).",
+  "stiff": "Any way (dua kata) artinya “cara apa pun” (Is there any way to …?): kata yang berbeda.",
+  "examples": [
+    {
+      "id": "cx-anyway-1",
+      "english": "Anyway, thanks for your help.",
+      "indonesian": "Pokoknya, terima kasih sudah membantu.",
+      "chunks": [
+        {
+          "t": "Anyway, "
+        },
+        {
+          "t": "thanks for "
+        },
+        {
+          "t": "your help.",
+          "w": "w-help"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Anyway",
+        "after": ", thanks for your help.",
+        "options": [
+          "Anyway",
+          "Any way",
+          "Away"
+        ],
+        "why": "“Pokoknya” untuk merangkum adalah Anyway, satu kata."
+      },
+      "audio": "audio/en/connectors/cx-anyway-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "anyway"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-anyway-2",
+      "english": "It's a bit big, but I'll take it anyway.",
+      "indonesian": "Agak kebesaran, tapi tetap saya ambil.",
+      "chunks": [
+        {
+          "t": "It's a bit big, "
+        },
+        {
+          "t": "but I'll take it ",
+          "w": "w-take"
+        },
+        {
+          "t": "anyway."
+        }
+      ],
+      "gap": {
+        "before": "It's a bit big, but I'll take it ",
+        "answer": "anyway",
+        "after": ".",
+        "options": [
+          "anyway",
+          "already",
+          "always"
+        ],
+        "why": "“Tetap saja” adalah anyway di akhir kalimat."
+      },
+      "audio": "audio/en/connectors/cx-anyway-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "anyway"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-anyway-3",
+      "english": "Anyway, I should get going.",
+      "indonesian": "Ya sudah, saya pamit dulu.",
+      "chunks": [
+        {
+          "t": "Anyway, "
+        },
+        {
+          "t": "I should "
+        },
+        {
+          "t": "get going.",
+          "w": "w-go"
+        }
+      ],
+      "gap": {
+        "before": "Anyway, I ",
+        "answer": "should",
+        "after": " get going.",
+        "options": [
+          "should",
+          "would",
+          "could"
+        ],
+        "why": "“Sebaiknya (saya) …” adalah I should. Would dan could artinya lain."
+      },
+      "audio": "audio/en/connectors/cx-anyway-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "anyway"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-anyway-4",
+      "english": "The bus was late, but we got there anyway.",
+      "indonesian": "Busnya terlambat, tapi kami tetap sampai juga.",
+      "chunks": [
+        {
+          "t": "The bus was late, "
+        },
+        {
+          "t": "but we got there ",
+          "w": "w-get"
+        },
+        {
+          "t": "anyway."
+        }
+      ],
+      "gap": {
+        "before": "The bus was late, but we got there ",
+        "answer": "anyway",
+        "after": ".",
+        "options": [
+          "anyway",
+          "instead",
+          "already"
+        ],
+        "why": "Terlambat, tapi akhirnya sampai juga: “tetap” seperti ini adalah anyway."
+      },
+      "audio": "audio/en/connectors/cx-anyway-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "anyway"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "id": "words-first-verbs",
+  "title": "Kata kerja pertama",
+  "description": "Kata kerja paling dasar untuk bercerita tentang kegiatan sehari-hari.",
+  "items": [
+    {
+      "id": "w-eat",
+      "english": "eat",
+      "indonesian": "makan",
+      "pos": "verb",
+      "registerNotes": "Bentuk lampau: ate. Bahasa Indonesia cukup menambah sudah atau tadi; bahasa Inggris mengubah kata kerjanya.",
+      "audio": "audio/en/words/w-eat.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-drink",
+      "english": "drink",
+      "indonesian": "minum",
+      "pos": "verb",
+      "registerNotes": "Bentuk lampau: drank. a drink berarti “minuman” atau “segelas (minuman beralkohol)”.",
+      "audio": "audio/en/words/w-drink.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sleep",
+      "english": "sleep",
+      "indonesian": "tidur",
+      "pos": "verb",
+      "registerNotes": "Bentuk lampau: slept. “Pergi tidur (naik ke tempat tidur)” adalah go to bed.",
+      "audio": "audio/en/words/w-sleep.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-wake-up",
+      "english": "wake up",
+      "indonesian": "bangun (dari tidur)",
+      "pos": "phrase",
+      "registerNotes": "Bentuk lampau: woke up. Turun dari tempat tidur: get up.",
+      "audio": "audio/en/words/w-wake-up.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-live",
+      "english": "live",
+      "indonesian": "tinggal, hidup",
+      "pos": "verb",
+      "registerNotes": "I live in Auckland. (Saya tinggal di Auckland.)",
+      "audio": "audio/en/words/w-live.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "Tinggal (menetap) adalah live, bukan stay. stay untuk sementara saja, misalnya di hotel: I’m staying at a hotel."
+    },
+    {
+      "id": "w-work",
+      "english": "work",
+      "indonesian": "bekerja; pekerjaan",
+      "pos": "verb",
+      "registerNotes": "Sebagai “pekerjaan”, tidak bisa dihitung: I have work today. (Hari ini aku kerja.)",
+      "audio": "audio/en/words/w-work.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-study",
+      "english": "study",
+      "indonesian": "belajar",
+      "pos": "verb",
+      "audio": "audio/en/words/w-study.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-read",
+      "english": "read",
+      "indonesian": "membaca",
+      "pos": "verb",
+      "registerNotes": "Bentuk lampaunya juga read, tapi dibaca “red”.",
+      "audio": "audio/en/words/w-read.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-write",
+      "english": "write",
+      "indonesian": "menulis",
+      "pos": "verb",
+      "registerNotes": "Bentuk lampau: wrote.",
+      "audio": "audio/en/words/w-write.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-watch",
+      "english": "watch",
+      "indonesian": "menonton, memperhatikan",
+      "pos": "verb",
+      "registerNotes": "Untuk melihat sesuatu yang bergerak dengan saksama: watch TV, watch a movie.",
+      "audio": "audio/en/words/w-watch.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-listen",
+      "english": "listen",
+      "indonesian": "mendengarkan",
+      "pos": "verb",
+      "registerNotes": "Selalu dengan to: listen to music (bukan listen music).",
+      "audio": "audio/en/words/w-listen.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-see",
+      "english": "see",
+      "indonesian": "melihat; bertemu",
+      "pos": "verb",
+      "registerNotes": "Bentuk lampau: saw. See you! (Sampai jumpa!)",
+      "audio": "audio/en/words/w-see.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-have",
+      "english": "have",
+      "indonesian": "punya; makan, minum",
+      "pos": "verb",
+      "registerNotes": "Untuk he, she: has. have lunch (makan siang). Untuk “ada” pakai there is: There’s a café here. (Di sini ada kafe.)",
+      "audio": "audio/en/words/w-have.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-do",
+      "english": "do",
+      "indonesian": "melakukan, mengerjakan",
+      "pos": "verb",
+      "registerNotes": "Untuk he, she: does. Bentuk lampau: did.",
+      "audio": "audio/en/words/w-do.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-play",
+      "english": "play",
+      "indonesian": "bermain, main (olahraga, alat musik)",
+      "pos": "verb",
+      "registerNotes": "play tennis (main tenis), play the piano (main piano).",
+      "audio": "audio/en/words/w-play.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cook",
+      "english": "cook",
+      "indonesian": "memasak",
+      "pos": "verb",
+      "pitfallNote": "a cook berarti “juru masak” (orangnya). Kompor atau alat masaknya: a cooker.",
+      "audio": "audio/en/words/w-cook.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-walk",
+      "english": "walk",
+      "indonesian": "berjalan kaki",
+      "pos": "verb",
+      "registerNotes": "go for a walk (jalan kaki santai).",
+      "audio": "audio/en/words/w-walk.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-run",
+      "english": "run",
+      "indonesian": "berlari",
+      "pos": "verb",
+      "registerNotes": "Bentuk lampau: ran. go running (pergi lari).",
+      "audio": "audio/en/words/w-run.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sit",
+      "english": "sit",
+      "indonesian": "duduk",
+      "pos": "verb",
+      "registerNotes": "sit down (duduk). Bentuk lampau: sat.",
+      "audio": "audio/en/words/w-sit.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-stand",
+      "english": "stand",
+      "indonesian": "berdiri",
+      "pos": "verb",
+      "registerNotes": "stand up (berdiri dari duduk).",
+      "audio": "audio/en/words/w-stand.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-give",
+      "english": "give",
+      "indonesian": "memberi, memberikan",
+      "pos": "verb",
+      "registerNotes": "Bentuk lampau: gave.",
+      "audio": "audio/en/words/w-give.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-send",
+      "english": "send",
+      "indonesian": "mengirim",
+      "pos": "verb",
+      "registerNotes": "Bentuk lampau: sent. send a message (mengirim pesan).",
+      "audio": "audio/en/words/w-send.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-call",
+      "english": "call",
+      "indonesian": "menelepon; memanggil",
+      "pos": "verb",
+      "registerNotes": "I’ll call you later. (Nanti aku telepon, ya.)",
+      "audio": "audio/en/words/w-call.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-learn",
+      "english": "learn",
+      "indonesian": "belajar, mempelajari",
+      "pos": "verb",
+      "registerNotes": "study = belajar (duduk mempelajari sesuatu), learn = belajar sampai bisa: I learned to swim. (Aku belajar berenang, dan sekarang bisa.)",
+      "audio": "audio/en/words/w-learn.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-know",
+      "english": "know",
+      "indonesian": "tahu; kenal",
+      "pos": "verb",
+      "registerNotes": "I don’t know. (Saya tidak tahu.) Kenal orang juga know: I know her. Huruf k tidak dibaca.",
+      "audio": "audio/en/words/w-know.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

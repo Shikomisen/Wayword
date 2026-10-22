@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "con-do",
+  "connector": "Do / Does / Did…?",
+  "gloss": "Bertanya dengan kata kerja",
+  "title": "Do / Does / Did…? — Bertanya dengan kata kerja",
+  "pattern": "Do ／ Does ／ Did ＋ subjek ＋ kata kerja ...?",
+  "explanation": "Untuk bertanya dengan kata kerja selain to be (is, are), letakkan Do (sekarang), Does (kalau subjeknya he, she, it), atau Did (masa lalu) di awal kalimat. Kata kerja sesudahnya tetap bentuk dasar: Does it come with chips? (Sudah termasuk kentang goreng?). Bahasa Indonesia cukup menaikkan nada atau memakai “apakah”; bahasa Inggris butuh Do / Does / Did.",
+  "natural": "Banyak pertanyaan di toko memakai bentuk ini: Do you take cards? (Bisa bayar pakai kartu?), Does this bus go to the airport? (Bus ini ke bandara?).",
+  "stiff": "Mencampur to be, seperti Is it come with chips?, adalah kesalahan umum, karena “apakah” mudah diterjemahkan menjadi is. Untuk pertanyaan dengan kata kerja, pakai Do / Does / Did.",
+  "examples": [
+    {
+      "id": "cx-do-1",
+      "english": "Does it come with chips?",
+      "indonesian": "Sudah termasuk kentang goreng?",
+      "chunks": [
+        {
+          "t": "Does it "
+        },
+        {
+          "t": "come ",
+          "w": "w-come"
+        },
+        {
+          "t": "with chips?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Does",
+        "after": " it come with chips?",
+        "options": [
+          "Does",
+          "Is",
+          "Do"
+        ],
+        "why": "Subjeknya it dan pertanyaannya dengan kata kerja (come), jadi Does."
+      },
+      "audio": "audio/en/connectors/cx-do-1.mp3",
+      "tags": [
+        "urutan kata",
+        "Do / Does / Did…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-do-2",
+      "english": "Do you take cards?",
+      "indonesian": "Bisa bayar pakai kartu?",
+      "chunks": [
+        {
+          "t": "Do you "
+        },
+        {
+          "t": "take ",
+          "w": "w-take"
+        },
+        {
+          "t": "cards?",
+          "w": "w-card"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Do",
+        "after": " you take cards?",
+        "options": [
+          "Do",
+          "Are",
+          "Does"
+        ],
+        "why": "Subjeknya you, jadi Do."
+      },
+      "audio": "audio/en/connectors/cx-do-2.mp3",
+      "tags": [
+        "urutan kata",
+        "Do / Does / Did…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-do-3",
+      "english": "Did you find everything OK?",
+      "indonesian": "Semua yang dicari sudah ketemu?",
+      "chunks": [
+        {
+          "t": "Did you "
+        },
+        {
+          "t": "find ",
+          "w": "w-find"
+        },
+        {
+          "t": "everything OK?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Did",
+        "after": " you find everything OK?",
+        "options": [
+          "Did",
+          "Do",
+          "Were"
+        ],
+        "why": "Ini tentang masa lalu, jadi Did; find sesudahnya tetap bentuk dasar. “Sudah” di sini cukup dengan Did, tanpa already."
+      },
+      "audio": "audio/en/connectors/cx-do-3.mp3",
+      "tags": [
+        "urutan kata",
+        "Do / Does / Did…?"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-do-4",
+      "english": "Does this bus go to the airport?",
+      "indonesian": "Bus ini ke bandara?",
+      "chunks": [
+        {
+          "t": "Does this bus "
+        },
+        {
+          "t": "go ",
+          "w": "w-go"
+        },
+        {
+          "t": "to the airport?"
+        }
+      ],
+      "gap": {
+        "before": "Does this bus ",
+        "answer": "go",
+        "after": " to the airport?",
+        "options": [
+          "go",
+          "goes",
+          "going"
+        ],
+        "why": "Setelah Does, kata kerjanya kembali ke bentuk dasar (go), bukan goes."
+      },
+      "audio": "audio/en/connectors/cx-do-4.mp3",
+      "tags": [
+        "urutan kata",
+        "Do / Does / Did…?"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,451 @@
+{
+  "schemaVersion": 1,
+  "id": "replies",
+  "title": "Tadi dia bilang apa?",
+  "description": "Dengarkan ucapan pegawai toko atau sopir, lalu pilih artinya. Pelajari juga cara menjawabnya.",
+  "items": [
+    {
+      "id": "lr-01",
+      "speaker": "staff",
+      "english": "Eat in or takeaway?",
+      "indonesian": "Makan di sini atau dibawa pulang?",
+      "reply": {
+        "english": "Takeaway, please.",
+        "indonesian": "Dibawa pulang, ya."
+      },
+      "audio": "audio/en/listening/lr-01.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-02",
+      "speaker": "staff",
+      "english": "Would you like a bag?",
+      "indonesian": "Mau pakai kantong?",
+      "reply": {
+        "english": "No thanks, I'm fine.",
+        "indonesian": "Tidak usah, terima kasih."
+      },
+      "audio": "audio/en/listening/lr-02.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-03",
+      "speaker": "staff",
+      "english": "Are you right there?",
+      "indonesian": "Ada yang bisa dibantu?",
+      "reply": {
+        "english": "I'm just looking, thanks.",
+        "indonesian": "Saya cuma lihat-lihat, terima kasih."
+      },
+      "note": "Ungkapan baku pegawai toko di Selandia Baru dan Australia. Artinya bukan “Kamu baik-baik saja?”, tapi “Ada yang bisa dibantu?”.",
+      "audio": "audio/en/listening/lr-03.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-04",
+      "speaker": "staff",
+      "english": "Can I help you find anything?",
+      "indonesian": "Ada yang bisa saya bantu carikan?",
+      "reply": {
+        "english": "I'm looking for a jacket.",
+        "indonesian": "Saya sedang mencari jaket."
+      },
+      "audio": "audio/en/listening/lr-04.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-05",
+      "speaker": "staff",
+      "english": "What size are you?",
+      "indonesian": "Ukuranmu apa?",
+      "reply": {
+        "english": "I'm a medium.",
+        "indonesian": "Ukuran saya M."
+      },
+      "audio": "audio/en/listening/lr-05.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-06",
+      "speaker": "staff",
+      "english": "Sorry, we're out of that in a medium.",
+      "indonesian": "Maaf, yang ukuran M sedang habis.",
+      "reply": {
+        "english": "Do you have a large?",
+        "indonesian": "Ada ukuran L?"
+      },
+      "note": "be out of … artinya “kehabisan …” atau “stoknya habis”.",
+      "audio": "audio/en/listening/lr-06.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-07",
+      "speaker": "staff",
+      "english": "The fitting rooms are just at the back.",
+      "indonesian": "Kamar pasnya ada di bagian belakang.",
+      "reply": {
+        "english": "Thanks!",
+        "indonesian": "Terima kasih!"
+      },
+      "audio": "audio/en/listening/lr-07.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-08",
+      "speaker": "staff",
+      "english": "That'll be twenty-four fifty.",
+      "indonesian": "Jadi dua puluh empat dolar lima puluh.",
+      "reply": {
+        "english": "Can I pay by card?",
+        "indonesian": "Bisa bayar pakai kartu?"
+      },
+      "note": "twenty-four fifty artinya $24,50. Saat menyebut harga, kata dollars dan cents sering tidak diucapkan.",
+      "audio": "audio/en/listening/lr-08.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-09",
+      "speaker": "staff",
+      "english": "Just tap when you're ready.",
+      "indonesian": "Silakan tap kartunya kalau sudah siap.",
+      "audio": "audio/en/listening/lr-09.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-10",
+      "speaker": "staff",
+      "english": "Do you want your receipt?",
+      "indonesian": "Mau struknya?",
+      "reply": {
+        "english": "No, I'm good, thanks.",
+        "indonesian": "Tidak usah, terima kasih."
+      },
+      "note": "I'm good, thanks. sering dipakai untuk bilang “tidak usah, terima kasih”.",
+      "audio": "audio/en/listening/lr-10.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-11",
+      "speaker": "staff",
+      "english": "Is that everything for today?",
+      "indonesian": "Sudah semua untuk hari ini?",
+      "reply": {
+        "english": "Yes, that's all, thanks.",
+        "indonesian": "Ya, itu saja, terima kasih."
+      },
+      "audio": "audio/en/listening/lr-11.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-12",
+      "speaker": "staff",
+      "english": "Have you got one of our cards?",
+      "indonesian": "Punya kartu member kami?",
+      "reply": {
+        "english": "No, I haven't.",
+        "indonesian": "Tidak, saya tidak punya."
+      },
+      "audio": "audio/en/listening/lr-12.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-13",
+      "speaker": "barista",
+      "english": "What can I get for you?",
+      "indonesian": "Mau pesan apa?",
+      "reply": {
+        "english": "I'd like a flat white, please.",
+        "indonesian": "Minta satu flat white, ya."
+      },
+      "audio": "audio/en/listening/lr-13.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-14",
+      "speaker": "barista",
+      "english": "What milk would you like?",
+      "indonesian": "Mau pakai susu apa?",
+      "reply": {
+        "english": "Oat milk, please.",
+        "indonesian": "Susu oat, ya."
+      },
+      "audio": "audio/en/listening/lr-14.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-15",
+      "speaker": "barista",
+      "english": "Did you want that toasted?",
+      "indonesian": "Mau dipanggang?",
+      "reply": {
+        "english": "Yes, please.",
+        "indonesian": "Ya, boleh."
+      },
+      "note": "Did you want ...? memakai bentuk lampau, tapi ini cara sopan untuk menanyakan keinginanmu sekarang.",
+      "audio": "audio/en/listening/lr-15.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-16",
+      "speaker": "barista",
+      "english": "Grab a number and take a seat.",
+      "indonesian": "Ambil nomor, lalu silakan duduk.",
+      "note": "grab artinya “mengambil dengan cepat” (seperti nama aplikasi Grab). Ungkapan santai.",
+      "audio": "audio/en/listening/lr-16.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-17",
+      "speaker": "staff",
+      "english": "It'll be about ten minutes.",
+      "indonesian": "Kira-kira sepuluh menit, ya.",
+      "reply": {
+        "english": "No worries.",
+        "indonesian": "Tidak apa-apa."
+      },
+      "audio": "audio/en/listening/lr-17.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-18",
+      "speaker": "server",
+      "english": "Can I get you anything else?",
+      "indonesian": "Ada lagi yang bisa saya ambilkan?",
+      "reply": {
+        "english": "No, we're fine, thanks.",
+        "indonesian": "Tidak, sudah cukup, terima kasih."
+      },
+      "audio": "audio/en/listening/lr-18.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-19",
+      "speaker": "barista",
+      "english": "Large or regular?",
+      "indonesian": "Besar atau reguler?",
+      "reply": {
+        "english": "Regular, please.",
+        "indonesian": "Reguler, ya."
+      },
+      "audio": "audio/en/listening/lr-19.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-20",
+      "speaker": "server",
+      "english": "How was everything?",
+      "indonesian": "Bagaimana makanannya?",
+      "reply": {
+        "english": "Lovely, thanks!",
+        "indonesian": "Enak sekali, terima kasih!"
+      },
+      "audio": "audio/en/listening/lr-20.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-21",
+      "speaker": "driver",
+      "english": "Where are you headed?",
+      "indonesian": "Mau ke mana?",
+      "reply": {
+        "english": "To the city centre, please.",
+        "indonesian": "Ke pusat kota, ya."
+      },
+      "audio": "audio/en/listening/lr-21.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-22",
+      "speaker": "driver",
+      "english": "Yours is the next stop.",
+      "indonesian": "Kamu turun di halte berikutnya.",
+      "reply": {
+        "english": "Thanks!",
+        "indonesian": "Terima kasih!"
+      },
+      "audio": "audio/en/listening/lr-22.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-23",
+      "speaker": "driver",
+      "english": "Tag on when you get on.",
+      "indonesian": "Tap kartumu waktu naik.",
+      "note": "Kartu bus di-tap saat naik (tag on) dan saat turun (tag off), mirip tap in dan tap out di TransJakarta.",
+      "audio": "audio/en/listening/lr-23.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-24",
+      "speaker": "staff",
+      "english": "Can I see some ID, please?",
+      "indonesian": "Boleh saya lihat kartu identitas Anda?",
+      "reply": {
+        "english": "Sure, here you go.",
+        "indonesian": "Tentu, ini dia."
+      },
+      "audio": "audio/en/listening/lr-24.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-25",
+      "speaker": "staff",
+      "english": "Cash or card?",
+      "indonesian": "Tunai atau kartu?",
+      "reply": {
+        "english": "Card, please.",
+        "indonesian": "Kartu, ya."
+      },
+      "audio": "audio/en/listening/lr-25.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-26",
+      "speaker": "staff",
+      "english": "We close at five today.",
+      "indonesian": "Hari ini kami tutup jam lima.",
+      "audio": "audio/en/listening/lr-26.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-27",
+      "speaker": "staff",
+      "english": "Sorry, the EFTPOS machine's down.",
+      "indonesian": "Maaf, mesin kartunya sedang mati.",
+      "reply": {
+        "english": "Is there an ATM nearby?",
+        "indonesian": "Ada ATM di dekat sini?"
+      },
+      "note": "down artinya “(mesin) mati” atau “tidak bisa dipakai”.",
+      "audio": "audio/en/listening/lr-27.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-28",
+      "speaker": "staff",
+      "english": "Would you like to try it on?",
+      "indonesian": "Mau dicoba?",
+      "reply": {
+        "english": "Yes, please.",
+        "indonesian": "Ya, boleh."
+      },
+      "audio": "audio/en/listening/lr-28.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-29",
+      "speaker": "staff",
+      "english": "Have a good one!",
+      "indonesian": "Semoga harimu menyenangkan!",
+      "reply": {
+        "english": "Thanks, you too!",
+        "indonesian": "Terima kasih, kamu juga!"
+      },
+      "note": "one di sini artinya day. Bentuk santai dari Have a good day!",
+      "audio": "audio/en/listening/lr-29.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-30",
+      "speaker": "passerby",
+      "english": "Sweet as, see you later!",
+      "indonesian": "Sip, sampai nanti!",
+      "reply": {
+        "english": "See you!",
+        "indonesian": "Sampai jumpa!"
+      },
+      "audio": "audio/en/listening/lr-30.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-suggestions",
+  "connector": "Why don’t we…?",
+  "gloss": "yuk … (mengusulkan)",
+  "title": "Why don’t we…?, How about…? — mengusulkan",
+  "pattern": "Why don’t we …? ／ Shall we …? ／ How about …ing? ／ Let’s …",
+  "explanation": "Ada beberapa cara untuk mengusulkan sesuatu. Let’s … paling langsung, seperti “ayo …”. Why don’t we …? dan Shall we …? lebih lembut, seperti “bagaimana kalau kita …?”. Setelah How about, pakai -ing atau kata benda: How about going to the beach?",
+  "natural": "Saat membuat rencana dengan teman: Why don’t we get takeaways tonight? (Malam ini kita beli makanan bungkus, yuk?)",
+  "stiff": "Why don’t we …? bukan teguran “kenapa kita tidak …?”, melainkan usulan. Dan How about go … salah, yang benar How about going …",
+  "examples": [
+    {
+      "id": "gx-suggestions-1",
+      "english": "Why don’t we get takeaways tonight?",
+      "indonesian": "Malam ini beli makanan bungkus, yuk?",
+      "chunks": [
+        {
+          "t": "Why don’t we get ",
+          "w": "w-get"
+        },
+        {
+          "t": "takeaways ",
+          "w": "w-takeaway"
+        },
+        {
+          "t": "tonight?"
+        }
+      ],
+      "gap": {
+        "before": "Why ",
+        "answer": "don’t",
+        "after": " we get takeaways tonight?",
+        "options": [
+          "don’t",
+          "not",
+          "do"
+        ],
+        "why": "Why don’t we …? berarti “bagaimana kalau kita …?”."
+      },
+      "audio": "audio/en/grammar/gx-suggestions-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "Why don’t we…?"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-suggestions-2",
+      "english": "How about going to the beach?",
+      "indonesian": "Bagaimana kalau ke pantai?",
+      "chunks": [
+        {
+          "t": "How about "
+        },
+        {
+          "t": "going ",
+          "w": "w-go"
+        },
+        {
+          "t": "to the beach?",
+          "w": "w-beach"
+        }
+      ],
+      "gap": {
+        "before": "How about ",
+        "answer": "going",
+        "after": " to the beach?",
+        "options": [
+          "going",
+          "go",
+          "to go"
+        ],
+        "why": "Setelah How about pakai -ing."
+      },
+      "audio": "audio/en/grammar/gx-suggestions-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "Why don’t we…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-suggestions-3",
+      "english": "Shall we meet at the station?",
+      "indonesian": "Kita bertemu di stasiun saja, ya?",
+      "chunks": [
+        {
+          "t": "Shall we meet ",
+          "w": "w-meet"
+        },
+        {
+          "t": "at the station?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Shall",
+        "after": " we meet at the station?",
+        "options": [
+          "Shall",
+          "Will",
+          "Do"
+        ],
+        "why": "Untuk mengusulkan “kita … saja?”, pakai Shall we …?"
+      },
+      "audio": "audio/en/grammar/gx-suggestions-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "Why don’t we…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-suggestions-4",
+      "english": "Let’s ask someone for directions.",
+      "indonesian": "Ayo kita tanya jalan ke orang.",
+      "chunks": [
+        {
+          "t": "Let’s ask ",
+          "w": "w-ask"
+        },
+        {
+          "t": "someone "
+        },
+        {
+          "t": "for directions."
+        }
+      ],
+      "gap": {
+        "before": "Let’s ",
+        "answer": "ask",
+        "after": " someone for directions.",
+        "options": [
+          "ask",
+          "asking",
+          "to ask"
+        ],
+        "why": "Setelah Let’s pakai kata kerja dasar."
+      },
+      "audio": "audio/en/grammar/gx-suggestions-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "Why don’t we…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "id": "words-cafe",
+  "title": "Kafe & makanan",
+  "description": "Kata yang perlu untuk memesan di kafe atau restoran. Sering juga muncul di menu.",
+  "items": [
+    {
+      "id": "w-menu",
+      "english": "menu",
+      "indonesian": "menu",
+      "pos": "noun",
+      "audio": "audio/en/words/w-menu.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-order",
+      "english": "order",
+      "indonesian": "memesan; pesanan",
+      "pos": "verb",
+      "registerNotes": "Kamu akan sering ditanya Are you ready to order? (Sudah mau pesan?)",
+      "audio": "audio/en/words/w-order.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-flat-white",
+      "english": "flat white",
+      "indonesian": "flat white (kopi susu)",
+      "pos": "noun",
+      "registerNotes": "Kopi khas Selandia Baru dan Australia: espreso yang dituangi susu berbusa halus.",
+      "audio": "audio/en/words/w-flat-white.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-long-black",
+      "english": "long black",
+      "indonesian": "long black (kopi hitam)",
+      "pos": "noun",
+      "registerNotes": "Kopi hitam dari espreso yang dituang ke air panas. Mirip americano.",
+      "audio": "audio/en/words/w-long-black.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-latte",
+      "english": "latte",
+      "indonesian": "latte",
+      "pos": "noun",
+      "pitfallNote": "Dibaca kira-kira “laa-tei”, dengan akhiran -ei. Kalau dibaca pendek “la-te”, kadang kurang dimengerti.",
+      "audio": "audio/en/words/w-latte.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-takeaway",
+      "english": "takeaway",
+      "indonesian": "dibungkus, dibawa pulang",
+      "pos": "noun",
+      "registerNotes": "Kamu akan ditanya Eat in or takeaway? (Makan di sini atau dibungkus?) Makanan Cina atau Thailand yang dibeli untuk dibawa pulang juga disebut a takeaway.",
+      "pitfallNote": "Di Amerika disebut to go atau takeout.",
+      "audio": "audio/en/words/w-takeaway.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-eat-in",
+      "english": "eat in",
+      "indonesian": "makan di tempat",
+      "pos": "phrase",
+      "registerNotes": "Cukup jawab Eat in, please. (Makan di sini.) Dine in juga dimengerti, tapi di kafe lebih sering eat in.",
+      "audio": "audio/en/words/w-eat-in.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-spicy",
+      "english": "spicy",
+      "indonesian": "pedas",
+      "pos": "adjective",
+      "registerNotes": "It's a bit spicy. (Agak pedas.), very spicy (pedas sekali). Ukuran pedas di Selandia Baru jauh lebih ringan daripada di Indonesia.",
+      "pitfallNote": "hot juga berarti “pedas”, tapi bisa tertukar dengan “panas”. spicy lebih jelas.",
+      "audio": "audio/en/words/w-spicy.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-mild",
+      "english": "mild",
+      "indonesian": "tidak pedas, ringan",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-mild.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sweet",
+      "english": "sweet",
+      "indonesian": "manis",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-sweet.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-vegetarian",
+      "english": "vegetarian",
+      "indonesian": "vegetarian (tanpa daging dan ikan)",
+      "pos": "adjective",
+      "registerNotes": "vegetarian options (pilihan menu vegetarian)",
+      "audio": "audio/en/words/w-vegetarian.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-vegan",
+      "english": "vegan",
+      "indonesian": "vegan (tanpa bahan hewani apa pun)",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-vegan.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-gluten-free",
+      "english": "gluten-free",
+      "indonesian": "bebas gluten",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-gluten-free.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-allergic",
+      "english": "allergic",
+      "indonesian": "alergi (terhadap)",
+      "pos": "adjective",
+      "registerNotes": "I'm allergic to peanuts. (Saya alergi kacang tanah.)",
+      "pitfallNote": "Kata bendanya allergy (I have a peanut allergy), kata sifatnya allergic (I'm allergic to …). Bukan I'm allergy.",
+      "audio": "audio/en/words/w-allergic.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-dairy",
+      "english": "dairy",
+      "indonesian": "produk susu",
+      "pos": "noun",
+      "registerNotes": "dairy-free (tanpa produk susu). Di Selandia Baru, the dairy juga berarti toko kecil di sudut jalan, mirip warung.",
+      "audio": "audio/en/words/w-dairy.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-fish-and-chips",
+      "english": "fish and chips",
+      "indonesian": "fish and chips (ikan goreng tepung dan kentang goreng)",
+      "pos": "noun",
+      "registerNotes": "Makanan khas Selandia Baru. Biasanya dibungkus kertas dan dibawa pulang.",
+      "audio": "audio/en/words/w-fish-and-chips.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pie",
+      "english": "pie",
+      "indonesian": "pai (pai daging, dll.)",
+      "pos": "noun",
+      "registerNotes": "Camilan favorit: mince and cheese pie (pai daging cincang dan keju).",
+      "audio": "audio/en/words/w-pie.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-scone",
+      "english": "scone",
+      "indonesian": "scone (kue roti khas Inggris)",
+      "pos": "noun",
+      "registerNotes": "cheese scone (scone keju) juga menu wajib di kafe.",
+      "audio": "audio/en/words/w-scone.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-toastie",
+      "english": "toastie",
+      "indonesian": "roti lapis panggang",
+      "pos": "noun",
+      "registerNotes": "Sebutan di Selandia Baru dan Australia untuk sandwich yang dipanggang, mirip roti bakar isi.",
+      "audio": "audio/en/words/w-toastie.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-water",
+      "english": "water",
+      "indonesian": "air",
+      "pos": "noun",
+      "registerNotes": "Tidak bisa dihitung, jadi some water. Satu gelas: a glass of water.",
+      "audio": "audio/en/words/w-water.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bill",
+      "english": "bill",
+      "indonesian": "tagihan, bon",
+      "pos": "noun",
+      "registerNotes": "Can we get the bill, please? (Minta bonnya, ya.)",
+      "pitfallNote": "Di Amerika disebut check.",
+      "audio": "audio/en/words/w-bill.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-counter",
+      "english": "counter",
+      "indonesian": "konter, kasir",
+      "pos": "noun",
+      "registerNotes": "Order at the counter. (Silakan pesan di konter.)",
+      "audio": "audio/en/words/w-counter.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-table-number",
+      "english": "table number",
+      "indonesian": "nomor meja (untuk pesanan)",
+      "pos": "noun",
+      "registerNotes": "Setelah memesan dan membayar, kamu diberi nomor meja, lalu makanannya diantar ke mejamu.",
+      "audio": "audio/en/words/w-table-number.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-napkin",
+      "english": "napkin",
+      "indonesian": "serbet, tisu makan",
+      "pos": "noun",
+      "registerNotes": "Disebut juga serviette.",
+      "audio": "audio/en/words/w-napkin.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tomato-sauce",
+      "english": "tomato sauce",
+      "indonesian": "saus tomat",
+      "pos": "noun",
+      "pitfallNote": "Di Selandia Baru dan Australia, saus tomat (ketchup) disebut tomato sauce. Hati-hati, kecap bukan ketchup: kecap manis adalah sweet soy sauce.",
+      "audio": "audio/en/words/w-tomato-sauce.mp3",
+      "tags": [
+        "kafe"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

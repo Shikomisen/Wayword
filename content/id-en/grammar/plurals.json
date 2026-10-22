@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-plurals",
+  "connector": "-s",
+  "gloss": "dua atau lebih: tambah -s",
+  "title": "-s — kata benda jamak",
+  "pattern": "one book → two books / a child → children",
+  "explanation": "Kalau kata benda yang bisa dihitung jumlahnya dua atau lebih, tambahkan -s (atau -es) di akhirnya: one book, two books. Bahasa Indonesia tidak menandainya (“dua buku”), tapi bahasa Inggris selalu. Kata yang berakhir s, sh, ch pakai -es (glasses, watches). Beberapa kata berubah bentuk: child → children, person → people, man → men, woman → women.",
+  "natural": "Setiap kali menyebut jumlah, pakai bentuk jamak: three people (tiga orang), two coffees (dua kopi).",
+  "stiff": "Karena “dua buku” tidak berubah dalam bahasa Indonesia, -s sering hilang: two book salah, yang benar two books. Ucapkan juga -s di akhir dengan jelas. People sudah jamak, jadi tidak ada peoples.",
+  "examples": [
+    {
+      "id": "gx-plurals-1",
+      "english": "I have two brothers.",
+      "indonesian": "Saya punya dua saudara laki-laki.",
+      "chunks": [
+        {
+          "t": "I have ",
+          "w": "w-have"
+        },
+        {
+          "t": "two "
+        },
+        {
+          "t": "brothers.",
+          "w": "w-brother"
+        }
+      ],
+      "gap": {
+        "before": "I have two ",
+        "answer": "brothers",
+        "after": ".",
+        "options": [
+          "brothers",
+          "brother",
+          "brotheres"
+        ],
+        "why": "Dua orang, jadi bentuk jamak: brothers."
+      },
+      "audio": "audio/en/grammar/gx-plurals-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "-s"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-plurals-2",
+      "english": "Two coffees, please.",
+      "indonesian": "Kopinya dua, ya.",
+      "chunks": [
+        {
+          "t": "Two "
+        },
+        {
+          "t": "coffees, ",
+          "w": "w-coffee"
+        },
+        {
+          "t": "please."
+        }
+      ],
+      "gap": {
+        "before": "Two ",
+        "answer": "coffees",
+        "after": ", please.",
+        "options": [
+          "coffees",
+          "coffee"
+        ],
+        "why": "Saat memesan dengan jumlah, coffee juga jadi jamak: two coffees."
+      },
+      "audio": "audio/en/grammar/gx-plurals-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "-s"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-plurals-3",
+      "english": "There are three people in my family.",
+      "indonesian": "Keluarga saya ada tiga orang.",
+      "chunks": [
+        {
+          "t": "There are "
+        },
+        {
+          "t": "three people ",
+          "w": "w-people"
+        },
+        {
+          "t": "in my family.",
+          "w": "w-family"
+        }
+      ],
+      "gap": {
+        "before": "There are three ",
+        "answer": "people",
+        "after": " in my family.",
+        "options": [
+          "people",
+          "persons",
+          "peoples"
+        ],
+        "why": "Jamak dari person adalah people."
+      },
+      "audio": "audio/en/grammar/gx-plurals-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "-s"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-plurals-4",
+      "english": "My children love cats.",
+      "indonesian": "Anak-anak saya suka sekali kucing.",
+      "chunks": [
+        {
+          "t": "My children ",
+          "w": "w-child"
+        },
+        {
+          "t": "love ",
+          "w": "w-love"
+        },
+        {
+          "t": "cats."
+        }
+      ],
+      "gap": {
+        "before": "My ",
+        "answer": "children",
+        "after": " love cats.",
+        "options": [
+          "children",
+          "childs",
+          "child"
+        ],
+        "why": "Jamak dari child adalah children."
+      },
+      "audio": "audio/en/grammar/gx-plurals-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "-s"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

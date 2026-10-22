@@ -1,0 +1,561 @@
+{
+  "schemaVersion": 1,
+  "id": "words-verbs",
+  "title": "Kata kerja sehari-hari",
+  "description": "Kata kerja dasar untuk setiap hari, terutama yang punya banyak arti seperti get dan take.",
+  "items": [
+    {
+      "id": "w-get",
+      "english": "get",
+      "indonesian": "mendapat, membeli, sampai",
+      "pos": "verb",
+      "registerNotes": "Kata kerja dengan arti sangat luas. Can I get a coffee? (Minta kopi satu, ya.), I got it at the market. (Aku beli di pasar.), get home (sampai di rumah)",
+      "audio": "audio/en/words/w-get.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-take",
+      "english": "take",
+      "indonesian": "mengambil, membawa (pergi), makan waktu",
+      "pos": "verb",
+      "registerNotes": "I'll take this one. (Saya ambil yang ini.) adalah ungkapan baku saat memutuskan mau membeli. It takes ten minutes. (Butuh sepuluh menit.)",
+      "audio": "audio/en/words/w-take.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-make",
+      "english": "make",
+      "indonesian": "membuat",
+      "pos": "verb",
+      "registerNotes": "make a booking (memesan tempat), make a mistake (membuat kesalahan)",
+      "audio": "audio/en/words/w-make.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-go",
+      "english": "go",
+      "indonesian": "pergi",
+      "pos": "verb",
+      "registerNotes": "go shopping (pergi belanja), go for a walk (jalan kaki santai)",
+      "audio": "audio/en/words/w-go.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-come",
+      "english": "come",
+      "indonesian": "datang",
+      "pos": "verb",
+      "registerNotes": "Bisa juga berarti “disertai”: Does it come with chips? (Sudah dapat kentang goreng?)",
+      "pitfallNote": "Menjawab panggilan “Iya, aku ke situ!” adalah I'm coming!, bukan I'm going. Kalau menuju tempat lawan bicara, pakai come, bukan go.",
+      "audio": "audio/en/words/w-come.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bring",
+      "english": "bring",
+      "indonesian": "membawa (ke sini)",
+      "pos": "verb",
+      "registerNotes": "Can you bring some water? (Bisa bawakan air?)",
+      "pitfallNote": "Bahasa Indonesia memakai bawa untuk keduanya. take = membawa pergi, bring = membawa ke tempat pembicara atau lawan bicara.",
+      "audio": "audio/en/words/w-bring.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-buy",
+      "english": "buy",
+      "indonesian": "membeli",
+      "pos": "verb",
+      "registerNotes": "Bentuk lampau: bought (dibaca “bot”). I bought it yesterday. (Aku beli kemarin.)",
+      "audio": "audio/en/words/w-buy.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pay",
+      "english": "pay",
+      "indonesian": "membayar",
+      "pos": "verb",
+      "registerNotes": "pay by card (bayar pakai kartu), pay in cash (bayar tunai). Bentuk lampau: paid.",
+      "audio": "audio/en/words/w-pay.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-need",
+      "english": "need",
+      "indonesian": "perlu, butuh",
+      "pos": "verb",
+      "registerNotes": "I need a bigger size. (Saya perlu ukuran yang lebih besar.)",
+      "audio": "audio/en/words/w-need.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-want",
+      "english": "want",
+      "indonesian": "mau, ingin",
+      "pos": "verb",
+      "registerNotes": "Untuk menyatakan keinginan sendiri. Untuk meminta di toko, I'd like lebih sopan.",
+      "audio": "audio/en/words/w-want.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-use",
+      "english": "use",
+      "indonesian": "memakai, menggunakan",
+      "pos": "verb",
+      "registerNotes": "Can I use your bathroom? (Boleh numpang ke toilet?)",
+      "pitfallNote": "“Pinjam toilet” atau “pinjam telepon” di tempat adalah use, bukan borrow. borrow untuk barang yang dibawa pergi lalu dikembalikan.",
+      "audio": "audio/en/words/w-use.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-find",
+      "english": "find",
+      "indonesian": "menemukan",
+      "pos": "verb",
+      "registerNotes": "I can't find my size. (Ukuranku tidak ketemu.) Bentuk lampau: found.",
+      "audio": "audio/en/words/w-find.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-look-for",
+      "english": "look for",
+      "indonesian": "mencari",
+      "pos": "verb",
+      "registerNotes": "I'm looking for a jacket. (Saya cari jaket.) — kalimat pertama yang paling umum di toko.",
+      "audio": "audio/en/words/w-look-for.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-keep",
+      "english": "keep",
+      "indonesian": "menyimpan, tetap memegang",
+      "pos": "verb",
+      "registerNotes": "Keep the change. (Ambil saja kembaliannya.)",
+      "audio": "audio/en/words/w-keep.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-leave",
+      "english": "leave",
+      "indonesian": "berangkat, pergi; meninggalkan",
+      "pos": "verb",
+      "registerNotes": "What time does the bus leave? (Busnya berangkat jam berapa?), I left my phone at home. (HP-ku ketinggalan di rumah.)",
+      "audio": "audio/en/words/w-leave.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-wait",
+      "english": "wait",
+      "indonesian": "menunggu",
+      "pos": "verb",
+      "registerNotes": "wait for the bus (menunggu bus)",
+      "pitfallNote": "wait the bus salah. “Menunggu …” adalah wait for …, dengan for.",
+      "audio": "audio/en/words/w-wait.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-open",
+      "english": "open",
+      "indonesian": "membuka; buka",
+      "pos": "verb",
+      "registerNotes": "Are you open on Sundays? (Hari Minggu buka?)",
+      "audio": "audio/en/words/w-open.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "Untuk lampu, TV, atau AC jangan pakai open: “buka lampu” adalah turn on the light."
+    },
+    {
+      "id": "w-close",
+      "english": "close",
+      "indonesian": "menutup; tutup",
+      "pos": "verb",
+      "registerNotes": "What time do you close? (Tutup jam berapa?) “Sedang tutup” adalah closed.",
+      "audio": "audio/en/words/w-close.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "Untuk lampu, TV, atau AC jangan pakai close: “tutup lampu” adalah turn off the light."
+    },
+    {
+      "id": "w-carry",
+      "english": "carry",
+      "indonesian": "membawa, mengangkat",
+      "pos": "verb",
+      "registerNotes": "It's too heavy to carry. (Terlalu berat untuk dibawa.)",
+      "audio": "audio/en/words/w-carry.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-choose",
+      "english": "choose",
+      "indonesian": "memilih",
+      "pos": "verb",
+      "registerNotes": "It's hard to choose. (Susah memilihnya.)",
+      "audio": "audio/en/words/w-choose.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-change-v",
+      "english": "change",
+      "indonesian": "mengubah, mengganti; ganti (baju, kendaraan)",
+      "pos": "verb",
+      "registerNotes": "change my order (mengganti pesanan), change trains (ganti kereta)",
+      "audio": "audio/en/words/w-change-v.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-check",
+      "english": "check",
+      "indonesian": "memeriksa, mengecek",
+      "pos": "verb",
+      "registerNotes": "Can you check if you have it? (Bisa dicek apakah barangnya ada?)",
+      "audio": "audio/en/words/w-check.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-show",
+      "english": "show",
+      "indonesian": "menunjukkan, memperlihatkan",
+      "pos": "verb",
+      "registerNotes": "Can you show me another one? (Boleh lihat yang lain?)",
+      "audio": "audio/en/words/w-show.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tell",
+      "english": "tell",
+      "indonesian": "memberi tahu",
+      "pos": "verb",
+      "registerNotes": "Can you tell me the way to the station? (Bisa kasih tahu jalan ke stasiun?)",
+      "pitfallNote": "Memberi tahu jalan atau informasi: tell. teach untuk mengajarkan pelajaran atau keterampilan.",
+      "audio": "audio/en/words/w-tell.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ask",
+      "english": "ask",
+      "indonesian": "bertanya; meminta",
+      "pos": "verb",
+      "registerNotes": "Can I ask you something? (Boleh tanya sesuatu?)",
+      "audio": "audio/en/words/w-ask.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-help",
+      "english": "help",
+      "indonesian": "membantu, menolong",
+      "pos": "verb",
+      "registerNotes": "Can you help me? (Bisa bantu saya?) Bisa juga jadi kata benda “bantuan”: Thanks for your help.",
+      "audio": "audio/en/words/w-help.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "“Tolong” dalam permintaan biasa bukan help: “Tolong tutup pintunya” adalah Could you close the door, please? Pakai help hanya kalau memang minta dibantu."
+    },
+    {
+      "id": "w-meet",
+      "english": "meet",
+      "indonesian": "bertemu",
+      "pos": "verb",
+      "registerNotes": "Nice to meet you. (Senang berkenalan.) hanya untuk pertemuan pertama. Selanjutnya: Nice to see you.",
+      "audio": "audio/en/words/w-meet.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-start",
+      "english": "start",
+      "indonesian": "mulai, memulai",
+      "pos": "verb",
+      "registerNotes": "What time does it start? (Mulai jam berapa?)",
+      "audio": "audio/en/words/w-start.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-finish",
+      "english": "finish",
+      "indonesian": "selesai, menyelesaikan",
+      "pos": "verb",
+      "registerNotes": "Have you finished? (Sudah selesai?) — sering ditanyakan pelayan saat kamu makan.",
+      "audio": "audio/en/words/w-finish.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "Jawablah Yes, thanks atau Yes, I have, bukan Already (dari sudah)."
+    },
+    {
+      "id": "w-book",
+      "english": "book",
+      "indonesian": "memesan (tempat), reservasi",
+      "pos": "verb",
+      "registerNotes": "book a table (pesan meja). Kata bendanya booking: “pemesanan, reservasi”.",
+      "pitfallNote": "“Pesan” makanan adalah order; “pesan” tempat (meja, kamar, tiket) adalah book. book juga lebih umum daripada reserve.",
+      "audio": "audio/en/words/w-book.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cancel",
+      "english": "cancel",
+      "indonesian": "membatalkan",
+      "pos": "verb",
+      "registerNotes": "I need to cancel my booking. (Saya perlu membatalkan pesanan saya.)",
+      "audio": "audio/en/words/w-cancel.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-borrow",
+      "english": "borrow",
+      "indonesian": "meminjam",
+      "pos": "verb",
+      "registerNotes": "Can I borrow a pen? (Boleh pinjam pulpen?)",
+      "audio": "audio/en/words/w-borrow.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-lend",
+      "english": "lend",
+      "indonesian": "meminjamkan",
+      "pos": "verb",
+      "registerNotes": "Could you lend me a pen? (Bisa pinjamkan aku pulpen?)",
+      "pitfallNote": "Bahasa Indonesia memakai pinjam untuk keduanya, tapi bahasa Inggris membedakan borrow (meminjam) dan lend (meminjamkan). Bilang Can I borrow …? atau Could you lend me …?, bukan Can you borrow me …?",
+      "audio": "audio/en/words/w-lend.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-forget",
+      "english": "forget",
+      "indonesian": "lupa",
+      "pos": "verb",
+      "registerNotes": "I forgot my wallet. (Dompetku ketinggalan.)",
+      "audio": "audio/en/words/w-forget.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-remember",
+      "english": "remember",
+      "indonesian": "ingat",
+      "pos": "verb",
+      "registerNotes": "I can't remember the name. (Aku tidak ingat namanya.)",
+      "audio": "audio/en/words/w-remember.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-understand",
+      "english": "understand",
+      "indonesian": "mengerti, paham",
+      "pos": "verb",
+      "registerNotes": "Sorry, I don't understand. (Maaf, saya tidak mengerti.)",
+      "audio": "audio/en/words/w-understand.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-mean",
+      "english": "mean",
+      "indonesian": "berarti, bermaksud",
+      "pos": "verb",
+      "registerNotes": "What does that mean? (Itu artinya apa?)",
+      "audio": "audio/en/words/w-mean.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-say",
+      "english": "say",
+      "indonesian": "berkata, bilang",
+      "pos": "verb",
+      "registerNotes": "Could you say that again? (Bisa diulangi lagi?)",
+      "audio": "audio/en/words/w-say.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-speak",
+      "english": "speak",
+      "indonesian": "berbicara",
+      "pos": "verb",
+      "registerNotes": "Could you speak more slowly? (Bisa bicara lebih pelan?)",
+      "audio": "audio/en/words/w-speak.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hear",
+      "english": "hear",
+      "indonesian": "mendengar",
+      "pos": "verb",
+      "registerNotes": "Sorry, I didn't hear you. (Maaf, saya tidak dengar.)",
+      "pitfallNote": "Sama seperti dengar dan dengarkan: hear = mendengar (terdengar sendiri), listen = mendengarkan (dengan sengaja).",
+      "audio": "audio/en/words/w-hear.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-catch",
+      "english": "catch",
+      "indonesian": "naik (kendaraan); menangkap (ucapan)",
+      "pos": "verb",
+      "registerNotes": "catch the bus (naik bus), I didn't catch your name. (Maaf, nama Anda tadi siapa?)",
+      "audio": "audio/en/words/w-catch.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-feel",
+      "english": "feel",
+      "indonesian": "merasa",
+      "pos": "verb",
+      "registerNotes": "I don't feel well. (Saya merasa tidak enak badan.)",
+      "audio": "audio/en/words/w-feel.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-like",
+      "english": "like",
+      "indonesian": "suka",
+      "pos": "verb",
+      "registerNotes": "I like it. (Aku suka.) Untuk memesan, pakai I'd like.",
+      "pitfallNote": "I like coffee. berarti “Aku suka kopi.” Untuk memesan: I'd like a coffee.",
+      "audio": "audio/en/words/w-like.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-love",
+      "english": "love",
+      "indonesian": "sangat suka, cinta",
+      "pos": "verb",
+      "registerNotes": "I love this café. (Aku suka banget kafe ini.) — sering dipakai dengan santai untuk “suka sekali”.",
+      "audio": "audio/en/words/w-love.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hope",
+      "english": "hope",
+      "indonesian": "berharap, semoga",
+      "pos": "verb",
+      "registerNotes": "I hope so. (Semoga begitu.)",
+      "audio": "audio/en/words/w-hope.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

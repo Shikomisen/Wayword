@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "con-because",
+  "connector": "because",
+  "gloss": "karena, soalnya",
+  "title": "because — karena, soalnya",
+  "pattern": "akibat because sebab",
+  "explanation": "because artinya “karena”. Kebalikan dari so: sebab ada sesudah because. Dalam bahasa Inggris, urutan “akibat because sebab” adalah yang paling umum, sama seperti “…, karena …” dalam bahasa Indonesia. Dalam percakapan, kadang disingkat menjadi 'cause (dibaca “koz”).",
+  "natural": "Untuk memberi alasan. Kalau ditanya Why? (Kenapa?), kamu bisa jawab Because … (Soalnya…).",
+  "stiff": "Menjawab dengan Because … saja tidak apa-apa dalam percakapan. Dalam tulisan, pakai bersama kalimat akibatnya.",
+  "examples": [
+    {
+      "id": "cx-because-1",
+      "english": "I didn't buy it because it was too expensive.",
+      "indonesian": "Saya tidak membelinya karena terlalu mahal.",
+      "chunks": [
+        {
+          "t": "I didn't buy it ",
+          "w": "w-buy"
+        },
+        {
+          "t": "because "
+        },
+        {
+          "t": "it was too expensive.",
+          "w": "w-expensive"
+        }
+      ],
+      "gap": {
+        "before": "I didn't buy it ",
+        "answer": "because",
+        "after": " it was too expensive.",
+        "options": [
+          "because",
+          "so",
+          "but"
+        ],
+        "why": "Sesudahnya ada alasan (terlalu mahal), jadi pakai because."
+      },
+      "combine": {
+        "a": "I didn't buy it.",
+        "b": "It was too expensive.",
+        "distractors": [
+          "so "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-because-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "because"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-because-2",
+      "english": "We come here because we love the coffee.",
+      "indonesian": "Kami datang ke sini karena kami suka sekali kopinya.",
+      "chunks": [
+        {
+          "t": "We come here "
+        },
+        {
+          "t": "because "
+        },
+        {
+          "t": "we love the coffee.",
+          "w": "w-coffee"
+        }
+      ],
+      "gap": {
+        "before": "We come here because we ",
+        "answer": "love",
+        "after": " the coffee.",
+        "options": [
+          "love",
+          "loves",
+          "loving"
+        ],
+        "why": "Subjeknya we, jadi love tanpa -s. Kata kerja dengan -s hanya untuk he, she, it."
+      },
+      "combine": {
+        "a": "We come here.",
+        "b": "We love the coffee.",
+        "distractors": [
+          "so "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-because-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "because"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-because-3",
+      "english": "I'll take this one, because it's cheaper.",
+      "indonesian": "Saya ambil yang ini, karena lebih murah.",
+      "chunks": [
+        {
+          "t": "I'll take this one, ",
+          "w": "w-take"
+        },
+        {
+          "t": "because "
+        },
+        {
+          "t": "it's cheaper.",
+          "w": "w-cheap"
+        }
+      ],
+      "gap": {
+        "before": "I'll take this one, ",
+        "answer": "because",
+        "after": " it's cheaper.",
+        "options": [
+          "because",
+          "so",
+          "unless"
+        ],
+        "why": "Sebelum alasan (lebih murah), pakai because."
+      },
+      "audio": "audio/en/connectors/cx-because-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "because"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-because-4",
+      "english": "I can't come in today because I don't feel well.",
+      "indonesian": "Hari ini saya tidak bisa masuk karena tidak enak badan.",
+      "chunks": [
+        {
+          "t": "I can't come in today "
+        },
+        {
+          "t": "because "
+        },
+        {
+          "t": "I don't feel well.",
+          "w": "w-feel"
+        }
+      ],
+      "gap": {
+        "before": "I can't come in today because I ",
+        "answer": "don't feel",
+        "after": " well.",
+        "options": [
+          "don't feel",
+          "am not feel",
+          "not feel"
+        ],
+        "why": "“Tidak enak badan” adalah I don't feel well. Bukan am not feel atau not feel: kata kerja feel butuh don't."
+      },
+      "combine": {
+        "a": "I can't come in today.",
+        "b": "I don't feel well.",
+        "distractors": [
+          "so "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-because-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "because"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

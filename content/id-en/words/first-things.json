@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "id": "words-first-things",
+  "title": "Benda sehari-hari",
+  "description": "Nama benda di rumah dan di sekitarmu.",
+  "items": [
+    {
+      "id": "w-house",
+      "english": "house",
+      "indonesian": "rumah",
+      "pos": "noun",
+      "registerNotes": "“Di rumah” dan “pulang”: at home / go home (bukan go to home).",
+      "audio": "audio/en/words/w-house.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-room",
+      "english": "room",
+      "indonesian": "kamar, ruangan",
+      "pos": "noun",
+      "audio": "audio/en/words/w-room.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kitchen",
+      "english": "kitchen",
+      "indonesian": "dapur",
+      "pos": "noun",
+      "audio": "audio/en/words/w-kitchen.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bathroom",
+      "english": "bathroom",
+      "indonesian": "kamar mandi, toilet",
+      "pos": "noun",
+      "registerNotes": "Toilet di dalam rumah juga disebut bathroom. Di toko atau tempat umum: toilet atau restroom.",
+      "audio": "audio/en/words/w-bathroom.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bedroom",
+      "english": "bedroom",
+      "indonesian": "kamar tidur",
+      "pos": "noun",
+      "audio": "audio/en/words/w-bedroom.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bed",
+      "english": "bed",
+      "indonesian": "tempat tidur, kasur",
+      "pos": "noun",
+      "registerNotes": "go to bed (pergi tidur).",
+      "audio": "audio/en/words/w-bed.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-table",
+      "english": "table",
+      "indonesian": "meja",
+      "pos": "noun",
+      "audio": "audio/en/words/w-table.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-chair",
+      "english": "chair",
+      "indonesian": "kursi",
+      "pos": "noun",
+      "audio": "audio/en/words/w-chair.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-door",
+      "english": "door",
+      "indonesian": "pintu",
+      "pos": "noun",
+      "audio": "audio/en/words/w-door.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-window",
+      "english": "window",
+      "indonesian": "jendela",
+      "pos": "noun",
+      "audio": "audio/en/words/w-window.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-key",
+      "english": "key",
+      "indonesian": "kunci",
+      "pos": "noun",
+      "audio": "audio/en/words/w-key.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-towel",
+      "english": "towel",
+      "indonesian": "handuk",
+      "pos": "noun",
+      "registerNotes": "a bath towel (handuk mandi), a tea towel (lap piring).",
+      "audio": "audio/en/words/w-towel.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pen",
+      "english": "pen",
+      "indonesian": "pulpen, pena",
+      "pos": "noun",
+      "audio": "audio/en/words/w-pen.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cup",
+      "english": "cup",
+      "indonesian": "cangkir",
+      "pos": "noun",
+      "registerNotes": "a cup of tea (secangkir teh).",
+      "audio": "audio/en/words/w-cup.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-glass",
+      "english": "glass",
+      "indonesian": "gelas; kaca",
+      "pos": "noun",
+      "pitfallNote": "glasses (jamak) berarti “kacamata”. a glass of water (segelas air).",
+      "audio": "audio/en/words/w-glass.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-plate",
+      "english": "plate",
+      "indonesian": "piring",
+      "pos": "noun",
+      "audio": "audio/en/words/w-plate.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tv",
+      "english": "TV",
+      "indonesian": "televisi, TV",
+      "pos": "noun",
+      "registerNotes": "watch TV (menonton TV).",
+      "audio": "audio/en/words/w-tv.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-light",
+      "english": "light",
+      "indonesian": "lampu, cahaya",
+      "pos": "noun",
+      "pitfallNote": "Menyalakan lampu: turn on the light, bukan open the light. Mematikan: turn off, bukan close. electricity berarti listrik.",
+      "audio": "audio/en/words/w-light.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-car",
+      "english": "car",
+      "indonesian": "mobil",
+      "pos": "noun",
+      "audio": "audio/en/words/w-car.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bike",
+      "english": "bike",
+      "indonesian": "sepeda",
+      "pos": "noun",
+      "registerNotes": "Kependekan dari bicycle. Sepeda motor: motorbike.",
+      "pitfallNote": "Jangan bilang motor untuk sepeda motor: dalam bahasa Inggris motor berarti mesin. Bilang motorbike, atau scooter untuk motor matik.",
+      "audio": "audio/en/words/w-bike.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-umbrella",
+      "english": "umbrella",
+      "indonesian": "payung",
+      "pos": "noun",
+      "audio": "audio/en/words/w-umbrella.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-clock",
+      "english": "clock",
+      "indonesian": "jam (dinding, meja)",
+      "pos": "noun",
+      "registerNotes": "Jam tangan: watch.",
+      "audio": "audio/en/words/w-clock.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-picture",
+      "english": "picture",
+      "indonesian": "foto, gambar",
+      "pos": "noun",
+      "registerNotes": "take a picture (mengambil foto).",
+      "audio": "audio/en/words/w-picture.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-wallet",
+      "english": "wallet",
+      "indonesian": "dompet",
+      "pos": "noun",
+      "audio": "audio/en/words/w-wallet.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-money",
+      "english": "money",
+      "indonesian": "uang",
+      "pos": "noun",
+      "registerNotes": "Tidak bisa dihitung: bukan a money, tapi some money.",
+      "audio": "audio/en/words/w-money.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

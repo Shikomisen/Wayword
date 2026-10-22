@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "pat-get",
+  "connector": "Could I get…?",
+  "gloss": "Boleh saya minta…? (sopan)",
+  "title": "Could I get…? — Boleh saya minta…? (sopan)",
+  "pattern": "Could I get ＋ barang ＋ ?",
+  "explanation": "Could I get …? artinya “boleh saya minta…?”. Ini bentuk Can I get …? yang sedikit lebih lembut, dan sangat wajar untuk meminta sesuatu di kafe atau toko. Get di sini artinya “mendapat” atau “menerima”. Orang Indonesia cenderung memakai can untuk setiap permintaan, seperti “bisa…?”; cukup ganti Can dengan Could, dan kalimatmu langsung terdengar jauh lebih sopan.",
+  "natural": "Untuk memesan, minta tambahan, atau minta struk dan kantong. Dalam situasi santai, Can I get …? juga sering dipakai; dua-duanya wajar.",
+  "stiff": "Could you get me …? tidak salah, tapi artinya kamu meminta orang lain bergerak mengambilkan sesuatu (“tolong ambilkan…”). Kalau kamu hanya ingin menerima sesuatu, Could I get …? lebih wajar.",
+  "examples": [
+    {
+      "id": "px-get-1",
+      "english": "Could I get a receipt, please?",
+      "indonesian": "Boleh saya minta struknya?",
+      "chunks": [
+        {
+          "t": "Could I get "
+        },
+        {
+          "t": "a receipt, ",
+          "w": "w-receipt"
+        },
+        {
+          "t": "please?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Could",
+        "after": " I get a receipt, please?",
+        "options": [
+          "Could",
+          "Should",
+          "Would"
+        ],
+        "why": "Untuk meminta, pakai Could I …? (atau Can I …?). Should I …? artinya “apakah sebaiknya saya…?”."
+      },
+      "audio": "audio/en/patterns/px-get-1.mp3",
+      "tags": [
+        "pola kalimat",
+        "Could I get…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-get-2",
+      "english": "Could I get a bag, please?",
+      "indonesian": "Boleh saya minta kantong?",
+      "chunks": [
+        {
+          "t": "Could I "
+        },
+        {
+          "t": "get "
+        },
+        {
+          "t": "a bag, ",
+          "w": "w-bag"
+        },
+        {
+          "t": "please?"
+        }
+      ],
+      "gap": {
+        "before": "Could I ",
+        "answer": "get",
+        "after": " a bag, please?",
+        "options": [
+          "get",
+          "got",
+          "getting"
+        ],
+        "why": "Setelah Could I, pakai bentuk dasar kata kerja (get), bukan got atau getting."
+      },
+      "audio": "audio/en/patterns/px-get-2.mp3",
+      "tags": [
+        "pola kalimat",
+        "Could I get…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-get-3",
+      "english": "Could I get this in a medium?",
+      "indonesian": "Boleh saya minta yang ini ukuran M?",
+      "chunks": [
+        {
+          "t": "Could I get "
+        },
+        {
+          "t": "this "
+        },
+        {
+          "t": "in a medium?",
+          "w": "w-medium"
+        }
+      ],
+      "gap": {
+        "before": "Could I get this ",
+        "answer": "in",
+        "after": " a medium?",
+        "options": [
+          "in",
+          "on",
+          "at"
+        ],
+        "why": "Ukuran dan warna memakai in (in a medium, in black)."
+      },
+      "audio": "audio/en/patterns/px-get-3.mp3",
+      "tags": [
+        "pola kalimat",
+        "Could I get…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "px-get-4",
+      "english": "Could I get some more napkins?",
+      "indonesian": "Boleh minta tisu lagi?",
+      "chunks": [
+        {
+          "t": "Could I get "
+        },
+        {
+          "t": "some more "
+        },
+        {
+          "t": "napkins?",
+          "w": "w-napkin"
+        }
+      ],
+      "gap": {
+        "before": "Could I get some ",
+        "answer": "more",
+        "after": " napkins?",
+        "options": [
+          "more",
+          "much",
+          "most"
+        ],
+        "why": "Kalau mau tambahan, pakai some more + benda, seperti “… lagi” dalam bahasa Indonesia."
+      },
+      "audio": "audio/en/patterns/px-get-4.mp3",
+      "tags": [
+        "pola kalimat",
+        "Could I get…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

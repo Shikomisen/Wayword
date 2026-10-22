@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "id": "contrasts",
+  "title": "Mana yang kamu dengar?",
+  "description": "Membedakan bunyi bahasa Inggris yang sulit bagi penutur bahasa Indonesia: F dan V, TH, SH dan S, vokal pendek dan panjang, bunyi di akhir kata, serta 13 dan 30.",
+  "sets": [
+    {
+      "id": "fv",
+      "sound": "F dan V",
+      "note": "Dalam bahasa Indonesia, V biasanya diucapkan seperti F, jadi van terdengar seperti fan. Untuk keduanya, gigi atas menyentuh bibir bawah, tapi V diucapkan dengan suara: rasakan getaran di tenggorokan, seperti bedanya S dan Z.",
+      "pairs": [
+        [
+          {
+            "id": "lc-fv-fan",
+            "english": "fan",
+            "indonesian": "kipas angin; penggemar",
+            "audio": "audio/en/listening/lc-fv-fan.mp3"
+          },
+          {
+            "id": "lc-fv-van",
+            "english": "van",
+            "indonesian": "mobil van, mobil boks",
+            "audio": "audio/en/listening/lc-fv-van.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-fv-ferry",
+            "english": "ferry",
+            "indonesian": "kapal feri",
+            "audio": "audio/en/listening/lc-fv-ferry.mp3"
+          },
+          {
+            "id": "lc-fv-very",
+            "english": "very",
+            "indonesian": "sangat",
+            "audio": "audio/en/listening/lc-fv-very.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-fv-fine",
+            "english": "fine",
+            "indonesian": "baik-baik saja; denda",
+            "audio": "audio/en/listening/lc-fv-fine.mp3"
+          },
+          {
+            "id": "lc-fv-vine",
+            "english": "vine",
+            "indonesian": "tanaman merambat (anggur)",
+            "audio": "audio/en/listening/lc-fv-vine.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-fv-few",
+            "english": "few",
+            "indonesian": "sedikit, beberapa",
+            "audio": "audio/en/listening/lc-fv-few.mp3"
+          },
+          {
+            "id": "lc-fv-view",
+            "english": "view",
+            "indonesian": "pemandangan",
+            "audio": "audio/en/listening/lc-fv-view.mp3"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "th",
+      "sound": "TH dan T/D",
+      "note": "Bahasa Indonesia tidak punya bunyi TH, jadi three sering terdengar seperti tree. Letakkan ujung lidah di antara gigi atas dan bawah, lalu embuskan udara. Pada they, bunyi yang sama diucapkan dengan suara, jangan diganti D.",
+      "pairs": [
+        [
+          {
+            "id": "lc-th-three",
+            "english": "three",
+            "indonesian": "tiga",
+            "audio": "audio/en/listening/lc-th-three.mp3"
+          },
+          {
+            "id": "lc-th-tree",
+            "english": "tree",
+            "indonesian": "pohon",
+            "audio": "audio/en/listening/lc-th-tree.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-th-thin",
+            "english": "thin",
+            "indonesian": "tipis; kurus",
+            "audio": "audio/en/listening/lc-th-thin.mp3"
+          },
+          {
+            "id": "lc-th-tin",
+            "english": "tin",
+            "indonesian": "kaleng",
+            "audio": "audio/en/listening/lc-th-tin.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-th-thank",
+            "english": "thank",
+            "indonesian": "berterima kasih",
+            "audio": "audio/en/listening/lc-th-thank.mp3"
+          },
+          {
+            "id": "lc-th-tank",
+            "english": "tank",
+            "indonesian": "tangki",
+            "audio": "audio/en/listening/lc-th-tank.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-th-they",
+            "english": "they",
+            "indonesian": "mereka",
+            "audio": "audio/en/listening/lc-th-they.mp3"
+          },
+          {
+            "id": "lc-th-day",
+            "english": "day",
+            "indonesian": "hari",
+            "audio": "audio/en/listening/lc-th-day.mp3"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "sh",
+      "sound": "SH dan S",
+      "note": "Bahasa Indonesia punya bunyi ini dalam sy (syarat, syukur), tapi sering diucapkan S. Untuk SH, majukan dan bulatkan bibir sedikit, dengan lidah agak ke belakang, seperti menyuruh orang diam: sst! Untuk S, bibir tidak dibulatkan.",
+      "pairs": [
+        [
+          {
+            "id": "lc-sh-she",
+            "english": "she",
+            "indonesian": "dia (perempuan)",
+            "audio": "audio/en/listening/lc-sh-she.mp3"
+          },
+          {
+            "id": "lc-sh-see",
+            "english": "see",
+            "indonesian": "melihat",
+            "audio": "audio/en/listening/lc-sh-see.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-sh-shoe",
+            "english": "shoe",
+            "indonesian": "sepatu",
+            "audio": "audio/en/listening/lc-sh-shoe.mp3"
+          },
+          {
+            "id": "lc-sh-sue",
+            "english": "sue",
+            "indonesian": "menuntut (ke pengadilan)",
+            "audio": "audio/en/listening/lc-sh-sue.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-sh-shell",
+            "english": "shell",
+            "indonesian": "kerang; cangkang",
+            "audio": "audio/en/listening/lc-sh-shell.mp3"
+          },
+          {
+            "id": "lc-sh-sell",
+            "english": "sell",
+            "indonesian": "menjual",
+            "audio": "audio/en/listening/lc-sh-sell.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-sh-shave",
+            "english": "shave",
+            "indonesian": "bercukur",
+            "audio": "audio/en/listening/lc-sh-shave.mp3"
+          },
+          {
+            "id": "lc-sh-save",
+            "english": "save",
+            "indonesian": "menyimpan; menabung",
+            "audio": "audio/en/listening/lc-sh-save.mp3"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "vowels",
+      "sound": "Vokal pendek dan panjang",
+      "note": "Bahasa Indonesia tidak membedakan vokal pendek dan panjang, jadi ship dan sheep terdengar sama. Vokal panjang (ee, ea, oo) diucapkan lebih lama dan tegang; vokal pendek singkat dan santai. Di Selandia Baru, i pendek terdengar agak seperti e lemah: fish and chips hampir seperti fush and chups.",
+      "pairs": [
+        [
+          {
+            "id": "lc-vowels-ship",
+            "english": "ship",
+            "indonesian": "kapal",
+            "audio": "audio/en/listening/lc-vowels-ship.mp3"
+          },
+          {
+            "id": "lc-vowels-sheep",
+            "english": "sheep",
+            "indonesian": "domba",
+            "audio": "audio/en/listening/lc-vowels-sheep.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-vowels-live",
+            "english": "live",
+            "indonesian": "tinggal; hidup",
+            "audio": "audio/en/listening/lc-vowels-live.mp3"
+          },
+          {
+            "id": "lc-vowels-leave",
+            "english": "leave",
+            "indonesian": "pergi; meninggalkan",
+            "audio": "audio/en/listening/lc-vowels-leave.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-vowels-full",
+            "english": "full",
+            "indonesian": "penuh; kenyang",
+            "audio": "audio/en/listening/lc-vowels-full.mp3"
+          },
+          {
+            "id": "lc-vowels-fool",
+            "english": "fool",
+            "indonesian": "orang bodoh",
+            "audio": "audio/en/listening/lc-vowels-fool.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-vowels-sit",
+            "english": "sit",
+            "indonesian": "duduk",
+            "audio": "audio/en/listening/lc-vowels-sit.mp3"
+          },
+          {
+            "id": "lc-vowels-seat",
+            "english": "seat",
+            "indonesian": "kursi, tempat duduk",
+            "audio": "audio/en/listening/lc-vowels-seat.mp3"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "final",
+      "sound": "Bunyi di akhir kata",
+      "note": "Di akhir kata, bahasa Indonesia mengubah B, D, G menjadi P, T, K (abad dibaca abat), jadi bag terdengar seperti back. Dalam bahasa Inggris, bedanya paling jelas dari vokalnya: sebelum G, D, Z vokal diucapkan lebih panjang; sebelum K, T, S lebih pendek dan terputus.",
+      "pairs": [
+        [
+          {
+            "id": "lc-final-bag",
+            "english": "bag",
+            "indonesian": "tas",
+            "audio": "audio/en/listening/lc-final-bag.mp3"
+          },
+          {
+            "id": "lc-final-back",
+            "english": "back",
+            "indonesian": "punggung; belakang; kembali",
+            "audio": "audio/en/listening/lc-final-back.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-final-bed",
+            "english": "bed",
+            "indonesian": "tempat tidur",
+            "audio": "audio/en/listening/lc-final-bed.mp3"
+          },
+          {
+            "id": "lc-final-bet",
+            "english": "bet",
+            "indonesian": "bertaruh",
+            "audio": "audio/en/listening/lc-final-bet.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-final-dog",
+            "english": "dog",
+            "indonesian": "anjing",
+            "audio": "audio/en/listening/lc-final-dog.mp3"
+          },
+          {
+            "id": "lc-final-dock",
+            "english": "dock",
+            "indonesian": "dermaga",
+            "audio": "audio/en/listening/lc-final-dock.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-final-prize",
+            "english": "prize",
+            "indonesian": "hadiah (lomba)",
+            "audio": "audio/en/listening/lc-final-prize.mp3"
+          },
+          {
+            "id": "lc-final-price",
+            "english": "price",
+            "indonesian": "harga",
+            "audio": "audio/en/listening/lc-final-price.mp3"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "teen",
+      "sound": "13 dan 30",
+      "note": "Angka 13 sampai 19 diberi tekanan di belakang (-teen) dan dibaca panjang; 30, 40, dan seterusnya diberi tekanan di depan. Perbedaan ini penting saat mendengar harga di kasir.",
+      "pairs": [
+        [
+          {
+            "id": "lc-teen-thirteen-dollars",
+            "english": "That's thirteen dollars.",
+            "indonesian": "Harganya 13 dolar.",
+            "audio": "audio/en/listening/lc-teen-thirteen-dollars.mp3"
+          },
+          {
+            "id": "lc-teen-thirty-dollars",
+            "english": "That's thirty dollars.",
+            "indonesian": "Harganya 30 dolar.",
+            "audio": "audio/en/listening/lc-teen-thirty-dollars.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-teen-fourteen-dollars",
+            "english": "That's fourteen dollars.",
+            "indonesian": "Harganya 14 dolar.",
+            "audio": "audio/en/listening/lc-teen-fourteen-dollars.mp3"
+          },
+          {
+            "id": "lc-teen-forty-dollars",
+            "english": "That's forty dollars.",
+            "indonesian": "Harganya 40 dolar.",
+            "audio": "audio/en/listening/lc-teen-forty-dollars.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-teen-fifteen-dollars",
+            "english": "That's fifteen dollars.",
+            "indonesian": "Harganya 15 dolar.",
+            "audio": "audio/en/listening/lc-teen-fifteen-dollars.mp3"
+          },
+          {
+            "id": "lc-teen-fifty-dollars",
+            "english": "That's fifty dollars.",
+            "indonesian": "Harganya 50 dolar.",
+            "audio": "audio/en/listening/lc-teen-fifty-dollars.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-teen-sixteen-dollars",
+            "english": "That's sixteen dollars.",
+            "indonesian": "Harganya 16 dolar.",
+            "audio": "audio/en/listening/lc-teen-sixteen-dollars.mp3"
+          },
+          {
+            "id": "lc-teen-sixty-dollars",
+            "english": "That's sixty dollars.",
+            "indonesian": "Harganya 60 dolar.",
+            "audio": "audio/en/listening/lc-teen-sixty-dollars.mp3"
+          }
+        ]
+      ]
+    }
+  ]
+}

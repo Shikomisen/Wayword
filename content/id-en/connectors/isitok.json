@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "con-isitok",
+  "connector": "Is it OK if I…?",
+  "gloss": "Boleh saya…? (minta izin)",
+  "title": "Is it OK if I…? — Boleh saya…? (minta izin)",
+  "pattern": "Is it OK if I ＋ kata kerja ...? ／ Do you mind if I ＋ kata kerja ...?",
+  "explanation": "Cara meminta izin untuk melakukan sesuatu. Is it OK if I …? terdengar santai, Do you mind if I …? sedikit lebih sopan. Setelah if, pakai bentuk kalimat biasa: I + kata kerja. Yang paling pendek adalah Can I …?. Dalam bahasa Indonesia cukup “Bisa bayar pakai kartu?” tanpa subjek, tapi bahasa Inggris selalu butuh I.",
+  "natural": "Untuk bayar dengan kartu, mencoba baju, menitipkan barang, dan sebagainya: saat kamu ingin memastikan “boleh tidak…?” di toko atau tempat umum.",
+  "stiff": "May I …? sangat sopan, dan dalam percakapan sehari-hari kadang terdengar agak kaku. Di toko, Can I …? atau Is it OK if I …? sudah cukup.",
+  "examples": [
+    {
+      "id": "cx-isitok-1",
+      "english": "Is it OK if I pay by card?",
+      "indonesian": "Boleh bayar pakai kartu?",
+      "chunks": [
+        {
+          "t": "Is it OK "
+        },
+        {
+          "t": "if I "
+        },
+        {
+          "t": "pay ",
+          "w": "w-pay"
+        },
+        {
+          "t": "by card?",
+          "w": "w-card"
+        }
+      ],
+      "gap": {
+        "before": "Is it OK ",
+        "answer": "if",
+        "after": " I pay by card?",
+        "options": [
+          "if",
+          "that",
+          "when"
+        ],
+        "why": "Is it OK if I …? artinya “boleh saya…?”. If di sini sama dengan “kalau”."
+      },
+      "audio": "audio/en/connectors/cx-isitok-1.mp3",
+      "tags": [
+        "bahasa sopan",
+        "Is it OK if I…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-isitok-2",
+      "english": "Is it OK if I try this on?",
+      "indonesian": "Boleh saya coba pakai yang ini?",
+      "chunks": [
+        {
+          "t": "Is it OK "
+        },
+        {
+          "t": "if I "
+        },
+        {
+          "t": "try this on?",
+          "w": "w-try-on"
+        }
+      ],
+      "gap": {
+        "before": "Is it OK if I try this ",
+        "answer": "on",
+        "after": "?",
+        "options": [
+          "on",
+          "in",
+          "up"
+        ],
+        "why": "Try on artinya “mencoba pakai”. This diletakkan di antara try dan on."
+      },
+      "audio": "audio/en/connectors/cx-isitok-2.mp3",
+      "tags": [
+        "bahasa sopan",
+        "Is it OK if I…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-isitok-3",
+      "english": "Do you mind if I use your bathroom?",
+      "indonesian": "Boleh saya numpang ke kamar mandi?",
+      "chunks": [
+        {
+          "t": "Do you mind "
+        },
+        {
+          "t": "if I "
+        },
+        {
+          "t": "use ",
+          "w": "w-use"
+        },
+        {
+          "t": "your bathroom?"
+        }
+      ],
+      "gap": {
+        "before": "Do you mind if I ",
+        "answer": "use",
+        "after": " your bathroom?",
+        "options": [
+          "use",
+          "borrow",
+          "rent"
+        ],
+        "why": "Kalau hanya dipakai di tempat, pakai use. Dalam bahasa Indonesia kita bisa bilang “pinjam toilet”, tapi borrow hanya untuk barang yang dibawa pergi lalu dikembalikan."
+      },
+      "audio": "audio/en/connectors/cx-isitok-3.mp3",
+      "tags": [
+        "bahasa sopan",
+        "Is it OK if I…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-isitok-4",
+      "english": "Is it OK if I leave my bag here?",
+      "indonesian": "Boleh saya titip tas di sini?",
+      "chunks": [
+        {
+          "t": "Is it OK "
+        },
+        {
+          "t": "if I "
+        },
+        {
+          "t": "leave ",
+          "w": "w-leave"
+        },
+        {
+          "t": "my bag here?",
+          "w": "w-bag"
+        }
+      ],
+      "gap": {
+        "before": "Is it ",
+        "answer": "OK",
+        "after": " if I leave my bag here?",
+        "options": [
+          "OK",
+          "good",
+          "sure"
+        ],
+        "why": "Is it OK if I …? adalah bentuk tetap: pakai OK, bukan good atau sure."
+      },
+      "audio": "audio/en/connectors/cx-isitok-4.mp3",
+      "tags": [
+        "bahasa sopan",
+        "Is it OK if I…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

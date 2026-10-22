@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "con-eventhough",
+  "connector": "even though",
+  "gloss": "walaupun, padahal",
+  "title": "even though — walaupun, padahal",
+  "pattern": "even though ＋ fakta , hal yang tak terduga",
+  "explanation": "even though artinya “walaupun” atau “padahal”. Lebih kuat daripada but, dan menunjukkan hal yang tidak terduga. Even if, yang bentuknya mirip, artinya “sekalipun”: untuk pengandaian yang belum terjadi. Bahasa Indonesia bisa memakai “walaupun” untuk keduanya, jadi bedakan: kenyataan → even though, pengandaian → even if.",
+  "natural": "Untuk menyebut kenyataan sambil menyampaikan hasil yang tidak terduga: Even though it's expensive, it's worth it. (Walaupun mahal, sepadan dengan harganya.)",
+  "stiff": "Although artinya sama, tapi agak seperti bahasa tulisan, mirip “meskipun”. Dalam percakapan, even though lebih sering dipakai.",
+  "examples": [
+    {
+      "id": "cx-eventhough-1",
+      "english": "Even though it's expensive, it's worth it.",
+      "indonesian": "Walaupun mahal, sepadan dengan harganya.",
+      "chunks": [
+        {
+          "t": "Even though "
+        },
+        {
+          "t": "it's expensive, ",
+          "w": "w-expensive"
+        },
+        {
+          "t": "it's worth it.",
+          "w": "w-worth"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Even though",
+        "after": " it's expensive, it's worth it.",
+        "options": [
+          "Even though",
+          "Even if",
+          "So"
+        ],
+        "why": "Mahal itu kenyataan, jadi even though. Even if artinya “sekalipun mahal”, sebuah pengandaian."
+      },
+      "audio": "audio/en/connectors/cx-eventhough-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "even though"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-eventhough-2",
+      "english": "I'm still hungry, even though I had a pie.",
+      "indonesian": "Saya masih lapar, padahal sudah makan pai.",
+      "chunks": [
+        {
+          "t": "I'm still hungry, "
+        },
+        {
+          "t": "even though "
+        },
+        {
+          "t": "I had a pie.",
+          "w": "w-pie"
+        }
+      ],
+      "gap": {
+        "before": "I'm still hungry, ",
+        "answer": "even though",
+        "after": " I had a pie.",
+        "options": [
+          "even though",
+          "even if",
+          "because"
+        ],
+        "why": "Sudah makan pai (kenyataan), tapi masih lapar: hal tak terduga seperti ini memakai even though."
+      },
+      "combine": {
+        "a": "I'm still hungry.",
+        "b": "I had a pie.",
+        "distractors": [
+          "because "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-eventhough-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "even though"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-eventhough-3",
+      "english": "We went tramping, even though it was raining.",
+      "indonesian": "Kami tetap pergi mendaki, walaupun hujan.",
+      "chunks": [
+        {
+          "t": "We went tramping, ",
+          "w": "w-tramping"
+        },
+        {
+          "t": "even though "
+        },
+        {
+          "t": "it was raining."
+        }
+      ],
+      "gap": {
+        "before": "We went tramping, ",
+        "answer": "even though",
+        "after": " it was raining.",
+        "options": [
+          "even though",
+          "so",
+          "unless"
+        ],
+        "why": "Hujan (kenyataan), tapi tetap pergi, jadi even though."
+      },
+      "combine": {
+        "a": "We went tramping.",
+        "b": "It was raining.",
+        "distractors": [
+          "so "
+        ]
+      },
+      "audio": "audio/en/connectors/cx-eventhough-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "even though"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-eventhough-4",
+      "english": "Even if it rains, we'll still go out.",
+      "indonesian": "Sekalipun hujan, kami tetap akan pergi.",
+      "chunks": [
+        {
+          "t": "Even if "
+        },
+        {
+          "t": "it rains, "
+        },
+        {
+          "t": "we'll still go out.",
+          "w": "w-go-out"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Even if",
+        "after": " it rains, we'll still go out.",
+        "options": [
+          "Even if",
+          "Even though",
+          "Because"
+        ],
+        "why": "Hujannya belum turun: ini pengandaian, jadi even if."
+      },
+      "audio": "audio/en/connectors/cx-eventhough-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "even though"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "id": "words-clothes",
+  "title": "Pakaian & ukuran",
+  "description": "Memilih baju, mencobanya, dan mencari ukuran yang pas. Kata yang perlu di toko pakaian.",
+  "items": [
+    {
+      "id": "w-size",
+      "english": "size",
+      "indonesian": "ukuran",
+      "pos": "noun",
+      "registerNotes": "What size are you? (Ukuranmu berapa?)",
+      "audio": "audio/en/words/w-size.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-small",
+      "english": "small",
+      "indonesian": "kecil, ukuran S",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-small.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-medium",
+      "english": "medium",
+      "indonesian": "ukuran M, sedang",
+      "pos": "adjective",
+      "registerNotes": "in a medium (ukuran M)",
+      "audio": "audio/en/words/w-medium.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-large",
+      "english": "large",
+      "indonesian": "besar, ukuran L",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-large.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bigger",
+      "english": "bigger",
+      "indonesian": "lebih besar",
+      "pos": "adjective",
+      "registerNotes": "Bentuk perbandingan dari big. a bigger size (ukuran yang lebih besar)",
+      "pitfallNote": "Bukan more big (dari lebih besar): untuk kata sifat pendek, tambahkan -er.",
+      "audio": "audio/en/words/w-bigger.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-smaller",
+      "english": "smaller",
+      "indonesian": "lebih kecil",
+      "pos": "adjective",
+      "registerNotes": "Bentuk perbandingan dari small. a smaller size (ukuran yang lebih kecil)",
+      "audio": "audio/en/words/w-smaller.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-try-on",
+      "english": "try on",
+      "indonesian": "mencoba (pakaian)",
+      "pos": "verb",
+      "registerNotes": "Can I try this on? (Boleh saya coba ini?) this masuk di antara try dan on.",
+      "audio": "audio/en/words/w-try-on.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-fitting-room",
+      "english": "fitting room",
+      "indonesian": "kamar pas",
+      "pos": "noun",
+      "registerNotes": "Disebut juga changing room.",
+      "audio": "audio/en/words/w-fitting-room.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-fit",
+      "english": "fit",
+      "indonesian": "pas (ukurannya)",
+      "pos": "verb",
+      "registerNotes": "It fits. (Pas.) / It doesn't fit. (Ukurannya tidak pas.)",
+      "audio": "audio/en/words/w-fit.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tight",
+      "english": "tight",
+      "indonesian": "sempit, ketat",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-tight.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-loose",
+      "english": "loose",
+      "indonesian": "longgar",
+      "pos": "adjective",
+      "pitfallNote": "Dibaca “lus”, dengan bunyi s. Jangan tertukar dengan lose (kehilangan), yang dibaca “luz”.",
+      "audio": "audio/en/words/w-loose.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-too",
+      "english": "too",
+      "indonesian": "terlalu",
+      "pos": "adverb",
+      "registerNotes": "too small (terlalu kecil) / a bit too big (agak kebesaran)",
+      "audio": "audio/en/words/w-too.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "too berarti “terlalu”, jadi ada masalahnya. Untuk memuji, pakai very atau really: It’s really nice, bukan It’s too nice."
+    },
+    {
+      "id": "w-jumper",
+      "english": "jumper",
+      "indonesian": "sweter",
+      "pos": "noun",
+      "pitfallNote": "Di Selandia Baru dan Inggris, sweter disebut jumper (di Amerika: sweater).",
+      "audio": "audio/en/words/w-jumper.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hoodie",
+      "english": "hoodie",
+      "indonesian": "hoodie (jaket bertudung)",
+      "pos": "noun",
+      "audio": "audio/en/words/w-hoodie.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-jacket",
+      "english": "jacket",
+      "indonesian": "jaket",
+      "pos": "noun",
+      "audio": "audio/en/words/w-jacket.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-trousers",
+      "english": "trousers",
+      "indonesian": "celana panjang",
+      "pos": "noun",
+      "registerNotes": "Selalu jamak: my trousers, a pair of trousers. Di Selandia Baru juga disebut pants.",
+      "audio": "audio/en/words/w-trousers.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-shorts",
+      "english": "shorts",
+      "indonesian": "celana pendek",
+      "pos": "noun",
+      "audio": "audio/en/words/w-shorts.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-t-shirt",
+      "english": "T-shirt",
+      "indonesian": "kaus",
+      "pos": "noun",
+      "audio": "audio/en/words/w-t-shirt.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-jandals",
+      "english": "jandals",
+      "indonesian": "sandal jepit",
+      "pos": "noun",
+      "registerNotes": "Kata khas Selandia Baru. Di Amerika: flip-flops.",
+      "audio": "audio/en/words/w-jandals.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-shoes",
+      "english": "shoes",
+      "indonesian": "sepatu",
+      "pos": "noun",
+      "registerNotes": "Sepatu selalu sepasang, jadi biasanya jamak: shoes.",
+      "audio": "audio/en/words/w-shoes.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-colour",
+      "english": "colour",
+      "indonesian": "warna",
+      "pos": "noun",
+      "registerNotes": "Do you have this in another colour? (Ada warna lain?)",
+      "pitfallNote": "Ejaan Inggris dan Selandia Baru. Di Amerika: color.",
+      "audio": "audio/en/words/w-colour.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-navy",
+      "english": "navy",
+      "indonesian": "biru tua, biru dongker",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-navy.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-look-good",
+      "english": "look good",
+      "indonesian": "cocok, kelihatan bagus",
+      "pos": "phrase",
+      "registerNotes": "It looks good on you! (Cocok sekali di kamu!)",
+      "audio": "audio/en/words/w-look-good.mp3",
+      "tags": [
+        "pakaian"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

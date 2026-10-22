@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "id": "immigration",
+  "title": "Pemeriksaan imigrasi",
+  "category": "airport",
+  "setting": "Kamu tiba di Bandara Auckland. Antrean panjang akhirnya maju, dan sekarang giliranmu di imigrasi.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "officer",
+      "english": "Next, please. Good afternoon.",
+      "indonesian": "Berikutnya, silakan. Selamat siang.",
+      "audio": "audio/en/scenario/immigration-n1.mp3",
+      "audioHint": "Next, please. Good afternoon.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Good afternoon. Here's my passport.",
+          "indonesian": "Selamat siang. Ini paspor saya.",
+          "feedback": "Menyapa sambil menyerahkan paspor membuat semuanya lancar.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "gre-01",
+          "quality": "good",
+          "feedback": "Sederhana dan cukup. Salam kepada petugas imigrasi boleh singkat.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "Thank you.",
+          "indonesian": "(terima kasih)",
+          "feedback": "Tidak kasar, tapi petugasnya belum melakukan apa-apa untukmu, jadi agak janggal. Balas dengan salam.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "officer",
+      "english": "What's the purpose of your visit?",
+      "indonesian": "Apa tujuan kunjungan Anda?",
+      "audio": "audio/en/scenario/immigration-n2.mp3",
+      "audioHint": "What's the purpose of your visit?",
+      "options": [
+        {
+          "phraseId": "air-02",
+          "quality": "good",
+          "feedback": "Jawaban yang sempurna. Menjawab dengan kalimat lengkap memberi kesan tenang.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "english": "Sightseeing.",
+          "indonesian": "Wisata.",
+          "feedback": "Satu kata pun sudah cukup. Segugup apa pun, pastikan kamu bisa mengucapkan yang ini.",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "english": "I'm a sightseeing.",
+          "indonesian": "(saya seorang wisata)",
+          "feedback": "I'm a ... artinya “saya seorang …”, jadi kamu seolah bilang dirimu adalah “sebuah wisata”. Jawab I'm here for sightseeing. atau cukup Sightseeing.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "officer",
+      "english": "How long are you staying?",
+      "indonesian": "Berapa lama Anda akan tinggal?",
+      "audio": "audio/en/scenario/immigration-n3.mp3",
+      "audioHint": "How long are you staying?",
+      "options": [
+        {
+          "phraseId": "air-03",
+          "quality": "good",
+          "feedback": "for + lama waktu adalah bentuk yang benar.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "Two weeks.",
+          "indonesian": "Dua minggu.",
+          "feedback": "Jawaban singkat juga wajar.",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "english": "Since two weeks.",
+          "indonesian": "(sejak dua minggu)",
+          "feedback": "since artinya “sejak”, jadi kedengarannya kamu sudah dua minggu di sini. Untuk lama waktu, pakai for.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "officer",
+      "english": "Where are you staying?",
+      "indonesian": "Anda menginap di mana?",
+      "audio": "audio/en/scenario/immigration-n4.mp3",
+      "audioHint": "Where are you staying?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "At the Harbour View Hotel, on Queen Street.",
+          "indonesian": "Di Harbour View Hotel, di Queen Street.",
+          "feedback": "Nama hotel dan lokasinya: jawaban terbaik. Lebih tenang lagi kalau bukti pemesanannya bisa langsung kamu tunjukkan.",
+          "next": "n5f"
+        },
+        {
+          "phraseId": "air-04",
+          "quality": "good",
+          "feedback": "Jawaban yang cukup. Kalau kamu bisa menyebut nama hotelnya, lebih meyakinkan.",
+          "next": "n5f"
+        },
+        {
+          "quality": "wrong",
+          "english": "I don't know yet.",
+          "indonesian": "(saya belum tahu)",
+          "feedback": "Kalau tempat menginapmu belum jelas, kamu bisa dibawa ke ruangan lain untuk ditanya lebih lanjut. Selalu siapkan alamat untuk malam pertama.",
+          "next": "n5f"
+        }
+      ]
+    },
+    "n5f": {
+      "speaker": "officer",
+      "english": "Are you carrying any food?",
+      "indonesian": "Apakah Anda membawa makanan?",
+      "audio": "audio/en/scenario/immigration-n5f.mp3",
+      "audioHint": "Are you carrying any food?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Yes, some snacks. I declared them on my card.",
+          "indonesian": "Ya, sedikit camilan. Sudah saya laporkan di kartu kedatangan.",
+          "feedback": "Selandia Baru sangat ketat soal makanan yang dibawa masuk. Kalau kamu melaporkannya dengan jujur, biasanya tidak ada masalah.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "air-07",
+          "quality": "good",
+          "feedback": "Kalau tidak membawa apa-apa, jawab ini. Periksa dulu tasmu, siapa tahu ada makanan yang terlupa.",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "english": "No food. Only rice crackers.",
+          "indonesian": "(tidak ada makanan. Cuma kerupuk.)",
+          "feedback": "Kerupuk juga makanan! Begitu juga sambal, abon, dan mi instan. Kalau membawanya, wajib dilaporkan. Tidak melapor bisa kena denda besar.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "officer",
+      "english": "Is this your first time in New Zealand?",
+      "indonesian": "Apakah ini pertama kalinya Anda ke Selandia Baru?",
+      "audio": "audio/en/scenario/immigration-n5.mp3",
+      "audioHint": "Is this your first time in New Zealand?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Yes, it is.",
+          "indonesian": "Ya, betul.",
+          "feedback": "Lebih sopan dan alami daripada hanya Yes.",
+          "next": "n6"
+        },
+        {
+          "quality": "good",
+          "english": "No, I came here two years ago.",
+          "indonesian": "Bukan, saya pernah ke sini dua tahun lalu.",
+          "feedback": "Bentuk lampau came sudah tepat. Bahasa Indonesia cukup dengan “dua tahun lalu”, tapi bahasa Inggris juga mengubah kata kerjanya: come menjadi came.",
+          "next": "n6"
+        },
+        {
+          "phraseId": "gre-09",
+          "quality": "awkward",
+          "feedback": "Jujur bilang tidak menangkap itu benar. Tapi kalau kamu minta Could you say that again?, percakapan bisa terus berjalan.",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "officer",
+      "english": "All right. Enjoy your stay.",
+      "indonesian": "Baik. Selamat menikmati kunjungan Anda.",
+      "audio": "audio/en/scenario/immigration-n6.mp3",
+      "audioHint": "All right. Enjoy your stay.",
+      "options": [
+        {
+          "phraseId": "gre-07",
+          "quality": "good",
+          "feedback": "Ucapkan terima kasih sambil tersenyum, dan kamu lolos. Kerja bagus!",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "english": "Thanks, you too.",
+          "indonesian": "(terima kasih, Anda juga)",
+          "feedback": "Sempurna untuk membalas Have a nice day!, tapi Enjoy your stay. adalah ucapan untuk pendatang, jadi you too tidak cocok.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "wrong",
+          "feedback": "“Sama-sama” adalah jawaban untuk orang yang berterima kasih. Di sini yang tepat adalah Thank you.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "indonesian": "Kamu lolos imigrasi. Pertanyaannya hampir selalu sama: tujuan, lama tinggal, tempat menginap, dan khusus di Selandia Baru, makanan. Siapkan jawaban untuk keempatnya, dan kamu bisa melewatinya dengan tenang.",
+      "end": true,
+      "options": []
+    }
+  }
+}

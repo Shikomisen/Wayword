@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-opinions",
+  "title": "Pendapat & pikiran",
+  "description": "Setuju, tidak setuju, mungkin, tergantung. Kata-kata untuk menyampaikan pendapatmu.",
+  "items": [
+    {
+      "id": "w-opinion",
+      "english": "opinion",
+      "indonesian": "pendapat",
+      "pos": "noun",
+      "registerNotes": "In my opinion, … (Menurut saya, …)",
+      "audio": "audio/en/words/w-opinion.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-agree",
+      "english": "agree",
+      "indonesian": "setuju",
+      "pos": "verb",
+      "registerNotes": "I agree. (Saya setuju.)",
+      "pitfallNote": "Bukan I’m agree. Agree adalah kata kerja, jadi tanpa am/is/are: I agree.",
+      "audio": "audio/en/words/w-agree.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-disagree",
+      "english": "disagree",
+      "indonesian": "tidak setuju",
+      "pos": "verb",
+      "registerNotes": "I disagree. terdengar agak tegas. I’m not sure I agree. lebih halus.",
+      "audio": "audio/en/words/w-disagree.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-suppose",
+      "english": "suppose",
+      "indonesian": "kira, rasa (menduga)",
+      "pos": "verb",
+      "registerNotes": "I suppose so. (Ya, mungkin begitu.)",
+      "audio": "audio/en/words/w-suppose.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-guess",
+      "english": "guess",
+      "indonesian": "kira, tebak",
+      "pos": "verb",
+      "registerNotes": "I guess so. (Mungkin, ya.), Guess what! (Eh, coba tebak!)",
+      "audio": "audio/en/words/w-guess.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-probably",
+      "english": "probably",
+      "indonesian": "kemungkinan besar",
+      "pos": "adverb",
+      "registerNotes": "Mungkin yang lebih yakin daripada maybe.",
+      "audio": "audio/en/words/w-probably.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-definitely",
+      "english": "definitely",
+      "indonesian": "pasti, tentu saja",
+      "pos": "adverb",
+      "registerNotes": "Definitely! (Tentu saja!)",
+      "audio": "audio/en/words/w-definitely.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-maybe",
+      "english": "maybe",
+      "indonesian": "mungkin, barangkali",
+      "pos": "adverb",
+      "audio": "audio/en/words/w-maybe.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-idea",
+      "english": "idea",
+      "indonesian": "ide, gagasan",
+      "pos": "noun",
+      "registerNotes": "Good idea! (Ide bagus!), I have no idea. (Aku sama sekali tidak tahu.)",
+      "audio": "audio/en/words/w-idea.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-point",
+      "english": "point",
+      "indonesian": "inti, maksud",
+      "pos": "noun",
+      "registerNotes": "Good point. (Iya, betul juga.), What’s the point? (Apa gunanya?)",
+      "audio": "audio/en/words/w-point.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-reason",
+      "english": "reason",
+      "indonesian": "alasan",
+      "pos": "noun",
+      "audio": "audio/en/words/w-reason.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-example",
+      "english": "example",
+      "indonesian": "contoh",
+      "pos": "noun",
+      "registerNotes": "for example (misalnya)",
+      "audio": "audio/en/words/w-example.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-prefer",
+      "english": "prefer",
+      "indonesian": "lebih suka",
+      "pos": "verb",
+      "registerNotes": "I prefer tea to coffee. (Aku lebih suka teh daripada kopi.)",
+      "audio": "audio/en/words/w-prefer.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Lebih suka bukan I more like. Bilang I prefer … atau I like … better."
+    },
+    {
+      "id": "w-depend",
+      "english": "depend",
+      "indonesian": "tergantung",
+      "pos": "verb",
+      "registerNotes": "It depends. (Tergantung.), It depends on the weather. (Tergantung cuaca.)",
+      "audio": "audio/en/words/w-depend.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Bukan It’s depend. Bilang It depends, dengan -s."
+    },
+    {
+      "id": "w-sure",
+      "english": "sure",
+      "indonesian": "yakin; tentu",
+      "pos": "adjective",
+      "registerNotes": "Sure! (Boleh!), I’m not sure. (Aku kurang tahu.)",
+      "audio": "audio/en/words/w-sure.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-true",
+      "english": "true",
+      "indonesian": "benar",
+      "pos": "adjective",
+      "registerNotes": "That’s true. (Memang benar.)",
+      "audio": "audio/en/words/w-true.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-obvious",
+      "english": "obvious",
+      "indonesian": "jelas, sudah pasti",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-obvious.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-fair",
+      "english": "fair",
+      "indonesian": "adil, masuk akal",
+      "pos": "adjective",
+      "registerNotes": "That’s fair. (Masuk akal.), That’s not fair! (Tidak adil!)",
+      "audio": "audio/en/words/w-fair.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-important",
+      "english": "important",
+      "indonesian": "penting",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-important.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-worth-it",
+      "english": "worth it",
+      "indonesian": "sepadan, layak",
+      "pos": "phrase",
+      "registerNotes": "It’s expensive, but it’s worth it. (Mahal, tapi sepadan.)",
+      "audio": "audio/en/words/w-worth-it.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-overrated",
+      "english": "overrated",
+      "indonesian": "tidak sebagus kata orang",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-overrated.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-honestly",
+      "english": "honestly",
+      "indonesian": "sejujurnya, jujur saja",
+      "pos": "adverb",
+      "registerNotes": "Honestly, I didn’t like it. (Jujur, aku tidak suka.)",
+      "audio": "audio/en/words/w-honestly.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-personally",
+      "english": "personally",
+      "indonesian": "secara pribadi, kalau aku sendiri",
+      "pos": "adverb",
+      "audio": "audio/en/words/w-personally.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-advice",
+      "english": "advice",
+      "indonesian": "nasihat, saran",
+      "pos": "noun",
+      "pitfallNote": "Bukan advices atau an advice. Bilang some advice, atau untuk menghitung: a piece of advice.",
+      "audio": "audio/en/words/w-advice.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-suggest",
+      "english": "suggest",
+      "indonesian": "menyarankan",
+      "pos": "verb",
+      "registerNotes": "I suggest we leave early. (Bagaimana kalau kita berangkat lebih awal?)",
+      "pitfallNote": "Bukan suggest me …. Bilang I suggest … atau Can you suggest a place?",
+      "audio": "audio/en/words/w-suggest.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-decide",
+      "english": "decide",
+      "indonesian": "memutuskan",
+      "pos": "verb",
+      "registerNotes": "I can’t decide. (Aku tidak bisa memutuskan.)",
+      "audio": "audio/en/words/w-decide.mp3",
+      "tags": [
+        "pendapat"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

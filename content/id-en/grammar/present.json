@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-present",
+  "connector": "I work / she works",
+  "gloss": "kebiasaan (simple present)",
+  "title": "I work, she works — simple present",
+  "pattern": "I・you・we・they ＋ kata kerja / he・she・it ＋ kata kerja-s",
+  "explanation": "Kebiasaan dan hal yang selalu benar diucapkan dengan simple present: I work in a café. (Saya bekerja di kafe.), I live in Auckland. Urutannya subjek–kata kerja–objek, sama seperti bahasa Indonesia. Bedanya, kata kerja bahasa Inggris bisa berubah: kalau subjeknya he, she, atau it (satu orang atau satu benda), kata kerjanya diberi -s: She works, He lives. have jadi has, go jadi goes, do jadi does.",
+  "natural": "Selalu dipakai saat memperkenalkan diri: I work at a hotel. / I live with my family. / I like cooking.",
+  "stiff": "Karena kata kerja bahasa Indonesia tidak berubah, -s untuk he dan she gampang terlupa: She work. salah, yang benar She works. Jangan juga menambahkan to be sebelum kata kerja: I am work at a hotel. salah, cukup I work at a hotel.",
+  "examples": [
+    {
+      "id": "gx-present-1",
+      "english": "I live in Auckland.",
+      "indonesian": "Saya tinggal di Auckland.",
+      "chunks": [
+        {
+          "t": "I ",
+          "w": "w-i"
+        },
+        {
+          "t": "live ",
+          "w": "w-live"
+        },
+        {
+          "t": "in Auckland."
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "live",
+        "after": " in Auckland.",
+        "options": [
+          "live",
+          "lives",
+          "living"
+        ],
+        "why": "Untuk I, kata kerjanya tetap: I live."
+      },
+      "audio": "audio/en/grammar/gx-present-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "I work / she works"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-present-2",
+      "english": "She works at a hospital.",
+      "indonesian": "Dia bekerja di rumah sakit.",
+      "chunks": [
+        {
+          "t": "She ",
+          "w": "w-she"
+        },
+        {
+          "t": "works ",
+          "w": "w-work"
+        },
+        {
+          "t": "at a hospital."
+        }
+      ],
+      "gap": {
+        "before": "She ",
+        "answer": "works",
+        "after": " at a hospital.",
+        "options": [
+          "works",
+          "work",
+          "working"
+        ],
+        "why": "Untuk she pakai -s: she works."
+      },
+      "audio": "audio/en/grammar/gx-present-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "I work / she works"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-present-3",
+      "english": "My dad cooks dinner every day.",
+      "indonesian": "Ayah saya memasak makan malam setiap hari.",
+      "chunks": [
+        {
+          "t": "My dad ",
+          "w": "w-father"
+        },
+        {
+          "t": "cooks ",
+          "w": "w-cook"
+        },
+        {
+          "t": "dinner every day."
+        }
+      ],
+      "gap": {
+        "before": "My dad ",
+        "answer": "cooks",
+        "after": " dinner every day.",
+        "options": [
+          "cooks",
+          "cook",
+          "cooking"
+        ],
+        "why": "my dad = he (satu orang), jadi pakai -s."
+      },
+      "audio": "audio/en/grammar/gx-present-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "I work / she works"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-present-4",
+      "english": "We have a dog.",
+      "indonesian": "Kami punya anjing.",
+      "chunks": [
+        {
+          "t": "We ",
+          "w": "w-we"
+        },
+        {
+          "t": "have ",
+          "w": "w-have"
+        },
+        {
+          "t": "a dog."
+        }
+      ],
+      "gap": {
+        "before": "We ",
+        "answer": "have",
+        "after": " a dog.",
+        "options": [
+          "have",
+          "has",
+          "haves"
+        ],
+        "why": "Untuk we pakai have. Kalau he atau she, has."
+      },
+      "audio": "audio/en/grammar/gx-present-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "I work / she works"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

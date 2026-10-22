@@ -11,19 +11,28 @@
 
 export const CACHE_NAME = 'wayword-translator';
 
-/** This course's two directions: say (speaker → target) and read (target → speaker), each null if missing. */
+/**
+ * The models that translate one language into another, in order: the direct
+ * one (['en-id']), or through English when Mozilla has no direct model
+ * (['ja-en', 'en-id']). Null when there's neither.
+ */
+export function routeFor(pairs = {}, from, to) {
+  if (pairs[`${from}-${to}`]) return [`${from}-${to}`];
+  if (from !== 'en' && to !== 'en' && pairs[`${from}-en`] && pairs[`en-${to}`]) return [`${from}-en`, `en-${to}`];
+  return null;
+}
+
+/** This course's two directions, as routes: say (speaker → target) and read (target → speaker), each null if missing. */
 export function directionsFor(content) {
   const pairs = content.translator?.pairs || {};
   const { speaker, target } = content.course;
-  const say = `${speaker}-${target}`;
-  const read = `${target}-${speaker}`;
-  return { say: pairs[say] ? say : null, read: pairs[read] ? read : null };
+  return { say: routeFor(pairs, speaker, target), read: routeFor(pairs, target, speaker) };
 }
 
-/** Every file the course's translator needs: the engine, its loader and each direction's model. */
-export function filesFor(registry, pairs) {
+/** Every file the course's translator needs: the engine, its loader and each model on its routes. */
+export function filesFor(registry, routes) {
   const files = [registry.engine.loader, registry.engine.wasm,
-    ...pairs.filter(Boolean).flatMap((pair) => Object.values(registry.pairs[pair].files))];
+    ...routes.filter(Boolean).flat().flatMap((pair) => Object.values(registry.pairs[pair].files))];
   return [...new Map(files.map((f) => [f.path, f])).values()];
 }
 
@@ -184,17 +193,22 @@ function send(message) {
   });
 }
 
-/** Translate text in one direction ('en-ja'…): { text, ms }. */
-export function translate(registry, pair, text) {
-  return send({ type: 'translate', registry, pair, text });
+/** Translate text along a route (['en-ja'], or ['ja-en', 'en-id']): { text, ms }. */
+export function translate(registry, route, text) {
+  return send({ type: 'translate', registry, route, text });
 }
 
-/** Load a direction's model ahead of use, so the first translation is quick. */
-export function warm(registry, pair) {
-  return send({ type: 'warm', registry, pair }).catch(() => {});
+/** Load a route's models ahead of use, so the first translation is quick. */
+export function warm(registry, route) {
+  return send({ type: 'warm', registry, route }).catch(() => {});
 }
 
-/** Japanese wants full-width ？ and ！; the models sometimes give the ASCII ones. */
+/**
+ * Japanese wants full-width ？ and ！; the models sometimes give the ASCII ones.
+ * Indonesian spells di mana, ke mana and dari mana as two words (EYD); the models often join them.
+ */
 export function tidy(text, lang) {
-  return lang === 'ja' ? String(text).replace(/\?/g, '？').replace(/!/g, '！') : String(text);
+  if (lang === 'ja') return String(text).replace(/\?/g, '？').replace(/!/g, '！');
+  if (lang === 'id') return String(text).replace(/\b([Dd]i|[Kk]e|[Dd]ari)mana\b/g, '$1 mana');
+  return String(text);
 }

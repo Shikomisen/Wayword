@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "clothes",
+  "title": "Mencoba baju",
+  "category": "shopping",
+  "setting": "Toko baju di Wellington. Kamu menemukan jaket yang menarik.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "staff",
+      "english": "Hi! Are you after anything in particular?",
+      "indonesian": "Halo! Ada yang sedang dicari?",
+      "audio": "audio/en/scenario/clothes-n1.mp3",
+      "audioHint": "Hi! Are you after anything in particular?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Yes, can I try this jacket on?",
+          "indonesian": "Ya, boleh saya coba jaket ini?",
+          "feedback": "Jawaban bagus: maksudmu langsung jelas.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "sho-03",
+          "quality": "good",
+          "feedback": "Sempurna kalau diucapkan sambil menunjukkan baju yang kamu pegang.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "Fitting, please.",
+          "indonesian": "(fitting, tolong)",
+          "feedback": "Di Indonesia kata “fitting” biasa dipakai, tapi dalam bahasa Inggris satu kata saja sulit dimengerti. Ucapkan dalam kalimat: Can I try this on?",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "staff",
+      "english": "Of course! The fitting rooms are just down the back.",
+      "indonesian": "Tentu! Kamar pasnya ada di bagian belakang.",
+      "audio": "audio/en/scenario/clothes-n2.mp3",
+      "audioHint": "Of course! The fitting rooms are just down the back.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Great, thanks.",
+          "indonesian": "Oke, terima kasih.",
+          "feedback": "Ini sudah cukup.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "sho-12",
+          "quality": "good",
+          "feedback": "Kalau tadi kurang tertangkap, wajar menanyakan lagi tempatnya.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "gre-11",
+          "quality": "awkward",
+          "feedback": "Tidak salah, tapi kalimatnya pendek, jadi cukup bilang Sorry? dulu untuk minta diulang.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "staff",
+      "english": "How did you go with that?",
+      "indonesian": "Bagaimana, cocok?",
+      "audio": "audio/en/scenario/clothes-n3.mp3",
+      "audioHint": "How did you go with that?",
+      "options": [
+        {
+          "phraseId": "sho-13",
+          "quality": "good",
+          "feedback": "Cara alami untuk bilang ukurannya tidak pas.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "It doesn't fit.",
+          "indonesian": "Ukurannya tidak pas.",
+          "feedback": "fit artinya “ukurannya pas”. Singkat dan jelas.",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "english": "I went well.",
+          "indonesian": "(saya berjalan dengan baik)",
+          "feedback": "Di Selandia Baru dan Australia, How did you go? artinya “Bagaimana hasilnya?”. Kamu tidak perlu menjawab dengan go. Jawab saja It's a bit too small.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "staff",
+      "english": "Oh no. Would you like to try the next size up?",
+      "indonesian": "Wah, sayang. Mau coba satu ukuran lebih besar?",
+      "audio": "audio/en/scenario/clothes-n4.mp3",
+      "audioHint": "Oh no. Would you like to try the next size up?",
+      "options": [
+        {
+          "phraseId": "sho-11",
+          "quality": "good",
+          "feedback": "Cara umum untuk minta ukuran yang lebih besar.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "english": "Yes, please!",
+          "indonesian": "Ya, boleh!",
+          "feedback": "Untuk menerima tawaran, ini sudah cukup.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "english": "More big, please.",
+          "indonesian": "(lebih besar, tolong)",
+          "feedback": "Maksudnya sampai, tapi “lebih besar” tidak diterjemahkan menjadi more big. Dalam bahasa Inggris big berubah menjadi bigger: a bigger size.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "staff",
+      "english": "Here you go — that's a medium. It's on special today, too.",
+      "indonesian": "Ini dia, ukuran M. Hari ini juga sedang diskon.",
+      "audio": "audio/en/scenario/clothes-n5.mp3",
+      "audioHint": "Here you go — that's a medium. It's on special today, too.",
+      "options": [
+        {
+          "phraseId": "sho-04",
+          "quality": "good",
+          "feedback": "Kalau sudah memutuskan membeli, pakai ini.",
+          "next": "n6"
+        },
+        {
+          "phraseId": "num-01",
+          "quality": "good",
+          "feedback": "Menanyakan harga dulu sebelum memutuskan juga wajar.",
+          "next": "n6"
+        },
+        {
+          "quality": "wrong",
+          "english": "It's for sale?",
+          "indonesian": "(ini dijual?)",
+          "feedback": "for sale artinya “dijual” (barangnya bisa dibeli), bukan “diskon”. Di Indonesia “sale” berarti diskon, jadi mudah tertukar. Untuk menanyakan diskon: Is it on special?",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "staff",
+      "english": "That's eighty-nine dollars. EFTPOS or credit?",
+      "indonesian": "Jadi delapan puluh sembilan dolar. EFTPOS atau kartu kredit?",
+      "audio": "audio/en/scenario/clothes-n6.mp3",
+      "audioHint": "That's eighty-nine dollars. EFTPOS or credit?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "EFTPOS, please.",
+          "indonesian": "Pakai debit.",
+          "feedback": "Di Selandia Baru, bayar dengan kartu debit disebut EFTPOS.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "english": "Credit, please.",
+          "indonesian": "Pakai kartu kredit.",
+          "feedback": "Ini sudah cukup.",
+          "next": "end"
+        },
+        {
+          "phraseId": "sho-05",
+          "quality": "awkward",
+          "feedback": "Dimengerti, tapi kasirnya sudah tahu kamu bayar pakai kartu. Jawab saja EFTPOS atau credit.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "indonesian": "Belanja selesai! Untuk mencoba baju: Can I try this on?; untuk ukuran: Do you have this in a bigger size?. Di kasir Selandia Baru kamu akan sering mendengar EFTPOS (bayar dengan kartu debit).",
+      "end": true,
+      "options": []
+    }
+  }
+}

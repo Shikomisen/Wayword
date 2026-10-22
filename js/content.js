@@ -23,6 +23,7 @@ import { currentCourse, currentCourseId } from './course.js';
 import { toSegments, rubyText } from './ruby.js';
 import * as store from './store.js';
 import { t } from './i18n.js';
+import { routeFor } from './translator.js';
 
 const caches = new Map();
 
@@ -94,20 +95,21 @@ async function fetchJSON(path) {
  * session, targetNode's ruby rendering, the furigana/romaji toggles,
  * the audio button — renders them with no special-casing.
  *
- * The only thing synthesised here is a display `english` for kana, which
- * genuinely has no meaning to show; the JSON keeps `english: null` and
+ * The only thing synthesised here is a display meaning for kana, which
+ * genuinely has none: "reads “a”", in the learner's language. The JSON keeps
+ * the course's meaning field (`english`, `indonesian`…) null, and
  * `declaredMeaning` preserves whatever the file actually declared. (The
  * generic `meaning` added afterwards is the display gloss, like phrases.)
  */
-function normaliseCharacter(c, set) {
+function normaliseCharacter(c, set, meaningField) {
   return {
     ...c,
     kind: 'character',
     categoryId: set.id,
     categoryTitle: set.title,
     script: set.script,
-    declaredMeaning: c.english ?? null,
-    english: c.english ?? `reads “${c.romaji}”`,
+    declaredMeaning: c[meaningField] ?? null,
+    [meaningField]: c[meaningField] ?? t('reading.reads', { romaji: c.romaji }),
   };
 }
 
@@ -137,7 +139,7 @@ export async function loadContent() {
   // Not having it — an old cache, or no connection yet — just means no translator.
   const translator = await fetchJSON('mt/translator.json').catch(() => null);
   const directions = translator
-    ? [`${course.speaker}-${course.target}`, `${course.target}-${course.speaker}`].filter((pair) => translator.pairs?.[pair])
+    ? [routeFor(translator.pairs, course.speaker, course.target), routeFor(translator.pairs, course.target, course.speaker)].filter(Boolean)
     : [];
   const normalise = makeNormaliser(manifest, course);
   const register = withRegister(manifest);
@@ -262,7 +264,7 @@ export async function loadContent() {
   }
 
   for (const set of loadedSets) {
-    const normalised = set.characters.map((c) => normalise(normaliseCharacter(c, set)));
+    const normalised = set.characters.map((c) => normalise(normaliseCharacter(c, set, fields.meaning)));
     bySet.set(set.id, { ...set, characters: normalised });
     for (const c of normalised) {
       characters.set(c.id, c);

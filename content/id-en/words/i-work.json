@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-work",
+  "title": "Pekerjaan",
+  "description": "Rekan kerja, shift, tenggat, wawancara. Kata-kata untuk membicarakan pekerjaan dan kerja paruh waktu.",
+  "items": [
+    {
+      "id": "w-job",
+      "english": "job",
+      "indonesian": "pekerjaan",
+      "pos": "noun",
+      "registerNotes": "Kalau ditanya What do you do? (Kamu kerja apa?), jawab I work at ….",
+      "pitfallNote": "work tidak bisa dihitung, job bisa: a job, two jobs. Jadi bukan a work, dan jangan lupa a: I’ve got a job.",
+      "audio": "audio/en/words/w-job.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-colleague",
+      "english": "colleague",
+      "indonesian": "rekan kerja",
+      "pos": "noun",
+      "registerNotes": "Dalam bahasa santai juga workmate.",
+      "audio": "audio/en/words/w-colleague.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-boss",
+      "english": "boss",
+      "indonesian": "atasan, bos",
+      "pos": "noun",
+      "registerNotes": "Di Selandia Baru lebih sering disebut manager.",
+      "audio": "audio/en/words/w-boss.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-meeting",
+      "english": "meeting",
+      "indonesian": "rapat",
+      "pos": "noun",
+      "audio": "audio/en/words/w-meeting.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-deadline",
+      "english": "deadline",
+      "indonesian": "tenggat, batas waktu",
+      "pos": "noun",
+      "audio": "audio/en/words/w-deadline.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-salary",
+      "english": "salary",
+      "indonesian": "gaji (bulanan atau tahunan)",
+      "pos": "noun",
+      "audio": "audio/en/words/w-salary.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-wage",
+      "english": "wage",
+      "indonesian": "upah, bayaran per jam",
+      "pos": "noun",
+      "registerNotes": "the minimum wage (upah minimum)",
+      "audio": "audio/en/words/w-wage.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shift",
+      "english": "shift",
+      "indonesian": "shift, giliran kerja",
+      "pos": "noun",
+      "registerNotes": "I’m on the early shift. (Saya dapat shift pagi.)",
+      "audio": "audio/en/words/w-shift.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-day-off",
+      "english": "day off",
+      "indonesian": "hari libur",
+      "pos": "noun",
+      "registerNotes": "Tomorrow’s my day off. (Besok saya libur.)",
+      "audio": "audio/en/words/w-day-off.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-overtime",
+      "english": "overtime",
+      "indonesian": "lembur",
+      "pos": "noun",
+      "registerNotes": "work overtime (kerja lembur)",
+      "audio": "audio/en/words/w-overtime.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-interview",
+      "english": "interview",
+      "indonesian": "wawancara",
+      "pos": "noun",
+      "registerNotes": "a job interview (wawancara kerja)",
+      "audio": "audio/en/words/w-interview.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-apply",
+      "english": "apply",
+      "indonesian": "melamar, mendaftar",
+      "pos": "verb",
+      "registerNotes": "apply for a job (melamar kerja)",
+      "audio": "audio/en/words/w-apply.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hire",
+      "english": "hire",
+      "indonesian": "mempekerjakan, merekrut",
+      "pos": "verb",
+      "audio": "audio/en/words/w-hire.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-quit",
+      "english": "quit",
+      "indonesian": "berhenti (kerja)",
+      "pos": "verb",
+      "registerNotes": "I quit my job. (Saya berhenti dari pekerjaan saya.) Bentuk lampaunya juga quit.",
+      "audio": "audio/en/words/w-quit.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-experience",
+      "english": "experience",
+      "indonesian": "pengalaman",
+      "pos": "noun",
+      "registerNotes": "work experience (pengalaman kerja)",
+      "audio": "audio/en/words/w-experience.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-skill",
+      "english": "skill",
+      "indonesian": "keterampilan, keahlian",
+      "pos": "noun",
+      "audio": "audio/en/words/w-skill.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-customer",
+      "english": "customer",
+      "indonesian": "pelanggan",
+      "pos": "noun",
+      "audio": "audio/en/words/w-customer.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-office",
+      "english": "office",
+      "indonesian": "kantor",
+      "pos": "noun",
+      "audio": "audio/en/words/w-office.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-project",
+      "english": "project",
+      "indonesian": "proyek",
+      "pos": "noun",
+      "audio": "audio/en/words/w-project.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-email",
+      "english": "email",
+      "indonesian": "email, surel",
+      "pos": "noun",
+      "audio": "audio/en/words/w-email.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-text",
+      "english": "text",
+      "indonesian": "mengirim pesan (lewat ponsel)",
+      "pos": "verb",
+      "registerNotes": "I’ll text you. (Nanti aku kirim pesan.)",
+      "audio": "audio/en/words/w-text.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-retire",
+      "english": "retire",
+      "indonesian": "pensiun",
+      "pos": "verb",
+      "audio": "audio/en/words/w-retire.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-promotion",
+      "english": "promotion",
+      "indonesian": "kenaikan jabatan, promosi",
+      "pos": "noun",
+      "audio": "audio/en/words/w-promotion.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-training",
+      "english": "training",
+      "indonesian": "pelatihan",
+      "pos": "noun",
+      "audio": "audio/en/words/w-training.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-uniform",
+      "english": "uniform",
+      "indonesian": "seragam",
+      "pos": "noun",
+      "audio": "audio/en/words/w-uniform.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-break",
+      "english": "break",
+      "indonesian": "istirahat, jeda",
+      "pos": "noun",
+      "registerNotes": "a lunch break (istirahat makan siang), take a break (istirahat sebentar)",
+      "audio": "audio/en/words/w-break.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

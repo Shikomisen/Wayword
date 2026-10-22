@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "id": "words-first-people",
+  "title": "Orang & keluarga",
+  "description": "Kata paling dasar untuk keluarga dan orang-orang di sekitarmu.",
+  "items": [
+    {
+      "id": "w-mother",
+      "english": "mother",
+      "indonesian": "ibu",
+      "pos": "noun",
+      "registerNotes": "Di dalam keluarga: mum (Selandia Baru, Inggris), mom (Amerika).",
+      "audio": "audio/en/words/w-mother.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-father",
+      "english": "father",
+      "indonesian": "ayah, bapak",
+      "pos": "noun",
+      "registerNotes": "Di dalam keluarga: dad.",
+      "audio": "audio/en/words/w-father.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-parents",
+      "english": "parents",
+      "indonesian": "orang tua (ayah dan ibu)",
+      "pos": "noun",
+      "registerNotes": "my parents (orang tuaku). Kalau hanya satu: a parent.",
+      "audio": "audio/en/words/w-parents.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-brother",
+      "english": "brother",
+      "indonesian": "saudara laki-laki (kakak, adik)",
+      "pos": "noun",
+      "registerNotes": "Bahasa Inggris membedakan laki-laki dan perempuan, tapi tidak membedakan kakak dan adik. Kalau perlu: older brother (kakak laki-laki), younger brother (adik laki-laki).",
+      "audio": "audio/en/words/w-brother.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sister",
+      "english": "sister",
+      "indonesian": "saudara perempuan (kakak, adik)",
+      "pos": "noun",
+      "registerNotes": "Kakak perempuan: older sister, adik perempuan: younger sister. Biasanya cukup my sister.",
+      "audio": "audio/en/words/w-sister.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-son",
+      "english": "son",
+      "indonesian": "anak laki-laki",
+      "pos": "noun",
+      "audio": "audio/en/words/w-son.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-daughter",
+      "english": "daughter",
+      "indonesian": "anak perempuan",
+      "pos": "noun",
+      "audio": "audio/en/words/w-daughter.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-husband",
+      "english": "husband",
+      "indonesian": "suami",
+      "pos": "noun",
+      "audio": "audio/en/words/w-husband.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-wife",
+      "english": "wife",
+      "indonesian": "istri",
+      "pos": "noun",
+      "audio": "audio/en/words/w-wife.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-partner",
+      "english": "partner",
+      "indonesian": "pasangan",
+      "pos": "noun",
+      "registerNotes": "Bisa untuk yang sudah menikah maupun belum, laki-laki maupun perempuan.",
+      "audio": "audio/en/words/w-partner.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-child",
+      "english": "child",
+      "indonesian": "anak",
+      "pos": "noun",
+      "registerNotes": "Bentuk jamaknya children (bukan childs). Dalam percakapan, kid (kids) juga sering dipakai.",
+      "audio": "audio/en/words/w-child.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-baby",
+      "english": "baby",
+      "indonesian": "bayi",
+      "pos": "noun",
+      "audio": "audio/en/words/w-baby.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-family",
+      "english": "family",
+      "indonesian": "keluarga",
+      "pos": "noun",
+      "registerNotes": "my family (keluargaku).",
+      "audio": "audio/en/words/w-family.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-friend",
+      "english": "friend",
+      "indonesian": "teman",
+      "pos": "noun",
+      "registerNotes": "a friend of mine (salah satu temanku).",
+      "audio": "audio/en/words/w-friend.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-boyfriend",
+      "english": "boyfriend",
+      "indonesian": "pacar (laki-laki)",
+      "pos": "noun",
+      "audio": "audio/en/words/w-boyfriend.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-girlfriend",
+      "english": "girlfriend",
+      "indonesian": "pacar (perempuan)",
+      "pos": "noun",
+      "pitfallNote": "Kata pacar dalam bahasa Inggris harus dipilih: boyfriend (laki-laki) atau girlfriend (perempuan). Kalau tidak tahu, pakai partner.",
+      "audio": "audio/en/words/w-girlfriend.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-man",
+      "english": "man",
+      "indonesian": "laki-laki, pria",
+      "pos": "noun",
+      "registerNotes": "Bentuk jamaknya men.",
+      "audio": "audio/en/words/w-man.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-woman",
+      "english": "woman",
+      "indonesian": "perempuan, wanita",
+      "pos": "noun",
+      "registerNotes": "Bentuk jamaknya women (dibaca “wimin”).",
+      "audio": "audio/en/words/w-woman.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-people",
+      "english": "people",
+      "indonesian": "orang, orang-orang",
+      "pos": "noun",
+      "registerNotes": "Bentuk jamak dari person: three people (tiga orang), bukan three person.",
+      "audio": "audio/en/words/w-people.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-name",
+      "english": "name",
+      "indonesian": "nama",
+      "pos": "noun",
+      "registerNotes": "What’s your name? (Siapa namamu?), My name is … (Nama saya …).",
+      "audio": "audio/en/words/w-name.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-teacher",
+      "english": "teacher",
+      "indonesian": "guru",
+      "pos": "noun",
+      "pitfallNote": "Guru tidak dipanggil Teacher! (seperti Bu Guru atau Pak Guru). Panggil dengan namanya: Mr Smith, Ms Lee.",
+      "audio": "audio/en/words/w-teacher.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-student",
+      "english": "student",
+      "indonesian": "pelajar, murid, mahasiswa",
+      "pos": "noun",
+      "audio": "audio/en/words/w-student.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-neighbour",
+      "english": "neighbour",
+      "indonesian": "tetangga",
+      "pos": "noun",
+      "registerNotes": "Ejaan Amerika: neighbor.",
+      "audio": "audio/en/words/w-neighbour.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-grandmother",
+      "english": "grandmother",
+      "indonesian": "nenek",
+      "pos": "noun",
+      "registerNotes": "Di dalam keluarga: grandma, nana.",
+      "audio": "audio/en/words/w-grandmother.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-grandfather",
+      "english": "grandfather",
+      "indonesian": "kakek",
+      "pos": "noun",
+      "registerNotes": "Di dalam keluarga: grandpa, grandad.",
+      "audio": "audio/en/words/w-grandfather.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

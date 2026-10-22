@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-used-to",
+  "connector": "used to",
+  "gloss": "dulu …",
+  "title": "used to — dulu sering …, dulu …",
+  "pattern": "I used to … ／ I didn’t use to … ／ Did you use to …?",
+  "explanation": "used to + kata kerja dasar berarti “dulu (sering) …, tapi sekarang tidak lagi”, mirip “dulu” dalam bahasa Indonesia: I used to live in Osaka. (Dulu saya tinggal di Osaka.) Di kalimat negatif dan pertanyaan, bentuknya use to (tanpa d): I didn’t use to like coffee. Untuk kejadian yang hanya sekali, cukup pakai past tense biasa.",
+  "natural": "Untuk bercerita tentang kebiasaan atau perubahan: I used to play rugby. (Dulu saya main rugbi.)",
+  "stiff": "“Sudah terbiasa …” adalah ungkapan lain, yaitu be used to + -ing: I’m used to driving on the left. (Saya sudah terbiasa menyetir di jalur kiri.) Jangan sampai tertukar.",
+  "examples": [
+    {
+      "id": "gx-used-to-1",
+      "english": "I used to live in Osaka.",
+      "indonesian": "Dulu saya tinggal di Osaka.",
+      "chunks": [
+        {
+          "t": "I used to live ",
+          "w": "w-live"
+        },
+        {
+          "t": "in Osaka."
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "used to",
+        "after": " live in Osaka.",
+        "options": [
+          "used to",
+          "use to",
+          "was used to"
+        ],
+        "why": "“Dulu …” memakai used to + kata kerja dasar."
+      },
+      "audio": "audio/en/grammar/gx-used-to-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "used to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-used-to-2",
+      "english": "She used to work in a café.",
+      "indonesian": "Dulu dia bekerja di kafe.",
+      "chunks": [
+        {
+          "t": "She used to work ",
+          "w": "w-work"
+        },
+        {
+          "t": "in a café."
+        }
+      ],
+      "gap": {
+        "before": "She used to ",
+        "answer": "work",
+        "after": " in a café.",
+        "options": [
+          "work",
+          "working",
+          "worked"
+        ],
+        "why": "Setelah used to pakai kata kerja dasar, tanpa -ing atau -ed."
+      },
+      "audio": "audio/en/grammar/gx-used-to-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "used to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-used-to-3",
+      "english": "I didn’t use to like coffee.",
+      "indonesian": "Dulu saya tidak suka kopi.",
+      "chunks": [
+        {
+          "t": "I didn’t use to like ",
+          "w": "w-like"
+        },
+        {
+          "t": "coffee.",
+          "w": "w-coffee"
+        }
+      ],
+      "gap": {
+        "before": "I didn’t ",
+        "answer": "use to",
+        "after": " like coffee.",
+        "options": [
+          "use to",
+          "used to",
+          "using"
+        ],
+        "why": "Setelah didn’t pakai use to (tanpa d). Pengucapannya sama."
+      },
+      "audio": "audio/en/grammar/gx-used-to-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "used to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-used-to-4",
+      "english": "Did you use to play any sports?",
+      "indonesian": "Dulu kamu main olahraga?",
+      "chunks": [
+        {
+          "t": "Did you use to play ",
+          "w": "w-play"
+        },
+        {
+          "t": "any sports?"
+        }
+      ],
+      "gap": {
+        "before": "Did you ",
+        "answer": "use to",
+        "after": " play any sports?",
+        "options": [
+          "use to",
+          "used to",
+          "using to"
+        ],
+        "why": "Di pertanyaan juga, setelah did pakai use to."
+      },
+      "audio": "audio/en/grammar/gx-used-to-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "used to"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

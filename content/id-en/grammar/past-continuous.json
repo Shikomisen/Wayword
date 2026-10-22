@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-past-continuous",
+  "connector": "was -ing",
+  "gloss": "sedang … (waktu itu)",
+  "title": "was / were + -ing — sedang … waktu itu (past continuous)",
+  "pattern": "I was …ing when … ／ What were you doing?",
+  "explanation": "Sesuatu yang “sedang berlangsung” pada suatu saat di masa lalu diucapkan dengan was / were + -ing. Sering dipakai bersama when: kegiatan yang sedang berjalan (was -ing) dipotong oleh kejadian singkat (past tense): I was cooking when you called. (Waktu kamu menelepon, aku sedang masak.) Bahasa Indonesia cukup memakai “sedang” atau “lagi”; bahasa Inggris perlu was / were dan -ing.",
+  "natural": "Sebagai latar saat bercerita: I was walking home when it started to rain. (Aku sedang jalan pulang waktu hujan mulai turun.)",
+  "stiff": "Kata kerja keadaan seperti know, like, want tidak diberi -ing: bukan I was knowing him., tapi I knew him.",
+  "examples": [
+    {
+      "id": "gx-past-continuous-1",
+      "english": "I was cooking when you called.",
+      "indonesian": "Waktu kamu menelepon, saya sedang memasak.",
+      "chunks": [
+        {
+          "t": "I was cooking ",
+          "w": "w-cook"
+        },
+        {
+          "t": "when you called.",
+          "w": "w-call"
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "was cooking",
+        "after": " when you called.",
+        "options": [
+          "was cooking",
+          "cooked",
+          "am cooking"
+        ],
+        "why": "Yang “sedang” terjadi waktu telepon masuk memakai was + -ing."
+      },
+      "audio": "audio/en/grammar/gx-past-continuous-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "was -ing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-past-continuous-2",
+      "english": "It was raining when we arrived.",
+      "indonesian": "Waktu kami sampai, sedang hujan.",
+      "chunks": [
+        {
+          "t": "It was raining ",
+          "w": "w-rain"
+        },
+        {
+          "t": "when we arrived."
+        }
+      ],
+      "gap": {
+        "before": "It was ",
+        "answer": "raining",
+        "after": " when we arrived.",
+        "options": [
+          "raining",
+          "rain",
+          "rained"
+        ],
+        "why": "Setelah was pakai -ing. Perhatikan subjek It, yang tidak ada di “sedang hujan”."
+      },
+      "audio": "audio/en/grammar/gx-past-continuous-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "was -ing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-past-continuous-3",
+      "english": "What were you doing at ten last night?",
+      "indonesian": "Jam sepuluh tadi malam kamu sedang apa?",
+      "chunks": [
+        {
+          "t": "What were you doing ",
+          "w": "w-do"
+        },
+        {
+          "t": "at ten "
+        },
+        {
+          "t": "last night?",
+          "w": "w-night"
+        }
+      ],
+      "gap": {
+        "before": "What ",
+        "answer": "were",
+        "after": " you doing at ten last night?",
+        "options": [
+          "were",
+          "was",
+          "did"
+        ],
+        "why": "Bentuk lampau be untuk you adalah were."
+      },
+      "audio": "audio/en/grammar/gx-past-continuous-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "was -ing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-past-continuous-4",
+      "english": "She was waiting at the bus stop.",
+      "indonesian": "Dia sedang menunggu di halte bus.",
+      "chunks": [
+        {
+          "t": "She was waiting ",
+          "w": "w-wait"
+        },
+        {
+          "t": "at the bus stop."
+        }
+      ],
+      "gap": {
+        "before": "She ",
+        "answer": "was",
+        "after": " waiting at the bus stop.",
+        "options": [
+          "was",
+          "were",
+          "is"
+        ],
+        "why": "Bentuk lampau be untuk she adalah was."
+      },
+      "audio": "audio/en/grammar/gx-past-continuous-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "was -ing"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "con-abit",
+  "connector": "a bit / kind of",
+  "gloss": "agak, lumayan",
+  "title": "a bit / kind of — agak, lumayan",
+  "pattern": "a bit ＋ kata sifat ／ kind of ＋ kata sifat",
+  "explanation": "a bit dan kind of adalah kata yang memperhalus ucapan. a bit artinya “agak” atau “sedikit”, kind of artinya “lumayan” atau “agak-agak”. Daripada bilang tegas It's expensive. (Mahal), It's a bit expensive. (Agak mahal) terdengar lebih halus, persis seperti “agak” dalam bahasa Indonesia.",
+  "natural": "Sebagai bantalan saat menyampaikan keluhan atau penolakan: It's a bit too small. (Agak kekecilan.)",
+  "stiff": "A little juga artinya “sedikit”, tapi dalam percakapan a bit jauh lebih sering dipakai. A kind of (semacam…) artinya lain.",
+  "examples": [
+    {
+      "id": "cx-abit-1",
+      "english": "It's a bit too long.",
+      "indonesian": "Agak kepanjangan.",
+      "chunks": [
+        {
+          "t": "It's "
+        },
+        {
+          "t": "a bit "
+        },
+        {
+          "t": "too long.",
+          "w": "w-too"
+        }
+      ],
+      "gap": {
+        "before": "It's ",
+        "answer": "a bit",
+        "after": " too long.",
+        "options": [
+          "a bit",
+          "a few",
+          "a lot"
+        ],
+        "why": "“Agak (terlalu)” adalah a bit. A few dipakai untuk jumlah (“beberapa”)."
+      },
+      "audio": "audio/en/connectors/cx-abit-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "a bit / kind of"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-abit-2",
+      "english": "It's kind of expensive.",
+      "indonesian": "Lumayan mahal, ya.",
+      "chunks": [
+        {
+          "t": "It's "
+        },
+        {
+          "t": "kind of "
+        },
+        {
+          "t": "expensive.",
+          "w": "w-expensive"
+        }
+      ],
+      "gap": {
+        "before": "It's ",
+        "answer": "kind of",
+        "after": " expensive.",
+        "options": [
+          "kind of",
+          "a kind of",
+          "kinds of"
+        ],
+        "why": "“Lumayan” adalah kind of. A kind of artinya “semacam”."
+      },
+      "audio": "audio/en/connectors/cx-abit-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "a bit / kind of"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-abit-3",
+      "english": "I'm kind of keen.",
+      "indonesian": "Saya lumayan tertarik, sih.",
+      "chunks": [
+        {
+          "t": "I'm "
+        },
+        {
+          "t": "kind of "
+        },
+        {
+          "t": "keen.",
+          "w": "w-keen"
+        }
+      ],
+      "gap": {
+        "before": "I'm ",
+        "answer": "kind of",
+        "after": " keen.",
+        "options": [
+          "kind of",
+          "kindly",
+          "a kind"
+        ],
+        "why": "“Agak” atau “lumayan” adalah kind of. Kindly artinya “dengan baik hati”."
+      },
+      "audio": "audio/en/connectors/cx-abit-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "a bit / kind of"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-abit-4",
+      "english": "The jumper is a bit loose.",
+      "indonesian": "Sweter itu agak longgar.",
+      "chunks": [
+        {
+          "t": "The jumper is ",
+          "w": "w-jumper"
+        },
+        {
+          "t": "a bit "
+        },
+        {
+          "t": "loose.",
+          "w": "w-loose"
+        }
+      ],
+      "gap": {
+        "before": "The jumper is ",
+        "answer": "a bit",
+        "after": " loose.",
+        "options": [
+          "a bit",
+          "a bits",
+          "bit"
+        ],
+        "why": "“Agak” atau “sedikit” adalah a bit, tanpa -s."
+      },
+      "audio": "audio/en/connectors/cx-abit-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "a bit / kind of"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

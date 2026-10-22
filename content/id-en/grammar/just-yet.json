@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-just-yet",
+  "connector": "just / yet",
+  "gloss": "baru saja · sudah · belum",
+  "title": "just, already, yet — baru saja, sudah, belum",
+  "pattern": "I’ve just … ／ I’ve already … ／ Have you … yet? ／ I haven’t … yet.",
+  "explanation": "have + past participle juga dipakai untuk hal yang sudah terjadi dan masih terasa sampai sekarang. just berarti “baru saja”, already berarti “sudah” (lebih cepat dari dugaan). yet dipakai di pertanyaan (“sudah …?”) dan di kalimat negatif (“belum …”), dan diletakkan di akhir kalimat. Jadi “sudah” tidak selalu already: “Sudah makan?” biasanya Have you eaten yet?",
+  "natural": "Untuk memastikan sesuatu sudah beres: Have you eaten yet? (Sudah makan?), I’ve just arrived. (Aku baru saja sampai.)",
+  "stiff": "Terbawa “sudah” dan “belum”, orang sering bilang I already eat. atau I not yet eat. Yang wajar: I’ve already eaten. dan I haven’t eaten yet. Sebagai jawaban singkat, Not yet. boleh.",
+  "examples": [
+    {
+      "id": "gx-just-yet-1",
+      "english": "I’ve just arrived at the airport.",
+      "indonesian": "Saya baru saja sampai di bandara.",
+      "chunks": [
+        {
+          "t": "I’ve ",
+          "w": "w-i"
+        },
+        {
+          "t": "just arrived "
+        },
+        {
+          "t": "at the airport."
+        }
+      ],
+      "gap": {
+        "before": "I’ve ",
+        "answer": "just",
+        "after": " arrived at the airport.",
+        "options": [
+          "just",
+          "yet",
+          "still"
+        ],
+        "why": "Yang baru saja terjadi memakai just, di antara have dan past participle."
+      },
+      "audio": "audio/en/grammar/gx-just-yet-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "just / yet"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-just-yet-2",
+      "english": "Have you had lunch yet?",
+      "indonesian": "Sudah makan siang?",
+      "chunks": [
+        {
+          "t": "Have you ",
+          "w": "w-you"
+        },
+        {
+          "t": "had lunch ",
+          "w": "w-have"
+        },
+        {
+          "t": "yet?"
+        }
+      ],
+      "gap": {
+        "before": "Have you had lunch ",
+        "answer": "yet",
+        "after": "?",
+        "options": [
+          "yet",
+          "already",
+          "just"
+        ],
+        "ok": [
+          "already"
+        ],
+        "note": "already juga bisa. Have you had lunch already? terdengar sedikit kaget: “Lho, sudah makan siang?”",
+        "why": "Di pertanyaan, “sudah …?” biasanya yet, bukan already. yet di akhir kalimat."
+      },
+      "audio": "audio/en/grammar/gx-just-yet-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "just / yet"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-just-yet-3",
+      "english": "I haven’t booked a hotel yet.",
+      "indonesian": "Saya belum memesan hotel.",
+      "chunks": [
+        {
+          "t": "I haven’t booked ",
+          "w": "w-book"
+        },
+        {
+          "t": "a hotel "
+        },
+        {
+          "t": "yet."
+        }
+      ],
+      "gap": {
+        "before": "I haven’t booked a hotel ",
+        "answer": "yet",
+        "after": ".",
+        "options": [
+          "yet",
+          "still",
+          "already"
+        ],
+        "why": "“Belum …” di kalimat negatif adalah haven’t … yet, bukan still."
+      },
+      "audio": "audio/en/grammar/gx-just-yet-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "just / yet"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-just-yet-4",
+      "english": "We’ve already paid.",
+      "indonesian": "Kami sudah bayar.",
+      "chunks": [
+        {
+          "t": "We’ve ",
+          "w": "w-we"
+        },
+        {
+          "t": "already paid.",
+          "w": "w-pay"
+        }
+      ],
+      "gap": {
+        "before": "We’ve ",
+        "answer": "already",
+        "after": " paid.",
+        "options": [
+          "already",
+          "yet",
+          "still"
+        ],
+        "why": "“Sudah” di kalimat positif adalah already."
+      },
+      "audio": "audio/en/grammar/gx-just-yet-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "just / yet"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

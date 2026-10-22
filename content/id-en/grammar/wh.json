@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-wh",
+  "connector": "what, where…",
+  "gloss": "apa, di mana, kapan, siapa",
+  "title": "what, where, when, who, why, how — apa, di mana, kapan…",
+  "pattern": "kata tanya ＋ to be … ? / kata tanya ＋ do ＋ subjek ＋ kata kerja … ?",
+  "explanation": "Kata tanya diletakkan di awal kalimat: what (apa), where (di mana), when (kapan), who (siapa), why (kenapa), how (bagaimana). Kalimat dengan to be: Where is the station? Dengan kata kerja biasa, tambahkan do: Where do you live? (Kamu tinggal di mana?) Bahasa Indonesia sering menaruh kata tanya di akhir; bahasa Inggris selalu di depan.",
+  "natural": "Hampir semua pertanyaan saat bepergian memakai bentuk ini: Where’s the bus stop? / What time is it? / How do I get to the airport?",
+  "stiff": "Jangan menaruh kata tanya di akhir seperti dalam “Kamu tinggal di mana?”: You live where? terdengar aneh (kecuali saat kaget). do juga sering terlupa: Where you live? salah, yang benar Where do you live?",
+  "examples": [
+    {
+      "id": "gx-wh-1",
+      "english": "Where do you live?",
+      "indonesian": "Kamu tinggal di mana?",
+      "chunks": [
+        {
+          "t": "Where ",
+          "w": "w-where"
+        },
+        {
+          "t": "do you "
+        },
+        {
+          "t": "live?",
+          "w": "w-live"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Where",
+        "after": " do you live?",
+        "options": [
+          "Where",
+          "What",
+          "Who"
+        ],
+        "why": "Menanyakan tempat: where, di awal kalimat."
+      },
+      "audio": "audio/en/grammar/gx-wh-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "what, where…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-wh-2",
+      "english": "What time is it?",
+      "indonesian": "Jam berapa sekarang?",
+      "chunks": [
+        {
+          "t": "What ",
+          "w": "w-what"
+        },
+        {
+          "t": "time "
+        },
+        {
+          "t": "is it?",
+          "w": "w-it"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "What",
+        "after": " time is it?",
+        "options": [
+          "What",
+          "When",
+          "How"
+        ],
+        "why": "Menanyakan jam: What time…? Bukan How, walaupun ada “berapa”."
+      },
+      "audio": "audio/en/grammar/gx-wh-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "what, where…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-wh-3",
+      "english": "Who is that man?",
+      "indonesian": "Siapa laki-laki itu?",
+      "chunks": [
+        {
+          "t": "Who ",
+          "w": "w-who"
+        },
+        {
+          "t": "is that "
+        },
+        {
+          "t": "man?",
+          "w": "w-man"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Who",
+        "after": " is that man?",
+        "options": [
+          "Who",
+          "What",
+          "Where"
+        ],
+        "why": "Menanyakan orang: who."
+      },
+      "audio": "audio/en/grammar/gx-wh-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "what, where…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-wh-4",
+      "english": "Why are you tired?",
+      "indonesian": "Kenapa kamu capek?",
+      "chunks": [
+        {
+          "t": "Why ",
+          "w": "w-why"
+        },
+        {
+          "t": "are you "
+        },
+        {
+          "t": "tired?",
+          "w": "w-tired"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Why",
+        "after": " are you tired?",
+        "options": [
+          "Why",
+          "How",
+          "When"
+        ],
+        "why": "Menanyakan alasan: why."
+      },
+      "audio": "audio/en/grammar/gx-wh-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "what, where…"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

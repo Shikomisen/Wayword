@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "con-couldyou",
+  "connector": "Could you…?",
+  "gloss": "Bisa tolong…? (minta orang lain melakukan sesuatu)",
+  "title": "Could you…? — Bisa tolong…? (minta orang lain melakukan sesuatu)",
+  "pattern": "Could you ＋ kata kerja ...?",
+  "explanation": "Cara sopan untuk meminta orang lain melakukan sesuatu, terdengar sedikit lebih lembut daripada Can you …?. Kalau kamu yang menerima sesuatu, pakai Could I …?; kalau orang lain yang melakukan, pakai Could you …?. Maknanya berubah tergantung subjeknya, jadi hati-hati. Inilah padanan yang pas untuk “tolong…”: Could you …? sudah berarti “tolong”, tanpa perlu kata help.",
+  "natural": "Untuk bertanya arah, minta orang mengulang, minta dibantu, dan segala permintaan kepada orang yang tidak kamu kenal. Tambahkan please supaya lebih sopan.",
+  "stiff": "Please + kata kerja (Please say it again.) bisa terdengar seperti perintah, tergantung nadanya, walaupun “tolong ulangi” terasa sopan dalam bahasa Indonesia. Untuk meminta, Could you …? lebih aman. Jangan juga menerjemahkan “tolong” menjadi Please help me …: help hanya untuk bantuan yang sungguh-sungguh.",
+  "examples": [
+    {
+      "id": "cx-couldyou-1",
+      "english": "Could you say that one more time?",
+      "indonesian": "Bisa tolong ulangi sekali lagi?",
+      "chunks": [
+        {
+          "t": "Could you "
+        },
+        {
+          "t": "say ",
+          "w": "w-say"
+        },
+        {
+          "t": "that one more time?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Could you",
+        "after": " say that one more time?",
+        "options": [
+          "Could you",
+          "Could I",
+          "Should you"
+        ],
+        "why": "Orang lain yang mengucapkan, jadi Could you. Could I artinya “bolehkah saya mengucapkannya?”."
+      },
+      "audio": "audio/en/connectors/cx-couldyou-1.mp3",
+      "tags": [
+        "bahasa sopan",
+        "Could you…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-couldyou-2",
+      "english": "Could you speak a bit more slowly?",
+      "indonesian": "Bisa tolong bicara sedikit lebih pelan?",
+      "chunks": [
+        {
+          "t": "Could you "
+        },
+        {
+          "t": "speak ",
+          "w": "w-speak"
+        },
+        {
+          "t": "a bit more slowly?"
+        }
+      ],
+      "gap": {
+        "before": "Could you speak a bit more ",
+        "answer": "slowly",
+        "after": "?",
+        "options": [
+          "slowly",
+          "slow",
+          "slower"
+        ],
+        "why": "Yang dijelaskan adalah cara speak (berbicara), jadi pakai bentuk dengan -ly: slowly."
+      },
+      "audio": "audio/en/connectors/cx-couldyou-2.mp3",
+      "tags": [
+        "bahasa sopan",
+        "Could you…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-couldyou-3",
+      "english": "Could you help me with this?",
+      "indonesian": "Bisa tolong bantu saya dengan ini?",
+      "chunks": [
+        {
+          "t": "Could you "
+        },
+        {
+          "t": "help ",
+          "w": "w-help"
+        },
+        {
+          "t": "me with this?"
+        }
+      ],
+      "gap": {
+        "before": "Could you help me ",
+        "answer": "with",
+        "after": " this?",
+        "options": [
+          "with",
+          "for",
+          "to"
+        ],
+        "why": "help + orang + with + benda artinya “membantu seseorang dengan…”; with di sini sama dengan “dengan”. Di sini help memang tepat, karena kamu benar-benar minta bantuan."
+      },
+      "audio": "audio/en/connectors/cx-couldyou-3.mp3",
+      "tags": [
+        "bahasa sopan",
+        "Could you…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-couldyou-4",
+      "english": "Could you tell me where the toilets are?",
+      "indonesian": "Bisa tolong kasih tahu toiletnya di mana?",
+      "chunks": [
+        {
+          "t": "Could you "
+        },
+        {
+          "t": "tell ",
+          "w": "w-tell"
+        },
+        {
+          "t": "me where the toilets are?"
+        }
+      ],
+      "gap": {
+        "before": "Could you tell me ",
+        "answer": "where the toilets are",
+        "after": "?",
+        "options": [
+          "where the toilets are",
+          "where are the toilets"
+        ],
+        "why": "Setelah Could you tell me, pakai urutan kalimat biasa (where + subjek + kata kerja), bukan urutan pertanyaan (where are …)."
+      },
+      "audio": "audio/en/connectors/cx-couldyou-4.mp3",
+      "tags": [
+        "bahasa sopan",
+        "Could you…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

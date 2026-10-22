@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "con-nothanks",
+  "connector": "No thanks…",
+  "gloss": "Menolak dengan halus",
+  "title": "No thanks… — Menolak dengan halus",
+  "pattern": "No thanks, I'm ... ／ I'm fine, thanks.",
+  "explanation": "Saat menolak, jangan berhenti di No saja: dalam bahasa Inggris, menambahkan thanks adalah bagian dari sopan santun. No thanks. (Tidak, terima kasih), I'm fine, thanks. (Tidak usah, terima kasih), I'm just looking, thanks. (Cuma lihat-lihat). Tambahkan alasan singkat supaya lebih halus.",
+  "natural": "Saat pelayan toko menyapamu, saat kamu tidak perlu kantong atau struk, atau saat menolak tawaran. Kalau diucapkan sambil tersenyum, tidak akan terdengar kasar.",
+  "stiff": "No. saja atau I don't need it. saja terdengar ketus. Hati-hati juga dengan “tidak apa-apa”: kalau diterjemahkan langsung menjadi It's OK., orang bisa bingung apakah maksudmu ya atau tidak.",
+  "examples": [
+    {
+      "id": "cx-nothanks-1",
+      "english": "No thanks, I'm just looking.",
+      "indonesian": "Tidak, terima kasih, cuma lihat-lihat.",
+      "chunks": [
+        {
+          "t": "No thanks, "
+        },
+        {
+          "t": "I'm "
+        },
+        {
+          "t": "just looking.",
+          "w": "w-just-looking"
+        }
+      ],
+      "gap": {
+        "before": "No ",
+        "answer": "thanks",
+        "after": ", I'm just looking.",
+        "options": [
+          "thanks",
+          "please",
+          "sorry"
+        ],
+        "why": "Untuk menolak, pakai No thanks. No, please. artinya “tidak, tolong”, jadi bertentangan."
+      },
+      "audio": "audio/en/connectors/cx-nothanks-1.mp3",
+      "tags": [
+        "bahasa sopan",
+        "No thanks…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-nothanks-2",
+      "english": "I'm fine, thanks. I don't need a bag.",
+      "indonesian": "Tidak usah, terima kasih. Saya tidak perlu kantong.",
+      "chunks": [
+        {
+          "t": "I'm fine, "
+        },
+        {
+          "t": "thanks. "
+        },
+        {
+          "t": "I don't need a bag.",
+          "w": "w-bag"
+        }
+      ],
+      "gap": {
+        "before": "I'm ",
+        "answer": "fine",
+        "after": ", thanks. I don't need a bag.",
+        "options": [
+          "fine",
+          "well",
+          "sure"
+        ],
+        "why": "I'm fine, thanks. artinya “tidak usah, terima kasih”. I'm well artinya “saya sehat”."
+      },
+      "audio": "audio/en/connectors/cx-nothanks-2.mp3",
+      "tags": [
+        "bahasa sopan",
+        "No thanks…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-nothanks-3",
+      "english": "Not today, thanks. I'll come back later.",
+      "indonesian": "Hari ini tidak dulu, terima kasih. Nanti saya kembali lagi.",
+      "chunks": [
+        {
+          "t": "Not today, "
+        },
+        {
+          "t": "thanks. "
+        },
+        {
+          "t": "I'll come back ",
+          "w": "w-come-back"
+        },
+        {
+          "t": "later."
+        }
+      ],
+      "gap": {
+        "before": "Not today, thanks. I'll ",
+        "answer": "come back",
+        "after": " later.",
+        "options": [
+          "come back",
+          "go back",
+          "return back"
+        ],
+        "why": "“Kembali lagi” ke toko adalah come back. Return back tidak dipakai, karena return sudah berarti “kembali”."
+      },
+      "audio": "audio/en/connectors/cx-nothanks-3.mp3",
+      "tags": [
+        "bahasa sopan",
+        "No thanks…"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-nothanks-4",
+      "english": "No thanks, I don't need a receipt.",
+      "indonesian": "Tidak perlu struk, terima kasih.",
+      "chunks": [
+        {
+          "t": "No thanks, "
+        },
+        {
+          "t": "I don't need "
+        },
+        {
+          "t": "a receipt.",
+          "w": "w-receipt"
+        }
+      ],
+      "gap": {
+        "before": "No thanks, I ",
+        "answer": "don't need",
+        "after": " a receipt.",
+        "options": [
+          "don't need",
+          "not need",
+          "no need"
+        ],
+        "why": "“Tidak perlu” adalah I don't need. Bukan I not need atau I no need: “tidak” bisa langsung di depan kata kerja, tapi bahasa Inggris butuh don't."
+      },
+      "audio": "audio/en/connectors/cx-nothanks-4.mp3",
+      "tags": [
+        "bahasa sopan",
+        "No thanks…"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

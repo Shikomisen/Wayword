@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "pat-where",
+  "connector": "Where's…?",
+  "gloss": "… di mana?",
+  "title": "Where's…? — … di mana?",
+  "pattern": "Where's ＋ the ＋ tempat?",
+  "explanation": "Where's adalah singkatan Where is: bentuk dasar untuk bertanya “… di mana?”. Untuk tempat di dalam toko (kamar pas, kasir, toilet), tambahkan the: Where's the fitting room? Untuk benda yang lebih dari satu, pakai Where are the …?. Perhatikan urutannya: dalam bahasa Indonesia “di mana” sering di akhir (“Toiletnya di mana?”), tapi dalam bahasa Inggris Where selalu di depan.",
+  "natural": "Di toko, stasiun, atau di dalam gedung. Awali dengan Excuse me, (permisi) supaya terdengar sopan.",
+  "stiff": "Kalau hanya kata seperti Where toilet?, maksudmu mungkin sampai, tapi terdengar kasar. Ucapkan Where's the toilet?, lengkap dengan the. Fungsinya mirip -nya pada “toiletnya”.",
+  "examples": [
+    {
+      "id": "px-where-1",
+      "english": "Where's the fitting room?",
+      "indonesian": "Kamar pasnya di mana?",
+      "chunks": [
+        {
+          "t": "Where's "
+        },
+        {
+          "t": "the "
+        },
+        {
+          "t": "fitting room?",
+          "w": "w-fitting-room"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Where's",
+        "after": " the fitting room?",
+        "options": [
+          "Where's",
+          "Where",
+          "Where do"
+        ],
+        "why": "Setelah Where perlu is (singkatannya 's). Bahasa Indonesia tidak butuh kata ini, bahasa Inggris butuh."
+      },
+      "audio": "audio/en/patterns/px-where-1.mp3",
+      "tags": [
+        "pola kalimat",
+        "Where's…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-where-2",
+      "english": "Excuse me, where's the checkout?",
+      "indonesian": "Permisi, kasirnya di mana?",
+      "chunks": [
+        {
+          "t": "Excuse me, "
+        },
+        {
+          "t": "where's "
+        },
+        {
+          "t": "the checkout?",
+          "w": "w-checkout"
+        }
+      ],
+      "gap": {
+        "before": "Excuse me, where's ",
+        "answer": "the",
+        "after": " checkout?",
+        "options": [
+          "the",
+          "a",
+          "an"
+        ],
+        "why": "Untuk tempat yang sudah jelas mana yang dimaksud, seperti kasir di toko, pakai the (mirip -nya pada “kasirnya”)."
+      },
+      "audio": "audio/en/patterns/px-where-2.mp3",
+      "tags": [
+        "pola kalimat",
+        "Where's…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-where-3",
+      "english": "Where are the jandals?",
+      "indonesian": "Sandal jepitnya di mana?",
+      "chunks": [
+        {
+          "t": "Where "
+        },
+        {
+          "t": "are "
+        },
+        {
+          "t": "the jandals?",
+          "w": "w-jandals"
+        }
+      ],
+      "gap": {
+        "before": "Where ",
+        "answer": "are",
+        "after": " the jandals?",
+        "options": [
+          "are",
+          "is",
+          "do"
+        ],
+        "why": "Untuk benda jamak (jandals, sebutan sandal jepit di Selandia Baru), pakai are."
+      },
+      "audio": "audio/en/patterns/px-where-3.mp3",
+      "tags": [
+        "pola kalimat",
+        "Where's…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "px-where-4",
+      "english": "Where's the end of the queue?",
+      "indonesian": "Ujung antreannya di mana?",
+      "chunks": [
+        {
+          "t": "Where's "
+        },
+        {
+          "t": "the end of "
+        },
+        {
+          "t": "the queue?",
+          "w": "w-queue"
+        }
+      ],
+      "gap": {
+        "before": "Where's the ",
+        "answer": "end",
+        "after": " of the queue?",
+        "options": [
+          "end",
+          "last",
+          "finish"
+        ],
+        "why": "Ujung belakang antrean disebut the end of the queue. Last artinya “terakhir”, bukan tempat."
+      },
+      "audio": "audio/en/patterns/px-where-4.mp3",
+      "tags": [
+        "pola kalimat",
+        "Where's…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

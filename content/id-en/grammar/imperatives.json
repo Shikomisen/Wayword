@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-imperatives",
+  "connector": "Please… / Don’t…",
+  "gloss": "silakan …, tolong …, jangan …",
+  "title": "Please…, Don’t… — silakan, tolong, jangan",
+  "pattern": "（Please）＋ kata kerja … / Don’t ＋ kata kerja … / Let’s ＋ kata kerja …",
+  "explanation": "Kalimat perintah dimulai dengan kata kerja: Sit down. (Duduk.), Wait here. (Tunggu di sini.) Dengan please jadi lebih halus, seperti “silakan” atau “tolong”: Please sit down. Larangan dimulai dengan Don’t: Don’t worry. (Jangan khawatir.) Ajakan “ayo” pakai Let’s: Let’s go!",
+  "natural": "Sering terdengar saat diberi petunjuk jalan atau peringatan: Turn left at the lights. (Belok kiri di lampu merah.), Don’t forget your bag! (Tasnya jangan ketinggalan!)",
+  "stiff": "Kalimat perintah bisa terdengar keras. Ke pelayan atau orang yang tidak dikenal, Could you…? (pelajaran tingkat Dasar tentang meminta dengan sopan) lebih enak didengar. Dengan nada keras, please pun tetap terdengar seperti perintah. Dan “tolong” tidak perlu jadi help: untuk “Tolong tutup pintunya”, bilang Could you close the door? (bukan Help me close the door).",
+  "examples": [
+    {
+      "id": "gx-imperatives-1",
+      "english": "Please sit down.",
+      "indonesian": "Silakan duduk.",
+      "chunks": [
+        {
+          "t": "Please "
+        },
+        {
+          "t": "sit ",
+          "w": "w-sit"
+        },
+        {
+          "t": "down."
+        }
+      ],
+      "gap": {
+        "before": "Please ",
+        "answer": "sit",
+        "after": " down.",
+        "options": [
+          "sit",
+          "sitting",
+          "to sit"
+        ],
+        "why": "“Silakan …” = Please + kata kerja bentuk dasar."
+      },
+      "audio": "audio/en/grammar/gx-imperatives-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "Please… / Don’t…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-imperatives-2",
+      "english": "Don’t worry about it.",
+      "indonesian": "Jangan dipikirkan.",
+      "chunks": [
+        {
+          "t": "Don’t "
+        },
+        {
+          "t": "worry "
+        },
+        {
+          "t": "about it.",
+          "w": "w-it"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Don’t",
+        "after": " worry about it.",
+        "options": [
+          "Don’t",
+          "Not",
+          "No"
+        ],
+        "why": "“Jangan …” = Don’t + kata kerja. Bukan Not atau No."
+      },
+      "audio": "audio/en/grammar/gx-imperatives-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "Please… / Don’t…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-imperatives-3",
+      "english": "Let’s eat!",
+      "indonesian": "Ayo makan!",
+      "chunks": [
+        {
+          "t": "Let’s "
+        },
+        {
+          "t": "eat!",
+          "w": "w-eat"
+        }
+      ],
+      "gap": {
+        "before": "Let’s ",
+        "answer": "eat",
+        "after": "!",
+        "options": [
+          "eat",
+          "eating",
+          "to eat"
+        ],
+        "why": "Setelah Let’s, kata kerja bentuk dasar."
+      },
+      "audio": "audio/en/grammar/gx-imperatives-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "Please… / Don’t…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-imperatives-4",
+      "english": "Wait here, please.",
+      "indonesian": "Tolong tunggu di sini, ya.",
+      "chunks": [
+        {
+          "t": "Wait ",
+          "w": "w-wait"
+        },
+        {
+          "t": "here, ",
+          "w": "w-here"
+        },
+        {
+          "t": "please."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Wait",
+        "after": " here, please.",
+        "options": [
+          "Wait",
+          "Waiting",
+          "To wait"
+        ],
+        "why": "Permintaan dimulai dengan kata kerja: Wait here. please boleh juga di akhir."
+      },
+      "audio": "audio/en/grammar/gx-imperatives-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "Please… / Don’t…"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

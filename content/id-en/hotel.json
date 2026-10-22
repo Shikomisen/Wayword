@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "hotel",
+  "title": "Hotel",
+  "order": 6,
+  "description": "Check-in, kerusakan di kamar, permintaan kecil. Beberapa istilah hotel yang biasa kita pakai di Indonesia ternyata bukan bahasa Inggris yang umum.",
+  "phrases": [
+    {
+      "id": "hot-01",
+      "english": "I have a reservation under Tanaka.",
+      "indonesian": "Saya sudah pesan kamar atas nama Tanaka.",
+      "registerNotes": "under + nama artinya 'atas nama …'. Kalimat pertama saat check-in.",
+      "pitfallNote": "'Saya sudah pesan' jangan diterjemahkan jadi I already book atau I'm already booking. Untuk pesanan yang sudah ada, katakan I have a reservation.",
+      "audio": "audio/en/hot-01.mp3",
+      "audioHint": "I have a reservation under Tanaka.",
+      "tags": [
+        "check-in",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-02",
+      "english": "What time is check-out?",
+      "indonesian": "Check-out jam berapa?",
+      "registerNotes": "Lebih tenang kalau ditanyakan saat check-in. Kalau ingin keluar lebih lambat: Can I get a late check-out?",
+      "audio": "audio/en/hot-02.mp3",
+      "audioHint": "What time is check-out?",
+      "tags": [
+        "check-out"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "hot-03",
+      "english": "Could I get a wake-up call at seven?",
+      "indonesian": "Bisa minta dibangunkan jam tujuh?",
+      "registerNotes": "Could I get ...? adalah cara meminta yang alami dan sopan.",
+      "pitfallNote": "Di hotel Indonesia sering disebut morning call, tapi dalam bahasa Inggris istilahnya wake-up call.",
+      "audio": "audio/en/hot-03.mp3",
+      "audioHint": "Could I get a wake-up call at seven?",
+      "tags": [
+        "permintaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "hot-04",
+      "english": "Can I leave my bags here?",
+      "indonesian": "Boleh saya titip tas di sini?",
+      "registerNotes": "Sebelum check-in atau setelah check-out. Ungkapan standar untuk menitipkan barang.",
+      "audio": "audio/en/hot-04.mp3",
+      "audioHint": "Can I leave my bags here?",
+      "tags": [
+        "barang bawaan",
+        "permintaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-05",
+      "english": "The air conditioner isn't working.",
+      "indonesian": "AC-nya tidak berfungsi.",
+      "registerNotes": "isn't working artinya 'rusak, tidak jalan'. Bisa diganti dengan shower, TV, Wi-Fi, dan lainnya. Di Selandia Baru, AC yang bisa mendinginkan sekaligus menghangatkan sering disebut heat pump.",
+      "pitfallNote": "Untuk AC atau lampu, jangan pakai open / close: menyalakan = turn on, mematikan = turn off. Dan 'AC-nya mati' bukan The AC is dead, tapi The AC isn't working.",
+      "audio": "audio/en/hot-05.mp3",
+      "audioHint": "The air conditioner isn't working.",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "hot-06",
+      "english": "Could I have some more towels?",
+      "indonesian": "Boleh minta handuk lagi?",
+      "registerNotes": "some more + barang untuk meminta tambahan. Bisa juga untuk pillows (bantal), toilet paper, dan lainnya.",
+      "audio": "audio/en/hot-06.mp3",
+      "audioHint": "Could I have some more towels?",
+      "tags": [
+        "permintaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-07",
+      "english": "Where's the power point?",
+      "indonesian": "Colokan listriknya di mana?",
+      "registerNotes": "Saat ingin mengisi daya ponsel. Di Selandia Baru dan Australia disebut power point, di Amerika outlet, di Inggris socket.",
+      "pitfallNote": "Kata 'stop kontak' berasal dari bahasa Belanda, jadi tidak akan dimengerti. Katakan power point.",
+      "audio": "audio/en/hot-07.mp3",
+      "audioHint": "Where's the power point?",
+      "tags": [
+        "kamar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "hot-08",
+      "english": "Is breakfast included?",
+      "indonesian": "Sudah termasuk sarapan?",
+      "registerNotes": "included artinya 'sudah termasuk dalam harga'. Sangat sering dipakai di hotel.",
+      "audio": "audio/en/hot-08.mp3",
+      "audioHint": "Is breakfast included?",
+      "tags": [
+        "biaya",
+        "sarapan"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "Jangan lupa -ed di akhir: included, bukan include."
+    },
+    {
+      "id": "hot-09",
+      "english": "Where's reception?",
+      "indonesian": "Meja resepsionis di mana?",
+      "registerNotes": "Di Selandia Baru dan Inggris disebut reception, di Amerika front desk.",
+      "pitfallNote": "Dalam bahasa Indonesia, 'resepsionis' bisa berarti mejanya. Dalam bahasa Inggris, receptionist adalah orangnya; tempatnya disebut reception.",
+      "audio": "audio/en/hot-09.mp3",
+      "audioHint": "Where's reception?",
+      "tags": [
+        "fasilitas hotel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-10",
+      "english": "I'd like to check out, please.",
+      "indonesian": "Saya mau check-out.",
+      "registerNotes": "I'd like to ... adalah bentuk sopan dari I want to .... Bisa dipakai di banyak situasi.",
+      "pitfallNote": "'Saya mau…' sering langsung jadi I want…, yang terdengar menuntut, bahkan kekanak-kanakan. Untuk meminta sesuatu, pakai I'd like ….",
+      "audio": "audio/en/hot-10.mp3",
+      "audioHint": "I'd like to check out, please.",
+      "tags": [
+        "check-out",
+        "permintaan"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

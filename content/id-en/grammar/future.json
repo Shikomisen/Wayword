@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-future",
+  "connector": "will / going to",
+  "gloss": "yang akan datang (masa depan)",
+  "title": "will, going to — akan, mau, berencana",
+  "pattern": "I’ll … ／ I’m going to … ／ I’m …ing（rencana yang waktunya sudah pasti）",
+  "explanation": "Ada tiga cara membicarakan masa depan. Keputusan atau tawaran yang muncul saat itu juga memakai will: I’ll get it. (Biar aku yang angkat.) Rencana yang sudah diputuskan sebelumnya memakai be going to: I’m going to visit my aunt. (Aku mau mengunjungi tanteku.) Janji yang hari dan jamnya sudah pasti memakai present continuous: I’m meeting Sam at six. (Aku ketemu Sam jam enam.) Jadi “akan” tidak selalu will: “mau” dan “rencananya” lebih sering going to.",
+  "natural": "Saat langsung menyanggupi permintaan, pakai I’ll …: I’ll text you later. (Nanti aku kirim pesan, ya.)",
+  "stiff": "Dalam percakapan, I will yang diucapkan lengkap terdengar seperti tekad yang kuat; biasanya I’ll. Kalau rencana yang sudah lama diputuskan diucapkan dengan will, kedengarannya seperti baru terpikir sekarang.",
+  "examples": [
+    {
+      "id": "gx-future-1",
+      "english": "I’ll text you when I get home.",
+      "indonesian": "Nanti aku kirim pesan kalau sudah sampai rumah.",
+      "chunks": [
+        {
+          "t": "I’ll text you ",
+          "w": "w-text"
+        },
+        {
+          "t": "when I get home.",
+          "w": "w-get"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "I’ll",
+        "after": " text you when I get home.",
+        "options": [
+          "I’ll",
+          "I’m",
+          "I"
+        ],
+        "why": "Janji yang dibuat saat itu juga memakai will (I’ll)."
+      },
+      "audio": "audio/en/grammar/gx-future-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "will / going to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-future-2",
+      "english": "We’re going to visit Queenstown next month.",
+      "indonesian": "Bulan depan kami berencana ke Queenstown.",
+      "chunks": [
+        {
+          "t": "We’re going to visit ",
+          "w": "w-visit"
+        },
+        {
+          "t": "Queenstown "
+        },
+        {
+          "t": "next month.",
+          "w": "w-month"
+        }
+      ],
+      "gap": {
+        "before": "We’re ",
+        "answer": "going to",
+        "after": " visit Queenstown next month.",
+        "options": [
+          "going to",
+          "will to",
+          "go to"
+        ],
+        "why": "Rencana yang sudah diputuskan sebelumnya (“mau”, “berencana”) memakai be going to."
+      },
+      "audio": "audio/en/grammar/gx-future-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "will / going to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-future-3",
+      "english": "I’m meeting my friend at six.",
+      "indonesian": "Saya ada janji ketemu teman jam enam.",
+      "chunks": [
+        {
+          "t": "I’m meeting ",
+          "w": "w-meet"
+        },
+        {
+          "t": "my friend ",
+          "w": "w-friend"
+        },
+        {
+          "t": "at six."
+        }
+      ],
+      "gap": {
+        "before": "I’m ",
+        "answer": "meeting",
+        "after": " my friend at six.",
+        "options": [
+          "meeting",
+          "meet",
+          "will meet"
+        ],
+        "why": "Janji yang jamnya sudah pasti memakai present continuous (be + -ing)."
+      },
+      "audio": "audio/en/grammar/gx-future-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "will / going to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-future-4",
+      "english": "It’s going to rain this afternoon.",
+      "indonesian": "Sore ini sepertinya akan hujan.",
+      "chunks": [
+        {
+          "t": "It’s going to rain ",
+          "w": "w-rain"
+        },
+        {
+          "t": "this afternoon.",
+          "w": "w-afternoon"
+        }
+      ],
+      "gap": {
+        "before": "It’s ",
+        "answer": "going to",
+        "after": " rain this afternoon.",
+        "options": [
+          "going to",
+          "will",
+          "going"
+        ],
+        "why": "Perkiraan dari keadaan sekarang, misalnya langit yang mendung, memakai be going to."
+      },
+      "audio": "audio/en/grammar/gx-future-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "will / going to"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

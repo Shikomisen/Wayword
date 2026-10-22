@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "checkin",
+  "title": "Check-in di hotel",
+  "category": "hotel",
+  "setting": "Setelah penerbangan panjang, kamu akhirnya tiba di hotel yang sudah kamu pesan. Kamu menuju meja resepsionis (reception).",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "receptionist",
+      "english": "Hi there! Welcome. Are you checking in?",
+      "indonesian": "Halo! Selamat datang. Mau check-in?",
+      "audio": "audio/en/scenario/checkin-n1.mp3",
+      "audioHint": "Hi there! Welcome. Are you checking in?",
+      "options": [
+        {
+          "phraseId": "hot-01",
+          "quality": "good",
+          "feedback": "Nama pemesanan langsung disebut sekaligus. Sangat lancar.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "Yes, please.",
+          "indonesian": "Ya, mau check-in.",
+          "feedback": "Ini pun cukup. Berikutnya kamu akan ditanya namamu.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "english": "Yes, I'm reserving.",
+          "indonesian": "(ya, saya sedang memesan)",
+          "feedback": "reserving artinya “sedang memesan” saat ini juga. Untuk “sudah pesan”, bahasa Inggris tidak memakai already reserving, tapi I have a reservation.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "receptionist",
+      "english": "Perfect. Can I see your ID and the card you booked with?",
+      "indonesian": "Baik. Boleh saya lihat kartu identitas Anda dan kartu yang dipakai untuk memesan?",
+      "audio": "audio/en/scenario/checkin-n2.mp3",
+      "audioHint": "Perfect. Can I see your ID and the card you booked with?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Sure, here you go.",
+          "indonesian": "Tentu, silakan.",
+          "feedback": "Ucapan alami saat menyerahkan sesuatu.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "air-01",
+          "quality": "good",
+          "feedback": "Di luar negeri, kartu identitasmu adalah paspor. Pas sekali.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "english": "Here.",
+          "indonesian": "Ini.",
+          "feedback": "Dimengerti, tapi terdengar agak dingin. Here you go. terdengar lebih ramah.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "receptionist",
+      "english": "Thank you. You're in room 512, on the fifth floor. Breakfast is from seven to ten.",
+      "indonesian": "Terima kasih. Kamar Anda nomor 512, di lantai lima. Sarapan mulai pukul tujuh sampai sepuluh.",
+      "audio": "audio/en/scenario/checkin-n3.mp3",
+      "audioHint": "Thank you. You're in room 512, on the fifth floor. Breakfast is from seven to ten.",
+      "options": [
+        {
+          "phraseId": "hot-08",
+          "quality": "good",
+          "feedback": "Penting untuk memastikan apakah sarapan sudah termasuk dalam harga.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "hot-02",
+          "quality": "good",
+          "feedback": "Memastikan jam check-out sejak awal juga membuatmu tenang.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "gre-10",
+          "quality": "good",
+          "feedback": "Kalau angkanya banyak dan sulit ditangkap, jangan ragu minta diulang.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "receptionist",
+      "english": "Breakfast is included, yes. Is there anything else I can help you with?",
+      "indonesian": "Ya, sarapan sudah termasuk. Ada lagi yang bisa saya bantu?",
+      "audio": "audio/en/scenario/checkin-n4.mp3",
+      "audioHint": "Breakfast is included, yes. Is there anything else I can help you with?",
+      "options": [
+        {
+          "phraseId": "hot-03",
+          "quality": "good",
+          "feedback": "Cara meminta yang sempurna. Could I get ...? sopan dan alami.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "english": "Morning call, please.",
+          "indonesian": "Minta morning call.",
+          "feedback": "Di hotel Indonesia orang biasa bilang “morning call”, dan mungkin dimengerti, tapi dalam bahasa Inggris yang benar adalah wake-up call.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "english": "No, that's all. Thanks!",
+          "indonesian": "Tidak, itu saja. Terima kasih!",
+          "feedback": "Kalau tidak ada keperluan lain, ini sudah cukup.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "receptionist",
+      "english": "No problem. Here are your keys. Enjoy your stay!",
+      "indonesian": "Baik. Ini kuncinya. Selamat beristirahat!",
+      "audio": "audio/en/scenario/checkin-n5.mp3",
+      "audioHint": "No problem. Here are your keys. Enjoy your stay!",
+      "options": [
+        {
+          "phraseId": "gre-07",
+          "quality": "good",
+          "feedback": "Penutup yang menyenangkan.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "english": "Thank you. Where's the lift?",
+          "indonesian": "Terima kasih. Liftnya di mana?",
+          "feedback": "Setelah berterima kasih, wajar langsung bertanya. Di Selandia Baru dan Inggris disebut lift, sama seperti bahasa Indonesia (di Amerika: elevator).",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "wrong",
+          "feedback": "Tidak ada yang berterima kasih kepadamu. Balas dengan Thank you!",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "indonesian": "Check-in selesai. Nama pemesanan, kartu identitas, jam sarapan dan check-out: di hotel mana pun, alurnya hampir sama.",
+      "end": true,
+      "options": []
+    }
+  }
+}

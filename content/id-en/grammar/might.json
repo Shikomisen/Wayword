@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-might",
+  "connector": "might",
+  "gloss": "mungkin …",
+  "title": "might, may, could — mungkin …",
+  "pattern": "It might … ／ I may … ／ It could …",
+  "explanation": "“Mungkin …” adalah might + kata kerja dasar. may artinya sama, tapi sedikit lebih formal. could berarti “bisa jadi …”. Ketiganya menunjukkan keyakinan sekitar setengah-setengah: It might rain later. (Nanti mungkin hujan.), I might be late. (Aku mungkin terlambat.) “Mungkin” bisa diletakkan di mana saja, tapi might selalu tepat sebelum kata kerja.",
+  "natural": "Untuk menjawab soal rencana yang belum pasti: I might come. (Mungkin aku datang.) Bisa juga Maybe I’ll come.",
+  "stiff": "Setelah might tidak ada to: I might to go. salah, yang benar I might go. Jangan lupa be juga: I might late. salah, yang benar I might be late.",
+  "examples": [
+    {
+      "id": "gx-might-1",
+      "english": "It might rain later.",
+      "indonesian": "Nanti mungkin hujan.",
+      "chunks": [
+        {
+          "t": "It might rain ",
+          "w": "w-rain"
+        },
+        {
+          "t": "later."
+        }
+      ],
+      "gap": {
+        "before": "It ",
+        "answer": "might",
+        "after": " rain later.",
+        "options": [
+          "might",
+          "must",
+          "should"
+        ],
+        "why": "“Mungkin …” adalah might."
+      },
+      "audio": "audio/en/grammar/gx-might-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "might"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-might-2",
+      "english": "I might be a bit late.",
+      "indonesian": "Saya mungkin agak terlambat.",
+      "chunks": [
+        {
+          "t": "I might be "
+        },
+        {
+          "t": "a bit "
+        },
+        {
+          "t": "late.",
+          "w": "w-late"
+        }
+      ],
+      "gap": {
+        "before": "I might ",
+        "answer": "be",
+        "after": " a bit late.",
+        "options": [
+          "be",
+          "to be",
+          "am"
+        ],
+        "why": "Setelah might pakai kata kerja dasar: be, bukan am. be tetap perlu, walaupun “terlambat” tidak butuh kata kerja dalam bahasa Indonesia."
+      },
+      "audio": "audio/en/grammar/gx-might-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "might"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-might-3",
+      "english": "That could be our bus.",
+      "indonesian": "Bisa jadi itu bus kita.",
+      "chunks": [
+        {
+          "t": "That could be ",
+          "w": "w-that"
+        },
+        {
+          "t": "our bus."
+        }
+      ],
+      "gap": {
+        "before": "That ",
+        "answer": "could",
+        "after": " be our bus.",
+        "options": [
+          "could",
+          "can",
+          "did"
+        ],
+        "why": "Untuk kemungkinan (“bisa jadi”), could juga bisa dipakai."
+      },
+      "audio": "audio/en/grammar/gx-might-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "might"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-might-4",
+      "english": "You may need a jacket tonight.",
+      "indonesian": "Malam ini mungkin kamu perlu jaket.",
+      "chunks": [
+        {
+          "t": "You may need ",
+          "w": "w-need"
+        },
+        {
+          "t": "a jacket ",
+          "w": "w-jacket"
+        },
+        {
+          "t": "tonight."
+        }
+      ],
+      "gap": {
+        "before": "You ",
+        "answer": "may",
+        "after": " need a jacket tonight.",
+        "options": [
+          "may",
+          "might",
+          "must"
+        ],
+        "ok": [
+          "might"
+        ],
+        "note": "might juga bisa, artinya sama. Dalam percakapan, might lebih sering dipakai.",
+        "why": "may juga berarti “mungkin”, sedikit lebih formal daripada might."
+      },
+      "audio": "audio/en/grammar/gx-might-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "might"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

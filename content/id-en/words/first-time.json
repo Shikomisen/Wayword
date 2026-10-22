@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "id": "words-first-time",
+  "title": "Waktu, hari, dan cuaca",
+  "description": "Kata untuk hari ini dan besok, nama hari, pagi sampai malam, dan cuaca.",
+  "items": [
+    {
+      "id": "w-today",
+      "english": "today",
+      "indonesian": "hari ini",
+      "pos": "noun",
+      "audio": "audio/en/words/w-today.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tomorrow",
+      "english": "tomorrow",
+      "indonesian": "besok",
+      "pos": "noun",
+      "registerNotes": "Tanpa on: See you tomorrow. (bukan on tomorrow)",
+      "audio": "audio/en/words/w-tomorrow.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yesterday",
+      "english": "yesterday",
+      "indonesian": "kemarin",
+      "pos": "noun",
+      "audio": "audio/en/words/w-yesterday.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "Dengan yesterday, kata kerjanya harus bentuk lampau: Yesterday I went to the beach (bukan I go)."
+    },
+    {
+      "id": "w-now",
+      "english": "now",
+      "indonesian": "sekarang",
+      "pos": "adverb",
+      "registerNotes": "right now (sekarang juga, saat ini).",
+      "audio": "audio/en/words/w-now.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-morning",
+      "english": "morning",
+      "indonesian": "pagi",
+      "pos": "noun",
+      "registerNotes": "in the morning (pada pagi hari). Good morning! (Selamat pagi!)",
+      "audio": "audio/en/words/w-morning.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-afternoon",
+      "english": "afternoon",
+      "indonesian": "siang, sore",
+      "pos": "noun",
+      "registerNotes": "in the afternoon: dari jam 12 sampai sore. Dalam percakapan di Selandia Baru juga disebut arvo.",
+      "audio": "audio/en/words/w-afternoon.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-evening",
+      "english": "evening",
+      "indonesian": "sore, malam",
+      "pos": "noun",
+      "registerNotes": "in the evening. Saat bertemu pada sore atau malam hari: Good evening.",
+      "audio": "audio/en/words/w-evening.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-night",
+      "english": "night",
+      "indonesian": "malam",
+      "pos": "noun",
+      "registerNotes": "at night (pada malam hari). Good night. (Selamat tidur.) hanya untuk berpisah atau mau tidur, bukan saat bertemu.",
+      "audio": "audio/en/words/w-night.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-week",
+      "english": "week",
+      "indonesian": "minggu (tujuh hari)",
+      "pos": "noun",
+      "registerNotes": "next week (minggu depan), last week (minggu lalu).",
+      "audio": "audio/en/words/w-week.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-month",
+      "english": "month",
+      "indonesian": "bulan",
+      "pos": "noun",
+      "audio": "audio/en/words/w-month.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-year",
+      "english": "year",
+      "indonesian": "tahun",
+      "pos": "noun",
+      "audio": "audio/en/words/w-year.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-weekend",
+      "english": "weekend",
+      "indonesian": "akhir pekan",
+      "pos": "noun",
+      "registerNotes": "at the weekend (Inggris, Selandia Baru), on the weekend (Amerika).",
+      "audio": "audio/en/words/w-weekend.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-monday",
+      "english": "Monday",
+      "indonesian": "Senin",
+      "pos": "noun",
+      "registerNotes": "Nama hari selalu diawali huruf besar. on Monday (pada hari Senin).",
+      "audio": "audio/en/words/w-monday.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tuesday",
+      "english": "Tuesday",
+      "indonesian": "Selasa",
+      "pos": "noun",
+      "audio": "audio/en/words/w-tuesday.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-wednesday",
+      "english": "Wednesday",
+      "indonesian": "Rabu",
+      "pos": "noun",
+      "registerNotes": "Dibaca “wenzdei”: huruf d tidak dibaca.",
+      "audio": "audio/en/words/w-wednesday.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-thursday",
+      "english": "Thursday",
+      "indonesian": "Kamis",
+      "pos": "noun",
+      "audio": "audio/en/words/w-thursday.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1,
+      "registerNotes": "th dibaca dengan ujung lidah di antara gigi, bukan t: Thursday, bukan “tursdei”."
+    },
+    {
+      "id": "w-friday",
+      "english": "Friday",
+      "indonesian": "Jumat",
+      "pos": "noun",
+      "audio": "audio/en/words/w-friday.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-saturday",
+      "english": "Saturday",
+      "indonesian": "Sabtu",
+      "pos": "noun",
+      "audio": "audio/en/words/w-saturday.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sunday",
+      "english": "Sunday",
+      "indonesian": "Minggu",
+      "pos": "noun",
+      "audio": "audio/en/words/w-sunday.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1,
+      "registerNotes": "Minggu (hari) = Sunday, minggu (tujuh hari) = week."
+    },
+    {
+      "id": "w-weather",
+      "english": "weather",
+      "indonesian": "cuaca",
+      "pos": "noun",
+      "registerNotes": "How’s the weather? (Bagaimana cuacanya?)",
+      "audio": "audio/en/words/w-weather.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hot",
+      "english": "hot",
+      "indonesian": "panas; pedas",
+      "pos": "adjective",
+      "registerNotes": "Juga berarti “pedas”: This is hot! (Ini pedas!)",
+      "audio": "audio/en/words/w-hot.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cold",
+      "english": "cold",
+      "indonesian": "dingin",
+      "pos": "adjective",
+      "registerNotes": "a cold berarti “pilek, flu”.",
+      "audio": "audio/en/words/w-cold.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-rain",
+      "english": "rain",
+      "indonesian": "hujan; turun hujan",
+      "pos": "noun",
+      "registerNotes": "It’s raining. (Sedang hujan.)",
+      "audio": "audio/en/words/w-rain.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sunny",
+      "english": "sunny",
+      "indonesian": "cerah",
+      "pos": "adjective",
+      "registerNotes": "It’s sunny today. (Hari ini cerah.)",
+      "audio": "audio/en/words/w-sunny.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-windy",
+      "english": "windy",
+      "indonesian": "berangin",
+      "pos": "adjective",
+      "registerNotes": "Wellington terkenal sangat windy (berangin).",
+      "audio": "audio/en/words/w-windy.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

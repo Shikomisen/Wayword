@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "opinions",
+  "title": "Berpendapat, setuju & tidak setuju",
+  "order": 13,
+  "description": "Menyampaikan pendapat, tidak setuju dengan halus, memilih. Ungkapan untuk bertukar pendapat dalam percakapan.",
+  "phrases": [
+    {
+      "id": "opi-01",
+      "english": "I think so too.",
+      "indonesian": "Menurutku juga begitu.",
+      "registerNotes": "Cara paling sederhana untuk setuju. Dalam bahasa santai juga Me too!",
+      "audio": "audio/en/opi-01.mp3",
+      "audioHint": "I think so too.",
+      "tags": [
+        "setuju",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-02",
+      "english": "I’m not so sure about that.",
+      "indonesian": "Hmm, belum tentu juga, ya.",
+      "registerNotes": "Cara halus untuk tidak setuju. Tidak sekeras I disagree.",
+      "audio": "audio/en/opi-02.mp3",
+      "audioHint": "I’m not so sure about that.",
+      "tags": [
+        "tidak setuju"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-03",
+      "english": "What do you reckon?",
+      "indonesian": "Menurutmu bagaimana?",
+      "registerNotes": "reckon adalah bentuk santai dari think, dan sangat sering dipakai di Selandia Baru.",
+      "audio": "audio/en/opi-03.mp3",
+      "audioHint": "What do you reckon?",
+      "tags": [
+        "minta pendapat"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "'Bagaimana menurutmu?' bukan How do you think?. Pakai What do you think? atau What do you reckon?"
+    },
+    {
+      "id": "opi-04",
+      "english": "To be honest, I’m not a big fan.",
+      "indonesian": "Jujur, aku kurang suka.",
+      "registerNotes": "not a big fan adalah cara halus untuk bilang 'tidak suka'.",
+      "audio": "audio/en/opi-04.mp3",
+      "audioHint": "To be honest, I’m not a big fan.",
+      "tags": [
+        "selera"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-05",
+      "english": "It’s not my cup of tea.",
+      "indonesian": "Bukan seleraku.",
+      "registerNotes": "Cara tidak langsung untuk bilang 'bukan seleraku'. Ini bukan soal teh.",
+      "audio": "audio/en/opi-05.mp3",
+      "audioHint": "It’s not my cup of tea.",
+      "tags": [
+        "selera"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "opi-06",
+      "english": "You’ve got a point.",
+      "indonesian": "Benar juga katamu.",
+      "registerNotes": "Saat mengakui sebagian pendapat lawan bicara.",
+      "audio": "audio/en/opi-06.mp3",
+      "audioHint": "You’ve got a point.",
+      "tags": [
+        "setuju"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-07",
+      "english": "I see what you mean, but…",
+      "indonesian": "Aku paham maksudmu, tapi…",
+      "registerNotes": "Cara paling sopan untuk tidak setuju: akui dulu pendapat lawan bicara, baru sampaikan pendapatmu.",
+      "audio": "audio/en/opi-07.mp3",
+      "audioHint": "I see what you mean, but…",
+      "tags": [
+        "tidak setuju"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-08",
+      "english": "I totally agree.",
+      "indonesian": "Aku setuju sekali.",
+      "registerNotes": "totally menguatkan artinya: 'sepenuhnya'.",
+      "pitfallNote": "Karena 'saya setuju', I’m agree sering terucap. agree adalah kata kerja, jadi tanpa am: I agree, I totally agree.",
+      "audio": "audio/en/opi-08.mp3",
+      "audioHint": "I totally agree.",
+      "tags": [
+        "setuju"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-09",
+      "english": "It depends on the price.",
+      "indonesian": "Tergantung harganya.",
+      "registerNotes": "It depends on … artinya 'tergantung …'. It depends. saja juga bisa.",
+      "audio": "audio/en/opi-09.mp3",
+      "audioHint": "It depends on the price.",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Hindari It’s depend on…: depend adalah kata kerja, jadi tanpa is dan dengan -s: It depends on…."
+    },
+    {
+      "id": "opi-10",
+      "english": "Either is fine with me.",
+      "indonesian": "Aku yang mana saja oke.",
+      "registerNotes": "Saat kamu tidak keberatan dengan salah satu dari dua pilihan. Kalau tiga atau lebih: Any of them is fine.",
+      "audio": "audio/en/opi-10.mp3",
+      "audioHint": "Either is fine with me.",
+      "tags": [
+        "memilih"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-11",
+      "english": "I’d go for the cheaper one.",
+      "indonesian": "Kalau aku, pilih yang lebih murah.",
+      "registerNotes": "I’d go for … artinya 'kalau aku, aku pilih …'. Juga dipakai saat memberi saran.",
+      "audio": "audio/en/opi-11.mp3",
+      "audioHint": "I’d go for the cheaper one.",
+      "tags": [
+        "memilih"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-12",
+      "english": "That’s a good idea.",
+      "indonesian": "Ide bagus.",
+      "registerNotes": "Untuk memuji usul seseorang. Good idea! saja juga bisa.",
+      "audio": "audio/en/opi-12.mp3",
+      "audioHint": "That’s a good idea.",
+      "tags": [
+        "setuju"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

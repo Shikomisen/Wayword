@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "bus",
+  "title": "Bertanya sebelum naik bus",
+  "category": "transport",
+  "setting": "Halte bus di Auckland. Kamu mau ke pusat kota, tapi tidak tahu harus naik bus yang mana.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "narration",
+      "english": "",
+      "indonesian": "Busnya datang. Tanyakan dulu ke sopirnya. Apa yang kamu ucapkan pertama kali?",
+      "options": [
+        {
+          "phraseId": "tra-02",
+          "quality": "good",
+          "feedback": "Pas untuk memastikan sebelum naik.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "Hi! Does this go to the city?",
+          "indonesian": "Halo! Bus ini ke kota?",
+          "feedback": "Membuka dengan Hi! sangat wajar di Selandia Baru.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "english": "City?",
+          "indonesian": "(kota?)",
+          "feedback": "Mungkin dimengerti, tapi terdengar ketus. Tanyakan dalam kalimat: Does this bus go to ...?",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "driver",
+      "english": "Yep, it does. Just tap your card on the reader there.",
+      "indonesian": "Ya, betul. Tap saja kartumu di mesin pembaca itu.",
+      "audio": "audio/en/scenario/bus-n2.mp3",
+      "audioHint": "Yep, it does. Just tap your card on the reader there.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Can I use my bank card?",
+          "indonesian": "Kartu bank saya bisa dipakai?",
+          "feedback": "Makin banyak kota yang menerima kartu contactless. Pertanyaan bagus untuk memastikan.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "gre-10",
+          "quality": "good",
+          "feedback": "Kalau tidak tertangkap, wajar minta diulang.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "english": "Yes, yes.",
+          "indonesian": "(iya, iya)",
+          "feedback": "Kalau kamu bilang Yes padahal belum paham, percakapannya berhenti di situ. Lebih baik minta diulang.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "driver",
+      "english": "Yeah, contactless is fine. Where are you getting off?",
+      "indonesian": "Ya, contactless bisa. Turun di mana?",
+      "audio": "audio/en/scenario/bus-n3.mp3",
+      "audioHint": "Yeah, contactless is fine. Where are you getting off?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Queen Street, please.",
+          "indonesian": "Di Queen Street.",
+          "feedback": "Cukup sebut tempat turunmu.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "tra-05",
+          "quality": "good",
+          "feedback": "Minta diberi tahu kapan harus turun adalah cara yang sangat cerdas.",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "english": "I got off at Queen Street.",
+          "indonesian": "(saya sudah turun di Queen Street)",
+          "feedback": "Kata kerja bahasa Indonesia tidak berubah, tapi dalam bahasa Inggris berubah: got off adalah bentuk lampau, artinya “sudah turun”. Untuk nanti: I'm getting off at Queen Street.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "driver",
+      "english": "No worries. It's about fifteen minutes. I'll give you a shout.",
+      "indonesian": "Oke. Sekitar lima belas menit. Nanti saya panggil, ya.",
+      "audio": "audio/en/scenario/bus-n4.mp3",
+      "audioHint": "No worries. It's about fifteen minutes. I'll give you a shout.",
+      "options": [
+        {
+          "phraseId": "gre-07",
+          "quality": "good",
+          "feedback": "Kalau dibantu, tambahkan so much.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "english": "Cheers!",
+          "indonesian": "Makasih!",
+          "feedback": "Cheers! adalah “makasih” santai khas Selandia Baru.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "english": "Shout?",
+          "indonesian": "(teriak?)",
+          "feedback": "I'll give you a shout. adalah cara santai untuk bilang “nanti saya panggil”, bukan berteriak. Kalau tidak paham, tanyakan Sorry, what does that mean?",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "driver",
+      "english": "Here's Queen Street.",
+      "indonesian": "Ini Queen Street.",
+      "audio": "audio/en/scenario/bus-n5.mp3",
+      "audioHint": "Here's Queen Street.",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Thanks, driver!",
+          "indonesian": "Terima kasih banyak!",
+          "feedback": "Di Selandia Baru, orang biasa berterima kasih kepada sopir saat turun.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-07",
+          "quality": "good",
+          "feedback": "Ucapan terima kasih yang menyenangkan.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "wrong",
+          "feedback": "“Sama-sama” diucapkan oleh orang yang membantu, bukan yang dibantu.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "indonesian": "Kamu sampai di Queen Street dengan selamat. Bilang Thanks, driver! saat turun adalah kebiasaan kecil di Selandia Baru. Kalau ada ungkapan yang tidak kamu pahami (seperti give you a shout), tanyakan saja dan orang akan menjelaskannya.",
+      "end": true,
+      "options": []
+    }
+  }
+}

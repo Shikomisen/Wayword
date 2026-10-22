@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-past-irregular",
+  "connector": "went, ate…",
+  "gloss": "past tense yang berubah bentuk",
+  "title": "went, ate, saw — past tense yang berubah bentuk",
+  "pattern": "go → went / eat → ate / see → saw / have → had / come → came / buy → bought",
+  "explanation": "Justru kata kerja yang paling sering dipakai, past tense-nya tidak memakai -ed tapi berubah bentuk: go → went, eat → ate, see → saw, have → had, come → came, buy → bought. Jumlahnya tidak banyak, jadi hafalkan satu per satu, mulai dari yang paling sering dipakai.",
+  "natural": "What did you do yesterday? — I went to the beach. (Apa yang kamu lakukan kemarin? — Saya pergi ke pantai.)",
+  "stiff": "goed, eated (menambahkan -ed) itu salah. Setelah did, kata kerjanya kembali ke bentuk dasar: Did you go? (Did you went? salah.)",
+  "examples": [
+    {
+      "id": "gx-past-irregular-1",
+      "english": "I went to the beach yesterday.",
+      "indonesian": "Kemarin saya pergi ke pantai.",
+      "chunks": [
+        {
+          "t": "I ",
+          "w": "w-i"
+        },
+        {
+          "t": "went to the beach ",
+          "w": "w-go"
+        },
+        {
+          "t": "yesterday.",
+          "w": "w-yesterday"
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "went",
+        "after": " to the beach yesterday.",
+        "options": [
+          "went",
+          "goed",
+          "go"
+        ],
+        "why": "Past tense dari go adalah went."
+      },
+      "audio": "audio/en/grammar/gx-past-irregular-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "went, ate…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-past-irregular-2",
+      "english": "We ate sushi for lunch.",
+      "indonesian": "Kami makan sushi untuk makan siang.",
+      "chunks": [
+        {
+          "t": "We ",
+          "w": "w-we"
+        },
+        {
+          "t": "ate sushi ",
+          "w": "w-eat"
+        },
+        {
+          "t": "for lunch."
+        }
+      ],
+      "gap": {
+        "before": "We ",
+        "answer": "ate",
+        "after": " sushi for lunch.",
+        "options": [
+          "ate",
+          "eated",
+          "eat"
+        ],
+        "why": "Past tense dari eat adalah ate."
+      },
+      "audio": "audio/en/grammar/gx-past-irregular-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "went, ate…"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-past-irregular-3",
+      "english": "I saw your sister at the shop.",
+      "indonesian": "Saya melihat kakakmu di toko.",
+      "chunks": [
+        {
+          "t": "I saw ",
+          "w": "w-see"
+        },
+        {
+          "t": "your sister ",
+          "w": "w-sister"
+        },
+        {
+          "t": "at the shop."
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "saw",
+        "after": " your sister at the shop.",
+        "options": [
+          "saw",
+          "seed",
+          "see"
+        ],
+        "why": "Past tense dari see adalah saw."
+      },
+      "audio": "audio/en/grammar/gx-past-irregular-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "went, ate…"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-past-irregular-4",
+      "english": "She bought a new phone.",
+      "indonesian": "Dia membeli HP baru.",
+      "chunks": [
+        {
+          "t": "She ",
+          "w": "w-she"
+        },
+        {
+          "t": "bought a new ",
+          "w": "w-buy"
+        },
+        {
+          "t": "phone.",
+          "w": "w-phone"
+        }
+      ],
+      "gap": {
+        "before": "She ",
+        "answer": "bought",
+        "after": " a new phone.",
+        "options": [
+          "bought",
+          "buyed",
+          "buys"
+        ],
+        "why": "Past tense dari buy adalah bought."
+      },
+      "audio": "audio/en/grammar/gx-past-irregular-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "went, ate…"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

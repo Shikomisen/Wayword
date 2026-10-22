@@ -9,7 +9,7 @@ import { resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import vm from 'node:vm';
 
-/** A translator over the files on disk: { translate(pair, text) → { text, ms } }. */
+/** A translator over the files on disk: { translate(route, text) → { text, ms } }, where route is a pair ('en-ja') or a list of them. */
 export function nodeTranslator(root, registry) {
   const workerUrl = pathToFileURL(resolve(root, 'js/translator-worker.js')).href;
   let onMessage = null;
@@ -38,8 +38,8 @@ export function nodeTranslator(root, registry) {
     onMessage({ data: { ...data, id: n, registry } });
   });
   return {
-    translate: (pair, text) => send({ type: 'translate', pair, text }),
-    warm: (pair) => send({ type: 'warm', pair }),
+    translate: (route, text) => send({ type: 'translate', route: [].concat(route), text }),
+    warm: (route) => send({ type: 'warm', route: [].concat(route) }),
   };
 }
 

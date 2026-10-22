@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "con-theone",
+  "connector": "the one I…",
+  "gloss": "yang … (keterangan di belakang benda)",
+  "title": "the one I… — yang … (keterangan di belakang benda)",
+  "pattern": "the one ＋ keterangan（I tried on ／ in the window）",
+  "explanation": "Dalam bahasa Inggris, keterangan “yang mana” diletakkan sesudah kata bendanya, sama seperti bahasa Indonesia: “yang saya coba tadi” menjadi the one I tried on (the one + I tried on). Bedanya, bahasa Inggris sering tidak memakai kata seperti “yang”. The jacket in the window (jaket yang di etalase) juga memakai urutan ini.",
+  "natural": "Berguna untuk menunjuk barang di toko: I'll take the one I tried on. (Saya ambil yang tadi saya coba.) The one dipakai supaya tidak perlu mengulang nama benda yang sudah disebut, seperti “yang” dalam “yang biru”.",
+  "stiff": "Urutannya sama dengan bahasa Indonesia, jadi ini mudah bagimu. Yang perlu diingat: jangan langsung menerjemahkan “yang saya coba” menjadi which I tried on. Bahasa Inggris butuh kata bendanya dulu, yaitu the one.",
+  "examples": [
+    {
+      "id": "cx-theone-1",
+      "english": "I'll take the one I tried on.",
+      "indonesian": "Saya ambil yang tadi saya coba.",
+      "chunks": [
+        {
+          "t": "I'll take "
+        },
+        {
+          "t": "the one "
+        },
+        {
+          "t": "I tried on.",
+          "w": "w-try-on"
+        }
+      ],
+      "gap": {
+        "before": "I'll take the ",
+        "answer": "one",
+        "after": " I tried on.",
+        "options": [
+          "one",
+          "it",
+          "that"
+        ],
+        "why": "“Yang …” untuk benda yang sudah dibicarakan adalah the one."
+      },
+      "audio": "audio/en/connectors/cx-theone-1.mp3",
+      "tags": [
+        "urutan kata",
+        "the one I…"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-theone-2",
+      "english": "Can I see the jacket in the window?",
+      "indonesian": "Boleh lihat jaket yang di etalase?",
+      "chunks": [
+        {
+          "t": "Can I see "
+        },
+        {
+          "t": "the jacket ",
+          "w": "w-jacket"
+        },
+        {
+          "t": "in the window?"
+        }
+      ],
+      "gap": {
+        "before": "Can I see the jacket in the w",
+        "answer": "in",
+        "after": "dow?",
+        "options": [
+          "in",
+          "on",
+          "at"
+        ],
+        "why": "“Di (dalam) etalase” adalah in the window."
+      },
+      "audio": "audio/en/connectors/cx-theone-2.mp3",
+      "tags": [
+        "urutan kata",
+        "the one I…"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-theone-3",
+      "english": "This isn't the coffee I ordered.",
+      "indonesian": "Ini bukan kopi yang saya pesan.",
+      "chunks": [
+        {
+          "t": "This isn't "
+        },
+        {
+          "t": "the coffee ",
+          "w": "w-coffee"
+        },
+        {
+          "t": "I ordered.",
+          "w": "w-order"
+        }
+      ],
+      "gap": {
+        "before": "This isn't the coffee I ",
+        "answer": "ordered",
+        "after": ".",
+        "options": [
+          "ordered",
+          "order",
+          "ordering"
+        ],
+        "why": "“Saya pesan (tadi)” memakai bentuk lampau: ordered. Bahasa Indonesia tidak mengubah kata kerja, tapi bahasa Inggris menambahkan -ed."
+      },
+      "audio": "audio/en/connectors/cx-theone-3.mp3",
+      "tags": [
+        "urutan kata",
+        "the one I…"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-theone-4",
+      "english": "Do you have the shoes from the ad?",
+      "indonesian": "Ada sepatu yang di iklan itu?",
+      "chunks": [
+        {
+          "t": "Do you have "
+        },
+        {
+          "t": "the shoes ",
+          "w": "w-shoes"
+        },
+        {
+          "t": "from the ad?"
+        }
+      ],
+      "gap": {
+        "before": "Do you have the shoes ",
+        "answer": "from",
+        "after": " the ad?",
+        "options": [
+          "from",
+          "of",
+          "by"
+        ],
+        "why": "“Yang ada di iklan” adalah from the ad."
+      },
+      "audio": "audio/en/connectors/cx-theone-4.mp3",
+      "tags": [
+        "urutan kata",
+        "the one I…"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

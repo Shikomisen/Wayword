@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-indirect",
+  "connector": "Do you know where…?",
+  "gloss": "bertanya dengan sopan",
+  "title": "Do you know where…? — bertanya secara tidak langsung",
+  "pattern": "Do you know / Could you tell me ＋ kata tanya ＋ subjek ＋ kata kerja",
+  "explanation": "Kalau Where is the station? dimasukkan setelah Do you know …? atau Could you tell me …?, pertanyaannya jadi jauh lebih sopan. Urutan katanya kembali seperti kalimat biasa (subjek + kata kerja): Do you know where the station is? do, does, did juga hilang: Could you tell me what time it starts?",
+  "natural": "Saat menanyakan arah atau informasi kepada orang yang tidak kamu kenal: Excuse me, do you know where the toilets are?",
+  "stiff": "Memasukkan pertanyaan dengan urutan tanya, seperti Do you know where is the station?, adalah kesalahan yang sangat umum.",
+  "examples": [
+    {
+      "id": "gx-indirect-1",
+      "english": "Do you know where the toilets are?",
+      "indonesian": "Tahu di mana toiletnya?",
+      "chunks": [
+        {
+          "t": "Do you know ",
+          "w": "w-know"
+        },
+        {
+          "t": "where the toilets are?",
+          "w": "w-where"
+        }
+      ],
+      "gap": {
+        "before": "Do you know where the toilets ",
+        "answer": "are",
+        "after": "?",
+        "options": [
+          "are",
+          "is",
+          "do"
+        ],
+        "why": "Kata kerja datang setelah subjek (the toilets). toilets jamak, jadi are."
+      },
+      "audio": "audio/en/grammar/gx-indirect-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "Do you know where…?"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-indirect-2",
+      "english": "Could you tell me what time it starts?",
+      "indonesian": "Bisa tolong beri tahu jam berapa mulainya?",
+      "chunks": [
+        {
+          "t": "Could you tell me ",
+          "w": "w-tell"
+        },
+        {
+          "t": "what time "
+        },
+        {
+          "t": "it starts?",
+          "w": "w-start"
+        }
+      ],
+      "gap": {
+        "before": "Could you tell me what time ",
+        "answer": "it starts",
+        "after": "?",
+        "options": [
+          "it starts",
+          "does it start",
+          "starts it"
+        ],
+        "why": "Setelah Could you tell me, pakai urutan kalimat biasa (it starts)."
+      },
+      "audio": "audio/en/grammar/gx-indirect-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "Do you know where…?"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-indirect-3",
+      "english": "I’m not sure how much it costs.",
+      "indonesian": "Saya kurang tahu harganya berapa.",
+      "chunks": [
+        {
+          "t": "I’m not sure ",
+          "w": "w-sure"
+        },
+        {
+          "t": "how much "
+        },
+        {
+          "t": "it costs.",
+          "w": "w-cost"
+        }
+      ],
+      "gap": {
+        "before": "I’m not sure how much ",
+        "answer": "it costs",
+        "after": ".",
+        "options": [
+          "it costs",
+          "does it cost",
+          "costs it"
+        ],
+        "why": "“Berapa harganya” juga pakai urutan kalimat biasa: how much it costs."
+      },
+      "audio": "audio/en/grammar/gx-indirect-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "Do you know where…?"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-indirect-4",
+      "english": "Do you know if this bus goes to the airport?",
+      "indonesian": "Kamu tahu apakah bus ini ke bandara?",
+      "chunks": [
+        {
+          "t": "Do you know ",
+          "w": "w-know"
+        },
+        {
+          "t": "if this bus goes ",
+          "w": "w-go"
+        },
+        {
+          "t": "to the airport?"
+        }
+      ],
+      "gap": {
+        "before": "Do you know ",
+        "answer": "if",
+        "after": " this bus goes to the airport?",
+        "options": [
+          "if",
+          "that",
+          "what"
+        ],
+        "why": "Pertanyaan ya/tidak dimasukkan dengan if. Di sini if berarti “apakah”, bukan “kalau”."
+      },
+      "audio": "audio/en/grammar/gx-indirect-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "Do you know where…?"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

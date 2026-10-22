@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-there-is",
+  "connector": "there is / are",
+  "gloss": "ada",
+  "title": "there is, there are — ada",
+  "pattern": "There is ＋ satu benda / There are ＋ benda jamak / Is there …?",
+  "explanation": "“Ada …” dalam bahasa Inggris adalah There is (satu) atau There are (lebih dari satu). Dalam percakapan disingkat There’s: There’s a café near the station. (Ada kafe di dekat stasiun.) Pertanyaannya Is there…? / Are there…?, negatifnya There isn’t… / There aren’t…",
+  "natural": "Sangat berguna untuk menanyakan tempat: Is there a supermarket near here? (Ada supermarket di dekat sini?)",
+  "stiff": "“Ada” sering diterjemahkan jadi have: Near here have a café. salah. Yang benar There’s a café near here.",
+  "examples": [
+    {
+      "id": "gx-there-is-1",
+      "english": "There’s a supermarket near my house.",
+      "indonesian": "Ada supermarket di dekat rumah saya.",
+      "chunks": [
+        {
+          "t": "There’s "
+        },
+        {
+          "t": "a supermarket "
+        },
+        {
+          "t": "near my house.",
+          "w": "w-house"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "There’s",
+        "after": " a supermarket near my house.",
+        "options": [
+          "There’s",
+          "It’s",
+          "Have"
+        ],
+        "why": "“Ada …” = There’s (There is), bukan Have atau It’s."
+      },
+      "audio": "audio/en/grammar/gx-there-is-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "there is / are"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-there-is-2",
+      "english": "Is there a bank near here?",
+      "indonesian": "Ada bank di dekat sini?",
+      "chunks": [
+        {
+          "t": "Is there "
+        },
+        {
+          "t": "a bank ",
+          "w": "w-bank"
+        },
+        {
+          "t": "near here?",
+          "w": "w-here"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Is there",
+        "after": " a bank near here?",
+        "options": [
+          "Is there",
+          "Are there",
+          "Has"
+        ],
+        "why": "Menanyakan apakah ada satu bank: Is there…?"
+      },
+      "audio": "audio/en/grammar/gx-there-is-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "there is / are"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-there-is-3",
+      "english": "There are two beds in the room.",
+      "indonesian": "Di kamar ada dua tempat tidur.",
+      "chunks": [
+        {
+          "t": "There are "
+        },
+        {
+          "t": "two beds ",
+          "w": "w-bed"
+        },
+        {
+          "t": "in the room.",
+          "w": "w-room"
+        }
+      ],
+      "gap": {
+        "before": "There ",
+        "answer": "are",
+        "after": " two beds in the room.",
+        "options": [
+          "are",
+          "is",
+          "have"
+        ],
+        "why": "Tempat tidurnya dua (jamak), jadi are."
+      },
+      "audio": "audio/en/grammar/gx-there-is-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "there is / are"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-there-is-4",
+      "english": "There isn’t any water.",
+      "indonesian": "Tidak ada air.",
+      "chunks": [
+        {
+          "t": "There isn’t "
+        },
+        {
+          "t": "any "
+        },
+        {
+          "t": "water.",
+          "w": "w-water"
+        }
+      ],
+      "gap": {
+        "before": "There ",
+        "answer": "isn’t",
+        "after": " any water.",
+        "options": [
+          "isn’t",
+          "aren’t",
+          "don’t"
+        ],
+        "why": "water tidak dihitung, jadi isn’t."
+      },
+      "audio": "audio/en/grammar/gx-there-is-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "there is / are"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": "doctor",
+  "title": "Dokter & apotek",
+  "order": 15,
+  "description": "Menjelaskan gejala, bertanya soal obat, minta surat keterangan sakit. Ungkapan untuk GP (dokter umum langganan) dan apotek di Selandia Baru.",
+  "phrases": [
+    {
+      "id": "doc-01",
+      "english": "I’d like to see a doctor.",
+      "indonesian": "Saya ingin diperiksa dokter.",
+      "registerNotes": "Di bagian pendaftaran. Di Selandia Baru, biasanya kamu membuat janji dulu dengan GP (dokter umum langganan).",
+      "audio": "audio/en/doc-01.mp3",
+      "audioHint": "I’d like to see a doctor.",
+      "tags": [
+        "rumah sakit",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-02",
+      "english": "I’ve had a fever since yesterday.",
+      "indonesian": "Saya demam sejak kemarin.",
+      "registerNotes": "I’ve had … since … artinya 'sudah … sejak …'. Untuk menjelaskan sejak kapan gejalanya muncul.",
+      "audio": "audio/en/doc-02.mp3",
+      "audioHint": "I’ve had a fever since yesterday.",
+      "tags": [
+        "gejala"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Bahasa Indonesia tidak mengubah bentuk kata kerja, jadi I have a fever since… sering terucap. Dengan since, pakai I’ve had."
+    },
+    {
+      "id": "doc-03",
+      "english": "It hurts here.",
+      "indonesian": "Sakitnya di sini.",
+      "registerNotes": "Sambil menunjuk bagian tubuh. Andalan kalau kamu tidak tahu nama bagian tubuhnya.",
+      "audio": "audio/en/doc-03.mp3",
+      "audioHint": "It hurts here.",
+      "tags": [
+        "gejala",
+        "penting"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "'Sakit' bisa berarti sick maupun hurt. Untuk rasa nyeri di bagian tubuh, pakai hurt, bukan It’s sick here."
+    },
+    {
+      "id": "doc-04",
+      "english": "I feel sick.",
+      "indonesian": "Saya mual.",
+      "registerNotes": "Saat mual, atau saat merasa sangat tidak enak badan.",
+      "pitfallNote": "Walaupun 'sakit' = sick, I feel sick biasanya berarti 'mual'. Untuk 'saya sakit', I’m not well lebih umum.",
+      "audio": "audio/en/doc-04.mp3",
+      "audioHint": "I feel sick.",
+      "tags": [
+        "gejala"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "doc-05",
+      "english": "I’m allergic to penicillin.",
+      "indonesian": "Saya alergi penisilin.",
+      "registerNotes": "Pakai I’m allergic to … untuk menyampaikan alergi. Selalu sampaikan.",
+      "audio": "audio/en/doc-05.mp3",
+      "audioHint": "I’m allergic to penicillin.",
+      "tags": [
+        "gejala"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-06",
+      "english": "I take medicine for high blood pressure.",
+      "indonesian": "Saya minum obat darah tinggi.",
+      "registerNotes": "'Minum obat' dalam bahasa Inggris adalah take medicine. Obat yang rutin kamu minum harus selalu disampaikan.",
+      "audio": "audio/en/doc-06.mp3",
+      "audioHint": "I take medicine for high blood pressure.",
+      "tags": [
+        "rumah sakit"
+      ],
+      "difficulty": 4,
+      "pitfallNote": "'Minum obat' bukan drink medicine. Untuk obat, pakai take."
+    },
+    {
+      "id": "doc-07",
+      "english": "How often should I take it?",
+      "indonesian": "Seberapa sering saya harus meminumnya?",
+      "registerNotes": "Di apotek. Jawabannya misalnya Twice a day. (dua kali sehari).",
+      "audio": "audio/en/doc-07.mp3",
+      "audioHint": "How often should I take it?",
+      "tags": [
+        "apotek"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-08",
+      "english": "Do I need a prescription?",
+      "indonesian": "Perlu resep dokter?",
+      "registerNotes": "Obat yang bisa dibeli tanpa resep pun kadang baru diberikan setelah apoteker bertanya dulu.",
+      "audio": "audio/en/doc-08.mp3",
+      "audioHint": "Do I need a prescription?",
+      "tags": [
+        "apotek"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Resep dokter adalah prescription. recipe hanya untuk resep masakan."
+    },
+    {
+      "id": "doc-09",
+      "english": "Can I get something for a cold?",
+      "indonesian": "Ada obat untuk pilek?",
+      "registerNotes": "Dengan Can I get something for …?, kamu bisa minta obat yang cocok untuk gejalamu.",
+      "audio": "audio/en/doc-09.mp3",
+      "audioHint": "Can I get something for a cold?",
+      "tags": [
+        "apotek",
+        "penting"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Yang sehari-hari kita sebut 'flu' biasanya a cold dalam bahasa Inggris. flu (influenza) terdengar jauh lebih parah."
+    },
+    {
+      "id": "doc-10",
+      "english": "Is it serious?",
+      "indonesian": "Apakah parah?",
+      "registerNotes": "Saat penjelasan dokter membuatmu khawatir. Kalau jawabannya Nothing to worry about., artinya 'tidak perlu khawatir'.",
+      "audio": "audio/en/doc-10.mp3",
+      "audioHint": "Is it serious?",
+      "tags": [
+        "rumah sakit"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-11",
+      "english": "How long will it take to get better?",
+      "indonesian": "Berapa lama sampai sembuh?",
+      "registerNotes": "get better artinya 'membaik, sembuh'.",
+      "audio": "audio/en/doc-11.mp3",
+      "audioHint": "How long will it take to get better?",
+      "tags": [
+        "rumah sakit"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-12",
+      "english": "Could I get a medical certificate?",
+      "indonesian": "Boleh minta surat keterangan sakit?",
+      "registerNotes": "Surat yang sering dibutuhkan saat izin tidak masuk kerja.",
+      "audio": "audio/en/doc-12.mp3",
+      "audioHint": "Could I get a medical certificate?",
+      "tags": [
+        "rumah sakit"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

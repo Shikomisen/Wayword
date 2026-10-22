@@ -13,8 +13,8 @@
  * needs, e.g. `_few`), picked by Intl.PluralRules for the interface
  * language; a language without plurals just uses `key`. A key missing from a
  * dictionary falls back to English, then to the key itself — which is how
- * screens that only English-speaking learners can reach (Characters) get
- * away with no Japanese strings.
+ * screens only some courses have (Reading, for Japanese) need strings only in
+ * those courses' speaker languages: English and Indonesian, not Japanese.
  *
  * A few boot-error strings are built in: they have to show when content
  * can't be loaded at all.

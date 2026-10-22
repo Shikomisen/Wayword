@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "bus-stop-chat",
+  "title": "Mengobrol di halte bus",
+  "category": "reactions",
+  "setting": "Saat kamu menunggu bus di sebuah halte di Wellington, seorang ibu lanjut usia di sebelahmu mengajakmu bicara.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "passerby",
+      "english": "Bit windy today, isn’t it?",
+      "indonesian": "Agak berangin hari ini, ya?",
+      "audio": "audio/en/scenario/bus-stop-chat-n1.mp3",
+      "audioHint": "Bit windy today, isn’t it?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Yes, it’s really windy!",
+          "indonesian": "Iya, anginnya kencang sekali!",
+          "feedback": "Cuaca adalah topik obrolan ringan yang paling umum. Paling wajar kalau kamu setuju.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "english": "It is! Is it always like this in Wellington?",
+          "indonesian": "Betul! Apakah di Wellington selalu begini?",
+          "feedback": "Membalas dengan pertanyaan membuat obrolan berlanjut.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "english": "Yes.",
+          "indonesian": "Ya.",
+          "feedback": "Kalau hanya itu, kamu terdengar tidak mau mengobrol. Menambahkan It is! saja sudah mengubah kesannya.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "passerby",
+      "english": "Oh, you get used to it. Are you on holiday?",
+      "indonesian": "Oh, nanti juga terbiasa. Kamu sedang liburan?",
+      "audio": "audio/en/scenario/bus-stop-chat-n2.mp3",
+      "audioHint": "Oh, you get used to it. Are you on holiday?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Yes, I’m visiting from Japan for two weeks.",
+          "indonesian": "Ya, saya berkunjung dari Jepang selama dua minggu.",
+          "feedback": "Kalau kamu bilang dari mana dan berapa lama, obrolan bisa berkembang.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "english": "No, I’m studying English here.",
+          "indonesian": "Tidak, saya belajar bahasa Inggris di sini.",
+          "feedback": "Kamu memperkenalkan diri dalam satu kalimat.",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "english": "No, I’m on the bus.",
+          "indonesian": "Tidak, saya sedang naik bus.",
+          "feedback": "on holiday artinya “sedang liburan”. Ini bukan soal bus.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "passerby",
+      "english": "Japan! My daughter went there last year. She loved it.",
+      "indonesian": "Jepang! Anak perempuan saya ke sana tahun lalu. Dia suka sekali.",
+      "audio": "audio/en/scenario/bus-stop-chat-n3.mp3",
+      "audioHint": "Japan! My daughter went there last year. She loved it.",
+      "options": [
+        {
+          "phraseId": "rea-01",
+          "quality": "good",
+          "feedback": "Tanggapan paling praktis untuk menunjukkan bahwa kamu mendengarkan.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "english": "Oh, that’s great! Where did she go?",
+          "indonesian": "Wah, asyik! Dia pergi ke mana saja?",
+          "feedback": "Menanggapi lalu bertanya membuat obrolan terus mengalir.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "english": "I know.",
+          "indonesian": "Saya tahu.",
+          "feedback": "I know. bisa terdengar seperti “(itu) saya sudah tahu”. Tanggapi dengan Oh, really? atau That’s great!",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "passerby",
+      "english": "Kyoto and Tokyo, I think. Have you been to Wellington before?",
+      "indonesian": "Kyoto dan Tokyo, kalau tidak salah. Kamu pernah ke Wellington sebelumnya?",
+      "audio": "audio/en/scenario/bus-stop-chat-n4.mp3",
+      "audioHint": "Kyoto and Tokyo, I think. Have you been to Wellington before?",
+      "options": [
+        {
+          "quality": "good",
+          "english": "No, this is my first time.",
+          "indonesian": "Belum, ini pertama kalinya.",
+          "feedback": "Kalau kamu bilang ini pertama kalinya, mungkin kamu akan diberi rekomendasi.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "english": "No, I haven’t. Do you have any recommendations?",
+          "indonesian": "Belum pernah. Ada tempat yang Ibu rekomendasikan?",
+          "feedback": "Rekomendasi dari orang lokal adalah sumber informasi terbaik saat jalan-jalan.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "english": "No, I didn’t go.",
+          "indonesian": "Tidak, saya tidak pergi.",
+          "feedback": "Pertanyaan Have you been …? paling wajar dijawab No, I haven’t. “Belum pernah” menjadi I haven’t, bukan I didn’t.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "passerby",
+      "english": "Oh, here’s my bus. Enjoy your stay!",
+      "indonesian": "Oh, itu bus saya. Selamat menikmati liburanmu!",
+      "audio": "audio/en/scenario/bus-stop-chat-n5.mp3",
+      "audioHint": "Oh, here’s my bus. Enjoy your stay!",
+      "options": [
+        {
+          "quality": "good",
+          "english": "Thanks! Have a good day!",
+          "indonesian": "Terima kasih! Semoga harinya menyenangkan!",
+          "feedback": "Penutup yang ceria dan ramah.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "english": "Thank you. Nice talking to you!",
+          "indonesian": "Terima kasih. Senang mengobrol dengan Ibu!",
+          "feedback": "Nice talking to you. adalah ungkapan baku saat selesai mengobrol.",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "english": "Bye.",
+          "indonesian": "Dah.",
+          "feedback": "Menambahkan Thanks! saja sudah membuatnya jauh lebih ramah.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "english": "",
+      "indonesian": "Di Selandia Baru, mengobrol ringan dengan orang tak dikenal di halte atau di toko itu hal biasa. Topik cuaca, tanggapan Oh, really?, dan balik bertanya: itu saja sudah cukup untuk membuat obrolan berlanjut.",
+      "end": true,
+      "options": []
+    }
+  }
+}

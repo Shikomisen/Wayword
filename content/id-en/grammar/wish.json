@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-wish",
+  "connector": "I wish…",
+  "gloss": "seandainya saja …",
+  "title": "I wish… — seandainya saja …",
+  "pattern": "I wish ＋ past tense ／ I wish I could …",
+  "explanation": "I wish + past tense berarti “seandainya saja …” (padahal kenyataannya tidak begitu): I wish I had a car. (Seandainya saja aku punya mobil.) Untuk hal yang tidak bisa kamu lakukan, pakai I wish I could …: I wish I could stay longer. (Coba aku bisa tinggal lebih lama.)",
+  "natural": "Untuk menyampaikan rasa kecewa dengan halus: I wish I could come, but I’m working. (Aku ingin sekali datang, tapi aku harus kerja.)",
+  "stiff": "Untuk harapan tentang masa depan (“semoga …”), pakai hope: I hope it’s sunny tomorrow. I wish it’s sunny. itu salah. Ingat: “semoga” adalah hope, “seandainya saja” adalah wish.",
+  "examples": [
+    {
+      "id": "gx-wish-1",
+      "english": "I wish I could stay longer.",
+      "indonesian": "Seandainya saja aku bisa tinggal lebih lama.",
+      "chunks": [
+        {
+          "t": "I wish "
+        },
+        {
+          "t": "I could stay "
+        },
+        {
+          "t": "longer.",
+          "w": "w-long"
+        }
+      ],
+      "gap": {
+        "before": "I wish I ",
+        "answer": "could",
+        "after": " stay longer.",
+        "options": [
+          "could",
+          "can",
+          "will"
+        ],
+        "why": "Untuk hal yang tidak bisa dilakukan, pakai I wish I could …"
+      },
+      "audio": "audio/en/grammar/gx-wish-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "I wish…"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-wish-2",
+      "english": "I wish I had more holidays.",
+      "indonesian": "Seandainya saja liburku lebih banyak.",
+      "chunks": [
+        {
+          "t": "I wish "
+        },
+        {
+          "t": "I had ",
+          "w": "w-have"
+        },
+        {
+          "t": "more holidays."
+        }
+      ],
+      "gap": {
+        "before": "I wish I ",
+        "answer": "had",
+        "after": " more holidays.",
+        "options": [
+          "had",
+          "have",
+          "will have"
+        ],
+        "why": "Setelah I wish pakai past tense."
+      },
+      "audio": "audio/en/grammar/gx-wish-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "I wish…"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-wish-3",
+      "english": "I wish it wasn’t so cold.",
+      "indonesian": "Coba kalau tidak sedingin ini.",
+      "chunks": [
+        {
+          "t": "I wish "
+        },
+        {
+          "t": "it wasn’t "
+        },
+        {
+          "t": "so cold.",
+          "w": "w-cold"
+        }
+      ],
+      "gap": {
+        "before": "I wish it ",
+        "answer": "wasn’t",
+        "after": " so cold.",
+        "options": [
+          "wasn’t",
+          "isn’t",
+          "won’t be"
+        ],
+        "why": "Setelah I wish pakai past tense (isn’t → wasn’t)."
+      },
+      "audio": "audio/en/grammar/gx-wish-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "I wish…"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-wish-4",
+      "english": "I hope you have a great trip.",
+      "indonesian": "Semoga perjalananmu menyenangkan.",
+      "chunks": [
+        {
+          "t": "I hope ",
+          "w": "w-hope"
+        },
+        {
+          "t": "you have "
+        },
+        {
+          "t": "a great trip."
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "hope",
+        "after": " you have a great trip.",
+        "options": [
+          "hope",
+          "wish",
+          "want"
+        ],
+        "why": "Harapan untuk masa depan (“semoga”) memakai hope. wish berarti “seandainya saja”."
+      },
+      "audio": "audio/en/grammar/gx-wish-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "I wish…"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

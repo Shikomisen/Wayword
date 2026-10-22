@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "id": "words-i-problems",
+  "title": "Masalah & kesulitan",
+  "description": "Rusak, tidak berfungsi, salah, dicuri. Kata-kata untuk menjelaskan keadaan saat ada masalah.",
+  "items": [
+    {
+      "id": "w-broken",
+      "english": "broken",
+      "indonesian": "rusak",
+      "pos": "adjective",
+      "registerNotes": "It’s broken. (Ini rusak.)",
+      "audio": "audio/en/words/w-broken.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "Bukan It broken. Bilang It’s broken. Hati-hati: I’m broke. artinya 'aku tidak punya uang'."
+    },
+    {
+      "id": "w-not-working",
+      "english": "not working",
+      "indonesian": "tidak berfungsi, mati",
+      "pos": "phrase",
+      "registerNotes": "The wifi’s not working. (Wifinya tidak bisa dipakai.)",
+      "audio": "audio/en/words/w-not-working.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-leak",
+      "english": "leak",
+      "indonesian": "kebocoran; bocor",
+      "pos": "noun",
+      "registerNotes": "There’s a leak in the bathroom. (Ada kebocoran di kamar mandi.)",
+      "audio": "audio/en/words/w-leak.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-stuck",
+      "english": "stuck",
+      "indonesian": "terjebak, tidak bisa maju",
+      "pos": "adjective",
+      "registerNotes": "I’m stuck. (Aku buntu, tidak tahu harus bagaimana.)",
+      "audio": "audio/en/words/w-stuck.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-lost",
+      "english": "lost",
+      "indonesian": "tersesat; hilang",
+      "pos": "adjective",
+      "registerNotes": "I’m lost. (Saya tersesat.), I’ve lost my phone. (Ponsel saya hilang.)",
+      "audio": "audio/en/words/w-lost.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-stolen",
+      "english": "stolen",
+      "indonesian": "dicuri",
+      "pos": "adjective",
+      "registerNotes": "My bag was stolen. (Tas saya dicuri.)",
+      "audio": "audio/en/words/w-stolen.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-damaged",
+      "english": "damaged",
+      "indonesian": "rusak (terkena benturan dan sebagainya)",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-damaged.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-faulty",
+      "english": "faulty",
+      "indonesian": "cacat, rusak dari pabrik",
+      "pos": "adjective",
+      "registerNotes": "It’s faulty. (Barangnya cacat.) Ungkapan baku saat mengembalikan barang.",
+      "audio": "audio/en/words/w-faulty.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mistake",
+      "english": "mistake",
+      "indonesian": "kesalahan",
+      "pos": "noun",
+      "registerNotes": "make a mistake (membuat kesalahan)",
+      "audio": "audio/en/words/w-mistake.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "Melakukan kesalahan bukan do a mistake, tapi make a mistake."
+    },
+    {
+      "id": "w-wrong",
+      "english": "wrong",
+      "indonesian": "salah, keliru",
+      "pos": "adjective",
+      "registerNotes": "the wrong order (pesanan yang salah), What’s wrong? (Ada apa?)",
+      "audio": "audio/en/words/w-wrong.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-missing",
+      "english": "missing",
+      "indonesian": "hilang, kurang",
+      "pos": "adjective",
+      "registerNotes": "Something’s missing. (Ada yang kurang.)",
+      "audio": "audio/en/words/w-missing.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-late",
+      "english": "late",
+      "indonesian": "terlambat",
+      "pos": "adjective",
+      "registerNotes": "I’m running late. (Sepertinya aku akan terlambat.)",
+      "audio": "audio/en/words/w-late.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-overcharged",
+      "english": "overcharged",
+      "indonesian": "ditagih terlalu banyak",
+      "pos": "adjective",
+      "registerNotes": "I think I’ve been overcharged. (Sepertinya tagihan saya kelebihan.)",
+      "audio": "audio/en/words/w-overcharged.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-noisy",
+      "english": "noisy",
+      "indonesian": "berisik",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-noisy.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-dirty",
+      "english": "dirty",
+      "indonesian": "kotor",
+      "pos": "adjective",
+      "audio": "audio/en/words/w-dirty.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cancelled",
+      "english": "cancelled",
+      "indonesian": "dibatalkan",
+      "pos": "adjective",
+      "registerNotes": "The flight’s been cancelled. (Penerbangannya dibatalkan.) Ejaan Amerika: canceled.",
+      "audio": "audio/en/words/w-cancelled.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Jangan lupa -ed: cancelled. Bukan The flight is cancel."
+    },
+    {
+      "id": "w-problem",
+      "english": "problem",
+      "indonesian": "masalah",
+      "pos": "noun",
+      "registerNotes": "No problem. (Tidak apa-apa. / Sama-sama.)",
+      "audio": "audio/en/words/w-problem.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-issue",
+      "english": "issue",
+      "indonesian": "masalah, kendala",
+      "pos": "noun",
+      "registerNotes": "Lebih halus daripada problem, sering dipakai di tempat kerja.",
+      "audio": "audio/en/words/w-issue.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Isu dalam bahasa Indonesia bisa berarti kabar burung, tapi issue dalam bahasa Inggris tidak. Kabar burung: a rumour."
+    },
+    {
+      "id": "w-fix",
+      "english": "fix",
+      "indonesian": "memperbaiki",
+      "pos": "verb",
+      "registerNotes": "Can you fix it? (Bisa diperbaiki?)",
+      "audio": "audio/en/words/w-fix.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-replace",
+      "english": "replace",
+      "indonesian": "mengganti (dengan yang baru)",
+      "pos": "verb",
+      "audio": "audio/en/words/w-replace.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-manager",
+      "english": "manager",
+      "indonesian": "manajer, penanggung jawab",
+      "pos": "noun",
+      "registerNotes": "Could I speak to the manager? (Boleh saya bicara dengan manajernya?)",
+      "audio": "audio/en/words/w-manager.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-apologise",
+      "english": "apologise",
+      "indonesian": "minta maaf",
+      "pos": "verb",
+      "registerNotes": "Ejaan Amerika: apologize.",
+      "audio": "audio/en/words/w-apologise.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-emergency",
+      "english": "emergency",
+      "indonesian": "keadaan darurat",
+      "pos": "noun",
+      "registerNotes": "It’s an emergency. (Ini darurat.)",
+      "audio": "audio/en/words/w-emergency.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-police",
+      "english": "police",
+      "indonesian": "polisi",
+      "pos": "noun",
+      "audio": "audio/en/words/w-police.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-report",
+      "english": "report",
+      "indonesian": "melaporkan",
+      "pos": "verb",
+      "registerNotes": "I’d like to report a theft. (Saya ingin melaporkan pencurian.)",
+      "audio": "audio/en/words/w-report.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-deal-with",
+      "english": "deal with",
+      "indonesian": "menangani, mengurus",
+      "pos": "phrase",
+      "registerNotes": "I’ll deal with it. (Biar saya yang urus.)",
+      "audio": "audio/en/words/w-deal-with.mp3",
+      "tags": [
+        "masalah"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

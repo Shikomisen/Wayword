@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "pat-howmuch",
+  "connector": "How much…?",
+  "gloss": "Berapa harga…?",
+  "title": "How much…? — Berapa harga…?",
+  "pattern": "How much is ＋ satu barang ？／ How much are ＋ barang jamak ？",
+  "explanation": "How much is …? adalah bentuk dasar untuk menanyakan harga. Untuk satu barang pakai is, untuk dua atau lebih pakai are: How much is this? (ini berapa?) / How much are these? (yang ini berapa?, untuk beberapa barang). Untuk menanyakan total, pakai How much is it altogether?. Bahasa Indonesia tidak membedakan satu dan banyak di sini, jadi perhatikan is dan are.",
+  "natural": "Cara paling mudah dan pasti: tunjuk barangnya dan bilang How much is this?. Jawabannya misalnya It's twenty dollars. atau They're ten each. (masing-masing sepuluh dolar).",
+  "stiff": "How much? saja juga dimengerti, tapi agak ketus. How much does this cost? juga benar, tapi di toko How much is this? lebih pendek dan wajar.",
+  "examples": [
+    {
+      "id": "px-howmuch-1",
+      "english": "How much is this jacket?",
+      "indonesian": "Jaket ini berapa?",
+      "chunks": [
+        {
+          "t": "How much "
+        },
+        {
+          "t": "is "
+        },
+        {
+          "t": "this jacket?",
+          "w": "w-jacket"
+        }
+      ],
+      "gap": {
+        "before": "How much ",
+        "answer": "is",
+        "after": " this jacket?",
+        "options": [
+          "is",
+          "are",
+          "does"
+        ],
+        "why": "Untuk satu barang, pakai is."
+      },
+      "audio": "audio/en/patterns/px-howmuch-1.mp3",
+      "tags": [
+        "pola kalimat",
+        "How much…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-howmuch-2",
+      "english": "How much are these shoes?",
+      "indonesian": "Sepatu ini berapa?",
+      "chunks": [
+        {
+          "t": "How much "
+        },
+        {
+          "t": "are "
+        },
+        {
+          "t": "these shoes?",
+          "w": "w-shoes"
+        }
+      ],
+      "gap": {
+        "before": "How much ",
+        "answer": "are",
+        "after": " these shoes?",
+        "options": [
+          "are",
+          "is",
+          "do"
+        ],
+        "why": "Shoes adalah bentuk jamak, jadi pakai are. “Sepatu” dalam bahasa Indonesia tidak berubah, tapi bahasa Inggris membedakannya."
+      },
+      "audio": "audio/en/patterns/px-howmuch-2.mp3",
+      "tags": [
+        "pola kalimat",
+        "How much…?"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "px-howmuch-3",
+      "english": "How much is the flat white?",
+      "indonesian": "Flat white berapa?",
+      "chunks": [
+        {
+          "t": "How much "
+        },
+        {
+          "t": "is "
+        },
+        {
+          "t": "the flat white?",
+          "w": "w-flat-white"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "How much",
+        "after": " is the flat white?",
+        "options": [
+          "How much",
+          "How many",
+          "What much"
+        ],
+        "why": "Untuk harga, pakai How much. How many untuk bertanya jumlah (“berapa buah”). Bahasa Indonesia memakai “berapa” untuk keduanya, jadi hati-hati."
+      },
+      "audio": "audio/en/patterns/px-howmuch-3.mp3",
+      "tags": [
+        "pola kalimat",
+        "How much…?"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "px-howmuch-4",
+      "english": "How much are the scones?",
+      "indonesian": "Scone-nya berapa?",
+      "chunks": [
+        {
+          "t": "How much "
+        },
+        {
+          "t": "are "
+        },
+        {
+          "t": "the scones?",
+          "w": "w-scone"
+        }
+      ],
+      "gap": {
+        "before": "How much are the ",
+        "answer": "scones",
+        "after": "?",
+        "options": [
+          "scones",
+          "scone",
+          "a scone"
+        ],
+        "why": "Setelah are, pakai bentuk jamak (scones). Untuk harga satu buah, tanyakan How much is a scone?."
+      },
+      "audio": "audio/en/patterns/px-howmuch-4.mp3",
+      "tags": [
+        "pola kalimat",
+        "How much…?"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

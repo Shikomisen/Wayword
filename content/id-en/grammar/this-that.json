@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-this-that",
+  "connector": "this / that",
+  "gloss": "ini, itu",
+  "title": "this, that, these, those — ini, itu",
+  "pattern": "this（dekat・satu）/ that（jauh・satu）/ these（dekat・jamak）/ those（jauh・jamak）",
+  "explanation": "Benda yang dekat: this (kalau jamak, these). Yang jauh: that (kalau jamak, those). “Ini” dan “itu” cocok sekali dengan this dan that, tapi ada dua bedanya: posisinya di depan kata benda, bukan di belakang (“toko itu” → that shop), dan ada bentuk jamaknya sendiri. Contoh: this one (yang ini), that shop (toko itu), these shoes (sepatu ini).",
+  "natural": "Di toko, sambil menunjuk: Can I have this one? (Saya mau yang ini.), How much are these? (Yang ini berapa?)",
+  "stiff": "Setelah these dan those, kata bendanya harus jamak: bukan these shoe, tapi these shoes. Karena “sepatu ini” tidak berubah dalam bahasa Indonesia, -s ini mudah terlupa. To be-nya juga are (These are…).",
+  "examples": [
+    {
+      "id": "gx-this-that-1",
+      "english": "This is my friend, Ken.",
+      "indonesian": "Ini teman saya, Ken.",
+      "chunks": [
+        {
+          "t": "This ",
+          "w": "w-this"
+        },
+        {
+          "t": "is my friend, ",
+          "w": "w-friend"
+        },
+        {
+          "t": "Ken."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "This",
+        "after": " is my friend, Ken.",
+        "options": [
+          "This",
+          "These",
+          "Those"
+        ],
+        "why": "Untuk memperkenalkan orang: This is… (Ini…). Satu orang, jadi this."
+      },
+      "audio": "audio/en/grammar/gx-this-that-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "this / that"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-this-that-2",
+      "english": "How much are these?",
+      "indonesian": "Yang ini berapa harganya?",
+      "chunks": [
+        {
+          "t": "How much ",
+          "w": "w-how-much"
+        },
+        {
+          "t": "are "
+        },
+        {
+          "t": "these?"
+        }
+      ],
+      "gap": {
+        "before": "How much are ",
+        "answer": "these",
+        "after": "?",
+        "options": [
+          "these",
+          "this",
+          "that"
+        ],
+        "why": "Ada are, jadi bendanya jamak: these."
+      },
+      "audio": "audio/en/grammar/gx-this-that-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "this / that"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-this-that-3",
+      "english": "That shop is new.",
+      "indonesian": "Toko itu baru.",
+      "chunks": [
+        {
+          "t": "That shop "
+        },
+        {
+          "t": "is "
+        },
+        {
+          "t": "new.",
+          "w": "w-new"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "That",
+        "after": " shop is new.",
+        "options": [
+          "That",
+          "Those",
+          "These"
+        ],
+        "why": "Satu toko yang letaknya jauh: that. That ada di depan shop, bukan di belakang seperti “toko itu”."
+      },
+      "audio": "audio/en/grammar/gx-this-that-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "this / that"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-this-that-4",
+      "english": "Are those your shoes?",
+      "indonesian": "Itu sepatumu?",
+      "chunks": [
+        {
+          "t": "Are "
+        },
+        {
+          "t": "those "
+        },
+        {
+          "t": "your shoes?",
+          "w": "w-shoes"
+        }
+      ],
+      "gap": {
+        "before": "Are ",
+        "answer": "those",
+        "after": " your shoes?",
+        "options": [
+          "those",
+          "that",
+          "this"
+        ],
+        "why": "Beberapa benda (shoes) yang agak jauh: those."
+      },
+      "audio": "audio/en/grammar/gx-this-that-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "this / that"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

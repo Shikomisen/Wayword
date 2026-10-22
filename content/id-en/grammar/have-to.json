@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-have-to",
+  "connector": "have to",
+  "gloss": "harus …",
+  "title": "have to, must, don’t have to — harus, tidak perlu",
+  "pattern": "I have to … ／ You must … ／ You don’t have to … ／ You mustn’t …",
+  "explanation": "“Harus …” biasanya have to + kata kerja dasar: I have to work tomorrow. (Besok saya harus kerja.) must dipakai untuk aturan atau keinginan yang kuat: You must wear a seatbelt. Hati-hati dengan bentuk negatifnya: don’t have to berarti “tidak perlu, tidak harus”, sedangkan mustn’t berarti “tidak boleh, dilarang”. Artinya sangat berbeda.",
+  "natural": "Saat pamit karena ada urusan: Sorry, I have to go. (Maaf, aku harus pergi.) Dalam percakapan, I’ve got to go. juga sering terdengar.",
+  "stiff": "Kalau maksudmu “kamu tidak harus datang” lalu bilang You mustn’t come., artinya jadi “kamu tidak boleh datang”. Yang benar: You don’t have to come.",
+  "examples": [
+    {
+      "id": "gx-have-to-1",
+      "english": "I have to work on Saturday.",
+      "indonesian": "Hari Sabtu saya harus kerja.",
+      "chunks": [
+        {
+          "t": "I have to work ",
+          "w": "w-work"
+        },
+        {
+          "t": "on Saturday.",
+          "w": "w-saturday"
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "have to",
+        "after": " work on Saturday.",
+        "options": [
+          "have to",
+          "must to",
+          "have"
+        ],
+        "why": "“Harus …” memakai have to + kata kerja dasar."
+      },
+      "audio": "audio/en/grammar/gx-have-to-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "have to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-have-to-2",
+      "english": "You don’t have to pay for the water.",
+      "indonesian": "Air putihnya tidak perlu dibayar, kok.",
+      "chunks": [
+        {
+          "t": "You don’t have to pay ",
+          "w": "w-pay"
+        },
+        {
+          "t": "for the water.",
+          "w": "w-water"
+        }
+      ],
+      "gap": {
+        "before": "You ",
+        "answer": "don’t have to",
+        "after": " pay for the water.",
+        "options": [
+          "don’t have to",
+          "mustn’t",
+          "haven’t to"
+        ],
+        "why": "“Tidak perlu” adalah don’t have to. mustn’t berarti “tidak boleh”."
+      },
+      "audio": "audio/en/grammar/gx-have-to-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "have to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-have-to-3",
+      "english": "You mustn’t smoke inside.",
+      "indonesian": "Dilarang merokok di dalam ruangan.",
+      "chunks": [
+        {
+          "t": "You ",
+          "w": "w-you"
+        },
+        {
+          "t": "mustn’t smoke "
+        },
+        {
+          "t": "inside."
+        }
+      ],
+      "gap": {
+        "before": "You ",
+        "answer": "mustn’t",
+        "after": " smoke inside.",
+        "options": [
+          "mustn’t",
+          "don’t have to",
+          "must"
+        ],
+        "why": "“Tidak boleh, dilarang” adalah mustn’t."
+      },
+      "audio": "audio/en/grammar/gx-have-to-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "have to"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-have-to-4",
+      "english": "Do I have to book in advance?",
+      "indonesian": "Apakah saya harus reservasi dulu?",
+      "chunks": [
+        {
+          "t": "Do I have to book ",
+          "w": "w-book"
+        },
+        {
+          "t": "in advance?"
+        }
+      ],
+      "gap": {
+        "before": "Do I ",
+        "answer": "have to",
+        "after": " book in advance?",
+        "options": [
+          "have to",
+          "must to",
+          "should to"
+        ],
+        "why": "Pertanyaannya Do I have to …? Tidak ada must to atau should to."
+      },
+      "audio": "audio/en/grammar/gx-have-to-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "have to"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

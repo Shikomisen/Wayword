@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "id": "greetings",
+  "title": "Salam & ungkapan dasar",
+  "order": 1,
+  "description": "Ungkapan dasar yang dipakai di awal dan akhir setiap situasi. Kalau ini sudah lancar, percakapan selanjutnya jadi jauh lebih mudah.",
+  "phrases": [
+    {
+      "id": "gre-01",
+      "english": "Hi.",
+      "indonesian": "Hai. / Halo.",
+      "registerNotes": "Salam paling serbaguna, bisa dipakai kapan saja. Cocok untuk pelayan toko maupun orang yang baru kamu kenal. Sedikit lebih santai daripada Hello, tapi tidak kurang sopan.",
+      "audio": "audio/en/gre-01.mp3",
+      "audioHint": "Hi.",
+      "tags": [
+        "salam",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-02",
+      "english": "Good morning.",
+      "indonesian": "Selamat pagi.",
+      "registerNotes": "Bisa dipakai sampai sekitar tengah hari. Sering terdengar, misalnya saat sarapan di hotel. Balas saja dengan Good morning.",
+      "audio": "audio/en/gre-02.mp3",
+      "audioHint": "Good morning.",
+      "tags": [
+        "salam",
+        "pagi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-03",
+      "english": "How are you?",
+      "indonesian": "Apa kabar?",
+      "registerNotes": "Ini bagian dari salam, bukan pertanyaan sungguhan tentang kesehatanmu. Pelayan toko pun sering mengucapkannya. Di Selandia Baru, How's it going? juga sering terdengar.",
+      "pitfallNote": "Jawaban ala buku sekolah I'm fine, thank you. And you? terdengar agak kaku. Good, thanks! How are you? lebih alami.",
+      "audio": "audio/en/gre-03.mp3",
+      "audioHint": "How are you?",
+      "tags": [
+        "salam",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-04",
+      "english": "Good, thanks. How about you?",
+      "indonesian": "Baik, terima kasih. Kamu bagaimana?",
+      "registerNotes": "Jawaban standar untuk How are you?. Sopannya, tanyakan balik.",
+      "audio": "audio/en/gre-04.mp3",
+      "audioHint": "Good, thanks. How about you?",
+      "tags": [
+        "salam",
+        "jawaban"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-05",
+      "english": "Excuse me.",
+      "indonesian": "Permisi. (memanggil orang, minta jalan)",
+      "registerNotes": "Dipakai untuk menyapa orang, atau minta jalan saat mau lewat. Inilah padanan 'permisi'.",
+      "pitfallNote": "Kita sering membuka dengan 'maaf' untuk memanggil orang ('Maaf, Mbak, mau tanya…'). Dalam bahasa Inggris, untuk itu pakai Excuse me. Sorry untuk minta maaf, misalnya saat menyenggol orang.",
+      "audio": "audio/en/gre-05.mp3",
+      "audioHint": "Excuse me.",
+      "tags": [
+        "menyapa",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-06",
+      "english": "Sorry!",
+      "indonesian": "Maaf! (minta maaf)",
+      "registerNotes": "Juga dipakai saat tidak sengaja menyenggol orang, atau untuk minta diulang (Sorry?).",
+      "pitfallNote": "Saat ditolong, kita biasa bilang 'maaf merepotkan'. Dalam bahasa Inggris, Sorry yang terlalu sering bisa terdengar seperti kamu berbuat kesalahan besar. Saat dibantu, cukup Thank you.",
+      "audio": "audio/en/gre-06.mp3",
+      "audioHint": "Sorry!",
+      "tags": [
+        "minta maaf",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-07",
+      "english": "Thank you so much.",
+      "indonesian": "Terima kasih banyak.",
+      "registerNotes": "Terasa lebih tulus daripada Thank you saja. Pakai saat dibantu atau diperlakukan dengan baik.",
+      "audio": "audio/en/gre-07.mp3",
+      "audioHint": "Thank you so much.",
+      "tags": [
+        "terima kasih",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-08",
+      "english": "You're welcome.",
+      "indonesian": "Sama-sama.",
+      "registerNotes": "Jawaban saat orang berterima kasih. Di Selandia Baru, No worries. (santai saja) sangat sering dipakai. No problem. juga jawaban santai yang umum.",
+      "audio": "audio/en/gre-08.mp3",
+      "audioHint": "You're welcome.",
+      "tags": [
+        "terima kasih",
+        "jawaban"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-09",
+      "english": "Sorry, I don't understand.",
+      "indonesian": "Maaf, saya tidak mengerti.",
+      "registerNotes": "Kalau tidak mengerti, lebih baik bilang terus terang daripada diam dan mengangguk. Lawan bicaramu akan mengganti cara bicaranya untuk membantumu.",
+      "audio": "audio/en/gre-09.mp3",
+      "audioHint": "Sorry, I don't understand.",
+      "tags": [
+        "minta ulang",
+        "penting"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "Hindari I'm not understand. Kata understand adalah kata kerja, jadi bentuk negatifnya pakai don't: I don't understand."
+    },
+    {
+      "id": "gre-10",
+      "english": "Could you say that again, please?",
+      "indonesian": "Bisa tolong diulang?",
+      "registerNotes": "Ungkapan dasar saat kamu tidak menangkap ucapan orang. Bisa juga singkat: Sorry? atau Pardon?",
+      "audio": "audio/en/gre-10.mp3",
+      "audioHint": "Could you say that again, please?",
+      "tags": [
+        "minta ulang",
+        "penting"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "'Ulangi lagi' sering diterjemahkan jadi repeat again, padahal repeat sudah berarti mengulang. Cukup Could you repeat that? atau ungkapan ini."
+    },
+    {
+      "id": "gre-11",
+      "english": "Could you speak a little more slowly?",
+      "indonesian": "Bisa bicara sedikit lebih pelan?",
+      "registerNotes": "Saat kamu tidak bisa mengikuti kecepatan penutur asli. Jangan sungkan memakainya: biasanya orang dengan senang hati mengulang lebih pelan.",
+      "audio": "audio/en/gre-11.mp3",
+      "audioHint": "Could you speak a little more slowly?",
+      "tags": [
+        "minta ulang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gre-12",
+      "english": "Have a nice day!",
+      "indonesian": "Semoga harimu menyenangkan!",
+      "registerNotes": "Ucapan perpisahan yang umum, misalnya saat keluar dari toko. Have a good one! juga sering terdengar. Kalau ada yang bilang begitu, jawab Thanks, you too!",
+      "pitfallNote": "Dalam bahasa Indonesia, ucapan seperti ini cukup dijawab 'makasih'. Dalam bahasa Inggris, balas juga dengan You too! (kamu juga); kalau tidak, terdengar kurang ramah.",
+      "audio": "audio/en/gre-12.mp3",
+      "audioHint": "Have a nice day!",
+      "tags": [
+        "salam",
+        "perpisahan"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

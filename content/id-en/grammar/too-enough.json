@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-too-enough",
+  "connector": "too / enough",
+  "gloss": "terlalu · cukup",
+  "title": "too, enough — terlalu …, cukup …",
+  "pattern": "too ＋ kata sifat ／ kata sifat ＋ enough ／ enough ＋ kata benda",
+  "explanation": "too + kata sifat berarti “terlalu …” (jadi ada masalah): It’s too expensive. (Terlalu mahal.) enough berarti “cukup”, diletakkan setelah kata sifat tapi sebelum kata benda: It’s big enough. (Ukurannya sudah cukup besar.), We’ve got enough time. (Waktu kita cukup.) Perhatikan, big enough urutannya terbalik dari “cukup besar”.",
+  "natural": "Saat belanja atau memesan: It’s a bit too big. (Agak kebesaran.), Is that enough? (Segitu cukup?)",
+  "stiff": "too berarti “terlalu”, yang ada masalahnya. Kalau maksudmu “sangat” lalu bilang It’s too beautiful., artinya jadi “terlalu indah, sampai merepotkan”. Untuk memuji, pakai It’s so beautiful.",
+  "examples": [
+    {
+      "id": "gx-too-enough-1",
+      "english": "This jacket is a bit too big.",
+      "indonesian": "Jaket ini agak kebesaran.",
+      "chunks": [
+        {
+          "t": "This jacket ",
+          "w": "w-jacket"
+        },
+        {
+          "t": "is a bit "
+        },
+        {
+          "t": "too big.",
+          "w": "w-too"
+        }
+      ],
+      "gap": {
+        "before": "This jacket is a bit ",
+        "answer": "too",
+        "after": " big.",
+        "options": [
+          "too",
+          "enough",
+          "very"
+        ],
+        "why": "“Terlalu …” memakai too + kata sifat."
+      },
+      "audio": "audio/en/grammar/gx-too-enough-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "too / enough"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-too-enough-2",
+      "english": "Is it hot enough to swim?",
+      "indonesian": "Apa cuacanya cukup panas untuk berenang?",
+      "chunks": [
+        {
+          "t": "Is it "
+        },
+        {
+          "t": "hot enough ",
+          "w": "w-hot"
+        },
+        {
+          "t": "to swim?"
+        }
+      ],
+      "gap": {
+        "before": "Is it hot ",
+        "answer": "enough",
+        "after": " to swim?",
+        "options": [
+          "enough",
+          "too",
+          "so"
+        ],
+        "why": "enough diletakkan setelah kata sifat: hot enough (urutannya terbalik dari “cukup panas”)."
+      },
+      "audio": "audio/en/grammar/gx-too-enough-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "too / enough"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-too-enough-3",
+      "english": "We don’t have enough time.",
+      "indonesian": "Waktu kita tidak cukup.",
+      "chunks": [
+        {
+          "t": "We don’t have ",
+          "w": "w-have"
+        },
+        {
+          "t": "enough time."
+        }
+      ],
+      "gap": {
+        "before": "We don’t have ",
+        "answer": "enough",
+        "after": " time.",
+        "options": [
+          "enough",
+          "too",
+          "too much"
+        ],
+        "why": "enough diletakkan sebelum kata benda: enough time."
+      },
+      "audio": "audio/en/grammar/gx-too-enough-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "too / enough"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-too-enough-4",
+      "english": "It’s too late to call now.",
+      "indonesian": "Sudah terlalu malam untuk menelepon sekarang.",
+      "chunks": [
+        {
+          "t": "It’s too late ",
+          "w": "w-late"
+        },
+        {
+          "t": "to call now.",
+          "w": "w-call"
+        }
+      ],
+      "gap": {
+        "before": "It’s ",
+        "answer": "too",
+        "after": " late to call now.",
+        "options": [
+          "too",
+          "enough",
+          "so"
+        ],
+        "why": "too … to … berarti “terlalu … untuk …”."
+      },
+      "audio": "audio/en/grammar/gx-too-enough-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "too / enough"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

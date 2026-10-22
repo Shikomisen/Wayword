@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "smalltalk",
+  "title": "Obrolan ringan",
+  "order": 10,
+  "description": "Bisa ngobrol santai membuat hari-hari jauh lebih menyenangkan. Mulailah dari jawaban untuk pertanyaan yang sering ditanyakan.",
+  "phrases": [
+    {
+      "id": "sma-01",
+      "english": "I'm from Japan.",
+      "indonesian": "Saya dari Jepang.",
+      "registerNotes": "Jawaban untuk Where are you from?. Ganti Japan dengan negaramu: I'm from Indonesia. Menambahkan nama kota membuat obrolan berkembang (I'm from Bandung, in Indonesia.).",
+      "audio": "audio/en/sma-01.mp3",
+      "audioHint": "I'm from Japan.",
+      "tags": [
+        "perkenalan",
+        "penting"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "Hindari I'm come from Indonesia. Pakai salah satu saja: I'm from … atau I come from …."
+    },
+    {
+      "id": "sma-02",
+      "english": "My name is Ken.",
+      "indonesian": "Nama saya Ken.",
+      "registerNotes": "Dalam bahasa Inggris, orang biasa saling memanggil dengan nama depan. Bisa juga bilang Call me Ken. Kalau namamu panjang, sebutkan nama panggilanmu saja.",
+      "audio": "audio/en/sma-02.mp3",
+      "audioHint": "My name is Ken.",
+      "tags": [
+        "perkenalan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sma-03",
+      "english": "Nice to meet you.",
+      "indonesian": "Salam kenal.",
+      "registerNotes": "Jawabannya Nice to meet you, too. Sering juga sambil berjabat tangan.",
+      "audio": "audio/en/sma-03.mp3",
+      "audioHint": "Nice to meet you.",
+      "tags": [
+        "perkenalan",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sma-04",
+      "english": "It's my first time here.",
+      "indonesian": "Ini pertama kalinya saya ke sini.",
+      "registerNotes": "Bisa jadi pemicu orang memberimu rekomendasi.",
+      "audio": "audio/en/sma-04.mp3",
+      "audioHint": "It's my first time here.",
+      "tags": [
+        "percakapan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sma-05",
+      "english": "What do you recommend around here?",
+      "indonesian": "Ada tempat yang direkomendasikan di sekitar sini?",
+      "registerNotes": "Kalau bertanya ke warga lokal, kamu bisa dapat info yang tidak ada di buku panduan.",
+      "audio": "audio/en/sma-05.mp3",
+      "audioHint": "What do you recommend around here?",
+      "tags": [
+        "percakapan",
+        "wisata"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "sma-06",
+      "english": "I'm still learning English.",
+      "indonesian": "Saya masih belajar bahasa Inggris.",
+      "registerNotes": "Kalau disampaikan di awal, lawan bicara akan bicara lebih pelan dan jelas.",
+      "audio": "audio/en/sma-06.mp3",
+      "audioHint": "I'm still learning English.",
+      "tags": [
+        "percakapan",
+        "kata"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sma-07",
+      "english": "Could you take a picture of us?",
+      "indonesian": "Bisa tolong fotokan kami?",
+      "registerNotes": "Sering dipakai di tempat wisata. Setelah difoto, ucapkan Thank you so much!",
+      "pitfallNote": "'Fotokan kami' jangan jadi Please photo us. Kata photo jarang dipakai sebagai kata kerja. Pakai take a picture.",
+      "audio": "audio/en/sma-07.mp3",
+      "audioHint": "Could you take a picture of us?",
+      "tags": [
+        "wisata",
+        "permintaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sma-08",
+      "english": "That sounds great!",
+      "indonesian": "Kedengarannya asyik!",
+      "registerNotes": "Ungkapan serbaguna untuk menanggapi usul atau cerita orang dengan antusias. Di Selandia Baru, dalam bahasa santai juga ada Sweet as! (oke banget!).",
+      "audio": "audio/en/sma-08.mp3",
+      "audioHint": "That sounds great!",
+      "tags": [
+        "tanggapan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sma-09",
+      "english": "What do you do?",
+      "indonesian": "Kerjanya apa?",
+      "registerNotes": "Pertanyaan standar tentang pekerjaan. Jawab misalnya I'm a student. / I work in IT. Jangan lupa a sebelum nama pekerjaan.",
+      "pitfallNote": "What do you do? bukan 'lagi ngapain?' (itu What are you doing?), tapi pertanyaan tentang pekerjaan.",
+      "audio": "audio/en/sma-09.mp3",
+      "audioHint": "What do you do?",
+      "tags": [
+        "percakapan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "sma-10",
+      "english": "It was nice talking to you.",
+      "indonesian": "Senang ngobrol denganmu.",
+      "registerNotes": "Penutup yang ramah saat mengakhiri obrolan.",
+      "audio": "audio/en/sma-10.mp3",
+      "audioHint": "It was nice talking to you.",
+      "tags": [
+        "percakapan",
+        "perpisahan"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

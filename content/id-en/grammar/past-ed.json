@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-past-ed",
+  "connector": "-ed",
+  "gloss": "yang sudah terjadi (past tense)",
+  "title": "-ed — past tense",
+  "pattern": "kata kerja ＋ -ed（work → worked, live → lived, stop → stopped）",
+  "explanation": "Hal yang sudah lewat diucapkan dengan past tense. Ini hal baru: kata kerja bahasa Indonesia tidak berubah, cukup ditambah “kemarin” atau “tadi”, sedangkan kata kerja bahasa Inggris ikut berubah. Kebanyakan cukup ditambah -ed: work → worked, watch → watched. Kata yang berakhir e cukup -d (live → lived). Untuk he dan she pun bentuknya sama. Ada tiga cara ucap: worked (bunyi t), lived (bunyi d), wanted (bunyi id).",
+  "natural": "Saat cerita tentang akhir pekan atau kemarin: I watched a movie last night. (Semalam saya menonton film.)",
+  "stiff": "Walaupun sudah ada yesterday atau last week, kata kerja sering dibiarkan tetap: Yesterday I work. salah, yang benar Yesterday I worked. Ucapkan -ed di akhir dengan jelas. Dan “sudah” tidak perlu diterjemahkan jadi already: -ed sudah cukup.",
+  "examples": [
+    {
+      "id": "gx-past-ed-1",
+      "english": "I watched a movie last night.",
+      "indonesian": "Semalam saya menonton film.",
+      "chunks": [
+        {
+          "t": "I ",
+          "w": "w-i"
+        },
+        {
+          "t": "watched a movie ",
+          "w": "w-watch"
+        },
+        {
+          "t": "last night.",
+          "w": "w-night"
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "watched",
+        "after": " a movie last night.",
+        "options": [
+          "watched",
+          "watch",
+          "watching"
+        ],
+        "why": "last night itu masa lalu: watch → watched."
+      },
+      "audio": "audio/en/grammar/gx-past-ed-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "-ed"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-past-ed-2",
+      "english": "We stayed at home yesterday.",
+      "indonesian": "Kemarin kami di rumah saja.",
+      "chunks": [
+        {
+          "t": "We ",
+          "w": "w-we"
+        },
+        {
+          "t": "stayed at home "
+        },
+        {
+          "t": "yesterday.",
+          "w": "w-yesterday"
+        }
+      ],
+      "gap": {
+        "before": "We ",
+        "answer": "stayed",
+        "after": " at home yesterday.",
+        "options": [
+          "stayed",
+          "stay",
+          "stays"
+        ],
+        "why": "yesterday itu masa lalu: stay → stayed."
+      },
+      "audio": "audio/en/grammar/gx-past-ed-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "-ed"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-past-ed-3",
+      "english": "She cooked dinner for us.",
+      "indonesian": "Dia memasak makan malam untuk kami.",
+      "chunks": [
+        {
+          "t": "She ",
+          "w": "w-she"
+        },
+        {
+          "t": "cooked dinner ",
+          "w": "w-cook"
+        },
+        {
+          "t": "for us."
+        }
+      ],
+      "gap": {
+        "before": "She ",
+        "answer": "cooked",
+        "after": " dinner for us.",
+        "options": [
+          "cooked",
+          "cooks",
+          "cook"
+        ],
+        "why": "Sudah terjadi, jadi pakai past tense: cooked."
+      },
+      "audio": "audio/en/grammar/gx-past-ed-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "-ed"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-past-ed-4",
+      "english": "I called my mum on Sunday.",
+      "indonesian": "Hari Minggu saya menelepon ibu saya.",
+      "chunks": [
+        {
+          "t": "I called ",
+          "w": "w-call"
+        },
+        {
+          "t": "my mum ",
+          "w": "w-mother"
+        },
+        {
+          "t": "on Sunday.",
+          "w": "w-sunday"
+        }
+      ],
+      "gap": {
+        "before": "I ",
+        "answer": "called",
+        "after": " my mum on Sunday.",
+        "options": [
+          "called",
+          "call",
+          "calling"
+        ],
+        "why": "Dilakukan hari Minggu yang sudah lewat: called."
+      },
+      "audio": "audio/en/grammar/gx-past-ed-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "-ed"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

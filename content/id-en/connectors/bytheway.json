@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "con-bytheway",
+  "connector": "by the way",
+  "gloss": "ngomong-ngomong",
+  "title": "by the way — ngomong-ngomong",
+  "pattern": "By the way, ...",
+  "explanation": "by the way artinya “ngomong-ngomong” atau “omong-omong”. Dipakai untuk mengganti topik atau menanyakan sesuatu sekalian. Dalam pesan, sering disingkat BTW, sama seperti “btw” yang juga dipakai orang Indonesia.",
+  "natural": "Misalnya untuk menanyakan hal lain saat membayar: By the way, do you take cards? (Ngomong-ngomong, bisa pakai kartu?)",
+  "stiff": "On the way artinya “di jalan” (on the way home = di jalan pulang), dan in the way artinya “menghalangi”. Bentuknya mirip, tapi artinya sangat berbeda.",
+  "examples": [
+    {
+      "id": "cx-bytheway-1",
+      "english": "By the way, do you take cards?",
+      "indonesian": "Ngomong-ngomong, bisa bayar pakai kartu?",
+      "chunks": [
+        {
+          "t": "By the way, "
+        },
+        {
+          "t": "do you take ",
+          "w": "w-take"
+        },
+        {
+          "t": "cards?",
+          "w": "w-card"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "By",
+        "after": " the way, do you take cards?",
+        "options": [
+          "By",
+          "On",
+          "In"
+        ],
+        "why": "“Ngomong-ngomong” adalah by the way. On the way artinya “di jalan”."
+      },
+      "audio": "audio/en/connectors/cx-bytheway-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "by the way"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-bytheway-2",
+      "english": "By the way, what time do you close?",
+      "indonesian": "Ngomong-ngomong, tutup jam berapa?",
+      "chunks": [
+        {
+          "t": "By the way, "
+        },
+        {
+          "t": "what time "
+        },
+        {
+          "t": "do you close?",
+          "w": "w-close"
+        }
+      ],
+      "gap": {
+        "before": "By the way, ",
+        "answer": "what time",
+        "after": " do you close?",
+        "options": [
+          "what time",
+          "when time",
+          "what hour"
+        ],
+        "why": "“Jam berapa” adalah what time. Jangan diterjemahkan menjadi what hour atau when time."
+      },
+      "audio": "audio/en/connectors/cx-bytheway-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "by the way"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-bytheway-3",
+      "english": "Oh, by the way, I love your shop.",
+      "indonesian": "Oh, ngomong-ngomong, tokonya bagus sekali.",
+      "chunks": [
+        {
+          "t": "Oh, "
+        },
+        {
+          "t": "by the way, "
+        },
+        {
+          "t": "I love your shop.",
+          "w": "w-love"
+        }
+      ],
+      "gap": {
+        "before": "Oh, ",
+        "answer": "by the way",
+        "after": ", I love your shop.",
+        "options": [
+          "by the way",
+          "on the way",
+          "in the way"
+        ],
+        "why": "Untuk mengganti topik, pakai by the way."
+      },
+      "audio": "audio/en/connectors/cx-bytheway-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "by the way"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cx-bytheway-4",
+      "english": "I'll get a coffee on the way home.",
+      "indonesian": "Saya mau beli kopi di jalan pulang.",
+      "chunks": [
+        {
+          "t": "I'll get a coffee ",
+          "w": "w-coffee"
+        },
+        {
+          "t": "on the way "
+        },
+        {
+          "t": "home."
+        }
+      ],
+      "gap": {
+        "before": "I'll get a coffee ",
+        "answer": "on",
+        "after": " the way home.",
+        "options": [
+          "on",
+          "by",
+          "in"
+        ],
+        "why": "“Di jalan pulang” adalah on the way home. By the way artinya “ngomong-ngomong”."
+      },
+      "audio": "audio/en/connectors/cx-bytheway-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "by the way"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

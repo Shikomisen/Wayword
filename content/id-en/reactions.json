@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "reactions",
+  "title": "Tanggapan & reaksi",
+  "order": 11,
+  "description": "Ungkapan pendek untuk menunjukkan kamu mendengarkan dan menanggapi cerita orang. Percakapan dalam bahasa Inggris berjalan dengan tanggapan seperti ini.",
+  "phrases": [
+    {
+      "id": "rea-01",
+      "english": "Oh, really?",
+      "indonesian": "Oh, ya?",
+      "registerNotes": "Tanggapan paling praktis untuk menunjukkan kamu mendengarkan. Ucapkan dengan nada naik di akhir.",
+      "audio": "audio/en/rea-01.mp3",
+      "audioHint": "Oh, really?",
+      "tags": [
+        "tanggapan",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-02",
+      "english": "No way!",
+      "indonesian": "Masa sih! Yang benar?",
+      "registerNotes": "Ungkapan kaget, bukan penolakan. Juga dipakai untuk kejutan yang menyenangkan.",
+      "audio": "audio/en/rea-02.mp3",
+      "audioHint": "No way!",
+      "tags": [
+        "kaget"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-03",
+      "english": "That’s awesome!",
+      "indonesian": "Keren!",
+      "registerNotes": "Untuk kabar baik dari lawan bicara. Di Selandia Baru, Sweet as! juga sering terdengar.",
+      "audio": "audio/en/rea-03.mp3",
+      "audioHint": "That’s awesome!",
+      "tags": [
+        "senang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-04",
+      "english": "That makes sense.",
+      "indonesian": "Oh, masuk akal.",
+      "registerNotes": "Saat kamu mendengar penjelasan dan berpikir 'oh, paham, logis'.",
+      "audio": "audio/en/rea-04.mp3",
+      "audioHint": "That makes sense.",
+      "tags": [
+        "tanggapan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "rea-05",
+      "english": "Fair enough.",
+      "indonesian": "Iya juga, sih. Wajar.",
+      "registerNotes": "Saat menerima alasan atau pendapat orang. Sangat sering dipakai di Selandia Baru.",
+      "audio": "audio/en/rea-05.mp3",
+      "audioHint": "Fair enough.",
+      "tags": [
+        "tanggapan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "rea-06",
+      "english": "I know, right?",
+      "indonesian": "Iya, kan!",
+      "registerNotes": "Cara santai untuk sangat setuju dengan ucapan lawan bicara.",
+      "audio": "audio/en/rea-06.mp3",
+      "audioHint": "I know, right?",
+      "tags": [
+        "empati"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-07",
+      "english": "Good on you!",
+      "indonesian": "Hebat kamu! Bagus!",
+      "registerNotes": "Pujian yang sering dipakai di Selandia Baru dan Australia.",
+      "audio": "audio/en/rea-07.mp3",
+      "audioHint": "Good on you!",
+      "tags": [
+        "memuji"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "rea-08",
+      "english": "Oh no, that’s a shame.",
+      "indonesian": "Yah, sayang sekali.",
+      "registerNotes": "Untuk kabar yang sedikit mengecewakan. shame di sini bukan 'malu', tapi 'hal yang disayangkan'.",
+      "audio": "audio/en/rea-08.mp3",
+      "audioHint": "Oh no, that’s a shame.",
+      "tags": [
+        "simpati"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "rea-09",
+      "english": "I’m sorry to hear that.",
+      "indonesian": "Ikut prihatin mendengarnya.",
+      "registerNotes": "Ungkapan simpati saat mendengar kabar buruk.",
+      "pitfallNote": "I’m sorry tidak hanya untuk minta maaf, tapi juga untuk bersimpati. Kamu tidak sedang bilang itu salahmu.",
+      "audio": "audio/en/rea-09.mp3",
+      "audioHint": "I’m sorry to hear that.",
+      "tags": [
+        "simpati",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "rea-10",
+      "english": "That sounds fun!",
+      "indonesian": "Kedengarannya seru!",
+      "registerNotes": "Untuk bilang 'kedengarannya …' tentang hal yang kamu dengar, pakai sound + kata sifat.",
+      "audio": "audio/en/rea-10.mp3",
+      "audioHint": "That sounds fun!",
+      "tags": [
+        "empati"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "fun artinya 'seru, menyenangkan', sedangkan funny artinya 'lucu'. That sounds funny! berarti 'kedengarannya lucu'."
+    },
+    {
+      "id": "rea-11",
+      "english": "Seriously?",
+      "indonesian": "Serius?",
+      "registerNotes": "Ungkapan kaget yang santai. Kepada atasan atau orang yang lebih tua, Really? lebih aman.",
+      "audio": "audio/en/rea-11.mp3",
+      "audioHint": "Seriously?",
+      "tags": [
+        "kaget"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "rea-12",
+      "english": "What happened then?",
+      "indonesian": "Terus, bagaimana?",
+      "registerNotes": "Mendorong lawan bicara melanjutkan ceritanya. Menunjukkan kamu tertarik.",
+      "audio": "audio/en/rea-12.mp3",
+      "audioHint": "What happened then?",
+      "tags": [
+        "tanggapan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "rea-13",
+      "english": "Hmm, let me think.",
+      "indonesian": "Hmm, aku pikir dulu, ya.",
+      "registerNotes": "Saat kamu tidak langsung bisa menjawab. Jauh lebih alami daripada diam saja.",
+      "audio": "audio/en/rea-13.mp3",
+      "audioHint": "Hmm, let me think.",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

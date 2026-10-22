@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-so-do-i",
+  "connector": "So do I",
+  "gloss": "aku juga (sama)",
+  "title": "So do I, Neither do I — aku juga, aku juga tidak",
+  "pattern": "So do / am / have I. ／ Neither do / am I. ／ Me too. ／ Me neither.",
+  "explanation": "“Aku juga” dibentuk dengan So + kata kerja + I, menyesuaikan kata kerja di kalimat lawan bicara: I love it. → So do I., I’m tired. → So am I. Untuk “aku juga tidak”, pakai Neither + kata kerja + I: I don’t like it. → Neither do I. Yang lebih santai: Me too. dan Me neither. Bahasa Indonesia cukup memakai “juga”, tapi bahasa Inggris membedakan kalimat positif dan negatif.",
+  "natural": "Untuk menunjukkan kesamaan dan melanjutkan obrolan: I’m from Osaka. — Oh, so am I! (Aku dari Osaka. — Wah, aku juga!)",
+  "stiff": "Menjawab kalimat negatif dengan Me too. itu salah, walaupun dalam bahasa Indonesia kamu bilang “aku juga”. I don’t eat meat. — Me neither. (Aku juga tidak makan daging.)",
+  "examples": [
+    {
+      "id": "gx-so-do-i-1",
+      "english": "I love this song. — So do I!",
+      "indonesian": "Aku suka sekali lagu ini. — Aku juga!",
+      "chunks": [
+        {
+          "t": "I love ",
+          "w": "w-love"
+        },
+        {
+          "t": "this song. "
+        },
+        {
+          "t": "— So do I!"
+        }
+      ],
+      "gap": {
+        "before": "I love this song. — So ",
+        "answer": "do",
+        "after": " I!",
+        "options": [
+          "do",
+          "am",
+          "love"
+        ],
+        "why": "Untuk love (kata kerja biasa), pakai So do I."
+      },
+      "audio": "audio/en/grammar/gx-so-do-i-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "So do I"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-so-do-i-2",
+      "english": "I’m so tired. — So am I.",
+      "indonesian": "Aku capek sekali. — Aku juga.",
+      "chunks": [
+        {
+          "t": "I’m so "
+        },
+        {
+          "t": "tired. ",
+          "w": "w-tired"
+        },
+        {
+          "t": "— So am I."
+        }
+      ],
+      "gap": {
+        "before": "I’m so tired. — So ",
+        "answer": "am",
+        "after": " I.",
+        "options": [
+          "am",
+          "do",
+          "have"
+        ],
+        "why": "Untuk be (I’m), pakai So am I."
+      },
+      "audio": "audio/en/grammar/gx-so-do-i-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "So do I"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-so-do-i-3",
+      "english": "I don’t eat meat. — Neither do I.",
+      "indonesian": "Saya tidak makan daging. — Saya juga tidak.",
+      "chunks": [
+        {
+          "t": "I don’t eat ",
+          "w": "w-eat"
+        },
+        {
+          "t": "meat. "
+        },
+        {
+          "t": "— Neither do I."
+        }
+      ],
+      "gap": {
+        "before": "I don’t eat meat. — ",
+        "answer": "Neither",
+        "after": " do I.",
+        "options": [
+          "Neither",
+          "So",
+          "Too"
+        ],
+        "why": "“Aku juga tidak” untuk kalimat negatif memakai Neither."
+      },
+      "audio": "audio/en/grammar/gx-so-do-i-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "So do I"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-so-do-i-4",
+      "english": "I’ve never been there. — Me neither.",
+      "indonesian": "Aku belum pernah ke sana. — Aku juga belum.",
+      "chunks": [
+        {
+          "t": "I’ve never been "
+        },
+        {
+          "t": "there. ",
+          "w": "w-there"
+        },
+        {
+          "t": "— Me neither."
+        }
+      ],
+      "gap": {
+        "before": "I’ve never been there. — Me ",
+        "answer": "neither",
+        "after": ".",
+        "options": [
+          "neither",
+          "too",
+          "either"
+        ],
+        "ok": [
+          "either"
+        ],
+        "note": "Me either. juga terdengar, misalnya di Amerika, tapi Me neither. lebih umum.",
+        "why": "Jawaban santai untuk kalimat negatif: Me neither."
+      },
+      "audio": "audio/en/grammar/gx-so-do-i-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "So do I"
+      ],
+      "difficulty": 3
+    }
+  ]
+}
