@@ -97,6 +97,7 @@ async function router() {
   const path = parseHash();
 
   if (path === '/') return showHome();
+  if (path === '/settings') return showAppSettings();
 
   const m = path.match(COURSE_PATH);
   const target = m ? await course.getCourse(m[1]) : null;
@@ -171,6 +172,31 @@ async function showHome() {
   const root = clear(app());
   window.scrollTo(0, 0);
   await renderHome(root);
+}
+
+/**
+ * Settings from the picker's ⚙️ (#/settings, README §2.11): only what applies to
+ * every course — the text size, the connection, Your data and About. Each
+ * course's own settings are behind the ⚙️ inside it.
+ */
+async function showAppSettings() {
+  document.body.classList.add('at-home');
+  document.body.classList.remove('onboarding');
+  const registry = await course.loadCourses();
+  const prefs = await course.getPrefs();
+  await setLang(registry.speakers.includes(prefs.speaker) ? prefs.speaker : course.guessSpeaker(registry.speakers));
+  const translator = await fetch('mt/translator.json', { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+  const textScale = await course.getTextScale();
+  const data = await dataSection({ courseLine: false });
+  const root = clear(app());
+  window.scrollTo(0, 0);
+  root.append(
+    el('div', { class: 'screen app-settings' },
+      el('a', { class: 'back-link', href: '#/' }, `‹ ${t('coursebar.home')}`),
+      header(t('settings.title'), t('settings.appLede')),
+      el('div', { class: 'settings-list' }, textSizeSetting(textScale), connectionSetting()),
+      data,
+      aboutSection(null, translator)));
 }
 
 /**
@@ -905,12 +931,7 @@ async function settings(root, focus = null) {
               }))
           : null,
 
-        el('label', { class: 'setting' },
-          el('span', {}, el('strong', {}, t('settings.textSize')), el('span', { class: 'muted small' }, t('settings.textSizeHelp'))),
-          el('input', {
-            type: 'range', min: '0.85', max: '1.6', step: '0.05', value: String(textScale),
-            onchange: async (e) => { await course.savePrefs({ textScale: Number(e.target.value) }); applyTextSettings(); },
-          })),
+        textSizeSetting(textScale),
 
         connectionSetting()),
 
@@ -994,7 +1015,8 @@ function aboutSection(dictionary = null, translator = null) {
  * offers it, and the next time the app starts it's the new version anyway.
  */
 function showUpdateBanner() {
-  if (document.querySelector('.update-banner')) return;
+  const shown = document.querySelector('.update-banner');
+  if (shown) { relabelUpdateBanner(shown); return; }
   const banner = el('div', { class: 'update-banner', role: 'status' },
     el('span', { class: 'update-message' }, t('update.ready')),
     el('span', { class: 'update-actions' },
@@ -1007,6 +1029,17 @@ function showUpdateBanner() {
         onclick: () => location.reload(),
       }, t('update.reload'))));
   document.body.prepend(banner);
+}
+
+/**
+ * The bar in the interface language of the moment: it can appear in one
+ * course and still be up after moving to a course taught in another language.
+ */
+function relabelUpdateBanner(banner = document.querySelector('.update-banner')) {
+  if (!banner) return;
+  banner.querySelector('.update-message').textContent = t('update.ready');
+  banner.querySelector('[data-action="update-later"]').textContent = t('update.notNow');
+  banner.querySelector('[data-action="update-now"]').textContent = t('update.reload');
 }
 
 /* ---------- your data: backup and restore ---------- */
@@ -1092,7 +1125,7 @@ async function restoreFrom(file, status) {
   location.reload();
 }
 
-async function dataSection() {
+async function dataSection({ courseLine = true } = {}) {
   const prefs = await course.getPrefs();
   const undo = await backup.undoInfo();
   const status = el('p', { class: 'muted small data-status', role: 'status' });
@@ -1133,7 +1166,7 @@ async function dataSection() {
       : null,
     status,
     el('p', { class: 'muted small' }, t('settings.storage', { backend: store.backend() })),
-    offlineLine());
+    courseLine ? offlineLine() : null);
 }
 
 /** Whether this course works offline here — filled in once the service worker answers. */
@@ -1181,6 +1214,16 @@ function aidModeSetting(s, key, modes, label, help, className) {
           dataset: { mode },
           onclick: async () => { await deck.saveSettings({ [key]: mode }); router(); },
         }, t(`furigana.${mode}`)))));
+}
+
+/** The text size: for this device, so every course (README §2.11). */
+function textSizeSetting(textScale) {
+  return el('label', { class: 'setting' },
+    el('span', {}, el('strong', {}, t('settings.textSize')), el('span', { class: 'muted small' }, t('settings.textSizeHelp'))),
+    el('input', {
+      type: 'range', min: '0.85', max: '1.6', step: '0.05', value: String(textScale),
+      onchange: async (e) => { await course.savePrefs({ textScale: Number(e.target.value) }); applyTextSettings(); },
+    }));
 }
 
 /**
@@ -1306,6 +1349,7 @@ async function boot() {
   audio.primeOnFirstGesture();
   // A phone resuming the app never checks for a new version by itself.
   onUpdateReady(showUpdateBanner);
+  document.addEventListener('wayword:lang', () => relabelUpdateBanner());
   watchForUpdates();
   // Until a course is entered, speak the learner's language as best we know
   // it — this is also what the boot-error screen below will be shown in.

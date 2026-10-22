@@ -35,6 +35,8 @@ export async function renderHome(root) {
 
     clear(view).append(
       el('header', { class: 'home-hero' },
+        // Settings for every course: the text size, the connection, Your data, About (README §2.11).
+        el('a', { class: 'home-settings', href: '#/settings', 'aria-label': t('tab.settings'), title: t('tab.settings') }, '⚙️'),
         el('h1', { class: 'brand' }, 'Wayword'),
         el('p', { class: 'lede' }, t('home.tagline'))),
 

@@ -103,11 +103,18 @@ const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.
   '.png': 'image/png', '.mp3': 'audio/mpeg', '.svg': 'image/svg+xml' };
 let siteRoot = ROOT;
 let swNext = null; // a newer sw.js to serve, to see an update arrive while the app is open
+// A slow server for the translator's big files: 12 s before they start, past the
+// 10 seconds the service worker gives the network (v21 failed on phones like that).
+let slowTranslator = false;
+const SLOW_START = 12_000;
 const server = http.createServer(async (req, res) => {
   const path = decodeURIComponent(new URL(req.url, 'http://x').pathname);
   if (swNext && path === '/Wayword/sw.js') {
     res.writeHead(200, { 'content-type': 'text/javascript', 'cache-control': 'no-store' });
     return res.end(swNext);
+  }
+  if (slowTranslator && /^\/Wayword\/mt\/.*(model|bergamot-translator\.js)/.test(path)) {
+    await new Promise((resolve) => setTimeout(resolve, SLOW_START));
   }
   if (path.startsWith('/Wayword/')) {
     let file = join(siteRoot, path.slice('/Wayword/'.length));
@@ -481,6 +488,10 @@ try {
       check(`${href} renders`, v.ok && !/\bnull\b|undefined|Something went wrong/.test(v.text), v.heading);
     }
   }
+  {
+    const v = await visit(page, '#/settings');
+    check('#/settings, from the picker\'s ⚙️, renders', v.ok && /Settings|設定/.test(v.heading), v.heading);
+  }
   check('the service worker remembers every course used here, for its next version to download',
     await waitFor(page, async (ids) => {
       const hit = await (await caches.open('wayword-kept')).match('./__kept-courses.json');
@@ -535,8 +546,13 @@ try {
     await page.evaluate(() => document.documentElement.style.setProperty('--text-scale', '1.6'));
     const offered = await page.evaluate(() => document.querySelector('.translate-download')?.textContent || '');
     check('Translate offers the translator as a download, with its size', /\d+ MB/.test(offered), offered);
+    slowTranslator = !LIVE;
     await page.evaluate(() => document.querySelector('.translate-download')?.click());
-    check('…which downloads every file and checks it', await waitFor(page, () => Boolean(document.querySelector('.translator-ready')), null, 300000));
+    check(LIVE ? '…which downloads every file and checks it'
+      : `…which downloads every file and checks it, though the engine and the models each take ${SLOW_START / 1000} s to start arriving`,
+    await waitFor(page, () => Boolean(document.querySelector('.translator-ready')), null, 300000),
+    await page.evaluate(() => document.querySelector('.translate-error-detail')?.textContent || ''));
+    slowTranslator = false;
     const kept = await page.evaluate(async () => {
       const own = (await (await caches.open('wayword-translator')).keys()).length;
       const version = (await caches.keys()).find((k) => /^wayword-v\d/.test(k));
@@ -546,6 +562,9 @@ try {
     check('…into a cache of its own, not the app version\'s', kept.own === 9 && kept.copied === 0, JSON.stringify(kept));
     const said = await translateIn(page, 'Is there a pharmacy near here?');
     check('English becomes Japanese on the device, with furigana', /薬局/.test(said.target) && said.ruby > 0, said.target);
+    await page.click('.translate-result .translate-copy').catch(() => {});
+    check('…and Copy copies it', await waitFor(page, () => [...document.querySelectorAll('.toast')]
+      .some((n) => /^(Copied|コピーしました)$/.test(n.textContent)), null, 5000));
     const fits = (await page.evaluate(textSpills)).map((x) => `translate: ${x}`);
     check('…and the result fits a 320px phone at 1.6× text', fits.length === 0, fits.slice(0, 3).join(' | '));
   }

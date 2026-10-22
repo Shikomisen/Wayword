@@ -63,36 +63,85 @@ async function sha256(buffer) {
   return [...new Uint8Array(digest)].map((b) => b.toString(16).padStart(2, '0')).join('');
 }
 
+/** Why a download stopped, for the page to say: 'space', 'offline' or 'network', with the details. */
+export class DownloadError extends Error {
+  constructor(reason, detail) {
+    super(`${reason}: ${detail}`);
+    this.reason = reason;
+    this.detail = detail;
+  }
+}
+
 /**
- * Download what's missing, checking each file before it's kept. `onProgress`
- * hears bytes done of the total. A file that doesn't arrive whole, or doesn't
- * match its checksum, stops the download with an error; what was already kept
- * stays, so trying again carries on.
+ * One file, streamed straight into the cache — never held whole in memory
+ * while it downloads — then read back and checked against its sha256. A file
+ * that isn't exactly right is taken out again.
+ */
+async function fetchInto(cache, url, file, onBytes) {
+  let res;
+  try {
+    res = await fetch(url, { cache: 'no-store' });
+  } catch (err) {
+    throw new DownloadError(navigator.onLine === false ? 'offline' : 'network', `${file.path}: ${err.message || err}`);
+  }
+  if (!res.ok || !res.body) throw new DownloadError('network', `${file.path}: HTTP ${res.status}`);
+  let got = 0;
+  const counted = res.body.pipeThrough(new TransformStream({
+    transform(chunk, controller) { got += chunk.byteLength; onBytes(got); controller.enqueue(chunk); },
+  }));
+  try {
+    await cache.put(url, new Response(counted, { headers: { 'content-type': 'application/octet-stream' } }));
+  } catch (err) {
+    await cache.delete(url).catch(() => {});
+    if (err?.name === 'QuotaExceededError') throw new DownloadError('space', `${file.path}: ${err.message}`);
+    throw new DownloadError('network', `${file.path}: stopped at ${got} of ${file.size} bytes (${err.message || err})`);
+  }
+  const stored = await (await cache.match(url))?.arrayBuffer();
+  if (!stored || stored.byteLength !== file.size || (await sha256(stored)) !== file.sha256) {
+    await cache.delete(url);
+    throw new DownloadError('network', `${file.path}: arrived damaged (${stored?.byteLength ?? 0} of ${file.size} bytes)`);
+  }
+}
+
+/**
+ * Download what's missing. `onProgress` hears bytes done of the total. Each
+ * file gets three tries; one that still fails stops the download with a
+ * DownloadError, and what was already kept stays, so trying again carries on.
  */
 export async function download(files, onProgress = () => {}) {
+  // (Not navigator.storage.persist(): Firefox answers it with a permission
+  // prompt, which would hold the download up until it's answered.)
   const cache = await caches.open(CACHE_NAME);
   const total = bytesOf(files);
   let done = 0;
+  const missing = [];
   for (const f of files) {
-    const url = urlOf(f.path);
-    if (await cache.match(url)) { done += f.size; onProgress(done, total); continue; }
-    const res = await fetch(url, { cache: 'no-store' });
-    if (!res.ok || !res.body) throw new Error(`download failed: ${f.path} (${res.status})`);
-    const reader = res.body.getReader();
-    const chunks = [];
-    let got = 0;
-    for (;;) {
-      const { done: end, value } = await reader.read();
-      if (end) break;
-      chunks.push(value);
-      got += value.byteLength;
-      onProgress(done + got, total);
+    if (await cache.match(urlOf(f.path))) done += f.size;
+    else missing.push(f);
+  }
+  onProgress(done, total);
+  // Enough room for what's left? (An estimate: the browser may still say no.)
+  try {
+    const { quota, usage } = (await navigator.storage?.estimate?.()) || {};
+    const need = bytesOf(missing);
+    if (quota && quota - usage < need) throw new DownloadError('space', `needs ${need} bytes, ${quota - usage} free`);
+  } catch (err) {
+    if (err instanceof DownloadError) throw err;
+  }
+  for (const f of missing) {
+    let failure = null;
+    for (let attempt = 1; attempt <= 3; attempt++) {
+      try {
+        await fetchInto(cache, urlOf(f.path), f, (got) => onProgress(done + got, total));
+        failure = null;
+        break;
+      } catch (err) {
+        failure = err instanceof DownloadError ? err : new DownloadError('network', `${f.path}: ${err?.message || err}`);
+        if (failure.reason !== 'network') break;
+        await new Promise((resolve) => setTimeout(resolve, 1500 * attempt));
+      }
     }
-    const buffer = new Uint8Array(got);
-    let at = 0;
-    for (const c of chunks) { buffer.set(c, at); at += c.byteLength; }
-    if (got !== f.size || (await sha256(buffer)) !== f.sha256) throw new Error(`download damaged: ${f.path}`);
-    await cache.put(url, new Response(buffer, { headers: { 'content-type': 'application/octet-stream' } }));
+    if (failure) throw failure;
     done += f.size;
     onProgress(done, total);
   }

@@ -1478,6 +1478,15 @@ check('a new version taking over puts "ready" across the top, with Update now an
     bar()?.querySelector('[data-action="update-later"]')?.textContent === 'Not now');
 check('…and Settings, open at the time, offers it straight away',
   $('[data-action="reload"]')?.hidden === false && $('.update-status')?.textContent === 'A new version of Wayword is ready.');
+// Moving to the course taught in Japanese, the bar follows the interface into Japanese, and back.
+await goTo('#/ja-en/');
+check('the bar speaks the interface language: Japanese in the course taught in Japanese',
+  bar()?.querySelector('.update-message')?.textContent === '新しいバージョンの準備ができました。' &&
+    bar()?.querySelector('[data-action="update-now"]')?.textContent === '今すぐ更新' &&
+    bar()?.querySelector('[data-action="update-later"]')?.textContent === 'あとで',
+  bar()?.textContent);
+await goTo('#/en-ja/settings');
+check('…and English again back in the course taught in English', bar()?.querySelector('.update-message')?.textContent === 'A new version of Wayword is ready.');
 bar()?.querySelector('[data-action="update-later"]')?.click();
 await tick();
 check('"Not now" puts the bar away, and says where the update is',
@@ -1514,6 +1523,13 @@ check('typing finds the course’s own phrase, with its audio and where it’s f
     $('.translate-exact .translate-match .target')?.textContent.startsWith('トイレはどこですか') &&
     Boolean($('.translate-exact .translate-match .audio-btn')) && Boolean($('.translate-exact .ref-chip')),
   $('.translate-exact')?.textContent.slice(0, 80));
+let copied = null;
+// The app sees Node's navigator here (jsdom's is window.navigator): give that one a clipboard.
+Object.defineProperty(globalThis.navigator, 'clipboard', { configurable: true, value: { writeText: async (text) => { copied = text; } } });
+$('.translate-exact .translate-copy')?.click();
+for (let i = 0; i < 3; i++) await tick();
+check('Copy puts what to say on the clipboard, and says so',
+  copied === 'トイレはどこですか' && [...document.querySelectorAll('.toast')].some((n) => n.textContent === 'Copied'), copied);
 await typeIn('I lost my wallet on the train.');
 check('…and something near it under Similar, not as the answer',
   !$('.translate-exact .translate-match') && $('.translate-similar .section-title')?.textContent === 'Similar in your course' &&
@@ -1534,6 +1550,24 @@ check('what was typed is still there on coming back', $('.translate-input')?.val
 $('.translate-clear')?.click();
 for (let i = 0; i < 4; i++) await tick();
 check('Clear empties it', $('.translate-input')?.value === '' && !$('.translate-match'));
+
+console.log('\n11c. Settings from the picker');
+
+await goTo('#/');
+check('the picker has a ⚙️, top right, for the settings every course shares',
+  $('.home-settings')?.getAttribute('href') === '#/settings' && $('.home-settings')?.getAttribute('aria-label') === 'Settings');
+await goTo('#/settings');
+check('it opens Settings without a course: the picker stays the way back, with no tab bar',
+  $('h1')?.textContent === 'Settings' && $('.back-link')?.getAttribute('href') === '#/' &&
+    document.body.classList.contains('at-home') && location.hash === '#/settings', location.hash);
+check('…with what every course shares: text size, connection, Your data and About',
+  Boolean($('input[type="range"]')) && Boolean($('.connection-mode')) && Boolean($('#your-data')) && Boolean($('#about')) &&
+    text().includes('These apply to every course'));
+check('…and nothing that belongs to one course', !$('.furigana-mode') && !$('.romaji-mode') && !$('.num-input') && !$('.btn-danger') &&
+  !$('.offline-status'));
+check('…and the translator credited in About', $('.about-translator')?.textContent.includes('Bergamot'));
+$('.connection-mode [data-connection="online"]')?.click();
+await tick();
 
 console.log('\n12. Console health');
 

@@ -27,7 +27,35 @@ import * as translator from './translator.js';
 let state = { courseId: null, direction: 'say', text: '', machine: null };
 
 // The download, if one is running: it carries on when the screen is left.
-let downloading = null; // { courseId, done, total, error }
+let downloading = null; // { courseId, done, total, error: { reason, detail } }
+
+/**
+ * Copy text to the clipboard: the Clipboard API, or where that's refused (an
+ * older browser, no permission) the old way, through a hidden text box.
+ */
+async function copyText(text) {
+  try {
+    await navigator.clipboard.writeText(text);
+    toast(t('translate.copied'));
+    return;
+  } catch { /* the old way, below */ }
+  const box = el('textarea', { class: 'copy-buffer', readonly: '', 'aria-hidden': 'true' });
+  box.value = text;
+  document.body.append(box);
+  box.select();
+  let ok = false;
+  try { ok = document.execCommand('copy'); } catch { ok = false; }
+  box.remove();
+  toast(t(ok ? 'translate.copied' : 'translate.copyFailed'));
+}
+
+const copyButton = (text) => el('button', {
+  type: 'button', class: 'btn btn-small btn-ghost translate-copy', dataset: { copy: text },
+  onclick: () => copyText(text),
+}, t('translate.copy'));
+
+// What to say when it stops, by why (translator.js DownloadError).
+const FAILED = { space: 'translate.downloadNoSpace', offline: 'translate.downloadOffline', network: 'translate.downloadFailed' };
 
 export async function renderTranslate(root) {
   const content = await loadContent();
@@ -71,7 +99,8 @@ export async function renderTranslate(root) {
   const card = ({ item }) =>
     el('article', { class: 'phrase-card translate-match', dataset: { item: item.id } },
       el('div', { class: 'phrase-main' }, phraseBlock(item, s), audioButton(item, playItem)),
-      el('div', { class: 'ref-list' }, deckLink(item)));
+      el('div', { class: 'ref-list translate-match-actions' }, deckLink(item),
+        copyButton(state.direction === 'say' ? item.target : item.meaning)));
 
   let exactItems = [];
 
@@ -161,7 +190,8 @@ export async function renderTranslate(root) {
             onclick: () => startNewWith({
               target: m.furigana || targetSide.target, meaning, note: t('translate.noteMachine'), returnTo: '/translate',
             }),
-          }, t('translate.addMine')))),
+          }, t('translate.addMine')),
+          copyButton(m.output))),
       el('p', { class: 'muted small' }, t('translate.machineNote')));
   }
 
@@ -196,7 +226,9 @@ export async function renderTranslate(root) {
             el('span', { class: 'bar' }, el('span', { class: 'bar-fill', style: `width:${percent}%` })),
             el('p', { class: 'muted small translate-progress' }, t('translate.downloading', { percent })))
         : el('div', {},
-            mine?.error ? el('p', { class: 'error small' }, t('translate.downloadFailed')) : null,
+            mine?.error ? el('p', { class: 'error small translate-failed' }, t(FAILED[mine.error.reason] || 'translate.downloadFailed', { size })) : null,
+            // The details, for when it keeps failing and someone needs to know why.
+            mine?.error?.detail ? el('p', { class: 'muted small translate-error-detail' }, mine.error.detail) : null,
             el('button', { type: 'button', class: 'btn btn-primary translate-download', onclick: startDownload },
               t('translate.download', { size })))));
   }
@@ -220,7 +252,7 @@ export async function renderTranslate(root) {
       if (ready) { translator.warm(registry, pair()); runMachine(); }
     } catch (err) {
       console.error(err);
-      downloading.error = true;
+      downloading.error = { reason: err?.reason || 'network', detail: err?.detail || String(err?.message || err) };
       if (panel.isConnected) drawPanel();
     }
   }

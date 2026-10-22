@@ -59,6 +59,9 @@ export async function setLang(next) {
   lang = next && dicts[next] ? next : 'en';
   if (typeof document !== 'undefined' && document.documentElement) {
     document.documentElement.lang = lang;
+    // Whatever was drawn once and stays across screens (the update bar) relabels itself.
+    const EventType = document.defaultView?.Event || globalThis.Event;
+    if (EventType) document.dispatchEvent(new EventType('wayword:lang'));
   }
 }
 

@@ -34,7 +34,7 @@
  * Settings, it never waits at all.
  */
 
-const CACHE_VERSION = 'v21';
+const CACHE_VERSION = 'v22';
 const CACHE_PREFIX = 'wayword-';
 const CACHE = `${CACHE_PREFIX}${CACHE_VERSION}`;
 
@@ -480,16 +480,12 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // The translator's files: from their own cache once downloaded, else the
-  // network, and never copied into this version's cache (js/translator.js).
-  if (isTranslatorFile(url)) {
-    event.respondWith(
-      (async () => (await (await caches.open(TRANSLATOR)).match(request, { ignoreSearch: true })) ||
-        ((await offlineNow()) ? new Response('', { status: 504, statusText: 'Offline and not downloaded' })
-          : fromNetwork(request).catch(() => new Response('', { status: 504, statusText: 'Offline and not downloaded' }))))()
-    );
-    return;
-  }
+  // The translator's files are left to the browser: only the app fetches them,
+  // to download them into their own cache, and the translator's worker reads
+  // them from there (js/translator.js). Streamed through here, a 44 MB model
+  // on a slow connection could outrun the 10-second limit or the worker's own
+  // lifetime; and nothing should be copied into this version's cache.
+  if (isTranslatorFile(url)) return;
 
   event.respondWith(
     (async () => {

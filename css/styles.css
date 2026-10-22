@@ -469,7 +469,14 @@ body.at-home .coursebar { display: none; }
 
 /* ---------- home: language picker ---------- */
 
-.home-hero { padding: 6vh 0 8px; }
+.home-hero { padding: 6vh 0 8px; position: relative; }
+/* Settings for every course, top right of the picker, like the ⚙️ in a course's bar. */
+.home-settings {
+  position: absolute; top: 0; right: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  min-width: 40px; min-height: 40px; border-radius: 99px; font-size: 1.1rem; line-height: 1;
+}
+.home-settings:hover { background: var(--bg-raised); box-shadow: 0 0 0 1px var(--line); }
 .brand { font-size: 2.2rem; letter-spacing: -0.03em; margin-bottom: 6px; }
 .brand::after { content: "."; color: var(--accent); }
 .picker-section { margin-top: 26px; }
@@ -951,3 +958,7 @@ body.at-home:has(.update-banner) #app { padding-top: 12px; }
 .translate-progress { margin: 6px 0 0; }
 .translator-ready { display: flex; align-items: center; justify-content: space-between; gap: 8px 12px; flex-wrap: wrap; margin: 18px 0 0; }
 .translate-credit a { color: inherit; text-decoration: underline; }
+.translate-match-actions { align-items: center; }
+.translate-match-actions .translate-copy { min-height: 30px; padding: 4px 12px; }
+/* The fallback copy's text box: in the page, so it can be selected, but never seen. */
+.copy-buffer { position: fixed; top: 0; left: 0; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
