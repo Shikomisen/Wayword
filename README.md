@@ -3,7 +3,7 @@
 An offline-first language-learning app for real conversation. It runs in the browser, installs to a phone's home screen, works without a connection, and keeps every bit of progress on the device.
 
 - **Live:** https://shikomisen.github.io/Wayword/
-- **Version:** v23
+- **Version:** v24
 - **Courses:** Japanese for English speakers, and English for Japanese speakers. Indonesian is planned.
 
 This README is the complete description of the project: what it does, how it's built, the content format, the learning rules, storage, audio, offline behaviour, and how to run, test, deploy or port it. It describes what is true now. The design rationale and project history are kept in the maintainer's private notes, outside this repository.
@@ -74,8 +74,8 @@ The equivalences are approximate: the levels are built around what a learner can
 - Each course card shows where the learner is: cards due today, not started, or coming soon.
 - A ⚙️ at the top right opens the settings every course shares (§2.11).
 - The speaker defaults to the device language if the app teaches from it, otherwise English, and it's remembered.
-- Inside a course, a slim bar ("‹ Languages · English › Japanese ⚙️") leads back to the picker and holds the way into Settings. Settings has a Language row.
-- The version shows at the foot of the picker ("Wayword v23") and in Settings → About.
+- Inside a course, a slim bar ("‹ Languages · English › Japanese ⚙️") leads back to the picker and holds the way into Settings. The ⚙️ appears once the course is started: during placement, the bar holds only the way back and the pair (§2.2). Settings has a Language row.
+- The version shows at the foot of the picker ("Wayword v24") and in Settings → About.
 
 ### 2.2 Placement
 
@@ -85,6 +85,7 @@ The first visit to a course runs a short placement quiz.
 - Each is self-graded as **I know this**, **I'd recognise it** or **New to me**. Nothing is typed, and nothing is scored against the learner. The answers decide where cards enter the review deck (§7.4).
 - **Where to start:** the results suggest a level from the overall score (§7.10), and show every level to pick from instead, each with its description.
 - Afterwards, the chosen level's `starter` decks are added to study.
+- Until placement is done, the course has no tab bar and no ⚙️: every path in the course leads back to placement, so they would do nothing. The way back to the picker stays.
 
 ### 2.3 Today
 
@@ -278,7 +279,7 @@ The file format is in §8.4.
 
 ### 2.11 Settings
 
-Settings is the ⚙️ in the course bar, on every screen of a course. The ⚙️ on the picker (`#/settings`) opens just the settings every course shares: text size, connection, Your data and About.
+Settings is the ⚙️ in the course bar, on every screen of a course once placement is done (§2.2). The ⚙️ on the picker (`#/settings`) opens just the settings every course shares: text size, connection, Your data and About.
 
 - Language
 - Furigana and romaji: Always, Tap to show or Hidden (Japanese)
@@ -580,7 +581,7 @@ How unmatched routes are handled:
 
 ### 4.5 Navigation
 
-Each course has a tab bar of at most five tabs: Today, Learn, the lessons tab (if any), Reading (if the course has character sets), Scenarios (if any) and Translate (if the course has the offline translator). When a course would have more than five, Scenarios moves into Learn. Settings isn't a tab: it's the ⚙️ in the course bar, on every screen.
+Each course has a tab bar of at most five tabs: Today, Learn, the lessons tab (if any), Reading (if the course has character sets), Scenarios (if any) and Translate (if the course has the offline translator). When a course would have more than five, Scenarios moves into Learn. Settings isn't a tab: it's the ⚙️ in the course bar, on every screen after placement.
 
 | Course | Tabs | Elsewhere |
 |---|---|---|
@@ -1381,7 +1382,7 @@ Six Japanese words whose kana spelling is a common homophone (あめ, かえる,
 
 ### 10.1 Caches
 
-- **`wayword-<version>`** (`wayword-v23`): one cache per version, holding the app and the courses this device keeps.
+- **`wayword-<version>`** (`wayword-v24`): one cache per version, holding the app and the courses this device keeps.
 - **`wayword-translator`** isn't versioned either. It holds the offline translator's files (§6.15), put there by the app when the learner downloads it, and never by an install, so an update doesn't throw 109 MB away.
 - **`wayword-kept`** isn't versioned. It holds `./__kept-courses.json`, the ids of the courses this device keeps, and `./__connection.json`, `{ mode: "online" or "offline" }` (§10.6).
 - **Cleanup:** only caches named `wayword-…`, or with the legacy prefix `nihongo-tabi-…`, are ever deleted, because the `github.io` origin is shared with other sites. A worker deletes only caches from older versions, never a later version's.
@@ -1516,7 +1517,7 @@ Setup: `npm ci` installs the two dev dependencies, `jsdom` and `puppeteer-core`.
 | `tools/integration-test.mjs` | The real modules, end to end in Node (with a filesystem `fetch` and a localStorage shim): placement and the starting level (sampling only the levels that ask for it), levels (progress, the next step, moving up, older learners, listening by level), decks, queues, grading, directions, drills, mastery, listening, backups, course isolation, the romaji modes, the dictionary: inflections, lookups, readings, suggested furigana and saved messages; and Translate: the course search, and the real worker translating both ways with Mozilla's engine | 369 |
 | `tools/language-pack-test.mjs` | An Esperanto course added purely as content, run through placement, the deck, the queue and grading | 13 |
 | `tools/voice-test.mjs` | The generator against a local stand-in for Azure: headers, SSML, voice choice, rate limits, the engine switch, every no-key path | 18 |
-| `tools/render-test.mjs` | Every screen of both courses rendered in jsdom, including the starting level at placement, Today's level and next step, listening only where the level has some, Learn and the lessons list by level, furigana in a lesson's pattern, whole drill sessions, backup and restore through the real buttons, the reading-aid modes, the connection setting, the update bar with Not now, Paste a message from a message with no dictionary yet to a word added, the Translate tab's course search, directions and Copy, the picker's Settings, the update bar following the interface language, and a screen still loading when a newer tap overtakes it (drawn alone, with the right tab lit) | 380 |
+| `tools/render-test.mjs` | Every screen of both courses rendered in jsdom, including the starting level at placement, Today's level and next step, listening only where the level has some, Learn and the lessons list by level, furigana in a lesson's pattern, whole drill sessions, backup and restore through the real buttons, the reading-aid modes, the connection setting, the update bar with Not now, Paste a message from a message with no dictionary yet to a word added, the Translate tab's course search, directions and Copy, the picker's Settings, the update bar following the interface language, a screen still loading when a newer tap overtakes it (drawn alone, with the right tab lit), and the course bar during placement (no ⚙️ until it's done, and nothing stray in a planned course's) | 385 |
 | `tools/sw-test.mjs` | The real `sw.js` in a sandbox: registration in every boot path; installing, keeping courses, resuming and retrying over a flaky connection; one version replacing another on shared Cache Storage; the translator's own cache; a connection that never answers, and offline mode | 57 |
 | `tools/browser-check.mjs` | Headless Firefox through a proxy that can cut every connection, or stall them (take each request and never answer): install, per-course downloads, every tab online and offline, text fitting a 320px screen at the largest size, an IndexedDB backup round trip, an update while the app is open (Not now, then Update now from Settings), opening on a connection that never answers, online and in offline mode, pasting a message offline, with a word looked up and added, and the offline translator: downloaded into its own cache, even from a server that takes 12 s to start each big file, translating with furigana at 320px, copying, and translating again offline. `--upgrade-from <ref>` installs that build first; `--live <url>` checks the deployed site | 80 local, 75 live |
 

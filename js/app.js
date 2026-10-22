@@ -144,16 +144,14 @@ async function router() {
     return notDownloaded();
   }
   if (!entered || overtaken()) return; // overtaken while the course loaded
-  const { features } = entered;
+  const { features, started } = entered;
 
   if (target.status !== 'available') {
     return renderPlannedCourse(newPage(), target);
   }
 
   // The placement quiz gates each course on its first visit (README §7.4).
-  const onboarded = await deck.isOnboarded();
-  if (overtaken()) return;
-  if (!onboarded) {
+  if (!started) {
     const root = newPage();
     document.body.classList.add('onboarding');
     return renderPlacement(root, {
@@ -247,18 +245,20 @@ let enteredCourse = null;
  * happen once per visit to a course — remembering it as the last one, the
  * first-week romaji switch-off, cards for newly enabled directions — happens
  * only when the course changes. Returns null if a newer navigation overtook
- * this one meanwhile: the chrome is then that one's to dress.
+ * this one meanwhile: the chrome is then that one's to dress. `started` is
+ * whether placement is done here, which gates the rest of the course.
  */
 async function enterCourse(target, overtaken) {
   await course.setCourse(target.id);
+  const started = target.status === 'available' && (await deck.isOnboarded());
   if (overtaken()) return null;
   document.body.classList.remove('at-home');
-  renderCourseBar(target);
+  renderCourseBar(target, started);
 
   if (target.status !== 'available') {
     document.body.classList.add('no-tabs');
     enteredCourse = target.id;
-    return { features: {} };
+    return { features: {}, started };
   }
   document.body.classList.remove('no-tabs');
 
@@ -281,18 +281,20 @@ async function enterCourse(target, overtaken) {
     }
     // Decks activated before card directions existed only have recognition
     // cards; this adds the rest (new, so the daily cap paces them).
-    if (await deck.isOnboarded()) await deck.syncDirections();
+    if (started) await deck.syncDirections();
     // Hiragana over katakana words stays only until katakana is mastered.
     await refreshKanaAids();
   }
-  return { features };
+  return { features, started };
 }
 
 /**
  * "‹ Languages · English › Japanese ⚙️" — the way back to the picker, the pair
  * in use, and Settings, which lives here so the tab bar has room (§4.5).
+ * Settings appears once the course is started: during placement, every path
+ * in the course leads back to placement, so a ⚙️ there would do nothing.
  */
-function renderCourseBar(target) {
+function renderCourseBar(target, started) {
   const bar = document.getElementById('coursebar');
   if (!bar) return;
   const ui = target.speaker;
@@ -302,15 +304,16 @@ function renderCourseBar(target) {
       t('coursebar.pair', {
         speaker: course.languageName(target.speaker, ui),
         target: course.languageName(target.target, ui),
-      })),
-    target.status === 'available'
-      ? el('a', { class: 'coursebar-settings', href: link('/settings'), 'aria-label': t('tab.settings'), title: t('tab.settings') }, '⚙️')
-      : null);
+      })));
+  // Not append(…, null): the DOM's append writes null as the text "null".
+  if (started) {
+    bar.append(el('a', { class: 'coursebar-settings', href: link('/settings'), 'aria-label': t('tab.settings'), title: t('tab.settings') }, '⚙️'));
+  }
 }
 
 // A phone's tab bar holds five tabs comfortably. Past that, Scenarios — the
 // least central section once a course has Connectors — moves into Learn.
-// Settings isn't a tab: it's the ⚙️ in the course bar, on every screen.
+// Settings isn't a tab: it's the ⚙️ in the course bar, on every screen after placement.
 const MAX_TABS = 5;
 
 function tabsFor(content) {

@@ -142,6 +142,9 @@ check('the Indonesian placeholder opens a coming-soon screen', text().includes('
 check('a placeholder course has no tab bar', document.body.classList.contains('no-tabs'));
 check('…but does have the way back to the picker',
   document.querySelector('.coursebar-home')?.getAttribute('href') === '#/');
+check('…and nothing stray in the course bar: no ⚙️, and no "null" where it would be',
+  !document.querySelector('.coursebar-settings') && !document.getElementById('coursebar').textContent.includes('null'),
+  document.getElementById('coursebar').textContent);
 
 await goTo('#/en-ja/');
 
@@ -152,11 +155,17 @@ check('course bar names the language pair', document.querySelector('.coursebar-p
 check('placement quiz gates the app on first launch',
   text().includes('Where are you starting from?'), 'intro screen shown');
 check('onboarding hides the tab bar', document.body.classList.contains('onboarding'));
+// Settings opens only once the course is started: until then every path leads back to placement.
+check('…and the ⚙️, which would only lead back here, with nothing in its place',
+  !document.querySelector('.coursebar-settings') && Boolean(document.querySelector('.coursebar-home')) &&
+    document.getElementById('coursebar').textContent === '‹ LanguagesEnglish › Japanese',
+  document.getElementById('coursebar').textContent);
 
 $$('button').find((b) => b.textContent === 'Start')?.click();
 await tick(); await tick();
 
 check('quiz shows a card with Japanese', Boolean($('.placement-card .jp')), $('.placement-card .jp')?.textContent);
+check('…still with no ⚙️', !document.querySelector('.coursebar-settings'));
 const quizTotal = Number(text().match(/1 of (\d+)/)?.[1] ?? 0);
 check('quiz shows progress', quizTotal > 0, `${quizTotal} cards total`);
 // Placement samples First steps and Basic; Intermediate says placement: false (README §7.10).
@@ -200,6 +209,8 @@ $$('button').find((b) => b.textContent === 'Set up reading first')?.click();
 await tick(); await tick(); await tick(); await tick();
 check('"Set up reading first" lands on Reading, not Today',
   location.hash === '#/en-ja/characters' && $('h1')?.textContent === 'Reading', `${location.hash} · ${$('h1')?.textContent}`);
+check('…and the ⚙️ is back, now the course is started',
+  document.querySelector('.coursebar-settings')?.getAttribute('href') === '#/en-ja/settings');
 
 /* ---------- screens ---------- */
 
@@ -1152,6 +1163,7 @@ check('course bar shows the pair in Japanese', document.querySelector('.courseba
   document.querySelector('.coursebar-pair')?.textContent);
 check('the English course has its own placement quiz', text().includes('まずはレベルチェック'));
 check('placement intro comes from the course, in Japanese', text().includes('学校で習った英語'));
+check('…with no ⚙️ until it is done', !document.querySelector('.coursebar-settings'));
 $$('button').find((b) => b.textContent === 'はじめる')?.click();
 await tick(); await tick();
 check('placement cards show English to learn', $('.placement-card .target')?.getAttribute('lang') === 'en',
