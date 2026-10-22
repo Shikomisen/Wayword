@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-kok-sih",
+  "connector": "kok, sih",
+  "gloss": "なんで〜の？、〜よ、やわらげる言葉",
+  "title": "kok と sih",
+  "pattern": "Kok …? (なんで〜の？) · … kok. (〜だよ、ほんとに) · 質問 + sih? (やわらかく) · … sih, tapi … (〜は〜だけど)",
+  "explanation": "kok と sih は、日本語の終助詞のように文に気持ちを足す言葉です。kok は質問の頭に付くと驚きを表し、「なんで〜の？」に近くなります。予想と違った時の言い方です：Kok mahal? は「なんでこんなに高いの？」、Kok sepi? は「なんでこんなに静かなの？」。文の終わりの kok は、安心させたり、やんわり打ち消したりする「〜よ」「ほんとに」：Enak kok（おいしいよ、ほんとに）。sih は言い方をやわらげます。質問に付くと「〜の？」のような、興味のある気さくな聞き方になり（Kenapa sih?、で、なんでなの？）、言い切りに付くと「〜は〜だけど」と一度認めてから tapi（でも）に続けます：Bagus sih, tapi mahal（いいのはいいけど、高いね）。",
+  "natural": "友達や家族との会話でこれを使うと、教科書っぽさが消えて本物の話し手らしく聞こえます。kok の質問は、物ごとへの不満をやんわり言うのにも便利です：Kok lama, ya?（なんか時間かかってるね？）は、怒っているより「不思議だな」という感じに聞こえます。",
+  "stiff": "人のしたことを kok で聞くと、責めているように聞こえることがあります：同僚への Kok belum selesai? は「なんでまだ終わってないの？」。日本語の「なんで〜の？」と同じで、言い方しだいで詰問になります。sih はくだけた言葉で、きつく Apa sih? や Kenapa sih? と言うと「何なのよ」といらだって聞こえます。改まった場面では、どちらも使いません。",
+  "examples": [
+    {
+      "id": "gx-kok-sih-1",
+      "indonesian": "Kok mahal sekali, Bu?",
+      "japanese": "なんでこんなに高いんですか？",
+      "chunks": [
+        {
+          "t": "Kok "
+        },
+        {
+          "t": "mahal ",
+          "w": "w-mahal"
+        },
+        {
+          "t": "sekali, "
+        },
+        {
+          "t": "Bu?",
+          "w": "w-ibu"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kok",
+        "after": " mahal sekali, Bu?",
+        "options": [
+          "Kok",
+          "Kenapa",
+          "Sih"
+        ],
+        "ok": [
+          "Kenapa"
+        ],
+        "note": "Kenapa mahal sekali? も正解で、ふつうの「なぜ」。Kok には「思っていたのと違う」という気持ちが入ります。",
+        "why": "質問の頭で驚きを表すのは kok（「なんで〜の？」）。"
+      },
+      "registerNotes": "市場での値段交渉で。笑顔で言えば、年上の店の人にも kok はふつうに使えます。きつく言うと苦情になります。",
+      "audio": "audio/id/grammar/gx-kok-sih-1.mp3",
+      "tags": [
+        "文法",
+        "kok-sih"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-kok-sih-2",
+      "indonesian": "Enak kok, Tante. Tidak terlalu pedas.",
+      "japanese": "ほんとにおいしいですよ。そんなに辛くないです。",
+      "chunks": [
+        {
+          "t": "Enak ",
+          "w": "w-enak"
+        },
+        {
+          "t": "kok, "
+        },
+        {
+          "t": "Tante. ",
+          "w": "w-tante"
+        },
+        {
+          "t": "Tidak terlalu ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "pedas.",
+          "w": "w-pedas"
+        }
+      ],
+      "gap": {
+        "before": "Enak ",
+        "answer": "kok",
+        "after": ", Tante. Tidak terlalu pedas.",
+        "options": [
+          "kok",
+          "sih",
+          "kan"
+        ],
+        "why": "心配している人を安心させるなら、文末に kok（「〜ですよ」）。"
+      },
+      "registerNotes": "安心させる kok は温かい響きで、「辛すぎないかしら」と心配してくれるパートナーのおばさんに言っても大丈夫です。Tante は「おばさん」への呼びかけ。",
+      "audio": "audio/id/grammar/gx-kok-sih-2.mp3",
+      "tags": [
+        "文法",
+        "kok-sih"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-kok-sih-3",
+      "register": "casual",
+      "indonesian": "Ini apa sih? Lucu banget.",
+      "japanese": "これ、何なの？ すごくかわいい。",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "apa ",
+          "w": "w-apa"
+        },
+        {
+          "t": "sih? "
+        },
+        {
+          "t": "Lucu ",
+          "w": "w-lucu"
+        },
+        {
+          "t": "banget."
+        }
+      ],
+      "gap": {
+        "before": "Ini apa ",
+        "answer": "sih",
+        "after": "? Lucu banget.",
+        "options": [
+          "sih",
+          "kok",
+          "deh"
+        ],
+        "why": "質問に sih を付けると、ぶっきらぼうにならず、「〜なの？」と興味のある聞き方になります。"
+      },
+      "registerNotes": "くだけた言い方。笑顔なら興味の sih、しかめっ面だと Apa sih? は「何なのよ」になります。日本語の「何なの？」と同じで、口調しだいです。",
+      "audio": "audio/id/grammar/gx-kok-sih-3.mp3",
+      "tags": [
+        "文法",
+        "kok-sih",
+        "くだけた言い方"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kok-sih-4",
+      "register": "casual",
+      "indonesian": "Murah sih, tapi kualitasnya kurang bagus.",
+      "japanese": "安いのは安いけど、品質がいまいちです。",
+      "chunks": [
+        {
+          "t": "Murah ",
+          "w": "w-murah"
+        },
+        {
+          "t": "sih, "
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "kualitasnya ",
+          "w": "w-kualitas"
+        },
+        {
+          "t": "kurang bagus.",
+          "w": "w-bagus"
+        }
+      ],
+      "gap": {
+        "before": "Murah ",
+        "answer": "sih",
+        "after": ", tapi kualitasnya kurang bagus.",
+        "options": [
+          "sih",
+          "kok",
+          "dong"
+        ],
+        "why": "sih で一度認めて、tapi の後に本当に言いたいことを。日本語の「〜は〜だけど」と同じ流れです。"
+      },
+      "registerNotes": "くだけた言い方。Kurang bagus（あまりよくない）は「悪い」をやわらかく言う表現で、日本語の「いまいち」に近い感じです。",
+      "audio": "audio/id/grammar/gx-kok-sih-4.mp3",
+      "tags": [
+        "文法",
+        "kok-sih",
+        "くだけた言い方"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

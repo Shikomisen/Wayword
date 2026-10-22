@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-kok-sih",
+  "connector": "kok, sih",
+  "gloss": "how come?; really; softening",
+  "title": "kok and sih",
+  "pattern": "Kok …? (how come?) · … kok. (really, it is) · question + sih? (softer) · … sih, tapi … (granted, but)",
+  "explanation": "kok at the start of a question shows surprise, like 'how come?': you expected something else. Kok mahal? is 'Why's it so expensive?', and Kok sepi? is 'How come it's so quiet?'. At the end of a statement, kok reassures or gently contradicts, like 'really' or 'honestly': Enak kok (It's nice, really). sih softens: in a question it makes you sound curious and chatty (Kenapa sih? So why, then?), and after a statement it grants a point before a but: Bagus sih, tapi mahal (It's nice, sure, but it's pricey).",
+  "natural": "With friends and family these make you sound like a real speaker rather than a textbook. A kok question is also a gentle way to complain about things: Kok lama, ya? (What's taking so long?) sounds puzzled rather than angry.",
+  "stiff": "A kok question about what someone did can sound like blame: Kok belum selesai? to a colleague is 'Why isn't it done yet?'. sih is casual, and a sharp Apa sih? or Kenapa sih? sounds irritated, like 'What now?'. In formal settings, leave both out.",
+  "examples": [
+    {
+      "id": "gx-kok-sih-1",
+      "indonesian": "Kok mahal sekali, Bu?",
+      "english": "How come it's so expensive?",
+      "chunks": [
+        {
+          "t": "Kok "
+        },
+        {
+          "t": "mahal ",
+          "w": "w-mahal"
+        },
+        {
+          "t": "sekali, "
+        },
+        {
+          "t": "Bu?",
+          "w": "w-ibu"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kok",
+        "after": " mahal sekali, Bu?",
+        "options": [
+          "Kok",
+          "Kenapa",
+          "Sih"
+        ],
+        "ok": [
+          "Kenapa"
+        ],
+        "note": "Kenapa mahal sekali? is right too, a plain 'why'. Kok adds that you didn't expect it.",
+        "why": "Surprise at the start of a question: kok, 'how come?'."
+      },
+      "registerNotes": "Bargaining at a market: said with a smile, kok is normal even to an older stallholder. Said sharply, it's a complaint.",
+      "audio": "audio/id/grammar/gx-kok-sih-1.mp3",
+      "tags": [
+        "grammar",
+        "kok-sih"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-kok-sih-2",
+      "indonesian": "Enak kok, Tante. Tidak terlalu pedas.",
+      "english": "It's good, honestly. It's not too spicy.",
+      "chunks": [
+        {
+          "t": "Enak ",
+          "w": "w-enak"
+        },
+        {
+          "t": "kok, "
+        },
+        {
+          "t": "Tante. ",
+          "w": "w-tante"
+        },
+        {
+          "t": "Tidak terlalu ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "pedas.",
+          "w": "w-pedas"
+        }
+      ],
+      "gap": {
+        "before": "Enak ",
+        "answer": "kok",
+        "after": ", Tante. Tidak terlalu pedas.",
+        "options": [
+          "kok",
+          "sih",
+          "kan"
+        ],
+        "why": "Reassuring someone who's worried: kok at the end, 'really, it is'."
+      },
+      "registerNotes": "Reassuring kok is warm, and fine even with a partner's aunt who's worried the food is too hot for you.",
+      "audio": "audio/id/grammar/gx-kok-sih-2.mp3",
+      "tags": [
+        "grammar",
+        "kok-sih"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-kok-sih-3",
+      "register": "casual",
+      "indonesian": "Ini apa sih? Lucu banget.",
+      "english": "What is this thing? It's so cute.",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "apa ",
+          "w": "w-apa"
+        },
+        {
+          "t": "sih? "
+        },
+        {
+          "t": "Lucu ",
+          "w": "w-lucu"
+        },
+        {
+          "t": "banget."
+        }
+      ],
+      "gap": {
+        "before": "Ini apa ",
+        "answer": "sih",
+        "after": "? Lucu banget.",
+        "options": [
+          "sih",
+          "kok",
+          "deh"
+        ],
+        "why": "sih in a question makes it curious and chatty rather than blunt."
+      },
+      "registerNotes": "Casual. Said with a smile, sih is curious; said with a frown, Apa sih? means 'What now?'.",
+      "audio": "audio/id/grammar/gx-kok-sih-3.mp3",
+      "tags": [
+        "grammar",
+        "kok-sih",
+        "casual"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kok-sih-4",
+      "register": "casual",
+      "indonesian": "Murah sih, tapi kualitasnya kurang bagus.",
+      "english": "It's cheap, sure, but the quality isn't great.",
+      "chunks": [
+        {
+          "t": "Murah ",
+          "w": "w-murah"
+        },
+        {
+          "t": "sih, "
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "kualitasnya ",
+          "w": "w-kualitas"
+        },
+        {
+          "t": "kurang bagus.",
+          "w": "w-bagus"
+        }
+      ],
+      "gap": {
+        "before": "Murah ",
+        "answer": "sih",
+        "after": ", tapi kualitasnya kurang bagus.",
+        "options": [
+          "sih",
+          "kok",
+          "dong"
+        ],
+        "why": "sih grants the first point, and tapi brings the real one."
+      },
+      "registerNotes": "Casual. Kurang bagus (less than good) is the soft way to say something's poor.",
+      "audio": "audio/id/grammar/gx-kok-sih-4.mp3",
+      "tags": [
+        "grammar",
+        "kok-sih",
+        "casual"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

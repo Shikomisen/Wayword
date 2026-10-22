@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "id": "con-walaupun",
+  "connector": "walaupun",
+  "gloss": "〜のに、〜けれども",
+  "title": "walaupun — 〜のに、〜けれども",
+  "pattern": "Walaupun A, (tetap) B · B walaupun A",
+  "explanation": "walaupun は「〜のに」「〜けれども」。ふつうなら妨げになりそうなことがあったのに、そうならなかった時に使います：Walaupun hujan, kami tetap pergi.（雨だったけど、それでも出かけました）。日本語は「雨なのに」と最後に付けますが、インドネシア語は walaupun hujan と前に置きます。walaupun の部分は、先に置いてコンマで区切るか、主な文の後ろにコンマなしで置きます：Dia tetap kerja walaupun sakit. 主な文にはよく tetap（それでも）を入れて、何も変わらなかったことを強調します。meskipun も全く同じ意味で、話し言葉では短く walau とも言います。",
+  "natural": "どんな場面でも使えます。何かがあっても予定どおりにした時や、意外にいい結果だった時に：Meskipun murah, makanannya enak.（安いのに、料理はおいしい）",
+  "stiff": "Walaupun hujan, tapi … のように tapi を重ねないでください。日本語の「雨だったけど、でも…」の感覚で重ねがちですが、つなぎ言葉は1つで十分です。walaupun と組むのは tetap です。早い会話では walaupun を使わずに言うことも多いです：Hujan, tapi kami tetap pergi.",
+  "examples": [
+    {
+      "id": "cx-walaupun-1",
+      "indonesian": "Walaupun hujan, kami tetap pergi.",
+      "japanese": "雨だったけど、それでも出かけました。",
+      "chunks": [
+        {
+          "t": "Walaupun "
+        },
+        {
+          "t": "hujan, ",
+          "w": "w-hujan"
+        },
+        {
+          "t": "kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "tetap pergi.",
+          "w": "w-pergi"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Walaupun",
+        "after": " hujan, kami tetap pergi.",
+        "options": [
+          "Walaupun",
+          "Karena",
+          "Jadi"
+        ],
+        "why": "雨で行けなくなりそうなのに行った：walaupun（〜のに）。tetap は「それでも」。"
+      },
+      "combine": {
+        "a": "Hujan.",
+        "b": "Kami tetap pergi.",
+        "distractors": [
+          "Karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-walaupun-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "walaupun"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-walaupun-2",
+      "indonesian": "Dia tetap kerja walaupun sakit.",
+      "japanese": "彼女は体調が悪いのに、仕事に行きました。",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "tetap kerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "walaupun "
+        },
+        {
+          "t": "sakit.",
+          "w": "w-sakit"
+        }
+      ],
+      "gap": {
+        "before": "Dia tetap kerja ",
+        "answer": "walaupun",
+        "after": " sakit.",
+        "options": [
+          "walaupun",
+          "karena",
+          "jadi"
+        ],
+        "why": "体調が悪ければ家にいるはずなのに：walaupun。karena だと「体調が悪いから仕事に行った」になってしまいます。"
+      },
+      "combine": {
+        "a": "Dia sakit.",
+        "b": "Dia tetap kerja.",
+        "distractors": [
+          "karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-walaupun-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "walaupun"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-walaupun-3",
+      "indonesian": "Meskipun murah, makanannya enak sekali.",
+      "japanese": "安いのに、料理はとてもおいしいです。",
+      "chunks": [
+        {
+          "t": "Meskipun "
+        },
+        {
+          "t": "murah, ",
+          "w": "w-murah"
+        },
+        {
+          "t": "makanannya "
+        },
+        {
+          "t": "enak sekali.",
+          "w": "w-enak"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Meskipun",
+        "after": " murah, makanannya enak sekali.",
+        "options": [
+          "Meskipun",
+          "Walaupun",
+          "Karena"
+        ],
+        "ok": [
+          "Walaupun"
+        ],
+        "note": "Walaupun と meskipun は全く同じ意味です。どちらを使っても大丈夫です。",
+        "why": "安い料理はそれほどでもないと思ったら、おいしい：meskipun（〜のに）。"
+      },
+      "audio": "audio/id/connectors/cx-walaupun-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "walaupun",
+        "食べ物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-walaupun-4",
+      "indonesian": "Walaupun sudah jam sepuluh, tokonya belum buka.",
+      "japanese": "もう10時なのに、お店はまだ開いていません。",
+      "chunks": [
+        {
+          "t": "Walaupun "
+        },
+        {
+          "t": "sudah jam sepuluh, ",
+          "w": "w-jam"
+        },
+        {
+          "t": "tokonya ",
+          "w": "w-toko"
+        },
+        {
+          "t": "belum buka.",
+          "w": "w-belum"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Walaupun",
+        "after": " sudah jam sepuluh, tokonya belum buka.",
+        "options": [
+          "Walaupun",
+          "Karena",
+          "Sesudah"
+        ],
+        "why": "開いているはずの時間なのに開いていない：walaupun。"
+      },
+      "combine": {
+        "a": "Sudah jam sepuluh.",
+        "b": "Tokonya belum buka.",
+        "distractors": [
+          "Karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-walaupun-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "walaupun"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

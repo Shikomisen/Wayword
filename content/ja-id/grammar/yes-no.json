@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-yes-no",
+  "connector": "ya / tidak",
+  "gloss": "はい・いいえで答える質問",
+  "title": "はい・いいえの質問",
+  "pattern": "Ini pedas? (語尾を上げる) · Apakah …? (かたい言い方) · Ada? — Ada. / Tidak ada.",
+  "explanation": "文の最後を上げて言うだけで、はい・いいえの質問になります。日本語の「辛い？」と同じで、「か」にあたる言葉はいりません：Ini pedas?（これ、辛いですか）は Ini pedas（これは辛いです）と同じ言葉です。書き言葉やかたい場面では、文頭に apakah を付けます：Apakah ada pertanyaan?（質問はありますか）。答える時は ya だけで済ませず、質問の中心の言葉をくり返します：Ada air? — Ada. Bisa? — Bisa. 「いいえ」も、合う否定で答えます：Tidak ada、Bukan、sudah の質問なら Belum（まだ）。",
+  "natural": "話し言葉のふつうの「はい」は iya。小さく ya, ya と言うと、日本語の「うん、うん」のように聞いている合図になります。質問の言葉をくり返すと、自然で感じよく聞こえます：Suka? — Suka!（好き？ — 好き！）",
+  "stiff": "日本人は何にでも ya と答えがちですが、ya や tidak だけの答えは外国人っぽく聞こえます。Ini kopi? への「いいえ」は Bukan、Sudah makan? には Belum（まだ）で、tidak とは言いません。分からないまま ya と言うと、そのまま「はい」と受け取られるので注意。apakah を会話で使うと、書類やニュースのように聞こえます。",
+  "examples": [
+    {
+      "id": "gx-yes-no-1",
+      "indonesian": "Ada air putih? Ada.",
+      "japanese": "お水ありますか？ — ありますよ。",
+      "chunks": [
+        {
+          "t": "Ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "air putih? ",
+          "w": "w-air-putih"
+        },
+        {
+          "t": "Ada.",
+          "w": "w-ada"
+        }
+      ],
+      "gap": {
+        "before": "Ada air putih? ",
+        "answer": "Ada",
+        "after": ".",
+        "options": [
+          "Ada",
+          "Sudah",
+          "Bukan"
+        ],
+        "why": "質問の言葉で答えます：Ada? — Ada.（ありますか — あります）"
+      },
+      "audio": "audio/id/grammar/gx-yes-no-1.mp3",
+      "tags": [
+        "文法",
+        "はい・いいえ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-yes-no-2",
+      "indonesian": "Ini kopi? Bukan, ini teh.",
+      "japanese": "これ、コーヒー？ — いいえ、お茶です。",
+      "chunks": [
+        {
+          "t": "Ini kopi? ",
+          "w": "w-kopi"
+        },
+        {
+          "t": "Bukan, ",
+          "w": "w-bukan"
+        },
+        {
+          "t": "ini teh.",
+          "w": "w-teh"
+        }
+      ],
+      "gap": {
+        "before": "Ini kopi? ",
+        "answer": "Bukan",
+        "after": ", ini teh.",
+        "options": [
+          "Bukan",
+          "Tidak",
+          "Belum"
+        ],
+        "why": "kopi は名詞なので、「いいえ」は bukan。"
+      },
+      "audio": "audio/id/grammar/gx-yes-no-2.mp3",
+      "tags": [
+        "文法",
+        "はい・いいえ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-yes-no-3",
+      "indonesian": "Bisa bahasa Inggris? Bisa, sedikit.",
+      "japanese": "英語、話せますか？ — はい、少し。",
+      "chunks": [
+        {
+          "t": "Bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "bahasa Inggris? "
+        },
+        {
+          "t": "Bisa, ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "sedikit.",
+          "w": "w-sedikit"
+        }
+      ],
+      "gap": {
+        "before": "Bisa bahasa Inggris? ",
+        "answer": "Bisa",
+        "after": ", sedikit.",
+        "options": [
+          "Bisa",
+          "Ada",
+          "Sudah"
+        ],
+        "why": "bisa で聞かれたので、「はい」は Bisa。"
+      },
+      "audio": "audio/id/grammar/gx-yes-no-3.mp3",
+      "tags": [
+        "文法",
+        "はい・いいえ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-yes-no-4",
+      "indonesian": "Apakah ada pertanyaan?",
+      "japanese": "何か質問はありますか。",
+      "chunks": [
+        {
+          "t": "Apakah "
+        },
+        {
+          "t": "ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "pertanyaan?",
+          "w": "w-pertanyaan"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Apakah",
+        "after": " ada pertanyaan?",
+        "options": [
+          "Apakah",
+          "Kenapa",
+          "Bagaimana"
+        ],
+        "why": "かたい話し方では、文頭の apakah がはい・いいえの質問の印になります。"
+      },
+      "audio": "audio/id/grammar/gx-yes-no-4.mp3",
+      "tags": [
+        "文法",
+        "はい・いいえ"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "id": "con-supaya",
+  "connector": "supaya, biar",
+  "gloss": "〜ように",
+  "title": "supaya, biar — 〜ように",
+  "pattern": "A supaya B · A biar B",
+  "explanation": "supaya は目的の「〜ように」。これから起きてほしいことを言います：Saya berangkat pagi supaya tidak terlambat.（遅れないように、朝早く出ます）。日本語の「遅れないように」とは逆に、supaya は前に置きます。目的の部分には別の主語も入れられます：Tolong bicara pelan-pelan supaya saya mengerti.（私がわかるように、ゆっくり話してください）。agar は同じ意味のかたい言い方、biar はくだけた言い方で、友達同士でよく使います：Kita berangkat sekarang biar nggak kena macet. 主語が同じで「〜するために」と言うだけなら untuk も使えます：Saya ke Jakarta untuk kerja.（仕事でジャカルタに行きます）",
+  "natural": "supaya はふだんのていねいな会話に、biar は友達や家族と、agar は看板、説明書、スピーチで。",
+  "stiff": "会話で agar を使うと、壁の貼り紙のように聞こえます。役所の人などに biar を使うと、くだけすぎに聞こえることがあります。また biar には「〜させて」の意味もあります：Biar saya yang bayar.（私に払わせて）",
+  "examples": [
+    {
+      "id": "cx-supaya-1",
+      "indonesian": "Saya berangkat pagi supaya tidak terlambat.",
+      "japanese": "遅れないように、朝早く出ます。",
+      "chunks": [
+        {
+          "t": "Saya berangkat ",
+          "w": "w-berangkat"
+        },
+        {
+          "t": "pagi ",
+          "w": "w-pagi"
+        },
+        {
+          "t": "supaya "
+        },
+        {
+          "t": "tidak terlambat.",
+          "w": "w-tidak"
+        }
+      ],
+      "gap": {
+        "before": "Saya berangkat pagi ",
+        "answer": "supaya",
+        "after": " tidak terlambat.",
+        "options": [
+          "supaya",
+          "karena",
+          "walaupun"
+        ],
+        "why": "supaya は望むこと（遅れないこと）を見すえる「〜ように」。karena だと、すでに本当のことを理由として言うことになります。"
+      },
+      "combine": {
+        "a": "Saya berangkat pagi.",
+        "b": "Saya tidak mau terlambat.",
+        "distractors": [
+          "karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-supaya-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "supaya"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-supaya-2",
+      "indonesian": "Tolong bicara pelan-pelan supaya saya mengerti.",
+      "japanese": "私がわかるように、ゆっくり話してください。",
+      "chunks": [
+        {
+          "t": "Tolong bicara ",
+          "w": "w-bicara"
+        },
+        {
+          "t": "pelan-pelan ",
+          "w": "w-pelan"
+        },
+        {
+          "t": "supaya "
+        },
+        {
+          "t": "saya mengerti.",
+          "w": "w-mengerti"
+        }
+      ],
+      "gap": {
+        "before": "Tolong bicara pelan-pelan ",
+        "answer": "supaya",
+        "after": " saya mengerti.",
+        "options": [
+          "supaya",
+          "karena",
+          "jadi"
+        ],
+        "why": "わかることが望む結果：supaya（〜ように）。"
+      },
+      "combine": {
+        "a": "Tolong bicara pelan-pelan.",
+        "b": "Saya mau mengerti.",
+        "distractors": [
+          "jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-supaya-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "supaya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-supaya-3",
+      "indonesian": "Minum air putih yang banyak supaya cepat sembuh.",
+      "japanese": "早く治るように、水をたくさん飲んでください。",
+      "chunks": [
+        {
+          "t": "Minum air putih ",
+          "w": "w-air-putih"
+        },
+        {
+          "t": "yang banyak ",
+          "w": "w-banyak"
+        },
+        {
+          "t": "supaya "
+        },
+        {
+          "t": "cepat sembuh.",
+          "w": "w-sembuh"
+        }
+      ],
+      "gap": {
+        "before": "Minum air putih yang banyak ",
+        "answer": "supaya",
+        "after": " cepat sembuh.",
+        "options": [
+          "supaya",
+          "agar",
+          "karena"
+        ],
+        "ok": [
+          "agar"
+        ],
+        "note": "agar も同じ意味ですが、かたい言い方で、病院のパンフレットのように聞こえます。",
+        "why": "早く治ることが、水を飲む目的：supaya。"
+      },
+      "audio": "audio/id/connectors/cx-supaya-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "supaya",
+        "健康"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-supaya-4",
+      "register": "casual",
+      "indonesian": "Kita berangkat sekarang biar nggak kena macet.",
+      "japanese": "渋滞にはまらないように、今出よう。",
+      "chunks": [
+        {
+          "t": "Kita berangkat sekarang ",
+          "w": "w-sekarang"
+        },
+        {
+          "t": "biar "
+        },
+        {
+          "t": "nggak kena macet."
+        }
+      ],
+      "gap": {
+        "before": "Kita berangkat sekarang ",
+        "answer": "biar",
+        "after": " nggak kena macet.",
+        "options": [
+          "biar",
+          "supaya",
+          "soalnya"
+        ],
+        "ok": [
+          "supaya"
+        ],
+        "note": "supaya も使えます。友達同士なら biar です。",
+        "why": "biar はくだけた「〜ように」。soalnya だと目的ではなく理由になります。"
+      },
+      "combine": {
+        "a": "Kita berangkat sekarang.",
+        "b": "Kita nggak mau kena macet.",
+        "distractors": [
+          "soalnya "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-supaya-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "supaya",
+        "くだけた言い方"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

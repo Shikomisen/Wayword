@@ -12,10 +12,10 @@
   "speakers": ["en", "ja", "id"],
   "courses": [
     { "id": "en-ja", "speaker": "en", "target": "ja", "status": "available", "manifest": "content/ja/manifest.json" },
-    { "id": "en-id", "speaker": "en", "target": "id", "status": "planned" },
+    { "id": "en-id", "speaker": "en", "target": "id", "status": "available", "manifest": "content/en-id/manifest.json" },
     { "id": "ja-en", "speaker": "ja", "target": "en", "status": "available", "manifest": "content/en/manifest.json" },
-    { "id": "ja-id", "speaker": "ja", "target": "id", "status": "planned" },
+    { "id": "ja-id", "speaker": "ja", "target": "id", "status": "available", "manifest": "content/ja-id/manifest.json" },
     { "id": "id-en", "speaker": "id", "target": "en", "status": "available", "manifest": "content/id-en/manifest.json" },
-    { "id": "id-ja", "speaker": "id", "target": "ja", "status": "planned" }
+    { "id": "id-ja", "speaker": "id", "target": "ja", "status": "available", "manifest": "content/id-ja/manifest.json" }
   ]
 }

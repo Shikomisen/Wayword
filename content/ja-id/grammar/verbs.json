@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-verbs",
+  "connector": "makan",
+  "gloss": "形が変わらない動詞",
+  "title": "動詞は形が変わらない",
+  "pattern": "saya / dia / mereka makan · kemarin / besok / nanti + …",
+  "explanation": "インドネシア語の動詞は形が1つだけで、だれがしても、いつのことでも変わりません：saya makan、dia makan、mereka makan。「食べる・食べた・食べている・食べます」がどれも makan です。日本語のような活用（ます形・た形・て形…）がないので、覚えることがぐっと減ります。「を」「が」のような助詞もなく、英語と同じ「主語・動詞・目的語」の順番で意味が決まります：saya lihat dia は「私が彼女を見る」。いつのことかは、kemarin（昨日）、tadi（さっき）、besok（明日）、nanti（あとで）のような言葉や、その場の状況で分かります：Kemarin kami makan di warung（昨日、私たちはワルンで食べました）。",
+  "natural": "時を表す言葉は一度、ふつうは文の最初に言えば、あとはそのまま続けます：Kemarin saya ke pantai. Saya berenang, lalu makan ikan（昨日は海に行きました。泳いで、それから魚を食べました）。tadi（さっき）と nanti（あとで）は毎回の会話に出てくるので、早めに覚えましょう。",
+  "stiff": "過去形を探す必要はありません：kemarin saya makan だけで完全な文です。ていねいな話し方や書き言葉では、kerja が bekerja、beli が membeli のように多くの動詞に接頭辞が付きますが、これも時や人を表すものではありません。中級で学びます。",
+  "examples": [
+    {
+      "id": "gx-verbs-1",
+      "indonesian": "Kemarin saya makan di warung.",
+      "japanese": "昨日はワルンで食べました。",
+      "chunks": [
+        {
+          "t": "Kemarin ",
+          "w": "w-kemarin"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "makan ",
+          "w": "w-makan"
+        },
+        {
+          "t": "di warung.",
+          "w": "w-warung"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kemarin",
+        "after": " saya makan di warung.",
+        "options": [
+          "Kemarin",
+          "Besok",
+          "Sekarang"
+        ],
+        "why": "makan は過去でも変わりません。kemarin（昨日）がいつのことかを表します。"
+      },
+      "audio": "audio/id/grammar/gx-verbs-1.mp3",
+      "tags": [
+        "文法",
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-verbs-2",
+      "indonesian": "Dia kerja di bank.",
+      "japanese": "彼女は銀行で働いています。",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "kerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "di bank.",
+          "w": "w-bank"
+        }
+      ],
+      "gap": {
+        "before": "Dia ",
+        "answer": "kerja",
+        "after": " di bank.",
+        "options": [
+          "kerja",
+          "adalah kerja",
+          "ada kerja"
+        ],
+        "why": "動詞は kerja だけ。私でも彼女でも同じ形で、「です」にあたる言葉もいりません。"
+      },
+      "audio": "audio/id/grammar/gx-verbs-2.mp3",
+      "tags": [
+        "文法",
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-verbs-3",
+      "indonesian": "Nanti saya bayar.",
+      "japanese": "あとで払います。",
+      "chunks": [
+        {
+          "t": "Nanti ",
+          "w": "w-nanti"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "bayar.",
+          "w": "w-bayar"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Nanti",
+        "after": " saya bayar.",
+        "options": [
+          "Nanti",
+          "Tadi",
+          "Kemarin"
+        ],
+        "why": "「あとで」は nanti、tadi は「さっき」。bayar はどちらでも同じ形です。"
+      },
+      "audio": "audio/id/grammar/gx-verbs-3.mp3",
+      "tags": [
+        "文法",
+        "動詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-verbs-4",
+      "indonesian": "Tadi saya lihat dia di pasar.",
+      "japanese": "さっき市場で彼女を見かけました。",
+      "chunks": [
+        {
+          "t": "Tadi ",
+          "w": "w-tadi"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "lihat ",
+          "w": "w-lihat"
+        },
+        {
+          "t": "dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "di pasar.",
+          "w": "w-pasar"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Tadi",
+        "after": " saya lihat dia di pasar.",
+        "options": [
+          "Tadi",
+          "Nanti",
+          "Besok"
+        ],
+        "why": "lihat は変わらないので、tadi（さっき）でもう起きたことだと分かります。"
+      },
+      "audio": "audio/id/grammar/gx-verbs-4.mp3",
+      "tags": [
+        "文法",
+        "動詞"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

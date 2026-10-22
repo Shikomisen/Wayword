@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "id": "con-supaya",
+  "connector": "supaya, biar",
+  "gloss": "so that",
+  "title": "supaya, biar — so that",
+  "pattern": "A supaya B · A biar B",
+  "explanation": "supaya gives the purpose, looking ahead to what you want to happen: Saya berangkat pagi supaya tidak terlambat. — I'm leaving early so I won't be late. The purpose part can have its own subject: Tolong bicara pelan-pelan supaya saya mengerti. agar means the same and is more formal, and biar is the casual one, very common among friends: Kita berangkat sekarang biar nggak kena macet. For a simple to + verb with the same subject, untuk also works: Saya ke Jakarta untuk kerja.",
+  "natural": "supaya in everyday polite speech, biar with friends and family, agar on signs, in instructions and in speeches.",
+  "stiff": "agar in a chat sounds like a notice on the wall, and biar to an official can sound too casual. Careful too: biar also means let, as in Biar saya yang bayar — Let me pay.",
+  "examples": [
+    {
+      "id": "cx-supaya-1",
+      "indonesian": "Saya berangkat pagi supaya tidak terlambat.",
+      "english": "I'm leaving early so I won't be late.",
+      "chunks": [
+        {
+          "t": "Saya berangkat ",
+          "w": "w-berangkat"
+        },
+        {
+          "t": "pagi ",
+          "w": "w-pagi"
+        },
+        {
+          "t": "supaya "
+        },
+        {
+          "t": "tidak terlambat.",
+          "w": "w-tidak"
+        }
+      ],
+      "gap": {
+        "before": "Saya berangkat pagi ",
+        "answer": "supaya",
+        "after": " tidak terlambat.",
+        "options": [
+          "supaya",
+          "karena",
+          "walaupun"
+        ],
+        "why": "supaya looks ahead to what you want, not being late; karena would give a reason that's already true."
+      },
+      "combine": {
+        "a": "Saya berangkat pagi.",
+        "b": "Saya tidak mau terlambat.",
+        "distractors": [
+          "karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-supaya-1.mp3",
+      "tags": [
+        "connectors",
+        "supaya"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-supaya-2",
+      "indonesian": "Tolong bicara pelan-pelan supaya saya mengerti.",
+      "english": "Please speak slowly so I can understand.",
+      "chunks": [
+        {
+          "t": "Tolong bicara ",
+          "w": "w-bicara"
+        },
+        {
+          "t": "pelan-pelan ",
+          "w": "w-pelan"
+        },
+        {
+          "t": "supaya "
+        },
+        {
+          "t": "saya mengerti.",
+          "w": "w-mengerti"
+        }
+      ],
+      "gap": {
+        "before": "Tolong bicara pelan-pelan ",
+        "answer": "supaya",
+        "after": " saya mengerti.",
+        "options": [
+          "supaya",
+          "karena",
+          "jadi"
+        ],
+        "why": "Understanding is what you want to happen: supaya, so that."
+      },
+      "combine": {
+        "a": "Tolong bicara pelan-pelan.",
+        "b": "Saya mau mengerti.",
+        "distractors": [
+          "jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-supaya-2.mp3",
+      "tags": [
+        "connectors",
+        "supaya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-supaya-3",
+      "indonesian": "Minum air putih yang banyak supaya cepat sembuh.",
+      "english": "Drink plenty of water so you get better soon.",
+      "chunks": [
+        {
+          "t": "Minum air putih ",
+          "w": "w-air-putih"
+        },
+        {
+          "t": "yang banyak ",
+          "w": "w-banyak"
+        },
+        {
+          "t": "supaya "
+        },
+        {
+          "t": "cepat sembuh.",
+          "w": "w-sembuh"
+        }
+      ],
+      "gap": {
+        "before": "Minum air putih yang banyak ",
+        "answer": "supaya",
+        "after": " cepat sembuh.",
+        "options": [
+          "supaya",
+          "agar",
+          "karena"
+        ],
+        "ok": [
+          "agar"
+        ],
+        "note": "agar means the same but is the formal one: it sounds like a leaflet from the clinic.",
+        "why": "Getting better is the goal of drinking the water: supaya."
+      },
+      "audio": "audio/id/connectors/cx-supaya-3.mp3",
+      "tags": [
+        "connectors",
+        "supaya",
+        "health"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-supaya-4",
+      "register": "casual",
+      "indonesian": "Kita berangkat sekarang biar nggak kena macet.",
+      "english": "Let's leave now so we don't get stuck in traffic.",
+      "chunks": [
+        {
+          "t": "Kita berangkat sekarang ",
+          "w": "w-sekarang"
+        },
+        {
+          "t": "biar "
+        },
+        {
+          "t": "nggak kena macet."
+        }
+      ],
+      "gap": {
+        "before": "Kita berangkat sekarang ",
+        "answer": "biar",
+        "after": " nggak kena macet.",
+        "options": [
+          "biar",
+          "supaya",
+          "soalnya"
+        ],
+        "ok": [
+          "supaya"
+        ],
+        "note": "supaya works too; biar is what you'd say to friends.",
+        "why": "biar is the casual so that; soalnya would give a reason, not a goal."
+      },
+      "combine": {
+        "a": "Kita berangkat sekarang.",
+        "b": "Kita nggak mau kena macet.",
+        "distractors": [
+          "soalnya "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-supaya-4.mp3",
+      "tags": [
+        "connectors",
+        "supaya",
+        "casual"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

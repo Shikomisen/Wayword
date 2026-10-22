@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "id": "words-food",
+  "title": "食べ物と飲み物",
+  "description": "ワルンで出てくる料理と飲み物、そして味を表す言葉：pedas、manis、enak。",
+  "items": [
+    {
+      "id": "w-nasi",
+      "indonesian": "nasi",
+      "japanese": "ご飯（炊いた米）",
+      "pos": "noun",
+      "pitfallNote": "nasi は炊いたご飯だけです。お店で売っている生の米は beras、田んぼで育っている稲は padi。日本語の「ご飯・米・稲」と同じ区別です。",
+      "cultureNote": "多くのインドネシア人は、その前にどれだけおやつを食べても、ご飯を食べないと食事をした気がしません。",
+      "audio": "audio/id/words/w-nasi.mp3",
+      "tags": [
+        "食べ物",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-mi",
+      "indonesian": "mi",
+      "japanese": "麺",
+      "pos": "noun",
+      "registerNotes": "メニューではよく mie と書かれます：mie goreng（焼きそば）、mie ayam（鶏肉のせ麺）。標準のつづりは mi です。",
+      "audio": "audio/id/words/w-mi.mp3",
+      "tags": [
+        "食べ物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ayam",
+      "indonesian": "ayam",
+      "japanese": "鶏、鶏肉",
+      "pos": "noun",
+      "registerNotes": "鳥も肉も一語です。揚げた鶏肉をサンバルと一緒につぶした ayam penyet や ayam geprek は、ワルンの人気メニューです。",
+      "audio": "audio/id/words/w-ayam.mp3",
+      "tags": [
+        "食べ物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ikan",
+      "indonesian": "ikan",
+      "japanese": "魚",
+      "pos": "noun",
+      "cultureNote": "海辺のシーフード屋台では、魚を自分で選んで重さで払い、ikan bakar（焼き魚）にしてもらうことがよくあります。",
+      "audio": "audio/id/words/w-ikan.mp3",
+      "tags": [
+        "食べ物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-daging",
+      "indonesian": "daging",
+      "japanese": "肉",
+      "pos": "noun",
+      "registerNotes": "後ろに動物の名前を付けます：daging sapi（牛肉）、daging kambing（ヤギ肉、メニューでは mutton とも）、daging babi（豚肉）。",
+      "cultureNote": "インドネシア人の多くはイスラム教徒で豚肉を食べないので、babi はバリ、中華料理店、キリスト教徒の多い一部の地域以外ではめったに見かけません。",
+      "audio": "audio/id/words/w-daging.mp3",
+      "tags": [
+        "食べ物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sayur",
+      "indonesian": "sayur",
+      "japanese": "野菜；野菜料理",
+      "pos": "noun",
+      "registerNotes": "スープ仕立てのことが多い野菜料理のことも言います：sayur asem、sayur lodeh。",
+      "audio": "audio/id/words/w-sayur.mp3",
+      "tags": [
+        "食べ物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-buah",
+      "indonesian": "buah",
+      "japanese": "果物",
+      "pos": "noun",
+      "pitfallNote": "buah は物を数える言葉でもあり、「〜個」「〜つ」のように使います：dua buah tas（かばん2つ）。果物以外の場面でもよく出てきます。",
+      "audio": "audio/id/words/w-buah.mp3",
+      "tags": [
+        "食べ物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-telur",
+      "indonesian": "telur",
+      "japanese": "卵",
+      "pos": "noun",
+      "registerNotes": "ワルンでは telur ceplok（目玉焼き）、telur dadar（卵焼き、オムレツ）、telur rebus（ゆで卵）。telor と言ったり書いたりもします。",
+      "audio": "audio/id/words/w-telur.mp3",
+      "tags": [
+        "食べ物",
+        "ワルン"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sambal",
+      "indonesian": "sambal",
+      "japanese": "サンバル（唐辛子のソース）",
+      "pos": "noun",
+      "registerNotes": "ほとんどの食事に付いてきます。別にしてほしいときは Sambalnya dipisah, ya（サンバルは別にしてね）。",
+      "pitfallNote": "サンバルの多くには、エビの発酵調味料（terasi）が入っています。ベジタリアンやアレルギーがある人は Ada terasinya?（テラシは入っていますか？）と聞きましょう。",
+      "audio": "audio/id/words/w-sambal.mp3",
+      "tags": [
+        "食べ物",
+        "ワルン"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pedas",
+      "indonesian": "pedas",
+      "japanese": "辛い（唐辛子の辛さ）",
+      "pos": "adjective",
+      "pitfallNote": "pedas は唐辛子の辛さだけ。しょっぱいのは asin、熱いのは panas です。Jangan terlalu pedas, ya は「あまり辛くしないでください」。",
+      "cultureNote": "作る人にとって辛くなくても、あなたには辛いことがあります。Tidak pakai cabai（唐辛子なしで）と頼むのが確実です。",
+      "audio": "audio/id/words/w-pedas.mp3",
+      "tags": [
+        "食べ物",
+        "味",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-manis",
+      "indonesian": "manis",
+      "japanese": "甘い",
+      "pos": "adjective",
+      "registerNotes": "飲み物は、頼まない限り甘くして出てきます：es teh manis が定番のアイスティー。人について manis と言うと「かわいらしい、魅力的」の意味です。",
+      "audio": "audio/id/words/w-manis.mp3",
+      "tags": [
+        "食べ物",
+        "味"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-asin",
+      "indonesian": "asin",
+      "japanese": "しょっぱい、塩辛い",
+      "pos": "adjective",
+      "registerNotes": "ikan asin（塩干しの魚）はよくあるおかずです。しょっぱすぎるのは terlalu asin。",
+      "audio": "audio/id/words/w-asin.mp3",
+      "tags": [
+        "食べ物",
+        "味"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-enak",
+      "indonesian": "enak",
+      "japanese": "おいしい；気持ちいい、快適な",
+      "pos": "adjective",
+      "registerNotes": "料理をほめる普段の言葉：Enak sekali（とてもおいしい）。一般に「気持ちいい、快適」の意味にもなります：Enak di sini（ここは居心地がいい）。",
+      "pitfallNote": "Saya tidak enak badan は「体調がよくない」。くだけた会話の nggak enak は、「気まずい、申し訳ない」という気持ちも表します。",
+      "audio": "audio/id/words/w-enak.mp3",
+      "tags": [
+        "食べ物",
+        "味",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-teh",
+      "indonesian": "teh",
+      "japanese": "お茶、紅茶",
+      "pos": "noun",
+      "registerNotes": "何も言わないと甘くして出てきます。日本のお茶の感覚で頼むと驚くかもしれません。砂糖なしは teh tawar、温かいのは teh hangat、アイスは es teh。",
+      "audio": "audio/id/words/w-teh.mp3",
+      "tags": [
+        "食べ物",
+        "飲み物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kopi",
+      "indonesian": "kopi",
+      "japanese": "コーヒー",
+      "pos": "noun",
+      "registerNotes": "kopi hitam はブラックコーヒー、kopi susu はミルク入りで、甘い練乳のことが多いです。",
+      "cultureNote": "ワルンのコーヒーは kopi tubruk のことが多く、粉がグラスの底に沈むので、最後の一口は残しましょう。",
+      "audio": "audio/id/words/w-kopi.mp3",
+      "tags": [
+        "食べ物",
+        "飲み物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-air-putih",
+      "indonesian": "air putih",
+      "japanese": "飲み水、水",
+      "pos": "noun",
+      "pitfallNote": "air だけでは、水道水も含むあらゆる水です。飲むときは air putih（直訳は「白い水」）、ペットボトルの水は air mineral と頼みます。",
+      "cultureNote": "インドネシアの水道水は飲めません。ワルンや家庭で出る air putih は、沸かしたか、ろ過した水です。",
+      "audio": "audio/id/words/w-air-putih.mp3",
+      "tags": [
+        "食べ物",
+        "飲み物",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-es",
+      "indonesian": "es",
+      "japanese": "氷；冷たい飲み物",
+      "pos": "noun",
+      "registerNotes": "飲み物の前に es を付けると冷たい飲み物になります：es teh、es jeruk（冷たいオレンジジュース）。Pakai es? は「氷入りにしますか？」、tidak pakai es は氷なしです。",
+      "audio": "audio/id/words/w-es.mp3",
+      "tags": [
+        "食べ物",
+        "飲み物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-gula",
+      "indonesian": "gula",
+      "japanese": "砂糖",
+      "pos": "noun",
+      "registerNotes": "減らしてほしいときは Gulanya sedikit saja（砂糖は少しだけ）か Tidak pakai gula（砂糖なし）。gula merah や gula Jawa はヤシ砂糖です。",
+      "audio": "audio/id/words/w-gula.mp3",
+      "tags": [
+        "食べ物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-garam",
+      "indonesian": "garam",
+      "japanese": "塩",
+      "pos": "noun",
+      "audio": "audio/id/words/w-garam.mp3",
+      "tags": [
+        "食べ物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-piring",
+      "indonesian": "piring",
+      "japanese": "皿",
+      "pos": "noun",
+      "registerNotes": "sepiring は1皿分。お椀は mangkuk です。",
+      "cultureNote": "インドネシアでは、右手にスプーン、左手にフォークを持つか、右手だけで食べます。ナイフはほとんど使いません。",
+      "audio": "audio/id/words/w-piring.mp3",
+      "tags": [
+        "食べ物",
+        "家"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-goreng",
+      "indonesian": "goreng",
+      "japanese": "揚げた、炒めた",
+      "pos": "adjective",
+      "registerNotes": "料理名では、日本語とは逆に食べ物の後に付きます：nasi goreng（焼き飯）、ayam goreng（鶏の唐揚げ）、pisang goreng（揚げバナナ）。焼いたものは bakar：ayam bakar、ikan bakar。",
+      "audio": "audio/id/words/w-goreng.mp3",
+      "tags": [
+        "食べ物",
+        "料理"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

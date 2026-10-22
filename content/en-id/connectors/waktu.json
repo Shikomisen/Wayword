@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "id": "con-waktu",
+  "connector": "waktu",
+  "gloss": "when",
+  "title": "waktu — when",
+  "pattern": "Waktu A, B · B waktu A · waktu kecil",
+  "explanation": "waktu (literally time) introduces a particular time, usually in the past: Waktu saya di Bali, cuacanya panas sekali. — When I was in Bali, the weather was really hot. It can come first, with a comma, or after the main part: Saya kenal suami saya waktu kuliah. waktu kecil means as a child: Waktu kecil, saya tinggal dekat pantai. ketika means the same and is more common in writing and storytelling; in casual speech you'll hear pas (Pas aku sampai, …).",
+  "natural": "Talking about your past: where you lived, how you met someone, what happened on a trip. Fine in any conversation.",
+  "stiff": "For the future, or for whenever, kalau is the natural choice: Kalau sudah sampai, kabari saya. With waktu that sounds as if it has already happened. And on its own waktu is also the noun time: Saya tidak ada waktu.",
+  "examples": [
+    {
+      "id": "cx-waktu-1",
+      "indonesian": "Waktu kecil, saya tinggal dekat pantai.",
+      "english": "When I was little, I lived near the beach.",
+      "chunks": [
+        {
+          "t": "Waktu "
+        },
+        {
+          "t": "kecil, ",
+          "w": "w-kecil"
+        },
+        {
+          "t": "saya tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "dekat pantai.",
+          "w": "w-pantai"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Waktu",
+        "after": " kecil, saya tinggal dekat pantai.",
+        "options": [
+          "Waktu",
+          "Kalau",
+          "Sebelum"
+        ],
+        "why": "A time in the past takes waktu, and waktu kecil is the set way to say as a child."
+      },
+      "combine": {
+        "a": "Saya masih kecil.",
+        "b": "Saya tinggal dekat pantai.",
+        "distractors": [
+          "Kalau "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-waktu-1.mp3",
+      "tags": [
+        "connectors",
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-waktu-2",
+      "indonesian": "Waktu saya di Bali, cuacanya panas sekali.",
+      "english": "When I was in Bali, the weather was really hot.",
+      "chunks": [
+        {
+          "t": "Waktu "
+        },
+        {
+          "t": "saya di Bali, ",
+          "w": "w-saya"
+        },
+        {
+          "t": "cuacanya ",
+          "w": "w-cuaca"
+        },
+        {
+          "t": "panas sekali.",
+          "w": "w-panas"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Waktu",
+        "after": " saya di Bali, cuacanya panas sekali.",
+        "options": [
+          "Waktu",
+          "Kalau",
+          "Karena"
+        ],
+        "why": "The trip has already happened, so waktu; kalau would make it if or whenever I'm in Bali."
+      },
+      "combine": {
+        "a": "Saya di Bali.",
+        "b": "Cuacanya panas sekali.",
+        "distractors": [
+          "Kalau "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-waktu-2.mp3",
+      "tags": [
+        "connectors",
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-waktu-3",
+      "indonesian": "Saya kenal suami saya waktu kuliah.",
+      "english": "I met my husband when I was at university.",
+      "chunks": [
+        {
+          "t": "Saya kenal ",
+          "w": "w-saya"
+        },
+        {
+          "t": "suami saya ",
+          "w": "w-suami"
+        },
+        {
+          "t": "waktu "
+        },
+        {
+          "t": "kuliah.",
+          "w": "w-kuliah"
+        }
+      ],
+      "gap": {
+        "before": "Saya kenal suami saya ",
+        "answer": "waktu",
+        "after": " kuliah.",
+        "options": [
+          "waktu",
+          "kalau",
+          "sebelum"
+        ],
+        "why": "waktu kuliah: at the time I was at university. When it's the same person, no subject is needed after waktu."
+      },
+      "combine": {
+        "a": "Saya kenal suami saya.",
+        "b": "Saya kuliah.",
+        "distractors": [
+          "kalau "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-waktu-3.mp3",
+      "tags": [
+        "connectors",
+        "waktu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-waktu-4",
+      "indonesian": "Waktu kami sampai, filmnya sudah mulai.",
+      "english": "When we got there, the film had already started.",
+      "chunks": [
+        {
+          "t": "Waktu "
+        },
+        {
+          "t": "kami sampai, ",
+          "w": "w-sampai"
+        },
+        {
+          "t": "filmnya ",
+          "w": "w-film"
+        },
+        {
+          "t": "sudah mulai.",
+          "w": "w-sudah"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Waktu",
+        "after": " kami sampai, filmnya sudah mulai.",
+        "options": [
+          "Waktu",
+          "Ketika",
+          "Kalau"
+        ],
+        "ok": [
+          "Ketika"
+        ],
+        "note": "Ketika means the same. It's more common in writing and when telling a story.",
+        "why": "Arriving was a one-off moment in the past: waktu."
+      },
+      "combine": {
+        "a": "Kami sampai.",
+        "b": "Filmnya sudah mulai.",
+        "distractors": [
+          "Kalau "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-waktu-4.mp3",
+      "tags": [
+        "connectors",
+        "waktu"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

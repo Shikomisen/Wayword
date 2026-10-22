@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "hotel",
+  "title": "Hotels & Homestays",
+  "order": 9,
+  "description": "Hotels, guesthouses and homestays: finding a room, your booking, check-in and check-out, breakfast, the Wi-Fi, and asking for things for your room.",
+  "phrases": [
+    {
+      "id": "hot-01",
+      "indonesian": "Ada kamar kosong?",
+      "english": "Do you have any rooms free?",
+      "registerNotes": "Kosong means empty or free; the answer if there's nothing is Penuh (We're full).",
+      "audio": "audio/id/hot-01.mp3",
+      "tags": [
+        "hotel",
+        "rooms"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "hot-02",
+      "indonesian": "Boleh lihat kamarnya dulu?",
+      "english": "Could I see the room first?",
+      "registerNotes": "Quite normal at homestays and guesthouses, especially if you haven't booked. Dulu (first) also makes a request sound easy-going.",
+      "audio": "audio/id/hot-02.mp3",
+      "tags": [
+        "hotel",
+        "rooms"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-03",
+      "indonesian": "Saya sudah pesan kamar atas nama Sam.",
+      "english": "I have a booking under the name Sam.",
+      "registerNotes": "Atas nama (in the name of) gives the name on any booking. If you booked through an app, add lewat aplikasi.",
+      "cultureNote": "Reception will ask for your passport, often with Boleh pinjam paspornya? (May I borrow your passport?), to note or copy the details. That's normal.",
+      "audio": "audio/id/hot-03.mp3",
+      "tags": [
+        "hotel",
+        "booking",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-04",
+      "indonesian": "Bisa check-in sekarang?",
+      "english": "Can I check in now?",
+      "registerNotes": "Check-in and check-out are said as in English. Check-in is usually from two in the afternoon; if the room isn't ready, ask to leave your bag.",
+      "audio": "audio/id/hot-04.mp3",
+      "tags": [
+        "hotel",
+        "check-in"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-05",
+      "indonesian": "Check-out jam berapa?",
+      "english": "What time is check-out?",
+      "registerNotes": "Usually jam dua belas siang (noon). To ask for a later one: Bisa late check-out?",
+      "audio": "audio/id/hot-05.mp3",
+      "tags": [
+        "hotel",
+        "check-out"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-06",
+      "indonesian": "Sudah termasuk sarapan?",
+      "english": "Is breakfast included?",
+      "registerNotes": "Termasuk means included. Then ask Sarapannya jam berapa? (What time is breakfast?)",
+      "audio": "audio/id/hot-06.mp3",
+      "tags": [
+        "hotel",
+        "breakfast"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-07",
+      "indonesian": "Password Wi-Fi-nya apa?",
+      "english": "What's the Wi-Fi password?",
+      "registerNotes": "Password is the everyday word; kata sandi is the official one you may see written.",
+      "audio": "audio/id/hot-07.mp3",
+      "tags": [
+        "hotel",
+        "wifi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "hot-08",
+      "indonesian": "AC di kamar saya tidak dingin.",
+      "english": "The air conditioning in my room isn't cold.",
+      "registerNotes": "AC is said a-se. If it won't come on at all, say AC-nya mati (it's dead) or rusak (broken).",
+      "audio": "audio/id/hot-08.mp3",
+      "audioHint": "A se di kamar saya tidak dingin.",
+      "tags": [
+        "hotel",
+        "problems"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-09",
+      "indonesian": "Boleh titip tas di sini?",
+      "english": "Can I leave my bag here?",
+      "registerNotes": "Titip means leaving something in someone's care: luggage before check-in or after check-out. It's the same word as in titip salam (send my regards).",
+      "audio": "audio/id/hot-09.mp3",
+      "tags": [
+        "hotel",
+        "luggage"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-10",
+      "indonesian": "Boleh minta handuk lagi?",
+      "english": "Could I have another towel?",
+      "registerNotes": "Lagi (another, more) works for anything: bantal lagi (another pillow), selimut lagi (another blanket).",
+      "audio": "audio/id/hot-10.mp3",
+      "tags": [
+        "hotel",
+        "requests"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "hot-11",
+      "indonesian": "Ada air panas?",
+      "english": "Is there hot water?",
+      "registerNotes": "Ada …? (Is there …?) works for anything you need: Ada handuk? Ada sabun?",
+      "cultureNote": "Cheaper homestays may have cold water only, sometimes with a mandi: a tank of water (bak mandi) and a scoop to pour it over yourself. Don't climb into the tank; the water is for everyone.",
+      "audio": "audio/id/hot-11.mp3",
+      "tags": [
+        "hotel",
+        "bathroom"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

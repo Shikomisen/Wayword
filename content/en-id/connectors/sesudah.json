@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "id": "con-sesudah",
+  "connector": "sesudah, setelah",
+  "gloss": "after",
+  "title": "sesudah, setelah — after",
+  "pattern": "A sesudah B · Setelah B, A · Sesudah itu, …",
+  "explanation": "sesudah and setelah both mean after, and they work just like sebelum, followed by an action or a time: sesudah makan (after eating), setelah sarapan (after breakfast). They're interchangeable; setelah is a little more common in writing and announcements. Sesudah itu or setelah itu at the start of a sentence means after that. In casual speech the everyday after is habis: Habis makan, kita jalan-jalan, yuk.",
+  "natural": "sesudah and setelah in any polite conversation, in instructions (diminum sesudah makan) and in plans. habis with friends and family.",
+  "stiff": "habis to a stranger or someone senior can sound too casual. It also means finished or sold out (Nasinya habis — the rice has run out), so it needs context to mean after.",
+  "examples": [
+    {
+      "id": "cx-sesudah-1",
+      "indonesian": "Saya biasanya minum kopi sesudah makan.",
+      "english": "I usually have a coffee after I eat.",
+      "chunks": [
+        {
+          "t": "Saya biasanya ",
+          "w": "w-biasanya"
+        },
+        {
+          "t": "minum kopi ",
+          "w": "w-kopi"
+        },
+        {
+          "t": "sesudah "
+        },
+        {
+          "t": "makan.",
+          "w": "w-makan"
+        }
+      ],
+      "gap": {
+        "before": "Saya biasanya minum kopi ",
+        "answer": "sesudah",
+        "after": " makan.",
+        "options": [
+          "sesudah",
+          "setelah",
+          "sebelum"
+        ],
+        "ok": [
+          "setelah"
+        ],
+        "note": "setelah means exactly the same; use whichever you like.",
+        "why": "The coffee comes after the meal: sesudah makan."
+      },
+      "combine": {
+        "a": "Saya makan.",
+        "b": "Saya biasanya minum kopi.",
+        "distractors": [
+          "sebelum "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sesudah-1.mp3",
+      "tags": [
+        "connectors",
+        "sesudah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-sesudah-2",
+      "indonesian": "Kita berangkat setelah sarapan.",
+      "english": "We'll set off after breakfast.",
+      "chunks": [
+        {
+          "t": "Kita berangkat ",
+          "w": "w-berangkat"
+        },
+        {
+          "t": "setelah "
+        },
+        {
+          "t": "sarapan."
+        }
+      ],
+      "gap": {
+        "before": "Kita berangkat ",
+        "answer": "setelah",
+        "after": " sarapan.",
+        "options": [
+          "setelah",
+          "sebelum",
+          "sambil"
+        ],
+        "why": "Breakfast first, then off: setelah sarapan, after breakfast."
+      },
+      "combine": {
+        "a": "Kita sarapan.",
+        "b": "Kita berangkat.",
+        "distractors": [
+          "sebelum "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sesudah-2.mp3",
+      "tags": [
+        "connectors",
+        "sesudah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-sesudah-3",
+      "indonesian": "Kami ke pasar dulu. Sesudah itu, kami ke pantai.",
+      "english": "We went to the market first. After that, we went to the beach.",
+      "chunks": [
+        {
+          "t": "Kami ke pasar dulu. ",
+          "w": "w-pasar"
+        },
+        {
+          "t": "Sesudah itu, ",
+          "w": "w-itu"
+        },
+        {
+          "t": "kami ke pantai.",
+          "w": "w-pantai"
+        }
+      ],
+      "gap": {
+        "before": "Kami ke pasar dulu. ",
+        "answer": "Sesudah",
+        "after": " itu, kami ke pantai.",
+        "options": [
+          "Sesudah",
+          "Sebelum",
+          "Karena"
+        ],
+        "why": "Sesudah itu means after that: the next stop."
+      },
+      "combine": {
+        "a": "Kami ke pasar dulu.",
+        "b": "Kami ke pantai.",
+        "distractors": [
+          "Sebelum itu, "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sesudah-3.mp3",
+      "tags": [
+        "connectors",
+        "sesudah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-sesudah-4",
+      "register": "casual",
+      "indonesian": "Habis makan, kita jalan-jalan, yuk.",
+      "english": "After we eat, let's go for a wander.",
+      "chunks": [
+        {
+          "t": "Habis "
+        },
+        {
+          "t": "makan, ",
+          "w": "w-makan"
+        },
+        {
+          "t": "kita jalan-jalan, yuk.",
+          "w": "w-jalan-jalan"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Habis",
+        "after": " makan, kita jalan-jalan, yuk.",
+        "options": [
+          "Habis",
+          "Sesudah",
+          "Sebelum"
+        ],
+        "ok": [
+          "Sesudah"
+        ],
+        "note": "Sesudah is right too, just less chatty than habis among friends.",
+        "why": "Habis is the casual after."
+      },
+      "audio": "audio/id/connectors/cx-sesudah-4.mp3",
+      "tags": [
+        "connectors",
+        "sesudah",
+        "casual"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-saling",
+  "connector": "saling, sendiri",
+  "gloss": "お互いに；一人で、自分の",
+  "title": "saling と sendiri",
+  "pattern": "saling + 動詞 (お互いに) · 動詞 + sendiri (一人で、自分で) · 名詞 + sendiri (自分の)",
+  "explanation": "saling を動詞の前に置くと「お互いに〜する」になります：Kami saling membantu（私たちは助け合っています）。日本語の「お互いに」と同じく動詞の前なので、覚えやすいはずです。後ろには何も要りません。動詞の後の sendiri は「一人で、自分で」：Saya pergi sendiri（一人で行きます）、Dia tinggal sendiri（彼女は一人暮らしです）。名詞の後なら「自分の」で、日本語とは逆に名詞の後に来ます：kamar sendiri（自分の部屋）、rumah sendiri（自分の家）。人の後なら「〜自身」と強調します：Saya sendiri belum pernah ke sana（私自身は、まだそこに行ったことがありません）。",
+  "natural": "Saling kenal（知り合い同士）は、人を紹介する時によく出てきます：Sudah saling kenal?（もうお知り合いですか？）。一人旅をしていると、Sendiri saja? や Sendirian?（一人で？）とよく聞かれますが、たいていは親切な気づかいからです。",
+  "stiff": "satu sama lain も「お互い」ですが、書き言葉っぽく聞こえます。会話で使うのは saling です。また、sendiri は「寂しい」ではありません。「寂しい」は kesepian です。",
+  "examples": [
+    {
+      "id": "gx-saling-1",
+      "indonesian": "Tetangga di sini saling membantu.",
+      "japanese": "このあたりの近所の人たちは、お互いに助け合っています。",
+      "chunks": [
+        {
+          "t": "Tetangga ",
+          "w": "w-tetangga"
+        },
+        {
+          "t": "di sini ",
+          "w": "w-di"
+        },
+        {
+          "t": "saling "
+        },
+        {
+          "t": "membantu.",
+          "w": "w-membantu"
+        }
+      ],
+      "gap": {
+        "before": "Tetangga di sini ",
+        "answer": "saling",
+        "after": " membantu.",
+        "options": [
+          "saling",
+          "sendiri",
+          "juga"
+        ],
+        "why": "「お互いに」は saling で、動詞の前。日本語と同じ位置です。"
+      },
+      "cultureNote": "Gotong royong（みんなで力を合わせること）は、インドネシア人が誇りにしている価値観です。道の掃除から結婚式の手伝いまで、近所の人たちが一緒に働きます。日本の町内会の共同作業に似たところがあります。",
+      "audio": "audio/id/grammar/gx-saling-1.mp3",
+      "tags": [
+        "文法",
+        "saling"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-saling-2",
+      "indonesian": "Saya datang sendiri.",
+      "japanese": "一人で来ました。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "datang ",
+          "w": "w-datang"
+        },
+        {
+          "t": "sendiri."
+        }
+      ],
+      "gap": {
+        "before": "Saya datang ",
+        "answer": "sendiri",
+        "after": ".",
+        "options": [
+          "sendiri",
+          "saling",
+          "saja"
+        ],
+        "why": "動詞の後の sendiri は「一人で」。"
+      },
+      "registerNotes": "Sama siapa?（だれと来たの？）への返事。Sendirian と言うと「ほかにはだれもいない、たった一人で」と強調します。",
+      "audio": "audio/id/grammar/gx-saling-2.mp3",
+      "tags": [
+        "文法",
+        "saling"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-saling-3",
+      "indonesian": "Mereka sudah lama saling kenal.",
+      "japanese": "あの人たちは、ずっと前からの知り合いです。",
+      "chunks": [
+        {
+          "t": "Mereka ",
+          "w": "w-mereka"
+        },
+        {
+          "t": "sudah lama ",
+          "w": "w-lama"
+        },
+        {
+          "t": "saling "
+        },
+        {
+          "t": "kenal."
+        }
+      ],
+      "gap": {
+        "before": "Mereka sudah lama ",
+        "answer": "saling",
+        "after": " kenal.",
+        "options": [
+          "saling",
+          "sendiri",
+          "sama"
+        ],
+        "why": "知り合うのはお互いのことなので、kenal の前に saling。"
+      },
+      "audio": "audio/id/grammar/gx-saling-3.mp3",
+      "tags": [
+        "文法",
+        "saling"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-saling-4",
+      "indonesian": "Sekarang saya sudah punya kamar sendiri.",
+      "japanese": "今は自分の部屋があります。",
+      "chunks": [
+        {
+          "t": "Sekarang ",
+          "w": "w-sekarang"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah punya ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "kamar ",
+          "w": "w-kamar"
+        },
+        {
+          "t": "sendiri."
+        }
+      ],
+      "gap": {
+        "before": "Sekarang saya sudah punya kamar ",
+        "answer": "sendiri",
+        "after": ".",
+        "options": [
+          "sendiri",
+          "saya",
+          "saling"
+        ],
+        "why": "名詞の後の sendiri は「自分の」。kamar saya だと、ただの「私の部屋」です。"
+      },
+      "audio": "audio/id/grammar/gx-saling-4.mp3",
+      "tags": [
+        "文法",
+        "saling"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

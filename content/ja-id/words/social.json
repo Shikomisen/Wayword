@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "id": "words-social",
+  "title": "付き合い・人間関係",
+  "description": "義理の家族やいとこ、結婚式やアリサン、約束やうわさ話。インドネシアの付き合いに出てくる人や行事と、それを支える習慣の言葉。",
+  "items": [
+    {
+      "id": "w-pertemuan",
+      "indonesian": "pertemuan",
+      "japanese": "集まり、会合",
+      "pos": "noun",
+      "forms": {
+        "root": "temu"
+      },
+      "registerNotes": "家族の集まりから学会のセッションまで、人が集まることなら何でも。職場の会議はふつう rapat。",
+      "audio": "audio/id/words/w-pertemuan.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-undangan",
+      "indonesian": "undangan",
+      "japanese": "招待状；招待客",
+      "pos": "noun",
+      "forms": {
+        "root": "undang"
+      },
+      "registerNotes": "招待された人たちのことも指し、司会の Para undangan yang terhormat（ご来賓の皆さま）のように使います。「招待する」は mengundang。",
+      "audio": "audio/id/words/w-undangan.mp3",
+      "tags": [
+        "付き合い",
+        "行事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pesta",
+      "indonesian": "pesta",
+      "japanese": "パーティー、祝いの会",
+      "pos": "noun",
+      "registerNotes": "きちんとした催しに：pesta pernikahan（結婚披露宴）、pesta ulang tahun（誕生日パーティー）。友達との気軽な集まりは kumpul-kumpul や nongkrong。",
+      "audio": "audio/id/words/w-pesta.mp3",
+      "tags": [
+        "付き合い",
+        "行事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pernikahan",
+      "indonesian": "pernikahan",
+      "japanese": "結婚式；結婚",
+      "pos": "noun",
+      "forms": {
+        "root": "nikah"
+      },
+      "cultureNote": "結婚式は盛大で、招待客が数百人になることもよくあります。日本のご祝儀と同じく、お祝いはふつう封筒に入れた現金（amplop）で、芳名帳のそばの箱に入れます。",
+      "audio": "audio/id/words/w-pernikahan.mp3",
+      "tags": [
+        "付き合い",
+        "行事",
+        "家族"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-arisan",
+      "indonesian": "arisan",
+      "japanese": "アリサン（くじ引きつきの積み立ての集まり）",
+      "pos": "noun",
+      "cultureNote": "女性や近所の人、同僚などの定期的な集まりで、全員がお金を出し合い、くじで当たった一人がその回の全額を持ち帰ります。昔の日本の頼母子講に似た仕組みですが、お金と同じくらい、食事とおしゃべりが楽しみの集まりです。",
+      "audio": "audio/id/words/w-arisan.mp3",
+      "tags": [
+        "付き合い",
+        "文化"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sahabat",
+      "indonesian": "sahabat",
+      "japanese": "親友",
+      "pos": "noun",
+      "registerNotes": "teman より親しい、何でも打ち明けられる友達。長い付き合いのことが多いです。",
+      "audio": "audio/id/words/w-sahabat.mp3",
+      "tags": [
+        "付き合い",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kenalan",
+      "indonesian": "kenalan",
+      "japanese": "知り合い；知り合いになる",
+      "pos": "noun",
+      "forms": {
+        "root": "kenal"
+      },
+      "registerNotes": "くだけた会話では「自己紹介する」の動詞にもなります：Boleh kenalan?（お名前、聞いてもいいですか？）。ていねいな動詞は berkenalan。",
+      "audio": "audio/id/words/w-kenalan.mp3",
+      "tags": [
+        "付き合い",
+        "人"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mertua",
+      "indonesian": "mertua",
+      "japanese": "義理の両親",
+      "pos": "noun",
+      "registerNotes": "それぞれ ibu mertua（義母）、bapak mertua（義父）。たいていは配偶者と同じ呼び方で呼びます：Bapak と Ibu、Papa と Mama など。",
+      "audio": "audio/id/words/w-mertua.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-ipar",
+      "indonesian": "ipar",
+      "japanese": "義理のきょうだい",
+      "pos": "noun",
+      "pitfallNote": "自分のきょうだいと同じく、年上なら kakak、年下なら adik を前につけます：kakak ipar（義兄・義姉）、adik ipar（義弟・義妹）。男女は区別しません。",
+      "audio": "audio/id/words/w-ipar.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-keponakan",
+      "indonesian": "keponakan",
+      "japanese": "甥、姪",
+      "pos": "noun",
+      "registerNotes": "一語で両方を表し、くだけて ponakan。必要なときだけ laki-laki（男）や perempuan（女）をつけます。",
+      "audio": "audio/id/words/w-keponakan.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sepupu",
+      "indonesian": "sepupu",
+      "japanese": "いとこ",
+      "pos": "noun",
+      "cultureNote": "親戚づきあいが密で、いとこ、さらにはまたいとこ（sepupu dua kali）まで、きょうだい同然に育つことがよくあります。",
+      "audio": "audio/id/words/w-sepupu.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-om",
+      "indonesian": "om",
+      "japanese": "おじ；（呼びかけで）年上の男性",
+      "pos": "noun",
+      "registerNotes": "オランダ語から来た言葉で、paman の日常的な言い方。友達や恋人のお父さんなど、親くらいの年の男性への呼びかけにも使います：Om Budi（ブディおじさん）。",
+      "audio": "audio/id/words/w-om.mp3",
+      "tags": [
+        "家族",
+        "呼びかけ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tante",
+      "indonesian": "tante",
+      "japanese": "おば；（呼びかけで）年上の女性",
+      "pos": "noun",
+      "registerNotes": "オランダ語から来た言葉で、bibi の日常的な言い方。友達や恋人のお母さんなど、親くらいの年の女性への呼びかけにも使います：Tante Rina（リナおばさん）。",
+      "audio": "audio/id/words/w-tante.mp3",
+      "tags": [
+        "家族",
+        "呼びかけ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-rekan-kerja",
+      "indonesian": "rekan kerja",
+      "japanese": "同僚",
+      "pos": "noun",
+      "registerNotes": "少し改まった言い方。会話では teman kantor や teman kerja と言います。",
+      "audio": "audio/id/words/w-rekan-kerja.mp3",
+      "tags": [
+        "仕事",
+        "人"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-atasan",
+      "indonesian": "atasan",
+      "japanese": "上司",
+      "pos": "noun",
+      "forms": {
+        "root": "atas"
+      },
+      "registerNotes": "atas（上）から来た言葉で、bos より改まった言い方。部下は bawahan。",
+      "audio": "audio/id/words/w-atasan.mp3",
+      "tags": [
+        "仕事",
+        "人"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tuan-rumah",
+      "indonesian": "tuan rumah",
+      "japanese": "（もてなす側の）主人、ホスト",
+      "pos": "noun",
+      "registerNotes": "訪問や集まりでもてなす側の人のこと。行事の開催都市や開催国にも使います。",
+      "pitfallNote": "tuan だけだと「旦那様」のような古めかしい言い方です。ホストには Bapak や Ibu と呼びかけましょう。",
+      "audio": "audio/id/words/w-tuan-rumah.mp3",
+      "tags": [
+        "付き合い",
+        "人"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-acara",
+      "indonesian": "acara",
+      "japanese": "行事、催し；番組；予定",
+      "pos": "noun",
+      "registerNotes": "Ada acara?（何か予定ある？）で、相手が空いているかを聞けます。テレビ番組や、結婚式の式次第の意味にもなります。",
+      "audio": "audio/id/words/w-acara.mp3",
+      "tags": [
+        "付き合い",
+        "行事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ulang-tahun",
+      "indonesian": "ulang tahun",
+      "japanese": "誕生日；記念日",
+      "pos": "noun",
+      "registerNotes": "くだけて ultah。Selamat ulang tahun（お誕生日おめでとう）。結婚記念日は ulang tahun pernikahan。",
+      "cultureNote": "誕生日の人が、友達や同僚に食事をおごる（traktir）ことがよくあります。祝ってもらう側がごちそうするのです。",
+      "audio": "audio/id/words/w-ulang-tahun.mp3",
+      "tags": [
+        "付き合い",
+        "行事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kabar",
+      "indonesian": "kabar",
+      "japanese": "知らせ；近況、様子",
+      "pos": "noun",
+      "registerNotes": "Apa kabar?（お元気ですか？）は相手の様子をたずねる言葉。Kabari saya, ya（知らせてくださいね）は、状況を教えてほしいと頼む言い方です。",
+      "audio": "audio/id/words/w-kabar.mp3",
+      "tags": [
+        "付き合い",
+        "会話"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-gosip",
+      "indonesian": "gosip",
+      "japanese": "うわさ話、ゴシップ",
+      "pos": "noun",
+      "registerNotes": "くだけた会話では動詞にもなります：ngegosip、gosipin（〜のうわさをする）。うわさ話はたいてい katanya（〜なんだって、〜らしいよ）で始まります。",
+      "audio": "audio/id/words/w-gosip.mp3",
+      "tags": [
+        "付き合い",
+        "会話"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-janji",
+      "indonesian": "janji",
+      "japanese": "約束；会う約束、アポ",
+      "pos": "noun",
+      "registerNotes": "Saya sudah ada janji（先約があるんです）は、ていねいに断る言い方。くだけた会話の janjian は会う約束をすること：Kita janjian jam tujuh（7時に会う約束をしよう）。",
+      "cultureNote": "遊びの約束は jam karet（ゴムの時間）で動くことがあり、7時の待ち合わせが遅れて始まることも。仕事や改まった約束は時間どおりです。",
+      "audio": "audio/id/words/w-janji.mp3",
+      "tags": [
+        "付き合い",
+        "予定"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hubungan",
+      "indonesian": "hubungan",
+      "japanese": "関係、つながり",
+      "pos": "noun",
+      "forms": {
+        "root": "hubung"
+      },
+      "registerNotes": "仕事から恋愛まで、どんな関係にも：hubungan kerja（仕事上の関係）、hubungan jarak jauh（遠距離恋愛）。恋人として付き合うのは pacaran。",
+      "audio": "audio/id/words/w-hubungan.mp3",
+      "tags": [
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-budaya",
+      "indonesian": "budaya",
+      "japanese": "文化",
+      "pos": "noun",
+      "registerNotes": "kebudayaan はより改まった言い方。社会で共有される習慣の意味でも使います：budaya antre（列に並ぶ習慣）。",
+      "audio": "audio/id/words/w-budaya.mp3",
+      "tags": [
+        "付き合い",
+        "文化"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-adat",
+      "indonesian": "adat",
+      "japanese": "慣習、しきたり",
+      "pos": "noun",
+      "registerNotes": "ふつうは地域ごとのもの：adat Jawa（ジャワのしきたり）、adat Bali（バリのしきたり）、pernikahan adat（伝統的な結婚式）。",
+      "cultureNote": "結婚式、葬儀、目上の人へのあいさつなど、地域ごとに独自の adat があります。迷ったら Bagaimana adatnya di sini?（ここではどういうしきたりですか？）と聞いてみましょう。",
+      "audio": "audio/id/words/w-adat.mp3",
+      "tags": [
+        "付き合い",
+        "文化"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-silaturahmi",
+      "indonesian": "silaturahmi",
+      "japanese": "親しい人を訪ねて交流を保つこと",
+      "pos": "noun",
+      "cultureNote": "家族や友人を訪ねて、絆を温め続けること。特にレバラン（断食明けの大祭）には家々を回り、互いに許しを請い合います。日本の年始のあいさつ回りに少し似ていて、ほかに理由はいりません。",
+      "audio": "audio/id/words/w-silaturahmi.mp3",
+      "tags": [
+        "付き合い",
+        "文化"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-mudik",
+      "indonesian": "mudik",
+      "japanese": "帰省する",
+      "pos": "verb",
+      "cultureNote": "レバランの前には何百万人もが一斉に都会から故郷へ帰り、道路も列車も飛行機も大混雑します。日本のお盆や正月の帰省ラッシュのようなものです。この時期の定番の質問は Mudik ke mana?（帰省はどちらへ？）。",
+      "audio": "audio/id/words/w-mudik.mp3",
+      "tags": [
+        "付き合い",
+        "文化",
+        "旅行"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

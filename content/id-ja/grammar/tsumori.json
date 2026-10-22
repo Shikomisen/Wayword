@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-tsumori",
+  "connector": "〜つもり",
+  "gloss": "berniat, berencana",
+  "title": "〜つもり — saya berencana…",
+  "pattern": "bentuk kamus / bentuk ない + つもり(です)",
+  "explanation": "つもり menyatakan niatmu, seperti “berencana” atau “mau”: {来年|らいねん}、{日本|にほん}に{行|い}くつもりです — tahun depan saya berencana ke Jepang. Berniat tidak melakukan: {行|い}かないつもり. Untuk rencana pasti yang ada jadwalnya, biasanya {予定|よてい}です (dijadwalkan): {三時|さんじ}に{着|つ}く{予定|よてい}です.",
+  "natural": "Untuk bercerita tentang rencanamu: {週末|しゅうまつ}は{家|いえ}でゆっくりするつもり — akhir pekan ini aku mau bersantai di rumah.",
+  "stiff": "Bertanya {行|い}くつもりですか kepada orang yang lebih senior bisa terdengar menantang: “Anda benar-benar berniat…?”. ご{予定|よてい}は？ lebih halus.",
+  "examples": [
+    {
+      "id": "gx-tsumori-1",
+      "japanese": "来年、日本に住むつもりです。",
+      "furigana": "{来年|らいねん}、{日本|にほん}に{住|す}むつもりです。",
+      "indonesian": "Tahun depan saya berencana tinggal di Jepang.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{来年|らいねん}、",
+          "w": "w-rainen"
+        },
+        {
+          "t": "{日本|にほん}に",
+          "w": "w-nihon"
+        },
+        {
+          "t": "{住|す}むつもりです。",
+          "w": "w-sumu"
+        }
+      ],
+      "gap": {
+        "before": "{来年|らいねん}、{日本|にほん}に{住|す}む",
+        "answer": "つもり",
+        "after": "です。",
+        "options": [
+          "つもり",
+          "ところ",
+          "ばかり"
+        ],
+        "why": "Berniat: bentuk kamus + つもり."
+      },
+      "audio": "audio/ja/grammar/gx-tsumori-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "tsumori"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tsumori-2",
+      "japanese": "今日はお酒を飲まないつもり。",
+      "furigana": "{今日|きょう}はお{酒|さけ}を{飲|の}まないつもり。",
+      "indonesian": "Hari ini aku niatnya tidak minum alkohol.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "お{酒|さけ}を",
+          "w": "w-osake"
+        },
+        {
+          "t": "{飲|の}まないつもり。",
+          "w": "w-nomu"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}はお{酒|さけ}を",
+        "answer": "{飲|の}まない",
+        "after": "つもり。",
+        "options": [
+          "{飲|の}まない",
+          "{飲|の}んだ",
+          "{飲|の}みたい"
+        ],
+        "why": "Berniat tidak melakukan: bentuk ない + つもり."
+      },
+      "audio": "audio/ja/grammar/gx-tsumori-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "tsumori"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tsumori-3",
+      "japanese": "週末は何をするつもり？",
+      "furigana": "{週末|しゅうまつ}は{何|なに}をするつもり？",
+      "indonesian": "Akhir pekan ini rencananya mau apa?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{週末|しゅうまつ}は",
+          "w": "w-shuumatsu"
+        },
+        {
+          "t": "{何|なに}を",
+          "w": "w-nani"
+        },
+        {
+          "t": "するつもり？",
+          "w": "w-suru"
+        }
+      ],
+      "gap": {
+        "before": "{週末|しゅうまつ}は{何|なに}をする",
+        "answer": "つもり",
+        "after": "？",
+        "options": [
+          "つもり",
+          "ところ",
+          "こと"
+        ],
+        "why": "Menanyakan rencana orang: するつもり？"
+      },
+      "audio": "audio/ja/grammar/gx-tsumori-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "tsumori"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tsumori-4",
+      "japanese": "飛行機は三時に着く予定です。",
+      "furigana": "{飛行機|ひこうき}は{三時|さんじ}に{着|つ}く{予定|よてい}です。",
+      "indonesian": "Pesawatnya dijadwalkan tiba pukul tiga.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{飛行機|ひこうき}は",
+          "w": "w-hikouki"
+        },
+        {
+          "t": "{三時|さんじ}に"
+        },
+        {
+          "t": "{着|つ}く{予定|よてい}です。",
+          "w": "w-tsuku"
+        }
+      ],
+      "gap": {
+        "before": "{飛行機|ひこうき}は{三時|さんじ}に{着|つ}く",
+        "answer": "{予定|よてい}",
+        "after": "です。",
+        "options": [
+          "{予定|よてい}",
+          "つもり",
+          "ため"
+        ],
+        "why": "Jadwal dan rencana pasti: 予定. Pesawat tidak punya niat, jadi bukan つもり."
+      },
+      "audio": "audio/ja/grammar/gx-tsumori-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "tsumori"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

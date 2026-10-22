@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-time-words",
+  "connector": "sudah, belum…",
+  "gloss": "もう〜した、今〜している、〜する、まだ〜ない",
+  "title": "sudah, sedang, akan, belum",
+  "pattern": "sudah / sedang / akan / belum + 動詞 · Sudah …? — Sudah. / Belum.",
+  "explanation": "インドネシア語は動詞の形で時を表さず、時が大事な時は動詞の前に小さな言葉を置きます。sudah は「もう〜した」：Saya sudah makan（もう食べました）。sedang は「今〜している」：Dia sedang mandi（彼女は今シャワー中です）。akan は「（これから）〜する」：Kami akan pulang besok（私たちは明日帰ります）。belum は「まだ〜していない」：Saya belum makan（まだ食べていません）。sudah と belum は、日本語の「もう」「まだ」とほぼ同じ感覚で使えます。",
+  "natural": "sudah で聞かれたら、Sudah か Belum で答えます：Sudah makan? — Belum（ごはん食べた？ — まだ）。会話では、akan の代わりに mau や時の言葉だけで済ませることも多いです：Besok saya ke Bali（明日バリに行きます）。",
+  "stiff": "Sudah …? に tidak で答えるのが定番のまちがいです。「いいえ」は日本語の「まだです」と同じで Belum。Sudah menikah?（結婚していますか）でも、予定がどうであれ belum がていねいな答えです。過去の文に毎回 sudah を付ける必要もありません：Kemarin saya ke pasar（昨日、市場に行きました）だけで完全な文です。",
+  "examples": [
+    {
+      "id": "gx-time-words-1",
+      "indonesian": "Saya sudah bayar.",
+      "japanese": "もう払いました。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "bayar.",
+          "w": "w-bayar"
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "sudah",
+        "after": " bayar.",
+        "options": [
+          "sudah",
+          "belum",
+          "akan"
+        ],
+        "why": "もう済んだことは sudah。"
+      },
+      "audio": "audio/id/grammar/gx-time-words-1.mp3",
+      "tags": [
+        "文法",
+        "時の言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-time-words-2",
+      "indonesian": "Dia sedang mandi.",
+      "japanese": "彼女は今シャワーを浴びています。",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "sedang ",
+          "w": "w-sedang"
+        },
+        {
+          "t": "mandi.",
+          "w": "w-mandi"
+        }
+      ],
+      "gap": {
+        "before": "Dia ",
+        "answer": "sedang",
+        "after": " mandi.",
+        "options": [
+          "sedang",
+          "sudah",
+          "akan"
+        ],
+        "why": "今まさにしていることは sedang。"
+      },
+      "audio": "audio/id/grammar/gx-time-words-2.mp3",
+      "tags": [
+        "文法",
+        "時の言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-time-words-3",
+      "indonesian": "Kami akan pulang minggu depan.",
+      "japanese": "私たちは来週帰ります。",
+      "chunks": [
+        {
+          "t": "Kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "akan ",
+          "w": "w-akan"
+        },
+        {
+          "t": "pulang ",
+          "w": "w-pulang"
+        },
+        {
+          "t": "minggu depan.",
+          "w": "w-minggu-depan"
+        }
+      ],
+      "gap": {
+        "before": "Kami ",
+        "answer": "akan",
+        "after": " pulang minggu depan.",
+        "options": [
+          "akan",
+          "sudah",
+          "sedang"
+        ],
+        "why": "これから起きることは akan。"
+      },
+      "audio": "audio/id/grammar/gx-time-words-3.mp3",
+      "tags": [
+        "文法",
+        "時の言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-time-words-4",
+      "indonesian": "Sudah menikah? Belum.",
+      "japanese": "結婚してますか？ — まだです。",
+      "chunks": [
+        {
+          "t": "Sudah ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "menikah? ",
+          "w": "w-menikah"
+        },
+        {
+          "t": "Belum.",
+          "w": "w-belum"
+        }
+      ],
+      "gap": {
+        "before": "Sudah menikah? ",
+        "answer": "Belum",
+        "after": ".",
+        "options": [
+          "Belum",
+          "Tidak",
+          "Bukan"
+        ],
+        "why": "sudah の質問には sudah か belum で答えます。「いいえ」は Belum（まだ）。"
+      },
+      "audio": "audio/id/grammar/gx-time-words-4.mp3",
+      "tags": [
+        "文法",
+        "時の言葉"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "id": "words-weather",
+  "title": "Weather & Nature",
+  "description": "Rain, sun and the two seasons, and the sea, mountains and rivers around you.",
+  "items": [
+    {
+      "id": "w-cuaca",
+      "indonesian": "cuaca",
+      "english": "weather",
+      "pos": "noun",
+      "registerNotes": "Cuacanya bagus (the weather's nice). In small talk people often skip the word: Panas sekali, ya? (So hot, isn't it?)",
+      "audio": "audio/id/words/w-cuaca.mp3",
+      "tags": [
+        "weather"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hujan",
+      "indonesian": "hujan",
+      "english": "rain; to rain",
+      "pos": "noun",
+      "pitfallNote": "No it needed: Hujan (it's raining). Mau hujan means it looks like rain.",
+      "audio": "audio/id/words/w-hujan.mp3",
+      "tags": [
+        "weather",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cerah",
+      "indonesian": "cerah",
+      "english": "clear, sunny; bright",
+      "pos": "adjective",
+      "registerNotes": "Cuacanya cerah (it's fine and sunny). Also bright colours (warna cerah).",
+      "audio": "audio/id/words/w-cerah.mp3",
+      "tags": [
+        "weather"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mendung",
+      "indonesian": "mendung",
+      "english": "cloudy, overcast",
+      "pos": "adjective",
+      "registerNotes": "The dark grey sky before rain. A single cloud is awan.",
+      "audio": "audio/id/words/w-mendung.mp3",
+      "tags": [
+        "weather"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-gerah",
+      "indonesian": "gerah",
+      "english": "hot and sticky, muggy, stuffy",
+      "pos": "adjective",
+      "registerNotes": "The humid, airless heat before rain or in a room with no fan. Panas is plain hot.",
+      "audio": "audio/id/words/w-gerah.mp3",
+      "tags": [
+        "weather"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-angin",
+      "indonesian": "angin",
+      "english": "wind",
+      "pos": "noun",
+      "cultureNote": "Masuk angin (literally wind gets in) is a cold or feeling run-down, blamed on wind or a fan. Remedies include warm drinks and kerokan, scraping the back with a coin.",
+      "audio": "audio/id/words/w-angin.mp3",
+      "tags": [
+        "weather"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-musim-hujan",
+      "indonesian": "musim hujan",
+      "english": "rainy season, wet season",
+      "pos": "noun",
+      "cultureNote": "Indonesia has two seasons, not four. The rainy season runs roughly from November to March in Java and Bali.",
+      "audio": "audio/id/words/w-musim-hujan.mp3",
+      "tags": [
+        "weather",
+        "seasons"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-musim-kemarau",
+      "indonesian": "musim kemarau",
+      "english": "dry season",
+      "pos": "noun",
+      "pitfallNote": "Kemarau is only for the season. Dry in general is kering.",
+      "audio": "audio/id/words/w-musim-kemarau.mp3",
+      "tags": [
+        "weather",
+        "seasons"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-laut",
+      "indonesian": "laut",
+      "english": "sea",
+      "pos": "noun",
+      "registerNotes": "Laut is the sea itself; the beach is pantai. Seafood is hasil laut, though menus often just say seafood.",
+      "audio": "audio/id/words/w-laut.mp3",
+      "tags": [
+        "nature"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-gunung",
+      "indonesian": "gunung",
+      "english": "mountain; volcano",
+      "pos": "noun",
+      "registerNotes": "Many gunung are active volcanoes (gunung berapi). In names Gunung comes first: Gunung Bromo, Gunung Rinjani.",
+      "audio": "audio/id/words/w-gunung.mp3",
+      "tags": [
+        "nature"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pohon",
+      "indonesian": "pohon",
+      "english": "tree",
+      "pos": "noun",
+      "registerNotes": "The kind of tree follows: pohon kelapa (coconut palm), pohon pisang (banana plant).",
+      "audio": "audio/id/words/w-pohon.mp3",
+      "tags": [
+        "nature"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bunga",
+      "indonesian": "bunga",
+      "english": "flower",
+      "pos": "noun",
+      "pitfallNote": "Bunga also means interest on money: bunga bank.",
+      "audio": "audio/id/words/w-bunga.mp3",
+      "tags": [
+        "nature"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sungai",
+      "indonesian": "sungai",
+      "english": "river",
+      "pos": "noun",
+      "registerNotes": "In Java a river is often a kali, as in Kali Ciliwung in Jakarta. Kali also means times: dua kali, twice.",
+      "audio": "audio/id/words/w-sungai.mp3",
+      "tags": [
+        "nature"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-matahari",
+      "indonesian": "matahari",
+      "english": "sun",
+      "pos": "noun",
+      "registerNotes": "Literally the eye of the day (mata + hari). Sunrise is matahari terbit, sunset matahari terbenam.",
+      "audio": "audio/id/words/w-matahari.mp3",
+      "tags": [
+        "nature",
+        "weather"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-banjir",
+      "indonesian": "banjir",
+      "english": "flood; to flood",
+      "pos": "noun",
+      "cultureNote": "Floods are common in the rainy season, especially in Jakarta, where banjir can close roads and stop traffic for hours.",
+      "audio": "audio/id/words/w-banjir.mp3",
+      "tags": [
+        "weather"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

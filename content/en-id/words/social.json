@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "id": "words-social",
+  "title": "People & Social Life",
+  "description": "The people and occasions of social life in Indonesia: in-laws and cousins, weddings and arisan, promises and gossip, and the customs that hold it all together.",
+  "items": [
+    {
+      "id": "w-pertemuan",
+      "indonesian": "pertemuan",
+      "english": "meeting, gathering",
+      "pos": "noun",
+      "forms": {
+        "root": "temu"
+      },
+      "registerNotes": "Any coming together, from a family gathering to a session at a conference. A meeting at work is usually rapat.",
+      "audio": "audio/id/words/w-pertemuan.mp3",
+      "tags": [
+        "social"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-undangan",
+      "indonesian": "undangan",
+      "english": "invitation; the guests (people invited)",
+      "pos": "noun",
+      "forms": {
+        "root": "undang"
+      },
+      "registerNotes": "Also the guests themselves, as in the MC's Para undangan yang terhormat (Honoured guests). To invite is mengundang.",
+      "audio": "audio/id/words/w-undangan.mp3",
+      "tags": [
+        "social",
+        "events"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pesta",
+      "indonesian": "pesta",
+      "english": "party, celebration",
+      "pos": "noun",
+      "registerNotes": "For a proper do: pesta pernikahan, pesta ulang tahun. A casual get-together with friends is kumpul-kumpul or nongkrong.",
+      "audio": "audio/id/words/w-pesta.mp3",
+      "tags": [
+        "social",
+        "events"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pernikahan",
+      "indonesian": "pernikahan",
+      "english": "wedding; marriage",
+      "pos": "noun",
+      "forms": {
+        "root": "nikah"
+      },
+      "cultureNote": "Weddings are big, often with hundreds of guests. The usual gift is cash in an envelope (amplop), dropped into a box by the guest book.",
+      "audio": "audio/id/words/w-pernikahan.mp3",
+      "tags": [
+        "social",
+        "events",
+        "family"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-arisan",
+      "indonesian": "arisan",
+      "english": "regular savings get-together (with a prize draw)",
+      "pos": "noun",
+      "cultureNote": "A regular gathering, often of women, neighbours or colleagues: everyone pays into a pot and one name is drawn to take it home. It's as much about the food and the chat as the money.",
+      "audio": "audio/id/words/w-arisan.mp3",
+      "tags": [
+        "social",
+        "culture"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sahabat",
+      "indonesian": "sahabat",
+      "english": "close friend, best friend",
+      "pos": "noun",
+      "registerNotes": "Closer than teman: a friend you'd trust with anything, often for years.",
+      "audio": "audio/id/words/w-sahabat.mp3",
+      "tags": [
+        "social",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kenalan",
+      "indonesian": "kenalan",
+      "english": "acquaintance; to get to know someone",
+      "pos": "noun",
+      "forms": {
+        "root": "kenal"
+      },
+      "registerNotes": "Also the casual verb for introducing yourself: Boleh kenalan? (Can I introduce myself?). The polite verb is berkenalan.",
+      "audio": "audio/id/words/w-kenalan.mp3",
+      "tags": [
+        "social",
+        "people"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mertua",
+      "indonesian": "mertua",
+      "english": "parents-in-law",
+      "pos": "noun",
+      "registerNotes": "Ibu mertua and bapak mertua for each one. Most people call them what their partner does, such as Bapak and Ibu or Papa and Mama.",
+      "audio": "audio/id/words/w-mertua.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-ipar",
+      "indonesian": "ipar",
+      "english": "brother-in-law, sister-in-law",
+      "pos": "noun",
+      "pitfallNote": "Usually with kakak or adik in front, for older or younger, as with your own siblings: kakak ipar, adik ipar.",
+      "audio": "audio/id/words/w-ipar.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-keponakan",
+      "indonesian": "keponakan",
+      "english": "niece, nephew",
+      "pos": "noun",
+      "registerNotes": "One word for both; casually ponakan. Add laki-laki or perempuan only if it matters.",
+      "audio": "audio/id/words/w-keponakan.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sepupu",
+      "indonesian": "sepupu",
+      "english": "cousin",
+      "pos": "noun",
+      "cultureNote": "Extended families are close, so cousins, even second cousins (sepupu dua kali), often grow up almost like siblings.",
+      "audio": "audio/id/words/w-sepupu.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-om",
+      "indonesian": "om",
+      "english": "uncle; (as a title) an older man",
+      "pos": "noun",
+      "registerNotes": "From Dutch, and the everyday word for paman. It's also how you address a man about your parents' age, such as a friend's or partner's father: Om Budi.",
+      "audio": "audio/id/words/w-om.mp3",
+      "tags": [
+        "family",
+        "address"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tante",
+      "indonesian": "tante",
+      "english": "aunt; (as a title) an older woman",
+      "pos": "noun",
+      "registerNotes": "From Dutch, and the everyday word for bibi. It's also how you address a woman about your parents' age, such as a friend's or partner's mother: Tante Rina.",
+      "audio": "audio/id/words/w-tante.mp3",
+      "tags": [
+        "family",
+        "address"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-rekan-kerja",
+      "indonesian": "rekan kerja",
+      "english": "colleague, co-worker",
+      "pos": "noun",
+      "registerNotes": "A little formal. In conversation people say teman kantor or teman kerja.",
+      "audio": "audio/id/words/w-rekan-kerja.mp3",
+      "tags": [
+        "work",
+        "people"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-atasan",
+      "indonesian": "atasan",
+      "english": "superior, manager",
+      "pos": "noun",
+      "forms": {
+        "root": "atas"
+      },
+      "registerNotes": "From atas (above), and more formal than bos. Someone who reports to you is bawahan.",
+      "audio": "audio/id/words/w-atasan.mp3",
+      "tags": [
+        "work",
+        "people"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tuan-rumah",
+      "indonesian": "tuan rumah",
+      "english": "host",
+      "pos": "noun",
+      "registerNotes": "The host of a visit or a gathering, and also a host city or country for an event.",
+      "pitfallNote": "Tuan on its own is an old-fashioned 'master' or 'sir'. Address your host as Bapak or Ibu.",
+      "audio": "audio/id/words/w-tuan-rumah.mp3",
+      "tags": [
+        "social",
+        "people"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-acara",
+      "indonesian": "acara",
+      "english": "event, occasion; programme; plans",
+      "pos": "noun",
+      "registerNotes": "Ada acara? (Are you doing anything?) asks if someone's free. It's also a TV programme and the order of events at a wedding.",
+      "audio": "audio/id/words/w-acara.mp3",
+      "tags": [
+        "social",
+        "events"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ulang-tahun",
+      "indonesian": "ulang tahun",
+      "english": "birthday; anniversary",
+      "pos": "noun",
+      "registerNotes": "Casually ultah. Selamat ulang tahun (Happy birthday); a wedding anniversary is ulang tahun pernikahan.",
+      "cultureNote": "The birthday person often treats friends or colleagues to a meal (traktir), rather than the other way round.",
+      "audio": "audio/id/words/w-ulang-tahun.mp3",
+      "tags": [
+        "social",
+        "events"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kabar",
+      "indonesian": "kabar",
+      "english": "news; how someone is",
+      "pos": "noun",
+      "registerNotes": "Apa kabar? asks how someone is, and Kabari saya, ya (Let me know, will you?) asks them to keep you posted.",
+      "audio": "audio/id/words/w-kabar.mp3",
+      "tags": [
+        "social",
+        "conversation"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-gosip",
+      "indonesian": "gosip",
+      "english": "gossip",
+      "pos": "noun",
+      "registerNotes": "Casually also a verb: ngegosip, or gosipin (to gossip about). Gossip usually starts with katanya (apparently, so I heard).",
+      "audio": "audio/id/words/w-gosip.mp3",
+      "tags": [
+        "social",
+        "conversation"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-janji",
+      "indonesian": "janji",
+      "english": "promise; appointment",
+      "pos": "noun",
+      "registerNotes": "Saya sudah ada janji (I've already got plans) is a polite way to say no. Casually, janjian is arranging to meet: Kita janjian jam tujuh.",
+      "cultureNote": "Social plans can run on jam karet (rubber time), so a seven o'clock meet-up may start later. Work and formal appointments are kept to time.",
+      "audio": "audio/id/words/w-janji.mp3",
+      "tags": [
+        "social",
+        "plans"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hubungan",
+      "indonesian": "hubungan",
+      "english": "relationship, connection",
+      "pos": "noun",
+      "forms": {
+        "root": "hubung"
+      },
+      "registerNotes": "Any relationship, from business to love: hubungan kerja, hubungan jarak jauh (a long-distance relationship). Going out with someone is pacaran.",
+      "audio": "audio/id/words/w-hubungan.mp3",
+      "tags": [
+        "social"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-budaya",
+      "indonesian": "budaya",
+      "english": "culture",
+      "pos": "noun",
+      "registerNotes": "Kebudayaan is the more formal word. Budaya also means a habit shared by a society: budaya antre (the habit of queuing).",
+      "audio": "audio/id/words/w-budaya.mp3",
+      "tags": [
+        "social",
+        "culture"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-adat",
+      "indonesian": "adat",
+      "english": "custom, tradition",
+      "pos": "noun",
+      "registerNotes": "Usually a region's own: adat Jawa, adat Bali, pernikahan adat (a traditional wedding).",
+      "cultureNote": "Each region has its own adat for weddings, funerals and greeting elders. When in doubt, ask Bagaimana adatnya di sini? (What's the custom here?)",
+      "audio": "audio/id/words/w-adat.mp3",
+      "tags": [
+        "social",
+        "culture"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-silaturahmi",
+      "indonesian": "silaturahmi",
+      "english": "keeping in touch, visiting to stay close",
+      "pos": "noun",
+      "cultureNote": "Visiting family and friends just to keep the bond warm, above all at Lebaran, when people go house to house asking forgiveness. It needs no other reason.",
+      "audio": "audio/id/words/w-silaturahmi.mp3",
+      "tags": [
+        "social",
+        "culture"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-mudik",
+      "indonesian": "mudik",
+      "english": "to go back to your home town (for the holidays)",
+      "pos": "verb",
+      "cultureNote": "Before Lebaran, millions leave the cities for their home towns at once, and roads, trains and flights are packed. Mudik ke mana? (Where's home for you?) is the question that season.",
+      "audio": "audio/id/words/w-mudik.mp3",
+      "tags": [
+        "social",
+        "culture",
+        "travel"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

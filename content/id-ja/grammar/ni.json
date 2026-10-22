@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ni",
+  "connector": "に",
+  "gloss": "pada (waktu); ke (tempat); di",
+  "title": "に — pada, ke, di",
+  "pattern": "waktu に / tempat に {行|い}く・{来|く}る・いる",
+  "explanation": "に menunjuk satu titik: waktu ({七時|しちじ}に{起|お}きます — saya bangun jam tujuh), tempat tujuan ({駅|えき}に{行|い}きます — saya pergi ke stasiun), atau tempat seseorang atau sesuatu berada ({家|いえ}にいます — saya di rumah). Jadi に bisa berarti “pada”, “ke”, atau “di”, tapi letaknya sesudah kata benda: {駅|えき}に = ke stasiun. に juga untuk orang yang kamu temui atau beri sesuatu: {友達|ともだち}に{会|あ}います.",
+  "natural": "Kata seperti {今日|きょう}, {明日|あした}, dan {毎日|まいにち} tidak memakai に: {明日|あした}{行|い}きます. Jam, nama hari, dan tanggal memakai に.",
+  "stiff": "{明日|あした}に dan {今|いま}に terdengar salah. Dan untuk tempat suatu kegiatan (makan, bekerja), pakai で, bukan に: itu pelajaran berikutnya. Hati-hati, “di” dalam bahasa Indonesia bisa menjadi に atau で.",
+  "examples": [
+    {
+      "id": "gx-ni-1",
+      "japanese": "毎日、七時に起きます。",
+      "furigana": "{毎日|まいにち}、{七時|しちじ}に{起|お}きます。",
+      "romaji": "mainichi, shichiji ni okimasu",
+      "indonesian": "Setiap hari saya bangun jam tujuh.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{毎日|まいにち}、",
+          "w": "w-mainichi"
+        },
+        {
+          "t": "{七時|しちじ}に"
+        },
+        {
+          "t": "{起|お}きます。",
+          "w": "w-okiru"
+        }
+      ],
+      "gap": {
+        "before": "{毎日|まいにち}、{七時|しちじ}",
+        "answer": "に",
+        "after": "{起|お}きます。",
+        "options": [
+          "に",
+          "で",
+          "を"
+        ],
+        "why": "Jam memakai に."
+      },
+      "audio": "audio/ja/grammar/gx-ni-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "ni"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ni-2",
+      "japanese": "明日、東京に行きます。",
+      "furigana": "{明日|あした}、{東京|とうきょう}に{行|い}きます。",
+      "romaji": "ashita, Tōkyō ni ikimasu",
+      "indonesian": "Besok saya pergi ke Tokyo.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}、",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{東京|とうきょう}に"
+        },
+        {
+          "t": "{行|い}きます。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}、{東京|とうきょう}",
+        "answer": "に",
+        "after": "{行|い}きます。",
+        "options": [
+          "に",
+          "へ",
+          "を"
+        ],
+        "ok": [
+          "へ"
+        ],
+        "note": "へ juga bisa: へ menunjuk arah, agak mirip “menuju”.",
+        "why": "Tempat tujuan: に."
+      },
+      "audio": "audio/ja/grammar/gx-ni-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "ni"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ni-3",
+      "japanese": "今、家にいる。",
+      "furigana": "{今|いま}、{家|いえ}にいる。",
+      "romaji": "ima, ie ni iru",
+      "indonesian": "Sekarang aku di rumah.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今|いま}、",
+          "w": "w-ima"
+        },
+        {
+          "t": "{家|いえ}に",
+          "w": "w-ie"
+        },
+        {
+          "t": "いる。"
+        }
+      ],
+      "gap": {
+        "before": "{今|いま}、{家|いえ}",
+        "answer": "に",
+        "after": "いる。",
+        "options": [
+          "に",
+          "で",
+          "を"
+        ],
+        "why": "Tempat seseorang berada: に dengan いる."
+      },
+      "audio": "audio/ja/grammar/gx-ni-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "ni"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ni-4",
+      "japanese": "週末、友達に会います。",
+      "furigana": "{週末|しゅうまつ}、{友達|ともだち}に{会|あ}います。",
+      "romaji": "shūmatsu, tomodachi ni aimasu",
+      "indonesian": "Akhir pekan ini saya bertemu teman.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{週末|しゅうまつ}、",
+          "w": "w-shuumatsu"
+        },
+        {
+          "t": "{友達|ともだち}に",
+          "w": "w-tomodachi"
+        },
+        {
+          "t": "{会|あ}います。",
+          "w": "w-au"
+        }
+      ],
+      "gap": {
+        "before": "{週末|しゅうまつ}、{友達|ともだち}",
+        "answer": "に",
+        "after": "{会|あ}います。",
+        "options": [
+          "に",
+          "を",
+          "と"
+        ],
+        "ok": [
+          "と"
+        ],
+        "note": "と juga bisa: bertemu dengan teman, sebagai dua pihak yang setara.",
+        "why": "Orang yang kamu temui memakai に: 友達に会う. Bukan を, walaupun dalam bahasa Indonesia “menemui teman” tidak butuh kata depan."
+      },
+      "audio": "audio/ja/grammar/gx-ni-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "ni"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

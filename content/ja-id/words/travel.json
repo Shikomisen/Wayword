@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "id": "words-travel",
+  "title": "旅行・観光",
+  "description": "インドネシアを旅するための言葉。寺院や田んぼ、島と船、切符とガイド、そして持ち帰るおみやげ。",
+  "items": [
+    {
+      "id": "w-wisata",
+      "indonesian": "wisata",
+      "japanese": "観光、旅行",
+      "pos": "noun",
+      "registerNotes": "主に複合語で使います：tempat wisata（観光地）、wisata kuliner（食べ歩き）。「観光する」の berwisata は少しかしこまった言い方で、ふだんは jalan-jalan と言います。",
+      "audio": "audio/id/words/w-wisata.mp3",
+      "tags": [
+        "旅行",
+        "観光"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-turis",
+      "indonesian": "turis",
+      "japanese": "観光客",
+      "pos": "noun",
+      "registerNotes": "turis asing（外国人観光客）と turis lokal（国内の観光客）は日常の言葉。ニュースや看板では、かしこまった wisatawan を使います。",
+      "audio": "audio/id/words/w-turis.mp3",
+      "tags": [
+        "旅行",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bule",
+      "indonesian": "bule",
+      "japanese": "（白人の）外国人、西洋人",
+      "pos": "noun",
+      "registerNotes": "くだけた言葉ですが、ふつう悪口のつもりではありません。ていねいに言うなら orang asing（外国人）。",
+      "cultureNote": "欧米系の外国人を指す言葉なので、日本人が bule と呼ばれることはあまりありません。それでも観光地では、子どもや物売りから Hello, Mister と声をかけられます。インドネシア語で気さくに返すと、たいてい喜ばれます。",
+      "audio": "audio/id/words/w-bule.mp3",
+      "tags": [
+        "旅行",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tiket",
+      "indonesian": "tiket",
+      "japanese": "切符、チケット",
+      "pos": "noun",
+      "registerNotes": "tiket masuk は入場券、tiket pesawat と tiket kereta は航空券と列車の切符。karcis は古い言葉で、駐車券などに今も使われます。",
+      "audio": "audio/id/words/w-tiket.mp3",
+      "tags": [
+        "旅行",
+        "交通"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-loket",
+      "indonesian": "loket",
+      "japanese": "窓口、切符売り場",
+      "pos": "noun",
+      "registerNotes": "Beli tiketnya di loket（切符は窓口で買ってください）。駅、銀行、役所など、どんな窓口にも使います。",
+      "audio": "audio/id/words/w-loket.mp3",
+      "tags": [
+        "旅行",
+        "交通"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pemandangan",
+      "indonesian": "pemandangan",
+      "japanese": "景色、眺め",
+      "pos": "noun",
+      "forms": {
+        "root": "pandang"
+      },
+      "registerNotes": "Pemandangannya indah sekali（すばらしい景色ですね）は、展望台や棚田でのお決まりのほめ言葉です。",
+      "audio": "audio/id/words/w-pemandangan.mp3",
+      "tags": [
+        "旅行",
+        "観光"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pulau",
+      "indonesian": "pulau",
+      "japanese": "島",
+      "pos": "noun",
+      "cultureNote": "インドネシアには1万7千以上の島があります。古い言葉 nusa を使う地名もあります：Nusa Penida、Nusa Tenggara。",
+      "audio": "audio/id/words/w-pulau.mp3",
+      "tags": [
+        "旅行",
+        "場所"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-candi",
+      "indonesian": "candi",
+      "japanese": "古代の寺院、遺跡",
+      "pos": "noun",
+      "pitfallNote": "candi は、ジャワ島のボロブドゥールやプランバナンのような古代の石造寺院のこと。今も使われているバリのヒンドゥー寺院は pura、中国系の寺は klenteng、仏教寺院は vihara です。",
+      "audio": "audio/id/words/w-candi.mp3",
+      "tags": [
+        "旅行",
+        "観光"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pura",
+      "indonesian": "pura",
+      "japanese": "（バリの）ヒンドゥー寺院",
+      "pos": "noun",
+      "pitfallNote": "pura-pura は別の言葉で、「ふりをする」の意味です。",
+      "cultureNote": "参拝するときはサロン（腰布）と帯を身につけ、肩を隠します。サロンはたいてい入口で貸してくれるか、借りられます。",
+      "audio": "audio/id/words/w-pura.mp3",
+      "tags": [
+        "旅行",
+        "観光"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-air-terjun",
+      "indonesian": "air terjun",
+      "japanese": "滝",
+      "pos": "noun",
+      "registerNotes": "直訳は「飛び込む水」。terjun は「飛び降りる、飛び込む」で、terjun payung（スカイダイビング）にも使います。",
+      "audio": "audio/id/words/w-air-terjun.mp3",
+      "tags": [
+        "旅行",
+        "観光",
+        "自然"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sawah",
+      "indonesian": "sawah",
+      "japanese": "田んぼ、水田",
+      "pos": "noun",
+      "registerNotes": "棚田は sawah terasering。ほかの作物を育てる畑は ladang。",
+      "audio": "audio/id/words/w-sawah.mp3",
+      "tags": [
+        "旅行",
+        "自然"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-oleh-oleh",
+      "indonesian": "oleh-oleh",
+      "japanese": "（旅の）おみやげ",
+      "pos": "noun",
+      "cultureNote": "日本と同じく、旅行のあとは家族や同僚におみやげを配るのが当たり前です。ジョグジャカルタの bakpia のような、その土地の名物の食べ物が定番。Mana oleh-olehnya?（おみやげは？）は半分冗談の「おかえり」です。",
+      "audio": "audio/id/words/w-oleh-oleh.mp3",
+      "tags": [
+        "旅行",
+        "文化"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-penginapan",
+      "indonesian": "penginapan",
+      "japanese": "宿、宿泊施設",
+      "pos": "noun",
+      "forms": {
+        "root": "inap"
+      },
+      "registerNotes": "ホームステイから小さなホテルまで、泊まる所なら何でも。動詞は menginap（泊まる）：Menginap di mana?（どこに泊まっていますか？）",
+      "audio": "audio/id/words/w-penginapan.mp3",
+      "tags": [
+        "旅行",
+        "場所"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-koper",
+      "indonesian": "koper",
+      "japanese": "スーツケース",
+      "pos": "noun",
+      "audio": "audio/id/words/w-koper.mp3",
+      "tags": [
+        "旅行"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-paspor",
+      "indonesian": "paspor",
+      "japanese": "パスポート",
+      "pos": "noun",
+      "cultureNote": "ホテルや携帯ショップで提示やコピー（fotokopi paspor）を求められるので、コピーを手元に用意しておくと便利です。",
+      "audio": "audio/id/words/w-paspor.mp3",
+      "tags": [
+        "旅行",
+        "書類"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-jadwal",
+      "indonesian": "jadwal",
+      "japanese": "予定、時刻表",
+      "pos": "noun",
+      "registerNotes": "jadwal kereta（列車の時刻表）、jadwal dokter（医師の診察時間）。Jadwalnya berubah は「予定が変わった」。",
+      "audio": "audio/id/words/w-jadwal.mp3",
+      "tags": [
+        "旅行",
+        "交通"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tujuan",
+      "indonesian": "tujuan",
+      "japanese": "行き先；目的",
+      "pos": "noun",
+      "forms": {
+        "root": "tuju"
+      },
+      "registerNotes": "Tujuannya ke mana?（どちらまで？）。入国審査では tujuan kunjungan が「訪問の目的」です。",
+      "audio": "audio/id/words/w-tujuan.mp3",
+      "tags": [
+        "旅行",
+        "交通"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-perjalanan",
+      "indonesian": "perjalanan",
+      "japanese": "旅、道のり",
+      "pos": "noun",
+      "forms": {
+        "root": "jalan"
+      },
+      "registerNotes": "Perjalanannya berapa jam?（移動に何時間かかりますか？）。休暇の旅行なら、ふつうは liburan や jalan-jalan と言います。",
+      "audio": "audio/id/words/w-perjalanan.mp3",
+      "tags": [
+        "旅行",
+        "交通"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pemandu",
+      "indonesian": "pemandu",
+      "japanese": "ガイド、案内人",
+      "pos": "noun",
+      "forms": {
+        "root": "pandu"
+      },
+      "registerNotes": "pemandu wisata は観光ガイド。観光地では英語の guide でも通じます。",
+      "audio": "audio/id/words/w-pemandu.mp3",
+      "tags": [
+        "旅行",
+        "人"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-peta",
+      "indonesian": "peta",
+      "japanese": "地図",
+      "pos": "noun",
+      "registerNotes": "Bisa tunjukkan di peta?（地図で教えてもらえますか？）。スマホの地図は、そのまま Maps と言います：Lihat di Maps saja（マップで見ればいいよ）。",
+      "audio": "audio/id/words/w-peta.mp3",
+      "tags": [
+        "旅行",
+        "道案内"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sewa-motor",
+      "indonesian": "sewa motor",
+      "japanese": "レンタルバイク；バイクを借りる",
+      "pos": "phrase",
+      "registerNotes": "Sewa motor sehari berapa?（バイクは1日いくらですか？）。週単位や月単位で借りると安くなります。",
+      "cultureNote": "合法的に乗るにはバイクの免許（SIM）とヘルメットが必要で、警察が観光客を止めて確認することもあります。",
+      "audio": "audio/id/words/w-sewa-motor.mp3",
+      "tags": [
+        "旅行",
+        "交通"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kapal",
+      "indonesian": "kapal",
+      "japanese": "船、ボート",
+      "pos": "noun",
+      "registerNotes": "naik kapal は「船で行く」。kapal cepat はギリ諸島行きなどの高速船。小さな木の舟は perahu。",
+      "audio": "audio/id/words/w-kapal.mp3",
+      "tags": [
+        "旅行",
+        "交通"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pelabuhan",
+      "indonesian": "pelabuhan",
+      "japanese": "港",
+      "pos": "noun",
+      "registerNotes": "フェリーや高速船は pelabuhan から出ます。Dari pelabuhan mana?（どの港からですか？）と聞きましょう。",
+      "audio": "audio/id/words/w-pelabuhan.mp3",
+      "tags": [
+        "旅行",
+        "交通",
+        "場所"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-desa",
+      "indonesian": "desa",
+      "japanese": "村",
+      "pos": "noun",
+      "registerNotes": "desa wisata は観光客を受け入れている村。kampung も「村」ですが、都会では人が密集した下町を指し、kampung halaman は「故郷」です。",
+      "audio": "audio/id/words/w-desa.mp3",
+      "tags": [
+        "旅行",
+        "場所"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kota",
+      "indonesian": "kota",
+      "japanese": "町、都市",
+      "pos": "noun",
+      "registerNotes": "pusat kota は「町の中心」、ke kota は「町に出る」。ジャカルタで Kota とだけ言えば旧市街のこと。",
+      "audio": "audio/id/words/w-kota.mp3",
+      "tags": [
+        "旅行",
+        "場所"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-musim-liburan",
+      "indonesian": "musim liburan",
+      "japanese": "休暇シーズン、行楽シーズン",
+      "pos": "noun",
+      "cultureNote": "いちばん混むのは学校の休み、クリスマスと年末年始、そして何よりラマダン明けの Lebaran です。何百万人もが帰省（mudik）し、切符は売り切れます。日本のお盆や正月の帰省ラッシュのような時期です。",
+      "audio": "audio/id/words/w-musim-liburan.mp3",
+      "tags": [
+        "旅行",
+        "文化"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-i",
+  "connector": "-i",
+  "gloss": "do it to a person or a place",
+  "title": "-i",
+  "pattern": "root + -i + the person or place: temani saya, kunjungi nenek · in full: mengunjungi, dikunjungi",
+  "explanation": "-i aims the action at a person or a place, which comes straight after it: temani saya (keep me company, from teman, friend), ajari saya (teach me), kunjungi nenek (visit Grandma), datangi kantornya (go to their office). Compare -kan, whose object is the thing that's moved, made or passed on: ajarkan bahasa Inggris is to teach English but ajari saya is to teach me, and hubungkan is to connect but hubungi is to contact someone. Like -kan, it stands on its own in requests (Bisa temani saya?) and takes me- or di- in fuller sentences: mengunjungi, dikunjungi. In casual Jakarta-style speech both -i and -kan become -in: temenin, ajarin.",
+  "natural": "Asking people to do things with you or for you (Bisa temani saya? Bisa ajari saya?), and polite promises with saya in front: Nanti saya hubungi (I'll be in touch).",
+  "stiff": "The usual slip is swapping -i and -kan: the person you teach, visit or keep company takes -i, and the thing you teach, send or move takes -kan. Temankan saya isn't standard Indonesian; it's temani, or temenin with friends.",
+  "examples": [
+    {
+      "id": "gx-i-1",
+      "indonesian": "Bisa temani saya ke dokter?",
+      "english": "Could you come to the doctor's with me?",
+      "chunks": [
+        {
+          "t": "Bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "temani ",
+          "w": "w-teman"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "ke dokter?",
+          "w": "w-dokter"
+        }
+      ],
+      "gap": {
+        "before": "Bisa ",
+        "answer": "temani",
+        "after": " saya ke dokter?",
+        "options": [
+          "temani",
+          "temankan",
+          "berteman"
+        ],
+        "why": "Keeping a person company is teman + -i, with the person straight after."
+      },
+      "audio": "audio/id/grammar/gx-i-1.mp3",
+      "tags": [
+        "grammar",
+        "i"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-i-2",
+      "indonesian": "Bisa ajari saya masak?",
+      "english": "Could you teach me to cook?",
+      "chunks": [
+        {
+          "t": "Bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "ajari "
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "masak?",
+          "w": "w-masak"
+        }
+      ],
+      "gap": {
+        "before": "Bisa ",
+        "answer": "ajari",
+        "after": " saya masak?",
+        "options": [
+          "ajari",
+          "ajarkan",
+          "belajar"
+        ],
+        "why": "The person being taught comes after -i: ajari saya; ajarkan goes with the subject taught."
+      },
+      "audio": "audio/id/grammar/gx-i-2.mp3",
+      "tags": [
+        "grammar",
+        "i"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-i-3",
+      "indonesian": "Kami sering mengunjungi nenek di desa.",
+      "english": "We often visit Grandma in the village.",
+      "chunks": [
+        {
+          "t": "Kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "sering ",
+          "w": "w-sering"
+        },
+        {
+          "t": "mengunjungi "
+        },
+        {
+          "t": "nenek ",
+          "w": "w-nenek"
+        },
+        {
+          "t": "di desa.",
+          "w": "w-desa"
+        }
+      ],
+      "gap": {
+        "before": "Kami sering ",
+        "answer": "mengunjungi",
+        "after": " nenek di desa.",
+        "options": [
+          "mengunjungi",
+          "berkunjung",
+          "dikunjungi"
+        ],
+        "why": "Visiting someone directly is me- + kunjung + -i, with who you visit straight after; berkunjung needs ke (berkunjung ke rumah nenek)."
+      },
+      "audio": "audio/id/grammar/gx-i-3.mp3",
+      "tags": [
+        "grammar",
+        "i"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-i-4",
+      "indonesian": "Nanti saya hubungi lagi, ya.",
+      "english": "I'll get back to you later.",
+      "chunks": [
+        {
+          "t": "Nanti ",
+          "w": "w-nanti"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "hubungi ",
+          "w": "w-menghubungi"
+        },
+        {
+          "t": "lagi, ya."
+        }
+      ],
+      "gap": {
+        "before": "Nanti saya ",
+        "answer": "hubungi",
+        "after": " lagi, ya.",
+        "options": [
+          "hubungi",
+          "hubungkan",
+          "berhubungan"
+        ],
+        "why": "Contacting a person is hubung + -i; hubungkan is connecting one thing to another."
+      },
+      "audio": "audio/id/grammar/gx-i-4.mp3",
+      "tags": [
+        "grammar",
+        "i"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

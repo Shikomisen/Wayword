@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-kan",
+  "connector": "-kan",
+  "gloss": "make it happen; do it for someone",
+  "title": "-kan",
+  "pattern": "root + -kan: mati → matikan, kecil → kecilkan, beli → belikan (for someone) · Tolong …kan …",
+  "explanation": "-kan makes something happen to something: mati (off, dead) → matikan (to switch off), bersih (clean) → bersihkan (to clean), kecil (small) → kecilkan (to make smaller, to turn down). With some verbs it means doing it for someone, who comes straight after: ambilkan saya air (get me some water), belikan saya pulsa (buy me some phone credit). The root + -kan on its own is the form for requests and instructions after tolong or silakan: Tolong matikan AC-nya, Silakan masukkan PIN Anda. In fuller sentences it comes with me- or di- as well (membersihkan, dibersihkan), and a dictionary lists it under the root.",
+  "natural": "Polite requests about things around you: switching off, turning down, fetching, putting away. Tolong with the -kan form is polite enough for anyone, and Bisa tolong …? is softer still.",
+  "stiff": "With friends, Jakarta-style speech swaps -kan for -in: matiin, ambilin, bersihin. Watch the spelling when the root ends in k: masuk + -kan is masukkan, with two k's.",
+  "examples": [
+    {
+      "id": "gx-kan-1",
+      "indonesian": "Tolong matikan AC-nya.",
+      "english": "Please turn off the air-con.",
+      "chunks": [
+        {
+          "t": "Tolong "
+        },
+        {
+          "t": "matikan "
+        },
+        {
+          "t": "AC-nya.",
+          "w": "w-ac"
+        }
+      ],
+      "gap": {
+        "before": "Tolong ",
+        "answer": "matikan",
+        "after": " AC-nya.",
+        "options": [
+          "matikan",
+          "mati",
+          "matiin"
+        ],
+        "ok": [
+          "matiin"
+        ],
+        "note": "Matiin is the casual Jakarta-style form of the same word, fine with friends.",
+        "why": "Switching something off is making it mati: mati + -kan."
+      },
+      "audio": "audio/id/grammar/gx-kan-1.mp3",
+      "audioHint": "Tolong matikan a se-nya.",
+      "tags": [
+        "grammar",
+        "kan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-kan-2",
+      "indonesian": "Bisa tolong belikan saya pulsa?",
+      "english": "Could you buy me some phone credit?",
+      "chunks": [
+        {
+          "t": "Bisa tolong ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "belikan ",
+          "w": "w-beli"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "pulsa?",
+          "w": "w-pulsa"
+        }
+      ],
+      "gap": {
+        "before": "Bisa tolong ",
+        "answer": "belikan",
+        "after": " saya pulsa?",
+        "options": [
+          "belikan",
+          "beli",
+          "dibeli"
+        ],
+        "why": "Buying something for someone is beli + -kan, with the person straight after."
+      },
+      "audio": "audio/id/grammar/gx-kan-2.mp3",
+      "tags": [
+        "grammar",
+        "kan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-kan-3",
+      "indonesian": "Tolong kecilkan suaranya sedikit.",
+      "english": "Could you turn it down a bit?",
+      "chunks": [
+        {
+          "t": "Tolong "
+        },
+        {
+          "t": "kecilkan ",
+          "w": "w-kecil"
+        },
+        {
+          "t": "suaranya "
+        },
+        {
+          "t": "sedikit.",
+          "w": "w-sedikit"
+        }
+      ],
+      "gap": {
+        "before": "Tolong ",
+        "answer": "kecilkan",
+        "after": " suaranya sedikit.",
+        "options": [
+          "kecilkan",
+          "kecil",
+          "mengecil"
+        ],
+        "why": "Making the sound smaller is kecil + -kan; mengecil is getting smaller by itself."
+      },
+      "audio": "audio/id/grammar/gx-kan-3.mp3",
+      "tags": [
+        "grammar",
+        "kan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kan-4",
+      "indonesian": "Silakan masukkan kartu Anda.",
+      "english": "Please insert your card.",
+      "chunks": [
+        {
+          "t": "Silakan "
+        },
+        {
+          "t": "masukkan "
+        },
+        {
+          "t": "kartu "
+        },
+        {
+          "t": "Anda.",
+          "w": "w-anda"
+        }
+      ],
+      "gap": {
+        "before": "Silakan ",
+        "answer": "masukkan",
+        "after": " kartu Anda.",
+        "options": [
+          "masukkan",
+          "masuki",
+          "masuk"
+        ],
+        "why": "Putting the card in is masuk + -kan, with both k's; masuki is going into a place yourself."
+      },
+      "audio": "audio/id/grammar/gx-kan-4.mp3",
+      "tags": [
+        "grammar",
+        "kan"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

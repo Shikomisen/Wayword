@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "id": "words-house",
+  "title": "家と暮らし",
+  "description": "インドネシアで暮らすための言葉。kos を借りる、料金を払う、水のガロンやガスボンベ、壊れたものと、それを直してくれる人。",
+  "items": [
+    {
+      "id": "w-kos",
+      "indonesian": "kos",
+      "japanese": "下宿、間借りの部屋",
+      "pos": "noun",
+      "registerNotes": "看板には Terima Kos や Kost と書いてあります。kos putri は女性専用、kos putra は男性専用。",
+      "cultureNote": "kos は月単位で借りる部屋で、浴室は共用のことが多く、日本の下宿に近いものです。大家さんは ibu kos、住んでいる学生や若い社会人は anak kos と呼ばれます。",
+      "audio": "audio/id/words/w-kos.mp3",
+      "tags": [
+        "家",
+        "賃貸"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kontrakan",
+      "indonesian": "kontrakan",
+      "japanese": "借家",
+      "pos": "noun",
+      "forms": {
+        "root": "kontrak"
+      },
+      "cultureNote": "kontrakan は年単位で借りることが多く、1年分の家賃をまとめて前払いします。",
+      "audio": "audio/id/words/w-kontrakan.mp3",
+      "tags": [
+        "家",
+        "賃貸"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sewa",
+      "indonesian": "sewa",
+      "japanese": "賃料、レンタル料",
+      "pos": "noun",
+      "registerNotes": "Sewanya berapa sebulan?（家賃は月いくらですか？）。話し言葉では sewa をそのまま動詞にも使い（Saya sewa kamar di sini＝ここで部屋を借りています）、書き言葉では menyewa と言います。",
+      "audio": "audio/id/words/w-sewa.mp3",
+      "tags": [
+        "家",
+        "賃貸",
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tagihan",
+      "indonesian": "tagihan",
+      "japanese": "請求書、請求",
+      "pos": "noun",
+      "forms": {
+        "root": "tagih"
+      },
+      "pitfallNote": "tagihan は電気、水道、インターネットなど、サービスの請求のこと。ワルン（食堂）やレストランの「お会計」は bon：Minta bonnya（お会計お願いします）。",
+      "audio": "audio/id/words/w-tagihan.mp3",
+      "tags": [
+        "家",
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-token-listrik",
+      "indonesian": "token listrik",
+      "japanese": "プリペイド式の電気（のチャージ）",
+      "pos": "noun",
+      "cultureNote": "多くの家や kos の部屋は、プリペイド式の電気メーターです。コンビニやアプリで token を買い、その番号をメーターに入力します。メーターがピーピー鳴ったら、残りが少ないサイン。",
+      "audio": "audio/id/words/w-token-listrik.mp3",
+      "tags": [
+        "家",
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-galon",
+      "indonesian": "galon",
+      "japanese": "（ウォーターサーバー用の）大きな水のボトル",
+      "pos": "noun",
+      "cultureNote": "日本と違って水道水は飲めないので、家庭では飲み水を約19リットル入りの galon で買い、ディスペンサーにセットします。近所の店が、未開封のものか、安い詰め替え（isi ulang）を配達してくれます。",
+      "audio": "audio/id/words/w-galon.mp3",
+      "tags": [
+        "家",
+        "家事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-gas",
+      "indonesian": "gas",
+      "japanese": "（調理用の）ガス、ガスボンベ",
+      "pos": "noun",
+      "registerNotes": "Gasnya habis（ガスが切れた）。3キロの小さな緑のボンベは、形と色から gas melon と呼ばれます。",
+      "audio": "audio/id/words/w-gas.mp3",
+      "tags": [
+        "家",
+        "家事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kompor",
+      "indonesian": "kompor",
+      "japanese": "コンロ",
+      "pos": "noun",
+      "audio": "audio/id/words/w-kompor.mp3",
+      "tags": [
+        "家",
+        "家事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kulkas",
+      "indonesian": "kulkas",
+      "japanese": "冷蔵庫",
+      "pos": "noun",
+      "registerNotes": "オランダ語の koelkast から。lemari es（直訳は「氷の戸棚」）は、よりかしこまった言い方です。",
+      "audio": "audio/id/words/w-kulkas.mp3",
+      "tags": [
+        "家",
+        "家事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pompa-air",
+      "indonesian": "pompa air",
+      "japanese": "水のポンプ",
+      "pos": "noun",
+      "cultureNote": "井戸や水道からポンプでタンクに水を上げる家が多いので、停電すると水も止まることがよくあります。",
+      "audio": "audio/id/words/w-pompa-air.mp3",
+      "tags": [
+        "家",
+        "修理"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mati-lampu",
+      "indonesian": "mati lampu",
+      "japanese": "停電",
+      "pos": "phrase",
+      "registerNotes": "Mati lampu lagi（また停電だ）。直訳は「明かりが死ぬ」。listrik mati も同じ意味で、お知らせでは、かしこまった pemadaman listrik を使います。",
+      "audio": "audio/id/words/w-mati-lampu.mp3",
+      "tags": [
+        "家",
+        "トラブル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-rusak",
+      "indonesian": "rusak",
+      "japanese": "壊れた、故障した；傷んだ",
+      "pos": "adjective",
+      "pitfallNote": "rusak は機械など、動かなくなったものに使います：AC-nya rusak（エアコンが故障した）。骨や棒が「折れる」は patah、ガラスが「割れる」は pecah と、日本語のように使い分けます。",
+      "audio": "audio/id/words/w-rusak.mp3",
+      "tags": [
+        "家",
+        "トラブル",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bocor",
+      "indonesian": "bocor",
+      "japanese": "漏れる；パンクした",
+      "pos": "adjective",
+      "registerNotes": "Atapnya bocor（雨漏りしている）は雨季の定番の悩み。ban bocor はタイヤのパンク。",
+      "audio": "audio/id/words/w-bocor.mp3",
+      "tags": [
+        "家",
+        "トラブル"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tukang",
+      "indonesian": "tukang",
+      "japanese": "職人、修理屋さん",
+      "pos": "noun",
+      "registerNotes": "tukang のあとに職種を続けて「〜屋さん」：tukang listrik（電気屋さん）、tukang ledeng（水道屋さん）、tukang AC（エアコン屋さん）。tukang sayur（野菜売り）、tukang parkir（駐車係）のように、物売りや働く人にも使います。",
+      "cultureNote": "tukang には Pak か Mas と呼びかけ、作業中は飲み物を出すのが普通です。日本で職人さんにお茶を出すのと似ています。",
+      "audio": "audio/id/words/w-tukang.mp3",
+      "tags": [
+        "家",
+        "修理",
+        "人"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-perbaikan",
+      "indonesian": "perbaikan",
+      "japanese": "修理",
+      "pos": "noun",
+      "forms": {
+        "root": "baik"
+      },
+      "registerNotes": "看板の Sedang dalam perbaikan は「修理中」。動詞は memperbaiki（直訳は「よくする」）、くだけた会話では benerin と言います。",
+      "audio": "audio/id/words/w-perbaikan.mp3",
+      "tags": [
+        "家",
+        "修理"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-satpam",
+      "indonesian": "satpam",
+      "japanese": "警備員",
+      "pos": "noun",
+      "cultureNote": "住宅地、会社、銀行の門には satpam がいて、Pak と呼びかけます。satuan pengamanan の略です。",
+      "audio": "audio/id/words/w-satpam.mp3",
+      "tags": [
+        "家",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-rt",
+      "indonesian": "RT",
+      "japanese": "隣組（とその長）",
+      "pos": "noun",
+      "cultureNote": "どの地域も RT（rukun tetangga）という小さな単位に分かれ、住民が選んだ長 Pak RT または Bu RT がいます。越してきた人は、外国人も含め、届け出る（lapor RT）ことになっています。日本の町内会に似ていて、日本占領期の隣組が起源とされています。",
+      "audio": "audio/id/words/w-rt.mp3",
+      "audioHint": "er te",
+      "tags": [
+        "家",
+        "近所",
+        "文化"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kebersihan",
+      "indonesian": "kebersihan",
+      "japanese": "清潔さ；清掃",
+      "pos": "noun",
+      "forms": {
+        "root": "bersih"
+      },
+      "registerNotes": "Jagalah kebersihan（きれいに保ちましょう）は、あちこちの看板にあります。uang kebersihan は毎月のごみ収集料で、RT を通して集めることが多いです。",
+      "audio": "audio/id/words/w-kebersihan.mp3",
+      "tags": [
+        "家",
+        "近所"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-cucian",
+      "indonesian": "cucian",
+      "japanese": "洗濯物",
+      "pos": "noun",
+      "forms": {
+        "root": "cuci"
+      },
+      "registerNotes": "洗っている、またはこれから洗う衣類のこと：Cucian saya belum kering（洗濯物がまだ乾いていない）。",
+      "cultureNote": "洗濯物を laundry kiloan に出す人も多いです。キロ単位の料金で、洗って乾かし、アイロンまでかけてくれます。",
+      "audio": "audio/id/words/w-cucian.mp3",
+      "tags": [
+        "家",
+        "家事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menjemur",
+      "indonesian": "menjemur",
+      "japanese": "（洗濯物を）干す、日に干す",
+      "pos": "verb",
+      "forms": {
+        "root": "jemur"
+      },
+      "registerNotes": "話し言葉では jemur だけ：Saya jemur baju dulu（先に洗濯物を干します）。干してある洗濯物は jemuran、berjemur は「日光浴をする」。",
+      "audio": "audio/id/words/w-menjemur.mp3",
+      "tags": [
+        "家",
+        "家事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-setrika",
+      "indonesian": "setrika",
+      "japanese": "アイロン；アイロンをかける",
+      "pos": "noun",
+      "registerNotes": "動詞は、書き言葉で menyetrika、話し言葉で nyetrika または setrika：Bajunya sudah disetrika?（シャツにアイロンはかけましたか？）",
+      "audio": "audio/id/words/w-setrika.mp3",
+      "tags": [
+        "家",
+        "家事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-seprai",
+      "indonesian": "seprai",
+      "japanese": "シーツ",
+      "pos": "noun",
+      "registerNotes": "店やネットの商品ページでは、たいてい sprei と書かれています。ganti seprai は「シーツを替える」。",
+      "audio": "audio/id/words/w-seprai.mp3",
+      "tags": [
+        "家",
+        "家事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bantal",
+      "indonesian": "bantal",
+      "japanese": "枕",
+      "pos": "noun",
+      "cultureNote": "インドネシアのベッドには、たいてい guling もあります。寝るときに抱える細長いクッションで、抱き枕のようなものです。",
+      "audio": "audio/id/words/w-bantal.mp3",
+      "tags": [
+        "家",
+        "家事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-nyamuk",
+      "indonesian": "nyamuk",
+      "japanese": "蚊",
+      "pos": "noun",
+      "registerNotes": "obat nyamuk は虫よけ全般で、蚊取り線香、スプレー、塗るタイプなどがあります。蚊はデング熱（demam berdarah）をうつすので、真剣に対策します。",
+      "audio": "audio/id/words/w-nyamuk.mp3",
+      "tags": [
+        "家",
+        "健康"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-semut",
+      "indonesian": "semut",
+      "japanese": "アリ",
+      "pos": "noun",
+      "audio": "audio/id/words/w-semut.mp3",
+      "tags": [
+        "家"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

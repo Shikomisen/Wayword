@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "id": "words-health",
+  "title": "Health & the Doctor",
+  "description": "Symptoms, medicine and the clinic: words for telling a doctor or a pharmacist what's wrong, and for understanding what they tell you.",
+  "items": [
+    {
+      "id": "w-batuk",
+      "indonesian": "batuk",
+      "english": "cough; to cough",
+      "pos": "noun",
+      "registerNotes": "Batuk kering is a dry cough and batuk berdahak a chesty one; obat batuk is cough medicine.",
+      "audio": "audio/id/words/w-batuk.mp3",
+      "tags": [
+        "health",
+        "symptoms"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pilek",
+      "indonesian": "pilek",
+      "english": "runny nose, head cold",
+      "pos": "noun",
+      "registerNotes": "Saya pilek (I've got a cold). A blocked nose is hidung tersumbat.",
+      "audio": "audio/id/words/w-pilek.mp3",
+      "tags": [
+        "health",
+        "symptoms"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-flu",
+      "indonesian": "flu",
+      "english": "flu; a bad cold",
+      "pos": "noun",
+      "pitfallNote": "Indonesians use flu for an ordinary cold with a runny nose too, so kena flu (to come down with the flu) may mean less than it sounds.",
+      "audio": "audio/id/words/w-flu.mp3",
+      "tags": [
+        "health",
+        "symptoms"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-masuk-angin",
+      "indonesian": "masuk angin",
+      "english": "a chill; feeling run-down",
+      "pos": "phrase",
+      "cultureNote": "Literally wind getting in, and blamed on rain, night air or a fan: aches, bloating and tiredness. The home cure is kerokan, scraping the back with a coin and oil, which leaves red stripes.",
+      "audio": "audio/id/words/w-masuk-angin.mp3",
+      "tags": [
+        "health",
+        "symptoms",
+        "culture"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sakit-kepala",
+      "indonesian": "sakit kepala",
+      "english": "headache",
+      "pos": "noun",
+      "registerNotes": "Sakit plus a body part names the pain: sakit gigi (toothache), sakit tenggorokan (sore throat).",
+      "pitfallNote": "Pusing means dizzy but is often used for a headache too; sakit kepala is the clear word for a pain in the head.",
+      "audio": "audio/id/words/w-sakit-kepala.mp3",
+      "tags": [
+        "health",
+        "symptoms"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sakit-perut",
+      "indonesian": "sakit perut",
+      "english": "stomach ache",
+      "pos": "noun",
+      "registerNotes": "Perut is the stomach or belly. Mulas is the cramping feeling that sends you to the toilet.",
+      "audio": "audio/id/words/w-sakit-perut.mp3",
+      "tags": [
+        "health",
+        "symptoms"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-diare",
+      "indonesian": "diare",
+      "english": "diarrhoea",
+      "pos": "noun",
+      "registerNotes": "The neutral word for doctors and pharmacies; mencret is blunt and casual. Oralit (oral rehydration salts) is sold at every apotek.",
+      "audio": "audio/id/words/w-diare.mp3",
+      "tags": [
+        "health",
+        "symptoms"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mual",
+      "indonesian": "mual",
+      "english": "nauseous, queasy",
+      "pos": "adjective",
+      "registerNotes": "Saya mual (I feel sick). Seasickness is mabuk laut, though mabuk on its own means drunk.",
+      "audio": "audio/id/words/w-mual.mp3",
+      "tags": [
+        "health",
+        "symptoms"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-muntah",
+      "indonesian": "muntah",
+      "english": "to vomit, throw up",
+      "pos": "verb",
+      "registerNotes": "The plain word, fine with a doctor: Saya muntah dua kali (I've thrown up twice).",
+      "audio": "audio/id/words/w-muntah.mp3",
+      "tags": [
+        "health",
+        "symptoms"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-luka",
+      "indonesian": "luka",
+      "english": "wound, cut, injury",
+      "pos": "noun",
+      "registerNotes": "Terluka means injured, and luka bakar is a burn. A graze from a scooter fall is lecet.",
+      "audio": "audio/id/words/w-luka.mp3",
+      "tags": [
+        "health",
+        "injuries"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-gatal",
+      "indonesian": "gatal",
+      "english": "itchy",
+      "pos": "adjective",
+      "registerNotes": "Gatal-gatal is an itchy rash, and a mosquito bite is gigitan nyamuk.",
+      "audio": "audio/id/words/w-gatal.mp3",
+      "tags": [
+        "health",
+        "symptoms"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-alergi",
+      "indonesian": "alergi",
+      "english": "allergy; allergic",
+      "pos": "noun",
+      "pitfallNote": "No word for to: Saya alergi udang (I'm allergic to prawns). Kacang covers peanuts, nuts and beans, so say kacang tanah for peanuts.",
+      "audio": "audio/id/words/w-alergi.mp3",
+      "tags": [
+        "health",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-resep",
+      "indonesian": "resep",
+      "english": "prescription; recipe",
+      "pos": "noun",
+      "pitfallNote": "The same word means a recipe, so context decides. Obat resep needs a prescription; obat bebas is sold over the counter.",
+      "audio": "audio/id/words/w-resep.mp3",
+      "tags": [
+        "health",
+        "medicine"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-klinik",
+      "indonesian": "klinik",
+      "english": "clinic, medical centre",
+      "pos": "noun",
+      "cultureNote": "For everyday illness people go to a klinik or the local puskesmas (community health centre), not straight to a hospital.",
+      "audio": "audio/id/words/w-klinik.mp3",
+      "tags": [
+        "health",
+        "places"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-perawat",
+      "indonesian": "perawat",
+      "english": "nurse",
+      "pos": "noun",
+      "forms": {
+        "root": "rawat"
+      },
+      "registerNotes": "Female nurses are usually addressed as Suster or Sus, male ones as Mas. Rawat inap is a hospital stay, rawat jalan outpatient care.",
+      "audio": "audio/id/words/w-perawat.mp3",
+      "tags": [
+        "health",
+        "people"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-suntik",
+      "indonesian": "suntik",
+      "english": "injection, jab; to inject",
+      "pos": "noun",
+      "registerNotes": "Disuntik is to get an injection: Perlu disuntik? (Do I need an injection?) A vaccination is suntik vaksin or vaksinasi.",
+      "audio": "audio/id/words/w-suntik.mp3",
+      "tags": [
+        "health",
+        "medicine"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tensi",
+      "indonesian": "tensi",
+      "english": "blood pressure",
+      "pos": "noun",
+      "cultureNote": "Clinics usually check it first, whatever you've come for: Cek tensi dulu, ya. Tekanan darah is the formal term.",
+      "audio": "audio/id/words/w-tensi.mp3",
+      "tags": [
+        "health",
+        "doctor"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-periksa",
+      "indonesian": "periksa",
+      "english": "to examine, check",
+      "pos": "verb",
+      "registerNotes": "Periksa ke dokter is to see a doctor, and diperiksa is being examined. Memeriksa is the written form; cek is common in speech.",
+      "audio": "audio/id/words/w-periksa.mp3",
+      "tags": [
+        "health",
+        "doctor"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-istirahat",
+      "indonesian": "istirahat",
+      "english": "to rest; a rest, a break",
+      "pos": "verb",
+      "registerNotes": "Doctors say Banyak istirahat, ya (Get plenty of rest). Jam istirahat is a lunch break or break time.",
+      "audio": "audio/id/words/w-istirahat.mp3",
+      "tags": [
+        "health",
+        "doctor"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sembuh",
+      "indonesian": "sembuh",
+      "english": "to recover, get better",
+      "pos": "verb",
+      "cultureNote": "Semoga cepat sembuh (Get well soon) is what everyone says to someone who's ill, in person or by message.",
+      "audio": "audio/id/words/w-sembuh.mp3",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kambuh",
+      "indonesian": "kambuh",
+      "english": "to flare up again (an illness)",
+      "pos": "verb",
+      "registerNotes": "For a known condition coming back: Maag saya kambuh (My gastritis is back) is a complaint you'll hear often.",
+      "audio": "audio/id/words/w-kambuh.mp3",
+      "tags": [
+        "health",
+        "symptoms"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-tablet",
+      "indonesian": "tablet",
+      "english": "tablet, pill",
+      "pos": "noun",
+      "pitfallNote": "You drink medicine in Indonesian, even pills: minum obat. Instructions sound like tiga kali sehari satu tablet (one tablet three times a day).",
+      "audio": "audio/id/words/w-tablet.mp3",
+      "tags": [
+        "health",
+        "medicine"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sirup",
+      "indonesian": "sirup",
+      "english": "syrup (medicine); cordial",
+      "pos": "noun",
+      "registerNotes": "Obat sirup is liquid medicine, measured with a sendok takar (measuring spoon). Sirup is also the sweet cordial served to guests, especially at Lebaran.",
+      "pitfallNote": "Dictionaries spell it sirop, but labels, pharmacies and nearly everyone write and say sirup.",
+      "audio": "audio/id/words/w-sirup.mp3",
+      "tags": [
+        "health",
+        "medicine"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-salep",
+      "indonesian": "salep",
+      "english": "ointment, cream",
+      "pos": "noun",
+      "registerNotes": "Labels say Oleskan tipis-tipis (Apply a thin layer).",
+      "audio": "audio/id/words/w-salep.mp3",
+      "tags": [
+        "health",
+        "medicine"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gigi",
+      "indonesian": "gigi",
+      "english": "tooth, teeth",
+      "pos": "noun",
+      "registerNotes": "Sakit gigi is toothache and dokter gigi a dentist; sikat gigi is both a toothbrush and to brush your teeth.",
+      "audio": "audio/id/words/w-gigi.mp3",
+      "tags": [
+        "health",
+        "body"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mata",
+      "indonesian": "mata",
+      "english": "eye",
+      "pos": "noun",
+      "registerNotes": "Sakit mata is sore or infected eyes, and obat tetes mata is eye drops. Mata turns up in other words too: matahari (sun), mata uang (currency).",
+      "audio": "audio/id/words/w-mata.mp3",
+      "tags": [
+        "health",
+        "body"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

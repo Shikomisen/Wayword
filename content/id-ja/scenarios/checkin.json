@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "id": "checkin",
+  "title": "Check-in hotel",
+  "category": "hotel",
+  "setting": "Sebuah business hotel di Osaka, pukul 15.00. Kamu sudah memesan kamar atas namamu.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "staff",
+      "japanese": "いらっしゃいませ。ご予約のお客様でしょうか。",
+      "furigana": [
+        {
+          "b": "いらっしゃいませ。ご"
+        },
+        {
+          "b": "予約",
+          "r": "よやく"
+        },
+        {
+          "b": "のお"
+        },
+        {
+          "b": "客様",
+          "r": "きゃくさま"
+        },
+        {
+          "b": "でしょうか。"
+        }
+      ],
+      "romaji": "Irasshaimase. Go-yoyaku no o-kyakusama deshō ka.",
+      "indonesian": "Selamat datang. Apakah sudah ada reservasi?",
+      "audio": "audio/ja/scenario/checkin-n1.mp3",
+      "audioHint": "いらっしゃいませ。ごよやくのおきゃくさまでしょうか",
+      "options": [
+        {
+          "phraseId": "hot-02",
+          "quality": "good",
+          "feedback": "Ya. Lanjutkan dengan menyebut namamu dan serahkan paspor: hotel wajib memfotokopi paspor tamu asing.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "hot-01",
+          "quality": "good",
+          "feedback": "Sedikit mendahului pertanyaan, tapi sudah menjawabnya secara tidak langsung dan membuat proses berjalan.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "gre-14",
+          "quality": "awkward",
+          "feedback": "Bahasa penghormatan (ご〜, お客様, でしょうか) membuat bahasa Jepang di hotel terdengar jauh lebih panjang dari isinya. Intinya hanya 予約: reservasi.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "staff",
+      "japanese": "お名前を伺えますか。",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "名前",
+          "r": "なまえ"
+        },
+        {
+          "b": "を"
+        },
+        {
+          "b": "伺",
+          "r": "うかが"
+        },
+        {
+          "b": "えますか。"
+        }
+      ],
+      "romaji": "O-namae o ukagaemasu ka.",
+      "indonesian": "Boleh saya tahu namanya?",
+      "audio": "audio/ja/scenario/checkin-n2.mp3",
+      "audioHint": "おなまえをうかがえますか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "スミスです。",
+          "romaji": "Sumisu desu.",
+          "indonesian": "Smith.",
+          "feedback": "Nama + です sudah cukup. Di Jepang yang disebut biasanya nama keluarga; kalau kamu tidak punya, sebut nama seperti di paspor. Menunjukkan konfirmasi pemesanan sekaligus menghindari masalah ejaan.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "japanese": "これが予約のメールです。",
+          "romaji": "Kore ga yoyaku no mēru desu.",
+          "indonesian": "Ini email pemesanannya.",
+          "feedback": "Efisien. 伺えます adalah bentuk merendah dari “bertanya”: kamu akan sering mendengar ragam bahasa ini di hotel.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "staff",
+      "japanese": "ありがとうございます。三泊でお間違いないでしょうか。",
+      "furigana": [
+        {
+          "b": "ありがとうございます。"
+        },
+        {
+          "b": "三泊",
+          "r": "さんぱく"
+        },
+        {
+          "b": "でお"
+        },
+        {
+          "b": "間違",
+          "r": "まちが"
+        },
+        {
+          "b": "いないでしょうか。"
+        }
+      ],
+      "romaji": "Arigatō gozaimasu. Sanpaku de o-machigai nai deshō ka.",
+      "indonesian": "Terima kasih. Tiga malam, apakah sudah benar?",
+      "audio": "audio/ja/scenario/checkin-n3.mp3",
+      "audioHint": "ありがとうございます。さんぱくでおまちがいないでしょうか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "はい、そうです。",
+          "romaji": "Hai, sō desu.",
+          "indonesian": "Ya, benar.",
+          "feedback": "そうです membenarkan sebuah pernyataan. Perhatikan 三泊 dibaca さんぱく: bunyi kata bantu untuk malam berubah pada angka 1, 3, 6, 8, dan 10.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "hot-09",
+          "quality": "good",
+          "feedback": "Saat yang tepat untuk bertanya kalau kamu ingin memperpanjang: jauh lebih mudah sekarang daripada di pagi terakhirmu.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "awkward",
+          "feedback": "Dimengerti, tapi はい saja untuk pertanyaan konfirmasi terasa tipis. はい、そうです hanya sedikit lebih panjang dan jauh lebih jelas.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "staff",
+      "japanese": "お部屋は八階です。朝食は六時半からとなっております。",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "部屋",
+          "r": "へや"
+        },
+        {
+          "b": "は"
+        },
+        {
+          "b": "八階",
+          "r": "はちかい"
+        },
+        {
+          "b": "です。"
+        },
+        {
+          "b": "朝食",
+          "r": "ちょうしょく"
+        },
+        {
+          "b": "は"
+        },
+        {
+          "b": "六時半",
+          "r": "ろくじはん"
+        },
+        {
+          "b": "からとなっております。"
+        }
+      ],
+      "romaji": "O-heya wa hachikai desu. Chōshoku wa rokuji han kara to natte orimasu.",
+      "indonesian": "Kamarnya di lantai 8. Sarapan mulai pukul 6.30.",
+      "audio": "audio/ja/scenario/checkin-n4.mp3",
+      "audioHint": "おへやははちかいです。ちょうしょくはろくじはんからとなっております",
+      "options": [
+        {
+          "phraseId": "hot-07",
+          "quality": "good",
+          "feedback": "Tanyakan sekarang: kata sandinya biasanya tertulis di kartu yang diberikan bersama kunci.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "hot-03",
+          "quality": "good",
+          "feedback": "Layak dipastikan. Business hotel biasanya check-out pukul 10 pagi, lebih awal dari perkiraan banyak pelancong.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "gre-13",
+          "quality": "good",
+          "feedback": "Boleh. Hati-hati dengan 半: 六時半 adalah pukul 6.30, yang dalam bahasa Indonesia disebut “setengah tujuh”. となっております hanyalah “adalah” yang sangat sopan; isinya cuma 六時半から.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "staff",
+      "japanese": "こちらが鍵になります。ごゆっくりどうぞ。",
+      "furigana": [
+        {
+          "b": "こちらが"
+        },
+        {
+          "b": "鍵",
+          "r": "かぎ"
+        },
+        {
+          "b": "になります。ごゆっくりどうぞ。"
+        }
+      ],
+      "romaji": "Kochira ga kagi ni narimasu. Go-yukkuri dōzo.",
+      "indonesian": "Ini kuncinya. Silakan beristirahat dengan nyaman.",
+      "audio": "audio/ja/scenario/checkin-n5.mp3",
+      "audioHint": "こちらがかぎになります。ごゆっくりどうぞ",
+      "options": [
+        {
+          "phraseId": "gre-05",
+          "quality": "good",
+          "feedback": "Selesai. ごゆっくり berarti “santai saja, tidak usah buru-buru”: penutup yang hangat, bukan perintah.",
+          "next": "end"
+        },
+        {
+          "phraseId": "hot-04",
+          "quality": "good",
+          "feedback": "Kalau kamu mau pergi sebelum kamar siap, inilah saatnya. Hampir semua hotel mau menyimpan barang bawaan.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "romaji": "",
+      "indonesian": "Sudah check-in. Staf hotel memakai bahasa penghormatan yang berat: kalimatnya panjang, isinya sedikit. Dengarkan kata bendanya: 予約, 名前, 泊, 階, 朝食, 鍵.",
+      "end": true,
+      "options": []
+    }
+  }
+}

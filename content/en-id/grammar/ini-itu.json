@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ini-itu",
+  "connector": "ini / itu",
+  "gloss": "this and that",
+  "title": "ini and itu — this and that",
+  "pattern": "Ini … (This is …) · … ini (this …)",
+  "explanation": "Ini means 'this' and itu 'that', and where you put them changes the meaning. Before a noun they make a sentence: Ini kopi is 'This is coffee', and Itu rumah saya is 'That's my house'. After a noun they point: kopi ini is 'this coffee', rumah itu 'that house'. They also cover 'these' and 'those', because the noun doesn't change: sepatu ini can be 'these shoes'.",
+  "natural": "Ini and itu do a lot of pointing in shops and warungs: Ini apa? (What's this?), Yang itu, Bu (That one, please). After a noun, itu often means no more than 'the', for something you've both already mentioned: Hotel itu mahal? (Is the hotel expensive?)",
+  "stiff": "Mixing up the two positions changes the sentence: Ini buku baru is 'This is a new book', while Buku ini baru is 'This book is new'. Ini and itu go after the whole description: rumah besar itu is 'that big house', but rumah itu besar is a sentence, 'That house is big'.",
+  "examples": [
+    {
+      "id": "gx-ini-itu-1",
+      "indonesian": "Itu rumah saya.",
+      "english": "That's my house.",
+      "chunks": [
+        {
+          "t": "Itu ",
+          "w": "w-itu"
+        },
+        {
+          "t": "rumah ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Itu",
+        "after": " rumah saya.",
+        "options": [
+          "Itu",
+          "Ini",
+          "Dia"
+        ],
+        "why": "Pointing at something further away is itu; dia is only for people."
+      },
+      "audio": "audio/id/grammar/gx-ini-itu-1.mp3",
+      "tags": [
+        "grammar",
+        "ini-itu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ini-itu-2",
+      "indonesian": "Buku ini bagus.",
+      "english": "This book is good.",
+      "chunks": [
+        {
+          "t": "Buku ",
+          "w": "w-buku"
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "bagus.",
+          "w": "w-bagus"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Buku ini",
+        "after": " bagus.",
+        "options": [
+          "Buku ini",
+          "Ini buku"
+        ],
+        "why": "After the noun, ini points: buku ini, this book. Ini buku bagus would mean 'This is a good book'."
+      },
+      "audio": "audio/id/grammar/gx-ini-itu-2.mp3",
+      "tags": [
+        "grammar",
+        "ini-itu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ini-itu-3",
+      "indonesian": "Sepatu ini murah.",
+      "english": "These shoes are cheap.",
+      "chunks": [
+        {
+          "t": "Sepatu ",
+          "w": "w-sepatu"
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "murah.",
+          "w": "w-murah"
+        }
+      ],
+      "gap": {
+        "before": "Sepatu ",
+        "answer": "ini",
+        "after": " murah.",
+        "options": [
+          "ini",
+          "itu"
+        ],
+        "why": "Ini is 'these' as well as 'this'; the noun stays the same."
+      },
+      "audio": "audio/id/grammar/gx-ini-itu-3.mp3",
+      "tags": [
+        "grammar",
+        "ini-itu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ini-itu-4",
+      "indonesian": "Orang itu teman saya.",
+      "english": "That person's my friend.",
+      "chunks": [
+        {
+          "t": "Orang ",
+          "w": "w-orang"
+        },
+        {
+          "t": "itu ",
+          "w": "w-itu"
+        },
+        {
+          "t": "teman ",
+          "w": "w-teman"
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Orang itu",
+        "after": " teman saya.",
+        "options": [
+          "Orang itu",
+          "Itu orang"
+        ],
+        "why": "Itu after orang points at one person: orang itu. Itu orang would mean 'That's a person'."
+      },
+      "audio": "audio/id/grammar/gx-ini-itu-4.mp3",
+      "tags": [
+        "grammar",
+        "ini-itu"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

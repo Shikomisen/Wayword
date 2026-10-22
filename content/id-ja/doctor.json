@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "id": "doctor",
+  "title": "Dokter & apotek",
+  "order": 16,
+  "description": "Menjelaskan gejala di klinik dan apotek, dan memahami pertanyaan yang akan diajukan kepadamu.",
+  "phrases": [
+    {
+      "id": "doc-01",
+      "japanese": "今日はどうされましたか",
+      "furigana": [
+        {
+          "b": "今日",
+          "r": "きょう"
+        },
+        {
+          "b": "はどうされましたか"
+        }
+      ],
+      "romaji": "kyō wa dō saremashita ka",
+      "indonesian": "Ada keluhan apa hari ini?",
+      "registerNotes": "Pertanyaan pertama dari dokter atau petugas pendaftaran. Jawab dengan gejalamu, dan sudah berapa lama kamu mengalaminya.",
+      "audio": "audio/ja/doc-01.mp3",
+      "tags": [
+        "klinik",
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-02",
+      "japanese": "三日前から熱があります",
+      "furigana": [
+        {
+          "b": "三日前",
+          "r": "みっかまえ"
+        },
+        {
+          "b": "から"
+        },
+        {
+          "b": "熱",
+          "r": "ねつ"
+        },
+        {
+          "b": "があります"
+        }
+      ],
+      "romaji": "mikka mae kara netsu ga arimasu",
+      "indonesian": "Saya demam sejak tiga hari yang lalu.",
+      "registerNotes": "Gejala + から: sudah berapa lama. から diletakkan di belakang, sedangkan “sejak” di depan: 三日前から = “sejak tiga hari lalu”. Dokter pasti ingin tahu.",
+      "audio": "audio/ja/doc-02.mp3",
+      "tags": [
+        "gejala",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-03",
+      "japanese": "頭がずきずき痛みます",
+      "furigana": [
+        {
+          "b": "頭",
+          "r": "あたま"
+        },
+        {
+          "b": "がずきずき"
+        },
+        {
+          "b": "痛",
+          "r": "いた"
+        },
+        {
+          "b": "みます"
+        }
+      ],
+      "romaji": "atama ga zukizuki itamimasu",
+      "indonesian": "Kepala saya sakit berdenyut-denyut.",
+      "registerNotes": "ずきずき adalah nyeri berdenyut, seperti “cenat-cenut”. Dokter Jepang sering bertanya jenis sakitnya: ずきずき (berdenyut), ちくちく (menusuk-nusuk), しくしく (nyeri tumpul).",
+      "audio": "audio/ja/doc-03.mp3",
+      "tags": [
+        "gejala"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "doc-04",
+      "japanese": "吐き気がします",
+      "furigana": [
+        {
+          "b": "吐",
+          "r": "は"
+        },
+        {
+          "b": "き"
+        },
+        {
+          "b": "気",
+          "r": "け"
+        },
+        {
+          "b": "がします"
+        }
+      ],
+      "romaji": "hakike ga shimasu",
+      "indonesian": "Saya mual.",
+      "registerNotes": "Mual, bukan sekadar tidak enak badan. Tidak enak badan secara umum adalah 具合が悪いです.",
+      "audio": "audio/ja/doc-04.mp3",
+      "tags": [
+        "gejala"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-05",
+      "japanese": "咳が止まりません",
+      "furigana": [
+        {
+          "b": "咳",
+          "r": "せき"
+        },
+        {
+          "b": "が"
+        },
+        {
+          "b": "止",
+          "r": "と"
+        },
+        {
+          "b": "まりません"
+        }
+      ],
+      "romaji": "seki ga tomarimasen",
+      "indonesian": "Batuk saya tidak mau berhenti.",
+      "registerNotes": "Harfiah “batuknya tidak berhenti”. Di ruang tunggu, kalau kamu batuk, kamu diharapkan memakai masker.",
+      "audio": "audio/ja/doc-05.mp3",
+      "tags": [
+        "gejala"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-06",
+      "japanese": "食べ物のアレルギーがあります",
+      "furigana": [
+        {
+          "b": "食",
+          "r": "た"
+        },
+        {
+          "b": "べ"
+        },
+        {
+          "b": "物",
+          "r": "もの"
+        },
+        {
+          "b": "のアレルギーがあります"
+        }
+      ],
+      "romaji": "tabemono no arerugī ga arimasu",
+      "indonesian": "Saya punya alergi makanan.",
+      "registerNotes": "Sebutkan sesudahnya: えびのアレルギー (udang), ナッツ (kacang), 小麦 (gandum).",
+      "audio": "audio/ja/doc-06.mp3",
+      "tags": [
+        "gejala",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-07",
+      "japanese": "いつも飲んでいる薬があります",
+      "furigana": [
+        {
+          "b": "いつも"
+        },
+        {
+          "b": "飲",
+          "r": "の"
+        },
+        {
+          "b": "んでいる"
+        },
+        {
+          "b": "薬",
+          "r": "くすり"
+        },
+        {
+          "b": "があります"
+        }
+      ],
+      "romaji": "itsumo nonde iru kusuri ga arimasu",
+      "indonesian": "Saya sedang minum obat rutin.",
+      "registerNotes": "Beri tahu dokter dan apoteker. Sama seperti bahasa Indonesia, obat “diminum”, bahkan tablet: 薬を飲む.",
+      "audio": "audio/ja/doc-07.mp3",
+      "tags": [
+        "klinik"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-08",
+      "japanese": "保険証を持っていません",
+      "furigana": [
+        {
+          "b": "保険証",
+          "r": "ほけんしょう"
+        },
+        {
+          "b": "を"
+        },
+        {
+          "b": "持",
+          "r": "も"
+        },
+        {
+          "b": "っていません"
+        }
+      ],
+      "romaji": "hokenshō o motte imasen",
+      "indonesian": "Saya tidak punya kartu asuransi kesehatan.",
+      "registerNotes": "Wisatawan biasanya membayar penuh lalu mengklaim ke asuransi perjalanan. Minta kuitansi dan 診断書.",
+      "audio": "audio/ja/doc-08.mp3",
+      "tags": [
+        "klinik"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "doc-09",
+      "japanese": "診断書をもらえますか",
+      "furigana": [
+        {
+          "b": "診断書",
+          "r": "しんだんしょ"
+        },
+        {
+          "b": "をもらえますか"
+        }
+      ],
+      "romaji": "shindansho o moraemasu ka",
+      "indonesian": "Bisa minta surat keterangan dokter?",
+      "registerNotes": "Untuk asuransi perjalanan atau pekerjaan. Biasanya ada biayanya.",
+      "audio": "audio/ja/doc-09.mp3",
+      "tags": [
+        "klinik"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "doc-10",
+      "japanese": "一日に何回飲みますか",
+      "furigana": [
+        {
+          "b": "一日",
+          "r": "いちにち"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "何回",
+          "r": "なんかい"
+        },
+        {
+          "b": "飲",
+          "r": "の"
+        },
+        {
+          "b": "みますか"
+        }
+      ],
+      "romaji": "ichinichi ni nankai nomimasu ka",
+      "indonesian": "Sehari diminum berapa kali?",
+      "registerNotes": "Mengecek dosis di apotek. Jawabannya sering 一日三回 (tiga kali sehari).",
+      "audio": "audio/ja/doc-10.mp3",
+      "tags": [
+        "apotek"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-11",
+      "japanese": "食後に飲んでください",
+      "furigana": [
+        {
+          "b": "食後",
+          "r": "しょくご"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "飲",
+          "r": "の"
+        },
+        {
+          "b": "んでください"
+        }
+      ],
+      "romaji": "shokugo ni nonde kudasai",
+      "indonesian": "Diminum sesudah makan.",
+      "registerNotes": "Yang akan dikatakan apoteker. 食前 sebelum makan; 寝る前 sebelum tidur.",
+      "audio": "audio/ja/doc-11.mp3",
+      "tags": [
+        "apotek",
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-12",
+      "japanese": "眠くなりますか",
+      "furigana": [
+        {
+          "b": "眠",
+          "r": "ねむ"
+        },
+        {
+          "b": "くなりますか"
+        }
+      ],
+      "romaji": "nemuku narimasu ka",
+      "indonesian": "Apakah obat ini bikin mengantuk?",
+      "registerNotes": "Penting ditanyakan sebelum menyetir. くなる berarti “menjadi”: 眠い → 眠くなる. Kata sifatnya berubah bentuk, sedangkan bahasa Indonesia cukup menambahkan “jadi”.",
+      "audio": "audio/ja/doc-12.mp3",
+      "tags": [
+        "apotek"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-13",
+      "japanese": "痛み止めはありますか",
+      "furigana": [
+        {
+          "b": "痛",
+          "r": "いた"
+        },
+        {
+          "b": "み"
+        },
+        {
+          "b": "止",
+          "r": "ど"
+        },
+        {
+          "b": "めはありますか"
+        }
+      ],
+      "romaji": "itamidome wa arimasu ka",
+      "indonesian": "Ada obat pereda nyeri?",
+      "registerNotes": "Di apotek atau toko obat. Beberapa obat disimpan di balik konter dan perlu bicara dulu dengan apoteker.",
+      "audio": "audio/ja/doc-13.mp3",
+      "tags": [
+        "apotek",
+        "penting"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

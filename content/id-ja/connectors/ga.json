@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "con-ga",
+  "connector": "が",
+  "gloss": "tapi (sopan)",
+  "title": "が — tapi (sopan)",
+  "pattern": "A が、B",
+  "explanation": "Sesudah satu klausa utuh, が berarti “tapi”, sama seperti けど, dalam ragam yang lebih formal: {少|すこ}し{高|たか}いですが、いいですよ (agak mahal, tapi bagus). Seperti けど, letaknya di akhir bagian pertama, bukan di awal seperti “tapi”. が juga melembutkan pembuka kalimat: すみませんが… (permisi…), {申|もう}し{訳|わけ}ありませんが… (mohon maaf…). Jangan tertukar dengan partikel が sesudah kata benda ({猫|ねこ}が{好|す}き).",
+  "natural": "Percakapan sopan, pekerjaan, email, bertemu orang tua pasanganmu. Sesudah です/ます, ini standar yang sopan.",
+  "stiff": "Dengan pasangan dan teman, が terdengar formal; pakai けど. Bentuk biasa + が ({行|い}くが) adalah gaya tulisan.",
+  "examples": [
+    {
+      "id": "cx-ga-1",
+      "japanese": "すみませんが、写真を撮ってもらえますか。",
+      "furigana": "すみませんが、{写真|しゃしん}を{撮|と}ってもらえますか。",
+      "indonesian": "Permisi, bisa tolong fotokan kami?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "すみませんが、"
+        },
+        {
+          "t": "{写真|しゃしん}を",
+          "w": "w-shashin"
+        },
+        {
+          "t": "{撮|と}ってもらえますか。"
+        }
+      ],
+      "gap": {
+        "before": "すみません",
+        "answer": "が",
+        "after": "、{写真|しゃしん}を{撮|と}ってもらえますか。",
+        "options": [
+          "が",
+          "けど",
+          "から"
+        ],
+        "ok": [
+          "けど"
+        ],
+        "note": "けど juga bisa, sedikit lebih santai."
+      },
+      "audio": "audio/ja/connectors/cx-ga-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "ga"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-ga-2",
+      "japanese": "少し高いですが、とてもいいです。",
+      "furigana": "{少|すこ}し{高|たか}いですが、とてもいいです。",
+      "indonesian": "Agak mahal, tapi bagus sekali.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{少|すこ}し"
+        },
+        {
+          "t": "{高|たか}いですが、",
+          "w": "w-takai"
+        },
+        {
+          "t": "とても",
+          "w": "w-totemo"
+        },
+        {
+          "t": "いいです。",
+          "w": "w-ii"
+        }
+      ],
+      "gap": {
+        "before": "{少|すこ}し{高|たか}いです",
+        "answer": "が",
+        "after": "、とてもいいです。",
+        "options": [
+          "が",
+          "から",
+          "ので"
+        ]
+      },
+      "combine": {
+        "a": "{少|すこ}し{高|たか}いです。",
+        "b": "とてもいいです。",
+        "distractors": [
+          "{高|たか}いですから、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-ga-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "ga"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-ga-3",
+      "japanese": "日本に住んでいますが、日本語はまだ下手です。",
+      "furigana": "{日本|にほん}に{住|す}んでいますが、{日本語|にほんご}はまだ{下手|へた}です。",
+      "indonesian": "Saya tinggal di Jepang, tapi bahasa Jepang saya masih belum lancar.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本|にほん}に"
+        },
+        {
+          "t": "{住|す}んでいますが、"
+        },
+        {
+          "t": "{日本語|にほんご}はまだ",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{下手|へた}です。"
+        }
+      ],
+      "gap": {
+        "before": "{日本|にほん}に{住|す}んでいます",
+        "answer": "が",
+        "after": "、{日本語|にほんご}はまだ{下手|へた}です。",
+        "options": [
+          "が",
+          "ので",
+          "たら"
+        ]
+      },
+      "combine": {
+        "a": "{日本|にほん}に{住|す}んでいます。",
+        "b": "{日本語|にほんご}はまだ{下手|へた}です。",
+        "distractors": [
+          "{住|す}んでいるので、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-ga-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "ga"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-ga-4",
+      "japanese": "申し訳ありませんが、明日は行けません。",
+      "furigana": "{申|もう}し{訳|わけ}ありませんが、{明日|あした}は{行|い}けません。",
+      "indonesian": "Mohon maaf, besok saya tidak bisa datang.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{申|もう}し{訳|わけ}ありませんが、"
+        },
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{行|い}けません。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{申|もう}し{訳|わけ}ありません",
+        "answer": "が",
+        "after": "、{明日|あした}は{行|い}けません。",
+        "options": [
+          "が",
+          "から",
+          "し"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-ga-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "ga"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

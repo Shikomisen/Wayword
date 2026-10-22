@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "id": "words-time-more",
+  "title": "Time & How Often",
+  "description": "How often and exactly when: always and rarely, earlier today and just now, the day after tomorrow, since, until and for, and the little time words that keep a story moving.",
+  "items": [
+    {
+      "id": "w-selalu",
+      "indonesian": "selalu",
+      "english": "always",
+      "pos": "adverb",
+      "registerNotes": "Before the verb or describing word: Dia selalu terlambat (He's always late).",
+      "audio": "audio/id/words/w-selalu.mp3",
+      "tags": [
+        "time",
+        "how often"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sering",
+      "indonesian": "sering",
+      "english": "often",
+      "pos": "adverb",
+      "audio": "audio/id/words/w-sering.mp3",
+      "tags": [
+        "time",
+        "how often"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kadang-kadang",
+      "indonesian": "kadang-kadang",
+      "english": "sometimes",
+      "pos": "adverb",
+      "registerNotes": "Casually just kadang: Kadang aku masak sendiri (Sometimes I cook for myself).",
+      "audio": "audio/id/words/w-kadang-kadang.mp3",
+      "tags": [
+        "time",
+        "how often"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-jarang",
+      "indonesian": "jarang",
+      "english": "rarely, seldom",
+      "pos": "adverb",
+      "registerNotes": "Gentler than a flat never: Saya jarang minum kopi (I don't drink coffee much).",
+      "audio": "audio/id/words/w-jarang.mp3",
+      "tags": [
+        "time",
+        "how often"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pernah",
+      "indonesian": "pernah",
+      "english": "ever; have (done something) before",
+      "pos": "adverb",
+      "registerNotes": "Pernah ke Bali? (Have you been to Bali?) is answered Pernah, or Belum pernah (not yet).",
+      "pitfallNote": "It marks an experience, not the past in general: Saya pernah tinggal di Jakarta means you've lived there at some point.",
+      "audio": "audio/id/words/w-pernah.mp3",
+      "tags": [
+        "time",
+        "experience"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tidak-pernah",
+      "indonesian": "tidak pernah",
+      "english": "never",
+      "pos": "adverb",
+      "registerNotes": "Casually nggak pernah. For something you haven't done but still might, belum pernah (not yet) sounds more natural.",
+      "audio": "audio/id/words/w-tidak-pernah.mp3",
+      "tags": [
+        "time",
+        "how often"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-biasanya",
+      "indonesian": "biasanya",
+      "english": "usually",
+      "pos": "adverb",
+      "audio": "audio/id/words/w-biasanya.mp3",
+      "tags": [
+        "time",
+        "how often"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-segera",
+      "indonesian": "segera",
+      "english": "right away, immediately, soon",
+      "pos": "adverb",
+      "registerNotes": "A little formal: in announcements, on signs (Segera hadir, Coming soon) and from staff. Casually people say langsung or secepatnya.",
+      "audio": "audio/id/words/w-segera.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tadi",
+      "indonesian": "tadi",
+      "english": "earlier (today), just now",
+      "pos": "adverb",
+      "registerNotes": "Anything earlier today: tadi pagi (this morning, now over), tadi malam (last night).",
+      "pitfallNote": "Tadi is always past. For later today, use nanti: nanti sore (this afternoon, still to come).",
+      "audio": "audio/id/words/w-tadi.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-barusan",
+      "indonesian": "barusan",
+      "english": "just now, a moment ago",
+      "pos": "adverb",
+      "registerNotes": "Leans casual: Dia barusan pergi (She's just left). The neutral equivalent is baru saja.",
+      "audio": "audio/id/words/w-barusan.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-lusa",
+      "indonesian": "lusa",
+      "english": "the day after tomorrow",
+      "pos": "noun",
+      "registerNotes": "Kemarin lusa is the day before yesterday.",
+      "audio": "audio/id/words/w-lusa.mp3",
+      "tags": [
+        "time",
+        "days"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-minggu-depan",
+      "indonesian": "minggu depan",
+      "english": "next week",
+      "pos": "phrase",
+      "registerNotes": "Depan (front) makes 'next': bulan depan (next month), tahun depan (next year).",
+      "audio": "audio/id/words/w-minggu-depan.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bulan-lalu",
+      "indonesian": "bulan lalu",
+      "english": "last month",
+      "pos": "phrase",
+      "registerNotes": "Lalu (past) works the same way: minggu lalu, tahun lalu. In speech kemarin stretches too: bulan kemarin, tahun kemarin.",
+      "audio": "audio/id/words/w-bulan-lalu.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-dulu",
+      "indonesian": "dulu",
+      "english": "in the past, once; first (before something else)",
+      "pos": "adverb",
+      "registerNotes": "Dulu saya tinggal di Wellington (I used to live in Wellington). The formal form is dahulu.",
+      "pitfallNote": "After a verb it means first: Saya makan dulu (I'll eat first). Saya pamit dulu, said when leaving, is 'I'll be off now'.",
+      "audio": "audio/id/words/w-dulu.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nanti-malam",
+      "indonesian": "nanti malam",
+      "english": "tonight (later on)",
+      "pos": "phrase",
+      "pitfallNote": "Nanti malam is tonight, still to come; tadi malam is last night. Malam ini also means tonight.",
+      "audio": "audio/id/words/w-nanti-malam.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sebentar",
+      "indonesian": "sebentar",
+      "english": "a moment, for a short while",
+      "pos": "adverb",
+      "registerNotes": "Sebentar, ya (Just a moment) is what you'll hear on the phone and at counters. Casually bentar.",
+      "audio": "audio/id/words/w-sebentar.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-lama-lama",
+      "indonesian": "lama-lama",
+      "english": "gradually, over time, eventually",
+      "pos": "adverb",
+      "registerNotes": "Lama-lama kamu terbiasa (You'll get used to it in time) is a common bit of encouragement.",
+      "audio": "audio/id/words/w-lama-lama.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-akhirnya",
+      "indonesian": "akhirnya",
+      "english": "finally, in the end",
+      "pos": "adverb",
+      "registerNotes": "Said on its own with relief when something long-awaited happens. In a story it means 'so in the end': Akhirnya kami naik taksi.",
+      "audio": "audio/id/words/w-akhirnya.mp3",
+      "tags": [
+        "time",
+        "stories"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tiba-tiba",
+      "indonesian": "tiba-tiba",
+      "english": "suddenly",
+      "pos": "adverb",
+      "registerNotes": "Usually at the start: Tiba-tiba listriknya mati (Suddenly the power went off).",
+      "audio": "audio/id/words/w-tiba-tiba.mp3",
+      "tags": [
+        "time",
+        "stories"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sejak",
+      "indonesian": "sejak",
+      "english": "since",
+      "pos": "preposition",
+      "pitfallNote": "Sejak needs a starting point: sejak tahun lalu, sejak kecil (since I was little). For a length of time use sudah: Saya sudah dua tahun di sini.",
+      "audio": "audio/id/words/w-sejak.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sampai",
+      "indonesian": "sampai",
+      "english": "until; to arrive",
+      "pos": "preposition",
+      "registerNotes": "Until: Saya kerja sampai jam lima. Arrive: Sudah sampai? (Are you there yet?), the message people send to check you got home safely.",
+      "audio": "audio/id/words/w-sampai.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-selama",
+      "indonesian": "selama",
+      "english": "for (a length of time), during",
+      "pos": "preposition",
+      "pitfallNote": "English 'for' with a length of time isn't untuk: Saya di sini selama dua minggu (I'm here for two weeks).",
+      "audio": "audio/id/words/w-selama.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-setiap-hari",
+      "indonesian": "setiap hari",
+      "english": "every day",
+      "pos": "phrase",
+      "registerNotes": "Casually tiap hari. Setiap goes with any time word: setiap minggu, setiap pagi.",
+      "audio": "audio/id/words/w-setiap-hari.mp3",
+      "tags": [
+        "time",
+        "how often"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-belakangan-ini",
+      "indonesian": "belakangan ini",
+      "english": "lately, recently",
+      "pos": "adverb",
+      "registerNotes": "Casually akhir-akhir ini: Akhir-akhir ini saya sibuk sekali (I've been really busy lately).",
+      "audio": "audio/id/words/w-belakangan-ini.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sebelumnya",
+      "indonesian": "sebelumnya",
+      "english": "before that, previously; in advance",
+      "pos": "adverb",
+      "registerNotes": "Terima kasih sebelumnya (Thanks in advance) ends many messages that ask for help.",
+      "audio": "audio/id/words/w-sebelumnya.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pagi-pagi",
+      "indonesian": "pagi-pagi",
+      "english": "early in the morning",
+      "pos": "adverb",
+      "registerNotes": "Saying pagi twice makes it early: Besok pagi-pagi kita berangkat (We'll set off early tomorrow morning).",
+      "cultureNote": "Days start early, while it's still cool: traditional markets are at their busiest first thing.",
+      "audio": "audio/id/words/w-pagi-pagi.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

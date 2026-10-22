@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "id": "con-dan",
+  "connector": "dan",
+  "gloss": "と、そして",
+  "title": "dan — と、そして",
+  "pattern": "A dan B · … dengan …",
+  "explanation": "dan は「と」「そして」。物と物（sayur dan buah ＝ 野菜と果物）、形容詞と形容詞（besar dan bersih ＝ 大きくてきれい）、文と文（Saya kerja di bank dan istri saya guru.）を、どれも dan 1つでつなぎます。いくつか並べる時は、最後の1つの前にだけ置きます：kopi, teh, dan air putih。注意したいのは「友達と行く」の「と」。「〜と一緒に」は dan ではなく dengan（Saya pergi dengan teman）、話し言葉では sama（Saya pergi sama teman）です。",
+  "natural": "物を並べる時、形容詞を2つ並べる時、関係のある2つのことを言う時に。ていねいな場面でもくだけた場面でも使えます。短い文が2つなら、dan を使わずに間を置くだけのことも多いです：Saya guru, istri saya dokter.",
+  "stiff": "「起きて、シャワーを浴びて、出かけた」のように動作を順番につなぐ「〜て」には、dan より lalu や terus が自然です。また Saya pergi dan teman は「友達と行った」になりません。dengan teman か sama teman と言いましょう。",
+  "examples": [
+    {
+      "id": "cx-dan-1",
+      "indonesian": "Kemarin saya beli sayur dan buah di pasar.",
+      "japanese": "昨日、市場で野菜と果物を買いました。",
+      "chunks": [
+        {
+          "t": "Kemarin saya beli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "sayur ",
+          "w": "w-sayur"
+        },
+        {
+          "t": "dan ",
+          "w": "w-dan"
+        },
+        {
+          "t": "buah ",
+          "w": "w-buah"
+        },
+        {
+          "t": "di pasar.",
+          "w": "w-pasar"
+        }
+      ],
+      "gap": {
+        "before": "Kemarin saya beli sayur ",
+        "answer": "dan",
+        "after": " buah di pasar.",
+        "options": [
+          "dan",
+          "atau",
+          "tapi"
+        ],
+        "why": "両方買ったので dan。「野菜と果物」の「と」です。"
+      },
+      "combine": {
+        "a": "Kemarin saya beli sayur di pasar.",
+        "b": "Saya juga beli buah.",
+        "distractors": [
+          "atau "
+        ]
+      },
+      "alsoOrders": [
+        [
+          0,
+          3,
+          2,
+          1,
+          4
+        ]
+      ],
+      "audio": "audio/id/connectors/cx-dan-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "dan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-dan-2",
+      "indonesian": "Kamarnya besar dan bersih.",
+      "japanese": "部屋は広くてきれいです。",
+      "chunks": [
+        {
+          "t": "Kamarnya ",
+          "w": "w-kamar"
+        },
+        {
+          "t": "besar ",
+          "w": "w-besar"
+        },
+        {
+          "t": "dan ",
+          "w": "w-dan"
+        },
+        {
+          "t": "bersih.",
+          "w": "w-bersih"
+        }
+      ],
+      "gap": {
+        "before": "Kamarnya besar ",
+        "answer": "dan",
+        "after": " bersih.",
+        "options": [
+          "dan",
+          "tapi",
+          "atau"
+        ],
+        "why": "いいことを2つ並べるので dan（「〜くて」）。tapi は besar tapi kotor（広いけど汚い）のように、反対のことをつなぐ時です。"
+      },
+      "combine": {
+        "a": "Kamarnya besar.",
+        "b": "Kamarnya bersih.",
+        "distractors": [
+          "tapi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-dan-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "dan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-dan-3",
+      "indonesian": "Saya kerja di bank dan istri saya guru.",
+      "japanese": "私は銀行で働いていて、妻は教師です。",
+      "chunks": [
+        {
+          "t": "Saya kerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "di bank ",
+          "w": "w-bank"
+        },
+        {
+          "t": "dan ",
+          "w": "w-dan"
+        },
+        {
+          "t": "istri saya ",
+          "w": "w-istri"
+        },
+        {
+          "t": "guru.",
+          "w": "w-guru"
+        }
+      ],
+      "gap": {
+        "before": "Saya kerja di bank ",
+        "answer": "dan",
+        "after": " istri saya guru.",
+        "options": [
+          "dan",
+          "dengan",
+          "atau"
+        ],
+        "why": "文と文をつなぐのも dan。dengan は「〜と一緒に」の意味だけです。"
+      },
+      "combine": {
+        "a": "Saya kerja di bank.",
+        "b": "Istri saya guru.",
+        "distractors": [
+          "dengan "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-dan-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "dan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-dan-4",
+      "indonesian": "Besok saya mau ke pantai dengan teman-teman.",
+      "japanese": "明日、友達と海に行きます。",
+      "chunks": [
+        {
+          "t": "Besok ",
+          "w": "w-besok"
+        },
+        {
+          "t": "saya mau ",
+          "w": "w-saya"
+        },
+        {
+          "t": "ke pantai ",
+          "w": "w-pantai"
+        },
+        {
+          "t": "dengan "
+        },
+        {
+          "t": "teman-teman.",
+          "w": "w-teman"
+        }
+      ],
+      "gap": {
+        "before": "Besok saya mau ke pantai ",
+        "answer": "dengan",
+        "after": " teman-teman.",
+        "options": [
+          "dengan",
+          "dan",
+          "sama"
+        ],
+        "ok": [
+          "sama"
+        ],
+        "note": "sama も同じ「〜と一緒に」で、ふだんの会話ではこちらがよく使われます。",
+        "why": "「友達と（一緒に）」は dengan。日本語の「と」につられて dan にしないように。dan は saya dan teman saya（私と友達）のように、対等な2つを並べる時だけです。"
+      },
+      "audio": "audio/id/connectors/cx-dan-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "dan"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

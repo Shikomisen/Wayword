@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "id": "ojek",
+  "title": "バイクタクシーに乗る",
+  "category": "transport",
+  "setting": "配車アプリ Gojek で、バイクタクシー（オジェック）を予約しました。ジャカルタ中心部のホテルから、旧市街のコタ・トゥアまで。緑のジャケットを着たドライバーが、すぐそばにバイクを停めました。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "driver",
+      "indonesian": "Permisi, Kak. Atas nama Sam?",
+      "japanese": "すみません、サムさんですか？",
+      "audio": "audio/id/scenario/ojek-n1.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Iya, Pak. Saya Sam.",
+          "japanese": "はい、サムです。",
+          "feedback": "シンプルで丁寧です。乗る前に、ナンバープレートがアプリの表示と同じか確かめましょう。",
+          "next": "n2"
+        },
+        {
+          "phraseId": "tra-04",
+          "quality": "good",
+          "feedback": "予約と照らし合わせるのは賢明です。Gojek のドライバーはみんな同じ緑のジャケットを着ています。",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Iya. Kamu Gojek?",
+          "japanese": "はい。あなたが Gojek？",
+          "feedback": "知らないドライバーに kamu はなれなれしく聞こえます。日本語でも初対面の人を「あなた」と呼ばないのと同じで、Pak（若いドライバーなら Mas）で呼びかけましょう。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "driver",
+      "indonesian": "Ini helmnya, Kak. Ke Kota Tua, ya?",
+      "japanese": "ヘルメットをどうぞ。コタ・トゥアまでですね？",
+      "audio": "audio/id/scenario/ojek-n2.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Iya, betul, Pak. Terima kasih.",
+          "japanese": "はい、そうです。ありがとうございます。",
+          "feedback": "betul（正しい、その通り）で確認できます。ヘルメットをかぶって、あごひもを締めましょう。",
+          "next": "n3"
+        },
+        {
+          "phraseId": "tra-01",
+          "quality": "awkward",
+          "feedback": "間違いではありませんが、行き先はもうアプリに入っています。これは流しのタクシーやオジェックで使う言い方。ここは Iya, betul だけで十分です。",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Saya tidak perlu helm, Pak.",
+          "japanese": "ヘルメットはいりません。",
+          "feedback": "後ろに乗る人もヘルメットは義務です。だからアプリのドライバーは予備を持っています。かぶって、あごひもを締めましょう。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "driver",
+      "indonesian": "Pegangan, ya, Kak. Jalan besar macet, kita lewat jalan kecil.",
+      "japanese": "つかまってくださいね。大通りが渋滞しているので、裏道を行きます。",
+      "audio": "audio/id/scenario/ojek-n3.mp3",
+      "options": [
+        {
+          "phraseId": "tra-08",
+          "quality": "good",
+          "feedback": "丁寧な言い方で、ドライバーも快く聞いてくれます。乗っているのはあなたなので、遠慮なく頼んで大丈夫です。",
+          "next": "n4"
+        },
+        {
+          "phraseId": "tra-11",
+          "quality": "good",
+          "feedback": "気軽な世間話にぴったり。ジャカルタの人なら誰でも macet（渋滞）について一言あります。",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Jangan cepat!",
+          "japanese": "速く走らないで！",
+          "feedback": "通じますが、ya も Pak もないと叱っているように聞こえます。Pelan-pelan, ya, Pak と言えば、やわらかいお願いになります。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "driver",
+      "indonesian": "Sudah dekat, Kak. Turunnya di mana?",
+      "japanese": "もうすぐです。どこで降りますか？",
+      "audio": "audio/id/scenario/ojek-n4.mp3",
+      "options": [
+        {
+          "phraseId": "tra-07",
+          "quality": "good",
+          "feedback": "はっきりしていて丁寧です。もっと短く Di sini saja, Pak でもOK。",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Di depan museum itu, Pak.",
+          "japanese": "あの博物館の前で。",
+          "feedback": "di depan（〜の前）＋目印で、降りる場所を伝えるのが一般的です。",
+          "next": "n5"
+        },
+        {
+          "phraseId": "tra-09",
+          "quality": "wrong",
+          "feedback": "ドライバーは今 sudah dekat（もうすぐ）と言ったばかり。聞かれているのは降りる場所なので、Di sini saja, Pak と言うか、目印を伝えましょう。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "driver",
+      "indonesian": "Sudah sampai, Kak. Bayarnya tunai, ya? Dua puluh tiga ribu.",
+      "japanese": "着きました。お支払いは現金ですね？2万3千ルピアです。",
+      "audio": "audio/id/scenario/ojek-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Iya, Pak. Ini dua puluh lima ribu. Kembaliannya ambil saja.",
+          "japanese": "はい。2万5千ルピアです。おつりは取っておいてください。",
+          "feedback": "日本にはチップの習慣がありませんが、端数を切り上げてドライバーに渡すのは、いつも喜ばれるちょっとした心づけです。",
+          "next": "n6"
+        },
+        {
+          "phraseId": "num-09",
+          "quality": "good",
+          "feedback": "maaf から始めるのは正解です。ドライバーは大きなお札をくずせないことが多いので、オジェック用に小額紙幣を用意しておきましょう。",
+          "next": "n6"
+        },
+        {
+          "phraseId": "sho-02",
+          "quality": "wrong",
+          "feedback": "アプリの料金は予約前に表示される決まった額なので、値切る余地はありません。値段の交渉は流しのオジェックだけ、それも乗る前にします。",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "driver",
+      "indonesian": "Terima kasih, Kak. Jangan lupa bintang lima, ya!",
+      "japanese": "ありがとうございました。星5つ、忘れないでくださいね！",
+      "audio": "audio/id/scenario/ojek-n6.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Iya, Pak. Hati-hati di jalan.",
+          "japanese": "はい。お気をつけて。",
+          "feedback": "Hati-hati di jalan は日本語の「お気をつけて」。これから出発する人、特にドライバーにかける温かい一言です。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "good",
+          "feedback": "シンプルで正解。あとでアプリで評価しましょう。ドライバーにとって評価は生活に直結します。",
+          "next": "end"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Helmnya saya bawa, ya, Pak.",
+          "japanese": "ヘルメットはもらっていきますね。",
+          "feedback": "ヘルメットはドライバーのものです。立ち去る前に返しましょう。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "japanese": "到着。アプリのオジェックは料金が決まっていて先に表示されるので、値切りはなし。現金かアプリで払い、あとでドライバーを評価します。渡されたヘルメットをかぶり、降りたら返しましょう。スピードが怖い時は、Pelan-pelan, ya, Pak といつでも言って大丈夫です。",
+      "end": true,
+      "options": []
+    }
+  }
+}

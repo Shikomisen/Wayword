@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "weekend-plans",
+  "title": "週末の予定を立てる",
+  "category": "plans",
+  "setting": "ジョグジャカルタ、木曜の夜。言語交換で知り合った友達のリナから電話がかかってきました。リナは友達らしく、aku、kamu、nggak を使ったくだけた話し方です。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "friend",
+      "indonesian": "Halo! Lagi apa? Sabtu ini ada acara, nggak?",
+      "japanese": "もしもし！今なにしてる？今度の土曜、なんか予定ある？",
+      "audio": "audio/id/scenario/weekend-plans-n1.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Lagi santai aja. Sabtu? Nggak ada. Kenapa?",
+          "japanese": "のんびりしてるだけ。土曜？特にないよ。なんで？",
+          "feedback": "友達同士らしい、くだけた返事です。lagi は「〜しているところ」、aja は「〜だけ」、nggak は「ない・いいえ」。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Kayaknya nggak ada, sih. Ada apa?",
+          "japanese": "たぶんないかな。どうしたの？",
+          "feedback": "kayaknya（たぶん）と sih で、やわらかく、おしゃべりらしい感じになります。",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya tidak ada acara. Apakah Anda punya rencana?",
+          "japanese": "予定はございません。あなたは何かご予定がおありですか？",
+          "feedback": "正しいですが、saya、Anda、apakah は書類のような響きで、友達に敬語で話しているようなものです。友達なら Nggak ada. Kenapa? で十分です。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "friend",
+      "indonesian": "Ke pantai, yuk! Ke Parangtritis. Udah lama banget nggak ke pantai.",
+      "japanese": "海行こうよ！パラントリティス。もうずっと海行ってないんだよね。",
+      "audio": "audio/id/scenario/weekend-plans-n2.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Ayo! Aku mau banget.",
+          "japanese": "いいね、行こう！すごく行きたい。",
+          "feedback": "yuk（〜しようよ）には ayo（行こう！）で応えます。mau banget は「すごく行きたい」という乗り気の返事です。",
+          "next": "n3"
+        },
+        {
+          "phraseId": "pla-06",
+          "quality": "good",
+          "feedback": "boleh は提案へのふだんの「いいよ」で、誰に対しても感じよく使えます。",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya setuju dengan usulan Anda.",
+          "japanese": "あなたのご提案に賛成いたします。",
+          "feedback": "会議ならいいですが、友達との電話では硬すぎます。友達には Ayo! や Boleh! と答えます。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "friend",
+      "indonesian": "Berangkat jam berapa enaknya? Jangan siang-siang, panas.",
+      "japanese": "何時に出ようか？遅いと暑いからさ。",
+      "audio": "audio/id/scenario/weekend-plans-n3.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Jam enam pagi, gimana? Biar nggak kepanasan.",
+          "japanese": "朝6時はどう？暑くならないうちに。",
+          "feedback": "最後の gimana（どう？）で時間を提案にし、biar（〜ように）で理由を添えています。どちらもくだけた言い方です。",
+          "next": "n4"
+        },
+        {
+          "phraseId": "cas-28",
+          "quality": "good",
+          "feedback": "気楽で、とてもよく使います。友達同士では決めるのを相手に任せるのもふつうです。ただ、そっけなく言うと terserah は「どうでもいい」に聞こえることも。",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Pukul enam pagi saja.",
+          "japanese": "では、午前6時で。",
+          "feedback": "pukul はニュースや時刻表、招待状で使う時刻の言葉です。友達との会話では jam を使って jam enam aja と言います。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "friend",
+      "indonesian": "Ya udah, jam enam, ya. Kita ketemu di mana?",
+      "japanese": "じゃあ6時ね。どこで待ち合わせる？",
+      "audio": "audio/id/scenario/weekend-plans-n4.mp3",
+      "options": [
+        {
+          "phraseId": "pla-04",
+          "quality": "good",
+          "feedback": "はっきりした待ち合わせ場所に、ya で「それでいい？」と確認しています。ketemu は bertemu（会う）のふだんの言い方です。",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Jemput aku, dong!",
+          "japanese": "迎えに来てよ！",
+          "feedback": "dong は「〜してよ」と親しげに押す言葉で、仲のいい友達なら大丈夫です。年上や目上の人には boleh を使ってお願いしましょう。",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya akan menunggu Anda di depan stasiun.",
+          "japanese": "駅前にてお待ちしております。",
+          "feedback": "はっきりしていますが、saya、Anda、akan のせいで公式な約束のように聞こえます。友達なら Kita ketemu di depan stasiun, ya. です。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "friend",
+      "indonesian": "Oh ya, Andi ikut juga, ya. Nggak apa-apa, kan?",
+      "japanese": "あ、そうだ、アンディも来るけど、いいよね？",
+      "audio": "audio/id/scenario/weekend-plans-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Ya nggak apa-apa, dong! Makin rame makin seru.",
+          "japanese": "もちろんいいよ！人が多いほうが楽しいし。",
+          "feedback": "ここの dong は「もちろん」。makin rame makin seru は「人が多いほど楽しい」という決まった言い方です。",
+          "next": "n6"
+        },
+        {
+          "phraseId": "cas-04",
+          "quality": "good",
+          "feedback": "何にでも使える「大丈夫」です。明るく言えば、それだけで十分伝わります。",
+          "next": "n6"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Bukan apa-apa.",
+          "japanese": "大したことないよ。",
+          "feedback": "bukan apa-apa は「大したことないよ」で、お礼を言われた時の返事です。「大丈夫」は nggak apa-apa です。",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "friend",
+      "indonesian": "Sip! Sabtu jam enam, ya. Jangan telat, lho!",
+      "japanese": "オッケー！じゃあ土曜の6時ね。遅れないでよ！",
+      "audio": "audio/id/scenario/weekend-plans-n6.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Siap! Sampai Sabtu, ya.",
+          "japanese": "了解！じゃあ土曜にね。",
+          "feedback": "siap（準備OK）は元気な「了解！」。sampai Sabtu（土曜にね）で電話を締めくくります。",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Tenang aja, aku nggak bakal telat.",
+          "japanese": "大丈夫、遅れたりしないって。",
+          "feedback": "tenang aja（安心して）と nggak bakal（〜しないって）は、ふだんのくだけた言い方です。",
+          "next": "end"
+        },
+        {
+          "phraseId": "pla-09",
+          "quality": "awkward",
+          "feedback": "全部決まったあとで「また連絡するね」と言うと、来ないかもしれないように聞こえます。日本語の「行けたら行く」のように、はっきり約束しないていねいな言い方としてよく使われるからです。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "japanese": "決まりました。土曜の朝6時です。友達同士なら aku と kamu、tidak の代わりに nggak、誘う時は yuk、軽く押す時は dong、確認には ya。saya、Anda、akan、pukul は、知らない人との会話にとっておきましょう。タメ口と敬語の使い分けと同じです。",
+      "end": true,
+      "options": []
+    }
+  }
+}

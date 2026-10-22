@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-wa",
+  "connector": "は",
+  "gloss": "kalau… (topik)",
+  "title": "は — topik: kalau…",
+  "pattern": "topik は komentar",
+  "explanation": "は (dibaca “wa”) menandai hal yang sedang dibicarakan, dan sisa kalimatnya menjelaskan hal itu: {今日|きょう}は{休|やす}みです — hari ini, saya libur. Bayangkan “kalau…” atau “soal…”: kalau hari ini, libur. Ditulis は, tapi sebagai partikel selalu dibaca wa. Kalau topiknya sudah jelas, bahasa Jepang menghilangkannya: tidak perlu terus-terusan bilang {私|わたし}は.",
+  "natural": "Cocok untuk memperkenalkan diri, untuk membandingkan (コーヒーは{好|す}きです — kalau kopi, saya suka), dan untuk pertanyaan singkat: お{名前|なまえ}は？ — nama Anda?",
+  "stiff": "Membuka setiap kalimat dengan {私|わたし}は terdengar kaku dan asing. Sebut sekali saja; sesudah itu, hilangkan. Dalam bahasa Indonesia “saya” sering diulang; dalam bahasa Jepang tidak.",
+  "examples": [
+    {
+      "id": "gx-wa-1",
+      "japanese": "今日は休みです。",
+      "furigana": "{今日|きょう}は{休|やす}みです。",
+      "romaji": "kyō wa yasumi desu",
+      "indonesian": "Hari ini saya libur.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{休|やす}み",
+          "w": "w-yasumi"
+        },
+        {
+          "t": "です。"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}",
+        "answer": "は",
+        "after": "{休|やす}みです。",
+        "options": [
+          "は",
+          "を",
+          "に"
+        ],
+        "why": "Hari ini adalah topiknya: kalau hari ini, libur."
+      },
+      "audio": "audio/ja/grammar/gx-wa-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "wa"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-wa-2",
+      "japanese": "お名前は何ですか。",
+      "furigana": "お{名前|なまえ}は{何|なん}ですか。",
+      "romaji": "o-namae wa nan desu ka",
+      "indonesian": "Siapa nama Anda?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "お{名前|なまえ}は",
+          "w": "w-namae"
+        },
+        {
+          "t": "{何|なん}",
+          "w": "w-nani"
+        },
+        {
+          "t": "ですか。"
+        }
+      ],
+      "gap": {
+        "before": "お{名前|なまえ}",
+        "answer": "は",
+        "after": "{何|なん}ですか。",
+        "options": [
+          "は",
+          "が",
+          "を"
+        ],
+        "why": "Topiknya nama; pertanyaannya, nama itu apa. Bahasa Jepang menanyakan nama dengan “apa” (なん), bukan “siapa”."
+      },
+      "audio": "audio/ja/grammar/gx-wa-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "wa"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-wa-3",
+      "japanese": "兄は会社員です。",
+      "furigana": "{兄|あに}は{会社員|かいしゃいん}です。",
+      "romaji": "ani wa kaishain desu",
+      "indonesian": "Kakak laki-laki saya pegawai kantoran.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{兄|あに}は",
+          "w": "w-ani"
+        },
+        {
+          "t": "{会社員|かいしゃいん}",
+          "w": "w-kaishain"
+        },
+        {
+          "t": "です。"
+        }
+      ],
+      "gap": {
+        "before": "{兄|あに}",
+        "answer": "は",
+        "after": "{会社員|かいしゃいん}です。",
+        "options": [
+          "は",
+          "の",
+          "を"
+        ],
+        "why": "Membicarakan kakak laki-lakimu: 兄は…"
+      },
+      "audio": "audio/ja/grammar/gx-wa-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "wa"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-wa-4",
+      "japanese": "日曜日は家にいます。",
+      "furigana": "{日曜日|にちようび}は{家|いえ}にいます。",
+      "romaji": "nichiyōbi wa ie ni imasu",
+      "indonesian": "Hari Minggu saya di rumah.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日曜日|にちようび}は"
+        },
+        {
+          "t": "{家|いえ}に",
+          "w": "w-ie"
+        },
+        {
+          "t": "います。"
+        }
+      ],
+      "gap": {
+        "before": "{日曜日|にちようび}",
+        "answer": "は",
+        "after": "{家|いえ}にいます。",
+        "options": [
+          "は",
+          "を",
+          "で"
+        ],
+        "why": "Hari Minggu adalah topiknya: kalau hari Minggu, saya di rumah."
+      },
+      "audio": "audio/ja/grammar/gx-wa-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "wa"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

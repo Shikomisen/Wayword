@@ -1,0 +1,491 @@
+{
+  "schemaVersion": 1,
+  "id": "replies",
+  "title": "何て言った？",
+  "description": "食堂やお店の店員さん、市場の売り手、運転手さん、ホテルのスタッフがふだん使う、ていねいなインドネシア語。聞いて意味を選び、答え方も覚えましょう。",
+  "items": [
+    {
+      "id": "lr-01",
+      "speaker": "server",
+      "indonesian": "Makan di sini atau dibungkus?",
+      "japanese": "こちらで召し上がりますか、お持ち帰りですか？",
+      "reply": {
+        "indonesian": "Makan di sini, Bu.",
+        "japanese": "ここで食べます。"
+      },
+      "note": "dibungkus は「包んでもらう」、つまり持ち帰りのことです。持ち帰りなら Dibungkus, ya. と答えます。",
+      "audio": "audio/id/listening/lr-01.mp3",
+      "tags": [
+        "ワルン"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-02",
+      "speaker": "server",
+      "indonesian": "Mau pesan apa, Kak?",
+      "japanese": "ご注文は何にしますか？",
+      "reply": {
+        "indonesian": "Mi goreng satu, ya.",
+        "japanese": "ミーゴレンを1つください。"
+      },
+      "note": "Kak は kakak（兄・姉）から来た呼びかけです。日本の店で「お兄さん」「お姉さん」と呼ぶのに似ていますが、店員さんは若い客なら男女を問わずこう呼びます。",
+      "audio": "audio/id/listening/lr-02.mp3",
+      "tags": [
+        "ワルン"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-03",
+      "speaker": "server",
+      "indonesian": "Minumnya apa, Kak?",
+      "japanese": "お飲み物は何にしますか？",
+      "reply": {
+        "indonesian": "Es jeruk satu, ya.",
+        "japanese": "冷たいオレンジジュースを1つください。"
+      },
+      "note": "minumnya（飲み物は）は、料理を頼んだあとに聞かれます。数は飲み物の名前のあと。日本語の「オレンジジュース1つ」と同じ順番です。",
+      "audio": "audio/id/listening/lr-03.mp3",
+      "tags": [
+        "ワルン"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-04",
+      "speaker": "server",
+      "indonesian": "Pedasnya mau level berapa?",
+      "japanese": "辛さは何レベルにしますか？",
+      "reply": {
+        "indonesian": "Level satu saja.",
+        "japanese": "レベル1でお願いします。"
+      },
+      "note": "アヤムゲプレック（つぶしたフライドチキン）や辛い麺の店では、辛さをレベルで選びます。level satu でも、たいていの旅行者には十分辛いです。level nol（ゼロ）は唐辛子なし。",
+      "audio": "audio/id/listening/lr-04.mp3",
+      "tags": [
+        "ワルン",
+        "辛さ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-05",
+      "speaker": "server",
+      "indonesian": "Mohon maaf, nasi gorengnya sudah habis.",
+      "japanese": "申し訳ありません、ナシゴレンは売り切れです。",
+      "reply": {
+        "indonesian": "Oh, kalau begitu mi goreng saja.",
+        "japanese": "あ、じゃあミーゴレンにします。"
+      },
+      "note": "habis は「なくなった」。夕方になると、ワルンでは人気の料理が売り切れていることがよくあります。",
+      "audio": "audio/id/listening/lr-05.mp3",
+      "tags": [
+        "ワルン"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-06",
+      "speaker": "server",
+      "indonesian": "Mau tambah nasi, Kak?",
+      "japanese": "ご飯のおかわりはいかがですか？",
+      "reply": {
+        "indonesian": "Tidak, terima kasih. Sudah cukup.",
+        "japanese": "いいえ、ありがとう。もう十分です。"
+      },
+      "audio": "audio/id/listening/lr-06.mp3",
+      "tags": [
+        "ワルン"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-07",
+      "speaker": "server",
+      "indonesian": "Ada lagi, Kak?",
+      "japanese": "ほかにご注文はありますか？",
+      "reply": {
+        "indonesian": "Sudah, itu saja.",
+        "japanese": "いいえ、以上です。"
+      },
+      "note": "「以上です」にあたる sudah がふつうの答え方です。tidak だけだと、ぶっきらぼうに聞こえます。",
+      "audio": "audio/id/listening/lr-07.mp3",
+      "tags": [
+        "ワルン"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-08",
+      "speaker": "server",
+      "indonesian": "Mohon ditunggu, ya, Kak. Kira-kira lima belas menit.",
+      "japanese": "少々お待ちください。15分ほどかかります。",
+      "reply": {
+        "indonesian": "Oke, tidak apa-apa.",
+        "japanese": "はい、大丈夫です。"
+      },
+      "note": "mohon は店員さんや掲示で使う改まった「〜ください」で、「お待ちください」の「お〜ください」のような響きです。自分が頼む時は tolong か bisa を使います。",
+      "audio": "audio/id/listening/lr-08.mp3",
+      "tags": [
+        "レストラン"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-09",
+      "speaker": "server",
+      "indonesian": "Semuanya delapan puluh lima ribu, Kak.",
+      "japanese": "全部で8万5000ルピアです。",
+      "reply": {
+        "indonesian": "Ini, uangnya seratus ribu.",
+        "japanese": "はい、10万でお願いします。"
+      },
+      "note": "値段は千（ribu）単位で言い、rupiah はたいてい省きます。delapan puluh lima ribu は「85千」、つまり8万5000です。日本語の「万」で数えないよう注意しましょう。",
+      "audio": "audio/id/listening/lr-09.mp3",
+      "tags": [
+        "支払い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-10",
+      "speaker": "clerk",
+      "indonesian": "Bayarnya tunai atau pakai kartu?",
+      "japanese": "お支払いは現金ですか、カードですか？",
+      "reply": {
+        "indonesian": "Tunai saja.",
+        "japanese": "現金でお願いします。"
+      },
+      "note": "tunai は現金。英語のまま cash と言う店員さんも多いです。",
+      "audio": "audio/id/listening/lr-10.mp3",
+      "tags": [
+        "お店",
+        "支払い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-11",
+      "speaker": "clerk",
+      "indonesian": "Ada uang kecil, Kak?",
+      "japanese": "細かいお金はありますか？",
+      "reply": {
+        "indonesian": "Maaf, tidak ada. Adanya seratus ribu.",
+        "japanese": "すみません、ないんです。10万ルピア札しかなくて。"
+      },
+      "note": "uang kecil は、日本語の「細かいお金」と同じで、小額のお札や硬貨のこと。小さな店や屋台、運転手さんは、大きなお札をくずせないことがよくあります。",
+      "audio": "audio/id/listening/lr-11.mp3",
+      "tags": [
+        "お店",
+        "支払い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-12",
+      "speaker": "clerk",
+      "indonesian": "Perlu kantong, Kak?",
+      "japanese": "袋はご入用ですか？",
+      "reply": {
+        "indonesian": "Tidak usah, saya bawa tas.",
+        "japanese": "いりません、バッグを持ってきたので。"
+      },
+      "audio": "audio/id/listening/lr-12.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-13",
+      "speaker": "clerk",
+      "indonesian": "Sekalian pulsanya, Kak?",
+      "japanese": "ついでに携帯のチャージはいかがですか？",
+      "reply": {
+        "indonesian": "Tidak, terima kasih.",
+        "japanese": "いいえ、結構です。"
+      },
+      "note": "ミニマーケットのレジでは、ほぼ毎回、携帯のプリペイド残高（pulsa）や今週のおすすめ品を勧められます。笑顔で断れば大丈夫です。",
+      "audio": "audio/id/listening/lr-13.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-14",
+      "speaker": "vendor",
+      "indonesian": "Cari apa, Kak?",
+      "japanese": "何をお探しですか？",
+      "reply": {
+        "indonesian": "Lihat-lihat saja, ya.",
+        "japanese": "見ているだけです。"
+      },
+      "note": "売り手が通りがかりの人にかける呼び込みの言葉です。「いらっしゃい」のようなもので、きちんと答える必要はありません。",
+      "audio": "audio/id/listening/lr-14.mp3",
+      "tags": [
+        "市場"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-15",
+      "speaker": "vendor",
+      "indonesian": "Itu sudah harga pas, Kak.",
+      "japanese": "それがもう、ぎりぎりの値段ですよ。",
+      "reply": {
+        "indonesian": "Oh, ya sudah. Saya ambil satu.",
+        "japanese": "あ、じゃあそれで。1つください。"
+      },
+      "note": "harga pas は「これ以上まけられない値段」。値段交渉はここまで、という合図です。",
+      "audio": "audio/id/listening/lr-15.mp3",
+      "tags": [
+        "市場",
+        "値段交渉"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-16",
+      "speaker": "vendor",
+      "indonesian": "Ya sudah, delapan puluh ribu boleh.",
+      "japanese": "わかりました、8万でいいですよ。",
+      "reply": {
+        "indonesian": "Terima kasih, Bu. Saya ambil.",
+        "japanese": "ありがとうございます。それをください。"
+      },
+      "note": "ここの boleh は、売り手があなたの言い値を受け入れたということ。相手がいいと言ったら、買うのが礼儀です。",
+      "audio": "audio/id/listening/lr-16.mp3",
+      "tags": [
+        "市場",
+        "値段交渉"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-17",
+      "speaker": "vendor",
+      "indonesian": "Mangganya manis, Kak. Mau coba dulu?",
+      "japanese": "このマンゴー、甘いですよ。味見してみますか？",
+      "reply": {
+        "indonesian": "Boleh, terima kasih.",
+        "japanese": "はい、ありがとうございます。"
+      },
+      "note": "果物の売り手は、よく味見を勧めてくれます。boleh は申し出へのふだんの「はい」です。",
+      "audio": "audio/id/listening/lr-17.mp3",
+      "tags": [
+        "市場"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-18",
+      "speaker": "driver",
+      "indonesian": "Sesuai aplikasi, ya, Kak?",
+      "japanese": "アプリの行き先どおりでいいですか？",
+      "reply": {
+        "indonesian": "Iya, Pak, sesuai aplikasi.",
+        "japanese": "はい、アプリのとおりで。"
+      },
+      "note": "sesuai は「〜のとおり」。配車アプリの運転手さんは、出発する時にこう言って行き先を確認します。",
+      "audio": "audio/id/listening/lr-18.mp3",
+      "tags": [
+        "オジェック"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-19",
+      "speaker": "driver",
+      "indonesian": "Posisinya di mana, Kak?",
+      "japanese": "今どちらにいますか？",
+      "reply": {
+        "indonesian": "Saya di depan pintu masuk, Pak.",
+        "japanese": "入口の前にいます。"
+      },
+      "note": "運転手さんがあなたを見つけるために、電話やメッセージで聞いてきます。目印を答えましょう。",
+      "audio": "audio/id/listening/lr-19.mp3",
+      "tags": [
+        "オジェック"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-20",
+      "speaker": "driver",
+      "indonesian": "Ini helmnya, Kak.",
+      "japanese": "はい、ヘルメットです。",
+      "reply": {
+        "indonesian": "Terima kasih, Pak.",
+        "japanese": "ありがとうございます。"
+      },
+      "note": "オジェック（バイクタクシー）の運転手さんは客用のヘルメットを持っていて、かぶるのは法律で決まっています。",
+      "audio": "audio/id/listening/lr-20.mp3",
+      "tags": [
+        "オジェック"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-21",
+      "speaker": "driver",
+      "indonesian": "Lewat tol, ya, Kak? Lebih cepat.",
+      "japanese": "有料道路を通りましょうか？そのほうが早いです。",
+      "reply": {
+        "indonesian": "Boleh, Pak.",
+        "japanese": "はい、お願いします。"
+      },
+      "note": "有料道路の料金は運賃に上乗せされるので、タクシーの運転手さんは先に確認します。",
+      "audio": "audio/id/listening/lr-21.mp3",
+      "tags": [
+        "タクシー"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-22",
+      "speaker": "driver",
+      "indonesian": "Turun di mana, Kak?",
+      "japanese": "どこで降りますか？",
+      "reply": {
+        "indonesian": "Di depan masjid itu, Pak.",
+        "japanese": "あのモスクの前でお願いします。"
+      },
+      "note": "turun は「降りる」。バイクでも車でもバスでも使います。",
+      "audio": "audio/id/listening/lr-22.mp3",
+      "tags": [
+        "オジェック",
+        "タクシー"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-23",
+      "speaker": "receptionist",
+      "indonesian": "Boleh pinjam paspornya?",
+      "japanese": "パスポートを拝見できますか？",
+      "reply": {
+        "indonesian": "Ini, Mbak.",
+        "japanese": "はい、どうぞ。"
+      },
+      "note": "直訳は「パスポートをお借りできますか」。ホテルは情報を控えたら、すぐに返してくれます。",
+      "audio": "audio/id/listening/lr-23.mp3",
+      "tags": [
+        "ホテル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-24",
+      "speaker": "receptionist",
+      "indonesian": "Atas nama siapa, Kak?",
+      "japanese": "どなたのお名前でご予約ですか？",
+      "reply": {
+        "indonesian": "Atas nama Sam.",
+        "japanese": "サムの名前で予約しています。"
+      },
+      "note": "atas nama は「〜の名前で」。どんな予約にも使います。",
+      "audio": "audio/id/listening/lr-24.mp3",
+      "tags": [
+        "ホテル"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-25",
+      "speaker": "receptionist",
+      "indonesian": "Kamarnya di lantai dua, ya. Ini kuncinya.",
+      "japanese": "お部屋は2階です。こちらが鍵です。",
+      "reply": {
+        "indonesian": "Terima kasih. Ada lift?",
+        "japanese": "ありがとうございます。エレベーターはありますか？"
+      },
+      "note": "インドネシアも日本と同じく、地上階が lantai satu（1階）です。lantai dua はその一つ上の2階です。",
+      "audio": "audio/id/listening/lr-25.mp3",
+      "tags": [
+        "ホテル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-26",
+      "speaker": "receptionist",
+      "indonesian": "Sarapannya mulai jam enam sampai jam sepuluh.",
+      "japanese": "朝食は6時から10時までです。",
+      "reply": {
+        "indonesian": "Baik. Di mana, ya?",
+        "japanese": "わかりました。場所はどこですか？"
+      },
+      "note": "mulai … sampai … は「〜から〜まで」で、営業時間などに使います。日本語と逆で、mulai と sampai は時刻の前に来ます。",
+      "audio": "audio/id/listening/lr-26.mp3",
+      "tags": [
+        "ホテル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-27",
+      "speaker": "host",
+      "indonesian": "Kamarnya belum siap, Kak. Mau titip tas dulu?",
+      "japanese": "お部屋の準備がまだできていません。お荷物をお預かりしましょうか？",
+      "reply": {
+        "indonesian": "Boleh, terima kasih.",
+        "japanese": "はい、お願いします。ありがとうございます。"
+      },
+      "audio": "audio/id/listening/lr-27.mp3",
+      "tags": [
+        "ホテル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-28",
+      "speaker": "receptionist",
+      "indonesian": "Check-out jam dua belas siang, ya, Kak.",
+      "japanese": "チェックアウトは昼の12時です。",
+      "reply": {
+        "indonesian": "Kalau jam satu, bisa?",
+        "japanese": "1時にしてもらうことはできますか？"
+      },
+      "note": "check-in と check-out は、日本語と同じく英語のまま言います。",
+      "audio": "audio/id/listening/lr-28.mp3",
+      "tags": [
+        "ホテル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-29",
+      "speaker": "host",
+      "indonesian": "Mau dipesankan taksi?",
+      "japanese": "タクシーをお呼びしましょうか？",
+      "reply": {
+        "indonesian": "Iya, boleh. Untuk jam tujuh pagi.",
+        "japanese": "はい、お願いします。朝7時に。"
+      },
+      "note": "dipesankan は pesan（頼む）に di- と -kan が付いた形で、「（あなたのために）手配される」という意味です。",
+      "audio": "audio/id/listening/lr-29.mp3",
+      "tags": [
+        "ホテル"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-30",
+      "speaker": "staff",
+      "indonesian": "Silakan ambil nomor antrean dulu, Kak.",
+      "japanese": "先に整理券をお取りください。",
+      "reply": {
+        "indonesian": "Oh, ambilnya di mana, ya?",
+        "japanese": "あ、どこで取ればいいですか？"
+      },
+      "note": "銀行やクリニック、携帯ショップでは整理券を配り、番号をインドネシア語で呼びます。",
+      "audio": "audio/id/listening/lr-30.mp3",
+      "tags": [
+        "銀行"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-wo",
+  "connector": "を",
+  "gloss": "yang dikenai tindakan (objek)",
+  "title": "を — apa yang dimakan, dilihat, dibeli…",
+  "pattern": "objek を kata kerja",
+  "explanation": "を (dibaca “o”) menandai benda yang dikenai tindakan: パンを{食|た}べます — saya makan roti. Bahasa Jepang menaruh kata kerja di akhir, jadi urutannya berbeda dari bahasa Indonesia: bendanya dulu, baru kata kerjanya, seperti “saya roti makan”. Ini perubahan besar, tapi を membantu: yang ada tepat sebelum を adalah objeknya.",
+  "natural": "Dalam bahasa santai, を sering dihilangkan: コーヒー{飲|の}む？ — mau kopi? Dengan orang yang perlu kamu hormati, tetap pakai を.",
+  "stiff": "{好|す}き, {分|わ}かる, dan ある tidak memakai を: コーヒーが{好|す}き, bukan コーヒーを{好|す}き. Karena “suka kopi” dalam bahasa Indonesia terasa seperti kata kerja dan objek, kesalahan ini sering terjadi.",
+  "examples": [
+    {
+      "id": "gx-wo-1",
+      "japanese": "毎朝、パンを食べます。",
+      "furigana": "{毎朝|まいあさ}、{パン|ぱん}を{食|た}べます。",
+      "romaji": "maiasa, pan o tabemasu",
+      "indonesian": "Setiap pagi saya makan roti.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{毎朝|まいあさ}、"
+        },
+        {
+          "t": "{パン|ぱん}を",
+          "w": "w-pan"
+        },
+        {
+          "t": "{食|た}べます。",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "{毎朝|まいあさ}、{パン|ぱん}",
+        "answer": "を",
+        "after": "{食|た}べます。",
+        "options": [
+          "を",
+          "が",
+          "に"
+        ],
+        "why": "Yang dimakan adalah roti: を."
+      },
+      "audio": "audio/ja/grammar/gx-wo-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "wo"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-wo-2",
+      "japanese": "昨日、映画を見ました。",
+      "furigana": "{昨日|きのう}、{映画|えいが}を{見|み}ました。",
+      "romaji": "kinō, eiga o mimashita",
+      "indonesian": "Kemarin saya menonton film.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{昨日|きのう}、",
+          "w": "w-kinou"
+        },
+        {
+          "t": "{映画|えいが}を",
+          "w": "w-eiga"
+        },
+        {
+          "t": "{見|み}ました。",
+          "w": "w-miru"
+        }
+      ],
+      "gap": {
+        "before": "{昨日|きのう}、{映画|えいが}",
+        "answer": "を",
+        "after": "{見|み}ました。",
+        "options": [
+          "を",
+          "に",
+          "で"
+        ],
+        "why": "Yang ditonton adalah film: を."
+      },
+      "audio": "audio/ja/grammar/gx-wo-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "wo"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-wo-3",
+      "japanese": "冷たいお茶を飲む？",
+      "furigana": "{冷|つめ}たいお{茶|ちゃ}を{飲|の}む？",
+      "romaji": "tsumetai ocha o nomu?",
+      "indonesian": "Mau teh dingin?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{冷|つめ}たい"
+        },
+        {
+          "t": "お{茶|ちゃ}を",
+          "w": "w-ocha"
+        },
+        {
+          "t": "{飲|の}む？",
+          "w": "w-nomu"
+        }
+      ],
+      "gap": {
+        "before": "{冷|つめ}たいお{茶|ちゃ}",
+        "answer": "を",
+        "after": "{飲|の}む？",
+        "options": [
+          "を",
+          "が",
+          "で"
+        ],
+        "why": "Yang diminum adalah teh: を."
+      },
+      "audio": "audio/ja/grammar/gx-wo-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "wo"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-wo-4",
+      "japanese": "日本語の本を買いました。",
+      "furigana": "{日本語|にほんご}の{本|ほん}を{買|か}いました。",
+      "romaji": "nihongo no hon o kaimashita",
+      "indonesian": "Saya membeli buku bahasa Jepang.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本語|にほんご}の",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{本|ほん}を",
+          "w": "w-hon"
+        },
+        {
+          "t": "{買|か}いました。",
+          "w": "w-kau"
+        }
+      ],
+      "gap": {
+        "before": "{日本語|にほんご}の{本|ほん}",
+        "answer": "を",
+        "after": "{買|か}いました。",
+        "options": [
+          "を",
+          "の",
+          "は"
+        ],
+        "why": "Yang dibeli adalah buku: を."
+      },
+      "audio": "audio/ja/grammar/gx-wo-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "wo"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

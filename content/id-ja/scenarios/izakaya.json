@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "id": "izakaya",
+  "title": "Memesan di restoran",
+  "category": "restaurant",
+  "setting": "Sebuah restoran kecil di lingkungan perumahan, tanpa menu bahasa Inggris. Kamu datang sendirian, dan kamu tidak bisa makan telur.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "staff",
+      "japanese": "いらっしゃいませ。何名様ですか。",
+      "furigana": [
+        {
+          "b": "いらっしゃいませ。"
+        },
+        {
+          "b": "何名様",
+          "r": "なんめいさま"
+        },
+        {
+          "b": "ですか。"
+        }
+      ],
+      "romaji": "Irasshaimase. Nanmeisama desu ka.",
+      "indonesian": "Selamat datang. Berapa orang?",
+      "audio": "audio/ja/scenario/izakaya-n1.mp3",
+      "audioHint": "いらっしゃいませ。なんめいさまですか",
+      "options": [
+        {
+          "phraseId": "num-15",
+          "quality": "good",
+          "feedback": "Mengacungkan satu jari sambil mengatakannya itu hal biasa di sini, sama sekali tidak kekanak-kanakan.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "num-16",
+          "quality": "good",
+          "feedback": "Untuk berdua. Ingat, 一人 dan 二人 tidak beraturan: ひとり dan ふたり, bukan いちにん/ににん.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "staff",
+      "japanese": "カウンター席へどうぞ。お飲み物は何になさいますか。",
+      "furigana": [
+        {
+          "b": "カウンター"
+        },
+        {
+          "b": "席",
+          "r": "せき"
+        },
+        {
+          "b": "へどうぞ。お"
+        },
+        {
+          "b": "飲",
+          "r": "の"
+        },
+        {
+          "b": "み"
+        },
+        {
+          "b": "物",
+          "r": "もの"
+        },
+        {
+          "b": "は"
+        },
+        {
+          "b": "何",
+          "r": "なに"
+        },
+        {
+          "b": "になさいますか。"
+        }
+      ],
+      "romaji": "Kauntā seki e dōzo. O-nomimono wa nani ni nasaimasu ka.",
+      "indonesian": "Silakan di kursi konter. Mau minum apa?",
+      "audio": "audio/ja/scenario/izakaya-n2.mp3",
+      "audioHint": "カウンターせきへどうぞ。おのみものはなにになさいますか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "ビールをお願いします。",
+          "romaji": "Bīru o onegai shimasu.",
+          "indonesian": "Minta bir, ya.",
+          "feedback": "Biasanya yang datang adalah 生 (nama), bir segar dari keran; kamu juga bisa langsung bilang 生ビール.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "res-07",
+          "quality": "good",
+          "feedback": "Air putih gratis di mana-mana, dan tidak ada yang akan mempermasalahkannya. Tidak minum alkohol juga hal yang biasa.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "res-02",
+          "quality": "awkward",
+          "feedback": "Staf bertanya khusus soal minuman. Kamu tetap akan diberi menu, tapi menjawab pertanyaan yang diajukan menjaga alur percakapan.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "staff",
+      "japanese": "ご注文はお決まりですか。",
+      "furigana": [
+        {
+          "b": "ご"
+        },
+        {
+          "b": "注文",
+          "r": "ちゅうもん"
+        },
+        {
+          "b": "はお"
+        },
+        {
+          "b": "決",
+          "r": "き"
+        },
+        {
+          "b": "まりですか。"
+        }
+      ],
+      "romaji": "Go-chūmon wa o-kimari desu ka.",
+      "indonesian": "Sudah siap memesan?",
+      "audio": "audio/ja/scenario/izakaya-n3.mp3",
+      "audioHint": "ごちゅうもんはおきまりですか",
+      "options": [
+        {
+          "phraseId": "res-03",
+          "quality": "good",
+          "feedback": "Sebutkan alergi sebelum memesan, bukan sesudahnya. Inilah saat yang tepat.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "res-06",
+          "quality": "good",
+          "feedback": "Meminta rekomendasi adalah langkah bagus di tempat kecil, tapi sebutkan alerginya dulu.",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "これをください。",
+          "romaji": "Kore o kudasai.",
+          "indonesian": "Yang ini, ya. (sambil menunjuk menu)",
+          "feedback": "Kamu memesan tanpa menyebut soal telur. Tidak apa-apa kalau hanya soal selera, tapi sungguh berisiko untuk alergi: sebutkan sebelum memesan, setiap kali.",
+          "next": "n3b"
+        }
+      ]
+    },
+    "n3b": {
+      "speaker": "staff",
+      "japanese": "かしこまりました。親子丼ですね。",
+      "furigana": [
+        {
+          "b": "かしこまりました。"
+        },
+        {
+          "b": "親子丼",
+          "r": "おやこどん"
+        },
+        {
+          "b": "ですね。"
+        }
+      ],
+      "romaji": "Kashikomarimashita. Oyakodon desu ne.",
+      "indonesian": "Baik. Oyakodon, ya.",
+      "audio": "audio/ja/scenario/izakaya-n3b.mp3",
+      "audioHint": "かしこまりました。おやこどんですね",
+      "options": [
+        {
+          "phraseId": "res-04",
+          "quality": "good",
+          "feedback": "Tertangkap tepat waktu. 親子丼 berisi ayam dan telur: namanya secara harfiah berarti “induk dan anak”. Inilah jebakan yang terhindar kalau alergi disebut lebih dulu.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "res-09",
+          "quality": "good",
+          "feedback": "Naluri yang bagus. Menanyakan isi hidangan menangkap bahan tersembunyi yang tidak terlihat dari namanya (dashi, telur, gandum), dan juga berguna kalau kamu menghindari babi atau alkohol.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "staff",
+      "japanese": "卵ですね。承知しました。こちらは大丈夫です。",
+      "furigana": [
+        {
+          "b": "卵",
+          "r": "たまご"
+        },
+        {
+          "b": "ですね。"
+        },
+        {
+          "b": "承知",
+          "r": "しょうち"
+        },
+        {
+          "b": "しました。こちらは"
+        },
+        {
+          "b": "大丈夫",
+          "r": "だいじょうぶ"
+        },
+        {
+          "b": "です。"
+        }
+      ],
+      "romaji": "Tamago desu ne. Shōchi shimashita. Kochira wa daijōbu desu.",
+      "indonesian": "Telur, ya. Baik, saya mengerti. Yang ini aman.",
+      "audio": "audio/ja/scenario/izakaya-n4.mp3",
+      "audioHint": "たまごですね。しょうちしました。こちらはだいじょうぶです",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "じゃあ、それをお願いします。",
+          "romaji": "Jā, sore o onegai shimasu.",
+          "indonesian": "Kalau begitu, yang itu saja.",
+          "feedback": "じゃあ = “kalau begitu”. Kata kecil yang membuatmu terdengar jauh lebih lancar.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "gre-05",
+          "quality": "good",
+          "feedback": "Pantas diucapkan: staf memeriksakan hidangannya untukmu, bukan sekadar mengangkat bahu.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "staff",
+      "japanese": "お待たせしました。どうぞ。",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "待",
+          "r": "ま"
+        },
+        {
+          "b": "たせしました。どうぞ。"
+        }
+      ],
+      "romaji": "O-matase shimashita. Dōzo.",
+      "indonesian": "Maaf menunggu lama. Silakan.",
+      "audio": "audio/ja/scenario/izakaya-n5.mp3",
+      "audioHint": "おまたせしました。どうぞ",
+      "options": [
+        {
+          "phraseId": "res-01",
+          "quality": "good",
+          "feedback": "Diucapkan bukan kepada siapa-siapa, tepat sebelum mulai makan, seperti doa singkat sebelum makan. Justru kalau tidak diucapkan, itu yang terasa.",
+          "next": "n6"
+        },
+        {
+          "phraseId": "gre-05",
+          "quality": "good",
+          "feedback": "Boleh, tapi pada saat seperti ini orang Jepang akan mengucapkan いただきます.",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "staff",
+      "japanese": "お会計はレジでお願いします。",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "会計",
+          "r": "かいけい"
+        },
+        {
+          "b": "はレジでお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いします。"
+        }
+      ],
+      "romaji": "O-kaikei wa reji de onegai shimasu.",
+      "indonesian": "Silakan bayar di kasir.",
+      "audio": "audio/ja/scenario/izakaya-n6.mp3",
+      "audioHint": "おかいけいはレジでおねがいします",
+      "options": [
+        {
+          "phraseId": "res-05",
+          "quality": "good",
+          "feedback": "Pasangan いただきます, diucapkan saat pulang. Terdengar sebagai terima kasih yang tulus, dan staf memperhatikannya.",
+          "next": "end"
+        },
+        {
+          "phraseId": "num-08",
+          "quality": "good",
+          "feedback": "Layak ditanyakan di rumah makan kecil milik perorangan: masih banyak yang hanya menerima tunai.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "romaji": "",
+      "indonesian": "Kenyang, dan tanpa telur. Pelajaran yang perlu diingat: sebutkan pantangan makananmu sebelum memesan, bukan setelah nama hidangannya disebut.",
+      "end": true,
+      "options": []
+    }
+  }
+}

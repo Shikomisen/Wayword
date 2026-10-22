@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "id": "contrasts",
+  "title": "どっちに聞こえた？",
+  "description": "日本語の耳には同じに聞こえやすい音の聞き分け。R と L、最後の子音のあるなし、最後の N と NG。単語を聞いて、どちらだったか選びます。",
+  "sets": [
+    {
+      "id": "r",
+      "sound": "R と L",
+      "note": "日本語のラ行は R と L の中間のような音なので、いちばん聞き分けにくい組み合わせです。R は舌先で上の歯ぐきを弾く音で、巻き舌で震えることもあります。L は舌先を上の歯の裏に付けたまま声を出します。bakar のように最後に来る R も、母音を足さずに弾いて終えます。",
+      "pairs": [
+        [
+          {
+            "id": "lc-r-rupa",
+            "indonesian": "rupa",
+            "japanese": "姿、形",
+            "audio": "audio/id/listening/lc-r-rupa.mp3"
+          },
+          {
+            "id": "lc-r-lupa",
+            "indonesian": "lupa",
+            "japanese": "忘れる",
+            "audio": "audio/id/listening/lc-r-lupa.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-r-rusa",
+            "indonesian": "rusa",
+            "japanese": "シカ",
+            "audio": "audio/id/listening/lc-r-rusa.mp3"
+          },
+          {
+            "id": "lc-r-lusa",
+            "indonesian": "lusa",
+            "japanese": "あさって",
+            "audio": "audio/id/listening/lc-r-lusa.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-r-tari",
+            "indonesian": "tari",
+            "japanese": "踊り",
+            "audio": "audio/id/listening/lc-r-tari.mp3"
+          },
+          {
+            "id": "lc-r-tali",
+            "indonesian": "tali",
+            "japanese": "ひも、ロープ",
+            "audio": "audio/id/listening/lc-r-tali.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-r-harus",
+            "indonesian": "harus",
+            "japanese": "〜しなければならない",
+            "audio": "audio/id/listening/lc-r-harus.mp3"
+          },
+          {
+            "id": "lc-r-halus",
+            "indonesian": "halus",
+            "japanese": "なめらかな、柔らかい",
+            "audio": "audio/id/listening/lc-r-halus.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-r-rantai",
+            "indonesian": "rantai",
+            "japanese": "鎖、チェーン",
+            "audio": "audio/id/listening/lc-r-rantai.mp3"
+          },
+          {
+            "id": "lc-r-lantai",
+            "indonesian": "lantai",
+            "japanese": "床；（建物の）階",
+            "audio": "audio/id/listening/lc-r-lantai.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-r-bakar",
+            "indonesian": "bakar",
+            "japanese": "焼く、燃やす",
+            "audio": "audio/id/listening/lc-r-bakar.mp3"
+          },
+          {
+            "id": "lc-r-bakal",
+            "indonesian": "bakal",
+            "japanese": "〜するだろう（話し言葉）",
+            "audio": "audio/id/listening/lc-r-bakal.mp3"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "final",
+      "sound": "最後の子音",
+      "note": "日本語の言葉はほとんど母音か「ん」で終わるので、最後の子音を聞き落としたり、母音を足したり（kotak を「コタク」）しがちです。-n は舌先を上の歯の裏に付けて終え、-k は「コタッ」のように息を止めるだけ、-h は軽く息を吐いて終えます。",
+      "pairs": [
+        [
+          {
+            "id": "lc-final-buka",
+            "indonesian": "buka",
+            "japanese": "開ける、開いている",
+            "audio": "audio/id/listening/lc-final-buka.mp3"
+          },
+          {
+            "id": "lc-final-bukan",
+            "indonesian": "bukan",
+            "japanese": "〜ではない",
+            "audio": "audio/id/listening/lc-final-bukan.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-final-tahu",
+            "indonesian": "tahu",
+            "japanese": "知っている；豆腐",
+            "audio": "audio/id/listening/lc-final-tahu.mp3"
+          },
+          {
+            "id": "lc-final-tahun",
+            "indonesian": "tahun",
+            "japanese": "年",
+            "audio": "audio/id/listening/lc-final-tahun.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-final-maka",
+            "indonesian": "maka",
+            "japanese": "それで、だから（書き言葉）",
+            "audio": "audio/id/listening/lc-final-maka.mp3"
+          },
+          {
+            "id": "lc-final-makan",
+            "indonesian": "makan",
+            "japanese": "食べる",
+            "audio": "audio/id/listening/lc-final-makan.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-final-kota",
+            "indonesian": "kota",
+            "japanese": "町、都市",
+            "audio": "audio/id/listening/lc-final-kota.mp3"
+          },
+          {
+            "id": "lc-final-kotak",
+            "indonesian": "kotak",
+            "japanese": "箱",
+            "audio": "audio/id/listening/lc-final-kotak.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-final-muda",
+            "indonesian": "muda",
+            "japanese": "若い",
+            "audio": "audio/id/listening/lc-final-muda.mp3"
+          },
+          {
+            "id": "lc-final-mudah",
+            "indonesian": "mudah",
+            "japanese": "簡単な",
+            "audio": "audio/id/listening/lc-final-mudah.mp3"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "ng",
+      "sound": "最後の N と NG",
+      "note": "日本語の「ん」は次の音で形が変わり、言葉の最後では舌先がどこにも付かない、NG に近い音になります。そのため N と NG が同じ「ん」に聞こえがちです。-n は「あんない」の「ん」のように舌先を上の歯の裏に付けて終え、-ng は「まんが」の「ん」のように舌の奥を上げて終えます。",
+      "pairs": [
+        [
+          {
+            "id": "lc-ng-saran",
+            "indonesian": "saran",
+            "japanese": "提案、アドバイス",
+            "audio": "audio/id/listening/lc-ng-saran.mp3"
+          },
+          {
+            "id": "lc-ng-sarang",
+            "indonesian": "sarang",
+            "japanese": "巣",
+            "audio": "audio/id/listening/lc-ng-sarang.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-ng-kencan",
+            "indonesian": "kencan",
+            "japanese": "デート",
+            "audio": "audio/id/listening/lc-ng-kencan.mp3"
+          },
+          {
+            "id": "lc-ng-kencang",
+            "indonesian": "kencang",
+            "japanese": "速い；きつい、（風が）強い",
+            "audio": "audio/id/listening/lc-ng-kencang.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-ng-ban",
+            "indonesian": "ban",
+            "japanese": "タイヤ",
+            "audio": "audio/id/listening/lc-ng-ban.mp3"
+          },
+          {
+            "id": "lc-ng-bang",
+            "indonesian": "bang",
+            "japanese": "お兄さん（男性への呼びかけ）",
+            "audio": "audio/id/listening/lc-ng-bang.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-ng-ton",
+            "indonesian": "ton",
+            "japanese": "トン（重さ）",
+            "audio": "audio/id/listening/lc-ng-ton.mp3"
+          },
+          {
+            "id": "lc-ng-tong",
+            "indonesian": "tong",
+            "japanese": "たる、ドラム缶",
+            "audio": "audio/id/listening/lc-ng-tong.mp3"
+          }
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-kamoshirenai",
+  "connector": "〜かもしれない",
+  "gloss": "mungkin; kemungkinan besar",
+  "title": "〜かもしれない・〜でしょう — mungkin, kemungkinan besar",
+  "pattern": "bentuk biasa (kata benda / kata sifat な tanpa だ) + かもしれない / でしょう (santai: だろう)",
+  "explanation": "かもしれない berarti “mungkin”: {雨|あめ}が{降|ふ}るかもしれない — mungkin akan hujan. でしょう berarti “kemungkinan besar”, sedikit lebih yakin: {明日|あした}は{晴|は}れるでしょう — besok kemungkinan besar cerah. Bedanya, “mungkin” ada di depan, sedangkan かもしれない dan でしょう ada di akhir kalimat. Kata benda dan kata sifat な langsung diletakkan sebelumnya: {雨|あめ}かもしれない, {静|しず}かでしょう. Dalam percakapan santai, かも saja dan だろう sering dipakai.",
+  "natural": "Kata-kata ini memperhalus segalanya: ちょっと{遅|おく}れるかも — aku mungkin agak terlambat.",
+  "stiff": "でしょう ala ramalan cuaca terdengar formal dalam obrolan. Dengan teman, たぶん…と{思|おも}う lebih wajar.",
+  "examples": [
+    {
+      "id": "gx-kamoshirenai-1",
+      "japanese": "午後から雨が降るかもしれません。",
+      "furigana": "{午後|ごご}から{雨|あめ}が{降|ふ}るかもしれません。",
+      "indonesian": "Mulai siang mungkin akan hujan.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{午後|ごご}から"
+        },
+        {
+          "t": "{雨|あめ}が",
+          "w": "w-ame"
+        },
+        {
+          "t": "{降|ふ}るかもしれません。",
+          "w": "w-furu"
+        }
+      ],
+      "gap": {
+        "before": "{午後|ごご}から{雨|あめ}が{降|ふ}る",
+        "answer": "かもしれません",
+        "after": "。",
+        "options": [
+          "かもしれません",
+          "つもりです",
+          "ことにします"
+        ],
+        "why": "Mungkin: かもしれない."
+      },
+      "audio": "audio/ja/grammar/gx-kamoshirenai-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "kamoshirenai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kamoshirenai-2",
+      "japanese": "ちょっと遅れるかも。",
+      "furigana": "ちょっと{遅|おく}れるかも。",
+      "indonesian": "Aku mungkin agak terlambat.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "ちょっと",
+          "w": "w-chotto"
+        },
+        {
+          "t": "{遅|おく}れるかも。",
+          "w": "w-okureru"
+        }
+      ],
+      "gap": {
+        "before": "ちょっと{遅|おく}れる",
+        "answer": "かも",
+        "after": "。",
+        "options": [
+          "かも",
+          "ので",
+          "けど"
+        ],
+        "why": "“Mungkin” yang santai: かも."
+      },
+      "audio": "audio/ja/grammar/gx-kamoshirenai-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "kamoshirenai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kamoshirenai-3",
+      "japanese": "明日は晴れるでしょう。",
+      "furigana": "{明日|あした}は{晴|は}れるでしょう。",
+      "indonesian": "Besok kemungkinan besar cerah.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{晴|は}れるでしょう。",
+          "w": "w-hare"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}は{晴|は}れる",
+        "answer": "でしょう",
+        "after": "。",
+        "options": [
+          "でしょう",
+          "ですか",
+          "でした"
+        ],
+        "why": "Kemungkinan besar: でしょう."
+      },
+      "audio": "audio/ja/grammar/gx-kamoshirenai-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "kamoshirenai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kamoshirenai-4",
+      "japanese": "彼はもう家に着いたでしょう。",
+      "furigana": "{彼|かれ}はもう{家|いえ}に{着|つ}いたでしょう。",
+      "indonesian": "Dia kemungkinan besar sudah sampai di rumah sekarang.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{彼|かれ}は",
+          "w": "w-kare"
+        },
+        {
+          "t": "もう{家|いえ}に",
+          "w": "w-ie"
+        },
+        {
+          "t": "{着|つ}いたでしょう。",
+          "w": "w-tsuku"
+        }
+      ],
+      "gap": {
+        "before": "{彼|かれ}はもう{家|いえ}に{着|つ}いた",
+        "answer": "でしょう",
+        "after": "。",
+        "options": [
+          "でしょう",
+          "かもしれない",
+          "つもり"
+        ],
+        "ok": [
+          "かもしれない"
+        ],
+        "note": "かもしれない juga bisa, tetapi kurang yakin.",
+        "why": "Kemungkinan besar, sudah: でしょう."
+      },
+      "audio": "audio/ja/grammar/gx-kamoshirenai-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "kamoshirenai"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

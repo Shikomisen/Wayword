@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-sugiru",
+  "connector": "〜すぎる",
+  "gloss": "terlalu; mudah; sulit",
+  "title": "〜すぎる・〜やすい・〜にくい — terlalu, mudah, sulit",
+  "pattern": "bentuk ます tanpa ます / kata sifat tanpa い + すぎる; bentuk ます tanpa ます + やすい / にくい",
+  "explanation": "すぎる berarti “terlalu (banyak)”, tetapi letaknya di belakang: {食|た}べすぎた — aku makan terlalu banyak; {高|たか}すぎる — terlalu mahal (buang い). やすい dan にくい melekat pada kata kerja tanpa ます, seperti “mudah di-” dan “sulit di-”: {読|よ}みやすい — mudah dibaca; {分|わ}かりにくい — sulit dimengerti. Ketiganya lalu berubah seperti kata kerja dan kata sifat biasa.",
+  "natural": "Saat belanja dan makan: ちょっと{大|おお}きすぎます — agak terlalu besar; この{靴|くつ}は{歩|ある}きやすい — sepatu ini enak dipakai jalan.",
+  "stiff": "いい menjadi よすぎる (terlalu bagus), bukan いすぎる. Dan やすい ini bukan {安|やす}い (murah): artinya “mudah”.",
+  "examples": [
+    {
+      "id": "gx-sugiru-1",
+      "japanese": "昨日は飲みすぎた。",
+      "furigana": "{昨日|きのう}は{飲|の}みすぎた。",
+      "indonesian": "Kemarin aku minum terlalu banyak.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{昨日|きのう}は",
+          "w": "w-kinou"
+        },
+        {
+          "t": "{飲|の}みすぎた。",
+          "w": "w-nomu"
+        }
+      ],
+      "gap": {
+        "before": "{昨日|きのう}は{飲|の}み",
+        "answer": "すぎた",
+        "after": "。",
+        "options": [
+          "すぎた",
+          "やすかった",
+          "にくかった"
+        ],
+        "why": "Terlalu banyak: bentuk ます tanpa ます + すぎる."
+      },
+      "audio": "audio/ja/grammar/gx-sugiru-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "sugiru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-sugiru-2",
+      "japanese": "このシャツはちょっと大きすぎます。",
+      "furigana": "この{シャツ|しゃつ}はちょっと{大|おお}きすぎます。",
+      "indonesian": "Kemeja ini agak terlalu besar.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{シャツ|しゃつ}は"
+        },
+        {
+          "t": "ちょっと",
+          "w": "w-chotto"
+        },
+        {
+          "t": "{大|おお}きすぎます。",
+          "w": "w-ookii"
+        }
+      ],
+      "gap": {
+        "before": "この{シャツ|しゃつ}はちょっと{大|おお}き",
+        "answer": "すぎます",
+        "after": "。",
+        "options": [
+          "すぎます",
+          "やすいです",
+          "にくいです"
+        ],
+        "why": "Terlalu besar: buang い, tambah すぎる."
+      },
+      "audio": "audio/ja/grammar/gx-sugiru-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "sugiru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-sugiru-3",
+      "japanese": "この地図は分かりやすいですね。",
+      "furigana": "この{地図|ちず}は{分|わ}かりやすいですね。",
+      "indonesian": "Peta ini mudah dipahami, ya.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{地図|ちず}は",
+          "w": "w-chizu"
+        },
+        {
+          "t": "{分|わ}かりやすいですね。",
+          "w": "w-wakaru"
+        }
+      ],
+      "gap": {
+        "before": "この{地図|ちず}は{分|わ}かり",
+        "answer": "やすい",
+        "after": "ですね。",
+        "options": [
+          "やすい",
+          "にくい",
+          "すぎる"
+        ],
+        "why": "Mudah: やすい."
+      },
+      "audio": "audio/ja/grammar/gx-sugiru-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "sugiru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-sugiru-4",
+      "japanese": "この靴は歩きにくい。",
+      "furigana": "この{靴|くつ}は{歩|ある}きにくい。",
+      "indonesian": "Sepatu ini susah dipakai jalan.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "この{靴|くつ}は",
+          "w": "w-kutsu"
+        },
+        {
+          "t": "{歩|ある}きにくい。",
+          "w": "w-aruku"
+        }
+      ],
+      "gap": {
+        "before": "この{靴|くつ}は{歩|ある}き",
+        "answer": "にくい",
+        "after": "。",
+        "options": [
+          "にくい",
+          "やすい",
+          "すぎる"
+        ],
+        "why": "Sulit: にくい."
+      },
+      "audio": "audio/ja/grammar/gx-sugiru-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "sugiru"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

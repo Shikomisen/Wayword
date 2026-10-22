@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "id": "words-feelings",
+  "title": "気持ちと体調",
+  "description": "今の気持ちと、具合が悪いときに言うこと：capek、lapar、kangen、pusing。「です」に当たる言葉はいりません：Saya capek（疲れています）。",
+  "items": [
+    {
+      "id": "w-senang",
+      "indonesian": "senang",
+      "japanese": "うれしい、楽しい；楽しむ",
+      "pos": "adjective",
+      "registerNotes": "Senang bertemu dengan Anda（お会いできてうれしいです）。その場所が気に入っているときにも使います：Saya senang di sini（ここが気に入っています）。",
+      "audio": "audio/id/words/w-senang.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sedih",
+      "indonesian": "sedih",
+      "japanese": "悲しい",
+      "pos": "adjective",
+      "audio": "audio/id/words/w-sedih.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-marah",
+      "indonesian": "marah",
+      "japanese": "怒っている",
+      "pos": "adjective",
+      "registerNotes": "人に対して怒るのは、話し言葉で marah sama dia、書き言葉で marah kepada dia。",
+      "cultureNote": "人前で怒りを見せると面目を失い、うまくいくこともまずありません。苦情を言うときでも、落ち着いて笑顔で。",
+      "audio": "audio/id/words/w-marah.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-takut",
+      "indonesian": "takut",
+      "japanese": "怖い、恐れる",
+      "pos": "adjective",
+      "pitfallNote": "怖いものをそのまま後ろに置き、「が」に当たる言葉はいりません：takut anjing（犬が怖い）。話し言葉では takut sama anjing とも言います。",
+      "audio": "audio/id/words/w-takut.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-capek",
+      "indonesian": "capek",
+      "japanese": "疲れた",
+      "pos": "adjective",
+      "registerNotes": "誰もが使うのは capek で、lelah は書き言葉です。友達同士では capek banget（すごく疲れた）。",
+      "audio": "audio/id/words/w-capek.mp3",
+      "tags": [
+        "気持ち",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-lapar",
+      "indonesian": "lapar",
+      "japanese": "おなかがすいた",
+      "pos": "adjective",
+      "pitfallNote": "「です」に当たる言葉はいりません：Saya lapar（おなかがすきました）。laper とも言います。",
+      "audio": "audio/id/words/w-lapar.mp3",
+      "tags": [
+        "気持ち",
+        "食べ物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-haus",
+      "indonesian": "haus",
+      "japanese": "のどが渇いた",
+      "pos": "adjective",
+      "pitfallNote": "ha-us と2音節で、u もはっきり発音します。最後の s の後に「ウ」を付けないように。",
+      "audio": "audio/id/words/w-haus.mp3",
+      "tags": [
+        "気持ち",
+        "食べ物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sakit",
+      "indonesian": "sakit",
+      "japanese": "病気の、具合が悪い；痛い",
+      "pos": "adjective",
+      "registerNotes": "Saya sakit（具合が悪いです）、Kaki saya sakit（足が痛いです）。Sakit apa? は「どこが悪いの？」と聞く言葉です。",
+      "audio": "audio/id/words/w-sakit.mp3",
+      "tags": [
+        "健康",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sehat",
+      "indonesian": "sehat",
+      "japanese": "健康な、元気な",
+      "pos": "adjective",
+      "registerNotes": "友達や家族は Sehat?（元気にしてる？）と聞き、Sehat-sehat, ya（元気でね）は心のこもった別れのあいさつです。",
+      "audio": "audio/id/words/w-sehat.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bosan",
+      "indonesian": "bosan",
+      "japanese": "退屈な；飽きた",
+      "pos": "adjective",
+      "registerNotes": "何かに飽きたときにも使います：Saya bosan makan mi（麺はもう食べ飽きました）。bosen とも言います。",
+      "audio": "audio/id/words/w-bosan.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kangen",
+      "indonesian": "kangen",
+      "japanese": "恋しい、会いたい",
+      "pos": "verb",
+      "registerNotes": "普段使いの温かい言葉：Saya kangen keluarga（家族が恋しい）。歌や書き言葉では、同じ意味で rindu を使います。",
+      "audio": "audio/id/words/w-kangen.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-khawatir",
+      "indonesian": "khawatir",
+      "japanese": "心配な",
+      "pos": "adjective",
+      "registerNotes": "Jangan khawatir（心配しないで）。kh は息の強い h で、kuatir と言う人も多いです。",
+      "audio": "audio/id/words/w-khawatir.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pusing",
+      "indonesian": "pusing",
+      "japanese": "めまいがする；頭が痛い",
+      "pos": "adjective",
+      "pitfallNote": "pusing はめまいや軽い頭痛のほか、日本語の「頭が痛い」と同じく悩みにも使います。Saya pusing は、体調と同じくらい、仕事やお金の悩みのことがよくあります。",
+      "audio": "audio/id/words/w-pusing.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-demam",
+      "indonesian": "demam",
+      "japanese": "熱；熱がある",
+      "pos": "noun",
+      "registerNotes": "動詞はいりません：Anak saya demam（子どもが熱を出しています）。badannya panas（体が熱い）とも言います。",
+      "audio": "audio/id/words/w-demam.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-obat",
+      "indonesian": "obat",
+      "japanese": "薬",
+      "pos": "noun",
+      "audio": "audio/id/words/w-obat.mp3",
+      "tags": [
+        "健康",
+        "必須"
+      ],
+      "difficulty": 1,
+      "registerNotes": "日本語と同じく「飲む」を使います：minum obat（薬を飲む）。錠剤でも同じです。"
+    },
+    {
+      "id": "w-dokter",
+      "indonesian": "dokter",
+      "japanese": "医者",
+      "pos": "noun",
+      "registerNotes": "医者には Dokter か Dok と呼びかけます。日本語の「先生」に当たる呼び方です。ke dokter は「医者に行く」。",
+      "audio": "audio/id/words/w-dokter.mp3",
+      "tags": [
+        "健康",
+        "人"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "id": "words-describe",
+  "title": "Menggambarkan sesuatu",
+  "description": "Baik, buruk, besar, baru, sibuk, mudah — dan beda kata sifat い dan kata sifat な. Tidak seperti bahasa Indonesia, kata sifat Jepang berubah bentuk dan diletakkan sebelum kata benda.",
+  "items": [
+    {
+      "id": "w-ii",
+      "japanese": "いい",
+      "indonesian": "baik, bagus",
+      "pos": "i-adjective",
+      "usage": "Tidak beraturan: bentuk lampaunya よかった, bentuk negatifnya よくない.",
+      "audio": "audio/ja/words/w-ii.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-warui",
+      "japanese": "悪い",
+      "furigana": "{悪|わる}い",
+      "indonesian": "buruk, jelek",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-warui.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ookii",
+      "japanese": "大きい",
+      "furigana": "{大|おお}きい",
+      "indonesian": "besar",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-ookii.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-chiisai",
+      "japanese": "小さい",
+      "furigana": "{小|ちい}さい",
+      "indonesian": "kecil",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-chiisai.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-atarashii",
+      "japanese": "新しい",
+      "furigana": "{新|あたら}しい",
+      "indonesian": "baru",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-atarashii.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-furui",
+      "japanese": "古い",
+      "furigana": "{古|ふる}い",
+      "indonesian": "lama, tua (benda)",
+      "pos": "i-adjective",
+      "usage": "Untuk benda, bukan untuk umur orang: jangan pakai 古い untuk \"orang tua\".",
+      "audio": "audio/ja/words/w-furui.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-takai",
+      "japanese": "高い",
+      "furigana": "{高|たか}い",
+      "indonesian": "mahal; tinggi",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-takai.mp3",
+      "tags": [
+        "menjelaskan",
+        "belanja"
+      ],
+      "difficulty": 1,
+      "usage": "Satu kata untuk \"mahal\" dan \"tinggi\". Lawan katanya berbeda: 安い (murah) dan 低い (ひくい, rendah)."
+    },
+    {
+      "id": "w-yasui",
+      "japanese": "安い",
+      "furigana": "{安|やす}い",
+      "indonesian": "murah",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-yasui.mp3",
+      "tags": [
+        "menjelaskan",
+        "belanja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tanoshii",
+      "japanese": "楽しい",
+      "furigana": "{楽|たの}しい",
+      "indonesian": "menyenangkan, seru",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-tanoshii.mp3",
+      "tags": [
+        "menjelaskan",
+        "perasaan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-isogashii",
+      "japanese": "忙しい",
+      "furigana": "{忙|いそが}しい",
+      "indonesian": "sibuk",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-isogashii.mp3",
+      "tags": [
+        "menjelaskan",
+        "pekerjaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hima",
+      "japanese": "暇",
+      "furigana": "{暇|ひま}",
+      "indonesian": "senggang, tidak sibuk",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-hima.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-shizuka",
+      "japanese": "静か",
+      "furigana": "{静|しず}か",
+      "indonesian": "tenang, sepi",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-shizuka.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 2,
+      "usage": "Kata sifat な: sebelum kata benda, tambahkan な — 静かな部屋 (kamar yang tenang)."
+    },
+    {
+      "id": "w-benri",
+      "japanese": "便利",
+      "furigana": "{便利|べんり}",
+      "indonesian": "praktis, berguna",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-benri.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kantan",
+      "japanese": "簡単",
+      "furigana": "{簡単|かんたん}",
+      "indonesian": "mudah, sederhana",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-kantan.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-muzukashii",
+      "japanese": "難しい",
+      "furigana": "{難|むずか}しい",
+      "indonesian": "sulit, susah",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-muzukashii.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-suki",
+      "japanese": "好き",
+      "furigana": "{好|す}き",
+      "indonesian": "suka",
+      "pos": "na-adjective",
+      "usage": "Secara tata bahasa ini kata sifat, bukan kata kerja: 猫が好き — \"(aku) suka kucing\". Yang disukai ditandai が, bukan を.",
+      "audio": "audio/ja/words/w-suki.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kirai",
+      "japanese": "嫌い",
+      "furigana": "{嫌|きら}い",
+      "indonesian": "tidak suka, benci",
+      "pos": "na-adjective",
+      "usage": "Kelihatannya kata sifat い, padahal bukan: 嫌いな食べ物. Kata ini cukup keras; あまり好きじゃない (kurang suka) lebih halus.",
+      "audio": "audio/ja/words/w-kirai.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kirei",
+      "japanese": "きれい",
+      "indonesian": "cantik, indah; bersih",
+      "pos": "na-adjective",
+      "usage": "Sering ditulis 綺麗. Kata sifat な, walaupun berakhiran い.",
+      "audio": "audio/ja/words/w-kirei.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

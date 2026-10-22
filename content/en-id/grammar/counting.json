@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-counting",
+  "connector": "se-, orang, buah",
+  "gloss": "counting people and things",
+  "title": "Counting: se-, orang, buah",
+  "pattern": "number + noun: tiga hari · number + orang / buah / ekor + noun · se- (one): seorang, sebuah",
+  "explanation": "The number goes before the noun, and the noun stays as it is: tiga hari (three days), dua tiket (two tickets). Indonesian also has counting words, a bit like 'a cup of' or 'a loaf of': orang for people, buah ('fruit') for things and ekor ('tail') for animals, as in dua orang anak (two children) or dua ekor kucing (two cats). For one, se- goes on the front: seorang teman (a friend), sebuah rumah (a house), and also sebentar (a moment) and sehari (one day). In everyday speech the counting word is often dropped for things, but Berapa orang? (How many people?) is heard at every restaurant.",
+  "natural": "At a restaurant or a ticket counter, count your group with orang: Berapa orang? — Dua orang. When ordering, though, the number often comes after the food: Nasi goreng dua, es teh satu (Two fried rice, one iced tea).",
+  "stiff": "Buah with everyday things can sound like a textbook: people say dua tiket, not dua buah tiket. And the noun never doubles after a number: tiga hari, not tiga hari-hari.",
+  "examples": [
+    {
+      "id": "gx-counting-1",
+      "indonesian": "Saya di Bali tiga hari.",
+      "english": "I'm in Bali for three days.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "di Bali ",
+          "w": "w-di"
+        },
+        {
+          "t": "tiga hari.",
+          "w": "w-hari"
+        }
+      ],
+      "gap": {
+        "before": "Saya di Bali ",
+        "answer": "tiga hari",
+        "after": ".",
+        "options": [
+          "tiga hari",
+          "hari tiga",
+          "tiga hari-hari"
+        ],
+        "why": "The number goes first, and the noun stays single: tiga hari."
+      },
+      "audio": "audio/id/grammar/gx-counting-1.mp3",
+      "tags": [
+        "grammar",
+        "counting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-counting-2",
+      "indonesian": "Berapa orang? Dua orang.",
+      "english": "How many people? Two.",
+      "chunks": [
+        {
+          "t": "Berapa ",
+          "w": "w-berapa"
+        },
+        {
+          "t": "orang? ",
+          "w": "w-orang"
+        },
+        {
+          "t": "Dua "
+        },
+        {
+          "t": "orang.",
+          "w": "w-orang"
+        }
+      ],
+      "gap": {
+        "before": "Berapa orang? Dua ",
+        "answer": "orang",
+        "after": ".",
+        "options": [
+          "orang",
+          "buah",
+          "ekor"
+        ],
+        "why": "People are counted with orang."
+      },
+      "audio": "audio/id/grammar/gx-counting-2.mp3",
+      "tags": [
+        "grammar",
+        "counting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-counting-3",
+      "indonesian": "Dia tinggal di sebuah desa kecil.",
+      "english": "She lives in a small village.",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di ",
+          "w": "w-di"
+        },
+        {
+          "t": "sebuah "
+        },
+        {
+          "t": "desa ",
+          "w": "w-desa"
+        },
+        {
+          "t": "kecil.",
+          "w": "w-kecil"
+        }
+      ],
+      "gap": {
+        "before": "Dia tinggal di ",
+        "answer": "sebuah",
+        "after": " desa kecil.",
+        "options": [
+          "sebuah",
+          "seorang",
+          "seekor"
+        ],
+        "why": "Things and places take buah: sebuah desa, a village."
+      },
+      "audio": "audio/id/grammar/gx-counting-3.mp3",
+      "tags": [
+        "grammar",
+        "counting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-counting-4",
+      "indonesian": "Kami punya dua ekor kucing.",
+      "english": "We've got two cats.",
+      "chunks": [
+        {
+          "t": "Kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "punya "
+        },
+        {
+          "t": "dua "
+        },
+        {
+          "t": "ekor "
+        },
+        {
+          "t": "kucing."
+        }
+      ],
+      "gap": {
+        "before": "Kami punya dua ",
+        "answer": "ekor",
+        "after": " kucing.",
+        "options": [
+          "ekor",
+          "orang",
+          "buah"
+        ],
+        "why": "Animals are counted with ekor, 'tail'."
+      },
+      "audio": "audio/id/grammar/gx-counting-4.mp3",
+      "tags": [
+        "grammar",
+        "counting"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

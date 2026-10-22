@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "airport",
+  "title": "Airport & Immigration",
+  "order": 10,
+  "description": "Getting through immigration and customs, finding your bags and your gate, and what to say if a suitcase goes missing or a flight is late. Officers at big airports often speak English, but a few Indonesian answers go down well.",
+  "phrases": [
+    {
+      "id": "air-01",
+      "indonesian": "Ini paspor saya.",
+      "english": "Here's my passport.",
+      "registerNotes": "Ini … saya (here's my …) works for anything you hand over: ini tiket saya (here's my ticket).",
+      "audio": "audio/id/air-01.mp3",
+      "tags": [
+        "airport",
+        "immigration",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "air-02",
+      "indonesian": "Loket visa on arrival di mana, ya?",
+      "english": "Where's the visa on arrival counter?",
+      "registerNotes": "Loket is a counter or ticket window. Visa on arrival keeps its English name, often written VoA.",
+      "cultureNote": "Visitors from New Zealand can usually get a visa on arrival, paid at a counter before immigration, or apply for the e-VoA online before flying.",
+      "audio": "audio/id/air-02.mp3",
+      "tags": [
+        "airport",
+        "visa"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-03",
+      "indonesian": "Saya ke sini untuk liburan.",
+      "english": "I'm here on holiday.",
+      "registerNotes": "The answer to Tujuannya apa? or Keperluannya apa? (What's the purpose of your visit?). Just Liburan. (A holiday.) is fine too.",
+      "pitfallNote": "Liburan is a holiday as in a trip or time off; a public holiday is hari libur.",
+      "audio": "audio/id/air-03.mp3",
+      "tags": [
+        "airport",
+        "immigration"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-04",
+      "indonesian": "Saya di sini dua minggu.",
+      "english": "I'm here for two weeks.",
+      "registerNotes": "The answer to Berapa lama di Indonesia? (How long are you in Indonesia?). Swap the time: sepuluh hari (ten days), satu bulan (a month).",
+      "pitfallNote": "No word for 'for' is needed before a length of time. Selama (for, during) is fine but optional.",
+      "audio": "audio/id/air-04.mp3",
+      "tags": [
+        "airport",
+        "immigration"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-05",
+      "indonesian": "Saya menginap di Ubud.",
+      "english": "I'm staying in Ubud.",
+      "registerNotes": "The answer to Menginap di mana? (Where are you staying?). Have your hotel's name and address ready, as the arrival forms ask for it too.",
+      "pitfallNote": "Menginap is staying the night somewhere; tinggal is living there.",
+      "audio": "audio/id/air-05.mp3",
+      "tags": [
+        "airport",
+        "immigration"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-06",
+      "indonesian": "Ini tiket pulang saya.",
+      "english": "Here's my return ticket.",
+      "registerNotes": "Officers may ask Tiket pulangnya ada? (Do you have a return ticket?), meaning proof that you'll leave. Have it ready on your phone.",
+      "audio": "audio/id/air-06.mp3",
+      "tags": [
+        "airport",
+        "immigration"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-07",
+      "indonesian": "Tempat ambil bagasi di mana, ya?",
+      "english": "Where's the baggage claim?",
+      "registerNotes": "Signs say Pengambilan Bagasi. Bagasi is your checked luggage.",
+      "audio": "audio/id/air-07.mp3",
+      "tags": [
+        "airport",
+        "luggage"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-08",
+      "indonesian": "Koper saya hilang.",
+      "english": "My suitcase is missing.",
+      "registerNotes": "While you're still waiting, it's Koper saya belum keluar (My suitcase hasn't come out yet). Take your baggage tag to the Lost and Found desk.",
+      "audio": "audio/id/air-08.mp3",
+      "tags": [
+        "airport",
+        "luggage",
+        "problems"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-09",
+      "indonesian": "Tidak ada, Pak, hanya barang pribadi.",
+      "english": "No, just personal belongings.",
+      "registerNotes": "The answer when a customs officer (Bea Cukai) asks whether you have anything to declare.",
+      "cultureNote": "Indonesia's drug laws are among the harshest in the world, so never carry a bag or parcel for anyone else.",
+      "audio": "audio/id/air-09.mp3",
+      "tags": [
+        "airport",
+        "customs"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "air-10",
+      "indonesian": "Keberangkatan internasional di mana, ya?",
+      "english": "Where are international departures?",
+      "registerNotes": "Keberangkatan is departures and kedatangan arrivals; domestik is domestic. Big airports have separate terminals, so check yours on your ticket.",
+      "audio": "audio/id/air-10.mp3",
+      "tags": [
+        "airport",
+        "departures"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-11",
+      "indonesian": "Pintu tujuh di mana, ya?",
+      "english": "Where's gate seven?",
+      "registerNotes": "Signs say Gate in English and many people say gate too, but announcements use pintu: melalui pintu tujuh (through gate seven).",
+      "audio": "audio/id/air-11.mp3",
+      "tags": [
+        "airport",
+        "departures"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-12",
+      "indonesian": "Pesawatnya terlambat berapa lama?",
+      "english": "How long is the flight delayed?",
+      "registerNotes": "In everyday speech people say delay: Pesawatnya delay (The flight's delayed). Announcements say mengalami keterlambatan (is delayed).",
+      "audio": "audio/id/air-12.mp3",
+      "tags": [
+        "airport",
+        "departures",
+        "problems"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

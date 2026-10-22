@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "lost",
+  "title": "道をたずねる",
+  "category": "directions",
+  "setting": "ジャカルタの迷路のような細い路地で駅を探していますが、地図アプリのせいで同じところをぐるぐる回っています。小さな店の前に座っていた男性が、スマホを見つめるあなたに気づきました。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "passerby",
+      "indonesian": "Cari apa, Kak? Bisa saya bantu?",
+      "japanese": "何かお探しですか？お手伝いしましょうか？",
+      "audio": "audio/id/scenario/lost-n1.mp3",
+      "options": [
+        {
+          "phraseId": "dir-08",
+          "quality": "good",
+          "feedback": "正直ではっきりしています。tersesat は道に迷うこと。",
+          "next": "n2"
+        },
+        {
+          "phraseId": "dir-01",
+          "quality": "good",
+          "feedback": "道を聞く前の、定番の丁寧な前置きです。numpang は「間借りする」で、相手の時間を少しお借りするような謙虚な響き。日本語の「ちょっとお尋ねしますが」にあたります。",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Saya hilang.",
+          "japanese": "私は行方不明です。",
+          "feedback": "hilang は物がなくなること。自分に使うと、あなたが消えてしまったように聞こえます。道に迷ったなら tersesat です。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "passerby",
+      "indonesian": "Oh. Mau ke mana, Kak?",
+      "japanese": "ああ。どこに行きたいんですか？",
+      "audio": "audio/id/scenario/lost-n2.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Ke stasiun kereta, Pak.",
+          "japanese": "鉄道の駅までです。",
+          "feedback": "ke（〜へ）＋場所だけで十分です。",
+          "next": "n3"
+        },
+        {
+          "phraseId": "dir-02",
+          "quality": "good",
+          "feedback": "場所が先で di mana が最後。日本語の「駅はどこですか」と同じ語順で、これがふつうの聞き方です。ya でやわらかくなります。",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Di stasiun, Pak.",
+          "japanese": "駅で。",
+          "feedback": "日本語の「駅に」はいる場所にも行き先にも使えますが、インドネシア語ではいる場所は di、行き先は ke（〜へ）です。Ke stasiun, Pak と言いましょう。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "passerby",
+      "indonesian": "Stasiun? Tidak terlalu jauh.",
+      "japanese": "駅？そんなに遠くないですよ。",
+      "audio": "audio/id/scenario/lost-n3.mp3",
+      "options": [
+        {
+          "phraseId": "dir-04",
+          "quality": "good",
+          "feedback": "確認しておくと役立ちます。dekat や tidak jauh は、バイクなら近いという意味のことがよくあります。",
+          "next": "n4"
+        },
+        {
+          "phraseId": "dir-10",
+          "quality": "good",
+          "feedback": "地図を開いたスマホを渡しましょう。地元の人も慣れています。",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Apakah saya bisa berjalan kaki ke sana?",
+          "japanese": "私はそこまで徒歩で行くことが可能でしょうか？",
+          "feedback": "正しいのですが堅い言い方です。apakah や berjalan kaki は書き言葉。話す時は Bisa jalan kaki ke sana? で十分です。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "passerby",
+      "indonesian": "Bisa. Dari sini lurus saja, nanti di perempatan belok kanan. Stasiunnya di sebelah kiri, dekat masjid.",
+      "japanese": "行けますよ。ここからまっすぐ行って、交差点を右に曲がってください。駅は左側、モスクの近くです。",
+      "audio": "audio/id/scenario/lost-n4.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Lurus, lalu belok kanan, ya, Pak?",
+          "japanese": "まっすぐ行って、それから右ですね？",
+          "feedback": "道順を復唱するのが、いちばん確実な確認方法です。間違っていたら直してくれます。",
+          "next": "n6"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Lurus, lalu belok kiri, ya?",
+          "japanese": "まっすぐ行って、それから左ですね？",
+          "feedback": "相手は belok kanan（右に曲がる）と言いました。kiri は左で、曲がったあとに駅がある側です。",
+          "next": "n5"
+        },
+        {
+          "phraseId": "gre-12",
+          "quality": "good",
+          "feedback": "いつ頼んでも大丈夫です。もう一度ゆっくり説明してくれます。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "passerby",
+      "indonesian": "Lurus dulu, ya. Nanti di perempatan, belok kanan. Kanan, ya, Kak.",
+      "japanese": "まずまっすぐね。それから交差点で右に曲がる。右ですよ。",
+      "audio": "audio/id/scenario/lost-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Oh, kanan. Lurus, lalu belok kanan, ya?",
+          "japanese": "あ、右ですね。まっすぐ行って、それから右ですね？",
+          "feedback": "迷っているのはこちらなので、もう一度確認しても失礼にはなりません。",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Oke, oke.",
+          "japanese": "オーケー、オーケー。",
+          "feedback": "わからないまま「はい、はい」とうなずくと、また迷うことになります。日本人学習者にありがちな失敗です。Lurus, lalu belok kanan, ya? と復唱して確かめましょう。",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "passerby",
+      "indonesian": "Iya. Hati-hati, ya, Kak.",
+      "japanese": "そうそう。気をつけてね。",
+      "audio": "audio/id/scenario/lost-n6.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Terima kasih banyak, Pak.",
+          "japanese": "どうもありがとうございました。",
+          "feedback": "banyak（たくさん）を付けると、時間を割いてくれたことへの温かいお礼になります。",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Mari, Pak. Terima kasih.",
+          "japanese": "では、失礼します。ありがとうございました。",
+          "feedback": "Mari, Pak は、歩き出す時の丁寧なあいさつです。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-20",
+          "quality": "awkward",
+          "feedback": "助けてもらったあとで ya だけ言って立ち去ると、そっけなく聞こえます。Terima kasih banyak, Pak とお礼を言いましょう。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "japanese": "到着。道案内では、通りの名前より交差点や信号、モスクといった目印がよく使われます。lurus はまっすぐ（l と r を言い分けて）、belok は曲がる、kiri は左、kanan は右。道順は復唱して確かめ、途中でまた聞いてもかまいません。みんな喜んで助けてくれます。",
+      "end": true,
+      "options": []
+    }
+  }
+}

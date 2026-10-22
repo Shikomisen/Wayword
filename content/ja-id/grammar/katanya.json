@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-katanya",
+  "connector": "katanya",
+  "gloss": "〜らしい、〜だって；〜が言うには",
+  "title": "katanya — 人の話を伝える",
+  "pattern": "Kata + 人, … (〜が言うには) · Katanya … (〜らしい、〜だって) · 人 + bilang … (くだけた言い方: 〜が言ってた)",
+  "explanation": "kata は「言葉」という意味で、kata の後に人を続けると、その人の言ったことを伝えられます：Kata dokter, saya harus istirahat（お医者さんが言うには、休まないといけないそうです）。-nya を付けて、だれとも言わない katanya は「〜らしい」「〜だって」：Katanya besok hujan（明日は雨らしいよ）。自分では保証せずに噂やニュースを伝える、インドネシア人おなじみの言い方です。ふだんの会話で「言う」「伝える」は bilang：Dia bilang dia capek（彼女、疲れたって言ってた）、Bilang saja（言っちゃえばいいよ）。伝える中身の形は変わりません。時制がないので、dia capek は「疲れている」とも「疲れていた」とも取れます。日本語の「〜って言ってた」と同じで、何もずらす必要はありません。",
+  "natural": "katanya は確かでない話にぴったり：Katanya tokonya sudah tutup（お店、もう閉まったらしいよ）。Kata siapa?（だれが言ったの？）は出どころを聞く言い方で、友達同士なら「ほんとに〜？」とからかい半分の突っ込みにもなります。",
+  "stiff": "bilang はくだけた言葉です。ていねいに話す時は kata を前に出し（Kata Bapak tadi …、先ほどおっしゃったように…）、mengatakan はニュースや改まった文章に任せましょう。自分の目で見たことに katanya は使いません。日本語の「〜らしい」と同じで、人から聞いた話の印になるからです。",
+  "examples": [
+    {
+      "id": "gx-katanya-1",
+      "indonesian": "Katanya besok hujan.",
+      "japanese": "明日は雨らしいです。",
+      "chunks": [
+        {
+          "t": "Katanya "
+        },
+        {
+          "t": "besok ",
+          "w": "w-besok"
+        },
+        {
+          "t": "hujan.",
+          "w": "w-hujan"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Katanya",
+        "after": " besok hujan.",
+        "options": [
+          "Katanya",
+          "Kata",
+          "Bilang"
+        ],
+        "why": "だれが言ったかを言わない時は katanya（「〜らしい」「〜だって」）。"
+      },
+      "audio": "audio/id/grammar/gx-katanya-1.mp3",
+      "tags": [
+        "文法",
+        "katanya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-katanya-2",
+      "indonesian": "Kata dokter, saya harus banyak istirahat.",
+      "japanese": "お医者さんによると、しっかり休まないといけないそうです。",
+      "chunks": [
+        {
+          "t": "Kata "
+        },
+        {
+          "t": "dokter, ",
+          "w": "w-dokter"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "harus banyak ",
+          "w": "w-banyak"
+        },
+        {
+          "t": "istirahat.",
+          "w": "w-istirahat"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kata",
+        "after": " dokter, saya harus banyak istirahat.",
+        "options": [
+          "Kata",
+          "Bilang",
+          "Menurut"
+        ],
+        "ok": [
+          "Menurut"
+        ],
+        "note": "Menurut dokter（お医者さんによると）も正解で、少し改まった言い方です。",
+        "why": "人の前に kata を置くと、その人の言葉を伝えられます：「お医者さんが言うには」。"
+      },
+      "audio": "audio/id/grammar/gx-katanya-2.mp3",
+      "tags": [
+        "文法",
+        "katanya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-katanya-3",
+      "register": "casual",
+      "indonesian": "Dia bilang dia nggak bisa datang.",
+      "japanese": "彼女、来られないって言ってた。",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "bilang "
+        },
+        {
+          "t": "dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "nggak bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "datang.",
+          "w": "w-datang"
+        }
+      ],
+      "gap": {
+        "before": "Dia ",
+        "answer": "bilang",
+        "after": " dia nggak bisa datang.",
+        "options": [
+          "bilang",
+          "kata",
+          "bicara"
+        ],
+        "why": "bilang は人の後に来る、ふだんの「言う」。kata は人の前（kata dia）、bicara は「話す」です。"
+      },
+      "pitfallNote": "Bicara は「話す・しゃべる」で、中身を「言う」ではありません。Dia bicara dia … とは言えません。日本語の「話す」と「言う」の違いと同じです。",
+      "audio": "audio/id/grammar/gx-katanya-3.mp3",
+      "tags": [
+        "文法",
+        "katanya",
+        "くだけた言い方"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-katanya-4",
+      "indonesian": "Pak Budi tidak masuk hari ini, katanya sakit.",
+      "japanese": "ブディさんは今日お休みです。具合が悪いそうです。",
+      "chunks": [
+        {
+          "t": "Pak Budi ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "tidak masuk ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "hari ini, ",
+          "w": "w-hari-ini"
+        },
+        {
+          "t": "katanya "
+        },
+        {
+          "t": "sakit.",
+          "w": "w-sakit"
+        }
+      ],
+      "gap": {
+        "before": "Pak Budi tidak masuk hari ini, ",
+        "answer": "katanya",
+        "after": " sakit.",
+        "options": [
+          "katanya",
+          "kata",
+          "bilang"
+        ],
+        "why": "理由の前に katanya：だれから聞いたかは言わずに「〜だそうです」。"
+      },
+      "registerNotes": "Masuk（入る）は、仕事や学校に「出る」というふだんの言葉で、tidak masuk は「休み」です。Pak は年上や目上の男性に付ける「〜さん」。",
+      "audio": "audio/id/grammar/gx-katanya-4.mp3",
+      "tags": [
+        "文法",
+        "katanya"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

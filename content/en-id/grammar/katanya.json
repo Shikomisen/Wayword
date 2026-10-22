@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-katanya",
+  "connector": "katanya",
+  "gloss": "apparently, they say; X says",
+  "title": "katanya — reporting",
+  "pattern": "Kata + person, … (X says) · Katanya … (apparently) · person + bilang … (casual: X said)",
+  "explanation": "kata means 'word', and kata followed by a person passes on what they said: Kata dokter, saya harus istirahat (The doctor says I have to rest). With -nya and nobody named, katanya means apparently, or I heard: Katanya besok hujan (Apparently it'll rain tomorrow). It's how Indonesians pass on news without vouching for it. In everyday speech, the verb for 'say' or 'tell' is bilang: Dia bilang dia capek (She said she was tired), Bilang saja (Just tell them). Nothing in the reported part changes, since there's no tense to shift: dia capek covers both 'she's tired' and 'she was tired'.",
+  "natural": "katanya is perfect for news you're not sure of: Katanya tokonya sudah tutup (Apparently the shop's closed). Kata siapa? (Says who?) asks for the source; among friends it's often a teasing challenge.",
+  "stiff": "bilang is informal: in careful speech, put kata first instead (Kata Bapak tadi …, as you said just now …), and leave mengatakan to the news and formal writing. Don't use katanya for something you saw yourself, as it signals hearsay.",
+  "examples": [
+    {
+      "id": "gx-katanya-1",
+      "indonesian": "Katanya besok hujan.",
+      "english": "Apparently it's going to rain tomorrow.",
+      "chunks": [
+        {
+          "t": "Katanya "
+        },
+        {
+          "t": "besok ",
+          "w": "w-besok"
+        },
+        {
+          "t": "hujan.",
+          "w": "w-hujan"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Katanya",
+        "after": " besok hujan.",
+        "options": [
+          "Katanya",
+          "Kata",
+          "Bilang"
+        ],
+        "why": "With nobody named, katanya: 'apparently, they say'."
+      },
+      "audio": "audio/id/grammar/gx-katanya-1.mp3",
+      "tags": [
+        "grammar",
+        "katanya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-katanya-2",
+      "indonesian": "Kata dokter, saya harus banyak istirahat.",
+      "english": "The doctor says I need plenty of rest.",
+      "chunks": [
+        {
+          "t": "Kata "
+        },
+        {
+          "t": "dokter, ",
+          "w": "w-dokter"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "harus banyak ",
+          "w": "w-banyak"
+        },
+        {
+          "t": "istirahat.",
+          "w": "w-istirahat"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kata",
+        "after": " dokter, saya harus banyak istirahat.",
+        "options": [
+          "Kata",
+          "Bilang",
+          "Menurut"
+        ],
+        "ok": [
+          "Menurut"
+        ],
+        "note": "Menurut dokter (according to the doctor) is right too, and a little more formal.",
+        "why": "kata before the person passes on their words: 'the doctor says'."
+      },
+      "audio": "audio/id/grammar/gx-katanya-2.mp3",
+      "tags": [
+        "grammar",
+        "katanya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-katanya-3",
+      "register": "casual",
+      "indonesian": "Dia bilang dia nggak bisa datang.",
+      "english": "She said she can't make it.",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "bilang "
+        },
+        {
+          "t": "dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "nggak bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "datang.",
+          "w": "w-datang"
+        }
+      ],
+      "gap": {
+        "before": "Dia ",
+        "answer": "bilang",
+        "after": " dia nggak bisa datang.",
+        "options": [
+          "bilang",
+          "kata",
+          "bicara"
+        ],
+        "why": "bilang is the everyday verb 'say', after the person; kata goes before the person (kata dia), and bicara is 'talk'."
+      },
+      "pitfallNote": "Bicara is to talk or speak, not to say something: Dia bicara dia … doesn't work.",
+      "audio": "audio/id/grammar/gx-katanya-3.mp3",
+      "tags": [
+        "grammar",
+        "katanya",
+        "casual"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-katanya-4",
+      "indonesian": "Pak Budi tidak masuk hari ini, katanya sakit.",
+      "english": "Mr Budi isn't in today. He's sick, apparently.",
+      "chunks": [
+        {
+          "t": "Pak Budi ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "tidak masuk ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "hari ini, ",
+          "w": "w-hari-ini"
+        },
+        {
+          "t": "katanya "
+        },
+        {
+          "t": "sakit.",
+          "w": "w-sakit"
+        }
+      ],
+      "gap": {
+        "before": "Pak Budi tidak masuk hari ini, ",
+        "answer": "katanya",
+        "after": " sakit.",
+        "options": [
+          "katanya",
+          "kata",
+          "bilang"
+        ],
+        "why": "katanya before the reason: 'he says' or 'apparently', without naming who told you."
+      },
+      "registerNotes": "Masuk (come in) is the everyday word for turning up to work or school; tidak masuk is being off.",
+      "audio": "audio/id/grammar/gx-katanya-4.mp3",
+      "tags": [
+        "grammar",
+        "katanya"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

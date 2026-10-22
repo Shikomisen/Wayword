@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "con-karena",
+  "connector": "karena",
+  "gloss": "because",
+  "title": "karena — because",
+  "pattern": "A karena B · Karena B, A",
+  "explanation": "karena gives the reason. It usually comes after the main point: Saya pulang karena capek. — I'm going home because I'm tired. The reason can also come first, followed by a comma: Karena hujan, kami di rumah saja. When both halves have the same subject you can leave it out after karena (karena capek, not always karena saya capek), and karena works before a single word where English needs because of: karena macet, because of the traffic.",
+  "natural": "The neutral because, right in polite and careful speech and in writing: with staff, a doctor, a teacher or someone older, and when someone asks you Kenapa? (why?).",
+  "stiff": "Not stiff, but among friends soalnya (next lesson) is the chattier choice. sebab means the same and sounds more formal.",
+  "examples": [
+    {
+      "id": "cx-karena-1",
+      "indonesian": "Saya pulang karena capek.",
+      "english": "I'm going home because I'm tired.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "pulang ",
+          "w": "w-pulang"
+        },
+        {
+          "t": "karena ",
+          "w": "w-karena"
+        },
+        {
+          "t": "capek.",
+          "w": "w-capek"
+        }
+      ],
+      "gap": {
+        "before": "Saya pulang ",
+        "answer": "karena",
+        "after": " capek.",
+        "options": [
+          "karena",
+          "jadi",
+          "tapi"
+        ],
+        "why": "The reason, being tired, follows karena."
+      },
+      "combine": {
+        "a": "Saya pulang.",
+        "b": "Saya capek.",
+        "distractors": [
+          "jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-karena-1.mp3",
+      "tags": [
+        "connectors",
+        "karena"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-karena-2",
+      "indonesian": "Karena hujan, kami di rumah saja.",
+      "english": "Because it's raining, we're staying in.",
+      "chunks": [
+        {
+          "t": "Karena ",
+          "w": "w-karena"
+        },
+        {
+          "t": "hujan, ",
+          "w": "w-hujan"
+        },
+        {
+          "t": "kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "di rumah saja.",
+          "w": "w-rumah"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Karena",
+        "after": " hujan, kami di rumah saja.",
+        "options": [
+          "Karena",
+          "Jadi",
+          "Walaupun"
+        ],
+        "why": "The reason comes first here, so the sentence starts with Karena, and a comma closes the reason."
+      },
+      "combine": {
+        "a": "Hujan.",
+        "b": "Kami di rumah saja.",
+        "distractors": [
+          "Jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-karena-2.mp3",
+      "tags": [
+        "connectors",
+        "karena"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-karena-3",
+      "indonesian": "Maaf, saya terlambat karena macet.",
+      "english": "Sorry, I'm late because of the traffic.",
+      "chunks": [
+        {
+          "t": "Maaf, "
+        },
+        {
+          "t": "saya terlambat ",
+          "w": "w-saya"
+        },
+        {
+          "t": "karena ",
+          "w": "w-karena"
+        },
+        {
+          "t": "macet."
+        }
+      ],
+      "gap": {
+        "before": "Maaf, saya terlambat ",
+        "answer": "karena",
+        "after": " macet.",
+        "options": [
+          "karena",
+          "jadi",
+          "walaupun"
+        ],
+        "why": "karena works before a single word too: karena macet, because of the traffic."
+      },
+      "combine": {
+        "a": "Maaf, saya terlambat.",
+        "b": "Macet.",
+        "distractors": [
+          "jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-karena-3.mp3",
+      "tags": [
+        "connectors",
+        "karena"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-karena-4",
+      "indonesian": "Saya belajar bahasa Indonesia karena pacar saya orang Indonesia.",
+      "english": "I'm learning Indonesian because my partner is Indonesian.",
+      "chunks": [
+        {
+          "t": "Saya belajar ",
+          "w": "w-belajar"
+        },
+        {
+          "t": "bahasa Indonesia "
+        },
+        {
+          "t": "karena ",
+          "w": "w-karena"
+        },
+        {
+          "t": "pacar saya ",
+          "w": "w-pacar"
+        },
+        {
+          "t": "orang Indonesia.",
+          "w": "w-orang"
+        }
+      ],
+      "gap": {
+        "before": "Saya belajar bahasa Indonesia ",
+        "answer": "karena",
+        "after": " pacar saya orang Indonesia.",
+        "options": [
+          "karena",
+          "jadi",
+          "tapi"
+        ],
+        "why": "Your partner being Indonesian is the reason, so it follows karena."
+      },
+      "combine": {
+        "a": "Saya belajar bahasa Indonesia.",
+        "b": "Pacar saya orang Indonesia.",
+        "distractors": [
+          "jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-karena-4.mp3",
+      "tags": [
+        "connectors",
+        "karena"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

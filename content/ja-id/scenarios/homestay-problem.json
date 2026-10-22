@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "homestay-problem",
+  "title": "部屋のトラブル",
+  "category": "hotel",
+  "setting": "ウブドの家族経営の民宿で迎える最初の夜。部屋のエアコンは動いているのに、出てくるのは生ぬるい風です。受付にいる主人のワヤンさん（Pak Wayan）を探しに行きます。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "host",
+      "indonesian": "Selamat malam, Kak. Ada yang bisa saya bantu?",
+      "japanese": "こんばんは。何かお困りですか？",
+      "audio": "audio/id/scenario/homestay-problem-n1.mp3",
+      "options": [
+        {
+          "phraseId": "hot-08",
+          "quality": "good",
+          "feedback": "落ち着いて、はっきり。何が問題かを言えば、直すのは相手から申し出てくれます。先に Maaf mengganggu, Pak（お忙しいところすみません）と言うと、さらにやわらかくなります。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Maaf mengganggu, Pak. AC-nya sepertinya rusak.",
+          "japanese": "お忙しいところすみません。エアコンが壊れているみたいなんです。",
+          "feedback": "maaf mengganggu でていねいに切り出し、sepertinya（〜みたいです）で、簡単な原因かもしれない余地を残しています。",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "AC saya tidak bekerja.",
+          "japanese": "私のエアコンが働いていません。",
+          "feedback": "通じますが、bekerja は仕事をするという意味の「働く」です。機械には rusak（壊れた）、mati（動かない）、tidak dingin（冷えない）を使います。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "host",
+      "indonesian": "Aduh, maaf, Kak. Sudah dicoba dimatikan, terus dinyalakan lagi?",
+      "japanese": "ああ、すみません。一度消して、もう一度つけてみましたか？",
+      "audio": "audio/id/scenario/homestay-problem-n2.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Sudah, Pak, tapi tetap tidak dingin.",
+          "japanese": "はい、やってみましたが、やっぱり冷えません。",
+          "feedback": "Sudah …? と聞かれたら、「はい」は sudah です。tetap（やはり）で、変わらなかったことを伝えています。",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Sudah, Pak. Bisa tolong dilihat?",
+          "japanese": "はい、やりました。見ていただけますか？",
+          "feedback": "sudah で質問に答え、di- の形を使って、命令に聞こえないように見てほしいと頼んでいます。",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Ya, Pak.",
+          "japanese": "はい。",
+          "feedback": "通じますが、Sudah …? への「はい」は sudah です。どうなったかも言うと伝わりやすく、Sudah, tapi tetap tidak dingin. となります。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "host",
+      "indonesian": "Waduh. Tukang AC-nya baru bisa datang besok pagi. Maaf sekali, Kak.",
+      "audioHint": "Waduh. Tukang a se-nya baru bisa datang besok pagi. Maaf sekali, Kak.",
+      "japanese": "困りましたね。エアコンの修理屋さんは、明日の朝にならないと来られないんです。本当にすみません。",
+      "audio": "audio/id/scenario/homestay-problem-n3.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Kalau begitu, bisa pindah kamar malam ini?",
+          "japanese": "それなら、今夜は部屋を替えてもらえますか？",
+          "feedback": "kalau begitu（それなら）で話を先に進め、bisa …? の疑問文で、要求ではなくお願いにしています。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Ada kipas angin, Pak? Untuk malam ini saja.",
+          "japanese": "扇風機はありますか？今夜だけでいいので。",
+          "feedback": "一晩だけのささやかな解決策なので、相手も引き受けやすいです。",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Besok? Saya sudah bayar untuk kamar ber-AC!",
+          "japanese": "明日？エアコン付きの部屋の料金を払ったんですよ！",
+          "feedback": "もっともですが、声を荒らげると相手の面子をつぶしてしまい、早く解決することもまずありません。Bisa pindah kamar? と解決策を頼みましょう。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "host",
+      "indonesian": "Kamar sebelah kosong, Kak. AC-nya bagus. Mau pindah ke sana?",
+      "audioHint": "Kamar sebelah kosong, Kak. A se-nya bagus. Mau pindah ke sana?",
+      "japanese": "隣の部屋が空いています。そちらはエアコンもちゃんと効きます。移りますか？",
+      "audio": "audio/id/scenario/homestay-problem-n4.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Boleh, Pak. Terima kasih banyak.",
+          "japanese": "はい、お願いします。本当にありがとうございます。",
+          "feedback": "boleh は申し出へのふだんの「お願いします」。terima kasih banyak で心からお礼を伝えています。",
+          "next": "n5"
+        },
+        {
+          "phraseId": "hot-02",
+          "quality": "good",
+          "feedback": "賢明で、民宿ではごくふつうのことです。dulu（先に）で気軽な感じになります。",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Boleh, Pak. Terima kasih kembali.",
+          "japanese": "はい、お願いします。どういたしまして。",
+          "feedback": "terima kasih kembali は「どういたしまして」で、お礼を言われた時の返事です。お礼を言うなら terima kasih banyak です。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "host",
+      "indonesian": "Bagaimana, Kak, kamarnya? Sudah nyaman?",
+      "japanese": "お部屋はいかがですか？快適になりましたか？",
+      "audio": "audio/id/scenario/homestay-problem-n5.mp3",
+      "options": [
+        {
+          "phraseId": "pro-09",
+          "quality": "good",
+          "feedback": "はっきりして具体的です。直訳は「水が出ない」で、日本語と同じ言い方です。",
+          "next": "n6"
+        },
+        {
+          "quality": "good",
+          "indonesian": "AC-nya dingin, terima kasih. Tapi airnya mati, Pak.",
+          "japanese": "エアコンは冷えています、ありがとうございます。でも水が止まっているんです。",
+          "feedback": "まず直してくれたお礼、それから次の問題。airnya mati は「水が止まっている」のふだんの言い方です。",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Airnya rusak, Pak.",
+          "japanese": "水が壊れています。",
+          "feedback": "rusak は鍵や蛇口など、物が壊れた時に使います。水が出ない時は mati か tidak keluar です。",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "host",
+      "indonesian": "Oh, mungkin pompa airnya mati. Saya cek sekarang, ya. Tunggu sebentar, Kak.",
+      "japanese": "ああ、たぶん水のポンプが止まっているんですね。今見てきます。少しお待ちください。",
+      "audio": "audio/id/scenario/homestay-problem-n6.mp3",
+      "options": [
+        {
+          "phraseId": "pro-13",
+          "quality": "good",
+          "feedback": "最後にお礼を言うと、いい関係で終われます。しばらく泊まるなら大事なことです。",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Baik, Pak. Saya tunggu di kamar, ya.",
+          "japanese": "わかりました。部屋で待っていますね。",
+          "feedback": "落ち着いた、感じのいい返事です。ya で「それでいいですか」と確認しています。",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Cepat, ya, Pak! Saya mau mandi.",
+          "japanese": "早くしてくださいね！シャワーを浴びたいんです。",
+          "feedback": "命令のように聞こえますし、相手はもう対応してくれています。急かすより、お礼のほうがうまくいきます。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "japanese": "解決しました。maaf mengganggu で切り出し、問題をはっきり言い、bisa …? で頼み、最後にお礼。ホストの面子を保ちながら、ちゃんと直してもらえます。rusak は「壊れた」、機械や水が動かない・出ない時は mati です。",
+      "end": true,
+      "options": []
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "con-dakara",
+  "connector": "だから",
+  "gloss": "jadi, makanya",
+  "title": "だから — jadi, makanya",
+  "pattern": "A。だから、B。",
+  "explanation": "だから membuka kalimat baru yang berisi akibat dari kalimat sebelumnya: から yang berdiri sendiri. Di sini posisinya sama seperti “jadi” atau “makanya” dalam bahasa Indonesia, di awal kalimat kedua. Dalam bahasa sopan menjadi ですから, dan banyak orang juga memakai なので di awal kalimat dengan cara yang sama.",
+  "natural": "Untuk menarik kesimpulan dalam percakapan: {明日|あした}は{休|やす}み。だから、{出|で}かけよう！ — Besok libur. Jadi, ayo jalan-jalan!",
+  "stiff": "Kalau diucapkan ketus begitu saja, だから！ artinya “kan sudah kubilang!” dan terdengar kesal. Dalam bahasa sopan, ですから bisa terdengar menggurui; なので lebih halus.",
+  "examples": [
+    {
+      "id": "cx-dakara-1",
+      "japanese": "明日は休みだ。だから、出かけよう！",
+      "furigana": "{明日|あした}は{休|やす}みだ。だから、{出|で}かけよう！",
+      "indonesian": "Besok libur. Jadi, ayo jalan-jalan!",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{休|やす}みだ。",
+          "w": "w-yasumi"
+        },
+        {
+          "t": "だから、"
+        },
+        {
+          "t": "{出|で}かけよう！",
+          "w": "w-dekakeru"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}は{休|やす}みだ。",
+        "answer": "だから",
+        "after": "、{出|で}かけよう！",
+        "options": [
+          "だから",
+          "でも",
+          "けど"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-dakara-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "dakara"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-dakara-2",
+      "japanese": "昨日はあまり寝ていません。だから、眠いです。",
+      "furigana": "{昨日|きのう}はあまり{寝|ね}ていません。だから、{眠|ねむ}いです。",
+      "indonesian": "Semalam saya kurang tidur. Makanya saya mengantuk.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{昨日|きのう}はあまり",
+          "w": "w-kinou"
+        },
+        {
+          "t": "{寝|ね}ていません。",
+          "w": "w-neru"
+        },
+        {
+          "t": "だから、"
+        },
+        {
+          "t": "{眠|ねむ}いです。",
+          "w": "w-nemui"
+        }
+      ],
+      "gap": {
+        "before": "{昨日|きのう}はあまり{寝|ね}ていません。",
+        "answer": "だから",
+        "after": "、{眠|ねむ}いです。",
+        "options": [
+          "だから",
+          "なので",
+          "でも",
+          "それから"
+        ],
+        "ok": [
+          "なので"
+        ],
+        "note": "なので juga bisa, dan sedikit lebih halus."
+      },
+      "audio": "audio/ja/connectors/cx-dakara-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "dakara"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-dakara-3",
+      "japanese": "道が混んでいます。ですから、少し遅れます。",
+      "furigana": "{道|みち}が{混|こ}んでいます。ですから、{少|すこ}し{遅|おく}れます。",
+      "indonesian": "Jalanan macet. Jadi, saya akan sedikit terlambat.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{道|みち}が",
+          "w": "w-michi"
+        },
+        {
+          "t": "{混|こ}んでいます。"
+        },
+        {
+          "t": "ですから、"
+        },
+        {
+          "t": "{少|すこ}し"
+        },
+        {
+          "t": "{遅|おく}れます。",
+          "w": "w-okureru"
+        }
+      ],
+      "gap": {
+        "before": "{道|みち}が{混|こ}んでいます。",
+        "answer": "ですから",
+        "after": "、{少|すこ}し{遅|おく}れます。",
+        "options": [
+          "ですから",
+          "ですけど",
+          "でしたら"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-dakara-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "dakara"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-dakara-4",
+      "japanese": "彼女は猫が好きだ。だから、猫カフェに行った。",
+      "furigana": "{彼女|かのじょ}は{猫|ねこ}が{好|す}きだ。だから、{猫|ねこ}{カフェ|かふぇ}に{行|い}った。",
+      "indonesian": "Dia suka sekali kucing. Jadi, kami pergi ke kafe kucing.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{彼女|かのじょ}は",
+          "w": "w-kanojo"
+        },
+        {
+          "t": "{猫|ねこ}が"
+        },
+        {
+          "t": "{好|す}きだ。",
+          "w": "w-suki"
+        },
+        {
+          "t": "だから、"
+        },
+        {
+          "t": "{猫|ねこ}{カフェ|かふぇ}に"
+        },
+        {
+          "t": "{行|い}った。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{彼女|かのじょ}は{猫|ねこ}が{好|す}きだ。",
+        "answer": "だから",
+        "after": "、{猫|ねこ}{カフェ|かふぇ}に{行|い}った。",
+        "options": [
+          "だから",
+          "でも",
+          "けど"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-dakara-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "dakara"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

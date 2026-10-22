@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ndesu",
+  "connector": "〜んです",
+  "gloss": "menjelaskan: soalnya…",
+  "title": "〜んです — menjelaskan, dan bertanya kenapa",
+  "pattern": "bentuk biasa + んです (santai: 〜んだ, 〜の); kata benda / kata sifat な + なんです",
+  "explanation": "んです menambahkan nuansa menjelaskan, mirip “soalnya…”: ada alasan atau cerita di baliknya. {頭|あたま}が{痛|いた}いんです — (soalnya) kepala saya sakit. Bertanya dengan んです menunjukkan perhatian: どうしたんですか — ada apa? Dalam percakapan santai menjadi んだ, atau の dalam pertanyaan: どうしたの？",
+  "natural": "Untuk menjelaskan kenapa kamu terlambat, kenapa tidak bisa datang, atau apa masalahnya: {電車|でんしゃ}が{遅|おく}れたんです.",
+  "stiff": "Kalau terlalu sering, んです bisa terdengar mendesak atau emosional. Untuk fakta biasa tanpa cerita di baliknya, seperti {学生|がくせい}です, jangan dipakai.",
+  "examples": [
+    {
+      "id": "gx-ndesu-1",
+      "japanese": "すみません、頭が痛いんです。",
+      "furigana": "すみません、{頭|あたま}が{痛|いた}いんです。",
+      "indonesian": "Maaf, kepala saya sakit.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "すみません、"
+        },
+        {
+          "t": "{頭|あたま}が",
+          "w": "w-atama"
+        },
+        {
+          "t": "{痛|いた}いんです。",
+          "w": "w-itai"
+        }
+      ],
+      "gap": {
+        "before": "すみません、{頭|あたま}が{痛|いた}い",
+        "answer": "んです",
+        "after": "。",
+        "options": [
+          "んです",
+          "です",
+          "でした"
+        ],
+        "ok": [
+          "です"
+        ],
+        "note": "痛いです juga benar. んです menambahkan “soalnya”: alasan kamu mengatakannya.",
+        "why": "Menjelaskan: んです."
+      },
+      "audio": "audio/ja/grammar/gx-ndesu-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "ndesu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ndesu-2",
+      "japanese": "どうしたんですか。",
+      "furigana": "どうしたんですか。",
+      "indonesian": "Ada apa?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "どう",
+          "w": "w-dou"
+        },
+        {
+          "t": "したんですか。",
+          "w": "w-suru"
+        }
+      ],
+      "gap": {
+        "before": "どうした",
+        "answer": "んですか",
+        "after": "。",
+        "options": [
+          "んですか",
+          "ですか",
+          "ますか"
+        ],
+        "why": "Menanyakan apa yang ada di baliknya: んですか."
+      },
+      "audio": "audio/ja/grammar/gx-ndesu-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "ndesu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ndesu-3",
+      "japanese": "電車が遅れたんです。",
+      "furigana": "{電車|でんしゃ}が{遅|おく}れたんです。",
+      "indonesian": "Soalnya keretanya terlambat.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{電車|でんしゃ}が",
+          "w": "w-densha"
+        },
+        {
+          "t": "{遅|おく}れたんです。",
+          "w": "w-okureru"
+        }
+      ],
+      "gap": {
+        "before": "{電車|でんしゃ}が{遅|おく}れた",
+        "answer": "んです",
+        "after": "。",
+        "options": [
+          "んです",
+          "です",
+          "ます"
+        ],
+        "why": "Memberi alasan: んです."
+      },
+      "audio": "audio/ja/grammar/gx-ndesu-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "ndesu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ndesu-4",
+      "japanese": "明日、休みなんだ。",
+      "furigana": "{明日|あした}、{休|やす}みなんだ。",
+      "indonesian": "Sebenarnya besok aku libur.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{明日|あした}、",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{休|やす}みなんだ。",
+          "w": "w-yasumi"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}、{休|やす}み",
+        "answer": "なんだ",
+        "after": "。",
+        "options": [
+          "なんだ",
+          "んだ",
+          "だ"
+        ],
+        "why": "Kata benda memakai な sebelum んだ: 休みなんだ."
+      },
+      "audio": "audio/ja/grammar/gx-ndesu-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "ndesu"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

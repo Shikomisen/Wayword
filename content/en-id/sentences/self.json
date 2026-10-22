@@ -1,0 +1,820 @@
+{
+  "schemaVersion": 1,
+  "id": "sentences-self",
+  "title": "Talking About Yourself",
+  "description": "Longer sentences about your life: where you have lived, your family and work, what you like, and your plans. Watch how time words like sudah, pernah, dulu and waktu do the work of English tenses.",
+  "items": [
+    {
+      "id": "s-42",
+      "indonesian": "Saya sudah tinggal di sini selama dua tahun.",
+      "english": "I've been living here for two years.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di sini ",
+          "w": "w-di"
+        },
+        {
+          "t": "selama ",
+          "w": "w-selama"
+        },
+        {
+          "t": "dua tahun.",
+          "w": "w-tahun"
+        }
+      ],
+      "pitfallNote": "English needs 'have been living'; Indonesian just adds sudah. Selama is 'for' a length of time.",
+      "audio": "audio/id/sentences/s-42.mp3",
+      "tags": [
+        "life",
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-43",
+      "indonesian": "Saya belum pernah ke Bali.",
+      "english": "I've never been to Bali.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "belum pernah ",
+          "w": "w-pernah"
+        },
+        {
+          "t": "ke Bali.",
+          "w": "w-ke"
+        }
+      ],
+      "registerNotes": "Belum pernah (not yet ever) is the usual way to say this, and it leaves the door open. Tidak pernah sounds final, as if you never mean to go.",
+      "audio": "audio/id/sentences/s-43.mp3",
+      "tags": [
+        "experiences",
+        "travel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-44",
+      "indonesian": "Waktu kecil, saya tinggal di Wellington.",
+      "english": "When I was little, I lived in Wellington.",
+      "chunks": [
+        {
+          "t": "Waktu kecil, ",
+          "w": "w-kecil"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di Wellington.",
+          "w": "w-di"
+        }
+      ],
+      "registerNotes": "Waktu kecil (when small) is the everyday way to say 'as a child'. Waktu sets the time, so tinggal stays as it is.",
+      "audio": "audio/id/sentences/s-44.mp3",
+      "tags": [
+        "life",
+        "past"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-45",
+      "indonesian": "Saya guru bahasa Inggris di sekolah dasar.",
+      "english": "I'm an English teacher at a primary school.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "guru ",
+          "w": "w-guru"
+        },
+        {
+          "t": "bahasa Inggris "
+        },
+        {
+          "t": "di sekolah dasar.",
+          "w": "w-sekolah"
+        }
+      ],
+      "pitfallNote": "No 'am' and no 'a': Saya guru is 'I'm a teacher'. What you teach comes after: guru bahasa Inggris.",
+      "audio": "audio/id/sentences/s-45.mp3",
+      "tags": [
+        "work"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-46",
+      "indonesian": "Dulu saya kerja di bank, tapi sekarang saya punya usaha sendiri.",
+      "english": "I used to work in a bank, but now I run my own business.",
+      "chunks": [
+        {
+          "t": "Dulu ",
+          "w": "w-dulu"
+        },
+        {
+          "t": "saya kerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "di bank, ",
+          "w": "w-bank"
+        },
+        {
+          "t": "tapi sekarang ",
+          "w": "w-sekarang"
+        },
+        {
+          "t": "saya punya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "usaha sendiri."
+        }
+      ],
+      "registerNotes": "Dulu at the start means 'in the past, used to', and sekarang brings you back to now. Punya usaha sendiri (have your own business) is how people say they're self-employed.",
+      "audio": "audio/id/sentences/s-46.mp3",
+      "tags": [
+        "work",
+        "past"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-47",
+      "indonesian": "Saya sudah menikah, tapi belum punya anak.",
+      "english": "I'm married, but we don't have children yet.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah menikah, ",
+          "w": "w-menikah"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "belum punya ",
+          "w": "w-belum"
+        },
+        {
+          "t": "anak.",
+          "w": "w-anak"
+        }
+      ],
+      "cultureNote": "Marriage and children come up early in conversation. Belum (not yet) is the gentle, usual answer: it doesn't sound final.",
+      "audio": "audio/id/sentences/s-47.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-48",
+      "indonesian": "Suami saya orang Indonesia, dari Medan.",
+      "english": "My husband's Indonesian, from Medan.",
+      "chunks": [
+        {
+          "t": "Suami ",
+          "w": "w-suami"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "orang Indonesia, ",
+          "w": "w-orang"
+        },
+        {
+          "t": "dari Medan.",
+          "w": "w-dari"
+        }
+      ],
+      "registerNotes": "Orang plus a country gives a nationality: orang Indonesia, orang Selandia Baru. Dari plus a city says where in the country.",
+      "audio": "audio/id/sentences/s-48.mp3",
+      "tags": [
+        "family",
+        "nationality"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-49",
+      "indonesian": "Saya anak bungsu dari tiga bersaudara.",
+      "english": "I'm the youngest of three.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "anak bungsu ",
+          "w": "w-anak"
+        },
+        {
+          "t": "dari ",
+          "w": "w-dari"
+        },
+        {
+          "t": "tiga bersaudara."
+        }
+      ],
+      "cultureNote": "People often describe themselves by birth order: anak sulung (eldest), anak tengah (middle), anak bungsu (youngest). Expect to be asked where you come.",
+      "audio": "audio/id/sentences/s-49.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-50",
+      "indonesian": "Kakak saya tinggal di Australia, tapi orang tua saya masih di Auckland.",
+      "english": "My older brother lives in Australia, but my parents are still in Auckland.",
+      "chunks": [
+        {
+          "t": "Kakak saya ",
+          "w": "w-kakak"
+        },
+        {
+          "t": "tinggal di Australia, ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "orang tua saya ",
+          "w": "w-orang"
+        },
+        {
+          "t": "masih di Auckland.",
+          "w": "w-di"
+        }
+      ],
+      "pitfallNote": "Orang tua (literally 'old people') means parents. Masih is 'still', and there's no 'are': masih di Auckland.",
+      "audio": "audio/id/sentences/s-50.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-51",
+      "indonesian": "Biasanya saya bangun jam enam dan langsung mandi.",
+      "english": "I usually get up at six and have a shower straight away.",
+      "chunks": [
+        {
+          "t": "Biasanya ",
+          "w": "w-biasanya"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "bangun ",
+          "w": "w-bangun"
+        },
+        {
+          "t": "jam enam ",
+          "w": "w-jam"
+        },
+        {
+          "t": "dan langsung ",
+          "w": "w-dan"
+        },
+        {
+          "t": "mandi.",
+          "w": "w-mandi"
+        }
+      ],
+      "registerNotes": "Biasanya at the start sets the frame for everything after it. Langsung is 'straight away'.",
+      "cultureNote": "Many Indonesians mandi twice a day, in the morning and the late afternoon, to stay fresh in the heat.",
+      "audio": "audio/id/sentences/s-51.mp3",
+      "tags": [
+        "daily life",
+        "routine"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-52",
+      "indonesian": "Saya sering lupa nama orang.",
+      "english": "I often forget people's names.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sering ",
+          "w": "w-sering"
+        },
+        {
+          "t": "lupa "
+        },
+        {
+          "t": "nama orang.",
+          "w": "w-nama"
+        }
+      ],
+      "registerNotes": "Sering (often) goes before the verb. A kind way to ask for a name again: Maaf, saya sering lupa nama orang.",
+      "audio": "audio/id/sentences/s-52.mp3",
+      "tags": [
+        "habits"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-53",
+      "indonesian": "Hobi saya mendaki gunung dan berenang di laut.",
+      "english": "My hobbies are hiking and swimming in the sea.",
+      "chunks": [
+        {
+          "t": "Hobi saya ",
+          "w": "w-hobi"
+        },
+        {
+          "t": "mendaki gunung ",
+          "w": "w-gunung"
+        },
+        {
+          "t": "dan berenang ",
+          "w": "w-berenang"
+        },
+        {
+          "t": "di laut.",
+          "w": "w-laut"
+        }
+      ],
+      "pitfallNote": "No 'are' and no '-ing': Hobi saya plus the verbs is the whole sentence.",
+      "audio": "audio/id/sentences/s-53.mp3",
+      "tags": [
+        "free time",
+        "hobbies"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-54",
+      "indonesian": "Saya tertarik dengan budaya Jawa.",
+      "english": "I'm interested in Javanese culture.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tertarik ",
+          "w": "w-tertarik"
+        },
+        {
+          "t": "dengan budaya ",
+          "w": "w-budaya"
+        },
+        {
+          "t": "Jawa."
+        }
+      ],
+      "pitfallNote": "Tertarik takes dengan or pada, not di: tertarik dengan, interested in.",
+      "audio": "audio/id/sentences/s-54.mp3",
+      "tags": [
+        "interests",
+        "culture"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-55",
+      "register": "casual",
+      "indonesian": "Aku nggak terlalu suka pedas, sih.",
+      "english": "I'm not really into spicy food, to be honest.",
+      "chunks": [
+        {
+          "t": "Aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "nggak terlalu "
+        },
+        {
+          "t": "suka ",
+          "w": "w-suka"
+        },
+        {
+          "t": "pedas, ",
+          "w": "w-pedas"
+        },
+        {
+          "t": "sih."
+        }
+      ],
+      "registerNotes": "Casual, to friends. Sih on the end softens the admission. To someone older: Saya kurang suka pedas.",
+      "audio": "audio/id/sentences/s-55.mp3",
+      "tags": [
+        "casual",
+        "food"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-56",
+      "indonesian": "Saya belajar bahasa Indonesia supaya bisa mengobrol dengan keluarga pacar saya.",
+      "english": "I'm learning Indonesian so I can chat with my partner's family.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "belajar bahasa Indonesia ",
+          "w": "w-belajar"
+        },
+        {
+          "t": "supaya bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "mengobrol ",
+          "w": "w-mengobrol"
+        },
+        {
+          "t": "dengan keluarga ",
+          "w": "w-keluarga"
+        },
+        {
+          "t": "pacar saya.",
+          "w": "w-pacar"
+        }
+      ],
+      "registerNotes": "Supaya bisa is 'so that (I) can'.",
+      "pitfallNote": "Each owner follows the thing it owns, so read keluarga pacar saya backwards: my partner's family.",
+      "audio": "audio/id/sentences/s-56.mp3",
+      "tags": [
+        "language",
+        "family"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-57",
+      "indonesian": "Waktu pertama kali datang ke sini, saya tidak bisa bahasa Indonesia sama sekali.",
+      "english": "When I first came here, I couldn't speak any Indonesian at all.",
+      "chunks": [
+        {
+          "t": "Waktu pertama kali "
+        },
+        {
+          "t": "datang ke sini, ",
+          "w": "w-datang"
+        },
+        {
+          "t": "saya tidak bisa ",
+          "w": "w-saya"
+        },
+        {
+          "t": "bahasa Indonesia "
+        },
+        {
+          "t": "sama sekali."
+        }
+      ],
+      "registerNotes": "Bisa alone covers 'can speak' a language: Saya bisa bahasa Indonesia. Tidak … sama sekali is 'not … at all'.",
+      "audio": "audio/id/sentences/s-57.mp3",
+      "tags": [
+        "language",
+        "past"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "s-58",
+      "indonesian": "Sejak pindah ke Jakarta, saya jarang masak sendiri.",
+      "english": "Since moving to Jakarta, I hardly ever cook for myself.",
+      "chunks": [
+        {
+          "t": "Sejak ",
+          "w": "w-sejak"
+        },
+        {
+          "t": "pindah ke Jakarta, ",
+          "w": "w-ke"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "jarang ",
+          "w": "w-jarang"
+        },
+        {
+          "t": "masak ",
+          "w": "w-masak"
+        },
+        {
+          "t": "sendiri."
+        }
+      ],
+      "registerNotes": "Jarang (rarely) goes before the verb, like sering. Sendiri after a verb is 'yourself': masak sendiri, cook for yourself.",
+      "audio": "audio/id/sentences/s-58.mp3",
+      "tags": [
+        "daily life",
+        "habits"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-59",
+      "indonesian": "Saya pernah mencoba durian, tapi tidak suka baunya.",
+      "english": "I've tried durian, but I didn't like the smell.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "pernah ",
+          "w": "w-pernah"
+        },
+        {
+          "t": "mencoba durian, ",
+          "w": "w-mencoba"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "tidak suka ",
+          "w": "w-suka"
+        },
+        {
+          "t": "baunya."
+        }
+      ],
+      "registerNotes": "Pernah says you've done something at some point. Baunya is 'its smell': the -nya stands for the durian.",
+      "audio": "audio/id/sentences/s-59.mp3",
+      "tags": [
+        "experiences",
+        "food"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-60",
+      "indonesian": "Saya baru pulang dari liburan di Lombok.",
+      "english": "I've just got back from a holiday in Lombok.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "baru pulang ",
+          "w": "w-pulang"
+        },
+        {
+          "t": "dari liburan ",
+          "w": "w-liburan"
+        },
+        {
+          "t": "di Lombok.",
+          "w": "w-di"
+        }
+      ],
+      "pitfallNote": "Baru before a verb is 'just': baru pulang, just got back. After a noun it's 'new': rumah baru.",
+      "audio": "audio/id/sentences/s-60.mp3",
+      "tags": [
+        "travel",
+        "experiences"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-61",
+      "register": "casual",
+      "indonesian": "Aku kangen banget sama keluargaku.",
+      "english": "I really miss my family.",
+      "chunks": [
+        {
+          "t": "Aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "kangen banget ",
+          "w": "w-kangen"
+        },
+        {
+          "t": "sama "
+        },
+        {
+          "t": "keluargaku.",
+          "w": "w-keluarga"
+        }
+      ],
+      "registerNotes": "Casual, to a friend. Sama is the spoken 'with' after a feeling, and -ku is 'my'. To someone older: Saya kangen sekali dengan keluarga saya.",
+      "audio": "audio/id/sentences/s-61.mp3",
+      "tags": [
+        "casual",
+        "feelings"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-62",
+      "indonesian": "Rencananya saya mau cuti dua minggu bulan depan.",
+      "english": "I'm planning to take two weeks off next month.",
+      "chunks": [
+        {
+          "t": "Rencananya "
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau cuti ",
+          "w": "w-cuti"
+        },
+        {
+          "t": "dua minggu ",
+          "w": "w-minggu"
+        },
+        {
+          "t": "bulan depan.",
+          "w": "w-bulan"
+        }
+      ],
+      "registerNotes": "Rencananya (the plan is) is a handy way into plans that are not fixed yet. Cuti is leave you take from work; libur is a day off for everyone.",
+      "audio": "audio/id/sentences/s-62.mp3",
+      "tags": [
+        "plans",
+        "work"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-63",
+      "indonesian": "Kalau ada waktu, saya ingin belajar masak makanan Indonesia.",
+      "english": "If I get the time, I'd like to learn to cook Indonesian food.",
+      "chunks": [
+        {
+          "t": "Kalau ada waktu, ",
+          "w": "w-ada"
+        },
+        {
+          "t": "saya ingin ",
+          "w": "w-saya"
+        },
+        {
+          "t": "belajar ",
+          "w": "w-belajar"
+        },
+        {
+          "t": "masak ",
+          "w": "w-masak"
+        },
+        {
+          "t": "makanan Indonesia."
+        }
+      ],
+      "registerNotes": "Ingin is a slightly more formal 'would like' than mau, good for wishes and hopes. Kalau ada waktu is literally 'if there's time'.",
+      "audio": "audio/id/sentences/s-63.mp3",
+      "tags": [
+        "plans",
+        "food"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-64",
+      "indonesian": "Saya agak gugup kalau harus bicara di depan banyak orang.",
+      "english": "I get a bit nervous when I have to speak in front of a lot of people.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "agak gugup ",
+          "w": "w-gugup"
+        },
+        {
+          "t": "kalau harus "
+        },
+        {
+          "t": "bicara ",
+          "w": "w-bicara"
+        },
+        {
+          "t": "di depan ",
+          "w": "w-depan"
+        },
+        {
+          "t": "banyak orang.",
+          "w": "w-banyak"
+        }
+      ],
+      "registerNotes": "Kalau here is 'whenever', not 'if'. Agak (a bit) softens a feeling.",
+      "audio": "audio/id/sentences/s-64.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-65",
+      "register": "casual",
+      "indonesian": "Aku lagi belajar naik motor, tapi masih takut.",
+      "english": "I'm learning to ride a scooter, but I'm still scared.",
+      "chunks": [
+        {
+          "t": "Aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "lagi belajar ",
+          "w": "w-belajar"
+        },
+        {
+          "t": "naik motor, ",
+          "w": "w-motor"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "masih takut.",
+          "w": "w-takut"
+        }
+      ],
+      "registerNotes": "Casual: lagi before a verb is '-ing', the spoken sedang. To someone older: Saya sedang belajar naik motor, tapi masih takut.",
+      "audio": "audio/id/sentences/s-65.mp3",
+      "tags": [
+        "casual",
+        "feelings"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-66",
+      "indonesian": "Saya bangga sekali waktu anak saya lulus kuliah.",
+      "english": "I was so proud when my son graduated from university.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "bangga sekali ",
+          "w": "w-bangga"
+        },
+        {
+          "t": "waktu "
+        },
+        {
+          "t": "anak saya ",
+          "w": "w-anak"
+        },
+        {
+          "t": "lulus kuliah.",
+          "w": "w-kuliah"
+        }
+      ],
+      "registerNotes": "Waktu (when) puts the whole sentence in the past, so nothing else needs to change. Lulus is to pass or to graduate.",
+      "audio": "audio/id/sentences/s-66.mp3",
+      "tags": [
+        "family",
+        "feelings"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

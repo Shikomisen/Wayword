@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-possession",
+  "connector": "rumah saya",
+  "gloss": "私の、あなたの、彼・彼女の",
+  "title": "rumah saya — 「〜の」（持ち主）",
+  "pattern": "もの + 持ち主: rumah saya · rumahnya · punya siapa?",
+  "explanation": "だれのものかを言う時は、持ち主をものの後に置きます。日本語の「私の家」とは逆で、rumah saya（直訳「家 私」）が「私の家」、mobil teman saya が「（私の）友達の車」です。「の」にあたる言葉はなく、並べるだけ。年上の女性に nama Ibu と言えば「あなたのお名前」になります。「彼の・彼女の」は、dia の代わりに後ろに -nya を付けるのがふつうです：namanya（彼の名前、彼女の名前）。「だれの？」は punya siapa?：Ini punya siapa?（これはだれのですか）",
+  "natural": "友達同士なら、後ろに付ける -ku と -mu がくだけた「僕の」「君の」です：rumahku（僕の家）、namamu（君の名前）。Namanya siapa? は、相手自身の名前を聞く、親しみがあってていねいな聞き方でもあります。",
+  "stiff": "日本語の順番で saya rumah と言っても「私の家」にはなりません。「友達の車」は mobil teman saya で、持ち主が最後です。-ku・-mu は友達だけに。恋人のお母さんに rumahmu はなれなれしすぎるので、rumah Ibu と言いましょう。",
+  "examples": [
+    {
+      "id": "gx-possession-1",
+      "indonesian": "Ini kamar saya.",
+      "japanese": "ここが私の部屋です。",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "kamar ",
+          "w": "w-kamar"
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "Ini ",
+        "answer": "kamar saya",
+        "after": ".",
+        "options": [
+          "kamar saya",
+          "saya kamar",
+          "kamarnya"
+        ],
+        "why": "持ち主はものの後：kamar saya で「私の部屋」。"
+      },
+      "audio": "audio/id/grammar/gx-possession-1.mp3",
+      "tags": [
+        "文法",
+        "持ち主"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-possession-2",
+      "indonesian": "Rumahnya di mana?",
+      "japanese": "彼女の家はどこですか。",
+      "chunks": [
+        {
+          "t": "Rumahnya ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "di mana?",
+          "w": "w-di-mana"
+        }
+      ],
+      "gap": {
+        "before": "Rumah",
+        "answer": "nya",
+        "after": " di mana?",
+        "options": [
+          "nya",
+          "ku",
+          "mu"
+        ],
+        "why": "後ろに付ける -nya は「彼の・彼女の」：rumahnya で「彼女の家」。"
+      },
+      "audio": "audio/id/grammar/gx-possession-2.mp3",
+      "tags": [
+        "文法",
+        "持ち主"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-possession-3",
+      "indonesian": "Itu mobil teman saya.",
+      "japanese": "あれは友達の車です。",
+      "chunks": [
+        {
+          "t": "Itu ",
+          "w": "w-itu"
+        },
+        {
+          "t": "mobil ",
+          "w": "w-mobil"
+        },
+        {
+          "t": "teman ",
+          "w": "w-teman"
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "Itu ",
+        "answer": "mobil teman saya",
+        "after": ".",
+        "options": [
+          "mobil teman saya",
+          "teman saya mobil",
+          "saya teman mobil"
+        ],
+        "why": "いくつ続いても持ち主は最後。mobil teman saya は「私の友達の車」をちょうど逆にした順番です。"
+      },
+      "audio": "audio/id/grammar/gx-possession-3.mp3",
+      "tags": [
+        "文法",
+        "持ち主"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-possession-4",
+      "indonesian": "Tas ini punya siapa?",
+      "japanese": "このかばんはだれのですか。",
+      "chunks": [
+        {
+          "t": "Tas ",
+          "w": "w-tas"
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "punya "
+        },
+        {
+          "t": "siapa?",
+          "w": "w-siapa"
+        }
+      ],
+      "gap": {
+        "before": "Tas ini ",
+        "answer": "punya siapa",
+        "after": "?",
+        "options": [
+          "punya siapa",
+          "siapa punya",
+          "ada siapa"
+        ],
+        "why": "「だれの」は punya siapa（だれが持っている）で、ものの後に置きます。"
+      },
+      "audio": "audio/id/grammar/gx-possession-4.mp3",
+      "tags": [
+        "文法",
+        "持ち主"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-to-and",
+  "connector": "と",
+  "gloss": "dan; dengan",
+  "title": "と — dan, dengan",
+  "pattern": "A と B / orang と kata kerja",
+  "explanation": "と menggabungkan kata benda dalam satu daftar: パンと{卵|たまご} — roti dan telur. と juga berarti “dengan” seseorang: {友達|ともだち}と{映画|えいが}を{見|み}ます — saya menonton film dengan teman. Perhatikan urutannya: “dengan teman” menjadi {友達|ともだち}と, orangnya dulu. と hanya menggabungkan kata benda, tidak pernah kalimat utuh.",
+  "natural": "Untuk daftar yang belum lengkap (“…dan lain-lain”), pakai や: パンや{卵|たまご} — roti, telur, dan sebagainya.",
+  "stiff": "Untuk menggabungkan kegiatan, と salah: pakai bentuk て (pelajaran tingkat Dasar). {食|た}べて{寝|ね}る artinya “makan lalu tidur”; {食|た}べると{寝|ね}る artinya “setiap kali makan, saya tidur”. “Dan” dalam bahasa Indonesia bisa menggabungkan apa saja; と tidak.",
+  "examples": [
+    {
+      "id": "gx-to-and-1",
+      "japanese": "パンと卵を買いました。",
+      "furigana": "{パン|ぱん}と{卵|たまご}を{買|か}いました。",
+      "romaji": "pan to tamago o kaimashita",
+      "indonesian": "Saya membeli roti dan telur.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{パン|ぱん}と",
+          "w": "w-pan"
+        },
+        {
+          "t": "{卵|たまご}を",
+          "w": "w-tamago"
+        },
+        {
+          "t": "{買|か}いました。",
+          "w": "w-kau"
+        }
+      ],
+      "gap": {
+        "before": "{パン|ぱん}",
+        "answer": "と",
+        "after": "{卵|たまご}を{買|か}いました。",
+        "options": [
+          "と",
+          "も",
+          "の"
+        ],
+        "why": "Daftar benda: と."
+      },
+      "audio": "audio/ja/grammar/gx-to-and-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "to-and"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-to-and-2",
+      "japanese": "週末、家族と出かけます。",
+      "furigana": "{週末|しゅうまつ}、{家族|かぞく}と{出|で}かけます。",
+      "romaji": "shūmatsu, kazoku to dekakemasu",
+      "indonesian": "Akhir pekan ini saya pergi jalan-jalan dengan keluarga.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{週末|しゅうまつ}、",
+          "w": "w-shuumatsu"
+        },
+        {
+          "t": "{家族|かぞく}と",
+          "w": "w-kazoku"
+        },
+        {
+          "t": "{出|で}かけます。",
+          "w": "w-dekakeru"
+        }
+      ],
+      "gap": {
+        "before": "{週末|しゅうまつ}、{家族|かぞく}",
+        "answer": "と",
+        "after": "{出|で}かけます。",
+        "options": [
+          "と",
+          "に",
+          "を"
+        ],
+        "why": "Dengan keluarga: 家族と."
+      },
+      "audio": "audio/ja/grammar/gx-to-and-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "to-and"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-to-and-3",
+      "japanese": "誰と行くの？",
+      "furigana": "{誰|だれ}と{行|い}くの？",
+      "romaji": "dare to iku no?",
+      "indonesian": "Kamu pergi dengan siapa?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{誰|だれ}と",
+          "w": "w-dare"
+        },
+        {
+          "t": "{行|い}くの？",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{誰|だれ}",
+        "answer": "と",
+        "after": "{行|い}くの？",
+        "options": [
+          "と",
+          "が",
+          "を"
+        ],
+        "why": "Dengan siapa: 誰と."
+      },
+      "audio": "audio/ja/grammar/gx-to-and-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "to-and"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-to-and-4",
+      "japanese": "友達と一緒に料理を作ります。",
+      "furigana": "{友達|ともだち}と{一緒|いっしょ}に{料理|りょうり}を{作|つく}ります。",
+      "romaji": "tomodachi to issho ni ryōri o tsukurimasu",
+      "indonesian": "Saya memasak bersama teman.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{友達|ともだち}と",
+          "w": "w-tomodachi"
+        },
+        {
+          "t": "{一緒|いっしょ}に",
+          "w": "w-issho"
+        },
+        {
+          "t": "{料理|りょうり}を",
+          "w": "w-ryouri"
+        },
+        {
+          "t": "{作|つく}ります。",
+          "w": "w-tsukuru"
+        }
+      ],
+      "gap": {
+        "before": "{友達|ともだち}",
+        "answer": "と",
+        "after": "{一緒|いっしょ}に{料理|りょうり}を{作|つく}ります。",
+        "options": [
+          "と",
+          "に",
+          "の"
+        ],
+        "why": "Dengan seseorang: と, sering bersama 一緒に (bersama-sama)."
+      },
+      "audio": "audio/ja/grammar/gx-to-and-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "to-and"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

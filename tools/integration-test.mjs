@@ -1218,11 +1218,61 @@ check('…and Indonesian into Japanese', /薬局/.test(mtIdJa.text), mtIdJa.text
 check('Indonesian output spells di mana, ke mana and dari mana apart',
   translatorMod.tidy('Dimana toiletnya? Kamu mau kemana? Darimana?', 'id') === 'Di mana toiletnya? Kamu mau ke mana? Dari mana?');
 
+/* ---------- 16. the Indonesian courses ---------- */
+
+console.log('\n16. Indonesian, both ways — and the courses built from another one');
+
+// en-id is written new; ja-id, id-en and id-ja keep their original's target-language text exactly.
+const ORIGINAL = { 'ja-id': 'en-id', 'id-en': 'ja-en', 'id-ja': 'en-ja' };
+const targets = {};
+for (const id of ['en-id', 'ja-id', 'id-en', 'id-ja']) {
+  await course.setCourse(id);
+  const c = await loadContent();
+  const levels = c.levels.map((l) => l.id).join(',');
+  check(`${id}: three levels, with words, phrases and lessons at each`,
+    levels === 'first-steps,basic,intermediate' && c.levels.every((l) =>
+      [...c.categories, ...c.decks, ...c.lessons].some((d) => d.level === l.id && d.items.length)), levels);
+  targets[id] = new Map([...c.phrases.values()].map((p) => [p.id, p.target]));
+  const set = await quiz.buildPlacementSet();
+  check(`${id}: placement samples First steps and Basic, two cards a category`,
+    set.length > 0 && set.every((x) => ['first-steps', 'basic'].includes(c.byCategory.get(x.categoryId)?.level ?? c.bySet.get(x.categoryId)?.level)),
+    `${set.length} cards`);
+  await quiz.applyPlacement(set, Object.fromEntries(set.map((x) => [x.id, quiz.ANSWERS.UNKNOWN])));
+  const starters = levelsMod.startersIn(c, 'first-steps').map((d) => d.id).sort().join(',');
+  check(`${id}: knowing nothing starts at First steps, with its starters`,
+    (await deck.getLevel()) === 'first-steps' && (await deck.getSettings()).activeCategories.slice().sort().join(',') === starters, starters);
+  const q = await deck.queue();
+  check(`${id}: a review queue from its own content`, q.length > 0 && q.every((card) => c.phrases.has(card.id)), `${q.length} cards`);
+  await deck.grade(q[0].id, srs.GRADE.GOOD);
+  check(`${id}: grading counts in its own storage`, (await deck.todayStats()).reviews === 1 &&
+    [...mem.keys()].some((k) => k.startsWith(`ww-${id}:srs:`)));
+  check(`${id}: the translator, both ways`, c.features.translator && Boolean(translatorMod.directionsFor(c).say && translatorMod.directionsFor(c).read),
+    JSON.stringify(translatorMod.directionsFor(c)));
+}
+const jaTargets = await (async () => { await course.setCourse('en-ja'); return new Map([...(await loadContent()).phrases.values()].map((p) => [p.id, p.target])); })();
+const enTargets = await (async () => { await course.setCourse('ja-en'); return new Map([...(await loadContent()).phrases.values()].map((p) => [p.id, p.target])); })();
+const originals = { 'en-id': targets['en-id'], 'ja-en': enTargets, 'en-ja': jaTargets };
+for (const [id, from] of Object.entries(ORIGINAL)) {
+  const differ = [...targets[id]].filter(([k, text]) => originals[from].has(k) && originals[from].get(k) !== text);
+  const shared = [...targets[id].keys()].filter((k) => originals[from].has(k)).length;
+  check(`${id} keeps ${from}'s target-language text exactly`, differ.length === 0 && shared > targets[id].size * 0.9,
+    `${shared} of ${targets[id].size} shared${differ.length ? `; ${differ[0][0]} differs` : ''}`);
+}
+await course.setCourse('id-ja');
+const idJa = await loadContent();
+const idHira = [...idJa.characters.values()].find((x) => x.script === 'hiragana');
+const idKanji = [...idJa.characters.values()].find((x) => x.script === 'kanji');
+check('id-ja: a kana card reads in Indonesian, a kanji has its Indonesian meaning',
+  idHira.meaning === `dibaca “${idHira.romaji}”` && Boolean(idKanji.meaning) && idKanji.meaning === idKanji.indonesian, `${idHira.meaning} · ${idKanji.character} ${idKanji.meaning}`);
+check('id-ja: no Paste a message, since the dictionary has no Indonesian', !idJa.features.dictionary);
+check('ja-id and id-ja translate through English', translatorMod.directionsFor(idJa).say?.join() === 'id-en,en-ja');
+await course.setCourse('en-ja');
+
 /* ---------- result ---------- */
 
 console.log(
   failures
     ? `\n✗ ${failures} of ${checks} integration checks failed\n`
-    : `\n✓ all ${checks} integration checks passed — browse → quiz → study → review → scenarios → characters loop is intact, in both courses\n`
+    : `\n✓ all ${checks} integration checks passed — browse → quiz → study → review → scenarios → characters loop is intact, in every course\n`
 );
 process.exit(failures ? 1 : 0);

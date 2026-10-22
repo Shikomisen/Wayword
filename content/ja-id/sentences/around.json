@@ -1,0 +1,749 @@
+{
+  "schemaVersion": 1,
+  "id": "sentences-around",
+  "title": "移動と用事",
+  "description": "移動や用事のための文。道を聞く、乗り物に乗る、料理を注文する、買い物をする、部屋のことを伝える。",
+  "items": [
+    {
+      "id": "s-17",
+      "indonesian": "Saya mau ke pasar.",
+      "japanese": "市場に行きます。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "ke pasar.",
+          "w": "w-pasar"
+        }
+      ],
+      "pitfallNote": "「行く」にあたる動詞は要りません：mau ke で「（場所）に行く」。ke は向かう先の「〜へ」、di はいる場所の「〜に・で」です。",
+      "audio": "audio/id/sentences/s-17.mp3",
+      "tags": [
+        "用事",
+        "場所"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-18",
+      "indonesian": "Stasiunnya jauh dari sini?",
+      "japanese": "駅はここから遠いですか？",
+      "chunks": [
+        {
+          "t": "Stasiunnya ",
+          "w": "w-stasiun"
+        },
+        {
+          "t": "jauh ",
+          "w": "w-jauh"
+        },
+        {
+          "t": "dari sini?",
+          "w": "w-dari"
+        }
+      ],
+      "registerNotes": "語尾を上げるだけで質問になります。stasiun に付いた -nya は、お互いにわかっている「その駅」を指します。",
+      "audio": "audio/id/sentences/s-18.mp3",
+      "tags": [
+        "道案内",
+        "質問"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-19",
+      "indonesian": "Permisi, saya cari apotek.",
+      "japanese": "すみません、薬局を探しているんですが。",
+      "chunks": [
+        {
+          "t": "Permisi, "
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "cari ",
+          "w": "w-cari"
+        },
+        {
+          "t": "apotek.",
+          "w": "w-apotek"
+        }
+      ],
+      "registerNotes": "探している物を言うのが、道を聞くいちばん簡単な方法。先に Permisi と言うと、日本語の「すみません」のようにていねいに声をかけられます。",
+      "audio": "audio/id/sentences/s-19.mp3",
+      "tags": [
+        "道案内",
+        "用事"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-20",
+      "indonesian": "Berapa lama ke bandara?",
+      "japanese": "空港までどのくらいかかりますか？",
+      "chunks": [
+        {
+          "t": "Berapa ",
+          "w": "w-berapa"
+        },
+        {
+          "t": "lama ",
+          "w": "w-lama"
+        },
+        {
+          "t": "ke bandara?",
+          "w": "w-bandara"
+        }
+      ],
+      "registerNotes": "Berapa lama で「どのくらい（の時間）」。どこから行くのかはっきりしない時は dari sini（ここから）を付けます。",
+      "audio": "audio/id/sentences/s-20.mp3",
+      "tags": [
+        "交通",
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-21",
+      "indonesian": "Dari sini ke stasiun naik apa?",
+      "japanese": "ここから駅まで、何で行けばいいですか？",
+      "chunks": [
+        {
+          "t": "Dari sini ",
+          "w": "w-dari"
+        },
+        {
+          "t": "ke stasiun ",
+          "w": "w-stasiun"
+        },
+        {
+          "t": "naik apa?",
+          "w": "w-apa"
+        }
+      ],
+      "registerNotes": "dari … ke … は「〜から〜まで」。Naik apa?（何に乗る？）で交通手段を聞きます。答えは naik bus（バスで）、naik ojek（オジェックで）、jalan kaki（歩いて）など。",
+      "audio": "audio/id/sentences/s-21.mp3",
+      "tags": [
+        "交通",
+        "道案内"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-22",
+      "indonesian": "Haltenya di seberang jalan.",
+      "japanese": "バス停は道の向こう側です。",
+      "chunks": [
+        {
+          "t": "Haltenya ",
+          "w": "w-halte"
+        },
+        {
+          "t": "di seberang ",
+          "w": "w-di"
+        },
+        {
+          "t": "jalan.",
+          "w": "w-jalan"
+        }
+      ],
+      "registerNotes": "di seberang は「〜の向こう側」：di seberang jalan（道の向かい）、di seberang sungai（川の向こう）。",
+      "audio": "audio/id/sentences/s-22.mp3",
+      "tags": [
+        "道案内",
+        "交通"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-23",
+      "indonesian": "Rumah sakitnya di depan masjid.",
+      "japanese": "病院はモスクの向かいです。",
+      "chunks": [
+        {
+          "t": "Rumah sakitnya ",
+          "w": "w-rumah-sakit"
+        },
+        {
+          "t": "di depan ",
+          "w": "w-depan"
+        },
+        {
+          "t": "masjid.",
+          "w": "w-masjid"
+        }
+      ],
+      "registerNotes": "di depan は「〜の前」で、道をはさむと「向かい」の意味になります。モスクはたいていどの地域にもあるので、いい目印です。",
+      "audio": "audio/id/sentences/s-23.mp3",
+      "tags": [
+        "道案内",
+        "場所"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-24",
+      "indonesian": "Pantainya tidak jauh dari hotel kami.",
+      "japanese": "ビーチは私たちのホテルから遠くありません。",
+      "chunks": [
+        {
+          "t": "Pantainya ",
+          "w": "w-pantai"
+        },
+        {
+          "t": "tidak jauh ",
+          "w": "w-jauh"
+        },
+        {
+          "t": "dari hotel ",
+          "w": "w-hotel"
+        },
+        {
+          "t": "kami.",
+          "w": "w-kami"
+        }
+      ],
+      "pitfallNote": "kita ではなく kami：聞いている相手は同じホテルに泊まっていないからです。kami は相手を含まない「私たち」、kita は含む「私たち」。日本語にはない区別です。",
+      "audio": "audio/id/sentences/s-24.mp3",
+      "tags": [
+        "場所",
+        "旅行"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-25",
+      "indonesian": "Tolong berhenti di depan hotel itu.",
+      "japanese": "あのホテルの前で止めてください。",
+      "chunks": [
+        {
+          "t": "Tolong "
+        },
+        {
+          "t": "berhenti ",
+          "w": "w-berhenti"
+        },
+        {
+          "t": "di depan ",
+          "w": "w-depan"
+        },
+        {
+          "t": "hotel ",
+          "w": "w-hotel"
+        },
+        {
+          "t": "itu.",
+          "w": "w-itu"
+        }
+      ],
+      "registerNotes": "tolong を付けると、指示がお願いになります。運転手には最後に Pak や Mas を付けて：… hotel itu, Pak。",
+      "audio": "audio/id/sentences/s-25.mp3",
+      "tags": [
+        "交通",
+        "お願い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-26",
+      "indonesian": "Besok kami ke Yogyakarta naik kereta.",
+      "japanese": "明日、電車でジョグジャカルタに行きます。",
+      "chunks": [
+        {
+          "t": "Besok ",
+          "w": "w-besok"
+        },
+        {
+          "t": "kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "ke Yogyakarta ",
+          "w": "w-ke"
+        },
+        {
+          "t": "naik kereta."
+        }
+      ],
+      "registerNotes": "naik（乗る）で「〜で」を表します：naik kereta（電車で）、naik bus（バスで）、naik pesawat（飛行機で）。",
+      "audio": "audio/id/sentences/s-26.mp3",
+      "tags": [
+        "旅行",
+        "交通"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-27",
+      "indonesian": "Jalannya macet karena banjir.",
+      "japanese": "洪水で道が渋滞しています。",
+      "chunks": [
+        {
+          "t": "Jalannya ",
+          "w": "w-jalan"
+        },
+        {
+          "t": "macet "
+        },
+        {
+          "t": "karena ",
+          "w": "w-karena"
+        },
+        {
+          "t": "banjir.",
+          "w": "w-banjir"
+        }
+      ],
+      "registerNotes": "macet（ほとんど動かない渋滞）は、ジャカルタでは毎日耳にする言葉。名詞の前の karena は「〜のせいで」。",
+      "audio": "audio/id/sentences/s-27.mp3",
+      "tags": [
+        "交通",
+        "天気"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-28",
+      "indonesian": "Toko itu tutup hari Minggu.",
+      "japanese": "あのお店は日曜日が休みです。",
+      "chunks": [
+        {
+          "t": "Toko ",
+          "w": "w-toko"
+        },
+        {
+          "t": "itu ",
+          "w": "w-itu"
+        },
+        {
+          "t": "tutup "
+        },
+        {
+          "t": "hari Minggu.",
+          "w": "w-hari-minggu"
+        }
+      ],
+      "pitfallNote": "曜日の前に「〜に」にあたる言葉は要りません。hari Minggu だけで「日曜日に」も「毎週日曜」も表せます。",
+      "audio": "audio/id/sentences/s-28.mp3",
+      "tags": [
+        "買い物",
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-29",
+      "indonesian": "Warung ini buka sampai jam berapa?",
+      "japanese": "このワルンは何時まで開いていますか？",
+      "chunks": [
+        {
+          "t": "Warung ",
+          "w": "w-warung"
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "buka "
+        },
+        {
+          "t": "sampai ",
+          "w": "w-sampai"
+        },
+        {
+          "t": "jam berapa?",
+          "w": "w-jam"
+        }
+      ],
+      "registerNotes": "warung は小さな食堂や売店。buka は「開いている」、tutup は「閉まっている」。Sampai jam berapa? で「何時まで？」",
+      "audio": "audio/id/sentences/s-29.mp3",
+      "tags": [
+        "食べ物",
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-30",
+      "indonesian": "Saya harus ke bank sebelum jam tiga.",
+      "japanese": "3時前に銀行に行かないといけません。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "harus ",
+          "w": "w-harus"
+        },
+        {
+          "t": "ke bank ",
+          "w": "w-bank"
+        },
+        {
+          "t": "sebelum "
+        },
+        {
+          "t": "jam tiga.",
+          "w": "w-jam"
+        }
+      ],
+      "registerNotes": "harus（〜しなければならない）は動詞の前に。行くことがわかっている時は、ke のすぐ前に置きます。",
+      "audio": "audio/id/sentences/s-30.mp3",
+      "tags": [
+        "用事",
+        "時間"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-31",
+      "indonesian": "Saya mau mi goreng, tapi jangan terlalu pedas.",
+      "japanese": "ミーゴレンをお願いします。辛すぎないようにしてください。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "mi goreng, ",
+          "w": "w-mi"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "jangan terlalu "
+        },
+        {
+          "t": "pedas.",
+          "w": "w-pedas"
+        }
+      ],
+      "registerNotes": "jangan terlalu pedas で「辛すぎないように」。唐辛子がまったくだめなら、tidak pedas sama sekali（まったく辛くなく）と頼みましょう。",
+      "audio": "audio/id/sentences/s-31.mp3",
+      "tags": [
+        "食べ物",
+        "注文"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-32",
+      "indonesian": "Teh panas, tidak pakai gula, ya.",
+      "japanese": "ホットティーを、砂糖なしでお願いします。",
+      "chunks": [
+        {
+          "t": "Teh ",
+          "w": "w-teh"
+        },
+        {
+          "t": "panas, ",
+          "w": "w-panas"
+        },
+        {
+          "t": "tidak pakai ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "gula, ",
+          "w": "w-gula"
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "cultureNote": "お茶もコーヒーも、言わなければ甘くして出てきます。日本のお茶の感覚だと驚くところです。砂糖なしのお茶には teh tawar という名前もあります。",
+      "audio": "audio/id/sentences/s-32.mp3",
+      "tags": [
+        "食べ物",
+        "注文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-33",
+      "indonesian": "Ayam ini pedas atau tidak?",
+      "japanese": "この鶏肉、辛いですか？",
+      "chunks": [
+        {
+          "t": "Ayam ",
+          "w": "w-ayam"
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "pedas ",
+          "w": "w-pedas"
+        },
+        {
+          "t": "atau tidak?",
+          "w": "w-tidak"
+        }
+      ],
+      "registerNotes": "最後に atau tidak?（それとも違う？）を付けると、はっきりした「はい・いいえ」の質問になります。日本語の「辛い？辛くない？」に近い形です。友達同士なら atau nggak?",
+      "audio": "audio/id/sentences/s-33.mp3",
+      "tags": [
+        "食べ物",
+        "質問"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-34",
+      "indonesian": "Saya tidak makan daging, tapi ikan boleh.",
+      "japanese": "肉は食べませんが、魚なら大丈夫です。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tidak makan ",
+          "w": "w-makan"
+        },
+        {
+          "t": "daging, ",
+          "w": "w-daging"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "ikan boleh.",
+          "w": "w-ikan"
+        }
+      ],
+      "registerNotes": "食べられない物だけでなく、食べられる物も言うと注文が楽になります。boleh（〜してもいい）は、ここでは「大丈夫」の意味です。",
+      "audio": "audio/id/sentences/s-34.mp3",
+      "tags": [
+        "食べ物",
+        "食事制限"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-35",
+      "indonesian": "Mangga ini berapa sekilo, Bu?",
+      "japanese": "このマンゴー、1キロいくらですか？",
+      "chunks": [
+        {
+          "t": "Mangga "
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "berapa ",
+          "w": "w-berapa"
+        },
+        {
+          "t": "sekilo, "
+        },
+        {
+          "t": "Bu?",
+          "w": "w-ibu"
+        }
+      ],
+      "registerNotes": "市場では、果物や野菜は重さで値段がつくことが多いです：sekilo は1キロ、setengah kilo は半キロ。Bu は Ibu の略です。",
+      "audio": "audio/id/sentences/s-35.mp3",
+      "tags": [
+        "市場",
+        "値段"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-36",
+      "indonesian": "Bisa tolong tulis harganya?",
+      "japanese": "値段を書いてもらえますか？",
+      "chunks": [
+        {
+          "t": "Bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "tolong tulis "
+        },
+        {
+          "t": "harganya?",
+          "w": "w-harga"
+        }
+      ],
+      "registerNotes": "数字が速すぎて聞き取れない時に便利。電卓やスマホに値段を打って見せてくれる店の人も多いです。",
+      "audio": "audio/id/sentences/s-36.mp3",
+      "tags": [
+        "市場",
+        "お願い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-37",
+      "indonesian": "Sepatu ini terlalu kecil untuk saya.",
+      "japanese": "この靴は私には小さすぎます。",
+      "chunks": [
+        {
+          "t": "Sepatu ",
+          "w": "w-sepatu"
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "terlalu "
+        },
+        {
+          "t": "kecil ",
+          "w": "w-kecil"
+        },
+        {
+          "t": "untuk saya.",
+          "w": "w-saya"
+        }
+      ],
+      "pitfallNote": "名詞の後ろの ini は「この」：sepatu ini（この靴）。日本語とは逆の順番です。話し言葉では kekecilan（小さすぎる）とも言います。",
+      "audio": "audio/id/sentences/s-37.mp3",
+      "tags": [
+        "買い物",
+        "形容"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-38",
+      "indonesian": "Saya mau beli dua botol air mineral.",
+      "japanese": "ミネラルウォーターを2本買いたいんですが。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau beli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "dua botol "
+        },
+        {
+          "t": "air mineral.",
+          "w": "w-air"
+        }
+      ],
+      "registerNotes": "air mineral はペットボトルの水。air putih はふつうの飲み水で、ワルンで頼むのはこちらです。",
+      "audio": "audio/id/sentences/s-38.mp3",
+      "tags": [
+        "買い物",
+        "飲み物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-39",
+      "indonesian": "Kamarnya kecil, tapi bersih.",
+      "japanese": "部屋は狭いけど、きれいです。",
+      "chunks": [
+        {
+          "t": "Kamarnya ",
+          "w": "w-kamar"
+        },
+        {
+          "t": "kecil, ",
+          "w": "w-kecil"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "bersih.",
+          "w": "w-bersih"
+        }
+      ],
+      "pitfallNote": "「です」にあたる言葉は要らず、形容詞だけで文になります。部屋の「狭い」も kecil（小さい）で言えます。",
+      "audio": "audio/id/sentences/s-39.mp3",
+      "tags": [
+        "ホテル",
+        "形容"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-40",
+      "indonesian": "Lampu di kamar mandi mati.",
+      "japanese": "浴室の電気がつきません。",
+      "chunks": [
+        {
+          "t": "Lampu ",
+          "w": "w-lampu"
+        },
+        {
+          "t": "di kamar mandi ",
+          "w": "w-kamar-mandi"
+        },
+        {
+          "t": "mati."
+        }
+      ],
+      "registerNotes": "mati（死んでいる）は、電気で動く物が止まった、消えた時に使います：AC-nya mati（エアコンが止まった）、listriknya mati（停電した）。",
+      "audio": "audio/id/sentences/s-40.mp3",
+      "tags": [
+        "ホテル",
+        "トラブル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-41",
+      "indonesian": "Sekarang musim hujan, jadi jangan lupa bawa payung.",
+      "japanese": "今は雨季だから、傘を忘れないでね。",
+      "chunks": [
+        {
+          "t": "Sekarang ",
+          "w": "w-sekarang"
+        },
+        {
+          "t": "musim hujan, ",
+          "w": "w-musim-hujan"
+        },
+        {
+          "t": "jadi ",
+          "w": "w-jadi"
+        },
+        {
+          "t": "jangan lupa "
+        },
+        {
+          "t": "bawa payung."
+        }
+      ],
+      "registerNotes": "jangan lupa（忘れないで）の後に、そのまま動詞を置きます。jadi は「だから」で、前のことから出てくる結果を言います。",
+      "audio": "audio/id/sentences/s-41.mp3",
+      "tags": [
+        "天気",
+        "旅行"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "words-work",
+  "title": "Work & Study",
+  "description": "Jobs, the office and university: what people ask about when they get to know you.",
+  "items": [
+    {
+      "id": "w-pekerjaan",
+      "indonesian": "pekerjaan",
+      "english": "job, work, occupation",
+      "pos": "noun",
+      "forms": {
+        "root": "kerja"
+      },
+      "registerNotes": "Pekerjaannya apa? (What do you do?) In casual talk, Kerja di mana? (Where do you work?)",
+      "audio": "audio/id/words/w-pekerjaan.mp3",
+      "tags": [
+        "work"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-rapat",
+      "indonesian": "rapat",
+      "english": "meeting (at work)",
+      "pos": "noun",
+      "registerNotes": "Maaf, saya sedang rapat (sorry, I'm in a meeting). Only for work or official meetings, not catching up with friends.",
+      "audio": "audio/id/words/w-rapat.mp3",
+      "tags": [
+        "work"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bos",
+      "indonesian": "bos",
+      "english": "boss",
+      "pos": "noun",
+      "cultureNote": "Also a friendly, slightly joking way to address a man: parking attendants and sellers may call you Bos.",
+      "audio": "audio/id/words/w-bos.mp3",
+      "tags": [
+        "work",
+        "people"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-gaji",
+      "indonesian": "gaji",
+      "english": "salary, pay, wages",
+      "pos": "noun",
+      "registerNotes": "Gajian is payday, in casual speech: Besok gajian.",
+      "audio": "audio/id/words/w-gaji.mp3",
+      "tags": [
+        "work",
+        "money"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-libur",
+      "indonesian": "libur",
+      "english": "day off, holiday (no work or school)",
+      "pos": "noun",
+      "pitfallNote": "Libur is time off: Besok libur (tomorrow's a day off). A holiday trip is liburan.",
+      "audio": "audio/id/words/w-libur.mp3",
+      "tags": [
+        "work",
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cuti",
+      "indonesian": "cuti",
+      "english": "leave (from work)",
+      "pos": "noun",
+      "registerNotes": "Leave you take yourself: ambil cuti (take leave), cuti sakit (sick leave). A day everyone has off is libur.",
+      "audio": "audio/id/words/w-cuti.mp3",
+      "tags": [
+        "work"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-guru",
+      "indonesian": "guru",
+      "english": "teacher",
+      "pos": "noun",
+      "pitfallNote": "Any schoolteacher, not a spiritual guide. A university lecturer is a dosen.",
+      "audio": "audio/id/words/w-guru.mp3",
+      "tags": [
+        "study",
+        "people"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-murid",
+      "indonesian": "murid",
+      "english": "pupil, student (at school)",
+      "pos": "noun",
+      "registerNotes": "Siswa is the more formal word. At university, students are mahasiswa.",
+      "audio": "audio/id/words/w-murid.mp3",
+      "tags": [
+        "study",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mahasiswa",
+      "indonesian": "mahasiswa",
+      "english": "university student",
+      "pos": "noun",
+      "registerNotes": "Mahasiswi is used for a woman student, though mahasiswa covers everyone.",
+      "audio": "audio/id/words/w-mahasiswa.mp3",
+      "tags": [
+        "study",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kuliah",
+      "indonesian": "kuliah",
+      "english": "to study at university; a lecture",
+      "pos": "verb",
+      "registerNotes": "Kuliah di mana? (Where do you study?) Sekolah is for school; at university you kuliah.",
+      "audio": "audio/id/words/w-kuliah.mp3",
+      "tags": [
+        "study"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ujian",
+      "indonesian": "ujian",
+      "english": "exam, test",
+      "pos": "noun",
+      "registerNotes": "Lulus ujian is to pass an exam.",
+      "audio": "audio/id/words/w-ujian.mp3",
+      "tags": [
+        "study"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sibuk",
+      "indonesian": "sibuk",
+      "english": "busy",
+      "pos": "adjective",
+      "registerNotes": "Sekarang sibuk apa? (What are you up to these days?) is a common friendly question.",
+      "audio": "audio/id/words/w-sibuk.mp3",
+      "tags": [
+        "work"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tugas",
+      "indonesian": "tugas",
+      "english": "task, assignment, duty",
+      "pos": "noun",
+      "registerNotes": "Any job you've been given, at work or at school. Homework is PR, said pe er, short for pekerjaan rumah.",
+      "audio": "audio/id/words/w-tugas.mp3",
+      "tags": [
+        "work",
+        "study"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pertanyaan",
+      "indonesian": "pertanyaan",
+      "english": "question",
+      "pos": "noun",
+      "forms": {
+        "root": "tanya"
+      },
+      "registerNotes": "Ada pertanyaan? (Any questions?) To ask one, start with Boleh tanya? (May I ask something?)",
+      "audio": "audio/id/words/w-pertanyaan.mp3",
+      "tags": [
+        "study",
+        "work"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

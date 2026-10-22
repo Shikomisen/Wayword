@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "con-to",
+  "connector": "と",
+  "gloss": "kalau (pasti), setiap kali",
+  "title": "と — kalau (pasti), setiap kali",
+  "pattern": "bentuk biasa sekarang + と、B",
+  "explanation": "Sesudah kata kerja atau kata sifat dalam bentuk biasa sekarang, と berarti “setiap kali”, atau “kalau…, pasti…”: {春|はる}になると、{暖|あたた}かくなる — kalau musim semi tiba, udara jadi hangat. Seperti “kalau”, tapi letaknya di akhir syarat, bukan di awal. と dipakai untuk hal yang terjadi dengan sendirinya: alam, mesin, kebiasaan, petunjuk arah. (Ini と yang berbeda dari “dan” di antara kata benda.)",
+  "natural": "Petunjuk arah dan cara kerja sesuatu: まっすぐ{行|い}くと、{駅|えき}があります — jalan lurus, nanti ada stasiun. Cocok untuk ragam apa pun.",
+  "stiff": "Bukan untuk rencanamu sendiri, permintaan, atau ajakan. “Kalau ada waktu, ketemuan yuk” butuh たら: {時間|じかん}があったら{会|あ}おう. Dengan と terdengar salah. “Kalau” dalam bahasa Indonesia bisa dipakai untuk semuanya, tapi bahasa Jepang membedakannya.",
+  "examples": [
+    {
+      "id": "cx-to-1",
+      "japanese": "春になると、暖かくなります。",
+      "furigana": "{春|はる}になると、{暖|あたた}かくなります。",
+      "indonesian": "Kalau musim semi tiba, udara jadi hangat.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{春|はる}に",
+          "w": "w-haru"
+        },
+        {
+          "t": "なると、"
+        },
+        {
+          "t": "{暖|あたた}かく",
+          "w": "w-atatakai"
+        },
+        {
+          "t": "なります。"
+        }
+      ],
+      "gap": {
+        "before": "{春|はる}になる",
+        "answer": "と",
+        "after": "、{暖|あたた}かくなります。",
+        "options": [
+          "と",
+          "から",
+          "けど"
+        ]
+      },
+      "combine": {
+        "a": "{春|はる}になります。",
+        "b": "{暖|あたた}かくなります。",
+        "distractors": [
+          "なったと、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-to-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "to"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-to-2",
+      "japanese": "まっすぐ行くと、駅があります。",
+      "furigana": "まっすぐ{行|い}くと、{駅|えき}があります。",
+      "indonesian": "Jalan lurus terus, nanti ada stasiun.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "まっすぐ"
+        },
+        {
+          "t": "{行|い}くと、",
+          "w": "w-iku"
+        },
+        {
+          "t": "{駅|えき}が",
+          "w": "w-eki"
+        },
+        {
+          "t": "あります。"
+        }
+      ],
+      "gap": {
+        "before": "まっすぐ{行|い}く",
+        "answer": "と",
+        "after": "、{駅|えき}があります。",
+        "options": [
+          "と",
+          "けど",
+          "ので"
+        ]
+      },
+      "combine": {
+        "a": "まっすぐ{行|い}きます。",
+        "b": "{駅|えき}があります。",
+        "distractors": [
+          "{行|い}ったと、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-to-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "to"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-to-3",
+      "japanese": "このボタンを押すと、電気がつきます。",
+      "furigana": "この{ボタン|ぼたん}を{押|お}すと、{電気|でんき}がつきます。",
+      "indonesian": "Kalau tombol ini ditekan, lampunya menyala.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{ボタン|ぼたん}を"
+        },
+        {
+          "t": "{押|お}すと、"
+        },
+        {
+          "t": "{電気|でんき}が",
+          "w": "w-denki"
+        },
+        {
+          "t": "つきます。"
+        }
+      ],
+      "gap": {
+        "before": "この{ボタン|ぼたん}を{押|お}す",
+        "answer": "と",
+        "after": "、{電気|でんき}がつきます。",
+        "options": [
+          "と",
+          "けど",
+          "ので"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-to-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "to"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-to-4",
+      "japanese": "お酒を飲むと、すぐ眠くなる。",
+      "furigana": "お{酒|さけ}を{飲|の}むと、すぐ{眠|ねむ}くなる。",
+      "indonesian": "Setiap kali minum alkohol, aku langsung mengantuk.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "お{酒|さけ}を",
+          "w": "w-osake"
+        },
+        {
+          "t": "{飲|の}むと、",
+          "w": "w-nomu"
+        },
+        {
+          "t": "すぐ"
+        },
+        {
+          "t": "{眠|ねむ}くなる。",
+          "w": "w-nemui"
+        }
+      ],
+      "gap": {
+        "before": "お{酒|さけ}を{飲|の}む",
+        "answer": "と",
+        "after": "、すぐ{眠|ねむ}くなる。",
+        "options": [
+          "と",
+          "けど",
+          "ながら"
+        ]
+      },
+      "combine": {
+        "a": "お{酒|さけ}を{飲|の}む。",
+        "b": "すぐ{眠|ねむ}くなる。",
+        "distractors": [
+          "{飲|の}んだと、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-to-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "to"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

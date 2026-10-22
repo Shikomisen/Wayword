@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-questions",
+  "connector": "apa, siapa…",
+  "gloss": "what, who, where…",
+  "title": "apa, siapa, di mana… — question words",
+  "pattern": "Bapak mau minum apa? · Namanya siapa? · di mana / ke mana / dari mana",
+  "explanation": "The question words are apa (what), siapa (who), kapan (when), berapa (how much, how many), kenapa (why) and bagaimana (how). 'Where' comes in three, like 'where', 'where to' and 'where from': di mana, ke mana and dari mana. Unlike English, the question word can sit where the answer would go, and nothing else moves: Kamu mau apa? (What do you want?) is literally 'You want what?', and the answer is Saya mau kopi. It can also go first: Apa ini? and Ini apa? both mean 'What's this?'",
+  "natural": "Putting the question word at the end is the everyday, friendly way: Namanya siapa? (What's your name?), Rumahnya di mana? (Where do you live?), Harganya berapa? (How much is it?)",
+  "stiff": "Names are asked with siapa (who), not apa. Di mana is only for where something is: 'Where are you going?' is Mau ke mana? and never Mau di mana? Kenapa is the spoken 'why'; mengapa is for writing.",
+  "examples": [
+    {
+      "id": "gx-questions-1",
+      "indonesian": "Bapak mau minum apa?",
+      "english": "What would you like to drink?",
+      "chunks": [
+        {
+          "t": "Bapak ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "minum ",
+          "w": "w-minum"
+        },
+        {
+          "t": "apa?",
+          "w": "w-apa"
+        }
+      ],
+      "gap": {
+        "before": "Bapak mau minum ",
+        "answer": "apa",
+        "after": "?",
+        "options": [
+          "apa",
+          "siapa",
+          "berapa"
+        ],
+        "why": "'What' is apa, in the place where the answer will go: minum kopi, minum apa?"
+      },
+      "audio": "audio/id/grammar/gx-questions-1.mp3",
+      "tags": [
+        "grammar",
+        "questions"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-questions-2",
+      "indonesian": "Namanya siapa?",
+      "english": "What's your name?",
+      "chunks": [
+        {
+          "t": "Namanya ",
+          "w": "w-nama"
+        },
+        {
+          "t": "siapa?",
+          "w": "w-siapa"
+        }
+      ],
+      "gap": {
+        "before": "Namanya ",
+        "answer": "siapa",
+        "after": "?",
+        "options": [
+          "siapa",
+          "apa"
+        ],
+        "why": "Indonesian asks a name with siapa, who, not apa."
+      },
+      "audio": "audio/id/grammar/gx-questions-2.mp3",
+      "tags": [
+        "grammar",
+        "questions"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-questions-3",
+      "indonesian": "Berapa harga tiketnya?",
+      "english": "How much is the ticket?",
+      "chunks": [
+        {
+          "t": "Berapa ",
+          "w": "w-berapa"
+        },
+        {
+          "t": "harga ",
+          "w": "w-harga"
+        },
+        {
+          "t": "tiketnya?",
+          "w": "w-tiket"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Berapa",
+        "after": " harga tiketnya?",
+        "options": [
+          "Berapa",
+          "Apa",
+          "Bagaimana"
+        ],
+        "why": "'How much' and 'how many' are berapa; bagaimana is 'how' as in 'in what way'."
+      },
+      "audio": "audio/id/grammar/gx-questions-3.mp3",
+      "tags": [
+        "grammar",
+        "questions"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-questions-4",
+      "indonesian": "Ibu dari mana?",
+      "english": "Where are you from?",
+      "chunks": [
+        {
+          "t": "Ibu ",
+          "w": "w-ibu"
+        },
+        {
+          "t": "dari mana?",
+          "w": "w-dari"
+        }
+      ],
+      "gap": {
+        "before": "Ibu ",
+        "answer": "dari mana",
+        "after": "?",
+        "options": [
+          "dari mana",
+          "di mana",
+          "ke mana"
+        ],
+        "why": "'Where from' is dari mana; di mana is where something is, and ke mana is where to."
+      },
+      "audio": "audio/id/grammar/gx-questions-4.mp3",
+      "tags": [
+        "grammar",
+        "questions"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

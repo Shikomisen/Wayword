@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "id": "plans",
+  "title": "Rencana & ajakan",
+  "order": 13,
+  "description": "Mengusulkan, mengajak, bilang ya, dan bilang tidak tanpa bilang tidak: membuat rencana dengan teman dan rekan kerja.",
+  "phrases": [
+    {
+      "id": "pla-01",
+      "japanese": "今度、一緒に飲みに行きませんか",
+      "furigana": [
+        {
+          "b": "今度",
+          "r": "こんど"
+        },
+        {
+          "b": "、"
+        },
+        {
+          "b": "一緒",
+          "r": "いっしょ"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "飲",
+          "r": "の"
+        },
+        {
+          "b": "みに"
+        },
+        {
+          "b": "行",
+          "r": "い"
+        },
+        {
+          "b": "きませんか"
+        }
+      ],
+      "romaji": "kondo, issho ni nomi ni ikimasen ka",
+      "indonesian": "Kapan-kapan, mau pergi minum bersama?",
+      "registerNotes": "Ajakan klasik. ませんか (“tidak mau…?”) memberi ruang untuk menolak, dan itulah yang membuatnya sopan. 飲みに行く biasanya berarti minum alkohol, tapi kamu tetap bisa ikut dan memesan ソフトドリンク (minuman tanpa alkohol).",
+      "audio": "audio/ja/pla-01.mp3",
+      "tags": [
+        "mengajak",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-02",
+      "register": "casual",
+      "japanese": "週末、空いてる？",
+      "furigana": [
+        {
+          "b": "週末",
+          "r": "しゅうまつ"
+        },
+        {
+          "b": "、"
+        },
+        {
+          "b": "空",
+          "r": "あ"
+        },
+        {
+          "b": "いてる？"
+        }
+      ],
+      "romaji": "shūmatsu, aiteru?",
+      "indonesian": "Akhir pekan ini kamu kosong?",
+      "polite": {
+        "japanese": "週末は空いていますか",
+        "furigana": [
+          {
+            "b": "週末",
+            "r": "しゅうまつ"
+          },
+          {
+            "b": "は"
+          },
+          {
+            "b": "空",
+            "r": "あ"
+          },
+          {
+            "b": "いていますか"
+          }
+        ],
+        "romaji": "shūmatsu wa aite imasu ka?",
+        "audio": "audio/ja/pla-02-polite.mp3"
+      },
+      "registerNotes": "Mengecek dulu sebelum mengajak. 空いてる secara harfiah “kosong?”: apakah jadwalmu kosong? Sama seperti “kosong” dalam bahasa Indonesia.",
+      "audio": "audio/ja/pla-02.mp3",
+      "tags": [
+        "mengajak"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-03",
+      "register": "casual",
+      "japanese": "いいね、行こう",
+      "furigana": [
+        {
+          "b": "いいね、"
+        },
+        {
+          "b": "行",
+          "r": "い"
+        },
+        {
+          "b": "こう"
+        }
+      ],
+      "romaji": "ii ne, ikō",
+      "indonesian": "Asyik, yuk!",
+      "polite": {
+        "japanese": "いいですね、行きましょう",
+        "furigana": [
+          {
+            "b": "いいですね、"
+          },
+          {
+            "b": "行",
+            "r": "い"
+          },
+          {
+            "b": "きましょう"
+          }
+        ],
+        "romaji": "ii desu ne, ikimashō",
+        "audio": "audio/ja/pla-03-polite.mp3"
+      },
+      "registerNotes": "Bilang ya dengan hangat. Bentuk sopannya いいですね、行きましょう.",
+      "audio": "audio/ja/pla-03.mp3",
+      "tags": [
+        "bilang ya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-04",
+      "register": "casual",
+      "japanese": "何時にする？",
+      "furigana": [
+        {
+          "b": "何時",
+          "r": "なんじ"
+        },
+        {
+          "b": "にする？"
+        }
+      ],
+      "romaji": "nanji ni suru?",
+      "indonesian": "Mau jam berapa?",
+      "polite": {
+        "japanese": "何時にしましょうか",
+        "furigana": [
+          {
+            "b": "何時",
+            "r": "なんじ"
+          },
+          {
+            "b": "にしましょうか"
+          }
+        ],
+        "romaji": "nanji ni shimashō ka?",
+        "audio": "audio/ja/pla-04-polite.mp3"
+      },
+      "registerNotes": "Menentukan jam. にする berarti “memilih, memutuskan”: 何にする？ artinya “mau pesan apa?”.",
+      "audio": "audio/ja/pla-04.mp3",
+      "tags": [
+        "mengatur"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-05",
+      "japanese": "どこで待ち合わせしますか",
+      "furigana": [
+        {
+          "b": "どこで"
+        },
+        {
+          "b": "待",
+          "r": "ま"
+        },
+        {
+          "b": "ち"
+        },
+        {
+          "b": "合",
+          "r": "あ"
+        },
+        {
+          "b": "わせしますか"
+        }
+      ],
+      "romaji": "doko de machiawase shimasu ka",
+      "indonesian": "Kita ketemu di mana?",
+      "registerNotes": "待ち合わせ adalah janjian bertemu di tempat yang disepakati. Teman Jepang biasanya menentukan titik yang persis, misalnya pintu keluar stasiun tertentu.",
+      "audio": "audio/ja/pla-05.mp3",
+      "tags": [
+        "mengatur"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-06",
+      "japanese": "駅の改札で会いましょう",
+      "furigana": [
+        {
+          "b": "駅",
+          "r": "えき"
+        },
+        {
+          "b": "の"
+        },
+        {
+          "b": "改札",
+          "r": "かいさつ"
+        },
+        {
+          "b": "で"
+        },
+        {
+          "b": "会",
+          "r": "あ"
+        },
+        {
+          "b": "いましょう"
+        }
+      ],
+      "romaji": "eki no kaisatsu de aimashō",
+      "indonesian": "Kita bertemu di gerbang tiket stasiun.",
+      "registerNotes": "Tempat janjian paling umum di Jepang. Stasiun besar punya beberapa gerbang tiket, jadi sebutkan yang mana.",
+      "audio": "audio/ja/pla-06.mp3",
+      "tags": [
+        "mengatur"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-07",
+      "japanese": "その日はちょっと…",
+      "furigana": [
+        {
+          "b": "その"
+        },
+        {
+          "b": "日",
+          "r": "ひ"
+        },
+        {
+          "b": "はちょっと…"
+        }
+      ],
+      "romaji": "sono hi wa chotto",
+      "indonesian": "Hari itu agak…",
+      "registerNotes": "Cara sopan bilang tidak, yang akan terasa akrab bagi orang Indonesia. Biarkan kalimatnya menggantung dan biarkan ちょっと yang bekerja; alasan tidak wajib, dan tolakan yang terang-terangan terdengar kasar.",
+      "audio": "audio/ja/pla-07.mp3",
+      "tags": [
+        "bilang tidak",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-08",
+      "register": "casual",
+      "japanese": "残念だけど、また今度",
+      "furigana": [
+        {
+          "b": "残念",
+          "r": "ざんねん"
+        },
+        {
+          "b": "だけど、また"
+        },
+        {
+          "b": "今度",
+          "r": "こんど"
+        }
+      ],
+      "romaji": "zannen dakedo, mata kondo",
+      "indonesian": "Sayang banget, lain kali, ya.",
+      "polite": {
+        "japanese": "残念ですが、また今度お願いします",
+        "furigana": [
+          {
+            "b": "残念",
+            "r": "ざんねん"
+          },
+          {
+            "b": "ですが、また"
+          },
+          {
+            "b": "今度",
+            "r": "こんど"
+          },
+          {
+            "b": "お"
+          },
+          {
+            "b": "願",
+            "r": "ねが"
+          },
+          {
+            "b": "いします"
+          }
+        ],
+        "romaji": "zannen desu ga, mata kondo onegai shimasu",
+        "audio": "audio/ja/pla-08-polite.mp3"
+      },
+      "registerNotes": "Menolak ajakan tapi tetap membuka kesempatan.",
+      "audio": "audio/ja/pla-08.mp3",
+      "tags": [
+        "bilang tidak"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-09",
+      "japanese": "少し遅れるかもしれません",
+      "furigana": [
+        {
+          "b": "少",
+          "r": "すこ"
+        },
+        {
+          "b": "し"
+        },
+        {
+          "b": "遅",
+          "r": "おく"
+        },
+        {
+          "b": "れるかもしれません"
+        }
+      ],
+      "romaji": "sukoshi okureru kamo shiremasen",
+      "indonesian": "Saya mungkin sedikit terlambat.",
+      "registerNotes": "Teman Jepang berharap dikabari, bahkan kalau terlambat lima menit: tidak ada “jam karet”. Dengan teman: ちょっと遅れるかも.",
+      "audio": "audio/ja/pla-09.mp3",
+      "tags": [
+        "mengatur"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-10",
+      "register": "casual",
+      "japanese": "着いたら連絡するね",
+      "furigana": [
+        {
+          "b": "着",
+          "r": "つ"
+        },
+        {
+          "b": "いたら"
+        },
+        {
+          "b": "連絡",
+          "r": "れんらく"
+        },
+        {
+          "b": "するね"
+        }
+      ],
+      "romaji": "tsuitara renraku suru ne",
+      "indonesian": "Nanti aku kabari kalau udah sampai.",
+      "polite": {
+        "japanese": "着いたら連絡します",
+        "furigana": [
+          {
+            "b": "着",
+            "r": "つ"
+          },
+          {
+            "b": "いたら"
+          },
+          {
+            "b": "連絡",
+            "r": "れんらく"
+          },
+          {
+            "b": "します"
+          }
+        ],
+        "romaji": "tsuitara renraku shimasu",
+        "audio": "audio/ja/pla-10-polite.mp3"
+      },
+      "registerNotes": "Sangat umum saat janjian. 連絡 mencakup telepon, SMS, atau pesan LINE (aplikasi chat paling umum di Jepang, seperti WhatsApp di Indonesia).",
+      "audio": "audio/ja/pla-10.mp3",
+      "tags": [
+        "mengatur"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-11",
+      "japanese": "楽しみにしています",
+      "furigana": [
+        {
+          "b": "楽",
+          "r": "たの"
+        },
+        {
+          "b": "しみにしています"
+        }
+      ],
+      "romaji": "tanoshimi ni shite imasu",
+      "indonesian": "Saya sudah tidak sabar.",
+      "registerNotes": "Diucapkan setelah rencana dibuat, dan lagi sehari sebelumnya. Dengan teman: 楽しみ！",
+      "audio": "audio/ja/pla-11.mp3",
+      "tags": [
+        "bilang ya",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-12",
+      "register": "casual",
+      "japanese": "誘ってくれてありがとう",
+      "furigana": [
+        {
+          "b": "誘",
+          "r": "さそ"
+        },
+        {
+          "b": "ってくれてありがとう"
+        }
+      ],
+      "romaji": "sasotte kurete arigatō",
+      "indonesian": "Makasih udah ngajak.",
+      "polite": {
+        "japanese": "誘ってくださってありがとうございます",
+        "furigana": [
+          {
+            "b": "誘",
+            "r": "さそ"
+          },
+          {
+            "b": "ってくださってありがとうございます"
+          }
+        ],
+        "romaji": "sasotte kudasatte arigatō gozaimasu",
+        "audio": "audio/ja/pla-12-polite.mp3"
+      },
+      "registerNotes": "Terima kasih atas ajakannya, entah kamu bisa datang atau tidak. Bentuk sopannya memakai くださって.",
+      "audio": "audio/ja/pla-12.mp3",
+      "tags": [
+        "bilang ya",
+        "bilang tidak"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "shopping",
+  "title": "Shopping & Bargaining",
+  "order": 6,
+  "description": "Markets, stalls and shops: asking the price, bargaining with a smile, sizes and colours, and paying by card or QRIS. Call a stallholder Bu or Pak, or Mbak and Mas if they're young.",
+  "phrases": [
+    {
+      "id": "sho-01",
+      "indonesian": "Yang ini berapa, Bu?",
+      "english": "How much is this one?",
+      "registerNotes": "Point as you ask. Berapa harganya? (How much is it?) is the fuller version; say Pak to a man, and Mbak or Mas to someone young.",
+      "audio": "audio/id/sho-01.mp3",
+      "tags": [
+        "shopping",
+        "prices",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-02",
+      "indonesian": "Boleh kurang?",
+      "english": "Could you go a bit lower?",
+      "registerNotes": "The usual way to open bargaining, literally 'may it be less?'. Bisa kurang? means the same, and Kurang sedikit, ya? (a little less?) is softer still.",
+      "cultureNote": "Bargaining is normal at markets, street stalls and souvenir shops, done with a smile. Printed prices, as in supermarkets, minimarkets and malls, are fixed.",
+      "audio": "audio/id/sho-02.mp3",
+      "tags": [
+        "shopping",
+        "bargaining",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-03",
+      "indonesian": "Wah, mahal sekali.",
+      "english": "Oh, that's very expensive.",
+      "registerNotes": "Part of the bargaining routine, said lightly and with a smile rather than as a complaint. Terlalu mahal (too expensive) is blunter.",
+      "audio": "audio/id/sho-03.mp3",
+      "tags": [
+        "shopping",
+        "bargaining"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-04",
+      "indonesian": "Kalau seratus ribu, boleh?",
+      "english": "Would you take a hundred thousand?",
+      "registerNotes": "Kalau (if) plus your price is the usual way to make an offer. Prices are said in thousands of rupiah: lima puluh ribu, seratus ribu.",
+      "cultureNote": "Start well below the first price and expect to meet somewhere in between. Keep it friendly: a few thousand rupiah means more to the seller than to you.",
+      "audio": "audio/id/sho-04.mp3",
+      "tags": [
+        "shopping",
+        "bargaining"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-05",
+      "indonesian": "Harga pasnya berapa?",
+      "english": "What's your best price?",
+      "registerNotes": "Asks for the real price straight away. If the seller says Sudah harga pas (That's the fixed price), there's no more room to bargain.",
+      "pitfallNote": "Harga pas (the fixed price) isn't uang pas, which is the exact change.",
+      "audio": "audio/id/sho-05.mp3",
+      "tags": [
+        "shopping",
+        "bargaining"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-06",
+      "indonesian": "Lihat-lihat saja, ya.",
+      "english": "I'm just looking, thanks.",
+      "registerNotes": "The friendly answer when a seller calls out Cari apa? (What are you looking for?). Saying lihat twice makes it relaxed browsing.",
+      "audio": "audio/id/sho-06.mp3",
+      "tags": [
+        "shopping",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-07",
+      "indonesian": "Ada ukuran yang lebih besar?",
+      "english": "Do you have a bigger size?",
+      "registerNotes": "Lebih kecil is smaller. Local clothes sizes tend to run small, so a New Zealand medium may be an L or XL here.",
+      "pitfallNote": "There's no -er ending: bigger is lebih besar (more big), cheaper is lebih murah.",
+      "audio": "audio/id/sho-07.mp3",
+      "tags": [
+        "shopping",
+        "clothes"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-08",
+      "indonesian": "Ada warna lain?",
+      "english": "Do you have it in another colour?",
+      "registerNotes": "Name the colour if you have one in mind: Ada yang hitam? (Do you have a black one?)",
+      "audio": "audio/id/sho-08.mp3",
+      "tags": [
+        "shopping",
+        "clothes"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-09",
+      "indonesian": "Boleh dicoba?",
+      "english": "Can I try it on?",
+      "registerNotes": "For clothes and shoes, and at a market for tasting the fruit too. The fitting room is the kamar pas.",
+      "audio": "audio/id/sho-09.mp3",
+      "tags": [
+        "shopping",
+        "clothes"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-10",
+      "indonesian": "Saya ambil yang ini.",
+      "english": "I'll take this one.",
+      "registerNotes": "Ambil (take) is how you say you'll buy it, in a shop or at the end of bargaining.",
+      "cultureNote": "Once you've agreed a price, it's polite to buy. Walking away after the seller has said yes is bad form, so only bargain for something you want.",
+      "audio": "audio/id/sho-10.mp3",
+      "tags": [
+        "shopping",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-11",
+      "indonesian": "Bisa bayar pakai kartu?",
+      "english": "Can I pay by card?",
+      "registerNotes": "Markets, warungs and small shops are usually cash only (tunai), so carry small notes.",
+      "audio": "audio/id/sho-11.mp3",
+      "tags": [
+        "shopping",
+        "paying"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-12",
+      "indonesian": "Bisa bayar pakai QRIS?",
+      "english": "Can I pay with QRIS?",
+      "registerNotes": "QRIS is said like kris.",
+      "cultureNote": "QRIS is Indonesia's national payment QR code, on a printed sign at most counters and many stalls. Visitors usually need an Indonesian e-wallet or banking app to use it, so carry cash too.",
+      "audio": "audio/id/sho-12.mp3",
+      "audioHint": "Bisa bayar pakai kris?",
+      "tags": [
+        "shopping",
+        "paying"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-13",
+      "indonesian": "Boleh minta kantong plastik?",
+      "english": "Could I have a bag?",
+      "registerNotes": "Kresek is the everyday word for a thin plastic bag.",
+      "cultureNote": "Bali, Jakarta and many other places have banned single-use plastic bags in shops, so carry your own shopping bag (tas belanja).",
+      "audio": "audio/id/sho-13.mp3",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

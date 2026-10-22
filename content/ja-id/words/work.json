@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "words-work",
+  "title": "仕事と勉強",
+  "description": "職業、職場、大学：知り合ったときによく聞かれる話題です。",
+  "items": [
+    {
+      "id": "w-pekerjaan",
+      "indonesian": "pekerjaan",
+      "japanese": "仕事、職業",
+      "pos": "noun",
+      "forms": {
+        "root": "kerja"
+      },
+      "registerNotes": "Pekerjaannya apa?（お仕事は何ですか？）。くだけた会話では Kerja di mana?（どこで働いていますか？）",
+      "audio": "audio/id/words/w-pekerjaan.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-rapat",
+      "indonesian": "rapat",
+      "japanese": "会議",
+      "pos": "noun",
+      "registerNotes": "Maaf, saya sedang rapat（すみません、会議中です）。仕事や公式の会議だけに使い、友達と会うのには使いません。",
+      "audio": "audio/id/words/w-rapat.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bos",
+      "indonesian": "bos",
+      "japanese": "上司、ボス",
+      "pos": "noun",
+      "cultureNote": "男性への、親しみと少し冗談まじりの呼びかけにもなります。駐車場の係員や売り手が Bos と呼んでくることがあり、日本の呼び込みの「社長！」に似ています。",
+      "audio": "audio/id/words/w-bos.mp3",
+      "tags": [
+        "仕事",
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-gaji",
+      "indonesian": "gaji",
+      "japanese": "給料",
+      "pos": "noun",
+      "registerNotes": "くだけた言い方で、gajian は給料日です：Besok gajian（明日は給料日）。",
+      "audio": "audio/id/words/w-gaji.mp3",
+      "tags": [
+        "仕事",
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-libur",
+      "indonesian": "libur",
+      "japanese": "休み（仕事や学校のない日）",
+      "pos": "noun",
+      "pitfallNote": "libur は休みの日のこと：Besok libur（明日は休み）。休暇の旅行は liburan です。",
+      "audio": "audio/id/words/w-libur.mp3",
+      "tags": [
+        "仕事",
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cuti",
+      "indonesian": "cuti",
+      "japanese": "休暇（仕事の）",
+      "pos": "noun",
+      "registerNotes": "自分で取る休みのことです：ambil cuti（休暇を取る）、cuti sakit（病気休暇）。みんなが休む日は libur。",
+      "audio": "audio/id/words/w-cuti.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-guru",
+      "indonesian": "guru",
+      "japanese": "先生、教師",
+      "pos": "noun",
+      "pitfallNote": "学校の先生のことで、精神的な指導者（グル）ではありません。日本語の「先生」と違い、医者などには使いません。大学の講師は dosen です。",
+      "audio": "audio/id/words/w-guru.mp3",
+      "tags": [
+        "勉強",
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-murid",
+      "indonesian": "murid",
+      "japanese": "生徒、児童",
+      "pos": "noun",
+      "registerNotes": "より改まった言葉は siswa。大学生は mahasiswa です。",
+      "audio": "audio/id/words/w-murid.mp3",
+      "tags": [
+        "勉強",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mahasiswa",
+      "indonesian": "mahasiswa",
+      "japanese": "大学生",
+      "pos": "noun",
+      "registerNotes": "女子学生には mahasiswi も使いますが、mahasiswa で男女どちらも指せます。",
+      "audio": "audio/id/words/w-mahasiswa.mp3",
+      "tags": [
+        "勉強",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kuliah",
+      "indonesian": "kuliah",
+      "japanese": "大学で学ぶ；講義",
+      "pos": "verb",
+      "registerNotes": "Kuliah di mana?（どこの大学に通っていますか？）。学校に通うのは sekolah、大学では kuliah です。",
+      "audio": "audio/id/words/w-kuliah.mp3",
+      "tags": [
+        "勉強"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ujian",
+      "indonesian": "ujian",
+      "japanese": "試験、テスト",
+      "pos": "noun",
+      "registerNotes": "lulus ujian は「試験に合格する」。",
+      "audio": "audio/id/words/w-ujian.mp3",
+      "tags": [
+        "勉強"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sibuk",
+      "indonesian": "sibuk",
+      "japanese": "忙しい",
+      "pos": "adjective",
+      "registerNotes": "Sekarang sibuk apa?（最近何してるの？）は、よくある親しみのこもった質問です。",
+      "audio": "audio/id/words/w-sibuk.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tugas",
+      "indonesian": "tugas",
+      "japanese": "任務、課題、務め",
+      "pos": "noun",
+      "registerNotes": "職場でも学校でも、与えられた仕事なら何でも tugas です。宿題は PR（pe er と読み、pekerjaan rumah の略）。",
+      "audio": "audio/id/words/w-tugas.mp3",
+      "tags": [
+        "仕事",
+        "勉強"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pertanyaan",
+      "indonesian": "pertanyaan",
+      "japanese": "質問",
+      "pos": "noun",
+      "forms": {
+        "root": "tanya"
+      },
+      "registerNotes": "Ada pertanyaan?（質問はありますか？）。自分から聞くときは Boleh tanya?（ちょっと聞いてもいいですか？）で始めます。",
+      "audio": "audio/id/words/w-pertanyaan.mp3",
+      "tags": [
+        "勉強",
+        "仕事"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

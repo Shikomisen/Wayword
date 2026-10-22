@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "id": "words-home",
+  "title": "Home & Daily Life",
+  "description": "Around the house: the kitchen and the bathroom, the chores, the power and the neighbours.",
+  "items": [
+    {
+      "id": "w-dapur",
+      "indonesian": "dapur",
+      "english": "kitchen",
+      "pos": "noun",
+      "audio": "audio/id/words/w-dapur.mp3",
+      "tags": [
+        "home"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cuci",
+      "indonesian": "cuci",
+      "english": "to wash",
+      "pos": "verb",
+      "registerNotes": "In speech the root: cuci tangan (wash your hands), cuci piring (do the dishes), cuci baju (do the laundry). Written mencuci.",
+      "pitfallNote": "Washing yourself all over is mandi. You cuci your hands, face, clothes and dishes.",
+      "audio": "audio/id/words/w-cuci.mp3",
+      "tags": [
+        "home",
+        "chores"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-masak",
+      "indonesian": "masak",
+      "english": "to cook",
+      "pos": "verb",
+      "registerNotes": "Written memasak. Masakan is cooking or a dish: masakan Padang (Padang food).",
+      "audio": "audio/id/words/w-masak.mp3",
+      "tags": [
+        "home",
+        "cooking"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bersih-bersih",
+      "indonesian": "bersih-bersih",
+      "english": "to clean up, do the cleaning",
+      "pos": "verb",
+      "registerNotes": "The everyday way to say you're cleaning: Saya sedang bersih-bersih rumah. To clean one thing, use bersihkan: Tolong bersihkan mejanya.",
+      "audio": "audio/id/words/w-bersih-bersih.mp3",
+      "tags": [
+        "home",
+        "chores"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sabun",
+      "indonesian": "sabun",
+      "english": "soap",
+      "pos": "noun",
+      "audio": "audio/id/words/w-sabun.mp3",
+      "tags": [
+        "home",
+        "bathroom"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-handuk",
+      "indonesian": "handuk",
+      "english": "towel",
+      "pos": "noun",
+      "registerNotes": "At a hotel: Boleh minta handuk lagi? (Could I have another towel?)",
+      "audio": "audio/id/words/w-handuk.mp3",
+      "tags": [
+        "home",
+        "bathroom"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-gayung",
+      "indonesian": "gayung",
+      "english": "water scoop, dipper",
+      "pos": "noun",
+      "cultureNote": "Many bathrooms have a water tank (bak mandi) and a gayung: you scoop water and pour it over yourself, and never climb into the tank. By the toilet, a gayung or a hose takes the place of paper.",
+      "audio": "audio/id/words/w-gayung.mp3",
+      "tags": [
+        "home",
+        "bathroom"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-selimut",
+      "indonesian": "selimut",
+      "english": "blanket",
+      "pos": "noun",
+      "registerNotes": "Kamarnya dingin, boleh minta selimut? (The room's cold. Could I have a blanket?)",
+      "audio": "audio/id/words/w-selimut.mp3",
+      "tags": [
+        "home"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-listrik",
+      "indonesian": "listrik",
+      "english": "electricity, power",
+      "pos": "noun",
+      "cultureNote": "Many homes and rented rooms have prepaid meters: you buy a token (token listrik) at a minimarket or in an app and key in the code.",
+      "audio": "audio/id/words/w-listrik.mp3",
+      "tags": [
+        "home"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-lampu",
+      "indonesian": "lampu",
+      "english": "light, lamp",
+      "pos": "noun",
+      "registerNotes": "Tolong matikan lampunya (please turn the light off). Lampu merah, literally red light, is a set of traffic lights, a common landmark in directions.",
+      "audio": "audio/id/words/w-lampu.mp3",
+      "tags": [
+        "home"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kipas-angin",
+      "indonesian": "kipas angin",
+      "english": "(electric) fan",
+      "pos": "noun",
+      "registerNotes": "Literally wind fan. Kipas on its own is any fan, including a hand fan.",
+      "audio": "audio/id/words/w-kipas-angin.mp3",
+      "tags": [
+        "home"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ac",
+      "indonesian": "AC",
+      "english": "air conditioning, air-con",
+      "pos": "noun",
+      "registerNotes": "Said a se. Rooms are often offered as AC or non-AC. Bisa nyalakan AC-nya? (Could you turn the air-con on?)",
+      "audio": "audio/id/words/w-ac.mp3",
+      "audioHint": "a se",
+      "tags": [
+        "home",
+        "hotel"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sampah",
+      "indonesian": "sampah",
+      "english": "rubbish",
+      "pos": "noun",
+      "registerNotes": "Buang sampah is to throw rubbish away, and a bin is a tempat sampah. Signs say Buanglah sampah pada tempatnya (put rubbish in its place).",
+      "audio": "audio/id/words/w-sampah.mp3",
+      "tags": [
+        "home"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tetangga",
+      "indonesian": "tetangga",
+      "english": "neighbour",
+      "pos": "noun",
+      "cultureNote": "Neighbours greet you in passing with Mau ke mana? or Dari mana? It's a friendly hello, and a vague answer such as Jalan-jalan is enough.",
+      "audio": "audio/id/words/w-tetangga.mp3",
+      "tags": [
+        "home",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-belanja",
+      "indonesian": "belanja",
+      "english": "to shop, go shopping",
+      "pos": "verb",
+      "registerNotes": "Includes the everyday food shopping: belanja ke pasar (going to the market for groceries). Written berbelanja.",
+      "audio": "audio/id/words/w-belanja.mp3",
+      "tags": [
+        "home",
+        "shopping"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sapu",
+      "indonesian": "sapu",
+      "english": "broom",
+      "pos": "noun",
+      "registerNotes": "To sweep is menyapu, or nyapu in casual speech.",
+      "audio": "audio/id/words/w-sapu.mp3",
+      "tags": [
+        "home",
+        "chores"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-jendela",
+      "indonesian": "jendela",
+      "english": "window",
+      "pos": "noun",
+      "registerNotes": "From Portuguese janela. Boleh buka jendelanya? (May I open the window?)",
+      "audio": "audio/id/words/w-jendela.mp3",
+      "tags": [
+        "home"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-atap",
+      "indonesian": "atap",
+      "english": "roof",
+      "pos": "noun",
+      "registerNotes": "Atapnya bocor (the roof leaks) is a common rainy-season complaint.",
+      "audio": "audio/id/words/w-atap.mp3",
+      "tags": [
+        "home"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

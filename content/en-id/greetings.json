@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 1,
+  "id": "greetings",
+  "title": "Greetings & Politeness",
+  "order": 1,
+  "description": "Hello at every time of day, thank you and sorry, goodbye, and how to address people with Bapak, Ibu, Mas and Mbak. The words you'll use every day, with anyone.",
+  "phrases": [
+    {
+      "id": "gre-01",
+      "indonesian": "Selamat pagi.",
+      "english": "Good morning.",
+      "registerNotes": "From early morning until about 11 a.m. The reply is the same: Selamat pagi, or just Pagi.",
+      "audio": "audio/id/gre-01.mp3",
+      "tags": [
+        "greetings",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-02",
+      "indonesian": "Selamat siang.",
+      "english": "Good day. (late morning to mid-afternoon)",
+      "registerNotes": "From about 11 a.m. to 3 p.m., the hottest part of the day.",
+      "pitfallNote": "Siang is midday, not afternoon. English speakers switch to selamat sore after noon, but at 1 p.m. it's still siang.",
+      "audio": "audio/id/gre-02.mp3",
+      "tags": [
+        "greetings",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-03",
+      "indonesian": "Selamat sore.",
+      "english": "Good afternoon.",
+      "registerNotes": "From about 3 p.m. until it gets dark, which near the equator is around 6 p.m. all year.",
+      "audio": "audio/id/gre-03.mp3",
+      "tags": [
+        "greetings",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-04",
+      "indonesian": "Selamat malam.",
+      "english": "Good evening. / Good night.",
+      "registerNotes": "After dark, both when you arrive and when you leave. Going to bed, it's selamat tidur.",
+      "audio": "audio/id/gre-04.mp3",
+      "tags": [
+        "greetings",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-05",
+      "indonesian": "Pagi, Bu.",
+      "english": "Morning. (to an older woman)",
+      "registerNotes": "Dropping selamat is warm and everyday, with neighbours, staff and colleagues; Siang, Pak and Sore, Bu work the same way.",
+      "cultureNote": "Bapak (Pak) and Ibu (Bu) mean father and mother, and they're how you address any adult older than you or in a formal role: shopkeepers, drivers, officials. Adding one is the quickest way to sound polite.",
+      "audio": "audio/id/gre-05.mp3",
+      "tags": [
+        "greetings",
+        "address"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-06",
+      "indonesian": "Apa kabar?",
+      "english": "How are you?",
+      "registerNotes": "Literally 'what news?'. For people you know or are meeting properly; with someone older, add the title: Apa kabar, Pak?",
+      "pitfallNote": "It isn't a passing 'how's it going?': you don't say it to a cashier. Neighbours in the street greet with Mau ke mana? instead.",
+      "audio": "audio/id/gre-06.mp3",
+      "tags": [
+        "greetings",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-07",
+      "indonesian": "Baik, terima kasih.",
+      "english": "Fine, thank you.",
+      "registerNotes": "The usual answer to Apa kabar?; Kabar baik ('the news is good') is the fuller form. To ask back, add Bapak sendiri bagaimana? or Ibu sendiri bagaimana? (And yourself?).",
+      "audio": "audio/id/gre-07.mp3",
+      "tags": [
+        "greetings",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-08",
+      "indonesian": "Terima kasih.",
+      "english": "Thank you.",
+      "registerNotes": "Right everywhere, with anyone. Terima kasih banyak is thank you very much; makasih is the casual clipped form.",
+      "audio": "audio/id/gre-08.mp3",
+      "tags": [
+        "thanks",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-09",
+      "indonesian": "Sama-sama.",
+      "english": "You're welcome.",
+      "registerNotes": "The everyday reply to terima kasih, to anyone. You may also hear Kembali ('back to you'), which is a little more formal.",
+      "audio": "audio/id/gre-09.mp3",
+      "tags": [
+        "thanks",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-10",
+      "indonesian": "Maaf.",
+      "english": "Sorry.",
+      "registerNotes": "For apologising, and to soften a question or a correction: Maaf, boleh tanya? (Sorry, can I ask something?). Mohon maaf is the formal version.",
+      "pitfallNote": "To squeeze past someone or catch a waiter's eye, the word is permisi. Maaf is for when you've done something wrong or are about to impose.",
+      "audio": "audio/id/gre-10.mp3",
+      "tags": [
+        "apology",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-11",
+      "indonesian": "Permisi.",
+      "english": "Excuse me.",
+      "registerNotes": "To get someone's attention, to get past, or to announce yourself at a door or a shop. Also said as you leave: Permisi, Bu.",
+      "cultureNote": "When walking in front of people who are sitting down, people stoop a little and hold the right arm low as they say permisi.",
+      "audio": "audio/id/gre-11.mp3",
+      "tags": [
+        "politeness",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-12",
+      "indonesian": "Tolong bicara pelan-pelan, ya.",
+      "english": "Please speak slowly.",
+      "registerNotes": "Tolong ('help') goes before the verb to ask someone to do something for you; ya at the end softens it. Add Pak or Bu to be more polite still.",
+      "pitfallNote": "Tolong comes first, not last like English 'please'. Shouted on its own, Tolong means 'Help'.",
+      "audio": "audio/id/gre-12.mp3",
+      "tags": [
+        "requests",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-13",
+      "indonesian": "Silakan.",
+      "english": "Please, go ahead.",
+      "registerNotes": "Offering or inviting: letting someone go first, take a seat or start eating. As a guest you'll hear Silakan masuk (come in) and Silakan duduk (have a seat).",
+      "pitfallNote": "Silakan invites someone to do something for themselves; tolong asks them to do something for you. It's spelt silakan, though silahkan is common on signs.",
+      "audio": "audio/id/gre-13.mp3",
+      "tags": [
+        "politeness",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-14",
+      "indonesian": "Mari makan.",
+      "english": "Please, help yourself. (said when you're eating)",
+      "registerNotes": "Mari is a polite 'let's'; in casual speech it's ayo. On its own, Mari, Pak is also a polite goodbye as you walk on.",
+      "cultureNote": "If someone comes by while you're eating, it's polite to offer with Mari makan. It's a courtesy, not a real invitation, and the answer is usually Silakan, silakan (go ahead).",
+      "audio": "audio/id/gre-14.mp3",
+      "tags": [
+        "politeness",
+        "food"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-15",
+      "indonesian": "Nama saya Emma.",
+      "english": "My name's Emma.",
+      "registerNotes": "Put your own name in. More formally, start with Perkenalkan ('let me introduce myself'): Perkenalkan, nama saya Emma.",
+      "pitfallNote": "There's no 'is', and the owner comes after the thing: nama saya is literally 'name my'.",
+      "audio": "audio/id/gre-15.mp3",
+      "tags": [
+        "introductions",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-16",
+      "indonesian": "Maaf, namanya siapa?",
+      "english": "Sorry, what's your name?",
+      "registerNotes": "Namanya ('the name') neatly avoids choosing a word for 'you'. To someone older, Nama Bapak siapa? or Nama Ibu siapa?",
+      "pitfallNote": "A name is asked with siapa (who), not apa (what).",
+      "audio": "audio/id/gre-16.mp3",
+      "tags": [
+        "introductions",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-17",
+      "indonesian": "Senang bertemu dengan Anda.",
+      "english": "Nice to meet you.",
+      "registerNotes": "Polite and safe at a first meeting. To someone older, swap Anda for Bapak or Ibu: Senang bertemu dengan Ibu.",
+      "pitfallNote": "Anda is polite but a little impersonal face to face; Indonesians usually say the person's name or Bapak or Ibu instead.",
+      "audio": "audio/id/gre-17.mp3",
+      "tags": [
+        "introductions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-18",
+      "indonesian": "Salam kenal.",
+      "english": "Nice to meet you. (when introducing yourself)",
+      "registerNotes": "Literally 'greetings of acquaintance'. Said after your name, especially to a group or in a first message; friendly but still polite.",
+      "audio": "audio/id/gre-18.mp3",
+      "tags": [
+        "introductions"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-19",
+      "indonesian": "Terima kasih, Mbak.",
+      "english": "Thank you. (to a young woman)",
+      "registerNotes": "Add the title to thank anyone who serves you: Terima kasih, Pak / Bu / Mas / Mbak. On its own, terima kasih is fine too.",
+      "cultureNote": "Mas (to a young man) and Mbak (to a young woman) are how people in Jakarta and Java address waiters, shop staff and drivers around their own age; Pak and Bu are for anyone older. Elsewhere, Kak is a safe, friendly choice.",
+      "audio": "audio/id/gre-19.mp3",
+      "tags": [
+        "thanks",
+        "address"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-20",
+      "indonesian": "Ya.",
+      "english": "Yes.",
+      "registerNotes": "Iya means the same, a little softer, and is very common in speech. At the end of a sentence, ya softens it, like 'OK?'.",
+      "pitfallNote": "Ya often means 'I'm listening' rather than 'I agree'. Nodding along with ya can sound like you've agreed to something.",
+      "audio": "audio/id/gre-20.mp3",
+      "tags": [
+        "yes-no",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-21",
+      "indonesian": "Tidak, terima kasih.",
+      "english": "No, thank you.",
+      "registerNotes": "For turning down an offer from a vendor or a driver, with a smile. Tidak usah, terima kasih ('no need') is just as common.",
+      "pitfallNote": "Tidak says no to doing or being something. To say 'no, it's not that thing', use bukan: Ini kopi? Bukan, ini teh.",
+      "audio": "audio/id/gre-21.mp3",
+      "tags": [
+        "yes-no",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-22",
+      "indonesian": "Sampai jumpa.",
+      "english": "See you. / Goodbye.",
+      "registerNotes": "The all-purpose goodbye. Sampai jumpa lagi is see you again, sampai besok is see you tomorrow, and with friends it's sampai ketemu.",
+      "audio": "audio/id/gre-22.mp3",
+      "tags": [
+        "goodbyes",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-23",
+      "register": "casual",
+      "indonesian": "Dadah!",
+      "english": "Bye-bye!",
+      "polite": {
+        "indonesian": "Sampai jumpa.",
+        "audio": "audio/id/casual/gre-23-polite.mp3"
+      },
+      "registerNotes": "With a wave, to friends and children. Not to anyone you'd call Bapak or Ibu.",
+      "audio": "audio/id/casual/gre-23.mp3",
+      "tags": [
+        "goodbyes",
+        "casual"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-24",
+      "indonesian": "Saya permisi dulu.",
+      "english": "I'll be going now.",
+      "registerNotes": "The polite way to leave a house, a shop or a meeting. Dulu ('first') makes it gentle. With friends, it's Aku duluan, ya.",
+      "cultureNote": "People rarely just slip away: telling the host, and anyone older, that you're leaving is expected.",
+      "audio": "audio/id/gre-24.mp3",
+      "tags": [
+        "goodbyes",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-25",
+      "indonesian": "Selamat jalan.",
+      "english": "Have a good trip. / Goodbye.",
+      "registerNotes": "Said to the person who is leaving: at a station, an airport or the end of a visit. Literally 'safe journey'.",
+      "audio": "audio/id/gre-25.mp3",
+      "tags": [
+        "goodbyes"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-26",
+      "indonesian": "Selamat tinggal.",
+      "english": "Goodbye. (to those staying)",
+      "registerNotes": "Said by the person leaving to those who stay. Literally 'safe staying'.",
+      "pitfallNote": "It sounds final, like a farewell for a long time. For an everyday goodbye, say Saya permisi dulu or Sampai jumpa.",
+      "audio": "audio/id/gre-26.mp3",
+      "tags": [
+        "goodbyes"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

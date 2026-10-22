@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "id": "words-small",
+  "title": "Kata-kata kecil",
+  "description": "Kata tanya, ini dan itu, sangat, bersama, lagi — kata-kata kecil yang menyatukan setiap kalimat.",
+  "items": [
+    {
+      "id": "w-kore",
+      "japanese": "これ",
+      "romaji": "kore",
+      "indonesian": "ini",
+      "pos": "pronoun",
+      "usage": "これ dekat saya, それ dekat kamu, あれ jauh di sana. Bahasa Indonesia hanya punya \"ini\" dan \"itu\"; bahasa Jepang punya tiga.",
+      "audio": "audio/ja/words/w-kore.mp3",
+      "tags": [
+        "menunjuk"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sore",
+      "japanese": "それ",
+      "romaji": "sore",
+      "indonesian": "itu (dekat kamu)",
+      "pos": "pronoun",
+      "audio": "audio/ja/words/w-sore.mp3",
+      "tags": [
+        "menunjuk"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-are",
+      "japanese": "あれ",
+      "romaji": "are",
+      "indonesian": "itu (yang jauh di sana)",
+      "pos": "pronoun",
+      "audio": "audio/ja/words/w-are.mp3",
+      "tags": [
+        "menunjuk"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-koko",
+      "japanese": "ここ",
+      "romaji": "koko",
+      "indonesian": "sini, di sini",
+      "pos": "pronoun",
+      "audio": "audio/ja/words/w-koko.mp3",
+      "tags": [
+        "menunjuk"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-doko",
+      "japanese": "どこ",
+      "romaji": "doko",
+      "indonesian": "di mana, mana",
+      "pos": "question",
+      "audio": "audio/ja/words/w-doko.mp3",
+      "tags": [
+        "pertanyaan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dare",
+      "japanese": "誰",
+      "furigana": "{誰|だれ}",
+      "romaji": "dare",
+      "indonesian": "siapa",
+      "pos": "question",
+      "audio": "audio/ja/words/w-dare.mp3",
+      "tags": [
+        "pertanyaan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-nani",
+      "japanese": "何",
+      "furigana": "{何|なに}",
+      "romaji": "nani",
+      "indonesian": "apa",
+      "pos": "question",
+      "usage": "Dibaca なん sebelum です, の, dan kata bantu bilangan: 何ですか, 何時.",
+      "audio": "audio/ja/words/w-nani.mp3",
+      "tags": [
+        "pertanyaan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-itsu",
+      "japanese": "いつ",
+      "romaji": "itsu",
+      "indonesian": "kapan",
+      "pos": "question",
+      "audio": "audio/ja/words/w-itsu.mp3",
+      "tags": [
+        "pertanyaan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dou",
+      "japanese": "どう",
+      "romaji": "dō",
+      "indonesian": "bagaimana; bagaimana kalau",
+      "pos": "question",
+      "usage": "どう？ saja bisa berarti \"Bagaimana tadi?\" atau \"Bagaimana kalau begitu?\".",
+      "audio": "audio/ja/words/w-dou.mp3",
+      "tags": [
+        "pertanyaan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-doushite",
+      "japanese": "どうして",
+      "romaji": "dōshite",
+      "indonesian": "kenapa, mengapa",
+      "pos": "question",
+      "usage": "なんで adalah \"kenapa\" yang santai; なぜ untuk tulisan atau situasi resmi.",
+      "audio": "audio/ja/words/w-doushite.mp3",
+      "tags": [
+        "pertanyaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-totemo",
+      "japanese": "とても",
+      "romaji": "totemo",
+      "indonesian": "sangat",
+      "pos": "adverb",
+      "usage": "すごく adalah \"sangat\" yang santai dalam percakapan, mirip \"banget\".",
+      "audio": "audio/ja/words/w-totemo.mp3",
+      "tags": [
+        "tingkat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-chotto",
+      "japanese": "ちょっと",
+      "romaji": "chotto",
+      "indonesian": "sedikit, agak",
+      "pos": "adverb",
+      "usage": "Juga cara sopan untuk bilang \"tidak\": ちょっと… yang dibiarkan menggantung berarti \"itu agak sulit\".",
+      "audio": "audio/ja/words/w-chotto.mp3",
+      "tags": [
+        "tingkat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-zenbu",
+      "japanese": "全部",
+      "furigana": "{全部|ぜんぶ}",
+      "romaji": "zenbu",
+      "indonesian": "semua, semuanya",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-zenbu.mp3",
+      "tags": [
+        "tingkat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-issho",
+      "japanese": "一緒に",
+      "furigana": "{一緒|いっしょ}に",
+      "romaji": "issho ni",
+      "indonesian": "bersama",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-issho.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hitori",
+      "japanese": "一人で",
+      "furigana": "{一人|ひとり}で",
+      "romaji": "hitori de",
+      "indonesian": "sendiri, sendirian",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-hitori.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mata",
+      "japanese": "また",
+      "romaji": "mata",
+      "indonesian": "lagi",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-mata.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

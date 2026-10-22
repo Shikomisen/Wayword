@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-noun-adj",
+  "connector": "rumah besar",
+  "gloss": "the noun comes first",
+  "title": "Noun first: rumah besar",
+  "pattern": "noun + describing word: rumah besar · yang + describing word: yang besar",
+  "explanation": "A describing word comes after its noun, the opposite of English: rumah besar is 'a big house', kopi panas 'hot coffee', orang baik 'a good person'. With two, both follow the noun: mobil merah baru, a new red car. Ini and itu come last of all: rumah besar itu, that big house. To pick one out from several, use yang, 'the one that's': yang besar is 'the big one', and Saya mau yang merah is 'I'd like the red one'.",
+  "natural": "Yang does a lot of work in shops and warungs, where the noun is obvious: Yang ini, Bu (This one, please), Mau yang pedas atau tidak? (Spicy or not?)",
+  "stiff": "Putting the describing word first, as in English, is wrong: besar rumah, panas kopi. And yang isn't needed every time: rumah besar is just 'a big house', while rumah yang besar picks out 'the house that's big', as opposed to the small one.",
+  "examples": [
+    {
+      "id": "gx-noun-adj-1",
+      "indonesian": "Saya mau kopi panas.",
+      "english": "I'd like a hot coffee.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "kopi ",
+          "w": "w-kopi"
+        },
+        {
+          "t": "panas.",
+          "w": "w-panas"
+        }
+      ],
+      "gap": {
+        "before": "Saya mau ",
+        "answer": "kopi panas",
+        "after": ".",
+        "options": [
+          "kopi panas",
+          "panas kopi"
+        ],
+        "why": "The describing word follows the noun: kopi panas."
+      },
+      "audio": "audio/id/grammar/gx-noun-adj-1.mp3",
+      "tags": [
+        "grammar",
+        "noun-adj"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-noun-adj-2",
+      "indonesian": "Kami tinggal di rumah kecil.",
+      "english": "We live in a small house.",
+      "chunks": [
+        {
+          "t": "Kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di ",
+          "w": "w-di"
+        },
+        {
+          "t": "rumah ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "kecil.",
+          "w": "w-kecil"
+        }
+      ],
+      "gap": {
+        "before": "Kami tinggal di ",
+        "answer": "rumah kecil",
+        "after": ".",
+        "options": [
+          "rumah kecil",
+          "kecil rumah"
+        ],
+        "why": "Noun first, then what it's like: rumah kecil."
+      },
+      "audio": "audio/id/grammar/gx-noun-adj-2.mp3",
+      "tags": [
+        "grammar",
+        "noun-adj"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-noun-adj-3",
+      "indonesian": "Tas besar itu punya saya.",
+      "english": "That big bag is mine.",
+      "chunks": [
+        {
+          "t": "Tas ",
+          "w": "w-tas"
+        },
+        {
+          "t": "besar ",
+          "w": "w-besar"
+        },
+        {
+          "t": "itu ",
+          "w": "w-itu"
+        },
+        {
+          "t": "punya "
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Tas besar itu",
+        "after": " punya saya.",
+        "options": [
+          "Tas besar itu",
+          "Tas itu besar",
+          "Itu tas besar"
+        ],
+        "why": "Itu comes after the whole description: tas besar itu, that big bag."
+      },
+      "audio": "audio/id/grammar/gx-noun-adj-3.mp3",
+      "tags": [
+        "grammar",
+        "noun-adj"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-noun-adj-4",
+      "indonesian": "Saya mau yang kecil.",
+      "english": "I'd like the small one.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "yang "
+        },
+        {
+          "t": "kecil.",
+          "w": "w-kecil"
+        }
+      ],
+      "gap": {
+        "before": "Saya mau ",
+        "answer": "yang",
+        "after": " kecil.",
+        "options": [
+          "yang",
+          "itu",
+          "ini"
+        ],
+        "why": "Yang picks one out: yang kecil, the small one."
+      },
+      "audio": "audio/id/grammar/gx-noun-adj-4.mp3",
+      "tags": [
+        "grammar",
+        "noun-adj"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

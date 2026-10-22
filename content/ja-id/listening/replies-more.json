@@ -1,0 +1,499 @@
+{
+  "schemaVersion": 1,
+  "id": "replies-more",
+  "title": "ナチュラルスピードで聞き取る",
+  "description": "友達、家族、近所の人、医者、店員さんの、ふだんのスピードの話し方。nggak、udah、aja、kok、sih など、実際によく耳にするくだけた言い方も。聞いて意味を選んだら、答え方も覚えましょう。",
+  "items": [
+    {
+      "id": "lm-01",
+      "speaker": "friend",
+      "indonesian": "Udah makan belum?",
+      "japanese": "もうご飯食べた？",
+      "reply": {
+        "indonesian": "Udah, tadi. Kamu?",
+        "japanese": "うん、さっき。そっちは？"
+      },
+      "note": "最後の belum で「もう〜した？まだ？」という質問になります。答えは ya や nggak ではなく、udah（もう）か belum（まだ）です。",
+      "audio": "audio/id/listening/lm-01.mp3",
+      "tags": [
+        "友達"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lm-02",
+      "speaker": "friend",
+      "indonesian": "Kok nggak bilang-bilang mau ke Bali?",
+      "japanese": "バリに行くなら、なんで言ってくれなかったの？",
+      "reply": {
+        "indonesian": "Maaf, mendadak, sih.",
+        "japanese": "ごめん、急に決まったからさ。"
+      },
+      "note": "bilang は話し言葉の「言う」。bilang-bilang と重ねると「ひとこと言う」で、少しすねた気持ちがこもります。",
+      "audio": "audio/id/listening/lm-02.mp3",
+      "tags": [
+        "友達"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-03",
+      "speaker": "friend",
+      "indonesian": "Nanti malam jadi nonton, nggak?",
+      "japanese": "今夜の映画、予定どおり行くよね？",
+      "reply": {
+        "indonesian": "Jadi, dong! Jam tujuh, kan?",
+        "japanese": "もちろん！7時だよね？"
+      },
+      "note": "ここの jadi は「予定どおり実行する」。最後の nggak で「〜する？しない？」という質問になります。",
+      "audio": "audio/id/listening/lm-03.mp3",
+      "tags": [
+        "友達",
+        "予定"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-04",
+      "speaker": "friend",
+      "indonesian": "Aku telat dikit, ya. Masih di jalan.",
+      "japanese": "ちょっと遅れる。まだ向かってるところ。",
+      "reply": {
+        "indonesian": "Oke, santai aja. Aku tunggu di dalam.",
+        "japanese": "オッケー、急がなくていいよ。中で待ってるね。"
+      },
+      "note": "telat は terlambat（遅れる）の話し言葉、dikit は sedikit（少し）の se- が落ちた形です。",
+      "audio": "audio/id/listening/lm-04.mp3",
+      "tags": [
+        "友達",
+        "予定"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lm-05",
+      "speaker": "friend",
+      "indonesian": "Aduh, maaf banget, aku nggak jadi ikut. Ada urusan mendadak.",
+      "japanese": "ああ、ほんとごめん、やっぱり行けなくなった。急な用事ができちゃって。",
+      "reply": {
+        "indonesian": "Yah, sayang banget. Ya udah, lain kali, ya.",
+        "japanese": "えー、残念。まあいいよ、また今度ね。"
+      },
+      "note": "nggak jadi は「予定がなくなった」。urusan（用事）は、日本語の「ちょっと用事があって」と同じで、誰も深く聞かない理由です。",
+      "audio": "audio/id/listening/lm-05.mp3",
+      "tags": [
+        "友達",
+        "予定"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-06",
+      "speaker": "friend",
+      "indonesian": "Gimana, enak nggak?",
+      "japanese": "どう、おいしい？",
+      "reply": {
+        "indonesian": "Enak banget! Kamu harus coba.",
+        "japanese": "すっごくおいしい！食べてみなよ。"
+      },
+      "note": "gimana だけで「で、どう？」と感想を聞いています。",
+      "audio": "audio/id/listening/lm-06.mp3",
+      "tags": [
+        "友達",
+        "食べ物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lm-07",
+      "speaker": "friend",
+      "indonesian": "Kamu kok kelihatan capek banget, sih?",
+      "japanese": "なんでそんなに疲れた顔してるの？",
+      "reply": {
+        "indonesian": "Iya, semalam nggak bisa tidur.",
+        "japanese": "うん、ゆうべ眠れなくて。"
+      },
+      "note": "kok は驚いて聞く言葉で、sih がそれをやわらげます。責めているのではなく、心配しているのです。",
+      "audio": "audio/id/listening/lm-07.mp3",
+      "tags": [
+        "友達"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-08",
+      "speaker": "friend",
+      "indonesian": "Mau aku jemput, nggak?",
+      "japanese": "迎えに行こうか？",
+      "reply": {
+        "indonesian": "Nggak usah, aku naik ojek aja.",
+        "japanese": "大丈夫、オジェックで行くから。"
+      },
+      "audio": "audio/id/listening/lm-08.mp3",
+      "tags": [
+        "友達",
+        "予定"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lm-09",
+      "speaker": "friend",
+      "indonesian": "Bagus, kok. Cocok sama kamu.",
+      "japanese": "いいじゃん、ほんとに。似合ってるよ。",
+      "reply": {
+        "indonesian": "Beneran? Makasih, ya.",
+        "japanese": "ほんと？ありがとう。"
+      },
+      "note": "文末の kok は「本当にそうだよ」と安心させる言い方。sama は dengan（〜と）の話し言葉です。",
+      "audio": "audio/id/listening/lm-09.mp3",
+      "tags": [
+        "友達",
+        "買い物"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-10",
+      "speaker": "friend",
+      "indonesian": "Kamu udah pernah ke Lombok, belum?",
+      "japanese": "ロンボク島って、行ったことある？",
+      "reply": {
+        "indonesian": "Belum pernah. Bagus, ya?",
+        "japanese": "まだないんだ。いいところ？"
+      },
+      "note": "udah pernah …? への「いいえ」は belum pernah（まだない）。日本語の「まだ行ったことない」と同じく、これから行く可能性を残す言い方です。",
+      "audio": "audio/id/listening/lm-10.mp3",
+      "tags": [
+        "友達",
+        "旅行"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lm-11",
+      "speaker": "friend",
+      "indonesian": "Ini HP kamu, bukan? Ketinggalan di meja.",
+      "japanese": "これ、そっちの携帯じゃない？テーブルに置き忘れてたよ。",
+      "reply": {
+        "indonesian": "Aduh, iya! Makasih banyak.",
+        "japanese": "あっ、ほんとだ！ほんとにありがとう。"
+      },
+      "note": "HP（ha-pe と読みます）は携帯電話のふだんの言い方です。ketinggalan は、うっかり置き忘れること。",
+      "audio": "audio/id/listening/lm-11.mp3",
+      "audioHint": "Ini ha pe kamu, bukan? Ketinggalan di meja.",
+      "tags": [
+        "友達"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-12",
+      "speaker": "friend",
+      "indonesian": "Hari ini aku yang traktir, ya.",
+      "japanese": "今日はおごるよ。",
+      "reply": {
+        "indonesian": "Wah, makasih! Lain kali gantian, ya.",
+        "japanese": "わあ、ありがとう！次はこっちの番ね。"
+      },
+      "note": "traktir は食事や飲み物をおごること。友達同士では交代でおごるか、割り勘（patungan）にします。",
+      "audio": "audio/id/listening/lm-12.mp3",
+      "tags": [
+        "友達",
+        "食べ物"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-13",
+      "speaker": "mother",
+      "indonesian": "Udah, nggak usah dicuci. Taruh aja di situ.",
+      "japanese": "いいのいいの、洗わなくて。そこに置いといて。",
+      "reply": {
+        "indonesian": "Tidak apa-apa, Tante. Biar saya bantu.",
+        "japanese": "大丈夫です。手伝わせてください。"
+      },
+      "note": "日本と同じで、ホストは必ず断りますが、申し出ること自体が大事です。相手がくだけた話し方でも、こちらはていねいに答えます。",
+      "audio": "audio/id/listening/lm-13.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-14",
+      "speaker": "mother",
+      "indonesian": "Kok makannya sedikit? Nggak suka, ya?",
+      "japanese": "あら、あんまり食べてないわね。口に合わない？",
+      "reply": {
+        "indonesian": "Suka sekali, Tante. Tadi siang saya makan banyak.",
+        "japanese": "すごくおいしいです。お昼にたくさん食べたので。"
+      },
+      "note": "少ししか食べないと、ホストは心配します。日本式の遠慮で控えめにすると、口に合わないと思われがち。料理をほめて、理由を添えましょう。",
+      "audio": "audio/id/listening/lm-14.mp3",
+      "tags": [
+        "家族",
+        "食べ物"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-15",
+      "speaker": "mother",
+      "indonesian": "Hati-hati di jalan, ya. Kalau udah sampai, kabarin.",
+      "japanese": "気をつけて帰ってね。着いたら連絡してね。",
+      "reply": {
+        "indonesian": "Iya, Tante. Nanti saya kabari.",
+        "japanese": "はい。着いたら連絡します。"
+      },
+      "note": "kabarin は kabari（知らせる）のくだけた形。家族は本当にその連絡を待っています。",
+      "audio": "audio/id/listening/lm-15.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-16",
+      "speaker": "father",
+      "indonesian": "Udah lama di Indonesia? Kok bahasanya lancar.",
+      "japanese": "インドネシアは長いの？インドネシア語が上手だね。",
+      "reply": {
+        "indonesian": "Baru dua tahun, Om. Masih belajar.",
+        "japanese": "まだ2年です。勉強中です。"
+      },
+      "note": "masih belajar（まだ勉強中です）と控えめに返すのが、ほめ言葉の上手な受け方です。日本語の「いえいえ、まだまだです」に近い感覚です。",
+      "audio": "audio/id/listening/lm-16.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-17",
+      "speaker": "mother",
+      "indonesian": "Nginep sini aja, udah malam.",
+      "japanese": "泊まっていきなさいよ、もう遅いし。",
+      "reply": {
+        "indonesian": "Terima kasih, Tante, tapi besok saya kerja pagi.",
+        "japanese": "ありがとうございます。でも明日は朝から仕事なんです。"
+      },
+      "note": "nginep は menginap（泊まる）の話し言葉。お礼と理由を添えれば、やさしい断り方になります。",
+      "audio": "audio/id/listening/lm-17.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lm-18",
+      "speaker": "neighbour",
+      "indonesian": "Mau ke mana, Sam? Kok rapi banget.",
+      "japanese": "サムさん、どこ行くの？ずいぶんおしゃれして。",
+      "reply": {
+        "indonesian": "Mau ke pernikahan teman, Bu.",
+        "japanese": "友達の結婚式に行くんです。"
+      },
+      "note": "rapi（きちんとした）は、めかしこんだ時の見た目を言う言葉。近所の人はよく見ていて、口に出します。Mau ke mana? 自体は、日本の「お出かけですか？」のようなあいさつです。",
+      "audio": "audio/id/listening/lm-18.mp3",
+      "tags": [
+        "近所"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-19",
+      "speaker": "neighbour",
+      "indonesian": "Katanya nanti malam mati lampu, lho.",
+      "japanese": "今夜、停電するんだって。",
+      "reply": {
+        "indonesian": "Oh, ya? Dari jam berapa, Bu?",
+        "japanese": "え、そうなんですか？何時からですか？"
+      },
+      "note": "katanya は「〜だって・〜らしい」。mati lampu（明かりが死ぬ）は停電のことです。",
+      "audio": "audio/id/listening/lm-19.mp3",
+      "tags": [
+        "近所",
+        "家"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-20",
+      "speaker": "neighbour",
+      "indonesian": "Ini ada kue sedikit, buat icip-icip.",
+      "japanese": "お菓子を少しね、味見にどうぞ。",
+      "reply": {
+        "indonesian": "Wah, kok repot-repot, Bu? Terima kasih banyak.",
+        "japanese": "わあ、そんなお気遣いを。本当にありがとうございます。"
+      },
+      "note": "Kok repot-repot?（わざわざどうして？）は、ありがたく受け取る時の言い方です。お皿は空で返さず、あとで何かをのせて返しましょう。日本の「お返し」に似た習慣です。",
+      "audio": "audio/id/listening/lm-20.mp3",
+      "tags": [
+        "近所"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-21",
+      "speaker": "neighbour",
+      "indonesian": "Airnya mati dari pagi. Di rumahmu juga?",
+      "japanese": "朝から水が止まってるのよ。お宅も？",
+      "reply": {
+        "indonesian": "Iya, sama, Bu. Kenapa, ya?",
+        "japanese": "はい、うちもです。どうしたんでしょうね。"
+      },
+      "note": "-mu は「あなたの」の短くくだけた形で、rumahmu は「あなたの家」。年上の隣人はこれを使ってきますが、こちらは Bu や Pak を使って答えます。",
+      "audio": "audio/id/listening/lm-21.mp3",
+      "tags": [
+        "近所",
+        "家"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-22",
+      "speaker": "doctor",
+      "indonesian": "Ada riwayat penyakit? Darah tinggi, asma?",
+      "japanese": "持病はありますか？高血圧とか、ぜんそくとか。",
+      "reply": {
+        "indonesian": "Tidak ada, Dok.",
+        "japanese": "ありません。"
+      },
+      "note": "riwayat penyakit は既往歴のこと。医者はよくある病気をいくつか挙げて聞いてくれます。",
+      "audio": "audio/id/listening/lm-22.mp3",
+      "tags": [
+        "医者"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lm-23",
+      "speaker": "doctor",
+      "indonesian": "Tensinya agak tinggi, ya. Kurangi garam.",
+      "japanese": "血圧が少し高いですね。塩分を控えてください。",
+      "reply": {
+        "indonesian": "Baik, Dok. Perlu obat?",
+        "japanese": "わかりました。薬は必要ですか？"
+      },
+      "note": "tensi（血圧）は、クリニックでほぼ毎回測ります。",
+      "audio": "audio/id/listening/lm-23.mp3",
+      "tags": [
+        "医者"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-24",
+      "speaker": "doctor",
+      "indonesian": "Antibiotiknya dihabiskan, ya, walaupun udah enakan.",
+      "japanese": "よくなっても、抗生物質は最後まで飲み切ってくださいね。",
+      "reply": {
+        "indonesian": "Baik, Dok. Sampai habis.",
+        "japanese": "わかりました。最後まで飲みます。"
+      },
+      "note": "enakan は「（体調が）よくなった」のくだけた言い方で、医者も使います。dihabiskan は「使い切る・飲み切る」。",
+      "audio": "audio/id/listening/lm-24.mp3",
+      "tags": [
+        "医者"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lm-25",
+      "speaker": "pharmacist",
+      "indonesian": "Obat ini bikin ngantuk, jadi jangan nyetir, ya.",
+      "japanese": "この薬は眠くなるので、運転はしないでくださいね。",
+      "reply": {
+        "indonesian": "Oh, oke. Diminum malam aja, ya?",
+        "japanese": "あ、わかりました。じゃあ夜に飲めばいいですか？"
+      },
+      "note": "bikin は membuat（〜させる・作る）の話し言葉、nyetir は menyetir（運転する）の話し言葉です。",
+      "audio": "audio/id/listening/lm-25.mp3",
+      "tags": [
+        "薬局"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lm-26",
+      "speaker": "doctor",
+      "indonesian": "Sakitnya di sebelah mana?",
+      "japanese": "痛いのはどのあたりですか？",
+      "reply": {
+        "indonesian": "Di sini, Dok. Kalau ditekan, sakit.",
+        "japanese": "ここです。押すと痛いです。"
+      },
+      "note": "sebelah mana（どちら側）は、痛む場所を詳しく聞く言い方です。",
+      "audio": "audio/id/listening/lm-26.mp3",
+      "tags": [
+        "医者"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-27",
+      "speaker": "clerk",
+      "indonesian": "Yang ini lagi diskon, Kak. Beli dua gratis satu.",
+      "japanese": "こちら、今セール中です。2つ買うと1つ無料です。",
+      "reply": {
+        "indonesian": "Oh, ya? Oke, saya ambil dua.",
+        "japanese": "え、そうなんですか？じゃあ2つください。"
+      },
+      "note": "ここの lagi は「今〜中」。lagi diskon（セール中）、lagi promo（キャンペーン中）のように使います。",
+      "audio": "audio/id/listening/lm-27.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-28",
+      "speaker": "server",
+      "indonesian": "Gulanya normal atau dikurangi, Kak?",
+      "japanese": "砂糖はふつうにしますか、少なめにしますか？",
+      "reply": {
+        "indonesian": "Dikurangi aja, Kak.",
+        "japanese": "少なめでお願いします。"
+      },
+      "note": "何も言わないと、飲み物はかなり甘く出てきます。カフェでは英語で less sugar、less ice と言うことも多いです。",
+      "audio": "audio/id/listening/lm-28.mp3",
+      "tags": [
+        "カフェ"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-29",
+      "speaker": "driver",
+      "indonesian": "Udah sesuai titik, ya, Kak. Bintang limanya jangan lupa.",
+      "japanese": "ピンの場所に着きましたよ。星5つ、忘れないでくださいね。",
+      "reply": {
+        "indonesian": "Siap, Pak. Makasih, ya.",
+        "japanese": "了解です。ありがとう。"
+      },
+      "note": "titik は地図上のピン。運転手さんは評価が仕事に直結するので、星5つを頼む人が多いです。",
+      "audio": "audio/id/listening/lm-29.mp3",
+      "tags": [
+        "オジェック"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-30",
+      "speaker": "clerk",
+      "indonesian": "Mohon maaf, sistemnya lagi error. Bisa ditunggu sebentar?",
+      "japanese": "申し訳ありません、ただいまシステムが不調でして。少しお待ちいただけますか？",
+      "reply": {
+        "indonesian": "Oh, nggak apa-apa. Saya tunggu.",
+        "japanese": "あ、大丈夫です。待ちます。"
+      },
+      "note": "error は英語のまま言います。lagi（今〜中）は、店員さんのていねいな話し方にも出てきます。",
+      "audio": "audio/id/listening/lm-30.mp3",
+      "tags": [
+        "お店"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

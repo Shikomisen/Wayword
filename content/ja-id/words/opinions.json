@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "id": "words-opinions",
+  "title": "意見・考え",
+  "description": "自分の考えを伝え、比べて考え、やんわり反対するための言葉。menurut saya、setuju、mungkin、memang、justru など。",
+  "items": [
+    {
+      "id": "w-pendapat",
+      "indonesian": "pendapat",
+      "japanese": "意見、考え",
+      "pos": "noun",
+      "registerNotes": "Bagaimana pendapat Anda?（どうお考えですか？）はていねいに意見を聞く言い方。友達には Gimana menurut kamu?（どう思う？）",
+      "pitfallNote": "pendapatan（収入）と混同しないように。",
+      "audio": "audio/id/words/w-pendapat.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-menurut",
+      "indonesian": "menurut",
+      "japanese": "〜によると、〜の考えでは",
+      "pos": "preposition",
+      "registerNotes": "Menurut saya, …（私の考えでは〜）は「〜と思います」にあたる、いちばん普通の言い方です。情報源を示すのにも使います：menurut dokter（医者によると）。",
+      "pitfallNote": "「〜と思います」を Saya berpikir bahwa … と直訳すると硬く聞こえます。意見は menurut saya で始めましょう。",
+      "audio": "audio/id/words/w-menurut.mp3",
+      "tags": [
+        "意見",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pikir",
+      "indonesian": "pikir",
+      "japanese": "考える、思う",
+      "pos": "verb",
+      "registerNotes": "Saya pikir …（〜と思う）も使えますが、意見なら menurut saya のほうが自然です。Saya pikir-pikir dulu, ya（ちょっと考えておきます）は、日本語と同じく、売り込みや誘いをやんわり断る言い方です。",
+      "pitfallNote": "Saya kira … は「〜だと思っていた（のに違った）」の意味になることが多い：Saya kira tokonya sudah tutup（店はもう閉まったと思っていました）。",
+      "audio": "audio/id/words/w-pikir.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-setuju",
+      "indonesian": "setuju",
+      "japanese": "賛成する、同意する",
+      "pos": "verb",
+      "registerNotes": "Saya setuju（賛成です）。相手の意見に賛成するなら setuju dengan Anda。setuju だけで、提案への「いいね」という返事になります。",
+      "cultureNote": "日本と同じく、はっきり反対すると角が立ちます。Saya kurang setuju（あまり賛成できません）や Iya, tapi …（そうですね、でも〜）のようにやわらげます。",
+      "audio": "audio/id/words/w-setuju.mp3",
+      "tags": [
+        "意見",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-alasan",
+      "indonesian": "alasan",
+      "japanese": "理由；言い訳",
+      "pos": "noun",
+      "registerNotes": "Apa alasannya?（理由は何ですか？）。言い方によっては「言い訳」の意味になります：Itu cuma alasan（それはただの言い訳だ）。",
+      "audio": "audio/id/words/w-alasan.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-masalah",
+      "indonesian": "masalah",
+      "japanese": "問題、課題；事柄",
+      "pos": "noun",
+      "registerNotes": "Tidak masalah（大丈夫です、問題ありません）はお礼やおわびへの返事。くだけると Nggak masalah。Masalahnya, … は「問題は〜」と事情を切り出す言い方：Masalahnya, saya tidak punya waktu（ただ、時間がないんです）。",
+      "audio": "audio/id/words/w-masalah.mp3",
+      "tags": [
+        "意見",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-solusi",
+      "indonesian": "solusi",
+      "japanese": "解決策",
+      "pos": "noun",
+      "registerNotes": "会話でも仕事でもよく使います：Solusinya apa?（解決策は？）。日常的には jalan keluar（直訳は「出口」）とも言います。",
+      "audio": "audio/id/words/w-solusi.mp3",
+      "tags": [
+        "意見",
+        "話し合い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ide",
+      "indonesian": "ide",
+      "japanese": "アイデア、考え",
+      "pos": "noun",
+      "registerNotes": "Ide bagus（いい考えですね）は提案へのよくある返事です。",
+      "pitfallNote": "「さっぱりわからない」は Saya tidak tahu（くだけて Nggak tahu）。Saya tidak punya ide は「何もアイデアが浮かばない」の意味です。",
+      "audio": "audio/id/words/w-ide.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kenyataan",
+      "indonesian": "kenyataan",
+      "japanese": "現実、事実、本当のところ",
+      "pos": "noun",
+      "forms": {
+        "root": "nyata"
+      },
+      "registerNotes": "Kenyataannya, …（実際は〜、現実には〜）は、よく残念な話の前に来ます。nyata だけだと「本当の、現実の」。",
+      "audio": "audio/id/words/w-kenyataan.mp3",
+      "tags": [
+        "意見",
+        "話し合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mungkin",
+      "indonesian": "mungkin",
+      "japanese": "たぶん、〜かもしれない；ありうる",
+      "pos": "adverb",
+      "registerNotes": "Mungkin besok（たぶん明日）。Tidak mungkin は「ありえない」「まさか」。",
+      "cultureNote": "ていねいな断りは、mungkin や Lihat nanti, ya（様子を見てからね）の形で返ってくることがよくあります。日本語の「行けたら行く」と同じで、誘いに mungkin と言われたら期待しないほうが無難です。",
+      "audio": "audio/id/words/w-mungkin.mp3",
+      "tags": [
+        "意見",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pasti",
+      "indonesian": "pasti",
+      "japanese": "きっと、必ず；確かな",
+      "pos": "adverb",
+      "registerNotes": "pasti だけで自信のある「もちろん」になり、belum pasti は「まだはっきりしない」。様子を表す言葉の前に置くと、確信のある推測になります：Pasti capek, ya?（さぞお疲れでしょう）",
+      "audio": "audio/id/words/w-pasti.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sepertinya",
+      "indonesian": "sepertinya",
+      "japanese": "〜みたい、〜ようだ",
+      "pos": "adverb",
+      "forms": {
+        "root": "seperti"
+      },
+      "registerNotes": "Sepertinya mau hujan（雨が降りそうです）。意見をやわらげるのにも使います：Sepertinya kurang cocok（ちょっと合わない気がします）。くだけた会話では kayaknya。",
+      "audio": "audio/id/words/w-sepertinya.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sebenarnya",
+      "indonesian": "sebenarnya",
+      "japanese": "実は、本当は",
+      "pos": "adverb",
+      "forms": {
+        "root": "benar"
+      },
+      "registerNotes": "日本語の「実は」と同じく、言いにくいことをやわらげます：Sebenarnya saya kurang suka pedas（実は辛いものがあまり得意じゃないんです）。くだけると sebenernya。",
+      "audio": "audio/id/words/w-sebenarnya.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tentu-saja",
+      "indonesian": "tentu saja",
+      "japanese": "もちろん",
+      "pos": "expression",
+      "registerNotes": "少しかしこまった言い方：Tentu saja boleh（もちろんいいですよ）。ふだんは Tentu や Pasti、友達には Iya, dong もよく使います。",
+      "audio": "audio/id/words/w-tentu-saja.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-memang",
+      "indonesian": "memang",
+      "japanese": "確かに、やっぱり；当然",
+      "pos": "adverb",
+      "registerNotes": "相手の話や事実を認めるときに使います：Memang enak, tapi mahal（確かにおいしいけど、高い）。くだけると emang。Memang begitu は「そういうものです」。",
+      "audio": "audio/id/words/w-memang.mp3",
+      "tags": [
+        "意見",
+        "会話"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-justru",
+      "indonesian": "justru",
+      "japanese": "むしろ、かえって；まさに",
+      "pos": "adverb",
+      "registerNotes": "予想をひっくり返します：Hujan? Justru enak untuk tidur（雨？むしろ寝るのにちょうどいい）。Justru itu は「まさにそこなんです」。",
+      "pitfallNote": "justru と malah は意味が重なります。justru は「本当のポイントはこっち」と打ち出すとき、malah はたいてい予想外の困ったことを言うときに使います。",
+      "audio": "audio/id/words/w-justru.mp3",
+      "tags": [
+        "意見",
+        "会話"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-malah",
+      "indonesian": "malah",
+      "japanese": "かえって、逆に；それどころか",
+      "pos": "adverb",
+      "registerNotes": "予想と逆の結果になったときに、ため息まじりによく使います：Saya sudah minum obat, tapi malah tambah pusing（薬を飲んだのに、かえってめまいがひどくなった）。",
+      "audio": "audio/id/words/w-malah.mp3",
+      "tags": [
+        "意見",
+        "会話"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-misalnya",
+      "indonesian": "misalnya",
+      "japanese": "たとえば；仮に",
+      "pos": "adverb",
+      "forms": {
+        "root": "misal"
+      },
+      "registerNotes": "Misalnya? だけで「たとえば？」と例を求められます。提案するときにも：Bagaimana kalau, misalnya, jam tujuh?（たとえば7時はどうですか？）",
+      "audio": "audio/id/words/w-misalnya.mp3",
+      "tags": [
+        "意見",
+        "話し合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-contoh",
+      "indonesian": "contoh",
+      "japanese": "例；見本、サンプル",
+      "pos": "noun",
+      "registerNotes": "Contohnya?（たとえば？）と例を求めます。「見本、サンプル」の意味もあり、memberi contoh は「例を挙げる」「手本を示す」。",
+      "audio": "audio/id/words/w-contoh.mp3",
+      "tags": [
+        "意見",
+        "話し合い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-perbedaan",
+      "indonesian": "perbedaan",
+      "japanese": "違い",
+      "pos": "noun",
+      "forms": {
+        "root": "beda"
+      },
+      "registerNotes": "会話では硬く聞こえるので、Apa bedanya?（何が違うの？）と言うのが普通です。beda は「違う」：Rasanya beda（味が違う）。",
+      "audio": "audio/id/words/w-perbedaan.mp3",
+      "tags": [
+        "意見",
+        "話し合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-persamaan",
+      "indonesian": "persamaan",
+      "japanese": "共通点、似ている点；方程式",
+      "pos": "noun",
+      "forms": {
+        "root": "sama"
+      },
+      "registerNotes": "会話では sama（同じ）のほうがよく使われます：Rasanya sama（味は同じです）。数学では persamaan は「方程式」。",
+      "audio": "audio/id/words/w-persamaan.mp3",
+      "tags": [
+        "意見",
+        "話し合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-keputusan",
+      "indonesian": "keputusan",
+      "japanese": "決定、決断",
+      "pos": "noun",
+      "forms": {
+        "root": "putus"
+      },
+      "registerNotes": "Itu keputusan Anda（それはあなたが決めることです）。「決断する」は mengambil keputusan（直訳は「決定を取る」）と言います。",
+      "audio": "audio/id/words/w-keputusan.mp3",
+      "tags": [
+        "意見",
+        "話し合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pilihan",
+      "indonesian": "pilihan",
+      "japanese": "選択肢、選択",
+      "pos": "noun",
+      "forms": {
+        "root": "pilih"
+      },
+      "registerNotes": "Tidak ada pilihan lain（ほかに選択肢がない）。pilih は「選ぶ」：Silakan pilih（どうぞお選びください）。",
+      "audio": "audio/id/words/w-pilihan.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kesempatan",
+      "indonesian": "kesempatan",
+      "japanese": "機会、チャンス",
+      "pos": "noun",
+      "forms": {
+        "root": "sempat"
+      },
+      "registerNotes": "Kalau ada kesempatan, …（機会があれば〜）。Terima kasih atas kesempatannya（このような機会をありがとうございました）は、発表や面接の最後に言うていねいなお礼です。",
+      "pitfallNote": "「機会」としてのチャンスです。「可能性」の意味のチャンスは kemungkinan。",
+      "audio": "audio/id/words/w-kesempatan.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pengalaman",
+      "indonesian": "pengalaman",
+      "japanese": "経験、体験",
+      "pos": "noun",
+      "registerNotes": "一度の体験にも、積み重ねた経験にも使います：pengalaman pertama（初めての体験）、pengalaman kerja（職歴）。動詞は mengalami（経験する、〔困難などに〕あう）。",
+      "audio": "audio/id/words/w-pengalaman.mp3",
+      "tags": [
+        "意見",
+        "会話"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tergantung",
+      "indonesian": "tergantung",
+      "japanese": "〜次第、場合による",
+      "pos": "expression",
+      "forms": {
+        "root": "gantung"
+      },
+      "registerNotes": "Tergantung だけで「場合によります」という答えになります。何次第かはすぐ後ろに続けます：Tergantung cuaca（天気次第）。日本語の「〜次第」とは語順が逆です。tergantung pada は少しかしこまった言い方。",
+      "audio": "audio/id/words/w-tergantung.mp3",
+      "tags": [
+        "意見",
+        "必須"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

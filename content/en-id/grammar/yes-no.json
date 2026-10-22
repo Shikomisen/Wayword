@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-yes-no",
+  "connector": "ya / tidak",
+  "gloss": "yes-or-no questions",
+  "title": "Yes-or-no questions",
+  "pattern": "Ini pedas? (voice rising) · Apakah …? (formal) · Ada? — Ada. / Tidak ada.",
+  "explanation": "A statement becomes a yes-or-no question just by raising your voice at the end: Ini pedas? (Is this spicy?) uses the same words as Ini pedas (This is spicy). In writing and formal speech, apakah goes at the front: Apakah ada pertanyaan? (Are there any questions?). To answer, repeat the question's key word rather than just saying ya: Ada air? — Ada. Bisa? — Bisa. For no, use the matching negative: Tidak ada, Bukan, or Belum (not yet) for a question with sudah.",
+  "natural": "Iya is the everyday spoken yes, and a quiet ya, ya shows you're listening. Repeating the key word sounds natural and friendly: Suka? — Suka! (Do you like it? — I do!)",
+  "stiff": "Answering every question with ya or tidak sounds foreign: to Ini kopi? the no is Bukan, and to Sudah makan? it's Belum (not yet), never tidak. Apakah in everyday conversation sounds like a form or the news.",
+  "examples": [
+    {
+      "id": "gx-yes-no-1",
+      "indonesian": "Ada air putih? Ada.",
+      "english": "Have you got drinking water? Yes, we have.",
+      "chunks": [
+        {
+          "t": "Ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "air putih? ",
+          "w": "w-air-putih"
+        },
+        {
+          "t": "Ada.",
+          "w": "w-ada"
+        }
+      ],
+      "gap": {
+        "before": "Ada air putih? ",
+        "answer": "Ada",
+        "after": ".",
+        "options": [
+          "Ada",
+          "Sudah",
+          "Bukan"
+        ],
+        "why": "Answer with the question's own word: Ada? — Ada."
+      },
+      "audio": "audio/id/grammar/gx-yes-no-1.mp3",
+      "tags": [
+        "grammar",
+        "yes-no"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-yes-no-2",
+      "indonesian": "Ini kopi? Bukan, ini teh.",
+      "english": "Is this coffee? No, it's tea.",
+      "chunks": [
+        {
+          "t": "Ini kopi? ",
+          "w": "w-kopi"
+        },
+        {
+          "t": "Bukan, ",
+          "w": "w-bukan"
+        },
+        {
+          "t": "ini teh.",
+          "w": "w-teh"
+        }
+      ],
+      "gap": {
+        "before": "Ini kopi? ",
+        "answer": "Bukan",
+        "after": ", ini teh.",
+        "options": [
+          "Bukan",
+          "Tidak",
+          "Belum"
+        ],
+        "why": "Kopi is a noun, so the no is bukan."
+      },
+      "audio": "audio/id/grammar/gx-yes-no-2.mp3",
+      "tags": [
+        "grammar",
+        "yes-no"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-yes-no-3",
+      "indonesian": "Bisa bahasa Inggris? Bisa, sedikit.",
+      "english": "Do you speak English? Yes, a little.",
+      "chunks": [
+        {
+          "t": "Bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "bahasa Inggris? "
+        },
+        {
+          "t": "Bisa, ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "sedikit.",
+          "w": "w-sedikit"
+        }
+      ],
+      "gap": {
+        "before": "Bisa bahasa Inggris? ",
+        "answer": "Bisa",
+        "after": ", sedikit.",
+        "options": [
+          "Bisa",
+          "Ada",
+          "Sudah"
+        ],
+        "why": "The question asked bisa, so the yes is Bisa."
+      },
+      "audio": "audio/id/grammar/gx-yes-no-3.mp3",
+      "tags": [
+        "grammar",
+        "yes-no"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-yes-no-4",
+      "indonesian": "Apakah ada pertanyaan?",
+      "english": "Are there any questions?",
+      "chunks": [
+        {
+          "t": "Apakah "
+        },
+        {
+          "t": "ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "pertanyaan?",
+          "w": "w-pertanyaan"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Apakah",
+        "after": " ada pertanyaan?",
+        "options": [
+          "Apakah",
+          "Kenapa",
+          "Bagaimana"
+        ],
+        "why": "Apakah at the front marks a yes-or-no question in formal speech."
+      },
+      "audio": "audio/id/grammar/gx-yes-no-4.mp3",
+      "tags": [
+        "grammar",
+        "yes-no"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-lebih-paling",
+  "connector": "lebih, paling, kurang",
+  "gloss": "もっと・いちばん・あまり〜ない",
+  "title": "lebih と paling — 比べる",
+  "pattern": "A lebih … daripada / dari B · A paling … · yang paling … · kurang …",
+  "explanation": "日本語と同じく、比べる時も形容詞の形は変わりません。言葉を前に足すだけです。lebih（もっと、より）を形容詞の前に置き、比べる相手は daripada、話し言葉では dari で後ろに付けます：Bali lebih ramai daripada Lombok（バリはロンボクよりにぎやか）、Yang ini lebih murah dari yang tadi（こっちのほうがさっきのより安い）。daripada は日本語の「〜より」ですが、相手の前に置く点が逆です。paling は「いちばん」：paling enak（いちばんおいしい）。yang paling で1つを選び出します：Yang paling murah yang mana?（いちばん安いのはどれ？）。書き言葉では ter- が paling と同じ働きをします：terbesar、terindah。kurang は「より少ない」で、「あまり〜ない」「〜が足りない」と言うていねいな言い方でもあります：Saya kurang suka pedas（辛いのはあまり得意ではありません）、Kopinya kurang manis（コーヒーの甘さが足りない）。",
+  "natural": "選ぶ時やすすめる時に：Mana yang lebih enak?（どっちがおいしい？）、Yang paling dekat di mana?（いちばん近いのはどこ？）。lebih suka は「〜のほうが好き」：Saya lebih suka teh（お茶のほうが好きです）。",
+  "stiff": "「もう1つ」「もっと（ください）」は lebih ではなく lagi です：Es tehnya satu lagi（アイスティーをもう1つ）。また kurang は tidak よりやわらかく、日本語の「あまり〜ない」と同じ遠回しな言い方です。Saya kurang setuju はていねいに聞こえますが、Saya tidak setuju はぶっきらぼうに聞こえることがあります。",
+  "examples": [
+    {
+      "id": "gx-lebih-paling-1",
+      "indonesian": "Naik ojek lebih cepat daripada naik mobil.",
+      "japanese": "車よりオジェックのほうが速いです。",
+      "chunks": [
+        {
+          "t": "Naik ojek "
+        },
+        {
+          "t": "lebih cepat ",
+          "w": "w-cepat"
+        },
+        {
+          "t": "daripada "
+        },
+        {
+          "t": "naik mobil.",
+          "w": "w-mobil"
+        }
+      ],
+      "gap": {
+        "before": "Naik ojek ",
+        "answer": "lebih",
+        "after": " cepat daripada naik mobil.",
+        "options": [
+          "lebih",
+          "paling",
+          "sangat"
+        ],
+        "why": "daripada で2つを比べるので lebih。日本語の「〜より…のほうが」です。"
+      },
+      "audio": "audio/id/grammar/gx-lebih-paling-1.mp3",
+      "tags": [
+        "文法",
+        "lebih-paling"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-lebih-paling-2",
+      "indonesian": "Kopinya kurang manis. Boleh minta gula?",
+      "japanese": "コーヒーの甘さが足りません。砂糖をもらえますか？",
+      "chunks": [
+        {
+          "t": "Kopinya ",
+          "w": "w-kopi"
+        },
+        {
+          "t": "kurang manis. ",
+          "w": "w-manis"
+        },
+        {
+          "t": "Boleh minta ",
+          "w": "w-boleh"
+        },
+        {
+          "t": "gula?",
+          "w": "w-gula"
+        }
+      ],
+      "gap": {
+        "before": "Kopinya ",
+        "answer": "kurang",
+        "after": " manis. Boleh minta gula?",
+        "options": [
+          "kurang",
+          "lebih",
+          "terlalu"
+        ],
+        "why": "甘さが足りないのは kurang manis。terlalu manis だと「甘すぎる」です。"
+      },
+      "audio": "audio/id/grammar/gx-lebih-paling-2.mp3",
+      "tags": [
+        "文法",
+        "lebih-paling"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-lebih-paling-3",
+      "indonesian": "Menurut Anda, warung mana yang paling enak?",
+      "japanese": "どのワルンがいちばんおいしいと思いますか？",
+      "chunks": [
+        {
+          "t": "Menurut Anda, ",
+          "w": "w-menurut"
+        },
+        {
+          "t": "warung mana ",
+          "w": "w-warung"
+        },
+        {
+          "t": "yang paling "
+        },
+        {
+          "t": "enak?",
+          "w": "w-enak"
+        }
+      ],
+      "gap": {
+        "before": "Menurut Anda, warung mana yang ",
+        "answer": "paling",
+        "after": " enak?",
+        "options": [
+          "paling",
+          "lebih",
+          "terlalu"
+        ],
+        "why": "全部の中でいちばんなら paling。lebih は2つを比べる時です。"
+      },
+      "audio": "audio/id/grammar/gx-lebih-paling-3.mp3",
+      "tags": [
+        "文法",
+        "lebih-paling"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-lebih-paling-4",
+      "indonesian": "Ini pantai terindah yang pernah saya lihat.",
+      "japanese": "今まで見た中でいちばんきれいなビーチです。",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "pantai ",
+          "w": "w-pantai"
+        },
+        {
+          "t": "terindah "
+        },
+        {
+          "t": "yang pernah ",
+          "w": "w-pernah"
+        },
+        {
+          "t": "saya lihat.",
+          "w": "w-lihat"
+        }
+      ],
+      "gap": {
+        "before": "Ini pantai ",
+        "answer": "terindah",
+        "after": " yang pernah saya lihat.",
+        "options": [
+          "terindah",
+          "lebih indah",
+          "keindahan"
+        ],
+        "why": "「いちばん美しい」は ter- ＋ indah。日本語の「最も美しい」のように、paling indah より少し書き言葉的です。"
+      },
+      "audio": "audio/id/grammar/gx-lebih-paling-4.mp3",
+      "tags": [
+        "文法",
+        "lebih-paling"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

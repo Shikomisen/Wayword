@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-verbs",
+  "connector": "makan",
+  "gloss": "verbs that never change",
+  "title": "Verbs don't change",
+  "pattern": "saya / dia / mereka makan · kemarin / besok / nanti + …",
+  "explanation": "An Indonesian verb has one form, whoever does it and whenever: saya makan, dia makan, mereka makan. There's no -s for he or she and no past ending like -ed, so makan is eat, eats, ate and eating. The time comes from words like kemarin (yesterday), tadi (earlier today), besok (tomorrow) and nanti (later), or simply from the situation. Kemarin kami makan di warung is 'Yesterday we ate at a warung'.",
+  "natural": "Say the time once, usually at the start, and carry on: Kemarin saya ke pantai. Saya berenang, lalu makan ikan (Yesterday I went to the beach. I swam, then had fish). Tadi (earlier) and nanti (later) are worth learning early: they come up in every conversation.",
+  "stiff": "Don't look for a past form: kemarin saya makan is complete as it is. Careful speech and writing add prefixes to many verbs, such as bekerja for kerja and membeli for beli, but those don't show the time or the person either; they come at Intermediate.",
+  "examples": [
+    {
+      "id": "gx-verbs-1",
+      "indonesian": "Kemarin saya makan di warung.",
+      "english": "Yesterday I ate at a warung.",
+      "chunks": [
+        {
+          "t": "Kemarin ",
+          "w": "w-kemarin"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "makan ",
+          "w": "w-makan"
+        },
+        {
+          "t": "di warung.",
+          "w": "w-warung"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kemarin",
+        "after": " saya makan di warung.",
+        "options": [
+          "Kemarin",
+          "Besok",
+          "Sekarang"
+        ],
+        "why": "Makan doesn't change for the past: kemarin, yesterday, does the work."
+      },
+      "audio": "audio/id/grammar/gx-verbs-1.mp3",
+      "tags": [
+        "grammar",
+        "verbs"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-verbs-2",
+      "indonesian": "Dia kerja di bank.",
+      "english": "She works at a bank.",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "kerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "di bank.",
+          "w": "w-bank"
+        }
+      ],
+      "gap": {
+        "before": "Dia ",
+        "answer": "kerja",
+        "after": " di bank.",
+        "options": [
+          "kerja",
+          "adalah kerja",
+          "ada kerja"
+        ],
+        "why": "The verb is just kerja, the same for she as for I, with no word for 'is'."
+      },
+      "audio": "audio/id/grammar/gx-verbs-2.mp3",
+      "tags": [
+        "grammar",
+        "verbs"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-verbs-3",
+      "indonesian": "Nanti saya bayar.",
+      "english": "I'll pay later.",
+      "chunks": [
+        {
+          "t": "Nanti ",
+          "w": "w-nanti"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "bayar.",
+          "w": "w-bayar"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Nanti",
+        "after": " saya bayar.",
+        "options": [
+          "Nanti",
+          "Tadi",
+          "Kemarin"
+        ],
+        "why": "Later is nanti; tadi is earlier. Bayar stays the same either way."
+      },
+      "audio": "audio/id/grammar/gx-verbs-3.mp3",
+      "tags": [
+        "grammar",
+        "verbs"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-verbs-4",
+      "indonesian": "Tadi saya lihat dia di pasar.",
+      "english": "I saw her at the market earlier.",
+      "chunks": [
+        {
+          "t": "Tadi ",
+          "w": "w-tadi"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "lihat ",
+          "w": "w-lihat"
+        },
+        {
+          "t": "dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "di pasar.",
+          "w": "w-pasar"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Tadi",
+        "after": " saya lihat dia di pasar.",
+        "options": [
+          "Tadi",
+          "Nanti",
+          "Besok"
+        ],
+        "why": "Lihat doesn't change, so tadi, earlier today, says it has already happened."
+      },
+      "audio": "audio/id/grammar/gx-verbs-4.mp3",
+      "tags": [
+        "grammar",
+        "verbs"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

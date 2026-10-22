@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-plural",
+  "connector": "buku-buku",
+  "gloss": "one or more: no plural ending",
+  "title": "Plurals: buku-buku and banyak",
+  "pattern": "buku (book, books) · dua buku · banyak orang · buku-buku",
+  "explanation": "Indonesian nouns don't change for more than one: buku is 'book' or 'books', and the situation tells you which. A number or banyak (lots of, many) goes before the noun, which stays as it is: dua buku (two books), banyak orang (lots of people). Saying a noun twice, buku-buku, also makes it plural, with a feel of many different ones; it's commoner in writing than in conversation.",
+  "natural": "Leave nouns single almost all the time: Ada banyak turis di sini (There are lots of tourists here). A few doubled words are everyday speech, though: anak-anak (the kids) and teman-teman (friends, everyone).",
+  "stiff": "Don't double a noun after a number or banyak: dua anak-anak and banyak orang-orang are wrong, because the number has already said 'more than one'. And there's no need to mark the plural where English must: Saya suka buku is 'I like books'.",
+  "examples": [
+    {
+      "id": "gx-plural-1",
+      "indonesian": "Saya mau beli dua tiket.",
+      "english": "I'd like to buy two tickets.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "beli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "dua "
+        },
+        {
+          "t": "tiket.",
+          "w": "w-tiket"
+        }
+      ],
+      "gap": {
+        "before": "Saya mau beli dua ",
+        "answer": "tiket",
+        "after": ".",
+        "options": [
+          "tiket",
+          "tiket-tiket"
+        ],
+        "why": "After a number the noun stays single: dua tiket."
+      },
+      "audio": "audio/id/grammar/gx-plural-1.mp3",
+      "tags": [
+        "grammar",
+        "plural"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-plural-2",
+      "indonesian": "Ada banyak orang di sini.",
+      "english": "There are lots of people here.",
+      "chunks": [
+        {
+          "t": "Ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "banyak ",
+          "w": "w-banyak"
+        },
+        {
+          "t": "orang ",
+          "w": "w-orang"
+        },
+        {
+          "t": "di sini.",
+          "w": "w-di"
+        }
+      ],
+      "gap": {
+        "before": "Ada banyak ",
+        "answer": "orang",
+        "after": " di sini.",
+        "options": [
+          "orang",
+          "orang-orang"
+        ],
+        "why": "Banyak has already said 'many', so orang stays single."
+      },
+      "audio": "audio/id/grammar/gx-plural-2.mp3",
+      "tags": [
+        "grammar",
+        "plural"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-plural-3",
+      "indonesian": "Sepatu saya di mana?",
+      "english": "Where are my shoes?",
+      "chunks": [
+        {
+          "t": "Sepatu ",
+          "w": "w-sepatu"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "di mana?",
+          "w": "w-di-mana"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Sepatu",
+        "after": " saya di mana?",
+        "options": [
+          "Sepatu",
+          "Sepatu-sepatu"
+        ],
+        "why": "Sepatu is one shoe or a pair: no need to double it."
+      },
+      "audio": "audio/id/grammar/gx-plural-3.mp3",
+      "tags": [
+        "grammar",
+        "plural"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-plural-4",
+      "indonesian": "Anak-anak main di pantai.",
+      "english": "The kids are playing on the beach.",
+      "chunks": [
+        {
+          "t": "Anak-anak ",
+          "w": "w-anak"
+        },
+        {
+          "t": "main ",
+          "w": "w-main"
+        },
+        {
+          "t": "di ",
+          "w": "w-di"
+        },
+        {
+          "t": "pantai.",
+          "w": "w-pantai"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Anak-anak",
+        "after": " main di pantai.",
+        "options": [
+          "Anak-anak",
+          "Banyak anak-anak"
+        ],
+        "why": "Anak-anak is the everyday 'the kids'; after banyak it would stay single, banyak anak."
+      },
+      "audio": "audio/id/grammar/gx-plural-4.mp3",
+      "tags": [
+        "grammar",
+        "plural"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

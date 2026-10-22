@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "id": "restaurant",
+  "title": "Restoran & memesan",
+  "order": 7,
+  "description": "Memesan makanan, alergi, dan pantangan makanan. Kalimat soal alergi adalah yang paling perlu bisa kamu ucapkan tanpa ragu.",
+  "phrases": [
+    {
+      "id": "res-01",
+      "japanese": "いただきます",
+      "furigana": [
+        {
+          "b": "いただきます"
+        }
+      ],
+      "romaji": "itadakimasu",
+      "indonesian": "(ucapan sebelum makan)",
+      "registerNotes": "Diucapkan sebelum setiap makan, sendirian maupun bersama orang lain. Yang terasa janggal justru kalau tidak mengucapkannya. Mirip doa singkat sebelum makan: diucapkan oleh yang akan makan, bukan kepada orang lain seperti “selamat makan”.",
+      "animeNote": "Anime menampilkannya dengan benar: di kehidupan nyata pun dipakai sesering itu.",
+      "audio": "audio/ja/res-01.mp3",
+      "audioHint": "いただきます",
+      "tags": [
+        "restoran",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-02",
+      "japanese": "メニューをお願いします",
+      "furigana": [
+        {
+          "b": "メニューをお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いします"
+        }
+      ],
+      "romaji": "menyū o onegai shimasu",
+      "indonesian": "Minta menunya.",
+      "registerNotes": "英語のメニューはありますか untuk menanyakan menu berbahasa Inggris.",
+      "audio": "audio/ja/res-02.mp3",
+      "audioHint": "メニューをおねがいします",
+      "tags": [
+        "restoran",
+        "permintaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "res-03",
+      "japanese": "アレルギーがあります",
+      "furigana": [
+        {
+          "b": "アレルギーがあります"
+        }
+      ],
+      "romaji": "arerugī ga arimasu",
+      "indonesian": "Saya punya alergi.",
+      "registerNotes": "Ucapkan ini dulu, lalu sebutkan makanannya. Sebaiknya juga simpan tulisannya dalam bahasa Jepang di ponselmu, selain bisa mengucapkannya.",
+      "audio": "audio/ja/res-03.mp3",
+      "audioHint": "アレルギーがあります",
+      "tags": [
+        "restoran",
+        "alergi",
+        "bertahan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "res-04",
+      "japanese": "卵が食べられません",
+      "furigana": [
+        {
+          "b": "卵",
+          "r": "たまご"
+        },
+        {
+          "b": "が"
+        },
+        {
+          "b": "食",
+          "r": "た"
+        },
+        {
+          "b": "べられません"
+        }
+      ],
+      "romaji": "tamago ga taberaremasen",
+      "indonesian": "Saya tidak bisa makan telur.",
+      "registerNotes": "Polanya 〜が食べられません, persis seperti “tidak bisa makan…”: ganti saja makanannya. Lebih tegas dan jelas daripada bilang tidak suka.",
+      "audio": "audio/ja/res-04.mp3",
+      "audioHint": "たまごがたべられません",
+      "tags": [
+        "restoran",
+        "alergi",
+        "bertahan"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "res-05",
+      "japanese": "ごちそうさまでした",
+      "furigana": [
+        {
+          "b": "ごちそうさまでした"
+        }
+      ],
+      "romaji": "gochisōsama deshita",
+      "indonesian": "(ucapan setelah makan)",
+      "registerNotes": "Pasangan dari いただきます. Ucapkan kepada staf saat keluar, dan itu terdengar sebagai terima kasih yang tulus.",
+      "audio": "audio/ja/res-05.mp3",
+      "audioHint": "ごちそうさまでした",
+      "tags": [
+        "restoran",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-06",
+      "japanese": "おすすめは何ですか",
+      "furigana": [
+        {
+          "b": "おすすめは"
+        },
+        {
+          "b": "何",
+          "r": "なん"
+        },
+        {
+          "b": "ですか"
+        }
+      ],
+      "romaji": "osusume wa nan desu ka",
+      "indonesian": "Rekomendasinya apa?",
+      "registerNotes": "Hampir selalu membawamu ke hidangan yang enak, dan terdengar sebagai rasa tertarik, bukan karena bingung.",
+      "audio": "audio/ja/res-06.mp3",
+      "audioHint": "おすすめはなんですか",
+      "tags": [
+        "restoran",
+        "pertanyaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "res-07",
+      "japanese": "お水をください",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "水",
+          "r": "みず"
+        },
+        {
+          "b": "をください"
+        }
+      ],
+      "romaji": "o-mizu o kudasai",
+      "indonesian": "Minta air putih.",
+      "registerNotes": "Di kebanyakan restoran, air putih dan teh gratis dan langsung disajikan, berbeda dengan banyak restoran di Indonesia. Kalimat ini untuk minta tambah.",
+      "audio": "audio/ja/res-07.mp3",
+      "audioHint": "おみずをください",
+      "tags": [
+        "restoran",
+        "permintaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "res-08",
+      "japanese": "豚肉は食べられません",
+      "furigana": [
+        {
+          "b": "豚肉",
+          "r": "ぶたにく"
+        },
+        {
+          "b": "は"
+        },
+        {
+          "b": "食",
+          "r": "た"
+        },
+        {
+          "b": "べられません"
+        }
+      ],
+      "romaji": "butaniku wa taberaremasen",
+      "indonesian": "Saya tidak bisa makan daging babi.",
+      "registerNotes": "Kosakata yang berguna untuk dipasangkan: 牛肉 (daging sapi), 鶏肉 (ayam), 魚 (ikan), 乳製品 (produk susu), 小麦 (gandum), 落花生 (kacang tanah).",
+      "audio": "audio/ja/res-08.mp3",
+      "audioHint": "ぶたにくはたべられません",
+      "tags": [
+        "restoran",
+        "alergi",
+        "bertahan"
+      ],
+      "difficulty": 4,
+      "usage": "Kalau kamu makan halal: babi sering ada di kuah ramen 豚骨 (とんこつ), gyoza, dan bumbu berlabel ポークエキス. Restoran halal biasanya memasang tulisan ハラール."
+    },
+    {
+      "id": "res-09",
+      "japanese": "これは何が入っていますか",
+      "furigana": [
+        {
+          "b": "これは"
+        },
+        {
+          "b": "何",
+          "r": "なに"
+        },
+        {
+          "b": "が"
+        },
+        {
+          "b": "入",
+          "r": "はい"
+        },
+        {
+          "b": "っていますか"
+        }
+      ],
+      "romaji": "kore wa nani ga haitte imasu ka",
+      "indonesian": "Ini isinya apa saja?",
+      "registerNotes": "Pertanyaan lanjutan setelah menyebut alergi. Dashi (kaldu ikan) tersembunyi di banyak makanan yang kelihatannya vegetarian, dan mirin atau sake (alkohol) sering dipakai sebagai bumbu.",
+      "audio": "audio/ja/res-09.mp3",
+      "audioHint": "これはなにがはいっていますか",
+      "tags": [
+        "restoran",
+        "alergi",
+        "pertanyaan",
+        "bertahan"
+      ],
+      "difficulty": 5
+    },
+    {
+      "id": "res-10",
+      "japanese": "お会計をお願いします",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "会計",
+          "r": "かいけい"
+        },
+        {
+          "b": "をお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いします"
+        }
+      ],
+      "romaji": "o-kaikei o onegai shimasu",
+      "indonesian": "Minta bonnya.",
+      "registerNotes": "Di banyak tempat, kamu membawa slip tagihan ke kasir, bukan membayar di meja.",
+      "audio": "audio/ja/res-10.mp3",
+      "audioHint": "おかいけいをおねがいします",
+      "tags": [
+        "restoran",
+        "uang",
+        "penting"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

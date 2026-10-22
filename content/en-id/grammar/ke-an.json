@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ke-an",
+  "connector": "ke-…-an",
+  "gloss": "caught by something; too …; -ness",
+  "title": "ke-…-an",
+  "pattern": "ke- + root + -an: kehujanan (caught in the rain) · kebesaran (too big) · kebersihan (cleanliness)",
+  "explanation": "Around a verb or a noun, ke-…-an says something happened to you that you didn't want: kehujanan (caught in the rain, from hujan), kemalingan (burgled, from maling, a thief), ketinggalan (left behind, or missed: ketinggalan bus). Around a describing word, in everyday speech, it means too … for you: Bajunya kebesaran (the top's too big), Sepatunya kekecilan (the shoes are too small). It also makes abstract nouns, the words of signs and forms: kebersihan (cleanliness), keamanan (security), kesehatan (health), kesempatan (a chance). So Hujan means it's raining, while Saya kehujanan means I got rained on.",
+  "natural": "Telling people what happened to you: Saya kehujanan, Saya kecopetan di pasar (I got pickpocketed at the market). In shops, the too form is how people say something doesn't fit: Kebesaran, ada yang lebih kecil?",
+  "stiff": "The too meaning (kebesaran, kemahalan, kepedasan) belongs to speech; in writing and careful speech it's terlalu: terlalu besar. And ke-…-an is never for something you chose to do: it always happened to you.",
+  "examples": [
+    {
+      "id": "gx-ke-an-1",
+      "indonesian": "Tadi saya kehujanan di jalan.",
+      "english": "I got caught in the rain on the way.",
+      "chunks": [
+        {
+          "t": "Tadi ",
+          "w": "w-tadi"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "kehujanan ",
+          "w": "w-hujan"
+        },
+        {
+          "t": "di jalan.",
+          "w": "w-jalan"
+        }
+      ],
+      "gap": {
+        "before": "Tadi saya ",
+        "answer": "kehujanan",
+        "after": " di jalan.",
+        "options": [
+          "kehujanan",
+          "hujan",
+          "dihujani"
+        ],
+        "why": "The rain happened to you, unwanted, so ke-…-an; hujan alone is the rain, or it's raining."
+      },
+      "audio": "audio/id/grammar/gx-ke-an-1.mp3",
+      "tags": [
+        "grammar",
+        "ke-an"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-ke-an-2",
+      "indonesian": "Rumah tetangga saya kemalingan.",
+      "english": "My neighbour's house got burgled.",
+      "chunks": [
+        {
+          "t": "Rumah ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "tetangga ",
+          "w": "w-tetangga"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "kemalingan."
+        }
+      ],
+      "gap": {
+        "before": "Rumah tetangga saya ",
+        "answer": "kemalingan",
+        "after": ".",
+        "options": [
+          "kemalingan",
+          "maling",
+          "dicuri"
+        ],
+        "why": "A house that's been broken into is kemalingan; dicuri is for the thing taken (TV-nya dicuri), and maling is the thief."
+      },
+      "audio": "audio/id/grammar/gx-ke-an-2.mp3",
+      "tags": [
+        "grammar",
+        "ke-an"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ke-an-3",
+      "indonesian": "Bajunya kebesaran. Ada yang lebih kecil?",
+      "english": "This top's too big. Do you have a smaller one?",
+      "chunks": [
+        {
+          "t": "Bajunya ",
+          "w": "w-baju"
+        },
+        {
+          "t": "kebesaran. ",
+          "w": "w-besar"
+        },
+        {
+          "t": "Ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "yang lebih "
+        },
+        {
+          "t": "kecil?",
+          "w": "w-kecil"
+        }
+      ],
+      "gap": {
+        "before": "Bajunya ",
+        "answer": "kebesaran",
+        "after": ". Ada yang lebih kecil?",
+        "options": [
+          "kebesaran",
+          "terbesar",
+          "besar sekali"
+        ],
+        "why": "Too big for you is ke-…-an; besar sekali is just very big, and terbesar the biggest."
+      },
+      "audio": "audio/id/grammar/gx-ke-an-3.mp3",
+      "tags": [
+        "grammar",
+        "ke-an"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ke-an-4",
+      "indonesian": "Mohon jaga kebersihan kamar mandi.",
+      "english": "Please keep the bathroom clean.",
+      "chunks": [
+        {
+          "t": "Mohon "
+        },
+        {
+          "t": "jaga "
+        },
+        {
+          "t": "kebersihan ",
+          "w": "w-kebersihan"
+        },
+        {
+          "t": "kamar mandi.",
+          "w": "w-kamar-mandi"
+        }
+      ],
+      "gap": {
+        "before": "Mohon jaga ",
+        "answer": "kebersihan",
+        "after": " kamar mandi.",
+        "options": [
+          "kebersihan",
+          "bersih",
+          "membersihkan"
+        ],
+        "why": "Jaga (look after) needs a noun: kebersihan, cleanliness, from bersih."
+      },
+      "audio": "audio/id/grammar/gx-ke-an-4.mp3",
+      "tags": [
+        "grammar",
+        "ke-an"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

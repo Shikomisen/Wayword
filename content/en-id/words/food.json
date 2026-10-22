@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "id": "words-food",
+  "title": "Food & Drink",
+  "description": "What's on the plate and in the glass at a warung, and the words for how it tastes: pedas, manis, enak.",
+  "items": [
+    {
+      "id": "w-nasi",
+      "indonesian": "nasi",
+      "english": "rice (cooked)",
+      "pos": "noun",
+      "pitfallNote": "Nasi is cooked rice only. Uncooked rice in a shop is beras, and rice growing in the field is padi.",
+      "cultureNote": "Many Indonesians feel they haven't really eaten until they've had rice, however big the snack before it.",
+      "audio": "audio/id/words/w-nasi.mp3",
+      "tags": [
+        "food",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-mi",
+      "indonesian": "mi",
+      "english": "noodles",
+      "pos": "noun",
+      "registerNotes": "Menus usually spell it mie: mie goreng (fried noodles), mie ayam (chicken noodles). Mi is the standard spelling.",
+      "audio": "audio/id/words/w-mi.mp3",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ayam",
+      "indonesian": "ayam",
+      "english": "chicken",
+      "pos": "noun",
+      "registerNotes": "One word for the bird and the meat. Ayam penyet or ayam geprek, fried chicken smashed into sambal, is a warung favourite.",
+      "audio": "audio/id/words/w-ayam.mp3",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ikan",
+      "indonesian": "ikan",
+      "english": "fish",
+      "pos": "noun",
+      "cultureNote": "At seafood stalls by the sea you often pick your fish, pay by weight and have it grilled as ikan bakar.",
+      "audio": "audio/id/words/w-ikan.mp3",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-daging",
+      "indonesian": "daging",
+      "english": "meat",
+      "pos": "noun",
+      "registerNotes": "Name the animal after it: daging sapi (beef), daging kambing (goat, often called mutton on menus), daging babi (pork).",
+      "cultureNote": "Most Indonesians are Muslim and don't eat pork, so babi is rare outside Bali, Chinese restaurants and some Christian regions.",
+      "audio": "audio/id/words/w-daging.mp3",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sayur",
+      "indonesian": "sayur",
+      "english": "vegetables; a vegetable dish",
+      "pos": "noun",
+      "registerNotes": "Also a dish of vegetables, often in broth: sayur asem, sayur lodeh.",
+      "audio": "audio/id/words/w-sayur.mp3",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-buah",
+      "indonesian": "buah",
+      "english": "fruit",
+      "pos": "noun",
+      "pitfallNote": "Buah is also the counter for things (dua buah tas, two bags), so you'll meet it far from the fruit stall.",
+      "audio": "audio/id/words/w-buah.mp3",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-telur",
+      "indonesian": "telur",
+      "english": "egg",
+      "pos": "noun",
+      "registerNotes": "At a warung: telur ceplok (fried egg), telur dadar (omelette), telur rebus (boiled egg). Often said and written telor.",
+      "audio": "audio/id/words/w-telur.mp3",
+      "tags": [
+        "food",
+        "warung"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sambal",
+      "indonesian": "sambal",
+      "english": "chilli sauce, chilli paste",
+      "pos": "noun",
+      "registerNotes": "Comes with almost every meal. To have it on the side, ask Sambalnya dipisah, ya.",
+      "pitfallNote": "Many sambals contain shrimp paste (terasi). If you're vegetarian or allergic, ask Ada terasinya?",
+      "audio": "audio/id/words/w-sambal.mp3",
+      "tags": [
+        "food",
+        "warung"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pedas",
+      "indonesian": "pedas",
+      "english": "spicy (chilli-hot)",
+      "pos": "adjective",
+      "pitfallNote": "Pedas is chilli-hot; hot in temperature is panas. Jangan terlalu pedas, ya means not too spicy, please.",
+      "cultureNote": "Not spicy to the cook can still be spicy to you. Tidak pakai cabai (no chilli) is the safe request.",
+      "audio": "audio/id/words/w-pedas.mp3",
+      "tags": [
+        "food",
+        "taste",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-manis",
+      "indonesian": "manis",
+      "english": "sweet",
+      "pos": "adjective",
+      "registerNotes": "Drinks come sweet unless you ask: es teh manis is the standard iced tea. Said of a person, manis means sweet-looking, attractive.",
+      "audio": "audio/id/words/w-manis.mp3",
+      "tags": [
+        "food",
+        "taste"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-asin",
+      "indonesian": "asin",
+      "english": "salty",
+      "pos": "adjective",
+      "registerNotes": "Ikan asin, salted dried fish, is a common side dish. Too salty is terlalu asin.",
+      "audio": "audio/id/words/w-asin.mp3",
+      "tags": [
+        "food",
+        "taste"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-enak",
+      "indonesian": "enak",
+      "english": "delicious, tasty; nice, pleasant",
+      "pos": "adjective",
+      "registerNotes": "The everyday way to praise food: Enak sekali (it's delicious). It also means pleasant in general: Enak di sini (it's nice here).",
+      "pitfallNote": "Saya tidak enak badan means I'm not feeling well. In casual speech, nggak enak can also mean feeling awkward or bad about something.",
+      "audio": "audio/id/words/w-enak.mp3",
+      "tags": [
+        "food",
+        "taste",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-teh",
+      "indonesian": "teh",
+      "english": "tea",
+      "pos": "noun",
+      "registerNotes": "Served sweet by default. Ask for teh tawar for no sugar; teh hangat is warm tea, es teh iced tea.",
+      "audio": "audio/id/words/w-teh.mp3",
+      "tags": [
+        "food",
+        "drinks"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kopi",
+      "indonesian": "kopi",
+      "english": "coffee",
+      "pos": "noun",
+      "registerNotes": "Kopi hitam is black coffee; kopi susu has milk, often sweetened condensed milk.",
+      "cultureNote": "Warung coffee is often kopi tubruk: the grounds settle at the bottom of the glass, so leave the last mouthful.",
+      "audio": "audio/id/words/w-kopi.mp3",
+      "tags": [
+        "food",
+        "drinks"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-air-putih",
+      "indonesian": "air putih",
+      "english": "drinking water, plain water",
+      "pos": "noun",
+      "pitfallNote": "Air alone is any water, including tap water. To drink, ask for air putih (literally white water); bottled water is air mineral.",
+      "cultureNote": "Tap water isn't for drinking in Indonesia. Air putih at a warung or a home is boiled or filtered.",
+      "audio": "audio/id/words/w-air-putih.mp3",
+      "tags": [
+        "food",
+        "drinks",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-es",
+      "indonesian": "es",
+      "english": "ice; iced drink",
+      "pos": "noun",
+      "registerNotes": "Before a drink, es makes it iced: es teh, es jeruk (iced orange juice). Pakai es? means with ice?, and tidak pakai es is no ice.",
+      "audio": "audio/id/words/w-es.mp3",
+      "tags": [
+        "food",
+        "drinks"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-gula",
+      "indonesian": "gula",
+      "english": "sugar",
+      "pos": "noun",
+      "registerNotes": "To cut down: Gulanya sedikit saja (just a little sugar) or Tidak pakai gula (no sugar). Gula merah or gula Jawa is palm sugar.",
+      "audio": "audio/id/words/w-gula.mp3",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-garam",
+      "indonesian": "garam",
+      "english": "salt",
+      "pos": "noun",
+      "audio": "audio/id/words/w-garam.mp3",
+      "tags": [
+        "food"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-piring",
+      "indonesian": "piring",
+      "english": "plate",
+      "pos": "noun",
+      "registerNotes": "Sepiring is a plateful. A bowl is a mangkuk.",
+      "cultureNote": "Indonesians eat with a spoon in the right hand and a fork in the left, or with the right hand alone. Knives are rarely used.",
+      "audio": "audio/id/words/w-piring.mp3",
+      "tags": [
+        "food",
+        "home"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-goreng",
+      "indonesian": "goreng",
+      "english": "fried",
+      "pos": "adjective",
+      "registerNotes": "After the food in dish names: nasi goreng, ayam goreng, pisang goreng (banana fritters). Grilled is bakar: ayam bakar, ikan bakar.",
+      "audio": "audio/id/words/w-goreng.mp3",
+      "tags": [
+        "food",
+        "cooking"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

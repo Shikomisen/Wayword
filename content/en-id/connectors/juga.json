@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "con-juga",
+  "connector": "juga",
+  "gloss": "also, too",
+  "title": "juga — also, too",
+  "pattern": "Saya juga … · … juga · … juga tidak",
+  "explanation": "juga means also or too, and it comes straight after the word it adds to: Saya juga. — Me too. Minta air putih juga. — Some water too, please. Think of it as following whatever is 'as well', so Juga saya, the English order of also me, is wrong. For not … either, juga goes before tidak: Saya juga tidak tahu (I don't know either), or shortened, …, dia juga tidak. In casual speech that's Aku juga nggak.",
+  "natural": "Agreeing (Saya juga!), adding something to an order, and saying not either with tidak. Fine in any register.",
+  "stiff": "Don't start a sentence with Juga to add a new point (Also, …): that's Selain itu (besides that). And there's no separate word for either: juga with tidak covers it.",
+  "examples": [
+    {
+      "id": "cx-juga-1",
+      "indonesian": "Saya juga dari Selandia Baru.",
+      "english": "I'm from New Zealand too.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "juga ",
+          "w": "w-juga"
+        },
+        {
+          "t": "dari Selandia Baru."
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "juga",
+        "after": " dari Selandia Baru.",
+        "options": [
+          "juga",
+          "dan",
+          "lagi"
+        ],
+        "why": "juga follows the word it adds to: saya juga, me as well."
+      },
+      "audio": "audio/id/connectors/cx-juga-1.mp3",
+      "tags": [
+        "connectors",
+        "juga"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-juga-2",
+      "indonesian": "Minta air putih juga, ya.",
+      "english": "Some water too, please.",
+      "chunks": [
+        {
+          "t": "Minta "
+        },
+        {
+          "t": "air putih ",
+          "w": "w-air-putih"
+        },
+        {
+          "t": "juga, ya.",
+          "w": "w-juga"
+        }
+      ],
+      "gap": {
+        "before": "Minta air putih ",
+        "answer": "juga",
+        "after": ", ya.",
+        "options": [
+          "juga",
+          "lagi",
+          "dan"
+        ],
+        "why": "juga adds water to what you've already ordered; lagi would mean more water, another one."
+      },
+      "audio": "audio/id/connectors/cx-juga-2.mp3",
+      "tags": [
+        "connectors",
+        "juga",
+        "food"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-juga-3",
+      "indonesian": "Dia capek, saya juga.",
+      "english": "She's tired, and so am I.",
+      "chunks": [
+        {
+          "t": "Dia capek, ",
+          "w": "w-capek"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "juga.",
+          "w": "w-juga"
+        }
+      ],
+      "gap": {
+        "before": "Dia capek, saya ",
+        "answer": "juga",
+        "after": ".",
+        "options": [
+          "juga",
+          "dan",
+          "lagi"
+        ],
+        "why": "saya juga is me too, so am I: juga comes after saya."
+      },
+      "combine": {
+        "a": "Dia capek.",
+        "b": "Saya capek.",
+        "distractors": [
+          "juga saya."
+        ]
+      },
+      "audio": "audio/id/connectors/cx-juga-3.mp3",
+      "tags": [
+        "connectors",
+        "juga"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-juga-4",
+      "indonesian": "Saya tidak tahu, dia juga tidak.",
+      "english": "I don't know, and neither does he.",
+      "chunks": [
+        {
+          "t": "Saya tidak tahu, ",
+          "w": "w-tahu"
+        },
+        {
+          "t": "dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "juga ",
+          "w": "w-juga"
+        },
+        {
+          "t": "tidak.",
+          "w": "w-tidak"
+        }
+      ],
+      "gap": {
+        "before": "Saya tidak tahu, dia ",
+        "answer": "juga",
+        "after": " tidak.",
+        "options": [
+          "juga",
+          "dan",
+          "tapi"
+        ],
+        "why": "For not either, juga goes before tidak: dia juga tidak."
+      },
+      "combine": {
+        "a": "Saya tidak tahu.",
+        "b": "Dia tidak tahu.",
+        "distractors": [
+          "tidak juga."
+        ]
+      },
+      "audio": "audio/id/connectors/cx-juga-4.mp3",
+      "tags": [
+        "connectors",
+        "juga"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

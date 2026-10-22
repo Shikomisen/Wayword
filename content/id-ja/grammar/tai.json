@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-tai",
+  "connector": "〜たい",
+  "gloss": "ingin, mau",
+  "title": "〜たい — saya ingin…",
+  "pattern": "kata kerja (bentuk ます tanpa ます) + たい",
+  "explanation": "Untuk bilang kamu ingin melakukan sesuatu, ambil bentuk ます, buang ます, lalu tambahkan たい: {行|い}きます → {行|い}きたい — saya ingin pergi. Dalam bahasa Indonesia “ingin” ada di depan kata kerja; たい menempel di belakangnya. Sesudah itu たい berubah seperti kata sifat い: {行|い}きたいです (sopan), {行|い}きたくない (tidak ingin), {行|い}きたかった (tadinya ingin).",
+  "natural": "Untuk keinginanmu sendiri: いつか{日本|にほん}に{住|す}みたい — suatu hari aku ingin tinggal di Jepang. Dengan makanan dan minuman, を sering menjadi が: お{寿司|すし}が{食|た}べたい.",
+  "stiff": "Menanyakan {何|なに}が{食|た}べたいですか kepada atasan atau orang yang lebih tua bisa terdengar terlalu langsung. Menawarkan lebih halus: {何|なに}か{飲|の}みませんか (pelajaran berikutnya). Dan untuk menginginkan benda, bukan kegiatan, pakai ほしい: {水|みず}がほしい. Bahasa Indonesia memakai “mau” untuk keduanya; bahasa Jepang tidak.",
+  "examples": [
+    {
+      "id": "gx-tai-1",
+      "japanese": "いつか日本に行きたいです。",
+      "furigana": "いつか{日本|にほん}に{行|い}きたいです。",
+      "romaji": "itsuka Nihon ni ikitai desu",
+      "indonesian": "Suatu hari saya ingin pergi ke Jepang.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "いつか"
+        },
+        {
+          "t": "{日本|にほん}に",
+          "w": "w-nihon"
+        },
+        {
+          "t": "{行|い}きたいです。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "いつか{日本|にほん}に{行|い}き",
+        "answer": "たい",
+        "after": "です。",
+        "options": [
+          "たい",
+          "ます",
+          "ない"
+        ],
+        "why": "Ingin: buang ます, tambahkan たい."
+      },
+      "audio": "audio/ja/grammar/gx-tai-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "tai"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-tai-2",
+      "japanese": "今日は家で休みたい。",
+      "furigana": "{今日|きょう}は{家|いえ}で{休|やす}みたい。",
+      "romaji": "kyō wa ie de yasumitai",
+      "indonesian": "Hari ini aku mau istirahat di rumah.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{家|いえ}で",
+          "w": "w-ie"
+        },
+        {
+          "t": "{休|やす}みたい。",
+          "w": "w-yasumu"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}は{家|いえ}で{休|やす}み",
+        "answer": "たい",
+        "after": "。",
+        "options": [
+          "たい",
+          "ます",
+          "たくない"
+        ],
+        "why": "Ingin istirahat: 休みたい."
+      },
+      "audio": "audio/ja/grammar/gx-tai-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "tai"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-tai-3",
+      "japanese": "寒いから、出かけたくない。",
+      "furigana": "{寒|さむ}いから、{出|で}かけたくない。",
+      "romaji": "samui kara, dekaketakunai",
+      "indonesian": "Dingin, jadi aku tidak mau keluar.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{寒|さむ}いから、",
+          "w": "w-samui"
+        },
+        {
+          "t": "{出|で}かけたくない。",
+          "w": "w-dekakeru"
+        }
+      ],
+      "gap": {
+        "before": "{寒|さむ}いから、{出|で}かけ",
+        "answer": "たくない",
+        "after": "。",
+        "options": [
+          "たくない",
+          "たい",
+          "たかった"
+        ],
+        "why": "Tidak ingin: たい → たくない, seperti kata sifat い."
+      },
+      "audio": "audio/ja/grammar/gx-tai-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "tai"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-tai-4",
+      "japanese": "晩ご飯は何が食べたい？",
+      "furigana": "{晩|ばん}ご{飯|はん}は{何|なに}が{食|た}べたい？",
+      "romaji": "bangohan wa nani ga tabetai?",
+      "indonesian": "Untuk makan malam, kamu mau makan apa?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{晩|ばん}ご{飯|はん}は",
+          "w": "w-bangohan"
+        },
+        {
+          "t": "{何|なに}が",
+          "w": "w-nani"
+        },
+        {
+          "t": "{食|た}べたい？",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "{晩|ばん}ご{飯|はん}は{何|なに}が{食|た}べ",
+        "answer": "たい",
+        "after": "？",
+        "options": [
+          "たい",
+          "ます",
+          "たくない"
+        ],
+        "why": "Ingin makan: 食べたい."
+      },
+      "audio": "audio/ja/grammar/gx-tai-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "tai"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

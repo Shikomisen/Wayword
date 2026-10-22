@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "id": "words-describe-more",
+  "title": "形容詞（中級）",
+  "description": "人や場所、状況を、インドネシアの人らしく言い表す言葉。にぎやか・静か、簡単・面倒、感じがいい、かわいい、かっこいい、安全、さわやか。",
+  "items": [
+    {
+      "id": "w-ramai",
+      "indonesian": "ramai",
+      "japanese": "にぎやかな、混んでいる、活気がある",
+      "pos": "adjective",
+      "registerNotes": "くだけて rame。たいていはいい意味で、にぎわって楽しい感じ。ramai なワルン（warung）は人気店のしるしです。悪い意味でうるさいのは berisik。",
+      "audio": "audio/id/words/w-ramai.mp3",
+      "tags": [
+        "形容",
+        "場所"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sepi",
+      "indonesian": "sepi",
+      "japanese": "静かな、人けのない、さびれた",
+      "pos": "adjective",
+      "registerNotes": "ramai の反対で、人通りのない道やお客のいない店など。少しさびしい、不気味な感じがすることもあり、tenang（落ち着いた、穏やかな）とは違います。",
+      "audio": "audio/id/words/w-sepi.mp3",
+      "tags": [
+        "形容",
+        "場所"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-nyaman",
+      "indonesian": "nyaman",
+      "japanese": "快適な、居心地のいい",
+      "pos": "adjective",
+      "registerNotes": "場所や椅子、状況について：Kamarnya nyaman（部屋が快適です）。くだけた会話では enak でも言えます：Enak tempatnya（いいところだね）。",
+      "audio": "audio/id/words/w-nyaman.mp3",
+      "tags": [
+        "形容"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ribet",
+      "indonesian": "ribet",
+      "japanese": "ややこしい、面倒な；細かい、うるさい",
+      "pos": "adjective",
+      "registerNotes": "くだけた言葉ですが、誰もが使います：Ribet banget urusannya（手続きがほんとに面倒）。人について言うと「細かい、うるさい」。中立的な言葉は rumit や repot。",
+      "audio": "audio/id/words/w-ribet.mp3",
+      "tags": [
+        "形容",
+        "くだけた言い方"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gampang",
+      "indonesian": "gampang",
+      "japanese": "簡単な、やさしい",
+      "pos": "adjective",
+      "registerNotes": "日常の言葉で、書き言葉や改まった場では mudah。Gampang, kok（簡単だよ、ほんとに）は相手を安心させる一言です。",
+      "audio": "audio/id/words/w-gampang.mp3",
+      "tags": [
+        "形容"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-susah",
+      "indonesian": "susah",
+      "japanese": "難しい、大変な",
+      "pos": "adjective",
+      "registerNotes": "Sulit はより改まった言葉。susah には「苦労、苦しさ」の意味もあります：hidup susah（苦しい生活）。",
+      "audio": "audio/id/words/w-susah.mp3",
+      "tags": [
+        "形容"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-aneh",
+      "indonesian": "aneh",
+      "japanese": "変な、おかしな、奇妙な",
+      "pos": "adjective",
+      "registerNotes": "出された料理や人の家について言うときは注意。unik（珍しい、個性的な）のほうがやさしい言い方です。",
+      "audio": "audio/id/words/w-aneh.mp3",
+      "tags": [
+        "形容"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-lucu",
+      "indonesian": "lucu",
+      "japanese": "おもしろい、おかしい；かわいい",
+      "pos": "adjective",
+      "pitfallNote": "lucu は「おもしろい」と「かわいい」の両方：Anaknya lucu は「その子がかわいい」という意味で、冗談を言う子という意味ではありません。",
+      "audio": "audio/id/words/w-lucu.mp3",
+      "tags": [
+        "形容",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cantik",
+      "indonesian": "cantik",
+      "japanese": "きれいな、美しい",
+      "pos": "adjective",
+      "registerNotes": "女性や、ドレスや庭など美しいものに。男性には ganteng、景色にはふつう indah を使います。",
+      "audio": "audio/id/words/w-cantik.mp3",
+      "tags": [
+        "形容",
+        "人"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "日本語の「きれい」と違い、「清潔な」の意味はありません。清潔なら bersih。"
+    },
+    {
+      "id": "w-ganteng",
+      "indonesian": "ganteng",
+      "japanese": "ハンサムな、かっこいい",
+      "pos": "adjective",
+      "registerNotes": "日常の言葉で、tampan は改まった言い方です。",
+      "cultureNote": "見た目のことは遠慮なく話題になります。ganteng と言われるのも、太った（gemuk）と言われるのも、ふつうの世間話で、失礼のつもりはありません。",
+      "audio": "audio/id/words/w-ganteng.mp3",
+      "tags": [
+        "形容",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ramah",
+      "indonesian": "ramah",
+      "japanese": "感じのいい、親しみやすい、愛想のいい",
+      "pos": "adjective",
+      "registerNotes": "Orangnya ramah（感じのいい人ですね）はよく聞くほめ言葉。ramah lingkungan（環境にやさしい）にも使われます。",
+      "audio": "audio/id/words/w-ramah.mp3",
+      "tags": [
+        "形容",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sombong",
+      "indonesian": "sombong",
+      "japanese": "傲慢な、偉そうな",
+      "pos": "adjective",
+      "registerNotes": "しばらく連絡をくれない友達への、冗談まじりの文句にも使います：Sombong, nih, nggak pernah kabar（つれないなあ、全然連絡くれないんだから）。",
+      "audio": "audio/id/words/w-sombong.mp3",
+      "tags": [
+        "形容",
+        "人"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-rajin",
+      "indonesian": "rajin",
+      "japanese": "勤勉な、まじめな",
+      "pos": "adjective",
+      "registerNotes": "温かいほめ言葉で、何かを欠かさずにすることにも使います：Rajin olahraga, ya（まめに運動してるんですね）。反対は malas。",
+      "audio": "audio/id/words/w-rajin.mp3",
+      "tags": [
+        "形容",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-malas",
+      "indonesian": "malas",
+      "japanese": "怠けた；気が進まない",
+      "pos": "adjective",
+      "registerNotes": "くだけて males。「怠け者」というより「めんどくさい、気が乗らない」の感じ：Males ah, hujan（めんどくさいな、雨だし）。",
+      "audio": "audio/id/words/w-malas.mp3",
+      "tags": [
+        "形容",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pintar",
+      "indonesian": "pintar",
+      "japanese": "頭がいい、賢い；〜が上手な",
+      "pos": "adjective",
+      "registerNotes": "くだけて pinter。活動を表す言葉の前につけると、腕前をほめる言葉になります：pintar masak（料理上手）。",
+      "cultureNote": "学習者はよくほめられます：Pintar bahasa Indonesia, ya（インドネシア語がお上手ですね）。控えめに Masih belajar（まだ勉強中です）と返すのがふつうで、日本の「いえいえ、まだまだです」と同じやりとりです。",
+      "audio": "audio/id/words/w-pintar.mp3",
+      "tags": [
+        "形容",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mewah",
+      "indonesian": "mewah",
+      "japanese": "豪華な、ぜいたくな",
+      "pos": "adjective",
+      "audio": "audio/id/words/w-mewah.mp3",
+      "tags": [
+        "形容"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sederhana",
+      "indonesian": "sederhana",
+      "japanese": "質素な、シンプルな、つつましい",
+      "pos": "adjective",
+      "cultureNote": "謙遜が大切にされ、どんなにりっぱでも、ホストは自分の家や料理を sederhana や seadanya（あり合わせ）と言います。日本の「何もありませんが」と同じで、ほめて返すのが正解です。",
+      "audio": "audio/id/words/w-sederhana.mp3",
+      "tags": [
+        "形容",
+        "文化"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sempit",
+      "indonesian": "sempit",
+      "japanese": "狭い、窮屈な；きつい",
+      "pos": "adjective",
+      "registerNotes": "道、部屋、服に使います：jalannya sempit（道が狭い）、celananya sempit（ズボンがきつい）。",
+      "audio": "audio/id/words/w-sempit.mp3",
+      "tags": [
+        "形容",
+        "場所"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-luas",
+      "indonesian": "luas",
+      "japanese": "広い、広々とした",
+      "pos": "adjective",
+      "registerNotes": "面積の広さに使い、besar は大きさ全般。日本語の「広い」と「大きい」の違いと同じです：Kamarnya luas（部屋が広いです）。",
+      "audio": "audio/id/words/w-luas.mp3",
+      "tags": [
+        "形容",
+        "場所"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-terkenal",
+      "indonesian": "terkenal",
+      "japanese": "有名な",
+      "pos": "adjective",
+      "forms": {
+        "root": "kenal"
+      },
+      "registerNotes": "kenal（人を知っている）から。「〜で有名」は dengan を使います：Warung ini terkenal dengan sotonya（この店はソトで有名です）。",
+      "audio": "audio/id/words/w-terkenal.mp3",
+      "tags": [
+        "形容"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-penting",
+      "indonesian": "penting",
+      "japanese": "大切な、重要な",
+      "pos": "adjective",
+      "registerNotes": "Yang penting…（大事なのは…）で話をまとめます：Yang penting sehat（元気がいちばん）。",
+      "audio": "audio/id/words/w-penting.mp3",
+      "tags": [
+        "形容"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-berbahaya",
+      "indonesian": "berbahaya",
+      "japanese": "危険な",
+      "pos": "adjective",
+      "forms": {
+        "root": "bahaya"
+      },
+      "registerNotes": "くだけて bahaya だけでも言い、これは警告の表示の「危険」でもあります。",
+      "audio": "audio/id/words/w-berbahaya.mp3",
+      "tags": [
+        "形容",
+        "安全"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-aman",
+      "indonesian": "aman",
+      "japanese": "安全な、安心な",
+      "pos": "adjective",
+      "registerNotes": "くだけた会話では「大丈夫、問題なし」の意味にもなります：Aman? Aman.（大丈夫？　大丈夫。）",
+      "audio": "audio/id/words/w-aman.mp3",
+      "tags": [
+        "形容",
+        "安全"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-segar",
+      "indonesian": "segar",
+      "japanese": "新鮮な、さわやかな",
+      "pos": "adjective",
+      "registerNotes": "くだけて seger。冷たい飲み物、果物、シャワー、涼しい朝の空気など、さっぱり気持ちいいものはどれも segar です。",
+      "audio": "audio/id/words/w-segar.mp3",
+      "tags": [
+        "形容"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sopan",
+      "indonesian": "sopan",
+      "japanese": "礼儀正しい；（服装が）控えめな",
+      "pos": "adjective",
+      "cultureNote": "モスクや寺院を訪ねるときや家庭を訪問するときは、肩とひざが隠れる sopan な服装で。",
+      "audio": "audio/id/words/w-sopan.mp3",
+      "tags": [
+        "形容",
+        "文化"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-santai",
+      "indonesian": "santai",
+      "japanese": "のんびりした、くつろいだ",
+      "pos": "adjective",
+      "registerNotes": "Santai saja（気楽にね、急がなくていいよ）は、相手をくつろがせるための言葉です。",
+      "audio": "audio/id/words/w-santai.mp3",
+      "tags": [
+        "形容"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "id": "con-jadi",
+  "connector": "jadi",
+  "gloss": "だから、それで",
+  "title": "jadi — だから、それで",
+  "pattern": "A, jadi B · Jadi, … · A, makanya B",
+  "explanation": "jadi は結果を言う「だから」「それで」。まず起きたこと、次に jadi、そしてその結果です：Hujan, jadi kami di rumah.（雨だったので、家にいました）。この順番は日本語の「雨だった。だから家にいた」と同じなので、使いやすいはずです。karena の逆で、Kami di rumah karena hujan と言っても同じ意味になります。文の頭の Jadi は「で、」「じゃあ」のように、話をまとめたり本題に戻したりもします：Jadi, semuanya berapa?（で、全部でいくらですか？）。makanya は「だから〜なんだ」で、何かに納得した時によく使います：Oh, makanya kamu capek!（ああ、だから疲れてるんだね！）",
+  "natural": "話し言葉でも書き言葉でも使える、ふつうの言い方です。まとめの Jadi, … はお店でも仕事でも、話の途中でも、どこでも聞きます。",
+  "stiff": "かたい文章では sehingga や oleh karena itu を使いますが、会話では作文のように聞こえます。makanya は「ほら、だから言ったでしょ」と叱る意味にもなるので、目上の人には気をつけて。また jadi にはほかの意味もあります：「〜になる」（jadi guru）、「予定どおり行う」（Besok jadi?＝明日は予定どおり？）。",
+  "examples": [
+    {
+      "id": "cx-jadi-1",
+      "indonesian": "Tokonya tutup, jadi kami pulang.",
+      "japanese": "お店が閉まっていたので、帰りました。",
+      "chunks": [
+        {
+          "t": "Tokonya tutup, ",
+          "w": "w-toko"
+        },
+        {
+          "t": "jadi ",
+          "w": "w-jadi"
+        },
+        {
+          "t": "kami pulang.",
+          "w": "w-pulang"
+        }
+      ],
+      "gap": {
+        "before": "Tokonya tutup, ",
+        "answer": "jadi",
+        "after": " kami pulang.",
+        "options": [
+          "jadi",
+          "karena",
+          "tapi"
+        ],
+        "why": "帰ったのは、お店が閉まっていた結果：jadi（だから）。"
+      },
+      "combine": {
+        "a": "Tokonya tutup.",
+        "b": "Kami pulang.",
+        "distractors": [
+          "karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-jadi-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "jadi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-jadi-2",
+      "indonesian": "Saya tidak bisa makan pedas, jadi sambalnya sedikit saja.",
+      "japanese": "辛いものが食べられないので、サンバルは少しだけにしてください。",
+      "chunks": [
+        {
+          "t": "Saya tidak bisa ",
+          "w": "w-saya"
+        },
+        {
+          "t": "makan pedas, ",
+          "w": "w-pedas"
+        },
+        {
+          "t": "jadi ",
+          "w": "w-jadi"
+        },
+        {
+          "t": "sambalnya sedikit saja.",
+          "w": "w-sambal"
+        }
+      ],
+      "gap": {
+        "before": "Saya tidak bisa makan pedas, ",
+        "answer": "jadi",
+        "after": " sambalnya sedikit saja.",
+        "options": [
+          "jadi",
+          "karena",
+          "walaupun"
+        ],
+        "why": "まず事情、次にそこから出てくること：jadi。"
+      },
+      "combine": {
+        "a": "Saya tidak bisa makan pedas.",
+        "b": "Sambalnya sedikit saja.",
+        "distractors": [
+          "karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-jadi-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "jadi",
+        "食べ物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-jadi-3",
+      "indonesian": "Jadi, semuanya berapa, Bu?",
+      "japanese": "で、全部でいくらですか？",
+      "chunks": [
+        {
+          "t": "Jadi, ",
+          "w": "w-jadi"
+        },
+        {
+          "t": "semuanya "
+        },
+        {
+          "t": "berapa, Bu?",
+          "w": "w-berapa"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Jadi",
+        "after": ", semuanya berapa, Bu?",
+        "options": [
+          "Jadi",
+          "Karena",
+          "Tapi"
+        ],
+        "why": "文の頭の Jadi は話をまとめて先に進めます：「で、全部で」。"
+      },
+      "audio": "audio/id/connectors/cx-jadi-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "jadi",
+        "買い物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-jadi-4",
+      "indonesian": "Saya kurang tidur, makanya pusing.",
+      "japanese": "寝不足だから、頭が痛いんです。",
+      "chunks": [
+        {
+          "t": "Saya kurang tidur, ",
+          "w": "w-tidur"
+        },
+        {
+          "t": "makanya "
+        },
+        {
+          "t": "pusing.",
+          "w": "w-pusing"
+        }
+      ],
+      "gap": {
+        "before": "Saya kurang tidur, ",
+        "answer": "makanya",
+        "after": " pusing.",
+        "options": [
+          "makanya",
+          "jadi",
+          "karena"
+        ],
+        "ok": [
+          "jadi"
+        ],
+        "note": "jadi も使えます。makanya の方が「それが原因だ」と強く指します。",
+        "why": "makanya は「だから〜なんだ」。前に原因が来ます。"
+      },
+      "audio": "audio/id/connectors/cx-jadi-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "jadi"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

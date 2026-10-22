@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "id": "words-verbs",
+  "title": "毎日の動詞",
+  "description": "いちばんよく使う動詞を、話し言葉の短い形で。日本語のような活用はなく、誰がいつしても形は同じです：saya makan, dia makan, kemarin kami makan。",
+  "items": [
+    {
+      "id": "w-makan",
+      "indonesian": "makan",
+      "japanese": "食べる；食事をする",
+      "pos": "verb",
+      "cultureNote": "Sudah makan?（もう食べた？）は親しみのあいさつで、食事に誘っているわけではありません。Sudah（食べました）でも Belum（まだです）でも大丈夫です。",
+      "audio": "audio/id/words/w-makan.mp3",
+      "tags": [
+        "暮らし",
+        "食べ物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-minum",
+      "indonesian": "minum",
+      "japanese": "飲む",
+      "pos": "verb",
+      "registerNotes": "日本語と同じく、薬にも使います：minum obat（薬を飲む）。Mau minum apa?（何を飲みますか？）は店員やホストが聞く言葉です。",
+      "audio": "audio/id/words/w-minum.mp3",
+      "tags": [
+        "暮らし",
+        "食べ物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pergi",
+      "indonesian": "pergi",
+      "japanese": "行く；出かける",
+      "pos": "verb",
+      "registerNotes": "ke（〜へ）の前では pergi をよく省きます：Saya mau ke pasar（市場に行きます）。単独では「出かける、去る」：Dia sudah pergi（彼女はもう出かけました）。",
+      "audio": "audio/id/words/w-pergi.mp3",
+      "tags": [
+        "移動",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-datang",
+      "indonesian": "datang",
+      "japanese": "来る；着く",
+      "pos": "verb",
+      "registerNotes": "Kapan datang? は来た人に「いつ着いたの？」と聞く言葉。Terima kasih sudah datang は「来てくれてありがとう」です。",
+      "audio": "audio/id/words/w-datang.mp3",
+      "tags": [
+        "移動"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pulang",
+      "indonesian": "pulang",
+      "japanese": "帰る",
+      "pos": "verb",
+      "registerNotes": "Saya pulang dulu, ya（先に帰りますね）は、その場を失礼するときのよくある言い方です。",
+      "pitfallNote": "家に帰るのは pergi ke rumah ではなく pulang。日本語の「帰る」と同じく、自分の国に帰るのにも使います：pulang ke Selandia Baru（ニュージーランドに帰る）、pulang ke Jepang（日本に帰る）。",
+      "audio": "audio/id/words/w-pulang.mp3",
+      "tags": [
+        "移動",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tidur",
+      "indonesian": "tidur",
+      "japanese": "寝る、眠る",
+      "pos": "verb",
+      "registerNotes": "tidur siang は昼寝で、暑い昼間によくします。Selamat tidur は寝る人への「おやすみなさい」です。",
+      "audio": "audio/id/words/w-tidur.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bangun",
+      "indonesian": "bangun",
+      "japanese": "起きる、目を覚ます",
+      "pos": "verb",
+      "registerNotes": "Jam berapa bangun?（何時に起きますか？）。me- が付いた membangun は「建てる」です。",
+      "audio": "audio/id/words/w-bangun.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mandi",
+      "indonesian": "mandi",
+      "japanese": "水浴びする、シャワーを浴びる",
+      "pos": "verb",
+      "cultureNote": "インドネシアの人の多くは、朝と夕方の1日2回 mandi します。水槽（bak mandi）から手おけ（gayung）で水をすくって体にかけるやり方がよくあります。",
+      "audio": "audio/id/words/w-mandi.mp3",
+      "tags": [
+        "暮らし"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-beli",
+      "indonesian": "beli",
+      "japanese": "買う",
+      "pos": "verb",
+      "registerNotes": "書き言葉や改まった場面では membeli。beli は普段の話し言葉の形で、どのお店でも十分丁寧です。Beli di mana?（どこで買ったの？）は、よくある気軽な質問です。",
+      "audio": "audio/id/words/w-beli.mp3",
+      "tags": [
+        "買い物",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bayar",
+      "indonesian": "bayar",
+      "japanese": "払う",
+      "pos": "verb",
+      "registerNotes": "書き言葉では membayar。Bayar di mana?（どこで払いますか？）と聞くと、たいてい Di kasir（レジで）と返ってきます。",
+      "pitfallNote": "払う対象をそのまま後ろに置き、「を」に当たる言葉はいりません：bayar makanan（食事代を払う）。",
+      "audio": "audio/id/words/w-bayar.mp3",
+      "tags": [
+        "買い物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-lihat",
+      "indonesian": "lihat",
+      "japanese": "見る",
+      "pos": "verb",
+      "registerNotes": "書き言葉では melihat。Boleh lihat?（見てもいいですか？）。店員には Lihat-lihat saja（見ているだけです）と言います。",
+      "audio": "audio/id/words/w-lihat.mp3",
+      "tags": [
+        "感覚",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dengar",
+      "indonesian": "dengar",
+      "japanese": "聞く、聞こえる",
+      "pos": "verb",
+      "registerNotes": "書き言葉では mendengar。音楽を聞くのは、話し言葉で dengar musik、書き言葉で mendengarkan musik。Maaf, saya tidak dengar は「すみません、聞き取れませんでした」です。",
+      "audio": "audio/id/words/w-dengar.mp3",
+      "tags": [
+        "感覚"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bicara",
+      "indonesian": "bicara",
+      "japanese": "話す",
+      "pos": "verb",
+      "registerNotes": "書き言葉では berbicara、友達同士では ngomong。Bisa bicara bahasa Inggris?（英語を話せますか？）。日本語は bahasa Jepang です。",
+      "audio": "audio/id/words/w-bicara.mp3",
+      "tags": [
+        "コミュニケーション"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tahu",
+      "indonesian": "tahu",
+      "japanese": "知っている（事実を）",
+      "pos": "verb",
+      "registerNotes": "Saya tidak tahu は「知りません、わかりません」。くだけた会話やメッセージでは tau とよく言います。同じ言葉で「豆腐」の意味もあります。",
+      "pitfallNote": "日本語ではどちらも「知っている」ですが、人や場所を知っているときは kenal：Saya kenal dia（彼を知っています）。",
+      "audio": "audio/id/words/w-tahu.mp3",
+      "tags": [
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-suka",
+      "indonesian": "suka",
+      "japanese": "好きだ、好む",
+      "pos": "verb",
+      "registerNotes": "Saya suka kopi（コーヒーが好きです）、Suka?（好き？）。話し言葉では「よく〜する」の意味にもなります：Dia suka terlambat（彼はよく遅刻します）。",
+      "audio": "audio/id/words/w-suka.mp3",
+      "tags": [
+        "気持ち",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tinggal",
+      "indonesian": "tinggal",
+      "japanese": "住む、滞在する",
+      "pos": "verb",
+      "registerNotes": "Tinggal di mana?（どこに住んでいますか？／どこに泊まっていますか？）は、最初に聞かれる質問の一つです。「残っている」の意味もあります：tinggal satu（あと一つだけ）。",
+      "pitfallNote": "me- を付けないこと。meninggal は「亡くなる」です。",
+      "audio": "audio/id/words/w-tinggal.mp3",
+      "tags": [
+        "暮らし",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kerja",
+      "indonesian": "kerja",
+      "japanese": "働く；仕事",
+      "pos": "verb",
+      "registerNotes": "書き言葉では bekerja。Kerja di mana?（どこで働いていますか？）は世間話の定番です。",
+      "audio": "audio/id/words/w-kerja.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-belajar",
+      "indonesian": "belajar",
+      "japanese": "勉強する、学ぶ",
+      "pos": "verb",
+      "registerNotes": "Saya belajar bahasa Indonesia（インドネシア語を勉強しています）。",
+      "pitfallNote": "belajar は学ぶ側。教えるのは mengajar です。",
+      "audio": "audio/id/words/w-belajar.mp3",
+      "tags": [
+        "勉強"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tunggu",
+      "indonesian": "tunggu",
+      "japanese": "待つ",
+      "pos": "verb",
+      "registerNotes": "書き言葉では menunggu。Tunggu sebentar, ya（少々お待ちください）はどこでも耳にします。",
+      "audio": "audio/id/words/w-tunggu.mp3",
+      "tags": [
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cari",
+      "indonesian": "cari",
+      "japanese": "探す",
+      "pos": "verb",
+      "registerNotes": "書き言葉では mencari。Cari apa?（何をお探しですか？）とお店の人が聞きます。",
+      "pitfallNote": "c はいつも「チャ行」の音です。cari は「チャリ」で、kari はカレーです。",
+      "audio": "audio/id/words/w-cari.mp3",
+      "tags": [
+        "必須"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

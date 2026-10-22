@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-potential",
+  "connector": "〜られる",
+  "gloss": "bisa (bentuk potensial)",
+  "title": "〜られる・〜える — bisa melakukan",
+  "pattern": "kata kerja る: 〜る → 〜られる / lainnya: 〜う → 〜える / する → できる / {来|く}る → {来|こ}られる",
+  "explanation": "Bentuk potensial menyatakan kamu bisa melakukan sesuatu. Bahasa Indonesia menambah kata “bisa”; bahasa Jepang mengubah kata kerjanya. Kata kerja る mengganti る dengan られる: {食|た}べる → {食|た}べられる. Kata kerja lain memindahkan bunyi terakhirnya ke baris え lalu menambah る: {行|い}く → {行|い}ける, {飲|の}む → {飲|の}める, {話|はな}す → {話|はな}せる. する menjadi できる, dan {来|く}る menjadi {来|こ}られる. Hal yang bisa kamu lakukan biasanya memakai が: {日本語|にほんご}が{話|はな}せます.",
+  "natural": "Dalam percakapan santai, kata kerja る sering membuang ら: {食|た}べれる, {来|こ}れる. Ini sangat umum, meski sebagian orang tidak menyukainya.",
+  "stiff": "Jangan menempelkan できる pada kata kerja seperti menambah “bisa”: {行|い}くできる salah. Pakai {行|い}ける, atau {行|い}くことができる, yang lebih formal.",
+  "examples": [
+    {
+      "id": "gx-potential-1",
+      "japanese": "日本語が少し話せます。",
+      "furigana": "{日本語|にほんご}が{少|すこ}し{話|はな}せます。",
+      "indonesian": "Saya bisa sedikit berbahasa Jepang.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本語|にほんご}が",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{少|すこ}し"
+        },
+        {
+          "t": "{話|はな}せます。",
+          "w": "w-hanasu"
+        }
+      ],
+      "gap": {
+        "before": "{日本語|にほんご}が{少|すこ}し{話|はな}",
+        "answer": "せます",
+        "after": "。",
+        "options": [
+          "せます",
+          "します",
+          "されます"
+        ],
+        "why": "話す → 話せる: bunyi terakhir pindah ke baris え."
+      },
+      "audio": "audio/ja/grammar/gx-potential-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "bentuk potensial"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-potential-2",
+      "japanese": "辛いものは食べられません。",
+      "furigana": "{辛|から}いものは{食|た}べられません。",
+      "indonesian": "Saya tidak bisa makan makanan pedas.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{辛|から}いものは",
+          "w": "w-karai"
+        },
+        {
+          "t": "{食|た}べられません。",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "{辛|から}いものは{食|た}べ",
+        "answer": "られません",
+        "after": "。",
+        "options": [
+          "られません",
+          "させません",
+          "らません"
+        ],
+        "why": "Kata kerja る: 食べる → 食べられる."
+      },
+      "audio": "audio/ja/grammar/gx-potential-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "bentuk potensial"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-potential-3",
+      "japanese": "明日、来られる？",
+      "furigana": "{明日|あした}、{来|こ}られる？",
+      "indonesian": "Besok bisa datang?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{明日|あした}、",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{来|こ}られる？",
+          "w": "w-kuru"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}、",
+        "answer": "{来|こ}られる",
+        "after": "？",
+        "options": [
+          "{来|こ}られる",
+          "{来|こ}れる",
+          "{来|く}る"
+        ],
+        "ok": [
+          "{来|こ}れる"
+        ],
+        "note": "来れる adalah bentuk santai sehari-hari, meski sebagian orang menganggapnya kurang rapi.",
+        "why": "来る → 来られる."
+      },
+      "audio": "audio/ja/grammar/gx-potential-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "bentuk potensial"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-potential-4",
+      "japanese": "ここからバスで駅まで行けますか。",
+      "furigana": "ここから{バス|ばす}で{駅|えき}まで{行|い}けますか。",
+      "indonesian": "Dari sini bisa ke stasiun naik bus?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "ここから",
+          "w": "w-koko"
+        },
+        {
+          "t": "{バス|ばす}で",
+          "w": "w-basu"
+        },
+        {
+          "t": "{駅|えき}まで",
+          "w": "w-eki"
+        },
+        {
+          "t": "{行|い}けますか。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "ここから{バス|ばす}で{駅|えき}まで{行|い}",
+        "answer": "けますか",
+        "after": "。",
+        "options": [
+          "けますか",
+          "きますか",
+          "かれますか"
+        ],
+        "why": "行く → 行ける."
+      },
+      "audio": "audio/ja/grammar/gx-potential-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "bentuk potensial"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

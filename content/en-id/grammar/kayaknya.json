@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-kayaknya",
+  "connector": "kayaknya, sepertinya, mungkin",
+  "gloss": "it looks like; maybe; about",
+  "title": "kayaknya, sepertinya, mungkin",
+  "pattern": "Sepertinya … / Kayaknya … (it looks like) · Mungkin … (maybe) · Kira-kira … (about, roughly)",
+  "explanation": "To guess, or to soften what you say, put one of these at the front of the sentence. sepertinya means it looks like, it seems, from what you can see or tell: Sepertinya mau hujan (Looks like it's going to rain). kayaknya is the same word in casual speech, and you'll hear it constantly among friends: Kayaknya dia capek (He seems tired). mungkin is maybe or probably, a guess with less to go on: Mungkin dia lupa (Maybe she forgot). kira-kira is about or roughly, for numbers and times (kira-kira jam tujuh, around seven), and it softens a question: Kira-kira berapa lama? (About how long, do you think?).",
+  "natural": "These are how Indonesians say no without quite saying it: Sepertinya saya tidak bisa datang (I don't think I can come) is kinder than Saya tidak bisa datang. Kira-kira makes a question to a driver or a shopkeeper sound less demanding.",
+  "stiff": "kayaknya is casual: with someone older or at work, use sepertinya. And when someone answers your invitation with just mungkin, it may well be a polite no.",
+  "examples": [
+    {
+      "id": "gx-kayaknya-1",
+      "indonesian": "Sepertinya mau hujan.",
+      "english": "It looks like it's going to rain.",
+      "chunks": [
+        {
+          "t": "Sepertinya ",
+          "w": "w-sepertinya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "hujan.",
+          "w": "w-hujan"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Sepertinya",
+        "after": " mau hujan.",
+        "options": [
+          "Sepertinya",
+          "Katanya",
+          "Kira-kira"
+        ],
+        "why": "A guess from what you can see, like dark clouds: sepertinya. Katanya would mean someone told you."
+      },
+      "registerNotes": "Mau here is 'about to', not 'want': mau hujan, it's going to rain.",
+      "audio": "audio/id/grammar/gx-kayaknya-1.mp3",
+      "tags": [
+        "grammar",
+        "kayaknya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-kayaknya-2",
+      "indonesian": "Mungkin dia lupa. Coba telepon lagi.",
+      "english": "Maybe she forgot. Try calling again.",
+      "chunks": [
+        {
+          "t": "Mungkin ",
+          "w": "w-mungkin"
+        },
+        {
+          "t": "dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "lupa. "
+        },
+        {
+          "t": "Coba telepon ",
+          "w": "w-menelepon"
+        },
+        {
+          "t": "lagi."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Mungkin",
+        "after": " dia lupa. Coba telepon lagi.",
+        "options": [
+          "Mungkin",
+          "Kira-kira",
+          "Katanya"
+        ],
+        "why": "A guess with not much to go on: mungkin, 'maybe'."
+      },
+      "audio": "audio/id/grammar/gx-kayaknya-2.mp3",
+      "tags": [
+        "grammar",
+        "kayaknya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-kayaknya-3",
+      "register": "casual",
+      "indonesian": "Kayaknya aku nggak bisa ikut, deh.",
+      "english": "I don't think I can make it.",
+      "chunks": [
+        {
+          "t": "Kayaknya "
+        },
+        {
+          "t": "aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "nggak bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "ikut, "
+        },
+        {
+          "t": "deh."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kayaknya",
+        "after": " aku nggak bisa ikut, deh.",
+        "options": [
+          "Kayaknya",
+          "Sepertinya",
+          "Kira-kira"
+        ],
+        "ok": [
+          "Sepertinya"
+        ],
+        "note": "Sepertinya works too; next to aku and nggak, the casual kayaknya fits better.",
+        "why": "Starting with kayaknya turns a flat no into 'I don't think I can'."
+      },
+      "registerNotes": "Casual, to a friend. Politely: Maaf, sepertinya saya tidak bisa ikut.",
+      "audio": "audio/id/grammar/gx-kayaknya-3.mp3",
+      "tags": [
+        "grammar",
+        "kayaknya",
+        "casual"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kayaknya-4",
+      "indonesian": "Kira-kira jam berapa Bapak sampai?",
+      "english": "About what time will you get here?",
+      "chunks": [
+        {
+          "t": "Kira-kira "
+        },
+        {
+          "t": "jam berapa ",
+          "w": "w-jam"
+        },
+        {
+          "t": "Bapak ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "sampai?",
+          "w": "w-sampai"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kira-kira",
+        "after": " jam berapa Bapak sampai?",
+        "options": [
+          "Kira-kira",
+          "Sepertinya",
+          "Mungkin"
+        ],
+        "why": "For a rough time or number, kira-kira: 'about, roughly'."
+      },
+      "registerNotes": "Kira-kira takes the pressure off: he doesn't have to know exactly.",
+      "audio": "audio/id/grammar/gx-kayaknya-4.mp3",
+      "tags": [
+        "grammar",
+        "kayaknya"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "con-kalau",
+  "connector": "kalau",
+  "gloss": "〜たら、〜なら",
+  "title": "kalau — 〜たら、〜なら",
+  "pattern": "Kalau A, B · B kalau A · Kalau saya, …",
+  "explanation": "kalau は条件の「〜たら」「〜なら」です：Kalau ada waktu, main ke rumah, ya.（時間があったら、うちに遊びに来てね）。日本語は「あったら」と条件の最後に付けますが、kalau は条件の前に置きます。kalau の部分はふつう先に来てコンマで区切りますが、後ろに置くこともできます：Telepon saya kalau ada masalah. 動詞に時制がないので、これから起きることの「〜したら」も kalau です。日本語の「〜たら」と同じく、「もし」と「〜した時」の両方を表せます：Kalau sudah sampai, kabari saya.（着いたら連絡してね）。人や物の前では「〜なら」「〜は」：Kalau saya, nasi goreng saja.（私はナシゴレンだけで）。Kalau begitu（くだけて Kalau gitu）は「それなら」の決まり文句です。",
+  "natural": "ふだんの「〜たら」「〜なら」で、ていねいな場面でもくだけた場面でも使えます。速く話すと kalo のように聞こえますが、書く時は kalau です。やんわり提案したり値段交渉したりするのにも便利です：Kalau seratus ribu, boleh?（10万ルピアなら、いいですか？）",
+  "stiff": "jika や apabila は看板、書類、アナウンスの書き言葉で、会話では契約書のように聞こえます。過去の一度きりの「〜した時」（バリにいた時）は kalau ではなく waktu です。",
+  "examples": [
+    {
+      "id": "cx-kalau-1",
+      "indonesian": "Kalau ada waktu, main ke rumah, ya.",
+      "japanese": "時間があったら、うちに遊びに来てね。",
+      "chunks": [
+        {
+          "t": "Kalau ",
+          "w": "w-kalau"
+        },
+        {
+          "t": "ada waktu, ",
+          "w": "w-ada"
+        },
+        {
+          "t": "main ke rumah, ya.",
+          "w": "w-main"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kalau",
+        "after": " ada waktu, main ke rumah, ya.",
+        "options": [
+          "Kalau",
+          "Karena",
+          "Tapi"
+        ],
+        "why": "時間があるかどうかわからない：条件なので kalau。Karena だと「時間があるから」と、相手が暇だと決めつけることになります。"
+      },
+      "combine": {
+        "a": "Ada waktu.",
+        "b": "Main ke rumah, ya.",
+        "distractors": [
+          "Karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-kalau-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "kalau"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-kalau-2",
+      "indonesian": "Kalau sudah sampai, kabari saya, ya.",
+      "japanese": "着いたら連絡してね。",
+      "chunks": [
+        {
+          "t": "Kalau ",
+          "w": "w-kalau"
+        },
+        {
+          "t": "sudah sampai, ",
+          "w": "w-sampai"
+        },
+        {
+          "t": "kabari saya, ya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kalau",
+        "after": " sudah sampai, kabari saya, ya.",
+        "options": [
+          "Kalau",
+          "Waktu",
+          "Karena"
+        ],
+        "why": "着くのはこれから。未来の「〜たら」は kalau で、waktu はもう過ぎた時のことです。"
+      },
+      "combine": {
+        "a": "Sudah sampai.",
+        "b": "Kabari saya, ya.",
+        "distractors": [
+          "Waktu "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-kalau-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "kalau"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-kalau-3",
+      "indonesian": "Kalau saya, nasi goreng saja.",
+      "japanese": "私はナシゴレンだけで。",
+      "chunks": [
+        {
+          "t": "Kalau saya, ",
+          "w": "w-saya"
+        },
+        {
+          "t": "nasi goreng ",
+          "w": "w-nasi"
+        },
+        {
+          "t": "saja."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kalau",
+        "after": " saya, nasi goreng saja.",
+        "options": [
+          "Kalau",
+          "Karena",
+          "Waktu"
+        ],
+        "why": "人の前の Kalau は「〜なら」「〜は」：kalau saya ＝「私なら」。"
+      },
+      "audio": "audio/id/connectors/cx-kalau-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "kalau",
+        "食べ物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-kalau-4",
+      "indonesian": "Hari ini penuh? Kalau begitu, besok saja.",
+      "japanese": "今日はいっぱいですか？それなら、明日にします。",
+      "chunks": [
+        {
+          "t": "Hari ini penuh? ",
+          "w": "w-hari-ini"
+        },
+        {
+          "t": "Kalau begitu, ",
+          "w": "w-kalau"
+        },
+        {
+          "t": "besok saja.",
+          "w": "w-besok"
+        }
+      ],
+      "gap": {
+        "before": "Hari ini penuh? ",
+        "answer": "Kalau",
+        "after": " begitu, besok saja.",
+        "options": [
+          "Kalau",
+          "Waktu",
+          "Karena"
+        ],
+        "why": "Kalau begitu は「それなら」「じゃあ」の決まり文句です。"
+      },
+      "combine": {
+        "a": "Hari ini penuh?",
+        "b": "Besok saja.",
+        "distractors": [
+          "Waktu begitu, "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-kalau-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "kalau"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

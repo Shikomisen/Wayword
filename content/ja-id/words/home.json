@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "id": "words-home",
+  "title": "家と暮らし",
+  "description": "家の中のこと：台所と浴室、家事、電気、そしてご近所。",
+  "items": [
+    {
+      "id": "w-dapur",
+      "indonesian": "dapur",
+      "japanese": "台所",
+      "pos": "noun",
+      "audio": "audio/id/words/w-dapur.mp3",
+      "tags": [
+        "家"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cuci",
+      "indonesian": "cuci",
+      "japanese": "洗う",
+      "pos": "verb",
+      "registerNotes": "話し言葉では語根のまま使います：cuci tangan（手を洗う）、cuci piring（皿洗いをする）、cuci baju（洗濯する）。書き言葉では mencuci。",
+      "pitfallNote": "体全体を洗うのは mandi。cuci は手、顔、服、食器を洗うときです。",
+      "audio": "audio/id/words/w-cuci.mp3",
+      "tags": [
+        "家",
+        "家事"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-masak",
+      "indonesian": "masak",
+      "japanese": "料理する",
+      "pos": "verb",
+      "registerNotes": "書き言葉では memasak。masakan は料理のこと：masakan Padang（パダン料理）。",
+      "audio": "audio/id/words/w-masak.mp3",
+      "tags": [
+        "家",
+        "料理"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bersih-bersih",
+      "indonesian": "bersih-bersih",
+      "japanese": "掃除する",
+      "pos": "verb",
+      "registerNotes": "掃除をしていると言う普段の言い方：Saya sedang bersih-bersih rumah（家の掃除をしています）。一つの物をきれいにするなら bersihkan：Tolong bersihkan mejanya（テーブルをきれいにしてください）。",
+      "audio": "audio/id/words/w-bersih-bersih.mp3",
+      "tags": [
+        "家",
+        "家事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sabun",
+      "indonesian": "sabun",
+      "japanese": "石けん",
+      "pos": "noun",
+      "audio": "audio/id/words/w-sabun.mp3",
+      "tags": [
+        "家",
+        "浴室"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-handuk",
+      "indonesian": "handuk",
+      "japanese": "タオル",
+      "pos": "noun",
+      "registerNotes": "ホテルで：Boleh minta handuk lagi?（タオルをもう1枚いただけますか？）",
+      "audio": "audio/id/words/w-handuk.mp3",
+      "tags": [
+        "家",
+        "浴室"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-gayung",
+      "indonesian": "gayung",
+      "japanese": "手おけ、ひしゃく",
+      "pos": "noun",
+      "cultureNote": "多くの浴室には水槽（bak mandi）と gayung があり、水をすくって体にかけます。湯船のように見えても、水槽の中には決して入りません。トイレの横では、紙の代わりに gayung やホースを使います。",
+      "audio": "audio/id/words/w-gayung.mp3",
+      "tags": [
+        "家",
+        "浴室"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-selimut",
+      "indonesian": "selimut",
+      "japanese": "毛布",
+      "pos": "noun",
+      "registerNotes": "Kamarnya dingin, boleh minta selimut?（部屋が寒いので、毛布をいただけますか？）",
+      "audio": "audio/id/words/w-selimut.mp3",
+      "tags": [
+        "家"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-listrik",
+      "indonesian": "listrik",
+      "japanese": "電気",
+      "pos": "noun",
+      "cultureNote": "多くの家や賃貸の部屋はプリペイド式のメーターです。ミニマーケットやアプリでトークン（token listrik）を買い、コードを入力します。",
+      "audio": "audio/id/words/w-listrik.mp3",
+      "tags": [
+        "家"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-lampu",
+      "indonesian": "lampu",
+      "japanese": "明かり、電灯",
+      "pos": "noun",
+      "registerNotes": "Tolong matikan lampunya（電気を消してください）。lampu merah（直訳は「赤い明かり」）は信号のことで、道案内でよく目印になります。",
+      "audio": "audio/id/words/w-lampu.mp3",
+      "tags": [
+        "家"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kipas-angin",
+      "indonesian": "kipas angin",
+      "japanese": "扇風機",
+      "pos": "noun",
+      "registerNotes": "直訳は「風の扇」。kipas だけなら、うちわや扇子も含むあらゆる「扇ぐもの」です。",
+      "audio": "audio/id/words/w-kipas-angin.mp3",
+      "tags": [
+        "家"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ac",
+      "indonesian": "AC",
+      "japanese": "エアコン",
+      "pos": "noun",
+      "registerNotes": "「アーセー」と読みます。部屋は AC 付きか non-AC かで選ぶことがよくあります。Bisa nyalakan AC-nya?（エアコンをつけてもらえますか？）",
+      "audio": "audio/id/words/w-ac.mp3",
+      "audioHint": "a se",
+      "tags": [
+        "家",
+        "ホテル"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sampah",
+      "indonesian": "sampah",
+      "japanese": "ごみ",
+      "pos": "noun",
+      "registerNotes": "buang sampah は「ごみを捨てる」、ごみ箱は tempat sampah。看板には Buanglah sampah pada tempatnya（ごみはごみ箱へ）と書かれています。",
+      "audio": "audio/id/words/w-sampah.mp3",
+      "tags": [
+        "家"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tetangga",
+      "indonesian": "tetangga",
+      "japanese": "隣人、近所の人",
+      "pos": "noun",
+      "cultureNote": "近所の人は通りがかりに Mau ke mana? や Dari mana? と声をかけます。日本の「どちらへ？」「ちょっとそこまで」と同じで、Jalan-jalan のようなあいまいな答えで十分です。",
+      "audio": "audio/id/words/w-tetangga.mp3",
+      "tags": [
+        "家",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-belanja",
+      "indonesian": "belanja",
+      "japanese": "買い物する",
+      "pos": "verb",
+      "registerNotes": "毎日の食料品の買い物も含みます：belanja ke pasar（市場に買い出しに行く）。書き言葉では berbelanja。",
+      "audio": "audio/id/words/w-belanja.mp3",
+      "tags": [
+        "家",
+        "買い物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sapu",
+      "indonesian": "sapu",
+      "japanese": "ほうき",
+      "pos": "noun",
+      "registerNotes": "「掃く」は menyapu、くだけて nyapu。",
+      "audio": "audio/id/words/w-sapu.mp3",
+      "tags": [
+        "家",
+        "家事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-jendela",
+      "indonesian": "jendela",
+      "japanese": "窓",
+      "pos": "noun",
+      "registerNotes": "ポルトガル語の janela から来た言葉です。Boleh buka jendelanya?（窓を開けてもいいですか？）",
+      "audio": "audio/id/words/w-jendela.mp3",
+      "tags": [
+        "家"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-atap",
+      "indonesian": "atap",
+      "japanese": "屋根",
+      "pos": "noun",
+      "registerNotes": "Atapnya bocor（屋根が雨漏りする）は、雨季によくある苦情です。",
+      "audio": "audio/id/words/w-atap.mp3",
+      "tags": [
+        "家"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

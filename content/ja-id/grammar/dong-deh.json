@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-dong-deh",
+  "connector": "dong, deh, kan",
+  "gloss": "〜てよ；じゃあ〜；〜でしょ？",
+  "title": "dong, deh, kan",
+  "pattern": "お願い + dong (〜てよ) · 決めたこと + deh (じゃあ〜) · Kan … (だって〜) · …, kan? (〜でしょ？)",
+  "explanation": "3つとも、日本語の終助詞によく似ています。dong はお願いに付くと「ねえ、〜てよ」と親しみをこめて押す言葉、言い切りに付くと「当然〜よ」になります：Ayo dong!（ねえ、行こうよ！）、Cerita dong（ねえ、聞かせてよ）、Iya dong（そうだよ、もちろん！）。deh は「じゃあ〜しよう」「〜ね」と、折れたり心を決めたりした時の言葉です：Ya udah, deh（じゃあ、いいよ）、Aku ikut deh（じゃあ、私も行く）。提案をやわらげる「〜てみて」にもなります：Coba deh（ちょっと試してみて）。kan は bukan の短い形で、相手の同意を求めます。文末なら「〜でしょ？」（Besok libur, kan?、明日は休みでしょ？）、文頭なら「だって」「〜って言ったじゃない」（Kan sudah saya bilang、だから言ったでしょ）。",
+  "natural": "3つとも、友達や恋人、同年代の家族との気楽な会話の言葉です。いちばん幅広く使えるのは kan で、事実を確かめるやわらかい …, kan? なら、ほとんどだれにでも使えます。日本語の「〜ですよね？」に近い感覚です。",
+  "stiff": "年上や目上の人へのお願いに dong を付けると、押しつけがましく、失礼にさえ聞こえます。日本語で目上の人に「〜してよ」と言わないのと同じです。代わりに Bisa tolong …? と頼みましょう。きつい Kan sudah saya bilang! は「だから言ったじゃない！」、ため息まじりの deh は「しかたないなあ」としぶしぶ折れたように聞こえます。",
+  "examples": [
+    {
+      "id": "gx-dong-deh-1",
+      "register": "casual",
+      "indonesian": "Cerita dong, gimana liburannya?",
+      "japanese": "ねえ、聞かせてよ。休み、どうだった？",
+      "chunks": [
+        {
+          "t": "Cerita "
+        },
+        {
+          "t": "dong, "
+        },
+        {
+          "t": "gimana ",
+          "w": "w-bagaimana"
+        },
+        {
+          "t": "liburannya?",
+          "w": "w-liburan"
+        }
+      ],
+      "gap": {
+        "before": "Cerita ",
+        "answer": "dong",
+        "after": ", gimana liburannya?",
+        "options": [
+          "dong",
+          "deh",
+          "kok"
+        ],
+        "why": "dong はお願いに親しみをこめて押す言葉：「ねえ、話してよ」。"
+      },
+      "registerNotes": "旅行から帰ってきた友達に、くだけた言い方で。Gimana は bagaimana（どう）の話し言葉です。",
+      "audio": "audio/id/grammar/gx-dong-deh-1.mp3",
+      "tags": [
+        "文法",
+        "dong-deh",
+        "くだけた言い方"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-dong-deh-2",
+      "register": "casual",
+      "indonesian": "Oke deh, aku ikut.",
+      "japanese": "じゃあいいよ、私も行く。",
+      "chunks": [
+        {
+          "t": "Oke "
+        },
+        {
+          "t": "deh, "
+        },
+        {
+          "t": "aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "ikut."
+        }
+      ],
+      "gap": {
+        "before": "Oke ",
+        "answer": "deh",
+        "after": ", aku ikut.",
+        "options": [
+          "deh",
+          "dong",
+          "kok"
+        ],
+        "why": "deh は、今その気になって決めたことを表します：「じゃあ、〜しよう」。"
+      },
+      "registerNotes": "友達に誘われて、その気になった時のくだけた言い方。ていねいに言うなら：Baik, saya ikut.",
+      "audio": "audio/id/grammar/gx-dong-deh-2.mp3",
+      "tags": [
+        "文法",
+        "dong-deh",
+        "くだけた言い方"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-dong-deh-3",
+      "indonesian": "Besok tokonya tutup, kan?",
+      "japanese": "明日、お店は休みですよね？",
+      "chunks": [
+        {
+          "t": "Besok ",
+          "w": "w-besok"
+        },
+        {
+          "t": "tokonya ",
+          "w": "w-toko"
+        },
+        {
+          "t": "tutup, "
+        },
+        {
+          "t": "kan?"
+        }
+      ],
+      "gap": {
+        "before": "Besok tokonya tutup, ",
+        "answer": "kan",
+        "after": "?",
+        "options": [
+          "kan",
+          "bukan",
+          "dong"
+        ],
+        "ok": [
+          "bukan"
+        ],
+        "note": "Bukan（kan のもとの形）も正解で、少していねいな言い方です。",
+        "why": "文末の kan は、そうだと思っていることの確認：「〜ですよね？」「〜でしょ？」。"
+      },
+      "audio": "audio/id/grammar/gx-dong-deh-3.mp3",
+      "tags": [
+        "文法",
+        "dong-deh"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-dong-deh-4",
+      "register": "casual",
+      "indonesian": "Kan sudah saya bilang, hari Minggu pasti ramai.",
+      "japanese": "だから言ったでしょ、日曜日は絶対混んでるって。",
+      "chunks": [
+        {
+          "t": "Kan "
+        },
+        {
+          "t": "sudah saya bilang, ",
+          "w": "w-saya"
+        },
+        {
+          "t": "hari Minggu ",
+          "w": "w-hari-minggu"
+        },
+        {
+          "t": "pasti ramai.",
+          "w": "w-ramai"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kan",
+        "after": " sudah saya bilang, hari Minggu pasti ramai.",
+        "options": [
+          "Kan",
+          "Dong",
+          "Deh"
+        ],
+        "why": "文頭の kan は「だって」「言ったでしょ」。"
+      },
+      "pitfallNote": "笑いながらならからかい、きつく言えば「だから言ったのに」という非難になります。年上の人に使う前によく考えましょう。",
+      "audio": "audio/id/grammar/gx-dong-deh-4.mp3",
+      "tags": [
+        "文法",
+        "dong-deh",
+        "くだけた言い方"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

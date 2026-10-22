@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "id": "emergency",
+  "title": "Emergencies & Health",
+  "order": 11,
+  "description": "The phrases to have ready if something goes wrong: calling for help, the police or an ambulance, being ill or hurt, and losing your passport or wallet. The emergency number is 112 in many areas; the police are 110, and an ambulance 118 or 119.",
+  "phrases": [
+    {
+      "id": "eme-01",
+      "indonesian": "Tolong!",
+      "english": "Help!",
+      "registerNotes": "Shouted, it means Help. Said calmly, tolong starts a polite request: Tolong bantu saya (Please help me).",
+      "audio": "audio/id/eme-01.mp3",
+      "tags": [
+        "emergency",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "eme-02",
+      "indonesian": "Tolong panggil polisi!",
+      "english": "Call the police!",
+      "registerNotes": "The police number is 110. A police station is a kantor polisi.",
+      "audio": "audio/id/eme-02.mp3",
+      "tags": [
+        "emergency",
+        "police"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "eme-03",
+      "indonesian": "Tolong panggil ambulans!",
+      "english": "Call an ambulance!",
+      "registerNotes": "The ambulance numbers are 118 and 119, or 112 for any emergency in many areas.",
+      "audio": "audio/id/eme-03.mp3",
+      "tags": [
+        "emergency",
+        "health"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "eme-04",
+      "indonesian": "Ada kecelakaan!",
+      "english": "There's been an accident!",
+      "registerNotes": "Ada (there is) works for any emergency: Ada kebakaran! (There's a fire!)",
+      "audio": "audio/id/eme-04.mp3",
+      "tags": [
+        "emergency"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "eme-05",
+      "indonesian": "Saya sakit.",
+      "english": "I'm sick.",
+      "registerNotes": "For something milder: Saya kurang enak badan (I'm not feeling very well). Sakit also means sore: sakit kepala is a headache, sakit perut a stomach ache.",
+      "audio": "audio/id/eme-05.mp3",
+      "tags": [
+        "emergency",
+        "health"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "eme-06",
+      "indonesian": "Rumah sakit terdekat di mana?",
+      "english": "Where's the nearest hospital?",
+      "registerNotes": "Rumah sakit (literally sick house) is a hospital. A klinik is a smaller clinic, and an apotek a pharmacy.",
+      "audio": "audio/id/eme-06.mp3",
+      "tags": [
+        "emergency",
+        "health"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "eme-07",
+      "indonesian": "Saya perlu dokter.",
+      "english": "I need a doctor.",
+      "registerNotes": "Perlu (need) is plain and polite; butuh means the same.",
+      "audio": "audio/id/eme-07.mp3",
+      "tags": [
+        "emergency",
+        "health"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "eme-08",
+      "indonesian": "Sakit di sini.",
+      "english": "It hurts here.",
+      "registerNotes": "Point to the spot. Or name it: kepala saya sakit (my head hurts), kaki saya sakit (my leg hurts).",
+      "audio": "audio/id/eme-08.mp3",
+      "tags": [
+        "emergency",
+        "health"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "eme-09",
+      "indonesian": "Saya alergi kacang.",
+      "english": "I'm allergic to peanuts.",
+      "registerNotes": "Swap in what you react to: alergi udang (prawns), alergi telur (eggs). For a serious allergy, have it written on your phone too.",
+      "pitfallNote": "Kacang covers peanuts, beans and most nuts, and peanuts are everywhere: in satay sauce (bumbu kacang) and gado-gado, for a start.",
+      "audio": "audio/id/eme-09.mp3",
+      "tags": [
+        "emergency",
+        "health",
+        "allergy"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "eme-10",
+      "indonesian": "Paspor saya hilang.",
+      "english": "I've lost my passport.",
+      "registerNotes": "Report it at a police station for a written report of the loss (surat kehilangan), which your embassy will want to see. New Zealand's embassy is in Jakarta.",
+      "audio": "audio/id/eme-10.mp3",
+      "tags": [
+        "emergency",
+        "documents"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "eme-11",
+      "indonesian": "Dompet saya dicopet.",
+      "english": "My wallet's been pickpocketed.",
+      "registerNotes": "Dicopet is picked from your pocket or bag; dicuri is stolen in general: HP saya dicuri (my phone's been stolen).",
+      "audio": "audio/id/eme-11.mp3",
+      "tags": [
+        "emergency",
+        "police"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "eme-12",
+      "indonesian": "Ada yang bisa bahasa Inggris?",
+      "english": "Does anyone here speak English?",
+      "registerNotes": "Bisa (can) is the everyday way to say you speak a language: Saya bisa sedikit bahasa Indonesia (I speak a little Indonesian).",
+      "audio": "audio/id/eme-12.mp3",
+      "tags": [
+        "emergency",
+        "language"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

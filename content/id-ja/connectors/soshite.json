@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "id": "con-soshite",
+  "connector": "そして",
+  "gloss": "dan (juga)",
+  "title": "そして — dan (juga)",
+  "pattern": "A。そして、B。",
+  "explanation": "そして memulai kalimat baru yang menambahkan sesuatu pada kalimat sebelumnya: “dan”, “dan juga”. Posisinya sama seperti di bahasa Indonesia: di awal kalimat kedua. Tapi そして menghubungkan kalimat, bukan kata. Kalau “dan” ada di antara dua kata benda (kucing dan anjing), pakai と: {猫|ねこ}と{犬|いぬ}.",
+  "natural": "Tulisan, pidato, bicara sopan yang hati-hati, dan untuk menambahkan poin terakhir yang penting: そして、{一番|いちばん}{大事|だいじ}なのは… (dan yang paling penting…).",
+  "stiff": "Dalam obrolan sehari-hari terdengar seperti bahasa buku. Dengan orang dekat, bentuk て, それで, atau jeda saja sudah cukup. そして di setiap kalimat saat bicara dengan pasanganmu terdengar seperti sedang membacakan dongeng.",
+  "examples": [
+    {
+      "id": "cx-soshite-1",
+      "japanese": "京都に行きました。そして、お寺を見ました。",
+      "furigana": "{京都|きょうと}に{行|い}きました。そして、お{寺|てら}を{見|み}ました。",
+      "indonesian": "Saya pergi ke Kyoto. Dan saya melihat kuil-kuil.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{京都|きょうと}に"
+        },
+        {
+          "t": "{行|い}きました。",
+          "w": "w-iku"
+        },
+        {
+          "t": "そして、"
+        },
+        {
+          "t": "お{寺|てら}を"
+        },
+        {
+          "t": "{見|み}ました。",
+          "w": "w-miru"
+        }
+      ],
+      "gap": {
+        "before": "{京都|きょうと}に{行|い}きました。",
+        "answer": "そして",
+        "after": "、お{寺|てら}を{見|み}ました。",
+        "options": [
+          "そして",
+          "でも",
+          "だから"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-soshite-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "soshite"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-soshite-2",
+      "japanese": "このアプリは便利です。そして、無料です。",
+      "furigana": "この{アプリ|あぷり}は{便利|べんり}です。そして、{無料|むりょう}です。",
+      "indonesian": "Aplikasi ini praktis. Dan juga gratis.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{アプリ|あぷり}は"
+        },
+        {
+          "t": "{便利|べんり}です。",
+          "w": "w-benri"
+        },
+        {
+          "t": "そして、"
+        },
+        {
+          "t": "{無料|むりょう}です。"
+        }
+      ],
+      "gap": {
+        "before": "この{アプリ|あぷり}は{便利|べんり}です。",
+        "answer": "そして",
+        "after": "、{無料|むりょう}です。",
+        "options": [
+          "そして",
+          "でも",
+          "だから"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-soshite-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "soshite"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-soshite-3",
+      "japanese": "写真を撮りました。そして、彼女に送りました。",
+      "furigana": "{写真|しゃしん}を{撮|と}りました。そして、{彼女|かのじょ}に{送|おく}りました。",
+      "indonesian": "Saya mengambil foto. Lalu saya kirim ke pacar saya.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{写真|しゃしん}を",
+          "w": "w-shashin"
+        },
+        {
+          "t": "{撮|と}りました。"
+        },
+        {
+          "t": "そして、"
+        },
+        {
+          "t": "{彼女|かのじょ}に",
+          "w": "w-kanojo"
+        },
+        {
+          "t": "{送|おく}りました。"
+        }
+      ],
+      "gap": {
+        "before": "{写真|しゃしん}を{撮|と}りました。",
+        "answer": "そして",
+        "after": "、{彼女|かのじょ}に{送|おく}りました。",
+        "options": [
+          "そして",
+          "でも",
+          "けど"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-soshite-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "soshite"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-soshite-4",
+      "japanese": "部屋を掃除しました。そして、洗濯もしました。",
+      "furigana": "{部屋|へや}を{掃除|そうじ}しました。そして、{洗濯|せんたく}もしました。",
+      "indonesian": "Saya membersihkan kamar. Dan saya juga mencuci baju.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{部屋|へや}を",
+          "w": "w-heya"
+        },
+        {
+          "t": "{掃除|そうじ}しました。",
+          "w": "w-souji"
+        },
+        {
+          "t": "そして、"
+        },
+        {
+          "t": "{洗濯|せんたく}も",
+          "w": "w-sentaku"
+        },
+        {
+          "t": "しました。",
+          "w": "w-suru"
+        }
+      ],
+      "gap": {
+        "before": "{部屋|へや}を{掃除|そうじ}しました。",
+        "answer": "そして",
+        "after": "、{洗濯|せんたく}もしました。",
+        "options": [
+          "そして",
+          "でも",
+          "だから"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-soshite-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "soshite"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

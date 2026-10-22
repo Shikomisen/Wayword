@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-pe-an",
+  "connector": "pe-, -an, pe-…-an",
+  "gloss": "the doer, the thing, the doing",
+  "title": "Nouns: pe-, -an, pe-…-an",
+  "pattern": "pe- + root = the person (penjual) · root + -an = the thing (makanan) · pe-…-an = the doing (pembayaran)",
+  "explanation": "pe- makes the person who does something, with the same sound changes as me-: penjual (seller, from jual), pembeli (buyer, from beli), penulis (writer, from tulis), pemandu (guide). -an on the root makes the thing that comes out of it or is used: makanan (food), minuman (a drink), tulisan (writing), pilihan (a choice), tabungan (savings). pe-…-an makes the act or the process, and these are the formal words of signs, forms and offices: pembayaran (payment), pekerjaan (work, a job), and with per-, pertanyaan (a question) and perbaikan (repairs). To look one up, strip the affixes and undo the sound change as you would for me-: pembayaran → bayar, penulis → tulis.",
+  "natural": "-an nouns are everyday words: makanan, minuman, kembalian (change), tagihan (the bill). pe-…-an nouns suit signs, forms and service counters: Pembayaran di kasir (Pay at the till).",
+  "stiff": "In conversation a pe-…-an noun can sound like a form: Bagaimana pembayarannya? is fine at a hotel desk, but with friends it's Bayarnya gimana? Casually, kerjaan replaces pekerjaan: Kerjaannya apa sekarang?",
+  "examples": [
+    {
+      "id": "gx-pe-an-1",
+      "indonesian": "Tetangga saya penjual sayur di pasar.",
+      "english": "My neighbour's a vegetable seller at the market.",
+      "chunks": [
+        {
+          "t": "Tetangga ",
+          "w": "w-tetangga"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "penjual "
+        },
+        {
+          "t": "sayur ",
+          "w": "w-sayur"
+        },
+        {
+          "t": "di pasar.",
+          "w": "w-pasar"
+        }
+      ],
+      "gap": {
+        "before": "Tetangga saya ",
+        "answer": "penjual",
+        "after": " sayur di pasar.",
+        "options": [
+          "penjual",
+          "pembeli",
+          "penjualan"
+        ],
+        "why": "The person who sells is pe- + jual; pembeli is a buyer, and penjualan means sales."
+      },
+      "audio": "audio/id/grammar/gx-pe-an-1.mp3",
+      "tags": [
+        "grammar",
+        "pe-an"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-pe-an-2",
+      "indonesian": "Maaf, pekerjaan Anda apa?",
+      "english": "Excuse me, what's your occupation?",
+      "chunks": [
+        {
+          "t": "Maaf, "
+        },
+        {
+          "t": "pekerjaan ",
+          "w": "w-pekerjaan"
+        },
+        {
+          "t": "Anda ",
+          "w": "w-anda"
+        },
+        {
+          "t": "apa?",
+          "w": "w-apa"
+        }
+      ],
+      "gap": {
+        "before": "Maaf, ",
+        "answer": "pekerjaan",
+        "after": " Anda apa?",
+        "options": [
+          "pekerjaan",
+          "pekerja",
+          "bekerja"
+        ],
+        "why": "A job, the work you do, is pe- + kerja + -an; pekerja is a worker."
+      },
+      "audio": "audio/id/grammar/gx-pe-an-2.mp3",
+      "tags": [
+        "grammar",
+        "pe-an"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-pe-an-3",
+      "indonesian": "Tulisannya kecil sekali, saya tidak bisa baca.",
+      "english": "The writing's so small I can't read it.",
+      "chunks": [
+        {
+          "t": "Tulisannya "
+        },
+        {
+          "t": "kecil sekali, ",
+          "w": "w-kecil"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tidak bisa "
+        },
+        {
+          "t": "baca.",
+          "w": "w-baca"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Tulisan",
+        "after": "nya kecil sekali, saya tidak bisa baca.",
+        "options": [
+          "Tulisan",
+          "Penulis",
+          "Penulisan"
+        ],
+        "why": "The writing itself, the thing written, is tulis + -an; penulis is the writer, and penulisan the act of writing."
+      },
+      "audio": "audio/id/grammar/gx-pe-an-3.mp3",
+      "tags": [
+        "grammar",
+        "pe-an"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-pe-an-4",
+      "indonesian": "Pembayarannya bisa pakai kartu kredit?",
+      "english": "Can I pay by credit card?",
+      "chunks": [
+        {
+          "t": "Pembayarannya ",
+          "w": "w-bayar"
+        },
+        {
+          "t": "bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "pakai ",
+          "w": "w-memakai"
+        },
+        {
+          "t": "kartu kredit?",
+          "w": "w-kartu-kredit"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Pembayaran",
+        "after": "nya bisa pakai kartu kredit?",
+        "options": [
+          "Pembayaran",
+          "Pembayar",
+          "Bayaran"
+        ],
+        "why": "The paying, the process, is pe- + bayar + -an; pembayar is the payer, and bayaran is pay or wages."
+      },
+      "audio": "audio/id/grammar/gx-pe-an-4.mp3",
+      "tags": [
+        "grammar",
+        "pe-an"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

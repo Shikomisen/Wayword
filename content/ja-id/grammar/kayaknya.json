@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-kayaknya",
+  "connector": "kayaknya, sepertinya, mungkin",
+  "gloss": "〜みたい；たぶん；だいたい",
+  "title": "kayaknya, sepertinya, mungkin",
+  "pattern": "Sepertinya … / Kayaknya … (〜みたい) · Mungkin … (たぶん、〜かも) · Kira-kira … (だいたい、〜くらい)",
+  "explanation": "推測したり、言い方をやわらげたりする時は、これらを文の頭に置きます。sepertinya は「〜みたい」「〜ようだ」で、見て分かること、感じることからの推測です：Sepertinya mau hujan（雨が降りそうです）。kayaknya はその話し言葉で、日本語の「〜っぽい」「〜みたい」のように、友達同士でしょっちゅう聞きます：Kayaknya dia capek（彼、疲れてるみたい）。mungkin は「たぶん」「〜かも」で、根拠の少ない推測：Mungkin dia lupa（彼女、忘れたのかも）。kira-kira は数や時間の「だいたい」「〜くらい」（kira-kira jam tujuh、7時ごろ）で、質問をやわらげる時にも使います：Kira-kira berapa lama?（だいたいどのくらいかかりそうですか？）。",
+  "natural": "インドネシア人は、これを使ってはっきり言わずに断ります。日本語の「ちょっと難しいかも…」に似ています：Sepertinya saya tidak bisa datang（行けそうにありません）は、Saya tidak bisa datang より優しい言い方です。運転手や店の人への質問も、kira-kira を付けると催促がましくなりません。",
+  "stiff": "kayaknya はくだけた言葉。年上の人や仕事の場では sepertinya を使います。また、誘いへの返事がただの mungkin なら、ていねいに断られている可能性も十分あります。日本語の「行けたら行く」のようなものです。",
+  "examples": [
+    {
+      "id": "gx-kayaknya-1",
+      "indonesian": "Sepertinya mau hujan.",
+      "japanese": "雨が降りそうです。",
+      "chunks": [
+        {
+          "t": "Sepertinya ",
+          "w": "w-sepertinya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "hujan.",
+          "w": "w-hujan"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Sepertinya",
+        "after": " mau hujan.",
+        "options": [
+          "Sepertinya",
+          "Katanya",
+          "Kira-kira"
+        ],
+        "why": "黒い雲など、見て分かることからの推測は sepertinya。Katanya だと「人から聞いた」になります。"
+      },
+      "registerNotes": "この Mau は「〜したい」ではなく「今にも〜しそう」：mau hujan で「雨が降りそう」。",
+      "audio": "audio/id/grammar/gx-kayaknya-1.mp3",
+      "tags": [
+        "文法",
+        "kayaknya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-kayaknya-2",
+      "indonesian": "Mungkin dia lupa. Coba telepon lagi.",
+      "japanese": "忘れてるのかも。もう一度電話してみて。",
+      "chunks": [
+        {
+          "t": "Mungkin ",
+          "w": "w-mungkin"
+        },
+        {
+          "t": "dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "lupa. "
+        },
+        {
+          "t": "Coba telepon ",
+          "w": "w-menelepon"
+        },
+        {
+          "t": "lagi."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Mungkin",
+        "after": " dia lupa. Coba telepon lagi.",
+        "options": [
+          "Mungkin",
+          "Kira-kira",
+          "Katanya"
+        ],
+        "why": "根拠があまりない推測は mungkin（「たぶん」「〜かも」）。"
+      },
+      "audio": "audio/id/grammar/gx-kayaknya-2.mp3",
+      "tags": [
+        "文法",
+        "kayaknya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-kayaknya-3",
+      "register": "casual",
+      "indonesian": "Kayaknya aku nggak bisa ikut, deh.",
+      "japanese": "行けそうにないなあ。",
+      "chunks": [
+        {
+          "t": "Kayaknya "
+        },
+        {
+          "t": "aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "nggak bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "ikut, "
+        },
+        {
+          "t": "deh."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kayaknya",
+        "after": " aku nggak bisa ikut, deh.",
+        "options": [
+          "Kayaknya",
+          "Sepertinya",
+          "Kira-kira"
+        ],
+        "ok": [
+          "Sepertinya"
+        ],
+        "note": "Sepertinya も正解。ただ、aku や nggak と並ぶなら、くだけた kayaknya の方が合います。",
+        "why": "kayaknya で始めると、きっぱりした「行けない」が「行けそうにない」くらいにやわらぎます。"
+      },
+      "registerNotes": "友達へのくだけた言い方。ていねいに言うなら：Maaf, sepertinya saya tidak bisa ikut.",
+      "audio": "audio/id/grammar/gx-kayaknya-3.mp3",
+      "tags": [
+        "文法",
+        "kayaknya",
+        "くだけた言い方"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kayaknya-4",
+      "indonesian": "Kira-kira jam berapa Bapak sampai?",
+      "japanese": "だいたい何時ごろ着きますか？",
+      "chunks": [
+        {
+          "t": "Kira-kira "
+        },
+        {
+          "t": "jam berapa ",
+          "w": "w-jam"
+        },
+        {
+          "t": "Bapak ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "sampai?",
+          "w": "w-sampai"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kira-kira",
+        "after": " jam berapa Bapak sampai?",
+        "options": [
+          "Kira-kira",
+          "Sepertinya",
+          "Mungkin"
+        ],
+        "why": "だいたいの時間や数は kira-kira（「〜ごろ」「〜くらい」）。"
+      },
+      "registerNotes": "Kira-kira を付けると、相手は正確に答えなくてよいので気が楽になります。日本語の「だいたい」「〜ごろ」と同じ気づかいです。",
+      "audio": "audio/id/grammar/gx-kayaknya-4.mp3",
+      "tags": [
+        "文法",
+        "kayaknya"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

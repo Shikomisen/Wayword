@@ -1,0 +1,418 @@
+{
+  "schemaVersion": 1,
+  "id": "weekend-plans",
+  "title": "Membuat rencana akhir pekan",
+  "category": "plans",
+  "setting": "Di akhir sesi pertukaran bahasa, temanmu dari Jepang, Yuki, menoleh kepadamu.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "friend",
+      "japanese": "ねえ、週末、何か予定ある？",
+      "furigana": [
+        {
+          "b": "ねえ、"
+        },
+        {
+          "b": "週末",
+          "r": "しゅうまつ"
+        },
+        {
+          "b": "、"
+        },
+        {
+          "b": "何",
+          "r": "なに"
+        },
+        {
+          "b": "か"
+        },
+        {
+          "b": "予定",
+          "r": "よてい"
+        },
+        {
+          "b": "ある？"
+        }
+      ],
+      "indonesian": "Eh, akhir pekan ini ada rencana?",
+      "audio": "audio/ja/scenario/weekend-plans-n1.mp3",
+      "audioHint": "ねえ、しゅうまつ、なにかよていある？",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "土曜日は空いてるよ。どうして？",
+          "furigana": [
+            {
+              "b": "土曜日",
+              "r": "どようび"
+            },
+            {
+              "b": "は"
+            },
+            {
+              "b": "空",
+              "r": "あ"
+            },
+            {
+              "b": "いてるよ。どうして？"
+            }
+          ],
+          "indonesian": "Sabtu aku kosong. Kenapa?",
+          "feedback": "Wajar dan akrab, dalam bahasa Jepang santai yang dipakai antarteman, seperti beralih dari “saya” ke “aku”.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "japanese": "特にないよ。",
+          "furigana": [
+            {
+              "b": "特",
+              "r": "とく"
+            },
+            {
+              "b": "にないよ。"
+            }
+          ],
+          "indonesian": "Tidak ada yang khusus, kok.",
+          "feedback": "Jawaban yang gampang: kamu sedang kosong.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "はい、ありません。",
+          "furigana": [
+            {
+              "b": "はい、ありません。"
+            }
+          ],
+          "indonesian": "Ya, tidak ada.",
+          "feedback": "Dalam bahasa Indonesia “iya, nggak ada” terdengar biasa, tapi dalam bahasa Jepang はい dengan jawaban negatif membingungkan, dan はい terasa kaku dengan teman. 特にないよ (tidak ada yang khusus) terdengar wajar.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "friend",
+      "japanese": "鎌倉に行ってみない？海もお寺もあって、いいところだよ。",
+      "furigana": [
+        {
+          "b": "鎌倉",
+          "r": "かまくら"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "行",
+          "r": "い"
+        },
+        {
+          "b": "ってみない？"
+        },
+        {
+          "b": "海",
+          "r": "うみ"
+        },
+        {
+          "b": "もお"
+        },
+        {
+          "b": "寺",
+          "r": "てら"
+        },
+        {
+          "b": "もあって、いいところだよ。"
+        }
+      ],
+      "indonesian": "Mau coba ke Kamakura? Ada laut dan kuil juga. Tempatnya bagus, lho.",
+      "audio": "audio/ja/scenario/weekend-plans-n2.mp3",
+      "audioHint": "かまくらにいってみない？うみもおてらもあって、いいところだよ",
+      "options": [
+        {
+          "phraseId": "pla-03",
+          "quality": "good",
+          "feedback": "Jawaban “ayo” yang hangat, dalam bahasa Jepang santai.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "japanese": "鎌倉？行ったことない！行ってみたい。",
+          "furigana": [
+            {
+              "b": "鎌倉",
+              "r": "かまくら"
+            },
+            {
+              "b": "？"
+            },
+            {
+              "b": "行",
+              "r": "い"
+            },
+            {
+              "b": "ったことない！"
+            },
+            {
+              "b": "行",
+              "r": "い"
+            },
+            {
+              "b": "ってみたい。"
+            }
+          ],
+          "indonesian": "Kamakura? Aku belum pernah ke sana! Mau coba.",
+          "feedback": "Dua pola tingkat menengah sekaligus: たことない (belum pernah) dan てみたい (ingin mencoba).",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "お寺はあまり好きじゃない。",
+          "furigana": [
+            {
+              "b": "お"
+            },
+            {
+              "b": "寺",
+              "r": "てら"
+            },
+            {
+              "b": "はあまり"
+            },
+            {
+              "b": "好",
+              "r": "す"
+            },
+            {
+              "b": "きじゃない。"
+            }
+          ],
+          "indonesian": "Aku kurang suka kuil.",
+          "feedback": "Jujur, tapi datar. Perhalus, lalu beri usulan: お寺もいいけど、海に行きたいな.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "friend",
+      "japanese": "じゃあ、何時にする？",
+      "furigana": [
+        {
+          "b": "じゃあ、"
+        },
+        {
+          "b": "何時",
+          "r": "なんじ"
+        },
+        {
+          "b": "にする？"
+        }
+      ],
+      "indonesian": "Terus, mau jam berapa?",
+      "audio": "audio/ja/scenario/weekend-plans-n3.mp3",
+      "audioHint": "じゃあ、なんじにする？",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "十時ごろはどう？",
+          "furigana": [
+            {
+              "b": "十時",
+              "r": "じゅうじ"
+            },
+            {
+              "b": "ごろはどう？"
+            }
+          ],
+          "indonesian": "Sekitar jam sepuluh, bagaimana?",
+          "feedback": "Mengusulkan waktu dengan どう？ (bagaimana?) memberi ruang untuk menyesuaikan.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "japanese": "混むから、早めに出たほうがいいよね。九時は？",
+          "furigana": [
+            {
+              "b": "混",
+              "r": "こ"
+            },
+            {
+              "b": "むから、"
+            },
+            {
+              "b": "早",
+              "r": "はや"
+            },
+            {
+              "b": "めに"
+            },
+            {
+              "b": "出",
+              "r": "で"
+            },
+            {
+              "b": "たほうがいいよね。"
+            },
+            {
+              "b": "九時",
+              "r": "くじ"
+            },
+            {
+              "b": "は？"
+            }
+          ],
+          "indonesian": "Nanti ramai, jadi sebaiknya berangkat pagi-pagi. Jam sembilan?",
+          "feedback": "Memberi alasan untuk waktunya: ほうがいい berarti “sebaiknya”.",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "何時にする。",
+          "furigana": [
+            {
+              "b": "何時",
+              "r": "なんじ"
+            },
+            {
+              "b": "にする。"
+            }
+          ],
+          "indonesian": "Jam berapa jadinya.",
+          "feedback": "Itu hanya mengulang pertanyaannya sebagai pernyataan. Usulkan waktu: 十時ごろはどう？",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "friend",
+      "japanese": "いいよ。どこで待ち合わせする？",
+      "furigana": [
+        {
+          "b": "いいよ。どこで"
+        },
+        {
+          "b": "待",
+          "r": "ま"
+        },
+        {
+          "b": "ち"
+        },
+        {
+          "b": "合",
+          "r": "あ"
+        },
+        {
+          "b": "わせする？"
+        }
+      ],
+      "indonesian": "Oke. Ketemuan di mana?",
+      "audio": "audio/ja/scenario/weekend-plans-n4.mp3",
+      "audioHint": "いいよ。どこでまちあわせする？",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "新宿駅の南口でいい？",
+          "furigana": [
+            {
+              "b": "新宿駅",
+              "r": "しんじゅくえき"
+            },
+            {
+              "b": "の"
+            },
+            {
+              "b": "南口",
+              "r": "みなみぐち"
+            },
+            {
+              "b": "でいい？"
+            }
+          ],
+          "indonesian": "Di pintu selatan Stasiun Shinjuku, bisa?",
+          "feedback": "Tempat yang pasti: stasiun besar punya banyak pintu keluar, dan teman di Jepang selalu menyebut salah satunya.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "pla-06",
+          "quality": "awkward",
+          "feedback": "Jelas, tapi ましょう terlalu sopan untuk teman, dan stasiun besar punya banyak gerbang tiket. Sebutkan satu: 新宿駅の南口でいい？",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "friend",
+      "japanese": "了解！じゃ、土曜日ね。楽しみ！",
+      "furigana": [
+        {
+          "b": "了解",
+          "r": "りょうかい"
+        },
+        {
+          "b": "！じゃ、"
+        },
+        {
+          "b": "土曜日",
+          "r": "どようび"
+        },
+        {
+          "b": "ね。"
+        },
+        {
+          "b": "楽",
+          "r": "たの"
+        },
+        {
+          "b": "しみ！"
+        }
+      ],
+      "indonesian": "Siap! Sabtu, ya. Sudah tidak sabar!",
+      "audio": "audio/ja/scenario/weekend-plans-n5.mp3",
+      "audioHint": "りょうかい！じゃ、どようびね。たのしみ！",
+      "options": [
+        {
+          "phraseId": "pla-10",
+          "quality": "good",
+          "feedback": "Persis yang diucapkan teman saat mau ketemuan.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "japanese": "私も！誘ってくれてありがとう。",
+          "furigana": [
+            {
+              "b": "私",
+              "r": "わたし"
+            },
+            {
+              "b": "も！"
+            },
+            {
+              "b": "誘",
+              "r": "さそ"
+            },
+            {
+              "b": "ってくれてありがとう。"
+            }
+          ],
+          "indonesian": "Aku juga! Terima kasih sudah mengajakku.",
+          "feedback": "てくれて berterima kasih atas kebaikannya mengajakmu.",
+          "next": "end"
+        },
+        {
+          "phraseId": "pla-11",
+          "quality": "awkward",
+          "feedback": "Ungkapan yang manis, tapi terlalu sopan untuk obrolan dengan teman, seperti memakai “saya” dan “Anda” dengan sahabat. 楽しみにしてる！ atau 私も楽しみ！ lebih wajar.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "indonesian": "Selesai. Mengajak dengan 〜てみない？, memilih waktu dengan にする, dan menentukan tempat bertemu yang pasti: begitulah teman-teman di Jepang membuat rencana.",
+      "end": true,
+      "options": []
+    }
+  }
+}

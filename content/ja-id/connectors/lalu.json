@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "id": "con-lalu",
+  "connector": "lalu, terus",
+  "gloss": "それから、〜て",
+  "title": "lalu, terus — それから、〜て",
+  "pattern": "A, lalu B · A, terus B · A. Lalu B.",
+  "explanation": "lalu は動作を順番につなぐ「それから」「〜て」です：Saya mandi dulu, lalu makan.（先にシャワーを浴びて、それから食べます）。文の途中にも、新しい文の頭にも置けます（Lalu kami langsung tidur）。同じ人の動作なら、lalu の後ろで saya をくり返す必要はありません。terus も同じ意味で、会話ではこちらがふつうです。聞き手が Terus? と言えば「それで？」と話の続きを促す言葉になります。kemudian は書き言葉や改まった言い方で、説明書やニュースで使われます。",
+  "natural": "lalu はどこでも使える無難な言い方。terus は話し言葉の定番で、友達に出来事を話す時、道案内、話の続きを促す時に使います。",
+  "stiff": "会話で kemudian を使うと、報告書やレシピのように聞こえます。lalu の前に dan は要りません。lalu だけで「そして、それから」の意味です。また道案内の terus に注意：jalan terus だけだと「それから」ではなく「まっすぐ進む」の意味です。",
+  "examples": [
+    {
+      "id": "cx-lalu-1",
+      "indonesian": "Saya mandi dulu, lalu makan.",
+      "japanese": "先にシャワーを浴びて、それから食べます。",
+      "chunks": [
+        {
+          "t": "Saya mandi dulu, ",
+          "w": "w-mandi"
+        },
+        {
+          "t": "lalu "
+        },
+        {
+          "t": "makan.",
+          "w": "w-makan"
+        }
+      ],
+      "gap": {
+        "before": "Saya mandi dulu, ",
+        "answer": "lalu",
+        "after": " makan.",
+        "options": [
+          "lalu",
+          "tapi",
+          "karena"
+        ],
+        "why": "動作を1つずつ順番に：lalu（それから）。"
+      },
+      "combine": {
+        "a": "Saya mandi dulu.",
+        "b": "Saya makan.",
+        "distractors": [
+          "karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-lalu-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "lalu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-lalu-2",
+      "register": "casual",
+      "indonesian": "Kemarin aku makan di warung, terus nonton film.",
+      "japanese": "昨日はワルンで食べて、それから映画を見たよ。",
+      "chunks": [
+        {
+          "t": "Kemarin aku ",
+          "w": "w-kemarin"
+        },
+        {
+          "t": "makan di warung, ",
+          "w": "w-warung"
+        },
+        {
+          "t": "terus "
+        },
+        {
+          "t": "nonton film.",
+          "w": "w-nonton"
+        }
+      ],
+      "gap": {
+        "before": "Kemarin aku makan di warung, ",
+        "answer": "terus",
+        "after": " nonton film.",
+        "options": [
+          "terus",
+          "lalu",
+          "karena"
+        ],
+        "ok": [
+          "lalu"
+        ],
+        "note": "lalu も同じ意味。terus の方がくだけていて、友達に話す時向きです。",
+        "why": "terus は話し言葉の「それから」「で、」です。"
+      },
+      "combine": {
+        "a": "Kemarin aku makan di warung.",
+        "b": "Aku nonton film.",
+        "distractors": [
+          "karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-lalu-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "lalu",
+        "くだけた言い方"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-lalu-3",
+      "indonesian": "Jalan lurus, lalu belok kiri di depan masjid.",
+      "japanese": "まっすぐ行って、モスクの前で左に曲がってください。",
+      "chunks": [
+        {
+          "t": "Jalan lurus, ",
+          "w": "w-lurus"
+        },
+        {
+          "t": "lalu "
+        },
+        {
+          "t": "belok kiri ",
+          "w": "w-kiri"
+        },
+        {
+          "t": "di depan masjid.",
+          "w": "w-masjid"
+        }
+      ],
+      "gap": {
+        "before": "Jalan lurus, ",
+        "answer": "lalu",
+        "after": " belok kiri di depan masjid.",
+        "options": [
+          "lalu",
+          "terus",
+          "atau"
+        ],
+        "ok": [
+          "terus"
+        ],
+        "note": "terus も使え、道案内でとてもよく聞きます。ただし jalan terus だけだと「まっすぐ進み続ける」の意味です。",
+        "why": "道案内の次の手順を lalu でつなぎます。"
+      },
+      "combine": {
+        "a": "Jalan lurus.",
+        "b": "Belok kiri di depan masjid.",
+        "distractors": [
+          "atau "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-lalu-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "lalu",
+        "道案内"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-lalu-4",
+      "indonesian": "Kami sampai di hotel jam sembilan. Lalu kami langsung tidur.",
+      "japanese": "9時にホテルに着きました。それからすぐに寝ました。",
+      "chunks": [
+        {
+          "t": "Kami sampai ",
+          "w": "w-sampai"
+        },
+        {
+          "t": "di hotel jam sembilan. ",
+          "w": "w-hotel"
+        },
+        {
+          "t": "Lalu "
+        },
+        {
+          "t": "kami langsung tidur.",
+          "w": "w-tidur"
+        }
+      ],
+      "gap": {
+        "before": "Kami sampai di hotel jam sembilan. ",
+        "answer": "Lalu",
+        "after": " kami langsung tidur.",
+        "options": [
+          "Lalu",
+          "Tapi",
+          "Karena"
+        ],
+        "why": "Lalu は新しい文の頭に置いて、話の次の場面を始めることもできます。"
+      },
+      "combine": {
+        "a": "Kami sampai di hotel jam sembilan.",
+        "b": "Kami langsung tidur.",
+        "distractors": [
+          "Tapi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-lalu-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "lalu"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

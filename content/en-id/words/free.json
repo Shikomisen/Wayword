@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "words-free",
+  "title": "Free Time",
+  "description": "What you do for fun: going out, films, music, sport and the weekend.",
+  "items": [
+    {
+      "id": "w-jalan-jalan",
+      "indonesian": "jalan-jalan",
+      "english": "to go out, go for a walk; to travel around",
+      "pos": "verb",
+      "registerNotes": "Anything from a stroll to a holiday trip. Jalan-jalan saja (just out and about) is the classic answer to Mau ke mana?",
+      "audio": "audio/id/words/w-jalan-jalan.mp3",
+      "tags": [
+        "free time",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-nonton",
+      "indonesian": "nonton",
+      "english": "to watch (a film, TV, a match)",
+      "pos": "verb",
+      "forms": {
+        "root": "tonton"
+      },
+      "registerNotes": "What everyone says: nonton film, nonton TV. Menonton is the written form.",
+      "audio": "audio/id/words/w-nonton.mp3",
+      "tags": [
+        "free time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-film",
+      "indonesian": "film",
+      "english": "film, movie",
+      "pos": "noun",
+      "registerNotes": "The cinema is bioskop: nonton di bioskop.",
+      "audio": "audio/id/words/w-film.mp3",
+      "tags": [
+        "free time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-musik",
+      "indonesian": "musik",
+      "english": "music",
+      "pos": "noun",
+      "cultureNote": "Dangdut, a pop style with Malay and Indian roots, is what you'll hear on buses, at weddings and from passing street musicians.",
+      "audio": "audio/id/words/w-musik.mp3",
+      "tags": [
+        "free time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-lagu",
+      "indonesian": "lagu",
+      "english": "song",
+      "pos": "noun",
+      "registerNotes": "To sing is nyanyi, written menyanyi. Karaoke with friends is a favourite night out.",
+      "audio": "audio/id/words/w-lagu.mp3",
+      "tags": [
+        "free time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-main",
+      "indonesian": "main",
+      "english": "to play; to come over, visit",
+      "pos": "verb",
+      "registerNotes": "Main ke rumah, ya (come round to my place) uses main for visiting. Written bermain.",
+      "audio": "audio/id/words/w-main.mp3",
+      "tags": [
+        "free time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-olahraga",
+      "indonesian": "olahraga",
+      "english": "sport, exercise; to exercise",
+      "pos": "noun",
+      "registerNotes": "Also a verb: Saya olahraga setiap pagi (I exercise every morning). Football is sepak bola, usually just bola: nonton bola.",
+      "audio": "audio/id/words/w-olahraga.mp3",
+      "tags": [
+        "free time",
+        "health"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-berenang",
+      "indonesian": "berenang",
+      "english": "to swim",
+      "pos": "verb",
+      "forms": {
+        "root": "renang"
+      },
+      "registerNotes": "A swimming pool is a kolam renang. In casual speech, renang on its own: Ayo renang.",
+      "audio": "audio/id/words/w-berenang.mp3",
+      "tags": [
+        "free time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-foto",
+      "indonesian": "foto",
+      "english": "photo; to take a photo",
+      "pos": "noun",
+      "registerNotes": "Ask before photographing someone: Boleh foto?",
+      "cultureNote": "At tourist spots, people may ask a foreigner for a photo together (foto bareng).",
+      "audio": "audio/id/words/w-foto.mp3",
+      "tags": [
+        "free time",
+        "travel"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-liburan",
+      "indonesian": "liburan",
+      "english": "holiday, vacation",
+      "pos": "noun",
+      "registerNotes": "Liburan ke Bali is a holiday in Bali; Saya di sini untuk liburan (I'm here on holiday). Libur on its own is a day off.",
+      "audio": "audio/id/words/w-liburan.mp3",
+      "tags": [
+        "free time",
+        "travel"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-nongkrong",
+      "indonesian": "nongkrong",
+      "english": "to hang out",
+      "pos": "verb",
+      "registerNotes": "Casual: hanging out with friends, often for hours at a warung kopi or café. To someone older, say kumpul dengan teman (meeting up with friends).",
+      "audio": "audio/id/words/w-nongkrong.mp3",
+      "tags": [
+        "free time",
+        "casual"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-baca",
+      "indonesian": "baca",
+      "english": "to read",
+      "pos": "verb",
+      "registerNotes": "The everyday form: Saya suka baca. Written membaca.",
+      "audio": "audio/id/words/w-baca.mp3",
+      "tags": [
+        "free time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hobi",
+      "indonesian": "hobi",
+      "english": "hobby",
+      "pos": "noun",
+      "registerNotes": "Hobinya apa? (What are your hobbies?) is a common getting-to-know-you question.",
+      "audio": "audio/id/words/w-hobi.mp3",
+      "tags": [
+        "free time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-akhir-pekan",
+      "indonesian": "akhir pekan",
+      "english": "weekend",
+      "pos": "noun",
+      "registerNotes": "Many people just say weekend.",
+      "pitfallNote": "Malam Minggu, literally Sunday night, is Saturday night: the eve of Sunday, and the night for going out.",
+      "audio": "audio/id/words/w-akhir-pekan.mp3",
+      "tags": [
+        "free time",
+        "time"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

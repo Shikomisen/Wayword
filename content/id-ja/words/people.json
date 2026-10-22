@@ -1,0 +1,250 @@
+{
+  "schemaVersion": 1,
+  "id": "words-people",
+  "title": "Orang & keluarga",
+  "description": "Orang-orang dalam hidupmu dan cara membicarakan mereka, termasuk kata keluarga mana yang untuk keluargamu sendiri dan mana yang untuk keluarga orang lain.",
+  "items": [
+    {
+      "id": "w-watashi",
+      "japanese": "私",
+      "furigana": "{私|わたし}",
+      "romaji": "watashi",
+      "indonesian": "saya",
+      "pos": "pronoun",
+      "usage": "\"Saya\" yang aman dan netral, untuk siapa saja. 僕 (boku) lebih mirip \"aku\": kata ganti laki-laki yang lebih santai, untuk teman dan pasangan.",
+      "audio": "audio/ja/words/w-watashi.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-anata",
+      "japanese": "あなた",
+      "romaji": "anata",
+      "indonesian": "kamu, Anda",
+      "pos": "pronoun",
+      "usage": "Hindari memakainya langsung ke orang: sebut saja namanya. あなた bisa terdengar jauh, bahkan ketus. Mirip kebiasaan kita memanggil orang dengan nama atau Bapak/Ibu, bukan \"Anda\".",
+      "audio": "audio/ja/words/w-anata.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kanojo",
+      "japanese": "彼女",
+      "furigana": "{彼女|かのじょ}",
+      "romaji": "kanojo",
+      "indonesian": "dia (perempuan); pacar",
+      "pos": "pronoun",
+      "usage": "Bisa berarti \"dia\" atau \"pacar\": konteks yang menentukan. Bahasa Indonesia punya satu \"dia\" saja; bahasa Jepang membedakan 彼 dan 彼女.",
+      "audio": "audio/ja/words/w-kanojo.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kare",
+      "japanese": "彼",
+      "furigana": "{彼|かれ}",
+      "romaji": "kare",
+      "indonesian": "dia (laki-laki); pacar",
+      "pos": "pronoun",
+      "usage": "Bisa juga berarti \"pacar\"; 彼氏 adalah kata yang pasti berarti pacar laki-laki.",
+      "audio": "audio/ja/words/w-kare.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kareshi",
+      "japanese": "彼氏",
+      "furigana": "{彼氏|かれし}",
+      "romaji": "kareshi",
+      "indonesian": "pacar (laki-laki)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kareshi.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tomodachi",
+      "japanese": "友達",
+      "furigana": "{友達|ともだち}",
+      "romaji": "tomodachi",
+      "indonesian": "teman",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-tomodachi.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kazoku",
+      "japanese": "家族",
+      "furigana": "{家族|かぞく}",
+      "romaji": "kazoku",
+      "indonesian": "keluarga",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kazoku.mp3",
+      "tags": [
+        "orang",
+        "keluarga"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ryoushin",
+      "japanese": "両親",
+      "furigana": "{両親|りょうしん}",
+      "romaji": "ryōshin",
+      "indonesian": "orang tua",
+      "pos": "noun",
+      "usage": "Orang tuamu sendiri, saat bicara dengan orang lain. Orang tua orang lain: ご両親.",
+      "audio": "audio/ja/words/w-ryoushin.mp3",
+      "tags": [
+        "keluarga"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-okaasan",
+      "japanese": "お母さん",
+      "furigana": "お{母|かあ}さん",
+      "romaji": "okāsan",
+      "indonesian": "ibu, mama",
+      "pos": "noun",
+      "usage": "Untuk ibu orang lain, dan juga panggilan kebanyakan orang untuk ibunya sendiri. Ibumu sendiri, saat bicara dengan orang lain: 母 (はは). Keluarga orang lain disebut dengan kata yang lebih hormat, keluarga sendiri dengan kata yang sederhana.",
+      "audio": "audio/ja/words/w-okaasan.mp3",
+      "tags": [
+        "keluarga"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-otousan",
+      "japanese": "お父さん",
+      "furigana": "お{父|とう}さん",
+      "romaji": "otōsan",
+      "indonesian": "ayah, bapak",
+      "pos": "noun",
+      "usage": "Pola yang sama: お父さん untuk ayah orang lain atau saat memanggil ayahmu; 父 (ちち) untuk ayahmu sendiri, saat bicara dengan orang lain.",
+      "audio": "audio/ja/words/w-otousan.mp3",
+      "tags": [
+        "keluarga"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kodomo",
+      "japanese": "子供",
+      "furigana": "{子供|こども}",
+      "romaji": "kodomo",
+      "indonesian": "anak; anak-anak",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kodomo.mp3",
+      "tags": [
+        "keluarga"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ani",
+      "japanese": "兄",
+      "furigana": "{兄|あに}",
+      "romaji": "ani",
+      "indonesian": "kakak laki-laki (saya)",
+      "pos": "noun",
+      "usage": "Kakak laki-laki orang lain: お兄さん. Tidak seperti \"kakak\" dan \"adik\", kata keluarga Jepang juga membedakan laki-laki dan perempuan: 兄, 姉, 弟, 妹.",
+      "audio": "audio/ja/words/w-ani.mp3",
+      "tags": [
+        "keluarga"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ane",
+      "japanese": "姉",
+      "furigana": "{姉|あね}",
+      "romaji": "ane",
+      "indonesian": "kakak perempuan (saya)",
+      "pos": "noun",
+      "usage": "Kakak perempuan orang lain: お姉さん.",
+      "audio": "audio/ja/words/w-ane.mp3",
+      "tags": [
+        "keluarga"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-otouto",
+      "japanese": "弟",
+      "furigana": "{弟|おとうと}",
+      "romaji": "otōto",
+      "indonesian": "adik laki-laki",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-otouto.mp3",
+      "tags": [
+        "keluarga"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-imouto",
+      "japanese": "妹",
+      "furigana": "{妹|いもうと}",
+      "romaji": "imōto",
+      "indonesian": "adik perempuan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-imouto.mp3",
+      "tags": [
+        "keluarga"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-namae",
+      "japanese": "名前",
+      "furigana": "{名前|なまえ}",
+      "romaji": "namae",
+      "indonesian": "nama",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-namae.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hito",
+      "japanese": "人",
+      "furigana": "{人|ひと}",
+      "romaji": "hito",
+      "indonesian": "orang",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hito.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-minna",
+      "japanese": "みんな",
+      "romaji": "minna",
+      "indonesian": "semua orang",
+      "pos": "pronoun",
+      "audio": "audio/ja/words/w-minna.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

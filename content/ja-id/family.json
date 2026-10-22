@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "family",
+  "title": "パートナーの家族に会う",
+  "order": 15,
+  "description": "パートナーの家族にお客として招かれた時に。両親へのあいさつ、何度も勧められる食べ物、家族によく聞かれる質問、きちんとしたおいとま。",
+  "phrases": [
+    {
+      "id": "fam-01",
+      "indonesian": "Selamat sore, Om, Tante.",
+      "japanese": "こんにちは、おじさん、おばさん。",
+      "registerNotes": "都会の家庭では、子どもの友達や恋人が親を Om・Tante（オランダ語から）と呼ぶことが多いです。Bapak・Ibu を好む家庭もあるので、どちらで呼ぶかパートナーに確認しておきましょう。",
+      "cultureNote": "あいさつは年長の人から。salim をする家庭も多いです：年長者の右手を取り、軽く額か鼻に当てます。日本のお辞儀にあたる敬意の表し方なので、パートナーのやり方をまねしましょう。",
+      "audio": "audio/id/fam-01.mp3",
+      "tags": [
+        "家族",
+        "あいさつ",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fam-02",
+      "indonesian": "Saya Sam, pacarnya Dewi.",
+      "japanese": "デウィさんとお付き合いしているサムです。",
+      "registerNotes": "pacar は恋人（彼氏・彼女）。-nya で Dewi とつながり、「デウィの恋人」になります。temannya Dewi（デウィの友達）と同じ形です。Sam のところに自分の名前を入れて使いましょう。",
+      "cultureNote": "交際に保守的な家庭もあり、最初は友達（teman）として紹介されることもあります。どう紹介されるか、前もってパートナーと決めておきましょう。",
+      "audio": "audio/id/fam-02.mp3",
+      "tags": [
+        "家族",
+        "自己紹介"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fam-03",
+      "indonesian": "Terima kasih sudah mengundang saya.",
+      "japanese": "お招きいただき、ありがとうございます。",
+      "registerNotes": "あいさつの後に言い、帰る時にもう一度。Terima kasih atas undangannya は少し改まった言い方です。",
+      "audio": "audio/id/fam-03.mp3",
+      "tags": [
+        "家族",
+        "お礼"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-04",
+      "indonesian": "Ini ada sedikit oleh-oleh dari Selandia Baru.",
+      "japanese": "ニュージーランドから、ささやかなお土産です。",
+      "registerNotes": "手渡しながら言います。sedikit（少し）で控えめにするのが、ていねいな渡し方。日本の「ほんの気持ちですが」に近い感覚です。日本からなら dari Jepang。",
+      "cultureNote": "手ぶらで行かないのが当たり前で、日本の手土産と同じ感覚です。自分の国のお土産（oleh-oleh）がいちばんで、お菓子の箱や果物でも。渡す時は右手か両手で。",
+      "audio": "audio/id/fam-04.mp3",
+      "tags": [
+        "家族",
+        "贈り物"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-05",
+      "indonesian": "Aduh, jangan repot-repot, Tante.",
+      "japanese": "あら、どうぞお構いなく。",
+      "registerNotes": "お茶やお菓子、食事が出てきた時に。日本語の「お構いなく」と同じで、断りではなく礼儀です。相手はそのまま出してくれるので、お礼を言っていただきましょう。",
+      "audio": "audio/id/fam-05.mp3",
+      "tags": [
+        "家族",
+        "食べ物"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-06",
+      "indonesian": "Ayo, dimakan. Jangan malu-malu.",
+      "japanese": "さあ、食べて。遠慮しないで。",
+      "registerNotes": "もてなす側の言葉で、何度も言われます。Iya, Tante, terima kasih と答えて取りましょう。di- の形で勧めるのが定番です：Silakan diminum（どうぞ、お飲みください）。",
+      "cultureNote": "出された物は、勧められるまで手をつけずに待つのが普通で、日本と同じです。silakan や ayo と言われたら、遠慮しすぎずにどうぞ。",
+      "audio": "audio/id/fam-06.mp3",
+      "tags": [
+        "家族",
+        "食べ物"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-07",
+      "indonesian": "Masakannya enak sekali, Tante.",
+      "japanese": "お料理、とてもおいしいです。",
+      "registerNotes": "masakan は料理、作られた物のこと（masak は「料理する」）。Ini masakan Tante sendiri?（これ、ご自分で作られたんですか？）と聞くのもほめ言葉になります。",
+      "audio": "audio/id/fam-07.mp3",
+      "tags": [
+        "家族",
+        "食べ物",
+        "ほめる"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fam-08",
+      "indonesian": "Boleh saya bantu, Tante?",
+      "japanese": "何かお手伝いしましょうか？",
+      "registerNotes": "食後、特にお皿を下げる時に申し出ましょう。返事はたいてい Tidak usah, duduk saja（いいのよ、座ってて）ですが、申し出ること自体が喜ばれます。",
+      "audio": "audio/id/fam-08.mp3",
+      "tags": [
+        "家族",
+        "手伝う"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fam-09",
+      "indonesian": "Sudah, Tante, terima kasih. Saya sudah kenyang.",
+      "japanese": "もう十分です、ありがとうございます。お腹いっぱいです。",
+      "registerNotes": "ここの Sudah は「もう結構です」。Tambah lagi（もっとどうぞ）と何度も勧められるので、そのたびに笑顔でくり返しましょう。",
+      "pitfallNote": "Tidak, terima kasih だけだと、もてなす側には冷たく聞こえます。sudah kenyang（お腹いっぱい）なら、誰も反論できない理由になります。",
+      "audio": "audio/id/fam-09.mp3",
+      "tags": [
+        "家族",
+        "食べ物",
+        "断る"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-10",
+      "indonesian": "Sedikit saja, Tante.",
+      "japanese": "じゃあ、少しだけ。",
+      "registerNotes": "何度も勧められたら、3回目も断るより、少しだけよそってもらうほうが優しいことが多いです。",
+      "audio": "audio/id/fam-10.mp3",
+      "tags": [
+        "家族",
+        "食べ物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fam-11",
+      "indonesian": "Kapan nikah?",
+      "japanese": "で、結婚はいつ？",
+      "registerNotes": "Kapan punya anak?（子どもはいつ？）と並んでよく聞かれます。詮索ではなく、親しみからの質問です。",
+      "cultureNote": "親戚の集まり、特にレバラン（断食明けの大祭）の定番の質問です。お正月に親戚から聞かれるのと似ていますね。笑顔で軽く答えれば十分です。",
+      "audio": "audio/id/fam-11.mp3",
+      "tags": [
+        "家族",
+        "質問"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fam-12",
+      "indonesian": "Doakan saja, ya, Tante.",
+      "japanese": "まあ、祈っていてくださいね。",
+      "registerNotes": "Kapan nikah? など、将来についての質問への定番の答え。温かく、何も約束しない、日本語の「まあ、そのうちに」のような便利な返しです。Mohon doanya, Tante は少し改まった言い方。",
+      "audio": "audio/id/fam-12.mp3",
+      "tags": [
+        "家族",
+        "質問"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-13",
+      "indonesian": "Agamanya apa?",
+      "japanese": "宗教は何ですか？",
+      "registerNotes": "パートナーの家族との最初の会話や、近所の人から聞かれることがあります。事実を簡単に答えれば十分です。",
+      "cultureNote": "日本では聞きにくい質問ですが、身分証に宗教が書かれるインドネシアでは失礼ではありません。パートナーの家族からの場合は結婚を意識していることが多く、異なる宗教同士の結婚は難しいので、どう答えるかパートナーと相談しておきましょう。",
+      "audio": "audio/id/fam-13.mp3",
+      "tags": [
+        "家族",
+        "質問"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-14",
+      "indonesian": "Saya pamit dulu, Om, Tante.",
+      "japanese": "では、そろそろ失礼します。",
+      "registerNotes": "pamit はきちんといとまを告げること。dulu（「先に」）でやわらかくなり、また来るような響きになります。パートナーだけでなく、年長の人一人ひとりに言いましょう。",
+      "cultureNote": "pamit せずにそっと帰るのは失礼です。Kok buru-buru?（どうしてそんなに急ぐの？）と引き止められることが多いので、日本のおいとまと同じく、帰りたい時間の少し前からあいさつを始めましょう。",
+      "audio": "audio/id/fam-14.mp3",
+      "tags": [
+        "家族",
+        "おいとま",
+        "必須"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,821 @@
+{
+  "schemaVersion": 1,
+  "id": "sentences-self",
+  "title": "自分のことを話す",
+  "description": "自分の暮らしについての長めの文：住んできた場所、家族と仕事、好きなこと、予定。sudah、pernah、dulu、waktu のような時の言葉が、動詞の変化の代わりをするところに注目しましょう。",
+  "items": [
+    {
+      "id": "s-42",
+      "indonesian": "Saya sudah tinggal di sini selama dua tahun.",
+      "japanese": "ここに住んで2年になります。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di sini ",
+          "w": "w-di"
+        },
+        {
+          "t": "selama ",
+          "w": "w-selama"
+        },
+        {
+          "t": "dua tahun.",
+          "w": "w-tahun"
+        }
+      ],
+      "pitfallNote": "「住んでいる」「住んで〜になる」のように動詞を変える必要はなく、sudah を加えるだけ。selama は期間の「〜の間」です。",
+      "audio": "audio/id/sentences/s-42.mp3",
+      "tags": [
+        "暮らし",
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-43",
+      "indonesian": "Saya belum pernah ke Bali.",
+      "japanese": "バリにはまだ行ったことがありません。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "belum pernah ",
+          "w": "w-pernah"
+        },
+        {
+          "t": "ke Bali.",
+          "w": "w-ke"
+        }
+      ],
+      "registerNotes": "belum pernah（まだ一度も〜ない）がふつうの言い方で、日本語の「まだ」と同じく、これからの可能性を残します。tidak pernah だと、行くつもりもないようにきっぱり聞こえます。",
+      "audio": "audio/id/sentences/s-43.mp3",
+      "tags": [
+        "経験",
+        "旅行"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-44",
+      "indonesian": "Waktu kecil, saya tinggal di Wellington.",
+      "japanese": "小さい頃、ウェリントンに住んでいました。",
+      "chunks": [
+        {
+          "t": "Waktu kecil, ",
+          "w": "w-kecil"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di Wellington.",
+          "w": "w-di"
+        }
+      ],
+      "registerNotes": "waktu kecil（小さい時）は「子どもの頃」のふつうの言い方で、日本語の「小さい頃」と同じ発想です。waktu で時が決まるので、tinggal は形を変えません。",
+      "audio": "audio/id/sentences/s-44.mp3",
+      "tags": [
+        "暮らし",
+        "過去"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-45",
+      "indonesian": "Saya guru bahasa Inggris di sekolah dasar.",
+      "japanese": "小学校で英語の先生をしています。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "guru ",
+          "w": "w-guru"
+        },
+        {
+          "t": "bahasa Inggris "
+        },
+        {
+          "t": "di sekolah dasar.",
+          "w": "w-sekolah"
+        }
+      ],
+      "pitfallNote": "「です」にあたる言葉は要らず、Saya guru で「私は先生です」。何を教えるかは後ろに付けます：guru bahasa Inggris（英語の先生）。日本語とは逆の順番です。",
+      "audio": "audio/id/sentences/s-45.mp3",
+      "tags": [
+        "仕事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-46",
+      "indonesian": "Dulu saya kerja di bank, tapi sekarang saya punya usaha sendiri.",
+      "japanese": "前は銀行で働いていましたが、今は自分で商売をしています。",
+      "chunks": [
+        {
+          "t": "Dulu ",
+          "w": "w-dulu"
+        },
+        {
+          "t": "saya kerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "di bank, ",
+          "w": "w-bank"
+        },
+        {
+          "t": "tapi sekarang ",
+          "w": "w-sekarang"
+        },
+        {
+          "t": "saya punya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "usaha sendiri."
+        }
+      ],
+      "registerNotes": "文頭の dulu は「昔は、以前は」、sekarang で今に戻ります。punya usaha sendiri（自分の事業を持つ）は、自営業だと言う時のふつうの言い方です。",
+      "audio": "audio/id/sentences/s-46.mp3",
+      "tags": [
+        "仕事",
+        "過去"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-47",
+      "indonesian": "Saya sudah menikah, tapi belum punya anak.",
+      "japanese": "結婚していますが、子どもはまだいません。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah menikah, ",
+          "w": "w-menikah"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "belum punya ",
+          "w": "w-belum"
+        },
+        {
+          "t": "anak.",
+          "w": "w-anak"
+        }
+      ],
+      "cultureNote": "結婚や子どものことは、会話の早い段階で話題になります。belum（まだ）が、きっぱり聞こえない、やさしいふつうの答えです。",
+      "audio": "audio/id/sentences/s-47.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-48",
+      "indonesian": "Suami saya orang Indonesia, dari Medan.",
+      "japanese": "夫はインドネシア人で、メダン出身です。",
+      "chunks": [
+        {
+          "t": "Suami ",
+          "w": "w-suami"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "orang Indonesia, ",
+          "w": "w-orang"
+        },
+        {
+          "t": "dari Medan.",
+          "w": "w-dari"
+        }
+      ],
+      "registerNotes": "orang＋国名で国籍：orang Indonesia、orang Jepang（日本人）。dari＋町の名前で、その国のどこの出身かを言います。",
+      "audio": "audio/id/sentences/s-48.mp3",
+      "tags": [
+        "家族",
+        "国籍"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-49",
+      "indonesian": "Saya anak bungsu dari tiga bersaudara.",
+      "japanese": "三人きょうだいの末っ子です。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "anak bungsu ",
+          "w": "w-anak"
+        },
+        {
+          "t": "dari ",
+          "w": "w-dari"
+        },
+        {
+          "t": "tiga bersaudara."
+        }
+      ],
+      "cultureNote": "生まれ順で自己紹介することがよくあります：anak sulung（いちばん上）、anak tengah（真ん中）、anak bungsu（末っ子）。何番目か聞かれると思っておきましょう。",
+      "audio": "audio/id/sentences/s-49.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 3,
+      "registerNotes": "dari tiga bersaudara は「三人きょうだいの中で」。日本語の「三人きょうだいの末っ子」とそっくりの言い方です。"
+    },
+    {
+      "id": "s-50",
+      "indonesian": "Kakak saya tinggal di Australia, tapi orang tua saya masih di Auckland.",
+      "japanese": "兄はオーストラリアに住んでいますが、両親はまだオークランドにいます。",
+      "chunks": [
+        {
+          "t": "Kakak saya ",
+          "w": "w-kakak"
+        },
+        {
+          "t": "tinggal di Australia, ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "orang tua saya ",
+          "w": "w-orang"
+        },
+        {
+          "t": "masih di Auckland.",
+          "w": "w-di"
+        }
+      ],
+      "pitfallNote": "orang tua（直訳は「年取った人」）は両親のこと。masih は「まだ」で、「いる」にあたる言葉は要りません：masih di Auckland。",
+      "audio": "audio/id/sentences/s-50.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-51",
+      "indonesian": "Biasanya saya bangun jam enam dan langsung mandi.",
+      "japanese": "ふだんは6時に起きて、すぐにシャワーを浴びます。",
+      "chunks": [
+        {
+          "t": "Biasanya ",
+          "w": "w-biasanya"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "bangun ",
+          "w": "w-bangun"
+        },
+        {
+          "t": "jam enam ",
+          "w": "w-jam"
+        },
+        {
+          "t": "dan langsung ",
+          "w": "w-dan"
+        },
+        {
+          "t": "mandi.",
+          "w": "w-mandi"
+        }
+      ],
+      "registerNotes": "文頭の biasanya（ふだん）が、後に続く全体の枠になります。langsung は「すぐに」。",
+      "cultureNote": "暑さの中でさっぱりするために、朝と夕方の1日2回 mandi する人が多いです。mandi は湯船につかるのではなく、水やシャワーを浴びることです。",
+      "audio": "audio/id/sentences/s-51.mp3",
+      "tags": [
+        "暮らし",
+        "日課"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-52",
+      "indonesian": "Saya sering lupa nama orang.",
+      "japanese": "よく人の名前を忘れます。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sering ",
+          "w": "w-sering"
+        },
+        {
+          "t": "lupa "
+        },
+        {
+          "t": "nama orang.",
+          "w": "w-nama"
+        }
+      ],
+      "registerNotes": "sering（よく）は動詞の前に。名前をもう一度聞く時のやさしい言い方にもなります：Maaf, saya sering lupa nama orang。",
+      "audio": "audio/id/sentences/s-52.mp3",
+      "tags": [
+        "習慣"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-53",
+      "indonesian": "Hobi saya mendaki gunung dan berenang di laut.",
+      "japanese": "趣味は山登りと、海で泳ぐことです。",
+      "chunks": [
+        {
+          "t": "Hobi saya ",
+          "w": "w-hobi"
+        },
+        {
+          "t": "mendaki gunung ",
+          "w": "w-gunung"
+        },
+        {
+          "t": "dan berenang ",
+          "w": "w-berenang"
+        },
+        {
+          "t": "di laut.",
+          "w": "w-laut"
+        }
+      ],
+      "pitfallNote": "「です」も「〜こと」も要りません。Hobi saya の後に動詞を並べるだけで文になります。",
+      "audio": "audio/id/sentences/s-53.mp3",
+      "tags": [
+        "余暇",
+        "趣味"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-54",
+      "indonesian": "Saya tertarik dengan budaya Jawa.",
+      "japanese": "ジャワの文化に興味があります。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tertarik ",
+          "w": "w-tertarik"
+        },
+        {
+          "t": "dengan budaya ",
+          "w": "w-budaya"
+        },
+        {
+          "t": "Jawa."
+        }
+      ],
+      "pitfallNote": "tertarik の後は di ではなく dengan か pada：tertarik dengan で「〜に興味がある」。日本語の「〜に」につられて di を使わないように。",
+      "audio": "audio/id/sentences/s-54.mp3",
+      "tags": [
+        "興味",
+        "文化"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-55",
+      "register": "casual",
+      "indonesian": "Aku nggak terlalu suka pedas, sih.",
+      "japanese": "辛いのはあんまり得意じゃないんだよね。",
+      "chunks": [
+        {
+          "t": "Aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "nggak terlalu "
+        },
+        {
+          "t": "suka ",
+          "w": "w-suka"
+        },
+        {
+          "t": "pedas, ",
+          "w": "w-pedas"
+        },
+        {
+          "t": "sih."
+        }
+      ],
+      "registerNotes": "友達に言うくだけた言い方。最後の sih が、打ち明ける感じをやわらげます。日本語の「〜んだよね」に近い響きです。年上の人には Saya kurang suka pedas。",
+      "audio": "audio/id/sentences/s-55.mp3",
+      "tags": [
+        "くだけた言い方",
+        "食べ物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-56",
+      "indonesian": "Saya belajar bahasa Indonesia supaya bisa mengobrol dengan keluarga pacar saya.",
+      "japanese": "恋人の家族とおしゃべりできるように、インドネシア語を勉強しています。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "belajar bahasa Indonesia ",
+          "w": "w-belajar"
+        },
+        {
+          "t": "supaya bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "mengobrol ",
+          "w": "w-mengobrol"
+        },
+        {
+          "t": "dengan keluarga ",
+          "w": "w-keluarga"
+        },
+        {
+          "t": "pacar saya.",
+          "w": "w-pacar"
+        }
+      ],
+      "registerNotes": "supaya bisa は「〜できるように」。",
+      "pitfallNote": "持ち主は持ち物の後ろに来るので、keluarga pacar saya は後ろから読みます：私の→恋人の→家族。",
+      "audio": "audio/id/sentences/s-56.mp3",
+      "tags": [
+        "言葉",
+        "家族"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-57",
+      "indonesian": "Waktu pertama kali datang ke sini, saya tidak bisa bahasa Indonesia sama sekali.",
+      "japanese": "初めてここに来た時は、インドネシア語がまったく話せませんでした。",
+      "chunks": [
+        {
+          "t": "Waktu pertama kali "
+        },
+        {
+          "t": "datang ke sini, ",
+          "w": "w-datang"
+        },
+        {
+          "t": "saya tidak bisa ",
+          "w": "w-saya"
+        },
+        {
+          "t": "bahasa Indonesia "
+        },
+        {
+          "t": "sama sekali."
+        }
+      ],
+      "registerNotes": "bisa だけで、言葉が「できる」の意味になります：Saya bisa bahasa Indonesia。日本語の「インドネシア語ができる」と同じ発想です。tidak … sama sekali は「まったく〜ない」。",
+      "audio": "audio/id/sentences/s-57.mp3",
+      "tags": [
+        "言葉",
+        "過去"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "s-58",
+      "indonesian": "Sejak pindah ke Jakarta, saya jarang masak sendiri.",
+      "japanese": "ジャカルタに引っ越してから、ほとんど自炊していません。",
+      "chunks": [
+        {
+          "t": "Sejak ",
+          "w": "w-sejak"
+        },
+        {
+          "t": "pindah ke Jakarta, ",
+          "w": "w-ke"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "jarang ",
+          "w": "w-jarang"
+        },
+        {
+          "t": "masak ",
+          "w": "w-masak"
+        },
+        {
+          "t": "sendiri."
+        }
+      ],
+      "registerNotes": "jarang（めったに〜ない）も sering と同じく動詞の前に。動詞の後の sendiri は「自分で」：masak sendiri（自炊する）。",
+      "audio": "audio/id/sentences/s-58.mp3",
+      "tags": [
+        "暮らし",
+        "習慣"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-59",
+      "indonesian": "Saya pernah mencoba durian, tapi tidak suka baunya.",
+      "japanese": "ドリアンを食べてみたことはありますが、においが苦手でした。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "pernah ",
+          "w": "w-pernah"
+        },
+        {
+          "t": "mencoba durian, ",
+          "w": "w-mencoba"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "tidak suka ",
+          "w": "w-suka"
+        },
+        {
+          "t": "baunya."
+        }
+      ],
+      "registerNotes": "pernah は「〜したことがある」。baunya は「そのにおい」で、-nya がドリアンを指します。",
+      "audio": "audio/id/sentences/s-59.mp3",
+      "tags": [
+        "経験",
+        "食べ物"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-60",
+      "indonesian": "Saya baru pulang dari liburan di Lombok.",
+      "japanese": "ロンボクでの休暇から帰ってきたばかりです。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "baru pulang ",
+          "w": "w-pulang"
+        },
+        {
+          "t": "dari liburan ",
+          "w": "w-liburan"
+        },
+        {
+          "t": "di Lombok.",
+          "w": "w-di"
+        }
+      ],
+      "pitfallNote": "動詞の前の baru は「〜したばかり」：baru pulang（帰ったばかり）。名詞の後なら「新しい」：rumah baru（新しい家）。",
+      "audio": "audio/id/sentences/s-60.mp3",
+      "tags": [
+        "旅行",
+        "経験"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-61",
+      "register": "casual",
+      "indonesian": "Aku kangen banget sama keluargaku.",
+      "japanese": "家族にすごく会いたいなあ。",
+      "chunks": [
+        {
+          "t": "Aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "kangen banget ",
+          "w": "w-kangen"
+        },
+        {
+          "t": "sama "
+        },
+        {
+          "t": "keluargaku.",
+          "w": "w-keluarga"
+        }
+      ],
+      "registerNotes": "友達に言うくだけた言い方。kangen は「会いたい、恋しい」。sama は気持ちの後に来る話し言葉の「〜に」で、-ku は「私の」。年上の人には Saya kangen sekali dengan keluarga saya。",
+      "audio": "audio/id/sentences/s-61.mp3",
+      "tags": [
+        "くだけた言い方",
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-62",
+      "indonesian": "Rencananya saya mau cuti dua minggu bulan depan.",
+      "japanese": "来月、2週間休みを取るつもりです。",
+      "chunks": [
+        {
+          "t": "Rencananya "
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau cuti ",
+          "w": "w-cuti"
+        },
+        {
+          "t": "dua minggu ",
+          "w": "w-minggu"
+        },
+        {
+          "t": "bulan depan.",
+          "w": "w-bulan"
+        }
+      ],
+      "registerNotes": "rencananya（予定では）は、まだ決まっていない計画を話す時の便利な入り方。cuti は有給休暇のように仕事で自分が取る休み、libur は祝日のようにみんなが休む日です。",
+      "audio": "audio/id/sentences/s-62.mp3",
+      "tags": [
+        "予定",
+        "仕事"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-63",
+      "indonesian": "Kalau ada waktu, saya ingin belajar masak makanan Indonesia.",
+      "japanese": "時間があれば、インドネシア料理を習いたいです。",
+      "chunks": [
+        {
+          "t": "Kalau ada waktu, ",
+          "w": "w-ada"
+        },
+        {
+          "t": "saya ingin ",
+          "w": "w-saya"
+        },
+        {
+          "t": "belajar ",
+          "w": "w-belajar"
+        },
+        {
+          "t": "masak ",
+          "w": "w-masak"
+        },
+        {
+          "t": "makanan Indonesia."
+        }
+      ],
+      "registerNotes": "ingin は mau より少し改まった「〜したい」で、願いや希望に向いています。kalau ada waktu は直訳でも「時間があれば」で、日本語とまったく同じです。",
+      "audio": "audio/id/sentences/s-63.mp3",
+      "tags": [
+        "予定",
+        "食べ物"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-64",
+      "indonesian": "Saya agak gugup kalau harus bicara di depan banyak orang.",
+      "japanese": "大勢の前で話さないといけない時は、少し緊張します。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "agak gugup ",
+          "w": "w-gugup"
+        },
+        {
+          "t": "kalau harus "
+        },
+        {
+          "t": "bicara ",
+          "w": "w-bicara"
+        },
+        {
+          "t": "di depan ",
+          "w": "w-depan"
+        },
+        {
+          "t": "banyak orang.",
+          "w": "w-banyak"
+        }
+      ],
+      "registerNotes": "ここの kalau は「もし」ではなく「〜する時はいつも」。agak（少し）で気持ちをやわらげます。",
+      "audio": "audio/id/sentences/s-64.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-65",
+      "register": "casual",
+      "indonesian": "Aku lagi belajar naik motor, tapi masih takut.",
+      "japanese": "今バイクの練習中なんだけど、まだ怖いんだ。",
+      "chunks": [
+        {
+          "t": "Aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "lagi belajar ",
+          "w": "w-belajar"
+        },
+        {
+          "t": "naik motor, ",
+          "w": "w-motor"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "masih takut.",
+          "w": "w-takut"
+        }
+      ],
+      "registerNotes": "くだけた言い方。動詞の前の lagi は「〜している最中」で、話し言葉の sedang です。年上の人には Saya sedang belajar naik motor, tapi masih takut。",
+      "audio": "audio/id/sentences/s-65.mp3",
+      "tags": [
+        "くだけた言い方",
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-66",
+      "indonesian": "Saya bangga sekali waktu anak saya lulus kuliah.",
+      "japanese": "子どもが大学を卒業した時は、本当に誇らしかったです。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "bangga sekali ",
+          "w": "w-bangga"
+        },
+        {
+          "t": "waktu "
+        },
+        {
+          "t": "anak saya ",
+          "w": "w-anak"
+        },
+        {
+          "t": "lulus kuliah.",
+          "w": "w-kuliah"
+        }
+      ],
+      "registerNotes": "waktu（〜した時）で文全体が過去になり、ほかは何も変わりません。lulus は「合格する、卒業する」。anak は息子にも娘にも使います。",
+      "audio": "audio/id/sentences/s-66.mp3",
+      "tags": [
+        "家族",
+        "気持ち"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

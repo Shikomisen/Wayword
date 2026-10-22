@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "id": "words-health",
+  "title": "Kesehatan & dokter",
+  "description": "Tubuh, kondisi badanmu, dan yang kamu perlukan di klinik, apotek, atau dokter gigi.",
+  "items": [
+    {
+      "id": "w-isha",
+      "japanese": "医者",
+      "furigana": "{医者|いしゃ}",
+      "indonesian": "dokter",
+      "pos": "noun",
+      "usage": "Saat bicara kepada atau tentang doktermu: 先生, mirip memanggil “Dok”. お医者さん adalah cara sopan untuk menyebut “dokter”.",
+      "audio": "audio/ja/words/w-isha.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-haisha",
+      "japanese": "歯医者",
+      "furigana": "{歯医者|はいしゃ}",
+      "indonesian": "dokter gigi",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-haisha.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yakkyoku",
+      "japanese": "薬局",
+      "furigana": "{薬局|やっきょく}",
+      "indonesian": "apotek",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yakkyoku.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-atama",
+      "japanese": "頭",
+      "furigana": "{頭|あたま}",
+      "indonesian": "kepala",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-atama.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-onaka",
+      "japanese": "お腹",
+      "furigana": "お{腹|なか}",
+      "indonesian": "perut",
+      "pos": "noun",
+      "usage": "お腹が痛い — perut saya sakit. お腹すいた — aku lapar.",
+      "audio": "audio/ja/words/w-onaka.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nodo",
+      "japanese": "喉",
+      "furigana": "{喉|のど}",
+      "indonesian": "tenggorokan",
+      "pos": "noun",
+      "usage": "喉が渇いた — aku haus.",
+      "audio": "audio/ja/words/w-nodo.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-ha",
+      "japanese": "歯",
+      "furigana": "{歯|は}",
+      "indonesian": "gigi",
+      "pos": "noun",
+      "audioHint": "歯",
+      "audio": "audio/ja/words/w-ha.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-me",
+      "japanese": "目",
+      "furigana": "{目|め}",
+      "indonesian": "mata",
+      "pos": "noun",
+      "audioHint": "目",
+      "audio": "audio/ja/words/w-me.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-ashi",
+      "japanese": "足",
+      "furigana": "{足|あし}",
+      "indonesian": "kaki (tungkai dan telapak)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-ashi.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-te",
+      "japanese": "手",
+      "furigana": "{手|て}",
+      "indonesian": "tangan",
+      "pos": "noun",
+      "audioHint": "手",
+      "audio": "audio/ja/words/w-te.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-karada",
+      "japanese": "体",
+      "furigana": "{体|からだ}",
+      "indonesian": "tubuh, badan",
+      "pos": "noun",
+      "usage": "体に気をつけて — jaga kesehatan, ya.",
+      "audio": "audio/ja/words/w-karada.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-seki",
+      "japanese": "咳",
+      "furigana": "{咳|せき}",
+      "indonesian": "batuk",
+      "pos": "noun",
+      "usage": "咳が出る — saya batuk.",
+      "audioHint": "咳",
+      "audio": "audio/ja/words/w-seki.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-zutsuu",
+      "japanese": "頭痛",
+      "furigana": "{頭痛|ずつう}",
+      "indonesian": "sakit kepala",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-zutsuu.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kega",
+      "japanese": "怪我",
+      "furigana": "{怪我|けが}",
+      "indonesian": "luka, cedera",
+      "pos": "noun",
+      "usage": "怪我をした — saya terluka.",
+      "audio": "audio/ja/words/w-kega.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-guai",
+      "japanese": "具合",
+      "furigana": "{具合|ぐあい}",
+      "indonesian": "kondisi badan",
+      "pos": "noun",
+      "usage": "具合が悪い — saya kurang enak badan. 具合はどうですか — bagaimana keadaan Anda?",
+      "audio": "audio/ja/words/w-guai.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-taichou",
+      "japanese": "体調",
+      "furigana": "{体調|たいちょう}",
+      "indonesian": "kondisi fisik, kesehatan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-taichou.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hokenshou",
+      "japanese": "保険証",
+      "furigana": "{保険証|ほけんしょう}",
+      "indonesian": "kartu asuransi kesehatan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hokenshou.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shinsatsu",
+      "japanese": "診察",
+      "furigana": "{診察|しんさつ}",
+      "indonesian": "pemeriksaan dokter, konsultasi",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shinsatsu.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-naoru",
+      "japanese": "治る",
+      "furigana": "{治|なお}る",
+      "indonesian": "sembuh",
+      "pos": "verb",
+      "forms": {
+        "masu": "{治|なお}ります",
+        "te": "{治|なお}って"
+      },
+      "usage": "早く治るといいね — semoga cepat sembuh, ya.",
+      "audio": "audio/ja/words/w-naoru.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hakike",
+      "japanese": "吐き気",
+      "furigana": "{吐|は}き{気|け}",
+      "indonesian": "mual",
+      "pos": "noun",
+      "usage": "吐き気がする — saya mual.",
+      "audio": "audio/ja/words/w-hakike.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chi",
+      "japanese": "血",
+      "furigana": "{血|ち}",
+      "indonesian": "darah",
+      "pos": "noun",
+      "audioHint": "血",
+      "audio": "audio/ja/words/w-chi.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hone",
+      "japanese": "骨",
+      "furigana": "{骨|ほね}",
+      "indonesian": "tulang",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hone.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-uketsuke",
+      "japanese": "受付",
+      "furigana": "{受付|うけつけ}",
+      "indonesian": "meja pendaftaran, resepsionis",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-uketsuke.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shoujou",
+      "japanese": "症状",
+      "furigana": "{症状|しょうじょう}",
+      "indonesian": "gejala",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shoujou.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chuusha",
+      "japanese": "注射",
+      "furigana": "{注射|ちゅうしゃ}",
+      "indonesian": "suntikan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-chuusha.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

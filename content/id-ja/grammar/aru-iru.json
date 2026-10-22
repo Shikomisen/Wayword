@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-aru-iru",
+  "connector": "ある・いる",
+  "gloss": "ada; punya",
+  "title": "ある・いる — ada, punya",
+  "pattern": "tempat に benda が あります / orang が います",
+  "explanation": "Keduanya berarti “ada”. Bahasa Indonesia cukup punya satu kata, bahasa Jepang punya dua. あります untuk benda dan tumbuhan: {駅|えき}の{近|ちか}くにコンビニがあります — ada minimarket di dekat stasiun. います untuk orang dan hewan: {公園|こうえん}に{犬|いぬ}がいます — ada anjing di taman. Seperti “ada”, keduanya juga bisa berarti “punya”: {時間|じかん}がありますか — ada waktu? Dan {兄|あに}がいます — saya punya kakak laki-laki.",
+  "natural": "“Tidak ada”: ありません dan いません. Bentuk santai: ある, ない, いる, いない. ない adalah “tidak ada” sehari-hari: {時間|じかん}がない！ — tidak ada waktu!",
+  "stiff": "あります untuk orang atau hewan peliharaan terdengar salah: {猫|ねこ}がいます, bukan {猫|ねこ}があります. Ingat: yang bisa bergerak sendiri memakai いる.",
+  "examples": [
+    {
+      "id": "gx-aru-iru-1",
+      "japanese": "駅の近くに店があります。",
+      "furigana": "{駅|えき}の{近|ちか}くに{店|みせ}があります。",
+      "romaji": "eki no chikaku ni mise ga arimasu",
+      "indonesian": "Ada toko di dekat stasiun.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{駅|えき}の",
+          "w": "w-eki"
+        },
+        {
+          "t": "{近|ちか}くに",
+          "w": "w-chikaku"
+        },
+        {
+          "t": "{店|みせ}が",
+          "w": "w-mise"
+        },
+        {
+          "t": "あります。"
+        }
+      ],
+      "gap": {
+        "before": "{駅|えき}の{近|ちか}くに{店|みせ}が",
+        "answer": "あります",
+        "after": "。",
+        "options": [
+          "あります",
+          "います",
+          "です"
+        ],
+        "why": "Toko adalah benda: あります."
+      },
+      "audio": "audio/ja/grammar/gx-aru-iru-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "aru-iru"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-aru-iru-2",
+      "japanese": "家に猫が二匹います。",
+      "furigana": "{家|いえ}に{猫|ねこ}が{二匹|にひき}います。",
+      "romaji": "ie ni neko ga nihiki imasu",
+      "indonesian": "Di rumah saya ada dua ekor kucing.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{家|いえ}に",
+          "w": "w-ie"
+        },
+        {
+          "t": "{猫|ねこ}が",
+          "w": "w-neko"
+        },
+        {
+          "t": "{二匹|にひき}"
+        },
+        {
+          "t": "います。"
+        }
+      ],
+      "gap": {
+        "before": "{家|いえ}に{猫|ねこ}が{二匹|にひき}",
+        "answer": "います",
+        "after": "。",
+        "options": [
+          "います",
+          "あります",
+          "です"
+        ],
+        "why": "Kucing makhluk hidup: います."
+      },
+      "audio": "audio/ja/grammar/gx-aru-iru-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "aru-iru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-aru-iru-3",
+      "japanese": "今日、時間ある？",
+      "furigana": "{今日|きょう}、{時間|じかん}ある？",
+      "romaji": "kyō, jikan aru?",
+      "indonesian": "Hari ini ada waktu?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今日|きょう}、",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{時間|じかん}",
+          "w": "w-jikan"
+        },
+        {
+          "t": "ある？"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}、{時間|じかん}",
+        "answer": "ある",
+        "after": "？",
+        "options": [
+          "ある",
+          "いる",
+          "する"
+        ],
+        "why": "Punya waktu: ある."
+      },
+      "audio": "audio/ja/grammar/gx-aru-iru-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "aru-iru"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-aru-iru-4",
+      "japanese": "兄が二人います。",
+      "furigana": "{兄|あに}が{二人|ふたり}います。",
+      "romaji": "ani ga futari imasu",
+      "indonesian": "Saya punya dua kakak laki-laki.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{兄|あに}が",
+          "w": "w-ani"
+        },
+        {
+          "t": "{二人|ふたり}"
+        },
+        {
+          "t": "います。"
+        }
+      ],
+      "gap": {
+        "before": "{兄|あに}が{二人|ふたり}",
+        "answer": "います",
+        "after": "。",
+        "options": [
+          "います",
+          "あります",
+          "です"
+        ],
+        "why": "Punya keluarga, yaitu orang: います."
+      },
+      "audio": "audio/ja/grammar/gx-aru-iru-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "aru-iru"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

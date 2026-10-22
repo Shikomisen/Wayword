@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "id": "numbers",
+  "title": "数字・時間・お金",
+  "order": 2,
+  "description": "数の数え方、ribu と juta で言う値段、時刻、曜日と日付、それに屋台で払う時のお金のやりとり：いくらか、おつり、ちょうどの金額。",
+  "phrases": [
+    {
+      "id": "num-01",
+      "indonesian": "satu, dua, tiga, empat, lima",
+      "japanese": "1、2、3、4、5",
+      "registerNotes": "母音はほぼローマ字読みのとおりです。ただ、empat の e だけは、口の力を抜いた短いあいまいな音（「ウ」に近い音）になります。",
+      "audio": "audio/id/num-01.mp3",
+      "tags": [
+        "数",
+        "必須"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "empat の最後の t に母音をつけないように。「エンパト」ではなく、t の位置で舌を止めるだけです。"
+    },
+    {
+      "id": "num-02",
+      "indonesian": "enam, tujuh, delapan, sembilan, sepuluh",
+      "japanese": "6、7、8、9、10",
+      "registerNotes": "Sepuluh は se-（一つ）＋ puluh（十）。同じ se- で seratus（100）、seribu（1,000）になります。",
+      "pitfallNote": "enam・delapan・sembilan・sepuluh の最初の e も、あの短いあいまいな音です。「エナム」「デラパン」ではなく「ウナム」「ドゥラパン」に近く聞こえます。",
+      "audio": "audio/id/num-02.mp3",
+      "tags": [
+        "数",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-03",
+      "indonesian": "sebelas, dua belas, dua puluh, dua puluh satu",
+      "japanese": "11、12、20、21",
+      "registerNotes": "belas で10台（tiga belas＝13）、puluh で十の位（tiga puluh＝30）を作ります。あとは足すだけ：dua puluh lima は25。日本語の「二十五」と同じ順番です。",
+      "audio": "audio/id/num-03.mp3",
+      "tags": [
+        "数",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-04",
+      "indonesian": "seratus, seribu, sepuluh ribu, seratus ribu",
+      "japanese": "100、1,000、1万、10万",
+      "registerNotes": "Ratus は百、ribu は千。「万」にあたる言葉がないので、1万は sepuluh ribu（10千）、10万は seratus ribu（100千）と、千の単位で数えます。ふだん払う値段も、財布のお札（千〜10万ルピア）も、ほとんど ribu で言います。",
+      "pitfallNote": "百と千には se- をつけます：satu ribu ではなく seribu、satu ratus ではなく seratus。",
+      "audio": "audio/id/num-04.mp3",
+      "tags": [
+        "数",
+        "お金",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-05",
+      "indonesian": "Berapa harganya?",
+      "japanese": "いくらですか？",
+      "registerNotes": "指さしながら聞きましょう。Harganya は「その値段」。Berapa, Bu? が日常の短い言い方です。",
+      "audio": "audio/id/num-05.mp3",
+      "tags": [
+        "お金",
+        "買い物",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-06",
+      "indonesian": "Dua puluh lima ribu.",
+      "japanese": "2万5千（ルピア）です。",
+      "registerNotes": "値段は千単位で言い、rupiah はふつう省きます。市場では ribu も省いて、dua puluh lima だけ言うこともあります。",
+      "pitfallNote": "2万5千は「25千」と考えます。書くと Rp25.000 で、千の区切りにピリオド、小数点にコンマを使います。日本とは逆です。",
+      "audio": "audio/id/num-06.mp3",
+      "tags": [
+        "お金",
+        "数"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-07",
+      "indonesian": "Satu setengah juta.",
+      "japanese": "150万（ルピア）。",
+      "registerNotes": "Juta は百万。家賃、航空券、スマホなどは juta で値段がつきます。Setengah（半分）はどの値段にも使えます：dua setengah juta は250万。",
+      "audio": "audio/id/num-07.mp3",
+      "tags": [
+        "お金",
+        "数"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-08",
+      "indonesian": "Semuanya berapa, Bu?",
+      "japanese": "全部でいくらですか？",
+      "registerNotes": "最後に、ワルンや屋台で合計を聞く時に。Jadi berapa?（で、いくら？）もよく使います。",
+      "audio": "audio/id/num-08.mp3",
+      "tags": [
+        "お金",
+        "買い物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-09",
+      "indonesian": "Maaf, uangnya seratus ribu. Ada kembalian?",
+      "japanese": "すみません、10万ルピア札しかないんですが、おつりはありますか？",
+      "registerNotes": "Kembalian はおつり。小さな屋台や運転手は大きなお札をくずせないことが多く、Ada uang kecil?（細かいのはありますか？）と聞かれることがあります。",
+      "cultureNote": "ワルン、オジェック、駐車場の係の人のために、小さいお札を持っておきましょう。maaf から始めると、大きなお札で手間をかけることへの気づかいが伝わります。",
+      "audio": "audio/id/num-09.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-10",
+      "indonesian": "Uangnya pas, ya.",
+      "japanese": "ちょうどです。",
+      "registerNotes": "ちょうどの金額を渡しながら言います。店員さんから Ada uang pas?（ちょうどありますか？）と聞かれることもあります。",
+      "audio": "audio/id/num-10.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-11",
+      "indonesian": "Setengah kilo, Bu.",
+      "japanese": "半キロください。",
+      "registerNotes": "市場の果物や野菜は量り売りです：sekilo（1キロ）、setengah kilo（半キロ）、seperempat kilo（4分の1キロ）。",
+      "audio": "audio/id/num-11.mp3",
+      "tags": [
+        "買い物",
+        "数"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-12",
+      "indonesian": "Sekarang jam berapa?",
+      "japanese": "今、何時ですか？",
+      "registerNotes": "Jam berapa? だけでも通じます。知らない人には Maaf か Permisi から。",
+      "pitfallNote": "語順で意味が変わります：jam berapa は「何時」、berapa jam は「何時間」。",
+      "audio": "audio/id/num-12.mp3",
+      "tags": [
+        "時間",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-13",
+      "indonesian": "Jam tiga.",
+      "japanese": "3時です。",
+      "registerNotes": "Pukul tiga は、ニュースや書き言葉で使うあらたまった言い方です。",
+      "pitfallNote": "Jam tiga は「3時」、tiga jam は「3時間」。",
+      "audio": "audio/id/num-13.mp3",
+      "tags": [
+        "時間",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-14",
+      "indonesian": "Jam setengah empat.",
+      "japanese": "3時半です。",
+      "registerNotes": "時刻は jam が先：jam tiga（3時）、jam setengah empat（3時半）。",
+      "pitfallNote": "Setengah empat は「4時に向かって半分」なので3時半。4時半ではありません。日本語の「〜時半」の感覚で数字を選ぶと、1時間遅れて着いてしまいます。",
+      "audio": "audio/id/num-14.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-15",
+      "indonesian": "Jam sembilan kurang seperempat.",
+      "japanese": "9時15分前です。",
+      "registerNotes": "Kurang（足りない）は「〜前」、lewat は「〜過ぎ」：jam sembilan lewat sepuluh は9時10分。分をそのまま言う人も多いです：jam delapan empat puluh lima（8時45分）。",
+      "audio": "audio/id/num-15.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-16",
+      "indonesian": "Jam tujuh malam.",
+      "japanese": "夜の7時です。",
+      "registerNotes": "午前・午後という言い方はなく、pagi・siang・sore・malam を後ろにつけます。日本語の「夜7時」とは順番が逆です。時刻表は24時間制で、19.00 と書きます。",
+      "audio": "audio/id/num-16.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-17",
+      "indonesian": "Besok buka jam berapa?",
+      "japanese": "明日は何時に開きますか？",
+      "registerNotes": "Buka は「開く」、tutup は「閉まる」：Tutup jam berapa?（何時に閉まりますか？）。Hari ini（今日）や besok（明日）は文の最初でも最後でもかまいません。",
+      "audio": "audio/id/num-17.mp3",
+      "tags": [
+        "時間",
+        "曜日"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-18",
+      "indonesian": "Hari ini hari apa?",
+      "japanese": "今日は何曜日ですか？",
+      "registerNotes": "答えは Hari ini hari Jumat。曜日の名前の前に hari（日）をつけます：hari Senin（月曜日に）。",
+      "audio": "audio/id/num-18.mp3",
+      "tags": [
+        "曜日",
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-19",
+      "indonesian": "Senin, Selasa, Rabu, Kamis",
+      "japanese": "月曜日、火曜日、水曜日、木曜日",
+      "registerNotes": "曜日は大文字で書き始め、文の中ではふつう前に hari をつけます：Sampai hari Kamis（木曜日にね）。",
+      "audio": "audio/id/num-19.mp3",
+      "tags": [
+        "曜日"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-20",
+      "indonesian": "Jumat, Sabtu, Minggu",
+      "japanese": "金曜日、土曜日、日曜日",
+      "registerNotes": "ふつう hari をつけて言います：hari Jumat、hari Sabtu。看板や時刻表では曜日の名前だけで出てきます。",
+      "pitfallNote": "Minggu には「週」の意味もあります：hari Minggu は日曜日ですが、minggu depan は来週です。",
+      "cultureNote": "金曜日の昼、イスラム教徒の男性はモスクの礼拝に行くので、役所やお店の中には Jumat に長い昼休みをとるところがあります。",
+      "audio": "audio/id/num-20.mp3",
+      "tags": [
+        "曜日"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-21",
+      "indonesian": "Hari ini tanggal berapa?",
+      "japanese": "今日は何日ですか？",
+      "registerNotes": "Tanggal は日付：Hari ini tanggal lima（今日は5日です）。日付は日・月・年の順で、日本の年・月・日とは逆です。",
+      "cultureNote": "8月17日、Tujuh belas Agustus は独立記念日。各地域でゲームや競走が開かれ、tujuh belasan と呼ばれます。",
+      "audio": "audio/id/num-21.mp3",
+      "tags": [
+        "曜日",
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-22",
+      "indonesian": "Berapa orang?",
+      "japanese": "何名ですか？",
+      "registerNotes": "レストランの入口やチケット売り場で聞かれます。Dua orang（2人）か、Berdua だけで答えます。",
+      "pitfallNote": "Berapa は「いくつ」と「いくら」の両方。数えるものは後ろに来ます：berapa orang（何人）、berapa hari（何日）。日本語の「何＋人」「何＋日」と同じ順番です。",
+      "audio": "audio/id/num-22.mp3",
+      "tags": [
+        "数",
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-23",
+      "indonesian": "Kami berempat.",
+      "japanese": "4人です。",
+      "registerNotes": "ber- ＋数字で「〜人で」：berdua（2人で）、bertiga、berempat、berlima。Empat orang（4人）でも通じます。",
+      "audio": "audio/id/num-23.mp3",
+      "tags": [
+        "数",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-24",
+      "indonesian": "Umur saya tiga puluh dua tahun.",
+      "japanese": "32歳です。",
+      "registerNotes": "聞き方は Umurnya berapa?、年上の人には Umur Bapak berapa?。Tahun（年）はよく省きます。",
+      "cultureNote": "年齢は早いうちに話題になります。相手を Kak と呼ぶか Adik と呼ぶか、Mas か Pak かが年で決まるからです。日本で年上か年下かを気にするのと似ています。",
+      "audio": "audio/id/num-24.mp3",
+      "tags": [
+        "数",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-25",
+      "indonesian": "Boleh minta nomor WA-nya?",
+      "japanese": "WhatsApp の番号を教えてもらえますか？",
+      "registerNotes": "WA（「ウェー・アー」と読みます）は WhatsApp のことで、日本の LINE のように、ほとんどの人がこれで連絡を取り合います。電話番号は数字を一つずつ読み、0 は nol か kosong と言います。",
+      "audio": "audio/id/num-25.mp3",
+      "audioHint": "Boleh minta nomor we a-nya?",
+      "tags": [
+        "数",
+        "電話"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

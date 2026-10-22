@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-requests",
+  "connector": "tolong, silakan…",
+  "gloss": "please, go ahead, let's, don't",
+  "title": "tolong, silakan, ayo, jangan",
+  "pattern": "Tolong + verb · Silakan + verb · Ayo / Mari + verb · Jangan + verb",
+  "explanation": "English 'please' splits in two. Tolong (literally 'help') asks someone to do something for you: Tolong buka pintunya (Please open the door). Silakan invites someone to do something for themselves: Silakan duduk (Please sit down), Silakan masuk (Come in). Ayo, or the more polite mari, is 'let's': Ayo makan! (Let's eat!). And jangan is 'don't': Jangan lupa (Don't forget).",
+  "natural": "Adding ya at the end softens any of them: Tolong tunggu sebentar, ya (Wait a moment, please). Silakan is what hosts and staff say to you, as they offer a seat, food or the way in.",
+  "stiff": "Silakan for your own request gets it backwards: it offers, it doesn't ask. To ask for something, use tolong for an action, or minta for a thing: Minta air putih, ya (Some water, please). A bare command with no tolong or ya, like Buka pintu!, sounds bossy.",
+  "examples": [
+    {
+      "id": "gx-requests-1",
+      "indonesian": "Silakan duduk, Bu.",
+      "english": "Please have a seat.",
+      "chunks": [
+        {
+          "t": "Silakan "
+        },
+        {
+          "t": "duduk, "
+        },
+        {
+          "t": "Bu.",
+          "w": "w-ibu"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Silakan",
+        "after": " duduk, Bu.",
+        "options": [
+          "Silakan",
+          "Tolong",
+          "Jangan"
+        ],
+        "why": "Inviting someone to do something for themselves is silakan."
+      },
+      "audio": "audio/id/grammar/gx-requests-1.mp3",
+      "tags": [
+        "grammar",
+        "requests"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-requests-2",
+      "indonesian": "Pak, tolong berhenti di sini.",
+      "english": "Please stop here.",
+      "chunks": [
+        {
+          "t": "Pak, ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "tolong "
+        },
+        {
+          "t": "berhenti ",
+          "w": "w-berhenti"
+        },
+        {
+          "t": "di sini.",
+          "w": "w-di"
+        }
+      ],
+      "gap": {
+        "before": "Pak, ",
+        "answer": "tolong",
+        "after": " berhenti di sini.",
+        "options": [
+          "tolong",
+          "silakan",
+          "ayo"
+        ],
+        "why": "Asking someone to do something for you is tolong."
+      },
+      "audio": "audio/id/grammar/gx-requests-2.mp3",
+      "tags": [
+        "grammar",
+        "requests"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-requests-3",
+      "indonesian": "Ayo kita makan!",
+      "english": "Let's eat!",
+      "chunks": [
+        {
+          "t": "Ayo "
+        },
+        {
+          "t": "kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "makan!",
+          "w": "w-makan"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Ayo",
+        "after": " kita makan!",
+        "options": [
+          "Ayo",
+          "Silakan",
+          "Jangan"
+        ],
+        "why": "'Let's' is ayo, often with kita."
+      },
+      "audio": "audio/id/grammar/gx-requests-3.mp3",
+      "tags": [
+        "grammar",
+        "requests"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-requests-4",
+      "indonesian": "Jangan tunggu saya, ya.",
+      "english": "Don't wait for me, OK?",
+      "chunks": [
+        {
+          "t": "Jangan "
+        },
+        {
+          "t": "tunggu ",
+          "w": "w-tunggu"
+        },
+        {
+          "t": "saya, ",
+          "w": "w-saya"
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Jangan",
+        "after": " tunggu saya, ya.",
+        "options": [
+          "Jangan",
+          "Tidak",
+          "Bukan"
+        ],
+        "why": "Telling someone not to do something is jangan; tidak only describes."
+      },
+      "audio": "audio/id/grammar/gx-requests-4.mp3",
+      "tags": [
+        "grammar",
+        "requests"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

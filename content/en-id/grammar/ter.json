@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ter",
+  "connector": "ter-",
+  "gloss": "by accident; in a state; the most",
+  "title": "ter-",
+  "pattern": "ter- + root: tertinggal, tersesat (by accident) · tertutup (a state) · terbesar (the most)",
+  "explanation": "ter- describes something that happens without anyone meaning it to: tertinggal (left behind), terjatuh (fell over), tersesat (got lost). It also describes the state something is in, rather than an action someone did: Pintunya tertutup (the door is shut) beside Pintunya ditutup (the door was shut, by someone), and terjual habis (sold out). On a describing word it means the most, mainly in writing and on signs: terbesar (the biggest), terdekat (the nearest), termurah (the cheapest). A few ter- words are simply words now, listed as they are: terlambat (late), terkenal (famous), tertarik (interested).",
+  "natural": "Explaining small mishaps without blaming anyone (Maaf, kuncinya tertinggal), reading signs and notices, and asking for the nearest anything: ATM terdekat di mana?",
+  "stiff": "In casual speech ke- often replaces ter- for accidents: ketinggalan, kebawa (taken by mistake), and getting lost is nyasar: Aku tadi nyasar. For the most in conversation, paling is more usual than ter-: yang paling murah.",
+  "examples": [
+    {
+      "id": "gx-ter-1",
+      "indonesian": "Maaf terlambat, saya tadi tersesat.",
+      "english": "Sorry I'm late, I got lost.",
+      "chunks": [
+        {
+          "t": "Maaf "
+        },
+        {
+          "t": "terlambat, ",
+          "w": "w-lambat"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tadi ",
+          "w": "w-tadi"
+        },
+        {
+          "t": "tersesat."
+        }
+      ],
+      "gap": {
+        "before": "Maaf terlambat, saya tadi ",
+        "answer": "tersesat",
+        "after": ".",
+        "options": [
+          "tersesat",
+          "disesatkan",
+          "sesat"
+        ],
+        "why": "Getting lost just happened, nobody did it to you, so ter-; disesatkan means someone misled you."
+      },
+      "audio": "audio/id/grammar/gx-ter-1.mp3",
+      "tags": [
+        "grammar",
+        "ter"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-ter-2",
+      "indonesian": "HP saya tertinggal di taksi.",
+      "english": "I left my phone in the taxi.",
+      "chunks": [
+        {
+          "t": "HP ",
+          "w": "w-hp"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tertinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di taksi.",
+          "w": "w-di"
+        }
+      ],
+      "gap": {
+        "before": "HP saya ",
+        "answer": "tertinggal",
+        "after": " di taksi.",
+        "options": [
+          "tertinggal",
+          "ditinggal",
+          "meninggal"
+        ],
+        "why": "Left behind by accident is tertinggal; ditinggal sounds deliberate, and meninggal means to die."
+      },
+      "audio": "audio/id/grammar/gx-ter-2.mp3",
+      "audioHint": "Ha pe saya tertinggal di taksi.",
+      "tags": [
+        "grammar",
+        "ter"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ter-3",
+      "indonesian": "Tiketnya sudah terjual habis.",
+      "english": "The tickets are sold out.",
+      "chunks": [
+        {
+          "t": "Tiketnya ",
+          "w": "w-tiket"
+        },
+        {
+          "t": "sudah ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "terjual "
+        },
+        {
+          "t": "habis."
+        }
+      ],
+      "gap": {
+        "before": "Tiketnya sudah ",
+        "answer": "terjual",
+        "after": " habis.",
+        "options": [
+          "terjual",
+          "dijual",
+          "menjual"
+        ],
+        "why": "Sold out is a finished state, terjual habis; dijual means for sale."
+      },
+      "audio": "audio/id/grammar/gx-ter-3.mp3",
+      "tags": [
+        "grammar",
+        "ter"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ter-4",
+      "indonesian": "Apotek terdekat di mana, ya?",
+      "english": "Where's the nearest pharmacy?",
+      "chunks": [
+        {
+          "t": "Apotek ",
+          "w": "w-apotek"
+        },
+        {
+          "t": "terdekat ",
+          "w": "w-dekat"
+        },
+        {
+          "t": "di mana, ",
+          "w": "w-di-mana"
+        },
+        {
+          "t": "ya?"
+        }
+      ],
+      "gap": {
+        "before": "Apotek ",
+        "answer": "terdekat",
+        "after": " di mana, ya?",
+        "options": [
+          "terdekat",
+          "dekat",
+          "kedekatan"
+        ],
+        "why": "The nearest is ter- + dekat; in conversation, yang paling dekat says the same."
+      },
+      "audio": "audio/id/grammar/gx-ter-4.mp3",
+      "tags": [
+        "grammar",
+        "ter"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

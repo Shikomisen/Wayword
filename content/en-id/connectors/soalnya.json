@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "con-soalnya",
+  "connector": "soalnya",
+  "gloss": "because (casual)",
+  "title": "soalnya — because (casual)",
+  "pattern": "A, soalnya B · A. Soalnya B.",
+  "explanation": "soalnya is how people really say because in conversation. It comes after whatever it explains and starts the reason: Aku pulang duluan, soalnya capek. — I'm heading off first, I'm tired. It can also open a new sentence that adds the reason after a pause (Maaf, saya tidak bisa datang. Soalnya anak saya sakit.), or stand alone as the answer to Kenapa?: Soalnya hujan. habisnya (or just habis) gives a reason with a grumble in it, as if it's not your fault: Aku nggak beli, habisnya mahal banget.",
+  "natural": "Everyday speech with friends, family and colleagues, and even politely, with saya and Bapak or Ibu, when you're explaining yourself. habisnya is for friends and family.",
+  "stiff": "soalnya never comes before the point it explains: Karena hujan, … works, but a sentence can't open with Soalnya hujan, … and carry on; put it after: …, soalnya hujan. In writing, emails or anything formal, use karena.",
+  "examples": [
+    {
+      "id": "cx-soalnya-1",
+      "register": "casual",
+      "indonesian": "Aku pulang duluan, soalnya capek.",
+      "english": "I'm heading off first, I'm tired.",
+      "chunks": [
+        {
+          "t": "Aku pulang duluan, ",
+          "w": "w-pulang"
+        },
+        {
+          "t": "soalnya "
+        },
+        {
+          "t": "capek.",
+          "w": "w-capek"
+        }
+      ],
+      "gap": {
+        "before": "Aku pulang duluan, ",
+        "answer": "soalnya",
+        "after": " capek.",
+        "options": [
+          "soalnya",
+          "karena",
+          "jadi"
+        ],
+        "ok": [
+          "karena"
+        ],
+        "note": "karena is right too, but among friends it sounds more careful than soalnya.",
+        "why": "soalnya starts the reason, after what it explains."
+      },
+      "combine": {
+        "a": "Aku pulang duluan.",
+        "b": "Aku capek.",
+        "distractors": [
+          "jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-soalnya-1.mp3",
+      "tags": [
+        "connectors",
+        "soalnya",
+        "casual"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-soalnya-2",
+      "indonesian": "Bawa payung, soalnya mau hujan.",
+      "english": "Take an umbrella, it's going to rain.",
+      "chunks": [
+        {
+          "t": "Bawa payung, "
+        },
+        {
+          "t": "soalnya "
+        },
+        {
+          "t": "mau hujan.",
+          "w": "w-hujan"
+        }
+      ],
+      "gap": {
+        "before": "Bawa payung, ",
+        "answer": "soalnya",
+        "after": " mau hujan.",
+        "options": [
+          "soalnya",
+          "jadi",
+          "walaupun"
+        ],
+        "why": "The rain is the reason to take an umbrella, so it follows soalnya."
+      },
+      "combine": {
+        "a": "Bawa payung.",
+        "b": "Mau hujan.",
+        "distractors": [
+          "jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-soalnya-2.mp3",
+      "tags": [
+        "connectors",
+        "soalnya"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-soalnya-3",
+      "indonesian": "Maaf, saya tidak bisa datang. Soalnya anak saya sakit.",
+      "english": "Sorry, I can't come. My child's ill, you see.",
+      "chunks": [
+        {
+          "t": "Maaf, saya tidak bisa datang. ",
+          "w": "w-datang"
+        },
+        {
+          "t": "Soalnya "
+        },
+        {
+          "t": "anak saya ",
+          "w": "w-anak"
+        },
+        {
+          "t": "sakit.",
+          "w": "w-sakit"
+        }
+      ],
+      "gap": {
+        "before": "Maaf, saya tidak bisa datang. ",
+        "answer": "Soalnya",
+        "after": " anak saya sakit.",
+        "options": [
+          "Soalnya",
+          "Jadi",
+          "Walaupun"
+        ],
+        "why": "Soalnya can open a new sentence that gives the reason for the one before."
+      },
+      "combine": {
+        "a": "Maaf, saya tidak bisa datang.",
+        "b": "Anak saya sakit.",
+        "distractors": [
+          "Jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-soalnya-3.mp3",
+      "tags": [
+        "connectors",
+        "soalnya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-soalnya-4",
+      "register": "casual",
+      "indonesian": "Aku nggak beli, habisnya mahal banget.",
+      "english": "I didn't buy it, it was way too expensive.",
+      "chunks": [
+        {
+          "t": "Aku nggak beli, ",
+          "w": "w-beli"
+        },
+        {
+          "t": "habisnya "
+        },
+        {
+          "t": "mahal banget.",
+          "w": "w-mahal"
+        }
+      ],
+      "gap": {
+        "before": "Aku nggak beli, ",
+        "answer": "habisnya",
+        "after": " mahal banget.",
+        "options": [
+          "habisnya",
+          "soalnya",
+          "jadi"
+        ],
+        "ok": [
+          "soalnya"
+        ],
+        "note": "soalnya works too; habisnya adds a note of complaint, as if it's not your fault.",
+        "why": "habisnya gives a reason with a grumble in it."
+      },
+      "audio": "audio/id/connectors/cx-soalnya-4.mp3",
+      "tags": [
+        "connectors",
+        "soalnya",
+        "casual"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

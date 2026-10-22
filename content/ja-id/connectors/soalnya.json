@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "con-soalnya",
+  "connector": "soalnya",
+  "gloss": "〜からさ（話し言葉）",
+  "title": "soalnya — 〜からさ（話し言葉）",
+  "pattern": "A, soalnya B · A. Soalnya B.",
+  "explanation": "soalnya は会話で本当によく使われる「〜からさ」「だって〜」です。説明したいことの後ろに置き、そこから理由が始まります：Aku pulang duluan, soalnya capek.（先に帰るね、疲れたからさ）。言ったことに後から理由を付け足す感じは、日本語の「だって」に似ています。少し間を置いて新しい文の頭に置くこともでき（Maaf, saya tidak bisa datang. Soalnya anak saya sakit.）、Kenapa?（どうして？）への答えとして単独でも使えます：Soalnya hujan.（だって雨だから）。habisnya（または habis）は「だって〜なんだもん」と、自分のせいじゃないという不満のこもった理由です：Aku nggak beli, habisnya mahal banget.",
+  "natural": "友達、家族、同僚とのふだんの会話に。saya や Bapak・Ibu を使うていねいな会話でも、事情を説明する時には使えます。habisnya は友達や家族向けです。",
+  "stiff": "soalnya は説明する内容より前には置けません。Karena hujan, … とは言えますが、Soalnya hujan, … で文を始めて続けることはできません。…, soalnya hujan と後ろに置きます。書き言葉、メール、改まった場面では karena を使いましょう。",
+  "examples": [
+    {
+      "id": "cx-soalnya-1",
+      "register": "casual",
+      "indonesian": "Aku pulang duluan, soalnya capek.",
+      "japanese": "先に帰るね、疲れたからさ。",
+      "chunks": [
+        {
+          "t": "Aku pulang duluan, ",
+          "w": "w-pulang"
+        },
+        {
+          "t": "soalnya "
+        },
+        {
+          "t": "capek.",
+          "w": "w-capek"
+        }
+      ],
+      "gap": {
+        "before": "Aku pulang duluan, ",
+        "answer": "soalnya",
+        "after": " capek.",
+        "options": [
+          "soalnya",
+          "karena",
+          "jadi"
+        ],
+        "ok": [
+          "karena"
+        ],
+        "note": "karena も正しいですが、友達同士だと soalnya よりかしこまって聞こえます。",
+        "why": "soalnya は説明したいことの後ろに来て、理由を始めます。"
+      },
+      "combine": {
+        "a": "Aku pulang duluan.",
+        "b": "Aku capek.",
+        "distractors": [
+          "jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-soalnya-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "soalnya",
+        "くだけた言い方"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-soalnya-2",
+      "indonesian": "Bawa payung, soalnya mau hujan.",
+      "japanese": "傘を持っていって。雨が降りそうだから。",
+      "chunks": [
+        {
+          "t": "Bawa payung, "
+        },
+        {
+          "t": "soalnya "
+        },
+        {
+          "t": "mau hujan.",
+          "w": "w-hujan"
+        }
+      ],
+      "gap": {
+        "before": "Bawa payung, ",
+        "answer": "soalnya",
+        "after": " mau hujan.",
+        "options": [
+          "soalnya",
+          "jadi",
+          "walaupun"
+        ],
+        "why": "雨が傘を持っていく理由なので、soalnya の後ろに来ます。"
+      },
+      "combine": {
+        "a": "Bawa payung.",
+        "b": "Mau hujan.",
+        "distractors": [
+          "jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-soalnya-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "soalnya"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-soalnya-3",
+      "indonesian": "Maaf, saya tidak bisa datang. Soalnya anak saya sakit.",
+      "japanese": "すみません、行けません。子どもが病気でして。",
+      "chunks": [
+        {
+          "t": "Maaf, saya tidak bisa datang. ",
+          "w": "w-datang"
+        },
+        {
+          "t": "Soalnya "
+        },
+        {
+          "t": "anak saya ",
+          "w": "w-anak"
+        },
+        {
+          "t": "sakit.",
+          "w": "w-sakit"
+        }
+      ],
+      "gap": {
+        "before": "Maaf, saya tidak bisa datang. ",
+        "answer": "Soalnya",
+        "after": " anak saya sakit.",
+        "options": [
+          "Soalnya",
+          "Jadi",
+          "Walaupun"
+        ],
+        "why": "Soalnya は新しい文の頭に置いて、前の文の理由を言うこともできます。"
+      },
+      "combine": {
+        "a": "Maaf, saya tidak bisa datang.",
+        "b": "Anak saya sakit.",
+        "distractors": [
+          "Jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-soalnya-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "soalnya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-soalnya-4",
+      "register": "casual",
+      "indonesian": "Aku nggak beli, habisnya mahal banget.",
+      "japanese": "買わなかったよ。だって高すぎるんだもん。",
+      "chunks": [
+        {
+          "t": "Aku nggak beli, ",
+          "w": "w-beli"
+        },
+        {
+          "t": "habisnya "
+        },
+        {
+          "t": "mahal banget.",
+          "w": "w-mahal"
+        }
+      ],
+      "gap": {
+        "before": "Aku nggak beli, ",
+        "answer": "habisnya",
+        "after": " mahal banget.",
+        "options": [
+          "habisnya",
+          "soalnya",
+          "jadi"
+        ],
+        "ok": [
+          "soalnya"
+        ],
+        "note": "soalnya も使えます。habisnya には「自分のせいじゃない」という不満の気持ちが加わります。",
+        "why": "habisnya は不満のこもった理由：「だって〜なんだもん」。"
+      },
+      "audio": "audio/id/connectors/cx-soalnya-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "soalnya",
+        "くだけた言い方"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

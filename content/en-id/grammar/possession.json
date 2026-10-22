@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-possession",
+  "connector": "rumah saya",
+  "gloss": "my, your, his, her",
+  "title": "rumah saya — possession",
+  "pattern": "thing + owner: rumah saya · rumahnya · punya siapa?",
+  "explanation": "To say whose something is, put the owner after the thing: rumah saya is 'my house' (literally 'house I'), and mobil teman saya is 'my friend's car'. There are no separate words for my, your or 's: the pronoun or name does the job, so nama Ibu is 'your name' to an older woman. For 'his' or 'her', people usually put -nya on the end instead of dia: namanya (his name, her name). And punya siapa? asks 'whose?': Ini punya siapa? (Whose is this?)",
+  "natural": "With friends, -ku and -mu on the end are the casual my and your: rumahku (my house), namamu (your name). Namanya siapa? is also a friendly, polite way to ask someone's own name.",
+  "stiff": "English order gives the wrong meaning: saya rumah doesn't mean 'my house', and 'my friend's car' is mobil teman saya, with the owner last. Keep -ku and -mu for friends: to your partner's mother, rumahmu is far too familiar, so say rumah Ibu.",
+  "examples": [
+    {
+      "id": "gx-possession-1",
+      "indonesian": "Ini kamar saya.",
+      "english": "This is my room.",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "kamar ",
+          "w": "w-kamar"
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "Ini ",
+        "answer": "kamar saya",
+        "after": ".",
+        "options": [
+          "kamar saya",
+          "saya kamar",
+          "kamarnya"
+        ],
+        "why": "The owner goes after the thing: kamar saya, my room."
+      },
+      "audio": "audio/id/grammar/gx-possession-1.mp3",
+      "tags": [
+        "grammar",
+        "possession"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-possession-2",
+      "indonesian": "Rumahnya di mana?",
+      "english": "Where does she live?",
+      "chunks": [
+        {
+          "t": "Rumahnya ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "di mana?",
+          "w": "w-di-mana"
+        }
+      ],
+      "gap": {
+        "before": "Rumah",
+        "answer": "nya",
+        "after": " di mana?",
+        "options": [
+          "nya",
+          "ku",
+          "mu"
+        ],
+        "why": "-nya on the end means his or her: rumahnya, her house."
+      },
+      "audio": "audio/id/grammar/gx-possession-2.mp3",
+      "tags": [
+        "grammar",
+        "possession"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-possession-3",
+      "indonesian": "Itu mobil teman saya.",
+      "english": "That's my friend's car.",
+      "chunks": [
+        {
+          "t": "Itu ",
+          "w": "w-itu"
+        },
+        {
+          "t": "mobil ",
+          "w": "w-mobil"
+        },
+        {
+          "t": "teman ",
+          "w": "w-teman"
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "Itu ",
+        "answer": "mobil teman saya",
+        "after": ".",
+        "options": [
+          "mobil teman saya",
+          "teman saya mobil",
+          "saya teman mobil"
+        ],
+        "why": "The owner comes last, even in a chain: mobil teman saya is 'the car of my friend'."
+      },
+      "audio": "audio/id/grammar/gx-possession-3.mp3",
+      "tags": [
+        "grammar",
+        "possession"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-possession-4",
+      "indonesian": "Tas ini punya siapa?",
+      "english": "Whose bag is this?",
+      "chunks": [
+        {
+          "t": "Tas ",
+          "w": "w-tas"
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "punya "
+        },
+        {
+          "t": "siapa?",
+          "w": "w-siapa"
+        }
+      ],
+      "gap": {
+        "before": "Tas ini ",
+        "answer": "punya siapa",
+        "after": "?",
+        "options": [
+          "punya siapa",
+          "siapa punya",
+          "ada siapa"
+        ],
+        "why": "'Whose' is punya siapa, 'belongs to who', after the thing."
+      },
+      "audio": "audio/id/grammar/gx-possession-4.mp3",
+      "tags": [
+        "grammar",
+        "possession"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

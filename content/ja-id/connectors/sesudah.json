@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "id": "con-sesudah",
+  "connector": "sesudah, setelah",
+  "gloss": "〜後で、〜てから",
+  "title": "sesudah, setelah — 〜後で、〜てから",
+  "pattern": "A sesudah B · Setelah B, A · Sesudah itu, …",
+  "explanation": "sesudah と setelah はどちらも「〜後で」「〜てから」。sebelum と同じように、後ろに動作か時間が来ます：sesudah makan（食べた後で）、setelah sarapan（朝ごはんの後で）。日本語は「食べた後で」ですが、インドネシア語は sesudah を前に置き、動詞も makan のままです。2つは入れ替えて使え、setelah の方が書き言葉やアナウンスで少し多く使われます。文の頭の Sesudah itu、setelah itu は「その後」。くだけた会話でのふだんの「〜後で」は habis です：Habis makan, kita jalan-jalan, yuk.（食べたら、ぶらぶらしに行こうよ）",
+  "natural": "sesudah と setelah はていねいな会話、薬の説明（diminum sesudah makan＝食後に服用）、予定に。habis は友達や家族と。",
+  "stiff": "知らない人や目上の人に habis を使うと、くだけすぎに聞こえることがあります。habis には「なくなった、売り切れた」の意味もあるので（Nasinya habis＝ご飯がなくなりました）、「〜後で」になるかは文脈しだいです。",
+  "examples": [
+    {
+      "id": "cx-sesudah-1",
+      "indonesian": "Saya biasanya minum kopi sesudah makan.",
+      "japanese": "食後にはたいていコーヒーを飲みます。",
+      "chunks": [
+        {
+          "t": "Saya biasanya ",
+          "w": "w-biasanya"
+        },
+        {
+          "t": "minum kopi ",
+          "w": "w-kopi"
+        },
+        {
+          "t": "sesudah "
+        },
+        {
+          "t": "makan.",
+          "w": "w-makan"
+        }
+      ],
+      "gap": {
+        "before": "Saya biasanya minum kopi ",
+        "answer": "sesudah",
+        "after": " makan.",
+        "options": [
+          "sesudah",
+          "setelah",
+          "sebelum"
+        ],
+        "ok": [
+          "setelah"
+        ],
+        "note": "setelah も全く同じ意味です。好きな方を使ってください。",
+        "why": "コーヒーは食事の後：sesudah makan。"
+      },
+      "combine": {
+        "a": "Saya makan.",
+        "b": "Saya biasanya minum kopi.",
+        "distractors": [
+          "sebelum "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sesudah-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "sesudah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-sesudah-2",
+      "indonesian": "Kita berangkat setelah sarapan.",
+      "japanese": "朝ごはんの後で出発します。",
+      "chunks": [
+        {
+          "t": "Kita berangkat ",
+          "w": "w-berangkat"
+        },
+        {
+          "t": "setelah "
+        },
+        {
+          "t": "sarapan."
+        }
+      ],
+      "gap": {
+        "before": "Kita berangkat ",
+        "answer": "setelah",
+        "after": " sarapan.",
+        "options": [
+          "setelah",
+          "sebelum",
+          "sambil"
+        ],
+        "why": "朝ごはんが先、出発が後：setelah sarapan（朝ごはんの後で）。"
+      },
+      "combine": {
+        "a": "Kita sarapan.",
+        "b": "Kita berangkat.",
+        "distractors": [
+          "sebelum "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sesudah-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "sesudah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-sesudah-3",
+      "indonesian": "Kami ke pasar dulu. Sesudah itu, kami ke pantai.",
+      "japanese": "まず市場に行きました。その後、海に行きました。",
+      "chunks": [
+        {
+          "t": "Kami ke pasar dulu. ",
+          "w": "w-pasar"
+        },
+        {
+          "t": "Sesudah itu, ",
+          "w": "w-itu"
+        },
+        {
+          "t": "kami ke pantai.",
+          "w": "w-pantai"
+        }
+      ],
+      "gap": {
+        "before": "Kami ke pasar dulu. ",
+        "answer": "Sesudah",
+        "after": " itu, kami ke pantai.",
+        "options": [
+          "Sesudah",
+          "Sebelum",
+          "Karena"
+        ],
+        "why": "Sesudah itu は「その後」：次の行き先です。"
+      },
+      "combine": {
+        "a": "Kami ke pasar dulu.",
+        "b": "Kami ke pantai.",
+        "distractors": [
+          "Sebelum itu, "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sesudah-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "sesudah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-sesudah-4",
+      "register": "casual",
+      "indonesian": "Habis makan, kita jalan-jalan, yuk.",
+      "japanese": "食べたら、ぶらぶらしに行こうよ。",
+      "chunks": [
+        {
+          "t": "Habis "
+        },
+        {
+          "t": "makan, ",
+          "w": "w-makan"
+        },
+        {
+          "t": "kita jalan-jalan, yuk.",
+          "w": "w-jalan-jalan"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Habis",
+        "after": " makan, kita jalan-jalan, yuk.",
+        "options": [
+          "Habis",
+          "Sesudah",
+          "Sebelum"
+        ],
+        "ok": [
+          "Sesudah"
+        ],
+        "note": "Sesudah も正しいですが、友達同士だと habis よりかしこまって聞こえます。",
+        "why": "Habis はくだけた「〜後で」「〜たら」です。"
+      },
+      "audio": "audio/id/connectors/cx-sesudah-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "sesudah",
+        "くだけた言い方"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

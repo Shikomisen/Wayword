@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "id": "words-time",
+  "title": "時間と曜日",
+  "description": "今日と明日、一日の時間帯、そして時間・日・週・年。インドネシア語の動詞は時によって形が変わらないので、こうした言葉がその役目をします。",
+  "items": [
+    {
+      "id": "w-hari",
+      "indonesian": "hari",
+      "japanese": "日",
+      "pos": "noun",
+      "registerNotes": "曜日の名前の前に付けます：hari Senin（月曜日）。tiga hari は3日間です。",
+      "audio": "audio/id/words/w-hari.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-minggu",
+      "indonesian": "minggu",
+      "japanese": "週",
+      "pos": "noun",
+      "pitfallNote": "大文字の Minggu は日曜日でもあります。minggu depan は来週ですが、hari Minggu depan は次の日曜日です。",
+      "audio": "audio/id/words/w-minggu.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bulan",
+      "indonesian": "bulan",
+      "japanese": "（暦の）月；（空の）月",
+      "pos": "noun",
+      "registerNotes": "日本語の「月」と同じく、暦の月にも空の月にも使います。bulan ini は今月、bulan depan は来月。月の名前は英語に近く、Januari、Maret、Agustus、Desember。",
+      "audio": "audio/id/words/w-bulan.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tahun",
+      "indonesian": "tahun",
+      "japanese": "年",
+      "pos": "noun",
+      "registerNotes": "tahun depan は来年、tahun lalu は去年。年齢にも使います：Umur saya tiga puluh tahun（30歳です）。",
+      "audio": "audio/id/words/w-tahun.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hari-ini",
+      "indonesian": "hari ini",
+      "japanese": "今日",
+      "pos": "adverb",
+      "registerNotes": "直訳は「この日」。同じように、minggu ini は今週、tahun ini は今年です。",
+      "audio": "audio/id/words/w-hari-ini.mp3",
+      "tags": [
+        "時間",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-besok",
+      "indonesian": "besok",
+      "japanese": "明日",
+      "pos": "adverb",
+      "registerNotes": "besok pagi は明日の朝、besok malam は明日の夜。あさっては lusa です。",
+      "audio": "audio/id/words/w-besok.mp3",
+      "tags": [
+        "時間",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kemarin",
+      "indonesian": "kemarin",
+      "japanese": "昨日",
+      "pos": "adverb",
+      "pitfallNote": "話し言葉の kemarin は、昨日だけでなく「この間、先日」の意味でもよく使われます。",
+      "audio": "audio/id/words/w-kemarin.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sekarang",
+      "indonesian": "sekarang",
+      "japanese": "今；このごろ",
+      "pos": "adverb",
+      "registerNotes": "sekarang juga は「今すぐ」。「このごろ」の意味にもなります：Sekarang saya tinggal di Jakarta（今はジャカルタに住んでいます）。",
+      "audio": "audio/id/words/w-sekarang.mp3",
+      "tags": [
+        "時間",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-nanti",
+      "indonesian": "nanti",
+      "japanese": "あとで；そのうち",
+      "pos": "adverb",
+      "registerNotes": "nanti saja は「今じゃなくて、あとで」、nanti malam は今夜。先のことにしか使えません。今日の少し前のことは tadi（さっき）です。",
+      "cultureNote": "nanti は数分後のことも、数日後のこともあります。時間をはっきりさせたいときは Jam berapa?（何時？）と聞きましょう。",
+      "audio": "audio/id/words/w-nanti.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pagi",
+      "indonesian": "pagi",
+      "japanese": "朝",
+      "pos": "noun",
+      "registerNotes": "夜明けから午前11時ごろまで：Selamat pagi。時刻の後に付けると「午前」の意味になります：jam tujuh pagi（朝7時）。",
+      "audio": "audio/id/words/w-pagi.mp3",
+      "tags": [
+        "時間",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-siang",
+      "indonesian": "siang",
+      "japanese": "昼",
+      "pos": "noun",
+      "registerNotes": "11時ごろから15時ごろまでの、一日でいちばん暑い時間帯：Selamat siang。makan siang は昼ごはんです。",
+      "audio": "audio/id/words/w-siang.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sore",
+      "indonesian": "sore",
+      "japanese": "夕方",
+      "pos": "noun",
+      "registerNotes": "15時ごろから暗くなるまで：Selamat sore。jam empat sore は午後4時です。",
+      "pitfallNote": "ローマ字で読むと日本語の「それ」と同じ「ソレ」ですが、意味は夕方です。",
+      "audio": "audio/id/words/w-sore.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-malam",
+      "indonesian": "malam",
+      "japanese": "夜、晩",
+      "pos": "noun",
+      "registerNotes": "暗くなる18時ごろから：Selamat malam。makan malam は夕食、jam delapan malam は夜8時です。",
+      "audio": "audio/id/words/w-malam.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-jam",
+      "indonesian": "jam",
+      "japanese": "時間；〜時；時計",
+      "pos": "noun",
+      "registerNotes": "Jam berapa? は時刻を聞く言葉。チケットやアナウンスでは pukul を使います：pukul tujuh（7時）。",
+      "pitfallNote": "順番が大事です。jam tiga は3時、tiga jam は3時間。",
+      "cultureNote": "jam karet（ゴムの時間）は、伸び縮みする時間を半分冗談で呼ぶ言葉です。友達との約束は、遅れて始まることがよくあります。",
+      "audio": "audio/id/words/w-jam.mp3",
+      "tags": [
+        "時間",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-menit",
+      "indonesian": "menit",
+      "japanese": "分",
+      "pos": "noun",
+      "registerNotes": "lima menit lagi は「あと5分で」。3時10分は jam tiga lewat sepuluh (menit) です。",
+      "audio": "audio/id/words/w-menit.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-senin",
+      "indonesian": "Senin",
+      "japanese": "月曜日",
+      "pos": "noun",
+      "registerNotes": "ふつう hari を付けて hari Senin。一週間は Senin、Selasa、Rabu、Kamis、Jumat、Sabtu、Minggu です。",
+      "audio": "audio/id/words/w-senin.mp3",
+      "tags": [
+        "曜日"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sabtu",
+      "indonesian": "Sabtu",
+      "japanese": "土曜日",
+      "pos": "noun",
+      "pitfallNote": "土曜の夜は malam Minggu（日曜の前夜）で、遊びに出かける夜です。Minggu malam は日曜の夜。",
+      "audio": "audio/id/words/w-sabtu.mp3",
+      "tags": [
+        "曜日"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hari-minggu",
+      "indonesian": "hari Minggu",
+      "japanese": "日曜日",
+      "pos": "noun",
+      "registerNotes": "大文字の M で Minggu だけでも日曜日。小文字の minggu は「週」です。",
+      "audio": "audio/id/words/w-hari-minggu.mp3",
+      "tags": [
+        "曜日"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

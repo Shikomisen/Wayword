@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "id": "words-feelings",
+  "title": "Perasaan & kesehatan",
+  "description": "Senang, kesepian, lelah, khawatir, kurang sehat — kata untuk mengatakan keadaanmu dan menanyakan kabar orang lain.",
+  "items": [
+    {
+      "id": "w-ureshii",
+      "japanese": "嬉しい",
+      "furigana": "{嬉|うれ}しい",
+      "indonesian": "senang, gembira",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-ureshii.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kanashii",
+      "japanese": "悲しい",
+      "furigana": "{悲|かな}しい",
+      "indonesian": "sedih",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-kanashii.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sabishii",
+      "japanese": "寂しい",
+      "furigana": "{寂|さび}しい",
+      "indonesian": "kesepian; rindu",
+      "pos": "i-adjective",
+      "usage": "Pasangan yang berjauhan bilang 寂しい — \"aku kesepian tanpamu\", \"aku rindu\".",
+      "audio": "audio/ja/words/w-sabishii.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tsukareru",
+      "japanese": "疲れる",
+      "furigana": "{疲|つか}れる",
+      "indonesian": "menjadi lelah",
+      "pos": "verb",
+      "forms": {
+        "masu": "{疲|つか}れます",
+        "te": "{疲|つか}れて"
+      },
+      "usage": "\"Aku capek\" memakai bentuk lampau: 疲れた. Bahasa Indonesia cukup bilang \"capek\", tapi bahasa Jepang melihatnya sebagai sesuatu yang sudah terjadi.",
+      "audio": "audio/ja/words/w-tsukareru.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-nemui",
+      "japanese": "眠い",
+      "furigana": "{眠|ねむ}い",
+      "indonesian": "mengantuk",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-nemui.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-itai",
+      "japanese": "痛い",
+      "furigana": "{痛|いた}い",
+      "indonesian": "sakit, nyeri",
+      "pos": "i-adjective",
+      "usage": "頭が痛い — \"sakit kepala\". Polanya: bagian tubuh + が痛い.",
+      "audio": "audio/ja/words/w-itai.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-shinpai",
+      "japanese": "心配",
+      "furigana": "{心配|しんぱい}",
+      "indonesian": "rasa khawatir",
+      "pos": "noun",
+      "usage": "心配しないで — \"jangan khawatir\".",
+      "audio": "audio/ja/words/w-shinpai.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-genki",
+      "japanese": "元気",
+      "furigana": "{元気|げんき}",
+      "indonesian": "sehat; bersemangat",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-genki.mp3",
+      "tags": [
+        "perasaan",
+        "kesehatan"
+      ],
+      "difficulty": 1,
+      "usage": "お元気ですか mirip \"Apa kabar?\"; jawabannya 元気です (baik)."
+    },
+    {
+      "id": "w-kowai",
+      "japanese": "怖い",
+      "furigana": "{怖|こわ}い",
+      "indonesian": "menakutkan; takut",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-kowai.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2,
+      "usage": "Satu kata untuk \"takut\" dan \"menakutkan\": 犬が怖い — \"aku takut anjing\"."
+    },
+    {
+      "id": "w-okoru",
+      "japanese": "怒る",
+      "furigana": "{怒|おこ}る",
+      "indonesian": "marah",
+      "pos": "verb",
+      "forms": {
+        "masu": "{怒|おこ}ります",
+        "te": "{怒|おこ}って"
+      },
+      "audio": "audio/ja/words/w-okoru.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-warau",
+      "japanese": "笑う",
+      "furigana": "{笑|わら}う",
+      "indonesian": "tertawa; tersenyum",
+      "pos": "verb",
+      "forms": {
+        "masu": "{笑|わら}います",
+        "te": "{笑|わら}って"
+      },
+      "audio": "audio/ja/words/w-warau.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-naku",
+      "japanese": "泣く",
+      "furigana": "{泣|な}く",
+      "indonesian": "menangis",
+      "pos": "verb",
+      "forms": {
+        "masu": "{泣|な}きます",
+        "te": "{泣|な}いて"
+      },
+      "audio": "audio/ja/words/w-naku.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kaze",
+      "japanese": "風邪",
+      "furigana": "{風邪|かぜ}",
+      "indonesian": "pilek, flu",
+      "pos": "noun",
+      "usage": "風邪をひく — \"kena pilek\". Bunyinya sama dengan 風, \"angin\", tapi artinya bukan \"masuk angin\".",
+      "audio": "audio/ja/words/w-kaze.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-netsu",
+      "japanese": "熱",
+      "furigana": "{熱|ねつ}",
+      "indonesian": "demam",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-netsu.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kusuri",
+      "japanese": "薬",
+      "furigana": "{薬|くすり}",
+      "indonesian": "obat",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kusuri.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-byouin",
+      "japanese": "病院",
+      "furigana": "{病院|びょういん}",
+      "indonesian": "rumah sakit; klinik dokter",
+      "pos": "noun",
+      "usage": "Juga klinik dokter umum — 病院に行く berarti \"pergi ke dokter\".",
+      "audio": "audio/ja/words/w-byouin.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

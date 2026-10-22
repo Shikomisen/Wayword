@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-de",
+  "connector": "で",
+  "gloss": "tempat kegiatan; naik, dengan",
+  "title": "で — tempat kegiatan, dan caranya",
+  "pattern": "tempat で kata kerja / alat で kata kerja",
+  "explanation": "で menandai tempat suatu kegiatan terjadi: {家|いえ}で{晩|ばん}ご{飯|はん}を{食|た}べます — saya makan malam di rumah. で juga menandai cara atau alatnya: {電車|でんしゃ}で{行|い}きます — saya pergi naik kereta; {日本語|にほんご}で{話|はな}しましょう — ayo bicara dalam bahasa Jepang.",
+  "natural": "Cara sehari-hari untuk bilang naik kereta, naik mobil, dalam bahasa Inggris, pakai sumpit: お{箸|はし}で{食|た}べる. Satu partikel で untuk “naik”, “dalam”, “pakai”, dan “dengan”.",
+  "stiff": "Tempat seseorang sekadar berada memakai に: {家|いえ}にいます. Tempat sesuatu dikerjakan memakai で: {家|いえ}で{働|はたら}きます. Dalam bahasa Indonesia keduanya “di rumah”, jadi menukar keduanya adalah kesalahan partikel yang paling umum.",
+  "examples": [
+    {
+      "id": "gx-de-1",
+      "japanese": "家で晩ご飯を食べます。",
+      "furigana": "{家|いえ}で{晩|ばん}ご{飯|はん}を{食|た}べます。",
+      "romaji": "ie de bangohan o tabemasu",
+      "indonesian": "Saya makan malam di rumah.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{家|いえ}で",
+          "w": "w-ie"
+        },
+        {
+          "t": "{晩|ばん}ご{飯|はん}を",
+          "w": "w-bangohan"
+        },
+        {
+          "t": "{食|た}べます。",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "{家|いえ}",
+        "answer": "で",
+        "after": "{晩|ばん}ご{飯|はん}を{食|た}べます。",
+        "options": [
+          "で",
+          "に",
+          "を"
+        ],
+        "why": "Makan adalah kegiatan yang dilakukan di sana: で."
+      },
+      "audio": "audio/ja/grammar/gx-de-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "de"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-de-2",
+      "japanese": "電車で会社に行きます。",
+      "furigana": "{電車|でんしゃ}で{会社|かいしゃ}に{行|い}きます。",
+      "romaji": "densha de kaisha ni ikimasu",
+      "indonesian": "Saya pergi ke kantor naik kereta.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{電車|でんしゃ}で",
+          "w": "w-densha"
+        },
+        {
+          "t": "{会社|かいしゃ}に",
+          "w": "w-kaisha"
+        },
+        {
+          "t": "{行|い}きます。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{電車|でんしゃ}",
+        "answer": "で",
+        "after": "{会社|かいしゃ}に{行|い}きます。",
+        "options": [
+          "で",
+          "に",
+          "を"
+        ],
+        "why": "Cara pergi: naik kereta, 電車で."
+      },
+      "audio": "audio/ja/grammar/gx-de-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "de"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-de-3",
+      "japanese": "今日は日本語で話そう。",
+      "furigana": "{今日|きょう}は{日本語|にほんご}で{話|はな}そう。",
+      "romaji": "kyō wa nihongo de hanasō",
+      "indonesian": "Hari ini kita bicara pakai bahasa Jepang, yuk.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{日本語|にほんご}で",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{話|はな}そう。",
+          "w": "w-hanasu"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}は{日本語|にほんご}",
+        "answer": "で",
+        "after": "{話|はな}そう。",
+        "options": [
+          "で",
+          "を",
+          "に"
+        ],
+        "why": "Dalam suatu bahasa: 日本語で."
+      },
+      "audio": "audio/ja/grammar/gx-de-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "de"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-de-4",
+      "japanese": "駅の前で待っています。",
+      "furigana": "{駅|えき}の{前|まえ}で{待|ま}っています。",
+      "romaji": "eki no mae de matte imasu",
+      "indonesian": "Saya akan menunggu di depan stasiun.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{駅|えき}の",
+          "w": "w-eki"
+        },
+        {
+          "t": "{前|まえ}で"
+        },
+        {
+          "t": "{待|ま}っています。",
+          "w": "w-matsu"
+        }
+      ],
+      "gap": {
+        "before": "{駅|えき}の{前|まえ}",
+        "answer": "で",
+        "after": "{待|ま}っています。",
+        "options": [
+          "で",
+          "に",
+          "を"
+        ],
+        "why": "Menunggu adalah kegiatan yang dilakukan di sana, jadi tempatnya memakai で."
+      },
+      "audio": "audio/ja/grammar/gx-de-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "de"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

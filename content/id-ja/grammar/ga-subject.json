@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ga-subject",
+  "connector": "が",
+  "gloss": "siapa atau apa (subjek)",
+  "title": "が — siapa atau apa",
+  "pattern": "subjek が kata kerja atau kata sifat",
+  "explanation": "が menandai siapa atau apa yang melakukan sesuatu, atau yang berada dalam keadaan tertentu: {雨|あめ}が{降|ふ}っています — sedang hujan (hujan sedang turun). が juga partikel untuk hal yang kamu sukai, pahami, bisa lakukan, atau punya: コーヒーが{好|す}きです, {日本語|にほんご}が{分|わ}かります. Dalam bahasa Indonesia, kopi adalah objek dari “suka”; dalam bahasa Jepang, kopi ditandai が. Kata tanya juga memakai が, tidak pernah は: {誰|だれ}が{来|き}ますか — siapa yang datang?",
+  "natural": "が untuk informasi baru, dan untuk hal yang baru saja kamu sadari: あ、バスが{来|き}た！ — eh, busnya datang!",
+  "stiff": "{誰|だれ}は dan {何|なに}は salah: kata tanya memakai が, mirip “yang” dalam “siapa yang datang”. Dan dengan {好|す}き, {分|わ}かる, dan ある, bendanya memakai が, bukan を.",
+  "examples": [
+    {
+      "id": "gx-ga-subject-1",
+      "japanese": "私はコーヒーが好きです。",
+      "furigana": "{私|わたし}は{コーヒー|こーひー}が{好|す}きです。",
+      "romaji": "watashi wa kōhī ga suki desu",
+      "indonesian": "Saya suka kopi.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{私|わたし}は",
+          "w": "w-watashi"
+        },
+        {
+          "t": "{コーヒー|こーひー}が",
+          "w": "w-koohii"
+        },
+        {
+          "t": "{好|す}きです。",
+          "w": "w-suki"
+        }
+      ],
+      "gap": {
+        "before": "{私|わたし}は{コーヒー|こーひー}",
+        "answer": "が",
+        "after": "{好|す}きです。",
+        "options": [
+          "が",
+          "を",
+          "に"
+        ],
+        "why": "Dengan 好き, hal yang kamu sukai memakai が."
+      },
+      "audio": "audio/ja/grammar/gx-ga-subject-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "ga-subject"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ga-subject-2",
+      "japanese": "あ、雨が降ってる。",
+      "furigana": "あ、{雨|あめ}が{降|ふ}ってる。",
+      "romaji": "a, ame ga futteru",
+      "indonesian": "Wah, hujan.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "あ、"
+        },
+        {
+          "t": "{雨|あめ}が",
+          "w": "w-ame"
+        },
+        {
+          "t": "{降|ふ}ってる。",
+          "w": "w-furu"
+        }
+      ],
+      "gap": {
+        "before": "あ、{雨|あめ}",
+        "answer": "が",
+        "after": "{降|ふ}ってる。",
+        "options": [
+          "が",
+          "を",
+          "で"
+        ],
+        "why": "Hujanlah yang turun: が."
+      },
+      "audio": "audio/ja/grammar/gx-ga-subject-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "ga-subject"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ga-subject-3",
+      "japanese": "明日、誰が来ますか。",
+      "furigana": "{明日|あした}、{誰|だれ}が{来|き}ますか。",
+      "romaji": "ashita, dare ga kimasu ka",
+      "indonesian": "Besok siapa yang datang?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}、",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{誰|だれ}が",
+          "w": "w-dare"
+        },
+        {
+          "t": "{来|き}ますか。",
+          "w": "w-kuru"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}、{誰|だれ}",
+        "answer": "が",
+        "after": "{来|き}ますか。",
+        "options": [
+          "が",
+          "は",
+          "を"
+        ],
+        "why": "Kata tanya memakai が, tidak pernah は."
+      },
+      "audio": "audio/ja/grammar/gx-ga-subject-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "ga-subject"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-ga-subject-4",
+      "japanese": "日本語が少し分かります。",
+      "furigana": "{日本語|にほんご}が{少|すこ}し{分|わ}かります。",
+      "romaji": "nihongo ga sukoshi wakarimasu",
+      "indonesian": "Saya sedikit mengerti bahasa Jepang.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本語|にほんご}が",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{少|すこ}し"
+        },
+        {
+          "t": "{分|わ}かります。",
+          "w": "w-wakaru"
+        }
+      ],
+      "gap": {
+        "before": "{日本語|にほんご}",
+        "answer": "が",
+        "after": "{少|すこ}し{分|わ}かります。",
+        "options": [
+          "が",
+          "を",
+          "で"
+        ],
+        "why": "Dengan 分かる, hal yang kamu mengerti memakai が."
+      },
+      "audio": "audio/ja/grammar/gx-ga-subject-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "ga-subject"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

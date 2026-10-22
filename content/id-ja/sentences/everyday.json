@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "id": "sentences-everyday",
+  "title": "Kalimat sehari-hari",
+  "description": "Kalimat pendek yang utuh, dari kata-kata yang sudah kamu pelajari — langkah antara tahu kata dan bisa mengatakan sesuatu.",
+  "items": [
+    {
+      "id": "s-01",
+      "japanese": "明日、友達に会います。",
+      "furigana": "{明日|あした}、{友達|ともだち}に{会|あ}います。",
+      "romaji": "ashita, tomodachi ni aimasu",
+      "indonesian": "Besok saya bertemu teman.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}、",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{友達|ともだち}に",
+          "w": "w-tomodachi"
+        },
+        {
+          "t": "{会|あ}います。",
+          "w": "w-au"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-01.mp3",
+      "tags": [
+        "sehari-hari"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-02",
+      "japanese": "毎日、日本語を勉強しています。",
+      "furigana": "{毎日|まいにち}、{日本語|にほんご}を{勉強|べんきょう}しています。",
+      "romaji": "mainichi, nihongo o benkyō shite imasu",
+      "indonesian": "Saya belajar bahasa Jepang setiap hari.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{毎日|まいにち}、",
+          "w": "w-mainichi"
+        },
+        {
+          "t": "{日本語|にほんご}を",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{勉強|べんきょう}しています。",
+          "w": "w-benkyou"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-02.mp3",
+      "tags": [
+        "sehari-hari"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-03",
+      "japanese": "今日はちょっと忙しいです。",
+      "furigana": "{今日|きょう}はちょっと{忙|いそが}しいです。",
+      "romaji": "kyō wa chotto isogashii desu",
+      "indonesian": "Hari ini saya agak sibuk.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "ちょっと",
+          "w": "w-chotto"
+        },
+        {
+          "t": "{忙|いそが}しいです。",
+          "w": "w-isogashii"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-03.mp3",
+      "tags": [
+        "sehari-hari"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-04",
+      "japanese": "晩ご飯、何がいい？",
+      "furigana": "{晩|ばん}ご{飯|はん}、{何|なに}がいい？",
+      "romaji": "bangohan, nani ga ii?",
+      "indonesian": "Mau makan malam apa?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{晩|ばん}ご{飯|はん}、",
+          "w": "w-bangohan"
+        },
+        {
+          "t": "{何|なに}が",
+          "w": "w-nani"
+        },
+        {
+          "t": "いい？",
+          "w": "w-ii"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-04.mp3",
+      "tags": [
+        "sehari-hari"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-05",
+      "japanese": "コーヒーを飲みませんか。",
+      "furigana": "{コーヒー|こーひー}を{飲|の}みませんか。",
+      "romaji": "kōhī o nomimasen ka",
+      "indonesian": "Mau minum kopi?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{コーヒー|こーひー}を",
+          "w": "w-koohii"
+        },
+        {
+          "t": "{飲|の}みませんか。",
+          "w": "w-nomu"
+        }
+      ],
+      "usage": "〜ませんか — secara harfiah \"tidak …?\" — adalah cara sopan untuk menawarkan atau mengajak, mirip \"Mau …?\".",
+      "audio": "audio/ja/sentences/s-05.mp3",
+      "tags": [
+        "sehari-hari"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-06",
+      "japanese": "駅まで歩いて十分です。",
+      "furigana": "{駅|えき}まで{歩|ある}いて{十分|じゅっぷん}です。",
+      "romaji": "eki made aruite juppun desu",
+      "indonesian": "Ke stasiun sepuluh menit jalan kaki.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{駅|えき}まで",
+          "w": "w-eki"
+        },
+        {
+          "t": "{歩|ある}いて",
+          "w": "w-aruku"
+        },
+        {
+          "t": "{十分|じゅっぷん}です。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-06.mp3",
+      "tags": [
+        "sehari-hari"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-07",
+      "japanese": "雨が降っていますね。",
+      "furigana": "{雨|あめ}が{降|ふ}っていますね。",
+      "romaji": "ame ga futte imasu ne",
+      "indonesian": "Sedang hujan, ya.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{雨|あめ}が",
+          "w": "w-ame"
+        },
+        {
+          "t": "{降|ふ}っていますね。",
+          "w": "w-furu"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-07.mp3",
+      "tags": [
+        "sehari-hari"
+      ],
+      "difficulty": 2,
+      "usage": "ね di akhir kalimat mirip \"ya\" dalam bahasa Indonesia: mengajak lawan bicara ikut setuju."
+    },
+    {
+      "id": "s-08",
+      "japanese": "週末は何をしますか。",
+      "furigana": "{週末|しゅうまつ}は{何|なに}をしますか。",
+      "romaji": "shūmatsu wa nani o shimasu ka",
+      "indonesian": "Akhir pekan ini ada rencana apa?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{週末|しゅうまつ}は",
+          "w": "w-shuumatsu"
+        },
+        {
+          "t": "{何|なに}を",
+          "w": "w-nani"
+        },
+        {
+          "t": "しますか。",
+          "w": "w-suru"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-08.mp3",
+      "tags": [
+        "sehari-hari"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-09",
+      "japanese": "一緒に映画を見よう。",
+      "furigana": "{一緒|いっしょ}に{映画|えいが}を{見|み}よう。",
+      "romaji": "issho ni eiga o miyō",
+      "indonesian": "Ayo kita menonton film bersama.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{一緒|いっしょ}に",
+          "w": "w-issho"
+        },
+        {
+          "t": "{映画|えいが}を",
+          "w": "w-eiga"
+        },
+        {
+          "t": "{見|み}よう。",
+          "w": "w-miru"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-09.mp3",
+      "tags": [
+        "sehari-hari"
+      ],
+      "difficulty": 2,
+      "usage": "見よう adalah bentuk ajakan yang santai, seperti \"ayo\"; bentuk sopannya 見ましょう."
+    },
+    {
+      "id": "s-10",
+      "japanese": "電気を消してください。",
+      "furigana": "{電気|でんき}を{消|け}してください。",
+      "romaji": "denki o keshite kudasai",
+      "indonesian": "Tolong matikan lampunya.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{電気|でんき}を",
+          "w": "w-denki"
+        },
+        {
+          "t": "{消|け}してください。"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-10.mp3",
+      "tags": [
+        "sehari-hari"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-11",
+      "japanese": "頭が痛いです。",
+      "furigana": "{頭|あたま}が{痛|いた}いです。",
+      "romaji": "atama ga itai desu",
+      "indonesian": "Kepala saya sakit.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{頭|あたま}が"
+        },
+        {
+          "t": "{痛|いた}いです。",
+          "w": "w-itai"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-11.mp3",
+      "tags": [
+        "sehari-hari"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-12",
+      "japanese": "家族はみんな元気です。",
+      "furigana": "{家族|かぞく}はみんな{元気|げんき}です。",
+      "romaji": "kazoku wa minna genki desu",
+      "indonesian": "Keluarga saya semuanya sehat.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{家族|かぞく}は",
+          "w": "w-kazoku"
+        },
+        {
+          "t": "みんな",
+          "w": "w-minna"
+        },
+        {
+          "t": "{元気|げんき}です。",
+          "w": "w-genki"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-12.mp3",
+      "tags": [
+        "sehari-hari"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-13",
+      "japanese": "後で電話するね。",
+      "furigana": "{後|あと}で{電話|でんわ}するね。",
+      "romaji": "ato de denwa suru ne",
+      "indonesian": "Nanti aku telepon, ya.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{後|あと}で",
+          "w": "w-atode"
+        },
+        {
+          "t": "{電話|でんわ}するね。",
+          "w": "w-denwa"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-13.mp3",
+      "tags": [
+        "sehari-hari"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-14",
+      "japanese": "まだ分かりません。",
+      "furigana": "まだ{分|わ}かりません。",
+      "romaji": "mada wakarimasen",
+      "indonesian": "Saya masih belum mengerti.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "まだ",
+          "w": "w-mada"
+        },
+        {
+          "t": "{分|わ}かりません。",
+          "w": "w-wakaru"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-14.mp3",
+      "tags": [
+        "sehari-hari"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-15",
+      "japanese": "この店は安いです。",
+      "furigana": "この{店|みせ}は{安|やす}いです。",
+      "romaji": "kono mise wa yasui desu",
+      "indonesian": "Toko ini murah.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この"
+        },
+        {
+          "t": "{店|みせ}は",
+          "w": "w-mise"
+        },
+        {
+          "t": "{安|やす}いです。",
+          "w": "w-yasui"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-15.mp3",
+      "tags": [
+        "sehari-hari"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-16",
+      "japanese": "誕生日はいつですか。",
+      "furigana": "{誕生日|たんじょうび}はいつですか。",
+      "romaji": "tanjōbi wa itsu desu ka",
+      "indonesian": "Kapan ulang tahunmu?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{誕生日|たんじょうび}は",
+          "w": "w-tanjoubi"
+        },
+        {
+          "t": "いつですか。",
+          "w": "w-itsu"
+        }
+      ],
+      "audio": "audio/ja/sentences/s-16.mp3",
+      "tags": [
+        "sehari-hari"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

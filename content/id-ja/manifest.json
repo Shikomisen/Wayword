@@ -1,0 +1,1303 @@
+{
+  "schemaVersion": 1,
+  "language": "ja",
+  "speaker": "id",
+  "register": "polite",
+  "generatedFor": "Wayword — Japanese for Indonesian speakers",
+  "notes": "Japanese for Indonesian speakers, derived from the Japanese course for English speakers (content/ja/): the same Japanese items, furigana, romaji, characters, ids, exercises and clips, with every meaning, note, explanation and piece of feedback rewritten in Indonesian for an Indonesian learner. No dictionary for Paste a message: JMdict has no Indonesian meanings. Text the learner studies is `japanese`; `indonesian` is the gloss.",
+  "fields": {
+    "target": "japanese",
+    "ruby": "furigana",
+    "reading": "romaji",
+    "meaning": "indonesian"
+  },
+  "aids": {
+    "ruby": {
+      "chip": "ふりがな",
+      "label": "Furigana",
+      "help": "Cara baca kana di atas kanji"
+    },
+    "reading": {
+      "chip": "romaji",
+      "label": "Romaji",
+      "help": "Cara baca dalam huruf Latin di bawah ungkapan"
+    }
+  },
+  "noteFields": [
+    {
+      "field": "registerNotes",
+      "label": "Ragam bahasa"
+    },
+    {
+      "field": "animeNote",
+      "label": "Dari anime?",
+      "style": "anime"
+    },
+    {
+      "field": "usage",
+      "label": "Cara pakai"
+    }
+  ],
+  "words": {
+    "pos": [
+      "noun",
+      "verb",
+      "i-adjective",
+      "na-adjective",
+      "adverb",
+      "pronoun",
+      "question"
+    ],
+    "forms": [
+      "masu",
+      "te"
+    ],
+    "verbForms": [
+      "masu",
+      "te"
+    ]
+  },
+  "copy": {
+    "placementLede": "{n} kartu singkat — semua kategori ungkapan tingkat Langkah pertama dan Dasar, ditambah beberapa kana dan kanji untuk mengecek apa yang sudah bisa kamu baca. Untuk setiap kartu, cukup pilih apakah kamu sudah menguasainya. Tidak perlu mengetik dan tidak ada nilai — ini hanya menentukan dari mana setiap kartu mulai diulang.",
+    "placementAside": "Banyak orang Indonesia sudah kenal sedikit bahasa Jepang dari anime, J-pop, atau tempat kerja. Kemampuan seperti ini nyata, tapi biasanya tidak seimbang: kamu lebih banyak paham daripada yang bisa kamu ucapkan, dan kemampuan membaca tertinggal dari mendengar. Pemeriksaan ini mencari celah itu, bukan menguji kamu.",
+    "lessonsTitle": "Tata bahasa & penghubung",
+    "lessonsTab": "Pola",
+    "lessonsLede": "Cara kerja kalimat bahasa Jepang: partikel dan bentuk kata kerja dulu, lalu kata penghubung yang merangkai kalimat. Baca satu pelajaran, lalu langsung berlatih.",
+    "lessonsIcon": "🧱"
+  },
+  "levels": [
+    {
+      "id": "first-steps",
+      "icon": "🌱",
+      "title": "Langkah pertama",
+      "description": "Benar-benar baru dengan bahasa Jepang. Hiragana dan katakana, kata dan ungkapan pertamamu, dan cara menyusun kalimat: partikel seperti は, を, dan に, です, serta bentuk ます. Romaji tersedia sampai kamu bisa membaca kana."
+    },
+    {
+      "id": "basic",
+      "icon": "🌿",
+      "title": "Dasar",
+      "description": "Bahasa Jepang sehari-hari: kata untuk rumah, makanan, dan bepergian, ungkapan siap pakai untuk toko, stasiun, dan hotel, bahasa santai untuk teman dan pasangan, kata penghubung yang merangkai kalimat, dan kanji pertamamu."
+    },
+    {
+      "id": "intermediate",
+      "icon": "🌳",
+      "title": "Menengah",
+      "description": "Percakapan di luar ungkapan hafalan: bercerita tentang dirimu, rencanamu, dan pendapatmu, menanggapi sambil mendengarkan, bahasa Jepang sopan untuk keluarga pasangan, dan menyelesaikan masalah di dokter, hotel, atau toko. Tata bahasa seperti 〜てみる, 〜たことがある, と思う, dan keigo, mendengarkan dengan kecepatan alami, dan 124 kanji lagi.",
+      "placement": false
+    }
+  ],
+  "groups": [
+    {
+      "id": "basics",
+      "title": "Dasar sehari-hari"
+    },
+    {
+      "id": "out",
+      "title": "Di luar rumah"
+    },
+    {
+      "id": "travel",
+      "title": "Bepergian"
+    },
+    {
+      "id": "help",
+      "title": "Kalau ada masalah"
+    },
+    {
+      "id": "talk",
+      "title": "Percakapan nyata"
+    },
+    {
+      "id": "life",
+      "title": "Hidup di Jepang"
+    }
+  ],
+  "categories": [
+    {
+      "id": "greetings",
+      "order": 1,
+      "file": "content/id-ja/greetings.json",
+      "title": "Salam & sopan santun",
+      "icon": "🙏",
+      "group": "basics",
+      "level": "first-steps",
+      "step": 1,
+      "starter": true
+    },
+    {
+      "id": "numbers",
+      "order": 2,
+      "file": "content/id-ja/numbers.json",
+      "title": "Angka, waktu & uang",
+      "icon": "🔢",
+      "group": "basics",
+      "level": "first-steps",
+      "step": 2,
+      "starter": true
+    },
+    {
+      "id": "airport",
+      "order": 3,
+      "file": "content/id-ja/airport.json",
+      "title": "Bandara & imigrasi",
+      "icon": "✈️",
+      "group": "travel",
+      "level": "basic",
+      "step": 15
+    },
+    {
+      "id": "transport",
+      "order": 4,
+      "file": "content/id-ja/transport.json",
+      "title": "Transportasi",
+      "icon": "🚆",
+      "group": "out",
+      "level": "basic",
+      "step": 8
+    },
+    {
+      "id": "directions",
+      "order": 5,
+      "file": "content/id-ja/directions.json",
+      "title": "Arah & tersesat",
+      "icon": "🧭",
+      "group": "out",
+      "level": "basic",
+      "step": 9
+    },
+    {
+      "id": "hotel",
+      "order": 6,
+      "file": "content/id-ja/hotel.json",
+      "title": "Hotel: check-in & check-out",
+      "icon": "🏨",
+      "group": "travel",
+      "level": "basic",
+      "step": 16
+    },
+    {
+      "id": "restaurant",
+      "order": 7,
+      "file": "content/id-ja/restaurant.json",
+      "title": "Restoran & memesan",
+      "icon": "🍜",
+      "group": "out",
+      "level": "basic",
+      "step": 5,
+      "starter": true
+    },
+    {
+      "id": "shopping",
+      "order": 8,
+      "file": "content/id-ja/shopping.json",
+      "title": "Belanja & membayar",
+      "icon": "🛍️",
+      "group": "out",
+      "level": "basic",
+      "step": 6,
+      "starter": true
+    },
+    {
+      "id": "emergency",
+      "order": 9,
+      "file": "content/id-ja/emergency.json",
+      "title": "Darurat & kesehatan",
+      "icon": "🏥",
+      "group": "help",
+      "level": "basic",
+      "step": 14
+    },
+    {
+      "id": "smalltalk",
+      "order": 10,
+      "file": "content/id-ja/smalltalk.json",
+      "title": "Obrolan ringan",
+      "icon": "💬",
+      "group": "basics",
+      "level": "first-steps",
+      "step": 9
+    },
+    {
+      "id": "casual",
+      "order": 11,
+      "file": "content/id-ja/casual.json",
+      "title": "Bahasa santai",
+      "icon": "🏠",
+      "group": "basics",
+      "level": "basic",
+      "step": 1,
+      "starter": true
+    },
+    {
+      "id": "aizuchi",
+      "order": 12,
+      "file": "content/id-ja/aizuchi.json",
+      "title": "Tanggapan & mendengarkan",
+      "icon": "👂",
+      "group": "talk",
+      "level": "intermediate",
+      "step": 2,
+      "starter": true
+    },
+    {
+      "id": "plans",
+      "order": 13,
+      "file": "content/id-ja/plans.json",
+      "title": "Rencana & ajakan",
+      "icon": "📅",
+      "group": "talk",
+      "level": "intermediate",
+      "step": 6
+    },
+    {
+      "id": "opinions",
+      "order": 14,
+      "file": "content/id-ja/opinions.json",
+      "title": "Pendapat & setuju",
+      "icon": "💬",
+      "group": "talk",
+      "level": "intermediate",
+      "step": 9
+    },
+    {
+      "id": "family",
+      "order": 15,
+      "file": "content/id-ja/family.json",
+      "title": "Bertemu keluarga",
+      "icon": "👪",
+      "group": "life",
+      "level": "intermediate",
+      "step": 13
+    },
+    {
+      "id": "doctor",
+      "order": 16,
+      "file": "content/id-ja/doctor.json",
+      "title": "Dokter & apotek",
+      "icon": "💊",
+      "group": "life",
+      "level": "intermediate",
+      "step": 15
+    },
+    {
+      "id": "problems",
+      "order": 17,
+      "file": "content/id-ja/problems.json",
+      "title": "Masalah & keluhan",
+      "icon": "🛠️",
+      "group": "life",
+      "level": "intermediate",
+      "step": 18
+    }
+  ],
+  "decks": [
+    {
+      "id": "words-people",
+      "kind": "words",
+      "order": 1,
+      "file": "content/id-ja/words/people.json",
+      "title": "Orang & keluarga",
+      "icon": "👥",
+      "level": "first-steps",
+      "step": 3,
+      "starter": true
+    },
+    {
+      "id": "words-time",
+      "kind": "words",
+      "order": 2,
+      "file": "content/id-ja/words/time.json",
+      "title": "Waktu & hari",
+      "icon": "🕒",
+      "level": "first-steps",
+      "step": 8
+    },
+    {
+      "id": "words-verbs",
+      "kind": "words",
+      "order": 3,
+      "file": "content/id-ja/words/verbs.json",
+      "title": "Kata kerja sehari-hari",
+      "icon": "🏃",
+      "level": "first-steps",
+      "step": 4,
+      "starter": true
+    },
+    {
+      "id": "words-small",
+      "kind": "words",
+      "order": 4,
+      "file": "content/id-ja/words/small.json",
+      "title": "Kata-kata kecil",
+      "icon": "🧩",
+      "level": "first-steps",
+      "step": 5,
+      "starter": true
+    },
+    {
+      "id": "words-home",
+      "kind": "words",
+      "order": 5,
+      "file": "content/id-ja/words/home.json",
+      "title": "Rumah & kehidupan sehari-hari",
+      "icon": "🏠",
+      "level": "basic",
+      "step": 3
+    },
+    {
+      "id": "words-food",
+      "kind": "words",
+      "order": 6,
+      "file": "content/id-ja/words/food.json",
+      "title": "Makanan & minuman",
+      "icon": "🍙",
+      "level": "basic",
+      "step": 2,
+      "starter": true
+    },
+    {
+      "id": "words-describe",
+      "kind": "words",
+      "order": 7,
+      "file": "content/id-ja/words/describe.json",
+      "title": "Menggambarkan sesuatu",
+      "icon": "🎨",
+      "level": "basic",
+      "step": 4,
+      "starter": true
+    },
+    {
+      "id": "words-feelings",
+      "kind": "words",
+      "order": 8,
+      "file": "content/id-ja/words/feelings.json",
+      "title": "Perasaan & kesehatan",
+      "icon": "💗",
+      "level": "basic",
+      "step": 10
+    },
+    {
+      "id": "words-places",
+      "kind": "words",
+      "order": 9,
+      "file": "content/id-ja/words/places.json",
+      "title": "Tempat & bepergian",
+      "icon": "🗺️",
+      "level": "basic",
+      "step": 7
+    },
+    {
+      "id": "words-weather",
+      "kind": "words",
+      "order": 10,
+      "file": "content/id-ja/words/weather.json",
+      "title": "Cuaca & musim",
+      "icon": "☀️",
+      "level": "basic",
+      "step": 11
+    },
+    {
+      "id": "words-work",
+      "kind": "words",
+      "order": 11,
+      "file": "content/id-ja/words/work.json",
+      "title": "Kerja & belajar",
+      "icon": "💼",
+      "level": "basic",
+      "step": 12
+    },
+    {
+      "id": "words-free",
+      "kind": "words",
+      "order": 12,
+      "file": "content/id-ja/words/free.json",
+      "title": "Waktu luang",
+      "icon": "🎬",
+      "level": "basic",
+      "step": 13
+    },
+    {
+      "id": "words-things",
+      "kind": "words",
+      "order": 13,
+      "file": "content/id-ja/words/things.json",
+      "title": "Benda di sekitarmu",
+      "icon": "🎒",
+      "level": "first-steps",
+      "step": 7
+    },
+    {
+      "id": "words-more-verbs",
+      "kind": "words",
+      "order": 14,
+      "file": "content/id-ja/words/more-verbs.json",
+      "title": "Kata kerja lainnya",
+      "icon": "🔧",
+      "level": "intermediate",
+      "step": 1,
+      "starter": true
+    },
+    {
+      "id": "words-reactions",
+      "kind": "words",
+      "order": 15,
+      "file": "content/id-ja/words/reactions.json",
+      "title": "Perasaan & tanggapan",
+      "icon": "😮",
+      "level": "intermediate",
+      "step": 3,
+      "starter": true
+    },
+    {
+      "id": "words-more-describe",
+      "kind": "words",
+      "order": 16,
+      "file": "content/id-ja/words/more-describe.json",
+      "title": "Kata sifat lainnya",
+      "icon": "🎭",
+      "level": "intermediate",
+      "step": 8
+    },
+    {
+      "id": "words-social",
+      "kind": "words",
+      "order": 17,
+      "file": "content/id-ja/words/social.json",
+      "title": "Orang & pergaulan",
+      "icon": "🥂",
+      "level": "intermediate",
+      "step": 5
+    },
+    {
+      "id": "words-travel",
+      "kind": "words",
+      "order": 18,
+      "file": "content/id-ja/words/travel.json",
+      "title": "Wisata & jalan-jalan",
+      "icon": "🧳",
+      "level": "intermediate",
+      "step": 11
+    },
+    {
+      "id": "words-timing",
+      "kind": "words",
+      "order": 19,
+      "file": "content/id-ja/words/timing.json",
+      "title": "Waktu & seberapa sering",
+      "icon": "⏳",
+      "level": "intermediate",
+      "step": 7
+    },
+    {
+      "id": "words-thinking",
+      "kind": "words",
+      "order": 20,
+      "file": "content/id-ja/words/thinking.json",
+      "title": "Pendapat & ide",
+      "icon": "💭",
+      "level": "intermediate",
+      "step": 10
+    },
+    {
+      "id": "words-health",
+      "kind": "words",
+      "order": 21,
+      "file": "content/id-ja/words/health.json",
+      "title": "Kesehatan & dokter",
+      "icon": "🩺",
+      "level": "intermediate",
+      "step": 14
+    },
+    {
+      "id": "words-life",
+      "kind": "words",
+      "order": 22,
+      "file": "content/id-ja/words/life.json",
+      "title": "Rumah & keseharian",
+      "icon": "🏡",
+      "level": "intermediate",
+      "step": 16
+    },
+    {
+      "id": "words-shopping2",
+      "kind": "words",
+      "order": 23,
+      "file": "content/id-ja/words/shopping2.json",
+      "title": "Belanja & uang",
+      "icon": "💴",
+      "level": "intermediate",
+      "step": 17
+    },
+    {
+      "id": "sentences-everyday",
+      "kind": "sentences",
+      "order": 1,
+      "file": "content/id-ja/sentences/everyday.json",
+      "title": "Kalimat sehari-hari",
+      "icon": "💬",
+      "level": "first-steps",
+      "step": 6
+    },
+    {
+      "id": "sentences-yourself",
+      "kind": "sentences",
+      "order": 2,
+      "file": "content/id-ja/sentences/yourself.json",
+      "title": "Bercerita tentang dirimu",
+      "icon": "🙋",
+      "level": "intermediate",
+      "step": 4
+    },
+    {
+      "id": "sentences-out",
+      "kind": "sentences",
+      "order": 3,
+      "file": "content/id-ja/sentences/out.json",
+      "title": "Di luar rumah",
+      "icon": "🚶",
+      "level": "intermediate",
+      "step": 12
+    }
+  ],
+  "lessonGroups": [
+    {
+      "id": "particles",
+      "title": "Partikel: menyusun kalimat",
+      "description": "Kata-kata kecil setelah kata benda yang menunjukkan siapa melakukan apa, di mana, kapan, dan dengan siapa."
+    },
+    {
+      "id": "verbs",
+      "title": "Kata kerja & kata sifat",
+      "description": "Kata kerja sopan dan santai, kata untuk menggambarkan sesuatu, dan cara bilang apa yang ingin kamu lakukan."
+    },
+    {
+      "id": "chain",
+      "title": "Dan, lalu",
+      "description": "Merangkai tindakan dan menambahkan hal lain."
+    },
+    {
+      "id": "reason",
+      "title": "Karena & jadi",
+      "description": "Memberi alasan dan menarik kesimpulan."
+    },
+    {
+      "id": "contrast",
+      "title": "Tapi",
+      "description": "Dua hal yang saling bertentangan."
+    },
+    {
+      "id": "condition",
+      "title": "Kalau & ketika",
+      "description": "Syarat, dan kapan sesuatu terjadi."
+    },
+    {
+      "id": "more",
+      "title": "Sambil, lagi pula, supaya",
+      "description": "Melakukan dua hal sekaligus, menumpuk alasan, dan menyatakan tujuan."
+    },
+    {
+      "id": "forms",
+      "title": "Bentuk kata kerja yang menambah makna",
+      "description": "Mencoba, menyelesaikan, menyiapkan, pengalaman, rencana, kemampuan, perubahan, dan keputusan: akhiran kata kerja yang paling banyak dipakai dalam percakapan."
+    },
+    {
+      "id": "rules",
+      "title": "Boleh, harus & tidak perlu",
+      "description": "Minta izin, bilang apa yang tidak boleh, dan apa yang harus atau tidak perlu kamu lakukan."
+    },
+    {
+      "id": "giving",
+      "title": "Memberi & menerima",
+      "description": "Siapa memberi kepada siapa, dan saling membantu: kata kerja yang dipakai bahasa Jepang untuk menunjukkan rasa terima kasih."
+    },
+    {
+      "id": "thinking",
+      "title": "Menyampaikan pikiran & kabar",
+      "description": "Pendapat, menyampaikan ucapan orang, kemungkinan, kesan dari yang terlihat, dan apa yang kamu dengar."
+    },
+    {
+      "id": "nuance",
+      "title": "Nuansa dalam percakapan",
+      "description": "Akhiran dan pola yang membuat bahasa Jepang terdengar seperti percakapan: menjelaskan, berbagi, mengeluh, mengakui, membandingkan."
+    },
+    {
+      "id": "keigo",
+      "title": "Bahasa Jepang sopan (keigo)",
+      "description": "Kata kerja hormat untuk lawan bicara dan kata kerja merendah untuk diri sendiri: untuk keluarga pasangan, pelanggan, dan siapa pun yang kedudukannya di atasmu."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "gr-desu",
+      "order": 1,
+      "file": "content/id-ja/grammar/desu.json",
+      "title": "です — X adalah Y",
+      "group": "particles",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-wa",
+      "order": 2,
+      "file": "content/id-ja/grammar/wa.json",
+      "title": "は — topik: kalau…",
+      "group": "particles",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-ga-subject",
+      "order": 3,
+      "file": "content/id-ja/grammar/ga-subject.json",
+      "title": "が — siapa atau apa",
+      "group": "particles",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-wo",
+      "order": 4,
+      "file": "content/id-ja/grammar/wo.json",
+      "title": "を — apa yang dimakan, dilihat, dibeli…",
+      "group": "particles",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-ni",
+      "order": 5,
+      "file": "content/id-ja/grammar/ni.json",
+      "title": "に — pada, ke, di",
+      "group": "particles",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-de",
+      "order": 6,
+      "file": "content/id-ja/grammar/de.json",
+      "title": "で — tempat kegiatan, dan caranya",
+      "group": "particles",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-kara-made",
+      "order": 7,
+      "file": "content/id-ja/grammar/kara-made.json",
+      "title": "から〜まで — dari… sampai",
+      "group": "particles",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-no",
+      "order": 8,
+      "file": "content/id-ja/grammar/no.json",
+      "title": "の — milik, punya",
+      "group": "particles",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-mo",
+      "order": 9,
+      "file": "content/id-ja/grammar/mo.json",
+      "title": "も — juga",
+      "group": "particles",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-to-and",
+      "order": 10,
+      "file": "content/id-ja/grammar/to-and.json",
+      "title": "と — dan, dengan",
+      "group": "particles",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-ka",
+      "order": 11,
+      "file": "content/id-ja/grammar/ka.json",
+      "title": "か — bertanya",
+      "group": "particles",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-masu",
+      "order": 12,
+      "file": "content/id-ja/grammar/masu.json",
+      "title": "〜ます — kata kerja sopan, kini dan lampau",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-i-adj",
+      "order": 13,
+      "file": "content/id-ja/grammar/i-adj.json",
+      "title": "〜い — kata sifat い",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-na-adj",
+      "order": 14,
+      "file": "content/id-ja/grammar/na-adj.json",
+      "title": "〜な — kata sifat な",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-aru-iru",
+      "order": 15,
+      "file": "content/id-ja/grammar/aru-iru.json",
+      "title": "ある・いる — ada, punya",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-tai",
+      "order": 16,
+      "file": "content/id-ja/grammar/tai.json",
+      "title": "〜たい — saya ingin…",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-mashou",
+      "order": 17,
+      "file": "content/id-ja/grammar/mashou.json",
+      "title": "〜ましょう・〜ませんか — ayo, bagaimana kalau",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-teiru",
+      "order": 18,
+      "file": "content/id-ja/grammar/teiru.json",
+      "title": "〜ている — sedang, dan keadaan",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-nai",
+      "order": 19,
+      "file": "content/id-ja/grammar/nai.json",
+      "title": "〜る・〜ない — bentuk santai, positif dan negatif",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-ta",
+      "order": 20,
+      "file": "content/id-ja/grammar/ta.json",
+      "title": "〜た — bentuk lampau santai",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "con-te",
+      "order": 21,
+      "file": "content/id-ja/connectors/te.json",
+      "title": "〜て — lalu, dan",
+      "group": "chain",
+      "level": "basic"
+    },
+    {
+      "id": "con-soshite",
+      "order": 22,
+      "file": "content/id-ja/connectors/soshite.json",
+      "title": "そして — dan (juga)",
+      "group": "chain",
+      "level": "basic"
+    },
+    {
+      "id": "con-sorekara",
+      "order": 23,
+      "file": "content/id-ja/connectors/sorekara.json",
+      "title": "それから — setelah itu, lalu",
+      "group": "chain",
+      "level": "basic"
+    },
+    {
+      "id": "con-kara",
+      "order": 24,
+      "file": "content/id-ja/connectors/kara.json",
+      "title": "から — karena, jadi",
+      "group": "reason",
+      "level": "basic"
+    },
+    {
+      "id": "con-node",
+      "order": 25,
+      "file": "content/id-ja/connectors/node.json",
+      "title": "ので — karena (lebih halus)",
+      "group": "reason",
+      "level": "basic"
+    },
+    {
+      "id": "con-dakara",
+      "order": 26,
+      "file": "content/id-ja/connectors/dakara.json",
+      "title": "だから — jadi, makanya",
+      "group": "reason",
+      "level": "basic"
+    },
+    {
+      "id": "con-kedo",
+      "order": 27,
+      "file": "content/id-ja/connectors/kedo.json",
+      "title": "けど — tapi, meskipun",
+      "group": "contrast",
+      "level": "basic"
+    },
+    {
+      "id": "con-ga",
+      "order": 28,
+      "file": "content/id-ja/connectors/ga.json",
+      "title": "が — tapi (sopan)",
+      "group": "contrast",
+      "level": "basic"
+    },
+    {
+      "id": "con-demo",
+      "order": 29,
+      "file": "content/id-ja/connectors/demo.json",
+      "title": "でも — tapi (kalimat baru)",
+      "group": "contrast",
+      "level": "basic"
+    },
+    {
+      "id": "con-to",
+      "order": 30,
+      "file": "content/id-ja/connectors/to.json",
+      "title": "と — kalau (pasti), setiap kali",
+      "group": "condition",
+      "level": "basic"
+    },
+    {
+      "id": "con-tara",
+      "order": 31,
+      "file": "content/id-ja/connectors/tara.json",
+      "title": "たら — kalau, kalau sudah",
+      "group": "condition",
+      "level": "basic"
+    },
+    {
+      "id": "con-ba",
+      "order": 32,
+      "file": "content/id-ja/connectors/ba.json",
+      "title": "ば — kalau (syaratnya)",
+      "group": "condition",
+      "level": "basic"
+    },
+    {
+      "id": "con-toki",
+      "order": 33,
+      "file": "content/id-ja/connectors/toki.json",
+      "title": "とき — waktu, ketika",
+      "group": "condition",
+      "level": "basic"
+    },
+    {
+      "id": "con-nagara",
+      "order": 34,
+      "file": "content/id-ja/connectors/nagara.json",
+      "title": "ながら — sambil",
+      "group": "more",
+      "level": "basic"
+    },
+    {
+      "id": "con-shi",
+      "order": 35,
+      "file": "content/id-ja/connectors/shi.json",
+      "title": "し — lagi pula, selain itu",
+      "group": "more",
+      "level": "basic"
+    },
+    {
+      "id": "con-tame",
+      "order": 36,
+      "file": "content/id-ja/connectors/tame.json",
+      "title": "ために — untuk, demi",
+      "group": "more",
+      "level": "basic"
+    },
+    {
+      "id": "gr-temiru",
+      "order": 37,
+      "file": "content/id-ja/grammar/temiru.json",
+      "title": "〜てみる — coba dulu, lalu lihat",
+      "group": "forms",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-teshimau",
+      "order": 38,
+      "file": "content/id-ja/grammar/teshimau.json",
+      "title": "〜てしまう・〜ちゃう — telanjur, aduh",
+      "group": "forms",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-teoku",
+      "order": 39,
+      "file": "content/id-ja/grammar/teoku.json",
+      "title": "〜ておく — siapkan sekarang, untuk nanti",
+      "group": "forms",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-takotogaaru",
+      "order": 40,
+      "file": "content/id-ja/grammar/takotogaaru.json",
+      "title": "〜たことがある — pernahkah kamu…?",
+      "group": "forms",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-tsumori",
+      "order": 41,
+      "file": "content/id-ja/grammar/tsumori.json",
+      "title": "〜つもり — saya berencana…",
+      "group": "forms",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-potential",
+      "order": 42,
+      "file": "content/id-ja/grammar/potential.json",
+      "title": "〜られる・〜える — bisa melakukan",
+      "group": "forms",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-youninaru",
+      "order": 43,
+      "file": "content/id-ja/grammar/youninaru.json",
+      "title": "〜ようになる — sekarang jadi bisa, jadi terbiasa",
+      "group": "forms",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-kotonisuru",
+      "order": 44,
+      "file": "content/id-ja/grammar/kotonisuru.json",
+      "title": "〜ことにする・〜ことになる — sudah diputuskan",
+      "group": "forms",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-temoii",
+      "order": 45,
+      "file": "content/id-ja/grammar/temoii.json",
+      "title": "〜てもいい — boleh…?",
+      "group": "rules",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-tewaikenai",
+      "order": 46,
+      "file": "content/id-ja/grammar/tewaikenai.json",
+      "title": "〜てはいけない・〜ちゃだめ — tidak boleh, jangan",
+      "group": "rules",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-nakereba",
+      "order": 47,
+      "file": "content/id-ja/grammar/nakereba.json",
+      "title": "〜なければならない・〜なくてもいい — harus, tidak perlu",
+      "group": "rules",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-ageru",
+      "order": 48,
+      "file": "content/id-ja/grammar/ageru.json",
+      "title": "あげる・くれる・もらう — memberi dan menerima",
+      "group": "giving",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-tekureru",
+      "order": 49,
+      "file": "content/id-ja/grammar/tekureru.json",
+      "title": "〜てくれる・〜てもらう・〜てあげる — berbuat baik untuk orang",
+      "group": "giving",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-toomou",
+      "order": 50,
+      "file": "content/id-ja/grammar/toomou.json",
+      "title": "〜とおもう — menurut saya…",
+      "group": "thinking",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-tte",
+      "order": 51,
+      "file": "content/id-ja/grammar/tte.json",
+      "title": "〜って・〜といっていた — katanya",
+      "group": "thinking",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-kamoshirenai",
+      "order": 52,
+      "file": "content/id-ja/grammar/kamoshirenai.json",
+      "title": "〜かもしれない・〜でしょう — mungkin, kemungkinan besar",
+      "group": "thinking",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-sou",
+      "order": 53,
+      "file": "content/id-ja/grammar/sou.json",
+      "title": "〜そう — kelihatannya enak, sepertinya mau hujan",
+      "group": "thinking",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-mitai",
+      "order": 54,
+      "file": "content/id-ja/grammar/mitai.json",
+      "title": "〜みたい・〜らしい — sepertinya, kabarnya",
+      "group": "thinking",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-ndesu",
+      "order": 55,
+      "file": "content/id-ja/grammar/ndesu.json",
+      "title": "〜んです — menjelaskan, dan bertanya kenapa",
+      "group": "nuance",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-yone",
+      "order": 56,
+      "file": "content/id-ja/grammar/yone.json",
+      "title": "よ・ね・よね — memberi tahu, berbagi, memastikan",
+      "group": "nuance",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-noni",
+      "order": 57,
+      "file": "content/id-ja/grammar/noni.json",
+      "title": "〜のに — padahal",
+      "group": "nuance",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-temo",
+      "order": 58,
+      "file": "content/id-ja/grammar/temo.json",
+      "title": "〜ても — walaupun, berapa pun",
+      "group": "nuance",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-sugiru",
+      "order": 59,
+      "file": "content/id-ja/grammar/sugiru.json",
+      "title": "〜すぎる・〜やすい・〜にくい — terlalu, mudah, sulit",
+      "group": "nuance",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-hikaku",
+      "order": 60,
+      "file": "content/id-ja/grammar/hikaku.json",
+      "title": "より・ほうが・いちばん — membandingkan",
+      "group": "nuance",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-sonkei",
+      "order": 61,
+      "file": "content/id-ja/grammar/sonkei.json",
+      "title": "いらっしゃる — kata kerja hormat",
+      "group": "keigo",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-kenjou",
+      "order": 62,
+      "file": "content/id-ja/grammar/kenjou.json",
+      "title": "いたします・もうします — kata kerja merendah",
+      "group": "keigo",
+      "level": "intermediate"
+    }
+  ],
+  "characterSets": [
+    {
+      "id": "hiragana",
+      "order": 1,
+      "file": "content/id-ja/hiragana.json",
+      "title": "Hiragana",
+      "icon": "あ",
+      "script": "hiragana",
+      "layout": "grid",
+      "level": "first-steps"
+    },
+    {
+      "id": "katakana",
+      "order": 2,
+      "file": "content/id-ja/katakana.json",
+      "title": "Katakana",
+      "icon": "ア",
+      "script": "katakana",
+      "layout": "grid",
+      "level": "first-steps"
+    },
+    {
+      "id": "kanji-words",
+      "order": 3,
+      "file": "content/id-ja/kanji-words.json",
+      "title": "Kanji di kata-katamu",
+      "icon": "字",
+      "script": "kanji",
+      "layout": "list",
+      "level": "basic"
+    },
+    {
+      "id": "kanji-common",
+      "order": 4,
+      "file": "content/id-ja/kanji-common.json",
+      "title": "Kanji umum",
+      "icon": "漢",
+      "script": "kanji",
+      "layout": "list",
+      "level": "basic"
+    },
+    {
+      "id": "kanji-more",
+      "order": 5,
+      "file": "content/id-ja/kanji-more.json",
+      "title": "Kanji tambahan",
+      "icon": "文",
+      "script": "kanji",
+      "layout": "list",
+      "level": "intermediate"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "conbini",
+      "file": "content/id-ja/scenarios/conbini.json",
+      "title": "Bayar di kasir konbini",
+      "icon": "🏪",
+      "category": "shopping",
+      "level": "basic"
+    },
+    {
+      "id": "ticket",
+      "file": "content/id-ja/scenarios/ticket.json",
+      "title": "Membeli tiket kereta",
+      "icon": "🎫",
+      "category": "transport",
+      "level": "basic"
+    },
+    {
+      "id": "immigration",
+      "file": "content/id-ja/scenarios/immigration.json",
+      "title": "Di meja imigrasi",
+      "icon": "🛂",
+      "category": "airport",
+      "level": "basic"
+    },
+    {
+      "id": "checkin",
+      "file": "content/id-ja/scenarios/checkin.json",
+      "title": "Check-in hotel",
+      "icon": "🏨",
+      "category": "hotel",
+      "level": "basic"
+    },
+    {
+      "id": "izakaya",
+      "file": "content/id-ja/scenarios/izakaya.json",
+      "title": "Memesan di restoran",
+      "icon": "🍜",
+      "category": "restaurant",
+      "level": "basic"
+    },
+    {
+      "id": "lost",
+      "file": "content/id-ja/scenarios/lost.json",
+      "title": "Bertanya jalan saat tersesat",
+      "icon": "🧭",
+      "category": "directions",
+      "level": "basic"
+    },
+    {
+      "id": "pharmacy",
+      "file": "content/id-ja/scenarios/pharmacy.json",
+      "title": "Di apotek",
+      "icon": "💊",
+      "category": "emergency",
+      "level": "basic"
+    },
+    {
+      "id": "neighbour",
+      "file": "content/id-ja/scenarios/neighbour.json",
+      "title": "Mengobrol dengan tetangga",
+      "icon": "🏘️",
+      "category": "smalltalk",
+      "level": "basic"
+    },
+    {
+      "id": "family-dinner",
+      "file": "content/id-ja/scenarios/family-dinner.json",
+      "title": "Makan malam dengan keluarga pasangan",
+      "icon": "👪",
+      "category": "family",
+      "level": "intermediate"
+    },
+    {
+      "id": "weekend-plans",
+      "file": "content/id-ja/scenarios/weekend-plans.json",
+      "title": "Membuat rencana akhir pekan",
+      "icon": "📅",
+      "category": "plans",
+      "level": "intermediate"
+    },
+    {
+      "id": "clinic",
+      "file": "content/id-ja/scenarios/clinic.json",
+      "title": "Di klinik",
+      "icon": "🩺",
+      "category": "doctor",
+      "level": "intermediate"
+    },
+    {
+      "id": "ryokan",
+      "file": "content/id-ja/scenarios/ryokan.json",
+      "title": "Menginap di ryokan",
+      "icon": "♨️",
+      "category": "hotel",
+      "level": "intermediate"
+    },
+    {
+      "id": "wrong-order",
+      "file": "content/id-ja/scenarios/wrong-order.json",
+      "title": "Saat pesanan salah",
+      "icon": "🍛",
+      "category": "problems",
+      "level": "intermediate"
+    }
+  ],
+  "listening": [
+    {
+      "id": "contrasts",
+      "kind": "contrasts",
+      "file": "content/id-ja/listening/contrasts.json",
+      "title": "Kamu dengar yang mana?",
+      "icon": "🎧",
+      "level": "basic"
+    },
+    {
+      "id": "replies",
+      "kind": "replies",
+      "file": "content/id-ja/listening/replies.json",
+      "title": "Mereka bilang apa?",
+      "icon": "👂",
+      "level": "intermediate"
+    }
+  ]
+}

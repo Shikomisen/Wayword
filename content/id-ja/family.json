@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 1,
+  "id": "family",
+  "title": "Bertemu keluarga",
+  "order": 15,
+  "description": "Bahasa Jepang sopan untuk orang tua dan kerabat pasanganmu, dan siapa pun yang ingin kamu beri kesan pertama yang baik.",
+  "phrases": [
+    {
+      "id": "fam-01",
+      "japanese": "はじめまして。お会いできてうれしいです",
+      "furigana": [
+        {
+          "b": "はじめまして。お"
+        },
+        {
+          "b": "会",
+          "r": "あ"
+        },
+        {
+          "b": "いできてうれしいです"
+        }
+      ],
+      "romaji": "hajimemashite, o-ai dekite ureshii desu",
+      "indonesian": "Salam kenal. Senang sekali bisa bertemu.",
+      "registerNotes": "お会いできて adalah bentuk merendah dari “bisa bertemu”: hangat dan hormat sekaligus. Bahasa Jepang menunjukkan hormat lewat bentuk kata kerja, bahasa Indonesia lewat pilihan kata seperti “saya” dan “Bapak/Ibu”.",
+      "audio": "audio/ja/fam-01.mp3",
+      "tags": [
+        "bertemu",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-02",
+      "japanese": "いつもお世話になっています",
+      "furigana": [
+        {
+          "b": "いつもお"
+        },
+        {
+          "b": "世話",
+          "r": "せわ"
+        },
+        {
+          "b": "になっています"
+        }
+      ],
+      "romaji": "itsumo osewa ni natte imasu",
+      "indonesian": "Terima kasih atas segala kebaikannya selama ini.",
+      "registerNotes": "Salam standar kepada orang yang menjaga kamu atau pasanganmu. Diucapkan bahkan pada pertemuan pertama, untuk apa yang sudah mereka lakukan bagi pasanganmu.",
+      "audio": "audio/ja/fam-02.mp3",
+      "tags": [
+        "bertemu",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-03",
+      "japanese": "今日はお招きいただき、ありがとうございます",
+      "furigana": [
+        {
+          "b": "今日",
+          "r": "きょう"
+        },
+        {
+          "b": "はお"
+        },
+        {
+          "b": "招",
+          "r": "まね"
+        },
+        {
+          "b": "きいただき、ありがとうございます"
+        }
+      ],
+      "romaji": "kyō wa o-maneki itadaki, arigatō gozaimasu",
+      "indonesian": "Terima kasih sudah mengundang saya hari ini.",
+      "registerNotes": "Ucapan terima kasih atas undangan, dalam bahasa Jepang yang sopan. Ucapkan saat tiba, setelah salam.",
+      "audio": "audio/ja/fam-03.mp3",
+      "tags": [
+        "berkunjung"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "fam-04",
+      "japanese": "つまらないものですが、どうぞ",
+      "furigana": [
+        {
+          "b": "つまらないものですが、どうぞ"
+        }
+      ],
+      "romaji": "tsumaranai mono desu ga, dōzo",
+      "indonesian": "Cuma sedikit, tapi silakan.",
+      "registerNotes": "Saat menyerahkan hadiah (harfiah “ini barang yang membosankan”), mirip “ala kadarnya”. Sekarang banyak orang bilang ほんの気持ちですが (“sekadar tanda perhatian”), yang terdengar lebih hangat.",
+      "audio": "audio/ja/fam-04.mp3",
+      "tags": [
+        "berkunjung",
+        "hadiah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-05",
+      "japanese": "お邪魔します",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "邪魔",
+          "r": "じゃま"
+        },
+        {
+          "b": "します"
+        }
+      ],
+      "romaji": "ojama shimasu",
+      "indonesian": "Permisi. (masuk rumah orang)",
+      "registerNotes": "Diucapkan saat melangkah masuk rumah orang, tepat setelah melepas sepatu di pintu, seperti “permisi” saat bertamu.",
+      "audio": "audio/ja/fam-05.mp3",
+      "tags": [
+        "berkunjung",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fam-06",
+      "japanese": "どうぞお構いなく",
+      "furigana": [
+        {
+          "b": "どうぞお"
+        },
+        {
+          "b": "構",
+          "r": "かま"
+        },
+        {
+          "b": "いなく"
+        }
+      ],
+      "romaji": "dōzo okamai naku",
+      "indonesian": "Tidak usah repot-repot.",
+      "registerNotes": "Saat tuan rumah mulai sibuk menyiapkan minuman dan makanan. Mereka tetap akan menyiapkannya: itu bagian dari basa-basi, sama seperti saat bertamu di Indonesia.",
+      "audio": "audio/ja/fam-06.mp3",
+      "tags": [
+        "berkunjung"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "fam-07",
+      "japanese": "何かお手伝いしましょうか",
+      "furigana": [
+        {
+          "b": "何",
+          "r": "なに"
+        },
+        {
+          "b": "かお"
+        },
+        {
+          "b": "手伝",
+          "r": "てつだ"
+        },
+        {
+          "b": "いしましょうか"
+        }
+      ],
+      "romaji": "nanika o-tetsudai shimashō ka",
+      "indonesian": "Ada yang bisa saya bantu?",
+      "registerNotes": "Menawarkan bantuan di dapur atau saat membereskan. Bentuk merendah お〜する tepat untuk keluarga pasangan.",
+      "audio": "audio/ja/fam-07.mp3",
+      "tags": [
+        "berkunjung"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-08",
+      "japanese": "とてもおいしいです。お料理がお上手ですね",
+      "furigana": [
+        {
+          "b": "とてもおいしいです。お"
+        },
+        {
+          "b": "料理",
+          "r": "りょうり"
+        },
+        {
+          "b": "がお"
+        },
+        {
+          "b": "上手",
+          "r": "じょうず"
+        },
+        {
+          "b": "ですね"
+        }
+      ],
+      "romaji": "totemo oishii desu, o-ryōri ga o-jōzu desu ne",
+      "indonesian": "Enak sekali. Pintar sekali masaknya.",
+      "registerNotes": "Memuji masakan selalu disambut baik. Biasanya mereka akan bilang itu bukan apa-apa.",
+      "audio": "audio/ja/fam-08.mp3",
+      "tags": [
+        "makan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-09",
+      "japanese": "もう十分いただきました",
+      "furigana": [
+        {
+          "b": "もう"
+        },
+        {
+          "b": "十分",
+          "r": "じゅうぶん"
+        },
+        {
+          "b": "いただきました"
+        }
+      ],
+      "romaji": "mō jūbun itadakimashita",
+      "indonesian": "Saya sudah kenyang sekali, terima kasih.",
+      "registerNotes": "Menolak tambahan dengan sopan. Kalau piringmu bersih, mereka mungkin terus menambahkan; sisakan sedikit untuk menunjukkan kamu sudah kenyang.",
+      "audio": "audio/ja/fam-09.mp3",
+      "tags": [
+        "makan"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "fam-10",
+      "japanese": "日本語はまだ勉強中です",
+      "furigana": [
+        {
+          "b": "日本語",
+          "r": "にほんご"
+        },
+        {
+          "b": "はまだ"
+        },
+        {
+          "b": "勉強中",
+          "r": "べんきょうちゅう"
+        },
+        {
+          "b": "です"
+        }
+      ],
+      "romaji": "nihongo wa mada benkyōchū desu",
+      "indonesian": "Saya masih belajar bahasa Jepang.",
+      "registerNotes": "Menurunkan harapan dengan ramah, dan biasanya dibalas dengan semangat. Mereka mungkin tetap bilang 上手ですね.",
+      "audio": "audio/ja/fam-10.mp3",
+      "tags": [
+        "bertemu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-11",
+      "japanese": "ゆっくり話していただけますか",
+      "furigana": [
+        {
+          "b": "ゆっくり"
+        },
+        {
+          "b": "話",
+          "r": "はな"
+        },
+        {
+          "b": "していただけますか"
+        }
+      ],
+      "romaji": "yukkuri hanashite itadakemasu ka",
+      "indonesian": "Bisa bicara pelan-pelan?",
+      "registerNotes": "Lebih hormat daripada ゆっくり話してください: cocok untuk kerabat yang lebih tua.",
+      "audio": "audio/ja/fam-11.mp3",
+      "tags": [
+        "bertemu",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-12",
+      "japanese": "これからよろしくお願いいたします",
+      "furigana": [
+        {
+          "b": "これからよろしくお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いいたします"
+        }
+      ],
+      "romaji": "korekara yoroshiku onegai itashimasu",
+      "indonesian": "Mulai sekarang, mohon bimbingannya.",
+      "registerNotes": "Penutup formal pertemuan pertama dengan keluarga; よろしく tidak punya padanan persis dalam bahasa Indonesia. いたします adalah bentuk merendah dari します.",
+      "audio": "audio/ja/fam-12.mp3",
+      "tags": [
+        "bertemu"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "fam-13",
+      "japanese": "お邪魔しました",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "邪魔",
+          "r": "じゃま"
+        },
+        {
+          "b": "しました"
+        }
+      ],
+      "romaji": "ojama shimashita",
+      "indonesian": "Terima kasih sudah menerima saya.",
+      "registerNotes": "Diucapkan di pintu saat pulang (harfiah “saya sudah mengganggu”), seperti “saya pamit dulu”. Tambahkan 今日はありがとうございました.",
+      "audio": "audio/ja/fam-13.mp3",
+      "tags": [
+        "berkunjung"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

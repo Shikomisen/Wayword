@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-yang",
+  "connector": "yang",
+  "gloss": "the one that; who, which",
+  "title": "yang — the one that",
+  "pattern": "noun + yang + description · yang + description (the … one) · Yang mana?",
+  "explanation": "yang links a noun to a description of it, like who, which or that in English: orang yang tinggal di sebelah (the person who lives next door), kamar yang ada AC-nya (the room with air-con). Leave out the noun and yang … means 'the … one': Saya mau yang merah (I'd like the red one), Yang ini atau yang itu? To ask which one, say Yang mana? A single describing word needs no yang (rumah besar, a big house); adding it picks one out from the others: rumah yang besar, the big house, not the small one.",
+  "natural": "Pointing at things in a shop or at a warung: Yang ini, ya. Yang pedas atau yang tidak? It also comes before paling for 'the most': yang paling murah, the cheapest one.",
+  "stiff": "English can drop 'that' (the book I bought), but Indonesian always keeps yang: buku yang saya beli. And don't put yang before every describing word: kopi yang panas sounds as if you're setting it against a cold one, so for plain description say kopi panas.",
+  "examples": [
+    {
+      "id": "gx-yang-1",
+      "indonesian": "Saya mau yang pedas.",
+      "english": "I'd like the spicy one.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "yang pedas.",
+          "w": "w-pedas"
+        }
+      ],
+      "gap": {
+        "before": "Saya mau ",
+        "answer": "yang",
+        "after": " pedas.",
+        "options": [
+          "yang",
+          "itu",
+          "ini"
+        ],
+        "why": "With no noun, yang pedas means 'the spicy one'; itu and ini can't stand in for 'the' here."
+      },
+      "registerNotes": "At a warung with two kinds of sambal or two versions of a dish, point and say Yang pedas, ya.",
+      "audio": "audio/id/grammar/gx-yang-1.mp3",
+      "tags": [
+        "grammar",
+        "yang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-yang-2",
+      "indonesian": "Rumah Ibu yang mana?",
+      "english": "Which one is your house?",
+      "chunks": [
+        {
+          "t": "Rumah ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "Ibu ",
+          "w": "w-ibu"
+        },
+        {
+          "t": "yang mana?"
+        }
+      ],
+      "gap": {
+        "before": "Rumah Ibu ",
+        "answer": "yang",
+        "after": " mana?",
+        "options": [
+          "yang",
+          "di",
+          "ke"
+        ],
+        "why": "Yang mana? asks which one; di mana? would ask where."
+      },
+      "registerNotes": "Said looking along a street or at a photo. Ibu is the polite 'you' for an older woman.",
+      "audio": "audio/id/grammar/gx-yang-2.mp3",
+      "tags": [
+        "grammar",
+        "yang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-yang-3",
+      "indonesian": "Orang yang tinggal di sebelah ramah sekali.",
+      "english": "The person who lives next door is really friendly.",
+      "chunks": [
+        {
+          "t": "Orang ",
+          "w": "w-orang"
+        },
+        {
+          "t": "yang tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di sebelah ",
+          "w": "w-di"
+        },
+        {
+          "t": "ramah sekali.",
+          "w": "w-ramah"
+        }
+      ],
+      "gap": {
+        "before": "Orang ",
+        "answer": "yang",
+        "after": " tinggal di sebelah ramah sekali.",
+        "options": [
+          "yang",
+          "siapa",
+          "itu"
+        ],
+        "why": "A 'who' that describes someone is yang; siapa only asks a question."
+      },
+      "combine": {
+        "a": "Orang itu tinggal di sebelah.",
+        "b": "Orang itu ramah sekali.",
+        "distractors": [
+          "siapa tinggal "
+        ]
+      },
+      "pitfallNote": "English speakers reach for siapa (who) here, but siapa only asks questions: orang siapa tinggal … doesn't work.",
+      "audio": "audio/id/grammar/gx-yang-3.mp3",
+      "tags": [
+        "grammar",
+        "yang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-yang-4",
+      "indonesian": "Baju yang saya beli kemarin kekecilan.",
+      "english": "The top I bought yesterday is too small.",
+      "chunks": [
+        {
+          "t": "Baju ",
+          "w": "w-baju"
+        },
+        {
+          "t": "yang saya beli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "kemarin ",
+          "w": "w-kemarin"
+        },
+        {
+          "t": "kekecilan.",
+          "w": "w-kecil"
+        }
+      ],
+      "gap": {
+        "before": "Baju ",
+        "answer": "yang",
+        "after": " saya beli kemarin kekecilan.",
+        "options": [
+          "yang",
+          "itu",
+          "apa"
+        ],
+        "why": "English can drop 'that' (the top I bought); Indonesian keeps yang."
+      },
+      "combine": {
+        "a": "Saya beli baju kemarin.",
+        "b": "Bajunya kekecilan.",
+        "distractors": [
+          "saya beli "
+        ]
+      },
+      "pitfallNote": "Keep yang even where English leaves 'that' out: without it, baju saya reads as 'my top'. Kekecilan is 'too small' (from kecil).",
+      "audio": "audio/id/grammar/gx-yang-4.mp3",
+      "tags": [
+        "grammar",
+        "yang"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

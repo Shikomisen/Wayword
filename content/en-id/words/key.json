@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "id": "words-key",
+  "title": "Words That Hold It Together",
+  "description": "The short words in almost every Indonesian sentence: saying no, want and can, already and not yet, where to and from, and, but, because. They're what the grammar lessons build on.",
+  "items": [
+    {
+      "id": "w-tidak",
+      "indonesian": "tidak",
+      "english": "not, no (before verbs and describing words)",
+      "pos": "adverb",
+      "registerNotes": "Tidak goes before a verb or a describing word: tidak tahu (don't know), tidak mahal (not expensive). In everyday speech it's usually nggak.",
+      "pitfallNote": "Not for nouns: that's bukan. Ini bukan kopi saya, not ini tidak kopi saya.",
+      "audio": "audio/id/words/w-tidak.mp3",
+      "tags": [
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bukan",
+      "indonesian": "bukan",
+      "english": "not (before nouns); isn't it?",
+      "pos": "adverb",
+      "registerNotes": "Bukan negates a thing or a person: Dia bukan guru (She's not a teacher). At the end of a sentence it asks for agreement: Enak, bukan? (Tasty, isn't it?)",
+      "audio": "audio/id/words/w-bukan.mp3",
+      "tags": [
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-mau",
+      "indonesian": "mau",
+      "english": "to want; will, going to",
+      "pos": "verb",
+      "registerNotes": "Saya mau kopi (I'd like a coffee) is polite enough in a shop. Mau also means about to: Saya mau pulang (I'm going home). Ingin is the more formal want.",
+      "audio": "audio/id/words/w-mau.mp3",
+      "tags": [
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bisa",
+      "indonesian": "bisa",
+      "english": "can, to be able to",
+      "pos": "verb",
+      "registerNotes": "Before a verb: Saya bisa masak (I can cook). For a language, bisa alone is enough: Saya bisa sedikit bahasa Indonesia. Bisa? on its own asks Is that possible?, and the answer is Bisa or Tidak bisa.",
+      "audio": "audio/id/words/w-bisa.mp3",
+      "tags": [
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-harus",
+      "indonesian": "harus",
+      "english": "must, have to",
+      "pos": "verb",
+      "registerNotes": "Saya harus pergi (I have to go). Tidak harus means don't have to, not mustn't: for that, say jangan or tidak boleh.",
+      "audio": "audio/id/words/w-harus.mp3",
+      "tags": [
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-boleh",
+      "indonesian": "boleh",
+      "english": "may, to be allowed to",
+      "pos": "verb",
+      "registerNotes": "Boleh saya duduk di sini? (May I sit here?) is the polite way to ask permission. The answer is Boleh (Sure) or Tidak boleh (You can't).",
+      "audio": "audio/id/words/w-boleh.mp3",
+      "tags": [
+        "essential",
+        "polite"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sudah",
+      "indonesian": "sudah",
+      "english": "already, done; has (done)",
+      "pos": "adverb",
+      "registerNotes": "Sudah marks something as done: Saya sudah makan (I've eaten). Asked Sudah …?, answer Sudah or Belum, not ya or tidak. Casually udah.",
+      "pitfallNote": "It doesn't always mean already in English: Sudah makan? is simply Have you eaten?",
+      "audio": "audio/id/words/w-sudah.mp3",
+      "tags": [
+        "essential",
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-belum",
+      "indonesian": "belum",
+      "english": "not yet",
+      "pos": "adverb",
+      "registerNotes": "Belum is the hopeful no: Belum (not yet) to Sudah makan?, or Saya belum pernah ke Bali (I haven't been to Bali yet). Saying tidak there would sound like never.",
+      "audio": "audio/id/words/w-belum.mp3",
+      "tags": [
+        "essential",
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sedang",
+      "indonesian": "sedang",
+      "english": "in the middle of (doing), -ing",
+      "pos": "adverb",
+      "registerNotes": "Before a verb: Dia sedang makan (She's eating). In casual speech people say lagi instead: Aku lagi di jalan (I'm on my way).",
+      "pitfallNote": "Sedang also means medium: ukuran sedang is a medium size.",
+      "audio": "audio/id/words/w-sedang.mp3",
+      "tags": [
+        "essential",
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-akan",
+      "indonesian": "akan",
+      "english": "will, going to",
+      "pos": "adverb",
+      "registerNotes": "Akan marks the future, mostly in careful speech and writing: Besok saya akan ke Jakarta. In conversation mau or nanti usually do the job.",
+      "audio": "audio/id/words/w-akan.mp3",
+      "tags": [
+        "essential",
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-di",
+      "indonesian": "di",
+      "english": "at, in, on (where something is)",
+      "pos": "preposition",
+      "registerNotes": "Di is for where someone or something is: di rumah (at home), di Bali. Di mana? is Where?",
+      "pitfallNote": "Di for being somewhere, ke for going there: Saya mau ke pasar, not Saya mau di pasar.",
+      "audio": "audio/id/words/w-di.mp3",
+      "tags": [
+        "essential",
+        "places"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ke",
+      "indonesian": "ke",
+      "english": "to (a place)",
+      "pos": "preposition",
+      "registerNotes": "Ke is for movement towards somewhere: ke pasar (to the market), ke sana (there). Ke mana? is Where to?, and Mau ke mana? is a common greeting.",
+      "audio": "audio/id/words/w-ke.mp3",
+      "tags": [
+        "essential",
+        "places"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dari",
+      "indonesian": "dari",
+      "english": "from",
+      "pos": "preposition",
+      "registerNotes": "Dari for where from: Saya dari Selandia Baru (I'm from New Zealand). Dari mana? (Where from?) is asked in almost every first conversation.",
+      "audio": "audio/id/words/w-dari.mp3",
+      "tags": [
+        "essential",
+        "places"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dan",
+      "indonesian": "dan",
+      "english": "and",
+      "pos": "conjunction",
+      "registerNotes": "Joins words and sentences, as in English: nasi dan ayam. With people you go somewhere with, it's dengan or sama: Saya pergi sama teman.",
+      "audio": "audio/id/words/w-dan.mp3",
+      "tags": [
+        "essential",
+        "connectors"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tapi",
+      "indonesian": "tapi",
+      "english": "but",
+      "pos": "conjunction",
+      "registerNotes": "The spoken form of tetapi, which is for writing: Enak, tapi mahal (Tasty, but expensive).",
+      "audio": "audio/id/words/w-tapi.mp3",
+      "tags": [
+        "essential",
+        "connectors"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-karena",
+      "indonesian": "karena",
+      "english": "because",
+      "pos": "conjunction",
+      "registerNotes": "The reason follows karena: Saya pulang karena capek. Friends often say soalnya instead.",
+      "audio": "audio/id/words/w-karena.mp3",
+      "tags": [
+        "essential",
+        "connectors"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-jadi",
+      "indonesian": "jadi",
+      "english": "so; to become",
+      "pos": "conjunction",
+      "registerNotes": "So, for a result: Hujan, jadi kami di rumah. As a verb it means become, or go ahead: Jadi pergi? (Are we still going?)",
+      "audio": "audio/id/words/w-jadi.mp3",
+      "tags": [
+        "essential",
+        "connectors"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kalau",
+      "indonesian": "kalau",
+      "english": "if, when",
+      "pos": "conjunction",
+      "registerNotes": "Kalau hujan, kita naik taksi (If it rains, we'll take a taxi). Kalau saya… also means As for me…",
+      "audio": "audio/id/words/w-kalau.mp3",
+      "tags": [
+        "essential",
+        "connectors"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-juga",
+      "indonesian": "juga",
+      "english": "also, too",
+      "pos": "adverb",
+      "registerNotes": "Juga comes after the word it adds to: Saya juga (Me too), Saya mau teh juga (I'd like tea too).",
+      "audio": "audio/id/words/w-juga.mp3",
+      "tags": [
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sangat",
+      "indonesian": "sangat",
+      "english": "very",
+      "pos": "adverb",
+      "registerNotes": "Sangat goes before the describing word (sangat enak); sekali goes after it (enak sekali), and friends say banget (enak banget). All three mean very.",
+      "audio": "audio/id/words/w-sangat.mp3",
+      "tags": [
+        "essential"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

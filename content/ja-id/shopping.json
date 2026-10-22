@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "id": "shopping",
+  "title": "買い物・値段交渉",
+  "order": 6,
+  "description": "市場、屋台、お店で。値段の聞き方、笑顔での値段交渉、サイズや色、カードや QRIS での支払いまで。お店の人には Bu や Pak、若い人には Mbak や Mas と呼びかけます。",
+  "phrases": [
+    {
+      "id": "sho-01",
+      "indonesian": "Yang ini berapa, Bu?",
+      "japanese": "これ、いくらですか？",
+      "registerNotes": "指さしながら聞きます。Berapa harganya?（値段はいくらですか？）は省略しない言い方。Bu は女性への呼びかけで、敬意を込めた「〜さん」のような感じです。男性には Pak、若い人には Mbak（女性）や Mas（男性）。",
+      "audio": "audio/id/sho-01.mp3",
+      "tags": [
+        "買い物",
+        "値段",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-02",
+      "indonesian": "Boleh kurang?",
+      "japanese": "少し安くなりませんか？",
+      "registerNotes": "値段交渉を始める時の定番で、直訳は「少なくしてもいいですか？」。Bisa kurang? も同じ意味で、Kurang sedikit, ya?（もう少しだけ、ね？）はさらにやわらかい言い方です。",
+      "cultureNote": "市場や屋台、お土産屋では、笑顔で値段交渉をするのが普通です。スーパーやミニマーケット、ショッピングモールのように値札が付いている店は定価です。",
+      "audio": "audio/id/sho-02.mp3",
+      "tags": [
+        "買い物",
+        "値段交渉",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-03",
+      "indonesian": "Wah, mahal sekali.",
+      "japanese": "わあ、ずいぶん高いですね。",
+      "registerNotes": "値段交渉のお決まりのひとこと。文句ではなく、笑顔で軽く言います。Terlalu mahal（高すぎます）はもっとはっきりした言い方です。",
+      "audio": "audio/id/sho-03.mp3",
+      "tags": [
+        "買い物",
+        "値段交渉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-04",
+      "indonesian": "Kalau seratus ribu, boleh?",
+      "japanese": "10万ルピアでどうですか？",
+      "registerNotes": "Kalau（もし〜なら）＋自分の希望額が、値段を提案する時の決まった形です。値段は千ルピア単位で言います：lima puluh ribu（5万）、seratus ribu（10万）。",
+      "cultureNote": "最初の言い値よりかなり低い額から始めて、間で折り合うのが普通です。和やかにいきましょう。数千ルピアの差は、あなたより売り手にとってずっと大きな意味があります。",
+      "audio": "audio/id/sho-04.mp3",
+      "tags": [
+        "買い物",
+        "値段交渉"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "インドネシア語には「万」の単位がなく、ribu（千）で数えます。10万は seratus ribu（100の千）、5万は lima puluh ribu（50の千）。桁を取り違えないように注意しましょう。"
+    },
+    {
+      "id": "sho-05",
+      "indonesian": "Harga pasnya berapa?",
+      "japanese": "ぎりぎりいくらになりますか？",
+      "registerNotes": "最初から本当の値段を聞く言い方です。Sudah harga pas（もうぎりぎりの値段です）と言われたら、それ以上の値引きはありません。",
+      "pitfallNote": "harga pas（ぎりぎりの値段・定価）と uang pas（お釣りのいらない、ちょうどの金額）は別物です。",
+      "audio": "audio/id/sho-05.mp3",
+      "tags": [
+        "買い物",
+        "値段交渉"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-06",
+      "indonesian": "Lihat-lihat saja, ya.",
+      "japanese": "見ているだけです。",
+      "registerNotes": "お店の人に Cari apa?（何をお探しですか？）と声をかけられた時の、感じのいい返事。lihat を2回重ねると「ぶらぶら見ている」感じになります。",
+      "audio": "audio/id/sho-06.mp3",
+      "tags": [
+        "買い物",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-07",
+      "indonesian": "Ada ukuran yang lebih besar?",
+      "japanese": "もっと大きいサイズはありますか？",
+      "registerNotes": "小さいサイズは lebih kecil。現地の服はサイズが小さめのことが多いので、表示だけで決めずに試着しましょう。",
+      "pitfallNote": "lebih は「もっと・より」で、形容詞の前に置くだけ：lebih besar（もっと大きい）、lebih murah（もっと安い）。ukuran yang lebih besar（もっと大きいサイズ）は日本語と逆で、名詞 ukuran が先に来ます。",
+      "audio": "audio/id/sho-07.mp3",
+      "tags": [
+        "買い物",
+        "服"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-08",
+      "indonesian": "Ada warna lain?",
+      "japanese": "ほかの色はありますか？",
+      "registerNotes": "欲しい色が決まっていれば、色の名前を言いましょう：Ada yang hitam?（黒いのはありますか？）",
+      "audio": "audio/id/sho-08.mp3",
+      "tags": [
+        "買い物",
+        "服"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-09",
+      "indonesian": "Boleh dicoba?",
+      "japanese": "試してもいいですか？（試着など）",
+      "registerNotes": "服や靴の試着に。市場では果物の試食にも使えます。試着室は kamar pas です。",
+      "audio": "audio/id/sho-09.mp3",
+      "tags": [
+        "買い物",
+        "服"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-10",
+      "indonesian": "Saya ambil yang ini.",
+      "japanese": "これにします。",
+      "registerNotes": "ambil（取る）で「これを買います」の意味になります。お店でも、値段交渉の締めくくりにも使います。",
+      "cultureNote": "値段に合意したら買うのが礼儀です。売り手が承知したあとで立ち去るのはマナー違反なので、本当に欲しい物だけ交渉しましょう。",
+      "audio": "audio/id/sho-10.mp3",
+      "tags": [
+        "買い物",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-11",
+      "indonesian": "Bisa bayar pakai kartu?",
+      "japanese": "カードで払えますか？",
+      "registerNotes": "市場やワルン（小さな食堂・商店）、小さな店はたいてい現金のみ（tunai）なので、小額のお札を持っておきましょう。",
+      "audio": "audio/id/sho-11.mp3",
+      "tags": [
+        "買い物",
+        "支払い"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sho-12",
+      "indonesian": "Bisa bayar pakai QRIS?",
+      "japanese": "QRIS で払えますか？",
+      "registerNotes": "QRIS は「クリス」のように読みます。",
+      "cultureNote": "QRIS はインドネシア全国共通の決済用QRコードで、多くのレジや屋台に印刷して掲示されています。旅行者が使うにはたいていインドネシアの電子マネーや銀行のアプリが必要なので、現金も持っておきましょう。",
+      "audio": "audio/id/sho-12.mp3",
+      "audioHint": "Bisa bayar pakai kris?",
+      "tags": [
+        "買い物",
+        "支払い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sho-13",
+      "indonesian": "Boleh minta kantong plastik?",
+      "japanese": "レジ袋をもらえますか？",
+      "registerNotes": "薄いレジ袋は、ふだんは kresek と言います。",
+      "cultureNote": "バリやジャカルタなど多くの地域で、店での使い捨てレジ袋が禁止されています。買い物袋（tas belanja）を持ち歩きましょう。",
+      "audio": "audio/id/sho-13.mp3",
+      "tags": [
+        "買い物"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

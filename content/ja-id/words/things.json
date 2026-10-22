@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "id": "words-things",
+  "title": "身の回りのもの",
+  "description": "家や外出先で使う身近なもの：家と部屋、かばんの中身、移動の手段。",
+  "items": [
+    {
+      "id": "w-rumah",
+      "indonesian": "rumah",
+      "japanese": "家",
+      "pos": "noun",
+      "registerNotes": "di rumah は「家で、家に」。複合語にもよく出てきます：rumah makan（食堂）、rumah sakit（病院、直訳は「病気の家」）。",
+      "audio": "audio/id/words/w-rumah.mp3",
+      "tags": [
+        "家",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kamar",
+      "indonesian": "kamar",
+      "japanese": "部屋、寝室",
+      "pos": "noun",
+      "registerNotes": "ふつうは寝る部屋のことで、ホテルの部屋も kamar です：kamar nomor dua（2号室）。居間は ruang tamu。",
+      "audio": "audio/id/words/w-kamar.mp3",
+      "tags": [
+        "家",
+        "ホテル"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pintu",
+      "indonesian": "pintu",
+      "japanese": "ドア、戸",
+      "pos": "noun",
+      "registerNotes": "表示では pintu masuk（入口）、pintu keluar（出口）。",
+      "audio": "audio/id/words/w-pintu.mp3",
+      "tags": [
+        "家"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-meja",
+      "indonesian": "meja",
+      "japanese": "テーブル；机",
+      "pos": "noun",
+      "registerNotes": "レストランでは meja untuk dua orang（2人用のテーブル）。",
+      "audio": "audio/id/words/w-meja.mp3",
+      "tags": [
+        "家"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kursi",
+      "indonesian": "kursi",
+      "japanese": "いす、座席",
+      "pos": "noun",
+      "registerNotes": "バスや飛行機の座席も kursi。Kursi ini kosong?（この席は空いていますか？）",
+      "audio": "audio/id/words/w-kursi.mp3",
+      "tags": [
+        "家"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tas",
+      "indonesian": "tas",
+      "japanese": "かばん",
+      "pos": "noun",
+      "audio": "audio/id/words/w-tas.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-uang",
+      "indonesian": "uang",
+      "japanese": "お金",
+      "pos": "noun",
+      "registerNotes": "uang kembalian はおつり、uang pas はちょうどの金額。友達同士では duit。",
+      "audio": "audio/id/words/w-uang.mp3",
+      "tags": [
+        "お金",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hp",
+      "indonesian": "HP",
+      "japanese": "携帯電話、スマホ",
+      "pos": "noun",
+      "registerNotes": "「ハーペー」と読み、handphone の略です。nomor HP は携帯の番号。正式な言葉は ponsel。",
+      "audio": "audio/id/words/w-hp.mp3",
+      "audioHint": "ha pe",
+      "tags": [
+        "もの",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kunci",
+      "indonesian": "kunci",
+      "japanese": "鍵；錠",
+      "pos": "noun",
+      "registerNotes": "kunci kamar は部屋の鍵。「鍵をかける」という動詞にもなります：Kunci pintunya, ya（ドアに鍵をかけてね）。",
+      "audio": "audio/id/words/w-kunci.mp3",
+      "tags": [
+        "もの",
+        "家"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-buku",
+      "indonesian": "buku",
+      "japanese": "本；ノート",
+      "pos": "noun",
+      "audio": "audio/id/words/w-buku.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 1,
+      "registerNotes": "日本語と同じく複数形はなく、buku は1冊でも何冊でも buku です。数は前に置き、「冊」のような助数詞なしで dua buku（本2冊）と言えます。"
+    },
+    {
+      "id": "w-mobil",
+      "indonesian": "mobil",
+      "japanese": "車",
+      "pos": "noun",
+      "registerNotes": "naik mobil は「車で行く」。naik は、どんな乗り物に「乗る」にも使う動詞です。",
+      "audio": "audio/id/words/w-mobil.mp3",
+      "tags": [
+        "交通"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-motor",
+      "indonesian": "motor",
+      "japanese": "バイク、スクーター",
+      "pos": "noun",
+      "registerNotes": "sepeda motor の略で、いちばん普通の移動手段です。ojek はバイクタクシー。",
+      "audio": "audio/id/words/w-motor.mp3",
+      "tags": [
+        "交通"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-air",
+      "indonesian": "air",
+      "japanese": "水",
+      "pos": "noun",
+      "pitfallNote": "a-ir と2音節で読みます。英語の air（エアー）とは関係ありません。飲み水は air putih、ペットボトルの水なら air mineral と頼みます。",
+      "audio": "audio/id/words/w-air.mp3",
+      "tags": [
+        "もの",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-baju",
+      "indonesian": "baju",
+      "japanese": "服；シャツ、上着",
+      "pos": "noun",
+      "registerNotes": "上着1枚にも、服全体にも使います：ganti baju（着替える）。baju batik はバティックのシャツです。",
+      "audio": "audio/id/words/w-baju.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sepatu",
+      "indonesian": "sepatu",
+      "japanese": "靴",
+      "pos": "noun",
+      "cultureNote": "日本と同じく、家やモスクに入る前には靴を脱ぎます。入口に靴やサンダルが並んでいたら、それが合図です。",
+      "audio": "audio/id/words/w-sepatu.mp3",
+      "tags": [
+        "服"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-barang",
+      "indonesian": "barang",
+      "japanese": "もの、持ち物、荷物；商品",
+      "pos": "noun",
+      "registerNotes": "barang saya は「私の持ち物、荷物」。お店では、barang は売り物の商品のことです。",
+      "audio": "audio/id/words/w-barang.mp3",
+      "tags": [
+        "もの"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kamar-mandi",
+      "indonesian": "kamar mandi",
+      "japanese": "浴室、バスルーム",
+      "pos": "noun",
+      "registerNotes": "体を洗う部屋で、たいていトイレも中にあります。外出先では Toiletnya di mana? か Kamar kecilnya di mana?（トイレはどこですか？）と聞きます。",
+      "cultureNote": "床はたいてい濡れていて、トイレの横には水を流すシャワーや手おけがあります。トイレットペーパーはないことがよくあります。",
+      "audio": "audio/id/words/w-kamar-mandi.mp3",
+      "tags": [
+        "家",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tempat-tidur",
+      "indonesian": "tempat tidur",
+      "japanese": "ベッド",
+      "pos": "noun",
+      "registerNotes": "直訳は「寝る場所」。マットレスの kasur も、ベッドの意味でよく使います。",
+      "audio": "audio/id/words/w-tempat-tidur.mp3",
+      "tags": [
+        "家"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-jalan",
+      "indonesian": "jalan",
+      "japanese": "道、通り",
+      "pos": "noun",
+      "registerNotes": "通りの名前は Jalan で始まり、Jl. と書きます：Jalan Sudirman。話し言葉では「歩く、行く」という動詞にもなります：jalan kaki（歩いて行く）。",
+      "audio": "audio/id/words/w-jalan.mp3",
+      "tags": [
+        "場所",
+        "交通"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-toko",
+      "indonesian": "toko",
+      "japanese": "店",
+      "pos": "noun",
+      "registerNotes": "toko buku は本屋、toko roti はパン屋。家族でやっている小さな店や屋台は warung です。",
+      "audio": "audio/id/words/w-toko.mp3",
+      "tags": [
+        "場所",
+        "買い物"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

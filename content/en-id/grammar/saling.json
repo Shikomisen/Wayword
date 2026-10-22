@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-saling",
+  "connector": "saling, sendiri",
+  "gloss": "each other; by yourself, your own",
+  "title": "saling and sendiri",
+  "pattern": "saling + verb (each other) · verb + sendiri (by yourself) · noun + sendiri (your own)",
+  "explanation": "saling goes before a verb to make it mutual: Kami saling membantu (We help each other). English puts 'each other' after the verb, but Indonesian puts saling in front and needs nothing after. sendiri after a verb means by yourself, on your own: Saya pergi sendiri (I'm going on my own), Dia tinggal sendiri (She lives alone). After a noun it means your own: kamar sendiri (a room of your own), rumah sendiri (a home of your own). After a person it's '-self', for emphasis: Saya sendiri belum pernah ke sana (I've never been there myself).",
+  "natural": "Saling kenal (to know each other) comes up whenever people are introduced: Sudah saling kenal? Travelling alone, you'll often be asked Sendiri saja? or Sendirian? (On your own?), usually out of friendly concern.",
+  "stiff": "satu sama lain also means each other, but it sounds written; in conversation, saling is what people say. And sendiri doesn't mean lonely: for that the word is kesepian.",
+  "examples": [
+    {
+      "id": "gx-saling-1",
+      "indonesian": "Tetangga di sini saling membantu.",
+      "english": "The neighbours here help each other out.",
+      "chunks": [
+        {
+          "t": "Tetangga ",
+          "w": "w-tetangga"
+        },
+        {
+          "t": "di sini ",
+          "w": "w-di"
+        },
+        {
+          "t": "saling "
+        },
+        {
+          "t": "membantu.",
+          "w": "w-membantu"
+        }
+      ],
+      "gap": {
+        "before": "Tetangga di sini ",
+        "answer": "saling",
+        "after": " membantu.",
+        "options": [
+          "saling",
+          "sendiri",
+          "juga"
+        ],
+        "why": "'Each other' is saling, before the verb."
+      },
+      "cultureNote": "Gotong royong, neighbours pitching in together, is a value Indonesians are proud of, from cleaning the street to helping at a wedding.",
+      "audio": "audio/id/grammar/gx-saling-1.mp3",
+      "tags": [
+        "grammar",
+        "saling"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-saling-2",
+      "indonesian": "Saya datang sendiri.",
+      "english": "I came on my own.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "datang ",
+          "w": "w-datang"
+        },
+        {
+          "t": "sendiri."
+        }
+      ],
+      "gap": {
+        "before": "Saya datang ",
+        "answer": "sendiri",
+        "after": ".",
+        "options": [
+          "sendiri",
+          "saling",
+          "saja"
+        ],
+        "why": "After a verb, sendiri means on your own."
+      },
+      "registerNotes": "A reply to Sama siapa? (Who are you here with?). Sendirian stresses that nobody else came at all.",
+      "audio": "audio/id/grammar/gx-saling-2.mp3",
+      "tags": [
+        "grammar",
+        "saling"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-saling-3",
+      "indonesian": "Mereka sudah lama saling kenal.",
+      "english": "They've known each other for a long time.",
+      "chunks": [
+        {
+          "t": "Mereka ",
+          "w": "w-mereka"
+        },
+        {
+          "t": "sudah lama ",
+          "w": "w-lama"
+        },
+        {
+          "t": "saling "
+        },
+        {
+          "t": "kenal."
+        }
+      ],
+      "gap": {
+        "before": "Mereka sudah lama ",
+        "answer": "saling",
+        "after": " kenal.",
+        "options": [
+          "saling",
+          "sendiri",
+          "sama"
+        ],
+        "why": "Knowing each other is mutual, so saling goes before kenal."
+      },
+      "audio": "audio/id/grammar/gx-saling-3.mp3",
+      "tags": [
+        "grammar",
+        "saling"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-saling-4",
+      "indonesian": "Sekarang saya sudah punya kamar sendiri.",
+      "english": "I've got a room of my own now.",
+      "chunks": [
+        {
+          "t": "Sekarang ",
+          "w": "w-sekarang"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah punya ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "kamar ",
+          "w": "w-kamar"
+        },
+        {
+          "t": "sendiri."
+        }
+      ],
+      "gap": {
+        "before": "Sekarang saya sudah punya kamar ",
+        "answer": "sendiri",
+        "after": ".",
+        "options": [
+          "sendiri",
+          "saya",
+          "saling"
+        ],
+        "why": "After a noun, sendiri means your own; kamar saya would just be 'my room'."
+      },
+      "audio": "audio/id/grammar/gx-saling-4.mp3",
+      "tags": [
+        "grammar",
+        "saling"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

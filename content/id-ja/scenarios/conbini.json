@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "id": "conbini",
+  "title": "Bayar di kasir konbini",
+  "category": "shopping",
+  "setting": "Kamu sudah mengambil bento dan minuman di Lawson, salah satu konbini (minimarket) di Jepang. Sekarang kamu di kasir.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "staff",
+      "japanese": "いらっしゃいませ。",
+      "furigana": [
+        {
+          "b": "いらっしゃいませ。"
+        }
+      ],
+      "romaji": "Irasshaimase.",
+      "indonesian": "Selamat datang.",
+      "audio": "audio/ja/scenario/conbini-n1.mp3",
+      "audioHint": "いらっしゃいませ",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "（軽く会釈する）",
+          "romaji": "(a small nod)",
+          "indonesian": "(Mengangguk sedikit dan menaruh belanjaan di meja kasir.)",
+          "feedback": "Tepat. いらっしゃいませ adalah salam dari staf untuk pelanggan, dan tidak perlu dibalas dengan kata-kata. Sama seperti sapaan kasir minimarket di Indonesia: pelanggan cukup tersenyum.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "gre-02",
+          "quality": "good",
+          "feedback": "Tidak masalah sama sekali: sedikit lebih dari yang perlu, tapi selalu diterima dengan baik.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "いらっしゃいませ。",
+          "romaji": "Irasshaimase.",
+          "indonesian": "Selamat datang. (diucapkan balik ke staf)",
+          "feedback": "Ini langsung ketahuan. Kamu baru saja menyambut staf di toko mereka sendiri. Salam ini hanya diucapkan staf kepada pelanggan.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "staff",
+      "japanese": "お弁当、温めますか。",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "弁当",
+          "r": "べんとう"
+        },
+        {
+          "b": "、"
+        },
+        {
+          "b": "温",
+          "r": "あたた"
+        },
+        {
+          "b": "めますか。"
+        }
+      ],
+      "romaji": "O-bentō, atatamemasu ka.",
+      "indonesian": "Bentonya mau dihangatkan?",
+      "audio": "audio/ja/scenario/conbini-n2.mp3",
+      "audioHint": "おべんとう、あたためますか",
+      "options": [
+        {
+          "phraseId": "gre-07",
+          "quality": "good",
+          "feedback": "Ya, tolong. お願いします saja sudah jawaban yang lengkap dan sopan untuk tawaran apa pun.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "gre-10",
+          "quality": "good",
+          "feedback": "Penolakan yang halus, seperti “tidak usah”. 大丈夫です menolak tanpa いいえ yang terdengar ketus.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "gre-14",
+          "quality": "awkward",
+          "feedback": "Jujur, dan berhasil: staf akan memperagakan microwave. Tapi 温めますか termasuk lima kalimat yang paling sering kamu dengar di Jepang, jadi layak dihafal sampai lancar.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "staff",
+      "japanese": "袋はご利用ですか。",
+      "furigana": [
+        {
+          "b": "袋",
+          "r": "ふくろ"
+        },
+        {
+          "b": "はご"
+        },
+        {
+          "b": "利用",
+          "r": "りよう"
+        },
+        {
+          "b": "ですか。"
+        }
+      ],
+      "romaji": "Fukuro wa go-riyō desu ka.",
+      "indonesian": "Perlu kantong belanja?",
+      "audio": "audio/ja/scenario/conbini-n3.mp3",
+      "audioHint": "ふくろはごりようですか",
+      "options": [
+        {
+          "phraseId": "sho-02",
+          "quality": "good",
+          "feedback": "Jelas dan lengkap. Kantong belanja sekarang berbayar, jadi pertanyaan ini pasti muncul.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "gre-07",
+          "quality": "good",
+          "feedback": "Artinya ya, mau kantong, dan kamu akan dikenai biaya beberapa yen.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "awkward",
+          "feedback": "はい akan dipahami sebagai “ya, pakai kantong”. Tapi menjawab はい saja untuk pertanyaan “mau atau tidak” sering membuatmu tanpa sengaja menyetujui hal yang salah.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "staff",
+      "japanese": "五百八十円になります。",
+      "furigana": [
+        {
+          "b": "五百",
+          "r": "ごひゃく"
+        },
+        {
+          "b": "八十",
+          "r": "はちじゅう"
+        },
+        {
+          "b": "円",
+          "r": "えん"
+        },
+        {
+          "b": "になります。"
+        }
+      ],
+      "romaji": "Gohyaku hachijū en ni narimasu.",
+      "indonesian": "Totalnya 580 yen.",
+      "audio": "audio/ja/scenario/conbini-n4.mp3",
+      "audioHint": "ごひゃくはちじゅうえんになります",
+      "options": [
+        {
+          "phraseId": "num-08",
+          "quality": "good",
+          "feedback": "Kartu bisa dipakai di semua konbini di seluruh Jepang. Saat diminta, tempelkan sendiri kartumu ke mesin pembaca.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "num-22",
+          "quality": "good",
+          "feedback": "Uang pas, diletakkan di nampan, bukan langsung ke tangan kasir. Biasanya ada nampan kecil di meja kasir untuk ini.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "num-05",
+          "quality": "wrong",
+          "feedback": "Kasir baru saja menyebutkan harganya. Bertanya lagi terdengar seperti “saya tidak menangkapnya”. Itu boleh, tapi もう一度お願いします menyampaikannya jauh lebih jelas.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "staff",
+      "japanese": "ありがとうございました。またお越しくださいませ。",
+      "furigana": [
+        {
+          "b": "ありがとうございました。またお"
+        },
+        {
+          "b": "越",
+          "r": "こ"
+        },
+        {
+          "b": "しくださいませ。"
+        }
+      ],
+      "romaji": "Arigatō gozaimashita. Mata o-koshi kudasaimase.",
+      "indonesian": "Terima kasih. Silakan datang kembali.",
+      "audio": "audio/ja/scenario/conbini-n5.mp3",
+      "audioHint": "ありがとうございました。またおこしくださいませ",
+      "options": [
+        {
+          "phraseId": "gre-06",
+          "quality": "good",
+          "feedback": "Transaksinya sudah selesai, jadi bentuk lampau ini paling tepat. “Terima kasih” dalam bahasa Indonesia tidak berubah, tapi bahasa Jepang membedakan ありがとうございます dan ありがとうございました.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-20",
+          "quality": "awkward",
+          "feedback": "“Sama-sama” kepada orang yang baru saja melayanimu membalik peran. Cukup ucapkan terima kasih, atau tidak berkata apa-apa.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "romaji": "",
+      "indonesian": "Selesai. Percakapan ini hampir sama persis di setiap konbini di Jepang: kuasai sekali sampai lancar, dan urusan ini beres untuk selamanya.",
+      "end": true,
+      "options": []
+    }
+  }
+}

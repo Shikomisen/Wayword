@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "opinions",
+  "title": "Opinions & Agreeing",
+  "order": 14,
+  "description": "Giving your view, agreeing, and disagreeing the Indonesian way: gently, leaving the other person room. Kurang, agak and sepertinya do a lot of the work.",
+  "phrases": [
+    {
+      "id": "opi-01",
+      "indonesian": "Menurut saya, itu ide yang bagus.",
+      "english": "I think that's a good idea.",
+      "registerNotes": "Menurut saya, 'according to me', is the standard way to give an opinion, at work or at the dinner table. Friends say Menurut aku, or Kalau aku sih.",
+      "audio": "audio/id/opi-01.mp3",
+      "tags": [
+        "opinions",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-02",
+      "indonesian": "Saya rasa begitu.",
+      "english": "I think so.",
+      "registerNotes": "Rasa, 'feel', makes it softer than a firm yes; Saya rasa tidak is 'I don't think so'. Casually, Kayaknya, sih.",
+      "pitfallNote": "Saya kira also means 'I think', but often 'I'd assumed, wrongly': Saya kira kamu sudah pulang (I thought you'd gone home).",
+      "audio": "audio/id/opi-02.mp3",
+      "tags": [
+        "opinions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-03",
+      "indonesian": "Bagaimana menurut Anda?",
+      "english": "What do you think?",
+      "registerNotes": "Friends ask Menurut kamu gimana?",
+      "pitfallNote": "In conversation Anda sounds like a survey or an advert. Use the person's title or name instead: Bagaimana menurut Bapak? Menurut Mbak bagaimana?",
+      "audio": "audio/id/opi-03.mp3",
+      "tags": [
+        "opinions",
+        "asking"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-04",
+      "indonesian": "Saya setuju.",
+      "english": "I agree.",
+      "registerNotes": "Add dengan and the person: Saya setuju dengan Ibu. Warmly, Saya setuju sekali; among friends, just Setuju.",
+      "audio": "audio/id/opi-04.mp3",
+      "tags": [
+        "opinions",
+        "agreeing",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-05",
+      "indonesian": "Saya kurang setuju.",
+      "english": "I don't really agree.",
+      "registerNotes": "Kurang, 'less', turns a flat no into 'not quite', which is how disagreement usually sounds in polite Indonesian. Saya tidak setuju is clear but blunt.",
+      "cultureNote": "Open disagreement, especially with someone older, can embarrass both sides; softening it is courtesy, not weakness.",
+      "audio": "audio/id/opi-05.mp3",
+      "tags": [
+        "opinions",
+        "disagreeing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-06",
+      "indonesian": "Betul juga.",
+      "english": "That's true. Good point.",
+      "registerNotes": "For conceding a point you hadn't thought of; juga is 'too', as in 'that's right as well'. Friends say Bener juga, ya.",
+      "audio": "audio/id/opi-06.mp3",
+      "tags": [
+        "opinions",
+        "agreeing"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-07",
+      "indonesian": "Masuk akal.",
+      "english": "That makes sense.",
+      "registerNotes": "Literally 'it enters the mind'. Tidak masuk akal is 'that makes no sense' or 'that's absurd'.",
+      "audio": "audio/id/opi-07.mp3",
+      "tags": [
+        "opinions",
+        "agreeing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-08",
+      "indonesian": "Tergantung situasinya.",
+      "english": "It depends on the situation.",
+      "registerNotes": "Tergantung takes the thing straight after it: tergantung harganya, tergantung cuacanya. On its own, Tergantung is a complete answer.",
+      "pitfallNote": "Don't translate 'on' as di: tergantung di means hanging somewhere, as a picture hangs on a wall.",
+      "audio": "audio/id/opi-08.mp3",
+      "tags": [
+        "opinions"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-09",
+      "indonesian": "Saya tidak terlalu yakin.",
+      "english": "I'm not too sure.",
+      "registerNotes": "Honest hesitation without saying no; Saya kurang yakin is just as common. Among friends, Nggak yakin, sih.",
+      "audio": "audio/id/opi-09.mp3",
+      "tags": [
+        "opinions",
+        "unsure"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-10",
+      "indonesian": "Ada benarnya juga, tapi…",
+      "english": "There's some truth in that, but…",
+      "registerNotes": "The polite way into disagreement: grant something first, then give your view. Iya, memang, tapi … (Yes, true, but …) works the same way.",
+      "audio": "audio/id/opi-10.mp3",
+      "tags": [
+        "opinions",
+        "disagreeing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-11",
+      "indonesian": "Bukannya jelek, tapi agak mahal.",
+      "english": "It's not that it's bad, it's just a bit expensive.",
+      "registerNotes": "Bukannya … tapi … sets aside the harsh reading before the real point, which softens criticism of food, a plan or something someone bought.",
+      "audio": "audio/id/opi-11.mp3",
+      "tags": [
+        "opinions",
+        "softening"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "opi-12",
+      "indonesian": "Maaf, saya agak berbeda pendapat.",
+      "english": "Sorry, I see it a bit differently.",
+      "registerNotes": "For meetings and serious discussions: the apology and agak (a bit) take the edge off. In speech you'll also hear the shorter beda pendapat.",
+      "audio": "audio/id/opi-12.mp3",
+      "tags": [
+        "opinions",
+        "disagreeing"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "opi-13",
+      "indonesian": "Saya pribadi lebih suka yang ini.",
+      "english": "Personally, I prefer this one.",
+      "registerNotes": "Pribadi, 'personally', frames it as your taste rather than a judgement, which keeps it light. Kalau saya … (as for me …) does the same.",
+      "audio": "audio/id/opi-13.mp3",
+      "tags": [
+        "opinions",
+        "preferences"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

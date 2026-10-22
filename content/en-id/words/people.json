@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "id": "words-people",
+  "title": "People & Family",
+  "description": "The people around you: family, partners, friends and guests. Family comes up early in Indonesian small talk, so you'll use these straight away.",
+  "items": [
+    {
+      "id": "w-orang",
+      "indonesian": "orang",
+      "english": "person, people",
+      "pos": "noun",
+      "registerNotes": "Also for nationality: orang Indonesia (an Indonesian), orang Selandia Baru (a New Zealander). After a number it counts people: dua orang, two people.",
+      "audio": "audio/id/words/w-orang.mp3",
+      "tags": [
+        "people",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-laki-laki",
+      "indonesian": "laki-laki",
+      "english": "man; male",
+      "pos": "noun",
+      "registerNotes": "Signs and forms use the more formal pria (look for it on toilet doors); friends say cowok. Anak laki-laki is a son or a boy.",
+      "audio": "audio/id/words/w-laki-laki.mp3",
+      "tags": [
+        "people"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-perempuan",
+      "indonesian": "perempuan",
+      "english": "woman; female",
+      "pos": "noun",
+      "registerNotes": "Signs and forms use the more formal wanita (look for it on toilet doors); friends say cewek. Anak perempuan is a daughter or a girl.",
+      "audio": "audio/id/words/w-perempuan.mp3",
+      "tags": [
+        "people"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-anak",
+      "indonesian": "anak",
+      "english": "child; son, daughter",
+      "pos": "noun",
+      "registerNotes": "Anak saya is my child, whatever their age.",
+      "cultureNote": "Sudah punya anak? (Do you have children yet?) is an ordinary question soon after meeting someone, not a nosy one.",
+      "audio": "audio/id/words/w-anak.mp3",
+      "tags": [
+        "family",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ibu",
+      "indonesian": "ibu",
+      "english": "mother; Mrs, ma'am",
+      "pos": "noun",
+      "registerNotes": "Capitalised, Ibu (or Bu for short) is how you address any grown woman politely: Terima kasih, Bu. With a woman you don't know, use it instead of 'you': Ibu tinggal di sini? (Do you live here?)",
+      "audio": "audio/id/words/w-ibu.mp3",
+      "tags": [
+        "family",
+        "address"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bapak",
+      "indonesian": "bapak",
+      "english": "father; Mr, sir",
+      "pos": "noun",
+      "registerNotes": "Capitalised, Bapak (or Pak for short) is how you address any grown man politely: Permisi, Pak. With a man you don't know, use it instead of 'you': Bapak dari mana? (Where are you from?)",
+      "audio": "audio/id/words/w-bapak.mp3",
+      "tags": [
+        "family",
+        "address"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ayah",
+      "indonesian": "ayah",
+      "english": "father, dad",
+      "pos": "noun",
+      "registerNotes": "The usual word for talking about someone's father: ayah saya, my father. Bapak means father too, but you'll mostly hear it as a way of addressing men.",
+      "audio": "audio/id/words/w-ayah.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kakak",
+      "indonesian": "kakak",
+      "english": "older brother, older sister",
+      "pos": "noun",
+      "pitfallNote": "There's no word that means just 'brother' or 'sister': kakak is older and adik younger, of either sex. Add laki-laki or perempuan only if it matters: kakak perempuan, older sister.",
+      "cultureNote": "Shortened to Kak, it's a friendly, polite way to address a young adult, and shop and café staff often use it with customers.",
+      "audio": "audio/id/words/w-kakak.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-adik",
+      "indonesian": "adik",
+      "english": "younger brother, younger sister",
+      "pos": "noun",
+      "registerNotes": "Adik laki-laki is a younger brother, adik perempuan a younger sister. Shortened to Dik (often said Dek), it's how adults address a child or a much younger stranger.",
+      "audio": "audio/id/words/w-adik.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-suami",
+      "indonesian": "suami",
+      "english": "husband",
+      "pos": "noun",
+      "cultureNote": "Sudah menikah? (Are you married?) is an ordinary question in a first conversation. If you're not, the polite answer is Belum (not yet) rather than tidak.",
+      "audio": "audio/id/words/w-suami.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-istri",
+      "indonesian": "istri",
+      "english": "wife",
+      "pos": "noun",
+      "audio": "audio/id/words/w-istri.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-teman",
+      "indonesian": "teman",
+      "english": "friend",
+      "pos": "noun",
+      "registerNotes": "Also someone you share something with: teman kerja (a colleague), teman sekolah (a schoolmate). In casual speech it's often temen.",
+      "audio": "audio/id/words/w-teman.mp3",
+      "tags": [
+        "people",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pacar",
+      "indonesian": "pacar",
+      "english": "boyfriend, girlfriend",
+      "pos": "noun",
+      "registerNotes": "One word for either, so pacar saya can be my boyfriend or my girlfriend. Sudah punya pacar? (Have you got a boyfriend/girlfriend?) is a common, often teasing question.",
+      "audio": "audio/id/words/w-pacar.mp3",
+      "tags": [
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-keluarga",
+      "indonesian": "keluarga",
+      "english": "family",
+      "pos": "noun",
+      "cultureNote": "Family is a big part of small talk: expect questions about your parents, brothers and sisters, partner and children soon after meeting, and it's friendly to ask back.",
+      "audio": "audio/id/words/w-keluarga.mp3",
+      "tags": [
+        "family",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-nenek",
+      "indonesian": "nenek",
+      "english": "grandmother",
+      "pos": "noun",
+      "registerNotes": "Many families say oma and opa instead, from Dutch, and Javanese families often say eyang for either grandparent.",
+      "audio": "audio/id/words/w-nenek.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kakek",
+      "indonesian": "kakek",
+      "english": "grandfather",
+      "pos": "noun",
+      "audio": "audio/id/words/w-kakek.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bayi",
+      "indonesian": "bayi",
+      "english": "baby",
+      "pos": "noun",
+      "audio": "audio/id/words/w-bayi.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tamu",
+      "indonesian": "tamu",
+      "english": "guest, visitor",
+      "pos": "noun",
+      "cultureNote": "A guest is always offered a drink. Wait until your host says Silakan diminum (Please, have a drink), then have at least a sip.",
+      "audio": "audio/id/words/w-tamu.mp3",
+      "tags": [
+        "people",
+        "visiting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-nama",
+      "indonesian": "nama",
+      "english": "name",
+      "pos": "noun",
+      "registerNotes": "Nama saya … is 'My name is …'. To ask politely: Namanya siapa? or, to a woman, Nama Ibu siapa?",
+      "pitfallNote": "For a person's name the question word is siapa (who), not apa. Namanya apa? is how you ask what a thing is called.",
+      "cultureNote": "Many Indonesians have only one name, with no family name.",
+      "audio": "audio/id/words/w-nama.mp3",
+      "tags": [
+        "people",
+        "essential"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "id": "con-atau",
+  "connector": "atau",
+  "gloss": "or",
+  "title": "atau — or",
+  "pattern": "A atau B? · … atau tidak?",
+  "explanation": "atau offers a choice between two things or two actions: teh atau kopi?, hari ini atau besok? Staff ask this way all the time, so listen for it: Pakai sambal atau tidak? — With chilli sauce or without? Putting atau tidak at the end (casual atau nggak, or just nggak) turns any question into or not?: Mau ikut atau nggak? — Do you want to come or not?",
+  "natural": "Choices, polite or casual. In casual speech people often say apa instead of atau in a choice question: Mau teh apa kopi?",
+  "stiff": "Ending your own question with atau tidak? can sound pushy, like or not? in English. With someone you don't know, just ask with a rising tone: Bapak mau ikut?",
+  "examples": [
+    {
+      "id": "cx-atau-1",
+      "indonesian": "Mau teh atau kopi?",
+      "english": "Would you like tea or coffee?",
+      "chunks": [
+        {
+          "t": "Mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "teh ",
+          "w": "w-teh"
+        },
+        {
+          "t": "atau "
+        },
+        {
+          "t": "kopi?",
+          "w": "w-kopi"
+        }
+      ],
+      "gap": {
+        "before": "Mau teh ",
+        "answer": "atau",
+        "after": " kopi?",
+        "options": [
+          "atau",
+          "dan",
+          "tapi"
+        ],
+        "why": "A choice between two things: atau, or."
+      },
+      "combine": {
+        "a": "Mau teh?",
+        "b": "Mau kopi?",
+        "distractors": [
+          "dan "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-atau-1.mp3",
+      "tags": [
+        "connectors",
+        "atau"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-atau-2",
+      "indonesian": "Pakai sambal atau tidak?",
+      "english": "With chilli sauce or without?",
+      "chunks": [
+        {
+          "t": "Pakai "
+        },
+        {
+          "t": "sambal ",
+          "w": "w-sambal"
+        },
+        {
+          "t": "atau "
+        },
+        {
+          "t": "tidak?",
+          "w": "w-tidak"
+        }
+      ],
+      "gap": {
+        "before": "Pakai sambal ",
+        "answer": "atau",
+        "after": " tidak?",
+        "options": [
+          "atau",
+          "dan",
+          "juga"
+        ],
+        "why": "atau tidak at the end asks or not?: with chilli, or without."
+      },
+      "combine": {
+        "a": "Pakai sambal?",
+        "b": "Tidak pakai sambal?",
+        "distractors": [
+          "tapi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-atau-2.mp3",
+      "tags": [
+        "connectors",
+        "atau",
+        "food"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-atau-3",
+      "indonesian": "Mau bayar tunai atau transfer, Pak?",
+      "english": "Would you like to pay in cash or by transfer?",
+      "chunks": [
+        {
+          "t": "Mau bayar ",
+          "w": "w-bayar"
+        },
+        {
+          "t": "tunai ",
+          "w": "w-tunai"
+        },
+        {
+          "t": "atau "
+        },
+        {
+          "t": "transfer, Pak?",
+          "w": "w-transfer"
+        }
+      ],
+      "gap": {
+        "before": "Mau bayar tunai ",
+        "answer": "atau",
+        "after": " transfer, Pak?",
+        "options": [
+          "atau",
+          "dan",
+          "dengan"
+        ],
+        "why": "He's offering two ways to pay, and you pick one: atau."
+      },
+      "combine": {
+        "a": "Mau bayar tunai, Pak?",
+        "b": "Mau transfer, Pak?",
+        "distractors": [
+          "dengan "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-atau-3.mp3",
+      "tags": [
+        "connectors",
+        "atau",
+        "shopping"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-atau-4",
+      "register": "casual",
+      "indonesian": "Kamu mau ikut atau nggak?",
+      "english": "Do you want to come or not?",
+      "chunks": [
+        {
+          "t": "Kamu ",
+          "w": "w-kamu"
+        },
+        {
+          "t": "mau ikut ",
+          "w": "w-mau"
+        },
+        {
+          "t": "atau "
+        },
+        {
+          "t": "nggak?"
+        }
+      ],
+      "gap": {
+        "before": "Kamu mau ikut ",
+        "answer": "atau",
+        "after": " nggak?",
+        "options": [
+          "atau",
+          "tapi",
+          "dan"
+        ],
+        "why": "atau nggak is the casual or not?, pressing a friend for a yes or a no."
+      },
+      "audio": "audio/id/connectors/cx-atau-4.mp3",
+      "tags": [
+        "connectors",
+        "atau",
+        "casual"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

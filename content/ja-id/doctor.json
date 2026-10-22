@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "doctor",
+  "title": "病院・薬局",
+  "order": 16,
+  "description": "クリニックや薬局（apotek）で症状を伝え、薬の飲み方を理解し、聞きたいことを聞くためのひとこと。",
+  "phrases": [
+    {
+      "id": "doc-01",
+      "indonesian": "Saya demam sejak kemarin.",
+      "japanese": "昨日から熱があります。",
+      "registerNotes": "sejak（〜から）は時の前に置きます：sejak tadi malam（昨夜から）、sejak hari Senin（月曜日から）。日本語の「〜から」とは逆の順番です。",
+      "pitfallNote": "「熱がある」に ada は要りません。demam だけで「熱がある」になり、形も変わりません：Saya demam。",
+      "audio": "audio/id/doc-01.mp3",
+      "tags": [
+        "医者",
+        "症状",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "doc-02",
+      "indonesian": "Saya batuk dan pilek.",
+      "japanese": "せきと鼻水が出ます。",
+      "registerNotes": "pilek は鼻かぜ、主に鼻水や鼻づまりのこと。普通のかぜを flu と言う人もいます。",
+      "audio": "audio/id/doc-02.mp3",
+      "tags": [
+        "医者",
+        "症状"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "flu はインフルエンザとは限らず、ただのかぜの意味でもよく使われます。"
+    },
+    {
+      "id": "doc-03",
+      "indonesian": "Saya masuk angin.",
+      "japanese": "かぜぎみで、体がだるいです。",
+      "registerNotes": "誰にでも通じますが、クリニックでは具体的な症状も伝えましょう。",
+      "cultureNote": "masuk angin は直訳で「風が入った」。だるい、寒気がする、お腹が張るなど、なんとなくの不調を表す昔ながらの言葉で、日本語の「風邪」と発想が似ています。よくある家庭療法は kerokan：油を塗った背中をコインでこすり、赤い筋が残ります。",
+      "audio": "audio/id/doc-03.mp3",
+      "tags": [
+        "医者",
+        "症状"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-04",
+      "indonesian": "Saya sakit perut dan diare.",
+      "japanese": "お腹が痛くて、下痢をしています。",
+      "registerNotes": "sakit perut はお腹の痛み全般。医者には diare を使います。もっと品のない mencret も耳にします。",
+      "audio": "audio/id/doc-04.mp3",
+      "tags": [
+        "医者",
+        "症状"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "doc-05",
+      "indonesian": "Kepala saya pusing.",
+      "japanese": "頭がくらくらします。",
+      "registerNotes": "医者や薬剤師にはこう伝え、友達には Pusing だけで。kepala saya は「私の頭」で、持ち主は後ろに来ます。",
+      "pitfallNote": "pusing は「めまい」と「頭痛」の中間のような、頭がぼーっと重い感じ。ただの頭痛なら sakit kepala のほうが正確です。日本語と同じく「頭が痛い（悩む）」の意味もあります：pusing soal uang（お金のことで頭が痛い）。",
+      "audio": "audio/id/doc-05.mp3",
+      "tags": [
+        "医者",
+        "症状"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "doc-06",
+      "indonesian": "Keluhannya apa?",
+      "japanese": "どうされましたか？",
+      "registerNotes": "医者や看護師が最初に聞く質問。keluhan は「訴え」で、問診の「主訴」にあたる言葉です。症状を答えましょう。",
+      "audio": "audio/id/doc-06.mp3",
+      "tags": [
+        "医者",
+        "質問"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-07",
+      "indonesian": "Sudah tiga hari, Dok.",
+      "japanese": "もう3日になります、先生。",
+      "registerNotes": "Sejak kapan?（いつからですか？）や Sudah berapa lama?（どのくらい続いていますか？）への答え。Dok は dokter の略で、日本語の「先生」にあたる呼びかけです。",
+      "audio": "audio/id/doc-07.mp3",
+      "tags": [
+        "医者",
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "doc-08",
+      "indonesian": "Obatnya diminum tiga kali sehari, sesudah makan.",
+      "japanese": "お薬は1日3回、食後に飲んでください。",
+      "registerNotes": "医者や薬剤師に言われる言葉。ラベルにはよく 3 x 1 と書かれます：1日3回、1回1つ。日本語と同じく、錠剤でも minum（飲む）を使います：Sudah minum obat?（薬、飲んだ？）",
+      "audio": "audio/id/doc-08.mp3",
+      "tags": [
+        "医者",
+        "薬",
+        "必須"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-09",
+      "indonesian": "Diminum sebelum atau sesudah makan?",
+      "japanese": "食前ですか、食後ですか？",
+      "registerNotes": "di- の形で薬を主語にしたまま話すのが、飲み方の話のふつうの形です：Diminum berapa kali sehari?（1日何回飲みますか？）",
+      "audio": "audio/id/doc-09.mp3",
+      "tags": [
+        "医者",
+        "薬"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-10",
+      "indonesian": "Obat ini perlu resep dokter?",
+      "japanese": "この薬は処方箋が要りますか？",
+      "registerNotes": "resep は処方箋、そしてレシピの意味もあります。",
+      "cultureNote": "薬局（apotek）では多くの薬が処方箋なしで買え、薬剤師がよく勧めてくれます。抗生物質は建前上、処方箋が必要です。",
+      "audio": "audio/id/doc-10.mp3",
+      "tags": [
+        "医者",
+        "薬局"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-11",
+      "indonesian": "Saya alergi penisilin.",
+      "japanese": "ペニシリンのアレルギーがあります。",
+      "registerNotes": "alergi のすぐ後に原因を置き、「〜の」にあたる言葉は要りません：alergi obat（薬のアレルギー）、alergi udang（エビのアレルギー）。薬を処方される前に伝えましょう。",
+      "audio": "audio/id/doc-11.mp3",
+      "tags": [
+        "医者",
+        "アレルギー"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "doc-12",
+      "indonesian": "Apa ini serius, Dok?",
+      "japanese": "深刻なんでしょうか、先生？",
+      "registerNotes": "文頭の Apa は、話し言葉で「はい・いいえ」の質問の印。日本語の文末の「か」の役目を、文の頭でします。書き言葉では apakah。友達なら Parah, nggak?（ひどいの？）",
+      "audio": "audio/id/doc-12.mp3",
+      "tags": [
+        "医者",
+        "質問"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "doc-13",
+      "indonesian": "Bisa minta surat keterangan sakit, Dok?",
+      "japanese": "診断書をいただけますか、先生？",
+      "registerNotes": "仕事や学校に出すために。略して surat sakit とも言い、クリニックも頼まれ慣れています。",
+      "audio": "audio/id/doc-13.mp3",
+      "tags": [
+        "医者",
+        "書類"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-14",
+      "indonesian": "Perlu kontrol lagi, Dok?",
+      "japanese": "また診てもらいに来たほうがいいですか、先生？",
+      "registerNotes": "診察の終わりに聞きましょう。Dok は Dokter の略で、医者へのふつうの呼びかけです。",
+      "pitfallNote": "kontrol は「コントロール」ではなく、再診のこと：Kontrol minggu depan, ya（来週また来てくださいね）。",
+      "audio": "audio/id/doc-14.mp3",
+      "tags": [
+        "医者",
+        "予約"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

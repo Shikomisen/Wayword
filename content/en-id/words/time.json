@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "id": "words-time",
+  "title": "Time & Days",
+  "description": "Today and tomorrow, the parts of the day, and hours, days, weeks and years. Indonesian verbs don't change for time, so these words do that work instead.",
+  "items": [
+    {
+      "id": "w-hari",
+      "indonesian": "hari",
+      "english": "day",
+      "pos": "noun",
+      "registerNotes": "It comes before a day's name: hari Senin (Monday). Tiga hari is three days.",
+      "audio": "audio/id/words/w-hari.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-minggu",
+      "indonesian": "minggu",
+      "english": "week",
+      "pos": "noun",
+      "pitfallNote": "With a capital M, Minggu is also Sunday, so minggu depan is next week but hari Minggu depan is next Sunday.",
+      "audio": "audio/id/words/w-minggu.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bulan",
+      "indonesian": "bulan",
+      "english": "month; moon",
+      "pos": "noun",
+      "registerNotes": "Bulan ini is this month and bulan depan next month. The months' names are close to English: Januari, Maret, Agustus, Desember.",
+      "audio": "audio/id/words/w-bulan.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tahun",
+      "indonesian": "tahun",
+      "english": "year",
+      "pos": "noun",
+      "registerNotes": "Tahun depan is next year and tahun lalu last year. For age: Umur saya tiga puluh tahun (I'm thirty).",
+      "audio": "audio/id/words/w-tahun.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hari-ini",
+      "indonesian": "hari ini",
+      "english": "today",
+      "pos": "adverb",
+      "registerNotes": "Literally 'this day'. In the same way, minggu ini is this week and tahun ini this year.",
+      "audio": "audio/id/words/w-hari-ini.mp3",
+      "tags": [
+        "time",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-besok",
+      "indonesian": "besok",
+      "english": "tomorrow",
+      "pos": "adverb",
+      "registerNotes": "Besok pagi is tomorrow morning and besok malam tomorrow night. The day after tomorrow is lusa.",
+      "audio": "audio/id/words/w-besok.mp3",
+      "tags": [
+        "time",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kemarin",
+      "indonesian": "kemarin",
+      "english": "yesterday",
+      "pos": "adverb",
+      "pitfallNote": "In speech kemarin often means any recent day, 'the other day', not only yesterday.",
+      "audio": "audio/id/words/w-kemarin.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sekarang",
+      "indonesian": "sekarang",
+      "english": "now; nowadays",
+      "pos": "adverb",
+      "registerNotes": "Sekarang juga means 'right now, this minute'. It also means 'these days': Sekarang saya tinggal di Jakarta.",
+      "audio": "audio/id/words/w-sekarang.mp3",
+      "tags": [
+        "time",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-nanti",
+      "indonesian": "nanti",
+      "english": "later; in a while",
+      "pos": "adverb",
+      "registerNotes": "Nanti saja is 'later, not now', and nanti malam is tonight. It only looks forward: for earlier today, say tadi.",
+      "cultureNote": "Nanti can be minutes or days away. If you need a time, ask Jam berapa?",
+      "audio": "audio/id/words/w-nanti.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pagi",
+      "indonesian": "pagi",
+      "english": "morning",
+      "pos": "noun",
+      "registerNotes": "From dawn until about 11 a.m.: Selamat pagi. After a time it does the work of a.m.: jam tujuh pagi, 7 a.m.",
+      "audio": "audio/id/words/w-pagi.mp3",
+      "tags": [
+        "time",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-siang",
+      "indonesian": "siang",
+      "english": "midday, early afternoon",
+      "pos": "noun",
+      "registerNotes": "From about 11 a.m. to 3 p.m., the hottest part of the day: Selamat siang. Makan siang is lunch.",
+      "audio": "audio/id/words/w-siang.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sore",
+      "indonesian": "sore",
+      "english": "late afternoon",
+      "pos": "noun",
+      "registerNotes": "From about 3 p.m. until dark: Selamat sore. Jam empat sore is 4 p.m.",
+      "pitfallNote": "Nothing to do with English 'sore'. It's two syllables, so-re, with the e as in 'bed'.",
+      "audio": "audio/id/words/w-sore.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-malam",
+      "indonesian": "malam",
+      "english": "evening, night",
+      "pos": "noun",
+      "registerNotes": "From dark, about 6 p.m.: Selamat malam. Makan malam is dinner, and jam delapan malam is 8 p.m.",
+      "audio": "audio/id/words/w-malam.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-jam",
+      "indonesian": "jam",
+      "english": "hour; o'clock; clock, watch",
+      "pos": "noun",
+      "registerNotes": "Jam berapa? asks the time. Tickets and announcements say pukul instead: pukul tujuh.",
+      "pitfallNote": "Order matters: jam tiga is three o'clock, but tiga jam is three hours.",
+      "cultureNote": "Jam karet, 'rubber time', is the half-joking name for times that stretch: social plans often start late.",
+      "audio": "audio/id/words/w-jam.mp3",
+      "tags": [
+        "time",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-menit",
+      "indonesian": "menit",
+      "english": "minute",
+      "pos": "noun",
+      "registerNotes": "Lima menit lagi is 'in five minutes'. Ten past three is jam tiga lewat sepuluh (menit).",
+      "audio": "audio/id/words/w-menit.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-senin",
+      "indonesian": "Senin",
+      "english": "Monday",
+      "pos": "noun",
+      "registerNotes": "Usually with hari: hari Senin. The week runs Senin, Selasa, Rabu, Kamis, Jumat, Sabtu, Minggu.",
+      "audio": "audio/id/words/w-senin.mp3",
+      "tags": [
+        "days"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sabtu",
+      "indonesian": "Sabtu",
+      "english": "Saturday",
+      "pos": "noun",
+      "pitfallNote": "Saturday night is malam Minggu ('Sunday eve'), the big night out; Minggu malam is Sunday night.",
+      "audio": "audio/id/words/w-sabtu.mp3",
+      "tags": [
+        "days"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hari-minggu",
+      "indonesian": "hari Minggu",
+      "english": "Sunday",
+      "pos": "noun",
+      "registerNotes": "Often just Minggu, with a capital M. With a small m, minggu is a week.",
+      "audio": "audio/id/words/w-hari-minggu.mp3",
+      "tags": [
+        "days"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

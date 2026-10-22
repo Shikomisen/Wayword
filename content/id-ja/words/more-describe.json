@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "id": "words-more-describe",
+  "title": "Kata sifat lainnya",
+  "description": "Kata untuk menggambarkan orang, tempat, dan keadaan: penting, terkenal, baik hati, tegas, menarik, membosankan.",
+  "items": [
+    {
+      "id": "w-taisetsu",
+      "japanese": "大切",
+      "furigana": "{大切|たいせつ}",
+      "indonesian": "penting, berharga",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-taisetsu.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-taihen",
+      "japanese": "大変",
+      "furigana": "{大変|たいへん}",
+      "indonesian": "berat, repot; sangat",
+      "pos": "na-adjective",
+      "usage": "大変ですね — wah, pasti berat, ya — jawaban klasik untuk menunjukkan simpati.",
+      "audio": "audio/ja/words/w-taihen.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yuumei",
+      "japanese": "有名",
+      "furigana": "{有名|ゆうめい}",
+      "indonesian": "terkenal",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-yuumei.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hitsuyou",
+      "japanese": "必要",
+      "furigana": "{必要|ひつよう}",
+      "indonesian": "perlu, dibutuhkan",
+      "pos": "na-adjective",
+      "usage": "パスポートが必要です — kamu perlu paspor. Yang diperlukan ditandai が.",
+      "audio": "audio/ja/words/w-hitsuyou.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tokubetsu",
+      "japanese": "特別",
+      "furigana": "{特別|とくべつ}",
+      "indonesian": "istimewa, khusus",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-tokubetsu.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-futsuu",
+      "japanese": "普通",
+      "furigana": "{普通|ふつう}",
+      "indonesian": "biasa, normal; biasanya",
+      "pos": "na-adjective",
+      "usage": "Juga “biasanya”: 普通は七時に起きる (biasanya bangun jam tujuh). Dalam bahasa santai, 普通においしい artinya “jujur, enak kok”.",
+      "audio": "audio/ja/words/w-futsuu.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shinsetsu",
+      "japanese": "親切",
+      "furigana": "{親切|しんせつ}",
+      "indonesian": "baik hati, suka menolong",
+      "pos": "na-adjective",
+      "usage": "Untuk kebaikan orang kepadamu: ご親切にありがとうございます (terima kasih atas kebaikan Anda).",
+      "audio": "audio/ja/words/w-shinsetsu.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-teinei",
+      "japanese": "丁寧",
+      "furigana": "{丁寧|ていねい}",
+      "indonesian": "sopan; teliti, cermat",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-teinei.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-jouzu",
+      "japanese": "上手",
+      "furigana": "{上手|じょうず}",
+      "indonesian": "pandai, mahir",
+      "pos": "na-adjective",
+      "usage": "Untuk memuji orang lain. Tentang diri sendiri terdengar sombong: pakai 得意, atau 好き.",
+      "audio": "audio/ja/words/w-jouzu.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-heta",
+      "japanese": "下手",
+      "furigana": "{下手|へた}",
+      "indonesian": "tidak pandai, kurang mahir",
+      "pos": "na-adjective",
+      "usage": "Wajar untuk diri sendiri (日本語が下手で…), tapi kasar kalau untuk orang lain.",
+      "audio": "audio/ja/words/w-heta.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tokui",
+      "japanese": "得意",
+      "furigana": "{得意|とくい}",
+      "indonesian": "pandai (keahlian sendiri)",
+      "pos": "na-adjective",
+      "usage": "Cara rendah hati untuk bilang kamu pandai sesuatu: 料理が得意です (masak itu keahlian saya).",
+      "audio": "audio/ja/words/w-tokui.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nigate",
+      "japanese": "苦手",
+      "furigana": "{苦手|にがて}",
+      "indonesian": "kurang bisa, kurang suka",
+      "pos": "na-adjective",
+      "usage": "Cara sopan untuk bilang kamu tidak suka sesuatu: 納豆はちょっと苦手です (saya kurang cocok dengan natto).",
+      "audio": "audio/ja/words/w-nigate.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-abunai",
+      "japanese": "危ない",
+      "furigana": "{危|あぶ}ない",
+      "indonesian": "berbahaya; awas!",
+      "pos": "i-adjective",
+      "usage": "Kalau diteriakkan, 危ない！ artinya “awas!”",
+      "audio": "audio/ja/words/w-abunai.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-anzen",
+      "japanese": "安全",
+      "furigana": "{安全|あんぜん}",
+      "indonesian": "aman",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-anzen.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mezurashii",
+      "japanese": "珍しい",
+      "furigana": "{珍|めずら}しい",
+      "indonesian": "langka, jarang, tidak biasa",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-mezurashii.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-natsukashii",
+      "japanese": "懐かしい",
+      "furigana": "{懐|なつ}かしい",
+      "indonesian": "bikin kangen masa lalu, nostalgia",
+      "pos": "i-adjective",
+      "usage": "Tidak ada padanan satu kata yang pas: diucapkan saat sesuatu membuatmu teringat masa lalu dengan hangat, seperti “wah, jadi kangen!”",
+      "audio": "audio/ja/words/w-natsukashii.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hazukashii",
+      "japanese": "恥ずかしい",
+      "furigana": "{恥|は}ずかしい",
+      "indonesian": "malu, memalukan; pemalu",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-hazukashii.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yasashii",
+      "japanese": "優しい",
+      "furigana": "{優|やさ}しい",
+      "indonesian": "baik hati, lembut",
+      "pos": "i-adjective",
+      "usage": "Sifat seseorang. (Bunyi yang sama, 易しい, berarti “mudah”.)",
+      "audio": "audio/ja/words/w-yasashii.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kibishii",
+      "japanese": "厳しい",
+      "furigana": "{厳|きび}しい",
+      "indonesian": "tegas, ketat; keras",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-kibishii.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-omoshiroi",
+      "japanese": "面白い",
+      "furigana": "{面白|おもしろ}い",
+      "indonesian": "menarik; lucu",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-omoshiroi.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tsumaranai",
+      "japanese": "つまらない",
+      "indonesian": "membosankan",
+      "pos": "i-adjective",
+      "usage": "つまらないものですが — “ini cuma ala kadarnya” — saat memberi hadiah.",
+      "audio": "audio/ja/words/w-tsumaranai.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-urusai",
+      "japanese": "うるさい",
+      "indonesian": "berisik; menyebalkan",
+      "pos": "i-adjective",
+      "usage": "Kalau diucapkan ke orang, うるさい！ artinya “diam!”: kasar.",
+      "audio": "audio/ja/words/w-urusai.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hayai",
+      "japanese": "早い",
+      "furigana": "{早|はや}い",
+      "indonesian": "awal, pagi-pagi; cepat (waktunya)",
+      "pos": "i-adjective",
+      "usage": "Cepat dalam arti kecepatan ditulis 速い (juga dibaca はやい).",
+      "audio": "audio/ja/words/w-hayai.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-osoi",
+      "japanese": "遅い",
+      "furigana": "{遅|おそ}い",
+      "indonesian": "terlambat, larut; lambat",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-osoi.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-akarui",
+      "japanese": "明るい",
+      "furigana": "{明|あか}るい",
+      "indonesian": "terang; ceria (orang)",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-akarui.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kurai",
+      "japanese": "暗い",
+      "furigana": "{暗|くら}い",
+      "indonesian": "gelap; murung",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-kurai.mp3",
+      "tags": [
+        "menjelaskan"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

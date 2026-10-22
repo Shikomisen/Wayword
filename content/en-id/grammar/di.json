@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-di",
+  "connector": "di-",
+  "gloss": "is done, was done (the passive)",
+  "title": "di- — the passive",
+  "pattern": "thing + di- + root (+ oleh someone) · Bisa di…? · dimakan (joined), di rumah (apart)",
+  "explanation": "di- + root makes the passive: the thing something happens to comes first, and who did it, if anyone says, comes after, often with oleh: Mobilnya sudah dicuci (The car's been washed), Rumah ini dibangun oleh kakek saya. Indonesian uses it far more than English uses its passive, in speech as well as writing, and usually without saying who: Tiketnya bisa dibeli di stasiun is simply 'You can buy tickets at the station'. It's also a polite way to ask for something without saying 'you': Bisa dibungkus? (Could you wrap it to take away?), Boleh dicoba? (Can I try it on?). It's written joined to the root, while di the place word stands apart: dimakan (eaten), but di rumah (at home).",
+  "natural": "Requests at a shop or a warung (Bisa dibungkus? Bisa dikirim?), instructions (Obatnya diminum sesudah makan), and saying what's been done without pointing at anyone (Kuncinya sudah diganti).",
+  "stiff": "When I or you did it, people don't use di- with oleh saya; the pronoun goes straight before the root: Sudah saya bayar (I've paid for it), Sudah kamu kirim? (Have you sent it?). Dibayar oleh saya sounds translated from English.",
+  "examples": [
+    {
+      "id": "gx-di-1",
+      "indonesian": "Mobilnya sudah dicuci.",
+      "english": "The car's been washed.",
+      "chunks": [
+        {
+          "t": "Mobilnya ",
+          "w": "w-mobil"
+        },
+        {
+          "t": "sudah ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "dicuci.",
+          "w": "w-cuci"
+        }
+      ],
+      "gap": {
+        "before": "Mobilnya sudah ",
+        "answer": "dicuci",
+        "after": ".",
+        "options": [
+          "dicuci",
+          "mencuci",
+          "cuci"
+        ],
+        "why": "The car is what got washed, so the verb takes di-."
+      },
+      "audio": "audio/id/grammar/gx-di-1.mp3",
+      "tags": [
+        "grammar",
+        "di"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-di-2",
+      "indonesian": "Ayamnya bisa dibungkus, Bu?",
+      "english": "Could you wrap the chicken to take away?",
+      "chunks": [
+        {
+          "t": "Ayamnya ",
+          "w": "w-ayam"
+        },
+        {
+          "t": "bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "dibungkus, "
+        },
+        {
+          "t": "Bu?",
+          "w": "w-ibu"
+        }
+      ],
+      "gap": {
+        "before": "Ayamnya bisa ",
+        "answer": "dibungkus",
+        "after": ", Bu?",
+        "options": [
+          "dibungkus",
+          "membungkus",
+          "di bungkus"
+        ],
+        "why": "Asking for it to be wrapped without saying 'you' takes di-, written joined to the root."
+      },
+      "audio": "audio/id/grammar/gx-di-2.mp3",
+      "tags": [
+        "grammar",
+        "di"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-di-3",
+      "indonesian": "Tiketnya bisa dibeli di stasiun.",
+      "english": "You can buy tickets at the station.",
+      "chunks": [
+        {
+          "t": "Tiketnya ",
+          "w": "w-tiket"
+        },
+        {
+          "t": "bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "dibeli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "di stasiun.",
+          "w": "w-stasiun"
+        }
+      ],
+      "gap": {
+        "before": "Tiketnya bisa ",
+        "answer": "dibeli",
+        "after": " di stasiun.",
+        "options": [
+          "dibeli",
+          "membeli",
+          "pembeli"
+        ],
+        "why": "The tickets come first and get bought, so di-; membeli would need the buyer first (Anda bisa membeli tiket)."
+      },
+      "audio": "audio/id/grammar/gx-di-3.mp3",
+      "tags": [
+        "grammar",
+        "di"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-di-4",
+      "indonesian": "Rumah ini dibangun oleh kakek saya.",
+      "english": "This house was built by my grandfather.",
+      "chunks": [
+        {
+          "t": "Rumah ini ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "dibangun ",
+          "w": "w-bangun"
+        },
+        {
+          "t": "oleh "
+        },
+        {
+          "t": "kakek saya.",
+          "w": "w-kakek"
+        }
+      ],
+      "gap": {
+        "before": "Rumah ini ",
+        "answer": "dibangun",
+        "after": " oleh kakek saya.",
+        "options": [
+          "dibangun",
+          "membangun",
+          "bangun"
+        ],
+        "why": "The house comes first and the builder after oleh, so di-; bangun on its own means to wake up."
+      },
+      "audio": "audio/id/grammar/gx-di-4.mp3",
+      "tags": [
+        "grammar",
+        "di"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

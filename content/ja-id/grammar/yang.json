@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-yang",
+  "connector": "yang",
+  "gloss": "〜なの、〜する人・もの",
+  "title": "yang — 〜なの、〜する人",
+  "pattern": "名詞 + yang + 説明 · yang + 説明 (…なの) · Yang mana?",
+  "explanation": "yang は、名詞とそれを説明する言葉をつなぎます。日本語の「隣に住んでいる人」のような連体修飾ですが、順番は逆で、説明は名詞の後に来ます：orang yang tinggal di sebelah（隣に住んでいる人）、kamar yang ada AC-nya（エアコンのある部屋）。名詞を省くと、yang … は日本語の「〜の」と同じ働きで「〜なの」「〜するの」になります：Saya mau yang merah（赤いのがいいです）、Yang ini atau yang itu?（こっちの？ それともそっちの？）。「どれ？」と聞く時は Yang mana?。説明が一語だけなら yang は要りません（rumah besar、大きい家）。yang を付けると、ほかと区別して「〜の方」を指します：rumah yang besar は「（小さい方ではなく）大きい方の家」。",
+  "natural": "お店やワルンで指さしながら：Yang ini, ya.（これをお願いします）、Yang pedas atau yang tidak?（辛いのと辛くないの、どっち？）。「いちばん〜」の paling の前にも付きます：yang paling murah（いちばん安いの）。",
+  "stiff": "日本語の「私が買った本」には「つなぎ」の言葉がありませんが、インドネシア語では必ず yang を入れます：buku yang saya beli。逆に、説明のたびに yang を付けるのは不自然です。kopi yang panas は「（冷たい方ではなく）熱い方のコーヒー」に聞こえるので、ただの「熱いコーヒー」なら kopi panas。",
+  "examples": [
+    {
+      "id": "gx-yang-1",
+      "indonesian": "Saya mau yang pedas.",
+      "japanese": "辛いのがいいです。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "yang pedas.",
+          "w": "w-pedas"
+        }
+      ],
+      "gap": {
+        "before": "Saya mau ",
+        "answer": "yang",
+        "after": " pedas.",
+        "options": [
+          "yang",
+          "itu",
+          "ini"
+        ],
+        "why": "日本語の「辛いの」の「の」にあたるのが yang。itu・ini（それ・これ）では代わりになりません。"
+      },
+      "registerNotes": "サンバルが2種類あるワルンや、同じ料理が2種類ある時に、指さして Yang pedas, ya. と言えば通じます。",
+      "audio": "audio/id/grammar/gx-yang-1.mp3",
+      "tags": [
+        "文法",
+        "yang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-yang-2",
+      "indonesian": "Rumah Ibu yang mana?",
+      "japanese": "お宅はどれですか？",
+      "chunks": [
+        {
+          "t": "Rumah ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "Ibu ",
+          "w": "w-ibu"
+        },
+        {
+          "t": "yang mana?"
+        }
+      ],
+      "gap": {
+        "before": "Rumah Ibu ",
+        "answer": "yang",
+        "after": " mana?",
+        "options": [
+          "yang",
+          "di",
+          "ke"
+        ],
+        "why": "Yang mana? は「どれ？」。di mana? だと「どこ？」になります。"
+      },
+      "registerNotes": "通りを見渡しながら、または写真を見ながら聞く一言。Ibu は年上の女性へのていねいな「あなた」で、名前の代わりに使う呼びかけです。",
+      "audio": "audio/id/grammar/gx-yang-2.mp3",
+      "tags": [
+        "文法",
+        "yang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-yang-3",
+      "indonesian": "Orang yang tinggal di sebelah ramah sekali.",
+      "japanese": "隣に住んでいる人は、とても気さくです。",
+      "chunks": [
+        {
+          "t": "Orang ",
+          "w": "w-orang"
+        },
+        {
+          "t": "yang tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di sebelah ",
+          "w": "w-di"
+        },
+        {
+          "t": "ramah sekali.",
+          "w": "w-ramah"
+        }
+      ],
+      "gap": {
+        "before": "Orang ",
+        "answer": "yang",
+        "after": " tinggal di sebelah ramah sekali.",
+        "options": [
+          "yang",
+          "siapa",
+          "itu"
+        ],
+        "why": "人を説明する時も yang。siapa（だれ）は質問にしか使いません。"
+      },
+      "combine": {
+        "a": "Orang itu tinggal di sebelah.",
+        "b": "Orang itu ramah sekali.",
+        "distractors": [
+          "siapa tinggal "
+        ]
+      },
+      "pitfallNote": "日本語の順番どおりに tinggal di sebelah orang と言うと、「人の隣に住む」と聞こえます。名詞が先、説明は yang の後：orang yang tinggal di sebelah。",
+      "audio": "audio/id/grammar/gx-yang-3.mp3",
+      "tags": [
+        "文法",
+        "yang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-yang-4",
+      "indonesian": "Baju yang saya beli kemarin kekecilan.",
+      "japanese": "昨日買った服が小さすぎました。",
+      "chunks": [
+        {
+          "t": "Baju ",
+          "w": "w-baju"
+        },
+        {
+          "t": "yang saya beli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "kemarin ",
+          "w": "w-kemarin"
+        },
+        {
+          "t": "kekecilan.",
+          "w": "w-kecil"
+        }
+      ],
+      "gap": {
+        "before": "Baju ",
+        "answer": "yang",
+        "after": " saya beli kemarin kekecilan.",
+        "options": [
+          "yang",
+          "itu",
+          "apa"
+        ],
+        "why": "日本語の「買った服」にはつなぎの言葉がありませんが、インドネシア語では yang が要ります。"
+      },
+      "combine": {
+        "a": "Saya beli baju kemarin.",
+        "b": "Bajunya kekecilan.",
+        "distractors": [
+          "saya beli "
+        ]
+      },
+      "pitfallNote": "yang を抜くと、baju saya が「私の服」と読まれてしまいます。kekecilan は「小さすぎる」（kecil から）。",
+      "audio": "audio/id/grammar/gx-yang-4.mp3",
+      "tags": [
+        "文法",
+        "yang"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

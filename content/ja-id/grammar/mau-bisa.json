@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-mau-bisa",
+  "connector": "mau, bisa…",
+  "gloss": "〜したい、〜できる、〜しなければ、〜してもいい",
+  "title": "mau, bisa, harus, boleh",
+  "pattern": "mau / bisa / harus / boleh + 動詞 · Boleh saya …?",
+  "explanation": "動詞の前に置く4つの小さな言葉です：mau（〜したい）、bisa（〜できる）、harus（〜しなければならない）、boleh（〜してもいい）。Saya mau pulang（家に帰りたいです）、Dia bisa masak（彼女は料理ができます）。日本語では「帰りたい」「帰らなければ」と動詞の形が変わりますが、インドネシア語は前に言葉を足すだけで、後の動詞は変わりません。否定は前に tidak：tidak bisa（できない）、tidak mau（〜したくない）。mau は、これからすることを言う「〜するところ」にも使います：Saya mau mandi（シャワーを浴びてきます）。許可を求める時は boleh で始めます：Boleh saya duduk di sini?（ここに座ってもいいですか）",
+  "natural": "Bisa …? は、ふだんの「〜してもらえますか」「〜できますか」です：Bisa tunggu sebentar?（少し待ってもらえますか）、Bisa bayar pakai kartu?（カードで払えますか）。答えも同じ言葉で：Boleh? — Boleh. Bisa? — Bisa.",
+  "stiff": "ingin は mau のかたい書き言葉版です。ワルンで Saya ingin memesan と言うとかたく、ふつうは Saya mau pesan。年上の人に harus を使うと、えらそうに聞こえることがあります。sebaiknya（〜したほうがいい）でやわらげましょう：Sebaiknya Ibu istirahat（休まれたほうがいいですよ）。",
+  "examples": [
+    {
+      "id": "gx-mau-bisa-1",
+      "indonesian": "Saya mau mandi dulu.",
+      "japanese": "先にシャワーを浴びてきます。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "mandi ",
+          "w": "w-mandi"
+        },
+        {
+          "t": "dulu.",
+          "w": "w-dulu"
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "mau",
+        "after": " mandi dulu.",
+        "options": [
+          "mau",
+          "bisa",
+          "boleh"
+        ],
+        "why": "mau は「〜したい」のほか、ふだんの「これから〜する」にも使います。"
+      },
+      "audio": "audio/id/grammar/gx-mau-bisa-1.mp3",
+      "tags": [
+        "文法",
+        "mau-bisa"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-mau-bisa-2",
+      "indonesian": "Saya bisa bicara bahasa Indonesia sedikit.",
+      "japanese": "インドネシア語が少し話せます。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "bicara ",
+          "w": "w-bicara"
+        },
+        {
+          "t": "bahasa Indonesia "
+        },
+        {
+          "t": "sedikit.",
+          "w": "w-sedikit"
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "bisa",
+        "after": " bicara bahasa Indonesia sedikit.",
+        "options": [
+          "bisa",
+          "boleh",
+          "mau"
+        ],
+        "why": "能力の「できる」は bisa。boleh は「してもいい」（許可）です。"
+      },
+      "audio": "audio/id/grammar/gx-mau-bisa-2.mp3",
+      "tags": [
+        "文法",
+        "mau-bisa"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-mau-bisa-3",
+      "indonesian": "Boleh saya duduk di sini?",
+      "japanese": "ここに座ってもいいですか。",
+      "chunks": [
+        {
+          "t": "Boleh ",
+          "w": "w-boleh"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "duduk "
+        },
+        {
+          "t": "di sini?",
+          "w": "w-di"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Boleh",
+        "after": " saya duduk di sini?",
+        "options": [
+          "Boleh",
+          "Harus",
+          "Mau"
+        ],
+        "why": "許可を求める時は boleh で始めます。"
+      },
+      "audio": "audio/id/grammar/gx-mau-bisa-3.mp3",
+      "tags": [
+        "文法",
+        "mau-bisa"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-mau-bisa-4",
+      "indonesian": "Maaf, saya harus pulang sekarang.",
+      "japanese": "すみません、もう帰らなければなりません。",
+      "chunks": [
+        {
+          "t": "Maaf, "
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "harus ",
+          "w": "w-harus"
+        },
+        {
+          "t": "pulang ",
+          "w": "w-pulang"
+        },
+        {
+          "t": "sekarang.",
+          "w": "w-sekarang"
+        }
+      ],
+      "gap": {
+        "before": "Maaf, saya ",
+        "answer": "harus",
+        "after": " pulang sekarang.",
+        "options": [
+          "harus",
+          "boleh",
+          "bisa"
+        ],
+        "why": "「〜しなければならない」は harus。"
+      },
+      "audio": "audio/id/grammar/gx-mau-bisa-4.mp3",
+      "tags": [
+        "文法",
+        "mau-bisa"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

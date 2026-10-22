@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "restaurant",
+  "title": "Warungs & Restaurants",
+  "order": 5,
+  "description": "Ordering at a warung or a restaurant: a table, the menu, how spicy you want it, eating in or taking away, and paying. Call a young server Mas or Mbak, and an older one Pak or Bu.",
+  "phrases": [
+    {
+      "id": "res-01",
+      "indonesian": "Ada meja untuk dua orang?",
+      "english": "Do you have a table for two?",
+      "registerNotes": "For a restaurant. At a warung you just sit wherever there's room, often sharing a bench. Change the number as needed: tiga orang, empat orang.",
+      "audio": "audio/id/res-01.mp3",
+      "tags": [
+        "restaurant",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-02",
+      "indonesian": "Boleh lihat menunya?",
+      "english": "Could I see the menu?",
+      "registerNotes": "The -nya makes it 'the menu'. Add Mas or Mbak for a young server: Boleh lihat menunya, Mbak?",
+      "cultureNote": "Many warungs have no printed menu: the dishes are written up on the wall, or the cooked food sits in a glass cabinet at the front and you point at what you want.",
+      "audio": "audio/id/res-02.mp3",
+      "tags": [
+        "restaurant",
+        "ordering"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-03",
+      "indonesian": "Saya mau pesan nasi goreng satu.",
+      "english": "I'd like to order one fried rice.",
+      "registerNotes": "At a warung it can be even shorter and just as polite: Nasi goreng satu, ya.",
+      "pitfallNote": "When ordering, the number usually goes after the dish: nasi goreng satu, es teh dua. It's how servers will repeat your order back.",
+      "audio": "audio/id/res-03.mp3",
+      "tags": [
+        "restaurant",
+        "ordering",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-04",
+      "indonesian": "Jangan pedas, ya.",
+      "english": "Not spicy, please.",
+      "registerNotes": "The ya softens it into a friendly request. In casual speech it's nggak pedas, ya; for just a little heat, sedikit pedas.",
+      "pitfallNote": "A little spicy by local standards can still be fiery. If you can't take chilli at all, say tidak pakai cabai (no chilli), and ask for sambalnya dipisah (the sambal on the side).",
+      "audio": "audio/id/res-04.mp3",
+      "tags": [
+        "restaurant",
+        "ordering",
+        "spicy"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-05",
+      "indonesian": "Tidak pakai micin, ya.",
+      "english": "No MSG, please.",
+      "registerNotes": "Micin (or vetsin) is the everyday word for MSG. When ordering, pakai means 'with', so tidak pakai is 'without': tidak pakai es (no ice), tidak pakai gula (no sugar).",
+      "audio": "audio/id/res-05.mp3",
+      "tags": [
+        "restaurant",
+        "ordering"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "res-06",
+      "indonesian": "Es tehnya satu lagi, ya.",
+      "english": "Another iced tea, please.",
+      "registerNotes": "Satu lagi (one more) works for anything: nasinya satu lagi (another rice). Tambah (add) is common too: tambah nasi, ya (more rice, please).",
+      "audio": "audio/id/res-06.mp3",
+      "tags": [
+        "restaurant",
+        "ordering"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "res-07",
+      "indonesian": "Dibungkus, ya.",
+      "english": "To take away, please.",
+      "registerNotes": "The answer to the question servers ask all the time: Makan di sini atau dibungkus? (Eating here or taking away?). To eat in, say Makan di sini.",
+      "cultureNote": "A bungkus is the parcel itself: rice and dishes wrapped in brown waxed paper or a banana leaf, with any sauce or sambal in a little tied plastic bag.",
+      "audio": "audio/id/res-07.mp3",
+      "tags": [
+        "restaurant",
+        "takeaway",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-08",
+      "indonesian": "Minta bonnya, ya.",
+      "english": "Could I have the bill, please?",
+      "registerNotes": "For a restaurant or café, said to the server. At a warung you go up to the counter and ask Semuanya berapa, Bu? (How much is it altogether?).",
+      "cultureNote": "At a warung you pay after eating and say what you had, including how many fried snacks (gorengan) you took from the plate on the table.",
+      "audio": "audio/id/res-08.mp3",
+      "tags": [
+        "restaurant",
+        "paying"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "res-09",
+      "indonesian": "Ini halal?",
+      "english": "Is this halal?",
+      "registerNotes": "To ask about pork directly: Ini pakai babi? (Does this have pork in it?)",
+      "cultureNote": "Most food in Indonesia is halal, but pork is common in Bali, in many Chinese restaurants, and in largely Christian areas such as North Sulawesi.",
+      "audio": "audio/id/res-09.mp3",
+      "tags": [
+        "restaurant",
+        "dietary"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "res-10",
+      "indonesian": "Enak sekali!",
+      "english": "It's really delicious.",
+      "registerNotes": "Enak is delicious, and more widely nice or pleasant (enak di sini, it's nice here). Enak banget is the casual version.",
+      "audio": "audio/id/res-10.mp3",
+      "tags": [
+        "restaurant",
+        "compliments"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-11",
+      "indonesian": "Saya sudah kenyang.",
+      "english": "I'm full.",
+      "registerNotes": "Sudah (already) is part of the phrase: it's how you say you've had enough.",
+      "pitfallNote": "Kenyang is only full of food. A full bus or a full restaurant is penuh.",
+      "audio": "audio/id/res-11.mp3",
+      "tags": [
+        "restaurant",
+        "eating"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-12",
+      "indonesian": "Boleh minta air putih?",
+      "english": "Could I have some water?",
+      "registerNotes": "Boleh minta …? is the polite everyday way to ask for something at a table or a counter.",
+      "pitfallNote": "Air on its own is any water, including for washing. For a glass of drinking water ask for air putih (literally white water); a bottle of water is air mineral, or just Aqua after the best-known brand.",
+      "audio": "audio/id/res-12.mp3",
+      "tags": [
+        "restaurant",
+        "drinks"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-13",
+      "indonesian": "Es teh manis dua, ya.",
+      "english": "Two sweet iced teas, please.",
+      "registerNotes": "The classic warung drink. Hot tea is teh panas, and es jeruk is an iced orange drink.",
+      "pitfallNote": "Tea comes sweet unless you say otherwise, often very sweet. For no sugar, ask for teh tawar (plain tea): es teh tawar, or teh tawar panas.",
+      "audio": "audio/id/res-13.mp3",
+      "tags": [
+        "restaurant",
+        "drinks"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "id": "words-places",
+  "title": "Tempat & bepergian",
+  "description": "Ke mana kamu pergi, naik apa ke sana, dan mana kanan, mana kiri.",
+  "items": [
+    {
+      "id": "w-eki",
+      "japanese": "駅",
+      "furigana": "{駅|えき}",
+      "indonesian": "stasiun",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-eki.mp3",
+      "tags": [
+        "tempat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-mise",
+      "japanese": "店",
+      "furigana": "{店|みせ}",
+      "indonesian": "toko; rumah makan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-mise.mp3",
+      "tags": [
+        "tempat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kaisha",
+      "japanese": "会社",
+      "furigana": "{会社|かいしゃ}",
+      "indonesian": "perusahaan; kantor",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kaisha.mp3",
+      "tags": [
+        "tempat",
+        "pekerjaan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-gakkou",
+      "japanese": "学校",
+      "furigana": "{学校|がっこう}",
+      "indonesian": "sekolah",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-gakkou.mp3",
+      "tags": [
+        "tempat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kouen",
+      "japanese": "公園",
+      "furigana": "{公園|こうえん}",
+      "indonesian": "taman",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kouen.mp3",
+      "tags": [
+        "tempat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-eigakan",
+      "japanese": "映画館",
+      "furigana": "{映画館|えいがかん}",
+      "indonesian": "bioskop",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-eigakan.mp3",
+      "tags": [
+        "tempat",
+        "waktu luang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-suupaa",
+      "japanese": "スーパー",
+      "furigana": "{スーパー|すーぱー}",
+      "indonesian": "supermarket, swalayan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-suupaa.mp3",
+      "tags": [
+        "tempat",
+        "belanja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-densha",
+      "japanese": "電車",
+      "furigana": "{電車|でんしゃ}",
+      "indonesian": "kereta",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-densha.mp3",
+      "tags": [
+        "transportasi"
+      ],
+      "difficulty": 1,
+      "usage": "電車で行く — \"pergi naik kereta\". \"Naik\" cukup diganti dengan で."
+    },
+    {
+      "id": "w-kuruma",
+      "japanese": "車",
+      "furigana": "{車|くるま}",
+      "indonesian": "mobil",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kuruma.mp3",
+      "tags": [
+        "transportasi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-michi",
+      "japanese": "道",
+      "furigana": "{道|みち}",
+      "indonesian": "jalan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-michi.mp3",
+      "tags": [
+        "tempat"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-chikaku",
+      "japanese": "近く",
+      "furigana": "{近|ちか}く",
+      "indonesian": "dekat, sekitar",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-chikaku.mp3",
+      "tags": [
+        "tempat"
+      ],
+      "difficulty": 1,
+      "usage": "駅の近く — \"dekat stasiun\". Urutannya terbalik dari bahasa Indonesia."
+    },
+    {
+      "id": "w-tooi",
+      "japanese": "遠い",
+      "furigana": "{遠|とお}い",
+      "indonesian": "jauh",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-tooi.mp3",
+      "tags": [
+        "tempat"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-migi",
+      "japanese": "右",
+      "furigana": "{右|みぎ}",
+      "indonesian": "kanan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-migi.mp3",
+      "tags": [
+        "arah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hidari",
+      "japanese": "左",
+      "furigana": "{左|ひだり}",
+      "indonesian": "kiri",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hidari.mp3",
+      "tags": [
+        "arah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-aruku",
+      "japanese": "歩く",
+      "furigana": "{歩|ある}く",
+      "indonesian": "berjalan kaki",
+      "pos": "verb",
+      "forms": {
+        "masu": "{歩|ある}きます",
+        "te": "{歩|ある}いて"
+      },
+      "audio": "audio/ja/words/w-aruku.mp3",
+      "tags": [
+        "gerak"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

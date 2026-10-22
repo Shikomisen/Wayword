@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "con-sambil",
+  "connector": "sambil",
+  "gloss": "while",
+  "title": "sambil — while",
+  "pattern": "A sambil B · Sambil B, A",
+  "explanation": "sambil joins two things one person does at the same time. The main activity comes first and the background one after sambil: Saya suka masak sambil dengar musik. — I like cooking while listening to music. The same person does both, so there's no second subject after sambil. It can also start the sentence: Sambil menunggu, kita minum kopi dulu.",
+  "natural": "Everyday, in any register: habits, doing two things at once, and juggling work and study (kerja sambil kuliah).",
+  "stiff": "Not for two different people: Saya masak sambil dia mandi is wrong. Say Saya masak waktu dia mandi (I cooked while he had a shower).",
+  "examples": [
+    {
+      "id": "cx-sambil-1",
+      "indonesian": "Saya suka masak sambil dengar musik.",
+      "english": "I like cooking while listening to music.",
+      "chunks": [
+        {
+          "t": "Saya suka ",
+          "w": "w-suka"
+        },
+        {
+          "t": "masak ",
+          "w": "w-masak"
+        },
+        {
+          "t": "sambil "
+        },
+        {
+          "t": "dengar musik.",
+          "w": "w-musik"
+        }
+      ],
+      "gap": {
+        "before": "Saya suka masak ",
+        "answer": "sambil",
+        "after": " dengar musik.",
+        "options": [
+          "sambil",
+          "sebelum",
+          "karena"
+        ],
+        "why": "Two things at once, done by the same person: sambil."
+      },
+      "combine": {
+        "a": "Saya suka masak.",
+        "b": "Saya dengar musik.",
+        "distractors": [
+          "dan "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sambil-1.mp3",
+      "tags": [
+        "connectors",
+        "sambil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-sambil-2",
+      "indonesian": "Dia kerja sambil kuliah.",
+      "english": "He works while studying at university.",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "kerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "sambil "
+        },
+        {
+          "t": "kuliah.",
+          "w": "w-kuliah"
+        }
+      ],
+      "gap": {
+        "before": "Dia kerja ",
+        "answer": "sambil",
+        "after": " kuliah.",
+        "options": [
+          "sambil",
+          "sesudah",
+          "karena"
+        ],
+        "why": "Working and studying over the same months, by the same person: sambil."
+      },
+      "combine": {
+        "a": "Dia kerja.",
+        "b": "Dia kuliah.",
+        "distractors": [
+          "waktu "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sambil-2.mp3",
+      "tags": [
+        "connectors",
+        "sambil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-sambil-3",
+      "indonesian": "Sambil menunggu, kita minum kopi dulu.",
+      "english": "Let's have a coffee while we wait.",
+      "chunks": [
+        {
+          "t": "Sambil "
+        },
+        {
+          "t": "menunggu, ",
+          "w": "w-tunggu"
+        },
+        {
+          "t": "kita minum ",
+          "w": "w-minum"
+        },
+        {
+          "t": "kopi dulu.",
+          "w": "w-kopi"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Sambil",
+        "after": " menunggu, kita minum kopi dulu.",
+        "options": [
+          "Sambil",
+          "Sebelum",
+          "Karena"
+        ],
+        "why": "The coffee fills the wait, two things at the same time: Sambil."
+      },
+      "combine": {
+        "a": "Kita menunggu.",
+        "b": "Kita minum kopi dulu.",
+        "distractors": [
+          "Sebelum "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sambil-3.mp3",
+      "tags": [
+        "connectors",
+        "sambil"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-sambil-4",
+      "indonesian": "Jangan main HP sambil menyetir.",
+      "english": "Don't use your phone while you're driving.",
+      "chunks": [
+        {
+          "t": "Jangan "
+        },
+        {
+          "t": "main HP ",
+          "w": "w-hp"
+        },
+        {
+          "t": "sambil "
+        },
+        {
+          "t": "menyetir."
+        }
+      ],
+      "gap": {
+        "before": "Jangan main HP ",
+        "answer": "sambil",
+        "after": " menyetir.",
+        "options": [
+          "sambil",
+          "sesudah",
+          "karena"
+        ],
+        "why": "Don't do the two at the same time: sambil."
+      },
+      "audio": "audio/id/connectors/cx-sambil-4.mp3",
+      "audioHint": "Jangan main ha pe sambil menyetir.",
+      "tags": [
+        "connectors",
+        "sambil"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-desu",
+  "connector": "です",
+  "gloss": "adalah (sopan)",
+  "title": "です — X adalah Y",
+  "pattern": "A は B です。 / A は B じゃないです。",
+  "explanation": "です menutup kalimat sopan yang menyatakan sesuatu itu apa: {私|わたし}は{学生|がくせい}です — saya mahasiswa. Bahasa Indonesia cukup bilang “saya mahasiswa”; bahasa Jepang menaruh です di akhir, dan です itulah yang membuatnya sopan. Bentuknya sama untuk saya, kamu, atau dia. Untuk bilang “bukan”, pakai じゃないです (atau ではありません yang lebih formal). Untuk bertanya, cukup tambahkan か: {学生|がくせい}ですか — Anda mahasiswa?",
+  "natural": "です adalah akhiran yang aman dengan siapa pun yang belum akrab denganmu: pelayan toko, rekan kerja, keluarga pasangan. Mirip memakai “saya”, bukan “aku”. Dengan teman dan pasangan, buang です, atau pakai だ: {学生|がくせい}だよ.",
+  "stiff": "Jangan taruh です sesudah kata kerja: {行|い}きます, bukan {行|い}くです. Dan mengakhiri setiap kalimat dengan だ terdengar ketus bagi orang yang belum kamu kenal.",
+  "examples": [
+    {
+      "id": "gx-desu-1",
+      "japanese": "私は学生です。",
+      "furigana": "{私|わたし}は{学生|がくせい}です。",
+      "romaji": "watashi wa gakusei desu",
+      "indonesian": "Saya mahasiswa.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{私|わたし}は",
+          "w": "w-watashi"
+        },
+        {
+          "t": "{学生|がくせい}",
+          "w": "w-gakusei"
+        },
+        {
+          "t": "です。"
+        }
+      ],
+      "gap": {
+        "before": "{私|わたし}は{学生|がくせい}",
+        "answer": "です",
+        "after": "。",
+        "options": [
+          "です",
+          "ます",
+          "じゃないです"
+        ],
+        "why": "Menyatakan seseorang itu apa: kata benda, lalu です."
+      },
+      "audio": "audio/ja/grammar/gx-desu-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "desu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-desu-2",
+      "japanese": "これは私の本です。",
+      "furigana": "これは{私|わたし}の{本|ほん}です。",
+      "romaji": "kore wa watashi no hon desu",
+      "indonesian": "Ini buku saya.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "これは",
+          "w": "w-kore"
+        },
+        {
+          "t": "{私|わたし}の",
+          "w": "w-watashi"
+        },
+        {
+          "t": "{本|ほん}です。",
+          "w": "w-hon"
+        }
+      ],
+      "gap": {
+        "before": "これは{私|わたし}の{本|ほん}",
+        "answer": "です",
+        "after": "。",
+        "options": [
+          "です",
+          "ます",
+          "か"
+        ],
+        "why": "Ini apa: kata benda, lalu です."
+      },
+      "audio": "audio/ja/grammar/gx-desu-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "desu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-desu-3",
+      "japanese": "あの人は先生じゃないです。",
+      "furigana": "あの{人|ひと}は{先生|せんせい}じゃないです。",
+      "romaji": "ano hito wa sensei ja nai desu",
+      "indonesian": "Orang itu bukan guru.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "あの{人|ひと}は",
+          "w": "w-hito"
+        },
+        {
+          "t": "{先生|せんせい}",
+          "w": "w-sensei"
+        },
+        {
+          "t": "じゃないです。"
+        }
+      ],
+      "gap": {
+        "before": "あの{人|ひと}は{先生|せんせい}",
+        "answer": "じゃないです",
+        "after": "。",
+        "options": [
+          "じゃないです",
+          "です",
+          "ですか"
+        ],
+        "why": "“Bukan” untuk kata benda adalah じゃないです."
+      },
+      "audio": "audio/ja/grammar/gx-desu-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "desu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-desu-4",
+      "japanese": "友達は日本人ですか。",
+      "furigana": "{友達|ともだち}は{日本人|にほんじん}ですか。",
+      "romaji": "tomodachi wa nihonjin desu ka",
+      "indonesian": "Teman Anda orang Jepang?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{友達|ともだち}は",
+          "w": "w-tomodachi"
+        },
+        {
+          "t": "{日本人|にほんじん}",
+          "w": "w-nihonjin"
+        },
+        {
+          "t": "ですか。"
+        }
+      ],
+      "gap": {
+        "before": "{友達|ともだち}は{日本人|にほんじん}",
+        "answer": "ですか",
+        "after": "。",
+        "options": [
+          "ですか",
+          "です",
+          "じゃないです"
+        ],
+        "why": "Pertanyaan: です, lalu か. Seperti “apakah”, tapi letaknya di akhir."
+      },
+      "audio": "audio/ja/grammar/gx-desu-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "desu"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

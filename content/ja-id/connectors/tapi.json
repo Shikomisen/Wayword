@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "id": "con-tapi",
+  "connector": "tapi",
+  "gloss": "でも、〜けど",
+  "title": "tapi — でも、〜けど",
+  "pattern": "A, tapi B · A. Tapi B.",
+  "explanation": "tapi は「でも」「〜けど」。反対の向きの2つをつなぎます：Enak, tapi agak pedas.（おいしいけど、ちょっと辛い）。日本語の「〜けど」は前の文の最後に付きますが、tapi は後ろの文の頭に置き、前にコンマを打ちます。「でも」のように新しい文の頭にも置けます：Tapi saya kangen keluarga. tetapi は正式な形で、書き言葉やスピーチで使います。会話ではみんな tapi です。小さな問題を言ってから「でも大丈夫」と流す言い方もよく使われます：Agak jauh, tapi tidak apa-apa（くだけて tapi nggak apa-apa）＝ ちょっと遠いけど、大丈夫。",
+  "natural": "ていねいな会話でもくだけた会話でも、ほぼどこでも使えます。tapi tidak apa-apa は、問題を大げさにせずにやんわり伝える便利な言い方です。",
+  "stiff": "会話で tetapi を使うと、文章を読み上げているように聞こえます。namun（しかしながら）は書き言葉やニュースの言葉です。",
+  "examples": [
+    {
+      "id": "cx-tapi-1",
+      "indonesian": "Enak, tapi agak pedas.",
+      "japanese": "おいしいけど、ちょっと辛いです。",
+      "chunks": [
+        {
+          "t": "Enak, ",
+          "w": "w-enak"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "agak pedas.",
+          "w": "w-pedas"
+        }
+      ],
+      "gap": {
+        "before": "Enak, ",
+        "answer": "tapi",
+        "after": " agak pedas.",
+        "options": [
+          "tapi",
+          "dan",
+          "jadi"
+        ],
+        "why": "いいこと → 気になる点、なので tapi。"
+      },
+      "combine": {
+        "a": "Enak.",
+        "b": "Agak pedas.",
+        "distractors": [
+          "jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-tapi-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "tapi",
+        "食べ物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-tapi-2",
+      "indonesian": "Saya mau ikut, tapi saya harus kerja.",
+      "japanese": "一緒に行きたいけど、仕事があるんです。",
+      "chunks": [
+        {
+          "t": "Saya mau ikut, ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "saya harus "
+        },
+        {
+          "t": "kerja.",
+          "w": "w-kerja"
+        }
+      ],
+      "gap": {
+        "before": "Saya mau ikut, ",
+        "answer": "tapi",
+        "after": " saya harus kerja.",
+        "options": [
+          "tapi",
+          "jadi",
+          "karena"
+        ],
+        "why": "したいこと ↔ それを止める事情。反対の向きなので tapi。"
+      },
+      "combine": {
+        "a": "Saya mau ikut.",
+        "b": "Saya harus kerja.",
+        "distractors": [
+          "karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-tapi-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "tapi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-tapi-3",
+      "indonesian": "Hotelnya agak jauh, tapi tidak apa-apa.",
+      "japanese": "ホテルはちょっと遠いけど、大丈夫です。",
+      "chunks": [
+        {
+          "t": "Hotelnya ",
+          "w": "w-hotel"
+        },
+        {
+          "t": "agak jauh, ",
+          "w": "w-jauh"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "tidak apa-apa.",
+          "w": "w-tidak"
+        }
+      ],
+      "gap": {
+        "before": "Hotelnya agak jauh, ",
+        "answer": "tapi",
+        "after": " tidak apa-apa.",
+        "options": [
+          "tapi",
+          "jadi",
+          "atau"
+        ],
+        "why": "tapi tidak apa-apa で問題をやわらげます：理想的ではないけど、大丈夫。"
+      },
+      "combine": {
+        "a": "Hotelnya agak jauh.",
+        "b": "Tidak apa-apa.",
+        "distractors": [
+          "jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-tapi-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "tapi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-tapi-4",
+      "indonesian": "Saya suka tinggal di sini. Tapi saya kangen keluarga.",
+      "japanese": "ここに住むのは好きです。でも、家族が恋しいです。",
+      "chunks": [
+        {
+          "t": "Saya suka ",
+          "w": "w-suka"
+        },
+        {
+          "t": "tinggal di sini. ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "Tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "saya kangen keluarga.",
+          "w": "w-kangen"
+        }
+      ],
+      "gap": {
+        "before": "Saya suka tinggal di sini. ",
+        "answer": "Tapi",
+        "after": " saya kangen keluarga.",
+        "options": [
+          "Tapi",
+          "Tetapi",
+          "Jadi"
+        ],
+        "ok": [
+          "Tetapi"
+        ],
+        "note": "Tetapi は同じ言葉の正式な形です。正しいですが、こういうおしゃべりでは書き言葉っぽく聞こえます。",
+        "why": "Tapi は新しい文の頭にも置けます。前の文と反対の気持ちを続けます。"
+      },
+      "combine": {
+        "a": "Saya suka tinggal di sini.",
+        "b": "Saya kangen keluarga.",
+        "distractors": [
+          "Jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-tapi-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "tapi"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

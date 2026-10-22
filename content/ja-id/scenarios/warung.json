@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "id": "warung",
+  "title": "ワルンで注文する",
+  "category": "restaurant",
+  "setting": "昼どきのにぎやかなワルン（大衆食堂）。プラスチックの椅子が並び、壁には料理の絵が描かれ、店先では年配の女性店主が料理をしています。ベンチに空いた席を見つけました。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "server",
+      "indonesian": "Mau pesan apa, Kak?",
+      "japanese": "ご注文は？",
+      "audio": "audio/id/scenario/warung-n1.mp3",
+      "options": [
+        {
+          "phraseId": "res-03",
+          "quality": "good",
+          "feedback": "はっきりしていて丁寧です。数は料理名のあと。日本語の「ナシゴレン1つ」と同じ順番で、店の人もこの形で復唱します。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Nasi goreng satu, ya, Bu.",
+          "japanese": "ナシゴレン1つお願いします。",
+          "feedback": "料理名と数を ya でやわらげた、ワルンでのいつもの頼み方です。店を切り盛りする年配の女性には Bu がぴったり。店の人のほうは、お客を男女問わず Kak と呼びます。",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya ingin memesan sebuah nasi goreng.",
+          "japanese": "ナシゴレンを一皿注文したく思います。",
+          "feedback": "通じますが、書き言葉のようです。ingin や memesan は文章向きの言葉で、sebuah（ひとつの）も注文には要りません。丁寧にしようとするほど堅くなるので、mau pesan か、nasi goreng satu だけで十分です。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "server",
+      "indonesian": "Mau pedas, Kak?",
+      "japanese": "辛くしますか？",
+      "audio": "audio/id/scenario/warung-n2.mp3",
+      "options": [
+        {
+          "phraseId": "res-04",
+          "quality": "good",
+          "feedback": "辛くしないでほしい時の定番の言い方です。ya を付けると、命令ではなく感じのいいお願いになります。",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Sedikit saja, Bu.",
+          "japanese": "少しだけで。",
+          "feedback": "辛いのが好きならこれでOK。ただ、地元の人の「少し」でもかなり辛いことがあります。",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Bukan pedas, Bu.",
+          "japanese": "辛くしないで。",
+          "feedback": "bukan は名詞を打ち消す「〜ではない」です（bukan teh＝お茶ではない）。pedas のような様子を表す言葉には tidak を使い、お願いするなら jangan pedas です。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "server",
+      "indonesian": "Makan di sini atau dibungkus, Kak?",
+      "japanese": "こちらで召し上がりますか、お持ち帰りですか？",
+      "audio": "audio/id/scenario/warung-n3.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Makan di sini, Bu.",
+          "japanese": "ここで食べます。",
+          "feedback": "「AかBか」の質問には、ほしいほうを答えるだけ。それで十分です。",
+          "next": "n4"
+        },
+        {
+          "phraseId": "res-07",
+          "quality": "good",
+          "feedback": "dibungkus は持ち帰りのこと。料理はワックスペーパーやバナナの葉で包んでくれます。",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Ya, Bu.",
+          "japanese": "はい。",
+          "feedback": "「AかBか」の質問に ya では答えになりません。日本語の「はい」の感覚で ya と言っても、どちらなのか伝わらず、たぶん店内で食べると思われます。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "server",
+      "indonesian": "Minumnya apa, Kak?",
+      "japanese": "飲み物は何にしますか？",
+      "audio": "audio/id/scenario/warung-n4.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Es teh manis satu, Bu.",
+          "japanese": "甘いアイスティーを1つ。",
+          "feedback": "ワルンの定番の飲み物。甘い、それもかなり甘いことが多いので、砂糖なしなら es teh tawar と頼みましょう。",
+          "next": "n6"
+        },
+        {
+          "phraseId": "res-12",
+          "quality": "good",
+          "feedback": "air putih は飲み水のこと。多くのワルンでは、コップ1杯の水は無料です。",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya mau air, Bu.",
+          "japanese": "水がほしいです。",
+          "feedback": "わかってはもらえますが、air だけだと洗い物用も含めたあらゆる「水」です。飲み水なら air putih、ボトルなら air mineral と頼みましょう。",
+          "next": "n6"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "server",
+      "indonesian": "Ditunggu sebentar, ya. Minumnya sekalian, Kak?",
+      "japanese": "少々お待ちください。飲み物もご一緒にいかがですか？",
+      "audio": "audio/id/scenario/warung-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Es teh manis satu, dibungkus juga, ya.",
+          "japanese": "甘いアイスティーを1つ、これも持ち帰りで。",
+          "feedback": "持ち帰りのアイスティーは、ビニール袋にストローを差して口を縛ったもの。どのワルンでも見かける光景です。",
+          "next": "n7"
+        },
+        {
+          "phraseId": "gre-21",
+          "quality": "good",
+          "feedback": "丁寧な断り方です。Tidak usah, terima kasih（いえ、結構です）もよく使います。",
+          "next": "n7"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya tidak mau minum.",
+          "japanese": "飲みたくありません。",
+          "feedback": "ぶっきらぼうなうえ、何も飲まないと言い張っているように聞こえます。やわらかく断るなら Tidak, terima kasih です。",
+          "next": "n7"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "server",
+      "indonesian": "Sudah selesai, Kak?",
+      "japanese": "もうお済みですか？",
+      "audio": "audio/id/scenario/warung-n6.mp3",
+      "options": [
+        {
+          "phraseId": "num-08",
+          "quality": "good",
+          "feedback": "ワルンでは食べ終わってからカウンターで払います。合計を聞く時はこう言います。",
+          "next": "n7"
+        },
+        {
+          "phraseId": "res-10",
+          "quality": "good",
+          "feedback": "料理をほめれば、作った人は必ず喜びます。そのあと金額を教えてくれます。",
+          "next": "n7"
+        },
+        {
+          "phraseId": "res-08",
+          "quality": "awkward",
+          "feedback": "レストランやカフェなら正解ですが、ワルンで伝票が出ることはまずありません。カウンターで Semuanya berapa, Bu? と聞きましょう。",
+          "next": "n7"
+        }
+      ]
+    },
+    "n7": {
+      "speaker": "server",
+      "indonesian": "Semuanya dua puluh ribu, Kak.",
+      "japanese": "全部で2万ルピアです。",
+      "audio": "audio/id/scenario/warung-n7.mp3",
+      "options": [
+        {
+          "phraseId": "num-10",
+          "quality": "good",
+          "feedback": "小さなワルンでは、ちょうどの金額はいつでも歓迎されます。",
+          "next": "end"
+        },
+        {
+          "phraseId": "num-09",
+          "quality": "good",
+          "feedback": "maaf から始めると、手間をかけることへの気づかいが伝わります。ワルンには大きなお札のおつりがないこともあるので、小額紙幣を持ち歩きましょう。",
+          "next": "end"
+        },
+        {
+          "phraseId": "sho-02",
+          "quality": "wrong",
+          "feedback": "ワルンの値段は決まっています。値切るのは市場やおみやげ屋さんでのことで、ここで言うと変に聞こえます。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "japanese": "注文完了。ワルンでは短く言うのがコツです。料理名のあとに数（nasi goreng satu）、辛いのが苦手なら jangan pedas、それに makan di sini か dibungkus。店内で食べたら、あとでカウンターで Semuanya berapa, Bu? と聞いて払います。値段は決まっていて、小額紙幣があるとみんな助かります。",
+      "end": true,
+      "options": []
+    }
+  }
+}

@@ -1,0 +1,749 @@
+{
+  "schemaVersion": 1,
+  "id": "sentences-around",
+  "title": "Getting Around",
+  "description": "Sentences for getting from place to place and running errands: asking the way, taking transport, ordering food, shopping, and sorting out your room.",
+  "items": [
+    {
+      "id": "s-17",
+      "indonesian": "Saya mau ke pasar.",
+      "english": "I'm going to the market.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "ke pasar.",
+          "w": "w-pasar"
+        }
+      ],
+      "pitfallNote": "No verb for 'go' is needed: mau ke is 'going to (a place)'. Ke is 'to', and di is 'at'.",
+      "audio": "audio/id/sentences/s-17.mp3",
+      "tags": [
+        "errands",
+        "places"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-18",
+      "indonesian": "Stasiunnya jauh dari sini?",
+      "english": "Is the station far from here?",
+      "chunks": [
+        {
+          "t": "Stasiunnya ",
+          "w": "w-stasiun"
+        },
+        {
+          "t": "jauh ",
+          "w": "w-jauh"
+        },
+        {
+          "t": "dari sini?",
+          "w": "w-dari"
+        }
+      ],
+      "registerNotes": "A rising voice is all it takes to make a question. The -nya on stasiun works like 'the': the station you both have in mind.",
+      "audio": "audio/id/sentences/s-18.mp3",
+      "tags": [
+        "directions",
+        "questions"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-19",
+      "indonesian": "Permisi, saya cari apotek.",
+      "english": "Excuse me, I'm looking for a pharmacy.",
+      "chunks": [
+        {
+          "t": "Permisi, "
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "cari ",
+          "w": "w-cari"
+        },
+        {
+          "t": "apotek.",
+          "w": "w-apotek"
+        }
+      ],
+      "registerNotes": "Saying what you're looking for is the simplest way to ask the way. Permisi first catches someone's attention politely.",
+      "audio": "audio/id/sentences/s-19.mp3",
+      "tags": [
+        "directions",
+        "errands"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-20",
+      "indonesian": "Berapa lama ke bandara?",
+      "english": "How long does it take to get to the airport?",
+      "chunks": [
+        {
+          "t": "Berapa ",
+          "w": "w-berapa"
+        },
+        {
+          "t": "lama ",
+          "w": "w-lama"
+        },
+        {
+          "t": "ke bandara?",
+          "w": "w-bandara"
+        }
+      ],
+      "registerNotes": "Berapa lama asks how long. Add dari sini (from here) if it isn't clear where you're starting from.",
+      "audio": "audio/id/sentences/s-20.mp3",
+      "tags": [
+        "transport",
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-21",
+      "indonesian": "Dari sini ke stasiun naik apa?",
+      "english": "How do I get to the station from here?",
+      "chunks": [
+        {
+          "t": "Dari sini ",
+          "w": "w-dari"
+        },
+        {
+          "t": "ke stasiun ",
+          "w": "w-stasiun"
+        },
+        {
+          "t": "naik apa?",
+          "w": "w-apa"
+        }
+      ],
+      "registerNotes": "Naik apa? (ride what?) asks which transport to take. The answer might be naik bus, naik ojek or jalan kaki (walk).",
+      "audio": "audio/id/sentences/s-21.mp3",
+      "tags": [
+        "transport",
+        "directions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-22",
+      "indonesian": "Haltenya di seberang jalan.",
+      "english": "The bus stop is across the road.",
+      "chunks": [
+        {
+          "t": "Haltenya ",
+          "w": "w-halte"
+        },
+        {
+          "t": "di seberang ",
+          "w": "w-di"
+        },
+        {
+          "t": "jalan.",
+          "w": "w-jalan"
+        }
+      ],
+      "registerNotes": "Di seberang is 'on the other side of': di seberang jalan, across the road; di seberang sungai, across the river.",
+      "audio": "audio/id/sentences/s-22.mp3",
+      "tags": [
+        "directions",
+        "transport"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-23",
+      "indonesian": "Rumah sakitnya di depan masjid.",
+      "english": "The hospital's opposite the mosque.",
+      "chunks": [
+        {
+          "t": "Rumah sakitnya ",
+          "w": "w-rumah-sakit"
+        },
+        {
+          "t": "di depan ",
+          "w": "w-depan"
+        },
+        {
+          "t": "masjid.",
+          "w": "w-masjid"
+        }
+      ],
+      "registerNotes": "Di depan is 'in front of', and across a road it means 'opposite'. Mosques make good landmarks: most neighbourhoods have one.",
+      "audio": "audio/id/sentences/s-23.mp3",
+      "tags": [
+        "directions",
+        "places"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-24",
+      "indonesian": "Pantainya tidak jauh dari hotel kami.",
+      "english": "The beach isn't far from our hotel.",
+      "chunks": [
+        {
+          "t": "Pantainya ",
+          "w": "w-pantai"
+        },
+        {
+          "t": "tidak jauh ",
+          "w": "w-jauh"
+        },
+        {
+          "t": "dari hotel ",
+          "w": "w-hotel"
+        },
+        {
+          "t": "kami.",
+          "w": "w-kami"
+        }
+      ],
+      "pitfallNote": "Kami, not kita: the person you're telling isn't staying at your hotel.",
+      "audio": "audio/id/sentences/s-24.mp3",
+      "tags": [
+        "places",
+        "travel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-25",
+      "indonesian": "Tolong berhenti di depan hotel itu.",
+      "english": "Please stop in front of that hotel.",
+      "chunks": [
+        {
+          "t": "Tolong "
+        },
+        {
+          "t": "berhenti ",
+          "w": "w-berhenti"
+        },
+        {
+          "t": "di depan ",
+          "w": "w-depan"
+        },
+        {
+          "t": "hotel ",
+          "w": "w-hotel"
+        },
+        {
+          "t": "itu.",
+          "w": "w-itu"
+        }
+      ],
+      "registerNotes": "Tolong turns an instruction into a request. To a driver, add Pak or Mas at the end: … hotel itu, Pak.",
+      "audio": "audio/id/sentences/s-25.mp3",
+      "tags": [
+        "transport",
+        "requests"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-26",
+      "indonesian": "Besok kami ke Yogyakarta naik kereta.",
+      "english": "Tomorrow we're going to Yogyakarta by train.",
+      "chunks": [
+        {
+          "t": "Besok ",
+          "w": "w-besok"
+        },
+        {
+          "t": "kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "ke Yogyakarta ",
+          "w": "w-ke"
+        },
+        {
+          "t": "naik kereta."
+        }
+      ],
+      "registerNotes": "Naik (get on, ride) is how you say 'by': naik kereta, by train; naik bus, by bus; naik pesawat, by plane.",
+      "audio": "audio/id/sentences/s-26.mp3",
+      "tags": [
+        "travel",
+        "transport"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-27",
+      "indonesian": "Jalannya macet karena banjir.",
+      "english": "The roads are jammed because of the flooding.",
+      "chunks": [
+        {
+          "t": "Jalannya ",
+          "w": "w-jalan"
+        },
+        {
+          "t": "macet "
+        },
+        {
+          "t": "karena ",
+          "w": "w-karena"
+        },
+        {
+          "t": "banjir.",
+          "w": "w-banjir"
+        }
+      ],
+      "registerNotes": "Macet, traffic that's barely moving, is a word you'll hear every day in Jakarta. Karena before a noun means 'because of'.",
+      "audio": "audio/id/sentences/s-27.mp3",
+      "tags": [
+        "transport",
+        "weather"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-28",
+      "indonesian": "Toko itu tutup hari Minggu.",
+      "english": "That shop is closed on Sundays.",
+      "chunks": [
+        {
+          "t": "Toko ",
+          "w": "w-toko"
+        },
+        {
+          "t": "itu ",
+          "w": "w-itu"
+        },
+        {
+          "t": "tutup "
+        },
+        {
+          "t": "hari Minggu.",
+          "w": "w-hari-minggu"
+        }
+      ],
+      "pitfallNote": "No word for 'on' before a day, and no plural: hari Minggu covers 'on Sundays'.",
+      "audio": "audio/id/sentences/s-28.mp3",
+      "tags": [
+        "shopping",
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-29",
+      "indonesian": "Warung ini buka sampai jam berapa?",
+      "english": "How late is this warung open?",
+      "chunks": [
+        {
+          "t": "Warung ",
+          "w": "w-warung"
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "buka "
+        },
+        {
+          "t": "sampai ",
+          "w": "w-sampai"
+        },
+        {
+          "t": "jam berapa?",
+          "w": "w-jam"
+        }
+      ],
+      "registerNotes": "Buka is 'open' and tutup 'closed'. Sampai jam berapa? asks 'until what time?'",
+      "audio": "audio/id/sentences/s-29.mp3",
+      "tags": [
+        "food",
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-30",
+      "indonesian": "Saya harus ke bank sebelum jam tiga.",
+      "english": "I have to get to the bank before three.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "harus ",
+          "w": "w-harus"
+        },
+        {
+          "t": "ke bank ",
+          "w": "w-bank"
+        },
+        {
+          "t": "sebelum "
+        },
+        {
+          "t": "jam tiga.",
+          "w": "w-jam"
+        }
+      ],
+      "registerNotes": "Harus (must, have to) goes before the verb, or straight before ke when the going is understood.",
+      "audio": "audio/id/sentences/s-30.mp3",
+      "tags": [
+        "errands",
+        "time"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-31",
+      "indonesian": "Saya mau mi goreng, tapi jangan terlalu pedas.",
+      "english": "I'd like fried noodles, but not too spicy.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "mi goreng, ",
+          "w": "w-mi"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "jangan terlalu "
+        },
+        {
+          "t": "pedas.",
+          "w": "w-pedas"
+        }
+      ],
+      "registerNotes": "Jangan terlalu pedas is 'not too spicy'. If you can't take any chilli at all, ask for it tidak pedas sama sekali.",
+      "audio": "audio/id/sentences/s-31.mp3",
+      "tags": [
+        "food",
+        "ordering"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-32",
+      "indonesian": "Teh panas, tidak pakai gula, ya.",
+      "english": "Hot tea, no sugar, please.",
+      "chunks": [
+        {
+          "t": "Teh ",
+          "w": "w-teh"
+        },
+        {
+          "t": "panas, ",
+          "w": "w-panas"
+        },
+        {
+          "t": "tidak pakai ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "gula, ",
+          "w": "w-gula"
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "cultureNote": "Tea and coffee come sweet unless you say otherwise. Unsweetened tea also has its own name: teh tawar.",
+      "audio": "audio/id/sentences/s-32.mp3",
+      "tags": [
+        "food",
+        "ordering"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-33",
+      "indonesian": "Ayam ini pedas atau tidak?",
+      "english": "Is this chicken spicy?",
+      "chunks": [
+        {
+          "t": "Ayam ",
+          "w": "w-ayam"
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "pedas ",
+          "w": "w-pedas"
+        },
+        {
+          "t": "atau tidak?",
+          "w": "w-tidak"
+        }
+      ],
+      "registerNotes": "Atau tidak? (or not?) on the end makes a plain yes-or-no question. Friends say atau nggak?",
+      "audio": "audio/id/sentences/s-33.mp3",
+      "tags": [
+        "food",
+        "questions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-34",
+      "indonesian": "Saya tidak makan daging, tapi ikan boleh.",
+      "english": "I don't eat meat, but fish is fine.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tidak makan ",
+          "w": "w-makan"
+        },
+        {
+          "t": "daging, ",
+          "w": "w-daging"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "ikan boleh.",
+          "w": "w-ikan"
+        }
+      ],
+      "registerNotes": "Saying what you can eat as well as what you can't makes ordering easier. Boleh (allowed) here means 'fine, OK'.",
+      "audio": "audio/id/sentences/s-34.mp3",
+      "tags": [
+        "food",
+        "diet"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-35",
+      "indonesian": "Mangga ini berapa sekilo, Bu?",
+      "english": "How much are these mangoes a kilo?",
+      "chunks": [
+        {
+          "t": "Mangga "
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "berapa ",
+          "w": "w-berapa"
+        },
+        {
+          "t": "sekilo, "
+        },
+        {
+          "t": "Bu?",
+          "w": "w-ibu"
+        }
+      ],
+      "registerNotes": "At a market, fruit and vegetables are often priced by weight: sekilo is a kilo, setengah kilo half a kilo. Bu is short for Ibu.",
+      "audio": "audio/id/sentences/s-35.mp3",
+      "tags": [
+        "market",
+        "prices"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-36",
+      "indonesian": "Bisa tolong tulis harganya?",
+      "english": "Could you write the price down?",
+      "chunks": [
+        {
+          "t": "Bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "tolong tulis "
+        },
+        {
+          "t": "harganya?",
+          "w": "w-harga"
+        }
+      ],
+      "registerNotes": "Handy when the numbers go by too fast. Many stallholders will tap the price into a calculator or a phone instead.",
+      "audio": "audio/id/sentences/s-36.mp3",
+      "tags": [
+        "market",
+        "requests"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-37",
+      "indonesian": "Sepatu ini terlalu kecil untuk saya.",
+      "english": "These shoes are too small for me.",
+      "chunks": [
+        {
+          "t": "Sepatu ",
+          "w": "w-sepatu"
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "terlalu "
+        },
+        {
+          "t": "kecil ",
+          "w": "w-kecil"
+        },
+        {
+          "t": "untuk saya.",
+          "w": "w-saya"
+        }
+      ],
+      "pitfallNote": "Ini after the noun is 'this' or 'these': sepatu ini. In speech you'll also hear kekecilan, 'too small'.",
+      "audio": "audio/id/sentences/s-37.mp3",
+      "tags": [
+        "shopping",
+        "describing"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-38",
+      "indonesian": "Saya mau beli dua botol air mineral.",
+      "english": "I'd like to buy two bottles of water.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau beli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "dua botol "
+        },
+        {
+          "t": "air mineral.",
+          "w": "w-air"
+        }
+      ],
+      "registerNotes": "Air mineral is bottled water. Air putih is drinking water in general, the thing to ask for in a warung.",
+      "audio": "audio/id/sentences/s-38.mp3",
+      "tags": [
+        "shopping",
+        "drinks"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-39",
+      "indonesian": "Kamarnya kecil, tapi bersih.",
+      "english": "The room's small, but it's clean.",
+      "chunks": [
+        {
+          "t": "Kamarnya ",
+          "w": "w-kamar"
+        },
+        {
+          "t": "kecil, ",
+          "w": "w-kecil"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "bersih.",
+          "w": "w-bersih"
+        }
+      ],
+      "pitfallNote": "No 'is' and no 'it': a describing word can be all you say about something.",
+      "audio": "audio/id/sentences/s-39.mp3",
+      "tags": [
+        "hotel",
+        "describing"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-40",
+      "indonesian": "Lampu di kamar mandi mati.",
+      "english": "The bathroom light isn't working.",
+      "chunks": [
+        {
+          "t": "Lampu ",
+          "w": "w-lampu"
+        },
+        {
+          "t": "di kamar mandi ",
+          "w": "w-kamar-mandi"
+        },
+        {
+          "t": "mati."
+        }
+      ],
+      "registerNotes": "Mati (dead) is what you say for anything electric that has stopped or gone off: AC-nya mati, listriknya mati.",
+      "audio": "audio/id/sentences/s-40.mp3",
+      "tags": [
+        "hotel",
+        "problems"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-41",
+      "indonesian": "Sekarang musim hujan, jadi jangan lupa bawa payung.",
+      "english": "It's the rainy season now, so don't forget to bring an umbrella.",
+      "chunks": [
+        {
+          "t": "Sekarang ",
+          "w": "w-sekarang"
+        },
+        {
+          "t": "musim hujan, ",
+          "w": "w-musim-hujan"
+        },
+        {
+          "t": "jadi ",
+          "w": "w-jadi"
+        },
+        {
+          "t": "jangan lupa "
+        },
+        {
+          "t": "bawa payung."
+        }
+      ],
+      "registerNotes": "Jangan lupa (don't forget) goes straight before the verb, with no 'to'. Jadi is 'so', for what follows from it.",
+      "audio": "audio/id/sentences/s-41.mp3",
+      "tags": [
+        "weather",
+        "travel"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

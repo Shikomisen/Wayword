@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "id": "ticket",
+  "title": "Membeli tiket kereta",
+  "category": "transport",
+  "setting": "Kamu di loket tiket berpetugas (みどりの窓口) di stasiun JR, mau pergi ke Kyoto.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "staff",
+      "japanese": "次の方、どうぞ。",
+      "furigana": [
+        {
+          "b": "次",
+          "r": "つぎ"
+        },
+        {
+          "b": "の"
+        },
+        {
+          "b": "方",
+          "r": "かた"
+        },
+        {
+          "b": "、どうぞ。"
+        }
+      ],
+      "romaji": "Tsugi no kata, dōzo.",
+      "indonesian": "Berikutnya, silakan.",
+      "audio": "audio/ja/scenario/ticket-n1.mp3",
+      "audioHint": "つぎのかた、どうぞ",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "京都までお願いします。",
+          "romaji": "Kyōto made onegai shimasu.",
+          "indonesian": "Ke Kyoto, ya.",
+          "feedback": "Tujuan + までお願いします. Kalimat ini membuka seluruh transaksi hanya dengan empat kata.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "gre-04",
+          "quality": "good",
+          "feedback": "Boleh sebagai pembuka, meskipun petugas sudah mempersilakanmu maju: kamu bisa langsung menyebut tujuan.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "gre-18",
+          "quality": "awkward",
+          "feedback": "Tidak salah, tapi kamu sudah punya kalimat Jepangnya. Kalau langsung bertanya soal bahasa Inggris, kamu melewatkan bagian yang sebenarnya bisa kamu lakukan.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "staff",
+      "japanese": "片道ですか、往復ですか。",
+      "furigana": [
+        {
+          "b": "片道",
+          "r": "かたみち"
+        },
+        {
+          "b": "ですか、"
+        },
+        {
+          "b": "往復",
+          "r": "おうふく"
+        },
+        {
+          "b": "ですか。"
+        }
+      ],
+      "romaji": "Katamichi desu ka, ōfuku desu ka.",
+      "indonesian": "Sekali jalan atau pulang-pergi?",
+      "audio": "audio/ja/scenario/ticket-n2.mp3",
+      "audioHint": "かたみちですか、おうふくですか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "片道でお願いします。",
+          "romaji": "Katamichi de onegai shimasu.",
+          "indonesian": "Sekali jalan, ya.",
+          "feedback": "Mengulang bagian pertanyaan yang kamu pilih adalah cara paling rapi untuk menjawab pertanyaan pilihan (A atau B) dalam bahasa Jepang.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "japanese": "往復でお願いします。",
+          "romaji": "Ōfuku de onegai shimasu.",
+          "indonesian": "Pulang-pergi, ya.",
+          "feedback": "Pola yang sama. 往復 biasanya lebih murah daripada dua tiket sekali jalan.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "wrong",
+          "feedback": "はい tidak bisa menjawab pertanyaan pilihan: tidak ada yang bisa diiyakan. Ini kesalahan paling umum dengan bentuk pertanyaan seperti ini.",
+          "next": "n2b"
+        }
+      ]
+    },
+    "n2b": {
+      "speaker": "staff",
+      "japanese": "えっと…片道ですか？往復ですか？",
+      "furigana": [
+        {
+          "b": "えっと…"
+        },
+        {
+          "b": "片道",
+          "r": "かたみち"
+        },
+        {
+          "b": "ですか？"
+        },
+        {
+          "b": "往復",
+          "r": "おうふく"
+        },
+        {
+          "b": "ですか？"
+        }
+      ],
+      "romaji": "Etto… katamichi desu ka? Ōfuku desu ka?",
+      "indonesian": "Eh… sekali jalan? Atau pulang-pergi?",
+      "audio": "audio/ja/scenario/ticket-n2b.mp3",
+      "audioHint": "えっと、かたみちですか、おうふくですか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "片道でお願いします。",
+          "romaji": "Katamichi de onegai shimasu.",
+          "indonesian": "Sekali jalan, ya.",
+          "feedback": "Kembali ke jalur. Menyebut pilihan yang kamu mau selalu jelas.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "gre-16",
+          "quality": "good",
+          "feedback": "Cara memperbaiki yang bagus juga. Meminta diulang tidak pernah salah.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "staff",
+      "japanese": "指定席と自由席、どちらになさいますか。",
+      "furigana": [
+        {
+          "b": "指定席",
+          "r": "していせき"
+        },
+        {
+          "b": "と"
+        },
+        {
+          "b": "自由席",
+          "r": "じゆうせき"
+        },
+        {
+          "b": "、どちらになさいますか。"
+        }
+      ],
+      "romaji": "Shiteiseki to jiyūseki, dochira ni nasaimasu ka.",
+      "indonesian": "Kursi reservasi atau kursi bebas, mau yang mana?",
+      "audio": "audio/ja/scenario/ticket-n3.mp3",
+      "audioHint": "していせきとじゆうせき、どちらになさいますか",
+      "options": [
+        {
+          "phraseId": "tra-09",
+          "quality": "good",
+          "feedback": "Kursi reservasi. Layak diambil saat libur panjang atau kalau kamu bawa koper: tempat dudukmu pasti ada.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "tra-10",
+          "quality": "good",
+          "feedback": "Kursi bebas lebih murah, dan biasanya aman di luar jam sibuk. 〜でいいです adalah “yang itu saja cukup” yang berguna untuk pilihan apa pun yang ditawarkan.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "num-05",
+          "quality": "awkward",
+          "feedback": "Wajar ingin tahu, karena kursi reservasi lebih mahal, tapi ini menghentikan transaksi. Tanyakan おすすめは？ atau pilih saja salah satu dan tanyakan harganya di akhir.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "staff",
+      "japanese": "一万三千八百二十円です。",
+      "furigana": [
+        {
+          "b": "一万",
+          "r": "いちまん"
+        },
+        {
+          "b": "三千",
+          "r": "さんぜん"
+        },
+        {
+          "b": "八百",
+          "r": "はっぴゃく"
+        },
+        {
+          "b": "二十",
+          "r": "にじゅう"
+        },
+        {
+          "b": "円",
+          "r": "えん"
+        },
+        {
+          "b": "です。"
+        }
+      ],
+      "romaji": "Ichiman sanzen happyaku nijū en desu.",
+      "indonesian": "Totalnya 13.820 yen.",
+      "audio": "audio/ja/scenario/ticket-n4.mp3",
+      "audioHint": "いちまんさんぜんはっぴゃくにじゅうえんです",
+      "options": [
+        {
+          "phraseId": "num-08",
+          "quality": "good",
+          "feedback": "Semua loket JR menerima kartu. Perhatikan 一万: bahasa Jepang menghitung per sepuluh ribu, jadi angka ini bukan “tiga belas ribu…”, tapi “satu man (10.000), tiga ribu…”.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "gre-17",
+          "quality": "good",
+          "feedback": "Tidak perlu malu. Harga yang panjang diucapkan dengan cepat, dan petugas biasanya juga akan menunjuk layar yang menampilkan angkanya.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "staff",
+      "japanese": "はい、切符です。三番線から発車します。",
+      "furigana": [
+        {
+          "b": "はい、"
+        },
+        {
+          "b": "切符",
+          "r": "きっぷ"
+        },
+        {
+          "b": "です。"
+        },
+        {
+          "b": "三番線",
+          "r": "さんばんせん"
+        },
+        {
+          "b": "から"
+        },
+        {
+          "b": "発車",
+          "r": "はっしゃ"
+        },
+        {
+          "b": "します。"
+        }
+      ],
+      "romaji": "Hai, kippu desu. Sanbansen kara hassha shimasu.",
+      "indonesian": "Ini tiketnya. Keretanya berangkat dari jalur 3.",
+      "audio": "audio/ja/scenario/ticket-n5.mp3",
+      "audioHint": "はい、きっぷです。さんばんせんからはっしゃします",
+      "options": [
+        {
+          "phraseId": "gre-05",
+          "quality": "good",
+          "feedback": "Nomor jalurnya tertangkap. 三番線: kata bantu 番線 untuk jalur peron layak kamu kenali seketika.",
+          "next": "end"
+        },
+        {
+          "phraseId": "tra-05",
+          "quality": "good",
+          "feedback": "Petugas sudah menyebutkannya, tapi memastikan nomor jalur tidak pernah salah, apalagi untuk kereta seharga 13.820 yen.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "romaji": "",
+      "indonesian": "Tiket di tangan, jalur sudah tahu. Pertanyaan “sekali jalan atau pulang-pergi” itulah yang perlu dilatih: はい memang tidak menjawabnya.",
+      "end": true,
+      "options": []
+    }
+  }
+}

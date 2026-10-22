@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-tekureru",
+  "connector": "〜てくれる",
+  "gloss": "melakukan untuk orang lain (kebaikan)",
+  "title": "〜てくれる・〜てもらう・〜てあげる — berbuat baik untuk orang",
+  "pattern": "bentuk て kata kerja + くれる / もらう / あげる",
+  "explanation": "Tambahkan kata kerja memberi pada bentuk て, dan tindakannya menjadi kebaikan untuk orang lain. Bahasa Indonesia memakai -kan (“belikan”, “ajarkan”) tanpa peduli arah; bahasa Jepang menunjukkan siapa yang menerima kebaikan. {友達|ともだち}が{手伝|てつだ}ってくれた — teman (dengan baik hati) membantuku. {友達|ともだち}に{手伝|てつだ}ってもらった — aku dibantu teman. {妹|いもうと}に{教|おし}えてあげた — aku mengajari adikku. Meminta: 〜てくれる？ (santai), 〜てもらえますか (sopan).",
+  "natural": "てくれる adalah cara bahasa Jepang menyisipkan rasa terima kasih ke dalam kalimat: {駅|えき}まで{送|おく}ってくれて、ありがとう.",
+  "stiff": "〜てあげる kepada orang yang kamu bantu bisa terdengar seperti minta dipuji. Lebih baik menawarkan: {手伝|てつだ}いましょうか.",
+  "examples": [
+    {
+      "id": "gx-tekureru-1",
+      "japanese": "友達が引っ越しを手伝ってくれました。",
+      "furigana": "{友達|ともだち}が{引|ひ}っ{越|こ}しを{手伝|てつだ}ってくれました。",
+      "indonesian": "Teman membantu saya pindahan.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{友達|ともだち}が",
+          "w": "w-tomodachi"
+        },
+        {
+          "t": "{引|ひ}っ{越|こ}しを",
+          "w": "w-hikkoshi"
+        },
+        {
+          "t": "{手伝|てつだ}ってくれました。",
+          "w": "w-tetsudau"
+        }
+      ],
+      "gap": {
+        "before": "{友達|ともだち}が{引|ひ}っ{越|こ}しを{手伝|てつだ}って",
+        "answer": "くれました",
+        "after": "。",
+        "options": [
+          "くれました",
+          "あげました",
+          "もらいました"
+        ],
+        "why": "Orang lain melakukannya untuk saya: てくれる."
+      },
+      "audio": "audio/ja/grammar/gx-tekureru-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "tekureru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tekureru-2",
+      "japanese": "駅まで送ってくれて、ありがとう。",
+      "furigana": "{駅|えき}まで{送|おく}ってくれて、ありがとう。",
+      "indonesian": "Terima kasih sudah mengantarku sampai stasiun.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{駅|えき}まで",
+          "w": "w-eki"
+        },
+        {
+          "t": "{送|おく}ってくれて、",
+          "w": "w-okuru"
+        },
+        {
+          "t": "ありがとう。"
+        }
+      ],
+      "gap": {
+        "before": "{駅|えき}まで{送|おく}って",
+        "answer": "くれて",
+        "after": "、ありがとう。",
+        "options": [
+          "くれて",
+          "あげて",
+          "もらって"
+        ],
+        "why": "Berterima kasih atas kebaikan orang: てくれて、ありがとう."
+      },
+      "audio": "audio/ja/grammar/gx-tekureru-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "tekureru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tekureru-3",
+      "japanese": "ちょっと手伝ってもらえますか。",
+      "furigana": "ちょっと{手伝|てつだ}ってもらえますか。",
+      "indonesian": "Bisa tolong bantu saya sebentar?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "ちょっと",
+          "w": "w-chotto"
+        },
+        {
+          "t": "{手伝|てつだ}って",
+          "w": "w-tetsudau"
+        },
+        {
+          "t": "もらえますか。"
+        }
+      ],
+      "gap": {
+        "before": "ちょっと{手伝|てつだ}って",
+        "answer": "もらえますか",
+        "after": "。",
+        "options": [
+          "もらえますか",
+          "くれますか",
+          "あげますか"
+        ],
+        "ok": [
+          "くれますか"
+        ],
+        "note": "くれますか juga bisa, dan sedikit kurang formal.",
+        "why": "Meminta tolong dengan sopan: てもらえますか."
+      },
+      "audio": "audio/ja/grammar/gx-tekureru-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "tekureru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tekureru-4",
+      "japanese": "弟に宿題を教えてあげた。",
+      "furigana": "{弟|おとうと}に{宿題|しゅくだい}を{教|おし}えてあげた。",
+      "indonesian": "Aku mengajari adik laki-lakiku mengerjakan PR.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{弟|おとうと}に",
+          "w": "w-otouto"
+        },
+        {
+          "t": "{宿題|しゅくだい}を"
+        },
+        {
+          "t": "{教|おし}えてあげた。"
+        }
+      ],
+      "gap": {
+        "before": "{弟|おとうと}に{宿題|しゅくだい}を{教|おし}えて",
+        "answer": "あげた",
+        "after": "。",
+        "options": [
+          "あげた",
+          "くれた",
+          "もらった"
+        ],
+        "why": "Aku melakukannya untuk dia: てあげる."
+      },
+      "audio": "audio/ja/grammar/gx-tekureru-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "tekureru"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

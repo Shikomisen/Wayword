@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ber",
+  "connector": "ber-",
+  "gloss": "doing; having",
+  "title": "ber- verbs",
+  "pattern": "ber- + root: bekerja, bermain, berkeluarga · in speech: kerja, main",
+  "explanation": "ber- makes a verb about what someone does or has, rather than something done to an object: berjalan (to walk), bekerja (to work), bermain (to play), berenang (to swim). On a noun it means having or using it: berkeluarga (to have a family), bersepeda (to ride a bike), berbahaya (dangerous, from bahaya, danger). In conversation it usually drops and you hear just the root: Kerja di mana? (Where do you work?), Main ke rumah, ya (Come over some time). It stays where the root alone means something else or isn't a verb: berangkat (to set off, while angkat is to lift), berhenti (to stop), berkeluarga. The spelling shrinks in a few words, so look up the root: berenang (renang), bekerja (kerja), belajar (ajar).",
+  "natural": "In writing, on forms and when you want to sound careful: Saya bekerja di bank is a good answer to an official. In everyday polite conversation the short form is just as good: Saya kerja di bank.",
+  "stiff": "Every ber- in a chat with friends sounds like a schoolbook: Mari kita berjalan-jalan is textbook, Jalan-jalan, yuk! is what people say. Don't drop it from a noun, though: Dia sudah berkeluarga, never Dia sudah keluarga.",
+  "examples": [
+    {
+      "id": "gx-ber-1",
+      "indonesian": "Saya bekerja di bank.",
+      "english": "I work at a bank.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "bekerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "di bank.",
+          "w": "w-bank"
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "bekerja",
+        "after": " di bank.",
+        "options": [
+          "bekerja",
+          "berkerja",
+          "mengerjakan"
+        ],
+        "why": "Before kerja, ber- loses its r: bekerja; mengerjakan is to work on something."
+      },
+      "audio": "audio/id/grammar/gx-ber-1.mp3",
+      "tags": [
+        "grammar",
+        "ber"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-ber-2",
+      "indonesian": "Dia sudah berkeluarga.",
+      "english": "She's married with a family.",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "sudah ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "berkeluarga.",
+          "w": "w-keluarga"
+        }
+      ],
+      "gap": {
+        "before": "Dia sudah ",
+        "answer": "berkeluarga",
+        "after": ".",
+        "options": [
+          "berkeluarga",
+          "keluarga",
+          "bekeluarga"
+        ],
+        "why": "Having a family is ber- + keluarga, and the ber- stays even in speech, because keluarga alone is just the noun."
+      },
+      "audio": "audio/id/grammar/gx-ber-2.mp3",
+      "tags": [
+        "grammar",
+        "ber"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-ber-3",
+      "indonesian": "Kita berangkat jam tujuh, ya.",
+      "english": "We're leaving at seven, OK?",
+      "chunks": [
+        {
+          "t": "Kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "berangkat ",
+          "w": "w-berangkat"
+        },
+        {
+          "t": "jam tujuh, ",
+          "w": "w-jam"
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "gap": {
+        "before": "Kita ",
+        "answer": "berangkat",
+        "after": " jam tujuh, ya.",
+        "options": [
+          "berangkat",
+          "angkat",
+          "mengangkat"
+        ],
+        "why": "Setting off is berangkat, and the ber- stays, because angkat and mengangkat mean to lift."
+      },
+      "audio": "audio/id/grammar/gx-ber-3.mp3",
+      "tags": [
+        "grammar",
+        "ber"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ber-4",
+      "indonesian": "Kapan-kapan main ke rumah, ya.",
+      "english": "Come over to our place some time.",
+      "chunks": [
+        {
+          "t": "Kapan-kapan "
+        },
+        {
+          "t": "main ",
+          "w": "w-main"
+        },
+        {
+          "t": "ke rumah, ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "gap": {
+        "before": "Kapan-kapan ",
+        "answer": "main",
+        "after": " ke rumah, ya.",
+        "options": [
+          "main",
+          "bermain",
+          "mainan"
+        ],
+        "ok": [
+          "bermain"
+        ],
+        "note": "Bermain ke rumah is correct too, but in a spoken invitation it sounds like a schoolbook.",
+        "why": "In speech the ber- drops: main ke rumah is the everyday way to say come over."
+      },
+      "audio": "audio/id/grammar/gx-ber-4.mp3",
+      "tags": [
+        "grammar",
+        "ber"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

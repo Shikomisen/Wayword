@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-kenjou",
+  "connector": "いたします",
+  "gloss": "kata kerja merendah (untuk diri sendiri)",
+  "title": "いたします・もうします — kata kerja merendah",
+  "pattern": "いたす (する) / {申|もう}す ({言|い}う) / {参|まい}る ({行|い}く・{来|く}る) / おる (いる) / いただく ({食|た}べる・もらう)",
+  "explanation": "Kata kerja merendah ({謙譲語|けんじょうご}) merendahkan dirimu dan pihakmu untuk menghormati lawan bicara. Bahasa Indonesia tidak punya padanan sesistematis ini; anggap saja bagian dari tingkat bahasa yang paling sopan. {申|もう}します: {山田|やまだ}と{申|もう}します — nama saya Yamada. いたします: ご{案内|あんない}いたします — mari saya antar. {参|まい}ります: すぐ{参|まい}ります — saya segera ke sana. いただきます: お{土産|みやげ}をいただきました — saya menerima oleh-oleh. Banyak kata kerja memakai お + bentuk ます tanpa ます + する: お{持|も}ちします — mari saya bawakan.",
+  "natural": "Untuk memperkenalkan diri kepada keluarga pasangan, dan di telepon: はじめまして、ケンと{申|もう}します.",
+  "stiff": "Jangan pernah memakainya untuk tindakan orang lain: {先生|せんせい}が{申|もう}しました adalah kesalahan. Untuk mereka, pakai kata kerja hormat.",
+  "examples": [
+    {
+      "id": "gx-kenjou-1",
+      "japanese": "私は山田と申します。",
+      "furigana": "{私|わたし}は{山田|やまだ}と{申|もう}します。",
+      "indonesian": "Nama saya Yamada.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{私|わたし}は",
+          "w": "w-watashi"
+        },
+        {
+          "t": "{山田|やまだ}と"
+        },
+        {
+          "t": "{申|もう}します。"
+        }
+      ],
+      "gap": {
+        "before": "{私|わたし}は{山田|やまだ}と",
+        "answer": "{申|もう}します",
+        "after": "。",
+        "options": [
+          "{申|もう}します",
+          "おっしゃいます",
+          "{言|い}います"
+        ],
+        "why": "Namamu sendiri, dengan merendah: と申します."
+      },
+      "audio": "audio/ja/grammar/gx-kenjou-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "kenjou"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-kenjou-2",
+      "japanese": "お荷物、お持ちします。",
+      "furigana": "お{荷物|にもつ}、お{持|も}ちします。",
+      "indonesian": "Mari, barangnya saya bawakan.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "お{荷物|にもつ}、",
+          "w": "w-nimotsu"
+        },
+        {
+          "t": "お{持|も}ちします。"
+        }
+      ],
+      "gap": {
+        "before": "お{荷物|にもつ}、",
+        "answer": "お{持|も}ちします",
+        "after": "。",
+        "options": [
+          "お{持|も}ちします",
+          "お{持|も}ちになります",
+          "{持|も}ってください"
+        ],
+        "why": "Melakukannya untuk mereka, dengan merendah: お + bentuk ます tanpa ます + する."
+      },
+      "audio": "audio/ja/grammar/gx-kenjou-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "kenjou"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-kenjou-3",
+      "japanese": "すぐ参ります。",
+      "furigana": "すぐ{参|まい}ります。",
+      "indonesian": "Saya segera ke sana.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "すぐ",
+          "w": "w-sugu"
+        },
+        {
+          "t": "{参|まい}ります。"
+        }
+      ],
+      "gap": {
+        "before": "すぐ",
+        "answer": "{参|まい}ります",
+        "after": "。",
+        "options": [
+          "{参|まい}ります",
+          "いらっしゃいます",
+          "おいでになります"
+        ],
+        "why": "Kamu sendiri yang datang atau pergi: 参る. いらっしゃる dan おいでになる untuk orang lain."
+      },
+      "audio": "audio/ja/grammar/gx-kenjou-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "kenjou"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-kenjou-4",
+      "japanese": "先生にお土産をいただきました。",
+      "furigana": "{先生|せんせい}にお{土産|みやげ}をいただきました。",
+      "indonesian": "Saya menerima oleh-oleh dari guru.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{先生|せんせい}に",
+          "w": "w-sensei"
+        },
+        {
+          "t": "お{土産|みやげ}を",
+          "w": "w-omiyage"
+        },
+        {
+          "t": "いただきました。"
+        }
+      ],
+      "gap": {
+        "before": "{先生|せんせい}にお{土産|みやげ}を",
+        "answer": "いただきました",
+        "after": "。",
+        "options": [
+          "いただきました",
+          "くださいました",
+          "{召|め}し{上|あ}がりました"
+        ],
+        "why": "Menerima dari orang yang lebih tinggi kedudukannya: いただく."
+      },
+      "audio": "audio/ja/grammar/gx-kenjou-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "kenjou"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

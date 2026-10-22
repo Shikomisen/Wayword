@@ -1,0 +1,529 @@
+{
+  "schemaVersion": 1,
+  "id": "casual",
+  "title": "くだけた話し方",
+  "order": 4,
+  "description": "友だち・恋人・同年代の本当の話し方：nggak, udah, aja, banget と、kok, sih, dong, deh などの小さな言葉。それぞれ、知らない人や年上の人に使う標準の言い方も一緒に覚えます。",
+  "phrases": [
+    {
+      "id": "cas-01",
+      "register": "casual",
+      "indonesian": "Nggak tahu.",
+      "japanese": "知らない。",
+      "polite": {
+        "indonesian": "Saya tidak tahu.",
+        "audio": "audio/id/casual/cas-01-polite.mp3"
+      },
+      "registerNotes": "Nggak は話し言葉の tidak。友だちや同年代に使い、知らない人や年上には tidak を。日本語の「知らない」と「知りません」の使い分けに近い感覚です。",
+      "pitfallNote": "メッセージでは gak や ga とよく書き、tahu も tau と書くことが多いです。",
+      "audio": "audio/id/casual/cas-01.mp3",
+      "tags": [
+        "くだけた言い方",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-02",
+      "register": "casual",
+      "indonesian": "Nggak ngerti.",
+      "japanese": "わかんない。",
+      "polite": {
+        "indonesian": "Saya tidak mengerti.",
+        "audio": "audio/id/casual/cas-02-polite.mp3"
+      },
+      "registerNotes": "Ngerti は mengerti の話し言葉。だれにでもやわらかく言うなら kurang（あまり〜ない）を使います：Maaf, saya kurang mengerti。",
+      "audio": "audio/id/casual/cas-02.mp3",
+      "tags": [
+        "くだけた言い方",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-03",
+      "register": "casual",
+      "indonesian": "Nggak usah.",
+      "japanese": "いいよ、いらない。／気にしないで。",
+      "polite": {
+        "indonesian": "Tidak usah.",
+        "audio": "audio/id/casual/cas-03-polite.mp3"
+      },
+      "registerNotes": "すすめを断る時に：Nggak usah, makasih。動詞の前では「〜しなくていい」：Nggak usah bayar（払わなくていいよ）。",
+      "audio": "audio/id/casual/cas-03.mp3",
+      "tags": [
+        "くだけた言い方",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-04",
+      "register": "casual",
+      "indonesian": "Nggak apa-apa.",
+      "japanese": "大丈夫。／気にしないで。",
+      "polite": {
+        "indonesian": "Tidak apa-apa.",
+        "audio": "audio/id/casual/cas-04-polite.mp3"
+      },
+      "registerNotes": "謝られた時、ちょっとした失敗、「大丈夫？」と聞かれた時の万能の返事。早口では nggak papa に縮まります。",
+      "cultureNote": "本当は大丈夫でない時にも、その場を丸くおさめるために言います。日本語の「大丈夫です」と同じで、言葉だけでなく口調も聞きましょう。",
+      "audio": "audio/id/casual/cas-04.mp3",
+      "tags": [
+        "くだけた言い方",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-05",
+      "register": "casual",
+      "indonesian": "Beneran nggak apa-apa?",
+      "japanese": "本当に大丈夫？",
+      "polite": {
+        "indonesian": "Benar tidak apa-apa?",
+        "audio": "audio/id/casual/cas-05-polite.mp3"
+      },
+      "registerNotes": "Beneran（本当に）は benar（正しい）から。手伝いを断られたり「気にしないで」と言われたりした時、もう一度聞くのはふつうのことです。",
+      "audio": "audio/id/casual/cas-05.mp3",
+      "tags": [
+        "くだけた言い方"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-06",
+      "register": "casual",
+      "indonesian": "Makasih, ya.",
+      "japanese": "ありがとね。",
+      "polite": {
+        "indonesian": "Terima kasih.",
+        "audio": "audio/id/casual/cas-06-polite.mp3"
+      },
+      "registerNotes": "Makasih は terima kasih を短くした形で、ya で温かくなります。友だちや、気軽な店の若い店員さんならOK。年上の人には terima kasih を。",
+      "audio": "audio/id/casual/cas-06.mp3",
+      "tags": [
+        "くだけた言い方",
+        "お礼"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-07",
+      "register": "casual",
+      "indonesian": "Bentar, ya.",
+      "japanese": "ちょっと待って。",
+      "polite": {
+        "indonesian": "Sebentar, ya.",
+        "audio": "audio/id/casual/cas-07-polite.mp3"
+      },
+      "registerNotes": "Bentar は sebentar の se- を落とした形。店員さんは Tunggu sebentar, ya（少々お待ちください）、あらたまると Mohon tunggu sebentar と言います。",
+      "audio": "audio/id/casual/cas-07.mp3",
+      "tags": [
+        "くだけた言い方",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-08",
+      "register": "casual",
+      "indonesian": "Aku juga.",
+      "japanese": "私も。／僕も。",
+      "polite": {
+        "indonesian": "Saya juga.",
+        "audio": "audio/id/casual/cas-08-polite.mp3"
+      },
+      "registerNotes": "Aku は友だち、恋人、同年代か年下の家族に使う「私」。ほかの人には saya を。saya と aku は、「私」と「僕・あたし」の関係に近いです。",
+      "pitfallNote": "年上の人にこちらから aku を使うと、なれなれしく聞こえます。相手が aku と kamu を使い始めるまで待ちましょう。",
+      "audio": "audio/id/casual/cas-08.mp3",
+      "tags": [
+        "くだけた言い方",
+        "代名詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-09",
+      "register": "casual",
+      "indonesian": "Kamu mau minum apa?",
+      "japanese": "何飲む？",
+      "polite": {
+        "indonesian": "Ibu mau minum apa?",
+        "audio": "audio/id/casual/cas-09-polite.mp3"
+      },
+      "registerNotes": "Kamu は友だち・恋人・子どもに使う「あなた」。年上の人には Bapak・Ibu や名前を使い、Anda は面と向かってはあまり使いません。日本語で目上の人に「あなた」と言わないのと同じです。",
+      "pitfallNote": "年上の知らない人に kamu と言うと、見下しているように聞こえます。",
+      "audio": "audio/id/casual/cas-09.mp3",
+      "tags": [
+        "くだけた言い方",
+        "代名詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-10",
+      "register": "casual",
+      "indonesian": "Lagi apa?",
+      "japanese": "何してる？",
+      "polite": {
+        "indonesian": "Sedang apa?",
+        "audio": "audio/id/casual/cas-10-polite.mp3"
+      },
+      "registerNotes": "Lagi は話し言葉の sedang（〜している最中）。友だちやカップルの間の、定番の最初のメッセージです。",
+      "audio": "audio/id/casual/cas-10.mp3",
+      "tags": [
+        "くだけた言い方",
+        "lagi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-11",
+      "register": "casual",
+      "indonesian": "Aku lagi masak.",
+      "japanese": "料理してるとこ。",
+      "polite": {
+        "indonesian": "Saya sedang memasak.",
+        "audio": "audio/id/casual/cas-11-polite.mp3"
+      },
+      "registerNotes": "くだけた話し方では、標準語なら me- がつく動詞（memasak）も、元の形（masak）で言います。どの動詞の前でも lagi で「〜しているところ」：lagi makan、lagi kerja。",
+      "audio": "audio/id/casual/cas-11.mp3",
+      "tags": [
+        "くだけた言い方",
+        "lagi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-12",
+      "register": "casual",
+      "indonesian": "Udah sampai rumah?",
+      "japanese": "家に着いた？",
+      "polite": {
+        "indonesian": "Sudah sampai rumah?",
+        "audio": "audio/id/casual/cas-12-polite.mp3"
+      },
+      "registerNotes": "Udah は話し言葉の sudah。返事は Udah, makasih。",
+      "cultureNote": "別れた後、友だちや家族からこのメッセージが来ます。本当に返事を待っているので、必ず返しましょう。",
+      "audio": "audio/id/casual/cas-12.mp3",
+      "tags": [
+        "くだけた言い方",
+        "udah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-13",
+      "register": "casual",
+      "indonesian": "Udah siap belum?",
+      "japanese": "もう準備できた？",
+      "polite": {
+        "indonesian": "Sudah siap?",
+        "audio": "audio/id/casual/cas-13-polite.mp3"
+      },
+      "registerNotes": "最後に belum をつけると「もう〜した？まだ？」という、とてもよく使う聞き方になります。答えは Udah か Belum。",
+      "audio": "audio/id/casual/cas-13.mp3",
+      "tags": [
+        "くだけた言い方",
+        "udah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-14",
+      "register": "casual",
+      "indonesian": "Belum, bentar lagi.",
+      "japanese": "まだ、もうすぐ。",
+      "polite": {
+        "indonesian": "Belum, sebentar lagi.",
+        "audio": "audio/id/casual/cas-14-polite.mp3"
+      },
+      "registerNotes": "Bentar lagi（もうすぐ）は幅が広く、1分のことも30分のこともあります。",
+      "pitfallNote": "udah の質問への「いいえ」は、nggak ではなく belum（まだ）です。nggak と言うと「この先もしない」ように聞こえます。",
+      "audio": "audio/id/casual/cas-14.mp3",
+      "tags": [
+        "くだけた言い方",
+        "udah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-15",
+      "register": "casual",
+      "indonesian": "Gimana kabarnya?",
+      "japanese": "元気？／最近どう？",
+      "polite": {
+        "indonesian": "Bagaimana kabarnya?",
+        "audio": "audio/id/casual/cas-15-polite.mp3"
+      },
+      "registerNotes": "Gimana は bagaimana の話し言葉。Gimana? だけなら「で、どうだった？」という意味です。",
+      "audio": "audio/id/casual/cas-15.mp3",
+      "tags": [
+        "くだけた言い方",
+        "あいさつ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-16",
+      "register": "casual",
+      "indonesian": "Kamu kenapa?",
+      "japanese": "どうしたの？／大丈夫？",
+      "polite": {
+        "indonesian": "Ibu kenapa?",
+        "audio": "audio/id/casual/cas-16-polite.mp3"
+      },
+      "registerNotes": "Kenapa は「なぜ」ですが、人の後ろに置くと「どうしたの？」と様子をたずねる言い方になります。相手が落ちこんでいたり具合が悪そうだったりする時に、心配して言います。",
+      "audio": "audio/id/casual/cas-16.mp3",
+      "tags": [
+        "くだけた言い方",
+        "質問"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-17",
+      "register": "casual",
+      "indonesian": "Emang kenapa?",
+      "japanese": "え、それがどうかした？",
+      "polite": {
+        "indonesian": "Memangnya kenapa?",
+        "audio": "audio/id/casual/cas-17-polite.mp3"
+      },
+      "registerNotes": "Emang は memang の話し言葉。自分の言ったことやしたことに、相手が驚いた時に言います。",
+      "pitfallNote": "きつい口調だと「だから何？」と反発しているように聞こえます。軽く言いましょう。",
+      "audio": "audio/id/casual/cas-17.mp3",
+      "tags": [
+        "くだけた言い方",
+        "質問"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-18",
+      "register": "casual",
+      "indonesian": "Capek banget.",
+      "japanese": "すごく疲れた。",
+      "polite": {
+        "indonesian": "Saya capek sekali.",
+        "audio": "audio/id/casual/cas-18-polite.mp3"
+      },
+      "registerNotes": "言葉の後ろの banget は「とても」で、いちばん強くてくだけた言い方です。Capek は、体の疲れにも、何かにうんざりした時にも使う「疲れた」です。",
+      "pitfallNote": "Banget は必ず後ろ：capek banget であって、banget capek ではありません。日本語の「すごく疲れた」の順番につられないように。",
+      "audio": "audio/id/casual/cas-18.mp3",
+      "tags": [
+        "くだけた言い方",
+        "banget"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-19",
+      "register": "casual",
+      "indonesian": "Panas banget, ya.",
+      "japanese": "すごく暑いね。",
+      "polite": {
+        "indonesian": "Panas sekali, ya.",
+        "audio": "audio/id/casual/cas-19-polite.mp3"
+      },
+      "registerNotes": "天気は話しかけやすい話題。最後の ya で、相手に同意を求める「〜ね」になります。",
+      "audio": "audio/id/casual/cas-19.mp3",
+      "tags": [
+        "くだけた言い方",
+        "banget"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-20",
+      "register": "casual",
+      "indonesian": "Mantap!",
+      "japanese": "最高！／いいね！",
+      "polite": {
+        "indonesian": "Bagus sekali.",
+        "audio": "audio/id/casual/cas-20-polite.mp3"
+      },
+      "registerNotes": "おいしい料理、いい知らせ、よくできた仕事に。友だちの間や SNS でよく使います。年上の人には Bagus sekali や Enak sekali を。",
+      "audio": "audio/id/casual/cas-20.mp3",
+      "tags": [
+        "くだけた言い方",
+        "あいづち"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-21",
+      "register": "casual",
+      "indonesian": "Kok belum tidur?",
+      "japanese": "なんでまだ起きてるの？",
+      "polite": {
+        "indonesian": "Kenapa belum tidur?",
+        "audio": "audio/id/casual/cas-21-polite.mp3"
+      },
+      "registerNotes": "文の最初の kok は、驚いて「なんで？」と聞く言い方：思っていたのとちがう、という気持ちです。",
+      "audio": "audio/id/casual/cas-21.mp3",
+      "tags": [
+        "くだけた言い方",
+        "kok"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-22",
+      "register": "casual",
+      "indonesian": "Nggak jauh kok.",
+      "japanese": "遠くないよ、ほんとに。",
+      "polite": {
+        "indonesian": "Tidak jauh.",
+        "audio": "audio/id/casual/cas-22-polite.mp3"
+      },
+      "registerNotes": "文の最後の kok は、相手の心配に答えて安心させる「〜よ」：Enak kok（おいしいってば）。どちらの kok もくだけた言い方です。",
+      "audio": "audio/id/casual/cas-22.mp3",
+      "tags": [
+        "くだけた言い方",
+        "kok"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-23",
+      "register": "casual",
+      "indonesian": "Kamu tinggal di mana sih?",
+      "japanese": "で、どこに住んでるの？",
+      "polite": {
+        "indonesian": "Bapak tinggal di mana?",
+        "audio": "audio/id/casual/cas-23-polite.mp3"
+      },
+      "registerNotes": "Sih は質問をやわらげ、書類の質問のようではなく、興味をもったおしゃべりらしくします。",
+      "pitfallNote": "きつい口調の sih は、いらだって聞こえます：Apa sih? は「何なの、もう」。",
+      "audio": "audio/id/casual/cas-23.mp3",
+      "tags": [
+        "くだけた言い方",
+        "sih"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-24",
+      "register": "casual",
+      "indonesian": "Bagus sih, tapi mahal.",
+      "japanese": "いいんだけど、高いね。",
+      "polite": {
+        "indonesian": "Memang bagus, tetapi mahal.",
+        "audio": "audio/id/casual/cas-24-polite.mp3"
+      },
+      "registerNotes": "前半の後ろに sih をつけると、「それは認めるけど」とまず認めてから「でも」につなげます。日本語の「いいんだけどね…」に似た、やんわり断る言い方です。",
+      "audio": "audio/id/casual/cas-24.mp3",
+      "tags": [
+        "くだけた言い方",
+        "sih"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-25",
+      "register": "casual",
+      "indonesian": "Ikut dong!",
+      "japanese": "私も行きたい！",
+      "polite": {
+        "indonesian": "Boleh saya ikut?",
+        "audio": "audio/id/casual/cas-25-polite.mp3"
+      },
+      "registerNotes": "Dong は、頼みや提案に親しげな押しを加えます。年上の人には、boleh を使って許可を求めましょう。",
+      "pitfallNote": "dong は友だちだけに。年上や目上の人への頼みに使うと、押しつけがましく聞こえます。",
+      "audio": "audio/id/casual/cas-25.mp3",
+      "tags": [
+        "くだけた言い方",
+        "dong"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-26",
+      "register": "casual",
+      "indonesian": "Bantuin dong.",
+      "japanese": "ちょっと手伝ってよ。",
+      "polite": {
+        "indonesian": "Bisa tolong bantu saya?",
+        "audio": "audio/id/casual/cas-26-polite.mp3"
+      },
+      "registerNotes": "-in はジャカルタのくだけた語尾で、-kan や -i のかわりに使います：bantuin、beliin、ambilin。「〜してあげる」「〜してくれる」の意味になることがよくあります。",
+      "audio": "audio/id/casual/cas-26.mp3",
+      "tags": [
+        "くだけた言い方",
+        "dong"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cas-27",
+      "register": "casual",
+      "indonesian": "Aku pesan ini aja, deh.",
+      "japanese": "じゃあ、これにしよう。",
+      "polite": {
+        "indonesian": "Saya pesan ini saja.",
+        "audio": "audio/id/casual/cas-27-polite.mp3"
+      },
+      "registerNotes": "Aja は saja（〜だけ）の話し言葉。Deh は、少し迷ったあとで「じゃあ、そうする」と決めた気持ちを表します。",
+      "audio": "audio/id/casual/cas-27.mp3",
+      "tags": [
+        "くだけた言い方",
+        "deh"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-28",
+      "register": "casual",
+      "indonesian": "Terserah kamu aja.",
+      "japanese": "任せるよ。",
+      "polite": {
+        "indonesian": "Terserah Ibu saja.",
+        "audio": "audio/id/casual/cas-28-polite.mp3"
+      },
+      "registerNotes": "Terserah は「〜しだい」「〜に任せる」。年上の男性には Terserah Bapak saja。",
+      "pitfallNote": "Terserah だけをそっけなく言うと「勝手にすれば」「どうでもいい」に聞こえ、すねているようです。",
+      "audio": "audio/id/casual/cas-28.mp3",
+      "tags": [
+        "くだけた言い方",
+        "aja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-29",
+      "register": "casual",
+      "indonesian": "Ya udah, deh.",
+      "japanese": "まあ、いいか。",
+      "polite": {
+        "indonesian": "Baiklah, kalau begitu.",
+        "audio": "audio/id/casual/cas-29-polite.mp3"
+      },
+      "registerNotes": "Ya udah は、話を終わらせたり、変えられないことを受け入れたりする時に。deh で、折れる感じがやわらぎます。Ya udah, nggak apa-apa は「まあいいよ、大丈夫」。",
+      "audio": "audio/id/casual/cas-29.mp3",
+      "tags": [
+        "くだけた言い方",
+        "deh"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-30",
+      "register": "casual",
+      "indonesian": "Aku duluan, ya.",
+      "japanese": "お先に。／先に行くね。",
+      "polite": {
+        "indonesian": "Saya permisi dulu.",
+        "audio": "audio/id/casual/cas-30-polite.mp3"
+      },
+      "registerNotes": "Duluan はほかの人より先に行くことで、日本語の「お先に」とほぼ同じです。返事は Iya, hati-hati（うん、気をつけてね）。",
+      "audio": "audio/id/casual/cas-30.mp3",
+      "tags": [
+        "くだけた言い方",
+        "別れ"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

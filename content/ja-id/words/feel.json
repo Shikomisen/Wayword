@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "id": "words-feel",
+  "title": "気持ち・反応",
+  "description": "ほっとした、恥ずかしい、感動した、気になってしかたない。一歩進んだ気持ちの言葉と、galau や gemas など友達どうしでよく使う言葉。それぞれがどんな気持ちを表すのかも。",
+  "items": [
+    {
+      "id": "w-bahagia",
+      "indonesian": "bahagia",
+      "japanese": "幸せな",
+      "pos": "adjective",
+      "registerNotes": "幸せな人生や結婚のような、深く長く続く幸せ：Semoga bahagia（お幸せに）。何かが「うれしい」ときは、日常語の senang を使います。",
+      "audio": "audio/id/words/w-bahagia.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kecewa",
+      "indonesian": "kecewa",
+      "japanese": "がっかりした",
+      "pos": "adjective",
+      "registerNotes": "Saya kecewa dengan pelayanannya（サービスにはがっかりしました）は、きっぱりしつつもていねいな苦情の言い方です。",
+      "audio": "audio/id/words/w-kecewa.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kaget",
+      "indonesian": "kaget",
+      "japanese": "びっくりした、驚いた",
+      "pos": "adjective",
+      "registerNotes": "日常の言葉で、terkejut はより改まった言い方。Bikin kaget aja（もう、びっくりさせないでよ）がくだけた反応です。",
+      "audio": "audio/id/words/w-kaget.mp3",
+      "tags": [
+        "気持ち",
+        "あいづち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bingung",
+      "indonesian": "bingung",
+      "japanese": "混乱した；迷っている",
+      "pos": "adjective",
+      "registerNotes": "わけがわからないときにも、決められずに迷うときにも使います：Saya bingung mau pilih yang mana（どれにするか迷っています）。",
+      "audio": "audio/id/words/w-bingung.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-malu",
+      "indonesian": "malu",
+      "japanese": "恥ずかしい、照れくさい；恥じている",
+      "pos": "adjective",
+      "cultureNote": "malu は、人前で面目を失うことに関わる強い感情で、日本の「恥」の感覚に近いものです。ホストは Jangan malu-malu（遠慮しないで）と言って、客に食べ物をすすめます。",
+      "audio": "audio/id/words/w-malu.mp3",
+      "tags": [
+        "気持ち",
+        "文化"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bangga",
+      "indonesian": "bangga",
+      "japanese": "誇りに思う",
+      "pos": "adjective",
+      "registerNotes": "「〜を誇りに思う」は bangga sama、ていねいには bangga dengan：Aku bangga sama kamu（あなたを誇りに思うよ）。",
+      "audio": "audio/id/words/w-bangga.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-lega",
+      "indonesian": "lega",
+      "japanese": "ほっとした；ゆったりした",
+      "pos": "adjective",
+      "registerNotes": "何かが終わって、ふうっと息をつくときに：Lega rasanya（ああ、ほっとした）。部屋や道について言うと「広々とした」の意味です。",
+      "audio": "audio/id/words/w-lega.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kesal",
+      "indonesian": "kesal",
+      "japanese": "いらいらした、むっとした",
+      "pos": "adjective",
+      "registerNotes": "くだけて kesel。Saya agak kesal（ちょっとむっとしています）は控えめな言い方で、はっきり怒っているなら marah。",
+      "audio": "audio/id/words/w-kesal.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sebal",
+      "indonesian": "sebal",
+      "japanese": "むかつく、うんざりした",
+      "pos": "adjective",
+      "registerNotes": "ほとんどくだけた会話で使い、発音は sebel：Sebel deh（もう、むかつく）。kesal よりすねた感じで、半分冗談のことも多いです。",
+      "audio": "audio/id/words/w-sebal.mp3",
+      "tags": [
+        "気持ち",
+        "くだけた言い方"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gugup",
+      "indonesian": "gugup",
+      "japanese": "緊張した",
+      "pos": "adjective",
+      "registerNotes": "くだけて grogi（英語の groggy から）。人前で話す前や、初対面の人に会うときの緊張によく使います：Aku grogi banget（すごく緊張する）。",
+      "audio": "audio/id/words/w-gugup.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-iri",
+      "indonesian": "iri",
+      "japanese": "うらやましい",
+      "pos": "adjective",
+      "registerNotes": "Jadi iri, deh（いいなあ、うらやましい）は、人のいい知らせへの、冗談まじりの気さくな返事です。",
+      "pitfallNote": "日本語の「うらやましい」と「やきもち」の区別と同じです。人の持っているものがほしいのは iri、恋愛のやきもちは cemburu。",
+      "audio": "audio/id/words/w-iri.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-cemburu",
+      "indonesian": "cemburu",
+      "japanese": "やきもちを焼く、嫉妬する（恋愛で）",
+      "pos": "adjective",
+      "registerNotes": "恋人や配偶者へのやきもちに：Pacarnya gampang cemburu（あの子の彼氏はすぐやきもちを焼く）。",
+      "audio": "audio/id/words/w-cemburu.mp3",
+      "tags": [
+        "気持ち",
+        "恋愛"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-terharu",
+      "indonesian": "terharu",
+      "japanese": "感動した、胸を打たれた",
+      "pos": "adjective",
+      "registerNotes": "スピーチや思いやりのある行い、結婚式などで胸がいっぱいになったときに：Saya terharu sekali（とても感動しました）。",
+      "audio": "audio/id/words/w-terharu.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-cemas",
+      "indonesian": "cemas",
+      "japanese": "不安な、心配な",
+      "pos": "adjective",
+      "registerNotes": "落ち着かない心配が続く感じで、khawatir より改まった言葉。くだけた会話では khawatir や、kepikiran（気になって頭から離れない）と言います。",
+      "audio": "audio/id/words/w-cemas.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-puas",
+      "indonesian": "puas",
+      "japanese": "満足した",
+      "pos": "adjective",
+      "registerNotes": "sampai puas は「心ゆくまで、気がすむまで」：makan sampai puas（好きなだけ食べる）。",
+      "audio": "audio/id/words/w-puas.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gemas",
+      "indonesian": "gemas",
+      "japanese": "かわいくてたまらない；もどかしい",
+      "pos": "adjective",
+      "registerNotes": "ふだんは gemes と発音します。ぽっちゃりした赤ちゃんや子猫をぎゅっとしたくなる、「かわいすぎてたまらない」気持ち。相手がのろのろしていたり、ばかなことをしていたりするときの「もどかしい、じれったい」にも使います。",
+      "audio": "audio/id/words/w-gemas.mp3",
+      "tags": [
+        "気持ち",
+        "くだけた言い方"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sabar",
+      "indonesian": "sabar",
+      "japanese": "我慢強い、辛抱強い",
+      "pos": "adjective",
+      "registerNotes": "Sabar, ya（もう少しの辛抱だよ）は、待っている人やつらい時期にいる人を励ます言葉です。",
+      "cultureNote": "忍耐と落ち着きはとても大切にされます。人前でかっとなると、どちらが悪くても、怒った側が面目を失います。",
+      "audio": "audio/id/words/w-sabar.mp3",
+      "tags": [
+        "気持ち",
+        "文化"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-semangat",
+      "indonesian": "semangat",
+      "japanese": "やる気、意気込み；（人に）がんばって",
+      "pos": "noun",
+      "registerNotes": "日本語の「がんばって！」にあたり、試験の前や長い一日の前に、これだけで相手を励まします：Semangat, ya. Lagi semangat は「やる気満々」という意味です。",
+      "audio": "audio/id/words/w-semangat.mp3",
+      "tags": [
+        "気持ち",
+        "はげまし"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-galau",
+      "indonesian": "galau",
+      "japanese": "もやもやした、落ち着かない、気分が晴れない",
+      "pos": "adjective",
+      "registerNotes": "落ち着かず、どうしていいかわからない気分を表すスラングで、恋愛がらみのことが多いです：Lagi galau, ya?（もやもやしてるの？）。友達どうしで使い、改まった場では使いません。",
+      "audio": "audio/id/words/w-galau.mp3",
+      "tags": [
+        "気持ち",
+        "くだけた言い方"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-ngantuk",
+      "indonesian": "ngantuk",
+      "japanese": "眠い",
+      "pos": "adjective",
+      "registerNotes": "誰もがこう言います。書き言葉では mengantuk。Ngantuk berat（すごく眠い）は、たっぷりの昼ごはんのあとによく聞きます。",
+      "audio": "audio/id/words/w-ngantuk.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kesepian",
+      "indonesian": "kesepian",
+      "japanese": "さびしい、孤独な",
+      "pos": "adjective",
+      "forms": {
+        "root": "sepi"
+      },
+      "registerNotes": "sepi（静かな、人けのない）から：ひとりになって、さびしさを感じること。Saya kesepian di sini（ここではさびしいです）。",
+      "audio": "audio/id/words/w-kesepian.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sayang",
+      "indonesian": "sayang",
+      "japanese": "愛する、大切に思う、かわいがる",
+      "pos": "verb",
+      "registerNotes": "cinta より温かくやわらかい言葉で、恋人にも子どもにも家族にも使います：Aku sayang kamu（大好きだよ）。",
+      "pitfallNote": "恋人への呼びかけ（Sayang, sudah makan? ねえ、ごはん食べた？）や「残念」（Sayang sekali とても残念）の意味もあるので、どれなのか聞き分けましょう。",
+      "audio": "audio/id/words/w-sayang.mp3",
+      "tags": [
+        "気持ち",
+        "恋愛"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bersyukur",
+      "indonesian": "bersyukur",
+      "japanese": "感謝する、ありがたく思う",
+      "pos": "verb",
+      "forms": {
+        "root": "syukur"
+      },
+      "registerNotes": "神への感謝の気持ちを込めることが多い言葉：Kita harus bersyukur（今あるものに感謝しないとね）。Syukurlah は「ああ、よかった」。",
+      "audio": "audio/id/words/w-bersyukur.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menyesal",
+      "indonesian": "menyesal",
+      "japanese": "後悔する、悔やむ",
+      "pos": "verb",
+      "forms": {
+        "root": "sesal"
+      },
+      "registerNotes": "くだけて nyesel：Nyesel nggak ikut（行けばよかった）。",
+      "pitfallNote": "Saya menyesal は本当の後悔か、重い謝罪です。日常の「すみません」は maaf。",
+      "audio": "audio/id/words/w-menyesal.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tertarik",
+      "indonesian": "tertarik",
+      "japanese": "興味がある、惹かれる",
+      "pos": "adjective",
+      "forms": {
+        "root": "tarik"
+      },
+      "registerNotes": "tarik（引く。ドアの「引く」の表示）から：何かに引き寄せられること。Saya tertarik dengan budaya Jawa（ジャワの文化に興味があります）。",
+      "audio": "audio/id/words/w-tertarik.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-penasaran",
+      "indonesian": "penasaran",
+      "japanese": "気になる、知りたくてたまらない",
+      "pos": "adjective",
+      "registerNotes": "ただの「気になる」より強く、わかるまで頭から離れない感じ。Jadi penasaran（そう言われると気になる）は、思わせぶりな話へのよくある返事です。",
+      "audio": "audio/id/words/w-penasaran.mp3",
+      "tags": [
+        "気持ち"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-se",
+  "connector": "se-, sama, seperti",
+  "gloss": "as … as; one; the same",
+  "title": "se- — as … as, one, the same",
+  "pattern": "A tidak se- + describing word + B · A sama dengan B · seperti B · se- = one: sehari, sekali",
+  "explanation": "se- on a describing word means as … as, with what you compare straight after: Kotanya tidak sebesar Jakarta (The city isn't as big as Jakarta), and sebanyak, secepat and semahal work the same way. To say two things are the same, use sama … dengan: Harganya sama dengan kemarin, Tingginya sama dengan saya (He's as tall as me); for like, use seperti: seperti ini (like this), Rasanya seperti rendang (It tastes like rendang). On a counting or time word se- means one: sehari (one day, a day), seminggu (a week), sekali (once). On a few nouns it means the same one, or the whole one: teman serumah (a housemate), Bapak sekeluarga (you and all your family). sekali also means very after a describing word, so seminggu sekali is once a week, but enak sekali is really tasty.",
+  "natural": "Comparing prices, sizes and places as you go: Tidak semahal di Bali (It's not as pricey as in Bali), Sama dengan yang kemarin. In casual speech seperti becomes kayak: kayak gini (like this).",
+  "stiff": "Don't use sebagai for like: it means in the role of (Dia bekerja sebagai guru, She works as a teacher). And sama goes with dengan, never dari or daripada, which belong with lebih.",
+  "examples": [
+    {
+      "id": "gx-se-1",
+      "indonesian": "Kotanya tidak sebesar Jakarta.",
+      "english": "The city isn't as big as Jakarta.",
+      "chunks": [
+        {
+          "t": "Kotanya ",
+          "w": "w-kota"
+        },
+        {
+          "t": "tidak ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "sebesar ",
+          "w": "w-besar"
+        },
+        {
+          "t": "Jakarta."
+        }
+      ],
+      "gap": {
+        "before": "Kotanya tidak ",
+        "answer": "sebesar",
+        "after": " Jakarta.",
+        "options": [
+          "sebesar",
+          "lebih besar",
+          "terbesar"
+        ],
+        "why": "As big as is se- + besar, with Jakarta straight after; lebih besar would need dari."
+      },
+      "audio": "audio/id/grammar/gx-se-1.mp3",
+      "tags": [
+        "grammar",
+        "se"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-se-2",
+      "indonesian": "Harganya sama dengan kemarin.",
+      "english": "It's the same price as yesterday.",
+      "chunks": [
+        {
+          "t": "Harganya ",
+          "w": "w-harga"
+        },
+        {
+          "t": "sama "
+        },
+        {
+          "t": "dengan "
+        },
+        {
+          "t": "kemarin.",
+          "w": "w-kemarin"
+        }
+      ],
+      "gap": {
+        "before": "Harganya sama ",
+        "answer": "dengan",
+        "after": " kemarin.",
+        "options": [
+          "dengan",
+          "dari",
+          "daripada"
+        ],
+        "why": "The same as is sama dengan; dari and daripada go with lebih."
+      },
+      "audio": "audio/id/grammar/gx-se-2.mp3",
+      "tags": [
+        "grammar",
+        "se"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-se-3",
+      "indonesian": "Rasanya seperti masakan ibu saya.",
+      "english": "It tastes like my mum's cooking.",
+      "chunks": [
+        {
+          "t": "Rasanya "
+        },
+        {
+          "t": "seperti "
+        },
+        {
+          "t": "masakan ",
+          "w": "w-masak"
+        },
+        {
+          "t": "ibu ",
+          "w": "w-ibu"
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "Rasanya ",
+        "answer": "seperti",
+        "after": " masakan ibu saya.",
+        "options": [
+          "seperti",
+          "sebagai",
+          "sama"
+        ],
+        "why": "Like, meaning similar to, is seperti; sebagai means in the role of."
+      },
+      "audio": "audio/id/grammar/gx-se-3.mp3",
+      "tags": [
+        "grammar",
+        "se"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-se-4",
+      "indonesian": "Saya kerja delapan jam sehari.",
+      "english": "I work eight hours a day.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "kerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "delapan jam ",
+          "w": "w-jam"
+        },
+        {
+          "t": "sehari.",
+          "w": "w-hari"
+        }
+      ],
+      "gap": {
+        "before": "Saya kerja delapan jam ",
+        "answer": "sehari",
+        "after": ".",
+        "options": [
+          "sehari",
+          "hari",
+          "sekali"
+        ],
+        "why": "A day, as in per day, is se- + hari; delapan jam sekali would be once every eight hours."
+      },
+      "audio": "audio/id/grammar/gx-se-4.mp3",
+      "tags": [
+        "grammar",
+        "se"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

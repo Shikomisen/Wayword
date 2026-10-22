@@ -1,0 +1,529 @@
+{
+  "schemaVersion": 1,
+  "id": "casual",
+  "title": "Casual Speech",
+  "order": 4,
+  "description": "How friends, partners and people your age really talk: nggak, udah, aja, banget, and the little words kok, sih, dong and deh. Each one comes with the standard version to use with a stranger or someone older.",
+  "phrases": [
+    {
+      "id": "cas-01",
+      "register": "casual",
+      "indonesian": "Nggak tahu.",
+      "english": "I don't know.",
+      "polite": {
+        "indonesian": "Saya tidak tahu.",
+        "audio": "audio/id/casual/cas-01-polite.mp3"
+      },
+      "registerNotes": "Nggak is the everyday spoken tidak. With friends and people your age; tidak with strangers and elders.",
+      "pitfallNote": "In messages it's often spelt gak or ga, and tahu is often tau.",
+      "audio": "audio/id/casual/cas-01.mp3",
+      "tags": [
+        "casual",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-02",
+      "register": "casual",
+      "indonesian": "Nggak ngerti.",
+      "english": "I don't get it.",
+      "polite": {
+        "indonesian": "Saya tidak mengerti.",
+        "audio": "audio/id/casual/cas-02-polite.mp3"
+      },
+      "registerNotes": "Ngerti is the spoken form of mengerti. To soften it with anyone, say kurang (not quite): Maaf, saya kurang mengerti.",
+      "audio": "audio/id/casual/cas-02.mp3",
+      "tags": [
+        "casual",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-03",
+      "register": "casual",
+      "indonesian": "Nggak usah.",
+      "english": "No need. / Don't bother.",
+      "polite": {
+        "indonesian": "Tidak usah.",
+        "audio": "audio/id/casual/cas-03-polite.mp3"
+      },
+      "registerNotes": "How you turn down an offer: Nggak usah, makasih. Before a verb it means 'no need to': Nggak usah bayar (You don't have to pay).",
+      "audio": "audio/id/casual/cas-03.mp3",
+      "tags": [
+        "casual",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-04",
+      "register": "casual",
+      "indonesian": "Nggak apa-apa.",
+      "english": "It's fine. / No worries.",
+      "polite": {
+        "indonesian": "Tidak apa-apa.",
+        "audio": "audio/id/casual/cas-04-polite.mp3"
+      },
+      "registerNotes": "The all-purpose reply to an apology, a mishap or Are you OK? In fast speech it shrinks to nggak papa.",
+      "cultureNote": "It's also said to smooth things over when something isn't really fine, so listen to the tone as well as the words.",
+      "audio": "audio/id/casual/cas-04.mp3",
+      "tags": [
+        "casual",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-05",
+      "register": "casual",
+      "indonesian": "Beneran nggak apa-apa?",
+      "english": "Are you sure it's OK?",
+      "polite": {
+        "indonesian": "Benar tidak apa-apa?",
+        "audio": "audio/id/casual/cas-05-polite.mp3"
+      },
+      "registerNotes": "Beneran (really) comes from benar (true). Asking twice is normal when someone turns down help or says not to worry.",
+      "audio": "audio/id/casual/cas-05.mp3",
+      "tags": [
+        "casual"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-06",
+      "register": "casual",
+      "indonesian": "Makasih, ya.",
+      "english": "Thanks.",
+      "polite": {
+        "indonesian": "Terima kasih.",
+        "audio": "audio/id/casual/cas-06-polite.mp3"
+      },
+      "registerNotes": "Makasih is terima kasih clipped; ya makes it warm. Fine with friends, and with younger staff in a relaxed place; terima kasih with anyone older.",
+      "audio": "audio/id/casual/cas-06.mp3",
+      "tags": [
+        "casual",
+        "thanks"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-07",
+      "register": "casual",
+      "indonesian": "Bentar, ya.",
+      "english": "Just a sec.",
+      "polite": {
+        "indonesian": "Sebentar, ya.",
+        "audio": "audio/id/casual/cas-07-polite.mp3"
+      },
+      "registerNotes": "Bentar is sebentar with the se- dropped. Staff say Tunggu sebentar, ya (Wait a moment, please) or, formally, Mohon tunggu sebentar.",
+      "audio": "audio/id/casual/cas-07.mp3",
+      "tags": [
+        "casual",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-08",
+      "register": "casual",
+      "indonesian": "Aku juga.",
+      "english": "Me too.",
+      "polite": {
+        "indonesian": "Saya juga.",
+        "audio": "audio/id/casual/cas-08-polite.mp3"
+      },
+      "registerNotes": "Aku is 'I' with friends, a partner, and family your age or younger; saya with everyone else.",
+      "pitfallNote": "Switching to aku with someone older can sound presumptuous. Wait until they use aku and kamu with you.",
+      "audio": "audio/id/casual/cas-08.mp3",
+      "tags": [
+        "casual",
+        "pronouns"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-09",
+      "register": "casual",
+      "indonesian": "Kamu mau minum apa?",
+      "english": "What do you want to drink?",
+      "polite": {
+        "indonesian": "Ibu mau minum apa?",
+        "audio": "audio/id/casual/cas-09-polite.mp3"
+      },
+      "registerNotes": "Kamu is 'you' for friends, a partner and children. For anyone older, Indonesians say Bapak, Ibu or the person's name instead; Anda is rare face to face.",
+      "pitfallNote": "Kamu to an older stranger sounds like talking down to them.",
+      "audio": "audio/id/casual/cas-09.mp3",
+      "tags": [
+        "casual",
+        "pronouns"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-10",
+      "register": "casual",
+      "indonesian": "Lagi apa?",
+      "english": "What are you up to?",
+      "polite": {
+        "indonesian": "Sedang apa?",
+        "audio": "audio/id/casual/cas-10-polite.mp3"
+      },
+      "registerNotes": "Lagi is the spoken sedang: in the middle of. A classic opening message between friends and couples.",
+      "audio": "audio/id/casual/cas-10.mp3",
+      "tags": [
+        "casual",
+        "lagi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-11",
+      "register": "casual",
+      "indonesian": "Aku lagi masak.",
+      "english": "I'm cooking.",
+      "polite": {
+        "indonesian": "Saya sedang memasak.",
+        "audio": "audio/id/casual/cas-11-polite.mp3"
+      },
+      "registerNotes": "Casual speech uses the bare verb (masak) where standard speech adds me- (memasak). Lagi before any verb gives the '-ing': lagi makan, lagi kerja.",
+      "audio": "audio/id/casual/cas-11.mp3",
+      "tags": [
+        "casual",
+        "lagi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-12",
+      "register": "casual",
+      "indonesian": "Udah sampai rumah?",
+      "english": "Did you get home OK?",
+      "polite": {
+        "indonesian": "Sudah sampai rumah?",
+        "audio": "audio/id/casual/cas-12-polite.mp3"
+      },
+      "registerNotes": "Udah is the spoken sudah. The reply is Udah, makasih.",
+      "cultureNote": "Friends and family message this after you leave them, and they do wait for an answer.",
+      "audio": "audio/id/casual/cas-12.mp3",
+      "tags": [
+        "casual",
+        "udah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-13",
+      "register": "casual",
+      "indonesian": "Udah siap belum?",
+      "english": "Are you ready yet?",
+      "polite": {
+        "indonesian": "Sudah siap?",
+        "audio": "audio/id/casual/cas-13-polite.mp3"
+      },
+      "registerNotes": "Belum at the end turns it into 'yet or not?', a very common way to ask. Answer Udah or Belum.",
+      "audio": "audio/id/casual/cas-13.mp3",
+      "tags": [
+        "casual",
+        "udah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-14",
+      "register": "casual",
+      "indonesian": "Belum, bentar lagi.",
+      "english": "Not yet, nearly.",
+      "polite": {
+        "indonesian": "Belum, sebentar lagi.",
+        "audio": "audio/id/casual/cas-14-polite.mp3"
+      },
+      "registerNotes": "Bentar lagi (in a moment) is elastic, from a minute to half an hour.",
+      "pitfallNote": "The no to an udah question is belum (not yet), not nggak. Nggak sounds like it will never happen.",
+      "audio": "audio/id/casual/cas-14.mp3",
+      "tags": [
+        "casual",
+        "udah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-15",
+      "register": "casual",
+      "indonesian": "Gimana kabarnya?",
+      "english": "How are things?",
+      "polite": {
+        "indonesian": "Bagaimana kabarnya?",
+        "audio": "audio/id/casual/cas-15-polite.mp3"
+      },
+      "registerNotes": "Gimana is the spoken bagaimana. On its own, Gimana? means 'Well? How did it go?'",
+      "audio": "audio/id/casual/cas-15.mp3",
+      "tags": [
+        "casual",
+        "greetings"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-16",
+      "register": "casual",
+      "indonesian": "Kamu kenapa?",
+      "english": "What's wrong? / Are you OK?",
+      "polite": {
+        "indonesian": "Ibu kenapa?",
+        "audio": "audio/id/casual/cas-16-polite.mp3"
+      },
+      "registerNotes": "Kenapa is why, but after a person it asks what's the matter with them. Said with concern when someone looks upset or unwell.",
+      "audio": "audio/id/casual/cas-16.mp3",
+      "tags": [
+        "casual",
+        "questions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-17",
+      "register": "casual",
+      "indonesian": "Emang kenapa?",
+      "english": "Why, what's wrong with that?",
+      "polite": {
+        "indonesian": "Memangnya kenapa?",
+        "audio": "audio/id/casual/cas-17-polite.mp3"
+      },
+      "registerNotes": "Emang is the spoken memang. Said when someone is surprised at something you said or did.",
+      "pitfallNote": "With a sharp tone it sounds defensive, like 'So what?'. Keep it light.",
+      "audio": "audio/id/casual/cas-17.mp3",
+      "tags": [
+        "casual",
+        "questions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-18",
+      "register": "casual",
+      "indonesian": "Capek banget.",
+      "english": "I'm so tired.",
+      "polite": {
+        "indonesian": "Saya capek sekali.",
+        "audio": "audio/id/casual/cas-18-polite.mp3"
+      },
+      "registerNotes": "Banget after a word means very, the strongest and most casual way to say it. Capek is the everyday word for tired, physically or of something.",
+      "pitfallNote": "Banget goes after the word, never before: capek banget, not banget capek.",
+      "audio": "audio/id/casual/cas-18.mp3",
+      "tags": [
+        "casual",
+        "banget"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-19",
+      "register": "casual",
+      "indonesian": "Panas banget, ya.",
+      "english": "So hot, isn't it?",
+      "polite": {
+        "indonesian": "Panas sekali, ya.",
+        "audio": "audio/id/casual/cas-19-polite.mp3"
+      },
+      "registerNotes": "The weather is an easy opener. Ya at the end invites the other person to agree.",
+      "audio": "audio/id/casual/cas-19.mp3",
+      "tags": [
+        "casual",
+        "banget"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-20",
+      "register": "casual",
+      "indonesian": "Mantap!",
+      "english": "Awesome! / Nice one!",
+      "polite": {
+        "indonesian": "Bagus sekali.",
+        "audio": "audio/id/casual/cas-20-polite.mp3"
+      },
+      "registerNotes": "For good food, good news or a job well done. Very common among friends and on social media; with elders, say Bagus sekali or Enak sekali.",
+      "audio": "audio/id/casual/cas-20.mp3",
+      "tags": [
+        "casual",
+        "reactions"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-21",
+      "register": "casual",
+      "indonesian": "Kok belum tidur?",
+      "english": "How come you're still up?",
+      "polite": {
+        "indonesian": "Kenapa belum tidur?",
+        "audio": "audio/id/casual/cas-21-polite.mp3"
+      },
+      "registerNotes": "Kok at the start asks with surprise, like how come?: the speaker expected something else.",
+      "audio": "audio/id/casual/cas-21.mp3",
+      "tags": [
+        "casual",
+        "kok"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-22",
+      "register": "casual",
+      "indonesian": "Nggak jauh kok.",
+      "english": "It's not far, honestly.",
+      "polite": {
+        "indonesian": "Tidak jauh.",
+        "audio": "audio/id/casual/cas-22-polite.mp3"
+      },
+      "registerNotes": "Kok at the end reassures, answering a worry: Enak kok (It's good, really). Both uses of kok are casual.",
+      "audio": "audio/id/casual/cas-22.mp3",
+      "tags": [
+        "casual",
+        "kok"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-23",
+      "register": "casual",
+      "indonesian": "Kamu tinggal di mana sih?",
+      "english": "So where do you live, anyway?",
+      "polite": {
+        "indonesian": "Bapak tinggal di mana?",
+        "audio": "audio/id/casual/cas-23-polite.mp3"
+      },
+      "registerNotes": "Sih softens a question and makes it sound curious and chatty rather than like a form.",
+      "pitfallNote": "With a sharp tone, sih sounds irritated: Apa sih? means 'What now?'.",
+      "audio": "audio/id/casual/cas-23.mp3",
+      "tags": [
+        "casual",
+        "sih"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-24",
+      "register": "casual",
+      "indonesian": "Bagus sih, tapi mahal.",
+      "english": "It's nice, but it's pricey.",
+      "polite": {
+        "indonesian": "Memang bagus, tetapi mahal.",
+        "audio": "audio/id/casual/cas-24-polite.mp3"
+      },
+      "registerNotes": "Sih after the first part grants it before the 'but' comes. A gentle way to say no to something.",
+      "audio": "audio/id/casual/cas-24.mp3",
+      "tags": [
+        "casual",
+        "sih"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-25",
+      "register": "casual",
+      "indonesian": "Ikut dong!",
+      "english": "Let me come too!",
+      "polite": {
+        "indonesian": "Boleh saya ikut?",
+        "audio": "audio/id/casual/cas-25-polite.mp3"
+      },
+      "registerNotes": "Dong adds friendly insistence to a request or suggestion. With elders, ask permission with boleh instead.",
+      "pitfallNote": "Keep dong for friends: in a request to someone older or senior, it sounds pushy.",
+      "audio": "audio/id/casual/cas-25.mp3",
+      "tags": [
+        "casual",
+        "dong"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-26",
+      "register": "casual",
+      "indonesian": "Bantuin dong.",
+      "english": "Give me a hand, would you?",
+      "polite": {
+        "indonesian": "Bisa tolong bantu saya?",
+        "audio": "audio/id/casual/cas-26-polite.mp3"
+      },
+      "registerNotes": "-in is the casual Jakarta ending that stands in for -kan and -i: bantuin, beliin, ambilin. It often means doing something for someone.",
+      "audio": "audio/id/casual/cas-26.mp3",
+      "tags": [
+        "casual",
+        "dong"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cas-27",
+      "register": "casual",
+      "indonesian": "Aku pesan ini aja, deh.",
+      "english": "I'll just have this one, then.",
+      "polite": {
+        "indonesian": "Saya pesan ini saja.",
+        "audio": "audio/id/casual/cas-27-polite.mp3"
+      },
+      "registerNotes": "Aja is the spoken saja (just). Deh marks a decision you've just come to, often after some dithering.",
+      "audio": "audio/id/casual/cas-27.mp3",
+      "tags": [
+        "casual",
+        "deh"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-28",
+      "register": "casual",
+      "indonesian": "Terserah kamu aja.",
+      "english": "It's up to you.",
+      "polite": {
+        "indonesian": "Terserah Ibu saja.",
+        "audio": "audio/id/casual/cas-28-polite.mp3"
+      },
+      "registerNotes": "Terserah means 'it's up to'. To an older man, Terserah Bapak saja.",
+      "pitfallNote": "Said flatly on its own, Terserah can mean 'Whatever', which sounds sulky.",
+      "audio": "audio/id/casual/cas-28.mp3",
+      "tags": [
+        "casual",
+        "aja"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-29",
+      "register": "casual",
+      "indonesian": "Ya udah, deh.",
+      "english": "Oh well, OK then.",
+      "polite": {
+        "indonesian": "Baiklah, kalau begitu.",
+        "audio": "audio/id/casual/cas-29-polite.mp3"
+      },
+      "registerNotes": "Ya udah closes a discussion or accepts what can't be changed; deh softens the giving in. Ya udah, nggak apa-apa is 'Never mind, it's fine'.",
+      "audio": "audio/id/casual/cas-29.mp3",
+      "tags": [
+        "casual",
+        "deh"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-30",
+      "register": "casual",
+      "indonesian": "Aku duluan, ya.",
+      "english": "I'm heading off.",
+      "polite": {
+        "indonesian": "Saya permisi dulu.",
+        "audio": "audio/id/casual/cas-30-polite.mp3"
+      },
+      "registerNotes": "Duluan means going ahead of the others. The reply is Iya, hati-hati (OK, take care).",
+      "audio": "audio/id/casual/cas-30.mp3",
+      "tags": [
+        "casual",
+        "goodbyes"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

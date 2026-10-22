@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "id": "words-weather",
+  "title": "天気と自然",
+  "description": "雨と晴れ、二つの季節、そして身近な海、山、川。",
+  "items": [
+    {
+      "id": "w-cuaca",
+      "indonesian": "cuaca",
+      "japanese": "天気",
+      "pos": "noun",
+      "registerNotes": "Cuacanya bagus（いい天気です）。世間話では、日本語と同じくこの言葉を省くことがよくあります：Panas sekali, ya?（暑いですね）",
+      "audio": "audio/id/words/w-cuaca.mp3",
+      "tags": [
+        "天気"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hujan",
+      "indonesian": "hujan",
+      "japanese": "雨；雨が降る",
+      "pos": "noun",
+      "pitfallNote": "Hujan だけで「雨が降っています」。mau は「〜したい」ですが、Mau hujan は「雨が降りそう」という意味です。",
+      "audio": "audio/id/words/w-hujan.mp3",
+      "tags": [
+        "天気",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cerah",
+      "indonesian": "cerah",
+      "japanese": "晴れた；明るい",
+      "pos": "adjective",
+      "registerNotes": "Cuacanya cerah（よく晴れています）。色が明るいのにも使います：warna cerah（明るい色）。",
+      "audio": "audio/id/words/w-cerah.mp3",
+      "tags": [
+        "天気"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mendung",
+      "indonesian": "mendung",
+      "japanese": "曇った、どんよりした",
+      "pos": "adjective",
+      "registerNotes": "雨の前の、暗い灰色の空です。雲そのものは awan。",
+      "audio": "audio/id/words/w-mendung.mp3",
+      "tags": [
+        "天気"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-gerah",
+      "indonesian": "gerah",
+      "japanese": "蒸し暑い",
+      "pos": "adjective",
+      "registerNotes": "雨の前や、扇風機のない部屋の、湿って風のない暑さ。panas はただの「暑い」です。",
+      "audio": "audio/id/words/w-gerah.mp3",
+      "tags": [
+        "天気"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-angin",
+      "indonesian": "angin",
+      "japanese": "風",
+      "pos": "noun",
+      "cultureNote": "masuk angin（直訳は「風が入る」）は、風や扇風機のせいだとされる風邪やだるさのこと。日本語の「風邪」と発想が似ています。温かい飲み物や、硬貨で背中をこする kerokan で治します。",
+      "audio": "audio/id/words/w-angin.mp3",
+      "tags": [
+        "天気"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-musim-hujan",
+      "indonesian": "musim hujan",
+      "japanese": "雨季",
+      "pos": "noun",
+      "cultureNote": "インドネシアの季節は四つではなく二つです。ジャワやバリでは、雨季はおよそ11月から3月までです。",
+      "audio": "audio/id/words/w-musim-hujan.mp3",
+      "tags": [
+        "天気",
+        "季節"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-musim-kemarau",
+      "indonesian": "musim kemarau",
+      "japanese": "乾季",
+      "pos": "noun",
+      "pitfallNote": "kemarau は季節にだけ使います。一般的な「乾いた」は kering です。",
+      "audio": "audio/id/words/w-musim-kemarau.mp3",
+      "tags": [
+        "天気",
+        "季節"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-laut",
+      "indonesian": "laut",
+      "japanese": "海",
+      "pos": "noun",
+      "registerNotes": "laut は海そのもので、浜辺は pantai。シーフードは hasil laut ですが、メニューにはそのまま seafood と書かれていることも多いです。",
+      "audio": "audio/id/words/w-laut.mp3",
+      "tags": [
+        "自然"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-gunung",
+      "indonesian": "gunung",
+      "japanese": "山；火山",
+      "pos": "noun",
+      "registerNotes": "多くの gunung は活火山（gunung berapi）です。名前では、日本語の「〜山」とは逆に Gunung が先に来ます：Gunung Bromo、Gunung Rinjani。",
+      "audio": "audio/id/words/w-gunung.mp3",
+      "tags": [
+        "自然"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pohon",
+      "indonesian": "pohon",
+      "japanese": "木",
+      "pos": "noun",
+      "registerNotes": "木の種類は後に付けます：pohon kelapa（ココヤシ）、pohon pisang（バナナの木）。",
+      "audio": "audio/id/words/w-pohon.mp3",
+      "tags": [
+        "自然"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bunga",
+      "indonesian": "bunga",
+      "japanese": "花",
+      "pos": "noun",
+      "pitfallNote": "bunga には、お金の「利息」の意味もあります：bunga bank（銀行の利息）。",
+      "audio": "audio/id/words/w-bunga.mp3",
+      "tags": [
+        "自然"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sungai",
+      "indonesian": "sungai",
+      "japanese": "川",
+      "pos": "noun",
+      "registerNotes": "ジャワでは川をよく kali と言います：ジャカルタの Kali Ciliwung。kali には「〜回」の意味もあります：dua kali（2回）。",
+      "audio": "audio/id/words/w-sungai.mp3",
+      "tags": [
+        "自然"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-matahari",
+      "indonesian": "matahari",
+      "japanese": "太陽",
+      "pos": "noun",
+      "registerNotes": "直訳は「日の目」（mata + hari）。日の出は matahari terbit、日の入りは matahari terbenam。",
+      "audio": "audio/id/words/w-matahari.mp3",
+      "tags": [
+        "自然",
+        "天気"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-banjir",
+      "indonesian": "banjir",
+      "japanese": "洪水；水があふれる",
+      "pos": "noun",
+      "cultureNote": "雨季には洪水がよく起こります。特にジャカルタでは、banjir で道路が通れなくなり、何時間も交通が止まることがあります。",
+      "audio": "audio/id/words/w-banjir.mp3",
+      "tags": [
+        "天気"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

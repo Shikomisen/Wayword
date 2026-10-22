@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "neighbour",
+  "title": "Meeting a neighbour",
+  "category": "smalltalk",
+  "setting": "You're renting a room for a month in a quiet kampung, a neighbourhood of narrow lanes, in Yogyakarta. As you head out one morning, the older woman next door is sweeping her front yard.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "neighbour",
+      "indonesian": "Pagi, Kak! Mau ke mana?",
+      "english": "Morning! Where are you off to?",
+      "audio": "audio/id/scenario/neighbour-n1.mp3",
+      "options": [
+        {
+          "phraseId": "sml-09",
+          "quality": "good",
+          "feedback": "The stock vague answer. Mau ke mana? is a greeting, so nobody expects details.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Pagi, Bu. Ke pasar.",
+          "english": "Morning. To the market.",
+          "feedback": "Greet her back, then a two-word answer: that's all she's after.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Kenapa, Bu?",
+          "english": "Why?",
+          "feedback": "It sounds as if you're asking why she wants to know. Mau ke mana? is a friendly greeting, like 'how's it going?', so answer it lightly: Jalan-jalan saja.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "neighbour",
+      "indonesian": "Asalnya dari mana, Kak?",
+      "english": "Where are you from?",
+      "audio": "audio/id/scenario/neighbour-n2.mp3",
+      "options": [
+        {
+          "phraseId": "sml-02",
+          "quality": "good",
+          "feedback": "No 'am' needed: dari (from) does the work.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Dari Selandia Baru, Bu. Dari Auckland.",
+          "english": "From New Zealand. From Auckland.",
+          "feedback": "Adding your city gives her something to ask about next.",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Saya adalah dari Selandia Baru.",
+          "english": "I am from New Zealand.",
+          "feedback": "There's no 'am' in Indonesian, and adalah, the formal written 'is', never goes before dari. Saya dari Selandia Baru.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "neighbour",
+      "indonesian": "Wah, jauh sekali! Bahasa Indonesianya sudah bagus, ya.",
+      "english": "Wow, that's a long way! Your Indonesian's good already.",
+      "audio": "audio/id/scenario/neighbour-n3.mp3",
+      "options": [
+        {
+          "phraseId": "sml-07",
+          "quality": "good",
+          "feedback": "Modest and hopeful: the natural way to take a compliment on your Indonesian.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "sml-06",
+          "quality": "good",
+          "feedback": "Telling people you're learning wins you patience, and usually more praise.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Ya, bahasa Indonesia saya bagus sekali.",
+          "english": "Yes, my Indonesian is very good.",
+          "feedback": "Agreeing with a compliment sounds boastful. Wave it off modestly: Saya baru bisa sedikit.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "neighbour",
+      "indonesian": "Sampai kapan di sini, Kak?",
+      "english": "How long are you here for?",
+      "audio": "audio/id/scenario/neighbour-n4.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Sampai akhir bulan, Bu.",
+          "english": "Until the end of the month.",
+          "feedback": "Sampai kapan? is literally 'until when?', so sampai plus a time answers it.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Tiga minggu lagi, Bu.",
+          "english": "Another three weeks.",
+          "feedback": "Lagi after a length of time makes it 'more': tiga minggu lagi, three more weeks.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "gre-22",
+          "quality": "wrong",
+          "feedback": "Sampai jumpa is goodbye. She asked Sampai kapan? (until when?), so answer with a time: Sampai akhir bulan.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "neighbour",
+      "indonesian": "Sudah makan, Kak?",
+      "english": "Have you eaten?",
+      "audio": "audio/id/scenario/neighbour-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Sudah, Bu, terima kasih. Ibu sudah makan?",
+          "english": "Yes, thanks. Have you?",
+          "feedback": "Sudah is the yes to a Sudah …? question, and asking back with Ibu in place of 'you' is warm and polite.",
+          "next": "n6"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Tidak, Bu.",
+          "english": "No.",
+          "feedback": "A Sudah …? question is answered sudah (yes, already) or belum (not yet). Tidak sounds as if you don't eat at all.",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Sudah. Kamu sudah makan?",
+          "english": "Yes. Have you?",
+          "feedback": "Kamu is for friends, children and people younger than you. To an older neighbour, say Ibu instead: Ibu sudah makan?",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "neighbour",
+      "indonesian": "Hati-hati di jalan, ya, Kak.",
+      "english": "Take care out there.",
+      "audio": "audio/id/scenario/neighbour-n6.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Mari, Bu. Terima kasih.",
+          "english": "Bye now. Thank you.",
+          "feedback": "Mari, Bu is the polite goodbye as you walk on.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-24",
+          "quality": "good",
+          "feedback": "A gentle, polite way to take your leave. Dulu (first) softens it.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-25",
+          "quality": "wrong",
+          "feedback": "Selamat jalan is said to someone setting off on a journey. You're the one leaving, so say Mari, Bu.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "english": "A typical morning chat. Mau ke mana? and Sudah makan? are greetings that show friendly interest, and Jalan-jalan saja or Sudah, terima kasih answers them perfectly. Use Ibu or Bapak, not kamu, with older neighbours, and wave off compliments on your Indonesian modestly.",
+      "end": true,
+      "options": []
+    }
+  }
+}

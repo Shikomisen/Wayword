@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 1,
+  "id": "con-walaupun",
+  "connector": "walaupun",
+  "gloss": "even though",
+  "title": "walaupun — even though",
+  "pattern": "Walaupun A, (tetap) B · B walaupun A",
+  "explanation": "walaupun brings in something you'd expect to stop what happens, but it doesn't: Walaupun hujan, kami tetap pergi. — Even though it was raining, we still went. The walaupun part can come first, with a comma, or after the main part, with no comma: Dia tetap kerja walaupun sakit. tetap (still, anyway) often goes in the main part to underline that nothing changed. meskipun means exactly the same, and in speech you'll also hear the short walau.",
+  "natural": "Any register. Use it for plans that went ahead anyway, and for things that turn out well despite something: Meskipun murah, makanannya enak.",
+  "stiff": "Don't add tapi as well (Walaupun hujan, tapi …): one connector is enough, and tetap is the word that goes with walaupun. In quick speech people often skip walaupun altogether: Hujan, tapi kami tetap pergi.",
+  "examples": [
+    {
+      "id": "cx-walaupun-1",
+      "indonesian": "Walaupun hujan, kami tetap pergi.",
+      "english": "Even though it was raining, we still went.",
+      "chunks": [
+        {
+          "t": "Walaupun "
+        },
+        {
+          "t": "hujan, ",
+          "w": "w-hujan"
+        },
+        {
+          "t": "kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "tetap pergi.",
+          "w": "w-pergi"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Walaupun",
+        "after": " hujan, kami tetap pergi.",
+        "options": [
+          "Walaupun",
+          "Karena",
+          "Jadi"
+        ],
+        "why": "The rain should have stopped you but didn't: walaupun, even though. tetap means still, anyway."
+      },
+      "combine": {
+        "a": "Hujan.",
+        "b": "Kami tetap pergi.",
+        "distractors": [
+          "Karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-walaupun-1.mp3",
+      "tags": [
+        "connectors",
+        "walaupun"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-walaupun-2",
+      "indonesian": "Dia tetap kerja walaupun sakit.",
+      "english": "She still went to work even though she was ill.",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "tetap kerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "walaupun "
+        },
+        {
+          "t": "sakit.",
+          "w": "w-sakit"
+        }
+      ],
+      "gap": {
+        "before": "Dia tetap kerja ",
+        "answer": "walaupun",
+        "after": " sakit.",
+        "options": [
+          "walaupun",
+          "karena",
+          "jadi"
+        ],
+        "why": "Being ill should have kept her at home: walaupun. karena would make illness the reason she went."
+      },
+      "combine": {
+        "a": "Dia sakit.",
+        "b": "Dia tetap kerja.",
+        "distractors": [
+          "karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-walaupun-2.mp3",
+      "tags": [
+        "connectors",
+        "walaupun"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-walaupun-3",
+      "indonesian": "Meskipun murah, makanannya enak sekali.",
+      "english": "Even though it's cheap, the food is really good.",
+      "chunks": [
+        {
+          "t": "Meskipun "
+        },
+        {
+          "t": "murah, ",
+          "w": "w-murah"
+        },
+        {
+          "t": "makanannya "
+        },
+        {
+          "t": "enak sekali.",
+          "w": "w-enak"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Meskipun",
+        "after": " murah, makanannya enak sekali.",
+        "options": [
+          "Meskipun",
+          "Walaupun",
+          "Karena"
+        ],
+        "ok": [
+          "Walaupun"
+        ],
+        "note": "Walaupun and meskipun mean exactly the same; use either.",
+        "why": "You'd expect cheap food not to be that good, but it is: meskipun, even though."
+      },
+      "audio": "audio/id/connectors/cx-walaupun-3.mp3",
+      "tags": [
+        "connectors",
+        "walaupun",
+        "food"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-walaupun-4",
+      "indonesian": "Walaupun sudah jam sepuluh, tokonya belum buka.",
+      "english": "Even though it's already ten, the shop still isn't open.",
+      "chunks": [
+        {
+          "t": "Walaupun "
+        },
+        {
+          "t": "sudah jam sepuluh, ",
+          "w": "w-jam"
+        },
+        {
+          "t": "tokonya ",
+          "w": "w-toko"
+        },
+        {
+          "t": "belum buka.",
+          "w": "w-belum"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Walaupun",
+        "after": " sudah jam sepuluh, tokonya belum buka.",
+        "options": [
+          "Walaupun",
+          "Karena",
+          "Sesudah"
+        ],
+        "why": "It's late enough that the shop should be open, but it isn't: walaupun."
+      },
+      "combine": {
+        "a": "Sudah jam sepuluh.",
+        "b": "Tokonya belum buka.",
+        "distractors": [
+          "Karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-walaupun-4.mp3",
+      "tags": [
+        "connectors",
+        "walaupun"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

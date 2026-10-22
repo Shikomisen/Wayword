@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "id": "contrasts",
+  "title": "Kamu dengar yang mana?",
+  "description": "Bunyi yang sering terlewat oleh penutur bahasa Indonesia: vokal panjang, jeda っ kecil, dan つ lawan す. Setiap pasangan mengubah arti kata.",
+  "sets": [
+    {
+      "id": "long",
+      "sound": "Vokal panjang",
+      "note": "Vokal panjang berlangsung satu ketukan penuh lebih lama, dan mengubah arti kata: おばさん adalah tante, おばあさん nenek. Bahasa Indonesia tidak membedakan panjang vokal, jadi telingamu perlu dilatih. Hitung ketukannya: o-ba-a-sa-n ada lima.",
+      "pairs": [
+        [
+          {
+            "id": "lc-long-obasan",
+            "japanese": "おばさん",
+            "indonesian": "tante; ibu-ibu",
+            "audio": "audio/ja/listening/lc-long-obasan.mp3"
+          },
+          {
+            "id": "lc-long-obaasan",
+            "japanese": "おばあさん",
+            "indonesian": "nenek; perempuan lanjut usia",
+            "audio": "audio/ja/listening/lc-long-obaasan.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-long-ojisan",
+            "japanese": "おじさん",
+            "indonesian": "om, paman; bapak-bapak",
+            "audio": "audio/ja/listening/lc-long-ojisan.mp3"
+          },
+          {
+            "id": "lc-long-ojiisan",
+            "japanese": "おじいさん",
+            "indonesian": "kakek; laki-laki lanjut usia",
+            "audio": "audio/ja/listening/lc-long-ojiisan.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-long-biru",
+            "japanese": "ビル",
+            "indonesian": "gedung",
+            "audio": "audio/ja/listening/lc-long-biru.mp3"
+          },
+          {
+            "id": "lc-long-biiru",
+            "japanese": "ビール",
+            "indonesian": "bir",
+            "audio": "audio/ja/listening/lc-long-biiru.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-long-tori",
+            "japanese": "とり",
+            "indonesian": "burung",
+            "audio": "audio/ja/listening/lc-long-tori.mp3"
+          },
+          {
+            "id": "lc-long-toori",
+            "japanese": "とおり",
+            "indonesian": "jalan (raya)",
+            "audio": "audio/ja/listening/lc-long-toori.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-long-yuki",
+            "japanese": "ゆき",
+            "indonesian": "salju",
+            "audio": "audio/ja/listening/lc-long-yuki.mp3"
+          },
+          {
+            "id": "lc-long-yuuki",
+            "japanese": "ゆうき",
+            "indonesian": "keberanian",
+            "audio": "audio/ja/listening/lc-long-yuuki.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-long-ie",
+            "japanese": "いえ",
+            "indonesian": "rumah",
+            "audio": "audio/ja/listening/lc-long-ie.mp3"
+          },
+          {
+            "id": "lc-long-iie",
+            "japanese": "いいえ",
+            "indonesian": "tidak",
+            "audio": "audio/ja/listening/lc-long-iie.mp3"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "small-tsu",
+      "sound": "っ kecil",
+      "note": "っ adalah satu ketukan hening sebelum bunyi berikutnya: きって (prangko) punya jeda kecil yang tidak ada pada きて (datanglah). Jedanya pendek, tapi mengubah kata. Hitung ketukannya: ki-t-te ada tiga.",
+      "pairs": [
+        [
+          {
+            "id": "lc-small-tsu-kite",
+            "japanese": "きて",
+            "indonesian": "datanglah",
+            "audio": "audio/ja/listening/lc-small-tsu-kite.mp3"
+          },
+          {
+            "id": "lc-small-tsu-kitte",
+            "japanese": "きって",
+            "indonesian": "prangko",
+            "audio": "audio/ja/listening/lc-small-tsu-kitte.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-small-tsu-ita",
+            "japanese": "いた",
+            "indonesian": "tadi ada (di sana)",
+            "audio": "audio/ja/listening/lc-small-tsu-ita.mp3"
+          },
+          {
+            "id": "lc-small-tsu-itta",
+            "japanese": "いった",
+            "indonesian": "sudah pergi",
+            "audio": "audio/ja/listening/lc-small-tsu-itta.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-small-tsu-oto",
+            "japanese": "おと",
+            "indonesian": "bunyi, suara",
+            "audio": "audio/ja/listening/lc-small-tsu-oto.mp3"
+          },
+          {
+            "id": "lc-small-tsu-otto",
+            "japanese": "おっと",
+            "indonesian": "suami",
+            "audio": "audio/ja/listening/lc-small-tsu-otto.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-small-tsu-saka",
+            "japanese": "さか",
+            "indonesian": "lereng, tanjakan",
+            "audio": "audio/ja/listening/lc-small-tsu-saka.mp3"
+          },
+          {
+            "id": "lc-small-tsu-sakka",
+            "japanese": "さっか",
+            "indonesian": "penulis, pengarang",
+            "audio": "audio/ja/listening/lc-small-tsu-sakka.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-small-tsu-kako",
+            "japanese": "かこ",
+            "indonesian": "masa lalu",
+            "audio": "audio/ja/listening/lc-small-tsu-kako.mp3"
+          },
+          {
+            "id": "lc-small-tsu-kakko",
+            "japanese": "かっこ",
+            "indonesian": "tanda kurung",
+            "audio": "audio/ja/listening/lc-small-tsu-kakko.mp3"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "tsu-su",
+      "sound": "つ atau す",
+      "note": "Bahasa Indonesia tidak punya bunyi つ: bunyinya seperti “ts”, t dan s dalam satu ketukan. Untuk つ, ujung lidah menyentuh tepat di belakang gigi atas lalu dilepas; untuk す, lidah tidak menyentuh sama sekali.",
+      "pairs": [
+        [
+          {
+            "id": "lc-tsu-su-itsu",
+            "japanese": "いつ",
+            "indonesian": "kapan",
+            "audio": "audio/ja/listening/lc-tsu-su-itsu.mp3"
+          },
+          {
+            "id": "lc-tsu-su-isu",
+            "japanese": "いす",
+            "indonesian": "kursi",
+            "audio": "audio/ja/listening/lc-tsu-su-isu.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-tsu-su-natsu",
+            "japanese": "なつ",
+            "indonesian": "musim panas",
+            "audio": "audio/ja/listening/lc-tsu-su-natsu.mp3"
+          },
+          {
+            "id": "lc-tsu-su-nasu",
+            "japanese": "なす",
+            "indonesian": "terong",
+            "audio": "audio/ja/listening/lc-tsu-su-nasu.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-tsu-su-tsuki",
+            "japanese": "つき",
+            "indonesian": "bulan (di langit)",
+            "audio": "audio/ja/listening/lc-tsu-su-tsuki.mp3"
+          },
+          {
+            "id": "lc-tsu-su-suki",
+            "japanese": "すき",
+            "indonesian": "suka",
+            "audio": "audio/ja/listening/lc-tsu-su-suki.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-tsu-su-tsugi",
+            "japanese": "つぎ",
+            "indonesian": "berikutnya",
+            "audio": "audio/ja/listening/lc-tsu-su-tsugi.mp3"
+          },
+          {
+            "id": "lc-tsu-su-sugi",
+            "japanese": "すぎ",
+            "indonesian": "lewat (dari jam)",
+            "audio": "audio/ja/listening/lc-tsu-su-sugi.mp3"
+          }
+        ]
+      ]
+    }
+  ]
+}

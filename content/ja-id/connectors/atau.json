@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "id": "con-atau",
+  "connector": "atau",
+  "gloss": "または、〜か",
+  "title": "atau — または、〜か",
+  "pattern": "A atau B? · … atau tidak?",
+  "explanation": "atau は2つの物や動作から選ぶ「〜か〜か」「または」です：teh atau kopi?（紅茶かコーヒーか）、hari ini atau besok?（今日か明日か）。お店の人がいつもこの形で聞いてくるので、聞き取れるようにしておきましょう：Pakai sambal atau tidak?（サンバルはつけますか、なしにしますか？）。文の最後に atau tidak（くだけて atau nggak、または nggak だけ）を付けると、どんな質問も「〜するの、しないの？」になります：Mau ikut atau nggak?（一緒に来る？来ない？）",
+  "natural": "選んでもらう時に、ていねいな場面でもくだけた場面でも。くだけた会話では、選ぶ質問で atau の代わりに apa もよく使われます：Mau teh apa kopi?",
+  "stiff": "自分の質問を atau tidak? で終えると、「するの、しないの？」と迫るように聞こえることがあります。知らない人には、文末を上げて聞くだけで十分です：Bapak mau ikut?",
+  "examples": [
+    {
+      "id": "cx-atau-1",
+      "indonesian": "Mau teh atau kopi?",
+      "japanese": "紅茶とコーヒー、どちらにしますか？",
+      "chunks": [
+        {
+          "t": "Mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "teh ",
+          "w": "w-teh"
+        },
+        {
+          "t": "atau "
+        },
+        {
+          "t": "kopi?",
+          "w": "w-kopi"
+        }
+      ],
+      "gap": {
+        "before": "Mau teh ",
+        "answer": "atau",
+        "after": " kopi?",
+        "options": [
+          "atau",
+          "dan",
+          "tapi"
+        ],
+        "why": "2つから選ぶので atau（または）。dan だと「両方」になります。"
+      },
+      "combine": {
+        "a": "Mau teh?",
+        "b": "Mau kopi?",
+        "distractors": [
+          "dan "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-atau-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "atau"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-atau-2",
+      "indonesian": "Pakai sambal atau tidak?",
+      "japanese": "サンバルはつけますか、なしにしますか？",
+      "chunks": [
+        {
+          "t": "Pakai "
+        },
+        {
+          "t": "sambal ",
+          "w": "w-sambal"
+        },
+        {
+          "t": "atau "
+        },
+        {
+          "t": "tidak?",
+          "w": "w-tidak"
+        }
+      ],
+      "gap": {
+        "before": "Pakai sambal ",
+        "answer": "atau",
+        "after": " tidak?",
+        "options": [
+          "atau",
+          "dan",
+          "juga"
+        ],
+        "why": "文末の atau tidak で「〜か、〜ないか」：サンバルありか、なしか。"
+      },
+      "combine": {
+        "a": "Pakai sambal?",
+        "b": "Tidak pakai sambal?",
+        "distractors": [
+          "tapi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-atau-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "atau",
+        "食べ物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-atau-3",
+      "indonesian": "Mau bayar tunai atau transfer, Pak?",
+      "japanese": "お支払いは現金ですか、振込ですか？",
+      "chunks": [
+        {
+          "t": "Mau bayar ",
+          "w": "w-bayar"
+        },
+        {
+          "t": "tunai ",
+          "w": "w-tunai"
+        },
+        {
+          "t": "atau "
+        },
+        {
+          "t": "transfer, Pak?",
+          "w": "w-transfer"
+        }
+      ],
+      "gap": {
+        "before": "Mau bayar tunai ",
+        "answer": "atau",
+        "after": " transfer, Pak?",
+        "options": [
+          "atau",
+          "dan",
+          "dengan"
+        ],
+        "why": "支払い方法を2つ示して、どちらかを選んでもらうので atau。"
+      },
+      "combine": {
+        "a": "Mau bayar tunai, Pak?",
+        "b": "Mau transfer, Pak?",
+        "distractors": [
+          "dengan "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-atau-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "atau",
+        "買い物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-atau-4",
+      "register": "casual",
+      "indonesian": "Kamu mau ikut atau nggak?",
+      "japanese": "一緒に来るの、来ないの？",
+      "chunks": [
+        {
+          "t": "Kamu ",
+          "w": "w-kamu"
+        },
+        {
+          "t": "mau ikut ",
+          "w": "w-mau"
+        },
+        {
+          "t": "atau "
+        },
+        {
+          "t": "nggak?"
+        }
+      ],
+      "gap": {
+        "before": "Kamu mau ikut ",
+        "answer": "atau",
+        "after": " nggak?",
+        "options": [
+          "atau",
+          "tapi",
+          "dan"
+        ],
+        "why": "atau nggak は「〜するの、しないの？」のくだけた言い方。友達にはっきりした答えを求めています。"
+      },
+      "audio": "audio/id/connectors/cx-atau-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "atau",
+        "くだけた言い方"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

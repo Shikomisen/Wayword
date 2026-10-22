@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "id": "con-lalu",
+  "connector": "lalu, terus",
+  "gloss": "and then",
+  "title": "lalu, terus — and then",
+  "pattern": "A, lalu B · A, terus B · A. Lalu B.",
+  "explanation": "lalu puts actions in order: this, and then that. Saya mandi dulu, lalu makan. — I'll have a shower first, then eat. It can join two halves of one sentence or start the next one (Lalu kami langsung tidur), and when the same person does both there's no need to repeat saya after it. terus means the same and is what people say in conversation; on its own, Terus? is how a listener asks and then? to keep a story going. kemudian is the written and formal version you'll see in instructions and hear on the news.",
+  "natural": "lalu is neutral and safe anywhere. terus is the everyday spoken choice: telling a friend what happened, giving directions, keeping a story going.",
+  "stiff": "kemudian in a chat sounds like a report or a recipe. There's no need for dan in front: lalu already includes the and. And careful with terus in directions: on its own, jalan terus means keep going straight, not and then.",
+  "examples": [
+    {
+      "id": "cx-lalu-1",
+      "indonesian": "Saya mandi dulu, lalu makan.",
+      "english": "I'll have a shower first, then eat.",
+      "chunks": [
+        {
+          "t": "Saya mandi dulu, ",
+          "w": "w-mandi"
+        },
+        {
+          "t": "lalu "
+        },
+        {
+          "t": "makan.",
+          "w": "w-makan"
+        }
+      ],
+      "gap": {
+        "before": "Saya mandi dulu, ",
+        "answer": "lalu",
+        "after": " makan.",
+        "options": [
+          "lalu",
+          "tapi",
+          "karena"
+        ],
+        "why": "One action after another: lalu, and then."
+      },
+      "combine": {
+        "a": "Saya mandi dulu.",
+        "b": "Saya makan.",
+        "distractors": [
+          "karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-lalu-1.mp3",
+      "tags": [
+        "connectors",
+        "lalu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-lalu-2",
+      "register": "casual",
+      "indonesian": "Kemarin aku makan di warung, terus nonton film.",
+      "english": "Yesterday I ate at a warung, then watched a film.",
+      "chunks": [
+        {
+          "t": "Kemarin aku ",
+          "w": "w-kemarin"
+        },
+        {
+          "t": "makan di warung, ",
+          "w": "w-warung"
+        },
+        {
+          "t": "terus "
+        },
+        {
+          "t": "nonton film.",
+          "w": "w-nonton"
+        }
+      ],
+      "gap": {
+        "before": "Kemarin aku makan di warung, ",
+        "answer": "terus",
+        "after": " nonton film.",
+        "options": [
+          "terus",
+          "lalu",
+          "karena"
+        ],
+        "ok": [
+          "lalu"
+        ],
+        "note": "lalu means the same; terus is the chattier one you'd use telling a friend.",
+        "why": "terus is the everyday spoken and then."
+      },
+      "combine": {
+        "a": "Kemarin aku makan di warung.",
+        "b": "Aku nonton film.",
+        "distractors": [
+          "karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-lalu-2.mp3",
+      "tags": [
+        "connectors",
+        "lalu",
+        "casual"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-lalu-3",
+      "indonesian": "Jalan lurus, lalu belok kiri di depan masjid.",
+      "english": "Go straight on, then turn left in front of the mosque.",
+      "chunks": [
+        {
+          "t": "Jalan lurus, ",
+          "w": "w-lurus"
+        },
+        {
+          "t": "lalu "
+        },
+        {
+          "t": "belok kiri ",
+          "w": "w-kiri"
+        },
+        {
+          "t": "di depan masjid.",
+          "w": "w-masjid"
+        }
+      ],
+      "gap": {
+        "before": "Jalan lurus, ",
+        "answer": "lalu",
+        "after": " belok kiri di depan masjid.",
+        "options": [
+          "lalu",
+          "terus",
+          "atau"
+        ],
+        "ok": [
+          "terus"
+        ],
+        "note": "terus works too and is very common in directions. On its own, though, jalan terus means keep going straight.",
+        "why": "lalu gives the next step of the directions."
+      },
+      "combine": {
+        "a": "Jalan lurus.",
+        "b": "Belok kiri di depan masjid.",
+        "distractors": [
+          "atau "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-lalu-3.mp3",
+      "tags": [
+        "connectors",
+        "lalu",
+        "directions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-lalu-4",
+      "indonesian": "Kami sampai di hotel jam sembilan. Lalu kami langsung tidur.",
+      "english": "We got to the hotel at nine. Then we went straight to bed.",
+      "chunks": [
+        {
+          "t": "Kami sampai ",
+          "w": "w-sampai"
+        },
+        {
+          "t": "di hotel jam sembilan. ",
+          "w": "w-hotel"
+        },
+        {
+          "t": "Lalu "
+        },
+        {
+          "t": "kami langsung tidur.",
+          "w": "w-tidur"
+        }
+      ],
+      "gap": {
+        "before": "Kami sampai di hotel jam sembilan. ",
+        "answer": "Lalu",
+        "after": " kami langsung tidur.",
+        "options": [
+          "Lalu",
+          "Tapi",
+          "Karena"
+        ],
+        "why": "Lalu starts the next step of the story in a new sentence."
+      },
+      "combine": {
+        "a": "Kami sampai di hotel jam sembilan.",
+        "b": "Kami langsung tidur.",
+        "distractors": [
+          "Tapi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-lalu-4.mp3",
+      "tags": [
+        "connectors",
+        "lalu"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

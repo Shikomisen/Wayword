@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-tewaikenai",
+  "connector": "〜てはいけない",
+  "gloss": "tidak boleh",
+  "title": "〜てはいけない・〜ちゃだめ — tidak boleh, jangan",
+  "pattern": "bentuk て kata kerja + はいけない (santai: 〜ちゃだめ, 〜じゃだめ)",
+  "explanation": "てはいけない menyatakan sesuatu tidak diizinkan, seperti “tidak boleh” atau “dilarang”: ここでたばこを{吸|す}ってはいけません — kamu tidak boleh merokok di sini. Papan tanda dan peraturan memakainya. Dalam percakapan, ちゃだめ lebih lembut, seperti “jangan”: {触|さわ}っちゃだめ — jangan pegang.",
+  "natural": "Untuk aturan dan peringatan, dan orang tua kepada anak: {走|はし}っちゃだめだよ — jangan lari-lari!",
+  "stiff": "Kepada orang dewasa, てはいけません terdengar seperti guru. Meminta lebih halus: 〜ないでください (mohon jangan…), atau ここではご{遠慮|えんりょ}ください.",
+  "examples": [
+    {
+      "id": "gx-tewaikenai-1",
+      "japanese": "ここで写真を撮ってはいけません。",
+      "furigana": "ここで{写真|しゃしん}を{撮|と}ってはいけません。",
+      "indonesian": "Di sini tidak boleh memotret.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "ここで",
+          "w": "w-koko"
+        },
+        {
+          "t": "{写真|しゃしん}を",
+          "w": "w-shashin"
+        },
+        {
+          "t": "{撮|と}ってはいけません。"
+        }
+      ],
+      "gap": {
+        "before": "ここで{写真|しゃしん}を{撮|と}って",
+        "answer": "はいけません",
+        "after": "。",
+        "options": [
+          "はいけません",
+          "もいいです",
+          "ください"
+        ],
+        "why": "Tidak diizinkan: てはいけない."
+      },
+      "audio": "audio/ja/grammar/gx-tewaikenai-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "tewaikenai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tewaikenai-2",
+      "japanese": "温泉にタオルを入れてはいけません。",
+      "furigana": "{温泉|おんせん}に{タオル|たおる}を{入|い}れてはいけません。",
+      "indonesian": "Handuk tidak boleh dimasukkan ke kolam air panas.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{温泉|おんせん}に",
+          "w": "w-onsen"
+        },
+        {
+          "t": "{タオル|たおる}を"
+        },
+        {
+          "t": "{入|い}れてはいけません。"
+        }
+      ],
+      "gap": {
+        "before": "{温泉|おんせん}に{タオル|たおる}を{入|い}れて",
+        "answer": "は",
+        "after": "いけません。",
+        "options": [
+          "は",
+          "も",
+          "を"
+        ],
+        "why": "て + は + いけない."
+      },
+      "audio": "audio/ja/grammar/gx-tewaikenai-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "tewaikenai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tewaikenai-3",
+      "japanese": "危ないから、触っちゃだめ。",
+      "furigana": "{危|あぶ}ないから、{触|さわ}っちゃだめ。",
+      "indonesian": "Bahaya, jangan dipegang.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{危|あぶ}ないから、",
+          "w": "w-abunai"
+        },
+        {
+          "t": "{触|さわ}っちゃ"
+        },
+        {
+          "t": "だめ。"
+        }
+      ],
+      "gap": {
+        "before": "{危|あぶ}ないから、{触|さわ}っちゃ",
+        "answer": "だめ",
+        "after": "。",
+        "options": [
+          "だめ",
+          "いい",
+          "ください"
+        ],
+        "why": "“Jangan” yang santai: ちゃだめ."
+      },
+      "audio": "audio/ja/grammar/gx-tewaikenai-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "tewaikenai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-tewaikenai-4",
+      "japanese": "美術館の中で食べてはいけません。",
+      "furigana": "{美術館|びじゅつかん}の{中|なか}で{食|た}べてはいけません。",
+      "indonesian": "Tidak boleh makan di dalam museum.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{美術館|びじゅつかん}の"
+        },
+        {
+          "t": "{中|なか}で"
+        },
+        {
+          "t": "{食|た}べてはいけません。",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "{美術館|びじゅつかん}の{中|なか}で{食|た}べて",
+        "answer": "はいけません",
+        "after": "。",
+        "options": [
+          "はいけません",
+          "はいいです",
+          "もいけません"
+        ],
+        "why": "Tidak diizinkan: てはいけません."
+      },
+      "audio": "audio/ja/grammar/gx-tewaikenai-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "tewaikenai"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

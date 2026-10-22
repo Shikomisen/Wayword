@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "id": "hotel",
+  "title": "Hotel: check-in & check-out",
+  "order": 6,
+  "description": "Check-in, menitipkan barang, dan beberapa permintaan yang perlu bisa kamu ucapkan.",
+  "phrases": [
+    {
+      "id": "hot-01",
+      "japanese": "チェックインお願いします",
+      "furigana": [
+        {
+          "b": "チェックインお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いします"
+        }
+      ],
+      "romaji": "chekkuin onegai shimasu",
+      "indonesian": "Saya mau check-in.",
+      "registerNotes": "Kata serapan + お願いします (mohon). Kalimat ini membuka seluruh urusan di resepsionis.",
+      "audio": "audio/ja/hot-01.mp3",
+      "audioHint": "チェックインおねがいします",
+      "tags": [
+        "hotel",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "hot-02",
+      "japanese": "予約しています",
+      "furigana": [
+        {
+          "b": "予約",
+          "r": "よやく"
+        },
+        {
+          "b": "しています"
+        }
+      ],
+      "romaji": "yoyaku shite imasu",
+      "indonesian": "Saya sudah reservasi.",
+      "registerNotes": "Lanjutkan dengan menyebut namamu; tunjukkan email pemesanan, dan selebihnya beres. Bahasa Indonesia memakai “sudah”, bahasa Jepang memakai 〜ています: keadaan yang masih berlaku.",
+      "audio": "audio/ja/hot-02.mp3",
+      "audioHint": "よやくしています",
+      "tags": [
+        "hotel",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-03",
+      "japanese": "何時にチェックアウトですか",
+      "furigana": [
+        {
+          "b": "何時",
+          "r": "なんじ"
+        },
+        {
+          "b": "にチェックアウトですか"
+        }
+      ],
+      "romaji": "nanji ni chekkuauto desu ka",
+      "indonesian": "Check-out jam berapa?",
+      "registerNotes": "Biasanya jam 10.00 atau 11.00, lebih pagi daripada perkiraan kebanyakan wisatawan.",
+      "audio": "audio/ja/hot-03.mp3",
+      "audioHint": "なんじにチェックアウトですか",
+      "tags": [
+        "hotel",
+        "waktu",
+        "pertanyaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "hot-04",
+      "japanese": "荷物を預かってもらえますか",
+      "furigana": [
+        {
+          "b": "荷物",
+          "r": "にもつ"
+        },
+        {
+          "b": "を"
+        },
+        {
+          "b": "預",
+          "r": "あず"
+        },
+        {
+          "b": "かってもらえますか"
+        }
+      ],
+      "romaji": "nimotsu o azukatte moraemasu ka",
+      "indonesian": "Bisa titip barang bawaan saya?",
+      "registerNotes": "〜てもらえますか adalah pola sopan untuk minta tolong: “bisa tolong…?”. Hampir semua hotel mau menyimpan tas sebelum check-in dan sesudah check-out.",
+      "audio": "audio/ja/hot-04.mp3",
+      "audioHint": "にもつをあずかってもらえますか",
+      "tags": [
+        "hotel",
+        "permintaan"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "hot-05",
+      "japanese": "チェックアウトお願いします",
+      "furigana": [
+        {
+          "b": "チェックアウトお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いします"
+        }
+      ],
+      "romaji": "chekkuauto onegai shimasu",
+      "indonesian": "Saya mau check-out.",
+      "registerNotes": "Ucapkan sambil menyerahkan kunci. Sering kali itu saja sudah cukup.",
+      "audio": "audio/ja/hot-05.mp3",
+      "audioHint": "チェックアウトおねがいします",
+      "tags": [
+        "hotel",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "hot-06",
+      "japanese": "朝食は何時からですか",
+      "furigana": [
+        {
+          "b": "朝食",
+          "r": "ちょうしょく"
+        },
+        {
+          "b": "は"
+        },
+        {
+          "b": "何時",
+          "r": "なんじ"
+        },
+        {
+          "b": "からですか"
+        }
+      ],
+      "romaji": "chōshoku wa nanji kara desu ka",
+      "indonesian": "Sarapan mulai jam berapa?",
+      "registerNotes": "Memakai lagi 何時からですか dari kategori angka. から (mulai) diletakkan sesudah kata, bukan di depan seperti dalam bahasa Indonesia. 朝食 untuk tulisan di papan, 朝ごはん dalam percakapan.",
+      "audio": "audio/ja/hot-06.mp3",
+      "audioHint": "ちょうしょくはなんじからですか",
+      "tags": [
+        "hotel",
+        "waktu",
+        "pertanyaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "hot-07",
+      "japanese": "Wi-Fiのパスワードを教えてください",
+      "furigana": [
+        {
+          "b": "Wi-Fiのパスワードを"
+        },
+        {
+          "b": "教",
+          "r": "おし"
+        },
+        {
+          "b": "えてください"
+        }
+      ],
+      "romaji": "waifai no pasuwādo o oshiete kudasai",
+      "indonesian": "Boleh minta kata sandi Wi-Fi-nya?",
+      "registerNotes": "教えてください = “tolong beri tahu saya”, bisa dipakai untuk menanyakan informasi apa pun (教える juga berarti “mengajar”).",
+      "audio": "audio/ja/hot-07.mp3",
+      "audioHint": "ワイファイのパスワードをおしえてください",
+      "tags": [
+        "hotel",
+        "permintaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "hot-08",
+      "japanese": "部屋の鍵をなくしました",
+      "furigana": [
+        {
+          "b": "部屋",
+          "r": "へや"
+        },
+        {
+          "b": "の"
+        },
+        {
+          "b": "鍵",
+          "r": "かぎ"
+        },
+        {
+          "b": "をなくしました"
+        }
+      ],
+      "romaji": "heya no kagi o nakushimashita",
+      "indonesian": "Kunci kamar saya hilang.",
+      "registerNotes": "Bahasa Indonesia bilang “kuncinya hilang”; bahasa Jepang bilang “saya menghilangkan kunci”: なくしました, bisa untuk barang apa saja. Pasangkan dengan kategori darurat.",
+      "audio": "audio/ja/hot-08.mp3",
+      "audioHint": "へやのかぎをなくしました",
+      "tags": [
+        "hotel",
+        "masalah"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "hot-09",
+      "japanese": "もう一泊できますか",
+      "furigana": [
+        {
+          "b": "もう"
+        },
+        {
+          "b": "一泊",
+          "r": "いっぱく"
+        },
+        {
+          "b": "できますか"
+        }
+      ],
+      "romaji": "mō ippaku dekimasu ka",
+      "indonesian": "Bisa menginap satu malam lagi?",
+      "registerNotes": "泊 adalah kata bantu bilangan untuk malam menginap, dan bunyinya bisa berubah: 一泊 (いっぱく), 二泊 (にはく), 三泊 (さんぱく).",
+      "audio": "audio/ja/hot-09.mp3",
+      "audioHint": "もういっぱくできますか",
+      "tags": [
+        "hotel",
+        "pertanyaan"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "hot-10",
+      "japanese": "タオルをもう一枚もらえますか",
+      "furigana": [
+        {
+          "b": "タオルをもう"
+        },
+        {
+          "b": "一枚",
+          "r": "いちまい"
+        },
+        {
+          "b": "もらえますか"
+        }
+      ],
+      "romaji": "taoru o mō ichimai moraemasu ka",
+      "indonesian": "Boleh minta satu handuk lagi?",
+      "registerNotes": "枚 untuk menghitung benda tipis dan datar: handuk, tiket, kertas. Mirip “lembar” dalam bahasa Indonesia. もう一枚 = “satu lagi”.",
+      "audio": "audio/ja/hot-10.mp3",
+      "audioHint": "タオルをもういちまいもらえますか",
+      "tags": [
+        "hotel",
+        "permintaan",
+        "kata bantu bilangan"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

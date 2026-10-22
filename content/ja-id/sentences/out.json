@@ -1,0 +1,749 @@
+{
+  "schemaVersion": 1,
+  "id": "sentences-out",
+  "title": "外出先で",
+  "description": "用を済ませ、人とやりとりするための文：支払い、発送と返品、旅の予約、ちょっとした頼みごと、待ち合わせ。いくつかは友達向けのくだけた文です。",
+  "items": [
+    {
+      "id": "s-67",
+      "indonesian": "Kalau macet, kita naik ojek saja.",
+      "japanese": "渋滞してたら、オジェックで行こう。",
+      "chunks": [
+        {
+          "t": "Kalau macet, ",
+          "w": "w-kalau"
+        },
+        {
+          "t": "kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "naik ojek "
+        },
+        {
+          "t": "saja."
+        }
+      ],
+      "registerNotes": "選択肢の後の saja は「〜でいい、〜にしよう」。kalau の後に主語も「です」も要りません：kalau macet（渋滞なら）。",
+      "cultureNote": "ojek はバイクタクシーで、ふつうはアプリで呼びます。車が動けない渋滞もすり抜けて行けます。",
+      "audio": "audio/id/sentences/s-67.mp3",
+      "tags": [
+        "交通",
+        "予定"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-68",
+      "indonesian": "Tadi saya sudah bayar di kasir.",
+      "japanese": "さっきレジでもう払いました。",
+      "chunks": [
+        {
+          "t": "Tadi ",
+          "w": "w-tadi"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah bayar ",
+          "w": "w-bayar"
+        },
+        {
+          "t": "di kasir.",
+          "w": "w-di"
+        }
+      ],
+      "registerNotes": "tadi は「（今日の）さっき」で、sudah と一緒によく使います。もう一度払うように言われた時に便利です。",
+      "audio": "audio/id/sentences/s-68.mp3",
+      "tags": [
+        "支払い",
+        "お店"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-69",
+      "indonesian": "Ini bisa tolong dibungkus?",
+      "japanese": "これ、包んでもらえますか？",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "bisa tolong ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "dibungkus?"
+        }
+      ],
+      "registerNotes": "bisa tolong＋di- の動詞で、とてもていねいなお願いになります。物だけを言って、誰がするかは言いません。持ち帰りや、食べ残しを包んでもらう時に。",
+      "pitfallNote": "dibungkus は一語：動詞に付く di- は受け身で、場所の前の di（〜で）とは別物です。",
+      "audio": "audio/id/sentences/s-69.mp3",
+      "tags": [
+        "食べ物",
+        "お願い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-70",
+      "indonesian": "Maaf, bajunya kebesaran. Bisa tukar yang lebih kecil?",
+      "japanese": "すみません、服が大きすぎました。小さいのと交換できますか？",
+      "chunks": [
+        {
+          "t": "Maaf, "
+        },
+        {
+          "t": "bajunya ",
+          "w": "w-baju"
+        },
+        {
+          "t": "kebesaran. ",
+          "w": "w-besar"
+        },
+        {
+          "t": "Bisa tukar ",
+          "w": "w-tukar"
+        },
+        {
+          "t": "yang lebih kecil?",
+          "w": "w-kecil"
+        }
+      ],
+      "pitfallNote": "kebesaran は話し言葉の「大きすぎる」：形容詞を ke-…-an ではさむ形です。kekecilan は「小さすぎる」。",
+      "audio": "audio/id/sentences/s-70.mp3",
+      "tags": [
+        "買い物",
+        "トラブル"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-71",
+      "indonesian": "Kalau beli dua, ada diskon?",
+      "japanese": "二つ買ったら、割引はありますか？",
+      "chunks": [
+        {
+          "t": "Kalau beli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "dua, "
+        },
+        {
+          "t": "ada diskon?",
+          "w": "w-diskon"
+        }
+      ],
+      "registerNotes": "kalau で条件を先に言います。多めに買うと申し出るのは、値引きをていねいに頼む方法です。",
+      "audio": "audio/id/sentences/s-71.mp3",
+      "tags": [
+        "買い物",
+        "値段交渉"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-72",
+      "indonesian": "Kita tawar dulu, jangan langsung bayar.",
+      "japanese": "まず値切ろう。すぐに払っちゃだめだよ。",
+      "chunks": [
+        {
+          "t": "Kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "tawar dulu, ",
+          "w": "w-menawar"
+        },
+        {
+          "t": "jangan langsung "
+        },
+        {
+          "t": "bayar.",
+          "w": "w-bayar"
+        }
+      ],
+      "registerNotes": "市場で連れに言う言葉。ここの dulu は、何かする前の「まず」。tawar は menawar の me- を取った形です。",
+      "audio": "audio/id/sentences/s-72.mp3",
+      "tags": [
+        "市場",
+        "値段交渉"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-73",
+      "indonesian": "Bisa bayar tunai, atau harus transfer?",
+      "japanese": "現金で払えますか？それとも振込ですか？",
+      "chunks": [
+        {
+          "t": "Bisa bayar ",
+          "w": "w-bayar"
+        },
+        {
+          "t": "tunai, ",
+          "w": "w-tunai"
+        },
+        {
+          "t": "atau harus ",
+          "w": "w-harus"
+        },
+        {
+          "t": "transfer?",
+          "w": "w-transfer"
+        }
+      ],
+      "cultureNote": "民泊から市場の屋台まで、銀行振込や QR 決済がどこでも使われているので、現金をあてにする前に聞いておきましょう。",
+      "audio": "audio/id/sentences/s-73.mp3",
+      "tags": [
+        "支払い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-74",
+      "indonesian": "Saya sudah transfer, ini buktinya.",
+      "japanese": "振り込みました。これが控えです。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah transfer, ",
+          "w": "w-transfer"
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "buktinya."
+        }
+      ],
+      "cultureNote": "振込画面のスクリーンショット（bukti transfer）を送るのが、払ったことを示すふつうの方法です。",
+      "audio": "audio/id/sentences/s-74.mp3",
+      "tags": [
+        "支払い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-75",
+      "indonesian": "Ongkirnya berapa kalau dikirim ke Bandung?",
+      "japanese": "バンドンまで送ると、送料はいくらですか？",
+      "chunks": [
+        {
+          "t": "Ongkirnya ",
+          "w": "w-ongkir"
+        },
+        {
+          "t": "berapa ",
+          "w": "w-berapa"
+        },
+        {
+          "t": "kalau dikirim ",
+          "w": "w-mengirim"
+        },
+        {
+          "t": "ke Bandung?",
+          "w": "w-ke"
+        }
+      ],
+      "registerNotes": "ongkir は ongkos kirim（送料）の略。dikirim は kirim（送る）の di- の形で、「送られる」。",
+      "audio": "audio/id/sentences/s-75.mp3",
+      "tags": [
+        "配達",
+        "買い物"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-76",
+      "indonesian": "Paketnya sudah sampai, tapi isinya rusak.",
+      "japanese": "荷物は届きましたが、中身が壊れていました。",
+      "chunks": [
+        {
+          "t": "Paketnya ",
+          "w": "w-paket"
+        },
+        {
+          "t": "sudah sampai, ",
+          "w": "w-sampai"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "isinya "
+        },
+        {
+          "t": "rusak.",
+          "w": "w-rusak"
+        }
+      ],
+      "registerNotes": "isinya は isi（中身）から「その中身」。rusak は壊れた、傷んだ、故障した、を全部カバーします。",
+      "audio": "audio/id/sentences/s-76.mp3",
+      "tags": [
+        "配達",
+        "トラブル"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-77",
+      "indonesian": "Mbak, saya mau isi pulsa lima puluh ribu.",
+      "japanese": "すみません、携帯に5万ルピア分チャージしたいんですが。",
+      "chunks": [
+        {
+          "t": "Mbak, "
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau isi ",
+          "w": "w-mau"
+        },
+        {
+          "t": "pulsa ",
+          "w": "w-pulsa"
+        },
+        {
+          "t": "lima puluh ribu."
+        }
+      ],
+      "registerNotes": "isi pulsa は携帯のプリペイド残高をチャージすること。Mbak は応対してくれる若い女性へのていねいな呼びかけで、若い男性なら Mas。",
+      "cultureNote": "どのミニマーケットでも、携帯チャージの売り場や銀行アプリでもチャージできます。",
+      "audio": "audio/id/sentences/s-77.mp3",
+      "tags": [
+        "用事",
+        "電話"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-78",
+      "indonesian": "Bisa tolong jemput saya di bandara jam tujuh malam?",
+      "japanese": "夜7時に空港まで迎えに来てもらえますか？",
+      "chunks": [
+        {
+          "t": "Bisa tolong ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "jemput saya ",
+          "w": "w-menjemput"
+        },
+        {
+          "t": "di bandara ",
+          "w": "w-bandara"
+        },
+        {
+          "t": "jam tujuh malam?",
+          "w": "w-jam"
+        }
+      ],
+      "registerNotes": "お願いでは me- がよく落ちます：menjemput ではなく jemput。bisa tolong の後なら、それでもていねいです。時刻の後の malam で夜を表します。",
+      "audio": "audio/id/sentences/s-78.mp3",
+      "tags": [
+        "交通",
+        "お願い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-79",
+      "indonesian": "Kapal ke Gili berangkat jam berapa?",
+      "japanese": "ギリ行きの船は何時に出ますか？",
+      "chunks": [
+        {
+          "t": "Kapal ",
+          "w": "w-kapal"
+        },
+        {
+          "t": "ke Gili ",
+          "w": "w-ke"
+        },
+        {
+          "t": "berangkat ",
+          "w": "w-berangkat"
+        },
+        {
+          "t": "jam berapa?",
+          "w": "w-jam"
+        }
+      ],
+      "pitfallNote": "船やバス、飛行機が決まった時刻に出る時は、pergi（行く）ではなく berangkat（出発する）を使います。",
+      "audio": "audio/id/sentences/s-79.mp3",
+      "tags": [
+        "旅行",
+        "交通"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-80",
+      "indonesian": "Tiketnya sudah habis untuk hari ini.",
+      "japanese": "今日のチケットは売り切れです。",
+      "chunks": [
+        {
+          "t": "Tiketnya ",
+          "w": "w-tiket"
+        },
+        {
+          "t": "sudah habis ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "untuk "
+        },
+        {
+          "t": "hari ini.",
+          "w": "w-hari-ini"
+        }
+      ],
+      "registerNotes": "habis（使い切った、なくなった）で「売り切れ」を表します。料理が品切れの時も同じです：Maaf, sudah habis。",
+      "audio": "audio/id/sentences/s-80.mp3",
+      "tags": [
+        "旅行",
+        "切符"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-81",
+      "indonesian": "Sewa motornya berapa sehari?",
+      "japanese": "バイクのレンタルは1日いくらですか？",
+      "chunks": [
+        {
+          "t": "Sewa motornya ",
+          "w": "w-sewa-motor"
+        },
+        {
+          "t": "berapa ",
+          "w": "w-berapa"
+        },
+        {
+          "t": "sehari?",
+          "w": "w-hari"
+        }
+      ],
+      "registerNotes": "sehari は「1日、1日あたり」で、se- が「1」の意味。seminggu（1週間）も同じ形です。",
+      "audio": "audio/id/sentences/s-81.mp3",
+      "tags": [
+        "旅行",
+        "値段"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-82",
+      "indonesian": "Kami cari penginapan yang dekat pantai dan tidak terlalu mahal.",
+      "japanese": "ビーチに近くて、あまり高くない宿を探しています。",
+      "chunks": [
+        {
+          "t": "Kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "cari penginapan ",
+          "w": "w-penginapan"
+        },
+        {
+          "t": "yang dekat ",
+          "w": "w-dekat"
+        },
+        {
+          "t": "pantai ",
+          "w": "w-pantai"
+        },
+        {
+          "t": "dan tidak terlalu "
+        },
+        {
+          "t": "mahal.",
+          "w": "w-mahal"
+        }
+      ],
+      "registerNotes": "yang で説明を名詞につなげます：penginapan yang dekat pantai（ビーチに近い宿）。日本語とは逆に、説明は名詞の後ろに来ます。",
+      "audio": "audio/id/sentences/s-82.mp3",
+      "tags": [
+        "旅行",
+        "宿"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-83",
+      "indonesian": "Kalau malam, daerah ini aman?",
+      "japanese": "夜、このあたりは安全ですか？",
+      "chunks": [
+        {
+          "t": "Kalau malam, ",
+          "w": "w-malam"
+        },
+        {
+          "t": "daerah "
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "aman?",
+          "w": "w-aman"
+        }
+      ],
+      "registerNotes": "kalau malam は「夜になったら（いつも）」という意味の「夜は」。宿の人やホテルのスタッフに聞くのがいちばんです。",
+      "audio": "audio/id/sentences/s-83.mp3",
+      "tags": [
+        "安全",
+        "旅行"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-84",
+      "indonesian": "Koper saya ketinggalan di taksi.",
+      "japanese": "タクシーにスーツケースを置き忘れました。",
+      "chunks": [
+        {
+          "t": "Koper ",
+          "w": "w-koper"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "ketinggalan "
+        },
+        {
+          "t": "di taksi.",
+          "w": "w-di"
+        }
+      ],
+      "pitfallNote": "ketinggalan は「うっかり置いてきてしまった」：ke-…-an の形で、自分がしたことというより、自分の身に起きたことを表します。日本語の「〜てしまった」に近い感覚です。",
+      "audio": "audio/id/sentences/s-84.mp3",
+      "tags": [
+        "旅行",
+        "トラブル"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-85",
+      "indonesian": "Tolong hubungi saya kalau ada kabar.",
+      "japanese": "何かわかったら連絡してください。",
+      "chunks": [
+        {
+          "t": "Tolong hubungi ",
+          "w": "w-menghubungi"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "kalau ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "kabar.",
+          "w": "w-kabar"
+        }
+      ],
+      "registerNotes": "hubungi は menghubungi の me- を落とした形で、お願いではよくあります。kabar（知らせ）は Apa kabar? の kabar と同じ言葉です。",
+      "audio": "audio/id/sentences/s-85.mp3",
+      "tags": [
+        "お願い",
+        "連絡"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-86",
+      "indonesian": "Boleh pinjam pulpennya sebentar?",
+      "japanese": "ちょっとペンをお借りしてもいいですか？",
+      "chunks": [
+        {
+          "t": "Boleh pinjam ",
+          "w": "w-meminjam"
+        },
+        {
+          "t": "pulpennya "
+        },
+        {
+          "t": "sebentar?",
+          "w": "w-sebentar"
+        }
+      ],
+      "registerNotes": "pulpennya（そのペン）で、「あなた」と言わずに相手のペンをていねいに指せます。日本語で「あなた」を避けるのと同じ発想です。boleh は許可を求める「〜してもいい？」。",
+      "audio": "audio/id/sentences/s-86.mp3",
+      "tags": [
+        "お願い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-87",
+      "indonesian": "Bisa tolong fotokan kami?",
+      "japanese": "私たちの写真を撮ってもらえますか？",
+      "chunks": [
+        {
+          "t": "Bisa tolong ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "fotokan ",
+          "w": "w-foto"
+        },
+        {
+          "t": "kami?",
+          "w": "w-kami"
+        }
+      ],
+      "registerNotes": "fotokan は foto に -kan が付いた形で、「誰かのために写真を撮る」。撮る人は写真に入らないので、kita ではなく kami。",
+      "audio": "audio/id/sentences/s-87.mp3",
+      "tags": [
+        "お願い",
+        "旅行"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-88",
+      "indonesian": "Maaf, saya tidak sengaja.",
+      "japanese": "すみません、わざとじゃないんです。",
+      "chunks": [
+        {
+          "t": "Maaf, "
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tidak sengaja.",
+          "w": "w-tidak"
+        }
+      ],
+      "registerNotes": "人にぶつかった時や、物を倒した時に。sengaja は「わざと」。",
+      "audio": "audio/id/sentences/s-88.mp3",
+      "tags": [
+        "おわび",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-89",
+      "indonesian": "Antreannya panjang sekali, kita datang lagi nanti saja.",
+      "japanese": "すごい行列だね。また後で来よう。",
+      "chunks": [
+        {
+          "t": "Antreannya "
+        },
+        {
+          "t": "panjang sekali, "
+        },
+        {
+          "t": "kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "datang lagi ",
+          "w": "w-datang"
+        },
+        {
+          "t": "nanti saja.",
+          "w": "w-nanti"
+        }
+      ],
+      "registerNotes": "datang lagi は「また来る」。nanti saja（後でいいや）は、先延ばしにするやわらかい言い方です。",
+      "audio": "audio/id/sentences/s-89.mp3",
+      "tags": [
+        "用事",
+        "予定"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-90",
+      "register": "casual",
+      "indonesian": "Nanti malam kita nongkrong di kafe dekat kosku, yuk.",
+      "japanese": "今夜、うちの近くのカフェでまったりしようよ。",
+      "chunks": [
+        {
+          "t": "Nanti malam ",
+          "w": "w-nanti-malam"
+        },
+        {
+          "t": "kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "nongkrong ",
+          "w": "w-nongkrong"
+        },
+        {
+          "t": "di kafe ",
+          "w": "w-di"
+        },
+        {
+          "t": "dekat kosku, ",
+          "w": "w-kos"
+        },
+        {
+          "t": "yuk."
+        }
+      ],
+      "registerNotes": "友達同士のくだけた言い方。最後の yuk で「〜しようよ」になります。kos は下宿の一室を借りる住まいで、学生や若い社会人の多くが住んでいます。",
+      "audio": "audio/id/sentences/s-90.mp3",
+      "tags": [
+        "くだけた言い方",
+        "予定"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-91",
+      "register": "casual",
+      "indonesian": "Aku udah di depan, kamu di mana?",
+      "japanese": "もう前に着いてるよ。どこにいる？",
+      "chunks": [
+        {
+          "t": "Aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "udah di depan, ",
+          "w": "w-depan"
+        },
+        {
+          "t": "kamu ",
+          "w": "w-kamu"
+        },
+        {
+          "t": "di mana?",
+          "w": "w-di-mana"
+        }
+      ],
+      "registerNotes": "くだけた言い方：udah は話し言葉の sudah。di depan（前に）は、たいてい建物の外や門の前のことです。",
+      "audio": "audio/id/sentences/s-91.mp3",
+      "tags": [
+        "くだけた言い方",
+        "待ち合わせ"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

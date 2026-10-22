@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-me",
+  "connector": "me-",
+  "gloss": "〜を…する（他動詞）",
+  "title": "me- の動詞",
+  "pattern": "me- + 語根 + 目的語: membeli tiket · 話し言葉では: beli tiket",
+  "explanation": "me- は「だれかが何かを〜する」動詞、つまり目的語をとる他動詞を作ります：membeli tiket（切符を買う）、membaca buku（本を読む）、memesan kamar（部屋を予約する）。名詞を動詞にすることもあります：rokok は「たばこ」、merokok は「たばこを吸う」。書き言葉、看板、ニュース、改まった話し方では me- を付けるので、書かれたインドネシア語は耳で聞く言葉より長く見えます。会話ではたいてい落ちます（Saya beli tiket kemarin、Cari apa?）。日本語でも話し言葉では「ご飯（を）食べた？」と助詞を落としても通じるように、文脈で意味がわかるので短い形で十分なのです。友達同士では ng- や ny- で始まる形もよく使います：mengambil → ngambil、mencari → nyari、menonton → nonton。",
+  "natural": "書くもの（ホテルへのメッセージ、メール、書類）と、役所の人などにていねいに話したい時は me- を付けます。店員さん、運転手さん、近所の人には語根だけで十分ていねいです：Saya mau beli dua（2つください）。",
+  "stiff": "短い会話文に me- を並べると、文章を読み上げているように聞こえます。切符売り場で Saya ingin membeli dua tiket は正しくても書き言葉的で、日本語で窓口に「切符を2枚購入したい」と言うような硬さです。実際は Beli dua tiket, ya。ng- や ny- の形はくだけた言い方なので、友達との会話だけにしましょう。",
+  "examples": [
+    {
+      "id": "gx-me-1",
+      "indonesian": "Saya sudah membeli tiketnya.",
+      "japanese": "切符はもう買いました。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "membeli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "tiketnya.",
+          "w": "w-tiket"
+        }
+      ],
+      "gap": {
+        "before": "Saya sudah ",
+        "answer": "membeli",
+        "after": " tiketnya.",
+        "options": [
+          "membeli",
+          "beli",
+          "dibeli"
+        ],
+        "ok": [
+          "beli"
+        ],
+        "note": "Beli も同じく正解で、口で言う時はむしろこちらがふつうです。membeli は書き言葉・改まった形です。",
+        "why": "Saya が切符を買う、つまり目的語をとる動作なので me- の動詞 membeli。"
+      },
+      "audio": "audio/id/grammar/gx-me-1.mp3",
+      "tags": [
+        "文法",
+        "me"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-me-2",
+      "register": "casual",
+      "indonesian": "Aku beli kopi dulu, ya.",
+      "japanese": "先にちょっとコーヒー買ってくるね。",
+      "chunks": [
+        {
+          "t": "Aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "beli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "kopi ",
+          "w": "w-kopi"
+        },
+        {
+          "t": "dulu, ",
+          "w": "w-dulu"
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "gap": {
+        "before": "Aku ",
+        "answer": "beli",
+        "after": " kopi dulu, ya.",
+        "options": [
+          "beli",
+          "dibeli",
+          "pembeli"
+        ],
+        "why": "友達との会話では me- が落ちて、語根の beli だけで十分。dibeli は受け身（買われる）、pembeli は「買う人」です。"
+      },
+      "audio": "audio/id/grammar/gx-me-2.mp3",
+      "tags": [
+        "文法",
+        "me"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-me-3",
+      "indonesian": "Saya belum memutuskan mau ke mana.",
+      "japanese": "どこに行くか、まだ決めていません。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "belum ",
+          "w": "w-belum"
+        },
+        {
+          "t": "memutuskan ",
+          "w": "w-memutuskan"
+        },
+        {
+          "t": "mau ke mana."
+        }
+      ],
+      "gap": {
+        "before": "Saya belum ",
+        "answer": "memutuskan",
+        "after": " mau ke mana.",
+        "options": [
+          "memutuskan",
+          "putus",
+          "diputuskan"
+        ],
+        "why": "「決める」は memutuskan。putus だけだと「切れる、別れる」なので、この me- は話し言葉でも残ります。"
+      },
+      "audio": "audio/id/grammar/gx-me-3.mp3",
+      "tags": [
+        "文法",
+        "me"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-me-4",
+      "indonesian": "Dilarang merokok di dalam kamar.",
+      "japanese": "客室内は禁煙です。",
+      "chunks": [
+        {
+          "t": "Dilarang "
+        },
+        {
+          "t": "merokok "
+        },
+        {
+          "t": "di dalam ",
+          "w": "w-di"
+        },
+        {
+          "t": "kamar.",
+          "w": "w-kamar"
+        }
+      ],
+      "gap": {
+        "before": "Dilarang ",
+        "answer": "merokok",
+        "after": " di dalam kamar.",
+        "options": [
+          "merokok",
+          "rokok",
+          "perokok"
+        ],
+        "why": "「たばこを吸う」は me- ＋ rokok（たばこ）。perokok は「喫煙者」です。"
+      },
+      "audio": "audio/id/grammar/gx-me-4.mp3",
+      "tags": [
+        "文法",
+        "me"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

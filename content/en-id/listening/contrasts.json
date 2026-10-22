@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "id": "contrasts",
+  "title": "Which did you hear?",
+  "description": "Sounds English speakers mix up in Indonesian: full vowels in every syllable, c that's always 'ch', and a tapped r against l. Hear a word and pick which one it was.",
+  "sets": [
+    {
+      "id": "vowels",
+      "sound": "Full vowels: a, i, u",
+      "note": "Indonesian has no weak syllables: every a, i and u keeps its full sound, where English would blur some to 'uh'. Listen to each vowel, the last one especially, and say it as clearly as the first: bata ends in 'ah', batu in 'oo'.",
+      "pairs": [
+        [
+          {
+            "id": "lc-vowels-batu",
+            "indonesian": "batu",
+            "english": "stone, rock",
+            "audio": "audio/id/listening/lc-vowels-batu.mp3"
+          },
+          {
+            "id": "lc-vowels-bata",
+            "indonesian": "bata",
+            "english": "brick",
+            "audio": "audio/id/listening/lc-vowels-bata.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-vowels-kaki",
+            "indonesian": "kaki",
+            "english": "foot, leg",
+            "audio": "audio/id/listening/lc-vowels-kaki.mp3"
+          },
+          {
+            "id": "lc-vowels-kaku",
+            "indonesian": "kaku",
+            "english": "stiff",
+            "audio": "audio/id/listening/lc-vowels-kaku.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-vowels-mata",
+            "indonesian": "mata",
+            "english": "eye",
+            "audio": "audio/id/listening/lc-vowels-mata.mp3"
+          },
+          {
+            "id": "lc-vowels-mati",
+            "indonesian": "mati",
+            "english": "dead; switched off",
+            "audio": "audio/id/listening/lc-vowels-mati.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-vowels-baru",
+            "indonesian": "baru",
+            "english": "new",
+            "audio": "audio/id/listening/lc-vowels-baru.mp3"
+          },
+          {
+            "id": "lc-vowels-biru",
+            "indonesian": "biru",
+            "english": "blue",
+            "audio": "audio/id/listening/lc-vowels-biru.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-vowels-lima",
+            "indonesian": "lima",
+            "english": "five",
+            "audio": "audio/id/listening/lc-vowels-lima.mp3"
+          },
+          {
+            "id": "lc-vowels-lama",
+            "indonesian": "lama",
+            "english": "long (time); old",
+            "audio": "audio/id/listening/lc-vowels-lama.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-vowels-rumah",
+            "indonesian": "rumah",
+            "english": "house, home",
+            "audio": "audio/id/listening/lc-vowels-rumah.mp3"
+          },
+          {
+            "id": "lc-vowels-ramah",
+            "indonesian": "ramah",
+            "english": "friendly",
+            "audio": "audio/id/listening/lc-vowels-ramah.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-vowels-dua",
+            "indonesian": "dua",
+            "english": "two",
+            "audio": "audio/id/listening/lc-vowels-dua.mp3"
+          },
+          {
+            "id": "lc-vowels-dia",
+            "indonesian": "dia",
+            "english": "he, she",
+            "audio": "audio/id/listening/lc-vowels-dia.mp3"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "c",
+      "sound": "c, k and s",
+      "note": "C is always the 'ch' of 'chat', said a little softer, and never a k or an s: cari is 'chah-ree', kari is 'kah-ree'. If you hear 'ch', it's spelt c.",
+      "pairs": [
+        [
+          {
+            "id": "lc-c-cari",
+            "indonesian": "cari",
+            "english": "to look for",
+            "audio": "audio/id/listening/lc-c-cari.mp3"
+          },
+          {
+            "id": "lc-c-kari",
+            "indonesian": "kari",
+            "english": "curry",
+            "audio": "audio/id/listening/lc-c-kari.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-c-cuka",
+            "indonesian": "cuka",
+            "english": "vinegar",
+            "audio": "audio/id/listening/lc-c-cuka.mp3"
+          },
+          {
+            "id": "lc-c-suka",
+            "indonesian": "suka",
+            "english": "to like",
+            "audio": "audio/id/listening/lc-c-suka.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-c-cucu",
+            "indonesian": "cucu",
+            "english": "grandchild",
+            "audio": "audio/id/listening/lc-c-cucu.mp3"
+          },
+          {
+            "id": "lc-c-susu",
+            "indonesian": "susu",
+            "english": "milk",
+            "audio": "audio/id/listening/lc-c-susu.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-c-pacar",
+            "indonesian": "pacar",
+            "english": "boyfriend, girlfriend",
+            "audio": "audio/id/listening/lc-c-pacar.mp3"
+          },
+          {
+            "id": "lc-c-pasar",
+            "indonesian": "pasar",
+            "english": "market",
+            "audio": "audio/id/listening/lc-c-pasar.mp3"
+          }
+        ]
+      ]
+    },
+    {
+      "id": "r",
+      "sound": "r and l",
+      "note": "Indonesian r is a quick tap of the tongue tip just behind the top teeth, often rolled, and to English ears it can sound like a d or an l. For l, press the tongue tip there and hold it, as at the start of 'leaf'.",
+      "pairs": [
+        [
+          {
+            "id": "lc-r-rupa",
+            "indonesian": "rupa",
+            "english": "appearance, form",
+            "audio": "audio/id/listening/lc-r-rupa.mp3"
+          },
+          {
+            "id": "lc-r-lupa",
+            "indonesian": "lupa",
+            "english": "to forget",
+            "audio": "audio/id/listening/lc-r-lupa.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-r-rusa",
+            "indonesian": "rusa",
+            "english": "deer",
+            "audio": "audio/id/listening/lc-r-rusa.mp3"
+          },
+          {
+            "id": "lc-r-lusa",
+            "indonesian": "lusa",
+            "english": "the day after tomorrow",
+            "audio": "audio/id/listening/lc-r-lusa.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-r-tari",
+            "indonesian": "tari",
+            "english": "dance",
+            "audio": "audio/id/listening/lc-r-tari.mp3"
+          },
+          {
+            "id": "lc-r-tali",
+            "indonesian": "tali",
+            "english": "rope, string",
+            "audio": "audio/id/listening/lc-r-tali.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-r-harus",
+            "indonesian": "harus",
+            "english": "must, have to",
+            "audio": "audio/id/listening/lc-r-harus.mp3"
+          },
+          {
+            "id": "lc-r-halus",
+            "indonesian": "halus",
+            "english": "smooth, soft",
+            "audio": "audio/id/listening/lc-r-halus.mp3"
+          }
+        ],
+        [
+          {
+            "id": "lc-r-rantai",
+            "indonesian": "rantai",
+            "english": "chain",
+            "audio": "audio/id/listening/lc-r-rantai.mp3"
+          },
+          {
+            "id": "lc-r-lantai",
+            "indonesian": "lantai",
+            "english": "floor",
+            "audio": "audio/id/listening/lc-r-lantai.mp3"
+          }
+        ]
+      ]
+    }
+  ]
+}

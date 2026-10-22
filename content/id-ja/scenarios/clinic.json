@@ -1,0 +1,412 @@
+{
+  "schemaVersion": 1,
+  "id": "clinic",
+  "title": "Di klinik",
+  "category": "doctor",
+  "setting": "Sudah tiga hari kamu demam dan batuk, jadi kamu pergi ke klinik di dekat tempatmu tinggal. Sekarang kamu di meja pendaftaran.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "receptionist",
+      "japanese": "こんにちは。初診ですか。",
+      "furigana": [
+        {
+          "b": "こんにちは。"
+        },
+        {
+          "b": "初診",
+          "r": "しょしん"
+        },
+        {
+          "b": "ですか。"
+        }
+      ],
+      "indonesian": "Selamat siang. Baru pertama kali berobat di sini?",
+      "audio": "audio/ja/scenario/clinic-n1.mp3",
+      "audioHint": "こんにちは。しょしんですか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "はい、初めてです。保険証がないんですが、大丈夫ですか。",
+          "furigana": [
+            {
+              "b": "はい、"
+            },
+            {
+              "b": "初",
+              "r": "はじ"
+            },
+            {
+              "b": "めてです。"
+            },
+            {
+              "b": "保険証",
+              "r": "ほけんしょう"
+            },
+            {
+              "b": "がないんですが、"
+            },
+            {
+              "b": "大丈夫",
+              "r": "だいじょうぶ"
+            },
+            {
+              "b": "ですか。"
+            }
+          ],
+          "indonesian": "Ya, baru pertama kali. Saya tidak punya kartu asuransi kesehatan. Apakah tidak apa-apa?",
+          "feedback": "Bagus disebutkan sejak awal: pengunjung biasanya membayar penuh, lalu mengklaimnya ke asuransi perjalanan.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "japanese": "初診って何ですか。",
+          "furigana": [
+            {
+              "b": "初診",
+              "r": "しょしん"
+            },
+            {
+              "b": "って"
+            },
+            {
+              "b": "何",
+              "r": "なん"
+            },
+            {
+              "b": "ですか。"
+            }
+          ],
+          "indonesian": "初診 itu artinya apa?",
+          "feedback": "Bertanya selalu boleh. 初診 adalah kunjungan pertama ke klinik ini.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "いいえ。",
+          "furigana": [
+            {
+              "b": "いいえ。"
+            }
+          ],
+          "indonesian": "Tidak.",
+          "feedback": "初診 berarti kunjungan pertama, jadi jawabannya di sini はい. Kalau kamu bilang “tidak”, mereka akan mencari catatan medismu.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "receptionist",
+      "japanese": "では、こちらの問診票に記入してください。",
+      "furigana": [
+        {
+          "b": "では、こちらの"
+        },
+        {
+          "b": "問診票",
+          "r": "もんしんひょう"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "記入",
+          "r": "きにゅう"
+        },
+        {
+          "b": "してください。"
+        }
+      ],
+      "indonesian": "Kalau begitu, silakan isi formulir riwayat kesehatan ini.",
+      "audio": "audio/ja/scenario/clinic-n2.mp3",
+      "audioHint": "では、こちらのもんしんひょうにきにゅうしてください",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "すみません、英語のものはありますか。",
+          "furigana": [
+            {
+              "b": "すみません、"
+            },
+            {
+              "b": "英語",
+              "r": "えいご"
+            },
+            {
+              "b": "のものはありますか。"
+            }
+          ],
+          "indonesian": "Maaf, ada yang berbahasa Inggris?",
+          "feedback": "Banyak klinik punya, terutama di kota. Bertanya lebih baik daripada menebak.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "japanese": "分かりました。",
+          "furigana": [
+            {
+              "b": "分",
+              "r": "わ"
+            },
+            {
+              "b": "かりました。"
+            }
+          ],
+          "indonesian": "Baik.",
+          "feedback": "Boleh: isi dengan tenang, tidak perlu buru-buru.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "書けません。",
+          "furigana": [
+            {
+              "b": "書",
+              "r": "か"
+            },
+            {
+              "b": "けません。"
+            }
+          ],
+          "indonesian": "Saya tidak bisa menulis.",
+          "feedback": "Dimengerti, tapi bikin kaget! Sebutkan apa yang kamu perlukan: 英語のものはありますか, atau 手伝ってもらえますか.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "doctor",
+      "japanese": "今日はどうされましたか。",
+      "furigana": [
+        {
+          "b": "今日",
+          "r": "きょう"
+        },
+        {
+          "b": "はどうされましたか。"
+        }
+      ],
+      "indonesian": "Hari ini ada keluhan apa?",
+      "audio": "audio/ja/scenario/clinic-n3.mp3",
+      "audioHint": "きょうはどうされましたか",
+      "options": [
+        {
+          "phraseId": "doc-02",
+          "quality": "good",
+          "feedback": "Jelas: gejalanya dan sejak kapan. Sebutkan batuknya juga. Perhatikan urutannya: 三日前から (sejak tiga hari lalu) di depan, kata kerjanya di akhir.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "japanese": "三日前から熱と咳があって、喉も痛いんです。",
+          "furigana": [
+            {
+              "b": "三日前",
+              "r": "みっかまえ"
+            },
+            {
+              "b": "から"
+            },
+            {
+              "b": "熱",
+              "r": "ねつ"
+            },
+            {
+              "b": "と"
+            },
+            {
+              "b": "咳",
+              "r": "せき"
+            },
+            {
+              "b": "があって、"
+            },
+            {
+              "b": "喉",
+              "r": "のど"
+            },
+            {
+              "b": "も"
+            },
+            {
+              "b": "痛",
+              "r": "いた"
+            },
+            {
+              "b": "いんです。"
+            }
+          ],
+          "indonesian": "Saya demam dan batuk sejak tiga hari lalu, dan tenggorokan saya juga sakit.",
+          "feedback": "Semua yang dokter perlukan: apa, dan sejak kapan. んです memberi nuansa menjelaskan.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "病気です。",
+          "furigana": [
+            {
+              "b": "病気",
+              "r": "びょうき"
+            },
+            {
+              "b": "です。"
+            }
+          ],
+          "indonesian": "Saya sakit.",
+          "feedback": "Dokter perlu yang spesifik: apa, dan sejak kapan. 三日前から熱があります.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "doctor",
+      "japanese": "何かアレルギーはありますか。",
+      "furigana": [
+        {
+          "b": "何",
+          "r": "なに"
+        },
+        {
+          "b": "かアレルギーはありますか。"
+        }
+      ],
+      "indonesian": "Ada alergi?",
+      "audio": "audio/ja/scenario/clinic-n4.mp3",
+      "audioHint": "なにかアレルギーはありますか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "いいえ、ありません。",
+          "furigana": [
+            {
+              "b": "いいえ、ありません。"
+            }
+          ],
+          "indonesian": "Tidak, tidak ada.",
+          "feedback": "Jawaban yang jelas.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "doc-06",
+          "quality": "good",
+          "feedback": "Lalu sebutkan jenisnya: えび (udang), ナッツ (kacang), 卵 (telur)…",
+          "next": "n5"
+        },
+        {
+          "phraseId": "doc-07",
+          "quality": "good",
+          "feedback": "Bukan persis yang ditanyakan, tapi layak disebut sekarang: dokter perlu tahu.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "doctor",
+      "japanese": "風邪ですね。お薬を出しておきます。三日たっても熱が下がらなかったら、また来てください。",
+      "furigana": [
+        {
+          "b": "風邪",
+          "r": "かぜ"
+        },
+        {
+          "b": "ですね。お"
+        },
+        {
+          "b": "薬",
+          "r": "くすり"
+        },
+        {
+          "b": "を"
+        },
+        {
+          "b": "出",
+          "r": "だ"
+        },
+        {
+          "b": "しておきます。"
+        },
+        {
+          "b": "三日",
+          "r": "みっか"
+        },
+        {
+          "b": "たっても"
+        },
+        {
+          "b": "熱",
+          "r": "ねつ"
+        },
+        {
+          "b": "が"
+        },
+        {
+          "b": "下",
+          "r": "さ"
+        },
+        {
+          "b": "がらなかったら、また"
+        },
+        {
+          "b": "来",
+          "r": "き"
+        },
+        {
+          "b": "てください。"
+        }
+      ],
+      "indonesian": "Ini flu biasa, ya. Saya beri obat. Kalau tiga hari lagi demamnya belum turun, datang lagi, ya.",
+      "audio": "audio/ja/scenario/clinic-n5.mp3",
+      "audioHint": "かぜですね。おくすりをだしておきます。みっかたってもねつがさがらなかったら、またきてください",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "分かりました。ありがとうございました。",
+          "furigana": [
+            {
+              "b": "分",
+              "r": "わ"
+            },
+            {
+              "b": "かりました。ありがとうございました。"
+            }
+          ],
+          "indonesian": "Baik, saya mengerti. Terima kasih.",
+          "feedback": "Balasan yang tepat untuk instruksi, disertai terima kasih.",
+          "next": "end"
+        },
+        {
+          "phraseId": "doc-09",
+          "quality": "good",
+          "feedback": "Ide bagus kalau kamu punya asuransi perjalanan: minta sekarang, sebelum membayar.",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "また来ます。",
+          "furigana": [
+            {
+              "b": "また"
+            },
+            {
+              "b": "来",
+              "r": "き"
+            },
+            {
+              "b": "ます。"
+            }
+          ],
+          "indonesian": "Saya akan datang lagi.",
+          "feedback": "Terdengar seperti kamu memang berencana datang lagi! Balasan untuk instruksi adalah 分かりました (baik, saya mengerti).",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "indonesian": "Selesai. Sebutkan keluhanmu dan sejak kapan (三日前から…), sebutkan alergi dan obat yang kamu minum, dan minta 診断書 kalau kamu punya asuransi: itu sudah mencakup sebagian besar kunjungan ke klinik.",
+      "end": true,
+      "options": []
+    }
+  }
+}

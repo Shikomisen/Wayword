@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "id": "words-describe",
+  "title": "Describing Things",
+  "description": "The everyday describing words, mostly in pairs: big and small, cheap and expensive, near and far. They go after the noun: rumah besar, a big house.",
+  "items": [
+    {
+      "id": "w-besar",
+      "indonesian": "besar",
+      "english": "big, large",
+      "pos": "adjective",
+      "pitfallNote": "Describing words go after the noun: rumah besar (a big house), not besar rumah.",
+      "audio": "audio/id/words/w-besar.mp3",
+      "tags": [
+        "describing",
+        "size"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kecil",
+      "indonesian": "kecil",
+      "english": "small, little",
+      "pos": "adjective",
+      "registerNotes": "Waktu kecil means as a child, and kamar kecil (little room) is the polite word for the toilet.",
+      "audio": "audio/id/words/w-kecil.mp3",
+      "tags": [
+        "describing",
+        "size"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-mahal",
+      "indonesian": "mahal",
+      "english": "expensive",
+      "pos": "adjective",
+      "registerNotes": "At a market, Mahal sekali (very expensive) or Terlalu mahal (too expensive), said with a smile, opens the bargaining.",
+      "audio": "audio/id/words/w-mahal.mp3",
+      "tags": [
+        "describing",
+        "shopping"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-murah",
+      "indonesian": "murah",
+      "english": "cheap, inexpensive",
+      "pos": "adjective",
+      "pitfallNote": "Murah is a compliment: good value. Cheap and nasty is murahan.",
+      "audio": "audio/id/words/w-murah.mp3",
+      "tags": [
+        "describing",
+        "shopping"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-baru",
+      "indonesian": "baru",
+      "english": "new",
+      "pos": "adjective",
+      "pitfallNote": "Before a verb, baru means just: Saya baru datang (I've just arrived). Before a number it means only so far: baru dua hari (only two days).",
+      "audio": "audio/id/words/w-baru.mp3",
+      "tags": [
+        "describing"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-lama",
+      "indonesian": "lama",
+      "english": "old (not new); long (time)",
+      "pos": "adjective",
+      "pitfallNote": "Lama is old as in not new or former (rumah lama, my old house) and a long time (Sudah lama di sini?). Old in age, for people, is tua.",
+      "audio": "audio/id/words/w-lama.mp3",
+      "tags": [
+        "describing",
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bagus",
+      "indonesian": "bagus",
+      "english": "good, nice, fine",
+      "pos": "adjective",
+      "pitfallNote": "Bagus is good for things, places and work: Bagus sekali. For people and health, use baik: Kabar baik.",
+      "audio": "audio/id/words/w-bagus.mp3",
+      "tags": [
+        "describing",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-jelek",
+      "indonesian": "jelek",
+      "english": "ugly; bad, poor quality",
+      "pos": "adjective",
+      "registerNotes": "Blunt. To be kind, say kurang bagus (not so good).",
+      "audio": "audio/id/words/w-jelek.mp3",
+      "tags": [
+        "describing"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-panas",
+      "indonesian": "panas",
+      "english": "hot",
+      "pos": "adjective",
+      "pitfallNote": "Hot in temperature: the weather, food, a drink. Chilli-hot is pedas, and warm is hangat: teh hangat.",
+      "audio": "audio/id/words/w-panas.mp3",
+      "tags": [
+        "describing",
+        "temperature"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dingin",
+      "indonesian": "dingin",
+      "english": "cold",
+      "pos": "adjective",
+      "registerNotes": "Ask for air dingin if you want your drinking water chilled rather than at room temperature.",
+      "audio": "audio/id/words/w-dingin.mp3",
+      "tags": [
+        "describing",
+        "temperature"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-banyak",
+      "indonesian": "banyak",
+      "english": "a lot, many, much",
+      "pos": "adjective",
+      "pitfallNote": "Unlike most describing words, banyak goes before the noun: banyak orang (lots of people). Terima kasih banyak is thank you very much.",
+      "audio": "audio/id/words/w-banyak.mp3",
+      "tags": [
+        "describing",
+        "amount"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sedikit",
+      "indonesian": "sedikit",
+      "english": "a little, a few",
+      "pos": "adjective",
+      "registerNotes": "The modest, usual answer to Bisa bahasa Indonesia? (Can you speak Indonesian?) is Sedikit-sedikit (just a little).",
+      "audio": "audio/id/words/w-sedikit.mp3",
+      "tags": [
+        "describing",
+        "amount"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cepat",
+      "indonesian": "cepat",
+      "english": "fast, quick",
+      "pos": "adjective",
+      "registerNotes": "Cepat sembuh, ya means get well soon. To a driver going too fast: Jangan cepat-cepat, Pak.",
+      "audio": "audio/id/words/w-cepat.mp3",
+      "tags": [
+        "describing",
+        "speed"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-lambat",
+      "indonesian": "lambat",
+      "english": "slow",
+      "pos": "adjective",
+      "registerNotes": "For slow service, internet or traffic. To ask someone to slow down or speak slowly, people say pelan-pelan instead.",
+      "pitfallNote": "Late is terlambat, from the same word; casually, telat.",
+      "audio": "audio/id/words/w-lambat.mp3",
+      "tags": [
+        "describing",
+        "speed"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pelan",
+      "indonesian": "pelan",
+      "english": "slow, slowly; soft, quiet",
+      "pos": "adjective",
+      "registerNotes": "The everyday word for slow and gentle, usually doubled: Pelan-pelan, Pak (slowly, please). Bisa bicara pelan-pelan? asks someone to speak slowly.",
+      "pitfallNote": "Pelan also means quiet: suaranya pelan (his voice is soft).",
+      "audio": "audio/id/words/w-pelan.mp3",
+      "tags": [
+        "describing",
+        "speed"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-jauh",
+      "indonesian": "jauh",
+      "english": "far",
+      "pos": "adjective",
+      "registerNotes": "Jauh dari sini? (Is it far from here?) and Masih jauh? (Is it much further?) are the questions to ask on the way.",
+      "audio": "audio/id/words/w-jauh.mp3",
+      "tags": [
+        "describing",
+        "directions"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dekat",
+      "indonesian": "dekat",
+      "english": "near, close",
+      "pos": "adjective",
+      "registerNotes": "Dekat sini means near here: Ada ATM dekat sini? Of people, dekat means close: kami dekat (we're close).",
+      "audio": "audio/id/words/w-dekat.mp3",
+      "tags": [
+        "describing",
+        "directions"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bersih",
+      "indonesian": "bersih",
+      "english": "clean",
+      "pos": "adjective",
+      "registerNotes": "Air bersih is clean water for washing, not necessarily for drinking.",
+      "audio": "audio/id/words/w-bersih.mp3",
+      "tags": [
+        "describing"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kotor",
+      "indonesian": "kotor",
+      "english": "dirty",
+      "pos": "adjective",
+      "audio": "audio/id/words/w-kotor.mp3",
+      "tags": [
+        "describing"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

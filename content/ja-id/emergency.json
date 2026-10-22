@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "id": "emergency",
+  "title": "緊急時・体調不良",
+  "order": 11,
+  "description": "何かあった時のために用意しておきたいフレーズ。助けを呼ぶ、警察や救急車を呼ぶ、病気やけが、パスポートや財布をなくした時。緊急番号は多くの地域で112、警察は日本と同じ110、救急車は118か119です。",
+  "phrases": [
+    {
+      "id": "eme-01",
+      "indonesian": "Tolong!",
+      "japanese": "助けて！",
+      "registerNotes": "叫べば「助けて！」。落ち着いて言えば、tolong ＋動詞でていねいなお願いになります：Tolong bantu saya（手伝ってください）。",
+      "audio": "audio/id/eme-01.mp3",
+      "tags": [
+        "緊急",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "eme-02",
+      "indonesian": "Tolong panggil polisi!",
+      "japanese": "警察を呼んでください！",
+      "registerNotes": "警察の番号は日本と同じ110。警察署は kantor polisi です。",
+      "audio": "audio/id/eme-02.mp3",
+      "tags": [
+        "緊急",
+        "警察"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "eme-03",
+      "indonesian": "Tolong panggil ambulans!",
+      "japanese": "救急車を呼んでください！",
+      "registerNotes": "救急車の番号は118と119。多くの地域では、どんな緊急時も112でつながります。",
+      "audio": "audio/id/eme-03.mp3",
+      "tags": [
+        "緊急",
+        "健康"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "eme-04",
+      "indonesian": "Ada kecelakaan!",
+      "japanese": "事故です！",
+      "registerNotes": "ada（ある）はどんな緊急事態にも使えます：Ada kebakaran!（火事です！）",
+      "audio": "audio/id/eme-04.mp3",
+      "tags": [
+        "緊急"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "eme-05",
+      "indonesian": "Saya sakit.",
+      "japanese": "具合が悪いです。",
+      "registerNotes": "軽い不調なら Saya kurang enak badan（あまり体調がよくありません）。sakit には「痛い」の意味もあり、sakit kepala は頭痛、sakit perut は腹痛です。",
+      "audio": "audio/id/eme-05.mp3",
+      "tags": [
+        "緊急",
+        "健康"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "eme-06",
+      "indonesian": "Rumah sakit terdekat di mana?",
+      "japanese": "一番近い病院はどこですか？",
+      "registerNotes": "rumah sakit（直訳「病気の家」）は病院。klinik はもっと小さい診療所、apotek は薬局です。terdekat（一番近い）も、日本語と逆で名詞の後ろに来ます。",
+      "audio": "audio/id/eme-06.mp3",
+      "tags": [
+        "緊急",
+        "健康"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "eme-07",
+      "indonesian": "Saya perlu dokter.",
+      "japanese": "お医者さんに診てもらいたいです。",
+      "registerNotes": "perlu（必要だ）は飾らない、ていねいな言い方。butuh も同じ意味です。",
+      "audio": "audio/id/eme-07.mp3",
+      "tags": [
+        "緊急",
+        "健康"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "eme-08",
+      "indonesian": "Sakit di sini.",
+      "japanese": "ここが痛いです。",
+      "registerNotes": "痛い所を指さしましょう。または場所の名前を言います：kepala saya sakit（頭が痛い）、kaki saya sakit（足が痛い）。",
+      "audio": "audio/id/eme-08.mp3",
+      "tags": [
+        "緊急",
+        "健康"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "eme-09",
+      "indonesian": "Saya alergi kacang.",
+      "japanese": "ピーナッツのアレルギーがあります。",
+      "registerNotes": "反応する物を入れ替えて：alergi udang（エビ）、alergi telur（卵）。重いアレルギーなら、スマホに書いて見せられるようにもしておきましょう。alergi は日本語の「アレルギー」と同じ語源です。",
+      "pitfallNote": "kacang はピーナッツだけでなく、豆類やほとんどのナッツ類を指します。ピーナッツは、サテのソース（bumbu kacang）やガドガドをはじめ、あらゆる料理に使われています。",
+      "audio": "audio/id/eme-09.mp3",
+      "tags": [
+        "緊急",
+        "健康",
+        "アレルギー"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "eme-10",
+      "indonesian": "Paspor saya hilang.",
+      "japanese": "パスポートをなくしました。",
+      "registerNotes": "警察署で届け出て、紛失証明書（surat kehilangan）をもらいましょう。大使館で必要になります。日本大使館はジャカルタにあり、バリなどには総領事館もあります。",
+      "audio": "audio/id/eme-10.mp3",
+      "tags": [
+        "緊急",
+        "書類"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "eme-11",
+      "indonesian": "Dompet saya dicopet.",
+      "japanese": "財布をすられました。",
+      "registerNotes": "dicopet はポケットやかばんから「すられた」、dicuri は一般的に「盗まれた」：HP saya dicuri（スマホを盗まれました）。HP（ハーペー）は携帯電話のことです。",
+      "audio": "audio/id/eme-11.mp3",
+      "tags": [
+        "緊急",
+        "警察"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "eme-12",
+      "indonesian": "Ada yang bisa bahasa Inggris?",
+      "japanese": "英語を話せる人はいますか？",
+      "registerNotes": "bisa（できる）は、言葉が話せると言う時のふだんの言い方です：Saya bisa sedikit bahasa Indonesia（インドネシア語が少し話せます）。日本語は bahasa Jepang です。",
+      "audio": "audio/id/eme-12.mp3",
+      "tags": [
+        "緊急",
+        "言葉"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

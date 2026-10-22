@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "con-juga",
+  "connector": "juga",
+  "gloss": "〜も",
+  "title": "juga — 〜も",
+  "pattern": "Saya juga … · … juga · … juga tidak",
+  "explanation": "juga は「〜も」。日本語の「も」と同じく、付け加える言葉のすぐ後ろに置きます：Saya juga.（私も）、Minta air putih juga.（お水もください）。saya juga ＝「私も」と、日本語と同じ順番なので覚えやすいはずです。英語の also me のように Juga saya とは言いません。「〜も…ない」は juga を tidak の前に置きます：Saya juga tidak tahu（私も知りません）、短く言えば …, dia juga tidak（彼も〜ない）。くだけた言い方では Aku juga nggak です。",
+  "natural": "あいづち（Saya juga!＝私も！）、注文の追加、tidak と組み合わせた「〜も…ない」に。どんな場面でも使えます。",
+  "stiff": "新しいことを付け足す「それと、」「また、」の意味で、文の頭に Juga を置くことはできません。その場合は Selain itu（そのほかに）を使います。「〜も…ない」専用の言葉はなく、juga と tidak の組み合わせで言います。",
+  "examples": [
+    {
+      "id": "cx-juga-1",
+      "indonesian": "Saya juga dari Selandia Baru.",
+      "japanese": "私もニュージーランド出身です。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "juga ",
+          "w": "w-juga"
+        },
+        {
+          "t": "dari Selandia Baru."
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "juga",
+        "after": " dari Selandia Baru.",
+        "options": [
+          "juga",
+          "dan",
+          "lagi"
+        ],
+        "why": "juga は付け加える言葉の後ろ：saya juga ＝「私も」。日本語と同じ順番です。"
+      },
+      "audio": "audio/id/connectors/cx-juga-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "juga"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-juga-2",
+      "indonesian": "Minta air putih juga, ya.",
+      "japanese": "お水もお願いします。",
+      "chunks": [
+        {
+          "t": "Minta "
+        },
+        {
+          "t": "air putih ",
+          "w": "w-air-putih"
+        },
+        {
+          "t": "juga, ya.",
+          "w": "w-juga"
+        }
+      ],
+      "gap": {
+        "before": "Minta air putih ",
+        "answer": "juga",
+        "after": ", ya.",
+        "options": [
+          "juga",
+          "lagi",
+          "dan"
+        ],
+        "why": "juga は、注文に水を付け加える「も」。lagi だと「もう1杯」「おかわり」の意味になります。"
+      },
+      "audio": "audio/id/connectors/cx-juga-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "juga",
+        "食べ物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-juga-3",
+      "indonesian": "Dia capek, saya juga.",
+      "japanese": "彼女は疲れています。私もです。",
+      "chunks": [
+        {
+          "t": "Dia capek, ",
+          "w": "w-capek"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "juga.",
+          "w": "w-juga"
+        }
+      ],
+      "gap": {
+        "before": "Dia capek, saya ",
+        "answer": "juga",
+        "after": ".",
+        "options": [
+          "juga",
+          "dan",
+          "lagi"
+        ],
+        "why": "saya juga ＝「私も」。juga は saya の後ろに来ます。"
+      },
+      "combine": {
+        "a": "Dia capek.",
+        "b": "Saya capek.",
+        "distractors": [
+          "juga saya."
+        ]
+      },
+      "audio": "audio/id/connectors/cx-juga-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "juga"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-juga-4",
+      "indonesian": "Saya tidak tahu, dia juga tidak.",
+      "japanese": "私は知りませんし、彼も知りません。",
+      "chunks": [
+        {
+          "t": "Saya tidak tahu, ",
+          "w": "w-tahu"
+        },
+        {
+          "t": "dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "juga ",
+          "w": "w-juga"
+        },
+        {
+          "t": "tidak.",
+          "w": "w-tidak"
+        }
+      ],
+      "gap": {
+        "before": "Saya tidak tahu, dia ",
+        "answer": "juga",
+        "after": " tidak.",
+        "options": [
+          "juga",
+          "dan",
+          "tapi"
+        ],
+        "why": "「〜も…ない」は juga を tidak の前に：dia juga tidak（彼も〜ない）。"
+      },
+      "combine": {
+        "a": "Saya tidak tahu.",
+        "b": "Dia tidak tahu.",
+        "distractors": [
+          "tidak juga."
+        ]
+      },
+      "audio": "audio/id/connectors/cx-juga-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "juga"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

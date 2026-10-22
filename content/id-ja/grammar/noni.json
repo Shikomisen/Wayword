@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-noni",
+  "connector": "〜のに",
+  "gloss": "padahal (dan itu menjengkelkan)",
+  "title": "〜のに — padahal",
+  "pattern": "bentuk biasa + のに (kata benda / kata sifat な + なのに)",
+  "explanation": "のに menggabungkan dua hal yang bertentangan, biasanya dengan rasa heran, menyesal, atau mengeluh, persis seperti “padahal”. のに melekat di akhir bagian yang sama dengan “padahal”: {頑張|がんば}ったのに、だめだった — padahal sudah berusaha keras, tetap gagal. {日曜日|にちようび}なのに、{仕事|しごと}だ — padahal hari Minggu, aku kerja. Sendirian di akhir kalimat, のに adalah keluhan: {言|い}ったのに… — padahal sudah kubilang…",
+  "natural": "Untuk keluhan dan penyesalan dalam percakapan. けど adalah “tapi” yang netral; のに menambahkan perasaan.",
+  "stiff": "Setelah のに tidak boleh ada permintaan atau ajakan: {雨|あめ}なのに、{行|い}こう salah. Pakai けど: {雨|あめ}だけど、{行|い}こう.",
+  "examples": [
+    {
+      "id": "gx-noni-1",
+      "japanese": "日曜日なのに、仕事に行かなきゃ。",
+      "furigana": "{日曜日|にちようび}なのに、{仕事|しごと}に{行|い}かなきゃ。",
+      "indonesian": "Padahal hari Minggu, aku tetap harus kerja.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{日曜日|にちようび}なのに、"
+        },
+        {
+          "t": "{仕事|しごと}に",
+          "w": "w-shigoto"
+        },
+        {
+          "t": "{行|い}かなきゃ。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{日曜日|にちようび}",
+        "answer": "なのに",
+        "after": "、{仕事|しごと}に{行|い}かなきゃ。",
+        "options": [
+          "なのに",
+          "だから",
+          "なので"
+        ],
+        "why": "Dua hal yang bertentangan, dengan keluhan: なのに."
+      },
+      "audio": "audio/ja/grammar/gx-noni-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "noni"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-noni-2",
+      "japanese": "約束したのに、彼は来なかった。",
+      "furigana": "{約束|やくそく}したのに、{彼|かれ}は{来|こ}なかった。",
+      "indonesian": "Padahal sudah janji, dia tidak datang.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{約束|やくそく}したのに、",
+          "w": "w-yakusoku"
+        },
+        {
+          "t": "{彼|かれ}は",
+          "w": "w-kare"
+        },
+        {
+          "t": "{来|こ}なかった。",
+          "w": "w-kuru"
+        }
+      ],
+      "gap": {
+        "before": "{約束|やくそく}した",
+        "answer": "のに",
+        "after": "、{彼|かれ}は{来|こ}なかった。",
+        "options": [
+          "のに",
+          "から",
+          "ので"
+        ],
+        "why": "Sudah berjanji, tetapi…: のに."
+      },
+      "audio": "audio/ja/grammar/gx-noni-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "noni"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-noni-3",
+      "japanese": "薬を飲んだのに、まだ熱がある。",
+      "furigana": "{薬|くすり}を{飲|の}んだのに、まだ{熱|ねつ}がある。",
+      "indonesian": "Padahal sudah minum obat, masih demam.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{薬|くすり}を",
+          "w": "w-kusuri"
+        },
+        {
+          "t": "{飲|の}んだのに、",
+          "w": "w-nomu"
+        },
+        {
+          "t": "まだ{熱|ねつ}がある。",
+          "w": "w-netsu"
+        }
+      ],
+      "gap": {
+        "before": "{薬|くすり}を{飲|の}んだ",
+        "answer": "のに",
+        "after": "、まだ{熱|ねつ}がある。",
+        "options": [
+          "のに",
+          "から",
+          "たら"
+        ],
+        "why": "Seharusnya mempan, tetapi tidak: のに."
+      },
+      "audio": "audio/ja/grammar/gx-noni-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "noni"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-noni-4",
+      "japanese": "言ったのに…",
+      "furigana": "{言|い}ったのに…",
+      "indonesian": "Padahal sudah kubilang…",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{言|い}った",
+          "w": "w-iu"
+        },
+        {
+          "t": "のに…"
+        }
+      ],
+      "gap": {
+        "before": "{言|い}った",
+        "answer": "のに",
+        "after": "…",
+        "options": [
+          "のに",
+          "から",
+          "けど"
+        ],
+        "ok": [
+          "けど"
+        ],
+        "note": "けど… juga bisa, dan tidak terlalu terdengar menyalahkan.",
+        "why": "Keluhan: 言ったのに…"
+      },
+      "audio": "audio/ja/grammar/gx-noni-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "noni"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "id": "words-places",
+  "title": "場所と移動",
+  "description": "市場から空港まで、これから行く場所と、そこへ行くための左・右・まっすぐ。",
+  "items": [
+    {
+      "id": "w-pasar",
+      "indonesian": "pasar",
+      "japanese": "市場",
+      "pos": "noun",
+      "registerNotes": "pasar malam は夜市。スーパーは話し言葉でもそのまま supermarket です。",
+      "cultureNote": "昔ながらの pasar では値段交渉ができます。お店やミニマーケットではできません。",
+      "audio": "audio/id/words/w-pasar.mp3",
+      "tags": [
+        "場所",
+        "買い物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-warung",
+      "indonesian": "warung",
+      "japanese": "ワルン（小さな食堂、屋台；小さな店）",
+      "pos": "noun",
+      "registerNotes": "warung makan は食事、warung kopi（warkop）はコーヒーと軽食、warteg は指さしで選ぶ安い家庭料理の店です。",
+      "cultureNote": "多くのワルンでは先に食べて、帰るときに食べたものを言って払います。",
+      "audio": "audio/id/words/w-warung.mp3",
+      "tags": [
+        "場所",
+        "食べ物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bandara",
+      "indonesian": "bandara",
+      "japanese": "空港",
+      "pos": "noun",
+      "registerNotes": "bandar udara（空の港）の略で、表示にはこちらが書かれています。日本語の「空港」と同じ発想です。",
+      "audio": "audio/id/words/w-bandara.mp3",
+      "tags": [
+        "場所",
+        "旅行"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-stasiun",
+      "indonesian": "stasiun",
+      "japanese": "（電車の）駅",
+      "pos": "noun",
+      "pitfallNote": "電車の駅だけです。バスターミナルは terminal、バス停は halte。",
+      "audio": "audio/id/words/w-stasiun.mp3",
+      "tags": [
+        "場所",
+        "旅行"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-halte",
+      "indonesian": "halte",
+      "japanese": "バス停",
+      "pos": "noun",
+      "registerNotes": "kantor や handuk と同じく、オランダ語から来た言葉です。Haltenya di mana?（バス停はどこですか？）",
+      "audio": "audio/id/words/w-halte.mp3",
+      "tags": [
+        "場所",
+        "旅行"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hotel",
+      "indonesian": "hotel",
+      "japanese": "ホテル",
+      "pos": "noun",
+      "registerNotes": "名前では、日本語とは逆に場所の種類が先に来ます：Hotel Melati、Pasar Baru、Bank Mandiri。安いゲストハウスは losmen や penginapan です。",
+      "audio": "audio/id/words/w-hotel.mp3",
+      "tags": [
+        "場所",
+        "旅行"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-rumah-sakit",
+      "indonesian": "rumah sakit",
+      "japanese": "病院",
+      "pos": "noun",
+      "registerNotes": "直訳は「病気の家」。軽い症状なら、klinik や地域の puskesmas（保健センター）のほうが早く診てもらえます。",
+      "audio": "audio/id/words/w-rumah-sakit.mp3",
+      "tags": [
+        "場所",
+        "健康"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-apotek",
+      "indonesian": "apotek",
+      "japanese": "薬局",
+      "pos": "noun",
+      "registerNotes": "つづりは apotek ですが、古い看板には apotik とあります。軽い不調なら、症状を説明すれば薬剤師が薬を勧めてくれます。",
+      "audio": "audio/id/words/w-apotek.mp3",
+      "tags": [
+        "場所",
+        "健康"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bank",
+      "indonesian": "bank",
+      "japanese": "銀行",
+      "pos": "noun",
+      "registerNotes": "現金自動預け払い機は ATM で、「アー・テー・エム」と読みます：Ada ATM dekat sini?（この近くにATMはありますか？）",
+      "audio": "audio/id/words/w-bank.mp3",
+      "tags": [
+        "場所",
+        "お金"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kantor",
+      "indonesian": "kantor",
+      "japanese": "事務所、オフィス",
+      "pos": "noun",
+      "registerNotes": "多くの場所の名前に入っています：kantor polisi（警察署）、kantor pos（郵便局）、kantor imigrasi（入国管理事務所）。",
+      "audio": "audio/id/words/w-kantor.mp3",
+      "tags": [
+        "場所",
+        "仕事"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sekolah",
+      "indonesian": "sekolah",
+      "japanese": "学校；学校に通う",
+      "pos": "noun",
+      "registerNotes": "動詞にもなります：Anaknya masih sekolah?（お子さんはまだ学校に通っていますか？）",
+      "audio": "audio/id/words/w-sekolah.mp3",
+      "tags": [
+        "場所",
+        "勉強"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pantai",
+      "indonesian": "pantai",
+      "japanese": "海岸、ビーチ",
+      "pos": "noun",
+      "registerNotes": "pantai は浜辺で、海そのものは laut。名前では Pantai が先に来ます：Pantai Kuta。",
+      "audio": "audio/id/words/w-pantai.mp3",
+      "tags": [
+        "場所",
+        "自然"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-masjid",
+      "indonesian": "masjid",
+      "japanese": "モスク",
+      "pos": "noun",
+      "cultureNote": "1日5回、モスクからお祈りの呼びかけ（azan）が流れます。訪れるときは靴を脱ぎ、腕と脚を覆います。",
+      "audio": "audio/id/words/w-masjid.mp3",
+      "tags": [
+        "場所",
+        "宗教"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-gereja",
+      "indonesian": "gereja",
+      "japanese": "教会",
+      "pos": "noun",
+      "cultureNote": "インドネシア人のおよそ10人に1人はキリスト教徒で、フローレス島や北スラウェシなど東部の一部では、大多数がキリスト教徒です。",
+      "audio": "audio/id/words/w-gereja.mp3",
+      "tags": [
+        "場所",
+        "宗教"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kiri",
+      "indonesian": "kiri",
+      "japanese": "左",
+      "pos": "noun",
+      "registerNotes": "Kiri, Pak、または Kiri だけで、ミニバスやバスの運転手に「ここで降ります」と止めてもらえます。",
+      "cultureNote": "左手はトイレで使う手なので、物を渡す、受け取る、食べるときは右手を使います。",
+      "audio": "audio/id/words/w-kiri.mp3",
+      "tags": [
+        "道案内",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kanan",
+      "indonesian": "kanan",
+      "japanese": "右",
+      "pos": "noun",
+      "registerNotes": "di sebelah kanan は「右側に」、belok kanan は「右に曲がる」。",
+      "audio": "audio/id/words/w-kanan.mp3",
+      "tags": [
+        "道案内",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-lurus",
+      "indonesian": "lurus",
+      "japanese": "まっすぐ",
+      "pos": "adjective",
+      "registerNotes": "lurus saja や lurus terus は「そのまままっすぐ」。",
+      "audio": "audio/id/words/w-lurus.mp3",
+      "tags": [
+        "道案内"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-depan",
+      "indonesian": "depan",
+      "japanese": "前；〜の前",
+      "pos": "noun",
+      "registerNotes": "di depan hotel はホテルの前。後ろは di belakang、隣は di sebelah です。",
+      "audio": "audio/id/words/w-depan.mp3",
+      "tags": [
+        "道案内"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "時間に使うと「次の」の意味です：minggu depan（来週）。日本語の「前の週」（先週）とは逆なので注意しましょう。"
+    }
+  ]
+}

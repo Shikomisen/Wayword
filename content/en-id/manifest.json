@@ -1,0 +1,1215 @@
+{
+  "schemaVersion": 1,
+  "language": "id",
+  "speaker": "en",
+  "register": "polite-neutral",
+  "generatedFor": "Wayword — Indonesian for English speakers",
+  "notes": "Indonesian for English speakers: everyday spoken standard Indonesian, polite-neutral by default (saya, Bapak/Ibu, tidak), with a Casual Speech category whose phrases carry their standard versions. Same shape as the other courses: one file per phrase category and per scenario; word and sentence decks under `decks`; grammar and connector lessons under `lessons`; listening as lines said back (`replies`) and sound pairs (`contrasts`). Text the learner studies is `indonesian`; `english` is the gloss. Written from tmp/builders/id/ (curriculum.json and src/), not by hand. ja-id is derived from this course.",
+  "fields": {
+    "target": "indonesian",
+    "meaning": "english"
+  },
+  "noteFields": [
+    {
+      "field": "registerNotes",
+      "label": "Usage"
+    },
+    {
+      "field": "pitfallNote",
+      "label": "Watch out",
+      "style": "pitfall"
+    },
+    {
+      "field": "cultureNote",
+      "label": "Culture"
+    }
+  ],
+  "voice": {
+    "engine": "google",
+    "azure": {
+      "default": "id-ID-GadisNeural",
+      "speakers": "id-ID-ArdiNeural"
+    }
+  },
+  "words": {
+    "pos": [
+      "noun",
+      "verb",
+      "adjective",
+      "adverb",
+      "pronoun",
+      "question",
+      "phrase",
+      "expression",
+      "interjection",
+      "conjunction",
+      "preposition",
+      "number",
+      "counter",
+      "particle"
+    ],
+    "forms": [
+      "root"
+    ],
+    "verbForms": []
+  },
+  "copy": {
+    "placementLede": "{n} quick cards — two from every First-steps and Basic phrase category. For each one, say whether you already have it. Nothing is typed and nothing is scored against you — it only decides where each card enters your review deck.",
+    "placementAside": "Indonesian is one of the friendliest languages to start: it’s written in the Latin alphabet, spelt the way it sounds, and its verbs never change. This finds what you already know, so you start in the right place. It isn’t a test.",
+    "lessonsTitle": "Grammar and connectors",
+    "lessonsTab": "Grammar",
+    "lessonsLede": "How Indonesian sentences work: word order, saying no and asking questions first, then the connectors that chain sentences together, then the prefixes and suffixes of real speech. Read a lesson, then practise it.",
+    "lessonsIcon": "🧱"
+  },
+  "drills": [
+    "fill",
+    "order",
+    "combine",
+    "say"
+  ],
+  "levels": [
+    {
+      "id": "first-steps",
+      "icon": "🌱",
+      "title": "First steps",
+      "description": "Brand new to Indonesian. Greetings, numbers and your first words, and how a sentence is built: no verb “to be”, the noun before its describing word, ini and itu, saying no with tidak and bukan, asking questions, and time words like sudah and akan instead of tenses."
+    },
+    {
+      "id": "basic",
+      "icon": "🌿",
+      "title": "Basic",
+      "description": "Getting by: food, shopping, getting around, a hotel and directions; set phrases for warungs, markets and ojeks; casual speech for friends; and the connectors that chain sentences together (dan, tapi, karena, jadi, kalau, waktu…)."
+    },
+    {
+      "id": "intermediate",
+      "icon": "🌳",
+      "title": "Intermediate",
+      "description": "Conversation beyond set phrases: talking about yourself, your plans and what you think, reacting as you listen, being a guest with a partner’s family, and sorting out problems at the doctor, a homestay or a shop. The verb prefixes and suffixes (ber-, me-, di-, -kan, -i, ter-, ke-…-an), the little words of real speech (kok, sih, dong, deh), and listening at natural speed.",
+      "placement": false
+    }
+  ],
+  "groups": [
+    {
+      "id": "basics",
+      "title": "Everyday basics"
+    },
+    {
+      "id": "out",
+      "title": "Out and about"
+    },
+    {
+      "id": "travel",
+      "title": "Travelling"
+    },
+    {
+      "id": "help",
+      "title": "If something goes wrong"
+    },
+    {
+      "id": "talk",
+      "title": "Real conversations"
+    },
+    {
+      "id": "life",
+      "title": "Life in Indonesia"
+    }
+  ],
+  "categories": [
+    {
+      "id": "greetings",
+      "order": 1,
+      "file": "content/en-id/greetings.json",
+      "title": "Greetings & Politeness",
+      "icon": "🙏",
+      "group": "basics",
+      "level": "first-steps",
+      "step": 1,
+      "starter": true
+    },
+    {
+      "id": "numbers",
+      "order": 2,
+      "file": "content/en-id/numbers.json",
+      "title": "Numbers, Time & Money",
+      "icon": "🔢",
+      "group": "basics",
+      "level": "first-steps",
+      "step": 2,
+      "starter": true
+    },
+    {
+      "id": "smalltalk",
+      "order": 3,
+      "file": "content/en-id/smalltalk.json",
+      "title": "Small Talk",
+      "icon": "💬",
+      "group": "talk",
+      "level": "first-steps",
+      "step": 10
+    },
+    {
+      "id": "casual",
+      "order": 4,
+      "file": "content/en-id/casual.json",
+      "title": "Casual Speech",
+      "icon": "😎",
+      "group": "talk",
+      "level": "basic",
+      "step": 1,
+      "starter": true
+    },
+    {
+      "id": "restaurant",
+      "order": 5,
+      "file": "content/en-id/restaurant.json",
+      "title": "Warungs & Restaurants",
+      "icon": "🍜",
+      "group": "out",
+      "level": "basic",
+      "step": 3,
+      "starter": true
+    },
+    {
+      "id": "shopping",
+      "order": 6,
+      "file": "content/en-id/shopping.json",
+      "title": "Shopping & Bargaining",
+      "icon": "🛍️",
+      "group": "out",
+      "level": "basic",
+      "step": 4,
+      "starter": true
+    },
+    {
+      "id": "transport",
+      "order": 7,
+      "file": "content/en-id/transport.json",
+      "title": "Getting Around",
+      "icon": "🛵",
+      "group": "out",
+      "level": "basic",
+      "step": 6
+    },
+    {
+      "id": "directions",
+      "order": 8,
+      "file": "content/en-id/directions.json",
+      "title": "Directions & Getting Lost",
+      "icon": "🧭",
+      "group": "out",
+      "level": "basic",
+      "step": 7
+    },
+    {
+      "id": "hotel",
+      "order": 9,
+      "file": "content/en-id/hotel.json",
+      "title": "Hotels & Homestays",
+      "icon": "🏨",
+      "group": "travel",
+      "level": "basic",
+      "step": 11
+    },
+    {
+      "id": "airport",
+      "order": 10,
+      "file": "content/en-id/airport.json",
+      "title": "Airport & Immigration",
+      "icon": "✈️",
+      "group": "travel",
+      "level": "basic",
+      "step": 12
+    },
+    {
+      "id": "emergency",
+      "order": 11,
+      "file": "content/en-id/emergency.json",
+      "title": "Emergencies & Health",
+      "icon": "🚑",
+      "group": "help",
+      "level": "basic",
+      "step": 13
+    },
+    {
+      "id": "reactions",
+      "order": 12,
+      "file": "content/en-id/reactions.json",
+      "title": "Reactions & Listening",
+      "icon": "😮",
+      "group": "talk",
+      "level": "intermediate",
+      "step": 2,
+      "starter": true
+    },
+    {
+      "id": "plans",
+      "order": 13,
+      "file": "content/en-id/plans.json",
+      "title": "Plans & Invitations",
+      "icon": "📅",
+      "group": "talk",
+      "level": "intermediate",
+      "step": 6
+    },
+    {
+      "id": "opinions",
+      "order": 14,
+      "file": "content/en-id/opinions.json",
+      "title": "Opinions & Agreeing",
+      "icon": "💭",
+      "group": "talk",
+      "level": "intermediate",
+      "step": 9
+    },
+    {
+      "id": "family",
+      "order": 15,
+      "file": "content/en-id/family.json",
+      "title": "Meeting the Family",
+      "icon": "👨‍👩‍👧",
+      "group": "life",
+      "level": "intermediate",
+      "step": 13
+    },
+    {
+      "id": "doctor",
+      "order": 16,
+      "file": "content/en-id/doctor.json",
+      "title": "The Doctor & Pharmacy",
+      "icon": "🩺",
+      "group": "life",
+      "level": "intermediate",
+      "step": 15
+    },
+    {
+      "id": "problems",
+      "order": 17,
+      "file": "content/en-id/problems.json",
+      "title": "Problems & Complaints",
+      "icon": "😤",
+      "group": "help",
+      "level": "intermediate",
+      "step": 18
+    }
+  ],
+  "decks": [
+    {
+      "id": "words-people",
+      "kind": "words",
+      "order": 1,
+      "file": "content/en-id/words/people.json",
+      "title": "People & Family",
+      "icon": "👪",
+      "level": "first-steps",
+      "step": 3,
+      "starter": true
+    },
+    {
+      "id": "words-verbs",
+      "kind": "words",
+      "order": 2,
+      "file": "content/en-id/words/verbs.json",
+      "title": "Everyday Verbs",
+      "icon": "🏃",
+      "level": "first-steps",
+      "step": 4,
+      "starter": true
+    },
+    {
+      "id": "words-little",
+      "kind": "words",
+      "order": 3,
+      "file": "content/en-id/words/little.json",
+      "title": "Little Words",
+      "icon": "🧩",
+      "level": "first-steps",
+      "step": 5,
+      "starter": true
+    },
+    {
+      "id": "words-key",
+      "kind": "words",
+      "order": 4,
+      "file": "content/en-id/words/key.json",
+      "title": "Words That Hold It Together",
+      "icon": "🔗",
+      "level": "first-steps",
+      "step": 6
+    },
+    {
+      "id": "sentences-everyday",
+      "kind": "sentences",
+      "order": 5,
+      "file": "content/en-id/sentences/everyday.json",
+      "title": "Everyday Sentences",
+      "icon": "💬",
+      "level": "first-steps",
+      "step": 7
+    },
+    {
+      "id": "words-things",
+      "kind": "words",
+      "order": 6,
+      "file": "content/en-id/words/things.json",
+      "title": "Things Around You",
+      "icon": "🏠",
+      "level": "first-steps",
+      "step": 8
+    },
+    {
+      "id": "words-time",
+      "kind": "words",
+      "order": 7,
+      "file": "content/en-id/words/time.json",
+      "title": "Time & Days",
+      "icon": "🕐",
+      "level": "first-steps",
+      "step": 9
+    },
+    {
+      "id": "words-food",
+      "kind": "words",
+      "order": 8,
+      "file": "content/en-id/words/food.json",
+      "title": "Food & Drink",
+      "icon": "🍛",
+      "level": "basic",
+      "step": 2,
+      "starter": true
+    },
+    {
+      "id": "words-describe",
+      "kind": "words",
+      "order": 9,
+      "file": "content/en-id/words/describe.json",
+      "title": "Describing Things",
+      "icon": "🎨",
+      "level": "basic",
+      "step": 5,
+      "starter": true
+    },
+    {
+      "id": "words-places",
+      "kind": "words",
+      "order": 10,
+      "file": "content/en-id/words/places.json",
+      "title": "Places & Getting Around",
+      "icon": "🗺️",
+      "level": "basic",
+      "step": 8
+    },
+    {
+      "id": "sentences-around",
+      "kind": "sentences",
+      "order": 11,
+      "file": "content/en-id/sentences/around.json",
+      "title": "Getting Around",
+      "icon": "🚶",
+      "level": "basic",
+      "step": 9
+    },
+    {
+      "id": "words-home",
+      "kind": "words",
+      "order": 12,
+      "file": "content/en-id/words/home.json",
+      "title": "Home & Daily Life",
+      "icon": "🏡",
+      "level": "basic",
+      "step": 10
+    },
+    {
+      "id": "words-feelings",
+      "kind": "words",
+      "order": 13,
+      "file": "content/en-id/words/feelings.json",
+      "title": "Feelings & Health",
+      "icon": "💗",
+      "level": "basic",
+      "step": 14
+    },
+    {
+      "id": "words-weather",
+      "kind": "words",
+      "order": 14,
+      "file": "content/en-id/words/weather.json",
+      "title": "Weather & Nature",
+      "icon": "🌦️",
+      "level": "basic",
+      "step": 15
+    },
+    {
+      "id": "words-work",
+      "kind": "words",
+      "order": 15,
+      "file": "content/en-id/words/work.json",
+      "title": "Work & Study",
+      "icon": "💼",
+      "level": "basic",
+      "step": 16
+    },
+    {
+      "id": "words-free",
+      "kind": "words",
+      "order": 16,
+      "file": "content/en-id/words/free.json",
+      "title": "Free Time",
+      "icon": "🎮",
+      "level": "basic",
+      "step": 17
+    },
+    {
+      "id": "words-verbs-more",
+      "kind": "words",
+      "order": 17,
+      "file": "content/en-id/words/verbs-more.json",
+      "title": "More Verbs",
+      "icon": "🔁",
+      "level": "intermediate",
+      "step": 1,
+      "starter": true
+    },
+    {
+      "id": "words-feel",
+      "kind": "words",
+      "order": 18,
+      "file": "content/en-id/words/feel.json",
+      "title": "Feelings & Reactions",
+      "icon": "😊",
+      "level": "intermediate",
+      "step": 3,
+      "starter": true
+    },
+    {
+      "id": "sentences-self",
+      "kind": "sentences",
+      "order": 19,
+      "file": "content/en-id/sentences/self.json",
+      "title": "Talking About Yourself",
+      "icon": "🗣️",
+      "level": "intermediate",
+      "step": 4
+    },
+    {
+      "id": "words-social",
+      "kind": "words",
+      "order": 20,
+      "file": "content/en-id/words/social.json",
+      "title": "People & Social Life",
+      "icon": "🤝",
+      "level": "intermediate",
+      "step": 5
+    },
+    {
+      "id": "words-time-more",
+      "kind": "words",
+      "order": 21,
+      "file": "content/en-id/words/time-more.json",
+      "title": "Time & How Often",
+      "icon": "⏳",
+      "level": "intermediate",
+      "step": 7
+    },
+    {
+      "id": "words-describe-more",
+      "kind": "words",
+      "order": 22,
+      "file": "content/en-id/words/describe-more.json",
+      "title": "More Describing Words",
+      "icon": "✨",
+      "level": "intermediate",
+      "step": 8
+    },
+    {
+      "id": "words-opinions",
+      "kind": "words",
+      "order": 23,
+      "file": "content/en-id/words/opinions.json",
+      "title": "Opinions & Ideas",
+      "icon": "💡",
+      "level": "intermediate",
+      "step": 10
+    },
+    {
+      "id": "words-travel",
+      "kind": "words",
+      "order": 24,
+      "file": "content/en-id/words/travel.json",
+      "title": "Travel & Sightseeing",
+      "icon": "🏝️",
+      "level": "intermediate",
+      "step": 11
+    },
+    {
+      "id": "sentences-out",
+      "kind": "sentences",
+      "order": 25,
+      "file": "content/en-id/sentences/out.json",
+      "title": "Out and About",
+      "icon": "🌆",
+      "level": "intermediate",
+      "step": 12
+    },
+    {
+      "id": "words-health",
+      "kind": "words",
+      "order": 26,
+      "file": "content/en-id/words/health.json",
+      "title": "Health & the Doctor",
+      "icon": "🩺",
+      "level": "intermediate",
+      "step": 14
+    },
+    {
+      "id": "words-house",
+      "kind": "words",
+      "order": 27,
+      "file": "content/en-id/words/house.json",
+      "title": "Home & Everyday Life",
+      "icon": "🧺",
+      "level": "intermediate",
+      "step": 16
+    },
+    {
+      "id": "words-money",
+      "kind": "words",
+      "order": 28,
+      "file": "content/en-id/words/money.json",
+      "title": "Shopping & Money",
+      "icon": "💳",
+      "level": "intermediate",
+      "step": 17
+    }
+  ],
+  "lessonGroups": [
+    {
+      "id": "sentence",
+      "title": "Building a sentence",
+      "description": "No “to be”, ini and itu, the pronouns, possession, and the noun before its describing word."
+    },
+    {
+      "id": "asking",
+      "title": "Questions and saying no",
+      "description": "tidak and bukan, the question words, yes-or-no questions, ada and punya."
+    },
+    {
+      "id": "verbs",
+      "title": "Verbs and time",
+      "description": "Verbs that never change, mau and bisa, time words instead of tenses, where to and from, counting, and asking politely."
+    },
+    {
+      "id": "chain",
+      "title": "And, and then",
+      "description": "Joining actions and adding things on."
+    },
+    {
+      "id": "reason",
+      "title": "Because and so",
+      "description": "Giving a reason, and saying what follows from it."
+    },
+    {
+      "id": "contrast",
+      "title": "But",
+      "description": "Saying the opposite, or the unexpected."
+    },
+    {
+      "id": "when",
+      "title": "If, when, before and after",
+      "description": "Conditions and the order things happen in."
+    },
+    {
+      "id": "purpose",
+      "title": "While, and so that",
+      "description": "Doing two things at once, and saying what something is for."
+    },
+    {
+      "id": "affixes",
+      "title": "Prefixes and suffixes",
+      "description": "How ber-, me-, di-, -kan, -i, ter- and ke-…-an change a root word, and why written Indonesian looks longer than spoken."
+    },
+    {
+      "id": "describe",
+      "title": "Comparing and describing",
+      "description": "Nouns made from verbs, as … as, more and most, yang, and saying a word twice."
+    },
+    {
+      "id": "conversation",
+      "title": "The words of real conversation",
+      "description": "-nya, pernah, masih and lagi, the particles kok, sih, dong, deh and kan, reporting what someone said, guessing, and asking politely."
+    }
+  ],
+  "lessons": [
+    {
+      "id": "gr-no-be",
+      "order": 1,
+      "file": "content/en-id/grammar/no-be.json",
+      "title": "No “to be” — Saya guru",
+      "group": "sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-ini-itu",
+      "order": 2,
+      "file": "content/en-id/grammar/ini-itu.json",
+      "title": "ini and itu — this and that",
+      "group": "sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-pronouns",
+      "order": 3,
+      "file": "content/en-id/grammar/pronouns.json",
+      "title": "saya, kamu, dia… — pronouns",
+      "group": "sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-possession",
+      "order": 4,
+      "file": "content/en-id/grammar/possession.json",
+      "title": "rumah saya — possession",
+      "group": "sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-noun-adj",
+      "order": 5,
+      "file": "content/en-id/grammar/noun-adj.json",
+      "title": "Noun first: rumah besar",
+      "group": "sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-plural",
+      "order": 6,
+      "file": "content/en-id/grammar/plural.json",
+      "title": "Plurals: buku-buku and banyak",
+      "group": "sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-tidak-bukan",
+      "order": 7,
+      "file": "content/en-id/grammar/tidak-bukan.json",
+      "title": "tidak and bukan — not",
+      "group": "asking",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-questions",
+      "order": 8,
+      "file": "content/en-id/grammar/questions.json",
+      "title": "apa, siapa, di mana… — question words",
+      "group": "asking",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-yes-no",
+      "order": 9,
+      "file": "content/en-id/grammar/yes-no.json",
+      "title": "Yes-or-no questions",
+      "group": "asking",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-ada",
+      "order": 10,
+      "file": "content/en-id/grammar/ada.json",
+      "title": "ada — there is, there are",
+      "group": "asking",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-punya",
+      "order": 11,
+      "file": "content/en-id/grammar/punya.json",
+      "title": "punya — to have",
+      "group": "asking",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-verbs",
+      "order": 12,
+      "file": "content/en-id/grammar/verbs.json",
+      "title": "Verbs don't change",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-mau-bisa",
+      "order": 13,
+      "file": "content/en-id/grammar/mau-bisa.json",
+      "title": "mau, bisa, harus, boleh",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-time-words",
+      "order": 14,
+      "file": "content/en-id/grammar/time-words.json",
+      "title": "sudah, sedang, akan, belum",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-di-ke-dari",
+      "order": 15,
+      "file": "content/en-id/grammar/di-ke-dari.json",
+      "title": "di, ke, dari — at, to, from",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-counting",
+      "order": 16,
+      "file": "content/en-id/grammar/counting.json",
+      "title": "Counting: se-, orang, buah",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-degree",
+      "order": 17,
+      "file": "content/en-id/grammar/degree.json",
+      "title": "sangat, sekali, banget, agak, terlalu",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-requests",
+      "order": 18,
+      "file": "content/en-id/grammar/requests.json",
+      "title": "tolong, silakan, ayo, jangan",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "con-dan",
+      "order": 19,
+      "file": "content/en-id/connectors/dan.json",
+      "title": "dan — and",
+      "group": "chain",
+      "level": "basic"
+    },
+    {
+      "id": "con-lalu",
+      "order": 20,
+      "file": "content/en-id/connectors/lalu.json",
+      "title": "lalu, terus — and then",
+      "group": "chain",
+      "level": "basic"
+    },
+    {
+      "id": "con-juga",
+      "order": 21,
+      "file": "content/en-id/connectors/juga.json",
+      "title": "juga — also, too",
+      "group": "chain",
+      "level": "basic"
+    },
+    {
+      "id": "con-atau",
+      "order": 22,
+      "file": "content/en-id/connectors/atau.json",
+      "title": "atau — or",
+      "group": "chain",
+      "level": "basic"
+    },
+    {
+      "id": "con-tapi",
+      "order": 23,
+      "file": "content/en-id/connectors/tapi.json",
+      "title": "tapi — but",
+      "group": "contrast",
+      "level": "basic"
+    },
+    {
+      "id": "con-walaupun",
+      "order": 24,
+      "file": "content/en-id/connectors/walaupun.json",
+      "title": "walaupun — even though",
+      "group": "contrast",
+      "level": "basic"
+    },
+    {
+      "id": "con-karena",
+      "order": 25,
+      "file": "content/en-id/connectors/karena.json",
+      "title": "karena — because",
+      "group": "reason",
+      "level": "basic"
+    },
+    {
+      "id": "con-soalnya",
+      "order": 26,
+      "file": "content/en-id/connectors/soalnya.json",
+      "title": "soalnya — because (casual)",
+      "group": "reason",
+      "level": "basic"
+    },
+    {
+      "id": "con-jadi",
+      "order": 27,
+      "file": "content/en-id/connectors/jadi.json",
+      "title": "jadi — so",
+      "group": "reason",
+      "level": "basic"
+    },
+    {
+      "id": "con-kalau",
+      "order": 28,
+      "file": "content/en-id/connectors/kalau.json",
+      "title": "kalau — if, when",
+      "group": "when",
+      "level": "basic"
+    },
+    {
+      "id": "con-waktu",
+      "order": 29,
+      "file": "content/en-id/connectors/waktu.json",
+      "title": "waktu — when",
+      "group": "when",
+      "level": "basic"
+    },
+    {
+      "id": "con-sebelum",
+      "order": 30,
+      "file": "content/en-id/connectors/sebelum.json",
+      "title": "sebelum — before",
+      "group": "when",
+      "level": "basic"
+    },
+    {
+      "id": "con-sesudah",
+      "order": 31,
+      "file": "content/en-id/connectors/sesudah.json",
+      "title": "sesudah, setelah — after",
+      "group": "when",
+      "level": "basic"
+    },
+    {
+      "id": "con-supaya",
+      "order": 32,
+      "file": "content/en-id/connectors/supaya.json",
+      "title": "supaya, biar — so that",
+      "group": "purpose",
+      "level": "basic"
+    },
+    {
+      "id": "con-sambil",
+      "order": 33,
+      "file": "content/en-id/connectors/sambil.json",
+      "title": "sambil — while",
+      "group": "purpose",
+      "level": "basic"
+    },
+    {
+      "id": "gr-ber",
+      "order": 34,
+      "file": "content/en-id/grammar/ber.json",
+      "title": "ber- verbs",
+      "group": "affixes",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-me",
+      "order": 35,
+      "file": "content/en-id/grammar/me.json",
+      "title": "me- verbs",
+      "group": "affixes",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-me-sounds",
+      "order": 36,
+      "file": "content/en-id/grammar/me-sounds.json",
+      "title": "me- and its sound changes",
+      "group": "affixes",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-di",
+      "order": 37,
+      "file": "content/en-id/grammar/di.json",
+      "title": "di- — the passive",
+      "group": "affixes",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-kan",
+      "order": 38,
+      "file": "content/en-id/grammar/kan.json",
+      "title": "-kan",
+      "group": "affixes",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-i",
+      "order": 39,
+      "file": "content/en-id/grammar/i.json",
+      "title": "-i",
+      "group": "affixes",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-ter",
+      "order": 40,
+      "file": "content/en-id/grammar/ter.json",
+      "title": "ter-",
+      "group": "affixes",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-ke-an",
+      "order": 41,
+      "file": "content/en-id/grammar/ke-an.json",
+      "title": "ke-…-an",
+      "group": "affixes",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-pe-an",
+      "order": 42,
+      "file": "content/en-id/grammar/pe-an.json",
+      "title": "Nouns: pe-, -an, pe-…-an",
+      "group": "describe",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-se",
+      "order": 43,
+      "file": "content/en-id/grammar/se.json",
+      "title": "se- — as … as, one, the same",
+      "group": "describe",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-lebih-paling",
+      "order": 44,
+      "file": "content/en-id/grammar/lebih-paling.json",
+      "title": "lebih and paling — comparing",
+      "group": "describe",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-yang",
+      "order": 45,
+      "file": "content/en-id/grammar/yang.json",
+      "title": "yang — the one that",
+      "group": "describe",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-redup",
+      "order": 46,
+      "file": "content/en-id/grammar/redup.json",
+      "title": "Saying it twice",
+      "group": "describe",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-nya",
+      "order": 47,
+      "file": "content/en-id/grammar/nya.json",
+      "title": "-nya",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-pernah",
+      "order": 48,
+      "file": "content/en-id/grammar/pernah.json",
+      "title": "pernah — ever, once",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-masih-lagi",
+      "order": 49,
+      "file": "content/en-id/grammar/masih-lagi.json",
+      "title": "masih and lagi",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-kok-sih",
+      "order": 50,
+      "file": "content/en-id/grammar/kok-sih.json",
+      "title": "kok and sih",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-dong-deh",
+      "order": 51,
+      "file": "content/en-id/grammar/dong-deh.json",
+      "title": "dong, deh and kan",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-katanya",
+      "order": 52,
+      "file": "content/en-id/grammar/katanya.json",
+      "title": "katanya — reporting",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-kayaknya",
+      "order": 53,
+      "file": "content/en-id/grammar/kayaknya.json",
+      "title": "kayaknya, sepertinya, mungkin",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-minta",
+      "order": 54,
+      "file": "content/en-id/grammar/minta.json",
+      "title": "minta, mohon, boleh saya — asking politely",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-saling",
+      "order": 55,
+      "file": "content/en-id/grammar/saling.json",
+      "title": "saling and sendiri",
+      "group": "conversation",
+      "level": "intermediate"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "warung",
+      "file": "content/en-id/scenarios/warung.json",
+      "title": "Ordering at a warung",
+      "icon": "🍜",
+      "category": "restaurant",
+      "level": "basic"
+    },
+    {
+      "id": "market",
+      "file": "content/en-id/scenarios/market.json",
+      "title": "Bargaining at the market",
+      "icon": "🛍️",
+      "category": "shopping",
+      "level": "basic"
+    },
+    {
+      "id": "ojek",
+      "file": "content/en-id/scenarios/ojek.json",
+      "title": "Riding an ojek",
+      "icon": "🛵",
+      "category": "transport",
+      "level": "basic"
+    },
+    {
+      "id": "homestay",
+      "file": "content/en-id/scenarios/homestay.json",
+      "title": "Checking in at a homestay",
+      "icon": "🏨",
+      "category": "hotel",
+      "level": "basic"
+    },
+    {
+      "id": "immigration",
+      "file": "content/en-id/scenarios/immigration.json",
+      "title": "Immigration at the airport",
+      "icon": "✈️",
+      "category": "airport",
+      "level": "basic"
+    },
+    {
+      "id": "lost",
+      "file": "content/en-id/scenarios/lost.json",
+      "title": "Asking the way",
+      "icon": "🧭",
+      "category": "directions",
+      "level": "basic"
+    },
+    {
+      "id": "pharmacy",
+      "file": "content/en-id/scenarios/pharmacy.json",
+      "title": "At the pharmacy",
+      "icon": "💊",
+      "category": "emergency",
+      "level": "basic"
+    },
+    {
+      "id": "neighbour",
+      "file": "content/en-id/scenarios/neighbour.json",
+      "title": "Meeting a neighbour",
+      "icon": "👋",
+      "category": "smalltalk",
+      "level": "basic"
+    },
+    {
+      "id": "family-dinner",
+      "file": "content/en-id/scenarios/family-dinner.json",
+      "title": "Dinner with your partner’s family",
+      "icon": "🍲",
+      "category": "family",
+      "level": "intermediate"
+    },
+    {
+      "id": "weekend-plans",
+      "file": "content/en-id/scenarios/weekend-plans.json",
+      "title": "Making weekend plans",
+      "icon": "📅",
+      "category": "plans",
+      "level": "intermediate"
+    },
+    {
+      "id": "clinic",
+      "file": "content/en-id/scenarios/clinic.json",
+      "title": "At the clinic",
+      "icon": "🩺",
+      "category": "doctor",
+      "level": "intermediate"
+    },
+    {
+      "id": "homestay-problem",
+      "file": "content/en-id/scenarios/homestay-problem.json",
+      "title": "A problem with your room",
+      "icon": "🔧",
+      "category": "hotel",
+      "level": "intermediate"
+    },
+    {
+      "id": "wrong-order",
+      "file": "content/en-id/scenarios/wrong-order.json",
+      "title": "The wrong order",
+      "icon": "😕",
+      "category": "problems",
+      "level": "intermediate"
+    }
+  ],
+  "listening": [
+    {
+      "id": "contrasts",
+      "kind": "contrasts",
+      "file": "content/en-id/listening/contrasts.json",
+      "title": "Which did you hear?",
+      "icon": "🎧",
+      "level": "first-steps"
+    },
+    {
+      "id": "replies",
+      "kind": "replies",
+      "file": "content/en-id/listening/replies.json",
+      "title": "What did they say?",
+      "icon": "👂",
+      "level": "basic"
+    },
+    {
+      "id": "replies-more",
+      "kind": "replies",
+      "file": "content/en-id/listening/replies-more.json",
+      "title": "Listening at natural speed",
+      "icon": "🎧",
+      "level": "intermediate"
+    }
+  ]
+}

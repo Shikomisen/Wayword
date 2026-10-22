@@ -1,0 +1,491 @@
+{
+  "schemaVersion": 1,
+  "id": "replies",
+  "title": "What did they say?",
+  "description": "Lines you'll hear from servers, vendors, drivers, shop and hotel staff, in everyday polite Indonesian. Hear one, pick what it means, and learn a way to answer.",
+  "items": [
+    {
+      "id": "lr-01",
+      "speaker": "server",
+      "indonesian": "Makan di sini atau dibungkus?",
+      "english": "Eating here or taking away?",
+      "reply": {
+        "indonesian": "Makan di sini, Bu.",
+        "english": "Eating here, please."
+      },
+      "note": "Dibungkus is wrapped to take away; the other answer is Dibungkus, ya.",
+      "audio": "audio/id/listening/lr-01.mp3",
+      "tags": [
+        "warung"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-02",
+      "speaker": "server",
+      "indonesian": "Mau pesan apa, Kak?",
+      "english": "What would you like to order?",
+      "reply": {
+        "indonesian": "Mi goreng satu, ya.",
+        "english": "Fried noodles for one, please."
+      },
+      "note": "Kak, from kakak (older sibling), is how staff address any young customer, man or woman.",
+      "audio": "audio/id/listening/lr-02.mp3",
+      "tags": [
+        "warung"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-03",
+      "speaker": "server",
+      "indonesian": "Minumnya apa, Kak?",
+      "english": "And what would you like to drink?",
+      "reply": {
+        "indonesian": "Es jeruk satu, ya.",
+        "english": "One iced orange, please."
+      },
+      "note": "Minumnya, 'the drink', comes once the food is ordered. The number goes after the drink, as with food.",
+      "audio": "audio/id/listening/lr-03.mp3",
+      "tags": [
+        "warung"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-04",
+      "speaker": "server",
+      "indonesian": "Pedasnya mau level berapa?",
+      "english": "How spicy would you like it? What level?",
+      "reply": {
+        "indonesian": "Level satu saja.",
+        "english": "Just level one."
+      },
+      "note": "Places selling ayam geprek or spicy noodles rate the chilli by level, and level satu is already hot for most visitors. Level nol (zero) has none.",
+      "audio": "audio/id/listening/lr-04.mp3",
+      "tags": [
+        "warung",
+        "spicy"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-05",
+      "speaker": "server",
+      "indonesian": "Mohon maaf, nasi gorengnya sudah habis.",
+      "english": "I'm sorry, we've run out of fried rice.",
+      "reply": {
+        "indonesian": "Oh, kalau begitu mi goreng saja.",
+        "english": "Oh, then I'll have fried noodles."
+      },
+      "note": "Habis means all gone. By evening, warungs often run out of the popular dishes.",
+      "audio": "audio/id/listening/lr-05.mp3",
+      "tags": [
+        "warung"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-06",
+      "speaker": "server",
+      "indonesian": "Mau tambah nasi, Kak?",
+      "english": "Would you like more rice?",
+      "reply": {
+        "indonesian": "Tidak, terima kasih. Sudah cukup.",
+        "english": "No, thank you. That's plenty."
+      },
+      "audio": "audio/id/listening/lr-06.mp3",
+      "tags": [
+        "warung"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-07",
+      "speaker": "server",
+      "indonesian": "Ada lagi, Kak?",
+      "english": "Anything else?",
+      "reply": {
+        "indonesian": "Sudah, itu saja.",
+        "english": "No, that's all."
+      },
+      "note": "Sudah, 'that's it', is the usual answer; a bare tidak sounds abrupt.",
+      "audio": "audio/id/listening/lr-07.mp3",
+      "tags": [
+        "warung"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-08",
+      "speaker": "server",
+      "indonesian": "Mohon ditunggu, ya, Kak. Kira-kira lima belas menit.",
+      "english": "Please wait. It'll be about fifteen minutes.",
+      "reply": {
+        "indonesian": "Oke, tidak apa-apa.",
+        "english": "OK, no problem."
+      },
+      "note": "Mohon is the formal 'please' of staff and signs. When you ask for something, use tolong or bisa instead.",
+      "audio": "audio/id/listening/lr-08.mp3",
+      "tags": [
+        "restaurant"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-09",
+      "speaker": "server",
+      "indonesian": "Semuanya delapan puluh lima ribu, Kak.",
+      "english": "That's eighty-five thousand altogether.",
+      "reply": {
+        "indonesian": "Ini, uangnya seratus ribu.",
+        "english": "Here's a hundred thousand."
+      },
+      "note": "Prices are said in thousands of rupiah, and the word rupiah is usually left off.",
+      "audio": "audio/id/listening/lr-09.mp3",
+      "tags": [
+        "paying"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-10",
+      "speaker": "clerk",
+      "indonesian": "Bayarnya tunai atau pakai kartu?",
+      "english": "Paying by cash or card?",
+      "reply": {
+        "indonesian": "Tunai saja.",
+        "english": "Cash, please."
+      },
+      "note": "Tunai is cash. Many staff just say cash, as in English.",
+      "audio": "audio/id/listening/lr-10.mp3",
+      "tags": [
+        "shop",
+        "paying"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-11",
+      "speaker": "clerk",
+      "indonesian": "Ada uang kecil, Kak?",
+      "english": "Have you got anything smaller?",
+      "reply": {
+        "indonesian": "Maaf, tidak ada. Adanya seratus ribu.",
+        "english": "Sorry, no. I've only got a hundred thousand."
+      },
+      "note": "Uang kecil is small notes and coins. Small shops, stalls and drivers often can't change a big note.",
+      "audio": "audio/id/listening/lr-11.mp3",
+      "tags": [
+        "shop",
+        "paying"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-12",
+      "speaker": "clerk",
+      "indonesian": "Perlu kantong, Kak?",
+      "english": "Do you need a bag?",
+      "reply": {
+        "indonesian": "Tidak usah, saya bawa tas.",
+        "english": "No need, I've brought a bag."
+      },
+      "audio": "audio/id/listening/lr-12.mp3",
+      "tags": [
+        "shop"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-13",
+      "speaker": "clerk",
+      "indonesian": "Sekalian pulsanya, Kak?",
+      "english": "Would you like to top up your phone credit while you're here?",
+      "reply": {
+        "indonesian": "Tidak, terima kasih.",
+        "english": "No, thank you."
+      },
+      "note": "Minimarket tills offer phone credit (pulsa) or the week's special with almost every sale. A smile and a no is fine.",
+      "audio": "audio/id/listening/lr-13.mp3",
+      "tags": [
+        "shop"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-14",
+      "speaker": "vendor",
+      "indonesian": "Cari apa, Kak?",
+      "english": "What are you looking for?",
+      "reply": {
+        "indonesian": "Lihat-lihat saja, ya.",
+        "english": "Just looking, thanks."
+      },
+      "note": "Sellers call it out to passers-by. It's an invitation, not a question you need to answer in full.",
+      "audio": "audio/id/listening/lr-14.mp3",
+      "tags": [
+        "market"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-15",
+      "speaker": "vendor",
+      "indonesian": "Itu sudah harga pas, Kak.",
+      "english": "That's already my lowest price.",
+      "reply": {
+        "indonesian": "Oh, ya sudah. Saya ambil satu.",
+        "english": "Oh, OK then. I'll take one."
+      },
+      "note": "Harga pas means the bargaining is over.",
+      "audio": "audio/id/listening/lr-15.mp3",
+      "tags": [
+        "market",
+        "bargaining"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-16",
+      "speaker": "vendor",
+      "indonesian": "Ya sudah, delapan puluh ribu boleh.",
+      "english": "All right, eighty thousand it is.",
+      "reply": {
+        "indonesian": "Terima kasih, Bu. Saya ambil.",
+        "english": "Thank you. I'll take it."
+      },
+      "note": "Boleh here is the seller accepting your offer. Once they say yes, it's polite to buy.",
+      "audio": "audio/id/listening/lr-16.mp3",
+      "tags": [
+        "market",
+        "bargaining"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-17",
+      "speaker": "vendor",
+      "indonesian": "Mangganya manis, Kak. Mau coba dulu?",
+      "english": "The mangoes are sweet. Want to try one first?",
+      "reply": {
+        "indonesian": "Boleh, terima kasih.",
+        "english": "Yes, please. Thank you."
+      },
+      "note": "Fruit sellers often offer a taste. Boleh is the everyday yes to an offer.",
+      "audio": "audio/id/listening/lr-17.mp3",
+      "tags": [
+        "market"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-18",
+      "speaker": "driver",
+      "indonesian": "Sesuai aplikasi, ya, Kak?",
+      "english": "Going where it says in the app?",
+      "reply": {
+        "indonesian": "Iya, Pak, sesuai aplikasi.",
+        "english": "Yes, as in the app."
+      },
+      "note": "Sesuai means 'as per'. App drivers use it to check the destination as you set off.",
+      "audio": "audio/id/listening/lr-18.mp3",
+      "tags": [
+        "ojek"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-19",
+      "speaker": "driver",
+      "indonesian": "Posisinya di mana, Kak?",
+      "english": "Where are you exactly?",
+      "reply": {
+        "indonesian": "Saya di depan pintu masuk, Pak.",
+        "english": "I'm in front of the entrance."
+      },
+      "note": "What drivers call or message to find you. Answer with a landmark.",
+      "audio": "audio/id/listening/lr-19.mp3",
+      "tags": [
+        "ojek"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-20",
+      "speaker": "driver",
+      "indonesian": "Ini helmnya, Kak.",
+      "english": "Here's your helmet.",
+      "reply": {
+        "indonesian": "Terima kasih, Pak.",
+        "english": "Thank you."
+      },
+      "note": "Ojek drivers carry a helmet for the passenger, and wearing it is the law.",
+      "audio": "audio/id/listening/lr-20.mp3",
+      "tags": [
+        "ojek"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-21",
+      "speaker": "driver",
+      "indonesian": "Lewat tol, ya, Kak? Lebih cepat.",
+      "english": "Shall we take the toll road? It's quicker.",
+      "reply": {
+        "indonesian": "Boleh, Pak.",
+        "english": "Sure, go ahead."
+      },
+      "note": "Toll fees are added to the fare, so taxi drivers ask first.",
+      "audio": "audio/id/listening/lr-21.mp3",
+      "tags": [
+        "taxi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-22",
+      "speaker": "driver",
+      "indonesian": "Turun di mana, Kak?",
+      "english": "Where would you like to be dropped off?",
+      "reply": {
+        "indonesian": "Di depan masjid itu, Pak.",
+        "english": "In front of that mosque, please."
+      },
+      "note": "Turun is to get off or out: of a bike, a car or a bus.",
+      "audio": "audio/id/listening/lr-22.mp3",
+      "tags": [
+        "ojek",
+        "taxi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-23",
+      "speaker": "receptionist",
+      "indonesian": "Boleh pinjam paspornya?",
+      "english": "May I see your passport?",
+      "reply": {
+        "indonesian": "Ini, Mbak.",
+        "english": "Here you are."
+      },
+      "note": "Literally 'may I borrow your passport'. Hotels copy the details, and it comes straight back.",
+      "audio": "audio/id/listening/lr-23.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-24",
+      "speaker": "receptionist",
+      "indonesian": "Atas nama siapa, Kak?",
+      "english": "What name is the booking under?",
+      "reply": {
+        "indonesian": "Atas nama Sam.",
+        "english": "Under Sam."
+      },
+      "note": "Atas nama, 'in the name of', is for any booking.",
+      "audio": "audio/id/listening/lr-24.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "lr-25",
+      "speaker": "receptionist",
+      "indonesian": "Kamarnya di lantai dua, ya. Ini kuncinya.",
+      "english": "Your room's on the first floor. Here's your key.",
+      "reply": {
+        "indonesian": "Terima kasih. Ada lift?",
+        "english": "Thanks. Is there a lift?"
+      },
+      "note": "Indonesia counts the ground floor as lantai satu, so lantai dua is one floor up: what New Zealand calls the first floor.",
+      "audio": "audio/id/listening/lr-25.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-26",
+      "speaker": "receptionist",
+      "indonesian": "Sarapannya mulai jam enam sampai jam sepuluh.",
+      "english": "Breakfast is from six until ten.",
+      "reply": {
+        "indonesian": "Baik. Di mana, ya?",
+        "english": "Great. Where is it?"
+      },
+      "note": "Mulai … sampai … is 'from … until …', for any opening hours.",
+      "audio": "audio/id/listening/lr-26.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-27",
+      "speaker": "host",
+      "indonesian": "Kamarnya belum siap, Kak. Mau titip tas dulu?",
+      "english": "Your room isn't ready yet. Would you like to leave your bag with us?",
+      "reply": {
+        "indonesian": "Boleh, terima kasih.",
+        "english": "Yes, please. Thank you."
+      },
+      "audio": "audio/id/listening/lr-27.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-28",
+      "speaker": "receptionist",
+      "indonesian": "Check-out jam dua belas siang, ya, Kak.",
+      "english": "Check-out is at twelve noon.",
+      "reply": {
+        "indonesian": "Kalau jam satu, bisa?",
+        "english": "Could I make it one o'clock?"
+      },
+      "note": "Check-in and check-out are said as in English.",
+      "audio": "audio/id/listening/lr-28.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-29",
+      "speaker": "host",
+      "indonesian": "Mau dipesankan taksi?",
+      "english": "Shall I book you a taxi?",
+      "reply": {
+        "indonesian": "Iya, boleh. Untuk jam tujuh pagi.",
+        "english": "Yes, please. For seven in the morning."
+      },
+      "note": "Dipesankan is pesan (to order) with di- and -kan: booked for you.",
+      "audio": "audio/id/listening/lr-29.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-30",
+      "speaker": "staff",
+      "indonesian": "Silakan ambil nomor antrean dulu, Kak.",
+      "english": "Please take a queue number first.",
+      "reply": {
+        "indonesian": "Oh, ambilnya di mana, ya?",
+        "english": "Oh, where do I get one?"
+      },
+      "note": "Banks, clinics and phone shops give out numbered tickets, and call the numbers out in Indonesian.",
+      "audio": "audio/id/listening/lr-30.mp3",
+      "tags": [
+        "bank"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

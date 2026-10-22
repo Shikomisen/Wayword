@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "directions",
+  "title": "Directions & Getting Lost",
+  "order": 8,
+  "description": "Asking the way and understanding the answer: left, right, straight on, near and far, and what to say when you're lost. People give directions by landmarks more than by street names.",
+  "phrases": [
+    {
+      "id": "dir-01",
+      "indonesian": "Permisi, numpang tanya.",
+      "english": "Excuse me, could I ask you something?",
+      "registerNotes": "The classic polite opener before asking the way. Numpang means to ride along or use someone else's space, so it's humble; Permisi, mau tanya (I'd like to ask) is plainer.",
+      "audio": "audio/id/dir-01.mp3",
+      "tags": [
+        "directions",
+        "polite",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-02",
+      "indonesian": "Stasiun kereta di mana, ya?",
+      "english": "Where's the train station?",
+      "registerNotes": "Swap in any place: hotel, pasar (market), halte bus (bus stop). The ya at the end keeps it soft.",
+      "pitfallNote": "Put the place first and di mana last, the way people usually ask. Di mana is written as two words.",
+      "audio": "audio/id/dir-02.mp3",
+      "tags": [
+        "directions",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "dir-03",
+      "indonesian": "Di dekat sini ada ATM?",
+      "english": "Is there an ATM near here?",
+      "registerNotes": "Di dekat sini (near here) plus ada (is there) works for anything: apotek (a pharmacy), toilet, warung.",
+      "audio": "audio/id/dir-03.mp3",
+      "audioHint": "Di dekat sini ada a te em?",
+      "tags": [
+        "directions",
+        "money"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-04",
+      "indonesian": "Bisa jalan kaki ke sana?",
+      "english": "Can I walk there?",
+      "registerNotes": "Jauh? (Is it far?) on its own works too. Answers: dekat (close), lumayan jauh (quite far), sekitar lima menit (about five minutes).",
+      "cultureNote": "Dekat often means close by motorbike, so asking whether you can walk gets a more useful answer.",
+      "audio": "audio/id/dir-04.mp3",
+      "tags": [
+        "directions",
+        "distance"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-05",
+      "indonesian": "Belok kiri di lampu merah.",
+      "english": "Turn left at the traffic lights.",
+      "registerNotes": "Lampu merah (red light) means the traffic lights, whatever colour they're showing. Belok kanan is turn right.",
+      "audio": "audio/id/dir-05.mp3",
+      "tags": [
+        "directions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-06",
+      "indonesian": "Lurus saja, nanti di perempatan belok kanan.",
+      "english": "Go straight on, then turn right at the crossroads.",
+      "registerNotes": "Perempatan is a crossroads and pertigaan a T-junction. Nanti here means 'then, further along', and lurus terus means keep going straight.",
+      "audio": "audio/id/dir-06.mp3",
+      "tags": [
+        "directions"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "dir-07",
+      "indonesian": "Di sebelah kiri, dekat masjid.",
+      "english": "On the left, near the mosque.",
+      "registerNotes": "Di sebelah kanan is on the right, di seberang across the road, and di belakang behind.",
+      "cultureNote": "Directions are usually given by landmarks such as a mosque, a minimarket or a petrol station (pom bensin), rather than by street names or distances.",
+      "audio": "audio/id/dir-07.mp3",
+      "tags": [
+        "directions",
+        "landmarks"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-08",
+      "indonesian": "Saya tersesat.",
+      "english": "I'm lost.",
+      "registerNotes": "Follow it with Bisa bantu saya? (Can you help me?)",
+      "pitfallNote": "Hilang (lost, missing) is for things: paspor saya hilang. For yourself, say tersesat (having lost your way).",
+      "audio": "audio/id/dir-08.mp3",
+      "tags": [
+        "directions",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-09",
+      "indonesian": "Ini di mana, ya?",
+      "english": "Where am I?",
+      "registerNotes": "Literally 'this is where?', for when you're not sure where you are. Ini jalan apa? (What street is this?) gets you a name to give a driver.",
+      "audio": "audio/id/dir-09.mp3",
+      "tags": [
+        "directions"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "dir-10",
+      "indonesian": "Bisa tunjukkan di peta?",
+      "english": "Could you show me on the map?",
+      "registerNotes": "Hand over your phone with the map open. Tolong makes it a little more polite: Bisa tolong tunjukkan di peta?",
+      "audio": "audio/id/dir-10.mp3",
+      "tags": [
+        "directions",
+        "maps"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-11",
+      "indonesian": "Toiletnya di mana, ya?",
+      "english": "Where's the toilet?",
+      "registerNotes": "Toilet and kamar kecil (literally small room) are both polite; in someone's home, ask for the kamar mandi (bathroom). Signs say Pria (men) and Wanita (women).",
+      "cultureNote": "Many toilets have a hose or a water scoop rather than paper, and public ones often charge a small fee, so carry tissues and coins or small notes.",
+      "audio": "audio/id/dir-11.mp3",
+      "tags": [
+        "directions",
+        "essential"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "id": "words-feelings",
+  "title": "Feelings & Health",
+  "description": "How you feel, and what to say when you're not well: capek, lapar, kangen, pusing. There's no word for am: Saya capek is I'm tired.",
+  "items": [
+    {
+      "id": "w-senang",
+      "indonesian": "senang",
+      "english": "happy, glad; to enjoy",
+      "pos": "adjective",
+      "registerNotes": "Senang bertemu dengan Anda (nice to meet you). Also to like being somewhere: Saya senang di sini (I like it here).",
+      "audio": "audio/id/words/w-senang.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sedih",
+      "indonesian": "sedih",
+      "english": "sad",
+      "pos": "adjective",
+      "audio": "audio/id/words/w-sedih.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-marah",
+      "indonesian": "marah",
+      "english": "angry",
+      "pos": "adjective",
+      "registerNotes": "Angry with someone: marah sama dia in speech, marah kepada dia in writing.",
+      "cultureNote": "Showing anger in public loses face and rarely gets results. Stay calm and smile, even when complaining.",
+      "audio": "audio/id/words/w-marah.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-takut",
+      "indonesian": "takut",
+      "english": "afraid, scared",
+      "pos": "adjective",
+      "pitfallNote": "No word for of: takut anjing (afraid of dogs). In speech, often takut sama anjing.",
+      "audio": "audio/id/words/w-takut.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-capek",
+      "indonesian": "capek",
+      "english": "tired",
+      "pos": "adjective",
+      "registerNotes": "Capek is what everyone says; lelah is the written word. With friends, capek banget (so tired).",
+      "audio": "audio/id/words/w-capek.mp3",
+      "tags": [
+        "feelings",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-lapar",
+      "indonesian": "lapar",
+      "english": "hungry",
+      "pos": "adjective",
+      "pitfallNote": "There's no am: Saya lapar (I'm hungry). Often said laper.",
+      "audio": "audio/id/words/w-lapar.mp3",
+      "tags": [
+        "feelings",
+        "food"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-haus",
+      "indonesian": "haus",
+      "english": "thirsty",
+      "pos": "adjective",
+      "pitfallNote": "Two syllables, ha-us, not like English house.",
+      "audio": "audio/id/words/w-haus.mp3",
+      "tags": [
+        "feelings",
+        "food"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sakit",
+      "indonesian": "sakit",
+      "english": "sick, ill; sore, painful",
+      "pos": "adjective",
+      "registerNotes": "Saya sakit (I'm ill); Kaki saya sakit (my foot hurts). Sakit apa? asks what's wrong.",
+      "audio": "audio/id/words/w-sakit.mp3",
+      "tags": [
+        "health",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sehat",
+      "indonesian": "sehat",
+      "english": "healthy, well",
+      "pos": "adjective",
+      "registerNotes": "Friends and family ask Sehat? (Keeping well?), and Sehat-sehat, ya (stay well) is a warm goodbye.",
+      "audio": "audio/id/words/w-sehat.mp3",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bosan",
+      "indonesian": "bosan",
+      "english": "bored; tired of",
+      "pos": "adjective",
+      "registerNotes": "Also fed up with something: Saya bosan makan mi (I'm sick of eating noodles). Often said bosen.",
+      "audio": "audio/id/words/w-bosan.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kangen",
+      "indonesian": "kangen",
+      "english": "to miss (someone or something)",
+      "pos": "verb",
+      "registerNotes": "The everyday, warm word: Saya kangen keluarga (I miss my family). Rindu means the same in songs and writing.",
+      "audio": "audio/id/words/w-kangen.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-khawatir",
+      "indonesian": "khawatir",
+      "english": "worried",
+      "pos": "adjective",
+      "registerNotes": "Jangan khawatir (don't worry). The kh is a breathy h, and many people say kuatir.",
+      "audio": "audio/id/words/w-khawatir.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pusing",
+      "indonesian": "pusing",
+      "english": "dizzy; headachy",
+      "pos": "adjective",
+      "pitfallNote": "Pusing is dizziness or a light headache, and also feeling overwhelmed: Saya pusing is as often about work or money as about health.",
+      "audio": "audio/id/words/w-pusing.mp3",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-demam",
+      "indonesian": "demam",
+      "english": "fever; to have a fever",
+      "pos": "noun",
+      "registerNotes": "No verb needed: Anak saya demam (my child has a fever). People also say badannya panas (he's running hot).",
+      "audio": "audio/id/words/w-demam.mp3",
+      "tags": [
+        "health"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-obat",
+      "indonesian": "obat",
+      "english": "medicine, medication",
+      "pos": "noun",
+      "pitfallNote": "You drink medicine, even tablets: minum obat (take medicine).",
+      "audio": "audio/id/words/w-obat.mp3",
+      "tags": [
+        "health",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dokter",
+      "indonesian": "dokter",
+      "english": "doctor",
+      "pos": "noun",
+      "registerNotes": "Address a doctor as Dokter or Dok. Ke dokter is to go to the doctor's.",
+      "audio": "audio/id/words/w-dokter.mp3",
+      "tags": [
+        "health",
+        "people"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-me-sounds",
+  "connector": "mem-, men-, meng-, meny-",
+  "gloss": "me- で最初の音が変わる",
+  "title": "me- と音の変化",
+  "pattern": "p → mem- (pakai → memakai) · t → men- (tulis → menulis) · k → meng- (kirim → mengirim) · s → meny- (sapu → menyapu)",
+  "explanation": "me- は語根の最初の音とくっつき、p、t、k、s の4つの音はその中に消えます：p は m に（pakai → memakai）、t は n に（tulis → menulis）、k は ng に（kirim → mengirim）、s は ny に（sapu → menyapu）。ほかの音は消えずに残り、その音に合った mem-、men-、meng- が前に付きます（membeli、mendengar、mencari、mengambil、mengganti）。これは日本語の「ん」と同じ仕組みです。「ん」も次の音に合わせて、さんぽでは m、ほんとでは n、りんごでは ng の音になります。l、m、n、r、w、y の前は、ただの me- です（melihat、memasak、merokok）。辞書を引く時は me- の部分を外します。mem-、men-、meny- の後が母音なら、語根の p、t、s が消えています（memakai → pakai、menunggu → tunggu、menyewa → sewa）。ただし、もともと m や n で始まる語もあります（memasak → masak、menikah → nikah）。meng- の後が母音なら、k を足すか、何も足さずに引いてみます：mengirim → kirim、mengambil → ambil。",
+  "natural": "読む時には必ず必要です。看板、メニュー、メッセージ、ニュースは me- の語だらけで、辞書は語根で載せています。くだけた会話を聞き取るのにも役立ちます：nunggu、ngirim、nyewa は、menunggu、mengirim、menyewa から me- を取っただけです。",
+  "stiff": "最初の文字を残してしまう（mempakai、mentunggu、mengkirim、mensewa）のが、学習者によくあるまちがいです。日常語では必ずまちがいになります。外来語の中には残すものもありますが（mentraktir、「おごる」、traktir から）、それは出会った時に1つずつ覚えれば十分です。",
+  "examples": [
+    {
+      "id": "gx-me-sounds-1",
+      "indonesian": "Kita harus memakai helm.",
+      "japanese": "ヘルメットをかぶらないといけません。",
+      "chunks": [
+        {
+          "t": "Kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "harus ",
+          "w": "w-harus"
+        },
+        {
+          "t": "memakai ",
+          "w": "w-memakai"
+        },
+        {
+          "t": "helm."
+        }
+      ],
+      "gap": {
+        "before": "Kita harus ",
+        "answer": "memakai",
+        "after": " helm.",
+        "options": [
+          "memakai",
+          "mempakai",
+          "mepakai"
+        ],
+        "why": "me- の後で pakai の p が消えて memakai。"
+      },
+      "audio": "audio/id/grammar/gx-me-sounds-1.mp3",
+      "tags": [
+        "文法",
+        "me-の音の変化"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-me-sounds-2",
+      "indonesian": "Saya sudah menunggu satu jam.",
+      "japanese": "もう1時間も待っています。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "menunggu ",
+          "w": "w-tunggu"
+        },
+        {
+          "t": "satu jam.",
+          "w": "w-jam"
+        }
+      ],
+      "gap": {
+        "before": "Saya sudah ",
+        "answer": "menunggu",
+        "after": " satu jam.",
+        "options": [
+          "menunggu",
+          "mentunggu",
+          "metunggu"
+        ],
+        "why": "me- の後で tunggu の t が消えて menunggu。"
+      },
+      "audio": "audio/id/grammar/gx-me-sounds-2.mp3",
+      "tags": [
+        "文法",
+        "me-の音の変化"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-me-sounds-3",
+      "indonesian": "Ibu saya mengirim paket dari Bandung.",
+      "japanese": "母がバンドンから小包を送ってくれました。",
+      "chunks": [
+        {
+          "t": "Ibu ",
+          "w": "w-ibu"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mengirim ",
+          "w": "w-mengirim"
+        },
+        {
+          "t": "paket ",
+          "w": "w-paket"
+        },
+        {
+          "t": "dari Bandung.",
+          "w": "w-dari"
+        }
+      ],
+      "gap": {
+        "before": "Ibu saya ",
+        "answer": "mengirim",
+        "after": " paket dari Bandung.",
+        "options": [
+          "mengirim",
+          "mengkirim",
+          "menkirim"
+        ],
+        "why": "me- の後で kirim の k が消え、母音の前なので meng-：mengirim。"
+      },
+      "audio": "audio/id/grammar/gx-me-sounds-3.mp3",
+      "tags": [
+        "文法",
+        "me-の音の変化"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-me-sounds-4",
+      "indonesian": "Saya mau menyewa motor untuk seminggu.",
+      "japanese": "バイクを1週間借りたいです。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "menyewa ",
+          "w": "w-sewa"
+        },
+        {
+          "t": "motor ",
+          "w": "w-motor"
+        },
+        {
+          "t": "untuk seminggu.",
+          "w": "w-minggu"
+        }
+      ],
+      "gap": {
+        "before": "Saya mau ",
+        "answer": "menyewa",
+        "after": " motor untuk seminggu.",
+        "options": [
+          "menyewa",
+          "mensewa",
+          "mesewa"
+        ],
+        "why": "me- の後で sewa の s が消え、meny- になります：menyewa。"
+      },
+      "audio": "audio/id/grammar/gx-me-sounds-4.mp3",
+      "tags": [
+        "文法",
+        "me-の音の変化"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

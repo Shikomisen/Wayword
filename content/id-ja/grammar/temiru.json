@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-temiru",
+  "connector": "〜てみる",
+  "gloss": "mencoba (lalu lihat hasilnya)",
+  "title": "〜てみる — coba dulu, lalu lihat",
+  "pattern": "bentuk て kata kerja + みる",
+  "explanation": "〜てみる artinya “coba lakukan, lalu lihat”, persis seperti “coba” dalam bahasa Indonesia: {食|た}べてみる — coba makan (dan lihat rasanya). Bentuknya berubah seperti みる: {食|た}べてみたい (ingin mencoba), {着|き}てみてもいいですか (boleh saya coba pakai?), やってみて (coba saja).",
+  "natural": "Pas untuk makanan, pakaian, dan pengalaman baru: {一度|いちど}{温泉|おんせん}に{行|い}ってみたい — suatu saat aku ingin mencoba ke pemandian air panas.",
+  "stiff": "Berusaha keras melakukan sesuatu, yang mungkin gagal, bukan てみる tetapi ようとする: {開|あ}けようとした — aku berusaha membukanya. Dan “coba” yang hanya memperhalus permintaan (“coba ambilkan itu”) cukup 〜てください.",
+  "examples": [
+    {
+      "id": "gx-temiru-1",
+      "japanese": "これ、食べてみて。",
+      "furigana": "これ、{食|た}べてみて。",
+      "indonesian": "Coba makan ini.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "これ、",
+          "w": "w-kore"
+        },
+        {
+          "t": "{食|た}べて",
+          "w": "w-taberu"
+        },
+        {
+          "t": "みて。"
+        }
+      ],
+      "gap": {
+        "before": "これ、{食|た}べて",
+        "answer": "みて",
+        "after": "。",
+        "options": [
+          "みて",
+          "いて",
+          "おいて"
+        ],
+        "why": "Coba, lalu lihat: て + みる."
+      },
+      "audio": "audio/ja/grammar/gx-temiru-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "temiru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-temiru-2",
+      "japanese": "この服、着てみてもいいですか。",
+      "furigana": "この{服|ふく}、{着|き}てみてもいいですか。",
+      "indonesian": "Boleh saya coba pakai baju ini?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{服|ふく}、",
+          "w": "w-fuku"
+        },
+        {
+          "t": "{着|き}てみても",
+          "w": "w-kiru"
+        },
+        {
+          "t": "いいですか。"
+        }
+      ],
+      "gap": {
+        "before": "この{服|ふく}、{着|き}て",
+        "answer": "みても",
+        "after": "いいですか。",
+        "options": [
+          "みても",
+          "おいても",
+          "しまっても"
+        ],
+        "why": "Mencoba pakaian: 着てみる, ditanyakan dengan てもいいですか (boleh…?)."
+      },
+      "audio": "audio/ja/grammar/gx-temiru-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "temiru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-temiru-3",
+      "japanese": "一度、温泉に行ってみたいです。",
+      "furigana": "{一度|いちど}、{温泉|おんせん}に{行|い}ってみたいです。",
+      "indonesian": "Suatu saat saya ingin mencoba ke pemandian air panas.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{一度|いちど}、"
+        },
+        {
+          "t": "{温泉|おんせん}に",
+          "w": "w-onsen"
+        },
+        {
+          "t": "{行|い}ってみたいです。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{一度|いちど}、{温泉|おんせん}に{行|い}って",
+        "answer": "みたい",
+        "after": "です。",
+        "options": [
+          "みたい",
+          "おきたい",
+          "しまいたい"
+        ],
+        "why": "Ingin mencoba: てみたい."
+      },
+      "audio": "audio/ja/grammar/gx-temiru-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "temiru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-temiru-4",
+      "japanese": "分からなかったら、先生に聞いてみたら？",
+      "furigana": "{分|わ}からなかったら、{先生|せんせい}に{聞|き}いてみたら？",
+      "indonesian": "Kalau tidak mengerti, bagaimana kalau coba tanya guru?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{分|わ}からなかったら、",
+          "w": "w-wakaru"
+        },
+        {
+          "t": "{先生|せんせい}に",
+          "w": "w-sensei"
+        },
+        {
+          "t": "{聞|き}いてみたら？",
+          "w": "w-kiku"
+        }
+      ],
+      "gap": {
+        "before": "{分|わ}からなかったら、{先生|せんせい}に{聞|き}いて",
+        "answer": "みたら",
+        "after": "？",
+        "options": [
+          "みたら",
+          "おいたら",
+          "いたら"
+        ],
+        "why": "Saran: てみたら？ — bagaimana kalau coba…?"
+      },
+      "audio": "audio/ja/grammar/gx-temiru-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "temiru"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

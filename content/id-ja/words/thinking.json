@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "id": "words-thinking",
+  "title": "Pendapat & ide",
+  "description": "Mengatakan apa yang kamu pikirkan dan alasannya: pendapat, alasan, pengalaman, mungkin, pasti, memang, misalnya.",
+  "items": [
+    {
+      "id": "w-iken",
+      "japanese": "意見",
+      "furigana": "{意見|いけん}",
+      "indonesian": "pendapat",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-iken.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kangae",
+      "japanese": "考え",
+      "furigana": "{考|かんが}え",
+      "indonesian": "ide, pikiran",
+      "pos": "noun",
+      "usage": "いい考えだね — ide bagus!",
+      "audio": "audio/ja/words/w-kangae.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-riyuu",
+      "japanese": "理由",
+      "furigana": "{理由|りゆう}",
+      "indonesian": "alasan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-riyuu.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-keiken",
+      "japanese": "経験",
+      "furigana": "{経験|けいけん}",
+      "indonesian": "pengalaman",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-keiken.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hontou",
+      "japanese": "本当",
+      "furigana": "{本当|ほんとう}",
+      "indonesian": "kebenaran; sungguhan",
+      "pos": "noun",
+      "usage": "本当に — sungguh, benar-benar. 本当？ / ほんと？ — serius?",
+      "audio": "audio/ja/words/w-hontou.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tashika",
+      "japanese": "確か",
+      "furigana": "{確|たし}か",
+      "indonesian": "pasti; kalau tidak salah",
+      "pos": "na-adjective",
+      "usage": "Sebagai kata keterangan, 確か… artinya “kalau tidak salah ingat…”.",
+      "audio": "audio/ja/words/w-tashika.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tabun",
+      "japanese": "多分",
+      "furigana": "{多分|たぶん}",
+      "indonesian": "mungkin, barangkali",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-tabun.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kitto",
+      "japanese": "きっと",
+      "indonesian": "pasti, aku yakin",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-kitto.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-zettai",
+      "japanese": "絶対",
+      "furigana": "{絶対|ぜったい}",
+      "indonesian": "pasti, mutlak",
+      "pos": "adverb",
+      "usage": "絶対おいしいよ — pasti enak, aku jamin.",
+      "audio": "audio/ja/words/w-zettai.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yappari",
+      "japanese": "やっぱり",
+      "indonesian": "memang (sesuai dugaan); akhirnya tetap",
+      "pos": "adverb",
+      "usage": "Saat berubah pikiran: やっぱりこっちにする — eh, aku pilih yang ini saja, deh.",
+      "audio": "audio/ja/words/w-yappari.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-jitsuwa",
+      "japanese": "実は",
+      "furigana": "{実|じつ}は",
+      "indonesian": "sebenarnya, sejujurnya",
+      "pos": "adverb",
+      "usage": "Membuka pengakuan atau kabar: 実は、来月引っ越すんだ (sebenarnya, bulan depan aku pindah).",
+      "audio": "audio/ja/words/w-jitsuwa.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tatoeba",
+      "japanese": "例えば",
+      "furigana": "{例|たと}えば",
+      "indonesian": "misalnya",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-tatoeba.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tokuni",
+      "japanese": "特に",
+      "furigana": "{特|とく}に",
+      "indonesian": "terutama; (tidak) khususnya",
+      "pos": "adverb",
+      "usage": "特にない — tidak ada yang khusus.",
+      "audio": "audio/ja/words/w-tokuni.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kekkou",
+      "japanese": "結構",
+      "furigana": "{結構|けっこう}",
+      "indonesian": "cukup, lumayan",
+      "pos": "adverb",
+      "usage": "Kalau diucapkan sendiri, 結構です artinya “tidak usah, terima kasih”.",
+      "audio": "audio/ja/words/w-kekkou.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-igaito",
+      "japanese": "意外と",
+      "furigana": "{意外|いがい}と",
+      "indonesian": "ternyata, di luar dugaan",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-igaito.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sansei",
+      "japanese": "賛成",
+      "furigana": "{賛成|さんせい}",
+      "indonesian": "setuju, dukungan (atas suatu ide)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-sansei.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hantai",
+      "japanese": "反対",
+      "furigana": "{反対|はんたい}",
+      "indonesian": "tidak setuju, penolakan; kebalikan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hantai.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mondai",
+      "japanese": "問題",
+      "furigana": "{問題|もんだい}",
+      "indonesian": "masalah; soal (ujian)",
+      "pos": "noun",
+      "usage": "問題ない — tidak masalah.",
+      "audio": "audio/ja/words/w-mondai.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-houhou",
+      "japanese": "方法",
+      "furigana": "{方法|ほうほう}",
+      "indonesian": "cara, metode",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-houhou.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-baai",
+      "japanese": "場合",
+      "furigana": "{場合|ばあい}",
+      "indonesian": "kasus, keadaan",
+      "pos": "noun",
+      "usage": "雨の場合は — kalau hujan (dalam hal terjadi hujan).",
+      "audio": "audio/ja/words/w-baai.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kekka",
+      "japanese": "結果",
+      "furigana": "{結果|けっか}",
+      "indonesian": "hasil",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kekka.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-imi",
+      "japanese": "意味",
+      "furigana": "{意味|いみ}",
+      "indonesian": "arti, makna",
+      "pos": "noun",
+      "usage": "どういう意味？ — maksudnya apa?",
+      "audio": "audio/ja/words/w-imi.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kangaeru",
+      "japanese": "考える",
+      "furigana": "{考|かんが}える",
+      "indonesian": "memikirkan, mempertimbangkan",
+      "pos": "verb",
+      "forms": {
+        "masu": "{考|かんが}えます",
+        "te": "{考|かんが}えて"
+      },
+      "usage": "思う untuk pendapat atau perasaan; 考える untuk memikirkan sesuatu dengan matang. Dalam bahasa Indonesia keduanya bisa “pikir”.",
+      "audio": "audio/ja/words/w-kangaeru.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kigasuru",
+      "japanese": "気がする",
+      "furigana": "{気|き}がする",
+      "indonesian": "merasa (bahwa), punya firasat",
+      "pos": "verb",
+      "forms": {
+        "masu": "{気|き}がします",
+        "te": "{気|き}がして"
+      },
+      "usage": "雨が降る気がする — rasanya bakal hujan.",
+      "audio": "audio/ja/words/w-kigasuru.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chigau",
+      "japanese": "違う",
+      "furigana": "{違|ちが}う",
+      "indonesian": "berbeda; salah",
+      "pos": "verb",
+      "forms": {
+        "masu": "{違|ちが}います",
+        "te": "{違|ちが}って"
+      },
+      "usage": "違います — bukan begitu — cara sopan untuk mengoreksi orang.",
+      "audio": "audio/ja/words/w-chigau.mp3",
+      "tags": [
+        "berpikir"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

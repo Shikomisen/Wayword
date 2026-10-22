@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "neighbour",
+  "title": "お隣さんと話す",
+  "category": "smalltalk",
+  "setting": "ジョグジャカルタの静かなカンポン（細い路地が入り組んだ住宅地）で、1か月部屋を借りています。ある朝出かけようとすると、隣の家の年配の女性が家の前を掃いていました。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "neighbour",
+      "indonesian": "Pagi, Kak! Mau ke mana?",
+      "japanese": "おはよう！どちらへ？",
+      "audio": "audio/id/scenario/neighbour-n1.mp3",
+      "options": [
+        {
+          "phraseId": "sml-09",
+          "quality": "good",
+          "feedback": "お決まりのあいまいな答え方です。Mau ke mana? はあいさつなので、詳しい答えは誰も期待していません。日本語の「ちょっとそこまで」と同じです。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Pagi, Bu. Ke pasar.",
+          "japanese": "おはようございます。市場まで。",
+          "feedback": "あいさつを返して、あとは短く答えるだけ。相手が知りたいのはそれだけです。",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Kenapa, Bu?",
+          "japanese": "どうしてですか？",
+          "feedback": "なぜ知りたいのかと問い返しているように聞こえます。Mau ke mana? は日本語の「どちらへ？」のような気軽なあいさつなので、Jalan-jalan saja と軽く答えましょう。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "neighbour",
+      "indonesian": "Asalnya dari mana, Kak?",
+      "japanese": "どこから来たんですか？",
+      "audio": "audio/id/scenario/neighbour-n2.mp3",
+      "options": [
+        {
+          "phraseId": "sml-02",
+          "quality": "good",
+          "feedback": "「です」にあたる言葉は要りません。dari（〜から）だけで十分です。日本からなら Saya dari Jepang. です。",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Dari Selandia Baru, Bu. Dari Auckland.",
+          "japanese": "ニュージーランドからです。オークランドから。",
+          "feedback": "町の名前も添えると、相手が次に聞く話題ができます。",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Saya adalah dari Selandia Baru.",
+          "japanese": "私はニュージーランドからであります。",
+          "feedback": "adalah を「です」のつもりで入れがちですが、adalah は書き言葉の「〜である」で、dari の前には付けません。Saya dari Selandia Baru. で十分です。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "neighbour",
+      "indonesian": "Wah, jauh sekali! Bahasa Indonesianya sudah bagus, ya.",
+      "japanese": "まあ、遠いところから！インドネシア語、もう上手ですね。",
+      "audio": "audio/id/scenario/neighbour-n3.mp3",
+      "options": [
+        {
+          "phraseId": "sml-07",
+          "quality": "good",
+          "feedback": "謙虚で前向きな、ほめられた時の自然な返し方。日本語の「いえいえ、まだまだです」にあたります。",
+          "next": "n4"
+        },
+        {
+          "phraseId": "sml-06",
+          "quality": "good",
+          "feedback": "勉強中だと伝えると、相手も気長に聞いてくれて、たいていもっとほめてくれます。",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Ya, bahasa Indonesia saya bagus sekali.",
+          "japanese": "はい、私のインドネシア語はとても上手です。",
+          "feedback": "ほめ言葉に同意すると自慢に聞こえます。日本語と同じく、謙遜して Saya baru bisa sedikit と返しましょう。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "neighbour",
+      "indonesian": "Sampai kapan di sini, Kak?",
+      "japanese": "いつまでこちらに？",
+      "audio": "audio/id/scenario/neighbour-n4.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Sampai akhir bulan, Bu.",
+          "japanese": "月末までです。",
+          "feedback": "Sampai kapan? は直訳すると「いつまで？」。sampai ＋時を表す言葉で答えます。",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Tiga minggu lagi, Bu.",
+          "japanese": "あと3週間です。",
+          "feedback": "期間のあとの lagi は「あと〜」。tiga minggu lagi で「あと3週間」です。",
+          "next": "n5"
+        },
+        {
+          "phraseId": "gre-22",
+          "quality": "wrong",
+          "feedback": "Sampai jumpa は「またね」というお別れの言葉。聞かれたのは Sampai kapan?（いつまで？）なので、Sampai akhir bulan のように時で答えましょう。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "neighbour",
+      "indonesian": "Sudah makan, Kak?",
+      "japanese": "ごはん、もう食べました？",
+      "audio": "audio/id/scenario/neighbour-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Sudah, Bu, terima kasih. Ibu sudah makan?",
+          "japanese": "はい、ありがとうございます。そちらは？",
+          "feedback": "Sudah …? の質問には sudah で「はい」と答えます。聞き返す時は「あなた」の代わりに Ibu を使うと、日本語で相手を「〇〇さん」と呼ぶように、温かく丁寧です。",
+          "next": "n6"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Tidak, Bu.",
+          "japanese": "いいえ。",
+          "feedback": "Sudah …? の質問には sudah（もう〜した）か belum（まだ）で答えます。日本語の「まだです」にあたるのが belum。tidak だと、そもそも食事をしないように聞こえます。",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Sudah. Kamu sudah makan?",
+          "japanese": "うん。あなたは食べた？",
+          "feedback": "kamu は友だちや子ども、年下の人に使う言葉です。年上の近所の人には Ibu を使い、Ibu sudah makan? と聞きましょう。",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "neighbour",
+      "indonesian": "Hati-hati di jalan, ya, Kak.",
+      "japanese": "気をつけて行ってらっしゃい。",
+      "audio": "audio/id/scenario/neighbour-n6.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Mari, Bu. Terima kasih.",
+          "japanese": "では、失礼します。ありがとうございます。",
+          "feedback": "Mari, Bu は、歩き出す時の丁寧なあいさつです。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-24",
+          "quality": "good",
+          "feedback": "控えめで丁寧な、その場を離れる時のあいさつ。日本語の「お先に失礼します」に近く、dulu（先に）が言い方をやわらげます。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-25",
+          "quality": "wrong",
+          "feedback": "Selamat jalan は、旅立つ人に言う「いってらっしゃい」「お気をつけて」。出かけるのはあなたなので、Mari, Bu と言いましょう。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "japanese": "よくある朝の立ち話。Mau ke mana? や Sudah makan? は、日本語の「どちらへ？」のように親しみを示すあいさつで、Jalan-jalan saja や Sudah, terima kasih と答えれば完璧です。年上の近所の人には kamu ではなく Ibu や Bapak を使い、インドネシア語をほめられたら謙遜して受け流しましょう。",
+      "end": true,
+      "options": []
+    }
+  }
+}

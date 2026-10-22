@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ke-an",
+  "connector": "ke-…-an",
+  "gloss": "〜に降られる・〜すぎる・〜さ",
+  "title": "ke-…-an",
+  "pattern": "ke- + 語根 + -an: kehujanan (雨に降られる) · kebesaran (大きすぎる) · kebersihan (清潔さ)",
+  "explanation": "動詞や名詞を ke-…-an ではさむと、望まないことが自分の身に起きたことを表します。日本語の「雨に降られる」「泥棒に入られる」のような迷惑の受け身にぴったり当たります：kehujanan（雨に降られる。hujan＝雨 から）、kemalingan（泥棒に入られる。maling＝泥棒 から）、ketinggalan（置いていかれる、乗り遅れる：ketinggalan bus）。形容詞をはさむと、日常会話では「（自分には）〜すぎる」の意味になります：Bajunya kebesaran（服が大きすぎる）、Sepatunya kekecilan（靴が小さすぎる）。また、日本語の「〜さ」「〜性」のような抽象的な名詞も作ります。看板や書類によく出る語です：kebersihan（清潔）、keamanan（安全、警備）、kesehatan（健康）、kesempatan（機会）。つまり Hujan は「雨が降っている」、Saya kehujanan は「私は雨に降られた」です。",
+  "natural": "自分の身に起きたことを話す時に：Saya kehujanan、Saya kecopetan di pasar（市場でスリにあいました）。お店では、サイズが合わないことを「〜すぎる」の形で言います：Kebesaran, ada yang lebih kecil?（大きすぎます。もっと小さいのはありますか？）",
+  "stiff": "「〜すぎる」の意味（kebesaran、kemahalan、kepedasan）は話し言葉です。書き言葉やていねいな話し方では terlalu を使います：terlalu besar。また ke-…-an は、自分で選んでしたことには使いません。いつも「自分の身に降りかかったこと」です。",
+  "examples": [
+    {
+      "id": "gx-ke-an-1",
+      "indonesian": "Tadi saya kehujanan di jalan.",
+      "japanese": "さっき途中で雨に降られました。",
+      "chunks": [
+        {
+          "t": "Tadi ",
+          "w": "w-tadi"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "kehujanan ",
+          "w": "w-hujan"
+        },
+        {
+          "t": "di jalan.",
+          "w": "w-jalan"
+        }
+      ],
+      "gap": {
+        "before": "Tadi saya ",
+        "answer": "kehujanan",
+        "after": " di jalan.",
+        "options": [
+          "kehujanan",
+          "hujan",
+          "dihujani"
+        ],
+        "why": "望まないのに雨が自分に降りかかったので ke-…-an。日本語の「雨に降られた」とまったく同じ発想です。hujan だけでは「雨」か「雨が降っている」。"
+      },
+      "audio": "audio/id/grammar/gx-ke-an-1.mp3",
+      "tags": [
+        "文法",
+        "ke-an"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-ke-an-2",
+      "indonesian": "Rumah tetangga saya kemalingan.",
+      "japanese": "近所の家が泥棒に入られました。",
+      "chunks": [
+        {
+          "t": "Rumah ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "tetangga ",
+          "w": "w-tetangga"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "kemalingan."
+        }
+      ],
+      "gap": {
+        "before": "Rumah tetangga saya ",
+        "answer": "kemalingan",
+        "after": ".",
+        "options": [
+          "kemalingan",
+          "maling",
+          "dicuri"
+        ],
+        "why": "泥棒に入られた家は kemalingan。dicuri は盗まれた「もの」に使い（TV-nya dicuri、テレビを盗まれた）、maling は泥棒そのものです。"
+      },
+      "audio": "audio/id/grammar/gx-ke-an-2.mp3",
+      "tags": [
+        "文法",
+        "ke-an"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ke-an-3",
+      "indonesian": "Bajunya kebesaran. Ada yang lebih kecil?",
+      "japanese": "この服、大きすぎます。もっと小さいのはありますか？",
+      "chunks": [
+        {
+          "t": "Bajunya ",
+          "w": "w-baju"
+        },
+        {
+          "t": "kebesaran. ",
+          "w": "w-besar"
+        },
+        {
+          "t": "Ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "yang lebih "
+        },
+        {
+          "t": "kecil?",
+          "w": "w-kecil"
+        }
+      ],
+      "gap": {
+        "before": "Bajunya ",
+        "answer": "kebesaran",
+        "after": ". Ada yang lebih kecil?",
+        "options": [
+          "kebesaran",
+          "terbesar",
+          "besar sekali"
+        ],
+        "why": "（自分には）大きすぎるのは ke-…-an。besar sekali はただの「とても大きい」、terbesar は「いちばん大きい」です。"
+      },
+      "audio": "audio/id/grammar/gx-ke-an-3.mp3",
+      "tags": [
+        "文法",
+        "ke-an"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ke-an-4",
+      "indonesian": "Mohon jaga kebersihan kamar mandi.",
+      "japanese": "浴室はきれいにお使いください。",
+      "chunks": [
+        {
+          "t": "Mohon "
+        },
+        {
+          "t": "jaga "
+        },
+        {
+          "t": "kebersihan ",
+          "w": "w-kebersihan"
+        },
+        {
+          "t": "kamar mandi.",
+          "w": "w-kamar-mandi"
+        }
+      ],
+      "gap": {
+        "before": "Mohon jaga ",
+        "answer": "kebersihan",
+        "after": " kamar mandi.",
+        "options": [
+          "kebersihan",
+          "bersih",
+          "membersihkan"
+        ],
+        "why": "Jaga（保つ、守る）の後には名詞が必要です：bersih（きれい）から kebersihan（清潔さ）。"
+      },
+      "audio": "audio/id/grammar/gx-ke-an-4.mp3",
+      "tags": [
+        "文法",
+        "ke-an"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

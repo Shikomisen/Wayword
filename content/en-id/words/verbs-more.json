@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 1,
+  "id": "words-verbs-more",
+  "title": "More Verbs",
+  "description": "The verbs of real conversation in their full me- and ber- forms, the way you'd say them politely, with the shorter root that casual speech uses: helping, deciding, borrowing, meeting up, picking someone up.",
+  "items": [
+    {
+      "id": "w-membantu",
+      "indonesian": "membantu",
+      "english": "to help",
+      "pos": "verb",
+      "forms": {
+        "root": "bantu"
+      },
+      "registerNotes": "Casually bantu, or bantuin in Jakarta-style speech. Shop staff greet you with Ada yang bisa saya bantu? (Can I help you?).",
+      "audio": "audio/id/words/w-membantu.mp3",
+      "tags": [
+        "verbs",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mengerti",
+      "indonesian": "mengerti",
+      "english": "to understand",
+      "pos": "verb",
+      "forms": {
+        "root": "arti"
+      },
+      "registerNotes": "Built on arti (meaning), in its old form erti. Casually ngerti: Ngerti nggak? Paham means the same and is just as common.",
+      "pitfallNote": "A flat Saya tidak mengerti can sound blunt; Maaf, saya kurang mengerti (Sorry, I don't quite follow) is the gentle way to say it.",
+      "audio": "audio/id/words/w-mengerti.mp3",
+      "tags": [
+        "verbs",
+        "conversation"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-menjelaskan",
+      "indonesian": "menjelaskan",
+      "english": "to explain",
+      "pos": "verb",
+      "forms": {
+        "root": "jelas"
+      },
+      "registerNotes": "From jelas (clear): to make clear. Politely, Bisa dijelaskan lagi? (Could you explain that again?); casually, jelasin.",
+      "audio": "audio/id/words/w-menjelaskan.mp3",
+      "tags": [
+        "verbs",
+        "conversation"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-memutuskan",
+      "indonesian": "memutuskan",
+      "english": "to decide; to break off",
+      "pos": "verb",
+      "forms": {
+        "root": "putus"
+      },
+      "registerNotes": "Casually mutusin, which also means to break up with someone: Dia mutusin pacarnya.",
+      "pitfallNote": "The root putus on its own means broken off or split up (Kami sudah putus, We've broken up), so for deciding use the full memutuskan.",
+      "audio": "audio/id/words/w-memutuskan.mp3",
+      "tags": [
+        "verbs"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menyiapkan",
+      "indonesian": "menyiapkan",
+      "english": "to prepare, to get something ready",
+      "pos": "verb",
+      "forms": {
+        "root": "siap"
+      },
+      "registerNotes": "From siap (ready). Casually siapin: Aku siapin makan dulu, ya (I'll get the food ready first).",
+      "audio": "audio/id/words/w-menyiapkan.mp3",
+      "tags": [
+        "verbs"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menerima",
+      "indonesian": "menerima",
+      "english": "to receive, to accept",
+      "pos": "verb",
+      "forms": {
+        "root": "terima"
+      },
+      "registerNotes": "The terima of terima kasih (thank you). Casually just terima: Udah terima uangnya? (Have you got the money?)",
+      "audio": "audio/id/words/w-menerima.mp3",
+      "tags": [
+        "verbs"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-meminjam",
+      "indonesian": "meminjam",
+      "english": "to borrow",
+      "pos": "verb",
+      "forms": {
+        "root": "pinjam"
+      },
+      "registerNotes": "Casually pinjam. To lend is meminjamkan, casually pinjamin.",
+      "pitfallNote": "To ask someone to lend you something, ask to borrow it: Boleh saya pinjam payungnya? (Could I borrow your umbrella?), rather than translating 'lend me'.",
+      "audio": "audio/id/words/w-meminjam.mp3",
+      "tags": [
+        "verbs"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mengembalikan",
+      "indonesian": "mengembalikan",
+      "english": "to give back, to return (something)",
+      "pos": "verb",
+      "forms": {
+        "root": "kembali"
+      },
+      "registerNotes": "From kembali (to come back): to bring something back. Casually balikin: Besok aku balikin, ya (I'll give it back tomorrow).",
+      "audio": "audio/id/words/w-mengembalikan.mp3",
+      "tags": [
+        "verbs"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bertemu",
+      "indonesian": "bertemu",
+      "english": "to meet",
+      "pos": "verb",
+      "forms": {
+        "root": "temu"
+      },
+      "registerNotes": "Casually ketemu: Ketemu di mana? (Where shall we meet?). You meet dengan someone: bertemu dengan teman.",
+      "audio": "audio/id/words/w-bertemu.mp3",
+      "tags": [
+        "verbs",
+        "social"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-berangkat",
+      "indonesian": "berangkat",
+      "english": "to set off, to leave (on a journey)",
+      "pos": "verb",
+      "registerNotes": "The same in casual speech: Jam berapa berangkat? Friends also say jalan for setting off: Yuk, jalan.",
+      "pitfallNote": "It's the leaving, not the going: Saya berangkat jam tujuh means you set off at seven. Arriving is sampai or tiba.",
+      "audio": "audio/id/words/w-berangkat.mp3",
+      "tags": [
+        "verbs",
+        "travel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-berhenti",
+      "indonesian": "berhenti",
+      "english": "to stop; to quit",
+      "pos": "verb",
+      "forms": {
+        "root": "henti"
+      },
+      "registerNotes": "For giving something up as well as for vehicles: berhenti merokok (to quit smoking), berhenti kerja (to quit a job). To a driver, casually: Stop di sini, Pak.",
+      "audio": "audio/id/words/w-berhenti.mp3",
+      "tags": [
+        "verbs"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-menikah",
+      "indonesian": "menikah",
+      "english": "to get married, to be married",
+      "pos": "verb",
+      "forms": {
+        "root": "nikah"
+      },
+      "registerNotes": "Casually nikah: Kapan nikah? (When are you getting married?)",
+      "pitfallNote": "Sudah menikah? (Are you married?) is answered Sudah or Belum (not yet), not Tidak. Belum is the normal reply for anyone single.",
+      "cultureNote": "Marriage and children are ordinary small talk, even with people you've just met. A light Belum, doakan saja, ya (Not yet, keep me in your prayers) answers it gracefully.",
+      "audio": "audio/id/words/w-menikah.mp3",
+      "tags": [
+        "verbs",
+        "family"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-memakai",
+      "indonesian": "memakai",
+      "english": "to wear; to use",
+      "pos": "verb",
+      "forms": {
+        "root": "pakai"
+      },
+      "registerNotes": "Casually pakai, often said pake: Pakai helm, ya. Paying by card is bayar pakai kartu.",
+      "pitfallNote": "One word for both wearing and using: pakai baju (wear clothes), pakai sendok (use a spoon).",
+      "audio": "audio/id/words/w-memakai.mp3",
+      "tags": [
+        "verbs"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mencoba",
+      "indonesian": "mencoba",
+      "english": "to try; to try on, to taste",
+      "pos": "verb",
+      "forms": {
+        "root": "coba"
+      },
+      "registerNotes": "Casually coba or nyoba. Boleh saya coba? asks to try clothes on or taste something, and coba before a verb softens a request: Coba lihat ini (Have a look at this).",
+      "audio": "audio/id/words/w-mencoba.mp3",
+      "tags": [
+        "verbs"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-membuka",
+      "indonesian": "membuka",
+      "english": "to open",
+      "pos": "verb",
+      "forms": {
+        "root": "buka"
+      },
+      "registerNotes": "Casually buka, and buka on its own means open for business: Tokonya buka jam berapa?",
+      "cultureNote": "In Ramadan, buka puasa is breaking the fast at sunset. Friends and colleagues often do it together (bukber, buka bersama), and non-Muslims are welcome.",
+      "audio": "audio/id/words/w-membuka.mp3",
+      "tags": [
+        "verbs"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-menutup",
+      "indonesian": "menutup",
+      "english": "to close, to shut; to cover",
+      "pos": "verb",
+      "forms": {
+        "root": "tutup"
+      },
+      "registerNotes": "Casually tutup: Tutup pintunya, ya. A sign saying tutup means closed.",
+      "audio": "audio/id/words/w-menutup.mp3",
+      "tags": [
+        "verbs"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mengganti",
+      "indonesian": "mengganti",
+      "english": "to change, to replace; to pay back",
+      "pos": "verb",
+      "forms": {
+        "root": "ganti"
+      },
+      "registerNotes": "Casually ganti: ganti baju (change clothes), ganti bus (change buses), Nanti saya ganti uangnya (I'll pay you back).",
+      "pitfallNote": "Ganti is swapping one thing for another. When something changes by itself, it's berubah.",
+      "audio": "audio/id/words/w-mengganti.mp3",
+      "tags": [
+        "verbs"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menjemput",
+      "indonesian": "menjemput",
+      "english": "to pick up (someone), to fetch",
+      "pos": "verb",
+      "forms": {
+        "root": "jemput"
+      },
+      "registerNotes": "Casually jemput: Nanti aku jemput di stasiun (I'll pick you up at the station).",
+      "pitfallNote": "Only for collecting a person. Picking up a thing is ambil: ambil paket, ambil tas.",
+      "cultureNote": "Hosts and family often insist on picking you up from the airport or station; it's a way of making you welcome.",
+      "audio": "audio/id/words/w-menjemput.mp3",
+      "tags": [
+        "verbs",
+        "travel"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mengantar",
+      "indonesian": "mengantar",
+      "english": "to take (someone somewhere), to drop off; to deliver",
+      "pos": "verb",
+      "forms": {
+        "root": "antar"
+      },
+      "registerNotes": "Casually antar, anter or nganterin: Aku anterin pulang, ya (I'll take you home). Delivery is antar too: layanan antar.",
+      "cultureNote": "Hosts usually walk a departing guest to the door or the gate; seeing someone out properly is part of the visit.",
+      "audio": "audio/id/words/w-mengantar.mp3",
+      "tags": [
+        "verbs",
+        "travel"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-memesan",
+      "indonesian": "memesan",
+      "english": "to order; to book",
+      "pos": "verb",
+      "forms": {
+        "root": "pesan"
+      },
+      "registerNotes": "Casually pesan, often said pesen or mesen: Mau pesan apa? For rooms and tickets too: Saya sudah pesan kamar.",
+      "pitfallNote": "As a noun, pesan is a message: Ada pesan untuk saya? (Is there a message for me?)",
+      "audio": "audio/id/words/w-memesan.mp3",
+      "tags": [
+        "verbs",
+        "food"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-menabung",
+      "indonesian": "menabung",
+      "english": "to save (money)",
+      "pos": "verb",
+      "forms": {
+        "root": "tabung"
+      },
+      "registerNotes": "Casually nabung: Aku lagi nabung buat liburan (I'm saving for a holiday).",
+      "pitfallNote": "Only for money. Saving time is hemat waktu, and saving a file is menyimpan.",
+      "audio": "audio/id/words/w-menabung.mp3",
+      "tags": [
+        "verbs",
+        "money"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-berubah",
+      "indonesian": "berubah",
+      "english": "to change (by itself)",
+      "pos": "verb",
+      "forms": {
+        "root": "ubah"
+      },
+      "registerNotes": "Something changes on its own: Jakarta sudah banyak berubah. Changing something yourself is mengubah (mengubah rencana, to change the plan); swapping one thing for another is ganti.",
+      "audio": "audio/id/words/w-berubah.mp3",
+      "tags": [
+        "verbs"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bertanya",
+      "indonesian": "bertanya",
+      "english": "to ask (a question)",
+      "pos": "verb",
+      "forms": {
+        "root": "tanya"
+      },
+      "registerNotes": "Permisi, mau tanya… (Excuse me, can I ask…) is the everyday polite opener. Casually tanya or nanya.",
+      "pitfallNote": "Asking for something is minta, not bertanya: Boleh minta air? (Could I have some water?)",
+      "audio": "audio/id/words/w-bertanya.mp3",
+      "tags": [
+        "verbs",
+        "conversation"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mengajak",
+      "indonesian": "mengajak",
+      "english": "to invite (someone along), to ask someone to come",
+      "pos": "verb",
+      "forms": {
+        "root": "ajak"
+      },
+      "registerNotes": "Casually ajak or ngajak: Dia ngajak saya makan (She asked me out for a meal).",
+      "cultureNote": "Whoever does the inviting is generally expected to pay: yang ngajak, yang bayar, as people say.",
+      "audio": "audio/id/words/w-mengajak.mp3",
+      "tags": [
+        "verbs",
+        "social"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menghubungi",
+      "indonesian": "menghubungi",
+      "english": "to contact, to get in touch with",
+      "pos": "verb",
+      "forms": {
+        "root": "hubung"
+      },
+      "registerNotes": "Polite and a little formal: Nanti saya hubungi (I'll be in touch). Casually people say kontak, chat or WA: Nanti aku WA, ya.",
+      "cultureNote": "WhatsApp is how nearly everyone keeps in touch, from friends to landlords and small businesses, so nomor WA is the number to ask for.",
+      "audio": "audio/id/words/w-menghubungi.mp3",
+      "tags": [
+        "verbs",
+        "social"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mengobrol",
+      "indonesian": "mengobrol",
+      "english": "to chat, to have a chat",
+      "pos": "verb",
+      "forms": {
+        "root": "obrol"
+      },
+      "registerNotes": "Mostly heard as ngobrol, which is fine in all but formal settings: Kami ngobrol sampai malam (We chatted till late).",
+      "audio": "audio/id/words/w-mengobrol.mp3",
+      "tags": [
+        "verbs",
+        "social"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menolak",
+      "indonesian": "menolak",
+      "english": "to refuse, to turn down",
+      "pos": "verb",
+      "forms": {
+        "root": "tolak"
+      },
+      "registerNotes": "Casually nolak: Dia nolak tawarannya (He turned the offer down).",
+      "cultureNote": "A blunt no can seem rude, so people turn things down softly: Lain kali, ya (Another time) or Maaf, belum bisa (Sorry, I can't just now).",
+      "audio": "audio/id/words/w-menolak.mp3",
+      "tags": [
+        "verbs",
+        "social"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menelepon",
+      "indonesian": "menelepon",
+      "english": "to phone, to call",
+      "pos": "verb",
+      "forms": {
+        "root": "telepon"
+      },
+      "registerNotes": "Casually telepon or nelpon: Nanti aku telepon, ya. Most calls are made on WhatsApp.",
+      "audio": "audio/id/words/w-menelepon.mp3",
+      "tags": [
+        "verbs",
+        "social"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

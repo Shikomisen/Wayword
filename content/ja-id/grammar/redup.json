@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-redup",
+  "connector": "jalan-jalan, pelan-pelan",
+  "gloss": "単語を2回くり返す",
+  "title": "重ね言葉 — 2回くり返す",
+  "pattern": "単語-単語: sayur-sayuran (いろいろな) · jalan-jalan, lihat-lihat (気ままに) · pelan-pelan, baik-baik (どのように)",
+  "explanation": "単語を2回くり返して（ハイフンでつなぎます）言うと、ただの複数ではなく、意味の色合いが変わります。日本語の「いろいろ」「ぶらぶら」のような重ね言葉に少し似ています。名詞をくり返して -an を付けると「いろいろな〜」：sayur-sayuran（いろいろな野菜）、buah-buahan（いろいろな果物）。動詞をくり返すと、のんびりした、目的のない動きになります：jalan-jalan（出かける、ぶらぶらする）、lihat-lihat（ちょっと見て回る）、duduk-duduk（のんびり座っている）。形容詞をくり返すと、やり方を表します：pelan-pelan（ゆっくり、ていねいに）、cepat-cepat（急いで）、baik-baik（ちゃんと、大事に）。動詞のくり返しに -an を付けると「〜し合う」にもなり、追いかけっこをしている子どもたちは kejar-kejaran。",
+  "natural": "お店の人に「見ているだけです」と言うなら Lihat-lihat saja。Mau ke mana?（どこ行くの？）と聞かれた時の決まり文句は Jalan-jalan saja（ちょっとぶらぶら）で、日本語の「ちょっとそこまで」のような返事です。Pelan-pelan, ya と言えば、命令口調にならずに「ゆっくりね」と頼めます。",
+  "stiff": "ただの複数なら、くり返しは要りません。日本語の「本」と同じで buku は1冊でも何冊でもよく、数や banyak の後もそのまま（tiga buku、banyak orang）。くり返した形しかない言葉もあり（kupu-kupu、チョウ）、意味が変わる言葉もあります：mata-mata は「目」ではなく「スパイ」。",
+  "examples": [
+    {
+      "id": "gx-redup-1",
+      "indonesian": "Sore ini kami mau jalan-jalan ke pantai.",
+      "japanese": "今日の午後は、ビーチへ遊びに行きます。",
+      "chunks": [
+        {
+          "t": "Sore ini ",
+          "w": "w-sore"
+        },
+        {
+          "t": "kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "jalan-jalan ",
+          "w": "w-jalan-jalan"
+        },
+        {
+          "t": "ke pantai.",
+          "w": "w-pantai"
+        }
+      ],
+      "gap": {
+        "before": "Sore ini kami mau ",
+        "answer": "jalan-jalan",
+        "after": " ke pantai.",
+        "options": [
+          "jalan-jalan",
+          "jalan",
+          "berjalan"
+        ],
+        "why": "遊びに出かけるのは jalan-jalan。jalan や berjalan だけだと、ただ「歩く」です。"
+      },
+      "audio": "audio/id/grammar/gx-redup-1.mp3",
+      "tags": [
+        "文法",
+        "くり返し"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-redup-2",
+      "indonesian": "Tidak usah buru-buru. Pelan-pelan saja.",
+      "japanese": "急がなくていいですよ。ゆっくりで大丈夫。",
+      "chunks": [
+        {
+          "t": "Tidak usah ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "buru-buru. "
+        },
+        {
+          "t": "Pelan-pelan ",
+          "w": "w-pelan"
+        },
+        {
+          "t": "saja."
+        }
+      ],
+      "gap": {
+        "before": "Tidak usah buru-buru. ",
+        "answer": "Pelan-pelan",
+        "after": " saja.",
+        "options": [
+          "Pelan-pelan",
+          "Cepat-cepat",
+          "Lambat"
+        ],
+        "why": "くり返した pelan-pelan は「ゆっくり」というやり方。Cepat-cepat だと「急いで」になります。"
+      },
+      "registerNotes": "Buru-buru（急いで、慌てて）も重ね言葉です。待たせてごめんなさいと謝る人や、小銭を探してもたもたしている人にかける一言。",
+      "audio": "audio/id/grammar/gx-redup-2.mp3",
+      "tags": [
+        "文法",
+        "くり返し"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-redup-3",
+      "indonesian": "Biasanya kami beli sayur-sayuran dan buah-buahan di pasar.",
+      "japanese": "いつもは市場で、いろいろな野菜や果物を買います。",
+      "chunks": [
+        {
+          "t": "Biasanya ",
+          "w": "w-biasanya"
+        },
+        {
+          "t": "kami beli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "sayur-sayuran ",
+          "w": "w-sayur"
+        },
+        {
+          "t": "dan buah-buahan ",
+          "w": "w-buah"
+        },
+        {
+          "t": "di pasar.",
+          "w": "w-pasar"
+        }
+      ],
+      "gap": {
+        "before": "Biasanya kami beli sayur-sayuran dan ",
+        "answer": "buah-buahan",
+        "after": " di pasar.",
+        "options": [
+          "buah-buahan",
+          "buah-buah",
+          "buahan"
+        ],
+        "why": "「いろいろな果物」は、sayur-sayuran と同じく、くり返して -an を付けます。"
+      },
+      "audio": "audio/id/grammar/gx-redup-3.mp3",
+      "tags": [
+        "文法",
+        "くり返し"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-redup-4",
+      "indonesian": "Simpan paspornya baik-baik, ya.",
+      "japanese": "パスポート、ちゃんとしまっておいてね。",
+      "chunks": [
+        {
+          "t": "Simpan "
+        },
+        {
+          "t": "paspornya ",
+          "w": "w-paspor"
+        },
+        {
+          "t": "baik-baik, "
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "gap": {
+        "before": "Simpan paspornya ",
+        "answer": "baik-baik",
+        "after": ", ya.",
+        "options": [
+          "baik-baik",
+          "baik",
+          "bagus-bagus"
+        ],
+        "why": "動詞の後の baik-baik は「ちゃんと、大事に」というやり方。Baik だけだと「よい」という性質で、やり方は表せません。"
+      },
+      "registerNotes": "ホストや友達が優しく言う一言。Jaga diri baik-baik, ya（体に気をつけてね）は、旅立つ人への温かい別れのあいさつです。",
+      "audio": "audio/id/grammar/gx-redup-4.mp3",
+      "tags": [
+        "文法",
+        "くり返し"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

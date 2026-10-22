@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "id": "opinions",
+  "title": "Pendapat & setuju",
+  "order": 14,
+  "description": "Menyampaikan pendapat, setuju, dan tidak setuju dengan halus: cara Jepang, yang melunakkan hampir semuanya.",
+  "phrases": [
+    {
+      "id": "opi-01",
+      "japanese": "私もそう思います",
+      "furigana": [
+        {
+          "b": "私",
+          "r": "わたし"
+        },
+        {
+          "b": "もそう"
+        },
+        {
+          "b": "思",
+          "r": "おも"
+        },
+        {
+          "b": "います"
+        }
+      ],
+      "romaji": "watashi mo sō omoimasu",
+      "indonesian": "Saya juga berpikir begitu.",
+      "registerNotes": "Cara mudah untuk setuju. Dengan teman: 私もそう思う, atau cukup だよね.",
+      "audio": "audio/ja/opi-01.mp3",
+      "tags": [
+        "setuju",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-02",
+      "japanese": "どう思いますか",
+      "furigana": [
+        {
+          "b": "どう"
+        },
+        {
+          "b": "思",
+          "r": "おも"
+        },
+        {
+          "b": "いますか"
+        }
+      ],
+      "romaji": "dō omoimasu ka",
+      "indonesian": "Bagaimana menurut Anda?",
+      "registerNotes": "Meminta pendapat. Orang Jepang sering menunggu ditanya, jadi bertanya membuat percakapan tetap seimbang.",
+      "audio": "audio/ja/opi-02.mp3",
+      "tags": [
+        "bertanya",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-03",
+      "japanese": "私はちょっと違うと思います",
+      "furigana": [
+        {
+          "b": "私",
+          "r": "わたし"
+        },
+        {
+          "b": "はちょっと"
+        },
+        {
+          "b": "違",
+          "r": "ちが"
+        },
+        {
+          "b": "うと"
+        },
+        {
+          "b": "思",
+          "r": "おも"
+        },
+        {
+          "b": "います"
+        }
+      ],
+      "romaji": "watashi wa chotto chigau to omoimasu",
+      "indonesian": "Menurut saya agak berbeda.",
+      "registerNotes": "Tidak setuju dengan halus: ちょっと dan と思います sama-sama melunakkan. と思います di akhir kalimat sama dengan “menurut saya” di awal. 違います yang datar bisa terdengar seperti “kamu salah”.",
+      "audio": "audio/ja/opi-03.mp3",
+      "tags": [
+        "tidak setuju"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-04",
+      "japanese": "確かにそうですね。でも…",
+      "furigana": [
+        {
+          "b": "確",
+          "r": "たし"
+        },
+        {
+          "b": "かにそうですね。でも…"
+        }
+      ],
+      "romaji": "tashika ni sō desu ne, demo",
+      "indonesian": "Memang benar. Tapi…",
+      "registerNotes": "Setujui dulu, lalu sampaikan pandanganmu: cara paling halus untuk tidak setuju dalam bahasa Jepang.",
+      "audio": "audio/ja/opi-04.mp3",
+      "tags": [
+        "tidak setuju"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-05",
+      "japanese": "それはいい考えですね",
+      "furigana": [
+        {
+          "b": "それはいい"
+        },
+        {
+          "b": "考",
+          "r": "かんが"
+        },
+        {
+          "b": "えですね"
+        }
+      ],
+      "romaji": "sore wa ii kangae desu ne",
+      "indonesian": "Itu ide yang bagus.",
+      "registerNotes": "Memuji sebuah usulan. 考え adalah ide atau cara berpikir. いい考え = “ide bagus”, tapi kata sifatnya di depan, kebalikan dari bahasa Indonesia.",
+      "audio": "audio/ja/opi-05.mp3",
+      "tags": [
+        "setuju"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-06",
+      "register": "casual",
+      "japanese": "どっちでもいいよ",
+      "furigana": [
+        {
+          "b": "どっちでもいいよ"
+        }
+      ],
+      "romaji": "dotchi demo ii yo",
+      "indonesian": "Yang mana aja boleh.",
+      "polite": {
+        "japanese": "どちらでもいいです",
+        "furigana": [
+          {
+            "b": "どちらでもいいです"
+          }
+        ],
+        "romaji": "dochira demo ii desu",
+        "audio": "audio/ja/opi-06-polite.mp3"
+      },
+      "registerNotes": "Santai, tapi kalau terlalu sering bisa terdengar tidak peduli, seperti “terserah” yang kebanyakan. Sebutkan pilihanmu kalau ada.",
+      "audio": "audio/ja/opi-06.mp3",
+      "tags": [
+        "memilih"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-07",
+      "japanese": "個人的には、こっちのほうが好きです",
+      "furigana": [
+        {
+          "b": "個人的",
+          "r": "こじんてき"
+        },
+        {
+          "b": "には、こっちのほうが"
+        },
+        {
+          "b": "好",
+          "r": "す"
+        },
+        {
+          "b": "きです"
+        }
+      ],
+      "romaji": "kojinteki ni wa, kotchi no hō ga suki desu",
+      "indonesian": "Kalau saya pribadi, saya lebih suka yang ini.",
+      "registerNotes": "個人的には (secara pribadi) membingkainya sebagai selera pribadi, jadi enak didengar.",
+      "audio": "audio/ja/opi-07.mp3",
+      "tags": [
+        "memilih"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-08",
+      "register": "casual",
+      "japanese": "どうかな",
+      "furigana": [
+        {
+          "b": "どうかな"
+        }
+      ],
+      "romaji": "dō ka na",
+      "indonesian": "Hmm, gimana ya.",
+      "polite": {
+        "japanese": "どうでしょうね",
+        "furigana": [
+          {
+            "b": "どうでしょうね"
+          }
+        ],
+        "romaji": "dō deshō ne",
+        "audio": "audio/ja/opi-08-polite.mp3"
+      },
+      "registerNotes": "Keraguan yang diucapkan dengan lembut. どうでしょうね yang sopan sering menjadi cara bahasa Jepang bilang “saya tidak setuju”, mirip “gimana ya…” dalam bahasa Indonesia.",
+      "audio": "audio/ja/opi-08.mp3",
+      "tags": [
+        "tidak setuju"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-09",
+      "japanese": "賛成です",
+      "furigana": [
+        {
+          "b": "賛成",
+          "r": "さんせい"
+        },
+        {
+          "b": "です"
+        }
+      ],
+      "romaji": "sansei desu",
+      "indonesian": "Saya setuju.",
+      "registerNotes": "Menyetujui rencana atau usulan. Lawannya 反対です, yang terdengar keras: lunakkan dengan ちょっと.",
+      "audio": "audio/ja/opi-09.mp3",
+      "tags": [
+        "setuju"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-10",
+      "japanese": "場合によりますね",
+      "furigana": [
+        {
+          "b": "場合",
+          "r": "ばあい"
+        },
+        {
+          "b": "によりますね"
+        }
+      ],
+      "romaji": "baai ni yorimasu ne",
+      "indonesian": "Tergantung, ya.",
+      "registerNotes": "Jawaban yang praktis dan jujur tanpa harus memilih. Dengan teman: 場合によるね, atau 時による.",
+      "audio": "audio/ja/opi-10.mp3",
+      "tags": [
+        "memilih"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-11",
+      "japanese": "気持ちはわかります",
+      "furigana": [
+        {
+          "b": "気持",
+          "r": "きも"
+        },
+        {
+          "b": "ちはわかります"
+        }
+      ],
+      "romaji": "kimochi wa wakarimasu",
+      "indonesian": "Saya mengerti perasaan Anda.",
+      "registerNotes": "Simpati dulu, dan sering diikuti “tapi”: menunjukkan kamu sudah mendengarkan sebelum tidak setuju.",
+      "audio": "audio/ja/opi-11.mp3",
+      "tags": [
+        "tidak setuju",
+        "simpati"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-12",
+      "japanese": "本当におすすめです",
+      "furigana": [
+        {
+          "b": "本当",
+          "r": "ほんとう"
+        },
+        {
+          "b": "におすすめです"
+        }
+      ],
+      "romaji": "hontō ni osusume desu",
+      "indonesian": "Saya sangat merekomendasikannya.",
+      "registerNotes": "Merekomendasikan tempat, makanan, atau film. Dengan teman: 絶対おすすめ！, seperti “wajib coba!”.",
+      "audio": "audio/ja/opi-12.mp3",
+      "tags": [
+        "merekomendasikan"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

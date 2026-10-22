@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "id": "pharmacy",
+  "title": "薬局で薬を買う",
+  "category": "emergency",
+  "setting": "ジョグジャカルタのにぎやかな通りにある小さな薬局（apotek）。昨夜からお腹の調子がよくありません。カウンターには白衣を着た若い女性がいます。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "pharmacist",
+      "indonesian": "Sore, Kak. Ada yang bisa dibantu?",
+      "japanese": "こんにちは。どうされましたか？",
+      "audio": "audio/id/scenario/pharmacy-n1.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Saya sakit perut, Mbak. Sejak tadi malam.",
+          "japanese": "お腹が痛いんです。昨夜からです。",
+          "feedback": "どこが悪いのか、いつからなのか、具体的ではっきりしています。カウンターにいる若い女性には Mbak（お姉さん）がぴったりです。",
+          "next": "n3"
+        },
+        {
+          "phraseId": "eme-05",
+          "quality": "awkward",
+          "feedback": "その通りですが、漠然としています。薬剤師が知りたいのはどんな具合か。Saya sakit perut（お腹が痛いです）のように具体的に言いましょう。",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Saya punya sakit perut.",
+          "japanese": "腹痛を持っています。",
+          "feedback": "punya は「持っている」で、痛みには使いません。日本語の「お腹が痛い」と同じように、Saya sakit perut か Perut saya sakit と言いましょう。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "pharmacist",
+      "indonesian": "Sakit apa, Kak? Sakitnya di mana?",
+      "japanese": "どうしました？どこが痛いですか？",
+      "audio": "audio/id/scenario/pharmacy-n2.mp3",
+      "options": [
+        {
+          "phraseId": "eme-08",
+          "quality": "good",
+          "feedback": "痛いところを指させば、どこでも通じます。その部分の言葉も教えてくれるでしょう。",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Perut saya sakit, Mbak.",
+          "japanese": "お腹が痛いです。",
+          "feedback": "Perut saya sakit（私のお腹が痛い）は saya sakit perut と同じ意味です。日本語の「お腹が痛い」に近い語順です。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "pharmacist",
+      "indonesian": "Sakit perut, ya. Diare juga?",
+      "japanese": "腹痛ですね。下痢もありますか？",
+      "audio": "audio/id/scenario/pharmacy-n3.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Iya, Mbak. Sudah tiga kali.",
+          "japanese": "はい。もう3回です。",
+          "feedback": "回数を伝えると、合う薬を選びやすくなります。kali は「〜回」。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Tidak, Mbak. Hanya sakit perut.",
+          "japanese": "いいえ。お腹が痛いだけです。",
+          "feedback": "hanya（〜だけ）で症状を絞り込めます。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "pharmacist",
+      "indonesian": "Ada alergi obat?",
+      "japanese": "薬のアレルギーはありますか？",
+      "audio": "audio/id/scenario/pharmacy-n4.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Tidak ada, Mbak.",
+          "japanese": "ありません。",
+          "feedback": "Ada …? の質問には、tidak ada（ありません）と答えるのが自然です。",
+          "next": "n5"
+        },
+        {
+          "phraseId": "doc-11",
+          "quality": "good",
+          "feedback": "必ず伝えておきたいことです。重いアレルギーなら、スマホにも書いておきましょう。",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Bukan, Mbak.",
+          "japanese": "違います。",
+          "feedback": "bukan は名詞を打ち消して「それではない」と言う言葉です。「いいえ」のつもりで使いがちですが、持っていないと言うなら tidak ada です。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "pharmacist",
+      "indonesian": "Ini obatnya, Kak. Diminum tiga kali sehari, satu tablet, sesudah makan. Banyak minum air putih juga, ya.",
+      "japanese": "お薬です。1日3回、1錠ずつ、食後に飲んでください。お水もたくさん飲んでくださいね。",
+      "audio": "audio/id/scenario/pharmacy-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Tiga kali sehari, sesudah makan. Baik, Mbak.",
+          "japanese": "1日3回、食後ですね。わかりました。",
+          "feedback": "飲み方を復唱するのが、間違えないいちばん確実な方法です。",
+          "next": "n6"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Sebelum makan, ya?",
+          "japanese": "食前ですか？",
+          "feedback": "薬剤師は sesudah makan（食後）と言いました。sebelum は「〜の前」で、逆の意味です。",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya ambil obat ini tiga kali sehari, ya?",
+          "japanese": "この薬を1日3回取るんですね？",
+          "feedback": "ambil は「取る・取りに行く」です。日本語と同じく、インドネシア語でも薬は錠剤でも「飲む」もの。minum obat と言います。",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "pharmacist",
+      "indonesian": "Semuanya tiga puluh lima ribu, Kak.",
+      "japanese": "全部で3万5千ルピアです。",
+      "audio": "audio/id/scenario/pharmacy-n6.mp3",
+      "options": [
+        {
+          "phraseId": "num-10",
+          "quality": "good",
+          "feedback": "ちょうどの金額を渡せば、おつりを探す手間がかかりません。",
+          "next": "n7"
+        },
+        {
+          "phraseId": "sho-11",
+          "quality": "good",
+          "feedback": "チェーンの薬局ならたいていカードが使えますが、小さな店は現金のみのことも。先に聞きましょう。",
+          "next": "n7"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Tiga ribu lima ratus, ya?",
+          "japanese": "3千5百ですか？",
+          "feedback": "薬剤師は tiga puluh lima ribu（3万5千）と言いました。puluh は「十」、ratus は「百」。インドネシア語には「万」がなく、35 × ribu（千）で数えます。",
+          "next": "n7"
+        }
+      ]
+    },
+    "n7": {
+      "speaker": "pharmacist",
+      "indonesian": "Terima kasih. Semoga cepat sembuh, Kak.",
+      "japanese": "ありがとうございました。お大事に。",
+      "audio": "audio/id/scenario/pharmacy-n7.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Amin. Terima kasih, Mbak.",
+          "japanese": "そうなりますように。ありがとうございます。",
+          "feedback": "semoga（〜しますように）で始まる願いの言葉には、信仰に関係なく amin と答えるのがふつうです。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "good",
+          "feedback": "温かい言葉へのお礼として、シンプルで正解です。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "japanese": "解決。apotek では多くの薬を処方箋なしで買えますが、症状は自分で説明します。sakit perut、diare、demam、それにいつからか。インドネシア語でも薬は「飲む」もの（minum obat）で、飲み方は tiga kali sehari, sesudah makan のように言われます。2、3日たってもよくならなければ、医者に行きましょう。",
+      "end": true,
+      "options": []
+    }
+  }
+}

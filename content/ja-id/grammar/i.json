@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-i",
+  "connector": "-i",
+  "gloss": "人や場所に〜する",
+  "title": "-i",
+  "pattern": "語根 + -i + 人・場所: temani saya, kunjungi nenek · 完全な形: mengunjungi, dikunjungi",
+  "explanation": "-i は動作を人や場所に向けます。その人や場所はすぐ後に来ます：temani saya（いっしょにいて。teman＝友達 から）、ajari saya（私に教えて）、kunjungi nenek（おばあちゃんを訪ねる）、datangi kantornya（その人の会社に出向く）。日本語の「〜に」のような助詞はいらず、-i が相手を直接つなぎます。-kan と比べてみましょう。-kan の後に来るのは、動かすもの・作るもの・渡すものです：ajarkan bahasa Inggris は「英語を教える」、ajari saya は「私に教える」。hubungkan は「つなぐ」、hubungi は「（人に）連絡する」。-kan と同じく、お願いでは単独で使い（Bisa temani saya?）、長い文では me- や di- が付きます：mengunjungi、dikunjungi。ジャカルタ風のくだけた話し方では、-i も -kan も -in になります：temenin、ajarin。",
+  "natural": "いっしょに、または自分のために何かしてほしいと頼む時（Bisa temani saya? Bisa ajari saya?）や、saya を前に置いたていねいな約束に：Nanti saya hubungi（後ほどご連絡します）。",
+  "stiff": "よくあるまちがいは -i と -kan の取りちがえです。後ろに来るのが教える相手・訪ねる相手・付き添う相手（人や場所）なら -i、教える内容・送るもの・動かすもの（「もの」）なら -kan。Temankan saya は標準的なインドネシア語ではありません。temani、友達同士なら temenin です。",
+  "examples": [
+    {
+      "id": "gx-i-1",
+      "indonesian": "Bisa temani saya ke dokter?",
+      "japanese": "病院までいっしょに来てもらえますか？",
+      "chunks": [
+        {
+          "t": "Bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "temani ",
+          "w": "w-teman"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "ke dokter?",
+          "w": "w-dokter"
+        }
+      ],
+      "gap": {
+        "before": "Bisa ",
+        "answer": "temani",
+        "after": " saya ke dokter?",
+        "options": [
+          "temani",
+          "temankan",
+          "berteman"
+        ],
+        "why": "人に付き添うのは teman ＋ -i で、その人がすぐ後に来ます。"
+      },
+      "audio": "audio/id/grammar/gx-i-1.mp3",
+      "tags": [
+        "文法",
+        "i"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-i-2",
+      "indonesian": "Bisa ajari saya masak?",
+      "japanese": "料理を教えてもらえますか？",
+      "chunks": [
+        {
+          "t": "Bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "ajari "
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "masak?",
+          "w": "w-masak"
+        }
+      ],
+      "gap": {
+        "before": "Bisa ",
+        "answer": "ajari",
+        "after": " saya masak?",
+        "options": [
+          "ajari",
+          "ajarkan",
+          "belajar"
+        ],
+        "why": "教わる人が -i の後に来ます：ajari saya。ajarkan は教える内容（「〜を」のもの）と使います。"
+      },
+      "audio": "audio/id/grammar/gx-i-2.mp3",
+      "tags": [
+        "文法",
+        "i"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-i-3",
+      "indonesian": "Kami sering mengunjungi nenek di desa.",
+      "japanese": "よく田舎のおばあちゃんを訪ねます。",
+      "chunks": [
+        {
+          "t": "Kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "sering ",
+          "w": "w-sering"
+        },
+        {
+          "t": "mengunjungi "
+        },
+        {
+          "t": "nenek ",
+          "w": "w-nenek"
+        },
+        {
+          "t": "di desa.",
+          "w": "w-desa"
+        }
+      ],
+      "gap": {
+        "before": "Kami sering ",
+        "answer": "mengunjungi",
+        "after": " nenek di desa.",
+        "options": [
+          "mengunjungi",
+          "berkunjung",
+          "dikunjungi"
+        ],
+        "why": "人を直接訪ねるのは me- ＋ kunjung ＋ -i で、相手がすぐ後に来ます。berkunjung は目的語をとらない ber- の動詞なので ke が必要です（berkunjung ke rumah nenek）。"
+      },
+      "audio": "audio/id/grammar/gx-i-3.mp3",
+      "tags": [
+        "文法",
+        "i"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-i-4",
+      "indonesian": "Nanti saya hubungi lagi, ya.",
+      "japanese": "また後で連絡しますね。",
+      "chunks": [
+        {
+          "t": "Nanti ",
+          "w": "w-nanti"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "hubungi ",
+          "w": "w-menghubungi"
+        },
+        {
+          "t": "lagi, ya."
+        }
+      ],
+      "gap": {
+        "before": "Nanti saya ",
+        "answer": "hubungi",
+        "after": " lagi, ya.",
+        "options": [
+          "hubungi",
+          "hubungkan",
+          "berhubungan"
+        ],
+        "why": "人に連絡するのは hubung ＋ -i。hubungkan は「ものとものをつなぐ」です。"
+      },
+      "audio": "audio/id/grammar/gx-i-4.mp3",
+      "tags": [
+        "文法",
+        "i"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

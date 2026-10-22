@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-redup",
+  "connector": "jalan-jalan, pelan-pelan",
+  "gloss": "saying a word twice",
+  "title": "Saying it twice",
+  "pattern": "word-word: sayur-sayuran (all kinds of) · jalan-jalan, lihat-lihat (just for fun) · pelan-pelan, baik-baik (how)",
+  "explanation": "Saying a word twice, written with a hyphen, changes its flavour rather than simply making it plural. Some nouns, doubled and with -an added, mean all kinds of: sayur-sayuran (all sorts of vegetables), buah-buahan (fruit of every kind). With verbs it makes the activity relaxed and aimless: jalan-jalan (go out, wander around), lihat-lihat (just look around), duduk-duduk (sit around). Describing words said twice tell you how something is done: pelan-pelan (slowly, carefully), cepat-cepat (quickly, in a hurry), baik-baik (properly, well). With -an, a doubled verb can also mean doing it to each other: children chasing each other are playing kejar-kejaran.",
+  "natural": "Lihat-lihat saja is how you tell a shopkeeper you're just browsing, and Jalan-jalan saja (just out and about) is the stock answer to Mau ke mana? Pelan-pelan, ya asks someone to slow down without sounding bossy.",
+  "stiff": "Doubling isn't needed for a plain plural: buku is book or books, and after a number or banyak the noun stays single (tiga buku, banyak orang). Some words only exist doubled, like kupu-kupu (butterfly), and a few change meaning: mata-mata is a spy, not eyes.",
+  "examples": [
+    {
+      "id": "gx-redup-1",
+      "indonesian": "Sore ini kami mau jalan-jalan ke pantai.",
+      "english": "We're heading out to the beach this afternoon.",
+      "chunks": [
+        {
+          "t": "Sore ini ",
+          "w": "w-sore"
+        },
+        {
+          "t": "kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "jalan-jalan ",
+          "w": "w-jalan-jalan"
+        },
+        {
+          "t": "ke pantai.",
+          "w": "w-pantai"
+        }
+      ],
+      "gap": {
+        "before": "Sore ini kami mau ",
+        "answer": "jalan-jalan",
+        "after": " ke pantai.",
+        "options": [
+          "jalan-jalan",
+          "jalan",
+          "berjalan"
+        ],
+        "why": "Going out for pleasure is jalan-jalan; jalan or berjalan on its own is just walking."
+      },
+      "audio": "audio/id/grammar/gx-redup-1.mp3",
+      "tags": [
+        "grammar",
+        "redup"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-redup-2",
+      "indonesian": "Tidak usah buru-buru. Pelan-pelan saja.",
+      "english": "There's no rush. Take your time.",
+      "chunks": [
+        {
+          "t": "Tidak usah ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "buru-buru. "
+        },
+        {
+          "t": "Pelan-pelan ",
+          "w": "w-pelan"
+        },
+        {
+          "t": "saja."
+        }
+      ],
+      "gap": {
+        "before": "Tidak usah buru-buru. ",
+        "answer": "Pelan-pelan",
+        "after": " saja.",
+        "options": [
+          "Pelan-pelan",
+          "Cepat-cepat",
+          "Lambat"
+        ],
+        "why": "Doubled, pelan says how to do it: slowly, no hurry. Cepat-cepat would be 'hurry up'."
+      },
+      "registerNotes": "Buru-buru (in a rush) is another doubled word. Said to someone apologising for keeping you waiting, or fumbling for change.",
+      "audio": "audio/id/grammar/gx-redup-2.mp3",
+      "tags": [
+        "grammar",
+        "redup"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-redup-3",
+      "indonesian": "Biasanya kami beli sayur-sayuran dan buah-buahan di pasar.",
+      "english": "We usually buy all kinds of vegetables and fruit at the market.",
+      "chunks": [
+        {
+          "t": "Biasanya ",
+          "w": "w-biasanya"
+        },
+        {
+          "t": "kami beli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "sayur-sayuran ",
+          "w": "w-sayur"
+        },
+        {
+          "t": "dan buah-buahan ",
+          "w": "w-buah"
+        },
+        {
+          "t": "di pasar.",
+          "w": "w-pasar"
+        }
+      ],
+      "gap": {
+        "before": "Biasanya kami beli sayur-sayuran dan ",
+        "answer": "buah-buahan",
+        "after": " di pasar.",
+        "options": [
+          "buah-buahan",
+          "buah-buah",
+          "buahan"
+        ],
+        "why": "'All kinds of fruit' doubles the word and adds -an, just like sayur-sayuran."
+      },
+      "audio": "audio/id/grammar/gx-redup-3.mp3",
+      "tags": [
+        "grammar",
+        "redup"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-redup-4",
+      "indonesian": "Simpan paspornya baik-baik, ya.",
+      "english": "Keep your passport somewhere safe, won't you?",
+      "chunks": [
+        {
+          "t": "Simpan "
+        },
+        {
+          "t": "paspornya ",
+          "w": "w-paspor"
+        },
+        {
+          "t": "baik-baik, "
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "gap": {
+        "before": "Simpan paspornya ",
+        "answer": "baik-baik",
+        "after": ", ya.",
+        "options": [
+          "baik-baik",
+          "baik",
+          "bagus-bagus"
+        ],
+        "why": "After a verb, baik-baik says how: carefully, properly. Baik on its own describes something; it doesn't say how."
+      },
+      "registerNotes": "Said kindly by a host or a friend. Jaga diri baik-baik, ya (look after yourself) is a warm goodbye to someone setting off.",
+      "audio": "audio/id/grammar/gx-redup-4.mp3",
+      "tags": [
+        "grammar",
+        "redup"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

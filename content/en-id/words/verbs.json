@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "id": "words-verbs",
+  "title": "Everyday Verbs",
+  "description": "The commonest verbs, in the short form people say out loud. They never change for who or when: saya makan, dia makan, kemarin kami makan.",
+  "items": [
+    {
+      "id": "w-makan",
+      "indonesian": "makan",
+      "english": "to eat; to have a meal",
+      "pos": "verb",
+      "cultureNote": "Sudah makan? (Have you eaten?) is a friendly greeting, not an invitation. Sudah (I have) or Belum (not yet) are both fine answers.",
+      "audio": "audio/id/words/w-makan.mp3",
+      "tags": [
+        "daily life",
+        "food"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-minum",
+      "indonesian": "minum",
+      "english": "to drink",
+      "pos": "verb",
+      "registerNotes": "Also for taking medicine: minum obat. Mau minum apa? (What would you like to drink?) is what a server or a host asks.",
+      "audio": "audio/id/words/w-minum.mp3",
+      "tags": [
+        "daily life",
+        "food"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pergi",
+      "indonesian": "pergi",
+      "english": "to go; to go out, leave",
+      "pos": "verb",
+      "registerNotes": "Before ke (to), pergi is often left out: Saya mau ke pasar (I'm going to the market). On its own it means to go out or leave: Dia sudah pergi (She's gone out).",
+      "audio": "audio/id/words/w-pergi.mp3",
+      "tags": [
+        "movement",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-datang",
+      "indonesian": "datang",
+      "english": "to come; to arrive",
+      "pos": "verb",
+      "registerNotes": "Kapan datang? asks a visitor when they arrived. Terima kasih sudah datang is 'Thanks for coming'.",
+      "audio": "audio/id/words/w-datang.mp3",
+      "tags": [
+        "movement"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pulang",
+      "indonesian": "pulang",
+      "english": "to go home, come home; to go back",
+      "pos": "verb",
+      "registerNotes": "Saya pulang dulu, ya (I'll head home now) is a common way to take your leave.",
+      "pitfallNote": "Use pulang, not pergi ke rumah, for going home. It also covers going back to your own country: pulang ke Selandia Baru.",
+      "audio": "audio/id/words/w-pulang.mp3",
+      "tags": [
+        "movement",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tidur",
+      "indonesian": "tidur",
+      "english": "to sleep; to go to bed",
+      "pos": "verb",
+      "registerNotes": "Tidur siang is an afternoon nap, common in the heat of the day. Selamat tidur is 'good night' to someone going to bed.",
+      "audio": "audio/id/words/w-tidur.mp3",
+      "tags": [
+        "daily life"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bangun",
+      "indonesian": "bangun",
+      "english": "to wake up, get up",
+      "pos": "verb",
+      "registerNotes": "Jam berapa bangun? asks what time someone gets up. With me-, membangun means to build.",
+      "audio": "audio/id/words/w-bangun.mp3",
+      "tags": [
+        "daily life"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mandi",
+      "indonesian": "mandi",
+      "english": "to bathe, have a shower, wash",
+      "pos": "verb",
+      "cultureNote": "Most Indonesians mandi twice a day, morning and late afternoon, often by scooping water over themselves with a dipper (gayung) from a tank (bak mandi).",
+      "audio": "audio/id/words/w-mandi.mp3",
+      "tags": [
+        "daily life"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-beli",
+      "indonesian": "beli",
+      "english": "to buy",
+      "pos": "verb",
+      "registerNotes": "Written and formal Indonesian says membeli; beli is the everyday spoken form, polite enough for any shop. Beli di mana? (Where did you buy it?) is a common friendly question.",
+      "audio": "audio/id/words/w-beli.mp3",
+      "tags": [
+        "shopping",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bayar",
+      "indonesian": "bayar",
+      "english": "to pay (for)",
+      "pos": "verb",
+      "registerNotes": "Membayar in writing. Bayar di mana? asks where to pay, and the answer is often Di kasir (at the till).",
+      "pitfallNote": "There's no word for 'for': bayar makanan is 'pay for the food'.",
+      "audio": "audio/id/words/w-bayar.mp3",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-lihat",
+      "indonesian": "lihat",
+      "english": "to see; to look (at)",
+      "pos": "verb",
+      "registerNotes": "Melihat in writing. Boleh lihat? is 'May I have a look?', and Lihat-lihat saja (Just looking) is what you tell a shop assistant.",
+      "audio": "audio/id/words/w-lihat.mp3",
+      "tags": [
+        "senses",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dengar",
+      "indonesian": "dengar",
+      "english": "to hear; to listen",
+      "pos": "verb",
+      "registerNotes": "Mendengar in writing; listening to music is dengar musik in speech, mendengarkan musik in writing. Maaf, saya tidak dengar is 'Sorry, I didn't catch that'.",
+      "audio": "audio/id/words/w-dengar.mp3",
+      "tags": [
+        "senses"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bicara",
+      "indonesian": "bicara",
+      "english": "to speak, talk",
+      "pos": "verb",
+      "registerNotes": "Berbicara in writing; friends say ngomong. Bisa bicara bahasa Inggris? asks 'Can you speak English?'",
+      "audio": "audio/id/words/w-bicara.mp3",
+      "tags": [
+        "communication"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tahu",
+      "indonesian": "tahu",
+      "english": "to know (a fact)",
+      "pos": "verb",
+      "registerNotes": "Saya tidak tahu is 'I don't know'. In casual speech and messages it's often tau. The same word also means tofu.",
+      "pitfallNote": "For knowing a person or a place, use kenal: Saya kenal dia (I know him).",
+      "audio": "audio/id/words/w-tahu.mp3",
+      "tags": [
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-suka",
+      "indonesian": "suka",
+      "english": "to like",
+      "pos": "verb",
+      "registerNotes": "Saya suka kopi is 'I like coffee', and Suka? asks 'Do you like it?'. In speech suka also means 'tend to': Dia suka terlambat (He's often late).",
+      "audio": "audio/id/words/w-suka.mp3",
+      "tags": [
+        "feelings",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tinggal",
+      "indonesian": "tinggal",
+      "english": "to live, stay (somewhere)",
+      "pos": "verb",
+      "registerNotes": "Tinggal di mana? (Where do you live? / Where are you staying?) is one of the first questions you'll be asked. Tinggal also means 'to be left': tinggal satu, only one left.",
+      "pitfallNote": "Don't add me-: meninggal means 'to die'.",
+      "audio": "audio/id/words/w-tinggal.mp3",
+      "tags": [
+        "daily life",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kerja",
+      "indonesian": "kerja",
+      "english": "to work; work, job",
+      "pos": "verb",
+      "registerNotes": "Bekerja in writing. Kerja di mana? (Where do you work?) is a standard small-talk question.",
+      "audio": "audio/id/words/w-kerja.mp3",
+      "tags": [
+        "work"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-belajar",
+      "indonesian": "belajar",
+      "english": "to study, learn",
+      "pos": "verb",
+      "registerNotes": "Saya belajar bahasa Indonesia is 'I'm learning Indonesian'.",
+      "pitfallNote": "Belajar is learning; teaching is mengajar.",
+      "audio": "audio/id/words/w-belajar.mp3",
+      "tags": [
+        "study"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tunggu",
+      "indonesian": "tunggu",
+      "english": "to wait (for)",
+      "pos": "verb",
+      "registerNotes": "Menunggu in writing. Tunggu sebentar, ya (Just a moment, please) is heard everywhere.",
+      "pitfallNote": "There's no word for 'for': tunggu saya is 'wait for me'.",
+      "audio": "audio/id/words/w-tunggu.mp3",
+      "tags": [
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cari",
+      "indonesian": "cari",
+      "english": "to look for, search for",
+      "pos": "verb",
+      "registerNotes": "Mencari in writing. Cari apa? (What are you looking for?) is what shopkeepers ask.",
+      "pitfallNote": "c always sounds like the ch in 'church': cari is 'chah-ree', and kari is curry.",
+      "audio": "audio/id/words/w-cari.mp3",
+      "tags": [
+        "essential"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

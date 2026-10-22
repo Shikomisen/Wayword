@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "id": "lost",
+  "title": "Bertanya jalan saat tersesat",
+  "category": "directions",
+  "setting": "Kamu keluar dari pintu stasiun yang salah. Baterai ponselmu tinggal 4%. Ada seorang perempuan yang sedang menunggu di penyeberangan.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "narration",
+      "japanese": "",
+      "romaji": "",
+      "indonesian": "Kamu harus membuka percakapan. Bagaimana caranya?",
+      "options": [
+        {
+          "phraseId": "gre-04",
+          "quality": "good",
+          "feedback": "Selalu buka dengan すみません, seperti “permisi” dalam bahasa Indonesia. Kata ini memberi tanda “saya mau bertanya sesuatu” dan memberi orang itu waktu sejenak untuk menoleh kepadamu.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "gre-02",
+          "quality": "awkward",
+          "feedback": "Menyapa orang asing di jalan dengan こんにちは sebelum meminta sesuatu agak aneh: terdengar seperti ajakan mengobrol, bukan urusan praktis. Untuk ini, gunakan すみません.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "ちょっと、あの",
+          "romaji": "Chotto, ano—",
+          "indonesian": "Hei, anu—",
+          "feedback": "ちょっと untuk menarik perhatian orang asing terdengar kasar, dan bisa terkesan kamu mau mengeluh. Anime memakainya dengan bebas di antara tokoh yang sudah saling kenal.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "passerby",
+      "japanese": "はい、何でしょうか。",
+      "furigana": [
+        {
+          "b": "はい、"
+        },
+        {
+          "b": "何",
+          "r": "なん"
+        },
+        {
+          "b": "でしょうか。"
+        }
+      ],
+      "romaji": "Hai, nan deshō ka.",
+      "indonesian": "Ya, ada apa?",
+      "audio": "audio/ja/scenario/lost-n2.mp3",
+      "audioHint": "はい、なんでしょうか",
+      "options": [
+        {
+          "phraseId": "dir-04",
+          "quality": "good",
+          "feedback": "Sebutkan masalahnya sebelum bertanya. Orang Jepang biasanya menanggapinya dengan sangat ramah.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "dir-01",
+          "quality": "good",
+          "feedback": "Langsung dan efektif, terutama sambil menunjukkan peta.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "gre-15",
+          "quality": "good",
+          "feedback": "Pembuka yang cerdas: lawan bicaramu jadi berbicara lebih pelan sebelum mengatakan sesuatu yang rumit.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "passerby",
+      "japanese": "どちらへ行きたいんですか。",
+      "furigana": [
+        {
+          "b": "どちらへ"
+        },
+        {
+          "b": "行",
+          "r": "い"
+        },
+        {
+          "b": "きたいんですか。"
+        }
+      ],
+      "romaji": "Dochira e ikitai n desu ka.",
+      "indonesian": "Mau pergi ke mana?",
+      "audio": "audio/ja/scenario/lost-n3.mp3",
+      "audioHint": "どちらへいきたいんですか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "この住所に行きたいです。",
+          "romaji": "Kono jūsho ni ikitai desu.",
+          "indonesian": "Saya mau ke alamat ini. (sambil menunjukkan ponsel)",
+          "feedback": "Menunjukkan lebih baik daripada mengucapkan. Cara membaca alamat di Jepang memang sulit, bahkan bagi orang Jepang sendiri.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "dir-07",
+          "quality": "good",
+          "feedback": "Kalau kamu hanya perlu patokan untuk mencari arah lagi, pertanyaan ini lebih cepat.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "passerby",
+      "japanese": "ああ、それなら次の信号を右に曲がって、まっすぐ行くと左側にありますよ。歩いて五分ぐらいです。",
+      "furigana": [
+        {
+          "b": "ああ、それなら"
+        },
+        {
+          "b": "次",
+          "r": "つぎ"
+        },
+        {
+          "b": "の"
+        },
+        {
+          "b": "信号",
+          "r": "しんごう"
+        },
+        {
+          "b": "を"
+        },
+        {
+          "b": "右",
+          "r": "みぎ"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "曲",
+          "r": "ま"
+        },
+        {
+          "b": "がって、まっすぐ"
+        },
+        {
+          "b": "行",
+          "r": "い"
+        },
+        {
+          "b": "くと"
+        },
+        {
+          "b": "左側",
+          "r": "ひだりがわ"
+        },
+        {
+          "b": "にありますよ。"
+        },
+        {
+          "b": "歩",
+          "r": "ある"
+        },
+        {
+          "b": "いて"
+        },
+        {
+          "b": "五分",
+          "r": "ごふん"
+        },
+        {
+          "b": "ぐらいです。"
+        }
+      ],
+      "romaji": "Ā, sore nara tsugi no shingō o migi ni magatte, massugu iku to hidarigawa ni arimasu yo. Aruite gofun gurai desu.",
+      "indonesian": "Oh, kalau begitu belok kanan di lampu merah berikutnya, jalan lurus, nanti ada di sebelah kiri. Sekitar lima menit jalan kaki.",
+      "audio": "audio/ja/scenario/lost-n4.mp3",
+      "audioHint": "ああ、それならつぎのしんごうをみぎにまがって、まっすぐいくとひだりがわにありますよ。あるいてごふんぐらいです",
+      "options": [
+        {
+          "phraseId": "gre-17",
+          "quality": "good",
+          "feedback": "Pilihan yang tepat: tadi cepat dan padat. Kalau kamu minta diulang lebih pelan, kamu mendapat seluruh penjelasannya lagi, bukan versi singkatnya.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "dir-10",
+          "quality": "good",
+          "feedback": "Lebih baik lagi. Petunjuk lisan cepat hilang dari ingatan; jari yang menunjuk di peta tidak.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "gre-13",
+          "quality": "awkward",
+          "feedback": "Hati-hati dengan わかりました di sini. Karena sungkan, kita mudah bilang “iya, paham” padahal baru menangkap setengahnya. Percakapan pun berakhir dan kamu tetap tersesat. Ini jebakan sopan santun yang paling umum bagi pelajar.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "passerby",
+      "japanese": "ここです。この道をまっすぐ。すぐ分かりますよ。",
+      "furigana": [
+        {
+          "b": "ここです。この"
+        },
+        {
+          "b": "道",
+          "r": "みち"
+        },
+        {
+          "b": "をまっすぐ。すぐ"
+        },
+        {
+          "b": "分",
+          "r": "わ"
+        },
+        {
+          "b": "かりますよ。"
+        }
+      ],
+      "romaji": "Koko desu. Kono michi o massugu. Sugu wakarimasu yo.",
+      "indonesian": "Di sini. Lurus saja di jalan ini. Nanti langsung kelihatan.",
+      "audio": "audio/ja/scenario/lost-n5.mp3",
+      "audioHint": "ここです。このみちをまっすぐ。すぐわかりますよ",
+      "options": [
+        {
+          "phraseId": "gre-05",
+          "quality": "good",
+          "feedback": "Selesai. Membungkuk sedikit sambil mengucapkannya itu wajar dan tidak ada ruginya.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-06",
+          "quality": "good",
+          "feedback": "Bentuk lampau, karena bantuannya sudah selesai. Dua-duanya cocok di sini.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-20",
+          "quality": "wrong",
+          "feedback": "“Sama-sama”, padahal dia yang membantumu. Saat tegang, mudah tertukar mengambil pasangan yang salah antara “terima kasih” dan balasannya.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "romaji": "",
+      "indonesian": "Kembali ke jalur. Keterampilan sebenarnya di skenario ini bukan bertanya, tapi mengakui bahwa kamu tidak menangkap jawabannya. ゆっくりお願いします lebih berharga daripada kosakata apa pun di sini.",
+      "end": true,
+      "options": []
+    }
+  }
+}

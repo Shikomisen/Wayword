@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "con-sebelum",
+  "connector": "sebelum",
+  "gloss": "〜前に",
+  "title": "sebelum — 〜前に",
+  "pattern": "A sebelum B · Sebelum B, A · sebelum jam …",
+  "explanation": "sebelum は「〜前に」。後ろに動作か時間が来ます：sebelum makan（食べる前に）、sebelum jam lima（5時前に）。日本語の「食べる前に」とは逆に、sebelum は前に置きます。日本語の「〜る前に」と同じく動詞の形は変わらず、誰の話でも過去の話でも sebelum makan のままです。主な文の後ろに置くことも、先に置いてコンマで区切ることもできます：Sebelum tidur, saya biasanya baca buku. よく dulu（先に）と組み合わせます：Saya cuci tangan dulu sebelum makan. 場所へ行く時は動詞が要りません：sebelum ke Indonesia（インドネシアに行く前に）。",
+  "natural": "どんな場面でも使えます。薬の説明（minum obat sebelum makan＝食前に服用）、日課、予定でよく使います。",
+  "stiff": "「前に来たことがある」の「前に」は sebelum ではありません。Saya pernah ke sini（ここに来たことがあります）と言うか、sebelumnya（その前に、以前）を使います。",
+  "examples": [
+    {
+      "id": "cx-sebelum-1",
+      "indonesian": "Saya cuci tangan dulu sebelum makan.",
+      "japanese": "食べる前に手を洗います。",
+      "chunks": [
+        {
+          "t": "Saya cuci tangan ",
+          "w": "w-cuci"
+        },
+        {
+          "t": "dulu ",
+          "w": "w-dulu"
+        },
+        {
+          "t": "sebelum "
+        },
+        {
+          "t": "makan.",
+          "w": "w-makan"
+        }
+      ],
+      "gap": {
+        "before": "Saya cuci tangan dulu ",
+        "answer": "sebelum",
+        "after": " makan.",
+        "options": [
+          "sebelum",
+          "sesudah",
+          "sambil"
+        ],
+        "why": "洗うのが先、食べるのが後：sebelum makan。dulu（先に）とよく一緒に使います。"
+      },
+      "combine": {
+        "a": "Saya cuci tangan dulu.",
+        "b": "Saya makan.",
+        "distractors": [
+          "sesudah "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sebelum-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "sebelum"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-sebelum-2",
+      "indonesian": "Saya harus pulang sebelum jam lima.",
+      "japanese": "5時前には家に帰らないといけません。",
+      "chunks": [
+        {
+          "t": "Saya harus ",
+          "w": "w-saya"
+        },
+        {
+          "t": "pulang ",
+          "w": "w-pulang"
+        },
+        {
+          "t": "sebelum "
+        },
+        {
+          "t": "jam lima.",
+          "w": "w-jam"
+        }
+      ],
+      "gap": {
+        "before": "Saya harus pulang ",
+        "answer": "sebelum",
+        "after": " jam lima.",
+        "options": [
+          "sebelum",
+          "sesudah",
+          "sampai"
+        ],
+        "why": "時間の前も sebelum：sebelum jam lima。sampai だと「〜まで」になります。"
+      },
+      "audio": "audio/id/connectors/cx-sebelum-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "sebelum"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-sebelum-3",
+      "indonesian": "Sebelum tidur, saya biasanya baca buku.",
+      "japanese": "寝る前に、たいてい本を読みます。",
+      "chunks": [
+        {
+          "t": "Sebelum "
+        },
+        {
+          "t": "tidur, ",
+          "w": "w-tidur"
+        },
+        {
+          "t": "saya biasanya ",
+          "w": "w-biasanya"
+        },
+        {
+          "t": "baca buku.",
+          "w": "w-baca"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Sebelum",
+        "after": " tidur, saya biasanya baca buku.",
+        "options": [
+          "Sebelum",
+          "Sesudah",
+          "Sambil"
+        ],
+        "why": "読むのが先、寝るのが後：Sebelum tidur（寝る前に）。"
+      },
+      "combine": {
+        "a": "Saya tidur.",
+        "b": "Saya biasanya baca buku.",
+        "distractors": [
+          "Sambil "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sebelum-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "sebelum"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-sebelum-4",
+      "indonesian": "Sebelum ke Indonesia, saya belajar sedikit bahasa Indonesia.",
+      "japanese": "インドネシアに来る前に、インドネシア語を少し勉強しました。",
+      "chunks": [
+        {
+          "t": "Sebelum "
+        },
+        {
+          "t": "ke Indonesia, ",
+          "w": "w-ke"
+        },
+        {
+          "t": "saya belajar ",
+          "w": "w-belajar"
+        },
+        {
+          "t": "sedikit bahasa Indonesia.",
+          "w": "w-sedikit"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Sebelum",
+        "after": " ke Indonesia, saya belajar sedikit bahasa Indonesia.",
+        "options": [
+          "Sebelum",
+          "Sesudah",
+          "Waktu"
+        ],
+        "why": "勉強が先：sebelum ke Indonesia（インドネシアに行く前に）。動詞は要りません。"
+      },
+      "combine": {
+        "a": "Saya ke Indonesia.",
+        "b": "Saya belajar sedikit bahasa Indonesia.",
+        "distractors": [
+          "Sesudah "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sebelum-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "sebelum"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

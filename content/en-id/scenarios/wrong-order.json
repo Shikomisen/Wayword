@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "wrong-order",
+  "title": "The wrong order",
+  "category": "problems",
+  "setting": "Lunch at a busy café in Jakarta. You ordered chicken fried rice, not spicy, and an iced tea. A young woman serving comes over with a plate.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "server",
+      "indonesian": "Permisi, Kak. Ini mi gorengnya, ya.",
+      "english": "Excuse me. Here are your fried noodles.",
+      "audio": "audio/id/scenario/wrong-order-n1.mp3",
+      "options": [
+        {
+          "phraseId": "pro-01",
+          "quality": "good",
+          "feedback": "Maaf first keeps it polite, even though the mistake is theirs.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Maaf, Mbak, saya pesan nasi goreng ayam, bukan mi goreng.",
+          "english": "Sorry, I ordered chicken fried rice, not fried noodles.",
+          "feedback": "Says what you ordered, so she can put it right straight away. Bukan contrasts the two dishes.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Ini tidak pesanan saya.",
+          "english": "This isn't my order.",
+          "feedback": "Tidak can't go before a noun. Pesanan (order) is a thing, so it's bukan: Ini bukan pesanan saya.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "server",
+      "indonesian": "Oh, maaf, Kak. Tadi pesan apa, ya?",
+      "english": "Oh, sorry. What was it you ordered?",
+      "audio": "audio/id/scenario/wrong-order-n2.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Nasi goreng ayam satu, yang tidak pedas.",
+          "english": "One chicken fried rice, not spicy.",
+          "feedback": "Short and clear, the way orders are said: the dish, the number, and yang tidak pedas.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "res-03",
+          "quality": "awkward",
+          "feedback": "Fine for a new order, but it sounds like you're ordering again. Tadi saya pesan … (I ordered …) makes clear it's the order you've already placed.",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Saya sudah bilang tadi! Nasi goreng!",
+          "english": "I already told you! Fried rice!",
+          "feedback": "Snapping embarrasses everyone and won't get your food any faster. Calmly repeat the order.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "server",
+      "indonesian": "Baik, Kak, saya ganti, ya. Mohon ditunggu sebentar.",
+      "english": "Right, I'll change it. Please wait a moment.",
+      "audio": "audio/id/scenario/wrong-order-n3.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Iya, terima kasih, Mbak.",
+          "english": "OK, thank you.",
+          "feedback": "Simple and gracious.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "cas-04",
+          "quality": "good",
+          "feedback": "Friendly, and it lets her off the hook. Nggak is fine with young staff in a relaxed café.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "gre-21",
+          "quality": "wrong",
+          "feedback": "That turns down her offer to change it. She's bringing the right dish, so just say Iya, terima kasih.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "server",
+      "indonesian": "Bagaimana, Kak, nasi gorengnya? Sudah sesuai?",
+      "english": "How's the fried rice? Is it right this time?",
+      "audio": "audio/id/scenario/wrong-order-n4.mp3",
+      "options": [
+        {
+          "phraseId": "pro-02",
+          "quality": "good",
+          "feedback": "Polite and specific: tadi points back to when you ordered, and yang tidak pedas is 'the not-spicy one'.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Aduh, maaf, Mbak, ini masih pedas sekali buat saya.",
+          "english": "Oh, sorry, it's still really spicy for me.",
+          "feedback": "Aduh and maaf soften it, and buat saya (for me) makes it about your taste, not her mistake.",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Ini terlalu panas.",
+          "english": "This is too hot (to the touch).",
+          "feedback": "Panas is hot to the touch. Chilli hot is pedas: Ini terlalu pedas.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "server",
+      "indonesian": "Aduh, maaf sekali, Kak. Mau dibuatkan lagi, atau ganti menu lain?",
+      "english": "Oh, I'm so sorry. Shall we make it again, or would you like something else?",
+      "audio": "audio/id/scenario/wrong-order-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Dibuatkan lagi saja, Mbak, tapi tidak pakai cabai sama sekali, ya.",
+          "english": "Just make it again, please, but with no chilli at all.",
+          "feedback": "Clear and friendly: tidak pakai cabai (no chilli) leaves the kitchen no room for 'just a little'.",
+          "next": "n6"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Ganti soto ayam saja, Mbak. Itu tidak pedas, kan?",
+          "english": "I'll have the chicken soup instead. That's not spicy, is it?",
+          "feedback": "Changing dish is fine too, and kan (isn't it?) checks before it comes.",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya tidak mau bayar untuk ini.",
+          "english": "I'm not paying for this.",
+          "feedback": "Confrontational when she's trying to fix it. Sort out the food first; you can check the bill at the end.",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "server",
+      "indonesian": "Ini, Kak. Sekali lagi mohon maaf, ya. Es tehnya gratis.",
+      "english": "Here you are. Sorry again. The iced tea's on us.",
+      "audio": "audio/id/scenario/wrong-order-n6.mp3",
+      "options": [
+        {
+          "phraseId": "pro-13",
+          "quality": "good",
+          "feedback": "Ending on thanks leaves everyone on good terms, and she keeps face.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Wah, terima kasih, Mbak. Ini enak sekali.",
+          "english": "Oh, thank you. This is delicious.",
+          "feedback": "Praise and thanks: a warm end to a bumpy lunch.",
+          "next": "end"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Iya, memang Mbak yang salah.",
+          "english": "Yes, it was your fault.",
+          "feedback": "Rubbing it in makes her lose face. Once it's sorted, Tidak apa-apa and thanks are all that's needed.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "english": "Sorted. Maaf to start, bukan for 'not my order', tadi saya pesan … to point back to what you asked for, pedas (not panas) for chilli hot, and thanks at the end: a calm complaint gets results, and nobody loses face.",
+      "end": true,
+      "options": []
+    }
+  }
+}

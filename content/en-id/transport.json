@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "id": "transport",
+  "title": "Getting Around",
+  "order": 7,
+  "description": "Getting around by ojek, taxi, bus and train: Grab and Gojek pick-ups, telling the driver where to stop, and finding the right bus or platform. A driver is Pak, or Mas if he's young.",
+  "phrases": [
+    {
+      "id": "tra-01",
+      "indonesian": "Ke alamat ini, ya, Pak.",
+      "english": "To this address, please.",
+      "registerNotes": "Show the address on your phone as you say it. With Grab or Gojek the destination is already in the app, so this is mostly for taxis and ojeks off the street.",
+      "audio": "audio/id/tra-01.mp3",
+      "tags": [
+        "transport",
+        "taxi",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "tra-02",
+      "indonesian": "Pakai argo, ya, Pak?",
+      "english": "With the meter, please.",
+      "registerNotes": "Argo is a taxi's meter. Blue Bird taxis use it as a matter of course; with other taxis, check before you set off.",
+      "audio": "audio/id/tra-02.mp3",
+      "tags": [
+        "transport",
+        "taxi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-03",
+      "indonesian": "Ke stasiun berapa, Pak?",
+      "english": "How much to the station?",
+      "registerNotes": "Ke … berapa? asks the fare to a place. Add Pak or Mas to the driver.",
+      "cultureNote": "With an ojek or a becak (pedicab) waiting on a street corner rather than booked through an app, agree the fare before you get on. App rides show the price up front.",
+      "audio": "audio/id/tra-03.mp3",
+      "tags": [
+        "transport",
+        "ojek",
+        "prices"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-04",
+      "indonesian": "Gojek atas nama Sam, ya, Pak?",
+      "english": "Is this the Gojek for Sam?",
+      "registerNotes": "Atas nama (in the name of) is for any booking. Check the plate number in the app too, as Gojek and Grab drivers all wear green jackets.",
+      "audio": "audio/id/tra-04.mp3",
+      "tags": [
+        "transport",
+        "ojek",
+        "apps"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-05",
+      "indonesian": "Saya tunggu di depan pintu masuk, ya.",
+      "english": "I'm waiting in front of the entrance.",
+      "registerNotes": "Drivers often ring or message to find you: Posisinya di mana? (Where are you?). Give a landmark with di depan (in front of) or di sebelah (next to).",
+      "audio": "audio/id/tra-05.mp3",
+      "tags": [
+        "transport",
+        "apps"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-06",
+      "indonesian": "Kiri, Pak!",
+      "english": "Stop here, please.",
+      "registerNotes": "How you ask to get off an angkot (minibus) or a local bus. Kiri means left: pull over to the kerb, as Indonesia drives on the left.",
+      "cultureNote": "On an angkot you pay the driver as you get off, so have small notes ready.",
+      "audio": "audio/id/tra-06.mp3",
+      "tags": [
+        "transport",
+        "bus",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "tra-07",
+      "indonesian": "Berhenti di sini saja, Pak.",
+      "english": "Just stop here, please.",
+      "registerNotes": "For a taxi, a car or an ojek. Shorter still: Di sini saja, Pak (Just here).",
+      "audio": "audio/id/tra-07.mp3",
+      "tags": [
+        "transport",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "tra-08",
+      "indonesian": "Pelan-pelan, ya, Pak.",
+      "english": "Slowly, please.",
+      "registerNotes": "Polite, and drivers take it well. Saying pelan (slow) twice makes it gentle and careful; Hati-hati, ya, Pak (Careful, please) works too.",
+      "audio": "audio/id/tra-08.mp3",
+      "tags": [
+        "transport",
+        "ojek"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "tra-09",
+      "indonesian": "Masih jauh, Pak?",
+      "english": "Is it much further?",
+      "registerNotes": "Masih (still) is what makes it 'much further'. Expect sebentar lagi (nearly there) or sudah dekat (it's close now).",
+      "audio": "audio/id/tra-09.mp3",
+      "tags": [
+        "transport",
+        "distance"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "tra-10",
+      "indonesian": "Kira-kira berapa lama, Pak?",
+      "english": "About how long will it take?",
+      "registerNotes": "Kira-kira (roughly) makes it a natural question. Answers often come with a condition: Kalau tidak macet, setengah jam (Half an hour, if there's no traffic).",
+      "audio": "audio/id/tra-10.mp3",
+      "tags": [
+        "transport",
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-11",
+      "indonesian": "Macet sekali, ya.",
+      "english": "The traffic's terrible, isn't it?",
+      "registerNotes": "Ending with ya invites the other person to agree: an easy way to start a chat with a driver.",
+      "cultureNote": "Macet (gridlocked) is part of daily life in Jakarta and other big cities: an easy topic of small talk, and the standard reason for being late.",
+      "audio": "audio/id/tra-11.mp3",
+      "tags": [
+        "transport",
+        "traffic"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "tra-12",
+      "indonesian": "Bus ini lewat Monas, ya?",
+      "english": "Does this bus go past Monas?",
+      "registerNotes": "Lewat (via, past) is for a stop along the way; ke is for where the route ends. Monas is the National Monument in central Jakarta.",
+      "cultureNote": "On TransJakarta, the city's busway, you tap a card at the station gate rather than paying the driver.",
+      "audio": "audio/id/tra-12.mp3",
+      "tags": [
+        "transport",
+        "bus"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-13",
+      "indonesian": "Kereta ke Bogor di jalur berapa?",
+      "english": "Which platform is the train to Bogor on?",
+      "registerNotes": "Signs and announcements number the platforms as jalur (track): jalur dua. Peron is the platform itself.",
+      "cultureNote": "The KRL (said ka-er-el) is Jakarta's commuter train, out to Bogor, Bekasi and Tangerang. Most trains have a women-only carriage at each end, marked in pink.",
+      "audio": "audio/id/tra-13.mp3",
+      "tags": [
+        "transport",
+        "train"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-14",
+      "indonesian": "Tiket ke Bandung satu, ya.",
+      "english": "One ticket to Bandung, please.",
+      "registerNotes": "As with food, the number goes after: tiket ke Bandung dua (two tickets to Bandung). A return ticket is tiket pulang-pergi.",
+      "audio": "audio/id/tra-14.mp3",
+      "tags": [
+        "transport",
+        "tickets"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-15",
+      "indonesian": "Kalau mau ke Kota Tua, turun di mana?",
+      "english": "Where do I get off for Kota Tua?",
+      "registerNotes": "Turun (get down, get off) is the opposite of naik (get on, ride). Kota Tua is Jakarta's old Dutch quarter; swap in any place.",
+      "audio": "audio/id/tra-15.mp3",
+      "tags": [
+        "transport",
+        "bus",
+        "train"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

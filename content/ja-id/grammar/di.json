@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-di",
+  "connector": "di-",
+  "gloss": "〜される、〜された（受け身）",
+  "title": "di- — 受け身",
+  "pattern": "もの + di- + 語根 (+ oleh だれか) · Bisa di…? · dimakan (続けて書く), di rumah (離して書く)",
+  "explanation": "di- ＋ 語根で受け身になります。何かをされる「もの」が先に来て、だれがしたかを言う時は後ろに、よく oleh を付けて置きます：Mobilnya sudah dicuci（車はもう洗ってあります）、Rumah ini dibangun oleh kakek saya（この家は祖父が建てました）。日本語の「〜される」に当たりますが、使う頻度はずっと高く、会話でも文章でも使います。日本語の受け身にありがちな「被害」の響きもなく、中立です。だれがしたかは言わないのがふつうで、Tiketnya bisa dibeli di stasiun は単に「切符は駅で買えます」という文です。「あなた」と言わずに頼む、ていねいな言い方にもなります：Bisa dibungkus?（持ち帰り用に包んでもらえますか？）、Boleh dicoba?（試着してもいいですか？）。di- は語根と続けて書き、場所を表す di は離して書きます：dimakan（食べられる）、di rumah（家で）。",
+  "natural": "お店やワルンでのお願い（Bisa dibungkus? Bisa dikirim?）、指示（Obatnya diminum sesudah makan、薬は食後に飲んでください）、だれがしたかを言わずに、済んだことを伝える時（Kuncinya sudah diganti、鍵はもう取り替えてあります）。",
+  "stiff": "「私が」「あなたが」した時は di- と oleh saya の形は使わず、代名詞を語根の直前に置きます：Sudah saya bayar（もう払いました）、Sudah kamu kirim?（もう送った？）。Dibayar oleh saya は、日本語で「私によって支払われました」と言うような直訳調に聞こえます。",
+  "examples": [
+    {
+      "id": "gx-di-1",
+      "indonesian": "Mobilnya sudah dicuci.",
+      "japanese": "車はもう洗ってあります。",
+      "chunks": [
+        {
+          "t": "Mobilnya ",
+          "w": "w-mobil"
+        },
+        {
+          "t": "sudah ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "dicuci.",
+          "w": "w-cuci"
+        }
+      ],
+      "gap": {
+        "before": "Mobilnya sudah ",
+        "answer": "dicuci",
+        "after": ".",
+        "options": [
+          "dicuci",
+          "mencuci",
+          "cuci"
+        ],
+        "why": "車は洗われる側なので、動詞に di- が付きます。"
+      },
+      "audio": "audio/id/grammar/gx-di-1.mp3",
+      "tags": [
+        "文法",
+        "di"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-di-2",
+      "indonesian": "Ayamnya bisa dibungkus, Bu?",
+      "japanese": "チキン、持ち帰り用に包んでもらえますか？",
+      "chunks": [
+        {
+          "t": "Ayamnya ",
+          "w": "w-ayam"
+        },
+        {
+          "t": "bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "dibungkus, "
+        },
+        {
+          "t": "Bu?",
+          "w": "w-ibu"
+        }
+      ],
+      "gap": {
+        "before": "Ayamnya bisa ",
+        "answer": "dibungkus",
+        "after": ", Bu?",
+        "options": [
+          "dibungkus",
+          "membungkus",
+          "di bungkus"
+        ],
+        "why": "「あなた」と言わずに包んでほしいと頼むので di-。語根と続けて書きます。"
+      },
+      "audio": "audio/id/grammar/gx-di-2.mp3",
+      "tags": [
+        "文法",
+        "di"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-di-3",
+      "indonesian": "Tiketnya bisa dibeli di stasiun.",
+      "japanese": "切符は駅で買えます。",
+      "chunks": [
+        {
+          "t": "Tiketnya ",
+          "w": "w-tiket"
+        },
+        {
+          "t": "bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "dibeli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "di stasiun.",
+          "w": "w-stasiun"
+        }
+      ],
+      "gap": {
+        "before": "Tiketnya bisa ",
+        "answer": "dibeli",
+        "after": " di stasiun.",
+        "options": [
+          "dibeli",
+          "membeli",
+          "pembeli"
+        ],
+        "why": "日本語の「切符は」と同じく切符が先に来て、買われる側なので di-。membeli なら買う人が先に必要です（Anda bisa membeli tiket）。"
+      },
+      "audio": "audio/id/grammar/gx-di-3.mp3",
+      "tags": [
+        "文法",
+        "di"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-di-4",
+      "indonesian": "Rumah ini dibangun oleh kakek saya.",
+      "japanese": "この家は祖父が建てました。",
+      "chunks": [
+        {
+          "t": "Rumah ini ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "dibangun ",
+          "w": "w-bangun"
+        },
+        {
+          "t": "oleh "
+        },
+        {
+          "t": "kakek saya.",
+          "w": "w-kakek"
+        }
+      ],
+      "gap": {
+        "before": "Rumah ini ",
+        "answer": "dibangun",
+        "after": " oleh kakek saya.",
+        "options": [
+          "dibangun",
+          "membangun",
+          "bangun"
+        ],
+        "why": "家が先、建てた人が oleh の後なので di-。bangun だけだと「起きる」の意味です。"
+      },
+      "audio": "audio/id/grammar/gx-di-4.mp3",
+      "tags": [
+        "文法",
+        "di"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

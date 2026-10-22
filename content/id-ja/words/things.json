@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "id": "words-things",
+  "title": "Benda di sekitarmu",
+  "description": "Kata benda sehari-hari untuk kalimat pertamamu: barang bawaan, hewan, orang menurut pekerjaannya, dan Jepang itu sendiri.",
+  "items": [
+    {
+      "id": "w-hon",
+      "japanese": "本",
+      "furigana": "{本|ほん}",
+      "romaji": "hon",
+      "indonesian": "buku",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hon.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kaban",
+      "japanese": "かばん",
+      "romaji": "kaban",
+      "indonesian": "tas",
+      "pos": "noun",
+      "usage": "Biasanya ditulis dengan kana. Kantong plastik belanja disebut 袋 (ふくろ).",
+      "audio": "audio/ja/words/w-kaban.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-saifu",
+      "japanese": "財布",
+      "furigana": "{財布|さいふ}",
+      "romaji": "saifu",
+      "indonesian": "dompet",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-saifu.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tokei",
+      "japanese": "時計",
+      "furigana": "{時計|とけい}",
+      "romaji": "tokei",
+      "indonesian": "jam tangan; jam",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-tokei.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sumaho",
+      "japanese": "スマホ",
+      "furigana": "{スマホ|すまほ}",
+      "romaji": "sumaho",
+      "indonesian": "ponsel pintar, HP",
+      "pos": "noun",
+      "usage": "Singkatan dari スマートフォン. 携帯 (けいたい) adalah ponsel apa saja, mirip \"HP\".",
+      "audio": "audio/ja/words/w-sumaho.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tsukue",
+      "japanese": "机",
+      "furigana": "{机|つくえ}",
+      "romaji": "tsukue",
+      "indonesian": "meja (tulis)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-tsukue.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-isu",
+      "japanese": "椅子",
+      "furigana": "{椅子|いす}",
+      "romaji": "isu",
+      "indonesian": "kursi",
+      "pos": "noun",
+      "usage": "Sering ditulis dengan kana: いす.",
+      "audio": "audio/ja/words/w-isu.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pen",
+      "japanese": "ペン",
+      "furigana": "{ペン|ぺん}",
+      "romaji": "pen",
+      "indonesian": "pulpen, pena",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-pen.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-terebi",
+      "japanese": "テレビ",
+      "furigana": "{テレビ|てれび}",
+      "romaji": "terebi",
+      "indonesian": "TV, televisi",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-terebi.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-neko",
+      "japanese": "猫",
+      "furigana": "{猫|ねこ}",
+      "romaji": "neko",
+      "indonesian": "kucing",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-neko.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-inu",
+      "japanese": "犬",
+      "furigana": "{犬|いぬ}",
+      "romaji": "inu",
+      "indonesian": "anjing",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-inu.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sensei",
+      "japanese": "先生",
+      "furigana": "{先生|せんせい}",
+      "romaji": "sensei",
+      "indonesian": "guru",
+      "pos": "noun",
+      "usage": "Juga panggilan untuk dokter dan profesional lain: 先生. Jangan pernah dipakai untuk diri sendiri.",
+      "audio": "audio/ja/words/w-sensei.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-gakusei",
+      "japanese": "学生",
+      "furigana": "{学生|がくせい}",
+      "romaji": "gakusei",
+      "indonesian": "mahasiswa, pelajar",
+      "pos": "noun",
+      "usage": "Biasanya mahasiswa. Murid sekolah disebut 生徒 (せいと).",
+      "audio": "audio/ja/words/w-gakusei.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kaishain",
+      "japanese": "会社員",
+      "furigana": "{会社員|かいしゃいん}",
+      "romaji": "kaishain",
+      "indonesian": "karyawan kantor",
+      "pos": "noun",
+      "usage": "Jawaban sehari-hari untuk pertanyaan \"kerja apa?\", untuk kebanyakan pekerjaan di perusahaan.",
+      "audio": "audio/ja/words/w-kaishain.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-nihon",
+      "japanese": "日本",
+      "furigana": "{日本|にほん}",
+      "romaji": "Nihon",
+      "indonesian": "Jepang",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-nihon.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-nihonjin",
+      "japanese": "日本人",
+      "furigana": "{日本人|にほんじん}",
+      "romaji": "nihonjin",
+      "indonesian": "orang Jepang",
+      "pos": "noun",
+      "usage": "Nama negara + 人 (じん) berarti orang dari negara itu: インドネシア人, イギリス人, アメリカ人.",
+      "audio": "audio/ja/words/w-nihonjin.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-okane",
+      "japanese": "お金",
+      "furigana": "お{金|かね}",
+      "romaji": "o-kane",
+      "indonesian": "uang",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-okane.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kuni",
+      "japanese": "国",
+      "furigana": "{国|くに}",
+      "romaji": "kuni",
+      "indonesian": "negara",
+      "pos": "noun",
+      "usage": "お国はどちらですか adalah cara sopan bertanya \"dari negara mana?\"",
+      "audio": "audio/ja/words/w-kuni.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-machi",
+      "japanese": "町",
+      "furigana": "{町|まち}",
+      "romaji": "machi",
+      "indonesian": "kota; lingkungan sekitar",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-machi.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kotoba",
+      "japanese": "言葉",
+      "furigana": "{言葉|ことば}",
+      "romaji": "kotoba",
+      "indonesian": "kata; bahasa",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kotoba.mp3",
+      "tags": [
+        "benda"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

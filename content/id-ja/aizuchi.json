@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "id": "aizuchi",
+  "title": "Tanggapan & mendengarkan",
+  "order": 12,
+  "description": "Kata-kata kecil yang menunjukkan kamu mendengarkan dan menanggapi, seperti “oh gitu” dan “iya, iya”. Kata-kata ini menjaga percakapan bahasa Jepang tetap mengalir.",
+  "phrases": [
+    {
+      "id": "aiz-01",
+      "register": "casual",
+      "japanese": "そうなんだ",
+      "furigana": [
+        {
+          "b": "そうなんだ"
+        }
+      ],
+      "romaji": "sō nanda",
+      "indonesian": "Oh, gitu? / Oh, iya?",
+      "polite": {
+        "japanese": "そうなんですか",
+        "furigana": [
+          {
+            "b": "そうなんですか"
+          }
+        ],
+        "romaji": "sō nan desu ka",
+        "audio": "audio/ja/aiz-01-polite.mp3"
+      },
+      "registerNotes": "“Oh, gitu” yang serbaguna: menunjukkan kamu menangkap hal baru. Naikkan nadanya sedikit; kalau datar, terdengar bosan.",
+      "audio": "audio/ja/aiz-01.mp3",
+      "tags": [
+        "tanggapan",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "aiz-02",
+      "japanese": "なるほど",
+      "furigana": [
+        {
+          "b": "なるほど"
+        }
+      ],
+      "romaji": "naruhodo",
+      "indonesian": "Oh, begitu. / Masuk akal.",
+      "registerNotes": "Untuk saat sesuatu baru dijelaskan. Kepada atasan atau orang yang lebih tua, なるほど saja bisa terdengar seperti kamu sedang menilai jawabannya; そうなんですね lebih aman.",
+      "audio": "audio/ja/aiz-02.mp3",
+      "tags": [
+        "tanggapan",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "aiz-03",
+      "register": "casual",
+      "japanese": "へえ、すごい",
+      "furigana": [
+        {
+          "b": "へえ、すごい"
+        }
+      ],
+      "romaji": "hē, sugoi",
+      "indonesian": "Wah, keren!",
+      "polite": {
+        "japanese": "へえ、すごいですね",
+        "furigana": [
+          {
+            "b": "へえ、すごいですね"
+          }
+        ],
+        "romaji": "hē, sugoi desu ne",
+        "audio": "audio/ja/aiz-03-polite.mp3"
+      },
+      "registerNotes": "Rasa tertarik yang diucapkan. へえ yang panjang sudah melakukan separuh tugasnya: pendengar Jepang memang menunggu mendengar tanggapanmu.",
+      "audio": "audio/ja/aiz-03.mp3",
+      "tags": [
+        "tanggapan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "aiz-04",
+      "register": "casual",
+      "japanese": "それで？",
+      "furigana": [
+        {
+          "b": "それで？"
+        }
+      ],
+      "romaji": "sorede?",
+      "indonesian": "Terus?",
+      "polite": {
+        "japanese": "それで、どうなったんですか",
+        "furigana": [
+          {
+            "b": "それで、どうなったんですか"
+          }
+        ],
+        "romaji": "sorede, dō natta n desu ka?",
+        "audio": "audio/ja/aiz-04-polite.mp3"
+      },
+      "registerNotes": "Meminta mereka melanjutkan cerita, dan menunjukkan kamu ingin mendengarnya, seperti “terus, terus?”.",
+      "audio": "audio/ja/aiz-04.mp3",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "aiz-05",
+      "register": "casual",
+      "japanese": "わかる",
+      "furigana": [
+        {
+          "b": "わかる"
+        }
+      ],
+      "romaji": "wakaru",
+      "indonesian": "Ngerti banget. / Aku juga gitu.",
+      "polite": {
+        "japanese": "わかります",
+        "furigana": [
+          {
+            "b": "わかります"
+          }
+        ],
+        "romaji": "wakarimasu",
+        "audio": "audio/ja/aiz-05-polite.mp3"
+      },
+      "registerNotes": "Simpati, bukan hanya paham: わかる！ artinya “iya, kan? Aku juga!”. わかります yang sopan bekerja dengan cara yang sama.",
+      "audio": "audio/ja/aiz-05.mp3",
+      "tags": [
+        "tanggapan",
+        "setuju"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "aiz-06",
+      "japanese": "確かに",
+      "furigana": [
+        {
+          "b": "確",
+          "r": "たし"
+        },
+        {
+          "b": "かに"
+        }
+      ],
+      "romaji": "tashika ni",
+      "indonesian": "Bener juga. / Betul.",
+      "registerNotes": "Menyetujui poin yang disampaikan seseorang. Bisa dipakai dalam bahasa sopan maupun santai.",
+      "audio": "audio/ja/aiz-06.mp3",
+      "tags": [
+        "setuju"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "aiz-07",
+      "japanese": "ですよね",
+      "furigana": [
+        {
+          "b": "ですよね"
+        }
+      ],
+      "romaji": "desu yo ne",
+      "indonesian": "Betul sekali. / Iya, kan?",
+      "registerNotes": "Persetujuan yang kuat dan ramah, tapi tetap sopan: kalian berdua memikirkan hal yang sama.",
+      "audio": "audio/ja/aiz-07.mp3",
+      "tags": [
+        "setuju"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "aiz-08",
+      "japanese": "大変でしたね",
+      "furigana": [
+        {
+          "b": "大変",
+          "r": "たいへん"
+        },
+        {
+          "b": "でしたね"
+        }
+      ],
+      "romaji": "taihen deshita ne",
+      "indonesian": "Pasti berat, ya.",
+      "registerNotes": "Simpati setelah mendengar sebuah masalah. ね berbagi perasaan, bukan bertanya, seperti “ya” dalam “pasti berat, ya”.",
+      "audio": "audio/ja/aiz-08.mp3",
+      "tags": [
+        "simpati",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "aiz-09",
+      "japanese": "それはひどいですね",
+      "furigana": [
+        {
+          "b": "それはひどいですね"
+        }
+      ],
+      "romaji": "sore wa hidoi desu ne",
+      "indonesian": "Wah, itu keterlaluan.",
+      "registerNotes": "Saat seseorang diperlakukan buruk atau ada yang tidak beres. ひどい terdengar kuat, jadi pakai hanya untuk keluhan yang sungguhan.",
+      "audio": "audio/ja/aiz-09.mp3",
+      "tags": [
+        "simpati"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "aiz-10",
+      "japanese": "よかったですね",
+      "furigana": [
+        {
+          "b": "よかったですね"
+        }
+      ],
+      "romaji": "yokatta desu ne",
+      "indonesian": "Syukurlah. / Ikut senang.",
+      "registerNotes": "Senang atas kabar baik orang lain. Untuk rasa lega sendiri, cukup よかった saja.",
+      "audio": "audio/ja/aiz-10.mp3",
+      "tags": [
+        "tanggapan",
+        "simpati"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "aiz-11",
+      "japanese": "まさか",
+      "furigana": [
+        {
+          "b": "まさか"
+        }
+      ],
+      "romaji": "masaka",
+      "indonesian": "Masa, sih! / Nggak mungkin!",
+      "registerNotes": "Rasa tidak percaya; bunyinya pun mirip “masa”. Akrab dengan teman; kepada atasan atau orang yang lebih tua, まさか、本当ですか lebih halus.",
+      "audio": "audio/ja/aiz-11.mp3",
+      "tags": [
+        "tanggapan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "aiz-12",
+      "japanese": "えっと…",
+      "furigana": [
+        {
+          "b": "えっと…"
+        }
+      ],
+      "romaji": "etto",
+      "indonesian": "Hmm… / Anu…",
+      "registerNotes": "Jeda alami saat kamu mencari kata. Jauh lebih baik daripada diam, atau daripada “eee” dan “anu” versi bahasa Indonesia.",
+      "audio": "audio/ja/aiz-12.mp3",
+      "tags": [
+        "mendengar",
+        "penting"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

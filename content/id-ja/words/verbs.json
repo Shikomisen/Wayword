@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "id": "words-verbs",
+  "title": "Kata kerja sehari-hari",
+  "description": "Dua puluh kata kerja yang kamu pakai setiap hari. Tidak seperti bahasa Indonesia, kata kerja Jepang berubah bentuk: tiap kata di sini punya bentuk sopan ます dan bentuk て, dasar semua kata penghubung di pelajaran Kata Penghubung.",
+  "items": [
+    {
+      "id": "w-iku",
+      "japanese": "行く",
+      "furigana": "{行|い}く",
+      "romaji": "iku",
+      "indonesian": "pergi",
+      "pos": "verb",
+      "forms": {
+        "masu": "{行|い}きます",
+        "te": "{行|い}って"
+      },
+      "usage": "Satu-satunya bentuk て yang tidak beraturan di antara kata kerja biasa: 行って, bukan 行いて.",
+      "audio": "audio/ja/words/w-iku.mp3",
+      "tags": [
+        "gerak"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kuru",
+      "japanese": "来る",
+      "furigana": "{来|く}る",
+      "romaji": "kuru",
+      "indonesian": "datang",
+      "pos": "verb",
+      "forms": {
+        "masu": "{来|き}ます",
+        "te": "{来|き}て"
+      },
+      "usage": "Tidak beraturan: くる → きます → きて.",
+      "audio": "audio/ja/words/w-kuru.mp3",
+      "tags": [
+        "gerak"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kaeru",
+      "japanese": "帰る",
+      "furigana": "{帰|かえ}る",
+      "romaji": "kaeru",
+      "audioHint": "帰る",
+      "indonesian": "pulang; kembali",
+      "pos": "verb",
+      "forms": {
+        "masu": "{帰|かえ}ります",
+        "te": "{帰|かえ}って"
+      },
+      "audio": "audio/ja/words/w-kaeru.mp3",
+      "tags": [
+        "gerak",
+        "rumah"
+      ],
+      "difficulty": 1,
+      "usage": "Seperti \"pulang\": kembali ke tempatmu sendiri, misalnya rumah atau negara asal."
+    },
+    {
+      "id": "w-suru",
+      "japanese": "する",
+      "romaji": "suru",
+      "indonesian": "melakukan, mengerjakan",
+      "pos": "verb",
+      "forms": {
+        "masu": "します",
+        "te": "して"
+      },
+      "usage": "Mengubah kata benda menjadi kata kerja: 勉強する (belajar), 掃除する (bersih-bersih), 電話する (menelepon).",
+      "audio": "audio/ja/words/w-suru.mp3",
+      "tags": [
+        "dasar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-miru",
+      "japanese": "見る",
+      "furigana": "{見|み}る",
+      "romaji": "miru",
+      "indonesian": "melihat; menonton",
+      "pos": "verb",
+      "forms": {
+        "masu": "{見|み}ます",
+        "te": "{見|み}て"
+      },
+      "audio": "audio/ja/words/w-miru.mp3",
+      "tags": [
+        "dasar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kiku",
+      "japanese": "聞く",
+      "furigana": "{聞|き}く",
+      "romaji": "kiku",
+      "indonesian": "mendengar; bertanya",
+      "pos": "verb",
+      "forms": {
+        "masu": "{聞|き}きます",
+        "te": "{聞|き}いて"
+      },
+      "audio": "audio/ja/words/w-kiku.mp3",
+      "tags": [
+        "komunikasi"
+      ],
+      "difficulty": 1,
+      "usage": "Satu kata untuk \"mendengar\" dan \"bertanya\": 音楽を聞く (mendengarkan musik), 道を聞く (bertanya jalan)."
+    },
+    {
+      "id": "w-hanasu",
+      "japanese": "話す",
+      "furigana": "{話|はな}す",
+      "romaji": "hanasu",
+      "indonesian": "berbicara",
+      "pos": "verb",
+      "forms": {
+        "masu": "{話|はな}します",
+        "te": "{話|はな}して"
+      },
+      "audio": "audio/ja/words/w-hanasu.mp3",
+      "tags": [
+        "komunikasi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-iu",
+      "japanese": "言う",
+      "furigana": "{言|い}う",
+      "romaji": "iu",
+      "indonesian": "berkata, mengatakan",
+      "pos": "verb",
+      "forms": {
+        "masu": "{言|い}います",
+        "te": "{言|い}って"
+      },
+      "audio": "audio/ja/words/w-iu.mp3",
+      "tags": [
+        "komunikasi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yomu",
+      "japanese": "読む",
+      "furigana": "{読|よ}む",
+      "romaji": "yomu",
+      "indonesian": "membaca",
+      "pos": "verb",
+      "forms": {
+        "masu": "{読|よ}みます",
+        "te": "{読|よ}んで"
+      },
+      "audio": "audio/ja/words/w-yomu.mp3",
+      "tags": [
+        "dasar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kaku",
+      "japanese": "書く",
+      "furigana": "{書|か}く",
+      "romaji": "kaku",
+      "indonesian": "menulis",
+      "pos": "verb",
+      "forms": {
+        "masu": "{書|か}きます",
+        "te": "{書|か}いて"
+      },
+      "audio": "audio/ja/words/w-kaku.mp3",
+      "tags": [
+        "dasar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-matsu",
+      "japanese": "待つ",
+      "furigana": "{待|ま}つ",
+      "romaji": "matsu",
+      "indonesian": "menunggu",
+      "pos": "verb",
+      "forms": {
+        "masu": "{待|ま}ちます",
+        "te": "{待|ま}って"
+      },
+      "audio": "audio/ja/words/w-matsu.mp3",
+      "tags": [
+        "dasar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-au",
+      "japanese": "会う",
+      "furigana": "{会|あ}う",
+      "romaji": "au",
+      "indonesian": "bertemu",
+      "pos": "verb",
+      "forms": {
+        "masu": "{会|あ}います",
+        "te": "{会|あ}って"
+      },
+      "usage": "Pakai に: 友達に会う — \"bertemu (dengan) teman\". に di sini mirip \"dengan\"; jangan pakai を.",
+      "audio": "audio/ja/words/w-au.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kau",
+      "japanese": "買う",
+      "furigana": "{買|か}う",
+      "romaji": "kau",
+      "indonesian": "membeli",
+      "pos": "verb",
+      "forms": {
+        "masu": "{買|か}います",
+        "te": "{買|か}って"
+      },
+      "audio": "audio/ja/words/w-kau.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tsukau",
+      "japanese": "使う",
+      "furigana": "{使|つか}う",
+      "romaji": "tsukau",
+      "indonesian": "memakai, menggunakan",
+      "pos": "verb",
+      "forms": {
+        "masu": "{使|つか}います",
+        "te": "{使|つか}って"
+      },
+      "audio": "audio/ja/words/w-tsukau.mp3",
+      "tags": [
+        "dasar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-wakaru",
+      "japanese": "分かる",
+      "furigana": "{分|わ}かる",
+      "romaji": "wakaru",
+      "indonesian": "mengerti, paham",
+      "pos": "verb",
+      "forms": {
+        "masu": "{分|わ}かります",
+        "te": "{分|わ}かって"
+      },
+      "usage": "Pakai が, bukan を: 日本語が分かる — \"mengerti bahasa Jepang\".",
+      "audio": "audio/ja/words/w-wakaru.mp3",
+      "tags": [
+        "komunikasi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-shiru",
+      "japanese": "知る",
+      "furigana": "{知|し}る",
+      "romaji": "shiru",
+      "audioHint": "知る",
+      "indonesian": "(jadi) tahu; kenal",
+      "pos": "verb",
+      "forms": {
+        "masu": "{知|し}ります",
+        "te": "{知|し}って"
+      },
+      "usage": "\"Saya tahu\" adalah 知っている; \"saya tidak tahu\" adalah 知らない. Juga untuk \"kenal\" orang: 彼を知っている.",
+      "audio": "audio/ja/words/w-shiru.mp3",
+      "tags": [
+        "komunikasi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-omou",
+      "japanese": "思う",
+      "furigana": "{思|おも}う",
+      "romaji": "omou",
+      "indonesian": "berpikir, merasa",
+      "pos": "verb",
+      "forms": {
+        "masu": "{思|おも}います",
+        "te": "{思|おも}って"
+      },
+      "usage": "〜と思う — \"menurut saya…\", \"saya rasa…\".",
+      "audio": "audio/ja/words/w-omou.mp3",
+      "tags": [
+        "komunikasi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-yasumu",
+      "japanese": "休む",
+      "furigana": "{休|やす}む",
+      "romaji": "yasumu",
+      "indonesian": "beristirahat; libur",
+      "pos": "verb",
+      "forms": {
+        "masu": "{休|やす}みます",
+        "te": "{休|やす}んで"
+      },
+      "audio": "audio/ja/words/w-yasumu.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hataraku",
+      "japanese": "働く",
+      "furigana": "{働|はたら}く",
+      "romaji": "hataraku",
+      "indonesian": "bekerja",
+      "pos": "verb",
+      "forms": {
+        "masu": "{働|はたら}きます",
+        "te": "{働|はたら}いて"
+      },
+      "audio": "audio/ja/words/w-hataraku.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-asobu",
+      "japanese": "遊ぶ",
+      "furigana": "{遊|あそ}ぶ",
+      "romaji": "asobu",
+      "indonesian": "bermain, bersenang-senang",
+      "pos": "verb",
+      "forms": {
+        "masu": "{遊|あそ}びます",
+        "te": "{遊|あそ}んで"
+      },
+      "usage": "Orang dewasa juga 遊ぶ: artinya bersenang-senang atau main bersama teman, seperti \"main ke rumah teman\", bukan hanya anak-anak yang bermain.",
+      "audio": "audio/ja/words/w-asobu.mp3",
+      "tags": [
+        "waktu luang"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

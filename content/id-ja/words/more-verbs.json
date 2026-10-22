@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 1,
+  "id": "words-more-verbs",
+  "title": "Kata kerja lainnya",
+  "description": "Kata kerja yang selalu muncul dalam percakapan sehari-hari, selain yang dasar:memutuskan, menemukan, meminjamkan, menghubungi, menjelaskan.",
+  "items": [
+    {
+      "id": "w-kimeru",
+      "japanese": "決める",
+      "furigana": "{決|き}める",
+      "indonesian": "memutuskan, menentukan",
+      "pos": "verb",
+      "forms": {
+        "masu": "{決|き}めます",
+        "te": "{決|き}めて"
+      },
+      "usage": "何にする？ — もう決めた？ “Mau pesan apa? Sudah pilih?”: pertanyaan khas saat melihat menu.",
+      "audio": "audio/ja/words/w-kimeru.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shiraberu",
+      "japanese": "調べる",
+      "furigana": "{調|しら}べる",
+      "indonesian": "mencari tahu, mengecek",
+      "pos": "verb",
+      "forms": {
+        "masu": "{調|しら}べます",
+        "te": "{調|しら}べて"
+      },
+      "usage": "Mencari informasi di internet atau mengecek fakta: ネットで調べる. Mencari barang yang hilang memakai kata lain, 探す.",
+      "audio": "audio/ja/words/w-shiraberu.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nareru",
+      "japanese": "慣れる",
+      "furigana": "{慣|な}れる",
+      "indonesian": "terbiasa",
+      "pos": "verb",
+      "forms": {
+        "masu": "{慣|な}れます",
+        "te": "{慣|な}れて"
+      },
+      "usage": "“Terbiasa dengan …” memakai に: 日本の生活に慣れた (sudah terbiasa dengan kehidupan di Jepang).",
+      "audio": "audio/ja/words/w-nareru.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-todoku",
+      "japanese": "届く",
+      "furigana": "{届|とど}く",
+      "indonesian": "sampai, tiba (paket, pesan); mencapai",
+      "pos": "verb",
+      "forms": {
+        "masu": "{届|とど}きます",
+        "te": "{届|とど}いて"
+      },
+      "usage": "Untuk barang yang dikirim: 荷物が届いた. Dalam bahasa Indonesia keduanya “sampai”, tapi orang yang tiba memakai 着く.",
+      "audio": "audio/ja/words/w-todoku.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tanomu",
+      "japanese": "頼む",
+      "furigana": "{頼|たの}む",
+      "indonesian": "meminta (tolong), memesan",
+      "pos": "verb",
+      "forms": {
+        "masu": "{頼|たの}みます",
+        "te": "{頼|たの}んで"
+      },
+      "usage": "Meminta orang melakukan sesuatu, atau memesan makanan dengan santai: ピザ、頼もうか (pesan piza, yuk?).",
+      "audio": "audio/ja/words/w-tanomu.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-erabu",
+      "japanese": "選ぶ",
+      "furigana": "{選|えら}ぶ",
+      "indonesian": "memilih",
+      "pos": "verb",
+      "forms": {
+        "masu": "{選|えら}びます",
+        "te": "{選|えら}んで"
+      },
+      "audio": "audio/ja/words/w-erabu.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-noru",
+      "japanese": "乗る",
+      "furigana": "{乗|の}る",
+      "indonesian": "naik (kendaraan)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{乗|の}ります",
+        "te": "{乗|の}って"
+      },
+      "usage": "Kendaraannya memakai に: 電車に乗る, bukan 電車を乗る. “Naik kereta” tidak butuh kata depan, jadi に ini mudah terlupa.",
+      "audio": "audio/ja/words/w-noru.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-oriru",
+      "japanese": "降りる",
+      "furigana": "{降|お}りる",
+      "indonesian": "turun (dari kendaraan)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{降|お}ります",
+        "te": "{降|お}りて"
+      },
+      "usage": "Kendaraan yang kamu turuni memakai を: バスを降りる. Kanjinya sama dengan hujan turun (降る), tapi katanya lain. Bahasa Indonesia juga memakai “turun” untuk keduanya.",
+      "audio": "audio/ja/words/w-oriru.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sumu",
+      "japanese": "住む",
+      "furigana": "{住|す}む",
+      "indonesian": "tinggal (di suatu tempat)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{住|す}みます",
+        "te": "{住|す}んで"
+      },
+      "usage": "Tempat tinggal biasanya diucapkan dengan ている: 東京に住んでいます (saya tinggal di Tokyo).",
+      "audio": "audio/ja/words/w-sumu.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tsuzukeru",
+      "japanese": "続ける",
+      "furigana": "{続|つづ}ける",
+      "indonesian": "terus melakukan, melanjutkan",
+      "pos": "verb",
+      "forms": {
+        "masu": "{続|つづ}けます",
+        "te": "{続|つづ}けて"
+      },
+      "usage": "Setelah batang kata kerja (bentuk ます tanpa ます): 勉強し続ける, terus belajar.",
+      "audio": "audio/ja/words/w-tsuzukeru.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yameru",
+      "japanese": "やめる",
+      "indonesian": "berhenti, keluar (dari)",
+      "pos": "verb",
+      "forms": {
+        "masu": "やめます",
+        "te": "やめて"
+      },
+      "usage": "Berhenti dari kebiasaan atau pekerjaan: たばこをやめた (sudah berhenti merokok). やめて！ artinya “hentikan!”",
+      "audio": "audio/ja/words/w-yameru.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kaeru-change",
+      "japanese": "変える",
+      "furigana": "{変|か}える",
+      "indonesian": "mengubah, mengganti (sesuatu)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{変|か}えます",
+        "te": "{変|か}えて"
+      },
+      "usage": "Kamu mengubah sesuatu dengan 変える; sesuatu berubah sendiri dengan 変わる (かわる). Seperti “mengubah” dan “berubah”.",
+      "audio": "audio/ja/words/w-kaeru-change.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sagasu",
+      "japanese": "探す",
+      "furigana": "{探|さが}す",
+      "indonesian": "mencari",
+      "pos": "verb",
+      "forms": {
+        "masu": "{探|さが}します",
+        "te": "{探|さが}して"
+      },
+      "audio": "audio/ja/words/w-sagasu.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mitsukeru",
+      "japanese": "見つける",
+      "furigana": "{見|み}つける",
+      "indonesian": "menemukan",
+      "pos": "verb",
+      "forms": {
+        "masu": "{見|み}つけます",
+        "te": "{見|み}つけて"
+      },
+      "usage": "探す itu mencari; 見つける itu menemukannya. 見つかる: barangnya ketemu.",
+      "audio": "audio/ja/words/w-mitsukeru.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-wasureru",
+      "japanese": "忘れる",
+      "furigana": "{忘|わす}れる",
+      "indonesian": "lupa; ketinggalan (barang)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{忘|わす}れます",
+        "te": "{忘|わす}れて"
+      },
+      "usage": "Juga untuk barang yang tertinggal: 傘を電車に忘れた (payungku ketinggalan di kereta).",
+      "audio": "audio/ja/words/w-wasureru.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-oboeru",
+      "japanese": "覚える",
+      "furigana": "{覚|おぼ}える",
+      "indonesian": "ingat; menghafal",
+      "pos": "verb",
+      "forms": {
+        "masu": "{覚|おぼ}えます",
+        "te": "{覚|おぼ}えて"
+      },
+      "usage": "覚えている artinya “ingat”: 覚えてる？ — kamu ingat?",
+      "audio": "audio/ja/words/w-oboeru.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-okuru",
+      "japanese": "送る",
+      "furigana": "{送|おく}る",
+      "indonesian": "mengirim; mengantar (seseorang)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{送|おく}ります",
+        "te": "{送|おく}って"
+      },
+      "usage": "駅まで送るよ — aku antar sampai stasiun, ya.",
+      "audio": "audio/ja/words/w-okuru.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kaesu",
+      "japanese": "返す",
+      "furigana": "{返|かえ}す",
+      "indonesian": "mengembalikan",
+      "pos": "verb",
+      "forms": {
+        "masu": "{返|かえ}します",
+        "te": "{返|かえ}して"
+      },
+      "audio": "audio/ja/words/w-kaesu.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kasu",
+      "japanese": "貸す",
+      "furigana": "{貸|か}す",
+      "indonesian": "meminjamkan",
+      "pos": "verb",
+      "forms": {
+        "masu": "{貸|か}します",
+        "te": "{貸|か}して"
+      },
+      "usage": "貸して！ adalah cara minta pinjam, seperti “pinjam, dong!”, padahal artinya “pinjamkan ke aku”. Ingat: “meminjamkan” itu 貸す, “meminjam” itu 借りる.",
+      "audio": "audio/ja/words/w-kasu.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kariru",
+      "japanese": "借りる",
+      "furigana": "{借|か}りる",
+      "indonesian": "meminjam",
+      "pos": "verb",
+      "forms": {
+        "masu": "{借|か}ります",
+        "te": "{借|か}りて"
+      },
+      "usage": "Orang yang kamu pinjami memakai に: 友達にお金を借りた (aku pinjam uang dari teman). Bahasa Indonesia memakai “dari”, bahasa Jepang memakai に.",
+      "audio": "audio/ja/words/w-kariru.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tetsudau",
+      "japanese": "手伝う",
+      "furigana": "{手伝|てつだ}う",
+      "indonesian": "membantu (mengerjakan sesuatu)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{手伝|てつだ}います",
+        "te": "{手伝|てつだ}って"
+      },
+      "usage": "Membantu mengerjakan sesuatu. 何か手伝おうか？ — ada yang bisa kubantu?",
+      "audio": "audio/ja/words/w-tetsudau.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-junbi",
+      "japanese": "準備する",
+      "furigana": "{準備|じゅんび}する",
+      "indonesian": "bersiap, menyiapkan",
+      "pos": "verb",
+      "forms": {
+        "masu": "{準備|じゅんび}します",
+        "te": "{準備|じゅんび}して"
+      },
+      "audio": "audio/ja/words/w-junbi.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yoyaku",
+      "japanese": "予約する",
+      "furigana": "{予約|よやく}する",
+      "indonesian": "memesan (tempat), reservasi",
+      "pos": "verb",
+      "forms": {
+        "masu": "{予約|よやく}します",
+        "te": "{予約|よやく}して"
+      },
+      "usage": "予約してあります — saya sudah reservasi. Memesan makanan itu 注文する atau 頼む; memesan kamar atau meja itu 予約する.",
+      "audio": "audio/ja/words/w-yoyaku.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-renraku",
+      "japanese": "連絡する",
+      "furigana": "{連絡|れんらく}する",
+      "indonesian": "menghubungi, mengabari",
+      "pos": "verb",
+      "forms": {
+        "masu": "{連絡|れんらく}します",
+        "te": "{連絡|れんらく}して"
+      },
+      "usage": "Lewat cara apa saja: pesan, telepon, email. 着いたら連絡してね — kabari aku kalau sudah sampai, ya.",
+      "audio": "audio/ja/words/w-renraku.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-setsumei",
+      "japanese": "説明する",
+      "furigana": "{説明|せつめい}する",
+      "indonesian": "menjelaskan",
+      "pos": "verb",
+      "forms": {
+        "masu": "{説明|せつめい}します",
+        "te": "{説明|せつめい}して"
+      },
+      "audio": "audio/ja/words/w-setsumei.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-annai",
+      "japanese": "案内する",
+      "furigana": "{案内|あんない}する",
+      "indonesian": "mengantar berkeliling, memandu",
+      "pos": "verb",
+      "forms": {
+        "masu": "{案内|あんない}します",
+        "te": "{案内|あんない}して"
+      },
+      "audio": "audio/ja/words/w-annai.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-renshuu",
+      "japanese": "練習する",
+      "furigana": "{練習|れんしゅう}する",
+      "indonesian": "berlatih",
+      "pos": "verb",
+      "forms": {
+        "masu": "{練習|れんしゅう}します",
+        "te": "{練習|れんしゅう}して"
+      },
+      "audio": "audio/ja/words/w-renshuu.mp3",
+      "tags": [
+        "kata kerja"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

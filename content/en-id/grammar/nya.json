@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-nya",
+  "connector": "-nya",
+  "gloss": "his, her, its; the; your (politely)",
+  "title": "-nya",
+  "pattern": "noun + -nya: rumahnya (his or her house; the house) · Harganya berapa? · Namanya siapa?",
+  "explanation": "-nya is the commonest ending in spoken Indonesian, and it does several jobs. Its basic meaning is his, her or its: rumahnya can be his house or her house, and the context tells you which. Very often it just means 'the', pointing at something you both know about: Kopinya enak (The coffee's good), Kamarnya di mana? (Where's the room?). With prices it's almost automatic: Harganya berapa? (How much is it?). Asking about the person you're talking to, it stands in for an awkward 'you': Namanya siapa? (What's your name?), Rumahnya di mana? (Where do you live?).",
+  "natural": "Add -nya wherever English would say 'the' about something in front of you or already mentioned: Nasinya enak. Airnya panas? It's also an easy polite 'your' when you're not sure whether to say Bapak, Ibu or kamu.",
+  "stiff": "Don't put -nya on something new to the conversation: Saya mau beli buku is 'I want to buy a book', while bukunya would be a book you'd both been talking about. With a group, or to be extra polite, the person's title is clearer than -nya for 'your': Nama Bapak siapa?",
+  "examples": [
+    {
+      "id": "gx-nya-1",
+      "indonesian": "Anaknya berapa, Bu?",
+      "english": "How many children do you have?",
+      "chunks": [
+        {
+          "t": "Anaknya ",
+          "w": "w-anak"
+        },
+        {
+          "t": "berapa, ",
+          "w": "w-berapa"
+        },
+        {
+          "t": "Bu?",
+          "w": "w-ibu"
+        }
+      ],
+      "gap": {
+        "before": "Anak",
+        "answer": "nya",
+        "after": " berapa, Bu?",
+        "options": [
+          "nya",
+          "mu",
+          "ku"
+        ],
+        "why": "-nya asks about her children politely; -mu is the casual 'your', too familiar for an older woman."
+      },
+      "cultureNote": "A standard small-talk question, along with Sudah menikah? (Are you married?). Indonesians ask about family early; it's friendly interest, not prying.",
+      "audio": "audio/id/grammar/gx-nya-1.mp3",
+      "tags": [
+        "grammar",
+        "nya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-nya-2",
+      "indonesian": "Kalau yang ini, harganya berapa?",
+      "english": "And how much is this one?",
+      "chunks": [
+        {
+          "t": "Kalau ",
+          "w": "w-kalau"
+        },
+        {
+          "t": "yang ini, ",
+          "w": "w-ini"
+        },
+        {
+          "t": "harganya ",
+          "w": "w-harga"
+        },
+        {
+          "t": "berapa?",
+          "w": "w-berapa"
+        }
+      ],
+      "gap": {
+        "before": "Kalau yang ini, ",
+        "answer": "harganya",
+        "after": " berapa?",
+        "options": [
+          "harganya",
+          "harga",
+          "harga dia"
+        ],
+        "why": "Prices take -nya, 'its price'. Harga alone sounds unfinished, and dia is only for people."
+      },
+      "audio": "audio/id/grammar/gx-nya-2.mp3",
+      "tags": [
+        "grammar",
+        "nya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-nya-3",
+      "indonesian": "Kamarnya bersih, tapi AC-nya tidak dingin.",
+      "english": "The room's clean, but the air-con isn't cold.",
+      "chunks": [
+        {
+          "t": "Kamarnya ",
+          "w": "w-kamar"
+        },
+        {
+          "t": "bersih, ",
+          "w": "w-bersih"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "AC-nya ",
+          "w": "w-ac"
+        },
+        {
+          "t": "tidak dingin.",
+          "w": "w-dingin"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kamarnya",
+        "after": " bersih, tapi AC-nya tidak dingin.",
+        "options": [
+          "Kamarnya",
+          "Kamar",
+          "Kamar dia"
+        ],
+        "why": "The room you're both looking at is 'the room': kamarnya. Kamar alone sounds like rooms in general."
+      },
+      "registerNotes": "After an abbreviation, -nya takes a hyphen: AC-nya, HP-nya.",
+      "audio": "audio/id/grammar/gx-nya-3.mp3",
+      "audioHint": "Kamarnya bersih, tapi a se-nya tidak dingin.",
+      "tags": [
+        "grammar",
+        "nya"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-nya-4",
+      "indonesian": "Dia tinggal di Bandung dengan suaminya.",
+      "english": "She lives in Bandung with her husband.",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di Bandung ",
+          "w": "w-di"
+        },
+        {
+          "t": "dengan "
+        },
+        {
+          "t": "suaminya.",
+          "w": "w-suami"
+        }
+      ],
+      "gap": {
+        "before": "Dia tinggal di Bandung dengan ",
+        "answer": "suaminya",
+        "after": ".",
+        "options": [
+          "suaminya",
+          "suami dia",
+          "dia suami"
+        ],
+        "ok": [
+          "suami dia"
+        ],
+        "note": "Suami dia means the same and is common in casual speech; suaminya is smoother.",
+        "why": "'Her husband' is suaminya: the owner comes after the thing, as -nya."
+      },
+      "pitfallNote": "The owner always follows the thing. Dia suami, in English order, means 'he's a husband'.",
+      "audio": "audio/id/grammar/gx-nya-4.mp3",
+      "tags": [
+        "grammar",
+        "nya"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "id": "market",
+  "title": "市場で値切る",
+  "category": "shopping",
+  "setting": "ジョグジャカルタのブリンハルジョ市場は、バティックで有名な市場です。バティックのシャツがずらりと掛かった店の前で足を止めると、お母さんくらいの年の女性店主が声をかけてきました。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "vendor",
+      "indonesian": "Cari apa, Kak? Silakan dilihat-lihat dulu.",
+      "japanese": "何をお探しですか？どうぞ見ていってください。",
+      "audio": "audio/id/scenario/market-n1.mp3",
+      "options": [
+        {
+          "phraseId": "sho-06",
+          "quality": "good",
+          "feedback": "Cari apa? への感じのいい答え方です。見るだけでも大丈夫。それでも店主はいちばんいいシャツを見せてくれるはずです。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Saya cari kemeja batik, Bu.",
+          "japanese": "バティックのシャツを探しています。",
+          "feedback": "相手が使った cari をそのまま使って答えています。年上の店主には Bu がぴったりです。",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Tidak.",
+          "japanese": "いいえ。",
+          "feedback": "Cari apa? は「はい・いいえ」で答える質問ではなく、tidak だけだとそっけなく聞こえます。やんわりかわすなら Lihat-lihat saja, ya です。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "vendor",
+      "indonesian": "Yang ini bagus, Kak. Batik asli Yogya.",
+      "japanese": "これ、いいですよ。本物のジョグジャのバティックです。",
+      "audio": "audio/id/scenario/market-n2.mp3",
+      "options": [
+        {
+          "phraseId": "sho-01",
+          "quality": "good",
+          "feedback": "指さしながら聞きましょう。yang ini（これ）で、店主が手に持っているシャツを指せます。",
+          "next": "n3"
+        },
+        {
+          "phraseId": "num-05",
+          "quality": "good",
+          "feedback": "値段をきちんと聞く言い方です。harganya は「その値段」。",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Berapa harga untuk ini?",
+          "japanese": "これに対する値段はいくらですか？",
+          "feedback": "通じますが、単語を一つずつ組み立てたような不自然な言い方です。指さして Yang ini berapa, Bu? か Berapa harganya? と言いましょう。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "vendor",
+      "indonesian": "Yang ini seratus lima puluh ribu, Kak.",
+      "japanese": "これは15万ルピアです。",
+      "audio": "audio/id/scenario/market-n3.mp3",
+      "options": [
+        {
+          "phraseId": "sho-03",
+          "quality": "good",
+          "feedback": "日本では店の人に「高い」と言うのは失礼に感じますが、ここでは笑顔で軽く言えば、値切りの最初の一手。悪口にはなりません。",
+          "next": "n4"
+        },
+        {
+          "phraseId": "sho-02",
+          "quality": "good",
+          "feedback": "値切りを始める定番の言い方。直訳すると「少なくしてもいいですか？」です。",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Terlalu mahal! Saya tidak mau.",
+          "japanese": "高すぎます！いりません。",
+          "feedback": "ぶっきらぼうなうえ、値切りを始めるどころか会話を終わらせてしまいます。軽い調子で Wah, mahal sekali、それから Boleh kurang? と続けましょう。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "vendor",
+      "indonesian": "Bisa kurang sedikit, Kak. Seratus tiga puluh, ya?",
+      "japanese": "少しなら下げられますよ。13万でどうですか？",
+      "audio": "audio/id/scenario/market-n4.mp3",
+      "options": [
+        {
+          "phraseId": "sho-04",
+          "quality": "good",
+          "feedback": "kalau ＋ 自分の値段で、希望額を伝えます。払ってもいい額より低めから始めると、間を取る余地ができます。",
+          "next": "n5"
+        },
+        {
+          "phraseId": "sho-05",
+          "quality": "good",
+          "feedback": "いきなり本当の値段を聞く言い方です。店主が ribu を省いたことに注目。市場では seratus tiga puluh だけで13万ルピアのことです。",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Lima puluh ribu.",
+          "japanese": "5万ルピア。",
+          "feedback": "数字だけだとぶっきらぼうですし、相手の値段の3分の1はいきなり下げすぎです。kalau … boleh? で包んで、なごやかに交渉しましょう。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "vendor",
+      "indonesian": "Seratus dua puluh ribu, ya, Kak. Itu sudah harga pas.",
+      "japanese": "じゃあ12万ルピアで。これがもうぎりぎりの値段です。",
+      "audio": "audio/id/scenario/market-n5.mp3",
+      "options": [
+        {
+          "phraseId": "sho-10",
+          "quality": "good",
+          "feedback": "ambil（取る）で「これを買います」と伝えます。相手も歩み寄ってくれたので、ここで手を打つのがちょうどいいところです。",
+          "next": "n6"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Oke, seratus dua puluh ribu, ya, Bu.",
+          "japanese": "わかりました、じゃあ12万ルピアで。",
+          "feedback": "金額を復唱すると取引成立の合図になり、お互い同じ数字を聞いたことも確かめられます。",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Seratus lima belas, ya, Bu?",
+          "japanese": "11万5千でどうですか？",
+          "feedback": "Sudah harga pas は「もうこれ以上は下げられない」という意味。最後の5千ルピアまで粘るとケチに見えます。その5千は、あなたより店主にとってずっと大きいのです。",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "vendor",
+      "indonesian": "Terima kasih, Kak. Ini kemejanya.",
+      "japanese": "ありがとうございます。シャツをどうぞ。",
+      "audio": "audio/id/scenario/market-n6.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Ini uangnya, Bu. Terima kasih.",
+          "japanese": "お金をどうぞ。ありがとうございます。",
+          "feedback": "お金は右手で渡しましょう。日本では両手で渡すと丁寧ですが、インドネシアで大事なのは右手を使うこと。左手で物を渡したり受け取ったりするのは失礼とされます。",
+          "next": "end"
+        },
+        {
+          "phraseId": "sho-11",
+          "quality": "awkward",
+          "feedback": "市場の店はほとんどが現金のみ。支払い方法は値切る前に聞きましょう。あとからでは遅いです。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-26",
+          "quality": "awkward",
+          "feedback": "「さようなら」のつもりでも、何年も会わない別れのように重く聞こえます。店を離れる時は Terima kasih, Bu だけで十分です。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "japanese": "15万ルピアから12万ルピアに。値切りは笑顔で。まず Wah, mahal sekali、次に Boleh kurang?、それから kalau を使って自分の値段を言い、間のどこかで手を打ちます。店の人が応じたら、買うのが礼儀です。お店やモールのように値段が表示されているところは定価です。",
+      "end": true,
+      "options": []
+    }
+  }
+}

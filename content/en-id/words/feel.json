@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "id": "words-feel",
+  "title": "Feelings & Reactions",
+  "description": "Feelings beyond the basics: relieved, embarrassed, moved, dying to know. Plus the words everyone uses with friends, like galau and gemas, and what each one says about how you feel.",
+  "items": [
+    {
+      "id": "w-bahagia",
+      "indonesian": "bahagia",
+      "english": "happy, content",
+      "pos": "adjective",
+      "registerNotes": "Deep, lasting happiness, as in a happy life or marriage: Semoga bahagia (Wishing you every happiness). For being pleased about something, senang is the everyday word.",
+      "audio": "audio/id/words/w-bahagia.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kecewa",
+      "indonesian": "kecewa",
+      "english": "disappointed",
+      "pos": "adjective",
+      "registerNotes": "Saya kecewa dengan pelayanannya (I'm disappointed with the service) is a firm but polite complaint.",
+      "audio": "audio/id/words/w-kecewa.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kaget",
+      "indonesian": "kaget",
+      "english": "startled, shocked, surprised",
+      "pos": "adjective",
+      "registerNotes": "The everyday word; terkejut is more formal. Bikin kaget aja (You gave me a fright) is the casual reaction.",
+      "audio": "audio/id/words/w-kaget.mp3",
+      "tags": [
+        "feelings",
+        "reactions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bingung",
+      "indonesian": "bingung",
+      "english": "confused; not sure what to do",
+      "pos": "adjective",
+      "registerNotes": "For being puzzled and for being torn: Saya bingung mau pilih yang mana (I can't decide which to pick).",
+      "audio": "audio/id/words/w-bingung.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-malu",
+      "indonesian": "malu",
+      "english": "embarrassed, shy, ashamed",
+      "pos": "adjective",
+      "cultureNote": "Malu is a strong social feeling, about losing face in front of others. Hosts say Jangan malu-malu (Don't be shy) to get guests to help themselves.",
+      "audio": "audio/id/words/w-malu.mp3",
+      "tags": [
+        "feelings",
+        "culture"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bangga",
+      "indonesian": "bangga",
+      "english": "proud",
+      "pos": "adjective",
+      "registerNotes": "Proud of someone is bangga sama, or more politely bangga dengan: Aku bangga sama kamu (I'm proud of you).",
+      "audio": "audio/id/words/w-bangga.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-lega",
+      "indonesian": "lega",
+      "english": "relieved; roomy",
+      "pos": "adjective",
+      "registerNotes": "Said with a breath out once something's over: Lega rasanya (What a relief). Of a room or a road, it means roomy.",
+      "audio": "audio/id/words/w-lega.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kesal",
+      "indonesian": "kesal",
+      "english": "annoyed, irritated",
+      "pos": "adjective",
+      "registerNotes": "Casually kesel. Saya agak kesal is a measured way to say you're annoyed; marah is outright angry.",
+      "audio": "audio/id/words/w-kesal.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sebal",
+      "indonesian": "sebal",
+      "english": "fed up, peeved",
+      "pos": "adjective",
+      "registerNotes": "Mostly casual, and said sebel: Sebel deh. Sulkier than kesal, and often half-joking.",
+      "audio": "audio/id/words/w-sebal.mp3",
+      "tags": [
+        "feelings",
+        "casual"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gugup",
+      "indonesian": "gugup",
+      "english": "nervous",
+      "pos": "adjective",
+      "registerNotes": "Casually grogi (from English groggy), especially for nerves before speaking or meeting someone new: Aku grogi banget.",
+      "audio": "audio/id/words/w-gugup.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-iri",
+      "indonesian": "iri",
+      "english": "envious",
+      "pos": "adjective",
+      "registerNotes": "Jadi iri, deh (Now I'm jealous) is a friendly, joking reply to someone's good news.",
+      "pitfallNote": "English 'jealous' is two words here: iri when you want what someone else has, cemburu in love.",
+      "audio": "audio/id/words/w-iri.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-cemburu",
+      "indonesian": "cemburu",
+      "english": "jealous (in love)",
+      "pos": "adjective",
+      "registerNotes": "For jealousy over a partner: Pacarnya gampang cemburu (Her boyfriend gets jealous easily).",
+      "audio": "audio/id/words/w-cemburu.mp3",
+      "tags": [
+        "feelings",
+        "love"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-terharu",
+      "indonesian": "terharu",
+      "english": "moved, touched",
+      "pos": "adjective",
+      "registerNotes": "When a speech, a kind gesture or a wedding brings a lump to your throat: Saya terharu sekali.",
+      "audio": "audio/id/words/w-terharu.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-cemas",
+      "indonesian": "cemas",
+      "english": "anxious, uneasy",
+      "pos": "adjective",
+      "registerNotes": "A lingering, nervous worry, and more formal than khawatir. Casually people say khawatir, or kepikiran (it's playing on my mind).",
+      "audio": "audio/id/words/w-cemas.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-puas",
+      "indonesian": "puas",
+      "english": "satisfied",
+      "pos": "adjective",
+      "registerNotes": "Sampai puas means to your heart's content: makan sampai puas (eat as much as you like).",
+      "audio": "audio/id/words/w-puas.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gemas",
+      "indonesian": "gemas",
+      "english": "overcome by cuteness; exasperated",
+      "pos": "adjective",
+      "registerNotes": "Usually said gemes: the urge to squeeze a chubby baby or a kitten. It can also be exasperation, when someone is being slow or silly.",
+      "audio": "audio/id/words/w-gemas.mp3",
+      "tags": [
+        "feelings",
+        "casual"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sabar",
+      "indonesian": "sabar",
+      "english": "patient",
+      "pos": "adjective",
+      "registerNotes": "Sabar, ya (Be patient) comforts someone who's waiting or going through a hard time.",
+      "cultureNote": "Patience and calm are highly valued. Losing your temper in public loses you face, whoever was at fault.",
+      "audio": "audio/id/words/w-sabar.mp3",
+      "tags": [
+        "feelings",
+        "culture"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-semangat",
+      "indonesian": "semangat",
+      "english": "spirit, enthusiasm; (to someone) you've got this",
+      "pos": "noun",
+      "registerNotes": "Said on its own to cheer someone on before an exam or a long day: Semangat, ya. Lagi semangat means you're full of energy for something.",
+      "audio": "audio/id/words/w-semangat.mp3",
+      "tags": [
+        "feelings",
+        "encouragement"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-galau",
+      "indonesian": "galau",
+      "english": "mixed-up, restless, moody",
+      "pos": "adjective",
+      "registerNotes": "Slang for a restless, can't-decide mood, often over love: Lagi galau, ya? With friends, not in formal speech.",
+      "audio": "audio/id/words/w-galau.mp3",
+      "tags": [
+        "feelings",
+        "casual"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-ngantuk",
+      "indonesian": "ngantuk",
+      "english": "sleepy",
+      "pos": "adjective",
+      "registerNotes": "What everyone says; the written form is mengantuk. Ngantuk berat (really sleepy) is common after a big lunch.",
+      "audio": "audio/id/words/w-ngantuk.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kesepian",
+      "indonesian": "kesepian",
+      "english": "lonely",
+      "pos": "adjective",
+      "forms": {
+        "root": "sepi"
+      },
+      "registerNotes": "From sepi (quiet, deserted): left on your own and feeling it. Saya kesepian di sini.",
+      "audio": "audio/id/words/w-kesepian.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sayang",
+      "indonesian": "sayang",
+      "english": "to love, to be fond of",
+      "pos": "verb",
+      "registerNotes": "Warmer and softer than cinta, and said to partners, children and family alike: Aku sayang kamu.",
+      "pitfallNote": "It's also 'darling' (Sayang, sudah makan?) and 'a pity' (Sayang sekali), so listen for which one is meant.",
+      "audio": "audio/id/words/w-sayang.mp3",
+      "tags": [
+        "feelings",
+        "love"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bersyukur",
+      "indonesian": "bersyukur",
+      "english": "to be grateful, to give thanks",
+      "pos": "verb",
+      "forms": {
+        "root": "syukur"
+      },
+      "registerNotes": "Often with a sense of thanks to God: Kita harus bersyukur (We should be grateful for what we have). Syukurlah means 'thank goodness'.",
+      "audio": "audio/id/words/w-bersyukur.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menyesal",
+      "indonesian": "menyesal",
+      "english": "to regret, to be sorry",
+      "pos": "verb",
+      "forms": {
+        "root": "sesal"
+      },
+      "registerNotes": "Casually nyesel: Nyesel nggak ikut (I wish I'd gone).",
+      "pitfallNote": "Saya menyesal is real regret or a serious apology. For an everyday sorry, say maaf.",
+      "audio": "audio/id/words/w-menyesal.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tertarik",
+      "indonesian": "tertarik",
+      "english": "interested, attracted",
+      "pos": "adjective",
+      "forms": {
+        "root": "tarik"
+      },
+      "registerNotes": "From tarik (to pull, as on doors): drawn to something. Saya tertarik dengan budaya Jawa (I'm interested in Javanese culture).",
+      "audio": "audio/id/words/w-tertarik.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-penasaran",
+      "indonesian": "penasaran",
+      "english": "curious, dying to know",
+      "pos": "adjective",
+      "registerNotes": "Stronger than English 'curious': it nags at you until you find out. Jadi penasaran (Now I really want to know) is a common reply to a teaser.",
+      "audio": "audio/id/words/w-penasaran.mp3",
+      "tags": [
+        "feelings"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

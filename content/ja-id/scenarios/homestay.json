@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "homestay",
+  "title": "民宿にチェックインする",
+  "category": "hotel",
+  "setting": "バリ島ウブドの家族経営の宿（ホームステイ）。昼過ぎ、バックパックを背負って庭の門から入ると、50代くらいの女性オーナーが出迎えてくれました。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "host",
+      "indonesian": "Selamat siang. Ada yang bisa saya bantu?",
+      "japanese": "こんにちは。何かご用ですか？",
+      "audio": "audio/id/scenario/homestay-n1.mp3",
+      "options": [
+        {
+          "phraseId": "hot-03",
+          "quality": "good",
+          "feedback": "atas nama で予約の名前を伝えます。アプリで予約したなら lewat aplikasi を付け加えましょう。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Selamat siang, Bu. Saya Sam. Saya sudah pesan kamar.",
+          "japanese": "こんにちは。サムです。部屋を予約しています。",
+          "feedback": "Bu を付けてあいさつを返すと、感じのいい始まりになります。sudah pesan（もう頼んである）が「予約しています」の言い方で、日本語の「予約してあります」と同じ発想です。",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya mempunyai reservasi.",
+          "japanese": "私は予約を所有しています。",
+          "feedback": "正しいのですが、堅くて直訳調です。mempunyai は書き言葉の「所有する」。ふだんは Saya sudah pesan kamar（もう部屋を頼んである）と言います。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "host",
+      "indonesian": "Oh, iya. Selamat datang, Kak. Boleh pinjam paspornya sebentar?",
+      "japanese": "ああ、はい。ようこそ。パスポートを少しお借りしてもいいですか？",
+      "audio": "audio/id/scenario/homestay-n2.mp3",
+      "options": [
+        {
+          "phraseId": "air-01",
+          "quality": "good",
+          "feedback": "Ini … saya は、何かを手渡す時ならいつでも使えます。どこに泊まっても、パスポートの情報は控えられます。",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Boleh, Bu. Ini.",
+          "japanese": "はい、どうぞ。",
+          "feedback": "Boleh …? と聞かれたら boleh（いいですよ）で答えます。ya より自然です。",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Kenapa pinjam? Tidak usah.",
+          "japanese": "なぜ借りるんですか？必要ありません。",
+          "feedback": "pinjam（借りる）は、日本語の「お借りしてもいいですか」と同じ丁寧な頼み方です。情報を控えたらすぐに返してくれます。どこに泊まっても普通のことです。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "host",
+      "indonesian": "Terima kasih. Ini kuncinya, Kak. Kamar nomor tiga, di atas.",
+      "japanese": "ありがとうございます。鍵をどうぞ。3号室、上の階です。",
+      "audio": "audio/id/scenario/homestay-n3.mp3",
+      "options": [
+        {
+          "phraseId": "hot-06",
+          "quality": "good",
+          "feedback": "着いた時に聞いておきたいことです。termasuk は「含まれる」。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Sarapannya jam berapa, Bu?",
+          "japanese": "朝食は何時ですか？",
+          "feedback": "sarapannya（その朝食）＋ jam berapa? で、何でも時間を聞けます。",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Apakah sarapan termasuk dalam harga kamar?",
+          "japanese": "朝食は部屋の料金に含まれておりますでしょうか？",
+          "feedback": "正しいのですが、書類のような言い方です。apakah や dalam harga kamar は書き言葉。丁寧にしようとして堅くなるより、Sudah termasuk sarapan? と聞くのが自然です。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "host",
+      "indonesian": "Iya, Kak. Sarapannya jam tujuh sampai jam sepuluh, di teras.",
+      "japanese": "はい。朝食は7時から10時まで、テラスでどうぞ。",
+      "audio": "audio/id/scenario/homestay-n4.mp3",
+      "options": [
+        {
+          "phraseId": "hot-07",
+          "quality": "good",
+          "feedback": "password はふだん使う言葉。Wi-Fi-nya の -nya で「ここの Wi-Fi」という意味になります。",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Wi-Fi-nya ada, Bu?",
+          "japanese": "Wi-Fi はありますか？",
+          "feedback": "Ada …?（〜はありますか？）は、必要なものなら何にでも使えます。air panas（お湯）、handuk（タオル）、Wi-Fi。",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Apa password Wi-Fi Anda?",
+          "japanese": "あなたの Wi-Fi のパスワードは何ですか？",
+          "feedback": "通じますが、Anda は教科書の丁寧な「あなた」で、面と向かって使うと堅く聞こえます。それに彼女個人のパスワードでもありません。-nya を使って Password Wi-Fi-nya apa? と聞きましょう。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "host",
+      "indonesian": "Password-nya ada di kartu di meja kamar. Kalau perlu apa-apa, panggil saya saja, ya.",
+      "japanese": "パスワードは部屋のテーブルのカードに書いてあります。何か必要なら、遠慮なく呼んでくださいね。",
+      "audio": "audio/id/scenario/homestay-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Baik, Bu. Terima kasih banyak.",
+          "japanese": "わかりました。どうもありがとうございます。",
+          "feedback": "baik（わかりました）で話を受け止め、terima kasih banyak で心を込めてお礼を言えます。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "good",
+          "feedback": "いつでも誰にでも使えます。Bu を付けて Terima kasih, Bu と言うと、もっと温かくなります。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-23",
+          "quality": "wrong",
+          "feedback": "日本語の「バイバイ」と同じで、友だちや子ども向けです。Ibu と呼ぶ相手には Terima kasih, Bu がふさわしいです。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "japanese": "チェックイン完了。どこに泊まってもパスポートを渡すのは普通のことです。着いたら、必要なことを聞いておきましょう。Sudah termasuk sarapan?、Sarapannya jam berapa?、Password Wi-Fi-nya apa? の3つです。家族経営の宿では毎日同じ人と顔を合わせるので、名前を覚えましょう。Bu ＋名前は、日本語の「〇〇さん」のように温かく丁寧です。",
+      "end": true,
+      "options": []
+    }
+  }
+}

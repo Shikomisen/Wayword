@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "lost",
+  "title": "Asking the way",
+  "category": "directions",
+  "setting": "You're trying to find the train station through a maze of narrow lanes in Jakarta, and your map app keeps sending you round in circles. A man sitting outside a small shop sees you staring at your phone.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "passerby",
+      "indonesian": "Cari apa, Kak? Bisa saya bantu?",
+      "english": "Looking for something? Can I help?",
+      "audio": "audio/id/scenario/lost-n1.mp3",
+      "options": [
+        {
+          "phraseId": "dir-08",
+          "quality": "good",
+          "feedback": "Honest and clear. Tersesat is losing your way.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "dir-01",
+          "quality": "good",
+          "feedback": "The classic polite opener before asking the way. Numpang makes it humble, as if borrowing a moment of his time.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Saya hilang.",
+          "english": "I'm missing.",
+          "feedback": "Hilang is for things that have gone missing, so said of yourself it sounds as if you've vanished. For losing your way, it's tersesat.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "passerby",
+      "indonesian": "Oh. Mau ke mana, Kak?",
+      "english": "Oh. Where are you trying to get to?",
+      "audio": "audio/id/scenario/lost-n2.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Ke stasiun kereta, Pak.",
+          "english": "To the train station.",
+          "feedback": "Ke (to) plus the place is all he needs.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "dir-02",
+          "quality": "good",
+          "feedback": "The place first and di mana last, the way people usually ask. The ya keeps it soft.",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Di stasiun, Pak.",
+          "english": "At the station.",
+          "feedback": "Di is for where something is; for where you're going, it's ke. Ke stasiun, Pak.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "passerby",
+      "indonesian": "Stasiun? Tidak terlalu jauh.",
+      "english": "The station? It's not too far.",
+      "audio": "audio/id/scenario/lost-n3.mp3",
+      "options": [
+        {
+          "phraseId": "dir-04",
+          "quality": "good",
+          "feedback": "A useful check: dekat and tidak jauh often mean close by motorbike.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "dir-10",
+          "quality": "good",
+          "feedback": "Hand over your phone with the map open. People are used to it.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Apakah saya bisa berjalan kaki ke sana?",
+          "english": "Would I be able to walk there?",
+          "feedback": "Correct but stiff: apakah and berjalan kaki belong in writing. In speech it's Bisa jalan kaki ke sana?",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "passerby",
+      "indonesian": "Bisa. Dari sini lurus saja, nanti di perempatan belok kanan. Stasiunnya di sebelah kiri, dekat masjid.",
+      "english": "Sure. Go straight on from here, then turn right at the crossroads. The station's on the left, near the mosque.",
+      "audio": "audio/id/scenario/lost-n4.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Lurus, lalu belok kanan, ya, Pak?",
+          "english": "Straight on, then turn right?",
+          "feedback": "Repeating directions back is the best way to check them, and he'll correct you if you've got it wrong.",
+          "next": "n6"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Lurus, lalu belok kiri, ya?",
+          "english": "Straight on, then turn left?",
+          "feedback": "He said belok kanan: turn right. Kiri is left, which is the side the station is on after the turn.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "gre-12",
+          "quality": "good",
+          "feedback": "Always fine to ask, and he'll go through it again more slowly.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "passerby",
+      "indonesian": "Lurus dulu, ya. Nanti di perempatan, belok kanan. Kanan, ya, Kak.",
+      "english": "Straight on first. Then at the crossroads, turn right. Right, OK?",
+      "audio": "audio/id/scenario/lost-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Oh, kanan. Lurus, lalu belok kanan, ya?",
+          "english": "Oh, right. Straight on, then turn right?",
+          "feedback": "Checking it back once more is never rude when you're the one who's lost.",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Oke, oke.",
+          "english": "OK, OK.",
+          "feedback": "Saying OK without checking is how you end up lost again. Repeat the directions back: Lurus, lalu belok kanan, ya?",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "passerby",
+      "indonesian": "Iya. Hati-hati, ya, Kak.",
+      "english": "That's it. Take care.",
+      "audio": "audio/id/scenario/lost-n6.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Terima kasih banyak, Pak.",
+          "english": "Thank you very much.",
+          "feedback": "Banyak (a lot) makes it a warm thank-you for his time.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Mari, Pak. Terima kasih.",
+          "english": "Bye now. Thank you.",
+          "feedback": "Mari, Pak is a polite goodbye as you walk on.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-20",
+          "quality": "awkward",
+          "feedback": "A bare ya as you walk off sounds offhand after his help. Thank him: Terima kasih banyak, Pak.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "english": "Found it. Directions come with landmarks such as a crossroads, the traffic lights or a mosque, more than street names. Lurus is straight on, belok is turn, kiri is left and kanan is right. Repeat the directions back to check, and ask again further along if you need to: people are glad to help.",
+      "end": true,
+      "options": []
+    }
+  }
+}

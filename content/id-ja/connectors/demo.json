@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "con-demo",
+  "connector": "でも",
+  "gloss": "tapi (kalimat baru)",
+  "title": "でも — tapi (kalimat baru)",
+  "pattern": "A。でも、B。",
+  "explanation": "でも memulai kalimat baru yang berlawanan dengan kalimat sebelumnya: “Tapi…”. Posisinya sama seperti “tapi” di awal kalimat dalam bahasa Indonesia. けど dan が menyambung dua bagian dalam satu kalimat (di akhir bagian pertama); でも membuka kalimat baru. でも juga cara untuk membantah dengan halus dalam percakapan: でも、{高|たか}いよ — tapi mahal, lho.",
+  "natural": "Percakapan sehari-hari, santai maupun sopan. Sangat umum saat menanggapi: でも… (iya, tapi…).",
+  "stiff": "Tulisan formal memakai しかし, mirip “namun”. Dan kalau setiap jawabanmu dimulai dengan でも, kamu terdengar selalu tidak setuju.",
+  "examples": [
+    {
+      "id": "cx-demo-1",
+      "japanese": "映画は長かった。でも、面白かった。",
+      "furigana": "{映画|えいが}は{長|なが}かった。でも、{面白|おもしろ}かった。",
+      "indonesian": "Filmnya panjang. Tapi seru.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{映画|えいが}は",
+          "w": "w-eiga"
+        },
+        {
+          "t": "{長|なが}かった。"
+        },
+        {
+          "t": "でも、"
+        },
+        {
+          "t": "{面白|おもしろ}かった。"
+        }
+      ],
+      "gap": {
+        "before": "{映画|えいが}は{長|なが}かった。",
+        "answer": "でも",
+        "after": "、{面白|おもしろ}かった。",
+        "options": [
+          "でも",
+          "だから",
+          "そして"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-demo-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "demo"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-demo-2",
+      "japanese": "行きたいです。でも、時間がありません。",
+      "furigana": "{行|い}きたいです。でも、{時間|じかん}がありません。",
+      "indonesian": "Saya ingin pergi. Tapi saya tidak punya waktu.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{行|い}きたいです。",
+          "w": "w-iku"
+        },
+        {
+          "t": "でも、"
+        },
+        {
+          "t": "{時間|じかん}が",
+          "w": "w-jikan"
+        },
+        {
+          "t": "ありません。"
+        }
+      ],
+      "gap": {
+        "before": "{行|い}きたいです。",
+        "answer": "でも",
+        "after": "、{時間|じかん}がありません。",
+        "options": [
+          "でも",
+          "だから",
+          "それから"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-demo-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "demo"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-demo-3",
+      "japanese": "安いね。でも、ちょっと小さいかな。",
+      "furigana": "{安|やす}いね。でも、ちょっと{小|ちい}さいかな。",
+      "indonesian": "Murah, ya. Tapi sepertinya agak kecil.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{安|やす}いね。",
+          "w": "w-yasui"
+        },
+        {
+          "t": "でも、"
+        },
+        {
+          "t": "ちょっと",
+          "w": "w-chotto"
+        },
+        {
+          "t": "{小|ちい}さいかな。",
+          "w": "w-chiisai"
+        }
+      ],
+      "gap": {
+        "before": "{安|やす}いね。",
+        "answer": "でも",
+        "after": "、ちょっと{小|ちい}さいかな。",
+        "options": [
+          "でも",
+          "だから",
+          "それから"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-demo-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "demo"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-demo-4",
+      "japanese": "毎日勉強しています。でも、まだ話せません。",
+      "furigana": "{毎日|まいにち}{勉強|べんきょう}しています。でも、まだ{話|はな}せません。",
+      "indonesian": "Saya belajar setiap hari. Tapi saya masih belum bisa bicara.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{毎日|まいにち}",
+          "w": "w-mainichi"
+        },
+        {
+          "t": "{勉強|べんきょう}しています。",
+          "w": "w-benkyou"
+        },
+        {
+          "t": "でも、"
+        },
+        {
+          "t": "まだ",
+          "w": "w-mada"
+        },
+        {
+          "t": "{話|はな}せません。",
+          "w": "w-hanasu"
+        }
+      ],
+      "gap": {
+        "before": "{毎日|まいにち}{勉強|べんきょう}しています。",
+        "answer": "でも",
+        "after": "、まだ{話|はな}せません。",
+        "options": [
+          "でも",
+          "だから",
+          "そして"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-demo-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "demo"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

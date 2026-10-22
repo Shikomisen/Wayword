@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "id": "words-key",
+  "title": "文を支える言葉",
+  "description": "インドネシア語のほとんどの文に出てくる短い言葉：否定、「したい」「できる」、「もう」「まだ」、「〜へ」「〜から」、「そして」「でも」「だから」。文法レッスンの土台になります。",
+  "items": [
+    {
+      "id": "w-tidak",
+      "indonesian": "tidak",
+      "japanese": "〜ない（動詞・形容詞の否定）",
+      "pos": "adverb",
+      "registerNotes": "日本語の「〜ない」と違い、動詞や形容詞の前に置きます：tidak tahu（知らない）、tidak mahal（高くない）。普段の会話ではたいてい nggak です。",
+      "pitfallNote": "名詞には使いません。名詞の否定は bukan：Ini bukan kopi saya（これは私のコーヒーではありません）。ini tidak kopi saya とは言いません。",
+      "audio": "audio/id/words/w-tidak.mp3",
+      "tags": [
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bukan",
+      "indonesian": "bukan",
+      "japanese": "〜ではない（名詞の否定）；〜でしょう？",
+      "pos": "adverb",
+      "registerNotes": "物や人を否定します：Dia bukan guru（彼女は先生ではありません）。文末に置くと同意を求めます：Enak, bukan?（おいしいでしょう？）",
+      "audio": "audio/id/words/w-bukan.mp3",
+      "tags": [
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-mau",
+      "indonesian": "mau",
+      "japanese": "ほしい、〜したい；〜するつもり",
+      "pos": "verb",
+      "registerNotes": "Saya mau kopi（コーヒーをください）はお店でも十分丁寧です。「これから〜する」の意味にもなります：Saya mau pulang（もう帰ります）。ingin は、より改まった「〜したい」です。",
+      "audio": "audio/id/words/w-mau.mp3",
+      "tags": [
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bisa",
+      "indonesian": "bisa",
+      "japanese": "できる",
+      "pos": "verb",
+      "registerNotes": "動詞の前に置きます：Saya bisa masak（料理ができます）。言葉なら、日本語の「〜ができる」と同じく bisa だけで十分です：Saya bisa sedikit bahasa Indonesia（インドネシア語が少しできます）。Bisa? だけで「できますか？」と聞けて、答えは Bisa か Tidak bisa です。",
+      "audio": "audio/id/words/w-bisa.mp3",
+      "tags": [
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-harus",
+      "indonesian": "harus",
+      "japanese": "〜しなければならない",
+      "pos": "verb",
+      "registerNotes": "Saya harus pergi（行かなければなりません）。Tidak harus は「〜しなくてもいい」で、「〜してはいけない」ではありません。禁止は jangan か tidak boleh です。",
+      "audio": "audio/id/words/w-harus.mp3",
+      "tags": [
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-boleh",
+      "indonesian": "boleh",
+      "japanese": "〜してもいい",
+      "pos": "verb",
+      "registerNotes": "Boleh saya duduk di sini?（ここに座ってもいいですか？）が、許可を求める丁寧な言い方です。答えは Boleh（どうぞ）か Tidak boleh（だめです）。",
+      "audio": "audio/id/words/w-boleh.mp3",
+      "tags": [
+        "必須",
+        "ていねい"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sudah",
+      "indonesian": "sudah",
+      "japanese": "もう〜した、済んだ",
+      "pos": "adverb",
+      "registerNotes": "済んだことを表します：Saya sudah makan（もう食べました）。日本語の「もう〜した？」「まだ」とよく似ていて、Sudah …? と聞かれたら、ya や tidak ではなく Sudah か Belum で答えます。くだけると udah。",
+      "audio": "audio/id/words/w-sudah.mp3",
+      "tags": [
+        "必須",
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-belum",
+      "indonesian": "belum",
+      "japanese": "まだ〜ない",
+      "pos": "adverb",
+      "registerNotes": "belum は「これからするかも」という含みのある否定です：Sudah makan? に Belum（まだです）、Saya belum pernah ke Bali（まだバリに行ったことがありません）。ここで tidak と言うと「絶対にしない」のように聞こえます。",
+      "audio": "audio/id/words/w-belum.mp3",
+      "tags": [
+        "必須",
+        "時間"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sedang",
+      "indonesian": "sedang",
+      "japanese": "〜している（最中）",
+      "pos": "adverb",
+      "registerNotes": "動詞の前に置きます：Dia sedang makan（彼女は食事中です）。くだけた会話では lagi を使います：Aku lagi di jalan（今向かってるところ）。",
+      "pitfallNote": "sedang には「中くらいの」という意味もあります：ukuran sedang は M サイズ。",
+      "audio": "audio/id/words/w-sedang.mp3",
+      "tags": [
+        "必須",
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-akan",
+      "indonesian": "akan",
+      "japanese": "〜するだろう、〜する予定だ",
+      "pos": "adverb",
+      "registerNotes": "未来を表しますが、主に丁寧な話し方や書き言葉です：Besok saya akan ke Jakarta（明日ジャカルタに行きます）。会話ではたいてい mau や nanti で済ませます。",
+      "audio": "audio/id/words/w-akan.mp3",
+      "tags": [
+        "必須",
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-di",
+      "indonesian": "di",
+      "japanese": "〜に、〜で（場所）",
+      "pos": "preposition",
+      "registerNotes": "人や物がある場所に使います：di rumah（家に）、di Bali（バリで）。Di mana? は「どこ？」です。",
+      "pitfallNote": "日本語の「に」は「市場にいる」にも「市場に行く」にも使いますが、いる場所は di、行く先は ke です：Saya mau ke pasar（市場に行きます）。Saya mau di pasar とは言いません。",
+      "audio": "audio/id/words/w-di.mp3",
+      "tags": [
+        "必須",
+        "場所"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ke",
+      "indonesian": "ke",
+      "japanese": "〜へ、〜に（行き先）",
+      "pos": "preposition",
+      "registerNotes": "ある場所へ向かう動きに使います：ke pasar（市場へ）、ke sana（あそこへ）。Ke mana? は「どこへ？」で、Mau ke mana?（どちらへ？）はよくあるあいさつです。",
+      "audio": "audio/id/words/w-ke.mp3",
+      "tags": [
+        "必須",
+        "場所"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dari",
+      "indonesian": "dari",
+      "japanese": "〜から",
+      "pos": "preposition",
+      "registerNotes": "どこから来たかを言います：Saya dari Selandia Baru（ニュージーランドから来ました）、日本からなら Saya dari Jepang。Dari mana?（どちらから？）は、ほぼすべての初対面の会話で聞かれます。",
+      "audio": "audio/id/words/w-dari.mp3",
+      "tags": [
+        "必須",
+        "場所"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dan",
+      "indonesian": "dan",
+      "japanese": "〜と、そして",
+      "pos": "conjunction",
+      "registerNotes": "語と語、文と文をつなぎます：nasi dan ayam（ご飯と鶏肉）。ただし「友達と行く」の「と」は dan ではなく dengan か sama です：Saya pergi sama teman（友達と行きます）。",
+      "audio": "audio/id/words/w-dan.mp3",
+      "tags": [
+        "必須",
+        "つなぎ言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tapi",
+      "indonesian": "tapi",
+      "japanese": "でも、しかし",
+      "pos": "conjunction",
+      "registerNotes": "書き言葉の tetapi の、話し言葉の形です：Enak, tapi mahal（おいしいけど高い）。",
+      "audio": "audio/id/words/w-tapi.mp3",
+      "tags": [
+        "必須",
+        "つなぎ言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-karena",
+      "indonesian": "karena",
+      "japanese": "〜から、〜ので",
+      "pos": "conjunction",
+      "registerNotes": "日本語とは逆に、理由は karena の後に来ます：Saya pulang karena capek（疲れたので帰ります）。友達同士ではよく soalnya を使います。",
+      "audio": "audio/id/words/w-karena.mp3",
+      "tags": [
+        "必須",
+        "つなぎ言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-jadi",
+      "indonesian": "jadi",
+      "japanese": "だから；〜になる",
+      "pos": "conjunction",
+      "registerNotes": "結果を言う「だから」：Hujan, jadi kami di rumah（雨なので家にいます）。動詞としては「〜になる」、または予定どおり「実行する」：Jadi pergi?（予定どおり行く？）",
+      "audio": "audio/id/words/w-jadi.mp3",
+      "tags": [
+        "必須",
+        "つなぎ言葉"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kalau",
+      "indonesian": "kalau",
+      "japanese": "もし〜なら、〜するとき",
+      "pos": "conjunction",
+      "registerNotes": "Kalau hujan, kita naik taksi（雨ならタクシーに乗ろう）。Kalau saya… は「私はというと…」の意味にもなります。",
+      "audio": "audio/id/words/w-kalau.mp3",
+      "tags": [
+        "必須",
+        "つなぎ言葉"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-juga",
+      "indonesian": "juga",
+      "japanese": "〜も",
+      "pos": "adverb",
+      "registerNotes": "日本語の「も」と同じく、付け加える言葉の後に置きます：Saya juga（私も）、Saya mau teh juga（紅茶もください）。",
+      "audio": "audio/id/words/w-juga.mp3",
+      "tags": [
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sangat",
+      "indonesian": "sangat",
+      "japanese": "とても",
+      "pos": "adverb",
+      "registerNotes": "sangat は形容詞の前（sangat enak）、sekali は後（enak sekali）、友達同士では banget（enak banget）。どれも「とても」です。",
+      "audio": "audio/id/words/w-sangat.mp3",
+      "tags": [
+        "必須"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

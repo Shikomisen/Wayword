@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-kara-made",
+  "connector": "から・まで",
+  "gloss": "dari… sampai",
+  "title": "から〜まで — dari… sampai",
+  "pattern": "A から B まで",
+  "explanation": "から artinya “dari” dan まで artinya “sampai”, untuk tempat dan waktu: {駅|えき}から{家|いえ}まで — dari stasiun sampai rumah; 9{時|じ}から5{時|じ}まで — dari jam sembilan sampai jam lima. Keduanya ada sesudah kata bendanya: {駅|えき}から = dari stasiun. Masing-masing juga bisa dipakai sendiri: {明日|あした}から — mulai besok.",
+  "natural": "Untuk jam buka, perjalanan, dan rencana: {何時|なんじ}までですか — sampai jam berapa (bukanya)?",
+  "stiff": "から di sini artinya “dari”, bukan から yang artinya “karena” (pelajaran tingkat Dasar). Yang ada sebelumnya membedakan keduanya: tempat atau waktu, atau satu alasan utuh.",
+  "examples": [
+    {
+      "id": "gx-kara-made-1",
+      "japanese": "駅から家まで歩きます。",
+      "furigana": "{駅|えき}から{家|いえ}まで{歩|ある}きます。",
+      "romaji": "eki kara ie made arukimasu",
+      "indonesian": "Saya jalan kaki dari stasiun sampai rumah.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{駅|えき}から",
+          "w": "w-eki"
+        },
+        {
+          "t": "{家|いえ}まで",
+          "w": "w-ie"
+        },
+        {
+          "t": "{歩|ある}きます。",
+          "w": "w-aruku"
+        }
+      ],
+      "gap": {
+        "before": "{駅|えき}から{家|いえ}",
+        "answer": "まで",
+        "after": "{歩|ある}きます。",
+        "options": [
+          "まで",
+          "から",
+          "に"
+        ],
+        "why": "Sampai rumah: まで."
+      },
+      "audio": "audio/ja/grammar/gx-kara-made-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "kara-made"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-kara-made-2",
+      "japanese": "仕事は九時から五時までです。",
+      "furigana": "{仕事|しごと}は{九時|くじ}から{五時|ごじ}までです。",
+      "romaji": "shigoto wa kuji kara goji made desu",
+      "indonesian": "Jam kerja saya dari jam sembilan sampai jam lima.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{仕事|しごと}は",
+          "w": "w-shigoto"
+        },
+        {
+          "t": "{九時|くじ}から"
+        },
+        {
+          "t": "{五時|ごじ}までです。"
+        }
+      ],
+      "gap": {
+        "before": "{仕事|しごと}は{九時|くじ}",
+        "answer": "から",
+        "after": "{五時|ごじ}までです。",
+        "options": [
+          "から",
+          "まで",
+          "に"
+        ],
+        "why": "Mulai jam sembilan: から."
+      },
+      "audio": "audio/ja/grammar/gx-kara-made-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "kara-made"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-kara-made-3",
+      "japanese": "明日から一週間、休みだよ。",
+      "furigana": "{明日|あした}から{一週間|いっしゅうかん}、{休|やす}みだよ。",
+      "romaji": "ashita kara isshūkan, yasumi da yo",
+      "indonesian": "Mulai besok aku libur seminggu.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{明日|あした}から",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{一週間|いっしゅうかん}、"
+        },
+        {
+          "t": "{休|やす}みだよ。",
+          "w": "w-yasumi"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}",
+        "answer": "から",
+        "after": "{一週間|いっしゅうかん}、{休|やす}みだよ。",
+        "options": [
+          "から",
+          "まで",
+          "で"
+        ],
+        "why": "Mulai besok: 明日から."
+      },
+      "audio": "audio/ja/grammar/gx-kara-made-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "kara-made"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-kara-made-4",
+      "japanese": "お店は何時までですか。",
+      "furigana": "お{店|みせ}は{何時|なんじ}までですか。",
+      "romaji": "o-mise wa nanji made desu ka",
+      "indonesian": "Tokonya buka sampai jam berapa?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "お{店|みせ}は",
+          "w": "w-mise"
+        },
+        {
+          "t": "{何時|なんじ}"
+        },
+        {
+          "t": "までですか。"
+        }
+      ],
+      "gap": {
+        "before": "お{店|みせ}は{何時|なんじ}",
+        "answer": "まで",
+        "after": "ですか。",
+        "options": [
+          "まで",
+          "から",
+          "に"
+        ],
+        "why": "Sampai kapan: まで."
+      },
+      "audio": "audio/ja/grammar/gx-kara-made-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "kara-made"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

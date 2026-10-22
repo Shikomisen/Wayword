@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-nya",
+  "connector": "-nya",
+  "gloss": "彼・彼女の、その、（ていねいに）あなたの",
+  "title": "-nya",
+  "pattern": "名詞 + -nya: rumahnya (彼・彼女の家、その家) · Harganya berapa? · Namanya siapa?",
+  "explanation": "-nya は話し言葉でいちばんよく使う語尾で、いくつもの役目があります。基本は「彼の・彼女の・その」：rumahnya は「彼の家」にも「彼女の家」にもなり、どちらかは文脈で決まります。とてもよくあるのが、お互いに分かっているものを指す「その」の働きです：Kopinya enak（このコーヒー、おいしい）、Kamarnya di mana?（部屋はどこですか？）。値段を聞く時はほぼ決まって付きます：Harganya berapa?（おいくらですか？）。相手のことを聞く時は、言いにくい「あなた」の代わりになります：Namanya siapa?（お名前は？）、Rumahnya di mana?（お住まいはどちらですか？）。日本語でも「あなたの名前は？」より「お名前は？」と言うのに似ています。",
+  "natural": "目の前にあるものや、もう話に出たものには -nya を付けます。日本語ではわざわざ「その」と言わない場面でも付くのがポイントです：Nasinya enak.（ご飯、おいしい）、Airnya panas?（お湯、熱い？）。Bapak・Ibu・kamu のどれで呼べばいいか迷った時の、手軽でていねいな「あなたの」にもなります。",
+  "stiff": "初めて話に出すものには -nya を付けません：Saya mau beli buku は「本を買いたい」、bukunya だと「（さっき話していた）その本」になります。相手が何人もいる時や、特にていねいにしたい時は、-nya より呼び名を使う方が分かりやすい：Nama Bapak siapa?（お名前は？）。",
+  "examples": [
+    {
+      "id": "gx-nya-1",
+      "indonesian": "Anaknya berapa, Bu?",
+      "japanese": "お子さんは何人ですか？",
+      "chunks": [
+        {
+          "t": "Anaknya ",
+          "w": "w-anak"
+        },
+        {
+          "t": "berapa, ",
+          "w": "w-berapa"
+        },
+        {
+          "t": "Bu?",
+          "w": "w-ibu"
+        }
+      ],
+      "gap": {
+        "before": "Anak",
+        "answer": "nya",
+        "after": " berapa, Bu?",
+        "options": [
+          "nya",
+          "mu",
+          "ku"
+        ],
+        "why": "-nya で「お子さん」とていねいに聞けます。-mu は親しい間の「君の」で、年上の女性にはなれなれしすぎます。"
+      },
+      "cultureNote": "Sudah menikah?（結婚していますか？）と並ぶ、世間話の定番の質問。インドネシアでは知り合ってすぐに家族のことを聞きます。日本の感覚では立ち入った質問に思えても、詮索ではなく親しみの表れです。",
+      "audio": "audio/id/grammar/gx-nya-1.mp3",
+      "tags": [
+        "文法",
+        "nya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-nya-2",
+      "indonesian": "Kalau yang ini, harganya berapa?",
+      "japanese": "じゃあ、これはいくらですか？",
+      "chunks": [
+        {
+          "t": "Kalau ",
+          "w": "w-kalau"
+        },
+        {
+          "t": "yang ini, ",
+          "w": "w-ini"
+        },
+        {
+          "t": "harganya ",
+          "w": "w-harga"
+        },
+        {
+          "t": "berapa?",
+          "w": "w-berapa"
+        }
+      ],
+      "gap": {
+        "before": "Kalau yang ini, ",
+        "answer": "harganya",
+        "after": " berapa?",
+        "options": [
+          "harganya",
+          "harga",
+          "harga dia"
+        ],
+        "why": "値段には -nya が付きます（「その値段」）。Harga だけでは言い足りない感じで、dia は人にしか使いません。"
+      },
+      "audio": "audio/id/grammar/gx-nya-2.mp3",
+      "tags": [
+        "文法",
+        "nya"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-nya-3",
+      "indonesian": "Kamarnya bersih, tapi AC-nya tidak dingin.",
+      "japanese": "部屋はきれいだけど、エアコンが冷えません。",
+      "chunks": [
+        {
+          "t": "Kamarnya ",
+          "w": "w-kamar"
+        },
+        {
+          "t": "bersih, ",
+          "w": "w-bersih"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "AC-nya ",
+          "w": "w-ac"
+        },
+        {
+          "t": "tidak dingin.",
+          "w": "w-dingin"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kamarnya",
+        "after": " bersih, tapi AC-nya tidak dingin.",
+        "options": [
+          "Kamarnya",
+          "Kamar",
+          "Kamar dia"
+        ],
+        "why": "目の前の「その部屋」は kamarnya。日本語の「部屋は」のつもりで Kamar だけにすると、部屋というもの一般に聞こえます。"
+      },
+      "registerNotes": "略語の後の -nya はハイフンでつなぎます：AC-nya、HP-nya（携帯電話）。",
+      "audio": "audio/id/grammar/gx-nya-3.mp3",
+      "audioHint": "Kamarnya bersih, tapi a se-nya tidak dingin.",
+      "tags": [
+        "文法",
+        "nya"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-nya-4",
+      "indonesian": "Dia tinggal di Bandung dengan suaminya.",
+      "japanese": "彼女はご主人とバンドンに住んでいます。",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di Bandung ",
+          "w": "w-di"
+        },
+        {
+          "t": "dengan "
+        },
+        {
+          "t": "suaminya.",
+          "w": "w-suami"
+        }
+      ],
+      "gap": {
+        "before": "Dia tinggal di Bandung dengan ",
+        "answer": "suaminya",
+        "after": ".",
+        "options": [
+          "suaminya",
+          "suami dia",
+          "dia suami"
+        ],
+        "ok": [
+          "suami dia"
+        ],
+        "note": "Suami dia も同じ意味で、くだけた会話ではよく使います。suaminya の方がなめらかです。",
+        "why": "「彼女の夫」は suaminya。持ち主は、ものの後に -nya として付きます。"
+      },
+      "pitfallNote": "持ち主は必ずものの後。日本語の「彼女の夫」の順で Dia suami と言うと、「彼は夫です」という意味になります。",
+      "audio": "audio/id/grammar/gx-nya-4.mp3",
+      "tags": [
+        "文法",
+        "nya"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

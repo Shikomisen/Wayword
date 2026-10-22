@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "homestay",
+  "title": "Checking in at a homestay",
+  "category": "hotel",
+  "setting": "A family-run homestay in Ubud, Bali, early in the afternoon. You come in through the garden gate with your backpack, and the owner, a woman in her fifties, comes out to meet you.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "host",
+      "indonesian": "Selamat siang. Ada yang bisa saya bantu?",
+      "english": "Good afternoon. Can I help you?",
+      "audio": "audio/id/scenario/homestay-n1.mp3",
+      "options": [
+        {
+          "phraseId": "hot-03",
+          "quality": "good",
+          "feedback": "Atas nama gives the name on the booking. If you booked through an app, add lewat aplikasi.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Selamat siang, Bu. Saya Sam. Saya sudah pesan kamar.",
+          "english": "Good afternoon. I'm Sam. I've booked a room.",
+          "feedback": "Returning her greeting, with Bu, is a warm start. Sudah pesan (have already booked) is how people say they have a booking.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya mempunyai reservasi.",
+          "english": "I have a reservation.",
+          "feedback": "Correct, but stiff and translated from English. People say Saya sudah pesan kamar, literally 'I've already ordered a room'.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "host",
+      "indonesian": "Oh, iya. Selamat datang, Kak. Boleh pinjam paspornya sebentar?",
+      "english": "Ah, yes. Welcome. Could I borrow your passport for a moment?",
+      "audio": "audio/id/scenario/homestay-n2.mp3",
+      "options": [
+        {
+          "phraseId": "air-01",
+          "quality": "good",
+          "feedback": "Ini … saya works for anything you hand over. Every place you stay will note your passport details.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Boleh, Bu. Ini.",
+          "english": "Of course. Here you are.",
+          "feedback": "Boleh answers a Boleh …? question: yes, you may.",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Kenapa pinjam? Tidak usah.",
+          "english": "Why borrow it? There's no need.",
+          "feedback": "Pinjam (borrow) is just the polite way to ask: she'll note the details and hand it straight back. It's normal everywhere you stay.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "host",
+      "indonesian": "Terima kasih. Ini kuncinya, Kak. Kamar nomor tiga, di atas.",
+      "english": "Thank you. Here's your key. Room three, upstairs.",
+      "audio": "audio/id/scenario/homestay-n3.mp3",
+      "options": [
+        {
+          "phraseId": "hot-06",
+          "quality": "good",
+          "feedback": "Worth asking on arrival. Termasuk means included.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Sarapannya jam berapa, Bu?",
+          "english": "What time is breakfast?",
+          "feedback": "Sarapannya (the breakfast) plus jam berapa? asks the time of anything.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Apakah sarapan termasuk dalam harga kamar?",
+          "english": "Is breakfast included in the room price?",
+          "feedback": "Correct, but it sounds like a form: apakah and dalam harga kamar belong in writing. Sudah termasuk sarapan? is what people say.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "host",
+      "indonesian": "Iya, Kak. Sarapannya jam tujuh sampai jam sepuluh, di teras.",
+      "english": "Yes. Breakfast is from seven till ten, on the veranda.",
+      "audio": "audio/id/scenario/homestay-n4.mp3",
+      "options": [
+        {
+          "phraseId": "hot-07",
+          "quality": "good",
+          "feedback": "Password is the everyday word, and -nya on Wi-Fi-nya makes it 'the Wi-Fi' here.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Wi-Fi-nya ada, Bu?",
+          "english": "Is there Wi-Fi?",
+          "feedback": "Ada …? (is there …?) works for anything you need: air panas, handuk, Wi-Fi.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Apa password Wi-Fi Anda?",
+          "english": "What is your Wi-Fi password?",
+          "feedback": "Understood, but Anda sounds stiff face to face, and it isn't really her own password. Use -nya for 'the': Password Wi-Fi-nya apa?",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "host",
+      "indonesian": "Password-nya ada di kartu di meja kamar. Kalau perlu apa-apa, panggil saya saja, ya.",
+      "english": "The password's on a card on the table in your room. If you need anything, just call me.",
+      "audio": "audio/id/scenario/homestay-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Baik, Bu. Terima kasih banyak.",
+          "english": "Great. Thank you very much.",
+          "feedback": "Baik (fine, all right) acknowledges what she said, and terima kasih banyak thanks her warmly.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "good",
+          "feedback": "Right everywhere, with anyone. Add Bu to make it warmer: Terima kasih, Bu.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-23",
+          "quality": "wrong",
+          "feedback": "Bye-bye is for friends and children, not someone you call Ibu. Terima kasih, Bu is what fits here.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "english": "Checked in. Handing over your passport is normal wherever you stay. On arrival, ask the things you'll need: Sudah termasuk sarapan?, Sarapannya jam berapa? and Password Wi-Fi-nya apa? At a family homestay you'll see the same host every day, so learn her name: Bu plus her name is warm and polite.",
+      "end": true,
+      "options": []
+    }
+  }
+}

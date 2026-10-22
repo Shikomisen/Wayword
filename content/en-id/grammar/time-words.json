@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-time-words",
+  "connector": "sudah, belum…",
+  "gloss": "already, right now, will, not yet",
+  "title": "sudah, sedang, akan, belum",
+  "pattern": "sudah / sedang / akan / belum + verb · Sudah …? — Sudah. / Belum.",
+  "explanation": "Instead of tenses, Indonesian puts a small word before the verb when the timing matters. Sudah means it's done: Saya sudah makan (I've eaten). Sedang means it's going on now: Dia sedang mandi (She's in the shower). Akan means it will happen: Kami akan pulang besok (We'll go home tomorrow). Belum means not yet: Saya belum makan (I haven't eaten yet).",
+  "natural": "A sudah question is answered Sudah or Belum: Sudah makan? — Belum (Have you eaten? — Not yet). In conversation, akan often gives way to mau or just a time word: Besok saya ke Bali (I'm going to Bali tomorrow).",
+  "stiff": "Answering Sudah …? with tidak is the classic mistake. The no is Belum, even for Sudah menikah? (Are you married?), where belum is the polite answer whatever your plans. And there's no need to add sudah to every past sentence: Kemarin saya ke pasar is complete as it is.",
+  "examples": [
+    {
+      "id": "gx-time-words-1",
+      "indonesian": "Saya sudah bayar.",
+      "english": "I've already paid.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "bayar.",
+          "w": "w-bayar"
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "sudah",
+        "after": " bayar.",
+        "options": [
+          "sudah",
+          "belum",
+          "akan"
+        ],
+        "why": "Done already: sudah."
+      },
+      "audio": "audio/id/grammar/gx-time-words-1.mp3",
+      "tags": [
+        "grammar",
+        "time-words"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-time-words-2",
+      "indonesian": "Dia sedang mandi.",
+      "english": "She's in the shower.",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "sedang ",
+          "w": "w-sedang"
+        },
+        {
+          "t": "mandi.",
+          "w": "w-mandi"
+        }
+      ],
+      "gap": {
+        "before": "Dia ",
+        "answer": "sedang",
+        "after": " mandi.",
+        "options": [
+          "sedang",
+          "sudah",
+          "akan"
+        ],
+        "why": "Going on right now: sedang."
+      },
+      "audio": "audio/id/grammar/gx-time-words-2.mp3",
+      "tags": [
+        "grammar",
+        "time-words"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-time-words-3",
+      "indonesian": "Kami akan pulang minggu depan.",
+      "english": "We'll be going home next week.",
+      "chunks": [
+        {
+          "t": "Kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "akan ",
+          "w": "w-akan"
+        },
+        {
+          "t": "pulang ",
+          "w": "w-pulang"
+        },
+        {
+          "t": "minggu depan.",
+          "w": "w-minggu-depan"
+        }
+      ],
+      "gap": {
+        "before": "Kami ",
+        "answer": "akan",
+        "after": " pulang minggu depan.",
+        "options": [
+          "akan",
+          "sudah",
+          "sedang"
+        ],
+        "why": "Still to come: akan."
+      },
+      "audio": "audio/id/grammar/gx-time-words-3.mp3",
+      "tags": [
+        "grammar",
+        "time-words"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-time-words-4",
+      "indonesian": "Sudah menikah? Belum.",
+      "english": "Are you married? Not yet.",
+      "chunks": [
+        {
+          "t": "Sudah ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "menikah? ",
+          "w": "w-menikah"
+        },
+        {
+          "t": "Belum.",
+          "w": "w-belum"
+        }
+      ],
+      "gap": {
+        "before": "Sudah menikah? ",
+        "answer": "Belum",
+        "after": ".",
+        "options": [
+          "Belum",
+          "Tidak",
+          "Bukan"
+        ],
+        "why": "A sudah question gets sudah or belum back: the no is Belum, not yet."
+      },
+      "audio": "audio/id/grammar/gx-time-words-4.mp3",
+      "tags": [
+        "grammar",
+        "time-words"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

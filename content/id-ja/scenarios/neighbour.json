@@ -1,0 +1,473 @@
+{
+  "schemaVersion": 1,
+  "id": "neighbour",
+  "title": "Mengobrol dengan tetangga",
+  "category": "smalltalk",
+  "setting": "Sudah seminggu kamu tinggal di sebuah apartemen. Suatu pagi, saat membuang sampah, kamu bertemu ibu tetangga sebelah.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "neighbour",
+      "japanese": "おはようございます。今日は暑いですね。",
+      "furigana": [
+        {
+          "b": "おはようございます。"
+        },
+        {
+          "b": "今日",
+          "r": "きょう"
+        },
+        {
+          "b": "は"
+        },
+        {
+          "b": "暑",
+          "r": "あつ"
+        },
+        {
+          "b": "いですね。"
+        }
+      ],
+      "romaji": "Ohayō gozaimasu. Kyō wa atsui desu ne.",
+      "indonesian": "Selamat pagi. Hari ini panas, ya.",
+      "audio": "audio/ja/scenario/neighbour-n1.mp3",
+      "audioHint": "おはようございます。きょうはあついですね",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "おはようございます。本当に暑いですね。",
+          "furigana": [
+            {
+              "b": "おはようございます。"
+            },
+            {
+              "b": "本当",
+              "r": "ほんとう"
+            },
+            {
+              "b": "に"
+            },
+            {
+              "b": "暑",
+              "r": "あつ"
+            },
+            {
+              "b": "いですね。"
+            }
+          ],
+          "romaji": "Ohayō gozaimasu. Hontō ni atsui desu ne.",
+          "indonesian": "Selamat pagi. Iya, panas sekali, ya.",
+          "feedback": "Balas salamnya, lalu setujui: cuaca adalah topik basa-basi yang paling aman.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "gre-01",
+          "quality": "good",
+          "feedback": "Awal yang bagus. Kalau kamu juga menyetujui soal panasnya (暑いですね), obrolan akan berlanjut.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "暑いです。",
+          "furigana": [
+            {
+              "b": "暑",
+              "r": "あつ"
+            },
+            {
+              "b": "いです。"
+            }
+          ],
+          "romaji": "Atsui desu.",
+          "indonesian": "Panas.",
+          "feedback": "Benar, tapi datar. ね mengubah sekadar fakta menjadi momen bersama, seperti “ya” di akhir kalimat “panas, ya”: 暑いですね.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "neighbour",
+      "japanese": "最近、引っ越してきたんですか。",
+      "furigana": [
+        {
+          "b": "最近",
+          "r": "さいきん"
+        },
+        {
+          "b": "、"
+        },
+        {
+          "b": "引",
+          "r": "ひ"
+        },
+        {
+          "b": "っ"
+        },
+        {
+          "b": "越",
+          "r": "こ"
+        },
+        {
+          "b": "してきたんですか。"
+        }
+      ],
+      "romaji": "Saikin, hikkoshite kita n desu ka.",
+      "indonesian": "Baru pindah ke sini, ya?",
+      "audio": "audio/ja/scenario/neighbour-n2.mp3",
+      "audioHint": "さいきん、ひっこしてきたんですか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "はい、先週引っ越してきました。よろしくお願いします。",
+          "furigana": [
+            {
+              "b": "はい、"
+            },
+            {
+              "b": "先週",
+              "r": "せんしゅう"
+            },
+            {
+              "b": "引",
+              "r": "ひ"
+            },
+            {
+              "b": "っ"
+            },
+            {
+              "b": "越",
+              "r": "こ"
+            },
+            {
+              "b": "してきました。よろしくお"
+            },
+            {
+              "b": "願",
+              "r": "ねが"
+            },
+            {
+              "b": "いします。"
+            }
+          ],
+          "romaji": "Hai, senshū hikkoshite kimashita. Yoroshiku onegai shimasu.",
+          "indonesian": "Iya, saya pindah minggu lalu. Salam kenal, mohon bantuannya.",
+          "feedback": "Sempurna. よろしくお願いします paling tepat untuk tetangga baru: rasanya seperti “salam kenal, mohon bantuannya”.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "japanese": "はい、一か月だけ住んでいます。",
+          "furigana": [
+            {
+              "b": "はい、"
+            },
+            {
+              "b": "一",
+              "r": "いっ"
+            },
+            {
+              "b": "か"
+            },
+            {
+              "b": "月",
+              "r": "げつ"
+            },
+            {
+              "b": "だけ"
+            },
+            {
+              "b": "住",
+              "r": "す"
+            },
+            {
+              "b": "んでいます。"
+            }
+          ],
+          "romaji": "Hai, ikkagetsu dake sunde imasu.",
+          "indonesian": "Iya, saya tinggal di sini sebulan saja.",
+          "feedback": "Jelas, dan memberi tahu dia berapa lama kamu akan ada di sini.",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "いいえ、引っ越しです。",
+          "furigana": [
+            {
+              "b": "いいえ、"
+            },
+            {
+              "b": "引",
+              "r": "ひ"
+            },
+            {
+              "b": "っ"
+            },
+            {
+              "b": "越",
+              "r": "こ"
+            },
+            {
+              "b": "しです。"
+            }
+          ],
+          "romaji": "Iie, hikkoshi desu.",
+          "indonesian": "Tidak, pindahan.",
+          "feedback": "Membingungkan: 引っ越し adalah kata benda “pindahan”, dan いいえ berarti kamu tidak pindah. Jawab はい, lalu sebutkan apa yang kamu lakukan: 先週引っ越してきました.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "neighbour",
+      "japanese": "どちらから来たんですか。",
+      "furigana": [
+        {
+          "b": "どちらから"
+        },
+        {
+          "b": "来",
+          "r": "き"
+        },
+        {
+          "b": "たんですか。"
+        }
+      ],
+      "romaji": "Dochira kara kita n desu ka.",
+      "indonesian": "Asalnya dari mana?",
+      "audio": "audio/ja/scenario/neighbour-n3.mp3",
+      "audioHint": "どちらからきたんですか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "ニュージーランドから来ました。",
+          "furigana": [
+            {
+              "b": "ニュージーランドから"
+            },
+            {
+              "b": "来",
+              "r": "き"
+            },
+            {
+              "b": "ました。"
+            }
+          ],
+          "romaji": "Nyūjīrando kara kimashita.",
+          "indonesian": "Saya dari Selandia Baru.",
+          "feedback": "Jawaban standar: negara + から来ました. Dari Indonesia? インドネシアから来ました.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "sma-05",
+          "quality": "good",
+          "feedback": "Pola yang sama untuk negara lain: から来ました.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "ニュージーランドです。あなたは？",
+          "furigana": [
+            {
+              "b": "ニュージーランドです。あなたは？"
+            }
+          ],
+          "romaji": "Nyūjīrando desu. Anata wa?",
+          "indonesian": "Selandia Baru. Anda sendiri?",
+          "feedback": "Bertanya balik itu bagus, tapi あなた terdengar berjarak di antara tetangga. Jangan memakainya seperti “Anda”: orang Jepang jarang menyebut “kamu/Anda” langsung. Tanyakan tentang dirinya: こちらには長いんですか (sudah lama tinggal di sini?).",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "neighbour",
+      "japanese": "そうなんですか。日本の生活はどうですか。",
+      "furigana": [
+        {
+          "b": "そうなんですか。"
+        },
+        {
+          "b": "日本",
+          "r": "にほん"
+        },
+        {
+          "b": "の"
+        },
+        {
+          "b": "生活",
+          "r": "せいかつ"
+        },
+        {
+          "b": "はどうですか。"
+        }
+      ],
+      "romaji": "Sō nan desu ka. Nihon no seikatsu wa dō desu ka.",
+      "indonesian": "Oh, begitu. Bagaimana kehidupan di Jepang?",
+      "audio": "audio/ja/scenario/neighbour-n4.mp3",
+      "audioHint": "そうなんですか。にほんのせいかつはどうですか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "楽しいです。でも、ごみの分け方が難しいです。",
+          "furigana": [
+            {
+              "b": "楽",
+              "r": "たの"
+            },
+            {
+              "b": "しいです。でも、ごみの"
+            },
+            {
+              "b": "分",
+              "r": "わ"
+            },
+            {
+              "b": "け"
+            },
+            {
+              "b": "方",
+              "r": "かた"
+            },
+            {
+              "b": "が"
+            },
+            {
+              "b": "難",
+              "r": "むずか"
+            },
+            {
+              "b": "しいです。"
+            }
+          ],
+          "romaji": "Tanoshii desu. Demo, gomi no wakekata ga muzukashii desu.",
+          "indonesian": "Menyenangkan. Tapi memilah sampah itu susah.",
+          "feedback": "Jawaban jujur yang mengundang bantuan: aturan memilah sampah di Jepang jauh lebih rinci daripada di Indonesia, dan itu teka-teki klasik pendatang baru.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "japanese": "とても楽しいです。みんな親切です。",
+          "furigana": [
+            {
+              "b": "とても"
+            },
+            {
+              "b": "楽",
+              "r": "たの"
+            },
+            {
+              "b": "しいです。みんな"
+            },
+            {
+              "b": "親切",
+              "r": "しんせつ"
+            },
+            {
+              "b": "です。"
+            }
+          ],
+          "romaji": "Totemo tanoshii desu. Minna shinsetsu desu.",
+          "indonesian": "Senang sekali. Semua orang baik.",
+          "feedback": "Hangat dan positif: dia pasti senang mendengarnya.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "生活はどうですか。",
+          "furigana": [
+            {
+              "b": "生活",
+              "r": "せいかつ"
+            },
+            {
+              "b": "はどうですか。"
+            }
+          ],
+          "romaji": "Seikatsu wa dō desu ka.",
+          "indonesian": "Bagaimana kehidupannya?",
+          "feedback": "Itu mengulang pertanyaannya. Jawab dulu, baru kamu bisa balik bertanya.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "neighbour",
+      "japanese": "分からないことがあったら、いつでも聞いてくださいね。",
+      "furigana": [
+        {
+          "b": "分",
+          "r": "わ"
+        },
+        {
+          "b": "からないことがあったら、いつでも"
+        },
+        {
+          "b": "聞",
+          "r": "き"
+        },
+        {
+          "b": "いてくださいね。"
+        }
+      ],
+      "romaji": "Wakaranai koto ga attara, itsu demo kiite kudasai ne.",
+      "indonesian": "Kalau ada yang kurang jelas, tanya saja kapan pun, ya.",
+      "audio": "audio/ja/scenario/neighbour-n5.mp3",
+      "audioHint": "わからないことがあったら、いつでもきいてくださいね",
+      "options": [
+        {
+          "phraseId": "gre-05",
+          "quality": "good",
+          "feedback": "Ucapan terima kasih yang baik dan sederhana.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "japanese": "ありがとうございます。助かります。",
+          "furigana": [
+            {
+              "b": "ありがとうございます。"
+            },
+            {
+              "b": "助",
+              "r": "たす"
+            },
+            {
+              "b": "かります。"
+            }
+          ],
+          "romaji": "Arigatō gozaimasu. Tasukarimasu.",
+          "indonesian": "Terima kasih. Itu sangat membantu.",
+          "feedback": "助かります (itu membantu saya) adalah ucapan terima kasih yang hangat dan wajar untuk sebuah tawaran.",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "はい、聞きます。",
+          "furigana": [
+            {
+              "b": "はい、"
+            },
+            {
+              "b": "聞",
+              "r": "き"
+            },
+            {
+              "b": "きます。"
+            }
+          ],
+          "romaji": "Hai, kikimasu.",
+          "indonesian": "Iya, saya akan bertanya.",
+          "feedback": "Tata bahasanya benar, tapi terdengar seperti kamu menjalankan perintah. Lebih baik berterima kasih atas tawarannya.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "romaji": "",
+      "indonesian": "Selesai. Membalas salam, setuju soal cuaca, menyebut asalmu, dan berterima kasih atas tawaran orang: sebagian besar obrolan dengan tetangga berjalan persis seperti itu.",
+      "end": true,
+      "options": []
+    }
+  }
+}

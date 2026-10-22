@@ -1,0 +1,576 @@
+{
+  "schemaVersion": 1,
+  "id": "greetings",
+  "title": "Salam & sopan santun",
+  "order": 1,
+  "description": "Dasar bahasa sopan. Ucapkan ini dengan benar, dan hampir setiap interaksi lain akan dimulai dengan baik.",
+  "phrases": [
+    {
+      "id": "gre-01",
+      "japanese": "おはようございます",
+      "furigana": [
+        {
+          "b": "おはようございます"
+        }
+      ],
+      "romaji": "ohayō gozaimasu",
+      "indonesian": "Selamat pagi.",
+      "registerNotes": "Sopan. Dipakai sampai sekitar jam 10–11 pagi. Di toko dan hotel, masih dipakai sampai agak siang.",
+      "animeNote": "Di anime, おはよう saja terus-terusan dipakai — itu bentuk singkat yang santai. Tanpa ございます kepada resepsionis hotel atau orang asing, kamu terdengar terlalu akrab, seperti ber-aku-kamu dengan orang yang baru dikenal.",
+      "audio": "audio/ja/gre-01.mp3",
+      "audioHint": "おはようございます",
+      "tags": [
+        "salam",
+        "pagi",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-02",
+      "japanese": "こんにちは",
+      "furigana": [
+        {
+          "b": "こんにちは"
+        }
+      ],
+      "romaji": "konnichiwa",
+      "indonesian": "Halo. / Selamat siang.",
+      "registerNotes": "Netral dan sopan, aman dengan siapa saja dari menjelang siang sampai sore: mencakup 'selamat siang' sekaligus 'selamat sore'. Tidak dipakai dengan keluarga dekat.",
+      "animeNote": "Aman dipakai apa adanya — yang ini sama saja dengan di anime.",
+      "audio": "audio/ja/gre-02.mp3",
+      "audioHint": "こんにちは",
+      "tags": [
+        "salam",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-03",
+      "japanese": "こんばんは",
+      "furigana": [
+        {
+          "b": "こんばんは"
+        }
+      ],
+      "romaji": "konbanwa",
+      "indonesian": "Selamat malam.",
+      "registerNotes": "Dipakai mulai sekitar senja. Ucapan standar saat masuk restoran atau hotel di malam hari. Hanya untuk menyapa saat bertemu, bukan untuk pamit seperti 'selamat malam' kita.",
+      "audio": "audio/ja/gre-03.mp3",
+      "audioHint": "こんばんは",
+      "tags": [
+        "salam",
+        "malam",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-04",
+      "japanese": "すみません",
+      "furigana": [
+        {
+          "b": "すみません"
+        }
+      ],
+      "romaji": "sumimasen",
+      "indonesian": "Permisi. / Maaf. / Terima kasih (sudah repot).",
+      "registerNotes": "Kata paling berguna dalam bahasa Jepang. Untuk memanggil orang, minta maaf, minta jalan saat mau lewat, dan berterima kasih kepada orang yang sudah repot membantumu: 'permisi' dan 'maaf' sekaligus.",
+      "animeNote": "Anime banyak memakai ごめん dan わりぃ. Di tempat umum, すみません adalah pilihan utama — ごめん kepada orang asing terdengar kekanak-kanakan.",
+      "audio": "audio/ja/gre-04.mp3",
+      "audioHint": "すみません",
+      "tags": [
+        "salam",
+        "minta maaf",
+        "perhatian",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-05",
+      "japanese": "ありがとうございます",
+      "furigana": [
+        {
+          "b": "ありがとうございます"
+        }
+      ],
+      "romaji": "arigatō gozaimasu",
+      "indonesian": "Terima kasih.",
+      "registerNotes": "Bentuk sopan lengkap. Untuk sesuatu yang sudah selesai, misalnya saat keluar dari toko, pakai bentuk lampaunya: ありがとうございました.",
+      "animeNote": "ありがとう saja, さんきゅー, dan あざっす semuanya santai atau slang. Di tempat umum, tetap pakai ございます.",
+      "audio": "audio/ja/gre-05.mp3",
+      "audioHint": "ありがとうございます",
+      "tags": [
+        "terima kasih",
+        "penting"
+      ],
+      "difficulty": 1,
+      "usage": "Dua hal soal bunyi: とう dibaca panjang (arigatō), dan bunyi r Jepang hanya ketukan ringan di antara r dan l, tidak digetarkan seperti r dalam bahasa Indonesia."
+    },
+    {
+      "id": "gre-06",
+      "japanese": "ありがとうございました",
+      "furigana": [
+        {
+          "b": "ありがとうございました"
+        }
+      ],
+      "romaji": "arigatō gozaimashita",
+      "indonesian": "Terima kasih (atas bantuannya tadi).",
+      "registerNotes": "Bentuk lampau — urusannya sudah selesai. Inilah yang diucapkan saat meninggalkan toko, taksi, atau restoran. Bahasa Indonesia tidak membedakannya, tapi bahasa Jepang mengubah bentuk kata kerjanya.",
+      "audio": "audio/ja/gre-06.mp3",
+      "audioHint": "ありがとうございました",
+      "tags": [
+        "terima kasih",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-07",
+      "japanese": "お願いします",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いします"
+        }
+      ],
+      "romaji": "onegai shimasu",
+      "indonesian": "Tolong. / Ya, mau. / Boleh.",
+      "registerNotes": "Tempelkan pada permintaan, atau ucapkan sendiri untuk menerima tawaran. 'Perlu kantong?' → お願いします. Jangkauannya lebih luas daripada 'tolong'.",
+      "animeNote": "頼む / たのむぜ adalah versi santai yang dramatis. Jangan pernah dipakai kepada pegawai.",
+      "audio": "audio/ja/gre-07.mp3",
+      "audioHint": "おねがいします",
+      "tags": [
+        "permintaan",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-08",
+      "japanese": "はい",
+      "furigana": [
+        {
+          "b": "はい"
+        }
+      ],
+      "romaji": "hai",
+      "indonesian": "Ya.",
+      "registerNotes": "Juga berarti 'saya mendengarkan', seperti 'iya… iya…' saat kita mendengarkan cerita orang. Orang Jepang sangat sering mengucapkannya, jadi はい belum tentu berarti setuju.",
+      "audio": "audio/ja/gre-08.mp3",
+      "audioHint": "はい",
+      "tags": [
+        "dasar",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-09",
+      "japanese": "いいえ、大丈夫です",
+      "furigana": [
+        {
+          "b": "いいえ、"
+        },
+        {
+          "b": "大丈夫",
+          "r": "だいじょうぶ"
+        },
+        {
+          "b": "です"
+        }
+      ],
+      "romaji": "iie, daijōbu desu",
+      "indonesian": "Tidak, terima kasih. / Tidak usah.",
+      "registerNotes": "Cara sopan untuk menolak. いいえ saja bisa terdengar ketus; 大丈夫です melunakkannya, dan inilah yang akan kamu dengar saat orang menolak kantong atau struk.",
+      "audio": "audio/ja/gre-09.mp3",
+      "audioHint": "いいえ、だいじょうぶです",
+      "tags": [
+        "dasar",
+        "menolak",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-10",
+      "japanese": "大丈夫です",
+      "furigana": [
+        {
+          "b": "大丈夫",
+          "r": "だいじょうぶ"
+        },
+        {
+          "b": "です"
+        }
+      ],
+      "romaji": "daijōbu desu",
+      "indonesian": "Tidak apa-apa. / Saya baik-baik saja. / Tidak usah.",
+      "registerNotes": "Sangat luwes — bisa untuk menenangkan, menerima, atau menolak dengan halus, tergantung konteks dan nada. Mirip 'tidak apa-apa' kita: artinya ditentukan oleh situasi.",
+      "audio": "audio/ja/gre-10.mp3",
+      "audioHint": "だいじょうぶです",
+      "tags": [
+        "dasar",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-11",
+      "japanese": "はじめまして",
+      "furigana": [
+        {
+          "b": "はじめまして"
+        }
+      ],
+      "romaji": "hajimemashite",
+      "indonesian": "Senang berkenalan. (saat pertama bertemu)",
+      "registerNotes": "Hanya untuk pertemuan yang benar-benar pertama. Biasanya langsung disusul よろしくお願いします.",
+      "audio": "audio/ja/gre-11.mp3",
+      "audioHint": "はじめまして",
+      "tags": [
+        "perkenalan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-12",
+      "japanese": "よろしくお願いします",
+      "furigana": [
+        {
+          "b": "よろしくお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いします"
+        }
+      ],
+      "romaji": "yoroshiku onegai shimasu",
+      "indonesian": "Salam kenal. / Mohon bantuannya. (ungkapan tetap)",
+      "registerNotes": "Tidak ada padanan yang pas: 'salam kenal' dan 'mohon bantuannya' masing-masing hanya menangkap sebagian. Dipakai untuk menutup perkenalan, atau setelah kamu menitipkan permintaan kepada seseorang.",
+      "animeNote": "よろしく saja adalah bentuk singkat santai yang sering terdengar di anime. Pakai bentuk lengkapnya.",
+      "audio": "audio/ja/gre-12.mp3",
+      "audioHint": "よろしくおねがいします",
+      "tags": [
+        "perkenalan",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-13",
+      "japanese": "わかりました",
+      "furigana": [
+        {
+          "b": "わかりました"
+        }
+      ],
+      "romaji": "wakarimashita",
+      "indonesian": "Saya mengerti. / Baik.",
+      "registerNotes": "Cara sopan untuk menunjukkan bahwa kamu sudah menangkap instruksi.",
+      "animeNote": "わかった itu santai; 了解 (ryōkai) terdengar seperti bahasa militer atau ketus kalau diucapkan pembelajar, walaupun ada di mana-mana di anime.",
+      "audio": "audio/ja/gre-13.mp3",
+      "audioHint": "わかりました",
+      "tags": [
+        "memahami",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-14",
+      "japanese": "すみません、わかりません",
+      "furigana": [
+        {
+          "b": "すみません、わかりません"
+        }
+      ],
+      "romaji": "sumimasen, wakarimasen",
+      "indonesian": "Maaf, saya tidak mengerti.",
+      "registerNotes": "Diawali すみません supaya terdengar halus. Inilah jalan keluar paling berharga yang kamu punya.",
+      "audio": "audio/ja/gre-14.mp3",
+      "audioHint": "すみません、わかりません",
+      "tags": [
+        "memahami",
+        "penting",
+        "bertahan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-15",
+      "japanese": "日本語が少しわかります",
+      "furigana": [
+        {
+          "b": "日本語",
+          "r": "にほんご"
+        },
+        {
+          "b": "が"
+        },
+        {
+          "b": "少",
+          "r": "すこ"
+        },
+        {
+          "b": "しわかります"
+        }
+      ],
+      "romaji": "nihongo ga sukoshi wakarimasu",
+      "indonesian": "Saya mengerti sedikit bahasa Jepang.",
+      "registerNotes": "Memberi gambaran sejak awal, dan biasanya lawan bicara langsung memperlambat bicaranya tanpa perlu kamu minta.",
+      "audio": "audio/ja/gre-15.mp3",
+      "audioHint": "にほんごがすこしわかります",
+      "tags": [
+        "memahami",
+        "bertahan"
+      ],
+      "difficulty": 2,
+      "usage": "Perhatikan partikelnya: 日本語が, bukan 日本語を — わかる memakai が. Kata kerjanya di akhir kalimat, tidak seperti bahasa Indonesia."
+    },
+    {
+      "id": "gre-16",
+      "japanese": "もう一度お願いします",
+      "furigana": [
+        {
+          "b": "もう"
+        },
+        {
+          "b": "一度",
+          "r": "いちど"
+        },
+        {
+          "b": "お"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いします"
+        }
+      ],
+      "romaji": "mō ichido onegai shimasu",
+      "indonesian": "Sekali lagi, tolong.",
+      "registerNotes": "Cara sopan untuk minta diulang tanpa bilang bahwa kamu tidak mengerti.",
+      "audio": "audio/ja/gre-16.mp3",
+      "audioHint": "もういちどおねがいします",
+      "tags": [
+        "memahami",
+        "bertahan",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-17",
+      "japanese": "ゆっくりお願いします",
+      "furigana": [
+        {
+          "b": "ゆっくりお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いします"
+        }
+      ],
+      "romaji": "yukkuri onegai shimasu",
+      "indonesian": "Pelan-pelan, tolong.",
+      "registerNotes": "Lebih berguna daripada minta diulang dengan kecepatan yang sama. Bisa dipakai sendiri.",
+      "audio": "audio/ja/gre-17.mp3",
+      "audioHint": "ゆっくりおねがいします",
+      "tags": [
+        "memahami",
+        "bertahan",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-18",
+      "japanese": "英語が話せますか",
+      "furigana": [
+        {
+          "b": "英語",
+          "r": "えいご"
+        },
+        {
+          "b": "が"
+        },
+        {
+          "b": "話",
+          "r": "はな"
+        },
+        {
+          "b": "せますか"
+        }
+      ],
+      "romaji": "eigo ga hanasemasu ka",
+      "indonesian": "Bisa berbahasa Inggris?",
+      "registerNotes": "Tanyakan dalam bahasa Jepang — langsung membuka dengan bahasa Inggris bisa terkesan lancang. Jawaban 少しだけ ('sedikit saja') akan sering kamu dengar.",
+      "audio": "audio/ja/gre-18.mp3",
+      "audioHint": "えいごがはなせますか",
+      "tags": [
+        "memahami",
+        "bertahan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-19",
+      "japanese": "失礼します",
+      "furigana": [
+        {
+          "b": "失礼",
+          "r": "しつれい"
+        },
+        {
+          "b": "します"
+        }
+      ],
+      "romaji": "shitsurei shimasu",
+      "indonesian": "Permisi. (saat masuk, keluar, atau menyela)",
+      "registerNotes": "Sopan santun dalam tindakan — masuk ruangan, lewat di depan orang, menutup telepon. Lebih formal daripada すみません, mirip 'permisi' saat kita masuk ruangan orang.",
+      "audio": "audio/ja/gre-19.mp3",
+      "audioHint": "しつれいします",
+      "tags": [
+        "kesopanan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-20",
+      "japanese": "どういたしまして",
+      "furigana": [
+        {
+          "b": "どういたしまして"
+        }
+      ],
+      "romaji": "dō itashimashite",
+      "indonesian": "Sama-sama.",
+      "registerNotes": "Benar menurut buku, tapi jauh lebih jarang dipakai daripada 'sama-sama' kita. Anggukan kecil, atau いいえ, sangat umum sebagai gantinya.",
+      "audio": "audio/ja/gre-20.mp3",
+      "audioHint": "どういたしまして",
+      "tags": [
+        "terima kasih"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-21",
+      "japanese": "お疲れ様です",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "疲",
+          "r": "つか"
+        },
+        {
+          "b": "れ"
+        },
+        {
+          "b": "様",
+          "r": "さま"
+        },
+        {
+          "b": "です"
+        }
+      ],
+      "romaji": "otsukaresama desu",
+      "indonesian": "Terima kasih atas kerja kerasnya. (ungkapan tetap)",
+      "registerNotes": "Cukup dikenali — kamu akan sering mendengarnya antarrekan kerja dan antarpegawai. Di luar tempat kerja, jarang perlu kamu ucapkan sendiri.",
+      "audio": "audio/ja/gre-21.mp3",
+      "audioHint": "おつかれさまです",
+      "tags": [
+        "kesopanan",
+        "untuk mengenali"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gre-22",
+      "japanese": "観光で来ました",
+      "furigana": [
+        {
+          "b": "観光",
+          "r": "かんこう"
+        },
+        {
+          "b": "で"
+        },
+        {
+          "b": "来",
+          "r": "き"
+        },
+        {
+          "b": "ました"
+        }
+      ],
+      "romaji": "kankō de kimashita",
+      "indonesian": "Saya datang untuk berwisata.",
+      "registerNotes": "Menjawab pertanyaan yang paling sering kamu terima, baik di imigrasi maupun saat berbasa-basi.",
+      "audio": "audio/ja/gre-22.mp3",
+      "audioHint": "かんこうできました",
+      "tags": [
+        "perkenalan",
+        "bertahan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-23",
+      "japanese": "さようなら",
+      "furigana": [
+        {
+          "b": "さようなら"
+        }
+      ],
+      "romaji": "sayōnara",
+      "indonesian": "Selamat tinggal.",
+      "registerNotes": "Berat, seperti 'selamat tinggal' kita — terkesan berpisah untuk waktu lama. Saat keluar dari toko, ありがとうございました atau 失礼します lebih wajar.",
+      "animeNote": "Perpisahan dramatis di anime membuat kata ini terasa seperti salam pamit yang biasa. Dalam kehidupan sehari-hari, kata ini jauh lebih jarang dipakai daripada yang kamu kira.",
+      "audio": "audio/ja/gre-23.mp3",
+      "audioHint": "さようなら",
+      "tags": [
+        "perpisahan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-24",
+      "japanese": "ごめんなさい",
+      "furigana": [
+        {
+          "b": "ごめんなさい"
+        }
+      ],
+      "romaji": "gomen nasai",
+      "indonesian": "Saya minta maaf. (sungguh-sungguh)",
+      "registerNotes": "Untuk kesalahan yang memang kamu buat, bukan untuk memanggil orang. Kalau menyenggol orang, refleksnya すみません.",
+      "animeNote": "ごめん / ごめんね adalah bentuk singkat santai yang terus terdengar di layar — cocok dengan teman, tapi terlalu ringan untuk minta maaf sungguhan kepada orang asing.",
+      "audio": "audio/ja/gre-24.mp3",
+      "audioHint": "ごめんなさい",
+      "tags": [
+        "minta maaf"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

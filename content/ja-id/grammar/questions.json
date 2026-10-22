@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-questions",
+  "connector": "apa, siapa…",
+  "gloss": "何、だれ、どこ…",
+  "title": "apa, siapa, di mana… — 疑問詞",
+  "pattern": "Bapak mau minum apa? · Namanya siapa? · di mana / ke mana / dari mana",
+  "explanation": "疑問詞は apa（何）、siapa（だれ）、kapan（いつ）、berapa（いくら、いくつ）、kenapa（なぜ）、bagaimana（どう）。「どこ」は3つあり、「どこに・どこへ・どこから」にあたります：di mana、ke mana、dari mana。疑問詞は答えが入る場所にそのまま置けばよく、ほかは何も動きません。この点は日本語と同じです：Kamu mau apa?（何がほしいの？）は直訳すると「あなた ほしい 何」で、答えは Saya mau kopi。文の最初にも置けます：Apa ini? も Ini apa? も「これは何？」",
+  "natural": "疑問詞を最後に置くのが、ふだんの親しみやすい聞き方です：Namanya siapa?（お名前は？）、Rumahnya di mana?（お住まいはどちらですか）、Harganya berapa?（いくらですか）",
+  "stiff": "名前は apa（何）ではなく siapa（だれ）で聞きます。「お名前は何ですか」につられないように。di mana はものや人がいる場所だけ：「どこへ行くの？」は Mau ke mana? で、Mau di mana? とは言いません。kenapa は話し言葉の「なぜ」、mengapa は書き言葉です。",
+  "examples": [
+    {
+      "id": "gx-questions-1",
+      "indonesian": "Bapak mau minum apa?",
+      "japanese": "お飲み物は何になさいますか。",
+      "chunks": [
+        {
+          "t": "Bapak ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "minum ",
+          "w": "w-minum"
+        },
+        {
+          "t": "apa?",
+          "w": "w-apa"
+        }
+      ],
+      "gap": {
+        "before": "Bapak mau minum ",
+        "answer": "apa",
+        "after": "?",
+        "options": [
+          "apa",
+          "siapa",
+          "berapa"
+        ],
+        "why": "「何」は apa。答えが入る場所にそのまま置きます：minum kopi → minum apa?"
+      },
+      "audio": "audio/id/grammar/gx-questions-1.mp3",
+      "tags": [
+        "文法",
+        "質問"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-questions-2",
+      "indonesian": "Namanya siapa?",
+      "japanese": "お名前は？",
+      "chunks": [
+        {
+          "t": "Namanya ",
+          "w": "w-nama"
+        },
+        {
+          "t": "siapa?",
+          "w": "w-siapa"
+        }
+      ],
+      "gap": {
+        "before": "Namanya ",
+        "answer": "siapa",
+        "after": "?",
+        "options": [
+          "siapa",
+          "apa"
+        ],
+        "why": "インドネシア語では、名前は apa ではなく siapa（だれ）で聞きます。"
+      },
+      "audio": "audio/id/grammar/gx-questions-2.mp3",
+      "tags": [
+        "文法",
+        "質問"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-questions-3",
+      "indonesian": "Berapa harga tiketnya?",
+      "japanese": "切符はいくらですか。",
+      "chunks": [
+        {
+          "t": "Berapa ",
+          "w": "w-berapa"
+        },
+        {
+          "t": "harga ",
+          "w": "w-harga"
+        },
+        {
+          "t": "tiketnya?",
+          "w": "w-tiket"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Berapa",
+        "after": " harga tiketnya?",
+        "options": [
+          "Berapa",
+          "Apa",
+          "Bagaimana"
+        ],
+        "why": "「いくら」「いくつ」は berapa。bagaimana は「どのように」の「どう」です。"
+      },
+      "audio": "audio/id/grammar/gx-questions-3.mp3",
+      "tags": [
+        "文法",
+        "質問"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-questions-4",
+      "indonesian": "Ibu dari mana?",
+      "japanese": "どちらのご出身ですか。",
+      "chunks": [
+        {
+          "t": "Ibu ",
+          "w": "w-ibu"
+        },
+        {
+          "t": "dari mana?",
+          "w": "w-dari"
+        }
+      ],
+      "gap": {
+        "before": "Ibu ",
+        "answer": "dari mana",
+        "after": "?",
+        "options": [
+          "dari mana",
+          "di mana",
+          "ke mana"
+        ],
+        "why": "「どこから」は dari mana。di mana は「どこに」、ke mana は「どこへ」。"
+      },
+      "audio": "audio/id/grammar/gx-questions-4.mp3",
+      "tags": [
+        "文法",
+        "質問"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,499 @@
+{
+  "schemaVersion": 1,
+  "id": "replies-more",
+  "title": "Listening at natural speed",
+  "description": "Friends, family, neighbours, doctors and staff at natural speed, with the casual speech you'll really hear: nggak, udah, aja, kok, sih. Hear a line, pick what it means, and learn a reply.",
+  "items": [
+    {
+      "id": "lm-01",
+      "speaker": "friend",
+      "indonesian": "Udah makan belum?",
+      "english": "Have you eaten yet?",
+      "reply": {
+        "indonesian": "Udah, tadi. Kamu?",
+        "english": "Yes, earlier. You?"
+      },
+      "note": "Belum at the end makes it 'yet or not?'. Answer udah or belum, not ya or nggak.",
+      "audio": "audio/id/listening/lm-01.mp3",
+      "tags": [
+        "friends"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lm-02",
+      "speaker": "friend",
+      "indonesian": "Kok nggak bilang-bilang mau ke Bali?",
+      "english": "How come you didn't tell me you were going to Bali?",
+      "reply": {
+        "indonesian": "Maaf, mendadak, sih.",
+        "english": "Sorry, it was all a bit last-minute."
+      },
+      "note": "Bilang is the spoken 'say'; said twice, it's 'say a word about it', with a hint of hurt feelings.",
+      "audio": "audio/id/listening/lm-02.mp3",
+      "tags": [
+        "friends"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-03",
+      "speaker": "friend",
+      "indonesian": "Nanti malam jadi nonton, nggak?",
+      "english": "Are we still going to the film tonight?",
+      "reply": {
+        "indonesian": "Jadi, dong! Jam tujuh, kan?",
+        "english": "Of course! Seven, right?"
+      },
+      "note": "Jadi here means 'going ahead as planned', and nggak at the end makes it a yes-or-no question.",
+      "audio": "audio/id/listening/lm-03.mp3",
+      "tags": [
+        "friends",
+        "plans"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-04",
+      "speaker": "friend",
+      "indonesian": "Aku telat dikit, ya. Masih di jalan.",
+      "english": "I'll be a bit late. I'm still on the way.",
+      "reply": {
+        "indonesian": "Oke, santai aja. Aku tunggu di dalam.",
+        "english": "OK, no rush. I'll wait inside."
+      },
+      "note": "Telat is the spoken terlambat, and dikit is sedikit with the se- dropped.",
+      "audio": "audio/id/listening/lm-04.mp3",
+      "tags": [
+        "friends",
+        "plans"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lm-05",
+      "speaker": "friend",
+      "indonesian": "Aduh, maaf banget, aku nggak jadi ikut. Ada urusan mendadak.",
+      "english": "Oh, I'm really sorry, I can't come after all. Something's come up.",
+      "reply": {
+        "indonesian": "Yah, sayang banget. Ya udah, lain kali, ya.",
+        "english": "Oh, what a shame. Never mind, next time."
+      },
+      "note": "Nggak jadi means a plan is off. Urusan, 'business', is a reason nobody questions.",
+      "audio": "audio/id/listening/lm-05.mp3",
+      "tags": [
+        "friends",
+        "plans"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-06",
+      "speaker": "friend",
+      "indonesian": "Gimana, enak nggak?",
+      "english": "So? Is it good?",
+      "reply": {
+        "indonesian": "Enak banget! Kamu harus coba.",
+        "english": "It's so good! You've got to try it."
+      },
+      "note": "Gimana on its own asks for your verdict: 'Well? How is it?'.",
+      "audio": "audio/id/listening/lm-06.mp3",
+      "tags": [
+        "friends",
+        "food"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lm-07",
+      "speaker": "friend",
+      "indonesian": "Kamu kok kelihatan capek banget, sih?",
+      "english": "How come you look so tired?",
+      "reply": {
+        "indonesian": "Iya, semalam nggak bisa tidur.",
+        "english": "Yeah, I couldn't sleep last night."
+      },
+      "note": "Kok asks with surprise and sih softens it: concern, not criticism.",
+      "audio": "audio/id/listening/lm-07.mp3",
+      "tags": [
+        "friends"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-08",
+      "speaker": "friend",
+      "indonesian": "Mau aku jemput, nggak?",
+      "english": "Do you want me to pick you up?",
+      "reply": {
+        "indonesian": "Nggak usah, aku naik ojek aja.",
+        "english": "No need, I'll just get an ojek."
+      },
+      "audio": "audio/id/listening/lm-08.mp3",
+      "tags": [
+        "friends",
+        "plans"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lm-09",
+      "speaker": "friend",
+      "indonesian": "Bagus, kok. Cocok sama kamu.",
+      "english": "It looks good, honestly. It suits you.",
+      "reply": {
+        "indonesian": "Beneran? Makasih, ya.",
+        "english": "Really? Thanks."
+      },
+      "note": "Kok at the end reassures: 'it really does'. Sama is the spoken dengan (with).",
+      "audio": "audio/id/listening/lm-09.mp3",
+      "tags": [
+        "friends",
+        "shopping"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-10",
+      "speaker": "friend",
+      "indonesian": "Kamu udah pernah ke Lombok, belum?",
+      "english": "Have you ever been to Lombok?",
+      "reply": {
+        "indonesian": "Belum pernah. Bagus, ya?",
+        "english": "No, never. Is it nice?"
+      },
+      "note": "The no to udah pernah …? is belum pernah, 'not yet', which leaves the door open.",
+      "audio": "audio/id/listening/lm-10.mp3",
+      "tags": [
+        "friends",
+        "travel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lm-11",
+      "speaker": "friend",
+      "indonesian": "Ini HP kamu, bukan? Ketinggalan di meja.",
+      "english": "Isn't this your phone? You left it on the table.",
+      "reply": {
+        "indonesian": "Aduh, iya! Makasih banyak.",
+        "english": "Oh no, it is! Thanks so much."
+      },
+      "note": "HP (ha-pe) is the everyday word for a mobile phone. Ketinggalan is left behind by accident.",
+      "audio": "audio/id/listening/lm-11.mp3",
+      "audioHint": "Ini ha pe kamu, bukan? Ketinggalan di meja.",
+      "tags": [
+        "friends"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-12",
+      "speaker": "friend",
+      "indonesian": "Hari ini aku yang traktir, ya.",
+      "english": "Today's on me.",
+      "reply": {
+        "indonesian": "Wah, makasih! Lain kali gantian, ya.",
+        "english": "Oh, thanks! Next time it's my turn."
+      },
+      "note": "Traktir is treating someone to food or drinks. Friends take turns, or split the bill: patungan.",
+      "audio": "audio/id/listening/lm-12.mp3",
+      "tags": [
+        "friends",
+        "food"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-13",
+      "speaker": "mother",
+      "indonesian": "Udah, nggak usah dicuci. Taruh aja di situ.",
+      "english": "Oh, don't bother washing up. Just leave it there.",
+      "reply": {
+        "indonesian": "Tidak apa-apa, Tante. Biar saya bantu.",
+        "english": "It's no trouble. Let me help."
+      },
+      "note": "Hosts always wave the offer away, and offering is what counts. She can talk casually to you; you still answer politely.",
+      "audio": "audio/id/listening/lm-13.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-14",
+      "speaker": "mother",
+      "indonesian": "Kok makannya sedikit? Nggak suka, ya?",
+      "english": "Why are you eating so little? Don't you like it?",
+      "reply": {
+        "indonesian": "Suka sekali, Tante. Tadi siang saya makan banyak.",
+        "english": "I love it. I just had a big lunch."
+      },
+      "note": "A light eater worries a host. Praise the food and give a reason.",
+      "audio": "audio/id/listening/lm-14.mp3",
+      "tags": [
+        "family",
+        "food"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-15",
+      "speaker": "mother",
+      "indonesian": "Hati-hati di jalan, ya. Kalau udah sampai, kabarin.",
+      "english": "Take care on the way. Let us know when you get home.",
+      "reply": {
+        "indonesian": "Iya, Tante. Nanti saya kabari.",
+        "english": "I will. I'll message when I'm there."
+      },
+      "note": "Kabarin is the casual kabari, 'send word'. Families do wait for that message.",
+      "audio": "audio/id/listening/lm-15.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-16",
+      "speaker": "father",
+      "indonesian": "Udah lama di Indonesia? Kok bahasanya lancar.",
+      "english": "Have you been in Indonesia long? Your Indonesian's so fluent.",
+      "reply": {
+        "indonesian": "Baru dua tahun, Om. Masih belajar.",
+        "english": "Only two years. I'm still learning."
+      },
+      "note": "Playing it down with masih belajar is the gracious way to take a compliment.",
+      "audio": "audio/id/listening/lm-16.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-17",
+      "speaker": "mother",
+      "indonesian": "Nginep sini aja, udah malam.",
+      "english": "Why don't you stay the night? It's late.",
+      "reply": {
+        "indonesian": "Terima kasih, Tante, tapi besok saya kerja pagi.",
+        "english": "Thank you, but I'm working early tomorrow."
+      },
+      "note": "Nginep is the spoken menginap, to stay the night. Thanks and a reason make a kind no.",
+      "audio": "audio/id/listening/lm-17.mp3",
+      "tags": [
+        "family"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lm-18",
+      "speaker": "neighbour",
+      "indonesian": "Mau ke mana, Sam? Kok rapi banget.",
+      "english": "Where are you off to, Sam? You're all dressed up.",
+      "reply": {
+        "indonesian": "Mau ke pernikahan teman, Bu.",
+        "english": "To a friend's wedding."
+      },
+      "note": "Rapi, neat and tidy, is how you look when you're dressed up. Neighbours notice, and say so.",
+      "audio": "audio/id/listening/lm-18.mp3",
+      "tags": [
+        "neighbours"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-19",
+      "speaker": "neighbour",
+      "indonesian": "Katanya nanti malam mati lampu, lho.",
+      "english": "Apparently there's going to be a power cut tonight.",
+      "reply": {
+        "indonesian": "Oh, ya? Dari jam berapa, Bu?",
+        "english": "Oh, really? From what time?"
+      },
+      "note": "Katanya is 'apparently, I heard'. Mati lampu, 'the lights die', is a power cut.",
+      "audio": "audio/id/listening/lm-19.mp3",
+      "tags": [
+        "neighbours",
+        "home"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-20",
+      "speaker": "neighbour",
+      "indonesian": "Ini ada kue sedikit, buat icip-icip.",
+      "english": "Here are a few cakes, just for you to try.",
+      "reply": {
+        "indonesian": "Wah, kok repot-repot, Bu? Terima kasih banyak.",
+        "english": "Oh, you shouldn't have! Thank you so much."
+      },
+      "note": "Kok repot-repot? (why go to the trouble?) is how you accept graciously. Return the plate later with something on it, not empty.",
+      "audio": "audio/id/listening/lm-20.mp3",
+      "tags": [
+        "neighbours"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-21",
+      "speaker": "neighbour",
+      "indonesian": "Airnya mati dari pagi. Di rumahmu juga?",
+      "english": "The water's been off since this morning. At your place too?",
+      "reply": {
+        "indonesian": "Iya, sama, Bu. Kenapa, ya?",
+        "english": "Yes, same here. I wonder why."
+      },
+      "note": "-mu is the short, casual 'your': rumahmu, your house. An older neighbour may use it with you; answer with Bu or Pak.",
+      "audio": "audio/id/listening/lm-21.mp3",
+      "tags": [
+        "neighbours",
+        "home"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-22",
+      "speaker": "doctor",
+      "indonesian": "Ada riwayat penyakit? Darah tinggi, asma?",
+      "english": "Any medical history? High blood pressure, asthma?",
+      "reply": {
+        "indonesian": "Tidak ada, Dok.",
+        "english": "No, nothing."
+      },
+      "note": "Riwayat penyakit is your medical history; the doctor lists a few common ones to prompt you.",
+      "audio": "audio/id/listening/lm-22.mp3",
+      "tags": [
+        "doctor"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lm-23",
+      "speaker": "doctor",
+      "indonesian": "Tensinya agak tinggi, ya. Kurangi garam.",
+      "english": "Your blood pressure's a bit high. Cut down on salt.",
+      "reply": {
+        "indonesian": "Baik, Dok. Perlu obat?",
+        "english": "All right. Do I need medicine?"
+      },
+      "note": "Tensi, blood pressure, is taken at almost every clinic visit.",
+      "audio": "audio/id/listening/lm-23.mp3",
+      "tags": [
+        "doctor"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-24",
+      "speaker": "doctor",
+      "indonesian": "Antibiotiknya dihabiskan, ya, walaupun udah enakan.",
+      "english": "Finish the antibiotics, even once you feel better.",
+      "reply": {
+        "indonesian": "Baik, Dok. Sampai habis.",
+        "english": "All right. Every last one."
+      },
+      "note": "Enakan is casual for 'feeling better', and doctors use it too. Dihabiskan is 'finished off', used up.",
+      "audio": "audio/id/listening/lm-24.mp3",
+      "tags": [
+        "doctor"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lm-25",
+      "speaker": "pharmacist",
+      "indonesian": "Obat ini bikin ngantuk, jadi jangan nyetir, ya.",
+      "english": "This medicine makes you drowsy, so don't drive.",
+      "reply": {
+        "indonesian": "Oh, oke. Diminum malam aja, ya?",
+        "english": "Oh, OK. Should I take it at night, then?"
+      },
+      "note": "Bikin is the spoken membuat (to make), and nyetir is menyetir, to drive.",
+      "audio": "audio/id/listening/lm-25.mp3",
+      "tags": [
+        "pharmacy"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lm-26",
+      "speaker": "doctor",
+      "indonesian": "Sakitnya di sebelah mana?",
+      "english": "Where exactly does it hurt?",
+      "reply": {
+        "indonesian": "Di sini, Dok. Kalau ditekan, sakit.",
+        "english": "Here. It hurts when you press it."
+      },
+      "note": "Sebelah mana, 'which side', asks for the exact spot.",
+      "audio": "audio/id/listening/lm-26.mp3",
+      "tags": [
+        "doctor"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-27",
+      "speaker": "clerk",
+      "indonesian": "Yang ini lagi diskon, Kak. Beli dua gratis satu.",
+      "english": "This one's on offer. Buy two, get one free.",
+      "reply": {
+        "indonesian": "Oh, ya? Oke, saya ambil dua.",
+        "english": "Oh, really? OK, I'll take two."
+      },
+      "note": "Lagi here is 'at the moment': lagi diskon, lagi promo.",
+      "audio": "audio/id/listening/lm-27.mp3",
+      "tags": [
+        "shop"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-28",
+      "speaker": "server",
+      "indonesian": "Gulanya normal atau dikurangi, Kak?",
+      "english": "Normal sugar, or less?",
+      "reply": {
+        "indonesian": "Dikurangi aja, Kak.",
+        "english": "Less, please."
+      },
+      "note": "Drinks come very sweet unless you ask. Cafés often say it in English: less sugar, less ice.",
+      "audio": "audio/id/listening/lm-28.mp3",
+      "tags": [
+        "cafe"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-29",
+      "speaker": "driver",
+      "indonesian": "Udah sesuai titik, ya, Kak. Bintang limanya jangan lupa.",
+      "english": "Here we are, right at the pin. Don't forget the five stars.",
+      "reply": {
+        "indonesian": "Siap, Pak. Makasih, ya.",
+        "english": "Will do. Thanks."
+      },
+      "note": "Titik is the pin on the map. Drivers depend on their ratings, so many ask for five stars.",
+      "audio": "audio/id/listening/lm-29.mp3",
+      "tags": [
+        "ojek"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lm-30",
+      "speaker": "clerk",
+      "indonesian": "Mohon maaf, sistemnya lagi error. Bisa ditunggu sebentar?",
+      "english": "Sorry, the system's down at the moment. Could you wait a moment?",
+      "reply": {
+        "indonesian": "Oh, nggak apa-apa. Saya tunggu.",
+        "english": "Oh, that's fine. I'll wait."
+      },
+      "note": "Error is said as in English. Lagi (right now) turns up in polite staff talk too.",
+      "audio": "audio/id/listening/lm-30.mp3",
+      "tags": [
+        "shop"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

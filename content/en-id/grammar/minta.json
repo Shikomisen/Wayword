@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-minta",
+  "connector": "minta, mohon, boleh saya",
+  "gloss": "asking politely",
+  "title": "minta, mohon, boleh saya — asking politely",
+  "pattern": "Minta …, ya · Boleh minta …? · Boleh saya …? · Bisa tolong …? · Mohon … (signs, staff)",
+  "explanation": "minta means 'ask for', and on its own it's the everyday way to ask for a thing: Minta air putih, ya (Some water, please). Boleh minta …? (may I have …?) is a notch more polite. To ask permission for something you want to do, say Boleh saya …?: Boleh saya duduk di sini? (May I sit here?). To ask someone else to do something, use Bisa tolong …? (could you please …?), often with a di- verb: Bisa tolong dibungkus? (Could you wrap it up?). mohon is formal: you'll see it on signs and hear it from staff and in announcements (Mohon tunggu sebentar, please wait a moment), but in your own requests you'll rarely need it except in Mohon maaf (I do apologise).",
+  "natural": "Minta …, ya is fine at any warung or counter: the ya at the end does the work of 'please'. With a partner's family or anyone older, Boleh saya …? and Bisa tolong …? are the safe choices.",
+  "stiff": "Don't translate 'Can I have …' as Bisa saya punya …?: punya means to own. Saya mau … ('I want') is fine for ordering, but for a favour it sounds demanding without tolong or boleh. And mohon in everyday requests sounds like an official letter.",
+  "examples": [
+    {
+      "id": "gx-minta-1",
+      "indonesian": "Minta sambalnya sedikit, ya.",
+      "english": "Could I have a little chilli sauce?",
+      "chunks": [
+        {
+          "t": "Minta "
+        },
+        {
+          "t": "sambalnya ",
+          "w": "w-sambal"
+        },
+        {
+          "t": "sedikit, ",
+          "w": "w-sedikit"
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Minta",
+        "after": " sambalnya sedikit, ya.",
+        "options": [
+          "Minta",
+          "Punya",
+          "Mohon"
+        ],
+        "why": "Asking for a thing: minta. Punya is owning, and mohon belongs on signs."
+      },
+      "audio": "audio/id/grammar/gx-minta-1.mp3",
+      "tags": [
+        "grammar",
+        "minta"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-minta-2",
+      "indonesian": "Boleh saya ambil foto di sini?",
+      "english": "Am I allowed to take photos here?",
+      "chunks": [
+        {
+          "t": "Boleh ",
+          "w": "w-boleh"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "ambil "
+        },
+        {
+          "t": "foto ",
+          "w": "w-foto"
+        },
+        {
+          "t": "di sini?",
+          "w": "w-di"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Boleh",
+        "after": " saya ambil foto di sini?",
+        "options": [
+          "Boleh",
+          "Minta",
+          "Mau"
+        ],
+        "why": "Asking permission for yourself: Boleh saya …?, 'may I …?'. Mau saya …? would be 'do you want me to …?'."
+      },
+      "cultureNote": "Worth asking at temples, mosques and ceremonies, where photos aren't always welcome.",
+      "audio": "audio/id/grammar/gx-minta-2.mp3",
+      "tags": [
+        "grammar",
+        "minta"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-minta-3",
+      "indonesian": "Bisa tolong jelaskan sekali lagi?",
+      "english": "Could you explain that once more?",
+      "chunks": [
+        {
+          "t": "Bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "tolong "
+        },
+        {
+          "t": "jelaskan ",
+          "w": "w-menjelaskan"
+        },
+        {
+          "t": "sekali lagi?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Bisa",
+        "after": " tolong jelaskan sekali lagi?",
+        "options": [
+          "Bisa",
+          "Mohon",
+          "Mau"
+        ],
+        "why": "Asking someone to do something for you: Bisa tolong …?, 'could you please …?'."
+      },
+      "registerNotes": "Jelaskan is menjelaskan without me-, as usual in requests. If you're interrupting, start with Maaf.",
+      "audio": "audio/id/grammar/gx-minta-3.mp3",
+      "tags": [
+        "grammar",
+        "minta"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-minta-4",
+      "indonesian": "Mohon tunggu sebentar.",
+      "english": "Please wait a moment.",
+      "chunks": [
+        {
+          "t": "Mohon "
+        },
+        {
+          "t": "tunggu ",
+          "w": "w-tunggu"
+        },
+        {
+          "t": "sebentar.",
+          "w": "w-sebentar"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Mohon",
+        "after": " tunggu sebentar.",
+        "options": [
+          "Mohon",
+          "Tolong",
+          "Mau"
+        ],
+        "ok": [
+          "Tolong"
+        ],
+        "note": "Tolong tunggu sebentar is right too, and less formal; staff and signs prefer mohon.",
+        "why": "The formal 'please' of staff, signs and announcements: mohon."
+      },
+      "registerNotes": "What you'll hear at a bank, a clinic or on the phone; just answer Baik (all right). Your own version is Tunggu sebentar, ya.",
+      "audio": "audio/id/grammar/gx-minta-4.mp3",
+      "tags": [
+        "grammar",
+        "minta"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

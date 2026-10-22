@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-sou",
+  "connector": "〜そう",
+  "gloss": "kelihatannya (akan)",
+  "title": "〜そう — kelihatannya enak, sepertinya mau hujan",
+  "pattern": "kata sifat い tanpa い / kata sifat な / bentuk ます tanpa ます + そう(だ)",
+  "explanation": "そう setelah kata sifat atau kata kerja menyatakan bagaimana sesuatu kelihatannya, seperti “kelihatannya” atau “kayaknya”: おいしそう — kelihatannya enak; {高|たか}そう — kelihatannya mahal; {雨|あめ}が{降|ふ}りそう — sepertinya mau hujan. Buang い dari kata sifat い (おいし + そう), atau ます dari kata kerja ({降|ふ}ります → {降|ふ}りそう). いい tidak beraturan: よさそう.",
+  "natural": "Untuk bereaksi pada apa yang kamu lihat: わあ、{楽|たの}しそう！ — wah, kelihatannya seru!",
+  "stiff": "Hati-hati dengan かわいそう: artinya “kasihan”, bukan “kelihatannya lucu”. Untuk hal yang jelas terlihat, seperti warna, katakan saja: {赤|あか}いね.",
+  "examples": [
+    {
+      "id": "gx-sou-1",
+      "japanese": "このケーキ、甘そう。",
+      "furigana": "この{ケーキ|けーき}、{甘|あま}そう。",
+      "indonesian": "Kue ini kelihatannya manis.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "この{ケーキ|けーき}、"
+        },
+        {
+          "t": "{甘|あま}そう。",
+          "w": "w-amai"
+        }
+      ],
+      "gap": {
+        "before": "この{ケーキ|けーき}、{甘|あま}",
+        "answer": "そう",
+        "after": "。",
+        "options": [
+          "そう",
+          "よう",
+          "らしい"
+        ],
+        "why": "Kelihatannya: buang い, tambah そう."
+      },
+      "audio": "audio/ja/grammar/gx-sou-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "sou"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-sou-2",
+      "japanese": "雨が降りそうだね。",
+      "furigana": "{雨|あめ}が{降|ふ}りそうだね。",
+      "indonesian": "Sepertinya mau hujan, ya.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{雨|あめ}が",
+          "w": "w-ame"
+        },
+        {
+          "t": "{降|ふ}りそうだね。",
+          "w": "w-furu"
+        }
+      ],
+      "gap": {
+        "before": "{雨|あめ}が{降|ふ}り",
+        "answer": "そう",
+        "after": "だね。",
+        "options": [
+          "そう",
+          "よう",
+          "たい"
+        ],
+        "why": "Kelihatannya akan terjadi: 降りそう."
+      },
+      "audio": "audio/ja/grammar/gx-sou-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "sou"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-sou-3",
+      "japanese": "その仕事、大変そうですね。",
+      "furigana": "その{仕事|しごと}、{大変|たいへん}そうですね。",
+      "indonesian": "Pekerjaan itu kedengarannya berat, ya.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "その{仕事|しごと}、",
+          "w": "w-shigoto"
+        },
+        {
+          "t": "{大変|たいへん}そうですね。",
+          "w": "w-taihen"
+        }
+      ],
+      "gap": {
+        "before": "その{仕事|しごと}、{大変|たいへん}",
+        "answer": "そう",
+        "after": "ですね。",
+        "options": [
+          "そう",
+          "な",
+          "らしい"
+        ],
+        "why": "Kata sifat な langsung disambung dengan そう: 大変そう."
+      },
+      "audio": "audio/ja/grammar/gx-sou-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "sou"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-sou-4",
+      "japanese": "この店、よさそうだね。",
+      "furigana": "この{店|みせ}、よさそうだね。",
+      "indonesian": "Tempat ini kelihatannya bagus, ya.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "この{店|みせ}、",
+          "w": "w-mise"
+        },
+        {
+          "t": "よさそうだね。",
+          "w": "w-ii"
+        }
+      ],
+      "gap": {
+        "before": "この{店|みせ}、",
+        "answer": "よさそう",
+        "after": "だね。",
+        "options": [
+          "よさそう",
+          "いいそう",
+          "よそう"
+        ],
+        "why": "いい tidak beraturan: よさそう."
+      },
+      "audio": "audio/ja/grammar/gx-sou-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "sou"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

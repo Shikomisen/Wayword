@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ada",
+  "connector": "ada",
+  "gloss": "there is, there are",
+  "title": "ada — there is, there are",
+  "pattern": "Ada …? · Tidak ada … · … ada di …",
+  "explanation": "Ada says that something exists or is available: Ada air? is 'Is there any water?' or 'Do you have water?', and the answer is Ada or Tidak ada. It also says where someone or something is: Ibu ada di rumah? (Is your mother at home?), or just Pak Budi ada? (Is Mr Budi in?). Where English starts with 'there is', Indonesian starts with ada or with the place: Ada banyak turis di Bali, or Di Bali ada banyak turis. Tidak ada, nggak ada in casual speech, means 'there isn't any' or 'not here'.",
+  "natural": "In shops and warungs, Ada …? is the easy way to ask for anything: Ada es teh? Ada kamar? If the answer is Nggak ada or Habis, they've run out.",
+  "stiff": "Ada isn't 'is' before a describing word: Saya ada capek is wrong (just Saya capek). And for what you own, the word is punya (the next lesson): Saya punya mobil (I've got a car).",
+  "examples": [
+    {
+      "id": "gx-ada-1",
+      "indonesian": "Ada air dingin?",
+      "english": "Have you got cold water?",
+      "chunks": [
+        {
+          "t": "Ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "air ",
+          "w": "w-air"
+        },
+        {
+          "t": "dingin?",
+          "w": "w-dingin"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Ada",
+        "after": " air dingin?",
+        "options": [
+          "Ada",
+          "Punya",
+          "Adalah"
+        ],
+        "why": "Asking whether something's available is ada; punya is for what someone owns."
+      },
+      "audio": "audio/id/grammar/gx-ada-1.mp3",
+      "tags": [
+        "grammar",
+        "ada"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ada-2",
+      "indonesian": "Pak Budi ada di kantor?",
+      "english": "Is Mr Budi in the office?",
+      "chunks": [
+        {
+          "t": "Pak Budi ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "di kantor?",
+          "w": "w-kantor"
+        }
+      ],
+      "gap": {
+        "before": "Pak Budi ",
+        "answer": "ada",
+        "after": " di kantor?",
+        "options": [
+          "ada",
+          "adalah",
+          "punya"
+        ],
+        "why": "Saying where someone is: ada di kantor, in the office."
+      },
+      "audio": "audio/id/grammar/gx-ada-2.mp3",
+      "tags": [
+        "grammar",
+        "ada"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ada-3",
+      "indonesian": "Di rumah tidak ada orang.",
+      "english": "There's nobody at home.",
+      "chunks": [
+        {
+          "t": "Di rumah ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "tidak ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "orang.",
+          "w": "w-orang"
+        }
+      ],
+      "gap": {
+        "before": "Di rumah ",
+        "answer": "tidak ada",
+        "after": " orang.",
+        "options": [
+          "tidak ada",
+          "bukan ada",
+          "tidak punya"
+        ],
+        "why": "'There isn't' is tidak ada: tidak, because ada is a verb."
+      },
+      "audio": "audio/id/grammar/gx-ada-3.mp3",
+      "tags": [
+        "grammar",
+        "ada"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ada-4",
+      "indonesian": "Di depan hotel ada warung.",
+      "english": "There's a warung in front of the hotel.",
+      "chunks": [
+        {
+          "t": "Di depan ",
+          "w": "w-depan"
+        },
+        {
+          "t": "hotel ",
+          "w": "w-hotel"
+        },
+        {
+          "t": "ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "warung.",
+          "w": "w-warung"
+        }
+      ],
+      "gap": {
+        "before": "Di depan hotel ",
+        "answer": "ada",
+        "after": " warung.",
+        "options": [
+          "ada",
+          "punya"
+        ],
+        "why": "'There is' is ada, here after the place."
+      },
+      "audio": "audio/id/grammar/gx-ada-4.mp3",
+      "tags": [
+        "grammar",
+        "ada"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

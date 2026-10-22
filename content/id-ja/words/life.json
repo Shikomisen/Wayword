@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "id": "words-life",
+  "title": "Rumah & keseharian",
+  "description": "Mengurus rumah: pekerjaan rumah tangga, sewa, peralatan, barang rusak dan diperbaiki, serta kebiasaan sehari-hari.",
+  "items": [
+    {
+      "id": "w-kaji",
+      "japanese": "家事",
+      "furigana": "{家事|かじ}",
+      "indonesian": "pekerjaan rumah tangga",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kaji.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hikkoshi",
+      "japanese": "引っ越し",
+      "furigana": "{引|ひ}っ{越|こ}し",
+      "indonesian": "pindah rumah",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hikkoshi.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yachin",
+      "japanese": "家賃",
+      "furigana": "{家賃|やちん}",
+      "indonesian": "uang sewa (rumah)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yachin.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tonari",
+      "japanese": "隣",
+      "furigana": "{隣|となり}",
+      "indonesian": "di sebelah; sebelah rumah",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-tonari.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-reizouko",
+      "japanese": "冷蔵庫",
+      "furigana": "{冷蔵庫|れいぞうこ}",
+      "indonesian": "kulkas",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-reizouko.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sentakuki",
+      "japanese": "洗濯機",
+      "furigana": "{洗濯機|せんたくき}",
+      "indonesian": "mesin cuci",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-sentakuki.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-eakon",
+      "japanese": "エアコン",
+      "furigana": "{エアコン|えあこん}",
+      "indonesian": "AC (juga pemanas ruangan)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-eakon.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kowareru",
+      "japanese": "壊れる",
+      "furigana": "{壊|こわ}れる",
+      "indonesian": "rusak, mati (tidak berfungsi)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{壊|こわ}れます",
+        "te": "{壊|こわ}れて"
+      },
+      "usage": "Barang rusak sendiri: 壊れる; kamu yang merusaknya: 壊す. Seperti “rusak” dan “merusak”.",
+      "audio": "audio/ja/words/w-kowareru.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-naosu",
+      "japanese": "直す",
+      "furigana": "{直|なお}す",
+      "indonesian": "memperbaiki; membetulkan",
+      "pos": "verb",
+      "forms": {
+        "masu": "{直|なお}します",
+        "te": "{直|なお}して"
+      },
+      "audio": "audio/ja/words/w-naosu.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-rusu",
+      "japanese": "留守",
+      "furigana": "{留守|るす}",
+      "indonesian": "tidak ada di rumah, sedang pergi",
+      "pos": "noun",
+      "usage": "留守電 — pesan suara (mesin penjawab telepon).",
+      "audio": "audio/ja/words/w-rusu.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-takuhaibin",
+      "japanese": "宅配便",
+      "furigana": "{宅配便|たくはいびん}",
+      "indonesian": "jasa kirim paket",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-takuhaibin.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-seikatsu",
+      "japanese": "生活",
+      "furigana": "{生活|せいかつ}",
+      "indonesian": "kehidupan, hidup sehari-hari",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-seikatsu.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shuukan",
+      "japanese": "習慣",
+      "furigana": "{習慣|しゅうかん}",
+      "indonesian": "kebiasaan; adat",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shuukan.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hayaoki",
+      "japanese": "早起き",
+      "furigana": "{早起|はやお}き",
+      "indonesian": "bangun pagi",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hayaoki.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nebou",
+      "japanese": "寝坊",
+      "furigana": "{寝坊|ねぼう}",
+      "indonesian": "kesiangan",
+      "pos": "noun",
+      "usage": "寝坊した！ — aku kesiangan!",
+      "audio": "audio/ja/words/w-nebou.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-futon",
+      "japanese": "布団",
+      "furigana": "{布団|ふとん}",
+      "indonesian": "futon, kasur lipat",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-futon.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sara",
+      "japanese": "皿",
+      "furigana": "{皿|さら}",
+      "indonesian": "piring",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-sara.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hashi",
+      "japanese": "箸",
+      "furigana": "{箸|はし}",
+      "indonesian": "sumpit",
+      "pos": "noun",
+      "usage": "Biasanya disebut お箸. (Bunyi yang sama, 橋, berarti jembatan, dengan nada yang berbeda.)",
+      "audioHint": "箸",
+      "audio": "audio/ja/words/w-hashi.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-suidou",
+      "japanese": "水道",
+      "furigana": "{水道|すいどう}",
+      "indonesian": "air ledeng; keran",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-suidou.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kaidan",
+      "japanese": "階段",
+      "furigana": "{階段|かいだん}",
+      "indonesian": "tangga",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kaidan.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-genkan",
+      "japanese": "玄関",
+      "furigana": "{玄関|げんかん}",
+      "indonesian": "pintu masuk (tempat melepas sepatu)",
+      "pos": "noun",
+      "usage": "Sepatu dilepas di 玄関, lalu kamu naik selangkah ke lantai rumah. Mirip kebiasaan lepas sepatu di banyak rumah di Indonesia.",
+      "audio": "audio/ja/words/w-genkan.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kutsu",
+      "japanese": "靴",
+      "furigana": "{靴|くつ}",
+      "indonesian": "sepatu",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kutsu.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-fuku",
+      "japanese": "服",
+      "furigana": "{服|ふく}",
+      "indonesian": "pakaian, baju",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-fuku.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kiru",
+      "japanese": "着る",
+      "furigana": "{着|き}る",
+      "indonesian": "memakai (baju di badan)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{着|き}ます",
+        "te": "{着|き}て"
+      },
+      "usage": "Kemeja dan jaket: 着る. Celana dan sepatu: はく. Topi: かぶる. Bahasa Indonesia cukup “pakai” untuk semuanya.",
+      "audio": "audio/ja/words/w-kiru.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nugu",
+      "japanese": "脱ぐ",
+      "furigana": "{脱|ぬ}ぐ",
+      "indonesian": "melepas (baju, sepatu)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{脱|ぬ}ぎます",
+        "te": "{脱|ぬ}いで"
+      },
+      "audio": "audio/ja/words/w-nugu.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

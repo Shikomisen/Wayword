@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "smalltalk",
+  "title": "世間話",
+  "order": 3,
+  "description": "旅行者がいつも聞かれる質問と、その答え方：どこから来たか、インドネシアに来てどのくらいか、インドネシアは好きか。それに日常のあいさつ Mau ke mana? と Sudah makan?。",
+  "phrases": [
+    {
+      "id": "sml-01",
+      "indonesian": "Asalnya dari mana?",
+      "japanese": "ご出身はどちらですか？",
+      "registerNotes": "Asal は「出身」、-nya で「あなた」にあたる言葉を選ばずにすみます。短く Dari mana? とも言い、年上の人には Bapak asalnya dari mana? と聞きます。",
+      "cultureNote": "旅行者は、運転手・物売り・近所の人からいつもこの質問をされます。親しみのある好奇心で、話はよく、結婚しているか、子どもはいるかに移っていきます。日本では立ち入った質問でも、ここではふつうの世間話です。",
+      "audio": "audio/id/sml-01.mp3",
+      "tags": [
+        "世間話",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sml-02",
+      "indonesian": "Saya dari Selandia Baru.",
+      "japanese": "ニュージーランドから来ました。",
+      "registerNotes": "Selandia Baru はニュージーランド。日本からなら Saya dari Jepang。都市名を足すとわかりやすくなります：Saya dari Osaka。",
+      "pitfallNote": "「です」にあたる言葉はいりません。dari（〜から）だけで十分です。",
+      "audio": "audio/id/sml-02.mp3",
+      "tags": [
+        "世間話",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sml-03",
+      "indonesian": "Sudah berapa lama di Indonesia?",
+      "japanese": "インドネシアに来てどのくらいですか？",
+      "registerNotes": "答えは Sudah dua minggu（もう2週間です）や Baru tiga hari（まだ3日です）。次によく聞かれるのは Berapa lama lagi?（あとどのくらいいますか？）。",
+      "audio": "audio/id/sml-03.mp3",
+      "tags": [
+        "世間話"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sml-04",
+      "indonesian": "Suka Indonesia?",
+      "japanese": "インドネシアは好きですか？",
+      "registerNotes": "旅行者によく聞かれる質問で、Suka makanan Indonesia?（インドネシア料理は好き？）や Bisa makan pedas?（辛いものは食べられる？）がよく続きます。",
+      "audio": "audio/id/sml-04.mp3",
+      "tags": [
+        "世間話"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sml-05",
+      "indonesian": "Saya suka sekali di sini.",
+      "japanese": "ここがとても気に入っています。",
+      "registerNotes": "sekali は言葉の後ろに置いて「とても」。日本語の「とても」とは位置が逆です。具体的に言うなら Saya suka sekali makanannya（食べ物が大好きです）。",
+      "audio": "audio/id/sml-05.mp3",
+      "tags": [
+        "世間話"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sml-06",
+      "indonesian": "Saya sedang belajar bahasa Indonesia.",
+      "japanese": "インドネシア語を勉強しています。",
+      "registerNotes": "Sedang は「今〜しているところ」。友だちには Aku lagi belajar bahasa Indonesia。",
+      "pitfallNote": "言語の名前は bahasa Indonesia。Bahasa だけなら「言葉」、Indonesia だけなら国の名前です。日本語は bahasa Jepang。",
+      "cultureNote": "少し話すだけでも、Wah, pintar（わあ、すごい）や Sudah lancar（もうペラペラですね）と温かく返されます。日本で「日本語、上手ですね」と言われるのと似ています。",
+      "audio": "audio/id/sml-06.mp3",
+      "tags": [
+        "世間話",
+        "言葉"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sml-07",
+      "indonesian": "Saya baru bisa sedikit.",
+      "japanese": "まだ少ししか話せません。",
+      "registerNotes": "Baru（まだ〜だけ）は謙虚で前向きに聞こえます。Bisa bahasa Indonesia? への短い答えは Sedikit-sedikit（少しだけ）がふつうです。",
+      "pitfallNote": "言葉が「話せる」は bisa（できる）だけで言えます：Bisa bahasa Inggris? は「英語できますか？」。bicara のような動詞はいりません。日本語の「英語できますか？」と同じ発想です。",
+      "audio": "audio/id/sml-07.mp3",
+      "tags": [
+        "世間話",
+        "言葉"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sml-08",
+      "indonesian": "Mau ke mana?",
+      "japanese": "どちらへ？",
+      "registerNotes": "近所の人やすれちがう人から、よく呼びかけをつけて言われます：Mau ke mana, Mbak?",
+      "cultureNote": "あいさつで、詮索ではありません。日本語の「お出かけですか？」と同じで、くわしく答える必要はなく、あいまいな返事で十分ていねいです。",
+      "audio": "audio/id/sml-08.mp3",
+      "tags": [
+        "世間話",
+        "あいさつ",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sml-09",
+      "indonesian": "Jalan-jalan saja.",
+      "japanese": "ちょっとぶらぶらと。",
+      "registerNotes": "Mau ke mana? へのお決まりのあいまいな答え。ほかに Ke depan（ちょっとそこまで）、Ke pasar（市場へ）、Pulang（帰るところです）。",
+      "audio": "audio/id/sml-09.mp3",
+      "tags": [
+        "世間話",
+        "あいさつ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sml-10",
+      "indonesian": "Dari mana, Bu?",
+      "japanese": "どちらへ行ってきたんですか？",
+      "registerNotes": "帰ってくるところを見かけた人に聞かれます。答えも短く：Dari pasar（市場から）、Dari kantor（会社から）。",
+      "pitfallNote": "同じ言葉で「どこから来ましたか？（出身）」の意味にもなります。買い物袋を下げて帰る途中なら、どこに行ってきたかの質問です。",
+      "audio": "audio/id/sml-10.mp3",
+      "tags": [
+        "世間話",
+        "あいさつ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sml-11",
+      "indonesian": "Sudah makan?",
+      "japanese": "ごはん、食べましたか？",
+      "registerNotes": "答えは Sudah（はい、もう）か Belum（まだです）。Sudah, terima kasih がいつでも無難です。",
+      "pitfallNote": "ya や tidak で答えないように。Sudah …? の質問には sudah と belum が「はい」と「いいえ」です。日本語の「もう食べた？」に「まだ」と答えるのと同じ感覚です。",
+      "cultureNote": "特に食事どきの親しいあいさつです。食事に誘っているのではなく、気づかいを表しています。",
+      "audio": "audio/id/sml-11.mp3",
+      "tags": [
+        "世間話",
+        "あいさつ",
+        "必須"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

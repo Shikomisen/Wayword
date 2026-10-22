@@ -1,0 +1,749 @@
+{
+  "schemaVersion": 1,
+  "id": "sentences-out",
+  "title": "Out and About",
+  "description": "Getting things done and dealing with people: paying, sending and returning things, travel bookings, favours, and arranging to meet. A few are casual, for friends.",
+  "items": [
+    {
+      "id": "s-67",
+      "indonesian": "Kalau macet, kita naik ojek saja.",
+      "english": "If the traffic's bad, let's just take an ojek.",
+      "chunks": [
+        {
+          "t": "Kalau macet, ",
+          "w": "w-kalau"
+        },
+        {
+          "t": "kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "naik ojek "
+        },
+        {
+          "t": "saja."
+        }
+      ],
+      "registerNotes": "Saja after a choice means 'just, simply'. Kalau needs no 'it is': kalau macet, if (it's) jammed.",
+      "cultureNote": "An ojek is a motorbike taxi, usually booked on an app. It can slip through traffic that cars can't.",
+      "audio": "audio/id/sentences/s-67.mp3",
+      "tags": [
+        "transport",
+        "plans"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-68",
+      "indonesian": "Tadi saya sudah bayar di kasir.",
+      "english": "I already paid at the till earlier.",
+      "chunks": [
+        {
+          "t": "Tadi ",
+          "w": "w-tadi"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah bayar ",
+          "w": "w-bayar"
+        },
+        {
+          "t": "di kasir.",
+          "w": "w-di"
+        }
+      ],
+      "registerNotes": "Tadi is 'earlier today', and it often comes with sudah. Useful when you're asked to pay a second time.",
+      "audio": "audio/id/sentences/s-68.mp3",
+      "tags": [
+        "paying",
+        "shops"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-69",
+      "indonesian": "Ini bisa tolong dibungkus?",
+      "english": "Could you wrap this up for me?",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "bisa tolong ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "dibungkus?"
+        }
+      ],
+      "registerNotes": "Bisa tolong with a di- verb makes a very polite request: it names the thing and leaves out who does it. Good for takeaway and leftovers.",
+      "pitfallNote": "Dibungkus is one word: di- joined to a verb is the passive, unlike di (at) before a place.",
+      "audio": "audio/id/sentences/s-69.mp3",
+      "tags": [
+        "food",
+        "requests"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-70",
+      "indonesian": "Maaf, bajunya kebesaran. Bisa tukar yang lebih kecil?",
+      "english": "Sorry, the top's too big. Could I swap it for a smaller one?",
+      "chunks": [
+        {
+          "t": "Maaf, "
+        },
+        {
+          "t": "bajunya ",
+          "w": "w-baju"
+        },
+        {
+          "t": "kebesaran. ",
+          "w": "w-besar"
+        },
+        {
+          "t": "Bisa tukar ",
+          "w": "w-tukar"
+        },
+        {
+          "t": "yang lebih kecil?",
+          "w": "w-kecil"
+        }
+      ],
+      "pitfallNote": "Kebesaran is the spoken 'too big': ke-…-an around a describing word. Kekecilan is too small.",
+      "audio": "audio/id/sentences/s-70.mp3",
+      "tags": [
+        "shopping",
+        "problems"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-71",
+      "indonesian": "Kalau beli dua, ada diskon?",
+      "english": "Is there a discount if I buy two?",
+      "chunks": [
+        {
+          "t": "Kalau beli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "dua, "
+        },
+        {
+          "t": "ada diskon?",
+          "w": "w-diskon"
+        }
+      ],
+      "registerNotes": "Kalau puts the condition first. Offering to buy more is a polite way to ask for a better price.",
+      "audio": "audio/id/sentences/s-71.mp3",
+      "tags": [
+        "shopping",
+        "bargaining"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-72",
+      "indonesian": "Kita tawar dulu, jangan langsung bayar.",
+      "english": "Let's bargain first; don't pay straight away.",
+      "chunks": [
+        {
+          "t": "Kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "tawar dulu, ",
+          "w": "w-menawar"
+        },
+        {
+          "t": "jangan langsung "
+        },
+        {
+          "t": "bayar.",
+          "w": "w-bayar"
+        }
+      ],
+      "registerNotes": "Said to a companion at a market. Dulu here means 'first', before doing anything else, and tawar is menawar without the me-.",
+      "audio": "audio/id/sentences/s-72.mp3",
+      "tags": [
+        "market",
+        "bargaining"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-73",
+      "indonesian": "Bisa bayar tunai, atau harus transfer?",
+      "english": "Can I pay cash, or does it have to be a transfer?",
+      "chunks": [
+        {
+          "t": "Bisa bayar ",
+          "w": "w-bayar"
+        },
+        {
+          "t": "tunai, ",
+          "w": "w-tunai"
+        },
+        {
+          "t": "atau harus ",
+          "w": "w-harus"
+        },
+        {
+          "t": "transfer?",
+          "w": "w-transfer"
+        }
+      ],
+      "cultureNote": "Bank transfers and QR payments are common everywhere from homestays to market stalls, so it's worth asking before you count on cash.",
+      "audio": "audio/id/sentences/s-73.mp3",
+      "tags": [
+        "paying"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-74",
+      "indonesian": "Saya sudah transfer, ini buktinya.",
+      "english": "I've made the transfer. Here's the proof.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah transfer, ",
+          "w": "w-transfer"
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "buktinya."
+        }
+      ],
+      "cultureNote": "Sending a screenshot of the transfer, the bukti transfer, is the normal way to show you've paid.",
+      "audio": "audio/id/sentences/s-74.mp3",
+      "tags": [
+        "paying"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-75",
+      "indonesian": "Ongkirnya berapa kalau dikirim ke Bandung?",
+      "english": "How much is delivery if it's sent to Bandung?",
+      "chunks": [
+        {
+          "t": "Ongkirnya ",
+          "w": "w-ongkir"
+        },
+        {
+          "t": "berapa ",
+          "w": "w-berapa"
+        },
+        {
+          "t": "kalau dikirim ",
+          "w": "w-mengirim"
+        },
+        {
+          "t": "ke Bandung?",
+          "w": "w-ke"
+        }
+      ],
+      "registerNotes": "Ongkir is short for ongkos kirim, the delivery charge. Dikirim is the di- form of kirim (send): 'is sent'.",
+      "audio": "audio/id/sentences/s-75.mp3",
+      "tags": [
+        "delivery",
+        "shopping"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-76",
+      "indonesian": "Paketnya sudah sampai, tapi isinya rusak.",
+      "english": "The parcel's arrived, but what was inside is broken.",
+      "chunks": [
+        {
+          "t": "Paketnya ",
+          "w": "w-paket"
+        },
+        {
+          "t": "sudah sampai, ",
+          "w": "w-sampai"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "isinya "
+        },
+        {
+          "t": "rusak.",
+          "w": "w-rusak"
+        }
+      ],
+      "registerNotes": "Isinya is 'its contents', from isi. Rusak covers broken, damaged and out of order.",
+      "audio": "audio/id/sentences/s-76.mp3",
+      "tags": [
+        "delivery",
+        "problems"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-77",
+      "indonesian": "Mbak, saya mau isi pulsa lima puluh ribu.",
+      "english": "I'd like fifty thousand of phone credit, please.",
+      "chunks": [
+        {
+          "t": "Mbak, "
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau isi ",
+          "w": "w-mau"
+        },
+        {
+          "t": "pulsa ",
+          "w": "w-pulsa"
+        },
+        {
+          "t": "lima puluh ribu."
+        }
+      ],
+      "registerNotes": "Isi pulsa is topping up your phone. Mbak is a polite way to address a young woman serving you, and Mas a young man.",
+      "cultureNote": "You can top up at any minimarket or phone-credit stall, or in a banking app.",
+      "audio": "audio/id/sentences/s-77.mp3",
+      "tags": [
+        "errands",
+        "phone"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-78",
+      "indonesian": "Bisa tolong jemput saya di bandara jam tujuh malam?",
+      "english": "Could you pick me up at the airport at seven in the evening?",
+      "chunks": [
+        {
+          "t": "Bisa tolong ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "jemput saya ",
+          "w": "w-menjemput"
+        },
+        {
+          "t": "di bandara ",
+          "w": "w-bandara"
+        },
+        {
+          "t": "jam tujuh malam?",
+          "w": "w-jam"
+        }
+      ],
+      "registerNotes": "In requests the me- often drops: jemput rather than menjemput, still polite after bisa tolong. Malam after the hour makes it p.m.",
+      "audio": "audio/id/sentences/s-78.mp3",
+      "tags": [
+        "transport",
+        "requests"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-79",
+      "indonesian": "Kapal ke Gili berangkat jam berapa?",
+      "english": "What time does the boat to Gili leave?",
+      "chunks": [
+        {
+          "t": "Kapal ",
+          "w": "w-kapal"
+        },
+        {
+          "t": "ke Gili ",
+          "w": "w-ke"
+        },
+        {
+          "t": "berangkat ",
+          "w": "w-berangkat"
+        },
+        {
+          "t": "jam berapa?",
+          "w": "w-jam"
+        }
+      ],
+      "pitfallNote": "Use berangkat, not pergi, for a boat, bus or plane leaving at a set time.",
+      "audio": "audio/id/sentences/s-79.mp3",
+      "tags": [
+        "travel",
+        "transport"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-80",
+      "indonesian": "Tiketnya sudah habis untuk hari ini.",
+      "english": "Tickets for today are sold out.",
+      "chunks": [
+        {
+          "t": "Tiketnya ",
+          "w": "w-tiket"
+        },
+        {
+          "t": "sudah habis ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "untuk "
+        },
+        {
+          "t": "hari ini.",
+          "w": "w-hari-ini"
+        }
+      ],
+      "registerNotes": "Habis (used up, all gone) is how 'sold out' is said. It's also what you'll hear when a dish has run out: Maaf, sudah habis.",
+      "audio": "audio/id/sentences/s-80.mp3",
+      "tags": [
+        "travel",
+        "tickets"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-81",
+      "indonesian": "Sewa motornya berapa sehari?",
+      "english": "How much is it to hire a scooter for a day?",
+      "chunks": [
+        {
+          "t": "Sewa motornya ",
+          "w": "w-sewa-motor"
+        },
+        {
+          "t": "berapa ",
+          "w": "w-berapa"
+        },
+        {
+          "t": "sehari?",
+          "w": "w-hari"
+        }
+      ],
+      "registerNotes": "Sehari is 'a day, per day', with se- for one. Seminggu works the same way for a week.",
+      "audio": "audio/id/sentences/s-81.mp3",
+      "tags": [
+        "travel",
+        "prices"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-82",
+      "indonesian": "Kami cari penginapan yang dekat pantai dan tidak terlalu mahal.",
+      "english": "We're looking for somewhere to stay near the beach that isn't too expensive.",
+      "chunks": [
+        {
+          "t": "Kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "cari penginapan ",
+          "w": "w-penginapan"
+        },
+        {
+          "t": "yang dekat ",
+          "w": "w-dekat"
+        },
+        {
+          "t": "pantai ",
+          "w": "w-pantai"
+        },
+        {
+          "t": "dan tidak terlalu "
+        },
+        {
+          "t": "mahal.",
+          "w": "w-mahal"
+        }
+      ],
+      "registerNotes": "Yang joins a description to a noun: penginapan yang dekat pantai, somewhere to stay that is near the beach.",
+      "audio": "audio/id/sentences/s-82.mp3",
+      "tags": [
+        "travel",
+        "accommodation"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-83",
+      "indonesian": "Kalau malam, daerah ini aman?",
+      "english": "Is this area safe at night?",
+      "chunks": [
+        {
+          "t": "Kalau malam, ",
+          "w": "w-malam"
+        },
+        {
+          "t": "daerah "
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "aman?",
+          "w": "w-aman"
+        }
+      ],
+      "registerNotes": "Kalau malam is 'at night', in the sense of whenever it's night. Your host or the hotel staff are the best people to ask.",
+      "audio": "audio/id/sentences/s-83.mp3",
+      "tags": [
+        "safety",
+        "travel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-84",
+      "indonesian": "Koper saya ketinggalan di taksi.",
+      "english": "I left my suitcase in the taxi.",
+      "chunks": [
+        {
+          "t": "Koper ",
+          "w": "w-koper"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "ketinggalan "
+        },
+        {
+          "t": "di taksi.",
+          "w": "w-di"
+        }
+      ],
+      "pitfallNote": "Ketinggalan is 'left behind by accident': the ke-…-an form says it happened to you rather than that you did it.",
+      "audio": "audio/id/sentences/s-84.mp3",
+      "tags": [
+        "travel",
+        "problems"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-85",
+      "indonesian": "Tolong hubungi saya kalau ada kabar.",
+      "english": "Please get in touch if there's any news.",
+      "chunks": [
+        {
+          "t": "Tolong hubungi ",
+          "w": "w-menghubungi"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "kalau ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "kabar.",
+          "w": "w-kabar"
+        }
+      ],
+      "registerNotes": "Hubungi is menghubungi with the me- dropped, as often in requests. Kabar (news) is the same word as in Apa kabar?",
+      "audio": "audio/id/sentences/s-85.mp3",
+      "tags": [
+        "requests",
+        "contact"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-86",
+      "indonesian": "Boleh pinjam pulpennya sebentar?",
+      "english": "Could I borrow your pen for a moment?",
+      "chunks": [
+        {
+          "t": "Boleh pinjam ",
+          "w": "w-meminjam"
+        },
+        {
+          "t": "pulpennya "
+        },
+        {
+          "t": "sebentar?",
+          "w": "w-sebentar"
+        }
+      ],
+      "registerNotes": "Pulpennya, 'the pen', politely stands in for 'your pen' without having to say 'you'. Boleh asks permission: may I.",
+      "audio": "audio/id/sentences/s-86.mp3",
+      "tags": [
+        "requests"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-87",
+      "indonesian": "Bisa tolong fotokan kami?",
+      "english": "Could you take a photo of us?",
+      "chunks": [
+        {
+          "t": "Bisa tolong ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "fotokan ",
+          "w": "w-foto"
+        },
+        {
+          "t": "kami?",
+          "w": "w-kami"
+        }
+      ],
+      "registerNotes": "Fotokan is foto with -kan: take a photo for someone. Kami, not kita, because the person taking it isn't in the photo.",
+      "audio": "audio/id/sentences/s-87.mp3",
+      "tags": [
+        "requests",
+        "travel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-88",
+      "indonesian": "Maaf, saya tidak sengaja.",
+      "english": "Sorry, I didn't mean to.",
+      "chunks": [
+        {
+          "t": "Maaf, "
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tidak sengaja.",
+          "w": "w-tidak"
+        }
+      ],
+      "registerNotes": "For bumping into someone or knocking something over. Sengaja is 'on purpose'.",
+      "audio": "audio/id/sentences/s-88.mp3",
+      "tags": [
+        "apologies",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-89",
+      "indonesian": "Antreannya panjang sekali, kita datang lagi nanti saja.",
+      "english": "The queue's really long. Let's come back later.",
+      "chunks": [
+        {
+          "t": "Antreannya "
+        },
+        {
+          "t": "panjang sekali, "
+        },
+        {
+          "t": "kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "datang lagi ",
+          "w": "w-datang"
+        },
+        {
+          "t": "nanti saja.",
+          "w": "w-nanti"
+        }
+      ],
+      "registerNotes": "Datang lagi is 'come again, come back'. Nanti saja (just later) is a soft way to put something off.",
+      "audio": "audio/id/sentences/s-89.mp3",
+      "tags": [
+        "errands",
+        "plans"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-90",
+      "register": "casual",
+      "indonesian": "Nanti malam kita nongkrong di kafe dekat kosku, yuk.",
+      "english": "Let's hang out at the café near my place tonight.",
+      "chunks": [
+        {
+          "t": "Nanti malam ",
+          "w": "w-nanti-malam"
+        },
+        {
+          "t": "kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "nongkrong ",
+          "w": "w-nongkrong"
+        },
+        {
+          "t": "di kafe ",
+          "w": "w-di"
+        },
+        {
+          "t": "dekat kosku, ",
+          "w": "w-kos"
+        },
+        {
+          "t": "yuk."
+        }
+      ],
+      "registerNotes": "Casual, between friends. Yuk on the end makes it 'let's'. A kos is a rented room in a boarding house, home to many students and young workers.",
+      "audio": "audio/id/sentences/s-90.mp3",
+      "tags": [
+        "casual",
+        "plans"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "s-91",
+      "register": "casual",
+      "indonesian": "Aku udah di depan, kamu di mana?",
+      "english": "I'm out the front. Where are you?",
+      "chunks": [
+        {
+          "t": "Aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "udah di depan, ",
+          "w": "w-depan"
+        },
+        {
+          "t": "kamu ",
+          "w": "w-kamu"
+        },
+        {
+          "t": "di mana?",
+          "w": "w-di-mana"
+        }
+      ],
+      "registerNotes": "Casual: udah is the spoken sudah. Di depan, 'at the front', usually means outside the building or at the gate.",
+      "audio": "audio/id/sentences/s-91.mp3",
+      "tags": [
+        "casual",
+        "meeting up"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "id": "words-time",
+  "title": "Waktu & hari",
+  "description": "Hari ini, besok, setiap hari, belum — kata-kata yang menunjukkan kapan sesuatu terjadi.",
+  "items": [
+    {
+      "id": "w-kyou",
+      "japanese": "今日",
+      "furigana": "{今日|きょう}",
+      "romaji": "kyō",
+      "indonesian": "hari ini",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kyou.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ashita",
+      "japanese": "明日",
+      "furigana": "{明日|あした}",
+      "romaji": "ashita",
+      "indonesian": "besok",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-ashita.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kinou",
+      "japanese": "昨日",
+      "furigana": "{昨日|きのう}",
+      "romaji": "kinō",
+      "indonesian": "kemarin",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kinou.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1,
+      "usage": "Dalam bahasa Indonesia, \"kemarin\" saja sudah cukup. Dalam bahasa Jepang, kata kerjanya juga harus berubah ke bentuk lampau: 昨日行きました (kemarin saya pergi)."
+    },
+    {
+      "id": "w-ima",
+      "japanese": "今",
+      "furigana": "{今|いま}",
+      "romaji": "ima",
+      "indonesian": "sekarang",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-ima.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-asa",
+      "japanese": "朝",
+      "furigana": "{朝|あさ}",
+      "romaji": "asa",
+      "indonesian": "pagi",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-asa.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hiru",
+      "japanese": "昼",
+      "furigana": "{昼|ひる}",
+      "romaji": "hiru",
+      "indonesian": "siang; jam makan siang",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hiru.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yoru",
+      "japanese": "夜",
+      "furigana": "{夜|よる}",
+      "romaji": "yoru",
+      "indonesian": "malam",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yoru.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-konban",
+      "japanese": "今晩",
+      "furigana": "{今晩|こんばん}",
+      "romaji": "konban",
+      "indonesian": "malam ini, nanti malam",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-konban.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mainichi",
+      "japanese": "毎日",
+      "furigana": "{毎日|まいにち}",
+      "romaji": "mainichi",
+      "indonesian": "setiap hari",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-mainichi.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-shuumatsu",
+      "japanese": "週末",
+      "furigana": "{週末|しゅうまつ}",
+      "romaji": "shūmatsu",
+      "indonesian": "akhir pekan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shuumatsu.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-raishuu",
+      "japanese": "来週",
+      "furigana": "{来週|らいしゅう}",
+      "romaji": "raishū",
+      "indonesian": "minggu depan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-raishuu.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-senshuu",
+      "japanese": "先週",
+      "furigana": "{先週|せんしゅう}",
+      "romaji": "senshū",
+      "indonesian": "minggu lalu",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-senshuu.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-jikan",
+      "japanese": "時間",
+      "furigana": "{時間|じかん}",
+      "romaji": "jikan",
+      "indonesian": "waktu; jam (lamanya)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-jikan.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1,
+      "usage": "Untuk lamanya: 二時間 (にじかん) = dua jam. Untuk pukul berapa: 二時 (にじ) = jam dua."
+    },
+    {
+      "id": "w-atode",
+      "japanese": "後で",
+      "furigana": "{後|あと}で",
+      "romaji": "ato de",
+      "indonesian": "nanti",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-atode.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-itsumo",
+      "japanese": "いつも",
+      "romaji": "itsumo",
+      "indonesian": "selalu",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-itsumo.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tokidoki",
+      "japanese": "時々",
+      "furigana": "{時々|ときどき}",
+      "romaji": "tokidoki",
+      "indonesian": "kadang-kadang",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-tokidoki.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mou",
+      "japanese": "もう",
+      "romaji": "mō",
+      "indonesian": "sudah; (tidak) lagi",
+      "pos": "adverb",
+      "usage": "Dengan kata kerja positif berarti \"sudah\"; dengan bentuk negatif berarti \"tidak … lagi\". Bentuk lampau sendiri sudah berarti selesai, jadi tidak setiap \"sudah\" perlu もう.",
+      "audio": "audio/ja/words/w-mou.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mada",
+      "japanese": "まだ",
+      "romaji": "mada",
+      "indonesian": "masih; belum",
+      "pos": "adverb",
+      "usage": "まだです saja sudah berarti \"Belum.\", jawaban untuk pertanyaan \"Sudah …?\".",
+      "audio": "audio/ja/words/w-mada.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

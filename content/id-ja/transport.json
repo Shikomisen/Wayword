@@ -1,0 +1,605 @@
+{
+  "schemaVersion": 1,
+  "id": "transport",
+  "title": "Transportasi",
+  "order": 4,
+  "description": "Kereta, taksi, dan bus. Banyak latihan mendengar — sebagian besar kategori ini adalah pengumuman dan jawaban petugas yang perlu kamu tangkap, bukan kalimat yang kamu ucapkan.",
+  "phrases": [
+    {
+      "id": "tra-01",
+      "japanese": "東京駅までお願いします",
+      "furigana": [
+        {
+          "b": "東京駅",
+          "r": "とうきょうえき"
+        },
+        {
+          "b": "までお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いします"
+        }
+      ],
+      "romaji": "Tōkyō-eki made onegai shimasu",
+      "indonesian": "Ke Stasiun Tokyo, ya.",
+      "registerNotes": "Bisa untuk sopir taksi atau loket tiket. Ganti nama tempatnya sesuka hati — 〜までお願いします adalah seluruh polanya, dan まで ('sampai') diletakkan setelah nama tempat.",
+      "audio": "audio/ja/tra-01.mp3",
+      "audioHint": "とうきょうえきまでおねがいします",
+      "tags": [
+        "taksi",
+        "tiket",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-02",
+      "japanese": "切符はどこで買えますか",
+      "furigana": [
+        {
+          "b": "切符",
+          "r": "きっぷ"
+        },
+        {
+          "b": "はどこで"
+        },
+        {
+          "b": "買",
+          "r": "か"
+        },
+        {
+          "b": "えますか"
+        }
+      ],
+      "romaji": "kippu wa doko de kaemasu ka",
+      "indonesian": "Beli tiketnya di mana?",
+      "registerNotes": "券売機 (kenbaiki) adalah mesin tiket; 窓口 (madoguchi) adalah loket yang dijaga petugas.",
+      "audio": "audio/ja/tra-02.mp3",
+      "audioHint": "きっぷはどこでかえますか",
+      "tags": [
+        "tiket",
+        "pertanyaan",
+        "penting"
+      ],
+      "difficulty": 2,
+      "usage": "切符 dibaca きっぷ (kippu): っ kecil adalah jeda sesaat sebelum ぷ. Dalam bahasa Jepang, ada atau tidaknya jeda ini bisa mengubah arti kata."
+    },
+    {
+      "id": "tra-03",
+      "japanese": "大阪までいくらですか",
+      "furigana": [
+        {
+          "b": "大阪",
+          "r": "おおさか"
+        },
+        {
+          "b": "までいくらですか"
+        }
+      ],
+      "romaji": "Ōsaka made ikura desu ka",
+      "indonesian": "Ke Osaka berapa?",
+      "registerNotes": "Gabungan 〜まで dengan いくらですか dari kategori angka.",
+      "audio": "audio/ja/tra-03.mp3",
+      "audioHint": "おおさかまでいくらですか",
+      "tags": [
+        "tiket",
+        "uang",
+        "pertanyaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-04",
+      "japanese": "この電車は京都に行きますか",
+      "furigana": [
+        {
+          "b": "この"
+        },
+        {
+          "b": "電車",
+          "r": "でんしゃ"
+        },
+        {
+          "b": "は"
+        },
+        {
+          "b": "京都",
+          "r": "きょうと"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "行",
+          "r": "い"
+        },
+        {
+          "b": "きますか"
+        }
+      ],
+      "romaji": "kono densha wa Kyōto ni ikimasu ka",
+      "indonesian": "Kereta ini ke Kyoto?",
+      "registerNotes": "Kalimat paling berharga di kategori ini — langsung menjawab kepanikan 'apa aku naik kereta yang benar?'.",
+      "audio": "audio/ja/tra-04.mp3",
+      "audioHint": "このでんしゃはきょうとにいきますか",
+      "tags": [
+        "kereta",
+        "pertanyaan",
+        "penting",
+        "bertahan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "tra-05",
+      "japanese": "何番線ですか",
+      "furigana": [
+        {
+          "b": "何番線",
+          "r": "なんばんせん"
+        },
+        {
+          "b": "ですか"
+        }
+      ],
+      "romaji": "nanbansen desu ka",
+      "indonesian": "Peron nomor berapa?",
+      "registerNotes": "番線 adalah kata bantu bilangan untuk nomor peron. 三番線 = peron 3.",
+      "audio": "audio/ja/tra-05.mp3",
+      "audioHint": "なんばんせんですか",
+      "tags": [
+        "kereta",
+        "pertanyaan",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "tra-06",
+      "japanese": "乗り換えはどこですか",
+      "furigana": [
+        {
+          "b": "乗",
+          "r": "の"
+        },
+        {
+          "b": "り"
+        },
+        {
+          "b": "換",
+          "r": "か"
+        },
+        {
+          "b": "えはどこですか"
+        }
+      ],
+      "romaji": "norikae wa doko desu ka",
+      "indonesian": "Pindah keretanya di mana?",
+      "registerNotes": "乗り換え tertulis di setiap papan perpindahan dan diucapkan di setiap pengumuman. Kenali dulu, ucapkan kemudian.",
+      "audio": "audio/ja/tra-06.mp3",
+      "audioHint": "のりかえはどこですか",
+      "tags": [
+        "kereta",
+        "pertanyaan",
+        "papan tanda",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "tra-07",
+      "japanese": "次の駅はどこですか",
+      "furigana": [
+        {
+          "b": "次",
+          "r": "つぎ"
+        },
+        {
+          "b": "の"
+        },
+        {
+          "b": "駅",
+          "r": "えき"
+        },
+        {
+          "b": "はどこですか"
+        }
+      ],
+      "romaji": "tsugi no eki wa doko desu ka",
+      "indonesian": "Stasiun berikutnya apa?",
+      "registerNotes": "次は〜です ('berikutnya …') adalah kalimat persis yang dipakai pengumuman di dalam kereta.",
+      "audio": "audio/ja/tra-07.mp3",
+      "audioHint": "つぎのえきはどこですか",
+      "tags": [
+        "kereta",
+        "pertanyaan",
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-08",
+      "japanese": "ICカードをチャージしたいです",
+      "furigana": [
+        {
+          "b": "ICカードをチャージしたいです"
+        }
+      ],
+      "romaji": "ai-shī kādo o chāji shitai desu",
+      "indonesian": "Saya mau isi saldo kartu IC.",
+      "registerNotes": "Suica / ICOCA / PASMO bisa saling menggantikan di sebagian besar jaringan. チャージ adalah kata standar untuk isi saldo — kita biasa bilang 'top up', tapi kata itu tidak akan dimengerti di Jepang.",
+      "audio": "audio/ja/tra-08.mp3",
+      "audioHint": "アイシーカードをチャージしたいです",
+      "tags": [
+        "tiket",
+        "uang",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "tra-09",
+      "japanese": "指定席をお願いします",
+      "furigana": [
+        {
+          "b": "指定席",
+          "r": "していせき"
+        },
+        {
+          "b": "をお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いします"
+        }
+      ],
+      "romaji": "shiteiseki o onegai shimasu",
+      "indonesian": "Minta kursi reservasi.",
+      "registerNotes": "指定席 = kursi reservasi, 自由席 (じゆうせき) = kursi bebas. Di shinkansen kamu akan ditanya mau yang mana.",
+      "audio": "audio/ja/tra-09.mp3",
+      "audioHint": "していせきをおねがいします",
+      "tags": [
+        "tiket",
+        "kereta"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "tra-10",
+      "japanese": "自由席でいいです",
+      "furigana": [
+        {
+          "b": "自由席",
+          "r": "じゆうせき"
+        },
+        {
+          "b": "でいいです"
+        }
+      ],
+      "romaji": "jiyūseki de ii desu",
+      "indonesian": "Kursi bebas saja.",
+      "registerNotes": "〜でいいです = '… saja, tidak apa-apa'. Berguna setiap kali kamu ditawari pilihan yang tidak terlalu kamu pedulikan.",
+      "audio": "audio/ja/tra-10.mp3",
+      "audioHint": "じゆうせきでいいです",
+      "tags": [
+        "tiket",
+        "kereta"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "tra-11",
+      "japanese": "片道ですか、往復ですか",
+      "furigana": [
+        {
+          "b": "片道",
+          "r": "かたみち"
+        },
+        {
+          "b": "ですか、"
+        },
+        {
+          "b": "往復",
+          "r": "おうふく"
+        },
+        {
+          "b": "ですか"
+        }
+      ],
+      "romaji": "katamichi desu ka, ōfuku desu ka",
+      "indonesian": "Sekali jalan atau pulang-pergi?",
+      "registerNotes": "Untuk dilatih dengar — ini yang ditanyakan kepadamu di loket tiket. Jawab 片道です atau 往復です.",
+      "audio": "audio/ja/tra-11.mp3",
+      "audioHint": "かたみちですか、おうふくですか",
+      "tags": [
+        "tiket",
+        "mendengar"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "tra-12",
+      "japanese": "終電は何時ですか",
+      "furigana": [
+        {
+          "b": "終電",
+          "r": "しゅうでん"
+        },
+        {
+          "b": "は"
+        },
+        {
+          "b": "何時",
+          "r": "なんじ"
+        },
+        {
+          "b": "ですか"
+        }
+      ],
+      "romaji": "shūden wa nanji desu ka",
+      "indonesian": "Kereta terakhir jam berapa?",
+      "registerNotes": "Benar-benar penting — kebanyakan jaringan kereta kota berhenti sekitar tengah malam, dan ketinggalan kereta terakhir berarti ongkos taksi atau menginap di hotel kapsul.",
+      "audio": "audio/ja/tra-12.mp3",
+      "audioHint": "しゅうでんはなんじですか",
+      "tags": [
+        "kereta",
+        "waktu",
+        "pertanyaan",
+        "bertahan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "tra-13",
+      "japanese": "タクシー乗り場はどこですか",
+      "furigana": [
+        {
+          "b": "タクシー"
+        },
+        {
+          "b": "乗",
+          "r": "の"
+        },
+        {
+          "b": "り"
+        },
+        {
+          "b": "場",
+          "r": "ば"
+        },
+        {
+          "b": "はどこですか"
+        }
+      ],
+      "romaji": "takushī noriba wa doko desu ka",
+      "indonesian": "Pangkalan taksi di mana?",
+      "registerNotes": "乗り場 = tempat naik — berlaku untuk taksi, bus, maupun kapal feri.",
+      "audio": "audio/ja/tra-13.mp3",
+      "audioHint": "タクシーのりばはどこですか",
+      "tags": [
+        "taksi",
+        "pertanyaan",
+        "papan tanda"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "tra-14",
+      "japanese": "ここで止めてください",
+      "furigana": [
+        {
+          "b": "ここで"
+        },
+        {
+          "b": "止",
+          "r": "と"
+        },
+        {
+          "b": "めてください"
+        }
+      ],
+      "romaji": "koko de tomete kudasai",
+      "indonesian": "Tolong berhenti di sini.",
+      "registerNotes": "Untuk taksi. Jangan buka pintunya sendiri — sopir yang membuka dan menutup pintu belakang.",
+      "audio": "audio/ja/tra-14.mp3",
+      "audioHint": "ここでとめてください",
+      "tags": [
+        "taksi",
+        "permintaan",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-15",
+      "japanese": "この住所までお願いします",
+      "furigana": [
+        {
+          "b": "この"
+        },
+        {
+          "b": "住所",
+          "r": "じゅうしょ"
+        },
+        {
+          "b": "までお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いします"
+        }
+      ],
+      "romaji": "kono jūsho made onegai shimasu",
+      "indonesian": "Ke alamat ini, ya.",
+      "registerNotes": "Ucapkan sambil menunjukkan alamat di ponselmu. Jauh lebih andal daripada melafalkan nama tempat yang asing.",
+      "audio": "audio/ja/tra-15.mp3",
+      "audioHint": "このじゅうしょまでおねがいします",
+      "tags": [
+        "taksi",
+        "bertahan",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-16",
+      "japanese": "このバスは駅に行きますか",
+      "furigana": [
+        {
+          "b": "このバスは"
+        },
+        {
+          "b": "駅",
+          "r": "えき"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "行",
+          "r": "い"
+        },
+        {
+          "b": "きますか"
+        }
+      ],
+      "romaji": "kono basu wa eki ni ikimasu ka",
+      "indonesian": "Bus ini ke stasiun?",
+      "registerNotes": "Di banyak bus lokal, kamu naik dari pintu belakang dan membayar saat turun. Ambil tiket bernomor (整理券) saat naik.",
+      "audio": "audio/ja/tra-16.mp3",
+      "audioHint": "このバスはえきにいきますか",
+      "tags": [
+        "bus",
+        "pertanyaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "tra-17",
+      "japanese": "一日券はありますか",
+      "furigana": [
+        {
+          "b": "一日券",
+          "r": "いちにちけん"
+        },
+        {
+          "b": "はありますか"
+        }
+      ],
+      "romaji": "ichinichiken wa arimasu ka",
+      "indonesian": "Ada tiket terusan satu hari?",
+      "registerNotes": "Kebanyakan kota besar punya tiket seperti ini untuk kereta bawah tanah dan bus. Biasanya sudah balik modal setelah tiga atau empat kali naik.",
+      "audio": "audio/ja/tra-17.mp3",
+      "audioHint": "いちにちけんはありますか",
+      "tags": [
+        "tiket",
+        "pertanyaan",
+        "uang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "tra-18",
+      "japanese": "反対方向でした",
+      "furigana": [
+        {
+          "b": "反対",
+          "r": "はんたい"
+        },
+        {
+          "b": "方向",
+          "r": "ほうこう"
+        },
+        {
+          "b": "でした"
+        }
+      ],
+      "romaji": "hantai hōkō deshita",
+      "indonesian": "Saya salah arah.",
+      "registerNotes": "Menjelaskan masalahmu dalam tiga kata di kantor stasiun. Kamu tidak akan dikenai biaya tambahan untuk kesalahan yang jujur.",
+      "audio": "audio/ja/tra-18.mp3",
+      "audioHint": "はんたいほうこうでした",
+      "tags": [
+        "masalah",
+        "kereta",
+        "bertahan"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "tra-19",
+      "japanese": "まもなく発車します",
+      "furigana": [
+        {
+          "b": "まもなく"
+        },
+        {
+          "b": "発車",
+          "r": "はっしゃ"
+        },
+        {
+          "b": "します"
+        }
+      ],
+      "romaji": "mamonaku hassha shimasu",
+      "indonesian": "Kereta segera berangkat.",
+      "registerNotes": "Cukup dikenali — pengumuman standar di peron. まもなく = 'sebentar lagi'. Begitu mendengarnya, segera bergerak.",
+      "audio": "audio/ja/tra-19.mp3",
+      "audioHint": "まもなくはっしゃします",
+      "tags": [
+        "mendengar",
+        "kereta",
+        "untuk mengenali"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "tra-20",
+      "japanese": "駆け込み乗車はおやめください",
+      "furigana": [
+        {
+          "b": "駆",
+          "r": "か"
+        },
+        {
+          "b": "け"
+        },
+        {
+          "b": "込",
+          "r": "こ"
+        },
+        {
+          "b": "み"
+        },
+        {
+          "b": "乗車",
+          "r": "じょうしゃ"
+        },
+        {
+          "b": "はおやめください"
+        }
+      ],
+      "romaji": "kakekomi jōsha wa oyame kudasai",
+      "indonesian": "Jangan memaksa masuk ke kereta.",
+      "registerNotes": "Cukup dikenali. おやめください adalah bentuk hormat 'mohon jangan…' yang akan kamu dengar di setiap pengumuman larangan.",
+      "audio": "audio/ja/tra-20.mp3",
+      "audioHint": "かけこみじょうしゃはおやめください",
+      "tags": [
+        "mendengar",
+        "kereta",
+        "untuk mengenali"
+      ],
+      "difficulty": 5
+    }
+  ]
+}

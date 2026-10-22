@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "id": "problems",
+  "title": "トラブル・苦情",
+  "order": 17,
+  "description": "カフェやお店、民泊で、ていねいに苦情を伝えて解決するために。大きな声より、落ち着いた maaf とやわらかいお願いのほうがうまくいきます。",
+  "phrases": [
+    {
+      "id": "pro-01",
+      "indonesian": "Maaf, ini bukan pesanan saya.",
+      "japanese": "すみません、これは注文したものと違います。",
+      "registerNotes": "相手のミスでも、maaf から始めればていねいに聞こえます。日本語の「すみません」と同じ使い方です。",
+      "pitfallNote": "tidak ではなく bukan：pesanan（注文した物）という「物」を打ち消すからです。",
+      "audio": "audio/id/pro-01.mp3",
+      "tags": [
+        "苦情",
+        "レストラン",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pro-02",
+      "indonesian": "Maaf, tadi saya pesan yang tidak pedas.",
+      "japanese": "すみません、辛くないのを頼んだんですが。",
+      "registerNotes": "tadi（さっき）で注文した時を指します。yang tidak pedas は「辛くないの」で、日本語の「〜の」のように yang で名詞になります。",
+      "audio": "audio/id/pro-02.mp3",
+      "tags": [
+        "苦情",
+        "レストラン"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-03",
+      "indonesian": "Maaf, sepertinya ada yang salah. Bisa tolong dicek lagi?",
+      "japanese": "すみません、何か間違っているようです。もう一度確認していただけますか？",
+      "registerNotes": "sepertinya（〜みたい）で、自分の勘違いかもしれない余地を残します。会計、予約、配達に。",
+      "cultureNote": "メンツが大切です。相手を責めずに直せる言い方のほうが、早く解決します。",
+      "audio": "audio/id/pro-03.mp3",
+      "tags": [
+        "苦情",
+        "必須"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-04",
+      "indonesian": "Kunci pintunya rusak.",
+      "japanese": "ドアの鍵が壊れています。",
+      "registerNotes": "kunci pintu は「ドアの鍵」で、日本語とは逆の順番。rusak は壊れた物の後ろに置きます：AC-nya rusak、kuncinya rusak。受付で伝えて、Bisa diperbaiki?（直せますか？）と聞きましょう。",
+      "pitfallNote": "rusak は壊れている、動かない（鍵、ファスナー、テレビ）。電源が入らない物は mati：Lampunya mati（電気がつかない）。",
+      "audio": "audio/id/pro-04.mp3",
+      "tags": [
+        "苦情",
+        "民泊"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pro-05",
+      "indonesian": "Bisa tolong diperbaiki?",
+      "japanese": "直していただけますか？",
+      "registerNotes": "di- の形だと、誰が直すかを言わずに頼めるので、やわらかく聞こえます。dibetulkan や、くだけて dibenerin とも言います。",
+      "audio": "audio/id/pro-05.mp3",
+      "tags": [
+        "苦情",
+        "お願い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-06",
+      "indonesian": "Bisa ditukar dengan yang baru?",
+      "japanese": "新しいものと交換できますか？",
+      "registerNotes": "tukar は交換する、取り替える。レシート（struk）と箱や袋を持って行きましょう。",
+      "audio": "audio/id/pro-06.mp3",
+      "tags": [
+        "苦情",
+        "買い物"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-07",
+      "indonesian": "Uangnya bisa dikembalikan?",
+      "japanese": "返金してもらえますか？",
+      "registerNotes": "直訳は「お金は返してもらえますか？」。アプリやネット通販では、そのまま refund と言います。",
+      "cultureNote": "レシートに Barang yang sudah dibeli tidak dapat ditukar atau dikembalikan（お買い上げ後の交換・返品はできません）と書いてあることが多いので、払う前に確認を。",
+      "audio": "audio/id/pro-07.mp3",
+      "tags": [
+        "苦情",
+        "買い物"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-08",
+      "indonesian": "Kamarnya berisik sekali. Bisa pindah kamar?",
+      "japanese": "部屋がとてもうるさいです。部屋を替えてもらえますか？",
+      "registerNotes": "何の音かも言えるといいです：suara jalan（車の音）、suara musik（音楽の音）。",
+      "pitfallNote": "berisik はうるさくて迷惑なこと。ramai は「にぎやか」で、いい意味のことも多いです。",
+      "audio": "audio/id/pro-08.mp3",
+      "tags": [
+        "苦情",
+        "民泊"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-09",
+      "indonesian": "Air di kamar mandi tidak keluar.",
+      "japanese": "浴室の水が出ません。",
+      "registerNotes": "直訳は「水が出ない」で、日本語とまったく同じ発想です。Airnya mati（水が止まっている）とも言います。",
+      "cultureNote": "水をポンプ（pompa air）でくみ上げる家では、停電すると水も止まります。そちらも確認しましょう。",
+      "audio": "audio/id/pro-09.mp3",
+      "tags": [
+        "苦情",
+        "民泊"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-10",
+      "indonesian": "Maaf, saya sudah menunggu dari tadi.",
+      "japanese": "すみません、さっきからずっと待っているんですが。",
+      "registerNotes": "dari tadi（さっきから）で、怒った感じを出さずに伝わります。料理が来ない時は Pesanan saya belum datang, ya?（注文、まだですよね？）",
+      "cultureNote": "怒りを見せるとみんな気まずくなり、早くもなりません。落ち着いて笑顔で言う苦情のほうが、真剣に受け止めてもらえます。",
+      "audio": "audio/id/pro-10.mp3",
+      "tags": [
+        "苦情",
+        "レストラン"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-11",
+      "indonesian": "Maaf, kembaliannya kurang.",
+      "japanese": "すみません、おつりが足りません。",
+      "registerNotes": "kurang（足りない）で、何かが足りないと伝えます。いくらかも言いましょう：Kembaliannya kurang dua ribu（2千ルピア足りません）。",
+      "audio": "audio/id/pro-11.mp3",
+      "tags": [
+        "苦情",
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-12",
+      "indonesian": "Boleh saya bicara dengan manajernya?",
+      "japanese": "責任者の方とお話しできますか？",
+      "registerNotes": "スタッフに落ち着いて話してもだめだった時のために取っておきましょう。小さなお店なら持ち主に：pemiliknya。",
+      "cultureNote": "人前で責任者を呼ぶと、そのスタッフに恥をかかせてしまいます。小声で頼みましょう。",
+      "audio": "audio/id/pro-12.mp3",
+      "tags": [
+        "苦情"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-13",
+      "indonesian": "Tidak apa-apa. Terima kasih atas bantuannya.",
+      "japanese": "大丈夫です。助かりました、ありがとうございます。",
+      "registerNotes": "解決したらお礼で締めると、お互い気持ちよく終われます。友達同士なら Nggak apa-apa, makasih, ya。",
+      "audio": "audio/id/pro-13.mp3",
+      "tags": [
+        "苦情",
+        "お礼"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

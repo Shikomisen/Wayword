@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "id": "words-opinions",
+  "title": "Opinions & Ideas",
+  "description": "Words for saying what you think, weighing things up and disagreeing gently: menurut saya, setuju, mungkin, memang, justru and the rest.",
+  "items": [
+    {
+      "id": "w-pendapat",
+      "indonesian": "pendapat",
+      "english": "opinion, view",
+      "pos": "noun",
+      "registerNotes": "Bagaimana pendapat Anda? is the polite way to ask what someone thinks; with friends, Gimana menurut kamu?",
+      "pitfallNote": "Don't confuse it with pendapatan, which means income.",
+      "audio": "audio/id/words/w-pendapat.mp3",
+      "tags": [
+        "opinions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-menurut",
+      "indonesian": "menurut",
+      "english": "according to; in (someone's) opinion",
+      "pos": "preposition",
+      "registerNotes": "Menurut saya, … is the everyday way to say I think or in my opinion. It also cites a source: menurut dokter (according to the doctor).",
+      "pitfallNote": "Saya berpikir bahwa … is a word-for-word I think that and sounds stiff; start with menurut saya instead.",
+      "audio": "audio/id/words/w-menurut.mp3",
+      "tags": [
+        "opinions",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pikir",
+      "indonesian": "pikir",
+      "english": "to think",
+      "pos": "verb",
+      "registerNotes": "Saya pikir … works for I think, though menurut saya sounds more natural for opinions. Saya pikir-pikir dulu, ya (I'll think about it) politely turns down a sale or an offer.",
+      "pitfallNote": "Saya kira … means I thought, usually about something that turned out wrong: Saya kira tokonya sudah tutup (I thought the shop had closed).",
+      "audio": "audio/id/words/w-pikir.mp3",
+      "tags": [
+        "opinions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-setuju",
+      "indonesian": "setuju",
+      "english": "to agree",
+      "pos": "verb",
+      "registerNotes": "Saya setuju (I agree), or setuju dengan Anda for agreeing with someone. Setuju on its own is a quick yes to a suggestion.",
+      "cultureNote": "Flat disagreement can feel rude. People soften it: Saya kurang setuju (I don't quite agree), or Iya, tapi … (Yes, but …).",
+      "audio": "audio/id/words/w-setuju.mp3",
+      "tags": [
+        "opinions",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-alasan",
+      "indonesian": "alasan",
+      "english": "reason; excuse",
+      "pos": "noun",
+      "registerNotes": "Apa alasannya? asks for the reason. Said with a certain tone it means an excuse: Itu cuma alasan (That's just an excuse).",
+      "audio": "audio/id/words/w-alasan.mp3",
+      "tags": [
+        "opinions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-masalah",
+      "indonesian": "masalah",
+      "english": "problem, issue; matter",
+      "pos": "noun",
+      "registerNotes": "Tidak masalah (No problem) answers thanks or an apology; casually, Nggak masalah. Masalahnya, … introduces the catch: Masalahnya, saya tidak punya waktu (The thing is, I don't have time).",
+      "audio": "audio/id/words/w-masalah.mp3",
+      "tags": [
+        "opinions",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-solusi",
+      "indonesian": "solusi",
+      "english": "solution",
+      "pos": "noun",
+      "registerNotes": "Common in speech and at work: Solusinya apa? (What's the solution?) Jalan keluar, literally a way out, is the everyday alternative.",
+      "audio": "audio/id/words/w-solusi.mp3",
+      "tags": [
+        "opinions",
+        "discussion"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ide",
+      "indonesian": "ide",
+      "english": "idea",
+      "pos": "noun",
+      "registerNotes": "Ide bagus (Good idea) is a common reply to a suggestion.",
+      "pitfallNote": "For I have no idea, say Saya tidak tahu (or Nggak tahu); Saya tidak punya ide means you have no ideas to offer.",
+      "audio": "audio/id/words/w-ide.mp3",
+      "tags": [
+        "opinions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kenyataan",
+      "indonesian": "kenyataan",
+      "english": "reality, fact, the truth",
+      "pos": "noun",
+      "forms": {
+        "root": "nyata"
+      },
+      "registerNotes": "Kenyataannya, … means in reality or the fact is, often before something disappointing. Nyata on its own means real.",
+      "audio": "audio/id/words/w-kenyataan.mp3",
+      "tags": [
+        "opinions",
+        "discussion"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mungkin",
+      "indonesian": "mungkin",
+      "english": "maybe, perhaps; possible",
+      "pos": "adverb",
+      "registerNotes": "Mungkin besok (Maybe tomorrow). Tidak mungkin means that's impossible, or no way.",
+      "cultureNote": "A polite no often comes as mungkin or Lihat nanti, ya (We'll see). If an invitation gets a mungkin, don't count on a yes.",
+      "audio": "audio/id/words/w-mungkin.mp3",
+      "tags": [
+        "opinions",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pasti",
+      "indonesian": "pasti",
+      "english": "certainly, definitely; sure, certain",
+      "pos": "adverb",
+      "registerNotes": "On its own, pasti is a confident of course, and belum pasti means it isn't certain yet. Before a description it makes a sure guess: Pasti capek, ya? (You must be tired.)",
+      "audio": "audio/id/words/w-pasti.mp3",
+      "tags": [
+        "opinions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sepertinya",
+      "indonesian": "sepertinya",
+      "english": "it seems, it looks like",
+      "pos": "adverb",
+      "forms": {
+        "root": "seperti"
+      },
+      "registerNotes": "Sepertinya mau hujan (Looks like it's going to rain). It also softens an opinion: Sepertinya kurang cocok (I don't think it quite works); in casual speech, kayaknya.",
+      "audio": "audio/id/words/w-sepertinya.mp3",
+      "tags": [
+        "opinions"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sebenarnya",
+      "indonesian": "sebenarnya",
+      "english": "actually, in fact, really",
+      "pos": "adverb",
+      "forms": {
+        "root": "benar"
+      },
+      "registerNotes": "Softens something unwelcome: Sebenarnya saya kurang suka pedas (Actually, I don't really like spicy food). Casual speech says sebenernya.",
+      "audio": "audio/id/words/w-sebenarnya.mp3",
+      "tags": [
+        "opinions"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tentu-saja",
+      "indonesian": "tentu saja",
+      "english": "of course, certainly",
+      "pos": "expression",
+      "registerNotes": "A little formal: Tentu saja boleh (Of course you may). In everyday speech people often say Tentu, Pasti, or Iya, dong with friends.",
+      "audio": "audio/id/words/w-tentu-saja.mp3",
+      "tags": [
+        "opinions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-memang",
+      "indonesian": "memang",
+      "english": "indeed, it's true (that); naturally",
+      "pos": "adverb",
+      "registerNotes": "Agrees with or admits something: Memang enak, tapi mahal (True, it's good, but it's expensive). Casual speech says emang, and Memang begitu means that's just how it is.",
+      "audio": "audio/id/words/w-memang.mp3",
+      "tags": [
+        "opinions",
+        "conversation"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-justru",
+      "indonesian": "justru",
+      "english": "on the contrary; precisely, in fact",
+      "pos": "adverb",
+      "registerNotes": "Turns an expectation around: Hujan? Justru enak untuk tidur (Rain? That's actually perfect for sleeping). Justru itu means that's exactly the point.",
+      "pitfallNote": "Justru and malah overlap; justru tends to put forward the real point, while malah usually reports an unwelcome surprise.",
+      "audio": "audio/id/words/w-justru.mp3",
+      "tags": [
+        "opinions",
+        "conversation"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-malah",
+      "indonesian": "malah",
+      "english": "instead; (and) even, on the contrary",
+      "pos": "adverb",
+      "registerNotes": "For something that goes the opposite way from what was expected, often with a sigh: Saya sudah minum obat, tapi malah tambah pusing (I took medicine, but I feel even dizzier).",
+      "audio": "audio/id/words/w-malah.mp3",
+      "tags": [
+        "opinions",
+        "conversation"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-misalnya",
+      "indonesian": "misalnya",
+      "english": "for example, for instance; say, suppose",
+      "pos": "adverb",
+      "forms": {
+        "root": "misal"
+      },
+      "registerNotes": "Misalnya? on its own asks for an example. It also floats a suggestion: Bagaimana kalau, misalnya, jam tujuh? (How about, say, seven?)",
+      "audio": "audio/id/words/w-misalnya.mp3",
+      "tags": [
+        "opinions",
+        "discussion"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-contoh",
+      "indonesian": "contoh",
+      "english": "example; sample",
+      "pos": "noun",
+      "registerNotes": "Contohnya? asks for an example. It also means a sample, and memberi contoh is to give, or set, an example.",
+      "audio": "audio/id/words/w-contoh.mp3",
+      "tags": [
+        "opinions",
+        "discussion"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-perbedaan",
+      "indonesian": "perbedaan",
+      "english": "difference",
+      "pos": "noun",
+      "forms": {
+        "root": "beda"
+      },
+      "registerNotes": "Sounds formal in conversation, where people say Apa bedanya? (What's the difference?) Beda also means different: Rasanya beda (It tastes different).",
+      "audio": "audio/id/words/w-perbedaan.mp3",
+      "tags": [
+        "opinions",
+        "discussion"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-persamaan",
+      "indonesian": "persamaan",
+      "english": "similarity; equation",
+      "pos": "noun",
+      "forms": {
+        "root": "sama"
+      },
+      "registerNotes": "In conversation people more often use sama (the same): Rasanya sama (They taste the same). In maths, persamaan is an equation.",
+      "audio": "audio/id/words/w-persamaan.mp3",
+      "tags": [
+        "opinions",
+        "discussion"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-keputusan",
+      "indonesian": "keputusan",
+      "english": "decision",
+      "pos": "noun",
+      "forms": {
+        "root": "putus"
+      },
+      "registerNotes": "Itu keputusan Anda (It's your decision). The usual phrase is mengambil keputusan, literally to take a decision.",
+      "audio": "audio/id/words/w-keputusan.mp3",
+      "tags": [
+        "opinions",
+        "discussion"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pilihan",
+      "indonesian": "pilihan",
+      "english": "choice, option",
+      "pos": "noun",
+      "forms": {
+        "root": "pilih"
+      },
+      "registerNotes": "Tidak ada pilihan lain (There's no other choice). Pilih is to choose: Silakan pilih (Please choose).",
+      "audio": "audio/id/words/w-pilihan.mp3",
+      "tags": [
+        "opinions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kesempatan",
+      "indonesian": "kesempatan",
+      "english": "chance, opportunity",
+      "pos": "noun",
+      "forms": {
+        "root": "sempat"
+      },
+      "registerNotes": "Kalau ada kesempatan, … (If I get the chance, …). Terima kasih atas kesempatannya is a polite thank-you at the end of a talk or an interview.",
+      "pitfallNote": "It's chance as in opportunity; chance as in likelihood is kemungkinan.",
+      "audio": "audio/id/words/w-kesempatan.mp3",
+      "tags": [
+        "opinions"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pengalaman",
+      "indonesian": "pengalaman",
+      "english": "experience",
+      "pos": "noun",
+      "registerNotes": "Both a single experience and experience built up over time: pengalaman pertama (a first experience), pengalaman kerja (work experience). The verb is mengalami, to go through.",
+      "audio": "audio/id/words/w-pengalaman.mp3",
+      "tags": [
+        "opinions",
+        "conversation"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tergantung",
+      "indonesian": "tergantung",
+      "english": "it depends; depending on",
+      "pos": "expression",
+      "forms": {
+        "root": "gantung"
+      },
+      "registerNotes": "Tergantung on its own is a complete answer. Put what it depends on straight after: Tergantung cuaca (It depends on the weather); tergantung pada is more formal.",
+      "audio": "audio/id/words/w-tergantung.mp3",
+      "tags": [
+        "opinions",
+        "essential"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

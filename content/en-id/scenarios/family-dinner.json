@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "id": "family-dinner",
+  "title": "Dinner with your partner’s family",
+  "category": "family",
+  "setting": "Your partner Dewi has brought you to meet her parents for the first time, at their home in Bandung. You arrive late in the afternoon, and both of them come to the door.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "mother",
+      "indonesian": "Eh, sudah sampai. Ayo, masuk, masuk.",
+      "english": "Oh, you're here. Come in, come in.",
+      "audio": "audio/id/scenario/family-dinner-n1.mp3",
+      "options": [
+        {
+          "phraseId": "fam-01",
+          "quality": "good",
+          "feedback": "Just right: a time-of-day greeting, with Om and Tante for her parents. If Dewi touches their hands to her forehead (salim), do the same.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Permisi, Tante. Selamat sore.",
+          "english": "Excuse me, Auntie. Good afternoon.",
+          "feedback": "Permisi as you step into someone's home is polite and natural. Slip your shoes off at the door if theirs are there.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Selamat sore. Apa kabar kamu?",
+          "english": "Good afternoon. How are you?",
+          "feedback": "Kamu to your partner's mother sounds like talking down to her. Use her title in place of 'you': Apa kabar, Tante?",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "father",
+      "indonesian": "Oh, ini Sam, ya? Dewi sudah banyak cerita.",
+      "english": "So you're Sam. Dewi's told us a lot about you.",
+      "audio": "audio/id/scenario/family-dinner-n2.mp3",
+      "options": [
+        {
+          "phraseId": "fam-02",
+          "quality": "good",
+          "feedback": "Confirms it, and says how you know Dewi. Agree with her beforehand how you'll be introduced: some families prefer teman (friend) at first.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "fam-03",
+          "quality": "good",
+          "feedback": "Thanking them for having you is right at any point, and worth saying again as you leave.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "gre-17",
+          "quality": "awkward",
+          "feedback": "Correct, but Anda sounds like a business meeting. With family, use his title: Senang bisa bertemu dengan Om.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "mother",
+      "indonesian": "Ayo, kita makan dulu. Tante masak dari pagi, lho.",
+      "english": "Come on, let's eat. I've been cooking since this morning, you know.",
+      "audio": "audio/id/scenario/family-dinner-n3.mp3",
+      "options": [
+        {
+          "phraseId": "fam-05",
+          "quality": "good",
+          "feedback": "What you say when a host has gone to trouble. It isn't a refusal: she'll serve you anyway, and you accept with thanks.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Wah, kelihatannya enak sekali, Tante.",
+          "english": "Oh, it all looks delicious.",
+          "feedback": "Praise before the first bite: any cook likes to hear it. Notice she called herself Tante: elders often use their own title for 'I'.",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Tidak usah, Tante. Saya belum lapar.",
+          "english": "There's no need. I'm not hungry yet.",
+          "feedback": "Turning down a meal she's spent the day cooking would hurt. Say jangan repot-repot if you like, then sit down and eat.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "mother",
+      "indonesian": "Ayo, tambah lagi. Jangan malu-malu.",
+      "english": "Go on, have some more. Don't be shy.",
+      "audio": "audio/id/scenario/family-dinner-n4.mp3",
+      "options": [
+        {
+          "phraseId": "fam-09",
+          "quality": "good",
+          "feedback": "Thanks, sudah (that's enough) and a reason nobody can argue with. Expect to be urged again, and say it again warmly.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "fam-10",
+          "quality": "good",
+          "feedback": "Taking a little more pleases the cook, and is often kinder than refusing a second time.",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Tidak mau, Tante.",
+          "english": "I don't want any.",
+          "feedback": "Tidak mau is how a child refuses. Give thanks and a reason: Sudah, Tante, terima kasih. Saya sudah kenyang.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "father",
+      "indonesian": "Sam di sini kerja apa?",
+      "english": "So what do you do here, Sam?",
+      "audio": "audio/id/scenario/family-dinner-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Saya mengajar bahasa Inggris, Om. Sudah dua tahun di sini.",
+          "english": "I teach English. I've been here two years.",
+          "feedback": "A full, friendly answer with Om. He said Sam rather than 'you': Indonesians often use your name in its place.",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya adalah seorang guru.",
+          "english": "I am a teacher.",
+          "feedback": "Grammatical, but adalah makes it sound like a written definition. Indonesian needs no 'am': Saya guru bahasa Inggris, Om.",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Guru.",
+          "english": "A teacher.",
+          "feedback": "A one-word answer sounds curt to an elder. Add Om, and a little more: where you teach, or for how long.",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "mother",
+      "indonesian": "Jadi, kapan nikahnya?",
+      "english": "So, when's the wedding?",
+      "audio": "audio/id/scenario/family-dinner-n6.mp3",
+      "options": [
+        {
+          "phraseId": "fam-12",
+          "quality": "good",
+          "feedback": "The classic answer: warm, and it promises nothing. A smile does the rest.",
+          "next": "n7"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya tidak tahu, Tante.",
+          "english": "I don't know.",
+          "feedback": "Flat, and it can sound as if you're not serious about Dewi. Keep it light: Doakan saja, ya, Tante.",
+          "next": "n7"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Maaf, itu urusan pribadi.",
+          "english": "Sorry, that's a private matter.",
+          "feedback": "Polite words, but it shuts her out. Kapan nikah? is friendly interest at every family gathering, and it wants a light answer, not a wall.",
+          "next": "n7"
+        }
+      ]
+    },
+    "n7": {
+      "speaker": "father",
+      "indonesian": "Lho, kok buru-buru? Baru jam delapan.",
+      "english": "Oh, what's the hurry? It's only eight.",
+      "audio": "audio/id/scenario/family-dinner-n7.mp3",
+      "options": [
+        {
+          "phraseId": "fam-14",
+          "quality": "good",
+          "feedback": "Pamit is taking your leave properly. Say it to each of them, and thank them again for the meal.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Sudah malam, Om. Besok saya kerja pagi. Terima kasih banyak, ya, Om, Tante.",
+          "english": "It's getting late, and I'm working early tomorrow. Thank you so much.",
+          "feedback": "A reason makes leaving gentle, and the thanks goes to both of them.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-23",
+          "quality": "wrong",
+          "feedback": "Bye-bye is for friends and children. With a partner's parents, take your leave with pamit: Saya pamit dulu, Om, Tante.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "english": "Done. Om and Tante (or Bapak and Ibu) in place of 'you', jangan repot-repot when the food appears, sudah kenyang with thanks when it keeps coming, a light Doakan saja for the wedding question, and pamit to each of the elders as you leave: a good first impression.",
+      "end": true,
+      "options": []
+    }
+  }
+}

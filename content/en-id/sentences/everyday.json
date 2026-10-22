@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "id": "sentences-everyday",
+  "title": "Everyday Sentences",
+  "description": "Short sentences from the first words: wanting, having, where things are, and saying no. Notice what's missing: no 'is', no 'a' or 'the', and verbs that never change.",
+  "items": [
+    {
+      "id": "s-01",
+      "indonesian": "Saya mau makan.",
+      "english": "I want to eat.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "makan.",
+          "w": "w-makan"
+        }
+      ],
+      "registerNotes": "Mau goes straight before the verb, with no word for 'to'. It's the everyday 'want' or 'would like', polite enough for anyone.",
+      "audio": "audio/id/sentences/s-01.mp3",
+      "tags": [
+        "wants",
+        "food"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-02",
+      "indonesian": "Ini rumah saya.",
+      "english": "This is my house.",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "rumah ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "pitfallNote": "There's no 'is', and the owner comes after the thing: rumah saya is 'my house'.",
+      "audio": "audio/id/sentences/s-02.mp3",
+      "tags": [
+        "home",
+        "this and that"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-03",
+      "indonesian": "Dia tidak ada di rumah.",
+      "english": "She's not at home.",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "tidak ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "di rumah.",
+          "w": "w-rumah"
+        }
+      ],
+      "registerNotes": "What you'll hear when you call for someone who's out. Dia is he or she, so this could just as well be 'He's not at home'.",
+      "audio": "audio/id/sentences/s-03.mp3",
+      "tags": [
+        "people",
+        "ada"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-04",
+      "indonesian": "Kamu tinggal di mana?",
+      "english": "Where do you live?",
+      "chunks": [
+        {
+          "t": "Kamu ",
+          "w": "w-kamu"
+        },
+        {
+          "t": "tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di mana?",
+          "w": "w-di-mana"
+        }
+      ],
+      "registerNotes": "Kamu is for someone your age or younger. To an older person, put Bapak or Ibu in its place: Ibu tinggal di mana?",
+      "pitfallNote": "No 'do' and no change of order: the question word sits where the answer goes, as in Saya tinggal di Jakarta.",
+      "audio": "audio/id/sentences/s-04.mp3",
+      "tags": [
+        "questions",
+        "small talk"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-05",
+      "indonesian": "Ini teman saya, Rina.",
+      "english": "This is my friend Rina.",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "teman ",
+          "w": "w-teman"
+        },
+        {
+          "t": "saya, ",
+          "w": "w-saya"
+        },
+        {
+          "t": "Rina."
+        }
+      ],
+      "registerNotes": "How you introduce someone. Swap in suami (husband), istri (wife) or pacar (partner): Ini suami saya, Tom.",
+      "audio": "audio/id/sentences/s-05.mp3",
+      "tags": [
+        "people",
+        "introductions"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-06",
+      "indonesian": "Saya sudah makan.",
+      "english": "I've already eaten.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "makan.",
+          "w": "w-makan"
+        }
+      ],
+      "pitfallNote": "Makan doesn't change for the past: sudah (already) does that job.",
+      "cultureNote": "The usual answer to Sudah makan?, a friendly greeting rather than an invitation. If you haven't, the answer is Belum (not yet).",
+      "audio": "audio/id/sentences/s-06.mp3",
+      "tags": [
+        "food",
+        "time words"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-07",
+      "indonesian": "Itu bukan tas saya.",
+      "english": "That's not my bag.",
+      "chunks": [
+        {
+          "t": "Itu ",
+          "w": "w-itu"
+        },
+        {
+          "t": "bukan ",
+          "w": "w-bukan"
+        },
+        {
+          "t": "tas ",
+          "w": "w-tas"
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "pitfallNote": "Bukan, not tidak, before a noun: Itu bukan tas saya, but Saya tidak tahu.",
+      "audio": "audio/id/sentences/s-07.mp3",
+      "tags": [
+        "saying no",
+        "things"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-08",
+      "indonesian": "Saya punya dua anak.",
+      "english": "I've got two children.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "punya "
+        },
+        {
+          "t": "dua "
+        },
+        {
+          "t": "anak.",
+          "w": "w-anak"
+        }
+      ],
+      "pitfallNote": "No plural after a number: dua anak, not dua anak-anak. The number goes first, as in English.",
+      "audio": "audio/id/sentences/s-08.mp3",
+      "tags": [
+        "family",
+        "numbers"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-09",
+      "indonesian": "Kakak saya kerja di toko.",
+      "english": "My older sister works in a shop.",
+      "chunks": [
+        {
+          "t": "Kakak ",
+          "w": "w-kakak"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "kerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "di toko.",
+          "w": "w-toko"
+        }
+      ],
+      "pitfallNote": "Kakak is an older brother or sister: Indonesian marks age, not sex. And there's no 'a' before toko.",
+      "audio": "audio/id/sentences/s-09.mp3",
+      "tags": [
+        "family",
+        "work"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-10",
+      "indonesian": "Besok saya tidak kerja.",
+      "english": "I'm not working tomorrow.",
+      "chunks": [
+        {
+          "t": "Besok ",
+          "w": "w-besok"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tidak ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "kerja.",
+          "w": "w-kerja"
+        }
+      ],
+      "registerNotes": "Besok at the start sets the time, so the verb doesn't change. Tidak goes right before the verb it cancels.",
+      "audio": "audio/id/sentences/s-10.mp3",
+      "tags": [
+        "time",
+        "work"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-11",
+      "indonesian": "HP saya di mana?",
+      "english": "Where's my phone?",
+      "chunks": [
+        {
+          "t": "HP ",
+          "w": "w-hp"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "di mana?",
+          "w": "w-di-mana"
+        }
+      ],
+      "registerNotes": "HP, said 'ha-pe', is the everyday word for a mobile. The same pattern finds anything: Kunci saya di mana? (Where are my keys?)",
+      "audio": "audio/id/sentences/s-11.mp3",
+      "audioHint": "Ha pe saya di mana?",
+      "tags": [
+        "things",
+        "questions"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-12",
+      "indonesian": "Bapak itu siapa?",
+      "english": "Who's that man?",
+      "chunks": [
+        {
+          "t": "Bapak ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "itu ",
+          "w": "w-itu"
+        },
+        {
+          "t": "siapa?",
+          "w": "w-siapa"
+        }
+      ],
+      "pitfallNote": "Itu after a noun points: bapak itu, that man. Before it, itu makes a sentence: Itu bapak saya (That's my father).",
+      "audio": "audio/id/sentences/s-12.mp3",
+      "tags": [
+        "questions",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-13",
+      "indonesian": "Mereka belum datang.",
+      "english": "They haven't arrived yet.",
+      "chunks": [
+        {
+          "t": "Mereka ",
+          "w": "w-mereka"
+        },
+        {
+          "t": "belum ",
+          "w": "w-belum"
+        },
+        {
+          "t": "datang.",
+          "w": "w-datang"
+        }
+      ],
+      "pitfallNote": "Belum is 'not yet': it expects the thing to happen. Mereka tidak datang would mean they're not coming at all.",
+      "audio": "audio/id/sentences/s-13.mp3",
+      "tags": [
+        "time words",
+        "people"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-14",
+      "indonesian": "Saya tidak suka bangun pagi.",
+      "english": "I don't like getting up early.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tidak ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "suka ",
+          "w": "w-suka"
+        },
+        {
+          "t": "bangun ",
+          "w": "w-bangun"
+        },
+        {
+          "t": "pagi.",
+          "w": "w-pagi"
+        }
+      ],
+      "pitfallNote": "One verb goes straight after another, with no 'to' or '-ing': suka bangun, like getting up. Bangun pagi is getting up in the morning, so early.",
+      "audio": "audio/id/sentences/s-14.mp3",
+      "tags": [
+        "daily life",
+        "likes"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-15",
+      "indonesian": "Suami saya pulang jam enam.",
+      "english": "My husband gets home at six.",
+      "chunks": [
+        {
+          "t": "Suami ",
+          "w": "w-suami"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "pulang ",
+          "w": "w-pulang"
+        },
+        {
+          "t": "jam enam.",
+          "w": "w-jam"
+        }
+      ],
+      "pitfallNote": "Jam enam is six o'clock, but enam jam would be six hours. There's no need for a word for 'at'.",
+      "audio": "audio/id/sentences/s-15.mp3",
+      "tags": [
+        "family",
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-16",
+      "indonesian": "Kita tunggu di sini, ya.",
+      "english": "Let's wait here, shall we?",
+      "chunks": [
+        {
+          "t": "Kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "tunggu ",
+          "w": "w-tunggu"
+        },
+        {
+          "t": "di sini, ",
+          "w": "w-di"
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "registerNotes": "Kita includes the person you're talking to, so this is a suggestion. The ya on the end softens it, like 'OK?'.",
+      "audio": "audio/id/sentences/s-16.mp3",
+      "tags": [
+        "plans",
+        "pronouns"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

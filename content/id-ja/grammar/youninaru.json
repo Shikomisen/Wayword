@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-youninaru",
+  "connector": "〜ようになる",
+  "gloss": "jadi bisa; mulai terbiasa",
+  "title": "〜ようになる — sekarang jadi bisa, jadi terbiasa",
+  "pattern": "bentuk kamus / bentuk potensial + ようになる; bentuk ない + なくなる",
+  "explanation": "ようになる menggambarkan perubahan, seperti “jadi bisa” atau “mulai”: sesuatu yang dulu tidak bisa dan sekarang bisa, atau kebiasaan baru. {漢字|かんじ}が{読|よ}めるようになった — sekarang aku sudah bisa membaca kanji. {毎朝|まいあさ}{走|はし}るようになった — aku mulai lari setiap pagi. Kebalikannya なくなる: {行|い}かなくなった — aku tidak pergi lagi.",
+  "natural": "Untuk menceritakan kemajuan: {少|すこ}し{話|はな}せるようになりました — sekarang saya sudah bisa berbicara sedikit.",
+  "stiff": "Untuk hal yang sekadar berubah (jadi dingin), pakai kata sifat + なる: {寒|さむ}くなった. Bahasa Indonesia memakai “jadi” untuk keduanya, tetapi ようになる hanya untuk kemampuan dan kebiasaan.",
+  "examples": [
+    {
+      "id": "gx-youninaru-1",
+      "japanese": "ひらがなが読めるようになりました。",
+      "furigana": "ひらがなが{読|よ}めるようになりました。",
+      "indonesian": "Sekarang saya sudah bisa membaca hiragana.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "ひらがなが"
+        },
+        {
+          "t": "{読|よ}めるように",
+          "w": "w-yomu"
+        },
+        {
+          "t": "なりました。"
+        }
+      ],
+      "gap": {
+        "before": "ひらがなが{読|よ}める",
+        "answer": "ように",
+        "after": "なりました。",
+        "options": [
+          "ように",
+          "ことに",
+          "ために"
+        ],
+        "why": "Kemampuan baru: bentuk potensial + ようになる."
+      },
+      "audio": "audio/ja/grammar/gx-youninaru-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "youninaru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-youninaru-2",
+      "japanese": "一人で電車に乗れるようになった。",
+      "furigana": "{一人|ひとり}で{電車|でんしゃ}に{乗|の}れるようになった。",
+      "indonesian": "Sekarang aku sudah bisa naik kereta sendiri.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{一人|ひとり}で",
+          "w": "w-hitori"
+        },
+        {
+          "t": "{電車|でんしゃ}に",
+          "w": "w-densha"
+        },
+        {
+          "t": "{乗|の}れるようになった。",
+          "w": "w-noru"
+        }
+      ],
+      "gap": {
+        "before": "{一人|ひとり}で{電車|でんしゃ}に{乗|の}れる",
+        "answer": "ように",
+        "after": "なった。",
+        "options": [
+          "ように",
+          "ことに",
+          "つもりに"
+        ],
+        "why": "Sekarang jadi bisa: ようになった."
+      },
+      "audio": "audio/ja/grammar/gx-youninaru-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "youninaru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-youninaru-3",
+      "japanese": "最近、早く起きるようになった。",
+      "furigana": "{最近|さいきん}、{早|はや}く{起|お}きるようになった。",
+      "indonesian": "Akhir-akhir ini aku mulai bangun pagi.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{最近|さいきん}、",
+          "w": "w-saikin"
+        },
+        {
+          "t": "{早|はや}く",
+          "w": "w-hayai"
+        },
+        {
+          "t": "{起|お}きるようになった。",
+          "w": "w-okiru"
+        }
+      ],
+      "gap": {
+        "before": "{最近|さいきん}、{早|はや}く{起|お}きる",
+        "answer": "ように",
+        "after": "なった。",
+        "options": [
+          "ように",
+          "ことに",
+          "ために"
+        ],
+        "why": "Kebiasaan baru: ようになる."
+      },
+      "audio": "audio/ja/grammar/gx-youninaru-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "youninaru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-youninaru-4",
+      "japanese": "忙しくて、ジムに行かなくなりました。",
+      "furigana": "{忙|いそが}しくて、{ジム|じむ}に{行|い}かなくなりました。",
+      "indonesian": "Saya jadi sibuk, sampai tidak pergi ke gym lagi.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{忙|いそが}しくて、",
+          "w": "w-isogashii"
+        },
+        {
+          "t": "{ジム|じむ}に"
+        },
+        {
+          "t": "{行|い}かなくなりました。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{忙|いそが}しくて、{ジム|じむ}に{行|い}か",
+        "answer": "なくなりました",
+        "after": "。",
+        "options": [
+          "なくなりました",
+          "ないようにしました",
+          "なかったです"
+        ],
+        "why": "Berhenti melakukan sesuatu: ない → なくなる. (ないようにした berarti “berusaha supaya tidak”.)"
+      },
+      "audio": "audio/ja/grammar/gx-youninaru-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "youninaru"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

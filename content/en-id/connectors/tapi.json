@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "id": "con-tapi",
+  "connector": "tapi",
+  "gloss": "but",
+  "title": "tapi — but",
+  "pattern": "A, tapi B · A. Tapi B.",
+  "explanation": "tapi joins two ideas that pull against each other: Enak, tapi agak pedas. — It's good, but a bit spicy. A comma goes before it, and it can also start a new sentence: Tapi saya kangen keluarga. tetapi is the full form, used in writing and speeches; in conversation everyone says tapi. A very common pattern names a small problem, then waves it away: Agak jauh, tapi tidak apa-apa (casual: tapi nggak apa-apa) — it's a bit far, but that's fine.",
+  "natural": "tapi is right in almost any conversation, polite or casual. The tapi tidak apa-apa pattern is a kind way to mention a problem without making a fuss.",
+  "stiff": "tetapi in a chat sounds like reading aloud, and namun (however) belongs in writing and on the news.",
+  "examples": [
+    {
+      "id": "cx-tapi-1",
+      "indonesian": "Enak, tapi agak pedas.",
+      "english": "It's good, but a bit spicy.",
+      "chunks": [
+        {
+          "t": "Enak, ",
+          "w": "w-enak"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "agak pedas.",
+          "w": "w-pedas"
+        }
+      ],
+      "gap": {
+        "before": "Enak, ",
+        "answer": "tapi",
+        "after": " agak pedas.",
+        "options": [
+          "tapi",
+          "dan",
+          "jadi"
+        ],
+        "why": "Something good, then a drawback: tapi."
+      },
+      "combine": {
+        "a": "Enak.",
+        "b": "Agak pedas.",
+        "distractors": [
+          "jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-tapi-1.mp3",
+      "tags": [
+        "connectors",
+        "tapi",
+        "food"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-tapi-2",
+      "indonesian": "Saya mau ikut, tapi saya harus kerja.",
+      "english": "I'd like to come, but I have to work.",
+      "chunks": [
+        {
+          "t": "Saya mau ikut, ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "saya harus "
+        },
+        {
+          "t": "kerja.",
+          "w": "w-kerja"
+        }
+      ],
+      "gap": {
+        "before": "Saya mau ikut, ",
+        "answer": "tapi",
+        "after": " saya harus kerja.",
+        "options": [
+          "tapi",
+          "jadi",
+          "karena"
+        ],
+        "why": "What you want and what stops you pull against each other: tapi."
+      },
+      "combine": {
+        "a": "Saya mau ikut.",
+        "b": "Saya harus kerja.",
+        "distractors": [
+          "karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-tapi-2.mp3",
+      "tags": [
+        "connectors",
+        "tapi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-tapi-3",
+      "indonesian": "Hotelnya agak jauh, tapi tidak apa-apa.",
+      "english": "The hotel's a bit far, but that's fine.",
+      "chunks": [
+        {
+          "t": "Hotelnya ",
+          "w": "w-hotel"
+        },
+        {
+          "t": "agak jauh, ",
+          "w": "w-jauh"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "tidak apa-apa.",
+          "w": "w-tidak"
+        }
+      ],
+      "gap": {
+        "before": "Hotelnya agak jauh, ",
+        "answer": "tapi",
+        "after": " tidak apa-apa.",
+        "options": [
+          "tapi",
+          "jadi",
+          "atau"
+        ],
+        "why": "tapi tidak apa-apa softens a problem: it's not ideal, but it's fine."
+      },
+      "combine": {
+        "a": "Hotelnya agak jauh.",
+        "b": "Tidak apa-apa.",
+        "distractors": [
+          "jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-tapi-3.mp3",
+      "tags": [
+        "connectors",
+        "tapi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-tapi-4",
+      "indonesian": "Saya suka tinggal di sini. Tapi saya kangen keluarga.",
+      "english": "I like living here. But I miss my family.",
+      "chunks": [
+        {
+          "t": "Saya suka ",
+          "w": "w-suka"
+        },
+        {
+          "t": "tinggal di sini. ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "Tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "saya kangen keluarga.",
+          "w": "w-kangen"
+        }
+      ],
+      "gap": {
+        "before": "Saya suka tinggal di sini. ",
+        "answer": "Tapi",
+        "after": " saya kangen keluarga.",
+        "options": [
+          "Tapi",
+          "Tetapi",
+          "Jadi"
+        ],
+        "ok": [
+          "Tetapi"
+        ],
+        "note": "Tetapi is the same word in full. It's correct, but in a chat like this it sounds written.",
+        "why": "Tapi can start a new sentence that pulls against the one before."
+      },
+      "combine": {
+        "a": "Saya suka tinggal di sini.",
+        "b": "Saya kangen keluarga.",
+        "distractors": [
+          "Jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-tapi-4.mp3",
+      "tags": [
+        "connectors",
+        "tapi"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

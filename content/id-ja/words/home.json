@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "id": "words-home",
+  "title": "Rumah & kehidupan sehari-hari",
+  "description": "Bangun tidur, bersih-bersih, mencuci baju, membuang sampah — kosakata untuk hidup bersama.",
+  "items": [
+    {
+      "id": "w-ie",
+      "japanese": "家",
+      "furigana": "{家|いえ}",
+      "indonesian": "rumah",
+      "pos": "noun",
+      "usage": "Juga dibaca うち, yang berarti \"rumah\" dengan nuansa lebih pribadi — dan juga \"keluarga kami\".",
+      "audio": "audio/ja/words/w-ie.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-heya",
+      "japanese": "部屋",
+      "furigana": "{部屋|へや}",
+      "indonesian": "kamar, ruangan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-heya.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-daidokoro",
+      "japanese": "台所",
+      "furigana": "{台所|だいどころ}",
+      "indonesian": "dapur",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-daidokoro.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ofuro",
+      "japanese": "お風呂",
+      "furigana": "お{風呂|ふろ}",
+      "indonesian": "mandi berendam; bak mandi",
+      "pos": "noun",
+      "usage": "お風呂に入る — \"mandi (berendam)\", secara harfiah \"masuk ke bak\". Orang Jepang biasanya mandi pada malam hari.",
+      "audio": "audio/ja/words/w-ofuro.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-toire",
+      "japanese": "トイレ",
+      "furigana": "{トイレ|といれ}",
+      "indonesian": "toilet, WC",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-toire.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-neru",
+      "japanese": "寝る",
+      "furigana": "{寝|ね}る",
+      "indonesian": "tidur; pergi tidur",
+      "pos": "verb",
+      "forms": {
+        "masu": "{寝|ね}ます",
+        "te": "{寝|ね}て"
+      },
+      "audio": "audio/ja/words/w-neru.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-okiru",
+      "japanese": "起きる",
+      "furigana": "{起|お}きる",
+      "indonesian": "bangun",
+      "pos": "verb",
+      "forms": {
+        "masu": "{起|お}きます",
+        "te": "{起|お}きて"
+      },
+      "audio": "audio/ja/words/w-okiru.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-arau",
+      "japanese": "洗う",
+      "furigana": "{洗|あら}う",
+      "indonesian": "mencuci",
+      "pos": "verb",
+      "forms": {
+        "masu": "{洗|あら}います",
+        "te": "{洗|あら}って"
+      },
+      "audio": "audio/ja/words/w-arau.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-souji",
+      "japanese": "掃除",
+      "furigana": "{掃除|そうじ}",
+      "indonesian": "bersih-bersih",
+      "pos": "noun",
+      "usage": "掃除する — \"membersihkan\", \"bersih-bersih\".",
+      "audio": "audio/ja/words/w-souji.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sentaku",
+      "japanese": "洗濯",
+      "furigana": "{洗濯|せんたく}",
+      "indonesian": "mencuci pakaian; cucian",
+      "pos": "noun",
+      "usage": "洗濯する — \"mencuci pakaian\".",
+      "audio": "audio/ja/words/w-sentaku.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ryouri",
+      "japanese": "料理",
+      "furigana": "{料理|りょうり}",
+      "indonesian": "masakan; memasak",
+      "pos": "noun",
+      "usage": "料理する — \"memasak\".",
+      "audio": "audio/ja/words/w-ryouri.mp3",
+      "tags": [
+        "rumah",
+        "makanan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kaimono",
+      "japanese": "買い物",
+      "furigana": "{買|か}い{物|もの}",
+      "indonesian": "belanja",
+      "pos": "noun",
+      "usage": "買い物に行く — \"pergi belanja\".",
+      "audio": "audio/ja/words/w-kaimono.mp3",
+      "tags": [
+        "rumah",
+        "belanja"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-denki",
+      "japanese": "電気",
+      "furigana": "{電気|でんき}",
+      "indonesian": "lampu; listrik",
+      "pos": "noun",
+      "usage": "電気をつけて / 消して — \"nyalakan / matikan lampu\". Jangan pakai 開ける / 閉める (buka / tutup) untuk lampu.",
+      "audio": "audio/ja/words/w-denki.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mado",
+      "japanese": "窓",
+      "furigana": "{窓|まど}",
+      "indonesian": "jendela",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-mado.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kagi",
+      "japanese": "鍵",
+      "furigana": "{鍵|かぎ}",
+      "indonesian": "kunci",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kagi.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-gomi",
+      "japanese": "ゴミ",
+      "furigana": "{ゴミ|ごみ}",
+      "indonesian": "sampah",
+      "pos": "noun",
+      "usage": "Biasanya ditulis dengan katakana. ゴミを出す — \"membuang sampah\". Di Jepang sampah harus dipilah, dan tiap jenis dibuang pada hari tertentu.",
+      "audio": "audio/ja/words/w-gomi.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-katazukeru",
+      "japanese": "片付ける",
+      "furigana": "{片付|かたづ}ける",
+      "indonesian": "merapikan, membereskan",
+      "pos": "verb",
+      "forms": {
+        "masu": "{片付|かたづ}けます",
+        "te": "{片付|かたづ}けて"
+      },
+      "audio": "audio/ja/words/w-katazukeru.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

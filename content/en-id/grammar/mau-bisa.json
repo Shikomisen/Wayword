@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-mau-bisa",
+  "connector": "mau, bisa…",
+  "gloss": "want, can, must, may",
+  "title": "mau, bisa, harus, boleh",
+  "pattern": "mau / bisa / harus / boleh + verb · Boleh saya …?",
+  "explanation": "Four small words go before a verb, as in English: mau (want to), bisa (can), harus (must, have to) and boleh (may): Saya mau pulang (I want to go home), Dia bisa masak (She can cook). The verb after them never changes, and 'not' goes in front: tidak bisa (can't), tidak mau (don't want to). Mau is also the everyday 'going to', for what you're about to do: Saya mau mandi (I'm going to have a shower). To ask permission, start with boleh: Boleh saya duduk di sini? (May I sit here?)",
+  "natural": "Bisa …? is the everyday 'Could you …?' and 'Can I …?': Bisa tunggu sebentar? (Could you wait a moment?), Bisa bayar pakai kartu? (Can I pay by card?). Answer with the same word: Boleh? — Boleh. Bisa? — Bisa.",
+  "stiff": "Ingin is the more formal, written mau: at a warung, Saya ingin memesan sounds stiff, and Saya mau pesan is what people say. Harus aimed at someone older can sound bossy; soften it with sebaiknya (it's best to): Sebaiknya Ibu istirahat (You should rest).",
+  "examples": [
+    {
+      "id": "gx-mau-bisa-1",
+      "indonesian": "Saya mau mandi dulu.",
+      "english": "I'm going to have a shower first.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "mandi ",
+          "w": "w-mandi"
+        },
+        {
+          "t": "dulu.",
+          "w": "w-dulu"
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "mau",
+        "after": " mandi dulu.",
+        "options": [
+          "mau",
+          "bisa",
+          "boleh"
+        ],
+        "why": "Mau is 'want to', and also the everyday 'going to'."
+      },
+      "audio": "audio/id/grammar/gx-mau-bisa-1.mp3",
+      "tags": [
+        "grammar",
+        "mau-bisa"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-mau-bisa-2",
+      "indonesian": "Saya bisa bicara bahasa Indonesia sedikit.",
+      "english": "I can speak a little Indonesian.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "bicara ",
+          "w": "w-bicara"
+        },
+        {
+          "t": "bahasa Indonesia "
+        },
+        {
+          "t": "sedikit.",
+          "w": "w-sedikit"
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "bisa",
+        "after": " bicara bahasa Indonesia sedikit.",
+        "options": [
+          "bisa",
+          "boleh",
+          "mau"
+        ],
+        "why": "Being able to is bisa; boleh is being allowed to."
+      },
+      "audio": "audio/id/grammar/gx-mau-bisa-2.mp3",
+      "tags": [
+        "grammar",
+        "mau-bisa"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-mau-bisa-3",
+      "indonesian": "Boleh saya duduk di sini?",
+      "english": "May I sit here?",
+      "chunks": [
+        {
+          "t": "Boleh ",
+          "w": "w-boleh"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "duduk "
+        },
+        {
+          "t": "di sini?",
+          "w": "w-di"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Boleh",
+        "after": " saya duduk di sini?",
+        "options": [
+          "Boleh",
+          "Harus",
+          "Mau"
+        ],
+        "why": "Asking permission starts with boleh."
+      },
+      "audio": "audio/id/grammar/gx-mau-bisa-3.mp3",
+      "tags": [
+        "grammar",
+        "mau-bisa"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-mau-bisa-4",
+      "indonesian": "Maaf, saya harus pulang sekarang.",
+      "english": "Sorry, I have to go home now.",
+      "chunks": [
+        {
+          "t": "Maaf, "
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "harus ",
+          "w": "w-harus"
+        },
+        {
+          "t": "pulang ",
+          "w": "w-pulang"
+        },
+        {
+          "t": "sekarang.",
+          "w": "w-sekarang"
+        }
+      ],
+      "gap": {
+        "before": "Maaf, saya ",
+        "answer": "harus",
+        "after": " pulang sekarang.",
+        "options": [
+          "harus",
+          "boleh",
+          "bisa"
+        ],
+        "why": "'Have to' is harus."
+      },
+      "audio": "audio/id/grammar/gx-mau-bisa-4.mp3",
+      "tags": [
+        "grammar",
+        "mau-bisa"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "plans",
+  "title": "Plans & Invitations",
+  "order": 13,
+  "description": "Suggesting, arranging and gently turning down plans with friends, from 'are you free on Saturday?' to 'I'm on my way'. Where a line is casual, the standard version comes with it.",
+  "phrases": [
+    {
+      "id": "pla-01",
+      "indonesian": "Sabtu ini ada acara?",
+      "english": "Are you doing anything this Saturday?",
+      "registerNotes": "The usual way to check someone is free before inviting them: literally 'is there an event this Saturday'. Friends add nggak at the end: Sabtu ini ada acara, nggak?",
+      "audio": "audio/id/pla-01.mp3",
+      "tags": [
+        "plans",
+        "inviting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-02",
+      "indonesian": "Bagaimana kalau kita ke pantai?",
+      "english": "How about going to the beach?",
+      "registerNotes": "Bagaimana kalau … is the standard 'how about …' for any suggestion. Friends say Gimana kalau …, or just Ke pantai, yuk.",
+      "pitfallNote": "Use kita, which includes the person you're inviting; kami would leave them out.",
+      "audio": "audio/id/pla-02.mp3",
+      "tags": [
+        "plans",
+        "suggesting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-03",
+      "register": "casual",
+      "indonesian": "Ngopi, yuk!",
+      "english": "Let's grab a coffee!",
+      "polite": {
+        "indonesian": "Ayo, kita minum kopi.",
+        "audio": "audio/id/casual/pla-03-polite.mp3"
+      },
+      "registerNotes": "Yuk is the friendly, casual 'let's', and it usually comes last: Makan, yuk. Ngopi is spoken for minum kopi, and often just means meeting up for a chat.",
+      "audio": "audio/id/casual/pla-03.mp3",
+      "tags": [
+        "plans",
+        "inviting",
+        "casual"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-04",
+      "register": "casual",
+      "indonesian": "Kita ketemu di depan stasiun, ya.",
+      "english": "Let's meet in front of the station, OK?",
+      "polite": {
+        "indonesian": "Kita bertemu di depan stasiun, ya.",
+        "audio": "audio/id/casual/pla-04-polite.mp3"
+      },
+      "registerNotes": "Ketemu is the everyday spoken bertemu; bertemu sounds more careful and suits work or older people. The ya at the end checks the other person is happy with it.",
+      "audio": "audio/id/casual/pla-04.mp3",
+      "tags": [
+        "plans",
+        "meeting",
+        "casual"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-05",
+      "indonesian": "Jam berapa enaknya?",
+      "english": "What time suits you?",
+      "registerNotes": "Enaknya, 'what would be nice', hands the choice to the other person: Enaknya di mana? (Where's good for you?). Polite with anyone.",
+      "audio": "audio/id/pla-05.mp3",
+      "tags": [
+        "plans",
+        "arranging"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-06",
+      "indonesian": "Oke, boleh.",
+      "english": "OK, sounds good.",
+      "registerNotes": "Boleh, literally 'may', is the everyday yes to a suggestion or an offer. Boleh juga is a slightly less certain 'why not'.",
+      "audio": "audio/id/pla-06.mp3",
+      "tags": [
+        "plans",
+        "agreeing"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-07",
+      "indonesian": "Maaf, saya tidak bisa. Ada acara keluarga.",
+      "english": "Sorry, I can't. I've got a family thing on.",
+      "registerNotes": "Friends say Sori, nggak bisa. Ada acara keluarga.",
+      "cultureNote": "A bare no feels abrupt in Indonesian, so people give a reason, and a family event is one nobody argues with.",
+      "audio": "audio/id/pla-07.mp3",
+      "tags": [
+        "plans",
+        "declining"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-08",
+      "indonesian": "Lain kali saja, ya.",
+      "english": "Maybe next time.",
+      "registerNotes": "A gentle no, or putting something off, said with a smile.",
+      "cultureNote": "From an Indonesian friend it may well mean no rather than 'ask me again next week'; read it with the tone and the reason given.",
+      "audio": "audio/id/pla-08.mp3",
+      "tags": [
+        "plans",
+        "declining"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-09",
+      "indonesian": "Nanti saya kabari, ya.",
+      "english": "I'll let you know.",
+      "registerNotes": "From kabar (news): 'I'll send word'. Friends say Nanti aku kabarin.",
+      "cultureNote": "Like lain kali, it can also be a polite way of not committing.",
+      "audio": "audio/id/pla-09.mp3",
+      "tags": [
+        "plans",
+        "arranging"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-10",
+      "register": "casual",
+      "indonesian": "Aku lagi di jalan.",
+      "english": "I'm on my way.",
+      "polite": {
+        "indonesian": "Saya sedang dalam perjalanan.",
+        "audio": "audio/id/casual/pla-10-polite.mp3"
+      },
+      "registerNotes": "Lagi is casual for sedang (in the middle of). In messages people just write otw, said o-te-we, from English 'on the way'.",
+      "pitfallNote": "Di jalan can mean anything from 'just leaving' to 'nearly there'. Sudah dekat? (Are you close?) is a fair follow-up.",
+      "audio": "audio/id/casual/pla-10.mp3",
+      "tags": [
+        "plans",
+        "meeting",
+        "casual"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-11",
+      "indonesian": "Maaf, saya agak terlambat.",
+      "english": "Sorry, I'm running a bit late.",
+      "registerNotes": "Telat is the spoken terlambat: to a friend, Sori, telat dikit, ya.",
+      "cultureNote": "Indonesians joke about jam karet, 'rubber time'. Friends allow some leeway, but be on time for work, appointments and older people.",
+      "audio": "audio/id/pla-11.mp3",
+      "tags": [
+        "plans",
+        "meeting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-12",
+      "indonesian": "Besok jadi, ya?",
+      "english": "We're still on for tomorrow, right?",
+      "registerNotes": "Said the day before, to confirm a plan. Besok jadi? on its own is the casual version.",
+      "pitfallNote": "Jadi here means 'goes ahead as planned', not 'so'. Tidak jadi, or nggak jadi among friends, means it's off.",
+      "audio": "audio/id/pla-12.mp3",
+      "tags": [
+        "plans",
+        "arranging"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-13",
+      "indonesian": "Saya jemput, ya?",
+      "english": "Shall I pick you up?",
+      "registerNotes": "Jemput is to go and collect someone. The other half is antar, to take someone somewhere: Saya antar pulang, ya? (Shall I take you home?)",
+      "audio": "audio/id/pla-13.mp3",
+      "tags": [
+        "plans",
+        "meeting"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

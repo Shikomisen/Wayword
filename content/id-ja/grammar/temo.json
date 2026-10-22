@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-temo",
+  "connector": "〜ても",
+  "gloss": "walaupun",
+  "title": "〜ても — walaupun, berapa pun",
+  "pattern": "bentuk て kata kerja / kata sifat い + も; kata benda / kata sifat な + でも",
+  "explanation": "ても berarti “walaupun”, mirip -pun dalam “terlambat pun”: {雨|あめ}が{降|ふ}っても{行|い}きます — walaupun hujan, saya tetap pergi. Kata sifat い: {高|たか}くても{買|か}う — walaupun mahal, aku beli. Kata benda dan kata sifat な memakai でも: {雨|あめ}でも{行|い}く. Dengan kata tanya artinya “berapa pun” atau “apa pun”: いくら{食|た}べても{太|ふと}らない — sebanyak apa pun aku makan, aku tidak gemuk.",
+  "natural": "Untuk menenangkan orang: {遅|おく}れても{大丈夫|だいじょうぶ}だよ — terlambat pun tidak apa-apa.",
+  "stiff": "Jangan tertukar ても (walaupun) dan たら (kalau): {雨|あめ}が{降|ふ}ったら{行|い}かない berarti “kalau hujan, aku tidak pergi”.",
+  "examples": [
+    {
+      "id": "gx-temo-1",
+      "japanese": "雨が降っても行きます。",
+      "furigana": "{雨|あめ}が{降|ふ}っても{行|い}きます。",
+      "indonesian": "Walaupun hujan, saya tetap pergi.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{雨|あめ}が",
+          "w": "w-ame"
+        },
+        {
+          "t": "{降|ふ}っても",
+          "w": "w-furu"
+        },
+        {
+          "t": "{行|い}きます。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{雨|あめ}が{降|ふ}って",
+        "answer": "も",
+        "after": "{行|い}きます。",
+        "options": [
+          "も",
+          "は",
+          "から"
+        ],
+        "why": "Walaupun: て + も."
+      },
+      "audio": "audio/ja/grammar/gx-temo-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "temo"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-temo-2",
+      "japanese": "遅れても大丈夫だよ。",
+      "furigana": "{遅|おく}れても{大丈夫|だいじょうぶ}だよ。",
+      "indonesian": "Terlambat pun tidak apa-apa.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{遅|おく}れても",
+          "w": "w-okureru"
+        },
+        {
+          "t": "{大丈夫|だいじょうぶ}だよ。",
+          "w": "w-daijoubu"
+        }
+      ],
+      "gap": {
+        "before": "{遅|おく}れて",
+        "answer": "も",
+        "after": "{大丈夫|だいじょうぶ}だよ。",
+        "options": [
+          "も",
+          "から",
+          "は"
+        ],
+        "why": "Walaupun terlambat: 遅れても."
+      },
+      "audio": "audio/ja/grammar/gx-temo-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "temo"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-temo-3",
+      "japanese": "高くても、この靴がほしい。",
+      "furigana": "{高|たか}くても、この{靴|くつ}がほしい。",
+      "indonesian": "Walaupun mahal, aku mau sepatu ini.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{高|たか}くても、",
+          "w": "w-takai"
+        },
+        {
+          "t": "この{靴|くつ}が",
+          "w": "w-kutsu"
+        },
+        {
+          "t": "ほしい。"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "{高|たか}くても",
+        "after": "、この{靴|くつ}がほしい。",
+        "options": [
+          "{高|たか}くても",
+          "{高|たか}いから",
+          "{高|たか}かったら"
+        ],
+        "why": "Kata sifat い: 高い → 高くても."
+      },
+      "audio": "audio/ja/grammar/gx-temo-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "temo"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-temo-4",
+      "japanese": "何度聞いても、分からない。",
+      "furigana": "{何度|なんど}{聞|き}いても、{分|わ}からない。",
+      "indonesian": "Berapa kali pun kudengar, aku tetap tidak mengerti.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{何度|なんど}"
+        },
+        {
+          "t": "{聞|き}いても、",
+          "w": "w-kiku"
+        },
+        {
+          "t": "{分|わ}からない。",
+          "w": "w-wakaru"
+        }
+      ],
+      "gap": {
+        "before": "{何度|なんど}{聞|き}いて",
+        "answer": "も",
+        "after": "、{分|わ}からない。",
+        "options": [
+          "も",
+          "から",
+          "は"
+        ],
+        "why": "Berapa kali pun: 何度…ても."
+      },
+      "audio": "audio/ja/grammar/gx-temo-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "temo"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

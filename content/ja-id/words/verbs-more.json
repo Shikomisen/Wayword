@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 1,
+  "id": "words-verbs-more",
+  "title": "動詞（中級）",
+  "description": "手伝う、決める、借りる、会う、迎えに行く。会話でよく使う動詞を、ていねいな me-・ber- の形と、くだけた会話で使う短い形の両方で。",
+  "items": [
+    {
+      "id": "w-membantu",
+      "indonesian": "membantu",
+      "japanese": "手伝う、助ける",
+      "pos": "verb",
+      "forms": {
+        "root": "bantu"
+      },
+      "registerNotes": "くだけた会話では bantu、ジャカルタ風の話し言葉では bantuin。店員さんは Ada yang bisa saya bantu?（何かお探しですか？）と声をかけてきます。",
+      "audio": "audio/id/words/w-membantu.mp3",
+      "tags": [
+        "動詞",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mengerti",
+      "indonesian": "mengerti",
+      "japanese": "わかる、理解する",
+      "pos": "verb",
+      "forms": {
+        "root": "arti"
+      },
+      "registerNotes": "arti（意味）の古い形 erti から来た言葉。くだけて ngerti：Ngerti nggak?（わかる？）。Paham も同じ意味で、同じくらいよく使います。",
+      "pitfallNote": "Saya tidak mengerti とだけ言うと、そっけなく聞こえることがあります。Maaf, saya kurang mengerti（すみません、よくわからないのですが）と言うとやわらかくなります。",
+      "audio": "audio/id/words/w-mengerti.mp3",
+      "tags": [
+        "動詞",
+        "会話"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-menjelaskan",
+      "indonesian": "menjelaskan",
+      "japanese": "説明する",
+      "pos": "verb",
+      "forms": {
+        "root": "jelas"
+      },
+      "registerNotes": "jelas（はっきりした）から：はっきりさせる、という意味。ていねいには Bisa dijelaskan lagi?（もう一度説明していただけますか？）、くだけた会話では jelasin。",
+      "audio": "audio/id/words/w-menjelaskan.mp3",
+      "tags": [
+        "動詞",
+        "会話"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-memutuskan",
+      "indonesian": "memutuskan",
+      "japanese": "決める；断ち切る",
+      "pos": "verb",
+      "forms": {
+        "root": "putus"
+      },
+      "registerNotes": "くだけて mutusin。「（恋人と）別れる、振る」の意味にもなります：Dia mutusin pacarnya.（恋人を振った）",
+      "pitfallNote": "語根の putus だけだと「切れた、別れた」の意味です：Kami sudah putus（私たち、もう別れたの）。「決める」には memutuskan を使いましょう。",
+      "audio": "audio/id/words/w-memutuskan.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menyiapkan",
+      "indonesian": "menyiapkan",
+      "japanese": "準備する、用意する",
+      "pos": "verb",
+      "forms": {
+        "root": "siap"
+      },
+      "registerNotes": "siap（準備ができた）から。くだけて siapin：Aku siapin makan dulu, ya（先にごはんの用意をするね）。",
+      "audio": "audio/id/words/w-menyiapkan.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menerima",
+      "indonesian": "menerima",
+      "japanese": "受け取る、受け入れる",
+      "pos": "verb",
+      "forms": {
+        "root": "terima"
+      },
+      "registerNotes": "terima kasih（ありがとう）の terima です。くだけた会話では terima だけ：Udah terima uangnya?（お金、受け取った？）",
+      "audio": "audio/id/words/w-menerima.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-meminjam",
+      "indonesian": "meminjam",
+      "japanese": "借りる",
+      "pos": "verb",
+      "forms": {
+        "root": "pinjam"
+      },
+      "registerNotes": "くだけて pinjam。「貸す」は meminjamkan、くだけて pinjamin。",
+      "pitfallNote": "日本語の「貸してください」は、インドネシア語では「借りてもいいですか」と言います：Boleh saya pinjam payungnya?（傘を貸してもらえますか？）",
+      "audio": "audio/id/words/w-meminjam.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mengembalikan",
+      "indonesian": "mengembalikan",
+      "japanese": "返す",
+      "pos": "verb",
+      "forms": {
+        "root": "kembali"
+      },
+      "registerNotes": "kembali（戻る）から：物を戻す、という意味。くだけて balikin：Besok aku balikin, ya（明日返すね）。",
+      "audio": "audio/id/words/w-mengembalikan.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bertemu",
+      "indonesian": "bertemu",
+      "japanese": "会う",
+      "pos": "verb",
+      "forms": {
+        "root": "temu"
+      },
+      "registerNotes": "くだけて ketemu：Ketemu di mana?（どこで会う？）。「〜と会う」は dengan を使います：bertemu dengan teman（友達と会う）。",
+      "audio": "audio/id/words/w-bertemu.mp3",
+      "tags": [
+        "動詞",
+        "付き合い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-berangkat",
+      "indonesian": "berangkat",
+      "japanese": "出発する、出かける",
+      "pos": "verb",
+      "registerNotes": "くだけた会話でも同じ形です：Jam berapa berangkat?（何時に出る？）。友達どうしでは jalan もよく使います：Yuk, jalan.（さあ、行こう）",
+      "pitfallNote": "日本語の「出発する」と同じく、出るときのことです：Saya berangkat jam tujuh（7時に出発します）。「着く」は sampai か tiba。",
+      "audio": "audio/id/words/w-berangkat.mp3",
+      "tags": [
+        "動詞",
+        "旅行"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-berhenti",
+      "indonesian": "berhenti",
+      "japanese": "止まる；やめる",
+      "pos": "verb",
+      "forms": {
+        "root": "henti"
+      },
+      "registerNotes": "乗り物が止まるときにも、習慣や仕事をやめるときにも使います：berhenti merokok（たばこをやめる）、berhenti kerja（仕事を辞める）。運転手には、くだけて Stop di sini, Pak.（ここで止めてください）",
+      "audio": "audio/id/words/w-berhenti.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-menikah",
+      "indonesian": "menikah",
+      "japanese": "結婚する、結婚している",
+      "pos": "verb",
+      "forms": {
+        "root": "nikah"
+      },
+      "registerNotes": "くだけて nikah：Kapan nikah?（結婚はいつ？）",
+      "pitfallNote": "Sudah menikah?（結婚していますか？）には Sudah（しています）か Belum（まだです）で答え、Tidak とは言いません。独身なら Belum がふつうの答えです。",
+      "cultureNote": "結婚や子どものことは、初対面でもふつうの世間話です。日本の感覚では立ち入った質問ですが、Belum, doakan saja, ya（まだなんです、祈っていてくださいね）と軽く返せば上手に答えられます。",
+      "audio": "audio/id/words/w-menikah.mp3",
+      "tags": [
+        "動詞",
+        "家族"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-memakai",
+      "indonesian": "memakai",
+      "japanese": "着る、身につける；使う",
+      "pos": "verb",
+      "forms": {
+        "root": "pakai"
+      },
+      "registerNotes": "くだけて pakai、発音は pake になりがちです：Pakai helm, ya.（ヘルメットをかぶってね）。カードで払うのは bayar pakai kartu。",
+      "pitfallNote": "日本語では着る・履く・かぶる・使うと使い分けますが、インドネシア語はすべて pakai 一語です：pakai baju（服を着る）、pakai sendok（スプーンを使う）。",
+      "audio": "audio/id/words/w-memakai.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mencoba",
+      "indonesian": "mencoba",
+      "japanese": "試す；試着する、味見する",
+      "pos": "verb",
+      "forms": {
+        "root": "coba"
+      },
+      "registerNotes": "くだけて coba、または nyoba。Boleh saya coba?（試してもいいですか？）は試着にも味見にも使えます。動詞の前の coba は「〜てみて」のようにお願いをやわらげます：Coba lihat ini（ちょっとこれ見てみて）。",
+      "audio": "audio/id/words/w-mencoba.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-membuka",
+      "indonesian": "membuka",
+      "japanese": "開ける、開く",
+      "pos": "verb",
+      "forms": {
+        "root": "buka"
+      },
+      "registerNotes": "くだけて buka。buka だけで「営業している」の意味にもなります：Tokonya buka jam berapa?（お店は何時に開きますか？）",
+      "cultureNote": "ラマダン（断食月）の buka puasa は、日没に断食を終えて食事をとること。友達や同僚と一緒にすることも多く（bukber、buka bersama）、ムスリムでなくても歓迎されます。",
+      "audio": "audio/id/words/w-membuka.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-menutup",
+      "indonesian": "menutup",
+      "japanese": "閉める、閉じる；ふたをする、覆う",
+      "pos": "verb",
+      "forms": {
+        "root": "tutup"
+      },
+      "registerNotes": "くだけて tutup：Tutup pintunya, ya.（ドアを閉めてね）。お店の tutup の札は「閉店・休業」の意味です。",
+      "audio": "audio/id/words/w-menutup.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mengganti",
+      "indonesian": "mengganti",
+      "japanese": "替える、取り替える；（お金を）返す",
+      "pos": "verb",
+      "forms": {
+        "root": "ganti"
+      },
+      "registerNotes": "くだけて ganti：ganti baju（着替える）、ganti bus（バスを乗り換える）、Nanti saya ganti uangnya（あとでお金を返します）。",
+      "pitfallNote": "ganti は、あるものを別のものに「替える」こと。ものが自然に「変わる」のは berubah です。",
+      "audio": "audio/id/words/w-mengganti.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menjemput",
+      "indonesian": "menjemput",
+      "japanese": "迎えに行く、迎える",
+      "pos": "verb",
+      "forms": {
+        "root": "jemput"
+      },
+      "registerNotes": "くだけて jemput：Nanti aku jemput di stasiun（駅まで迎えに行くね）。",
+      "pitfallNote": "日本語の「迎えに行く」と同じく、人にだけ使います。物を取りに行くのは ambil：ambil paket（荷物を受け取る）、ambil tas（かばんを取る）。",
+      "cultureNote": "ホストや家族は、空港や駅までぜひ迎えに行くと言ってくれることがよくあります。歓迎の気持ちの表れです。",
+      "audio": "audio/id/words/w-menjemput.mp3",
+      "tags": [
+        "動詞",
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mengantar",
+      "indonesian": "mengantar",
+      "japanese": "送っていく、送り届ける；配達する",
+      "pos": "verb",
+      "forms": {
+        "root": "antar"
+      },
+      "registerNotes": "くだけて antar、anter、nganterin：Aku anterin pulang, ya（家まで送るね）。配達も antar です：layanan antar（配達サービス）。",
+      "cultureNote": "日本と同じく、帰る客はホストが玄関や門まで見送るのがふつう。きちんと見送るところまでが訪問の一部です。",
+      "audio": "audio/id/words/w-mengantar.mp3",
+      "tags": [
+        "動詞",
+        "旅行"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-memesan",
+      "indonesian": "memesan",
+      "japanese": "注文する；予約する",
+      "pos": "verb",
+      "forms": {
+        "root": "pesan"
+      },
+      "registerNotes": "くだけて pesan、発音は pesen や mesen になりがちです：Mau pesan apa?（ご注文は？）。部屋や切符の予約にも使います：Saya sudah pesan kamar（部屋を予約してあります）。",
+      "pitfallNote": "名詞の pesan は「伝言、メッセージ」です：Ada pesan untuk saya?（私あての伝言はありますか？）",
+      "audio": "audio/id/words/w-memesan.mp3",
+      "tags": [
+        "動詞",
+        "食べ物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-menabung",
+      "indonesian": "menabung",
+      "japanese": "貯金する、（お金を）貯める",
+      "pos": "verb",
+      "forms": {
+        "root": "tabung"
+      },
+      "registerNotes": "くだけて nabung：Aku lagi nabung buat liburan（休暇のために貯金中なんだ）。",
+      "pitfallNote": "お金にだけ使います。時間の節約は hemat waktu、ファイルの保存は menyimpan。",
+      "audio": "audio/id/words/w-menabung.mp3",
+      "tags": [
+        "動詞",
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-berubah",
+      "indonesian": "berubah",
+      "japanese": "変わる",
+      "pos": "verb",
+      "forms": {
+        "root": "ubah"
+      },
+      "registerNotes": "ものが自然に変わること：Jakarta sudah banyak berubah（ジャカルタはずいぶん変わった）。自分で変えるのは mengubah（mengubah rencana：予定を変える）、取り替えるのは ganti。日本語の「変わる・変える・替える」の区別に近いです。",
+      "audio": "audio/id/words/w-berubah.mp3",
+      "tags": [
+        "動詞"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bertanya",
+      "indonesian": "bertanya",
+      "japanese": "質問する、たずねる",
+      "pos": "verb",
+      "forms": {
+        "root": "tanya"
+      },
+      "registerNotes": "Permisi, mau tanya…（すみません、ちょっとお聞きしたいのですが…）が日常のていねいな切り出し方。くだけて tanya、nanya。",
+      "pitfallNote": "「〜をください」「〜をもらえますか」と何かを頼むときは、bertanya ではなく minta：Boleh minta air?（お水をいただけますか？）",
+      "audio": "audio/id/words/w-bertanya.mp3",
+      "tags": [
+        "動詞",
+        "会話"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mengajak",
+      "indonesian": "mengajak",
+      "japanese": "誘う",
+      "pos": "verb",
+      "forms": {
+        "root": "ajak"
+      },
+      "registerNotes": "くだけて ajak、ngajak：Dia ngajak saya makan（食事に誘われました）。",
+      "cultureNote": "誘った人が払うのが一般的で、yang ngajak, yang bayar（誘った人が払う）と言われます。日本の割り勘とは感覚が違います。",
+      "audio": "audio/id/words/w-mengajak.mp3",
+      "tags": [
+        "動詞",
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menghubungi",
+      "indonesian": "menghubungi",
+      "japanese": "連絡する",
+      "pos": "verb",
+      "forms": {
+        "root": "hubung"
+      },
+      "registerNotes": "ていねいで、少しかしこまった言い方：Nanti saya hubungi（のちほどご連絡します）。くだけた会話では kontak、chat、WA と言います：Nanti aku WA, ya（あとで WA するね）。",
+      "cultureNote": "友達から大家さん、小さなお店まで、連絡はほとんど WhatsApp。日本の LINE のような存在なので、聞くなら nomor WA（WhatsApp の番号）です。",
+      "audio": "audio/id/words/w-menghubungi.mp3",
+      "tags": [
+        "動詞",
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mengobrol",
+      "indonesian": "mengobrol",
+      "japanese": "おしゃべりする、雑談する",
+      "pos": "verb",
+      "forms": {
+        "root": "obrol"
+      },
+      "registerNotes": "ふだんはほとんど ngobrol と言い、改まった場以外ならどこでも使えます：Kami ngobrol sampai malam（夜遅くまでおしゃべりした）。",
+      "audio": "audio/id/words/w-mengobrol.mp3",
+      "tags": [
+        "動詞",
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menolak",
+      "indonesian": "menolak",
+      "japanese": "断る",
+      "pos": "verb",
+      "forms": {
+        "root": "tolak"
+      },
+      "registerNotes": "くだけて nolak：Dia nolak tawarannya（その申し出を断った）。",
+      "cultureNote": "はっきりした「ノー」は失礼に聞こえるので、やんわり断ります。日本の「また今度」にあたる Lain kali, ya（また今度ね）や、Maaf, belum bisa（ごめん、今はちょっと無理）を使いましょう。",
+      "audio": "audio/id/words/w-menolak.mp3",
+      "tags": [
+        "動詞",
+        "付き合い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menelepon",
+      "indonesian": "menelepon",
+      "japanese": "電話する",
+      "pos": "verb",
+      "forms": {
+        "root": "telepon"
+      },
+      "registerNotes": "くだけて telepon、nelpon：Nanti aku telepon, ya（あとで電話するね）。電話もたいてい WhatsApp でかけます。",
+      "audio": "audio/id/words/w-menelepon.mp3",
+      "tags": [
+        "動詞",
+        "付き合い"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

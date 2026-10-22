@@ -1,0 +1,500 @@
+{
+  "schemaVersion": 1,
+  "id": "airport",
+  "title": "Bandara & imigrasi",
+  "order": 3,
+  "description": "Jam pertama setelah mendarat: pertanyaan imigrasi, bagasi, bea cukai, dan keluar dari terminal.",
+  "phrases": [
+    {
+      "id": "air-01",
+      "japanese": "パスポートです",
+      "furigana": [
+        {
+          "b": "パスポートです"
+        }
+      ],
+      "romaji": "pasupōto desu",
+      "indonesian": "Ini paspor saya.",
+      "registerNotes": "Diucapkan sambil menyerahkannya. どうぞ juga sama baiknya.",
+      "audio": "audio/ja/air-01.mp3",
+      "audioHint": "パスポートです",
+      "tags": [
+        "imigrasi",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "air-02",
+      "japanese": "観光です",
+      "furigana": [
+        {
+          "b": "観光",
+          "r": "かんこう"
+        },
+        {
+          "b": "です"
+        }
+      ],
+      "romaji": "kankō desu",
+      "indonesian": "Wisata. (tujuan kunjungan)",
+      "registerNotes": "Jawaban yang diharapkan untuk 目的は何ですか. Di sini jawaban pendek justru tepat — tidak perlu menjelaskan panjang lebar di loket.",
+      "audio": "audio/ja/air-02.mp3",
+      "audioHint": "かんこうです",
+      "tags": [
+        "imigrasi",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "air-03",
+      "japanese": "十日間です",
+      "furigana": [
+        {
+          "b": "十日間",
+          "r": "とおかかん"
+        },
+        {
+          "b": "です"
+        }
+      ],
+      "romaji": "tōkakan desu",
+      "indonesian": "Sepuluh hari. (lama tinggal)",
+      "registerNotes": "Menjawab 何日間滞在しますか. Ganti angkanya dengan lama tinggalmu — 一週間 (isshūkan) berarti 'satu minggu'.",
+      "audio": "audio/ja/air-03.mp3",
+      "audioHint": "とおかかんです",
+      "tags": [
+        "imigrasi",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-04",
+      "japanese": "ホテルに泊まります",
+      "furigana": [
+        {
+          "b": "ホテルに"
+        },
+        {
+          "b": "泊",
+          "r": "と"
+        },
+        {
+          "b": "まります"
+        }
+      ],
+      "romaji": "hoteru ni tomarimasu",
+      "indonesian": "Saya menginap di hotel.",
+      "registerNotes": "Menjawab pertanyaan 'menginap di mana?'. Yang benar-benar mempercepat urusan ini adalah alamat yang sudah kamu catat.",
+      "audio": "audio/ja/air-04.mp3",
+      "audioHint": "ホテルにとまります",
+      "tags": [
+        "imigrasi",
+        "penting"
+      ],
+      "difficulty": 2,
+      "usage": "Tempat menginap ditandai に, bukan で: ホテルに泊まります. Kata 'di' dalam bahasa Indonesia bisa menjadi に atau で, tergantung kata kerjanya."
+    },
+    {
+      "id": "air-05",
+      "japanese": "住所はこれです",
+      "furigana": [
+        {
+          "b": "住所",
+          "r": "じゅうしょ"
+        },
+        {
+          "b": "はこれです"
+        }
+      ],
+      "romaji": "jūsho wa kore desu",
+      "indonesian": "Ini alamatnya.",
+      "registerNotes": "Ucapkan sambil menunjukkan bukti pemesanan di ponselmu. Pertanyaan imigrasi yang paling sulit pun beres tanpa perlu kamu ucapkan.",
+      "audio": "audio/ja/air-05.mp3",
+      "audioHint": "じゅうしょはこれです",
+      "tags": [
+        "imigrasi",
+        "bertahan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-06",
+      "japanese": "帰りのチケットです",
+      "furigana": [
+        {
+          "b": "帰",
+          "r": "かえ"
+        },
+        {
+          "b": "りのチケットです"
+        }
+      ],
+      "romaji": "kaeri no chiketto desu",
+      "indonesian": "Ini tiket pulang saya.",
+      "registerNotes": "Sesekali diminta di imigrasi sebagai bukti bahwa kamu akan melanjutkan perjalanan atau pulang.",
+      "audio": "audio/ja/air-06.mp3",
+      "audioHint": "かえりのチケットです",
+      "tags": [
+        "imigrasi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-07",
+      "japanese": "初めてです",
+      "furigana": [
+        {
+          "b": "初",
+          "r": "はじ"
+        },
+        {
+          "b": "めてです"
+        }
+      ],
+      "romaji": "hajimete desu",
+      "indonesian": "Baru pertama kali.",
+      "registerNotes": "Menjawab 日本は初めてですか — pertanyaan yang akan kamu dengar dari petugas, sopir, maupun pemilik toko.",
+      "audio": "audio/ja/air-07.mp3",
+      "audioHint": "はじめてです",
+      "tags": [
+        "imigrasi",
+        "basa-basi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "air-08",
+      "japanese": "荷物を預けたいです",
+      "furigana": [
+        {
+          "b": "荷物",
+          "r": "にもつ"
+        },
+        {
+          "b": "を"
+        },
+        {
+          "b": "預",
+          "r": "あず"
+        },
+        {
+          "b": "けたいです"
+        }
+      ],
+      "romaji": "nimotsu o azuketai desu",
+      "indonesian": "Saya ingin menitipkan bagasi.",
+      "registerNotes": "〜たいです = 'ingin…'. Lebih halus dan wajar daripada perintah langsung.",
+      "audio": "audio/ja/air-08.mp3",
+      "audioHint": "にもつをあずけたいです",
+      "tags": [
+        "bagasi",
+        "permintaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "air-09",
+      "japanese": "手荷物受取所はどこですか",
+      "furigana": [
+        {
+          "b": "手荷物",
+          "r": "てにもつ"
+        },
+        {
+          "b": "受取所",
+          "r": "うけとりじょ"
+        },
+        {
+          "b": "はどこですか"
+        }
+      ],
+      "romaji": "tenimotsu uketorijo wa doko desu ka",
+      "indonesian": "Tempat pengambilan bagasi di mana?",
+      "registerNotes": "Panjang, tapi papan petunjuknya memakai kanji yang persis sama — mengenali tulisannya lebih penting daripada mengucapkannya dengan sempurna.",
+      "audio": "audio/ja/air-09.mp3",
+      "audioHint": "てにもつうけとりじょはどこですか",
+      "tags": [
+        "bagasi",
+        "pertanyaan",
+        "papan tanda"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "air-10",
+      "japanese": "荷物が来ません",
+      "furigana": [
+        {
+          "b": "荷物",
+          "r": "にもつ"
+        },
+        {
+          "b": "が"
+        },
+        {
+          "b": "来",
+          "r": "き"
+        },
+        {
+          "b": "ません"
+        }
+      ],
+      "romaji": "nimotsu ga kimasen",
+      "indonesian": "Bagasi saya belum keluar.",
+      "registerNotes": "Satu-satunya ungkapan soal bagasi yang perlu kamu siapkan, karena kalau tidak, kamu harus mengarangnya sambil panik.",
+      "audio": "audio/ja/air-10.mp3",
+      "audioHint": "にもつがきません",
+      "tags": [
+        "bagasi",
+        "masalah",
+        "bertahan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "air-11",
+      "japanese": "何番ゲートですか",
+      "furigana": [
+        {
+          "b": "何番",
+          "r": "なんばん"
+        },
+        {
+          "b": "ゲートですか"
+        }
+      ],
+      "romaji": "nanban gēto desu ka",
+      "indonesian": "Gerbang nomor berapa?",
+      "registerNotes": "何番 = 'nomor berapa', bisa dipakai lagi untuk peron (何番線) dan tempat naik bus (何番乗り場).",
+      "audio": "audio/ja/air-11.mp3",
+      "audioHint": "なんばんゲートですか",
+      "tags": [
+        "pertanyaan",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-12",
+      "japanese": "乗り継ぎです",
+      "furigana": [
+        {
+          "b": "乗",
+          "r": "の"
+        },
+        {
+          "b": "り"
+        },
+        {
+          "b": "継",
+          "r": "つ"
+        },
+        {
+          "b": "ぎです"
+        }
+      ],
+      "romaji": "noritsugi desu",
+      "indonesian": "Saya transit. (penerbangan lanjutan)",
+      "registerNotes": "乗り継ぎ / トランジット sama-sama muncul di papan petunjuk. Kata yang sama juga dipakai untuk pindah kereta.",
+      "audio": "audio/ja/air-12.mp3",
+      "audioHint": "のりつぎです",
+      "tags": [
+        "transit",
+        "papan tanda"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "air-13",
+      "japanese": "申告するものはありません",
+      "furigana": [
+        {
+          "b": "申告",
+          "r": "しんこく"
+        },
+        {
+          "b": "するものはありません"
+        }
+      ],
+      "romaji": "shinkoku suru mono wa arimasen",
+      "indonesian": "Tidak ada barang yang perlu dilaporkan.",
+      "registerNotes": "Bea cukai. Kebanyakan wisatawan sekarang memakai kode QR Visit Japan Web dan tidak pernah mengucapkannya — tapi tetap perlu dikenali.",
+      "audio": "audio/ja/air-13.mp3",
+      "audioHint": "しんこくするものはありません",
+      "tags": [
+        "bea cukai"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "air-14",
+      "japanese": "これは何ですか",
+      "furigana": [
+        {
+          "b": "これは"
+        },
+        {
+          "b": "何",
+          "r": "なん"
+        },
+        {
+          "b": "ですか"
+        }
+      ],
+      "romaji": "kore wa nan desu ka",
+      "indonesian": "Ini apa?",
+      "registerNotes": "Serbaguna. Ini juga yang mungkin ditanyakan petugas bea cukai tentang barang di tasmu — jadi kuasai untuk bertanya maupun menjawab.",
+      "audio": "audio/ja/air-14.mp3",
+      "audioHint": "これはなんですか",
+      "tags": [
+        "pertanyaan",
+        "penting"
+      ],
+      "difficulty": 1,
+      "usage": "Urutannya sama dengan 'ini apa?': これは = ini, 何ですか = apa. Kata tanyanya tetap di tempat, lalu kalimat ditutup dengan か."
+    },
+    {
+      "id": "air-15",
+      "japanese": "出口はどこですか",
+      "furigana": [
+        {
+          "b": "出口",
+          "r": "でぐち"
+        },
+        {
+          "b": "はどこですか"
+        }
+      ],
+      "romaji": "deguchi wa doko desu ka",
+      "indonesian": "Pintu keluar di mana?",
+      "registerNotes": "出口 = pintu keluar, 入口 (いりぐち) = pintu masuk. Dua kanji paling berharga untuk dikenali sekilas.",
+      "audio": "audio/ja/air-15.mp3",
+      "audioHint": "でぐちはどこですか",
+      "tags": [
+        "pertanyaan",
+        "papan tanda",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "air-16",
+      "japanese": "トイレはどこですか",
+      "furigana": [
+        {
+          "b": "トイレはどこですか"
+        }
+      ],
+      "romaji": "toire wa doko desu ka",
+      "indonesian": "Toilet di mana?",
+      "registerNotes": "お手洗い (otearai) lebih sopan, tapi トイレ sangat wajar dan dimengerti di mana-mana.",
+      "audio": "audio/ja/air-16.mp3",
+      "audioHint": "トイレはどこですか",
+      "tags": [
+        "pertanyaan",
+        "penting",
+        "bertahan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "air-17",
+      "japanese": "両替所はどこですか",
+      "furigana": [
+        {
+          "b": "両替所",
+          "r": "りょうがえじょ"
+        },
+        {
+          "b": "はどこですか"
+        }
+      ],
+      "romaji": "ryōgaejo wa doko desu ka",
+      "indonesian": "Tempat penukaran uang di mana?",
+      "registerNotes": "Kurs di bandara kurang bagus tapi praktis — tukarkan secukupnya untuk sampai ke kota.",
+      "audio": "audio/ja/air-17.mp3",
+      "audioHint": "りょうがえじょはどこですか",
+      "tags": [
+        "pertanyaan",
+        "uang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "air-18",
+      "japanese": "Wi-Fiはありますか",
+      "furigana": [
+        {
+          "b": "Wi-Fiはありますか"
+        }
+      ],
+      "romaji": "waifai wa arimasu ka",
+      "indonesian": "Ada Wi-Fi?",
+      "registerNotes": "〜はありますか ('ada…?') adalah salah satu pola yang paling sering bisa dipakai ulang di seluruh aplikasi.",
+      "audio": "audio/ja/air-18.mp3",
+      "audioHint": "ワイファイはありますか",
+      "tags": [
+        "pertanyaan",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "air-19",
+      "japanese": "市内までどうやって行きますか",
+      "furigana": [
+        {
+          "b": "市内",
+          "r": "しない"
+        },
+        {
+          "b": "までどうやって"
+        },
+        {
+          "b": "行",
+          "r": "い"
+        },
+        {
+          "b": "きますか"
+        }
+      ],
+      "romaji": "shinai made dō yatte ikimasu ka",
+      "indonesian": "Bagaimana cara ke pusat kota?",
+      "registerNotes": "どうやって行きますか = 'bagaimana cara ke sana' — ganti 市内 dengan tujuan mana pun.",
+      "audio": "audio/ja/air-19.mp3",
+      "audioHint": "しないまでどうやっていきますか",
+      "tags": [
+        "pertanyaan",
+        "transportasi",
+        "bertahan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "air-20",
+      "japanese": "遅れています",
+      "furigana": [
+        {
+          "b": "遅",
+          "r": "おく"
+        },
+        {
+          "b": "れています"
+        }
+      ],
+      "romaji": "okurete imasu",
+      "indonesian": "Jadwalnya terlambat.",
+      "registerNotes": "Untuk dikenali dulu: kamu akan jauh lebih sering mendengarnya dalam pengumuman pesawat dan kereta daripada mengucapkannya.",
+      "audio": "audio/ja/air-20.mp3",
+      "audioHint": "おくれています",
+      "tags": [
+        "mendengar",
+        "masalah"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-di-ke-dari",
+  "connector": "di, ke, dari",
+  "gloss": "〜に・で、〜へ、〜から",
+  "title": "di, ke, dari — 〜に・で、〜へ、〜から",
+  "pattern": "di … (〜に、〜で) · ke … (〜へ) · dari … (〜から)",
+  "explanation": "場所を表す3つの短い言葉です。di はものがある所やことが起きる所（〜に、〜で）、ke は行き先（〜へ）、dari は来た所（〜から）。日本語の助詞とちがって、場所の前に置きます：Saya tinggal di Wellington（ウェリントンに住んでいます）、Saya mau ke pasar（市場に行きます）、Saya dari Selandia Baru（ニュージーランドから来ました）。sini（ここ）、situ（そこ）、sana（あそこ）や、疑問詞の mana にも付きます：di sini、ke sana、dari mana? sini・situ・sana は「ここ・そこ・あそこ」とよく似ています。ke の後では「行く」はふつう言いません：Mau ke mana? で「どこに行くの？」",
+  "natural": "Mau ke mana?（どこ行くの？）は近所の人が道で声をかける時のあいさつで、Ke sana（ちょっとそこまで）や Jalan-jalan（散歩です）のようなあいまいな答えで十分です。日本の「どちらへ？ — ちょっとそこまで」とそっくりです。Dari mana? は「どこに行ってたの？」の意味にもなります。",
+  "stiff": "「〜へ」に di を使うのが一番多いまちがいです。市場へ行くのは ke pasar、di pasar は市場にいること。場所の di は離して書きます（di rumah）。動詞にくっつく di- とは別物です：dibungkus（包んである）。",
+  "examples": [
+    {
+      "id": "gx-di-ke-dari-1",
+      "indonesian": "Saya tinggal di Wellington.",
+      "japanese": "ウェリントンに住んでいます。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di ",
+          "w": "w-di"
+        },
+        {
+          "t": "Wellington."
+        }
+      ],
+      "gap": {
+        "before": "Saya tinggal ",
+        "answer": "di",
+        "after": " Wellington.",
+        "options": [
+          "di",
+          "ke",
+          "dari"
+        ],
+        "why": "住んでいる所はいる場所なので di。"
+      },
+      "audio": "audio/id/grammar/gx-di-ke-dari-1.mp3",
+      "tags": [
+        "文法",
+        "di-ke-dari"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-di-ke-dari-2",
+      "indonesian": "Kami mau ke pantai.",
+      "japanese": "私たちはビーチに行きます。",
+      "chunks": [
+        {
+          "t": "Kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "ke ",
+          "w": "w-ke"
+        },
+        {
+          "t": "pantai.",
+          "w": "w-pantai"
+        }
+      ],
+      "gap": {
+        "before": "Kami mau ",
+        "answer": "ke",
+        "after": " pantai.",
+        "options": [
+          "ke",
+          "di",
+          "dari"
+        ],
+        "why": "行き先は ke（〜へ）。"
+      },
+      "audio": "audio/id/grammar/gx-di-ke-dari-2.mp3",
+      "tags": [
+        "文法",
+        "di-ke-dari"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-di-ke-dari-3",
+      "indonesian": "Kami dari Selandia Baru.",
+      "japanese": "私たちはニュージーランドから来ました。",
+      "chunks": [
+        {
+          "t": "Kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "dari ",
+          "w": "w-dari"
+        },
+        {
+          "t": "Selandia Baru.",
+          "w": "w-baru"
+        }
+      ],
+      "gap": {
+        "before": "Kami ",
+        "answer": "dari",
+        "after": " Selandia Baru.",
+        "options": [
+          "dari",
+          "di",
+          "ke"
+        ],
+        "why": "来た所は dari（〜から）。"
+      },
+      "audio": "audio/id/grammar/gx-di-ke-dari-3.mp3",
+      "tags": [
+        "文法",
+        "di-ke-dari"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-di-ke-dari-4",
+      "indonesian": "Dari sini ke bandara jauh?",
+      "japanese": "ここから空港まで遠いですか。",
+      "chunks": [
+        {
+          "t": "Dari sini ",
+          "w": "w-dari"
+        },
+        {
+          "t": "ke bandara ",
+          "w": "w-bandara"
+        },
+        {
+          "t": "jauh?",
+          "w": "w-jauh"
+        }
+      ],
+      "gap": {
+        "before": "Dari sini ",
+        "answer": "ke",
+        "after": " bandara jauh?",
+        "options": [
+          "ke",
+          "di",
+          "dari"
+        ],
+        "why": "「ここから」が dari sini、「空港まで」が ke bandara。「〜まで」も ke で言えます。"
+      },
+      "audio": "audio/id/grammar/gx-di-ke-dari-4.mp3",
+      "tags": [
+        "文法",
+        "di-ke-dari"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

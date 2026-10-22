@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-se",
+  "connector": "se-, sama, seperti",
+  "gloss": "〜と同じくらい・1つ・同じ",
+  "title": "se- — 〜と同じくらい、1つ、同じ",
+  "pattern": "A tidak se- + 形容詞 + B · A sama dengan B · seperti B · se- = 1つ: sehari, sekali",
+  "explanation": "形容詞に se- を付けると「〜と同じくらい…」で、比べる相手はすぐ後に来ます。否定では日本語の「〜ほど…ない」です：Kotanya tidak sebesar Jakarta（その町はジャカルタほど大きくない）。sebanyak、secepat、semahal も同じです。「同じ」と言う時は sama … dengan：Harganya sama dengan kemarin（値段は昨日と同じ）、Tingginya sama dengan saya（背は私と同じくらい）。「〜みたい・〜のような」は seperti：seperti ini（こんなふうに）、Rasanya seperti rendang（ルンダンみたいな味）。数や時間の語に付くと、「一日」「一回」の「一」と同じく「1」の意味になります：sehari（1日）、seminggu（1週間）、sekali（1回）。名詞によっては「同じ〜」「〜全体」の意味にもなります：teman serumah（同居人）、Bapak sekeluarga（あなたとご家族のみなさん）。また sekali は形容詞の後では「とても」なので、seminggu sekali は「週に1回」、enak sekali は「とてもおいしい」です。",
+  "natural": "値段、大きさ、場所をその場で比べる時に：Tidak semahal di Bali（バリほど高くない）、Sama dengan yang kemarin（昨日のと同じ）。くだけた会話では seperti が kayak になります：kayak gini（こんな感じ）。",
+  "stiff": "「〜のような」に sebagai を使わないこと。sebagai は「〜として」です（Dia bekerja sebagai guru、彼女は教師として働いている）。また sama には dengan を使い、dari や daripada は使いません。この2つは lebih と使う語です。",
+  "examples": [
+    {
+      "id": "gx-se-1",
+      "indonesian": "Kotanya tidak sebesar Jakarta.",
+      "japanese": "その町はジャカルタほど大きくありません。",
+      "chunks": [
+        {
+          "t": "Kotanya ",
+          "w": "w-kota"
+        },
+        {
+          "t": "tidak ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "sebesar ",
+          "w": "w-besar"
+        },
+        {
+          "t": "Jakarta."
+        }
+      ],
+      "gap": {
+        "before": "Kotanya tidak ",
+        "answer": "sebesar",
+        "after": " Jakarta.",
+        "options": [
+          "sebesar",
+          "lebih besar",
+          "terbesar"
+        ],
+        "why": "「〜ほど大きい」は se- ＋ besar で、Jakarta がすぐ後に来ます。lebih besar なら dari が必要です。"
+      },
+      "audio": "audio/id/grammar/gx-se-1.mp3",
+      "tags": [
+        "文法",
+        "se"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-se-2",
+      "indonesian": "Harganya sama dengan kemarin.",
+      "japanese": "値段は昨日と同じです。",
+      "chunks": [
+        {
+          "t": "Harganya ",
+          "w": "w-harga"
+        },
+        {
+          "t": "sama "
+        },
+        {
+          "t": "dengan "
+        },
+        {
+          "t": "kemarin.",
+          "w": "w-kemarin"
+        }
+      ],
+      "gap": {
+        "before": "Harganya sama ",
+        "answer": "dengan",
+        "after": " kemarin.",
+        "options": [
+          "dengan",
+          "dari",
+          "daripada"
+        ],
+        "why": "「〜と同じ」は sama dengan で、日本語の「と」に当たるのが dengan です。dari と daripada は lebih と使います。"
+      },
+      "audio": "audio/id/grammar/gx-se-2.mp3",
+      "tags": [
+        "文法",
+        "se"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-se-3",
+      "indonesian": "Rasanya seperti masakan ibu saya.",
+      "japanese": "母の手料理みたいな味がします。",
+      "chunks": [
+        {
+          "t": "Rasanya "
+        },
+        {
+          "t": "seperti "
+        },
+        {
+          "t": "masakan ",
+          "w": "w-masak"
+        },
+        {
+          "t": "ibu ",
+          "w": "w-ibu"
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "Rasanya ",
+        "answer": "seperti",
+        "after": " masakan ibu saya.",
+        "options": [
+          "seperti",
+          "sebagai",
+          "sama"
+        ],
+        "why": "「〜みたい・〜のような」は seperti。sebagai は「〜として」です。"
+      },
+      "audio": "audio/id/grammar/gx-se-3.mp3",
+      "tags": [
+        "文法",
+        "se"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-se-4",
+      "indonesian": "Saya kerja delapan jam sehari.",
+      "japanese": "1日8時間働いています。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "kerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "delapan jam ",
+          "w": "w-jam"
+        },
+        {
+          "t": "sehari.",
+          "w": "w-hari"
+        }
+      ],
+      "gap": {
+        "before": "Saya kerja delapan jam ",
+        "answer": "sehari",
+        "after": ".",
+        "options": [
+          "sehari",
+          "hari",
+          "sekali"
+        ],
+        "why": "「1日に（あたり）」は se- ＋ hari。delapan jam sekali だと「8時間に1回」になります。"
+      },
+      "audio": "audio/id/grammar/gx-se-4.mp3",
+      "tags": [
+        "文法",
+        "se"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

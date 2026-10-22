@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "reactions",
+  "title": "あいづち・反応",
+  "order": 12,
+  "description": "話を聞いていることを伝える短いことば。驚き、同情、安心、そして「それで？」。くだけた言い方もいくつかあるので、年上の人に使えるかどうかは説明で確認しましょう。",
+  "phrases": [
+    {
+      "id": "rea-01",
+      "indonesian": "Oh, begitu.",
+      "japanese": "ああ、なるほど。",
+      "registerNotes": "相手の説明を聞きながら言う、万能の「なるほど」。誰に対してもていねいです。友達同士では縮めて Oh, gitu。",
+      "audio": "audio/id/rea-01.mp3",
+      "tags": [
+        "聞き取り",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-02",
+      "indonesian": "Iya, iya.",
+      "japanese": "うん、うん。",
+      "registerNotes": "相手が話している間に小さな声で言って、ちゃんと聞いていることを示します。早口で大きく言うと、日本語の「はいはい、わかったよ」のようにうるさそうに聞こえます。",
+      "pitfallNote": "「聞いています」の意味で、「賛成です」ではありません。日本語のあいづちと同じです。ただ、わからない質問に何でも iya と返すと、了承したと受け取られかねません。相手の iya も約束とは限りません。",
+      "audio": "audio/id/rea-02.mp3",
+      "tags": [
+        "聞き取り",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-03",
+      "indonesian": "Oh, ya?",
+      "japanese": "へえ、そうなんですか？",
+      "registerNotes": "軽い興味や驚き。語尾を上げて言い、誰に対してもていねいです。",
+      "pitfallNote": "平らに言う Oh, ya. は、何かを思い出した時の「あ、そうだ」：Oh, ya, saya lupa（あ、そうだ、忘れてた）。",
+      "audio": "audio/id/rea-03.mp3",
+      "tags": [
+        "聞き取り",
+        "驚き"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-04",
+      "indonesian": "Masa?",
+      "japanese": "まさか。ほんとに？",
+      "registerNotes": "半分冗談めかした「まさか」で、響きも日本語に似ています。くだけた形は Masa, sih?。相手を疑っているように聞こえることもあるので、年上の人には Oh, ya? のほうが無難です。",
+      "audio": "audio/id/rea-04.mp3",
+      "tags": [
+        "聞き取り",
+        "驚き"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "rea-05",
+      "register": "casual",
+      "indonesian": "Serius?",
+      "japanese": "マジで？",
+      "polite": {
+        "indonesian": "Sungguh?",
+        "audio": "audio/id/casual/rea-05-polite.mp3"
+      },
+      "registerNotes": "友達同士で使い、Beneran? も同じ意味です。年上の人には Sungguh? や Oh, ya? のほうが敬意が伝わります。",
+      "audio": "audio/id/casual/rea-05.mp3",
+      "tags": [
+        "聞き取り",
+        "驚き",
+        "くだけた言い方"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-06",
+      "indonesian": "Wah, hebat!",
+      "japanese": "わあ、すごい！",
+      "registerNotes": "うれしい驚きは、たいてい日本語の「わあ」のように wah で始まります：Wah, bagus. Wah, enak. hebat は、試験に合格した、レースを完走したなど、相手がやったことをほめる言葉です。",
+      "audio": "audio/id/rea-06.mp3",
+      "tags": [
+        "あいづち",
+        "ほめる"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-07",
+      "indonesian": "Aduh!",
+      "japanese": "痛っ！／しまった！",
+      "registerNotes": "痛い時にも、ちょっとした困りごとにも：Aduh, saya lupa（しまった、忘れてた）。Waduh はもっと強く、少しおどけた感じです。",
+      "audio": "audio/id/rea-07.mp3",
+      "tags": [
+        "あいづち",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-08",
+      "indonesian": "Ya ampun!",
+      "japanese": "なんてこと！",
+      "registerNotes": "聞いたばかりのことへのショック、落胆、あきれ：Ya ampun, mahal sekali（うそでしょ、すごく高い）。Astaga もよく使います。",
+      "cultureNote": "イスラム教徒の多くは同じ場面で Ya Allah と言います。イスラム教徒でなければ、Ya ampun が自然です。",
+      "audio": "audio/id/rea-08.mp3",
+      "tags": [
+        "あいづち",
+        "驚き"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-09",
+      "indonesian": "Kasihan.",
+      "japanese": "かわいそうに。／気の毒に。",
+      "registerNotes": "ほかの人の不運への同情：Kasihan, dia sakit lagi（かわいそうに、また具合が悪いんだって）。本当に不幸な出来事には Kasihan sekali。",
+      "pitfallNote": "つづりは kasihan ですが、ふだんは kasian と発音します。",
+      "audio": "audio/id/rea-09.mp3",
+      "tags": [
+        "あいづち",
+        "同情"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-10",
+      "indonesian": "Syukurlah.",
+      "japanese": "ああ、よかった。",
+      "registerNotes": "いい知らせにほっとした時に。誰かの体調がよくなった、飛行機が無事に着いた、など。syukur（神への感謝）から来ています。",
+      "cultureNote": "同じ場面で Alhamdulillah（神に感謝を）もよく聞きます。Syukurlah は誰が使っても自然です。",
+      "audio": "audio/id/rea-10.mp3",
+      "tags": [
+        "あいづち",
+        "安心"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-11",
+      "indonesian": "Sayang sekali.",
+      "japanese": "それは残念。",
+      "registerNotes": "軽い落胆にも本当の落胆にも：Sayang sekali, tokonya sudah tutup（残念、お店がもう閉まってる）。友達同士では Sayang banget。",
+      "pitfallNote": "sayang には「愛しい人」「大切に思う」という意味もありますが、このようにリアクションの最初に来る時は「残念」の意味だけです。",
+      "audio": "audio/id/rea-11.mp3",
+      "tags": [
+        "あいづち",
+        "同情"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-12",
+      "indonesian": "Terus?",
+      "japanese": "それで？",
+      "registerNotes": "語尾を上げて言い、話の続きをうながします。terus は話し言葉のふだんの言い方。ずっと年上の人の話を聞く時は、少していねいな Lalu? を。",
+      "audio": "audio/id/rea-12.mp3",
+      "tags": [
+        "聞き取り",
+        "話"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-13",
+      "indonesian": "Pantas saja.",
+      "japanese": "どうりで。",
+      "registerNotes": "急に納得がいった時に：Dia kerja sampai malam? Pantas saja capek.（夜まで働いてるの？どうりで疲れてるわけだ）。友達同士では Pantesan。",
+      "audio": "audio/id/rea-13.mp3",
+      "tags": [
+        "あいづち",
+        "聞き取り"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

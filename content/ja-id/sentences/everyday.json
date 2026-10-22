@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "id": "sentences-everyday",
+  "title": "毎日の文",
+  "description": "最初の単語でできる短い文：したいこと、持っている物、物のある場所、否定。「です」にあたる言葉も「は・を」のような助詞もなく、動詞の形が変わらないことに注目しましょう。",
+  "items": [
+    {
+      "id": "s-01",
+      "indonesian": "Saya mau makan.",
+      "japanese": "食べたいです。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "makan.",
+          "w": "w-makan"
+        }
+      ],
+      "registerNotes": "mau は動詞のすぐ前に置くだけで、日本語の「〜たい」のように動詞の形は変わりません。誰に言っても失礼にならない、ふつうの「〜したい」です。",
+      "audio": "audio/id/sentences/s-01.mp3",
+      "tags": [
+        "したいこと",
+        "食べ物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-02",
+      "indonesian": "Ini rumah saya.",
+      "japanese": "これが私の家です。",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "rumah ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "pitfallNote": "「です」にあたる言葉はなく、持ち主は物の後ろに来ます：rumah saya で「私の家」。日本語とは逆の順番です。",
+      "audio": "audio/id/sentences/s-02.mp3",
+      "tags": [
+        "家",
+        "これとあれ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-03",
+      "indonesian": "Dia tidak ada di rumah.",
+      "japanese": "彼女は家にいません。",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "tidak ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "di rumah.",
+          "w": "w-rumah"
+        }
+      ],
+      "registerNotes": "誰かを訪ねて留守だった時に聞く言葉。dia は彼も彼女も指すので、「彼は家にいません」でもあります。ada は人にも物にも使う「いる・ある」です。",
+      "audio": "audio/id/sentences/s-03.mp3",
+      "tags": [
+        "人",
+        "ada"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-04",
+      "indonesian": "Kamu tinggal di mana?",
+      "japanese": "どこに住んでるの？",
+      "chunks": [
+        {
+          "t": "Kamu ",
+          "w": "w-kamu"
+        },
+        {
+          "t": "tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di mana?",
+          "w": "w-di-mana"
+        }
+      ],
+      "registerNotes": "kamu は同年代か年下に。年上の人には、日本語で「あなた」の代わりに名前や肩書きで呼ぶように、Bapak や Ibu に置き換えます：Ibu tinggal di mana?",
+      "pitfallNote": "疑問詞は答えが入る場所、ここでは文の最後に来ます：Saya tinggal di Jakarta → Kamu tinggal di mana? 日本語の「どこに住んでる？」とは順番が逆です。",
+      "audio": "audio/id/sentences/s-04.mp3",
+      "tags": [
+        "質問",
+        "世間話"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-05",
+      "indonesian": "Ini teman saya, Rina.",
+      "japanese": "こちらは友達のリナです。",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "teman ",
+          "w": "w-teman"
+        },
+        {
+          "t": "saya, ",
+          "w": "w-saya"
+        },
+        {
+          "t": "Rina."
+        }
+      ],
+      "registerNotes": "人を紹介する時の形で、人にも ini（日本語の「こちら」）を使います。suami（夫）、istri（妻）、pacar（恋人）に入れ替えられます：Ini suami saya, Tom。",
+      "audio": "audio/id/sentences/s-05.mp3",
+      "tags": [
+        "人",
+        "自己紹介"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-06",
+      "indonesian": "Saya sudah makan.",
+      "japanese": "もう食べました。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "makan.",
+          "w": "w-makan"
+        }
+      ],
+      "pitfallNote": "日本語の「食べた」のように動詞の形は変わらず、sudah（もう）が過去を表します。",
+      "cultureNote": "Sudah makan?（ご飯食べた？）へのふつうの答え。誘いではなく、親しみのあるあいさつです。まだなら Belum（まだです）。",
+      "audio": "audio/id/sentences/s-06.mp3",
+      "tags": [
+        "食べ物",
+        "時の言葉"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-07",
+      "indonesian": "Itu bukan tas saya.",
+      "japanese": "それは私のかばんではありません。",
+      "chunks": [
+        {
+          "t": "Itu ",
+          "w": "w-itu"
+        },
+        {
+          "t": "bukan ",
+          "w": "w-bukan"
+        },
+        {
+          "t": "tas ",
+          "w": "w-tas"
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "pitfallNote": "名詞を打ち消すのは tidak ではなく bukan：Itu bukan tas saya。動詞なら tidak：Saya tidak tahu。日本語の「〜ではない」と「〜しない」の区別に似ています。",
+      "audio": "audio/id/sentences/s-07.mp3",
+      "tags": [
+        "否定",
+        "もの"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-08",
+      "indonesian": "Saya punya dua anak.",
+      "japanese": "子どもが二人います。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "punya "
+        },
+        {
+          "t": "dua "
+        },
+        {
+          "t": "anak.",
+          "w": "w-anak"
+        }
+      ],
+      "pitfallNote": "数は名詞の前に置くだけ：dua anak（子ども二人）。「人」のような助数詞も、anak-anak のような複数形も要りません。",
+      "audio": "audio/id/sentences/s-08.mp3",
+      "tags": [
+        "家族",
+        "数"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-09",
+      "indonesian": "Kakak saya kerja di toko.",
+      "japanese": "姉はお店で働いています。",
+      "chunks": [
+        {
+          "t": "Kakak ",
+          "w": "w-kakak"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "kerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "di toko.",
+          "w": "w-toko"
+        }
+      ],
+      "pitfallNote": "kakak は兄でも姉でも。インドネシア語は男女ではなく、年上か年下かで区別します（年下のきょうだいは adik）。",
+      "audio": "audio/id/sentences/s-09.mp3",
+      "tags": [
+        "家族",
+        "仕事"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-10",
+      "indonesian": "Besok saya tidak kerja.",
+      "japanese": "明日は仕事が休みです。",
+      "chunks": [
+        {
+          "t": "Besok ",
+          "w": "w-besok"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tidak ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "kerja.",
+          "w": "w-kerja"
+        }
+      ],
+      "registerNotes": "Besok（明日）を文頭に置けば時が決まるので、動詞は変わりません。tidak は打ち消す動詞のすぐ前に置きます。",
+      "audio": "audio/id/sentences/s-10.mp3",
+      "tags": [
+        "時間",
+        "仕事"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-11",
+      "indonesian": "HP saya di mana?",
+      "japanese": "私のスマホ、どこ？",
+      "chunks": [
+        {
+          "t": "HP ",
+          "w": "w-hp"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "di mana?",
+          "w": "w-di-mana"
+        }
+      ],
+      "registerNotes": "HP（「ハーペー」と読みます）は携帯電話のふつうの言い方。同じ形で何でも探せます：Kunci saya di mana?（私の鍵はどこ？）",
+      "audio": "audio/id/sentences/s-11.mp3",
+      "audioHint": "Ha pe saya di mana?",
+      "tags": [
+        "もの",
+        "質問"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-12",
+      "indonesian": "Bapak itu siapa?",
+      "japanese": "あの男の方はどなたですか？",
+      "chunks": [
+        {
+          "t": "Bapak ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "itu ",
+          "w": "w-itu"
+        },
+        {
+          "t": "siapa?",
+          "w": "w-siapa"
+        }
+      ],
+      "pitfallNote": "名詞の後ろの itu は「あの」：bapak itu（あの男の人）。前に置くと文になります：Itu bapak saya（あれは私の父です）。日本語とは逆の順番です。",
+      "audio": "audio/id/sentences/s-12.mp3",
+      "tags": [
+        "質問",
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-13",
+      "indonesian": "Mereka belum datang.",
+      "japanese": "あの人たちは、まだ来ていません。",
+      "chunks": [
+        {
+          "t": "Mereka ",
+          "w": "w-mereka"
+        },
+        {
+          "t": "belum ",
+          "w": "w-belum"
+        },
+        {
+          "t": "datang.",
+          "w": "w-datang"
+        }
+      ],
+      "pitfallNote": "belum は「まだ〜ない」で、いずれ来ることを前提にしています。Mereka tidak datang だと「来ない」になります。日本語の「まだ来ていない」と「来ない」と同じ区別です。",
+      "audio": "audio/id/sentences/s-13.mp3",
+      "tags": [
+        "時の言葉",
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "s-14",
+      "indonesian": "Saya tidak suka bangun pagi.",
+      "japanese": "早起きは苦手です。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tidak ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "suka ",
+          "w": "w-suka"
+        },
+        {
+          "t": "bangun ",
+          "w": "w-bangun"
+        },
+        {
+          "t": "pagi.",
+          "w": "w-pagi"
+        }
+      ],
+      "pitfallNote": "動詞は別の動詞のすぐ後に並べるだけで、「〜するのが」「〜こと」にあたる言葉は要りません：suka bangun（起きるのが好き）。bangun pagi は「朝起きる」、つまり早起きです。",
+      "audio": "audio/id/sentences/s-14.mp3",
+      "tags": [
+        "暮らし",
+        "好きなこと"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-15",
+      "indonesian": "Suami saya pulang jam enam.",
+      "japanese": "夫は6時に帰ってきます。",
+      "chunks": [
+        {
+          "t": "Suami ",
+          "w": "w-suami"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "pulang ",
+          "w": "w-pulang"
+        },
+        {
+          "t": "jam enam.",
+          "w": "w-jam"
+        }
+      ],
+      "pitfallNote": "jam enam は6時、enam jam は6時間。順番で意味が変わります。「〜に」にあたる言葉も要りません。",
+      "audio": "audio/id/sentences/s-15.mp3",
+      "tags": [
+        "家族",
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "s-16",
+      "indonesian": "Kita tunggu di sini, ya.",
+      "japanese": "ここで待ちましょうね。",
+      "chunks": [
+        {
+          "t": "Kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "tunggu ",
+          "w": "w-tunggu"
+        },
+        {
+          "t": "di sini, ",
+          "w": "w-di"
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "registerNotes": "kita は話し相手も含む「私たち」なので、これは提案になります。最後の ya でやわらかくなり、日本語の「〜ね」に近い働きをします。",
+      "audio": "audio/id/sentences/s-16.mp3",
+      "tags": [
+        "予定",
+        "代名詞"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

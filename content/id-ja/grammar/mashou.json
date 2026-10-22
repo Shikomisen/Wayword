@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-mashou",
+  "connector": "〜ましょう",
+  "gloss": "ayo; mau…?",
+  "title": "〜ましょう・〜ませんか — ayo, bagaimana kalau",
+  "pattern": "〜ましょう (ayo) / 〜ませんか (mau…?) / 〜ましょうか (perlu saya…?)",
+  "explanation": "Ketiganya berasal dari bentuk ます. {行|い}きましょう — ayo pergi. {行|い}きませんか — mau pergi? (harfiahnya “tidak pergi?”) adalah cara sopan untuk mengajak seseorang. {手伝|てつだ}いましょうか — perlu saya bantu? — menawarkan diri untuk melakukan sesuatu.",
+  "natural": "Ajak dengan ませんか, lalu setujui dengan ましょう: {映画|えいが}を{見|み}ませんか。 — いいですね、{見|み}ましょう。 Dengan teman, “ayo” yang santai adalah bentuk よう: {行|い}こう！",
+  "stiff": "Langsung mengajak dengan ましょう bisa terdengar memaksa, seolah sudah diputuskan. Tanyakan dulu dengan ませんか. “Ayo” dalam bahasa Indonesia terasa ramah, tapi ましょう di awal ajakan tidak selalu begitu.",
+  "examples": [
+    {
+      "id": "gx-mashou-1",
+      "japanese": "一緒に昼ご飯を食べませんか。",
+      "furigana": "{一緒|いっしょ}に{昼|ひる}ご{飯|はん}を{食|た}べませんか。",
+      "romaji": "issho ni hirugohan o tabemasen ka",
+      "indonesian": "Mau makan siang bersama?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{一緒|いっしょ}に",
+          "w": "w-issho"
+        },
+        {
+          "t": "{昼|ひる}ご{飯|はん}を",
+          "w": "w-hiru"
+        },
+        {
+          "t": "{食|た}べませんか。",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "{一緒|いっしょ}に{昼|ひる}ご{飯|はん}を{食|た}べ",
+        "answer": "ませんか",
+        "after": "。",
+        "options": [
+          "ませんか",
+          "ました",
+          "ません"
+        ],
+        "why": "Mengajak dengan sopan: ませんか."
+      },
+      "audio": "audio/ja/grammar/gx-mashou-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "mashou"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-mashou-2",
+      "japanese": "そろそろ帰りましょう。",
+      "furigana": "そろそろ{帰|かえ}りましょう。",
+      "romaji": "sorosoro kaerimashō",
+      "indonesian": "Sudah saatnya, ayo kita pulang.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "そろそろ"
+        },
+        {
+          "t": "{帰|かえ}りましょう。",
+          "w": "w-kaeru"
+        }
+      ],
+      "gap": {
+        "before": "そろそろ{帰|かえ}り",
+        "answer": "ましょう",
+        "after": "。",
+        "options": [
+          "ましょう",
+          "ませんか",
+          "ません"
+        ],
+        "why": "Ayo: ましょう."
+      },
+      "audio": "audio/ja/grammar/gx-mashou-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "mashou"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-mashou-3",
+      "japanese": "写真を撮りましょうか。",
+      "furigana": "{写真|しゃしん}を{撮|と}りましょうか。",
+      "romaji": "shashin o torimashō ka",
+      "indonesian": "Mau saya fotokan?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{写真|しゃしん}を",
+          "w": "w-shashin"
+        },
+        {
+          "t": "{撮|と}りましょうか。"
+        }
+      ],
+      "gap": {
+        "before": "{写真|しゃしん}を{撮|と}り",
+        "answer": "ましょうか",
+        "after": "。",
+        "options": [
+          "ましょうか",
+          "ませんか",
+          "ました"
+        ],
+        "why": "Menawarkan diri: ましょうか."
+      },
+      "audio": "audio/ja/grammar/gx-mashou-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "mashou"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-mashou-4",
+      "japanese": "週末、公園に行こう。",
+      "furigana": "{週末|しゅうまつ}、{公園|こうえん}に{行|い}こう。",
+      "romaji": "shūmatsu, kōen ni ikō",
+      "indonesian": "Akhir pekan ini, ayo ke taman.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{週末|しゅうまつ}、",
+          "w": "w-shuumatsu"
+        },
+        {
+          "t": "{公園|こうえん}に",
+          "w": "w-kouen"
+        },
+        {
+          "t": "{行|い}こう。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{週末|しゅうまつ}、{公園|こうえん}に{行|い}",
+        "answer": "こう",
+        "after": "。",
+        "options": [
+          "こう",
+          "きましょう",
+          "きたい"
+        ],
+        "ok": [
+          "きましょう"
+        ],
+        "note": "行きましょう juga “ayo” yang sama, hanya lebih sopan.",
+        "why": "“Ayo” yang santai: 行こう."
+      },
+      "audio": "audio/ja/grammar/gx-mashou-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "mashou"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

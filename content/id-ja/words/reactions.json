@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "id": "words-reactions",
+  "title": "Perasaan & tanggapan",
+  "description": "Apa yang kamu rasakan dan bagaimana kamu bereaksi: kaget, lega, gugup, kecewa, dan kata-kata untuk tetap bertahan.",
+  "items": [
+    {
+      "id": "w-odoroku",
+      "japanese": "驚く",
+      "furigana": "{驚|おどろ}く",
+      "indonesian": "terkejut, kaget",
+      "pos": "verb",
+      "forms": {
+        "masu": "{驚|おどろ}きます",
+        "te": "{驚|おどろ}いて"
+      },
+      "usage": "Dalam percakapan sehari-hari lebih sering びっくりする.",
+      "audio": "audio/ja/words/w-odoroku.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yorokobu",
+      "japanese": "喜ぶ",
+      "furigana": "{喜|よろこ}ぶ",
+      "indonesian": "senang, gembira",
+      "pos": "verb",
+      "forms": {
+        "masu": "{喜|よろこ}びます",
+        "te": "{喜|よろこ}んで"
+      },
+      "usage": "喜んで！ — “dengan senang hati!” — sebagai jawaban atas ajakan.",
+      "audio": "audio/ja/words/w-yorokobu.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-komaru",
+      "japanese": "困る",
+      "furigana": "{困|こま}る",
+      "indonesian": "kesulitan, bingung harus bagaimana",
+      "pos": "verb",
+      "forms": {
+        "masu": "{困|こま}ります",
+        "te": "{困|こま}って"
+      },
+      "usage": "困っています — saya sedang kesulitan — cara yang baik untuk minta tolong.",
+      "audio": "audio/ja/words/w-komaru.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kinchou",
+      "japanese": "緊張する",
+      "furigana": "{緊張|きんちょう}する",
+      "indonesian": "gugup, tegang",
+      "pos": "verb",
+      "forms": {
+        "masu": "{緊張|きんちょう}します",
+        "te": "{緊張|きんちょう}して"
+      },
+      "audio": "audio/ja/words/w-kinchou.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-anshin",
+      "japanese": "安心する",
+      "furigana": "{安心|あんしん}する",
+      "indonesian": "lega, merasa tenang",
+      "pos": "verb",
+      "forms": {
+        "masu": "{安心|あんしん}します",
+        "te": "{安心|あんしん}して"
+      },
+      "audio": "audio/ja/words/w-anshin.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kandou",
+      "japanese": "感動する",
+      "furigana": "{感動|かんどう}する",
+      "indonesian": "terharu, tersentuh",
+      "pos": "verb",
+      "forms": {
+        "masu": "{感動|かんどう}します",
+        "te": "{感動|かんどう}して"
+      },
+      "audio": "audio/ja/words/w-kandou.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gakkari",
+      "japanese": "がっかりする",
+      "indonesian": "kecewa",
+      "pos": "verb",
+      "forms": {
+        "masu": "がっかりします",
+        "te": "がっかりして"
+      },
+      "audio": "audio/ja/words/w-gakkari.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hotto",
+      "japanese": "ほっとする",
+      "indonesian": "merasa lega",
+      "pos": "verb",
+      "forms": {
+        "masu": "ほっとします",
+        "te": "ほっとして"
+      },
+      "usage": "Desah lega: ああ、ほっとした (aduh, lega rasanya).",
+      "audio": "audio/ja/words/w-hotto.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-wakuwaku",
+      "japanese": "わくわくする",
+      "indonesian": "senang dan tak sabar (menanti sesuatu)",
+      "pos": "verb",
+      "forms": {
+        "masu": "わくわくします",
+        "te": "わくわくして"
+      },
+      "audio": "audio/ja/words/w-wakuwaku.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-iraira",
+      "japanese": "いらいらする",
+      "indonesian": "kesal, jengkel",
+      "pos": "verb",
+      "forms": {
+        "masu": "いらいらします",
+        "te": "いらいらして"
+      },
+      "audio": "audio/ja/words/w-iraira.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bikkuri",
+      "japanese": "びっくりする",
+      "indonesian": "kaget, terkejut",
+      "pos": "verb",
+      "forms": {
+        "masu": "びっくりします",
+        "te": "びっくりして"
+      },
+      "usage": "びっくりした！ — kaget aku!",
+      "audio": "audio/ja/words/w-bikkuri.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kimochi",
+      "japanese": "気持ち",
+      "furigana": "{気持|きも}ち",
+      "indonesian": "perasaan",
+      "pos": "noun",
+      "usage": "気持ちいい — enak rasanya, nyaman (berendam air panas, angin sepoi-sepoi).",
+      "audio": "audio/ja/words/w-kimochi.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kibun",
+      "japanese": "気分",
+      "furigana": "{気分|きぶん}",
+      "indonesian": "suasana hati; kondisi badan",
+      "pos": "noun",
+      "usage": "気分が悪い — saya merasa tidak enak badan (mual). 気分転換 — ganti suasana.",
+      "audio": "audio/ja/words/w-kibun.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-fuan",
+      "japanese": "不安",
+      "furigana": "{不安|ふあん}",
+      "indonesian": "cemas, khawatir",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-fuan.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-jishin",
+      "japanese": "自信",
+      "furigana": "{自信|じしん}",
+      "indonesian": "rasa percaya diri",
+      "pos": "noun",
+      "usage": "自信がない — saya kurang percaya diri. (Bunyi yang sama, 地震, berarti gempa bumi.)",
+      "audio": "audio/ja/words/w-jishin.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-zannen",
+      "japanese": "残念",
+      "furigana": "{残念|ざんねん}",
+      "indonesian": "sayang sekali",
+      "pos": "na-adjective",
+      "usage": "残念ですね — sayang sekali, ya — saat rencana batal.",
+      "audio": "audio/ja/words/w-zannen.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-daijoubu",
+      "japanese": "大丈夫",
+      "furigana": "{大丈夫|だいじょうぶ}",
+      "indonesian": "tidak apa-apa, baik-baik saja",
+      "pos": "na-adjective",
+      "usage": "Juga dipakai untuk menolak dengan sopan: 大丈夫です bisa berarti “tidak usah, terima kasih”.",
+      "audio": "audio/ja/words/w-daijoubu.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kininaru",
+      "japanese": "気になる",
+      "furigana": "{気|き}になる",
+      "indonesian": "kepikiran; penasaran",
+      "pos": "verb",
+      "forms": {
+        "masu": "{気|き}になります",
+        "te": "{気|き}になって"
+      },
+      "audio": "audio/ja/words/w-kininaru.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kiwotsukeru",
+      "japanese": "気をつける",
+      "furigana": "{気|き}をつける",
+      "indonesian": "berhati-hati, menjaga diri",
+      "pos": "verb",
+      "forms": {
+        "masu": "{気|き}をつけます",
+        "te": "{気|き}をつけて"
+      },
+      "usage": "気をつけて！ — hati-hati, ya! — saat seseorang pergi atau bepergian.",
+      "audio": "audio/ja/words/w-kiwotsukeru.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gaman",
+      "japanese": "我慢する",
+      "furigana": "{我慢|がまん}する",
+      "indonesian": "menahan diri, bersabar",
+      "pos": "verb",
+      "forms": {
+        "masu": "{我慢|がまん}します",
+        "te": "{我慢|がまん}して"
+      },
+      "audio": "audio/ja/words/w-gaman.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-koishii",
+      "japanese": "恋しい",
+      "furigana": "{恋|こい}しい",
+      "indonesian": "rindu, kangen (pada seseorang, suatu tempat)",
+      "pos": "i-adjective",
+      "usage": "Rasa rindu yang kuat dan hangat: 日本の食べ物が恋しい (kangen makanan Jepang).",
+      "audio": "audio/ja/words/w-koishii.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-urayamashii",
+      "japanese": "羨ましい",
+      "furigana": "{羨|うらや}ましい",
+      "indonesian": "iri; “enaknya!”",
+      "pos": "i-adjective",
+      "usage": "いいなあ、羨ましい！ — wah, enaknya, jadi iri!",
+      "audio": "audio/ja/words/w-urayamashii.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shiawase",
+      "japanese": "幸せ",
+      "furigana": "{幸|しあわ}せ",
+      "indonesian": "bahagia (sungguh-sungguh), beruntung",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-shiawase.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-saikou",
+      "japanese": "最高",
+      "furigana": "{最高|さいこう}",
+      "indonesian": "terbaik, luar biasa",
+      "pos": "na-adjective",
+      "usage": "最高！ — mantap!",
+      "audio": "audio/ja/words/w-saikou.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-saiaku",
+      "japanese": "最悪",
+      "furigana": "{最悪|さいあく}",
+      "indonesian": "terburuk, parah sekali",
+      "pos": "na-adjective",
+      "audio": "audio/ja/words/w-saiaku.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

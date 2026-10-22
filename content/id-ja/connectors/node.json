@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "id": "con-node",
+  "connector": "ので",
+  "gloss": "karena (lebih halus)",
+  "title": "ので — karena (lebih halus)",
+  "pattern": "alasan ので、akibat",
+  "explanation": "ので juga memberi alasan, tapi menyajikannya sebagai fakta biasa, bukan sebagai argumenmu, jadi terdengar lebih halus dan sopan. Sama seperti から, ので ada di akhir alasan, bukan di awal seperti “karena”. Sesudah kata benda atau kata sifat な, ので menjadi なので: {雨|あめ}なので, {静|しず}かなので. Sesudah bentuk lampau, ので langsung menempel: {静|しず}かだったので.",
+  "natural": "Untuk menjelaskan sesuatu dengan sopan: minta maaf, meminta sesuatu, memberi alasan di tempat kerja atau kepada keluarga pasanganmu. Dalam obrolan santai juga boleh, kalau kamu ingin terdengar lembut.",
+  "stiff": "Dengan pasangan, ので untuk setiap alasan bisa terasa agak berjarak, seperti alasan resmi; から lebih hangat di antara orang dekat. Untuk pendapat yang tegas dan perintah, から lebih cocok: {危|あぶ}ないから、やめて！ (bahaya, berhenti!)",
+  "examples": [
+    {
+      "id": "cx-node-1",
+      "japanese": "電車が遅れたので、遅くなりました。",
+      "furigana": "{電車|でんしゃ}が{遅|おく}れたので、{遅|おそ}くなりました。",
+      "indonesian": "Keretanya terlambat, jadi saya datang terlambat.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{電車|でんしゃ}が",
+          "w": "w-densha"
+        },
+        {
+          "t": "{遅|おく}れたので、",
+          "w": "w-okureru"
+        },
+        {
+          "t": "{遅|おそ}く"
+        },
+        {
+          "t": "なりました。"
+        }
+      ],
+      "gap": {
+        "before": "{電車|でんしゃ}が{遅|おく}れた",
+        "answer": "ので",
+        "after": "、{遅|おそ}くなりました。",
+        "options": [
+          "ので",
+          "から",
+          "のに",
+          "ながら"
+        ],
+        "ok": [
+          "から"
+        ],
+        "note": "から juga bisa, tapi saat minta maaf, ので tidak terdengar seperti cari-cari alasan."
+      },
+      "combine": {
+        "a": "{電車|でんしゃ}が{遅|おく}れました。",
+        "b": "{遅|おそ}くなりました。",
+        "distractors": [
+          "{遅|おく}れたけど、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-node-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "node"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-node-2",
+      "japanese": "熱があるので、今日は休みます。",
+      "furigana": "{熱|ねつ}があるので、{今日|きょう}は{休|やす}みます。",
+      "indonesian": "Saya demam, jadi hari ini saya tidak masuk.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{熱|ねつ}が",
+          "w": "w-netsu"
+        },
+        {
+          "t": "あるので、"
+        },
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{休|やす}みます。",
+          "w": "w-yasumu"
+        }
+      ],
+      "gap": {
+        "before": "{熱|ねつ}がある",
+        "answer": "ので",
+        "after": "、{今日|きょう}は{休|やす}みます。",
+        "options": [
+          "ので",
+          "けど",
+          "ながら"
+        ]
+      },
+      "alsoOrders": [
+        [
+          2,
+          0,
+          1,
+          3
+        ]
+      ],
+      "combine": {
+        "a": "{熱|ねつ}があります。",
+        "b": "{今日|きょう}は{休|やす}みます。",
+        "distractors": [
+          "あるけど、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-node-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "node"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-node-3",
+      "japanese": "明日は雨なので、傘を持っていってね。",
+      "furigana": "{明日|あした}は{雨|あめ}なので、{傘|かさ}を{持|も}っていってね。",
+      "indonesian": "Besok hujan, jadi bawa payung, ya.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{雨|あめ}なので、",
+          "w": "w-ame"
+        },
+        {
+          "t": "{傘|かさ}を",
+          "w": "w-kasa"
+        },
+        {
+          "t": "{持|も}っていってね。"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}は{雨|あめ}",
+        "answer": "なので",
+        "after": "、{傘|かさ}を{持|も}っていってね。",
+        "options": [
+          "なので",
+          "ので",
+          "だので"
+        ],
+        "why": "Sesudah kata benda atau kata sifat な, ので butuh な: 雨なので, 静かなので."
+      },
+      "combine": {
+        "a": "{明日|あした}は{雨|あめ}だ。",
+        "b": "{傘|かさ}を{持|も}っていってね。",
+        "distractors": [
+          "{雨|あめ}ので、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-node-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "node"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-node-4",
+      "japanese": "静かだったので、よく眠れました。",
+      "furigana": "{静|しず}かだったので、よく{眠|ねむ}れました。",
+      "indonesian": "Suasananya tenang, jadi saya bisa tidur nyenyak.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{静|しず}かだったので、",
+          "w": "w-shizuka"
+        },
+        {
+          "t": "よく"
+        },
+        {
+          "t": "{眠|ねむ}れました。"
+        }
+      ],
+      "gap": {
+        "before": "{静|しず}かだった",
+        "answer": "ので",
+        "after": "、よく{眠|ねむ}れました。",
+        "options": [
+          "ので",
+          "なので",
+          "のに"
+        ],
+        "why": "Sesudah だった, ので langsung menempel. なので hanya untuk bentuk sekarang: 静かなので."
+      },
+      "audio": "audio/ja/connectors/cx-node-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "node"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

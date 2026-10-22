@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "clinic",
+  "title": "クリニックで",
+  "category": "doctor",
+  "setting": "数日前から熱と咳が続いているので、滞在先の近くのクリニック（klinik）に来ました。医者に名前を呼ばれて、診察室に入ります。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "doctor",
+      "indonesian": "Silakan duduk. Keluhannya apa?",
+      "japanese": "どうぞおかけください。どうされましたか？",
+      "audio": "audio/id/scenario/clinic-n1.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Saya demam dan batuk, Dok.",
+          "japanese": "先生、熱と咳があるんです。",
+          "feedback": "はっきり伝わります。saya のすぐあとに症状を言い、医者には Dok（先生）と呼びかけます。",
+          "next": "n2"
+        },
+        {
+          "phraseId": "doc-03",
+          "quality": "awkward",
+          "feedback": "masuk angin は誰でも知っている言葉ですが、「なんだか調子が悪い」をざっくり指す昔ながらの言い方です。医者には症状を伝えて Saya demam dan batuk. と言いましょう。",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Saya punya demam dan batuk.",
+          "japanese": "私は熱と咳を持っています。",
+          "feedback": "「熱がある」をそのまま訳した形です。症状に punya は使わず、saya のあとに直接置いて Saya demam dan batuk. と言います。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "doctor",
+      "indonesian": "Sudah berapa lama?",
+      "japanese": "どのくらい続いていますか？",
+      "audio": "audio/id/scenario/clinic-n2.mp3",
+      "options": [
+        {
+          "phraseId": "doc-07",
+          "quality": "good",
+          "feedback": "sudah に期間を続けると、「もう〜になる（今も続いている）」という意味になります。",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Demamnya sejak Senin, Dok. Batuknya baru kemarin.",
+          "japanese": "熱は月曜からです。咳は昨日出始めたばかりです。",
+          "feedback": "曜日の前に sejak（〜から）、「〜したばかり」の baru。正確で役に立つ答え方です。日本語の「月曜から」とは逆に、sejak は曜日の前に来ます。",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya demam tiga hari yang lalu.",
+          "japanese": "3日前に熱がありました。",
+          "feedback": "これだと、熱は3日前のことで、もう治ったように聞こえます。今も続いているなら Sudah tiga hari（もう3日になります）です。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "doctor",
+      "indonesian": "Ada alergi obat?",
+      "japanese": "薬のアレルギーはありますか？",
+      "audio": "audio/id/scenario/clinic-n3.mp3",
+      "options": [
+        {
+          "phraseId": "doc-11",
+          "quality": "good",
+          "feedback": "alergi のすぐあとに薬の名前を置き、「〜に」にあたる語はいりません。日本語の「ペニシリンアレルギー」とは順番が逆です。薬を出される前に必ず伝えましょう。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Tidak ada, Dok.",
+          "japanese": "ありません。",
+          "feedback": "ada で聞かれたら ada か tidak ada で答えます。日本語の「ありますか？」「ありません」と同じで、はっきりした答えです。",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Saya alergi ke penisilin.",
+          "japanese": "ペニシリンへのアレルギーがあります。",
+          "feedback": "ke は行き先を表す「〜へ」です。alergi のすぐあとに物を置いて alergi penisilin と言います。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "doctor",
+      "indonesian": "Tenggorokannya radang. Sepertinya infeksi virus.",
+      "japanese": "喉が炎症を起こしていますね。ウイルス感染のようです。",
+      "audio": "audio/id/scenario/clinic-n4.mp3",
+      "options": [
+        {
+          "phraseId": "doc-12",
+          "quality": "good",
+          "feedback": "もっともな質問です。Dok を付けるとていねいになります。",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Perlu antibiotik, Dok?",
+          "japanese": "抗生物質は必要ですか？",
+          "feedback": "Perlu …? は「〜は必要ですか？」と聞く形。薬をどっさり渡される前に聞いておくといい質問です。",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya mau antibiotik.",
+          "japanese": "抗生物質がほしいです。",
+          "feedback": "医者に対して直接すぎるうえ、抗生物質はウイルスには効きません。Perlu antibiotik, Dok? と聞きましょう。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "doctor",
+      "indonesian": "Tidak serius, dan tidak perlu antibiotik. Ini obat penurun panas dan obat batuk. Diminum tiga kali sehari, sesudah makan.",
+      "japanese": "重いものではありませんし、抗生物質もいりません。こちらが解熱剤、こちらが咳止めです。1日3回、食後に飲んでください。",
+      "audio": "audio/id/scenario/clinic-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Tiga kali sehari, sesudah makan, ya, Dok?",
+          "japanese": "1日3回、食後ですね？",
+          "feedback": "飲み方を繰り返すのが、聞き間違いを防ぐいちばんの方法です。",
+          "next": "n6"
+        },
+        {
+          "phraseId": "doc-09",
+          "quality": "awkward",
+          "feedback": "医者は今 sesudah makan（食後）と言いました。sebelum（〜の前）と sesudah（〜のあと）を聞き分けて、繰り返して確認しましょう。",
+          "next": "n6"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Kalau demamnya tidak turun, bagaimana, Dok?",
+          "japanese": "熱が下がらなかったら、どうすればいいですか？",
+          "feedback": "Kalau … bagaimana? は「もし〜だったら、どうすれば？」と聞く形。帰る前に聞いておくと安心です。",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "doctor",
+      "indonesian": "Banyak istirahat dan minum air putih, ya. Kalau tiga hari lagi belum sembuh, kontrol lagi.",
+      "japanese": "しっかり休んで、水をたくさん飲んでくださいね。3日たっても治らなかったら、また来てください。",
+      "audio": "audio/id/scenario/clinic-n6.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Baik, Dok. Terima kasih.",
+          "japanese": "わかりました。ありがとうございます。",
+          "feedback": "baik（わかりました）は、指示をきちんと受け取ったことを示すていねいな返事です。",
+          "next": "end"
+        },
+        {
+          "phraseId": "doc-13",
+          "quality": "good",
+          "feedback": "職場に出す必要があれば、会計の前に今頼みましょう。クリニックは慣れています。",
+          "next": "end"
+        },
+        {
+          "phraseId": "rea-02",
+          "quality": "awkward",
+          "feedback": "早口で言うと、日本語の「はいはい」と同じで「わかってますよ」に聞こえます。Baik, Dok とお礼を言えば、ちゃんと聞いていたことが伝わります。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "japanese": "お大事に。症状は saya のすぐあと（Saya demam、punya はなし）、期間は sudah か sejak、alergi のすぐあとに原因の物、飲み方は diminum … kali sehari。医者は Dok と呼び、指示は繰り返して確認しましょう。",
+      "end": true,
+      "options": []
+    }
+  }
+}

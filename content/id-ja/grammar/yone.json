@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-yone",
+  "connector": "よ・ね",
+  "gloss": "akhiran: lho, ya, kan?",
+  "title": "よ・ね・よね — memberi tahu, berbagi, memastikan",
+  "pattern": "kalimat + よ (memberi tahu) / ね (sama-sama merasa) / よね (kan?)",
+  "explanation": "Akhiran kecil ini membawa rasa percakapan, seperti “lho”, “ya”, dan “kan” dalam bahasa Indonesia. よ memberi tahu sesuatu yang mungkin belum diketahui lawan bicara: これ、おいしいよ — ini enak, lho. ね berbagi perasaan, atau memastikan lawan bicara setuju: いい{天気|てんき}ですね — cuacanya bagus, ya. よね memastikan sesuatu yang cukup kamu yakini: {明日|あした}、{休|やす}みだよね？ — besok libur, kan?",
+  "natural": "ね adalah perekat basa-basi; そうですね (“betul, ya”) adalah jawaban klasiknya.",
+  "stiff": "よ yang tegas kepada orang yang lebih tinggi kedudukannya bisa terdengar seperti mengoreksi. Dan ね untuk hal yang hanya kamu yang tahu, seperti namamu sendiri, terdengar aneh.",
+  "examples": [
+    {
+      "id": "gx-yone-1",
+      "japanese": "これ、すごくおいしいよ。",
+      "furigana": "これ、すごくおいしいよ。",
+      "indonesian": "Ini enak sekali, lho.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "これ、",
+          "w": "w-kore"
+        },
+        {
+          "t": "すごくおいしい"
+        },
+        {
+          "t": "よ。"
+        }
+      ],
+      "gap": {
+        "before": "これ、すごくおいしい",
+        "answer": "よ",
+        "after": "。",
+        "options": [
+          "よ",
+          "ね",
+          "か"
+        ],
+        "why": "Memberi tahu hal baru: よ."
+      },
+      "audio": "audio/ja/grammar/gx-yone-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "yone"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-yone-2",
+      "japanese": "今日は寒いですね。",
+      "furigana": "{今日|きょう}は{寒|さむ}いですね。",
+      "indonesian": "Hari ini dingin, ya.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{寒|さむ}いです",
+          "w": "w-samui"
+        },
+        {
+          "t": "ね。"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}は{寒|さむ}いです",
+        "answer": "ね",
+        "after": "。",
+        "options": [
+          "ね",
+          "よ",
+          "か"
+        ],
+        "why": "Berbagi apa yang kalian berdua rasakan: ね."
+      },
+      "audio": "audio/ja/grammar/gx-yone-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "yone"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-yone-3",
+      "japanese": "明日、休みだよね？",
+      "furigana": "{明日|あした}、{休|やす}みだよね？",
+      "indonesian": "Besok libur, kan?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{明日|あした}、",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{休|やす}みだ",
+          "w": "w-yasumi"
+        },
+        {
+          "t": "よね？"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}、{休|やす}みだ",
+        "answer": "よね",
+        "after": "？",
+        "options": [
+          "よね",
+          "ね",
+          "よ"
+        ],
+        "ok": [
+          "ね"
+        ],
+        "note": "ね juga bisa; よね terdengar sedikit lebih yakin bahwa kamu benar.",
+        "why": "Memastikan hal yang kamu kira sudah kamu tahu: よね."
+      },
+      "audio": "audio/ja/grammar/gx-yone-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "yone"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-yone-4",
+      "japanese": "駅はあっちですよ。",
+      "furigana": "{駅|えき}はあっちですよ。",
+      "indonesian": "Stasiunnya di sebelah sana.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{駅|えき}は",
+          "w": "w-eki"
+        },
+        {
+          "t": "あっちです"
+        },
+        {
+          "t": "よ。"
+        }
+      ],
+      "gap": {
+        "before": "{駅|えき}はあっちです",
+        "answer": "よ",
+        "after": "。",
+        "options": [
+          "よ",
+          "ね",
+          "か"
+        ],
+        "why": "Memberi tahu sesuatu yang belum diketahui orang: よ."
+      },
+      "audio": "audio/ja/grammar/gx-yone-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "yone"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

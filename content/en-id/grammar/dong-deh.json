@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-dong-deh",
+  "connector": "dong, deh, kan",
+  "gloss": "come on; OK then; right?",
+  "title": "dong, deh and kan",
+  "pattern": "request + dong (come on) · decision + deh (OK then) · Kan … (you know) · …, kan? (right?)",
+  "explanation": "dong adds a friendly push to a request, or an 'obviously': Ayo dong! (Oh, come on!), Cerita dong (Go on, tell me), Iya dong (Of course!). deh marks giving in or making up your mind: Ya udah, deh (OK then, fine), Aku ikut deh (OK, I'll come). It also sweetens a suggestion: Coba deh (Go on, try it). kan, short for bukan, looks for agreement: at the end it's 'right?' (Besok libur, kan?), and at the start it's 'you know' or 'after all' (Kan sudah saya bilang, I told you, didn't I).",
+  "natural": "All three belong to relaxed talk with friends, a partner and family your own age. kan is the most widely usable: a soft …, kan? to check a fact is fine with almost anyone.",
+  "stiff": "dong in a request to someone older or senior sounds pushy, even rude: ask Bisa tolong …? instead. A sharp Kan sudah saya bilang! is a told-you-so, and a sighed deh can sound like you're giving in reluctantly.",
+  "examples": [
+    {
+      "id": "gx-dong-deh-1",
+      "register": "casual",
+      "indonesian": "Cerita dong, gimana liburannya?",
+      "english": "Go on, tell me, how was the holiday?",
+      "chunks": [
+        {
+          "t": "Cerita "
+        },
+        {
+          "t": "dong, "
+        },
+        {
+          "t": "gimana ",
+          "w": "w-bagaimana"
+        },
+        {
+          "t": "liburannya?",
+          "w": "w-liburan"
+        }
+      ],
+      "gap": {
+        "before": "Cerita ",
+        "answer": "dong",
+        "after": ", gimana liburannya?",
+        "options": [
+          "dong",
+          "deh",
+          "kok"
+        ],
+        "why": "dong gives a request a friendly push: 'go on, tell me'."
+      },
+      "registerNotes": "Casual, to a friend just back from a trip. Gimana is the spoken bagaimana.",
+      "audio": "audio/id/grammar/gx-dong-deh-1.mp3",
+      "tags": [
+        "grammar",
+        "dong-deh",
+        "casual"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-dong-deh-2",
+      "register": "casual",
+      "indonesian": "Oke deh, aku ikut.",
+      "english": "OK then, I'll come.",
+      "chunks": [
+        {
+          "t": "Oke "
+        },
+        {
+          "t": "deh, "
+        },
+        {
+          "t": "aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "ikut."
+        }
+      ],
+      "gap": {
+        "before": "Oke ",
+        "answer": "deh",
+        "after": ", aku ikut.",
+        "options": [
+          "deh",
+          "dong",
+          "kok"
+        ],
+        "why": "deh marks a decision you've just come round to: 'OK then'."
+      },
+      "registerNotes": "Casual, after a friend has talked you into something. Politely: Baik, saya ikut.",
+      "audio": "audio/id/grammar/gx-dong-deh-2.mp3",
+      "tags": [
+        "grammar",
+        "dong-deh",
+        "casual"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-dong-deh-3",
+      "indonesian": "Besok tokonya tutup, kan?",
+      "english": "The shop's closed tomorrow, isn't it?",
+      "chunks": [
+        {
+          "t": "Besok ",
+          "w": "w-besok"
+        },
+        {
+          "t": "tokonya ",
+          "w": "w-toko"
+        },
+        {
+          "t": "tutup, "
+        },
+        {
+          "t": "kan?"
+        }
+      ],
+      "gap": {
+        "before": "Besok tokonya tutup, ",
+        "answer": "kan",
+        "after": "?",
+        "options": [
+          "kan",
+          "bukan",
+          "dong"
+        ],
+        "ok": [
+          "bukan"
+        ],
+        "note": "Bukan, the full form kan comes from, is right too, and a little more careful.",
+        "why": "kan at the end checks something you think is true: 'isn't it?'."
+      },
+      "audio": "audio/id/grammar/gx-dong-deh-3.mp3",
+      "tags": [
+        "grammar",
+        "dong-deh"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-dong-deh-4",
+      "register": "casual",
+      "indonesian": "Kan sudah saya bilang, hari Minggu pasti ramai.",
+      "english": "I told you, didn't I? It's always packed on Sundays.",
+      "chunks": [
+        {
+          "t": "Kan "
+        },
+        {
+          "t": "sudah saya bilang, ",
+          "w": "w-saya"
+        },
+        {
+          "t": "hari Minggu ",
+          "w": "w-hari-minggu"
+        },
+        {
+          "t": "pasti ramai.",
+          "w": "w-ramai"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kan",
+        "after": " sudah saya bilang, hari Minggu pasti ramai.",
+        "options": [
+          "Kan",
+          "Dong",
+          "Deh"
+        ],
+        "why": "kan at the start means 'you know, as I said'."
+      },
+      "pitfallNote": "With a laugh this is teasing; said sharply it's a told-you-so, so think twice before using it on someone older.",
+      "audio": "audio/id/grammar/gx-dong-deh-4.mp3",
+      "tags": [
+        "grammar",
+        "dong-deh",
+        "casual"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

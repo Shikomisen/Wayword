@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-noun-adj",
+  "connector": "rumah besar",
+  "gloss": "名詞が先、形容詞は後",
+  "title": "rumah besar — 名詞が先",
+  "pattern": "名詞 + 形容詞: rumah besar · yang + 形容詞: yang besar",
+  "explanation": "形容詞は名詞の後に来ます。日本語とは逆です：rumah besar は「大きい家」、kopi panas は「熱いコーヒー」、orang baik は「いい人」。2つ付く時も両方とも名詞の後：mobil merah baru（新しい赤い車）。ini と itu は一番最後：rumah besar itu（あの大きい家）。いくつかの中から1つを選ぶ時は、日本語の「〜の」にあたる yang を使います：yang besar は「大きいの」、Saya mau yang merah は「赤いのがほしいです」。",
+  "natural": "名詞が分かりきっているお店やワルンでは、yang が大活躍します：Yang ini, Bu（これをください）、Mau yang pedas atau tidak?（辛いのにしますか、辛くないのにしますか）",
+  "stiff": "日本語の順番で形容詞を先に言うのはまちがいです：besar rumah、panas kopi。yang も毎回いるわけではありません。rumah besar はただの「大きい家」、rumah yang besar は（小さい家ではなく）「大きいほうの家」を選び出す言い方です。",
+  "examples": [
+    {
+      "id": "gx-noun-adj-1",
+      "indonesian": "Saya mau kopi panas.",
+      "japanese": "ホットコーヒーをください。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "kopi ",
+          "w": "w-kopi"
+        },
+        {
+          "t": "panas.",
+          "w": "w-panas"
+        }
+      ],
+      "gap": {
+        "before": "Saya mau ",
+        "answer": "kopi panas",
+        "after": ".",
+        "options": [
+          "kopi panas",
+          "panas kopi"
+        ],
+        "why": "形容詞は名詞の後。「ホットコーヒー」とは逆で kopi panas。"
+      },
+      "audio": "audio/id/grammar/gx-noun-adj-1.mp3",
+      "tags": [
+        "文法",
+        "名詞と形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-noun-adj-2",
+      "indonesian": "Kami tinggal di rumah kecil.",
+      "japanese": "私たちは小さい家に住んでいます。",
+      "chunks": [
+        {
+          "t": "Kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di ",
+          "w": "w-di"
+        },
+        {
+          "t": "rumah ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "kecil.",
+          "w": "w-kecil"
+        }
+      ],
+      "gap": {
+        "before": "Kami tinggal di ",
+        "answer": "rumah kecil",
+        "after": ".",
+        "options": [
+          "rumah kecil",
+          "kecil rumah"
+        ],
+        "why": "名詞が先、どんな様子かは後：rumah kecil。"
+      },
+      "audio": "audio/id/grammar/gx-noun-adj-2.mp3",
+      "tags": [
+        "文法",
+        "名詞と形容詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-noun-adj-3",
+      "indonesian": "Tas besar itu punya saya.",
+      "japanese": "あの大きいかばんは私のです。",
+      "chunks": [
+        {
+          "t": "Tas ",
+          "w": "w-tas"
+        },
+        {
+          "t": "besar ",
+          "w": "w-besar"
+        },
+        {
+          "t": "itu ",
+          "w": "w-itu"
+        },
+        {
+          "t": "punya "
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Tas besar itu",
+        "after": " punya saya.",
+        "options": [
+          "Tas besar itu",
+          "Tas itu besar",
+          "Itu tas besar"
+        ],
+        "why": "itu は説明全体の後：tas besar itu で「あの大きいかばん」。"
+      },
+      "audio": "audio/id/grammar/gx-noun-adj-3.mp3",
+      "tags": [
+        "文法",
+        "名詞と形容詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-noun-adj-4",
+      "indonesian": "Saya mau yang kecil.",
+      "japanese": "小さいのをください。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "yang "
+        },
+        {
+          "t": "kecil.",
+          "w": "w-kecil"
+        }
+      ],
+      "gap": {
+        "before": "Saya mau ",
+        "answer": "yang",
+        "after": " kecil.",
+        "options": [
+          "yang",
+          "itu",
+          "ini"
+        ],
+        "why": "1つを選ぶのは yang：yang kecil で「小さいの」。"
+      },
+      "audio": "audio/id/grammar/gx-noun-adj-4.mp3",
+      "tags": [
+        "文法",
+        "名詞と形容詞"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

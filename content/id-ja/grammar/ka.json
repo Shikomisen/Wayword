@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ka",
+  "connector": "か",
+  "gloss": "membuat pertanyaan",
+  "title": "か — bertanya",
+  "pattern": "… ですか / kata tanya … か",
+  "explanation": "Tambahkan か di akhir kalimat sopan untuk membuatnya jadi pertanyaan: {学生|がくせい}です → {学生|がくせい}ですか. か bekerja seperti “apakah”, tapi letaknya di akhir, dan urutan kata tidak berubah. Kata tanya ditaruh di tempat jawabannya nanti: {駅|えき}はどこですか — stasiunnya di mana? ({駅|えき}はあそこです — di sebelah sana.)",
+  "natural": "Dalam bahasa santai, buang か dan naikkan nada suaramu, sama seperti dalam bahasa Indonesia: {行|い}く？ — kamu pergi? か dalam bahasa santai bisa terdengar ketus.",
+  "stiff": "Jangan pindahkan kata tanya ke depan, seperti “Di mana stasiunnya?”: どこですか、{駅|えき}は terdengar aneh. Pertahankan urutannya, seperti “Stasiunnya di mana?”: {駅|えき}はどこですか.",
+  "examples": [
+    {
+      "id": "gx-ka-1",
+      "japanese": "トイレはどこですか。",
+      "furigana": "{トイレ|といれ}はどこですか。",
+      "romaji": "toire wa doko desu ka",
+      "indonesian": "Toiletnya di mana?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{トイレ|といれ}は",
+          "w": "w-toire"
+        },
+        {
+          "t": "どこ",
+          "w": "w-doko"
+        },
+        {
+          "t": "ですか。"
+        }
+      ],
+      "gap": {
+        "before": "{トイレ|といれ}はどこです",
+        "answer": "か",
+        "after": "。",
+        "options": [
+          "か",
+          "よ",
+          "ね"
+        ],
+        "why": "Pertanyaan sopan diakhiri か."
+      },
+      "audio": "audio/ja/grammar/gx-ka-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "ka"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ka-2",
+      "japanese": "仕事は何時に終わりますか。",
+      "furigana": "{仕事|しごと}は{何時|なんじ}に{終|お}わりますか。",
+      "romaji": "shigoto wa nanji ni owarimasu ka",
+      "indonesian": "Kerja Anda selesai jam berapa?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{仕事|しごと}は",
+          "w": "w-shigoto"
+        },
+        {
+          "t": "{何時|なんじ}に"
+        },
+        {
+          "t": "{終|お}わりますか。",
+          "w": "w-owaru"
+        }
+      ],
+      "gap": {
+        "before": "{仕事|しごと}は{何時|なんじ}に{終|お}わります",
+        "answer": "か",
+        "after": "。",
+        "options": [
+          "か",
+          "ね",
+          "よ"
+        ],
+        "why": "Pertanyaan: tambahkan か."
+      },
+      "audio": "audio/ja/grammar/gx-ka-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "ka"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-ka-3",
+      "japanese": "これは何ですか。",
+      "furigana": "これは{何|なん}ですか。",
+      "romaji": "kore wa nan desu ka",
+      "indonesian": "Ini apa?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "これは",
+          "w": "w-kore"
+        },
+        {
+          "t": "{何|なん}",
+          "w": "w-nani"
+        },
+        {
+          "t": "ですか。"
+        }
+      ],
+      "gap": {
+        "before": "これは",
+        "answer": "{何|なん}",
+        "after": "ですか。",
+        "options": [
+          "{何|なん}",
+          "{誰|だれ}",
+          "どこ"
+        ],
+        "why": "Benda itu apa: 何 (dibaca なん sebelum です)."
+      },
+      "audio": "audio/ja/grammar/gx-ka-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "ka"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ka-4",
+      "japanese": "これ、誰が作ったの？",
+      "furigana": "これ、{誰|だれ}が{作|つく}ったの？",
+      "romaji": "kore, dare ga tsukutta no?",
+      "indonesian": "Siapa yang membuat ini?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "これ、",
+          "w": "w-kore"
+        },
+        {
+          "t": "{誰|だれ}が",
+          "w": "w-dare"
+        },
+        {
+          "t": "{作|つく}ったの？",
+          "w": "w-tsukuru"
+        }
+      ],
+      "gap": {
+        "before": "これ、",
+        "answer": "{誰|だれ}",
+        "after": "が{作|つく}ったの？",
+        "options": [
+          "{誰|だれ}",
+          "{何|なに}",
+          "いつ"
+        ],
+        "why": "Menanyakan orangnya: 誰."
+      },
+      "audio": "audio/ja/grammar/gx-ka-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "ka"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

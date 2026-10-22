@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ada",
+  "connector": "ada",
+  "gloss": "ある、いる",
+  "title": "ada — ある、いる",
+  "pattern": "Ada …? · Tidak ada … · … ada di …",
+  "explanation": "ada は、ものがある、人がいる、手に入る、と言う言葉です。日本語の「ある」と「いる」のような使い分けはありません：Ada air? は「お水ありますか」で、答えは Ada か Tidak ada。人やものがどこにいるかも ada で言います：Ibu ada di rumah?（お母さんは家にいますか）、または Pak Budi ada?（ブディさんいらっしゃいますか）。「〜がある」の文は、ada から始めるか、場所から始めます：Ada banyak turis di Bali、または Di Bali ada banyak turis（バリには観光客がたくさんいます）。Tidak ada（くだけると nggak ada）は「ない」「いない」です。",
+  "natural": "お店やワルンでは、Ada …? で何でも聞けます：Ada es teh?（アイスティーありますか）、Ada kamar?（部屋、空いてますか）。Nggak ada や Habis と言われたら、売り切れです。",
+  "stiff": "形容詞の前の ada は「です」の意味にはなりません：Saya ada capek はまちがいで、Saya capek だけ。自分が持っているものは punya（次の課）：Saya punya mobil（車を持っています）。",
+  "examples": [
+    {
+      "id": "gx-ada-1",
+      "indonesian": "Ada air dingin?",
+      "japanese": "冷たいお水ありますか。",
+      "chunks": [
+        {
+          "t": "Ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "air ",
+          "w": "w-air"
+        },
+        {
+          "t": "dingin?",
+          "w": "w-dingin"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Ada",
+        "after": " air dingin?",
+        "options": [
+          "Ada",
+          "Punya",
+          "Adalah"
+        ],
+        "why": "あるかどうか聞くのは ada。punya は人が持っているものに使います。"
+      },
+      "audio": "audio/id/grammar/gx-ada-1.mp3",
+      "tags": [
+        "文法",
+        "ada"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ada-2",
+      "indonesian": "Pak Budi ada di kantor?",
+      "japanese": "ブディさんは会社にいらっしゃいますか。",
+      "chunks": [
+        {
+          "t": "Pak Budi ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "di kantor?",
+          "w": "w-kantor"
+        }
+      ],
+      "gap": {
+        "before": "Pak Budi ",
+        "answer": "ada",
+        "after": " di kantor?",
+        "options": [
+          "ada",
+          "adalah",
+          "punya"
+        ],
+        "why": "どこにいるかも ada：ada di kantor（会社にいる）。"
+      },
+      "audio": "audio/id/grammar/gx-ada-2.mp3",
+      "tags": [
+        "文法",
+        "ada"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ada-3",
+      "indonesian": "Di rumah tidak ada orang.",
+      "japanese": "家にはだれもいません。",
+      "chunks": [
+        {
+          "t": "Di rumah ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "tidak ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "orang.",
+          "w": "w-orang"
+        }
+      ],
+      "gap": {
+        "before": "Di rumah ",
+        "answer": "tidak ada",
+        "after": " orang.",
+        "options": [
+          "tidak ada",
+          "bukan ada",
+          "tidak punya"
+        ],
+        "why": "「ない・いない」は tidak ada。ada は動詞なので tidak を使います。"
+      },
+      "audio": "audio/id/grammar/gx-ada-3.mp3",
+      "tags": [
+        "文法",
+        "ada"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ada-4",
+      "indonesian": "Di depan hotel ada warung.",
+      "japanese": "ホテルの前にワルンがあります。",
+      "chunks": [
+        {
+          "t": "Di depan ",
+          "w": "w-depan"
+        },
+        {
+          "t": "hotel ",
+          "w": "w-hotel"
+        },
+        {
+          "t": "ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "warung.",
+          "w": "w-warung"
+        }
+      ],
+      "gap": {
+        "before": "Di depan hotel ",
+        "answer": "ada",
+        "after": " warung.",
+        "options": [
+          "ada",
+          "punya"
+        ],
+        "why": "「ある」は ada。ここでは場所の後に来ています。"
+      },
+      "audio": "audio/id/grammar/gx-ada-4.mp3",
+      "tags": [
+        "文法",
+        "ada"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

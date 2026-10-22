@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "id": "family-dinner",
+  "title": "恋人の家族と夕食",
+  "category": "family",
+  "setting": "恋人のデウィに連れられて、バンドンの実家で彼女の両親に初めて会います。着いたのは夕方近く。両親がそろって玄関まで迎えに出てくれました。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "mother",
+      "indonesian": "Eh, sudah sampai. Ayo, masuk, masuk.",
+      "japanese": "あら、着いたのね。さあ、入って入って。",
+      "audio": "audio/id/scenario/family-dinner-n1.mp3",
+      "options": [
+        {
+          "phraseId": "fam-01",
+          "quality": "good",
+          "feedback": "ちょうどいいあいさつです。時間帯のあいさつに、両親への呼びかけ Om と Tante（おじさん・おばさん）を添えています。デウィが両親の手を取って額に当てたら（salim）、同じようにしましょう。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Permisi, Tante. Selamat sore.",
+          "japanese": "お邪魔します。こんにちは。",
+          "feedback": "家に上がる時の Permisi は、日本語の「お邪魔します」にあたる自然なあいさつです。玄関に家族の靴が並んでいたら、日本と同じように脱ぎましょう。",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Selamat sore. Apa kabar kamu?",
+          "japanese": "こんにちは。元気？",
+          "feedback": "kamu は友達や年下に使う「きみ」で、恋人のお母さんに使うと見下したように聞こえます。「あなた」の代わりに呼び名を使って Apa kabar, Tante? と聞きましょう。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "father",
+      "indonesian": "Oh, ini Sam, ya? Dewi sudah banyak cerita.",
+      "japanese": "おお、君がサムさんか。デウィからいろいろ聞いてるよ。",
+      "audio": "audio/id/scenario/family-dinner-n2.mp3",
+      "options": [
+        {
+          "phraseId": "fam-02",
+          "quality": "good",
+          "feedback": "名前を確かめて、デウィとの関係も伝えています。どう紹介されるかは事前にデウィと相談を。最初は teman（友達）と紹介するほうがいい家庭もあります。",
+          "next": "n3"
+        },
+        {
+          "phraseId": "fam-03",
+          "quality": "good",
+          "feedback": "招いてもらったお礼は、いつ言ってもかまいません。帰る時にもう一度言いましょう。日本と同じく、手土産（buah tangan）に果物やお菓子を持っていくと喜ばれます。",
+          "next": "n3"
+        },
+        {
+          "phraseId": "gre-17",
+          "quality": "awkward",
+          "feedback": "間違いではありませんが、Anda は商談のような改まった響きです。家族には呼び名を使って Senang bisa bertemu dengan Om. と言いましょう。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "mother",
+      "indonesian": "Ayo, kita makan dulu. Tante masak dari pagi, lho.",
+      "japanese": "さあ、まずは食べましょう。おばさん、朝から作ったのよ。",
+      "audio": "audio/id/scenario/family-dinner-n3.mp3",
+      "options": [
+        {
+          "phraseId": "fam-05",
+          "quality": "good",
+          "feedback": "相手が手間をかけてくれた時の決まり文句で、「どうぞお構いなく」にあたります。断りではないので、料理はそのまま出てきます。お礼を言っていただきましょう。",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Wah, kelihatannya enak sekali, Tante.",
+          "japanese": "わあ、とてもおいしそうですね。",
+          "feedback": "食べる前にほめられると、作った人は誰でも喜びます。お母さんが自分を Tante と呼んだことにも注目。日本の母親が自分を「お母さん」と言うように、年上の人は「私」の代わりに自分の呼び名をよく使います。",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Tidak usah, Tante. Saya belum lapar.",
+          "japanese": "いえ、結構です。まだおなかがすいていないので。",
+          "feedback": "朝から作ってくれた料理を断ると、相手を傷つけます。日本式の遠慮のつもりでも、ここでは本気の断りに聞こえます。jangan repot-repot と言ったら、席について食べましょう。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "mother",
+      "indonesian": "Ayo, tambah lagi. Jangan malu-malu.",
+      "japanese": "さあ、もっと食べて。遠慮しないで。",
+      "audio": "audio/id/scenario/family-dinner-n4.mp3",
+      "options": [
+        {
+          "phraseId": "fam-09",
+          "quality": "good",
+          "feedback": "お礼、sudah（もう十分です）、それに誰も反論できない理由がそろっています。最初の断りは遠慮と受け取られるので、また勧められるのがふつうです。もう一度、笑顔で同じように答えましょう。",
+          "next": "n5"
+        },
+        {
+          "phraseId": "fam-10",
+          "quality": "good",
+          "feedback": "少しおかわりすると、作った人は喜びます。二度断るより、そのほうが優しいことも多いです。",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Tidak mau, Tante.",
+          "japanese": "いらない。",
+          "feedback": "Tidak mau は子どもの「いらない」のような断り方です。お礼と理由を添えて Sudah, Tante, terima kasih. Saya sudah kenyang. と言いましょう。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "father",
+      "indonesian": "Sam di sini kerja apa?",
+      "japanese": "サムさんは、こっちで何の仕事をしているの？",
+      "audio": "audio/id/scenario/family-dinner-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Saya mengajar bahasa Inggris, Om. Sudah dua tahun di sini.",
+          "japanese": "英語を教えています。こちらに来て2年になります。",
+          "feedback": "Om を添えた、感じのいい十分な答えです。お父さんは「あなた」ではなく Sam と呼びました。日本語と同じく、インドネシア語でも相手を名前で呼ぶことがよくあります。",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya adalah seorang guru.",
+          "japanese": "私は教師である。",
+          "feedback": "文法は正しいですが、adalah を使うと「〜である」のような書き言葉の定義に聞こえます。インドネシア語は「です」にあたる語がなくても文になるので、Saya guru bahasa Inggris, Om. で十分です。",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Guru.",
+          "japanese": "教師。",
+          "feedback": "目上の人に一言だけだと、そっけなく聞こえます。Om を付けて、どこで教えているか、何年になるかなどを少し足しましょう。",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "mother",
+      "indonesian": "Jadi, kapan nikahnya?",
+      "japanese": "それで、結婚はいつ？",
+      "audio": "audio/id/scenario/family-dinner-n6.mp3",
+      "options": [
+        {
+          "phraseId": "fam-12",
+          "quality": "good",
+          "feedback": "定番の返し方です。温かく、それでいて何も約束していません。あとは笑顔で。",
+          "next": "n7"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya tidak tahu, Tante.",
+          "japanese": "わかりません。",
+          "feedback": "そっけなく、デウィとのことを真剣に考えていないようにも聞こえます。軽く Doakan saja, ya, Tante. と返しましょう。",
+          "next": "n7"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Maaf, itu urusan pribadi.",
+          "japanese": "すみません、それはプライベートなことなので。",
+          "feedback": "言葉はていねいでも、相手を締め出してしまいます。Kapan nikah? は親戚の集まりで必ず出る、親しみからの質問です。壁を作らず、軽く返しましょう。",
+          "next": "n7"
+        }
+      ]
+    },
+    "n7": {
+      "speaker": "father",
+      "indonesian": "Lho, kok buru-buru? Baru jam delapan.",
+      "japanese": "あれ、もう帰るの？まだ8時だよ。",
+      "audio": "audio/id/scenario/family-dinner-n7.mp3",
+      "options": [
+        {
+          "phraseId": "fam-14",
+          "quality": "good",
+          "feedback": "pamit は、きちんとおいとまを告げる言葉で、「そろそろ失礼します」にあたります。一人ひとりに言い、食事のお礼ももう一度伝えましょう。",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Sudah malam, Om. Besok saya kerja pagi. Terima kasih banyak, ya, Om, Tante.",
+          "japanese": "もう遅いので。明日は朝から仕事なんです。本当にありがとうございました。",
+          "feedback": "理由があると帰り際がやわらかくなり、お礼も二人ともに伝わります。日本語の「遅くまですみません」のつもりで maaf を重ねるより、terima kasih で感謝を伝えるほうが喜ばれます。",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-23",
+          "quality": "wrong",
+          "feedback": "Dadah は友達や子どもに言う「バイバイ」です。恋人の両親には pamit を使って Saya pamit dulu, Om, Tante. とおいとましましょう。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "japanese": "いい第一印象を残せました。「あなた」の代わりに Om と Tante（または Bapak と Ibu）、料理が出てきたら jangan repot-repot、何度も勧められたらお礼を添えて sudah kenyang、結婚の質問には軽く Doakan saja、帰る時は一人ひとりに pamit。遠慮しすぎず、謝るより感謝を伝えましょう。",
+      "end": true,
+      "options": []
+    }
+  }
+}

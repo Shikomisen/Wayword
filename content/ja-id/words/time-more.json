@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "id": "words-time-more",
+  "title": "時間・頻度",
+  "description": "どのくらいの頻度で、正確にはいつ。いつも・めったに、さっき・たった今、あさって、「〜から」「〜まで」「〜の間」、そして話を前に進める小さな時の言葉。",
+  "items": [
+    {
+      "id": "w-selalu",
+      "indonesian": "selalu",
+      "japanese": "いつも",
+      "pos": "adverb",
+      "registerNotes": "動詞や形容詞の前に置きます：Dia selalu terlambat（あの人はいつも遅刻する）。",
+      "audio": "audio/id/words/w-selalu.mp3",
+      "tags": [
+        "時間",
+        "頻度"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sering",
+      "indonesian": "sering",
+      "japanese": "よく、しばしば",
+      "pos": "adverb",
+      "audio": "audio/id/words/w-sering.mp3",
+      "tags": [
+        "時間",
+        "頻度"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kadang-kadang",
+      "indonesian": "kadang-kadang",
+      "japanese": "ときどき",
+      "pos": "adverb",
+      "registerNotes": "くだけて kadang だけ：Kadang aku masak sendiri（ときどき自炊するよ）。",
+      "audio": "audio/id/words/w-kadang-kadang.mp3",
+      "tags": [
+        "時間",
+        "頻度"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-jarang",
+      "indonesian": "jarang",
+      "japanese": "めったに〜ない、あまり〜ない",
+      "pos": "adverb",
+      "registerNotes": "「まったく〜ない」より穏やかな言い方：Saya jarang minum kopi（コーヒーはあまり飲みません）。",
+      "audio": "audio/id/words/w-jarang.mp3",
+      "tags": [
+        "時間",
+        "頻度"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pernah",
+      "indonesian": "pernah",
+      "japanese": "〜したことがある",
+      "pos": "adverb",
+      "registerNotes": "Pernah ke Bali?（バリに行ったことある？）には Pernah（あります）か Belum pernah（まだありません）で答えます。",
+      "pitfallNote": "日本語の「〜したことがある」と同じく経験を表し、過去全般ではありません：Saya pernah tinggal di Jakarta（ジャカルタに住んでいたことがあります）。",
+      "audio": "audio/id/words/w-pernah.mp3",
+      "tags": [
+        "時間",
+        "経験"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tidak-pernah",
+      "indonesian": "tidak pernah",
+      "japanese": "一度も〜ない、決して〜ない",
+      "pos": "adverb",
+      "registerNotes": "くだけて nggak pernah。まだしていないだけで、これからするかもしれないことには belum pernah（まだ〜したことがない）のほうが自然です。",
+      "audio": "audio/id/words/w-tidak-pernah.mp3",
+      "tags": [
+        "時間",
+        "頻度"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-biasanya",
+      "indonesian": "biasanya",
+      "japanese": "ふだんは、たいてい",
+      "pos": "adverb",
+      "audio": "audio/id/words/w-biasanya.mp3",
+      "tags": [
+        "時間",
+        "頻度"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-segera",
+      "indonesian": "segera",
+      "japanese": "すぐに、ただちに、まもなく",
+      "pos": "adverb",
+      "registerNotes": "少し改まった言葉で、アナウンスや表示（Segera hadir 近日登場）、店員の言葉で使います。くだけた会話では langsung や secepatnya。",
+      "audio": "audio/id/words/w-segera.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tadi",
+      "indonesian": "tadi",
+      "japanese": "さっき、（今日の）先ほど",
+      "pos": "adverb",
+      "registerNotes": "今日のうちの少し前なら何でも：tadi pagi（今朝。もう過ぎた朝）、tadi malam（昨夜）。",
+      "pitfallNote": "tadi はいつも過去。今日のこれからのことは nanti：nanti sore（今日の夕方。これから来る時間）。",
+      "audio": "audio/id/words/w-tadi.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-barusan",
+      "indonesian": "barusan",
+      "japanese": "たった今、ついさっき",
+      "pos": "adverb",
+      "registerNotes": "くだけた感じの言葉：Dia barusan pergi（ついさっき出かけました）。中立的な言い方は baru saja。",
+      "audio": "audio/id/words/w-barusan.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-lusa",
+      "indonesian": "lusa",
+      "japanese": "あさって",
+      "pos": "noun",
+      "registerNotes": "Kemarin lusa は「おととい」です。",
+      "audio": "audio/id/words/w-lusa.mp3",
+      "tags": [
+        "時間",
+        "曜日"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-minggu-depan",
+      "indonesian": "minggu depan",
+      "japanese": "来週",
+      "pos": "phrase",
+      "registerNotes": "depan（前）で「次の」になります：bulan depan（来月）、tahun depan（来年）。",
+      "audio": "audio/id/words/w-minggu-depan.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bulan-lalu",
+      "indonesian": "bulan lalu",
+      "japanese": "先月",
+      "pos": "phrase",
+      "registerNotes": "Lalu（過ぎた）も同じ使い方です：minggu lalu（先週）、tahun lalu（去年）。話し言葉では kemarin も広く使い、bulan kemarin、tahun kemarin とも言います。",
+      "audio": "audio/id/words/w-bulan-lalu.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-dulu",
+      "indonesian": "dulu",
+      "japanese": "昔、以前；先に（ほかのことの前に）",
+      "pos": "adverb",
+      "registerNotes": "Dulu saya tinggal di Wellington（以前はウェリントンに住んでいました）。改まった形は dahulu。",
+      "pitfallNote": "動詞のあとでは「先に」の意味：Saya makan dulu（先に食べます）。帰りぎわの Saya pamit dulu は「お先に失礼します」です。",
+      "audio": "audio/id/words/w-dulu.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nanti-malam",
+      "indonesian": "nanti malam",
+      "japanese": "今夜（これから）",
+      "pos": "phrase",
+      "pitfallNote": "nanti malam はこれから来る今夜、tadi malam は昨夜。Malam ini も「今夜」です。",
+      "audio": "audio/id/words/w-nanti-malam.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sebentar",
+      "indonesian": "sebentar",
+      "japanese": "ちょっとの間、少し",
+      "pos": "adverb",
+      "registerNotes": "Sebentar, ya（少々お待ちください）は電話や窓口でよく聞く言葉。くだけて bentar。",
+      "audio": "audio/id/words/w-sebentar.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-lama-lama",
+      "indonesian": "lama-lama",
+      "japanese": "だんだん、そのうち",
+      "pos": "adverb",
+      "registerNotes": "Lama-lama kamu terbiasa（そのうち慣れるよ）は、よく聞く励ましの言葉です。",
+      "audio": "audio/id/words/w-lama-lama.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-akhirnya",
+      "indonesian": "akhirnya",
+      "japanese": "ついに、やっと；結局",
+      "pos": "adverb",
+      "registerNotes": "待ちに待ったことが起きたとき、ほっとしてこれだけ言えば「やっと！」。話の中では「それで結局」の意味：Akhirnya kami naik taksi（結局タクシーに乗りました）。",
+      "audio": "audio/id/words/w-akhirnya.mp3",
+      "tags": [
+        "時間",
+        "話"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tiba-tiba",
+      "indonesian": "tiba-tiba",
+      "japanese": "突然、急に",
+      "pos": "adverb",
+      "registerNotes": "たいてい文の頭に置きます：Tiba-tiba listriknya mati（突然停電した）。",
+      "audio": "audio/id/words/w-tiba-tiba.mp3",
+      "tags": [
+        "時間",
+        "話"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sejak",
+      "indonesian": "sejak",
+      "japanese": "〜から、〜以来",
+      "pos": "preposition",
+      "pitfallNote": "sejak には起点が必要です：sejak tahun lalu（去年から）、sejak kecil（小さいころから）。期間の長さを言うときは sudah：Saya sudah dua tahun di sini（ここに来て2年になります）。",
+      "audio": "audio/id/words/w-sejak.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sampai",
+      "indonesian": "sampai",
+      "japanese": "〜まで；着く",
+      "pos": "preposition",
+      "registerNotes": "「〜まで」：Saya kerja sampai jam lima（5時まで仕事です）。「着く」：Sudah sampai?（もう着いた？）は、無事に帰り着いたか確かめるためによく送るメッセージです。",
+      "audio": "audio/id/words/w-sampai.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-selama",
+      "indonesian": "selama",
+      "japanese": "〜の間",
+      "pos": "preposition",
+      "pitfallNote": "期間の長さを言うときの「〜の間」です：Saya di sini selama dua minggu（ここには2週間います）。untuk（〜のために）は期間には使いません。",
+      "audio": "audio/id/words/w-selama.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-setiap-hari",
+      "indonesian": "setiap hari",
+      "japanese": "毎日",
+      "pos": "phrase",
+      "registerNotes": "くだけて tiap hari。Setiap はどんな時の言葉にもつけられます：setiap minggu（毎週）、setiap pagi（毎朝）。",
+      "audio": "audio/id/words/w-setiap-hari.mp3",
+      "tags": [
+        "時間",
+        "頻度"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-belakangan-ini",
+      "indonesian": "belakangan ini",
+      "japanese": "最近、このところ",
+      "pos": "adverb",
+      "registerNotes": "くだけて akhir-akhir ini：Akhir-akhir ini saya sibuk sekali（最近すごく忙しいです）。",
+      "audio": "audio/id/words/w-belakangan-ini.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sebelumnya",
+      "indonesian": "sebelumnya",
+      "japanese": "その前に、以前に；前もって",
+      "pos": "adverb",
+      "registerNotes": "Terima kasih sebelumnya（直訳は「前もってありがとう」）は、何かを頼むメッセージの締めの決まり文句。日本語の「よろしくお願いします」にあたります。",
+      "audio": "audio/id/words/w-sebelumnya.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pagi-pagi",
+      "indonesian": "pagi-pagi",
+      "japanese": "朝早く",
+      "pos": "adverb",
+      "registerNotes": "pagi を2回くり返すと「朝早く」になります：Besok pagi-pagi kita berangkat（明日の朝早く出発します）。",
+      "cultureNote": "一日は涼しいうちに早く始まり、伝統的な市場は朝いちばんがいちばんにぎわいます。",
+      "audio": "audio/id/words/w-pagi-pagi.mp3",
+      "tags": [
+        "時間"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

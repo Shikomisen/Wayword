@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "id": "plans",
+  "title": "予定を立てる・誘う",
+  "order": 13,
+  "description": "友達との予定の提案、段取り、やんわり断る言い方まで。「土曜は空いてる？」から「今向かってるところ」まで。くだけた言い方には、標準的な言い方も一緒に載せています。",
+  "phrases": [
+    {
+      "id": "pla-01",
+      "indonesian": "Sabtu ini ada acara?",
+      "japanese": "今週の土曜日、何か予定はありますか？",
+      "registerNotes": "誘う前に相手の都合を確かめる、ふつうの聞き方。直訳は「この土曜、行事はある？」。友達同士では最後に nggak を付けます：Sabtu ini ada acara, nggak?",
+      "audio": "audio/id/pla-01.mp3",
+      "tags": [
+        "予定",
+        "誘う"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-02",
+      "indonesian": "Bagaimana kalau kita ke pantai?",
+      "japanese": "ビーチに行くのはどうですか？",
+      "registerNotes": "Bagaimana kalau … は、どんな提案にも使える標準的な「〜はどう？」。友達同士なら Gimana kalau …、または Ke pantai, yuk だけでも。",
+      "pitfallNote": "日本語の「私たち」は、インドネシア語では2つに分かれます。kita は相手を含む「私たち」、kami は相手を含まない「私たち」。誘う時は kita を使います。",
+      "audio": "audio/id/pla-02.mp3",
+      "tags": [
+        "予定",
+        "提案"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-03",
+      "register": "casual",
+      "indonesian": "Ngopi, yuk!",
+      "japanese": "コーヒーでも飲もうよ！",
+      "polite": {
+        "indonesian": "Ayo, kita minum kopi.",
+        "audio": "audio/id/casual/pla-03-polite.mp3"
+      },
+      "registerNotes": "yuk は親しみのこもったくだけた「〜しよう」で、ふつう最後に来ます：Makan, yuk.（ごはん行こう）。ngopi は minum kopi（コーヒーを飲む）の話し言葉で、日本語の「お茶する」のように、会っておしゃべりすることも指します。",
+      "audio": "audio/id/casual/pla-03.mp3",
+      "tags": [
+        "予定",
+        "誘う",
+        "くだけた言い方"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "yuk の k は母音を付けずに止めます。「ユク」ではなく「ユッ」に近い音です。"
+    },
+    {
+      "id": "pla-04",
+      "register": "casual",
+      "indonesian": "Kita ketemu di depan stasiun, ya.",
+      "japanese": "駅の前で会おうね。",
+      "polite": {
+        "indonesian": "Kita bertemu di depan stasiun, ya.",
+        "audio": "audio/id/casual/pla-04-polite.mp3"
+      },
+      "registerNotes": "ketemu は bertemu（会う）の話し言葉。bertemu はよりていねいで、仕事や年上の人に向いています。文末の ya で「それでいい？」と相手に確かめます。",
+      "audio": "audio/id/casual/pla-04.mp3",
+      "tags": [
+        "予定",
+        "会う",
+        "くだけた言い方"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "di depan stasiun は直訳「前・駅」。日本語の「駅の前」とは順番が逆です。"
+    },
+    {
+      "id": "pla-05",
+      "indonesian": "Jam berapa enaknya?",
+      "japanese": "何時がいいですか？",
+      "registerNotes": "enaknya（どうするのがいいか）で、選ぶのを相手にゆだねます：Enaknya di mana?（どこがいいですか？）。誰に対してもていねいです。",
+      "audio": "audio/id/pla-05.mp3",
+      "tags": [
+        "予定",
+        "段取り"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-06",
+      "indonesian": "Oke, boleh.",
+      "japanese": "オッケー、いいよ。",
+      "registerNotes": "boleh は直訳「〜してもよい」。日本語の「いいよ」のように、提案や申し出へのふだんの返事になります。Boleh juga は少し迷いのある「それもいいね」です。",
+      "audio": "audio/id/pla-06.mp3",
+      "tags": [
+        "予定",
+        "賛成"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-07",
+      "indonesian": "Maaf, saya tidak bisa. Ada acara keluarga.",
+      "japanese": "ごめんなさい、行けません。家族の用事があって。",
+      "registerNotes": "友達同士なら Sori, nggak bisa. Ada acara keluarga.",
+      "cultureNote": "インドネシア語でも、ただ断るだけでは素っ気なく感じられるので、日本と同じく理由を添えます。家族の用事は、誰も文句を言わない理由です。",
+      "audio": "audio/id/pla-07.mp3",
+      "tags": [
+        "予定",
+        "断る"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-08",
+      "indonesian": "Lain kali saja, ya.",
+      "japanese": "また今度ね。",
+      "registerNotes": "やんわり断る時や、先に延ばす時に、笑顔で言います。",
+      "cultureNote": "日本語の「また今度」と同じで、インドネシアの友達から言われた時も、実際は断りのことがよくあります。口調や理由と合わせて受け取りましょう。",
+      "audio": "audio/id/pla-08.mp3",
+      "tags": [
+        "予定",
+        "断る"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-09",
+      "indonesian": "Nanti saya kabari, ya.",
+      "japanese": "また連絡しますね。",
+      "registerNotes": "kabar（知らせ）から来ていて、「知らせを送ります」という意味です。友達同士では Nanti aku kabarin。",
+      "cultureNote": "lain kali と同じく、はっきり約束しないためのていねいな言い方のこともあります。",
+      "audio": "audio/id/pla-09.mp3",
+      "tags": [
+        "予定",
+        "段取り"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-10",
+      "register": "casual",
+      "indonesian": "Aku lagi di jalan.",
+      "japanese": "今向かってるところ。",
+      "polite": {
+        "indonesian": "Saya sedang dalam perjalanan.",
+        "audio": "audio/id/casual/pla-10-polite.mp3"
+      },
+      "registerNotes": "lagi は sedang（〜しているところ）のくだけた形。aku も saya のくだけた形で、「僕・あたし」のような感じです。メッセージでは英語の on the way から otw と書くことが多く、o-te-we と読みます。",
+      "pitfallNote": "di jalan（向かっている途中）は、「今出たところ」から「もうすぐ着く」まで幅があります。Sudah dekat?（もう近い？）と聞き返してもいいでしょう。",
+      "audio": "audio/id/casual/pla-10.mp3",
+      "tags": [
+        "予定",
+        "会う",
+        "くだけた言い方"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pla-11",
+      "indonesian": "Maaf, saya agak terlambat.",
+      "japanese": "すみません、少し遅れます。",
+      "registerNotes": "telat は terlambat の話し言葉。友達には Sori, telat dikit, ya.",
+      "cultureNote": "インドネシアの人は jam karet（ゴムの時間）と冗談を言います。友達同士なら多少の遅れは大目に見てもらえますが、仕事や予約、年上の人との約束には時間どおりに行きましょう。",
+      "audio": "audio/id/pla-11.mp3",
+      "tags": [
+        "予定",
+        "会う"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "terlambat には r と l の両方が入っています（ter-lam-bat）。r は舌先を震わせ、l は舌先を上の歯ぐきにつけて区別し、最後の t も母音を付けずに止めます。"
+    },
+    {
+      "id": "pla-12",
+      "indonesian": "Besok jadi, ya?",
+      "japanese": "明日、予定どおりでいいですよね？",
+      "registerNotes": "前日に予定を確かめる言い方。Besok jadi? だけならくだけた形です。",
+      "pitfallNote": "ここでの jadi は「予定どおり実行する」の意味で、「だから」の jadi ではありません。中止は tidak jadi、友達同士なら nggak jadi です。",
+      "audio": "audio/id/pla-12.mp3",
+      "tags": [
+        "予定",
+        "段取り"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pla-13",
+      "indonesian": "Saya jemput, ya?",
+      "japanese": "迎えに行きましょうか？",
+      "registerNotes": "jemput は「迎えに行く」。反対は antar（送っていく）：Saya antar pulang, ya?（家まで送りましょうか？）。日本語の「迎え」と「送り」と同じ区別です。",
+      "audio": "audio/id/pla-13.mp3",
+      "tags": [
+        "予定",
+        "会う"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

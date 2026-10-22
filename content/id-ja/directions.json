@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "id": "directions",
+  "title": "Arah & tersesat",
+  "order": 5,
+  "description": "Bertanya jalan, dan memahami jawabannya — bagian yang lebih sulit.",
+  "phrases": [
+    {
+      "id": "dir-01",
+      "japanese": "ここはどこですか",
+      "furigana": [
+        {
+          "b": "ここはどこですか"
+        }
+      ],
+      "romaji": "koko wa doko desu ka",
+      "indonesian": "Ini di mana?",
+      "registerNotes": "Pertanyaan yang sangat wajar, sama seperti 'ini di mana?' kita. Tunjukkan peta sambil bertanya.",
+      "audio": "audio/ja/dir-01.mp3",
+      "audioHint": "ここはどこですか",
+      "tags": [
+        "pertanyaan",
+        "penting",
+        "bertahan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "dir-02",
+      "japanese": "まっすぐです",
+      "furigana": [
+        {
+          "b": "まっすぐです"
+        }
+      ],
+      "romaji": "massugu desu",
+      "indonesian": "Lurus saja.",
+      "registerNotes": "Untuk dilatih dengar — salah satu dari tiga jawaban yang benar-benar akan kamu terima.",
+      "audio": "audio/ja/dir-02.mp3",
+      "audioHint": "まっすぐです",
+      "tags": [
+        "mendengar",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-03",
+      "japanese": "右に曲がってください",
+      "furigana": [
+        {
+          "b": "右",
+          "r": "みぎ"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "曲",
+          "r": "ま"
+        },
+        {
+          "b": "がってください"
+        }
+      ],
+      "romaji": "migi ni magatte kudasai",
+      "indonesian": "Belok kanan.",
+      "registerNotes": "右 = kanan, 左 (ひだり) = kiri. Hafalkan sepasang — tertukar keduanya adalah kesalahan klasik.",
+      "audio": "audio/ja/dir-03.mp3",
+      "audioHint": "みぎにまがってください",
+      "tags": [
+        "mendengar",
+        "penting"
+      ],
+      "difficulty": 3,
+      "usage": "Arahnya diletakkan sebelum kata kerja, ditandai に: 右に (ke kanan) 曲がってください (tolong belok)."
+    },
+    {
+      "id": "dir-04",
+      "japanese": "道に迷いました",
+      "furigana": [
+        {
+          "b": "道",
+          "r": "みち"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "迷",
+          "r": "まよ"
+        },
+        {
+          "b": "いました"
+        }
+      ],
+      "romaji": "michi ni mayoimashita",
+      "indonesian": "Saya tersesat.",
+      "registerNotes": "Pembuka seluruh percakapan. Orang Jepang yang tidak kamu kenal sering kali malah mengantarmu ke sana daripada menjelaskan.",
+      "audio": "audio/ja/dir-04.mp3",
+      "audioHint": "みちにまよいました",
+      "tags": [
+        "masalah",
+        "bertahan"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "dir-05",
+      "japanese": "左に曲がってください",
+      "furigana": [
+        {
+          "b": "左",
+          "r": "ひだり"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "曲",
+          "r": "ま"
+        },
+        {
+          "b": "がってください"
+        }
+      ],
+      "romaji": "hidari ni magatte kudasai",
+      "indonesian": "Belok kiri.",
+      "registerNotes": "Pasangan dari 右に曲がってください. Latih keduanya bersamaan sampai kamu tidak perlu berpikir lagi.",
+      "audio": "audio/ja/dir-05.mp3",
+      "audioHint": "ひだりにまがってください",
+      "tags": [
+        "mendengar",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "dir-06",
+      "japanese": "あそこです",
+      "furigana": [
+        {
+          "b": "あそこです"
+        }
+      ],
+      "romaji": "asoko desu",
+      "indonesian": "Di sebelah sana.",
+      "registerNotes": "ここ (sini) / そこ (situ, dekat kamu) / あそこ (sana) — pas sekali dengan sini–situ–sana kita. Biasanya diucapkan sambil menunjuk.",
+      "audio": "audio/ja/dir-06.mp3",
+      "audioHint": "あそこです",
+      "tags": [
+        "mendengar",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "dir-07",
+      "japanese": "この近くにコンビニはありますか",
+      "furigana": [
+        {
+          "b": "この"
+        },
+        {
+          "b": "近",
+          "r": "ちか"
+        },
+        {
+          "b": "くにコンビニはありますか"
+        }
+      ],
+      "romaji": "kono chikaku ni konbini wa arimasu ka",
+      "indonesian": "Ada minimarket di dekat sini?",
+      "registerNotes": "Polanya: この近くに〜はありますか — ganti dengan 駅, ATM, 薬局, トイレ. コンビニ adalah minimarket 24 jam, seperti yang ada di setiap sudut kota di Indonesia.",
+      "audio": "audio/ja/dir-07.mp3",
+      "audioHint": "このちかくにコンビニはありますか",
+      "tags": [
+        "pertanyaan",
+        "penting",
+        "bertahan"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "dir-08",
+      "japanese": "歩いてどのくらいですか",
+      "furigana": [
+        {
+          "b": "歩",
+          "r": "ある"
+        },
+        {
+          "b": "いてどのくらいですか"
+        }
+      ],
+      "romaji": "aruite dono kurai desu ka",
+      "indonesian": "Berapa lama kalau jalan kaki?",
+      "registerNotes": "Biasanya dijawab 十分ぐらい. どのくらい menanyakan lama waktu atau jarak.",
+      "audio": "audio/ja/dir-08.mp3",
+      "audioHint": "あるいてどのくらいですか",
+      "tags": [
+        "pertanyaan",
+        "waktu"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "dir-09",
+      "japanese": "次の信号を右です",
+      "furigana": [
+        {
+          "b": "次",
+          "r": "つぎ"
+        },
+        {
+          "b": "の"
+        },
+        {
+          "b": "信号",
+          "r": "しんごう"
+        },
+        {
+          "b": "を"
+        },
+        {
+          "b": "右",
+          "r": "みぎ"
+        },
+        {
+          "b": "です"
+        }
+      ],
+      "romaji": "tsugi no shingō o migi desu",
+      "indonesian": "Belok kanan di lampu merah berikutnya.",
+      "registerNotes": "Untuk dilatih dengar. 信号 (lampu lalu lintas) dan 交差点 (perempatan) adalah dua patokan utama dalam petunjuk arah.",
+      "audio": "audio/ja/dir-09.mp3",
+      "audioHint": "つぎのしんごうをみぎです",
+      "tags": [
+        "mendengar"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "dir-10",
+      "japanese": "地図を見せてもらえますか",
+      "furigana": [
+        {
+          "b": "地図",
+          "r": "ちず"
+        },
+        {
+          "b": "を"
+        },
+        {
+          "b": "見",
+          "r": "み"
+        },
+        {
+          "b": "せてもらえますか"
+        }
+      ],
+      "romaji": "chizu o misete moraemasu ka",
+      "indonesian": "Bisa tunjukkan di peta?",
+      "registerNotes": "Jalan keluar saat jawaban lisan terlalu cepat untukmu. Sodorkan ponselmu sambil mengucapkannya.",
+      "audio": "audio/ja/dir-10.mp3",
+      "audioHint": "ちずをみせてもらえますか",
+      "tags": [
+        "permintaan",
+        "bertahan"
+      ],
+      "difficulty": 5
+    }
+  ]
+}

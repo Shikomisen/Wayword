@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ter",
+  "connector": "ter-",
+  "gloss": "うっかり・〜てある状態・いちばん",
+  "title": "ter-",
+  "pattern": "ter- + 語根: tertinggal, tersesat (うっかり) · tertutup (状態) · terbesar (いちばん)",
+  "explanation": "ter- は、だれもそうするつもりがなかったのに起きたことを表します。日本語の「うっかり〜してしまう」に近い感覚です：tertinggal（置き忘れる、取り残される）、terjatuh（転ぶ、落ちる）、tersesat（道に迷う）。また、だれかがした動作ではなく、ものの状態も表します。日本語の「〜ている」「〜てある」です：Pintunya tertutup（ドアが閉まっている）と Pintunya ditutup（ドアが（だれかに）閉められた）、terjual habis（売り切れている）。形容詞に付くと「いちばん〜」で、主に書き言葉や看板で使います。日本語の「最大」「最寄り」のような硬さです：terbesar（いちばん大きい）、terdekat（いちばん近い）、termurah（いちばん安い）。ter- の形のまま1つの語になったものもあり、辞書にもその形で載っています：terlambat（遅れる）、terkenal（有名な）、tertarik（興味がある）。",
+  "natural": "だれのせいにもせずに、ちょっとした失敗を説明する時（Maaf, kuncinya tertinggal、すみません、鍵を置いてきてしまいました）、看板やお知らせを読む時、いちばん近い〜を聞く時に：ATM terdekat di mana?（最寄りの ATM はどこですか？）",
+  "stiff": "くだけた会話では、うっかりの ter- が ke- になることがよくあります：ketinggalan、kebawa（まちがえて持ってきちゃった）。道に迷うは nyasar：Aku tadi nyasar（さっき迷っちゃった）。会話で「いちばん」と言う時は、ter- より paling がふつうです：yang paling murah。",
+  "examples": [
+    {
+      "id": "gx-ter-1",
+      "indonesian": "Maaf terlambat, saya tadi tersesat.",
+      "japanese": "遅れてすみません、道に迷ってしまって。",
+      "chunks": [
+        {
+          "t": "Maaf "
+        },
+        {
+          "t": "terlambat, ",
+          "w": "w-lambat"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tadi ",
+          "w": "w-tadi"
+        },
+        {
+          "t": "tersesat."
+        }
+      ],
+      "gap": {
+        "before": "Maaf terlambat, saya tadi ",
+        "answer": "tersesat",
+        "after": ".",
+        "options": [
+          "tersesat",
+          "disesatkan",
+          "sesat"
+        ],
+        "why": "迷ったのは自然に起きたことで、だれかにされたのではないので ter-。disesatkan は「（だれかに）迷わされた、だまされた」です。"
+      },
+      "audio": "audio/id/grammar/gx-ter-1.mp3",
+      "tags": [
+        "文法",
+        "ter"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-ter-2",
+      "indonesian": "HP saya tertinggal di taksi.",
+      "japanese": "タクシーに携帯を忘れてしまいました。",
+      "chunks": [
+        {
+          "t": "HP ",
+          "w": "w-hp"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tertinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di taksi.",
+          "w": "w-di"
+        }
+      ],
+      "gap": {
+        "before": "HP saya ",
+        "answer": "tertinggal",
+        "after": " di taksi.",
+        "options": [
+          "tertinggal",
+          "ditinggal",
+          "meninggal"
+        ],
+        "why": "うっかり置き忘れたのは tertinggal。ditinggal はわざと置いていったように聞こえ、meninggal は「亡くなる」です。"
+      },
+      "audio": "audio/id/grammar/gx-ter-2.mp3",
+      "audioHint": "Ha pe saya tertinggal di taksi.",
+      "tags": [
+        "文法",
+        "ter"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ter-3",
+      "indonesian": "Tiketnya sudah terjual habis.",
+      "japanese": "チケットはもう売り切れです。",
+      "chunks": [
+        {
+          "t": "Tiketnya ",
+          "w": "w-tiket"
+        },
+        {
+          "t": "sudah ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "terjual "
+        },
+        {
+          "t": "habis."
+        }
+      ],
+      "gap": {
+        "before": "Tiketnya sudah ",
+        "answer": "terjual",
+        "after": " habis.",
+        "options": [
+          "terjual",
+          "dijual",
+          "menjual"
+        ],
+        "why": "売り切れは「売れてしまった状態」なので terjual habis。dijual は「売り出し中、販売中」です。"
+      },
+      "audio": "audio/id/grammar/gx-ter-3.mp3",
+      "tags": [
+        "文法",
+        "ter"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ter-4",
+      "indonesian": "Apotek terdekat di mana, ya?",
+      "japanese": "いちばん近い薬局はどこですか？",
+      "chunks": [
+        {
+          "t": "Apotek ",
+          "w": "w-apotek"
+        },
+        {
+          "t": "terdekat ",
+          "w": "w-dekat"
+        },
+        {
+          "t": "di mana, ",
+          "w": "w-di-mana"
+        },
+        {
+          "t": "ya?"
+        }
+      ],
+      "gap": {
+        "before": "Apotek ",
+        "answer": "terdekat",
+        "after": " di mana, ya?",
+        "options": [
+          "terdekat",
+          "dekat",
+          "kedekatan"
+        ],
+        "why": "「いちばん近い」は ter- ＋ dekat。会話では yang paling dekat でも同じ意味です。"
+      },
+      "audio": "audio/id/grammar/gx-ter-4.mp3",
+      "tags": [
+        "文法",
+        "ter"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

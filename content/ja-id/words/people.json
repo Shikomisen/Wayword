@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "id": "words-people",
+  "title": "人と家族",
+  "description": "家族、恋人、友達、お客さんなど、周りの人を表す言葉。インドネシアの世間話では早いうちに家族の話になるので、すぐに使えます。",
+  "items": [
+    {
+      "id": "w-orang",
+      "indonesian": "orang",
+      "japanese": "人",
+      "pos": "noun",
+      "registerNotes": "国籍にも使います：orang Indonesia（インドネシア人）、orang Selandia Baru（ニュージーランド人）、orang Jepang（日本人）。数の後では人数を数えます：dua orang（2人）。",
+      "audio": "audio/id/words/w-orang.mp3",
+      "tags": [
+        "人",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-laki-laki",
+      "indonesian": "laki-laki",
+      "japanese": "男、男性",
+      "pos": "noun",
+      "registerNotes": "表示や書類では、よりかたい pria を使います（トイレのドアで見かけます）。友達同士では cowok。anak laki-laki は息子、または男の子です。",
+      "audio": "audio/id/words/w-laki-laki.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-perempuan",
+      "indonesian": "perempuan",
+      "japanese": "女、女性",
+      "pos": "noun",
+      "registerNotes": "表示や書類では、よりかたい wanita を使います（トイレのドアで見かけます）。友達同士では cewek。anak perempuan は娘、または女の子です。",
+      "audio": "audio/id/words/w-perempuan.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-anak",
+      "indonesian": "anak",
+      "japanese": "子ども；息子、娘",
+      "pos": "noun",
+      "registerNotes": "anak saya は、何歳になっても「私の子ども」です。",
+      "cultureNote": "Sudah punya anak?（お子さんはもういますか？）は、知り合ってすぐに聞かれるごく普通の質問で、詮索しているわけではありません。",
+      "audio": "audio/id/words/w-anak.mp3",
+      "tags": [
+        "家族",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ibu",
+      "indonesian": "ibu",
+      "japanese": "母；（女性への敬称）〜さん",
+      "pos": "noun",
+      "registerNotes": "大文字の Ibu（略して Bu）は、大人の女性に丁寧に呼びかける言葉で、敬意を込めた「〜さん」に近い感覚です：Terima kasih, Bu（ありがとうございます）。知らない女性には「あなた」の代わりに使います：Ibu tinggal di sini?（こちらにお住まいですか？）",
+      "audio": "audio/id/words/w-ibu.mp3",
+      "tags": [
+        "家族",
+        "呼びかけ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bapak",
+      "indonesian": "bapak",
+      "japanese": "父；（男性への敬称）〜さん",
+      "pos": "noun",
+      "registerNotes": "大文字の Bapak（略して Pak）は、大人の男性に丁寧に呼びかける言葉で、敬意を込めた「〜さん」に近い感覚です：Permisi, Pak（すみません）。知らない男性には「あなた」の代わりに使います：Bapak dari mana?（どちらからですか？）",
+      "audio": "audio/id/words/w-bapak.mp3",
+      "tags": [
+        "家族",
+        "呼びかけ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ayah",
+      "indonesian": "ayah",
+      "japanese": "父、お父さん",
+      "pos": "noun",
+      "registerNotes": "人の父親の話をするときの普通の言葉：ayah saya（私の父）。bapak も「父」ですが、男性への呼びかけとして耳にすることがほとんどです。",
+      "audio": "audio/id/words/w-ayah.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kakak",
+      "indonesian": "kakak",
+      "japanese": "兄、姉（年上のきょうだい）",
+      "pos": "noun",
+      "pitfallNote": "日本語は兄・姉・弟・妹と年齢と性別で分けますが、インドネシア語は年齢だけ。kakak は年上、adik は年下のきょうだいで、男女どちらにも使います。性別が大事なときだけ laki-laki や perempuan を付けます：kakak perempuan（姉）。",
+      "cultureNote": "短く Kak と言うと、若い大人への親しみのある丁寧な呼びかけになります。お店やカフェの店員がお客さんによく使います。",
+      "audio": "audio/id/words/w-kakak.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-adik",
+      "indonesian": "adik",
+      "japanese": "弟、妹（年下のきょうだい）",
+      "pos": "noun",
+      "registerNotes": "adik laki-laki は弟、adik perempuan は妹。短く Dik（よく Dek と発音）と言うと、大人が子どもや、ずっと年下の知らない人に呼びかける言葉になります。",
+      "audio": "audio/id/words/w-adik.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-suami",
+      "indonesian": "suami",
+      "japanese": "夫",
+      "pos": "noun",
+      "cultureNote": "Sudah menikah?（結婚していますか？）は、初対面の会話でもごく普通の質問です。独身なら、tidak より Belum（まだです）と答えるのが丁寧です。",
+      "audio": "audio/id/words/w-suami.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-istri",
+      "indonesian": "istri",
+      "japanese": "妻",
+      "pos": "noun",
+      "audio": "audio/id/words/w-istri.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-teman",
+      "indonesian": "teman",
+      "japanese": "友達",
+      "pos": "noun",
+      "registerNotes": "何かを一緒にする相手にも使います：teman kerja（同僚）、teman sekolah（学校の友達）。くだけた会話では temen とよく言います。",
+      "audio": "audio/id/words/w-teman.mp3",
+      "tags": [
+        "人",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pacar",
+      "indonesian": "pacar",
+      "japanese": "恋人（彼氏、彼女）",
+      "pos": "noun",
+      "registerNotes": "男女どちらにも使う一語なので、pacar saya は「私の彼氏」にも「私の彼女」にもなります。Sudah punya pacar?（恋人はいるの？）はよくある質問で、からかい半分のことも多いです。",
+      "audio": "audio/id/words/w-pacar.mp3",
+      "tags": [
+        "人"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-keluarga",
+      "indonesian": "keluarga",
+      "japanese": "家族",
+      "pos": "noun",
+      "cultureNote": "家族の話は世間話の大きな部分です。知り合ってすぐに両親、きょうだい、配偶者、子どものことを聞かれるので、こちらからも聞き返すと親しみが伝わります。",
+      "audio": "audio/id/words/w-keluarga.mp3",
+      "tags": [
+        "家族",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-nenek",
+      "indonesian": "nenek",
+      "japanese": "祖母、おばあさん",
+      "pos": "noun",
+      "registerNotes": "オランダ語から来た oma と opa（祖母と祖父）を使う家庭も多く、ジャワ系の家庭では祖父母のどちらにも eyang とよく言います。",
+      "audio": "audio/id/words/w-nenek.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kakek",
+      "indonesian": "kakek",
+      "japanese": "祖父、おじいさん",
+      "pos": "noun",
+      "audio": "audio/id/words/w-kakek.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bayi",
+      "indonesian": "bayi",
+      "japanese": "赤ちゃん",
+      "pos": "noun",
+      "audio": "audio/id/words/w-bayi.mp3",
+      "tags": [
+        "家族"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tamu",
+      "indonesian": "tamu",
+      "japanese": "客、来客",
+      "pos": "noun",
+      "cultureNote": "お客さんには必ず飲み物が出されます。主人が Silakan diminum（どうぞお飲みください）と言うまで待ってから、少なくとも一口は飲みましょう。",
+      "audio": "audio/id/words/w-tamu.mp3",
+      "tags": [
+        "人",
+        "訪問"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-nama",
+      "indonesian": "nama",
+      "japanese": "名前",
+      "pos": "noun",
+      "registerNotes": "Nama saya …（私の名前は…です）。丁寧に聞くなら Namanya siapa?、女性には Nama Ibu siapa?",
+      "pitfallNote": "日本語では「名前は何？」と言いますが、人の名前を聞く疑問詞は siapa（誰）で、apa（何）ではありません。Namanya apa? は物の名前を聞く言い方です。",
+      "cultureNote": "インドネシアには、名字がなく名前が一つだけの人も多くいます。",
+      "audio": "audio/id/words/w-nama.mp3",
+      "tags": [
+        "人",
+        "必須"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

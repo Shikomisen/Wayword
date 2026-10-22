@@ -1662,7 +1662,7 @@ check('…and sets the page language', document.documentElement.lang === 'id');
 check('Indonesian speakers are offered English',
   Boolean($('.course-card[data-course="id-en"]:not(.is-planned)')) && $('.course-card[data-course="id-en"] .course-name')?.textContent === 'Inggris',
   $('.course-card[data-course="id-en"] .course-name')?.textContent);
-check('…with Japanese coming soon', Boolean($('.course-card[data-course="id-ja"].is-planned')));
+check('…and Japanese', Boolean($('.course-card[data-course="id-ja"]:not(.is-planned)')));
 check('…and not the other speakers\' courses', !$('.course-card[data-course="en-ja"]') && !$('.course-card[data-course="ja-en"]'));
 
 await goTo('#/id-en/');
@@ -1693,6 +1693,83 @@ check('the sound pairs are the ones hard for Indonesian speakers (F and V, TH…
   text().includes('F dan V') && !text().includes('L と R') && !hasJapanese(text()), $('h1')?.textContent);
 await goTo('#/id-en/scenario/cafe');
 check('a scenario sets the scene in Indonesian', !hasJapanese(text()) && text().includes('Selandia Baru'), $('h1')?.textContent);
+console.log('\n11f. Japanese for Indonesian speakers: Reading in Indonesian too');
+
+// The Reading screens were English-only while only English speakers learnt Japanese.
+const ENGLISH = /\b(the|your|due|unseen|mature|mastered|Kana mastery|Character cards|Review characters|Sets|drill|Add)\b/;
+await goTo('#/');
+check('Indonesian speakers are offered Japanese', Boolean($('.course-card[data-course="id-ja"]:not(.is-planned)')),
+  $('.course-card[data-course="id-ja"] .course-name')?.textContent);
+await goTo('#/id-ja/');
+check('the Japanese course for Indonesian speakers opens on its own placement, in Indonesian',
+  text().includes(ID['quiz.title']) && document.querySelector('.coursebar-pair')?.textContent === 'Indonesia › Jepang',
+  document.querySelector('.coursebar-pair')?.textContent);
+$('.placement-intro .btn-ghost')?.click();
+for (let i = 0; i < 12; i++) await tick();
+await goTo('#/id-ja/characters');
+check('Reading is in Indonesian, with nothing left in English',
+  $('h1')?.textContent === ID['reading.title'] && text().includes(ID['reading.kanaMastery']) && !ENGLISH.test(text()),
+  (text().match(ENGLISH) || [''])[0]);
+await goTo('#/id-ja/characters/kanji-common');
+const kanjiMeaning = $('.kanji-meaning')?.textContent || '';
+check('kanji show their meanings in Indonesian', Boolean(kanjiMeaning) && !ENGLISH.test(text()) &&
+  JSON.parse(readFileSync(resolve(ROOT, 'content/id-ja/kanji-common.json'), 'utf8')).characters.some((c) => c.indonesian === kanjiMeaning), kanjiMeaning);
+const { loadContent: loadIdJa } = await import('../js/content.js');
+const kana = [...(await loadIdJa()).characters.values()].find((c) => c.script === 'hiragana');
+check('a kana card says how it reads, in Indonesian', kana?.meaning === ID['reading.reads'].replace('{romaji}', kana?.romaji), kana?.meaning);
+await goTo('#/id-ja/characters/drill/hiragana');
+check('the kana drill asks in Indonesian', !ENGLISH.test(text()) && (text().includes(ID['reading.introHelp']) || text().includes(ID['reading.askRead'])),
+  $('.drill-kind')?.textContent);
+await goTo('#/id-ja/connectors/gr-wa');
+check('a grammar lesson explains Japanese to an Indonesian speaker, with furigana',
+  Boolean($('.lesson-explanation ruby')) && /bahasa Indonesia|Indonesia/.test(text()), $('h1')?.textContent);
+await goTo('#/id-ja/mine/paste');
+check('…and no Paste a message: the dictionary has no Indonesian meanings', !$('.paste-input') && location.hash !== '#/id-ja/mine/paste',
+  location.hash);
+
+console.log('\n11g. Indonesian, for English and for Japanese speakers');
+
+await goTo('#/');
+$$('.segment').find((b) => b.dataset.speaker === 'en')?.click();
+for (let i = 0; i < 6; i++) await tick();
+check('English speakers are offered Indonesian', Boolean($('.course-card[data-course="en-id"]:not(.is-planned)')),
+  $('.course-card[data-course="en-id"] .course-name')?.textContent);
+await goTo('#/en-id/');
+check('Indonesian has its own placement', text().includes('Indonesian') && Boolean($('.placement-intro')), $('h1')?.textContent);
+$('.placement-intro .btn-ghost')?.click();
+for (let i = 0; i < 12; i++) await tick();
+const enIdTabs = [...document.querySelectorAll('.tabbar a')].map((a) => a.textContent);
+check('Today, with Grammar and Scenarios as tabs and no Reading tab (Indonesian is written in Latin letters)',
+  $('h1')?.textContent === 'Today' && enIdTabs.some((x) => x.includes('Grammar')) && !enIdTabs.some((x) => x.includes('Reading')),
+  enIdTabs.join(' | '));
+await goTo('#/en-id/browse');
+check('Learn starts brand-new learners with greetings, numbers and the first words', text().includes('Greetings & Politeness') &&
+  text().includes('Words That Hold It Together'), $('h1')?.textContent);
+await goTo('#/en-id/category/casual');
+check('casual phrases come with their standard Indonesian', Boolean($('.polite-block, .polite')) || text().includes('Saya tidak tahu'),
+  $('h1')?.textContent);
+await goTo('#/en-id/connectors/gr-tidak-bukan');
+const tidakBukan = JSON.parse(readFileSync(resolve(ROOT, 'content/en-id/grammar/tidak-bukan.json'), 'utf8'));
+check('a grammar lesson, with its examples', text().includes(tidakBukan.examples[0].indonesian), tidakBukan.examples[0].indonesian);
+await goTo('#/en-id/scenario/warung');
+check('a scenario at a warung', text().includes('warung'), $('h1')?.textContent);
+await goTo('#/en-id/listening');
+check('sound pairs for English speakers: unstressed vowels, c, and r against l', text().includes('Which did you hear?'), $('h1')?.textContent);
+
+await goTo('#/');
+$$('.segment').find((b) => b.dataset.speaker === 'ja')?.click();
+for (let i = 0; i < 6; i++) await tick();
+check('Japanese speakers are offered Indonesian', Boolean($('.course-card[data-course="ja-id"]:not(.is-planned)')),
+  $('.course-card[data-course="ja-id"] .course-name')?.textContent);
+await goTo('#/ja-id/');
+$('.placement-intro .btn-ghost')?.click();
+for (let i = 0; i < 12; i++) await tick();
+await goTo('#/ja-id/connectors/gr-tidak-bukan');
+check('Indonesian for Japanese speakers explains it in Japanese', /[぀-ヿ]/.test($('.lesson-explanation')?.textContent || '') &&
+  text().includes('bukan'), $('h1')?.textContent);
+await goTo('#/ja-id/listening');
+check('…with sound pairs for Japanese speakers: R and L, and final consonants', text().includes('R と L'), $('h1')?.textContent);
+
 await goTo('#/');
 $$('.segment').find((b) => b.dataset.speaker === 'en')?.click();
 for (let i = 0; i < 6; i++) await tick();

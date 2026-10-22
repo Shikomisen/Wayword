@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "immigration",
+  "title": "空港の入国審査",
+  "category": "airport",
+  "setting": "夜遅く、バリ島のングラ・ライ空港の到着エリア。到着ビザの手続きを済ませ、入国審査カウンターであなたの番が来ました。審査官はインドネシア語で話しかけてきます。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "officer",
+      "indonesian": "Selamat malam. Boleh lihat paspornya?",
+      "japanese": "こんばんは。パスポートを拝見できますか？",
+      "audio": "audio/id/scenario/immigration-n1.mp3",
+      "options": [
+        {
+          "phraseId": "air-01",
+          "quality": "good",
+          "feedback": "Ini … saya（これが私の〜です）は、何かを手渡す時ならいつでも使えます。ini tiket saya、ini paspor saya。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Selamat malam, Pak. Ini paspornya.",
+          "japanese": "こんばんは。パスポートです。",
+          "feedback": "Pak を付けてあいさつを返すのは、係官に対していい始まり方です。",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Selamat pagi, Pak.",
+          "japanese": "おはようございます。",
+          "feedback": "今は夜なので、審査官が言ったとおり selamat malam です。selamat pagi が使えるのは朝11時ごろまでです。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "officer",
+      "indonesian": "Ke Indonesia untuk apa?",
+      "japanese": "インドネシアへは何の目的で？",
+      "audio": "audio/id/scenario/immigration-n2.mp3",
+      "options": [
+        {
+          "phraseId": "air-03",
+          "quality": "good",
+          "feedback": "はっきりしていて過不足ありません。untuk liburan は「休暇で」。",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Liburan, Pak.",
+          "japanese": "休暇です。",
+          "feedback": "一語で十分です。審査官がほしいのは明確な答えで、旅程の全部ではありません。",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Hari libur, Pak.",
+          "japanese": "休日です。",
+          "feedback": "日本語の「休み」はどちらにも使えますが、hari libur は休日や祝日のこと。旅行としての休暇は liburan です。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "officer",
+      "indonesian": "Berapa lama di Indonesia?",
+      "japanese": "インドネシアにはどのくらい滞在しますか？",
+      "audio": "audio/id/scenario/immigration-n3.mp3",
+      "options": [
+        {
+          "phraseId": "air-04",
+          "quality": "good",
+          "feedback": "期間の前には何も要りません。日本語の「2週間です」と同じ感覚で dua minggu と言えます。",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Untuk dua minggu, Pak.",
+          "japanese": "2週間のためです。",
+          "feedback": "通じますが、untuk は「〜のために」という目的の言葉（untuk liburan）で、期間には使いません。Dua minggu だけか、selama dua minggu（2週間の間）と言いましょう。",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Dua minggu lalu.",
+          "japanese": "2週間前です。",
+          "feedback": "時を表す言葉のあとの lalu は「〜前」。滞在する期間なら、Dua minggu とだけ言いましょう。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "officer",
+      "indonesian": "Menginap di mana?",
+      "japanese": "どこに泊まりますか？",
+      "audio": "audio/id/scenario/immigration-n4.mp3",
+      "options": [
+        {
+          "phraseId": "air-05",
+          "quality": "good",
+          "feedback": "menginap は、どこかに泊まること。宿の名前と住所もすぐ出せるようにしておきましょう。",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Di hotel di Ubud, Pak. Ini alamatnya.",
+          "japanese": "ウブドのホテルです。これが住所です。",
+          "feedback": "スマホで住所を見せれば、追加で聞かれる前に答えられます。",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya tinggal di Ubud.",
+          "japanese": "ウブドに住んでいます。",
+          "feedback": "「滞在する」を訳したつもりでも、tinggal は「住む」。観光で来た旅行者が入国審査で言うには変な答えです。ホテルや民宿なら menginap です。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "officer",
+      "indonesian": "Tiket pulangnya ada?",
+      "japanese": "帰りの航空券はありますか？",
+      "audio": "audio/id/scenario/immigration-n5.mp3",
+      "options": [
+        {
+          "phraseId": "air-06",
+          "quality": "good",
+          "feedback": "スマホですぐ見せられるようにしておきましょう。ビザが切れる前に出国するという証明になります。",
+          "next": "n6"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Ada, Pak. Ini.",
+          "japanese": "はい、これです。",
+          "feedback": "Ada …? の質問には ada で答えます。それが「はい」の意味です。つい ya と言いがちですが、ada のほうが自然です。",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya punya tiket kembali.",
+          "japanese": "戻りの切符を持っています。",
+          "feedback": "通じますが、tiket kembali は直訳調です。日本語の「帰りの航空券」と同じ発想で tiket pulang（家に帰る切符）、往復なら tiket pulang-pergi と言います。",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "officer",
+      "indonesian": "Baik. Selamat datang di Indonesia.",
+      "japanese": "はい、結構です。インドネシアへようこそ。",
+      "audio": "audio/id/scenario/immigration-n6.mp3",
+      "options": [
+        {
+          "phraseId": "gre-08",
+          "quality": "good",
+          "feedback": "短くて正解。パスポートを受け取って、手荷物受取所へ進みましょう。",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Terima kasih, Pak. Selamat malam.",
+          "japanese": "ありがとうございます。よい夜を。",
+          "feedback": "selamat malam は、日本語の「こんばんは」と違って、夜に別れる時にも使えます。",
+          "next": "end"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Sama-sama, Pak.",
+          "japanese": "どういたしまして。",
+          "feedback": "sama-sama はお礼への返事です。歓迎してもらったのだから、Terima kasih, Pak とお礼を言いましょう。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "japanese": "通過です。入国審査の質問は短く、答えも短いのがいちばん。liburan、dua minggu、泊まる場所、そしてスマホに帰りの航空券。到着時の書類でも聞かれるので、宿の住所はすぐ出せるようにしておきましょう。",
+      "end": true,
+      "options": []
+    }
+  }
+}

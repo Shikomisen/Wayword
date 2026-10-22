@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-plural",
+  "connector": "buku-buku",
+  "gloss": "1つでも複数でも同じ形",
+  "title": "buku-buku と banyak — 複数の言い方",
+  "pattern": "buku (本：1冊でも何冊でも) · dua buku · banyak orang · buku-buku",
+  "explanation": "インドネシア語の名詞は、日本語と同じく、数が増えても形が変わりません。buku は1冊の本でも何冊の本でもよく、どちらかは状況で分かります。数字や banyak（たくさんの）は名詞の前に置き、名詞はそのまま：dua buku（本2冊）、banyak orang（たくさんの人）。名詞を2回くり返す buku-buku も複数を表し、「いろいろな本」という感じが出ます。日本語の「人々」に少し似ていて、会話より書き言葉でよく使います。",
+  "natural": "ほとんどの場合、名詞はそのままで大丈夫です：Ada banyak turis di sini（ここは観光客がたくさんいます）。ただ、毎日の会話でよく使うくり返しもあります：anak-anak（子どもたち）、teman-teman（友達、みんな）。",
+  "stiff": "数字や banyak の後で名詞をくり返すのはまちがいです：dua anak-anak や banyak orang-orang は使いません。数字がもう「複数」だと言っているからです。複数をわざわざ示さないのは日本語と同じ：Saya suka buku は「本が好きです」。",
+  "examples": [
+    {
+      "id": "gx-plural-1",
+      "indonesian": "Saya mau beli dua tiket.",
+      "japanese": "切符を2枚買いたいです。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "beli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "dua "
+        },
+        {
+          "t": "tiket.",
+          "w": "w-tiket"
+        }
+      ],
+      "gap": {
+        "before": "Saya mau beli dua ",
+        "answer": "tiket",
+        "after": ".",
+        "options": [
+          "tiket",
+          "tiket-tiket"
+        ],
+        "why": "数字の後の名詞はそのまま：dua tiket。「枚」のような言葉もいりません。"
+      },
+      "audio": "audio/id/grammar/gx-plural-1.mp3",
+      "tags": [
+        "文法",
+        "複数"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-plural-2",
+      "indonesian": "Ada banyak orang di sini.",
+      "japanese": "ここは人がたくさんいます。",
+      "chunks": [
+        {
+          "t": "Ada ",
+          "w": "w-ada"
+        },
+        {
+          "t": "banyak ",
+          "w": "w-banyak"
+        },
+        {
+          "t": "orang ",
+          "w": "w-orang"
+        },
+        {
+          "t": "di sini.",
+          "w": "w-di"
+        }
+      ],
+      "gap": {
+        "before": "Ada banyak ",
+        "answer": "orang",
+        "after": " di sini.",
+        "options": [
+          "orang",
+          "orang-orang"
+        ],
+        "why": "banyak がもう「たくさん」と言っているので、orang はそのまま。"
+      },
+      "audio": "audio/id/grammar/gx-plural-2.mp3",
+      "tags": [
+        "文法",
+        "複数"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-plural-3",
+      "indonesian": "Sepatu saya di mana?",
+      "japanese": "私の靴はどこですか。",
+      "chunks": [
+        {
+          "t": "Sepatu ",
+          "w": "w-sepatu"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "di mana?",
+          "w": "w-di-mana"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Sepatu",
+        "after": " saya di mana?",
+        "options": [
+          "Sepatu",
+          "Sepatu-sepatu"
+        ],
+        "why": "sepatu は片方でも1足でも sepatu。くり返す必要はありません。"
+      },
+      "audio": "audio/id/grammar/gx-plural-3.mp3",
+      "tags": [
+        "文法",
+        "複数"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-plural-4",
+      "indonesian": "Anak-anak main di pantai.",
+      "japanese": "子どもたちが浜辺で遊んでいます。",
+      "chunks": [
+        {
+          "t": "Anak-anak ",
+          "w": "w-anak"
+        },
+        {
+          "t": "main ",
+          "w": "w-main"
+        },
+        {
+          "t": "di ",
+          "w": "w-di"
+        },
+        {
+          "t": "pantai.",
+          "w": "w-pantai"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Anak-anak",
+        "after": " main di pantai.",
+        "options": [
+          "Anak-anak",
+          "Banyak anak-anak"
+        ],
+        "why": "anak-anak は会話でよく使う「子どもたち」。banyak の後なら、くり返さずに banyak anak。"
+      },
+      "audio": "audio/id/grammar/gx-plural-4.mp3",
+      "tags": [
+        "文法",
+        "複数"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

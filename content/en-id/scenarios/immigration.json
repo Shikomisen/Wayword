@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "immigration",
+  "title": "Immigration at the airport",
+  "category": "airport",
+  "setting": "Arrivals at Ngurah Rai airport in Bali, late in the evening. You've sorted out your visa on arrival, and now it's your turn at the immigration desk. The officer speaks to you in Indonesian.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "officer",
+      "indonesian": "Selamat malam. Boleh lihat paspornya?",
+      "english": "Good evening. May I see your passport?",
+      "audio": "audio/id/scenario/immigration-n1.mp3",
+      "options": [
+        {
+          "phraseId": "air-01",
+          "quality": "good",
+          "feedback": "Ini … saya (here's my …) works for anything you hand over: ini tiket saya, ini paspor saya.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Selamat malam, Pak. Ini paspornya.",
+          "english": "Good evening. Here's my passport.",
+          "feedback": "Returning the greeting, with Pak, is a good start with an official.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Selamat pagi, Pak.",
+          "english": "Good morning.",
+          "feedback": "It's evening, so it's selamat malam, as he said. Selamat pagi is only until about 11 in the morning.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "officer",
+      "indonesian": "Ke Indonesia untuk apa?",
+      "english": "What brings you to Indonesia?",
+      "audio": "audio/id/scenario/immigration-n2.mp3",
+      "options": [
+        {
+          "phraseId": "air-03",
+          "quality": "good",
+          "feedback": "Clear and complete. Untuk liburan is 'for a holiday'.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Liburan, Pak.",
+          "english": "A holiday.",
+          "feedback": "One word is enough. Officers want a clear answer, not the whole itinerary.",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Hari libur, Pak.",
+          "english": "A day off.",
+          "feedback": "Hari libur is a day off or a public holiday. A holiday as in a trip is liburan.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "officer",
+      "indonesian": "Berapa lama di Indonesia?",
+      "english": "How long are you in Indonesia?",
+      "audio": "audio/id/scenario/immigration-n3.mp3",
+      "options": [
+        {
+          "phraseId": "air-04",
+          "quality": "good",
+          "feedback": "No word for 'for' is needed before a length of time.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Untuk dua minggu, Pak.",
+          "english": "For two weeks.",
+          "feedback": "Understood, but untuk is the English 'for' carried over: it's for a purpose (untuk liburan), not a length of time. Just Dua minggu, or selama dua minggu.",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Dua minggu lalu.",
+          "english": "Two weeks ago.",
+          "feedback": "Lalu after a time means ago. For how long you're staying, just say Dua minggu.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "officer",
+      "indonesian": "Menginap di mana?",
+      "english": "Where are you staying?",
+      "audio": "audio/id/scenario/immigration-n4.mp3",
+      "options": [
+        {
+          "phraseId": "air-05",
+          "quality": "good",
+          "feedback": "Menginap is staying the night somewhere. Have the name and address of your accommodation ready too.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Di hotel di Ubud, Pak. Ini alamatnya.",
+          "english": "At a hotel in Ubud. Here's the address.",
+          "feedback": "Showing the address on your phone answers the question before he asks for more.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya tinggal di Ubud.",
+          "english": "I live in Ubud.",
+          "feedback": "Tinggal is to live somewhere, which is an odd thing to tell immigration on a visitor's visa. For a hotel or homestay, it's menginap.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "officer",
+      "indonesian": "Tiket pulangnya ada?",
+      "english": "Do you have a return ticket?",
+      "audio": "audio/id/scenario/immigration-n5.mp3",
+      "options": [
+        {
+          "phraseId": "air-06",
+          "quality": "good",
+          "feedback": "Have it ready on your phone. It shows you'll leave before your visa runs out.",
+          "next": "n6"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Ada, Pak. Ini.",
+          "english": "Yes, here it is.",
+          "feedback": "Answer an Ada …? question with ada: that's the yes.",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya punya tiket kembali.",
+          "english": "I have a return ticket.",
+          "feedback": "Understood, but tiket kembali is 'return ticket' translated word for word. People say tiket pulang (a ticket home), or tiket pulang-pergi for a return.",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "officer",
+      "indonesian": "Baik. Selamat datang di Indonesia.",
+      "english": "All right. Welcome to Indonesia.",
+      "audio": "audio/id/scenario/immigration-n6.mp3",
+      "options": [
+        {
+          "phraseId": "gre-08",
+          "quality": "good",
+          "feedback": "Short and right. Take your passport and move on to baggage claim.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Terima kasih, Pak. Selamat malam.",
+          "english": "Thank you. Good evening.",
+          "feedback": "Selamat malam works for leaving as well as arriving after dark.",
+          "next": "end"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Sama-sama, Pak.",
+          "english": "You're welcome.",
+          "feedback": "Sama-sama answers a thank-you. He welcomed you, so thank him: Terima kasih, Pak.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "english": "You're through. The questions at immigration are short, and short answers are best: liburan, dua minggu, the place you're staying, and your return ticket on your phone. Keep your accommodation's address to hand, as the arrival forms ask for it too.",
+      "end": true,
+      "options": []
+    }
+  }
+}

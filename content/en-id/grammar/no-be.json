@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-no-be",
+  "connector": "Saya guru",
+  "gloss": "no am, is or are",
+  "title": "No “to be” — Saya guru",
+  "pattern": "A + B: Saya guru. · Dia capek. · Rumahnya besar.",
+  "explanation": "Indonesian has no word for am, is or are: you put the two parts side by side. Saya guru is 'I'm a teacher' (literally 'I teacher'), Dia capek is 'He's tired' or 'She's tired', and Rumahnya besar is 'The house is big'. There's no word for 'a' either, so guru on its own already means 'a teacher'. Questions work the same way, with your voice rising at the end: Kamu capek? (Are you tired?)",
+  "natural": "Leaving out 'is' is simply correct, in speech and in writing: Kopinya enak (The coffee's good), Hari ini panas (It's hot today). Even 'it is' needs no word: Mahal! is 'It's expensive!'",
+  "stiff": "Adalah exists, but it belongs in written definitions and formal speeches: Jakarta adalah ibu kota Indonesia. Saya adalah guru sounds like a textbook, and adalah never goes before a describing word, so Saya adalah capek is wrong. Ada isn't 'is' either: Saya ada capek is wrong too.",
+  "examples": [
+    {
+      "id": "gx-no-be-1",
+      "indonesian": "Saya guru.",
+      "english": "I'm a teacher.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "guru.",
+          "w": "w-guru"
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "guru",
+        "after": ".",
+        "options": [
+          "guru",
+          "ada guru",
+          "adalah guru"
+        ],
+        "ok": [
+          "adalah guru"
+        ],
+        "note": "Saya adalah guru is grammatical, but it sounds like a textbook; people say Saya guru.",
+        "why": "Nothing stands for 'am': Saya guru is literally 'I teacher'."
+      },
+      "audio": "audio/id/grammar/gx-no-be-1.mp3",
+      "tags": [
+        "grammar",
+        "no-be"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-no-be-2",
+      "indonesian": "Dia capek.",
+      "english": "He's tired.",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "capek.",
+          "w": "w-capek"
+        }
+      ],
+      "gap": {
+        "before": "Dia ",
+        "answer": "capek",
+        "after": ".",
+        "options": [
+          "capek",
+          "ada capek",
+          "adalah capek"
+        ],
+        "why": "A describing word follows straight on; ada and adalah can't go in front of it."
+      },
+      "audio": "audio/id/grammar/gx-no-be-2.mp3",
+      "tags": [
+        "grammar",
+        "no-be"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-no-be-3",
+      "indonesian": "Rumahnya besar.",
+      "english": "The house is big.",
+      "chunks": [
+        {
+          "t": "Rumahnya ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "besar.",
+          "w": "w-besar"
+        }
+      ],
+      "gap": {
+        "before": "Rumahnya ",
+        "answer": "besar",
+        "after": ".",
+        "options": [
+          "besar",
+          "ada besar",
+          "adalah besar"
+        ],
+        "why": "The thing, then what it's like, with nothing in between: Rumahnya besar."
+      },
+      "audio": "audio/id/grammar/gx-no-be-3.mp3",
+      "tags": [
+        "grammar",
+        "no-be"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-no-be-4",
+      "indonesian": "Teman saya orang Bali.",
+      "english": "My friend is Balinese.",
+      "chunks": [
+        {
+          "t": "Teman ",
+          "w": "w-teman"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "orang Bali.",
+          "w": "w-orang"
+        }
+      ],
+      "gap": {
+        "before": "Teman saya ",
+        "answer": "orang Bali",
+        "after": ".",
+        "options": [
+          "orang Bali",
+          "Bali orang",
+          "ada orang Bali"
+        ],
+        "why": "No word for 'is', and orang comes first: orang Bali, a person from Bali."
+      },
+      "audio": "audio/id/grammar/gx-no-be-4.mp3",
+      "tags": [
+        "grammar",
+        "no-be"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

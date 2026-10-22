@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "id": "words-money",
+  "title": "Shopping & Money",
+  "description": "Prices, paying and change, bargaining at the market and buying online: the money words of everyday life in Indonesia.",
+  "items": [
+    {
+      "id": "w-harga",
+      "indonesian": "harga",
+      "english": "price",
+      "pos": "noun",
+      "registerNotes": "Berapa harganya? (How much is it?) Harga pas is a fixed price with no bargaining, and harga mati a final, take-it-or-leave-it one.",
+      "audio": "audio/id/words/w-harga.mp3",
+      "tags": [
+        "money",
+        "shopping",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-diskon",
+      "indonesian": "diskon",
+      "english": "discount",
+      "pos": "noun",
+      "registerNotes": "Ada diskon? (Is there a discount?) suits shops, malls and apps; at a market you bargain instead.",
+      "audio": "audio/id/words/w-diskon.mp3",
+      "tags": [
+        "money",
+        "shopping"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-promo",
+      "indonesian": "promo",
+      "english": "special offer, promotion",
+      "pos": "noun",
+      "registerNotes": "Shop staff say Lagi promo for something on special right now. Beli satu gratis satu is buy one, get one free.",
+      "audio": "audio/id/words/w-promo.mp3",
+      "tags": [
+        "money",
+        "shopping"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kembalian",
+      "indonesian": "kembalian",
+      "english": "change (money given back)",
+      "pos": "noun",
+      "forms": {
+        "root": "kembali"
+      },
+      "cultureNote": "Small sellers often run short of change and ask Ada uang kecil? (Do you have anything smaller?), so carry small notes for warungs and ojeks.",
+      "audio": "audio/id/words/w-kembalian.mp3",
+      "tags": [
+        "money",
+        "paying"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-struk",
+      "indonesian": "struk",
+      "english": "receipt (printed)",
+      "pos": "noun",
+      "registerNotes": "Minta struknya, ya (Can I have the receipt?) A handwritten receipt is a nota, and a formal one for claims a kuitansi.",
+      "audio": "audio/id/words/w-struk.mp3",
+      "tags": [
+        "money",
+        "paying"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tunai",
+      "indonesian": "tunai",
+      "english": "cash",
+      "pos": "noun",
+      "registerNotes": "Bayar tunai is to pay cash, but people often just say cash: Bayar cash atau QRIS?",
+      "audio": "audio/id/words/w-tunai.mp3",
+      "tags": [
+        "money",
+        "paying"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-transfer",
+      "indonesian": "transfer",
+      "english": "bank transfer; to transfer",
+      "pos": "noun",
+      "cultureNote": "Paying by bank transfer is normal even for small things like kos rent or a homemade cake. Afterwards, send a screenshot as bukti transfer (proof of payment).",
+      "audio": "audio/id/words/w-transfer.mp3",
+      "tags": [
+        "money",
+        "paying"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kartu-kredit",
+      "indonesian": "kartu kredit",
+      "english": "credit card",
+      "pos": "noun",
+      "registerNotes": "Bisa pakai kartu kredit? (Can I pay by credit card?) A debit card is a kartu debit, and paying by card is often just gesek (swipe).",
+      "audio": "audio/id/words/w-kartu-kredit.mp3",
+      "tags": [
+        "money",
+        "paying"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cicilan",
+      "indonesian": "cicilan",
+      "english": "instalment, instalments",
+      "pos": "noun",
+      "forms": {
+        "root": "cicil"
+      },
+      "registerNotes": "Cicilan nol persen (0% instalments) is a common offer on phones and appliances, and dicicil means paid off in instalments.",
+      "audio": "audio/id/words/w-cicilan.mp3",
+      "tags": [
+        "money"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-tabungan",
+      "indonesian": "tabungan",
+      "english": "savings; savings account",
+      "pos": "noun",
+      "forms": {
+        "root": "tabung"
+      },
+      "registerNotes": "Buka tabungan is to open a savings account. Menabung is to save money, and a piggy bank is a celengan.",
+      "audio": "audio/id/words/w-tabungan.mp3",
+      "tags": [
+        "money"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-dompet",
+      "indonesian": "dompet",
+      "english": "wallet, purse",
+      "pos": "noun",
+      "registerNotes": "Dompet digital is an e-wallet such as GoPay or OVO, used everywhere for small payments.",
+      "audio": "audio/id/words/w-dompet.mp3",
+      "tags": [
+        "money",
+        "paying"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-belanja-online",
+      "indonesian": "belanja online",
+      "english": "online shopping; to shop online",
+      "pos": "phrase",
+      "registerNotes": "The official term is belanja daring, but hardly anyone says it.",
+      "cultureNote": "Huge in Indonesia, through apps such as Shopee and Tokopedia. Many buyers choose COD, paying cash when the parcel arrives.",
+      "audio": "audio/id/words/w-belanja-online.mp3",
+      "tags": [
+        "money",
+        "online shopping"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ongkir",
+      "indonesian": "ongkir",
+      "english": "delivery fee, shipping cost",
+      "pos": "noun",
+      "registerNotes": "Short for ongkos kirim. Gratis ongkir (free delivery) is the commonest promise in online shopping.",
+      "audio": "audio/id/words/w-ongkir.mp3",
+      "tags": [
+        "money",
+        "online shopping"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mengirim",
+      "indonesian": "mengirim",
+      "english": "to send",
+      "pos": "verb",
+      "forms": {
+        "root": "kirim"
+      },
+      "registerNotes": "In speech just kirim: Nanti saya kirim alamatnya (I'll send you the address). Sudah dikirim? asks whether an order has been sent, and the courier who brings it is the kurir.",
+      "audio": "audio/id/words/w-mengirim.mp3",
+      "tags": [
+        "online shopping",
+        "verbs"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-paket",
+      "indonesian": "paket",
+      "english": "parcel, package; bundle, plan",
+      "pos": "noun",
+      "registerNotes": "A parcel in the post, but also a bundle: paket data (a mobile data plan), paket wisata (a package tour).",
+      "audio": "audio/id/words/w-paket.mp3",
+      "tags": [
+        "online shopping",
+        "shopping"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ukuran",
+      "indonesian": "ukuran",
+      "english": "size; measurement",
+      "pos": "noun",
+      "forms": {
+        "root": "ukur"
+      },
+      "registerNotes": "Ada ukuran yang lebih besar? (Do you have a bigger size?) Local clothing sizes run small, so try before you buy.",
+      "audio": "audio/id/words/w-ukuran.mp3",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-warna",
+      "indonesian": "warna",
+      "english": "colour",
+      "pos": "noun",
+      "audio": "audio/id/words/w-warna.mp3",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-model",
+      "indonesian": "model",
+      "english": "style, design, model",
+      "pos": "noun",
+      "pitfallNote": "More often a style or design than a fashion model: Modelnya bagus (Nice design). Ada model lain? asks for other styles.",
+      "audio": "audio/id/words/w-model.mp3",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kualitas",
+      "indonesian": "kualitas",
+      "english": "quality",
+      "pos": "noun",
+      "cultureNote": "Barang KW, from kualitas, are copies of brand-name goods, graded KW1, KW2 and so on. The real thing is ori (original).",
+      "audio": "audio/id/words/w-kualitas.mp3",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-garansi",
+      "indonesian": "garansi",
+      "english": "warranty, guarantee",
+      "pos": "noun",
+      "registerNotes": "Garansinya berapa lama? (How long is the warranty?) Keep the kartu garansi (warranty card) with the receipt.",
+      "audio": "audio/id/words/w-garansi.mp3",
+      "tags": [
+        "shopping"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tukar",
+      "indonesian": "tukar",
+      "english": "to exchange, swap",
+      "pos": "verb",
+      "registerNotes": "Boleh tukar? (Can I exchange it?) for the wrong size, and tukar uang for changing money, at a money changer. Menukar is the written form.",
+      "audio": "audio/id/words/w-tukar.mp3",
+      "tags": [
+        "shopping",
+        "money"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menawar",
+      "indonesian": "menawar",
+      "english": "to bargain, haggle; to make an offer",
+      "pos": "verb",
+      "forms": {
+        "root": "tawar"
+      },
+      "registerNotes": "In speech nawar; Boleh ditawar? asks whether the price is open to bargaining. Bargain at markets and stalls, not in shops with price tags.",
+      "pitfallNote": "Tawar on its own means plain or unsweetened: teh tawar is tea without sugar, and air tawar is fresh water.",
+      "audio": "audio/id/words/w-menawar.mp3",
+      "tags": [
+        "shopping",
+        "money"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-murah-meriah",
+      "indonesian": "murah meriah",
+      "english": "cheap and cheerful, great value",
+      "pos": "adjective",
+      "registerNotes": "Praise for good value: Makanannya murah meriah (The food is cheap and good).",
+      "audio": "audio/id/words/w-murah-meriah.mp3",
+      "tags": [
+        "shopping",
+        "money"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hemat",
+      "indonesian": "hemat",
+      "english": "thrifty, economical; to save",
+      "pos": "adjective",
+      "registerNotes": "For people and things: Dia hemat sekali (She's very careful with money), hemat listrik (saving electricity). Paket hemat is a value meal or bundle.",
+      "audio": "audio/id/words/w-hemat.mp3",
+      "tags": [
+        "money"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-boros",
+      "indonesian": "boros",
+      "english": "wasteful, extravagant (with money)",
+      "pos": "adjective",
+      "registerNotes": "Jangan boros (Don't waste your money). It also describes things that use a lot: Motor ini boros bensin (This bike uses a lot of petrol).",
+      "audio": "audio/id/words/w-boros.mp3",
+      "tags": [
+        "money"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pulsa",
+      "indonesian": "pulsa",
+      "english": "phone credit",
+      "pos": "noun",
+      "cultureNote": "Most phones are prepaid: you isi pulsa (top up) at a phone stall, a minimarket or in an app, then use it to buy a paket data.",
+      "audio": "audio/id/words/w-pulsa.mp3",
+      "tags": [
+        "money",
+        "daily life"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

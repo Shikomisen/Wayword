@@ -3,8 +3,8 @@
 An offline-first language-learning app for real conversation. It runs in the browser, installs to a phone's home screen, works without a connection, and keeps every bit of progress on the device.
 
 - **Live:** https://shikomisen.github.io/Wayword/
-- **Version:** v25
-- **Courses:** Japanese for English speakers; English for Japanese speakers and for Indonesian speakers. Indonesian for English and Japanese speakers, and Japanese for Indonesian speakers, are in the works.
+- **Version:** v26
+- **Courses:** six, every pair of English, Japanese and Indonesian in both directions, each with three levels (First steps, Basic, Intermediate).
 - **Interface:** English, Japanese and Indonesian.
 
 This README is the complete description of the project: what it does, how it's built, the content format, the learning rules, storage, audio, offline behaviour, and how to run, test, deploy or port it. It describes what is true now. The design rationale and project history are kept in the maintainer's private notes, outside this repository.
@@ -49,8 +49,11 @@ Wayword teaches the language you need to talk with people. Words come first, the
 | Japanese, for English speakers (`en-ja`) | An English speaker who understands and speaks reasonably well but reads weakly: hiragana still shaky, katakana not yet learned | 1. Remember words and know what to say. 2. Chain them into sentences with connectors (て, から, けど, たら…). 3. Read: solid kana first, then kanji, with furigana that fades as reading improves |
 | English, for Japanese speakers (`ja-en`) | A Japanese speaker who wants practical, everyday English, starting with the times they're the customer: ordering food, trying on clothes, asking for things | 1. Words first. 2. Practical phrases and patterns ("I'd like ○○, please"). 3. Connectors and polite phrasing. 4. Hearing real replies. It uses New Zealand English, and speaking comes first, so listening is a small daily drill |
 | English, for Indonesian speakers (`id-en`) | An Indonesian speaker who learned English at school but finds it hard to say things on the spot | The same as `ja-en`: the same New Zealand English and clips, with every meaning, note and explanation written for an Indonesian speaker, and the mistakes Indonesian speakers make (§3) |
+| Indonesian, for English speakers (`en-id`) | Anyone who wants to talk with Indonesians — travelling, a partner's family, friends — starting from nothing | 1. Words first, including the little words in every sentence. 2. Set phrases for warungs, markets, ojeks and homestays, and casual speech with its standard version. 3. Connectors, then the prefixes and suffixes of real speech. 4. Hearing replies. Everyday standard Indonesian, polite-neutral, spelt as in EYD |
+| Indonesian, for Japanese speakers (`ja-id`) | The same learner, from Japanese | The same as `en-id`: the same Indonesian and clips, with every meaning, note and explanation written for a Japanese speaker (§3) |
+| Japanese, for Indonesian speakers (`id-ja`) | The `en-ja` learner, from Indonesian | The same as `en-ja`: the same Japanese, characters and clips, with every meaning, note and explanation written for an Indonesian speaker (§3) |
 
-Controls a course can't use don't appear: the English course has no furigana and no Reading tab.
+Controls a course can't use don't appear: the English and Indonesian courses have no furigana and no Reading tab.
 
 **Levels.** Each course is divided into levels, and the learner is always at one of them (§7.10):
 
@@ -77,7 +80,7 @@ The equivalences are approximate: the levels are built around what a learner can
 - A ⚙️ at the top right opens the settings every course shares (§2.11).
 - The speaker defaults to the device language if the app teaches from it, otherwise English, and it's remembered.
 - Inside a course, a slim bar ("‹ Languages · English › Japanese ⚙️") leads back to the picker and holds the way into Settings. The ⚙️ appears once the course is started: during placement, the bar holds only the way back and the pair (§2.2). Settings has a Language row.
-- The version shows at the foot of the picker ("Wayword v25") and in Settings → About.
+- The version shows at the foot of the picker ("Wayword v26") and in Settings → About.
 
 ### 2.2 Placement
 
@@ -212,6 +215,8 @@ After every answer the learner sees the full sentence and its audio, and why, if
 
 ### 2.7 Reading (Japanese)
 
+The Japanese courses, for English and for Indonesian speakers, have a Reading tab; its wording is in the learner's language (the `reading.*` interface strings).
+
 The **Reading** tab covers the writing system. It has five sets:
 - **Hiragana:** 104 characters.
 - **Katakana:** 116 characters.
@@ -331,7 +336,7 @@ The **Translate** tab is for when you don't know how to say something, or what s
   - **Copy** copies it: the translation, or on a course match, its answer side (what to say, or what it means). Where the clipboard is refused, it says to press and hold the text instead.
   - It isn't shown when it says exactly what an "In your course" item says.
   - It's labelled as a machine translation: usually right for short, everyday sentences, and worth checking for anything important.
-- **The translator is a download,** offered on the page with its size: 109 MB for English ↔ Japanese, 48 MB for English ↔ Indonesian. A course downloads only the models it uses, and courses share them. It's fetched only when asked, from this app's own site. From then on it works with no connection. **Remove** takes it off the device.
+- **The translator is a download,** offered on the page with its size: 109 MB for English ↔ Japanese, 48 MB for English ↔ Indonesian, and 153 MB for Japanese ↔ Indonesian, which goes through English and so uses all four models (§6.15). A course downloads only the models it uses, and courses share them. It's fetched only when asked, from this app's own site. From then on it works with no connection. **Remove** takes it off the device.
   - Each file is streamed straight into a cache of its own that outlives updates (§10.1), then read back and checked against its sha256. A damaged file is taken out again.
   - A file gets three tries. If the download still stops, the page says why (no space, offline, or the connection) with the details, and trying again carries on from the files already kept.
   - It asks to be kept open while it downloads, ideally on Wi-Fi: a phone can stop a page's download when the app goes to the background.
@@ -348,10 +353,10 @@ How good it is, on 20 everyday sentences each way (21/10/2026): English → Japa
 |---|---|---|---|---|
 | Japanese, for English speakers | `en-ja` | available | `content/ja/` | `audio/ja/`: 1,725 clips, 22.6 MB |
 | English, for Japanese speakers | `ja-en` | available | `content/en/` | `audio/en/`: 1,374 clips, 19.0 MB |
-| Indonesian, for English speakers | `en-id` | planned (placeholder screen) | — | — |
-| Indonesian, for Japanese speakers | `ja-id` | planned (placeholder screen) | — | — |
+| Indonesian, for English speakers | `en-id` | available | `content/en-id/` | `audio/id/`: 1,288 clips |
+| Indonesian, for Japanese speakers | `ja-id` | available | `content/ja-id/` | `audio/id/`: `en-id`'s clips, and 20 of its own |
 | English, for Indonesian speakers | `id-en` | available | `content/id-en/` | `audio/en/`: `ja-en`'s clips, and 63 of its own |
-| Japanese, for Indonesian speakers | `id-ja` | planned (placeholder screen) | — | — |
+| Japanese, for Indonesian speakers | `id-ja` | available | `content/id-ja/` | `audio/ja/`: `en-ja`'s clips |
 
 | | Japanese (`en-ja`) | English (`ja-en`) | English (`id-en`) |
 |---|---|---|---|
@@ -374,6 +379,26 @@ How good it is, on 20 everyday sentences each way (21/10/2026): English → Japa
 | Intermediate | 254 words in 10 decks; 50 sentences in 2 decks; 75 phrases in 6 categories; 26 grammar lessons; More Kanji; the lines said back; 5 scenarios | 258 words in 10 decks; 50 sentences in 2 decks; 73 phrases in 6 categories; 22 grammar lessons; 30 more lines said back; 6 scenarios |
 
 These are the counts for v20; `id-en` was added in v25. `npm test` prints them as it validates.
+
+**The Indonesian courses** (v26). `ja-id` has `en-id`'s content, with its own sound pairs; `id-ja` has `en-ja`'s, without the dictionary.
+
+| | Indonesian (`en-id`, `ja-id`) | Japanese (`id-ja`) |
+|---|---|---|
+| Words | 511 in 24 decks | 471 in 23 decks |
+| Sentences | 91 in 4 decks | 66 in 3 decks |
+| Phrases | 259 in 17 categories, 35 of them casual, each with its standard version | 262 in 17 categories |
+| Lessons | 55: 40 grammar lessons and 15 connectors; 220 examples | 62, as `en-ja` |
+| Characters | — | 496, as `en-ja` |
+| Listening | 60 lines; 16 sound pairs for English speakers, 15 for Japanese speakers | 32 lines and 15 sound pairs |
+| Scenarios | 13 | 13 |
+| Dictionary, for Paste a message | — | — (JMdict has no Indonesian meanings) |
+| Offline translator | English ↔ Indonesian (`en-id`), 48 MB; Japanese ↔ Indonesian through English (`ja-id`), 153 MB | Japanese ↔ Indonesian through English, 153 MB |
+
+| Level | Indonesian (`en-id`, `ja-id`) |
+|---|---|
+| First steps | 115 words in 6 decks; 16 sentences; 62 phrases in 3 categories; 18 grammar lessons; the sound pairs |
+| Basic | 135 words in 8 decks; 25 sentences; 117 phrases in 8 categories (30 casual); 15 connector lessons; the lines said back; 8 scenarios |
+| Intermediate | 261 words in 10 decks; 50 sentences in 2 decks; 80 phrases in 6 categories; 22 grammar lessons; more lines said back; 5 scenarios |
 
 **Japanese, for English speakers.** Each level is listed in next-step order (`step`). Decks marked \* are its starters, added by placement or by moving up.
 
@@ -468,6 +493,54 @@ These are the counts for v20; `id-en` was added in v25. `npm test` prints them a
   - Every item has a Japanese gloss.
   - Phrases carry a 使い方 (usage) note, and many words and phrases a よくある間違い (common mistake) note on katakana English and direct-translation traps.
   - The interface and every note are in Japanese.
+
+**Indonesian, for English speakers.** Each level in next-step order; \* marks a level's starters.
+
+- **First steps:**
+  - *Phrases:* Greetings & Politeness 26\*, Numbers, Time & Money 25\*.
+  - *Words:* People & Family 19\*, Everyday Verbs 20\*, Little Words 18\*, Words That Hold It Together 20 (tidak, bukan, mau, bisa, sudah, belum, di, ke, dari, dan, tapi, karena…).
+  - *Sentences:* Everyday Sentences 16.
+  - *Words:* Things Around You 20, Time & Days 18.
+  - *Phrases:* Small Talk 11.
+  - 18 grammar lessons: no "to be", ini and itu, pronouns, possession, noun then adjective, plurals, tidak and bukan, questions, ada and punya, verbs that never change, mau and bisa, sudah, sedang, akan and belum, di, ke and dari, counting, degree words, and polite requests. The sound pairs.
+- **Basic:**
+  - *Phrases:* Casual Speech 30\* (nggak, udah, aja, gimana, kok, sih, dong…, each with its standard version).
+  - *Words:* Food & Drink 21\*.
+  - *Phrases:* Warungs & Restaurants 13\*, Shopping & Bargaining 13\*.
+  - *Words:* Describing Things 19\*.
+  - *Phrases:* Getting Around 15, Directions & Getting Lost 11.
+  - *Words:* Places & Getting Around 18.
+  - *Sentences:* Getting Around 25.
+  - *Words:* Home & Daily Life 18.
+  - *Phrases:* Hotels & Homestays 11, Airport & Immigration 12, Emergencies & Health 12.
+  - *Words:* Feelings & Health 16, Weather & Nature 15, Work & Study 14, Free Time 14.
+  - 15 connector lessons (dan, lalu, juga, atau, tapi, walaupun, karena, soalnya, jadi, kalau, waktu, sebelum, sesudah, supaya, sambil), the lines said back, and 8 scenarios: a warung, the market, an ojek, a homestay, immigration, asking the way, a pharmacy, a neighbour.
+- **Intermediate:**
+  - *Words:* More Verbs 28\* (with their roots).
+  - *Phrases:* Reactions & Listening 13\*.
+  - *Words:* Feelings & Reactions 26\*.
+  - *Sentences:* Talking About Yourself 25.
+  - *Words:* People & Social Life 26.
+  - *Phrases:* Plans & Invitations 13.
+  - *Words:* Time & How Often 26, More Describing Words 26.
+  - *Phrases:* Opinions & Agreeing 13.
+  - *Words:* Opinions & Ideas 26, Travel & Sightseeing 26.
+  - *Sentences:* Out and About 25.
+  - *Phrases:* Meeting the Family 14.
+  - *Words:* Health & the Doctor 26.
+  - *Phrases:* The Doctor & Pharmacy 14.
+  - *Words:* Home & Everyday Life 25, Shopping & Money 26.
+  - *Phrases:* Problems & Complaints 13.
+  - 22 grammar lessons: ber-, me- and its sound changes, di-, -kan, -i, ter-, ke-…-an, pe-…-an and -an, se-, lebih and paling, yang, saying it twice, -nya, pernah, masih and lagi, kok and sih, dong, deh and kan, katanya, kayaknya, minta and mohon, saling and sendiri. More lines said back, and 5 scenarios: dinner with a partner's family, weekend plans, a clinic, a problem with the room, the wrong order.
+- **The language:**
+  - Everyday spoken standard Indonesian, polite-neutral (saya, Bapak and Ibu, tidak), spelt as in EYD and KBBI. Casual forms are taught in their own category, each with the standard version, and marked wherever else they appear.
+  - Notes: *Usage*, *Watch out* (an English speaker's typical mistakes), and *Culture*.
+  - No script to learn: no Reading tab, furigana or romaji. Verbs with prefixes show their root (`forms.root`).
+  - The sound pairs are for English speakers: unstressed vowels keep their sound (batu, bata), c is always "ch" (cari, kari), and the tapped r (rusa, lusa).
+
+**Indonesian, for Japanese speakers.** Built from `en-id` the way `id-en` is built from `ja-en` (below): the same Indonesian, ids, exercises and clips, with every meaning, note (使い方, よくある間違い, 文化), lesson explanation and pattern, and scenario feedback rewritten in Japanese for a Japanese speaker: no particles, the describing word after the noun, l against r, final consonants with no added vowel, answering ya to everything. The sound pairs are replaced by ones hard for Japanese speakers: R and L, final consonants, and final n against ng (20 new clips).
+
+**Japanese, for Indonesian speakers.** Built from `en-ja` the same way: the same Japanese, furigana, romaji, characters, ids, exercises and clips, with every meaning, note, kanji meaning, lesson explanation and pattern, and scenario feedback rewritten in Indonesian (subject–object–verb against Indonesian's subject–verb–object, particles against prepositions, verbs that change form, です・ます against saya and Bapak/Ibu). The Reading tab, its kana drill and the kanji sets work as in `en-ja`, in Indonesian. There's no Paste a message: JMdict has no Indonesian meanings.
 
 **English, for Indonesian speakers.** Built from the English course for Japanese speakers, and shaped like it level by level (ADR in the maintainer's notes; the method is §6.13):
 - **The same English:** every word, phrase, sentence, lesson example, scenario line and listening line, with the same ids, exercises and clips (`audio/en/`).
@@ -634,14 +707,22 @@ Wayword/
 │   ├── en/             English, for Japanese speakers: manifest.json, 16 phrase categories,
 │   │                   words/ (24), sentences/ (3), grammar/ (40), patterns/ (7),
 │   │                   connectors/ (23), listening/ (3), scenarios/ (13)
-│   └── id-en/          English, for Indonesian speakers: the same files as en/, rewritten (§3)
+│   ├── en-id/          Indonesian, for English speakers: manifest.json, 17 phrase categories,
+│   │                   words/ (24), sentences/ (4), grammar/ (40), connectors/ (15),
+│   │                   listening/ (3), scenarios/ (13)
+│   ├── ja-id/          Indonesian, for Japanese speakers: the same files as en-id/, rewritten (§3)
+│   ├── id-en/          English, for Indonesian speakers: the same files as en/, rewritten (§3)
+│   └── id-ja/          Japanese, for Indonesian speakers: the same files as ja/, rewritten, without
+│                       the dictionary (§3)
 ├── audio/
 │   ├── ja/             1,725 clips: phrases at the top level; casual/ chars/ connectors/
 │   │                   grammar/ listening/ scenario/ sentences/ words/
-│   └── en/             1,374 clips: phrases at the top level; connectors/ grammar/ listening/
-│                       patterns/ scenario/ sentences/ words/
+│   ├── en/             1,437 clips: phrases at the top level; connectors/ grammar/ listening/
+│   │                   patterns/ scenario/ sentences/ words/
+│   └── id/             1,308 clips: phrases at the top level; casual/ connectors/ grammar/
+│                       listening/ scenario/ sentences/ words/
 ├── mt/                 the offline translator (§6.15): translator.json, Mozilla's Bergamot engine
-│                       (bergamot-translator.js and .wasm), a model per direction (en-ja/, ja-en/),
+│                       (bergamot-translator.js and .wasm), a model per direction (en-ja/, ja-en/, en-id/, id-en/),
 │                       and LICENSE (MPL 2.0). Marked -text in .gitattributes, so git never alters a byte
 ├── icons/              192, 512, maskable 512 and 180 (apple-touch) PNGs, from tools/make-icons.mjs
 ├── tools/              Node scripts: dev server, generators, test suites, deploy (§11.2)
@@ -1347,7 +1428,7 @@ Settings defaults: `newPerDay` 10, `newCharsPerDay` 15, directions recognition a
 
   A scenario reply that references a phrase plays that phrase's clip; an inline reply has none.
 - **No speech at runtime:** the app never synthesises speech for bundled content.
-- **The totals:** Japanese 1,725 clips (22.6 MB), English 1,437 (19.3 MB): `ja-en`'s 1,374, and `id-en`'s 63. A course built from another one plays the original's clips (§6.13).
+- **The totals:** Japanese 1,725 clips (22.6 MB), English 1,437 (19.3 MB): `ja-en`'s 1,374, and `id-en`'s 63; Indonesian 1,308 (24 MB): `en-id`'s 1,288, and `ja-id`'s 20. A course built from another one plays the original's clips (§6.13).
 
 ### 9.2 Generating clips
 
@@ -1403,7 +1484,7 @@ Six Japanese words whose kana spelling is a common homophone (あめ, かえる,
 
 ### 10.1 Caches
 
-- **`wayword-<version>`** (`wayword-v25`): one cache per version, holding the app and the courses this device keeps.
+- **`wayword-<version>`** (`wayword-v26`): one cache per version, holding the app and the courses this device keeps.
 - **`wayword-translator`** isn't versioned either. It holds the offline translator's files (§6.15), put there by the app when the learner downloads it, and never by an install, so an update doesn't throw 109 MB away.
 - **`wayword-kept`** isn't versioned. It holds `./__kept-courses.json`, the ids of the courses this device keeps, and `./__connection.json`, `{ mode: "online" or "offline" }` (§10.6).
 - **Cleanup:** only caches named `wayword-…`, or with the legacy prefix `nihongo-tabi-…`, are ever deleted, because the `github.io` origin is shared with other sites. A worker deletes only caches from older versions, never a later version's.
@@ -1441,7 +1522,7 @@ The app waits up to 10 minutes for a keep and 15 seconds for a status.
 5. Two asks for the same course share one download, and writes to the record are serialised.
 6. Once the app's files and every kept course are complete, the older versions' caches are deleted.
 
-**Sizes,** in files a course keeps (its manifest, content files and clips): the Japanese course 1,852 (its dictionary among them), English for Japanese speakers 1,504, and English for Indonesian speakers 1,507. A course built from another one shares most of its clips with it, and a shared file is kept once.
+**Sizes,** in files a course keeps (its manifest, content files and clips): Japanese for English speakers 1,852 (its dictionary among them), English for Japanese speakers 1,504, Indonesian for English speakers 1,405, Indonesian for Japanese speakers 1,403, English for Indonesian speakers 1,507, and Japanese for Indonesian speakers 1,851. A course built from another one shares most of its clips with it, and a shared file is kept once.
 
 ### 10.4 Fetch strategy
 
@@ -1534,11 +1615,11 @@ Setup: `npm ci` installs the two dev dependencies, `jsdom` and `puppeteer-core`.
 
 | Suite | What it covers | Checks (21/10/2026) |
 |---|---|---|
-| `tools/selftest.mjs` | The content contract (§6.12), including furigana short enough to fit a line, the levels, the course dictionary and the offline translator's files; interface strings; the service-worker shell and version; SRS regressions | 101,278 |
-| `tools/integration-test.mjs` | The real modules, end to end in Node (with a filesystem `fetch` and a localStorage shim): placement and the starting level (sampling only the levels that ask for it), levels (progress, the next step, moving up, older learners, listening by level), decks, queues, grading, directions, drills, mastery, listening, backups, course isolation, the romaji modes, the dictionary: inflections, lookups, readings, suggested furigana and saved messages; and Translate: the course search, and the real worker translating both ways with Mozilla's engine, Japanese ↔ Indonesian through English | 375 |
+| `tools/selftest.mjs` | The content contract (§6.12), including furigana short enough to fit a line, the levels, the course dictionary and the offline translator's files; interface strings; the service-worker shell and version; SRS regressions | 197,319 |
+| `tools/integration-test.mjs` | The real modules, end to end in Node (with a filesystem `fetch` and a localStorage shim): placement and the starting level (sampling only the levels that ask for it), levels (progress, the next step, moving up, older learners, listening by level), decks, queues, grading, directions, drills, mastery, listening, backups, course isolation, the romaji modes, the dictionary: inflections, lookups, readings, suggested furigana and saved messages; and Translate: the course search, and the real worker translating both ways with Mozilla's engine, Japanese ↔ Indonesian through English; every Indonesian course through placement, its queue and grading, and each course built from another keeping its target-language text | 405 |
 | `tools/language-pack-test.mjs` | An Esperanto course added purely as content, run through placement, the deck, the queue and grading | 13 |
 | `tools/voice-test.mjs` | The generator against a local stand-in for Azure: headers, SSML, voice choice, rate limits, the engine switch, every no-key path | 18 |
-| `tools/render-test.mjs` | Every screen of both courses rendered in jsdom, including the starting level at placement, Today's level and next step, listening only where the level has some, Learn and the lessons list by level, furigana in a lesson's pattern, whole drill sessions, backup and restore through the real buttons, the reading-aid modes, the connection setting, the update bar with Not now, Paste a message from a message with no dictionary yet to a word added, the Translate tab's course search, directions and Copy, the picker's Settings, the update bar following the interface language, a screen still loading when a newer tap overtakes it (drawn alone, with the right tab lit), and the course bar during placement (no ⚙️ until it's done, and nothing stray in a planned course's); the picker in Indonesian, and English for Indonesian speakers with no Japanese left on its screens | 399 |
+| `tools/render-test.mjs` | Every screen of both courses rendered in jsdom, including the starting level at placement, Today's level and next step, listening only where the level has some, Learn and the lessons list by level, furigana in a lesson's pattern, whole drill sessions, backup and restore through the real buttons, the reading-aid modes, the connection setting, the update bar with Not now, Paste a message from a message with no dictionary yet to a word added, the Translate tab's course search, directions and Copy, the picker's Settings, the update bar following the interface language, a screen still loading when a newer tap overtakes it (drawn alone, with the right tab lit), and the course bar during placement (no ⚙️ until it's done, and nothing stray in a planned course's); the picker in Indonesian, English for Indonesian speakers with no Japanese left on its screens, Japanese for Indonesian speakers with Reading in Indonesian, and Indonesian for English and Japanese speakers | 418 |
 | `tools/sw-test.mjs` | The real `sw.js` in a sandbox: registration in every boot path; installing, keeping courses, resuming and retrying over a flaky connection; one version replacing another on shared Cache Storage; the translator's own cache; a connection that never answers, and offline mode | 57 |
 | `tools/browser-check.mjs` | Headless Firefox through a proxy that can cut every connection, or stall them (take each request and never answer): install, per-course downloads, every tab online and offline, text fitting a 320px screen at the largest size, an IndexedDB backup round trip, an update while the app is open (Not now, then Update now from Settings), opening on a connection that never answers, online and in offline mode, pasting a message offline, with a word looked up and added, and the offline translator: downloaded into its own cache, even from a server that takes 12 s to start each big file, translating with furigana at 320px, copying, and translating again offline. `--upgrade-from <ref>` installs that build first; `--live <url>` checks the deployed site | 80 local, 75 live |
 
@@ -1653,7 +1734,8 @@ Native platforms also allow what the web app can't do without a server: schedule
 - A native app (§13).
 - Live AI conversation practice, and AI-assisted placement. Both need a backend proxy to hold an API key.
 - Cloud sync. Today the backup file is how progress moves.
-- Indonesian, the rest of it: Indonesian for English and for Japanese speakers, and Japanese for Indonesian speakers. They're in the works.
+- Paste a message for the Indonesian courses: an open Indonesian dictionary, and Indonesian meanings for the Japanese one.
+- Advanced, above Intermediate, for any course.
 
 **Not planned**
 - Handwriting and stroke order: the app teaches reading.

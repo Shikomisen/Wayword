@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "family",
+  "title": "Meeting the Family",
+  "order": 15,
+  "description": "Being a guest with a partner's family: greeting the parents, food offered again and again, the questions families ask, and taking leave properly.",
+  "phrases": [
+    {
+      "id": "fam-01",
+      "indonesian": "Selamat sore, Om, Tante.",
+      "english": "Good afternoon, Uncle, Auntie.",
+      "registerNotes": "Many city families have their children's friends and partners call the parents Om and Tante (from Dutch); others prefer Bapak and Ibu. Ask your partner which this family uses.",
+      "cultureNote": "Greet the oldest first. Many families expect salim: take the elder's right hand and touch it lightly to your forehead or nose, as your partner does.",
+      "audio": "audio/id/fam-01.mp3",
+      "tags": [
+        "family",
+        "greetings",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fam-02",
+      "indonesian": "Saya Sam, pacarnya Dewi.",
+      "english": "I'm Sam, Dewi's partner.",
+      "registerNotes": "Pacar is a boyfriend or girlfriend; the -nya ties you to Dewi, as in temannya Dewi (Dewi's friend).",
+      "cultureNote": "Some families are conservative about dating, and your partner may introduce you as a friend (teman) at first. Agree beforehand how you'll be introduced.",
+      "audio": "audio/id/fam-02.mp3",
+      "tags": [
+        "family",
+        "introductions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fam-03",
+      "indonesian": "Terima kasih sudah mengundang saya.",
+      "english": "Thank you for having me.",
+      "registerNotes": "Say it after the greetings, and again as you leave. Terima kasih atas undangannya is a little more formal.",
+      "audio": "audio/id/fam-03.mp3",
+      "tags": [
+        "family",
+        "thanks"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-04",
+      "indonesian": "Ini ada sedikit oleh-oleh dari Selandia Baru.",
+      "english": "I've brought a little something from New Zealand.",
+      "registerNotes": "Say it as you hand the gift over. Sedikit (a little) keeps it modest, which is the polite way to give.",
+      "cultureNote": "Arriving with something is expected: oleh-oleh from home is ideal, or a box of cakes or fruit. Hand it over with your right hand, or both hands.",
+      "audio": "audio/id/fam-04.mp3",
+      "tags": [
+        "family",
+        "gifts"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-05",
+      "indonesian": "Aduh, jangan repot-repot, Tante.",
+      "english": "Oh, please don't go to any trouble.",
+      "registerNotes": "Said when tea, snacks or a meal appear. It's politeness, not a refusal: the host carries on anyway, and you then accept with thanks.",
+      "audio": "audio/id/fam-05.mp3",
+      "tags": [
+        "family",
+        "food"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-06",
+      "indonesian": "Ayo, dimakan. Jangan malu-malu.",
+      "english": "Come on, eat up. Don't be shy.",
+      "registerNotes": "What hosts say, often more than once; reply Iya, Tante, terima kasih and take some. Offering with di- is the usual pattern: Silakan diminum (please, have your drink).",
+      "cultureNote": "Guests usually wait to be invited before eating or drinking what's put out. Once the host says silakan or ayo, go ahead.",
+      "audio": "audio/id/fam-06.mp3",
+      "tags": [
+        "family",
+        "food"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-07",
+      "indonesian": "Masakannya enak sekali, Tante.",
+      "english": "Your cooking is delicious.",
+      "registerNotes": "Masakan is cooking, what has been cooked. Asking Ini masakan Tante sendiri? (Did you make this yourself?) is a compliment too.",
+      "audio": "audio/id/fam-07.mp3",
+      "tags": [
+        "family",
+        "food",
+        "compliments"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fam-08",
+      "indonesian": "Boleh saya bantu, Tante?",
+      "english": "Can I help?",
+      "registerNotes": "Offer after the meal, especially to clear plates. The answer is usually Tidak usah, duduk saja (No need, just sit), but the offer is appreciated.",
+      "audio": "audio/id/fam-08.mp3",
+      "tags": [
+        "family",
+        "helping"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fam-09",
+      "indonesian": "Sudah, Tante, terima kasih. Saya sudah kenyang.",
+      "english": "I'm fine, thank you. I'm full.",
+      "registerNotes": "Sudah here is 'that's enough'. Expect to be urged more than once (Tambah lagi, have some more), and repeat it warmly each time.",
+      "pitfallNote": "A plain Tidak, terima kasih sounds cold to a host; sudah kenyang gives a reason nobody can argue with.",
+      "audio": "audio/id/fam-09.mp3",
+      "tags": [
+        "family",
+        "food",
+        "declining"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-10",
+      "indonesian": "Sedikit saja, Tante.",
+      "english": "Just a little, please.",
+      "registerNotes": "When the host keeps insisting, accepting a small extra spoonful is often kinder than refusing a third time.",
+      "audio": "audio/id/fam-10.mp3",
+      "tags": [
+        "family",
+        "food"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fam-11",
+      "indonesian": "Kapan nikah?",
+      "english": "So when are you getting married?",
+      "registerNotes": "You'll hear it, along with Kapan punya anak? (When are you having children?), as friendly interest rather than prying.",
+      "cultureNote": "It's the stock question at family gatherings, Lebaran especially, and a smile and a light answer are all it needs.",
+      "audio": "audio/id/fam-11.mp3",
+      "tags": [
+        "family",
+        "questions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "fam-12",
+      "indonesian": "Doakan saja, ya, Tante.",
+      "english": "Just keep us in your prayers.",
+      "registerNotes": "The classic answer to Kapan nikah? and other questions about the future: warm, and it commits to nothing. Mohon doanya, Tante is a slightly more formal version.",
+      "audio": "audio/id/fam-12.mp3",
+      "tags": [
+        "family",
+        "questions"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-13",
+      "indonesian": "Agamanya apa?",
+      "english": "What's your religion?",
+      "registerNotes": "You may hear it in the first conversations with a partner’s family, or from a neighbour. A simple factual answer is enough.",
+      "cultureNote": "A normal question in Indonesia, where religion is on the ID card, not a rude one. From a partner's family it often has marriage in mind, since marrying across religions is difficult there, so agree with your partner how to answer.",
+      "audio": "audio/id/fam-13.mp3",
+      "tags": [
+        "family",
+        "questions"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "fam-14",
+      "indonesian": "Saya pamit dulu, Om, Tante.",
+      "english": "I'll be off now, Uncle, Auntie.",
+      "registerNotes": "Pamit is taking your leave properly; dulu ('first') softens it, as if you'll be back. Say it to each of the elders, not just to your partner.",
+      "cultureNote": "Slipping away without pamit is rude. Hosts often protest (Kok buru-buru? Why the hurry?), so start saying goodbye a little before you mean to leave.",
+      "audio": "audio/id/fam-14.mp3",
+      "tags": [
+        "family",
+        "leaving",
+        "essential"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

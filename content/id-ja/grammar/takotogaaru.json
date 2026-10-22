@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-takotogaaru",
+  "connector": "〜たことがある",
+  "gloss": "pernah (melakukan)",
+  "title": "〜たことがある — pernahkah kamu…?",
+  "pattern": "bentuk た kata kerja + ことがある / ことがない",
+  "explanation": "Untuk menceritakan pengalaman — pernah, belum pernah — pakai bentuk た + ことがある. Artinya sama dengan “pernah”: {日本|にほん}に{行|い}ったことがあります — saya pernah ke Jepang. Belum pernah: ことがない. Bertanya: {食|た}べたことがありますか — pernah makan ini?",
+  "natural": "Pembuka obrolan yang bagus: {北海道|ほっかいどう}に{行|い}ったことある？ — pernah ke Hokkaido?",
+  "stiff": "Bukan untuk satu kejadian baru-baru ini (“kemarin saya pergi”): itu cukup {行|い}きました. ことがある tentang punya pengalaman itu atau tidak, sama seperti “pernah”.",
+  "examples": [
+    {
+      "id": "gx-takotogaaru-1",
+      "japanese": "日本に行ったことがありますか。",
+      "furigana": "{日本|にほん}に{行|い}ったことがありますか。",
+      "indonesian": "Apakah Anda pernah ke Jepang?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本|にほん}に",
+          "w": "w-nihon"
+        },
+        {
+          "t": "{行|い}ったことが",
+          "w": "w-iku"
+        },
+        {
+          "t": "ありますか。"
+        }
+      ],
+      "gap": {
+        "before": "{日本|にほん}に{行|い}った",
+        "answer": "ことが",
+        "after": "ありますか。",
+        "options": [
+          "ことが",
+          "ものが",
+          "ところが"
+        ],
+        "why": "Pengalaman: た + ことがある."
+      },
+      "audio": "audio/ja/grammar/gx-takotogaaru-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "takotogaaru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-takotogaaru-2",
+      "japanese": "温泉には入ったことがないです。",
+      "furigana": "{温泉|おんせん}には{入|はい}ったことがないです。",
+      "indonesian": "Saya belum pernah berendam di pemandian air panas.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{温泉|おんせん}には",
+          "w": "w-onsen"
+        },
+        {
+          "t": "{入|はい}ったことが"
+        },
+        {
+          "t": "ないです。"
+        }
+      ],
+      "gap": {
+        "before": "{温泉|おんせん}には{入|はい}ったことが",
+        "answer": "ない",
+        "after": "です。",
+        "options": [
+          "ない",
+          "ある",
+          "いない"
+        ],
+        "why": "Belum pernah: ことがない."
+      },
+      "audio": "audio/ja/grammar/gx-takotogaaru-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "takotogaaru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-takotogaaru-3",
+      "japanese": "納豆、食べたことある？",
+      "furigana": "{納豆|なっとう}、{食|た}べたことある？",
+      "indonesian": "Pernah makan natto?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{納豆|なっとう}、"
+        },
+        {
+          "t": "{食|た}べたこと",
+          "w": "w-taberu"
+        },
+        {
+          "t": "ある？"
+        }
+      ],
+      "gap": {
+        "before": "{納豆|なっとう}、",
+        "answer": "{食|た}べた",
+        "after": "ことある？",
+        "options": [
+          "{食|た}べた",
+          "{食|た}べる",
+          "{食|た}べて"
+        ],
+        "why": "ことがある memakai bentuk た: 食べた."
+      },
+      "audio": "audio/ja/grammar/gx-takotogaaru-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "takotogaaru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-takotogaaru-4",
+      "japanese": "一度だけ、新幹線に乗ったことがあります。",
+      "furigana": "{一度|いちど}だけ、{新幹線|しんかんせん}に{乗|の}ったことがあります。",
+      "indonesian": "Saya baru sekali naik shinkansen.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{一度|いちど}だけ、"
+        },
+        {
+          "t": "{新幹線|しんかんせん}に",
+          "w": "w-shinkansen"
+        },
+        {
+          "t": "{乗|の}ったことがあります。",
+          "w": "w-noru"
+        }
+      ],
+      "gap": {
+        "before": "{一度|いちど}だけ、{新幹線|しんかんせん}に{乗|の}った",
+        "answer": "ことがあります",
+        "after": "。",
+        "options": [
+          "ことがあります",
+          "ことにします",
+          "ようになります"
+        ],
+        "why": "Pengalaman yang pernah kamu alami: ことがあります."
+      },
+      "audio": "audio/ja/grammar/gx-takotogaaru-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "takotogaaru"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

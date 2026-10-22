@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-me-sounds",
+  "connector": "mem-, men-, meng-, meny-",
+  "gloss": "how me- changes the first sound",
+  "title": "me- and its sound changes",
+  "pattern": "p → mem- (pakai → memakai) · t → men- (tulis → menulis) · k → meng- (kirim → mengirim) · s → meny- (sapu → menyapu)",
+  "explanation": "me- blends with the first sound of the root, and four sounds disappear into it: p becomes m (pakai → memakai), t becomes n (tulis → menulis), k becomes ng (kirim → mengirim) and s becomes ny (sapu → menyapu). Other first sounds stay, with a matching mem-, men- or meng- in front (membeli, mendengar, mencari, mengambil, mengganti), and before l, m, n, r, w and y it's plain me- (melihat, memasak, merokok). To look a word up, take off the me- part: if a vowel follows mem-, men- or meny-, the root has lost its p, t or s (memakai → pakai, menunggu → tunggu, menyewa → sewa), unless it simply began with m or n (memasak → masak, menikah → nikah). After meng- and a vowel, try k or nothing: mengirim → kirim, mengambil → ambil.",
+  "natural": "You need this whenever you read: signs, menus, messages and the news are full of me- words, and a dictionary lists them under the root. It also helps with casual speech, where nunggu, ngirim and nyewa are just menunggu, mengirim and menyewa without the me-.",
+  "stiff": "Keeping the first letter (mempakai, mentunggu, mengkirim, mensewa) is the usual learner's slip, and it's always wrong with everyday words. A few borrowed words do keep it, such as mentraktir (to treat someone, from traktir), but you'll meet those one at a time.",
+  "examples": [
+    {
+      "id": "gx-me-sounds-1",
+      "indonesian": "Kita harus memakai helm.",
+      "english": "We have to wear helmets.",
+      "chunks": [
+        {
+          "t": "Kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "harus ",
+          "w": "w-harus"
+        },
+        {
+          "t": "memakai ",
+          "w": "w-memakai"
+        },
+        {
+          "t": "helm."
+        }
+      ],
+      "gap": {
+        "before": "Kita harus ",
+        "answer": "memakai",
+        "after": " helm.",
+        "options": [
+          "memakai",
+          "mempakai",
+          "mepakai"
+        ],
+        "why": "The p of pakai drops after me-, leaving memakai."
+      },
+      "audio": "audio/id/grammar/gx-me-sounds-1.mp3",
+      "tags": [
+        "grammar",
+        "me-sounds"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-me-sounds-2",
+      "indonesian": "Saya sudah menunggu satu jam.",
+      "english": "I've been waiting for an hour.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "menunggu ",
+          "w": "w-tunggu"
+        },
+        {
+          "t": "satu jam.",
+          "w": "w-jam"
+        }
+      ],
+      "gap": {
+        "before": "Saya sudah ",
+        "answer": "menunggu",
+        "after": " satu jam.",
+        "options": [
+          "menunggu",
+          "mentunggu",
+          "metunggu"
+        ],
+        "why": "The t of tunggu drops after me-, leaving menunggu."
+      },
+      "audio": "audio/id/grammar/gx-me-sounds-2.mp3",
+      "tags": [
+        "grammar",
+        "me-sounds"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-me-sounds-3",
+      "indonesian": "Ibu saya mengirim paket dari Bandung.",
+      "english": "My mum sent a parcel from Bandung.",
+      "chunks": [
+        {
+          "t": "Ibu ",
+          "w": "w-ibu"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mengirim ",
+          "w": "w-mengirim"
+        },
+        {
+          "t": "paket ",
+          "w": "w-paket"
+        },
+        {
+          "t": "dari Bandung.",
+          "w": "w-dari"
+        }
+      ],
+      "gap": {
+        "before": "Ibu saya ",
+        "answer": "mengirim",
+        "after": " paket dari Bandung.",
+        "options": [
+          "mengirim",
+          "mengkirim",
+          "menkirim"
+        ],
+        "why": "The k of kirim drops after me-, leaving meng- before the vowel: mengirim."
+      },
+      "audio": "audio/id/grammar/gx-me-sounds-3.mp3",
+      "tags": [
+        "grammar",
+        "me-sounds"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-me-sounds-4",
+      "indonesian": "Saya mau menyewa motor untuk seminggu.",
+      "english": "I'd like to hire a scooter for a week.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "menyewa ",
+          "w": "w-sewa"
+        },
+        {
+          "t": "motor ",
+          "w": "w-motor"
+        },
+        {
+          "t": "untuk seminggu.",
+          "w": "w-minggu"
+        }
+      ],
+      "gap": {
+        "before": "Saya mau ",
+        "answer": "menyewa",
+        "after": " motor untuk seminggu.",
+        "options": [
+          "menyewa",
+          "mensewa",
+          "mesewa"
+        ],
+        "why": "The s of sewa drops after me-, leaving meny-: menyewa."
+      },
+      "audio": "audio/id/grammar/gx-me-sounds-4.mp3",
+      "tags": [
+        "grammar",
+        "me-sounds"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

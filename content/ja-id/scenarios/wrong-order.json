@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "wrong-order",
+  "title": "注文と違う料理",
+  "category": "problems",
+  "setting": "ジャカルタのにぎやかなカフェでランチ。辛くないチキンのナシゴレンとアイスティーを注文しました。若い女性の店員さんが、お皿を持ってやって来ます。",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "server",
+      "indonesian": "Permisi, Kak. Ini mi gorengnya, ya.",
+      "japanese": "失礼します。ミーゴレンです。",
+      "audio": "audio/id/scenario/wrong-order-n1.mp3",
+      "options": [
+        {
+          "phraseId": "pro-01",
+          "quality": "good",
+          "feedback": "店側のミスでも、maaf から始めるとていねいです。日本語の「すみません」と同じ感覚で使えます。",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Maaf, Mbak, saya pesan nasi goreng ayam, bukan mi goreng.",
+          "japanese": "すみません、頼んだのはチキンのナシゴレンで、ミーゴレンじゃないんです。",
+          "feedback": "何を頼んだかを言えば、すぐに直してもらえます。bukan で二つの料理を対比しています。",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Ini tidak pesanan saya.",
+          "japanese": "これは私の注文ではありません。",
+          "feedback": "tidak は名詞の前には置けません。pesanan（注文）は名詞なので、「〜ではない」の bukan を使って Ini bukan pesanan saya. と言います。",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "server",
+      "indonesian": "Oh, maaf, Kak. Tadi pesan apa, ya?",
+      "japanese": "あ、すみません。ご注文は何でしたっけ？",
+      "audio": "audio/id/scenario/wrong-order-n2.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Nasi goreng ayam satu, yang tidak pedas.",
+          "japanese": "チキンのナシゴレンを1つ、辛くないほうで。",
+          "feedback": "料理、数、yang tidak pedas（辛くないの）。注文らしい、短くはっきりした言い方です。",
+          "next": "n3"
+        },
+        {
+          "phraseId": "res-03",
+          "quality": "awkward",
+          "feedback": "新しく注文する時にはいいですが、これだと追加の注文に聞こえます。Tadi saya pesan …（さっき〜を頼みました）なら、もう頼んだ料理のことだとはっきりします。",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Saya sudah bilang tadi! Nasi goreng!",
+          "japanese": "さっき言ったでしょう！ナシゴレンですよ！",
+          "feedback": "声を荒らげると、その場の全員が気まずくなり、料理も早くは来ません。落ち着いてもう一度注文を伝えましょう。",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "server",
+      "indonesian": "Baik, Kak, saya ganti, ya. Mohon ditunggu sebentar.",
+      "japanese": "かしこまりました、お取り替えします。少々お待ちください。",
+      "audio": "audio/id/scenario/wrong-order-n3.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Iya, terima kasih, Mbak.",
+          "japanese": "はい、ありがとうございます。",
+          "feedback": "シンプルで感じのいい返事です。",
+          "next": "n4"
+        },
+        {
+          "phraseId": "cas-04",
+          "quality": "good",
+          "feedback": "親しみがあり、相手の気持ちを楽にします。気軽なカフェの若い店員さんになら nggak で大丈夫です。",
+          "next": "n4"
+        },
+        {
+          "phraseId": "gre-21",
+          "quality": "wrong",
+          "feedback": "これだと、取り替えの申し出を断ることになります。正しい料理を持ってきてくれるのだから、Iya, terima kasih. で十分です。",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "server",
+      "indonesian": "Bagaimana, Kak, nasi gorengnya? Sudah sesuai?",
+      "japanese": "ナシゴレン、いかがですか？今度は合っていますか？",
+      "audio": "audio/id/scenario/wrong-order-n4.mp3",
+      "options": [
+        {
+          "phraseId": "pro-02",
+          "quality": "good",
+          "feedback": "ていねいで具体的です。tadi（さっき）で注文した時を指し、yang tidak pedas は「辛くないほう」です。",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Aduh, maaf, Mbak, ini masih pedas sekali buat saya.",
+          "japanese": "ああ、すみません、これ、私にはまだかなり辛いです。",
+          "feedback": "aduh と maaf でやわらげ、buat saya（私には）で、店員さんのミスではなく自分の好みの話にしています。",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Ini terlalu panas.",
+          "japanese": "これ、熱すぎます。",
+          "feedback": "panas は温度の「熱い」です。唐辛子の「辛い」は pedas なので、Ini terlalu pedas. と言います。",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "server",
+      "indonesian": "Aduh, maaf sekali, Kak. Mau dibuatkan lagi, atau ganti menu lain?",
+      "japanese": "本当に申し訳ありません。作り直しましょうか、それとも別のメニューにしますか？",
+      "audio": "audio/id/scenario/wrong-order-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Dibuatkan lagi saja, Mbak, tapi tidak pakai cabai sama sekali, ya.",
+          "japanese": "作り直してください。でも、唐辛子はまったく入れないでくださいね。",
+          "feedback": "はっきりしていて感じのいい頼み方です。tidak pakai cabai（唐辛子なし）なら、厨房が「少しだけ」入れる余地がありません。",
+          "next": "n6"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Ganti soto ayam saja, Mbak. Itu tidak pedas, kan?",
+          "japanese": "ソト・アヤム（鶏のスープ）に替えてください。それは辛くないですよね？",
+          "feedback": "料理を替えるのもいい選択です。kan（〜ですよね？）で、来る前に確認しています。",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya tidak mau bayar untuk ini.",
+          "japanese": "これにはお金を払いませんよ。",
+          "feedback": "直そうとしてくれている相手に、けんか腰です。まず料理のことを片づけて、会計は最後に確認すれば十分です。",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "server",
+      "indonesian": "Ini, Kak. Sekali lagi mohon maaf, ya. Es tehnya gratis.",
+      "japanese": "お待たせしました。重ね重ね申し訳ありません。アイスティーはサービスです。",
+      "audio": "audio/id/scenario/wrong-order-n6.mp3",
+      "options": [
+        {
+          "phraseId": "pro-13",
+          "quality": "good",
+          "feedback": "最後にお礼を言うと気持ちよく終われて、店員さんの面子も保てます。",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Wah, terima kasih, Mbak. Ini enak sekali.",
+          "japanese": "わあ、ありがとうございます。すごくおいしいです。",
+          "feedback": "ほめ言葉とお礼で、ひと騒動あったランチも温かく締めくくれます。",
+          "next": "end"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Iya, memang Mbak yang salah.",
+          "japanese": "ええ、悪いのはあなたですからね。",
+          "feedback": "追い打ちをかけると、相手の面子をつぶします。解決したら、Tidak apa-apa とお礼だけで十分です。",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "japanese": "解決しました。始めに maaf、「私の注文ではない」は bukan、頼んだものを示すには tadi saya pesan …、「辛い」は pedas（panas ではなく）、そして最後にお礼。落ち着いて伝えれば、誰の面子もつぶさずに解決できます。",
+      "end": true,
+      "options": []
+    }
+  }
+}

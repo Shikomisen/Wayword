@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-degree",
+  "connector": "sangat, sekali…",
+  "gloss": "とても、少し、〜すぎる",
+  "title": "sangat, sekali, banget, agak, terlalu",
+  "pattern": "sangat + 形容詞 · 形容詞 + sekali · 形容詞 + banget (くだけた言い方) · agak + 形容詞 · terlalu + 形容詞",
+  "explanation": "「とても」は3通りあり、それぞれ置く場所が決まっています。sangat は形容詞の前、sekali は後に置きます：sangat enak も enak sekali も「とてもおいしい」。banget も後に置く言葉で、友達同士のくだけた言い方です：enak banget（すごくおいしい）。「少し」「ちょっと」は前に agak：agak pedas（ちょっと辛い）。「〜すぎる」は terlalu：terlalu mahal（高すぎる）。日本語の「高すぎる」とちがい、terlalu は前に置きます。",
+  "natural": "Enak sekali! は、家でごちそうになった時の、まちがいのない温かいほめ言葉です。agak は文句をていねいにやわらげます：Agak mahal, ya（ちょっと高いですね）。日本語の「ちょっと」と同じ使い方です。",
+  "stiff": "それぞれの言葉の位置は決まっています：sekali enak や enak sangat はまちがい。年上の知らない人に banget はくだけすぎなので、sekali を使いましょう。",
+  "examples": [
+    {
+      "id": "gx-degree-1",
+      "indonesian": "Nasi gorengnya enak sekali.",
+      "japanese": "ナシゴレン、とてもおいしいです。",
+      "chunks": [
+        {
+          "t": "Nasi gorengnya ",
+          "w": "w-nasi"
+        },
+        {
+          "t": "enak ",
+          "w": "w-enak"
+        },
+        {
+          "t": "sekali."
+        }
+      ],
+      "gap": {
+        "before": "Nasi gorengnya enak ",
+        "answer": "sekali",
+        "after": ".",
+        "options": [
+          "sekali",
+          "sangat",
+          "agak"
+        ],
+        "why": "後に置く「とても」は sekali。sangat と agak は前に置きます。"
+      },
+      "audio": "audio/id/grammar/gx-degree-1.mp3",
+      "tags": [
+        "文法",
+        "程度"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-degree-2",
+      "indonesian": "Hari ini sangat panas.",
+      "japanese": "今日はとても暑いです。",
+      "chunks": [
+        {
+          "t": "Hari ini ",
+          "w": "w-hari-ini"
+        },
+        {
+          "t": "sangat ",
+          "w": "w-sangat"
+        },
+        {
+          "t": "panas.",
+          "w": "w-panas"
+        }
+      ],
+      "gap": {
+        "before": "Hari ini ",
+        "answer": "sangat",
+        "after": " panas.",
+        "options": [
+          "sangat",
+          "sekali",
+          "banget"
+        ],
+        "why": "前に置く「とても」は sangat。sekali と banget は後に置きます。"
+      },
+      "audio": "audio/id/grammar/gx-degree-2.mp3",
+      "tags": [
+        "文法",
+        "程度"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-degree-3",
+      "indonesian": "Maaf, Bu, ini terlalu mahal.",
+      "japanese": "すみません、これは高すぎます。",
+      "chunks": [
+        {
+          "t": "Maaf, Bu, ",
+          "w": "w-ibu"
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "terlalu "
+        },
+        {
+          "t": "mahal.",
+          "w": "w-mahal"
+        }
+      ],
+      "gap": {
+        "before": "Maaf, Bu, ini ",
+        "answer": "terlalu",
+        "after": " mahal.",
+        "options": [
+          "terlalu",
+          "agak",
+          "sangat"
+        ],
+        "why": "「〜すぎる」は terlalu。agak は「ちょっと」だけです。"
+      },
+      "audio": "audio/id/grammar/gx-degree-3.mp3",
+      "tags": [
+        "文法",
+        "程度"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-degree-4",
+      "register": "casual",
+      "indonesian": "Sambalnya agak pedas, tapi enak banget.",
+      "japanese": "サンバル、ちょっと辛いけど、すごくおいしい。",
+      "chunks": [
+        {
+          "t": "Sambalnya ",
+          "w": "w-sambal"
+        },
+        {
+          "t": "agak "
+        },
+        {
+          "t": "pedas, ",
+          "w": "w-pedas"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "enak ",
+          "w": "w-enak"
+        },
+        {
+          "t": "banget."
+        }
+      ],
+      "gap": {
+        "before": "Sambalnya ",
+        "answer": "agak",
+        "after": " pedas, tapi enak banget.",
+        "options": [
+          "agak",
+          "terlalu",
+          "banget"
+        ],
+        "why": "「ちょっと」は agak で、形容詞の前。banget なら後に来ます。"
+      },
+      "audio": "audio/id/grammar/gx-degree-4.mp3",
+      "tags": [
+        "文法",
+        "程度"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

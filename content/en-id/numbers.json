@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "id": "numbers",
+  "title": "Numbers, Time & Money",
+  "order": 2,
+  "description": "Counting, prices in ribu and juta, telling the time, days and dates, and the money talk of paying at a stall: how much, change and the exact amount.",
+  "phrases": [
+    {
+      "id": "num-01",
+      "indonesian": "satu, dua, tiga, empat, lima",
+      "english": "1, 2, 3, 4, 5",
+      "registerNotes": "Every vowel keeps its sound, except the e in empat, which is a quick, neutral 'uh': uhm-pat.",
+      "audio": "audio/id/num-01.mp3",
+      "tags": [
+        "numbers",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-02",
+      "indonesian": "enam, tujuh, delapan, sembilan, sepuluh",
+      "english": "6, 7, 8, 9, 10",
+      "registerNotes": "Sepuluh is se- (one) plus puluh (ten). The same se- gives seratus (100) and seribu (1,000).",
+      "pitfallNote": "Enam, delapan, sembilan and sepuluh all start with that quick 'uh': uh-nam, duh-la-pan, suhm-bi-lan, suh-pu-luh.",
+      "audio": "audio/id/num-02.mp3",
+      "tags": [
+        "numbers",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-03",
+      "indonesian": "sebelas, dua belas, dua puluh, dua puluh satu",
+      "english": "11, 12, 20, 21",
+      "registerNotes": "Belas makes the teens (tiga belas, 13) and puluh the tens (tiga puluh, 30). After that you just add: dua puluh lima is 25.",
+      "audio": "audio/id/num-03.mp3",
+      "tags": [
+        "numbers",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-04",
+      "indonesian": "seratus, seribu, sepuluh ribu, seratus ribu",
+      "english": "100; 1,000; 10,000; 100,000",
+      "registerNotes": "Ratus is hundred and ribu thousand. Most prices you'll pay are in ribu, and the notes in your wallet run from one thousand to a hundred thousand.",
+      "pitfallNote": "One hundred and one thousand take se-: seribu, not satu ribu; seratus, not satu ratus.",
+      "audio": "audio/id/num-04.mp3",
+      "tags": [
+        "numbers",
+        "money",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-05",
+      "indonesian": "Berapa harganya?",
+      "english": "How much is it?",
+      "registerNotes": "Point at what you mean. Harganya is 'its price'; Berapa, Bu? is the short everyday version.",
+      "audio": "audio/id/num-05.mp3",
+      "tags": [
+        "money",
+        "shopping",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-06",
+      "indonesian": "Dua puluh lima ribu.",
+      "english": "Twenty-five thousand (rupiah).",
+      "registerNotes": "Prices are said in thousands, and rupiah is usually left off. At a market you may hear just dua puluh lima, with the ribu understood.",
+      "pitfallNote": "Written, it's Rp25.000: Indonesian groups thousands with a full stop and uses a comma for decimals, the other way round from English.",
+      "audio": "audio/id/num-06.mp3",
+      "tags": [
+        "money",
+        "numbers"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-07",
+      "indonesian": "Satu setengah juta.",
+      "english": "One and a half million (rupiah).",
+      "registerNotes": "Juta is million: rent, flights and phones are priced in juta. Setengah (half) works the same way in any price: dua setengah juta is 2.5 million.",
+      "audio": "audio/id/num-07.mp3",
+      "tags": [
+        "money",
+        "numbers"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-08",
+      "indonesian": "Semuanya berapa, Bu?",
+      "english": "How much is it altogether?",
+      "registerNotes": "At the end, at a warung or a stall, to ask for the total. Jadi berapa? (So how much?) is just as common.",
+      "audio": "audio/id/num-08.mp3",
+      "tags": [
+        "money",
+        "shopping"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-09",
+      "indonesian": "Maaf, uangnya seratus ribu. Ada kembalian?",
+      "english": "Sorry, I've only got a hundred thousand. Have you got change?",
+      "registerNotes": "Kembalian is change. Small stalls and drivers often can't break a big note, and may ask you Ada uang kecil? (Anything smaller?).",
+      "cultureNote": "Keep small notes for warungs, ojeks and parking attendants; starting with maaf acknowledges the nuisance of a big note.",
+      "audio": "audio/id/num-09.mp3",
+      "tags": [
+        "money"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-10",
+      "indonesian": "Uangnya pas, ya.",
+      "english": "That's the exact money.",
+      "registerNotes": "Say it as you hand over the exact amount. Staff may ask Ada uang pas? (Have you got the exact money?).",
+      "audio": "audio/id/num-10.mp3",
+      "tags": [
+        "money"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-11",
+      "indonesian": "Setengah kilo, Bu.",
+      "english": "Half a kilo, please.",
+      "registerNotes": "Market fruit and vegetables are sold by weight: sekilo (a kilo), setengah kilo, seperempat kilo (a quarter).",
+      "audio": "audio/id/num-11.mp3",
+      "tags": [
+        "shopping",
+        "numbers"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-12",
+      "indonesian": "Sekarang jam berapa?",
+      "english": "What time is it?",
+      "registerNotes": "Jam berapa? on its own works too. With a stranger, start with Maaf or Permisi.",
+      "pitfallNote": "Word order matters: jam berapa is what time, berapa jam is how many hours.",
+      "audio": "audio/id/num-12.mp3",
+      "tags": [
+        "time",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-13",
+      "indonesian": "Jam tiga.",
+      "english": "Three o'clock.",
+      "registerNotes": "Pukul tiga is the formal version, used on the news and in writing.",
+      "pitfallNote": "Jam tiga is three o'clock; tiga jam is three hours.",
+      "audio": "audio/id/num-13.mp3",
+      "tags": [
+        "time",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-14",
+      "indonesian": "Jam setengah empat.",
+      "english": "Half past three.",
+      "registerNotes": "Jam goes first for clock times: jam tiga (three o’clock), jam setengah empat (half past three).",
+      "pitfallNote": "Setengah empat means halfway to four, so 3:30, not 4:30. English speakers get this wrong and turn up an hour late.",
+      "audio": "audio/id/num-14.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-15",
+      "indonesian": "Jam sembilan kurang seperempat.",
+      "english": "A quarter to nine.",
+      "registerNotes": "Kurang (less) is 'to' and lewat is 'past': jam sembilan lewat sepuluh is ten past nine. Many people just say the minutes: jam delapan empat puluh lima.",
+      "audio": "audio/id/num-15.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-16",
+      "indonesian": "Jam tujuh malam.",
+      "english": "Seven in the evening.",
+      "registerNotes": "There's no a.m. or p.m.: add pagi, siang, sore or malam. Timetables use the 24-hour clock, written 19.00.",
+      "audio": "audio/id/num-16.mp3",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-17",
+      "indonesian": "Besok buka jam berapa?",
+      "english": "What time do you open tomorrow?",
+      "registerNotes": "Buka is open and tutup is closed: Tutup jam berapa? (What time do you close?). Hari ini (today) and besok (tomorrow) can go first or last.",
+      "audio": "audio/id/num-17.mp3",
+      "tags": [
+        "time",
+        "days"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-18",
+      "indonesian": "Hari ini hari apa?",
+      "english": "What day is it today?",
+      "registerNotes": "The answer: Hari ini hari Jumat. Hari (day) goes before the day's name: hari Senin, on Monday.",
+      "audio": "audio/id/num-18.mp3",
+      "tags": [
+        "days",
+        "time"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-19",
+      "indonesian": "Senin, Selasa, Rabu, Kamis",
+      "english": "Monday, Tuesday, Wednesday, Thursday",
+      "registerNotes": "Day names take a capital letter, and usually hari before them in a sentence: Sampai hari Kamis (See you Thursday).",
+      "audio": "audio/id/num-19.mp3",
+      "tags": [
+        "days"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-20",
+      "indonesian": "Jumat, Sabtu, Minggu",
+      "english": "Friday, Saturday, Sunday",
+      "registerNotes": "Days are usually said with hari: hari Jumat, hari Sabtu. On a sign or a timetable they appear on their own.",
+      "pitfallNote": "Minggu is also 'week': hari Minggu is Sunday, but minggu depan is next week.",
+      "cultureNote": "Muslim men go to midday prayers on Friday, so some offices and services stop for a long lunch on Jumat.",
+      "audio": "audio/id/num-20.mp3",
+      "tags": [
+        "days"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-21",
+      "indonesian": "Hari ini tanggal berapa?",
+      "english": "What's the date today?",
+      "registerNotes": "Tanggal is the date: Hari ini tanggal lima. Dates go day, month, year, as in New Zealand.",
+      "cultureNote": "Tujuh belas Agustus, 17 August, is Independence Day; neighbourhoods hold games and races for it, called tujuh belasan.",
+      "audio": "audio/id/num-21.mp3",
+      "tags": [
+        "days",
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-22",
+      "indonesian": "Berapa orang?",
+      "english": "How many people?",
+      "registerNotes": "What staff ask at a restaurant door or a ticket counter. Answer Dua orang (two people), or just Berdua.",
+      "pitfallNote": "Berapa is both how many and how much, and the thing counted follows it: berapa orang, berapa hari.",
+      "audio": "audio/id/num-22.mp3",
+      "tags": [
+        "numbers",
+        "people"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-23",
+      "indonesian": "Kami berempat.",
+      "english": "There are four of us.",
+      "registerNotes": "Ber- plus a number means 'as a group of': berdua (the two of us), bertiga, berempat, berlima. Empat orang (four people) also works.",
+      "audio": "audio/id/num-23.mp3",
+      "tags": [
+        "numbers",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-24",
+      "indonesian": "Umur saya tiga puluh dua tahun.",
+      "english": "I'm thirty-two.",
+      "registerNotes": "The question is Umurnya berapa? or, to someone older, Umur Bapak berapa? Tahun (years) is often left off.",
+      "cultureNote": "Age comes up early because it decides how people address each other: Kak or Adik, Mas or Pak.",
+      "audio": "audio/id/num-24.mp3",
+      "tags": [
+        "numbers",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-25",
+      "indonesian": "Boleh minta nomor WA-nya?",
+      "english": "Can I have your WhatsApp number?",
+      "registerNotes": "WA (said 'we a') is WhatsApp, how almost everyone keeps in touch. Phone numbers are read one digit at a time, with nol or kosong for zero.",
+      "audio": "audio/id/num-25.mp3",
+      "audioHint": "Boleh minta nomor we a-nya?",
+      "tags": [
+        "numbers",
+        "phone"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

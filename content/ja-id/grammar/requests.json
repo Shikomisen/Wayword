@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-requests",
+  "connector": "tolong, silakan…",
+  "gloss": "〜してください、どうぞ、〜しよう、〜しないで",
+  "title": "tolong, silakan, ayo, jangan",
+  "pattern": "Tolong + 動詞 · Silakan + 動詞 · Ayo / Mari + 動詞 · Jangan + 動詞",
+  "explanation": "日本語の「〜てください」は、お願いにもすすめにも使いますが、インドネシア語では2つに分かれます。tolong（直訳「助けて」）は、自分のために何かしてもらう時：Tolong buka pintunya（ドアを開けてください）。silakan は、相手が自分のためにすることをすすめる「どうぞ」：Silakan duduk（どうぞおかけください）、Silakan masuk（どうぞお入りください）。ayo、またはよりていねいな mari は「〜しよう」：Ayo makan!（食べよう！）。jangan は「〜しないで」：Jangan lupa（忘れないで）。",
+  "natural": "最後に ya を付けると、どれもやわらかくなります：Tolong tunggu sebentar, ya（少し待ってくださいね）。日本語の「〜ね」に近い働きです。silakan は、席や食べ物をすすめたり中へ案内したりする時に、お店の人や家の人があなたに言う言葉です。",
+  "stiff": "自分のお願いに silakan を使うのは逆です。silakan はすすめる言葉で、頼む言葉ではありません。何かを頼む時は、動作なら tolong、ものなら minta：Minta air putih, ya（お水ください）。Buka pintu! のように tolong も ya もない命令は、えらそうに聞こえます。",
+  "examples": [
+    {
+      "id": "gx-requests-1",
+      "indonesian": "Silakan duduk, Bu.",
+      "japanese": "どうぞおかけください。",
+      "chunks": [
+        {
+          "t": "Silakan "
+        },
+        {
+          "t": "duduk, "
+        },
+        {
+          "t": "Bu.",
+          "w": "w-ibu"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Silakan",
+        "after": " duduk, Bu.",
+        "options": [
+          "Silakan",
+          "Tolong",
+          "Jangan"
+        ],
+        "why": "相手が自分のためにすることをすすめるのは silakan。"
+      },
+      "audio": "audio/id/grammar/gx-requests-1.mp3",
+      "tags": [
+        "文法",
+        "お願い"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-requests-2",
+      "indonesian": "Pak, tolong berhenti di sini.",
+      "japanese": "ここで止めてください。",
+      "chunks": [
+        {
+          "t": "Pak, ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "tolong "
+        },
+        {
+          "t": "berhenti ",
+          "w": "w-berhenti"
+        },
+        {
+          "t": "di sini.",
+          "w": "w-di"
+        }
+      ],
+      "gap": {
+        "before": "Pak, ",
+        "answer": "tolong",
+        "after": " berhenti di sini.",
+        "options": [
+          "tolong",
+          "silakan",
+          "ayo"
+        ],
+        "why": "自分のために何かしてもらう時は tolong。"
+      },
+      "audio": "audio/id/grammar/gx-requests-2.mp3",
+      "tags": [
+        "文法",
+        "お願い"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-requests-3",
+      "indonesian": "Ayo kita makan!",
+      "japanese": "さあ、食べよう！",
+      "chunks": [
+        {
+          "t": "Ayo "
+        },
+        {
+          "t": "kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "makan!",
+          "w": "w-makan"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Ayo",
+        "after": " kita makan!",
+        "options": [
+          "Ayo",
+          "Silakan",
+          "Jangan"
+        ],
+        "why": "「〜しよう」は ayo。よく kita と一緒に使います。"
+      },
+      "audio": "audio/id/grammar/gx-requests-3.mp3",
+      "tags": [
+        "文法",
+        "お願い"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-requests-4",
+      "indonesian": "Jangan tunggu saya, ya.",
+      "japanese": "私のことは待たないでね。",
+      "chunks": [
+        {
+          "t": "Jangan "
+        },
+        {
+          "t": "tunggu ",
+          "w": "w-tunggu"
+        },
+        {
+          "t": "saya, ",
+          "w": "w-saya"
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Jangan",
+        "after": " tunggu saya, ya.",
+        "options": [
+          "Jangan",
+          "Tidak",
+          "Bukan"
+        ],
+        "why": "「〜しないで」と止めるのは jangan。tidak はただ打ち消すだけです。"
+      },
+      "audio": "audio/id/grammar/gx-requests-4.mp3",
+      "tags": [
+        "文法",
+        "お願い"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

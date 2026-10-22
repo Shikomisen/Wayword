@@ -1,0 +1,344 @@
+{
+  "schemaVersion": 1,
+  "id": "words-describe-more",
+  "title": "More Describing Words",
+  "description": "Describing people, places and situations the way Indonesians do: busy or quiet, easy or a hassle, friendly, cute, handsome, safe, refreshing.",
+  "items": [
+    {
+      "id": "w-ramai",
+      "indonesian": "ramai",
+      "english": "busy, crowded, lively",
+      "pos": "adjective",
+      "registerNotes": "Casually rame. Usually a good thing, busy and fun: a ramai warung is a popular one. Noisy in a bad way is berisik.",
+      "audio": "audio/id/words/w-ramai.mp3",
+      "tags": [
+        "describing",
+        "places"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sepi",
+      "indonesian": "sepi",
+      "english": "quiet, deserted",
+      "pos": "adjective",
+      "registerNotes": "The opposite of ramai: an empty street, a shop with no customers. It can feel a little lonely or eerie, unlike tenang (calm, peaceful).",
+      "audio": "audio/id/words/w-sepi.mp3",
+      "tags": [
+        "describing",
+        "places"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-nyaman",
+      "indonesian": "nyaman",
+      "english": "comfortable, cosy",
+      "pos": "adjective",
+      "registerNotes": "For places, chairs and situations: Kamarnya nyaman. Casually enak covers this too: Enak tempatnya.",
+      "audio": "audio/id/words/w-nyaman.mp3",
+      "tags": [
+        "describing"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ribet",
+      "indonesian": "ribet",
+      "english": "complicated, a hassle; fussy",
+      "pos": "adjective",
+      "registerNotes": "Casual, but everyone says it: Ribet banget urusannya (The paperwork's such a hassle). Of a person, it means fussy. Neutral words are rumit and repot.",
+      "audio": "audio/id/words/w-ribet.mp3",
+      "tags": [
+        "describing",
+        "casual"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gampang",
+      "indonesian": "gampang",
+      "english": "easy",
+      "pos": "adjective",
+      "registerNotes": "The everyday word; mudah means the same in writing and formal speech. Gampang, kok (It's easy, honestly) reassures someone.",
+      "audio": "audio/id/words/w-gampang.mp3",
+      "tags": [
+        "describing"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-susah",
+      "indonesian": "susah",
+      "english": "difficult, hard",
+      "pos": "adjective",
+      "registerNotes": "Sulit is the more formal word. Susah is also hardship: hidup susah (a hard life).",
+      "audio": "audio/id/words/w-susah.mp3",
+      "tags": [
+        "describing"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-aneh",
+      "indonesian": "aneh",
+      "english": "strange, odd, weird",
+      "pos": "adjective",
+      "registerNotes": "Careful saying it about food you're served or someone's home; unik (unusual, special) is the kinder word.",
+      "audio": "audio/id/words/w-aneh.mp3",
+      "tags": [
+        "describing"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-lucu",
+      "indonesian": "lucu",
+      "english": "funny; cute",
+      "pos": "adjective",
+      "pitfallNote": "Lucu covers both funny and cute: Anaknya lucu means the child is cute, not that they tell jokes.",
+      "audio": "audio/id/words/w-lucu.mp3",
+      "tags": [
+        "describing",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cantik",
+      "indonesian": "cantik",
+      "english": "beautiful, pretty",
+      "pos": "adjective",
+      "registerNotes": "For women, and for pretty things like a dress or a garden. Men are ganteng, and scenery is usually indah.",
+      "audio": "audio/id/words/w-cantik.mp3",
+      "tags": [
+        "describing",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ganteng",
+      "indonesian": "ganteng",
+      "english": "handsome, good-looking",
+      "pos": "adjective",
+      "registerNotes": "The everyday word; tampan is formal.",
+      "cultureNote": "Looks are commented on openly: being told you're ganteng, or that you've put on weight (gemuk), are both ordinary small talk and not meant as rude.",
+      "audio": "audio/id/words/w-ganteng.mp3",
+      "tags": [
+        "describing",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ramah",
+      "indonesian": "ramah",
+      "english": "friendly, welcoming",
+      "pos": "adjective",
+      "registerNotes": "Orangnya ramah (They're really friendly) is a common compliment. It's also in ramah lingkungan (environmentally friendly).",
+      "audio": "audio/id/words/w-ramah.mp3",
+      "tags": [
+        "describing",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sombong",
+      "indonesian": "sombong",
+      "english": "arrogant, stuck-up",
+      "pos": "adjective",
+      "registerNotes": "Also a joking complaint to a friend who's been out of touch: Sombong, nih, nggak pernah kabar.",
+      "audio": "audio/id/words/w-sombong.mp3",
+      "tags": [
+        "describing",
+        "people"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-rajin",
+      "indonesian": "rajin",
+      "english": "hard-working, diligent",
+      "pos": "adjective",
+      "registerNotes": "A warm compliment, also for doing something regularly: Rajin olahraga, ya. The opposite is malas.",
+      "audio": "audio/id/words/w-rajin.mp3",
+      "tags": [
+        "describing",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-malas",
+      "indonesian": "malas",
+      "english": "lazy; not in the mood",
+      "pos": "adjective",
+      "registerNotes": "Casually males, and it's more 'can't be bothered' than lazy: Males ah, hujan (Can't be bothered, it's raining).",
+      "audio": "audio/id/words/w-malas.mp3",
+      "tags": [
+        "describing",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pintar",
+      "indonesian": "pintar",
+      "english": "clever, smart; good at",
+      "pos": "adjective",
+      "registerNotes": "Casually pinter. Before an activity it praises a skill: pintar masak (a good cook).",
+      "cultureNote": "Learners get praised a lot: Pintar bahasa Indonesia, ya. A modest Masih belajar (I'm still learning) is the usual reply.",
+      "audio": "audio/id/words/w-pintar.mp3",
+      "tags": [
+        "describing",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mewah",
+      "indonesian": "mewah",
+      "english": "luxurious, fancy",
+      "pos": "adjective",
+      "audio": "audio/id/words/w-mewah.mp3",
+      "tags": [
+        "describing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sederhana",
+      "indonesian": "sederhana",
+      "english": "simple, plain, modest",
+      "pos": "adjective",
+      "cultureNote": "Modesty is valued: hosts call their home or meal sederhana or seadanya (just what we have), however good it is. A compliment is the right reply.",
+      "audio": "audio/id/words/w-sederhana.mp3",
+      "tags": [
+        "describing",
+        "culture"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sempit",
+      "indonesian": "sempit",
+      "english": "narrow, cramped; tight",
+      "pos": "adjective",
+      "registerNotes": "For roads, rooms and clothes: jalannya sempit (the road's narrow), celananya sempit (the trousers are tight).",
+      "audio": "audio/id/words/w-sempit.mp3",
+      "tags": [
+        "describing",
+        "places"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-luas",
+      "indonesian": "luas",
+      "english": "spacious, wide, large (in area)",
+      "pos": "adjective",
+      "registerNotes": "For area: a spacious room or a wide stretch of land is luas, while besar is size in general. Kamarnya luas (The room's spacious).",
+      "audio": "audio/id/words/w-luas.mp3",
+      "tags": [
+        "describing",
+        "places"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-terkenal",
+      "indonesian": "terkenal",
+      "english": "famous, well-known",
+      "pos": "adjective",
+      "forms": {
+        "root": "kenal"
+      },
+      "registerNotes": "From kenal (to know someone). Famous for something takes dengan: Warung ini terkenal dengan sotonya.",
+      "audio": "audio/id/words/w-terkenal.mp3",
+      "tags": [
+        "describing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-penting",
+      "indonesian": "penting",
+      "english": "important",
+      "pos": "adjective",
+      "registerNotes": "Yang penting… (The main thing is…) sums things up: Yang penting sehat (As long as you're healthy).",
+      "audio": "audio/id/words/w-penting.mp3",
+      "tags": [
+        "describing"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-berbahaya",
+      "indonesian": "berbahaya",
+      "english": "dangerous",
+      "pos": "adjective",
+      "forms": {
+        "root": "bahaya"
+      },
+      "registerNotes": "Casually just bahaya, which is also 'danger' on warning signs.",
+      "audio": "audio/id/words/w-berbahaya.mp3",
+      "tags": [
+        "describing",
+        "safety"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-aman",
+      "indonesian": "aman",
+      "english": "safe, secure",
+      "pos": "adjective",
+      "registerNotes": "Casually it also means all fine, no problem: Aman? Aman. (All good? All good.)",
+      "audio": "audio/id/words/w-aman.mp3",
+      "tags": [
+        "describing",
+        "safety"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-segar",
+      "indonesian": "segar",
+      "english": "fresh, refreshing",
+      "pos": "adjective",
+      "registerNotes": "Casually seger. A cold drink, fruit, a shower or cool morning air can all be segar.",
+      "audio": "audio/id/words/w-segar.mp3",
+      "tags": [
+        "describing"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sopan",
+      "indonesian": "sopan",
+      "english": "polite, respectful; modest (of clothes)",
+      "pos": "adjective",
+      "cultureNote": "Dress sopan, with shoulders and knees covered, for mosques, temples and visiting families.",
+      "audio": "audio/id/words/w-sopan.mp3",
+      "tags": [
+        "describing",
+        "culture"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-santai",
+      "indonesian": "santai",
+      "english": "relaxed, laid-back",
+      "pos": "adjective",
+      "registerNotes": "Santai saja (Take it easy, no rush) is what people say to put you at ease.",
+      "audio": "audio/id/words/w-santai.mp3",
+      "tags": [
+        "describing"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

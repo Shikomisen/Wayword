@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "id": "words-money",
+  "title": "買い物・お金",
+  "description": "値段、支払い、おつり、市場での値段交渉、ネット通販。インドネシアの毎日で使うお金の言葉。",
+  "items": [
+    {
+      "id": "w-harga",
+      "indonesian": "harga",
+      "japanese": "値段、価格",
+      "pos": "noun",
+      "registerNotes": "Berapa harganya?（いくらですか？）。harga pas は値引きなしの定価、harga mati は「これ以上は下げない」最終価格。",
+      "audio": "audio/id/words/w-harga.mp3",
+      "tags": [
+        "お金",
+        "買い物",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-diskon",
+      "indonesian": "diskon",
+      "japanese": "割引",
+      "pos": "noun",
+      "registerNotes": "Ada diskon?（割引はありますか？）は、お店やモール、アプリで使います。市場では代わりに値段交渉をします。",
+      "audio": "audio/id/words/w-diskon.mp3",
+      "tags": [
+        "お金",
+        "買い物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-promo",
+      "indonesian": "promo",
+      "japanese": "セール、キャンペーン",
+      "pos": "noun",
+      "registerNotes": "店員は Lagi promo（今セール中です）とよく言います。Beli satu gratis satu は「1つ買うともう1つ無料」。",
+      "audio": "audio/id/words/w-promo.mp3",
+      "tags": [
+        "お金",
+        "買い物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kembalian",
+      "indonesian": "kembalian",
+      "japanese": "おつり",
+      "pos": "noun",
+      "forms": {
+        "root": "kembali"
+      },
+      "cultureNote": "小さな店はおつりが足りないことが多く、Ada uang kecil?（細かいのありますか？）と聞かれます。ワルンやオジェック（バイクタクシー）のために、小額のお札を持っておきましょう。",
+      "audio": "audio/id/words/w-kembalian.mp3",
+      "tags": [
+        "お金",
+        "支払い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-struk",
+      "indonesian": "struk",
+      "japanese": "レシート",
+      "pos": "noun",
+      "registerNotes": "Minta struknya, ya（レシートをください）。手書きのレシートは nota、経費精算などに使う正式な領収書は kuitansi。",
+      "audio": "audio/id/words/w-struk.mp3",
+      "tags": [
+        "お金",
+        "支払い"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tunai",
+      "indonesian": "tunai",
+      "japanese": "現金",
+      "pos": "noun",
+      "registerNotes": "bayar tunai は「現金で払う」ですが、話し言葉では cash もよく使います：Bayar cash atau QRIS?（現金ですか、QRコード決済ですか？）",
+      "audio": "audio/id/words/w-tunai.mp3",
+      "tags": [
+        "お金",
+        "支払い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-transfer",
+      "indonesian": "transfer",
+      "japanese": "振込；振り込む",
+      "pos": "noun",
+      "cultureNote": "kos の家賃や手作りケーキのような小さな支払いでも、銀行振込が普通です。振り込んだら、スクリーンショットを bukti transfer（振込の証拠）として送ります。",
+      "audio": "audio/id/words/w-transfer.mp3",
+      "tags": [
+        "お金",
+        "支払い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kartu-kredit",
+      "indonesian": "kartu kredit",
+      "japanese": "クレジットカード",
+      "pos": "noun",
+      "registerNotes": "Bisa pakai kartu kredit?（クレジットカードは使えますか？）。デビットカードは kartu debit。カード払いは、単に gesek（通す）と言うこともよくあります。",
+      "audio": "audio/id/words/w-kartu-kredit.mp3",
+      "tags": [
+        "お金",
+        "支払い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-cicilan",
+      "indonesian": "cicilan",
+      "japanese": "分割払い",
+      "pos": "noun",
+      "forms": {
+        "root": "cicil"
+      },
+      "registerNotes": "cicilan nol persen（金利0%の分割払い）は、スマホや家電でよく見るサービス。dicicil は「分割で払う」。",
+      "audio": "audio/id/words/w-cicilan.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-tabungan",
+      "indonesian": "tabungan",
+      "japanese": "貯金；預金口座",
+      "pos": "noun",
+      "forms": {
+        "root": "tabung"
+      },
+      "registerNotes": "buka tabungan は「預金口座を開く」。menabung は「貯金する」、貯金箱は celengan。",
+      "audio": "audio/id/words/w-tabungan.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-dompet",
+      "indonesian": "dompet",
+      "japanese": "財布",
+      "pos": "noun",
+      "registerNotes": "dompet digital は GoPay や OVO のような電子ウォレット（スマホ決済）で、少額の支払いにどこでも使われます。",
+      "audio": "audio/id/words/w-dompet.mp3",
+      "tags": [
+        "お金",
+        "支払い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-belanja-online",
+      "indonesian": "belanja online",
+      "japanese": "ネットショッピング；ネットで買い物する",
+      "pos": "phrase",
+      "registerNotes": "正式な言葉は belanja daring ですが、ほとんど誰も使いません。",
+      "cultureNote": "Shopee や Tokopedia などのアプリで大人気。荷物が届いたときに現金で払う COD（代金引換）を選ぶ人も多いです。",
+      "audio": "audio/id/words/w-belanja-online.mp3",
+      "tags": [
+        "お金",
+        "ネット通販"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ongkir",
+      "indonesian": "ongkir",
+      "japanese": "送料",
+      "pos": "noun",
+      "registerNotes": "ongkos kirim の略。gratis ongkir（送料無料）は、ネット通販でいちばんよく見る宣伝文句です。",
+      "audio": "audio/id/words/w-ongkir.mp3",
+      "tags": [
+        "お金",
+        "ネット通販"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mengirim",
+      "indonesian": "mengirim",
+      "japanese": "送る",
+      "pos": "verb",
+      "forms": {
+        "root": "kirim"
+      },
+      "registerNotes": "話し言葉では kirim だけ：Nanti saya kirim alamatnya（あとで住所を送ります）。Sudah dikirim? は注文品が発送されたかを聞く言い方で、届けてくれる配達員は kurir。",
+      "audio": "audio/id/words/w-mengirim.mp3",
+      "tags": [
+        "ネット通販",
+        "動詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-paket",
+      "indonesian": "paket",
+      "japanese": "小包、荷物；セット、プラン",
+      "pos": "noun",
+      "registerNotes": "郵便の小包のほか、セットの意味もあります：paket data（モバイルデータのプラン）、paket wisata（パックツアー）。",
+      "audio": "audio/id/words/w-paket.mp3",
+      "tags": [
+        "ネット通販",
+        "買い物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ukuran",
+      "indonesian": "ukuran",
+      "japanese": "サイズ、寸法",
+      "pos": "noun",
+      "forms": {
+        "root": "ukur"
+      },
+      "registerNotes": "Ada ukuran yang lebih besar?（もっと大きいサイズはありますか？）。現地の服のサイズは欧米の表記より小さめなので、試着してから買いましょう。",
+      "audio": "audio/id/words/w-ukuran.mp3",
+      "tags": [
+        "買い物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-warna",
+      "indonesian": "warna",
+      "japanese": "色",
+      "pos": "noun",
+      "audio": "audio/id/words/w-warna.mp3",
+      "tags": [
+        "買い物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-model",
+      "indonesian": "model",
+      "japanese": "デザイン、型、モデル",
+      "pos": "noun",
+      "pitfallNote": "ファッションモデルよりも、デザインや型の意味でよく使います：Modelnya bagus（いいデザインですね）。Ada model lain? はほかのデザインがあるかを聞く言い方。",
+      "audio": "audio/id/words/w-model.mp3",
+      "tags": [
+        "買い物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kualitas",
+      "indonesian": "kualitas",
+      "japanese": "品質",
+      "pos": "noun",
+      "cultureNote": "barang KW（kualitas から）はブランド品のコピー商品で、KW1、KW2 のように等級がつきます。本物は ori（original）と言います。",
+      "audio": "audio/id/words/w-kualitas.mp3",
+      "tags": [
+        "買い物"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-garansi",
+      "indonesian": "garansi",
+      "japanese": "保証",
+      "pos": "noun",
+      "registerNotes": "Garansinya berapa lama?（保証期間はどのくらいですか？）。kartu garansi（保証書）はレシートと一緒に保管しましょう。",
+      "audio": "audio/id/words/w-garansi.mp3",
+      "tags": [
+        "買い物"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tukar",
+      "indonesian": "tukar",
+      "japanese": "交換する、取り替える",
+      "pos": "verb",
+      "registerNotes": "サイズ違いなら Boleh tukar?（交換できますか？）。両替所でお金を替えるのは tukar uang。書き言葉では menukar。",
+      "audio": "audio/id/words/w-tukar.mp3",
+      "tags": [
+        "買い物",
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menawar",
+      "indonesian": "menawar",
+      "japanese": "値切る、値段交渉する；値をつける",
+      "pos": "verb",
+      "forms": {
+        "root": "tawar"
+      },
+      "registerNotes": "話し言葉では nawar。Boleh ditawar? は値段交渉ができるかを聞く言い方です。値切るのは市場や露店で、値札のある店ではしません。",
+      "pitfallNote": "tawar だけだと「味のない、甘くない」の意味：teh tawar は砂糖なしのお茶、air tawar は淡水です。",
+      "audio": "audio/id/words/w-menawar.mp3",
+      "tags": [
+        "買い物",
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-murah-meriah",
+      "indonesian": "murah meriah",
+      "japanese": "安くて満足、お得",
+      "pos": "adjective",
+      "registerNotes": "お得さをほめる言葉：Makanannya murah meriah（料理が安くておいしい）。",
+      "audio": "audio/id/words/w-murah-meriah.mp3",
+      "tags": [
+        "買い物",
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hemat",
+      "indonesian": "hemat",
+      "japanese": "倹約な、経済的な；節約する",
+      "pos": "adjective",
+      "registerNotes": "人にも物にも使います：Dia hemat sekali（彼女はとても倹約家だ）、hemat listrik（節電）。paket hemat はお得なセットメニュー。",
+      "audio": "audio/id/words/w-hemat.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-boros",
+      "indonesian": "boros",
+      "japanese": "むだづかいの、浪費する",
+      "pos": "adjective",
+      "registerNotes": "Jangan boros（むだづかいしないで）。たくさん消費するものにも使います：Motor ini boros bensin（このバイクは燃費が悪い）。",
+      "audio": "audio/id/words/w-boros.mp3",
+      "tags": [
+        "お金"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pulsa",
+      "indonesian": "pulsa",
+      "japanese": "携帯のプリペイド残高",
+      "pos": "noun",
+      "cultureNote": "日本の月額契約と違い、携帯はほとんどがプリペイド式です。携帯の売店、コンビニ、アプリで isi pulsa（チャージ）して、その残高で paket data を買います。",
+      "audio": "audio/id/words/w-pulsa.mp3",
+      "tags": [
+        "お金",
+        "暮らし"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-me",
+  "connector": "me-",
+  "gloss": "doing something to something",
+  "title": "me- verbs",
+  "pattern": "me- + root + what it's done to: membeli tiket · in speech: beli tiket",
+  "explanation": "me- makes a verb where someone does something to something: membeli tiket (to buy a ticket), membaca buku (to read a book), memesan kamar (to book a room). It also turns some nouns into verbs: rokok is a cigarette, merokok is to smoke. Writing, signs, the news and careful speech keep the me-, which is a big part of why written Indonesian looks longer than what you hear. In conversation it usually drops (Saya beli tiket kemarin, Cari apa?), and friends often use a form starting with ng- or ny- instead: ngambil for mengambil, nyari for mencari, nonton for menonton.",
+  "natural": "Keep me- in anything written (a message to a hotel, an email, a form) and when you want to sound careful, for example with an official. With shop staff, drivers and neighbours, the bare root is polite enough: Saya mau beli dua.",
+  "stiff": "A short spoken sentence full of me- sounds read aloud: at a ticket window, Saya ingin membeli dua tiket is correct but bookish, and Beli dua tiket, ya is what people say. The ng- and ny- forms are casual, so keep them for friends.",
+  "examples": [
+    {
+      "id": "gx-me-1",
+      "indonesian": "Saya sudah membeli tiketnya.",
+      "english": "I've already bought the tickets.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "sudah ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "membeli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "tiketnya.",
+          "w": "w-tiket"
+        }
+      ],
+      "gap": {
+        "before": "Saya sudah ",
+        "answer": "membeli",
+        "after": " tiketnya.",
+        "options": [
+          "membeli",
+          "beli",
+          "dibeli"
+        ],
+        "ok": [
+          "beli"
+        ],
+        "note": "Beli is just as right, and it's what most people say out loud; membeli is the written and careful form.",
+        "why": "Saya does the buying to the tickets, so it's the me- verb: membeli."
+      },
+      "audio": "audio/id/grammar/gx-me-1.mp3",
+      "tags": [
+        "grammar",
+        "me"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-me-2",
+      "register": "casual",
+      "indonesian": "Aku beli kopi dulu, ya.",
+      "english": "I'll just grab a coffee first.",
+      "chunks": [
+        {
+          "t": "Aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "beli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "kopi ",
+          "w": "w-kopi"
+        },
+        {
+          "t": "dulu, ",
+          "w": "w-dulu"
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "gap": {
+        "before": "Aku ",
+        "answer": "beli",
+        "after": " kopi dulu, ya.",
+        "options": [
+          "beli",
+          "dibeli",
+          "pembeli"
+        ],
+        "why": "Talking to a friend, the me- drops and the root does the job: beli; dibeli is passive, and pembeli is a buyer."
+      },
+      "audio": "audio/id/grammar/gx-me-2.mp3",
+      "tags": [
+        "grammar",
+        "me"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-me-3",
+      "indonesian": "Saya belum memutuskan mau ke mana.",
+      "english": "I haven't decided where to go yet.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "belum ",
+          "w": "w-belum"
+        },
+        {
+          "t": "memutuskan ",
+          "w": "w-memutuskan"
+        },
+        {
+          "t": "mau ke mana."
+        }
+      ],
+      "gap": {
+        "before": "Saya belum ",
+        "answer": "memutuskan",
+        "after": " mau ke mana.",
+        "options": [
+          "memutuskan",
+          "putus",
+          "diputuskan"
+        ],
+        "why": "Deciding is memutuskan; putus on its own means broken off or split up, so this me- stays even in speech."
+      },
+      "audio": "audio/id/grammar/gx-me-3.mp3",
+      "tags": [
+        "grammar",
+        "me"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-me-4",
+      "indonesian": "Dilarang merokok di dalam kamar.",
+      "english": "No smoking in the rooms.",
+      "chunks": [
+        {
+          "t": "Dilarang "
+        },
+        {
+          "t": "merokok "
+        },
+        {
+          "t": "di dalam ",
+          "w": "w-di"
+        },
+        {
+          "t": "kamar.",
+          "w": "w-kamar"
+        }
+      ],
+      "gap": {
+        "before": "Dilarang ",
+        "answer": "merokok",
+        "after": " di dalam kamar.",
+        "options": [
+          "merokok",
+          "rokok",
+          "perokok"
+        ],
+        "why": "Smoking is me- + rokok (a cigarette); perokok is a smoker."
+      },
+      "audio": "audio/id/grammar/gx-me-4.mp3",
+      "tags": [
+        "grammar",
+        "me"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

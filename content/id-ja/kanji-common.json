@@ -1,0 +1,2458 @@
+{
+  "schemaVersion": 1,
+  "id": "kanji-common",
+  "kind": "characters",
+  "title": "Kanji umum",
+  "script": "kanji",
+  "description": "Kanji yang kamu temui setiap hari — di papan tanda, menu, tiket, label harga, dan kalender. Daftar praktis, bukan daftar JLPT, dipilih untuk dikenali, bukan untuk ditulis.",
+  "groups": [
+    {
+      "id": "numbers",
+      "title": "Angka & uang",
+      "description": "Harga, peron, lantai, jumlah."
+    },
+    {
+      "id": "time",
+      "title": "Hari & waktu",
+      "description": "Tujuh kanji nama hari sekaligus nama unsur alam — begitulah cara mengingatnya."
+    },
+    {
+      "id": "wayfinding",
+      "title": "Mencari jalan",
+      "description": "Pintu keluar, toilet, arah. Kelompok paling berharga di daftar ini."
+    },
+    {
+      "id": "transport",
+      "title": "Stasiun & tiket",
+      "description": "Yang tercetak di tiketmu dan tergantung di atas peron."
+    },
+    {
+      "id": "commerce",
+      "title": "Toko & pembayaran",
+      "description": "Apakah tempatnya buka, dan berapa harganya."
+    },
+    {
+      "id": "safety",
+      "title": "Peringatan & bantuan",
+      "description": "Jarang muncul, tapi taruhannya besar. Harus langsung dikenali, kalau tidak percuma."
+    },
+    {
+      "id": "signage",
+      "title": "Papan tanda sehari-hari",
+      "description": "Pintu, ukuran, kosong atau penuh."
+    }
+  ],
+  "characters": [
+    {
+      "id": "kan-ichi",
+      "character": "一",
+      "japanese": "一",
+      "furigana": [
+        {
+          "b": "一",
+          "r": "いち"
+        }
+      ],
+      "readings": [
+        "いち",
+        "ひと"
+      ],
+      "romaji": "ichi",
+      "indonesian": "satu",
+      "audio": "audio/ja/chars/kan-ichi.mp3",
+      "audioHint": "いち",
+      "group": "numbers",
+      "tags": [
+        "kanji",
+        "angka"
+      ],
+      "difficulty": 1,
+      "seenIn": [
+        "w-issho",
+        "w-hitori",
+        "s-09",
+        "s-28",
+        "gx-kara-made-3",
+        "gx-to-and-4"
+      ]
+    },
+    {
+      "id": "kan-ni",
+      "character": "二",
+      "japanese": "二",
+      "furigana": [
+        {
+          "b": "二",
+          "r": "に"
+        }
+      ],
+      "readings": [
+        "に",
+        "ふた"
+      ],
+      "romaji": "ni",
+      "indonesian": "dua",
+      "audio": "audio/ja/chars/kan-ni.mp3",
+      "audioHint": "に",
+      "group": "numbers",
+      "tags": [
+        "kanji",
+        "angka"
+      ],
+      "difficulty": 1,
+      "seenIn": [
+        "s-32",
+        "s-64",
+        "gx-aru-iru-2",
+        "gx-aru-iru-4",
+        "num-16",
+        "num-17"
+      ]
+    },
+    {
+      "id": "kan-san",
+      "character": "三",
+      "japanese": "三",
+      "furigana": [
+        {
+          "b": "三",
+          "r": "さん"
+        }
+      ],
+      "readings": [
+        "さん",
+        "みっ"
+      ],
+      "romaji": "san",
+      "indonesian": "tiga",
+      "audio": "audio/ja/chars/kan-san.mp3",
+      "audioHint": "さん",
+      "group": "numbers",
+      "tags": [
+        "kanji",
+        "angka"
+      ],
+      "difficulty": 1,
+      "seenIn": [
+        "gx-tsumori-4",
+        "num-07",
+        "num-11",
+        "num-17",
+        "num-20",
+        "doc-02"
+      ]
+    },
+    {
+      "id": "kan-yon",
+      "character": "四",
+      "japanese": "四",
+      "furigana": [
+        {
+          "b": "四",
+          "r": "よん"
+        }
+      ],
+      "readings": [
+        "よん",
+        "し",
+        "よっ"
+      ],
+      "romaji": "yon / shi",
+      "indonesian": "empat",
+      "audio": "audio/ja/chars/kan-yon.mp3",
+      "audioHint": "よん",
+      "group": "numbers",
+      "tags": [
+        "kanji",
+        "angka"
+      ],
+      "difficulty": 2,
+      "note": "Dalam hitungan sehari-hari biasanya dibaca よん; し dihindari karena juga berarti 'mati'."
+    },
+    {
+      "id": "kan-go",
+      "character": "五",
+      "japanese": "五",
+      "furigana": [
+        {
+          "b": "五",
+          "r": "ご"
+        }
+      ],
+      "readings": [
+        "ご",
+        "いつ"
+      ],
+      "romaji": "go",
+      "indonesian": "lima",
+      "audio": "audio/ja/chars/kan-go.mp3",
+      "audioHint": "ご",
+      "group": "numbers",
+      "tags": [
+        "kanji",
+        "angka"
+      ],
+      "difficulty": 1,
+      "seenIn": [
+        "gx-kara-made-2",
+        "num-07",
+        "num-21"
+      ]
+    },
+    {
+      "id": "kan-roku",
+      "character": "六",
+      "japanese": "六",
+      "furigana": [
+        {
+          "b": "六",
+          "r": "ろく"
+        }
+      ],
+      "readings": [
+        "ろく",
+        "むっ"
+      ],
+      "romaji": "roku",
+      "indonesian": "enam",
+      "audio": "audio/ja/chars/kan-roku.mp3",
+      "audioHint": "ろく",
+      "group": "numbers",
+      "tags": [
+        "kanji",
+        "angka"
+      ],
+      "difficulty": 1,
+      "seenIn": [
+        "s-45"
+      ]
+    },
+    {
+      "id": "kan-nana",
+      "character": "七",
+      "japanese": "七",
+      "furigana": [
+        {
+          "b": "七",
+          "r": "なな"
+        }
+      ],
+      "readings": [
+        "なな",
+        "しち"
+      ],
+      "romaji": "nana / shichi",
+      "indonesian": "tujuh",
+      "audio": "audio/ja/chars/kan-nana.mp3",
+      "audioHint": "なな",
+      "group": "numbers",
+      "tags": [
+        "kanji",
+        "angka"
+      ],
+      "difficulty": 2,
+      "note": "Dibaca なな kalau diucapkan sendiri — しち terlalu mudah tertukar dengan いち di tempat yang bising.",
+      "seenIn": [
+        "gx-ni-1",
+        "num-11"
+      ]
+    },
+    {
+      "id": "kan-hachi",
+      "character": "八",
+      "japanese": "八",
+      "furigana": [
+        {
+          "b": "八",
+          "r": "はち"
+        }
+      ],
+      "readings": [
+        "はち",
+        "やっ"
+      ],
+      "romaji": "hachi",
+      "indonesian": "delapan",
+      "audio": "audio/ja/chars/kan-hachi.mp3",
+      "audioHint": "はち",
+      "group": "numbers",
+      "tags": [
+        "kanji",
+        "angka"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "kan-kyuu",
+      "character": "九",
+      "japanese": "九",
+      "furigana": [
+        {
+          "b": "九",
+          "r": "きゅう"
+        }
+      ],
+      "readings": [
+        "きゅう",
+        "く"
+      ],
+      "romaji": "kyū / ku",
+      "indonesian": "sembilan",
+      "audio": "audio/ja/chars/kan-kyuu.mp3",
+      "audioHint": "きゅう",
+      "group": "numbers",
+      "tags": [
+        "kanji",
+        "angka"
+      ],
+      "difficulty": 2,
+      "note": "Dibaca きゅう kalau sendiri, tapi く dalam 九時 (くじ, jam sembilan).",
+      "seenIn": [
+        "gx-kara-made-2"
+      ]
+    },
+    {
+      "id": "kan-juu",
+      "character": "十",
+      "japanese": "十",
+      "furigana": [
+        {
+          "b": "十",
+          "r": "じゅう"
+        }
+      ],
+      "readings": [
+        "じゅう",
+        "とお"
+      ],
+      "romaji": "jū",
+      "indonesian": "sepuluh",
+      "audio": "audio/ja/chars/kan-juu.mp3",
+      "audioHint": "じゅう",
+      "group": "numbers",
+      "tags": [
+        "kanji",
+        "angka"
+      ],
+      "difficulty": 1,
+      "seenIn": [
+        "s-06",
+        "s-57",
+        "cx-ba-4",
+        "num-11",
+        "air-03",
+        "fam-09"
+      ]
+    },
+    {
+      "id": "kan-hyaku",
+      "character": "百",
+      "japanese": "百",
+      "furigana": [
+        {
+          "b": "百",
+          "r": "ひゃく"
+        }
+      ],
+      "readings": [
+        "ひゃく"
+      ],
+      "romaji": "hyaku",
+      "indonesian": "seratus",
+      "audio": "audio/ja/chars/kan-hyaku.mp3",
+      "audioHint": "ひゃく",
+      "group": "numbers",
+      "tags": [
+        "kanji",
+        "angka",
+        "uang"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "num-07"
+      ]
+    },
+    {
+      "id": "kan-sen",
+      "character": "千",
+      "japanese": "千",
+      "furigana": [
+        {
+          "b": "千",
+          "r": "せん"
+        }
+      ],
+      "readings": [
+        "せん"
+      ],
+      "romaji": "sen",
+      "indonesian": "seribu",
+      "audio": "audio/ja/chars/kan-sen.mp3",
+      "audioHint": "せん",
+      "group": "numbers",
+      "tags": [
+        "kanji",
+        "angka",
+        "uang"
+      ],
+      "difficulty": 2,
+      "note": "三千 dibaca さんぜん, bukan さんせん — bunyinya berubah setelah 3.",
+      "seenIn": [
+        "num-07"
+      ]
+    },
+    {
+      "id": "kan-man",
+      "character": "万",
+      "japanese": "万",
+      "furigana": [
+        {
+          "b": "万",
+          "r": "まん"
+        }
+      ],
+      "readings": [
+        "まん"
+      ],
+      "romaji": "man",
+      "indonesian": "sepuluh ribu",
+      "audio": "audio/ja/chars/kan-man.mp3",
+      "audioHint": "まん",
+      "group": "numbers",
+      "tags": [
+        "kanji",
+        "angka",
+        "uang"
+      ],
+      "difficulty": 3,
+      "note": "Bahasa Jepang mengelompokkan angka per 10.000, bukan per ribuan: ¥30.000 adalah 三万, dan satu juta adalah 百万. Kebiasaan angka inilah yang paling sulit diubah."
+    },
+    {
+      "id": "kan-en",
+      "character": "円",
+      "japanese": "円",
+      "furigana": [
+        {
+          "b": "円",
+          "r": "えん"
+        }
+      ],
+      "readings": [
+        "えん"
+      ],
+      "romaji": "en",
+      "indonesian": "yen",
+      "audio": "audio/ja/chars/kan-en.mp3",
+      "audioHint": "えん",
+      "group": "numbers",
+      "tags": [
+        "kanji",
+        "uang",
+        "penting"
+      ],
+      "difficulty": 1,
+      "note": "Di label harga kamu akan melihat 円 dan juga ¥. Artinya sama.",
+      "seenIn": [
+        "num-07"
+      ]
+    },
+    {
+      "id": "kan-nichi",
+      "character": "日",
+      "japanese": "日",
+      "furigana": [
+        {
+          "b": "日",
+          "r": "にち"
+        }
+      ],
+      "readings": [
+        "にち",
+        "ひ",
+        "び"
+      ],
+      "romaji": "nichi / hi",
+      "indonesian": "hari, matahari — Minggu",
+      "audio": "audio/ja/chars/kan-nichi.mp3",
+      "audioHint": "にち",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu",
+        "penting"
+      ],
+      "difficulty": 1,
+      "note": "Juga 日 dalam 日本 (Jepang) — secara harfiah 'asal matahari'.",
+      "seenIn": [
+        "w-kyou",
+        "w-ashita",
+        "w-kinou",
+        "w-mainichi",
+        "w-nihongo",
+        "w-tanjoubi"
+      ]
+    },
+    {
+      "id": "kan-getsu",
+      "character": "月",
+      "japanese": "月",
+      "furigana": [
+        {
+          "b": "月",
+          "r": "げつ"
+        }
+      ],
+      "readings": [
+        "げつ",
+        "つき",
+        "がつ"
+      ],
+      "romaji": "getsu / tsuki",
+      "indonesian": "bulan — Senin",
+      "audio": "audio/ja/chars/kan-getsu.mp3",
+      "audioHint": "げつ",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-raigetsu",
+        "w-sengetsu",
+        "s-25",
+        "gx-nai-4",
+        "gx-kotonisuru-2"
+      ]
+    },
+    {
+      "id": "kan-ka",
+      "character": "火",
+      "japanese": "火",
+      "furigana": [
+        {
+          "b": "火",
+          "r": "か"
+        }
+      ],
+      "readings": [
+        "か",
+        "ひ"
+      ],
+      "romaji": "ka / hi",
+      "indonesian": "api — Selasa",
+      "audio": "audio/ja/chars/kan-ka.mp3",
+      "audioHint": "か",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 2,
+      "note": "Juga muncul di papan peringatan: 火気厳禁 = dilarang ada api."
+    },
+    {
+      "id": "kan-sui",
+      "character": "水",
+      "japanese": "水",
+      "furigana": [
+        {
+          "b": "水",
+          "r": "すい"
+        }
+      ],
+      "readings": [
+        "すい",
+        "みず"
+      ],
+      "romaji": "sui / mizu",
+      "indonesian": "air — Rabu",
+      "audio": "audio/ja/chars/kan-sui.mp3",
+      "audioHint": "すい",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 2,
+      "note": "お水 (おみず) di menu adalah air putih biasa, dan gratis.",
+      "seenIn": [
+        "w-mizu",
+        "w-suidou",
+        "res-07"
+      ]
+    },
+    {
+      "id": "kan-moku",
+      "character": "木",
+      "japanese": "木",
+      "furigana": [
+        {
+          "b": "木",
+          "r": "もく"
+        }
+      ],
+      "readings": [
+        "もく",
+        "き"
+      ],
+      "romaji": "moku / ki",
+      "indonesian": "pohon, kayu — Kamis",
+      "audio": "audio/ja/chars/kan-moku.mp3",
+      "audioHint": "もく",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "kan-kin",
+      "character": "金",
+      "japanese": "金",
+      "furigana": [
+        {
+          "b": "金",
+          "r": "きん"
+        }
+      ],
+      "readings": [
+        "きん",
+        "かね"
+      ],
+      "romaji": "kin / kane",
+      "indonesian": "emas, uang — Jumat",
+      "audio": "audio/ja/chars/kan-kin.mp3",
+      "audioHint": "きん",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu",
+        "uang"
+      ],
+      "difficulty": 2,
+      "note": "お金 (おかね) adalah uang. 金曜日 adalah hari Jumat. Kanjinya sama.",
+      "seenIn": [
+        "w-okane",
+        "w-genkin",
+        "w-chokin",
+        "s-50",
+        "gx-nai-4",
+        "cx-tame-3"
+      ]
+    },
+    {
+      "id": "kan-do",
+      "character": "土",
+      "japanese": "土",
+      "furigana": [
+        {
+          "b": "土",
+          "r": "ど"
+        }
+      ],
+      "readings": [
+        "ど",
+        "つち"
+      ],
+      "romaji": "do / tsuchi",
+      "indonesian": "tanah — Sabtu",
+      "audio": "audio/ja/chars/kan-do.mp3",
+      "audioHint": "ど",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 2,
+      "note": "土日 (どにち) berarti Sabtu–Minggu, alias akhir pekan — sering muncul di papan jam buka.",
+      "seenIn": [
+        "w-omiyage",
+        "s-60",
+        "gx-ageru-1",
+        "gx-kenjou-4"
+      ]
+    },
+    {
+      "id": "kan-youbi",
+      "character": "曜日",
+      "japanese": "曜日",
+      "furigana": [
+        {
+          "b": "曜日",
+          "r": "ようび"
+        }
+      ],
+      "readings": [
+        "ようび"
+      ],
+      "romaji": "yōbi",
+      "indonesian": "hari (dalam seminggu)",
+      "audio": "audio/ja/chars/kan-youbi.mp3",
+      "audioHint": "ようび",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 3,
+      "note": "Seperti 'hari' dalam 'hari Senin', tapi letaknya di belakang kanji unsur: 月曜日 Senin, 火曜日 Selasa, dan seterusnya.",
+      "seenIn": [
+        "s-60",
+        "gx-wa-4",
+        "gx-noni-1"
+      ]
+    },
+    {
+      "id": "kan-ji",
+      "character": "時",
+      "japanese": "時",
+      "furigana": [
+        {
+          "b": "時",
+          "r": "じ"
+        }
+      ],
+      "readings": [
+        "じ",
+        "とき"
+      ],
+      "romaji": "ji",
+      "indonesian": "jam, pukul",
+      "audio": "audio/ja/chars/kan-ji.mp3",
+      "audioHint": "じ",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu",
+        "penting"
+      ],
+      "difficulty": 1,
+      "seenIn": [
+        "w-jikan",
+        "w-tokidoki",
+        "w-tokei",
+        "s-20",
+        "s-41",
+        "s-45"
+      ]
+    },
+    {
+      "id": "kan-fun",
+      "character": "分",
+      "japanese": "分",
+      "furigana": [
+        {
+          "b": "分",
+          "r": "ふん"
+        }
+      ],
+      "readings": [
+        "ふん",
+        "ぷん",
+        "わ"
+      ],
+      "romaji": "fun / pun",
+      "indonesian": "menit",
+      "audio": "audio/ja/chars/kan-fun.mp3",
+      "audioHint": "ふん",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu",
+        "penting"
+      ],
+      "difficulty": 2,
+      "note": "Bunyinya ふん atau ぷん, tergantung angka di depannya: 五分 ごふん, 十分 じゅっぷん.",
+      "seenIn": [
+        "w-wakaru",
+        "w-kibun",
+        "w-tabun",
+        "s-06",
+        "s-14",
+        "s-34"
+      ]
+    },
+    {
+      "id": "kan-han",
+      "character": "半",
+      "japanese": "半",
+      "furigana": [
+        {
+          "b": "半",
+          "r": "はん"
+        }
+      ],
+      "readings": [
+        "はん"
+      ],
+      "romaji": "han",
+      "indonesian": "setengah, lewat 30 menit",
+      "audio": "audio/ja/chars/kan-han.mp3",
+      "audioHint": "はん",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 2,
+      "note": "六時半 = jam 6.30. Hati-hati: dalam bahasa Indonesia itu 'setengah tujuh', bukan 'setengah enam' — 半 ditambahkan pada jam yang sudah lewat."
+    },
+    {
+      "id": "kan-gozen",
+      "character": "午前",
+      "japanese": "午前",
+      "furigana": [
+        {
+          "b": "午前",
+          "r": "ごぜん"
+        }
+      ],
+      "readings": [
+        "ごぜん"
+      ],
+      "romaji": "gozen",
+      "indonesian": "a.m., pagi",
+      "audio": "audio/ja/chars/kan-gozen.mp3",
+      "audioHint": "ごぜん",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "num-14"
+      ]
+    },
+    {
+      "id": "kan-gogo",
+      "character": "午後",
+      "japanese": "午後",
+      "furigana": [
+        {
+          "b": "午後",
+          "r": "ごご"
+        }
+      ],
+      "readings": [
+        "ごご"
+      ],
+      "romaji": "gogo",
+      "indonesian": "p.m., siang dan sore",
+      "audio": "audio/ja/chars/kan-gogo.mp3",
+      "audioHint": "ごご",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "gx-kamoshirenai-1",
+        "num-14"
+      ]
+    },
+    {
+      "id": "kan-deguchi",
+      "character": "出口",
+      "japanese": "出口",
+      "furigana": [
+        {
+          "b": "出口",
+          "r": "でぐち"
+        }
+      ],
+      "readings": [
+        "でぐち"
+      ],
+      "romaji": "deguchi",
+      "indonesian": "pintu keluar",
+      "audio": "audio/ja/chars/kan-deguchi.mp3",
+      "audioHint": "でぐち",
+      "group": "wayfinding",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "penting"
+      ],
+      "difficulty": 1,
+      "note": "Bisa dibilang inilah yang paling berharga di daftar ini untuk langsung dikenali.",
+      "seenIn": [
+        "air-15"
+      ]
+    },
+    {
+      "id": "kan-iriguchi",
+      "character": "入口",
+      "japanese": "入口",
+      "furigana": [
+        {
+          "b": "入口",
+          "r": "いりぐち"
+        }
+      ],
+      "readings": [
+        "いりぐち"
+      ],
+      "romaji": "iriguchi",
+      "indonesian": "pintu masuk",
+      "audio": "audio/ja/chars/kan-iriguchi.mp3",
+      "audioHint": "いりぐち",
+      "group": "wayfinding",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "penting"
+      ],
+      "difficulty": 1,
+      "note": "出 (keluar) dan 入 (masuk) berpasangan — pelajari bersama, karena sekilas keduanya mirip."
+    },
+    {
+      "id": "kan-hijouguchi",
+      "character": "非常口",
+      "japanese": "非常口",
+      "furigana": [
+        {
+          "b": "非常口",
+          "r": "ひじょうぐち"
+        }
+      ],
+      "readings": [
+        "ひじょうぐち"
+      ],
+      "romaji": "hijōguchi",
+      "indonesian": "pintu darurat",
+      "audio": "audio/ja/chars/kan-hijouguchi.mp3",
+      "audioHint": "ひじょうぐち",
+      "group": "wayfinding",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "darurat"
+      ],
+      "difficulty": 3,
+      "note": "Selalu disertai gambar orang berlari, jadi konteksnya membantu — tapi tetap layak dihafal untuk lorong yang penuh asap."
+    },
+    {
+      "id": "kan-otoko",
+      "character": "男",
+      "japanese": "男",
+      "furigana": [
+        {
+          "b": "男",
+          "r": "おとこ"
+        }
+      ],
+      "readings": [
+        "おとこ",
+        "だん"
+      ],
+      "romaji": "otoko",
+      "indonesian": "pria, laki-laki",
+      "audio": "audio/ja/chars/kan-otoko.mp3",
+      "audioHint": "おとこ",
+      "group": "wayfinding",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "penting"
+      ],
+      "difficulty": 1,
+      "note": "Di pintu toilet, kadang tanpa gambar dan tanpa kode warna sama sekali."
+    },
+    {
+      "id": "kan-onna",
+      "character": "女",
+      "japanese": "女",
+      "furigana": [
+        {
+          "b": "女",
+          "r": "おんな"
+        }
+      ],
+      "readings": [
+        "おんな",
+        "じょ"
+      ],
+      "romaji": "onna",
+      "indonesian": "wanita, perempuan",
+      "audio": "audio/ja/chars/kan-onna.mp3",
+      "audioHint": "おんな",
+      "group": "wayfinding",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "penting"
+      ],
+      "difficulty": 1,
+      "note": "Hafalkan 男/女 sebagai pasangan. Salah masuk di onsen (pemandian air panas) adalah kesalahan yang tak terlupakan.",
+      "seenIn": [
+        "w-kanojo",
+        "s-21",
+        "cx-te-4",
+        "cx-soshite-3",
+        "cx-dakara-4",
+        "cx-toki-4"
+      ]
+    },
+    {
+      "id": "kan-otearai",
+      "character": "お手洗い",
+      "japanese": "お手洗い",
+      "furigana": [
+        {
+          "b": "お手洗い",
+          "r": "おてあらい"
+        }
+      ],
+      "readings": [
+        "おてあらい"
+      ],
+      "romaji": "otearai",
+      "indonesian": "toilet, kamar kecil",
+      "audio": "audio/ja/chars/kan-otearai.mp3",
+      "audioHint": "おてあらい",
+      "group": "wayfinding",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "penting"
+      ],
+      "difficulty": 2,
+      "note": "Bentuk tulisan yang sopan, seperti 'kamar kecil'. トイレ dan 化粧室 (けしょうしつ) juga ada di papan tanda."
+    },
+    {
+      "id": "kan-annai",
+      "character": "案内",
+      "japanese": "案内",
+      "furigana": [
+        {
+          "b": "案内",
+          "r": "あんない"
+        }
+      ],
+      "readings": [
+        "あんない"
+      ],
+      "romaji": "annai",
+      "indonesian": "informasi, panduan",
+      "audio": "audio/ja/chars/kan-annai.mp3",
+      "audioHint": "あんない",
+      "group": "wayfinding",
+      "tags": [
+        "kanji",
+        "papan tanda"
+      ],
+      "difficulty": 3,
+      "note": "案内所 adalah meja informasi — tempat bertanya kalau semua cara lain sudah gagal.",
+      "seenIn": [
+        "w-annai"
+      ]
+    },
+    {
+      "id": "kan-kaisatsu",
+      "character": "改札",
+      "japanese": "改札",
+      "furigana": [
+        {
+          "b": "改札",
+          "r": "かいさつ"
+        }
+      ],
+      "readings": [
+        "かいさつ"
+      ],
+      "romaji": "kaisatsu",
+      "indonesian": "gerbang tiket",
+      "audio": "audio/ja/chars/kan-kaisatsu.mp3",
+      "audioHint": "かいさつ",
+      "group": "wayfinding",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "transportasi"
+      ],
+      "difficulty": 3,
+      "note": "改札口 adalah gerbangnya, seperti gate tap kartu di stasiun KRL. Stasiun besar punya beberapa — ingat lewat yang mana kamu masuk.",
+      "seenIn": [
+        "pla-06"
+      ]
+    },
+    {
+      "id": "kan-kita",
+      "character": "北",
+      "japanese": "北",
+      "furigana": [
+        {
+          "b": "北",
+          "r": "きた"
+        }
+      ],
+      "readings": [
+        "きた",
+        "ほく"
+      ],
+      "romaji": "kita",
+      "indonesian": "utara",
+      "audio": "audio/ja/chars/kan-kita.mp3",
+      "audioHint": "きた",
+      "group": "wayfinding",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "arah"
+      ],
+      "difficulty": 2,
+      "note": "Pintu keluar stasiun dinamai menurut arah mata angin: 北口 = pintu keluar utara.",
+      "seenIn": [
+        "s-22"
+      ]
+    },
+    {
+      "id": "kan-minami",
+      "character": "南",
+      "japanese": "南",
+      "furigana": [
+        {
+          "b": "南",
+          "r": "みなみ"
+        }
+      ],
+      "readings": [
+        "みなみ",
+        "なん"
+      ],
+      "romaji": "minami",
+      "indonesian": "selatan",
+      "audio": "audio/ja/chars/kan-minami.mp3",
+      "audioHint": "みなみ",
+      "group": "wayfinding",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "arah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "kan-higashi",
+      "character": "東",
+      "japanese": "東",
+      "furigana": [
+        {
+          "b": "東",
+          "r": "ひがし"
+        }
+      ],
+      "readings": [
+        "ひがし",
+        "とう"
+      ],
+      "romaji": "higashi",
+      "indonesian": "timur",
+      "audio": "audio/ja/chars/kan-higashi.mp3",
+      "audioHint": "ひがし",
+      "group": "wayfinding",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "arah"
+      ],
+      "difficulty": 2,
+      "note": "東 dalam 東京 (Tokyo) — 'ibu kota timur'.",
+      "seenIn": [
+        "s-41",
+        "gx-ni-2",
+        "gx-teiru-3",
+        "tra-01"
+      ]
+    },
+    {
+      "id": "kan-nishi",
+      "character": "西",
+      "japanese": "西",
+      "furigana": [
+        {
+          "b": "西",
+          "r": "にし"
+        }
+      ],
+      "readings": [
+        "にし",
+        "せい"
+      ],
+      "romaji": "nishi",
+      "indonesian": "barat",
+      "audio": "audio/ja/chars/kan-nishi.mp3",
+      "audioHint": "にし",
+      "group": "wayfinding",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "arah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "kan-ue",
+      "character": "上",
+      "japanese": "上",
+      "furigana": [
+        {
+          "b": "上",
+          "r": "うえ"
+        }
+      ],
+      "readings": [
+        "うえ",
+        "じょう",
+        "のぼ"
+      ],
+      "romaji": "ue / jō",
+      "indonesian": "atas, naik",
+      "audio": "audio/ja/chars/kan-ue.mp3",
+      "audioHint": "うえ",
+      "group": "wayfinding",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "arah"
+      ],
+      "difficulty": 2,
+      "note": "上り (のぼり) di jadwal kereta berarti kereta yang menuju Tokyo.",
+      "seenIn": [
+        "w-jouzu",
+        "w-joushi",
+        "gx-sonkei-1",
+        "sma-08",
+        "fam-08"
+      ]
+    },
+    {
+      "id": "kan-shita",
+      "character": "下",
+      "japanese": "下",
+      "furigana": [
+        {
+          "b": "下",
+          "r": "した"
+        }
+      ],
+      "readings": [
+        "した",
+        "か",
+        "くだ"
+      ],
+      "romaji": "shita / ka",
+      "indonesian": "bawah, turun",
+      "audio": "audio/ja/chars/kan-shita.mp3",
+      "audioHint": "した",
+      "group": "wayfinding",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "arah"
+      ],
+      "difficulty": 2,
+      "note": "下り (くだり) kebalikan 上り — menjauhi Tokyo.",
+      "seenIn": [
+        "w-heta",
+        "cx-ga-3"
+      ]
+    },
+    {
+      "id": "kan-migi",
+      "character": "右",
+      "japanese": "右",
+      "furigana": [
+        {
+          "b": "右",
+          "r": "みぎ"
+        }
+      ],
+      "readings": [
+        "みぎ",
+        "う"
+      ],
+      "romaji": "migi",
+      "indonesian": "kanan",
+      "audio": "audio/ja/chars/kan-migi.mp3",
+      "audioHint": "みぎ",
+      "group": "wayfinding",
+      "tags": [
+        "kanji",
+        "arah",
+        "penting"
+      ],
+      "difficulty": 1,
+      "seenIn": [
+        "w-migi",
+        "dir-03",
+        "dir-09"
+      ]
+    },
+    {
+      "id": "kan-hidari",
+      "character": "左",
+      "japanese": "左",
+      "furigana": [
+        {
+          "b": "左",
+          "r": "ひだり"
+        }
+      ],
+      "readings": [
+        "ひだり",
+        "さ"
+      ],
+      "romaji": "hidari",
+      "indonesian": "kiri",
+      "audio": "audio/ja/chars/kan-hidari.mp3",
+      "audioHint": "ひだり",
+      "group": "wayfinding",
+      "tags": [
+        "kanji",
+        "arah",
+        "penting"
+      ],
+      "difficulty": 1,
+      "note": "右/左 sekilas mirip: bedanya di bagian bawah, 口 pada 右 (kanan) dan 工 pada 左 (kiri). Latih keduanya sebagai pasangan.",
+      "seenIn": [
+        "w-hidari",
+        "dir-05"
+      ]
+    },
+    {
+      "id": "kan-eki",
+      "character": "駅",
+      "japanese": "駅",
+      "furigana": [
+        {
+          "b": "駅",
+          "r": "えき"
+        }
+      ],
+      "readings": [
+        "えき"
+      ],
+      "romaji": "eki",
+      "indonesian": "stasiun",
+      "audio": "audio/ja/chars/kan-eki.mp3",
+      "audioHint": "えき",
+      "group": "transport",
+      "tags": [
+        "kanji",
+        "transportasi",
+        "penting"
+      ],
+      "difficulty": 1,
+      "note": "Ditaruh di belakang nama, kebalikan bahasa Indonesia: 東京駅 = Stasiun Tokyo.",
+      "seenIn": [
+        "w-eki",
+        "s-06",
+        "s-56",
+        "s-59",
+        "gx-de-4",
+        "gx-kara-made-1"
+      ]
+    },
+    {
+      "id": "kan-sen-line",
+      "character": "線",
+      "japanese": "線",
+      "furigana": [
+        {
+          "b": "線",
+          "r": "せん"
+        }
+      ],
+      "readings": [
+        "せん"
+      ],
+      "romaji": "sen",
+      "indonesian": "jalur (kereta)",
+      "audio": "audio/ja/chars/kan-sen-line.mp3",
+      "audioHint": "せん",
+      "group": "transport",
+      "tags": [
+        "kanji",
+        "transportasi"
+      ],
+      "difficulty": 2,
+      "note": "山手線 = Jalur Yamanote. Dibaca せん seperti 千 (seribu), tapi kanjinya lain.",
+      "seenIn": [
+        "w-shinkansen",
+        "gx-takotogaaru-4",
+        "tra-05"
+      ]
+    },
+    {
+      "id": "kan-bansen",
+      "character": "番線",
+      "japanese": "番線",
+      "furigana": [
+        {
+          "b": "番線",
+          "r": "ばんせん"
+        }
+      ],
+      "readings": [
+        "ばんせん"
+      ],
+      "romaji": "bansen",
+      "indonesian": "nomor jalur (peron)",
+      "audio": "audio/ja/chars/kan-bansen.mp3",
+      "audioHint": "ばんせん",
+      "group": "transport",
+      "tags": [
+        "kanji",
+        "transportasi",
+        "penting"
+      ],
+      "difficulty": 3,
+      "note": "三番線 = jalur 3. Angkanya ditulis lebih dulu.",
+      "seenIn": [
+        "tra-05"
+      ]
+    },
+    {
+      "id": "kan-jousha",
+      "character": "乗車",
+      "japanese": "乗車",
+      "furigana": [
+        {
+          "b": "乗車",
+          "r": "じょうしゃ"
+        }
+      ],
+      "readings": [
+        "じょうしゃ"
+      ],
+      "romaji": "jōsha",
+      "indonesian": "naik (kereta, bus)",
+      "audio": "audio/ja/chars/kan-jousha.mp3",
+      "audioHint": "じょうしゃ",
+      "group": "transport",
+      "tags": [
+        "kanji",
+        "transportasi"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "tra-20"
+      ]
+    },
+    {
+      "id": "kan-gesha",
+      "character": "下車",
+      "japanese": "下車",
+      "furigana": [
+        {
+          "b": "下車",
+          "r": "げしゃ"
+        }
+      ],
+      "readings": [
+        "げしゃ"
+      ],
+      "romaji": "gesha",
+      "indonesian": "turun (dari kereta, bus)",
+      "audio": "audio/ja/chars/kan-gesha.mp3",
+      "audioHint": "げしゃ",
+      "group": "transport",
+      "tags": [
+        "kanji",
+        "transportasi"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "kan-norikae",
+      "character": "乗り換え",
+      "japanese": "乗り換え",
+      "furigana": [
+        {
+          "b": "乗り換え",
+          "r": "のりかえ"
+        }
+      ],
+      "readings": [
+        "のりかえ"
+      ],
+      "romaji": "norikae",
+      "indonesian": "transit, pindah kereta",
+      "audio": "audio/ja/chars/kan-norikae.mp3",
+      "audioHint": "のりかえ",
+      "group": "transport",
+      "tags": [
+        "kanji",
+        "transportasi",
+        "penting"
+      ],
+      "difficulty": 3,
+      "note": "Ada di setiap papan petunjuk transit dan di setiap pengumuman di dalam kereta.",
+      "seenIn": [
+        "w-norikae",
+        "s-63",
+        "tra-06"
+      ]
+    },
+    {
+      "id": "kan-kippu",
+      "character": "切符",
+      "japanese": "切符",
+      "furigana": [
+        {
+          "b": "切符",
+          "r": "きっぷ"
+        }
+      ],
+      "readings": [
+        "きっぷ"
+      ],
+      "romaji": "kippu",
+      "indonesian": "tiket, karcis",
+      "audio": "audio/ja/chars/kan-kippu.mp3",
+      "audioHint": "きっぷ",
+      "group": "transport",
+      "tags": [
+        "kanji",
+        "transportasi"
+      ],
+      "difficulty": 3,
+      "note": "券 (けん) juga berarti tiket, dan muncul di 券売機 — mesin tiket.",
+      "seenIn": [
+        "w-kippu",
+        "tra-02"
+      ]
+    },
+    {
+      "id": "kan-shiteiseki",
+      "character": "指定席",
+      "japanese": "指定席",
+      "furigana": [
+        {
+          "b": "指定席",
+          "r": "していせき"
+        }
+      ],
+      "readings": [
+        "していせき"
+      ],
+      "romaji": "shiteiseki",
+      "indonesian": "kursi reservasi",
+      "audio": "audio/ja/chars/kan-shiteiseki.mp3",
+      "audioHint": "していせき",
+      "group": "transport",
+      "tags": [
+        "kanji",
+        "transportasi"
+      ],
+      "difficulty": 4,
+      "note": "Tercetak di tiket shinkansen-mu dan terpampang di atas pintu gerbong.",
+      "seenIn": [
+        "tra-09"
+      ]
+    },
+    {
+      "id": "kan-jiyuuseki",
+      "character": "自由席",
+      "japanese": "自由席",
+      "furigana": [
+        {
+          "b": "自由席",
+          "r": "じゆうせき"
+        }
+      ],
+      "readings": [
+        "じゆうせき"
+      ],
+      "romaji": "jiyūseki",
+      "indonesian": "kursi bebas (tanpa reservasi)",
+      "audio": "audio/ja/chars/kan-jiyuuseki.mp3",
+      "audioHint": "じゆうせき",
+      "group": "transport",
+      "tags": [
+        "kanji",
+        "transportasi"
+      ],
+      "difficulty": 4,
+      "note": "席 (kursi) ada di keduanya — begitu kamu melihatnya, papan itu pasti soal tempat duduk.",
+      "seenIn": [
+        "tra-10"
+      ]
+    },
+    {
+      "id": "kan-yuki",
+      "character": "行",
+      "japanese": "行",
+      "furigana": [
+        {
+          "b": "行",
+          "r": "ゆき"
+        }
+      ],
+      "readings": [
+        "ゆき",
+        "い",
+        "こう"
+      ],
+      "romaji": "yuki / iki",
+      "indonesian": "tujuan, menuju",
+      "audio": "audio/ja/chars/kan-yuki.mp3",
+      "audioHint": "ゆき",
+      "group": "transport",
+      "tags": [
+        "kanji",
+        "transportasi",
+        "penting"
+      ],
+      "difficulty": 3,
+      "note": "京都行 = tujuan Kyoto; nama tempatnya ditulis lebih dulu. Ada di bagian depan setiap kereta dan bus.",
+      "seenIn": [
+        "w-iku",
+        "w-ryokou",
+        "w-hikouki",
+        "s-22",
+        "s-23",
+        "s-28"
+      ]
+    },
+    {
+      "id": "kan-ginkou",
+      "character": "銀行",
+      "japanese": "銀行",
+      "furigana": [
+        {
+          "b": "銀行",
+          "r": "ぎんこう"
+        }
+      ],
+      "readings": [
+        "ぎんこう"
+      ],
+      "romaji": "ginkō",
+      "indonesian": "bank",
+      "audio": "audio/ja/chars/kan-ginkou.mp3",
+      "audioHint": "ぎんこう",
+      "group": "commerce",
+      "tags": [
+        "kanji",
+        "uang",
+        "papan tanda"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "kan-ryougae",
+      "character": "両替",
+      "japanese": "両替",
+      "furigana": [
+        {
+          "b": "両替",
+          "r": "りょうがえ"
+        }
+      ],
+      "readings": [
+        "りょうがえ"
+      ],
+      "romaji": "ryōgae",
+      "indonesian": "tukar uang, money changer",
+      "audio": "audio/ja/chars/kan-ryougae.mp3",
+      "audioHint": "りょうがえ",
+      "group": "commerce",
+      "tags": [
+        "kanji",
+        "uang",
+        "papan tanda"
+      ],
+      "difficulty": 4,
+      "note": "Juga ada di mesin tiket, artinya 'tukar uang kertas jadi koin'.",
+      "seenIn": [
+        "num-24",
+        "air-17"
+      ]
+    },
+    {
+      "id": "kan-genkin",
+      "character": "現金",
+      "japanese": "現金",
+      "furigana": [
+        {
+          "b": "現金",
+          "r": "げんきん"
+        }
+      ],
+      "readings": [
+        "げんきん"
+      ],
+      "romaji": "genkin",
+      "indonesian": "uang tunai",
+      "audio": "audio/ja/chars/kan-genkin.mp3",
+      "audioHint": "げんきん",
+      "group": "commerce",
+      "tags": [
+        "kanji",
+        "uang",
+        "papan tanda"
+      ],
+      "difficulty": 3,
+      "note": "現金のみ = hanya tunai. Masih umum di restoran kecil dan di kuil.",
+      "seenIn": [
+        "w-genkin",
+        "s-50",
+        "num-09"
+      ]
+    },
+    {
+      "id": "kan-muryou",
+      "character": "無料",
+      "japanese": "無料",
+      "furigana": [
+        {
+          "b": "無料",
+          "r": "むりょう"
+        }
+      ],
+      "readings": [
+        "むりょう"
+      ],
+      "romaji": "muryō",
+      "indonesian": "gratis",
+      "audio": "audio/ja/chars/kan-muryou.mp3",
+      "audioHint": "むりょう",
+      "group": "commerce",
+      "tags": [
+        "kanji",
+        "uang",
+        "papan tanda"
+      ],
+      "difficulty": 3,
+      "note": "無 berarti 'tanpa' atau 'tidak ada' — kanji ini muncul di mana-mana.",
+      "seenIn": [
+        "w-muryou",
+        "cx-soshite-2"
+      ]
+    },
+    {
+      "id": "kan-yuuryou",
+      "character": "有料",
+      "japanese": "有料",
+      "furigana": [
+        {
+          "b": "有料",
+          "r": "ゆうりょう"
+        }
+      ],
+      "readings": [
+        "ゆうりょう"
+      ],
+      "romaji": "yūryō",
+      "indonesian": "berbayar",
+      "audio": "audio/ja/chars/kan-yuuryou.mp3",
+      "audioHint": "ゆうりょう",
+      "group": "commerce",
+      "tags": [
+        "kanji",
+        "uang",
+        "papan tanda"
+      ],
+      "difficulty": 3,
+      "note": "Kebalikan 無料. Cek dulu sebelum memakai loker itu.",
+      "seenIn": [
+        "w-yuuryou"
+      ]
+    },
+    {
+      "id": "kan-zeikomi",
+      "character": "税込",
+      "japanese": "税込",
+      "furigana": [
+        {
+          "b": "税込",
+          "r": "ぜいこみ"
+        }
+      ],
+      "readings": [
+        "ぜいこみ"
+      ],
+      "romaji": "zeikomi",
+      "indonesian": "sudah termasuk pajak",
+      "audio": "audio/ja/chars/kan-zeikomi.mp3",
+      "audioHint": "ぜいこみ",
+      "group": "commerce",
+      "tags": [
+        "kanji",
+        "uang",
+        "papan tanda"
+      ],
+      "difficulty": 4,
+      "note": "税抜 (ぜいぬき) berarti BELUM termasuk pajak, seperti 'harga belum termasuk PPN'. Cek angka besarnya yang mana.",
+      "seenIn": [
+        "w-zeikomi"
+      ]
+    },
+    {
+      "id": "kan-eigyouchuu",
+      "character": "営業中",
+      "japanese": "営業中",
+      "furigana": [
+        {
+          "b": "営業中",
+          "r": "えいぎょうちゅう"
+        }
+      ],
+      "readings": [
+        "えいぎょうちゅう"
+      ],
+      "romaji": "eigyōchū",
+      "indonesian": "buka (sedang beroperasi)",
+      "audio": "audio/ja/chars/kan-eigyouchuu.mp3",
+      "audioHint": "えいぎょうちゅう",
+      "group": "commerce",
+      "tags": [
+        "kanji",
+        "papan tanda"
+      ],
+      "difficulty": 4,
+      "note": "中 = 'sedang'. Tempelkan di belakang kata apa saja untuk arti 'sedang …': 営業中 = sedang buka."
+    },
+    {
+      "id": "kan-junbichuu",
+      "character": "準備中",
+      "japanese": "準備中",
+      "furigana": [
+        {
+          "b": "準備中",
+          "r": "じゅんびちゅう"
+        }
+      ],
+      "readings": [
+        "じゅんびちゅう"
+      ],
+      "romaji": "junbichū",
+      "indonesian": "persiapan — tutup sementara",
+      "audio": "audio/ja/chars/kan-junbichuu.mp3",
+      "audioHint": "じゅんびちゅう",
+      "group": "commerce",
+      "tags": [
+        "kanji",
+        "papan tanda"
+      ],
+      "difficulty": 5,
+      "note": "Digantung di pintu restoran di antara jam makan siang dan makan malam. Bukan tutup permanen — datang lagi jam lima."
+    },
+    {
+      "id": "kan-kaikei",
+      "character": "会計",
+      "japanese": "会計",
+      "furigana": [
+        {
+          "b": "会計",
+          "r": "かいけい"
+        }
+      ],
+      "readings": [
+        "かいけい"
+      ],
+      "romaji": "kaikei",
+      "indonesian": "bayar, kasir",
+      "audio": "audio/ja/chars/kan-kaikei.mp3",
+      "audioHint": "かいけい",
+      "group": "commerce",
+      "tags": [
+        "kanji",
+        "uang",
+        "restoran"
+      ],
+      "difficulty": 3,
+      "note": "レジ (dari register, mesin kasir) adalah kata lain yang akan kamu lihat di konter.",
+      "seenIn": [
+        "res-10"
+      ]
+    },
+    {
+      "id": "kan-menzei",
+      "character": "免税",
+      "japanese": "免税",
+      "furigana": [
+        {
+          "b": "免税",
+          "r": "めんぜい"
+        }
+      ],
+      "readings": [
+        "めんぜい"
+      ],
+      "romaji": "menzei",
+      "indonesian": "bebas pajak (tax-free)",
+      "audio": "audio/ja/chars/kan-menzei.mp3",
+      "audioHint": "めんぜい",
+      "group": "commerce",
+      "tags": [
+        "kanji",
+        "uang",
+        "papan tanda",
+        "belanja"
+      ],
+      "difficulty": 4,
+      "note": "Di etalase toko, artinya toko itu bisa memproses pembelian bebas pajak — bawa paspormu.",
+      "seenIn": [
+        "sho-04"
+      ]
+    },
+    {
+      "id": "kan-kiken",
+      "character": "危険",
+      "japanese": "危険",
+      "furigana": [
+        {
+          "b": "危険",
+          "r": "きけん"
+        }
+      ],
+      "readings": [
+        "きけん"
+      ],
+      "romaji": "kiken",
+      "indonesian": "bahaya",
+      "audio": "audio/ja/chars/kan-kiken.mp3",
+      "audioHint": "きけん",
+      "group": "safety",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "darurat"
+      ],
+      "difficulty": 3,
+      "note": "Biasanya merah atau kuning. Kalau hanya mau menghafal dua kata peringatan, hafalkan ini dan 禁止."
+    },
+    {
+      "id": "kan-kinshi",
+      "character": "禁止",
+      "japanese": "禁止",
+      "furigana": [
+        {
+          "b": "禁止",
+          "r": "きんし"
+        }
+      ],
+      "readings": [
+        "きんし"
+      ],
+      "romaji": "kinshi",
+      "indonesian": "dilarang",
+      "audio": "audio/ja/chars/kan-kinshi.mp3",
+      "audioHint": "きんし",
+      "group": "safety",
+      "tags": [
+        "kanji",
+        "papan tanda"
+      ],
+      "difficulty": 3,
+      "note": "Ditaruh di belakang hal yang dilarang, kebalikan 'dilarang …': 撮影禁止 dilarang memotret, 喫煙禁止 dilarang merokok."
+    },
+    {
+      "id": "kan-tachiirikinshi",
+      "character": "立入禁止",
+      "japanese": "立入禁止",
+      "furigana": [
+        {
+          "b": "立入禁止",
+          "r": "たちいりきんし"
+        }
+      ],
+      "readings": [
+        "たちいりきんし"
+      ],
+      "romaji": "tachiiri kinshi",
+      "indonesian": "dilarang masuk",
+      "audio": "audio/ja/chars/kan-tachiirikinshi.mp3",
+      "audioHint": "たちいりきんし",
+      "group": "safety",
+      "tags": [
+        "kanji",
+        "papan tanda"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "kan-chuui",
+      "character": "注意",
+      "japanese": "注意",
+      "furigana": [
+        {
+          "b": "注意",
+          "r": "ちゅうい"
+        }
+      ],
+      "readings": [
+        "ちゅうい"
+      ],
+      "romaji": "chūi",
+      "indonesian": "hati-hati, perhatian",
+      "audio": "audio/ja/chars/kan-chuui.mp3",
+      "audioHint": "ちゅうい",
+      "group": "safety",
+      "tags": [
+        "kanji",
+        "papan tanda"
+      ],
+      "difficulty": 3,
+      "note": "Lebih ringan dari 危険 — 'hati-hati', bukan 'nyawamu terancam'. 足元注意 = hati-hati melangkah."
+    },
+    {
+      "id": "kan-hijou",
+      "character": "非常",
+      "japanese": "非常",
+      "furigana": [
+        {
+          "b": "非常",
+          "r": "ひじょう"
+        }
+      ],
+      "readings": [
+        "ひじょう"
+      ],
+      "romaji": "hijō",
+      "indonesian": "darurat",
+      "audio": "audio/ja/chars/kan-hijou.mp3",
+      "audioHint": "ひじょう",
+      "group": "safety",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "darurat"
+      ],
+      "difficulty": 3,
+      "note": "非常口 pintu darurat, 非常ベル bel alarm, 非常電話 telepon darurat."
+    },
+    {
+      "id": "kan-byouin",
+      "character": "病院",
+      "japanese": "病院",
+      "furigana": [
+        {
+          "b": "病院",
+          "r": "びょういん"
+        }
+      ],
+      "readings": [
+        "びょういん"
+      ],
+      "romaji": "byōin",
+      "indonesian": "rumah sakit",
+      "audio": "audio/ja/chars/kan-byouin.mp3",
+      "audioHint": "びょういん",
+      "group": "safety",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "kesehatan"
+      ],
+      "difficulty": 3,
+      "note": "Jangan tertukar dengan 美容院 (びよういん) — itu salon. Bedanya hanya ょ kecil (びょう) atau よ besar (びよう).",
+      "seenIn": [
+        "w-byouin",
+        "eme-02"
+      ]
+    },
+    {
+      "id": "kan-keisatsu",
+      "character": "警察",
+      "japanese": "警察",
+      "furigana": [
+        {
+          "b": "警察",
+          "r": "けいさつ"
+        }
+      ],
+      "readings": [
+        "けいさつ"
+      ],
+      "romaji": "keisatsu",
+      "indonesian": "polisi",
+      "audio": "audio/ja/chars/kan-keisatsu.mp3",
+      "audioHint": "けいさつ",
+      "group": "safety",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "darurat"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "eme-05"
+      ]
+    },
+    {
+      "id": "kan-kouban",
+      "character": "交番",
+      "japanese": "交番",
+      "furigana": [
+        {
+          "b": "交番",
+          "r": "こうばん"
+        }
+      ],
+      "readings": [
+        "こうばん"
+      ],
+      "romaji": "kōban",
+      "indonesian": "pos polisi",
+      "audio": "audio/ja/chars/kan-kouban.mp3",
+      "audioHint": "こうばん",
+      "group": "safety",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "darurat"
+      ],
+      "difficulty": 3,
+      "note": "Pos polisi kecil di lingkungan sekitar — hampir setiap stasiun punya satu di dekatnya. Ke sinilah kamu melapor barang hilang."
+    },
+    {
+      "id": "kan-yakkyoku",
+      "character": "薬局",
+      "japanese": "薬局",
+      "furigana": [
+        {
+          "b": "薬局",
+          "r": "やっきょく"
+        }
+      ],
+      "readings": [
+        "やっきょく"
+      ],
+      "romaji": "yakkyoku",
+      "indonesian": "apotek",
+      "audio": "audio/ja/chars/kan-yakkyoku.mp3",
+      "audioHint": "やっきょく",
+      "group": "safety",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "kesehatan"
+      ],
+      "difficulty": 4,
+      "note": "薬 sendiri berarti obat. ドラッグストア adalah toko obat jaringan yang lebih besar.",
+      "seenIn": [
+        "w-yakkyoku",
+        "s-65"
+      ]
+    },
+    {
+      "id": "kan-osu",
+      "character": "押",
+      "japanese": "押",
+      "furigana": [
+        {
+          "b": "押",
+          "r": "おす"
+        }
+      ],
+      "readings": [
+        "お",
+        "おう"
+      ],
+      "romaji": "osu",
+      "indonesian": "dorong, tekan",
+      "audio": "audio/ja/chars/kan-osu.mp3",
+      "audioHint": "おす",
+      "group": "signage",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "penting"
+      ],
+      "difficulty": 2,
+      "note": "Di pintu, dan di tombol yang harus kamu tekan.",
+      "seenIn": [
+        "cx-to-3"
+      ]
+    },
+    {
+      "id": "kan-hiku",
+      "character": "引",
+      "japanese": "引",
+      "furigana": [
+        {
+          "b": "引",
+          "r": "ひく"
+        }
+      ],
+      "readings": [
+        "ひ",
+        "いん"
+      ],
+      "romaji": "hiku",
+      "indonesian": "tarik",
+      "audio": "audio/ja/chars/kan-hiku.mp3",
+      "audioHint": "ひく",
+      "group": "signage",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "penting"
+      ],
+      "difficulty": 2,
+      "note": "押/引 adalah pasangan di pintu. Juga 割引 (わりびき) = diskon.",
+      "seenIn": [
+        "w-hikkoshi",
+        "w-waribiki",
+        "gx-tekureru-1"
+      ]
+    },
+    {
+      "id": "kan-aku",
+      "character": "開",
+      "japanese": "開",
+      "furigana": [
+        {
+          "b": "開",
+          "r": "あく"
+        }
+      ],
+      "readings": [
+        "あ",
+        "ひら",
+        "かい"
+      ],
+      "romaji": "aku / hiraku",
+      "indonesian": "buka",
+      "audio": "audio/ja/chars/kan-aku.mp3",
+      "audioHint": "あく",
+      "group": "signage",
+      "tags": [
+        "kanji",
+        "papan tanda"
+      ],
+      "difficulty": 2,
+      "note": "Tombol 開 di lift menahan pintunya tetap terbuka.",
+      "seenIn": [
+        "gx-teoku-2",
+        "gx-temoii-3"
+      ]
+    },
+    {
+      "id": "kan-shimaru",
+      "character": "閉",
+      "japanese": "閉",
+      "furigana": [
+        {
+          "b": "閉",
+          "r": "しまる"
+        }
+      ],
+      "readings": [
+        "し",
+        "と",
+        "へい"
+      ],
+      "romaji": "shimaru / tojiru",
+      "indonesian": "tutup",
+      "audio": "audio/ja/chars/kan-shimaru.mp3",
+      "audioHint": "しまる",
+      "group": "signage",
+      "tags": [
+        "kanji",
+        "papan tanda"
+      ],
+      "difficulty": 2,
+      "note": "閉 menutup pintu lift. Kedua kanji ini dikelilingi bingkai 門 (gerbang)."
+    },
+    {
+      "id": "kan-tomaru",
+      "character": "止",
+      "japanese": "止",
+      "furigana": [
+        {
+          "b": "止",
+          "r": "とまる"
+        }
+      ],
+      "readings": [
+        "と",
+        "し"
+      ],
+      "romaji": "tomaru",
+      "indonesian": "berhenti",
+      "audio": "audio/ja/chars/kan-tomaru.mp3",
+      "audioHint": "とまる",
+      "group": "signage",
+      "tags": [
+        "kanji",
+        "papan tanda"
+      ],
+      "difficulty": 2,
+      "note": "止 yang sama di akhir 禁止 (dilarang) — 'dihentikan oleh aturan'.",
+      "seenIn": [
+        "gx-mitai-3",
+        "tra-14",
+        "doc-05",
+        "doc-13"
+      ]
+    },
+    {
+      "id": "kan-aki",
+      "character": "空",
+      "japanese": "空",
+      "furigana": [
+        {
+          "b": "空",
+          "r": "あき"
+        }
+      ],
+      "readings": [
+        "あ",
+        "から",
+        "くう",
+        "そら"
+      ],
+      "romaji": "aki / kū",
+      "indonesian": "kosong",
+      "audio": "audio/ja/chars/kan-aki.mp3",
+      "audioHint": "あき",
+      "group": "signage",
+      "tags": [
+        "kanji",
+        "papan tanda"
+      ],
+      "difficulty": 3,
+      "note": "空車 di taksi berarti taksinya kosong dan bisa kamu panggil. 空 juga berarti langit, dan 空港 adalah bandara.",
+      "seenIn": [
+        "w-kuukou",
+        "pla-02"
+      ]
+    },
+    {
+      "id": "kan-man-full",
+      "character": "満",
+      "japanese": "満",
+      "furigana": [
+        {
+          "b": "満",
+          "r": "まん"
+        }
+      ],
+      "readings": [
+        "まん",
+        "み"
+      ],
+      "romaji": "man",
+      "indonesian": "penuh, terisi",
+      "audio": "audio/ja/chars/kan-man-full.mp3",
+      "audioHint": "まん",
+      "group": "signage",
+      "tags": [
+        "kanji",
+        "papan tanda"
+      ],
+      "difficulty": 3,
+      "note": "満車 = parkiran penuh. 満席 = kursi sudah habis. Kebalikan 空."
+    },
+    {
+      "id": "kan-dai",
+      "character": "大",
+      "japanese": "大",
+      "furigana": [
+        {
+          "b": "大",
+          "r": "だい"
+        }
+      ],
+      "readings": [
+        "だい",
+        "おお"
+      ],
+      "romaji": "dai / ō",
+      "indonesian": "besar",
+      "audio": "audio/ja/chars/kan-dai.mp3",
+      "audioHint": "だい",
+      "group": "signage",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "makanan"
+      ],
+      "difficulty": 1,
+      "note": "大盛り (おおもり) di menu artinya porsi besar, biasanya hanya sedikit lebih mahal.",
+      "seenIn": [
+        "w-ookii",
+        "w-daijoubu",
+        "w-taisetsu",
+        "w-taihen",
+        "s-21",
+        "gx-i-adj-2"
+      ]
+    },
+    {
+      "id": "kan-chuu",
+      "character": "中",
+      "japanese": "中",
+      "furigana": [
+        {
+          "b": "中",
+          "r": "ちゅう"
+        }
+      ],
+      "readings": [
+        "ちゅう",
+        "なか"
+      ],
+      "romaji": "chū / naka",
+      "indonesian": "sedang, tengah, dalam",
+      "audio": "audio/ja/chars/kan-chuu.mp3",
+      "audioHint": "ちゅう",
+      "group": "signage",
+      "tags": [
+        "kanji",
+        "papan tanda"
+      ],
+      "difficulty": 1,
+      "note": "Persis seperti 'sedang' dalam bahasa Indonesia, 中 juga berarti 'sedang berlangsung': 使用中 = sedang dipakai, 工事中 = sedang ada pekerjaan konstruksi.",
+      "seenIn": [
+        "w-tochuu",
+        "s-55",
+        "gx-tewaikenai-4",
+        "gx-hikaku-4",
+        "fam-10"
+      ]
+    },
+    {
+      "id": "kan-shou",
+      "character": "小",
+      "japanese": "小",
+      "furigana": [
+        {
+          "b": "小",
+          "r": "しょう"
+        }
+      ],
+      "readings": [
+        "しょう",
+        "ちい",
+        "こ"
+      ],
+      "romaji": "shō / chiisai",
+      "indonesian": "kecil",
+      "audio": "audio/ja/chars/kan-shou.mp3",
+      "audioHint": "しょう",
+      "group": "signage",
+      "tags": [
+        "kanji",
+        "papan tanda",
+        "makanan"
+      ],
+      "difficulty": 1,
+      "note": "大/中/小 adalah tiga ukuran standar di menu dan mesin penjual otomatis.",
+      "seenIn": [
+        "w-chiisai",
+        "s-49",
+        "cx-demo-3"
+      ]
+    }
+  ]
+}

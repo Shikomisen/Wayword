@@ -1,0 +1,257 @@
+{
+  "schemaVersion": 1,
+  "id": "immigration",
+  "title": "Di meja imigrasi",
+  "category": "airport",
+  "setting": "Kamu baru mendarat di Narita, dan sekarang berada paling depan di antrean paspor asing.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "officer",
+      "japanese": "パスポートをお願いします。",
+      "furigana": [
+        {
+          "b": "パスポートをお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いします。"
+        }
+      ],
+      "romaji": "Pasupōto o onegai shimasu.",
+      "indonesian": "Paspornya, silakan.",
+      "audio": "audio/ja/scenario/immigration-n1.mp3",
+      "audioHint": "パスポートをおねがいします",
+      "options": [
+        {
+          "phraseId": "air-01",
+          "quality": "good",
+          "feedback": "Serahkan dalam keadaan terbuka di halaman foto. Itu saja.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "japanese": "どうぞ。",
+          "romaji": "Dōzo.",
+          "indonesian": "Ini, silakan.",
+          "feedback": "どうぞ adalah “ini, silakan” serbaguna saat menyerahkan sesuatu. Singkat dan wajar.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "officer",
+      "japanese": "旅行の目的は何ですか。",
+      "furigana": [
+        {
+          "b": "旅行",
+          "r": "りょこう"
+        },
+        {
+          "b": "の"
+        },
+        {
+          "b": "目的",
+          "r": "もくてき"
+        },
+        {
+          "b": "は"
+        },
+        {
+          "b": "何",
+          "r": "なん"
+        },
+        {
+          "b": "ですか。"
+        }
+      ],
+      "romaji": "Ryokō no mokuteki wa nan desu ka.",
+      "indonesian": "Apa tujuan kunjungannya?",
+      "audio": "audio/ja/scenario/immigration-n2.mp3",
+      "audioHint": "りょこうのもくてきはなんですか",
+      "options": [
+        {
+          "phraseId": "air-02",
+          "quality": "good",
+          "feedback": "Satu kata, persis yang diminta. Meja imigrasi bukan tempat untuk bercerita panjang.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "gre-22",
+          "quality": "good",
+          "feedback": "Juga benar, sedikit lebih lengkap. Keduanya sama baiknya.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "gre-14",
+          "quality": "awkward",
+          "feedback": "Petugas akan mengulanginya dalam bahasa Inggris dan kamu akan baik-baik saja. Tapi 目的 (tujuan) adalah satu kata yang layak kamu tahu sebelum mendarat.",
+          "next": "n2b"
+        }
+      ]
+    },
+    "n2b": {
+      "speaker": "officer",
+      "japanese": "Sightseeing? Business?",
+      "furigana": [
+        {
+          "b": "Sightseeing? Business?"
+        }
+      ],
+      "romaji": "(in English)",
+      "indonesian": "Wisata? Bisnis?",
+      "audio": null,
+      "options": [
+        {
+          "phraseId": "air-02",
+          "quality": "good",
+          "feedback": "Kembali ke jalur, dan menjawab dalam bahasa Jepang setelah sempat tersendat memberi kesan yang baik.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "officer",
+      "japanese": "何日間滞在しますか。",
+      "furigana": [
+        {
+          "b": "何日間",
+          "r": "なんにちかん"
+        },
+        {
+          "b": "滞在",
+          "r": "たいざい"
+        },
+        {
+          "b": "しますか。"
+        }
+      ],
+      "romaji": "Nannichikan taizai shimasu ka.",
+      "indonesian": "Akan tinggal berapa hari?",
+      "audio": "audio/ja/scenario/immigration-n3.mp3",
+      "audioHint": "なんにちかんたいざいしますか",
+      "options": [
+        {
+          "phraseId": "air-03",
+          "quality": "good",
+          "feedback": "Sepuluh hari. Perhatikan 十日 dibaca とおか (tidak beraturan), bukan じゅうにち.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "japanese": "二週間です。",
+          "romaji": "Nishūkan desu.",
+          "indonesian": "Dua minggu.",
+          "feedback": "週間 menghitung minggu. Sering lebih mudah diucapkan daripada jumlah hari.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "officer",
+      "japanese": "どこに泊まりますか。",
+      "furigana": [
+        {
+          "b": "どこに"
+        },
+        {
+          "b": "泊",
+          "r": "と"
+        },
+        {
+          "b": "まりますか。"
+        }
+      ],
+      "romaji": "Doko ni tomarimasu ka.",
+      "indonesian": "Menginap di mana?",
+      "audio": "audio/ja/scenario/immigration-n4.mp3",
+      "audioHint": "どこにとまりますか",
+      "options": [
+        {
+          "phraseId": "air-05",
+          "quality": "good",
+          "feedback": "Jawaban terbaik: tunjukkan bukti pemesanan di ponselmu sambil mengatakannya. Nama tempat sulit diucapkan tapi mudah ditunjukkan.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "air-04",
+          "quality": "good",
+          "feedback": "Benar, tapi kurang jelas. Siap-siap ditanya hotel yang mana, jadi tetap sediakan alamatnya.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "gre-13",
+          "quality": "wrong",
+          "feedback": "“Saya mengerti” bukan jawaban untuk “di mana”. Saat tegang, mudah sekali meraih kalimat yang kamu kuasai, bukan kalimat yang cocok. Sadari kebiasaan itu dari sekarang.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "officer",
+      "japanese": "はい、結構です。指紋と写真をお願いします。",
+      "furigana": [
+        {
+          "b": "はい、"
+        },
+        {
+          "b": "結構",
+          "r": "けっこう"
+        },
+        {
+          "b": "です。"
+        },
+        {
+          "b": "指紋",
+          "r": "しもん"
+        },
+        {
+          "b": "と"
+        },
+        {
+          "b": "写真",
+          "r": "しゃしん"
+        },
+        {
+          "b": "をお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いします。"
+        }
+      ],
+      "romaji": "Hai, kekkō desu. Shimon to shashin o onegai shimasu.",
+      "indonesian": "Baik, sudah cukup. Sidik jari dan foto, silakan.",
+      "audio": "audio/ja/scenario/immigration-n5.mp3",
+      "audioHint": "はい、けっこうです。しもんとしゃしんをおねがいします",
+      "options": [
+        {
+          "phraseId": "gre-13",
+          "quality": "good",
+          "feedback": "Sekarang cocok. Letakkan kedua jari telunjuk di pemindai, lalu lihat ke kamera kecil.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-05",
+          "quality": "good",
+          "feedback": "Juga boleh. 結構です di sini berarti “sudah cukup”, bukan “tidak, terima kasih”: konteks yang menentukan artinya.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "romaji": "",
+      "indonesian": "Dicap dan lolos. Empat pertanyaan, selalu empat yang sama: tujuan, lama tinggal, tempat menginap, lalu sidik jari dan foto.",
+      "end": true,
+      "options": []
+    }
+  }
+}

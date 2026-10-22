@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-mitai",
+  "connector": "〜みたい",
+  "gloss": "sepertinya; kabarnya",
+  "title": "〜みたい・〜らしい — sepertinya, kabarnya",
+  "pattern": "bentuk biasa (kata benda / kata sifat な tanpa だ) + みたい(だ) / らしい",
+  "explanation": "みたい menyatakan sesuatu sepertinya begitu, dari yang kamu lihat atau dengar, seperti “sepertinya” atau “kayaknya”: {彼|かれ}、{疲|つか}れてるみたい — dia sepertinya capek. らしい bersandar pada apa yang kamu dengar, seperti “kabarnya”: あの{店|みせ}、{有名|ゆうめい}らしいよ — kabarnya tempat itu terkenal. みたい juga berarti “seperti”: {夢|ゆめ}みたい — seperti mimpi.",
+  "natural": "みたい adalah bentuk santai sehari-hari; ようです adalah kembarannya yang sopan dan tertulis.",
+  "stiff": "Bukan untuk perasaanmu sendiri, yang tentu kamu tahu. “Kayaknya aku capek” wajar dalam bahasa Indonesia, tetapi {私|わたし}は{疲|つか}れたみたい terdengar aneh. Cukup {疲|つか}れた.",
+  "examples": [
+    {
+      "id": "gx-mitai-1",
+      "japanese": "彼、ちょっと疲れてるみたい。",
+      "furigana": "{彼|かれ}、ちょっと{疲|つか}れてるみたい。",
+      "indonesian": "Dia sepertinya agak capek.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{彼|かれ}、",
+          "w": "w-kare"
+        },
+        {
+          "t": "ちょっと",
+          "w": "w-chotto"
+        },
+        {
+          "t": "{疲|つか}れてるみたい。",
+          "w": "w-tsukareru"
+        }
+      ],
+      "gap": {
+        "before": "{彼|かれ}、ちょっと{疲|つか}れてる",
+        "answer": "みたい",
+        "after": "。",
+        "options": [
+          "みたい",
+          "そう",
+          "つもり"
+        ],
+        "why": "Dari kelihatannya: みたい."
+      },
+      "audio": "audio/ja/grammar/gx-mitai-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "mitai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-mitai-2",
+      "japanese": "あの店、有名らしいよ。",
+      "furigana": "あの{店|みせ}、{有名|ゆうめい}らしいよ。",
+      "indonesian": "Kabarnya tempat itu terkenal.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "あの{店|みせ}、",
+          "w": "w-mise"
+        },
+        {
+          "t": "{有名|ゆうめい}らしいよ。",
+          "w": "w-yuumei"
+        }
+      ],
+      "gap": {
+        "before": "あの{店|みせ}、{有名|ゆうめい}",
+        "answer": "らしい",
+        "after": "よ。",
+        "options": [
+          "らしい",
+          "そう",
+          "つもり"
+        ],
+        "why": "Dari yang kamu dengar: らしい."
+      },
+      "audio": "audio/ja/grammar/gx-mitai-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "mitai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-mitai-3",
+      "japanese": "電車が止まっているみたいです。",
+      "furigana": "{電車|でんしゃ}が{止|と}まっているみたいです。",
+      "indonesian": "Sepertinya keretanya berhenti beroperasi.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{電車|でんしゃ}が",
+          "w": "w-densha"
+        },
+        {
+          "t": "{止|と}まっている"
+        },
+        {
+          "t": "みたいです。"
+        }
+      ],
+      "gap": {
+        "before": "{電車|でんしゃ}が{止|と}まっている",
+        "answer": "みたい",
+        "after": "です。",
+        "options": [
+          "みたい",
+          "らしい",
+          "つもり"
+        ],
+        "ok": [
+          "らしい"
+        ],
+        "note": "らしい bisa dipakai kalau kamu mendengarnya dari orang lain, bukan melihat sendiri.",
+        "why": "Dari yang bisa kamu lihat: みたい."
+      },
+      "audio": "audio/ja/grammar/gx-mitai-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "mitai"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-mitai-4",
+      "japanese": "本当に夢みたい！",
+      "furigana": "{本当|ほんとう}に{夢|ゆめ}みたい！",
+      "indonesian": "Benar-benar seperti mimpi!",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{本当|ほんとう}に",
+          "w": "w-hontou"
+        },
+        {
+          "t": "{夢|ゆめ}みたい！"
+        }
+      ],
+      "gap": {
+        "before": "{本当|ほんとう}に{夢|ゆめ}",
+        "answer": "みたい",
+        "after": "！",
+        "options": [
+          "みたい",
+          "らしい",
+          "そう"
+        ],
+        "why": "みたい juga berarti “seperti”: 夢みたい."
+      },
+      "audio": "audio/ja/grammar/gx-mitai-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "mitai"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

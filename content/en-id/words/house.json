@@ -1,0 +1,356 @@
+{
+  "schemaVersion": 1,
+  "id": "words-house",
+  "title": "Home & Everyday Life",
+  "description": "Living in Indonesia: renting a kos, paying the bills, the water jug and the gas bottle, things that break and the people who fix them.",
+  "items": [
+    {
+      "id": "w-kos",
+      "indonesian": "kos",
+      "english": "boarding house; a rented room",
+      "pos": "noun",
+      "registerNotes": "Signs say Terima Kos or Kost; kos putri and kos putra take only women or only men.",
+      "cultureNote": "A kos is a room rented by the month, often with a shared bathroom. The landlady is the ibu kos, and the students and young workers who live there are anak kos.",
+      "audio": "audio/id/words/w-kos.mp3",
+      "tags": [
+        "home",
+        "renting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kontrakan",
+      "indonesian": "kontrakan",
+      "english": "rented house",
+      "pos": "noun",
+      "forms": {
+        "root": "kontrak"
+      },
+      "cultureNote": "A kontrakan is often rented by the year, with the whole year's rent paid in advance.",
+      "audio": "audio/id/words/w-kontrakan.mp3",
+      "tags": [
+        "home",
+        "renting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sewa",
+      "indonesian": "sewa",
+      "english": "rent, hire (the charge)",
+      "pos": "noun",
+      "registerNotes": "Sewanya berapa sebulan? (How much is the rent a month?) In speech sewa is also the verb, Saya sewa kamar di sini, where writing has menyewa.",
+      "audio": "audio/id/words/w-sewa.mp3",
+      "tags": [
+        "home",
+        "renting",
+        "money"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tagihan",
+      "indonesian": "tagihan",
+      "english": "bill (to pay), invoice",
+      "pos": "noun",
+      "forms": {
+        "root": "tagih"
+      },
+      "pitfallNote": "Tagihan is a bill for a service, like electricity, water or the internet. The bill at a warung or restaurant is the bon: Minta bonnya.",
+      "audio": "audio/id/words/w-tagihan.mp3",
+      "tags": [
+        "home",
+        "money"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-token-listrik",
+      "indonesian": "token listrik",
+      "english": "prepaid electricity credit",
+      "pos": "noun",
+      "cultureNote": "Many homes and kos rooms have a prepaid meter: you buy a token at a minimarket or in an app and type its code in. When the meter beeps, the credit is running out.",
+      "audio": "audio/id/words/w-token-listrik.mp3",
+      "tags": [
+        "home",
+        "money"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-galon",
+      "indonesian": "galon",
+      "english": "big water jug (for a dispenser)",
+      "pos": "noun",
+      "cultureNote": "Tap water isn't for drinking, so homes buy drinking water by the galon, about 19 litres, for a dispenser. A local shop delivers a sealed one or a cheaper refill (isi ulang).",
+      "audio": "audio/id/words/w-galon.mp3",
+      "tags": [
+        "home",
+        "household"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-gas",
+      "indonesian": "gas",
+      "english": "gas (cooking gas, the gas bottle)",
+      "pos": "noun",
+      "registerNotes": "Gasnya habis (The gas has run out). The small green 3 kg bottle is called gas melon, after its shape and colour.",
+      "audio": "audio/id/words/w-gas.mp3",
+      "tags": [
+        "home",
+        "household"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kompor",
+      "indonesian": "kompor",
+      "english": "stove, cooker",
+      "pos": "noun",
+      "audio": "audio/id/words/w-kompor.mp3",
+      "tags": [
+        "home",
+        "household"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kulkas",
+      "indonesian": "kulkas",
+      "english": "fridge",
+      "pos": "noun",
+      "registerNotes": "From the Dutch koelkast. Lemari es, literally ice cupboard, is the more formal word.",
+      "audio": "audio/id/words/w-kulkas.mp3",
+      "tags": [
+        "home",
+        "household"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pompa-air",
+      "indonesian": "pompa air",
+      "english": "water pump",
+      "pos": "noun",
+      "cultureNote": "Many houses pump water from a well or the mains up to a tank, so when the power goes off, the water often stops too.",
+      "audio": "audio/id/words/w-pompa-air.mp3",
+      "tags": [
+        "home",
+        "repairs"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mati-lampu",
+      "indonesian": "mati lampu",
+      "english": "power cut, blackout",
+      "pos": "phrase",
+      "registerNotes": "Mati lampu lagi (The power's out again). Literally the lights die; listrik mati means the same, and pemadaman listrik is the formal word in notices.",
+      "audio": "audio/id/words/w-mati-lampu.mp3",
+      "tags": [
+        "home",
+        "problems"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-rusak",
+      "indonesian": "rusak",
+      "english": "broken, out of order; damaged",
+      "pos": "adjective",
+      "pitfallNote": "Rusak is for machines and things that stop working: AC-nya rusak. A broken bone or stick is patah, and broken glass is pecah.",
+      "audio": "audio/id/words/w-rusak.mp3",
+      "tags": [
+        "home",
+        "problems",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bocor",
+      "indonesian": "bocor",
+      "english": "leaking; punctured",
+      "pos": "adjective",
+      "registerNotes": "Atapnya bocor (The roof leaks), a classic rainy-season complaint. Ban bocor is a flat tyre.",
+      "audio": "audio/id/words/w-bocor.mp3",
+      "tags": [
+        "home",
+        "problems"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tukang",
+      "indonesian": "tukang",
+      "english": "tradesman, repairman",
+      "pos": "noun",
+      "registerNotes": "Tukang plus the trade: tukang listrik (electrician), tukang ledeng (plumber), tukang AC. It also names street sellers and workers, like tukang sayur and tukang parkir.",
+      "cultureNote": "Address a tukang as Pak or Mas, and offer a drink while he works; it's the norm.",
+      "audio": "audio/id/words/w-tukang.mp3",
+      "tags": [
+        "home",
+        "repairs",
+        "people"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-perbaikan",
+      "indonesian": "perbaikan",
+      "english": "repair, repairs",
+      "pos": "noun",
+      "forms": {
+        "root": "baik"
+      },
+      "registerNotes": "Sedang dalam perbaikan on a sign means under repair. The verb is memperbaiki, literally to make good; in casual speech people say benerin.",
+      "audio": "audio/id/words/w-perbaikan.mp3",
+      "tags": [
+        "home",
+        "repairs"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-satpam",
+      "indonesian": "satpam",
+      "english": "security guard",
+      "pos": "noun",
+      "cultureNote": "Housing estates, offices and banks have a satpam at the gate, addressed as Pak. The word is short for satuan pengamanan.",
+      "audio": "audio/id/words/w-satpam.mp3",
+      "tags": [
+        "home",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-rt",
+      "indonesian": "RT",
+      "english": "neighbourhood unit (and its head)",
+      "pos": "noun",
+      "cultureNote": "Every neighbourhood is divided into small units called RT (rukun tetangga), each with a head chosen by the residents, Pak RT or Bu RT. Newcomers, foreigners included, are expected to report to them (lapor RT).",
+      "audio": "audio/id/words/w-rt.mp3",
+      "audioHint": "er te",
+      "tags": [
+        "home",
+        "neighbourhood",
+        "culture"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kebersihan",
+      "indonesian": "kebersihan",
+      "english": "cleanliness; cleaning",
+      "pos": "noun",
+      "forms": {
+        "root": "bersih"
+      },
+      "registerNotes": "Jagalah kebersihan (Keep it clean) is on signs everywhere. Uang kebersihan is the monthly fee for rubbish collection, often collected through the RT.",
+      "audio": "audio/id/words/w-kebersihan.mp3",
+      "tags": [
+        "home",
+        "neighbourhood"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-cucian",
+      "indonesian": "cucian",
+      "english": "laundry, washing",
+      "pos": "noun",
+      "forms": {
+        "root": "cuci"
+      },
+      "registerNotes": "The clothes being washed or waiting to be: Cucian saya belum kering (My washing isn't dry yet).",
+      "cultureNote": "Many people send their washing to a laundry kiloan, paid by the kilo, which washes, dries and irons it.",
+      "audio": "audio/id/words/w-cucian.mp3",
+      "tags": [
+        "home",
+        "household"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-menjemur",
+      "indonesian": "menjemur",
+      "english": "to hang out to dry; to dry in the sun",
+      "pos": "verb",
+      "forms": {
+        "root": "jemur"
+      },
+      "registerNotes": "In speech just jemur: Saya jemur baju dulu (I'll hang the washing out first). The washing on the line is the jemuran, and berjemur is to sunbathe.",
+      "audio": "audio/id/words/w-menjemur.mp3",
+      "tags": [
+        "home",
+        "household"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-setrika",
+      "indonesian": "setrika",
+      "english": "iron (for clothes); to iron",
+      "pos": "noun",
+      "registerNotes": "As a verb it's menyetrika in writing and nyetrika or setrika in speech: Bajunya sudah disetrika? (Has the shirt been ironed?)",
+      "audio": "audio/id/words/w-setrika.mp3",
+      "tags": [
+        "home",
+        "household"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-seprai",
+      "indonesian": "seprai",
+      "english": "bedsheet",
+      "pos": "noun",
+      "registerNotes": "Shops and online listings usually spell it sprei. Ganti seprai is to change the sheets.",
+      "audio": "audio/id/words/w-seprai.mp3",
+      "tags": [
+        "home",
+        "household"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-bantal",
+      "indonesian": "bantal",
+      "english": "pillow",
+      "pos": "noun",
+      "cultureNote": "Most Indonesian beds also have a guling, a long bolster you hug while you sleep.",
+      "audio": "audio/id/words/w-bantal.mp3",
+      "tags": [
+        "home",
+        "household"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-nyamuk",
+      "indonesian": "nyamuk",
+      "english": "mosquito",
+      "pos": "noun",
+      "registerNotes": "Obat nyamuk is mosquito repellent, whether a coil, a spray or a lotion. Mosquitoes spread dengue fever (demam berdarah), so people take them seriously.",
+      "audio": "audio/id/words/w-nyamuk.mp3",
+      "tags": [
+        "home",
+        "health"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-semut",
+      "indonesian": "semut",
+      "english": "ant",
+      "pos": "noun",
+      "audio": "audio/id/words/w-semut.mp3",
+      "tags": [
+        "home"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

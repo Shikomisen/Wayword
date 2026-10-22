@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-pernah",
+  "connector": "pernah",
+  "gloss": "〜したことがある、以前",
+  "title": "pernah — 〜したことがある",
+  "pattern": "Saya pernah … · Saya belum pernah … · Saya tidak pernah … · Pernah …? — Pernah. / Belum pernah.",
+  "explanation": "pernah は動詞の前（場所なら ke の直前）に置き、「〜したことがある」という経験を表します：Saya pernah ke Lombok（ロンボクに行ったことがあります）。「〜したことある？」と聞く時も同じです：Pernah makan durian?（ドリアン、食べたことある？）。答えはその言葉で：Pernah（あります）、Belum pernah（まだありません）。Tidak pernah は「一度もない、決して〜しない」で、習慣やはっきりした事実に使います：Dia tidak pernah minum kopi（彼はコーヒーを飲みません）。過去の状態と使うと「以前〜していたことがある」：Saya pernah tinggal di Jakarta（以前ジャカルタに住んでいたことがあります）。",
+  "natural": "Sudah pernah ke Bali?（バリには行ったことある？）は、旅行者が真っ先に聞かれる質問の一つ。答えを用意しておきましょう。これからするかもしれないことには、Belum pernah（まだない）が感じのいい返事です：Belum pernah, tapi saya mau coba.（まだないけど、やってみたいです）。",
+  "stiff": "答えは ya や tidak ではなく、pernah か belum pernah で。tidak だけだと「いいえ、ないです」と突き放した感じになります。また、Pernah coba sambal ini?（このサンバル、食べたことある？）のような勧めに tidak pernah と答えると、「食べる気はない」と聞こえることがあります。",
+  "examples": [
+    {
+      "id": "gx-pernah-1",
+      "indonesian": "Bapak pernah ke Lombok?",
+      "japanese": "ロンボクに行ったことはありますか？",
+      "chunks": [
+        {
+          "t": "Bapak ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "pernah ",
+          "w": "w-pernah"
+        },
+        {
+          "t": "ke Lombok?",
+          "w": "w-ke"
+        }
+      ],
+      "gap": {
+        "before": "Bapak ",
+        "answer": "pernah",
+        "after": " ke Lombok?",
+        "options": [
+          "pernah",
+          "mau",
+          "sedang"
+        ],
+        "why": "「〜したことある？」は pernah。mau だと「ロンボクに行くつもりですか？」になります。"
+      },
+      "registerNotes": "動詞は要りません。pernah ke で「〜に行ったことがある」。答えは Pernah か Belum pernah です。",
+      "audio": "audio/id/grammar/gx-pernah-1.mp3",
+      "tags": [
+        "文法",
+        "pernah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-pernah-2",
+      "indonesian": "Belum pernah, tapi saya mau coba.",
+      "japanese": "まだないですが、試してみたいです。",
+      "chunks": [
+        {
+          "t": "Belum pernah, ",
+          "w": "w-pernah"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau coba.",
+          "w": "w-mencoba"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Belum",
+        "after": " pernah, tapi saya mau coba.",
+        "options": [
+          "Belum",
+          "Tidak",
+          "Bukan"
+        ],
+        "why": "Belum pernah は「まだない（けれど、いつかは）」。Tidak pernah だと、話がそこで終わってしまいます。"
+      },
+      "registerNotes": "Pernah makan durian?（ドリアン、食べたことある？）への返事。Belum を使えば「機会がなかっただけ」という感じのいい答えになります。日本語の「まだです」と同じ感覚です。",
+      "audio": "audio/id/grammar/gx-pernah-2.mp3",
+      "tags": [
+        "文法",
+        "pernah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-pernah-3",
+      "indonesian": "Saya tidak pernah makan daging.",
+      "japanese": "私は肉を食べません。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tidak pernah ",
+          "w": "w-tidak-pernah"
+        },
+        {
+          "t": "makan ",
+          "w": "w-makan"
+        },
+        {
+          "t": "daging.",
+          "w": "w-daging"
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "tidak",
+        "after": " pernah makan daging.",
+        "options": [
+          "tidak",
+          "belum",
+          "bukan"
+        ],
+        "why": "決まった習慣は tidak pernah（決して〜しない）。Belum pernah だと「まだだけど、いつかは食べるかも」になります。"
+      },
+      "registerNotes": "ベジタリアンなら便利な一言。ワルンでは料理を tanpa daging（肉抜き）で頼みましょう。",
+      "audio": "audio/id/grammar/gx-pernah-3.mp3",
+      "tags": [
+        "文法",
+        "pernah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-pernah-4",
+      "indonesian": "Waktu kecil, saya pernah tinggal di Jakarta.",
+      "japanese": "子どものころ、ジャカルタに住んでいたことがあります。",
+      "chunks": [
+        {
+          "t": "Waktu kecil, ",
+          "w": "w-kecil"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "pernah ",
+          "w": "w-pernah"
+        },
+        {
+          "t": "tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di Jakarta.",
+          "w": "w-di"
+        }
+      ],
+      "gap": {
+        "before": "Waktu kecil, saya ",
+        "answer": "pernah",
+        "after": " tinggal di Jakarta.",
+        "options": [
+          "pernah",
+          "masih",
+          "sedang"
+        ],
+        "why": "pernah は「以前そうだった時期がある」。masih だと「今もまだ住んでいる」になります。"
+      },
+      "audio": "audio/id/grammar/gx-pernah-4.mp3",
+      "tags": [
+        "文法",
+        "pernah"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

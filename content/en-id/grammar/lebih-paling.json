@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-lebih-paling",
+  "connector": "lebih, paling, kurang",
+  "gloss": "more, most, less",
+  "title": "lebih and paling — comparing",
+  "pattern": "A lebih … daripada / dari B · A paling … · yang paling … · kurang …",
+  "explanation": "There's no -er or -est in Indonesian: lebih (more) goes before the describing word, and daripada, or dari in speech, brings in the other thing: Bali lebih ramai daripada Lombok, Yang ini lebih murah dari yang tadi. paling is the most: paling enak (the tastiest), and yang paling picks one out: Yang paling murah yang mana? (Which is the cheapest?). In writing ter- does the same job as paling: terbesar, terindah. kurang is less, and it's also the polite way to say not very or not enough: Saya kurang suka pedas (I'm not much of a fan of spicy food), Kopinya kurang manis (The coffee isn't sweet enough).",
+  "natural": "Choosing and recommending: Mana yang lebih enak? Yang paling dekat di mana? And lebih suka is prefer: Saya lebih suka teh (I prefer tea).",
+  "stiff": "For one more or some more, Indonesian uses lagi, not lebih: Es tehnya satu lagi (Another iced tea, please). And kurang is gentler than tidak: Saya kurang setuju sounds polite where Saya tidak setuju can sound blunt.",
+  "examples": [
+    {
+      "id": "gx-lebih-paling-1",
+      "indonesian": "Naik ojek lebih cepat daripada naik mobil.",
+      "english": "Going by ojek is quicker than going by car.",
+      "chunks": [
+        {
+          "t": "Naik ojek "
+        },
+        {
+          "t": "lebih cepat ",
+          "w": "w-cepat"
+        },
+        {
+          "t": "daripada "
+        },
+        {
+          "t": "naik mobil.",
+          "w": "w-mobil"
+        }
+      ],
+      "gap": {
+        "before": "Naik ojek ",
+        "answer": "lebih",
+        "after": " cepat daripada naik mobil.",
+        "options": [
+          "lebih",
+          "paling",
+          "sangat"
+        ],
+        "why": "Comparing two things with daripada calls for lebih."
+      },
+      "audio": "audio/id/grammar/gx-lebih-paling-1.mp3",
+      "tags": [
+        "grammar",
+        "lebih-paling"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-lebih-paling-2",
+      "indonesian": "Kopinya kurang manis. Boleh minta gula?",
+      "english": "The coffee isn't sweet enough. Could I have some sugar?",
+      "chunks": [
+        {
+          "t": "Kopinya ",
+          "w": "w-kopi"
+        },
+        {
+          "t": "kurang manis. ",
+          "w": "w-manis"
+        },
+        {
+          "t": "Boleh minta ",
+          "w": "w-boleh"
+        },
+        {
+          "t": "gula?",
+          "w": "w-gula"
+        }
+      ],
+      "gap": {
+        "before": "Kopinya ",
+        "answer": "kurang",
+        "after": " manis. Boleh minta gula?",
+        "options": [
+          "kurang",
+          "lebih",
+          "terlalu"
+        ],
+        "why": "Not sweet enough is kurang manis; terlalu manis would be too sweet."
+      },
+      "audio": "audio/id/grammar/gx-lebih-paling-2.mp3",
+      "tags": [
+        "grammar",
+        "lebih-paling"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-lebih-paling-3",
+      "indonesian": "Menurut Anda, warung mana yang paling enak?",
+      "english": "Which warung do you think is the best?",
+      "chunks": [
+        {
+          "t": "Menurut Anda, ",
+          "w": "w-menurut"
+        },
+        {
+          "t": "warung mana ",
+          "w": "w-warung"
+        },
+        {
+          "t": "yang paling "
+        },
+        {
+          "t": "enak?",
+          "w": "w-enak"
+        }
+      ],
+      "gap": {
+        "before": "Menurut Anda, warung mana yang ",
+        "answer": "paling",
+        "after": " enak?",
+        "options": [
+          "paling",
+          "lebih",
+          "terlalu"
+        ],
+        "why": "The best of them all is paling; lebih compares just two."
+      },
+      "audio": "audio/id/grammar/gx-lebih-paling-3.mp3",
+      "tags": [
+        "grammar",
+        "lebih-paling"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-lebih-paling-4",
+      "indonesian": "Ini pantai terindah yang pernah saya lihat.",
+      "english": "This is the most beautiful beach I've ever seen.",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "pantai ",
+          "w": "w-pantai"
+        },
+        {
+          "t": "terindah "
+        },
+        {
+          "t": "yang pernah ",
+          "w": "w-pernah"
+        },
+        {
+          "t": "saya lihat.",
+          "w": "w-lihat"
+        }
+      ],
+      "gap": {
+        "before": "Ini pantai ",
+        "answer": "terindah",
+        "after": " yang pernah saya lihat.",
+        "options": [
+          "terindah",
+          "lebih indah",
+          "keindahan"
+        ],
+        "why": "The most beautiful is ter- + indah, a little more written than paling indah."
+      },
+      "audio": "audio/id/grammar/gx-lebih-paling-4.mp3",
+      "tags": [
+        "grammar",
+        "lebih-paling"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

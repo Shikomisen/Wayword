@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "con-sambil",
+  "connector": "sambil",
+  "gloss": "〜ながら",
+  "title": "sambil — 〜ながら",
+  "pattern": "A sambil B · Sambil B, A",
+  "explanation": "sambil は「〜ながら」。一人の人が同時に2つのことをする時に使います。メインの動作を先に、並行してしている動作を sambil の後ろに置きます：Saya suka masak sambil dengar musik.（音楽を聞きながら料理するのが好きです）。日本語の「聞きながら」は動詞の後ろに付きますが、sambil は動詞の前です。同じ人がするので、sambil の後ろに主語は入れません。文の頭にも置けます：Sambil menunggu, kita minum kopi dulu.（待っている間、コーヒーでも飲みましょう）",
+  "natural": "どんな場面でも使えるふだんの言い方。習慣、2つのことを同時にする時、仕事と勉強の両立（kerja sambil kuliah＝働きながら大学に通う）に。",
+  "stiff": "別々の2人には使えません。Saya masak sambil dia mandi は間違いです（日本語の「〜ながら」も同じですね）。「彼がシャワーを浴びている間に料理した」なら Saya masak waktu dia mandi です。",
+  "examples": [
+    {
+      "id": "cx-sambil-1",
+      "indonesian": "Saya suka masak sambil dengar musik.",
+      "japanese": "音楽を聞きながら料理するのが好きです。",
+      "chunks": [
+        {
+          "t": "Saya suka ",
+          "w": "w-suka"
+        },
+        {
+          "t": "masak ",
+          "w": "w-masak"
+        },
+        {
+          "t": "sambil "
+        },
+        {
+          "t": "dengar musik.",
+          "w": "w-musik"
+        }
+      ],
+      "gap": {
+        "before": "Saya suka masak ",
+        "answer": "sambil",
+        "after": " dengar musik.",
+        "options": [
+          "sambil",
+          "sebelum",
+          "karena"
+        ],
+        "why": "同じ人が2つのことを同時に：sambil（〜ながら）。"
+      },
+      "combine": {
+        "a": "Saya suka masak.",
+        "b": "Saya dengar musik.",
+        "distractors": [
+          "dan "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sambil-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "sambil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-sambil-2",
+      "indonesian": "Dia kerja sambil kuliah.",
+      "japanese": "彼は働きながら大学に通っています。",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "kerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "sambil "
+        },
+        {
+          "t": "kuliah.",
+          "w": "w-kuliah"
+        }
+      ],
+      "gap": {
+        "before": "Dia kerja ",
+        "answer": "sambil",
+        "after": " kuliah.",
+        "options": [
+          "sambil",
+          "sesudah",
+          "karena"
+        ],
+        "why": "同じ人が同じ時期に、働くことと大学に通うことをしている：sambil。"
+      },
+      "combine": {
+        "a": "Dia kerja.",
+        "b": "Dia kuliah.",
+        "distractors": [
+          "waktu "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sambil-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "sambil"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-sambil-3",
+      "indonesian": "Sambil menunggu, kita minum kopi dulu.",
+      "japanese": "待っている間、コーヒーでも飲みましょう。",
+      "chunks": [
+        {
+          "t": "Sambil "
+        },
+        {
+          "t": "menunggu, ",
+          "w": "w-tunggu"
+        },
+        {
+          "t": "kita minum ",
+          "w": "w-minum"
+        },
+        {
+          "t": "kopi dulu.",
+          "w": "w-kopi"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Sambil",
+        "after": " menunggu, kita minum kopi dulu.",
+        "options": [
+          "Sambil",
+          "Sebelum",
+          "Karena"
+        ],
+        "why": "待ち時間にコーヒー。2つが同時なので Sambil。"
+      },
+      "combine": {
+        "a": "Kita menunggu.",
+        "b": "Kita minum kopi dulu.",
+        "distractors": [
+          "Sebelum "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sambil-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "sambil"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-sambil-4",
+      "indonesian": "Jangan main HP sambil menyetir.",
+      "japanese": "運転しながらスマホを使わないでください。",
+      "chunks": [
+        {
+          "t": "Jangan "
+        },
+        {
+          "t": "main HP ",
+          "w": "w-hp"
+        },
+        {
+          "t": "sambil "
+        },
+        {
+          "t": "menyetir."
+        }
+      ],
+      "gap": {
+        "before": "Jangan main HP ",
+        "answer": "sambil",
+        "after": " menyetir.",
+        "options": [
+          "sambil",
+          "sesudah",
+          "karena"
+        ],
+        "why": "2つを同時にしないで、なので sambil。"
+      },
+      "audio": "audio/id/connectors/cx-sambil-4.mp3",
+      "audioHint": "Jangan main ha pe sambil menyetir.",
+      "tags": [
+        "つなぎ言葉",
+        "sambil"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

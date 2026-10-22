@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 1,
+  "id": "problems",
+  "title": "Masalah & keluhan",
+  "order": 17,
+  "description": "Menyelesaikan masalah dengan sopan: barang rusak, hilang, salah, atau terlambat, di toko, hotel, dan di rumah.",
+  "phrases": [
+    {
+      "id": "pro-01",
+      "japanese": "すみません、ちょっと問題があるんですが",
+      "furigana": [
+        {
+          "b": "すみません、ちょっと"
+        },
+        {
+          "b": "問題",
+          "r": "もんだい"
+        },
+        {
+          "b": "があるんですが"
+        }
+      ],
+      "romaji": "sumimasen, chotto mondai ga aru n desu ga",
+      "indonesian": "Permisi, ada sedikit masalah.",
+      "registerNotes": "Cara sopan untuk memulai. んですが menjelaskan keadaan, dan membiarkan kalimatnya terbuka supaya mereka bisa membantu.",
+      "audio": "audio/ja/pro-01.mp3",
+      "tags": [
+        "keluhan",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-02",
+      "japanese": "お湯が出ないんですが",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "湯",
+          "r": "ゆ"
+        },
+        {
+          "b": "が"
+        },
+        {
+          "b": "出",
+          "r": "で"
+        },
+        {
+          "b": "ないんですが"
+        }
+      ],
+      "romaji": "oyu ga denai n desu ga",
+      "indonesian": "Air panasnya tidak keluar.",
+      "registerNotes": "Masalah di hotel atau di rumah. ないんですが menyampaikannya dengan halus; ini bukan tuduhan. Bahasa Jepang punya kata sendiri untuk air panas: お湯, berbeda dari 水.",
+      "audio": "audio/ja/pro-02.mp3",
+      "tags": [
+        "hotel",
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-03",
+      "japanese": "隣の部屋がうるさいんですが",
+      "furigana": [
+        {
+          "b": "隣",
+          "r": "となり"
+        },
+        {
+          "b": "の"
+        },
+        {
+          "b": "部屋",
+          "r": "へや"
+        },
+        {
+          "b": "がうるさいんですが"
+        }
+      ],
+      "romaji": "tonari no heya ga urusai n desu ga",
+      "indonesian": "Kamar sebelah berisik.",
+      "registerNotes": "Mengeluh dengan halus di resepsionis. Biasanya mereka menawarkan untuk menelepon kamar itu, atau memindahkanmu.",
+      "audio": "audio/ja/pro-03.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-04",
+      "japanese": "これ、頼んでいないんですが",
+      "furigana": [
+        {
+          "b": "これ、"
+        },
+        {
+          "b": "頼",
+          "r": "たの"
+        },
+        {
+          "b": "んでいないんですが"
+        }
+      ],
+      "romaji": "kore, tanonde inai n desu ga",
+      "indonesian": "Saya tidak memesan ini.",
+      "registerNotes": "Di restoran. Kalau diucapkan dengan lembut, masalahnya mudah diselesaikan; staf akan minta maaf dan mengambilnya kembali.",
+      "audio": "audio/ja/pro-04.mp3",
+      "tags": [
+        "restoran"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-05",
+      "japanese": "ネットがつながらないんですが",
+      "furigana": [
+        {
+          "b": "ネットがつながらないんですが"
+        }
+      ],
+      "romaji": "netto ga tsunagaranai n desu ga",
+      "indonesian": "Internetnya tidak tersambung.",
+      "registerNotes": "つながる berarti “tersambung”: ponsel, internet, telepon. 電話がつながらない artinya teleponnya tidak tersambung.",
+      "audio": "audio/ja/pro-05.mp3",
+      "tags": [
+        "hotel",
+        "rumah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-06",
+      "japanese": "荷物がまだ届いていないんです",
+      "furigana": [
+        {
+          "b": "荷物",
+          "r": "にもつ"
+        },
+        {
+          "b": "がまだ"
+        },
+        {
+          "b": "届",
+          "r": "とど"
+        },
+        {
+          "b": "いていないんです"
+        }
+      ],
+      "romaji": "nimotsu ga mada todoite inai n desu",
+      "indonesian": "Paket saya belum sampai juga.",
+      "registerNotes": "Untuk kiriman, atau koper yang dikirim lebih dulu. まだ〜ていない = “belum”. Siapkan nomor pelacakan (お問い合わせ番号).",
+      "audio": "audio/ja/pro-06.mp3",
+      "tags": [
+        "rumah",
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-07",
+      "japanese": "傷がついていたので、交換してもらえますか",
+      "furigana": [
+        {
+          "b": "傷",
+          "r": "きず"
+        },
+        {
+          "b": "がついていたので、"
+        },
+        {
+          "b": "交換",
+          "r": "こうかん"
+        },
+        {
+          "b": "してもらえますか"
+        }
+      ],
+      "romaji": "kizu ga tsuite ita node, kōkan shite moraemasu ka",
+      "indonesian": "Ada goresannya, jadi bisa ditukar?",
+      "registerNotes": "Mengembalikan barang cacat: sebutkan masalahnya, lalu minta. Kamu perlu struk belanjanya.",
+      "audio": "audio/ja/pro-07.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "pro-08",
+      "japanese": "返金してもらえますか",
+      "furigana": [
+        {
+          "b": "返金",
+          "r": "へんきん"
+        },
+        {
+          "b": "してもらえますか"
+        }
+      ],
+      "romaji": "henkin shite moraemasu ka",
+      "indonesian": "Bisa minta uangnya dikembalikan?",
+      "registerNotes": "Toko di Jepang lebih suka menukar barang (交換); untuk pengembalian uang, kamu mungkin perlu meminta sedikit lebih gigih.",
+      "audio": "audio/ja/pro-08.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-09",
+      "japanese": "責任者の方をお願いできますか",
+      "furigana": [
+        {
+          "b": "責任者",
+          "r": "せきにんしゃ"
+        },
+        {
+          "b": "の"
+        },
+        {
+          "b": "方",
+          "r": "かた"
+        },
+        {
+          "b": "をお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いできますか"
+        }
+      ],
+      "romaji": "sekininsha no kata o onegai dekimasu ka",
+      "indonesian": "Bisa saya bicara dengan penanggung jawabnya?",
+      "registerNotes": "Cara sopan untuk membawa masalah ke tingkat yang lebih tinggi. Staf biasanya akan menanggapinya dengan serius; pakai hanya kalau jawaban pertama tidak membantu.",
+      "audio": "audio/ja/pro-09.mp3",
+      "tags": [
+        "keluhan"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "pro-10",
+      "japanese": "確認していただけますか",
+      "furigana": [
+        {
+          "b": "確認",
+          "r": "かくにん"
+        },
+        {
+          "b": "していただけますか"
+        }
+      ],
+      "romaji": "kakunin shite itadakemasu ka",
+      "indonesian": "Bisa tolong dicek?",
+      "registerNotes": "Meminta mereka memeriksanya, dengan sangat sopan. Berguna untuk pemesanan, tagihan, dan barang hilang.",
+      "audio": "audio/ja/pro-10.mp3",
+      "tags": [
+        "keluhan",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-11",
+      "japanese": "電車に忘れ物をしてしまいました",
+      "furigana": [
+        {
+          "b": "電車",
+          "r": "でんしゃ"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "忘",
+          "r": "わす"
+        },
+        {
+          "b": "れ"
+        },
+        {
+          "b": "物",
+          "r": "もの"
+        },
+        {
+          "b": "をしてしまいました"
+        }
+      ],
+      "romaji": "densha ni wasuremono o shite shimaimashita",
+      "indonesian": "Barang saya ketinggalan di kereta.",
+      "registerNotes": "Beri tahu petugas stasiun jalurnya, jamnya, dan gerbong yang mana. Barang yang ketinggalan di Jepang sangat sering kembali.",
+      "audio": "audio/ja/pro-11.mp3",
+      "tags": [
+        "tersesat"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-12",
+      "japanese": "いつ直りますか",
+      "furigana": [
+        {
+          "b": "いつ"
+        },
+        {
+          "b": "直",
+          "r": "なお"
+        },
+        {
+          "b": "りますか"
+        }
+      ],
+      "romaji": "itsu naorimasu ka",
+      "indonesian": "Kapan selesai diperbaiki?",
+      "registerNotes": "直る berarti “menjadi beres”; 直す berarti “memperbaiki”. Penyakit yang sembuh adalah 治る.",
+      "audio": "audio/ja/pro-12.mp3",
+      "tags": [
+        "rumah",
+        "hotel"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-13",
+      "japanese": "困っているんですが、助けてもらえませんか",
+      "furigana": [
+        {
+          "b": "困",
+          "r": "こま"
+        },
+        {
+          "b": "っているんですが、"
+        },
+        {
+          "b": "助",
+          "r": "たす"
+        },
+        {
+          "b": "けてもらえませんか"
+        }
+      ],
+      "romaji": "komatte iru n desu ga, tasukete moraemasen ka",
+      "indonesian": "Saya sedang kesulitan. Bisa tolong bantu saya?",
+      "registerNotes": "Meminta bantuan orang yang tidak dikenal dengan sopan. 困っている (saya sedang kesulitan) tidak sedramatis 助けて saja.",
+      "audio": "audio/ja/pro-13.mp3",
+      "tags": [
+        "keluhan",
+        "penting"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

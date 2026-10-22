@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-pronouns",
+  "connector": "saya, kamu, dia",
+  "gloss": "私、あなた、彼・彼女、私たち、彼ら",
+  "title": "saya, kamu, dia… — 代名詞",
+  "pattern": "saya / aku · Bapak / Ibu / kamu · dia · kami / kita · mereka",
+  "explanation": "saya はていねいな「私」で、よく知らない人にはこちら。aku はくだけた「僕・あたし」で、友達や恋人、子どもに使います。「あなた」は、友達や年下なら kamu。年上の人や知らない人には、男性なら Bapak（Pak）、女性なら Ibu（Bu）と呼ぶか、名前を使います：Bapak mau ke mana?（どちらへお出かけですか）。日本語で「あなた」より「田中さん」と言うのに似ています。dia は「彼」にも「彼女」にもなり、mereka は「彼ら」。「私たち」は2つあり、kita は話している相手を含み、kami は含みません。",
+  "natural": "saya はまちがいになることがないので、迷ったら saya。Bapak と Ibu はお年寄りだけでなく、少し年上の人や、店員・運転手・役所の人などにも使います。kita は相手も仲間に入れる、親しみのある「私たち」です：Kita makan di mana?（どこで食べようか）。日本語と同じく、分かりきった主語は会話でよく省かれますが、だれのことか分からなくなる時は saya や dia を入れましょう。",
+  "stiff": "年上の人や知らない人に kamu を使うと失礼に聞こえます。Anda はていねいですが、面と向かって使うとかたく、看板・書類・広告の「あなた」です。日本語の「あなた」が会話であまり使われないのと似ています。組み合わせも守りましょう：aku なら kamu、saya なら Bapak・Ibu。",
+  "examples": [
+    {
+      "id": "gx-pronouns-1",
+      "indonesian": "Bapak mau ke mana?",
+      "japanese": "どちらへお出かけですか。",
+      "chunks": [
+        {
+          "t": "Bapak ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "ke mana?",
+          "w": "w-ke"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Bapak",
+        "after": " mau ke mana?",
+        "options": [
+          "Bapak",
+          "Kamu",
+          "Anda"
+        ],
+        "why": "年上の男性には Bapak がていねいな「あなた」。kamu はなれなれしく、Anda はかたすぎます。"
+      },
+      "audio": "audio/id/grammar/gx-pronouns-1.mp3",
+      "tags": [
+        "文法",
+        "代名詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-pronouns-2",
+      "indonesian": "Kita makan di mana?",
+      "japanese": "どこで食べようか。",
+      "chunks": [
+        {
+          "t": "Kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "makan ",
+          "w": "w-makan"
+        },
+        {
+          "t": "di mana?",
+          "w": "w-di-mana"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kita",
+        "after": " makan di mana?",
+        "options": [
+          "Kita",
+          "Kami",
+          "Mereka"
+        ],
+        "why": "聞いている相手も含む「私たち」は kita。"
+      },
+      "audio": "audio/id/grammar/gx-pronouns-2.mp3",
+      "tags": [
+        "文法",
+        "代名詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-pronouns-3",
+      "indonesian": "Ini anak kami.",
+      "japanese": "うちの息子です。",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "anak ",
+          "w": "w-anak"
+        },
+        {
+          "t": "kami.",
+          "w": "w-kami"
+        }
+      ],
+      "gap": {
+        "before": "Ini anak ",
+        "answer": "kami",
+        "after": ".",
+        "options": [
+          "kami",
+          "kita",
+          "mereka"
+        ],
+        "why": "相手はこの子の親ではないので、相手を含まない kami。日本語の「うちの」に近い感覚です。"
+      },
+      "audio": "audio/id/grammar/gx-pronouns-3.mp3",
+      "tags": [
+        "文法",
+        "代名詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-pronouns-4",
+      "register": "casual",
+      "indonesian": "Aku tunggu kamu, ya.",
+      "japanese": "待ってるからね。",
+      "chunks": [
+        {
+          "t": "Aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "tunggu ",
+          "w": "w-tunggu"
+        },
+        {
+          "t": "kamu, ",
+          "w": "w-kamu"
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "gap": {
+        "before": "Aku tunggu ",
+        "answer": "kamu",
+        "after": ", ya.",
+        "options": [
+          "kamu",
+          "Anda",
+          "dia"
+        ],
+        "why": "aku と kamu は友達同士のペア。Anda は aku と合わず、dia は「彼・彼女」です。"
+      },
+      "audio": "audio/id/grammar/gx-pronouns-4.mp3",
+      "tags": [
+        "文法",
+        "代名詞"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

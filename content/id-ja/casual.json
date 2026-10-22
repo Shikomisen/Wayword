@@ -1,0 +1,817 @@
+{
+  "schemaVersion": 1,
+  "id": "casual",
+  "title": "Bahasa santai",
+  "order": 11,
+  "description": "Cara bicara sehari-hari dengan pasangan, teman, dan keluarga, seperti aku/kamu dalam bahasa Indonesia. Setiap kalimat disandingkan dengan versi sopannya, jadi kamu selalu tahu mana yang dipakai dengan siapa.",
+  "phrases": [
+    {
+      "id": "cas-01",
+      "register": "casual",
+      "japanese": "うん",
+      "furigana": "うん",
+      "romaji": "un",
+      "indonesian": "Iya. / He-eh.",
+      "polite": {
+        "japanese": "はい",
+        "furigana": "はい",
+        "romaji": "hai",
+        "audio": "audio/ja/casual/cas-01-polite.mp3"
+      },
+      "registerNotes": "Ya sehari-hari dengan orang dekat: pasangan, teman, keluarga. はい kepada pasangan terdengar kaku, seperti menjawab guru; mirip bedanya “iya” dan “baik, Pak”.",
+      "audio": "audio/ja/casual/cas-01.mp3",
+      "tags": [
+        "ya-tidak",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-02",
+      "register": "casual",
+      "japanese": "ううん",
+      "furigana": "ううん",
+      "romaji": "uun",
+      "indonesian": "Nggak. / Enggak.",
+      "polite": {
+        "japanese": "いいえ",
+        "furigana": "いいえ",
+        "romaji": "iie",
+        "audio": "audio/ja/casual/cas-02-polite.mp3"
+      },
+      "registerNotes": "Dua ketukan dengan nada turun, sering sambil menggeleng sedikit. Jangan tertukar dengan うん. Dalam bahasa sopan, いいえ selalu aman.",
+      "audio": "audio/ja/casual/cas-02.mp3",
+      "tags": [
+        "ya-tidak",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-03",
+      "register": "casual",
+      "japanese": "ありがとう",
+      "furigana": "ありがとう",
+      "romaji": "arigatō",
+      "indonesian": "Makasih.",
+      "polite": {
+        "japanese": "ありがとうございます",
+        "furigana": "ありがとうございます",
+        "romaji": "arigatō gozaimasu",
+        "audio": "audio/ja/casual/cas-03-polite.mp3"
+      },
+      "registerNotes": "Tanpa ございます sudah tepat untuk pasangan dan teman, seperti “makasih”. Tetap pakai ございます untuk staf, orang yang tidak dikenal, dan keluarga pasanganmu, sampai mereka bilang boleh santai.",
+      "audio": "audio/ja/casual/cas-03.mp3",
+      "tags": [
+        "terima kasih",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-04",
+      "register": "casual",
+      "japanese": "ごめん",
+      "furigana": "ごめん",
+      "romaji": "gomen",
+      "indonesian": "Maaf. / Sori.",
+      "polite": {
+        "japanese": "すみません",
+        "furigana": "すみません",
+        "romaji": "sumimasen",
+        "audio": "audio/ja/casual/cas-04-polite.mp3"
+      },
+      "registerNotes": "Untuk hal kecil dengan orang dekat; ごめんね lebih lembut dan hangat. Dengan orang yang tidak dikenal dan staf, pakai すみません.",
+      "audio": "audio/ja/casual/cas-04.mp3",
+      "tags": [
+        "minta maaf",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-05",
+      "register": "casual",
+      "japanese": "おはよう",
+      "furigana": "おはよう",
+      "romaji": "ohayō",
+      "indonesian": "Pagi!",
+      "polite": {
+        "japanese": "おはようございます",
+        "furigana": "おはようございます",
+        "romaji": "ohayō gozaimasu",
+        "audio": "audio/ja/casual/cas-05-polite.mp3"
+      },
+      "registerNotes": "Yang kamu ucapkan ke pasangan saat bangun tidur. ございます untuk tetangga, rekan kerja, dan siapa pun yang lebih tua, seperti “selamat pagi, Pak/Bu”.",
+      "audio": "audio/ja/casual/cas-05.mp3",
+      "tags": [
+        "salam",
+        "rumah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-06",
+      "register": "casual",
+      "japanese": "おやすみ",
+      "furigana": "おやすみ",
+      "romaji": "oyasumi",
+      "indonesian": "Met tidur! / Selamat tidur.",
+      "polite": {
+        "japanese": "おやすみなさい",
+        "furigana": "おやすみなさい",
+        "romaji": "oyasuminasai",
+        "audio": "audio/ja/casual/cas-06-polite.mp3"
+      },
+      "registerNotes": "Ucapan terakhir di rumah sebelum tidur. Banyak pasangan juga bilang おやすみなさい: terdengar hangat, bukan kaku.",
+      "audio": "audio/ja/casual/cas-06.mp3",
+      "tags": [
+        "salam",
+        "rumah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-07",
+      "register": "casual",
+      "japanese": "大丈夫？",
+      "furigana": "{大丈夫|だいじょうぶ}？",
+      "romaji": "daijōbu?",
+      "indonesian": "Kamu nggak apa-apa?",
+      "polite": {
+        "japanese": "大丈夫ですか？",
+        "furigana": "{大丈夫|だいじょうぶ}ですか？",
+        "romaji": "daijōbu desu ka?",
+        "audio": "audio/ja/casual/cas-07-polite.mp3"
+      },
+      "registerNotes": "Dengan nada naik, ini pertanyaan; dengan nada datar, 大丈夫 menjawab “aku nggak apa-apa”, persis seperti “nggak apa-apa?” dan “nggak apa-apa”. Ini juga cara paling umum untuk menolak: “nggak usah, makasih”.",
+      "audio": "audio/ja/casual/cas-07.mp3",
+      "tags": [
+        "perhatian",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-08",
+      "register": "casual",
+      "japanese": "分かった",
+      "furigana": "{分|わ}かった",
+      "romaji": "wakatta",
+      "indonesian": "Oke. / Ngerti.",
+      "polite": {
+        "japanese": "分かりました",
+        "furigana": "{分|わ}かりました",
+        "romaji": "wakarimashita",
+        "audio": "audio/ja/casual/cas-08-polite.mp3"
+      },
+      "registerNotes": "Bentuk lampau biasa adalah versi santai hampir semua kata kerja: 分かりました → 分かった. Kata kerja bahasa Indonesia tidak berubah bentuk, jadi perhatikan pola ini.",
+      "audio": "audio/ja/casual/cas-08.mp3",
+      "tags": [
+        "jawaban",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-09",
+      "register": "casual",
+      "japanese": "知らない",
+      "furigana": "{知|し}らない",
+      "romaji": "shiranai",
+      "indonesian": "Nggak tahu.",
+      "polite": {
+        "japanese": "知りません",
+        "furigana": "{知|し}りません",
+        "romaji": "shirimasen",
+        "audio": "audio/ja/casual/cas-09-polite.mp3"
+      },
+      "registerNotes": "Negatif biasa: ません menjadi ない. 知らない yang datar bisa terdengar seperti “nggak tahu, bukan urusanku”. 分からない (“aku kurang tahu”) lebih halus.",
+      "audio": "audio/ja/casual/cas-09.mp3",
+      "tags": [
+        "jawaban"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-10",
+      "register": "casual",
+      "japanese": "いいよ",
+      "furigana": "いいよ",
+      "romaji": "ii yo",
+      "indonesian": "Boleh. / Oke aja.",
+      "polite": {
+        "japanese": "いいですよ",
+        "furigana": "いいですよ",
+        "romaji": "ii desu yo",
+        "audio": "audio/ja/casual/cas-10-polite.mp3"
+      },
+      "registerNotes": "Menyetujui permintaan; よ menambah keramahan. Hati-hati: いい saja bisa berarti “nggak usah, makasih”. Nada yang menentukan.",
+      "audio": "audio/ja/casual/cas-10.mp3",
+      "tags": [
+        "jawaban",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-11",
+      "register": "casual",
+      "japanese": "ちょっと待って",
+      "furigana": "ちょっと{待|ま}って",
+      "romaji": "chotto matte",
+      "indonesian": "Bentar.",
+      "polite": {
+        "japanese": "ちょっと待ってください",
+        "furigana": "ちょっと{待|ま}ってください",
+        "romaji": "chotto matte kudasai",
+        "audio": "audio/ja/casual/cas-11-polite.mp3"
+      },
+      "registerNotes": "Menghapus ください dari permintaan bentuk て adalah cara standar meminta dengan santai: 待ってください → 待って.",
+      "audio": "audio/ja/casual/cas-11.mp3",
+      "tags": [
+        "permintaan",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-12",
+      "register": "casual",
+      "japanese": "何してるの？",
+      "furigana": "{何|なに}してるの？",
+      "romaji": "nani shiteru no?",
+      "indonesian": "Lagi ngapain?",
+      "polite": {
+        "japanese": "何をしているんですか？",
+        "furigana": "{何|なに}をしているんですか？",
+        "romaji": "nani o shite iru n desu ka?",
+        "audio": "audio/ja/casual/cas-12-polite.mp3"
+      },
+      "registerNotes": "Bahasa santai menghilangkan を dan memadatkan している menjadi してる. の di akhir membuat pertanyaannya lebih lembut dan akrab.",
+      "audio": "audio/ja/casual/cas-12.mp3",
+      "tags": [
+        "pertanyaan",
+        "rumah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-13",
+      "register": "casual",
+      "japanese": "どこ行くの？",
+      "furigana": "どこ{行|い}くの？",
+      "romaji": "doko iku no?",
+      "indonesian": "Mau ke mana?",
+      "polite": {
+        "japanese": "どこに行くんですか？",
+        "furigana": "どこに{行|い}くんですか？",
+        "romaji": "doko ni iku n desu ka?",
+        "audio": "audio/ja/casual/cas-13-polite.mp3"
+      },
+      "registerNotes": "Partikel seperti に hilang dalam pertanyaan santai; nada naiklah yang menandai pertanyaan.",
+      "audio": "audio/ja/casual/cas-13.mp3",
+      "tags": [
+        "pertanyaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-14",
+      "register": "casual",
+      "japanese": "お腹すいた",
+      "furigana": "お{腹|なか}すいた",
+      "romaji": "onaka suita",
+      "indonesian": "Laper.",
+      "polite": {
+        "japanese": "お腹がすきました",
+        "furigana": "お{腹|なか}がすきました",
+        "romaji": "onaka ga sukimashita",
+        "audio": "audio/ja/casual/cas-14-polite.mp3"
+      },
+      "registerNotes": "が biasanya dihilangkan dalam bahasa santai. Salah satu kalimat yang paling sering diucapkan di rumah mana pun di Jepang.",
+      "audio": "audio/ja/casual/cas-14.mp3",
+      "tags": [
+        "perasaan",
+        "rumah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-15",
+      "register": "casual",
+      "japanese": "疲れた",
+      "furigana": "{疲|つか}れた",
+      "romaji": "tsukareta",
+      "indonesian": "Capek.",
+      "polite": {
+        "japanese": "疲れました",
+        "furigana": "{疲|つか}れました",
+        "romaji": "tsukaremashita",
+        "audio": "audio/ja/casual/cas-15-polite.mp3"
+      },
+      "registerNotes": "Bentuk lampau, karena kamu sudah menjadi capek; bahasa Indonesia memakai “udah”: “udah capek”. Di rumah biasanya diiringi helaan napas panjang: 疲れたー.",
+      "audio": "audio/ja/casual/cas-15.mp3",
+      "tags": [
+        "perasaan",
+        "rumah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-16",
+      "register": "casual",
+      "japanese": "眠い",
+      "furigana": "{眠|ねむ}い",
+      "romaji": "nemui",
+      "indonesian": "Ngantuk.",
+      "polite": {
+        "japanese": "眠いです",
+        "furigana": "{眠|ねむ}いです",
+        "romaji": "nemui desu",
+        "audio": "audio/ja/casual/cas-16-polite.mp3"
+      },
+      "registerNotes": "Kata sifat い menjadi santai cukup dengan menghapus です.",
+      "audio": "audio/ja/casual/cas-16.mp3",
+      "tags": [
+        "perasaan",
+        "rumah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-17",
+      "register": "casual",
+      "japanese": "美味しい！",
+      "furigana": "{美味|おい}しい！",
+      "romaji": "oishii!",
+      "indonesian": "Enak banget!",
+      "polite": {
+        "japanese": "美味しいです",
+        "furigana": "{美味|おい}しいです",
+        "romaji": "oishii desu",
+        "audio": "audio/ja/casual/cas-17-polite.mp3"
+      },
+      "registerNotes": "Ucapkan tentang masakan pasanganmu: sering, dan dengan penuh perasaan. うまい adalah versi yang lebih kasar, kebanyakan dipakai laki-laki.",
+      "audio": "audio/ja/casual/cas-17.mp3",
+      "tags": [
+        "makanan",
+        "tanggapan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-18",
+      "register": "casual",
+      "japanese": "楽しかった",
+      "furigana": "{楽|たの}しかった",
+      "romaji": "tanoshikatta",
+      "indonesian": "Seru banget tadi.",
+      "polite": {
+        "japanese": "楽しかったです",
+        "furigana": "{楽|たの}しかったです",
+        "romaji": "tanoshikatta desu",
+        "audio": "audio/ja/casual/cas-18-polite.mp3"
+      },
+      "registerNotes": "Bentuk lampau kata sifat い: 楽しい → 楽しかった. Kata sifat Jepang berubah bentuk, tidak seperti bahasa Indonesia. Cocok diucapkan di akhir hari jalan-jalan.",
+      "audio": "audio/ja/casual/cas-18.mp3",
+      "tags": [
+        "perasaan",
+        "tanggapan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-19",
+      "register": "casual",
+      "japanese": "ほんと？",
+      "furigana": "ほんと？",
+      "romaji": "honto?",
+      "indonesian": "Serius? / Beneran?",
+      "polite": {
+        "japanese": "本当ですか？",
+        "furigana": "{本当|ほんとう}ですか？",
+        "romaji": "hontō desu ka?",
+        "audio": "audio/ja/casual/cas-19-polite.mp3"
+      },
+      "registerNotes": "Dalam percakapan, う pada 本当 biasanya hilang. Nada naik untuk terkejut; ほんとだ yang datar berarti “oh, beneran”.",
+      "audio": "audio/ja/casual/cas-19.mp3",
+      "tags": [
+        "tanggapan",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-20",
+      "register": "casual",
+      "japanese": "そうだね",
+      "furigana": "そうだね",
+      "romaji": "sō da ne",
+      "indonesian": "Iya, bener juga.",
+      "polite": {
+        "japanese": "そうですね",
+        "furigana": "そうですね",
+        "romaji": "sō desu ne",
+        "audio": "audio/ja/casual/cas-20-polite.mp3"
+      },
+      "registerNotes": "Menyetujui dan menjaga percakapan tetap jalan. そうですね versi sopan juga dipakai sebagai pengisi saat berpikir: “hmm, gimana ya…”.",
+      "audio": "audio/ja/casual/cas-20.mp3",
+      "tags": [
+        "jawaban",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-21",
+      "register": "casual",
+      "japanese": "何食べたい？",
+      "furigana": "{何|なに}{食|た}べたい？",
+      "romaji": "nani tabetai?",
+      "indonesian": "Mau makan apa?",
+      "polite": {
+        "japanese": "何が食べたいですか？",
+        "furigana": "{何|なに}が{食|た}べたいですか？",
+        "romaji": "nani ga tabetai desu ka?",
+        "audio": "audio/ja/casual/cas-21-polite.mp3"
+      },
+      "registerNotes": "〜たい berarti “mau”, tapi melekat di belakang kata kerja (食べ + たい), bukan di depan. Pertanyaan santainya menghilangkan が dan ですか, dan nada naiklah yang bertanya.",
+      "audio": "audio/ja/casual/cas-21.mp3",
+      "tags": [
+        "makanan",
+        "pertanyaan",
+        "rumah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-22",
+      "register": "casual",
+      "japanese": "一緒に行こう",
+      "furigana": "{一緒|いっしょ}に{行|い}こう",
+      "romaji": "issho ni ikō",
+      "indonesian": "Yuk, pergi bareng.",
+      "polite": {
+        "japanese": "一緒に行きましょう",
+        "furigana": "{一緒|いっしょ}に{行|い}きましょう",
+        "romaji": "issho ni ikimashō",
+        "audio": "audio/ja/casual/cas-22-polite.mp3"
+      },
+      "registerNotes": "〜ましょう menjadi bentuk ajakan 〜おう/〜よう: 行きましょう → 行こう, 食べましょう → 食べよう. Bedanya seperti “mari” dan “yuk”.",
+      "audio": "audio/ja/casual/cas-22.mp3",
+      "tags": [
+        "saran"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-23",
+      "register": "casual",
+      "japanese": "手伝おうか？",
+      "furigana": "{手伝|てつだ}おうか？",
+      "romaji": "tetsudaō ka?",
+      "indonesian": "Mau aku bantu?",
+      "polite": {
+        "japanese": "手伝いましょうか？",
+        "furigana": "{手伝|てつだ}いましょうか？",
+        "romaji": "tetsudaimashō ka?",
+        "audio": "audio/ja/casual/cas-23-polite.mp3"
+      },
+      "registerNotes": "Bentuk ajakan + か untuk menawarkan diri: “aku bantu, ya?”. Sangat berguna di rumah.",
+      "audio": "audio/ja/casual/cas-23.mp3",
+      "tags": [
+        "tawaran",
+        "rumah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-24",
+      "register": "casual",
+      "japanese": "気をつけてね",
+      "furigana": "{気|き}をつけてね",
+      "romaji": "ki o tsukete ne",
+      "indonesian": "Hati-hati, ya.",
+      "polite": {
+        "japanese": "気をつけてください",
+        "furigana": "{気|き}をつけてください",
+        "romaji": "ki o tsukete kudasai",
+        "audio": "audio/ja/casual/cas-24-polite.mp3"
+      },
+      "registerNotes": "Diucapkan kepada orang yang akan pergi. ね membuatnya hangat, seperti “ya” dalam “hati-hati, ya”.",
+      "audio": "audio/ja/casual/cas-24.mp3",
+      "tags": [
+        "perhatian",
+        "rumah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-25",
+      "register": "casual",
+      "japanese": "またね",
+      "furigana": "またね",
+      "romaji": "mata ne",
+      "indonesian": "Dah! / Sampai nanti.",
+      "polite": {
+        "japanese": "では、また",
+        "furigana": "では、また",
+        "romaji": "dewa, mata",
+        "audio": "audio/ja/casual/cas-25-polite.mp3"
+      },
+      "registerNotes": "またね, じゃあね, dan バイバイ adalah salam perpisahan untuk teman dan keluarga. Dengan orang yang kamu ajak bicara memakai です/ます: では、また, atau 失礼します saat meninggalkan ruangan.",
+      "audio": "audio/ja/casual/cas-25.mp3",
+      "tags": [
+        "salam"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-26",
+      "register": "casual",
+      "japanese": "おかえり",
+      "furigana": "おかえり",
+      "romaji": "okaeri",
+      "indonesian": "Selamat datang (di rumah).",
+      "polite": {
+        "japanese": "おかえりなさい",
+        "furigana": "おかえりなさい",
+        "romaji": "okaerinasai",
+        "audio": "audio/ja/casual/cas-26-polite.mp3"
+      },
+      "registerNotes": "Diucapkan kepada siapa pun yang masuk rumah; jawabannya ただいま. Keluarga memakai keduanya: なさい sedikit lebih hangat dan lebih hati-hati. Bahasa Indonesia tidak punya ucapan tetap untuk ini; yang paling mirip “eh, udah pulang”.",
+      "audio": "audio/ja/casual/cas-26.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-27",
+      "register": "casual",
+      "japanese": "ただいま",
+      "furigana": "ただいま",
+      "romaji": "tadaima",
+      "indonesian": "Aku pulang!",
+      "polite": {
+        "japanese": "ただいま戻りました",
+        "furigana": "ただいま{戻|もど}りました",
+        "romaji": "tadaima modorimashita",
+        "audio": "audio/ja/casual/cas-27-polite.mp3"
+      },
+      "registerNotes": "Diucapkan setiap kali pulang ke rumah. Versi sopannya diucapkan saat kembali ke kantor.",
+      "audio": "audio/ja/casual/cas-27.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-28",
+      "register": "casual",
+      "japanese": "行ってくるね",
+      "furigana": "{行|い}ってくるね",
+      "romaji": "itte kuru ne",
+      "indonesian": "Aku pergi dulu, ya.",
+      "polite": {
+        "japanese": "行ってきます",
+        "furigana": "{行|い}ってきます",
+        "romaji": "itte kimasu",
+        "audio": "audio/ja/casual/cas-28-polite.mp3"
+      },
+      "registerNotes": "Ungkapan tetap 行ってきます bisa dipakai di mana saja, termasuk di rumah. 行ってくるね adalah versi yang lebih lembut dan santai, sering dipakai pasangan.",
+      "audio": "audio/ja/casual/cas-28.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-29",
+      "register": "casual",
+      "japanese": "好き",
+      "furigana": "{好|す}き",
+      "romaji": "suki",
+      "indonesian": "Suka. / Aku suka kamu.",
+      "polite": {
+        "japanese": "好きです",
+        "furigana": "{好|す}きです",
+        "romaji": "suki desu",
+        "audio": "audio/ja/casual/cas-29-polite.mp3"
+      },
+      "registerNotes": "Diucapkan kepada seseorang, 好き adalah “aku sayang kamu” sehari-hari. 大好き lebih kuat; 愛してる jarang diucapkan dan terasa berat, jadi simpan untuk saat yang tepat.",
+      "audio": "audio/ja/casual/cas-29.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-30",
+      "register": "casual",
+      "japanese": "会いたい",
+      "furigana": "{会|あ}いたい",
+      "romaji": "aitai",
+      "indonesian": "Kangen.",
+      "polite": {
+        "japanese": "会いたいです",
+        "furigana": "{会|あ}いたいです",
+        "romaji": "aitai desu",
+        "audio": "audio/ja/casual/cas-30-polite.mp3"
+      },
+      "registerNotes": "Secara harfiah “aku ingin bertemu”: cara bahasa Jepang bilang “kangen”. Pesan klasik untuk pasangan saat berjauhan.",
+      "audio": "audio/ja/casual/cas-30.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-31",
+      "register": "casual",
+      "japanese": "どうしたの？",
+      "furigana": "どうしたの？",
+      "romaji": "dō shita no?",
+      "indonesian": "Kenapa? / Ada apa?",
+      "polite": {
+        "japanese": "どうしましたか？",
+        "furigana": "どうしましたか？",
+        "romaji": "dō shimashita ka?",
+        "audio": "audio/ja/casual/cas-31-polite.mp3"
+      },
+      "registerNotes": "Ditanyakan saat seseorang kelihatan sedih atau ada sesuatu yang terjadi. の membuatnya lembut dan penuh perhatian.",
+      "audio": "audio/ja/casual/cas-31.mp3",
+      "tags": [
+        "perhatian",
+        "pertanyaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-32",
+      "register": "casual",
+      "japanese": "寒くない？",
+      "furigana": "{寒|さむ}くない？",
+      "romaji": "samukunai?",
+      "indonesian": "Nggak kedinginan?",
+      "polite": {
+        "japanese": "寒くないですか？",
+        "furigana": "{寒|さむ}くないですか？",
+        "romaji": "samukunai desu ka?",
+        "audio": "audio/ja/casual/cas-32-polite.mp3"
+      },
+      "registerNotes": "Bertanya dengan bentuk negatif adalah cara alami dan penuh perhatian untuk mengecek, persis seperti “kamu nggak kedinginan?”.",
+      "audio": "audio/ja/casual/cas-32.mp3",
+      "tags": [
+        "perhatian",
+        "pertanyaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-33",
+      "register": "casual",
+      "japanese": "先に寝るね",
+      "furigana": "{先|さき}に{寝|ね}るね",
+      "romaji": "saki ni neru ne",
+      "indonesian": "Aku tidur duluan, ya.",
+      "polite": {
+        "japanese": "先に寝ます",
+        "furigana": "{先|さき}に{寝|ね}ます",
+        "romaji": "saki ni nemasu",
+        "audio": "audio/ja/casual/cas-33-polite.mp3"
+      },
+      "registerNotes": "先に berarti “duluan”. ね membuatnya terdengar seperti memberi tahu, bukan mengumumkan, seperti “ya” di akhir kalimat.",
+      "audio": "audio/ja/casual/cas-33.mp3",
+      "tags": [
+        "rumah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-34",
+      "register": "casual",
+      "japanese": "何時に帰る？",
+      "furigana": "{何時|なんじ}に{帰|かえ}る？",
+      "romaji": "nanji ni kaeru?",
+      "indonesian": "Pulang jam berapa?",
+      "polite": {
+        "japanese": "何時に帰りますか？",
+        "furigana": "{何時|なんじ}に{帰|かえ}りますか？",
+        "romaji": "nanji ni kaerimasu ka?",
+        "audio": "audio/ja/casual/cas-34-polite.mp3"
+      },
+      "registerNotes": "Pertanyaan santai sering cukup bentuk biasa dengan nada naik.",
+      "audio": "audio/ja/casual/cas-34.mp3",
+      "tags": [
+        "pertanyaan",
+        "rumah",
+        "waktu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cas-35",
+      "register": "casual",
+      "japanese": "手伝って",
+      "furigana": "{手伝|てつだ}って",
+      "romaji": "tetsudatte",
+      "indonesian": "Bantuin, dong.",
+      "polite": {
+        "japanese": "手伝ってください",
+        "furigana": "{手伝|てつだ}ってください",
+        "romaji": "tetsudatte kudasai",
+        "audio": "audio/ja/casual/cas-35-polite.mp3"
+      },
+      "registerNotes": "Permintaan dengan bentuk て biasa. Tambahkan ちょっと di depannya agar lebih halus: ちょっと手伝って, seperti “bantuin bentar, dong”.",
+      "audio": "audio/ja/casual/cas-35.mp3",
+      "tags": [
+        "permintaan",
+        "rumah"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-36",
+      "register": "casual",
+      "japanese": "いいね！",
+      "furigana": "いいね！",
+      "romaji": "ii ne!",
+      "indonesian": "Asyik! / Boleh juga!",
+      "polite": {
+        "japanese": "いいですね",
+        "furigana": "いいですね",
+        "romaji": "ii desu ne",
+        "audio": "audio/ja/casual/cas-36-polite.mp3"
+      },
+      "registerNotes": "Menanggapi rencana atau foto. いいね juga nama tombol “suka” (like) dalam bahasa Jepang.",
+      "audio": "audio/ja/casual/cas-36.mp3",
+      "tags": [
+        "tanggapan",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-37",
+      "register": "casual",
+      "japanese": "すごい！",
+      "furigana": "すごい！",
+      "romaji": "sugoi!",
+      "indonesian": "Wah! / Keren!",
+      "polite": {
+        "japanese": "すごいですね",
+        "furigana": "すごいですね",
+        "romaji": "sugoi desu ne",
+        "audio": "audio/ja/casual/cas-37-polite.mp3"
+      },
+      "registerNotes": "Tanggapan yang bisa dipakai untuk apa saja. Dalam bahasa santai sering dipanjangkan: すごーい.",
+      "audio": "audio/ja/casual/cas-37.mp3",
+      "tags": [
+        "tanggapan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cas-38",
+      "register": "casual",
+      "japanese": "ほんとにごめん",
+      "furigana": "ほんとにごめん",
+      "romaji": "honto ni gomen",
+      "indonesian": "Maaf banget, ya.",
+      "polite": {
+        "japanese": "本当に申し訳ありません",
+        "furigana": "{本当|ほんとう}に{申|もう}し{訳|わけ}ありません",
+        "romaji": "hontō ni mōshiwake arimasen",
+        "audio": "audio/ja/casual/cas-38-polite.mp3"
+      },
+      "registerNotes": "Permintaan maaf sungguhan kepada orang dekat. Versi sopannya adalah permintaan maaf yang serius dan formal, yang dipakai kepada orang tua pasanganmu kalau ada masalah.",
+      "audio": "audio/ja/casual/cas-38.mp3",
+      "tags": [
+        "minta maaf"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "cas-39",
+      "register": "casual",
+      "japanese": "ねえ",
+      "furigana": "ねえ",
+      "romaji": "nē",
+      "indonesian": "Eh… (memanggil perhatian)",
+      "polite": {
+        "japanese": "すみません",
+        "furigana": "すみません",
+        "romaji": "sumimasen",
+        "audio": "audio/ja/casual/cas-39-polite.mp3"
+      },
+      "registerNotes": "Untuk memanggil pasanganmu: ねえ, atau cukup namanya. Untuk orang yang tidak dikenal, selalu すみません, seperti “permisi”.",
+      "audio": "audio/ja/casual/cas-39.mp3",
+      "tags": [
+        "perhatian"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

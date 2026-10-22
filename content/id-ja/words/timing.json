@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "id": "words-timing",
+  "title": "Waktu & seberapa sering",
+  "description": "Kapan dan seberapa sering: akhir-akhir ini, suatu saat nanti, untuk pertama kali, tempo hari, bulan depan, tiba-tiba.",
+  "items": [
+    {
+      "id": "w-saikin",
+      "japanese": "最近",
+      "furigana": "{最近|さいきん}",
+      "indonesian": "akhir-akhir ini, belakangan",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-saikin.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mukashi",
+      "japanese": "昔",
+      "furigana": "{昔|むかし}",
+      "indonesian": "dulu, zaman dulu",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-mukashi.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shourai",
+      "japanese": "将来",
+      "furigana": "{将来|しょうらい}",
+      "indonesian": "masa depan (diri sendiri)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shourai.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sonouchi",
+      "japanese": "そのうち",
+      "indonesian": "suatu saat nanti, tak lama lagi",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-sonouchi.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tamani",
+      "japanese": "たまに",
+      "indonesian": "sesekali, kadang-kadang",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-tamani.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yoku",
+      "japanese": "よく",
+      "indonesian": "sering; dengan baik",
+      "pos": "adverb",
+      "usage": "よく来ます — saya sering datang. よくできました — bagus sekali!",
+      "audio": "audio/ja/words/w-yoku.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-zutto",
+      "japanese": "ずっと",
+      "indonesian": "terus, sepanjang waktu; jauh (lebih)",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-zutto.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hajimete",
+      "japanese": "初めて",
+      "furigana": "{初|はじ}めて",
+      "indonesian": "untuk pertama kali",
+      "pos": "adverb",
+      "usage": "初めて日本に来ました — ini pertama kalinya saya ke Jepang.",
+      "audio": "audio/ja/words/w-hajimete.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hisashiburi",
+      "japanese": "久しぶり",
+      "furigana": "{久|ひさ}しぶり",
+      "indonesian": "setelah sekian lama",
+      "pos": "noun",
+      "usage": "久しぶり！ — lama tak jumpa!",
+      "audio": "audio/ja/words/w-hisashiburi.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-saisho",
+      "japanese": "最初",
+      "furigana": "{最初|さいしょ}",
+      "indonesian": "pertama, awal",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-saisho.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-saigo",
+      "japanese": "最後",
+      "furigana": "{最後|さいご}",
+      "indonesian": "terakhir, akhir",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-saigo.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tochuu",
+      "japanese": "途中",
+      "furigana": "{途中|とちゅう}",
+      "indonesian": "di tengah jalan; di tengah-tengah",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-tochuu.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mae",
+      "japanese": "前",
+      "furigana": "{前|まえ}",
+      "indonesian": "sebelum, yang lalu; di depan",
+      "pos": "noun",
+      "usage": "Untuk waktu atau tempat: 三年前 (tiga tahun lalu), 駅の前 (di depan stasiun). Urutannya terbalik dari bahasa Indonesia: “depan stasiun” jadi 駅の前.",
+      "audio": "audio/ja/words/w-mae.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kondo",
+      "japanese": "今度",
+      "furigana": "{今度|こんど}",
+      "indonesian": "lain kali; kapan-kapan",
+      "pos": "noun",
+      "usage": "今度、ご飯行こう — kapan-kapan makan bareng, yuk.",
+      "audio": "audio/ja/words/w-kondo.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-konoaida",
+      "japanese": "この間",
+      "furigana": "この{間|あいだ}",
+      "indonesian": "tempo hari, beberapa waktu lalu",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-konoaida.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-maishuu",
+      "japanese": "毎週",
+      "furigana": "{毎週|まいしゅう}",
+      "indonesian": "setiap minggu",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-maishuu.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-raigetsu",
+      "japanese": "来月",
+      "furigana": "{来月|らいげつ}",
+      "indonesian": "bulan depan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-raigetsu.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sengetsu",
+      "japanese": "先月",
+      "furigana": "{先月|せんげつ}",
+      "indonesian": "bulan lalu",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-sengetsu.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kyonen",
+      "japanese": "去年",
+      "furigana": "{去年|きょねん}",
+      "indonesian": "tahun lalu",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kyonen.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-rainen",
+      "japanese": "来年",
+      "furigana": "{来年|らいねん}",
+      "indonesian": "tahun depan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-rainen.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kyuuni",
+      "japanese": "急に",
+      "furigana": "{急|きゅう}に",
+      "indonesian": "tiba-tiba",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-kyuuni.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sugu",
+      "japanese": "すぐ",
+      "indonesian": "segera, sebentar lagi; dekat sekali",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-sugu.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mousugu",
+      "japanese": "もうすぐ",
+      "indonesian": "sebentar lagi, hampir",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-mousugu.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-choudo",
+      "japanese": "ちょうど",
+      "indonesian": "tepat, pas",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-choudo.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hayameni",
+      "japanese": "早めに",
+      "furigana": "{早|はや}めに",
+      "indonesian": "agak lebih awal, jangan mepet",
+      "pos": "adverb",
+      "audio": "audio/ja/words/w-hayameni.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-punya",
+  "connector": "punya",
+  "gloss": "持っている",
+  "title": "punya — 持っている",
+  "pattern": "Saya punya … · Saya tidak punya … · punya saya (私の)",
+  "explanation": "punya は、ものを持っている、家族などがいる、という意味です：Dia punya mobil（彼女は車を持っています）、Saya punya dua kakak（私には兄や姉が2人います）。否定は tidak：Saya tidak punya mobil。持ち物ではなく、そこにあるもの・売っているものには ada を使います。ワルンのごはんは売り物なので、Punya nasi? ではなく Ada nasi? と聞きます。punya は「〜のもの」の意味にもなります：Ini punya saya（これは私のです）、Punya siapa?（だれのですか）",
+  "natural": "Sudah punya anak?（お子さんはいますか）や Sudah punya pacar?（恋人はいますか）は、会ったばかりの人からもすぐに聞かれる質問です。日本では立ち入った質問ですが、気にせずに。ていねいな「いいえ」は、予定がどうであれ Belum（まだ）です。",
+  "stiff": "日本語の「車がある」「兄がいる」につられて ada を使いがちですが、自分の持ち物や家族は punya です：Saya punya mobil。逆に「時間がある」は ada waktu。mempunyai はかたい書き言葉の形で、会話で使うとかたく聞こえます。",
+  "examples": [
+    {
+      "id": "gx-punya-1",
+      "indonesian": "Dia punya mobil baru.",
+      "japanese": "彼女は新しい車を持っています。",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "punya "
+        },
+        {
+          "t": "mobil ",
+          "w": "w-mobil"
+        },
+        {
+          "t": "baru.",
+          "w": "w-baru"
+        }
+      ],
+      "gap": {
+        "before": "Dia ",
+        "answer": "punya",
+        "after": " mobil baru.",
+        "options": [
+          "punya",
+          "ada",
+          "adalah"
+        ],
+        "why": "持っているものは punya。"
+      },
+      "audio": "audio/id/grammar/gx-punya-1.mp3",
+      "tags": [
+        "文法",
+        "punya"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-punya-2",
+      "indonesian": "Saya tidak punya uang kecil.",
+      "japanese": "小銭がありません。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tidak punya ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "uang kecil.",
+          "w": "w-uang"
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "tidak",
+        "after": " punya uang kecil.",
+        "options": [
+          "tidak",
+          "bukan"
+        ],
+        "why": "punya は動詞なので、否定は tidak。"
+      },
+      "audio": "audio/id/grammar/gx-punya-2.mp3",
+      "tags": [
+        "文法",
+        "punya"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-punya-3",
+      "indonesian": "Ini punya saya.",
+      "japanese": "これは私のです。",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "punya "
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "Ini ",
+        "answer": "punya",
+        "after": " saya.",
+        "options": [
+          "punya",
+          "ada",
+          "adalah"
+        ],
+        "why": "「私の（もの）」は punya saya。"
+      },
+      "audio": "audio/id/grammar/gx-punya-3.mp3",
+      "tags": [
+        "文法",
+        "punya"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-punya-4",
+      "indonesian": "Saya punya HP, tapi di sini tidak ada sinyal.",
+      "japanese": "スマホはあるけど、ここは電波がありません。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "punya HP, ",
+          "w": "w-hp"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "di sini ",
+          "w": "w-di"
+        },
+        {
+          "t": "tidak ada "
+        },
+        {
+          "t": "sinyal."
+        }
+      ],
+      "gap": {
+        "before": "Saya punya HP, tapi di sini tidak ",
+        "answer": "ada",
+        "after": " sinyal.",
+        "options": [
+          "ada",
+          "punya"
+        ],
+        "why": "スマホを持っているのは punya、電波があるかないかは ada。日本語ではどちらも「ある」です。"
+      },
+      "audio": "audio/id/grammar/gx-punya-4.mp3",
+      "audioHint": "Saya punya ha pe, tapi di sini tidak ada sinyal.",
+      "tags": [
+        "文法",
+        "punya"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

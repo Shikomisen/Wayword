@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "id": "con-shi",
+  "connector": "し",
+  "gloss": "lagi pula, selain itu",
+  "title": "し — lagi pula, selain itu",
+  "pattern": "A し、B し、…",
+  "explanation": "し mendaftar poin-poin yang saling menguatkan, biasanya sebagai alasan: {安|やす}いし、{近|ちか}いし、いい{店|みせ}だよ — murah, dekat pula, tempatnya bagus. Rasanya seperti “lagi pula” atau “…, … pula”, tapi し ada di akhir setiap poin. し juga memberi kesan masih ada hal lain yang bisa disebut. Kata benda dan kata sifat な memakai だ sebelum し ({雨|あめ}だし, {暇|ひま}だし); dalam bahasa sopan, です atau ます bisa ada sebelum し.",
+  "natural": "Dalam percakapan, saat kamu sedang memberi alasan: {今日|きょう}は{疲|つか}れたし、{雨|あめ}だし、{家|いえ}にいよう (hari ini capek, hujan pula, di rumah saja, yuk).",
+  "stiff": "Hanya untuk poin-poin yang mendukung kesimpulan yang sama, bukan daftar tindakan biasa (untuk itu pakai て atau そして). Rangkaian し yang panjang bisa terdengar seperti mengeluh.",
+  "examples": [
+    {
+      "id": "cx-shi-1",
+      "japanese": "この店は安いし、近いし、よく来ます。",
+      "furigana": "この{店|みせ}は{安|やす}いし、{近|ちか}いし、よく{来|き}ます。",
+      "indonesian": "Tempat ini murah, dekat pula, jadi saya sering datang ke sini.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{店|みせ}は",
+          "w": "w-mise"
+        },
+        {
+          "t": "{安|やす}いし、",
+          "w": "w-yasui"
+        },
+        {
+          "t": "{近|ちか}いし、"
+        },
+        {
+          "t": "よく{来|き}ます。",
+          "w": "w-kuru"
+        }
+      ],
+      "gap": {
+        "before": "この{店|みせ}は{安|やす}い",
+        "answer": "し",
+        "after": "、{近|ちか}いし、よく{来|き}ます。",
+        "options": [
+          "し",
+          "けど",
+          "ながら"
+        ]
+      },
+      "alsoOrders": [
+        [
+          0,
+          2,
+          1,
+          3
+        ]
+      ],
+      "audio": "audio/ja/connectors/cx-shi-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "shi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-shi-2",
+      "japanese": "今日は疲れたし、雨だし、家にいよう。",
+      "furigana": "{今日|きょう}は{疲|つか}れたし、{雨|あめ}だし、{家|いえ}にいよう。",
+      "indonesian": "Hari ini aku capek, hujan pula. Di rumah saja, yuk.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{疲|つか}れたし、",
+          "w": "w-tsukareru"
+        },
+        {
+          "t": "{雨|あめ}だし、",
+          "w": "w-ame"
+        },
+        {
+          "t": "{家|いえ}にいよう。",
+          "w": "w-ie"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}は{疲|つか}れたし、{雨|あめ}",
+        "answer": "だし",
+        "after": "、{家|いえ}にいよう。",
+        "options": [
+          "だし",
+          "なし",
+          "し"
+        ],
+        "why": "Kata benda memakai だ sebelum し: 雨だし, 休みだし."
+      },
+      "alsoOrders": [
+        [
+          0,
+          2,
+          1,
+          3
+        ]
+      ],
+      "audio": "audio/ja/connectors/cx-shi-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "shi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-shi-3",
+      "japanese": "彼は優しいし、面白いし、みんなに好かれています。",
+      "furigana": "{彼|かれ}は{優|やさ}しいし、{面白|おもしろ}いし、みんなに{好|す}かれています。",
+      "indonesian": "Dia baik hati, lucu pula, jadi semua orang suka padanya.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{彼|かれ}は",
+          "w": "w-kare"
+        },
+        {
+          "t": "{優|やさ}しいし、"
+        },
+        {
+          "t": "{面白|おもしろ}いし、"
+        },
+        {
+          "t": "みんなに{好|す}かれています。",
+          "w": "w-minna"
+        }
+      ],
+      "gap": {
+        "before": "{彼|かれ}は{優|やさ}しいし、{面白|おもしろ}い",
+        "answer": "し",
+        "after": "、みんなに{好|す}かれています。",
+        "options": [
+          "し",
+          "けど",
+          "ながら"
+        ]
+      },
+      "alsoOrders": [
+        [
+          0,
+          2,
+          1,
+          3
+        ]
+      ],
+      "audio": "audio/ja/connectors/cx-shi-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "shi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-shi-4",
+      "japanese": "時間もないし、また今度にしよう。",
+      "furigana": "{時間|じかん}もないし、また{今度|こんど}にしよう。",
+      "indonesian": "Lagi pula, kita tidak punya waktu. Lain kali saja, yuk.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{時間|じかん}も",
+          "w": "w-jikan"
+        },
+        {
+          "t": "ないし、"
+        },
+        {
+          "t": "また{今度|こんど}にしよう。",
+          "w": "w-mata"
+        }
+      ],
+      "gap": {
+        "before": "{時間|じかん}もない",
+        "answer": "し",
+        "after": "、また{今度|こんど}にしよう。",
+        "options": [
+          "し",
+          "けど",
+          "と"
+        ],
+        "why": "Satu し sudah cukup: し memberi kesan masih ada alasan lain juga."
+      },
+      "audio": "audio/ja/connectors/cx-shi-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "shi"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

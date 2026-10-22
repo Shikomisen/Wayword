@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-counting",
+  "connector": "se-, orang, buah",
+  "gloss": "人やものの数え方",
+  "title": "se-, orang, buah — 数え方",
+  "pattern": "数字 + 名詞: tiga hari · 数字 + orang / buah / ekor + 名詞 · se- (1つ): seorang, sebuah",
+  "explanation": "数字は名詞の前に置き、名詞はそのままです：tiga hari（3日）、dua tiket（切符2枚）。インドネシア語にも、日本語の「人」「個」「匹」のような数える言葉があります：人には orang、ものには buah（もとは「果物」）、動物には ekor（もとは「しっぽ」）。dua orang anak（2人の子ども）、dua ekor kucing（2匹の猫）のように、数字・数える言葉・名詞の順で、「2人の子ども」と同じ並びです。「1」は前に se- を付けます：seorang teman（1人の友達）、sebuah rumah（1軒の家）、ほかに sebentar（ちょっと）、sehari（1日）も。ふだんの会話では、ものを数える言葉はよく省きますが、Berapa orang?（何名様ですか）はどのレストランでも聞かれます。",
+  "natural": "レストランや切符売り場では、人数を orang で数えます：Berapa orang? — Dua orang（何名様ですか — 2人です）。ただ注文の時は、数字が食べ物の後に来ることがよくあります：Nasi goreng dua, es teh satu（ナシゴレン2つ、アイスティー1つ）。日本語の注文と同じ並びです。",
+  "stiff": "身近なものに buah を付けると、教科書のように聞こえることがあります。ふつうは dua tiket で、dua buah tiket とは言いません。日本語のように毎回数える言葉を付けなくて大丈夫です。数字の後で名詞をくり返すこともありません：tiga hari-hari ではなく tiga hari。",
+  "examples": [
+    {
+      "id": "gx-counting-1",
+      "indonesian": "Saya di Bali tiga hari.",
+      "japanese": "バリに3日間います。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "di Bali ",
+          "w": "w-di"
+        },
+        {
+          "t": "tiga hari.",
+          "w": "w-hari"
+        }
+      ],
+      "gap": {
+        "before": "Saya di Bali ",
+        "answer": "tiga hari",
+        "after": ".",
+        "options": [
+          "tiga hari",
+          "hari tiga",
+          "tiga hari-hari"
+        ],
+        "why": "数字が先で、名詞はそのまま：tiga hari。"
+      },
+      "audio": "audio/id/grammar/gx-counting-1.mp3",
+      "tags": [
+        "文法",
+        "数え方"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-counting-2",
+      "indonesian": "Berapa orang? Dua orang.",
+      "japanese": "何名様ですか？ — 2人です。",
+      "chunks": [
+        {
+          "t": "Berapa ",
+          "w": "w-berapa"
+        },
+        {
+          "t": "orang? ",
+          "w": "w-orang"
+        },
+        {
+          "t": "Dua "
+        },
+        {
+          "t": "orang.",
+          "w": "w-orang"
+        }
+      ],
+      "gap": {
+        "before": "Berapa orang? Dua ",
+        "answer": "orang",
+        "after": ".",
+        "options": [
+          "orang",
+          "buah",
+          "ekor"
+        ],
+        "why": "人は orang で数えます。日本語の「〜人」にあたります。"
+      },
+      "audio": "audio/id/grammar/gx-counting-2.mp3",
+      "tags": [
+        "文法",
+        "数え方"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-counting-3",
+      "indonesian": "Dia tinggal di sebuah desa kecil.",
+      "japanese": "彼女は小さな村に住んでいます。",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di ",
+          "w": "w-di"
+        },
+        {
+          "t": "sebuah "
+        },
+        {
+          "t": "desa ",
+          "w": "w-desa"
+        },
+        {
+          "t": "kecil.",
+          "w": "w-kecil"
+        }
+      ],
+      "gap": {
+        "before": "Dia tinggal di ",
+        "answer": "sebuah",
+        "after": " desa kecil.",
+        "options": [
+          "sebuah",
+          "seorang",
+          "seekor"
+        ],
+        "why": "ものや場所は buah で数えます：sebuah desa で「ある村、1つの村」。"
+      },
+      "audio": "audio/id/grammar/gx-counting-3.mp3",
+      "tags": [
+        "文法",
+        "数え方"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-counting-4",
+      "indonesian": "Kami punya dua ekor kucing.",
+      "japanese": "うちは猫を2匹飼っています。",
+      "chunks": [
+        {
+          "t": "Kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "punya "
+        },
+        {
+          "t": "dua "
+        },
+        {
+          "t": "ekor "
+        },
+        {
+          "t": "kucing."
+        }
+      ],
+      "gap": {
+        "before": "Kami punya dua ",
+        "answer": "ekor",
+        "after": " kucing.",
+        "options": [
+          "ekor",
+          "orang",
+          "buah"
+        ],
+        "why": "動物は ekor（しっぽ）で数えます。日本語の「匹」にあたります。"
+      },
+      "audio": "audio/id/grammar/gx-counting-4.mp3",
+      "tags": [
+        "文法",
+        "数え方"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

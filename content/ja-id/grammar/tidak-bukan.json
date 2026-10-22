@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-tidak-bukan",
+  "connector": "tidak / bukan",
+  "gloss": "〜ない（否定）",
+  "title": "tidak と bukan — 〜ない",
+  "pattern": "tidak + 動詞・形容詞 · bukan + 名詞 · …, bukan?",
+  "explanation": "「〜ない」には2つの言葉があり、後に来る言葉で決まります。tidak は動詞と形容詞の前：Saya tidak makan daging（私は肉を食べません）、Ini tidak pedas（これは辛くないです）。bukan は名詞の前で、「〜ではない」と言う時に使います：Saya bukan guru（私は先生ではありません）、Ini bukan kopi（これはコーヒーではありません）。「先生じゃない」のように名詞を打ち消す時が bukan、それ以外は tidak と考えると分かりやすいです。くだけた会話では tidak は nggak になりますが、bukan は bukan のままです。",
+  "natural": "文の最後に bukan を付けると、「〜ですよね？」と確かめる言い方になります：Ini hotelnya, bukan?（ここがそのホテルですよね？）。会話ではこれを短くして kan と言ったり、やわらかい ya に変えたりします。",
+  "stiff": "名詞の前に tidak を使うのが定番のまちがいです：Saya tidak guru ではなく Saya bukan guru。nggak は友達用なので、年上の知らない人や役所では tidak と言いましょう。",
+  "examples": [
+    {
+      "id": "gx-tidak-bukan-1",
+      "indonesian": "Saya tidak makan daging.",
+      "japanese": "私は肉を食べません。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tidak ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "makan ",
+          "w": "w-makan"
+        },
+        {
+          "t": "daging.",
+          "w": "w-daging"
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "tidak",
+        "after": " makan daging.",
+        "options": [
+          "tidak",
+          "bukan",
+          "belum"
+        ],
+        "why": "makan は動詞なので、否定は tidak。"
+      },
+      "audio": "audio/id/grammar/gx-tidak-bukan-1.mp3",
+      "tags": [
+        "文法",
+        "tidak-bukan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-tidak-bukan-2",
+      "indonesian": "Ini bukan tas saya.",
+      "japanese": "これは私のかばんではありません。",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "bukan ",
+          "w": "w-bukan"
+        },
+        {
+          "t": "tas ",
+          "w": "w-tas"
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "Ini ",
+        "answer": "bukan",
+        "after": " tas saya.",
+        "options": [
+          "bukan",
+          "tidak"
+        ],
+        "why": "tas saya は名詞なので、否定は bukan。"
+      },
+      "audio": "audio/id/grammar/gx-tidak-bukan-2.mp3",
+      "tags": [
+        "文法",
+        "tidak-bukan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-tidak-bukan-3",
+      "register": "casual",
+      "indonesian": "Kamu nggak capek?",
+      "japanese": "疲れてない？",
+      "chunks": [
+        {
+          "t": "Kamu ",
+          "w": "w-kamu"
+        },
+        {
+          "t": "nggak "
+        },
+        {
+          "t": "capek?",
+          "w": "w-capek"
+        }
+      ],
+      "gap": {
+        "before": "Kamu ",
+        "answer": "nggak",
+        "after": " capek?",
+        "options": [
+          "nggak",
+          "bukan"
+        ],
+        "why": "capek は形容詞なので、tidak のくだけた形 nggak。"
+      },
+      "audio": "audio/id/grammar/gx-tidak-bukan-3.mp3",
+      "tags": [
+        "文法",
+        "tidak-bukan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-tidak-bukan-4",
+      "indonesian": "Bapak orang Jakarta, bukan?",
+      "japanese": "ジャカルタのご出身ですよね？",
+      "chunks": [
+        {
+          "t": "Bapak ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "orang Jakarta, ",
+          "w": "w-orang"
+        },
+        {
+          "t": "bukan?",
+          "w": "w-bukan"
+        }
+      ],
+      "gap": {
+        "before": "Bapak orang Jakarta, ",
+        "answer": "bukan",
+        "after": "?",
+        "options": [
+          "bukan",
+          "tidak",
+          "ya"
+        ],
+        "ok": [
+          "ya"
+        ],
+        "note": "ya でもかまいません。よりやわらかく、ふだんよく使う言い方です。",
+        "why": "orang Jakarta は名詞なので、確かめる言葉は bukan（〜ですよね）。"
+      },
+      "audio": "audio/id/grammar/gx-tidak-bukan-4.mp3",
+      "tags": [
+        "文法",
+        "tidak-bukan"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

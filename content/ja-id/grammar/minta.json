@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-minta",
+  "connector": "minta, mohon, boleh saya",
+  "gloss": "ていねいに頼む",
+  "title": "minta, mohon, boleh saya — ていねいに頼む",
+  "pattern": "Minta …, ya · Boleh minta …? · Boleh saya …? · Bisa tolong …? · Mohon … (掲示、店員など)",
+  "explanation": "minta は「求める、もらう」という意味で、ものを頼むふだんの言い方はこれだけで十分です：Minta air putih, ya（お水をください）。Boleh minta …?（〜をいただけますか？）は一段ていねい。自分がしたいことの許可をもらうなら Boleh saya …?（〜してもいいですか？）：Boleh saya duduk di sini?（ここに座ってもいいですか？）。相手に何かしてもらうなら Bisa tolong …?（〜していただけますか？）で、よく di- の動詞と一緒に使います：Bisa tolong dibungkus?（包んでもらえますか？）。mohon は改まった言葉で、掲示や店員・係員の言葉、アナウンスで見聞きします（Mohon tunggu sebentar、少々お待ちください）。日本語の「お〜ください」のような接客の言葉で、自分から頼む時に使うのは Mohon maaf（大変申し訳ありません）くらいです。",
+  "natural": "Minta …, ya はワルンでもカウンターでも、どこでも使えます。最後の ya が「お願いね」の役目をします。パートナーの家族や年上の人には、Boleh saya …? と Bisa tolong …? が無難です。",
+  "stiff": "punya は「持っている（所有する）」なので、ものを頼む時には使いません。Bisa saya punya …? とは言いません。Saya mau …（〜がほしい）は注文ならかまいませんが、頼みごとに使うと、tolong や boleh なしでは押しつけがましく聞こえます。ふだんの頼みに mohon を使うと、お役所の文書のように聞こえます。",
+  "examples": [
+    {
+      "id": "gx-minta-1",
+      "indonesian": "Minta sambalnya sedikit, ya.",
+      "japanese": "サンバルを少しください。",
+      "chunks": [
+        {
+          "t": "Minta "
+        },
+        {
+          "t": "sambalnya ",
+          "w": "w-sambal"
+        },
+        {
+          "t": "sedikit, ",
+          "w": "w-sedikit"
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Minta",
+        "after": " sambalnya sedikit, ya.",
+        "options": [
+          "Minta",
+          "Punya",
+          "Mohon"
+        ],
+        "why": "ものを頼むなら minta。Punya は「持っている」、mohon は掲示などの改まった言葉です。"
+      },
+      "audio": "audio/id/grammar/gx-minta-1.mp3",
+      "tags": [
+        "文法",
+        "minta"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-minta-2",
+      "indonesian": "Boleh saya ambil foto di sini?",
+      "japanese": "ここで写真を撮ってもいいですか？",
+      "chunks": [
+        {
+          "t": "Boleh ",
+          "w": "w-boleh"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "ambil "
+        },
+        {
+          "t": "foto ",
+          "w": "w-foto"
+        },
+        {
+          "t": "di sini?",
+          "w": "w-di"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Boleh",
+        "after": " saya ambil foto di sini?",
+        "options": [
+          "Boleh",
+          "Minta",
+          "Mau"
+        ],
+        "why": "自分がすることの許可は Boleh saya …?（「〜してもいいですか？」）。Mau saya …? だと「〜しましょうか？」になります。"
+      },
+      "cultureNote": "寺院やモスク、儀式の場では撮影が歓迎されないこともあるので、ひと言聞いてからにしましょう。",
+      "audio": "audio/id/grammar/gx-minta-2.mp3",
+      "tags": [
+        "文法",
+        "minta"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-minta-3",
+      "indonesian": "Bisa tolong jelaskan sekali lagi?",
+      "japanese": "もう一度説明していただけますか？",
+      "chunks": [
+        {
+          "t": "Bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "tolong "
+        },
+        {
+          "t": "jelaskan ",
+          "w": "w-menjelaskan"
+        },
+        {
+          "t": "sekali lagi?"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Bisa",
+        "after": " tolong jelaskan sekali lagi?",
+        "options": [
+          "Bisa",
+          "Mohon",
+          "Mau"
+        ],
+        "why": "相手に何かしてもらう時は Bisa tolong …?（「〜していただけますか？」）。"
+      },
+      "registerNotes": "Jelaskan は menjelaskan から me- を取った形で、お願いではこれがふつうです。話をさえぎる時は Maaf（すみません）から始めましょう。",
+      "audio": "audio/id/grammar/gx-minta-3.mp3",
+      "tags": [
+        "文法",
+        "minta"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-minta-4",
+      "indonesian": "Mohon tunggu sebentar.",
+      "japanese": "少々お待ちください。",
+      "chunks": [
+        {
+          "t": "Mohon "
+        },
+        {
+          "t": "tunggu ",
+          "w": "w-tunggu"
+        },
+        {
+          "t": "sebentar.",
+          "w": "w-sebentar"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Mohon",
+        "after": " tunggu sebentar.",
+        "options": [
+          "Mohon",
+          "Tolong",
+          "Mau"
+        ],
+        "ok": [
+          "Tolong"
+        ],
+        "note": "Tolong tunggu sebentar も正解で、もう少しくだけた言い方。店員や掲示では mohon がよく使われます。",
+        "why": "店員や掲示、アナウンスの改まった「〜ください」は mohon。"
+      },
+      "registerNotes": "銀行や診療所、電話でよく聞く言葉。返事は Baik（わかりました）だけで十分です。自分が言うなら Tunggu sebentar, ya（ちょっと待ってね）。",
+      "audio": "audio/id/grammar/gx-minta-4.mp3",
+      "tags": [
+        "文法",
+        "minta"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "id": "market",
+  "title": "Bargaining at the market",
+  "category": "shopping",
+  "setting": "Pasar Beringharjo in Yogyakarta, a market famous for batik. You stop at a stall hung with batik shirts, and the stallholder, a woman about your mother's age, calls out to you.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "vendor",
+      "indonesian": "Cari apa, Kak? Silakan dilihat-lihat dulu.",
+      "english": "What are you looking for? Have a look around.",
+      "audio": "audio/id/scenario/market-n1.mp3",
+      "options": [
+        {
+          "phraseId": "sho-06",
+          "quality": "good",
+          "feedback": "The friendly answer to Cari apa? Browsing is fine, and she'll still show you the best shirts.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Saya cari kemeja batik, Bu.",
+          "english": "I'm looking for a batik shirt.",
+          "feedback": "Answers her question with cari, the same word she used, and Bu is right for a stallholder older than you.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Tidak.",
+          "english": "No.",
+          "feedback": "Cari apa? isn't a yes-or-no question, and a bare tidak sounds curt. Lihat-lihat saja, ya is the friendly brush-off.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "vendor",
+      "indonesian": "Yang ini bagus, Kak. Batik asli Yogya.",
+      "english": "This one's lovely. Genuine Yogya batik.",
+      "audio": "audio/id/scenario/market-n2.mp3",
+      "options": [
+        {
+          "phraseId": "sho-01",
+          "quality": "good",
+          "feedback": "Point as you ask. Yang ini (this one) picks out the shirt she's holding.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "num-05",
+          "quality": "good",
+          "feedback": "The fuller way to ask the price. Harganya is 'its price'.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Berapa harga untuk ini?",
+          "english": "What is the price for this?",
+          "feedback": "Understood, but it's English translated word for word. Point and say Yang ini berapa, Bu?, or Berapa harganya?",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "vendor",
+      "indonesian": "Yang ini seratus lima puluh ribu, Kak.",
+      "english": "This one's a hundred and fifty thousand.",
+      "audio": "audio/id/scenario/market-n3.mp3",
+      "options": [
+        {
+          "phraseId": "sho-03",
+          "quality": "good",
+          "feedback": "Said lightly and with a smile, it's the opening move of bargaining, not an insult.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "sho-02",
+          "quality": "good",
+          "feedback": "The usual way to start bargaining: literally, may it be less?",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Terlalu mahal! Saya tidak mau.",
+          "english": "Too expensive! I don't want it.",
+          "feedback": "Blunt, and it closes the conversation instead of opening the bargaining. Keep it light: Wah, mahal sekali, then Boleh kurang?",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "vendor",
+      "indonesian": "Bisa kurang sedikit, Kak. Seratus tiga puluh, ya?",
+      "english": "I can come down a little. A hundred and thirty?",
+      "audio": "audio/id/scenario/market-n4.mp3",
+      "options": [
+        {
+          "phraseId": "sho-04",
+          "quality": "good",
+          "feedback": "Kalau plus your price is how you make an offer. Start below what you expect to pay, so there's room to meet in the middle.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "sho-05",
+          "quality": "good",
+          "feedback": "Asks for her real price straight away. Notice she dropped the ribu: at a market, seratus tiga puluh means a hundred and thirty thousand.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Lima puluh ribu.",
+          "english": "Fifty thousand.",
+          "feedback": "A bare number sounds abrupt, and a third of her price is a big leap. Wrap your offer in kalau … boleh? and keep it friendly.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "vendor",
+      "indonesian": "Seratus dua puluh ribu, ya, Kak. Itu sudah harga pas.",
+      "english": "A hundred and twenty thousand, then. That's my final price.",
+      "audio": "audio/id/scenario/market-n5.mp3",
+      "options": [
+        {
+          "phraseId": "sho-10",
+          "quality": "good",
+          "feedback": "Ambil (take) is how you say you'll buy it. She's met you partway, so this is a good place to settle.",
+          "next": "n6"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Oke, seratus dua puluh ribu, ya, Bu.",
+          "english": "OK, a hundred and twenty thousand, then.",
+          "feedback": "Repeating the price back seals the deal and makes sure you both heard the same number.",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Seratus lima belas, ya, Bu?",
+          "english": "A hundred and fifteen?",
+          "feedback": "Sudah harga pas means she won't go lower. Pushing for the last five thousand can seem stingy: it means more to her than to you.",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "vendor",
+      "indonesian": "Terima kasih, Kak. Ini kemejanya.",
+      "english": "Thank you. Here's your shirt.",
+      "audio": "audio/id/scenario/market-n6.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Ini uangnya, Bu. Terima kasih.",
+          "english": "Here's the money. Thank you.",
+          "feedback": "Hand the money over with your right hand: giving or taking things with the left is impolite.",
+          "next": "end"
+        },
+        {
+          "phraseId": "sho-11",
+          "quality": "awkward",
+          "feedback": "Market stalls are nearly always cash only. Ask how you can pay before you bargain, not after.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-26",
+          "quality": "awkward",
+          "feedback": "It sounds final, like a farewell for years. Leaving a stall, Terima kasih, Bu is all you need.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "english": "A hundred and twenty thousand, down from a hundred and fifty. Bargain with a smile: Wah, mahal sekali, then Boleh kurang?, then your own price with kalau, and settle somewhere in the middle. Once the seller agrees, it's polite to buy. Printed prices, as in shops and malls, are fixed.",
+      "end": true,
+      "options": []
+    }
+  }
+}

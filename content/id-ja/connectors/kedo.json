@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "id": "con-kedo",
+  "connector": "けど",
+  "gloss": "tapi, meskipun",
+  "title": "けど — tapi, meskipun",
+  "pattern": "A けど、B",
+  "explanation": "けど menggabungkan dua hal yang saling berlawanan: {高|たか}いけど、おいしい — mahal, tapi enak. Bedanya dengan “tapi”: けど ada di akhir bagian pertama, bukan di awal bagian kedua. けど juga melembutkan: kalimat yang diakhiri けど dibiarkan menggantung, sehingga permintaan atau penolakan terdengar lebih halus: ちょっと{聞|き}きたいんですけど… (saya mau tanya sedikit…), {行|い}きたいけど… (aku mau pergi, tapi…).",
+  "natural": "“Tapi” sehari-hari dalam percakapan, santai atau sopan (ですけど). Dengan pasangan dan teman, ini pilihan utama.",
+  "stiff": "けど adalah bahasa lisan. Dalam tulisan dan pidato resmi, pakai が (pelajaran berikutnya); けれども adalah versi yang lebih lengkap dan lebih hati-hati.",
+  "examples": [
+    {
+      "id": "cx-kedo-1",
+      "japanese": "この店は高いけど、すごくおいしい。",
+      "furigana": "この{店|みせ}は{高|たか}いけど、すごくおいしい。",
+      "indonesian": "Tempat ini mahal, tapi enak banget.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "この{店|みせ}は",
+          "w": "w-mise"
+        },
+        {
+          "t": "{高|たか}いけど、",
+          "w": "w-takai"
+        },
+        {
+          "t": "すごく"
+        },
+        {
+          "t": "おいしい。"
+        }
+      ],
+      "gap": {
+        "before": "この{店|みせ}は{高|たか}い",
+        "answer": "けど",
+        "after": "、すごくおいしい。",
+        "options": [
+          "けど",
+          "から",
+          "ので"
+        ]
+      },
+      "combine": {
+        "a": "この{店|みせ}は{高|たか}い。",
+        "b": "すごくおいしい。",
+        "distractors": [
+          "{高|たか}いから、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-kedo-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "kedo"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-kedo-2",
+      "japanese": "日本語は難しいけど、楽しいです。",
+      "furigana": "{日本語|にほんご}は{難|むずか}しいけど、{楽|たの}しいです。",
+      "indonesian": "Bahasa Jepang itu sulit, tapi menyenangkan.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本語|にほんご}は",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{難|むずか}しいけど、",
+          "w": "w-muzukashii"
+        },
+        {
+          "t": "{楽|たの}しいです。",
+          "w": "w-tanoshii"
+        }
+      ],
+      "gap": {
+        "before": "{日本語|にほんご}は{難|むずか}しい",
+        "answer": "けど",
+        "after": "、{楽|たの}しいです。",
+        "options": [
+          "けど",
+          "から",
+          "し"
+        ]
+      },
+      "combine": {
+        "a": "{日本語|にほんご}は{難|むずか}しいです。",
+        "b": "{楽|たの}しいです。",
+        "distractors": [
+          "{難|むずか}しいので、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-kedo-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "kedo"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-kedo-3",
+      "japanese": "行きたいけど、今日はちょっと…",
+      "furigana": "{行|い}きたいけど、{今日|きょう}はちょっと…",
+      "indonesian": "Aku mau sekali ikut, tapi hari ini agak…",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{行|い}きたいけど、",
+          "w": "w-iku"
+        },
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "ちょっと…",
+          "w": "w-chotto"
+        }
+      ],
+      "gap": {
+        "before": "{行|い}きたい",
+        "answer": "けど",
+        "after": "、{今日|きょう}はちょっと…",
+        "options": [
+          "けど",
+          "から",
+          "たら"
+        ],
+        "why": "けど melembutkan penolakan: kamu bahkan tidak perlu menyelesaikan kalimatnya."
+      },
+      "audio": "audio/ja/connectors/cx-kedo-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "kedo"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-kedo-4",
+      "japanese": "すみません、ちょっと聞きたいんですけど…",
+      "furigana": "すみません、ちょっと{聞|き}きたいんですけど…",
+      "indonesian": "Permisi, saya mau tanya sedikit…",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "すみません、"
+        },
+        {
+          "t": "ちょっと",
+          "w": "w-chotto"
+        },
+        {
+          "t": "{聞|き}きたいんですけど…",
+          "w": "w-kiku"
+        }
+      ],
+      "gap": {
+        "before": "すみません、ちょっと{聞|き}きたいんです",
+        "answer": "けど",
+        "after": "…",
+        "options": [
+          "けど",
+          "が",
+          "から"
+        ],
+        "ok": [
+          "が"
+        ],
+        "note": "が juga bisa, sedikit lebih formal."
+      },
+      "audio": "audio/ja/connectors/cx-kedo-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "kedo"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

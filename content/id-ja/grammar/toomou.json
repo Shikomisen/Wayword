@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-toomou",
+  "connector": "〜とおもう",
+  "gloss": "menurut saya; saya kira",
+  "title": "〜とおもう — menurut saya…",
+  "pattern": "bentuk biasa + と{思|おも}う; kata benda / kata sifat な + だと{思|おも}う",
+  "explanation": "と{思|おも}う mengubah pernyataan menjadi pendapatmu, seperti “menurut saya” atau “saya kira”, tetapi letaknya di akhir kalimat: {明日|あした}は{雨|あめ}だと{思|おも}う — kurasa besok hujan. Yang ada sebelum と memakai bentuk biasa, bahkan dalam bahasa sopan: {高|たか}いと{思|おも}います. Kata benda dan kata sifat な perlu だ: {便利|べんり}だと{思|おも}います.",
+  "natural": "Ungkapan ini memperhalus perkataanmu, dan bahasa Jepang menyukai itu: いいと{思|おも}いますよ — menurut saya sudah bagus.",
+  "stiff": "Jangan pakai です sebelum と{思|おも}う: {雨|あめ}ですと{思|おも}います salah; yang benar {雨|あめ}だと{思|おも}います. Untuk pendapat orang lain, pakai と{思|おも}っている.",
+  "examples": [
+    {
+      "id": "gx-toomou-1",
+      "japanese": "明日は雨だと思います。",
+      "furigana": "{明日|あした}は{雨|あめ}だと{思|おも}います。",
+      "indonesian": "Saya kira besok hujan.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{雨|あめ}だと",
+          "w": "w-ame"
+        },
+        {
+          "t": "{思|おも}います。",
+          "w": "w-omou"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}は{雨|あめ}",
+        "answer": "だと",
+        "after": "{思|おも}います。",
+        "options": [
+          "だと",
+          "ですと",
+          "と"
+        ],
+        "why": "Kata benda perlu だ sebelum と思う."
+      },
+      "audio": "audio/ja/grammar/gx-toomou-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "toomou"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-toomou-2",
+      "japanese": "この店、結構高いと思う。",
+      "furigana": "この{店|みせ}、{結構|けっこう}{高|たか}いと{思|おも}う。",
+      "indonesian": "Menurutku tempat ini lumayan mahal.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "この{店|みせ}、",
+          "w": "w-mise"
+        },
+        {
+          "t": "{結構|けっこう}",
+          "w": "w-kekkou"
+        },
+        {
+          "t": "{高|たか}いと{思|おも}う。",
+          "w": "w-takai"
+        }
+      ],
+      "gap": {
+        "before": "この{店|みせ}、{結構|けっこう}{高|たか}い",
+        "answer": "と",
+        "after": "{思|おも}う。",
+        "options": [
+          "と",
+          "だと",
+          "を"
+        ],
+        "why": "Kata sifat い langsung diletakkan sebelum と: 高いと思う."
+      },
+      "audio": "audio/ja/grammar/gx-toomou-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "toomou"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-toomou-3",
+      "japanese": "彼は来ないと思います。",
+      "furigana": "{彼|かれ}は{来|こ}ないと{思|おも}います。",
+      "indonesian": "Saya kira dia tidak akan datang.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{彼|かれ}は",
+          "w": "w-kare"
+        },
+        {
+          "t": "{来|こ}ないと",
+          "w": "w-kuru"
+        },
+        {
+          "t": "{思|おも}います。",
+          "w": "w-omou"
+        }
+      ],
+      "gap": {
+        "before": "{彼|かれ}は",
+        "answer": "{来|こ}ない",
+        "after": "と{思|おも}います。",
+        "options": [
+          "{来|こ}ない",
+          "{来|き}ます",
+          "{来|こ}られる"
+        ],
+        "why": "Sama seperti “saya kira dia tidak datang”, “tidak”-nya ada di dalam hal yang kamu pikirkan: 来ないと思う."
+      },
+      "audio": "audio/ja/grammar/gx-toomou-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "toomou"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-toomou-4",
+      "japanese": "日本の電車は便利だと思いませんか。",
+      "furigana": "{日本|にほん}の{電車|でんしゃ}は{便利|べんり}だと{思|おも}いませんか。",
+      "indonesian": "Tidakkah menurut Anda kereta di Jepang itu praktis?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本|にほん}の",
+          "w": "w-nihon"
+        },
+        {
+          "t": "{電車|でんしゃ}は",
+          "w": "w-densha"
+        },
+        {
+          "t": "{便利|べんり}だと",
+          "w": "w-benri"
+        },
+        {
+          "t": "{思|おも}いませんか。",
+          "w": "w-omou"
+        }
+      ],
+      "gap": {
+        "before": "{日本|にほん}の{電車|でんしゃ}は{便利|べんり}だと{思|おも}い",
+        "answer": "ませんか",
+        "after": "。",
+        "options": [
+          "ませんか",
+          "ますか",
+          "ました"
+        ],
+        "why": "Mengajak setuju: と思いませんか — tidakkah menurutmu…?"
+      },
+      "audio": "audio/ja/grammar/gx-toomou-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "toomou"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

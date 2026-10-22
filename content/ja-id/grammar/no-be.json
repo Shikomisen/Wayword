@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-no-be",
+  "connector": "Saya guru",
+  "gloss": "「です」はいらない",
+  "title": "Saya guru — 「です」はいらない",
+  "pattern": "A + B: Saya guru. · Dia capek. · Rumahnya besar.",
+  "explanation": "インドネシア語には「です」や「だ」にあたる言葉がありません。2つの言葉を並べるだけです：Saya guru は「私は先生です」（直訳すると「私 先生」）、Dia capek は「彼（彼女）は疲れています」、Rumahnya besar は「その家は大きいです」。「は」や「が」のような助詞もないので、日本語の文から「は」と「です」を取った形だと考えると簡単です。質問も同じ形で、最後を上げて言うだけ：Kamu capek?（疲れた？）",
+  "natural": "「です」なしが、話し言葉でも書き言葉でも正しい形です：Kopinya enak（コーヒーがおいしい）、Hari ini panas（今日は暑い）。日本語と同じく、言わなくても分かる主語はいりません：Mahal! だけで「（これは）高い！」になります。",
+  "stiff": "adalah という言葉もありますが、辞書の定義や式典のスピーチで使うかたい言葉です：Jakarta adalah ibu kota Indonesia（ジャカルタはインドネシアの首都である）。Saya adalah guru は教科書のように聞こえます。また、adalah は形容詞の前には使えないので、Saya adalah capek はまちがいです。ada も「です」ではありません：Saya ada capek もまちがい。",
+  "examples": [
+    {
+      "id": "gx-no-be-1",
+      "indonesian": "Saya guru.",
+      "japanese": "私は先生です。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "guru.",
+          "w": "w-guru"
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "guru",
+        "after": ".",
+        "options": [
+          "guru",
+          "ada guru",
+          "adalah guru"
+        ],
+        "ok": [
+          "adalah guru"
+        ],
+        "note": "Saya adalah guru も文法的には正しいですが、教科書のように聞こえます。ふつうは Saya guru と言います。",
+        "why": "「です」にあたる言葉はありません：Saya guru は直訳すると「私 先生」。"
+      },
+      "audio": "audio/id/grammar/gx-no-be-1.mp3",
+      "tags": [
+        "文法",
+        "「です」なし"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-no-be-2",
+      "indonesian": "Dia capek.",
+      "japanese": "彼は疲れています。",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "capek.",
+          "w": "w-capek"
+        }
+      ],
+      "gap": {
+        "before": "Dia ",
+        "answer": "capek",
+        "after": ".",
+        "options": [
+          "capek",
+          "ada capek",
+          "adalah capek"
+        ],
+        "why": "形容詞は主語のすぐ後に続けます。ada や adalah は前に置けません。"
+      },
+      "audio": "audio/id/grammar/gx-no-be-2.mp3",
+      "tags": [
+        "文法",
+        "「です」なし"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-no-be-3",
+      "indonesian": "Rumahnya besar.",
+      "japanese": "その家は大きいです。",
+      "chunks": [
+        {
+          "t": "Rumahnya ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "besar.",
+          "w": "w-besar"
+        }
+      ],
+      "gap": {
+        "before": "Rumahnya ",
+        "answer": "besar",
+        "after": ".",
+        "options": [
+          "besar",
+          "ada besar",
+          "adalah besar"
+        ],
+        "why": "ものの後に、どんな様子かを続けるだけ。間には何も入りません：Rumahnya besar。"
+      },
+      "audio": "audio/id/grammar/gx-no-be-3.mp3",
+      "tags": [
+        "文法",
+        "「です」なし"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-no-be-4",
+      "indonesian": "Teman saya orang Bali.",
+      "japanese": "友達はバリ人です。",
+      "chunks": [
+        {
+          "t": "Teman ",
+          "w": "w-teman"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "orang Bali.",
+          "w": "w-orang"
+        }
+      ],
+      "gap": {
+        "before": "Teman saya ",
+        "answer": "orang Bali",
+        "after": ".",
+        "options": [
+          "orang Bali",
+          "Bali orang",
+          "ada orang Bali"
+        ],
+        "why": "「です」はいりません。「バリ人」とは逆で、orang（人）が先：orang Bali。"
+      },
+      "audio": "audio/id/grammar/gx-no-be-4.mp3",
+      "tags": [
+        "文法",
+        "「です」なし"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

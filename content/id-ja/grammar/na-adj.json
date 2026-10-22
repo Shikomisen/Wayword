@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-na-adj",
+  "connector": "〜な",
+  "gloss": "kata sifat な: tenang, praktis, disukai",
+  "title": "〜な — kata sifat な",
+  "pattern": "〜な + kata benda / 〜です / 〜じゃないです / 〜でした",
+  "explanation": "Sebagian kata sifat memakai な di depan kata benda: {静|しず}かな{町|まち} — kota yang tenang; {便利|べんり}な{店|みせ} — toko yang praktis. Mirip “yang”, tapi urutannya kebalikan dari bahasa Indonesia. Di akhir kalimat, kata sifat ini berperilaku seperti kata benda: {静|しず}かです, {静|しず}かじゃないです, {静|しず}かでした. {好|す}き, {嫌|きら}い, {元気|げんき}, {暇|ひま}, dan きれい semuanya kata sifat な, termasuk きれい, walaupun berakhiran い.",
+  "natural": "{好|す}きな{食|た}べ{物|もの}は{何|なん}ですか — makanan kesukaan Anda apa? — adalah pertanyaan klasik di percakapan pertama.",
+  "stiff": "Tidak ada な di akhir: {静|しず}かなです salah. Dan きれい bukan kata sifat い: “tidak cantik” adalah きれいじゃない, bukan きれくない.",
+  "examples": [
+    {
+      "id": "gx-na-adj-1",
+      "japanese": "静かな町が好きです。",
+      "furigana": "{静|しず}かな{町|まち}が{好|す}きです。",
+      "romaji": "shizuka na machi ga suki desu",
+      "indonesian": "Saya suka kota yang tenang.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{静|しず}かな",
+          "w": "w-shizuka"
+        },
+        {
+          "t": "{町|まち}が",
+          "w": "w-machi"
+        },
+        {
+          "t": "{好|す}きです。",
+          "w": "w-suki"
+        }
+      ],
+      "gap": {
+        "before": "{静|しず}か",
+        "answer": "な",
+        "after": "{町|まち}が{好|す}きです。",
+        "options": [
+          "な",
+          "の",
+          "い"
+        ],
+        "why": "Di depan kata benda: 静かな."
+      },
+      "audio": "audio/ja/grammar/gx-na-adj-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "na-adj"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-na-adj-2",
+      "japanese": "好きな食べ物は何ですか。",
+      "furigana": "{好|す}きな{食|た}べ{物|もの}は{何|なん}ですか。",
+      "romaji": "suki na tabemono wa nan desu ka",
+      "indonesian": "Makanan kesukaan Anda apa?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{好|す}きな",
+          "w": "w-suki"
+        },
+        {
+          "t": "{食|た}べ{物|もの}は"
+        },
+        {
+          "t": "{何|なん}ですか。",
+          "w": "w-nani"
+        }
+      ],
+      "gap": {
+        "before": "{好|す}き",
+        "answer": "な",
+        "after": "{食|た}べ{物|もの}は{何|なん}ですか。",
+        "options": [
+          "な",
+          "の",
+          "い"
+        ],
+        "why": "好き adalah kata sifat な: 好きな食べ物."
+      },
+      "audio": "audio/ja/grammar/gx-na-adj-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "na-adj"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-na-adj-3",
+      "japanese": "昨日は暇じゃなかった。",
+      "furigana": "{昨日|きのう}は{暇|ひま}じゃなかった。",
+      "romaji": "kinō wa hima ja nakatta",
+      "indonesian": "Kemarin aku tidak senggang.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{昨日|きのう}は",
+          "w": "w-kinou"
+        },
+        {
+          "t": "{暇|ひま}じゃなかった。",
+          "w": "w-hima"
+        }
+      ],
+      "gap": {
+        "before": "{昨日|きのう}は{暇|ひま}",
+        "answer": "じゃなかった",
+        "after": "。",
+        "options": [
+          "じゃなかった",
+          "だった",
+          "じゃない"
+        ],
+        "why": "Tidak, di masa lalu: じゃなかった (sopan: じゃなかったです)."
+      },
+      "audio": "audio/ja/grammar/gx-na-adj-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "na-adj"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-na-adj-4",
+      "japanese": "この辺は便利です。",
+      "furigana": "この{辺|へん}は{便利|べんり}です。",
+      "romaji": "kono hen wa benri desu",
+      "indonesian": "Daerah ini praktis, serba dekat.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{辺|へん}は"
+        },
+        {
+          "t": "{便利|べんり}です。",
+          "w": "w-benri"
+        }
+      ],
+      "gap": {
+        "before": "この{辺|へん}は{便利|べんり}",
+        "answer": "です",
+        "after": "。",
+        "options": [
+          "です",
+          "なです",
+          "いです"
+        ],
+        "why": "Di akhir kalimat, kata sifat な memakai です, tanpa な."
+      },
+      "audio": "audio/ja/grammar/gx-na-adj-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "na-adj"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "con-kara",
+  "connector": "から",
+  "gloss": "karena, jadi",
+  "title": "から — karena, jadi",
+  "pattern": "alasan から、akibat",
+  "explanation": "から memberi alasan. Urutannya: alasan dulu, lalu から, lalu akibatnya: {雨|あめ}だから、{行|い}かない — karena hujan, aku tidak pergi. Perhatikan bedanya: “karena” ada di awal alasan (karena hujan), sedangkan から ada di akhirnya ({雨|あめ}だから). Dalam obrolan santai, pakai bentuk biasa sebelum から; dalam bahasa sopan, です/ます. Akibatnya sering tidak diucapkan: だって、{寒|さむ}いから — soalnya dingin.",
+  "natural": "“Karena” sehari-hari, yang paling sering kamu dengar di rumah. Cocok untuk alasan dan keputusanmu sendiri, saran, dan permintaan: おいしいから{食|た}べてみて (enak, lho, cobain).",
+  "stiff": "Tidak kaku, tapi bisa terdengar memaksa, atau seperti cari alasan, saat kamu minta maaf atau menjelaskan diri kepada atasan atau orang yang lebih tua. Di situ, ので (pelajaran berikutnya) lebih aman.",
+  "examples": [
+    {
+      "id": "cx-kara-1",
+      "japanese": "雨が降っているから、家にいる。",
+      "furigana": "{雨|あめ}が{降|ふ}っているから、{家|いえ}にいる。",
+      "indonesian": "Lagi hujan, jadi aku di rumah saja.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{雨|あめ}が",
+          "w": "w-ame"
+        },
+        {
+          "t": "{降|ふ}っているから、",
+          "w": "w-furu"
+        },
+        {
+          "t": "{家|いえ}に",
+          "w": "w-ie"
+        },
+        {
+          "t": "いる。"
+        }
+      ],
+      "gap": {
+        "before": "{雨|あめ}が{降|ふ}っている",
+        "answer": "から",
+        "after": "、{家|いえ}にいる。",
+        "options": [
+          "から",
+          "ので",
+          "けど",
+          "ながら"
+        ],
+        "ok": [
+          "ので"
+        ],
+        "note": "ので juga bisa, dan terdengar sedikit lebih halus.",
+        "why": "Bagian pertama adalah alasan (lagi hujan), jadi sesudahnya から. Ingat: から ada di akhir alasan, bukan di awal seperti “karena”."
+      },
+      "combine": {
+        "a": "{雨|あめ}が{降|ふ}っている。",
+        "b": "{家|いえ}にいる。",
+        "distractors": [
+          "{降|ふ}っているけど、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-kara-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "kara"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-kara-2",
+      "japanese": "疲れたから、先に寝るね。",
+      "furigana": "{疲|つか}れたから、{先|さき}に{寝|ね}るね。",
+      "indonesian": "Aku capek, jadi tidur duluan, ya.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{疲|つか}れたから、",
+          "w": "w-tsukareru"
+        },
+        {
+          "t": "{先|さき}に"
+        },
+        {
+          "t": "{寝|ね}るね。",
+          "w": "w-neru"
+        }
+      ],
+      "gap": {
+        "before": "{疲|つか}れた",
+        "answer": "から",
+        "after": "、{先|さき}に{寝|ね}るね。",
+        "options": [
+          "から",
+          "けど",
+          "たら"
+        ]
+      },
+      "combine": {
+        "a": "{疲|つか}れた。",
+        "b": "{先|さき}に{寝|ね}るね。",
+        "distractors": [
+          "{疲|つか}れたけど、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-kara-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "kara"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-kara-3",
+      "japanese": "明日は早いですから、今日はもう帰ります。",
+      "furigana": "{明日|あした}は{早|はや}いですから、{今日|きょう}はもう{帰|かえ}ります。",
+      "indonesian": "Besok saya harus berangkat pagi-pagi, jadi saya pulang sekarang.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{早|はや}いですから、"
+        },
+        {
+          "t": "{今日|きょう}はもう",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{帰|かえ}ります。",
+          "w": "w-kaeru"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}は{早|はや}いです",
+        "answer": "から",
+        "after": "、{今日|きょう}はもう{帰|かえ}ります。",
+        "options": [
+          "から",
+          "ので",
+          "けど",
+          "ながら"
+        ],
+        "ok": [
+          "ので"
+        ],
+        "note": "ので juga bisa, dan terdengar sedikit lebih halus."
+      },
+      "audio": "audio/ja/connectors/cx-kara-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "kara"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-kara-4",
+      "japanese": "おいしいから、食べてみて。",
+      "furigana": "おいしいから、{食|た}べてみて。",
+      "indonesian": "Enak banget, jadi cobain, ya.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "おいしいから、"
+        },
+        {
+          "t": "{食|た}べて",
+          "w": "w-taberu"
+        },
+        {
+          "t": "みて。"
+        }
+      ],
+      "gap": {
+        "before": "おいしい",
+        "answer": "から",
+        "after": "、{食|た}べてみて。",
+        "options": [
+          "から",
+          "でも",
+          "ながら"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-kara-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "kara"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

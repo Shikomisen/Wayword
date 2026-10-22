@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ber",
+  "connector": "ber-",
+  "gloss": "〜する・〜を持つ",
+  "title": "ber- の動詞",
+  "pattern": "ber- + 語根: bekerja, bermain, berkeluarga · 話し言葉では: kerja, main",
+  "explanation": "ber- は目的語をとらない動詞、日本語でいう自動詞のような動詞を作ります。人が何かをする、何かを持っている、という意味です：berjalan（歩く）、bekerja（働く）、bermain（遊ぶ）、berenang（泳ぐ）。名詞に付くと「〜を持つ・〜を使う」：berkeluarga（家庭を持つ）、bersepeda（自転車に乗る）、berbahaya（危ない。bahaya＝危険 から）。会話ではたいてい ber- が落ちて、語根（辞書に載っている元の形）だけが聞こえます：Kerja di mana?（どこで働いてるの？）、Main ke rumah, ya（今度うちに遊びに来てね）。ber- を付けるのは書き言葉や改まった話し方で、会話では文脈で意味がわかるので省くのです。日本語の「〜している」が話し言葉で「〜してる」になるような、書き言葉と話し言葉の差です。語根だけでは別の意味になる語や、動詞にならない語では ber- が残ります：berangkat（出発する。angkat は「持ち上げる」）、berhenti（止まる）、berkeluarga。つづりが縮む語もあるので、辞書は語根で引きます：berenang（renang）、bekerja（kerja）、belajar（ajar）。",
+  "natural": "書く時、書類、ていねいに話したい時に：役所の人への答えなら Saya bekerja di bank がぴったりです。ふだんのていねいな会話なら、短い Saya kerja di bank でも十分です。",
+  "stiff": "友達との会話で ber- を全部付けると、教科書を読んでいるように聞こえます。友達に「〜である」調で話すようなものです：Mari kita berjalan-jalan は教科書の言い方で、実際は Jalan-jalan, yuk!（ぶらぶらしようよ）。ただし名詞から来た語では落とさないこと：Dia sudah berkeluarga であって、Dia sudah keluarga とは言いません。",
+  "examples": [
+    {
+      "id": "gx-ber-1",
+      "indonesian": "Saya bekerja di bank.",
+      "japanese": "銀行で働いています。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "bekerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "di bank.",
+          "w": "w-bank"
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "bekerja",
+        "after": " di bank.",
+        "options": [
+          "bekerja",
+          "berkerja",
+          "mengerjakan"
+        ],
+        "why": "kerja の前では ber- の r が落ちて bekerja。mengerjakan は「（仕事などに）取り組む、こなす」で、目的語が必要です。"
+      },
+      "audio": "audio/id/grammar/gx-ber-1.mp3",
+      "tags": [
+        "文法",
+        "ber"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-ber-2",
+      "indonesian": "Dia sudah berkeluarga.",
+      "japanese": "彼女はもう家庭を持っています。",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "sudah ",
+          "w": "w-sudah"
+        },
+        {
+          "t": "berkeluarga.",
+          "w": "w-keluarga"
+        }
+      ],
+      "gap": {
+        "before": "Dia sudah ",
+        "answer": "berkeluarga",
+        "after": ".",
+        "options": [
+          "berkeluarga",
+          "keluarga",
+          "bekeluarga"
+        ],
+        "why": "家庭を持つのは ber- ＋ keluarga。keluarga だけでは名詞（家族）なので、話し言葉でも ber- は落としません。"
+      },
+      "audio": "audio/id/grammar/gx-ber-2.mp3",
+      "tags": [
+        "文法",
+        "ber"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-ber-3",
+      "indonesian": "Kita berangkat jam tujuh, ya.",
+      "japanese": "7時に出発しますね。",
+      "chunks": [
+        {
+          "t": "Kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "berangkat ",
+          "w": "w-berangkat"
+        },
+        {
+          "t": "jam tujuh, ",
+          "w": "w-jam"
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "gap": {
+        "before": "Kita ",
+        "answer": "berangkat",
+        "after": " jam tujuh, ya.",
+        "options": [
+          "berangkat",
+          "angkat",
+          "mengangkat"
+        ],
+        "why": "出発するは berangkat。angkat や mengangkat は「持ち上げる」なので、ber- は残ります。"
+      },
+      "audio": "audio/id/grammar/gx-ber-3.mp3",
+      "tags": [
+        "文法",
+        "ber"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ber-4",
+      "indonesian": "Kapan-kapan main ke rumah, ya.",
+      "japanese": "今度うちに遊びに来てね。",
+      "chunks": [
+        {
+          "t": "Kapan-kapan "
+        },
+        {
+          "t": "main ",
+          "w": "w-main"
+        },
+        {
+          "t": "ke rumah, ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "gap": {
+        "before": "Kapan-kapan ",
+        "answer": "main",
+        "after": " ke rumah, ya.",
+        "options": [
+          "main",
+          "bermain",
+          "mainan"
+        ],
+        "ok": [
+          "bermain"
+        ],
+        "note": "Bermain ke rumah も正しいのですが、口で誘うには教科書的に聞こえます。",
+        "why": "話し言葉では ber- が落ちます。日本語の「遊びに来る」と同じく main（遊ぶ）を使い、main ke rumah がふだんの言い方です。"
+      },
+      "audio": "audio/id/grammar/gx-ber-4.mp3",
+      "tags": [
+        "文法",
+        "ber"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

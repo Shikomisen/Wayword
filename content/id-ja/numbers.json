@@ -1,0 +1,621 @@
+{
+  "schemaVersion": 1,
+  "id": "numbers",
+  "title": "Angka, waktu & uang",
+  "order": 2,
+  "description": "Harga, jam, jumlah, dan kata bantu bilangan. Fondasi yang dibutuhkan semua kategori lain.",
+  "phrases": [
+    {
+      "id": "num-01",
+      "japanese": "いち、に、さん",
+      "furigana": [
+        {
+          "b": "いち、に、さん"
+        }
+      ],
+      "romaji": "ichi, ni, san",
+      "indonesian": "1, 2, 3",
+      "registerNotes": "Kelompok angka yang berasal dari bahasa Tionghoa, dipakai untuk uang, jam, lantai, dan sebagian besar kata bantu bilangan.",
+      "audio": "audio/ja/num-01.mp3",
+      "audioHint": "いち、に、さん",
+      "tags": [
+        "angka",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-02",
+      "japanese": "よん、ご、ろく",
+      "furigana": [
+        {
+          "b": "よん、ご、ろく"
+        }
+      ],
+      "romaji": "yon, go, roku",
+      "indonesian": "4, 5, 6",
+      "registerNotes": "Dalam hitungan sehari-hari, 4 biasanya よん; し juga ada tapi dihindari (bunyinya juga berarti 'mati').",
+      "audio": "audio/ja/num-02.mp3",
+      "audioHint": "よん、ご、ろく",
+      "tags": [
+        "angka",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-03",
+      "japanese": "なな、はち、きゅう、じゅう",
+      "furigana": [
+        {
+          "b": "なな、はち、きゅう、じゅう"
+        }
+      ],
+      "romaji": "nana, hachi, kyū, jū",
+      "indonesian": "7, 8, 9, 10",
+      "registerNotes": "7 diucapkan なな kalau berdiri sendiri (しち mudah tertukar di tempat bising); 9 diucapkan きゅう kalau sendiri, tapi く dalam 九時 (jam 9).",
+      "audio": "audio/ja/num-03.mp3",
+      "audioHint": "なな、はち、きゅう、じゅう",
+      "tags": [
+        "angka",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-04",
+      "japanese": "ひゃく、せん、まん",
+      "furigana": [
+        {
+          "b": "ひゃく、せん、まん"
+        }
+      ],
+      "romaji": "hyaku, sen, man",
+      "indonesian": "100, 1.000, 10.000",
+      "registerNotes": "Bahasa Indonesia mengelompokkan angka per seribu, bahasa Jepang per 10.000 (万). ¥30.000 adalah 三万 (san-man), bukan 'tiga puluh ribu'. Inilah kebiasaan angka yang paling sulit diubah.",
+      "audio": "audio/ja/num-04.mp3",
+      "audioHint": "ひゃく、せん、まん",
+      "tags": [
+        "angka",
+        "uang",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-05",
+      "japanese": "いくらですか",
+      "furigana": [
+        {
+          "b": "いくらですか"
+        }
+      ],
+      "romaji": "ikura desu ka",
+      "indonesian": "Berapa harganya?",
+      "registerNotes": "Tunjuk barangnya, lalu ucapkan. Bisa dipakai di mana saja.",
+      "audio": "audio/ja/num-05.mp3",
+      "audioHint": "いくらですか",
+      "tags": [
+        "uang",
+        "pertanyaan",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-06",
+      "japanese": "全部でいくらですか",
+      "furigana": [
+        {
+          "b": "全部",
+          "r": "ぜんぶ"
+        },
+        {
+          "b": "でいくらですか"
+        }
+      ],
+      "romaji": "zenbu de ikura desu ka",
+      "indonesian": "Semuanya berapa?",
+      "registerNotes": "Untuk beberapa barang sekaligus, atau tagihan yang dibayar bersama.",
+      "audio": "audio/ja/num-06.mp3",
+      "audioHint": "ぜんぶでいくらですか",
+      "tags": [
+        "uang",
+        "pertanyaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-07",
+      "japanese": "三千五百円です",
+      "furigana": [
+        {
+          "b": "三千",
+          "r": "さんぜん"
+        },
+        {
+          "b": "五百",
+          "r": "ごひゃく"
+        },
+        {
+          "b": "円",
+          "r": "えん"
+        },
+        {
+          "b": "です"
+        }
+      ],
+      "romaji": "sanzen gohyaku en desu",
+      "indonesian": "Harganya 3.500 yen.",
+      "registerNotes": "Untuk dilatih dengar — beginilah bentuk harga yang akan kamu dengar. Perhatikan: 三千 dibaca さんぜん, bukan さんせん.",
+      "audio": "audio/ja/num-07.mp3",
+      "audioHint": "さんぜんごひゃくえんです",
+      "tags": [
+        "uang",
+        "mendengar",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-08",
+      "japanese": "カードで払えますか",
+      "furigana": [
+        {
+          "b": "カードで"
+        },
+        {
+          "b": "払",
+          "r": "はら"
+        },
+        {
+          "b": "えますか"
+        }
+      ],
+      "romaji": "kādo de haraemasu ka",
+      "indonesian": "Bisa bayar pakai kartu?",
+      "registerNotes": "Tetap perlu ditanyakan — banyak restoran kecil, kuil, dan stasiun di daerah masih hanya menerima uang tunai.",
+      "audio": "audio/ja/num-08.mp3",
+      "audioHint": "カードではらえますか",
+      "tags": [
+        "uang",
+        "pertanyaan",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-09",
+      "japanese": "現金だけですか",
+      "furigana": [
+        {
+          "b": "現金",
+          "r": "げんきん"
+        },
+        {
+          "b": "だけですか"
+        }
+      ],
+      "romaji": "genkin dake desu ka",
+      "indonesian": "Hanya tunai?",
+      "registerNotes": "Kamu juga bisa melihat tulisan 現金のみ di papan — artinya sama.",
+      "audio": "audio/ja/num-09.mp3",
+      "audioHint": "げんきんだけですか",
+      "tags": [
+        "uang",
+        "pertanyaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-10",
+      "japanese": "今、何時ですか",
+      "furigana": [
+        {
+          "b": "今",
+          "r": "いま"
+        },
+        {
+          "b": "、"
+        },
+        {
+          "b": "何時",
+          "r": "なんじ"
+        },
+        {
+          "b": "ですか"
+        }
+      ],
+      "romaji": "ima, nanji desu ka",
+      "indonesian": "Sekarang jam berapa?",
+      "registerNotes": "Kepada orang yang tidak kamu kenal, awali dengan すみません.",
+      "audio": "audio/ja/num-10.mp3",
+      "audioHint": "いま、なんじですか",
+      "tags": [
+        "waktu",
+        "pertanyaan",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-11",
+      "japanese": "七時三十分です",
+      "furigana": [
+        {
+          "b": "七時",
+          "r": "しちじ"
+        },
+        {
+          "b": "三十分",
+          "r": "さんじゅっぷん"
+        },
+        {
+          "b": "です"
+        }
+      ],
+      "romaji": "shichi-ji sanjuppun desu",
+      "indonesian": "Jam 7.30.",
+      "registerNotes": "Perhatikan jam yang tidak beraturan: 4時 = よじ, 7時 = しちじ, 9時 = くじ. Menit bergantian antara ふん dan ぷん.",
+      "audio": "audio/ja/num-11.mp3",
+      "audioHint": "しちじさんじゅっぷんです",
+      "tags": [
+        "waktu",
+        "mendengar",
+        "penting"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "num-12",
+      "japanese": "何時からですか",
+      "furigana": [
+        {
+          "b": "何時",
+          "r": "なんじ"
+        },
+        {
+          "b": "からですか"
+        }
+      ],
+      "romaji": "nanji kara desu ka",
+      "indonesian": "Mulai jam berapa? / Buka jam berapa?",
+      "registerNotes": "から menandai titik awal ('dari'), tapi diletakkan di belakang: 何時から = 'dari jam berapa'. Berpasangan dengan kartu berikutnya.",
+      "audio": "audio/ja/num-12.mp3",
+      "audioHint": "なんじからですか",
+      "tags": [
+        "waktu",
+        "pertanyaan",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-13",
+      "japanese": "何時までですか",
+      "furigana": [
+        {
+          "b": "何時",
+          "r": "なんじ"
+        },
+        {
+          "b": "までですか"
+        }
+      ],
+      "romaji": "nanji made desu ka",
+      "indonesian": "Sampai jam berapa? / Tutup jam berapa?",
+      "registerNotes": "まで menandai titik akhir ('sampai'), juga di belakang: 何時まで. Penting untuk kereta terakhir dan jam tutup.",
+      "audio": "audio/ja/num-13.mp3",
+      "audioHint": "なんじまでですか",
+      "tags": [
+        "waktu",
+        "pertanyaan",
+        "penting"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-14",
+      "japanese": "午前と午後",
+      "furigana": [
+        {
+          "b": "午前",
+          "r": "ごぜん"
+        },
+        {
+          "b": "と"
+        },
+        {
+          "b": "午後",
+          "r": "ごご"
+        }
+      ],
+      "romaji": "gozen to gogo",
+      "indonesian": "a.m. dan p.m.",
+      "registerNotes": "Diletakkan di depan jam, kebalikan dari bahasa Indonesia: 午後三時 = jam 3 sore. Jadwal kebanyakan memakai format 24 jam.",
+      "audio": "audio/ja/num-14.mp3",
+      "audioHint": "ごぜんとごご",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-15",
+      "japanese": "一人です",
+      "furigana": [
+        {
+          "b": "一人",
+          "r": "ひとり"
+        },
+        {
+          "b": "です"
+        }
+      ],
+      "romaji": "hitori desu",
+      "indonesian": "Satu orang saja.",
+      "registerNotes": "Jawaban untuk 何名様ですか di pintu restoran. Mengacungkan jari sambil menjawab itu sangat wajar.",
+      "audio": "audio/ja/num-15.mp3",
+      "audioHint": "ひとりです",
+      "tags": [
+        "kata bantu bilangan",
+        "restoran",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-16",
+      "japanese": "二人です",
+      "furigana": [
+        {
+          "b": "二人",
+          "r": "ふたり"
+        },
+        {
+          "b": "です"
+        }
+      ],
+      "romaji": "futari desu",
+      "indonesian": "Berdua.",
+      "registerNotes": "1 dan 2 orang tidak beraturan (ひとり / ふたり). Mulai 3 beraturan: さんにん, よにん, ごにん.",
+      "audio": "audio/ja/num-16.mp3",
+      "audioHint": "ふたりです",
+      "tags": [
+        "kata bantu bilangan",
+        "restoran",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-17",
+      "japanese": "一つ、二つ、三つ",
+      "furigana": [
+        {
+          "b": "一",
+          "r": "ひと"
+        },
+        {
+          "b": "つ、"
+        },
+        {
+          "b": "二",
+          "r": "ふた"
+        },
+        {
+          "b": "つ、"
+        },
+        {
+          "b": "三",
+          "r": "みっ"
+        },
+        {
+          "b": "つ"
+        }
+      ],
+      "romaji": "hitotsu, futatsu, mittsu",
+      "indonesian": "satu buah, dua buah, tiga buah",
+      "registerNotes": "Kata bantu bilangan serbaguna, mirip 'buah' dalam bahasa Indonesia. Kalau kamu tidak tahu kata bantu khusus untuk suatu benda, yang ini selalu bisa dipakai.",
+      "audio": "audio/ja/num-17.mp3",
+      "audioHint": "ひとつ、ふたつ、みっつ",
+      "tags": [
+        "kata bantu bilangan",
+        "penting"
+      ],
+      "difficulty": 2,
+      "usage": "Bunyi baru: つ (tsu) seperti 'ts' dalam tsunami; ふ dalam ふたつ diucapkan di antara 'fu' dan 'hu', dengan bibir tidak bersentuhan; dan っ kecil dalam みっつ adalah jeda sesaat sebelum つ."
+    },
+    {
+      "id": "num-18",
+      "japanese": "これを二つお願いします",
+      "furigana": [
+        {
+          "b": "これを"
+        },
+        {
+          "b": "二",
+          "r": "ふた"
+        },
+        {
+          "b": "つお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いします"
+        }
+      ],
+      "romaji": "kore o futatsu onegai shimasu",
+      "indonesian": "Yang ini dua, ya.",
+      "registerNotes": "Tunjuk + jumlah + お願いします. Satu pola kalimat ini mencakup hampir semua urusan memesan dan membeli.",
+      "audio": "audio/ja/num-18.mp3",
+      "audioHint": "これをふたつおねがいします",
+      "tags": [
+        "kata bantu bilangan",
+        "permintaan",
+        "penting"
+      ],
+      "difficulty": 2,
+      "usage": "Bahasa Indonesia meletakkan jumlah di depan ('dua kopi'), bahasa Jepang biasanya sesudah benda dan partikelnya: これを二つ."
+    },
+    {
+      "id": "num-19",
+      "japanese": "今日、明日、昨日",
+      "furigana": [
+        {
+          "b": "今日",
+          "r": "きょう"
+        },
+        {
+          "b": "、"
+        },
+        {
+          "b": "明日",
+          "r": "あした"
+        },
+        {
+          "b": "、"
+        },
+        {
+          "b": "昨日",
+          "r": "きのう"
+        }
+      ],
+      "romaji": "kyō, ashita, kinō",
+      "indonesian": "hari ini, besok, kemarin",
+      "registerNotes": "明日 juga dibaca あす dalam pengumuman dan prakiraan cuaca — kata yang sama, lebih formal.",
+      "audio": "audio/ja/num-19.mp3",
+      "audioHint": "きょう、あした、きのう",
+      "tags": [
+        "waktu",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "num-20",
+      "japanese": "三日間泊まります",
+      "furigana": [
+        {
+          "b": "三日間",
+          "r": "みっかかん"
+        },
+        {
+          "b": "泊",
+          "r": "と"
+        },
+        {
+          "b": "まります"
+        }
+      ],
+      "romaji": "mikkakan tomarimasu",
+      "indonesian": "Saya menginap tiga hari.",
+      "registerNotes": "Menjawab pertanyaan di imigrasi maupun saat check-in hotel. 日間 menghitung rentang hari.",
+      "audio": "audio/ja/num-20.mp3",
+      "audioHint": "みっかかんとまります",
+      "tags": [
+        "waktu",
+        "hotel",
+        "bertahan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "num-21",
+      "japanese": "五分ぐらいです",
+      "furigana": [
+        {
+          "b": "五分",
+          "r": "ごふん"
+        },
+        {
+          "b": "ぐらいです"
+        }
+      ],
+      "romaji": "gofun gurai desu",
+      "indonesian": "Sekitar lima menit.",
+      "registerNotes": "ぐらい = 'sekitar', tapi diletakkan setelah angka. Sangat sering muncul dalam petunjuk arah — 歩いて十分ぐらい, 'sekitar sepuluh menit jalan kaki'.",
+      "audio": "audio/ja/num-21.mp3",
+      "audioHint": "ごふんぐらいです",
+      "tags": [
+        "waktu",
+        "mendengar"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-22",
+      "japanese": "ちょうどです",
+      "furigana": [
+        {
+          "b": "ちょうどです"
+        }
+      ],
+      "romaji": "chōdo desu",
+      "indonesian": "Uangnya pas.",
+      "registerNotes": "Ucapkan saat menyerahkan uang dengan jumlah pas. Kamu juga akan mendengar balasan ちょうどお預かりします.",
+      "audio": "audio/ja/num-22.mp3",
+      "audioHint": "ちょうどです",
+      "tags": [
+        "uang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "num-23",
+      "japanese": "領収書をお願いします",
+      "furigana": [
+        {
+          "b": "領収書",
+          "r": "りょうしゅうしょ"
+        },
+        {
+          "b": "をお"
+        },
+        {
+          "b": "願",
+          "r": "ねが"
+        },
+        {
+          "b": "いします"
+        }
+      ],
+      "romaji": "ryōshūsho o onegai shimasu",
+      "indonesian": "Minta kuitansinya.",
+      "registerNotes": "領収書 adalah kuitansi resmi yang dirinci; struk dari kasir disebut レシート. Mintalah 領収書 kalau kamu memerlukannya untuk tax-free atau klaim biaya kantor.",
+      "audio": "audio/ja/num-23.mp3",
+      "audioHint": "りょうしゅうしょをおねがいします",
+      "tags": [
+        "uang",
+        "permintaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "num-24",
+      "japanese": "両替できますか",
+      "furigana": [
+        {
+          "b": "両替",
+          "r": "りょうがえ"
+        },
+        {
+          "b": "できますか"
+        }
+      ],
+      "romaji": "ryōgae dekimasu ka",
+      "indonesian": "Bisa tukar uang? / Bisa dipecah?",
+      "registerNotes": "Berguna untuk memecah uang kertas ¥10.000, yang tidak diterima banyak toko kecil dan loker koin.",
+      "audio": "audio/ja/num-24.mp3",
+      "audioHint": "りょうがえできますか",
+      "tags": [
+        "uang",
+        "pertanyaan"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

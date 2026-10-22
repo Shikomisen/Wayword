@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-teiru",
+  "connector": "〜ている",
+  "gloss": "sedang; keadaan",
+  "title": "〜ている — sedang, dan keadaan",
+  "pattern": "kata kerja bentuk て + いる / います",
+  "explanation": "Tambahkan いる (sopan: います) pada bentuk て kata kerja. Artinya sesuatu sedang berlangsung, seperti “sedang”: {今|いま}、{料理|りょうり}をしています (saya sedang memasak). Bisa juga kebiasaan akhir-akhir ini: {毎日|まいにち}{日本語|にほんご}を{勉強|べんきょう}しています (setiap hari saya belajar bahasa Jepang). Dengan beberapa kata kerja, artinya keadaan, yang dalam bahasa Indonesia sering memakai “sudah”: {結婚|けっこん}しています (saya sudah menikah), {知|し}っています (saya tahu).",
+  "natural": "Dalam bahasa santai, い hilang: {何|なに}してる？ — sedang apa?",
+  "stiff": "“Saya tahu” adalah {知|し}っています, tidak pernah {知|し}ります. Tapi “saya tidak tahu” adalah {知|し}りません, bukan {知|し}っていません.",
+  "examples": [
+    {
+      "id": "gx-teiru-1",
+      "japanese": "今、料理をしています。",
+      "furigana": "{今|いま}、{料理|りょうり}をしています。",
+      "romaji": "ima, ryōri o shite imasu",
+      "indonesian": "Saya sedang memasak sekarang.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{今|いま}、",
+          "w": "w-ima"
+        },
+        {
+          "t": "{料理|りょうり}を",
+          "w": "w-ryouri"
+        },
+        {
+          "t": "しています。",
+          "w": "w-suru"
+        }
+      ],
+      "gap": {
+        "before": "{今|いま}、{料理|りょうり}をして",
+        "answer": "います",
+        "after": "。",
+        "options": [
+          "います",
+          "あります",
+          "ます"
+        ],
+        "why": "Sedang dilakukan sekarang: て + いる."
+      },
+      "audio": "audio/ja/grammar/gx-teiru-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "teiru"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-teiru-2",
+      "japanese": "今、何してる？",
+      "furigana": "{今|いま}、{何|なに}してる？",
+      "romaji": "ima, nani shiteru?",
+      "indonesian": "Sekarang sedang apa?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今|いま}、",
+          "w": "w-ima"
+        },
+        {
+          "t": "{何|なに}",
+          "w": "w-nani"
+        },
+        {
+          "t": "してる？",
+          "w": "w-suru"
+        }
+      ],
+      "gap": {
+        "before": "{今|いま}、{何|なに}",
+        "answer": "してる",
+        "after": "？",
+        "options": [
+          "してる",
+          "した",
+          "する"
+        ],
+        "why": "Sedang, sekarang: してる, bentuk santai dari している."
+      },
+      "audio": "audio/ja/grammar/gx-teiru-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "teiru"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-teiru-3",
+      "japanese": "兄は東京で働いています。",
+      "furigana": "{兄|あに}は{東京|とうきょう}で{働|はたら}いています。",
+      "romaji": "ani wa Tōkyō de hataraite imasu",
+      "indonesian": "Kakak laki-laki saya bekerja di Tokyo.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{兄|あに}は",
+          "w": "w-ani"
+        },
+        {
+          "t": "{東京|とうきょう}で"
+        },
+        {
+          "t": "{働|はたら}いています。",
+          "w": "w-hataraku"
+        }
+      ],
+      "gap": {
+        "before": "{兄|あに}は{東京|とうきょう}で{働|はたら}いて",
+        "answer": "います",
+        "after": "。",
+        "options": [
+          "います",
+          "あります",
+          "ました"
+        ],
+        "why": "Kegiatannya akhir-akhir ini: ています."
+      },
+      "audio": "audio/ja/grammar/gx-teiru-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "teiru"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-teiru-4",
+      "japanese": "その人を知っていますか。",
+      "furigana": "その{人|ひと}を{知|し}っていますか。",
+      "romaji": "sono hito o shitte imasu ka",
+      "indonesian": "Anda kenal orang itu?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "その{人|ひと}を",
+          "w": "w-hito"
+        },
+        {
+          "t": "{知|し}っていますか。",
+          "w": "w-shiru"
+        }
+      ],
+      "gap": {
+        "before": "その{人|ひと}を{知|し}って",
+        "answer": "いますか",
+        "after": "。",
+        "options": [
+          "いますか",
+          "ますか",
+          "ありますか"
+        ],
+        "why": "Kenal atau tahu adalah keadaan: 知っています."
+      },
+      "audio": "audio/ja/grammar/gx-teiru-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "teiru"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

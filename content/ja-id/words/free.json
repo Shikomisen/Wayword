@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "words-free",
+  "title": "余暇",
+  "description": "楽しみのためにすること：お出かけ、映画、音楽、スポーツ、そして週末。",
+  "items": [
+    {
+      "id": "w-jalan-jalan",
+      "indonesian": "jalan-jalan",
+      "japanese": "出かける、散歩する；あちこち旅行する",
+      "pos": "verb",
+      "registerNotes": "ちょっとした散歩から旅行まで何でも。Mau ke mana?（どちらへ？）への定番の答えは Jalan-jalan saja（ちょっとぶらぶら）です。",
+      "audio": "audio/id/words/w-jalan-jalan.mp3",
+      "tags": [
+        "余暇",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-nonton",
+      "indonesian": "nonton",
+      "japanese": "見る（映画、テレビ、試合を）",
+      "pos": "verb",
+      "forms": {
+        "root": "tonton"
+      },
+      "registerNotes": "誰もが使う言葉です：nonton film、nonton TV。書き言葉では menonton。",
+      "audio": "audio/id/words/w-nonton.mp3",
+      "tags": [
+        "余暇"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-film",
+      "indonesian": "film",
+      "japanese": "映画",
+      "pos": "noun",
+      "registerNotes": "映画館は bioskop：nonton di bioskop（映画館で見る）。",
+      "audio": "audio/id/words/w-film.mp3",
+      "tags": [
+        "余暇"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-musik",
+      "indonesian": "musik",
+      "japanese": "音楽",
+      "pos": "noun",
+      "cultureNote": "ダンドゥット（dangdut）はマレーとインドの音楽にルーツを持つポップスで、バスの中や結婚式、通りの流しの演奏でよく耳にします。",
+      "audio": "audio/id/words/w-musik.mp3",
+      "tags": [
+        "余暇"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-lagu",
+      "indonesian": "lagu",
+      "japanese": "歌、曲",
+      "pos": "noun",
+      "registerNotes": "「歌う」は nyanyi、書き言葉では menyanyi。友達とのカラオケは人気の夜の遊びです。",
+      "audio": "audio/id/words/w-lagu.mp3",
+      "tags": [
+        "余暇"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-main",
+      "indonesian": "main",
+      "japanese": "遊ぶ；遊びに行く、訪ねる",
+      "pos": "verb",
+      "registerNotes": "Main ke rumah, ya（うちに遊びに来てね）のように、訪問にも main を使います。日本語の「遊びに来て」と同じ発想です。書き言葉では bermain。",
+      "audio": "audio/id/words/w-main.mp3",
+      "tags": [
+        "余暇"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-olahraga",
+      "indonesian": "olahraga",
+      "japanese": "スポーツ、運動；運動する",
+      "pos": "noun",
+      "registerNotes": "動詞にもなります：Saya olahraga setiap pagi（毎朝運動しています）。サッカーは sepak bola ですが、ふつうは bola だけ：nonton bola（サッカーを見る）。",
+      "audio": "audio/id/words/w-olahraga.mp3",
+      "tags": [
+        "余暇",
+        "健康"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-berenang",
+      "indonesian": "berenang",
+      "japanese": "泳ぐ",
+      "pos": "verb",
+      "forms": {
+        "root": "renang"
+      },
+      "registerNotes": "プールは kolam renang。くだけた会話では renang だけでも使います：Ayo renang（泳ごう）。",
+      "audio": "audio/id/words/w-berenang.mp3",
+      "tags": [
+        "余暇"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-foto",
+      "indonesian": "foto",
+      "japanese": "写真；写真を撮る",
+      "pos": "noun",
+      "registerNotes": "人を撮る前には聞きましょう：Boleh foto?（写真を撮ってもいいですか？）",
+      "cultureNote": "観光地では、外国人が一緒に写真を撮ってほしいと頼まれることがあります（foto bareng）。",
+      "audio": "audio/id/words/w-foto.mp3",
+      "tags": [
+        "余暇",
+        "旅行"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-liburan",
+      "indonesian": "liburan",
+      "japanese": "休暇、バカンス",
+      "pos": "noun",
+      "registerNotes": "liburan ke Bali はバリでの休暇。Saya di sini untuk liburan（休暇で来ています）。libur だけだと「休みの日」です。",
+      "audio": "audio/id/words/w-liburan.mp3",
+      "tags": [
+        "余暇",
+        "旅行"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-nongkrong",
+      "indonesian": "nongkrong",
+      "japanese": "たむろする、ぶらぶら過ごす",
+      "pos": "verb",
+      "registerNotes": "くだけた言葉で、友達と warung kopi やカフェで何時間も過ごすこと。年上の人には kumpul dengan teman（友達と集まる）と言いましょう。",
+      "audio": "audio/id/words/w-nongkrong.mp3",
+      "tags": [
+        "余暇",
+        "くだけた言い方"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-baca",
+      "indonesian": "baca",
+      "japanese": "読む",
+      "pos": "verb",
+      "registerNotes": "普段使いの形です：Saya suka baca（読書が好きです）。書き言葉では membaca。",
+      "audio": "audio/id/words/w-baca.mp3",
+      "tags": [
+        "余暇"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hobi",
+      "indonesian": "hobi",
+      "japanese": "趣味",
+      "pos": "noun",
+      "registerNotes": "Hobinya apa?（趣味は何ですか？）は、知り合うときによく聞かれる質問です。",
+      "audio": "audio/id/words/w-hobi.mp3",
+      "tags": [
+        "余暇"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-akhir-pekan",
+      "indonesian": "akhir pekan",
+      "japanese": "週末",
+      "pos": "noun",
+      "registerNotes": "英語のまま weekend と言う人も多いです。",
+      "pitfallNote": "Malam Minggu は直訳すると「日曜の夜」ですが、土曜の夜のことです。日曜の前夜で、遊びに出かける夜です。",
+      "audio": "audio/id/words/w-akhir-pekan.mp3",
+      "tags": [
+        "余暇",
+        "時間"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

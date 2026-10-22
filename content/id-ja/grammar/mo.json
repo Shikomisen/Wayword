@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-mo",
+  "connector": "も",
+  "gloss": "juga",
+  "title": "も — juga",
+  "pattern": "A も … (menggantikan は, が, atau を)",
+  "explanation": "も artinya “juga”, dan menggantikan は, が, atau を: {私|わたし}も{行|い}きます — saya juga pergi; コーヒーも{飲|の}みます — saya minum kopi juga. Sama seperti “juga”, も ada sesudah kata yang dimaksud: {私|わたし}も = saya juga. Dengan bentuk negatif, artinya “juga tidak”: {私|わたし}も{分|わ}かりません — saya juga tidak tahu.",
+  "natural": "Cara sehari-hari untuk setuju: {私|わたし}も！ — saya juga! も bisa ditumpuk sesudah に dan で: {東京|とうきょう}にも{行|い}きたい — saya juga ingin pergi ke Tokyo.",
+  "stiff": "Jangan pertahankan partikel yang digantikan: {私|わたし}はも dan コーヒーをも salah. (に, で, dan から tetap ada: にも, でも, からも.)",
+  "examples": [
+    {
+      "id": "gx-mo-1",
+      "japanese": "明日、私も行きます。",
+      "furigana": "{明日|あした}、{私|わたし}も{行|い}きます。",
+      "romaji": "ashita, watashi mo ikimasu",
+      "indonesian": "Besok saya juga pergi.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}、",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{私|わたし}も",
+          "w": "w-watashi"
+        },
+        {
+          "t": "{行|い}きます。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}、{私|わたし}",
+        "answer": "も",
+        "after": "{行|い}きます。",
+        "options": [
+          "も",
+          "は",
+          "を"
+        ],
+        "why": "Saya juga: 私も."
+      },
+      "audio": "audio/ja/grammar/gx-mo-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "mo"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-mo-2",
+      "japanese": "妹も日本語を勉強しています。",
+      "furigana": "{妹|いもうと}も{日本語|にほんご}を{勉強|べんきょう}しています。",
+      "romaji": "imōto mo nihongo o benkyō shite imasu",
+      "indonesian": "Adik perempuan saya juga belajar bahasa Jepang.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{妹|いもうと}も",
+          "w": "w-imouto"
+        },
+        {
+          "t": "{日本語|にほんご}を",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{勉強|べんきょう}しています。",
+          "w": "w-benkyou"
+        }
+      ],
+      "gap": {
+        "before": "{妹|いもうと}",
+        "answer": "も",
+        "after": "{日本語|にほんご}を{勉強|べんきょう}しています。",
+        "options": [
+          "も",
+          "は",
+          "の"
+        ],
+        "why": "Dia juga belajar: も, menggantikan は."
+      },
+      "audio": "audio/ja/grammar/gx-mo-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "mo"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-mo-3",
+      "japanese": "うーん、私も分からない。",
+      "furigana": "うーん、{私|わたし}も{分|わ}からない。",
+      "romaji": "ūn, watashi mo wakaranai",
+      "indonesian": "Hmm, aku juga tidak tahu.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "うーん、"
+        },
+        {
+          "t": "{私|わたし}も",
+          "w": "w-watashi"
+        },
+        {
+          "t": "{分|わ}からない。",
+          "w": "w-wakaru"
+        }
+      ],
+      "gap": {
+        "before": "うーん、{私|わたし}",
+        "answer": "も",
+        "after": "{分|わ}からない。",
+        "options": [
+          "も",
+          "が",
+          "を"
+        ],
+        "why": "Juga tidak: も dengan bentuk negatif."
+      },
+      "audio": "audio/ja/grammar/gx-mo-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "mo"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-mo-4",
+      "japanese": "肉も魚も好きです。",
+      "furigana": "{肉|にく}も{魚|さかな}も{好|す}きです。",
+      "romaji": "niku mo sakana mo suki desu",
+      "indonesian": "Daging dan ikan, saya suka dua-duanya.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{肉|にく}も",
+          "w": "w-niku"
+        },
+        {
+          "t": "{魚|さかな}も",
+          "w": "w-sakana"
+        },
+        {
+          "t": "{好|す}きです。",
+          "w": "w-suki"
+        }
+      ],
+      "gap": {
+        "before": "{肉|にく}も{魚|さかな}",
+        "answer": "も",
+        "after": "{好|す}きです。",
+        "options": [
+          "も",
+          "が",
+          "を"
+        ],
+        "why": "A も B も: A maupun B, dua-duanya."
+      },
+      "audio": "audio/ja/grammar/gx-mo-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "mo"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 1,
+  "id": "greetings",
+  "title": "あいさつ・礼儀",
+  "order": 1,
+  "description": "時間帯ごとのあいさつ、ありがとうとごめんなさい、別れのあいさつ、そして Bapak・Ibu・Mas・Mbak を使った呼びかけ。毎日、だれにでも使う言葉です。",
+  "phrases": [
+    {
+      "id": "gre-01",
+      "indonesian": "Selamat pagi.",
+      "japanese": "おはようございます。",
+      "registerNotes": "早朝から午前11時ごろまで。返事も同じで、Selamat pagi、または Pagi だけでも大丈夫です。",
+      "audio": "audio/id/gre-01.mp3",
+      "tags": [
+        "あいさつ",
+        "必須"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "selamat の最初の e は短いあいまいな音で、「セラマット」より「スラマッ」に近く聞こえます。最後の t には母音をつけず、舌で止めるだけです。"
+    },
+    {
+      "id": "gre-02",
+      "indonesian": "Selamat siang.",
+      "japanese": "こんにちは。（昼前〜午後3時ごろ）",
+      "registerNotes": "午前11時ごろから午後3時ごろまで、一日でいちばん暑い時間帯です。",
+      "pitfallNote": "日本語の「こんにちは」は夕方まで使えますが、siang は昼の時間だけ。午後3時を過ぎたら selamat sore に変わります。",
+      "audio": "audio/id/gre-02.mp3",
+      "tags": [
+        "あいさつ",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-03",
+      "indonesian": "Selamat sore.",
+      "japanese": "こんにちは。（午後〜夕方）",
+      "registerNotes": "午後3時ごろから暗くなるまで。赤道に近いので、一年中だいたい午後6時ごろに暗くなります。",
+      "audio": "audio/id/gre-03.mp3",
+      "tags": [
+        "あいさつ",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-04",
+      "indonesian": "Selamat malam.",
+      "japanese": "こんばんは。／おやすみなさい。",
+      "registerNotes": "暗くなってから、会った時にも別れる時にも使います。寝る前の「おやすみなさい」は selamat tidur です。",
+      "audio": "audio/id/gre-04.mp3",
+      "tags": [
+        "あいさつ",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-05",
+      "indonesian": "Pagi, Bu.",
+      "japanese": "おはようございます。（年上の女性に）",
+      "registerNotes": "selamat を省くと、温かく日常的なあいさつになります。近所の人、店員さん、同僚に。Siang, Pak や Sore, Bu も同じように使えます。",
+      "cultureNote": "Bapak（Pak）と Ibu（Bu）はもともと「父」「母」という意味で、自分より年上の大人や、店員さん・運転手・役人など立場のある人への呼びかけに使います。敬意をこめた「〜さん」のような感覚で、つけるだけでていねいに聞こえます。",
+      "audio": "audio/id/gre-05.mp3",
+      "tags": [
+        "あいさつ",
+        "呼びかけ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-06",
+      "indonesian": "Apa kabar?",
+      "japanese": "お元気ですか？",
+      "registerNotes": "直訳は「何の知らせ？」。知り合いや、きちんと会う相手に。年上の人には呼びかけをつけて Apa kabar, Pak? と言います。",
+      "pitfallNote": "すれちがいざまの軽いあいさつではないので、レジの店員さんには言いません。近所の人とは、道で会うと Mau ke mana? とあいさつします。",
+      "audio": "audio/id/gre-06.mp3",
+      "tags": [
+        "あいさつ",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-07",
+      "indonesian": "Baik, terima kasih.",
+      "japanese": "元気です、ありがとう。",
+      "registerNotes": "Apa kabar? へのふつうの答え。Kabar baik（「いい知らせです」）は少しきちんとした言い方です。聞き返す時は Bapak sendiri bagaimana? や Ibu sendiri bagaimana?（そちらはいかがですか？）を続けます。",
+      "audio": "audio/id/gre-07.mp3",
+      "tags": [
+        "あいさつ",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-08",
+      "indonesian": "Terima kasih.",
+      "japanese": "ありがとうございます。",
+      "registerNotes": "どこでも、だれにでも使えます。Terima kasih banyak は「どうもありがとうございます」、makasih はくだけた短い形です。",
+      "audio": "audio/id/gre-08.mp3",
+      "tags": [
+        "お礼",
+        "必須"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "terima の r は舌先を軽くはじく（ふるわせる）音、selamat の l は舌先を上の歯ぐきにつけたまま出す音です。日本語のラ行は一つですが、インドネシア語では l と r で別の言葉になります：lupa（忘れる）と rupa（姿）。"
+    },
+    {
+      "id": "gre-09",
+      "indonesian": "Sama-sama.",
+      "japanese": "どういたしまして。",
+      "registerNotes": "terima kasih へのふだんの返事で、だれにでも使えます。Kembali（「お返しします」）と言われることもあり、こちらは少しあらたまった言い方です。",
+      "audio": "audio/id/gre-09.mp3",
+      "tags": [
+        "お礼",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-10",
+      "indonesian": "Maaf.",
+      "japanese": "ごめんなさい。／すみません。（謝る時）",
+      "registerNotes": "謝る時のほか、質問や訂正の前置きにも使います：Maaf, boleh tanya?（すみません、ちょっと聞いてもいいですか？）。Mohon maaf はあらたまった言い方です。",
+      "pitfallNote": "日本語の「すみません」は呼びかけにも使いますが、人のそばを通る時や店員さんを呼ぶ時は permisi です。maaf は、自分が悪いことをした時や、これから相手に手間をかける時の言葉です。",
+      "audio": "audio/id/gre-10.mp3",
+      "tags": [
+        "おわび",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-11",
+      "indonesian": "Permisi.",
+      "japanese": "すみません。（呼びかけ・通してもらう時）",
+      "registerNotes": "人に声をかける時、前を通らせてもらう時、玄関やお店で「ごめんください」と声をかける時に。帰る時にも Permisi, Bu と言います。",
+      "cultureNote": "座っている人の前を通る時は、少し身をかがめ、右腕を低く出しながら permisi と言います。日本で手刀を切りながら「すみません」と通るのに似ています。",
+      "audio": "audio/id/gre-11.mp3",
+      "tags": [
+        "ていねいさ",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-12",
+      "indonesian": "Tolong bicara pelan-pelan, ya.",
+      "japanese": "ゆっくり話してください。",
+      "registerNotes": "Tolong（「助けて」）を動詞の前に置くと、相手に何かをしてもらう頼み方になります。最後の ya でやわらかくなります。Pak や Bu をつけると、さらにていねいです。",
+      "pitfallNote": "日本語の「〜してください」は文の最後ですが、tolong は文の最初に置きます。Tolong だけを叫ぶと「助けて！」の意味になります。",
+      "audio": "audio/id/gre-12.mp3",
+      "tags": [
+        "お願い",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-13",
+      "indonesian": "Silakan.",
+      "japanese": "どうぞ。",
+      "registerNotes": "相手にすすめる時の言葉：先をゆずる、席をすすめる、食事を始めてもらう。お客さんとして Silakan masuk（どうぞお入りください）や Silakan duduk（どうぞおかけください）をよく聞きます。",
+      "pitfallNote": "Silakan は相手自身がすることを「どうぞ」とすすめる言葉、tolong は自分のために「〜してください」と頼む言葉です。正しいつづりは silakan ですが、看板では silahkan もよく見かけます。",
+      "audio": "audio/id/gre-13.mp3",
+      "tags": [
+        "ていねいさ",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-14",
+      "indonesian": "Mari makan.",
+      "japanese": "どうぞ、ご一緒に。（食事中に人が来た時）",
+      "registerNotes": "Mari はていねいな「〜しましょう」で、くだけた言い方では ayo。Mari, Pak だけなら、通りすぎる時のていねいな「では、失礼します」にもなります。",
+      "cultureNote": "食事中にだれかが来たら、Mari makan と声をかけるのが礼儀です。本当に誘っているわけではない社交辞令で、返事はたいてい Silakan, silakan（どうぞ、どうぞ）。日本の「よかったらどうぞ」に近い感覚です。",
+      "audio": "audio/id/gre-14.mp3",
+      "tags": [
+        "ていねいさ",
+        "食べ物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-15",
+      "indonesian": "Nama saya Emma.",
+      "japanese": "私の名前はエマです。",
+      "registerNotes": "自分の名前を入れて使います。あらたまった場では Perkenalkan（「自己紹介させてください」）から始めます：Perkenalkan, nama saya Emma.",
+      "pitfallNote": "「です」にあたる言葉はありません。また、持ち主は後ろに来ます：nama saya は直訳すると「名前・私の」で、日本語の「私の名前」とは逆の順番です。",
+      "audio": "audio/id/gre-15.mp3",
+      "tags": [
+        "自己紹介",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-16",
+      "indonesian": "Maaf, namanya siapa?",
+      "japanese": "すみません、お名前は？",
+      "registerNotes": "Namanya（「その名前」）を使うと、「あなた」にあたる言葉を選ばずにすみます。日本語で「あなた」を避けるのと同じ感覚です。年上の人には Nama Bapak siapa? や Nama Ibu siapa? と聞きます。",
+      "pitfallNote": "名前は apa（何）ではなく siapa（だれ）で聞きます。",
+      "audio": "audio/id/gre-16.mp3",
+      "tags": [
+        "自己紹介",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-17",
+      "indonesian": "Senang bertemu dengan Anda.",
+      "japanese": "お会いできてうれしいです。",
+      "registerNotes": "初対面で使える、ていねいで無難な言い方。年上の人には Anda を Bapak や Ibu に変えます：Senang bertemu dengan Ibu.",
+      "pitfallNote": "Anda はていねいですが、面と向かうと少し事務的に聞こえます。日本語の「あなた」と同じで、インドネシアの人はふつう相手の名前や Bapak・Ibu を使います。",
+      "audio": "audio/id/gre-17.mp3",
+      "tags": [
+        "自己紹介"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-18",
+      "indonesian": "Salam kenal.",
+      "japanese": "よろしくお願いします。（自己紹介の時）",
+      "registerNotes": "直訳は「知り合いのあいさつ」。名前を言った後、特にグループに向けてや最初のメッセージで言います。親しみがありつつ、ていねいです。",
+      "audio": "audio/id/gre-18.mp3",
+      "tags": [
+        "自己紹介"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "日本語の「よろしくお願いします」とちがい、使うのは初めて知り合う時だけです。何かを頼む時の「よろしく」には使えません。"
+    },
+    {
+      "id": "gre-19",
+      "indonesian": "Terima kasih, Mbak.",
+      "japanese": "ありがとうございます。（若い女性に）",
+      "registerNotes": "サービスをしてくれた人には、呼びかけをつけてお礼を言います：Terima kasih, Pak / Bu / Mas / Mbak。terima kasih だけでも大丈夫です。",
+      "cultureNote": "Mas（若い男性に）と Mbak（若い女性に）は、ジャカルタやジャワで、自分と同じくらいの年の店員さん・ウェイター・運転手に使う呼びかけです。年上なら Pak と Bu。ほかの地域では Kak が無難で親しみやすい言い方です。",
+      "audio": "audio/id/gre-19.mp3",
+      "tags": [
+        "お礼",
+        "呼びかけ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-20",
+      "indonesian": "Ya.",
+      "japanese": "はい。",
+      "registerNotes": "Iya も同じ意味で、少しやわらかく、話し言葉でとてもよく使います。文の最後の ya は、日本語の「〜ね」のように文をやわらげます。",
+      "pitfallNote": "ya は「賛成です」より「聞いています」の意味のことが多いです。日本語の「はい、はい」の感覚で何にでも ya と言うと、何かを引き受けたと受け取られることがあります。",
+      "audio": "audio/id/gre-20.mp3",
+      "tags": [
+        "はい・いいえ",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-21",
+      "indonesian": "Tidak, terima kasih.",
+      "japanese": "いいえ、けっこうです。",
+      "registerNotes": "物売りや運転手のすすめを、笑顔で断る時に。Tidak usah, terima kasih（「いりません、ありがとう」）も同じくらいよく使います。",
+      "pitfallNote": "Tidak は「〜しない」「〜ではない（状態）」の否定。「それではない」と名詞を打ち消す時は bukan を使います：Ini kopi? Bukan, ini teh.",
+      "audio": "audio/id/gre-21.mp3",
+      "tags": [
+        "はい・いいえ",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-22",
+      "indonesian": "Sampai jumpa.",
+      "japanese": "またね。／さようなら。",
+      "registerNotes": "いちばん万能な別れのあいさつ。Sampai jumpa lagi は「また会いましょう」、sampai besok は「また明日」、友だちとは sampai ketemu。",
+      "audio": "audio/id/gre-22.mp3",
+      "tags": [
+        "別れ",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-23",
+      "register": "casual",
+      "indonesian": "Dadah!",
+      "japanese": "バイバイ！",
+      "polite": {
+        "indonesian": "Sampai jumpa.",
+        "audio": "audio/id/casual/gre-23-polite.mp3"
+      },
+      "registerNotes": "手をふりながら、友だちや子どもに。Bapak や Ibu と呼ぶ相手には使いません。",
+      "audio": "audio/id/casual/gre-23.mp3",
+      "tags": [
+        "別れ",
+        "くだけた言い方"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gre-24",
+      "indonesian": "Saya permisi dulu.",
+      "japanese": "そろそろ失礼します。",
+      "registerNotes": "家・お店・集まりから帰る時のていねいな言い方。Dulu（「先に」）でやわらかくなり、日本語の「お先に失礼します」によく似ています。友だちには Aku duluan, ya。",
+      "cultureNote": "黙って帰ることはまずありません。ホストや年上の人に、帰ることをひと言伝えるのがマナーです。",
+      "audio": "audio/id/gre-24.mp3",
+      "tags": [
+        "別れ",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-25",
+      "indonesian": "Selamat jalan.",
+      "japanese": "お気をつけて。／さようなら。（見送る時）",
+      "registerNotes": "去っていく人に言う言葉：駅や空港で、訪問の終わりに。直訳は「安全な道を」。",
+      "audio": "audio/id/gre-25.mp3",
+      "tags": [
+        "別れ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gre-26",
+      "indonesian": "Selamat tinggal.",
+      "japanese": "さようなら。（残る人に）",
+      "registerNotes": "去る人が、残る人に言う言葉。直訳は「安全な滞在を」。",
+      "pitfallNote": "長いお別れのように重く聞こえます。日本語の「さようなら」と同じです。ふだんの別れには Saya permisi dulu か Sampai jumpa を。",
+      "audio": "audio/id/gre-26.mp3",
+      "tags": [
+        "別れ"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

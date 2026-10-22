@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-teoku",
+  "connector": "〜ておく",
+  "gloss": "melakukan lebih dulu; membiarkan apa adanya",
+  "title": "〜ておく — siapkan sekarang, untuk nanti",
+  "pattern": "bentuk て kata kerja + おく (santai: 〜とく)",
+  "explanation": "ておく berarti melakukan sesuatu lebih dulu, sebagai persiapan, seperti “dulu” dalam “aku pesan dulu”: {予約|よやく}しておく — memesan tempat dulu. Bisa juga berarti membiarkan sesuatu tetap begitu: {窓|まど}を{開|あ}けておいて — biarkan jendelanya terbuka. Percakapan santai menyingkatnya jadi とく: {買|か}っとく — nanti aku belikan dulu.",
+  "natural": "Untuk merencanakan dan membantu: {飲|の}み{物|もの}、{買|か}っておきますね — minumannya saya belikan dulu, ya.",
+  "stiff": "{予約|よやく}しておきます dan {予約|よやく}します sama-sama benar, tetapi tanpa ておく tidak ada nuansa “sebagai persiapan untuk nanti”.",
+  "examples": [
+    {
+      "id": "gx-teoku-1",
+      "japanese": "お店を予約しておきました。",
+      "furigana": "お{店|みせ}を{予約|よやく}しておきました。",
+      "indonesian": "Restorannya sudah saya pesan.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "お{店|みせ}を",
+          "w": "w-mise"
+        },
+        {
+          "t": "{予約|よやく}して",
+          "w": "w-yoyaku"
+        },
+        {
+          "t": "おきました。"
+        }
+      ],
+      "gap": {
+        "before": "お{店|みせ}を{予約|よやく}して",
+        "answer": "おきました",
+        "after": "。",
+        "options": [
+          "おきました",
+          "しまいました",
+          "みました"
+        ],
+        "why": "Dilakukan lebih dulu, siap untuk nanti: ておく."
+      },
+      "audio": "audio/ja/grammar/gx-teoku-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "teoku"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-teoku-2",
+      "japanese": "窓を開けておいてください。",
+      "furigana": "{窓|まど}を{開|あ}けておいてください。",
+      "indonesian": "Tolong biarkan jendelanya terbuka.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{窓|まど}を",
+          "w": "w-mado"
+        },
+        {
+          "t": "{開|あ}けて"
+        },
+        {
+          "t": "おいてください。"
+        }
+      ],
+      "gap": {
+        "before": "{窓|まど}を{開|あ}けて",
+        "answer": "おいて",
+        "after": "ください。",
+        "options": [
+          "おいて",
+          "みて",
+          "しまって"
+        ],
+        "why": "Biarkan tetap begitu: ておく."
+      },
+      "audio": "audio/ja/grammar/gx-teoku-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "teoku"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-teoku-3",
+      "japanese": "明日までに調べとくね。",
+      "furigana": "{明日|あした}までに{調|しら}べとくね。",
+      "indonesian": "Paling lambat besok aku cari tahu, ya.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{明日|あした}までに",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{調|しら}べとくね。",
+          "w": "w-shiraberu"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}までに{調|しら}べ",
+        "answer": "とく",
+        "after": "ね。",
+        "options": [
+          "とく",
+          "ちゃう",
+          "てみる"
+        ],
+        "why": "ておく yang santai: とく."
+      },
+      "audio": "audio/ja/grammar/gx-teoku-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "teoku"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-teoku-4",
+      "japanese": "出かける前に、天気を見ておこう。",
+      "furigana": "{出|で}かける{前|まえ}に、{天気|てんき}を{見|み}ておこう。",
+      "indonesian": "Sebelum keluar, kita cek cuaca dulu, yuk.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{出|で}かける{前|まえ}に、",
+          "w": "w-dekakeru"
+        },
+        {
+          "t": "{天気|てんき}を",
+          "w": "w-tenki"
+        },
+        {
+          "t": "{見|み}ておこう。",
+          "w": "w-miru"
+        }
+      ],
+      "gap": {
+        "before": "{出|で}かける{前|まえ}に、{天気|てんき}を{見|み}て",
+        "answer": "おこう",
+        "after": "。",
+        "options": [
+          "おこう",
+          "しまおう",
+          "いよう"
+        ],
+        "why": "Mengecek lebih dulu: ておこう."
+      },
+      "audio": "audio/ja/grammar/gx-teoku-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "teoku"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

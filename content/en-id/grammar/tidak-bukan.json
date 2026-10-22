@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-tidak-bukan",
+  "connector": "tidak / bukan",
+  "gloss": "not",
+  "title": "tidak and bukan — not",
+  "pattern": "tidak + verb or describing word · bukan + noun · …, bukan?",
+  "explanation": "Indonesian has two words for 'not', and the word after it decides which. Tidak goes before verbs and describing words: Saya tidak makan daging (I don't eat meat), Ini tidak pedas (This isn't spicy). Bukan goes before nouns, to say what something isn't: Saya bukan guru (I'm not a teacher), Ini bukan kopi (This isn't coffee). In casual speech tidak becomes nggak, but bukan stays bukan.",
+  "natural": "Bukan on the end turns a sentence into a check, like 'isn't it?' or 'right?': Ini hotelnya, bukan? (This is the hotel, isn't it?). In speech that tag is usually cut to kan, or swapped for a soft ya.",
+  "stiff": "Tidak before a noun is the classic mistake: Saya tidak guru is wrong; it's Saya bukan guru. Nggak is for friends: with an older stranger or at an office, say tidak.",
+  "examples": [
+    {
+      "id": "gx-tidak-bukan-1",
+      "indonesian": "Saya tidak makan daging.",
+      "english": "I don't eat meat.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tidak ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "makan ",
+          "w": "w-makan"
+        },
+        {
+          "t": "daging.",
+          "w": "w-daging"
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "tidak",
+        "after": " makan daging.",
+        "options": [
+          "tidak",
+          "bukan",
+          "belum"
+        ],
+        "why": "Makan is a verb, so 'not' is tidak."
+      },
+      "audio": "audio/id/grammar/gx-tidak-bukan-1.mp3",
+      "tags": [
+        "grammar",
+        "tidak-bukan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-tidak-bukan-2",
+      "indonesian": "Ini bukan tas saya.",
+      "english": "This isn't my bag.",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "bukan ",
+          "w": "w-bukan"
+        },
+        {
+          "t": "tas ",
+          "w": "w-tas"
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "Ini ",
+        "answer": "bukan",
+        "after": " tas saya.",
+        "options": [
+          "bukan",
+          "tidak"
+        ],
+        "why": "Tas saya is a noun, so 'not' is bukan."
+      },
+      "audio": "audio/id/grammar/gx-tidak-bukan-2.mp3",
+      "tags": [
+        "grammar",
+        "tidak-bukan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-tidak-bukan-3",
+      "register": "casual",
+      "indonesian": "Kamu nggak capek?",
+      "english": "Aren't you tired?",
+      "chunks": [
+        {
+          "t": "Kamu ",
+          "w": "w-kamu"
+        },
+        {
+          "t": "nggak "
+        },
+        {
+          "t": "capek?",
+          "w": "w-capek"
+        }
+      ],
+      "gap": {
+        "before": "Kamu ",
+        "answer": "nggak",
+        "after": " capek?",
+        "options": [
+          "nggak",
+          "bukan"
+        ],
+        "why": "Capek is a describing word, so it takes nggak, the casual tidak."
+      },
+      "audio": "audio/id/grammar/gx-tidak-bukan-3.mp3",
+      "tags": [
+        "grammar",
+        "tidak-bukan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-tidak-bukan-4",
+      "indonesian": "Bapak orang Jakarta, bukan?",
+      "english": "You're from Jakarta, aren't you?",
+      "chunks": [
+        {
+          "t": "Bapak ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "orang Jakarta, ",
+          "w": "w-orang"
+        },
+        {
+          "t": "bukan?",
+          "w": "w-bukan"
+        }
+      ],
+      "gap": {
+        "before": "Bapak orang Jakarta, ",
+        "answer": "bukan",
+        "after": "?",
+        "options": [
+          "bukan",
+          "tidak",
+          "ya"
+        ],
+        "ok": [
+          "ya"
+        ],
+        "note": "Ya works too, as a softer and more everyday tag.",
+        "why": "Orang Jakarta is a noun, so the tag is bukan, 'isn't that so?'."
+      },
+      "audio": "audio/id/grammar/gx-tidak-bukan-4.mp3",
+      "tags": [
+        "grammar",
+        "tidak-bukan"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

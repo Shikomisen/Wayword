@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "id": "words-things",
+  "title": "Things Around You",
+  "description": "Everyday things at home and when you're out: the house and its rooms, what's in your bag, and getting around.",
+  "items": [
+    {
+      "id": "w-rumah",
+      "indonesian": "rumah",
+      "english": "house, home",
+      "pos": "noun",
+      "registerNotes": "Di rumah is 'at home'. It also turns up in compounds: rumah makan (restaurant), rumah sakit (hospital, literally 'sick house').",
+      "audio": "audio/id/words/w-rumah.mp3",
+      "tags": [
+        "home",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kamar",
+      "indonesian": "kamar",
+      "english": "room, bedroom",
+      "pos": "noun",
+      "registerNotes": "Usually a room you sleep in, including a hotel room: kamar nomor dua. A living room is ruang tamu.",
+      "audio": "audio/id/words/w-kamar.mp3",
+      "tags": [
+        "home",
+        "hotel"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pintu",
+      "indonesian": "pintu",
+      "english": "door",
+      "pos": "noun",
+      "registerNotes": "On signs: pintu masuk (entrance), pintu keluar (exit).",
+      "audio": "audio/id/words/w-pintu.mp3",
+      "tags": [
+        "home"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-meja",
+      "indonesian": "meja",
+      "english": "table; desk",
+      "pos": "noun",
+      "registerNotes": "In a restaurant, meja untuk dua orang is a table for two.",
+      "audio": "audio/id/words/w-meja.mp3",
+      "tags": [
+        "home"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kursi",
+      "indonesian": "kursi",
+      "english": "chair, seat",
+      "pos": "noun",
+      "registerNotes": "Also a seat on a bus or a plane. Kursi ini kosong? asks 'Is this seat free?'",
+      "audio": "audio/id/words/w-kursi.mp3",
+      "tags": [
+        "home"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tas",
+      "indonesian": "tas",
+      "english": "bag",
+      "pos": "noun",
+      "audio": "audio/id/words/w-tas.mp3",
+      "tags": [
+        "things"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-uang",
+      "indonesian": "uang",
+      "english": "money",
+      "pos": "noun",
+      "registerNotes": "Uang kembalian is change, and uang pas the exact amount. Friends say duit.",
+      "audio": "audio/id/words/w-uang.mp3",
+      "tags": [
+        "money",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hp",
+      "indonesian": "HP",
+      "english": "mobile phone",
+      "pos": "noun",
+      "registerNotes": "Said 'ha-pe', short for handphone. Nomor HP is a mobile number. The formal word is ponsel.",
+      "audio": "audio/id/words/w-hp.mp3",
+      "audioHint": "ha pe",
+      "tags": [
+        "things",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kunci",
+      "indonesian": "kunci",
+      "english": "key; lock",
+      "pos": "noun",
+      "registerNotes": "Kunci kamar is the room key. It's also the verb to lock: Kunci pintunya, ya (Lock the door, won't you).",
+      "audio": "audio/id/words/w-kunci.mp3",
+      "tags": [
+        "things",
+        "home"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-buku",
+      "indonesian": "buku",
+      "english": "book; notebook",
+      "pos": "noun",
+      "pitfallNote": "Nouns don't change for plural: buku is one book or many, and two books is dua buku.",
+      "audio": "audio/id/words/w-buku.mp3",
+      "tags": [
+        "things"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-mobil",
+      "indonesian": "mobil",
+      "english": "car",
+      "pos": "noun",
+      "registerNotes": "Naik mobil is to go by car; naik is the verb for riding in or on any vehicle.",
+      "audio": "audio/id/words/w-mobil.mp3",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-motor",
+      "indonesian": "motor",
+      "english": "motorbike, scooter",
+      "pos": "noun",
+      "registerNotes": "Short for sepeda motor, the usual way to get around. An ojek is a motorbike taxi.",
+      "audio": "audio/id/words/w-motor.mp3",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-air",
+      "indonesian": "air",
+      "english": "water",
+      "pos": "noun",
+      "pitfallNote": "Two syllables, a-ir, and nothing to do with English air. To drink, ask for air putih, or air mineral for bottled water.",
+      "audio": "audio/id/words/w-air.mp3",
+      "tags": [
+        "things",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-baju",
+      "indonesian": "baju",
+      "english": "clothes; shirt, top",
+      "pos": "noun",
+      "registerNotes": "Both a single top and clothes in general: ganti baju, to get changed. Baju batik is a batik shirt.",
+      "audio": "audio/id/words/w-baju.mp3",
+      "tags": [
+        "clothes"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sepatu",
+      "indonesian": "sepatu",
+      "english": "shoe, shoes",
+      "pos": "noun",
+      "cultureNote": "Take your shoes off before going into a house or a mosque; a pile of shoes and sandals at the door is your cue.",
+      "audio": "audio/id/words/w-sepatu.mp3",
+      "tags": [
+        "clothes"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-barang",
+      "indonesian": "barang",
+      "english": "things, stuff; belongings; goods",
+      "pos": "noun",
+      "registerNotes": "Barang saya is my things or my luggage. In a shop, barang are the goods for sale.",
+      "audio": "audio/id/words/w-barang.mp3",
+      "tags": [
+        "things"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kamar-mandi",
+      "indonesian": "kamar mandi",
+      "english": "bathroom",
+      "pos": "noun",
+      "registerNotes": "The room for washing, which usually has the toilet in it too. In public, ask Toiletnya di mana? or Kamar kecilnya di mana?",
+      "cultureNote": "Expect a wet floor and a water spray or dipper by the toilet, often with no toilet paper.",
+      "audio": "audio/id/words/w-kamar-mandi.mp3",
+      "tags": [
+        "home",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tempat-tidur",
+      "indonesian": "tempat tidur",
+      "english": "bed",
+      "pos": "noun",
+      "registerNotes": "Literally 'place to sleep'. Kasur, the mattress, is often used for the bed too.",
+      "audio": "audio/id/words/w-tempat-tidur.mp3",
+      "tags": [
+        "home"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-jalan",
+      "indonesian": "jalan",
+      "english": "road, street; way",
+      "pos": "noun",
+      "registerNotes": "Street names start with Jalan, written Jl.: Jalan Sudirman. In speech it's also a verb, to walk or go: jalan kaki, to go on foot.",
+      "audio": "audio/id/words/w-jalan.mp3",
+      "tags": [
+        "places",
+        "transport"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-toko",
+      "indonesian": "toko",
+      "english": "shop, store",
+      "pos": "noun",
+      "registerNotes": "Toko buku is a bookshop and toko roti a bakery. A small family shop or food stall is a warung.",
+      "audio": "audio/id/words/w-toko.mp3",
+      "tags": [
+        "places",
+        "shopping"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

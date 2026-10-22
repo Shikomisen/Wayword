@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-di-ke-dari",
+  "connector": "di, ke, dari",
+  "gloss": "at, to, from",
+  "title": "di, ke, dari — at, to, from",
+  "pattern": "di … (at, in) · ke … (to) · dari … (from)",
+  "explanation": "Three short words show place: di is where something is or happens (at, in, on), ke is where you're going (to), and dari is where you've come from (from). Saya tinggal di Wellington (I live in Wellington), Saya mau ke pasar (I'm going to the market), Saya dari Selandia Baru (I'm from New Zealand). They join the place words sini (here), situ (there, near you) and sana (over there), and the question word mana: di sini, ke sana, dari mana? With ke, the verb 'go' is usually left out: Mau ke mana? is 'Where are you going?'",
+  "natural": "Mau ke mana? (Where are you off to?) is how neighbours greet you in the street, and a vague Ke sana (Over there) or Jalan-jalan (Just out for a walk) is a perfectly good answer. Dari mana? can also mean 'Where have you been?'",
+  "stiff": "Di for 'to' is the commonest slip: going to the market is ke pasar, while di pasar is being there. The place word di is written apart (di rumah), unlike di- joined to a verb, as in dibungkus (wrapped).",
+  "examples": [
+    {
+      "id": "gx-di-ke-dari-1",
+      "indonesian": "Saya tinggal di Wellington.",
+      "english": "I live in Wellington.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di ",
+          "w": "w-di"
+        },
+        {
+          "t": "Wellington."
+        }
+      ],
+      "gap": {
+        "before": "Saya tinggal ",
+        "answer": "di",
+        "after": " Wellington.",
+        "options": [
+          "di",
+          "ke",
+          "dari"
+        ],
+        "why": "Where you live is where you are: di."
+      },
+      "audio": "audio/id/grammar/gx-di-ke-dari-1.mp3",
+      "tags": [
+        "grammar",
+        "di-ke-dari"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-di-ke-dari-2",
+      "indonesian": "Kami mau ke pantai.",
+      "english": "We're going to the beach.",
+      "chunks": [
+        {
+          "t": "Kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "ke ",
+          "w": "w-ke"
+        },
+        {
+          "t": "pantai.",
+          "w": "w-pantai"
+        }
+      ],
+      "gap": {
+        "before": "Kami mau ",
+        "answer": "ke",
+        "after": " pantai.",
+        "options": [
+          "ke",
+          "di",
+          "dari"
+        ],
+        "why": "Where you're going: ke."
+      },
+      "audio": "audio/id/grammar/gx-di-ke-dari-2.mp3",
+      "tags": [
+        "grammar",
+        "di-ke-dari"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-di-ke-dari-3",
+      "indonesian": "Kami dari Selandia Baru.",
+      "english": "We're from New Zealand.",
+      "chunks": [
+        {
+          "t": "Kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "dari ",
+          "w": "w-dari"
+        },
+        {
+          "t": "Selandia Baru.",
+          "w": "w-baru"
+        }
+      ],
+      "gap": {
+        "before": "Kami ",
+        "answer": "dari",
+        "after": " Selandia Baru.",
+        "options": [
+          "dari",
+          "di",
+          "ke"
+        ],
+        "why": "Where you come from: dari."
+      },
+      "audio": "audio/id/grammar/gx-di-ke-dari-3.mp3",
+      "tags": [
+        "grammar",
+        "di-ke-dari"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-di-ke-dari-4",
+      "indonesian": "Dari sini ke bandara jauh?",
+      "english": "Is it far from here to the airport?",
+      "chunks": [
+        {
+          "t": "Dari sini ",
+          "w": "w-dari"
+        },
+        {
+          "t": "ke bandara ",
+          "w": "w-bandara"
+        },
+        {
+          "t": "jauh?",
+          "w": "w-jauh"
+        }
+      ],
+      "gap": {
+        "before": "Dari sini ",
+        "answer": "ke",
+        "after": " bandara jauh?",
+        "options": [
+          "ke",
+          "di",
+          "dari"
+        ],
+        "why": "From here to the airport: dari sini, then ke bandara."
+      },
+      "audio": "audio/id/grammar/gx-di-ke-dari-4.mp3",
+      "tags": [
+        "grammar",
+        "di-ke-dari"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

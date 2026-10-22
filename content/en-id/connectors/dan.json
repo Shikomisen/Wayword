@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "id": "con-dan",
+  "connector": "dan",
+  "gloss": "and",
+  "title": "dan — and",
+  "pattern": "A dan B · … dengan …",
+  "explanation": "dan joins two things, two describing words or two whole sentences, just like English and: sayur dan buah (vegetables and fruit), besar dan bersih (big and clean), Saya kerja di bank dan istri saya guru. In a list it goes before the last item only: kopi, teh, dan air putih. The one thing dan can't mean is with: for being or going with someone, Indonesian uses dengan (Saya pergi dengan teman), and in everyday speech sama (Saya pergi sama teman).",
+  "natural": "Lists, pairs of describing words and two related facts, in any register. Between two short sentences people often just pause instead: Saya guru, istri saya dokter.",
+  "stiff": "Don't use dan to string actions together in order (I got up and showered and left): for one thing after another, lalu or terus sounds natural. And Saya pergi dan teman doesn't mean I went with a friend; say dengan teman, or sama teman.",
+  "examples": [
+    {
+      "id": "cx-dan-1",
+      "indonesian": "Kemarin saya beli sayur dan buah di pasar.",
+      "english": "Yesterday I bought vegetables and fruit at the market.",
+      "chunks": [
+        {
+          "t": "Kemarin saya beli ",
+          "w": "w-beli"
+        },
+        {
+          "t": "sayur ",
+          "w": "w-sayur"
+        },
+        {
+          "t": "dan ",
+          "w": "w-dan"
+        },
+        {
+          "t": "buah ",
+          "w": "w-buah"
+        },
+        {
+          "t": "di pasar.",
+          "w": "w-pasar"
+        }
+      ],
+      "gap": {
+        "before": "Kemarin saya beli sayur ",
+        "answer": "dan",
+        "after": " buah di pasar.",
+        "options": [
+          "dan",
+          "atau",
+          "tapi"
+        ],
+        "why": "You bought both, so dan joins them, as and does in English."
+      },
+      "combine": {
+        "a": "Kemarin saya beli sayur di pasar.",
+        "b": "Saya juga beli buah.",
+        "distractors": [
+          "atau "
+        ]
+      },
+      "alsoOrders": [
+        [
+          0,
+          3,
+          2,
+          1,
+          4
+        ]
+      ],
+      "audio": "audio/id/connectors/cx-dan-1.mp3",
+      "tags": [
+        "connectors",
+        "dan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-dan-2",
+      "indonesian": "Kamarnya besar dan bersih.",
+      "english": "The room is big and clean.",
+      "chunks": [
+        {
+          "t": "Kamarnya ",
+          "w": "w-kamar"
+        },
+        {
+          "t": "besar ",
+          "w": "w-besar"
+        },
+        {
+          "t": "dan ",
+          "w": "w-dan"
+        },
+        {
+          "t": "bersih.",
+          "w": "w-bersih"
+        }
+      ],
+      "gap": {
+        "before": "Kamarnya besar ",
+        "answer": "dan",
+        "after": " bersih.",
+        "options": [
+          "dan",
+          "tapi",
+          "atau"
+        ],
+        "why": "Two good things side by side take dan; tapi would need a contrast, as in besar tapi kotor."
+      },
+      "combine": {
+        "a": "Kamarnya besar.",
+        "b": "Kamarnya bersih.",
+        "distractors": [
+          "tapi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-dan-2.mp3",
+      "tags": [
+        "connectors",
+        "dan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-dan-3",
+      "indonesian": "Saya kerja di bank dan istri saya guru.",
+      "english": "I work at a bank, and my wife's a teacher.",
+      "chunks": [
+        {
+          "t": "Saya kerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "di bank ",
+          "w": "w-bank"
+        },
+        {
+          "t": "dan ",
+          "w": "w-dan"
+        },
+        {
+          "t": "istri saya ",
+          "w": "w-istri"
+        },
+        {
+          "t": "guru.",
+          "w": "w-guru"
+        }
+      ],
+      "gap": {
+        "before": "Saya kerja di bank ",
+        "answer": "dan",
+        "after": " istri saya guru.",
+        "options": [
+          "dan",
+          "dengan",
+          "atau"
+        ],
+        "why": "Two whole sentences join with dan; dengan only means with."
+      },
+      "combine": {
+        "a": "Saya kerja di bank.",
+        "b": "Istri saya guru.",
+        "distractors": [
+          "dengan "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-dan-3.mp3",
+      "tags": [
+        "connectors",
+        "dan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-dan-4",
+      "indonesian": "Besok saya mau ke pantai dengan teman-teman.",
+      "english": "Tomorrow I'm going to the beach with some friends.",
+      "chunks": [
+        {
+          "t": "Besok ",
+          "w": "w-besok"
+        },
+        {
+          "t": "saya mau ",
+          "w": "w-saya"
+        },
+        {
+          "t": "ke pantai ",
+          "w": "w-pantai"
+        },
+        {
+          "t": "dengan "
+        },
+        {
+          "t": "teman-teman.",
+          "w": "w-teman"
+        }
+      ],
+      "gap": {
+        "before": "Besok saya mau ke pantai ",
+        "answer": "dengan",
+        "after": " teman-teman.",
+        "options": [
+          "dengan",
+          "dan",
+          "sama"
+        ],
+        "ok": [
+          "sama"
+        ],
+        "note": "sama means with here too, and it's what most people say in everyday speech.",
+        "why": "Going together with someone is dengan; dan only joins two equal things, as in saya dan teman saya."
+      },
+      "audio": "audio/id/connectors/cx-dan-4.mp3",
+      "tags": [
+        "connectors",
+        "dan"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

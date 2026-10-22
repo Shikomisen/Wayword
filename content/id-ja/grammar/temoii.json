@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-temoii",
+  "connector": "〜てもいい",
+  "gloss": "boleh",
+  "title": "〜てもいい — boleh…?",
+  "pattern": "bentuk て kata kerja + もいい(ですか)",
+  "explanation": "てもいい memberi atau meminta izin, sama dengan “boleh”: {座|すわ}ってもいいですか — boleh saya duduk? Jawab ya dengan どうぞ (silakan), atau いいですよ. Dengan bentuk negatif, なくてもいい berarti “tidak perlu” (dua pelajaran lagi).",
+  "natural": "Untuk bertanya dengan sopan di toko, rumah, dan kantor: {写真|しゃしん}を{撮|と}ってもいいですか; {窓|まど}を{開|あ}けてもいい？",
+  "stiff": "Menjawab dengan だめです sangat blak-blakan, seperti “tidak boleh!”. ちょっと…, atau すみません、ここはちょっと…, adalah cara menolak halus yang biasa.",
+  "examples": [
+    {
+      "id": "gx-temoii-1",
+      "japanese": "ここに座ってもいいですか。",
+      "furigana": "ここに{座|すわ}ってもいいですか。",
+      "indonesian": "Boleh saya duduk di sini?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "ここに",
+          "w": "w-koko"
+        },
+        {
+          "t": "{座|すわ}っても"
+        },
+        {
+          "t": "いいですか。"
+        }
+      ],
+      "gap": {
+        "before": "ここに{座|すわ}っても",
+        "answer": "いいですか",
+        "after": "。",
+        "options": [
+          "いいですか",
+          "いけませんか",
+          "だめですか"
+        ],
+        "why": "Meminta izin: てもいいですか."
+      },
+      "audio": "audio/ja/grammar/gx-temoii-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "temoii"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-temoii-2",
+      "japanese": "写真を撮ってもいいですか。",
+      "furigana": "{写真|しゃしん}を{撮|と}ってもいいですか。",
+      "indonesian": "Boleh saya memotret?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{写真|しゃしん}を",
+          "w": "w-shashin"
+        },
+        {
+          "t": "{撮|と}っても"
+        },
+        {
+          "t": "いいですか。"
+        }
+      ],
+      "gap": {
+        "before": "{写真|しゃしん}を{撮|と}って",
+        "answer": "も",
+        "after": "いいですか。",
+        "options": [
+          "も",
+          "は",
+          "が"
+        ],
+        "why": "て + も + いい: “walaupun saya memotret, tidak apa-apa?”"
+      },
+      "audio": "audio/ja/grammar/gx-temoii-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "temoii"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-temoii-3",
+      "japanese": "窓、開けてもいい？",
+      "furigana": "{窓|まど}、{開|あ}けてもいい？",
+      "indonesian": "Jendelanya boleh kubuka?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{窓|まど}、",
+          "w": "w-mado"
+        },
+        {
+          "t": "{開|あ}けても"
+        },
+        {
+          "t": "いい？"
+        }
+      ],
+      "gap": {
+        "before": "{窓|まど}、",
+        "answer": "{開|あ}けても",
+        "after": "いい？",
+        "options": [
+          "{開|あ}けても",
+          "{開|あ}けて",
+          "{開|あ}けたら"
+        ],
+        "ok": [
+          "{開|あ}けて"
+        ],
+        "note": "開けていい？ juga bisa: percakapan santai sering membuang も.",
+        "why": "Izin memakai て + も."
+      },
+      "audio": "audio/ja/grammar/gx-temoii-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "temoii"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-temoii-4",
+      "japanese": "試着してもいいですか。",
+      "furigana": "{試着|しちゃく}してもいいですか。",
+      "indonesian": "Boleh saya coba pakai?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{試着|しちゃく}しても",
+          "w": "w-shichaku"
+        },
+        {
+          "t": "いいですか。"
+        }
+      ],
+      "gap": {
+        "before": "{試着|しちゃく}して",
+        "answer": "も",
+        "after": "いいですか。",
+        "options": [
+          "も",
+          "は",
+          "を"
+        ],
+        "why": "Mencoba pakaian: 試着してもいいですか."
+      },
+      "audio": "audio/ja/grammar/gx-temoii-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "temoii"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

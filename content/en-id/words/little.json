@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "id": "words-little",
+  "title": "Little Words",
+  "description": "I, you, he and she, this and that, the question words, and ada. Tiny words that hold every sentence together.",
+  "items": [
+    {
+      "id": "w-saya",
+      "indonesian": "saya",
+      "english": "I, me; my",
+      "pos": "pronoun",
+      "registerNotes": "The safe, polite 'I' for strangers, shops, elders and work. After a noun it means my: rumah saya, my house.",
+      "audio": "audio/id/words/w-saya.mp3",
+      "tags": [
+        "pronouns",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-aku",
+      "indonesian": "aku",
+      "english": "I, me (casual)",
+      "pos": "pronoun",
+      "registerNotes": "With friends, a partner, family of your own age, and children. With anyone you don't know or who is older, say saya.",
+      "pitfallNote": "Aku goes with kamu. With someone you'd call Bapak or Ibu, stick to saya.",
+      "audio": "audio/id/words/w-aku.mp3",
+      "tags": [
+        "pronouns",
+        "casual"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kamu",
+      "indonesian": "kamu",
+      "english": "you (casual)",
+      "pos": "pronoun",
+      "registerNotes": "For friends, people your age or younger, and children. To an older person or a stranger it's too familiar: use their name, or Bapak or Ibu, instead.",
+      "audio": "audio/id/words/w-kamu.mp3",
+      "tags": [
+        "pronouns",
+        "casual"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-anda",
+      "indonesian": "Anda",
+      "english": "you (polite)",
+      "pos": "pronoun",
+      "registerNotes": "Polite but impersonal: you'll see it on signs, forms and ads, always with a capital A. Face to face, people say Bapak, Ibu or the person's name instead: Ibu mau ke mana? rather than Anda mau ke mana?",
+      "audio": "audio/id/words/w-anda.mp3",
+      "tags": [
+        "pronouns",
+        "polite"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dia",
+      "indonesian": "dia",
+      "english": "he, she; him, her",
+      "pos": "pronoun",
+      "pitfallNote": "One word for both, so dia alone doesn't say whether it's a man or a woman. It's for people, not things.",
+      "audio": "audio/id/words/w-dia.mp3",
+      "tags": [
+        "pronouns",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kami",
+      "indonesian": "kami",
+      "english": "we, us (not including you)",
+      "pos": "pronoun",
+      "pitfallNote": "Kami leaves out the person you're talking to; kita includes them. To your host: Kami dari Selandia Baru (We're from New Zealand), because your host isn't one of 'us'.",
+      "audio": "audio/id/words/w-kami.mp3",
+      "tags": [
+        "pronouns"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kita",
+      "indonesian": "kita",
+      "english": "we, us (including you)",
+      "pos": "pronoun",
+      "registerNotes": "Includes the person you're talking to: Kita makan di mana? (Where shall we eat?). In casual speech, especially in Jakarta, many people use kita for kami too.",
+      "audio": "audio/id/words/w-kita.mp3",
+      "tags": [
+        "pronouns"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mereka",
+      "indonesian": "mereka",
+      "english": "they, them",
+      "pos": "pronoun",
+      "registerNotes": "For people, not things. After a noun it means their: rumah mereka, their house.",
+      "audio": "audio/id/words/w-mereka.mp3",
+      "tags": [
+        "pronouns"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ini",
+      "indonesian": "ini",
+      "english": "this; these",
+      "pos": "pronoun",
+      "pitfallNote": "Where it goes matters. Before a noun it makes a sentence: Ini kopi (This is coffee). After a noun it points: kopi ini (this coffee).",
+      "audio": "audio/id/words/w-ini.mp3",
+      "tags": [
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-itu",
+      "indonesian": "itu",
+      "english": "that; those; the",
+      "pos": "pronoun",
+      "registerNotes": "Itu rumah saya is 'That's my house', but rumah itu is 'that house'. After a noun it often just means 'the', for something you both know about.",
+      "audio": "audio/id/words/w-itu.mp3",
+      "tags": [
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-apa",
+      "indonesian": "apa",
+      "english": "what",
+      "pos": "question",
+      "registerNotes": "It can stay where the answer would go: Mau apa? (What do you want?). Apa kabar? (How are you?) literally asks 'What news?'",
+      "audio": "audio/id/words/w-apa.mp3",
+      "tags": [
+        "questions",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-siapa",
+      "indonesian": "siapa",
+      "english": "who",
+      "pos": "question",
+      "registerNotes": "Also the word for asking a name: Namanya siapa? (What's your name?). Ini punya siapa? asks 'Whose is this?'",
+      "audio": "audio/id/words/w-siapa.mp3",
+      "tags": [
+        "questions",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-di-mana",
+      "indonesian": "di mana",
+      "english": "where",
+      "pos": "question",
+      "pitfallNote": "Di mana asks where something is. For where to, it's ke mana (Mau ke mana?), and for where from, dari mana (Dari mana?). Always two words.",
+      "audio": "audio/id/words/w-di-mana.mp3",
+      "tags": [
+        "questions",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kapan",
+      "indonesian": "kapan",
+      "english": "when (in questions)",
+      "pos": "question",
+      "pitfallNote": "Only for questions: Kapan pulang? (When are you going home?). For 'when' in a statement, use waktu or kalau.",
+      "audio": "audio/id/words/w-kapan.mp3",
+      "tags": [
+        "questions"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-berapa",
+      "indonesian": "berapa",
+      "english": "how much, how many; what number",
+      "pos": "question",
+      "registerNotes": "Berapa harganya? (How much is it?), Berapa orang? (How many people?), Jam berapa? (What time is it?), Umurnya berapa? (How old are you?)",
+      "audio": "audio/id/words/w-berapa.mp3",
+      "tags": [
+        "questions",
+        "numbers"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kenapa",
+      "indonesian": "kenapa",
+      "english": "why; what's wrong",
+      "pos": "question",
+      "registerNotes": "Mengapa is the formal, written word. Kenapa? on its own also means 'What's the matter?'",
+      "audio": "audio/id/words/w-kenapa.mp3",
+      "tags": [
+        "questions"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bagaimana",
+      "indonesian": "bagaimana",
+      "english": "how; what about",
+      "pos": "question",
+      "registerNotes": "In casual speech it shortens to gimana. Bagaimana kalau …? makes a suggestion: Bagaimana kalau besok? (How about tomorrow?)",
+      "audio": "audio/id/words/w-bagaimana.mp3",
+      "tags": [
+        "questions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ada",
+      "indonesian": "ada",
+      "english": "there is, there are; to be (somewhere)",
+      "pos": "verb",
+      "registerNotes": "Ada air? asks 'Is there any water?' or 'Do you have water?'. Pak Budi ada? asks whether Mr Budi is in. Tidak ada is 'there isn't any' or 'not here'.",
+      "pitfallNote": "It isn't 'is' before a describing word: Saya capek (I'm tired), not Saya ada capek.",
+      "audio": "audio/id/words/w-ada.mp3",
+      "tags": [
+        "essential"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-kotonisuru",
+  "connector": "〜ことにする",
+  "gloss": "memutuskan; sudah diputuskan",
+  "title": "〜ことにする・〜ことになる — sudah diputuskan",
+  "pattern": "bentuk kamus / bentuk ない + ことにする (saya memutuskan) / ことになる (sudah diputuskan)",
+  "explanation": "ことにする adalah keputusan yang kamu buat sendiri: {来月|らいげつ}から{日本語|にほんご}を{習|なら}うことにした — aku memutuskan les bahasa Jepang mulai bulan depan. ことになる adalah keputusan yang dibuat untukmu, atau oleh keadaan, seperti bentuk di- dalam “saya dipindahtugaskan”: {東京|とうきょう}に{転勤|てんきん}することになった — aku dipindahtugaskan ke Tokyo.",
+  "natural": "Untuk berbagi kabar: {結婚|けっこん}することになりました — kami akan menikah (sudah pasti).",
+  "stiff": "ことになる untuk pilihanmu sendiri bisa terdengar mengelak, seolah itu bukan keputusanmu. Untuk keputusanmu sendiri, pakai ことにする.",
+  "examples": [
+    {
+      "id": "gx-kotonisuru-1",
+      "japanese": "今日は家で休むことにした。",
+      "furigana": "{今日|きょう}は{家|いえ}で{休|やす}むことにした。",
+      "indonesian": "Hari ini aku memutuskan istirahat di rumah.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{家|いえ}で",
+          "w": "w-ie"
+        },
+        {
+          "t": "{休|やす}むことにした。",
+          "w": "w-yasumu"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}は{家|いえ}で{休|やす}む",
+        "answer": "ことにした",
+        "after": "。",
+        "options": [
+          "ことにした",
+          "ことになった",
+          "ようになった"
+        ],
+        "why": "Keputusanmu sendiri: ことにする."
+      },
+      "audio": "audio/ja/grammar/gx-kotonisuru-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "kotonisuru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kotonisuru-2",
+      "japanese": "来月から大阪で働くことになりました。",
+      "furigana": "{来月|らいげつ}から{大阪|おおさか}で{働|はたら}くことになりました。",
+      "indonesian": "Mulai bulan depan saya akan bekerja di Osaka.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{来月|らいげつ}から",
+          "w": "w-raigetsu"
+        },
+        {
+          "t": "{大阪|おおさか}で"
+        },
+        {
+          "t": "{働|はたら}くことになりました。",
+          "w": "w-hataraku"
+        }
+      ],
+      "gap": {
+        "before": "{来月|らいげつ}から{大阪|おおさか}で{働|はたら}く",
+        "answer": "ことになりました",
+        "after": "。",
+        "options": [
+          "ことになりました",
+          "ことにしました",
+          "ようになりました"
+        ],
+        "ok": [
+          "ことにしました"
+        ],
+        "note": "ことにしました juga bisa kalau itu pilihanmu sendiri. ことになりました terdengar sudah ditetapkan untukmu, dan lebih rendah hati.",
+        "why": "Sudah ditetapkan, mungkin oleh kantormu: ことになる."
+      },
+      "audio": "audio/ja/grammar/gx-kotonisuru-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "kotonisuru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kotonisuru-3",
+      "japanese": "甘いものはやめることにします。",
+      "furigana": "{甘|あま}いものはやめることにします。",
+      "indonesian": "Saya memutuskan berhenti makan yang manis-manis.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{甘|あま}いものは",
+          "w": "w-amai"
+        },
+        {
+          "t": "やめることに",
+          "w": "w-yameru"
+        },
+        {
+          "t": "します。"
+        }
+      ],
+      "gap": {
+        "before": "{甘|あま}いものはやめる",
+        "answer": "ことに",
+        "after": "します。",
+        "options": [
+          "ことに",
+          "ように",
+          "つもりに"
+        ],
+        "why": "Memutuskan: ことにする."
+      },
+      "audio": "audio/ja/grammar/gx-kotonisuru-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "kotonisuru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-kotonisuru-4",
+      "japanese": "雨だから、今日は行かないことにしよう。",
+      "furigana": "{雨|あめ}だから、{今日|きょう}は{行|い}かないことにしよう。",
+      "indonesian": "Hujan, jadi hari ini kita tidak usah pergi, ya.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{雨|あめ}だから、",
+          "w": "w-ame"
+        },
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "{行|い}かないことにしよう。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{雨|あめ}だから、{今日|きょう}は",
+        "answer": "{行|い}かない",
+        "after": "ことにしよう。",
+        "options": [
+          "{行|い}かない",
+          "{行|い}った",
+          "{行|い}こう"
+        ],
+        "why": "Memutuskan tidak melakukan: bentuk ない + ことにする."
+      },
+      "audio": "audio/ja/grammar/gx-kotonisuru-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "kotonisuru"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "con-kalau",
+  "connector": "kalau",
+  "gloss": "if, when",
+  "title": "kalau — if, when",
+  "pattern": "Kalau A, B · B kalau A · Kalau saya, …",
+  "explanation": "kalau sets a condition: Kalau ada waktu, main ke rumah, ya. — If you've got time, come over. The kalau part usually comes first, with a comma, but it can also follow: Telepon saya kalau ada masalah. Because verbs don't show tense, kalau also covers when for things that haven't happened yet: Kalau sudah sampai, kabari saya. Before a person or thing it means as for: Kalau saya, nasi goreng saja. And Kalau begitu (casual Kalau gitu) is the set phrase for in that case.",
+  "natural": "The everyday if, polite or casual; in fast speech it sounds like kalo, though it's still written kalau. It's also a gentle way to suggest or bargain: Kalau seratus ribu, boleh?",
+  "stiff": "jika and apabila are the written ifs of signs, forms and announcements; in a conversation they sound like a contract. For a one-off when in the past (when I was in Bali), use waktu, not kalau.",
+  "examples": [
+    {
+      "id": "cx-kalau-1",
+      "indonesian": "Kalau ada waktu, main ke rumah, ya.",
+      "english": "If you've got time, come over to my place.",
+      "chunks": [
+        {
+          "t": "Kalau ",
+          "w": "w-kalau"
+        },
+        {
+          "t": "ada waktu, ",
+          "w": "w-ada"
+        },
+        {
+          "t": "main ke rumah, ya.",
+          "w": "w-main"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kalau",
+        "after": " ada waktu, main ke rumah, ya.",
+        "options": [
+          "Kalau",
+          "Karena",
+          "Tapi"
+        ],
+        "why": "They may or may not have time: a condition takes kalau. Karena would mean you know they're free."
+      },
+      "combine": {
+        "a": "Ada waktu.",
+        "b": "Main ke rumah, ya.",
+        "distractors": [
+          "Karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-kalau-1.mp3",
+      "tags": [
+        "connectors",
+        "kalau"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-kalau-2",
+      "indonesian": "Kalau sudah sampai, kabari saya, ya.",
+      "english": "Let me know when you get there.",
+      "chunks": [
+        {
+          "t": "Kalau ",
+          "w": "w-kalau"
+        },
+        {
+          "t": "sudah sampai, ",
+          "w": "w-sampai"
+        },
+        {
+          "t": "kabari saya, ya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kalau",
+        "after": " sudah sampai, kabari saya, ya.",
+        "options": [
+          "Kalau",
+          "Waktu",
+          "Karena"
+        ],
+        "why": "Getting there hasn't happened yet, so when is kalau; waktu is for a time that's already past."
+      },
+      "combine": {
+        "a": "Sudah sampai.",
+        "b": "Kabari saya, ya.",
+        "distractors": [
+          "Waktu "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-kalau-2.mp3",
+      "tags": [
+        "connectors",
+        "kalau"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-kalau-3",
+      "indonesian": "Kalau saya, nasi goreng saja.",
+      "english": "As for me, just fried rice.",
+      "chunks": [
+        {
+          "t": "Kalau saya, ",
+          "w": "w-saya"
+        },
+        {
+          "t": "nasi goreng ",
+          "w": "w-nasi"
+        },
+        {
+          "t": "saja."
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kalau",
+        "after": " saya, nasi goreng saja.",
+        "options": [
+          "Kalau",
+          "Karena",
+          "Waktu"
+        ],
+        "why": "Kalau before a person means as for: kalau saya, as for me."
+      },
+      "audio": "audio/id/connectors/cx-kalau-3.mp3",
+      "tags": [
+        "connectors",
+        "kalau",
+        "food"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-kalau-4",
+      "indonesian": "Hari ini penuh? Kalau begitu, besok saja.",
+      "english": "Today's full? In that case, tomorrow, then.",
+      "chunks": [
+        {
+          "t": "Hari ini penuh? ",
+          "w": "w-hari-ini"
+        },
+        {
+          "t": "Kalau begitu, ",
+          "w": "w-kalau"
+        },
+        {
+          "t": "besok saja.",
+          "w": "w-besok"
+        }
+      ],
+      "gap": {
+        "before": "Hari ini penuh? ",
+        "answer": "Kalau",
+        "after": " begitu, besok saja.",
+        "options": [
+          "Kalau",
+          "Waktu",
+          "Karena"
+        ],
+        "why": "Kalau begitu is a set phrase: in that case."
+      },
+      "combine": {
+        "a": "Hari ini penuh?",
+        "b": "Besok saja.",
+        "distractors": [
+          "Waktu begitu, "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-kalau-4.mp3",
+      "tags": [
+        "connectors",
+        "kalau"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

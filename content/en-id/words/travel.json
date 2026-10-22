@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "id": "words-travel",
+  "title": "Travel & Sightseeing",
+  "description": "Words for exploring Indonesia: temples and rice fields, islands and boats, tickets and guides, and the gifts you bring home.",
+  "items": [
+    {
+      "id": "w-wisata",
+      "indonesian": "wisata",
+      "english": "tourism; sightseeing, a trip",
+      "pos": "noun",
+      "registerNotes": "Mostly in compounds: tempat wisata (a tourist attraction), wisata kuliner (a food tour). Berwisata, to go sightseeing, is a bit formal; people say jalan-jalan.",
+      "audio": "audio/id/words/w-wisata.mp3",
+      "tags": [
+        "travel",
+        "sightseeing"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-turis",
+      "indonesian": "turis",
+      "english": "tourist",
+      "pos": "noun",
+      "registerNotes": "Turis asing (foreign tourist) and turis lokal (local tourist) are everyday words; wisatawan is the formal one in the news and on signs.",
+      "audio": "audio/id/words/w-turis.mp3",
+      "tags": [
+        "travel",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bule",
+      "indonesian": "bule",
+      "english": "Westerner, white foreigner",
+      "pos": "noun",
+      "registerNotes": "Casual, and usually not meant as an insult; the polite word is orang asing (foreigner).",
+      "cultureNote": "Expect to hear it, along with Hello, Mister, from children and vendors. A friendly reply in Indonesian usually gets a delighted response.",
+      "audio": "audio/id/words/w-bule.mp3",
+      "tags": [
+        "travel",
+        "people"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tiket",
+      "indonesian": "tiket",
+      "english": "ticket",
+      "pos": "noun",
+      "registerNotes": "Tiket masuk is an entry ticket; tiket pesawat and tiket kereta are plane and train tickets. Karcis is an older word still used for parking tickets.",
+      "audio": "audio/id/words/w-tiket.mp3",
+      "tags": [
+        "travel",
+        "transport"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-loket",
+      "indonesian": "loket",
+      "english": "ticket window, counter",
+      "pos": "noun",
+      "registerNotes": "Beli tiketnya di loket (Buy the ticket at the counter). Loket is any service window: at a station, a bank or a government office.",
+      "audio": "audio/id/words/w-loket.mp3",
+      "tags": [
+        "travel",
+        "transport"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pemandangan",
+      "indonesian": "pemandangan",
+      "english": "view, scenery",
+      "pos": "noun",
+      "forms": {
+        "root": "pandang"
+      },
+      "registerNotes": "Pemandangannya indah sekali (The view is beautiful) is the stock compliment at any lookout or rice terrace.",
+      "audio": "audio/id/words/w-pemandangan.mp3",
+      "tags": [
+        "travel",
+        "sightseeing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pulau",
+      "indonesian": "pulau",
+      "english": "island",
+      "pos": "noun",
+      "cultureNote": "Indonesia has more than 17,000 islands. Some names use the old word nusa instead: Nusa Penida, Nusa Tenggara.",
+      "audio": "audio/id/words/w-pulau.mp3",
+      "tags": [
+        "travel",
+        "places"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-candi",
+      "indonesian": "candi",
+      "english": "ancient temple",
+      "pos": "noun",
+      "pitfallNote": "A candi is an ancient stone temple, like Borobudur and Prambanan in Java. A Balinese temple in use is a pura, a Chinese temple a klenteng, and a Buddhist one a vihara.",
+      "audio": "audio/id/words/w-candi.mp3",
+      "tags": [
+        "travel",
+        "sightseeing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-pura",
+      "indonesian": "pura",
+      "english": "Balinese Hindu temple",
+      "pos": "noun",
+      "pitfallNote": "Pura-pura is a different word: to pretend.",
+      "cultureNote": "Visitors wear a sarong and a sash, usually lent or rented at the gate, and keep their shoulders covered.",
+      "audio": "audio/id/words/w-pura.mp3",
+      "tags": [
+        "travel",
+        "sightseeing"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-air-terjun",
+      "indonesian": "air terjun",
+      "english": "waterfall",
+      "pos": "noun",
+      "registerNotes": "Literally plunging water: terjun is to jump or plunge, as in terjun payung (skydiving).",
+      "audio": "audio/id/words/w-air-terjun.mp3",
+      "tags": [
+        "travel",
+        "sightseeing",
+        "nature"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sawah",
+      "indonesian": "sawah",
+      "english": "rice field, paddy",
+      "pos": "noun",
+      "registerNotes": "Rice terraces are sawah terasering. A dry field for other crops is a ladang.",
+      "audio": "audio/id/words/w-sawah.mp3",
+      "tags": [
+        "travel",
+        "nature"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-oleh-oleh",
+      "indonesian": "oleh-oleh",
+      "english": "gifts brought back from a trip",
+      "pos": "noun",
+      "cultureNote": "After a trip, family and colleagues expect oleh-oleh, usually a local food speciality like bakpia from Yogyakarta. Mana oleh-olehnya? (Where are my gifts?) is a half-joking welcome home.",
+      "audio": "audio/id/words/w-oleh-oleh.mp3",
+      "tags": [
+        "travel",
+        "culture"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-penginapan",
+      "indonesian": "penginapan",
+      "english": "lodging, guesthouse, accommodation",
+      "pos": "noun",
+      "forms": {
+        "root": "inap"
+      },
+      "registerNotes": "Any place to stay, from a homestay to a small hotel. The verb is menginap, to stay the night: Menginap di mana? (Where are you staying?)",
+      "audio": "audio/id/words/w-penginapan.mp3",
+      "tags": [
+        "travel",
+        "places"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-koper",
+      "indonesian": "koper",
+      "english": "suitcase",
+      "pos": "noun",
+      "audio": "audio/id/words/w-koper.mp3",
+      "tags": [
+        "travel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-paspor",
+      "indonesian": "paspor",
+      "english": "passport",
+      "pos": "noun",
+      "cultureNote": "Hotels and phone shops ask to see or photocopy it (fotokopi paspor), so keep a copy handy.",
+      "audio": "audio/id/words/w-paspor.mp3",
+      "tags": [
+        "travel",
+        "documents"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-jadwal",
+      "indonesian": "jadwal",
+      "english": "schedule, timetable",
+      "pos": "noun",
+      "registerNotes": "Jadwal kereta (train timetable), jadwal dokter (a doctor's hours). Jadwalnya berubah means the schedule has changed.",
+      "audio": "audio/id/words/w-jadwal.mp3",
+      "tags": [
+        "travel",
+        "transport"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tujuan",
+      "indonesian": "tujuan",
+      "english": "destination; purpose, aim",
+      "pos": "noun",
+      "forms": {
+        "root": "tuju"
+      },
+      "registerNotes": "Tujuannya ke mana? (Where are you headed?) At immigration, tujuan kunjungan is the purpose of your visit.",
+      "audio": "audio/id/words/w-tujuan.mp3",
+      "tags": [
+        "travel",
+        "transport"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-perjalanan",
+      "indonesian": "perjalanan",
+      "english": "journey, trip",
+      "pos": "noun",
+      "forms": {
+        "root": "jalan"
+      },
+      "registerNotes": "Perjalanannya berapa jam? (How many hours is the trip?) For a holiday, people say liburan or jalan-jalan instead.",
+      "audio": "audio/id/words/w-perjalanan.mp3",
+      "tags": [
+        "travel",
+        "transport"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pemandu",
+      "indonesian": "pemandu",
+      "english": "guide",
+      "pos": "noun",
+      "forms": {
+        "root": "pandu"
+      },
+      "registerNotes": "Pemandu wisata is a tour guide; in tourist areas the English word guide is understood too.",
+      "audio": "audio/id/words/w-pemandu.mp3",
+      "tags": [
+        "travel",
+        "people"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-peta",
+      "indonesian": "peta",
+      "english": "map",
+      "pos": "noun",
+      "registerNotes": "Bisa tunjukkan di peta? (Can you show me on the map?) For a phone map, people just say Maps: Lihat di Maps saja.",
+      "audio": "audio/id/words/w-peta.mp3",
+      "tags": [
+        "travel",
+        "directions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sewa-motor",
+      "indonesian": "sewa motor",
+      "english": "scooter hire; to hire a scooter",
+      "pos": "phrase",
+      "registerNotes": "Sewa motor sehari berapa? (How much is a scooter for a day?) Rates drop if you hire by the week or month.",
+      "cultureNote": "Riding legally needs a motorbike licence (SIM) and a helmet, and police do stop tourists to check.",
+      "audio": "audio/id/words/w-sewa-motor.mp3",
+      "tags": [
+        "travel",
+        "transport"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kapal",
+      "indonesian": "kapal",
+      "english": "ship, boat",
+      "pos": "noun",
+      "registerNotes": "Naik kapal is to go by boat; kapal cepat is a fast boat, as to the Gili islands. A small wooden boat is a perahu.",
+      "audio": "audio/id/words/w-kapal.mp3",
+      "tags": [
+        "travel",
+        "transport"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pelabuhan",
+      "indonesian": "pelabuhan",
+      "english": "port, harbour",
+      "pos": "noun",
+      "registerNotes": "Ferries and fast boats leave from the pelabuhan; ask Dari pelabuhan mana? (From which port?)",
+      "audio": "audio/id/words/w-pelabuhan.mp3",
+      "tags": [
+        "travel",
+        "transport",
+        "places"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-desa",
+      "indonesian": "desa",
+      "english": "village",
+      "pos": "noun",
+      "registerNotes": "A desa wisata is a village that welcomes visitors. Kampung is also a village, but in a city it means a crowded neighbourhood, and kampung halaman is your home town.",
+      "audio": "audio/id/words/w-desa.mp3",
+      "tags": [
+        "travel",
+        "places"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kota",
+      "indonesian": "kota",
+      "english": "town, city",
+      "pos": "noun",
+      "registerNotes": "Pusat kota is the city centre, and ke kota means going into town. In Jakarta, Kota on its own is the old town.",
+      "audio": "audio/id/words/w-kota.mp3",
+      "tags": [
+        "travel",
+        "places"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-musim-liburan",
+      "indonesian": "musim liburan",
+      "english": "holiday season",
+      "pos": "noun",
+      "cultureNote": "The busiest times are school holidays, Christmas and New Year, and above all Lebaran at the end of Ramadan, when millions travel home (mudik) and tickets sell out.",
+      "audio": "audio/id/words/w-musim-liburan.mp3",
+      "tags": [
+        "travel",
+        "culture"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

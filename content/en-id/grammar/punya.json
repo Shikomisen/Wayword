@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-punya",
+  "connector": "punya",
+  "gloss": "to have, to own",
+  "title": "punya — to have",
+  "pattern": "Saya punya … · Saya tidak punya … · punya saya (mine)",
+  "explanation": "Punya is 'have' in the sense of owning something or having someone in your life: Dia punya mobil (She's got a car), Saya punya dua kakak (I've got two older siblings). The 'not' is tidak: Saya tidak punya mobil. For what's there or on offer rather than owned, use ada: a warung has rice to sell, so you ask Ada nasi? rather than Punya nasi? Punya also means 'belongs to': Ini punya saya (This is mine), Punya siapa? (Whose is it?)",
+  "natural": "Sudah punya anak? (Do you have children?) and Sudah punya pacar? (Are you seeing anyone?) are questions you'll get early, even from people you've just met. The polite no is Belum (not yet), whatever your plans.",
+  "stiff": "Punya is only for owning: 'have lunch' is makan siang, 'have a shower' is mandi, and 'have time' is ada waktu. Mempunyai is the formal written form; in conversation it sounds stiff.",
+  "examples": [
+    {
+      "id": "gx-punya-1",
+      "indonesian": "Dia punya mobil baru.",
+      "english": "She's got a new car.",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "punya "
+        },
+        {
+          "t": "mobil ",
+          "w": "w-mobil"
+        },
+        {
+          "t": "baru.",
+          "w": "w-baru"
+        }
+      ],
+      "gap": {
+        "before": "Dia ",
+        "answer": "punya",
+        "after": " mobil baru.",
+        "options": [
+          "punya",
+          "ada",
+          "adalah"
+        ],
+        "why": "Owning something is punya."
+      },
+      "audio": "audio/id/grammar/gx-punya-1.mp3",
+      "tags": [
+        "grammar",
+        "punya"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-punya-2",
+      "indonesian": "Saya tidak punya uang kecil.",
+      "english": "I haven't got any small change.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tidak punya ",
+          "w": "w-tidak"
+        },
+        {
+          "t": "uang kecil.",
+          "w": "w-uang"
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "tidak",
+        "after": " punya uang kecil.",
+        "options": [
+          "tidak",
+          "bukan"
+        ],
+        "why": "Punya is a verb, so 'not' is tidak."
+      },
+      "audio": "audio/id/grammar/gx-punya-2.mp3",
+      "tags": [
+        "grammar",
+        "punya"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-punya-3",
+      "indonesian": "Ini punya saya.",
+      "english": "This is mine.",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "punya "
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "Ini ",
+        "answer": "punya",
+        "after": " saya.",
+        "options": [
+          "punya",
+          "ada",
+          "adalah"
+        ],
+        "why": "'Mine' is punya saya, 'belongs to me'."
+      },
+      "audio": "audio/id/grammar/gx-punya-3.mp3",
+      "tags": [
+        "grammar",
+        "punya"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-punya-4",
+      "indonesian": "Saya punya HP, tapi di sini tidak ada sinyal.",
+      "english": "I've got a phone, but there's no signal here.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "punya HP, ",
+          "w": "w-hp"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "di sini ",
+          "w": "w-di"
+        },
+        {
+          "t": "tidak ada "
+        },
+        {
+          "t": "sinyal."
+        }
+      ],
+      "gap": {
+        "before": "Saya punya HP, tapi di sini tidak ",
+        "answer": "ada",
+        "after": " sinyal.",
+        "options": [
+          "ada",
+          "punya"
+        ],
+        "why": "Owning the phone is punya; whether there's a signal is ada."
+      },
+      "audio": "audio/id/grammar/gx-punya-4.mp3",
+      "audioHint": "Saya punya ha pe, tapi di sini tidak ada sinyal.",
+      "tags": [
+        "grammar",
+        "punya"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

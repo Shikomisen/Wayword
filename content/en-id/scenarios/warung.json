@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "id": "warung",
+  "title": "Ordering at a warung",
+  "category": "restaurant",
+  "setting": "A busy warung at lunchtime: plastic stools, the dishes painted on the wall, and the owner, an older woman, cooking at the front. You find a spot on the bench.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "server",
+      "indonesian": "Mau pesan apa, Kak?",
+      "english": "What would you like?",
+      "audio": "audio/id/scenario/warung-n1.mp3",
+      "options": [
+        {
+          "phraseId": "res-03",
+          "quality": "good",
+          "feedback": "Clear and polite. The number goes after the dish, the way she'll repeat it back to you.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Nasi goreng satu, ya, Bu.",
+          "english": "One fried rice, please.",
+          "feedback": "Just the dish and the number, softened with ya: the everyday warung order. Bu suits the older woman running it.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya ingin memesan sebuah nasi goreng.",
+          "english": "I wish to order a fried rice.",
+          "feedback": "Understood, but bookish: ingin and memesan belong in writing, and sebuah is the English 'a' carried over. Say mau pesan, or just nasi goreng satu.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "server",
+      "indonesian": "Mau pedas, Kak?",
+      "english": "Do you want it spicy?",
+      "audio": "audio/id/scenario/warung-n2.mp3",
+      "options": [
+        {
+          "phraseId": "res-04",
+          "quality": "good",
+          "feedback": "The usual way to ask for no chilli heat. The ya makes it a friendly request rather than an order.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Sedikit saja, Bu.",
+          "english": "Just a little.",
+          "feedback": "Fine if you like some heat, but a little by local standards can still be fiery.",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Bukan pedas, Bu.",
+          "english": "Not spicy.",
+          "feedback": "Bukan is 'not' before a noun (bukan teh, not tea). Before a describing word like pedas it's tidak, and for a request, jangan pedas.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "server",
+      "indonesian": "Makan di sini atau dibungkus, Kak?",
+      "english": "Eating here or taking away?",
+      "audio": "audio/id/scenario/warung-n3.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Makan di sini, Bu.",
+          "english": "Eating here.",
+          "feedback": "Answer an either-or question with the half you want. That's all she needs.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "res-07",
+          "quality": "good",
+          "feedback": "Dibungkus is takeaway: your food comes wrapped in waxed paper or a banana leaf.",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Ya, Bu.",
+          "english": "Yes.",
+          "feedback": "Ya doesn't answer an either-or question, so she still doesn't know which you want. She'll probably guess you're eating here.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "server",
+      "indonesian": "Minumnya apa, Kak?",
+      "english": "And to drink?",
+      "audio": "audio/id/scenario/warung-n4.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Es teh manis satu, Bu.",
+          "english": "One sweet iced tea, please.",
+          "feedback": "The classic warung drink. It comes sweet, often very sweet; for no sugar, ask for es teh tawar.",
+          "next": "n6"
+        },
+        {
+          "phraseId": "res-12",
+          "quality": "good",
+          "feedback": "Air putih is drinking water, and at many warungs a glass of it costs nothing.",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya mau air, Bu.",
+          "english": "I'd like water.",
+          "feedback": "She'll work it out, but air on its own is any water, even for washing. Ask for air putih, or air mineral for a bottle.",
+          "next": "n6"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "server",
+      "indonesian": "Ditunggu sebentar, ya. Minumnya sekalian, Kak?",
+      "english": "Won't be a moment. Anything to drink with it?",
+      "audio": "audio/id/scenario/warung-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Es teh manis satu, dibungkus juga, ya.",
+          "english": "One sweet iced tea, to take away too.",
+          "feedback": "A takeaway iced tea comes in a plastic bag tied round a straw, a sight at every warung.",
+          "next": "n7"
+        },
+        {
+          "phraseId": "gre-21",
+          "quality": "good",
+          "feedback": "A polite no. Tidak usah, terima kasih (no need, thanks) is just as common.",
+          "next": "n7"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya tidak mau minum.",
+          "english": "I don't want to drink.",
+          "feedback": "Blunt, and it sounds as if you're refusing to drink anything at all. Tidak, terima kasih is the soft way to say no.",
+          "next": "n7"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "server",
+      "indonesian": "Sudah selesai, Kak?",
+      "english": "All done?",
+      "audio": "audio/id/scenario/warung-n6.mp3",
+      "options": [
+        {
+          "phraseId": "num-08",
+          "quality": "good",
+          "feedback": "At a warung you pay at the counter after eating, and this is how you ask for the total.",
+          "next": "n7"
+        },
+        {
+          "phraseId": "res-10",
+          "quality": "good",
+          "feedback": "A compliment always goes down well with the cook. She'll tell you what you owe.",
+          "next": "n7"
+        },
+        {
+          "phraseId": "res-08",
+          "quality": "awkward",
+          "feedback": "Right in a restaurant or café, but a warung rarely writes a bill. At the counter, ask Semuanya berapa, Bu?",
+          "next": "n7"
+        }
+      ]
+    },
+    "n7": {
+      "speaker": "server",
+      "indonesian": "Semuanya dua puluh ribu, Kak.",
+      "english": "That's twenty thousand altogether.",
+      "audio": "audio/id/scenario/warung-n7.mp3",
+      "options": [
+        {
+          "phraseId": "num-10",
+          "quality": "good",
+          "feedback": "The exact money is always welcome at a small warung.",
+          "next": "end"
+        },
+        {
+          "phraseId": "num-09",
+          "quality": "good",
+          "feedback": "Starting with maaf acknowledges the nuisance: a warung may not have change for a big note, so carry small ones.",
+          "next": "end"
+        },
+        {
+          "phraseId": "sho-02",
+          "quality": "wrong",
+          "feedback": "Warung prices are fixed. Bargaining is for markets and souvenir stalls, and here it would sound odd.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "english": "Done. At a warung, keep it short: the dish then the number (nasi goreng satu), jangan pedas if you can't take chilli, and makan di sini or dibungkus. Eating in, you pay afterwards at the counter with Semuanya berapa, Bu? The prices are fixed, and small notes make everyone's life easier.",
+      "end": true,
+      "options": []
+    }
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "id": "words-work",
+  "title": "Kerja & belajar",
+  "description": "Pekerjaan, rapat, belajar bahasa Jepang, dan datang terlambat.",
+  "items": [
+    {
+      "id": "w-shigoto",
+      "japanese": "仕事",
+      "furigana": "{仕事|しごと}",
+      "indonesian": "pekerjaan, kerja",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shigoto.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kaigi",
+      "japanese": "会議",
+      "furigana": "{会議|かいぎ}",
+      "indonesian": "rapat",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kaigi.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-benkyou",
+      "japanese": "勉強",
+      "furigana": "{勉強|べんきょう}",
+      "indonesian": "belajar",
+      "pos": "noun",
+      "usage": "勉強する — \"belajar\".",
+      "audio": "audio/ja/words/w-benkyou.mp3",
+      "tags": [
+        "belajar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-nihongo",
+      "japanese": "日本語",
+      "furigana": "{日本語|にほんご}",
+      "indonesian": "bahasa Jepang",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-nihongo.mp3",
+      "tags": [
+        "belajar"
+      ],
+      "difficulty": 1,
+      "usage": "Nama negara + 語 (ご) berarti bahasanya: インドネシア語 (bahasa Indonesia)."
+    },
+    {
+      "id": "w-eigo",
+      "japanese": "英語",
+      "furigana": "{英語|えいご}",
+      "indonesian": "bahasa Inggris",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-eigo.mp3",
+      "tags": [
+        "belajar"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yasumi",
+      "japanese": "休み",
+      "furigana": "{休|やす}み",
+      "indonesian": "hari libur; liburan; istirahat",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yasumi.mp3",
+      "tags": [
+        "pekerjaan"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-denwa",
+      "japanese": "電話",
+      "furigana": "{電話|でんわ}",
+      "indonesian": "telepon",
+      "pos": "noun",
+      "usage": "電話する — \"menelepon\".",
+      "audio": "audio/ja/words/w-denwa.mp3",
+      "tags": [
+        "komunikasi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-meeru",
+      "japanese": "メール",
+      "furigana": "{メール|めーる}",
+      "indonesian": "email; pesan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-meeru.mp3",
+      "tags": [
+        "komunikasi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yakusoku",
+      "japanese": "約束",
+      "furigana": "{約束|やくそく}",
+      "indonesian": "janji; janji ketemu",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yakusoku.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-okureru",
+      "japanese": "遅れる",
+      "furigana": "{遅|おく}れる",
+      "indonesian": "terlambat",
+      "pos": "verb",
+      "forms": {
+        "masu": "{遅|おく}れます",
+        "te": "{遅|おく}れて"
+      },
+      "audio": "audio/ja/words/w-okureru.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-maniau",
+      "japanese": "間に合う",
+      "furigana": "{間|ま}に{合|あ}う",
+      "indonesian": "sempat, keburu",
+      "pos": "verb",
+      "forms": {
+        "masu": "{間|ま}に{合|あ}います",
+        "te": "{間|ま}に{合|あ}って"
+      },
+      "audio": "audio/ja/words/w-maniau.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-owaru",
+      "japanese": "終わる",
+      "furigana": "{終|お}わる",
+      "indonesian": "selesai, berakhir",
+      "pos": "verb",
+      "forms": {
+        "masu": "{終|お}わります",
+        "te": "{終|お}わって"
+      },
+      "audio": "audio/ja/words/w-owaru.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hajimaru",
+      "japanese": "始まる",
+      "furigana": "{始|はじ}まる",
+      "indonesian": "mulai, dimulai",
+      "pos": "verb",
+      "forms": {
+        "masu": "{始|はじ}まります",
+        "te": "{始|はじ}まって"
+      },
+      "audio": "audio/ja/words/w-hajimaru.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-isogu",
+      "japanese": "急ぐ",
+      "furigana": "{急|いそ}ぐ",
+      "indonesian": "bergegas, buru-buru",
+      "pos": "verb",
+      "forms": {
+        "masu": "{急|いそ}ぎます",
+        "te": "{急|いそ}いで"
+      },
+      "audio": "audio/ja/words/w-isogu.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

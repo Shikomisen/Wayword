@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "id": "con-toki",
+  "connector": "とき",
+  "gloss": "waktu, ketika",
+  "title": "とき — waktu, ketika",
+  "pattern": "A とき、B",
+  "explanation": "とき berarti “waktu” atau “ketika”, tapi letaknya terbalik: “waktu kecil” menjadi {子供|こども}のとき, dengan とき di belakang. Bentuk kata kerja sebelumnya menentukan urutan waktunya: {日本|にほん}に{行|い}くとき (waktu mau pergi ke Jepang, sebelum sampai) dan {日本|にほん}に{行|い}ったとき (waktu pergi ke Jepang, setelah sampai di sana). Kata benda memakai の ({子供|こども}のとき), kata sifat な tetap memakai な ({暇|ひま}なとき), kata sifat い langsung masuk ({寂|さび}しいとき).",
+  "natural": "Untuk membicarakan waktu, kebiasaan, dan kenangan: {子供|こども}のとき, {暇|ひま}なとき, {疲|つか}れたとき. Cocok untuk ragam apa pun.",
+  "stiff": "Untuk “kalau” sekali saja tentang masa depan (kalau besok hujan, kalau kamu senggang malam ini), orang memakai たら: {明日|あした}{雨|あめ}だったら…",
+  "examples": [
+    {
+      "id": "cx-toki-1",
+      "japanese": "子供のとき、よく公園で遊んだ。",
+      "furigana": "{子供|こども}のとき、よく{公園|こうえん}で{遊|あそ}んだ。",
+      "indonesian": "Waktu kecil, aku sering main di taman.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{子供|こども}のとき、",
+          "w": "w-kodomo"
+        },
+        {
+          "t": "よく{公園|こうえん}で",
+          "w": "w-kouen"
+        },
+        {
+          "t": "{遊|あそ}んだ。",
+          "w": "w-asobu"
+        }
+      ],
+      "gap": {
+        "before": "{子供|こども}",
+        "answer": "のとき",
+        "after": "、よく{公園|こうえん}で{遊|あそ}んだ。",
+        "options": [
+          "のとき",
+          "なとき",
+          "とき"
+        ],
+        "why": "Kata benda memakai の sebelum とき: 子供のとき, 休みのとき."
+      },
+      "audio": "audio/ja/connectors/cx-toki-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "toki"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-toki-2",
+      "japanese": "暇なとき、何をしていますか。",
+      "furigana": "{暇|ひま}なとき、{何|なに}をしていますか。",
+      "indonesian": "Di waktu luang, biasanya Anda melakukan apa?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{暇|ひま}なとき、",
+          "w": "w-hima"
+        },
+        {
+          "t": "{何|なに}を",
+          "w": "w-nani"
+        },
+        {
+          "t": "していますか。",
+          "w": "w-suru"
+        }
+      ],
+      "gap": {
+        "before": "{暇|ひま}",
+        "answer": "なとき",
+        "after": "、{何|なに}をしていますか。",
+        "options": [
+          "なとき",
+          "のとき",
+          "いとき"
+        ],
+        "why": "Kata sifat な tetap memakai な: 暇なとき, 静かなとき."
+      },
+      "audio": "audio/ja/connectors/cx-toki-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "toki"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-toki-3",
+      "japanese": "寝るとき、電気を消してね。",
+      "furigana": "{寝|ね}るとき、{電気|でんき}を{消|け}してね。",
+      "indonesian": "Matikan lampunya waktu mau tidur, ya.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{寝|ね}るとき、",
+          "w": "w-neru"
+        },
+        {
+          "t": "{電気|でんき}を",
+          "w": "w-denki"
+        },
+        {
+          "t": "{消|け}してね。"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "{寝|ね}る",
+        "after": "とき、{電気|でんき}を{消|け}してね。",
+        "options": [
+          "{寝|ね}る",
+          "{寝|ね}た",
+          "{寝|ね}て"
+        ],
+        "why": "Sebelum tertidur, jadi bentuk kamus: 寝るとき. 寝たとき berarti setelah kamu sudah tertidur."
+      },
+      "audio": "audio/ja/connectors/cx-toki-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "toki"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-toki-4",
+      "japanese": "寂しいとき、彼女に電話します。",
+      "furigana": "{寂|さび}しいとき、{彼女|かのじょ}に{電話|でんわ}します。",
+      "indonesian": "Waktu kesepian, saya menelepon pacar saya.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{寂|さび}しいとき、",
+          "w": "w-sabishii"
+        },
+        {
+          "t": "{彼女|かのじょ}に",
+          "w": "w-kanojo"
+        },
+        {
+          "t": "{電話|でんわ}します。",
+          "w": "w-denwa"
+        }
+      ],
+      "gap": {
+        "before": "{寂|さび}しい",
+        "answer": "とき",
+        "after": "、{彼女|かのじょ}に{電話|でんわ}します。",
+        "options": [
+          "とき",
+          "なとき",
+          "のとき"
+        ],
+        "why": "Kata sifat い langsung masuk ke とき: 寂しいとき, 忙しいとき."
+      },
+      "combine": {
+        "a": "{寂|さび}しいです。",
+        "b": "{彼女|かのじょ}に{電話|でんわ}します。",
+        "distractors": [
+          "{寂|さび}しいですとき、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-toki-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "toki"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

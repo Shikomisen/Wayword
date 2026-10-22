@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "id": "words-describe",
+  "title": "様子を表す言葉",
+  "description": "よく使う形容詞を、主に対にして：大きい・小さい、安い・高い、近い・遠い。日本語とは逆に名詞の後に置きます：rumah besar（大きい家）。",
+  "items": [
+    {
+      "id": "w-besar",
+      "indonesian": "besar",
+      "japanese": "大きい",
+      "pos": "adjective",
+      "pitfallNote": "形容詞は名詞の後に置きます：rumah besar（大きい家）。日本語の順番で besar rumah とは言いません。",
+      "audio": "audio/id/words/w-besar.mp3",
+      "tags": [
+        "形容",
+        "サイズ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kecil",
+      "indonesian": "kecil",
+      "japanese": "小さい",
+      "pos": "adjective",
+      "registerNotes": "waktu kecil は、日本語の「小さいころ」と同じく「子どものころ」。kamar kecil（小さい部屋）はトイレの丁寧な言い方です。",
+      "audio": "audio/id/words/w-kecil.mp3",
+      "tags": [
+        "形容",
+        "サイズ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-mahal",
+      "indonesian": "mahal",
+      "japanese": "（値段が）高い",
+      "pos": "adjective",
+      "registerNotes": "市場で、笑顔で Mahal sekali（すごく高い）や Terlalu mahal（高すぎる）と言うと、値段交渉が始まります。",
+      "audio": "audio/id/words/w-mahal.mp3",
+      "tags": [
+        "形容",
+        "買い物"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "日本語の「高い」と違い、背や建物の高さには使いません。それは tinggi です。"
+    },
+    {
+      "id": "w-murah",
+      "indonesian": "murah",
+      "japanese": "安い",
+      "pos": "adjective",
+      "pitfallNote": "murah は「お得」というほめ言葉です。安っぽい、粗悪なのは murahan。日本語の「安い」と「安っぽい」の違いと同じです。",
+      "audio": "audio/id/words/w-murah.mp3",
+      "tags": [
+        "形容",
+        "買い物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-baru",
+      "indonesian": "baru",
+      "japanese": "新しい",
+      "pos": "adjective",
+      "pitfallNote": "動詞の前の baru は「〜したばかり」：Saya baru datang（着いたばかりです）。数の前では「まだ〜だけ」：baru dua hari（まだ2日だけ）。",
+      "audio": "audio/id/words/w-baru.mp3",
+      "tags": [
+        "形容"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-lama",
+      "indonesian": "lama",
+      "japanese": "古い（新しくない）；（時間が）長い",
+      "pos": "adjective",
+      "pitfallNote": "lama は「新しくない、以前の」という古さ（rumah lama、前の家）と、「長い時間」（Sudah lama di sini?、ここに来て長いですか？）。人が年をとっているのは tua です。",
+      "audio": "audio/id/words/w-lama.mp3",
+      "tags": [
+        "形容",
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bagus",
+      "indonesian": "bagus",
+      "japanese": "いい、すてきな",
+      "pos": "adjective",
+      "pitfallNote": "bagus は物、場所、仕事ぶりに使う「いい」です：Bagus sekali。人や体調には baik：Kabar baik（元気です）。",
+      "audio": "audio/id/words/w-bagus.mp3",
+      "tags": [
+        "形容",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-jelek",
+      "indonesian": "jelek",
+      "japanese": "醜い、かっこ悪い；質が悪い",
+      "pos": "adjective",
+      "registerNotes": "かなり直接的な言葉です。やわらかく言うなら kurang bagus（あまりよくない）。",
+      "audio": "audio/id/words/w-jelek.mp3",
+      "tags": [
+        "形容"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-panas",
+      "indonesian": "panas",
+      "japanese": "暑い、熱い",
+      "pos": "adjective",
+      "pitfallNote": "日本語の「暑い」も「熱い」も panas です：天気、料理、飲み物。唐辛子の辛さは pedas、温かいのは hangat：teh hangat。",
+      "audio": "audio/id/words/w-panas.mp3",
+      "tags": [
+        "形容",
+        "温度"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dingin",
+      "indonesian": "dingin",
+      "japanese": "寒い、冷たい",
+      "pos": "adjective",
+      "registerNotes": "「寒い」にも「冷たい」にも使います。飲み水を常温ではなく冷やしてほしいなら、air dingin と頼みます。",
+      "audio": "audio/id/words/w-dingin.mp3",
+      "tags": [
+        "形容",
+        "温度"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-banyak",
+      "indonesian": "banyak",
+      "japanese": "たくさん、多い",
+      "pos": "adjective",
+      "pitfallNote": "ほかの形容詞と違い、banyak は名詞の前に置きます：banyak orang（たくさんの人）。Terima kasih banyak は「どうもありがとう」です。",
+      "audio": "audio/id/words/w-banyak.mp3",
+      "tags": [
+        "形容",
+        "量"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sedikit",
+      "indonesian": "sedikit",
+      "japanese": "少し、少ない",
+      "pos": "adjective",
+      "registerNotes": "Bisa bahasa Indonesia?（インドネシア語ができますか？）への、謙虚でよくある答えは Sedikit-sedikit（少しだけ）です。",
+      "audio": "audio/id/words/w-sedikit.mp3",
+      "tags": [
+        "形容",
+        "量"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-cepat",
+      "indonesian": "cepat",
+      "japanese": "速い、早い",
+      "pos": "adjective",
+      "registerNotes": "Cepat sembuh, ya は「早く良くなってね」。スピードを出しすぎる運転手には Jangan cepat-cepat, Pak（そんなに飛ばさないでください）。",
+      "audio": "audio/id/words/w-cepat.mp3",
+      "tags": [
+        "形容",
+        "速さ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-lambat",
+      "indonesian": "lambat",
+      "japanese": "（速度が）遅い",
+      "pos": "adjective",
+      "registerNotes": "サービス、ネット、交通が遅いときに使います。ゆっくりしてほしい、ゆっくり話してほしいときは、pelan-pelan と言います。",
+      "pitfallNote": "日本語の「遅い」は速度にも時刻にも使いますが、lambat は速度だけ。遅刻するのは同じ語から来た terlambat、くだけて telat です。",
+      "audio": "audio/id/words/w-lambat.mp3",
+      "tags": [
+        "形容",
+        "速さ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pelan",
+      "indonesian": "pelan",
+      "japanese": "ゆっくり；（音が）小さい、静か",
+      "pos": "adjective",
+      "registerNotes": "「ゆっくり、そっと」の普段の言葉で、たいてい重ねて使います：Pelan-pelan, Pak（ゆっくりお願いします）。Bisa bicara pelan-pelan?（ゆっくり話してもらえますか？）",
+      "pitfallNote": "pelan には「（音が）小さい、静か」の意味もあります：suaranya pelan（彼の声は小さい）。",
+      "audio": "audio/id/words/w-pelan.mp3",
+      "tags": [
+        "形容",
+        "速さ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-jauh",
+      "indonesian": "jauh",
+      "japanese": "遠い",
+      "pos": "adjective",
+      "registerNotes": "Jauh dari sini?（ここから遠いですか？）や Masih jauh?（まだ遠いですか？）は、道中で使える質問です。",
+      "audio": "audio/id/words/w-jauh.mp3",
+      "tags": [
+        "形容",
+        "道案内"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dekat",
+      "indonesian": "dekat",
+      "japanese": "近い",
+      "pos": "adjective",
+      "registerNotes": "dekat sini は「この近く」：Ada ATM dekat sini?（この近くにATMはありますか？）。人について言うと「親しい」：kami dekat（私たちは仲がいい）。",
+      "audio": "audio/id/words/w-dekat.mp3",
+      "tags": [
+        "形容",
+        "道案内"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bersih",
+      "indonesian": "bersih",
+      "japanese": "清潔な、きれいな",
+      "pos": "adjective",
+      "registerNotes": "air bersih は洗うためのきれいな水で、飲めるとは限りません。",
+      "audio": "audio/id/words/w-bersih.mp3",
+      "tags": [
+        "形容"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "日本語の「きれい」と違い、「清潔」の意味だけです。景色や人がきれいなのは indah や cantik。"
+    },
+    {
+      "id": "w-kotor",
+      "indonesian": "kotor",
+      "japanese": "汚い",
+      "pos": "adjective",
+      "audio": "audio/id/words/w-kotor.mp3",
+      "tags": [
+        "形容"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

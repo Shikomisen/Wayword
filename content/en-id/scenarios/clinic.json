@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "clinic",
+  "title": "At the clinic",
+  "category": "doctor",
+  "setting": "You've had a fever and a cough for a few days, so you've gone to a clinic (klinik) near where you're staying. The doctor calls you in.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "doctor",
+      "indonesian": "Silakan duduk. Keluhannya apa?",
+      "english": "Have a seat. What seems to be the problem?",
+      "audio": "audio/id/scenario/clinic-n1.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Saya demam dan batuk, Dok.",
+          "english": "I've got a fever and a cough, doctor.",
+          "feedback": "Clear: the symptoms straight after saya, and Dok to address the doctor.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "doc-03",
+          "quality": "awkward",
+          "feedback": "Everyone knows masuk angin, but it's a folk name for feeling off. Give the doctor the symptoms: Saya demam dan batuk.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Saya punya demam dan batuk.",
+          "english": "I have a fever and a cough.",
+          "feedback": "Word for word from English. Symptoms don't take punya: Saya demam dan batuk.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "doctor",
+      "indonesian": "Sudah berapa lama?",
+      "english": "How long have you had it?",
+      "audio": "audio/id/scenario/clinic-n2.mp3",
+      "options": [
+        {
+          "phraseId": "doc-07",
+          "quality": "good",
+          "feedback": "Sudah plus the time says it's been going on that long, and still is.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Demamnya sejak Senin, Dok. Batuknya baru kemarin.",
+          "english": "The fever since Monday. The cough only since yesterday.",
+          "feedback": "Sejak (since) before the day, and baru for 'only just': precise and useful.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya demam tiga hari yang lalu.",
+          "english": "I had a fever three days ago.",
+          "feedback": "This sounds as if the fever was three days ago and is over. Sudah tiga hari (it's been three days) says it's still going.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "doctor",
+      "indonesian": "Ada alergi obat?",
+      "english": "Are you allergic to any medicines?",
+      "audio": "audio/id/scenario/clinic-n3.mp3",
+      "options": [
+        {
+          "phraseId": "doc-11",
+          "quality": "good",
+          "feedback": "The medicine goes straight after alergi, with no word for 'to'. Always say it before anything is prescribed.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Tidak ada, Dok.",
+          "english": "No, none.",
+          "feedback": "An ada question is answered ada or tidak ada: a clear no.",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Saya alergi ke penisilin.",
+          "english": "I'm allergic to penicillin.",
+          "feedback": "Ke is 'to' for places you go. Alergi goes straight before the thing: alergi penisilin.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "doctor",
+      "indonesian": "Tenggorokannya radang. Sepertinya infeksi virus.",
+      "english": "Your throat's inflamed. It looks like a viral infection.",
+      "audio": "audio/id/scenario/clinic-n4.mp3",
+      "options": [
+        {
+          "phraseId": "doc-12",
+          "quality": "good",
+          "feedback": "A fair question, and Dok keeps it polite.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Perlu antibiotik, Dok?",
+          "english": "Do I need antibiotics?",
+          "feedback": "Perlu …? asks whether something is needed: a good question before you're handed a bag of pills.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya mau antibiotik.",
+          "english": "I want antibiotics.",
+          "feedback": "Too blunt with a doctor, and antibiotics don't touch a virus. Ask instead: Perlu antibiotik, Dok?",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "doctor",
+      "indonesian": "Tidak serius, dan tidak perlu antibiotik. Ini obat penurun panas dan obat batuk. Diminum tiga kali sehari, sesudah makan.",
+      "english": "It's not serious, and you don't need antibiotics. This is for the fever, and this is a cough medicine. Take them three times a day, after meals.",
+      "audio": "audio/id/scenario/clinic-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Tiga kali sehari, sesudah makan, ya, Dok?",
+          "english": "Three times a day after meals, right?",
+          "feedback": "Repeating the dose back is the best way to check you heard it right.",
+          "next": "n6"
+        },
+        {
+          "phraseId": "doc-09",
+          "quality": "awkward",
+          "feedback": "The doctor has just said it: sesudah makan, after meals. Listen for sebelum (before) and sesudah (after), then repeat it back.",
+          "next": "n6"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Kalau demamnya tidak turun, bagaimana, Dok?",
+          "english": "What if the fever doesn't come down?",
+          "feedback": "Kalau … bagaimana? asks what to do if something happens: sensible to ask before you leave.",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "doctor",
+      "indonesian": "Banyak istirahat dan minum air putih, ya. Kalau tiga hari lagi belum sembuh, kontrol lagi.",
+      "english": "Get plenty of rest and drink lots of water. If you're not better in three days, come back and see me.",
+      "audio": "audio/id/scenario/clinic-n6.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Baik, Dok. Terima kasih.",
+          "english": "All right, doctor. Thank you.",
+          "feedback": "Baik (all right) is the polite way to show you've taken instructions in.",
+          "next": "end"
+        },
+        {
+          "phraseId": "doc-13",
+          "quality": "good",
+          "feedback": "If work needs one, ask now, before you pay: clinics are used to it.",
+          "next": "end"
+        },
+        {
+          "phraseId": "rea-02",
+          "quality": "awkward",
+          "feedback": "Said quickly, iya, iya sounds like 'yeah, yeah, I know'. Baik, Dok and a thank you shows you've listened.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "english": "Done. Symptoms go straight after saya (Saya demam, with no punya), sudah or sejak says how long, alergi takes the thing straight after it, and the dose comes as diminum … kali sehari. Call the doctor Dok, and repeat the instructions back.",
+      "end": true,
+      "options": []
+    }
+  }
+}

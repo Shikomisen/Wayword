@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-pe-an",
+  "connector": "pe-, -an, pe-…-an",
+  "gloss": "する人・もの・すること",
+  "title": "名詞：pe-, -an, pe-…-an",
+  "pattern": "pe- + 語根 = する人 (penjual) · 語根 + -an = もの (makanan) · pe-…-an = すること (pembayaran)",
+  "explanation": "pe- は「〜する人」を作ります。日本語の「〜手」「〜者」に当たり、me- と同じ音の変化が起きます：penjual（売り手。jual から）、pembeli（買い手。beli から）、penulis（作家。tulis から）、pemandu（ガイド）。語根に -an を付けると、そこから生まれるもの・使うものになります。「食べる → 食べ物」と同じ発想です：makanan（食べ物）、minuman（飲み物）、tulisan（書いたもの、文字）、pilihan（選択肢）、tabungan（貯金）。pe-…-an は行為や手続きを表し、看板、書類、役所で使う硬い言葉です。日本語の「支払」「職業」のような漢語に近い響きです：pembayaran（支払い）、pekerjaan（仕事、職業）、per- の形では pertanyaan（質問）、perbaikan（修理）。辞書を引く時は接辞を外し、me- と同じように音の変化を戻します：pembayaran → bayar、penulis → tulis。",
+  "natural": "-an の名詞は日常語です：makanan、minuman、kembalian（おつり）、tagihan（請求書、お会計）。pe-…-an の名詞は看板、書類、窓口向きです：Pembayaran di kasir（お支払いはレジで）。",
+  "stiff": "会話で pe-…-an の名詞を使うと、書類のように聞こえることがあります。Bagaimana pembayarannya?（お支払い方法は？）はホテルのフロントなら自然ですが、友達となら Bayarnya gimana?（どうやって払う？）。くだけた会話では pekerjaan の代わりに kerjaan：Kerjaannya apa sekarang?（今、何の仕事してるの？）",
+  "examples": [
+    {
+      "id": "gx-pe-an-1",
+      "indonesian": "Tetangga saya penjual sayur di pasar.",
+      "japanese": "近所の人は市場で野菜を売っています。",
+      "chunks": [
+        {
+          "t": "Tetangga ",
+          "w": "w-tetangga"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "penjual "
+        },
+        {
+          "t": "sayur ",
+          "w": "w-sayur"
+        },
+        {
+          "t": "di pasar.",
+          "w": "w-pasar"
+        }
+      ],
+      "gap": {
+        "before": "Tetangga saya ",
+        "answer": "penjual",
+        "after": " sayur di pasar.",
+        "options": [
+          "penjual",
+          "pembeli",
+          "penjualan"
+        ],
+        "why": "売る人は pe- ＋ jual。pembeli は「買う人」、penjualan は「販売、売り上げ」です。"
+      },
+      "audio": "audio/id/grammar/gx-pe-an-1.mp3",
+      "tags": [
+        "文法",
+        "pe-an"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-pe-an-2",
+      "indonesian": "Maaf, pekerjaan Anda apa?",
+      "japanese": "失礼ですが、ご職業は？",
+      "chunks": [
+        {
+          "t": "Maaf, "
+        },
+        {
+          "t": "pekerjaan ",
+          "w": "w-pekerjaan"
+        },
+        {
+          "t": "Anda ",
+          "w": "w-anda"
+        },
+        {
+          "t": "apa?",
+          "w": "w-apa"
+        }
+      ],
+      "gap": {
+        "before": "Maaf, ",
+        "answer": "pekerjaan",
+        "after": " Anda apa?",
+        "options": [
+          "pekerjaan",
+          "pekerja",
+          "bekerja"
+        ],
+        "why": "仕事・職業は pe- ＋ kerja ＋ -an。pekerja は「働く人、労働者」です。"
+      },
+      "audio": "audio/id/grammar/gx-pe-an-2.mp3",
+      "tags": [
+        "文法",
+        "pe-an"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-pe-an-3",
+      "indonesian": "Tulisannya kecil sekali, saya tidak bisa baca.",
+      "japanese": "字が小さすぎて読めません。",
+      "chunks": [
+        {
+          "t": "Tulisannya "
+        },
+        {
+          "t": "kecil sekali, ",
+          "w": "w-kecil"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tidak bisa "
+        },
+        {
+          "t": "baca.",
+          "w": "w-baca"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Tulisan",
+        "after": "nya kecil sekali, saya tidak bisa baca.",
+        "options": [
+          "Tulisan",
+          "Penulis",
+          "Penulisan"
+        ],
+        "why": "書かれたもの（文字）は tulis ＋ -an。penulis は書く人、penulisan は書くこと（行為）です。"
+      },
+      "audio": "audio/id/grammar/gx-pe-an-3.mp3",
+      "tags": [
+        "文法",
+        "pe-an"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-pe-an-4",
+      "indonesian": "Pembayarannya bisa pakai kartu kredit?",
+      "japanese": "支払いはクレジットカードでできますか？",
+      "chunks": [
+        {
+          "t": "Pembayarannya ",
+          "w": "w-bayar"
+        },
+        {
+          "t": "bisa ",
+          "w": "w-bisa"
+        },
+        {
+          "t": "pakai ",
+          "w": "w-memakai"
+        },
+        {
+          "t": "kartu kredit?",
+          "w": "w-kartu-kredit"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Pembayaran",
+        "after": "nya bisa pakai kartu kredit?",
+        "options": [
+          "Pembayaran",
+          "Pembayar",
+          "Bayaran"
+        ],
+        "why": "支払い（の手続き）は pe- ＋ bayar ＋ -an。pembayar は支払う人、bayaran は給料・報酬です。"
+      },
+      "audio": "audio/id/grammar/gx-pe-an-4.mp3",
+      "tags": [
+        "文法",
+        "pe-an"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "restaurant",
+  "title": "ワルン・レストラン",
+  "order": 5,
+  "description": "ワルン（小さな大衆食堂）やレストランでの注文：席、メニュー、辛さ、店内か持ち帰りか、支払い。若い店員さんは Mas か Mbak、年上なら Pak か Bu と呼びます。",
+  "phrases": [
+    {
+      "id": "res-01",
+      "indonesian": "Ada meja untuk dua orang?",
+      "japanese": "2人ですが、席はありますか？",
+      "registerNotes": "レストランで。ワルンでは空いているところに座るだけで、長いすで相席になることもよくあります。人数は変えて使えます：tiga orang、empat orang。",
+      "audio": "audio/id/res-01.mp3",
+      "tags": [
+        "レストラン",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-02",
+      "indonesian": "Boleh lihat menunya?",
+      "japanese": "メニューを見せてもらえますか？",
+      "registerNotes": "-nya で「（このお店の）そのメニュー」になります。若い店員さんには Mas か Mbak をつけて：Boleh lihat menunya, Mbak?",
+      "cultureNote": "印刷したメニューがないワルンも多く、料理名が壁に書いてあったり、できた料理が入口のガラスケースに並んでいて、指さして選んだりします。",
+      "audio": "audio/id/res-02.mp3",
+      "tags": [
+        "レストラン",
+        "注文"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-03",
+      "indonesian": "Saya mau pesan nasi goreng satu.",
+      "japanese": "ナシゴレンを一つお願いします。",
+      "registerNotes": "ワルンでは、もっと短くても同じくらいていねいです：Nasi goreng satu, ya。",
+      "pitfallNote": "注文では、数は料理の後ろ：nasi goreng satu、es teh dua。英語式に satu nasi goreng と前に置かず、日本語の「ナシゴレン一つ」と同じ順番で言いましょう。店員さんも注文をこの形でくり返します。",
+      "audio": "audio/id/res-03.mp3",
+      "tags": [
+        "レストラン",
+        "注文",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-04",
+      "indonesian": "Jangan pedas, ya.",
+      "japanese": "辛くしないでくださいね。",
+      "registerNotes": "ya でやわらかいお願いになります。くだけた言い方では nggak pedas, ya。少しだけ辛くしてほしいなら sedikit pedas。",
+      "pitfallNote": "地元の基準の「少し辛い」でも、かなり辛いことがあります。唐辛子がまったくだめなら tidak pakai cabai（唐辛子なしで）と言い、sambalnya dipisah（サンバルは別にして）と頼みましょう。",
+      "audio": "audio/id/res-04.mp3",
+      "tags": [
+        "レストラン",
+        "注文",
+        "辛さ"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-05",
+      "indonesian": "Tidak pakai micin, ya.",
+      "japanese": "うま味調味料は入れないでください。",
+      "registerNotes": "Micin（または vetsin）は、うま味調味料（MSG）のふだんの呼び方。注文では pakai が「〜入り」なので、tidak pakai は「〜なし」：tidak pakai es（氷なし）、tidak pakai gula（砂糖なし）。",
+      "audio": "audio/id/res-05.mp3",
+      "tags": [
+        "レストラン",
+        "注文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "res-06",
+      "indonesian": "Es tehnya satu lagi, ya.",
+      "japanese": "アイスティーをもう一つお願いします。",
+      "registerNotes": "Satu lagi（もう一つ）は何にでも使えます：nasinya satu lagi（ごはんをもう一つ）。Tambah（足す）もよく使います：tambah nasi, ya（ごはんのおかわりをお願いします）。",
+      "audio": "audio/id/res-06.mp3",
+      "tags": [
+        "レストラン",
+        "注文"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "res-07",
+      "indonesian": "Dibungkus, ya.",
+      "japanese": "持ち帰りでお願いします。",
+      "registerNotes": "店員さんがいつも聞く Makan di sini atau dibungkus?（こちらで召し上がりますか、お持ち帰りですか？）への答え。店内で食べるなら Makan di sini。",
+      "cultureNote": "Bungkus は包みそのもの。ごはんとおかずを茶色いろう引きの紙かバナナの葉で包み、汁やサンバルは口をしばった小さなビニール袋に入れてくれます。",
+      "audio": "audio/id/res-07.mp3",
+      "tags": [
+        "レストラン",
+        "持ち帰り",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-08",
+      "indonesian": "Minta bonnya, ya.",
+      "japanese": "お会計をお願いします。",
+      "registerNotes": "レストランやカフェで、店員さんに言います。ワルンではカウンターに行って Semuanya berapa, Bu?（全部でいくらですか？）と聞きます。",
+      "cultureNote": "ワルンでは食べ終わってから払い、何を食べたかを自分で伝えます。テーブルの皿から取った揚げ物（gorengan）の数も言います。",
+      "audio": "audio/id/res-08.mp3",
+      "tags": [
+        "レストラン",
+        "支払い"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "res-09",
+      "indonesian": "Ini halal?",
+      "japanese": "これはハラールですか？",
+      "registerNotes": "豚肉について直接聞くなら：Ini pakai babi?（これ、豚肉は入っていますか？）",
+      "cultureNote": "インドネシアの食べ物のほとんどはハラールですが、バリ、多くの中華料理店、北スラウェシのようにキリスト教徒が多い地域では、豚肉もよく使われます。",
+      "audio": "audio/id/res-09.mp3",
+      "tags": [
+        "レストラン",
+        "食事制限"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "res-10",
+      "indonesian": "Enak sekali!",
+      "japanese": "とてもおいしいです！",
+      "registerNotes": "Enak は「おいしい」、もっと広く「気持ちいい」「快適」の意味もあります：enak di sini（ここは居心地がいい）。Enak banget はくだけた言い方です。",
+      "audio": "audio/id/res-10.mp3",
+      "tags": [
+        "レストラン",
+        "ほめる"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-11",
+      "indonesian": "Saya sudah kenyang.",
+      "japanese": "もうおなかいっぱいです。",
+      "registerNotes": "Sudah（もう）まで含めて決まった言い方で、十分食べたことを伝えます。",
+      "pitfallNote": "Kenyang は、食べ物でおなかがいっぱいの時だけ。日本語の「いっぱい」とちがい、満員のバスやレストランには使えません。そちらは penuh です。",
+      "audio": "audio/id/res-11.mp3",
+      "tags": [
+        "レストラン",
+        "食事"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-12",
+      "indonesian": "Boleh minta air putih?",
+      "japanese": "お水をもらえますか？",
+      "registerNotes": "Boleh minta …? は、テーブルやカウンターで何かを頼む時の、ていねいで日常的な言い方です。",
+      "pitfallNote": "Air だけだと、洗うための水も含めたただの「水」。飲み水は air putih（直訳「白い水」）、ペットボトルの水は air mineral、またはいちばん有名な銘柄から Aqua とだけ言います。",
+      "audio": "audio/id/res-12.mp3",
+      "tags": [
+        "レストラン",
+        "飲み物"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "res-13",
+      "indonesian": "Es teh manis dua, ya.",
+      "japanese": "甘いアイスティーを二つお願いします。",
+      "registerNotes": "ワルンの定番の飲み物。温かいお茶は teh panas、es jeruk はアイスのオレンジジュースです。",
+      "pitfallNote": "お茶は、何も言わないと甘くして出てきます。それもかなり甘いことが多いです。日本のお茶の感覚で頼むと驚くので、砂糖なしなら teh tawar（甘くないお茶）を：es teh tawar、または teh tawar panas。",
+      "audio": "audio/id/res-13.mp3",
+      "tags": [
+        "レストラン",
+        "飲み物"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

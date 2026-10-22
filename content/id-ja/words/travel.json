@@ -1,0 +1,342 @@
+{
+  "schemaVersion": 1,
+  "id": "words-travel",
+  "title": "Wisata & jalan-jalan",
+  "description": "Berkeliling Jepang dan menikmatinya: penginapan tradisional, pemandian air panas, bagasi, tiket, pindah kereta, dan tempat wisata.",
+  "items": [
+    {
+      "id": "w-kankou",
+      "japanese": "観光",
+      "furigana": "{観光|かんこう}",
+      "indonesian": "wisata, pariwisata",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kankou.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-ryokan",
+      "japanese": "旅館",
+      "furigana": "{旅館|りょかん}",
+      "indonesian": "ryokan (penginapan tradisional Jepang)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-ryokan.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-onsen",
+      "japanese": "温泉",
+      "furigana": "{温泉|おんせん}",
+      "indonesian": "pemandian air panas, onsen",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-onsen.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nimotsu",
+      "japanese": "荷物",
+      "furigana": "{荷物|にもつ}",
+      "indonesian": "barang bawaan, tas; paket",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-nimotsu.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chizu",
+      "japanese": "地図",
+      "furigana": "{地図|ちず}",
+      "indonesian": "peta",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-chizu.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-keshiki",
+      "japanese": "景色",
+      "furigana": "{景色|けしき}",
+      "indonesian": "pemandangan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-keshiki.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-omiyage",
+      "japanese": "お土産",
+      "furigana": "お{土産|みやげ}",
+      "indonesian": "oleh-oleh",
+      "pos": "noun",
+      "usage": "Membawa pulang oleh-oleh kecil untuk rekan kerja dan keluarga setelah bepergian sudah jadi keharusan, sama seperti di Indonesia.",
+      "audio": "audio/ja/words/w-omiyage.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kippu",
+      "japanese": "切符",
+      "furigana": "{切符|きっぷ}",
+      "indonesian": "tiket (kereta, bus)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kippu.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-norikae",
+      "japanese": "乗り換え",
+      "furigana": "{乗|の}り{換|か}え",
+      "indonesian": "pindah kereta, transit",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-norikae.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shuppatsu",
+      "japanese": "出発",
+      "furigana": "{出発|しゅっぱつ}",
+      "indonesian": "keberangkatan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shuppatsu.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-touchaku",
+      "japanese": "到着",
+      "furigana": "{到着|とうちゃく}",
+      "indonesian": "kedatangan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-touchaku.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-madoguchi",
+      "japanese": "窓口",
+      "furigana": "{窓口|まどぐち}",
+      "indonesian": "loket, konter layanan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-madoguchi.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kuukou",
+      "japanese": "空港",
+      "furigana": "{空港|くうこう}",
+      "indonesian": "bandara",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kuukou.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-hikouki",
+      "japanese": "飛行機",
+      "furigana": "{飛行機|ひこうき}",
+      "indonesian": "pesawat",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hikouki.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shinkansen",
+      "japanese": "新幹線",
+      "furigana": "{新幹線|しんかんせん}",
+      "indonesian": "kereta peluru, shinkansen",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shinkansen.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-basu",
+      "japanese": "バス",
+      "furigana": "{バス|ばす}",
+      "indonesian": "bus",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-basu.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-takushii",
+      "japanese": "タクシー",
+      "furigana": "{タクシー|たくしー}",
+      "indonesian": "taksi",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-takushii.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-umi",
+      "japanese": "海",
+      "furigana": "{海|うみ}",
+      "indonesian": "laut, pantai",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-umi.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yama",
+      "japanese": "山",
+      "furigana": "{山|やま}",
+      "indonesian": "gunung",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yama.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kawa",
+      "japanese": "川",
+      "furigana": "{川|かわ}",
+      "indonesian": "sungai",
+      "pos": "noun",
+      "audioHint": "川",
+      "audio": "audio/ja/words/w-kawa.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-jinja",
+      "japanese": "神社",
+      "furigana": "{神社|じんじゃ}",
+      "indonesian": "kuil Shinto",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-jinja.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-otera",
+      "japanese": "お寺",
+      "furigana": "お{寺|てら}",
+      "indonesian": "kuil Buddha, vihara",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-otera.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tomaru",
+      "japanese": "泊まる",
+      "furigana": "{泊|と}まる",
+      "indonesian": "menginap",
+      "pos": "verb",
+      "forms": {
+        "masu": "{泊|と}まります",
+        "te": "{泊|と}まって"
+      },
+      "usage": "Tempat menginap memakai に: 旅館に泊まる.",
+      "audio": "audio/ja/words/w-tomaru.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tsuku",
+      "japanese": "着く",
+      "furigana": "{着|つ}く",
+      "indonesian": "tiba, sampai",
+      "pos": "verb",
+      "forms": {
+        "masu": "{着|つ}きます",
+        "te": "{着|つ}いて"
+      },
+      "usage": "Tempat tujuan memakai に: 駅に着いた (sudah sampai di stasiun).",
+      "audio": "audio/ja/words/w-tsuku.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-mayou",
+      "japanese": "迷う",
+      "furigana": "{迷|まよ}う",
+      "indonesian": "tersesat; bingung memilih",
+      "pos": "verb",
+      "forms": {
+        "masu": "{迷|まよ}います",
+        "te": "{迷|まよ}って"
+      },
+      "usage": "道に迷った — aku tersesat. どれにするか迷う — bingung mau pilih yang mana.",
+      "audio": "audio/ja/words/w-mayou.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tanoshimu",
+      "japanese": "楽しむ",
+      "furigana": "{楽|たの}しむ",
+      "indonesian": "menikmati",
+      "pos": "verb",
+      "forms": {
+        "masu": "{楽|たの}しみます",
+        "te": "{楽|たの}しんで"
+      },
+      "usage": "楽しんでね — selamat bersenang-senang!",
+      "audio": "audio/ja/words/w-tanoshimu.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

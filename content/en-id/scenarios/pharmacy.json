@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "id": "pharmacy",
+  "title": "At the pharmacy",
+  "category": "emergency",
+  "setting": "A small pharmacy (apotek) on a busy street in Yogyakarta. You've had an upset stomach since last night. A young woman in a white coat is behind the counter.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "pharmacist",
+      "indonesian": "Sore, Kak. Ada yang bisa dibantu?",
+      "english": "Afternoon. Can I help you?",
+      "audio": "audio/id/scenario/pharmacy-n1.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Saya sakit perut, Mbak. Sejak tadi malam.",
+          "english": "I've got an upset stomach, since last night.",
+          "feedback": "Specific and clear: what's wrong, and since when. Mbak suits a young woman behind a counter.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "eme-05",
+          "quality": "awkward",
+          "feedback": "True, but vague: she needs to know what kind of sick. Name it, as in Saya sakit perut (I've got a stomach ache).",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Saya punya sakit perut.",
+          "english": "I have a stomach ache.",
+          "feedback": "English 'have' carried over. You don't 'have' an ache with punya: say Saya sakit perut, or Perut saya sakit.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "pharmacist",
+      "indonesian": "Sakit apa, Kak? Sakitnya di mana?",
+      "english": "What's the trouble? Where does it hurt?",
+      "audio": "audio/id/scenario/pharmacy-n2.mp3",
+      "options": [
+        {
+          "phraseId": "eme-08",
+          "quality": "good",
+          "feedback": "Pointing to the spot works anywhere, and she'll give you the word for it.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Perut saya sakit, Mbak.",
+          "english": "My stomach hurts.",
+          "feedback": "Perut saya sakit (my stomach hurts) means the same as saya sakit perut.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "pharmacist",
+      "indonesian": "Sakit perut, ya. Diare juga?",
+      "english": "A stomach ache, then. Diarrhoea too?",
+      "audio": "audio/id/scenario/pharmacy-n3.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Iya, Mbak. Sudah tiga kali.",
+          "english": "Yes, three times so far.",
+          "feedback": "Saying how often helps her choose the right medicine. Kali is 'times'.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Tidak, Mbak. Hanya sakit perut.",
+          "english": "No, just the stomach ache.",
+          "feedback": "Hanya (only, just) narrows it down for her.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "pharmacist",
+      "indonesian": "Ada alergi obat?",
+      "english": "Are you allergic to any medicines?",
+      "audio": "audio/id/scenario/pharmacy-n4.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Tidak ada, Mbak.",
+          "english": "No, none.",
+          "feedback": "Tidak ada (there isn't any) is the natural answer to an Ada …? question.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "doc-11",
+          "quality": "good",
+          "feedback": "Always worth saying. For a serious allergy, have it written on your phone too.",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Bukan, Mbak.",
+          "english": "No.",
+          "feedback": "Bukan denies a noun: it's not that thing. To say you don't have any, it's tidak ada.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "pharmacist",
+      "indonesian": "Ini obatnya, Kak. Diminum tiga kali sehari, satu tablet, sesudah makan. Banyak minum air putih juga, ya.",
+      "english": "Here's the medicine. One tablet three times a day, after meals. And drink plenty of water.",
+      "audio": "audio/id/scenario/pharmacy-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Tiga kali sehari, sesudah makan. Baik, Mbak.",
+          "english": "Three times a day, after meals. OK.",
+          "feedback": "Repeating the dose back is the surest way to get it right.",
+          "next": "n6"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Sebelum makan, ya?",
+          "english": "Before meals?",
+          "feedback": "She said sesudah makan: after meals. Sebelum is before, the opposite.",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya ambil obat ini tiga kali sehari, ya?",
+          "english": "I take this medicine three times a day?",
+          "feedback": "Ambil is to take as in pick up or fetch. In Indonesian you drink medicine, even tablets: minum obat.",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "pharmacist",
+      "indonesian": "Semuanya tiga puluh lima ribu, Kak.",
+      "english": "That's thirty-five thousand altogether.",
+      "audio": "audio/id/scenario/pharmacy-n6.mp3",
+      "options": [
+        {
+          "phraseId": "num-10",
+          "quality": "good",
+          "feedback": "Handing over the exact amount saves everyone hunting for change.",
+          "next": "n7"
+        },
+        {
+          "phraseId": "sho-11",
+          "quality": "good",
+          "feedback": "Pharmacy chains usually take cards; a small one may be cash only, so ask first.",
+          "next": "n7"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Tiga ribu lima ratus, ya?",
+          "english": "Three thousand five hundred?",
+          "feedback": "She said tiga puluh lima ribu: thirty-five thousand. Puluh is tens and ratus is hundreds.",
+          "next": "n7"
+        }
+      ]
+    },
+    "n7": {
+      "speaker": "pharmacist",
+      "indonesian": "Terima kasih. Semoga cepat sembuh, Kak.",
+      "english": "Thank you. I hope you feel better soon.",
+      "audio": "audio/id/scenario/pharmacy-n7.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Amin. Terima kasih, Mbak.",
+          "english": "Amen. Thank you.",
+          "feedback": "Amin is the usual answer to a wish that starts with semoga (may it be that), whatever your faith.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "good",
+          "feedback": "Simple and right for a kind wish.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "english": "Sorted. An apotek sells many medicines over the counter, and the staff expect you to describe the problem: sakit perut, diare or demam, and since when. In Indonesian you drink medicine (minum obat), and the dose comes as tiga kali sehari, sesudah makan. If you're no better in a couple of days, see a doctor.",
+      "end": true,
+      "options": []
+    }
+  }
+}

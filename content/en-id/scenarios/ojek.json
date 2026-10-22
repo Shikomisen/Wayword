@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "id": "ojek",
+  "title": "Riding an ojek",
+  "category": "transport",
+  "setting": "You've booked a motorbike ride on the Gojek app, from your hotel in central Jakarta to Kota Tua, the old town. A driver in a green jacket pulls up beside you.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "driver",
+      "indonesian": "Permisi, Kak. Atas nama Sam?",
+      "english": "Excuse me. Are you Sam?",
+      "audio": "audio/id/scenario/ojek-n1.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Iya, Pak. Saya Sam.",
+          "english": "Yes, I'm Sam.",
+          "feedback": "Simple and polite. Check his plate number against the app before you get on.",
+          "next": "n2"
+        },
+        {
+          "phraseId": "tra-04",
+          "quality": "good",
+          "feedback": "Checking him against the booking is sensible, as every Gojek driver wears the same green jacket.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Iya. Kamu Gojek?",
+          "english": "Yes. Are you the Gojek?",
+          "feedback": "Kamu sounds too familiar with a driver you don't know. Use Pak, or Mas for a young driver, in place of 'you'.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "driver",
+      "indonesian": "Ini helmnya, Kak. Ke Kota Tua, ya?",
+      "english": "Here's your helmet. Kota Tua, right?",
+      "audio": "audio/id/scenario/ojek-n2.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Iya, betul, Pak. Terima kasih.",
+          "english": "Yes, that's right. Thank you.",
+          "feedback": "Betul (right, correct) confirms it. Put the helmet on and do up the strap.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "tra-01",
+          "quality": "awkward",
+          "feedback": "Not wrong, but the destination is already in the app; this is for taxis and ojeks off the street. He only needs Iya, betul.",
+          "next": "n3"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Saya tidak perlu helm, Pak.",
+          "english": "I don't need a helmet.",
+          "feedback": "Helmets are compulsory for passengers too, which is why app drivers carry a spare. Put it on and fasten the strap.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "driver",
+      "indonesian": "Pegangan, ya, Kak. Jalan besar macet, kita lewat jalan kecil.",
+      "english": "Hold on. The main road's jammed, so we'll take the back streets.",
+      "audio": "audio/id/scenario/ojek-n3.mp3",
+      "options": [
+        {
+          "phraseId": "tra-08",
+          "quality": "good",
+          "feedback": "Polite, and drivers take it well. You're the passenger, so it's always fine to ask.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "tra-11",
+          "quality": "good",
+          "feedback": "Easy small talk: everyone in Jakarta has something to say about macet.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Jangan cepat!",
+          "english": "Don't go fast!",
+          "feedback": "Understood, but with no ya and no Pak it sounds like a telling-off. Pelan-pelan, ya, Pak makes it a gentle request.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "driver",
+      "indonesian": "Sudah dekat, Kak. Turunnya di mana?",
+      "english": "We're nearly there. Where would you like to get off?",
+      "audio": "audio/id/scenario/ojek-n4.mp3",
+      "options": [
+        {
+          "phraseId": "tra-07",
+          "quality": "good",
+          "feedback": "Clear and polite. Shorter still: Di sini saja, Pak.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Di depan museum itu, Pak.",
+          "english": "In front of that museum.",
+          "feedback": "Di depan (in front of) plus a landmark is how people give the spot.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "tra-09",
+          "quality": "wrong",
+          "feedback": "He's just said sudah dekat: nearly there. What he's asking is where to stop, so say Di sini saja, Pak or name a landmark.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "driver",
+      "indonesian": "Sudah sampai, Kak. Bayarnya tunai, ya? Dua puluh tiga ribu.",
+      "english": "Here we are. You're paying cash, aren't you? Twenty-three thousand.",
+      "audio": "audio/id/scenario/ojek-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Iya, Pak. Ini dua puluh lima ribu. Kembaliannya ambil saja.",
+          "english": "Yes. Here's twenty-five thousand. Keep the change.",
+          "feedback": "Rounding up for the driver is a small kindness that's always appreciated.",
+          "next": "n6"
+        },
+        {
+          "phraseId": "num-09",
+          "quality": "good",
+          "feedback": "Starting with maaf is right, as drivers often can't break a big note. Keep small notes for ojeks.",
+          "next": "n6"
+        },
+        {
+          "phraseId": "sho-02",
+          "quality": "wrong",
+          "feedback": "App fares are fixed and shown before you book, so there's nothing to bargain. Agree a price only with ojeks off the street, before you get on.",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "driver",
+      "indonesian": "Terima kasih, Kak. Jangan lupa bintang lima, ya!",
+      "english": "Thanks. Don't forget the five stars!",
+      "audio": "audio/id/scenario/ojek-n6.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Iya, Pak. Hati-hati di jalan.",
+          "english": "Sure. Take care on the road.",
+          "feedback": "Hati-hati di jalan is the warm thing to say to anyone heading off, drivers especially.",
+          "next": "end"
+        },
+        {
+          "phraseId": "gre-08",
+          "quality": "good",
+          "feedback": "Simple and right. Rate him in the app afterwards: drivers depend on their ratings.",
+          "next": "end"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Helmnya saya bawa, ya, Pak.",
+          "english": "I'll take the helmet with me.",
+          "feedback": "The helmet belongs to the driver. Hand it back before you walk off.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "english": "Arrived. With an app ojek the fare is fixed and shown up front, so there's no bargaining: pay in cash or through the app, and rate the driver afterwards. Wear the helmet he gives you and hand it back at the end. If he's going too fast, Pelan-pelan, ya, Pak is always fine.",
+      "end": true,
+      "options": []
+    }
+  }
+}

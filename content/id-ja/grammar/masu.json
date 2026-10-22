@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-masu",
+  "connector": "〜ます",
+  "gloss": "kata kerja sopan: positif, negatif, lampau",
+  "title": "〜ます — kata kerja sopan, kini dan lampau",
+  "pattern": "〜ます / 〜ません / 〜ました / 〜ませんでした",
+  "explanation": "Kata kerja sopan berakhiran ます, dan empat bentuk ini cukup untuk sebagian besar percakapan: {行|い}きます (saya pergi, saya akan pergi), {行|い}きません (saya tidak pergi, tidak akan pergi), {行|い}きました (saya sudah pergi, saya pergi kemarin), {行|い}きませんでした (saya tidak pergi, waktu itu). Bahasa Indonesia memakai kata seperti sudah, tidak, dan akan; bahasa Jepang mengubah akhiran kata kerjanya. Tidak ada bentuk khusus untuk masa depan: ます juga berarti “akan”. Setiap kartu kata kerja menampilkan bentuk ます-nya.",
+  "natural": "Bentuk ます tepat dipakai dengan siapa saja selain teman dekat dan keluarga, dan tidak pernah terdengar kasar. Mirip memakai “saya”, bukan “aku”.",
+  "stiff": "ません hanya untuk “tidak” sekarang dan nanti. Untuk masa lalu, pakai ませんでした: {昨日|きのう}は{行|い}きませんでした, bukan {行|い}きませんだった. Dalam bahasa Indonesia kata “kemarin” sudah cukup; dalam bahasa Jepang, kata kerjanya juga harus berubah.",
+  "examples": [
+    {
+      "id": "gx-masu-1",
+      "japanese": "明日、会社に行きます。",
+      "furigana": "{明日|あした}、{会社|かいしゃ}に{行|い}きます。",
+      "romaji": "ashita, kaisha ni ikimasu",
+      "indonesian": "Besok saya ke kantor.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}、",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{会社|かいしゃ}に",
+          "w": "w-kaisha"
+        },
+        {
+          "t": "{行|い}きます。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}、{会社|かいしゃ}に{行|い}き",
+        "answer": "ます",
+        "after": "。",
+        "options": [
+          "ます",
+          "ました",
+          "ません"
+        ],
+        "why": "Besok: ます biasa sudah berarti “akan”."
+      },
+      "audio": "audio/ja/grammar/gx-masu-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "masu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-masu-2",
+      "japanese": "昨日は早く寝ました。",
+      "furigana": "{昨日|きのう}は{早|はや}く{寝|ね}ました。",
+      "romaji": "kinō wa hayaku nemashita",
+      "indonesian": "Kemarin saya tidur cepat.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{昨日|きのう}は",
+          "w": "w-kinou"
+        },
+        {
+          "t": "{早|はや}く"
+        },
+        {
+          "t": "{寝|ね}ました。",
+          "w": "w-neru"
+        }
+      ],
+      "gap": {
+        "before": "{昨日|きのう}は{早|はや}く{寝|ね}",
+        "answer": "ました",
+        "after": "。",
+        "options": [
+          "ました",
+          "ます",
+          "ません"
+        ],
+        "why": "Kemarin, sudah terjadi: ました."
+      },
+      "audio": "audio/ja/grammar/gx-masu-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "masu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-masu-3",
+      "japanese": "お酒は飲みません。",
+      "furigana": "お{酒|さけ}は{飲|の}みません。",
+      "romaji": "o-sake wa nomimasen",
+      "indonesian": "Saya tidak minum alkohol.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "お{酒|さけ}は",
+          "w": "w-osake"
+        },
+        {
+          "t": "{飲|の}みません。",
+          "w": "w-nomu"
+        }
+      ],
+      "gap": {
+        "before": "お{酒|さけ}は{飲|の}み",
+        "answer": "ません",
+        "after": "。",
+        "options": [
+          "ません",
+          "ます",
+          "ませんでした"
+        ],
+        "why": "Tidak, sebagai kebiasaan: ません."
+      },
+      "audio": "audio/ja/grammar/gx-masu-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "masu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-masu-4",
+      "japanese": "先週は仕事を休みませんでした。",
+      "furigana": "{先週|せんしゅう}は{仕事|しごと}を{休|やす}みませんでした。",
+      "romaji": "senshū wa shigoto o yasumimasen deshita",
+      "indonesian": "Minggu lalu saya tidak mengambil cuti.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{先週|せんしゅう}は",
+          "w": "w-senshuu"
+        },
+        {
+          "t": "{仕事|しごと}を",
+          "w": "w-shigoto"
+        },
+        {
+          "t": "{休|やす}みませんでした。",
+          "w": "w-yasumu"
+        }
+      ],
+      "gap": {
+        "before": "{先週|せんしゅう}は{仕事|しごと}を{休|やす}み",
+        "answer": "ませんでした",
+        "after": "。",
+        "options": [
+          "ませんでした",
+          "ません",
+          "ました"
+        ],
+        "why": "Tidak, di masa lalu: ませんでした."
+      },
+      "audio": "audio/ja/grammar/gx-masu-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "masu"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

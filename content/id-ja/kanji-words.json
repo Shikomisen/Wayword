@@ -1,0 +1,2333 @@
+{
+  "schemaVersion": 1,
+  "id": "kanji-words",
+  "kind": "characters",
+  "title": "Kanji di kata-katamu",
+  "script": "kanji",
+  "description": "Kanji di balik dek kata: pelajari hurufnya di sini, lalu kamu akan terus bertemu dengannya di 食べる, 来週, 電車. Untuk dikenali, bukan untuk ditulis.",
+  "groups": [
+    {
+      "id": "people",
+      "title": "Orang & dasar",
+      "description": "Siapa dan apa: kanji dalam kata-kata tentang orang."
+    },
+    {
+      "id": "time",
+      "title": "Waktu",
+      "description": "Pagi, malam, minggu ini, dan minggu depan."
+    },
+    {
+      "id": "actions",
+      "title": "Kata kerja sehari-hari",
+      "description": "Satu kanji, lalu hiragana: 食べる, 飲む, 見る. Kanji membawa arti, kana membawa tata bahasa: saat kata kerjanya berubah bentuk, hanya bagian kana yang berubah."
+    },
+    {
+      "id": "describe",
+      "title": "Sifat & perasaan",
+      "description": "Kata sifat, dan 気 dalam 元気 dan 天気."
+    },
+    {
+      "id": "places",
+      "title": "Tempat & benda",
+      "description": "Toko, sekolah, kantor, dan bepergian."
+    },
+    {
+      "id": "nature",
+      "title": "Cuaca & musim",
+      "description": "Jepang punya empat musim, bukan dua seperti Indonesia, dan setiap musim ditulis dengan satu kanji."
+    },
+    {
+      "id": "work",
+      "title": "Kerja & belajar",
+      "description": "Termasuk dua kata yang kanjinya hanya bermakna jika berpasangan."
+    }
+  ],
+  "characters": [
+    {
+      "id": "kw-hito",
+      "character": "人",
+      "japanese": "人",
+      "furigana": [
+        {
+          "b": "人",
+          "r": "ひと"
+        }
+      ],
+      "readings": [
+        "ひと",
+        "じん",
+        "にん"
+      ],
+      "romaji": "hito / jin",
+      "indonesian": "orang",
+      "audio": "audio/ja/chars/kw-hito.mp3",
+      "audioHint": "ひと",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "orang"
+      ],
+      "difficulty": 1,
+      "note": "日本人 (にほんじん) adalah orang Jepang; 一人 (ひとり) berarti satu orang, atau sendirian.",
+      "seenIn": [
+        "w-hito",
+        "w-hitori",
+        "w-nihonjin",
+        "w-koibito",
+        "s-28",
+        "s-64"
+      ]
+    },
+    {
+      "id": "kw-watashi",
+      "character": "私",
+      "japanese": "私",
+      "furigana": [
+        {
+          "b": "私",
+          "r": "わたし"
+        }
+      ],
+      "readings": [
+        "わたし",
+        "し"
+      ],
+      "romaji": "watashi",
+      "indonesian": "saya, aku; pribadi",
+      "audio": "audio/ja/chars/kw-watashi.mp3",
+      "audioHint": "わたし",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "orang"
+      ],
+      "difficulty": 1,
+      "seenIn": [
+        "w-watashi",
+        "gx-desu-1",
+        "gx-desu-2",
+        "gx-ga-subject-1",
+        "gx-no-1",
+        "gx-mo-1"
+      ]
+    },
+    {
+      "id": "kw-nani",
+      "character": "何",
+      "japanese": "何",
+      "furigana": [
+        {
+          "b": "何",
+          "r": "なに"
+        }
+      ],
+      "readings": [
+        "なに",
+        "なん"
+      ],
+      "romaji": "nani / nan",
+      "indonesian": "apa",
+      "audio": "audio/ja/chars/kw-nani.mp3",
+      "audioHint": "なに",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "orang"
+      ],
+      "difficulty": 1,
+      "note": "Dibaca なん sebelum bunyi d, t, dan n: 何ですか, 何で.",
+      "seenIn": [
+        "w-nani",
+        "s-04",
+        "s-08",
+        "s-61",
+        "gx-wa-2",
+        "gx-kara-made-4"
+      ]
+    },
+    {
+      "id": "kw-tomo",
+      "character": "友",
+      "japanese": "友",
+      "furigana": [
+        {
+          "b": "友",
+          "r": "とも"
+        }
+      ],
+      "readings": [
+        "とも",
+        "ゆう"
+      ],
+      "romaji": "tomo / yū",
+      "indonesian": "teman",
+      "audio": "audio/ja/chars/kw-tomo.mp3",
+      "audioHint": "とも",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "orang"
+      ],
+      "difficulty": 2,
+      "note": "友達 (ともだち): kata sehari-hari untuk teman.",
+      "seenIn": [
+        "w-tomodachi",
+        "s-01",
+        "s-23",
+        "gx-desu-4",
+        "gx-ni-4",
+        "gx-no-3"
+      ]
+    },
+    {
+      "id": "kw-ie",
+      "character": "家",
+      "japanese": "家",
+      "furigana": [
+        {
+          "b": "家",
+          "r": "いえ"
+        }
+      ],
+      "readings": [
+        "いえ",
+        "うち",
+        "か"
+      ],
+      "romaji": "ie / ka",
+      "indonesian": "rumah",
+      "audio": "audio/ja/chars/kw-ie.mp3",
+      "audioHint": "いえ",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "orang"
+      ],
+      "difficulty": 1,
+      "note": "家族 (かぞく) berarti keluarga. うち adalah \"rumah\" yang lebih hangat, seperti \"rumah kita\": うちに帰る.",
+      "seenIn": [
+        "w-kazoku",
+        "w-ie",
+        "w-kaji",
+        "w-yachin",
+        "s-12",
+        "s-31"
+      ]
+    },
+    {
+      "id": "kw-chichi",
+      "character": "父",
+      "japanese": "父",
+      "furigana": [
+        {
+          "b": "父",
+          "r": "ちち"
+        }
+      ],
+      "readings": [
+        "ちち",
+        "ふ"
+      ],
+      "romaji": "chichi / fu",
+      "indonesian": "ayah",
+      "audio": "audio/ja/chars/kw-chichi.mp3",
+      "audioHint": "ちち",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "orang"
+      ],
+      "difficulty": 2,
+      "note": "Ayahmu sendiri, saat bercerita kepada orang lain, adalah 父; ayah orang lain (atau ayahmu sendiri saat kamu memanggilnya) adalah お父さん.",
+      "seenIn": [
+        "w-otousan",
+        "gx-ageru-2"
+      ]
+    },
+    {
+      "id": "kw-haha",
+      "character": "母",
+      "japanese": "母",
+      "furigana": [
+        {
+          "b": "母",
+          "r": "はは"
+        }
+      ],
+      "readings": [
+        "はは",
+        "ぼ"
+      ],
+      "romaji": "haha / bo",
+      "indonesian": "ibu",
+      "audio": "audio/ja/chars/kw-haha.mp3",
+      "audioHint": "はは",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "orang"
+      ],
+      "difficulty": 2,
+      "note": "Ibumu sendiri, saat bercerita kepada orang lain, adalah 母; ibu orang lain (atau ibumu sendiri saat kamu memanggilnya) adalah お母さん.",
+      "seenIn": [
+        "w-okaasan"
+      ]
+    },
+    {
+      "id": "kw-ko",
+      "character": "子",
+      "japanese": "子",
+      "furigana": [
+        {
+          "b": "子",
+          "r": "こ"
+        }
+      ],
+      "readings": [
+        "こ",
+        "し"
+      ],
+      "romaji": "ko / shi",
+      "indonesian": "anak",
+      "audio": "audio/ja/chars/kw-ko.mp3",
+      "audioHint": "こ",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "orang"
+      ],
+      "difficulty": 1,
+      "note": "子供 (こども) berarti anak; 女の子 anak perempuan, 男の子 anak laki-laki.",
+      "seenIn": [
+        "w-kodomo",
+        "w-isu",
+        "s-18",
+        "cx-toki-1"
+      ]
+    },
+    {
+      "id": "kw-na",
+      "character": "名",
+      "japanese": "名",
+      "furigana": [
+        {
+          "b": "名",
+          "r": "な"
+        }
+      ],
+      "readings": [
+        "な",
+        "めい"
+      ],
+      "romaji": "na / mei",
+      "indonesian": "nama",
+      "audio": "audio/ja/chars/kw-na.mp3",
+      "audioHint": "な",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "orang"
+      ],
+      "difficulty": 2,
+      "note": "名前 (なまえ): nama. Mudah diingat, bunyinya mirip \"nama\".",
+      "seenIn": [
+        "w-namae",
+        "w-yuumei",
+        "gx-wa-2",
+        "gx-mitai-2"
+      ]
+    },
+    {
+      "id": "kw-mae",
+      "character": "前",
+      "japanese": "前",
+      "furigana": [
+        {
+          "b": "前",
+          "r": "まえ"
+        }
+      ],
+      "readings": [
+        "まえ",
+        "ぜん"
+      ],
+      "romaji": "mae / zen",
+      "indonesian": "sebelum, depan",
+      "audio": "audio/ja/chars/kw-mae.mp3",
+      "audioHint": "まえ",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "orang"
+      ],
+      "difficulty": 2,
+      "note": "名前 (なまえ) nama, 午前 (ごぜん) sebelum tengah hari, 駅の前 di depan stasiun.",
+      "seenIn": [
+        "w-namae",
+        "w-mae",
+        "s-35",
+        "gx-wa-2",
+        "gx-de-4",
+        "gx-teoku-4"
+      ]
+    },
+    {
+      "id": "kw-kare",
+      "character": "彼",
+      "japanese": "彼",
+      "furigana": [
+        {
+          "b": "彼",
+          "r": "かれ"
+        }
+      ],
+      "readings": [
+        "かれ",
+        "かの"
+      ],
+      "romaji": "kare",
+      "indonesian": "dia (laki-laki)",
+      "audio": "audio/ja/chars/kw-kare.mp3",
+      "audioHint": "かれ",
+      "group": "people",
+      "tags": [
+        "kanji",
+        "orang"
+      ],
+      "difficulty": 3,
+      "note": "Bahasa Indonesia cukup memakai \"dia\", tapi bahasa Jepang membedakannya: 彼女 (かのじょ) adalah dia (perempuan), atau pacar perempuan. 彼氏 (かれし) adalah pacar laki-laki.",
+      "seenIn": [
+        "w-kanojo",
+        "w-kare",
+        "w-kareshi",
+        "s-21",
+        "cx-te-4",
+        "cx-soshite-3"
+      ]
+    },
+    {
+      "id": "kw-ima",
+      "character": "今",
+      "japanese": "今",
+      "furigana": [
+        {
+          "b": "今",
+          "r": "いま"
+        }
+      ],
+      "readings": [
+        "いま",
+        "こん"
+      ],
+      "romaji": "ima / kon",
+      "indonesian": "sekarang",
+      "audio": "audio/ja/chars/kw-ima.mp3",
+      "audioHint": "いま",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 1,
+      "note": "今日 (きょう) hari ini dan 今晩 (こんばん) malam ini sama-sama diawali kanji ini.",
+      "seenIn": [
+        "w-kyou",
+        "w-ima",
+        "w-konban",
+        "w-kondo",
+        "s-03",
+        "s-35"
+      ]
+    },
+    {
+      "id": "kw-asa",
+      "character": "朝",
+      "japanese": "朝",
+      "furigana": [
+        {
+          "b": "朝",
+          "r": "あさ"
+        }
+      ],
+      "readings": [
+        "あさ",
+        "ちょう"
+      ],
+      "romaji": "asa / chō",
+      "indonesian": "pagi",
+      "audio": "audio/ja/chars/kw-asa.mp3",
+      "audioHint": "あさ",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 2,
+      "note": "朝ご飯 (あさごはん): sarapan.",
+      "seenIn": [
+        "w-asa",
+        "w-asagohan",
+        "s-35",
+        "s-36",
+        "s-45",
+        "gx-wo-1"
+      ]
+    },
+    {
+      "id": "kw-hiru",
+      "character": "昼",
+      "japanese": "昼",
+      "furigana": [
+        {
+          "b": "昼",
+          "r": "ひる"
+        }
+      ],
+      "readings": [
+        "ひる",
+        "ちゅう"
+      ],
+      "romaji": "hiru / chū",
+      "indonesian": "siang",
+      "audio": "audio/ja/chars/kw-hiru.mp3",
+      "audioHint": "ひる",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 2,
+      "note": "昼ご飯 (ひるごはん): makan siang.",
+      "seenIn": [
+        "w-hiru",
+        "gx-mashou-1"
+      ]
+    },
+    {
+      "id": "kw-yoru",
+      "character": "夜",
+      "japanese": "夜",
+      "furigana": [
+        {
+          "b": "夜",
+          "r": "よる"
+        }
+      ],
+      "readings": [
+        "よる",
+        "や"
+      ],
+      "romaji": "yoru / ya",
+      "indonesian": "malam",
+      "audio": "audio/ja/chars/kw-yoru.mp3",
+      "audioHint": "よる",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-yoru",
+        "s-64"
+      ]
+    },
+    {
+      "id": "kw-ban",
+      "character": "晩",
+      "japanese": "晩",
+      "furigana": [
+        {
+          "b": "晩",
+          "r": "ばん"
+        }
+      ],
+      "readings": [
+        "ばん"
+      ],
+      "romaji": "ban",
+      "indonesian": "petang, malam",
+      "audio": "audio/ja/chars/kw-ban.mp3",
+      "audioHint": "ばん",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 3,
+      "note": "晩ご飯 (ばんごはん) makan malam, 今晩 (こんばん) malam ini.",
+      "seenIn": [
+        "w-konban",
+        "w-bangohan",
+        "s-04",
+        "gx-de-1",
+        "gx-tai-4",
+        "gx-ta-2"
+      ]
+    },
+    {
+      "id": "kw-mai",
+      "character": "毎",
+      "japanese": "毎",
+      "furigana": [
+        {
+          "b": "毎",
+          "r": "まい"
+        }
+      ],
+      "readings": [
+        "まい"
+      ],
+      "romaji": "mai",
+      "indonesian": "setiap",
+      "audio": "audio/ja/chars/kw-mai.mp3",
+      "audioHint": "まい",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 2,
+      "note": "毎日 (まいにち) setiap hari, 毎朝 (まいあさ) setiap pagi.",
+      "seenIn": [
+        "w-mainichi",
+        "w-maishuu",
+        "s-02",
+        "s-36",
+        "gx-wo-1",
+        "gx-ni-1"
+      ]
+    },
+    {
+      "id": "kw-shuu",
+      "character": "週",
+      "japanese": "週",
+      "furigana": [
+        {
+          "b": "週",
+          "r": "しゅう"
+        }
+      ],
+      "readings": [
+        "しゅう"
+      ],
+      "romaji": "shū",
+      "indonesian": "minggu, pekan",
+      "audio": "audio/ja/chars/kw-shuu.mp3",
+      "audioHint": "しゅう",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 2,
+      "note": "週末 (しゅうまつ) akhir pekan, 来週 minggu depan, 先週 minggu lalu.",
+      "seenIn": [
+        "w-shuumatsu",
+        "w-raishuu",
+        "w-senshuu",
+        "w-maishuu",
+        "s-08",
+        "s-23"
+      ]
+    },
+    {
+      "id": "kw-kuru",
+      "character": "来",
+      "japanese": "来",
+      "furigana": [
+        {
+          "b": "来",
+          "r": "くる"
+        }
+      ],
+      "readings": [
+        "くる",
+        "き",
+        "こ",
+        "らい"
+      ],
+      "romaji": "kuru / rai",
+      "indonesian": "datang; berikutnya",
+      "audio": "audio/ja/chars/kw-kuru.mp3",
+      "audioHint": "くる",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 2,
+      "note": "来週 (らいしゅう): minggu depan, persis seperti \"minggu yang akan datang\".",
+      "seenIn": [
+        "w-raishuu",
+        "w-kuru",
+        "w-shourai",
+        "w-raigetsu",
+        "w-rainen",
+        "s-17"
+      ]
+    },
+    {
+      "id": "kw-saki",
+      "character": "先",
+      "japanese": "先",
+      "furigana": [
+        {
+          "b": "先",
+          "r": "さき"
+        }
+      ],
+      "readings": [
+        "さき",
+        "せん"
+      ],
+      "romaji": "saki / sen",
+      "indonesian": "depan, lebih dulu; lalu",
+      "audio": "audio/ja/chars/kw-saki.mp3",
+      "audioHint": "さき",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 2,
+      "note": "先週 (せんしゅう) minggu lalu, 先生 (せんせい) guru.",
+      "seenIn": [
+        "w-senshuu",
+        "w-sensei",
+        "w-senpai",
+        "w-sengetsu",
+        "s-62",
+        "gx-desu-3"
+      ]
+    },
+    {
+      "id": "kw-ato",
+      "character": "後",
+      "japanese": "後",
+      "furigana": [
+        {
+          "b": "後",
+          "r": "あと"
+        }
+      ],
+      "readings": [
+        "あと",
+        "ご",
+        "うし"
+      ],
+      "romaji": "ato / go",
+      "indonesian": "setelah, nanti; belakang",
+      "audio": "audio/ja/chars/kw-ato.mp3",
+      "audioHint": "あと",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 2,
+      "note": "後で (あとで): nanti. 午後 (ごご) adalah sesudah tengah hari.",
+      "seenIn": [
+        "w-atode",
+        "w-kouhai",
+        "w-saigo",
+        "s-13",
+        "gx-kamoshirenai-1",
+        "num-14"
+      ]
+    },
+    {
+      "id": "kw-aida",
+      "character": "間",
+      "japanese": "間",
+      "furigana": [
+        {
+          "b": "間",
+          "r": "あいだ"
+        }
+      ],
+      "readings": [
+        "あいだ",
+        "かん",
+        "ま"
+      ],
+      "romaji": "aida / kan",
+      "indonesian": "selang, antara",
+      "audio": "audio/ja/chars/kw-aida.mp3",
+      "audioHint": "あいだ",
+      "group": "time",
+      "tags": [
+        "kanji",
+        "waktu"
+      ],
+      "difficulty": 3,
+      "note": "時間 (じかん) berarti waktu; 間に合う (まにあう) berarti sempat, tidak terlambat.",
+      "seenIn": [
+        "w-jikan",
+        "w-maniau",
+        "w-konoaida",
+        "gx-kara-made-3",
+        "gx-aru-iru-3",
+        "cx-demo-2"
+      ]
+    },
+    {
+      "id": "kw-miru",
+      "character": "見",
+      "japanese": "見",
+      "furigana": [
+        {
+          "b": "見",
+          "r": "みる"
+        }
+      ],
+      "readings": [
+        "みる",
+        "けん"
+      ],
+      "romaji": "miru / ken",
+      "indonesian": "melihat, menonton",
+      "audio": "audio/ja/chars/kw-miru.mp3",
+      "audioHint": "みる",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 1,
+      "seenIn": [
+        "w-miru",
+        "w-mitsukeru",
+        "w-iken",
+        "s-09",
+        "s-34",
+        "s-37"
+      ]
+    },
+    {
+      "id": "kw-kiku",
+      "character": "聞",
+      "japanese": "聞",
+      "furigana": [
+        {
+          "b": "聞",
+          "r": "きく"
+        }
+      ],
+      "readings": [
+        "きく",
+        "ぶん"
+      ],
+      "romaji": "kiku / bun",
+      "indonesian": "mendengar; bertanya",
+      "audio": "audio/ja/chars/kw-kiku.mp3",
+      "audioHint": "きく",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 2,
+      "note": "新聞 (しんぶん): koran, \"hal baru yang didengar\".",
+      "seenIn": [
+        "w-kiku",
+        "cx-kedo-4",
+        "cx-nagara-1",
+        "gx-temiru-4",
+        "gx-temo-4"
+      ]
+    },
+    {
+      "id": "kw-iu",
+      "character": "言",
+      "japanese": "言",
+      "furigana": [
+        {
+          "b": "言",
+          "r": "いう"
+        }
+      ],
+      "readings": [
+        "いう",
+        "こと",
+        "げん"
+      ],
+      "romaji": "iu / gen",
+      "indonesian": "berkata",
+      "audio": "audio/ja/chars/kw-iu.mp3",
+      "audioHint": "いう",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 2,
+      "note": "言葉 (ことば): kata.",
+      "seenIn": [
+        "w-iu",
+        "w-kotoba",
+        "s-34",
+        "gx-tte-1",
+        "gx-tte-4",
+        "gx-noni-4"
+      ]
+    },
+    {
+      "id": "kw-hanasu",
+      "character": "話",
+      "japanese": "話",
+      "furigana": [
+        {
+          "b": "話",
+          "r": "はなす"
+        }
+      ],
+      "readings": [
+        "はなす",
+        "わ"
+      ],
+      "romaji": "hanasu / wa",
+      "indonesian": "berbicara",
+      "audio": "audio/ja/chars/kw-hanasu.mp3",
+      "audioHint": "はなす",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 2,
+      "note": "電話 (でんわ): telepon, \"bicara listrik\".",
+      "seenIn": [
+        "w-hanasu",
+        "w-denwa",
+        "w-kaiwa",
+        "w-wadai",
+        "s-13",
+        "gx-de-3"
+      ]
+    },
+    {
+      "id": "kw-yomu",
+      "character": "読",
+      "japanese": "読",
+      "furigana": [
+        {
+          "b": "読",
+          "r": "よむ"
+        }
+      ],
+      "readings": [
+        "よむ",
+        "どく"
+      ],
+      "romaji": "yomu / doku",
+      "indonesian": "membaca",
+      "audio": "audio/ja/chars/kw-yomu.mp3",
+      "audioHint": "よむ",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-yomu",
+        "s-26",
+        "gx-youninaru-1"
+      ]
+    },
+    {
+      "id": "kw-kaku",
+      "character": "書",
+      "japanese": "書",
+      "furigana": [
+        {
+          "b": "書",
+          "r": "かく"
+        }
+      ],
+      "readings": [
+        "かく",
+        "しょ"
+      ],
+      "romaji": "kaku / sho",
+      "indonesian": "menulis",
+      "audio": "audio/ja/chars/kw-kaku.mp3",
+      "audioHint": "かく",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-kaku",
+        "num-23",
+        "doc-09"
+      ]
+    },
+    {
+      "id": "kw-taberu",
+      "character": "食",
+      "japanese": "食",
+      "furigana": [
+        {
+          "b": "食",
+          "r": "たべる"
+        }
+      ],
+      "readings": [
+        "たべる",
+        "しょく"
+      ],
+      "romaji": "taberu / shoku",
+      "indonesian": "makan; makanan",
+      "audio": "audio/ja/chars/kw-taberu.mp3",
+      "audioHint": "たべる",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 1,
+      "note": "食事 (しょくじ): makan, waktu makan.",
+      "seenIn": [
+        "w-taberu",
+        "s-27",
+        "s-38",
+        "gx-wo-1",
+        "gx-de-1",
+        "gx-na-adj-2"
+      ]
+    },
+    {
+      "id": "kw-nomu",
+      "character": "飲",
+      "japanese": "飲",
+      "furigana": [
+        {
+          "b": "飲",
+          "r": "のむ"
+        }
+      ],
+      "readings": [
+        "のむ",
+        "いん"
+      ],
+      "romaji": "nomu / in",
+      "indonesian": "minum",
+      "audio": "audio/ja/chars/kw-nomu.mp3",
+      "audioHint": "のむ",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 1,
+      "note": "飲み物 (のみもの): minuman.",
+      "seenIn": [
+        "w-nomu",
+        "w-nomikai",
+        "s-05",
+        "gx-wo-3",
+        "gx-masu-3",
+        "gx-nai-3"
+      ]
+    },
+    {
+      "id": "kw-kau",
+      "character": "買",
+      "japanese": "買",
+      "furigana": [
+        {
+          "b": "買",
+          "r": "かう"
+        }
+      ],
+      "readings": [
+        "かう",
+        "ばい"
+      ],
+      "romaji": "kau / bai",
+      "indonesian": "membeli",
+      "audio": "audio/ja/chars/kw-kau.mp3",
+      "audioHint": "かう",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 2,
+      "note": "買い物 (かいもの): belanja.",
+      "seenIn": [
+        "w-kau",
+        "w-kaimono",
+        "gx-wo-4",
+        "gx-to-and-1",
+        "gx-i-adj-4",
+        "cx-ba-3"
+      ]
+    },
+    {
+      "id": "kw-matsu",
+      "character": "待",
+      "japanese": "待",
+      "furigana": [
+        {
+          "b": "待",
+          "r": "まつ"
+        }
+      ],
+      "readings": [
+        "まつ",
+        "たい"
+      ],
+      "romaji": "matsu / tai",
+      "indonesian": "menunggu",
+      "audio": "audio/ja/chars/kw-matsu.mp3",
+      "audioHint": "まつ",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 2,
+      "note": "ちょっと待って: tunggu sebentar.",
+      "seenIn": [
+        "w-matsu",
+        "w-shoutai",
+        "gx-de-4",
+        "cas-11",
+        "pla-05"
+      ]
+    },
+    {
+      "id": "kw-au",
+      "character": "会",
+      "japanese": "会",
+      "furigana": [
+        {
+          "b": "会",
+          "r": "あう"
+        }
+      ],
+      "readings": [
+        "あう",
+        "かい"
+      ],
+      "romaji": "au / kai",
+      "indonesian": "bertemu",
+      "audio": "audio/ja/chars/kw-au.mp3",
+      "audioHint": "あう",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 2,
+      "note": "会社 (かいしゃ) perusahaan, 会議 (かいぎ) rapat.",
+      "seenIn": [
+        "w-au",
+        "w-kaisha",
+        "w-kaigi",
+        "w-kaishain",
+        "w-kaiwa",
+        "w-nomikai"
+      ]
+    },
+    {
+      "id": "kw-kaeru",
+      "character": "帰",
+      "japanese": "帰",
+      "furigana": [
+        {
+          "b": "帰",
+          "r": "かえる"
+        }
+      ],
+      "readings": [
+        "かえる",
+        "き"
+      ],
+      "romaji": "kaeru / ki",
+      "indonesian": "pulang, kembali",
+      "audio": "audio/ja/chars/kw-kaeru.mp3",
+      "audioHint": "かえる",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 2,
+      "note": "帰る pas dengan \"pulang\" dalam bahasa Indonesia. ただいま adalah yang kamu ucapkan saat tiba di rumah.",
+      "seenIn": [
+        "w-kaeru",
+        "gx-mashou-2",
+        "cx-kara-3",
+        "cx-tara-4",
+        "gx-nakereba-2",
+        "air-06"
+      ]
+    },
+    {
+      "id": "kw-yasumu",
+      "character": "休",
+      "japanese": "休",
+      "furigana": [
+        {
+          "b": "休",
+          "r": "やすむ"
+        }
+      ],
+      "readings": [
+        "やすむ",
+        "きゅう"
+      ],
+      "romaji": "yasumu / kyū",
+      "indonesian": "istirahat, libur",
+      "audio": "audio/ja/chars/kw-yasumu.mp3",
+      "audioHint": "やすむ",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 2,
+      "note": "休み (やすみ): hari libur, liburan.",
+      "seenIn": [
+        "w-yasumu",
+        "w-yasumi",
+        "s-31",
+        "gx-wa-1",
+        "gx-kara-made-3",
+        "gx-masu-4"
+      ]
+    },
+    {
+      "id": "kw-shiru",
+      "character": "知",
+      "japanese": "知",
+      "furigana": [
+        {
+          "b": "知",
+          "r": "しる"
+        }
+      ],
+      "readings": [
+        "しる",
+        "ち"
+      ],
+      "romaji": "shiru / chi",
+      "indonesian": "tahu",
+      "audio": "audio/ja/chars/kw-shiru.mp3",
+      "audioHint": "しる",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 3,
+      "note": "知っています: saya tahu. 知りません: saya tidak tahu.",
+      "seenIn": [
+        "w-shiru",
+        "w-shiriai",
+        "s-21",
+        "gx-teiru-4",
+        "cas-09"
+      ]
+    },
+    {
+      "id": "kw-omou",
+      "character": "思",
+      "japanese": "思",
+      "furigana": [
+        {
+          "b": "思",
+          "r": "おもう"
+        }
+      ],
+      "readings": [
+        "おもう",
+        "し"
+      ],
+      "romaji": "omou / shi",
+      "indonesian": "berpikir",
+      "audio": "audio/ja/chars/kw-omou.mp3",
+      "audioHint": "おもう",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-omou",
+        "s-24",
+        "gx-toomou-1",
+        "gx-toomou-2",
+        "gx-toomou-3",
+        "gx-toomou-4"
+      ]
+    },
+    {
+      "id": "kw-tsukau",
+      "character": "使",
+      "japanese": "使",
+      "furigana": [
+        {
+          "b": "使",
+          "r": "つかう"
+        }
+      ],
+      "readings": [
+        "つかう",
+        "し"
+      ],
+      "romaji": "tsukau / shi",
+      "indonesian": "memakai",
+      "audio": "audio/ja/chars/kw-tsukau.mp3",
+      "audioHint": "つかう",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-tsukau",
+        "s-39",
+        "s-50"
+      ]
+    },
+    {
+      "id": "kw-tsukuru",
+      "character": "作",
+      "japanese": "作",
+      "furigana": [
+        {
+          "b": "作",
+          "r": "つくる"
+        }
+      ],
+      "readings": [
+        "つくる",
+        "さく",
+        "さ"
+      ],
+      "romaji": "tsukuru / saku",
+      "indonesian": "membuat",
+      "audio": "audio/ja/chars/kw-tsukuru.mp3",
+      "audioHint": "つくる",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-tsukuru",
+        "gx-to-and-4",
+        "gx-ka-4",
+        "cx-sorekara-2",
+        "cx-tame-2"
+      ]
+    },
+    {
+      "id": "kw-aruku",
+      "character": "歩",
+      "japanese": "歩",
+      "furigana": [
+        {
+          "b": "歩",
+          "r": "あるく"
+        }
+      ],
+      "readings": [
+        "あるく",
+        "ほ",
+        "ぽ"
+      ],
+      "romaji": "aruku / ho",
+      "indonesian": "berjalan kaki",
+      "audio": "audio/ja/chars/kw-aruku.mp3",
+      "audioHint": "あるく",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 2,
+      "note": "散歩 (さんぽ): jalan-jalan santai.",
+      "seenIn": [
+        "w-aruku",
+        "w-sanpo",
+        "s-06",
+        "gx-kara-made-1",
+        "cx-te-2",
+        "cx-ba-4"
+      ]
+    },
+    {
+      "id": "kw-deru",
+      "character": "出",
+      "japanese": "出",
+      "furigana": [
+        {
+          "b": "出",
+          "r": "でる"
+        }
+      ],
+      "readings": [
+        "でる",
+        "だ",
+        "しゅつ"
+      ],
+      "romaji": "deru / shutsu",
+      "indonesian": "keluar, berangkat",
+      "audio": "audio/ja/chars/kw-deru.mp3",
+      "audioHint": "でる",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 2,
+      "note": "出かける (でかける) pergi keluar; 出口 (でぐち) pintu keluar.",
+      "seenIn": [
+        "w-dekakeru",
+        "w-shuppatsu",
+        "gx-to-and-2",
+        "gx-tai-3",
+        "cx-dakara-1",
+        "gx-teoku-4"
+      ]
+    },
+    {
+      "id": "kw-neru",
+      "character": "寝",
+      "japanese": "寝",
+      "furigana": [
+        {
+          "b": "寝",
+          "r": "ねる"
+        }
+      ],
+      "readings": [
+        "ねる",
+        "しん"
+      ],
+      "romaji": "neru / shin",
+      "indonesian": "tidur",
+      "audio": "audio/ja/chars/kw-neru.mp3",
+      "audioHint": "ねる",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-neru",
+        "w-nebou",
+        "gx-masu-2",
+        "cx-sorekara-4",
+        "cx-kara-2",
+        "cx-dakara-2"
+      ]
+    },
+    {
+      "id": "kw-okiru",
+      "character": "起",
+      "japanese": "起",
+      "furigana": [
+        {
+          "b": "起",
+          "r": "おきる"
+        }
+      ],
+      "readings": [
+        "おきる",
+        "き"
+      ],
+      "romaji": "okiru / ki",
+      "indonesian": "bangun",
+      "audio": "audio/ja/chars/kw-okiru.mp3",
+      "audioHint": "おきる",
+      "group": "actions",
+      "tags": [
+        "kanji",
+        "tindakan"
+      ],
+      "difficulty": 3,
+      "seenIn": [
+        "w-okiru",
+        "w-hayaoki",
+        "s-35",
+        "s-45",
+        "gx-ni-1",
+        "cx-te-1"
+      ]
+    },
+    {
+      "id": "kw-suki",
+      "character": "好",
+      "japanese": "好",
+      "furigana": [
+        {
+          "b": "好",
+          "r": "すき"
+        }
+      ],
+      "readings": [
+        "すき",
+        "この",
+        "こう"
+      ],
+      "romaji": "suki / kō",
+      "indonesian": "suka",
+      "audio": "audio/ja/chars/kw-suki.mp3",
+      "audioHint": "すき",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "menjelaskan"
+      ],
+      "difficulty": 2,
+      "note": "Dalam bahasa Indonesia \"suka\" adalah kata kerja, tapi 好き adalah kata sifat な: 好きです, 好きな人.",
+      "seenIn": [
+        "w-suki",
+        "s-27",
+        "s-28",
+        "s-30",
+        "s-35",
+        "gx-ga-subject-1"
+      ]
+    },
+    {
+      "id": "kw-tanoshii",
+      "character": "楽",
+      "japanese": "楽",
+      "furigana": [
+        {
+          "b": "楽",
+          "r": "たのしい"
+        }
+      ],
+      "readings": [
+        "たのしい",
+        "らく",
+        "がく"
+      ],
+      "romaji": "tanoshii / raku",
+      "indonesian": "senang; mudah",
+      "audio": "audio/ja/chars/kw-tanoshii.mp3",
+      "audioHint": "たのしい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "menjelaskan"
+      ],
+      "difficulty": 2,
+      "note": "楽しみ (たのしみ) menantikan sesuatu; 音楽 (おんがく) musik.",
+      "seenIn": [
+        "w-tanoshii",
+        "w-ongaku",
+        "w-tanoshimi",
+        "w-tanoshimu",
+        "gx-i-adj-1",
+        "cx-kedo-2"
+      ]
+    },
+    {
+      "id": "kw-atarashii",
+      "character": "新",
+      "japanese": "新",
+      "furigana": [
+        {
+          "b": "新",
+          "r": "あたらしい"
+        }
+      ],
+      "readings": [
+        "あたらしい",
+        "しん"
+      ],
+      "romaji": "atarashii / shin",
+      "indonesian": "baru",
+      "audio": "audio/ja/chars/kw-atarashii.mp3",
+      "audioHint": "あたらしい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "menjelaskan"
+      ],
+      "difficulty": 2,
+      "note": "新聞 (しんぶん): koran.",
+      "seenIn": [
+        "w-atarashii",
+        "w-shinkansen",
+        "gx-i-adj-4",
+        "gx-takotogaaru-4"
+      ]
+    },
+    {
+      "id": "kw-furui",
+      "character": "古",
+      "japanese": "古",
+      "furigana": [
+        {
+          "b": "古",
+          "r": "ふるい"
+        }
+      ],
+      "readings": [
+        "ふるい",
+        "こ"
+      ],
+      "romaji": "furui / ko",
+      "indonesian": "lama, tua (benda)",
+      "audio": "audio/ja/chars/kw-furui.mp3",
+      "audioHint": "ふるい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "menjelaskan"
+      ],
+      "difficulty": 2,
+      "note": "Hanya untuk benda; orang yang lebih tua adalah 年上 (としうえ).",
+      "seenIn": [
+        "w-furui"
+      ]
+    },
+    {
+      "id": "kw-takai",
+      "character": "高",
+      "japanese": "高",
+      "furigana": [
+        {
+          "b": "高",
+          "r": "たかい"
+        }
+      ],
+      "readings": [
+        "たかい",
+        "こう"
+      ],
+      "romaji": "takai / kō",
+      "indonesian": "tinggi; mahal",
+      "audio": "audio/ja/chars/kw-takai.mp3",
+      "audioHint": "たかい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "menjelaskan"
+      ],
+      "difficulty": 2,
+      "note": "Bisa tinggi, bisa mahal. 高校 (こうこう) adalah SMA.",
+      "seenIn": [
+        "w-takai",
+        "w-saikou",
+        "s-20",
+        "cx-kedo-1",
+        "cx-ga-2",
+        "gx-toomou-2"
+      ]
+    },
+    {
+      "id": "kw-yasui",
+      "character": "安",
+      "japanese": "安",
+      "furigana": [
+        {
+          "b": "安",
+          "r": "やすい"
+        }
+      ],
+      "readings": [
+        "やすい",
+        "あん"
+      ],
+      "romaji": "yasui / an",
+      "indonesian": "murah; tenang",
+      "audio": "audio/ja/chars/kw-yasui.mp3",
+      "audioHint": "やすい",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "menjelaskan"
+      ],
+      "difficulty": 2,
+      "note": "安心 (あんしん): lega, tenang hati.",
+      "seenIn": [
+        "w-yasui",
+        "w-anshin",
+        "w-fuan",
+        "w-anzen",
+        "s-15",
+        "cx-te-3"
+      ]
+    },
+    {
+      "id": "kw-gen",
+      "character": "元",
+      "japanese": "元",
+      "furigana": [
+        {
+          "b": "元",
+          "r": "げん"
+        }
+      ],
+      "readings": [
+        "げん",
+        "もと"
+      ],
+      "romaji": "gen / moto",
+      "indonesian": "asal",
+      "audio": "audio/ja/chars/kw-gen.mp3",
+      "audioHint": "げん",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "menjelaskan"
+      ],
+      "difficulty": 2,
+      "note": "元気 (げんき): sehat, penuh semangat.",
+      "seenIn": [
+        "w-genki",
+        "s-12",
+        "cx-ba-2"
+      ]
+    },
+    {
+      "id": "kw-ki",
+      "character": "気",
+      "japanese": "気",
+      "furigana": [
+        {
+          "b": "気",
+          "r": "き"
+        }
+      ],
+      "readings": [
+        "き",
+        "け"
+      ],
+      "romaji": "ki",
+      "indonesian": "semangat, energi, udara",
+      "audio": "audio/ja/chars/kw-ki.mp3",
+      "audioHint": "き",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "menjelaskan"
+      ],
+      "difficulty": 2,
+      "note": "元気 (げんき) sehat, 天気 (てんき) cuaca, 電気 (でんき) listrik.",
+      "seenIn": [
+        "w-denki",
+        "w-genki",
+        "w-tenki",
+        "w-kimochi",
+        "w-kibun",
+        "w-kininaru"
+      ]
+    },
+    {
+      "id": "kw-kokoro",
+      "character": "心",
+      "japanese": "心",
+      "furigana": [
+        {
+          "b": "心",
+          "r": "こころ"
+        }
+      ],
+      "readings": [
+        "こころ",
+        "しん"
+      ],
+      "romaji": "kokoro / shin",
+      "indonesian": "hati, pikiran",
+      "audio": "audio/ja/chars/kw-kokoro.mp3",
+      "audioHint": "こころ",
+      "group": "describe",
+      "tags": [
+        "kanji",
+        "menjelaskan"
+      ],
+      "difficulty": 3,
+      "note": "心配 (しんぱい): khawatir.",
+      "seenIn": [
+        "w-shinpai",
+        "w-anshin"
+      ]
+    },
+    {
+      "id": "kw-mise",
+      "character": "店",
+      "japanese": "店",
+      "furigana": [
+        {
+          "b": "店",
+          "r": "みせ"
+        }
+      ],
+      "readings": [
+        "みせ",
+        "てん"
+      ],
+      "romaji": "mise / ten",
+      "indonesian": "toko",
+      "audio": "audio/ja/chars/kw-mise.mp3",
+      "audioHint": "みせ",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "tempat"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-mise",
+        "s-15",
+        "gx-kara-made-4",
+        "gx-aru-iru-1",
+        "cx-te-3",
+        "cx-kedo-1"
+      ]
+    },
+    {
+      "id": "kw-kuruma",
+      "character": "車",
+      "japanese": "車",
+      "furigana": [
+        {
+          "b": "車",
+          "r": "くるま"
+        }
+      ],
+      "readings": [
+        "くるま",
+        "しゃ"
+      ],
+      "romaji": "kuruma / sha",
+      "indonesian": "mobil, kendaraan",
+      "audio": "audio/ja/chars/kw-kuruma.mp3",
+      "audioHint": "くるま",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "tempat"
+      ],
+      "difficulty": 1,
+      "note": "電車 (でんしゃ): kereta, harfiahnya \"kendaraan listrik\", seperti KRL.",
+      "seenIn": [
+        "w-densha",
+        "w-kuruma",
+        "s-57",
+        "gx-de-2",
+        "gx-no-3",
+        "gx-i-adj-4"
+      ]
+    },
+    {
+      "id": "kw-den",
+      "character": "電",
+      "japanese": "電",
+      "furigana": [
+        {
+          "b": "電",
+          "r": "でん"
+        }
+      ],
+      "readings": [
+        "でん"
+      ],
+      "romaji": "den",
+      "indonesian": "listrik",
+      "audio": "audio/ja/chars/kw-den.mp3",
+      "audioHint": "でん",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "tempat"
+      ],
+      "difficulty": 2,
+      "note": "Segala yang memakai listrik: 電車 kereta, 電話 telepon, 電気 lampu.",
+      "seenIn": [
+        "w-denki",
+        "w-densha",
+        "w-denwa",
+        "s-10",
+        "s-13",
+        "s-57"
+      ]
+    },
+    {
+      "id": "kw-gaku",
+      "character": "学",
+      "japanese": "学",
+      "furigana": [
+        {
+          "b": "学",
+          "r": "がく"
+        }
+      ],
+      "readings": [
+        "がく",
+        "まな"
+      ],
+      "romaji": "gaku",
+      "indonesian": "belajar, ilmu",
+      "audio": "audio/ja/chars/kw-gaku.mp3",
+      "audioHint": "がく",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "tempat"
+      ],
+      "difficulty": 2,
+      "note": "学校 (がっこう) sekolah, 大学 (だいがく) universitas.",
+      "seenIn": [
+        "w-gakkou",
+        "w-gakusei",
+        "s-21",
+        "gx-desu-1"
+      ]
+    },
+    {
+      "id": "kw-kou",
+      "character": "校",
+      "japanese": "校",
+      "furigana": [
+        {
+          "b": "校",
+          "r": "こう"
+        }
+      ],
+      "readings": [
+        "こう"
+      ],
+      "romaji": "kō",
+      "indonesian": "sekolah",
+      "audio": "audio/ja/chars/kw-kou.mp3",
+      "audioHint": "こう",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "tempat"
+      ],
+      "difficulty": 3,
+      "note": "学校 (がっこう): sekolah.",
+      "seenIn": [
+        "w-gakkou",
+        "s-20"
+      ]
+    },
+    {
+      "id": "kw-sha",
+      "character": "社",
+      "japanese": "社",
+      "furigana": [
+        {
+          "b": "社",
+          "r": "しゃ"
+        }
+      ],
+      "readings": [
+        "しゃ",
+        "やしろ"
+      ],
+      "romaji": "sha",
+      "indonesian": "perusahaan; kuil",
+      "audio": "audio/ja/chars/kw-sha.mp3",
+      "audioHint": "しゃ",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "tempat"
+      ],
+      "difficulty": 3,
+      "note": "会社 (かいしゃ): perusahaan, kantor.",
+      "seenIn": [
+        "w-kaisha",
+        "w-kaishain",
+        "w-jinja",
+        "gx-wa-3",
+        "gx-de-2",
+        "gx-masu-1"
+      ]
+    },
+    {
+      "id": "kw-michi",
+      "character": "道",
+      "japanese": "道",
+      "furigana": [
+        {
+          "b": "道",
+          "r": "みち"
+        }
+      ],
+      "readings": [
+        "みち",
+        "どう"
+      ],
+      "romaji": "michi / dō",
+      "indonesian": "jalan; cara",
+      "audio": "audio/ja/chars/kw-michi.mp3",
+      "audioHint": "みち",
+      "group": "places",
+      "tags": [
+        "kanji",
+        "tempat"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-michi",
+        "w-suidou",
+        "s-22",
+        "s-56",
+        "cx-dakara-3",
+        "tra-11"
+      ]
+    },
+    {
+      "id": "kw-ame",
+      "character": "雨",
+      "japanese": "雨",
+      "furigana": [
+        {
+          "b": "雨",
+          "r": "あめ"
+        }
+      ],
+      "readings": [
+        "あめ",
+        "う"
+      ],
+      "romaji": "ame / u",
+      "indonesian": "hujan",
+      "audio": "audio/ja/chars/kw-ame.mp3",
+      "audioHint": "あめ",
+      "group": "nature",
+      "tags": [
+        "kanji",
+        "alam"
+      ],
+      "difficulty": 1,
+      "seenIn": [
+        "w-ame",
+        "s-07",
+        "gx-ga-subject-2",
+        "gx-ta-4",
+        "cx-kara-1",
+        "cx-node-3"
+      ]
+    },
+    {
+      "id": "kw-ten",
+      "character": "天",
+      "japanese": "天",
+      "furigana": [
+        {
+          "b": "天",
+          "r": "てん"
+        }
+      ],
+      "readings": [
+        "てん",
+        "あま"
+      ],
+      "romaji": "ten",
+      "indonesian": "langit, surga",
+      "audio": "audio/ja/chars/kw-ten.mp3",
+      "audioHint": "てん",
+      "group": "nature",
+      "tags": [
+        "kanji",
+        "alam"
+      ],
+      "difficulty": 2,
+      "note": "天気 (てんき): cuaca.",
+      "seenIn": [
+        "w-tenki",
+        "gx-teoku-4",
+        "sma-01"
+      ]
+    },
+    {
+      "id": "kw-yuki",
+      "character": "雪",
+      "japanese": "雪",
+      "furigana": [
+        {
+          "b": "雪",
+          "r": "ゆき"
+        }
+      ],
+      "readings": [
+        "ゆき",
+        "せつ"
+      ],
+      "romaji": "yuki / setsu",
+      "indonesian": "salju",
+      "audio": "audio/ja/chars/kw-yuki.mp3",
+      "audioHint": "ゆき",
+      "group": "nature",
+      "tags": [
+        "kanji",
+        "alam"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-yuki"
+      ]
+    },
+    {
+      "id": "kw-haru",
+      "character": "春",
+      "japanese": "春",
+      "furigana": [
+        {
+          "b": "春",
+          "r": "はる"
+        }
+      ],
+      "readings": [
+        "はる",
+        "しゅん"
+      ],
+      "romaji": "haru / shun",
+      "indonesian": "musim semi",
+      "audio": "audio/ja/chars/kw-haru.mp3",
+      "audioHint": "はる",
+      "group": "nature",
+      "tags": [
+        "kanji",
+        "alam"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-haru",
+        "cx-to-1"
+      ]
+    },
+    {
+      "id": "kw-natsu",
+      "character": "夏",
+      "japanese": "夏",
+      "furigana": [
+        {
+          "b": "夏",
+          "r": "なつ"
+        }
+      ],
+      "readings": [
+        "なつ",
+        "か"
+      ],
+      "romaji": "natsu / ka",
+      "indonesian": "musim panas",
+      "audio": "audio/ja/chars/kw-natsu.mp3",
+      "audioHint": "なつ",
+      "group": "nature",
+      "tags": [
+        "kanji",
+        "alam"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-natsu"
+      ]
+    },
+    {
+      "id": "kw-aki",
+      "character": "秋",
+      "japanese": "秋",
+      "furigana": [
+        {
+          "b": "秋",
+          "r": "あき"
+        }
+      ],
+      "readings": [
+        "あき",
+        "しゅう"
+      ],
+      "romaji": "aki / shū",
+      "indonesian": "musim gugur",
+      "audio": "audio/ja/chars/kw-aki.mp3",
+      "audioHint": "あき",
+      "group": "nature",
+      "tags": [
+        "kanji",
+        "alam"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-aki"
+      ]
+    },
+    {
+      "id": "kw-fuyu",
+      "character": "冬",
+      "japanese": "冬",
+      "furigana": [
+        {
+          "b": "冬",
+          "r": "ふゆ"
+        }
+      ],
+      "readings": [
+        "ふゆ",
+        "とう"
+      ],
+      "romaji": "fuyu / tō",
+      "indonesian": "musim dingin",
+      "audio": "audio/ja/chars/kw-fuyu.mp3",
+      "audioHint": "ふゆ",
+      "group": "nature",
+      "tags": [
+        "kanji",
+        "alam"
+      ],
+      "difficulty": 2,
+      "seenIn": [
+        "w-fuyu"
+      ]
+    },
+    {
+      "id": "kw-hon",
+      "character": "本",
+      "japanese": "本",
+      "furigana": [
+        {
+          "b": "本",
+          "r": "ほん"
+        }
+      ],
+      "readings": [
+        "ほん",
+        "もと"
+      ],
+      "romaji": "hon / moto",
+      "indonesian": "buku; asal",
+      "audio": "audio/ja/chars/kw-hon.mp3",
+      "audioHint": "ほん",
+      "group": "work",
+      "tags": [
+        "kanji",
+        "pekerjaan"
+      ],
+      "difficulty": 1,
+      "note": "日本 (にほん): Jepang, \"asal matahari\". Karena itu Jepang dijuluki Negeri Matahari Terbit.",
+      "seenIn": [
+        "w-nihongo",
+        "w-hon",
+        "w-nihon",
+        "w-nihonjin",
+        "w-hontou",
+        "s-02"
+      ]
+    },
+    {
+      "id": "kw-go",
+      "character": "語",
+      "japanese": "語",
+      "furigana": [
+        {
+          "b": "語",
+          "r": "ご"
+        }
+      ],
+      "readings": [
+        "ご",
+        "かた"
+      ],
+      "romaji": "go",
+      "indonesian": "bahasa, kata",
+      "audio": "audio/ja/chars/kw-go.mp3",
+      "audioHint": "ご",
+      "group": "work",
+      "tags": [
+        "kanji",
+        "pekerjaan"
+      ],
+      "difficulty": 2,
+      "note": "日本語 (にほんご) bahasa Jepang, 英語 (えいご) bahasa Inggris, インドネシア語 bahasa Indonesia.",
+      "seenIn": [
+        "w-nihongo",
+        "w-eigo",
+        "s-02",
+        "s-20",
+        "s-32",
+        "s-34"
+      ]
+    },
+    {
+      "id": "kw-shigoto",
+      "character": "仕事",
+      "japanese": "仕事",
+      "furigana": [
+        {
+          "b": "仕事",
+          "r": "しごと"
+        }
+      ],
+      "readings": [
+        "しごと"
+      ],
+      "romaji": "shigoto",
+      "indonesian": "pekerjaan, kerja",
+      "audio": "audio/ja/chars/kw-shigoto.mp3",
+      "audioHint": "しごと",
+      "group": "work",
+      "tags": [
+        "kanji",
+        "pekerjaan"
+      ],
+      "difficulty": 2,
+      "note": "Dua kanji, satu kata: 仕 sendirian jarang ditemui.",
+      "seenIn": [
+        "w-shigoto",
+        "s-39",
+        "gx-kara-made-2",
+        "gx-ka-2",
+        "gx-masu-4",
+        "cx-sorekara-1"
+      ]
+    },
+    {
+      "id": "kw-benkyou",
+      "character": "勉強",
+      "japanese": "勉強",
+      "furigana": [
+        {
+          "b": "勉強",
+          "r": "べんきょう"
+        }
+      ],
+      "readings": [
+        "べんきょう"
+      ],
+      "romaji": "benkyō",
+      "indonesian": "belajar",
+      "audio": "audio/ja/chars/kw-benkyou.mp3",
+      "audioHint": "べんきょう",
+      "group": "work",
+      "tags": [
+        "kanji",
+        "pekerjaan"
+      ],
+      "difficulty": 2,
+      "note": "勉強する: belajar. Dua kanji, satu kata.",
+      "seenIn": [
+        "w-benkyou",
+        "s-02",
+        "s-32",
+        "gx-mo-2",
+        "cx-demo-4",
+        "cx-nagara-1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-pronouns",
+  "connector": "saya, kamu, dia",
+  "gloss": "I, you, he, she, we, they",
+  "title": "saya, kamu, dia… — pronouns",
+  "pattern": "saya / aku · Bapak / Ibu / kamu · dia · kami / kita · mereka",
+  "explanation": "Saya is the polite 'I', for anyone you don't know well, and aku the casual one, for friends, a partner and children. For 'you', use kamu with friends and people younger than you; with anyone older or a stranger, say Bapak (Pak) to a man and Ibu (Bu) to a woman, or use their name: Bapak mau ke mana? (Where are you going?). Dia is both 'he' and 'she', and mereka is 'they'. 'We' has two words: kita includes the person you're talking to, and kami leaves them out.",
+  "natural": "Saya is never wrong, so it's the safe choice. Bapak and Ibu aren't only for the old: anyone a bit older than you, or in a role like shopkeeper, driver or official, gets one. Kita is the friendly 'we' that brings your listener in: Kita makan di mana? (Where shall we eat?)",
+  "stiff": "Kamu to an older person or a stranger sounds rude, and Anda, though polite, sounds stiff face to face: it's the 'you' of signs, forms and adverts. Keep the pairs together: aku goes with kamu, and saya with Bapak and Ibu.",
+  "examples": [
+    {
+      "id": "gx-pronouns-1",
+      "indonesian": "Bapak mau ke mana?",
+      "english": "Where are you going, sir?",
+      "chunks": [
+        {
+          "t": "Bapak ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "mau ",
+          "w": "w-mau"
+        },
+        {
+          "t": "ke mana?",
+          "w": "w-ke"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Bapak",
+        "after": " mau ke mana?",
+        "options": [
+          "Bapak",
+          "Kamu",
+          "Anda"
+        ],
+        "why": "To an older man, Bapak is the polite 'you'; kamu is too familiar and Anda too stiff."
+      },
+      "audio": "audio/id/grammar/gx-pronouns-1.mp3",
+      "tags": [
+        "grammar",
+        "pronouns"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-pronouns-2",
+      "indonesian": "Kita makan di mana?",
+      "english": "Where shall we eat?",
+      "chunks": [
+        {
+          "t": "Kita ",
+          "w": "w-kita"
+        },
+        {
+          "t": "makan ",
+          "w": "w-makan"
+        },
+        {
+          "t": "di mana?",
+          "w": "w-di-mana"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Kita",
+        "after": " makan di mana?",
+        "options": [
+          "Kita",
+          "Kami",
+          "Mereka"
+        ],
+        "why": "A 'we' that includes the person you're asking is kita."
+      },
+      "audio": "audio/id/grammar/gx-pronouns-2.mp3",
+      "tags": [
+        "grammar",
+        "pronouns"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-pronouns-3",
+      "indonesian": "Ini anak kami.",
+      "english": "This is our son.",
+      "chunks": [
+        {
+          "t": "Ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "anak ",
+          "w": "w-anak"
+        },
+        {
+          "t": "kami.",
+          "w": "w-kami"
+        }
+      ],
+      "gap": {
+        "before": "Ini anak ",
+        "answer": "kami",
+        "after": ".",
+        "options": [
+          "kami",
+          "kita",
+          "mereka"
+        ],
+        "why": "Your listener isn't the boy's parent, so 'our' leaves them out: kami."
+      },
+      "audio": "audio/id/grammar/gx-pronouns-3.mp3",
+      "tags": [
+        "grammar",
+        "pronouns"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-pronouns-4",
+      "register": "casual",
+      "indonesian": "Aku tunggu kamu, ya.",
+      "english": "I'll wait for you, OK?",
+      "chunks": [
+        {
+          "t": "Aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "tunggu ",
+          "w": "w-tunggu"
+        },
+        {
+          "t": "kamu, ",
+          "w": "w-kamu"
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "gap": {
+        "before": "Aku tunggu ",
+        "answer": "kamu",
+        "after": ", ya.",
+        "options": [
+          "kamu",
+          "Anda",
+          "dia"
+        ],
+        "why": "Aku and kamu go together, between friends; Anda doesn't match aku, and dia is he or she."
+      },
+      "audio": "audio/id/grammar/gx-pronouns-4.mp3",
+      "tags": [
+        "grammar",
+        "pronouns"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

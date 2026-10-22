@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-nakereba",
+  "connector": "〜なければ",
+  "gloss": "harus; tidak perlu",
+  "title": "〜なければならない・〜なくてもいい — harus, tidak perlu",
+  "pattern": "bentuk ない: 〜なければならない (harus) / 〜なくてもいい (tidak perlu)",
+  "explanation": "Bahasa Indonesia cukup menambah “harus”; bahasa Jepang mengubah kata kerjanya. Ambil bentuk ない, lalu ganti ない dengan なければならない: {行|い}かなければならない — saya harus pergi. Dalam percakapan bentuknya menyusut jadi なきゃ atau なくちゃ: もう{帰|かえ}らなきゃ — aku harus pulang sekarang. “Tidak perlu” adalah なくてもいい: {来|こ}なくてもいいよ — kamu tidak perlu datang.",
+  "natural": "なきゃ ada di mana-mana dalam percakapan santai: {明日|あした}{早|はや}いから、もう{寝|ね}なきゃ.",
+  "stiff": "なければなりません formal dan berat untuk mengobrol. なきゃ, なくちゃ, atau ないといけない terdengar wajar.",
+  "examples": [
+    {
+      "id": "gx-nakereba-1",
+      "japanese": "明日は早く起きなければなりません。",
+      "furigana": "{明日|あした}は{早|はや}く{起|お}きなければなりません。",
+      "indonesian": "Besok saya harus bangun pagi.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{早|はや}く",
+          "w": "w-hayai"
+        },
+        {
+          "t": "{起|お}きなければなりません。",
+          "w": "w-okiru"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}は{早|はや}く{起|お}き",
+        "answer": "なければなりません",
+        "after": "。",
+        "options": [
+          "なければなりません",
+          "なくてもいいです",
+          "てはいけません"
+        ],
+        "why": "Harus: なければならない."
+      },
+      "audio": "audio/ja/grammar/gx-nakereba-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "nakereba"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-nakereba-2",
+      "japanese": "もう帰らなきゃ。",
+      "furigana": "もう{帰|かえ}らなきゃ。",
+      "indonesian": "Aku harus pulang sekarang.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "もう",
+          "w": "w-mou"
+        },
+        {
+          "t": "{帰|かえ}らなきゃ。",
+          "w": "w-kaeru"
+        }
+      ],
+      "gap": {
+        "before": "もう{帰|かえ}ら",
+        "answer": "なきゃ",
+        "after": "。",
+        "options": [
+          "なきゃ",
+          "なくてもいい",
+          "ないで"
+        ],
+        "why": "“Harus” yang santai: なきゃ."
+      },
+      "audio": "audio/ja/grammar/gx-nakereba-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "nakereba"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-nakereba-3",
+      "japanese": "予約しなくてもいいですよ。",
+      "furigana": "{予約|よやく}しなくてもいいですよ。",
+      "indonesian": "Tidak perlu reservasi, kok.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{予約|よやく}しなくても",
+          "w": "w-yoyaku"
+        },
+        {
+          "t": "いいですよ。"
+        }
+      ],
+      "gap": {
+        "before": "{予約|よやく}し",
+        "answer": "なくても",
+        "after": "いいですよ。",
+        "options": [
+          "なくても",
+          "なければ",
+          "ないで"
+        ],
+        "why": "Tidak perlu: なくてもいい."
+      },
+      "audio": "audio/ja/grammar/gx-nakereba-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "nakereba"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-nakereba-4",
+      "japanese": "薬を毎日飲まないといけない。",
+      "furigana": "{薬|くすり}を{毎日|まいにち}{飲|の}まないといけない。",
+      "indonesian": "Aku harus minum obat setiap hari.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{薬|くすり}を",
+          "w": "w-kusuri"
+        },
+        {
+          "t": "{毎日|まいにち}",
+          "w": "w-mainichi"
+        },
+        {
+          "t": "{飲|の}まないといけない。",
+          "w": "w-nomu"
+        }
+      ],
+      "gap": {
+        "before": "{薬|くすり}を{毎日|まいにち}{飲|の}まないと",
+        "answer": "いけない",
+        "after": "。",
+        "options": [
+          "いけない",
+          "いい",
+          "できない"
+        ],
+        "why": "ないといけない: “harus”, dalam percakapan sehari-hari."
+      },
+      "audio": "audio/ja/grammar/gx-nakereba-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "nakereba"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

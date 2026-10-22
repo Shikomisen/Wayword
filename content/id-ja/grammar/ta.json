@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ta",
+  "connector": "〜た",
+  "gloss": "bentuk lampau santai",
+  "title": "〜た — bentuk lampau santai",
+  "pattern": "bentuk て, dengan た menggantikan て: {行|い}った, {食|た}べた, した",
+  "explanation": "Bentuk lampau santai adalah bentuk て dengan た menggantikan て: {行|い}って → {行|い}った, {食|た}べて → {食|た}べた, して → した. Jadi kalau kamu tahu bentuk て suatu kata kerja (ada di setiap kartu kata kerja), kamu juga tahu bentuk lampaunya. Bahasa Indonesia memakai “sudah” atau kata waktu seperti “kemarin”; bahasa Jepang mengubah kata kerjanya. Untuk “tidak” di masa lalu, ない menjadi なかった: {行|い}かなかった.",
+  "natural": "Untuk bercerita tentang harimu kepada teman: {昨日|きのう}、{友達|ともだち}に{会|あ}った. Kata sifat い punya bentuk lampau sendiri: {楽|たの}しかった.",
+  "stiff": "Dengan pelayan toko, orang yang belum dikenal, dan orang tua pasangan, pakai ました: {行|い}きました.",
+  "examples": [
+    {
+      "id": "gx-ta-1",
+      "japanese": "昨日、友達に会った。",
+      "furigana": "{昨日|きのう}、{友達|ともだち}に{会|あ}った。",
+      "romaji": "kinō, tomodachi ni atta",
+      "indonesian": "Kemarin aku bertemu teman.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{昨日|きのう}、",
+          "w": "w-kinou"
+        },
+        {
+          "t": "{友達|ともだち}に",
+          "w": "w-tomodachi"
+        },
+        {
+          "t": "{会|あ}った。",
+          "w": "w-au"
+        }
+      ],
+      "gap": {
+        "before": "{昨日|きのう}、{友達|ともだち}に{会|あ}",
+        "answer": "った",
+        "after": "。",
+        "options": [
+          "った",
+          "う",
+          "わない"
+        ],
+        "why": "Bertemu, di masa lalu: 会って → 会った."
+      },
+      "audio": "audio/ja/grammar/gx-ta-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "ta"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ta-2",
+      "japanese": "もう晩ご飯食べた？",
+      "furigana": "もう{晩|ばん}ご{飯|はん}{食|た}べた？",
+      "romaji": "mō bangohan tabeta?",
+      "indonesian": "Sudah makan malam?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "もう",
+          "w": "w-mou"
+        },
+        {
+          "t": "{晩|ばん}ご{飯|はん}",
+          "w": "w-bangohan"
+        },
+        {
+          "t": "{食|た}べた？",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "もう{晩|ばん}ご{飯|はん}{食|た}べ",
+        "answer": "た",
+        "after": "？",
+        "options": [
+          "た",
+          "る",
+          "ない"
+        ],
+        "why": "Sudah makan: 食べた (もう = “sudah”), dengan を dihilangkan, seperti biasa."
+      },
+      "audio": "audio/ja/grammar/gx-ta-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "ta"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ta-3",
+      "japanese": "週末は何した？",
+      "furigana": "{週末|しゅうまつ}は{何|なに}した？",
+      "romaji": "shūmatsu wa nani shita?",
+      "indonesian": "Akhir pekan kemarin kamu ada kegiatan apa?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{週末|しゅうまつ}は",
+          "w": "w-shuumatsu"
+        },
+        {
+          "t": "{何|なに}",
+          "w": "w-nani"
+        },
+        {
+          "t": "した？",
+          "w": "w-suru"
+        }
+      ],
+      "gap": {
+        "before": "{週末|しゅうまつ}は{何|なに}",
+        "answer": "した",
+        "after": "？",
+        "options": [
+          "した",
+          "する",
+          "しない"
+        ],
+        "why": "Melakukan, di masa lalu: する → した."
+      },
+      "audio": "audio/ja/grammar/gx-ta-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "ta"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ta-4",
+      "japanese": "雨だったから、どこにも行かなかった。",
+      "furigana": "{雨|あめ}だったから、どこにも{行|い}かなかった。",
+      "romaji": "ame datta kara, doko ni mo ikanakatta",
+      "indonesian": "Karena hujan, aku tidak pergi ke mana-mana.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{雨|あめ}だったから、",
+          "w": "w-ame"
+        },
+        {
+          "t": "どこにも",
+          "w": "w-doko"
+        },
+        {
+          "t": "{行|い}かなかった。",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{雨|あめ}だったから、どこにも{行|い}か",
+        "answer": "なかった",
+        "after": "。",
+        "options": [
+          "なかった",
+          "ない",
+          "った"
+        ],
+        "why": "Tidak, di masa lalu: ない → なかった."
+      },
+      "audio": "audio/ja/grammar/gx-ta-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "ta"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

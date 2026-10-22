@@ -1,0 +1,169 @@
+{
+  "schemaVersion": 1,
+  "id": "opinions",
+  "title": "意見・賛成と反対",
+  "order": 14,
+  "description": "自分の考えを言う、賛成する、反対する。インドネシア流に、やんわりと相手に余地を残して。kurang、agak、sepertinya が大活躍します。",
+  "phrases": [
+    {
+      "id": "opi-01",
+      "indonesian": "Menurut saya, itu ide yang bagus.",
+      "japanese": "いい考えだと思います。",
+      "registerNotes": "Menurut saya は直訳すると「私によれば」。仕事でも食卓でも使える、意見を言う基本の形です。友達同士なら Menurut aku や Kalau aku sih。",
+      "audio": "audio/id/opi-01.mp3",
+      "tags": [
+        "意見",
+        "必須"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "ide yang bagus（いい考え）のように、形容詞は名詞の後ろに来ます。日本語とは逆の順番です。"
+    },
+    {
+      "id": "opi-02",
+      "indonesian": "Saya rasa begitu.",
+      "japanese": "そう思います。",
+      "registerNotes": "rasa は「感じる」。きっぱりした「はい」よりやわらかくなります。Saya rasa tidak は「そうは思いません」。くだけて言うなら Kayaknya, sih。",
+      "pitfallNote": "Saya kira も「思う」ですが、「〜だと思っていた（のに違った）」の意味になりがちです：Saya kira kamu sudah pulang（もう帰ったと思ってた）。",
+      "audio": "audio/id/opi-02.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-03",
+      "indonesian": "Bagaimana menurut Anda?",
+      "japanese": "どう思いますか？",
+      "registerNotes": "友達同士なら Menurut kamu gimana?",
+      "pitfallNote": "会話で Anda を使うと、アンケートや広告のように聞こえます。日本語で「あなた」を避けるのと同じで、肩書きや名前を使いましょう：Bagaimana menurut Bapak? Menurut Mbak bagaimana?",
+      "audio": "audio/id/opi-03.mp3",
+      "tags": [
+        "意見",
+        "たずねる"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-04",
+      "indonesian": "Saya setuju.",
+      "japanese": "賛成です。",
+      "registerNotes": "相手を言うなら dengan を付けて：Saya setuju dengan Ibu。心から賛成なら Saya setuju sekali、友達同士なら Setuju だけで。",
+      "audio": "audio/id/opi-04.mp3",
+      "tags": [
+        "意見",
+        "賛成",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-05",
+      "indonesian": "Saya kurang setuju.",
+      "japanese": "あまり賛成できません。",
+      "registerNotes": "kurang は「足りない」。きっぱりした「いいえ」を「ちょっと違うかも」に変える言葉で、ていねいなインドネシア語の反対はたいていこの形です。Saya tidak setuju ははっきりしますが、きつく聞こえます。",
+      "cultureNote": "特に年上の人に正面から反対すると、お互いに気まずくなります。やわらげるのは弱さではなく礼儀。日本の感覚に近いところです。",
+      "audio": "audio/id/opi-05.mp3",
+      "tags": [
+        "意見",
+        "反対"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-06",
+      "indonesian": "Betul juga.",
+      "japanese": "確かに、そうですね。",
+      "registerNotes": "思いつかなかった点を認める時に。juga は「〜も」で、「それも正しい」という感じです。友達同士なら Bener juga, ya。",
+      "audio": "audio/id/opi-06.mp3",
+      "tags": [
+        "意見",
+        "賛成"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "opi-07",
+      "indonesian": "Masuk akal.",
+      "japanese": "筋が通っていますね。",
+      "registerNotes": "直訳は「頭に入る」。Tidak masuk akal は「筋が通らない」「ありえない」。",
+      "audio": "audio/id/opi-07.mp3",
+      "tags": [
+        "意見",
+        "賛成"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-08",
+      "indonesian": "Tergantung situasinya.",
+      "japanese": "状況によります。",
+      "registerNotes": "tergantung のすぐ後に、何によるかを置きます：tergantung harganya（値段による）、tergantung cuacanya（天気による）。Tergantung だけでも立派な答えになります。",
+      "pitfallNote": "「〜に」「〜による」につられて di を入れないように。tergantung di は、絵が壁に掛かっているような「ぶら下がっている」の意味になります。",
+      "audio": "audio/id/opi-08.mp3",
+      "tags": [
+        "意見"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-09",
+      "indonesian": "Saya tidak terlalu yakin.",
+      "japanese": "あまり自信がありません。",
+      "registerNotes": "「いいえ」と言わずに、正直に迷いを伝える言い方。Saya kurang yakin も同じくらいよく使います。友達同士なら Nggak yakin, sih。",
+      "audio": "audio/id/opi-09.mp3",
+      "tags": [
+        "意見",
+        "迷う"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-10",
+      "indonesian": "Ada benarnya juga, tapi…",
+      "japanese": "それも一理ありますが…",
+      "registerNotes": "反対する時のていねいな入り方。まず一部を認めてから、自分の意見を言います。日本語の「おっしゃることもわかりますが」と同じ流れです。Iya, memang, tapi …（確かにそうだけど…）も同じ働きです。",
+      "audio": "audio/id/opi-10.mp3",
+      "tags": [
+        "意見",
+        "反対"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "opi-11",
+      "indonesian": "Bukannya jelek, tapi agak mahal.",
+      "japanese": "悪くはないんですが、ちょっと高いですね。",
+      "registerNotes": "Bukannya … tapi … は、きつく聞こえる受け取り方を先に打ち消してから本題に入る形。料理や計画、相手が買った物への批判をやわらげます。",
+      "audio": "audio/id/opi-11.mp3",
+      "tags": [
+        "意見",
+        "やわらげる"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "opi-12",
+      "indonesian": "Maaf, saya agak berbeda pendapat.",
+      "japanese": "すみません、私は少し違う意見です。",
+      "registerNotes": "会議やまじめな話し合いで。maaf と agak（少し）で角が取れます。話し言葉では短く beda pendapat とも言います。",
+      "audio": "audio/id/opi-12.mp3",
+      "tags": [
+        "意見",
+        "反対"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "opi-13",
+      "indonesian": "Saya pribadi lebih suka yang ini.",
+      "japanese": "個人的には、こっちのほうが好きです。",
+      "registerNotes": "pribadi（個人的に）を付けると、良し悪しの判断ではなく好みの話になり、軽く聞こえます。Kalau saya …（私なら…）も同じ働きです。",
+      "audio": "audio/id/opi-13.mp3",
+      "tags": [
+        "意見",
+        "好み"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

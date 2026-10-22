@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "id": "words-weather",
+  "title": "Cuaca & musim",
+  "description": "Topik basa-basi paling aman. Indonesia punya dua musim; Jepang punya empat.",
+  "items": [
+    {
+      "id": "w-tenki",
+      "japanese": "天気",
+      "furigana": "{天気|てんき}",
+      "indonesian": "cuaca",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-tenki.mp3",
+      "tags": [
+        "cuaca"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ame",
+      "japanese": "雨",
+      "furigana": "{雨|あめ}",
+      "audioHint": "雨",
+      "indonesian": "hujan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-ame.mp3",
+      "tags": [
+        "cuaca"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-yuki",
+      "japanese": "雪",
+      "furigana": "{雪|ゆき}",
+      "indonesian": "salju",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yuki.mp3",
+      "tags": [
+        "cuaca"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-hare",
+      "japanese": "晴れ",
+      "furigana": "{晴|は}れ",
+      "indonesian": "cerah",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-hare.mp3",
+      "tags": [
+        "cuaca"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-atsui",
+      "japanese": "暑い",
+      "furigana": "{暑|あつ}い",
+      "indonesian": "panas (cuaca)",
+      "pos": "i-adjective",
+      "usage": "Panas kalau disentuh adalah 熱い — bunyinya sama, kanjinya beda.",
+      "audio": "audio/ja/words/w-atsui.mp3",
+      "tags": [
+        "cuaca"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-samui",
+      "japanese": "寒い",
+      "furigana": "{寒|さむ}い",
+      "indonesian": "dingin (cuaca)",
+      "pos": "i-adjective",
+      "usage": "Dingin kalau disentuh adalah 冷たい (つめたい). Bahasa Indonesia memakai \"dingin\" untuk keduanya.",
+      "audio": "audio/ja/words/w-samui.mp3",
+      "tags": [
+        "cuaca"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-atatakai",
+      "japanese": "暖かい",
+      "furigana": "{暖|あたた}かい",
+      "indonesian": "hangat",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-atatakai.mp3",
+      "tags": [
+        "cuaca"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-suzushii",
+      "japanese": "涼しい",
+      "furigana": "{涼|すず}しい",
+      "indonesian": "sejuk",
+      "pos": "i-adjective",
+      "audio": "audio/ja/words/w-suzushii.mp3",
+      "tags": [
+        "cuaca"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-haru",
+      "japanese": "春",
+      "furigana": "{春|はる}",
+      "audioHint": "春",
+      "indonesian": "musim semi",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-haru.mp3",
+      "tags": [
+        "musim"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-natsu",
+      "japanese": "夏",
+      "furigana": "{夏|なつ}",
+      "indonesian": "musim panas",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-natsu.mp3",
+      "tags": [
+        "musim"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-aki",
+      "japanese": "秋",
+      "furigana": "{秋|あき}",
+      "audioHint": "秋",
+      "indonesian": "musim gugur",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-aki.mp3",
+      "tags": [
+        "musim"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-fuyu",
+      "japanese": "冬",
+      "furigana": "{冬|ふゆ}",
+      "indonesian": "musim dingin",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-fuyu.mp3",
+      "tags": [
+        "musim"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kasa",
+      "japanese": "傘",
+      "furigana": "{傘|かさ}",
+      "audioHint": "傘",
+      "indonesian": "payung",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kasa.mp3",
+      "tags": [
+        "cuaca"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-furu",
+      "japanese": "降る",
+      "furigana": "{降|ふ}る",
+      "indonesian": "turun (hujan, salju)",
+      "pos": "verb",
+      "forms": {
+        "masu": "{降|ふ}ります",
+        "te": "{降|ふ}って"
+      },
+      "usage": "雨が降る — \"hujan turun\". 雨 hanya kata benda, jadi perlu kata kerja: 雨が降っている = \"sedang hujan\".",
+      "audio": "audio/ja/words/w-furu.mp3",
+      "tags": [
+        "cuaca"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

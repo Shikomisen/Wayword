@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "homestay-problem",
+  "title": "A problem with your room",
+  "category": "hotel",
+  "setting": "It's your first night at a family-run homestay in Ubud. The air conditioning in your room is running but blowing warm air, so you go to find the host, Pak Wayan, at the front.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "host",
+      "indonesian": "Selamat malam, Kak. Ada yang bisa saya bantu?",
+      "english": "Good evening. Is there anything I can do for you?",
+      "audio": "audio/id/scenario/homestay-problem-n1.mp3",
+      "options": [
+        {
+          "phraseId": "hot-08",
+          "quality": "good",
+          "feedback": "Calm and clear: say what's wrong and let him offer to fix it. Maaf mengganggu, Pak (sorry to bother you) first makes it softer still.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Maaf mengganggu, Pak. AC-nya sepertinya rusak.",
+          "english": "Sorry to bother you. I think the air conditioning's broken.",
+          "feedback": "Maaf mengganggu opens politely, and sepertinya (it seems) leaves room for it to be something simple.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "AC saya tidak bekerja.",
+          "english": "My AC doesn't work.",
+          "feedback": "Understood, but bekerja is working at a job. For a machine, Indonesians say rusak (broken), mati (won't run) or tidak dingin.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "host",
+      "indonesian": "Aduh, maaf, Kak. Sudah dicoba dimatikan, terus dinyalakan lagi?",
+      "english": "Oh, sorry. Have you tried turning it off and on again?",
+      "audio": "audio/id/scenario/homestay-problem-n2.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Sudah, Pak, tapi tetap tidak dingin.",
+          "english": "Yes, but it's still not cold.",
+          "feedback": "Sudah is the yes to a Sudah …? question, and tetap (still) says it made no difference.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Sudah, Pak. Bisa tolong dilihat?",
+          "english": "Yes, I have. Could you come and have a look?",
+          "feedback": "Sudah answers his question, and the di- form asks him to look without sounding like an order.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Ya, Pak.",
+          "english": "Yes.",
+          "feedback": "Understood, but the yes to Sudah …? is sudah, and it helps to say what happened: Sudah, tapi tetap tidak dingin.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "host",
+      "indonesian": "Waduh. Tukang AC-nya baru bisa datang besok pagi. Maaf sekali, Kak.",
+      "audioHint": "Waduh. Tukang a se-nya baru bisa datang besok pagi. Maaf sekali, Kak.",
+      "english": "Oh dear. The repairman can't come till tomorrow morning. I'm so sorry.",
+      "audio": "audio/id/scenario/homestay-problem-n3.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Kalau begitu, bisa pindah kamar malam ini?",
+          "english": "In that case, could I change rooms tonight?",
+          "feedback": "Kalau begitu (in that case) moves things on, and a bisa …? question is a request, not a demand.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Ada kipas angin, Pak? Untuk malam ini saja.",
+          "english": "Do you have a fan? Just for tonight.",
+          "feedback": "A modest fix for one night: easy for him to say yes to.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Besok? Saya sudah bayar untuk kamar ber-AC!",
+          "english": "Tomorrow? I've paid for a room with air conditioning!",
+          "feedback": "Fair, but raising your voice makes him lose face, and rarely gets faster results. Ask for a solution: Bisa pindah kamar?",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "host",
+      "indonesian": "Kamar sebelah kosong, Kak. AC-nya bagus. Mau pindah ke sana?",
+      "audioHint": "Kamar sebelah kosong, Kak. A se-nya bagus. Mau pindah ke sana?",
+      "english": "The room next door is free, and its air conditioning works well. Would you like to move there?",
+      "audio": "audio/id/scenario/homestay-problem-n4.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Boleh, Pak. Terima kasih banyak.",
+          "english": "Yes, please. Thank you so much.",
+          "feedback": "Boleh is the everyday yes to an offer, and terima kasih banyak thanks him warmly.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "hot-02",
+          "quality": "good",
+          "feedback": "Sensible, and quite normal at a homestay: dulu (first) keeps it easy-going.",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Boleh, Pak. Terima kasih kembali.",
+          "english": "Yes, please. You're welcome.",
+          "feedback": "Terima kasih kembali is 'you're welcome', the reply to someone's thanks. To thank him: terima kasih banyak.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "host",
+      "indonesian": "Bagaimana, Kak, kamarnya? Sudah nyaman?",
+      "english": "How's the room? Comfortable now?",
+      "audio": "audio/id/scenario/homestay-problem-n5.mp3",
+      "options": [
+        {
+          "phraseId": "pro-09",
+          "quality": "good",
+          "feedback": "Clear and specific: literally 'the water doesn't come out'.",
+          "next": "n6"
+        },
+        {
+          "quality": "good",
+          "indonesian": "AC-nya dingin, terima kasih. Tapi airnya mati, Pak.",
+          "english": "The air conditioning's cold, thanks. But the water's off.",
+          "feedback": "Thanks for the fix first, then the next problem: airnya mati is the everyday way to say the water's off.",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Airnya rusak, Pak.",
+          "english": "The water's broken.",
+          "feedback": "Rusak is for things that break, like a lock or a tap. Water that won't run is mati, or tidak keluar.",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "host",
+      "indonesian": "Oh, mungkin pompa airnya mati. Saya cek sekarang, ya. Tunggu sebentar, Kak.",
+      "english": "Oh, the water pump's probably off. I'll check it now. Just a moment.",
+      "audio": "audio/id/scenario/homestay-problem-n6.mp3",
+      "options": [
+        {
+          "phraseId": "pro-13",
+          "quality": "good",
+          "feedback": "Ending on thanks leaves you on good terms, which counts when you're staying a while.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Baik, Pak. Saya tunggu di kamar, ya.",
+          "english": "All right. I'll wait in my room.",
+          "feedback": "Patient and friendly, with ya to check it suits him.",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Cepat, ya, Pak! Saya mau mandi.",
+          "english": "Quickly, please! I want a shower.",
+          "feedback": "It sounds like an order, and he's already on it. Thanks will get you further than hurry.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "english": "Sorted. Maaf mengganggu to start, the problem said plainly, a bisa …? request, and thanks at the end: the host keeps face, and things get fixed. Rusak is broken; a machine or water that won't run is mati.",
+      "end": true,
+      "options": []
+    }
+  }
+}

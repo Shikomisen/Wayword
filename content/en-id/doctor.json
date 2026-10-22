@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "doctor",
+  "title": "The Doctor & Pharmacy",
+  "order": 16,
+  "description": "Describing your symptoms at a clinic or pharmacy (apotek), understanding how to take the medicine, and asking the questions you'll want answered.",
+  "phrases": [
+    {
+      "id": "doc-01",
+      "indonesian": "Saya demam sejak kemarin.",
+      "english": "I've had a fever since yesterday.",
+      "registerNotes": "Sejak, 'since', goes before the time: sejak tadi malam (since last night), sejak hari Senin.",
+      "pitfallNote": "There's no 'have had' tense to build: the time word does the work, and demam stays as it is.",
+      "audio": "audio/id/doc-01.mp3",
+      "tags": [
+        "doctor",
+        "symptoms",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "doc-02",
+      "indonesian": "Saya batuk dan pilek.",
+      "english": "I've got a cough and a runny nose.",
+      "registerNotes": "Pilek is a head cold, mainly the runny or blocked nose. People also say flu for an ordinary cold.",
+      "audio": "audio/id/doc-02.mp3",
+      "tags": [
+        "doctor",
+        "symptoms"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "doc-03",
+      "indonesian": "Saya masuk angin.",
+      "english": "I've caught a chill. I feel run-down.",
+      "registerNotes": "Everyone understands it, but at a clinic list the actual symptoms too.",
+      "cultureNote": "Masuk angin, 'wind has got in', is the folk name for feeling achy, cold, bloated or off. A common home remedy is kerokan: scraping the back with a coin and oil, which leaves red stripes.",
+      "audio": "audio/id/doc-03.mp3",
+      "tags": [
+        "doctor",
+        "symptoms"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-04",
+      "indonesian": "Saya sakit perut dan diare.",
+      "english": "I've got a stomach ache and diarrhoea.",
+      "registerNotes": "Sakit perut covers any tummy pain. Diare is the word to use with a doctor; you'll also hear the cruder mencret.",
+      "audio": "audio/id/doc-04.mp3",
+      "tags": [
+        "doctor",
+        "symptoms"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "doc-05",
+      "indonesian": "Kepala saya pusing.",
+      "english": "My head's spinning. I feel dizzy.",
+      "registerNotes": "Kepala saya pusing is how you tell a doctor or a pharmacist; with friends, Pusing on its own.",
+      "pitfallNote": "Pusing is a woozy, aching head, somewhere between dizzy and a headache; for a plain headache, sakit kepala is more exact. Pusing also means stressed: pusing soal uang.",
+      "audio": "audio/id/doc-05.mp3",
+      "tags": [
+        "doctor",
+        "symptoms"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "doc-06",
+      "indonesian": "Keluhannya apa?",
+      "english": "What seems to be the problem?",
+      "registerNotes": "What a doctor or nurse asks first. Keluhan is a complaint, the medical word for what's wrong with you; answer with your symptoms.",
+      "audio": "audio/id/doc-06.mp3",
+      "tags": [
+        "doctor",
+        "questions"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-07",
+      "indonesian": "Sudah tiga hari, Dok.",
+      "english": "It's been three days, doctor.",
+      "registerNotes": "The answer to Sejak kapan? (Since when?) or Sudah berapa lama? (How long?). Dok, short for dokter, is how you address a doctor.",
+      "audio": "audio/id/doc-07.mp3",
+      "tags": [
+        "doctor",
+        "time"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "doc-08",
+      "indonesian": "Obatnya diminum tiga kali sehari, sesudah makan.",
+      "english": "Take the medicine three times a day, after meals.",
+      "registerNotes": "What the doctor or pharmacist tells you. Labels often write it 3 x 1: three times a day, one each time.",
+      "pitfallNote": "You minum (drink) medicine in Indonesian, even tablets: Sudah minum obat?",
+      "audio": "audio/id/doc-08.mp3",
+      "tags": [
+        "doctor",
+        "medicine",
+        "essential"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-09",
+      "indonesian": "Diminum sebelum atau sesudah makan?",
+      "english": "Do I take it before or after meals?",
+      "registerNotes": "The di- form keeps the medicine as the subject, which is how dosage talk works: Diminum berapa kali sehari? (How many times a day?)",
+      "audio": "audio/id/doc-09.mp3",
+      "tags": [
+        "doctor",
+        "medicine"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-10",
+      "indonesian": "Obat ini perlu resep dokter?",
+      "english": "Do I need a prescription for this?",
+      "registerNotes": "Resep is a prescription, and also a recipe.",
+      "cultureNote": "Pharmacies (apotek) sell many medicines over the counter, and the pharmacist will often suggest one; antibiotics officially need a prescription.",
+      "audio": "audio/id/doc-10.mp3",
+      "tags": [
+        "doctor",
+        "pharmacy"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-11",
+      "indonesian": "Saya alergi penisilin.",
+      "english": "I'm allergic to penicillin.",
+      "registerNotes": "Alergi goes straight before the thing, with no word for 'to': alergi obat, alergi udang. Say it before anything is prescribed.",
+      "audio": "audio/id/doc-11.mp3",
+      "tags": [
+        "doctor",
+        "allergies"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "doc-12",
+      "indonesian": "Apa ini serius, Dok?",
+      "english": "Is it serious, doctor?",
+      "registerNotes": "Apa at the start just marks a yes-or-no question in speech; apakah is the written form. Friends ask Parah, nggak? (Is it bad?)",
+      "audio": "audio/id/doc-12.mp3",
+      "tags": [
+        "doctor",
+        "questions"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "doc-13",
+      "indonesian": "Bisa minta surat keterangan sakit, Dok?",
+      "english": "Could I have a medical certificate, doctor?",
+      "registerNotes": "For work or school. People call it surat sakit for short, and clinics are used to being asked.",
+      "audio": "audio/id/doc-13.mp3",
+      "tags": [
+        "doctor",
+        "documents"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "doc-14",
+      "indonesian": "Perlu kontrol lagi, Dok?",
+      "english": "Do I need to come back for a check-up?",
+      "registerNotes": "Ask it as the doctor finishes. Dok is short for Dokter, the usual way to address a doctor.",
+      "pitfallNote": "Kontrol is a follow-up visit, not 'control': Kontrol minggu depan, ya (Come back next week).",
+      "audio": "audio/id/doc-14.mp3",
+      "tags": [
+        "doctor",
+        "appointments"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

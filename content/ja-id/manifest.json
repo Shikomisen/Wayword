@@ -1,0 +1,1216 @@
+{
+  "schemaVersion": 1,
+  "language": "id",
+  "speaker": "ja",
+  "register": "polite-neutral",
+  "generatedFor": "Wayword — Indonesian for Japanese speakers",
+  "notes": "Indonesian for Japanese speakers, derived from the course for English speakers (content/en-id/): the same Indonesian items, ids, exercises and clips, with every meaning, note, explanation and piece of feedback rewritten in Japanese for a Japanese learner. The sound pairs are replaced by ones that are hard for Japanese speakers (L and R, final consonants…). Text the learner studies is `indonesian`; `japanese` is the gloss.",
+  "fields": {
+    "target": "indonesian",
+    "meaning": "japanese"
+  },
+  "noteFields": [
+    {
+      "field": "registerNotes",
+      "label": "使い方"
+    },
+    {
+      "field": "pitfallNote",
+      "label": "よくある間違い",
+      "style": "pitfall"
+    },
+    {
+      "field": "cultureNote",
+      "label": "文化"
+    }
+  ],
+  "voice": {
+    "engine": "google",
+    "azure": {
+      "default": "id-ID-GadisNeural",
+      "speakers": "id-ID-ArdiNeural"
+    }
+  },
+  "words": {
+    "pos": [
+      "noun",
+      "verb",
+      "adjective",
+      "adverb",
+      "pronoun",
+      "question",
+      "phrase",
+      "expression",
+      "interjection",
+      "conjunction",
+      "preposition",
+      "number",
+      "counter",
+      "particle"
+    ],
+    "forms": [
+      "root"
+    ],
+    "verbForms": []
+  },
+  "copy": {
+    "placementLede": "{n}枚のカードで、「はじめの一歩」と「基礎」のフレーズのカテゴリーから2枚ずつチェックします。それぞれ、すでに知っているかどうかを選ぶだけ。入力も採点もありません — 各カードをどこから復習に入れるかを決めるためのものです。",
+    "placementAside": "インドネシア語は、とても始めやすい言葉です。アルファベットで書き、ほぼローマ字読みのとおりに発音でき、動詞の活用もありません。このチェックで、もう知っていることを見つけて、ちょうどいいところから始められます。テストではありません。",
+    "lessonsTitle": "文法・つなぎ言葉",
+    "lessonsTab": "文法",
+    "lessonsLede": "インドネシア語の文のしくみ。まず語順、否定、質問の作り方。次に文と文をつなぐ言葉、そして実際の会話に出てくる接頭辞・接尾辞。説明を読んで、例文で練習しましょう。",
+    "lessonsIcon": "🧱"
+  },
+  "drills": [
+    "fill",
+    "order",
+    "combine",
+    "say"
+  ],
+  "levels": [
+    {
+      "id": "first-steps",
+      "icon": "🌱",
+      "title": "はじめの一歩",
+      "description": "インドネシア語をこれから始める人へ。あいさつ、数字、最初の単語、そして文の組み立て：「〜です」にあたる言葉がないこと、名詞が先で形容詞が後、ini と itu、tidak と bukan の否定、質問の作り方、時制のかわりに使う sudah や akan などの時の言葉。"
+    },
+    {
+      "id": "basic",
+      "icon": "🌿",
+      "title": "基礎",
+      "description": "旅行で困らないインドネシア語。食べ物、買い物、移動、ホテル、道案内。ワルン・市場・オジェックで使う決まり文句、友だちとのくだけた話し方、文と文をつなぐ言葉（dan, tapi, karena, jadi, kalau, waktu…）。"
+    },
+    {
+      "id": "intermediate",
+      "icon": "🌳",
+      "title": "中級",
+      "description": "決まり文句の先の会話。自分のこと、予定、考えを話す、聞きながらあいづちを打つ、パートナーの家族の家に招かれる、病院・民泊・お店でトラブルを解決する。動詞の接頭辞・接尾辞（ber-, me-, di-, -kan, -i, ter-, ke-…-an）、会話の小さな言葉（kok, sih, dong, deh）、ふだんのスピードの聞き取り。",
+      "placement": false
+    }
+  ],
+  "groups": [
+    {
+      "id": "basics",
+      "title": "毎日の基本"
+    },
+    {
+      "id": "out",
+      "title": "街で"
+    },
+    {
+      "id": "travel",
+      "title": "旅行"
+    },
+    {
+      "id": "help",
+      "title": "もしもの時"
+    },
+    {
+      "id": "talk",
+      "title": "会話を広げる"
+    },
+    {
+      "id": "life",
+      "title": "インドネシアの暮らし"
+    }
+  ],
+  "categories": [
+    {
+      "id": "greetings",
+      "order": 1,
+      "file": "content/ja-id/greetings.json",
+      "title": "あいさつ・礼儀",
+      "icon": "🙏",
+      "group": "basics",
+      "level": "first-steps",
+      "step": 1,
+      "starter": true
+    },
+    {
+      "id": "numbers",
+      "order": 2,
+      "file": "content/ja-id/numbers.json",
+      "title": "数字・時間・お金",
+      "icon": "🔢",
+      "group": "basics",
+      "level": "first-steps",
+      "step": 2,
+      "starter": true
+    },
+    {
+      "id": "smalltalk",
+      "order": 3,
+      "file": "content/ja-id/smalltalk.json",
+      "title": "世間話",
+      "icon": "💬",
+      "group": "talk",
+      "level": "first-steps",
+      "step": 10
+    },
+    {
+      "id": "casual",
+      "order": 4,
+      "file": "content/ja-id/casual.json",
+      "title": "くだけた話し方",
+      "icon": "😎",
+      "group": "talk",
+      "level": "basic",
+      "step": 1,
+      "starter": true
+    },
+    {
+      "id": "restaurant",
+      "order": 5,
+      "file": "content/ja-id/restaurant.json",
+      "title": "ワルン・レストラン",
+      "icon": "🍜",
+      "group": "out",
+      "level": "basic",
+      "step": 3,
+      "starter": true
+    },
+    {
+      "id": "shopping",
+      "order": 6,
+      "file": "content/ja-id/shopping.json",
+      "title": "買い物・値段交渉",
+      "icon": "🛍️",
+      "group": "out",
+      "level": "basic",
+      "step": 4,
+      "starter": true
+    },
+    {
+      "id": "transport",
+      "order": 7,
+      "file": "content/ja-id/transport.json",
+      "title": "移動・交通",
+      "icon": "🛵",
+      "group": "out",
+      "level": "basic",
+      "step": 6
+    },
+    {
+      "id": "directions",
+      "order": 8,
+      "file": "content/ja-id/directions.json",
+      "title": "道をたずねる・迷った時",
+      "icon": "🧭",
+      "group": "out",
+      "level": "basic",
+      "step": 7
+    },
+    {
+      "id": "hotel",
+      "order": 9,
+      "file": "content/ja-id/hotel.json",
+      "title": "ホテル・民泊",
+      "icon": "🏨",
+      "group": "travel",
+      "level": "basic",
+      "step": 11
+    },
+    {
+      "id": "airport",
+      "order": 10,
+      "file": "content/ja-id/airport.json",
+      "title": "空港・入国審査",
+      "icon": "✈️",
+      "group": "travel",
+      "level": "basic",
+      "step": 12
+    },
+    {
+      "id": "emergency",
+      "order": 11,
+      "file": "content/ja-id/emergency.json",
+      "title": "緊急時・体調不良",
+      "icon": "🚑",
+      "group": "help",
+      "level": "basic",
+      "step": 13
+    },
+    {
+      "id": "reactions",
+      "order": 12,
+      "file": "content/ja-id/reactions.json",
+      "title": "あいづち・反応",
+      "icon": "😮",
+      "group": "talk",
+      "level": "intermediate",
+      "step": 2,
+      "starter": true
+    },
+    {
+      "id": "plans",
+      "order": 13,
+      "file": "content/ja-id/plans.json",
+      "title": "予定を立てる・誘う",
+      "icon": "📅",
+      "group": "talk",
+      "level": "intermediate",
+      "step": 6
+    },
+    {
+      "id": "opinions",
+      "order": 14,
+      "file": "content/ja-id/opinions.json",
+      "title": "意見・賛成と反対",
+      "icon": "💭",
+      "group": "talk",
+      "level": "intermediate",
+      "step": 9
+    },
+    {
+      "id": "family",
+      "order": 15,
+      "file": "content/ja-id/family.json",
+      "title": "パートナーの家族に会う",
+      "icon": "👨‍👩‍👧",
+      "group": "life",
+      "level": "intermediate",
+      "step": 13
+    },
+    {
+      "id": "doctor",
+      "order": 16,
+      "file": "content/ja-id/doctor.json",
+      "title": "病院・薬局",
+      "icon": "🩺",
+      "group": "life",
+      "level": "intermediate",
+      "step": 15
+    },
+    {
+      "id": "problems",
+      "order": 17,
+      "file": "content/ja-id/problems.json",
+      "title": "トラブル・苦情",
+      "icon": "😤",
+      "group": "help",
+      "level": "intermediate",
+      "step": 18
+    }
+  ],
+  "decks": [
+    {
+      "id": "words-people",
+      "kind": "words",
+      "order": 1,
+      "file": "content/ja-id/words/people.json",
+      "title": "人と家族",
+      "icon": "👪",
+      "level": "first-steps",
+      "step": 3,
+      "starter": true
+    },
+    {
+      "id": "words-verbs",
+      "kind": "words",
+      "order": 2,
+      "file": "content/ja-id/words/verbs.json",
+      "title": "毎日の動詞",
+      "icon": "🏃",
+      "level": "first-steps",
+      "step": 4,
+      "starter": true
+    },
+    {
+      "id": "words-little",
+      "kind": "words",
+      "order": 3,
+      "file": "content/ja-id/words/little.json",
+      "title": "小さな言葉",
+      "icon": "🧩",
+      "level": "first-steps",
+      "step": 5,
+      "starter": true
+    },
+    {
+      "id": "words-key",
+      "kind": "words",
+      "order": 4,
+      "file": "content/ja-id/words/key.json",
+      "title": "文を支える言葉",
+      "icon": "🔗",
+      "level": "first-steps",
+      "step": 6
+    },
+    {
+      "id": "sentences-everyday",
+      "kind": "sentences",
+      "order": 5,
+      "file": "content/ja-id/sentences/everyday.json",
+      "title": "毎日の文",
+      "icon": "💬",
+      "level": "first-steps",
+      "step": 7
+    },
+    {
+      "id": "words-things",
+      "kind": "words",
+      "order": 6,
+      "file": "content/ja-id/words/things.json",
+      "title": "身の回りのもの",
+      "icon": "🏠",
+      "level": "first-steps",
+      "step": 8
+    },
+    {
+      "id": "words-time",
+      "kind": "words",
+      "order": 7,
+      "file": "content/ja-id/words/time.json",
+      "title": "時間と曜日",
+      "icon": "🕐",
+      "level": "first-steps",
+      "step": 9
+    },
+    {
+      "id": "words-food",
+      "kind": "words",
+      "order": 8,
+      "file": "content/ja-id/words/food.json",
+      "title": "食べ物と飲み物",
+      "icon": "🍛",
+      "level": "basic",
+      "step": 2,
+      "starter": true
+    },
+    {
+      "id": "words-describe",
+      "kind": "words",
+      "order": 9,
+      "file": "content/ja-id/words/describe.json",
+      "title": "様子を表す言葉",
+      "icon": "🎨",
+      "level": "basic",
+      "step": 5,
+      "starter": true
+    },
+    {
+      "id": "words-places",
+      "kind": "words",
+      "order": 10,
+      "file": "content/ja-id/words/places.json",
+      "title": "場所と移動",
+      "icon": "🗺️",
+      "level": "basic",
+      "step": 8
+    },
+    {
+      "id": "sentences-around",
+      "kind": "sentences",
+      "order": 11,
+      "file": "content/ja-id/sentences/around.json",
+      "title": "移動と用事",
+      "icon": "🚶",
+      "level": "basic",
+      "step": 9
+    },
+    {
+      "id": "words-home",
+      "kind": "words",
+      "order": 12,
+      "file": "content/ja-id/words/home.json",
+      "title": "家と暮らし",
+      "icon": "🏡",
+      "level": "basic",
+      "step": 10
+    },
+    {
+      "id": "words-feelings",
+      "kind": "words",
+      "order": 13,
+      "file": "content/ja-id/words/feelings.json",
+      "title": "気持ちと体調",
+      "icon": "💗",
+      "level": "basic",
+      "step": 14
+    },
+    {
+      "id": "words-weather",
+      "kind": "words",
+      "order": 14,
+      "file": "content/ja-id/words/weather.json",
+      "title": "天気と自然",
+      "icon": "🌦️",
+      "level": "basic",
+      "step": 15
+    },
+    {
+      "id": "words-work",
+      "kind": "words",
+      "order": 15,
+      "file": "content/ja-id/words/work.json",
+      "title": "仕事と勉強",
+      "icon": "💼",
+      "level": "basic",
+      "step": 16
+    },
+    {
+      "id": "words-free",
+      "kind": "words",
+      "order": 16,
+      "file": "content/ja-id/words/free.json",
+      "title": "余暇",
+      "icon": "🎮",
+      "level": "basic",
+      "step": 17
+    },
+    {
+      "id": "words-verbs-more",
+      "kind": "words",
+      "order": 17,
+      "file": "content/ja-id/words/verbs-more.json",
+      "title": "動詞（中級）",
+      "icon": "🔁",
+      "level": "intermediate",
+      "step": 1,
+      "starter": true
+    },
+    {
+      "id": "words-feel",
+      "kind": "words",
+      "order": 18,
+      "file": "content/ja-id/words/feel.json",
+      "title": "気持ち・反応",
+      "icon": "😊",
+      "level": "intermediate",
+      "step": 3,
+      "starter": true
+    },
+    {
+      "id": "sentences-self",
+      "kind": "sentences",
+      "order": 19,
+      "file": "content/ja-id/sentences/self.json",
+      "title": "自分のことを話す",
+      "icon": "🗣️",
+      "level": "intermediate",
+      "step": 4
+    },
+    {
+      "id": "words-social",
+      "kind": "words",
+      "order": 20,
+      "file": "content/ja-id/words/social.json",
+      "title": "付き合い・人間関係",
+      "icon": "🤝",
+      "level": "intermediate",
+      "step": 5
+    },
+    {
+      "id": "words-time-more",
+      "kind": "words",
+      "order": 21,
+      "file": "content/ja-id/words/time-more.json",
+      "title": "時間・頻度",
+      "icon": "⏳",
+      "level": "intermediate",
+      "step": 7
+    },
+    {
+      "id": "words-describe-more",
+      "kind": "words",
+      "order": 22,
+      "file": "content/ja-id/words/describe-more.json",
+      "title": "形容詞（中級）",
+      "icon": "✨",
+      "level": "intermediate",
+      "step": 8
+    },
+    {
+      "id": "words-opinions",
+      "kind": "words",
+      "order": 23,
+      "file": "content/ja-id/words/opinions.json",
+      "title": "意見・考え",
+      "icon": "💡",
+      "level": "intermediate",
+      "step": 10
+    },
+    {
+      "id": "words-travel",
+      "kind": "words",
+      "order": 24,
+      "file": "content/ja-id/words/travel.json",
+      "title": "旅行・観光",
+      "icon": "🏝️",
+      "level": "intermediate",
+      "step": 11
+    },
+    {
+      "id": "sentences-out",
+      "kind": "sentences",
+      "order": 25,
+      "file": "content/ja-id/sentences/out.json",
+      "title": "外出先で",
+      "icon": "🌆",
+      "level": "intermediate",
+      "step": 12
+    },
+    {
+      "id": "words-health",
+      "kind": "words",
+      "order": 26,
+      "file": "content/ja-id/words/health.json",
+      "title": "健康・病院",
+      "icon": "🩺",
+      "level": "intermediate",
+      "step": 14
+    },
+    {
+      "id": "words-house",
+      "kind": "words",
+      "order": 27,
+      "file": "content/ja-id/words/house.json",
+      "title": "家と暮らし",
+      "icon": "🧺",
+      "level": "intermediate",
+      "step": 16
+    },
+    {
+      "id": "words-money",
+      "kind": "words",
+      "order": 28,
+      "file": "content/ja-id/words/money.json",
+      "title": "買い物・お金",
+      "icon": "💳",
+      "level": "intermediate",
+      "step": 17
+    }
+  ],
+  "lessonGroups": [
+    {
+      "id": "sentence",
+      "title": "文の組み立て",
+      "description": "「〜です」がいらないこと、ini と itu、代名詞、持ち主の言い方、名詞が先で形容詞が後。"
+    },
+    {
+      "id": "asking",
+      "title": "質問と否定",
+      "description": "tidak と bukan、疑問詞、はい・いいえで答える質問、ada と punya。"
+    },
+    {
+      "id": "verbs",
+      "title": "動詞と時",
+      "description": "形の変わらない動詞、mau と bisa、時制のかわりの時の言葉、「〜へ」と「〜から」、数え方、ていねいな頼み方。"
+    },
+    {
+      "id": "chain",
+      "title": "「そして」「それから」",
+      "description": "動作をつなぐ、付け加える。"
+    },
+    {
+      "id": "reason",
+      "title": "「〜から」「だから」",
+      "description": "理由を言う。そして、そこから何が言えるかを言う。"
+    },
+    {
+      "id": "contrast",
+      "title": "「でも」",
+      "description": "反対のことや、予想外のことを言う。"
+    },
+    {
+      "id": "when",
+      "title": "「もし」「〜時」「前」「後」",
+      "description": "条件と、物事が起こる順番。"
+    },
+    {
+      "id": "purpose",
+      "title": "「〜ながら」「〜ように」",
+      "description": "二つのことを同時にする。何のためかを言う。"
+    },
+    {
+      "id": "affixes",
+      "title": "接頭辞・接尾辞",
+      "description": "ber-, me-, di-, -kan, -i, ter-, ke-…-an が語根をどう変えるか。書き言葉が話し言葉より長く見える理由。"
+    },
+    {
+      "id": "describe",
+      "title": "比べる・説明する",
+      "description": "動詞から作る名詞、「〜と同じくらい」、「もっと」と「いちばん」、yang、言葉のくり返し。"
+    },
+    {
+      "id": "conversation",
+      "title": "本当の会話の言葉",
+      "description": "-nya、pernah、masih と lagi、kok・sih・dong・deh・kan、人の話を伝える、推測する、ていねいに頼む。"
+    }
+  ],
+  "lessons": [
+    {
+      "id": "gr-no-be",
+      "order": 1,
+      "file": "content/ja-id/grammar/no-be.json",
+      "title": "Saya guru — 「です」はいらない",
+      "group": "sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-ini-itu",
+      "order": 2,
+      "file": "content/ja-id/grammar/ini-itu.json",
+      "title": "ini と itu — これ・それ・あれ",
+      "group": "sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-pronouns",
+      "order": 3,
+      "file": "content/ja-id/grammar/pronouns.json",
+      "title": "saya, kamu, dia… — 代名詞",
+      "group": "sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-possession",
+      "order": 4,
+      "file": "content/ja-id/grammar/possession.json",
+      "title": "rumah saya — 「〜の」（持ち主）",
+      "group": "sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-noun-adj",
+      "order": 5,
+      "file": "content/ja-id/grammar/noun-adj.json",
+      "title": "rumah besar — 名詞が先",
+      "group": "sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-plural",
+      "order": 6,
+      "file": "content/ja-id/grammar/plural.json",
+      "title": "buku-buku と banyak — 複数の言い方",
+      "group": "sentence",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-tidak-bukan",
+      "order": 7,
+      "file": "content/ja-id/grammar/tidak-bukan.json",
+      "title": "tidak と bukan — 〜ない",
+      "group": "asking",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-questions",
+      "order": 8,
+      "file": "content/ja-id/grammar/questions.json",
+      "title": "apa, siapa, di mana… — 疑問詞",
+      "group": "asking",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-yes-no",
+      "order": 9,
+      "file": "content/ja-id/grammar/yes-no.json",
+      "title": "はい・いいえの質問",
+      "group": "asking",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-ada",
+      "order": 10,
+      "file": "content/ja-id/grammar/ada.json",
+      "title": "ada — ある、いる",
+      "group": "asking",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-punya",
+      "order": 11,
+      "file": "content/ja-id/grammar/punya.json",
+      "title": "punya — 持っている",
+      "group": "asking",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-verbs",
+      "order": 12,
+      "file": "content/ja-id/grammar/verbs.json",
+      "title": "動詞は形が変わらない",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-mau-bisa",
+      "order": 13,
+      "file": "content/ja-id/grammar/mau-bisa.json",
+      "title": "mau, bisa, harus, boleh",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-time-words",
+      "order": 14,
+      "file": "content/ja-id/grammar/time-words.json",
+      "title": "sudah, sedang, akan, belum",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-di-ke-dari",
+      "order": 15,
+      "file": "content/ja-id/grammar/di-ke-dari.json",
+      "title": "di, ke, dari — 〜に・で、〜へ、〜から",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-counting",
+      "order": 16,
+      "file": "content/ja-id/grammar/counting.json",
+      "title": "se-, orang, buah — 数え方",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-degree",
+      "order": 17,
+      "file": "content/ja-id/grammar/degree.json",
+      "title": "sangat, sekali, banget, agak, terlalu",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "gr-requests",
+      "order": 18,
+      "file": "content/ja-id/grammar/requests.json",
+      "title": "tolong, silakan, ayo, jangan",
+      "group": "verbs",
+      "level": "first-steps"
+    },
+    {
+      "id": "con-dan",
+      "order": 19,
+      "file": "content/ja-id/connectors/dan.json",
+      "title": "dan — と、そして",
+      "group": "chain",
+      "level": "basic"
+    },
+    {
+      "id": "con-lalu",
+      "order": 20,
+      "file": "content/ja-id/connectors/lalu.json",
+      "title": "lalu, terus — それから、〜て",
+      "group": "chain",
+      "level": "basic"
+    },
+    {
+      "id": "con-juga",
+      "order": 21,
+      "file": "content/ja-id/connectors/juga.json",
+      "title": "juga — 〜も",
+      "group": "chain",
+      "level": "basic"
+    },
+    {
+      "id": "con-atau",
+      "order": 22,
+      "file": "content/ja-id/connectors/atau.json",
+      "title": "atau — または、〜か",
+      "group": "chain",
+      "level": "basic"
+    },
+    {
+      "id": "con-tapi",
+      "order": 23,
+      "file": "content/ja-id/connectors/tapi.json",
+      "title": "tapi — でも、〜けど",
+      "group": "contrast",
+      "level": "basic"
+    },
+    {
+      "id": "con-walaupun",
+      "order": 24,
+      "file": "content/ja-id/connectors/walaupun.json",
+      "title": "walaupun — 〜のに、〜けれども",
+      "group": "contrast",
+      "level": "basic"
+    },
+    {
+      "id": "con-karena",
+      "order": 25,
+      "file": "content/ja-id/connectors/karena.json",
+      "title": "karena — 〜から、〜ので",
+      "group": "reason",
+      "level": "basic"
+    },
+    {
+      "id": "con-soalnya",
+      "order": 26,
+      "file": "content/ja-id/connectors/soalnya.json",
+      "title": "soalnya — 〜からさ（話し言葉）",
+      "group": "reason",
+      "level": "basic"
+    },
+    {
+      "id": "con-jadi",
+      "order": 27,
+      "file": "content/ja-id/connectors/jadi.json",
+      "title": "jadi — だから、それで",
+      "group": "reason",
+      "level": "basic"
+    },
+    {
+      "id": "con-kalau",
+      "order": 28,
+      "file": "content/ja-id/connectors/kalau.json",
+      "title": "kalau — 〜たら、〜なら",
+      "group": "when",
+      "level": "basic"
+    },
+    {
+      "id": "con-waktu",
+      "order": 29,
+      "file": "content/ja-id/connectors/waktu.json",
+      "title": "waktu — 〜とき",
+      "group": "when",
+      "level": "basic"
+    },
+    {
+      "id": "con-sebelum",
+      "order": 30,
+      "file": "content/ja-id/connectors/sebelum.json",
+      "title": "sebelum — 〜前に",
+      "group": "when",
+      "level": "basic"
+    },
+    {
+      "id": "con-sesudah",
+      "order": 31,
+      "file": "content/ja-id/connectors/sesudah.json",
+      "title": "sesudah, setelah — 〜後で、〜てから",
+      "group": "when",
+      "level": "basic"
+    },
+    {
+      "id": "con-supaya",
+      "order": 32,
+      "file": "content/ja-id/connectors/supaya.json",
+      "title": "supaya, biar — 〜ように",
+      "group": "purpose",
+      "level": "basic"
+    },
+    {
+      "id": "con-sambil",
+      "order": 33,
+      "file": "content/ja-id/connectors/sambil.json",
+      "title": "sambil — 〜ながら",
+      "group": "purpose",
+      "level": "basic"
+    },
+    {
+      "id": "gr-ber",
+      "order": 34,
+      "file": "content/ja-id/grammar/ber.json",
+      "title": "ber- の動詞",
+      "group": "affixes",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-me",
+      "order": 35,
+      "file": "content/ja-id/grammar/me.json",
+      "title": "me- の動詞",
+      "group": "affixes",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-me-sounds",
+      "order": 36,
+      "file": "content/ja-id/grammar/me-sounds.json",
+      "title": "me- と音の変化",
+      "group": "affixes",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-di",
+      "order": 37,
+      "file": "content/ja-id/grammar/di.json",
+      "title": "di- — 受け身",
+      "group": "affixes",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-kan",
+      "order": 38,
+      "file": "content/ja-id/grammar/kan.json",
+      "title": "-kan",
+      "group": "affixes",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-i",
+      "order": 39,
+      "file": "content/ja-id/grammar/i.json",
+      "title": "-i",
+      "group": "affixes",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-ter",
+      "order": 40,
+      "file": "content/ja-id/grammar/ter.json",
+      "title": "ter-",
+      "group": "affixes",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-ke-an",
+      "order": 41,
+      "file": "content/ja-id/grammar/ke-an.json",
+      "title": "ke-…-an",
+      "group": "affixes",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-pe-an",
+      "order": 42,
+      "file": "content/ja-id/grammar/pe-an.json",
+      "title": "名詞：pe-, -an, pe-…-an",
+      "group": "describe",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-se",
+      "order": 43,
+      "file": "content/ja-id/grammar/se.json",
+      "title": "se- — 〜と同じくらい、1つ、同じ",
+      "group": "describe",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-lebih-paling",
+      "order": 44,
+      "file": "content/ja-id/grammar/lebih-paling.json",
+      "title": "lebih と paling — 比べる",
+      "group": "describe",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-yang",
+      "order": 45,
+      "file": "content/ja-id/grammar/yang.json",
+      "title": "yang — 〜なの、〜する人",
+      "group": "describe",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-redup",
+      "order": 46,
+      "file": "content/ja-id/grammar/redup.json",
+      "title": "重ね言葉 — 2回くり返す",
+      "group": "describe",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-nya",
+      "order": 47,
+      "file": "content/ja-id/grammar/nya.json",
+      "title": "-nya",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-pernah",
+      "order": 48,
+      "file": "content/ja-id/grammar/pernah.json",
+      "title": "pernah — 〜したことがある",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-masih-lagi",
+      "order": 49,
+      "file": "content/ja-id/grammar/masih-lagi.json",
+      "title": "masih と lagi",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-kok-sih",
+      "order": 50,
+      "file": "content/ja-id/grammar/kok-sih.json",
+      "title": "kok と sih",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-dong-deh",
+      "order": 51,
+      "file": "content/ja-id/grammar/dong-deh.json",
+      "title": "dong, deh, kan",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-katanya",
+      "order": 52,
+      "file": "content/ja-id/grammar/katanya.json",
+      "title": "katanya — 人の話を伝える",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-kayaknya",
+      "order": 53,
+      "file": "content/ja-id/grammar/kayaknya.json",
+      "title": "kayaknya, sepertinya, mungkin",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-minta",
+      "order": 54,
+      "file": "content/ja-id/grammar/minta.json",
+      "title": "minta, mohon, boleh saya — ていねいに頼む",
+      "group": "conversation",
+      "level": "intermediate"
+    },
+    {
+      "id": "gr-saling",
+      "order": 55,
+      "file": "content/ja-id/grammar/saling.json",
+      "title": "saling と sendiri",
+      "group": "conversation",
+      "level": "intermediate"
+    }
+  ],
+  "scenarios": [
+    {
+      "id": "warung",
+      "file": "content/ja-id/scenarios/warung.json",
+      "title": "ワルンで注文する",
+      "icon": "🍜",
+      "category": "restaurant",
+      "level": "basic"
+    },
+    {
+      "id": "market",
+      "file": "content/ja-id/scenarios/market.json",
+      "title": "市場で値切る",
+      "icon": "🛍️",
+      "category": "shopping",
+      "level": "basic"
+    },
+    {
+      "id": "ojek",
+      "file": "content/ja-id/scenarios/ojek.json",
+      "title": "バイクタクシーに乗る",
+      "icon": "🛵",
+      "category": "transport",
+      "level": "basic"
+    },
+    {
+      "id": "homestay",
+      "file": "content/ja-id/scenarios/homestay.json",
+      "title": "民宿にチェックインする",
+      "icon": "🏨",
+      "category": "hotel",
+      "level": "basic"
+    },
+    {
+      "id": "immigration",
+      "file": "content/ja-id/scenarios/immigration.json",
+      "title": "空港の入国審査",
+      "icon": "✈️",
+      "category": "airport",
+      "level": "basic"
+    },
+    {
+      "id": "lost",
+      "file": "content/ja-id/scenarios/lost.json",
+      "title": "道をたずねる",
+      "icon": "🧭",
+      "category": "directions",
+      "level": "basic"
+    },
+    {
+      "id": "pharmacy",
+      "file": "content/ja-id/scenarios/pharmacy.json",
+      "title": "薬局で薬を買う",
+      "icon": "💊",
+      "category": "emergency",
+      "level": "basic"
+    },
+    {
+      "id": "neighbour",
+      "file": "content/ja-id/scenarios/neighbour.json",
+      "title": "お隣さんと話す",
+      "icon": "👋",
+      "category": "smalltalk",
+      "level": "basic"
+    },
+    {
+      "id": "family-dinner",
+      "file": "content/ja-id/scenarios/family-dinner.json",
+      "title": "恋人の家族と夕食",
+      "icon": "🍲",
+      "category": "family",
+      "level": "intermediate"
+    },
+    {
+      "id": "weekend-plans",
+      "file": "content/ja-id/scenarios/weekend-plans.json",
+      "title": "週末の予定を立てる",
+      "icon": "📅",
+      "category": "plans",
+      "level": "intermediate"
+    },
+    {
+      "id": "clinic",
+      "file": "content/ja-id/scenarios/clinic.json",
+      "title": "クリニックで",
+      "icon": "🩺",
+      "category": "doctor",
+      "level": "intermediate"
+    },
+    {
+      "id": "homestay-problem",
+      "file": "content/ja-id/scenarios/homestay-problem.json",
+      "title": "部屋のトラブル",
+      "icon": "🔧",
+      "category": "hotel",
+      "level": "intermediate"
+    },
+    {
+      "id": "wrong-order",
+      "file": "content/ja-id/scenarios/wrong-order.json",
+      "title": "注文と違う料理",
+      "icon": "😕",
+      "category": "problems",
+      "level": "intermediate"
+    }
+  ],
+  "listening": [
+    {
+      "id": "contrasts",
+      "kind": "contrasts",
+      "file": "content/ja-id/listening/contrasts.json",
+      "title": "どっちに聞こえた？",
+      "icon": "🎧",
+      "level": "first-steps"
+    },
+    {
+      "id": "replies",
+      "kind": "replies",
+      "file": "content/ja-id/listening/replies.json",
+      "title": "何て言った？",
+      "icon": "👂",
+      "level": "basic"
+    },
+    {
+      "id": "replies-more",
+      "kind": "replies",
+      "file": "content/ja-id/listening/replies-more.json",
+      "title": "ナチュラルスピードで聞き取る",
+      "icon": "🎧",
+      "level": "intermediate"
+    }
+  ],
+  "characterSets": []
+}

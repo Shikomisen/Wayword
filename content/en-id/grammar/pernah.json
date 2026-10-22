@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-pernah",
+  "connector": "pernah",
+  "gloss": "ever, once; have (done)",
+  "title": "pernah — ever, once",
+  "pattern": "Saya pernah … · Saya belum pernah … · Saya tidak pernah … · Pernah …? — Pernah. / Belum pernah.",
+  "explanation": "pernah goes before a verb, or straight before ke for places, and says something has happened at least once: Saya pernah ke Lombok (I've been to Lombok). It's also how you ask 'have you ever': Pernah makan durian? (Have you ever had durian?). Answer with the word itself: Pernah (I have) or Belum pernah (not yet, I haven't). Tidak pernah is never, as a habit or a firm fact: Dia tidak pernah minum kopi (He never drinks coffee). With a situation in the past, pernah means once, at one time: Saya pernah tinggal di Jakarta (I lived in Jakarta at one point).",
+  "natural": "Sudah pernah ke Bali? is one of the first questions a visitor gets, so have your answer ready. Belum pernah is the friendly reply for anything you might still do: Belum pernah, tapi saya mau coba.",
+  "stiff": "Answer with pernah or belum pernah, not a bare ya or tidak; tidak on its own sounds like a flat 'no, never'. And tidak pernah in reply to an offer like Pernah coba sambal ini? can sound like you refuse to try it.",
+  "examples": [
+    {
+      "id": "gx-pernah-1",
+      "indonesian": "Bapak pernah ke Lombok?",
+      "english": "Have you ever been to Lombok?",
+      "chunks": [
+        {
+          "t": "Bapak ",
+          "w": "w-bapak"
+        },
+        {
+          "t": "pernah ",
+          "w": "w-pernah"
+        },
+        {
+          "t": "ke Lombok?",
+          "w": "w-ke"
+        }
+      ],
+      "gap": {
+        "before": "Bapak ",
+        "answer": "pernah",
+        "after": " ke Lombok?",
+        "options": [
+          "pernah",
+          "mau",
+          "sedang"
+        ],
+        "why": "'Have you ever' is pernah; mau would ask whether he's going to Lombok."
+      },
+      "registerNotes": "No verb is needed: pernah ke means 'have been to'. The answer is Pernah or Belum pernah.",
+      "audio": "audio/id/grammar/gx-pernah-1.mp3",
+      "tags": [
+        "grammar",
+        "pernah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-pernah-2",
+      "indonesian": "Belum pernah, tapi saya mau coba.",
+      "english": "Not yet, but I'd like to try it.",
+      "chunks": [
+        {
+          "t": "Belum pernah, ",
+          "w": "w-pernah"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "mau coba.",
+          "w": "w-mencoba"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Belum",
+        "after": " pernah, tapi saya mau coba.",
+        "options": [
+          "Belum",
+          "Tidak",
+          "Bukan"
+        ],
+        "why": "Belum pernah: not yet, and you'd like to. Tidak pernah would shut the door."
+      },
+      "registerNotes": "A reply to Pernah makan durian? (Have you ever had durian?). Belum keeps it friendly: you just haven't had the chance.",
+      "audio": "audio/id/grammar/gx-pernah-2.mp3",
+      "tags": [
+        "grammar",
+        "pernah"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-pernah-3",
+      "indonesian": "Saya tidak pernah makan daging.",
+      "english": "I never eat meat.",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "tidak pernah ",
+          "w": "w-tidak-pernah"
+        },
+        {
+          "t": "makan ",
+          "w": "w-makan"
+        },
+        {
+          "t": "daging.",
+          "w": "w-daging"
+        }
+      ],
+      "gap": {
+        "before": "Saya ",
+        "answer": "tidak",
+        "after": " pernah makan daging.",
+        "options": [
+          "tidak",
+          "belum",
+          "bukan"
+        ],
+        "why": "A firm habit is tidak pernah, never. Belum pernah would mean you haven't yet but might."
+      },
+      "registerNotes": "Useful if you're vegetarian. At a warung, ask for the dish tanpa daging (without meat).",
+      "audio": "audio/id/grammar/gx-pernah-3.mp3",
+      "tags": [
+        "grammar",
+        "pernah"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-pernah-4",
+      "indonesian": "Waktu kecil, saya pernah tinggal di Jakarta.",
+      "english": "I lived in Jakarta for a while as a child.",
+      "chunks": [
+        {
+          "t": "Waktu kecil, ",
+          "w": "w-kecil"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "pernah ",
+          "w": "w-pernah"
+        },
+        {
+          "t": "tinggal ",
+          "w": "w-tinggal"
+        },
+        {
+          "t": "di Jakarta.",
+          "w": "w-di"
+        }
+      ],
+      "gap": {
+        "before": "Waktu kecil, saya ",
+        "answer": "pernah",
+        "after": " tinggal di Jakarta.",
+        "options": [
+          "pernah",
+          "masih",
+          "sedang"
+        ],
+        "why": "pernah marks something true at one time in the past; masih would mean you still live there."
+      },
+      "audio": "audio/id/grammar/gx-pernah-4.mp3",
+      "tags": [
+        "grammar",
+        "pernah"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "schemaVersion": 1,
+  "id": "words-social",
+  "title": "Orang & pergaulan",
+  "description": "Orang-orang di sekitarmu dan hal yang kalian lakukan bersama: rekan kerja, kerabat, undangan, perkenalan, bersulang.",
+  "items": [
+    {
+      "id": "w-shiriai",
+      "japanese": "知り合い",
+      "furigana": "{知|し}り{合|あ}い",
+      "indonesian": "kenalan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shiriai.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-douryou",
+      "japanese": "同僚",
+      "furigana": "{同僚|どうりょう}",
+      "indonesian": "rekan kerja",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-douryou.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-joushi",
+      "japanese": "上司",
+      "furigana": "{上司|じょうし}",
+      "indonesian": "atasan, bos",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-joushi.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-senpai",
+      "japanese": "先輩",
+      "furigana": "{先輩|せんぱい}",
+      "indonesian": "senior (di sekolah atau tempat kerja)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-senpai.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kouhai",
+      "japanese": "後輩",
+      "furigana": "{後輩|こうはい}",
+      "indonesian": "junior (di sekolah atau tempat kerja)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kouhai.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shinseki",
+      "japanese": "親戚",
+      "furigana": "{親戚|しんせき}",
+      "indonesian": "kerabat, saudara",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shinseki.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-otto",
+      "japanese": "夫",
+      "furigana": "{夫|おっと}",
+      "indonesian": "suami (saya)",
+      "pos": "noun",
+      "usage": "Untuk suami orang lain: ご主人, atau 旦那さん. Bahasa Jepang membedakan keluarga sendiri dan keluarga orang lain.",
+      "audio": "audio/ja/words/w-otto.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tsuma",
+      "japanese": "妻",
+      "furigana": "{妻|つま}",
+      "indonesian": "istri (saya)",
+      "pos": "noun",
+      "usage": "Untuk istri orang lain: 奥さん.",
+      "audio": "audio/ja/words/w-tsuma.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-koibito",
+      "japanese": "恋人",
+      "furigana": "{恋人|こいびと}",
+      "indonesian": "kekasih, pacar",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-koibito.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kekkon",
+      "japanese": "結婚",
+      "furigana": "{結婚|けっこん}",
+      "indonesian": "pernikahan",
+      "pos": "noun",
+      "usage": "結婚している — sudah menikah. 結婚おめでとう！ — selamat menikah!",
+      "audio": "audio/ja/words/w-kekkon.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-oiwai",
+      "japanese": "お祝い",
+      "furigana": "お{祝|いわ}い",
+      "indonesian": "perayaan; hadiah ucapan selamat",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-oiwai.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shoutai",
+      "japanese": "招待",
+      "furigana": "{招待|しょうたい}",
+      "indonesian": "undangan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shoutai.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kaiwa",
+      "japanese": "会話",
+      "furigana": "{会話|かいわ}",
+      "indonesian": "percakapan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kaiwa.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-joudan",
+      "japanese": "冗談",
+      "furigana": "{冗談|じょうだん}",
+      "indonesian": "lelucon, candaan",
+      "pos": "noun",
+      "usage": "冗談でしょう？ — bercanda, kan?",
+      "audio": "audio/ja/words/w-joudan.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-wadai",
+      "japanese": "話題",
+      "furigana": "{話題|わだい}",
+      "indonesian": "topik (pembicaraan)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-wadai.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-nomikai",
+      "japanese": "飲み会",
+      "furigana": "{飲|の}み{会|かい}",
+      "indonesian": "acara minum-minum, kumpul makan dan minum",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-nomikai.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3,
+      "usage": "Kamu tidak harus minum alkohol: memesan teh oolong (ウーロン茶) atau minuman ringan juga biasa."
+    },
+    {
+      "id": "w-kanpai",
+      "japanese": "乾杯",
+      "furigana": "{乾杯|かんぱい}",
+      "indonesian": "bersulang!",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kanpai.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tsukiau",
+      "japanese": "付き合う",
+      "furigana": "{付|つ}き{合|あ}う",
+      "indonesian": "berpacaran; menemani",
+      "pos": "verb",
+      "forms": {
+        "masu": "{付|つ}き{合|あ}います",
+        "te": "{付|つ}き{合|あ}って"
+      },
+      "usage": "付き合ってる — kami pacaran. ちょっと付き合って — temani aku sebentar.",
+      "audio": "audio/ja/words/w-tsukiau.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shoukai",
+      "japanese": "紹介する",
+      "furigana": "{紹介|しょうかい}する",
+      "indonesian": "memperkenalkan",
+      "pos": "verb",
+      "forms": {
+        "masu": "{紹介|しょうかい}します",
+        "te": "{紹介|しょうかい}して"
+      },
+      "audio": "audio/ja/words/w-shoukai.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sasou",
+      "japanese": "誘う",
+      "furigana": "{誘|さそ}う",
+      "indonesian": "mengajak",
+      "pos": "verb",
+      "forms": {
+        "masu": "{誘|さそ}います",
+        "te": "{誘|さそ}って"
+      },
+      "audio": "audio/ja/words/w-sasou.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kotowaru",
+      "japanese": "断る",
+      "furigana": "{断|ことわ}る",
+      "indonesian": "menolak",
+      "pos": "verb",
+      "forms": {
+        "masu": "{断|ことわ}ります",
+        "te": "{断|ことわ}って"
+      },
+      "usage": "Orang Jepang jarang menolak dengan “tidak” secara langsung: cukup ちょっと… atau 今回はちょっと…, mirip “lain kali, ya” dalam bahasa Indonesia.",
+      "audio": "audio/ja/words/w-kotowaru.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-atsumaru",
+      "japanese": "集まる",
+      "furigana": "{集|あつ}まる",
+      "indonesian": "berkumpul",
+      "pos": "verb",
+      "forms": {
+        "masu": "{集|あつ}まります",
+        "te": "{集|あつ}まって"
+      },
+      "audio": "audio/ja/words/w-atsumaru.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-orei",
+      "japanese": "お礼",
+      "furigana": "お{礼|れい}",
+      "indonesian": "ucapan terima kasih (kata-kata atau hadiah kecil)",
+      "pos": "noun",
+      "usage": "お礼を言う — mengucapkan terima kasih.",
+      "audio": "audio/ja/words/w-orei.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-aisatsu",
+      "japanese": "挨拶",
+      "furigana": "{挨拶|あいさつ}",
+      "indonesian": "salam, sapaan; sambutan singkat",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-aisatsu.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kinjo",
+      "japanese": "近所",
+      "furigana": "{近所|きんじょ}",
+      "indonesian": "lingkungan sekitar rumah",
+      "pos": "noun",
+      "usage": "近所の人 — tetangga.",
+      "audio": "audio/ja/words/w-kinjo.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

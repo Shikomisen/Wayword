@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "weekend-plans",
+  "title": "Making weekend plans",
+  "category": "plans",
+  "setting": "It's Thursday evening in Yogyakarta, and your friend Rina from your language exchange rings you. She talks to you the way friends do: aku, kamu and nggak.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "friend",
+      "indonesian": "Halo! Lagi apa? Sabtu ini ada acara, nggak?",
+      "english": "Hi! What are you up to? Got anything on this Saturday?",
+      "audio": "audio/id/scenario/weekend-plans-n1.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Lagi santai aja. Sabtu? Nggak ada. Kenapa?",
+          "english": "Just relaxing. Saturday? Nothing. Why?",
+          "feedback": "Relaxed and casual, the way friends talk: lagi for what you're doing, aja for 'just', nggak for no.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Kayaknya nggak ada, sih. Ada apa?",
+          "english": "I don't think so, actually. What's up?",
+          "feedback": "Kayaknya (I think) and sih keep it soft and chatty.",
+          "next": "n2"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya tidak ada acara. Apakah Anda punya rencana?",
+          "english": "I have no engagements. Do you have a plan?",
+          "feedback": "Correct, but saya, Anda and apakah sound like a form, not a friend. Between friends: Nggak ada. Kenapa?",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "friend",
+      "indonesian": "Ke pantai, yuk! Ke Parangtritis. Udah lama banget nggak ke pantai.",
+      "english": "Let's go to the beach! To Parangtritis. I haven't been to the beach for ages.",
+      "audio": "audio/id/scenario/weekend-plans-n2.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Ayo! Aku mau banget.",
+          "english": "Yes, let's! I'd love to.",
+          "feedback": "Ayo answers yuk, and mau banget is a keen yes.",
+          "next": "n3"
+        },
+        {
+          "phraseId": "pla-06",
+          "quality": "good",
+          "feedback": "Boleh is the everyday yes to a suggestion, friendly with anyone.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya setuju dengan usulan Anda.",
+          "english": "I agree with your proposal.",
+          "feedback": "Fine in a meeting, but stiff with a friend on the phone. Ayo! or Boleh! is how friends say yes.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "friend",
+      "indonesian": "Berangkat jam berapa enaknya? Jangan siang-siang, panas.",
+      "english": "What time shall we leave? Not too late, it gets hot.",
+      "audio": "audio/id/scenario/weekend-plans-n3.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Jam enam pagi, gimana? Biar nggak kepanasan.",
+          "english": "Six in the morning, how's that? So we don't get caught in the heat.",
+          "feedback": "Gimana at the end turns a time into a suggestion, and biar (so that) gives the reason, both casual.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "cas-28",
+          "quality": "good",
+          "feedback": "Easy-going and very common: friends often hand the choice back. Said flatly, though, terserah can sound like 'whatever'.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Pukul enam pagi saja.",
+          "english": "Six a.m., then.",
+          "feedback": "Pukul is the time word of news bulletins, timetables and invitations. With friends it's jam: jam enam aja.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "friend",
+      "indonesian": "Ya udah, jam enam, ya. Kita ketemu di mana?",
+      "english": "OK then, six. Where shall we meet?",
+      "audio": "audio/id/scenario/weekend-plans-n4.mp3",
+      "options": [
+        {
+          "phraseId": "pla-04",
+          "quality": "good",
+          "feedback": "A clear meeting point, with ya to check she's happy with it. Ketemu is the everyday bertemu.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Jemput aku, dong!",
+          "english": "Come and pick me up, go on!",
+          "feedback": "Dong adds a friendly push, fine with a good friend. With anyone older or senior, ask with boleh instead.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "indonesian": "Saya akan menunggu Anda di depan stasiun.",
+          "english": "I shall wait for you in front of the station.",
+          "feedback": "Clear, but saya, Anda and akan make it sound like an official arrangement. Friends say Kita ketemu di depan stasiun, ya.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "friend",
+      "indonesian": "Oh ya, Andi ikut juga, ya. Nggak apa-apa, kan?",
+      "english": "Oh, and Andi's coming too. That's OK, isn't it?",
+      "audio": "audio/id/scenario/weekend-plans-n5.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Ya nggak apa-apa, dong! Makin rame makin seru.",
+          "english": "Of course it's OK! The more the merrier.",
+          "feedback": "Dong here is 'of course', and makin rame makin seru is the Indonesian 'the more the merrier'.",
+          "next": "n6"
+        },
+        {
+          "phraseId": "cas-04",
+          "quality": "good",
+          "feedback": "The all-purpose 'it's fine'. Said warmly, it's all she needs to hear.",
+          "next": "n6"
+        },
+        {
+          "quality": "wrong",
+          "indonesian": "Bukan apa-apa.",
+          "english": "It's nothing.",
+          "feedback": "Bukan apa-apa means 'it's nothing', said when someone thanks you. For 'it's fine', it's nggak apa-apa.",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "friend",
+      "indonesian": "Sip! Sabtu jam enam, ya. Jangan telat, lho!",
+      "english": "Great! Saturday at six, then. Don't be late!",
+      "audio": "audio/id/scenario/weekend-plans-n6.mp3",
+      "options": [
+        {
+          "quality": "good",
+          "indonesian": "Siap! Sampai Sabtu, ya.",
+          "english": "Will do! See you Saturday.",
+          "feedback": "Siap (ready) is a cheerful 'will do', and sampai Sabtu closes the call.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "indonesian": "Tenang aja, aku nggak bakal telat.",
+          "english": "Don't worry, I won't be late.",
+          "feedback": "Tenang aja (relax) and nggak bakal (won't) are everyday casual speech.",
+          "next": "end"
+        },
+        {
+          "phraseId": "pla-09",
+          "quality": "awkward",
+          "feedback": "After agreeing on everything, 'I'll let you know' sounds as if you might not come: it's often a polite way of not committing.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "indonesian": "",
+      "english": "Sorted: Saturday at six. Between friends it's aku and kamu, nggak for tidak, yuk to suggest, dong to push gently and ya to check. Keep saya, Anda, akan and pukul for people you don't know.",
+      "end": true,
+      "options": []
+    }
+  }
+}

@@ -1,0 +1,440 @@
+{
+  "schemaVersion": 1,
+  "id": "pharmacy",
+  "title": "Di apotek",
+  "category": "emergency",
+  "setting": "Sudah dua hari kamu kena flu. Kamu masuk ke toko obat dekat hotel dan menuju konter apotek.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "pharmacist",
+      "japanese": "いらっしゃいませ。どうされましたか。",
+      "furigana": [
+        {
+          "b": "いらっしゃいませ。どうされましたか。"
+        }
+      ],
+      "romaji": "Irasshaimase. Dō saremashita ka.",
+      "indonesian": "Selamat datang. Ada keluhan apa?",
+      "audio": "audio/ja/scenario/pharmacy-n1.mp3",
+      "audioHint": "いらっしゃいませ。どうされましたか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "風邪を引いたみたいです。",
+          "furigana": [
+            {
+              "b": "風邪",
+              "r": "かぜ"
+            },
+            {
+              "b": "を"
+            },
+            {
+              "b": "引",
+              "r": "ひ"
+            },
+            {
+              "b": "いたみたいです。"
+            }
+          ],
+          "romaji": "Kaze o hiita mitai desu.",
+          "indonesian": "Sepertinya saya kena flu.",
+          "feedback": "Jelas dan wajar. みたいです melunakkannya: kamu menduga begitu, tapi kamu bukan dokter. 風邪 adalah flu biasa (pilek), bukan influenza (インフルエンザ).",
+          "next": "n2"
+        },
+        {
+          "phraseId": "eme-03",
+          "quality": "good",
+          "feedback": "Boleh sebagai awal: apoteker akan bertanya apa masalahnya. 風邪を引いたみたいです langsung memberi tahu mereka.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "風邪をください。",
+          "furigana": [
+            {
+              "b": "風邪",
+              "r": "かぜ"
+            },
+            {
+              "b": "をください。"
+            }
+          ],
+          "romaji": "Kaze o kudasai.",
+          "indonesian": "Minta flu.",
+          "feedback": "Itu meminta penyakit flu! Obat flu adalah 風邪薬: 風邪薬はありますか.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "pharmacist",
+      "japanese": "熱はありますか。",
+      "furigana": [
+        {
+          "b": "熱",
+          "r": "ねつ"
+        },
+        {
+          "b": "はありますか。"
+        }
+      ],
+      "romaji": "Netsu wa arimasu ka.",
+      "indonesian": "Apakah demam?",
+      "audio": "audio/ja/scenario/pharmacy-n2.mp3",
+      "audioHint": "ねつはありますか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "少しあります。三十八度ぐらいです。",
+          "furigana": [
+            {
+              "b": "少",
+              "r": "すこ"
+            },
+            {
+              "b": "しあります。"
+            },
+            {
+              "b": "三十八度",
+              "r": "さんじゅうはちど"
+            },
+            {
+              "b": "ぐらいです。"
+            }
+          ],
+          "romaji": "Sukoshi arimasu. Sanjūhachi-do gurai desu.",
+          "indonesian": "Sedikit. Sekitar 38 derajat.",
+          "feedback": "Ideal: ya, dan seberapa tinggi. Jepang memakai Celsius, sama seperti Indonesia.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "japanese": "いいえ、ありません。",
+          "furigana": [
+            {
+              "b": "いいえ、ありません。"
+            }
+          ],
+          "romaji": "Iie, arimasen.",
+          "indonesian": "Tidak, tidak demam.",
+          "feedback": "Jawaban yang jelas untuk pertanyaan ya-atau-tidak.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "熱です。",
+          "furigana": [
+            {
+              "b": "熱",
+              "r": "ねつ"
+            },
+            {
+              "b": "です。"
+            }
+          ],
+          "romaji": "Netsu desu.",
+          "indonesian": "Demam.",
+          "feedback": "Dimengerti, tapi terdengar seperti kamu menyebut nama penyakitnya. Bahasa Indonesia cukup bilang “saya demam”, sedangkan bahasa Jepang memakai “ada”: 熱があります.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "pharmacist",
+      "japanese": "ほかに症状はありますか。",
+      "furigana": [
+        {
+          "b": "ほかに"
+        },
+        {
+          "b": "症状",
+          "r": "しょうじょう"
+        },
+        {
+          "b": "はありますか。"
+        }
+      ],
+      "romaji": "Hoka ni shōjō wa arimasu ka.",
+      "indonesian": "Ada gejala lain?",
+      "audio": "audio/ja/scenario/pharmacy-n3.mp3",
+      "audioHint": "ほかにしょうじょうはありますか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "喉が痛くて、咳も出ます。",
+          "furigana": [
+            {
+              "b": "喉",
+              "r": "のど"
+            },
+            {
+              "b": "が"
+            },
+            {
+              "b": "痛",
+              "r": "いた"
+            },
+            {
+              "b": "くて、"
+            },
+            {
+              "b": "咳",
+              "r": "せき"
+            },
+            {
+              "b": "も"
+            },
+            {
+              "b": "出",
+              "r": "で"
+            },
+            {
+              "b": "ます。"
+            }
+          ],
+          "romaji": "Nodo ga itakute, seki mo demasu.",
+          "indonesian": "Tenggorokan saya sakit, dan saya juga batuk.",
+          "feedback": "Dua gejala dalam satu kalimat: bentuk て (痛い → 痛くて) menyambungkannya, seperti kata “dan”.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "japanese": "頭が少し痛いです。",
+          "furigana": [
+            {
+              "b": "頭",
+              "r": "あたま"
+            },
+            {
+              "b": "が"
+            },
+            {
+              "b": "少",
+              "r": "すこ"
+            },
+            {
+              "b": "し"
+            },
+            {
+              "b": "痛",
+              "r": "いた"
+            },
+            {
+              "b": "いです。"
+            }
+          ],
+          "romaji": "Atama ga sukoshi itai desu.",
+          "indonesian": "Saya agak sakit kepala.",
+          "feedback": "Jelas. Bagian yang sakit + が痛いです bisa dipakai untuk bagian tubuh mana pun. Urutannya “kepala sakit”, bukan “sakit kepala”: bagian tubuhnya dulu.",
+          "next": "n4"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "全部痛いです。",
+          "furigana": [
+            {
+              "b": "全部",
+              "r": "ぜんぶ"
+            },
+            {
+              "b": "痛",
+              "r": "いた"
+            },
+            {
+              "b": "いです。"
+            }
+          ],
+          "romaji": "Zenbu itai desu.",
+          "indonesian": "Semuanya sakit.",
+          "feedback": "Jujur! Tapi apoteker perlu tahu di mana: 喉 (tenggorokan), 頭 (kepala), お腹 (perut).",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "pharmacist",
+      "japanese": "こちらの薬はいかがですか。一日三回、食後に飲んでください。",
+      "furigana": [
+        {
+          "b": "こちらの"
+        },
+        {
+          "b": "薬",
+          "r": "くすり"
+        },
+        {
+          "b": "はいかがですか。"
+        },
+        {
+          "b": "一日",
+          "r": "いちにち"
+        },
+        {
+          "b": "三回",
+          "r": "さんかい"
+        },
+        {
+          "b": "、"
+        },
+        {
+          "b": "食後",
+          "r": "しょくご"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "飲",
+          "r": "の"
+        },
+        {
+          "b": "んでください。"
+        }
+      ],
+      "romaji": "Kochira no kusuri wa ikaga desu ka. Ichinichi sankai, shokugo ni nonde kudasai.",
+      "indonesian": "Bagaimana dengan obat ini? Diminum tiga kali sehari, sesudah makan.",
+      "audio": "audio/ja/scenario/pharmacy-n4.mp3",
+      "audioHint": "こちらのくすりはいかがですか。いちにちさんかい、しょくごにのんでください",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "眠くなりますか。",
+          "furigana": [
+            {
+              "b": "眠",
+              "r": "ねむ"
+            },
+            {
+              "b": "くなりますか。"
+            }
+          ],
+          "romaji": "Nemuku narimasu ka.",
+          "indonesian": "Apakah obat ini membuat mengantuk?",
+          "feedback": "Pertanyaan yang bagus, terutama kalau kamu akan menyetir.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "japanese": "分かりました。それをください。",
+          "furigana": [
+            {
+              "b": "分",
+              "r": "わ"
+            },
+            {
+              "b": "かりました。それをください。"
+            }
+          ],
+          "romaji": "Wakarimashita. Sore o kudasai.",
+          "indonesian": "Baik. Saya ambil yang itu.",
+          "feedback": "Sederhana dan sopan.",
+          "next": "n5"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "一日三回、食べます。",
+          "furigana": [
+            {
+              "b": "一日",
+              "r": "いちにち"
+            },
+            {
+              "b": "三回",
+              "r": "さんかい"
+            },
+            {
+              "b": "、"
+            },
+            {
+              "b": "食",
+              "r": "た"
+            },
+            {
+              "b": "べます。"
+            }
+          ],
+          "romaji": "Ichinichi sankai, tabemasu.",
+          "indonesian": "Saya makan tiga kali sehari.",
+          "feedback": "Obat “diminum” dalam bahasa Jepang (薬を飲む), sama seperti “minum obat” dalam bahasa Indonesia. Dan 食後 berarti sesudah makan: minum obatnya setelah makan, tiga kali sehari.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "pharmacist",
+      "japanese": "少し眠くなるので、運転はしないでください。お大事に。",
+      "furigana": [
+        {
+          "b": "少",
+          "r": "すこ"
+        },
+        {
+          "b": "し"
+        },
+        {
+          "b": "眠",
+          "r": "ねむ"
+        },
+        {
+          "b": "くなるので、"
+        },
+        {
+          "b": "運転",
+          "r": "うんてん"
+        },
+        {
+          "b": "はしないでください。お"
+        },
+        {
+          "b": "大事",
+          "r": "だいじ"
+        },
+        {
+          "b": "に。"
+        }
+      ],
+      "romaji": "Sukoshi nemuku naru node, unten wa shinaide kudasai. O-daiji ni.",
+      "indonesian": "Obat ini bisa sedikit membuat mengantuk, jadi jangan menyetir, ya. Semoga lekas sembuh.",
+      "audio": "audio/ja/scenario/pharmacy-n5.mp3",
+      "audioHint": "すこしねむくなるので、うんてんはしないでください。おだいじに",
+      "options": [
+        {
+          "phraseId": "gre-05",
+          "quality": "good",
+          "feedback": "Balasan yang tepat. お大事に berarti “jaga diri baik-baik”, diucapkan kepada orang yang sedang sakit, seperti “semoga lekas sembuh”.",
+          "next": "end"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "お大事に。",
+          "furigana": [
+            {
+              "b": "お"
+            },
+            {
+              "b": "大事",
+              "r": "だいじ"
+            },
+            {
+              "b": "に。"
+            }
+          ],
+          "romaji": "O-daiji ni.",
+          "indonesian": "Semoga lekas sembuh.",
+          "feedback": "お大事に diucapkan kepada orang yang sakit, jadi kalau kamu membalasnya, kamu mendoakan apotekernya lekas sembuh. Ucapkan terima kasih saja.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "romaji": "",
+      "indonesian": "Selesai. 風邪薬 (obat flu), 熱 (demam), 喉 (tenggorokan), dan 食後 (sesudah makan) sudah mencakup sebagian besar kunjungan ke apotek karena flu. Kalau makin parah, apoteker bisa menunjukkan klinik terdekat.",
+      "end": true,
+      "options": []
+    }
+  }
+}

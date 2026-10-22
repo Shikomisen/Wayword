@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "con-karena",
+  "connector": "karena",
+  "gloss": "〜から、〜ので",
+  "title": "karena — 〜から、〜ので",
+  "pattern": "A karena B · Karena B, A",
+  "explanation": "karena は理由を言う「〜から」「〜ので」。ふつうは言いたいことの後ろに置きます：Saya pulang karena capek.（疲れたので帰ります）。日本語は「疲れたから」と理由の最後に付けますが、インドネシア語は karena capek と理由の前に置きます。理由を先に言うこともでき、その時は後ろにコンマを打ちます：Karena hujan, kami di rumah saja.（雨なので家にいます）。前後の主語が同じなら、karena の後ろの主語は省けます（karena saya capek でなく karena capek でOK）。karena は名詞1つの前にも置けます：karena macet（渋滞のせいで）。",
+  "natural": "中立的な「〜から」「〜ので」で、ていねいな会話にも書き言葉にもぴったりです。お店の人、医者、先生、目上の人と話す時や、Kenapa?（どうして？）と聞かれた時に。",
+  "stiff": "かたくはありませんが、友達同士なら soalnya（次のレッスン）の方がくだけています。sebab も同じ意味で、もっと改まって聞こえます。",
+  "examples": [
+    {
+      "id": "cx-karena-1",
+      "indonesian": "Saya pulang karena capek.",
+      "japanese": "疲れたので帰ります。",
+      "chunks": [
+        {
+          "t": "Saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "pulang ",
+          "w": "w-pulang"
+        },
+        {
+          "t": "karena ",
+          "w": "w-karena"
+        },
+        {
+          "t": "capek.",
+          "w": "w-capek"
+        }
+      ],
+      "gap": {
+        "before": "Saya pulang ",
+        "answer": "karena",
+        "after": " capek.",
+        "options": [
+          "karena",
+          "jadi",
+          "tapi"
+        ],
+        "why": "理由（疲れた）は karena の後ろに。日本語の「疲れたから」とは逆の順番です。"
+      },
+      "combine": {
+        "a": "Saya pulang.",
+        "b": "Saya capek.",
+        "distractors": [
+          "jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-karena-1.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "karena"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-karena-2",
+      "indonesian": "Karena hujan, kami di rumah saja.",
+      "japanese": "雨なので、家にいます。",
+      "chunks": [
+        {
+          "t": "Karena ",
+          "w": "w-karena"
+        },
+        {
+          "t": "hujan, ",
+          "w": "w-hujan"
+        },
+        {
+          "t": "kami ",
+          "w": "w-kami"
+        },
+        {
+          "t": "di rumah saja.",
+          "w": "w-rumah"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Karena",
+        "after": " hujan, kami di rumah saja.",
+        "options": [
+          "Karena",
+          "Jadi",
+          "Walaupun"
+        ],
+        "why": "ここでは理由が先なので、文が Karena で始まり、理由の終わりにコンマを打ちます。"
+      },
+      "combine": {
+        "a": "Hujan.",
+        "b": "Kami di rumah saja.",
+        "distractors": [
+          "Jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-karena-2.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "karena"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-karena-3",
+      "indonesian": "Maaf, saya terlambat karena macet.",
+      "japanese": "すみません、渋滞で遅れました。",
+      "chunks": [
+        {
+          "t": "Maaf, "
+        },
+        {
+          "t": "saya terlambat ",
+          "w": "w-saya"
+        },
+        {
+          "t": "karena ",
+          "w": "w-karena"
+        },
+        {
+          "t": "macet."
+        }
+      ],
+      "gap": {
+        "before": "Maaf, saya terlambat ",
+        "answer": "karena",
+        "after": " macet.",
+        "options": [
+          "karena",
+          "jadi",
+          "walaupun"
+        ],
+        "why": "karena は名詞1つの前にも置けます：karena macet（渋滞のせいで）。"
+      },
+      "combine": {
+        "a": "Maaf, saya terlambat.",
+        "b": "Macet.",
+        "distractors": [
+          "jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-karena-3.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "karena"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-karena-4",
+      "indonesian": "Saya belajar bahasa Indonesia karena pacar saya orang Indonesia.",
+      "japanese": "恋人がインドネシア人なので、インドネシア語を勉強しています。",
+      "chunks": [
+        {
+          "t": "Saya belajar ",
+          "w": "w-belajar"
+        },
+        {
+          "t": "bahasa Indonesia "
+        },
+        {
+          "t": "karena ",
+          "w": "w-karena"
+        },
+        {
+          "t": "pacar saya ",
+          "w": "w-pacar"
+        },
+        {
+          "t": "orang Indonesia.",
+          "w": "w-orang"
+        }
+      ],
+      "gap": {
+        "before": "Saya belajar bahasa Indonesia ",
+        "answer": "karena",
+        "after": " pacar saya orang Indonesia.",
+        "options": [
+          "karena",
+          "jadi",
+          "tapi"
+        ],
+        "why": "恋人がインドネシア人であることが理由なので、karena の後ろに来ます。"
+      },
+      "combine": {
+        "a": "Saya belajar bahasa Indonesia.",
+        "b": "Pacar saya orang Indonesia.",
+        "distractors": [
+          "jadi "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-karena-4.mp3",
+      "tags": [
+        "つなぎ言葉",
+        "karena"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

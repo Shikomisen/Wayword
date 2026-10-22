@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "id": "smalltalk",
+  "title": "Obrolan ringan",
+  "order": 10,
+  "description": "Percakapan singkat yang mengubah transaksi menjadi obrolan. Risikonya kecil, hasilnya besar.",
+  "phrases": [
+    {
+      "id": "sma-01",
+      "japanese": "いい天気ですね",
+      "furigana": [
+        {
+          "b": "いい"
+        },
+        {
+          "b": "天気",
+          "r": "てんき"
+        },
+        {
+          "b": "ですね"
+        }
+      ],
+      "romaji": "ii tenki desu ne",
+      "indonesian": "Cuacanya bagus, ya.",
+      "registerNotes": "Pembuka paling umum. ね mengajak lawan bicara setuju, mirip 'ya' di akhir kalimat kita, dan itulah yang membuatnya terdengar ramah, bukan sekadar pernyataan.",
+      "audio": "audio/ja/sma-01.mp3",
+      "audioHint": "いいてんきですね",
+      "tags": [
+        "basa-basi",
+        "penting"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sma-02",
+      "japanese": "日本は初めてです",
+      "furigana": [
+        {
+          "b": "日本",
+          "r": "にほん"
+        },
+        {
+          "b": "は"
+        },
+        {
+          "b": "初",
+          "r": "はじ"
+        },
+        {
+          "b": "めてです"
+        }
+      ],
+      "romaji": "Nihon wa hajimete desu",
+      "indonesian": "Ini pertama kalinya saya ke Jepang.",
+      "registerNotes": "Hampir selalu disambut hangat dan diikuti pertanyaan lanjutan. Percakapan yang menyenangkan untuk diikuti.",
+      "audio": "audio/ja/sma-02.mp3",
+      "audioHint": "にほんははじめてです",
+      "tags": [
+        "basa-basi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sma-03",
+      "japanese": "ご出身はどこですか",
+      "furigana": [
+        {
+          "b": "ご"
+        },
+        {
+          "b": "出身",
+          "r": "しゅっしん"
+        },
+        {
+          "b": "はどこですか"
+        }
+      ],
+      "romaji": "go-shusshin wa doko desu ka",
+      "indonesian": "Asalnya dari mana?",
+      "registerNotes": "Awalan ご adalah bentuk hormat — dipakai saat bertanya tentang orang lain, tidak pernah untuk diri sendiri, sama seperti kita tidak menyebut diri sendiri 'beliau'.",
+      "audio": "audio/ja/sma-03.mp3",
+      "audioHint": "ごしゅっしんはどこですか",
+      "tags": [
+        "basa-basi",
+        "pertanyaan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "sma-04",
+      "japanese": "日本の食べ物が大好きです",
+      "furigana": [
+        {
+          "b": "日本",
+          "r": "にほん"
+        },
+        {
+          "b": "の"
+        },
+        {
+          "b": "食",
+          "r": "た"
+        },
+        {
+          "b": "べ"
+        },
+        {
+          "b": "物",
+          "r": "もの"
+        },
+        {
+          "b": "が"
+        },
+        {
+          "b": "大好",
+          "r": "だいす"
+        },
+        {
+          "b": "きです"
+        }
+      ],
+      "romaji": "Nihon no tabemono ga daisuki desu",
+      "indonesian": "Saya suka sekali makanan Jepang.",
+      "registerNotes": "大好き kuat dan hangat tanpa terdengar canggung. Aman diucapkan dengan antusias kepada orang yang baru dikenal.",
+      "audio": "audio/ja/sma-04.mp3",
+      "audioHint": "にほんのたべものがだいすきです",
+      "tags": [
+        "basa-basi"
+      ],
+      "difficulty": 4,
+      "usage": "Yang disukai ditandai が, bukan を: 食べ物が大好きです. Bahasa Indonesia tidak memakai partikel di sini, jadi が ini mudah terlewat."
+    },
+    {
+      "id": "sma-05",
+      "japanese": "オーストラリアから来ました",
+      "furigana": [
+        {
+          "b": "オーストラリアから"
+        },
+        {
+          "b": "来",
+          "r": "き"
+        },
+        {
+          "b": "ました"
+        }
+      ],
+      "romaji": "Ōsutoraria kara kimashita",
+      "indonesian": "Saya dari Australia.",
+      "registerNotes": "Ganti negaranya, misalnya インドネシア. Contoh lain: イギリス, アメリカ, カナダ, ドイツ, ニュージーランド.",
+      "audio": "audio/ja/sma-05.mp3",
+      "audioHint": "オーストラリアからきました",
+      "tags": [
+        "basa-basi",
+        "perkenalan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sma-06",
+      "japanese": "日本語を勉強しています",
+      "furigana": [
+        {
+          "b": "日本語",
+          "r": "にほんご"
+        },
+        {
+          "b": "を"
+        },
+        {
+          "b": "勉強",
+          "r": "べんきょう"
+        },
+        {
+          "b": "しています"
+        }
+      ],
+      "romaji": "nihongo o benkyō shite imasu",
+      "indonesian": "Saya sedang belajar bahasa Jepang.",
+      "registerNotes": "Membuat bahasa Jepangmu yang terbata-bata terlihat sebagai usaha, bukan kebingungan — dan orang pasti jadi lebih sabar.",
+      "audio": "audio/ja/sma-06.mp3",
+      "audioHint": "にほんごをべんきょうしています",
+      "tags": [
+        "basa-basi",
+        "bertahan"
+      ],
+      "difficulty": 3,
+      "usage": "Urutannya kebalikan dari bahasa Indonesia: objek dulu, kata kerja di akhir. 日本語を (bahasa Jepang) 勉強しています (sedang belajar)."
+    },
+    {
+      "id": "sma-07",
+      "japanese": "写真を撮ってもいいですか",
+      "furigana": [
+        {
+          "b": "写真",
+          "r": "しゃしん"
+        },
+        {
+          "b": "を"
+        },
+        {
+          "b": "撮",
+          "r": "と"
+        },
+        {
+          "b": "ってもいいですか"
+        }
+      ],
+      "romaji": "shashin o totte mo ii desu ka",
+      "indonesian": "Boleh saya ambil foto?",
+      "registerNotes": "〜てもいいですか = 'boleh saya…'. Sebaiknya ditanyakan di toko, kuil, dan di mana pun ada orang yang ikut terfoto.",
+      "audio": "audio/ja/sma-07.mp3",
+      "audioHint": "しゃしんをとってもいいですか",
+      "tags": [
+        "basa-basi",
+        "pertanyaan",
+        "penting"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "sma-08",
+      "japanese": "日本語が上手ですね",
+      "furigana": [
+        {
+          "b": "日本語",
+          "r": "にほんご"
+        },
+        {
+          "b": "が"
+        },
+        {
+          "b": "上手",
+          "r": "じょうず"
+        },
+        {
+          "b": "ですね"
+        }
+      ],
+      "romaji": "nihongo ga jōzu desu ne",
+      "indonesian": "Bahasa Jepangnya bagus, ya.",
+      "registerNotes": "Cukup dikenali — kamu akan terus mendengarnya walaupun baru bicara sedikit sekali. Ini kesopanan, bukan penilaian. Tangkis dengan いえいえ、まだまだです.",
+      "audio": "audio/ja/sma-08.mp3",
+      "audioHint": "にほんごがじょうずですね",
+      "tags": [
+        "basa-basi",
+        "mendengar",
+        "untuk mengenali"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "sma-09",
+      "japanese": "まだまだです",
+      "furigana": [
+        {
+          "b": "まだまだです"
+        }
+      ],
+      "romaji": "mada mada desu",
+      "indonesian": "Saya masih harus banyak belajar.",
+      "registerNotes": "Cara standar menolak pujian dengan rendah hati. Menerima pujian begitu saja terkesan sombong, jadi inilah jawaban yang diharapkan, mirip 'ah, masih belajar' kita.",
+      "animeNote": "Tokoh anime menerima pujian jauh lebih terang-terangan daripada orang sungguhan. Tangkisan seperti ini adalah kebiasaan yang sebenarnya.",
+      "audio": "audio/ja/sma-09.mp3",
+      "audioHint": "まだまだです",
+      "tags": [
+        "basa-basi",
+        "kesopanan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "sma-10",
+      "japanese": "楽しかったです",
+      "furigana": [
+        {
+          "b": "楽",
+          "r": "たの"
+        },
+        {
+          "b": "しかったです"
+        }
+      ],
+      "romaji": "tanoshikatta desu",
+      "indonesian": "Tadi seru sekali.",
+      "registerNotes": "Cara hangat untuk menutup pertemuan atau jalan-jalan seharian. Bentuk lampau dari 楽しい: kata sifat Jepang pun berubah bentuk untuk masa lampau, sedangkan kita cukup menambah 'tadi'.",
+      "audio": "audio/ja/sma-10.mp3",
+      "audioHint": "たのしかったです",
+      "tags": [
+        "basa-basi",
+        "perpisahan"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-masih-lagi",
+  "connector": "masih, lagi",
+  "gloss": "まだ；また、もう一つ；もう〜ない",
+  "title": "masih と lagi",
+  "pattern": "masih + 動詞・形容詞 (まだ) · … lagi (また、もっと) · tidak … lagi (もう〜ない) · lagi + 動詞 (くだけた言い方: 〜しているところ)",
+  "explanation": "masih は「まだ（今も続いている）」で、その状態の前に置きます：Dia masih tidur（彼女はまだ寝ています）、Masih jauh?（まだ遠いですか？）。lagi は言葉の後に付くと「また」「もう一つ、もっと」：Coba lagi（もう一回やってみて）、satu lagi（もう一つ）、sebentar lagi（もうすぐ）。前に tidak や sudah tidak があると、文末の lagi は「もう〜ない」：Saya tidak merokok lagi（もうタバコは吸っていません）。くだけた会話では、動詞の前の lagi は sedang の話し言葉で「〜しているところ」：Aku lagi makan（今ごはん食べてる）。つまり位置で意味が変わります。lagi makan は「今食べている」、makan lagi は「また食べる」です。",
+  "natural": "masih は世間話によく出てきます：Masih kuliah?（まだ大学生？）、Masih di kantor?（まだ会社？）。Satu lagi, ya（もう一つお願い）と Sebentar lagi（もうすぐ）は、初日から使える便利な一言です。",
+  "stiff": "「〜しているところ」の lagi はくだけた言い方。年上の人や知らない人には sedang を使います（Bapak sedang sibuk?、今お忙しいですか？）。また、masih の反対は tidak masih ではなく sudah tidak：Dia sudah tidak sakit（彼はもう具合は悪くありません）。",
+  "examples": [
+    {
+      "id": "gx-masih-lagi-1",
+      "indonesian": "Apoteknya masih buka?",
+      "japanese": "薬局、まだ開いていますか？",
+      "chunks": [
+        {
+          "t": "Apoteknya ",
+          "w": "w-apotek"
+        },
+        {
+          "t": "masih "
+        },
+        {
+          "t": "buka?"
+        }
+      ],
+      "gap": {
+        "before": "Apoteknya ",
+        "answer": "masih",
+        "after": " buka?",
+        "options": [
+          "masih",
+          "sudah",
+          "belum"
+        ],
+        "why": "遅い時間に「まだ開いている？」と聞くなら masih。Sudah buka? だと「もう開いた？」になります。"
+      },
+      "audio": "audio/id/grammar/gx-masih-lagi-1.mp3",
+      "tags": [
+        "文法",
+        "masih-lagi"
+      ],
+      "difficulty": 2,
+      "pitfallNote": "日本語の「まだ」は2つに分かれます。「まだ開いている」は masih、「まだ開いていない」は belum（Belum buka）。"
+    },
+    {
+      "id": "gx-masih-lagi-2",
+      "indonesian": "Besok saya datang lagi, ya.",
+      "japanese": "また明日来ますね。",
+      "chunks": [
+        {
+          "t": "Besok ",
+          "w": "w-besok"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "datang ",
+          "w": "w-datang"
+        },
+        {
+          "t": "lagi, "
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "gap": {
+        "before": "Besok saya datang ",
+        "answer": "lagi",
+        "after": ", ya.",
+        "options": [
+          "lagi",
+          "juga",
+          "masih"
+        ],
+        "why": "「また」は動詞の後：datang lagi。日本語とは逆の順番です。Datang juga だと「〜も来る」になります。"
+      },
+      "registerNotes": "何も買わずに屋台を離れる時の感じのいい一言で、日本語の「また来ます」と同じように使えます。続きをしにまた来る、と伝える時にも。",
+      "audio": "audio/id/grammar/gx-masih-lagi-2.mp3",
+      "tags": [
+        "文法",
+        "masih-lagi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-masih-lagi-3",
+      "indonesian": "Dia sudah tidak kerja di sini lagi.",
+      "japanese": "彼はもうここでは働いていません。",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "sudah tidak "
+        },
+        {
+          "t": "kerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "di sini ",
+          "w": "w-di"
+        },
+        {
+          "t": "lagi."
+        }
+      ],
+      "gap": {
+        "before": "Dia sudah tidak kerja di sini ",
+        "answer": "lagi",
+        "after": ".",
+        "options": [
+          "lagi",
+          "juga",
+          "masih"
+        ],
+        "why": "tidak … lagi で「もう〜ない」。tidak … juga だと「〜も…ない」です。"
+      },
+      "registerNotes": "Sudah tidak … lagi は「前とは変わった」ことを強調します。Tidak … lagi だけでも意味は同じです。",
+      "audio": "audio/id/grammar/gx-masih-lagi-3.mp3",
+      "tags": [
+        "文法",
+        "masih-lagi"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "日本語の「もう」も分かれます。「もう〜ない」は tidak … lagi、「もう〜した」は sudah、「もう一つ」は satu lagi。"
+    },
+    {
+      "id": "gx-masih-lagi-4",
+      "register": "casual",
+      "indonesian": "Maaf, aku lagi makan. Nanti aku telepon, ya.",
+      "japanese": "ごめん、今ごはん食べてる。あとで電話するね。",
+      "chunks": [
+        {
+          "t": "Maaf, "
+        },
+        {
+          "t": "aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "lagi makan. ",
+          "w": "w-makan"
+        },
+        {
+          "t": "Nanti ",
+          "w": "w-nanti"
+        },
+        {
+          "t": "aku telepon, ya.",
+          "w": "w-menelepon"
+        }
+      ],
+      "gap": {
+        "before": "Maaf, aku ",
+        "answer": "lagi makan",
+        "after": ". Nanti aku telepon, ya.",
+        "options": [
+          "lagi makan",
+          "makan lagi",
+          "sudah makan"
+        ],
+        "why": "動詞の前の lagi は、くだけた「〜しているところ」。makan lagi だと「また食べる」です。"
+      },
+      "registerNotes": "友達や家族とのくだけた言い方。ていねいに言うなら：Maaf, saya sedang makan. Nanti saya telepon.",
+      "audio": "audio/id/grammar/gx-masih-lagi-4.mp3",
+      "tags": [
+        "文法",
+        "masih-lagi",
+        "くだけた言い方"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

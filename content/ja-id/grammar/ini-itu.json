@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ini-itu",
+  "connector": "ini / itu",
+  "gloss": "これ・それ・あれ",
+  "title": "ini と itu — これ・それ・あれ",
+  "pattern": "Ini … (これは…です) · … ini (この…)",
+  "explanation": "ini は「これ・この」、itu は「それ・あれ」「その・あの」です。日本語の「それ」と「あれ」の区別はなく、近くにないものはどちらも itu。置く場所で意味が変わります。名詞の前に置くと文になります：Ini kopi は「これはコーヒーです」、Itu rumah saya は「あれは私の家です」。名詞の後に置くと「この・あの」になります：kopi ini は「このコーヒー」、rumah itu は「あの家」。日本語の「この家」とは順番が逆です。名詞の形は変わらないので、sepatu ini は1足でも何足でも「この靴」です。",
+  "natural": "ini と itu は、お店やワルンで指さしながらよく使います：Ini apa?（これは何ですか）、Yang itu, Bu（それをください）。名詞の後の itu は、もう話に出たものを指す軽い「その」のこともあります：Hotel itu mahal?（そのホテル、高いの？）",
+  "stiff": "2つの位置を取りちがえると、文の意味が変わります：Ini buku baru は「これは新しい本です」、Buku ini baru は「この本は新しいです」。ini と itu は説明全体の一番後に置きます：rumah besar itu は「あの大きい家」ですが、rumah itu besar は「あの家は大きい」という文になります。",
+  "examples": [
+    {
+      "id": "gx-ini-itu-1",
+      "indonesian": "Itu rumah saya.",
+      "japanese": "あれは私の家です。",
+      "chunks": [
+        {
+          "t": "Itu ",
+          "w": "w-itu"
+        },
+        {
+          "t": "rumah ",
+          "w": "w-rumah"
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Itu",
+        "after": " rumah saya.",
+        "options": [
+          "Itu",
+          "Ini",
+          "Dia"
+        ],
+        "why": "離れたものを指すのは itu（それ・あれ）。dia は人（彼・彼女）にしか使いません。"
+      },
+      "audio": "audio/id/grammar/gx-ini-itu-1.mp3",
+      "tags": [
+        "文法",
+        "ini-itu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ini-itu-2",
+      "indonesian": "Buku ini bagus.",
+      "japanese": "この本はいいですよ。",
+      "chunks": [
+        {
+          "t": "Buku ",
+          "w": "w-buku"
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "bagus.",
+          "w": "w-bagus"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Buku ini",
+        "after": " bagus.",
+        "options": [
+          "Buku ini",
+          "Ini buku"
+        ],
+        "why": "名詞の後の ini は「この」：buku ini。Ini buku bagus だと「これはいい本です」になります。"
+      },
+      "audio": "audio/id/grammar/gx-ini-itu-2.mp3",
+      "tags": [
+        "文法",
+        "ini-itu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ini-itu-3",
+      "indonesian": "Sepatu ini murah.",
+      "japanese": "この靴は安いです。",
+      "chunks": [
+        {
+          "t": "Sepatu ",
+          "w": "w-sepatu"
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "murah.",
+          "w": "w-murah"
+        }
+      ],
+      "gap": {
+        "before": "Sepatu ",
+        "answer": "ini",
+        "after": " murah.",
+        "options": [
+          "ini",
+          "itu"
+        ],
+        "why": "手元の靴なので ini。日本語の「この」と同じく、1足でも何足でも sepatu ini のままです。"
+      },
+      "audio": "audio/id/grammar/gx-ini-itu-3.mp3",
+      "tags": [
+        "文法",
+        "ini-itu"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-ini-itu-4",
+      "indonesian": "Orang itu teman saya.",
+      "japanese": "あの人は私の友達です。",
+      "chunks": [
+        {
+          "t": "Orang ",
+          "w": "w-orang"
+        },
+        {
+          "t": "itu ",
+          "w": "w-itu"
+        },
+        {
+          "t": "teman ",
+          "w": "w-teman"
+        },
+        {
+          "t": "saya.",
+          "w": "w-saya"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Orang itu",
+        "after": " teman saya.",
+        "options": [
+          "Orang itu",
+          "Itu orang"
+        ],
+        "why": "orang の後の itu で「あの人」：orang itu。Itu orang だと「あれは人です」になります。"
+      },
+      "audio": "audio/id/grammar/gx-ini-itu-4.mp3",
+      "tags": [
+        "文法",
+        "ini-itu"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

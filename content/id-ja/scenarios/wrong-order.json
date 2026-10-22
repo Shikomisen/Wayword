@@ -1,0 +1,478 @@
+{
+  "schemaVersion": 1,
+  "id": "wrong-order",
+  "title": "Saat pesanan salah",
+  "category": "problems",
+  "setting": "Kamu di restoran yang sedang ramai. Kamu memesan kare, tapi pelayan malah membawakan ramen.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "server",
+      "japanese": "お待たせしました。ラーメンです。",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "待",
+          "r": "ま"
+        },
+        {
+          "b": "たせしました。ラーメンです。"
+        }
+      ],
+      "indonesian": "Maaf menunggu lama. Ini ramennya.",
+      "audio": "audio/ja/scenario/wrong-order-n1.mp3",
+      "audioHint": "おまたせしました。ラーメンです",
+      "options": [
+        {
+          "phraseId": "pro-04",
+          "quality": "good",
+          "feedback": "Sopan dan jelas: んですが melunakkannya.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "japanese": "すみません、頼んだのはカレーなんですが…。",
+          "furigana": [
+            {
+              "b": "すみません、"
+            },
+            {
+              "b": "頼",
+              "r": "たの"
+            },
+            {
+              "b": "んだのはカレーなんですが…。"
+            }
+          ],
+          "indonesian": "Maaf, yang saya pesan kare…",
+          "feedback": "すみません dulu, lalu faktanya, diakhiri menggantung dengan んですが: cara halus untuk menyampaikan masalah.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "違います！",
+          "furigana": [
+            {
+              "b": "違",
+              "r": "ちが"
+            },
+            {
+              "b": "います！"
+            }
+          ],
+          "indonesian": "Salah!",
+          "feedback": "Terlalu tajam: terdengar seperti memarahi. すみません dulu, lalu jelaskan dengan んですが.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "server",
+      "japanese": "大変申し訳ございません。すぐにお取り替えします。",
+      "furigana": [
+        {
+          "b": "大変",
+          "r": "たいへん"
+        },
+        {
+          "b": "申",
+          "r": "もう"
+        },
+        {
+          "b": "し"
+        },
+        {
+          "b": "訳",
+          "r": "わけ"
+        },
+        {
+          "b": "ございません。すぐにお"
+        },
+        {
+          "b": "取",
+          "r": "と"
+        },
+        {
+          "b": "り"
+        },
+        {
+          "b": "替",
+          "r": "か"
+        },
+        {
+          "b": "えします。"
+        }
+      ],
+      "indonesian": "Mohon maaf sekali. Akan segera saya ganti.",
+      "audio": "audio/ja/scenario/wrong-order-n2.mp3",
+      "audioHint": "たいへんもうしわけございません。すぐにおとりかえします",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "お願いします。",
+          "furigana": [
+            {
+              "b": "お"
+            },
+            {
+              "b": "願",
+              "r": "ねが"
+            },
+            {
+              "b": "いします。"
+            }
+          ],
+          "indonesian": "Baik, terima kasih.",
+          "feedback": "Sederhana dan sopan.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "japanese": "いえいえ、大丈夫です。",
+          "furigana": [
+            {
+              "b": "いえいえ、"
+            },
+            {
+              "b": "大丈夫",
+              "r": "だいじょうぶ"
+            },
+            {
+              "b": "です。"
+            }
+          ],
+          "indonesian": "Ah, tidak apa-apa, kok.",
+          "feedback": "Murah hati: kamu membuat mereka lega.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "じゃあ、ラーメンでいいです。",
+          "furigana": [
+            {
+              "b": "じゃあ、ラーメンでいいです。"
+            }
+          ],
+          "indonesian": "Ya sudah, ramen saja tidak apa-apa.",
+          "feedback": "Baik hati, tapi hanya kalau kamu memang tidak keberatan, dan pastikan kamu ditagih untuk hidangan yang benar.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "server",
+      "japanese": "十分ほどかかりますが、よろしいでしょうか。",
+      "furigana": [
+        {
+          "b": "十分",
+          "r": "じゅっぷん"
+        },
+        {
+          "b": "ほどかかりますが、よろしいでしょうか。"
+        }
+      ],
+      "indonesian": "Butuh sekitar sepuluh menit. Apakah tidak apa-apa?",
+      "audio": "audio/ja/scenario/wrong-order-n3.mp3",
+      "audioHint": "じゅっぷんほどかかりますが、よろしいでしょうか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "はい、待ちます。",
+          "furigana": [
+            {
+              "b": "はい、"
+            },
+            {
+              "b": "待",
+              "r": "ま"
+            },
+            {
+              "b": "ちます。"
+            }
+          ],
+          "indonesian": "Ya, saya tunggu.",
+          "feedback": "Jelas dan ramah.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "japanese": "ちょっと急いでいるので、早めにお願いできますか。",
+          "furigana": [
+            {
+              "b": "ちょっと"
+            },
+            {
+              "b": "急",
+              "r": "いそ"
+            },
+            {
+              "b": "いでいるので、"
+            },
+            {
+              "b": "早",
+              "r": "はや"
+            },
+            {
+              "b": "めにお"
+            },
+            {
+              "b": "願",
+              "r": "ねが"
+            },
+            {
+              "b": "いできますか。"
+            }
+          ],
+          "indonesian": "Saya agak buru-buru, jadi bisa dipercepat?",
+          "feedback": "Permintaan sopan dengan alasan: ので menjelaskan.",
+          "next": "n4"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "十分です。",
+          "furigana": [
+            {
+              "b": "十分",
+              "r": "じゅうぶん"
+            },
+            {
+              "b": "です。"
+            }
+          ],
+          "indonesian": "Cukup.",
+          "feedback": "十分 dibaca じゅうぶん berarti “cukup”; dibaca じゅっぷん, artinya sepuluh menit. Jawab pertanyaannya: はい、待ちます.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "server",
+      "japanese": "お待たせいたしました。カレーです。本当に申し訳ございませんでした。",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "待",
+          "r": "ま"
+        },
+        {
+          "b": "たせいたしました。カレーです。"
+        },
+        {
+          "b": "本当",
+          "r": "ほんとう"
+        },
+        {
+          "b": "に"
+        },
+        {
+          "b": "申",
+          "r": "もう"
+        },
+        {
+          "b": "し"
+        },
+        {
+          "b": "訳",
+          "r": "わけ"
+        },
+        {
+          "b": "ございませんでした。"
+        }
+      ],
+      "indonesian": "Maaf sudah menunggu. Ini karenya. Sekali lagi, mohon maaf sekali.",
+      "audio": "audio/ja/scenario/wrong-order-n4.mp3",
+      "audioHint": "おまたせいたしました。カレーです。ほんとうにもうしわけございませんでした",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "いえいえ、ありがとうございます。",
+          "furigana": [
+            {
+              "b": "いえいえ、ありがとうございます。"
+            }
+          ],
+          "indonesian": "Tidak apa-apa. Terima kasih.",
+          "feedback": "Murah hati: masalahnya sudah beres.",
+          "next": "n5"
+        },
+        {
+          "phraseId": "gre-05",
+          "quality": "good",
+          "feedback": "Sederhana dan tepat.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "本当に遅かったです。",
+          "furigana": [
+            {
+              "b": "本当",
+              "r": "ほんとう"
+            },
+            {
+              "b": "に"
+            },
+            {
+              "b": "遅",
+              "r": "おそ"
+            },
+            {
+              "b": "かったです。"
+            }
+          ],
+          "indonesian": "Lama sekali tadi.",
+          "feedback": "Sudah beres sekarang; mengungkitnya lagi terdengar kasar. Ucapkan terima kasih saja.",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "server",
+      "japanese": "お会計、二千四百円になります。",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "会計",
+          "r": "かいけい"
+        },
+        {
+          "b": "、"
+        },
+        {
+          "b": "二千",
+          "r": "にせん"
+        },
+        {
+          "b": "四百円",
+          "r": "よんひゃくえん"
+        },
+        {
+          "b": "になります。"
+        }
+      ],
+      "indonesian": "Totalnya 2.400 yen.",
+      "audio": "audio/ja/scenario/wrong-order-n5.mp3",
+      "audioHint": "おかいけい、にせんよんひゃくえんになります",
+      "options": [
+        {
+          "phraseId": "pro-10",
+          "quality": "good",
+          "feedback": "Sopan: meminta mereka memeriksa tanpa menyalahkan siapa pun.",
+          "next": "n6"
+        },
+        {
+          "quality": "good",
+          "japanese": "すみません、ラーメンの分も入っていませんか。",
+          "furigana": [
+            {
+              "b": "すみません、ラーメンの"
+            },
+            {
+              "b": "分",
+              "r": "ぶん"
+            },
+            {
+              "b": "も"
+            },
+            {
+              "b": "入",
+              "r": "はい"
+            },
+            {
+              "b": "っていませんか。"
+            }
+          ],
+          "indonesian": "Maaf, apakah ramennya ikut dihitung?",
+          "feedback": "Spesifik dan sopan: ていませんか (bukankah…?) melunakkannya.",
+          "next": "n6"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "高いです！",
+          "furigana": [
+            {
+              "b": "高",
+              "r": "たか"
+            },
+            {
+              "b": "いです！"
+            }
+          ],
+          "indonesian": "Mahal!",
+          "feedback": "Terdengar seperti kamu mengeluh soal harga. Minta mereka memeriksa: 確認していただけますか.",
+          "next": "n6"
+        }
+      ]
+    },
+    "n6": {
+      "speaker": "server",
+      "japanese": "あっ、失礼いたしました。千二百円です。",
+      "furigana": [
+        {
+          "b": "あっ、"
+        },
+        {
+          "b": "失礼",
+          "r": "しつれい"
+        },
+        {
+          "b": "いたしました。"
+        },
+        {
+          "b": "千",
+          "r": "せん"
+        },
+        {
+          "b": "二百円",
+          "r": "にひゃくえん"
+        },
+        {
+          "b": "です。"
+        }
+      ],
+      "indonesian": "Oh, maaf sekali. 1.200 yen.",
+      "audio": "audio/ja/scenario/wrong-order-n6.mp3",
+      "audioHint": "あっ、しつれいいたしました。せんにひゃくえんです",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "カードでお願いします。",
+          "furigana": [
+            {
+              "b": "カードでお"
+            },
+            {
+              "b": "願",
+              "r": "ねが"
+            },
+            {
+              "b": "いします。"
+            }
+          ],
+          "indonesian": "Pakai kartu, ya.",
+          "feedback": "Membayar dengan sopan.",
+          "next": "end"
+        },
+        {
+          "phraseId": "res-05",
+          "quality": "good",
+          "feedback": "Diucapkan kepada staf saat pulang: terima kasih atas makanannya, sebagai penutup yang hangat.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "indonesian": "Selesai. すみません dan んですが menyampaikan masalah dengan sopan, 確認していただけますか meminta pemeriksaan, dan 十分 (sepuluh menit atau cukup?) perlu dicermati dua kali. Staf akan cepat memperbaiki kesalahan kalau diminta dengan halus.",
+      "end": true,
+      "options": []
+    }
+  }
+}

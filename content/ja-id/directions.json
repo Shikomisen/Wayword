@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "id": "directions",
+  "title": "道をたずねる・迷った時",
+  "order": 8,
+  "description": "道の聞き方と、答えの聞き取り。左・右・まっすぐ、近い・遠い、そして道に迷った時のひとこと。道は通りの名前より、目印で教えることが多いです。",
+  "phrases": [
+    {
+      "id": "dir-01",
+      "indonesian": "Permisi, numpang tanya.",
+      "japanese": "すみません、ちょっとお尋ねします。",
+      "registerNotes": "道を聞く前の、昔ながらのていねいな切り出し方。numpang は「（人の場所などを借りて）便乗する」という意味で、へりくだった響きがあります。Permisi, mau tanya（すみません、聞きたいんですが）はもっと普通の言い方です。",
+      "audio": "audio/id/dir-01.mp3",
+      "tags": [
+        "道案内",
+        "ていねい",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-02",
+      "indonesian": "Stasiun kereta di mana, ya?",
+      "japanese": "駅はどこですか？",
+      "registerNotes": "ほかの場所にも入れ替えられます：hotel、pasar（市場）、halte bus（バス停）。文末の ya で口調がやわらかくなります。",
+      "pitfallNote": "di mana は2語に分けて書きます。語順は日本語の「駅はどこ？」と同じで、場所が先、di mana（どこ）が最後です。",
+      "audio": "audio/id/dir-02.mp3",
+      "tags": [
+        "道案内",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "dir-03",
+      "indonesian": "Di dekat sini ada ATM?",
+      "japanese": "この近くに ATM はありますか？",
+      "registerNotes": "di dekat sini（この近くに）＋ ada（ありますか）は何にでも使えます：apotek（薬局）、toilet（トイレ）、warung（ワルン）。",
+      "audio": "audio/id/dir-03.mp3",
+      "audioHint": "Di dekat sini ada a te em?",
+      "tags": [
+        "道案内",
+        "お金"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-04",
+      "indonesian": "Bisa jalan kaki ke sana?",
+      "japanese": "そこまで歩いて行けますか？",
+      "registerNotes": "Jauh?（遠いですか？）だけでも通じます。答えは dekat（近い）、lumayan jauh（けっこう遠い）、sekitar lima menit（5分くらい）など。",
+      "cultureNote": "dekat（近い）は「バイクなら近い」という意味のことが多いので、歩けるかどうかを聞くほうが役に立つ答えが返ってきます。",
+      "audio": "audio/id/dir-04.mp3",
+      "tags": [
+        "道案内",
+        "距離"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-05",
+      "indonesian": "Belok kiri di lampu merah.",
+      "japanese": "信号を左に曲がってください。",
+      "registerNotes": "lampu merah は直訳「赤いランプ」ですが、何色が点いていても信号のことです。右に曲がるは belok kanan。",
+      "audio": "audio/id/dir-05.mp3",
+      "tags": [
+        "道案内"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-06",
+      "indonesian": "Lurus saja, nanti di perempatan belok kanan.",
+      "japanese": "まっすぐ行って、交差点で右に曲がってください。",
+      "registerNotes": "perempatan は empat（4）から「四つ角・交差点」、pertigaan は tiga（3）から「三叉路・T字路」。ここでの nanti は「その先で」、lurus terus は「ずっとまっすぐ」です。",
+      "audio": "audio/id/dir-06.mp3",
+      "tags": [
+        "道案内"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "lurus には l と r の両方が入っています。l は舌先を上の歯ぐきにつけたまま、r は舌先を軽く震わせて、区別して言いましょう。"
+    },
+    {
+      "id": "dir-07",
+      "indonesian": "Di sebelah kiri, dekat masjid.",
+      "japanese": "左側、モスクの近くです。",
+      "registerNotes": "di sebelah kanan は右側、di seberang は道の向かい側、di belakang は後ろです。",
+      "cultureNote": "道は、通りの名前や距離より、モスク、ミニマーケット、ガソリンスタンド（pom bensin）などの目印で教えるのが普通です。目印で説明するところは日本と似ています。",
+      "audio": "audio/id/dir-07.mp3",
+      "tags": [
+        "道案内",
+        "名所"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-08",
+      "indonesian": "Saya tersesat.",
+      "japanese": "道に迷いました。",
+      "registerNotes": "続けて Bisa bantu saya?（助けてもらえますか？）と言いましょう。",
+      "pitfallNote": "hilang（なくなる）は物に使います：paspor saya hilang（パスポートをなくしました）。自分が道に迷った時は tersesat です。",
+      "audio": "audio/id/dir-08.mp3",
+      "tags": [
+        "道案内",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-09",
+      "indonesian": "Ini di mana, ya?",
+      "japanese": "ここはどこですか？",
+      "registerNotes": "直訳は「これはどこ？」で、自分がどこにいるかわからない時に使います。Ini jalan apa?（ここは何通りですか？）と聞けば、運転手に伝える通りの名前がわかります。",
+      "audio": "audio/id/dir-09.mp3",
+      "tags": [
+        "道案内"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "dir-10",
+      "indonesian": "Bisa tunjukkan di peta?",
+      "japanese": "地図で教えてもらえますか？",
+      "registerNotes": "地図を開いたスマホを渡しましょう。tolong を入れると少していねいになります：Bisa tolong tunjukkan di peta?",
+      "audio": "audio/id/dir-10.mp3",
+      "tags": [
+        "道案内",
+        "地図"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "dir-11",
+      "indonesian": "Toiletnya di mana, ya?",
+      "japanese": "トイレはどこですか？",
+      "registerNotes": "toilet も kamar kecil（直訳「小さい部屋」）もていねいな言い方です。人の家では kamar mandi（浴室）と言います。表示は Pria（男性）と Wanita（女性）。",
+      "cultureNote": "トイレットペーパーではなく、ホースや水をくむ手おけが置いてあることが多く、公衆トイレは少額の有料のことがよくあります。ティッシュと、小銭や小額のお札を持ち歩きましょう。",
+      "audio": "audio/id/dir-11.mp3",
+      "tags": [
+        "道案内",
+        "必須"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

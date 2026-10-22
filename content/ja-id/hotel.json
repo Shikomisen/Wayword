@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "id": "hotel",
+  "title": "ホテル・民泊",
+  "order": 9,
+  "description": "ホテル、ゲストハウス、民泊で。部屋探し、予約、チェックインとチェックアウト、朝食、Wi-Fi、部屋に必要な物のお願いまで。",
+  "phrases": [
+    {
+      "id": "hot-01",
+      "indonesian": "Ada kamar kosong?",
+      "japanese": "空いている部屋はありますか？",
+      "registerNotes": "kosong は「空いている・からっぽ」。空きがない時の答えは Penuh（満室です）。",
+      "audio": "audio/id/hot-01.mp3",
+      "tags": [
+        "ホテル",
+        "部屋"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "hot-02",
+      "indonesian": "Boleh lihat kamarnya dulu?",
+      "japanese": "先に部屋を見せてもらえますか？",
+      "registerNotes": "民泊やゲストハウスでは、特に予約していない時はごく普通のお願いです。dulu（先に・まず）を付けると、気軽なお願いに聞こえます。",
+      "audio": "audio/id/hot-02.mp3",
+      "tags": [
+        "ホテル",
+        "部屋"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-03",
+      "indonesian": "Saya sudah pesan kamar atas nama Sam.",
+      "japanese": "サムの名前で予約しています。",
+      "registerNotes": "atas nama（〜の名前で）で予約の名前を伝えます。アプリで予約したなら lewat aplikasi（アプリで）を付けて。",
+      "cultureNote": "フロントで Boleh pinjam paspornya?（直訳「パスポートをお借りできますか？」）と言われ、パスポートの情報を控えたりコピーしたりします。普通のことです。",
+      "audio": "audio/id/hot-03.mp3",
+      "tags": [
+        "ホテル",
+        "予約",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-04",
+      "indonesian": "Bisa check-in sekarang?",
+      "japanese": "今チェックインできますか？",
+      "registerNotes": "check-in と check-out は英語のまま言います。チェックインはたいてい午後2時から。部屋の準備がまだなら、荷物を預かってもらえるか聞きましょう。",
+      "audio": "audio/id/hot-04.mp3",
+      "tags": [
+        "ホテル",
+        "チェックイン"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-05",
+      "indonesian": "Check-out jam berapa?",
+      "japanese": "チェックアウトは何時ですか？",
+      "registerNotes": "たいてい jam dua belas siang（昼の12時）。遅らせてほしい時は Bisa late check-out?",
+      "audio": "audio/id/hot-05.mp3",
+      "tags": [
+        "ホテル",
+        "チェックアウト"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-06",
+      "indonesian": "Sudah termasuk sarapan?",
+      "japanese": "朝食は付いていますか？",
+      "registerNotes": "termasuk は「含まれている」。続けて Sarapannya jam berapa?（朝食は何時ですか？）と聞きましょう。",
+      "audio": "audio/id/hot-06.mp3",
+      "tags": [
+        "ホテル",
+        "朝食"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-07",
+      "indonesian": "Password Wi-Fi-nya apa?",
+      "japanese": "Wi-Fi のパスワードは何ですか？",
+      "registerNotes": "ふだんは password と言います。kata sandi は正式な言葉で、書かれているのを見かけることがあります。",
+      "audio": "audio/id/hot-07.mp3",
+      "tags": [
+        "ホテル",
+        "Wi-Fi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "hot-08",
+      "indonesian": "AC di kamar saya tidak dingin.",
+      "japanese": "部屋のエアコンが冷えません。",
+      "registerNotes": "AC は「アーセー」と読みます。まったく動かない時は AC-nya mati（止まっています）や rusak（壊れています）と言います。",
+      "audio": "audio/id/hot-08.mp3",
+      "audioHint": "A se di kamar saya tidak dingin.",
+      "tags": [
+        "ホテル",
+        "トラブル"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-09",
+      "indonesian": "Boleh titip tas di sini?",
+      "japanese": "ここに荷物を預けてもいいですか？",
+      "registerNotes": "titip は日本語の「預ける」にあたる言葉で、チェックイン前やチェックアウト後の荷物に使います。titip salam（よろしく伝えてね）の titip も同じ言葉です。",
+      "audio": "audio/id/hot-09.mp3",
+      "tags": [
+        "ホテル",
+        "荷物"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "hot-10",
+      "indonesian": "Boleh minta handuk lagi?",
+      "japanese": "タオルをもう1枚もらえますか？",
+      "registerNotes": "lagi（もう一つ・もっと）は何にでも使えます：bantal lagi（枕をもう一つ）、selimut lagi（毛布をもう一枚）。",
+      "audio": "audio/id/hot-10.mp3",
+      "tags": [
+        "ホテル",
+        "お願い"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "hot-11",
+      "indonesian": "Ada air panas?",
+      "japanese": "お湯は出ますか？",
+      "registerNotes": "Ada …?（〜はありますか？）は、必要な物なら何にでも使えます：Ada handuk? Ada sabun?",
+      "cultureNote": "安い民泊では水しか出ないことがあり、マンディ式のこともあります。水をためた水槽（bak mandi）から手おけで水をくんで体にかける方式です。日本の湯船のように中に入ってはいけません。水はみんなで使うものです。",
+      "audio": "audio/id/hot-11.mp3",
+      "tags": [
+        "ホテル",
+        "浴室"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

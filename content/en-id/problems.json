@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "id": "problems",
+  "title": "Problems & Complaints",
+  "order": 17,
+  "description": "Complaining politely and getting things sorted at a café, a shop or a homestay. A calm maaf and a soft request get further than a raised voice.",
+  "phrases": [
+    {
+      "id": "pro-01",
+      "indonesian": "Maaf, ini bukan pesanan saya.",
+      "english": "Sorry, this isn't what I ordered.",
+      "registerNotes": "Starting with maaf keeps it polite even when the mistake is theirs.",
+      "pitfallNote": "Bukan, not tidak: you're saying it isn't a thing (pesanan, your order).",
+      "audio": "audio/id/pro-01.mp3",
+      "tags": [
+        "complaints",
+        "restaurant",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pro-02",
+      "indonesian": "Maaf, tadi saya pesan yang tidak pedas.",
+      "english": "Sorry, I asked for it not spicy.",
+      "registerNotes": "Tadi, 'earlier', points back to when you ordered; yang tidak pedas is 'the not-spicy one'.",
+      "audio": "audio/id/pro-02.mp3",
+      "tags": [
+        "complaints",
+        "restaurant"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-03",
+      "indonesian": "Maaf, sepertinya ada yang salah. Bisa tolong dicek lagi?",
+      "english": "Sorry, I think there's a mistake. Could you check it again?",
+      "registerNotes": "Sepertinya, 'it seems', leaves room for the mistake to be yours. Use it for a bill, a booking or a delivery.",
+      "cultureNote": "Saving face matters: a complaint that lets the other person put things right without blame gets results faster.",
+      "audio": "audio/id/pro-03.mp3",
+      "tags": [
+        "complaints",
+        "essential"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-04",
+      "indonesian": "Kunci pintunya rusak.",
+      "english": "The door lock is broken.",
+      "registerNotes": "Rusak follows the thing that’s broken: AC-nya rusak, kuncinya rusak. Say it at reception, then ask Bisa diperbaiki?",
+      "pitfallNote": "Rusak is broken or not working (a lock, a zip, a TV); things that won't switch on are mati: Lampunya mati.",
+      "audio": "audio/id/pro-04.mp3",
+      "tags": [
+        "complaints",
+        "homestay"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "pro-05",
+      "indonesian": "Bisa tolong diperbaiki?",
+      "english": "Could you fix it, please?",
+      "registerNotes": "The di- form asks for it to be fixed without saying who should do it, which sounds softer. You'll also hear dibetulkan, or casually dibenerin.",
+      "audio": "audio/id/pro-05.mp3",
+      "tags": [
+        "complaints",
+        "requests"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-06",
+      "indonesian": "Bisa ditukar dengan yang baru?",
+      "english": "Can I exchange it for a new one?",
+      "registerNotes": "Tukar is to swap or exchange. Bring the receipt (struk) and the packaging.",
+      "audio": "audio/id/pro-06.mp3",
+      "tags": [
+        "complaints",
+        "shopping"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-07",
+      "indonesian": "Uangnya bisa dikembalikan?",
+      "english": "Can I get my money back?",
+      "registerNotes": "Literally 'can the money be returned?'. In apps and online shops people simply say refund.",
+      "cultureNote": "Receipts often say Barang yang sudah dibeli tidak dapat ditukar atau dikembalikan (no exchanges or returns), so check before you pay.",
+      "audio": "audio/id/pro-07.mp3",
+      "tags": [
+        "complaints",
+        "shopping"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-08",
+      "indonesian": "Kamarnya berisik sekali. Bisa pindah kamar?",
+      "english": "The room is really noisy. Could I change rooms?",
+      "registerNotes": "Say what the noise is if you can: suara jalan (traffic noise), suara musik.",
+      "pitfallNote": "Berisik is noisy and annoying; ramai is busy or lively, often a good thing.",
+      "audio": "audio/id/pro-08.mp3",
+      "tags": [
+        "complaints",
+        "homestay"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-09",
+      "indonesian": "Air di kamar mandi tidak keluar.",
+      "english": "The water's not running in the bathroom.",
+      "registerNotes": "Literally 'the water doesn't come out'. You'll also hear Airnya mati (the water's off).",
+      "cultureNote": "Homes with a water pump (pompa air) lose water when the power goes off, so check that too.",
+      "audio": "audio/id/pro-09.mp3",
+      "tags": [
+        "complaints",
+        "homestay"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-10",
+      "indonesian": "Maaf, saya sudah menunggu dari tadi.",
+      "english": "Excuse me, I've been waiting for quite a while.",
+      "registerNotes": "Dari tadi, 'since earlier', makes the point without sounding angry. For food that hasn't come: Pesanan saya belum datang, ya?",
+      "cultureNote": "Showing anger embarrasses everyone and rarely speeds things up; a calm, smiling complaint is taken more seriously.",
+      "audio": "audio/id/pro-10.mp3",
+      "tags": [
+        "complaints",
+        "restaurant"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-11",
+      "indonesian": "Maaf, kembaliannya kurang.",
+      "english": "Sorry, I've been given the wrong change.",
+      "registerNotes": "Kurang, 'less', says something's missing; add how much: Kembaliannya kurang dua ribu (It's two thousand short).",
+      "audio": "audio/id/pro-11.mp3",
+      "tags": [
+        "complaints",
+        "money"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-12",
+      "indonesian": "Boleh saya bicara dengan manajernya?",
+      "english": "Could I speak to the manager?",
+      "registerNotes": "Keep it for when a calm word with the staff hasn't worked. In a small place, ask for the owner: pemiliknya.",
+      "cultureNote": "Asking for the manager in front of others shames the staff member, so say it quietly.",
+      "audio": "audio/id/pro-12.mp3",
+      "tags": [
+        "complaints"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "pro-13",
+      "indonesian": "Tidak apa-apa. Terima kasih atas bantuannya.",
+      "english": "No worries. Thanks for your help.",
+      "registerNotes": "Ending on thanks once it's sorted leaves everyone on good terms. Among friends, Nggak apa-apa, makasih, ya.",
+      "audio": "audio/id/pro-13.mp3",
+      "tags": [
+        "complaints",
+        "thanks"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

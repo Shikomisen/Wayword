@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "con-sebelum",
+  "connector": "sebelum",
+  "gloss": "before",
+  "title": "sebelum — before",
+  "pattern": "A sebelum B · Sebelum B, A · sebelum jam …",
+  "explanation": "sebelum means before, followed by an action or a time: sebelum makan (before eating), sebelum jam lima (before five o'clock). The verb after it never changes, so sebelum makan covers before I eat, before eating and before we ate. It can come after the main part, or first with a comma: Sebelum tidur, saya biasanya baca buku. It often pairs with dulu (first): Saya cuci tangan dulu sebelum makan. Going somewhere needs no verb: sebelum ke Indonesia, before going to Indonesia.",
+  "natural": "Any register. Very common in instructions (minum obat sebelum makan), routines and plans.",
+  "stiff": "Before at the end of an English sentence (I've been here before) isn't sebelum: say Saya pernah ke sini, or use sebelumnya (before that, previously).",
+  "examples": [
+    {
+      "id": "cx-sebelum-1",
+      "indonesian": "Saya cuci tangan dulu sebelum makan.",
+      "english": "I'll wash my hands before I eat.",
+      "chunks": [
+        {
+          "t": "Saya cuci tangan ",
+          "w": "w-cuci"
+        },
+        {
+          "t": "dulu ",
+          "w": "w-dulu"
+        },
+        {
+          "t": "sebelum "
+        },
+        {
+          "t": "makan.",
+          "w": "w-makan"
+        }
+      ],
+      "gap": {
+        "before": "Saya cuci tangan dulu ",
+        "answer": "sebelum",
+        "after": " makan.",
+        "options": [
+          "sebelum",
+          "sesudah",
+          "sambil"
+        ],
+        "why": "Washing comes first, then eating: sebelum makan. dulu (first) often goes with it."
+      },
+      "combine": {
+        "a": "Saya cuci tangan dulu.",
+        "b": "Saya makan.",
+        "distractors": [
+          "sesudah "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sebelum-1.mp3",
+      "tags": [
+        "connectors",
+        "sebelum"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-sebelum-2",
+      "indonesian": "Saya harus pulang sebelum jam lima.",
+      "english": "I have to be home before five.",
+      "chunks": [
+        {
+          "t": "Saya harus ",
+          "w": "w-saya"
+        },
+        {
+          "t": "pulang ",
+          "w": "w-pulang"
+        },
+        {
+          "t": "sebelum "
+        },
+        {
+          "t": "jam lima.",
+          "w": "w-jam"
+        }
+      ],
+      "gap": {
+        "before": "Saya harus pulang ",
+        "answer": "sebelum",
+        "after": " jam lima.",
+        "options": [
+          "sebelum",
+          "sesudah",
+          "sampai"
+        ],
+        "why": "Before a time is sebelum: sebelum jam lima. sampai would mean until."
+      },
+      "audio": "audio/id/connectors/cx-sebelum-2.mp3",
+      "tags": [
+        "connectors",
+        "sebelum"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-sebelum-3",
+      "indonesian": "Sebelum tidur, saya biasanya baca buku.",
+      "english": "Before bed, I usually read a book.",
+      "chunks": [
+        {
+          "t": "Sebelum "
+        },
+        {
+          "t": "tidur, ",
+          "w": "w-tidur"
+        },
+        {
+          "t": "saya biasanya ",
+          "w": "w-biasanya"
+        },
+        {
+          "t": "baca buku.",
+          "w": "w-baca"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Sebelum",
+        "after": " tidur, saya biasanya baca buku.",
+        "options": [
+          "Sebelum",
+          "Sesudah",
+          "Sambil"
+        ],
+        "why": "Reading comes first, then sleep: Sebelum tidur, before bed."
+      },
+      "combine": {
+        "a": "Saya tidur.",
+        "b": "Saya biasanya baca buku.",
+        "distractors": [
+          "Sambil "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sebelum-3.mp3",
+      "tags": [
+        "connectors",
+        "sebelum"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-sebelum-4",
+      "indonesian": "Sebelum ke Indonesia, saya belajar sedikit bahasa Indonesia.",
+      "english": "Before coming to Indonesia, I learned a little Indonesian.",
+      "chunks": [
+        {
+          "t": "Sebelum "
+        },
+        {
+          "t": "ke Indonesia, ",
+          "w": "w-ke"
+        },
+        {
+          "t": "saya belajar ",
+          "w": "w-belajar"
+        },
+        {
+          "t": "sedikit bahasa Indonesia.",
+          "w": "w-sedikit"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Sebelum",
+        "after": " ke Indonesia, saya belajar sedikit bahasa Indonesia.",
+        "options": [
+          "Sebelum",
+          "Sesudah",
+          "Waktu"
+        ],
+        "why": "The learning came first: sebelum ke Indonesia, before going to Indonesia, with no verb needed."
+      },
+      "combine": {
+        "a": "Saya ke Indonesia.",
+        "b": "Saya belajar sedikit bahasa Indonesia.",
+        "distractors": [
+          "Sesudah "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-sebelum-4.mp3",
+      "tags": [
+        "connectors",
+        "sebelum"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-nai",
+  "connector": "〜ない",
+  "gloss": "kata kerja santai: positif dan negatif",
+  "title": "〜る・〜ない — bentuk santai, positif dan negatif",
+  "pattern": "bentuk kamus ({行|い}く) / bentuk ない ({行|い}かない)",
+  "explanation": "Dengan teman, keluarga, dan pasangan, kata kerja tidak memakai ます. Bentuk positifnya adalah bentuk kamus, yang ada di setiap kartu kata: {行|い}く, {食|た}べる. Bentuk “tidak” adalah bentuk ない: {行|い}かない, {食|た}べない. Bahasa Indonesia cukup menambah “tidak” di depan; bahasa Jepang mengubah akhiran kata kerjanya. Untuk kata kerja る seperti {食|た}べる, ganti る dengan ない. Untuk yang lain, bunyi terakhir pindah ke baris あ: {行|い}く → {行|い}かない, {飲|の}む → {飲|の}まない. する → しない, {来|く}る → {来|こ}ない, dan ある → ない.",
+  "natural": "Begini cara bicara dengan pasangan dan teman, seperti memakai “aku” dan “kamu”: {今日|きょう}、{行|い}く？ — ううん、{行|い}かない。",
+  "stiff": "Bentuk biasa terdengar tidak sopan bagi pelayan toko, orang yang belum dikenal, dan orang tua pasangan: di situ tetap pakai ます. Dan “tidak ada” cukup ない, tidak pernah あらない.",
+  "examples": [
+    {
+      "id": "gx-nai-1",
+      "japanese": "明日、一緒に行く？",
+      "furigana": "{明日|あした}、{一緒|いっしょ}に{行|い}く？",
+      "romaji": "ashita, issho ni iku?",
+      "indonesian": "Besok kamu ikut pergi denganku?",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{明日|あした}、",
+          "w": "w-ashita"
+        },
+        {
+          "t": "{一緒|いっしょ}に",
+          "w": "w-issho"
+        },
+        {
+          "t": "{行|い}く？",
+          "w": "w-iku"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}、{一緒|いっしょ}に",
+        "answer": "{行|い}く",
+        "after": "？",
+        "options": [
+          "{行|い}く",
+          "{行|い}かない",
+          "{行|い}った"
+        ],
+        "why": "Dengan teman: 行く bentuk biasa."
+      },
+      "audio": "audio/ja/grammar/gx-nai-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "nai"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-nai-2",
+      "japanese": "肉は食べない。",
+      "furigana": "{肉|にく}は{食|た}べない。",
+      "romaji": "niku wa tabenai",
+      "indonesian": "Aku tidak makan daging.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{肉|にく}は",
+          "w": "w-niku"
+        },
+        {
+          "t": "{食|た}べない。",
+          "w": "w-taberu"
+        }
+      ],
+      "gap": {
+        "before": "{肉|にく}は{食|た}べ",
+        "answer": "ない",
+        "after": "。",
+        "options": [
+          "ない",
+          "る",
+          "た"
+        ],
+        "why": "Kata kerja る: 食べる → 食べない."
+      },
+      "audio": "audio/ja/grammar/gx-nai-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "nai"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-nai-3",
+      "japanese": "今日はお酒を飲まない。",
+      "furigana": "{今日|きょう}はお{酒|さけ}を{飲|の}まない。",
+      "romaji": "kyō wa o-sake o nomanai",
+      "indonesian": "Hari ini aku tidak minum alkohol.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今日|きょう}は",
+          "w": "w-kyou"
+        },
+        {
+          "t": "お{酒|さけ}を",
+          "w": "w-osake"
+        },
+        {
+          "t": "{飲|の}まない。",
+          "w": "w-nomu"
+        }
+      ],
+      "gap": {
+        "before": "{今日|きょう}はお{酒|さけ}を{飲|の}",
+        "answer": "まない",
+        "after": "。",
+        "options": [
+          "まない",
+          "みない",
+          "むない"
+        ],
+        "why": "Bunyi terakhir pindah ke baris あ: 飲む → 飲まない."
+      },
+      "audio": "audio/ja/grammar/gx-nai-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "nai"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-nai-4",
+      "japanese": "今月はお金がない。",
+      "furigana": "{今月|こんげつ}はお{金|かね}がない。",
+      "romaji": "kongetsu wa o-kane ga nai",
+      "indonesian": "Bulan ini aku tidak punya uang.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{今月|こんげつ}は"
+        },
+        {
+          "t": "お{金|かね}が",
+          "w": "w-okane"
+        },
+        {
+          "t": "ない。"
+        }
+      ],
+      "gap": {
+        "before": "{今月|こんげつ}はお{金|かね}が",
+        "answer": "ない",
+        "after": "。",
+        "options": [
+          "ない",
+          "あらない",
+          "いない"
+        ],
+        "why": "Kebalikan dari ある cukup ない."
+      },
+      "audio": "audio/ja/grammar/gx-nai-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "nai"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

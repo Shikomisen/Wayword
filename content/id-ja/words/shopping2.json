@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "id": "words-shopping2",
+  "title": "Belanja & uang",
+  "description": "Harga, diskon, membayar, mengembalikan dan menukar barang: yang kamu perlukan saat belanja lebih dari sekadar menunjuk lalu bayar.",
+  "items": [
+    {
+      "id": "w-nedan",
+      "japanese": "値段",
+      "furigana": "{値段|ねだん}",
+      "indonesian": "harga",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-nedan.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-waribiki",
+      "japanese": "割引",
+      "furigana": "{割引|わりびき}",
+      "indonesian": "diskon, potongan harga",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-waribiki.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-seeru",
+      "japanese": "セール",
+      "furigana": "{セール|せーる}",
+      "indonesian": "obral, sale",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-seeru.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-genkin",
+      "japanese": "現金",
+      "furigana": "{現金|げんきん}",
+      "indonesian": "uang tunai",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-genkin.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-kaado",
+      "japanese": "カード",
+      "furigana": "{カード|かーど}",
+      "indonesian": "kartu (kredit, poin)",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-kaado.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-reshiito",
+      "japanese": "レシート",
+      "furigana": "{レシート|れしーと}",
+      "indonesian": "struk",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-reshiito.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-zeikomi",
+      "japanese": "税込",
+      "furigana": "{税込|ぜいこみ}",
+      "indonesian": "termasuk pajak",
+      "pos": "noun",
+      "usage": "Harga sering ditulis 税込 atau 税抜 (belum termasuk pajak).",
+      "audio": "audio/ja/words/w-zeikomi.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-souryou",
+      "japanese": "送料",
+      "furigana": "{送料|そうりょう}",
+      "indonesian": "ongkos kirim",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-souryou.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-henpin",
+      "japanese": "返品",
+      "furigana": "{返品|へんぴん}",
+      "indonesian": "pengembalian barang, retur",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-henpin.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-koukan",
+      "japanese": "交換",
+      "furigana": "{交換|こうかん}",
+      "indonesian": "penukaran, tukar",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-koukan.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shichaku",
+      "japanese": "試着",
+      "furigana": "{試着|しちゃく}",
+      "indonesian": "mencoba (pakaian)",
+      "pos": "noun",
+      "usage": "試着してもいいですか — boleh saya coba?",
+      "audio": "audio/ja/words/w-shichaku.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-saizu",
+      "japanese": "サイズ",
+      "furigana": "{サイズ|さいず}",
+      "indonesian": "ukuran",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-saizu.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shinagire",
+      "japanese": "品切れ",
+      "furigana": "{品切|しなぎ}れ",
+      "indonesian": "habis, stok kosong",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shinagire.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chuumon",
+      "japanese": "注文",
+      "furigana": "{注文|ちゅうもん}",
+      "indonesian": "pesanan",
+      "pos": "noun",
+      "usage": "ご注文は？ — mau pesan apa? — pertanyaan dari pelayan.",
+      "audio": "audio/ja/words/w-chuumon.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-shiharai",
+      "japanese": "支払い",
+      "furigana": "{支払|しはら}い",
+      "indonesian": "pembayaran",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shiharai.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-harau",
+      "japanese": "払う",
+      "furigana": "{払|はら}う",
+      "indonesian": "membayar",
+      "pos": "verb",
+      "forms": {
+        "masu": "{払|はら}います",
+        "te": "{払|はら}って"
+      },
+      "usage": "カードで払えますか — bisa bayar pakai kartu?",
+      "audio": "audio/ja/words/w-harau.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tariru",
+      "japanese": "足りる",
+      "furigana": "{足|た}りる",
+      "indonesian": "cukup",
+      "pos": "verb",
+      "forms": {
+        "masu": "{足|た}ります",
+        "te": "{足|た}りて"
+      },
+      "usage": "足りない — tidak cukup. お金が足りない — uangku kurang.",
+      "audio": "audio/ja/words/w-tariru.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-amaru",
+      "japanese": "余る",
+      "furigana": "{余|あま}る",
+      "indonesian": "tersisa, lebih",
+      "pos": "verb",
+      "forms": {
+        "masu": "{余|あま}ります",
+        "te": "{余|あま}って"
+      },
+      "audio": "audio/ja/words/w-amaru.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-chokin",
+      "japanese": "貯金",
+      "furigana": "{貯金|ちょきん}",
+      "indonesian": "tabungan",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-chokin.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-muryou",
+      "japanese": "無料",
+      "furigana": "{無料|むりょう}",
+      "indonesian": "gratis",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-muryou.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-yuuryou",
+      "japanese": "有料",
+      "furigana": "{有料|ゆうりょう}",
+      "indonesian": "berbayar, tidak gratis",
+      "pos": "noun",
+      "usage": "Di Jepang, kantong plastik sekarang 有料.",
+      "audio": "audio/ja/words/w-yuuryou.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-otoku",
+      "japanese": "お得",
+      "furigana": "お{得|とく}",
+      "indonesian": "untung, hemat, harga bagus",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-otoku.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-son",
+      "japanese": "損",
+      "furigana": "{損|そん}",
+      "indonesian": "rugi",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-son.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-otsuri",
+      "japanese": "お釣り",
+      "furigana": "お{釣|つ}り",
+      "indonesian": "uang kembalian",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-otsuri.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-fukuro",
+      "japanese": "袋",
+      "furigana": "{袋|ふくろ}",
+      "indonesian": "kantong (plastik atau kertas)",
+      "pos": "noun",
+      "usage": "袋はご利用ですか — perlu kantong? — ditanyakan di setiap kasir.",
+      "audio": "audio/ja/words/w-fukuro.mp3",
+      "tags": [
+        "belanja"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

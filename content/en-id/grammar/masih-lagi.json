@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-masih-lagi",
+  "connector": "masih, lagi",
+  "gloss": "still; again, more; not any more",
+  "title": "masih and lagi",
+  "pattern": "masih + verb or describing word (still) · … lagi (again, more) · tidak … lagi (not any more) · lagi + verb (casual: in the middle of)",
+  "explanation": "masih goes before something that's still the case: Dia masih tidur (She's still asleep), Masih jauh? (Is it still far?). lagi after a word means again or more: Coba lagi (Try again), satu lagi (one more), sebentar lagi (in a moment). With tidak or sudah tidak in front, lagi at the end means 'not any more': Saya tidak merokok lagi (I don't smoke any more). In casual speech, lagi before a verb is the spoken sedang, 'in the middle of': Aku lagi makan (I'm eating). So its position tells you the meaning: lagi makan is eating right now, makan lagi is eating again.",
+  "natural": "masih is everywhere in small talk: Masih kuliah? (Still at uni?), Masih di kantor? (Still at work?). Satu lagi, ya and Sebentar lagi are worth having ready from your first day.",
+  "stiff": "lagi for 'in the middle of' is casual: with an older person or a stranger, say sedang (Bapak sedang sibuk?). And the opposite of masih isn't tidak masih: say sudah tidak (Dia sudah tidak sakit, he's not sick any more).",
+  "examples": [
+    {
+      "id": "gx-masih-lagi-1",
+      "indonesian": "Apoteknya masih buka?",
+      "english": "Is the pharmacy still open?",
+      "chunks": [
+        {
+          "t": "Apoteknya ",
+          "w": "w-apotek"
+        },
+        {
+          "t": "masih "
+        },
+        {
+          "t": "buka?"
+        }
+      ],
+      "gap": {
+        "before": "Apoteknya ",
+        "answer": "masih",
+        "after": " buka?",
+        "options": [
+          "masih",
+          "sudah",
+          "belum"
+        ],
+        "why": "Still open, late in the day: masih. Sudah buka? would ask whether it's open yet."
+      },
+      "audio": "audio/id/grammar/gx-masih-lagi-1.mp3",
+      "tags": [
+        "grammar",
+        "masih-lagi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-masih-lagi-2",
+      "indonesian": "Besok saya datang lagi, ya.",
+      "english": "I'll come again tomorrow.",
+      "chunks": [
+        {
+          "t": "Besok ",
+          "w": "w-besok"
+        },
+        {
+          "t": "saya ",
+          "w": "w-saya"
+        },
+        {
+          "t": "datang ",
+          "w": "w-datang"
+        },
+        {
+          "t": "lagi, "
+        },
+        {
+          "t": "ya."
+        }
+      ],
+      "gap": {
+        "before": "Besok saya datang ",
+        "answer": "lagi",
+        "after": ", ya.",
+        "options": [
+          "lagi",
+          "juga",
+          "masih"
+        ],
+        "why": "'Again' goes after the verb: datang lagi. Datang juga would be 'come too'."
+      },
+      "registerNotes": "A friendly way to leave a stall without buying, or to say you'll be back to finish something.",
+      "audio": "audio/id/grammar/gx-masih-lagi-2.mp3",
+      "tags": [
+        "grammar",
+        "masih-lagi"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "gx-masih-lagi-3",
+      "indonesian": "Dia sudah tidak kerja di sini lagi.",
+      "english": "He doesn't work here any more.",
+      "chunks": [
+        {
+          "t": "Dia ",
+          "w": "w-dia"
+        },
+        {
+          "t": "sudah tidak "
+        },
+        {
+          "t": "kerja ",
+          "w": "w-kerja"
+        },
+        {
+          "t": "di sini ",
+          "w": "w-di"
+        },
+        {
+          "t": "lagi."
+        }
+      ],
+      "gap": {
+        "before": "Dia sudah tidak kerja di sini ",
+        "answer": "lagi",
+        "after": ".",
+        "options": [
+          "lagi",
+          "juga",
+          "masih"
+        ],
+        "why": "tidak … lagi is 'not any more'; tidak … juga would be 'not either'."
+      },
+      "registerNotes": "Sudah tidak … lagi stresses that things have changed. Tidak … lagi alone means the same.",
+      "audio": "audio/id/grammar/gx-masih-lagi-3.mp3",
+      "tags": [
+        "grammar",
+        "masih-lagi"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-masih-lagi-4",
+      "register": "casual",
+      "indonesian": "Maaf, aku lagi makan. Nanti aku telepon, ya.",
+      "english": "Sorry, I'm eating. I'll call you later.",
+      "chunks": [
+        {
+          "t": "Maaf, "
+        },
+        {
+          "t": "aku ",
+          "w": "w-aku"
+        },
+        {
+          "t": "lagi makan. ",
+          "w": "w-makan"
+        },
+        {
+          "t": "Nanti ",
+          "w": "w-nanti"
+        },
+        {
+          "t": "aku telepon, ya.",
+          "w": "w-menelepon"
+        }
+      ],
+      "gap": {
+        "before": "Maaf, aku ",
+        "answer": "lagi makan",
+        "after": ". Nanti aku telepon, ya.",
+        "options": [
+          "lagi makan",
+          "makan lagi",
+          "sudah makan"
+        ],
+        "why": "Before the verb, lagi is casual for 'in the middle of'; makan lagi would be 'eating again'."
+      },
+      "registerNotes": "Casual, for friends and family. Politely: Maaf, saya sedang makan. Nanti saya telepon.",
+      "audio": "audio/id/grammar/gx-masih-lagi-4.mp3",
+      "tags": [
+        "grammar",
+        "masih-lagi",
+        "casual"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

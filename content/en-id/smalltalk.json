@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "id": "smalltalk",
+  "title": "Small Talk",
+  "order": 3,
+  "description": "The questions every visitor gets asked, and how to answer them: where you're from, how long you've been here, whether you like Indonesia, and the everyday greetings Mau ke mana? and Sudah makan?",
+  "phrases": [
+    {
+      "id": "sml-01",
+      "indonesian": "Asalnya dari mana?",
+      "english": "Where are you from?",
+      "registerNotes": "Asal is origin, and -nya avoids choosing a word for 'you'. You'll also hear the short Dari mana? and, to someone older, Bapak asalnya dari mana?",
+      "cultureNote": "Visitors are asked this all the time, by drivers, vendors and neighbours. It's friendly curiosity, and the chat often moves on to whether you're married and have children.",
+      "audio": "audio/id/sml-01.mp3",
+      "tags": [
+        "smalltalk",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sml-02",
+      "indonesian": "Saya dari Selandia Baru.",
+      "english": "I'm from New Zealand.",
+      "registerNotes": "Selandia Baru is New Zealand. Adding your city helps: Saya dari Auckland.",
+      "pitfallNote": "There's no word for 'am': dari (from) is enough.",
+      "audio": "audio/id/sml-02.mp3",
+      "tags": [
+        "smalltalk",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sml-03",
+      "indonesian": "Sudah berapa lama di Indonesia?",
+      "english": "How long have you been in Indonesia?",
+      "registerNotes": "Answer Sudah dua minggu (two weeks now) or Baru tiga hari (only three days). The next question is often Berapa lama lagi? (How much longer?).",
+      "audio": "audio/id/sml-03.mp3",
+      "tags": [
+        "smalltalk"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sml-04",
+      "indonesian": "Suka Indonesia?",
+      "english": "Do you like Indonesia?",
+      "registerNotes": "A favourite question for visitors, often followed by Suka makanan Indonesia? (Do you like Indonesian food?) and Bisa makan pedas? (Can you eat spicy food?).",
+      "audio": "audio/id/sml-04.mp3",
+      "tags": [
+        "smalltalk"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sml-05",
+      "indonesian": "Saya suka sekali di sini.",
+      "english": "I really like it here.",
+      "registerNotes": "Sekali after a word means very. To be specific: Saya suka sekali makanannya (I love the food).",
+      "audio": "audio/id/sml-05.mp3",
+      "tags": [
+        "smalltalk"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sml-06",
+      "indonesian": "Saya sedang belajar bahasa Indonesia.",
+      "english": "I'm learning Indonesian.",
+      "registerNotes": "Sedang marks something going on now; with friends, Aku lagi belajar bahasa Indonesia.",
+      "pitfallNote": "The language is bahasa Indonesia. Bahasa on its own just means 'language', and Indonesia on its own is the country.",
+      "cultureNote": "Even a few words get a warm reaction, often Wah, pintar (Oh, clever) or Sudah lancar (You're fluent already), however basic your Indonesian is.",
+      "audio": "audio/id/sml-06.mp3",
+      "tags": [
+        "smalltalk",
+        "language"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sml-07",
+      "indonesian": "Saya baru bisa sedikit.",
+      "english": "I only speak a little so far.",
+      "registerNotes": "Baru (only, so far) sounds modest and hopeful. Sedikit-sedikit (a little bit) is the usual short answer to Bisa bahasa Indonesia?",
+      "pitfallNote": "Speaking a language is just bisa (can): Bisa bahasa Inggris? means Do you speak English? There's no need for a verb like bicara.",
+      "audio": "audio/id/sml-07.mp3",
+      "tags": [
+        "smalltalk",
+        "language"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "sml-08",
+      "indonesian": "Mau ke mana?",
+      "english": "Where are you off to?",
+      "registerNotes": "From neighbours and people you pass, often with your title: Mau ke mana, Mbak?",
+      "cultureNote": "It's a greeting, like 'how's it going?', not nosiness. Nobody expects details, and a vague answer is perfectly polite.",
+      "audio": "audio/id/sml-08.mp3",
+      "tags": [
+        "smalltalk",
+        "greetings",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sml-09",
+      "indonesian": "Jalan-jalan saja.",
+      "english": "Just out and about.",
+      "registerNotes": "The stock vague answer to Mau ke mana? Others: Ke depan (just up the road), Ke pasar (to the market), Pulang (home).",
+      "audio": "audio/id/sml-09.mp3",
+      "tags": [
+        "smalltalk",
+        "greetings"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sml-10",
+      "indonesian": "Dari mana, Bu?",
+      "english": "Where have you been?",
+      "registerNotes": "Asked when someone sees you coming back. Answer just as briefly: Dari pasar (from the market), Dari kantor (from work).",
+      "pitfallNote": "The same words can mean 'where are you from?'. If you're walking home with shopping, they mean where you've been.",
+      "audio": "audio/id/sml-10.mp3",
+      "tags": [
+        "smalltalk",
+        "greetings"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "sml-11",
+      "indonesian": "Sudah makan?",
+      "english": "Have you eaten?",
+      "registerNotes": "Answer Sudah (yes, already) or Belum (not yet). Sudah, terima kasih is always safe.",
+      "pitfallNote": "Don't answer ya or tidak: sudah and belum are the yes and no to any Sudah …? question.",
+      "cultureNote": "A friendly greeting, especially around mealtimes. It shows care rather than inviting you to eat.",
+      "audio": "audio/id/sml-11.mp3",
+      "tags": [
+        "smalltalk",
+        "greetings",
+        "essential"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

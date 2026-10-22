@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "id": "ryokan",
+  "title": "Menginap di ryokan",
+  "category": "hotel",
+  "setting": "Kamu tiba di sebuah penginapan tradisional (ryokan) di pegunungan. Seorang pelayan berkimono menyambutmu di pintu masuk.",
+  "start": "n1",
+  "nodes": {
+    "n1": {
+      "speaker": "staff",
+      "japanese": "ようこそいらっしゃいました。お名前を伺ってもよろしいでしょうか。",
+      "furigana": [
+        {
+          "b": "ようこそいらっしゃいました。お"
+        },
+        {
+          "b": "名前",
+          "r": "なまえ"
+        },
+        {
+          "b": "を"
+        },
+        {
+          "b": "伺",
+          "r": "うかが"
+        },
+        {
+          "b": "ってもよろしいでしょうか。"
+        }
+      ],
+      "indonesian": "Selamat datang. Boleh saya tahu namanya?",
+      "audio": "audio/ja/scenario/ryokan-n1.mp3",
+      "audioHint": "ようこそいらっしゃいました。おなまえをうかがってもよろしいでしょうか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "予約しているスミスです。よろしくお願いします。",
+          "furigana": [
+            {
+              "b": "予約",
+              "r": "よやく"
+            },
+            {
+              "b": "しているスミスです。よろしくお"
+            },
+            {
+              "b": "願",
+              "r": "ねが"
+            },
+            {
+              "b": "いします。"
+            }
+          ],
+          "indonesian": "Saya Smith, sudah reservasi. Mohon bantuannya.",
+          "feedback": "Reservasi, nama, dan よろしくお願いします yang sopan.",
+          "next": "n2"
+        },
+        {
+          "quality": "good",
+          "japanese": "スミスです。今日から二泊です。",
+          "furigana": [
+            {
+              "b": "スミスです。"
+            },
+            {
+              "b": "今日",
+              "r": "きょう"
+            },
+            {
+              "b": "から"
+            },
+            {
+              "b": "二泊",
+              "r": "にはく"
+            },
+            {
+              "b": "です。"
+            }
+          ],
+          "indonesian": "Smith. Dua malam mulai hari ini.",
+          "feedback": "Jelas: namamu dan berapa lama kamu menginap.",
+          "next": "n2"
+        },
+        {
+          "quality": "wrong",
+          "japanese": "スミス様です。",
+          "furigana": [
+            {
+              "b": "スミス"
+            },
+            {
+              "b": "様",
+              "r": "さま"
+            },
+            {
+              "b": "です。"
+            }
+          ],
+          "indonesian": "Saya Tuan Smith yang terhormat.",
+          "feedback": "様 (seperti さん) menghormati orang lain, tidak pernah dirimu sendiri, sama seperti kamu tidak akan menyebut dirimu “Bapak Smith” kepada orang yang baru dikenal. Cukup スミスです.",
+          "next": "n2"
+        }
+      ]
+    },
+    "n2": {
+      "speaker": "staff",
+      "japanese": "お待ちしておりました。お荷物、お持ちします。",
+      "furigana": [
+        {
+          "b": "お"
+        },
+        {
+          "b": "待",
+          "r": "ま"
+        },
+        {
+          "b": "ちしておりました。お"
+        },
+        {
+          "b": "荷物",
+          "r": "にもつ"
+        },
+        {
+          "b": "、お"
+        },
+        {
+          "b": "持",
+          "r": "も"
+        },
+        {
+          "b": "ちします。"
+        }
+      ],
+      "indonesian": "Kami sudah menunggu. Mari, barangnya saya bawakan.",
+      "audio": "audio/ja/scenario/ryokan-n2.mp3",
+      "audioHint": "おまちしておりました。おにもつ、おもちします",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "ありがとうございます。お願いします。",
+          "furigana": [
+            {
+              "b": "ありがとうございます。お"
+            },
+            {
+              "b": "願",
+              "r": "ねが"
+            },
+            {
+              "b": "いします。"
+            }
+          ],
+          "indonesian": "Terima kasih. Tolong, ya.",
+          "feedback": "Menerima tawaran dengan anggun.",
+          "next": "n3"
+        },
+        {
+          "quality": "good",
+          "japanese": "大丈夫です。自分で持てます。",
+          "furigana": [
+            {
+              "b": "大丈夫",
+              "r": "だいじょうぶ"
+            },
+            {
+              "b": "です。"
+            },
+            {
+              "b": "自分",
+              "r": "じぶん"
+            },
+            {
+              "b": "で"
+            },
+            {
+              "b": "持",
+              "r": "も"
+            },
+            {
+              "b": "てます。"
+            }
+          ],
+          "indonesian": "Tidak apa-apa, saya bisa bawa sendiri.",
+          "feedback": "Penolakan yang sopan. Staf mungkin tetap bersikeras: itu bagian dari sambutan.",
+          "next": "n3"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "持ってください。",
+          "furigana": [
+            {
+              "b": "持",
+              "r": "も"
+            },
+            {
+              "b": "ってください。"
+            }
+          ],
+          "indonesian": "Tolong bawakan.",
+          "feedback": "てください memang sopan, tapi tetap sebuah permintaan: setelah dia menawarkan, kedengarannya seperti menyuruh. Terima saja tawarannya: お願いします.",
+          "next": "n3"
+        }
+      ]
+    },
+    "n3": {
+      "speaker": "staff",
+      "japanese": "夕食は六時と七時、どちらがよろしいですか。",
+      "furigana": [
+        {
+          "b": "夕食",
+          "r": "ゆうしょく"
+        },
+        {
+          "b": "は"
+        },
+        {
+          "b": "六時",
+          "r": "ろくじ"
+        },
+        {
+          "b": "と"
+        },
+        {
+          "b": "七時",
+          "r": "しちじ"
+        },
+        {
+          "b": "、どちらがよろしいですか。"
+        }
+      ],
+      "indonesian": "Untuk makan malam, lebih suka pukul enam atau pukul tujuh?",
+      "audio": "audio/ja/scenario/ryokan-n3.mp3",
+      "audioHint": "ゆうしょくはろくじとしちじ、どちらがよろしいですか",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "七時でお願いします。",
+          "furigana": [
+            {
+              "b": "七時",
+              "r": "しちじ"
+            },
+            {
+              "b": "でお"
+            },
+            {
+              "b": "願",
+              "r": "ねが"
+            },
+            {
+              "b": "いします。"
+            }
+          ],
+          "indonesian": "Pukul tujuh, ya.",
+          "feedback": "Jelas dan sopan: で menandai pilihanmu.",
+          "next": "n4"
+        },
+        {
+          "quality": "good",
+          "japanese": "じゃあ、六時にします。",
+          "furigana": [
+            {
+              "b": "じゃあ、"
+            },
+            {
+              "b": "六時",
+              "r": "ろくじ"
+            },
+            {
+              "b": "にします。"
+            }
+          ],
+          "indonesian": "Kalau begitu, pukul enam saja.",
+          "feedback": "にする: memutuskan sesuatu. Wajar dan sopan.",
+          "next": "n4"
+        },
+        {
+          "phraseId": "opi-06",
+          "quality": "awkward",
+          "feedback": "Santai, tapi terlalu akrab untuk staf penginapan, dan dapur perlu kepastian jam. Pilih satu: 七時でお願いします.",
+          "next": "n4"
+        }
+      ]
+    },
+    "n4": {
+      "speaker": "staff",
+      "japanese": "温泉は夜十二時まで入れます。タオルはお部屋にございます。",
+      "furigana": [
+        {
+          "b": "温泉",
+          "r": "おんせん"
+        },
+        {
+          "b": "は"
+        },
+        {
+          "b": "夜",
+          "r": "よる"
+        },
+        {
+          "b": "十二時",
+          "r": "じゅうにじ"
+        },
+        {
+          "b": "まで"
+        },
+        {
+          "b": "入",
+          "r": "はい"
+        },
+        {
+          "b": "れます。タオルはお"
+        },
+        {
+          "b": "部屋",
+          "r": "へや"
+        },
+        {
+          "b": "にございます。"
+        }
+      ],
+      "indonesian": "Pemandian air panasnya bisa dipakai sampai pukul 12 malam. Handuk ada di kamar.",
+      "audio": "audio/ja/scenario/ryokan-n4.mp3",
+      "audioHint": "おんせんはよるじゅうにじまではいれます。タオルはおへやにございます",
+      "options": [
+        {
+          "quality": "good",
+          "japanese": "タトゥーがあるんですが、入ってもいいですか。",
+          "furigana": [
+            {
+              "b": "タトゥーがあるんですが、"
+            },
+            {
+              "b": "入",
+              "r": "はい"
+            },
+            {
+              "b": "ってもいいですか。"
+            }
+          ],
+          "indonesian": "Saya punya tato. Apakah boleh masuk?",
+          "feedback": "Layak ditanyakan: banyak pemandian masih menolak orang bertato, meski ada yang menawarkan pemandian pribadi (貸切風呂) sebagai gantinya.",
+          "next": "n5"
+        },
+        {
+          "quality": "good",
+          "japanese": "朝も入れますか。",
+          "furigana": [
+            {
+              "b": "朝",
+              "r": "あさ"
+            },
+            {
+              "b": "も"
+            },
+            {
+              "b": "入",
+              "r": "はい"
+            },
+            {
+              "b": "れますか。"
+            }
+          ],
+          "indonesian": "Pagi hari juga bisa?",
+          "feedback": "Pertanyaan bagus: berendam di pagi hari adalah salah satu kenikmatan menginap di ryokan.",
+          "next": "n5"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "水着を着てもいいですか。",
+          "furigana": [
+            {
+              "b": "水着",
+              "r": "みずぎ"
+            },
+            {
+              "b": "を"
+            },
+            {
+              "b": "着",
+              "r": "き"
+            },
+            {
+              "b": "てもいいですか。"
+            }
+          ],
+          "indonesian": "Boleh pakai baju renang?",
+          "feedback": "Pertanyaan yang wajar, tapi jawabannya hampir selalu tidak: kamu berendam tanpa busana, setelah membersihkan badan dulu di keran. Kalau tidak nyaman, tanyakan 貸切風呂 (pemandian pribadi).",
+          "next": "n5"
+        }
+      ]
+    },
+    "n5": {
+      "speaker": "staff",
+      "japanese": "何かございましたら、いつでもお声がけください。ごゆっくりどうぞ。",
+      "furigana": [
+        {
+          "b": "何",
+          "r": "なに"
+        },
+        {
+          "b": "かございましたら、いつでもお"
+        },
+        {
+          "b": "声",
+          "r": "こえ"
+        },
+        {
+          "b": "がけください。ごゆっくりどうぞ。"
+        }
+      ],
+      "indonesian": "Kalau ada apa-apa, panggil kami kapan saja. Silakan beristirahat dengan nyaman.",
+      "audio": "audio/ja/scenario/ryokan-n5.mp3",
+      "audioHint": "なにかございましたら、いつでもおこえがけください。ごゆっくりどうぞ",
+      "options": [
+        {
+          "phraseId": "gre-05",
+          "quality": "good",
+          "feedback": "Sederhana dan tepat.",
+          "next": "end"
+        },
+        {
+          "quality": "good",
+          "japanese": "ありがとうございます。楽しみにしていました。",
+          "furigana": [
+            {
+              "b": "ありがとうございます。"
+            },
+            {
+              "b": "楽",
+              "r": "たの"
+            },
+            {
+              "b": "しみにしていました。"
+            }
+          ],
+          "indonesian": "Terima kasih. Saya sudah menantikan ini.",
+          "feedback": "Ungkapan yang manis untuk tuan rumahmu.",
+          "next": "end"
+        },
+        {
+          "quality": "awkward",
+          "japanese": "ごゆっくりどうぞ。",
+          "furigana": [
+            {
+              "b": "ごゆっくりどうぞ。"
+            }
+          ],
+          "indonesian": "Silakan beristirahat dengan nyaman.",
+          "feedback": "Itu yang diucapkan staf kepada tamu. Cukup berterima kasih.",
+          "next": "end"
+        }
+      ]
+    },
+    "end": {
+      "speaker": "narration",
+      "japanese": "",
+      "indonesian": "Selesai. Mengenali keigo seperti 伺う, おります, dan ございます adalah separuh dari pengalaman menginap di ryokan; bahasa Jepang sopanmu sendiri melengkapi sisanya.",
+      "end": true,
+      "options": []
+    }
+  }
+}

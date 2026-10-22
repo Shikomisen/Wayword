@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "id": "con-jadi",
+  "connector": "jadi",
+  "gloss": "so",
+  "title": "jadi — so",
+  "pattern": "A, jadi B · Jadi, … · A, makanya B",
+  "explanation": "jadi gives the result: first what happened, then jadi and what followed from it: Hujan, jadi kami di rumah. — It was raining, so we stayed in. It's karena the other way round: Kami di rumah karena hujan says the same thing. Like English so, Jadi at the start of a sentence also sums up or gets back to the point: Jadi, semuanya berapa? makanya means that's why, often when something finally makes sense: Oh, makanya kamu capek! — Oh, that's why you're tired!",
+  "natural": "Everyday and neutral, spoken or written. Jadi, … to sum up is everywhere: in shops, at work and in stories.",
+  "stiff": "Formal writing uses sehingga or oleh karena itu, which sound like an essay in a chat. makanya can also scold (see, that's why!), so take care with it to someone older. And jadi has other meanings too: to become (jadi guru) and to go ahead as planned (Besok jadi?).",
+  "examples": [
+    {
+      "id": "cx-jadi-1",
+      "indonesian": "Tokonya tutup, jadi kami pulang.",
+      "english": "The shop was closed, so we went home.",
+      "chunks": [
+        {
+          "t": "Tokonya tutup, ",
+          "w": "w-toko"
+        },
+        {
+          "t": "jadi ",
+          "w": "w-jadi"
+        },
+        {
+          "t": "kami pulang.",
+          "w": "w-pulang"
+        }
+      ],
+      "gap": {
+        "before": "Tokonya tutup, ",
+        "answer": "jadi",
+        "after": " kami pulang.",
+        "options": [
+          "jadi",
+          "karena",
+          "tapi"
+        ],
+        "why": "Going home is the result of the shop being closed: jadi, so."
+      },
+      "combine": {
+        "a": "Tokonya tutup.",
+        "b": "Kami pulang.",
+        "distractors": [
+          "karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-jadi-1.mp3",
+      "tags": [
+        "connectors",
+        "jadi"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-jadi-2",
+      "indonesian": "Saya tidak bisa makan pedas, jadi sambalnya sedikit saja.",
+      "english": "I can't eat spicy food, so just a little chilli sauce, please.",
+      "chunks": [
+        {
+          "t": "Saya tidak bisa ",
+          "w": "w-saya"
+        },
+        {
+          "t": "makan pedas, ",
+          "w": "w-pedas"
+        },
+        {
+          "t": "jadi ",
+          "w": "w-jadi"
+        },
+        {
+          "t": "sambalnya sedikit saja.",
+          "w": "w-sambal"
+        }
+      ],
+      "gap": {
+        "before": "Saya tidak bisa makan pedas, ",
+        "answer": "jadi",
+        "after": " sambalnya sedikit saja.",
+        "options": [
+          "jadi",
+          "karena",
+          "walaupun"
+        ],
+        "why": "First the situation, then what follows from it: jadi."
+      },
+      "combine": {
+        "a": "Saya tidak bisa makan pedas.",
+        "b": "Sambalnya sedikit saja.",
+        "distractors": [
+          "karena "
+        ]
+      },
+      "audio": "audio/id/connectors/cx-jadi-2.mp3",
+      "tags": [
+        "connectors",
+        "jadi",
+        "food"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-jadi-3",
+      "indonesian": "Jadi, semuanya berapa, Bu?",
+      "english": "So, how much is that altogether?",
+      "chunks": [
+        {
+          "t": "Jadi, ",
+          "w": "w-jadi"
+        },
+        {
+          "t": "semuanya "
+        },
+        {
+          "t": "berapa, Bu?",
+          "w": "w-berapa"
+        }
+      ],
+      "gap": {
+        "before": "",
+        "answer": "Jadi",
+        "after": ", semuanya berapa, Bu?",
+        "options": [
+          "Jadi",
+          "Karena",
+          "Tapi"
+        ],
+        "why": "Jadi at the start sums up and moves things on: so, all told."
+      },
+      "audio": "audio/id/connectors/cx-jadi-3.mp3",
+      "tags": [
+        "connectors",
+        "jadi",
+        "shopping"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-jadi-4",
+      "indonesian": "Saya kurang tidur, makanya pusing.",
+      "english": "I didn't get enough sleep, that's why I've got a headache.",
+      "chunks": [
+        {
+          "t": "Saya kurang tidur, ",
+          "w": "w-tidur"
+        },
+        {
+          "t": "makanya "
+        },
+        {
+          "t": "pusing.",
+          "w": "w-pusing"
+        }
+      ],
+      "gap": {
+        "before": "Saya kurang tidur, ",
+        "answer": "makanya",
+        "after": " pusing.",
+        "options": [
+          "makanya",
+          "jadi",
+          "karena"
+        ],
+        "ok": [
+          "jadi"
+        ],
+        "note": "jadi works too; makanya points at the cause a little harder: that's why.",
+        "why": "makanya means that's why, with the cause before it."
+      },
+      "audio": "audio/id/connectors/cx-jadi-4.mp3",
+      "tags": [
+        "connectors",
+        "jadi"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

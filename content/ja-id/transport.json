@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "id": "transport",
+  "title": "移動・交通",
+  "order": 7,
+  "description": "オジェック（バイクタクシー）、タクシー、バス、電車での移動。Grab や Gojek の乗車、止まってほしい場所の伝え方、乗るバスやホームの探し方まで。運転手には Pak、若い人なら Mas と呼びかけます。",
+  "phrases": [
+    {
+      "id": "tra-01",
+      "indonesian": "Ke alamat ini, ya, Pak.",
+      "japanese": "この住所までお願いします。",
+      "registerNotes": "言いながらスマホで住所を見せましょう。Grab や Gojek なら行き先はアプリに入っているので、主に流しのタクシーやオジェックで使います。",
+      "audio": "audio/id/tra-01.mp3",
+      "tags": [
+        "交通",
+        "タクシー",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "tra-02",
+      "indonesian": "Pakai argo, ya, Pak?",
+      "japanese": "メーターでお願いします。",
+      "registerNotes": "argo はタクシーのメーター。Blue Bird のタクシーは当然のようにメーターを使いますが、ほかのタクシーでは出発前に確認しましょう。",
+      "audio": "audio/id/tra-02.mp3",
+      "tags": [
+        "交通",
+        "タクシー"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-03",
+      "indonesian": "Ke stasiun berapa, Pak?",
+      "japanese": "駅までいくらですか？",
+      "registerNotes": "Ke … berapa? で「〜までいくら？」と料金を聞けます。運転手には Pak や Mas を付けて。",
+      "cultureNote": "アプリで呼ぶのではなく、街角で客待ちしているオジェックや becak（輪タク）は、乗る前に料金を決めておきましょう。アプリなら料金が先に表示されます。",
+      "audio": "audio/id/tra-03.mp3",
+      "tags": [
+        "交通",
+        "オジェック",
+        "値段"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-04",
+      "indonesian": "Gojek atas nama Sam, ya, Pak?",
+      "japanese": "サムで予約した Gojek ですか？",
+      "registerNotes": "atas nama（〜の名前で）はどんな予約にも使えます。Gojek も Grab も運転手はみんな緑のジャケットを着ているので、アプリでナンバープレートも確認しましょう。",
+      "audio": "audio/id/tra-04.mp3",
+      "tags": [
+        "交通",
+        "オジェック",
+        "アプリ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-05",
+      "indonesian": "Saya tunggu di depan pintu masuk, ya.",
+      "japanese": "入口の前で待っています。",
+      "registerNotes": "運転手から電話やメッセージで Posisinya di mana?（今どこですか？）と聞かれることがよくあります。di depan（〜の前）や di sebelah（〜の隣）で目印を伝えましょう。di depan pintu masuk（入口の前）のように、「前」が先に来ます。",
+      "audio": "audio/id/tra-05.mp3",
+      "tags": [
+        "交通",
+        "アプリ"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-06",
+      "indonesian": "Kiri, Pak!",
+      "japanese": "降ります！",
+      "registerNotes": "アンコット（乗り合いミニバス）や路線バスで降りたい時の言い方。kiri は「左」で、「左の路肩に寄せて」という意味です。インドネシアは日本と同じ左側通行です。",
+      "cultureNote": "アンコットは降りる時に運転手に払うので、小額のお札を用意しておきましょう。",
+      "audio": "audio/id/tra-06.mp3",
+      "tags": [
+        "交通",
+        "バス",
+        "必須"
+      ],
+      "difficulty": 1,
+      "pitfallNote": "Pak の k は母音を付けずに止めます。「パク」ではなく「パッ」に近い音です。"
+    },
+    {
+      "id": "tra-07",
+      "indonesian": "Berhenti di sini saja, Pak.",
+      "japanese": "ここで止めてください。",
+      "registerNotes": "タクシーや車、オジェックで。もっと短く Di sini saja, Pak（ここでいいです）とも言います。",
+      "audio": "audio/id/tra-07.mp3",
+      "tags": [
+        "交通",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "tra-08",
+      "indonesian": "Pelan-pelan, ya, Pak.",
+      "japanese": "ゆっくりお願いします。",
+      "registerNotes": "ていねいな言い方で、運転手も気を悪くしません。pelan（ゆっくり）を2回重ねると、「ゆっくりゆっくり」のようにやさしく念を押す感じになります。Hati-hati, ya, Pak（気をつけてくださいね）も使えます。",
+      "audio": "audio/id/tra-08.mp3",
+      "tags": [
+        "交通",
+        "オジェック"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "tra-09",
+      "indonesian": "Masih jauh, Pak?",
+      "japanese": "まだ遠いですか？",
+      "registerNotes": "masih は「まだ」で、日本語の「まだ遠い？」と同じ発想です。よく返ってくるのは sebentar lagi（もうすぐです）や sudah dekat（もう近いです）。",
+      "audio": "audio/id/tra-09.mp3",
+      "tags": [
+        "交通",
+        "距離"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "tra-10",
+      "indonesian": "Kira-kira berapa lama, Pak?",
+      "japanese": "だいたいどのくらいかかりますか？",
+      "registerNotes": "kira-kira（だいたい）を付けると自然な聞き方になります。答えには条件が付くことがよくあります：Kalau tidak macet, setengah jam（渋滞がなければ30分）。",
+      "audio": "audio/id/tra-10.mp3",
+      "tags": [
+        "交通",
+        "時間"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-11",
+      "indonesian": "Macet sekali, ya.",
+      "japanese": "すごい渋滞ですね。",
+      "registerNotes": "文末の ya は日本語の「〜ね」に近く、相手の同意を誘います。運転手と話すきっかけにぴったりです。",
+      "cultureNote": "macet（渋滞）はジャカルタなど大都市の日常の一部。世間話の定番の話題で、遅刻の理由の定番でもあります。",
+      "audio": "audio/id/tra-11.mp3",
+      "tags": [
+        "交通",
+        "渋滞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "tra-12",
+      "indonesian": "Bus ini lewat Monas, ya?",
+      "japanese": "このバス、モナスを通りますよね？",
+      "registerNotes": "lewat（〜を通って・経由で）は途中で通る場所、ke（〜へ）は終点の行き先に使います。Monas はジャカルタ中心部にある独立記念塔です。",
+      "cultureNote": "ジャカルタの専用レーンバス TransJakarta では、運転手に払うのではなく、駅の改札でカードをタッチします。",
+      "audio": "audio/id/tra-12.mp3",
+      "tags": [
+        "交通",
+        "バス"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-13",
+      "indonesian": "Kereta ke Bogor di jalur berapa?",
+      "japanese": "ボゴール行きの電車は何番線ですか？",
+      "registerNotes": "標識やアナウンスでは、ホームの番号を jalur（線）で言います：jalur dua（2番線）。peron はホームそのものです。",
+      "cultureNote": "KRL（ka-er-el と読みます）はジャカルタの通勤電車で、ボゴール、ブカシ、タンゲランまで走っています。日本と同じく女性専用車両があり、多くの電車では両端の車両がピンク色で示されています。",
+      "audio": "audio/id/tra-13.mp3",
+      "tags": [
+        "交通",
+        "電車"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-14",
+      "indonesian": "Tiket ke Bandung satu, ya.",
+      "japanese": "バンドンまで切符を1枚お願いします。",
+      "registerNotes": "食べ物の注文と同じく、数は後ろに来ます：tiket ke Bandung dua（バンドン行き2枚）。日本語の「切符を2枚」と同じ順番です。往復切符は tiket pulang-pergi（直訳「帰り・行き」）。",
+      "audio": "audio/id/tra-14.mp3",
+      "tags": [
+        "交通",
+        "切符"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "tra-15",
+      "indonesian": "Kalau mau ke Kota Tua, turun di mana?",
+      "japanese": "コタ・トゥアに行くには、どこで降りればいいですか？",
+      "registerNotes": "Kalau mau ke … は「〜に行きたいなら」。turun（降りる）は naik（乗る）の反対です。Kota Tua はジャカルタのオランダ時代の旧市街。ほかの場所に入れ替えて使えます。",
+      "audio": "audio/id/tra-15.mp3",
+      "tags": [
+        "交通",
+        "バス",
+        "電車"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

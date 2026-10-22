@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "words-free",
+  "title": "Waktu luang",
+  "description": "Film, musik, perjalanan, ulang tahun — hal-hal yang kalian lakukan bersama.",
+  "items": [
+    {
+      "id": "w-eiga",
+      "japanese": "映画",
+      "furigana": "{映画|えいが}",
+      "indonesian": "film",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-eiga.mp3",
+      "tags": [
+        "waktu luang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ongaku",
+      "japanese": "音楽",
+      "furigana": "{音楽|おんがく}",
+      "indonesian": "musik",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-ongaku.mp3",
+      "tags": [
+        "waktu luang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ryokou",
+      "japanese": "旅行",
+      "furigana": "{旅行|りょこう}",
+      "indonesian": "perjalanan, wisata",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-ryokou.mp3",
+      "tags": [
+        "waktu luang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-shashin",
+      "japanese": "写真",
+      "furigana": "{写真|しゃしん}",
+      "indonesian": "foto",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shashin.mp3",
+      "tags": [
+        "waktu luang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-tanjoubi",
+      "japanese": "誕生日",
+      "furigana": "{誕生日|たんじょうび}",
+      "indonesian": "ulang tahun",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-tanjoubi.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-purezento",
+      "japanese": "プレゼント",
+      "furigana": "{プレ|ぷれ}{ゼント|ぜんと}",
+      "indonesian": "hadiah, kado",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-purezento.mp3",
+      "tags": [
+        "orang"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-shumi",
+      "japanese": "趣味",
+      "furigana": "{趣味|しゅみ}",
+      "indonesian": "hobi",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-shumi.mp3",
+      "tags": [
+        "waktu luang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sanpo",
+      "japanese": "散歩",
+      "furigana": "{散歩|さんぽ}",
+      "indonesian": "jalan kaki santai",
+      "pos": "noun",
+      "usage": "散歩する — \"jalan-jalan (kaki) santai\". \"Jalan-jalan\" ke tempat wisata adalah 旅行 atau 遊びに行く.",
+      "audio": "audio/ja/words/w-sanpo.mp3",
+      "tags": [
+        "waktu luang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-yotei",
+      "japanese": "予定",
+      "furigana": "{予定|よてい}",
+      "indonesian": "rencana, jadwal",
+      "pos": "noun",
+      "audio": "audio/ja/words/w-yotei.mp3",
+      "tags": [
+        "waktu"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-tanoshimi",
+      "japanese": "楽しみ",
+      "furigana": "{楽|たの}しみ",
+      "indonesian": "sesuatu yang dinanti-nanti",
+      "pos": "noun",
+      "usage": "楽しみにしてる — \"aku menantikannya\", \"tidak sabar menunggu\".",
+      "audio": "audio/ja/words/w-tanoshimi.mp3",
+      "tags": [
+        "perasaan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-dekakeru",
+      "japanese": "出かける",
+      "furigana": "{出|で}かける",
+      "indonesian": "pergi keluar",
+      "pos": "verb",
+      "forms": {
+        "masu": "{出|で}かけます",
+        "te": "{出|で}かけて"
+      },
+      "audio": "audio/ja/words/w-dekakeru.mp3",
+      "tags": [
+        "gerak"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-utau",
+      "japanese": "歌う",
+      "furigana": "{歌|うた}う",
+      "indonesian": "bernyanyi",
+      "pos": "verb",
+      "forms": {
+        "masu": "{歌|うた}います",
+        "te": "{歌|うた}って"
+      },
+      "audio": "audio/ja/words/w-utau.mp3",
+      "tags": [
+        "waktu luang"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-oyogu",
+      "japanese": "泳ぐ",
+      "furigana": "{泳|およ}ぐ",
+      "indonesian": "berenang",
+      "pos": "verb",
+      "forms": {
+        "masu": "{泳|およ}ぎます",
+        "te": "{泳|およ}いで"
+      },
+      "audio": "audio/ja/words/w-oyogu.mp3",
+      "tags": [
+        "waktu luang"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

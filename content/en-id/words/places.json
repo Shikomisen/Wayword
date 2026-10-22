@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "id": "words-places",
+  "title": "Places & Getting Around",
+  "description": "Where you'll be going, from the market to the airport, and left, right and straight on to get there.",
+  "items": [
+    {
+      "id": "w-pasar",
+      "indonesian": "pasar",
+      "english": "market",
+      "pos": "noun",
+      "registerNotes": "Pasar malam is a night market. A supermarket is just supermarket in speech.",
+      "cultureNote": "At a traditional pasar prices are open to bargaining, unlike in shops and minimarkets.",
+      "audio": "audio/id/words/w-pasar.mp3",
+      "tags": [
+        "places",
+        "shopping"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-warung",
+      "indonesian": "warung",
+      "english": "small eatery, food stall; small shop",
+      "pos": "noun",
+      "registerNotes": "A warung makan sells meals, a warung kopi (warkop) coffee and snacks, and a warteg cheap home-style food you point to.",
+      "cultureNote": "At many warungs you eat first and pay as you leave, saying what you had.",
+      "audio": "audio/id/words/w-warung.mp3",
+      "tags": [
+        "places",
+        "food"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bandara",
+      "indonesian": "bandara",
+      "english": "airport",
+      "pos": "noun",
+      "registerNotes": "Short for bandar udara (air port), which is what the signs say.",
+      "audio": "audio/id/words/w-bandara.mp3",
+      "tags": [
+        "places",
+        "travel"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-stasiun",
+      "indonesian": "stasiun",
+      "english": "(train) station",
+      "pos": "noun",
+      "pitfallNote": "Only for trains. A bus station is a terminal, and a bus stop is a halte.",
+      "audio": "audio/id/words/w-stasiun.mp3",
+      "tags": [
+        "places",
+        "travel"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-halte",
+      "indonesian": "halte",
+      "english": "bus stop",
+      "pos": "noun",
+      "registerNotes": "From Dutch, like kantor and handuk. Haltenya di mana? (Where's the bus stop?)",
+      "audio": "audio/id/words/w-halte.mp3",
+      "tags": [
+        "places",
+        "travel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-hotel",
+      "indonesian": "hotel",
+      "english": "hotel",
+      "pos": "noun",
+      "registerNotes": "In names the kind of place comes first: Hotel Melati, Pasar Baru, Bank Mandiri. A cheaper guesthouse is a losmen or penginapan.",
+      "audio": "audio/id/words/w-hotel.mp3",
+      "tags": [
+        "places",
+        "travel"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-rumah-sakit",
+      "indonesian": "rumah sakit",
+      "english": "hospital",
+      "pos": "noun",
+      "registerNotes": "Literally sick house. For something minor, a klinik or the local puskesmas (community health centre) is quicker.",
+      "audio": "audio/id/words/w-rumah-sakit.mp3",
+      "tags": [
+        "places",
+        "health"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-apotek",
+      "indonesian": "apotek",
+      "english": "pharmacy, chemist",
+      "pos": "noun",
+      "registerNotes": "Spelled apotek, though older signs say apotik. The pharmacist can suggest something for a minor problem if you describe it.",
+      "audio": "audio/id/words/w-apotek.mp3",
+      "tags": [
+        "places",
+        "health"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-bank",
+      "indonesian": "bank",
+      "english": "bank",
+      "pos": "noun",
+      "registerNotes": "A cash machine is an ATM, said a te em: Ada ATM dekat sini?",
+      "audio": "audio/id/words/w-bank.mp3",
+      "tags": [
+        "places",
+        "money"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kantor",
+      "indonesian": "kantor",
+      "english": "office",
+      "pos": "noun",
+      "registerNotes": "Part of many place names: kantor polisi (police station), kantor pos (post office), kantor imigrasi (immigration office).",
+      "audio": "audio/id/words/w-kantor.mp3",
+      "tags": [
+        "places",
+        "work"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-sekolah",
+      "indonesian": "sekolah",
+      "english": "school; to go to school",
+      "pos": "noun",
+      "registerNotes": "Also a verb: Anaknya masih sekolah? (Is your child still at school?)",
+      "audio": "audio/id/words/w-sekolah.mp3",
+      "tags": [
+        "places",
+        "study"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-pantai",
+      "indonesian": "pantai",
+      "english": "beach",
+      "pos": "noun",
+      "registerNotes": "Pantai is the beach; the sea itself is laut. In names Pantai comes first: Pantai Kuta.",
+      "audio": "audio/id/words/w-pantai.mp3",
+      "tags": [
+        "places",
+        "nature"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-masjid",
+      "indonesian": "masjid",
+      "english": "mosque",
+      "pos": "noun",
+      "cultureNote": "The call to prayer (azan) sounds from the masjid five times a day. Visitors take off their shoes and cover their arms and legs.",
+      "audio": "audio/id/words/w-masjid.mp3",
+      "tags": [
+        "places",
+        "religion"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-gereja",
+      "indonesian": "gereja",
+      "english": "church",
+      "pos": "noun",
+      "cultureNote": "About one in ten Indonesians is Christian, and in parts of the east, such as Flores and North Sulawesi, most people are.",
+      "audio": "audio/id/words/w-gereja.mp3",
+      "tags": [
+        "places",
+        "religion"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kiri",
+      "indonesian": "kiri",
+      "english": "left",
+      "pos": "noun",
+      "registerNotes": "Kiri, Pak, or just Kiri, is how you ask a minibus or bus driver to pull over and let you off.",
+      "cultureNote": "The left hand is for the toilet, so give, take and eat with your right.",
+      "audio": "audio/id/words/w-kiri.mp3",
+      "tags": [
+        "directions",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kanan",
+      "indonesian": "kanan",
+      "english": "right (direction)",
+      "pos": "noun",
+      "registerNotes": "Di sebelah kanan means on the right; belok kanan is turn right.",
+      "pitfallNote": "Only the direction. Right as in correct is benar or betul.",
+      "audio": "audio/id/words/w-kanan.mp3",
+      "tags": [
+        "directions",
+        "essential"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-lurus",
+      "indonesian": "lurus",
+      "english": "straight (on)",
+      "pos": "adjective",
+      "registerNotes": "Lurus saja or lurus terus means keep going straight.",
+      "audio": "audio/id/words/w-lurus.mp3",
+      "tags": [
+        "directions"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-depan",
+      "indonesian": "depan",
+      "english": "front; in front (of)",
+      "pos": "noun",
+      "registerNotes": "Di depan hotel is in front of the hotel; behind is di belakang, next to is di sebelah. With time, depan means next: minggu depan.",
+      "audio": "audio/id/words/w-depan.mp3",
+      "tags": [
+        "directions"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

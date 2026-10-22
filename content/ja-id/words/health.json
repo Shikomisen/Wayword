@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "id": "words-health",
+  "title": "健康・病院",
+  "description": "症状、薬、クリニック。医師や薬剤師にどこが悪いかを伝え、言われたことを理解するための言葉。",
+  "items": [
+    {
+      "id": "w-batuk",
+      "indonesian": "batuk",
+      "japanese": "咳；咳をする",
+      "pos": "noun",
+      "registerNotes": "batuk kering は空咳、batuk berdahak は痰の出る咳。obat batuk は咳止め薬。",
+      "audio": "audio/id/words/w-batuk.mp3",
+      "tags": [
+        "健康",
+        "症状"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-pilek",
+      "indonesian": "pilek",
+      "japanese": "鼻水、鼻風邪",
+      "pos": "noun",
+      "registerNotes": "Saya pilek（鼻風邪をひいています）。鼻づまりは hidung tersumbat。",
+      "audio": "audio/id/words/w-pilek.mp3",
+      "tags": [
+        "健康",
+        "症状"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-flu",
+      "indonesian": "flu",
+      "japanese": "風邪、インフルエンザ",
+      "pos": "noun",
+      "pitfallNote": "インドネシアでは、鼻水が出る普通の風邪にも flu を使います。kena flu（風邪をひく）と言われても、インフルエンザとは限りません。",
+      "audio": "audio/id/words/w-flu.mp3",
+      "tags": [
+        "健康",
+        "症状"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-masuk-angin",
+      "indonesian": "masuk angin",
+      "japanese": "（冷えからくる）体調不良、だるさ",
+      "pos": "phrase",
+      "cultureNote": "直訳は「風が入る」。雨や夜風、扇風機のせいだとされ、体の痛み、お腹の張り、だるさなどを指します。家庭での治し方は kerokan：オイルを塗った背中をコインでこする民間療法で、赤い筋が残ります。",
+      "audio": "audio/id/words/w-masuk-angin.mp3",
+      "tags": [
+        "健康",
+        "症状",
+        "文化"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-sakit-kepala",
+      "indonesian": "sakit kepala",
+      "japanese": "頭痛",
+      "pos": "noun",
+      "registerNotes": "sakit のあとに体の部位を続けると、その部分の痛みになります：sakit gigi（歯痛）、sakit tenggorokan（のどの痛み）。",
+      "pitfallNote": "pusing は「めまいがする」ですが、頭痛の意味でもよく使われます。頭の痛みをはっきり言うなら sakit kepala。",
+      "audio": "audio/id/words/w-sakit-kepala.mp3",
+      "tags": [
+        "健康",
+        "症状"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sakit-perut",
+      "indonesian": "sakit perut",
+      "japanese": "腹痛",
+      "pos": "noun",
+      "registerNotes": "perut は「お腹、胃」。mulas はトイレに駆け込みたくなるような、お腹がしくしく痛む感じ。",
+      "audio": "audio/id/words/w-sakit-perut.mp3",
+      "tags": [
+        "健康",
+        "症状"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-diare",
+      "indonesian": "diare",
+      "japanese": "下痢",
+      "pos": "noun",
+      "registerNotes": "病院や薬局で使う普通の言葉。mencret は露骨でくだけた言い方です。経口補水塩の Oralit は、どの apotek（薬局）でも売っています。",
+      "audio": "audio/id/words/w-diare.mp3",
+      "tags": [
+        "健康",
+        "症状"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mual",
+      "indonesian": "mual",
+      "japanese": "吐き気がする、むかむかする",
+      "pos": "adjective",
+      "registerNotes": "Saya mual（吐き気がします）。船酔いは mabuk laut ですが、日本語の「酔う」と同じく、mabuk だけなら「酒に酔う」の意味です。",
+      "audio": "audio/id/words/w-mual.mp3",
+      "tags": [
+        "健康",
+        "症状"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-muntah",
+      "indonesian": "muntah",
+      "japanese": "吐く、もどす",
+      "pos": "verb",
+      "registerNotes": "普通の言葉で、医者に言っても問題ありません：Saya muntah dua kali（2回吐きました）。",
+      "audio": "audio/id/words/w-muntah.mp3",
+      "tags": [
+        "健康",
+        "症状"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-luka",
+      "indonesian": "luka",
+      "japanese": "傷、けが",
+      "pos": "noun",
+      "registerNotes": "terluka は「けがをしている」、luka bakar は「やけど」。バイクで転んでできたすり傷は lecet。",
+      "audio": "audio/id/words/w-luka.mp3",
+      "tags": [
+        "健康",
+        "けが"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-gatal",
+      "indonesian": "gatal",
+      "japanese": "かゆい",
+      "pos": "adjective",
+      "registerNotes": "gatal-gatal はかゆい発疹。蚊に刺された跡は gigitan nyamuk。",
+      "audio": "audio/id/words/w-gatal.mp3",
+      "tags": [
+        "健康",
+        "症状"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-alergi",
+      "indonesian": "alergi",
+      "japanese": "アレルギー；アレルギーがある",
+      "pos": "noun",
+      "pitfallNote": "「〜に」にあたる言葉は不要です：Saya alergi udang（エビのアレルギーがあります）。kacang はピーナッツ、ナッツ、豆すべてを指すので、ピーナッツなら kacang tanah と言いましょう。",
+      "audio": "audio/id/words/w-alergi.mp3",
+      "tags": [
+        "健康",
+        "必須"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-resep",
+      "indonesian": "resep",
+      "japanese": "処方箋；レシピ",
+      "pos": "noun",
+      "pitfallNote": "「レシピ」も同じ言葉なので、文脈で判断します。obat resep は処方箋が必要な薬、obat bebas は処方箋なしで買える市販薬です。",
+      "audio": "audio/id/words/w-resep.mp3",
+      "tags": [
+        "健康",
+        "薬"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-klinik",
+      "indonesian": "klinik",
+      "japanese": "クリニック、診療所",
+      "pos": "noun",
+      "cultureNote": "ふだんの病気なら、いきなり病院ではなく、klinik か地域の puskesmas（保健センター）に行くのが普通です。",
+      "audio": "audio/id/words/w-klinik.mp3",
+      "tags": [
+        "健康",
+        "場所"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-perawat",
+      "indonesian": "perawat",
+      "japanese": "看護師",
+      "pos": "noun",
+      "forms": {
+        "root": "rawat"
+      },
+      "registerNotes": "女性の看護師には Suster または Sus、男性には Mas と呼びかけるのが一般的です。rawat inap は入院、rawat jalan は外来（通院）。",
+      "audio": "audio/id/words/w-perawat.mp3",
+      "tags": [
+        "健康",
+        "人"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-suntik",
+      "indonesian": "suntik",
+      "japanese": "注射；注射する",
+      "pos": "noun",
+      "registerNotes": "disuntik は「注射される」：Perlu disuntik?（注射が必要ですか？）。予防接種は suntik vaksin または vaksinasi。",
+      "audio": "audio/id/words/w-suntik.mp3",
+      "tags": [
+        "健康",
+        "薬"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-tensi",
+      "indonesian": "tensi",
+      "japanese": "血圧",
+      "pos": "noun",
+      "cultureNote": "クリニックでは、何の用件で来ても、まず血圧を測ることが多いです：Cek tensi dulu, ya（先に血圧を測りますね）。正式な言葉は tekanan darah。",
+      "audio": "audio/id/words/w-tensi.mp3",
+      "tags": [
+        "健康",
+        "医者"
+      ],
+      "difficulty": 3,
+      "pitfallNote": "Tensinya tinggi は「テンションが高い」ではなく「血圧が高い」という意味です。"
+    },
+    {
+      "id": "w-periksa",
+      "indonesian": "periksa",
+      "japanese": "診察する、調べる",
+      "pos": "verb",
+      "registerNotes": "periksa ke dokter は「医者に診てもらう」、diperiksa は「診察を受ける」。書き言葉では memeriksa、話し言葉では cek もよく使います。",
+      "audio": "audio/id/words/w-periksa.mp3",
+      "tags": [
+        "健康",
+        "医者"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-istirahat",
+      "indonesian": "istirahat",
+      "japanese": "休む；休憩",
+      "pos": "verb",
+      "registerNotes": "医者は Banyak istirahat, ya（よく休んでくださいね）と言います。jam istirahat は昼休みや休憩時間。",
+      "audio": "audio/id/words/w-istirahat.mp3",
+      "tags": [
+        "健康",
+        "医者"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-sembuh",
+      "indonesian": "sembuh",
+      "japanese": "治る、回復する",
+      "pos": "verb",
+      "cultureNote": "Semoga cepat sembuh（早く良くなりますように）は、病気の人に会ったときやメッセージで誰もが言う言葉。日本語の「お大事に」にあたります。",
+      "audio": "audio/id/words/w-sembuh.mp3",
+      "tags": [
+        "健康"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kambuh",
+      "indonesian": "kambuh",
+      "japanese": "（持病が）再発する、ぶり返す",
+      "pos": "verb",
+      "registerNotes": "持病がまた出たときに使います：Maag saya kambuh（胃炎がぶり返した）は、よく耳にするぼやきです。",
+      "audio": "audio/id/words/w-kambuh.mp3",
+      "tags": [
+        "健康",
+        "症状"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "w-tablet",
+      "indonesian": "tablet",
+      "japanese": "錠剤",
+      "pos": "noun",
+      "audio": "audio/id/words/w-tablet.mp3",
+      "tags": [
+        "健康",
+        "薬"
+      ],
+      "difficulty": 2,
+      "registerNotes": "日本語と同じく、錠剤でも薬は「飲む」：minum obat。飲み方は tiga kali sehari satu tablet（1日3回、1回1錠）のように指示されます。"
+    },
+    {
+      "id": "w-sirup",
+      "indonesian": "sirup",
+      "japanese": "シロップ（薬）；シロップ飲料",
+      "pos": "noun",
+      "registerNotes": "obat sirup は液体の薬で、sendok takar（計量スプーン）で量ります。sirup は、お客さん、特に Lebaran の来客に出す、水で割る甘い飲み物のことも指します。",
+      "pitfallNote": "辞書のつづりは sirop ですが、ラベルも薬局も、ほとんどの人も sirup と書き、そう言います。",
+      "audio": "audio/id/words/w-sirup.mp3",
+      "tags": [
+        "健康",
+        "薬"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-salep",
+      "indonesian": "salep",
+      "japanese": "軟膏、塗り薬",
+      "pos": "noun",
+      "registerNotes": "ラベルには Oleskan tipis-tipis（薄く塗ってください）と書いてあります。",
+      "audio": "audio/id/words/w-salep.mp3",
+      "tags": [
+        "健康",
+        "薬"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "w-gigi",
+      "indonesian": "gigi",
+      "japanese": "歯",
+      "pos": "noun",
+      "registerNotes": "sakit gigi は歯痛、dokter gigi は歯医者。sikat gigi は「歯ブラシ」と「歯をみがく」の両方の意味です。",
+      "audio": "audio/id/words/w-gigi.mp3",
+      "tags": [
+        "健康",
+        "体"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mata",
+      "indonesian": "mata",
+      "japanese": "目",
+      "pos": "noun",
+      "registerNotes": "sakit mata は目の痛みや炎症、obat tetes mata は目薬。mata はほかの言葉にも出てきます：matahari（太陽）、mata uang（通貨）。",
+      "audio": "audio/id/words/w-mata.mp3",
+      "tags": [
+        "健康",
+        "体"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

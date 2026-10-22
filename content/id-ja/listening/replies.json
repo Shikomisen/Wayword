@@ -1,0 +1,528 @@
+{
+  "schemaVersion": 1,
+  "id": "replies",
+  "title": "Mereka bilang apa?",
+  "description": "Kalimat yang diucapkan staf dan teman kepadamu, dengan kecepatan alami dan dalam bahasa Jepang sopan. Dengarkan, pilih artinya, lalu pelajari cara menjawabnya.",
+  "items": [
+    {
+      "id": "lr-01",
+      "speaker": "staff",
+      "japanese": "ポイントカードはお持ちですか。",
+      "furigana": "ポイントカードはお{持|も}ちですか。",
+      "indonesian": "Punya kartu poin?",
+      "reply": {
+        "japanese": "いいえ、持っていません。",
+        "furigana": "いいえ、{持|も}っていません。",
+        "indonesian": "Tidak, tidak punya."
+      },
+      "note": "Ditanyakan di hampir setiap kasir, mirip “ada kartu member?” di minimarket Indonesia. お持ちですか adalah “punya?” dalam bentuk hormat.",
+      "audio": "audio/ja/listening/lr-01.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-02",
+      "speaker": "staff",
+      "japanese": "お箸はおつけしますか。",
+      "furigana": "お{箸|はし}はおつけしますか。",
+      "indonesian": "Perlu sumpit?",
+      "reply": {
+        "japanese": "はい、お願いします。",
+        "furigana": "はい、お{願|ねが}いします。",
+        "indonesian": "Ya, tolong."
+      },
+      "audio": "audio/ja/listening/lr-02.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-03",
+      "speaker": "staff",
+      "japanese": "店内でお召し上がりですか。",
+      "furigana": "{店内|てんない}でお{召|め}し{上|あ}がりですか。",
+      "indonesian": "Makan di sini?",
+      "reply": {
+        "japanese": "いいえ、持ち帰りで。",
+        "furigana": "いいえ、{持|も}ち{帰|かえ}りで。",
+        "indonesian": "Tidak, dibawa pulang."
+      },
+      "note": "召し上がる adalah “makan” dalam bentuk hormat. Pertanyaan lain yang akan kamu dengar adalah お持ち帰りですか (dibawa pulang?).",
+      "audio": "audio/ja/listening/lr-03.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-04",
+      "speaker": "staff",
+      "japanese": "一括でよろしいですか。",
+      "furigana": "{一括|いっかつ}でよろしいですか。",
+      "indonesian": "Sekali bayar, tidak dicicil?",
+      "reply": {
+        "japanese": "はい、一括で。",
+        "furigana": "はい、{一括|いっかつ}で。",
+        "indonesian": "Ya, sekali bayar."
+      },
+      "note": "Kartu kredit Jepang bisa membagi pembayaran menjadi cicilan. Pengunjung selalu menjawab 一括 (sekali bayar).",
+      "audio": "audio/ja/listening/lr-04.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lr-05",
+      "speaker": "staff",
+      "japanese": "申し訳ございません、品切れでございます。",
+      "furigana": "{申|もう}し{訳|わけ}ございません、{品切|しなぎ}れでございます。",
+      "indonesian": "Mohon maaf, stoknya habis.",
+      "reply": {
+        "japanese": "そうですか。じゃあ、これをください。",
+        "furigana": "そうですか。じゃあ、これをください。",
+        "indonesian": "Oh, begitu. Kalau begitu, yang ini saja."
+      },
+      "note": "でございます adalah です yang sangat sopan, yang dipakai staf toko.",
+      "audio": "audio/ja/listening/lr-05.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lr-06",
+      "speaker": "staff",
+      "japanese": "こちらにタッチしてください。",
+      "furigana": "こちらにタッチしてください。",
+      "indonesian": "Silakan tempelkan di sini.",
+      "note": "Untuk kartu atau ponsel di mesin pembaca. タッチ artinya menempelkan (tap), seperti tap kartu e-money, bukan layar sentuh.",
+      "audio": "audio/ja/listening/lr-06.mp3",
+      "tags": [
+        "toko"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-07",
+      "speaker": "server",
+      "japanese": "ご注文はお決まりですか。",
+      "furigana": "ご{注文|ちゅうもん}はお{決|き}まりですか。",
+      "indonesian": "Sudah siap memesan?",
+      "reply": {
+        "japanese": "もう少し待ってください。",
+        "furigana": "もう{少|すこ}し{待|ま}ってください。",
+        "indonesian": "Tunggu sebentar lagi, ya."
+      },
+      "audio": "audio/ja/listening/lr-07.mp3",
+      "tags": [
+        "restoran"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-08",
+      "speaker": "server",
+      "japanese": "お飲み物はいかがなさいますか。",
+      "furigana": "お{飲|の}み{物|もの}はいかがなさいますか。",
+      "indonesian": "Mau minum apa?",
+      "reply": {
+        "japanese": "生ビールをお願いします。",
+        "furigana": "{生|なま}ビールをお{願|ねが}いします。",
+        "indonesian": "Bir draft, ya."
+      },
+      "note": "なさる adalah する dalam bentuk hormat: untuk minumannya, mau bagaimana?",
+      "audio": "audio/ja/listening/lr-08.mp3",
+      "tags": [
+        "restoran"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lr-09",
+      "speaker": "server",
+      "japanese": "ただいま満席でございます。",
+      "furigana": "ただいま{満席|まんせき}でございます。",
+      "indonesian": "Saat ini kursinya penuh.",
+      "reply": {
+        "japanese": "どのくらい待ちますか。",
+        "furigana": "どのくらい{待|ま}ちますか。",
+        "indonesian": "Kira-kira berapa lama menunggu?"
+      },
+      "audio": "audio/ja/listening/lr-09.mp3",
+      "tags": [
+        "restoran"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "lr-10",
+      "speaker": "server",
+      "japanese": "以上でよろしいですか。",
+      "furigana": "{以上|いじょう}でよろしいですか。",
+      "indonesian": "Sudah itu saja?",
+      "reply": {
+        "japanese": "はい、以上です。",
+        "furigana": "はい、{以上|いじょう}です。",
+        "indonesian": "Ya, itu saja."
+      },
+      "note": "Ditanyakan di akhir pesanan, dan sekali lagi di kasir.",
+      "audio": "audio/ja/listening/lr-10.mp3",
+      "tags": [
+        "restoran"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-11",
+      "speaker": "server",
+      "japanese": "ラストオーダーになりますが、よろしいですか。",
+      "furigana": "ラストオーダーになりますが、よろしいですか。",
+      "indonesian": "Ini pesanan terakhir. Ada tambahan?",
+      "reply": {
+        "japanese": "大丈夫です。",
+        "furigana": "{大丈夫|だいじょうぶ}です。",
+        "indonesian": "Tidak, cukup, terima kasih."
+      },
+      "audio": "audio/ja/listening/lr-11.mp3",
+      "tags": [
+        "restoran"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-12",
+      "speaker": "server",
+      "japanese": "お支払いはどうなさいますか。",
+      "furigana": "お{支払|しはら}いはどうなさいますか。",
+      "indonesian": "Mau bayar dengan apa?",
+      "reply": {
+        "japanese": "カードでお願いします。",
+        "furigana": "カードでお{願|ねが}いします。",
+        "indonesian": "Pakai kartu, ya."
+      },
+      "audio": "audio/ja/listening/lr-12.mp3",
+      "tags": [
+        "restoran"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-13",
+      "speaker": "receptionist",
+      "japanese": "こちらにご記入をお願いします。",
+      "furigana": "こちらにご{記入|きにゅう}をお{願|ねが}いします。",
+      "indonesian": "Silakan isi di sini.",
+      "reply": {
+        "japanese": "ペンをお借りしてもいいですか。",
+        "furigana": "ペンをお{借|か}りしてもいいですか。",
+        "indonesian": "Boleh pinjam pulpen?"
+      },
+      "audio": "audio/ja/listening/lr-13.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-14",
+      "speaker": "receptionist",
+      "japanese": "お部屋は八階でございます。",
+      "furigana": "お{部屋|へや}は{八階|はっかい}でございます。",
+      "indonesian": "Kamarnya di lantai delapan.",
+      "reply": {
+        "japanese": "エレベーターはどこですか。",
+        "furigana": "エレベーターはどこですか。",
+        "indonesian": "Liftnya di mana?"
+      },
+      "audio": "audio/ja/listening/lr-14.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-15",
+      "speaker": "receptionist",
+      "japanese": "朝食は七時から九時半までです。",
+      "furigana": "{朝食|ちょうしょく}は{七時|しちじ}から{九時半|くじはん}までです。",
+      "indonesian": "Sarapan dari pukul 7 sampai pukul 9.30.",
+      "audio": "audio/ja/listening/lr-15.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-16",
+      "speaker": "receptionist",
+      "japanese": "少々お待ちください。",
+      "furigana": "{少々|しょうしょう}お{待|ま}ちください。",
+      "indonesian": "Mohon tunggu sebentar.",
+      "note": "“Sebentar” yang sopan. 少々 adalah ちょっと versi formal.",
+      "audio": "audio/ja/listening/lr-16.mp3",
+      "tags": [
+        "hotel"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-17",
+      "speaker": "staff",
+      "japanese": "次の電車は二十分後です。",
+      "furigana": "{次|つぎ}の{電車|でんしゃ}は{二十分後|にじゅっぷんご}です。",
+      "indonesian": "Kereta berikutnya dua puluh menit lagi.",
+      "audio": "audio/ja/listening/lr-17.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-18",
+      "speaker": "staff",
+      "japanese": "人身事故のため、運転を見合わせております。",
+      "furigana": "{人身事故|じんしんじこ}のため、{運転|うんてん}を{見合|みあ}わせております。",
+      "indonesian": "Kereta dihentikan sementara karena ada kecelakaan di jalur.",
+      "reply": {
+        "japanese": "別の行き方はありますか。",
+        "furigana": "{別|べつ}の{行|い}き{方|かた}はありますか。",
+        "indonesian": "Ada cara lain untuk ke sana?"
+      },
+      "note": "人身事故 biasanya berarti ada orang yang tertabrak kereta. Penundaannya bisa lama, jadi cari jalur lain.",
+      "audio": "audio/ja/listening/lr-18.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 5
+    },
+    {
+      "id": "lr-19",
+      "speaker": "driver",
+      "japanese": "どちらまで？",
+      "furigana": "どちらまで？",
+      "indonesian": "Ke mana?",
+      "reply": {
+        "japanese": "東京駅までお願いします。",
+        "furigana": "{東京駅|とうきょうえき}までお{願|ねが}いします。",
+        "indonesian": "Ke Stasiun Tokyo, ya."
+      },
+      "audio": "audio/ja/listening/lr-19.mp3",
+      "tags": [
+        "jalan-jalan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-20",
+      "speaker": "pharmacist",
+      "japanese": "一日二回、朝と夜に飲んでください。",
+      "furigana": "{一日|いちにち}{二回|にかい}、{朝|あさ}と{夜|よる}に{飲|の}んでください。",
+      "indonesian": "Diminum dua kali sehari, pagi dan malam.",
+      "audio": "audio/ja/listening/lr-20.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-21",
+      "speaker": "doctor",
+      "japanese": "口を開けてください。",
+      "furigana": "{口|くち}を{開|あ}けてください。",
+      "indonesian": "Silakan buka mulutnya.",
+      "audio": "audio/ja/listening/lr-21.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-22",
+      "speaker": "doctor",
+      "japanese": "大きく息を吸ってください。",
+      "furigana": "{大|おお}きく{息|いき}を{吸|す}ってください。",
+      "indonesian": "Tarik napas dalam-dalam.",
+      "audio": "audio/ja/listening/lr-22.mp3",
+      "tags": [
+        "kesehatan"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-23",
+      "speaker": "friend",
+      "japanese": "久しぶり！元気だった？",
+      "furigana": "{久|ひさ}しぶり！{元気|げんき}だった？",
+      "indonesian": "Lama tak jumpa! Apa kabar?",
+      "reply": {
+        "japanese": "うん、元気だよ。そっちは？",
+        "furigana": "うん、{元気|げんき}だよ。そっちは？",
+        "indonesian": "Iya, baik. Kamu?"
+      },
+      "audio": "audio/ja/listening/lr-23.mp3",
+      "tags": [
+        "teman"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-24",
+      "speaker": "friend",
+      "japanese": "今どこ？",
+      "furigana": "{今|いま}どこ？",
+      "indonesian": "Sekarang di mana?",
+      "reply": {
+        "japanese": "もうすぐ着くよ。",
+        "furigana": "もうすぐ{着|つ}くよ。",
+        "indonesian": "Sebentar lagi sampai."
+      },
+      "audio": "audio/ja/listening/lr-24.mp3",
+      "tags": [
+        "teman"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-25",
+      "speaker": "friend",
+      "japanese": "ごめん、ちょっと遅れる。",
+      "furigana": "ごめん、ちょっと{遅|おく}れる。",
+      "indonesian": "Maaf, aku agak telat.",
+      "reply": {
+        "japanese": "大丈夫、ゆっくりでいいよ。",
+        "furigana": "{大丈夫|だいじょうぶ}、ゆっくりでいいよ。",
+        "indonesian": "Tidak apa-apa, santai saja."
+      },
+      "audio": "audio/ja/listening/lr-25.mp3",
+      "tags": [
+        "teman"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-26",
+      "speaker": "friend",
+      "japanese": "何食べたい？",
+      "furigana": "{何|なに}{食|た}べたい？",
+      "indonesian": "Mau makan apa?",
+      "reply": {
+        "japanese": "ラーメンがいいな。",
+        "furigana": "ラーメンがいいな。",
+        "indonesian": "Aku mau ramen."
+      },
+      "audio": "audio/ja/listening/lr-26.mp3",
+      "tags": [
+        "teman"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-27",
+      "speaker": "friend",
+      "japanese": "割り勘でいい？",
+      "furigana": "{割|わ}り{勘|かん}でいい？",
+      "indonesian": "Bayarnya dibagi rata, ya?",
+      "reply": {
+        "japanese": "うん、いいよ。",
+        "furigana": "うん、いいよ。",
+        "indonesian": "Iya, boleh."
+      },
+      "note": "割り勘 adalah membagi tagihan sama rata, seperti patungan: sangat umum di antara teman di Jepang.",
+      "audio": "audio/ja/listening/lr-27.mp3",
+      "tags": [
+        "teman"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-28",
+      "speaker": "friend",
+      "japanese": "明日、空いてる？",
+      "furigana": "{明日|あした}、{空|あ}いてる？",
+      "indonesian": "Besok kosong?",
+      "reply": {
+        "japanese": "午後なら空いてるよ。",
+        "furigana": "{午後|ごご}なら{空|あ}いてるよ。",
+        "indonesian": "Kalau sore, aku kosong."
+      },
+      "audio": "audio/ja/listening/lr-28.mp3",
+      "tags": [
+        "teman"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-29",
+      "speaker": "friend",
+      "japanese": "それ、どこで買ったの？",
+      "furigana": "それ、どこで{買|か}ったの？",
+      "indonesian": "Itu belinya di mana?",
+      "reply": {
+        "japanese": "駅前の店だよ。",
+        "furigana": "{駅前|えきまえ}の{店|みせ}だよ。",
+        "indonesian": "Di toko depan stasiun."
+      },
+      "audio": "audio/ja/listening/lr-29.mp3",
+      "tags": [
+        "teman"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-30",
+      "speaker": "friend",
+      "japanese": "日本語、うまくなったね！",
+      "furigana": "{日本語|にほんご}、うまくなったね！",
+      "indonesian": "Bahasa Jepangmu makin jago!",
+      "reply": {
+        "japanese": "ありがとう。毎日練習してるんだ。",
+        "furigana": "ありがとう。{毎日|まいにち}{練習|れんしゅう}してるんだ。",
+        "indonesian": "Terima kasih. Aku latihan setiap hari."
+      },
+      "audio": "audio/ja/listening/lr-30.mp3",
+      "tags": [
+        "teman"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "lr-31",
+      "speaker": "friend",
+      "japanese": "気をつけて帰ってね。",
+      "furigana": "{気|き}をつけて{帰|かえ}ってね。",
+      "indonesian": "Hati-hati pulangnya, ya.",
+      "reply": {
+        "japanese": "ありがとう、またね。",
+        "furigana": "ありがとう、またね。",
+        "indonesian": "Terima kasih, sampai nanti."
+      },
+      "audio": "audio/ja/listening/lr-31.mp3",
+      "tags": [
+        "teman"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "lr-32",
+      "speaker": "neighbour",
+      "japanese": "いってらっしゃい。",
+      "furigana": "いってらっしゃい。",
+      "indonesian": "Selamat jalan. (kepada orang yang berangkat)",
+      "reply": {
+        "japanese": "いってきます。",
+        "furigana": "いってきます。",
+        "indonesian": "Aku berangkat. (diucapkan saat pergi)"
+      },
+      "note": "Diucapkan oleh orang yang tinggal. Orang yang pergi menjawab いってきます. Di Jepang, pasangan ini diucapkan setiap kali ada yang keluar rumah.",
+      "audio": "audio/ja/listening/lr-32.mp3",
+      "tags": [
+        "teman"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

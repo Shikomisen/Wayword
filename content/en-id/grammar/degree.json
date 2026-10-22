@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-degree",
+  "connector": "sangat, sekali…",
+  "gloss": "very, a bit, too",
+  "title": "sangat, sekali, banget, agak, terlalu",
+  "pattern": "sangat + word · word + sekali · word + banget (casual) · agak + word · terlalu + word",
+  "explanation": "There are three ways to say 'very', and each has its place. Sangat goes before the describing word and sekali after it: sangat enak and enak sekali both mean 'really delicious'. Banget also goes after, and is the casual one, for friends: enak banget. For 'a bit' or 'rather', put agak in front: agak pedas (a bit spicy). For 'too', it's terlalu: terlalu mahal (too expensive).",
+  "natural": "Enak sekali! is the safe, warm compliment for a host's cooking. Agak softens a complaint politely: Agak mahal, ya (It's a bit pricey, isn't it?).",
+  "stiff": "Each word keeps its side: sekali enak and enak sangat are wrong. Banget to an older stranger sounds too casual, so use sekali there.",
+  "examples": [
+    {
+      "id": "gx-degree-1",
+      "indonesian": "Nasi gorengnya enak sekali.",
+      "english": "The fried rice is really good.",
+      "chunks": [
+        {
+          "t": "Nasi gorengnya ",
+          "w": "w-nasi"
+        },
+        {
+          "t": "enak ",
+          "w": "w-enak"
+        },
+        {
+          "t": "sekali."
+        }
+      ],
+      "gap": {
+        "before": "Nasi gorengnya enak ",
+        "answer": "sekali",
+        "after": ".",
+        "options": [
+          "sekali",
+          "sangat",
+          "agak"
+        ],
+        "why": "After the word, 'very' is sekali; sangat and agak go in front."
+      },
+      "audio": "audio/id/grammar/gx-degree-1.mp3",
+      "tags": [
+        "grammar",
+        "degree"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-degree-2",
+      "indonesian": "Hari ini sangat panas.",
+      "english": "It's very hot today.",
+      "chunks": [
+        {
+          "t": "Hari ini ",
+          "w": "w-hari-ini"
+        },
+        {
+          "t": "sangat ",
+          "w": "w-sangat"
+        },
+        {
+          "t": "panas.",
+          "w": "w-panas"
+        }
+      ],
+      "gap": {
+        "before": "Hari ini ",
+        "answer": "sangat",
+        "after": " panas.",
+        "options": [
+          "sangat",
+          "sekali",
+          "banget"
+        ],
+        "why": "Before the word, 'very' is sangat; sekali and banget go after."
+      },
+      "audio": "audio/id/grammar/gx-degree-2.mp3",
+      "tags": [
+        "grammar",
+        "degree"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-degree-3",
+      "indonesian": "Maaf, Bu, ini terlalu mahal.",
+      "english": "Sorry, it's too expensive.",
+      "chunks": [
+        {
+          "t": "Maaf, Bu, ",
+          "w": "w-ibu"
+        },
+        {
+          "t": "ini ",
+          "w": "w-ini"
+        },
+        {
+          "t": "terlalu "
+        },
+        {
+          "t": "mahal.",
+          "w": "w-mahal"
+        }
+      ],
+      "gap": {
+        "before": "Maaf, Bu, ini ",
+        "answer": "terlalu",
+        "after": " mahal.",
+        "options": [
+          "terlalu",
+          "agak",
+          "sangat"
+        ],
+        "why": "'Too' is terlalu; agak is only 'a bit'."
+      },
+      "audio": "audio/id/grammar/gx-degree-3.mp3",
+      "tags": [
+        "grammar",
+        "degree"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "gx-degree-4",
+      "register": "casual",
+      "indonesian": "Sambalnya agak pedas, tapi enak banget.",
+      "english": "The sambal's a bit spicy, but it's really good.",
+      "chunks": [
+        {
+          "t": "Sambalnya ",
+          "w": "w-sambal"
+        },
+        {
+          "t": "agak "
+        },
+        {
+          "t": "pedas, ",
+          "w": "w-pedas"
+        },
+        {
+          "t": "tapi ",
+          "w": "w-tapi"
+        },
+        {
+          "t": "enak ",
+          "w": "w-enak"
+        },
+        {
+          "t": "banget."
+        }
+      ],
+      "gap": {
+        "before": "Sambalnya ",
+        "answer": "agak",
+        "after": " pedas, tapi enak banget.",
+        "options": [
+          "agak",
+          "terlalu",
+          "banget"
+        ],
+        "why": "'A bit' is agak, before the word; banget would go after."
+      },
+      "audio": "audio/id/grammar/gx-degree-4.mp3",
+      "tags": [
+        "grammar",
+        "degree"
+      ],
+      "difficulty": 2
+    }
+  ]
+}

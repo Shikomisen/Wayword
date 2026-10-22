@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "id": "con-tame",
+  "connector": "ために",
+  "gloss": "untuk, demi",
+  "title": "ために — untuk, demi",
+  "pattern": "bentuk kamus + ために、B ／ kata benda + のために",
+  "explanation": "ために menyatakan tujuan: {日本|にほん}で{働|はたら}くために、{日本語|にほんご}を{勉強|べんきょう}している — aku belajar bahasa Jepang untuk bekerja di Jepang. Urutannya terbalik: “untuk” ada di depan tujuan, sedangkan ために ada di belakangnya, jadi tujuan disebut lebih dulu. Kata kerja memakai bentuk kamus; kata benda memakai の: {家族|かぞく}のために (demi keluarga). Orang yang melakukan keduanya sama, dan tujuannya adalah sesuatu yang kamu pilih untuk dilakukan.",
+  "natural": "Untuk membicarakan tujuan, dan untuk siapa sesuatu dilakukan: {健康|けんこう}のために (demi kesehatan), {彼女|かのじょ}のために (untuk dia). Cocok untuk ragam apa pun.",
+  "stiff": "Untuk hasil yang tidak bisa kamu pilih begitu saja (supaya bisa mengerti, supaya tidak lupa), pakai ように: {忘|わす}れないように. ために terdengar janggal di situ. “Supaya” dalam bahasa Indonesia bisa dipakai untuk keduanya, tapi bahasa Jepang membedakannya.",
+  "examples": [
+    {
+      "id": "cx-tame-1",
+      "japanese": "日本で働くために、日本語を勉強しています。",
+      "furigana": "{日本|にほん}で{働|はたら}くために、{日本語|にほんご}を{勉強|べんきょう}しています。",
+      "indonesian": "Saya belajar bahasa Jepang untuk bekerja di Jepang.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{日本|にほん}で"
+        },
+        {
+          "t": "{働|はたら}くために、",
+          "w": "w-hataraku"
+        },
+        {
+          "t": "{日本語|にほんご}を",
+          "w": "w-nihongo"
+        },
+        {
+          "t": "{勉強|べんきょう}しています。",
+          "w": "w-benkyou"
+        }
+      ],
+      "gap": {
+        "before": "{日本|にほん}で{働|はたら}く",
+        "answer": "ために",
+        "after": "、{日本語|にほんご}を{勉強|べんきょう}しています。",
+        "options": [
+          "ために",
+          "ながら",
+          "けど"
+        ]
+      },
+      "combine": {
+        "a": "{日本|にほん}で{働|はたら}きたいです。",
+        "b": "{日本語|にほんご}を{勉強|べんきょう}しています。",
+        "distractors": [
+          "{働|はたら}きますために、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-tame-1.mp3",
+      "tags": [
+        "kata penghubung",
+        "tame"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-tame-2",
+      "japanese": "家族のために、料理を作ります。",
+      "furigana": "{家族|かぞく}のために、{料理|りょうり}を{作|つく}ります。",
+      "indonesian": "Saya memasak untuk keluarga saya.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{家族|かぞく}のために、",
+          "w": "w-kazoku"
+        },
+        {
+          "t": "{料理|りょうり}を",
+          "w": "w-ryouri"
+        },
+        {
+          "t": "{作|つく}ります。",
+          "w": "w-tsukuru"
+        }
+      ],
+      "gap": {
+        "before": "{家族|かぞく}",
+        "answer": "のために",
+        "after": "、{料理|りょうり}を{作|つく}ります。",
+        "options": [
+          "のために",
+          "ために",
+          "なために"
+        ],
+        "why": "Sesudah kata benda: のために — 家族のために, 健康のために."
+      },
+      "audio": "audio/ja/connectors/cx-tame-2.mp3",
+      "tags": [
+        "kata penghubung",
+        "tame"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "cx-tame-3",
+      "japanese": "旅行に行くために、お金を貯めている。",
+      "furigana": "{旅行|りょこう}に{行|い}くために、お{金|かね}を{貯|た}めている。",
+      "indonesian": "Aku menabung untuk pergi jalan-jalan.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{旅行|りょこう}に",
+          "w": "w-ryokou"
+        },
+        {
+          "t": "{行|い}くために、",
+          "w": "w-iku"
+        },
+        {
+          "t": "お{金|かね}を"
+        },
+        {
+          "t": "{貯|た}めている。"
+        }
+      ],
+      "gap": {
+        "before": "{旅行|りょこう}に",
+        "answer": "{行|い}く",
+        "after": "ために、お{金|かね}を{貯|た}めている。",
+        "options": [
+          "{行|い}く",
+          "{行|い}った",
+          "{行|い}って"
+        ],
+        "why": "Tujuannya masih di depan, jadi kata kerjanya memakai bentuk kamus: 行くために."
+      },
+      "combine": {
+        "a": "{旅行|りょこう}に{行|い}きたい。",
+        "b": "お{金|かね}を{貯|た}めている。",
+        "distractors": [
+          "{行|い}ったために、"
+        ]
+      },
+      "audio": "audio/ja/connectors/cx-tame-3.mp3",
+      "tags": [
+        "kata penghubung",
+        "tame"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "cx-tame-4",
+      "japanese": "健康のために、毎日歩いています。",
+      "furigana": "{健康|けんこう}のために、{毎日|まいにち}{歩|ある}いています。",
+      "indonesian": "Saya jalan kaki setiap hari demi kesehatan.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{健康|けんこう}のために、"
+        },
+        {
+          "t": "{毎日|まいにち}",
+          "w": "w-mainichi"
+        },
+        {
+          "t": "{歩|ある}いています。",
+          "w": "w-aruku"
+        }
+      ],
+      "gap": {
+        "before": "{健康|けんこう}",
+        "answer": "のために",
+        "after": "、{毎日|まいにち}{歩|ある}いています。",
+        "options": [
+          "のために",
+          "ために",
+          "だから"
+        ]
+      },
+      "alsoOrders": [
+        [
+          1,
+          0,
+          2
+        ]
+      ],
+      "audio": "audio/ja/connectors/cx-tame-4.mp3",
+      "tags": [
+        "kata penghubung",
+        "tame"
+      ],
+      "difficulty": 1
+    }
+  ]
+}

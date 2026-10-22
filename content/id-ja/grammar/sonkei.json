@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-sonkei",
+  "connector": "いらっしゃる",
+  "gloss": "kata kerja hormat (untuk orang lain)",
+  "title": "いらっしゃる — kata kerja hormat",
+  "pattern": "いらっしゃる (いる・{行|い}く・{来|く}る) / {召|め}し{上|あ}がる ({食|た}べる・{飲|の}む) / おっしゃる ({言|い}う) / ご{覧|らん}になる ({見|み}る)",
+  "explanation": "Kata kerja hormat ({尊敬語|そんけいご}) meninggikan orang yang kamu bicarakan: pelanggan, orang tua pasanganmu, atasanmu. Bahasa Indonesia punya Bapak/Ibu, beliau, dan silakan, tetapi tidak sesistematis ini: anggap saja ini tingkat bahasa yang paling sopan, di atas です・ます. Beberapa kata kerja umum punya bentuk sendiri: いらっしゃる (ada, pergi, datang), {召|め}し{上|あ}がる (makan, minum), おっしゃる (berkata), ご{覧|らん}になる (melihat). Banyak kata kerja lain memakai お + bentuk ます tanpa ます + になる: お{帰|かえ}りになる. Jangan pernah memakainya untuk dirimu sendiri.",
+  "natural": "Pegawai toko selalu memakainya, dan inilah yang dipakai dengan orang tua pasanganmu: お{父|とう}さんは{何|なに}を{召|め}し{上|あ}がりますか.",
+  "stiff": "Jangan pernah memakainya untuk tindakanmu sendiri: {私|わたし}がいらっしゃいます adalah kesalahan serius, seperti menyebut dirimu sendiri “beliau”. Untuk dirimu, pakai kata kerja merendah di pelajaran berikutnya.",
+  "examples": [
+    {
+      "id": "gx-sonkei-1",
+      "japanese": "何を召し上がりますか。",
+      "furigana": "{何|なに}を{召|め}し{上|あ}がりますか。",
+      "indonesian": "Bapak/Ibu ingin makan apa?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{何|なに}を",
+          "w": "w-nani"
+        },
+        {
+          "t": "{召|め}し{上|あ}がりますか。"
+        }
+      ],
+      "gap": {
+        "before": "{何|なに}を",
+        "answer": "{召|め}し{上|あ}がりますか",
+        "after": "。",
+        "options": [
+          "{召|め}し{上|あ}がりますか",
+          "いただきますか",
+          "{食|た}べますか"
+        ],
+        "ok": [
+          "{食|た}べますか"
+        ],
+        "note": "食べますか sudah sopan; 召し上がりますか juga menunjukkan rasa hormat.",
+        "why": "Untuk tamu atau orang yang lebih tinggi kedudukannya: 召し上がる. いただく adalah bentuk merendah, untuk dirimu sendiri."
+      },
+      "audio": "audio/ja/grammar/gx-sonkei-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "sonkei"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-sonkei-2",
+      "japanese": "明日はお宅にいらっしゃいますか。",
+      "furigana": "{明日|あした}はお{宅|たく}にいらっしゃいますか。",
+      "indonesian": "Besok Bapak/Ibu ada di rumah?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{明日|あした}は",
+          "w": "w-ashita"
+        },
+        {
+          "t": "お{宅|たく}に"
+        },
+        {
+          "t": "いらっしゃいますか。"
+        }
+      ],
+      "gap": {
+        "before": "{明日|あした}はお{宅|たく}に",
+        "answer": "いらっしゃいますか",
+        "after": "。",
+        "options": [
+          "いらっしゃいますか",
+          "おりますか",
+          "{参|まい}りますか"
+        ],
+        "why": "Orang lain “ada”: いらっしゃる. おる dan 参る adalah bentuk merendah, untuk dirimu sendiri."
+      },
+      "audio": "audio/ja/grammar/gx-sonkei-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "sonkei"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-sonkei-3",
+      "japanese": "先生がそうおっしゃっていました。",
+      "furigana": "{先生|せんせい}がそうおっしゃっていました。",
+      "indonesian": "Begitulah kata guru.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{先生|せんせい}が",
+          "w": "w-sensei"
+        },
+        {
+          "t": "そう"
+        },
+        {
+          "t": "おっしゃっていました。"
+        }
+      ],
+      "gap": {
+        "before": "{先生|せんせい}がそう",
+        "answer": "おっしゃって",
+        "after": "いました。",
+        "options": [
+          "おっしゃって",
+          "{申|もう}して"
+        ],
+        "why": "Perkataan guru: おっしゃる. 申す adalah bentuk merendah, untuk dirimu sendiri."
+      },
+      "audio": "audio/ja/grammar/gx-sonkei-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "sonkei"
+      ],
+      "difficulty": 4
+    },
+    {
+      "id": "gx-sonkei-4",
+      "japanese": "この写真、ご覧になりましたか。",
+      "furigana": "この{写真|しゃしん}、ご{覧|らん}になりましたか。",
+      "indonesian": "Apakah Bapak/Ibu sudah melihat foto ini?",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{写真|しゃしん}、",
+          "w": "w-shashin"
+        },
+        {
+          "t": "ご{覧|らん}になりましたか。"
+        }
+      ],
+      "gap": {
+        "before": "この{写真|しゃしん}、",
+        "answer": "ご{覧|らん}になりましたか",
+        "after": "。",
+        "options": [
+          "ご{覧|らん}になりましたか",
+          "{拝見|はいけん}しましたか"
+        ],
+        "why": "Orang lain melihat: ご覧になる. 拝見する adalah bentuk merendah, untuk dirimu sendiri."
+      },
+      "audio": "audio/ja/grammar/gx-sonkei-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "sonkei"
+      ],
+      "difficulty": 4
+    }
+  ]
+}

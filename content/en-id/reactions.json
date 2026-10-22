@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "reactions",
+  "title": "Reactions & Listening",
+  "order": 12,
+  "description": "The little words that show you're listening: surprise, sympathy, relief and 'and then?'. Several are friendly and casual, and the notes say which to use with older people.",
+  "phrases": [
+    {
+      "id": "rea-01",
+      "indonesian": "Oh, begitu.",
+      "english": "Oh, I see.",
+      "registerNotes": "The all-purpose 'I see' while someone explains something, polite with anyone. Among friends it shrinks to Oh, gitu.",
+      "audio": "audio/id/rea-01.mp3",
+      "tags": [
+        "listening",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-02",
+      "indonesian": "Iya, iya.",
+      "english": "Mm-hm, yes.",
+      "registerNotes": "Said softly while someone is talking, to show you're following. Said fast and loud, it sounds impatient, like 'yeah, yeah, I know'.",
+      "pitfallNote": "It means 'I hear you', not 'I agree'. Indonesians use it the same way, so a string of iya from them isn't a promise either.",
+      "audio": "audio/id/rea-02.mp3",
+      "tags": [
+        "listening",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-03",
+      "indonesian": "Oh, ya?",
+      "english": "Oh, really?",
+      "registerNotes": "Mild interest or surprise, polite with anyone, with the voice rising at the end.",
+      "pitfallNote": "Said flat, Oh, ya. means 'oh, right' as something comes back to you: Oh, ya, saya lupa (Oh, right, I forgot).",
+      "audio": "audio/id/rea-03.mp3",
+      "tags": [
+        "listening",
+        "surprise"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-04",
+      "indonesian": "Masa?",
+      "english": "Really? No way.",
+      "registerNotes": "Half-playful disbelief; Masa, sih? is the casual version. It can sound as if you doubt them, so with an older person Oh, ya? is safer.",
+      "audio": "audio/id/rea-04.mp3",
+      "tags": [
+        "listening",
+        "surprise"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "rea-05",
+      "register": "casual",
+      "indonesian": "Serius?",
+      "english": "Seriously?",
+      "polite": {
+        "indonesian": "Sungguh?",
+        "audio": "audio/id/casual/rea-05-polite.mp3"
+      },
+      "registerNotes": "Between friends, and Beneran? means the same. To someone older, Sungguh? or Oh, ya? sounds more respectful.",
+      "audio": "audio/id/casual/rea-05.mp3",
+      "tags": [
+        "listening",
+        "surprise",
+        "casual"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-06",
+      "indonesian": "Wah, hebat!",
+      "english": "Wow, that's great!",
+      "registerNotes": "Wah opens most happy surprise: Wah, bagus. Wah, enak. Hebat praises what someone has done, like passing an exam or finishing a race.",
+      "audio": "audio/id/rea-06.mp3",
+      "tags": [
+        "reactions",
+        "praise"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-07",
+      "indonesian": "Aduh!",
+      "english": "Ouch! / Oh no!",
+      "registerNotes": "For pain, and for small troubles: Aduh, saya lupa (Oh no, I forgot). Waduh is a stronger, slightly comic version.",
+      "audio": "audio/id/rea-07.mp3",
+      "tags": [
+        "reactions",
+        "essential"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-08",
+      "indonesian": "Ya ampun!",
+      "english": "Oh my goodness!",
+      "registerNotes": "Shock, dismay or exasperation at what you've just heard: Ya ampun, mahal sekali. Astaga is another common one.",
+      "cultureNote": "Many Muslims say Ya Allah in the same moment; as a non-Muslim, Ya ampun is the natural choice.",
+      "audio": "audio/id/rea-08.mp3",
+      "tags": [
+        "reactions",
+        "surprise"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-09",
+      "indonesian": "Kasihan.",
+      "english": "Poor thing. / What a shame.",
+      "registerNotes": "Sympathy for someone else's bad luck: Kasihan, dia sakit lagi. Kasihan sekali for real misfortune.",
+      "pitfallNote": "Spelled kasihan, but usually said kasian.",
+      "audio": "audio/id/rea-09.mp3",
+      "tags": [
+        "reactions",
+        "sympathy"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-10",
+      "indonesian": "Syukurlah.",
+      "english": "Thank goodness.",
+      "registerNotes": "Relief at good news: someone is feeling better, the flight landed safely. It comes from syukur, gratitude to God.",
+      "cultureNote": "You'll often hear Alhamdulillah (praise be to God) in the same place; Syukurlah suits anyone.",
+      "audio": "audio/id/rea-10.mp3",
+      "tags": [
+        "reactions",
+        "relief"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-11",
+      "indonesian": "Sayang sekali.",
+      "english": "What a pity.",
+      "registerNotes": "Disappointment, mild or real: Sayang sekali, tokonya sudah tutup. Friends say Sayang banget.",
+      "pitfallNote": "Sayang is also 'darling' and 'to love'. At the start of a reaction like this it only means 'what a pity'.",
+      "audio": "audio/id/rea-11.mp3",
+      "tags": [
+        "reactions",
+        "sympathy"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-12",
+      "indonesian": "Terus?",
+      "english": "And then?",
+      "registerNotes": "With a rising voice, to keep a story going. Terus is the everyday spoken word; Lalu? is more careful, if you're listening to someone much older.",
+      "audio": "audio/id/rea-12.mp3",
+      "tags": [
+        "listening",
+        "stories"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "rea-13",
+      "indonesian": "Pantas saja.",
+      "english": "No wonder.",
+      "registerNotes": "When something suddenly makes sense: Dia kerja sampai malam? Pantas saja capek. Among friends it's Pantesan.",
+      "audio": "audio/id/rea-13.mp3",
+      "tags": [
+        "reactions",
+        "listening"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

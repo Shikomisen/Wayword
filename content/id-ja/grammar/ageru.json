@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-ageru",
+  "connector": "あげる・くれる",
+  "gloss": "memberi dan menerima",
+  "title": "あげる・くれる・もらう — memberi dan menerima",
+  "pattern": "A は B に あげる (memberi ke orang lain) / B が {私|わたし}に くれる (memberi saya) / {私|わたし}は B に もらう (menerima)",
+  "explanation": "Bahasa Indonesia memakai “memberi” ke arah mana pun, tetapi bahasa Jepang memilih kata kerja menurut arahnya. あげる adalah memberi ke luar: {友達|ともだち}にお{土産|みやげ}をあげた. くれる adalah orang lain memberi kepadamu, atau kepada pihakmu: {母|はは}がくれた — ibuku yang memberikannya. もらう adalah menerima, dilihat dari penerima: {友達|ともだち}にもらった — aku dapat dari teman. Hadiah yang sama bisa diceritakan dengan くれた atau もらった.",
+  "natural": "Untuk bercerita tentang hadiah: これ、{彼女|かのじょ}がくれたんだ — ini pemberian pacarku.",
+  "stiff": "あげる kepada orang yang lebih tinggi kedudukannya bisa terdengar merendahkan. Kepada mereka, pakai さしあげる, atau cukup ucapkan ありがとうございます saat menerima.",
+  "examples": [
+    {
+      "id": "gx-ageru-1",
+      "japanese": "友達にお土産をあげました。",
+      "furigana": "{友達|ともだち}にお{土産|みやげ}をあげました。",
+      "indonesian": "Saya memberi teman oleh-oleh.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{友達|ともだち}に",
+          "w": "w-tomodachi"
+        },
+        {
+          "t": "お{土産|みやげ}を",
+          "w": "w-omiyage"
+        },
+        {
+          "t": "あげました。"
+        }
+      ],
+      "gap": {
+        "before": "{友達|ともだち}にお{土産|みやげ}を",
+        "answer": "あげました",
+        "after": "。",
+        "options": [
+          "あげました",
+          "くれました",
+          "もらいました"
+        ],
+        "why": "Dari saya ke orang lain: あげる."
+      },
+      "audio": "audio/ja/grammar/gx-ageru-1.mp3",
+      "tags": [
+        "tata bahasa",
+        "ageru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ageru-2",
+      "japanese": "この時計は父がくれました。",
+      "furigana": "この{時計|とけい}は{父|ちち}がくれました。",
+      "indonesian": "Jam tangan ini pemberian ayah saya.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "この{時計|とけい}は",
+          "w": "w-tokei"
+        },
+        {
+          "t": "{父|ちち}が"
+        },
+        {
+          "t": "くれました。"
+        }
+      ],
+      "gap": {
+        "before": "この{時計|とけい}は{父|ちち}が",
+        "answer": "くれました",
+        "after": "。",
+        "options": [
+          "くれました",
+          "あげました",
+          "もらいました"
+        ],
+        "why": "Orang lain memberi kepada saya: くれる."
+      },
+      "audio": "audio/ja/grammar/gx-ageru-2.mp3",
+      "tags": [
+        "tata bahasa",
+        "ageru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ageru-3",
+      "japanese": "誕生日に花をもらった。",
+      "furigana": "{誕生日|たんじょうび}に{花|はな}をもらった。",
+      "indonesian": "Aku dapat bunga waktu ulang tahun.",
+      "register": "casual",
+      "chunks": [
+        {
+          "t": "{誕生日|たんじょうび}に",
+          "w": "w-tanjoubi"
+        },
+        {
+          "t": "{花|はな}を"
+        },
+        {
+          "t": "もらった。"
+        }
+      ],
+      "gap": {
+        "before": "{誕生日|たんじょうび}に{花|はな}を",
+        "answer": "もらった",
+        "after": "。",
+        "options": [
+          "もらった",
+          "あげた",
+          "くれた"
+        ],
+        "ok": [
+          "くれた"
+        ],
+        "note": "くれた juga bisa: “seseorang memberiku bunga”. もらった menceritakannya dari sisiku.",
+        "why": "Menerima, dari sisiku: もらう."
+      },
+      "audio": "audio/ja/grammar/gx-ageru-3.mp3",
+      "tags": [
+        "tata bahasa",
+        "ageru"
+      ],
+      "difficulty": 3
+    },
+    {
+      "id": "gx-ageru-4",
+      "japanese": "先輩に本をもらいました。",
+      "furigana": "{先輩|せんぱい}に{本|ほん}をもらいました。",
+      "indonesian": "Saya dapat buku dari senior.",
+      "register": "polite",
+      "chunks": [
+        {
+          "t": "{先輩|せんぱい}に",
+          "w": "w-senpai"
+        },
+        {
+          "t": "{本|ほん}を",
+          "w": "w-hon"
+        },
+        {
+          "t": "もらいました。"
+        }
+      ],
+      "gap": {
+        "before": "{先輩|せんぱい}",
+        "answer": "に",
+        "after": "{本|ほん}をもらいました。",
+        "options": [
+          "に",
+          "が",
+          "を"
+        ],
+        "why": "Dengan もらう, pemberinya memakai に (atau から), seperti “dari”."
+      },
+      "audio": "audio/ja/grammar/gx-ageru-4.mp3",
+      "tags": [
+        "tata bahasa",
+        "ageru"
+      ],
+      "difficulty": 3
+    }
+  ]
+}

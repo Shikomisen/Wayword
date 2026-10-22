@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "id": "words-little",
+  "title": "小さな言葉",
+  "description": "私、あなた、彼・彼女、これ・あれ、疑問詞、そして ada。どの文も支えている小さな言葉です。",
+  "items": [
+    {
+      "id": "w-saya",
+      "indonesian": "saya",
+      "japanese": "私；私の",
+      "pos": "pronoun",
+      "registerNotes": "知らない人、お店、目上の人、仕事で使う、無難で丁寧な「私」です。名詞の後に置くと「私の」になり、日本語とは順番が逆です：rumah saya（私の家）。",
+      "audio": "audio/id/words/w-saya.mp3",
+      "tags": [
+        "代名詞",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-aku",
+      "indonesian": "aku",
+      "japanese": "僕、あたし（くだけた「私」）",
+      "pos": "pronoun",
+      "registerNotes": "友達、恋人、同年代の家族、子どもに使います。saya と aku の違いは「私」と「僕・あたし」の違いに近い感覚です。知らない人や年上の人には saya を使いましょう。",
+      "pitfallNote": "aku は kamu とセットです。Bapak や Ibu と呼ぶ相手には saya にしましょう。",
+      "audio": "audio/id/words/w-aku.mp3",
+      "tags": [
+        "代名詞",
+        "くだけた言い方"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kamu",
+      "indonesian": "kamu",
+      "japanese": "あなた、君（くだけた言い方）",
+      "pos": "pronoun",
+      "registerNotes": "友達、同年代か年下の人、子どもに使います。年上の人や知らない人にはなれなれしすぎるので、日本語で目上の人を名前や「〜さん」で呼ぶのと同じように、名前か Bapak、Ibu を使います。",
+      "audio": "audio/id/words/w-kamu.mp3",
+      "tags": [
+        "代名詞",
+        "くだけた言い方"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-anda",
+      "indonesian": "Anda",
+      "japanese": "あなた（丁寧）",
+      "pos": "pronoun",
+      "registerNotes": "丁寧ですが、よそよそしい言葉です。看板や書類、広告で見かけ、いつも大文字の A で書きます。日本語の「あなた」と同じく面と向かってはあまり使わず、Bapak、Ibu、相手の名前で呼びます：Anda mau ke mana? ではなく Ibu mau ke mana?（どちらへ？）",
+      "audio": "audio/id/words/w-anda.mp3",
+      "tags": [
+        "代名詞",
+        "ていねい"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-dia",
+      "indonesian": "dia",
+      "japanese": "彼、彼女",
+      "pos": "pronoun",
+      "pitfallNote": "男女どちらにも使う一語なので、dia だけでは男性か女性かわかりません。人に使い、物には使いません。",
+      "audio": "audio/id/words/w-dia.mp3",
+      "tags": [
+        "代名詞",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kami",
+      "indonesian": "kami",
+      "japanese": "私たち（相手を含まない）",
+      "pos": "pronoun",
+      "pitfallNote": "kami は話し相手を含まず、kita は含みます。ホストに対しては Kami dari Selandia Baru（私たちはニュージーランドから来ました）。ホストは「私たち」に入らないからです。",
+      "audio": "audio/id/words/w-kami.mp3",
+      "tags": [
+        "代名詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-kita",
+      "indonesian": "kita",
+      "japanese": "私たち（相手を含む）",
+      "pos": "pronoun",
+      "registerNotes": "話し相手を含みます：Kita makan di mana?（どこで食べようか？）。くだけた会話、特にジャカルタでは、kami の代わりに kita を使う人も多くいます。",
+      "audio": "audio/id/words/w-kita.mp3",
+      "tags": [
+        "代名詞"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-mereka",
+      "indonesian": "mereka",
+      "japanese": "彼ら、彼女たち",
+      "pos": "pronoun",
+      "registerNotes": "人に使い、物には使いません。名詞の後に置くと「彼らの」：rumah mereka（彼らの家）。",
+      "audio": "audio/id/words/w-mereka.mp3",
+      "tags": [
+        "代名詞"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-ini",
+      "indonesian": "ini",
+      "japanese": "これ；この",
+      "pos": "pronoun",
+      "pitfallNote": "位置が大事です。名詞の前に置くと文になります：Ini kopi（これはコーヒーです）。名詞の後に置くと「この」：kopi ini（このコーヒー）。日本語の「この」とは逆の位置です。",
+      "audio": "audio/id/words/w-ini.mp3",
+      "tags": [
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-itu",
+      "indonesian": "itu",
+      "japanese": "それ、あれ；その、あの",
+      "pos": "pronoun",
+      "registerNotes": "Itu rumah saya は「あれは私の家です」、rumah itu は「あの家」。名詞の後では、お互いにわかっているものを指して、軽く「その」くらいの意味になることもよくあります。",
+      "audio": "audio/id/words/w-itu.mp3",
+      "tags": [
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-apa",
+      "indonesian": "apa",
+      "japanese": "何",
+      "pos": "question",
+      "registerNotes": "日本語と同じく、答えが入る位置にそのまま置けます：Mau apa?（何がほしいの？）。Apa kabar?（お元気ですか？）は直訳すると「何の知らせ？」です。",
+      "audio": "audio/id/words/w-apa.mp3",
+      "tags": [
+        "質問",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-siapa",
+      "indonesian": "siapa",
+      "japanese": "誰",
+      "pos": "question",
+      "registerNotes": "名前を聞くのにも使います：Namanya siapa?（お名前は？）。Ini punya siapa? は「これは誰のですか？」です。",
+      "audio": "audio/id/words/w-siapa.mp3",
+      "tags": [
+        "質問",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-di-mana",
+      "indonesian": "di mana",
+      "japanese": "どこ",
+      "pos": "question",
+      "pitfallNote": "di mana は物や人がある場所を聞きます。行き先は ke mana（Mau ke mana?）、出どころは dari mana（Dari mana?）。日本語の「どこに」「どこへ」「どこから」の区別と同じです。いつも2語で書きます。",
+      "audio": "audio/id/words/w-di-mana.mp3",
+      "tags": [
+        "質問",
+        "必須"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kapan",
+      "indonesian": "kapan",
+      "japanese": "いつ（疑問文で）",
+      "pos": "question",
+      "pitfallNote": "疑問文専用です：Kapan pulang?（いつ帰るの？）。文の中の「〜するとき」は waktu か kalau を使います。日本語の「いつ」と「とき」の使い分けと同じです。",
+      "audio": "audio/id/words/w-kapan.mp3",
+      "tags": [
+        "質問"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-berapa",
+      "indonesian": "berapa",
+      "japanese": "いくら、いくつ；何（番号）",
+      "pos": "question",
+      "registerNotes": "Berapa harganya?（いくらですか？）、Berapa orang?（何人ですか？）、Jam berapa?（何時ですか？）、Umurnya berapa?（何歳ですか？）",
+      "audio": "audio/id/words/w-berapa.mp3",
+      "tags": [
+        "質問",
+        "数"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-kenapa",
+      "indonesian": "kenapa",
+      "japanese": "なぜ、どうして；どうしたの",
+      "pos": "question",
+      "registerNotes": "改まった書き言葉では mengapa。Kenapa? だけで「どうしたの？」の意味にもなります。",
+      "audio": "audio/id/words/w-kenapa.mp3",
+      "tags": [
+        "質問"
+      ],
+      "difficulty": 1
+    },
+    {
+      "id": "w-bagaimana",
+      "indonesian": "bagaimana",
+      "japanese": "どう、どのように；〜はどう？",
+      "pos": "question",
+      "registerNotes": "くだけた会話では gimana に縮まります。Bagaimana kalau …? は提案の言い方です：Bagaimana kalau besok?（明日はどう？）",
+      "audio": "audio/id/words/w-bagaimana.mp3",
+      "tags": [
+        "質問"
+      ],
+      "difficulty": 2
+    },
+    {
+      "id": "w-ada",
+      "indonesian": "ada",
+      "japanese": "ある、いる",
+      "pos": "verb",
+      "registerNotes": "Ada air? は「水はありますか？」。Pak Budi ada? は Budi さんがいるかを聞きます。Tidak ada は「ない、いない」。「ある」と「いる」の区別はなく、人にも物にも ada です。",
+      "pitfallNote": "ada は「ある・いる」で、「です」ではありません。形容詞の前には何も入れず Saya capek（疲れています）。Saya ada capek とは言いません。",
+      "audio": "audio/id/words/w-ada.mp3",
+      "tags": [
+        "必須"
+      ],
+      "difficulty": 1
+    }
+  ]
+}
