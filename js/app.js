@@ -42,6 +42,7 @@ import {
   keepOffline, offlineStatus, useConnection, connectionMode, offlineForNowSince, CONNECTION_MODES,
 } from './offline.js';
 import { renderListening, renderListeningDrill, listeningState } from './listen-drill.js';
+import { renderTranslate } from './translate.js';
 import { VERSION } from './version.js';
 import { watchForUpdates, onUpdateReady, updateReady, checkForUpdate } from './updates.js';
 
@@ -70,6 +71,7 @@ const routes = [
   [/^\/connectors\/([\w-]+)$/, (root, id) => renderLesson(root, id)],
   [/^\/listening$/, (root) => renderListening(root)],
   [/^\/listening\/drill$/, (root) => renderListeningDrill(root)],
+  [/^\/translate$/, (root) => renderTranslate(root)],
   [/^\/scenarios$/, (root) => renderScenarioList(root)],
   [/^\/scenario\/([\w-]+)$/, (root, id) => renderScenario(root, id)],
   // Order matters: /characters/review and /characters/drill must match before /characters/:id.
@@ -147,6 +149,7 @@ async function router() {
     if (/^\/characters/.test(sub) && !features.characters) break;
     if (/^\/connectors/.test(sub) && !features.lessons) break;
     if (/^\/listening/.test(sub) && !features.listening) break;
+    if (/^\/translate/.test(sub) && !features.translator) break;
     if (/^\/mine\/paste/.test(sub) && !features.dictionary) break;
     const root = clear(app());
     window.scrollTo(0, 0);
@@ -237,7 +240,10 @@ async function enterCourse(target) {
   return { features };
 }
 
-/** "‹ Languages · English › Japanese" — the way back to the picker, and the pair in use. */
+/**
+ * "‹ Languages · English › Japanese ⚙️" — the way back to the picker, the pair
+ * in use, and Settings, which lives here so the tab bar has room (§4.5).
+ */
 function renderCourseBar(target) {
   const bar = document.getElementById('coursebar');
   if (!bar) return;
@@ -248,11 +254,15 @@ function renderCourseBar(target) {
       t('coursebar.pair', {
         speaker: course.languageName(target.speaker, ui),
         target: course.languageName(target.target, ui),
-      })));
+      })),
+    target.status === 'available'
+      ? el('a', { class: 'coursebar-settings', href: link('/settings'), 'aria-label': t('tab.settings'), title: t('tab.settings') }, '⚙️')
+      : null);
 }
 
 // A phone's tab bar holds five tabs comfortably. Past that, Scenarios — the
 // least central section once a course has Connectors — moves into Learn.
+// Settings isn't a tab: it's the ⚙️ in the course bar, on every screen.
 const MAX_TABS = 5;
 
 function tabsFor(content) {
@@ -266,7 +276,7 @@ function tabsFor(content) {
     features.lessons ? ['/connectors', lessons.icon, lessons.tab] : null,
     features.characters ? ['/characters', 'あ', t('tab.characters')] : null,
     features.scenarios ? ['/scenarios', '🗣️', t('tab.scenarios')] : null,
-    ['/settings', '⚙️', t('tab.settings')],
+    features.translator ? ['/translate', '🌐', t('tab.translate')] : null,
   ].filter(Boolean);
   return tabs.length > MAX_TABS ? tabs.filter(([path]) => path !== '/scenarios') : tabs;
 }
@@ -298,6 +308,7 @@ function highlightNav(path) {
         (target === '/scenarios' && /^\/scenario\//.test(path));
     a.classList.toggle('active', owns);
   });
+  document.querySelector('.coursebar-settings')?.classList.toggle('active', /^\/settings(\/|$)/.test(path));
 }
 
 /** How many items a deck holds, in the right noun. */
@@ -839,7 +850,7 @@ function emptyStudy(message, backTo) {
 
 async function settings(root, focus = null) {
   const s = await deck.getSettings();
-  const { features, course: current, manifest } = await loadContent();
+  const { features, course: current, manifest, translator } = await loadContent();
   const summary = await deck.deckSummary();
   const chars = features.characters ? await deck.characterSummary() : null;
   const textScale = await course.getTextScale();
@@ -912,7 +923,7 @@ async function settings(root, focus = null) {
         : null,
 
       await dataSection(),
-      aboutSection(manifest.dictionary),
+      aboutSection(manifest.dictionary, translator),
 
       el('button', {
         class: 'btn btn-danger',
@@ -936,9 +947,9 @@ async function settings(root, focus = null) {
  * fetch the latest. "Update now" is only here once there's an update to
  * take: found by Check for updates, or put off with "Not now" on the bar.
  * A course with a dictionary also credits it here, as its licence asks
- * (README §6.14).
+ * (README §6.14), and so does one with the offline translator (§6.15).
  */
-function aboutSection(dictionary = null) {
+function aboutSection(dictionary = null, translator = null) {
   const status = el('p', { class: 'muted small update-status', role: 'status' });
   const reload = el('button', {
     type: 'button', class: 'btn btn-primary', hidden: !updateReady(), dataset: { action: 'reload' },
@@ -969,7 +980,12 @@ function aboutSection(dictionary = null) {
     updateReady() ? el('p', { class: 'muted small' }, t('update.ready')) : null,
     el('div', { class: 'action-row' }, check, reload),
     status,
-    dictionaryCredit(dictionary, 'about-dictionary'));
+    dictionaryCredit(dictionary, 'about-dictionary'),
+    translator
+      ? el('p', { class: 'muted small about-translator' }, t('translate.credit'), ' ',
+          el('a', { href: translator.source, target: '_blank', rel: 'noopener' }, 'Mozilla'), ' · ',
+          el('a', { href: translator.licenceFile, target: '_blank', rel: 'noopener' }, translator.licence))
+      : null);
 }
 
 /**

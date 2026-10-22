@@ -34,7 +34,7 @@
  * Settings, it never waits at all.
  */
 
-const CACHE_VERSION = 'v20';
+const CACHE_VERSION = 'v21';
 const CACHE_PREFIX = 'wayword-';
 const CACHE = `${CACHE_PREFIX}${CACHE_VERSION}`;
 
@@ -42,6 +42,11 @@ const CACHE = `${CACHE_PREFIX}${CACHE_VERSION}`;
 // outlives each version's cache, so the next version knows what to download.
 const KEPT = `${CACHE_PREFIX}kept`;
 const KEPT_LIST = './__kept-courses.json';
+// The offline translator's engine and models (README §6.15): downloaded only
+// when the learner asks, by the app, into a cache of their own. Unversioned
+// like KEPT, so an update doesn't throw 100 MB away; never part of an install.
+const TRANSLATOR = `${CACHE_PREFIX}translator`;
+const isTranslatorFile = (url) => /\/mt\/(?!translator\.json$)/.test(url.pathname);
 // Online or offline mode, as the app last said (README §10.6). Kept here
 // too, because the worker serves the next launch before any of the app runs.
 const CONNECTION = './__connection.json';
@@ -83,6 +88,7 @@ const SHELL = [
   './js/mine.js',
   './js/offline.js',
   './js/paste.js',
+  './js/search.js',
   './js/quiz.js',
   './js/reading.js',
   './js/characters.js',
@@ -94,12 +100,16 @@ const SHELL = [
   './js/srs.js',
   './js/store.js',
   './js/study.js',
+  './js/translate.js',
+  './js/translator.js',
+  './js/translator-worker.js',
   './js/updates.js',
   './js/version.js',
   './icons/icon-192.png',
   './icons/icon-512.png',
   './icons/icon-maskable-512.png',
   './icons/icon-180.png',
+  './mt/translator.json',
 ];
 
 /**
@@ -217,7 +227,7 @@ function newerThanThis(name) {
  * was installing deleted the new version's cache (see keepCourses).
  */
 async function olderCaches() {
-  return (await caches.keys()).filter((k) => k !== CACHE && k !== KEPT &&
+  return (await caches.keys()).filter((k) => k !== CACHE && k !== KEPT && k !== TRANSLATOR &&
     OWN_PREFIXES.some((p) => k.startsWith(p)) && !newerThanThis(k));
 }
 
@@ -466,6 +476,17 @@ self.addEventListener('fetch', (event) => {
           return (await onDevice()) || Response.error();
         }
       })()
+    );
+    return;
+  }
+
+  // The translator's files: from their own cache once downloaded, else the
+  // network, and never copied into this version's cache (js/translator.js).
+  if (isTranslatorFile(url)) {
+    event.respondWith(
+      (async () => (await (await caches.open(TRANSLATOR)).match(request, { ignoreSearch: true })) ||
+        ((await offlineNow()) ? new Response('', { status: 504, statusText: 'Offline and not downloaded' })
+          : fromNetwork(request).catch(() => new Response('', { status: 504, statusText: 'Offline and not downloaded' }))))()
     );
     return;
   }

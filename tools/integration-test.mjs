@@ -1159,6 +1159,51 @@ check('deleting a message forgets it, but not the words added from it',
   !(await deck.getMessage(pasted.id)) && (await deck.getUserItems()).some((u) => u.id === 'u-paste'));
 await deck.deleteUserItem('u-paste');
 
+/* ---------- 15. the translator ---------- */
+
+console.log('\n15. Translate — the course first, then the offline translator');
+
+const mtSearch = await import('../js/search.js');
+const translatorMod = await import('../js/translator.js');
+const { nodeTranslator } = await import('./translator-node.mjs');
+const jaContent = await loadContent();
+const jaItems = [...jaContent.phrases.values()];
+
+check('the course has a translator both ways, from mt/translator.json',
+  jaContent.features.translator && translatorMod.directionsFor(jaContent).say === 'en-ja' && translatorMod.directionsFor(jaContent).read === 'ja-en');
+const mtFiles = translatorMod.filesFor(jaContent.translator, ['en-ja', 'ja-en']);
+check('…its files: the engine, its loader, and both models, each once',
+  mtFiles.length === 9 && new Set(mtFiles.map((f) => f.path)).size === 9 && translatorMod.bytesOf(mtFiles) > 50e6,
+  `${mtFiles.length} files, ${(translatorMod.bytesOf(mtFiles) / 1e6).toFixed(1)} MB`);
+
+const mtToilet = mtSearch.searchCourse(jaItems, 'Where is the toilet?', { side: 'meaning' });
+check('what you want to say finds the course\'s phrase, word for word',
+  mtToilet[0]?.exact && mtToilet[0].item.target === 'トイレはどこですか', mtToilet.map((m) => `${m.item.target} ${m.score.toFixed(2)}`).join(', '));
+check('…matching whatever the punctuation and case', mtSearch.searchCourse(jaItems, 'where is THE toilet', { side: 'meaning' })[0]?.exact);
+const mtWallet = mtSearch.searchCourse(jaItems, 'I lost my wallet on the train.', { side: 'meaning' });
+check('a near match counts the words that matter, not "I", "my" or "the"',
+  mtWallet.length === 1 && mtWallet[0].item.target === '財布をなくしました' && !mtWallet[0].exact,
+  mtWallet.map((m) => `${m.item.target} ${m.score.toFixed(2)}`).join(', '));
+const readBack = mtSearch.searchCourse(jaItems, 'トイレはどこですか？', { side: 'target' });
+check('Japanese you want to understand finds its course item by character pairs', readBack[0]?.exact && readBack[0].item.meaning === 'Where is the toilet?');
+check('a gloss with alternatives matches any of them', mtSearch.score('yes', 'Yeah. / Yes.') === 1 && mtSearch.score('受け取る', '受け取る、拾う、迎えに行く') === 1);
+check('…but a sentence\'s comma doesn\'t split it', mtSearch.variants('遅れてすみません、バスが遅れました。').length === 1);
+check('nothing typed, nothing found', mtSearch.searchCourse(jaItems, '  ', { side: 'meaning' }).length === 0);
+check('characters aren\'t offered as translations', !mtSearch.searchCourse(jaItems, 'a', { side: 'target', min: 0 }).some((m) => m.item.kind === 'character'));
+check('Japanese output gets full-width ？ and ！', translatorMod.tidy('トイレはどこですか?', 'ja') === 'トイレはどこですか？' && translatorMod.tidy('Hi!', 'en') === 'Hi!');
+
+// The app's own worker, with the real engine and models, in Node.
+const nodeMt = nodeTranslator(ROOT, jaContent.translator);
+const mtEnJa = await nodeMt.translate('en-ja', 'Is there a pharmacy near here?');
+check('the worker translates English into Japanese, on the device', /薬局/.test(mtEnJa.text), mtEnJa.text);
+const mtJaEn = await nodeMt.translate('ja-en', '最近、日本語を勉強しています。');
+check('…and Japanese into English', /Japanese/i.test(mtJaEn.text) && /stud/i.test(mtJaEn.text), mtJaEn.text);
+check('…quickly, once a model is loaded', (await nodeMt.translate('en-ja', 'Thank you.')).ms < 2000);
+check('…and an empty text is an empty translation, not an error', (await nodeMt.translate('en-ja', '   ')).text === '');
+let mtNoModel = null;
+try { await nodeMt.translate('en-xx', 'Hello'); } catch (err) { mtNoModel = err; }
+check('a direction it has no model for fails cleanly', /no model/.test(mtNoModel?.message || ''), mtNoModel?.message);
+
 /* ---------- result ---------- */
 
 console.log(

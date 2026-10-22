@@ -929,3 +929,25 @@ body.at-home:has(.update-banner) #app { padding-top: 12px; }
 .level-subtitle { font-size: 0.95rem; margin: 14px 0 8px; color: var(--fg-muted); }
 .placement-level { margin: 18px 0 8px; }
 .placement-level p { margin: 8px 0; }
+
+/* ---------- translate (README §2.14) ---------- */
+
+/* Settings, as a ⚙️ in the course bar (§4.5). */
+.coursebar-settings {
+  flex: none; display: inline-flex; align-items: center; justify-content: center;
+  min-width: 34px; min-height: 34px; border-radius: 99px; font-size: 1rem; line-height: 1;
+}
+.coursebar-settings.active, .coursebar-settings:hover { background: var(--bg-raised); box-shadow: 0 0 0 1px var(--line); }
+/* The two directions' names can be long ("Japanese → English"): they wrap inside their own button. */
+.translate-direction .segment { padding: 6px 8px; line-height: 1.25; white-space: normal; overflow-wrap: anywhere; min-width: 0; }
+.translate-field { margin: 12px 0; }
+.translate-input { min-height: 88px; font-size: 1.05rem; }
+.translate-course, .translate-machine { margin-bottom: 8px; }
+.translate-match .ref-list { margin-top: 8px; }
+.translate-result .action-row { margin: 12px 0 0; }
+.translator-get { background: var(--bg-raised); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; margin: 18px 0 8px; }
+.translator-get .section-title { margin-top: 0; }
+.translator-get .bar { height: 8px; margin-top: 4px; }
+.translate-progress { margin: 6px 0 0; }
+.translator-ready { display: flex; align-items: center; justify-content: space-between; gap: 8px 12px; flex-wrap: wrap; margin: 18px 0 0; }
+.translate-credit a { color: inherit; text-decoration: underline; }

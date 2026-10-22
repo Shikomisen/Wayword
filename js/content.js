@@ -133,6 +133,12 @@ export async function loadContent() {
       `Content schemaVersion ${manifest.schemaVersion} is newer than this app supports (${SUPPORTED_SCHEMA}). Rendering anyway.`
     );
   }
+  // The offline translator's registry (README §6.15): which directions it has, and their files.
+  // Not having it — an old cache, or no connection yet — just means no translator.
+  const translator = await fetchJSON('mt/translator.json').catch(() => null);
+  const directions = translator
+    ? [`${course.speaker}-${course.target}`, `${course.target}-${course.speaker}`].filter((pair) => translator.pairs?.[pair])
+    : [];
   const normalise = makeNormaliser(manifest, course);
   const register = withRegister(manifest);
   const fields = manifest.fields || DEFAULT_FIELDS;
@@ -286,7 +292,10 @@ export async function loadContent() {
       dictionary: Boolean(manifest.dictionary?.file),
       // Levels (levels.js): every entry names its level, and the learner has one.
       levels: (manifest.levels || []).length > 0,
+      // The offline translator (translate.js), when it has a model for either direction.
+      translator: directions.length > 0,
     },
+    translator: directions.length ? translator : null,
     // The course's levels, in order (README §7.10); each entry above carries
     // its `level` and optional `step` from the manifest.
     levels: manifest.levels || [],

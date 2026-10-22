@@ -1170,7 +1170,9 @@ await goTo('#/ja-en/');
 check('today screen is in Japanese', $('h1')?.textContent === '今日', $('h1')?.textContent);
 const tabLabels = [...document.querySelectorAll('.tabbar a')].map((a) => a.textContent);
 check('tab bar is in Japanese, with the course\'s own name for its lessons and no Characters tab',
-  tabLabels.join('|') === '📅今日|📚学ぶ|🧩表現|🗣️会話練習|⚙️設定', tabLabels.join(' | '));
+  tabLabels.join('|') === '📅今日|📚学ぶ|🧩表現|🗣️会話練習|🌐翻訳', tabLabels.join(' | '));
+check('…and Settings is the ⚙️ in the course bar, in Japanese', document.querySelector('.coursebar-settings')?.getAttribute('href') === '#/ja-en/settings' &&
+  document.querySelector('.coursebar-settings')?.getAttribute('aria-label') === '設定');
 check('tabs link inside the English course',
   [...document.querySelectorAll('.tabbar a')].every((a) => a.getAttribute('href').startsWith('#/ja-en/')));
 check('no Reading row on the English today screen', !text().includes('Reading'));
@@ -1482,6 +1484,56 @@ check('"Not now" puts the bar away, and says where the update is',
   !bar() && [...document.querySelectorAll('.toast')].some((n) => n.textContent.startsWith('Update any time from Settings')));
 await goTo('#/en-ja/settings');
 check('…and Settings offers it', $('[data-action="reload"]')?.hidden === false && text().includes('A new version of Wayword is ready.'));
+
+console.log('\n11b. Translate');
+
+// jsdom has no Worker, so the translator can't run here: the course is searched,
+// and the page says so (the real engine is tested in Node and in Firefox).
+await goTo('#/en-ja/');
+const jaTabs = [...document.querySelectorAll('.tabbar a')].map((a) => a.dataset.path);
+check('the Japanese course has a Translate tab, Scenarios move into Learn, and Settings is the ⚙️ in the course bar',
+  jaTabs.join() === '/,/browse,/connectors,/characters,/translate' &&
+    document.querySelector('.coursebar-settings')?.getAttribute('href') === '#/en-ja/settings', jaTabs.join());
+await goTo('#/en-ja/translate');
+check('Translate opens on saying something in Japanese',
+  $('h1')?.textContent === 'Translate' && $('.translate-direction .segment.is-on')?.dataset.direction === 'say' &&
+    $('.translate-direction .segment.is-on')?.textContent === 'English → Japanese' &&
+    $('.translate-input')?.getAttribute('placeholder') === 'What do you want to say in Japanese?',
+  $('.translate-direction .segment.is-on')?.textContent);
+check('…lit in the tab bar', document.querySelector('.tabbar a.active')?.dataset.path === '/translate');
+check('…and says when this device can’t run the translator', text().includes('can’t run the offline translator'));
+const typeIn = async (value) => {
+  const box = $('.translate-input');
+  box.value = value;
+  box.dispatchEvent(new window.Event('input', { bubbles: true }));
+  await tick(); await tick();
+};
+await typeIn('Where is the toilet?');
+check('typing finds the course’s own phrase, with its audio and where it’s from',
+  $('.translate-exact .section-title')?.textContent === 'In your course' &&
+    $('.translate-exact .translate-match .target')?.textContent.startsWith('トイレはどこですか') &&
+    Boolean($('.translate-exact .translate-match .audio-btn')) && Boolean($('.translate-exact .ref-chip')),
+  $('.translate-exact')?.textContent.slice(0, 80));
+await typeIn('I lost my wallet on the train.');
+check('…and something near it under Similar, not as the answer',
+  !$('.translate-exact .translate-match') && $('.translate-similar .section-title')?.textContent === 'Similar in your course' &&
+    $('.translate-similar .translate-match .target')?.textContent.startsWith('財布'), $('.translate-similar')?.textContent.slice(0, 80));
+$('.translate-direction [data-direction="read"]').click();
+for (let i = 0; i < 4; i++) await tick();
+check('switching direction keeps the page, for understanding Japanese',
+  $('.translate-direction .segment.is-on')?.dataset.direction === 'read' &&
+    $('.translate-input')?.getAttribute('lang') === 'ja' && $('.translate-input')?.getAttribute('placeholder') === 'Type or paste Japanese to understand it');
+await typeIn('トイレはどこですか');
+check('…which finds it from the Japanese side', $('.translate-exact .translate-match .meaning')?.textContent === 'Where is the toilet?');
+await goTo('#/en-ja/settings');
+check('the ⚙️ is lit on Settings', document.querySelector('.coursebar-settings')?.classList.contains('active') &&
+  !document.querySelector('.tabbar a.active'));
+await goTo('#/en-ja/translate');
+check('what was typed is still there on coming back', $('.translate-input')?.value === 'トイレはどこですか' &&
+  $('.translate-direction .segment.is-on')?.dataset.direction === 'read');
+$('.translate-clear')?.click();
+for (let i = 0; i < 4; i++) await tick();
+check('Clear empties it', $('.translate-input')?.value === '' && !$('.translate-match'));
 
 console.log('\n12. Console health');
 

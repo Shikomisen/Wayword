@@ -3,7 +3,7 @@
 An offline-first language-learning app for real conversation. It runs in the browser, installs to a phone's home screen, works without a connection, and keeps every bit of progress on the device.
 
 - **Live:** https://shikomisen.github.io/Wayword/
-- **Version:** v20
+- **Version:** v21
 - **Courses:** Japanese for English speakers, and English for Japanese speakers. Indonesian is planned.
 
 This README is the complete description of the project: what it does, how it's built, the content format, the learning rules, storage, audio, offline behaviour, and how to run, test, deploy or port it. It describes what is true now. The design rationale and project history are kept in the maintainer's private notes, outside this repository.
@@ -29,7 +29,7 @@ This README is the complete description of the project: what it does, how it's b
 
 ## 1. Overview
 
-Wayword teaches the language you need to talk with people. Words come first, then whole sentences, then the connectors and patterns that chain sentences into conversation. Spaced repetition (SM-2) decides what to review each day. Reading practice and a listening drill support that where a course needs them.
+Wayword teaches the language you need to talk with people. Words come first, then whole sentences, then the connectors and patterns that chain sentences into conversation. Spaced repetition (SM-2) decides what to review each day. Reading practice and a listening drill support that where a course needs them, and a Translate tab covers what the course doesn't teach yet.
 
 **Principles**
 
@@ -37,6 +37,7 @@ Wayword teaches the language you need to talk with people. Words come first, the
 - **Spaced repetition:** flashcards are scheduled by SM-2. Drills feed the review deck but never move the schedule themselves (§7.6).
 - **Offline-first:** the app installs in seconds. Each course downloads the first time it's opened, and from then on works with no connection (§10).
 - **Private by construction:** there are no accounts, no server, no analytics and no third-party requests at runtime. Progress stays in the browser, and the only way out is a backup file the learner saves (§8).
+- **Translation on the device:** the Translate tab searches the course first. Anything else is translated by an offline translator, Mozilla's open-source engine and models, served by this app and run on the device, so what's typed never leaves it (§2.14).
 - **Content is data:** courses, decks, lessons and interface strings are JSON files listed in manifests. Adding content, or a whole language, needs no app code (§6).
 - **No build step:** plain HTML, CSS and native ES modules, served exactly as committed (§4).
 
@@ -72,8 +73,8 @@ The equivalences are approximate: the levels are built around what a learner can
 - `#/` opens on every launch. **I speak** (English or 日本語) relabels the page and lists the courses taught from that language.
 - Each course card shows where the learner is: cards due today, not started, or coming soon.
 - The speaker defaults to the device language if the app teaches from it, otherwise English, and it's remembered.
-- Inside a course, a slim bar ("‹ Languages · English › Japanese") leads back, and Settings has a Language row.
-- The version shows at the foot of the picker ("Wayword v20") and in Settings → About.
+- Inside a course, a slim bar ("‹ Languages · English › Japanese ⚙️") leads back to the picker and holds the way into Settings. Settings has a Language row.
+- The version shows at the foot of the picker ("Wayword v21") and in Settings → About.
 
 ### 2.2 Placement
 
@@ -276,6 +277,8 @@ The file format is in §8.4.
 
 ### 2.11 Settings
 
+Settings is the ⚙️ in the course bar, on every screen of a course.
+
 - Language
 - Furigana and romaji: Always, Tap to show or Hidden (Japanese)
 - Card types
@@ -307,6 +310,26 @@ Settings → Connection has two modes, and the choice applies to every course:
 
 How it works is in §10.6.
 
+### 2.14 Translate
+
+The **Translate** tab is for when you don't know how to say something, or what something means.
+
+- **Two directions,** following the course: saying something in the language you're learning (English → Japanese in the Japanese course; 日本語 → 英語 in the English course), or understanding it (the other way).
+- **The course first.** As you type, the course is searched (`js/search.js`): its phrases, words, sentences, lesson examples and your own words, on the side you typed in.
+  - **In your course:** what the course teaches word for word, above everything else. It's checked, it has its audio, and its deck is one tap away.
+  - **Similar in your course:** up to three items that share most of the words that matter. English leaves out little words like *I*, *my* and *the*; Japanese is compared by pairs of characters.
+- **The translation,** made on the device by the offline translator (§6.15), half a second after typing stops, or straight away on **Translate**:
+  - Japanese gets furigana from the course dictionary (§6.14), and full-width ？ and ！.
+  - 🔊 speaks it with the device's own voice.
+  - **＋ Add to my words** opens the add form filled in: the text, its furigana and its meaning (§2.4).
+  - It isn't shown when it says exactly what an "In your course" item says.
+  - It's labelled as a machine translation: usually right for short, everyday sentences, and worth checking for anything important.
+- **The translator is a download,** offered on the page with its size: 109 MB for English ↔ Japanese, shared by both courses. It's fetched only when asked, from this app's own site. Each file is checked against its sha256 and kept in a cache of its own that outlives updates (§10.1). From then on it works with no connection. **Remove** takes it off the device.
+- **Nothing typed leaves the device.** The engine runs in a worker, on the device. A device that can't run it (no WebAssembly SIMD) still gets the course search, and the page says so.
+- **What's typed stays** while the app is open, so adding a card and coming back finds it still there.
+
+How good it is, on 20 everyday sentences each way (21/10/2026): English → Japanese was natural for 17 of 20 (it got "Could I have the bill?" wrong). Japanese → English handles ordinary sentences but not always set phrases: 温めますか came out "Do you warm up?". That's why the course is searched first.
+
 ---
 
 ## 3. Courses and content
@@ -328,6 +351,7 @@ How it works is in §10.6.
 | Listening | 32 lines and 15 sound pairs | 60 lines and 18 sound pairs |
 | Scenarios | 13 | 13 |
 | Dictionary, for Paste a message | 22,645 common words (JMdict, §6.14) | — |
+| Offline translator, for Translate | English ↔ Japanese, a 109 MB download (§6.15) | The same files, shared |
 
 **By level** (§7.10):
 
@@ -458,7 +482,7 @@ All in `js/`. Screens talk to `deck.js`, never to `store.js` directly.
 
 | Module | Responsibility |
 |---|---|
-| `app.js` | Boot, the router, the chrome (course bar, tab bar, update bar), and the Today, Learn, deck, study and Settings screens |
+| `app.js` | Boot, the router, the chrome (course bar with the ⚙️ for Settings, tab bar, update bar), and the Today, Learn, deck, study and Settings screens |
 | `course.js` | The course registry (`content/courses.json`), the active course and app-wide preferences. Entering a course switches storage, interface language and content together, and applies each language's font stack |
 | `content.js` | Loads a course's manifest and files, and gives every item the generic fields (§6.1). Also attaches your own words, and loads scenarios on demand |
 | `deck.js` | The bridge between content, SRS and storage: settings, active and parked decks, adding cards, grading, stats, streak, drill records, saved messages, and the learner's level |
@@ -473,9 +497,13 @@ All in `js/`. Screens talk to `deck.js`, never to `store.js` directly.
 | `home.js` | The language picker (`#/`), the placeholder screen for a planned course, the version footer |
 | `quiz.js` | The placement quiz and its seeding |
 | `study.js` | The flashcard session, in all three directions |
-| `mine.js` | Your own words: the list, the form (which can open filled in, from a pasted message), the device voice, recordings |
+| `mine.js` | Your own words: the list, the form (which can open filled in, from a pasted message or Translate), the device voice, recordings |
 | `paste.js` | Paste a message: the paste screen, saved messages, a message's words and the word sheet, and the dictionary's credit |
 | `dictionary.js` | A course's offline dictionary (§6.14): loading and indexing it, the inflection rules, longest-match lookup, cutting a message into words, readings and suggested furigana. Pure logic, apart from loading the file |
+| `translate.js` | The Translate tab (§2.14): the two directions, what's typed, the course's matches, the translation, and downloading the translator |
+| `search.js` | Finding what the course already teaches, from either side, by words or by pairs of characters. Pure logic |
+| `translator.js` | The offline translator (§6.15): which directions a course has, its files, downloading and checking them into their own cache, removing them, and the worker |
+| `translator-worker.js` | A classic worker running Mozilla's Bergamot engine on the files in that cache. `tools/translator-node.mjs` runs the same file in Node, for the tools and tests |
 | `connectors.js` | The lessons list, a lesson, and practice sessions |
 | `drills.js` | Drill construction, session ordering and answer checks. Pure logic |
 | `characters.js` | Character sets: charts, lists, adding and taking out sets |
@@ -510,10 +538,11 @@ Every screen except the picker lives under its course, e.g. `#/en-ja/browse`.
 | `/scenarios`, `/scenario/<id>` | The scenario list; a scenario |
 | `/characters`, `/characters/<id>`, `/characters/<id>/study` | Reading; a character set; studying it |
 | `/characters/review`, `/characters/drill/hiragana`, `/characters/drill/katakana` | Character review; a kana drill |
+| `/translate` | Translate (a course with the offline translator, §2.14) |
 | `/settings`, `/settings/data` | Settings; Settings scrolled to Your data |
 
 How unmatched routes are handled:
-- A section a course doesn't have (characters, connectors, listening, Paste a message) isn't routable, and falls back to Today.
+- A section a course doesn't have (characters, connectors, listening, Paste a message, Translate) isn't routable, and falls back to Today.
 - A path with no course (`#/review`, `#/browse`, such as an older home-screen shortcut) opens in the course used last, or Japanese if there isn't one. An unknown path goes to the picker.
 - A planned course shows a placeholder screen.
 - The first visit to a course goes to placement.
@@ -543,12 +572,12 @@ How unmatched routes are handled:
 
 ### 4.5 Navigation
 
-Each course has a tab bar of at most five tabs: Today, Learn, the lessons tab (if any), Reading (if the course has character sets), Scenarios (if any) and Settings. When a course would have more than five, Scenarios moves into Learn.
+Each course has a tab bar of at most five tabs: Today, Learn, the lessons tab (if any), Reading (if the course has character sets), Scenarios (if any) and Translate (if the course has the offline translator). When a course would have more than five, Scenarios moves into Learn. Settings isn't a tab: it's the ⚙️ in the course bar, on every screen.
 
 | Course | Tabs | Elsewhere |
 |---|---|---|
-| Japanese | Today · Learn · Grammar · Reading · Settings | Scenarios are in Learn |
-| English | 今日 · 学ぶ · 表現 · 会話練習 · 設定 | Listening is in Learn and on Today |
+| Japanese | Today · Learn · Grammar · Reading · Translate | Scenarios are in Learn; Settings is the ⚙️ |
+| English | 今日 · 学ぶ · 表現 · 会話練習 · 翻訳 | Listening is in Learn and on Today; 設定 is the ⚙️ |
 
 The lessons tab's title, label, icon and intro come from the manifest's `copy`. The interface language follows the course's speaker.
 
@@ -565,7 +594,7 @@ Wayword/
 ├── .nojekyll           tells GitHub Pages to serve the files as they are
 ├── css/styles.css      one stylesheet: dark by default, light under prefers-color-scheme,
 │                       sizes driven by --text-scale
-├── js/                 32 ES modules (§4.2)
+├── js/                 36 ES modules (§4.2)
 ├── content/
 │   ├── courses.json    languages, speakers, courses (§6.2)
 │   ├── ui/             interface strings: en.json, ja.json (§6.11)
@@ -581,6 +610,9 @@ Wayword/
 │   │                   grammar/ listening/ scenario/ sentences/ words/
 │   └── en/             1,374 clips: phrases at the top level; connectors/ grammar/ listening/
 │                       patterns/ scenario/ sentences/ words/
+├── mt/                 the offline translator (§6.15): translator.json, Mozilla's Bergamot engine
+│                       (bergamot-translator.js and .wasm), a model per direction (en-ja/, ja-en/),
+│                       and LICENSE (MPL 2.0). Marked -text in .gitattributes, so git never alters a byte
 ├── icons/              192, 512, maskable 512 and 180 (apple-touch) PNGs, from tools/make-icons.mjs
 ├── tools/              Node scripts: dev server, generators, test suites, deploy (§11.2)
 ├── package.json        npm scripts; dev dependencies jsdom and puppeteer-core
@@ -847,7 +879,7 @@ inline:    "{電車|でんしゃ}に"
 - `$locale` sets the date locale. Japanese uses `ja-JP`; with none, the device default applies.
 - A key missing from a dictionary falls back to English, then to the key itself.
 
-English has 459 keys and Japanese 430. The keys only English-taught courses can reach (Reading, the character limit, the romaji notice) have no Japanese version. Paste a message has its strings in both, though only the Japanese course has a dictionary so far. Four boot-error strings are built into `js/i18n.js`, because they have to work when no content loads.
+English has 489 keys and Japanese 460. The keys only English-taught courses can reach (Reading, the character limit, the romaji notice) have no Japanese version. Paste a message has its strings in both, though only the Japanese course has a dictionary so far. Four boot-error strings are built into `js/i18n.js`, because they have to work when no content loads.
 
 ### 6.12 The content contract (`npm test`)
 
@@ -921,6 +953,12 @@ English has 459 keys and Japanese 430. The keys only English-taught courses can 
   - no named source release (a file built from a local copy).
 
   A file more than 35 days old gets a reminder to refresh it, not a failure.
+- **The offline translator** (§6.15):
+  - no `mt/translator.json`, or no licence file or source;
+  - a listed file that's missing, or isn't exactly its listed size and sha256;
+  - a file of 100 MB or more (GitHub's limit);
+  - a direction without its model, shortlist and vocabulary;
+  - an available course without both its directions.
 - **Interface strings:**
   - a key in any dictionary that English lacks;
   - a reachable English key with no translation;
@@ -974,7 +1012,25 @@ A course can have an offline dictionary, for Paste a message (§2.4). The Japane
   - **Set phrases:** a phrase ending in a particle (今日は, "hello") gives way to the word before it (今日 + は). The word sheet still offers the phrase.
   - **Readings** are the text's own (食べなかった is たべなかった; 来ない is こない), spread over the kanji as furigana (§6.10).
   - **The card's word:** the spelling the message used, if it used kanji; otherwise how the word is usually written.
-- **What it can't do:** find a word that isn't among the common words, or give a whole sentence's meaning. A sentence's meaning is the learner's to write.
+- **What it can't do:** find a word that isn't among the common words, or give a whole sentence's meaning. For a whole sentence, there's Translate (§2.14).
+
+### 6.15 The offline translator
+
+The Translate tab's translator (§2.14) is Mozilla's: the Bergamot engine (Marian, compiled to WebAssembly) and the Firefox Translations models, the same ones Firefox uses for its offline page translation.
+
+- **The files** live in `mt/` and are served by this app's own site. Nothing is fetched from Mozilla at runtime.
+
+  | File | What it is | Size |
+  |---|---|---|
+  | `bergamot-translator.wasm` | The engine, version 3.0 | 5.0 MB |
+  | `bergamot-translator.js` | Its loader, from Firefox's source (Bergamot v0.6.0) | 0.1 MB |
+  | `en-ja/` | English → Japanese, model version 2.3: the model, a shortlist (`lex`) and two vocabularies | 49.6 MB |
+  | `ja-en/` | Japanese → English, model version 2.1: the model, a shortlist and one vocabulary | 54.8 MB |
+- **`mt/translator.json`** lists them: `{ schemaVersion, name, credit, licence, licenceFile, source, madeAt, engine: { version, loaderVersion, loader, wasm }, pairs: { "en-ja": { version, files: { model, lex, srcvocab, trgvocab } }, … } }`. Each file is `{ path, size, sha256 }`. It's in the app shell, so the app knows offline which directions exist. A course has the translator when either of its directions is listed (`features.translator`).
+- **Rebuilding:** `npm run translator` (`tools/make-translator.mjs`) reads Firefox's Remote Settings collections (`translations-models`, `translations-wasm`), picks the newest model for every direction the available courses need, checks every file against Mozilla's sha256, and writes `mt/`. It then translates a sentence each way in Node with exactly those files before writing the registry. `translator:check` reports what would change.
+- **Running it** (`js/translator-worker.js`): a classic worker reads the loader and the engine from the translator's cache and evaluates the loader, as Firefox does. Each direction's model is loaded into the engine's memory the first time it's used, with Firefox's settings (greedy search, no quality model). One translation at a time; a sentence takes about 10 ms on a desktop once the model is loaded.
+- **The licence:** the engine, its loader and the models are all MPL 2.0 (`mt/LICENSE`), distributed unchanged. The Translate page and Settings → About credit Mozilla, with links to the source and the licence.
+- **Other languages:** Mozilla has models for many directions, including English ↔ Indonesian. A new course's directions come with the next `npm run translator`.
 
 ---
 
@@ -1309,7 +1365,8 @@ Six Japanese words whose kana spelling is a common homophone (あめ, かえる,
 
 ### 10.1 Caches
 
-- **`wayword-<version>`** (`wayword-v20`): one cache per version, holding the app and the courses this device keeps.
+- **`wayword-<version>`** (`wayword-v21`): one cache per version, holding the app and the courses this device keeps.
+- **`wayword-translator`** isn't versioned either. It holds the offline translator's files (§6.15), put there by the app when the learner downloads it, and never by an install, so an update doesn't throw 109 MB away.
 - **`wayword-kept`** isn't versioned. It holds `./__kept-courses.json`, the ids of the courses this device keeps, and `./__connection.json`, `{ mode: "online" or "offline" }` (§10.6).
 - **Cleanup:** only caches named `wayword-…`, or with the legacy prefix `nihongo-tabi-…`, are ever deleted, because the `github.io` origin is shared with other sites. A worker deletes only caches from older versions, never a later version's.
 
@@ -1356,6 +1413,7 @@ The app waits up to 10 minutes for a keep and 15 seconds for a status.
   2. the network, cached if OK. Skipped when offline (§10.6);
   3. any older version's cache;
   4. a `504 Offline and not cached`.
+- **The translator's files** (`mt/`, apart from `translator.json`): the translator's own cache, else the network, never copied into a version's cache. A `504` when they're neither downloaded nor reachable.
 - **The time limit:** the network gets 10 seconds (`NETWORK_TIMEOUT` in `sw.js`) to answer, after which it's treated as offline (§10.6).
 - **Offline:** the content loader treats a 504, or a network error, as offline. A course opened offline before it was ever downloaded shows "Not on this device yet", with a way back. In offline mode, it says so and offers **Go online**.
 
@@ -1431,23 +1489,24 @@ Setup: `npm ci` installs the two dev dependencies, `jsdom` and `puppeteer-core`.
 | `npm run crossref`, `crossref:check` | crossref-kanji | Link each kanji to where it appears, and list the kanji no set teaches; `:check` writes nothing |
 | `npm run icons` | make-icons | Regenerate the PNG icons (a torii, drawn from rectangles, with no image library) |
 | `npm run dictionary` | make-dictionary | Rebuild the Japanese course's dictionary from the latest JMdict release (§6.14). Run it about monthly, then release |
+| `npm run translator`, `translator:check` | make-translator | Fetch the offline translator's engine and models from Mozilla, check them, and test them in Node (§6.15); `:check` writes nothing |
 | `npm run deploy` | deploy | Release to GitHub Pages (§11.4). `-- --dry-run` stops before the push |
 
 ### 11.3 Test suites
 
 | Suite | What it covers | Checks (21/10/2026) |
 |---|---|---|
-| `tools/selftest.mjs` | The content contract (§6.12), including furigana short enough to fit a line, the levels and the course dictionary; interface strings; the service-worker shell and version; SRS regressions | 73,015 |
-| `tools/integration-test.mjs` | The real modules, end to end in Node (with a filesystem `fetch` and a localStorage shim): placement and the starting level (sampling only the levels that ask for it), levels (progress, the next step, moving up, older learners, listening by level), decks, queues, grading, directions, drills, mastery, listening, backups, course isolation, the romaji modes, and the dictionary: inflections, lookups, readings, suggested furigana and saved messages | 353 |
+| `tools/selftest.mjs` | The content contract (§6.12), including furigana short enough to fit a line, the levels, the course dictionary and the offline translator's files; interface strings; the service-worker shell and version; SRS regressions | 73,227 |
+| `tools/integration-test.mjs` | The real modules, end to end in Node (with a filesystem `fetch` and a localStorage shim): placement and the starting level (sampling only the levels that ask for it), levels (progress, the next step, moving up, older learners, listening by level), decks, queues, grading, directions, drills, mastery, listening, backups, course isolation, the romaji modes, the dictionary: inflections, lookups, readings, suggested furigana and saved messages; and Translate: the course search, and the real worker translating both ways with Mozilla's engine | 369 |
 | `tools/language-pack-test.mjs` | An Esperanto course added purely as content, run through placement, the deck, the queue and grading | 13 |
 | `tools/voice-test.mjs` | The generator against a local stand-in for Azure: headers, SSML, voice choice, rate limits, the engine switch, every no-key path | 18 |
-| `tools/render-test.mjs` | Every screen of both courses rendered in jsdom, including the starting level at placement, Today's level and next step, listening only where the level has some, Learn and the lessons list by level, furigana in a lesson's pattern, whole drill sessions, backup and restore through the real buttons, the reading-aid modes, the connection setting, the update bar with Not now, and Paste a message from a message with no dictionary yet to a word added | 353 |
-| `tools/sw-test.mjs` | The real `sw.js` in a sandbox: registration in every boot path; installing, keeping courses, resuming and retrying over a flaky connection; one version replacing another on shared Cache Storage; a connection that never answers, and offline mode | 54 |
-| `tools/browser-check.mjs` | Headless Firefox through a proxy that can cut every connection, or stall them (take each request and never answer): install, per-course downloads, every tab online and offline, text fitting a 320px screen at the largest size, an IndexedDB backup round trip, an update while the app is open (Not now, then Update now from Settings), opening on a connection that never answers, online and in offline mode, and pasting a message offline, with a word looked up and added. `--upgrade-from <ref>` installs that build first; `--live <url>` checks the deployed site | 68 local, 63 live |
+| `tools/render-test.mjs` | Every screen of both courses rendered in jsdom, including the starting level at placement, Today's level and next step, listening only where the level has some, Learn and the lessons list by level, furigana in a lesson's pattern, whole drill sessions, backup and restore through the real buttons, the reading-aid modes, the connection setting, the update bar with Not now, Paste a message from a message with no dictionary yet to a word added, and the Translate tab's course search and directions | 365 |
+| `tools/sw-test.mjs` | The real `sw.js` in a sandbox: registration in every boot path; installing, keeping courses, resuming and retrying over a flaky connection; one version replacing another on shared Cache Storage; the translator's own cache; a connection that never answers, and offline mode | 57 |
+| `tools/browser-check.mjs` | Headless Firefox through a proxy that can cut every connection, or stall them (take each request and never answer): install, per-course downloads, every tab online and offline, text fitting a 320px screen at the largest size, an IndexedDB backup round trip, an update while the app is open (Not now, then Update now from Settings), opening on a connection that never answers, online and in offline mode, pasting a message offline, with a word looked up and added, and the offline translator: downloaded into its own cache, translating with furigana at 320px, and again offline. `--upgrade-from <ref>` installs that build first; `--live <url>` checks the deployed site | 78 local, 63 live |
 
 ### 11.4 Releasing
 
-A **release** is any change to an app file: `index.html`, `app.webmanifest`, `css/`, `js/`, `content/`, `audio/` or `icons/`. Finished releases are deployed straight away.
+A **release** is any change to an app file: `index.html`, `app.webmanifest`, `css/`, `js/`, `content/`, `audio/`, `mt/` or `icons/`. Finished releases are deployed straight away.
 
 1. Make the change, and update this README wherever its facts change.
 2. Bump `CACHE_VERSION` in `sw.js` and `VERSION` in `js/version.js` to the same new value.
@@ -1524,6 +1583,7 @@ A native app (for example in Flutter, or the current web app wrapped in a native
 | `HTMLAudioElement`, with 0.75× and pitch kept | Playing clips | A platform audio player with rate control and time-stretching |
 | `speechSynthesis`, on-device voices only | Audio for your own words | Platform text-to-speech, on-device |
 | `MediaRecorder` and `data:` URLs | Recording your own words | Platform recording, stored as files |
+| WebAssembly with SIMD, a Web Worker, the Cache API (§6.15) | The offline translator | Bergamot is C++: build it for the platform and use the same model files, or use the platform's own on-device translation |
 | `navigator.share` and file download or upload | Backups | The share sheet and a file picker |
 | `prefers-color-scheme` and `--text-scale` | Dark-first theme, text size | System theme and text scaling |
 | `env(safe-area-inset-top)` | The notch | Safe-area insets |

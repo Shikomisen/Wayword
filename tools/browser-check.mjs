@@ -279,6 +279,21 @@ const uiString = (lang, key) => fetch(new URL(`content/ui/${lang}.json`, base)).
  * Runs in the page: anything whose content is wider than its box, or that
  * reaches past the right edge of the screen — text that doesn't fit.
  */
+/** Type into the Translate tab, press Translate, and read the result: its text without readings, and how many have readings. */
+async function translateIn(page, text) {
+  await page.evaluate(() => { const box = document.querySelector('.translate-input'); if (box) box.value = ''; });
+  await page.type('.translate-input', text);
+  await page.evaluate(() => document.querySelector('.translate-go')?.click());
+  await waitFor(page, () => document.querySelector('.translate-result .target'), null, 30000);
+  return page.evaluate(() => {
+    const node = document.querySelector('.translate-result .target');
+    if (!node) return { target: '', ruby: 0 };
+    const copy = node.cloneNode(true);
+    copy.querySelectorAll('rt, rp').forEach((n) => n.remove());
+    return { target: copy.textContent, ruby: node.querySelectorAll('ruby').length };
+  });
+}
+
 function textSpills() {
   const out = [];
   const width = document.documentElement.clientWidth;
@@ -459,6 +474,8 @@ try {
     const manifest = await fetch(new URL(c.manifest, base)).then((r) => r.json());
     if (manifest.listening?.length) tabsByCourse[c.id].push(`#/${c.id}/listening`, `#/${c.id}/listening/drill`);
     if (manifest.dictionary?.file) tabsByCourse[c.id].push(`#/${c.id}/mine/paste`);
+    // Settings is the ⚙️ in the course bar, not a tab (README §4.5).
+    tabsByCourse[c.id].push(`#/${c.id}/settings`);
     for (const href of tabsByCourse[c.id]) {
       const v = await visit(page, href);
       check(`${href} renders`, v.ok && !/\bnull\b|undefined|Something went wrong/.test(v.text), v.heading);
@@ -509,6 +526,30 @@ try {
   await page.setViewport({ width: 800, height: 600 });
 
   // jsdom and Node only exercise the localStorage fallback; this is the real IndexedDB path.
+  // The offline translator (README §2.14, §6.15): downloaded when asked, kept
+  // in a cache of its own, run on the device — and still there offline, in [5].
+  console.log('\n[4e] The offline translator');
+  const translating = available.find((c) => c.id === 'en-ja');
+  if (translating) {
+    await visit(page, '#/en-ja/translate');
+    await page.evaluate(() => document.documentElement.style.setProperty('--text-scale', '1.6'));
+    const offered = await page.evaluate(() => document.querySelector('.translate-download')?.textContent || '');
+    check('Translate offers the translator as a download, with its size', /\d+ MB/.test(offered), offered);
+    await page.evaluate(() => document.querySelector('.translate-download')?.click());
+    check('…which downloads every file and checks it', await waitFor(page, () => Boolean(document.querySelector('.translator-ready')), null, 300000));
+    const kept = await page.evaluate(async () => {
+      const own = (await (await caches.open('wayword-translator')).keys()).length;
+      const version = (await caches.keys()).find((k) => /^wayword-v\d/.test(k));
+      const copied = version ? (await (await caches.open(version)).keys()).filter((r) => /\/mt\/(?!translator\.json)/.test(r.url)).length : -1;
+      return { own, copied };
+    });
+    check('…into a cache of its own, not the app version\'s', kept.own === 9 && kept.copied === 0, JSON.stringify(kept));
+    const said = await translateIn(page, 'Is there a pharmacy near here?');
+    check('English becomes Japanese on the device, with furigana', /薬局/.test(said.target) && said.ruby > 0, said.target);
+    const fits = (await page.evaluate(textSpills)).map((x) => `translate: ${x}`);
+    check('…and the result fits a 320px phone at 1.6× text', fits.length === 0, fits.slice(0, 3).join(' | '));
+  }
+
   console.log('\n[4b] Backup round trip (IndexedDB)');
   const roundTrip = await page.evaluate(async () => {
     const backup = await import('./js/backup.js');
@@ -606,6 +647,11 @@ try {
       const v = await visit(page, href);
       check(`offline ${href}`, v.ok && !/\bnull\b|undefined|Something went wrong/.test(v.text), v.heading);
     }
+  }
+  if (translating) {
+    await visit(page, '#/en-ja/translate');
+    const offlineSaid = await translateIn(page, 'Could you take a photo of us?');
+    check('offline, the translator still translates, from what was downloaded', /写真/.test(offlineSaid.target), offlineSaid.target);
   }
   // Paste a message, offline: the dictionary came down with the course (README §2.4, §6.14).
   for (const c of available) {

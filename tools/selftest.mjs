@@ -10,6 +10,7 @@
  */
 
 import { readFileSync, existsSync, statSync, readdirSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import * as srs from '../js/srs.js';
@@ -664,6 +665,41 @@ for (const verdict of ['right', 'ok', 'wrong']) check(`drill.${verdict} has an i
 for (const dir of Object.values(srs.DIR)) {
   check(`dir.${dir} has an interface string`, enKeys.has(`dir.${dir}`));
   check(`settings.dirHelp.${dir} has an interface string`, enKeys.has(`settings.dirHelp.${dir}`));
+}
+
+/* ---------- the offline translator ---------- */
+
+console.log('\nOffline translator');
+
+// mt/translator.json (README §6.15): every file it lists is here, whole, and
+// exactly Mozilla's (the sha256 tools/make-translator.mjs checked them against).
+if (check('mt/translator.json exists', existsSync(resolve(ROOT, 'mt/translator.json')))) {
+  const mt = readJSON('mt/translator.json');
+  check('translator: schemaVersion 1', mt.schemaVersion === 1);
+  check('translator: names its licence, and the licence file is here',
+    Boolean(mt.licence) && Boolean(mt.licenceFile) && existsSync(resolve(ROOT, mt.licenceFile)), mt.licenceFile);
+  check('translator: credits its source', Boolean(mt.credit) && /^https:\/\//.test(mt.source || ''), mt.source);
+  const files = [mt.engine?.loader, mt.engine?.wasm, ...Object.values(mt.pairs || {}).flatMap((x) => Object.values(x.files || {}))];
+  let bytes = 0;
+  for (const f of files) {
+    if (!check(`translator file listed with path, size and sha256`, Boolean(f?.path && f.size && /^[0-9a-f]{64}$/.test(f.sha256 || '')), JSON.stringify(f))) continue;
+    const full = resolve(ROOT, f.path);
+    if (!check(`translator file exists: ${f.path}`, f.path.startsWith('mt/') && existsSync(full))) continue;
+    const data = readFileSync(full);
+    bytes += data.length;
+    check(`${f.path}: the listed size`, data.length === f.size, `${data.length} vs ${f.size}`);
+    check(`${f.path}: the listed sha256`, createHash('sha256').update(data).digest('hex') === f.sha256);
+    check(`${f.path}: no single file over GitHub's 100 MB limit`, data.length < 100e6);
+  }
+  for (const [pair, entry] of Object.entries(mt.pairs || {})) {
+    const f = entry.files || {};
+    check(`translator ${pair}: a model, a shortlist and its vocabulary`, Boolean(f.model && f.lex && (f.vocab || (f.srcvocab && f.trgvocab))));
+  }
+  // Each available course can translate both ways: what to say, and what was said.
+  for (const c of registry.courses.filter((x) => x.status === 'available')) {
+    check(`${c.id}: the translator has both directions`, Boolean(mt.pairs?.[`${c.speaker}-${c.target}`] && mt.pairs?.[`${c.target}-${c.speaker}`]));
+  }
+  console.log(`  ${Object.keys(mt.pairs || {}).length} directions, ${(bytes / 1e6).toFixed(1)} MB`);
 }
 
 /* ---------- service worker ---------- */

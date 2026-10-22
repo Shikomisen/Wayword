@@ -21,6 +21,8 @@
     "crossref": "node tools/crossref-kanji.mjs",
     "crossref:check": "node tools/crossref-kanji.mjs --check",
     "dictionary": "node tools/make-dictionary.mjs",
+    "translator": "node tools/make-translator.mjs",
+    "translator:check": "node tools/make-translator.mjs --check",
     "deploy": "node tools/deploy.mjs",
     "test:sw": "node tools/sw-test.mjs",
     "test:browser": "node tools/browser-check.mjs",
