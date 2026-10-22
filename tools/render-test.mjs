@@ -188,6 +188,11 @@ const sampledSets = JA.characterSets.filter((x) => !unsampled.has(x.level));
 check('quiz covers phrases and characters, two of each, from the levels it samples',
   unsampled.size > 0 && quizTotal === 2 * (sampledCats.length + sampledSets.length), `${quizTotal} cards`);
 check('quiz offers three self-grade answers', $$('.btn-answer').length === 3);
+// The meaning decides: knowing it and saying it, knowing it only, or not knowing it — even if you can say it.
+const answerText = $$('.btn-answer').map((b) => b.textContent);
+check('…each defined by whether you know what it means, the last including "I can say it but don\'t know what it means"',
+  /know what it means, and could say it/.test(answerText[0]) && /know what it means, but couldn’t say it/.test(answerText[1]) &&
+    /don’t know what it means, even if I’ve heard it or can say it/.test(answerText[2]), answerText.join(' | '));
 check('first card has no stray "null" where the Back button would be', !/\bnull\b/.test(text()));
 check('furigana renders as ruby', $$('.placement-card ruby, .placement-card').length > 0);
 
@@ -451,6 +456,39 @@ const firstCard = $('.study-card .jp').textContent;
 $$('.btn-grade').find((b) => b.textContent.startsWith('Got it'))?.click();
 await tick(); await tick(); await tick();
 check('grading advances to the next card', $('.study-card .jp')?.textContent !== firstCard);
+
+// A missed card (No idea) comes back later in the session, at most twice more; the counter counts
+// cards finished, so it never runs past the total (it read "15/10" before v27).
+const count = () => ($('.study-count')?.textContent || '0/0').split('/').map(Number);
+const cardKey = () => {
+  const node = $('.study-card')?.cloneNode(true);
+  node?.querySelector('.repeat-label')?.remove();
+  return `${$('.study-card')?.className.replace(' flipped', '')}|${node?.textContent}`;
+};
+const answer = async (grade) => {
+  $$('button').find((b) => b.textContent === 'Show answer')?.click();
+  await tick(); await tick();
+  $$('.btn-grade').find((b) => b.textContent.startsWith(grade))?.click();
+  for (let i = 0; i < 4; i++) await tick();
+};
+const [, sessionSize] = count();
+const missedKey = cardKey();
+await answer('No idea');
+check('a missed card doesn\'t count as finished, and ↻ shows it\'s coming back',
+  count()[0] === 1 && $('.study-again')?.textContent === '↻ 1', `${count().join('/')} ${$('.study-again')?.textContent}`);
+let showings = 1;
+let markedAgain = true;
+let highest = 0;
+for (let guard = 0; $('.study-card') && guard < 60; guard++) {
+  highest = Math.max(highest, count()[0]);
+  const isMissed = cardKey() === missedKey;
+  if (isMissed) { showings++; markedAgain &&= Boolean($('.repeat-label')); }
+  await answer(isMissed ? 'No idea' : 'Got it');
+}
+check('…and comes back marked "Again", until it\'s been missed three times: then it\'s set aside for the next review',
+  showings === 3 && markedAgain, `${showings} showings`);
+check('the counter never passes the session\'s size', highest <= sessionSize, `${highest} of ${sessionSize}`);
+check('the session ends once every card has passed or been set aside', text().includes('Session done'), $('h1')?.textContent);
 
 console.log('\n5a. Words and sentences');
 

@@ -8,9 +8,10 @@
  *   listening   — the audio only, played as the card appears; flip to see
  *                 what was said and what it means
  *
- * Grading feeds SM-2 the same way in every direction. Failed cards are
- * pushed back into the same session rather than disappearing for ten
- * minutes. Phrases, words, sentences and characters all come through here.
+ * Grading feeds SM-2 the same way in every direction. A missed card (No
+ * idea) comes back later in the same session rather than disappearing for
+ * ten minutes, up to MAX_MISSES times; then it waits for the next review.
+ * Phrases, words, sentences and characters all come through here.
  */
 
 import { loadContent } from './content.js';
@@ -25,11 +26,17 @@ import {
 } from './render.js';
 import { playItem, studySettings, toggleStrip } from './shared.js';
 
+// How often one card can be missed in a session before it's set aside: seen
+// three times with its answer is enough for one sitting (README §7.2).
+export const MAX_MISSES = 3;
+
 export async function runSession(root, queue, { exitTo }) {
   const { phrases, features, course } = await loadContent();
   let s = await studySettings();
   const total = queue.length;
-  let done = 0;
+  let done = 0; // answers given, repeats included: the summary at the end
+  let finished = 0; // cards that have left the session (passed, or set aside): the counter
+  const misses = new Map(); // card id → times missed in this session
   let flipped = false;
   let heard = null; // the listening card whose audio has already played
   const cards = [...queue];
@@ -90,17 +97,24 @@ export async function runSession(root, queue, { exitTo }) {
 
     // Native append() would print a null child as the text "null" (a course
     // with no reading aids has no toggle strip), so drop the gaps first.
+    // Missed cards still to come back (the one on screen included, if it's one).
+    const comingBack = cards.filter((c) => misses.has(c.id)).length;
     view.append(...[
       el('div', { class: 'study-top' },
         el('a', { class: 'back-link', href: exitTo }, '✕'),
-        el('div', { class: 'bar' }, el('div', { class: 'bar-fill', style: `width:${(done / total) * 100}%` })),
-        el('span', { class: 'muted small' }, `${done}/${total}`)),
+        el('div', { class: 'bar' }, el('div', { class: 'bar-fill', style: `width:${(finished / total) * 100}%` })),
+        el('span', { class: 'muted small study-count' }, `${finished}/${total}`),
+        comingBack
+          ? el('span', { class: 'muted small study-again', title: t('study.comingBack', { n: comingBack }), 'aria-label': t('study.comingBack', { n: comingBack }) },
+              `↻ ${comingBack}`)
+          : null),
 
       el('div', {
         class: `study-card dir-${dir} ${flipped ? 'flipped' : ''}`,
         onclick: () => { if (!flipped) { flipped = true; draw(); } },
       },
         el('div', { class: 'card-cat muted small' },
+          misses.has(card.id) ? el('span', { class: 'repeat-label' }, `↻ ${t('study.repeat')} · `) : null,
           item.categoryTitle, item.register ? " " : null, registerBadge(item),
           card.kind === srs.KIND.CHARACTER ? null : el('span', { class: `dir-label dir-label-${dir}` }, t(`dir.${dir}`))),
         ...front.filter(Boolean),
@@ -140,8 +154,13 @@ export async function runSession(root, queue, { exitTo }) {
     const updated = await deck.grade(card.id, quality);
     done++;
     flipped = false;
-    // A lapsed card comes back at the end of this session, not tomorrow.
-    if (updated && quality < 3) cards.push(updated);
+    // A missed card comes back at the end of this session, not tomorrow, until
+    // it's been missed MAX_MISSES times; then it waits for the next review
+    // (SM-2 has made it due in ten minutes).
+    const missed = updated && quality < 3 ? (misses.get(card.id) || 0) + 1 : 0;
+    if (missed) misses.set(card.id, missed);
+    if (missed && missed < MAX_MISSES) cards.push(updated);
+    else finished++;
     draw();
   }
 

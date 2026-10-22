@@ -3,7 +3,7 @@
 An offline-first language-learning app for real conversation. It runs in the browser, installs to a phone's home screen, works without a connection, and keeps every bit of progress on the device.
 
 - **Live:** https://shikomisen.github.io/Wayword/
-- **Version:** v26
+- **Version:** v27
 - **Courses:** six, every pair of English, Japanese and Indonesian in both directions, each with three levels (First steps, Basic, Intermediate).
 - **Interface:** English, Japanese and Indonesian.
 
@@ -80,14 +80,19 @@ The equivalences are approximate: the levels are built around what a learner can
 - A ⚙️ at the top right opens the settings every course shares (§2.11).
 - The speaker defaults to the device language if the app teaches from it, otherwise English, and it's remembered.
 - Inside a course, a slim bar ("‹ Languages · English › Japanese ⚙️") leads back to the picker and holds the way into Settings. The ⚙️ appears once the course is started: during placement, the bar holds only the way back and the pair (§2.2). Settings has a Language row.
-- The version shows at the foot of the picker ("Wayword v26") and in Settings → About.
+- The version shows at the foot of the picker ("Wayword v27") and in Settings → About.
 
 ### 2.2 Placement
 
 The first visit to a course runs a short placement quiz.
 
 - It takes two cards from each phrase category (its easiest and its hardest), plus two from each character set: 30 items for Japanese, 20 for English. A level marked `placement: false` isn't sampled, which keeps the quiz short: Japanese Intermediate isn't, so the quiz covers First steps and Basic.
-- Each is self-graded as **I know this**, **I'd recognise it** or **New to me**. Nothing is typed, and nothing is scored against the learner. The answers decide where cards enter the review deck (§7.4).
+- Each is self-graded. The meaning decides, since every card is about the meaning:
+  - **I know this:** I know what it means, and could say it myself;
+  - **I understand it:** I know what it means, but couldn't say it myself;
+  - **I don't know it:** I don't know what it means, even if I've heard it or can say it.
+
+  Nothing is typed, and nothing is scored against the learner. The answers decide where cards enter the review deck (§7.4).
 - **Where to start:** the results suggest a level from the overall score (§7.10), and show every level to pick from instead, each with its description.
 - Afterwards, the chosen level's `starter` decks are added to study.
 - Until placement is done, the course has no tab bar and no ⚙️: every path in the course leads back to placement, so they would do nothing. The way back to the picker stays.
@@ -150,7 +155,9 @@ Learn lists word decks, sentence decks, phrase categories (under the course's to
   - **Listen:** hear it, recall what was said.
 
   Recognise and Say it are on by default; Listen is off.
-- **Grading:** after revealing, **No idea / Shaky / Got it / Too easy**, each showing when the card would come back. A failed card returns later in the same session.
+- **Grading:** after revealing, **No idea / Shaky / Got it / Too easy**, each showing when the card would come back. Shaky is a pass, a hard one.
+- **A missed card** (No idea) comes back at the end of the same session, marked **↻ Again**, at most twice. Missed a third time, it's set aside for the next review (it's due in 10 minutes anyway, §7.2).
+- **The counter** at the top counts the cards finished (passed, or set aside) out of the session's cards, so it never goes past the total. **↻ n** beside it says how many missed cards are still to come back.
 - **Reading aids (Japanese):**
   - Furigana has three modes: **Always**, **Tap to show** (the reading is in place but invisible until tapped) and **Hidden**. Set it in Settings, or cycle it from the ふりがな chip.
   - Romaji has the same three modes, set in Settings or cycled from the romaji chip. Phrases, characters and everything at First steps (its words, sentences and grammar examples) carry romaji, so a brand-new learner can follow before reading kana. From Basic on, words and sentences have furigana only.
@@ -1196,7 +1203,7 @@ The Translate tab's translator (§2.14) is Mozilla's: the Bergamot engine (Maria
   - reps go to 0 and lapses up by one;
   - the interval goes to 0 and the state to `learning`;
   - it's due in **10 minutes**, and ease drops by 0.2, with a floor of 1.3;
-  - the card also goes to the back of the current session.
+  - the card also goes to the back of the current session, up to twice (`MAX_MISSES` in `js/study.js` is 3): missed a third time in one session, it's set aside until the next review. Seen three times with its answer is enough for one sitting.
 - **A success:**
   - the interval becomes 1 day the first time, 6 days the second, then `round(interval × ease)`;
   - reps go up by one and the state becomes `review`;
@@ -1219,7 +1226,7 @@ The Translate tab's translator (§2.14) is Mozilla's: the Bergamot engine (Maria
 ### 7.4 Placement and seeding
 
 - **Sampling:** for each phrase category and character set, the easiest and the hardest item by `difficulty` (one, if they're the same). Categories and sets in a level marked `placement: false` aren't sampled.
-- **Scoring:** answers count as known 1, seen 0.5 and unknown 0. Each category's score is the average.
+- **Scoring:** answers count as known 1 (I know this), seen 0.5 (I understand it) and unknown 0 (I don't know it). Each category's score is the average.
 
   | Overall average | Label |
   |---|---|
@@ -1484,7 +1491,7 @@ Six Japanese words whose kana spelling is a common homophone (あめ, かえる,
 
 ### 10.1 Caches
 
-- **`wayword-<version>`** (`wayword-v26`): one cache per version, holding the app and the courses this device keeps.
+- **`wayword-<version>`** (`wayword-v27`): one cache per version, holding the app and the courses this device keeps.
 - **`wayword-translator`** isn't versioned either. It holds the offline translator's files (§6.15), put there by the app when the learner downloads it, and never by an install, so an update doesn't throw 109 MB away.
 - **`wayword-kept`** isn't versioned. It holds `./__kept-courses.json`, the ids of the courses this device keeps, and `./__connection.json`, `{ mode: "online" or "offline" }` (§10.6).
 - **Cleanup:** only caches named `wayword-…`, or with the legacy prefix `nihongo-tabi-…`, are ever deleted, because the `github.io` origin is shared with other sites. A worker deletes only caches from older versions, never a later version's.
@@ -1615,11 +1622,11 @@ Setup: `npm ci` installs the two dev dependencies, `jsdom` and `puppeteer-core`.
 
 | Suite | What it covers | Checks (21/10/2026) |
 |---|---|---|
-| `tools/selftest.mjs` | The content contract (§6.12), including furigana short enough to fit a line, the levels, the course dictionary and the offline translator's files; interface strings; the service-worker shell and version; SRS regressions | 197,319 |
+| `tools/selftest.mjs` | The content contract (§6.12), including furigana short enough to fit a line, the levels, the course dictionary and the offline translator's files; interface strings; the service-worker shell and version; SRS regressions | 197,338 |
 | `tools/integration-test.mjs` | The real modules, end to end in Node (with a filesystem `fetch` and a localStorage shim): placement and the starting level (sampling only the levels that ask for it), levels (progress, the next step, moving up, older learners, listening by level), decks, queues, grading, directions, drills, mastery, listening, backups, course isolation, the romaji modes, the dictionary: inflections, lookups, readings, suggested furigana and saved messages; and Translate: the course search, and the real worker translating both ways with Mozilla's engine, Japanese ↔ Indonesian through English; every Indonesian course through placement, its queue and grading, and each course built from another keeping its target-language text | 405 |
 | `tools/language-pack-test.mjs` | An Esperanto course added purely as content, run through placement, the deck, the queue and grading | 13 |
 | `tools/voice-test.mjs` | The generator against a local stand-in for Azure: headers, SSML, voice choice, rate limits, the engine switch, every no-key path | 18 |
-| `tools/render-test.mjs` | Every screen of both courses rendered in jsdom, including the starting level at placement, Today's level and next step, listening only where the level has some, Learn and the lessons list by level, furigana in a lesson's pattern, whole drill sessions, backup and restore through the real buttons, the reading-aid modes, the connection setting, the update bar with Not now, Paste a message from a message with no dictionary yet to a word added, the Translate tab's course search, directions and Copy, the picker's Settings, the update bar following the interface language, a screen still loading when a newer tap overtakes it (drawn alone, with the right tab lit), and the course bar during placement (no ⚙️ until it's done, and nothing stray in a planned course's); the picker in Indonesian, English for Indonesian speakers with no Japanese left on its screens, Japanese for Indonesian speakers with Reading in Indonesian, and Indonesian for English and Japanese speakers | 418 |
+| `tools/render-test.mjs` | Every screen of both courses rendered in jsdom, including the starting level at placement, Today's level and next step, listening only where the level has some, Learn and the lessons list by level, furigana in a lesson's pattern, whole drill sessions, backup and restore through the real buttons, the reading-aid modes, the connection setting, the update bar with Not now, Paste a message from a message with no dictionary yet to a word added, the Translate tab's course search, directions and Copy, the picker's Settings, the update bar following the interface language, a screen still loading when a newer tap overtakes it (drawn alone, with the right tab lit), and the course bar during placement (no ⚙️ until it's done, and nothing stray in a planned course's); the picker in Indonesian, English for Indonesian speakers with no Japanese left on its screens, Japanese for Indonesian speakers with Reading in Indonesian, and Indonesian for English and Japanese speakers; placement's answers, defined by the meaning; a review session where a missed card comes back at most twice and the counter never passes its total | 423 |
 | `tools/sw-test.mjs` | The real `sw.js` in a sandbox: registration in every boot path; installing, keeping courses, resuming and retrying over a flaky connection; one version replacing another on shared Cache Storage; the translator's own cache; a connection that never answers, and offline mode | 57 |
 | `tools/browser-check.mjs` | Headless Firefox through a proxy that can cut every connection, or stall them (take each request and never answer): install, per-course downloads, every tab online and offline, text fitting a 320px screen at the largest size, an IndexedDB backup round trip, an update while the app is open (Not now, then Update now from Settings), opening on a connection that never answers, online and in offline mode, pasting a message offline, with a word looked up and added, and the offline translator: downloaded into its own cache, even from a server that takes 12 s to start each big file, translating with furigana at 320px, copying, and translating again offline. `--upgrade-from <ref>` installs that build first; `--live <url>` checks the deployed site | 160 local, 155 live |
 
