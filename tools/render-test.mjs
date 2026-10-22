@@ -76,7 +76,10 @@ globalThis.localStorage = window.localStorage ?? {
 
 // Paths that answer as the service worker does offline for a file it never cached.
 let unreachable = null;
+// How long each file takes to arrive, in ms: a slow connection.
+let slowness = 0;
 globalThis.fetch = async (path) => {
+  if (slowness) await new Promise((r) => setTimeout(r, slowness));
   if (unreachable && String(path).includes(unreachable)) return { ok: false, status: 504, json: async () => null };
   const file = resolve(ROOT, String(path).replace(/^\.\//, ''));
   if (!existsSync(file)) return { ok: false, status: 404, json: async () => null };
@@ -1568,6 +1571,53 @@ check('…and nothing that belongs to one course', !$('.furigana-mode') && !$('.
 check('…and the translator credited in About', $('.about-translator')?.textContent.includes('Bergamot'));
 $('.connection-mode [data-connection="online"]')?.click();
 await tick();
+
+console.log('\n11d. One screen at a time, however slowly it loads');
+
+// A tab tapped while the last one is still loading: the second navigation
+// starts before the first has drawn anything. Only the second may show.
+const screens = () => $$('.screen').map((s) => s.querySelector('h1')?.textContent || '(no heading)');
+async function overtake(first, second, ms = 0) {
+  slowness = ms;
+  window.location.hash = first;
+  window.dispatchEvent(new window.Event('hashchange'));
+  window.location.hash = second;
+  window.dispatchEvent(new window.Event('hashchange'));
+  await new Promise((r) => setTimeout(r, ms * 4));
+  for (let i = 0; i < 12; i++) await tick();
+  slowness = 0;
+}
+await goTo('#/en-ja/');
+// On a slow connection: a scenario not opened before downloads its file
+// after the page is emptied, and drew under Learn, which was tapped meanwhile.
+await overtake('#/en-ja/scenario/izakaya', '#/en-ja/browse', 40);
+check('on a slow connection, a scenario overtaken by Learn shows Learn alone, not the scenario under it',
+  screens().length === 1 && $('h1')?.textContent === 'Learn', screens().join(' + '));
+check('…with Learn lit', document.querySelector('.tabbar a.active')?.dataset.path === '/browse',
+  document.querySelector('.tabbar a.active')?.dataset.path);
+// The picker's Settings fetches as it opens, so it
+// arrives after Learn, which tapped over it, has drawn.
+await overtake('#/settings', '#/en-ja/browse', 40);
+check('on a slow connection, Settings overtaken by Learn shows Learn alone, not Settings under it',
+  screens().length === 1 && $('h1')?.textContent === 'Learn' && !document.body.classList.contains('at-home'),
+  screens().join(' + '));
+await goTo('#/en-ja/characters');
+const readingHeading = $('h1')?.textContent;
+await goTo('#/en-ja/');
+await overtake('#/en-ja/scenario/lost', '#/en-ja/characters', 40);
+check('a scenario overtaken by Reading shows Reading alone',
+  screens().length === 1 && $('h1')?.textContent === readingHeading, screens().join(' + '));
+check('…with the Reading tab lit, not Learn, which the scenario belongs to',
+  document.querySelector('.tabbar a.active')?.dataset.path === '/characters',
+  document.querySelector('.tabbar a.active')?.dataset.path);
+await overtake('#/en-ja/browse', '#/');
+check('a course screen overtaken by the picker leaves the picker alone, with no course chrome',
+  screens().length === 1 && $$('.course-card').length > 0 && document.body.classList.contains('at-home'),
+  screens().join(' + '));
+await overtake('#/', '#/en-ja/browse');
+check('the picker overtaken by a course screen shows that screen alone',
+  screens().length === 1 && $('h1')?.textContent === 'Learn' && !document.body.classList.contains('at-home'),
+  screens().join(' + '));
 
 console.log('\n12. Console health');
 

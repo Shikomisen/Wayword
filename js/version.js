@@ -6,4 +6,4 @@
  * update, and npm test fails if the two disagree. Bump both together.
  */
 
-export const VERSION = 'v22';
+export const VERSION = 'v23';

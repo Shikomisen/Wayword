@@ -93,14 +93,34 @@ function parseHash() {
 /** Navigate within the current course: go('/browse') → #/<course>/browse. */
 export const go = course.go;
 
+// A tab tapped while the last screen is still loading starts a second
+// navigation before the first has drawn. The newest wins (README §4.6): each
+// is numbered, and one that a newer one has overtaken stops where it is.
+let navigations = 0;
+
+/**
+ * An empty page for a new screen, which draws into a box of its own. A newer
+ * navigation takes the box off the page, so a screen overtaken while it
+ * loads draws into nothing, never under the screen that replaced it.
+ */
+function newPage() {
+  const root = el('div');
+  clear(app()).append(root);
+  window.scrollTo(0, 0);
+  return root;
+}
+
 async function router() {
+  const nav = ++navigations;
+  const overtaken = () => nav !== navigations;
   const path = parseHash();
 
   if (path === '/') return showHome();
-  if (path === '/settings') return showAppSettings();
+  if (path === '/settings') return showAppSettings(overtaken);
 
   const m = path.match(COURSE_PATH);
   const target = m ? await course.getCourse(m[1]) : null;
+  if (overtaken()) return;
 
   if (!target) {
     // Links from before courses existed (#/review, #/browse — the installed
@@ -108,6 +128,7 @@ async function router() {
     // one used last, which for anyone who had those links is Japanese.
     const legacy = routes.some(([pattern]) => pattern.test(path));
     const id = legacy ? (await course.getPrefs()).lastCourse || 'en-ja' : null;
+    if (overtaken()) return;
     window.history.replaceState(null, '', legacy ? `#/${id}${path}` : '#/');
     return router();
   }
@@ -115,23 +136,25 @@ async function router() {
   const sub = m[2] || '/';
   let entered;
   try {
-    entered = await enterCourse(target);
+    entered = await enterCourse(target, overtaken);
   } catch (err) {
     // Offline, in a course this device never downloaded: say so, not "Something went wrong".
     if (!err?.offline) throw err;
+    if (overtaken()) return;
     return notDownloaded();
   }
+  if (!entered || overtaken()) return; // overtaken while the course loaded
   const { features } = entered;
 
   if (target.status !== 'available') {
-    const root = clear(app());
-    window.scrollTo(0, 0);
-    return renderPlannedCourse(root, target);
+    return renderPlannedCourse(newPage(), target);
   }
 
   // The placement quiz gates each course on its first visit (README §7.4).
-  if (!(await deck.isOnboarded())) {
-    const root = clear(app());
+  const onboarded = await deck.isOnboarded();
+  if (overtaken()) return;
+  if (!onboarded) {
+    const root = newPage();
     document.body.classList.add('onboarding');
     return renderPlacement(root, {
       onDone: (next = '/') => {
@@ -152,15 +175,14 @@ async function router() {
     if (/^\/listening/.test(sub) && !features.listening) break;
     if (/^\/translate/.test(sub) && !features.translator) break;
     if (/^\/mine\/paste/.test(sub) && !features.dictionary) break;
-    const root = clear(app());
-    window.scrollTo(0, 0);
+    const root = newPage();
     try {
       await handler(root, ...match.slice(1));
     } catch (err) {
       console.error(err);
       root.append(el('div', { class: 'screen' }, el('p', { class: 'error' }, String(err.message || err))));
     }
-    highlightNav(sub);
+    if (!overtaken()) highlightNav(sub);
     return;
   }
   go('/');
@@ -169,9 +191,7 @@ async function router() {
 async function showHome() {
   document.body.classList.add('at-home');
   document.body.classList.remove('onboarding');
-  const root = clear(app());
-  window.scrollTo(0, 0);
-  await renderHome(root);
+  await renderHome(newPage());
 }
 
 /**
@@ -179,7 +199,7 @@ async function showHome() {
  * every course — the text size, the connection, Your data and About. Each
  * course's own settings are behind the ⚙️ inside it.
  */
-async function showAppSettings() {
+async function showAppSettings(overtaken) {
   document.body.classList.add('at-home');
   document.body.classList.remove('onboarding');
   const registry = await course.loadCourses();
@@ -188,8 +208,8 @@ async function showAppSettings() {
   const translator = await fetch('mt/translator.json', { cache: 'no-cache' }).then((r) => (r.ok ? r.json() : null)).catch(() => null);
   const textScale = await course.getTextScale();
   const data = await dataSection({ courseLine: false });
-  const root = clear(app());
-  window.scrollTo(0, 0);
+  if (overtaken()) return;
+  const root = newPage();
   root.append(
     el('div', { class: 'screen app-settings' },
       el('a', { class: 'back-link', href: '#/' }, `‹ ${t('coursebar.home')}`),
@@ -205,8 +225,7 @@ async function showAppSettings() {
  */
 function notDownloaded() {
   document.body.classList.add('no-tabs');
-  const root = clear(app());
-  window.scrollTo(0, 0);
+  const root = newPage();
   const offlineMode = connectionMode() === 'offline';
   root.append(
     el('div', { class: 'screen' },
@@ -227,10 +246,12 @@ let enteredCourse = null;
  * Activate a course and dress the chrome for it. Everything that should
  * happen once per visit to a course — remembering it as the last one, the
  * first-week romaji switch-off, cards for newly enabled directions — happens
- * only when the course changes.
+ * only when the course changes. Returns null if a newer navigation overtook
+ * this one meanwhile: the chrome is then that one's to dress.
  */
-async function enterCourse(target) {
+async function enterCourse(target, overtaken) {
   await course.setCourse(target.id);
+  if (overtaken()) return null;
   document.body.classList.remove('at-home');
   renderCourseBar(target);
 
@@ -242,6 +263,7 @@ async function enterCourse(target) {
   document.body.classList.remove('no-tabs');
 
   const content = await loadContent();
+  if (overtaken()) return null;
   const { features } = content;
   renderTabbar(content);
 
